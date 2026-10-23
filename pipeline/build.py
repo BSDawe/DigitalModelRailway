@@ -129,8 +129,10 @@ def finish(state):
         for fn in sorted(gt): z.write(os.path.join(GT, fn), fn)
     out = subprocess.run([sys.executable, 'make_page.py'], capture_output=True, text=True)
     if out.returncode: sys.exit('make_page failed:\n' + out.stderr[-800:])
+    site = subprocess.run([sys.executable, 'make_site.py'], capture_output=True, text=True)    # the hosted site: page + data files (GitHub Pages)
+    if site.returncode: sys.exit('make_site failed:\n' + site.stderr[-800:])
     n = {fn: len(l) - 1 for fn, l in gt.items()}
-    print(f"assembled: {len(viz.get('lines', []))} lines on the page; GTFS {n.get('routes.txt')} routes, {n.get('trips.txt')} trips, {n.get('stops.txt')} stops; {out.stdout.strip()}")
+    print(f"assembled: {len(viz.get('lines', []))} lines on the page; GTFS {n.get('routes.txt')} routes, {n.get('trips.txt')} trips, {n.get('stops.txt')} stops; {out.stdout.strip()}; {site.stdout.strip()}")
 
 def main(argv):
     flags = {a for a in argv if a.startswith('--')}; named = [a for a in argv if not a.startswith('--')]
