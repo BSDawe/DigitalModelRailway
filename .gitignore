@@ -36,3 +36,5 @@ basemap/sources/ne_10m_admin_0_boundary_lines_land.geojson
 basemap/sources/ne_10m_admin_1_states_provinces_lines.geojson
 pipeline/traces/ontario/kmz_orm
 pipeline/traces/ontario/ontario_all.json
+pipeline/traces/quebec/kmz
+pipeline/traces/quebec/quebec_all.json

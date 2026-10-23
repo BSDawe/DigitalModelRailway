@@ -1392,3 +1392,14 @@ Stations of different railways within 250 m (70 pairs; script: same check over v
   by note, as with the Mississippi Rails KMZs. Quebec collection still to come. Coverage map: not kept (scratch).
 - LATER (Brendan, 23 Oct 2026): Ontario interurbans still running in 1948, from Delamere's Canadian Electric Railway Mapping Project (the
   same collection the B.C. Electric KML came from). Not now; he will get to them.
+- (23 Oct 2026) DELAMERE QUEBEC COLLECTION received (private: traces/quebec/kmz/Quebec.kmz; parsed to traces/quebec/quebec_all.json).
+  5,435 pieces: 3,704 lines (about 11,000 km of main track; CN 6,400, CP constituents about 3,000, independents incl. Cartier and QNS&L),
+  1,573 points of which 897 are stations (CN 484, CP 378), named "Gare X station"; only 23 give a milepost, few lines carry abandonment
+  notes (54). Extent 79.5 to 64.2 W, 45.0 to 52.8 N. Station points MISSING for many towns: Levis, Riviere-du-Loup, Mont-Joli, Matapedia,
+  Gaspe, Roberval, Val-d'Or, Hull, Joliette, Lachute, Farnham, Lac-Megantic, Grand-Mere, Jonquiere, and Montreal/Quebec only as Gare
+  Windsor, Gare Bonaventure, Gare Palais: in Quebec stations will mostly go by printed mileage, with hand points for the principal ones.
+  Track: every town tested has track within 1 km except Matapedia (track stops about 8 km short on both the Intercolonial and the Gaspe
+  subdivision). Within one railway many corridors are broken by short gaps (3 to 700 m: Montreal, Levis, Hervey Jct, Senneterre, Rigaud) and
+  some long ones (CN Hervey - Chicoutimi about 68 km; CP Montreal - Farnham 50 km, Montreal - Joliette 58 km, Montreal - St-Jerome 21 km);
+  over all railways with 1 km joins everything tested connects except Matapedia, so the long CP/CN gaps are probably pieces filed under
+  another railway or joint lines: check owners per line when building.

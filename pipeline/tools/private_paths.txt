@@ -20,3 +20,5 @@ scans/cn1948_mb/gwwd_1974.jpg
 traffic_density.gpkg
 traces/ontario/kmz_orm/
 traces/ontario/ontario_all.json
+traces/quebec/kmz/
+traces/quebec/quebec_all.json
