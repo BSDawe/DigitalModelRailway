@@ -1,27 +1,54 @@
-# Railways of British Columbia — project state
+# The Digital Model Railway — project state
 
 Read this first. It is meant to be enough to start a short, single-task chat without replaying the project's history.
-Last updated 10 October 2026 (page Version 47: Alaska Railroad; Indian Arm boats; Washington and Alaska water; Lambert projection).
+Last updated 22 October 2026 (Version 62 moved to git; hosted site with split data files and a tiled basemap of water and borders).
 
 ## What this is
 
-Brendan Dawe's "digital model railroad": an animated map of B.C. and Alberta passenger trains and steamers running to their 1947–49 timetables, plus a GTFS
-feed of the same. One self-contained HTML page, published as the artifact
-**https://claude.ai/artifact/6BMpHzdMps4m8iMxZGTzq6** (title "Fraser Valley Interurban, 1949"; the page is headed "Railways of British Columbia").
+Brendan Dawe's "digital model railroad": an animated map of passenger trains and steamers running to their summer-1948 timetables (B.C., Alberta,
+Saskatchewan, Manitoba, the Lakehead, Washington, Alaska, the Yukon and the Midwest), plus a GTFS feed of the same.
 
-To publish: build, then publish `fraser_valley_1949.html` to that URL (in a new chat, read the artifact once first, then publish with the URL).
-Publish after every accepted change; Brendan looks at the artifact, not at files.
+**Since 22 October 2026 the project lives in git** (Version 62 was the last zip bundle):
+- Public: **https://github.com/BSDawe/DigitalModelRailway**. The pipeline is in `pipeline/` (this file is `pipeline/STATE.md`), the basemap in
+  `basemap/`. GitHub Pages publishes the map at **https://bsdawe.github.io/DigitalModelRailway/** (gtfs.zip beside it).
+- Private: **BSDawe/DigitalModelRailway-sources**, the raw third-party files (original KMZ collections, full place-names files, the U of T rails
+  file, scans), with the same paths under `pipeline/`. The list is `pipeline/tools/private_paths.txt` (also in `.gitignore`). Brendan's rule
+  (22 Oct): raw files private, only the traces actually used are public.
+- The old artifact (https://claude.ai/artifact/6BMpHzdMps4m8iMxZGTzq6) is no longer updated.
+
+To publish: commit and push to `main`. The workflow (`.github/workflows/pages.yml`) runs `build.py --assemble` from the committed parts and
+deploys `pipeline/site/`. It does not run the routing steps: run those here and commit their `parts/*.json`.
 
 ## Starting a fresh chat
 
-1. Brendan attaches `bcer_project.zip` (the bundle; see "Bundle" below). Unzip it into a working folder.
-2. `python3 build.py --status` shows every step and whether it is out of date. `python3 build.py --assemble` writes the page from the saved parts
-   without running anything.
-3. Do the one task. Re-run only what it touches (`python3 build.py`), check (see "Checks"), publish, and update this file: the fix list, the step
-   table if a step was added, and the version line at the top.
-4. Make a new bundle (`python3 tools/bundle.py`) and send it to Brendan, so the next chat starts from the new state.
+1. Attach both repos (`add_repo` BSDawe/DigitalModelRailway with push, and BSDawe/DigitalModelRailway-sources if a step that reads raw files
+   will be re-run). Clone the public one; clone the sources beside it and run `python3 pipeline/tools/link_sources.py <sources clone>`
+   (symlinks the private files into place).
+2. `cd pipeline; python3 build.py --status` shows every step and whether it is out of date ("ok, inputs absent" = its raw files are not linked;
+   its saved part is used). `python3 build.py --assemble` writes the page and the site from the saved parts without running anything.
+3. Do the one task. Re-run only what it touches (`python3 build.py`), check (see "Checks"), update this file (the fix list, the step table if a
+   step was added, the version line at the top), commit with a message saying what changed, and push. New raw source files go to the sources
+   repo and into `tools/private_paths.txt`; traces Brendan draws himself go in the public repo.
 
-Needs Python with shapely, pyproj, numpy, networkx, scipy, scikit-image, Pillow and playwright (Chromium at /opt/pw-browsers/chromium).
+Needs Python with shapely, pyproj, numpy, networkx, scipy, scikit-image, Pillow, pyshp and playwright (Chromium at /opt/pw-browsers/chromium).
+A full `build.py --all` takes about 7 minutes (sk_build alone about 4.5).
+
+## The hosted site and the basemap (22 October 2026)
+
+- `make_site.py` (run by `build.py` after `make_page.py`) writes `site/`: `index.html` (the template with `site_loader.js` in place of the
+  map's script), `app.<hash>.js` (the template's script), `data/manifest.json`, `data/core.<hash>.json` (B.C. Electric base data) and one
+  `data/<step>.<hash>.json` per build step (the lines that step last changed). Routes are packed as integer differences (1e-6 degree,
+  0.1 m) and unpacked by the loader to the same numbers; checked identical to the single-file page in Chromium (stations, routes, trips,
+  pixels). Hashed names: after an update a visitor downloads only the files that changed.
+- `fraser_valley_1949.html` (single file, inline data and water) is still written for the checking tools (`tools/shots.py`, `tools/perf.py`).
+- Basemap: `basemap/build_tiles.py` (about 5 minutes) merges the page's water layers (`water_*.json`, the same list as `make_page.py`) and adds
+  Natural Earth borders (provinces/states and the international land boundary; cut copies in `basemap/sources/`), and cuts them into tiles
+  at levels 0-7 (finest 40 km, source detail; coarser levels simplified to about a pixel), in the page's projection. **Re-run it after any
+  change to the water files or to the projection (`PROJ` in build_tiles.py must match `P` in the template)**, and commit `basemap/tiles/`.
+  The page (`TILES`, `tilesFor`, `loadTile` in the template) draws the tiles the view needs, a loaded parent standing in until a tile
+  arrives. Borders: dashed, ink-soft at 45 %. The single-file page draws its inline water and no borders.
+- Not done yet (stage 2, when the data outgrows loading everything at start): fetch line data by viewport. The page computes station
+  positions and the boards from every line at start-up, so this needs the stations and trips split from the route geometry.
 
 ## Build
 
@@ -258,15 +285,9 @@ the occasional base redraw.
 - `python3 tools/perf.py` prints frame times by view for a desktop and a phone-sized screen (headless, no GPU, so pessimistic). At Version 33:
   about 4 ms a frame still or panning (it was about 90 ms at Version 32), and 45–80 ms for a base redraw. Re-run it after adding lines.
 
-## Bundle
+## Bundle (retired 22 October 2026)
 
-`python3 tools/bundle.py` writes two zips; unzip both into one folder.
-
-- `bcer_project.zip` (about 9 MB): scripts, tables, traces, parts, template, this file. Enough to assemble and publish the page and to re-run the
-  light steps (BCER lines, gn, wpy, kv, island/PGE, interim, kv_through, cps).
-- `bcer_inputs.zip` (about 15 MB): the national network extracts and the water layer. Needed to re-run `mainline_build`, `cn_north_build`,
-  `cp_south_build`, `si_build` and `boats_build` (so: needed for any steamer work, including most of the fix list). Without it those steps show
-  "ok, inputs absent" and their saved parts are used as they are.
+`tools/bundle.py` made the zips chats used to pass the project along (`bcer_project.zip`, `bcer_inputs.zip`). Replaced by the two repositories.
 
 ## Checks
 
