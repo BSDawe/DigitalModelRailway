@@ -53,14 +53,12 @@ def water_geoms():
         p = os.path.join(PIPE, f)
         if not os.path.exists(p): continue
         for poly in json.load(open(p)):
-            g = None
-            for r in poly:
-                a = np.cumsum(np.asarray(r, dtype=float).reshape(-1, 2), axis=0) / 1e4
-                if len(a) < 3: continue
-                ring = Polygon(proj_coords(a)).buffer(0)
-                if ring.is_empty: continue
-                g = ring if g is None else g.symmetric_difference(ring)
-            if g is not None and not g.is_empty: out.append(g)
+            rings = [proj_coords(np.cumsum(np.asarray(r, dtype=float).reshape(-1, 2), axis=0) / 1e4) for r in poly]
+            rings = [r for r in rings if len(r) >= 3]
+            if not rings: continue
+            g = Polygon(rings[0], rings[1:])                        # the water files write the outline first, then the islands
+            if not g.is_valid: g = g.buffer(0)
+            if not g.is_empty: out.append(g)
     return out
 
 def border_geoms():
