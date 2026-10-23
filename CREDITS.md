@@ -31,3 +31,4 @@ the page.
 - **Canadian Geographical Names Database**, Natural Resources Canada (Open Government Licence – Canada).
 - Washington place names: Washington State Department of Ecology's copy of the U.S. Geological Survey GNIS.
 - Lakes, rivers and coast: **Statistics Canada** (Open Government Licence – Canada) and the Washington State Department of Ecology.
+- Province, state and international borders: **Natural Earth** 1:10m (public domain).

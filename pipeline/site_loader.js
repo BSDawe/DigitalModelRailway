@@ -18,7 +18,12 @@
       const r = await fetch('data/' + f.file); if (!r.ok) throw new Error(f.file + ': ' + r.status);
       const j = await r.json(); done++; note.textContent = `Loading the timetables… ${done} of ${man.files.length}`; return [f.name, j];
     }));
-    const by = Object.fromEntries(got), core = by.core, water = by.water, lines = {};
+    if (man.tiles) {                                                // the tiled basemap: its index, with the tiles of each level as a set
+      const ix = await (await fetch(man.tiles + 'index.json')).json();
+      ix.base = man.tiles; ix.has = Object.keys(ix.tiles).sort((a, b) => a - b).map(z => new Set(ix.tiles[z]));
+      window.__TILES = ix;
+    }
+    const by = Object.fromEntries(got), core = by.core, water = by.water || [], lines = {};
     core.route = unpack(core.route); if (core.bl) core.bl.route = unpack(core.bl.route);
     for (const [name, j] of got) if (name !== 'core' && name !== 'water') for (const L of j.lines) { L.route = unpack(L.route); lines[L.key] = L; }
     core.lines = man.order.map(k => lines[k]).filter(Boolean);
