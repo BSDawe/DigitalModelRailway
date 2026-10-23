@@ -1368,3 +1368,8 @@ Stations of different railways within 250 m (70 pairs; script: same check over v
   whether a water part contains the tile box (shapely.prepare the parts once per level; parts[i].contains(bx)) and if so write the box as
   the tile's water. Expected build 5-10 min; output should match (compare tile counts and bytes). The Atlantic stays: Brendan expects to
   reach Newfoundland.
+- ONTARIO AND QUEBEC SOURCES (Brendan, 23 Oct 2026): Paul Delamere's Ontario and Quebec collections are to be the track AND station source;
+  apart from the timetables, no other sources (no NRWN Ontario/Quebec extract, no CGN names files) are planned. Only the Lakehead Routes KMZ is
+  on hand so far (traces/ontario/lakehead_all.json; CP Superior District stops near Schreiber, about 87.3 W). The raw KMZs go to the private
+  repo; the parsed pieces actually used go public (as with the Lakehead). Stations: use the collections' station points (the "Architecture"
+  folders, as ont_stations() does at the Lakehead), with mileage placement where a station has no point.
