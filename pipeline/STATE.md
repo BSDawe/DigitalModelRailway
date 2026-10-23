@@ -1390,3 +1390,5 @@ Stations of different railways within 250 m (70 pairs; script: same check over v
   "abandonment due to flooding by the St. Lawrence seaway opening in 1958") and today's line: route over the former, drop the latter
   (as KEEP_OLD / TRIM in wa_lines). 443 lines carry abandonment notes and 665 a year: filter post-1948 builds and pre-1948 abandonments
   by note, as with the Mississippi Rails KMZs. Quebec collection still to come. Coverage map: not kept (scratch).
+- LATER (Brendan, 23 Oct 2026): Ontario interurbans still running in 1948, from Delamere's Canadian Electric Railway Mapping Project (the
+  same collection the B.C. Electric KML came from). Not now; he will get to them.
