@@ -11,7 +11,7 @@ Saskatchewan, Manitoba, the Lakehead, Washington, Alaska, the Yukon and the Midw
 **Since 22 October 2026 the project lives in git** (Version 62 was the last zip bundle):
 - Public: **https://github.com/BSDawe/DigitalModelRailway**. The pipeline is in `pipeline/` (this file is `pipeline/STATE.md`), the basemap in
   `basemap/`. GitHub Pages publishes the map at **https://bsdawe.github.io/DigitalModelRailway/** (gtfs.zip beside it).
-- Private: **BSDawe/DigitalModelRailway-sources**, the raw third-party files (original KMZ collections, full place-names files, the U of T rails
+- Private: **BSDawe/DigitalModelRailwayPrivate**, the raw third-party files (original KMZ collections, full place-names files, the U of T rails
   file, scans), with the same paths under `pipeline/`. The list is `pipeline/tools/private_paths.txt` (also in `.gitignore`). Brendan's rule
   (22 Oct): raw files private, only the traces actually used are public.
 - The old artifact (https://claude.ai/artifact/6BMpHzdMps4m8iMxZGTzq6) is no longer updated.
@@ -21,7 +21,7 @@ deploys `pipeline/site/`. It does not run the routing steps: run those here and 
 
 ## Starting a fresh chat
 
-1. Attach both repos (`add_repo` BSDawe/DigitalModelRailway with push, and BSDawe/DigitalModelRailway-sources if a step that reads raw files
+1. Attach both repos (`add_repo` BSDawe/DigitalModelRailway with push, and BSDawe/DigitalModelRailwayPrivate if a step that reads raw files
    will be re-run). Clone the public one; clone the sources beside it and run `python3 pipeline/tools/link_sources.py <sources clone>`
    (symlinks the private files into place).
 2. `cd pipeline; python3 build.py --status` shows every step and whether it is out of date ("ok, inputs absent" = its raw files are not linked;

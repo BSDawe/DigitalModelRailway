@@ -1,4 +1,4 @@
-# Private source files: kept in BSDawe/DigitalModelRailway-sources (same paths under pipeline/). See tools/link_sources.py.
+# Private source files: kept in BSDawe/DigitalModelRailwayPrivate (same paths under pipeline/). See tools/link_sources.py.
 British_Columbia_Electric_Railway_Company.kml
 traces/ontario/kmz/
 traces/ontario/lakehead_all.json

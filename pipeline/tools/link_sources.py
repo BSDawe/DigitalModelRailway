@@ -2,10 +2,10 @@
 """Link the private source files (raw third-party data, scans, big names files) into this pipeline folder.
 
 The public repository holds the code, the timetable transcriptions, Brendan's own traces and the cut-down extracts the map is drawn from.
-The raw files those came from live in the private repository BSDawe/DigitalModelRailway-sources, laid out with the same paths under
+The raw files those came from live in the private repository BSDawe/DigitalModelRailwayPrivate, laid out with the same paths under
 pipeline/. Without them the build still works: the steps that read them say "ok, inputs absent" and their saved parts are used.
 
-  python3 tools/link_sources.py [path to the sources clone]      default: $DMR_SOURCES, else ../../DigitalModelRailway-sources
+  python3 tools/link_sources.py [path to the sources clone]      default: $DMR_SOURCES, else ../../DigitalModelRailwayPrivate
 
 Each private file is symlinked into place (nothing is copied, so nothing private can be committed by mistake: .gitignore lists them too).
   python3 tools/link_sources.py --check     list the private paths and whether each is present here
@@ -22,7 +22,7 @@ def main(argv):
         for p in paths(): print(('present ' if os.path.exists(os.path.join(HERE, p)) else 'absent  ') + p)
         return
     args = [a for a in argv if not a.startswith('--')]
-    src = args[0] if args else os.environ.get('DMR_SOURCES', os.path.join(HERE, '..', '..', 'DigitalModelRailway-sources'))
+    src = args[0] if args else os.environ.get('DMR_SOURCES', os.path.join(HERE, '..', '..', 'DigitalModelRailwayPrivate'))
     src = os.path.abspath(os.path.join(src, 'pipeline') if os.path.isdir(os.path.join(src, 'pipeline')) else src)
     if not os.path.isdir(src): sys.exit(f'no sources folder at {src}')
     n = 0
