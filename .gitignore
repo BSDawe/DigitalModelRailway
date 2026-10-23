@@ -1,9 +1,9 @@
 # build outputs (rebuilt by pipeline/build.py and the Pages workflow)
 __pycache__/
-pipeline/gtfs/
-pipeline/site/
-pipeline/build_logs/
-pipeline/tools/out/
+pipeline/gtfs
+pipeline/site
+pipeline/build_logs
+pipeline/tools/out
 pipeline/tools/.baseline_viz.json
 pipeline/viz_data.json
 pipeline/fraser_valley_1949.html
@@ -12,20 +12,20 @@ _site/
 
 # private source files: they live in the private repository (see pipeline/tools/private_paths.txt)
 pipeline/British_Columbia_Electric_Railway_Company.kml
-pipeline/traces/ontario/kmz/
+pipeline/traces/ontario/kmz
 pipeline/traces/ontario/lakehead_all.json
-pipeline/traces/gn/kmz/
-pipeline/traces/cnw/kmz/
-pipeline/traces/soo/kmz/
-pipeline/traces/washington/Washington State/
+pipeline/traces/gn/kmz
+pipeline/traces/cnw/kmz
+pipeline/traces/soo/kmz
+pipeline/traces/washington/Washington State
 pipeline/traces/washington/Oregon-Washington_RR_Navigation_Co.kmz
-pipeline/traces/washington/x/
-pipeline/traces/hr_rails/
+pipeline/traces/washington/x
+pipeline/traces/hr_rails
 pipeline/traces/np/NP_Winnipeg.gpkg
 pipeline/traces/saskatchewan/verlo_gap.gpkg
-pipeline/places/cgn_bc/
-pipeline/places/cgn_sk/
-pipeline/places/cgn_mb/
+pipeline/places/cgn_bc
+pipeline/places/cgn_sk
+pipeline/places/cgn_mb
 pipeline/places/wa/wa_place_names.csv
 pipeline/nrwn/yt.kml
 pipeline/scans/cn1948_mb/gwwd_1974.jpg
