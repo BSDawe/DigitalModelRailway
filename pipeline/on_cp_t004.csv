@@ -1,0 +1,118 @@
+# Canadian Pacific, Table 4, Montreal - Ottawa - North Bay - Sudbury - Port Arthur - Fort William (and Toronto - Sudbury, entered with Table 58).
+# Source: CP public timetable, 1940s (Brendan, 23 October 2026; scans/on1948/11.png westbound, 12.png eastbound, printed sideways). EASTERN TIME throughout.
+# Times as printed. Rows printed "Ar ... Lv" / "Lv ... Ar" are one row here with ar / lv. Miles from Montreal (Windsor Station).
+# Toronto - Sudbury rows of this table (Nos. 27, 3, 5 west; 4, 6, 28 east) are left to Table 58, which prints every station on that line.
+# At Sudbury: No. 9 (Montreal) and No. 5 (Toronto) combine and go west as No. 5; No. 27 (Toronto) connects with No. 1; from the west No. 6 divides,
+#   Toronto cars as No. 6 and Montreal cars as No. 10; No. 4 goes to Toronto; No. 2 connects with No. 28 for Toronto.
+# Signs: f stops on signal; g (Wanapitei, No. 1 and No. 2) stops on signal Wed. and Sat.: entered as f, days in the note; u stops on signal for revenue
+#   passengers only: entered as f. Conditional stops entered as plain times: c (No. 7 Montreal - Sudbury, no coach passengers east of Sudbury), d (stops
+#   to detrain), e (to entrain for Ottawa and west), m (sleeping car passengers Ottawa and east), p (sleeping car passengers to and from Sudbury and
+#   Port Arthur and beyond), b, x (to entrain sleeping car passengers only). Angler (805.0) has no times in any column.
+# Connections printed: at Franz with the Algoma Central (Sault Ste. Marie 9.00 a.m. - Franz 4.55 p.m.; Franz 4.55 p.m. - Hearst 9.00 p.m.).
+#train col=No1 num=1 dir=down days=daily kind=passenger to=Vancouver note="Montreal (Windsor Station) 9.45 p.m. to Fort William; on to Winnipeg (Table 5) and Vancouver. Connects at Sudbury with No. 27 from Toronto."
+#train col=No7 num=7 dir=down days=daily kind=passenger to=Vancouver note="The Dominion. Montreal 8.00 p.m.; Fort William 12.05 a.m.; on to Winnipeg and Vancouver."
+#train col=No9 num=9 dir=down days=daily kind=passenger note="Montreal 7.30 p.m. to Sudbury 6.25 a.m., where it joins No. 5 from Toronto for the west."
+#train col=No3 num=3 dir=down days=daily kind=passenger from=Toronto to=Vancouver note="The Dominion. From Toronto (Table 58); Sudbury 7.20 a.m.; Fort William 11.35 p.m.; on to Vancouver."
+#train col=No5 num=5 dir=down days=daily kind=passenger from=Toronto to=Winnipeg note="The Dominion (eastern section). From Toronto (Table 58), with the Montreal cars of No. 9; Sudbury 6.45 a.m.; Fort William 10.55 p.m.; on to Winnipeg."
+#train col=No551 num=551 dir=down days=Sun kind=passenger note="Sundays: Ottawa 8.15 p.m. to Chalk River 11.59 p.m."
+#train col=No557 num=557 dir=down days="ex Sun" kind=passenger note="Daily except Sunday: Ottawa 4.15 p.m. to Chalk River 8.30 p.m."
+#train col=No555 num=555 dir=down days=daily kind=passenger note="Ottawa 8.00 a.m. to Chalk River noon."
+#train col=No857 num=857 dir=down days="ex Sun" kind=passenger note="Daily except Sunday: North Bay 6.40 p.m. to Sudbury 9.00 p.m."
+#train col=No8 num=8 dir=up days=daily kind=passenger from=Vancouver note="The Dominion. From Vancouver and Winnipeg; Fort William 6.20 a.m.; Montreal 9.05 a.m."
+#train col=No4 num=4 dir=up days=daily kind=passenger from=Vancouver to=Toronto note="The Dominion. Fort William 7.00 a.m.; Sudbury 10.15 p.m.; on to Toronto (Table 58) 6.40 a.m."
+#train col=No6 num=6 dir=up days=daily kind=passenger from=Winnipeg to=Toronto note="The Dominion (eastern section). Fort William 7.30 a.m.; Sudbury 10.35 p.m.; on to Toronto (Table 58) 7.00 a.m.; its Montreal cars go on as No. 10."
+#train col=No10 num=10 dir=up days=daily kind=passenger note="The Montreal cars of No. 6: Sudbury 11.10 p.m. to Montreal 10.15 a.m."
+#train col=No2 num=2 dir=up days=daily kind=passenger from=Vancouver note="From Vancouver and Winnipeg; Fort William 10.40 p.m.; Montreal 6.45 a.m. the second morning. Connects at Sudbury with No. 28 for Toronto."
+#train col=No556 num=556 dir=up days=daily kind=passenger note="Chalk River 7.05 a.m. to Ottawa 11.05 a.m."
+#train col=No558 num=558 dir=up days="ex Sun" kind=passenger note="Daily except Sunday: Chalk River 1.10 p.m. to Ottawa 5.05 p.m."
+#train col=No550 num=550 dir=up days=Sun kind=passenger note="Sundays: Chalk River 5.25 p.m. to Ottawa 9.20 p.m."
+#train col=No858 num=858 dir=up days="ex Sun" kind=passenger note="Daily except Sunday: Sudbury 8.30 a.m. to North Bay 10.45 a.m."
+mile,station,principal,prov,tz,No1,No7,No9,No3,No5,No551,No557,No555,No857,No8,No4,No6,No10,No2,No556,No558,No550,No858
+0.0,Montreal (Windsor Station),1,QC,E,lv 9.45p,lv 8.00p,lv 7.30p,,,,,,,ar 9.05a,,,ar 10.15a,ar 6.45a,,,,
+2.0,Westmount,0,QC,E,9.51p,8.07p,7.37p,,,,,,,8.57a,,,10.07a,6.37a,,,,
+4.7,Montreal West,0,QC,E,9.57p,8.15p,7.45p,,,,,,,8.50a,,,10.00a,6.30a,,,,
+111.4,Ottawa,1,ON,E,ar 12.15a / lv 12.40a,ar 10.15p / lv 10.30p,ar 9.40p / lv 9.55p,,,lv 8.15p,lv 4.15p,lv 8.00a,,ar 6.35a / lv 6.50a,,,ar 7.45a / lv 8.00a,ar 3.45a / lv 4.15a,ar 11.05a,ar 5.05p,ar 9.20p,
+143.0,Carleton Place,1,ON,E,2.00a,11.33p,10.58p,,,9.15p,5.20p,9.05a,,5.38a,,,6.48a,2.26a,10.00a,4.00p,8.15p,
+184.7,Renfrew,0,ON,E,3.12a,12.33a,11.58p,,,10.22p,6.38p,10.15a,,4.27a,,,5.37a,1.12a,8.42a,2.48p,6.55p,
+219.4,Pembroke,1,ON,E,4.13a,1.19a,12.40a,,,11.18p,7.35p,11.08a,,3.46a,,,4.56a,12.18a,7.45a,1.50p,6.00p,
+229.5,Petawawa,0,ON,E,4.40a,1.34a,12.54a,,,f11.33p,8.00p,11.33a,,,,,,11.59p,7.25a,1.30p,5.45p,
+241.2,Chalk River,1,ON,E,ar 5.10a / lv 5.25a,ar 2.00a / lv 2.10a,ar 1.15a / lv 1.25a,,,ar 11.59p,ar 8.30p,ar 12.00p,,ar 3.00a / lv 3.15a,,,ar 4.10a / lv 4.25a,ar 11.30p / lv 11.40p,lv 7.05a,lv 1.10p,lv 5.25p,
+246.2,Wylie,0,ON,E,f5.32a,,,,,,,,,,,,,f11.18p,,,,
+250.8,Bass Lake,0,ON,E,f5.38a,,,,,,,,,,,,,f11.11p,,,,
+256.2,Moor Lake,0,ON,E,5.47a,,,,,,,,,,,,,11.04p,,,,
+265.4,Mackey,0,ON,E,6.07a,,,,,,,,,,,,,f10.48p,,,,
+269.2,Stonecliff,0,ON,E,f6.17a,,,,,,,,,,,,,f10.41p,,,,
+278.9,Bissett,0,ON,E,f6.34a,,,,,,,,,,,,,f10.24p,,,,
+292.1,Deux Rivieres,0,ON,E,6.57a,,,,,,,,,,,,,f10.01p,,,,
+302.8,Klock,0,ON,E,f7.12a,,,,,,,,,,,,,f9.46p,,,,
+313.4,Mattawa,0,ON,E,7.30a,4.08a,3.18a,,,,,,,1.04a,,,2.13a,9.25p,,,,
+325.6,Eau Claire,0,ON,E,7.57a,,,,,,,,,,,,,f8.58p,,,,
+332.3,Rutherglen,0,ON,E,8.10a,,,,,,,,,,,,,8.48p,,,,
+339.5,Bonfield,0,ON,E,8.21a,,,,,,,,,,,,,8.37p,,,,
+343.4,Nosbonsing,0,ON,E,f8.27a,,,,,,,,,,,,,f8.30p,,,,
+349.2,Corbeil,0,ON,E,8.35a,,,,,,,,,,,,,8.21p,,,,
+358.9,North Bay,1,ON,E,ar 8.55a / lv 9.15a,ar 5.25a / lv 5.40a,ar 4.30a / lv 4.40a,,,,,,lv 6.40p,ar 11.50p / lv 12.01a,,,ar 1.00a / lv 1.10a,ar 7.50p / lv 8.05p,,,,ar 10.45a
+364.7,Yellek,0,ON,E,,,,,,,,,f6.49p,,,,,,,,,f10.33a
+368.9,Beaucage,0,ON,E,,,,,,,,,f6.54p,,,,,,,,,f10.27a
+373.4,Meadowside,0,ON,E,,,,,,,,,f7.00p,,,,,,,,,f10.20a
+382.3,Sturgeon Falls,0,ON,E,9.51a,6.12a,f5.11a,,,,,,7.13p,11.14p,,,f12.24a,7.13p,,,,10.06a
+385.3,Cache Bay,0,ON,E,10.01a,,,,,,,,7.20p,,,,,7.03p,,,,10.01a
+392.8,Verner,0,ON,E,10.13a,,,,,,,,7.34p,,,,,6.52p,,,,9.46a
+397.2,Kirk,0,ON,E,,,,,,,,,f7.41p,,,,,,,,,f9.38a
+401.9,Warren,0,ON,E,10.27a,,,,,,,,7.49p,,,,,6.37p,,,,9.31a
+407.2,Hagar,0,ON,E,f10.35a,,,,,,,,f7.59p,,,,,f6.27p,,,,f9.23a
+414.0,Markstay,0,ON,E,10.47a,,,,,,,,8.11p,,,,,6.15p,,,,9.13a
+421.7,Stinson,0,ON,E,,,,,,,,,f8.24p,,,,,,,,,f9.01a
+426.0,Wanapitei,0,ON,E,f11.08a,,,,,,,,f8.31p,,,,,f5.56p,,,,f8.54a
+430.1,Coniston,0,ON,E,11.16a,,,,,,,,8.39p,,,,,5.48p,,,,8.46a
+431.3,Romford,0,ON,E,f11.18a,,,,,,,,8.43p,,,,,5.45p,,,,8.44a
+437.9,Sudbury,1,ON,E,ar 11.35a / lv 11.55a,ar 7.30a / lv 7.50a,ar 6.25a,lv 7.20a,lv 6.45a,,,,ar 9.00p,ar 9.40p / lv 10.00p,ar 10.15p,ar 10.35p,lv 11.10p,ar 5.10p / lv 5.30p,,,,lv 8.30a
+445.2,Azilda,0,ON,E,f12.12p,,,,,,,,,,,,,f4.51p,,,,
+450.2,Chelmsford,0,ON,E,12.21p,,,,,,,,,,,,,4.43p,,,,
+455.1,Larchwood,0,ON,E,12.30p,,,,,,,,,,,,,4.35p,,,,
+461.4,Levack,0,ON,E,12.41p,,,,,,,,,,,,,4.25p,,,,
+464.9,Windy Lake,0,ON,E,f12.49p,,,,,,,,,,,,,f4.20p,,,,
+471.9,Cartier,1,ON,E,ar 1.15p / lv 1.25p,ar 8.50a / lv 9.00a,,ar 8.20a / lv 8.30a,ar 7.45a / lv 7.55a,,,,,ar 8.40p / lv 8.50p,ar 9.15p / lv 9.25p,ar 9.35p / lv 9.45p,,ar 4.00p / lv 4.10p,,,,
+475.4,Geneva,0,ON,E,f1.33p,,,,,,,,,,,,,f3.50p,,,,
+491.8,Pogamasing,0,ON,E,f2.07p,,,,,,,,,,,,,f3.18p,,,,
+508.5,Metagama,0,ON,E,2.44p,,,,,,,,,,,,,2.44p,,,,
+526.3,Biscotasing,0,ON,E,3.18p,,,,,,,,,,,,,2.13p,,,,
+542.7,Ramsey,0,ON,E,3.48p,,,,,,,,,,,,,1.44p,,,,
+558.1,Woman River,0,ON,E,f4.18p,,,,,,,,,,,,,f1.20p,,,,
+568.0,Sultan,0,ON,E,4.37p,11.20a,,,f10.15a,,,,,6.08p,,f7.11p,,1.05p,,,,
+574.5,Ridout,0,ON,E,f4.52p,,,,,,,,,,,,,f12.52p,,,,
+579.4,Kormak,0,ON,E,4.59p,,,,,,,,,,,,,12.45p,,,,
+581.8,Kinogama,0,ON,E,f5.04p,,,,,,,,,,,,,f12.40p,,,,
+592.8,Nemegos,0,ON,E,5.33p,,,,,,,,,,,,,12.23p,,,,
+608.3,Chapleau,1,ON,E,ar 6.15p / lv 6.30p,ar 12.20p / lv 12.40p,,ar 11.50a / lv 12.10p,ar 11.15a / lv 11.30a,,,,,ar 4.50p / lv 5.10p,ar 5.30p / lv 5.50p,ar 6.00p / lv 6.15p,,ar 11.25a / lv 11.50a,,,,
+630.6,Nicholson,0,ON,E,7.17p,,,,,,,,,,,,,10.43a,,,,
+644.5,Bolkow,0,ON,E,f7.45p,,,,,,,,,,,,,f10.20a,,,,
+652.2,Dalton,0,ON,E,8.00p,,,,,,,,,,,,,10.02a,,,,
+666.2,Missanabie,0,ON,E,8.27p,,,1.40p,f12.58p,,,,,,4.03p,f4.33p,,9.38a,,,,
+676.4,Lochalsh,0,ON,E,8.46p,,,,,,,,,,,,,9.19a,,,,
+689.7,Franz,0,ON,E,9.12p,2.45p,,2.16p,1.34p,,,,,2.45p,3.25p,3.55p,,8.53a,,,,
+718.1,Amyot,0,ON,E,f10.12p,,,,,,,,,,,,,f8.12a,,,,
+738.2,White River,1,ON,E,ar 10.50p / lv 11.05p,ar 4.35p / lv 4.45p,,ar 4.05p / lv 4.15p,ar 3.25p / lv 3.35p,,,,,ar 1.15p / lv 1.30p,ar 1.55p / lv 2.10p,ar 2.30p / lv 2.40p,,ar 7.25a / lv 7.40a,,,,
+759.4,Regan,0,ON,E,f11.43p,,,,,,,,,,,,,f6.40a,,,,
+760.5,Mobert,0,ON,E,f11.46p,,,,,,,,,,,,,f6.37a,,,,
+777.9,Hemlo,0,ON,E,f12.17a,,,,,,,,,,,,,f6.03a,,,,
+793.4,Heron Bay,0,ON,E,12.46a,6.04p,,,f4.54p,,,,,11.56a,,f1.05p,,5.35a,,,,
+801.2,Marathon,0,ON,E,1.01a,6.18p,,5.48p,f5.08p,,,,,11.41a,12.20p,f12.50p,,5.16a,,,,
+805.0,Angler,0,ON,E,,,,,,,,,,,,,,,,,,
+812.6,Coldwell,0,ON,E,1.26a,,,,,,,,,,,,,4.50a,,,,
+816.2,Neys,0,ON,E,1.37a,,,,,,,,,,,,,4.41a,,,,
+837.8,Jack Fish,0,ON,E,2.19a,,,,,,,,,,,,,3.58a,,,,
+848.4,Terrace Bay (Black),0,ON,E,2.48a,7.47p,,7.20p,f6.40p,,,,,10.15a,10.55a,f11.25a,,3.35a,,,,
+851.1,Hydro,0,ON,E,2.55a,7.51p,,,f6.44p,,,,,10.11a,10.51a,f11.21a,,3.27a,,,,
+856.5,Schreiber,1,ON,E,ar 3.15a / lv 3.30a,ar 8.10p / lv 8.20p,,ar 7.45p / lv 7.55p,ar 7.05p / lv 7.15p,,,,,ar 9.45a / lv 10.00a,ar 10.25a / lv 10.40a,ar 11.00a / lv 11.10a,,ar 3.00a / lv 3.15a,,,,
+870.0,Rossport,0,ON,E,f3.59a,,,,,,,,,,,,,2.23a,,,,
+919.8,Nipigon,0,ON,E,5.20a,9.53p,,9.28p,8.48p,,,,,8.07a,8.47a,9.20a,,1.07a,,,,
+924.8,Red Rock,0,ON,E,f5.35a,10.08p,,9.43p,f9.03p,,,,,7.59a,8.39a,f9.11a,,f12.58a,,,,
+937.0,Hurkett,0,ON,E,f5.57a,,,,,,,,,,,,,f12.37a,,,,
+941.7,Dorion,0,ON,E,f6.06a,,,,,,,,,,,,,f12.30a,,,,
+945.5,Ouimet,0,ON,E,f6.12a,,,,,,,,,,,,,f12.24a,,,,
+952.8,Pearl,0,ON,E,f6.24a,,,,,,,,,,,,,f12.13a,,,,
+958.5,Loon,0,ON,E,f6.36a,,,,,,,,,,,,,f12.04a,,,,
+970.6,Mackenzie,0,ON,E,f7.03a,,,,,,,,,,,,,f11.45p,,,,
+985.0,Port Arthur,1,ON,E,7.50a,11.40p,,11.15p,10.35p,,,,,6.35a,7.15a,7.45a,,11.00p,,,,
+989.4,Fort William,1,ON,E,ar 8.30a,ar 12.05a,,ar 11.35p,ar 10.55p,,,,,lv 6.20a,lv 7.00a,lv 7.30a,,lv 10.40p,,,,
