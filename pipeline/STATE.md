@@ -1373,3 +1373,20 @@ Stations of different railways within 250 m (70 pairs; script: same check over v
   on hand so far (traces/ontario/lakehead_all.json; CP Superior District stops near Schreiber, about 87.3 W). The raw KMZs go to the private
   repo; the parsed pieces actually used go public (as with the Lakehead). Stations: use the collections' station points (the "Architecture"
   folders, as ont_stations() does at the Lakehead), with mileage placement where a station has no point.
+- (23 Oct 2026) DELAMERE ONTARIO RAILWAY MAP COLLECTION received (private: traces/ontario/kmz_orm/Ontario_Railway_Map_Collection.kmz; parsed
+  with tools/parse_kmz.py to traces/ontario/ontario_all.json, same format as lakehead_all.json, descriptions kept). 19,843 pieces: 13,204
+  lines (about 30,000 km; CN 15,900 incl. GTR 10,100 and CNoR 4,700; CP 8,550; independents 3,600 incl. Algoma Central 1,580 and ONR
+  1,290; American roads 2,080), 5,716 points of which 2,407 are stations (CN 1,265, CP 731). Extent 95.2 to 74.4 W, 42.0 to 51.3 N.
+  Station notes often give the subdivision milepost ("Mile 146.2 of the Ignace subdivision"), station number and telegraph code: use
+  the milepost for placement. Several towns have 1st/2nd/3rd stations: pick the one standing in 1948. Not found as station points:
+  Toronto Union Station, Capreol, Port Arthur (Lakehead file has it), Winnipeg (out of area).
+  Coverage check (main track, sidings left out, ends joined within 60 m), by railway: CP Fort William - Schreiber - White River - Chapleau
+  - Sudbury - North Bay - Ottawa, Sudbury - Parry Sound - Toronto, Toronto - London - Windsor, Toronto - Owen Sound, Sudbury - Sault
+  Ste. Marie, Kenora - Fort William all continuous; CP Toronto - Peterborough - Smiths Falls continuous with joins under 400 m. CN Lakehead
+  - Nipigon - Longlac - Hornepayne - Foleyet, Armstrong - Nakina - Cochrane, Sioux Lookout - Armstrong, Capreol - Parry Sound - Toronto,
+  North Bay - Huntsville - Toronto, Toronto - Kingston, Toronto - London - Sarnia, Hamilton - Niagara Falls continuous; ONR North Bay -
+  Cochrane continuous. Breaks: CN at Capreol (338 m, 46.7104 -80.9253 / 46.7075 -80.9237) and at Brockville (56 m). 1948 ALIGNMENT:
+  between Cardinal and Cornwall the file has both the pre-Seaway GTR main ("Former westbound main from Cornwall to Cardinal",
+  "abandonment due to flooding by the St. Lawrence seaway opening in 1958") and today's line: route over the former, drop the latter
+  (as KEEP_OLD / TRIM in wa_lines). 443 lines carry abandonment notes and 665 a year: filter post-1948 builds and pre-1948 abandonments
+  by note, as with the Mississippi Rails KMZs. Quebec collection still to come. Coverage map: not kept (scratch).

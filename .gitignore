@@ -34,3 +34,5 @@ pipeline/traffic_density.gpkg
 # Natural Earth downloads (23 MB); only the cut-down copies in basemap/sources/*_cut.geojson are kept
 basemap/sources/ne_10m_admin_0_boundary_lines_land.geojson
 basemap/sources/ne_10m_admin_1_states_provinces_lines.geojson
+pipeline/traces/ontario/kmz_orm
+pipeline/traces/ontario/ontario_all.json
