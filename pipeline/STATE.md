@@ -1399,6 +1399,6 @@ Stations of different railways within 250 m (70 pairs; script: same check over v
   STATIONS: the name is often in the DESCRIPTION, with a blank placemark name ("Gare Mont-Joli station"): read the label as name, else
   the first line of desc. About 1,030 station points (CN 601, CP 393); found for nearly every town (Levis, Riviere-du-Loup, Mont-Joli,
   Matapedia, Gaspe, Rimouski, Matane, Hull West, Lachute, Farnham, Lac-Megantic, Grand-Mere, St-Jerome); missing Roberval, Val-d'Or,
-  Jonquiere (the empty folders). Only 7 give a milepost: intermediate stations by printed mileage. Track: Matapedia stops about 8 km short
-  (empty Matapedia and Gulf folder); CN Hervey - Chicoutimi about 68 km missing; several CP gaps around Montreal (Farnham, Joliette,
+  Jonquiere (the empty folders). Only 7 give a milepost: intermediate stations by printed mileage. Track: Riviere-du-Loup - Mont-Joli - Matapedia - Gaspe
+  continuous on CN (an earlier note that track stopped short of Matapedia was a wrong test position); CN Hervey - Chicoutimi about 68 km missing; several CP gaps around Montreal (Farnham, Joliette,
   St-Jerome) close only through other railways' pieces: recheck when the fuller file arrives.
