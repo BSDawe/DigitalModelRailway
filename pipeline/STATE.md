@@ -1362,3 +1362,9 @@ Stations of different railways within 250 m (70 pairs; script: same check over v
   selection, EPSG:3347: Great Lakes, Lake of the Woods, Rainy Lake, larger Ontario lakes, the Atlantic side). water_east.py -> water_east.json
   (simplify 100 m), in make_page.py, make_site.py and basemap/build_tiles.py (WATER_FILES). Drawn only: not in water_extra.pkl, so no steamer
   lanes on it yet. Basemap border extent widened to 50 W, 38 N (Natural Earth cut copies regenerated). STATE.md stays public (Brendan).
+- NEXT BASEMAP REBUILD (Brendan, 23 Oct 2026; do it the next time the water or projection changes, not before): speed up
+  basemap/build_tiles.py. With the Atlantic in, the build takes about 25 min, nearly all spent carving open-ocean tiles out of the one huge
+  Atlantic polygon (about 4,600 of 7,807 tiles lie east of 80 W, nearly all plain squares). In the tile loop, before intersecting, test
+  whether a water part contains the tile box (shapely.prepare the parts once per level; parts[i].contains(bx)) and if so write the box as
+  the tile's water. Expected build 5-10 min; output should match (compare tile counts and bytes). The Atlantic stays: Brendan expects to
+  reach Newfoundland.
