@@ -1,0 +1,62 @@
+# Great Northern, Table 7, St. Paul, Minneapolis, Barnesville, Crookston and Winnipeg: Nos. 7 and 8, the Winnipeg Limited (one train each way, St. Paul -
+# Winnipeg). From the Great Northern timetable of February 8, 1948 (scan gn1948/gn_t007.png, printed sideways). Transcribed 18 October 2026. CENTRAL TIME.
+# Miles from St. Paul as printed. Barnesville is printed twice (arr / lve, 217, both 1.40): one row. "- -" = does not stop: rows kept without times.
+# Albertville (39), Monticello (47), Clearwater (62): printed in the table (stops of 29 / 30) but left out here: Nos. 7 and 8 ran Minneapolis - St. Cloud
+#   by Elk River, the other line (Brendan, 18 Oct); St. Cloud's printed 75 miles is the same either way.
+# St. Vincent (390) is the 131 / 132 locals' station (Crookston - St. Vincent - Noyes); Nos. 7 and 8 do not stop: left out (Noyes is also 390).
+# Note on the table: the New Empire Builder leaving Chicago at 1.00 p.m. and arriving at St. Paul 7.45 p.m. connects with the Winnipeg Limited, No. 7.
+# Signs: * = daily; f = flag stop for revenue passengers. Not entered here: 29 / 30 (St. Paul - Crookston - Grand Forks) and 131 / 132 (Crookston - Noyes):
+#   United States only.
+# States / province: St. Paul - Noyes Minnesota; Emerson (the town, east of the Red River) - Winnipeg Manitoba. Emerson Junc. (392) is across the river,
+#   where the line joins the Emerson - Morris - Winnipeg line (the NP's also: Table 14).
+#train col=No7 num=7 dir=down days="daily" kind=passenger note="Winnipeg Limited. St. Paul 8.02 p.m. to Winnipeg 9.00 a.m. Connects at St. Paul with the New Empire Builder from Chicago (1.00 p.m.)."
+#train col=No8 num=8 dir=up days="daily" kind=passenger note="Winnipeg Limited. Winnipeg 7.00 p.m. to St. Paul 8.00 a.m."
+# St. Jean (printed so) entered as St. Jean Baptiste: the same station as the NP and CN St. Jean Baptiste (Brendan, 20 October 2026).
+mile,station,principal,prov,tz,No7,No8
+0,St. Paul,1,MN,C,lv 8.02p,ar 8.00a
+11,Minneapolis,1,MN,C,8.32p,7.30a
+75,St. Cloud,1,MN,C,10.05p,5.55a
+116,Sauk Centre,0,MN,C,11.04p,4.42a
+141,Alexandria,0,MN,C,11.39p,3.55a
+159,Evansville,0,MN,C,,
+186,Fergus Falls,1,MN,C,12.47a,2.32a
+217,Barnesville,0,MN,C,1.40a,1.40a
+225,Downer,0,MN,C,,
+235,Glyndon,0,MN,C,2.12a,1.10a
+241,Averill,0,MN,C,,
+249,Felton,0,MN,C,,
+256,Borup,0,MN,C,,
+260,Wheatville,0,MN,C,,
+265,Ada,0,MN,C,3.03a,12.25a
+270,Hadler,0,MN,C,,
+275,Lockhart,0,MN,C,,
+282,Beltrami,0,MN,C,,
+288,Greenview,0,MN,C,,
+292,Kittson,0,MN,C,,
+299,Crookston,1,MN,C,4.10a,11.30p
+305,Shirley,0,MN,C,,
+313,Euclid,0,MN,C,,
+321,Angus,0,MN,C,,
+329,Warren,0,MN,C,5.01a,10.43p
+339,Argyle,0,MN,C,f5.16a,f10.29p
+348,Stephen,0,MN,C,f5.30a,f10.17p
+356,Donaldson,0,MN,C,,
+361,Kennedy,0,MN,C,,
+370,Hallock,0,MN,C,6.13a,9.45p
+376,Northcote,0,MN,C,,
+382,Humboldt,0,MN,C,,
+390,Noyes,0,MN,C,6.50a,9.10p
+391,Emerson,1,MB,C,7.03a,8.58p
+392,Emerson Junc.,0,MB,C,7.20a,8.53p
+396,Christie,0,MB,C,f7.25a,f8.40p
+401,Letellier,0,MB,C,7.33a,8.31p
+411,St. Jean Baptiste,0,MB,C,7.46a,8.17p
+417,Morris,0,MB,C,7.58a,8.07p
+425,Silver Plains,0,MB,C,f8.10a,f7.52p
+430,Union Point,0,MB,C,,
+434,St. Agathe,0,MB,C,f8.22a,f7.40p
+439,Glenlea,0,MB,C,f8.29a,f7.33p
+442,Cartier,0,MB,C,,
+448,St. Norbert,0,MB,C,,
+454,Portage Junction,0,MB,C,8.50a,7.10p
+457,Winnipeg,1,MB,C,ar 9.00a,lv 7.00p

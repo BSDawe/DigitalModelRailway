@@ -1,0 +1,36 @@
+# Canadian Pacific Table 173, West Coast Vancouver Island service, S.S. Princess Maquinna (Brendan, 13 Oct 2026, described from the table).
+# Leaves Victoria 11.00 p.m. June 27, July 5, July 13 (every 8 days) for the ports below in this order, arriving Chamiss Bay on the fourth
+# day; leaves Chamiss Bay on the fourth day after leaving Victoria and arrives Victoria about 12.00 noon on the seventh day. No other times:
+# calls are timed by distance (estimated). The map week (about 5-11 July) shows the 5 July sailing: Victoria Mon 5 11.00 p.m., Chamiss Bay
+# Fri 9 (arrive and leave), Victoria about noon Mon 12 (the return calls at the same ports, reverse order, are assumed).
+order,port
+0,Victoria
+1,Port Renfrew
+2,Carmanah
+3,Clo-oose
+4,Bamfield
+5,Sarita Bay
+6,Ecoole
+7,Kildonan
+8,Green Cove
+9,Franklin River
+10,Port Alberni
+11,Ucluelet
+12,Port Albion
+13,Tofino
+14,Clayoquot
+15,Kakawis
+16,Bedwell River
+17,Herbert Arm
+18,Ahousat
+19,Sydney Inlet
+20,Refuge Cove
+21,Hesquiat
+22,Nootka Cannery
+23,Muchalat
+24,Tahsis
+25,Ceepeecee
+26,Hecate
+27,Zeballos
+28,Markale
+29,Chamiss Bay

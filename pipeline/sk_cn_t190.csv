@@ -1,0 +1,42 @@
+# Canadian National, Table 190, Winnipeg - Neepawa - Russell - Yorkton - Parkerview. Official Guide, April 25, 1948
+#   (scan cn1948_sk/tables187_190_paddockwood_duluth_winnipeg_yorkton.png, right half).
+# Times as printed: CENTRAL TIME throughout ("Cent. time" at head and foot). Miles from Winnipeg as printed; Yorkton - Parkerview continues the mileage.
+#   Neepawa to Dropmore in Manitoba ("Dropmore, Man."), MacNutt ("MacNutt, Sask.") to Parkerview in Saskatchewan. Yorkton printed twice, one row here.
+# Rossburn Junction is mile 120.2 here (120.4 in Table 180), as printed.
+# Key to signs not on this scan (this table may share the Table 180-184 page key: "a Monday, Wednesday and Friday; b Tuesday, Thursday and Saturday;
+#   d Tuesday only; e Thursday and Saturday; M - Mixed train"). a and b mean the same in every key seen; d is "Tuesday only" in the Table 180-184 key,
+#   "Wednesday, Friday and Sunday" in the Table 166 key and absent from the Table 193-201 key: M263/M264 days IN DOUBT (entered Tuesday).
+# Columns "15-47" and "48-16": Winnipeg - Portage la Prairie (10.35 a.m., 12.20 p.m.; 1.43 p.m., 3.30 p.m.) are No. 15 / No. 16 times, entered in
+#   sk_cn_t180.csv; only the Neepawa - Russell part (Nos. 47, 48) is entered here (No. 15 is due Neepawa 3.00 p.m., No. 47 leaves 3.20 p.m.;
+#   No. 48 is due Neepawa 10.55 a.m., No. 16 leaves 11.30 a.m.).
+# NOT ENTERED here (entered in sk_cn_t207.csv: Table 207, Canora - Wroxton - Yorkton, names their full run): M260 Wroxton a1.20 p.m. - Yorkton ar 3.00 p.m.;
+#   M259 Yorkton e9.35 a.m. - Wroxton 11.10 a.m. (Table 207 prints M259's Yorkton time with a natural sign instead of e).
+#train col=No47 num=47 dir=down days="Mon,Wed,Fri" kind=passenger from="Winnipeg" note="Column 15-47: from Winnipeg as No. 15 (Table 180) to Neepawa; Neepawa 3.20 p.m. marked a (Mon Wed Fri); ends Russell."
+#train col=M255 num=255 dir=down days="Tue,Thu,Sat" kind=mixed note="Russell 8.00 a.m. marked b (Tue Thu Sat)."
+#train col=M263 num=263 dir=down days="Tue" kind=mixed note="Yorkton 9.10 a.m. marked d: Tuesday only (Brendan, 12 Oct)."
+#train col=No48 num=48 dir=up days="Tue,Thu,Sat" kind=passenger to="Winnipeg" note="Column 48-16: Russell 6.50 a.m. marked b (Tue Thu Sat) to Neepawa, then No. 16 to Winnipeg (Table 180)."
+#train col=M256 num=256 dir=up days="Mon,Wed,Fri" kind=mixed note="Yorkton 9.30 a.m. marked a (Mon Wed Fri)."
+#train col=M264 num=264 dir=up days="Tue" kind=mixed note="Parkerview 12.30 p.m. marked d: Tuesday only (Brendan, 12 Oct)."
+mile,station,principal,prov,tz,No47,M255,M263,No48,M256,M264
+115.8,Neepawa,1,MB,C,lv 3.20p,,,ar 10.55a,,
+120.2,Rossburn Junction,1,MB,C,3.30p,,,10.43a,,
+135.4,Bethany,0,MB,C,4.05p,,,10.08a,,
+140.2,Clanwilliam,0,MB,C,4.17p,,,9.56a,,
+151.0,Erickson,0,MB,C,4.49p,,,9.30a,,
+165.7,Sandy Lake,0,MB,C,5.26p,,,8.58a,,
+173.0,Elphinstone,0,MB,C,5.46p,,,8.43a,,
+181.1,Menzie,0,MB,C,6.03p,,,8.25a,,
+185.7,Oakburn,0,MB,C,6.18p,,,8.14a,,
+192.7,Vista,0,MB,C,6.34p,,,7.59a,,
+198.8,Rossburn,0,MB,C,6.53p,,,7.46a,,
+204.1,Birdtail,0,MB,C,7.10p,,,7.34a,,
+212.7,Angusville,0,MB,C,7.36p,,,7.15a,,
+224.4,Russell,1,MB,C,ar 8.10p,lv 8.00a,,lv 6.50a,ar 4.10p,
+240.8,Shellmouth,0,MB,C,,8.45a,,,3.05p,
+248.3,Dropmore,0,MB,C,,9.10a,,,2.25p,
+257.2,MacNutt,0,SK,C,,9.40a,,,1.50p,
+265.3,Calder,0,SK,C,,10.10a,,,1.15p,
+272.9,Wroxton,1,SK,C,,11.15a,,,12.40p,
+300.5,Yorkton,1,SK,C,,ar 12.50p,lv 9.10a,,lv 9.30a,ar 2.45p
+316.1,Willowbrook,0,SK,C,,,10.05a,,,1.55p
+338.4,Parkerview,1,SK,C,,,ar 11.15a,,,lv 12.30p

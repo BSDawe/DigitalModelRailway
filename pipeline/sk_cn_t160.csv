@@ -1,0 +1,14 @@
+# Canadian National, Table 160, Saskatoon - Dalmeny - Carlton. Official Guide, April 25, 1948 (scan cn1948_sk/tables160_165_carlton_alonsa_brandon_maincentre.png, top left).
+# Times as printed: MOUNTAIN TIME ("Mt. time" head). All stations in Saskatchewan. Miles from Saskatoon as printed.
+# Clark's Crossing (8.4) is printed with "- -" in both columns (no stop): left empty. Warman printed "arr. Warman lve." with one time per train.
+# Key to signs: not on this scan. M = mixed train. Both trains carry the sign v (M295 Saskatoon v7.00 a.m., M296 Carlton v12.10 p.m.); v is not in any key seen
+#   (Tables 166, 180-184, 193-201 pages). DAYS UNKNOWN: entered "Wed" as a PLACEHOLDER only.
+#train col=M295 num=295 dir=down days="Tue" kind=mixed note="Saskatoon 7.00 a.m. marked v: Tuesday only (key for Tables 152-165) (Brendan, 12 Oct)."
+#train col=M296 num=296 dir=up days="Tue" kind=mixed note="Carlton 12.10 p.m. marked v: Tuesday only (Brendan, 12 Oct)."
+mile,station,principal,prov,tz,M295,M296
+0.0,Saskatoon,1,SK,M,lv 7.00a,ar 4.30p
+8.4,Clark's Crossing,0,SK,M,,
+13.6,Warman,1,SK,M,7.35a,3.55p
+22.4,Dalmeny,1,SK,M,8.15a,3.20p
+50.4,Laird,0,SK,M,10.30a,12.45p
+58.5,Carlton,1,SK,M,ar 11.15a,lv 12.10p

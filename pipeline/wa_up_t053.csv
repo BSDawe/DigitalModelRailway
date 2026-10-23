@@ -1,0 +1,37 @@
+# Union Pacific Railroad, Table 53, Portland - Wallula and Yakima, table of April 4, 1948 (Official Guide). Times as printed: PACIFIC TIME.
+# Only the two rail columns are entered: "20-66-64" (No. 64, Wallula 4.10 a.m. - Yakima 8.05 a.m., connecting from Nos. 20 and 66 and from No. 64
+# Walla Walla 9.45 p.m. - Wallula 10.50 p.m. of Table 61) and "63-65-19" (No. 63, Yakima 7.10 p.m. - Wallula 10.50 p.m., connecting to Nos. 65 and
+# 19 and to No. 63 Wallula 4.20 - Walla Walla 5.30 a.m.). The heading numbers are read as connections; the train number on this line taken to
+# be 64/63 (the last/first in each heading) - check. Kind not printed: passenger.
+# SKIPPED: the ten columns marked with the diamond = motor bus (Walla Walla - Wallula - Kennewick - Yakima, Pendleton - Wallula).
+# Summary rows not entered: Portland 9.20 p.m. - Wallula ar 2.45 a.m. (No. 20; Table 56 has No. 20 at Wallula ar 2.45 / lv 3.05) and Wallula lv
+# 1.20 - Portland 7.30 a.m. (No. 19); Pendleton 12.30 a.m. - Wallula 3.10 a.m. (No. 66) and Wallula 11.30 p.m. - Pendleton 1.30 a.m. (No. 65);
+# Walla Walla - Wallula (in wa_up_t061).
+# SUNNYSIDE is a short spur: the train runs Midvale (66.2) - Sunnyside (69.1) and back to Midvale (66.2), printed as "arr. Midvale", "arr./lve.
+# Sunnyside" and "lve. Midvale"; entered in that order, so the miles go 66.2, 69.1, 66.2.
+# Signs: * daily; f stops on signal. Leslie, Grosscup, Acton and (No. 63) Parker show "- -" (no stop).
+#train col=No64 num=64 dir=down days="daily" kind=passenger from="Wallula" to="Yakima" note="Connects at Wallula from UP Nos. 20, 66 and No. 64 from Walla Walla."
+#train col=No63 num=63 dir=up days="daily" kind=passenger from="Yakima" to="Wallula" note="Connects at Wallula to UP Nos. 65, 19 and No. 63 to Walla Walla."
+mile,station,principal,No64,No63
+0,Wallula,1,lv 4.10a,ar 10.50p
+2.6,Attalia,0,4.20a,10.40p
+9.2,Villard,0,f4.30a,f10.25p
+15.7,Kennewick,1,4.50a,10.10p
+23.2,Leslie,0,,
+31.1,Grosscup,0,,
+33.8,Acton,0,,
+39.0,Benton City,0,5.31a,9.22p
+45.5,Chafee,0,f5.43a,f9.11p
+53.3,North Prosser,0,f5.57a,f8.59p
+60.2,Grandview,0,6.11a,8.47p
+66.2,Midvale,1,ar 6.23a,lv 8.36p
+69.1,Sunnyside,1,ar 6.33a / lv 6.35a,ar 8.24p / lv 8.27p
+66.2,Midvale,1,lv 6.45a,ar 8.14p
+69.6,Emerald,0,f6.53a,f8.07p
+75.8,Granger,0,f7.06a,f7.58p
+81.0,Zillah,0,7.18a,7.50p
+84.1,Buena,0,7.25a,7.44p
+87.0,Sawyer,0,f7.32a,f7.39p
+89.3,Donald,0,f7.38a,f7.34p
+93.3,Parker,0,f7.48a,
+100.5,Yakima,1,ar 8.05a,lv 7.10p

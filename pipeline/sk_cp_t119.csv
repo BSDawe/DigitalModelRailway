@@ -1,0 +1,15 @@
+# Canadian Pacific, Table 119, Wilkie - Kerrobert.
+# From the Canadian Pacific public timetable of about 1948 (scan cp1948_sk/tables117_119_moosejaw_kerrobert_macklin_wilkie.png, printed sideways).
+# Times as printed: MOUNTAIN TIME ("Mountain Time" heads the station column). All stations in Saskatchewan.
+# Signs (explanation of signs on this page): f = stops on signal; M = mixed train.
+# Miles from Wilkie as printed. "Wilkie 92" refers to Table 92, "Kerrobert 117" to Table 117.
+#train col=M414 num=414 dir=down days="Tue" kind=mixed
+#train col=M413 num=413 dir=up days="Tue" kind=mixed
+mile,station,principal,prov,tz,M414,M413
+0.0,Wilkie,1,SK,M,lv 9.30a,ar 5.30p
+8.4,Reford,0,SK,M,f10.00a,f4.55p
+18.4,Revenue,0,SK,M,10.35a,4.15p
+25.0,Tramping Lake,0,SK,M,11.15a,3.45p
+31.7,Broadacres,0,SK,M,11.55a,3.15p
+39.2,Verulam,0,SK,M,f12.30p,f2.40p
+44.6,Kerrobert,1,SK,M,ar 1.00p,lv 2.15p

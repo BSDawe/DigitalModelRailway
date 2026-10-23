@@ -1,0 +1,29 @@
+# Canadian National, Table 199, Saskatoon - Tichfield - Beechy - Whitebear - Kindersley: section C, Eston - Lacadena - Whitebear.
+# Official Guide, April 25, 1948 (scan cn1948_sk/tables193_201_drumheller_reserve_dauphin_saskatoon_regina_nbattleford.png, Table 199 at top right).
+# Times as printed: MOUNTAIN TIME ("Mt. time" head). All stations in Saskatchewan.
+# The table has six sections: Saskatoon - Tichfield (0-77.2); Tichfield - Beechy (0-44.1); Tichfield - Eston (77.2-160.9); Eston - Lacadena - Whitebear (0-34.3);
+#   the same line again as Whitebear - Lacadena - Eston (0-34.3) for other trains; Eston - Kindersley (160.9-197.2). Files: sk_cn_t199a.csv (Saskatoon - Tichfield -
+#   Eston - Kindersley), sk_cn_t199b.csv (Tichfield - Beechy), sk_cn_t199c.csv (Eston - Whitebear, both printings merged, miles from Eston).
+# The column headed "27-M302" (Saskatoon a9.35 a.m.) divides at Tichfield: lv a1.15 p.m. for Beechy and lv a1.07 p.m. for Eston; at Eston it goes on either
+#   o4.45 p.m. to Kindersley (o = Monday and Wednesday) or u4.50 p.m. to Whitebear (u = Friday). Which number belongs to which part is not printed: taken as
+#   No. 27 Saskatoon - Tichfield - Eston and on, M302 Tichfield - Beechy (my assumption). No. 27 is split by days into No27 (Mon, Wed: to Kindersley) and
+#   No27F (Fri: to Whitebear).
+# Column "M 28" likewise: Kindersley p5.50 a.m. (Tue and Thu) or Whitebear k5.45 a.m. (Saturday) to Eston, then Eston b7.45 a.m. - Saskatoon b2.20 p.m.:
+#   split into M28 (Tue, Thu, from Kindersley) and M28S (Sat, from Whitebear).
+# The first column of the table (unheaded) is blank throughout.
+# Key to signs (printed on this page, the Table 193-201 page): "* Daily; + daily, except Sunday; ++ daily, except Saturday; para. daily, except Monday;
+#   Section Sunday only; a Monday, Wednesday and Friday; b Tuesday, Thursday and Saturday; e Wednesday and Friday; f flag stop; h Thursday only;
+#   k Saturday only; l Tuesday and Saturday; n Monday and Friday; o Monday and Wednesday; p Tuesday and Thursday; r Sunday, Tuesday and Thursday;
+#   t Wednesday only; u Friday only; x Tuesday only; z Wednesday, Friday and Sunday. (dot) Motor train; limited baggage accommodation.
+#   # Thursday and Saturday. natural-sign Monday only. (triangle) Restaurant or lunch counter. + Coupon stations; Telegraph stations. M - Mixed train."
+# This line is printed twice in the table: "lve. Eston 0 / Lacadena 22.2 / ar. Whitebear 34.3" (No. 27 Friday down, M28 Saturday up) and
+#   "lve. Whitebear 0 / Lacadena 22.2 / arr. Eston 34.3" (M293 down that printing, M294 up it). Merged here with miles from Eston as in the first printing;
+#   M293 (Whitebear to Eston) therefore runs up the rows and M294 down.
+#train col=No27F num=27 dir=down days="Fri" kind=passenger from="Saskatoon" note="Column 27-M302 on Fridays: Eston 4.50 p.m. and Whitebear 6.35 p.m. marked u (Friday only); from Saskatoon (sk_cn_t199a.csv)."
+#train col=M294 num=294 dir=down days="Wed" kind=mixed from="Kindersley" note="From Kindersley t9.00 a.m. (Wednesday only), sk_cn_t199a.csv; Eston lv 12.30 p.m."
+#train col=M28S num=28 dir=up days="Sat" kind=mixed to="Saskatoon" note="Whitebear 5.45 a.m. and Eston 7.20 a.m. marked k (Saturday only); on to Saskatoon (sk_cn_t199a.csv)."
+#train col=M293 num=293 dir=up days="Thu" kind=mixed to="Kindersley" note="Whitebear 8.00 a.m. marked h (Thursday only); on from Eston 12.30 p.m. to Kindersley (sk_cn_t199a.csv)."
+mile,station,principal,prov,tz,No27F,M294,M28S,M293
+0.0,Eston,1,SK,M,lv 4.50p,lv 12.30p,ar 7.20a,ar 11.30a
+22.2,Lacadena,0,SK,M,6.05p,3.00p,6.10a,8.50a
+34.3,Whitebear,1,SK,M,ar 6.35p,ar 4.00p,lv 5.45a,lv 8.00a

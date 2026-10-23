@@ -1,0 +1,41 @@
+# Canadian Pacific Railway, Table 150, Lethbridge - Cardston - Coutts - Great Falls: the Lethbridge - Stirling - Cardston - Glenwood branch
+# (mixed trains M650 and M651), with the two Table 120 mixed trains the table also shows between Lethbridge and Stirling (M642 and M641).
+# From the Canadian Pacific public timetable, 1948. Times as printed: MOUNTAIN TIME. All in Alberta.
+# The table has three sections: Lethbridge - Stirling (all six trains), Stirling - Glenwood (M650 / M651, this file) and Stirling - Coutts
+# (544 / 543, file ab_cp_t150b.csv). The branches divide at Stirling (mile 19.2). The Cardston line runs on past Cardston to Glenwood (92.5).
+# Signs: M before the number = mixed train; f = stops on signal; s = "stops to detrain from east of Stirling" (M641 at Wilson, entered as
+# f1.45p: a stop only when there are passengers to set down); a double bar after Lethbridge = meal station. Figures after a station name are
+# connecting tables: Lethbridge 149; Stirling 120. Days from the column headings: M650 and M642 "Mon. Wed. Fri.", M651 and M641 "Tue. Thu. Sat.".
+# Stirling is printed twice (arrive row and leave row, both mile 19.2); M650 has 9.35 in both and M651 3.10 in both, so one time here.
+# a.m./p.m.: M650 A.M. at the head and P.M. at the foot, light type to Welling 11.20, heavy from Magrath 12.15. M651 (read up) A.M. at the
+# foot and P.M. at the head, light type from Glenwood 8.00 to Bradshaw 11.45, heavy from Magrath 12.30. M642 A.M. head and foot; M641 P.M.
+# head and foot.
+# M642 / M641 ARE THE TABLE 120 TRAINS (Lethbridge - Stirling - Foremost - Manyberries): Table 120 shows M642 Lethbridge 9.50a to Manyberries
+# 5.40p and M641 Manyberries 7.00a to Lethbridge 2.30p, with the same times at Stirling and Wilson as here. Table 150 gives only their
+# Lethbridge - Stirling calls. If Table 120 is transcribed with these rows, drop one copy.
+# Slow running that the scan really shows (read three times; a mixed train's working time, the single printed time at each station being
+# the leaving time or the arriving time, not both): M650 Stirling 9.35 to Raymond 11.00 (7.2 miles), Welling 11.20 to Magrath 12.15
+# (4.7 miles), Raley 2.30 to Cardston 4.00 (8.7 miles); M651 Ninastoko 9.25 to Cardston 10.15 (4.2 miles), Welling 12.50 to Raymond 2.20
+# (5.6 miles), Raymond 2.20 to Stirling 3.10 (7.2 miles).
+# Nothing in doubt: every figure was read twice from separate enlargements and against the smaller capture, and agreed.
+#train col=M650 num=650 dir=down days="Mon,Wed,Fri" kind=mixed note="Lethbridge to Glenwood by Stirling and Cardston. Much station time on the way."
+#train col=M651 num=651 dir=up days="Tue,Thu,Sat" kind=mixed note="Glenwood to Lethbridge by Cardston and Stirling, the return of 650. Much station time on the way."
+#train col=M642 num=642 dir=down days="Mon,Wed,Fri" kind=mixed to="Manyberries" note="Table 120 train, Lethbridge to Manyberries by Stirling and Foremost; only its Lethbridge - Stirling calls are in Table 150."
+#train col=M641 num=641 dir=up days="Tue,Thu,Sat" kind=mixed from="Manyberries" note="Table 120 train, Manyberries to Lethbridge; only its Stirling - Lethbridge calls are in Table 150. Wilson: stops only to set down passengers from east of Stirling."
+mile,station,principal,M650,M651,M642,M641
+0.0,Lethbridge,1,lv 8.50a,ar 4.35p,lv 9.50a,ar 2.30p
+11.3,Wilson,0,f9.17a,f3.58p,f10.20a,f1.45p
+19.2,Stirling,1,9.35a,3.10p,ar 10.50a,lv 1.20p
+26.4,Raymond,0,11.00a,2.20p,,
+32.0,Welling,0,11.20a,12.50p,,
+36.7,Magrath,0,12.15p,12.30p,,
+43.1,Bradshaw,0,1.00p,11.45a,,
+48.6,Spring Coulee,0,1.50p,11.25a,,
+56.9,Raley,0,2.30p,10.40a,,
+65.6,Cardston,0,4.00p,10.15a,,
+69.8,Ninastoko,0,f4.20p,f9.25a,,
+73.5,Northcliffe,0,f4.40p,f9.15a,,
+79.7,Omaktai,0,f5.00p,f9.00a,,
+82.7,Parkbend,0,f5.20p,f8.50a,,
+86.0,Hillspring,0,5.50p,8.35a,,
+92.5,Glenwood,1,ar 6.30p,lv 8.00a,,

@@ -1,0 +1,19 @@
+# Canadian National, Table 173, Maryfield - Carlyle - Lampman - Estevan - Radville: section A, Maryfield - Carlyle - Lampman - Estevan (mixed trains 233/234).
+# Official Guide, April 25, 1948 (scan cn1948_sk/tables172_173_regina_princealbert_maryfield_radville.png).
+# Times as printed: CENTRAL TIME Maryfield - Carlyle ("Central time" head, "ar. Carlyle (C.T.) lv."), MOUNTAIN TIME Carlyle - Lampman - Estevan
+#   ("lv. Carlyle (M.T.) ar."; "Mount. time" at the foot). Carlyle is printed twice (C.T. and M.T. lines) and entered as one row tz C/M:
+#   233 ar 10.15 a.m. C.T. (= 9.15 M.T.), lv 11.15 a.m. M.T.; 234 ar 10.50 a.m. M.T., lv 12.05 p.m. C.T. (= 11.05 M.T.).
+# All stations in Saskatchewan. Miles from Maryfield as printed; Lampman - Estevan continues the same mileage (67.7 - 93.8). Lampman is printed
+#   twice ("arr. Lampman lve." and "lve. Lampman arr."), entered as one row.
+# Key to signs not on this scan; the signs used here mean the same in the Table 180-184 and Table 193-201 keys: "a Monday, Wednesday and Friday;
+#   b Tuesday, Thursday and Saturday; M - Mixed train". Coupon and telegraph signs dropped from names.
+#train col=M233 num=233 dir=down days="Tue,Thu,Sat" kind=mixed note="Maryfield 8.00 a.m. and Lampman 2.00 p.m. marked b (Tuesday, Thursday and Saturday)."
+#train col=M234 num=234 dir=up days="Mon,Wed,Fri" kind=mixed note="Estevan 6.00 a.m. marked a (Monday, Wednesday and Friday)."
+mile,station,principal,prov,tz,M233,M234
+0.0,Maryfield,1,SK,C,lv 8.00a,ar 2.45p
+20.2,Parkman,0,SK,C,9.10a,1.30p
+37.6,Carlyle,1,SK,C/M,ar 10.15a / lv 11.15a,ar 10.50a / lv 12.05p
+67.7,Lampman,1,SK,M,ar 1.15p / lv 2.00p,ar 8.05a / lv 8.50a
+68.7,Luxton,0,SK,M,2.05p,8.00a
+85.4,Bienfait,0,SK,M,3.15p,7.00a
+93.8,Estevan,1,SK,M,ar 4.00p,lv 6.00a

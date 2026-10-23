@@ -1,0 +1,19 @@
+# Canadian National, Table 161, Portage la Prairie - Alonsa. Official Guide, April 25, 1948 (scan cn1948_mb/t156_165.png). Transcribed 18 October 2026. CENTRAL TIME. Miles as printed. All Manitoba.
+# Signs (key on this page): a = Monday, Wednesday and Friday; b = Tuesday, Thursday and Saturday; l = Tuesday and Saturday; n = Tuesday and Thursday;
+#   p = Monday and Friday; v = Tuesday only; x = Monday only; f = flag stop; M = mixed train.
+#train col=M223 num=223 dir=down days="Mon,Fri" kind=mixed note="Monday and Friday. Portage la Prairie 1.00 p.m. to Alonsa 5.05 p.m."
+#train col=M224 num=224 dir=up days="Tue,Sat" kind=mixed note="Tuesday and Saturday. Alonsa 8.00 a.m. to Portage la Prairie 12.15 p.m."
+mile,station,principal,prov,tz,M223,M224
+0.0,Portage la Prairie,1,MB,C,lv 1.00p,ar 12.15p
+3.9,Alpha,0,MB,C,1.13p,11.50a
+7.0,Townline,0,MB,C,1.22p,11.35a
+10.0,Oakland,0,MB,C,1.35p,11.20a
+12.8,Fulton,0,MB,C,1.45p,10.59a
+16.8,Longburn,0,MB,C,2.00p,10.48a
+21.9,Cawdor,0,MB,C,2.13p,10.35a
+31.5,Lakeland,0,MB,C,2.42p,10.05a
+39.6,Langruth,0,MB,C,3.10p,9.43a
+47.9,Embury,0,MB,C,f3.32p,9.13a
+54.0,Amaranth,0,MB,C,4.00p,8.55a
+64.4,Harcus,0,MB,C,4.35p,8.20a
+71.2,Alonsa,1,MB,C,ar 5.05p,lv 8.00a

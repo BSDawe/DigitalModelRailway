@@ -1,0 +1,23 @@
+# Canadian National (Hudson Bay Ry.), Table 183, The Pas - Churchill. Official Guide, April 25, 1948 (scan cn1948_mb/t182_183.png). Transcribed 18 October 2026.
+# CENTRAL TIME. Miles from The Pas as printed. All Manitoba. Wabowden and Gillam printed twice (arr. / lve.): one row each.
+# Signs (key on this page): a = Mon. Wed. Fri.; b = Tue. Thu. Sat.; c = Monday only; d = Tuesday only; e = Thursday and Saturday; f = flag stop; h = Thursday
+#   only; k = Saturday only; o = Wednesday only; r = Tuesday and Thursday; x = daily except Saturday and Sunday; y = Tuesday and Friday; h-bar = Friday only;
+#   # = Monday and Thursday; section mark = Sunday only; M = mixed train.
+# The trains lie over at Wabowden and Gillam: the day signs change along the column (M3: The Pas h9.00 a.m. Thursday, Wabowden ar 3.30 p.m., lv h-bar 10.00 a.m.
+#   Friday, Gillam ar 7.30 p.m., lv k8.30 a.m. Saturday, Churchill k4.30 p.m. Saturday; M1: The Pas d2.30 p.m. Tuesday, Gillam o5.45 a.m. Wednesday, Churchill
+#   o2.15 p.m.; M2: Churchill h7.15 a.m. Thursday, Wabowden h11.45 p.m., lv h-bar 4.00 a.m. Friday, The Pas 9.30 a.m. Friday).
+# M4: Churchill section-mark 9.00 a.m. Sunday, Gillam ar 5.00 p.m. Sunday, lv c9.00 a.m. Monday, Wabowden ar c6.30 p.m. Monday, then lv o7.30 a.m. WEDNESDAY
+#   (read as o; d, Tuesday, would be the next morning), The Pas o2.00 p.m.: two nights at Wabowden, entered as two columns (M4 Churchill - Wabowden, Sunday;
+#   M4W Wabowden - The Pas, Wednesday).
+# Equipment: The Pas - Churchill Nos. 1 and 2 buffet parlor car, 12-section 1-drawing-room sleeping car and coaches; Nos. 3 and 4 coaches only.
+#train col=M3 num=3 dir=down days="Thu" kind=mixed note="Thursday 9.00 a.m. from The Pas; nights at Wabowden and Gillam; Churchill Saturday 4.30 p.m. Coaches only."
+#train col=M1 num=1 dir=down days="Tue" kind=mixed note="Tuesday 2.30 p.m. from The Pas; Gillam Wednesday 5.45 a.m.; Churchill Wednesday 2.15 p.m. Buffet parlor car, sleeping car and coaches."
+#train col=M2 num=2 dir=up days="Thu" kind=mixed note="Thursday 7.15 a.m. from Churchill; Wabowden 11.45 p.m., on Friday 4.00 a.m.; The Pas Friday 9.30 a.m. Buffet parlor car, sleeping car and coaches."
+#train col=M4 num=4 dir=up days="Sun" kind=mixed to="The Pas" note="Sunday 9.00 a.m. from Churchill; night at Gillam; Wabowden Monday 6.30 p.m., where it lies over to Wednesday morning. Coaches only."
+#train col=M4W num=4 dir=up days="Wed" kind=mixed from="Churchill" note="No. 4 on from Wabowden Wednesday 7.30 a.m. (from Churchill Sunday) to The Pas 2.00 p.m. Coaches only."
+mile,station,principal,prov,tz,M3,M1,M2,M4,M4W
+0.0,The Pas,1,MB,C,lv 9.00a,lv 2.30p,ar 9.30a,,ar 2.00p
+136.4,Wabowden,1,MB,C,ar 3.30p / lv 10.00a,ar 8.00p / lv 8.45p,ar 11.45p / lv 4.00a,ar 6.30p,lv 7.30a
+326.1,Gillam,1,MB,C,ar 7.30p / lv 8.30a,ar 5.45a / lv 6.45a,ar 2.30p / lv 3.15p,ar 5.00p / lv 9.00a,
+412.0,Herchmer,0,MB,C,12.25p,10.00a,11.22a,1.25p,
+509.8,Churchill,1,MB,C,ar 4.30p,ar 2.15p,lv 7.15a,lv 9.00a,

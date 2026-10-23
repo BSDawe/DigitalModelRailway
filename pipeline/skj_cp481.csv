@@ -1,0 +1,13 @@
+# Joined through train (cp481), sk_join.py: skcp117a:M481, skcp092a:M481; up skcp092a:M480, skcp117a:M480
+# Rows and times as in the section files (see them for the scans, signs and doubts). Miles: counted along the run from the first station.
+#train col=D num=481 dir=down days="Wed" kind=mixed note="Through train: No. 481 Kerrobert - Macklin; No. 481 Macklin - Hayter. Kerrobert to Macklin only."
+#train col=U num=480 dir=up days="Tue" kind=mixed note="Through train: No. 480 Hayter - Macklin; No. 480 Macklin - Kerrobert. From Hardisty 9.20a (ab_cp_t092.csv); Hayter 1.40p to Macklin 2.00p here; on to Kerrobert (Table 117, Macklin lv 2.50p)."
+mile,station,principal,prov,tz,D,U
+0.0,Kerrobert,1,SK,M,lv 9.00a,ar 6.30p
+9.0,Baliol,0,SK,M,9.25a,6.00p
+15.9,Luseland,0,SK,M,9.55a,5.40p
+23.9,Salvador,0,SK,M,10.35a,5.00p
+31.3,Denzil,0,SK,M,11.15a,4.25p
+39.3,Primate,0,SK,M,11.45a,3.40p
+46.4,Macklin,1,SK,M,ar 12.05p / lv 12.30p,ar 2.00p / lv 2.50p
+53.8,Hayter,0,AB,M,ar 12.50p,lv 1.40p

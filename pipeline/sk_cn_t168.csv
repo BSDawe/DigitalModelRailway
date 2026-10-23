@@ -1,0 +1,108 @@
+# Canadian National, Table 168, Winnipeg - Dauphin - Kamsack - Saskatoon - Kindersley - Drumheller - Calgary, table of April 25, 1948
+#   (Official Guide, May 1948, page 1135; scan og1948_cn/table168_winnipeg_kindersley_drumheller_calgary.png, printed sideways). ENTERED HERE:
+#   Winnipeg to Sibbald, Alberta (the first Alberta station; Sibbald and west is in ab_cn_t168.csv, so the files overlap at Sibbald). Miles from
+#   Winnipeg as printed.
+# Times as printed: CENTRAL TIME from Winnipeg ("Cent. time" in the head) to Humboldt, which is printed on two lines, "ar. Humboldt (C.T.) lv." and
+#   "lv. Humboldt (M.T.) ar.", and entered as one row, tz C/M (down trains arrive on Central and leave on Mountain time; up trains the reverse, so
+#   ab_table.py shows a time going back there). MOUNTAIN TIME from Humboldt west.
+# A.M./P.M. from the "A M"/"P M" heads and the changes down the columns (light figures a.m., heavy p.m. where the type can be told apart).
+# Provinces as printed: "Winnipeg, Man.", "Makaroff, Man" (the last Manitoba station), "Togo, Sask" (the first Saskatchewan station), "Alsask, Sask.",
+#   "Sibbald, Alberta".
+# Signs (keys: og1948_cn/key_to_signs.png and the key on the Table 166 page as quoted in sk_cn_t166.csv; this page's own key is not on the scan):
+#   + (dagger) daily except Sunday; ++ (double dagger) daily except Saturday; para. daily except Monday; a Mon, Wed and Fri; b Tue, Thu and Sat;
+#   f flag stop; psi "Via North Elie"; circle-dot "Via Neepawa"; M mixed train. Coupon (+), telegraph and restaurant signs dropped; a motor-car sign
+#   after Winnipeg not entered.
+# Day signs on No. 9: Winnipeg ++9.00 p.m. (daily except Saturday), Muir ++11.47 p.m., Gladstone +12.03 a.m. (daily except Sunday, the first time after
+#   midnight); Alsask +11.52 p.m. and Sibbald para.12.05 a.m. (ab_cn_t168.csv). One run, Sun-Fri from Winnipeg.
+# Day signs on No. 10: arrives Saskatoon para.11.00 a.m. (daily except Monday: from Calgary +8.00 p.m. the evening before) but leaves Saskatoon
+#   +12.15 p.m. (daily except Sunday); Roblin +11.48 p.m., Grandview para.12.55 a.m., Winnipeg para.8.20 a.m. So No. 10 is entered as two columns
+#   split at Saskatoon: No10 Sibbald - Saskatoon (Tue-Sun) and No10E Saskatoon - Winnipeg (Mon-Sat). No9 and No10 are the columns that carry on in
+#   ab_cn_t168.csv.
+# Nos. 63 and 64 ("To Flin Flon" / "From Flin Flon") are timed here Winnipeg - Canora only; their Canora - Hudson Bay Jn. - Flin Flon part is in
+#   sk_cn_t192b.csv (which says "From/To Winnipeg, see Table 168"): Canora here is 63 at 10.45 p.m. (192b: Canora a11.00 p.m., read as its departure)
+#   and 64 at b3.25 a.m. (192b: Canora b3.10 a.m., its arrival). Both are marked psi at Elie (run via North Elie, no Elie call); entered as blank there.
+#   A blot or unknown sign is printed before No. 63's Dauphin departure 6.30 p.m. (not in the keys; entered as a plain time).
+# Mixed 251 / 252 ("M 251", "M 252" printed in the columns of Nos. 15 and 16 below Dauphin, "To / From Hudson Bay Junction"): Kamsack - Canora here;
+#   Canora - Hudson Bay Jn. in sk_cn_t192b.csv (M251 from Canora b11.30 a.m., M252 to Canora).
+# NOT ENTERED: Nos. 15 and 16 (Winnipeg - Dauphin, "To / From Hudson Bay Junction", circle-dot via Neepawa between Muir and McCreary). They are the
+#   trains of Table 180 (sk_cn_t180.csv), whose times agree with this table (Winnipeg a10.35 a.m. / ar 3.30 p.m., Portage 12.20 / 1.43, Muir 1.19 /
+#   12.48, McCreary 4.27 / 9.46, Laurier 4.43 / 9.30, Makinak 4.58 / 9.15, Ochre River 5.09 / 9.01, Dauphin ar 5.40 p.m. / lv b8.35 a.m.); Table 168 also
+#   gives them Beaver 1.01 p.m. / 1.05 p.m., which Table 180 does not print.
+# Doubts: Runnymede's mile is printed "205.2" or a worn "265.2" (between Togo 256.7 and Kamsack 278.1): entered 265.2. Dana is printed 451.1 (1.7 miles
+#   from Totzke; No. 10 takes 13 minutes Dana - Totzke, as printed). No. 64 at McCreary 9.26 a.m.: the middle figure is smudged (read twice as 2).
+#   No. 64 at Portage la Prairie "12 00" in light type: entered 12.00p (noon), between Gladstone 10.53 a.m. and Winnipeg 1.30 p.m.
+# principal = 1: names in heavy type (Muir, Gladstone, Ochre River, Dauphin, Grandview, Kamsack, Canora, Invermay, Humboldt, Totzke, Aberdeen, Warman,
+#   Saskatoon, Delisle, Kindersley, Alsask), Winnipeg and Portage la Prairie, and Rosetown (junction).
+#train col=No63 num=63 dir=down days="Mon,Wed,Fri" kind=passenger to="Flin Flon" note="Winnipeg 12.40 p.m. marked a (Mon Wed Fri); via North Elie; Canora 10.45 p.m., then by Hudson Bay Jn. to Flin Flon (sk_cn_t192b.csv)."
+#train col=M251 num=251 dir=down days="Tue,Thu,Sat" kind=mixed to="Hudson Bay Jn." note="Kamsack b9.05 a.m. (Tue Thu Sat); Canora 10.25 a.m., then to Hudson Bay Junction (sk_cn_t192b.csv)."
+#train col=No9 num=9 dir=down days="Sun,Mon,Tue,Wed,Thu,Fri" kind=passenger to="Calgary" note="Winnipeg ++9.00 p.m. (daily except Saturday); by Saskatoon and Kindersley; Alsask +11.52 p.m. (daily except Sunday) the next evening, on to Drumheller and Calgary (ab_cn_t168.csv)."
+#train col=No10 num=10 dir=up days="Tue,Wed,Thu,Fri,Sat,Sun" kind=passenger from="Calgary" note="From Calgary +8.00 p.m. (daily except Sunday, ab_cn_t168.csv); Sibbald 4.42 a.m. the next morning; arrives Saskatoon para.11.00 a.m. (daily except Monday). Continues as No10E daily except Sunday."
+#train col=No10E num=10 dir=up days="ex Sun" kind=passenger from="Calgary" note="Leaves Saskatoon +12.15 p.m. (daily except Sunday); Roblin +11.48 p.m.; Grandview para.12.55 a.m.; arrives Winnipeg para.8.20 a.m."
+#train col=No64 num=64 dir=up days="Tue,Thu,Sat" kind=passenger from="Flin Flon" note="From Flin Flon (sk_cn_t192b.csv); Canora b3.25 a.m. (Tue Thu Sat); via North Elie; arrives Winnipeg 1.30 p.m."
+#train col=M252 num=252 dir=up days="Mon,Wed,Fri" kind=mixed from="Hudson Bay Jn." note="From Hudson Bay Junction (sk_cn_t192b.csv); Canora a3.30 p.m. (Mon Wed Fri); arrives Kamsack 5.00 p.m."
+mile,station,principal,prov,tz,No63,M251,No9,No10,No10E,No64,M252
+0.0,Winnipeg,1,MB,C,lv 12.40p,,lv 9.00p,,ar 8.20a,ar 1.30p,
+30.2,Elie,0,MB,C,,,10.00p,,7.16a,,
+55.0,Portage la Prairie,1,MB,C,2.05p,,10.55p,,6.30a,12.00p,
+74.0,Beaver,0,MB,C,,,f11.31p,,f5.45a,,
+82.5,Muir,1,MB,C,,,11.47p,,f5.30a,,
+91.9,Gladstone,1,MB,C,3.10p,,12.03a,,5.10a,10.53a,
+139.4,McCreary,0,MB,C,4.47p,,2.12a,,3.33a,9.26a,
+147.9,Laurier,0,MB,C,,,2.38a,,3.15a,,
+156.3,Makinak,0,MB,C,,,2.58a,,2.58a,,
+163.6,Ochre River,1,MB,C,5.29p,,3.08a,,2.46a,8.41a,
+177.2,Dauphin,1,MB,C,ar 6.00p / lv 6.30p,,ar 3.45a / lv 4.00a,,ar 2.00a / lv 2.20a,ar 7.45a / lv 8.15a,
+197.2,Gilbert Plains,0,MB,C,7.09p,,4.43a,,1.17a,7.11a,
+206.7,Grandview,1,MB,C,7.30p,,5.08a,,12.55a,6.56a,
+239.8,Roblin,0,MB,C,8.35p,,6.29a,,11.48p,5.46a,
+251.7,Makaroff,0,MB,C,,,7.15a,,11.20p,,
+256.7,Togo,0,SK,C,f9.04p,,7.30a,,11.10p,f5.10a,
+265.2,Runnymede,0,SK,C,,,7.51a,,10.39p,,
+278.1,Kamsack,1,SK,C,ar 9.45p / lv 10.00p,lv 9.05a,ar 8.25a / lv 8.40a,,ar 10.00p / lv 10.20p,ar 4.10a / lv 4.30a,ar 5.00p
+286.5,Verigin,0,SK,C,,9.35a,8.57a,,9.43p,,4.30p
+294.7,Mikado,0,SK,C,,f10.05a,9.12a,,9.25p,,f4.05p
+302.1,Canora,1,SK,C,10.45p,ar 10.25a,9.44a,,9.10p,3.25a,lv 3.30p
+309.5,Tiny,0,SK,C,,,9.57a,,8.39p,,
+316.6,Buchanan,0,SK,C,,,10.12a,,8.26p,,
+327.6,Rama,0,SK,C,,,10.34a,,8.05p,,
+335.2,Invermay,1,SK,C,,,10.46a,,7.52p,,
+343.0,Margo,0,SK,C,,,11.02a,,7.37p,,
+350.4,Kuroki,0,SK,C,,,11.16a,,7.21p,,
+364.8,Wadena,0,SK,C,,,11.41a,,6.51p,,
+377.6,Clair,0,SK,C,,,12.06p,,6.21p,,
+386.1,Quill Lake,0,SK,C,,,12.24p,,6.03p,,
+398.2,Watson,0,SK,C,,,12.48p,,5.36p,,
+404.3,Englefeld,0,SK,C,,,1.00p,,5.22p,,
+411.8,St. Gregor,0,SK,C,,,1.16p,,5.07p,,
+419.1,Muenster,0,SK,C,,,1.33p,,4.53p,,
+424.5,Humboldt,1,SK,C/M,,,ar 1.45p / lv 1.00p,,ar 3.15p / lv 4.40p,,
+442.8,Bruno,0,SK,M,,,1.35p,,2.35p,,
+449.4,Totzke,1,SK,M,,,1.58p,,2.15p,,
+451.1,Dana,0,SK,M,,,2.02p,,2.02p,,
+460.0,Prud'homme,0,SK,M,,,2.20p,,1.44p,,
+468.8,Vonda,0,SK,M,,,2.39p,,1.26p,,
+477.1,Aberdeen,1,SK,M,,,2.59p,,1.09p,,
+484.2,Clarkboro,0,SK,M,,,3.16p,,12.57p,,
+489.9,Warman,1,SK,M,,,3.32p,,12.45p,,
+503.5,Saskatoon,1,SK,M,,,ar 4.00p / lv 5.10p,ar 11.00a,lv 12.15p,,
+511.3,Hawker,0,SK,M,,,f5.32p,f10.35a,,,
+521.0,Vanscoy,0,SK,M,,,5.50p,10.20a,,,
+529.8,Delisle,1,SK,M,,,6.08p,10.05a,,,
+537.8,Laura,0,SK,M,,,6.22p,9.50a,,,
+544.9,Tessier,0,SK,M,,,6.38p,9.38a,,,
+553.5,Harris,0,SK,M,,,7.00p,9.23a,,,
+564.2,Zealandia,0,SK,M,,,7.23p,9.00a,,,
+575.7,Rosetown,1,SK,M,,,7.58p,8.40a,,,
+588.4,McGee,0,SK,M,,,8.26p,8.10a,,,
+595.8,Fiske,0,SK,M,,,8.44p,7.55a,,,
+601.9,D'Arcy,0,SK,M,,,8.59p,7.40a,,,
+610.3,Brock,0,SK,M,,,9.14p,7.25a,,,
+616.8,Netherhill,0,SK,M,,,9.27p,7.13a,,,
+622.9,Beadle,0,SK,M,,,9.39p,7.00a,,,
+629.9,Kindersley,1,SK,M,,,ar 9.55p / lv 10.20p,ar 6.30a / lv 6.45a,,,
+638.2,Fairmount,0,SK,M,,,10.36p,6.12a,,,
+644.9,Pinkham,0,SK,M,,,10.49p,5.58a,,,
+652.5,Flaxcombe,0,SK,M,,,11.06p,5.43a,,,
+660.8,Marengo,0,SK,M,,,11.21p,5.25a,,,
+673.9,Alsask,1,SK,M,,,11.52p,4.59a,,,
+680.9,Sibbald,0,AB,M,,,12.05a,4.42a,,,

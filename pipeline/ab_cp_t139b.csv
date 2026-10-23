@@ -1,0 +1,26 @@
+# Canadian Pacific Railway, Table 139, Kerrobert - Coronation - Lacombe: the Coronation - Lacombe section (trains 529 and 530).
+# From the Canadian Pacific public timetable, 1948 (page 41). Times as printed: MOUNTAIN TIME.
+# Signs: f = stops on signal (Veldt, both trains). The train numbers have no M, so these are not mixed trains. The days are in the
+# column headings ("Ex. Su." for both). Miles are as printed, counted from Kerrobert, Sask.
+# Lacombe: the table refers to Table 138 (the Calgary - Edmonton line) for connections.
+# No connection the same day at Coronation with the mixed trains to and from Kerrobert (see ab_cp_t139a.csv).
+# The mile of Veldt is partly blotted in the scan (reads "?42.2"); 142.2 by its place between 138.2 and 149.8.
+#train col=T529 num=529 dir=down days="ex Sun" kind=passenger note="Coronation to Lacombe; connects at Lacombe with the Calgary - Edmonton line (Table 138)."
+#train col=T530 num=530 dir=up days="ex Sun" kind=passenger note="Lacombe to Coronation; connects at Lacombe with the Calgary - Edmonton line (Table 138)."
+mile,station,principal,T529,T530
+116.5,Coronation,1,lv 6.00a,ar 5.50p
+121.9,Federal,0,6.11a,5.32p
+129.3,Fleet,0,6.25a,5.16p
+138.2,Castor,0,6.41a,4.58p
+142.2,Veldt,0,f6.48a,f4.45p
+149.8,Halkirk,0,7.02a,4.31p
+158.6,Gadsby,0,7.20a,4.10p
+165.8,Botha,0,7.34a,3.53p
+173.6,Stettler,0,7.50a,3.34p
+180.9,Erskine,0,8.05a,3.19p
+187.8,Nevis,0,8.20a,3.06p
+196.6,Alix,0,8.39a,2.47p
+204.2,Tees,0,8.52a,2.29p
+210.1,Clive,0,9.05a,2.17p
+214.1,Chigwell,0,9.19a,2.09p
+223.4,Lacombe,1,ar 9.45a,lv 1.50p

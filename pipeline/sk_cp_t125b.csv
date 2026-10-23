@@ -1,0 +1,17 @@
+# Canadian Pacific, Table 125, Assiniboia - Mankota - Big Beaver - Killdeer: Maxstone - Mankota. Miles from Maxstone as printed.
+# From the Canadian Pacific public timetable of about 1948 (scan cp1948_sk/tables123_125_weyburn_assiniboia_killdeer.png, printed sideways).
+# Times as printed: MOUNTAIN TIME ("Mountain Time" heads the station column). All stations in Saskatchewan.
+# Signs: f = stops on signal; || = meal station (Assiniboia); M = mixed train; .. = does not stop. "Assiniboia 120" refers to Table 120.
+#train col=M439 num=439 dir=down days="Tue,Fri" kind=mixed from="Assiniboia" note="Comes from Assiniboia 2.00p (sk_cp_t125a.csv)."
+#train col=M440 num=440 dir=up days="Wed,Sat" kind=mixed to="Assiniboia" note="Continues Maxstone f10.45a - Assiniboia 11.30a (sk_cp_t125a.csv). Maxstone printed f10.45 (flag) although in capitals."
+mile,station,principal,prov,tz,M439,M440
+0.0,Maxstone,1,SK,M,lv 2.35p,ar f10.45a
+5.8,Stonehenge,0,SK,M,2.55p,10.25a
+12.9,Lakenheath,0,SK,M,3.20p,9.55a
+20.4,Flintoft,0,SK,M,3.45p,9.25a
+28.9,Wood Mountain,0,SK,M,4.15p,8.45a
+37.4,Fir Mountain,0,SK,M,4.55p,8.10a
+45.5,Glentworth,0,SK,M,5.35p,7.35a
+53.7,McCord,0,SK,M,6.35p,7.00a
+59.5,Ferland,0,SK,M,7.05p,6.25a
+65.5,Mankota,1,SK,M,ar 7.25p,lv 6.00a

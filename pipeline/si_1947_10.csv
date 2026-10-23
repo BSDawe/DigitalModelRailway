@@ -1,0 +1,41 @@
+# Spokane International Railroad, its own timetable of October 1947 (Brendan's scan), Spokane - Sand Point - Bonners Ferry - Eastport/Kingsgate - Yahk.
+# No. 1 daily, Yahk to Spokane (read up); No. 2 daily, Spokane to Yahk (read down), leaving Spokane at 11.59 p.m. Pacific time. f = flag stop.
+# mile = miles from Yahk (the table's right-hand column); bold = printed in bold type. Eastport, Idaho, and Kingsgate, B.C., are the two sides of the
+# border at the same mile and are one station here: No. 1 arrives Kingsgate 7.05 and leaves Eastport 7.25; No. 2 arrives Eastport 5.10 and leaves Kingsgate 5.30.
+# Glenlily is a Canadian Pacific flag stop between Yahk and Kingsgate, not in the S.I. table: its times are from CP Table 151 (1948).
+mile,station,bold,No1,No2
+0.0,Yahk,1,lv 6.45a,ar 5.50a
+5.2,Glenlily,0,f6.55a,f5.40a
+10.5,Kingsgate,1,ar 7.05a / lv 7.25a,ar 5.10a / lv 5.30a
+14.2,Addie,0,f7.33a,f5.00a
+19.6,Snyders,0,f7.45a,f4.50a
+25.0,Meadow Creek,0,f7.56a,f4.39a
+28.2,Eileen,0,f8.04a,f4.30a
+32.1,Moyie Springs,0,f8.12a,f4.21a
+41.7,Bonners Ferry,1,8.36a,3.55a
+53.6,Naples,0,f8.59a,f3.25a
+55.8,Shiloh,0,f9.04a,f3.20a
+58.1,McArthur,0,f9.08a,f3.15a
+61.4,Elmira,0,f9.14a,f3.09a
+64.5,Samuels,0,f9.25a,f3.03a
+70.1,Selle,0,f9.35a,f2.53a
+76.6,Sand Point,1,9.50a,2.40a
+79.6,Dover,0,f9.56a,f2.30a
+82.5,Gravel Pit,0,f10.01a,f2.24a
+86.8,Morton,0,f10.08a,f2.15a
+91.5,Sawyer,0,f10.16a,f2.06a
+93.6,Vay,0,f10.20a,f2.02a
+97.1,Edgemere,0,f10.27a,f1.53a
+101.2,Clagstone,0,f10.35a,f1.46a
+108.6,Athol-Farragut,1,10.47a,f1.34a
+112.4,Corbin Junction,0,f10.54a,f1.26a
+114.8,Chilco,0,f10.59a,f1.20a
+117.6,Garwood,0,f11.04a,f1.16a
+122.0,Caseys Spur,0,f11.11a,f1.08a
+125.8,Coeur d'Alene Junction,1,f11.17a,f1.01a
+129.2,Grand Junction,0,f11.24a,f12.54a
+133.3,East Farms,0,f11.32a,f12.46a
+136.1,Otis,0,f11.36a,f12.41a
+138.2,Austin,0,f11.40a,f12.37a
+144.5,Millwood,0,f11.50a,f12.27a
+151.3,Spokane,1,ar 12.15p,lv 11.59p

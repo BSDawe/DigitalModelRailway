@@ -1,0 +1,28 @@
+# Canadian Pacific, Table 116: section E, Prince Albert - Nipawin.
+# From the Canadian Pacific public timetable of about 1948 (scan cp1948_sk/table116_regina_saskatoon_princealbert_meadowlake.png, printed sideways; "READ DOWN" / "READ UP").
+# Times as printed: MOUNTAIN TIME ("Mountain Time" heads the station column). All stations in Saskatchewan.
+# Signs (explanation of signs on the facing page of Tables 117-119, tables117_119_moosejaw_kerrobert_macklin_wilkie.png): f = stops on signal;
+#   || = meal station; M = mixed train; .. = does not stop (left empty); cross sign (Regina, Saskatoon, Prince Albert) = connections with C.P. Air Lines;
+#   n = stops on signal to detrain from north of Valeport, also flag stop at Tregarva on Saturdays to entrain; s = stops on Mondays and Thursdays to detrain.
+# Equipment note (same page): Nos. 303 and 304 Regina - Prince Albert, coaches and standard sleeper; Nos. 303-331 and 332-304 Regina - Saskatoon.
+# Miles from Prince Albert as printed. "Nipawin 126" refers to Table 126.
+# Slow running as printed (seen in two crops): M442 Love 4.15p to Whitefox 5.05p (4.6 miles in 50 minutes; mixed train).
+#train col=No334 num=334 dir=down days="Tue,Fri" kind=passenger
+#train col=M442 num=442 dir=down days="Mon,Thu" kind=mixed
+#train col=M441 num=441 dir=up days="Wed,Sat" kind=mixed note="Smeaton 12.00 is noon."
+#train col=No333 num=333 dir=up days="Tue,Fri" kind=passenger
+mile,station,principal,prov,tz,No334,M442,M441,No333
+0.0,Prince Albert,1,SK,M,lv 5.00p,lv 9.20a,ar 5.05p,ar 11.50a
+18.3,Sharpe,0,SK,M,6.15p,10.40a,3.45p,10.35a
+21.2,Albertville,0,SK,M,6.23p,10.50a,3.20p,10.27a
+28.6,Meath Park,0,SK,M,6.46p,11.45a,2.40p,10.08a
+33.9,Weirdale,0,SK,M,7.02p,12.10p,2.00p,9.52a
+39.0,Foxford,0,SK,M,7.16p,12.35p,1.25p,9.40a
+45.0,Shipman,0,SK,M,7.32p,1.05p,12.40p,9.25a
+52.1,Smeaton,0,SK,M,7.52p,1.40p,12.00p,9.08a
+57.3,Snowden,0,SK,M,8.06p,2.10p,11.25a,8.52a
+65.2,Choiceland,0,SK,M,8.26p,3.00p,10.40a,8.31a
+71.5,Garrick,0,SK,M,8.42p,3.30p,10.05a,8.13a
+78.6,Love,0,SK,M,9.04p,4.15p,9.35a,7.55a
+83.2,Whitefox,0,SK,M,9.16p,5.05p,9.10a,7.42a
+91.7,Nipawin,1,SK,M,ar 9.40p,ar 5.50p,lv 8.30a,lv 7.20a

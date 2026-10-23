@@ -1,0 +1,42 @@
+# Canadian Pacific, Table 116: section F, Prince Albert - Leoville - Meadow Lake.
+# From the Canadian Pacific public timetable of about 1948 (scan cp1948_sk/table116_regina_saskatoon_princealbert_meadowlake.png, printed sideways; "READ DOWN" / "READ UP").
+# Times as printed: MOUNTAIN TIME ("Mountain Time" heads the station column). All stations in Saskatchewan.
+# Signs (explanation of signs on the facing page of Tables 117-119, tables117_119_moosejaw_kerrobert_macklin_wilkie.png): f = stops on signal;
+#   || = meal station; M = mixed train; .. = does not stop (left empty); cross sign (Regina, Saskatoon, Prince Albert) = connections with C.P. Air Lines;
+#   n = stops on signal to detrain from north of Valeport, also flag stop at Tregarva on Saturdays to entrain; s = stops on Mondays and Thursdays to detrain.
+# Equipment note (same page): Nos. 303 and 304 Regina - Prince Albert, coaches and standard sleeper; Nos. 303-331 and 332-304 Regina - Saskatoon.
+# Miles from Prince Albert as printed. NO MILES ARE PRINTED for Debden and Tobey (".." in the Miles column): entered as 58.0 and 60.0,
+# ESTIMATED from the running times between Prince Albert and Ormeaux 64.6 (not printed; approximate).
+# "Leoville 131" and "Meadow Lake 131" refer to Table 131 (North Battleford - Meadow Lake). Leoville is printed "Lv Leoville 131 Ar".
+# The Leoville - Meadow Lake trains M459 and M454 (Table 131) are not entered here; see below.
+# Slow running as printed: M455 Prince Albert 7.00a to Debden 10.10a, M453 9.00a to Debden 12.25p, M458 Debden 12.45p to Prince Albert 3.45p,
+# M460 Debden 1.15p to Prince Albert 4.30p (mixed trains).
+# Slow as printed: M458 Panton 10.05a - Leoville 10.50a and M460 Panton 10.35a - Leoville 11.20a (4.1 miles in 45 minutes).
+# Capasin: M458 and M460 do not stop (..). M454 at Prendergast has no f (8.15), unlike M460 (f8.15).
+# Columns M459 (Wed., Leoville 3.30p - Meadow Lake 6.55p, 'From No. Battleford') and M454 (Tue., Meadow Lake 7.30a - Leoville 10.55a, 'To No. Battleford')
+# are the Table 131 trains (sk_cp_t131.csv, same times): NOT entered here.
+#train col=M455 num=455 dir=down days="Fri" kind=mixed
+#train col=M453 num=453 dir=down days="Mon" kind=mixed
+#train col=M458 num=458 dir=up days="Sat" kind=mixed
+#train col=M460 num=460 dir=up days="Thu" kind=mixed
+mile,station,principal,prov,tz,M455,M453,M458,M460
+0.0,Prince Albert,1,SK,M,lv 7.00a,lv 9.00a,ar 3.45p,ar 4.30p
+58.0,Debden,0,SK,M,10.10a,12.25p,12.45p,1.15p
+60.0,Tobey,0,SK,M,10.15a,12.30p,12.40p,1.10p
+64.6,Ormeaux,0,SK,M,10.35a,1.00p,12.25p,12.55p
+71.4,Pascal,0,SK,M,11.00a,1.30p,12.05p,12.35p
+79.7,Morneau,0,SK,M,f11.20a,f1.55p,11.45a,12.15p
+86.7,Capasin,0,SK,M,12.05p,2.40p,,
+94.4,Leoville,1,SK,M,1.00p,3.35p,10.50a,11.20a
+98.5,Panton,0,SK,M,1.20p,3.55p,10.05a,10.35a
+101.3,Penn,0,SK,M,1.35p,4.10p,9.50a,10.20a
+106.6,Chitek Lake,0,SK,M,1.55p,4.30p,9.30a,10.00a
+109.7,Chitek,0,SK,M,2.15p,4.50p,9.20a,9.50a
+114.1,Mollison,0,SK,M,f2.30p,f5.05p,f9.05a,f9.35a
+123.3,Meetoos,0,SK,M,3.00p,5.35p,8.40a,9.10a
+129.3,Neeb,0,SK,M,3.25p,6.00p,8.20a,8.50a
+133.4,Sergent,0,SK,M,f3.40p,f6.15p,f8.00a,f8.30a
+137.5,Prendergast,0,SK,M,f3.55p,f6.30p,f7.45a,f8.15a
+142.6,Matchee,0,SK,M,f4.10p,f6.45p,f7.30a,f8.00a
+148.3,Eckner,0,SK,M,f4.25p,f7.00p,f7.15a,f7.45a
+153.6,Meadow Lake,1,SK,M,ar 4.40p,ar 7.15p,lv 7.00a,lv 7.30a

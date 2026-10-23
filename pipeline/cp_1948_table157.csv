@@ -1,0 +1,18 @@
+# CP Table 157 (1948), Sicamous - Vernon - Kelowna. M708 read down, M707 read up; daily except Sunday. f = flag stop.
+mile,station,M708,M707
+0.0,Sicamous,lv 10.15a,ar 7.45p
+12.6,Mara,10.45a,7.10p
+17.3,Grindrod,10.56a,6.58p
+23.0,Enderby,11.10a,6.42p
+26.8,Stepney,f11.19a,f6.33p
+31.8,Armstrong,11.32a,6.20p
+34.2,Realm,f11.41a,f6.10p
+38.2,Larkin,f11.52a,f6.00p
+46.2,Vernon,ar 12.15p / lv 12.45p,ar 5.15p / lv 5.40p
+48.4,Lumby Jct,f12.50p,f5.05p
+53.1,Kalamalka,f1.06p,f4.50p
+60.0,Oyama,1.22p,4.30p
+66.7,Winfield,f1.42p,f4.16p
+70.2,Postill,f1.51p,f4.08p
+73.8,Rutland,f2.00p,f4.00p
+79.7,Kelowna,ar 2.15p,lv 3.45p

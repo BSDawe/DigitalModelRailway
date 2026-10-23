@@ -1,0 +1,26 @@
+# Canadian National (Duluth, Winnipeg & Pacific), Table 189, Winnipeg - Fort Frances - Duluth: the Fort Frances - Duluth section, Nos. 20 and 19.
+# Official Guide, April 25, 1948 (scan cn1948_mb/t187_190.png). Transcribed 18 October 2026. CENTRAL TIME. Miles from Winnipeg as printed (Fort Frances 207.8).
+# In scope (Brendan, 18 Oct: Duluth is in scope as a Canadian train goes there). HELD (PENDING): needs Ontario (Fort Frances) and Minnesota track and names.
+# The table also prints: Winnipeg (C.T.) para.6.30 p.m. - ar. Fort Frances para.2.25 a.m. and Fort Frances para.2.00 a.m. - Winnipeg para.9.45 a.m. (No. 34 / No. 33 of
+#   Table 155, which carry the Duluth cars: sk_cn_t155.csv); Port Arthur dagger 5.00 p.m. - Fort William 5.17 p.m. - ar. Fort Frances para.1.10 a.m. and Fort Frances
+#   para.2.50 a.m. - Fort William 10.15 a.m. - Port Arthur 10.30 a.m. Fort Frances is printed "(International Falls [autobus sign])": autobus between Ranier and
+#   International Falls. Falls Junction (211.4): "- -", no stop.
+# Signs: dagger = daily except Sunday; para. = daily except Monday; f = flag stop.
+#train col=No20 num=20 dir=down days="Tue,Wed,Thu,Fri,Sat,Sun" kind=passenger from="Winnipeg (with No. 34)" note="From Winnipeg 6.30 p.m. (daily except Sunday) with No. 34; Fort Frances 3.00 a.m. (daily except Monday) to Duluth 9.05 a.m."
+#train col=No19 num=19 dir=up days="ex Sun" kind=passenger to="Winnipeg (with No. 33)" note="Duluth 7.15 p.m. (daily except Sunday) to Fort Frances 1.35 a.m.; on to Winnipeg with No. 33, arriving 9.45 a.m. (daily except Monday)."
+mile,station,principal,prov,tz,No20,No19
+207.8,Fort Frances,1,ON,C,lv 3.00a,ar 1.35a
+210.6,Ranier,1,MN,C,3.30a,1.25a
+211.4,Falls Junction,0,MN,C,,
+219.5,Ericsburg,0,MN,C,3.47a,12.48a
+227.1,Ray,0,MN,C,4.01a,12.34a
+242.0,Kinmount,0,MN,C,f4.27a,f12.09a
+259.8,Orr,0,MN,C,4.58a,11.37p
+265.8,Gheen,0,MN,C,5.09a,11.24p
+275.8,Cook,0,MN,C,5.28a,11.02p
+281.9,Angora,0,MN,C,5.38a,10.52p
+303.0,Virginia,1,MN,C,6.25a,10.10p
+343.8,Taft,0,MN,C,f7.44a,f8.40p
+364.5,Harney,0,MN,C,8.22a,8.02p
+376.3,West Duluth,0,MN,C,8.48a,7.33p
+380.6,Duluth,1,MN,C,ar 9.05a,lv 7.15p

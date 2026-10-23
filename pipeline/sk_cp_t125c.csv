@@ -1,0 +1,21 @@
+# Canadian Pacific, Table 125, Assiniboia - Mankota - Big Beaver - Killdeer: Assiniboia - Rockglen - Killdeer. Miles from Assiniboia as printed.
+# From the Canadian Pacific public timetable of about 1948 (scan cp1948_sk/tables123_125_weyburn_assiniboia_killdeer.png, printed sideways).
+# Times as printed: MOUNTAIN TIME ("Mountain Time" heads the station column). All stations in Saskatchewan.
+# Signs: f = stops on signal; || = meal station (Assiniboia); M = mixed train; .. = does not stop. "Assiniboia 120" refers to Table 120.
+# Columns headed with two numbers each: "M490 M493 Wed." (down) and "M491 M492 Thu." (up); the train is entered once under the first number,
+# with the second number in the note. Assiniboia - Rockglen is the same line as in sk_cp_t125a.csv (same miles).
+# Maxstone here is in plain type with f (M490 f2.35, M491 f10.05).
+#train col=M490 num=490 dir=down days="Wed" kind=mixed note="Headed M490 M493 (two numbers, one column)."
+#train col=M491 num=491 dir=up days="Thu" kind=mixed note="Headed M491 M492 (two numbers, one column)."
+mile,station,principal,prov,tz,M490,M491
+0.0,Assiniboia,1,SK,M,lv 2.00p,ar 10.50a
+8.4,Bexhill,0,SK,M,f2.21p,f10.20a
+12.8,Maxstone,0,SK,M,f2.35p,f10.05a
+19.0,Pickthall,0,SK,M,f2.50p,f9.40a
+24.0,Scout Lake,0,SK,M,f3.10p,f9.20a
+30.6,Lisieux,0,SK,M,f3.30p,f8.55a
+38.2,Rockglen,0,SK,M,4.20p,8.00a
+46.2,Quantock,0,SK,M,f4.55p,f7.25a
+51.4,Canopus,0,SK,M,f5.15p,f7.00a
+56.2,Strathallen,0,SK,M,5.50p,6.30a
+61.8,Killdeer,1,SK,M,ar 6.30p,lv 6.00a

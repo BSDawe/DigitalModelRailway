@@ -1,0 +1,10 @@
+# Union Pacific Railroad, Table 56, Portland and Spokane, table of April 4, 1948 (Official Guide, "Oregon and Washington"). Times as printed:
+# PACIFIC TIME. Miles from Portland as printed (Umatilla 183, Wallula 211, Ayer 264, Spokane 368 via Cheney).
+# This file: the section Pendleton - Umatilla (Oregon, miles 0 - 42 from Pendleton as printed), Nos. 66 and 65. They run on to and from Spokane
+# over wa_up_t056c. UP Table 57 says Nos. 66 and 65 run via Echo, Stanfield and Hermiston (see Table 5; those stations are not on the scans).
+# Signs: * daily.
+#train col=No66 num=66 dir=down days="daily" kind=passenger from="Pendleton" to="Spokane"
+#train col=No65 num=65 dir=up days="daily" kind=passenger from="Spokane" to="Pendleton"
+mile,station,principal,No66,No65
+0,Pendleton,1,lv 12.30a,ar 1.30a
+42,Umatilla,1,ar 2.20a,lv 12.20a

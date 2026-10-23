@@ -1,0 +1,311 @@
+{
+ "note": "Order matters only where a step reads another (needs). Each step: script <name>.py, part parts/<name>.json.",
+ "steps": [
+  {
+   "name": "base_viz",
+   "script": "base_viz.py",
+   "needs": []
+  },
+  {
+   "name": "build_gtfs",
+   "script": "build_gtfs.py",
+   "needs": [
+    "base_viz"
+   ]
+  },
+  {
+   "name": "cp_build",
+   "script": "cp_build.py",
+   "needs": [
+    "build_gtfs"
+   ]
+  },
+  {
+   "name": "bl_build",
+   "script": "bl_build.py",
+   "needs": [
+    "cp_build"
+   ]
+  },
+  {
+   "name": "marpole_build",
+   "script": "marpole_build.py",
+   "needs": [
+    "bl_build"
+   ]
+  },
+  {
+   "name": "gn_build",
+   "script": "gn_build.py",
+   "needs": []
+  },
+  {
+   "name": "mainline_build",
+   "script": "mainline_build.py",
+   "needs": []
+  },
+  {
+   "name": "island_pge_build",
+   "script": "island_pge_build.py",
+   "needs": []
+  },
+  {
+   "name": "cn_north_build",
+   "script": "cn_north_build.py",
+   "needs": [
+    "mainline_build"
+   ]
+  },
+  {
+   "name": "kv_build",
+   "script": "kv_build.py",
+   "needs": []
+  },
+  {
+   "name": "cp_south_build",
+   "script": "cp_south_build.py",
+   "needs": []
+  },
+  {
+   "name": "si_build",
+   "script": "si_build.py",
+   "needs": [
+    "cp_south_build"
+   ],
+   "inputs": [
+    "traces/washington/Washington State/Washington State Map 6-3-2018.kmz",
+    "traces/washington/Oregon-Washington_RR_Navigation_Co.kmz"
+   ]
+  },
+  {
+   "name": "kv_through",
+   "script": "kv_through.py",
+   "needs": [
+    "mainline_build",
+    "kv_build",
+    "cp_south_build"
+   ]
+  },
+  {
+   "name": "cps_build",
+   "script": "cps_build.py",
+   "needs": [
+    "mainline_build"
+   ]
+  },
+  {
+   "name": "interim_build",
+   "script": "interim_build.py",
+   "needs": [
+    "mainline_build",
+    "kv_build",
+    "cp_south_build",
+    "kv_through",
+    "cps_build"
+   ]
+  },
+  {
+   "name": "wpy_build",
+   "script": "wpy_build.py",
+   "needs": []
+  },
+  {
+   "name": "boats_build",
+   "script": "boats_build.py",
+   "needs": [
+    "mainline_build",
+    "island_pge_build",
+    "cn_north_build",
+    "kv_build",
+    "cp_south_build",
+    "kv_through",
+    "interim_build",
+    "wpy_build"
+   ],
+   "inputs": [
+    "cp_t172_173_ports.csv",
+    "cp_t173_maquinna_1948.csv",
+    "harbour_nav_1948.csv",
+    "water_extra.pkl"
+   ]
+  },
+  {
+   "name": "nar_build",
+   "script": "nar_build.py",
+   "needs": [
+    "mainline_build"
+   ]
+  },
+  {
+   "name": "ab_cn_build",
+   "script": "ab_cn_build.py",
+   "needs": [
+    "mainline_build",
+    "nar_build"
+   ]
+  },
+  {
+   "name": "ab_cp_build",
+   "script": "ab_cp_build.py",
+   "needs": [
+    "mainline_build",
+    "cp_south_build",
+    "kv_through"
+   ]
+  },
+  {
+   "name": "ab_nar_build",
+   "script": "ab_nar_build.py",
+   "needs": [
+    "nar_build",
+    "ab_cn_build"
+   ]
+  },
+  {
+   "name": "wa_build",
+   "script": "wa_build.py",
+   "needs": [
+    "gn_build",
+    "si_build",
+    "ab_nar_build"
+   ],
+   "inputs": [
+    "traces/washington/Washington State/Washington State Map 6-3-2018.kmz",
+    "traces/washington/Oregon-Washington_RR_Navigation_Co.kmz",
+    "places/wa/wa_places.csv"
+   ]
+  },
+  {
+   "name": "ak_build",
+   "script": "ak_build.py",
+   "needs": [
+    "wa_build"
+   ],
+   "inputs": [
+    "ak_arr_seward.csv",
+    "ak_arr_whittier.csv",
+    "ak_arr_fairbanks.csv",
+    "ak_arr_sutton.csv",
+    "traces/alaska/ntad_alaska.geojson",
+    "traces/alaska/sutton_branch.geojson"
+   ]
+  },
+  {
+   "name": "sk_build",
+   "script": "sk_build.py",
+   "needs": [
+    "mainline_build",
+    "ab_cn_build",
+    "ab_cp_build",
+    "ab_nar_build",
+    "wa_build",
+    "ak_build"
+   ],
+   "inputs": [
+    "sk_cn_t075.csv",
+    "sk_cn_t160.csv",
+    "sk_cn_t165.csv",
+    "sk_cn_t166.csv",
+    "sk_cn_t166w.csv",
+    "sk_cn_t168.csv",
+    "sk_cn_t170.csv",
+    "sk_cn_t171.csv",
+    "sk_cn_t172.csv",
+    "sk_cn_t173a.csv",
+    "sk_cn_t173b.csv",
+    "sk_cn_t174.csv",
+    "sk_cn_t175.csv",
+    "sk_cn_t176.csv",
+    "sk_cn_t180.csv",
+    "sk_cn_t182.csv",
+    "sk_cn_t182a.csv",
+    "sk_cn_t187.csv",
+    "sk_cn_t190.csv",
+    "sk_cn_t192a.csv",
+    "sk_cn_t192b.csv",
+    "sk_cn_t192c.csv",
+    "sk_cn_t192d.csv",
+    "sk_cn_t193a.csv",
+    "sk_cn_t196.csv",
+    "sk_cn_t199a.csv",
+    "sk_cn_t199b.csv",
+    "sk_cn_t199c.csv",
+    "sk_cn_t200a.csv",
+    "sk_cn_t200b.csv",
+    "sk_cn_t200c.csv",
+    "sk_cn_t201.csv",
+    "sk_cn_t207.csv",
+    "sk_cn_t211.csv",
+    "sk_cn_t212.csv",
+    "sk_cn_t214.csv",
+    "sk_cn_t225a.csv",
+    "sk_cn_t225b.csv",
+    "sk_cn_t225c.csv",
+    "sk_cn_t225d.csv",
+    "sk_cn_t226.csv",
+    "sk_cn_t229a.csv",
+    "sk_cn_t229b.csv",
+    "sk_cn_t230.csv",
+    "sk_cn_t232.csv",
+    "sk_cp_t005.csv",
+    "sk_cp_t006.csv",
+    "sk_cp_t092a.csv",
+    "sk_cp_t092b.csv",
+    "sk_cp_t098a.csv",
+    "sk_cp_t098b.csv",
+    "sk_cp_t103.csv",
+    "sk_cp_t106b.csv",
+    "sk_cp_t106c.csv",
+    "sk_cp_t106d.csv",
+    "sk_cp_t106e.csv",
+    "sk_cp_t107a.csv",
+    "sk_cp_t107b.csv",
+    "sk_cp_t108.csv",
+    "sk_cp_t109.csv",
+    "sk_cp_t110a.csv",
+    "sk_cp_t110b.csv",
+    "sk_cp_t111a.csv",
+    "sk_cp_t111b.csv",
+    "sk_cp_t112.csv",
+    "sk_cp_t113.csv",
+    "sk_cp_t114.csv",
+    "sk_cp_t115.csv",
+    "sk_cp_t116a.csv",
+    "sk_cp_t116b.csv",
+    "sk_cp_t116e.csv",
+    "sk_cp_t116f.csv",
+    "sk_cp_t117a.csv",
+    "sk_cp_t117b.csv",
+    "sk_cp_t117c.csv",
+    "sk_cp_t118.csv",
+    "sk_cp_t119.csv",
+    "sk_cp_t120.csv",
+    "sk_cp_t121.csv",
+    "sk_cp_t122.csv",
+    "sk_cp_t123.csv",
+    "sk_cp_t123b.csv",
+    "sk_cp_t125a.csv",
+    "sk_cp_t125b.csv",
+    "sk_cp_t125c.csv",
+    "sk_cp_t126.csv",
+    "sk_cp_t127.csv",
+    "sk_cp_t128.csv",
+    "sk_cp_t129.csv",
+    "sk_cp_t130a.csv",
+    "sk_cp_t130b.csv",
+    "sk_cp_t131.csv",
+    "sk_cp_t133a.csv",
+    "sk_cp_t133b.csv",
+    "sk_cp_t134.csv",
+    "sk_cp_t135.csv",
+    "nrwn/sk_all.json",
+    "nrwn/mb_all.json",
+    "traces/osm/osm_sk_abandoned_export.geojson",
+    "places/cgn_sk/cgn_sk_csv_eng.csv",
+    "places/cgn_ab_places.csv",
+    "skx_cp_t006_medhat.csv",
+    "skx_cp_t139_kerrobert.csv"
+   ]
+  }
+ ]
+}

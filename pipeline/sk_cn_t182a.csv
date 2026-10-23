@@ -1,0 +1,20 @@
+# Canadian National, Table 182a, Sturgis - Norquay - Swan River. Official Guide, April 25, 1948
+#   (scan cn1948_sk/tables180_184_winnipeg_dauphin_princealbert_sturgis_churchill_emerson.png, Table 182a at top centre).
+# Times as printed: CENTRAL TIME ("C.T." head). Miles from Sturgis as printed. Sturgis - Arran ("Arran, Sask.") in Saskatchewan; Benito ("Benito, Man."),
+#   Kenville and Swan River ("Swan River, Man.") in Manitoba.
+# Key to signs (printed on this page, quoted in full in sk_cn_t180.csv): a Monday, Wednesday and Friday; b Tuesday, Thursday and Saturday; M mixed train.
+# No. 66 at Norquay "12 00" is noon (between Arran 11.08 a.m. and Stenen 12.33 p.m.).
+# Through workings matched by times: No. 65 from Regina (Table 192: No. 65 Regina - Melville, M165 Melville - Sturgis ar 4.25 p.m.); No. 66 to Regina (M166 Sturgis
+#   b1.25 p.m. - Melville, No. 66 to Regina); M248 from Kelvington (Table 182, Sturgis ar noon); M247 to Kelvington (Table 182, Sturgis a4.45 p.m.).
+#train col=No65 num=65 dir=down days="Mon,Wed,Fri" kind=passenger from="Regina" note="Sturgis 4.55 p.m. marked a; from Regina by Melville (Table 192, as No. 65 / M165). Kind as printed (no M); it is M165 into Sturgis."
+#train col=M248 num=248 dir=down days="Tue,Thu,Sat" kind=mixed from="Kelvington" note="Sturgis 1.35 p.m. marked b; from Kelvington (Table 182)."
+#train col=M247 num=247 dir=up days="Mon,Wed,Fri" kind=mixed to="Kelvington" note="Swan River 9.00 a.m. marked a; on to Kelvington (Table 182)."
+#train col=No66 num=66 dir=up days="Tue,Thu,Sat" kind=passenger to="Regina" note="Swan River 9.55 a.m. marked b; on to Melville (as M166) and Regina (No. 66), Table 192."
+mile,station,principal,prov,tz,No65,M248,M247,No66
+0.0,Sturgis,1,SK,C,lv 4.55p,lv 1.35p,ar 3.20p,ar 12.55p
+7.9,Stenen,0,SK,C,5.17p,2.00p,2.35p,12.33p
+20.6,Norquay,0,SK,C,5.51p,2.50p,1.30p,12.00p
+39.4,Arran,0,SK,C,6.42p,4.05p,11.25a,11.08a
+46.9,Benito,0,MB,C,7.01p,4.40p,10.45a,10.49a
+59.3,Kenville,0,MB,C,7.32p,5.40p,9.45a,10.18a
+67.5,Swan River,1,MB,C,ar 7.55p,ar 6.15p,lv 9.00a,lv 9.55a

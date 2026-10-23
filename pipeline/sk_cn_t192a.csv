@@ -1,0 +1,23 @@
+# Canadian National, Table 192, Regina - Melville - Yorkton - Canora - Flin Flon: section A, Regina - Melville. Official Guide, April 25, 1948
+#   (scan cn1948_sk/table192_regina_melville_canora_flinflon.png).
+# Times as printed: MOUNTAIN TIME ("M.T." head; "ar. Melville (M.T.) lv."). All stations in Saskatchewan. Miles from Regina as printed.
+# Key to signs: this scan has no key; the key printed on the Table 193-201 page is used: "* Daily; + daily, except Sunday; ++ daily, except Saturday;
+#   para. daily, except Monday; Section Sunday only; a Monday, Wednesday and Friday; b Tuesday, Thursday and Saturday; e Wednesday and Friday; f flag stop;
+#   h Thursday only; k Saturday only; l Tuesday and Saturday; n Monday and Friday; o Monday and Wednesday; p Tuesday and Thursday; r Sunday, Tuesday and
+#   Thursday; t Wednesday only; u Friday only; x Tuesday only; z Wednesday, Friday and Sunday. (dot) Motor train; limited baggage accommodation.
+#   # Thursday and Saturday. natural-sign Monday only. (triangle) Restaurant or lunch counter. + Coupon stations; Telegraph stations. M - Mixed train."
+# Columns "65-M165" and "166-66": taken as No. 65 / No. 66 (passenger) on Regina - Melville and M165 / M166 (mixed) on Melville - Sturgis
+#   (sk_cn_t192b.csv); which number belongs to which part is my reading of the head.
+#train col=No61 num=61 dir=down days="Tue,Thu,Sat" kind=passenger to="Flin Flon" note="Regina 12.10 p.m. marked b (Tue Thu Sat); continues Melville - Hudson Bay Jn. - The Pas - Flin Flon in sk_cn_t192b.csv (the Winnipeg cars come on No. 3, Table 166, and join at Melville, sk_cn_t192d.csv)."
+#train col=No65 num=65 dir=down days="Mon,Wed,Fri" kind=passenger to="Swan River" note="Column 65-M165; Regina 6.45 a.m. marked a (Mon Wed Fri); continues as M165 Melville - Sturgis (sk_cn_t192b.csv) and No. 65 Sturgis - Swan River (Table 182a)."
+#train col=No62 num=62 dir=up days="Mon,Wed,Fri" kind=passenger from="Flin Flon" note="From Flin Flon (sk_cn_t192b.csv); Melville (M.T.) 10.30 a.m. marked a (Mon Wed Fri). The Winnipeg cars go on from Melville by No. 2 (Table 166, Melville 11.10 a.m. - Winnipeg 6.00 p.m.)."
+#train col=No66 num=66 dir=up days="Tue,Thu,Sat" kind=passenger from="Swan River" note="Column 166-66: from Swan River as No. 66 (Table 182a), Sturgis - Melville as M166 (sk_cn_t192b.csv); Melville 4.35 p.m. marked b (Tue Thu Sat)."
+mile,station,principal,prov,tz,No61,No65,No62,No66
+0.0,Regina,1,SK,M,lv 12.10p,lv 6.45a,ar 2.30p,ar 8.30p
+23.0,Edenwold,0,SK,M,1.12p,7.42a,1.28p,7.25p
+34.2,Edgeley,0,SK,M,1.39p,8.08a,12.59p,6.57p
+49.0,Ft. Qu'Appelle,1,SK,M,2.12p,8.43a,12.23p,6.21p
+53.4,Lebret,0,SK,M,2.25p,8.56a,12.10p,6.08p
+62.7,Balcarres,0,SK,M,2.48p,9.18a,11.48a,5.46p
+83.2,Duff,0,SK,M,3.31p,10.01a,11.00a,5.03p
+96.3,Melville,1,SK,M,ar 4.00p,ar 10.30a,lv 10.30a,lv 4.35p

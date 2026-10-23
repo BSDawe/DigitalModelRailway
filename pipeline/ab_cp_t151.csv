@@ -1,0 +1,38 @@
+# Canadian Pacific public timetable, 1948, Table 151: Medicine Hat - Lethbridge - Spokane via Crowsnest. This file: Medicine Hat to Lethbridge only
+# (all in Alberta; no Saskatchewan station in the table). West of Lethbridge is in cp_1948_table151_crowsnest.csv.
+# Times as printed: MOUNTAIN TIME (the table is headed "Mountain Time" at Medicine Hat). Miles as printed, from Medicine Hat.
+# a.m./p.m.: Nos. 511 and 12 are in light type with "A.M." at the foot of 511; Nos. 11 and 512 are in heavy type with "P.M." at the foot of 512.
+# Every station the table prints is here. Dunmore is NOT printed in Table 151 (first station out of Medicine Hat is Bull's Head, 12.8).
+# Signs: f = stops on signal (entered as f). || after Medicine Hat and Lethbridge = meal station. w (No. 11 only, at Seven Persons, Whitla,
+# Winnifred, Grassy Lake and Chin) is NOT explained anywhere on the scans (the "Explanation of signs" of this page is not in either image): it is
+# some conditional stop; the times are entered plain and the stations named in the train's note. * before the main-line times at the head of
+# the table is not explained on the scans either (probably "Daily", as the first sign in the key of the page of Tables 149-150).
+# Lethbridge: No. 11 arrives 9.15 p.m. and leaves 9.45 p.m.; No. 12 arrives 8.05 a.m. and leaves 8.30 a.m. (both printed: 111.8 is printed twice).
+# Nos. 511 and 512 run Medicine Hat - Lethbridge only. M681 / M682 (mixed, daily) and 541 / 542 start and end at Lethbridge: no calls east of it, so not here.
+# Connections printed at the head of the table (Medicine Hat, Table 6; a.m./p.m. there is not marked in Table 151, taken from the order of the times):
+#   westbound arrive Medicine Hat: No. 1 from Montreal and Winnipeg 4.45 (p.m.); No. 7-3 from Montreal, Toronto and Winnipeg 4.00 (a.m.);
+#   No. 13-3 "Soo-Dominion" from Chicago, St. Paul and Minneapolis 3.20 a.m. (Chicago - Vancouver, Table 3).
+#   eastbound leave Medicine Hat: No. 2 12.30 (p.m.); No. 4-8 12.35 (a.m.); No. 8-14 "Soo-Dominion" 12.35 a.m. for Minneapolis, St. Paul and Chicago.
+# A row "Lv Calgary (Table 149) Ar" under Lethbridge has 9.15 in light type in the column of No. 11 (a train leaving Calgary 9.15 a.m., Table 149) and nothing for No. 12.
+# Odd but as printed: No. 11 Taber 8.10 p.m., Barnwell f8.30 p.m. (5.5 miles in 20 minutes: the Taber figure must be the arrival).
+#train col=No11 num=11 dir=down days="daily" kind=passenger to="Nelson" note="Medicine Hat to Nelson by Crowsnest and Cranbrook (Nelson ar 10.25 a.m. Pacific time next day). Connects at Medicine Hat from No. 1 (ar 4.45 p.m. from Montreal and Winnipeg). Sign w, not explained on the scan (a conditional stop), at Seven Persons, Whitla, Winnifred, Grassy Lake and Chin. Lethbridge 30 minutes, meal station."
+#train col=No511 num=511 dir=down days="ex Sun" kind=passenger note="Medicine Hat to Lethbridge only. Connects at Medicine Hat from No. 7-3 (ar 4.00 a.m. from Montreal, Toronto, Winnipeg) and No. 13-3 Soo-Dominion (ar 3.20 a.m. from Chicago, St. Paul); at Lethbridge into M681 (lv 9.30 a.m. for Crowsnest and Cranbrook)."
+#train col=No12 num=12 dir=up days="daily" kind=passenger from="Nelson" note="Nelson (lv 5.35 p.m. Pacific time the day before) to Medicine Hat by Cranbrook and Crowsnest. Lethbridge 25 minutes, meal station. Connects at Medicine Hat into No. 2 (lv 12.30 p.m. for Winnipeg and Montreal)."
+#train col=No512 num=512 dir=up days="ex Sun" kind=passenger note="Lethbridge to Medicine Hat only. Follows M682 from Cranbrook and Crowsnest (Lethbridge ar 6.10 p.m.). Connects at Medicine Hat into No. 4-8 (lv 12.35 a.m. for Winnipeg, Toronto, Montreal) and No. 8-14 Soo-Dominion (lv 12.35 a.m. for St. Paul, Chicago)."
+mile,station,principal,No11,No511,No12,No512
+0.0,Medicine Hat,1,lv 6.00p,lv 4.45a,ar 11.45a,ar 10.20p
+12.8,Bull's Head,0,,f5.13a,f11.18a,
+20.8,Seven Persons,0,6.41p,5.25a,11.06a,f9.39p
+28.6,Whitla,0,6.53p,5.38a,10.54a,f9.26p
+35.8,Winnifred,0,7.05p,5.50a,10.42a,f9.15p
+44.4,Bow Island,0,7.20p,6.06a,10.29a,9.00p
+51.3,Burdett,0,f7.31p,6.18a,10.14a,f8.45p
+59.4,Grassy Lake,0,7.43p,6.31a,10.02a,f8.34p
+68.2,Purple Springs,0,f7.54p,6.45a,9.49a,f8.23p
+73.7,Fincastle,0,,f6.53a,f9.41a,
+79.9,Taber,0,8.10p,7.08a,9.30a,8.10p
+85.4,Barnwell,0,f8.30p,7.18a,9.15a,f7.51p
+90.0,Cranford,0,f8.36p,f7.26a,9.07a,f7.45p
+93.7,Chin,0,8.42p,7.33a,9.01a,f7.40p
+101.9,Coaldale,0,8.56p,7.49a,8.49a,7.27p
+111.8,Lethbridge,1,ar 9.15p / lv 9.45p,ar 8.10a,ar 8.05a / lv 8.30a,lv 7.10p

@@ -1,0 +1,38 @@
+# Soo Line, Table No. 2, Twin Cities to points in Minnesota and North Dakota: Minneapolis - Portal, for THE MOUNTAINEER (CP 13 / 14, which goes on by CP Table 108
+# from North Portal: sk_cp_t108.csv). Soo timetable of September 7, 1947 (scan soo1947/soo_t002.png). Transcribed 18 October 2026. CENTRAL TIME. Miles from St. Paul as printed.
+# DOUBT - the times are those of Soo Nos. 3 and 4 in the September table (the Soo-Dominion, outside the Mountaineer's season); the summer Soo table for the
+#   Mountaineer is not in hand. Westbound they fit (C&NW 403 reaches Minneapolis 9.15 p.m.; CP 108 has the Mountaineer leaving North Portal 5 minutes before the
+#   Soo-Dominion). Eastbound they do NOT: CP 108 has the Mountaineer at North Portal 50 minutes before the Soo-Dominion, and C&NW 404 leaves Minneapolis 6.25 a.m.,
+#   before No. 4's 6.30 a.m. arrival here. Entered as printed for No. 3 / 4 until the summer table is found.
+# Route: Minneapolis (Milwaukee Road station, Brendan) - Glenwood - Hankinson - Enderlin - Harvey - Minot - Portal. St. Paul - Minneapolis: the Mountaineer runs
+#   with the C&NW (sk_cnw_t017.csv). Stations where No. 3 / 4 pass without stopping ("- -") are left out.
+# Signs: z (Burlington - Donnybrook) = stops Sunday only: entered as stops every day (Brendan's rule), the days here.
+#train col=M13 num=13 dir=down days="daily" kind=passenger from="Chicago (C&NW No. 403)" to="Vancouver (CP)" note="The Mountaineer (June 29 to September 3 from Chicago). Soo leg Minneapolis - Portal, times of Soo No. 3 (September 1947 table). Burlington, Foxholm, Carpio, Donnybrook: Sundays only."
+#train col=M14 num=14 dir=up days="daily" kind=passenger from="Vancouver (CP)" to="Chicago (C&NW No. 404)" note="The Mountaineer (July 5 to September 4 into Chicago). Soo leg Portal - Minneapolis, times of Soo No. 4 (September 1947 table; the summer times differ). Donnybrook, Carpio, Foxholm, Burlington: Sundays only."
+mile,station,principal,prov,tz,M13,M14
+10.9,Minneapolis,1,MN,C,lv 10.25p,ar 6.30a
+48.9,Buffalo,0,MN,C,11.33p,
+68.0,South Haven,0,MN,C,12.05a,
+132.6,Glenwood,1,MN,C,ar 1.30a / lv 1.45a,ar 3.15a / lv 3.30a
+171.8,Elbow Lake,0,MN,C,2.45a,2.10a
+202.9,Fairmount,0,ND,C,3.25a,1.25a
+217.1,Hankinson,1,ND,C,4.05a,12.55a
+235.1,Wyndmere,0,ND,C,4.33a,12.19a
+268.8,Enderlin,1,ND,C,ar 5.25a / lv 5.55a,ar 11.05p / lv 11.30p
+298.7,Valley City,0,ND,C,6.50a,10.18p
+342.3,Kensal,0,ND,C,7.50a,
+364.0,Carrington,0,ND,C,8.30a,8.55p
+391.4,Fessenden,0,ND,C,9.08a,8.15p
+408.0,Harvey,1,ND,C,ar 9.30a / lv 9.45a,ar 7.35p / lv 7.50p
+424.4,Anamoose,0,ND,C,10.08a,7.12p
+431.1,Drake,0,ND,C,10.20a,7.00p
+459.3,Velva,0,ND,C,11.05a,6.08p
+480.5,Minot,1,ND,C,11.55a,5.25p
+488.1,Burlington,0,ND,C,12.07p,5.15p
+498.1,Foxholm,0,ND,C,12.22p,5.02p
+506.5,Carpio,0,ND,C,12.36p,4.51p
+515.8,Donnybrook,0,ND,C,12.51p,4.38p
+530.4,Kenmare,0,ND,C,1.15p,4.20p
+542.5,Bowbells,0,ND,C,1.37p,3.58p
+552.0,Flaxton,0,ND,C,1.50p,3.44p
+561.8,Portal,1,ND,C,ar 2.20p,lv 3.20p

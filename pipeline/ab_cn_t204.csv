@@ -1,0 +1,26 @@
+# Canadian National Railways, Table 204, Mirror - Red Deer - Rocky Mountain House - Brazeau.
+# Official Guide, May 1948; table dated April 25, 1948. Times as printed: MOUNTAIN TIME ("Mt. time"). Wholly in Alberta.
+# Signs (the page's own key): M before the number = mixed train; a = Monday, Wednesday and Friday (M319); b = Tuesday, Thursday and
+# Saturday (M320); + coupon station. Every figure has A M or P M (or a ditto mark) printed beside it.
+# Rows are in the order printed. Red Deer is at the end of a spur from Red Deer Junction: the junction is printed twice (mile 44.4 both
+# times) with Red Deer (mile 52.8, 8.4 miles from the junction) between. Both trains run into Red Deer and back out to the junction:
+#   M319: Mirror - Red Deer Junction 10.45a - Red Deer ar 11.50a, lv 12.25p - Red Deer Junction 1.55p - on to Brazeau.
+#   M320: Brazeau - Red Deer Junction 11.27a - Red Deer ar 12.15p, lv 1.05p - Red Deer Junction 2.10p - on to Mirror.
+# So the miles are not in order, and beyond the junction they count from Mirror by the junction, not by Red Deer.
+# M319 takes 90 minutes Red Deer - Red Deer Junction (8.4 miles, under 6 mph): the figures 12.25 P M and 1.55 P M are clear in the scan.
+# Red Deer is printed twice (arr. and lve.), one row here. The table prints "Rocky Mt. House".
+#train col=M319 num=319 dir=down days="Mon,Wed,Fri" kind=mixed note="Runs into Red Deer and back to Red Deer Junction."
+#train col=M320 num=320 dir=up days="Tue,Thu,Sat" kind=mixed note="Runs into Red Deer and back to Red Deer Junction."
+mile,station,principal,M319,M320
+0.0,Mirror,1,lv 9.00a,ar 4.15p
+6.3,Alix,1,9.14a,4.00p
+17.9,Haynes,0,9.45a,3.24p
+44.4,Red Deer Junction,1,10.45a,2.10p
+52.8,Red Deer,1,ar 11.50a / lv 12.25p,ar 12.15p / lv 1.05p
+44.4,Red Deer Junction,1,1.55p,11.27a
+59.4,Sylvan Lake,0,2.30p,10.52a
+73.0,Eckville,0,3.05p,10.13a
+84.9,Leslieville,0,3.35p,9.45a
+99.1,Rocky Mountain House,1,4.10p,9.05a
+139.9,Saunders,0,6.00p,7.23a
+157.5,Brazeau,1,ar 7.00p,lv 6.35a

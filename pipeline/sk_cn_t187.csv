@@ -1,0 +1,11 @@
+# Canadian National, Table 187, Prince Albert - Paddockwood. Official Guide, April 25, 1948 (scan cn1948_sk/tables187_190_paddockwood_duluth_winnipeg_yorkton.png, top left).
+# Times as printed: MOUNTAIN TIME ("Prince Albert, Sask. (M.T.)"). All stations in Saskatchewan. Miles from Prince Albert as printed. A.M./P.M. printed beside each time;
+#   M280 at Henribourg "12 00 Noon".
+# Key to signs: not on this scan; h = "Thursday only" in both the Table 180-184 and Table 193-201 keys; f flag stop; M mixed train.
+#train col=M279 num=279 dir=down days="Thu" kind=mixed note="Prince Albert 8.00 a.m. marked h (Thursday only)."
+#train col=M280 num=280 dir=up days="Thu" kind=mixed note="Paddockwood 11.00 a.m. marked h (Thursday only)."
+mile,station,principal,prov,tz,M279,M280
+0.0,Prince Albert,1,SK,M,lv 8.00a,ar 1.30p
+8.4,White Star,0,SK,M,f8.40a,12.50p
+16.5,Henribourg,0,SK,M,f9.20a,12.00p
+24.7,Paddockwood,1,SK,M,ar 10.00a,lv 11.00a

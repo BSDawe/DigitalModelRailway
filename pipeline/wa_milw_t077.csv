@@ -1,0 +1,12 @@
+# Chicago, Milwaukee, St. Paul & Pacific Railroad (Milwaukee Road), Table 77, Othello - Moses Lake, table of February 22, 1948 (Official Guide;
+# printed on milw_200323 and again on milw_200210, identical). Times as printed: PACIFIC TIME.
+# Black square = mixed train (key milw_200313); dagger daily except Sunday; f stops on signal.
+# Othello (0) and "arr. Warden" (13) have no times: the trains run Warden - Moses Lake only (Othello row left empty).
+#train col=No303 num=303 dir=down days="ex Sun" kind=mixed from="Warden" to="Moses Lake" note="Mixed."
+#train col=No304 num=304 dir=up days="ex Sun" kind=mixed from="Moses Lake" to="Warden" note="Mixed."
+mile,station,principal,No303,No304
+0,Othello,1,,
+13,Warden,1,lv 2.30p,ar 8.30p
+21,Tiflis,1,2.55p,7.50p
+33,Goodrich,0,f3.30p,f7.10p
+37,Moses Lake,1,ar 4.00p,lv 7.00p

@@ -1,0 +1,62 @@
+# Canadian Pacific, public timetable 1948, Table 6: Broadview - Regina - Moose Jaw - Swift Current - Calgary - Banff - Lake Louise - Field.
+# This file: the ALBERTA part east of Calgary only, Walsh to Calgary (main line, miles as printed, counted from Montreal). Calgary and west is in another file.
+# Times as printed: MOUNTAIN TIME. a.m./p.m. worked out from the A.M./P.M. headings at Broadview and Field and from the light (a.m.) and heavy (p.m.) type.
+# Last Saskatchewan station next to the boundary: Hatton, Sask., mile 2020.2 (No. 1 3.37p, No. 2 1.44p). First Alberta station: Walsh, Alta., mile 2032.1.
+# Miles and station names from the zoom of the station column; times from the two whole-page captures (read in both, they agree in every figure).
+# Signs on the page ("Explanation of signs this page"):
+#   f  Stops on signal. (The only sign against a time in this stretch; entered as f before the time.)
+#   || Meal station (printed after Medicine Hat and Calgary; also Broadview, Regina, Moose Jaw, Swift Current, Field).
+#   Signs used only east of Alberta (none stands against a time in this file; the small italic letters of the last four are not read with
+#   certainty): black dot = Motor train; cross = connections with C.P. Air Lines to and from Saskatoon, Prince Albert and North Battleford;
+#   a = stops to detrain for south of Portal, July 4 to Sept. 3 only; c = stops on signal for revenue passengers to and from east of Swift Current;
+#   g = stops on signal Mondays only; M = Mixed train; p = stops Sundays to entrain for Regina and west; s (or t) = stops to detrain from Winnipeg
+#   and east; z (or x) = stops on signal Tue., Thur., Sat.; y = stops to detrain from Winnipeg and east and entrain for Calgary and west (on Mon.,
+#   Wed. and Fri. stops Wolseley to entrain).
+# "Via Strathmore 143" is printed down the rows Strangmuir, Carseland, Dalemead, Indus in the columns of Nos. 1, 3, 4 and 2: these trains leave this
+#   line of stations at Gleichen and run by Strathmore (the line of Table 143) to Shepard, so they do not pass Strangmuir, Carseland, Dalemead or Indus.
+#   Nos. 7 and 8 run by Carseland (the rows listed here). The Mountaineer (13, 14) has no figure or note between Medicine Hat and Calgary: the table
+#   does not say which way it runs between Gleichen and Shepard.
+# The numbers printed after station names are the tables that join there: Medicine Hat 151, Suffield 137, Bassano 132, Gleichen 143, Ogden 143,
+#   Calgary 138, 143, 149. Medicine Hat is printed on two rows (arrive, leave), entered here as one. Bassano is printed "Lv" in both directions:
+#   the times there are leaving times. No train in the table calls at Ogden.
+# Local trains of this table (motor trains 340-348 and 341-353, and Nos. 57, 58) run only around Regina and Moose Jaw: none has a call in Alberta.
+# No. 2: the column shows it arriving at Calgary from Field at 12.35p and leaving Calgary for the east at 7.00a (light type = a.m.; it is at
+#   Swift Current 4.40p and Broadview 12.20a), that is, the next morning: east of Calgary it is in effect a day train that starts at Calgary.
+# The Mountaineer: summer only. The dates are printed in the columns: No. 13 "From Chicago June 29 to Sept. 3", No. 14 "From Vancouver July 2 to
+#   Sept. 1". They are the dates of leaving Chicago and Vancouver. No. 14 leaves Vancouver in the evening and is at Calgary the next evening, so it
+#   runs here July 3 to Sept. 2 (worked out, not printed). No. 13 is here a day or more after leaving Chicago: see Table 3 for its times east of Moose Jaw.
+# In doubt (marked ?): the last digit of these figures runs into the column rule in both captures: No. 1 Tilley 6.34p (4, could be 1);
+#   No. 2 Cassils 10.04a and Cluny 8.54a (4 in each, could be 1). All else was read the same in both captures.
+#train col=No1 num=1 dir=down days="daily" kind=passenger from="Broadview and east" to="Vancouver" note="By Strathmore between Gleichen and Shepard. Meal stations Medicine Hat and Calgary. Leaves Calgary 11.15p."
+#train col=No13 num=13 dir=down days="daily" kind=passenger from="Chicago, by Portal and Moose Jaw" to="Vancouver" note="The Mountaineer. Summer only: from Chicago June 29 to Sept. 3 (dates of leaving Chicago; later here). Leaves Calgary 7.50a."
+#train col=No7 num=7 dir=down days="daily" kind=passenger from="Broadview and east" to="Vancouver" note="The Dominion. By Carseland. Leaves Calgary 9.35a."
+#train col=No3 num=3 dir=down days="daily" kind=passenger from="Broadview and east" to="Vancouver" note="The Dominion. By Strathmore between Gleichen and Shepard. Leaves Calgary 9.00a."
+#train col=No8 num=8 dir=up days="daily" kind=passenger from="Vancouver" to="Broadview and east" note="The Dominion. By Carseland. Arrives Calgary from the west 7.20p."
+#train col=No4 num=4 dir=up days="daily" kind=passenger from="Vancouver" to="Broadview and east" note="The Dominion. By Strathmore between Shepard and Gleichen. Arrives Calgary from the west 8.05p."
+#train col=No14 num=14 dir=up days="daily" kind=passenger from="Vancouver" to="Chicago, by Moose Jaw and Portal" note="The Mountaineer. Summer only: from Vancouver July 2 to Sept. 1 (dates of leaving Vancouver; at Calgary the next evening, July 3 to Sept. 2). Arrives Calgary from the west 6.45p."
+#train col=No2 num=2 dir=up days="daily" kind=passenger to="Broadview and east" note="By Strathmore between Shepard and Gleichen. Meal station Medicine Hat. No. 2 from Vancouver reaches Calgary 12.35p; this train leaves 7.00a."
+mile,station,principal,No1,No13,No7,No3,No8,No4,No14,No2
+2032.1,Walsh,0,3.53p,,,,,,,1.25p
+2042.6,Irvine,0,4.08p,,,,,,,1.08p
+2049.5,Pashley,0,f4.18p,,,,,,,f12.58p
+2057.2,Dunmore,0,f4.30p,,,,,,,f12.48p
+2064.3,Medicine Hat,1,ar 4.45p / lv 5.10p,ar 2.10a / lv 2.30a,ar 4.00a / lv 4.20a,ar 3.20a / lv 3.40a,ar 12.10a / lv 12.35a,ar 12.55a / lv 1.15a,ar 11.20p / lv 11.40p,ar 12.05p / lv 12.30p
+2070.2,Redcliff,0,5.24p,,,,,,,11.48a
+2078.8,Bowell,0,f5.38p,,,,,,,f11.35a
+2090.1,Suffield,1,5.55p,,f5.00a,f4.20a,f11.33p,f12.18a,,11.18a
+2099.2,Alderson,0,f6.07p,,,,,,,f11.03a
+2117.7,Tilley,0,6.34p?,,,,,f11.46p,,10.40a
+2131.1,Brooks,0,6.52p,,5.44a,5.04a,10.45p,11.30p,,10.18a
+2137.8,Cassils,0,7.15p,,,,,,,10.04a?
+2153.9,Lathom,0,f7.37p,,,,,,,f9.43a
+2161.9,Bassano,1,8.00p,,6.35a,5.55a,10.05p,10.50p,,9.30a
+2170.1,Crowfoot,0,f8.15p,,,,,,,f9.08a
+2180.6,Cluny,0,8.30p,,f7.04a,,,f10.18p,,8.54a?
+2189.1,Gleichen,1,8.50p,,7.20a,6.35a,9.22p,10.08p,,8.40a
+2203.3,Strangmuir,0,,,f7.43a,,f9.00p,,,
+2208.9,Carseland,0,,,f7.56a,,8.52p,,,
+2216.5,Dalemead,0,,,f8.10a,,8.39p,,,
+2223.1,Indus,0,,,f8.23a,,f8.28p,,,
+2229.9,Shepard,0,10.00p,,f8.35a,,,f9.00p,,7.25a
+2235.2,Ogden,1,,,,,,,,
+2240.1,Calgary,1,ar 10.30p,ar 7.20a,ar 9.05a,ar 8.20a,lv 8.00p,lv 8.40p,lv 7.15p,lv 7.00a

@@ -1,0 +1,24 @@
+# Canadian National, Table 214, Carrot River - Ridgedale - Melfort - Humboldt. Official Guide, April 25, 1948 (scan cn1948_sk/table214_carrotriver_melfort_humboldt.png).
+# Times as printed: MOUNTAIN TIME ("Mt. time" head). All stations in Saskatchewan. Miles from Carrot River as printed. Melfort printed twice (arr./lve.), one row here.
+# Key to signs: not on this scan. Used (Table 193-201 key): a Monday, Wednesday and Friday; b Tuesday, Thursday and Saturday; p Tuesday and Thursday; u Friday only;
+#   M mixed train. y (M275 Humboldt 8.00 a.m.) is not in the 193-201 key; the Table 180-184 key gives "y Tuesday and Friday" - used, in doubt.
+#   M336 Carrot River 4.00 a.m. carries a black dot (the motor-train sign in the 193-201 key; gives no days; the same dot as M380 in Table 212):
+#   DAYS OF M336 UNKNOWN, entered Wed as a placeholder.
+# ADDITIONAL TRAINS note under the table: "Leaves Melfort u8.40 a.m., arrives Humboldt 12.05 p.m. Leaves Humboldt u4.00 p.m., arrives Melfort 7.30 p.m. Leaves Carrot
+#   River b12.45 p.m., arrives Melfort 3.00 p.m." - entered as AddMH, AddHM, AddCM (no numbers or kinds printed).
+#train col=M266 num=266 dir=down days="Fri" kind=mixed note="Carrot River 12.30 p.m. marked u (Friday only)."
+#train col=M336 num=336 dir=down days="Wed" kind=mixed note="Carrot River 4.00 a.m. marked with a black dot: Wednesday only (key for Tables 203-215) (Brendan, 12 Oct)."
+#train col=AddCM num="" dir=down days="Tue,Thu,Sat" kind=passenger note="Additional Trains note: leaves Carrot River b12.45 p.m., arrives Melfort 3.00 p.m."
+#train col=M276 num=276 dir=down days="Tue,Thu" kind=mixed note="Melfort 8.40 a.m. marked p (Tuesday and Thursday)."
+#train col=AddMH num="" dir=down days="Fri" kind=passenger note="Additional Trains note: leaves Melfort u8.40 a.m. (Friday), arrives Humboldt 12.05 p.m."
+#train col=M275 num=275 dir=up days="Tue,Thu" kind=mixed note="Humboldt 8.00 a.m. marked y: Tuesday and Thursday (key for Tables 203-216) (Brendan, 12 Oct). Waits at Melfort 11.32 a.m."
+#train col=AddHM num="" dir=up days="Fri" kind=passenger note="Additional Trains note: leaves Humboldt u4.00 p.m. (Friday), arrives Melfort 7.30 p.m."
+#train col=M388 num=388 dir=up days="Mon,Wed,Fri" kind=mixed note="Melfort 1.20 p.m. marked a (Mon Wed Fri)."
+mile,station,principal,prov,tz,M266,M336,AddCM,M276,AddMH,M275,AddHM,M388
+0.0,Carrot River,1,SK,M,lv 12.30p,lv 4.00a,lv 12.45p,,,ar 5.10p,,ar 4.00p
+29.2,Ridgedale,1,SK,M,2.31p,5.45a,,,,3.20p,,2.31p
+54.0,Melfort,1,SK,M,ar 4.10p,ar 7.30a,ar 3.00p,lv 8.40a,lv 8.40a,ar 11.32a / lv 1.20p,ar 7.30p,lv 1.20p
+68.6,Pathlow,0,SK,M,,,,9.30a,,10.35a,,
+76.7,St. Brieux,0,SK,M,,,,10.10a,,10.05a,,
+93.8,Lake Lenore,0,SK,M,,,,11.25a,,8.55a,,
+109.4,Humboldt,1,SK,M,,,,ar 12.25p,ar 12.05p,lv 8.00a,lv 4.00p,

@@ -1,0 +1,63 @@
+# Canadian National Table 23 (1949), Jasper - Blue River - Kamloops Jct. Pacific time (the table changes from Mountain to Pacific time at Jasper,
+# so every time from Jasper westward is Pacific as printed).
+# Miles from Montreal as printed. Through trains detour 3 miles into Kamloops and back, so Table 24 miles (from Kamloops Jct, 2672.9) are these + 6.0.
+# M391 Tue & Fri (Jasper lv 8.30a - Blue River); M393 Tue, Thu, Sat (Blue River - Kamloops Jct 2.50p, Kamloops 3.15p);
+# M392 Wed & Sat (Blue River - Jasper ar 5.30p); M394 Mon, Wed, Fri (Kamloops lv 7.45a, Kamloops Jct 8.15a - Blue River).
+# No. 1 and No. 3 leave Jasper 2.55p and 12.50p; No. 2 and No. 4 reach Jasper 12.50p and 1.45p (Pacific time).
+# Kamloops Jct: No. 3 visits Kamloops (ar 10.30p, lv 10.45p) and leaves the Jct 10.55p (Table 306); No. 1's Kamloops cars are marked "c".
+# Checked 3 October 2026 against the schedule of April 25, 1948 in the Official Guide of May 1948 (Jasper to Hope): all 118 times the Guide prints
+# are the same as here, and so are the miles. The Guide's table is condensed; this folder supplies the stations between. Jasper: arrivals from and
+# departures for Edmonton are from the Guide, converted from Mountain time.
+mile,station,M391,M393,No1,No3,No2,No4,M392,M394
+2395.2,Jasper,lv 8.30a,,ar 2.20p / lv 2.55p,ar 12.15p / lv 12.50p,ar 12.50p / lv 1.25p,ar 1.45p / lv 2.20p,ar 5.30p,
+2398.0,Wynd,f8.40a,,,,,,f5.21p,
+2403.5,Geikie,f8.55a,,,,,,f5.07p,
+2408.1,Decoigne,f9.10a,,,,,,f4.55p,
+2412.7,Yellowhead,f9.23a,,,,,,f4.40p,
+2417.0,Lucerne,f9.38a,,,,,,f4.15p,
+2423.1,Fitzwilliam,f9.53a,,,,,,f3.45p,
+2426.9,Grant Brook,f10.03a,,,,,,f3.32p,
+2432.8,Rainbow,f10.16a,,,,,,f3.17p,
+2438.9,Red Pass Jct,ar 10.30a / lv 10.45a,,4.13p,2.28p,11.34a,12.29p,ar 2.40p / lv 2.55p,
+2440.7,Resplendent,f10.52a,,,,,,f2.32p,
+2446.3,Foster,f11.16a,,,,,,f2.04p,
+2449.5,Mount Robson,f11.34a,,4.37p,2.52p,11.08a,12.01p,f1.50p,
+2452.5,Morey,f11.53a,,,,,,f1.40p,
+2460.6,Jackman,f12.15p,,,,,,f1.15p,
+2467.8,Swift Creek,f12.35p,,,,,,f12.55p,
+2469.6,Valemount,f12.40p,,,f3.30p,,f11.22a,f12.45p,
+2473.5,Cedarside,f12.55p,,,,,,f12.35p,
+2478.4,Canoe River,f1.10p,,,,,,f12.20p,
+2486.7,Albreda,f1.40p,,,f4.06p,,f10.51a,12.00p,
+2492.1,Clemina,f2.05p,,,,,,f11.40a,
+2498.4,Gosnell,f2.23p,,,,,,f11.20a,
+2501.5,Lempriere,f2.43p,,,,,,f11.10a,
+2509.4,Pyramid,f3.02p,,,,,,f10.50a,
+2517.7,Thunder River,f3.25p,,,,,,f10.20a,
+2523.1,Redsand,f3.40p,,,,,,f10.12a,
+2527.5,Blue River,ar 3.55p,lv 7.00a,ar 7.05p / lv 7.15p,ar 5.25p / lv 5.35p,ar 8.40a / lv 8.50a,ar 9.30a / lv 9.40a,lv 10.00a,ar 4.00p
+2531.9,Angushorn,,f7.15a,,,,,,f3.45p
+2535.7,Wolfenden,,f7.27a,,,,,,f3.30p
+2541.1,Messiter,,f7.45a,,,,,,f3.08p
+2546.3,Cottonwood Flats,,f8.04a,,,,,,f2.47p
+2552.3,Avola,,f8.42a,,f6.25p,,f8.42a,,2.25p
+2557.3,Wire Cache,,f9.00a,,,,,,f2.00p
+2564.9,McMurphy,,f9.25a,,,,,,f1.37p
+2568.8,Wabron,,f9.37a,,,,,,f1.25p
+2574.6,Irvine,,f9.58a,,,,,,f1.05p
+2580.5,Vavenby,,f10.17a,,,,,,f12.45p
+2589.1,Birch Island,,10.50a,f9.11p,f7.33p,,f7.34a,,12.20p
+2595.2,Clearwater,,f11.15a,,f7.45p,,f7.20a,,f11.47a
+2601.2,Black Pool,,f11.35a,,,,,,f11.27a
+2609.9,Boulder,,f11.55a,,,,,,f10.57a
+2613.2,Little Fort,,f12.10p,,,,,,f10.45a
+2618.4,Chu Chua,,12.35p,,f8.26p,,f6.43a,,10.30a
+2625.6,Chinook Cove,,f12.52p,,,,,,10.04a
+2631.9,Barriere,,f1.15p,,8.51p,,6.22a,,f9.50a
+2634.8,Louis Creek,,f1.25p,,,,,,f9.40a
+2635.7,Exlou,,f1.30p,,,,,,f9.32a
+2643.9,McLure,,f1.48p,,,,,,f9.14a
+2652.2,Vinsulla,,f2.07p,,,,,,f8.55a
+2656.4,Heffley,,f2.20p,,,,,,f8.45a
+2659.9,Rayleigh,,f2.30p,,,,,,f8.35a
+2666.9,Kamloops Jct,,ar 2.50p,ar 11.25p / lv 11.45p,ar 9.55p / lv 10.55p,ar 4.20a / lv 4.40a,ar 5.05a / lv 5.25a,,lv 8.15a

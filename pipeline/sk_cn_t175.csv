@@ -1,0 +1,23 @@
+# Canadian National, Table 175, Avonlea - Radville - Willow Bunch. Official Guide, April 25, 1948
+#   (scan cn1948_sk/tables174_175_northregina_dunblane_avonlea_willowbunch.png, bottom).
+# Times as printed: MOUNTAIN TIME ("Mt. time" head). All stations in Saskatchewan. Miles from Avonlea as printed. Radville printed twice (arr./lve.), one row.
+# Key to signs: not on this scan. Used (Table 193-201 key): p Tuesday and Thursday; x Tuesday only; n Monday and Friday; M mixed train.
+#   M329 Radville p2.00 p.m.: p = Tue and Thu (same in the 193-201 key; not in the 180-184 key). M330 Willow Bunch x7.00 a.m.: x = Tuesday only (193-201 key;
+#   "daily except Saturday and Sunday" in the 180-184 key) - in doubt.
+#   M316 Avonlea 2.00 p.m.: a small sign like g (not in any key seen; the same sign as M305 in Table 173) - DAYS UNKNOWN, entered Mon,Fri as for M315 (assumption).
+#   M315 Radville 11.00 a.m.: sign read as n (Monday and Friday, 193-201 key), partly blotted; confirmed by M315's n3.15 p.m. at Avonlea in Table 176.
+#train col=M316 num=316 dir=down days="Tue" kind=mixed from="Moose Jaw" note="From Moose Jaw (g10.00 a.m., Table 176). g: Tuesday only (key for CN Tables 171-179C, Brendan 12 Oct)."
+#train col=M329 num=329 dir=down days="Wed,Fri" kind=mixed note="Radville 2.00 p.m. marked p: Wednesday and Friday (key for CN Tables 171-179C, Brendan 12 Oct)."
+#train col=M330 num=330 dir=up days="Thu,Sat" kind=mixed note="Willow Bunch 7.00 a.m. marked x: Thursday and Saturday (key for CN Tables 171-179C, Brendan 12 Oct)."
+#train col=M315 num=315 dir=up days="Mon" kind=mixed to="Moose Jaw" note="On from Avonlea n3.15 p.m. to Moose Jaw (Table 176). n: Monday only (key for CN Tables 171-179C, Brendan 12 Oct)."
+mile,station,principal,prov,tz,M316,M329,M330,M315
+0.0,Avonlea,1,SK,M,lv 2.00p,,,ar 2.00p
+9.1,Truax,0,SK,M,2.40p,,,1.30p
+16.5,Dummer,0,SK,M,3.10p,,,1.05p
+22.0,Parry,0,SK,M,3.35p,,,12.40p
+37.8,Forward,0,SK,M,4.30p,,,11.50a
+52.2,Radville,1,SK,M,ar 5.20p,lv 2.00p,ar 11.30a,lv 11.00a
+69.3,Ceylon,0,SK,M,,3.25p,10.20a,
+75.3,Hardy,0,SK,M,,3.45p,9.55a,
+96.4,Bengough,0,SK,M,,5.40p,8.50a,
+125.1,Willow Bunch,1,SK,M,,ar 7.40p,lv 7.00a,

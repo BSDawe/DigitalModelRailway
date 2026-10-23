@@ -1,0 +1,24 @@
+# Northern Pacific Railway, Table 46, Washington Central Branch, Spokane - Coulee City, table of April 4, 1948 (Official Guide).
+# Times as printed: PACIFIC TIME. Signs: dagger daily except Sunday; f stops on flag.
+#train col=No315 num=315 dir=down days="ex Sun" kind=passenger from="Spokane" to="Coulee City"
+#train col=No316 num=316 dir=up days="ex Sun" kind=passenger from="Coulee City" to="Spokane"
+mile,station,principal,No315,No316
+0,Spokane,1,lv 8.55a,ar 5.20p
+9,Marshall,1,f9.12a,f5.02p
+16,Cheney,1,9.29a,4.45p
+27,Medical Lake,1,9.50a,4.21p
+32,Deep Creek,0,f9.57a,f4.12p
+37,Hite,0,f10.06a,f4.04p
+43,Reardan,0,10.16a,3.55p
+50,Mondovi,0,10.28a,3.42p
+58,Davenport,0,10.43a,3.30p
+64,Rocklyn,0,10.53a,3.16p
+73,Telford,0,f11.05a,f3.02p
+81,Creston,0,11.18a,2.50p
+91,Wilbur,0,11.38a,2.31p
+97,Govan,0,11.50a,2.19p
+104,Almira,0,12.08p,2.07p
+108,Hanson,0,f12.15p,f2.01p
+113,Hartline,0,12.24p,1.52p
+122,Odair,1,f12.43p,f1.36p
+125,Coulee City,1,ar 12.50p,lv 1.30p

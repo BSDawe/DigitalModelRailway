@@ -1,0 +1,30 @@
+# Joined through train (cp252), sk_join.py: skcp106d:M252, skcp106c:M252, skcp106e:M252
+# Rows and times as in the section files (see them for the scans, signs and doubts). Miles: counted along the run from the first station.
+#train col=D num=252 dir=down days="Tue,Fri" kind=mixed note="Through train: No. 252 Lyleton - Deloraine; No. 252 Deloraine - Lauder; No. 252 Lauder - Alida. Continues Deloraine 11.15a - Boissevain - Lauder 3.15p (sk_cp_t106c.csv), then Lauder 5.05p - Alida 8.00p (sk_cp_t106e.csv)."
+mile,station,principal,prov,tz,D
+0.0,Lyleton,1,MB,C,lv 9.00a
+4.8,Cameron,0,MB,C,9.13a
+9.2,Coulter,0,MB,C,9.30a
+15.3,Dalny,0,MB,C,f9.45a
+20.0,Waskada,0,MB,C,10.00a
+24.8,Cranmer,0,MB,C,f10.20a
+28.8,Goodlands,0,MB,C,10.35a
+37.2,Deloraine,1,MB,C,ar 11.00a / lv 11.15a
+41.8,Naples,0,MB,C,f11.25a
+46.8,Whitewater,0,MB,C,11.40a
+52.0,Cadzow,0,MB,C,f11.50a
+57.3,Boissevain,1,MB,C,ar 12.00p / lv 12.20p
+61.6,Schaffner,0,MB,C,12.35p
+64.7,Orthez,0,MB,C,12.50p
+70.0,Croll,0,MB,C,1.15p
+76.2,Regent,0,MB,C,2.00p
+84.3,Dand,0,MB,C,2.40p
+94.2,Lauder,1,MB,C,ar 3.15p / lv 5.05p
+103.2,Bernice,0,MB,C,5.30p
+107.3,Bede,0,MB,C,5.45p
+112.8,Broomhill,0,MB,C,6.00p
+123.0,Tilston,0,MB,C,6.35p
+129.2,Fertile,0,SK,C,7.00p
+135.9,Storthoaks,0,SK,C,7.25p
+141.5,Nottingham,0,SK,C,7.40p
+148.1,Alida,1,SK,C,ar 8.00p

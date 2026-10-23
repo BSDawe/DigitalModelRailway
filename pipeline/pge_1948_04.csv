@@ -1,0 +1,55 @@
+# Pacific Great Eastern Railway, table dated March 1948, from the April 1948 Official Guide. Pacific Standard Time. Miles from Squamish Dock.
+# No. 1 leaves Squamish Dock Mon/Wed/Fri (reaching Quesnel Tue/Thu/Sat); No. 2 leaves Quesnel Tue/Thu/Sat (reaching Squamish Dock Wed/Fri/Sun).
+# Union Steamships leave Union Pier, foot of Carrall Street, Vancouver, each Monday, Wednesday and Friday for Squamish (times not printed).
+# f = flag stop; flag stops with no time printed (Horse Lake, Clark's Crossing) are left blank.
+station,mile,No1,No2
+Squamish Dock,0.0,lv 2.50p,ar 3.10p
+Squamish,1.0,3.00p,3.00p
+Brackendale,7.0,f3.18p,f2.41p
+Cheakamus,11.9,3.35p,2.27p
+Watson,20.6,f4.07p,f1.55p
+Garibaldi,22.6,4.15p,1.50p
+McGuire,29.8,f4.43p,f1.26p
+Alta Lake,37.1,5.15p,1.05p
+Rainbow,38.0,5.22p,12.57p
+Tisdall,52.9,f6.05p,f12.05p
+Pemberton,57.3,6.25p,11.45a
+Chilsampton,61.9,6.38p,11.23a
+Birken,76.3,7.23p,10.43a
+D'Arcy,86.0,7.53p,10.10a
+McGillivray,91.5,8.08p,9.48a
+Marne,93.1,f8.13p,f9.44a
+Seton,101.2,8.37p,9.19a
+Shalalth,105.1,9.00p,9.05a
+Retaskit,111.5,f9.20p,f8.40a
+Lillooet,120.4,ar 9.50p / lv 10.20p,ar 7.45a / lv 8.15a
+Fountain,128.1,f10.43p,f7.17a
+Glen Fraser,135.7,f11.10p,f6.45a
+Pavilion,140.8,11.35p,6.20a
+Moran,145.9,12.00a,f5.55a
+Kelly Lake,155.0,12.30a,5.25a
+Clinton,165.7,1.00a,4.53a
+Chasm,177.4,f1.35a,f4.22a
+70-Mile,184.7,1.56a,f4.01a
+Graham,193.3,f2.21a,f3.40a
+Flying-U Ranch,199.1,f2.38a,f3.25a
+Horse Lake,205.9,,
+Lone Butte,209.0,3.08a,3.00a
+Canim,215.3,f3.26a,f2.35a
+Exeter,222.5,3.47a,2.16a
+Tatton,228.3,f4.04a,f2.02a
+Clark's Crossing,232.5,,
+Lac La Hache,236.2,4.28a,f1.42a
+Wright,246.1,f4.58a,1.17a
+Enterprise,256.4,f5.30a,f12.46a
+Onward,268.1,f6.05a,f12.16a
+Williams Lake,276.7,ar 6.30a / lv 7.00a,ar 11.25p / lv 11.55p
+Whiskey Creek,289.1,f7.30a,f10.47p
+Soda Creek,298.6,7.58a,10.19p
+Macalister,307.4,8.25a,9.53p
+Marguerite,311.4,8.41a,9.42p
+Alexandria,320.8,f9.12a,f9.10p
+Australian,327.8,f9.36a,f8.47p
+Kersley,334.4,9.58a,8.25p
+Dragon,339.2,f10.13a,f8.10p
+Quesnel,347.0,ar 10.40a,lv 7.45p

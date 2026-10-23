@@ -1,0 +1,12 @@
+# Joined through train (cn243), sk_join.py: skcn192b:M243, skcn182:M243; up skcn182:M244, skcn192b:M244
+# Rows and times as in the section files (see them for the scans, signs and doubts). Miles: counted along the run from the first station.
+#train col=D num=243 dir=down days="Tue,Thu,Sat" kind=mixed note="Through train: No. 243 Canora - Sturgis; No. 243 Sturgis - Kelvington. On to Kelvington (Table 182, Sturgis b1.40 p.m.). Column M249-M243; Canora 10.30 a.m. and Sturgis 11.50 a.m. marked b."
+#train col=U num=244 dir=up days="Mon,Wed,Fri" kind=mixed note="Through train: No. 244 Kelvington - Sturgis; No. 244 Sturgis - Yorkton. Kelvington 11.25 a.m. marked a; on to Canora and Yorkton (Table 192, sk_cn_t192b.csv)."
+mile,station,principal,prov,tz,D,U
+0.0,Yorkton,1,SK,C,,ar 8.50p
+10.9,Ebenezer,0,SK,C,,8.10p
+30.2,Canora,1,SK,C,lv 10.30a,ar 5.55p / lv 7.15p
+52.3,Sturgis,1,SK,C,ar 11.50a / lv 1.40p,ar 3.10p / lv 4.40p
+58.6,Preeceville,0,SK,C,2.15p,2.40p
+86.3,Lintlaw,0,SK,C,4.20p,12.30p
+100.0,Kelvington,1,SK,C,ar 5.30p,lv 11.25a

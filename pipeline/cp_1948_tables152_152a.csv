@@ -1,0 +1,34 @@
+# CP Tables 152 (Cranbrook - Lake Windermere) and 152A (Lake Windermere - Golden), 1948. Miles from Colvalli (Cranbrook side negative).
+# Cranbrook - Colvalli is the main line (Table 151 prints these times); the train stands 25 minutes at Colvalli and reverses up the Kootenay Central.
+# Colvalli - Fort Steele - Canalflat is today's line (NRWN): Brendan's Colvalli traces land on it and it measures 64.1 mi against 64.1 printed, so it is
+# taken as the 1948 line. Fort Steele is placed by its printed mileage between Colvalli and Canalflat, not pinned to a map point.
+# M829 Mon. and M830 Sat. (Cranbrook - Lake Windermere); M831 Tue. & Thu. and M832 Wed. & Fri. (Lake Windermere - Golden).
+mile,station,M829,M830,M831,M832
+-27.8,Cranbrook,lv 10.00a,ar 3.25p,,
+-17.9,Rampart,f10.22a,f3.00p,,
+-13.4,Mayook,f10.32a,f2.50p,,
+-5.9,Wardner,10.52a,2.30p,,
+0.0,Colvalli,ar 11.10a / lv 11.35a,ar 1.45p / lv 2.10p,,
+9.0,Bull River,12.05p,f1.10p,,
+15.4,Fenwick,f12.25p,f12.35p,,
+23.0,Fort Steele,12.55p,12.10p,,
+29.9,Doyle,f1.15p,f11.45a,,
+35.3,Wasa,1.35p,11.25a,,
+46.3,Skookumchuck,2.05p,10.50a,,
+52.6,Torrent,f2.30p,f10.25a,,
+64.1,Canalflat,3.15p,9.45a,,
+68.9,Columbia Lake,f3.30p,f9.15a,,
+77.1,Fairmont Hot Springs,3.50p,8.50a,,
+83.3,Rushmere,f4.10p,f8.30a,,
+88.4,Goldie Creek,f4.30p,f8.15a,,
+92.8,Lake Windermere,ar 4.45p,lv 8.00a,lv 7.20a,ar 1.00p
+101.4,Radium,,,7.45a,12.30p
+107.1,Edgewater,,,8.05a,12.05p
+112.1,Luxor,,,f8.25a,f11.35a
+117.9,Brisco,,,8.45a,11.20a
+125.6,Spillimacheen,,,9.10a,11.00a
+132.6,Harrogate,,,9.35a,10.35a
+143.7,Parson,,,10.10a,10.10a
+151.5,McMurdo,,,10.35a,9.40a
+162.1,Nicholson,,,11.05a,9.15a
+166.7,Golden,,,ar 11.30a,lv 9.00a

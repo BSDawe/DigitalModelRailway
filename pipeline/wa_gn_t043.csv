@@ -1,0 +1,23 @@
+# Great Northern Railway, Table 43, Wenatchee and Mansfield, table of February 8, 1948 (Official Guide). Times as printed: PACIFIC TIME.
+# Signs (GN key, gn_201249): y Monday and Thursday; f flag stop for revenue passengers. No train kind printed: entered as passenger (a
+# twice-weekly branch train, probably mixed - not stated).
+# Columbia River has separate arr./lve. lines (No. 382 ar 7.15 / lv 7.25 a.m.; No. 381 ar 4.30 / lv 4.40 p.m.).
+# CHECKER FLAGS, as printed (read three times): No. 382 Alstown 9.10 - Douglas 10.05 a.m. (5 miles in 55 min) and No. 381 Voltage f4.45 -
+# Rock Island f5.00 p.m. (1 mile in 15 min): long station times, which suggest a mixed train. ORDER: this table puts Rock Island (11) before
+# Voltage (12); GN Table 5 has Voltage at 1595 and Rock Island 1598, i.e. Rock Island nearer Wenatchee (10 v. 13 miles). Entered as printed.
+#train col=No382 num=382 dir=down days="Mon,Thu" kind=passenger from="Wenatchee" to="Mansfield" note="Mondays and Thursdays (sign y)."
+#train col=No381 num=381 dir=up days="Mon,Thu" kind=passenger from="Mansfield" to="Wenatchee" note="Mondays and Thursdays (sign y)."
+mile,station,principal,No382,No381
+0,Wenatchee,1,lv 6.30a,ar 5.30p
+7,Malaga,0,f6.50a,f5.10p
+11,Rock Island,0,f7.00a,f5.00p
+12,Voltage,0,f7.05a,f4.45p
+16,Columbia River,1,ar 7.15a / lv 7.25a,ar 4.30p / lv 4.40p
+32,Palisades,0,8.10a,3.45p
+37,McCue,0,f8.30a,f3.05p
+47,Alstown,0,9.10a,2.25p
+52,Douglas,0,10.05a,2.00p
+59,Supplee,0,f10.30a,f1.30p
+65,Withrow,0,11.01a,1.10p
+71,Touhey,0,f11.20a,f12.50p
+76,Mansfield,1,ar 11.40a,lv 12.30p

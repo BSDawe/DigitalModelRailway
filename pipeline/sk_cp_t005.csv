@@ -1,0 +1,80 @@
+# Canadian Pacific, Table 5, main line Fort William - Kenora - Winnipeg - Brandon - Broadview: ONLY the section Winnipeg - Brandon - Broadview (as
+# instructed; Fort William - Winnipeg is Ontario and eastern Manitoba and is left out).
+# From the Canadian Pacific public timetable of about 1948 (scans cp1948_sk/table005_westbound_fortwilliam_broadview.png "WEST-READ DOWN" and
+# table005_eastbound_broadview_fortwilliam.png "EAST-READ UP", both printed sideways).
+# Times as printed: CENTRAL TIME ("Central Time" heads the table and is printed again under Broadview).
+# Miles as printed on the westbound page (from Fort William; Brandon 1541.6). The eastbound page prints altitudes instead of miles.
+# Provinces: Brandon - Kirkella Manitoba ("Kirkella, Man."), Fleming ("Fleming, Sask") - Broadview Saskatchewan.
+# Brandon is printed twice on each page ("Ar Brandon || 98, 101, 102" and "Lv Brandon || 104, 105, 106, 107"): one row with ar / lv for the through trains.
+# References: Virden 107, Kirkella 107 (Table 107: 59/159 and 60/160 go on to / come from Regina by McAuley and Neudorf).
+# Signs: f = stops on signal; || = meal station (Brandon, Broadview). NOT EXPLAINED on these scans (the explanation of signs of Table 5 is not in the set):
+#   z (No. 7 at Oak Lake, 3.14p), nn (No. 7 at Wapella 5.06p, No. 3 at Wapella 4.30p), n (No. 8 at Oak Lake 2.07p and Wapella 12.32p).
+#   They are probably conditional stops; entered as plain times (no f) and listed here and in the train notes.
+# Trains of Table 5 that do not run Brandon - Broadview (".." in this section, not entered): The Dominion 5 and 6 (east-of-Winnipeg sections of the Dominion,
+# with 9 and 10: Brendan, 16 October 2026), the specials (westbound Spl. "Operates June 13 ... Sept. 6"; eastbound Fri. Spl. July 9 to Sep. 3 and Sat. Spl. June 12 to
+# Sep. 4), M201-M206 and 101-106.
+# No. 53 (column headed 53 Ex. Sun. at Winnipeg) arrives Brandon 12.50p and its column carries on from Brandon at 4.20p with no new number printed:
+# entered as No. 53, the long stop at Brandon as printed. No. 54 is headed "54 Ex. Sun." in the Brandon - Broadview section.
+# Columns 59 (Mon. Wed. Thu. Fri.), 159 (Tue. Sat.), 60 (Mon. Tue. Thu. Sat.) and 160 (Wed. Fri.) are the Table 107 trains (sk_cp_t107a.csv, sk_cp_t107b.csv),
+# which print Brandon - Virden / Kirkella too: NOT entered here. Table 5 gives them more calls than Table 107: 59/159 Brandon 7.00a, Kemnay f7.14a, Alexander
+# 7.25a, Griswold 7.39a, Oak Lake 7.50a, Routledge f8.02a, Virden 8.15a (159 on: Hargrave 8.30a, Elkhorn 8.46a, Kirkella 8.57a); 60/160 Virden 8.55p (160 from
+# Kirkella 8.11p, Elkhorn 8.24p, Hargrave f8.42p), Routledge f9.07p, Oak Lake 9.19p, Griswold 9.30p, Alexander 9.45p, Kemnay f9.56p, Brandon 10.10p.
+# Winnipeg - Brandon (added later, same scans, read twice): Winnipeg is printed "Ar WINNIPEG || + Lv" (1408.5) with arrival and departure rows: one row
+# with ar / lv. Westbound No. 1 arrives 7.45p from Fort William and leaves 9.00p; 3 ar 9.30a / lv 10.30a; 7 ar 10.00a / lv 11.10a; 53 starts at Winnipeg 8.45a.
+# Eastbound 8 ar 5.55p / lv 6.40p, 4 ar 6.35p / lv 7.20p, 2 ar 8.50a / lv 9.40a (for Fort William); 54 ends at Winnipeg 8.30p. Portage la Prairie printed "Lv ... Lv".
+# No. 54 is like 53: it arrives Brandon 11.40a from Broadview and its column carries on from Brandon at 5.00p (lv) to Winnipeg.
+# More signs not explained on the scans, entered as plain times: v (No. 1 at Marquette 9.37p, Reaburn 9.45p, Poplar Point 9.51p, High Bluff 10.01p, Austin
+# 11.08p, Sidney 11.25p, Douglas 12.15a); u (No. 7 Douglas 1.56p); w (No. 2 Austin 6.46a, Sidney 6.33a).
+# Other Winnipeg - Portage la Prairie columns NOT entered (they leave Table 5 at Portage for Table 94 / Table 92, and are entered in sk_cp_t092a.csv):
+#   51 Ex. Sa. Winnipeg 10.15p, Rosser f10.36p, Meadows f10.44p, Portage 11.27p (Table 92 prints Portage 11.33p and no Rosser or Meadows);
+#   105 Winnipeg j9.50a, Bergen 10m03, Rosser 10m11, Meadows 10m19, Marquette 10m26, Reaburn 10m33, Poplar Point 10m39, High Bluff 10m48, Portage j10.57a
+#     (signs j and m not explained; Table 92 prints Portage 11.07a);
+#   52 Portage 6.30a, High Bluff f6.42, Poplar Point f6.58, Reaburn f7.08, Marquette f7.20, Meadows f7.32, Rosser f7.44, Winnipeg ar 8.10a (Table 92: Portage 6.25a);
+#   106 Portage h1.55p, High Bluff 2.07, Poplar Point 2.19, Reaburn 2.27, Marquette 2.36, Meadows 2.47, Rosser 2.58, Bergen f3.08, Winnipeg ar h3.25p (Table 92: Portage 1.50p).
+#   These differences between Tables 5 and 92 are as printed. The Dominion 5 and 6 and the specials show ".." from Winnipeg to Brandon.
+#train col=No1 num=1 dir=down days="daily" kind=passenger from="Fort William" note="From Fort William 7.50a and Winnipeg 9.00p; continues west of Broadview (Table 6)."
+#train col=No3 num=3 dir=down days="daily" kind=passenger from="Fort William" note="The Dominion. From Fort William 10.55p and Winnipeg 10.30a; continues west of Broadview (Table 6). Wapella 4.30p printed with sign nn (not explained on the scan)."
+#train col=No7 num=7 dir=down days="daily" kind=passenger from="Fort William" note="The Dominion. From Fort William 11.25p and Winnipeg 11.10a; continues west of Broadview (Table 6). Oak Lake 3.14p sign z and Wapella 5.06p sign nn (not explained on the scan)."
+#train col=No53 num=53 dir=down days="ex Sun" kind=passenger note="Winnipeg 8.45a to Brandon ar 12.50p, then Brandon 4.20p to Broadview 8.35p (no new number printed in the column)."
+#train col=No2 num=2 dir=up days="daily" kind=passenger to="Fort William" note="Comes from west of Broadview (Table 6); to Winnipeg 8.50a and Fort William 9.20p."
+#train col=No4 num=4 dir=up days="daily" kind=passenger to="Fort William" note="The Dominion. Comes from west of Broadview (Table 6); to Winnipeg 6.35p and Fort William 5.40a."
+#train col=No8 num=8 dir=up days="daily" kind=passenger to="Fort William" note="The Dominion. Comes from west of Broadview (Table 6); to Winnipeg 5.55p and Fort William 5.00a. Oak Lake 2.07p and Wapella 12.32p printed with sign n (not explained on the scan)."
+#train col=No54 num=54 dir=up days="ex Sun" kind=passenger note="Broadview 7.35a to Brandon 11.40a, then Brandon 5.00p to Winnipeg 8.30p (the column changes at Brandon)."
+mile,station,principal,prov,tz,No1,No3,No7,No53,No2,No4,No8,No54
+1408.5,Winnipeg,1,MB,C,ar 7.45p / lv 9.00p,ar 9.30a / lv 10.30a,ar 10.00a / lv 11.10a,lv 8.45a,ar 8.50a / lv 9.40a,ar 6.35p / lv 7.20p,ar 5.55p / lv 6.40p,ar 8.30p
+1416.0,Bergen,0,MB,C,,,,f8.59a,,,,f8.14p
+1423.7,Rosser,0,MB,C,,,,9.10a,,,,8.03p
+1430.9,Meadows,0,MB,C,,,,9.21a,,,,7.53p
+1437.4,Marquette,0,MB,C,9.37p,,,9.32a,,,,7.43p
+1443.8,Reaburn,0,MB,C,9.45p,,,9.43a,,,,7.33p
+1449.0,Poplar Point,0,MB,C,9.51p,,,9.53a,,,,7.25p
+1457.3,High Bluff,0,MB,C,10.01p,,,10.05a,,,,7.13p
+1464.1,Portage la Prairie,1,MB,C,10.20p,11.45a,12.25p,10.25a,7.29a,5.25p,4.46p,7.02p
+1472.1,Burnside,0,MB,C,,,,f10.38a,,,,f6.45p
+1479.6,Bagot,0,MB,C,,,,10.49a,,,,6.35p
+1486.3,MacGregor,0,MB,C,f10.56p,,,11.03a,f6.56a,,,6.25p
+1493.3,Austin,0,MB,C,11.08p,,,11.17a,6.46a,,,6.14p
+1501.4,Sidney,0,MB,C,11.25p,,,11.32a,6.33a,,,6.01p
+1506.8,Melbourne,0,MB,C,,,,11.41a,,,,5.54p
+1514.3,Carberry,0,MB,C,11.48p,12.55p,1.35p,11.58a,6.15a,4.20p,3.42p,5.45p
+1523.0,Camp Hughes,0,MB,C,,,,f12.12p,,,,f5.29p
+1530.3,Douglas (Shilo Camp),0,MB,C,12.15a,f1.16p,1.56p,12.27p,f5.52a,,f3.20p,5.18p
+1536.1,Chater,0,MB,C,,,,12.37p,,,,5.10p
+1541.6,Brandon,1,MB,C,ar 12.40a / lv 1.00a,ar 1.35p / lv 1.50p,ar 2.15p / lv 2.30p,ar 12.50p / lv 4.20p,ar 5.15a / lv 5.35a,ar 3.25p / lv 3.40p,ar 2.50p / lv 3.05p,ar 11.40a / lv 5.00p
+1549.8,Kemnay,0,MB,C,,,,4.34p,,,,11.25a
+1557.3,Alexander,0,MB,C,f1.25a,,,4.46p,f4.46a,,,11.13a
+1566.4,Griswold,0,MB,C,f1.37a,,,5.00p,f4.33a,,,10.58a
+1573.6,Oak Lake,0,MB,C,f1.47a,,3.14p,5.13p,f4.22a,,2.07p,10.45a
+1581.6,Routledge,0,MB,C,,,,5.25p,,,,10.31a
+1588.8,Virden,1,MB,C,2.10a,2.51p,3.33p,5.40p,4.00a,2.26p,1.50p,10.16a
+1597.0,Hargrave,0,MB,C,,,,5.56p,,,,10.02a
+1605.7,Elkhorn,0,MB,C,2.55a,3.23p,4.05p,6.13p,3.32a,1.59p,1.21p,9.43a
+1611.9,Kirkella,1,MB,C,,,,6.30p,,,,9.28a
+1619.3,Fleming,0,SK,C,f3.27a,,,6.42p,f3.03a,,,9.15a
+1627.9,Moosomin,0,SK,C,3.44a,4.06p,4.45p,7.00p,2.49a,1.29p,12.51p,8.58a
+1635.1,Red Jacket,0,SK,C,,,,7.14p,,,,8.45a
+1644.0,Wapella,0,SK,C,4.14a,4.30p,5.06p,7.32p,2.23a,,12.32p,8.30a
+1651.7,Burrows,0,SK,C,,,,f7.45p,,,,8.15a
+1658.1,Whitewood,0,SK,C,4.40a,4.51p,,8.01p,2.02a,,12.15p,8.05a
+1664.9,Percival,0,SK,C,f4.55a,,,8.18p,f1.50a,,,7.50a
+1672.5,Broadview,1,SK,C,ar 5.10a,ar 5.20p,ar 5.55p,ar 8.35p,lv 1.35a,lv 12.30p,lv 11.50a,lv 7.35a

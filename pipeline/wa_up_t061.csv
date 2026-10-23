@@ -1,0 +1,13 @@
+# Union Pacific Railroad, Table 61, Wallula and Walla Walla, table of April 4, 1948 (Official Guide). Times as printed: PACIFIC TIME.
+# Only the rail trains Nos. 63 and 64 are entered; the ten columns marked with the diamond (motor bus) are skipped.
+# No. 63 continues from Yakima (wa_up_t053; reaches Wallula 10.50 p.m., leaves 4.20 a.m.), No. 64 goes on to Yakima (Wallula lv 4.10 a.m.). UP
+# Table 56 prints the same times as connections for Nos. 20/66 ("arr. Walla Walla 5.30 a.m.") and 19/65 ("lve. Walla Walla 9.45 p.m.").
+# Signs: * daily; f stops on signal. Kind not printed: passenger.
+#train col=No63 num=63 dir=down days="daily" kind=passenger from="Wallula" to="Walla Walla" note="Connection from UP Nos. 20 and 66 and from No. 63 (Yakima)."
+#train col=No64 num=64 dir=up days="daily" kind=passenger from="Walla Walla" to="Wallula" note="Connection to UP Nos. 19 and 65 and to No. 64 (Yakima)."
+mile,station,principal,No63,No64
+0,Wallula,1,lv 4.20a,ar 10.50p
+15.2,Touchet,0,4.50a,10.20p
+19.6,Lowden,0,f5.00a,f10.10p
+24.2,Whitman,0,f5.10a,f10.00p
+31.1,Walla Walla,1,ar 5.30a,lv 9.45p

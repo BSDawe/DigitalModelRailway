@@ -1,0 +1,35 @@
+# Canadian National Railways, Table 205, Edmonton - Camrose - Alliance: trains Nos. 88 and 87, marked "Via Tofield".
+# Official Guide, May 1948; table dated April 25, 1948. Times as printed: MOUNTAIN TIME ("Mt. time"). Wholly in Alberta.
+# These two trains do not use the direct line by Hay Lake and Armena (ab_cn_t205.csv). They run Edmonton - North Edmonton - main line
+# (Table 75) to Tofield, with no call printed between - then the Tofield - Camrose line (Bardo, Kingman, Dinant: rows of their own in the
+# table) - Camrose - Alliance. Each train is entered whole in this file, Edmonton to Alliance.
+# MILES ARE AS PRINTED AND ARE THREE DIFFERENT COUNTS: Edmonton 0 and North Edmonton 3.1 from Edmonton; Tofield 0 to Dinant 18.4 from
+# Tofield; Camrose 54.6 to Alliance 114.3 from Edmonton by the direct line through Armena. The table gives no mile for Camrose on the count
+# from Tofield and none for Tofield from Edmonton. Table 75 (main line) has Edmonton 2159.4, North Edmonton 2156.2 and Tofield 2118.8, so
+# Edmonton - Tofield is 40.6 miles and North Edmonton - Tofield 37.4 (from another table, not printed in Table 205). ab_table.py therefore flags North Edmonton - Tofield
+# and Dinant - Camrose: these are the breaks in the mileage, not misread times.
+# Signs (the page's own key): z = Tuesday and Friday (No. 88 at Edmonton, No. 87 at Alliance); f = flag stop (Bardo); + coupon station;
+# triangle at Edmonton = restaurant or lunch counter. The z before 5.15 is blurred; Table 75's footnote confirms the days (it has
+# "Leaves Tofield 10.20 a.m., arrives Edmonton 11.40 a.m. Leaves Edmonton 5.15 p.m., arrives Tofield 6.28 p.m. from and to Alliance, see
+# Table 205", with that page's sign y = Tuesday and Friday). Table 205 prints 6.35 at Tofield for No. 88 (so: arrives 6.28, leaves 6.35).
+# Neither train is marked M (mixed): entered as passenger. Camrose is printed twice (arr. and lve.), one row here.
+# The set works a cycle with the mixed trains of ab_cn_t205.csv: M342 out Mon and Thu, No. 87 in and No. 88 out Tue and Fri, M341 in Wed and Sat.
+#train col=T88 num=88 dir=down days="Tue,Fri" kind=passenger note="Via Tofield (main line Edmonton - Tofield, then Tofield - Camrose line). Arrives Tofield 6.28p by Table 75."
+#train col=T87 num=87 dir=up days="Tue,Fri" kind=passenger note="Via Tofield (Camrose - Tofield line, then main line Tofield - Edmonton)."
+# FOR THE MAP THE MILES BELOW ARE MADE ONE COUNT FROM EDMONTON BY TOFIELD (they are not the figures printed, which are given above):
+# Tofield 40.6 from Table 75; Bardo, Kingman and Dinant the printed miles from Tofield added to it; Camrose 8.0 miles beyond Dinant, measured
+# on the track; Kelsey to Alliance the printed differences from Camrose added on.
+mile,station,principal,T88,T87
+0.0,Edmonton,1,lv 5.15p,ar 11.40a
+3.1,North Edmonton,0,5.27p,11.27a
+40.6,Tofield,1,6.35p,10.20a
+46.2,Bardo,0,f6.48p,f9.58a
+52.6,Kingman,0,7.03p,9.43a
+59.0,Dinant,0,7.18p,9.28a
+67.0,Camrose,1,ar 7.41p / lv 7.45p,ar 9.05a / lv 9.10a
+83.8,Kelsey,0,8.19p,8.32a
+89.6,Rosalind,0,8.33p,8.19a
+102.1,Heisler,0,9.02p,7.53a
+111.0,Forestburg,0,9.22p,7.33a
+118.6,Galahad,0,9.40p,7.17a
+126.7,Alliance,1,ar 10.00p,lv 7.00a

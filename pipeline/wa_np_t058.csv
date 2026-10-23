@@ -1,0 +1,22 @@
+# Northern Pacific Railway, Table 58, Pasco and Walla Walla, table of April 4, 1948 (Official Guide). Times as printed: PACIFIC TIME.
+# Signs (key printed beside the table): * daily; f stops on flag; triangle = mixed train. Harsha and Sudbury show "f" with no time (flag stops,
+# no time printed): left empty.
+# The connection lines printed above (Portland (S.P.&S.) - Pasco, Seattle/Tacoma - Pasco, Spokane - Pasco) repeat NP Table 3 trains (S.P.&S. via
+# Pasco; Nos. 2/3 Seattle; Nos. 1/6 Spokane) with the same times, and are not entered again.
+#train col=No347 num=347 dir=down days="daily" kind=mixed from="Pasco" to="Walla Walla"
+#train col=No348 num=348 dir=up days="daily" kind=mixed from="Walla Walla" to="Pasco"
+mile,station,principal,No347,No348
+0,Pasco,1,lv 5.10a,ar 9.55p
+3,Ainsworth Junction,0,5.17a,f9.40p
+4,Burbank,0,5.21a,9.31p
+12,Attalia,1,5.39a,9.13p
+21,Slater,0,f5.59a,f8.55p
+28,Adkins,0,f6.13a,f8.42p
+34,Eureka,1,6.23a,8.32p
+40,Lamar,0,f6.35a,f8.18p
+41,Harsha,0,,
+50,Rulo,0,f6.57a,f7.57p
+52,Thiel,0,f7.03a,f7.52p
+56,Dry Creek,0,f7.10a,f7.46p
+57,Sudbury,0,,
+64,Walla Walla,1,ar 7.30a,lv 7.30p

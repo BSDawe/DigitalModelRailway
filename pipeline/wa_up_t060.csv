@@ -1,0 +1,12 @@
+# Union Pacific Railroad, Table 60, Walla Walla, Bolles and Dayton, table of April 4, 1948 (Official Guide). Times as printed: PACIFIC TIME.
+# Nos. 366 and 365 carry the sign "black dot" = "Local freight; caboose for passengers" (key on the page): entered as kind=mixed. Not a bus.
+# Signs: dagger daily except Sunday (366 at Walla Walla, 365 at Dayton). Turner (mile 50) has no times.
+#train col=No366 num=366 dir=down days="ex Sun" kind=mixed from="Walla Walla" to="Dayton" note="Local freight; caboose for passengers."
+#train col=No365 num=365 dir=up days="ex Sun" kind=mixed from="Dayton" to="Walla Walla" note="Local freight; caboose for passengers."
+mile,station,principal,No366,No365
+0,Walla Walla,1,lv 9.30a,ar 4.00p
+25,Bolles,1,10.40a,2.45p
+29,Waitsburg,0,10.49a,2.34p
+31,Huntsville,0,10.55a,2.26p
+38,Dayton,1,ar 11.15a,lv 2.05p
+50,Turner,1,,

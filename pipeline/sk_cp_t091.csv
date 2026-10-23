@@ -1,0 +1,62 @@
+# Canadian Pacific (Soo Line - Canadian Pacific), Table 91, St. Paul - Minneapolis - Winnipeg, "The Winnipeger", Nos. 109 and 110, daily. From the Canadian
+# Pacific public timetable of about 1948 (scan cp1948_mb/t091.png, page 34). Transcribed 18 October 2026. CENTRAL TIME. Miles from St. Paul as printed.
+# Soo Line St. Paul - Noyes (399); Canadian Pacific Railway Emerson (399) - Winnipeg (464). Noyes "Ar" (109) / "Lv" (110) and Emerson "Lv" / "Ar": two rows.
+# US stops (St. Paul - Noyes) replaced 18 Oct 2026 with ALL the stops of Soo Line Table No. 3, St. Paul - Minneapolis to Winnipeg, July 1947 (scan soo1947/soo_t003.png),
+#   miles as printed there (Noyes 398.9, Emerson 399.0, Winnipeg 464.0); its times agree with Table 91. Soo signs: x (109 Waubun) = stops to let off passengers from
+#   Twin Cities or beyond; y (110 Brooten - Buffalo) = stops to leave revenue passengers from Thief River Falls and points north and west: both entered as plain times.
+# Minneapolis: the Milwaukee Road station (Brendan, 18 Oct: the Soo's trains use it; the Soo Connector trace joins it). St. Paul Union Station. Minneapolis -
+#   St. Paul over Milwaukee Road track (no trace yet: drawn straight).
+# Signs: || = meal station (Glenwood); f = stops on signal; black dot (109 Winnipeg 9.15 a.m.): provides connection with "The Dominion" leaving Winnipeg 10.30 a.m.;
+#   black triangle (110 Winnipeg 6.55 p.m.): C.P. train No. 8 from Western Canada arriving Winnipeg 5.55 p.m. connects.
+# Connections printed: train 109 - Milwaukee Road "Hiawatha" from Chicago 1.00 p.m. arrives Minneapolis 7.45 p.m. at the same station; C.B.&Q. "Morning Zephyr"
+#   and GN "Empire Builder" from Chicago. Train 110 - C.&N.W. "The Viking" leaving St. Paul 8.15 a.m.; Milwaukee Road "Hiawatha" leaving Minneapolis 7.50 a.m.;
+#   C.B.&Q. "The Zephyr" leaving St. Paul 8.29 a.m. Equipment: cafe-parlor-coach and sleepers St. Paul - Winnipeg.
+#train col=No109 num=109 dir=down days="daily" kind=passenger note="The Winnipeger. St. Paul 8.00 p.m. to Winnipeg 9.15 a.m. (connects with The Dominion, 10.30 a.m.)."
+#train col=No110 num=110 dir=up days="daily" kind=passenger note="The Winnipeger. Winnipeg 6.55 p.m. to St. Paul 8.00 a.m."
+mile,station,principal,prov,tz,No109,No110
+0,St. Paul,1,MN,C,lv 8.00p,ar 8.00a
+10.9,Minneapolis,1,MN,C,8.40p,7.22a
+48.9,Buffalo,0,MN,C,,6.24a
+56.8,Maple Lake,0,MN,C,,6.14a
+63.1,Annandale,0,MN,C,,6.07a
+68.0,South Haven,0,MN,C,10.13p,
+85.5,Eden Valley,0,MN,C,,5.37a
+94.8,Paynesville,0,MN,C,10.49p,5.26a
+109.9,Belgrade,0,MN,C,,5.08a
+116.7,Brooten,0,MN,C,,5.00a
+132.6,Glenwood,1,MN,C,ar 11.32p / lv 11.42p,ar 4.30a / lv 4.40a
+149.2,Alexandria,0,MN,C,12.08a,4.06a
+156.3,Carlos,0,MN,C,12.18a,
+169.1,Parker's Prairie,0,MN,C,12.37a,3.37a
+182.6,Henning,0,MN,C,12.55a,3.18a
+226.1,Detroit Lakes,0,MN,C,1.57a,2.21a
+238.1,Callaway,0,MN,C,,1.57a
+246.8,Ogema,0,MN,C,,1.43a
+252.4,Waubun,0,MN,C,2.32a,1.34a
+261.6,Mahnomen,0,MN,C,ar 2.43a / lv 2.56a,ar 1.08a / lv 1.22a
+270.2,Bejou,0,MN,C,3.08a,12.56a
+276.8,Winger,0,MN,C,3.18a,12.45a
+286.1,Erskine,0,MN,C,3.35a,12.31a
+296.1,Brooks,0,MN,C,3.49a,12.14a
+303.1,Plummer,0,MN,C,4.00a,12.03a
+318.8,Thief River Falls,1,MN,C,ar 4.20a / lv 4.40a,ar 11.20p / lv 11.40p
+336.7,Newfolden,0,MN,C,5.05a,10.50p
+347.4,Strandquist,0,MN,C,5.21a,10.35p
+354.3,Karlstad,0,MN,C,5.30a,10.25p
+361.3,Halma,0,MN,C,5.40a,10.15p
+367.3,Lake Bronson,0,MN,C,5.59a,9.55p
+378.0,Lancaster,0,MN,C,6.15a,9.40p
+385.6,Orleans,0,MN,C,6.26a,9.28p
+398.9,Noyes,0,MN,C,ar 6.45a,lv 9.10p
+399.0,Emerson,1,MB,C,lv 7.20a,ar 8.55p
+404,Riordan,0,MB,C,f7.29a,f8.41p
+409,Dominion City,0,MB,C,7.37a,8.32p
+417,Arnaud,0,MB,C,7.51a,8.15p
+425,Dufrost,0,MB,C,8.04a,8.00p
+430,Carey,0,MB,C,8.14a,7.51p
+434,Otterburne,0,MB,C,8.21a,7.44p
+442,Niverville,0,MB,C,8.33a,7.31p
+448,Willard,0,MB,C,f8.42a,f7.22p
+454,Grande Pointe,0,MB,C,8.50a,7.15p
+462,St. Boniface,0,MB,C,9.05a,7.02p
+464.0,Winnipeg,1,MB,C,ar 9.15a,lv 6.55p

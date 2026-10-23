@@ -1,0 +1,15 @@
+# Joined through train (cn248), sk_join.py: skcn182:M248, skcn182a:M248; up skcn182a:M247, skcn182:M247
+# Rows and times as in the section files (see them for the scans, signs and doubts). Miles: counted along the run from the first station.
+#train col=D num=248 dir=down days="Tue,Thu,Sat" kind=mixed note="Through train: No. 248 Kelvington - Sturgis; No. 248 Sturgis - Swan River. Kelvington 9.00 a.m. marked b; on to Swan River (Table 182a)."
+#train col=U num=247 dir=up days="Mon,Wed,Fri" kind=mixed note="Through train: No. 247 Swan River - Sturgis; No. 247 Sturgis - Kelvington. Swan River 9.00 a.m. marked a; on to Kelvington (Table 182)."
+mile,station,principal,prov,tz,D,U
+0.0,Kelvington,1,SK,C,lv 9.00a,ar 7.35p
+13.7,Lintlaw,0,SK,C,9.50a,6.50p
+41.4,Preeceville,0,SK,C,11.35a,5.10p
+47.7,Sturgis,1,SK,C,ar 12.00p / lv 1.35p,ar 3.20p / lv 4.45p
+55.6,Stenen,0,SK,C,2.00p,2.35p
+68.3,Norquay,0,SK,C,2.50p,1.30p
+87.1,Arran,0,SK,C,4.05p,11.25a
+94.6,Benito,0,MB,C,4.40p,10.45a
+107.0,Kenville,0,MB,C,5.40p,9.45a
+115.2,Swan River,1,MB,C,ar 6.15p,lv 9.00a

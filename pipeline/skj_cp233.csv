@@ -1,0 +1,23 @@
+# Joined through train (cp233), sk_join.py: skcp098a:M233, skcp098b:M233; up skcp098b:M234, skcp098a:M234
+# Rows and times as in the section files (see them for the scans, signs and doubts). Miles: counted along the run from the first station.
+#train col=D num=233 dir=down days="Mon,Thu" kind=mixed note="Through train: No. 233 Winnipeg - Elm Creek; No. 233 Elm Creek - Gretna. Winnipeg to Elm Creek here; continues Elm Creek 4.55p - Gretna 9.00p (sk_cp_t098b.csv)."
+#train col=U num=234 dir=up days="Wed,Sat" kind=mixed note="Through train: No. 234 Gretna - Elm Creek; No. 234 Elm Creek - Winnipeg. Continues Elm Creek 9.55a - Winnipeg 12.20p (sk_cp_t098a.csv)."
+mile,station,principal,prov,tz,D,U
+0.0,Winnipeg,1,MB,C,lv 1.45p,ar 12.20p
+9.0,Murray Park,0,MB,C,f2.17p,f11.40a
+15.3,Headingley,0,MB,C,f2.35p,f11.25a
+22.7,Springstein,0,MB,C,f3.00p,f11.00a
+28.8,Starbuck,0,MB,C,f3.30p,f10.36a
+36.5,Fannystelle,0,MB,C,f4.00p,f10.21a
+42.9,Culross,0,MB,C,f4.15p,f10.06a
+47.3,Elm Creek,1,MB,C,ar 4.30p / lv 4.55p,ar 9.50a / lv 9.55a
+53.3,Barnsley,0,MB,C,5.12p,9.32a
+59.5,Carman,0,MB,C,5.40p,9.15a
+67.5,Graham,0,MB,C,6.06p,8.29a
+71.7,Roland,0,MB,C,6.25p,8.17a
+79.3,Kronsgart,0,MB,C,6.50p,7.55a
+87.0,Plum Coulee,0,MB,C,7.10p,7.30a
+91.3,Horndean,0,MB,C,f7.25p,f7.14a
+96.6,Rosenfeld,1,MB,C,ar 7.40p / lv 8.00p,ar 6.50a / lv 7.00a
+103.4,Altona,0,MB,C,8.30p,6.33a
+110.4,Gretna,1,MB,C,ar 9.00p,lv 6.15a

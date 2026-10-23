@@ -1,0 +1,26 @@
+# Canadian Pacific Railway, Table 150, Lethbridge - Cardston - Coutts - Great Falls: the Lethbridge - Stirling - Coutts branch, trains 544 and
+# 543. From the Canadian Pacific public timetable, 1948. Times as printed: MOUNTAIN TIME. All in Alberta; Coutts ("Coutts, Alta.", mile 66.1)
+# is the last station in Alberta and the end of the Canadian Pacific. The Cardston - Glenwood branch, which divides from this one at Stirling
+# (mile 19.2), and the two Table 120 mixed trains shown between Lethbridge and Stirling are in ab_cp_t150a.csv.
+# Signs: f = stops on signal; a double bar after Lethbridge and after Coutts = meal station. No M before 544 / 543, so they are passenger
+# trains; "Ex. Sun." in both column headings. Figures after a station name are connecting tables: Lethbridge 149; Stirling 120.
+# Stirling is printed twice (arrive row and leave row, both mile 19.2) with the same time in each: 544 4.15, 543 2.06. One row here.
+# a.m./p.m.: 544 all p.m. (P.M. at head and foot). 543 (read up) P.M. at the head; Coutts 12.40 is just after noon (the Great Northern train
+# reaches Sweet Grass 12.20 and the next time up the column is Milk River 1.03).
+# Great Northern Ry. connection, printed under Coutts (not entered as rows; signs: dagger = daily ex. Sun., * = daily):
+#   southbound: lv Sweet Grass, Mont. (mile 66.2) 6.10p ex Sun, ar Shelby (105.2) 7.40p ex Sun; lv Shelby 8.10p daily, ar Great Falls, Mont.
+#   (205.2) 10.55p daily.
+#   northbound: lv Great Falls 7.15a daily, ar Shelby 10.15a daily; lv Shelby 10.50a ex Sun, ar Sweet Grass 12.20p ex Sun.
+# Nothing in doubt: every figure was read twice from separate enlargements and against the smaller capture, and agreed.
+#train col=No544 num=544 dir=down days="ex Sun" kind=passenger note="Lethbridge to Coutts by Stirling. Great Northern connection: lv Sweet Grass 6.10p, ar Shelby 7.40p, lv 8.10p, ar Great Falls 10.55p. Meal station at Coutts."
+#train col=No543 num=543 dir=up days="ex Sun" kind=passenger note="Coutts to Lethbridge by Stirling. Great Northern connection: lv Great Falls 7.15a, Shelby 10.15a / 10.50a, ar Sweet Grass 12.20p. Meal station at Coutts."
+mile,station,principal,No544,No543
+0.0,Lethbridge,1,lv 3.35p,ar 2.45p
+11.3,Wilson,0,f3.58p,f2.22p
+19.2,Stirling,1,4.15p,2.06p
+24.2,Craddock,0,f4.25p,f1.56p
+28.5,New Dayton,0,4.33p,1.49p
+35.6,McNab,0,f4.47p,f1.36p
+42.4,Warner,0,5.01p,1.24p
+53.7,Milk River,0,5.24p,1.03p
+66.1,Coutts,1,ar 5.50p,lv 12.40p

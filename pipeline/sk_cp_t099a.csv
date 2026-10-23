@@ -1,0 +1,51 @@
+# Canadian Pacific, Table 99, Winnipeg - Morris - Rosenfeld - Morden - La Riviere - Killarney - Boissevain - Deloraine - Napinka: Nos. 121-124.
+# From the Canadian Pacific public timetable of about 1948 (scan cp1948_mb/t099.png, printed sideways; page "TABLES 99 to 106"). Transcribed 18 October 2026.
+# CENTRAL TIME. All stations in Manitoba. Signs: f = stops on signal; || = meal station (Winnipeg, La Riviere).
+# Miles from Winnipeg as printed. Rosenfeld (56.1) and La Riviere (112.9) are each printed twice (Ar / Lv): one row each. Fortress (11.6): no train stops.
+# No. 123 (Mon. Wed. Fri.) goes on Deloraine - Lyleton and No. 124 (Tue. Thu. Sat.) comes from Lyleton: that section (miles 0.0 - 37.2 from Deloraine) is
+#   in sk_cp_t106d.csv with the same times. No. 121 (Tue. Thu. Sat.) goes on Deloraine - Napinka (202.8 - 221.6) and No. 122 (Mon. Wed. Fri.) comes from Napinka:
+#   entered here as the last rows (123 and 124 do not run them).
+# Not entered here (duplicates): M233 / M234 Rosenfeld - Gretna (sk_cp_t098b.csv); M251 / M252 Boissevain - Deloraine and Deloraine - Lyleton (sk_cp_t106c/d).
+#train col=No123 num=123 dir=down days="Mon,Wed,Fri" kind=passenger to="Lyleton" note="Winnipeg 10.15 a.m. to Deloraine 6.30 p.m.; continues Deloraine 6.40 p.m. - Lyleton 8.20 p.m. (sk_cp_t106d.csv)."
+#train col=No121 num=121 dir=down days="Tue,Thu,Sat" kind=passenger note="Winnipeg 10.15 a.m. to Napinka 7.20 p.m. by Deloraine."
+#train col=No122 num=122 dir=up days="Mon,Wed,Fri" kind=passenger note="Napinka 5.45 a.m. by Deloraine to Winnipeg 1.30 p.m."
+#train col=No124 num=124 dir=up days="Tue,Thu,Sat" kind=passenger from="Lyleton" note="From Lyleton 5.00 a.m. - Deloraine 6.20 a.m. (sk_cp_t106d.csv); Deloraine 6.25 a.m. to Winnipeg 1.30 p.m."
+mile,station,principal,prov,tz,No123,No121,No122,No124
+0.0,Winnipeg,1,MB,C,lv 10.15a,lv 10.15a,ar 1.30p,ar 1.30p
+4.9,Portage Ave,0,MB,C,10.29a,10.29a,1.14p,1.14p
+9.3,Fort Whyte,0,MB,C,10.37a,10.37a,1.04p,1.04p
+18.3,La Salle,0,MB,C,10.54a,10.54a,12.48p,12.48p
+24.4,Domain,0,MB,C,11.05a,11.05a,12.37p,12.37p
+29.7,Osborne,0,MB,C,11.14a,11.14a,12.28p,12.28p
+35.5,McTavish,0,MB,C,11.23a,11.23a,12.18p,12.18p
+39.3,Trump,0,MB,C,f11.29a,f11.29a,f12.12p,f12.12p
+42.6,Morris,1,MB,C,11.38a,11.38a,12.05p,12.05p
+49.9,Sewell,0,MB,C,11.50a,11.50a,11.50a,11.50a
+56.1,Rosenfeld,1,MB,C,12.05p,12.05p,11.37a,11.37a
+61.4,Horndean,0,MB,C,12.18p,12.18p,11.26a,11.26a
+65.7,Plum Coulee,0,MB,C,12.28p,12.28p,11.18a,11.18a
+73.8,Winkler,0,MB,C,12.45p,12.45p,11.05a,11.05a
+81.2,Morden,1,MB,C,1.05p,1.05p,10.50a,10.50a
+87.8,Thornhill,0,MB,C,1.25p,1.25p,10.36a,10.36a
+94.5,Darlingford,0,MB,C,1.45p,1.45p,10.25a,10.25a
+102.3,Manitou,0,MB,C,2.08p,2.08p,10.13a,10.13a
+105.4,Binney,0,MB,C,f2.16p,f2.16p,f10.05a,f10.05a
+112.9,La Riviere,1,MB,C,ar 2.35p / lv 2.55p,ar 2.35p / lv 2.55p,ar 9.30a / lv 9.50a,ar 9.30a / lv 9.50a
+120.4,Wood Bay,0,MB,C,3.12p,3.12p,9.10a,9.10a
+125.3,Pilot Mound,0,MB,C,3.25p,3.25p,8.59a,8.59a
+129.9,Crystal City,0,MB,C,3.35p,3.35p,8.47a,8.47a
+134.1,Clearwater,0,MB,C,3.45p,3.45p,8.38a,8.38a
+141.6,Mather,0,MB,C,4.02p,4.02p,8.23a,8.23a
+148.4,Cartwright,0,MB,C,4.18p,4.18p,8.11a,8.11a
+155.7,Holmfield,0,MB,C,4.35p,4.35p,7.55a,7.55a
+164.3,Killarney,1,MB,C,4.53p,4.53p,7.39a,7.39a
+170.6,Rhodes,0,MB,C,f5.15p,f5.15p,f7.26a,f7.26a
+175.1,Ninga,0,MB,C,5.25p,5.25p,7.17a,7.17a
+182.7,Boissevain,1,MB,C,5.40p,5.40p,7.00a,7.00a
+188.0,Cadzow,0,MB,C,f6.00p,f6.00p,f6.50a,f6.50a
+193.2,Whitewater,0,MB,C,6.12p,6.12p,6.42a,6.42a
+198.2,Naples,0,MB,C,f6.22p,f6.22p,f6.34a,f6.34a
+202.8,Deloraine,1,MB,C,ar 6.30p,6.30p,6.25a,lv 6.25a
+208.1,Leighton,0,MB,C,,f6.50p,f6.13a,
+213.1,Medora,0,MB,C,,7.05p,6.03a,
+221.6,Napinka,1,MB,C,,ar 7.20p,lv 5.45a,

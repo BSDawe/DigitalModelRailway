@@ -1,0 +1,22 @@
+# Canadian National Railways, Table 218, Edmonton - Athabaska. Table dated April 25, 1948 (Official Guide, May 1948).
+# Times as printed: MOUNTAIN TIME. Wholly in Alberta. The terminus is printed "Athabaska".
+# Signs (the page's own key, which differs here from the general key of the section): z = Tuesday and Friday (No. 97 at Edmonton and
+# No. 98 at Athabaska); g = Monday and Thursday (M313 at Edmonton); p = Wednesday and Saturday (M314 at Athabaska); M = mixed train.
+# The z before 5.10 (No. 97) and before 6.30 (No. 98) is very small in the scan: read as z, not fully certain.
+# So No. 98 leaves Athabaska on Tuesday and Friday morning and No. 97 goes back from Edmonton the same evening (the train lies at Athabaska
+# between trips); the mixed goes up Monday and Thursday and comes back Wednesday and Saturday.
+# A.M./P.M. headings and light/heavy type: No. 97 p.m. throughout; M313 a.m. to Morinville 11.20, p.m. from Legal 12.05; No. 98 a.m.
+# throughout; M314 a.m. from Athabaska to Legal 11.45, p.m. at Morinville 12.25 and Edmonton 2.10.
+# Slow running as printed: M313 Clyde 1.25p to Colinton 4.30p; M314 Colinton 7.30a to Clyde 10.30a (40.2 miles in 3 hours).
+#train col=No97 num=97 dir=down days="Tue,Fri" kind=passenger note="Edmonton to Athabaska."
+#train col=M313 num=313 dir=down days="Mon,Thu" kind=mixed note="Edmonton to Athabaska."
+#train col=No98 num=98 dir=up days="Tue,Fri" kind=passenger note="Athabaska to Edmonton."
+#train col=M314 num=314 dir=up days="Wed,Sat" kind=mixed note="Athabaska to Edmonton."
+mile,station,principal,No97,M313,No98,M314
+0.0,Edmonton,1,lv 5.10p,lv 9.15a,ar 11.00a,ar 2.10p
+26.0,Morinville,1,6.12p,11.20a,9.50a,12.25p
+36.4,Legal,0,6.44p,12.05p,9.18a,11.45a
+44.3,Vimy,0,7.08p,12.45p,8.54a,11.00a
+50.1,Clyde,1,7.36p,1.25p,8.36a,10.30a
+90.3,Colinton,0,9.19p,4.30p,6.50a,7.30a
+98.0,Athabaska,1,ar 9.55p,ar 5.15p,lv 6.30a,lv 7.00a

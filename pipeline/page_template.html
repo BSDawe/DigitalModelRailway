@@ -1,0 +1,1050 @@
+<title>The Digital Model Railway</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Libre+Franklin:wght@400;500;600;700&display=swap">
+<style>
+/* Layout: full-bleed track board; masthead + clock top-left, train/station panel right (bottom sheet on phones), transport controls along the bottom. */
+:root {
+  --paper: #eeede6;          /* timetable card stock, slightly cooled */
+  --panel: #f8f7f2;
+  --ink: #1d2a7a;            /* the timetable's blue printing ink */
+  --ink-soft: #55609e;
+  --text: #1b1d27;
+  --muted: #5d6070;
+  --rule: #cfd0dc;
+  --context: #c9cad6;        /* other BCER lines, faint */
+  --siding: #9ea3c4;
+  --bcer: #d7261e;           /* B.C. Electric interurban cars: bright red */
+  --cp: #7a1e2c;             /* Canadian Pacific trains: railway burgundy (reserved) */
+  --gn: #d98a1c;             /* Great Northern: orange */
+  --cn: #2f6b44;             /* Canadian National: dark green */
+  --pge: #8cc07a;            /* Pacific Great Eastern: pale green */
+  --si: #9c1a12;             /* Spokane International: black engine, darker red cars, golden yellow band */
+  --si-gold: #e2a81e;
+  --cpss-funnel: #d8ae4f;    /* Canadian Pacific steamers: buff funnel */
+  --bb: #2b3a55; --bb-funnel: #c8372d;       /* Puget Sound Navigation Co. (Black Ball): red funnel */
+  --cnss-funnel: #c8372d;    /* Canadian National Steamships */
+  --uss: #3a3d48; --uss-funnel: #c8372d;     /* Union Steamships: black hull, red funnel */
+  --wpy: #4f7a28; --wpy-gold: #e8c22c;       /* White Pass & Yukon: green cars, yellow band */
+  --loco: #23252e;           /* steam locomotives */
+  --tie: #4a4d5c;            /* main line station outlines */
+  --dash: #ffffff;           /* white dash on main line track */
+  --water: #d5e0e6;          /* sea, lakes and wide rivers */
+  --freight: #7a5a3c;        /* boxcars on mixed trains */
+  --east: #b1223a;           /* eastbound cars */
+  --west: #13705e;           /* westbound cars */
+  --special: #b8741a;        /* Friday / Saturday specials */
+  --hold: #b8741a;
+  --local: #6a4c93;          /* Central Park Line cars */
+  --lake: #1f7a99;           /* Burnaby Lake Line cars */
+  --lulu: #5d7a1f;           /* Lulu Island Line cars */
+  --nwm: #5b6b8c;            /* Marpole–New Westminster cars */
+  --shadow: 0 1px 2px rgba(20, 24, 60, .08), 0 6px 20px rgba(20, 24, 60, .08);
+  --display: "Old Standard TT", "Century Schoolbook", "Georgia", serif;
+  --ui: "Libre Franklin", "Franklin Gothic Medium", "Helvetica Neue", Arial, sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper: #11131d; --panel: #191c29; --ink: #9fb0f2; --ink-soft: #7d88bd; --text: #e7e8f0; --muted: #9a9db0;
+    --rule: #2c3044; --bcer: #ff5a4a; --cp: #d0707e; --gn: #f2a95a; --cn: #7fcf93; --pge: #cfe8a8; --si: #dd5443; --si-gold: #f2c14e; --cpss-funnel: #e3bd66; --bb: #9db4dd; --bb-funnel: #ee6a5c; --cnss-funnel: #ee6a5c; --uss: #c9cbd6; --uss-funnel: #ee6a5c; --wpy: #a5cc6e; --wpy-gold: #f2d457; --water: #18222f; --loco: #e7e8f0; --tie: #9aa0bd; --freight: #b08a64; --context: #262a3c; --siding: #4d5578; --east: #f06a73; --west: #4cc9a6; --special: #e9a64a;
+    --hold: #e9a64a; --local: #c3a6ef; --lake: #6cc6e6; --lulu: #b5d36a; --nwm: #a9b8d8; --shadow: 0 1px 2px rgba(0,0,0,.4), 0 8px 24px rgba(0,0,0,.35); color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --paper: #11131d; --panel: #191c29; --ink: #9fb0f2; --ink-soft: #7d88bd; --text: #e7e8f0; --muted: #9a9db0;
+  --rule: #2c3044; --bcer: #ff5a4a; --cp: #d0707e; --gn: #f2a95a; --cn: #7fcf93; --pge: #cfe8a8; --si: #dd5443; --si-gold: #f2c14e; --cpss-funnel: #e3bd66; --bb: #9db4dd; --bb-funnel: #ee6a5c; --cnss-funnel: #ee6a5c; --uss: #c9cbd6; --uss-funnel: #ee6a5c; --wpy: #a5cc6e; --wpy-gold: #f2d457; --water: #18222f; --loco: #e7e8f0; --tie: #9aa0bd; --freight: #b08a64; --context: #262a3c; --siding: #4d5578; --east: #f06a73; --west: #4cc9a6; --special: #e9a64a;
+  --hold: #e9a64a; --local: #c3a6ef; --lake: #6cc6e6; --lulu: #b5d36a; --nwm: #a9b8d8; --shadow: 0 1px 2px rgba(0,0,0,.4), 0 8px 24px rgba(0,0,0,.35); color-scheme: dark;
+}
+html, body { height: 100%; }
+body { background: var(--paper); color: var(--text); font-family: var(--ui); font-size: 14px; overflow: hidden; }
+.app { position: relative; height: 100%; overflow: hidden; }
+canvas#map { position: absolute; inset: 0; width: 100%; height: 100%; touch-action: none; cursor: grab; display: block; }
+canvas#map.dragging { cursor: grabbing; }
+canvas#map.hover { cursor: pointer; }
+
+.card { background: var(--panel); border: 1px solid var(--rule); border-radius: 6px; box-shadow: var(--shadow); }
+
+/* masthead */
+.masthead { position: absolute; top: 16px; left: 16px; width: 330px; max-width: calc(100% - 32px); padding: 14px 16px 12px; display: grid; gap: 10px; }
+.eyebrow { font: 600 11px/1.2 var(--ui); letter-spacing: .09em; text-transform: uppercase; color: var(--ink-soft); }
+.masthead h1 { margin: 0; font: 700 22px/1.1 var(--display); color: var(--ink); text-wrap: balance; }
+.masthead .sub { font: italic 400 13px/1.3 var(--display); color: var(--muted); }
+.clock { display: flex; align-items: baseline; gap: 8px; border-top: 1px solid var(--rule); padding-top: 10px; }
+.clock .time { font: 400 44px/1 var(--display); color: var(--ink); font-variant-numeric: tabular-nums; letter-spacing: -.01em; }
+.clock .time.pm { font-weight: 700; }
+.clock .mer { font: 400 15px/1 var(--display); color: var(--ink); }
+.clock .mer.pm { font-weight: 700; }
+.clock .day { margin-left: auto; text-align: right; font: 500 12px/1.3 var(--ui); color: var(--muted); }
+.legend { display: flex; flex-wrap: wrap; gap: 6px 14px; font: 500 12px/1.2 var(--ui); color: var(--muted); }
+.legend span { display: inline-flex; align-items: center; gap: 6px; }
+.sw { width: 18px; height: 8px; border-radius: 4px; display: inline-block; }
+.sw.e { background: var(--east); } .sw.w { background: var(--west); } .sw.s { background: var(--special); } .sw.c { background: var(--local); width: 12px; } .sw.b { background: var(--lake); width: 12px; } .sw.l { background: var(--lulu); width: 12px; } .sw.n { background: var(--nwm); width: 12px; }
+.typenote { font: italic 12px/1.3 var(--display); color: var(--muted); }
+
+/* panel */
+.panel { position: absolute; top: 16px; right: 16px; bottom: 92px; width: 340px; display: flex; flex-direction: column; overflow: hidden; }
+.panel-head { padding: 12px 16px 10px; border-bottom: 1px solid var(--rule); display: flex; align-items: center; gap: 10px; min-height: 48px; }
+.panel-head h2 { margin: 0; font: 700 17px/1.2 var(--display); color: var(--ink); flex: 1; min-width: 0; }
+.panel-body { overflow-y: auto; padding: 6px 0 12px; flex: 1; min-height: 0; }
+.panel-foot { border-top: 1px solid var(--rule); padding: 10px 16px; font: 12px/1.45 var(--ui); color: var(--muted); max-height: 8.6em; overflow-y: auto; }
+.panel-foot a { color: inherit; }
+.back, .iconbtn { appearance: none; border: 1px solid var(--rule); background: transparent; color: var(--ink); border-radius: 4px; font: 600 12px/1 var(--ui); padding: 7px 9px; cursor: pointer; }
+.back:hover, .iconbtn:hover { border-color: var(--ink-soft); }
+.iconbtn[aria-pressed="true"] { background: var(--ink); color: var(--panel); border-color: var(--ink); }
+.section-label { font: 600 11px/1 var(--ui); letter-spacing: .09em; text-transform: uppercase; color: var(--ink-soft); padding: 12px 16px 6px; }
+.empty { padding: 4px 16px 8px; color: var(--muted); font-size: 13px; }
+
+.trow { display: grid; grid-template-columns: auto 1fr; gap: 3px 10px; padding: 9px 16px; cursor: pointer; border: 0; background: none; width: 100%; text-align: left; color: inherit; font: inherit; }
+.trow:hover { background: color-mix(in srgb, var(--ink) 6%, transparent); }
+.trow .badge { grid-row: span 2; align-self: start; }
+.trow .dest { font: 600 13.5px/1.3 var(--ui); min-width: 0; }
+.trow .status { font: 12.5px/1.35 var(--ui); color: var(--muted); min-width: 0; }
+.badge { display: inline-flex; align-items: center; justify-content: center; min-width: 40px; height: 22px; padding: 0 7px; border-radius: 11px; color: #fff; font: 700 12px/1 var(--ui); letter-spacing: .02em; }
+.badge.e, .badge.w, .badge.s, .badge.c, .badge.b, .badge.l, .badge.n { background: var(--bcer); } .badge.v { background: var(--cp); } .badge.v.bb { background: var(--bb); } .badge.v.cnss { background: var(--cn); } .badge.v.uss { background: var(--uss); } .badge.y { background: var(--wpy); } .badge.a { background: var(--nar); } .badge.g { background: var(--gn); } .badge.p { background: var(--cp); } .badge.q { background: var(--cn); } .badge.i { background: var(--cp); } .badge.r { background: var(--pge); color: #1b1d27; }
+.sw.ring { width: 10px; height: 10px; border-radius: 50%; background: var(--paper); border: 2px solid var(--ink); }
+.sw.ring.c { border-color: var(--local); } .sw.ring.b { border-color: var(--lake); } .sw.ring.l { border-color: var(--lulu); } .sw.ring.n { border-color: var(--nwm); }
+.sw.sq { width: 9px; height: 9px; border-radius: 1px; background: var(--paper); border: 2px solid var(--tie); }
+.sw.dia { width: 8px; height: 8px; border-radius: 1px; background: var(--paper); border: 2px solid var(--tie); transform: rotate(45deg); margin: 0 2px; }
+.sw.boat { width: 20px; height: 8px; border-radius: 2px 8px 8px 2px / 2px 4px 4px 2px; background: linear-gradient(90deg, var(--loco) 0 12%, var(--paper) 12% 34%, var(--cpss-funnel) 34% 46%, var(--paper) 46% 62%, var(--loco) 62%); border: 1.5px solid var(--loco); box-sizing: border-box; }
+.sw.car { background: var(--bcer); width: 14px; }
+.sw.consist.cp { --gn: var(--cp); } .sw.consist.cn { --gn: var(--cn); } .sw.consist.pge { --gn: var(--pge); }
+.sw.consist { width: 26px; height: 7px; border-radius: 2px; background: linear-gradient(90deg, var(--loco) 0 28%, var(--paper) 28% 32%, var(--gn) 32% 62%, var(--paper) 62% 66%, var(--gn) 66%); }
+.sw.ring { width: 10px; height: 10px; border-radius: 50%; background: var(--paper); border: 2px solid var(--ink); }
+.sw.ring.c { border-color: var(--local); } .sw.ring.b { border-color: var(--lake); } .sw.ring.l { border-color: var(--lulu); } .sw.ring.n { border-color: var(--nwm); }
+.sw.car { background: var(--bcer); }
+:root[data-theme="dark"] .badge, .badge { color: var(--panel); }
+.badge.si, :root[data-theme="dark"] .badge.si { background: var(--si); color: var(--si-gold); }
+.sw.consist.si { --gn: var(--si); } .sw.consist.wpy { --gn: var(--wpy); } .sw.consist.nar { --gn: var(--nar); }
+:root { --nar: #2c4f86; }                    /* Northern Alberta Railways: dark blue (Claude's pick, not confirmed) */
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --nar: #8fb0ea; } }
+:root[data-theme="dark"] { --nar: #8fb0ea; }
+:root { --gif: #2e6f73; --gif-funnel: #e0b43c; --nvf: #7a5230; --nvf-funnel: #23252e; --hnc: #3d6b3a; --hnc-funnel: #e8e3d3; --ass: #1f3a5f; --ass-funnel: #c8372d; --byn: #4f6b3a; --byn-funnel: #e8c22c; --bst: #2f5d7c; --bst-funnel: #e8e3d3; }   /* + Harbour Navigation Co.; Alaska Steamship Co. (Claude's picks, not confirmed) */   /* Gulf Islands Ferry Co.; North Vancouver ferries (Claude's picks, not confirmed) */
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --gif: #7cc3c7; --nvf: #d2a37a; --nvf-funnel: #e7e8f0; --hnc: #9fcf8f; --ass: #8fb1dd; --ass-funnel: #ee6a5c; --byn: #a5cc6e; --byn-funnel: #f2d457; --bst: #8cc0e0; --bst-funnel: #e7e8f0; } }
+:root[data-theme="dark"] { --gif: #7cc3c7; --nvf: #d2a37a; --nvf-funnel: #e7e8f0; --hnc: #9fcf8f; --ass: #8fb1dd; --ass-funnel: #ee6a5c; --byn: #a5cc6e; --byn-funnel: #f2d457; --bst: #8cc0e0; --bst-funnel: #e7e8f0; }
+.badge.v.gif { background: var(--gif); } .badge.v.nvf { background: var(--nvf); } .badge.v.hnc { background: var(--hnc); } .badge.v.ass { background: var(--ass); } .badge.v.byn { background: var(--byn); } .badge.v.bst { background: var(--bst); }   /* British Yukon Navigation; Barkley Sound Transportation (Claude's picks) */
+/* Washington (October 2026; colours are Claude's picks, not confirmed) */
+:root { --np: #1f4e79; --sps: #5b4a8b; --gwwd: #7a6a4f; --cnw: #5c6e1a; --up: #b8901a; --milw: #b5651d; --arr: #26706a; }   /* Alaska Railroad: Claude's pick, not confirmed */
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --np: #8fb6e3; --sps: #b3a5e0; --gwwd: #c9b48f; --cnw: #b5c96a; --up: #e6c65a; --milw: #e5a26a; --arr: #7cc7bd; } }
+:root[data-theme="dark"] { --np: #8fb6e3; --sps: #b3a5e0; --gwwd: #c9b48f; --cnw: #b5c96a; --up: #e6c65a; --milw: #e5a26a; --arr: #7cc7bd; }
+.badge.o { background: var(--np); } .badge.d { background: var(--sps); } .badge.u { background: var(--up); } .badge.m { background: var(--milw); } .badge.k { background: var(--arr); } .badge.x { background: var(--cnw); } .badge.j { background: var(--gwwd); }
+.sw.consist.np { --gn: var(--np); } .sw.consist.sps { --gn: var(--sps); } .sw.consist.up { --gn: var(--up); } .sw.consist.milw { --gn: var(--milw); } .sw.consist.arr { --gn: var(--arr); } .sw.consist.cnw { --gn: var(--cnw); } .sw.consist.gwwd { --gn: var(--gwwd); }
+.chip { display: inline-block; font: 600 11px/1 var(--ui); padding: 3px 6px; border-radius: 3px; background: color-mix(in srgb, var(--hold) 18%, transparent); color: var(--hold); margin-right: 4px; }
+
+/* timetable column */
+.tt { width: 100%; border-collapse: collapse; font-variant-numeric: tabular-nums; }
+.tt td { padding: 3px 8px; border-bottom: 1px dotted var(--rule); font: 13px/1.3 var(--display); }
+.tt td.mile { color: var(--muted); font: 12px/1.3 var(--display); text-align: right; width: 42px; padding-left: 16px; }
+.tt td.t { text-align: right; width: 58px; }
+.tt td.mile.ship { width: 70px; padding-left: 12px; }
+.tt td.mile.ship .badge { height: auto !important; min-height: 18px; max-width: 64px; padding: 3px 7px; border-radius: 9px; white-space: normal; text-align: center; line-height: 1.15; }   /* a long ship's name takes two lines */
+.tt td.m { width: 18px; padding: 0 16px 0 0; font: 700 13px/1 var(--display); color: var(--hold); }
+.tt .pm { font-weight: 700; }
+.tt tr.past td { color: var(--muted); opacity: .6; }
+.tt tr.now td { background: color-mix(in srgb, var(--ink) 9%, transparent); }
+.tt tr.now td.name { font-weight: 700; color: var(--ink); }
+.tt tr.clickable { cursor: pointer; }
+.tt tr.clickable:hover td { background: color-mix(in srgb, var(--ink) 5%, transparent); }
+.tt td.name { min-width: 0; }
+.meta { padding: 10px 16px 4px; font: 13px/1.45 var(--ui); color: var(--muted); }
+.meta b { color: var(--text); font-weight: 600; }
+
+/* controls */
+.controls { position: absolute; left: 16px; right: 372px; bottom: 16px; padding: 10px 12px; display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+.play { width: 40px; height: 40px; border-radius: 50%; border: 0; background: var(--ink); color: var(--panel); cursor: pointer; display: grid; place-items: center; flex: none; }
+.play svg { width: 16px; height: 16px; fill: currentColor; }
+.seg { display: inline-flex; border: 1px solid var(--rule); border-radius: 5px; overflow: hidden; flex: none; }
+.seg button { appearance: none; border: 0; background: transparent; color: var(--muted); font: 600 12px/1 var(--ui); padding: 8px 9px; cursor: pointer; font-variant-numeric: tabular-nums; }
+.seg button + button { border-left: 1px solid var(--rule); }
+.seg button[aria-pressed="true"] { background: var(--ink); color: var(--panel); }
+.slider { flex: 1 1 220px; min-width: 160px; display: grid; gap: 4px; }
+.slider input { width: 100%; accent-color: var(--ink); margin: 0; }
+.ticks { display: flex; justify-content: space-between; font: 11px/1 var(--display); color: var(--muted); font-variant-numeric: tabular-nums; }
+.ticks .pm { font-weight: 700; }
+select { font: 600 12px/1 var(--ui); color: var(--text); background: var(--panel); border: 1px solid var(--rule); border-radius: 5px; padding: 8px 8px; flex: none; }
+.zoom { display: inline-flex; gap: 4px; flex: none; }
+button:focus-visible, select:focus-visible, input:focus-visible, .trow:focus-visible { outline: 2px solid var(--ink); outline-offset: 2px; }
+.sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+
+@media (max-width: 760px) {
+  .masthead { padding: 10px 12px; gap: 6px; width: auto; right: 16px; }
+  .masthead h1 { font-size: 18px; }
+  .masthead .sub, .typenote { display: none; }
+  .clock { padding-top: 6px; }
+  .clock .time { font-size: 32px; }
+  .legend { font-size: 11px; }
+  .panel { top: auto; bottom: calc(var(--ctl, 140px) + 24px); left: 16px; right: 16px; width: auto; height: 34%; }
+  .zoom { flex: 1 1 100%; min-width: 0; }
+  .zoom select { flex: 1 1 0; min-width: 0; }
+  .panel-foot { display: none; }
+  .controls { right: 16px; gap: 8px 10px; }
+  .slider { order: 5; flex-basis: 100%; }
+}
+@media (max-width: 760px) and (max-height: 640px) { .panel { height: 26%; } }
+/* the boxes minimised (Brendan, 5 October: one toggle, phone and desktop): the title card shrinks to the clock and day, the panel to its heading */
+.app.min .masthead > :not(.clock) { display: none; }
+.app.min .masthead { width: auto; right: auto; padding: 8px 12px; cursor: pointer; }
+.app.min .clock { border-top: 0; padding-top: 0; }
+.app.min .clock .time { font-size: 28px; }
+.app.min .panel { bottom: auto; height: auto; }
+.app.min .panel-body, .app.min .panel-foot { display: none; }
+.app.min .panel-head { cursor: pointer; }
+@media (max-width: 760px) { .app.min .panel { top: auto; bottom: calc(var(--ctl, 140px) + 24px); height: auto; } }
+#mini { flex: none; }
+</style>
+
+<div class="app">
+  <canvas id="map" aria-label="Map of British Columbia railways with moving trains"></canvas>
+
+  <header class="masthead card">
+    <div class="eyebrow">Interurban and main line railways</div>
+    <h1>The Digital Model Railway</h1>
+    <div class="sub">Mainline, interurban and steamship lines in the summer of 1948 · approximately the week of 5 July 1948</div>
+    <div class="clock" aria-live="off">
+      <span class="time" id="clockTime">9.35</span><span class="mer" id="clockMer">a.m.</span>
+      <span class="day" id="clockDay">Monday</span>
+    </div>
+    <div class="legend">
+      <span><i class="sw car"></i>B.C. Electric car</span><span><i class="sw consist cp"></i>Canadian Pacific and E&amp;N</span><span><i class="sw consist cn"></i>Canadian National</span><span><i class="sw consist"></i>Great Northern</span><span><i class="sw consist pge"></i>Pacific Great Eastern</span><span><i class="sw consist si"></i>Spokane International</span><span><i class="sw consist wpy"></i>White Pass &amp; Yukon</span><span><i class="sw consist nar"></i>Northern Alberta</span><span><i class="sw consist np"></i>Northern Pacific</span><span><i class="sw consist sps"></i>Spokane, Portland &amp; Seattle</span><span><i class="sw consist up"></i>Union Pacific</span><span><i class="sw consist milw"></i>Milwaukee Road</span><span><i class="sw consist arr"></i>Alaska Railroad</span><span><i class="sw consist gwwd"></i>Greater Winnipeg Water District</span><span><i class="sw boat"></i>Steamer</span></div>
+    <div class="legend"><span><i class="sw ring"></i>Chilliwack</span><span><i class="sw ring c"></i>Central Park</span><span><i class="sw ring b"></i>Burnaby Lake</span><span><i class="sw ring l"></i>Lulu Island</span><span><i class="sw ring n"></i>Marpole–New Westminster</span><span><i class="sw sq"></i>Railway station</span><span><i class="sw dia"></i>Steamer landing</span>
+    </div>
+    <div class="typenote">Light face type, a.m. hours; heavy face type, p.m. hours.</div>
+  </header>
+
+  <aside class="panel card" aria-label="Trains and stations">
+    <div class="panel-head" id="panelHead"></div>
+    <div class="panel-body" id="panelBody"></div>
+    <div class="panel-foot">Sources: B.C. Electric: Chilliwack, June 1949; Central Park, 1949 departures on 1942 running times; Burnaby Lake, January 1942; Lulu Island and Marpole–New Westminster, September 1947. CP Tables 6, 7, 151 to 155, 157 to 159, 161 to 163, 168 to 171 and 174, 1948 (steamers on their summer sailings); in Alberta, CP Tables 6, 92, 120, 132, 136 to 139, 141 to 145 and 149 to 151, 1948, and CN and Northern Alberta tables from the Official Guide, May 1948 (Pacific time, an hour earlier than printed); Puget Sound Navigation Co., Canadian National Steamships, White Pass &amp; Yukon and Northern Alberta Railways from the Official Guide, May 1948; Union Steamships Sailing Guide No. 138, May 31, 1948 (printed in Daylight Saving Time; shown in standard time, an hour earlier); CN main line, schedule of April 25, 1948 (Official Guide, May 1948; intermediate stations from CN Tables 23 and 24, 1949, whose times agree); CN Tables 225, 226 and 306, 1949; GN Table 90, summer 1947; Spokane International timetable, October 1947; E&amp;N Table 164, 1949; PGE, April 1948; Gulf Islands Ferry Co., summer 1941. In Saskatchewan, Manitoba and north-western Ontario, the Canadian Pacific timetable of 1948 (Tables 5, 6 and 91 to 135) and CN tables from the Official Guide of April 25, 1948; the Northern Pacific (Table 14, May 1947), Great Northern (Tables 7 and 9a, February 1948), Soo Line (Tables 2 and 3, 1947; the Mountaineer's summer Soo times are not in hand, the September 1947 times are shown), Chicago &amp; North Western (Table 17, the Mountaineer, Official Guide April 1948) and the Greater Winnipeg Water District Railway (summer service, Official Guide April 1948); all shown in Pacific time (two hours earlier than the Central time printed, an hour earlier than Mountain). In Washington and Oregon, the NP, GN, SP&amp;S, UP, Milwaukee and Camas Prairie tables of the Official Guide, 1948; the Alaska Railroad, March 1948 (Official Guide). Ships that do not sail every week (CP Tables 172 and 173, CN Steamships Table 315, Union Route 4, the Alaska Steamship Co.) are shown by their dates in the week of 5 July 1948; Alaska Steamship sailings after June 1948 continue the printed pattern. The North Vancouver ferry, the Harbour Navigation Co. landing times, the British Yukon Navigation boats, the Tutshi and the Barkley Sound boats are reconstructed or estimated from descriptions of the service, not printed timetables. Timetable scans from Timetableworld.com (not the B.C. Electric or Union Steamships tables). Steamer lanes are drawn over the water, not surveyed courses. Tap a train or station for details.<br><br>Credits: B.C. Electric routes and station architecture, the Canadian Electric Railway Mapping Project, by Paul Delamere; Lakehead and north-western Ontario lines and stations, Paul Delamere's Ontario Railway Map Collection. Main line track, the National Railway Network (Natural Resources Canada; contains information licensed under the Open Government Licence – Canada); the White Pass in Alaska, the U.S. Bureau of Transportation Statistics (NTAD). Canadian Northern and Grand Trunk Pacific track from the maps in the Wikipedia articles <a href="https://en.wikipedia.org/wiki/Canadian_Northern_Railway" target="_blank" rel="noopener">Canadian Northern Railway</a> and <a href="https://en.wikipedia.org/wiki/Grand_Trunk_Pacific_Railway" target="_blank" rel="noopener">Grand Trunk Pacific Railway</a> (CC BY-SA). Kettle Valley line, <a href="https://www.kettlevalleyrailway.ca/map.html" target="_blank" rel="noopener">kettlevalleyrailway.ca</a>. Other lines traced by hand from Google Earth and OpenRailwayMap (© OpenStreetMap contributors). In Saskatchewan and Manitoba, lines lifted since 1948 from OpenStreetMap (© OpenStreetMap contributors, ODbL) and the Canadian Northern and Grand Trunk Pacific sets. Washington, Minnesota, the Dakotas, Wisconsin and Illinois railways (Northern Pacific, Great Northern, Soo Line, Chicago &amp; North Western) from the Mississippi Rails maps by Tony Howe and David Price; Washington water and place names, the Washington State Department of Ecology; the Alaska Railroad, NTAD. Lakes, rivers and coast, Statistics Canada; place positions, the Canadian Geographical Names Database (Natural Resources Canada). After TRAVIC.</div>
+  </aside>
+
+  <div class="controls card">
+    <button class="play" id="play" aria-label="Pause"><svg viewBox="0 0 16 16" id="playIcon"></svg></button>
+    <div class="seg" role="group" aria-label="Speed">
+      <button data-speed="1">1×</button><button data-speed="10">10×</button><button data-speed="60">60×</button><button data-speed="240">240×</button>
+    </div>
+    <label class="sr" for="day">Day of week</label>
+    <select id="day">
+      <option value="mon">Monday</option><option value="tue">Tuesday</option><option value="wed">Wednesday</option><option value="thu">Thursday</option><option value="fri">Friday</option><option value="sat">Saturday</option><option value="sun">Sunday</option>
+    </select>
+    <div class="slider">
+      <label class="sr" for="time">Time of day</label>
+      <input type="range" id="time" min="10800" max="97200" step="60" value="34500">
+      <div class="ticks" aria-hidden="true"><span>3 a.m.</span><span>7</span><span>11</span><span class="pm">3 p.m.</span><span class="pm">7</span><span class="pm">11</span><span>3 a.m.</span></div>
+    </div>
+    <div class="zoom">
+      <button class="iconbtn" id="mini" aria-pressed="false" title="Make the title card and the panel small, to see more of the map">Hide boxes</button>
+      <button class="iconbtn" id="zin" aria-label="Zoom in">+</button>
+      <button class="iconbtn" id="zout" aria-label="Zoom out">−</button>
+      <label class="sr" for="view">Map view</label>
+      <select id="view">
+        <option value="lm">Lower Mainland</option><option value="canyon">Fraser Canyon</option><option value="okanagan">Kamloops and Okanagan</option><option value="thompson">North Thompson and Yellowhead</option><option value="rockies">Revelstoke, the Rockies and Calgary</option><option value="kv">Kettle Valley and Kootenays</option><option value="trench">Crowsnest, Lethbridge and the Trench</option><option value="north">Prince George and Prince Rupert</option><option value="island">Vancouver Island</option><option value="sound">Victoria and Puget Sound</option><option value="spokane">Spokane International</option><option value="coast">North coast steamers</option><option value="peace">Edmonton and the Peace River</option><option value="edmonton">Edmonton, Red Deer and Lloydminster</option><option value="calgary">Calgary, Lethbridge and Medicine Hat</option><option value="sask">Saskatchewan</option><option value="regina">Regina, Moose Jaw and Saskatoon</option><option value="manitoba">Winnipeg to Saskatchewan</option><option value="lakehead">Winnipeg, Rainy River and the Lakehead</option><option value="midwest">Minnesota and the Dakotas</option><option value="chicago">Chicago and the Twin Cities</option><option value="waterways">Peace River, Athabasca and Waterways</option><option value="puget">Seattle, Tacoma and Portland</option><option value="inland">Spokane, Pasco and Wenatchee</option><option value="columbia">The Columbia River to Portland</option><option value="alaska">The Alaska Railroad</option><option value="gulf">Seattle to Alaska</option><option value="wpy">White Pass &amp; Yukon</option><option value="pge">PGE</option><option value="all">Whole map</option>
+      </select>
+    </div>
+  </div>
+</div>
+
+<script>
+const DATA = __DATA__;
+const WATER = __WATER__;   // [[ring, ...], ...] each ring delta-encoded lon/lat in 1e-4 degrees
+
+// ---------------------------------------------------------------- projection (metres, y down)
+// Lambert conformal conic (Brendan, October 2026): standard parallels 49 and 61 N, central meridian 122.5 W (was 128 W until 17 Oct 2026: balances the lean at Fairbanks and Winnipeg), on a sphere; metres, y down,
+// with Vancouver (49.12 N, 122.5 W) at the origin. Shapes stay true from Portland to Fairbanks; scale is within a few per cent.
+const LAT0 = 49.12, LON0 = -122.5;
+const LCC = (() => {
+  const r = Math.PI / 180, R = 6371008, p1 = 49 * r, p2 = 61 * r, l0 = -122.5 * r, t = p => Math.tan(Math.PI / 4 + p / 2);
+  const n = Math.log(Math.cos(p1) / Math.cos(p2)) / Math.log(t(p2) / t(p1)), F = Math.cos(p1) * Math.pow(t(p1), n) / n;
+  const raw = (lon, lat) => { const rho = R * F / Math.pow(t(lat * r), n), th = n * (lon * r - l0); return [rho * Math.sin(th), rho * Math.cos(th)]; };
+  const o = raw(LON0, LAT0);
+  return (lon, lat) => { const q = raw(lon, lat); return [q[0] - o[0], q[1] - o[1]]; };
+})();
+const P = LCC;
+
+const mkRoute = arr => { const pts = arr.map(([lon, lat, d]) => { const [x, y] = P(lon, lat); return { x, y, d }; }); return { pts, len: pts[pts.length - 1].d }; };
+const LINES = [{ key: 'bl', kind: 'b', label: 'Burnaby Lake Line', ...DATA.bl }, ...(DATA.lines || [])];
+const ROUTES = { main: mkRoute(DATA.route) };
+for (const L of LINES) ROUTES[L.key] = mkRoute(L.route);
+const R = ROUTES.main.pts;
+function along(d, rk = 'main') {
+  const RR = ROUTES[rk], R = RR.pts;
+  d = Math.max(0, Math.min(RR.len, d));
+  let lo = 0, hi = R.length - 1;
+  while (hi - lo > 1) { const m = (lo + hi) >> 1; if (R[m].d <= d) lo = m; else hi = m; }
+  const a = R[lo], b = R[hi], f = (d - a.d) / ((b.d - a.d) || 1);
+  return { x: a.x + f * (b.x - a.x), y: a.y + f * (b.y - a.y), ang: Math.atan2(b.y - a.y, b.x - a.x) };
+}
+const ST = DATA.stations.map((s, i) => { const p = along(s.chain); return { ...s, line: s.line === 'cp' ? 'cpl' : s.line, i, x: p.x, y: p.y, chains: { main: s.chain }, miles: {} }; });   // 'cp' in the base list is the Central Park Line; LINES uses 'cp' for Canadian Pacific
+const GID = {}; ST.forEach(s => GID[s.id] = s);
+for (const L of LINES) L.idx = L.stations.map(b => {
+  const key = b.shared || b.gid;
+  if (key && GID[key]) {            // shared with another line, or a second call on this line (a spur run out and back)
+    const g = GID[key]; if (g.chains[L.key] === undefined) { g.chains[L.key] = b.chain; g.miles[L.key] = b.lmile ?? b.mile; }
+    if (b.slow) g.slow = true;
+    return g.i;
+  }
+  const q = b.xy ? P(b.xy[0], b.xy[1]) : null, p = q ? { x: q[0], y: q[1] } : along(b.chain, L.key), i = ST.length;
+  const s = { id: L.key + i, name: b.name, mile: b.mile, chain: b.chain, chains: { [L.key]: b.chain }, miles: { [L.key]: b.lmile ?? b.mile }, slow: !!b.slow, i, x: p.x, y: p.y,
+              principal: !!b.principal, line: L.key, note: b.note || `${L.label} station` + (b.tp === 0 ? ' (flag stop)' : ''), kml: b.kml || '' };
+  ST.push(s); if (b.gid) GID[b.gid] = s;
+  return i;
+});
+const LINE_OF = Object.fromEntries(LINES.map(L => [L.key, L]));
+const KIND_LABEL = { c: 'Central Park Line', b: 'Burnaby Lake Line', l: 'Lulu Island Line', n: 'Marpole–New Westminster', g: 'Great Northern', q: 'Canadian National', p: 'Canadian Pacific', i: 'Esquimalt & Nanaimo', r: 'Pacific Great Eastern', y: 'White Pass & Yukon', a: 'Northern Alberta Railways', o: 'Northern Pacific', d: 'Spokane, Portland & Seattle', u: 'Union Pacific', m: 'Milwaukee Road', k: 'Alaska Railroad', x: 'Chicago & North Western', j: 'Greater Winnipeg Water District', v: 'Steamers' };
+const plain = (t, n) => t.water ? n.replace(/ \(.*\)$/, '') : n;      // a sailing's heading names the place, not the pier: "Nanaimo to Vancouver"
+const KIND_BADGE = { c: 'CPL', b: 'BL', l: 'LI', n: 'MN', g: 'GN', q: 'CN', p: 'CP', v: 'Steamer', y: 'WP', a: 'NAR', o: 'NP', d: 'SP&S', u: 'UP', m: 'MILW', k: 'ARR', x: 'C&NW', j: 'GWWD' };
+// B.C. Electric cars are all bright red now that main line railways share the map; lines are told apart by station rings and the panel.
+const KIND_COLOR = { e: 'bcer', w: 'bcer', s: 'bcer', c: 'bcer', b: 'bcer', l: 'bcer', n: 'bcer', g: 'gn', p: 'cp', q: 'cn', i: 'cp', r: 'pge', v: 'cp', y: 'wpy', a: 'nar', o: 'np', d: 'sps', u: 'up', m: 'milw', k: 'arr', x: 'cnw', j: 'gwwd' };
+const BOAT_COLOR = { cpss: 'cp', bb: 'bb', cnss: 'cn', uss: 'uss', gif: 'gif', nvf: 'nvf', hnc: 'hnc', ass: 'ass', byn: 'byn', bst: 'bst' };     // a steamer's label takes its company's colour
+const LINE_COLOR = { cpl: 'local', bl: 'lake', lulu: 'lulu', nwm: 'nwm' };
+
+// ---------------------------------------------------------------- services & motion model
+const WKDY = ['DAILY', 'CP_WKDY', 'BL_WKDY', 'LU_WKDY', 'NM_WKDY', 'GN_DAILY', 'CN_DAILY', 'CP_DAILY', 'CP_XSUN', 'EN_XSUN', 'CN_XSUN', 'NAR_XSUN'];
+const MAIN_ALL = ['GN_DAILY', 'CN_DAILY', 'CP_DAILY'];
+const SERVICES = { mon: [...WKDY, 'PGE_MWF', 'CN_MWF', 'CP_MON1', 'CP_MTH', 'WP_MTTFS'], tue: [...WKDY, 'CN_SUTT', 'CN_TF', 'PGE_TTS', 'CN_TTS', 'CP_TTH', 'CP_TF', 'CP_TUE1', 'WP_MTTFS', 'CP_XMON'], wed: [...WKDY, 'CN_WS', 'PGE_MWF', 'PGE_WFS', 'CN_MWF', 'CP_WED1', 'CP_WF', 'CP_WS', 'WP_SW', 'CP_XMON'], thu: [...WKDY, 'CN_SUTT', 'PGE_TTS', 'CN_TTS', 'CP_TTH', 'CP_MTH', 'CP_THU1', 'WP_MTTFS', 'CP_XMON'], fri: [...WKDY, 'FRI', 'CN_TF', 'PGE_MWF', 'PGE_WFS', 'CN_MWF', 'CP_WF', 'CP_TF', 'WP_MTTFS', 'CP_FRI1', 'CP_XMON'],
+  sat: ['DAILY', 'SAT', 'CP_SAT', 'BL_WKDY', 'LU_SAT', 'NM_SAT', ...MAIN_ALL, 'CP_XSUN', 'NAR_XSUN', 'CN_WS', 'EN_XSUN', 'PGE_TTS', 'CN_XSUN', 'CN_TTS', 'CP_SAT1', 'CP_WS', 'WP_MTTFS', 'CP_XMON'], sun: ['DAILY', 'CN_SUTT', 'CP_SUN', 'BL_SUN', 'LU_SUN', 'NM_SUN', ...MAIN_ALL, 'PGE_WFS', 'CP_SUN1', 'WP_SW', 'CP_XMON'] };
+const PREV = { mon: 'sun', tue: 'mon', wed: 'tue', thu: 'wed', fri: 'thu', sat: 'fri', sun: 'sat' };
+const DAYNAME = { mon: 'Monday', tue: 'Tuesday', wed: 'Wednesday', thu: 'Thursday', fri: 'Friday', sat: 'Saturday', sun: 'Sunday' };
+const VMAX = 17.9; // m/s ≈ 40 mph
+
+function buildTrip(t) {
+  const rk = t.rk || 'main';
+  const mainline = !!t.mainline;
+  const local = !mainline && (rk !== 'main' || t.svc.startsWith('CP'));
+  const kind = t.kind || (local ? 'c' : t.svc === 'DAILY' ? (t.dir === 0 ? 'e' : 'w') : 's');
+  const name = t.water ? (t.num || 'Steamer') : mainline ? (/^[A-Z]\.[A-Z]\./.test(t.num || '') ? t.num : /^(Mixed|Train)$/.test(t.num || '') ? t.num : `No. ${t.num || t.id}`) : local ? `Car ${hm(t.stops[0][2]).txt}` : t.svc === 'DAILY' ? `No. ${t.id}` : (t.svc === 'FRI' ? 'Fri. Market' : 'Sat. Special');
+  const short = t.water ? (t.vessel || '') : mainline ? (t.num === 'Mixed' ? 'M' : t.num === 'Train' ? '' : t.num || t.id) : local ? '' : t.svc === 'DAILY' ? t.id : (t.svc === 'FRI' ? 'F' : 'S');
+  const ev = [];
+  const st = local ? t.stops.filter(r => r[3] === 1) : t.stops; // local cars pass flag stops without stopping
+  for (let k = 0; k < st.length; k++) {
+    const [si, arr, dep] = st[k];
+    const d0 = st[k][4] ?? ST[si].chains[rk];
+    if (dep > arr) ev.push({ type: 'dwell', t0: arr, t1: dep, s: si, sched: true, d: d0, k });
+    if (k === st.length - 1) break;
+    const [sj, arr2] = st[k + 1];
+    const d1 = st[k + 1][4] ?? ST[sj].chains[rk], dist = Math.abs(d1 - d0), sched = arr2 - dep;
+    const street = ST[si].mile < 1 || ST[sj].mile < 1 || ST[si].slow || ST[sj].slow;   // slow: a spur worked at walking pace, not a wait
+    const nominal = Math.max(45, dist / VMAX * 1.12);
+    let run = sched;
+    if (t.water) run = sched;                                   // a steamer keeps its timetable pace
+    else if (mainline) { if (!street && dist / sched < 6.7) run = Math.min(sched, Math.max(60, dist / 20)); } // main line: only a clearly slow segment (under 15 mph) is a wait, e.g. customs
+    else if (!street && !local && sched - nominal > 75) run = nominal;
+    ev.push({ type: 'run', t0: dep, t1: dep + run, d0, d1, from: si, to: sj, k: k + 1 });
+    if (run < sched) ev.push({ type: 'dwell', t0: dep + run, t1: arr2, s: sj, hold: true, d: d1, k: k + 1 });
+  }
+  const all = t.stops;
+  return { ...t, rk, kind, local, mainline, name, short, ev, start: all[0][2], end: all[all.length - 1][1],
+           origin: ST[all[0][0]], dest: ST[all[all.length - 1][0]] };
+}
+// where a train really starts and ends: beyond the map for trains that run off it (real_ends.py), else its first and last stop here
+const fromName = t => t.realFrom || plain(t, t.origin.name), toName = t => t.realTo || plain(t, t.dest.name);
+const TRIPS = DATA.trips.map(buildTrip);
+for (const [svc, byDir] of Object.entries(DATA.cp.deps)) for (const [dir, deps] of Object.entries(byDir)) {
+  const pat = DATA.cp.pattern[dir];
+  for (const d of deps) TRIPS.push(buildTrip({ id: `${svc}-${dir}-${d}`, svc, dir: +dir, label: 'Central Park Line',
+    stops: pat.map(([si, a, b, tp]) => [si, d + a, d + b, tp]) }));
+}
+for (const L of LINES) for (const bt of L.trips || []) TRIPS.push(buildTrip({ id: bt.id, svc: bt.svc, dir: bt.dir, rk: L.key, kind: L.kind,
+  label: L.mainline ? (bt.name || L.label) : L.label, mainline: !!L.mainline, realFrom: bt.from, realTo: bt.to, railway: L.label, num: bt.num, note: bt.note, livery: L.livery, src: L.src, water: !!L.water, vessel: bt.vessel, d0: bt.d0, next: bt.next, prev: bt.prev,
+  stops: bt.stops.map(([bi, a, b, tp]) => [L.idx[bi], a, b, tp, L.stations[bi].chain]) }));
+// a station that only mixed trains call at is drawn as a minor station (Brendan); a steamer or a passenger train calling keeps it as it was
+{ const only = new Map();
+  for (const t of TRIPS) {
+    const mixed = !t.water && (t.label === 'Mixed' || /^M\d/.test(t.num || '')), n = t.stops.length;
+    t.stops.forEach((r, k) => {                                   // where a mixed train starts or ends, the station is drawn normally (Brendan, 5 October), unless the
+      const end = (k === 0 && !t.realFrom) || (k === n - 1 && !t.realTo);   // train only enters or leaves the map there (it really starts or ends beyond)
+      only.set(r[0], (only.get(r[0]) ?? true) && mixed && !end); });
+  }
+  for (const [i, m] of only) if (m) ST[i].principal = false; }
+const NW_CHAIN = ST.find(s => s.name === 'New Westminster').chains.main;
+
+// meets: a held train waits while an opposing train reaches that station
+for (const t of TRIPS) for (const e of t.ev) {
+  if (e.type !== 'dwell' || !e.hold || t.local) continue;
+  for (const o of TRIPS) {
+    if (o.dir === t.dir || o.local) continue;
+    if (o.svc !== 'DAILY' && t.svc !== 'DAILY' && o.svc !== t.svc) continue;
+    const row = o.stops.find(r => r[0] === e.s);
+    if (row && row[1] >= e.t0 - 60 && row[1] <= e.t1 + 60) { e.meet = o; (t.meets ||= new Set()).add(e.s); (o.meets ||= new Set()).add(e.s); }
+  }
+}
+
+function ease(e, t) {
+  const run = e.t1 - e.t0, dist = e.d1 - e.d0;
+  if (run <= 0) return e.d1;
+  const u = t - e.t0, ta = Math.min(35, run * 0.3), v = dist / (run - ta);
+  let s;
+  if (u < ta) s = 0.5 * v / ta * u * u;
+  else if (u < run - ta) s = 0.5 * v * ta + v * (u - ta);
+  else { const r = run - u; s = dist - 0.5 * v / ta * r * r; }
+  return e.d0 + s;
+}
+
+function tripState(t, T) {
+  if (T < t.start || T > t.end) return null;
+  for (const e of t.ev) {
+    if (T >= e.t0 && T <= e.t1) {
+      if (e.type === 'run') {
+        const d = ease(e, T), p = along(d, t.rk);
+        return { d, ...p, moving: true, e, from: e.from, to: e.to };
+      }
+      const s = ST[e.s], c = e.d ?? s.chains[t.rk];
+      return { d: c, ...along(c, t.rk), moving: false, e, at: e.s };
+    }
+  }
+  const lr = t.stops[t.stops.length - 1], last = ST[lr[0]], c = lr[4] ?? last.chains[t.rk];
+  return { d: c, ...along(c, t.rk), moving: false, at: last.i };
+}
+
+// trains still running the morning after they set out (the PGE runs overnight): a copy shifted back a day
+// (the Prince Rupert trains run into a third day; the Yukon boats into a fifth)
+// A dated sailing (d0: the day it starts, counted from Monday 5 July 1948, -1 = Sunday 4 July) shows only on the days of the week it is out:
+// one begun before Monday appears from Monday, and one still out on Sunday night is not carried round into Monday.
+for (const t of TRIPS.slice()) for (const k of [1, 2, 3, 4, 5, 6, 7, 8]) {
+  if (t.d0 === undefined ? (k > 6 || t.end <= k * 86400 + 3 * 3600) : (t.end <= k * 86400 || t.d0 + k < 0 || t.d0 + k > 6)) continue;
+  const o = k * 86400, sh = r => [r[0], r[1] - o, r[2] - o, r[3], r[4]];
+  TRIPS.push({ ...t, id: t.id + '~'.repeat(k), carry: k, start: t.start - o, end: t.end - o, stops: t.stops.map(sh),
+               ev: t.ev.map(e => ({ ...e, t0: e.t0 - o, t1: e.t1 - o })) });
+}
+for (let i = TRIPS.length - 1; i >= 0; i--) if (TRIPS[i].d0 !== undefined && !TRIPS[i].carry && (TRIPS[i].d0 < 0 || TRIPS[i].d0 > 6)) TRIPS.splice(i, 1);
+const WEEKDATE = d => ['Thursday 1', 'Friday 2', 'Saturday 3', 'Sunday 4', 'Monday 5', 'Tuesday 6', 'Wednesday 7', 'Thursday 8', 'Friday 9', 'Saturday 10', 'Sunday 11'][d + 4] + ' July';
+const CARRY = ['', 'the day before', 'two days before', 'three days before', 'four days before', 'five days before', 'six days before', 'a week before', 'eight days before'];
+const dayBack = (day, k) => { let d = day; for (let i = 0; i < k; i++) d = PREV[d]; return d; };
+// a service named W_ and seven digits (Monday first) runs on the days marked 1: the Alberta lines, whose trains run on many different sets of days
+const DAYI = { mon: 0, tue: 1, wed: 2, thu: 3, fri: 4, sat: 5, sun: 6 };
+const runsOn = (svc, day) => SERVICES[day].includes(svc) || (/^W_[01]{7}$/.test(svc) && svc[2 + DAYI[day]] === '1');
+const weekdaysOf = svc => { if (!/^W_[01]{7}$/.test(svc)) return ''; const b = [...svc.slice(2)], N = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
+  const on = N.filter((_, i) => b[i] === '1'), off = N.filter((_, i) => b[i] === '0'), list = a => a.length === 1 ? a[0] : a.slice(0, -1).join(', ') + ' and ' + a[a.length - 1];
+  return !off.length ? 'Daily' : off.length <= 2 ? 'Daily except ' + list(off) : list(on.map(d => d + 's')); };
+const activeTrips = day => TRIPS.filter(t => runsOn(t.svc, t.carry ? dayBack(day, t.carry) : day));
+
+// ---------------------------------------------------------------- time formatting (timetable style)
+function hm(sec) {
+  sec = ((sec % 86400) + 86400) % 86400;          // carried-over trains have times before midnight of the shown day
+  let m = Math.floor(sec / 60), h = Math.floor(m / 60) % 24; m = m % 60;
+  const pm = h >= 12; let h12 = h % 12; if (h12 === 0) h12 = 12;
+  return { txt: `${h12}.${String(m).padStart(2, '0')}`, pm };
+}
+const tspan = sec => { const x = hm(sec); return `<span class="${x.pm ? 'pm' : 'am'}">${x.txt}</span>`; };
+const esc = s => String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+
+// ---------------------------------------------------------------- state
+const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+const S = { T: 9 * 3600 + 35 * 60, day: 'mon', speed: 60, playing: !reduce, sel: null, follow: false, min: null };
+const hot = window.claude?.hot;
+function boot(saved) {
+  Object.assign(S, saved || {});
+}
+hot?.snapshot?.(() => ({ T: S.T, day: S.day, speed: S.speed, playing: S.playing, sel: S.sel, follow: S.follow, min: S.min }));
+
+// ---------------------------------------------------------------- canvas & view
+const cv = document.getElementById('map'), ctx = cv.getContext('2d');
+let W = 0, H = 0, DPR = 1;
+const view = { cx: 0, cy: 0, k: 0.01 }; // k = px per metre
+let colors = {}, baseRev = 0;       // baseRev: bumped whenever the cached base picture must be redrawn (theme, fonts)
+function readColors() {
+  const cs = getComputedStyle(document.documentElement);
+  for (const n of ['paper', 'ink', 'ink-soft', 'text', 'muted', 'context', 'siding', 'east', 'west', 'special', 'hold', 'panel', 'rule', 'local', 'lake', 'lulu', 'nwm', 'bcer', 'cp', 'gn', 'cn', 'pge', 'nar', 'si', 'si-gold', 'cpss-funnel', 'bb', 'bb-funnel', 'cnss-funnel', 'uss', 'uss-funnel', 'gif', 'gif-funnel', 'nvf', 'nvf-funnel', 'hnc', 'hnc-funnel', 'ass', 'ass-funnel', 'byn', 'byn-funnel', 'bst', 'bst-funnel', 'np', 'sps', 'gwwd', 'cnw', 'up', 'milw', 'arr', 'wpy', 'wpy-gold', 'loco', 'tie', 'dash', 'freight', 'water'])
+    colors[n] = cs.getPropertyValue('--' + n).trim();
+  baseRev++;                                                        // the base picture is in the old colours
+}
+readColors();
+matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => { readColors(); });
+new MutationObserver(readColors).observe(document.documentElement, { attributes: true, attributeFilter: ['data-theme'] });
+
+// pre-built paths in world coordinates
+function pathFrom(arrs) {
+  const p = new Path2D();
+  for (const a of arrs) { for (let i = 0; i < a.length; i += 2) { const [x, y] = P(a[i], a[i + 1]); i ? p.lineTo(x, y) : p.moveTo(x, y); } }
+  return p;
+}
+const PATH_STREET = pathFrom(DATA.ctx.street);
+// water: one Path2D per body (outline plus island holes) with its bounding box, drawn to an offscreen canvas only when the view changes
+const WATER_PATHS = WATER.map(poly => {
+  const path = new Path2D(); let x0 = 1e18, y0 = 1e18, x1 = -1e18, y1 = -1e18;
+  for (const r of poly) {
+    let lon = r[0], lat = r[1]; let [x, y] = P(lon / 1e4, lat / 1e4); path.moveTo(x, y);
+    for (let i = 2; i < r.length; i += 2) {
+      lon += r[i]; lat += r[i + 1]; [x, y] = P(lon / 1e4, lat / 1e4); path.lineTo(x, y);
+      if (x < x0) x0 = x; if (x > x1) x1 = x; if (y < y0) y0 = y; if (y > y1) y1 = y;
+    }
+    path.closePath();
+  }
+  return { path, x0, y0, x1, y1 };
+});
+const PATH_INTER = pathFrom(DATA.ctx.interurban);
+const PATH_SIDING = pathFrom(DATA.ctx.siding);
+const routePath = pts => { const p = new Path2D(); pts.forEach((q, i) => i ? p.lineTo(q.x, q.y) : p.moveTo(q.x, q.y)); return p; };
+const PATH_ROUTE = routePath(R), PATH_LINES = LINES.filter(L => !L.mainline).map(L => routePath(ROUTES[L.key].pts));
+// Long lines (main line track, steamer lanes) are cut into pieces of 40 points, each with its bounding box, so that only the pieces on screen
+// are stroked; and each line has coarser copies for when the map is zoomed out and most of its points fall on the same pixel.
+const LOD = [0, 40, 250, 1500];                                   // metres: at each level, points closer together than this are dropped
+function pieces(pts) {
+  return LOD.map(tol => {
+    const keep = [pts[0]];
+    for (let i = 1; i < pts.length; i++) { const q = pts[i], l = keep[keep.length - 1]; if (i === pts.length - 1 || Math.hypot(q.x - l.x, q.y - l.y) >= tol) keep.push(q); }
+    const out = [];
+    for (let i = 0; i < keep.length - 1; i += 40) {
+      const seg = keep.slice(i, i + 41), p = new Path2D(); let x0 = 1e18, y0 = 1e18, x1 = -1e18, y1 = -1e18;
+      seg.forEach((q, j) => { j ? p.lineTo(q.x, q.y) : p.moveTo(q.x, q.y); if (q.x < x0) x0 = q.x; if (q.x > x1) x1 = q.x; if (q.y < y0) y0 = q.y; if (q.y > y1) y1 = q.y; });
+      out.push({ p, x0, y0, x1, y1, d: seg[0].d });
+    }
+    return out;
+  });
+}
+const lodFor = k => { let i = 0; while (i + 1 < LOD.length && LOD[i + 1] * k < 0.7) i++; return i; };
+function strokePieces(g, lods, k, box) {                          // box: the world rectangle being drawn
+  for (const c of lods[lodFor(k)]) if (c.x1 >= box[0] && c.x0 <= box[2] && c.y1 >= box[1] && c.y0 <= box[3]) { g.lineDashOffset = c.d; g.stroke(c.p); }
+  g.lineDashOffset = 0;
+}
+const LANES = LINES.filter(L => L.water).map(L => pieces(ROUTES[L.key].pts));     // steamer lanes
+// main line track: split each route into owner runs
+const TRACK = LINES.filter(L => L.mainline && !L.water).map(L => {
+  const RR = ROUTES[L.key], runs = [];
+  const ownerAt = d => { const s = (L.segments || []).find(s => d >= s.a && d <= s.b); return s ? s.owner + (s.est ? '~' : '') : L.owner; };   // ~: a straight-line estimate
+  let cur = null;                                                 // each stretch between two points takes the owner at its middle (a long straight
+  for (let i = 1; i < RR.pts.length; i++) {                       // stretch of track has no points between its ends)
+    const p = RR.pts[i - 1], q = RR.pts[i], o = ownerAt((p.d + q.d) / 2);
+    if (!cur || cur.owner !== o) { cur = { owner: o, pts: [p] }; runs.push(cur); }
+    cur.pts.push(q);
+  }
+  for (const r of runs) { r.est = r.owner.endsWith('~'); r.owner = r.owner.replace('~', ''); r.pts = r.pts.filter(Boolean); if (r.owner !== 'none' && r.pts.length > 1) r.lods = pieces(r.pts); }
+  return { L, runs };
+});
+
+const ctlEl = document.querySelector('.controls');
+function resize() {
+  document.querySelector('.app').style.setProperty('--ctl', ctlEl.offsetHeight + 'px');   // the control bar's height: the panel sits above it on a phone
+  DPR = Math.min(2, window.devicePixelRatio || 1);
+  const r = cv.getBoundingClientRect(); W = r.width; H = r.height;
+  cv.width = Math.round(W * DPR); cv.height = Math.round(H * DPR);
+}
+function insets() {
+  const narrow = W <= 760, min = S.min;
+  const cb = ctlEl.offsetHeight + 24;
+  if (min) return narrow ? { l: 30, r: 30, t: 80, b: cb + 70 } : { l: 40, r: 40, t: 100, b: 110 };   // the boxes minimised: the map has the space
+  return narrow ? { l: 60, r: 50, t: 200, b: H * 0.34 + cb } : { l: 40, r: 430, t: 420, b: 110 };
+}
+const VIEWS = { lm: [-123.4, -121.85, 48.99, 49.33], canyon: [-122.1, -121.2, 49.15, 50.45], okanagan: [-121.5, -119.0, 49.85, 50.85], thompson: [-121.0, -117.9, 50.6, 53.1], rockies: [-120.5, -113.9, 50.5, 51.7], kv: [-121.6, -117.2, 48.95, 49.9], trench: [-117.4, -112.7, 48.95, 51.35], north: [-130.5, -118.3, 52.7, 55.4], island: [-125.1, -123.3, 48.4, 49.7], sound: [-124.0, -122.1, 47.4, 49.0], coast: [-132.0, -122.9, 49.2, 55.5], wpy: [-135.8, -134.3, 59.3, 60.9], spokane: [-117.7, -115.8, 47.5, 49.25], peace: [-120.5, -113.2, 53.4, 56.0], calgary: [-115.0, -109.9, 48.95, 52.0], puget: [-123.4, -122.0, 45.45, 48.1], inland: [-121.0, -116.9, 46.0, 48.3], columbia: [-123.0, -118.2, 45.4, 46.3], alaska: [-151.0, -146.5, 59.9, 65.0], gulf: [-152.0, -122.0, 47.4, 61.6], edmonton: [-115.8, -109.9, 51.9, 54.9], sask: [-110.3, -101.2, 48.95, 54.1], regina: [-107.2, -103.8, 50.1, 52.4], manitoba: [-102.6, -96.6, 49.0, 52.4], lakehead: [-97.6, -88.8, 47.5, 50.6], midwest: [-104.0, -92.8, 44.7, 49.2], chicago: [-93.6, -87.4, 41.7, 45.3], waterways: [-118.5, -110.0, 53.4, 57.0],
+                pge: [-123.3, -121.2, 49.7, 53.0], all: null };
+function fit(v = 'lm') {
+  let all = Object.values(ROUTES).flatMap(r => r.pts);
+  const b = VIEWS[v];
+  if (b) { const c = [P(b[0], b[2]), P(b[1], b[2]), P(b[0], b[3]), P(b[1], b[3])];   // all four corners: far east of the central meridian the box turns (19 Oct)
+    const x0 = Math.min(...c.map(q => q[0])), x1 = Math.max(...c.map(q => q[0])), y0 = Math.min(...c.map(q => q[1])), y1 = Math.max(...c.map(q => q[1]));
+    all = all.filter(q => q.x > x0 && q.x < x1 && q.y > y0 && q.y < y1); }
+  let x0 = Infinity, x1 = -Infinity, y0 = Infinity, y1 = -Infinity;          // a loop, not Math.min(...): too many points to spread
+  for (const q of all) { if (q.x < x0) x0 = q.x; if (q.x > x1) x1 = q.x; if (q.y < y0) y0 = q.y; if (q.y > y1) y1 = q.y; }
+  const ins = insets(); const aw = Math.max(120, W - ins.l - ins.r), ah = Math.max(120, H - ins.t - ins.b);
+  view.k = Math.min(aw / (x1 - x0), ah / (y1 - y0)) * 0.95;
+  const mx = (x0 + x1) / 2, my = (y0 + y1) / 2;
+  view.cx = mx - ((ins.l - ins.r) / 2) / view.k; view.cy = my - ((ins.t - ins.b) / 2) / view.k;
+}
+const toScreen = (x, y) => [(x - view.cx) * view.k + W / 2, (y - view.cy) * view.k + H / 2];
+const toWorld = (sx, sy) => [(sx - W / 2) / view.k + view.cx, (sy - H / 2) / view.k + view.cy];
+function zoomAt(f, sx, sy) {
+  const [wx, wy] = toWorld(sx, sy);
+  view.k = Math.max(0.0025, Math.min(1.2, view.k * f));
+  view.cx = wx - (sx - W / 2) / view.k; view.cy = wy - (sy - H / 2) / view.k;
+}
+
+// ---------------------------------------------------------------- drawing
+// ---- the base picture: water, track, lanes, stations and their names. Nothing in it moves, so it is drawn into an offscreen canvas, a little
+// larger than the screen, and redrawn only when it has to be: when the view has stopped moving, when it has moved past the spare margin, or
+// when the theme, the size or the selected station changes. Every frame copies it (shifted or scaled while the map is being dragged, zoomed
+// or is following a train) and draws the trains on top. This is what keeps the page smooth as more lines are added.
+const baseCv = document.createElement('canvas'); let base = null, lastView = '', viewMovedAt = 0;
+const baseMargin = () => (W <= 760 ? 120 : 220);
+function renderBase() {
+  const M = baseMargin(), w = W + 2 * M, h = H + 2 * M, k = view.k;
+  baseCv.width = Math.round(w * DPR); baseCv.height = Math.round(h * DPR);
+  const g = baseCv.getContext('2d'); g.setTransform(DPR, 0, 0, DPR, 0, 0);
+  g.fillStyle = colors.paper; g.fillRect(0, 0, w, h);
+  const box = [view.cx - w / 2 / k, view.cy - h / 2 / k, view.cx + w / 2 / k, view.cy + h / 2 / k];
+  g.save();
+  g.translate(w / 2, h / 2); g.scale(k, k); g.translate(-view.cx, -view.cy);
+  g.fillStyle = colors.water;
+  for (const q of WATER_PATHS) if (q.x1 >= box[0] && q.x0 <= box[2] && q.y1 >= box[1] && q.y0 <= box[3]) g.fill(q.path, 'evenodd');
+  g.lineCap = 'round'; g.lineJoin = 'round';
+  g.strokeStyle = colors.context; g.lineWidth = 1 / k; g.stroke(PATH_STREET);
+  g.lineWidth = 1.6 / k; g.stroke(PATH_INTER);
+  g.strokeStyle = colors.siding; g.lineWidth = 1.1 / k; g.stroke(PATH_SIDING);
+  g.setLineDash([1 / k, 5 / k]); g.strokeStyle = colors['ink-soft']; g.lineWidth = 1.6 / k; for (const L of LANES) strokePieces(g, L, k, box); g.setLineDash([]);   // steamer lanes: dotted
+  g.strokeStyle = colors.ink; g.lineWidth = 2.4 / k; PATH_LINES.forEach(p => g.stroke(p));
+  g.lineWidth = 3 / k; g.stroke(PATH_ROUTE);
+  // main line railways: owner-coloured line with a half-width white dash on top
+  g.lineCap = 'butt';
+  for (const T of TRACK) for (const r of T.runs) {
+    if (!r.lods) continue;
+    if (r.est) { g.setLineDash([7 / k, 7 / k]); g.strokeStyle = colors[r.owner]; g.lineWidth = 2.2 / k; strokePieces(g, r.lods, k, box); continue; }   // no track to follow: a straight line from station to station, drawn broken
+    g.setLineDash([]); g.strokeStyle = colors[r.owner]; g.lineWidth = 3.2 / k; strokePieces(g, r.lods, k, box);
+    g.setLineDash([6 / k, 6 / k]); g.strokeStyle = colors.dash; g.lineWidth = 1.6 / k; strokePieces(g, r.lods, k, box);
+  }
+  g.setLineDash([]); g.lineCap = 'round';
+  g.restore();
+
+  // stations
+  const labels = [];
+  const zoomedIn = k > 0.028, selI = S.sel?.kind === 'station' ? S.sel.i : -1;
+  for (const s of ST) {
+    let [x, y] = toScreen(s.x, s.y); x += M; y += M;
+    if (x < -40 || y < -40 || x > w + 40 || y > h + 40) continue;
+    const r = s.principal ? 4.2 : 2.6;
+    if (LINE_OF[s.line]?.water) { const hh = s.principal ? 5.2 : 3.8; g.beginPath(); g.moveTo(x, y - hh); g.lineTo(x + hh, y); g.lineTo(x, y + hh); g.lineTo(x - hh, y); g.closePath(); g.strokeStyle = colors.tie; }
+    else if (LINE_OF[s.line]?.mainline) { const hh = s.principal ? 4.5 : 3.2; g.beginPath(); g.rect(x - hh, y - hh, 2 * hh, 2 * hh); g.strokeStyle = colors.tie; }
+    else { g.beginPath(); g.arc(x, y, r, 0, Math.PI * 2); g.strokeStyle = s.line ? colors[LINE_COLOR[s.line]] : colors.ink; }
+    g.fillStyle = colors.paper; g.fill(); g.lineWidth = s.principal ? 2 : 1.4; g.stroke();
+    if (s.principal || zoomedIn || selI === s.i) labels.push({ s, x, y });
+  }
+  labels.sort((a, b) => (b.s.principal - a.s.principal));
+  const placed = [], placedNames = {};
+  for (const L of labels) {
+    g.font = L.s.principal ? `700 ${zoomedIn ? 13 : 12}px ${getFont('display')}` : `400 12px ${getFont('display')}`;
+    const txt = L.s.name, tw = g.measureText(txt).width, th = 14;
+    if ((placedNames[txt] || []).some(([px, py]) => Math.hypot(px - L.x, py - L.y) < 90)) continue;   // same name already labelled close by
+    const cands = [[L.x + 8, L.y - 6], [L.x + 8, L.y + 12], [L.x - 8 - tw, L.y - 6], [L.x - 8 - tw, L.y + 12]];
+    for (const [tx, ty] of cands) {
+      const bx = [tx - 2, ty - th + 2, tw + 4, th + 2];
+      if (placed.some(b => b[0] < bx[0] + bx[2] && bx[0] < b[0] + b[2] && b[1] < bx[1] + bx[3] && bx[1] < b[1] + b[3])) continue;
+      placed.push(bx); (placedNames[txt] ||= []).push([L.x, L.y]);
+      g.lineWidth = 3; g.strokeStyle = colors.paper; g.lineJoin = 'round'; g.strokeText(txt, tx, ty);
+      g.fillStyle = L.s.principal ? colors.ink : colors['ink-soft']; g.fillText(txt, tx, ty);
+      break;
+    }
+  }
+  base = { cx: view.cx, cy: view.cy, k, M, key: baseKey() };
+}
+const baseKey = () => [W, H, DPR, baseRev, S.sel?.kind === 'station' ? S.sel.i : -1].join('|');
+function drawBase(now) {
+  const vk = view.cx + '|' + view.cy + '|' + view.k;
+  if (vk !== lastView) { lastView = vk; viewMovedAt = now; }
+  const same = base && base.cx === view.cx && base.cy === view.cy && base.k === view.k;
+  let redo = !base || base.key !== baseKey();
+  if (!redo && !same) {
+    // the view has moved since the base was drawn: reuse it while it still covers the screen and the map is still moving
+    const hw = (W / 2 + base.M) / base.k, hh = (H / 2 + base.M) / base.k, s = view.k / base.k;
+    const covers = Math.abs(view.cx - base.cx) + W / 2 / view.k <= hw && Math.abs(view.cy - base.cy) + H / 2 / view.k <= hh;
+    const settled = now - viewMovedAt > 140, drifted = s === 1 && Math.max(Math.abs(view.cx - base.cx), Math.abs(view.cy - base.cy)) * view.k > base.M * 0.6;
+    redo = !covers || s < 0.55 || s > 1.9 || settled || drifted;
+  }
+  if (redo) renderBase();
+  const s = view.k / base.k, w = (W + 2 * base.M) * s, h = (H + 2 * base.M) * s;
+  const x0 = (base.cx - (W / 2 + base.M) / base.k - view.cx) * view.k + W / 2, y0 = (base.cy - (H / 2 + base.M) / base.k - view.cy) * view.k + H / 2;
+  if (s === 1) ctx.drawImage(baseCv, Math.round(x0 * DPR) / DPR, Math.round(y0 * DPR) / DPR, w, h); else ctx.drawImage(baseCv, x0, y0, w, h);
+}
+// ---- a selected train's route, as TRAVIC does (Brendan, 4 October): the line from its first stop to its last, in its colour, dimmer for the part
+// already covered and brighter for the part to come, with its stops picked out. Built once per selection (one piece per run between stops, in the
+// direction of travel, so a boat or train that doubles back is right), drawn each frame.
+let routeSel = null;
+function trainColor(t) { return t.water ? colors[BOAT_COLOR[t.livery] || 'cp'] : colors[t.mainline ? (t.livery || KIND_COLOR[t.kind]) : KIND_COLOR[t.kind]]; }
+function chainOf(t) {                            // a through train in pieces (Brendan, 16 October): all its pieces, first to last
+  const base = id => TRIPS.find(x => x.id === id), out = [t];
+  for (let p = base(t.prev); p && out.length < 9; p = base(p.prev)) out.unshift(p);
+  for (let n = base(t.next); n && out.length < 9; n = base(n.next)) out.push(n);
+  return out;
+}
+function selRoute(t) {
+  if (routeSel?.t === t) return routeSel;
+  const ch = chainOf(t), legs = [], stops = [], sh = new Map([[t, 0]]);   // each piece's day, relative to the selected one
+  for (let i = ch.indexOf(t) + 1; i < ch.length; i++) { const a = ch[i - 1], b = ch[i]; sh.set(b, sh.get(a) + Math.max(0, Math.ceil((a.end - b.start - 7200) / 86400)) * 86400); }
+  for (let i = ch.indexOf(t) - 1; i >= 0; i--) { const a = ch[i], b = ch[i + 1]; sh.set(a, sh.get(b) - Math.max(0, Math.ceil((a.end - b.start - 7200) / 86400)) * 86400); }
+  for (const p of ch) { const r = selRoute1(p), k = sh.get(p); for (const l of r.legs) l.k = k; legs.push(...r.legs); stops.push(...r.stops); }
+  return routeSel = { t, legs, stops: [...new Set(stops)] };
+}
+function selRoute1(t) {
+  const P_ = ROUTES[t.rk].pts, legs = [];
+  const at = d => { let lo = 0, hi = P_.length - 1; while (lo < hi) { const m = (lo + hi) >> 1; if (P_[m].d < d) lo = m + 1; else hi = m; } return lo; };
+  for (const e of t.ev) if (e.type === 'run' && e.d1 !== e.d0) {
+    const a = Math.min(e.d0, e.d1), b = Math.max(e.d0, e.d1), pa = along(a, t.rk), pb = along(b, t.rk);
+    let pts = [pa]; for (let i = at(a); i < P_.length && P_[i].d < b; i++) if (P_[i].d > a) pts.push(P_[i]); pts.push(pb);
+    pts = pts.map(q => ({ x: q.x, y: q.y, d: q.d ?? 0 }));
+    pts[0].d = a; pts[pts.length - 1].d = b;
+    if (e.d1 < e.d0) pts.reverse();
+    legs.push({ e, pts, k: 0 });
+  }
+  return { legs, stops: t.stops.map(r => r[0]) };
+}
+function strokeRun(pts, from, to, cut) {          // pts in travel order; from/to: the part of the leg to draw, by distance from its start (cut: d value at the split)
+  ctx.beginPath(); let px = null, py = null, first = true;
+  const up = pts[0].d <= pts[pts.length - 1].d;
+  for (let i = 0; i < pts.length; i++) {
+    let q = pts[i];
+    const pass = up ? q.d : -q.d, lim = up ? cut : -cut;
+    if (from === 'after' && pass < lim) continue;
+    if (from === 'after' && first && i > 0) { const p = pts[i - 1], f = (cut - p.d) / ((q.d - p.d) || 1); const [x, y] = toScreen(p.x + (q.x - p.x) * f, p.y + (q.y - p.y) * f); ctx.moveTo(x, y); first = false; px = x; py = y; }
+    if (to === 'before' && pass > lim) { const p = pts[i - 1]; if (p) { const f = (cut - p.d) / ((q.d - p.d) || 1); const [x, y] = toScreen(p.x + (q.x - p.x) * f, p.y + (q.y - p.y) * f); ctx.lineTo(x, y); } break; }
+    const [x, y] = toScreen(q.x, q.y);
+    if (first) { ctx.moveTo(x, y); first = false; px = x; py = y; continue; }
+    if (Math.abs(x - px) + Math.abs(y - py) < 1.5 && i < pts.length - 1) continue;
+    ctx.lineTo(x, y); px = x; py = y;
+  }
+  ctx.stroke();
+}
+function drawSelRoute(T0) {
+  if (S.sel?.kind !== 'train') { routeSel = null; return; }
+  const t = TRIPS.find(x => x.id === S.sel.id); if (!t) return;
+  const R_ = selRoute(t), col = trainColor(t);
+  ctx.save(); ctx.lineCap = 'round'; ctx.lineJoin = 'round'; ctx.strokeStyle = col; ctx.lineWidth = 6;
+  for (const { e, pts, k } of R_.legs) {
+    const T = T0 - k;
+    if (T >= e.t1) { ctx.globalAlpha = 0.28; strokeRun(pts); }
+    else if (T <= e.t0) { ctx.globalAlpha = 0.8; strokeRun(pts); }
+    else { const d = ease(e, T); ctx.globalAlpha = 0.28; strokeRun(pts, null, 'before', d); ctx.globalAlpha = 0.8; strokeRun(pts, 'after', null, d); }
+  }
+  ctx.globalAlpha = 1; ctx.lineWidth = 2;
+  for (const i of R_.stops) { const s = ST[i], [x, y] = toScreen(s.x, s.y); ctx.beginPath(); ctx.arc(x, y, 5, 0, Math.PI * 2); ctx.fillStyle = colors.paper; ctx.fill(); ctx.strokeStyle = col; ctx.stroke(); }
+  ctx.restore();
+}
+let trainHits = [];
+function draw(states, now = performance.now()) {
+  ctx.setTransform(DPR, 0, 0, DPR, 0, 0);
+  drawBase(now);
+  const k = view.k;
+  if (S.sel?.kind === 'station') { const s = ST[S.sel.i], [x, y] = toScreen(s.x, s.y); ctx.beginPath(); ctx.arc(x, y, 9, 0, Math.PI * 2); ctx.strokeStyle = colors.ink; ctx.lineWidth = 1.5; ctx.stroke(); }
+  drawSelRoute(S.T);
+
+  // trains
+  trainHits = [];
+  states = [...states].sort((a, b) => (b.t.local ? 1 : 0) - (a.t.local ? 1 : 0));
+  const baseLen = Math.max(20, Math.min(34, 20 + (k - 0.01) * 300));
+  for (const { t, st } of states) {
+    if (t.water) { drawBoat(t, st); continue; }
+    if (t.mainline) { drawConsist(t, st); continue; }
+    let [x, y] = toScreen(st.x, st.y);
+    let ang = st.ang;
+    // Central Park, Burnaby Lake and Lulu Island cars are single cars; a Chilliwack train is drawn as two cars coupled, each no bigger than a local car
+    const twin = !t.local;
+    const len = twin ? Math.max(11, baseLen * 0.5) : Math.max(14, baseLen * 0.62), wid = 8, gap = 1.5;
+    const dbl = (t.rk === 'main' && st.d < NW_CHAIN - 5) || (LINE_OF[t.rk]?.doubleTo && st.d < LINE_OF[t.rk].doubleTo - 5);   // double track: keep to the right
+    const meeting = !st.moving && st.e?.meet;                                                                                // in the passing siding, to the right of travel
+    const dirSign = t.dir === 0 ? 1 : -1, side = (dbl ? (view.k > 0.02 ? 5 : 3.5) : 0) + (meeting ? 9 : 0);
+    const shift = a => [-Math.sin(a) * side * dirSign, Math.cos(a) * side * dirSign];
+    { const [ox, oy] = shift(ang); x += ox; y += oy; }
+    const col = colors[KIND_COLOR[t.kind]];
+    const selected = S.sel?.kind === 'train' && S.sel.id === t.id;
+    const RLEN = ROUTES[t.rk].len, half = (len + gap) / 2 / view.k;                 // half a car pitch, in metres along the track
+    const mid = twin ? Math.max(half, Math.min(RLEN - half, st.d)) : st.d;
+    for (const c of (twin ? [-1, 1] : [0])) {                                        // rear car first, leading car on top
+      let cx = x, cy = y, ca = ang;
+      if (twin) { const p = along(mid + c * dirSign * half, t.rk), [px, py] = toScreen(p.x, p.y), [ox, oy] = shift(p.ang); cx = px + ox; cy = py + oy; ca = p.ang; }
+      ctx.save(); ctx.translate(cx, cy); ctx.rotate(ca);
+      if (selected) { roundRect(-len / 2 - 3, -wid / 2 - 3, len + 6, wid + 6, (wid + 6) / 2); ctx.strokeStyle = col; ctx.lineWidth = 2; ctx.stroke(); }
+      roundRect(-len / 2, -wid / 2, len, wid, twin ? 3 : wid / 2);
+      ctx.fillStyle = col; ctx.fill(); ctx.lineWidth = 1.5; ctx.strokeStyle = colors.paper; ctx.stroke();
+      if (c >= 0) { ctx.beginPath(); ctx.arc(dirSign * (len / 2 - 3.5), 0, 1.8, 0, Math.PI * 2); ctx.fillStyle = colors.paper; ctx.fill(); }   // direction nose, leading car
+      ctx.restore();
+    }
+    // number label, kept upright
+    if (t.short) {
+    ctx.font = `700 11px ${getFont('ui')}`; ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
+    ctx.lineWidth = 3; ctx.strokeStyle = colors.paper;
+    const lx = x + Math.sin(ang) * 15 * (meeting ? (t.dir === 0 ? -1 : 1) : 1), ly = y - Math.abs(Math.cos(ang)) * 15 - 2;
+    ctx.strokeText(t.short, lx, ly); ctx.fillStyle = col; ctx.fillText(t.short, lx, ly);
+    ctx.textAlign = 'start'; ctx.textBaseline = 'alphabetic';
+    }
+    if (!st.moving && st.e?.meet) {
+      ctx.beginPath(); ctx.arc(x, y, (twin ? len + gap / 2 : len / 2) + 6 + 2 * Math.sin(performance.now() / 300), 0, Math.PI * 2);
+      ctx.strokeStyle = colors.hold; ctx.globalAlpha = .45; ctx.lineWidth = 1.5; ctx.stroke(); ctx.globalAlpha = 1;
+    }
+    trainHits.push({ t, x, y });
+  }
+}
+function drawBoat(t, st) {
+  // a small hull pointing the way it is going: dark hull, white upperworks, funnel in the line's colour
+  const [x, y] = toScreen(st.x, st.y), ang = st.ang + (t.dir === 0 ? 0 : Math.PI);
+  const len = Math.max(18, Math.min(26, 18 + (view.k - 0.01) * 200)), wid = 8, col = colors[BOAT_COLOR[t.livery] || 'cp'];
+  const selected = S.sel?.kind === 'train' && S.sel.id === t.id;
+  ctx.save(); ctx.translate(x, y); ctx.rotate(ang);
+  const hull = () => { ctx.beginPath(); ctx.moveTo(len / 2, 0); ctx.quadraticCurveTo(len / 4, -wid / 2, -len / 2 + 2, -wid / 2); ctx.lineTo(-len / 2, -wid / 2 + 2); ctx.lineTo(-len / 2, wid / 2 - 2);
+                       ctx.lineTo(-len / 2 + 2, wid / 2); ctx.quadraticCurveTo(len / 4, wid / 2, len / 2, 0); ctx.closePath(); };
+  hull(); ctx.fillStyle = colors.loco; ctx.fill(); ctx.lineWidth = selected ? 2 : 1.5; ctx.strokeStyle = selected ? col : colors.paper; ctx.stroke();
+  roundRect(-len / 2 + 3, -wid / 2 + 2.2, len * 0.55, wid - 4.4, 1); ctx.fillStyle = colors.paper; ctx.fill();
+  ctx.beginPath(); ctx.arc(-len / 2 + 3 + len * 0.3, 0, 1.6, 0, Math.PI * 2); ctx.fillStyle = colors[(t.livery || 'cpss') + '-funnel'] || col; ctx.fill();
+  ctx.restore();
+  if (t.short) {
+    ctx.font = `700 11px ${getFont('ui')}`; ctx.textAlign = 'center'; ctx.textBaseline = 'middle'; ctx.lineWidth = 3; ctx.strokeStyle = colors.paper;
+    const lx = x + Math.sin(st.ang) * 14, ly = y - Math.abs(Math.cos(st.ang)) * 14 - 2;
+    ctx.strokeText(t.short, lx, ly); ctx.fillStyle = col; ctx.fillText(t.short, lx, ly); ctx.textAlign = 'start'; ctx.textBaseline = 'alphabetic';
+  }
+  trainHits.push({ t, x, y });
+}
+function drawConsist(t, st) {
+  // locomotive + cars laid along the track behind the head; true-ish length when zoomed in, readable when zoomed out
+  const k = view.k, RR = ROUTES[t.rk];
+  const seg = Math.max(24, 6 / k), back = t.dir === 0 ? -1 : 1;
+  // locals shorter than the named trains; keep the whole train under ~48 px when zoomed far out
+  const n = Math.max(2, Math.min(/local|mixed/i.test(t.label || '') ? 4 : 7, Math.floor(48 / (seg * k)) - 1));
+  const col = colors[t.livery || KIND_COLOR[t.kind]];             // a line may carry its own livery (the Spokane International)
+  const selected = S.sel?.kind === 'train' && S.sel.id === t.id;
+  for (let i = n; i >= 0; i--) {
+    const c = st.d + back * (i + 0.5) * seg;
+    if (c < 0 || c > RR.len) continue;
+    const p = along(c, t.rk), [x, y] = toScreen(p.x, p.y);
+    ctx.save(); ctx.translate(x, y); ctx.rotate(p.ang);
+    const L = seg * k * 0.86, Wd = i === 0 ? 8 : 7;
+    roundRect(-L / 2, -Wd / 2, L, Wd, 2);
+    const mixed = /mixed/i.test(t.label || '');
+    ctx.fillStyle = i === 0 ? colors.loco : (mixed && i < n) ? colors.freight : col; ctx.fill();
+    ctx.lineWidth = selected ? 2 : 1; ctx.strokeStyle = selected ? col : colors.paper; ctx.stroke();
+    if (t.livery && i > 0 && L > 5) { ctx.fillStyle = colors[t.livery + '-gold']; ctx.fillRect(-L / 2 + 1.5, -1, L - 3, 2); }   // the band along the cars
+    ctx.restore();
+  }
+  const [hx, hy] = toScreen(st.x, st.y);
+  ctx.font = `700 11px ${getFont('ui')}`; ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
+  ctx.lineWidth = 3; ctx.strokeStyle = colors.paper;
+  const lx = hx + Math.sin(st.ang) * 14, ly = hy - Math.abs(Math.cos(st.ang)) * 14 - 2;
+  ctx.strokeText(t.short, lx, ly); ctx.fillStyle = col; ctx.fillText(t.short, lx, ly);
+  ctx.textAlign = 'start'; ctx.textBaseline = 'alphabetic';
+  trainHits.push({ t, x: hx, y: hy });
+}
+function roundRect(x, y, w, h, r) { ctx.beginPath(); ctx.moveTo(x + r, y); ctx.arcTo(x + w, y, x + w, y + h, r); ctx.arcTo(x + w, y + h, x, y + h, r); ctx.arcTo(x, y + h, x, y, r); ctx.arcTo(x, y, x + w, y, r); ctx.closePath(); }
+const fontCache = {};
+function getFont(role) { return fontCache[role] ||= getComputedStyle(document.documentElement).getPropertyValue(role === 'ui' ? '--ui' : '--display').trim(); }
+
+// ---------------------------------------------------------------- panel
+const head = document.getElementById('panelHead'), body = document.getElementById('panelBody');
+let panelKey = '';
+function nextStop(t, st) {
+  if (!st.moving) return null;
+  if (!t.local) return (st.e?.k != null && t.stops[st.e.k]) || t.stops.find(r => r[0] === st.to);
+  return t.stops.find(r => t.dir === 0 ? ST[r[0]].chains[t.rk] > st.d + 5 : ST[r[0]].chains[t.rk] < st.d - 5);
+}
+function statusLine(t, st, T) {
+  if (!st.moving) {
+    const s = ST[st.at];
+    if (st.e?.meet) return `<span class="chip">M</span>In the siding at ${esc(s.name)}, meeting ${esc(st.e.meet.name)}`;
+    if (st.e?.hold && st.e.t1 - st.e.t0 >= 120) { const nxt = (st.e?.k != null && !t.local && t.stops[st.e.k]) || t.stops.find(r => r[0] === st.at); return `<span class="chip">${t.mainline ? 'Standing' : 'Held'}</span>At ${esc(s.name)} until ${tspan(nxt ? nxt[2] : st.e.t1)}`; }
+    return `At ${esc(s.name)}`;
+  }
+  const next = nextStop(t, st);
+  return next ? `Next ${esc(ST[next[0]].name)} ${tspan(next[1])}` : `Arriving ${esc(t.dest.name)}`;
+}
+function renderList(states, T) {
+  const key = 'list|' + S.day + '|' + Math.floor(T / 60) + '|' + states.map(x => x.t.id + (x.st.moving ? (nextStop(x.t, x.st)?.[0] ?? x.st.to) : 'a' + x.st.at)).join(',');
+  if (key === panelKey) return; panelKey = key;
+  head.innerHTML = `<h2>On the line</h2><span class="eyebrow">${states.length} moving</span>`;
+  let h = '';
+  const row = ({ t, st }) => `<button class="trow" data-train="${t.id}"><span class="badge ${t.kind}${t.livery ? ' ' + t.livery : ''}">${esc(t.name)}</span>
+      <span class="dest">${t.mainline ? esc(t.label) + ' to ' + esc(toName(t)) : 'To ' + esc(t.dest.name)}</span>
+      <span class="status">${statusLine(t, st, T)}</span></button>`;
+  const main = states.filter(x => !x.t.local && !x.t.mainline);
+  h += `<div class="section-label">Chilliwack line</div>`;
+  if (!main.length) h += `<div class="empty">No Chilliwack trains running now.</div>`;
+  h += main.map(row).join('');
+  for (const kd of ['c', 'b', 'l', 'n', 'g', 'q', 'p', 'i', 'r', 'y', 'a', 'o', 'd', 'u', 'm', 'k', 'v']) {
+    const xs = states.filter(x => x.t.kind === kd);
+    if ('yaodumk'.includes(kd) && !xs.length) continue;    // a railway of a few trains: no heading when nothing is running
+    const unit = kd === 'v' ? ['boat', 'boats'] : 'gpqiryaodumk'.includes(kd) ? ['train', 'trains'] : ['car', 'cars'];
+    h += `<div class="section-label">${KIND_LABEL[kd]} · ${xs.length} ${xs.length === 1 ? unit[0] : unit[1]}</div>`;
+    if (!xs.length) h += `<div class="empty">No ${unit[1]} running now.</div>`;
+    h += xs.map(row).join('');
+  }
+  const upcoming = activeTrips(S.day).filter(t => !t.local && t.start > T).sort((a, b) => a.start - b.start).slice(0, 4);
+  h += `<div class="section-label">Next departures</div>`;
+  if (!upcoming.length) h += `<div class="empty">No more departures today.</div>`;
+  for (const t of upcoming) h += `<button class="trow" data-train="${t.id}"><span class="badge ${t.kind}${t.livery ? ' ' + t.livery : ''}">${esc(t.name)}</span>
+      <span class="dest">${esc(fromName(t))} to ${esc(toName(t))}</span>
+      <span class="status">Leaves ${tspan(t.start)}${t.label ? ' · ' + esc(t.label) : ''}</span></button>`;
+  const nextCar = dir => activeTrips(S.day).filter(t => t.kind === 'c' && t.dir === dir && t.start > T).sort((a, b) => a.start - b.start)[0];
+  const cv0 = nextCar(0), cv1 = nextCar(1);
+  if (cv0 || cv1) h += `<div class="meta">Next Central Park cars: ${cv0 ? 'from Vancouver ' + tspan(cv0.start) : ''}${cv0 && cv1 ? ', ' : ''}${cv1 ? 'from New Westminster ' + tspan(cv1.start) : ''}.</div>`;
+  body.innerHTML = h;
+}
+function renderTrain(t, st, T) {
+  const key = 'train|' + t.id + '|' + Math.floor(T / 60) + '|' + (st ? (st.moving ? (nextStop(t, st)?.[0] ?? st.to) : 'a' + st.at) : 'off') + '|' + S.follow;
+  if (key === panelKey) return; panelKey = key;
+  head.innerHTML = `<button class="back" data-back>‹ All</button><h2>${esc(t.name)}</h2>
+    <button class="iconbtn" data-follow aria-pressed="${S.follow}">Follow</button>`;
+  const days = { DAILY: 'Daily', FRI: 'Fridays only', SAT: 'Saturdays only', CP_WKDY: 'Weekdays', CP_SAT: 'Saturdays', CP_SUN: 'Sundays', BL_WKDY: 'Daily except Sundays', BL_SUN: 'Sundays', GN_DAILY: 'Daily', CN_DAILY: 'Daily', CP_DAILY: 'Daily', CP_XSUN: 'Daily except Sunday', NAR_XSUN: 'Daily except Sunday', CN_SUTT: 'Sundays, Tuesdays and Thursdays', CN_WS: 'Wednesdays and Saturdays', CN_TF: 'Tuesdays and Fridays', EN_XSUN: 'Daily except Sunday', CN_XSUN: 'Daily except Sunday', CN_MWF: 'Mondays, Wednesdays and Fridays', CP_MON1: 'Mondays', CP_WED1: 'Wednesdays', CP_SAT1: 'Saturdays', CP_SUN1: 'Sundays', CP_TTH: 'Tuesdays and Thursdays', CP_WF: 'Wednesdays and Fridays', CP_TF: 'Tuesdays and Fridays', CP_WS: 'Wednesdays and Saturdays', CN_TTS: 'Tuesdays, Thursdays and Saturdays', PGE_MWF: 'Mondays, Wednesdays and Fridays', PGE_WFS: 'Wednesdays, Fridays and Sundays', PGE_TTS: 'Tuesdays, Thursdays and Saturdays', CP_MTH: 'Mondays and Thursdays', CP_TUE1: 'Tuesdays', CP_THU1: 'Thursdays', CP_FRI1: 'Fridays', CP_XMON: 'Daily except Monday', WP_MTTFS: 'Mondays, Tuesdays, Thursdays, Fridays and Saturdays', WP_SW: 'Sundays and Wednesdays', LU_WKDY: 'Monday to Friday', LU_SAT: 'Saturdays', LU_SUN: 'Sundays', NM_WKDY: 'Monday to Friday', NM_SAT: 'Saturdays', NM_SUN: 'Sundays' }[t.svc] || weekdaysOf(t.svc);
+  let state = st ? statusLine(t, st, T) : (T < t.start ? `Leaves ${esc(t.origin.name)} at ${tspan(t.start)}` : `Arrived ${esc(t.dest.name)} at ${tspan(t.end)}`);
+  // a through train in pieces: the pieces before and after this one, shown with it as one train
+  const base = id => TRIPS.find(x => x.id === id);
+  const before = [], after = [];
+  for (let p = base(t.prev); p && before.length < 4; p = base(p.prev)) before.unshift(p);
+  for (let n = base(t.next); n && after.length < 4; n = base(n.next)) after.push(n);
+  const o0 = before[0] || t, o1 = after[after.length - 1] || t;
+  const onMap = (t.realFrom || t.realTo) ? `<br><span style="font-size:12px">On this map: ${esc(plain(o0, o0.origin.name))} – ${esc(plain(o1, o1.dest.name))}</span>` : '';
+  let h = `<div class="meta"><b>${esc(fromName(t))} to ${esc(toName(t))}</b> · ${t.d0 !== undefined ? 'Sails ' + WEEKDATE(t.d0) : days}${t.carry ? ' · left ' + CARRY[t.carry] : ''}${t.label ? ' · ' + esc(t.label) : ''}${onMap}<br>${state}</div>`;
+  h += `<table class="tt"><tbody>`;
+  const curIdx = st ? (st.moving ? t.stops.indexOf(nextStop(t, st)) : (st.e?.k != null && !t.local ? st.e.k : t.stops.findIndex(r => r[0] === st.at))) : (T < t.start ? 0 : t.stops.length);
+  // miles from the first station of the whole train: each piece by its own mileage, after the miles of the pieces before it
+  const pm = (p, s) => { const lm = x => x.miles?.[p.rk] ?? x.mile; return p.mainline ? Math.abs(lm(s) - lm(p.origin)) : p.local ? Math.abs(s.chains[p.rk] - p.origin.chains[p.rk]) / 1609.344 : p.dir === 0 ? s.mile : 76.3 - s.mile; };
+  const off = new Map(); { let acc = 0; for (const p of [...before, t, ...after]) { off.set(p, acc); acc += pm(p, p.dest); } }
+  const fm = (p, s) => (Math.floor((off.get(p) + pm(p, s)) * 10 + 1e-6) / 10).toFixed(1);
+  const chained = before.length || after.length;
+  const linkRow = (r, past, p) => { const s = ST[r[0]]; return `<tr class="${past ? 'past ' : ''}clickable" data-station="${s.i}"><td class="mile">${p.mainline ? fm(p, s) : ''}</td><td class="name">${esc(s.name)}${r[3] === 0 ? ' <span style="color:var(--muted);font-size:11px">(est.)</span>' : ''}</td><td class="t">${tspan(r[1])}</td><td class="m"></td></tr>`; };
+  for (const p of before) p.stops.slice(0, -1).forEach(r => { h += linkRow(r, true, p); });       // the pieces before this one (already run)
+  t.stops.forEach((r, k) => {
+    const s = ST[r[0]];
+    const cls = [k < curIdx ? 'past' : '', k === curIdx && st ? 'now' : '', 'clickable'].join(' ');
+    const lm = x => x.miles?.[t.rk] ?? x.mile;
+    const mile = t.mainline ? (Math.floor(Math.abs(lm(s) - lm(t.origin)) * 10 + 1e-6) / 10).toFixed(1) : t.local ? (Math.abs(s.chains[t.rk] - t.origin.chains[t.rk]) / 1609.344).toFixed(1) : t.dir === 0 ? s.mile : +(76.3 - s.mile).toFixed(1);
+    h += `<tr class="${cls}" data-station="${s.i}"><td class="mile">${chained && t.mainline ? fm(t, s) : !t.water && s.mile < 1 && t.dir === 0 ? 0 : mile}</td><td class="name">${esc(s.name)}${r[3] === 0 ? ' <span style="color:var(--muted);font-size:11px">(est.)</span>' : ''}</td><td class="t">${tspan(r[1])}</td><td class="m">${t.meets?.has(s.i) ? 'M' : ''}</td></tr>`;
+  });
+  for (const n of after) n.stops.slice(1).forEach(r => { h += linkRow(r, false, n); });            // and after it
+  h += `</tbody></table>`;
+  if (t.kind === 'p' || t.kind === 'q') h += `<div class="meta">${t.src && t.kind === 'q' ? esc(t.src) : t.kind === 'p' ? 'Canadian Pacific timetable, 1948' : 'Canadian National timetable, 1949'}. ${esc(t.note || '')}${t.stops.some(r => r[3] === 0) ? ' Times marked est. are estimated where the train enters or leaves the map.' : ''}</div>`;
+  if (t.kind === 'a') h += `<div class="meta">${esc(t.src || 'Northern Alberta Railways')}. ${esc(t.note || '')}</div>`;
+  if ('odumk'.includes(t.kind)) h += `<div class="meta">${esc(t.src || t.railway)}. ${esc(t.note || '')}</div>`;
+  if (t.kind === 'y') h += `<div class="meta">White Pass &amp; Yukon Route summer schedule, from the Official Guide, May 1948. ${esc(t.note || '')}${t.stops.some(r => r[3] === 0) ? ' Times marked est. are estimated where the train enters or leaves the map.' : ''}</div>`;
+  if (t.kind === 'v') h += `<div class="meta">${esc(t.src || (t.railway + ' timetable, 1948'))}. ${esc(t.note || '')}${t.stops.some(r => r[3] === 0) ? ' Times marked est. are regular ports of call for which the table prints no time, spaced by distance. The course across the water is drawn, not surveyed.' : ''}</div>`;
+  if (t.kind === 'i') h += `<div class="meta">Esquimalt &amp; Nanaimo Railway (Canadian Pacific), Table 164, 1949. ${esc(t.note || '')}</div>`;
+  if (t.kind === 'r') h += `<div class="meta">Pacific Great Eastern Railway, March 1948 table (April 1948 Official Guide). ${esc(t.note || '')}</div>`;
+  if (t.kind === 'g') h += `<div class="meta">${t.src ? esc(t.src) + '. ' + esc(t.note || '') : 'Great Northern Table 90, summer 1947. Crosses the Fraser on the federal bridge, drawn as CN track.'}</div>`;
+  if (t.kind === 'l' || t.kind === 'n') h += `<div class="meta">Departures and running times from the Lulu Island Lines card corrected to September 16, 1947. ${t.kind === 'n' ? 'New Westminster cars are shown as a branch service connecting with Vancouver trains at Marpole. ' : ''}Times marked est. are flag stops spaced by distance.</div>`;
+  if (t.kind === 'b') h += `<div class="meta">Service and running times from the Burnaby Lake Line time table effective January 16, 1942. Cars ran only as far as Sapperton, with a bus on to New Westminster; cars marked Douglas Rd. turned back there. Times marked est. are flag stops spaced by distance.</div>`;
+  if (t.kind === 'c') h += `<div class="meta">Departures are from the 1949 timetable. Running times are from the Central Park Line timetable of March 16, 1942, which prints times at eight stations; times marked est. are flag stops spaced by distance.</div>`;
+  if (t.svc === 'SAT') h += `<div class="meta">The timetable gives times only at Vancouver, New Westminster and Mt. Lehman; times marked est. are spaced by distance.</div>`;
+  if ('ewscbln'.includes(t.kind)) h += `<div class="meta">The B.C. Electric timetables on this map come from several years (1942–1949), not all from 1948.</div>`;
+  body.innerHTML = h;
+}
+function renderStation(s, T) {
+  const key = 'st|' + s.i + '|' + S.day + '|' + Math.floor(T / 60);
+  if (key === panelKey) return; panelKey = key;
+  head.innerHTML = `<button class="back" data-back>‹ All</button><h2>${esc(s.name)}</h2>`;
+  let h = `<div class="meta"><b>${LINE_OF[s.line]?.water ? 'Steamer landing' : LINE_OF[s.line]?.mainline && s.line !== 'gn' ? LINE_OF[s.line].label + ' mile ' + s.mile : 'Mile ' + s.mile + ' from ' + (s.line === 'lulu' ? 'Davie Street' : s.line === 'nwm' ? 'Marpole' : 'Vancouver')}</b>${s.kml ? '<br>' + esc(s.kml.replace(/^Mile\s*[\d.]+\.?\s*/i, '')) : ''}${s.note ? '<br>' + esc(s.note.charAt(0).toUpperCase() + s.note.slice(1)) + '.' : ''}</div>`;
+  // a departure board (Brendan, 4 October): Departures, then Arrivals, each in time order. A train calling here is on both; one that starts here
+  // only on Departures, one that ends here only on Arrivals. Where it is going (or coming from) is its real end, beyond the map if it runs off it.
+  const calls = [];
+  for (const t of activeTrips(S.day)) t.stops.forEach((r, k) => { if (r[0] === s.i) calls.push({ t, r, k }); });
+  for (const [title, arr] of [['Departures', false], ['Arrivals', true]]) {
+    const all = calls.filter(({ t, k }) => arr ? k > 0 : k < t.stops.length - 1).map(x => ({ ...x, at: arr ? x.r[1] : x.r[2] }))
+      .filter(x => x.at >= 3 * 3600 && x.at < 27 * 3600).sort((a, b) => a.at - b.at);   // the calls of this day (3 a.m. to 3 a.m.): a train two days on the road is listed once
+    const locals = all.filter(x => x.t.local && x.at >= T - 60).slice(0, 8);
+    const rows = all.filter(x => !x.t.local || locals.includes(x));
+    h += `<div class="section-label">${title}</div>`;
+    if (!rows.length) { h += `<div class="empty">No ${arr ? 'arrivals' : 'departures'} here on ${DAYNAME[S.day]}.</div>`; continue; }
+    h += `<table class="tt"><tbody>`;
+    for (const { t, at } of rows) h += `<tr class="clickable ${at < T ? 'past' : ''}" data-train="${t.id}"><td class="mile${t.water ? ' ship' : ''}"><span class="badge ${t.kind}${t.livery ? ' ' + t.livery : ''}" style="min-width:0;height:18px;font-size:11px">${esc(t.short || KIND_BADGE[t.kind])}</span></td><td class="name">${esc(t.local ? KIND_LABEL[t.kind] + ' car' : t.mainline ? t.label : t.name)} ${arr ? 'from ' + esc(fromName(t)) : 'to ' + esc(toName(t))}</td><td class="t">${tspan(at)}</td><td class="m">${t.meets?.has(s.i) ? 'M' : ''}</td></tr>`;
+    h += `</tbody></table>`;
+  }
+  body.innerHTML = h;
+}
+document.querySelector('.panel').addEventListener('click', e => {
+  const b = e.target.closest('[data-back],[data-follow],[data-train],[data-station]');
+  if (!b) return;
+  if (b.hasAttribute('data-back')) { S.sel = null; S.follow = false; }
+  else if (b.hasAttribute('data-follow')) { S.follow = !S.follow; }
+  else if (b.dataset.train) { S.sel = { kind: 'train', id: b.dataset.train }; }
+  else if (b.dataset.station) { S.sel = { kind: 'station', i: +b.dataset.station }; S.follow = false; const s = ST[+b.dataset.station]; if (view.k < 0.03) { view.k = 0.035; } view.cx = s.x; view.cy = s.y; }
+  panelKey = '';
+});
+
+// ---------------------------------------------------------------- controls
+const playBtn = document.getElementById('play'), playIcon = document.getElementById('playIcon');
+const timeIn = document.getElementById('time'), daySel = document.getElementById('day');
+function syncControls() {
+  playIcon.innerHTML = S.playing ? '<rect x="3" y="2" width="3.5" height="12"/><rect x="9.5" y="2" width="3.5" height="12"/>' : '<path d="M4 2 L14 8 L4 14 Z"/>';
+  playBtn.setAttribute('aria-label', S.playing ? 'Pause' : 'Play');
+  document.querySelectorAll('[data-speed]').forEach(b => b.setAttribute('aria-pressed', +b.dataset.speed === S.speed));
+  daySel.value = S.day;
+}
+playBtn.onclick = () => { S.playing = !S.playing; syncControls(); };
+document.querySelectorAll('[data-speed]').forEach(b => b.onclick = () => { S.speed = +b.dataset.speed; syncControls(); });
+daySel.onchange = () => { S.day = daySel.value; panelKey = ''; };
+timeIn.oninput = () => { S.T = +timeIn.value; panelKey = ''; };
+document.getElementById('zin').onclick = () => zoomAt(1.5, W / 2, H / 2);
+document.getElementById('zout').onclick = () => zoomAt(1 / 1.5, W / 2, H / 2);
+const miniBtn = document.getElementById('mini'), appEl = document.querySelector('.app');
+function setMin(on, refit = true) {
+  S.min = on; appEl.classList.toggle('min', on);
+  miniBtn.setAttribute('aria-pressed', on); miniBtn.textContent = on ? 'Show boxes' : 'Hide boxes';
+  if (refit && !S.sel && !S.follow) fit(viewSel.value);
+  panelKey = '';
+}
+miniBtn.onclick = () => setMin(!S.min);
+document.querySelector('.masthead').addEventListener('click', () => { if (S.min) setMin(false); });
+document.getElementById('panelHead').addEventListener('click', e => { if (S.min && !e.target.closest('button')) setMin(false); });
+const viewSel = document.getElementById('view');
+viewSel.onchange = () => { S.follow = false; fit(viewSel.value); panelKey = ''; };
+document.addEventListener('keydown', e => {
+  if (e.target.closest('input,select')) return;
+  if (e.code === 'Space') { e.preventDefault(); S.playing = !S.playing; syncControls(); }
+});
+
+// pointer: pan, pinch, click
+const ptrs = new Map(); let drag = null, pinch = null, moved = 0;
+cv.addEventListener('pointerdown', e => {
+  cv.setPointerCapture(e.pointerId); ptrs.set(e.pointerId, [e.offsetX, e.offsetY]); moved = 0;
+  if (ptrs.size === 1) drag = { x: e.offsetX, y: e.offsetY, cx: view.cx, cy: view.cy };
+  if (ptrs.size === 2) { const [a, b] = [...ptrs.values()]; pinch = { d: Math.hypot(a[0] - b[0], a[1] - b[1]), k: view.k }; drag = null; }
+});
+cv.addEventListener('pointermove', e => {
+  if (!ptrs.has(e.pointerId)) { hoverCheck(e.offsetX, e.offsetY); return; }
+  ptrs.set(e.pointerId, [e.offsetX, e.offsetY]);
+  if (pinch && ptrs.size === 2) {
+    const [a, b] = [...ptrs.values()]; const d = Math.hypot(a[0] - b[0], a[1] - b[1]);
+    zoomAt((pinch.k * d / pinch.d) / view.k, (a[0] + b[0]) / 2, (a[1] + b[1]) / 2); moved = 99; return;
+  }
+  if (drag) {
+    const dx = e.offsetX - drag.x, dy = e.offsetY - drag.y; moved = Math.max(moved, Math.hypot(dx, dy));
+    if (moved > 4) { cv.classList.add('dragging'); S.follow = false; view.cx = drag.cx - dx / view.k; view.cy = drag.cy - dy / view.k; }
+  }
+});
+function endPtr(e) {
+  const wasClick = ptrs.size === 1 && moved <= 4 && drag;
+  ptrs.delete(e.pointerId); if (ptrs.size < 2) pinch = null; if (!ptrs.size) { drag = null; cv.classList.remove('dragging'); }
+  if (wasClick && e.type === 'pointerup') pick(e.offsetX, e.offsetY);
+}
+cv.addEventListener('pointerup', endPtr); cv.addEventListener('pointercancel', endPtr);
+cv.addEventListener('wheel', e => { e.preventDefault(); zoomAt(Math.exp(-e.deltaY * 0.0015), e.offsetX, e.offsetY); }, { passive: false });
+function hitTest(x, y) {
+  let best = null, bd = 16;
+  for (const h of trainHits) { const d = Math.hypot(h.x - x, h.y - y); if (d < bd) { bd = d; best = { kind: 'train', id: h.t.id }; } }
+  if (best) return best;
+  bd = 11;
+  for (const s of ST) { const [sx, sy] = toScreen(s.x, s.y); const d = Math.hypot(sx - x, sy - y); if (d < bd) { bd = d; best = { kind: 'station', i: s.i }; } }
+  return best;
+}
+function hoverCheck(x, y) { cv.classList.toggle('hover', !!hitTest(x, y)); }
+function pick(x, y) { const h = hitTest(x, y); S.sel = h; if (!h || h.kind !== 'train') S.follow = false; panelKey = ''; }
+
+// ---------------------------------------------------------------- loop
+const TMIN = 3 * 3600, TMAX = 27 * 3600;
+let last = performance.now(), dayShown = '', clockShown = '';
+function frame(now) {
+  const dt = Math.min(0.25, (now - last) / 1000); last = now;
+  if (S.playing) { S.T += dt * S.speed; if (S.T > TMAX) S.T = TMIN; }
+  const T = S.T;
+  const states = [];
+  for (const t of activeTrips(S.day)) { const st = tripState(t, T); if (st) states.push({ t, st }); }
+  states.sort((a, b) => a.t.dir - b.t.dir || a.t.start - b.t.start);
+
+  if (S.follow && S.sel?.kind === 'train') {
+    const f = states.find(x => x.t.id === S.sel.id);
+    if (f) { view.cx += (f.st.x - view.cx) * 0.12; view.cy += (f.st.y - view.cy) * 0.12; }
+  }
+  draw(states, now);
+
+  const c = hm(T), ck = c.txt + c.pm + S.day + (T >= 86400);
+  if (ck !== clockShown) {
+    clockShown = ck;
+    const te = document.getElementById('clockTime'), me = document.getElementById('clockMer');
+    te.textContent = c.txt; te.classList.toggle('pm', c.pm);
+    me.textContent = c.pm ? 'p.m.' : 'a.m.'; me.classList.toggle('pm', c.pm);
+    document.getElementById('clockDay').textContent = T >= 86400 ? DAYNAME[S.day] + ' night' : DAYNAME[S.day];
+  }
+  if (document.activeElement !== timeIn) timeIn.value = Math.round(T);
+
+  if (S.sel?.kind === 'train') {
+    let t = TRIPS.find(x => x.id === S.sel.id);
+    // a through train shown in two pieces (Saskatchewan and Alberta): once one piece has arrived, the selection goes on with the next
+    if (t?.next && T >= t.end) {
+      const nx = activeTrips(S.day).find(x => x.id.replace(/~+$/, '') === t.next && x.start <= T + 60 && x.end >= T);
+      if (nx) { S.sel = { kind: 'train', id: nx.id }; t = nx; panelKey = ''; }
+    }
+    if (!activeTrips(S.day).includes(t)) { S.sel = null; panelKey = ''; renderList(states, T); }
+    else renderTrain(t, states.find(x => x.t.id === t.id)?.st, T);
+  } else if (S.sel?.kind === 'station') renderStation(ST[S.sel.i], T);
+  else renderList(states, T);
+  requestAnimationFrame(frame);
+}
+
+function start(saved) {
+  boot(saved);
+  resize(); setMin(S.min ?? (W <= 760), false); fit();          // on a narrow screen the boxes start minimised
+  new ResizeObserver(() => { const k0 = view.k; resize(); if (!S.sel) fit(viewSel.value); }).observe(cv);
+  syncControls();
+  requestAnimationFrame(t => { last = t; frame(t); });
+  document.fonts?.ready?.then(() => { for (const k in fontCache) delete fontCache[k]; baseRev++; });
+}
+hot?.ready ? hot.ready(start) : start(hot?.data ?? {});
+</script>

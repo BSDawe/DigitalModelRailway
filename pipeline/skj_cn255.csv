@@ -1,0 +1,14 @@
+# Joined through train (cn255), sk_join.py: skcn190:M255, skcn192b:M255; up skcn192b:M256, skcn190:M256
+# Rows and times as in the section files (see them for the scans, signs and doubts). Miles: counted along the run from the first station.
+#train col=D num=255 dir=down days="Tue,Thu,Sat" kind=mixed note="Through train: No. 255 Russell - Yorkton; No. 255 Yorkton - Melville. Russell 8.00 a.m. marked b (Tue Thu Sat)."
+#train col=U num=256 dir=up days="Mon,Wed,Fri" kind=mixed note="Through train: No. 256 Melville - Yorkton; No. 256 Yorkton - Russell. Melville 6.30 a.m. marked a; continues Yorkton (lv 9.30 a.m.) - Russell, Table 190 (sk_cn_t190.csv)."
+mile,station,principal,prov,tz,D,U
+0.0,Russell,1,MB,C,lv 8.00a,ar 4.10p
+16.4,Shellmouth,0,MB,C,8.45a,3.05p
+23.9,Dropmore,0,MB,C,9.10a,2.25p
+32.8,MacNutt,0,SK,C,9.40a,1.50p
+40.9,Calder,0,SK,C,10.10a,1.15p
+48.5,Wroxton,1,SK,C,11.15a,12.40p
+76.1,Yorkton,1,SK,C,ar 12.50p / lv 3.00p,ar 7.50a / lv 9.30a
+86.5,Otthon,0,SK,C,3.30p,7.20a
+102.3,Melville,1,SK,C,ar 4.15p,lv 6.30a

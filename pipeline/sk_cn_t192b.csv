@@ -1,0 +1,63 @@
+# Canadian National, Table 192, Regina - Melville - Yorkton - Canora - Flin Flon: section B, Melville - Yorkton - Canora - Sturgis - Reserve - Hudson Bay Jn. -
+#   The Pas - Cranberry Portage - Flin Flon. Official Guide, April 25, 1948 (scan cn1948_sk/table192_regina_melville_canora_flinflon.png).
+# Times as printed: CENTRAL TIME ("Melville (C.T.)"; no other time-zone mark below it). Miles from Regina as printed (Melville 96.3); the Cranberry Portage -
+#   Flin Flon section is printed separately (Cranberry Portage 390.1, Athapap 405.0, Flin Flon 426.1) and entered here; Cranberry Portage - Sherridon is
+#   sk_cn_t192c.csv. Yorkton, Canora, Sturgis, The Pas and Hudson Bay Jn. are printed twice (ar./lv. lines) and entered as one row each.
+#   Saskatchewan to Hudson Bay Jn.; The Pas, Cranberry Portage, Flin Flon ("Flin Flon, Man.") in Manitoba (The Pas - Simonhouse rows MB by position).
+# Key to signs: the Table 193-201 page key (quoted in sk_cn_t192a.csv): a Mon Wed Fri; b Tue Thu Sat; + daily except Sunday; f flag stop; r Sunday, Tuesday and
+#   Thursday; u Friday only; z Wednesday, Friday and Sunday; # Thursday and Saturday; natural-sign Monday only; M mixed train.
+# Day signs at single stations, read as day changes: No. 61 Melville b5.45 p.m., Reserve b11.55 p.m., Hudson Bay Jn. z1.05 / z1.20 a.m., Cranberry Portage z6.50 a.m.
+#   (next day). No. 63 Canora a11.00 p.m., Sturgis a11.58 p.m., Reserve b1.40 a.m., Hudson Bay Jn. b2.40 / b3.20 a.m., Flin Flon branch b9.00 a.m.
+#   No. 64 Flin Flon a3.10 p.m., Sherridon a2.00 p.m., Cranberry Portage a4.50 p.m., Hudson Bay Jn. a11.50 p.m., Reserve b12.55 a.m., Canora b3.10 a.m.
+#   No. 62 Flin Flon r9.00 p.m., Cranberry Portage r10.38 p.m., The Pas a12.30 a.m., Hudson Bay Jn. a4.15 a.m.
+# Nos. 63 and 64: "From Winnipeg, see Table 168" / "To Winnipeg, see Table 168" (by Dauphin and Canora); 63 divides at Cranberry Portage for Flin Flon (here) and
+#   Sherridon (sk_cn_t192c.csv); 64 combines there.
+# Column heads read: "M249-M243" (M249 Yorkton - Canora, + daily except Sunday; M243 Canora - Sturgis, b): entered as two trains. "M256" Melville - Yorkton
+#   (continues Yorkton - Russell, Table 190); below it in the same column "M 270" Reserve b3.15 p.m. - Hudson Bay Jn. 4.35 p.m.; and in the Flin Flon section
+#   "M 357" (head printed in the Sherridon section above it). Up: "M260" Yorkton - Melville with "M252" below it (Hudson Bay Jn. - Canora) and "M 358" in the
+#   Flin Flon section; "M255" Yorkton - Melville (from Russell, Table 190) with "81" below it (Hudson Bay Jn. u7.10 a.m. - Reserve 8.20 a.m.; no M printed).
+# Column 31 at Hudson Bay Jn. reads "Noon": No. 31's Reserve time is 12.00 and "Noon" is its foot - it does not run to Hudson Bay Jn.
+# NOT ENTERED here: Nos. 31 (Melville - Reserve, on to Saskatoon) and 32 (Reserve - Melville), entered in sk_cn_t170.csv (Table 170 names their full run).
+#   Table 192 adds stations Table 170 does not print: No. 31 Otthon f7.45 a.m., Ebenezer 8.43 a.m.; No. 32 Ebenezer 9.37 p.m., Otthon f10.47 p.m.
+# No. 62 at Athapap: a blot covers the sign before 9.58 (probably f, as for every other train there).
+# M252 at Sturgis "12 00" (arr) is entered 12.00p (noon), between Reserve 8.25 a.m. and Sturgis lv 12.45 p.m.
+# ADDITIONAL TRAINS note (printed sideways in the table): "Leaves Reserve u9.25 p.m., arrives Hudson Bay Junction 10.35 p.m. Leaves Hudson Bay Junction
+#   natural-sign 8.00 a.m., arrives Reserve 9.20 a.m. Leaves Canora #3.20 p.m., arrives Yorkton 5.00 p.m." - entered as AddRH, AddHR, AddCY (no numbers printed).
+#train col=M249 num=249 dir=down days="ex Sun" kind=mixed note="Column M249-M243; Yorkton 7.05 a.m. and Canora ar 8.55 a.m. marked + (daily except Sunday)."
+#train col=M243 num=243 dir=down days="Tue,Thu,Sat" kind=mixed to="Kelvington" note="On to Kelvington (Table 182, Sturgis b1.40 p.m.). Column M249-M243; Canora 10.30 a.m. and Sturgis 11.50 a.m. marked b."
+#train col=M256 num=256 dir=down days="Mon,Wed,Fri" kind=mixed to="Russell" note="Melville 6.30 a.m. marked a; continues Yorkton (lv 9.30 a.m.) - Russell, Table 190 (sk_cn_t190.csv)."
+#train col=M165 num=165 dir=down days="Mon,Wed,Fri" kind=mixed from="Regina" to="Swan River" note="Column 65-M165: from Regina as No. 65 (sk_cn_t192a.csv); Melville 12.10 p.m. marked a; on from Sturgis 4.55 p.m. as No. 65 to Swan River (Table 182a)."
+#train col=No61 num=61 dir=down days="Tue,Thu,Sat" kind=passenger from="Regina" note="From Regina (sk_cn_t192a.csv) and Winnipeg (sk_cn_t192d.csv); Melville 5.45 p.m. marked b; Hudson Bay Jn. and Cranberry Portage marked z (Wed Fri Sun, next morning)."
+#train col=No63 num=63 dir=down days="Mon,Wed,Fri" kind=passenger from="Winnipeg" note="From Winnipeg by Dauphin (see Table 168); Canora 11.00 p.m. marked a; Reserve and Hudson Bay Jn. marked b (next morning). Divides at Cranberry Portage: Flin Flon here, Sherridon in sk_cn_t192c.csv."
+#train col=M251 num=251 dir=down days="Tue,Thu,Sat" kind=mixed note="Canora 11.30 a.m. marked b."
+#train col=M270 num=270 dir=down days="Tue,Thu,Sat" kind=mixed note="Head 'M 270' printed below M256 in the same column; Reserve 3.15 p.m. marked b."
+#train col=AddRH num="" dir=down days="Fri" kind=passenger note="Additional Trains note: leaves Reserve 9.25 p.m. (u, Friday only), arrives Hudson Bay Junction 10.35 p.m."
+#train col=AddCY num="" dir=up days="Thu,Sat" kind=passenger note="Additional Trains note: leaves Canora 3.20 p.m. (#, Thursday and Saturday), arrives Yorkton 5.00 p.m. Runs up the rows."
+#train col=M357 num=357 dir=down days="Mon,Wed,Fri" kind=mixed note="Cranberry Portage 5.00 p.m. marked a. Head 'M 357' printed in the Sherridon section above this column."
+#train col=No64 num=64 dir=up days="Mon,Wed,Fri" kind=passenger to="Winnipeg" note="From Flin Flon (3.10 p.m., a) and Sherridon (sk_cn_t192c.csv), combined at Cranberry Portage; Hudson Bay Jn. a11.50 p.m.; Reserve and Canora marked b (next morning); to Winnipeg by Dauphin (see Table 168)."
+#train col=No62 num=62 dir=up days="Sun,Tue,Thu" kind=passenger to="Regina" note="Flin Flon 9.00 p.m. and Cranberry Portage 10.38 p.m. marked r (Sun Tue Thu); The Pas and Hudson Bay Jn. marked a (Mon Wed Fri, next morning). From Melville to Regina (sk_cn_t192a.csv) and to Winnipeg (sk_cn_t192d.csv)."
+#train col=M260 num=260 dir=up days="Mon,Wed,Fri" kind=mixed from="Canora" note="Yorkton 3.55 p.m. marked a; from Canora by Wroxton (Table 207, sk_cn_t207.csv, Yorkton ar 3.00 p.m.)."
+#train col=M252 num=252 dir=up days="Mon,Wed,Fri" kind=mixed note="Head 'M252' printed below M260 in the same column; Hudson Bay Jn. 6.15 a.m. marked a."
+#train col=M166 num=166 dir=up days="Tue,Thu,Sat" kind=mixed from="Swan River" to="Regina" note="From Swan River as No. 66 (Table 182a, Sturgis ar 12.55 p.m.). Column 166-66: Sturgis 1.25 p.m. marked b; to Regina as No. 66 (sk_cn_t192a.csv)."
+#train col=M244 num=244 dir=up days="Mon,Wed,Fri" kind=mixed from="Kelvington" note="From Kelvington (Table 182, Sturgis ar 3.10 p.m.). Sturgis 4.40 p.m. marked a."
+#train col=M255 num=255 dir=up days="Tue,Thu,Sat" kind=mixed from="Russell" note="Yorkton 3.00 p.m. marked b; from Russell (Table 190, sk_cn_t190.csv, Yorkton ar 12.50 p.m.)."
+#train col=No81 num=81 dir=up days="Fri" kind=passenger note="Head '81' printed below M255 in the same column (no M); Hudson Bay Jn. 7.10 a.m. marked u (Friday only). Kind not printed."
+#train col=AddHR num="" dir=up days="Mon" kind=passenger note="Additional Trains note: leaves Hudson Bay Junction 8.00 a.m. (natural sign, Monday only), arrives Reserve 9.20 a.m."
+#train col=M358 num=358 dir=up days="Tue,Thu,Sat" kind=mixed note="Flin Flon 6.30 a.m. marked b. Head 'M 358' printed in the Sherridon section above this column."
+mile,station,principal,prov,tz,M249,M243,M256,M165,No61,No63,M251,M270,AddRH,AddCY,M357,No64,No62,M260,M252,M166,M244,M255,No81,AddHR,M358
+96.3,Melville,1,SK,C,,,lv 6.30a,lv 12.10p,ar 5.00p / lv 5.45p,,,,,,,,ar 10.45a,ar 5.05p,,ar 4.55p,,ar 4.15p,,,
+112.1,Otthon,0,SK,C,,,7.20a,12.48p,6.15p,,,,,,,,10.07a,4.25p,,4.17p,,3.30p,,,
+122.5,Yorkton,1,SK,C,lv 7.05a,,ar 7.50a,ar 1.15p / lv 1.40p,ar 6.35p / lv 7.00p,,,,,ar 5.00p,,,ar 9.30a / lv 9.45a,lv 3.55p,,ar 3.40p / lv 3.55p,ar 8.50p,lv 3.00p,,,
+133.4,Ebenezer,0,SK,C,7.35a,,,2.03p,7.23p,,,,,,,,9.00a,,,3.19p,8.10p,,,,
+152.7,Canora,1,SK,C,ar 8.55a,lv 10.30a,,ar 2.55p / lv 3.25p,ar 8.15p / lv 9.35p,lv 11.00p,lv 11.30a,,,lv 3.20p,,ar 3.10a,ar 7.55a / lv 8.20a,,ar 2.05p,ar 2.25p / lv 2.40p,ar 5.55p / lv 7.15p,,,,
+174.8,Sturgis,1,SK,C,,ar 11.50a,,ar 4.25p,ar 10.20p / lv 10.25p,ar 11.58p / lv 11.58p,ar 1.00p / lv 2.15p,,,,,2.26a,7.00a,,ar 12.00p / lv 12.45p,lv 1.25p,lv 4.40p,,,,
+215.9,Reserve,1,SK,C,,,,,11.55p,1.40a,5.30p,lv 3.15p,lv 9.25p,,,12.55a,5.20a,,8.25a,,,,ar 8.20a,ar 9.20a,
+246.5,Hudson Bay Jn.,1,SK,C,,,,,ar 1.05a / lv 1.20a,ar 2.40a / lv 3.20a,ar 7.25p,ar 4.35p,ar 10.35p,,,ar 11.00p / lv 11.50p,ar 3.50a / lv 4.15a,,lv 6.15a,,,,lv 7.10a,lv 8.00a,
+334.8,The Pas,1,MB,C,,,,,ar 4.25a / lv 5.00a,ar 6.30a / lv 7.00a,,,,,,ar 6.45p / lv 7.30p,ar 12.30a / lv 12.45a,,,,,,,,
+352.5,Root Lake,0,MB,C,,,,,f5.36a,f7.39a,,,,,,f6.02p,f11.45p,,,,,,,,
+361.2,Wanless,0,MB,C,,,,,f5.49a,7.54a,,,,,,f5.46p,f11.30p,,,,,,,,
+369.3,Atik,0,MB,C,,,,,f6.03a,f8.12a,,,,,,f5.30p,f11.16p,,,,,,,,
+380.0,Simonhouse,0,MB,C,,,,,f6.23a,f8.32a,,,,,,f5.08p,f10.57p,,,,,,,,
+390.1,Cranberry Portage,1,MB,C,,,,,ar 6.40a / lv 6.50a,ar 8.50a / lv 9.00a,,,,,lv 5.00p,ar 4.41p / lv 4.50p,ar 10.29p / lv 10.38p,,,,,,,,ar 8.35a
+405.0,Athapap,0,MB,C,,,,,f7.24a,f9.35a,,,,,f5.50p,4.10p,f9.58p,,,,,,,,f7.53a
+426.1,Flin Flon,1,MB,C,,,,,ar 8.25a,ar 10.40a,,,,,ar 7.30p,lv 3.10p,lv 9.00p,,,,,,,,lv 6.30a

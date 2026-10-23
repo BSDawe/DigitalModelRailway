@@ -1,0 +1,9 @@
+# Joined through train (cn260), sk_join.py: skcn207:M260, skcn192b:M260
+# Rows and times as in the section files (see them for the scans, signs and doubts). Miles: counted along the run from the first station.
+#train col=D num=260 dir=down days="Mon,Wed,Fri" kind=mixed note="Through train: No. 260 Canora - Yorkton; No. 260 Yorkton - Melville. Canora 9.55 a.m. marked a; continues Yorkton 3.55 p.m. - Melville 5.05 p.m. (Table 192)."
+mile,station,principal,prov,tz,D
+0.0,Canora,1,SK,C,lv 9.55a
+41.7,Wroxton,1,SK,C,ar 12.30p / lv 1.20p
+69.3,Yorkton,1,SK,C,ar 3.00p / lv 3.55p
+79.7,Otthon,0,SK,C,4.25p
+95.5,Melville,1,SK,C,ar 5.05p

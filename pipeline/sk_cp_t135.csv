@@ -1,0 +1,25 @@
+# Canadian Pacific, Table 135, Consul - Notukeu - Valmarie.
+# From the Canadian Pacific public timetable of about 1948 (scan cp1948_sk/tables135_137_consul_valmarie_bassano_lomond.png, printed sideways).
+# Times as printed: MOUNTAIN TIME ("Mountain Time" heads the station column). Miles from Consul as printed. All stations in Saskatchewan.
+# Signs: f = stops on signal; M = mixed train. Consul and Notukeu refer to Table 120. Notukeu is printed twice (Ar 3.2 / Lv 3.2): one row.
+# Slow running as printed: M646 Katherine f11.50a to Claydon 1.10p (5.9 miles in 80 minutes), then about an hour between stations to Climax.
+# Also M646 Orkney 6.35p to Masefield 7.25p (5.0 miles in 50 minutes), as printed (seen in two crops).
+#train col=M646 num=646 dir=down days="Tue" kind=mixed
+#train col=M645 num=645 dir=up days="Wed" kind=mixed
+mile,station,principal,prov,tz,M646,M645
+0.0,Consul,1,SK,M,lv 9.00a,ar 3.00p
+3.2,Notukeu,1,SK,M,ar 9.30a / lv 9.45a,ar 2.20p / lv 2.35p
+9.3,Nashlyn,0,SK,M,f10.10a,f1.55p
+15.2,Supreme,0,SK,M,f10.40a,f1.30p
+22.5,Arena,0,SK,M,f11.05a,f1.00p
+29.5,Divide,0,SK,M,f11.30a,f12.30p
+34.9,Katherine,0,SK,M,f11.50a,f12.05p
+40.8,Claydon,0,SK,M,1.10p,11.35a
+48.3,Loomis,0,SK,M,2.15p,11.00a
+56.1,Frontier,0,SK,M,3.10p,10.10a
+64.3,Climax,0,SK,M,4.15p,9.25a
+71.8,Canuck,0,SK,M,f5.00p,f8.50a
+77.8,Bracken,0,SK,M,5.45p,8.15a
+86.7,Orkney,0,SK,M,6.35p,7.35a
+91.7,Masefield,0,SK,M,7.25p,7.00a
+99.6,Valmarie,1,SK,M,ar 7.55p,lv 6.30a

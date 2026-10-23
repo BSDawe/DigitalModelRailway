@@ -1,0 +1,21 @@
+# Canadian National, Table 196, Watrous - Young - Saskatoon - Prince Albert. Official Guide, April 25, 1948 (scan cn1948_sk/table196_watrous_saskatoon_princealbert.png).
+# Times as printed: MOUNTAIN TIME ("M.T." head). All stations in Saskatchewan. Miles as printed from Watrous by Young and Totzke (Totzke 53.2, Prince Albert 125.9).
+#   Totzke and Cudworth are printed twice (arr./lve. lines) and entered as one row each.
+# Key to signs: the Table 193-201 page key (quoted in sk_cn_t192a.csv): l Tuesday and Saturday; n Monday and Friday; # Thursday and Saturday; + daily except Sunday; M mixed train.
+# M274's Prince Albert time 7.15 a.m. carries an italic sign read as n (Monday and Friday); it could be # (Thursday and Saturday) - IN DOUBT. M273 is l (Tue and Sat).
+# NOT ENTERED: the middle section Saskatoon (0) - Warman (13.9) - Totzke (54.3), which carries only Nos. 10 (Saskatoon +12.15 p.m., Warman 12.45 p.m., Totzke ar 2.05 p.m.)
+#   and 9 (Totzke +1.58 p.m., Warman 3.33 p.m., Saskatoon ar 4.00 p.m.): these are the Table 168 trains (Winnipeg - Dauphin - Kamsack - Saskatoon - Calgary),
+#   whose own table is not part of this set.
+#train col=M273 num=273 dir=down days="Tue,Sat" kind=mixed note="Watrous 9.50 a.m. marked l (Tuesday and Saturday). Waits at Totzke 1.30-2.35 p.m."
+#train col=M274 num=274 dir=up days="Mon,Fri" kind=mixed note="Prince Albert 7.15 a.m. marked n (Monday and Friday) as read; possibly # (Thursday and Saturday) - in doubt. Waits at Totzke 1.25-2.35 p.m."
+mile,station,principal,prov,tz,M273,M274
+0.0,Watrous,1,SK,M,lv 9.50a,ar 5.50p
+13.9,Young,1,SK,M,10.35a,5.10p
+38.6,Meacham,0,SK,M,12.35p,3.35p
+53.2,Totzke,1,SK,M,ar 1.30p / lv 2.35p,ar 1.25p / lv 2.35p
+69.4,Cudworth,0,SK,M,ar 3.45p / lv 3.45p,ar 10.55a / lv 11.55a
+80.9,Wakaw,1,SK,M,4.40p,10.30a
+90.9,Domremy,0,SK,M,5.20p,9.20a
+97.0,Hoey,0,SK,M,5.45p,9.00a
+100.9,St. Louis,0,SK,M,6.10p,8.45a
+125.9,Prince Albert,1,SK,M,ar 7.40p,lv 7.15a

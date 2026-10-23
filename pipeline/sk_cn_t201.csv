@@ -1,0 +1,13 @@
+# Canadian National, Table 201, North Battleford - Carruthers. Official Guide, April 25, 1948
+#   (scan cn1948_sk/tables193_201_drumheller_reserve_dauphin_saskatoon_regina_nbattleford.png, Table 201 at bottom left).
+# Times as printed: MOUNTAIN TIME ("Mt. time" head). All stations in Saskatchewan. Miles from North Battleford as printed.
+# Key to signs (Table 193-201 page, quoted in sk_cn_t199a.csv): h Thursday only; k Saturday only; M mixed train.
+# The sign before M299's 8.20 a.m. and M300's 1.40 p.m. is read as h (Thursday only); it is small and could be k (Saturday only) - IN DOUBT.
+#train col=M299 num=299 dir=down days="Thu" kind=mixed note="North Battleford 8.20 a.m. marked h: Thursday only (key for Tables 192-201) (Brendan, 12 Oct)."
+#train col=M300 num=300 dir=up days="Thu" kind=mixed note="Carruthers 1.40 p.m. marked h: Thursday only (key for Tables 192-201) (Brendan, 12 Oct)."
+mile,station,principal,prov,tz,M299,M300
+0.0,North Battleford,1,SK,M,lv 8.20a,ar 6.05p
+6.1,Battleford Junction,0,SK,M,8.35a,5.45p
+13.9,Battleford,1,SK,M,9.35a,5.10p
+47.0,Cut Knife,0,SK,M,11.45a,2.30p
+59.9,Carruthers,1,SK,M,ar 12.40p,lv 1.40p

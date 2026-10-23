@@ -1,0 +1,28 @@
+# Canadian National, Table 193, Drumheller - Trefoil, table of April 25, 1948, from the Official Guide of May 1948. The whole branch is in Alberta
+# (the table prints "Alta." after Drumheller and after Trefoil). Times as printed: MOUNTAIN TIME (the table is headed "M. T."). Miles from Drumheller.
+# One mixed train each way; the columns are headed "M" (mixed train) with NO TRAIN NUMBER printed, so num is empty.
+# Drumheller to Rosedale (4.5 miles) is over the Calgary line of Table 168; the branch leaves it at Rosedale.
+# Signs printed: x at Drumheller 8.20 a.m. (train from Drumheller), t at Trefoil 11.00 a.m. (train from Trefoil), f = flag stop (Rosedale going
+# out, Willow Creek coming back). Light type = a.m., heavy type = p.m.: out in the morning, back from Dorothy onwards after noon.
+# DAYS NOT CONFIRMED. This table's own key is not on its scan. The key supplied (key_to_signs.png, from the main line page) has no x and gives
+# t = Wednesday and Saturday. The key printed on the branch-line page (Tables 203-219) gives x = daily except Sunday and Wednesday and
+# t = Tuesday only, and u, k of Table 230 fit that key too. Entered by the branch-line key: from Drumheller Mon., Tue., Thu., Fri., Sat.;
+# from Trefoil Tuesday only. Read so, the train probably runs to East Coulee and back on the five days (it is shown arriving and leaving there
+# both ways: 9.15 / 10.00 a.m. and 12.45 / 1.15 p.m.) and on to Trefoil on Tuesday only, but the table does not say so: no sign is printed at
+# East Coulee. By the other key the train from Trefoil would run Wed. and Sat., which does not agree with any reading of x that leaves out
+# Wednesday. Ask Brendan for the key at the foot of the page that carries Table 193.
+# The train is timed into Trefoil at 11.00 a.m. and out at 11.00 a.m., as printed. Trefoil to Dorothy takes 73 minutes for 8.9 miles coming
+# back (11.00 a.m. to 12.13 p.m.) against 30 minutes going out: as printed.
+# FOR THE MAP the two trains are entered as four: on Tuesday right through to Trefoil and back (MoutT, MinT); on Monday, Thursday, Friday
+# and Saturday to East Coulee and back (MoutE, MinE), leaving East Coulee at the 1.15 p.m. printed. This is the probable reading, not confirmed.
+#train col=MoutT num="" dir=down days="Tue" kind=mixed note="Drumheller to Trefoil. No number printed. Days not confirmed: taken as through to Trefoil on Tuesdays only."
+#train col=MinT num="" dir=up days="Tue" kind=mixed note="Trefoil to Drumheller. No number printed. Days not confirmed: taken as from Trefoil on Tuesdays only."
+#train col=MoutE num="" dir=down days="Mon,Thu,Fri,Sat" kind=mixed note="Drumheller to East Coulee. No number printed. Days not confirmed: taken as turning at East Coulee except on Tuesdays."
+#train col=MinE num="" dir=up days="Mon,Thu,Fri,Sat" kind=mixed note="East Coulee to Drumheller. No number printed. Days not confirmed: taken as starting from East Coulee except on Tuesdays."
+mile,station,principal,MoutT,MinT,MoutE,MinE
+0.0,Drumheller,1,lv 8.20a,ar 2.15p,lv 8.20a,ar 2.15p
+4.5,Rosedale,1,f8.30a,1.50p,f8.30a,1.50p
+8.7,Willow Creek,0,8.50a,f1.30p,8.50a,f1.30p
+13.6,East Coulee,0,ar 9.15a / lv 10.00a,ar 12.45p / lv 1.15p,ar 9.15a,lv 1.15p
+21.6,Dorothy,0,10.30a,12.13p,,
+30.5,Trefoil,1,ar 11.00a,lv 11.00a,,

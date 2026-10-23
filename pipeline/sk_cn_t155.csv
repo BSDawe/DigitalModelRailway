@@ -1,0 +1,44 @@
+# Canadian National, Table 155, Montreal - Toronto - Longlac - Port Arthur - Fort William - Fort Frances - Winnipeg: the Port Arthur - Winnipeg section.
+# Official Guide, April 25, 1948 (scan cn1948_mb/t155.png). Transcribed 18 October 2026. CENTRAL TIME (Port Arthur - Winnipeg section). Miles from Port Arthur as printed.
+# Rainy River printed twice (arr. / lve., 285.3): one row. Provinces / state: Port Arthur - Rainy River Ontario; Baudette and Warroad Minnesota; Middlebro - Winnipeg Manitoba.
+# HELD (PENDING): needs Ontario track and names, and the CN line through Minnesota (Rainy River - Baudette - Warroad - Middlebro).
+# Columns: "3-79" / "33-19": No. 3 Toronto 11.00 p.m. (and No. 1 Montreal 8.20 p.m., "1-79") to Longlac 8.10 a.m., No. 79 Longlac - Port Arthur ar 3.05 a.m. E.T.;
+#   No. 33 Port Arthur 5.00 p.m. C.T. - Winnipeg; at Fort Frances No. 19 from Duluth (Table 189; column "19 From Duluth", Duluth Junction 1.30 a.m.) runs with it,
+#   same times Fort Frances - Winnipeg. Up: "80-4" / "20-34": No. 34 Winnipeg 6.30 p.m. - Port Arthur 10.30 a.m., then No. 80 to Longlac and Nos. 4 / 2 to Toronto
+#   7.00 a.m. / Montreal 9.00 a.m.; No. 20 to Duluth leaves Fort Frances 3.00 a.m. (Duluth Junction 3.05 a.m.; column "80-2 To Duluth").
+# Winnipeg - Sprague mixed trains M202 / M201: in sk_cn_t155w.csv (Manitoba).
+# Signs (key on this page): dagger = daily except Sunday; para. = daily except Monday; a = Mon. Wed. Fri.; b = Tue. Thu. Sat.; x = Monday only; section = Sunday only;
+#   f = flag stop; M = mixed train.
+#train col=No33 num=33 dir=down days="ex Sun" kind=passenger from="Toronto and Montreal (Nos. 3 and 1 to Longlac, No. 79 to Port Arthur)" note="Port Arthur 5.00 p.m. (daily except Sunday) to Winnipeg 9.45 a.m. (daily except Monday); with No. 19 from Duluth Fort Frances - Winnipeg."
+#train col=M203 num=203 dir=down days="Mon,Wed,Fri" kind=mixed note="Monday, Wednesday and Friday. Port Arthur 8.20 a.m. to Atikokan 4.30 p.m."
+#train col=M205 num=205 dir=down days="Tue,Thu,Sat" kind=mixed note="Tuesday, Thursday and Saturday. Atikokan 7.45 a.m. to Rainy River 3.10 p.m."
+#train col=No34 num=34 dir=up days="ex Sun" kind=passenger to="Toronto and Montreal (No. 80 to Longlac)" note="Winnipeg 6.30 p.m. (daily except Sunday) to Port Arthur 10.30 a.m.; No. 20 for Duluth leaves it at Fort Frances."
+#train col=M204 num=204 dir=up days="Tue,Thu,Sat" kind=mixed note="Tuesday, Thursday and Saturday. Atikokan 8.00 a.m. to Port Arthur 3.10 p.m."
+#train col=M206 num=206 dir=up days="Mon,Wed,Fri" kind=mixed note="Monday, Wednesday and Friday. Rainy River 8.00 a.m. to Atikokan 4.40 p.m."
+mile,station,principal,prov,tz,No33,M203,M205,No34,M204,M206
+0.0,Port Arthur,1,ON,C,lv 5.00p,lv 8.20a,,ar 10.30a,ar 3.10p,
+3.9,Fort William,1,ON,C,5.17p,8.40a,,10.15a,2.50p,
+5.7,West Fort William,0,ON,C,f5.23p,f8.48a,,f10.01a,f2.38p,
+23.0,Kakabeka Falls,0,ON,C,5.57p,9.50a,,9.31a,1.50p,
+36.1,Conmee,0,ON,C,f6.25p,10.30a,,f9.07a,1.15p,
+81.3,Kashabowie,0,ON,C,8.02p,1.30p,,7.43a,11.10a,
+101.8,Owakonze,0,ON,C,f8.40p,,,f7.06a,,
+105.4,Quetico,0,ON,C,8.43p,f2.40p,,6.59a,f9.55a,
+120.9,Kawene,0,ON,C,9.20p,3.35p,,6.29a,f9.15a,
+141.8,Atikokan,1,ON,C,10.15p,ar 4.30p,lv 7.45a,5.50a,lv 8.00a,ar 4.40p
+164.4,Flanders,0,ON,C,10.55p,,8.45a,4.57a,,3.20p
+189.7,Mine Centre,0,ON,C,11.44p,,9.50a,4.07a,,2.02p
+229.7,Duluth Junction,0,ON,C,1.04a,,11.22a,2.53a,,12.05p
+230.7,Fort Frances,1,ON,C,2.00a,,12.20p,2.50a,,12.00p
+251.0,Emo,0,ON,C,2.40a,,1.23p,1.39a,,10.05a
+257.8,Barwick,0,ON,C,2.56a,,1.43p,1.21a,,9.30a
+285.3,Rainy River,1,ON,C,ar 3.55a / lv 4.10a,,ar 3.10p,ar 12.05a / lv 12.20a,,lv 8.00a
+286.9,Baudette,1,MN,C,4.27a,,,12.00a,,
+323.3,Warroad,1,MN,C,5.49a,,,10.37p,,
+333.8,Middlebro,0,MB,C,f6.07a,,,f10.10p,,
+342.9,Sprague,1,MB,C,6.35a,,,9.54p,,
+391.1,Marchand,0,MB,C,8.10a,,,8.11p,,
+403.5,Giroux,0,MB,C,8.33a,,,7.45p,,
+411.4,Ste. Anne,0,MB,C,8.46a,,,7.31p,,
+437.0,St. Boniface,0,MB,C,9.38a,,,6.40p,,
+438.6,Winnipeg,1,MB,C,ar 9.45a,,,lv 6.30p,,

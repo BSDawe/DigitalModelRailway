@@ -1,0 +1,18 @@
+# Canadian Pacific, Table 140, Wickett - Verlo (scan cp1948_sk/table140_wickett_verlo.png, sent by Brendan 21 Oct 2026). MOUNTAIN TIME.
+# The table prints Swift Current (|| meal station; "132" = see Table 132) and Pennant above Wickett with no miles (".."). M673 / M674 are the Tuesday
+#   mixed trains Swift Current - Pennant of Table 132 running on to Verlo, so they are entered whole here (and dropped from sk_cp_t132.csv):
+#   Swift Current - Cantuar - Success - Pennant times and miles from Table 132 (Cantuar and Success are not printed in Table 140).
+# Wickett: not a station in Table 132 (a junction point 2.9 km west of Pennant, names file "Railway Point"): Pennant - Wickett taken as 2.0 mi
+#   (ESTIMATED), so the branch miles here are the printed ones + 30.4.
+#train col=M673 num=673 dir=down days="Tue" kind=mixed note="Mixed, Tuesdays. Swift Current 9.00 a.m., Pennant 10.35 a.m., Wickett 11.00 a.m., Verlo 12.45 p.m."
+#train col=M674 num=674 dir=up days="Tue" kind=mixed note="Mixed, Tuesdays. Verlo 1.45 p.m., Wickett 3.25 p.m., Pennant 3.50 p.m., Swift Current 4.55 p.m."
+mile,station,principal,prov,tz,M673,M674
+0.0,Swift Current,1,SK,M,lv 9.00a,ar 4.55p
+13.0,Cantuar,0,SK,M,9.30a,4.25p
+19.8,Success,0,SK,M,9.45a,4.10p
+28.4,Pennant,0,SK,M,10.35a,3.50p
+30.4,Wickett,0,SK,M,11.00a,3.25p
+37.7,Fosterton,0,SK,M,11.30a,2.55p
+42.4,Roseray,0,SK,M,11.45a,2.35p
+49.6,Hazlet,0,SK,M,12.15p,2.10p
+54.9,Verlo,1,SK,M,ar 12.45p,lv 1.45p

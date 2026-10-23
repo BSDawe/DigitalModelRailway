@@ -1,0 +1,50 @@
+# Canadian National, Table 199, Saskatoon - Tichfield - Beechy - Whitebear - Kindersley: section A, Saskatoon - Tichfield - Eston - Kindersley.
+# Official Guide, April 25, 1948 (scan cn1948_sk/tables193_201_drumheller_reserve_dauphin_saskatoon_regina_nbattleford.png, Table 199 at top right).
+# Times as printed: MOUNTAIN TIME ("Mt. time" head). All stations in Saskatchewan.
+# The table has six sections: Saskatoon - Tichfield (0-77.2); Tichfield - Beechy (0-44.1); Tichfield - Eston (77.2-160.9); Eston - Lacadena - Whitebear (0-34.3);
+#   the same line again as Whitebear - Lacadena - Eston (0-34.3) for other trains; Eston - Kindersley (160.9-197.2). Files: sk_cn_t199a.csv (Saskatoon - Tichfield -
+#   Eston - Kindersley), sk_cn_t199b.csv (Tichfield - Beechy), sk_cn_t199c.csv (Eston - Whitebear, both printings merged, miles from Eston).
+# The column headed "27-M302" (Saskatoon a9.35 a.m.) divides at Tichfield: lv a1.15 p.m. for Beechy and lv a1.07 p.m. for Eston; at Eston it goes on either
+#   o4.45 p.m. to Kindersley (o = Monday and Wednesday) or u4.50 p.m. to Whitebear (u = Friday). Which number belongs to which part is not printed: taken as
+#   No. 27 Saskatoon - Tichfield - Eston and on, M302 Tichfield - Beechy (my assumption). No. 27 is split by days into No27 (Mon, Wed: to Kindersley) and
+#   No27F (Fri: to Whitebear).
+# Column "M 28" likewise: Kindersley p5.50 a.m. (Tue and Thu) or Whitebear k5.45 a.m. (Saturday) to Eston, then Eston b7.45 a.m. - Saskatoon b2.20 p.m.:
+#   split into M28 (Tue, Thu, from Kindersley) and M28S (Sat, from Whitebear).
+# The first column of the table (unheaded) is blank throughout.
+# Key to signs (printed on this page, the Table 193-201 page): "* Daily; + daily, except Sunday; ++ daily, except Saturday; para. daily, except Monday;
+#   Section Sunday only; a Monday, Wednesday and Friday; b Tuesday, Thursday and Saturday; e Wednesday and Friday; f flag stop; h Thursday only;
+#   k Saturday only; l Tuesday and Saturday; n Monday and Friday; o Monday and Wednesday; p Tuesday and Thursday; r Sunday, Tuesday and Thursday;
+#   t Wednesday only; u Friday only; x Tuesday only; z Wednesday, Friday and Sunday. (dot) Motor train; limited baggage accommodation.
+#   # Thursday and Saturday. natural-sign Monday only. (triangle) Restaurant or lunch counter. + Coupon stations; Telegraph stations. M - Mixed train."
+# M301 (Beechy - Tichfield, sk_cn_t199b.csv) shows 10.10 a.m. at MacRorie (72.3, the station before Tichfield on the Saskatoon line) and no time at Tichfield:
+#   not entered in this file (a single call); see sk_cn_t199b.csv.
+#train col=No27 num=27 dir=down days="Mon,Wed" kind=passenger note="Column 27-M302. Saskatoon 9.35 a.m. and Tichfield lv 1.07 p.m. marked a (Mon Wed Fri), Eston ar a4.20 p.m.; Eston 4.45 p.m. and Kindersley 6.15 p.m. marked o (Mon and Wed). Number and kind of this part assumed (see comments)."
+#train col=No27F num=27 dir=down days="Fri" kind=passenger to="Whitebear" note="Friday run of column 27-M302: Saskatoon - Eston (a), then Eston u4.50 p.m. - Whitebear u6.35 p.m. (u = Friday), sk_cn_t199c.csv."
+#train col=M293 num=293 dir=down days="Thu" kind=mixed from="Whitebear" note="From Whitebear h8.00 a.m. (Thursday only), sk_cn_t199c.csv; Eston lv 12.30 p.m. - Kindersley 3.20 p.m."
+#train col=M28 num=28 dir=up days="Tue,Thu" kind=mixed note="Kindersley 5.50 a.m. and Eston ar 7.15 a.m. marked p (Tue and Thu); Eston 7.45 a.m., Tichfield 11.00/11.05 a.m. and Saskatoon 2.20 p.m. marked b."
+#train col=M28S num=28 dir=up days="Sat" kind=mixed from="Whitebear" note="Saturday run of column M 28: from Whitebear k5.45 a.m. (sk_cn_t199c.csv), Eston ar k7.20 a.m., then Eston b7.45 a.m. - Saskatoon 2.20 p.m."
+#train col=M294 num=294 dir=up days="Wed" kind=mixed to="Whitebear" note="Kindersley 9.00 a.m. marked t (Wednesday only); Eston ar 11.30 a.m.; on to Whitebear (Eston lv 12.30 p.m.) in sk_cn_t199c.csv."
+mile,station,principal,prov,tz,No27,No27F,M293,M28,M28S,M294
+0.0,Saskatoon,1,SK,M,lv 9.35a,lv 9.35a,,ar 2.20p,ar 2.20p,
+7.7,Hawker,0,SK,M,f10.00a,f10.00a,,f1.56p,f1.56p,
+17.4,Vanscoy,0,SK,M,10.20a,10.20a,,1.40p,1.40p,
+26.1,Delisle,1,SK,M,10.40a,10.40a,,1.25p,1.25p,
+35.5,Donavon,0,SK,M,11.03a,11.03a,,1.01p,1.01p,
+42.8,Swanson,0,SK,M,11.19a,11.19a,,12.46p,12.46p,
+49.4,Ardath,0,SK,M,11.32a,11.32a,,12.33p,12.33p,
+56.0,Conquest,0,SK,M,11.46a,11.46a,,12.20p,12.20p,
+72.3,MacRorie,0,SK,M,12.45p,12.45p,,11.40a,11.40a,
+77.2,Tichfield,1,SK,M,ar 12.57p / lv 1.07p,ar 12.57p / lv 1.07p,,ar 11.00a / lv 11.05a,ar 11.00a / lv 11.05a,
+98.9,Dinsmore,0,SK,M,1.52p,1.52p,,10.14a,10.14a,
+107.9,Wiseton,0,SK,M,2.11p,2.11p,,9.50a,9.50a,
+115.3,Forgan,0,SK,M,2.25p,2.25p,,9.35a,9.35a,
+120.8,Hughton,0,SK,M,2.42p,2.42p,,9.22a,9.22a,
+126.4,Elrose,1,SK,M,2.57p,2.57p,,9.05a,9.05a,
+133.8,Wartime,0,SK,M,3.17p,3.17p,,8.51a,8.51a,
+146.5,Plato,0,SK,M,3.46p,3.46p,,8.20a,8.20a,
+153.4,Richlea,0,SK,M,4.03p,4.03p,,8.03a,8.03a,
+160.9,Eston,1,SK,M,ar 4.20p / lv 4.45p,ar 4.20p,lv 12.30p,ar 7.15a / lv 7.45a,lv 7.45a,ar 11.30a
+167.5,Snipe Lake,0,SK,M,5.00p,,1.00p,6.59a,,10.55a
+174.2,Madison,0,SK,M,5.15p,,1.30p,6.43a,,10.30a
+180.7,Glidden,1,SK,M,5.30p,,2.00p,6.31a,,10.05a
+197.2,Kindersley,1,SK,M,ar 6.15p,,ar 3.20p,lv 5.50a,,lv 9.00a

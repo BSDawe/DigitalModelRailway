@@ -1,0 +1,36 @@
+Barkley Sound Transportation Co., Port Alberni, summer 1948: ESTIMATED / MODEL schedule (Brendan, 13 Oct 2026; details scarce). Day round
+trips from Port Alberni, leaving 8.00 a.m., six days a week, the two boats on alternate days; no Sunday sailing.
+  Mon, Wed, Fri  M.V. Uchuck I:  Port Alberni - Franklin River - Kildonan - Ecoole - Sarita - Bamfield, and back the same way.
+  Tue, Thu, Sat  M.V. Uchuck II: Port Alberni - Sechart - Broken Group Islands - Ucluelet, and back the same way.
+Order of the Bamfield calls: Claude's suggestion (Brendan listed Franklin River, Sarita River, Kildonan, Ecoole, Bamfield): Kildonan and
+Ecoole lie north of Sarita, and the Princess Maquinna's printed order (Bamfield, Sarita Bay, Ecoole, Kildonan, Green Cove, Franklin River)
+is exactly this route reversed.
+Rough distances (straight lines x1.25): Bamfield run about 48 nm each way, Ucluelet run about 45-50 nm. At about 10 knots with short calls:
+Bamfield about 1.00 p.m., back at Port Alberni about 6.30 p.m.; Ucluelet about 1.30 p.m., back about 7.00 p.m. Calls timed by distance.
+Points: Port Alberni (map / names file), Franklin River (Brendan, est), Kildonan, Ecoole, Sarita (Landing), Bamfield, Ucluelet (names file);
+Sechart and the Broken Group call point needed (names file has Broken Group Islands 48.9000,-125.3389 only as the group).
+Uchuck II: bought for the 1948 season (Brendan, confirmed).
+
+(Brendan, 13 Oct 20:06) The boats carried the mail. Sunday: an excursion leaving Port Alberni 10.00 a.m. for Bamfield.
+Working model (Claude): mail runs are same-day round trips as above (out 8.00 a.m., back the same evening). Sunday excursion by the
+Uchuck I (the Bamfield boat): Port Alberni 10.00 a.m. direct to Bamfield (about 1.30 p.m.), about 1 1/2 hours there, back at Port Alberni
+about 6.30 p.m. (no intermediate calls unless Brendan says otherwise). The two boats then make sense as two mail contracts (Bamfield side
+and Ucluelet side) each with its own boat and days, plus the Sunday excursion.
+
+SOURCES (Brendan, 13 Oct 20:11): British Colonist, 18 August 1949 (the 8.00 a.m. regular schedule; the Sunday excursion). Jan Peterson,
+"Here Today, Here Tomorrow: A History of Port Alberni", talk to the Nanaimo Historical Society, 8 February 2001 (transcribed by Dalys Barney,
+Vancouver Island University Library, 24 June 2020): the Uchuck ("quiet waters") began in 1946 as a mail and passenger service; three times a
+week she left Port Alberni at 8 a.m., calling at Franklin River, Kildonan, Green Cove and Bamfield, then made the two-hour run across the mouth
+of Barkley Sound to Ucluelet and Port Albion, and returned to Port Alberni at 8 o'clock at night.
+PROPOSED (Claude, for Brendan's OK): one loop route, run by both boats on alternate days (Uchuck I Mon/Wed/Fri, Uchuck II Tue/Thu/Sat), so the
+mail goes six days a week: Port Alberni 8.00 a.m. - Franklin River - Kildonan - Green Cove - Bamfield (about 12.30 p.m.) - across the mouth of
+the Sound (2 hours) - Ucluelet (about 2.30 p.m.) - Port Albion - back by Sechart and the Broken Group (Brendan's earlier list) - Port Alberni
+8.00 p.m. About 100 nm in 12 hours: about 9 knots with the calls. Sunday excursion as above (Uchuck I, 10.00 a.m., Bamfield).
+Sunday excursion (Brendan, 20:13): no mail, likely no intermediate stops: direct both ways. Port Alberni 10.00 a.m. - Bamfield about 1.15 p.m.
+(about 33 nm at 10 knots), 2 hours ashore, leave 3.15 p.m., Port Alberni about 6.30 p.m.
+Points (Brendan, 20:15): Sechart (Sechart Lodge) 48.956582,-125.256047; Broken Group (est) 48.910303,-125.291491: no regular stop, a pier
+where the boat would meet fishermen trading; mark as estimated. The loop is agreed; all points now in hand.
+
+(Brendan, 15 Oct 23:24) The loop above was NOT agreed: Peterson's loop is the Uchuck I alone before the Uchuck II came, quoted only for her speed. Built
+(V53): Uchuck I Mon/Wed/Fri Port Alberni - Franklin River - Kildonan - Ecoole - Sarita - Bamfield (~1.00 p.m.), back 1.30 p.m. to ~6.30 p.m.;
+Uchuck II Tue/Thu/Sat Port Alberni - Sechart - Broken Group - Ucluelet (~1.30 p.m.), back 2.00 p.m. to ~7.00 p.m.; Sunday excursion unchanged.

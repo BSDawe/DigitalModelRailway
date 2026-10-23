@@ -1,0 +1,23 @@
+# Canadian Pacific, Table 106: section E, Lauder - Tilston - Alida (M252, M254).
+# From the Canadian Pacific public timetable of about 1948 (scan cp1948_sk/table106_winnipeg_souris_lyleton_estevan.png, printed sideways).
+# Times as printed: CENTRAL TIME ("Central Time" heads the station column; "Estevan C.T." at the foot), all rows.
+# Signs (explanation of signs on this page): || = meal station; * = daily; dagger = daily ex. Sun.; f = stop on signal; d = stops to detrain;
+# M = mixed train. Only || and f appear in the time columns of this table. .. = does not run/stop (left empty).
+# Column heads: "7 137 Ex. Sun." (No. 7 Winnipeg - Brandon, No. 137 Brandon - Estevan), "8 138 Ex. Sun." (No. 138 Estevan - Brandon, No. 8 Brandon -
+# Winnipeg), "M251 Mon. Thur.", "M252 Tue. Fri." (two columns, one each way), "M254 Wed. Sat.", "123" and "124" (days printed lower in the column:
+# 123 Mon. Wed. Fri., 124 Tue. Thu. Sat.).
+# The mixed trains run a circuit: M251 Souris - Lauder - Boissevain - Deloraine - Lyleton; M252 Lyleton - Deloraine - Boissevain - Lauder, then
+# Lauder - Alida; M254 Alida - Lauder - Souris. Each section of the table is a separate file (sk_cp_t106b to e; the Winnipeg - Brandon section is not entered), miles as printed.
+# Miles from Brandon (via Souris) as printed. Provinces: Lauder - Tilston Manitoba ("Tilston, Man"), Fertile ("Fertile, Sask") - Alida Saskatchewan.
+#train col=M252 num=252 dir=down days="Tue,Fri" kind=mixed from="Lyleton" note="Comes from Lyleton 9.00a by Deloraine and Boissevain to Lauder 3.15p (sk_cp_t106d.csv, sk_cp_t106c.csv)."
+#train col=M254 num=254 dir=up days="Wed,Sat" kind=mixed to="Souris" note="Continues Lauder 11.15a - Souris 12.15p (sk_cp_t106b.csv)."
+mile,station,principal,prov,tz,M252,M254
+50.0,Lauder,1,MB,C,lv 5.05p,ar 10.55a
+59.0,Bernice,0,MB,C,5.30p,10.25a
+63.1,Bede,0,MB,C,5.45p,10.05a
+68.6,Broomhill,0,MB,C,6.00p,9.45a
+78.8,Tilston,0,MB,C,6.35p,9.10a
+85.0,Fertile,0,SK,C,7.00p,8.35a
+91.7,Storthoaks,0,SK,C,7.25p,8.15a
+97.3,Nottingham,0,SK,C,7.40p,7.50a
+103.9,Alida,1,SK,C,ar 8.00p,lv 7.30a

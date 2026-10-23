@@ -1,0 +1,26 @@
+# Great Northern Railway, Table 6, Spokane and Portland, Ore. (Via G. N. and S. P. & S. Rys.), no date on the scan (Official Guide, 1948).
+# Times as printed: PACIFIC TIME ("Spokane (P.T.)", "Portland (P.T.)").
+# DUPLICATE: every column here is an S. P. & S. train already in wa_sps_t001.csv (Nos. 1, 3, 2, 4 and SP&S Nos. 5 and 6), printed by the GN as a
+# summary; ALL TIMES AGREE with SP&S Table 1. Do not put these on the map twice.
+# NO MILES are printed in this table: the miles here are SP&S Table 1's (from Spokane), not from this scan.
+# Not entered: the St. Paul and Minneapolis rows and the "ar. Spokane (P.T.) lv." row of the GN main-line trains (Table 5).
+# Signs: * daily. Entered as plain times, key not on the scans supplied: b (No. 3 Maryhill; SP&S prints z), a colon-like sign (No. 3
+# Stevenson; SP&S c), r (No. 4 Maryhill; SP&S b). No. 4 shows a crescent moon at Stevenson with no time (SP&S Table 1: e10.18 p.m.): left empty.
+#train col=No1 num=1 dir=down days="daily" kind=passenger from="Spokane" to="Portland" note="Empire Builder, Portland section over the S.P.&S. Same train as wa_sps_t001 No. 1."
+#train col=No3 num=3 dir=down days="daily" kind=passenger from="Spokane" to="Portland" note="Oriental Limited, Portland section over the S.P.&S. Same train as wa_sps_t001 No. 3."
+#train col=No5 num=5 dir=down days="daily" kind=passenger from="Pasco" to="Portland" note="S.P.&S. local. Same train as wa_sps_t001 No. 5."
+#train col=No2 num=2 dir=up days="daily" kind=passenger from="Portland" to="Spokane" note="Empire Builder, Portland section over the S.P.&S. Same train as wa_sps_t001 No. 2."
+#train col=No4 num=4 dir=up days="daily" kind=passenger from="Portland" to="Spokane" note="Oriental Limited, Portland section over the S.P.&S. Same train as wa_sps_t001 No. 4."
+#train col=No6 num=6 dir=up days="daily" kind=passenger from="Portland" to="Pasco" note="S.P.&S. local. Same train as wa_sps_t001 No. 6."
+mile,station,principal,No1,No3,No5,No2,No4,No6
+0,Spokane,1,lv 12.06a,lv 9.45p,,ar 10.55p,ar 6.50a,
+148.2,Pasco,1,ar 3.10a / lv 3.20a,ar 1.35a / lv 1.50a,lv 10.40a,ar 7.30p / lv 7.40p,ar 2.40a / lv 3.10a,ar 3.45p
+150.3,Kennewick,0,,f1.57a,10.48a,,,3.38p
+265.2,Maryhill,0,,4.15a,1.10p,,12.19a,12.51p
+273.4,Wishram,1,5.38a,4.40a,1.25p,5.15p,12.05a,12.37p
+285.5,Northdalles,0,,,f1.43p,,,f12.08p
+294.2,Lyle,0,,5.10a,1.57p,,11.18p,11.55a
+303.9,Bingen-White Salmon,0,,f5.24a,2.15p,,10.53p,11.35a
+325.7,Stevenson,0,,5.55a,2.50p,,,10.51a
+369.5,Vancouver,1,7.32a,7.05a,4.10p,3.23p,9.15p,9.30a
+379.5,Portland,1,ar 8.00a,ar 7.35a,ar 4.40p,lv 3.00p,lv 8.45p,lv 9.00a

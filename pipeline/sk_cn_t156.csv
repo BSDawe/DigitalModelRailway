@@ -1,0 +1,21 @@
+# Canadian National, Table 156, Port Arthur - Sioux Lookout. Official Guide, April 25, 1948 (scan cn1948_mb/t156_165.png). Transcribed 19 October 2026.
+# CENTRAL TIME ("Cent. time"). Miles from Port Arthur as printed. All Ontario. Fort William printed "lv. ... ar.".
+# Route: Port Arthur - Fort William - Kakabeka Falls (the Ontario and Rainy River line), Griff - Horne - Raith - Graham - Quorn - Zarn (the Grand Trunk Pacific
+#   Lake Superior branch) - Superior Junc. (the National Transcontinental) - Sioux Lookout.
+# Signs (key on the Table 155 page): p = Monday and Friday; z = Wednesday only; y = Thursday only; l = Tuesday and Saturday; f = flag stop; M = mixed train.
+#train col=No57 num=57 dir=down days="Mon,Fri" kind=passenger note="Monday and Friday. Port Arthur 12.30 p.m. to Sioux Lookout 7.45 p.m."
+#train col=M209 num=209 dir=down days="Wed" kind=mixed note="Wednesday only. Port Arthur 7.50 a.m. to Sioux Lookout 5.45 p.m."
+#train col=M210 num=210 dir=up days="Thu" kind=mixed note="Thursday only. Sioux Lookout 7.00 a.m. to Port Arthur 4.55 p.m."
+#train col=No58 num=58 dir=up days="Tue,Sat" kind=passenger note="Tuesday and Saturday. Sioux Lookout 12.30 p.m. to Port Arthur 7.45 p.m."
+mile,station,principal,prov,tz,No57,M209,M210,No58
+0,Port Arthur,1,ON,C,lv 12.30p,lv 7.50a,ar 4.55p,ar 7.45p
+3.9,Fort William,1,ON,C,12.47p,8.10a,4.35p,7.29p
+23.0,Kakabeka Falls,0,ON,C,1.27p,9.20a,3.48p,6.44p
+52.6,Griff,0,ON,C,f2.33p,f10.45a,f2.25p,f5.44p
+58.3,Horne,0,ON,C,f2.44p,11.00a,f2.10p,f5.31p
+64.7,Raith,1,ON,C,2.59p,11.30a,f1.50p,5.16p
+106.9,Graham,1,ON,C,4.17p,1.20p,11.20a,3.53p
+128.8,Quorn,0,ON,C,5.09p,2.25p,10.16a,3.02p
+185.2,Zarn,0,ON,C,f7.09p,f4.55p,f7.43a,f1.04p
+195.6,Superior Junc.,0,ON,C,7.31p,5.30p,7.20a,12.44p
+202.0,Sioux Lookout,1,ON,C,ar 7.45p,ar 5.45p,lv 7.00a,lv 12.30p

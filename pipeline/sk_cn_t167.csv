@@ -1,0 +1,31 @@
+# Canadian National, Table 167, Winnipeg - Carman - Somerset - Hartney - Virden. Official Guide, April 25, 1948 (scan cn1948_mb/t167_170.png).
+# Transcribed 18 October 2026. CENTRAL TIME. Miles from Winnipeg as printed. All Manitoba. Somerset and Belmont printed twice (arr. / lve.): one row each.
+# Signs (key on the Table 155 page): a = Monday, Wednesday and Friday; b = Tuesday, Thursday and Saturday; f = flag stop; M = mixed train.
+#train col=No17 num=17 dir=down days="Mon,Wed,Fri" kind=passenger note="Monday, Wednesday and Friday. Winnipeg 9.40 a.m. by Carman, Somerset and Belmont to Virden 8.00 p.m."
+#train col=No18 num=18 dir=up days="Tue,Thu,Sat" kind=passenger note="Tuesday, Thursday and Saturday. Virden 6.00 a.m. by Belmont, Somerset and Carman to Winnipeg 4.20 p.m."
+mile,station,principal,prov,tz,No17,No18
+0.0,Winnipeg,1,MB,C,lv 9.40a,ar 4.20p
+21.3,Sanford,0,MB,C,10.35a,3.20p
+29.8,Brunkild,0,MB,C,10.54a,3.00p
+38.1,Sperling,0,MB,C,11.11a,2.42p
+45.2,Homewood,0,MB,C,11.27a,2.25p
+51.6,Carman,1,MB,C,11.42a,2.10p
+67.0,Roseisle,0,MB,C,12.22p,1.35p
+78.5,Notre Dame de Lourdes,0,MB,C,1.10p,12.58p
+78.9,Cardinal,0,MB,C,1.25p,12.42p
+86.9,Somerset,1,MB,C,ar 1.45p / lv 2.05p,ar 12.05p / lv 12.25p
+93.2,Swan Lake,0,MB,C,2.20p,11.50a
+104.0,Marieapolis,0,MB,C,2.55p,11.23a
+111.0,Greenway,1,MB,C,3.13p,11.07a
+117.0,Baldur,0,MB,C,3.27p,10.51a
+126.8,Belmont,1,MB,C,ar 3.50p / lv 4.00p,ar 10.15a / lv 10.27a
+138.8,Sanatorium,0,MB,C,4.35p,9.45a
+139.5,Ninette,0,MB,C,4.40p,9.40a
+144.1,Dunrea,0,MB,C,4.51p,9.24a
+149.8,Margaret,0,MB,C,5.04p,9.03a
+157.3,Minto,0,MB,C,5.22p,8.50a
+162.4,Fairfax,0,MB,C,5.34p,8.35a
+168.8,Elgin,0,MB,C,5.50p,8.20a
+181.0,Hartney,1,MB,C,6.22p,7.49a
+199.1,Belleview,0,MB,C,7.07p,7.04a
+218.1,Virden,1,MB,C,ar 8.00p,lv 6.00a

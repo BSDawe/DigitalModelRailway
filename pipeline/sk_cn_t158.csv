@@ -1,0 +1,12 @@
+# Canadian National, Table 158, Winnipeg - Inwood - Hodgson. Official Guide, April 25, 1948 (scan cn1948_mb/t156_165.png). Transcribed 18 October 2026. CENTRAL TIME. Miles as printed. All Manitoba.
+# Signs (key on this page): a = Monday, Wednesday and Friday; b = Tuesday, Thursday and Saturday; l = Tuesday and Saturday; n = Tuesday and Thursday;
+#   p = Monday and Friday; v = Tuesday only; x = Monday only; f = flag stop; M = mixed train.
+# Westside printed "Westside (P'tge Ave.)".
+#train col=M219 num=219 dir=down days="Mon,Wed,Fri" kind=mixed note="Monday, Wednesday and Friday. Winnipeg 12.30 p.m. to Hodgson 5.40 p.m."
+#train col=M220 num=220 dir=up days="Tue,Thu,Sat" kind=mixed note="Tuesday, Thursday and Saturday. Hodgson 6.00 a.m. to Winnipeg 11.30 a.m."
+mile,station,principal,prov,tz,M219,M220
+0.0,Winnipeg,1,MB,C,lv 12.30p,ar 11.30a
+6.9,Westside,0,MB,C,1.30p,10.50a
+24.7,Grosse Isle,0,MB,C,2.15p,9.55a
+55.6,Inwood,0,MB,C,3.35p,8.30a
+105.8,Hodgson,1,MB,C,ar 5.40p,lv 6.00a

@@ -1,0 +1,55 @@
+# Canadian Pacific, Table 117, Moose Jaw - Kerrobert - Macklin: main route of 311/312, Moose Jaw - Outlook - Milden - Rosetown - Kerrobert - Macklin.
+# From the Canadian Pacific public timetable of about 1948 (scan cp1948_sk/tables117_119_moosejaw_kerrobert_macklin_wilkie.png, printed sideways; "READ DOWN" / "READ UP").
+# Times as printed: MOUNTAIN TIME ("Mountain Time" heads the station column). All stations in Saskatchewan (Macklin is the last Saskatchewan station of the line).
+# Signs (explanation of signs on this page): f = stops on signal; || = meal station (Moose Jaw, Outlook); M = mixed train; .. = does not stop (left empty).
+# Miles from Moose Jaw as printed. Outlook (Ar / Lv), Milden (Ar / Lv, section break) and Kerrobert (Ar / Lv) are printed twice: entered as one row each.
+# Rosetown: the trains run in and out of Rosetown from Rosetown Jct: printed "Ar Rosetown Jct" 163.5, "Ar ROSETOWN 113 Lv" and "Lv ROSETOWN 113 Ar"
+# 165.0, "Lv Rosetown Jct" 163.5. Rosetown entered as one row; Rosetown Jct kept as two rows in printed order (miles therefore not in order there).
+# The Outlook - Milden mixed trains (M427, M421, M422, M428) are in sk_cp_t117b.csv and sk_cp_t117c.csv with their branches.
+# References printed: Moose Jaw 6; Rosetown 113; Kerrobert 119, 139; Macklin 92.
+#train col=No311 num=311 dir=down days="ex Sun" kind=passenger
+#train col=No312 num=312 dir=up days="ex Sun" kind=passenger note="Bounty 12.00 is noon."
+#train col=M481 num=481 dir=down days="Wed" kind=mixed note="Kerrobert to Macklin only."
+#train col=M480 num=480 dir=up days="Tue" kind=mixed note="Macklin to Kerrobert only."
+mile,station,principal,prov,tz,No311,No312,M481,M480
+0.0,Moose Jaw,1,SK,M,lv 11.25a,ar 4.55p,,
+8.6,Belbeck,0,SK,M,11.44a,4.32p,,
+15.8,Tuxford,0,SK,M,11.59a,4.20p,,
+22.6,Marquis,0,SK,M,12.12p,4.09p,,
+30.9,Keeler,0,SK,M,12.27p,3.57p,,
+38.2,Brownlee,0,SK,M,12.41p,3.45p,,
+45.5,Eyebrow,0,SK,M,12.56p,3.33p,,
+53.3,Tugaske,0,SK,M,1.14p,3.20p,,
+60.7,Bridgeford,0,SK,M,1.29p,3.07p,,
+68.0,Aiktow,0,SK,M,1.44p,2.53p,,
+76.7,Elbow,0,SK,M,1.58p,2.35p,,
+84.5,Loreburn,0,SK,M,2.18p,2.18p,,
+91.6,Strongfield,0,SK,M,2.43p,2.00p,,
+97.2,Hawarden,0,SK,M,3.00p,1.48p,,
+108.0,Glenside,0,SK,M,3.25p,1.26p,,
+113.3,Broderick,0,SK,M,3.38p,1.14p,,
+119.4,Outlook,1,SK,M,ar 3.55p / lv 4.20p,ar 12.35p / lv 1.00p,,
+121.7,Betalock,0,SK,M,4.25p,f12.27p,,
+128.8,Conquest,0,SK,M,4.41p,12.10p,,
+134.1,Bounty,0,SK,M,4.52p,12.00p,,
+141.7,Milden,1,SK,M,5.08p,11.43a,,
+150.6,Sovereign,0,SK,M,5.27p,11.26a,,
+158.6,Fortune,0,SK,M,5.42p,11.10a,,
+163.5,Rosetown Jct,1,SK,M,ar 5.53p,lv 11.02a,,
+165.0,Rosetown,1,SK,M,ar 6.00p / lv 6.00p,ar 10.53a / lv 10.53a,,
+163.5,Rosetown Jct,1,SK,M,lv 6.10p,ar 10.43a,,
+171.7,Anglia,0,SK,M,6.30p,10.28a,,
+181.4,Herschel,0,SK,M,6.50p,10.10a,,
+188.9,Stranraer,0,SK,M,7.05p,9.56a,,
+197.8,Plenty,0,SK,M,7.23p,9.40a,,
+204.7,Druid,0,SK,M,7.36p,9.26a,,
+206.2,Dodsland,0,SK,M,7.39p,9.19a,,
+209.4,Astum,0,SK,M,f7.47p,f9.11a,,
+214.0,Ermine,0,SK,M,7.57p,9.02a,,
+221.9,Kerrobert,1,SK,M,ar 8.15p / lv 8.25p,ar 8.35a / lv 8.50a,lv 9.00a,ar 6.30p
+230.9,Baliol,0,SK,M,f8.41p,f8.18a,9.25a,6.00p
+237.8,Luseland,0,SK,M,8.57p,8.05a,9.55a,5.40p
+245.8,Salvador,0,SK,M,9.14p,7.48a,10.35a,5.00p
+253.2,Denzil,0,SK,M,9.30p,7.32a,11.15a,4.25p
+261.2,Primate,0,SK,M,9.47p,7.15a,11.45a,3.40p
+268.3,Macklin,1,SK,M,ar 10.05p,lv 6.50a,ar 12.05p,lv 2.50p

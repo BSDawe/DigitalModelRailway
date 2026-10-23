@@ -1,0 +1,24 @@
+# Canadian Pacific, Table 137 "MEDICINE HAT-LOMOND-ALDERSYDE" (public timetable, 1948; date of issue not on the scan): first section, Suffield - Lomond.
+# Wholly in Alberta. Times as printed: MOUNTAIN TIME. Miles as printed, from Suffield.
+# Signs: M before a train number = mixed train; f = stops on signal; a = "[Service between Suff]ield and Grantham temporarily discontinued"
+# (the start of the note is cut off on the scan). Both trains show "a" at every station from Suffield to Scope: no train calls there, so those
+# cells are empty and the trains run Grantham - Lomond only. A hatched bar is printed after Medicine Hat and Vauxhall (its meaning is not on the scan).
+# The table is headed by a row "Lv MEDICINE HAT ... Ar" with no mile and no time; the branch leaves the main line at Suffield ("Suffield 6" = Table 6).
+# Both trains are headed "Tu. Fr.": Lomond to Grantham in the morning and back in the afternoon.
+# The second section, Lomond - Aldersyde, has its own trains and is in ab_cp_t137b.csv.
+#train col=M665 num=665 dir=down days="Tue,Fri" kind=mixed note="Grantham to Lomond; service Suffield to Grantham temporarily discontinued."
+#train col=M666 num=666 dir=up days="Tue,Fri" kind=mixed note="Lomond to Grantham; service Grantham to Suffield temporarily discontinued."
+mile,station,principal,M665,M666
+0.0,Suffield,1,,
+8.0,Agatha,0,,
+15.0,Illingworth,0,,
+22.8,Ronalane,0,,
+26.3,Cecil,0,,
+32.8,Armelgra,0,,
+39.6,Scope,0,,
+45.9,Grantham,1,lv 12.45p,ar 11.50a
+50.1,Vauxhall,0,1.25p,11.25a
+57.1,Retlaw,0,2.15p,10.45a
+67.4,Enchant,0,3.10p,10.00a
+75.8,Travers,0,4.00p,9.15a
+84.3,Lomond,1,ar 4.45p,lv 8.45a

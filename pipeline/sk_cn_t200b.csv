@@ -1,0 +1,16 @@
+# Canadian National, Table 200, Regina - Radville - Northgate: section B, Weyburn - Radville (motor trains 70/69).
+# Official Guide, April 25, 1948 (scan cn1948_sk/tables193_201_drumheller_reserve_dauphin_saskatoon_regina_nbattleford.png, Table 200 at left).
+# Times as printed: MOUNTAIN TIME ("M.T." head, "Mt. time" foot). All stations in Saskatchewan.
+# The table has three sections: Regina - Talmage - Weyburn (0-83.6); Weyburn - Radville (0-25.5); Weyburn - Talmage - Lampman - Northgate (0-102.1).
+#   Files: sk_cn_t200a.csv, sk_cn_t200b.csv, sk_cn_t200c.csv. Lampman is 63.8 from Weyburn here (67.7 from Maryfield in Table 173).
+# Key to signs (Table 193-201 page, quoted in full in sk_cn_t199a.csv): + daily except Sunday; a Mon Wed Fri; b Tue Thu Sat; f flag stop; x Tuesday only;
+#   natural-sign Monday only; (dot) Motor train, limited baggage accommodation; M mixed train.
+#train col=Mot70 num=70 dir=down days="ex Sun" kind=motor from="Regina" note="Motor train from Regina (+9.10 a.m., sk_cn_t200a.csv), Weyburn ar 12.15 p.m."
+#train col=Mot69 num=69 dir=up days="ex Sun" kind=motor to="Regina" note="Motor train; Radville 2.30 p.m. marked + (daily except Sunday); on to Regina (sk_cn_t200a.csv)."
+mile,station,principal,prov,tz,Mot70,Mot69
+0.0,Weyburn,1,SK,M,lv 12.30p,ar 3.30p
+5.9,Union Jack,0,SK,M,f12.50p,f3.10p
+9.3,Grassdale,0,SK,M,f12.57p,f3.03p
+15.8,Clearfield,0,SK,M,f1.10p,f2.50p
+20.1,Dandonneau,0,SK,M,f1.18p,f2.42p
+25.5,Radville,1,SK,M,ar 1.30p,lv 2.30p

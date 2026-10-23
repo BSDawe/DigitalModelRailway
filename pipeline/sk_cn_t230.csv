@@ -1,0 +1,27 @@
+# Canadian National, Table 230, Biggar - Unity - Bodo, table of April 25, 1948 (Official Guide, May 1948; scan og1948_cn/table230_biggar_unity_bodo.png).
+#   The heading adds "(Line Unity to Bodo under Construction Dept.)". ENTERED HERE: the whole table, Biggar to Bodo, Alta (the first and only
+#   Alberta station; Bodo is also in ab_cn_t230.csv, so the files overlap at Bodo). Miles from Biggar as printed.
+# Times as printed: MOUNTAIN TIME (head "Mount. time"). M311 has "A M" at the head (Biggar 9.30 a.m.) and "P M" at the foot (Bodo 5.45 p.m.):
+#   Unity 1.40 onward are p.m. M312 has "P M" at the head (Biggar ar 12.45 p.m.) and "A M" at the foot (Bodo lv 5.00 a.m.).
+# Provinces as printed: "Biggar, Sask", "Cosine, Sask" (the last Saskatchewan station), "Bodo, Alta"; the stations between are Saskatchewan.
+# Unity is printed once, "lve. ... Unity ... arr.": 311's 1.40 p.m. is its departure, 312's 9.15 a.m. its arrival; no other Unity time is printed.
+# Signs: M = mixed train. u before 311's Biggar 9.30 and k before 312's Bodo 5.00. This table's own key is not on the scan. k = Saturday only in
+#   key_to_signs.png and in the key on the branch-line page (Tables 210-215); u is not in key_to_signs.png and is read as Friday only from the
+#   branch-line page's key (as in ab_cn_t230.csv): out on Friday, the night at Bodo, back on Saturday. Coupon (+) signs dropped.
+# Sunny Glen 69.9 - Reward 72.8: 2.9 miles in 27 min (311) and 35 min (312), flagged slow by ab_table.py; read twice, as printed (mixed trains
+#   doing station work). Unity is 57.9 miles from Biggar here and 56.9 by the main-line miles of Table 75 (1949.5 - 1892.6).
+# principal = 1: Biggar, Unity (heavy type, and the junction with the main line, Table 75) and Bodo (heavy type, end of line).
+#train col=M311 num=311 dir=down days="Fri" kind=mixed note="Biggar u9.30 a.m. (u = Friday only, from the branch-line page key); arrives Bodo 5.45 p.m. and stays the night."
+#train col=M312 num=312 dir=up days="Sat" kind=mixed note="Bodo k5.00 a.m. (k = Saturday only); arrives Unity 9.15 a.m., Biggar 12.45 p.m."
+mile,station,principal,prov,tz,M311,M312
+0.0,Biggar,1,SK,M,lv 9.30a,ar 12.45p
+57.9,Unity,1,SK,M,lv 1.40p,ar 9.15a
+64.7,End Lake,0,SK,M,2.02p,8.40a
+69.9,Sunny Glen,0,SK,M,2.23p,8.15a
+72.8,Reward,0,SK,M,2.50p,7.40a
+79.4,Donegal,0,SK,M,3.15p,7.15a
+84.7,Salvador,0,SK,M,3.40p,6.50a
+90.0,Heart's Hill,0,SK,M,4.05p,6.25a
+98.0,Cactus Lake,0,SK,M,4.45p,5.55a
+103.3,Cosine,0,SK,M,5.10p,5.35a
+109.9,Bodo,1,AB,M,ar 5.45p,lv 5.00a

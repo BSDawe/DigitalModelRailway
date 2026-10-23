@@ -1,0 +1,17 @@
+# Joined through train (cp405), sk_join.py: skcp111b:M405, skcp111a:M405; up skcp111a:M406, skcp111b:M406
+# Rows and times as in the section files (see them for the scans, signs and doubts). Miles: counted along the run from the first station.
+#train col=D num=405 dir=down days="Wed,Sat" kind=mixed note="Through train: No. 405 Meyronne - Wymark; No. 405 Wymark - Swift Current. Continues Wymark 4.40p - Swift Current 5.40p (sk_cp_t111a.csv)."
+#train col=U num=406 dir=up days="Wed,Sat" kind=mixed note="Through train: No. 406 Swift Current - Wymark; No. 406 Wymark - Meyronne. Continues Wymark 6.50a - Vanguard - Meyronne 12.15p (sk_cp_t111b.csv)."
+mile,station,principal,prov,tz,D,U
+0.0,Meyronne,1,SK,M,lv 12.45p,ar 12.15p
+6.0,Royer,0,SK,M,1.05p,11.45a
+11.9,Arbuthnot,0,SK,M,1.25p,11.15a
+18.0,Glenbain,0,SK,M,1.45p,10.25a
+24.7,Esme,0,SK,M,2.05p,9.40a
+32.5,Vanguard,1,SK,M,ar 2.35p / lv 2.35p,ar 9.00a / lv 9.00a
+39.9,Pambrun,0,SK,M,3.00p,8.25a
+48.1,Neville,0,SK,M,3.40p,7.55a
+53.8,Blumenhof,0,SK,M,4.10p,7.20a
+60.6,Wymark,1,SK,M,4.40p,6.50a
+67.7,Dunelm,0,SK,M,5.05p,6.30a
+76.4,Swift Current,1,SK,M,ar 5.40p,lv 6.00a

@@ -1,0 +1,51 @@
+# Canadian Pacific, Table 96, Winnipeg - Selkirk - Winnipeg Beach - Gimli - Riverton. From the Canadian Pacific public timetable of 1948 (scans cp1948_mb/t096.png,
+# t096_notes.png). Transcribed 18 October 2026. CENTRAL TIME. Miles from Winnipeg as printed. All Manitoba. Gimli is printed twice (Ar / Lv, 58.4): one row.
+# SUMMER SERVICE (the Winnipeg Beach trains). Entered as a July week (days below); the printed dates of operation are in each train's note:
+#   111-112 May 23, 24, 30, June 6, 7, 13, 19, 20, 23, 26, then daily to Aug. 15 incl., also Aug. 18, 21, 22, 25, 28, 29, Sept. 1, 4, 5, 6.
+#   113 May 22, 24, 29, June 5, 7, 12, then Sun., Wed. and Sat. to Sept. 4, also July 1, Aug. 2, Sept. 6.
+#   114 May 22, 24, 29, June 5, 7, 12, then Wed. and Sat. to Sept. 4, also July 1, Aug. 2, Sept. 6. On May 22, 29, June 5, 12, 16, 114 makes the same stops
+#     between Winnipeg Beach and Winnipeg as No. 113 (not entered: as printed, 114 runs Winnipeg Beach - Winnipeg without stopping).
+#   120 Sundays only, June 13 to Aug. 29 incl.
+#   115, 116, 125, 126, 237, 238 operate as shown (all year as printed: 115 / 116 ex. Sun.; 125 / 126 Mon. Wed. Thur. Sat.; M237 / M238 Tue. Fri.).
+#   117-118 May 22, 24, 29, June 5, 7, 12, 16, 19, 23, 26, 30, July 1, then daily except Sunday and Monday to Aug. 14 incl., also Aug. 2, 18, 21, 25, 28, Sept. 1, 4, 6.
+# Signs: f = stops on signal. A (115 and 116 at Clandeboye, Petersfield, Netley) = stop on flag to June 25 and from Aug. 16; June 26 - Aug. 15 on flag for
+#   revenue passengers only: entered as f. Finns (74.3): 125, M237, 112 (..), 126, M238 print f with no time: not entered as a stop time.
+# 118 leaves Winnipeg Beach 10.45 p.m. (the column is headed A.M. for its arrival at Winnipeg, 12.05 a.m.).
+#train col=No111 num=111 dir=down days="daily" kind=passenger note="Summer: May 23 - Sept. 6 on dates, daily June 26 - Aug. 15. Winnipeg 8.30 a.m. to Riverton 11.35 a.m."
+#train col=No113 num=113 dir=down days="Sun,Wed,Sat" kind=passenger note="Summer: Sun., Wed. and Sat. to Sept. 4 (and holidays). Winnipeg 12.45 p.m. to Gimli 2.40 p.m."
+#train col=No115 num=115 dir=down days="ex Sun" kind=passenger note="Winnipeg 4.20 p.m. to Gimli 6.10 p.m.; connects with 125 / M237 for Riverton."
+#train col=No117 num=117 dir=down days="Tue,Wed,Thu,Fri,Sat" kind=passenger note="Summer: daily except Sunday and Monday to Aug. 14. Winnipeg 5.35 p.m. to Winnipeg Beach 6.55 p.m."
+#train col=No125 num=125 dir=down days="Mon,Wed,Thu,Sat" kind=passenger note="Gimli 6.20 p.m. to Riverton 7.20 p.m. (from No. 115)."
+#train col=M237 num=237 dir=down days="Tue,Fri" kind=mixed note="Gimli 6.20 p.m. to Riverton 7.50 p.m. (from No. 115)."
+#train col=No112 num=112 dir=up days="daily" kind=passenger note="Summer: as No. 111. Riverton 5.10 p.m. to Winnipeg 9.10 p.m.; 45 minutes at Gimli."
+#train col=No114 num=114 dir=up days="Wed,Sat" kind=passenger note="Summer: Wed. and Sat. to Sept. 4 (and holidays). Gimli 6.20 p.m. to Winnipeg 8.10 p.m."
+#train col=No116 num=116 dir=up days="ex Sun" kind=passenger note="Gimli 5.45 a.m. to Winnipeg 7.30 a.m.; connects from 126 / M238."
+#train col=No118 num=118 dir=up days="Tue,Wed,Thu,Fri,Sat" kind=passenger note="Summer: as No. 117. Winnipeg Beach 10.45 p.m. to Winnipeg 12.05 a.m."
+#train col=No120 num=120 dir=up days="Sun" kind=passenger note="Sundays only, June 13 to Aug. 29. Gimli 5.30 p.m. to Winnipeg 7.20 p.m."
+#train col=No126 num=126 dir=up days="Mon,Wed,Thu,Sat" kind=passenger note="Riverton 4.40 a.m. to Gimli 5.40 a.m. (for No. 116)."
+#train col=M238 num=238 dir=up days="Tue,Fri" kind=mixed note="Riverton 4.15 a.m. to Gimli 5.30 a.m. (for No. 116)."
+mile,station,principal,prov,tz,No111,No113,No115,No117,No125,M237,No112,No114,No116,No118,No120,No126,M238
+0.0,Winnipeg,1,MB,C,lv 8.30a,lv 12.45p,lv 4.20p,lv 5.35p,,,ar 9.10p,ar 8.10p,ar 7.30a,ar 12.05a,ar 7.20p,,
+8.3,Middlechurch,0,MB,C,,,f4.37p,,,,,,f7.10a,,,,
+12.6,Parkview,0,MB,C,,,f4.42p,,,,,,f7.05a,,,,
+19.5,Fort Garry,0,MB,C,,,f4.49p,,,,,,f6.57a,,,,
+22.9,Selkirk,1,MB,C,9.07a,1.22p,4.55p,6.12p,,,8.27p,,6.52a,11.22p,6.40p,,
+30.9,Clandeboye,0,MB,C,9.19a,1.34p,f5.06p,,,,8.17p,,f6.42a,,6.29p,,
+35.1,Petersfield,0,MB,C,9.26a,1.41p,f5.12p,,,,8.10p,,f6.35a,,f6.22p,,
+38.6,Netley,0,MB,C,9.32a,1.47p,f5.18p,,,,8.05p,,f6.29a,,6.16p,,
+44.8,Matlock,0,MB,C,9.42a,1.57p,5.28p,,,,7.56p,,6.20a,,6.07p,,
+45.8,Whytewold,0,MB,C,9.46a,2.01p,5.32p,6.45p,,,7.53p,,6.17a,10.51p,6.03p,,
+46.9,Ponemah,0,MB,C,9.50a,2.05p,5.36p,,,,7.50p,,f6.14a,,6.00p,,
+49.0,Winnipeg Beach,1,MB,C,9.55a,2.10p,5.45p,ar 6.55p,,,7.45p,7.00p,6.10a,lv 10.45p,5.55p,,
+50.1,Boundary Park,0,MB,C,10.05a,2.15p,5.50p,,,,7.20p,6.36p,f6.04a,,5.45p,,
+50.7,Beachside,0,MB,C,10.09a,2.20p,5.53p,,,,7.18p,6.33p,f6.01a,,5.43p,,
+51.8,Sandy Hook,0,MB,C,10.13a,2.24p,5.56p,,,,7.14p,6.30p,5.58a,,5.40p,,
+53.4,Husavick,0,MB,C,,f2.28p,6.00p,,,,f7.10p,,5.53a,,,,
+58.4,Gimli,1,MB,C,10.25a,ar 2.40p,ar 6.10p,,lv 6.20p,lv 6.20p,ar 6.15p / lv 7.00p,lv 6.20p,lv 5.45a,,lv 5.30p,ar 5.40a,ar 5.30a
+58.9,Loni Beach,0,MB,C,10.28a,,,,f6.22p,f6.25p,6.10p,,,,,f5.34a,f5.25a
+63.0,McElheran,0,MB,C,f10.39a,,,,f6.32p,f6.38p,6.00p,,,,,f5.25a,f5.13a
+64.0,Camp Morton,0,MB,C,10.42a,,,,6.35p,6.41p,5.56p,,,,,5.23a,5.10a
+70.3,Arnes,0,MB,C,f10.55a,,,,6.49p,7.05p,f5.43p,,,,,5.10a,4.53a
+74.3,Finns,0,MB,C,,,,,,,,,,,,,
+77.4,Hnausa,0,MB,C,11.10a,,,,7.04p,7.28p,f5.27p,,,,,4.55a,4.35a
+83.8,Riverton,1,MB,C,ar 11.35a,,,,ar 7.20p,ar 7.50p,lv 5.10p,,,,,lv 4.40a,lv 4.15a

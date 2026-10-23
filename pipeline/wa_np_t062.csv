@@ -1,0 +1,31 @@
+# Northern Pacific Railway, Table 62, Portland - Seattle - Tacoma - Chehalis - Raymond - South Bend, table of April 4, 1948 (Official Guide).
+# Times as printed: PACIFIC TIME ("Seattle (P.T.)"). Signs (key printed beside Table 58): dagger daily except Sunday; * daily; f stops on
+# flag; triangle = mixed train. Entered: the South Bend branch, mixed trains Nos. 591/594.
+# MILES: Centralia and Chehalis are both printed "0" (the branch is measured from Chehalis); entered as printed, so the checker's 0 mph
+# between them is the print, not a misread.
+# NOT ENTERED (connections, the same trains as NP Table 4): No. 460 Seattle 8.20 a.m. - Tacoma 9.35 - Centralia ar 10.50 a.m. and No. 459
+# Centralia 6.37 p.m. - Tacoma 8.00 - Seattle 9.00 p.m. (miles 0/40/89); No. 457 Portland 8.30 a.m. - Chehalis 10.58 a.m. and No. 458 Chehalis
+# 6.37 p.m. - Portland 8.45 p.m.; and a Tacoma - Lakeview - Roy - Yelm - Rainier - West Tenino - Bucoda - Centralia block (miles 0-54) in which
+# Nos. 460/459 show times only at Tacoma (9.35 a.m. / ar 7.50 p.m.), Bucoda (10.39 a.m.) and Centralia (ar 10.50 a.m. / lv 6.37 p.m.), with dots
+# at Lakeview - West Tenino (no passenger trains on that line). Table 4 has No. 460 at Centralia 10.55 a.m. (Table 62: 10.50).
+#train col=No591 num=591 dir=down days="ex Sun" kind=mixed from="Centralia" to="South Bend"
+#train col=No594 num=594 dir=up days="ex Sun" kind=mixed from="South Bend" to="Centralia"
+mile,station,principal,No591,No594
+0,Centralia,1,lv 11.25a,ar 5.50p
+0,Chehalis,1,11.38a,5.42p
+4,Littell,0,f11.51a,f5.28p
+6,Adna,0,11.54a,5.25p
+12,Ceres,0,f12.05p,f5.13p
+14,Meskill Pit,0,f12.09p,f5.08p
+17,Dryad,0,12.19p,4.57p
+19,Doty,0,12.23p,4.52p
+23,Pe Ell,0,12.33p,4.38p
+30,Pluvius,0,f12.49p,f4.20p
+36,Frances,0,1.04p,3.55p
+39,Lebam,0,1.10p,3.47p
+42,Nallpee,0,f1.17p,f3.40p
+43,Holcomb,0,f1.20p,f3.37p
+48,Menlo,0,1.30p,3.29p
+52,Willapa,0,1.39p,3.21p
+54,Raymond,0,1.58p,3.15p
+58,South Bend,1,ar 2.08p,lv 3.00p

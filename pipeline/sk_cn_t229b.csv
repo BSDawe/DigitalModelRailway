@@ -1,0 +1,9 @@
+# Canadian National, Table 229, Alsask - Acadia Valley - Kindersley: section B, Eyre - Acadia Valley (branch). Official Guide, April 25, 1948
+#   (scan cn1948_sk/table229_alsask_kindersley.png). MOUNTAIN TIME. Saskatchewan. Miles from Alsask by Eyre as printed (Eyre 12.6, Acadia Valley 36.9).
+# Only M332 uses the branch (see sk_cn_t229a.csv): Eyre ar 8.45 a.m. (no separate departure printed; entered as the Eyre call), Acadia Valley ar 10.10 a.m.;
+#   back Acadia Valley lv h11.45 a.m. (h = Thursday only), Eyre lv 1.15 p.m. (no arrival printed; the departure is entered). Entered as two legs M332 (out) and M332R (back).
+#train col=M332 num=332 dir=down days="Wed,Sat" kind=mixed from="Alsask" note="Out leg of M332 from Alsask; h: Wednesday and Saturday (Brendan, 12 Oct)."
+#train col=M332R num=332 dir=up days="Wed,Sat" kind=mixed to="Kindersley" note="Return leg of M332: Acadia Valley 11.45 a.m. marked h: Wednesday and Saturday (Brendan, 12 Oct)."
+mile,station,principal,prov,tz,M332,M332R
+12.6,Eyre,1,SK,M,8.45a,1.15p
+36.9,Acadia Valley,1,SK,M,ar 10.10a,lv 11.45a

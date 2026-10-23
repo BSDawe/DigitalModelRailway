@@ -1,0 +1,20 @@
+# Canadian Pacific Table 172, Alaska service: Vancouver - Alert Bay - Prince Rupert - Ketchikan - Wrangell - Juneau - Skagway, all year round
+# (Brendan, 13 Oct 2026, from his spreadsheet of the table; not a scan). Times: only Vancouver is timed (lv 9.00 p.m., ar 9.00 a.m.);
+# the other ports give a.m. or p.m. on a date. One row per sailing: the date at each port (June/July 1948). The map week is about 5-11 July:
+# Princess Norah's 26 June trip ends Vancouver Mon 5 July; Princess Louise's 3 July sailing is out the whole week (Skagway ar Wed 7, lv Thu 8,
+# Vancouver Mon 12); Princess Norah's 7 July sailing leaves Wed 7 (Skagway Sun 11). Each ship sails about every 10-11 days.
+port,arrlv,half,Princess Louise Jun 23,Princess Norah Jun 26,Princess Louise Jul 3,Princess Norah Jul 7
+Vancouver,lv,9.00p,Jun 23,Jun 26,Jul 3,Jul 7
+Alert Bay,lv,am,Jun 24,Jun 27,Jul 4,Jul 8
+Prince Rupert,lv,am,Jun 25,Jun 28,Jul 5,Jul 9
+Ketchikan,lv,pm,Jun 25,Jun 28,Jul 5,Jul 9
+Wrangell,lv,am,Jun 26,Jun 29,Jul 6,Jul 10
+Juneau,lv,pm,Jun 26,Jun 29,Jul 6,Jul 10
+Skagway,ar,am,Jun 27,Jun 30,Jul 7,Jul 11
+Skagway,lv,pm,Jun 28,Jul 1,Jul 8,Jul 12
+Juneau,lv,am,Jun 29,Jul 2,Jul 9,Jul 13
+Wrangell,lv,pm,Jun 29,Jul 2,Jul 9,Jul 13
+Ketchikan,lv,am,Jun 30,Jul 3,Jul 10,Jul 14
+Prince Rupert,lv,pm,Jun 30,Jul 3,Jul 10,Jul 14
+Alert Bay,lv,pm,Jul 1,Jul 4,Jul 11,Jul 15
+Vancouver,ar,9.00a,Jul 2,Jul 5,Jul 12,Jul 16

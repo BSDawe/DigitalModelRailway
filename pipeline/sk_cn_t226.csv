@@ -1,0 +1,19 @@
+# Canadian National, Table 226, Prince Albert - Shellbrook - Medstead - Turtleford. Official Guide, April 25, 1948 (scan cn1948_sk/table226_princealbert_turtleford.png).
+# Times as printed: MOUNTAIN TIME ("M.T." head). All stations in Saskatchewan. Miles from Prince Albert as printed (Shellbrook 28.7, as in Table 180).
+#   Shellbrook printed "lv. Shellbrook ar." with one time per train. Only these five stations are printed.
+# Key to signs: none on this scan. Used: h Thursday only; u Friday only (Table 193-201 key); M mixed train. y (M287 Prince Albert 7.15 a.m.) is not in the
+#   193-201 key; "Tuesday and Friday" in the Table 180-184 key - entered Tue,Fri, IN DOUBT.
+# Table 225 (sk_cn_t225b.csv comments) prints the Medstead - Turtleford part of these four trains with the intermediate stations (miles from Turtleford):
+#   Hartwell 6.0, Fairholme 23.4, Robinhood 41.1, Medstead 46.9: M288 h7.00a, 7.20a, 8.20a, 9.30a, ar 9.45a; No. 80 u6.00a, 6.17a, 6.56a, 7.36a, ar 7.50a;
+#   M287 ar 6.00p, 5.35p, 4.25p, 3.10p, lv 2.45p; No. 79 ar 10.30p, 10.10p, 9.26p, 8.44p, lv 8.30p. Not added as rows here (not printed in Table 226).
+# Table 225 pairs them with Medstead - North Battleford trains: 281-79, M289-287, 80-282, M288-290 (sk_cn_t225c/d.csv).
+#train col=No79 num=79 dir=down days="Fri" kind=passenger note="Prince Albert 4.30 p.m. marked u (Friday only). Kind not printed (no M)."
+#train col=M287 num=287 dir=down days="Tue,Thu" kind=mixed note="Prince Albert 7.15 a.m. marked y: Tuesday and Thursday (key for Tables 224-233) (Brendan, 12 Oct)."
+#train col=No80 num=80 dir=up days="Fri" kind=passenger note="Turtleford 6.00 a.m. marked u (Friday only). Kind not printed."
+#train col=M288 num=288 dir=up days="Wed,Sat" kind=mixed note="Turtleford 7.00 a.m. marked h: Wednesday and Saturday (key for Tables 224-233, Brendan 12 Oct)."
+mile,station,principal,prov,tz,No79,M287,No80,M288
+0.0,Prince Albert,1,SK,M,lv 4.30p,lv 7.15a,ar 11.30a,ar 5.30p
+28.7,Shellbrook,1,SK,M,5.30p,8.45a,10.30a,4.10p
+78.4,Spiritwood,0,SK,M,7.25p,12.20p,8.39a,12.00p
+103.7,Medstead,1,SK,M,8.30p,2.45p,7.50a,9.55a
+150.6,Turtleford,1,SK,M,ar 10.30p,ar 6.00p,lv 6.00a,lv 7.00a

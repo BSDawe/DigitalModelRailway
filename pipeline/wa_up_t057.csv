@@ -1,0 +1,44 @@
+# Union Pacific Railroad, Table 57, Pendleton and Umatilla to Spokane, table of April 4, 1948 (Official Guide). Times as printed: PACIFIC TIME.
+# This file: the Umatilla - Ayer - Riparia - La Crosse - Colfax - Tekoa - Spokane line, miles from Umatilla as printed (Ayer 81, Colfax 159,
+# Tekoa 198, Spokane 247). Trains: No. 62 Ayer - Colfax and No. 61 Colfax - Ayer; No. 68 Tekoa - Spokane and No. 67 Spokane - Tekoa.
+# Kind not printed: entered as passenger. Signs: * daily; f stops on signal. Redlin and East Spokane show "- -" for Nos. 68/67.
+# NOT ENTERED: Nos. 66, 20, 65, 19 between Umatilla, Ayer and Spokane ("Runs via Cheney. See Table 56"; Umatilla and Ayer times agree with
+# wa_up_t056c); the Pendleton - Walla Walla - Bolles - Alto and Relief - Starbuck - Tucannon rows, which have no trains ("For Motor Bus service
+# between Pendleton and Walla Walla, see Union Pacific Stages bus folder"; Nos. 66/65 "Runs via Echo, Stanfield and Hermiston, see Table 5").
+# The Spokane row carries "(Ft. George Wright)" below it.
+# Nos. 62/61 between Ayer and Colfax appear also in UP Table 56 with the same times.
+#train col=No62 num=62 dir=down days="daily" kind=passenger from="Ayer" to="Colfax"
+#train col=No68 num=68 dir=down days="daily" kind=passenger from="Tekoa" to="Spokane"
+#train col=No61 num=61 dir=up days="daily" kind=passenger from="Colfax" to="Ayer"
+#train col=No67 num=67 dir=up days="daily" kind=passenger from="Spokane" to="Tekoa"
+mile,station,principal,No62,No68,No61,No67
+0,Umatilla,1,,,,
+81,Ayer,1,lv 5.45a,,ar 9.30p,
+94,Tucannon,1,6.12a,,9.01p,
+99,Riparia,1,6.22a,,8.50p,
+104,Canyon,0,f6.31a,,f8.36p,
+112,Hay,0,f6.45a,,f8.21p,
+123,La Crosse,1,7.06a,,7.57p,
+133,Winona,1,7.20a,,7.40p,
+139,Endicott,0,7.29a,,7.29p,
+146,Thera,0,f7.39a,,f7.16p,
+150,Diamond,0,f7.45a,,f7.09p,
+154,Mockonema,0,f7.51a,,f7.02p,
+159,Colfax,1,ar 8.05a,,lv 6.50p,
+165,Glenwood,0,,,,
+171,Elberton,0,,,,
+177,Garfield,0,,,,
+186,Farmington,0,,,,
+192,Seltice,0,,,,
+198,Tekoa,1,,lv 5.25p,,ar 9.45a
+205,Latah,0,,5.38p,,9.25a
+213,Fairfield,0,,5.53p,,9.11a
+220,Rockford,0,,6.05p,,8.58a
+225,Manito,1,,f6.16p,,8.51a
+228,Freeman,0,,f6.21p,,f8.45a
+231,Mica,0,,f6.27p,,8.40a
+234,Redlin,0,,,,
+237,Chester,0,,f6.39p,,f8.29a
+240,Dishman,0,,6.45p,,8.25a
+244,East Spokane,0,,,,
+247,Spokane,1,,ar 7.05p,,lv 8.10a

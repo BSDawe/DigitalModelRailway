@@ -1,0 +1,47 @@
+# Union Pacific Railroad, Table 56, Portland and Spokane, table of April 4, 1948 (Official Guide, "Oregon and Washington"). Times as printed:
+# PACIFIC TIME. Miles from Portland as printed (Umatilla 183, Wallula 211, Ayer 264, Spokane 368 via Cheney).
+# This file: Portland - The Dalles - Umatilla (Oregon, Columbia River south bank), the Oregon part of The Spokane Nos. 20 and 19.
+# Wallula - Spokane is wa_up_t056c. "For complete schedules between Umatilla and Portland, see Table 5" (printed beside the table).
+# Signs: * daily; f stops on signal. No. 20 shows a "#"-like sign and No. 19 a trident-like sign at most intermediate stations, with no time;
+# key not on the scans supplied (left empty). No. 19 here agrees with UP Table 5 (The Dalles 5.00, Hood River 5.40, Portland 7.30 a.m.).
+# Umatilla has one time per train in this section (No. 20 ar 1.50 a.m., No. 19 lv 2.20 a.m.); the other is in wa_up_t056c.
+#train col=No20 num=20 dir=down days="daily" kind=passenger from="Portland" to="Spokane" note="The Spokane."
+#train col=No19 num=19 dir=up days="daily" kind=passenger from="Spokane" to="Portland" note="The Spokane."
+mile,station,principal,No20,No19
+0,Portland,1,lv 9.20p,ar 7.30a
+4,Graham,0,,
+8,Clarnie,0,,
+13,Fairview,0,,
+16,Troutdale,0,,
+22,Rooster Rock,0,,
+26,Bridal Veil,0,,
+30,Multnomah Falls,0,,
+31,Oneonta,0,,
+34,Dodson,0,,
+39,Bonneville,0,,
+43,Cascade Locks,0,,
+50,Wyeth,0,,
+53,Lindsey,0,,
+63,Hood River,1,10.48p,5.40a
+69,Mosier,0,,
+76,Rowena,0,,
+84,The Dalles,1,11.25p,5.00a
+92,Dune,0,,
+96,Celilo,0,,
+101,Miller,0,,
+104,Biggs,1,,
+107,Grant,0,,
+109,Rufus,0,,
+112,Day,0,,
+115,Goff,0,,
+119,Hook,0,,
+123,Quinton,0,,
+130,Blalock,0,,
+138,Arlington,1,12.39a,3.29a
+147,Willows,0,,
+148,Heppner Junction,1,,
+153,Boulder,0,,
+158,Castle,0,,
+172,Judson,0,,
+176,Irrigon,0,f1.30a,f2.33a
+183,Umatilla,1,ar 1.50a,lv 2.20a

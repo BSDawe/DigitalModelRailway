@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2"><Document><name>Dashed lines: straight estimates on the railway map</name>
+<Style id="cn"><LineStyle><color>ff446b2f</color><width>3</width></LineStyle></Style>
+<Style id="cp"><LineStyle><color>ff2c1e7a</color><width>3</width></LineStyle></Style>
+<Style id="nar"><LineStyle><color>ff864f2c</color><width>3</width></LineStyle></Style>
+<Folder><name>Estimated track (straight from station to station)</name>
+</Folder><Folder><name>Stations on those stretches</name>
+</Folder></Document></kml>

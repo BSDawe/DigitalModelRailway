@@ -1,0 +1,13 @@
+# Canadian Pacific, Table 118, Wilkie - Kelfield.
+# From the Canadian Pacific public timetable of about 1948 (scan cp1948_sk/tables117_119_moosejaw_kerrobert_macklin_wilkie.png, printed sideways).
+# Times as printed: MOUNTAIN TIME ("Mountain Time" heads the station column). All stations in Saskatchewan.
+# Signs (explanation of signs on this page): f = stops on signal; M = mixed train.
+# Miles from Wilkie as printed. "Wilkie 92" refers to Table 92. Handel 12.00 is noon (column headed A.M., foot P.M.).
+#train col=M418 num=418 dir=down days="Thu" kind=mixed
+#train col=M417 num=417 dir=up days="Thu" kind=mixed
+mile,station,principal,prov,tz,M418,M417
+0.0,Wilkie,1,SK,M,lv 10.00a,ar 4.45p
+12.2,Cathkin,0,SK,M,f10.40a,f3.55p
+17.3,Leipzig,0,SK,M,11.15a,3.35p
+26.1,Handel,0,SK,M,12.00p,2.50p
+35.4,Kelfield,1,SK,M,ar 12.45p,lv 2.00p

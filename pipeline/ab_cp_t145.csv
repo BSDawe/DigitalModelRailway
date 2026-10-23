@@ -1,0 +1,19 @@
+# Canadian Pacific Railway, Table 145, Lethbridge - Turin: mixed trains M648 and M649. Canadian Pacific public timetable, 1948 (page 41).
+# Times as printed: MOUNTAIN TIME.
+# Signs: M before the number = mixed train; f = stops on signal. A double bar after Lethbridge = meal station. "151" after Coalhurst = the
+# connecting table (the Crowsnest line, which the train uses from Lethbridge to Coalhurst). Days from the column headings: both "Thu.", out and
+# back the same day.
+# All in Alberta. M648: A.M. at the head, P.M. at the foot, light type to Picture Butte 11.40, heavy from Iron Springs 12.30. M649 all p.m.
+# Slow running as printed, checked three times on the scan: M648 takes an hour for the 6.3 miles Lethbridge - Coalhurst (9.00 to 10.00) and an
+# hour for the 3.3 miles Piyami - Picture Butte (10.40 to 11.40), then 50 minutes for 5.5 miles to Iron Springs: a mixed train's working time.
+# Nothing in doubt: every figure was read twice from separate enlargements and agreed.
+#train col=M648 num=648 dir=down days="Thu" kind=mixed note="Lethbridge to Turin, Thursdays only. Much station time on the way."
+#train col=M649 num=649 dir=up days="Thu" kind=mixed note="Turin to Lethbridge, Thursdays only, the return of 648."
+mile,station,principal,M648,M649
+0.0,Lethbridge,1,lv 9.00a,ar 4.45p
+6.3,Coalhurst,1,10.00a,4.10p
+12.3,Diamond City,0,10.15a,3.40p
+16.2,Piyami,0,f10.40a,f3.15p
+19.5,Picture Butte,0,11.40a,3.00p
+25.0,Iron Springs,0,12.30p,2.20p
+32.6,Turin,1,ar 12.50p,lv 2.00p

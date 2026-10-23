@@ -1,0 +1,61 @@
+# Canadian Pacific Railway, Table 138, Calgary - Red Deer - Lacombe - Wetaskiwin - Edmonton (all in Alberta).
+# From the Canadian Pacific public timetable, 1948 (scans table138_calgary_edmonton_LARGE.png and tables138_143_calgary_edmonton_kneehill.png;
+# the two captures agree on every figure). Times as printed: MOUNTAIN TIME ("Mountain Time" is printed at the head of the station column).
+# Signs. The scans of this page do not show its "Explanation of signs"; the meanings are taken from the explanation printed on the page of
+# Tables 149/150 of the same timetable (tables149_150_signs.png):
+#   f = stops on signal;  || after a station (Calgary, Red Deer, Edmonton) = meal station;  star (in the equipment list) = regularly assigned
+#   cars air-conditioned;  the numbers after station names (Calgary 6, Red Deer 142, Lacombe 139 141, Wetaskiwin 92, Leduc 141,
+#   So. Edmonton 92 144, Edmonton 92) are the tables of connecting lines.
+#   z = printed before No. 51's times at Millet (6.03) and Leduc (6.24) and No. 52's time at Millet (11.35; not at Leduc, 11.17). MEANING NOT
+#   IN THE SCANS (on the 149/150 page z is "stops to detrain from east of Stirling", so here it is probably a stop only to set down or take up
+#   passengers of the Winnipeg line). The times are entered plain and the sign is given in the train's note.
+#   A cross-like sign is printed after Edmonton (before "92"); its meaning is not in the scans.
+# Days are in the column headings: 521 to 526 Daily, 527 and 528 Ex. Sun., 51 Ex. Mon., 52 Ex. Sat. No train in this table has the M of a
+# mixed train, and there is no motor train: 523/526 carry a buffet parlor car, 524/525 a cafe parlor car, 521/522 sleepers.
+# Red Deer is printed twice (an arrive row and a leave row, both mile 94.9): both times are given in one cell.
+# Nos. 527/528 (Hardisty) and 51/52 (Winnipeg) are trains of Table 92: they come on to this line at Wetaskiwin, and the column is blank above
+# it ("FROM HARDISTY", "FROM WINNIPEG", "TO HARDISTY", "TO WINNIPEG" printed down the column). This table gives their calls between
+# Wetaskiwin and Edmonton. The Wetaskiwin times here are those on the Edmonton side (527 lv 10.30a, 51 lv 5.45a, 528 ar 7.30p, 52 ar 11.50p);
+# Table 92 prints the times on the Hardisty side there (527 10.20a, 51 5.35a, 528 7.35p, 52 11.54p). So. Edmonton and Edmonton agree in both.
+# Light and heavy type / headings: 523 a.m. to Innisfail 11.55, p.m. from Penhold 12.12; 521 leaves Calgary 11.45 p.m., a.m. from Balzac 12.17;
+# 524 leaves Edmonton 8.00 a.m., p.m. from Carstairs 12.05; 522 leaves Edmonton 11.55 p.m., a.m. from So. Edmonton 12.05;
+# 526 Edmonton 12.30 p.m. (half past noon), p.m. all the way.
+# Long stops the scan really shows: Red Deer 20 min (521, 522), 15 min (523, 526), 10 min (524, 525).
+#train col=No527 num=527 dir=down days="ex Sun" kind=passenger from="Hardisty" note="From Hardisty (Table 92); joins this line at Wetaskiwin."
+#train col=No51 num=51 dir=down days="Tue,Wed,Thu,Fri,Sat,Sun" kind=passenger from="Winnipeg" note="From Winnipeg by Saskatoon and Hardisty (Table 92); joins this line at Wetaskiwin. Headed Ex. Mon. Sign z (meaning not in the scans) at Millet and Leduc."
+#train col=No521 num=521 dir=down days="daily" kind=passenger note="Night train. Coaches, sleepers (12 sec. D.R.; 8 sec. 4 D.B.R.), air-conditioned; sleepers open 10.00 p.m., occupancy until 8.00 a.m."
+#train col=No525 num=525 dir=down days="daily" kind=passenger note="The Chinook. Coaches, cafe parlor car, air-conditioned."
+#train col=No523 num=523 dir=down days="daily" kind=passenger note="Coaches, buffet parlor car, air-conditioned."
+#train col=No524 num=524 dir=up days="daily" kind=passenger note="The Chinook. Coaches, cafe parlor car, air-conditioned."
+#train col=No526 num=526 dir=up days="daily" kind=passenger note="Coaches, buffet parlor car, air-conditioned."
+#train col=No522 num=522 dir=up days="daily" kind=passenger note="Night train. Coaches, sleepers (12 sec. D.R.; 8 sec. 4 D.B.R.), air-conditioned; sleepers open 10.00 p.m., occupancy until 8.00 a.m."
+#train col=No528 num=528 dir=up days="ex Sun" kind=passenger to="Hardisty" note="To Hardisty (Table 92); leaves this line at Wetaskiwin."
+#train col=No52 num=52 dir=up days="Mon,Tue,Wed,Thu,Fri,Sun" kind=passenger to="Winnipeg" note="To Winnipeg by Hardisty and Saskatoon (Table 92); leaves this line at Wetaskiwin. Headed Ex. Sat. Sign z (meaning not in the scans) at Millet."
+mile,station,principal,No527,No51,No521,No525,No523,No524,No526,No522,No528,No52
+0.0,Calgary,1,,,lv 11.45p,lv 5.00p,lv 9.30a,ar 1.15p,ar 6.50p,ar 6.20a,,
+10.2,Beddington,0,,,,,f9.55a,,,,,
+15.0,Balzac,0,,,f12.17a,,10.02a,,f6.17p,,,
+20.4,Airdrie,0,,,f12.25a,5.35p,10.11a,12.36p,6.07p,f5.38a,,
+30.3,Crossfield,0,,,f12.42a,5.50p,10.30a,12.21p,5.50p,5.21a,,
+40.8,Carstairs,0,,,f12.58a,6.08p,10.48a,12.05p,5.33p,5.04a,,
+47.8,Didsbury,0,,,f1.10a,6.19p,11.01a,11.54a,5.20p,4.52a,,
+57.9,Olds,0,,,1.29a,6.35p,11.19a,11.39a,5.03p,4.35a,,
+68.6,Bowden,0,,,f1.47a,6.50p,11.37a,11.22a,4.46p,f4.18a,,
+76.5,Innisfail,0,,,f2.00a,7.04p,11.55a,11.11a,4.33p,4.06a,,
+85.2,Penhold,0,,,f2.16a,7.17p,12.12p,10.57a,4.18p,f3.52a,,
+94.9,Red Deer,1,,,ar 2.35a / lv 2.55a,ar 7.35p / lv 7.45p,ar 12.30p / lv 12.45p,ar 10.35a / lv 10.45a,ar 3.45p / lv 4.00p,ar 3.15a / lv 3.35a,,
+106.7,Blackfalds,0,,,f3.25a,f8.01p,1.06p,10.15a,3.22p,f2.41a,,
+113.2,Lacombe,1,,,3.39a,8.11p,1.20p,10.03a,3.09p,2.25a,,
+122.5,Morningside,0,,,,,1.40p,9.46a,f2.52p,f2.08a,,
+129.8,Ponoka,0,,,4.17a,8.36p,1.54p,9.36a,2.39p,1.56a,,
+135.4,Menaik,0,,,,,f2.07p,,,,,
+141.5,Hobbema,0,,,f4.44a,f8.53p,2.20p,9.19a,2.20p,f1.35a,,
+146.4,Navarre,0,,,,,f2.29p,,,,,
+152.0,Wetaskiwin,1,lv 10.30a,lv 5.45a,5.05a,9.08p,2.40p,9.06a,1.52p,1.18a,ar 7.30p,ar 11.50p
+161.7,Millet,0,10.45a,6.03a,f5.23a,9.23p,2.59p,8.49a,1.30p,f12.59a,7.12p,11.35p
+167.9,Kavanagh,0,f10.54a,,,,f3.10p,,f1.20p,,f7.02p,
+174.0,Leduc,1,11.04a,6.24a,5.44a,9.40p,3.21p,8.33a,1.11p,12.37a,6.52p,11.17p
+179.1,Nisku,0,f11.12a,,,,f3.30p,,1.01p,,f6.43p,
+185.5,Ellerslie,0,f11.21a,,,,f3.40p,,f12.51p,,f6.33p,
+191.8,So. Edmonton,1,11.31a,6.55a,6.15a,10.06p,3.50p,8.10a,12.40p,12.05a,6.23p,10.50p
+194.0,Edmonton,1,ar 11.40a,ar 7.05a,ar 6.25a,ar 10.15p,ar 4.00p,lv 8.00a,lv 12.30p,lv 11.55p,lv 6.15p,lv 10.40p

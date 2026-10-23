@@ -1,0 +1,14 @@
+# Union Pacific Railroad, Table 5 continued (Chicago, Omaha, ... Idaho, Oregon and Washington - Continued), table of February 29, 1948 (Official
+# Guide page 841): the eastbound summary rows Portland - The Dalles - Pendleton (miles as printed on that page, from Omaha: Portland 2012).
+# Times as printed: PACIFIC TIME (the summary says "La Grande (P.T.)"; Huntington and east Mountain time).
+# !! THESE TRAINS DO NOT ENTER WASHINGTON (Portland - Pendleton - La Grande - Idaho, all in Oregon). Entered only because the map shows the
+# Columbia River line; they may be dropped. Only three Oregon stations are printed. La Grande (1722) is the next station beyond Pendleton.
+# Column "12-4": No. 12 (Idahoan, eastbound) Portland 8.10 a.m., on as No. 4 from Pocatello; column "18": No. 18 (Portland Rose, eastbound).
+# NOT ENTERED: the summary rows Seattle (King St.) lv 11.30 p.m. - Tacoma 1.00 a.m. - Portland ar 6.45 a.m. (pool No. 402) and Seattle (Un. Sta.)
+# lv 4.00 p.m. - Tacoma 5.10 p.m. - Portland ar 8.45 p.m. (pool No. 458), both in wa_np_t004 / wa_gn_t046 with the same times.
+#train col=No12 num=12 dir=up days="daily" kind=passenger from="Portland" to="Pocatello" note="Idahoan (column 12-4). Does not enter Washington."
+#train col=No18 num=18 dir=up days="daily" kind=passenger from="Portland" to="Chicago" note="Portland Rose. Does not enter Washington."
+mile,station,principal,No12,No18
+1796,Pendleton,1,1.30p,2.25a
+1928,The Dalles,1,10.20a,11.15p
+2012,Portland,1,lv 8.10a,lv 9.10p

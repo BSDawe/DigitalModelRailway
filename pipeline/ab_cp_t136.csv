@@ -1,0 +1,25 @@
+# Canadian Pacific, Table 136 "BASSANO-ROSEMARY-KNEEHILL" (public timetable, 1948; date of issue not on the scan). Wholly in Alberta.
+# Times as printed: MOUNTAIN TIME. Miles as printed, from Bassano.
+# Signs: M before a train number = mixed train; f = stops on signal.
+# Table references printed after stations: Rosemary 132 (Bassano to Rosemary is over the Table 132 line; the branch leaves it at Rosemary), Kneehill 143.
+# Rosemary and East Coulee are each printed twice (Ar / Lv, same mile): entered here on one row.
+# The Bassano - Countess - Rosemary times of both trains are printed again in Table 132 (same figures, same days).
+#train col=M633 num=633 dir=down days="Wed" kind=mixed note="Bassano to Kneehill by Rosemary; 30 minutes at Rosemary and at East Coulee."
+#train col=M634 num=634 dir=up days="Tue" kind=mixed note="Kneehill to Bassano by Rosemary; 45 minutes at East Coulee, 20 at Rosemary."
+mile,station,principal,M633,M634
+0.0,Bassano,1,lv 8.00a,ar 2.40p
+8.5,Countess,0,8.25a,2.10p
+17.3,Rosemary,1,ar 8.50a / lv 9.20a,ar 1.20p / lv 1.40p
+22.2,Matziwin,0,f9.35a,f1.05p
+29.3,Verger,0,9.55a,f12.40p
+37.3,Control,0,10.20a,12.10p
+42.4,Bull Pound,0,10.40a,11.50a
+47.8,Finnegan,0,11.00a,11.25a
+54.0,Trefoil,0,11.30a,f11.00a
+62.9,Dorothy,0,12.10p,10.30a
+70.9,East Coulee,0,ar 12.45p / lv 1.15p,ar 9.15a / lv 10.00a
+72.8,Lehigh,0,f1.20p,f9.00a
+75.8,Willow Creek,0,f1.30p,f8.50a
+79.9,Rosedale,0,1.50p,8.30a
+84.3,Drumheller,0,2.15p,8.20a
+86.5,Kneehill,1,ar 2.30p,lv 8.00a

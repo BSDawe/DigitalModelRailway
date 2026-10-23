@@ -1,0 +1,18 @@
+# Northern Pacific Railway, Table 3, Main Line Trains (continued), table of April 4, 1948 (Official Guide page 1092): the Tacoma section,
+# East Auburn - Auburn - Sumner - Puyallup - Tacoma. The trains come from / go on to Spokane and the east over wa_np_t003a.csv.
+# Times as printed: PACIFIC TIME. Signs: * daily; f stops on flag.
+# AUBURN: printed twice ("arr. Auburn" mile 1870 and "lve. +Auburn" mile 1874, same times; the Seattle section prints both at 1870). Folded into
+# one row at mile 1870; the printed 1874 looks like a misprint.
+# Nos. 1 and 3 show identical times (East Auburn 6.46 - Tacoma 7.30 a.m.): probably one Tacoma section for both, entered as printed.
+#train col=No5 num=5 dir=down days="daily" kind=passenger from="Spokane" to="Tacoma" note="Tacoma section of No. 5 (Spokane - Yakima - Seattle local)."
+#train col=No3 num=3 dir=down days="daily" kind=passenger from="St. Paul" to="Tacoma" note="Tacoma section of No. 3; same times as No. 1's."
+#train col=No1 num=1 dir=down days="daily" kind=passenger from="Chicago" to="Tacoma" note="North Coast Limited, Tacoma section; same times as No. 3's."
+#train col=No2 num=2 dir=up days="daily" kind=passenger from="Tacoma" to="Chicago" note="North Coast Limited, Tacoma section."
+#train col=No4 num=4 dir=up days="daily" kind=passenger from="Tacoma" to="St. Paul" note="Tacoma section of No. 4."
+#train col=No6 num=6 dir=up days="daily" kind=passenger from="Tacoma" to="Spokane" note="Tacoma section of No. 6 (Seattle - Yakima - Spokane local)."
+mile,station,principal,No5,No3,No1,No2,No4,No6
+1869,East Auburn,1,lv 6.21p,lv 6.46a,lv 6.46a,ar 10.47p,ar 8.34a,ar 6.07p
+1870,Auburn,1,6.27p,6.51a,6.51a,10.43p,8.30a,6.03p
+1878,Sumner,0,6.40p,7.02a,7.02a,f10.29p,8.13a,5.49p
+1881,Puyallup,1,6.47p,7.09a,7.09a,f10.24p,8.06a,5.44p
+1889,Tacoma,1,ar 7.10p,ar 7.30a,ar 7.30a,lv 10.10p,lv 7.50a,lv 5.30p

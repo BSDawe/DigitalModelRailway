@@ -1,0 +1,31 @@
+# Canadian Pacific, Table 123, Weyburn - Amulet - Cardross - Assiniboia.
+# From the Canadian Pacific public timetable of about 1948 (scan cp1948_sk/tables123_125_weyburn_assiniboia_killdeer.png, printed sideways).
+# Times as printed: MOUNTAIN TIME ("Mountain Time" heads the station column). All stations in Saskatchewan.
+# Signs: f = stops on signal; || = meal station (Assiniboia); M = mixed train; .. = does not stop. (The explanation of signs is not on this page; the
+# same signs are explained on the Tables 117-119 page.)
+# The table has three blocks: Weyburn - Amulet (miles from Weyburn 0.0 - 44.2), Amulet - Cardross (miles from Amulet 0.0 - 47.3) and
+# Amulet - Assiniboia (miles from Weyburn 44.2 - 111.3). Miles kept as printed, so this file has the Weyburn - Amulet - Assiniboia line
+# (309/310 and the Weyburn - Amulet part of M429/M430); the Amulet - Cardross branch is in sk_cp_t123b.csv.
+# "Weyburn 108" refers to Table 108; 309 arrives Assiniboia "12.00 NOON".
+#train col=No309 num=309 dir=down days="Mon,Wed,Fri" kind=passenger
+#train col=M429 num=429 dir=down days="Mon,Thu" kind=mixed to="Cardross" note="Weyburn to Amulet here; continues Amulet 11.10a - Cardross 4.30p (sk_cp_t123b.csv)."
+#train col=No310 num=310 dir=up days="Tue,Thu,Sat" kind=passenger
+#train col=M430 num=430 dir=up days="Tue,Fri" kind=mixed from="Cardross" note="Comes from Cardross 7.45a - Amulet 11.40a (sk_cp_t123b.csv); Amulet 12.10p to Weyburn here."
+mile,station,principal,prov,tz,No309,M429,No310,M430
+0.0,Weyburn,1,SK,M,lv 7.40a,lv 8.30a,ar 7.00p,ar 2.30p
+6.5,Tatagwa,0,SK,M,f7.55a,f8.50a,f6.42p,f2.05p
+10.6,Yeoman,0,SK,M,8.04a,9.00a,6.33p,1.50p
+16.5,Trossachs,0,SK,M,8.17a,9.20a,6.18p,1.30p
+25.8,Axford,0,SK,M,8.37a,9.50a,5.58p,1.00p
+30.6,Khedive,0,SK,M,8.47a,10.05a,5.47p,12.45p
+37.6,Pangman,0,SK,M,9.03a,10.30a,5.32p,12.25p
+44.2,Amulet,1,SK,M,9.21a,ar 10.50a,5.14p,lv 12.10p
+51.9,Ogema,0,SK,M,9.41a,,4.55p,
+57.7,Glasnevin,0,SK,M,9.53a,,4.40p,
+67.3,Horizon,0,SK,M,10.13a,,4.20p,
+75.2,Viceroy,0,SK,M,10.32a,,4.03p,
+81.8,Landscape,0,SK,M,10.46a,,3.48p,
+88.1,Verwood,0,SK,M,11.01a,,3.35p,
+94.6,Readlyn,0,SK,M,11.17a,,3.20p,
+104.0,Willows,0,SK,M,11.37a,,3.00p,
+111.3,Assiniboia,1,SK,M,ar 12.00p,,lv 2.45p,

@@ -1,0 +1,14 @@
+# Canadian National, Table 173, Maryfield - Carlyle - Lampman - Estevan - Radville: section B, Lampman - Goodwater - Colgate - Radville (mixed trains 305/306).
+# Official Guide, April 25, 1948 (scan cn1948_sk/tables172_173_regina_princealbert_maryfield_radville.png).
+# Times as printed: MOUNTAIN TIME ("Mount. time" at the foot of the table). All stations in Saskatchewan. Miles as printed, continuing from
+#   Maryfield via Carlyle (Lampman 67.7).
+# Signs: M = mixed train. 306 Radville 1.45 p.m. marked n: "n Monday and Friday" in the Table 193-201 key (n is not in the Table 180-184 key);
+#   the key for this page is not on the scan.
+# 305 Lampman 9.00 a.m. is marked g: no g in either key seen. DAYS OF 305 UNKNOWN: entered Mon,Fri as for the return train 306 (an assumption, and doubtful: 306 leaves Radville 1.45 p.m., before 305 reaches it at 2.00 p.m., so the two may not run on the same days).
+#train col=M305 num=305 dir=down days="Tue" kind=mixed note="Lampman 9.00 a.m. marked g: Tuesday only (key for CN Tables 171-179C, Brendan 12 Oct)."
+#train col=M306 num=306 dir=up days="Mon" kind=mixed note="Radville 1.45 p.m. marked n: Monday only (key for CN Tables 171-179C, Brendan 12 Oct)."
+mile,station,principal,prov,tz,M305,M306
+67.7,Lampman,1,SK,M,lv 9.00a,ar 5.40p
+112.0,Goodwater,0,SK,M,11.50a,3.15p
+120.6,Colgate,0,SK,M,12.30p,2.45p
+140.0,Radville,1,SK,M,ar 2.00p,lv 1.45p

@@ -1,0 +1,38 @@
+# Northern Pacific Railway, Table 60, St. Clair, Aberdeen and Hoquiam, table of April 4, 1948 (Official Guide). Times as printed: PACIFIC TIME.
+# Signs (key beside Table 58): dagger daily except Sunday; f stops on flag.
+# The columns are headed "422-461" and "464-423": entered as Nos. 422/423 Seattle - St. Clair and Nos. 461/464 St. Clair - Hoquiam (Table 4
+# carries Nos. 422/423 to and from St. Clair only). St. Clair has one time per train ("lve." 10.37 a.m. / "arr." 5.34 p.m.), used for both.
+# Seattle is printed "Seattle (P.T.)"; Table 4 gives King St. Sta. for these trains.
+# ROUTE DIFFERENCE: here Nos. 422/423 run Tacoma - Lakeview - Camp Murray - Fort Lewis - St. Clair (St. Clair mile 64). NP Table 4 shows No. 422
+# via Steilacoom (crescent-moon sign) and Nisqually 10.27 a.m. and No. 423 Nisqually 5.44 p.m. (St. Clair mile 68). St. Clair times agree.
+# Union Mill and Lacey are both printed mile 68; Olympia (73) is a stub off the line (mileage continues 78 at Belmore).
+# Table 61 (Portland, Olympia and Hoquiam) on the same scan is a connection table (Nos. 401/458 Portland - Tacoma and these trains Olympia -
+# Hoquiam) and is not entered again; Tables 65 (Naches Branch, Yakima - Naches) and 68 (Cowiche Branch, Yakima - Tieton) show no trains.
+#train col=No422 num=422 dir=down days="ex Sun" kind=passenger from="Seattle" to="St. Clair" note="Through to Hoquiam as No. 461 (column headed 422-461)."
+#train col=No461 num=461 dir=down days="ex Sun" kind=passenger from="St. Clair" to="Hoquiam" note="Through from Seattle as No. 422 (column headed 422-461)."
+#train col=No464 num=464 dir=up days="ex Sun" kind=passenger from="Hoquiam" to="St. Clair" note="Through to Seattle as No. 423 (column headed 464-423)."
+#train col=No423 num=423 dir=up days="ex Sun" kind=passenger from="St. Clair" to="Seattle" note="Through from Hoquiam as No. 464 (column headed 464-423)."
+mile,station,principal,No422,No461,No464,No423
+0,Seattle (King St. Sta.),1,lv 7.45a,,,ar 8.20p
+40,Tacoma,1,9.25a,,,6.42p
+48,Lakeview,1,9.46a,,,6.19p
+53,Camp Murray,0,f9.57a,,,f6.08p
+56,Fort Lewis,1,10.17a,,,6.00p
+64,St. Clair,1,ar 10.37a,lv 10.37a,ar 5.34p,lv 5.34p
+68,Union Mill,0,,f10.41a,5.26p,
+68,Lacey,0,,10.43a,5.20p,
+73,Olympia,1,,11.17a,5.08p,
+78,Belmore,0,,f11.29a,f4.47p,
+85,Little Rock,0,,11.39a,4.36p,
+88,Mima,0,,f11.44a,f4.31p,
+92,Gate,1,,11.56a,4.25p,
+97,Oakville,0,,12.04p,4.12p,
+103,Porter,0,,12.17p,4.00p,
+105,Malone,0,,12.20p,3.57p,
+110,Elma,1,,12.32p,3.48p,
+114,Satsop,0,,12.38p,3.40p,
+116,Brady,0,,f12.40p,f3.37p,
+120,Montesano,0,,12.50p,3.32p,
+128,Aberdeen Junction,1,,f1.02p,f3.18p,
+132,Aberdeen,1,,1.15p,3.10p,
+135,Hoquiam,1,,ar 1.30p,lv 3.00p,

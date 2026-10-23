@@ -1,0 +1,14 @@
+# Canadian Pacific, Table 99: La Riviere - Windygates, M249 and M250 (Wednesdays).
+# From the Canadian Pacific public timetable of about 1948 (scan cp1948_mb/t099.png, printed sideways; page "TABLES 99 to 106"). Transcribed 18 October 2026.
+# CENTRAL TIME. All stations in Manitoba. Signs: f = stops on signal; || = meal station (Winnipeg, La Riviere).
+# Miles from La Riviere as printed. M = mixed train. Both are P.M.: M249 La Riviere 3.15p - Windygates 6.00p, then M250 back Windygates 6.10p - La Riviere 9.35p.
+#train col=M249 num=249 dir=down days="Wed" kind=mixed note="La Riviere 3.15 p.m. to Windygates 6.00 p.m."
+#train col=M250 num=250 dir=up days="Wed" kind=mixed note="Windygates 6.10 p.m. to La Riviere 9.35 p.m."
+mile,station,principal,prov,tz,M249,M250
+0.0,La Riviere,1,MB,C,lv 3.15p,ar 9.35p
+7.5,Wood Bay,0,MB,C,3.45p,9.00p
+11.9,Harbor,0,MB,C,f4.00p,f8.45p
+17.3,Purves,0,MB,C,4.20p,8.15p
+23.7,Snowflake,0,MB,C,4.50p,7.45p
+33.4,Mowbray,0,MB,C,5.30p,7.00p
+39.8,Windygates,1,MB,C,ar 6.00p,lv 6.10p

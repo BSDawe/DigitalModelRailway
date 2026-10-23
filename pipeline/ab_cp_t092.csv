@@ -1,0 +1,51 @@
+# Canadian Pacific, Table 92, Winnipeg - Yorkton - Lanigan - Saskatoon - Wilkie - Edmonton: the ALBERTA part, Hayter to Edmonton.
+# From the Canadian Pacific public timetable of 1948 (scans table092_wilkie_edmonton_LARGE.png and table092_winnipeg_saskatoon_wilkie_edmonton.png).
+# Times as printed: MOUNTAIN TIME (the table is on Mountain time from Bredenbury, Sask. west; "Mtn. time" is printed against Edmonton).
+# Miles are from Winnipeg, as printed. Last Saskatchewan station: Macklin, Sask., mile 641.9; first Alberta station: Hayter, Alta., mile 649.3.
+# Times at Macklin: No51 11.40p, No52 6.00a, M419 11.15a, M420 2.30p, M481 lv 12.30p (its first figure), M480 ar 2.00p (its last figure).
+# Signs. The scans of this page do not show its "Explanation of signs"; the meanings are taken from the explanation printed on the page of
+# Tables 149/150 of the same timetable (tables149_150_signs.png) and they fit this table:
+#   f = stops on signal;  M before a train number = mixed train;  || after a station (Edmonton) = meal station;
+#   dagger = daily ex. Sun.;  double dagger = daily ex. Sat.;  paragraph sign = daily ex. Mon.
+#   On Nos. 51 and 52 these day signs change at each midnight: No. 51 leaves Winnipeg 10.15p (double dagger, daily ex. Sat.), is at Wilkie and
+#   Hayter 11.55p the next day (dagger, daily ex. Sun.), and at Provost 12.10a, Hardisty and Edmonton 7.05a the day after (paragraph sign, daily
+#   ex. Mon.). No. 52 leaves Edmonton 10.40p (double dagger, daily ex. Sat.), is at Camrose 12.46a and Hardisty (dagger, daily ex. Sun.).
+#   So No. 51 does not arrive at Edmonton on Monday morning and No. 52 does not leave Edmonton on Saturday night.
+#   A heart sign is printed after Edmonton; its meaning is not in the scans.
+# Hardisty is printed twice (Ar and Lv rows): both times are given in one cell. Wetaskiwin has "Ar ... Lv" printed but one time only.
+# Nos. 51 and 52 do not call at Bittern Lake and Gwynne; No. 51 does not call at Ohaton (No. 52 stops there on signal).
+# Light and heavy type: No. 51 Hayter 11.55 is p.m. (heavy), Provost 12.10 onward a.m. (light); No. 52 Edmonton to Wetaskiwin p.m., Camrose 12.46 onward a.m.
+# M419 Hayter 11.50 a.m. (light), Provost 12.50 p.m. (heavy): 6.8 miles in an hour, as printed. M420 and M480 Metiskow 12.00 is noon.
+# M481 is headed just above Macklin (its first time, 12.30 P.M.) and M480 ends at Macklin (2.00 P.M.); Macklin has a reference to Table 117.
+#train col=No51 num=51 dir=down days="ex Sun" kind=passenger from="Winnipeg" note="Great West. Leaves Winnipeg 10.15p daily ex. Sat., Hayter 11.55p the next day (daily ex. Sun.), arrives Edmonton the morning after (daily ex. Mon.). Coaches, tourist sleeper 13 sec., sleeper 6 sec. 2 cpt. Winnipeg-Edmonton; sleeper may be occupied in Edmonton until 8.00 a.m."
+#train col=No52 num=52 dir=up days="Mon,Tue,Wed,Thu,Fri,Sun" kind=passenger to="Winnipeg" note="Great West. Leaves Edmonton daily ex. Sat.; arrives Winnipeg 8.10a the second morning. Coaches, tourist sleeper 13 sec., sleeper 6 sec. 2 cpt. Edmonton-Winnipeg, sleeper open 9.30 p.m."
+#train col=M419 num=419 dir=down days="Mon,Fri" kind=mixed from="Wilkie" note="Leaves Wilkie 7.15a."
+#train col=M420 num=420 dir=up days="Thu,Sat" kind=mixed to="Wilkie" note="Arrives Wilkie 5.30p."
+#train col=M481 num=481 dir=down days="Wed" kind=mixed from="Macklin" note="First time printed is Macklin 12.30p."
+#train col=M480 num=480 dir=up days="Tue" kind=mixed to="Macklin" note="Arrives Macklin 2.00p."
+#train col=No527 num=527 dir=down days="ex Sun" kind=passenger note="Hardisty to Edmonton."
+#train col=No528 num=528 dir=up days="ex Sun" kind=passenger note="Edmonton to Hardisty."
+mile,station,principal,No51,No52,M419,M420,M481,M480,No527,No528
+649.3,Hayter,0,11.55p,5.10a,11.50a,1.40p,12.50p,1.40p,,
+656.1,Provost,0,12.10a,4.55a,12.50p,1.20p,1.15p,1.20p,,
+664.5,Cadogan,0,12.28a,4.42a,1.15p,12.45p,1.35p,12.45p,,
+669.3,Cairns,0,f12.35a,f4.35a,1.35p,12.15p,1.50p,12.15p,,
+675.7,Metiskow,0,12.48a,4.25a,2.10p,12.00p,2.10p,12.00p,,
+684.5,Czar,0,1.05a,4.10a,2.50p,11.30a,2.50p,11.30a,,
+691.8,Hughenden,0,1.20a,3.59a,3.25p,10.40a,3.25p,10.40a,,
+697.1,Amisk,0,1.30a,3.51a,3.55p,10.15a,3.55p,10.15a,,
+705.7,Rosyth,0,f1.45a,f3.38a,4.15p,9.40a,4.15p,9.40a,,
+711.1,Hardisty,1,ar 2.00a / lv 2.15a,ar 3.10a / lv 3.25a,ar 4.45p,lv 9.20a,ar 4.45p,lv 9.20a,lv 7.15a,ar 10.50p
+723.2,Lougheed,0,2.40a,2.40a,,,,,7.38a,10.26p
+729.9,Sedgewick,0,3.00a,2.26a,,,,,7.51a,10.12p
+736.9,Killam,0,3.15a,2.12a,,,,,8.04a,9.58p
+745.8,Strome,0,3.32a,1.56a,,,,,8.21a,9.39p
+754.9,Daysland,0,3.50a,1.38a,,,,,8.39a,9.20p
+764.3,Bawlf,0,4.08a,1.20a,,,,,8.56a,9.01p
+773.3,Ohaton,0,,f1.03a,,,,,9.13a,8.43p
+781.1,Camrose,0,4.42a,12.46a,,,,,9.28a,8.27p
+791.2,Bittern Lake,0,,,,,,,9.49a,8.07p
+797.9,Gwynne,0,,,,,,,10.02a,7.53p
+806.4,Wetaskiwin,1,5.35a,11.54p,,,,,10.20a,7.35p
+846.2,So. Edmonton,1,6.55a,10.50p,,,,,11.31a,6.23p
+848.4,Edmonton,1,ar 7.05a,lv 10.40p,,,,,ar 11.40a,lv 6.15p

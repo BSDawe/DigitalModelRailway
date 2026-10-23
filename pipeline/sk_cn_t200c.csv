@@ -1,0 +1,20 @@
+# Canadian National, Table 200, Regina - Radville - Northgate: section C, Weyburn - Talmage - Lampman - Northgate (mixed trains).
+# Official Guide, April 25, 1948 (scan cn1948_sk/tables193_201_drumheller_reserve_dauphin_saskatoon_regina_nbattleford.png, Table 200 at left).
+# Times as printed: MOUNTAIN TIME ("M.T." head, "Mt. time" foot). All stations in Saskatchewan.
+# The table has three sections: Regina - Talmage - Weyburn (0-83.6); Weyburn - Radville (0-25.5); Weyburn - Talmage - Lampman - Northgate (0-102.1).
+#   Files: sk_cn_t200a.csv, sk_cn_t200b.csv, sk_cn_t200c.csv. Lampman is 63.8 from Weyburn here (67.7 from Maryfield in Table 173).
+# Key to signs (Table 193-201 page, quoted in full in sk_cn_t199a.csv): + daily except Sunday; a Mon Wed Fri; b Tue Thu Sat; f flag stop; x Tuesday only;
+#   natural-sign Monday only; (dot) Motor train, limited baggage accommodation; M mixed train.
+# Heads "M 348" and "M 347" are printed in the motor-train columns of this section (below the 70/69 columns), above Lampman - Northgate times.
+#train col=M308 num=308 dir=down days="Mon,Wed,Fri" kind=mixed note="Weyburn 12.55 p.m. marked a (Mon Wed Fri); ends Lampman."
+#train col=M348 num=348 dir=down days="Mon" kind=mixed note="Lampman 6.20 p.m. marked natural sign (Monday only)."
+#train col=M307 num=307 dir=up days="Tue,Thu,Sat" kind=mixed note="Lampman 9.30 a.m. marked b (Tue Thu Sat)."
+#train col=M347 num=347 dir=up days="Tue" kind=mixed note="Northgate 7.00 a.m. marked x (Tuesday only)."
+mile,station,principal,prov,tz,M308,M348,M307,M347
+0.0,Weyburn,1,SK,M,lv 12.55p,,ar 1.35p,
+13.8,Talmage,1,SK,M,2.15p,,ar 12.30p,
+26.9,Griffin,0,SK,M,3.00p,,11.45a,
+38.5,Huntoon,0,SK,M,3.40p,,11.00a,
+50.7,Benson,0,SK,M,4.25p,,10.20a,
+63.8,Lampman,1,SK,M,ar 5.10p,lv 6.20p,lv 9.30a,ar 8.35a
+102.1,Northgate,1,SK,M,,ar 8.35p,,lv 7.00a

@@ -1,0 +1,32 @@
+# Canadian National, Table 170, Saskatoon - Melfort - Canora - Winnipeg - Yorkton. Official Guide, April 25, 1948 (scan cn1948_sk/table170_saskatoon_canora_winnipeg_yorkton.png; small scan, read at 4-5x).
+# Times as printed: MOUNTAIN TIME Saskatoon - Reserve ("M.T." head; "ar. Reserve (M.T.) lv."), CENTRAL TIME Reserve - Canora - Yorkton - Melville
+#   ("lv. Reserve (C.T.) ar."). Reserve is printed twice and entered as one row, tz C/M: No. 32 ar 4.55 p.m. M.T., lv 6.10 p.m. C.T. (= 5.10 M.T.);
+#   No. 31 ar 12.00 noon C.T., lv 11.05 a.m. M.T. (= 12.05 C.T.). All stations entered are in Saskatchewan.
+# Miles from Saskatoon as printed; the Canora - Yorkton - Melville section continues the mileage (281.5 - 337.9). Canora and Yorkton are each printed
+#   twice (arr./lve. lines) and entered as one row.
+# Key to signs not on this scan; the signs used mean the same in the Table 180-184 and Table 193-201 keys: "a Monday, Wednesday and Friday;
+#   b Tuesday, Thursday and Saturday; + daily, except Sunday; ++ daily, except Saturday; para. daily, except Monday".
+# NOT ENTERED: the middle section Canora - Dauphin (406.4) - Winnipeg (583.6) carries only Nos. 9 and 10, printed "From Calgary-Saskatoon" /
+#   "To Saskatoon-Calgary" (their full run is Table 168, Winnipeg - Dauphin - Kamsack - Saskatoon - Calgary, which is not part of this set):
+#   No. 10 lv Canora +9.10 p.m., ar Dauphin para.2.00 a.m., ar Winnipeg para.8.20 a.m.; No. 9 lv Winnipeg ++9.00 p.m., Dauphin +4.00 a.m., ar Canora +9.24 a.m.
+#train col=No32 num=32 dir=down days="Mon,Wed,Fri" kind=passenger note="Saskatoon 8.00 a.m. marked a (Monday, Wednesday and Friday). Saskatoon to Melville."
+#train col=No31 num=31 dir=up days="Tue,Thu,Sat" kind=passenger note="Melville 7.15 a.m. and Canora 10.00 a.m. marked b (Tuesday, Thursday and Saturday). Melville to Saskatoon."
+# Saskatoon - Melfort intermediate stops of Nos. 32 and 31 added 18 Oct 2026 from Table 159 (scan cn1948_mb/t156_165.png), which prints the same
+#   trains in columns "32-388" and "387-31"; Table 159 has No. 32 arriving Melfort 12.25 p.m. (Table 170: Melfort 1.00 p.m., entered as the departure).
+mile,station,principal,prov,tz,No32,No31
+0.0,Saskatoon,1,SK,M,lv 8.00a,ar 8.00p
+13.7,Warman,0,SK,M,8.29a,7.30p
+26.4,Aberdeen,0,SK,M,8.53a,7.06p
+37.7,Smuts,0,SK,M,9.20a,6.43p
+51.2,Carpenter,0,SK,M,9.55a,6.15p
+61.4,Wakaw,0,SK,M,10.23a,5.56p
+80.9,Tarnopol,0,SK,M,11.04a,5.10p
+103.5,Ethelton,0,SK,M,11.54a,4.18p
+118.3,Melfort,1,SK,M,ar 12.25p / lv 1.00p,3.50p
+144.2,Tisdale,1,SK,M,2.00p,2.23p
+157.8,Crooked River,1,SK,M,2.35p,1.40p
+218.2,Reserve,1,SK,C/M,ar 4.55p / lv 6.10p,ar 12.00p / lv 11.05a
+259.3,Sturgis,1,SK,C,7.25p,10.43a
+281.5,Canora,1,SK,C,ar 8.05p / lv 8.55p,ar 9.15a / lv 10.00a
+311.7,Yorkton,1,SK,C,ar 10.00p / lv 10.25p,ar 8.05a / lv 8.25a
+337.9,Melville,1,SK,C,ar 11.20p,lv 7.15a

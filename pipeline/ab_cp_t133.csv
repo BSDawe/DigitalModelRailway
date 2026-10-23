@@ -1,0 +1,33 @@
+# Canadian Pacific, Table 133 "FOX VALLEY-SCHULER-EMPRESS" (public timetable, 1948; date of issue not on the scan).
+# Times as printed: MOUNTAIN TIME. Miles as printed, from Fox Valley.
+# Signs: M before a train number = mixed train; f = stops on signal. A hatched bar is printed after Schuler and Burstall (its meaning is not on the scan).
+# THE LINE WEAVES ACROSS THE BOUNDARY. The whole table in the order printed, with the province the table itself gives (none = nothing printed):
+#   0.0 Fox Valley (none); 6.4 Linacre (none); 12.9 Richmound (none); 19.1 Horsham (none); 25.6 Pivot (none);
+#   31.6 Schuler (Ar row: none; Lv row: "SCHULER, ALTA"); 25.6 Pivot again (none); 30.8 "Hilda, Alta."; 39.3 "Charmian, Sask"; 44.9 Burstall (none);
+#   51.9 Gascoigne (none); 58.9 Mendham (none); 69.5 Leader (none; Ar and Lv rows, ref. 132); 74.7 Westerham (none); 82.9 "Estuary, Sask";
+#   93.1 "Empress, Alta." (ref. 132).
+# So Schuler is at the end of a 6.0-mile spur from Pivot: the train runs Fox Valley - Pivot - Schuler, comes back to Pivot and goes on by Hilda to Leader,
+# and from Leader over the Table 132 line to Empress (the miles do not count the spur twice). Printed as Alberta: Schuler, Hilda, Empress only.
+# Printed as Saskatchewan: Charmian, Estuary; by position Pivot (between Schuler and Hilda) and Burstall to Westerham (between Charmian and Estuary)
+# are Saskatchewan too, though the table prints no province for them.
+# THIS FILE has the rows from Schuler to Empress, as the task asked, so it INCLUDES Saskatchewan stations: Pivot, Charmian, Burstall, Gascoigne,
+# Mendham, Leader, Westerham, Estuary. The three Alberta stations are Schuler, Hilda and Empress.
+# Before Schuler (all Saskatchewan, not in the rows): M671 Fox Valley lv 8.30a, Linacre 9.00a, Richmound 9.45a, Horsham 10.15a, Pivot 10.45a;
+# M672 after Schuler: Pivot 4.30p, Horsham 5.00p, Richmound 6.00p, Linacre 6.45p, Fox Valley ar 7.30p.
+# Boundary crossings: Pivot, Sask. 25.6 / Schuler 31.6; Pivot 25.6 / Hilda 30.8; Hilda 30.8 / Charmian, Sask. 39.3; Estuary, Sask. 82.9 / Empress 93.1.
+# Doubt: Hilda's mile is smudged (second figure); 30.8 is the best reading. Empress's mile (last figure smudged) is 93.1, which agrees with Table 132
+# (Leader 94.3 to Empress 117.9 = 23.6 miles). Leader - Westerham - Estuary - Empress times are printed again in Table 132 (same figures).
+#train col=M671 num=671 dir=down days="Wed" kind=mixed from="Fox Valley" note="Fox Valley 8.30a by Pivot (10.45a) to Schuler, back to Pivot and on to Leader and Empress; 40 minutes at Leader."
+#train col=M672 num=672 dir=up days="Tue" kind=mixed to="Fox Valley" note="Empress to Leader, Pivot, Schuler (one hour), back to Pivot (4.30p) and on to Fox Valley 7.30p; 30 minutes at Leader."
+mile,station,principal,M671,M672
+31.6,Schuler,1,ar 11.20a / lv 12.05p,ar 3.00p / lv 4.00p
+25.6,Pivot,1,12.25p,2.40p
+30.8,Hilda,0,1.00p,2.15p
+39.3,Charmian,0,f1.25p,f1.20p
+44.9,Burstall,1,2.15p,1.00p
+51.9,Gascoigne,0,f2.45p,f12.15p
+58.9,Mendham,0,3.30p,11.50a
+69.5,Leader,1,ar 4.00p / lv 4.40p,ar 10.30a / lv 11.00a
+74.7,Westerham,0,f5.00p,f10.09a
+82.9,Estuary,0,5.20p,9.52a
+93.1,Empress,1,ar 5.45p,lv 9.30a

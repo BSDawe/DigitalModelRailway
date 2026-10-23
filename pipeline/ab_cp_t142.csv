@@ -1,0 +1,18 @@
+# Canadian Pacific Railway, Table 142, Red Deer - Rocky Mountain House (mixed trains M613 and M614).
+# From the Canadian Pacific public timetable, 1948 (page 41). Times as printed: MOUNTAIN TIME.
+# Signs: M before a train number = mixed train; a double bar after Red Deer = meal station. The days are in the column headings
+# (M613 "Tu. Th. Sa.", M614 "Mo. We. Fr."). The table prints "Red Deer 129" (a reference to Table 129) and "Rocky Mtn. House".
+# Sylvan Lake is printed in capitals.
+#train col=M613 num=613 dir=down days="Tue,Thu,Sat" kind=mixed note="Red Deer to Rocky Mountain House. Meal station at Red Deer."
+#train col=M614 num=614 dir=up days="Mon,Wed,Fri" kind=mixed note="Rocky Mountain House to Red Deer. Meal station at Red Deer."
+mile,station,principal,M613,M614
+0.0,Red Deer,1,lv 1.10p,ar 9.35a
+8.9,Mintlaw,0,1.40p,9.00a
+12.7,Cygnet,0,1.55p,8.45a
+19.8,Sylvan Lake,1,2.20p,8.20a
+28.6,Benalto,0,2.50p,7.50a
+35.0,Eckville,0,3.15p,7.20a
+40.5,Hespero,0,3.40p,6.40a
+44.9,Condor,0,4.00p,6.20a
+50.3,Alhambra,0,4.30p,6.00a
+62.1,Rocky Mountain House,1,ar 5.05p,lv 5.30a

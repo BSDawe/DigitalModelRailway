@@ -1,0 +1,15 @@
+# Canadian National, Table 194, Brandon - Hallboro - Neepawa. Official Guide, April 25, 1948 (scan cn1948_mb/t194.png). Transcribed 18 October 2026.
+# CENTRAL TIME. Miles from Brandon as printed. All Manitoba.
+# Signs (key on this page): a = Mon. Wed. Fri.; b = Tue. Thu. Sat.; l = Tuesday and Saturday; n = Monday and Friday; f = flag stop; M = mixed train.
+#train col=M231 num=231 dir=down days="Mon,Wed,Fri" kind=mixed note="Monday, Wednesday and Friday. Brandon 9.00 a.m. to Neepawa 1.10 p.m."
+#train col=M232 num=232 dir=up days="Tue,Thu,Sat" kind=mixed note="Tuesday, Thursday and Saturday. Neepawa 12.30 p.m. to Brandon 4.05 p.m."
+mile,station,principal,prov,tz,M231,M232
+0.0,Brandon,1,MB,C,lv 9.00a,ar 4.05p
+4.9,Leon,0,MB,C,f9.18a,f3.43p
+12.8,Wytonville,0,MB,C,f9.39a,f3.24p
+20.4,Onah,0,MB,C,9.59a,f3.00p
+27.9,Brandon Junction,0,MB,C,10.17a,2.45p
+32.0,Carberry,1,MB,C,11.00a,2.25p
+54.1,Hallboro,0,MB,C,12.50p,12.50p
+56.2,Osprey,0,MB,C,f12.57p,f12.43p
+60.3,Neepawa,1,MB,C,ar 1.10p,lv 12.30p

@@ -1,0 +1,37 @@
+# Harbour Navigation Co., Vancouver (Gore Ave. Dock) - Indian Arm - Wigwam Inn, summer 1948 (Brendan, 10 October 2026). ESTIMATED TIMETABLE:
+# REVISED (Brendan, 10 Oct 11:58-11:59, built 15 Oct): new points for every landing, two new calls (Cosy Cove, Granite Falls), and a logical
+# order up the arm (west shore to Thwaytes, one crossing to Lake Buntzen and the east shore, the head last; down the reverse). Landing times
+# re-estimated the same way (straight lines x 1.15, by Second Narrows to Belcarra; 3 minutes a call; about 14.5 kn), rounded to 5 minutes.
+# only the end times are his (from his source); the times at the landings are estimated by Claude from straight-line distances between the
+# landings (Vancouver - Second Narrows - Belcarra, then in his "zig-zag" order), a uniform speed (about 13 kn, needed to make 2 hours with
+# 9 calls) and 3 minutes at each landing, rounded to 5 minutes. Points (Brendan, 10 Oct): Gore Ave. Dock 49.286735, -123.098311; Belcarra
+# Park 49.313026, -122.928774; Camp Jubilee 49.371440, -122.889416; Lake Buntzen 49.375829, -122.868302 (the powerhouse
+# landing at Buntzen Creek; the names file's 'Lake Buntzen' landing, 49.3667, is a kilometre south); Weldwood 49.457543, -122.869962 (his guess: a logging camp near Wigwam
+# Inn on the Indian Arm Park side). The rest from the B.C. names file (to the nearest minute, so +-1 km). Order as Brendan gave it.
+# Mon - Sat: dep Wigwam Inn 7.00 a.m., arr Vancouver 9.00; dep Vancouver 10.00, arr Wigwam Inn 12.00 noon; dep Wigwam Inn 2.00 p.m., arr
+# Vancouver "late afternoon" (Brendan reads 4.00); dep Vancouver 5.30 p.m. (arrival at Wigwam Inn not given: 7.30 p.m., the same 2 hours).
+# Sunday: dep Vancouver 10.00 a.m. and 2.00 p.m., dep Wigwam Inn 4.00 and 6.00 p.m., no intermediate stops; running time estimated 1 h 30
+# (the same speed). Weekday: one boat, the M.V. Scenic (Brendan), overnight at Wigwam Inn. Sunday: two boats (the 2.00 p.m. from Vancouver
+# returns at 6.00 p.m.); the Scenic is taken for the 10.00 a.m. and 4.00 p.m., the second boat is not named.
+#train col=D1 num=0 dir=up days="Mon,Tue,Wed,Thu,Fri,Sat" kind=passenger note="Morning boat down from Wigwam Inn (landing times estimated)."
+#train col=U1 num=0 dir=down days="Mon,Tue,Wed,Thu,Fri,Sat" kind=passenger note="Morning boat up to Wigwam Inn (landing times estimated)."
+#train col=D2 num=0 dir=up days="Mon,Tue,Wed,Thu,Fri,Sat" kind=passenger note="Afternoon boat down (arrival 'late afternoon', read as 4.00; landing times estimated)."
+#train col=U2 num=0 dir=down days="Mon,Tue,Wed,Thu,Fri,Sat" kind=passenger note="Evening boat up (arrival not given: 2 hours assumed; landing times estimated)."
+#train col=SU1 num=0 dir=down days="Sun" kind=passenger note="Sunday, direct (running time estimated)."
+#train col=SU2 num=0 dir=down days="Sun" kind=passenger note="Sunday, direct (running time estimated)."
+#train col=SD1 num=0 dir=up days="Sun" kind=passenger note="Sunday, direct (running time estimated)."
+#train col=SD2 num=0 dir=up days="Sun" kind=passenger note="Sunday, direct (running time estimated)."
+mile,station,principal,D1,U1,D2,U2,SU1,SU2,SD1,SD2
+0,Vancouver (Gore Ave. Dock),1,ar 9.00a,lv 10.00a,ar 4.00p,lv 5.30p,lv 10.00a,lv 2.00p,ar 5.30p,ar 7.30p
+0,Belcarra Park,0,8.30a,10.30a,3.30p,6.00p,,,,
+0,Deep Cove,0,8.20a,10.35a,3.20p,6.05p,,,,
+0,Cosy Cove,0,8.10a,10.45a,3.10p,6.15p,,,,
+0,Woodlands,0,8.05a,10.55a,3.05p,6.25p,,,,
+0,Sunshine,0,8.00a,10.55a,3.00p,6.25p,,,,
+0,Brighton Beach,0,7.50a,11.05a,2.50p,6.35p,,,,
+0,YMCA Camp Howdy / Camp Jubilee,0,7.45a,11.10a,2.45p,6.40p,,,,
+0,Thwaytes Landing,0,7.40a,11.15a,2.40p,6.45p,,,,
+0,Lake Buntzen,0,7.35a,11.25a,2.35p,6.55p,,,,
+0,Granite Falls,0,7.10a,11.50a,2.10p,7.20p,,,,
+0,Weldwood,0,7.00a,11.55a,2.00p,7.25p,,,,
+0,Wigwam Inn,1,lv 7.00a,ar 12.00p,lv 2.00p,ar 7.30p,ar 11.30a,ar 3.30p,lv 4.00p,lv 6.00p

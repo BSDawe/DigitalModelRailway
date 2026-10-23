@@ -1,0 +1,20 @@
+# Canadian Pacific, Table 132 "SWIFT CURRENT-BASSANO-IRRICANA" (public timetable, 1948; date of issue not on the scan): second section, Bassano - Irricana.
+# Wholly in Alberta. Times as printed: MOUNTAIN TIME. Miles as printed, from Swift Current (Bassano 236.3).
+# Signs: M before a train number = mixed train; f = stops on signal (printed before the time or between hours and minutes, e.g. 11f00).
+# Table references printed after stations: Bassano 6 (the main line, Table 6), Irricana 143 (Calgary - Wimborne - Kneehill).
+# The first section, Empress - Bassano, is in ab_cp_t132a.csv.
+#train col=M627 num=627 dir=down days="Tue" kind=mixed note="Bassano to Irricana."
+#train col=M628 num=628 dir=up days="Wed" kind=mixed note="Irricana to Bassano."
+mile,station,principal,M627,M628
+236.3,Bassano,1,lv 10.40a,ar 3.30p
+242.9,Granta,0,f11.00a,f2.40p
+249.7,Makepeace,0,11.25a,2.00p
+257.3,Hussar,0,12.05p,1.30p
+265.4,Chancellor,0,12.50p,12.30p
+272.1,Standard,0,1.35p,11.45a
+281.8,Tudor,0,2.20p,10.50a
+287.1,Hamlet,0,f2.40p,f10.20a
+291.2,Nightingale,0,3.20p,10.00a
+298.8,Gayford,0,f3.50p,f9.35a
+304.3,Craigdhu,0,f4.10p,f9.20a
+308.8,Irricana,1,ar 4.30p,lv 9.00a

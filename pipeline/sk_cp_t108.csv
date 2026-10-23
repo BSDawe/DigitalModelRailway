@@ -1,0 +1,45 @@
+# Canadian Pacific, Table 108, North Portal - Moose Jaw (Soo-Dominion 13/14, The Mountaineer 13/14, 315/316).
+# From the Canadian Pacific public timetable of about 1948 (scan cp1948_sk/tables108_112_115_northportal_moosejaw_saskatoon_lanigan.png, page 37).
+# Times as printed: MOUNTAIN TIME ("Mountain Time" heads the station column). Miles from North Portal, as printed. All stations in Saskatchewan (North Portal, Sask).
+# Signs (explanation of signs on this page): f = stops on signal; || = meal station (Moose Jaw); .. = does not stop (left empty).
+# Weyburn has two rows (Ar / Lv) in the print; entered here as one row with ar / lv.
+# Seasonal columns (dates printed sideways in the columns): 315 and 316 June 30 to September 11 inclusive; The Mountaineer 13 June 30 to September 4
+# inclusive; The Mountaineer 14 July 4 to September 3 inclusive; Soo-Dominion 13 and 14 until June 29 and after September 11.
+# References printed after names: Estevan 106, 110; Pasqua 6; Moose Jaw 6 (main line, Table 6).
+# Doubt: Soo-Dominion 13 at Stelcam the sign before 6.58 is printed like a 'j'; read as f (stops on signal), entered f6.58p.
+# Odd prints: 316 at Brightmore and Ibsen the f is printed between the hour and minutes ("10f46", "10f30"): entered f10.46a, f10.30a.
+# Checked against the scan: 315 Yellow Grass 5.09p to Ibsen f5.13p (5.0 miles in 4 minutes) is as printed, probably a misprint in the original.
+# Far ends: the table prints none. 13/14 and 315/316 meet the Soo Line at North Portal (U.S. border) and Table 6 at Moose Jaw.
+#train col=No315 num=315 dir=down days="daily" kind=passenger note="Runs June 30 to September 11 inclusive."
+#train col=No13M num=13 dir=down days="daily" kind=passenger note="The Mountaineer. Runs June 30 to September 4 inclusive. Through train continuing beyond both ends; far ends not printed in this table."
+#train col=No13 num=13 dir=down days="daily" kind=passenger note="Soo-Dominion. Runs until June 29 and after September 11. Through train continuing beyond both ends; far ends not printed in this table."
+#train col=No14 num=14 dir=up days="daily" kind=passenger note="Soo-Dominion. Runs until June 29 and after September 11. Through train continuing beyond both ends; far ends not printed in this table."
+#train col=No14M num=14 dir=up days="daily" kind=passenger note="The Mountaineer. Runs July 4 to September 3 inclusive. Through train continuing beyond both ends; far ends not printed in this table."
+#train col=No316 num=316 dir=up days="daily" kind=passenger note="Runs June 30 to September 11 inclusive."
+mile,station,principal,prov,tz,No315,No13M,No13,No14,No14M,No316
+0.0,North Portal,1,SK,M,lv 2.35p,lv 2.15p,lv 2.20p,ar 1.30p,ar 12.40p,ar 1.45p
+8.2,Pinto,0,SK,M,f2.50p,,f2.37p,f1.10p,,f1.31p
+12.9,Roche Percee,0,SK,M,2.57p,,2.46p,1.00p,12.15p,1.20p
+17.1,Shand,0,SK,M,f3.05p,,2.53p,f12.50p,,f1.13p
+23.1,Estevan,1,SK,M,3.25p,3.05p,3.10p,12.35p,11.50a,12.55p
+31.2,Hitchcock,0,SK,M,f3.36p,,f3.23p,12.12p,11.31a,12.31p
+40.2,Macoun,0,SK,M,3.48p,,3.36p,11.59a,11.17a,12.17p
+48.9,Midale,0,SK,M,3.59p,,3.50p,11.44a,11.05a,12.05p
+58.1,Halbrite,0,SK,M,4.12p,,4.05p,11.31a,10.51a,11.51a
+66.6,Ralph,0,SK,M,f4.24p,,f4.19p,11.18a,10.39a,11.39a
+76.3,Weyburn,1,SK,M,ar 4.35p / lv 4.40p,ar 4.15p / lv 4.20p,ar 4.35p / lv 4.45p,ar 10.55a / lv 11.05a,ar 10.20a / lv 10.20a,ar 11.10a / lv 11.20a
+84.7,McTaggart,0,SK,M,4.53p,,4.57p,10.40a,9.58a,10.53a
+88.7,Brightmore,0,SK,M,f4.59p,,f5.03p,f10.32a,,f10.46a
+93.3,Yellow Grass,0,SK,M,5.09p,,5.12p,10.26a,9.43a,10.38a
+98.3,Ibsen,0,SK,M,f5.13p,,f5.19p,f10.16a,,f10.30a
+105.6,Lang,0,SK,M,5.23p,,5.31p,10.05a,9.23a,10.18a
+113.7,Milestone,0,SK,M,5.35p,,5.48p,9.50a,9.10a,10.05a
+120.1,Corinne,0,SK,M,f5.45p,,f5.59p,9.38a,8.58a,9.53a
+125.3,Wilcox,0,SK,M,5.54p,,6.09p,9.29a,8.50a,9.45a
+130.0,Diana,0,SK,M,f6.01p,,f6.16p,f9.21a,,f9.37a
+135.8,Rouleau,0,SK,M,6.10p,,6.27p,9.12a,8.32a,9.27a
+142.5,Pitman,0,SK,M,f6.20p,,f6.38p,9.02a,8.20a,9.15a
+148.3,Drinkwater,0,SK,M,6.30p,,,8.53a,8.10a,9.05a
+154.4,Stelcam,0,SK,M,f6.40p,,f6.58p,8.44a,8.00a,8.55a
+160.6,Pasqua,1,SK,M,6.55p,6.35p,7.10p,8.35a,7.50a,8.45a
+167.5,Moose Jaw,1,SK,M,ar 7.15p,ar 6.55p,ar 7.30p,lv 8.20a,lv 7.35a,lv 8.30a

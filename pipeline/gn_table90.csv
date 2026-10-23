@@ -1,0 +1,8 @@
+# Great Northern Table 90 (summer 1947): Vancouver, Bellingham, Everett, Seattle. Pacific time. f = flag stop. One row per train; a blank is no stop.
+direction,train,name,service,Vancouver,New Westminster,Colebrook,Crescent,Ocean Park,White Rock,Blaine,Custer,Ferndale,Bellingham,South Bellingham,Samish,Bow,Burlington,Mount Vernon,Fir,Stanwood,Silvana,English,Marysville,Everett,Mukilteo,Meadowdale,Edmonds,Richmond Beach,Ballard,Interbay,Seattle
+south,359,Morning Puget Sounder,Daily,8.10a,8.33a,,f9.01a,,9.20a,9.34a,,,10.03a,,,,10.42a,10.52a,,,,,,11.47a,,,,,,,12.45p
+south,355,Afternoon Puget Sounder,Daily,5.00p,5.24p,,,,6.12p,6.19p,,,6.48p,,,,7.27p,7.35p,,,,,,8.30p,,,,,,,9.30p
+south,357,Local,Daily,4.15p,4.42p,f5.03p,f5.10p,f5.14p,5.35p,5.55p,6.05p,6.17p,6.48p,f6.59p,f7.23p,f7.30p,7.45p,8.05p,f8.15p,8.26p,f8.35p,f8.40p,8.53p,9.20p,f9.29p,f9.40p,9.47p,f9.52p,f10.02p,f10.06p,10.20p
+north,360,Morning Puget Sounder,Daily,12.45p,12.26p,,,,11.43a,11.33a,,,11.01a,,,,10.18a,10.08a,,,,,,9.12a,,,,,,,8.15a
+north,358,Afternoon Puget Sounder,Daily,9.30p,9.10p,,,,8.31p,8.21p,,,7.48p,,,,7.03p,6.53p,,,,,,6.00p,,,,,,,5.00p
+north,356,Local,Daily,1.15p,12.55p,f12.30p,12.22p,f12.16p,12.05p,11.40a,11.24a,11.15a,11.01a,f10.45a,f10.24a,f10.16a,10.04a,9.50a,f9.30a,9.20a,f9.10a,f9.05a,8.55a,8.38a,f8.09a,f7.59a,7.53a,f7.43a,f7.32a,f7.29a,7.15a

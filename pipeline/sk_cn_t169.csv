@@ -1,0 +1,14 @@
+# Canadian National, Table 169, Winnipegosis - Dauphin - Rorketon. Official Guide, April 25, 1948 (scan cn1948_mb/t167_170.png).
+# Transcribed 18 October 2026. CENTRAL TIME. Miles from Winnipegosis as printed. All Manitoba. Dauphin and Ochre River printed twice (arr. / lve.): one row each.
+# Signs (key on the Table 155 page): a = Monday, Wednesday and Friday; b = Tuesday, Thursday and Saturday; f = flag stop; M = mixed train.
+#train col=M228 num=228 dir=down days="Mon,Wed,Fri" kind=mixed note="Monday, Wednesday and Friday. Winnipegosis 12.00 noon by Dauphin and Ochre River to Rorketon 8.20 p.m."
+#train col=M227 num=227 dir=up days="Tue,Thu,Sat" kind=mixed note="Tuesday, Thursday and Saturday. Rorketon 6.00 a.m. by Ochre River and Dauphin to Winnipegosis 1.30 p.m."
+mile,station,principal,prov,tz,M228,M227
+0.0,Winnipegosis,1,MB,C,lv 12.00p,ar 1.30p
+22.4,Sifton,0,MB,C,1.45p,12.00p
+30.0,Valley River,0,MB,C,2.15p,11.30a
+38.3,Dauphin,1,MB,C,ar 2.45p / lv 3.45p,ar 9.35a / lv 11.00a
+44.0,Paulson,0,MB,C,f3.58p,f9.20a
+51.9,Ochre River,1,MB,C,ar 4.20p / lv 5.40p,ar 8.15a / lv 9.01a
+63.1,St. Rose,0,MB,C,6.45p,7.45a
+89.1,Rorketon,1,MB,C,ar 8.20p,lv 6.00a

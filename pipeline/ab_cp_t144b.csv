@@ -1,0 +1,15 @@
+# Canadian Pacific Railway, Table 144, Lloydminster - Willingdon - Edmonton: the Vegreville - Willingdon section printed inside the table, mixed
+# trains M619 and M620. Canadian Pacific public timetable, 1948 (page 41). Times as printed: MOUNTAIN TIME.
+# Signs: M before the number = mixed train; f = stops on signal. Days from the column headings: M619 "Wed. Sat.", M620 "Tue. Fri.".
+# Miles are the section's own, from Vegreville (0.0) to Willingdon (24.1); Willingdon is mile 105.4 of the main section (file ab_cp_t144a.csv).
+# All in Alberta. M619 is all a.m. (A.M. at head and foot), M620 all p.m. (P.M. at head and foot).
+# Nothing in doubt: every figure was read twice from separate enlargements and agreed.
+#train col=M619 num=619 dir=down days="Wed,Sat" kind=mixed note="Vegreville to Willingdon. At Willingdon 59 minutes before train 63 for Edmonton (10.14 a.m.)."
+#train col=M620 num=620 dir=up days="Tue,Fri" kind=mixed note="Willingdon to Vegreville. Leaves Willingdon after trains 63 (10.14 a.m.) and 64 (1.10 p.m.) have called."
+mile,station,principal,M619,M620
+0.0,Vegreville,1,lv 7.45a,ar 4.15p
+4.0,Fitzallen,0,f8.00a,f3.50p
+9.9,Warwick,0,8.20a,3.30p
+15.9,Norma,0,8.45a,3.10p
+20.2,Soda Lake,0,f8.58a,f2.57p
+24.1,Willingdon,1,ar 9.15a,lv 2.45p

@@ -1,0 +1,27 @@
+# Canadian Pacific, Table 137 "MEDICINE HAT-LOMOND-ALDERSYDE" (public timetable, 1948; date of issue not on the scan): second section, Lomond - Aldersyde.
+# Wholly in Alberta. Times as printed: MOUNTAIN TIME. Miles as printed, from Suffield (Lomond 84.3).
+# Signs: M before a train number = mixed train; f = stops on signal.
+# Below Aldersyde the table has a row "Calgary 138, 149", mile 197.2 (connection, not part of the branch): M653 column 10.55 P.M. (arrive),
+# M652 column blank, 538 column 9.15 A.M. (leave).
+# A third column, "538 Daily" (passenger, the Calgary - Lethbridge train of Table 149), is printed beside M652 for the connection and is NOT entered
+# as a column here: Calgary lv 9.15a, Aldersyde 10.20a, Mazeppa 10.35a, Blackie 10.48a (blank beyond Blackie).
+# M652 is at Blackie at 10.48a, the same minute as 538: Mazeppa f9.30a to Blackie 10.48a (5.8 miles in 78 minutes) is as printed, the mixed train
+# waiting there for the train from Calgary.
+# M652 Queenstown 2.50p to Milo 3.50p (5.4 miles in 60 minutes) is also as printed (checked twice).
+# M653's 12.00 at Arrowwood is noon. The first section, Suffield - Lomond, is in ab_cp_t137a.csv.
+#train col=M653 num=653 dir=down days="Wed,Sat" kind=mixed note="Lomond to Aldersyde; connection arrives Calgary 10.55p (Table 149)."
+#train col=M652 num=652 dir=up days="Mon,Thu" kind=mixed note="Aldersyde to Lomond; at Blackie meets train 538 from Calgary (lv 9.15a, Blackie 10.48a)."
+mile,station,principal,M653,M652
+84.3,Lomond,1,lv 9.15a,ar 5.45p
+92.0,Armada,0,9.40a,4.55p
+99.6,Pageant,0,10.00a,f4.20p
+105.0,Milo,0,10.35a,3.50p
+110.4,Queenstown,0,11.00a,2.50p
+116.3,Shouldice,0,11.30a,2.20p
+124.1,Arrowwood,0,12.00p,1.30p
+132.5,Mossleigh,0,12.50p,12.40p
+137.0,Farrow,0,1.30p,12.10p
+141.7,Herronton,0,2.10p,11.55a
+151.0,Blackie,0,3.10p,10.48a
+156.8,Mazeppa,0,f3.40p,f9.30a
+164.0,Aldersyde,1,ar 4.10p,lv 9.00a

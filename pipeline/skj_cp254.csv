@@ -1,0 +1,14 @@
+# Joined through train (cp254), sk_join.py: skcp106e:M254, skcp106b:M254
+# Rows and times as in the section files (see them for the scans, signs and doubts). Miles: counted along the run from the first station.
+#train col=D num=254 dir=down days="Wed,Sat" kind=mixed note="Through train: No. 254 Alida - Lauder; No. 254 Lauder - Souris. Continues Lauder 11.15a - Souris 12.15p (sk_cp_t106b.csv)."
+mile,station,principal,prov,tz,D
+0.0,Alida,1,SK,C,lv 7.30a
+6.6,Nottingham,0,SK,C,7.50a
+12.2,Storthoaks,0,SK,C,8.15a
+18.9,Fertile,0,SK,C,8.35a
+25.1,Tilston,0,MB,C,9.10a
+35.3,Broomhill,0,MB,C,9.45a
+40.8,Bede,0,MB,C,10.05a
+44.9,Bernice,0,MB,C,10.25a
+53.9,Lauder,1,MB,C,ar 10.55a / lv 11.15a
+79.3,Souris,1,MB,C,ar 12.15p

@@ -1,0 +1,57 @@
+# Canadian Pacific Railway, Table 143, Calgary - Wimborne - Kneehill: section a, Calgary - Langdon - Irricana - Cosway - Kneehill (all in Alberta).
+# From the Canadian Pacific public timetable, 1948 (scans table143_calgary_wimborne_kneehill_LARGE.png and tables138_143_calgary_edmonton_kneehill.png;
+# the two captures agree on every figure). Times as printed: MOUNTAIN TIME.
+# The printed table has four blocks of rows: (1) Calgary to Langdon on the main line, miles 0.0 to 20.7; (2) Cheadle to Gleichen, the main line
+# east of Langdon, miles 27.6 to 55.5, served only by main line trains 1 to 4 (see below); (3) Langdon to Cosway, miles 20.7 to 62.4, the branch
+# that leaves the main line at LANGDON; (4a) Cosway to Wimborne, miles 0.0 to 27.3 counted from Cosway; (4b) Cosway to Kneehill, miles 62.4 to 99.4.
+# This file is blocks 1, 3 and 4b: one line of route, with the miles from Calgary as printed. The Wimborne branch (4a) is ab_cp_t143b.csv: it
+# LEAVES THIS LINE AT COSWAY (mile 62.4 from Calgary), where the table starts its miles again from 0.0.
+# Signs (the scans do not show this page's "Explanation of signs"; meanings from the 149/150 page of the same timetable): M before a train
+# number = mixed train; f = stops on signal; || after a station (Calgary, Acme) = meal station. Numbers after station names are connecting
+# tables (Calgary 6, Irricana 132, Kneehill 136). Days are in the column headings: M632 Mon., M629 Fri., M630 Sat., M631 Thu.
+# The four mixed trains make one weekly round: Monday M632 Calgary to Kneehill; Thursday M631 Kneehill to Calgary; Friday M629 Calgary to
+# Wimborne; Saturday M630 Wimborne to Calgary. All four run over Calgary - Cosway, with the same times each way out (M632 = M629 to Cosway).
+# Langdon is printed twice (arrive and leave rows, both mile 20.7): both times in one cell. Cosway is printed three times (end of block 3,
+# head of 4a, head of 4b): the same time is printed each time (M632 11.50, M629 11.50, M630 9.15, M631 11.10), so one time is entered.
+# Dalroy: M629 has the f (f9.25) and M632 has none (9.25), M630 has f12.00 and M631 plain 1.50: as printed, in both captures.
+# a.m./p.m.: outward trains a.m. to Cosway 11.50, p.m. from 12.00; M631 a.m. to Acme 11.40, p.m. from Beiseker 12.15; M630 a.m. to Keoma
+# 11.35, Dalroy 12.00 is noon, p.m. after.
+# Slow running the scan really shows (the checker flags Cosway - Acme): Beiseker 10.45a to Acme 11.45a outward (8.3 miles in an hour) and,
+# inward, Cosway 9.15a to Acme 9.35a (M630) and Cosway 11.10a to Acme 11.40a (M631), 1.9 miles: Acme is the meal station, one time only printed;
+# M630 Ogden f1.50p to Calgary 2.30p and M631 Ogden f3.45p to Calgary 4.30p (4.9 miles in 40 and 45 minutes).
+# NOT IN THE COLUMNS: main line trains 1, 2, 3 and 4 (all Daily), printed in this table for their local stops between Calgary and Gleichen,
+# with "See Table 6" below Gleichen. They are Table 6 trains running through to and from the east, and Cheadle to Gleichen is not on this
+# file's route. Their figures as printed here (miles from Calgary: Ogden 4.9, Shepard 10.2, Bennett 15.6, Langdon 20.7, Cheadle 27.6,
+# Strathmore 34.8, Namaka 42.6, Stobart 50.8, Gleichen 55.5):
+#   No. 2 eastbound: Calgary 7.00a, Shepard 7.25a, Bennett f7.35a, Langdon 7.45a, Cheadle f7.55a, Strathmore 8.07a, Namaka 8.19a,
+#     Stobart f8.30a, Gleichen 8.37a (no call at Ogden).
+#   No. 4 eastbound: Calgary 8.40p, Shepard f9.00p, Strathmore 9.40p, Gleichen 10.06p (no other calls).
+#   No. 3 westbound: Gleichen 6.35a, Strathmore 7.05a, Calgary 8.20a (no other calls).
+#   No. 1 westbound: Gleichen 8.50p, Stobart f8.58p, Namaka 9.09p, Strathmore 9.20p, Cheadle f9.30p, Langdon 9.45p, Bennett f9.52p,
+#     Shepard 10.00p, Calgary 10.30p (no call at Ogden).
+#train col=M632 num=632 dir=down days="Mon" kind=mixed note="Calgary to Kneehill by Langdon, Irricana and Cosway. Meal station at Acme."
+#train col=M629 num=629 dir=down days="Fri" kind=mixed to="Wimborne" note="Calgary to Wimborne; leaves this line at Cosway (continued in ab_cp_t143b.csv, Cosway 11.50a, Wimborne 3.00p). Meal station at Acme."
+#train col=M630 num=630 dir=up days="Sat" kind=mixed from="Wimborne" note="Wimborne to Calgary; joins this line at Cosway (leaves Wimborne 7.00a, ab_cp_t143b.csv). Meal station at Acme."
+#train col=M631 num=631 dir=up days="Thu" kind=mixed note="Kneehill to Calgary by Cosway, Irricana and Langdon. Meal station at Acme."
+mile,station,principal,M632,M629,M630,M631
+0.0,Calgary,1,lv 7.20a,lv 7.20a,ar 2.30p,ar 4.30p
+4.9,Ogden,0,f7.35a,f7.35a,f1.50p,f3.45p
+10.2,Shepard,0,7.50a,7.50a,1.30p,3.30p
+15.6,Bennett,0,f8.20a,f8.20a,f1.15p,f3.00p
+20.7,Langdon,1,ar 8.30a / lv 8.50a,ar 8.30a / lv 8.50a,ar 12.40p / lv 1.00p,ar 2.30p / lv 2.45p
+27.6,Inverlake,0,f9.10a,f9.10a,f12.20p,f2.10p
+33.1,Dalroy,0,9.25a,f9.25a,f12.00p,1.50p
+39.2,Keoma,0,9.45a,9.45a,11.35a,1.30p
+46.9,Irricana,1,10.20a,10.20a,11.00a,1.00p
+52.2,Beiseker,0,10.45a,10.45a,10.15a,12.15p
+60.5,Acme,0,11.45a,11.45a,9.35a,11.40a
+62.4,Cosway,1,11.50a,ar 11.50a,lv 9.15a,11.10a
+65.1,Buoyant,0,f12.00p,,,f11.00a
+72.6,Entice,0,f12.25p,,,f10.30a
+78.7,Carbon,0,1.00p,,,9.50a
+83.5,Sharples,0,f1.15p,,,f9.10a
+87.9,Hesketh,0,1.30p,,,8.50a
+90.8,Gatine,0,f1.40p,,,f8.40a
+93.7,Dunphy,0,f1.50p,,,f8.26a
+95.5,Kirkpatrick,1,f2.00p,,,f8.20a
+99.4,Kneehill,1,ar 2.30p,,,lv 8.00a

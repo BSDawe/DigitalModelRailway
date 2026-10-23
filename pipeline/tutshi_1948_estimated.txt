@@ -1,0 +1,45 @@
+S.S. Tutshi, British Yukon Navigation Co., Southern Lakes, summer 1948: ESTIMATED / MODEL schedule (Brendan, 13 Oct 2026, from an AI
+search summary he supplied; Claude's reconstruction against the White Pass trains on the map). Not from a printed timetable: say so in the notes.
+
+Rotation (overnight trips, back at Carcross late next morning, about 3 hours before the next sailing):
+  Mon, Thu, Sat   Carcross 2.00 p.m. -> Golden Gate (passing) -> Taku Landing (for the Taku Tram to Atlin) -> back to Carcross 11.00 a.m. next day
+  Wed, Fri, Sun   Carcross 2.00 p.m. -> Golden Gate (passing) -> West Taku Arm -> Ben-My-Chree (evening, dance on the freight deck) -> Carcross 11.00 a.m. next day
+  Tue             no sailing (cleaning, maintenance; the Monday trip comes back Tuesday 11.00 a.m.)
+The week loops exactly: every trip ends at 11.00 a.m. the next morning, and the Monday trip returns on the Tuesday.
+
+Train connections (White Pass trains already on the map, times as built):
+  Northbound into Carcross: No. 5 13:09 (Mon Tue Thu Fri Sat), No. 3 11:40 (Sun Wed, Skagway - Carcross only), No. 1 14:29 (Sun Wed).
+  Southbound out of Carcross: No. 6 10:46 (Mon Tue Thu Fri Sat), No. 2 11:50 (Sun Wed).
+  So: the 2.00 p.m. sailing meets No. 5 (Mon Thu Fri Sat) and No. 3 (Wed Sun, the Skagway - Carcross excursion train); boats back at
+  11.00 a.m. meet No. 2 southbound on Sun/Wed. No. 6 (10:46) leaves just before the boat arrives: arrival 10.30 a.m. would meet it.
+  Times at Taku Landing and Ben-My-Chree: by distance (estimated) once the points are in.
+
+Doubtful in the source text (not used): "a single daily train each way" (the 1948 table has more); "Taku Inlet" at Golden Gate (Golden Gate is
+the narrows between Tagish Lake and Taku Arm).
+Optional later: the Atlin connection (Taku Tram, Taku Landing - Scotia Bay, 2.5 mi; then the M.V. Tarahne on Atlin Lake to Atlin).
+
+CORRECTION (Brendan, 13 Oct 12:05): the Taku Tram (Taku Landing - Scotia Bay, for Atlin) was gone by 1936, so the Mon/Thu/Sat "Taku Landing
+for Atlin" runs in the source do not fit 1948. Pending Brendan's choice: (a) Ben-My-Chree only, on the days the Skagway - Carcross excursion
+train (No. 3) runs, Wed and Sun; (b) Ben-My-Chree every sailing day (Mon, Wed, Thu, Fri, Sat, Sun) with Tue off; (c) keep a Taku Landing
+call as an ordinary landing without the Atlin connection.
+DECIDED (Brendan, 13 Oct 12:06): option (a). The Tutshi sails Carcross - Golden Gate (passing) - West Taku Arm - Ben-My-Chree on Wednesday and
+Sunday only, leaving Carcross about 12.30 p.m. after No. 3 (the Skagway - Carcross excursion train, ar 11.40 a.m.), evening at Ben-My-Chree,
+back at Carcross 11.00 a.m. Thursday / Monday (meets No. 6 southbound at 10.46 on Thu and Mon only if back by 10.30: use 10.30 a.m.).
+No Taku Landing call. The rotation above (Mon/Thu/Sat Taku Landing, Fri Ben-My-Chree) is withdrawn.
+POINTS AND WATER (Brendan, 13 Oct 12:14): Ben-My-Chree 59.415915,-134.447171. Carcross: the White Pass station point (60.164573,-134.706199).
+Water: traces/yukon/bc_north_water.gpkg (northern B.C., 54.75 to 60.65 N, EPSG:3347) with traces/yukon/yukon_water.gpkg. Checked: Ben-My-Chree
+lies on the Tagish Lake / Taku Arm water, which joins the Yukon system; Bennett Lake (Carcross) is a separate polygon, 678 m short of Nares Lake at
+the Carcross narrows (-134.7122,60.1677 to -134.7004,60.1699): add a short water join there (like the Washington track joins) for the lane.
+Golden Gate not placed (a passing point only: not shown unless Brendan gives a point).
+ADDED CALLS (Brendan, 20 Oct 2026): Tagish, Graham Inlet, Taku Landing (as ordinary landings; no Atlin connection), as well as Ben-My-Chree.
+Points from the B.C. names file: Graham Inlet 59.617778,-133.941389 (the inlet's own point, mid-inlet; "Inlet", not a landing);
+"Taku" (locality) 59.633333,-133.85 (taken as Taku Landing, the head of Graham Inlet, if Brendan agrees). Tagish is in the Yukon: no names file; point needed.
+Proposed route (Wed, Sun): Carcross 12.30 p.m. - Tagish - (Golden Gate) - Graham Inlet - Taku Landing - (back out of Graham Inlet) - West Taku Arm -
+Ben-My-Chree (evening) - overnight - Carcross 10.30 a.m.; calls outward only. Times by distance along the water once the points are in.
+POINTS (Brendan, 20 Oct 22:57): "Rupert" for the Graham Inlet call (a guess) 59.60349049140551,-134.19563386978754 (on Taku Arm by Golden Gate);
+Taku Landing, the old tramway landing, 59.626000039588554,-133.85435593416207; Tagish 60.31272882733381,-134.26758225271948.
+Straight-line miles: Carcross - Tagish 18; Tagish - Golden Gate 49; Carcross - Golden Gate 42; Golden Gate - Rupert 1; Rupert - Taku Landing 12;
+Rupert - Ben-My-Chree 16 (water about 15% longer). Brendan inclined to a milk-run pattern (calls both ways); Claude's suggestion: all calls both
+ways except Tagish (outward only), because Tagish is a 25-mile detour that cannot be done twice and still have the evening at Ben-My-Chree and
+Carcross by 10.30 a.m.
+BUILT (20 Oct 23:05): middle row; see boats_build.py services byt (out) and byr (back).

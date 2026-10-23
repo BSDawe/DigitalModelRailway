@@ -1,0 +1,12 @@
+# Canadian Pacific, Table 134, Hatton - Golden Prairie.
+# From the Canadian Pacific public timetable of about 1948 (scan cp1948_sk/tables133_134_foxvalley_empress_hatton.png, printed sideways).
+# Times as printed: MOUNTAIN TIME. Miles from Hatton as printed. All stations in Saskatchewan.
+# The table heads with a row "Lv Medicine Hat || 6 Ar" with no mile ("..") and times M605 12.30p, M604 6.45p: the trains run Medicine Hat - Hatton over
+# the main line (Table 6). Medicine Hat (Alberta) has no mile in this table, so it is not a row here; its times are in the train notes.
+# Hatton has no Ar/Lv printed; M605 1.50p, M604 4.10p entered as plain times.
+#train col=M605 num=605 dir=down days="Tue" kind=mixed from="Medicine Hat" note="Leaves Medicine Hat 12.30p (row printed without mile)."
+#train col=M604 num=604 dir=up days="Tue" kind=mixed to="Medicine Hat" note="Arrives Medicine Hat 6.45p (row printed without mile)."
+mile,station,principal,prov,tz,M605,M604
+0.0,Hatton,1,SK,M,1.50p,4.10p
+9.1,Tunstall,0,SK,M,2.15p,3.45p
+17.2,Golden Prairie,1,SK,M,ar 2.40p,lv 3.20p

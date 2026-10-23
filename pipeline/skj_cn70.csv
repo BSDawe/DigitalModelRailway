@@ -1,0 +1,18 @@
+# Joined through train (cn70), sk_join.py: skcn200a:Mot70, skcn200b:Mot70; up skcn200b:Mot69, skcn200a:Mot69
+# Rows and times as in the section files (see them for the scans, signs and doubts). Miles: counted along the run from the first station.
+#train col=D num=70 dir=down days="ex Sun" kind=motor note="Through train: No. 70 Regina - Weyburn; No. 70 Weyburn - Radville. Motor train (dot sign); Regina 9.10 a.m. marked + (daily except Sunday); continues Weyburn - Radville (sk_cn_t200b.csv)."
+#train col=U num=69 dir=up days="ex Sun" kind=motor note="Through train: No. 69 Radville - Weyburn; No. 69 Weyburn - Regina. Motor train; Radville 2.30 p.m. marked + (daily except Sunday); on to Regina (sk_cn_t200a.csv)."
+mile,station,principal,prov,tz,D,U
+0.0,Regina,1,SK,M,lv 9.10a,ar 6.45p
+18.8,Estlin,0,SK,M,9.54a,5.56p
+25.6,Gray,0,SK,M,10.08a,5.42p
+32.6,Riceton,0,SK,M,10.22a,5.28p
+45.0,Lewvan,0,SK,M,10.46a,5.04p
+51.1,Colfax,0,SK,M,10.58a,4.52p
+69.8,Talmage,1,SK,M,11.36a,4.14p
+83.6,Weyburn,1,SK,M,ar 12.15p / lv 12.30p,ar 3.30p / lv 3.40p
+89.5,Union Jack,0,SK,M,f12.50p,f3.10p
+92.9,Grassdale,0,SK,M,f12.57p,f3.03p
+99.4,Clearfield,0,SK,M,f1.10p,f2.50p
+103.7,Dandonneau,0,SK,M,f1.18p,f2.42p
+109.1,Radville,1,SK,M,ar 1.30p,lv 2.30p

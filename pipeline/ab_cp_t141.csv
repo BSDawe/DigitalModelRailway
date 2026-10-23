@@ -1,0 +1,36 @@
+# Canadian Pacific Railway, Table 141, South Edmonton - Leduc - Breton - Lacombe (mixed trains M616 and M615).
+# From the Canadian Pacific public timetable, 1948 (page 41). Times as printed: MOUNTAIN TIME.
+# Signs: M before a train number = mixed train; f = stops on signal; a double bar after Winfield = meal station. The days are in the
+# column headings (M616 "Mo. We. Fr.", M615 "Tu. Th. Sa.").
+# The table prints "So. Edmonton" (with references to Tables 138 and 144) and "Lacombe 139". Leduc is printed twice, an arrive row and a
+# leave row, both at mile 17.8: M616 ar 7.50a, lv 7.55a; M615 has 4.45p in both rows.
+# In doubt: Aspen Beach, M615: the minutes are smudged in the scan, read as 8.25 (8.20 is possible). Calmar, M616: 8.37, the last
+# digit touches the column rule (8.31 is less likely).
+# Slow running that the scan really shows: Warburg to Breton, 9.4 miles, takes M616 56 minutes and M615 45 minutes; M615 takes 42 minutes
+# from Townlake (f11.23a) to Winfield (12.05p), 4.1 miles: Winfield is the meal station, and only one time is printed there, so the
+# 12.05p is taken to be the time after the meal stop.
+#train col=M616 num=616 dir=down days="Mon,Wed,Fri" kind=mixed note="South Edmonton to Lacombe by Leduc and Breton. Meal station at Winfield."
+#train col=M615 num=615 dir=up days="Tue,Thu,Sat" kind=mixed note="Lacombe to South Edmonton by Breton and Leduc. Meal station at Winfield."
+mile,station,principal,M616,M615
+0.0,South Edmonton,1,lv 7.15a,ar 5.40p
+12.7,Nisku,0,f7.41a,f5.10p
+17.8,Leduc,1,ar 7.50a / lv 7.55a,ar 4.45p / lv 4.45p
+22.4,Ireton,0,f8.10a,f4.14p
+29.2,Calmar,0,8.37a,3.41p
+34.4,Buford,0,f8.56a,f3.15p
+39.5,Thorsby,0,9.15a,2.50p
+46.2,Sunnybrook,0,f9.40a,f2.17p
+51.5,Warburg,0,f9.59a,f1.50p
+60.9,Breton,0,10.55a,1.05p
+67.7,Norbuck,0,11.29a,12.26p
+72.9,Winfield,0,11.55a,12.05p
+77.0,Townlake,0,f12.16p,f11.23a
+83.3,Hoadley,0,12.42p,11.02a
+88.5,Nugent,0,f1.05p,f10.42a
+91.1,Bluffton,0,1.19p,10.30a
+99.2,Rimbey,0,2.00p,9.55a
+106.0,Forshee,0,2.35p,9.25a
+113.9,Bentley,0,3.10p,9.00a
+119.9,Aspen Beach,0,3.52p,f8.25a?
+125.5,Kasha,0,f4.24p,f8.10a
+132.2,Lacombe,1,ar 5.00p,lv 7.45a

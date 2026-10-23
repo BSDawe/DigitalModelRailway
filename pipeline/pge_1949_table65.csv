@@ -1,0 +1,69 @@
+# Pacific Great Eastern Railway, Time Table 65, effective May 30, 1949 (daylight saving time). Miles from Squamish Dock.
+# No. 1 Mon/Wed/Fri and No. 3 Tue/Thu/Sat northbound; No. 2 Wed/Fri/Sun and No. 4 Tue/Thu/Sat southbound.
+# Nos. 3 and 4 run Squamish Dock - Lillooet only, May 31 (No. 4 June 2) to September 10. f = flag stop; a flag stop with no time is left blank.
+# Union Steamships: Vancouver lv 9.30a, Squamish Dock ar 1.00p; Squamish Dock lv 3.45p, Vancouver ar 7.00p.
+station,mile,No3,No1,No2,No4
+Squamish Dock,0.0,lv 2.00p,lv 2.00p,ar 3.20p,ar 3.20p
+Squamish,1.0,2.07p,2.07p,3.10p,3.10p
+Brackendale,7.0,f2.24p,f2.24p,f2.51p,f2.51p
+Cheekye,9.3,f2.31p,f2.31p,f2.45p,f2.45p
+Cheakamus,11.9,2.37p,2.37p,2.37p,2.37p
+Watson,20.6,f3.07p,f3.07p,f2.05p,f2.05p
+Garibaldi,22.6,3.15p,3.15p,2.00p,2.00p
+Brandywine Falls,28.2,,,,
+McGuire,29.8,f3.40p,f3.40p,f1.35p,f1.35p
+Jordans Lodge,36.3,,,,
+Alta Lake,37.1,4.09p,4.09p,1.13p,1.13p
+Rainbow,38.0,4.16p,4.16p,1.04p,1.04p
+Parkhurst,42.2,4.26p,4.26p,f12.47p,f12.47p
+Tisdall,52.9,f4.56p,f4.56p,f12.07p,f12.07p
+Pemberton,57.3,5.13p,5.13p,11.47a,11.47a
+Chilsampton,61.9,5.26p,5.26p,11.24a,11.24a
+Creekside,62.5,5.28p,5.28p,11.21a,11.21a
+Owl Creek,64.4,5.34p,5.34p,11.15a,11.15a
+Spetch,66.9,f5.41p,f5.41p,f11.08a,f11.08a
+Poole Creek,72.6,,,,
+Birken,76.3,6.09p,6.09p,10.43a,10.43a
+Indian Meadows,80.4,,,,
+D'Arcy,86.0,6.37p,6.37p,10.03a,10.03a
+McGillivray,91.5,6.52p,6.52p,9.40a,9.40a
+Marne,93.1,f6.57p,f6.57p,f9.35a,f9.35a
+Seton,101.2,7.20p,7.20p,9.05a,9.05a
+Shalalth,105.1,7.42p,7.42p,8.50a,8.50a
+Retaskit,111.5,f8.02p,f8.02p,f8.25a,f8.25a
+Craig Lodge,117.4,,,,
+Lillooet,120.4,ar 8.30p,ar 8.30p / lv 9.00p,ar 7.30a / lv 8.00a,lv 8.00a
+Fountain,128.1,,f9.20p,f7.00a,
+Glen Fraser,135.7,,f9.41p,f6.30a,
+Pavilion,140.8,,10.01p,6.10a,
+Moran,145.9,,f10.25p,f5.50a,
+Kelly Lake,155.0,,f10.50p,5.25a,
+Clinton,165.7,,11.15p,4.53a,
+Chasm,177.4,,f11.40p,f4.22a,
+70-Mile,184.7,,12.01a,4.01a,
+Graham,193.3,,f12.23a,3.40a,
+Gravel Pit,195.3,,,,
+Flying-U,199.1,,f12.40a,f3.25a,
+Horse Lake,205.9,,,,
+Lone Butte,209.0,,1.10a,3.00a,
+Canim,215.3,,1.27a,2.35a,
+Exeter,222.5,,1.45a,2.16a,
+Tatton,228.3,,2.02a,2.02a,
+Clark's Crossing,232.5,,,,
+Lac La Hache,236.2,,2.20a,1.42a,
+Emerald Lodge,240.8,,,,
+Wright,248.1,,f2.45a,1.17a,
+Enterprise,256.4,,3.15a,f12.46a,
+Cariboo Indian School,265.8,,,,
+Onward,268.1,,f3.50a,f12.16a,
+Williams Lake,276.7,,ar 4.15a / lv 4.40a,ar 11.25p / lv 11.55p,
+Whiskey Creek,289.1,,f5.16a,f10.47p,
+Hargreaves,291.3,,,,
+Soda Creek,298.6,,5.40a,10.19p,
+Macalister,307.4,,6.05a,9.53p,
+Marguerite,311.4,,6.16a,9.42p,
+Alexandria,320.8,,f6.44a,9.10p,
+Australian,327.8,,f7.04a,f8.47p,
+Kersley,334.4,,7.22a,8.25p,
+Dragon,339.9,,f7.33a,f8.10p,
+Quesnel,347.0,,ar 8.00a,lv 7.45p,

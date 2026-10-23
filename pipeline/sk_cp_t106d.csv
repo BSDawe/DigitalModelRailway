@@ -1,0 +1,25 @@
+# Canadian Pacific, Table 106: section D, Deloraine - Lyleton (123, M251, M252, 124). All Manitoba.
+# From the Canadian Pacific public timetable of about 1948 (scan cp1948_sk/table106_winnipeg_souris_lyleton_estevan.png, printed sideways).
+# Times as printed: CENTRAL TIME ("Central Time" heads the station column; "Estevan C.T." at the foot), all rows.
+# Signs (explanation of signs on this page): || = meal station; * = daily; dagger = daily ex. Sun.; f = stop on signal; d = stops to detrain;
+# M = mixed train. Only || and f appear in the time columns of this table. .. = does not run/stop (left empty).
+# Column heads: "7 137 Ex. Sun." (No. 7 Winnipeg - Brandon, No. 137 Brandon - Estevan), "8 138 Ex. Sun." (No. 138 Estevan - Brandon, No. 8 Brandon -
+# Winnipeg), "M251 Mon. Thur.", "M252 Tue. Fri." (two columns, one each way), "M254 Wed. Sat.", "123" and "124" (days printed lower in the column:
+# 123 Mon. Wed. Fri., 124 Tue. Thu. Sat.).
+# The mixed trains run a circuit: M251 Souris - Lauder - Boissevain - Deloraine - Lyleton; M252 Lyleton - Deloraine - Boissevain - Lauder, then
+# Lauder - Alida; M254 Alida - Lauder - Souris. Each section of the table is a separate file (sk_cp_t106b to e; the Winnipeg - Brandon section is not entered), miles as printed.
+# Miles as printed (Deloraine 77.6 here, counted another way than the 107.0 of section C; probably from Brandon by Napinka).
+# 123 and 124 have no M (not mixed): entered as passenger; their days are printed in the column at the head of this section.
+#train col=No123 num=123 dir=down days="Mon,Wed,Fri" kind=passenger
+#train col=M251 num=251 dir=down days="Mon,Thu" kind=mixed from="Souris" note="From Souris 2.45p by Lauder and Boissevain, Deloraine ar 8.45p (sk_cp_t106b.csv, sk_cp_t106c.csv)."
+#train col=M252 num=252 dir=up days="Tue,Fri" kind=mixed to="Alida" note="Continues Deloraine 11.15a - Boissevain - Lauder 3.15p (sk_cp_t106c.csv), then Lauder 5.05p - Alida 8.00p (sk_cp_t106e.csv)."
+#train col=No124 num=124 dir=up days="Tue,Thu,Sat" kind=passenger
+mile,station,principal,prov,tz,No123,M251,M252,No124
+77.6,Deloraine,1,MB,C,lv 6.40p,lv 9.00p,ar 11.00a,ar 6.20a
+86.0,Goodlands,0,MB,C,7.00p,9.25p,10.35a,6.05a
+90.0,Cranmer,0,MB,C,f7.10p,f9.40p,f10.20a,f5.52a
+94.8,Waskada,0,MB,C,7.25p,10.00p,10.00a,5.43a
+99.5,Dalny,0,MB,C,f7.40p,10.15p,f9.45a,f5.33a
+105.6,Coulter,0,MB,C,7.55p,10.30p,9.30a,5.20a
+110.0,Cameron,0,MB,C,f8.05p,10.45p,9.13a,f5.10a
+114.8,Lyleton,1,MB,C,ar 8.20p,ar 11.00p,lv 9.00a,lv 5.00a

@@ -1,0 +1,9 @@
+# The Alaska Railroad, March 1948 (as ak_arr_seward.csv). This file: Whittier - Portage - Anchorage, the daily-except-Sunday trains.
+# Times as printed: 150th MERIDIAN TIME (two hours earlier than Pacific). WHITTIER HAS NO MILE PRINTED: entered as 51.7, i.e. 12.5 mi from Portage (the
+# length of the NTAD Whittier subdivision), only so the line can be measured; the station is placed at the Whittier yard. Portage 64.2 and Anchorage 114.3 are the miles from Seward as printed. Whittier elevation 21.
+#train col=WA num="" dir=down days="ex Sun" kind=passenger note="Column headed Daily, except Sunday (no train number printed)."
+#train col=AW num="" dir=up days="ex Sun" kind=passenger note="Column headed Daily, except Sunday (no train number printed)."
+mile,station,principal,WA,AW
+51.7,Whittier,1,lv 4.00p,ar 12.20p
+64.2,Portage,1,lv 4.30p,ar 11.50a
+114.3,Anchorage,1,ar 6.25p,lv 10.00a

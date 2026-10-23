@@ -1,0 +1,12 @@
+# Union Pacific Railroad, Table 56, Portland and Spokane, table of April 4, 1948 (Official Guide, "Oregon and Washington"). Times as printed:
+# PACIFIC TIME. Miles from Portland as printed (Umatilla 183, Wallula 211, Ayer 264, Spokane 368 via Cheney).
+# This file: the connection Ayer - Tucannon - Riparia printed in Table 56 for Lewiston (353, Idaho), no train number printed in Table 56. UP Table 62
+# (Camas Prairie R.R.) heads this run "20-74-344" / "343-73-19", so it is entered as Camas Prairie Nos. 74 and 73; Riparia - Lewiston is in
+# wa_up_t062. IDAHO: Lewiston, mile 353 here (72 from Riparia), is the first Idaho station. Kind as for Camas Prairie Table 49 (mixed) - check.
+# Riparia has arr./lve. (folded). Signs: * daily (Lewiston lv *6.20 p.m.).
+#train col=No74 num=74 dir=down days="daily" kind=passenger from="Ayer" to="Lewiston" note="Camas Prairie R.R.; connection from UP Nos. 20 and 66 at Ayer."
+#train col=No73 num=73 dir=up days="daily" kind=passenger from="Lewiston" to="Ayer" note="Camas Prairie R.R.; connection to UP Nos. 19 and 65 at Ayer."
+mile,station,principal,No74,No73
+264,Ayer,1,lv 5.30a,ar 9.10p
+276,Tucannon,0,5.58a,8.45p
+281,Riparia,1,ar 6.10a / lv 6.15a,ar 8.30p / lv 8.35p

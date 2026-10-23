@@ -1,0 +1,28 @@
+# Canadian Pacific, Table 109, Regina - Weyburn (via Stoughton).
+# From the Canadian Pacific public timetable of about 1948 (scan cp1948_sk/table109_regina_weyburn.png).
+# Times as printed: MOUNTAIN TIME ("Mountain Time" heads the station column). Miles from Regina as printed. All stations in Saskatchewan.
+# Signs: || = meal station (Regina). A large black dot is printed above the numbers 308 and 307: = motor train (explained on the Table 98 page,
+# table098_winnipeg_souris_arcola_regina.png, where 307 and 308 carry the same sign). No f signs in this table.
+# Stoughton is printed twice ("Ar Stoughton 98 Lv" 88.5 and "Lv Stoughton Ar", no mile): one row. References: Regina 6, 98, 116; Stoughton 98; Weyburn 98.
+# 56 is headed "To Winnipeg" and 55 "From Winnipeg" (they run Regina - Stoughton here and continue on Table 98).
+# Columns 56 ("To Winnipeg", Regina 5.30a - Stoughton 8.10a) and 55 ("From Winnipeg", Stoughton 8.06p - Regina 10.40p), Ex. Sun., are the Table 98
+# trains (sk_cp_t098a.csv, same times at every station): NOT entered here.
+#train col=No308 num=308 dir=down days="ex Sun" kind=motor note="Motor train (black dot)."
+#train col=No307 num=307 dir=up days="ex Sun" kind=motor note="Motor train (black dot)."
+mile,station,principal,prov,tz,No308,No307
+0.0,Regina,1,SK,M,lv 5.25p,ar 11.00a
+8.6,Richardson,0,SK,M,5.43p,10.41a
+17.2,Kronau,0,SK,M,5.58p,10.27a
+25.0,Lajord,0,SK,M,6.11p,10.14a
+32.9,Sedley,0,SK,M,6.25p,9.59a
+41.1,Francis,0,SK,M,6.39p,9.44a
+48.7,Tyvan,0,SK,M,6.53p,9.30a
+57.2,Osage,0,SK,M,7.08p,9.13a
+65.6,Fillmore,0,SK,M,7.23p,8.58a
+72.5,Creelman,0,SK,M,7.36p,8.45a
+81.5,Heward,0,SK,M,7.53p,8.26a
+88.5,Stoughton,1,SK,M,ar 8.06p / lv 8.15p,ar 7.45a / lv 8.10a
+100.0,Froude,0,SK,M,8.40p,7.26a
+106.9,Griffin,0,SK,M,8.52p,7.13a
+114.9,Hume,0,SK,M,9.07p,6.59a
+125.9,Weyburn,1,SK,M,ar 9.30p,lv 6.40a

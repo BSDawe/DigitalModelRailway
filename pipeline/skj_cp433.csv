@@ -1,0 +1,19 @@
+# Joined through train (cp433), sk_join.py: skcp110a:M433, skcp110b:M433; up skcp110b:M434, skcp110a:M434
+# Rows and times as in the section files (see them for the scans, signs and doubts). Miles: counted along the run from the first station.
+#train col=D num=433 dir=down days="Tue,Fri" kind=mixed note="Through train: No. 433 Estevan - Bromhead; No. 433 Bromhead - Minton. Continues Bromhead 8.50a - Minton 12.40p (sk_cp_t110b.csv)."
+#train col=U num=434 dir=up days="Tue,Fri" kind=mixed note="Through train: No. 434 Minton - Bromhead; No. 434 Bromhead - Estevan. Continues Bromhead 4.50p - Estevan 6.45p (sk_cp_t110a.csv)."
+mile,station,principal,prov,tz,D,U
+0.0,Estevan,1,SK,M,lv 6.30a,ar 6.45p
+9.0,Tableland,0,SK,M,f7.00a,f6.10p
+15.6,Outram,0,SK,M,7.30a,5.50p
+23.2,Torquay,0,SK,M,8.05a,5.25p
+32.0,Bromhead,1,SK,M,8.50a,4.50p
+34.0,Southall,0,SK,M,8.55a,4.45p
+39.4,Oungre,0,SK,M,9.15a,4.25p
+43.8,Hoffer,0,SK,M,9.40a,4.05p
+49.5,Ratcliffe,0,SK,M,10.10a,3.40p
+54.6,Beaubier,0,SK,M,10.40a,3.20p
+60.3,Lake Alma,0,SK,M,11.05a,2.50p
+67.5,Blooming,0,SK,M,11.40a,2.20p
+72.6,Gladmar,0,SK,M,12.10p,1.55p
+79.0,Minton,1,SK,M,ar 12.40p,lv 1.25p

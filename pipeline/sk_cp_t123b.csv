@@ -1,0 +1,18 @@
+# Canadian Pacific, Table 123, Weyburn - Amulet - Cardross - Assiniboia: the Amulet - Cardross branch.
+# From the Canadian Pacific public timetable of about 1948 (scan cp1948_sk/tables123_125_weyburn_assiniboia_killdeer.png, printed sideways).
+# Times as printed: MOUNTAIN TIME. Miles from Amulet as printed. All stations in Saskatchewan.
+# Slow running as printed (seen in two crops): M429 Ormiston 2.40p to Crane Valley 3.55p (6.3 miles in 75 minutes).
+# Signs: f = stops on signal; M = mixed train. Dahinda: M429 12.25 (p.m., column reads A.M. at the head and P.M. at the foot).
+#train col=M429 num=429 dir=down days="Mon,Thu" kind=mixed from="Weyburn" note="Comes from Weyburn 8.30a - Amulet 10.50a (sk_cp_t123.csv)."
+#train col=M430 num=430 dir=up days="Tue,Fri" kind=mixed to="Weyburn" note="Continues Amulet 12.10p - Weyburn 2.30p (sk_cp_t123.csv)."
+mile,station,principal,prov,tz,M429,M430
+0.0,Amulet,1,SK,M,lv 11.10a,ar 11.40a
+2.0,Wallace,0,SK,M,11.15a,11.30a
+8.4,Bures,0,SK,M,f11.35a,f10.55a
+13.6,Edgeworth,0,SK,M,11.55a,10.25a
+17.3,Dahinda,0,SK,M,12.25p,10.00a
+22.9,Kayville,0,SK,M,1.15p,9.30a
+27.8,Wheatstone,0,SK,M,1.55p,9.00a
+34.2,Ormiston,0,SK,M,2.40p,8.35a
+40.5,Crane Valley,0,SK,M,3.55p,8.10a
+47.3,Cardross,1,SK,M,ar 4.30p,lv 7.45a

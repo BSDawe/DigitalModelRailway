@@ -1,0 +1,30 @@
+# Canadian Pacific, Table 97, Winnipeg - East Selkirk - Molson - Lac du Bonnet - Great Falls. From the Canadian Pacific public timetable of 1948
+# (scan cp1948_mb/t097.png). Transcribed 18 October 2026. CENTRAL TIME. Miles from Winnipeg as printed. All Manitoba. Molson is printed twice (Ar / Lv, 44.8): one row.
+# Signs (Tables 93-98 page): f = stops on signal; || = meal station; M = mixed train; triangle = will operate May 22 to Sept. 4 incl. (104);
+#   club = will not operate on Sats., May 22 to Sept. 4 incl. (102). Entered as a summer (July) week: 102 Mon. - Fri., 104 Sat.; out of summer 102 runs Mon. - Sat.
+# Not entered: 206 (We. Sa., Winnipeg 7.00a - Molson 8.30a, printed "Via Oakbank": the main line, Table 5, sk_cp_t005e.csv).
+# Mixed-train working as printed: M207 (Fri.) Great Falls - Molson 11.35a and M205 (Tu. Fr.) Molson 12.30p - Winnipeg; M208 (Thu.) Molson 1.15p - Great Falls.
+#   Table 5 (sk_cp_t005e.csv) has M205 Tue. Thu. Kenora - Molson ar 12.10p: on Tuesday it goes on to Winnipeg as M205 here; on Thursday M208 leaves Molson for Great Falls.
+#train col=No102 num=102 dir=down days="Mon,Tue,Wed,Thu,Fri" kind=passenger note="Daily ex. Sun.; not on Saturdays May 22 - Sept. 4 (No. 104 instead). Winnipeg 5.15 p.m. to Great Falls 8.35 p.m."
+#train col=No104 num=104 dir=down days="Sat" kind=passenger note="Saturdays, May 22 to Sept. 4. Winnipeg 1.30 p.m. to Great Falls 4.00 p.m."
+#train col=M208 num=208 dir=down days="Thu" kind=mixed note="Molson 1.15 p.m. to Great Falls 4.00 p.m."
+#train col=No101 num=101 dir=up days="Tue,Wed,Thu,Fri,Sat" kind=passenger note="Ex. Sun. and Mon. Great Falls 7.20 a.m. to Winnipeg 10.15 a.m."
+#train col=M207 num=207 dir=up days="Fri" kind=mixed note="Great Falls 8.45 a.m. to Molson 11.35 a.m.; on to Winnipeg as M205 (12.30 p.m.)."
+#train col=M205 num=205 dir=up days="Tue,Fri" kind=mixed note="Molson 12.30 p.m. to Winnipeg 3.40 p.m. by East Selkirk (Tuesday from Kenora, Table 5; Friday from Great Falls as M207)."
+#train col=No103 num=103 dir=up days="Sun" kind=passenger note="Sundays. Great Falls 5.50 p.m. to Winnipeg 8.30 p.m."
+mile,station,principal,prov,tz,No102,No104,M208,No101,M207,M205,No103
+0.0,Winnipeg,1,MB,C,lv 5.15p,lv 1.30p,,ar 10.15a,,ar 3.40p,ar 8.30p
+7.9,Birds Hill,0,MB,C,5.30p,1.45p,,9.58a,,3.15p,8.13p
+14.8,Gonor,0,MB,C,f5.40p,f1.54p,,f9.48a,,f2.55p,f8.03p
+21.5,East Selkirk,0,MB,C,5.50p,2.03p,,9.38a,,2.40p,7.53p
+27.0,Garson,0,MB,C,f5.58p,f2.10p,,f9.30a,,2.10p,f7.45p
+29.1,Tyndall,0,MB,C,6.03p,2.13p,,9.26a,,2.00p,7.41p
+35.6,Beausejour,1,MB,C,6.13p,2.22p,,9.17a,,1.30p,7.32p
+38.6,St. Ouens,0,MB,C,6.18p,2.27p,,f9.11a,,12.45p,7.26p
+44.8,Molson,1,MB,C,ar 6.30p / lv 6.40p,ar 2.35p / lv 2.40p,lv 1.15p,9.00a,ar 11.35a,lv 12.30p,7.15p
+49.7,Buchan,0,MB,C,6.56p,f2.50p,f1.35p,8.42a,f11.17a,,f7.00p
+52.1,Aneda,0,MB,C,f7.02p,f2.54p,f1.45p,f8.36a,f11.10a,,f6.55p
+55.7,Milner Ridge,0,MB,C,7.11p,f3.01p,f2.00p,8.27a,f11.00a,,f6.48p
+59.8,Sproule,0,MB,C,f7.20p,f3.09p,f2.15p,f8.18a,f10.45a,,f6.40p
+65.8,Lac du Bonnet,1,MB,C,7.35p,3.20p,2.30p,8.05a,10.25a,,6.30p
+80.3,Great Falls,1,MB,C,ar 8.35p,ar 4.00p,ar 4.00p,lv 7.20a,lv 8.45a,,lv 5.50p

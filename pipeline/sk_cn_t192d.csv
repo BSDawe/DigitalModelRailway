@@ -1,0 +1,9 @@
+# Canadian National, Table 192, Regina - Melville - Yorkton - Canora - Flin Flon: section D, the line "lv Winnipeg (C.T.) 0 / ar. Melville (C.T.) 279.3"
+#   printed in the table for Nos. 61 and 62 only (scan cn1948_sk/table192_regina_melville_canora_flinflon.png). No intermediate stations are printed.
+# Times as printed: CENTRAL TIME. Miles from Winnipeg as printed (Melville is 96.3 from Regina in the other sections).
+# Signs (Table 193-201 key): a Monday, Wednesday and Friday; b Tuesday, Thursday and Saturday.
+#train col=No61 num=61 dir=down days="Tue,Thu,Sat" kind=passenger to="Flin Flon" note="Winnipeg 10.15 a.m., Melville ar 5.15 p.m., both marked b; continues from Melville (lv 5.45 p.m.) in sk_cn_t192b.csv together with the Regina portion."
+#train col=No62 num=62 dir=up days="Mon,Wed,Fri" kind=passenger from="Flin Flon" note="Melville 11.10 a.m. and Winnipeg 6.00 p.m., both marked a. From Flin Flon (sk_cn_t192b.csv, Melville ar 10.45 a.m.)."
+mile,station,principal,prov,tz,No61,No62
+0.0,Winnipeg,1,MB,C,lv 10.15a,ar 6.00p
+279.3,Melville,1,SK,C,ar 5.15p,lv 11.10a

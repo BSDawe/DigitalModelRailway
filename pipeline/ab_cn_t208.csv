@@ -1,0 +1,34 @@
+# Canadian National Railways, Table 208, Edmonton - Camrose - Mirror - Calgary. Table dated April 25, 1948 (Official Guide, May 1948).
+# Times as printed: MOUNTAIN TIME. Wholly in Alberta.
+# Signs (the page's own key): a = Monday, Wednesday and Friday (No. 14 at Edmonton); b = Tuesday, Thursday and Saturday (No. 13 at Calgary);
+# f = flag stop (Battle, both trains). Light and heavy type: No. 14 is a.m. to Ferintosh 11.37, p.m. from Bashaw 12.09; No. 13 leaves
+# Calgary "12.00 Noon" and is p.m. throughout. Both trains stand 20 minutes at Mirror (arr. and lve. printed).
+# The table prints no station between Edmonton and Hay Lake except North Edmonton, and none between Beiseker and Calgary (38.6 miles).
+# Hay Lake is mile 37.7 here (and in Table 205); Table 209 prints 37.1 for the same station.
+# Note under the table: "Additional Trains - Lvs. Camrose for Mirror M b 11.20 a.m. Lvs. Mirror for Camrose M a 7.30 a.m." That is a mixed train
+# leaving Camrose 11.20a Tuesday, Thursday and Saturday for Mirror, and a mixed train leaving Mirror 7.30a Monday, Wednesday and Friday for
+# Camrose. Only the leaving time is printed for each: no train number, no arriving time and no times between. With one call each they are
+# NOT entered as train columns (nothing is guessed).
+#train col=No14 num=14 dir=down days="Mon,Wed,Fri" kind=passenger note="Edmonton to Calgary by Camrose and Mirror. Stops 20 min at Mirror. Battle on signal."
+#train col=No13 num=13 dir=up days="Tue,Thu,Sat" kind=passenger note="Calgary to Edmonton by Mirror and Camrose. Stops 20 min at Mirror. Battle on signal."
+mile,station,principal,No14,No13
+0.0,Edmonton,1,lv 8.30a,ar 8.35p
+3.1,North Edmonton,0,8.42a,8.23p
+37.7,Hay Lake,0,9.48a,7.16p
+54.6,Camrose,1,10.40a,6.45p
+60.2,Battle,0,f10.52a,f6.30p
+69.5,New Norway,0,11.18a,6.09p
+77.0,Ferintosh,0,11.37a,5.54p
+90.7,Bashaw,0,12.09p,5.26p
+101.5,Mirror,1,ar 12.35p / lv 12.55p,ar 4.45p / lv 5.05p
+107.6,Alix,1,1.09p,4.30p
+122.9,Delburne,0,1.45p,3.50p
+129.4,Lousana,0,1.59p,3.35p
+139.3,Elnora,0,2.21p,3.15p
+144.9,Huxley,0,2.33p,3.03p
+152.0,Trochu,0,2.49p,2.49p
+161.7,Three Hills,0,3.13p,2.28p
+174.7,Swalwell,0,3.45p,1.53p
+180.9,Grainger,0,3.58p,1.39p
+193.5,Beiseker,0,4.23p,1.16p
+232.1,Calgary,1,ar 5.45p,lv 12.00p

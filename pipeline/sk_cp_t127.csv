@@ -1,0 +1,13 @@
+# Canadian Pacific, Table 127, Swift Current - Stewart Valley.
+# From the Canadian Pacific public timetable of about 1948 (scan cp1948_sk/tables126_128_bredenbury_nipawin_swiftcurrent_lloydminster.png, printed sideways).
+# Times as printed: MOUNTAIN TIME. Miles from Swift Current as printed. All stations in Saskatchewan. Signs: || = meal station; M = mixed train;
+# .. = does not stop (both trains at Aikins). "Swift Current 6" refers to Table 6.
+#train col=M446 num=446 dir=down days="Fri" kind=mixed
+#train col=M445 num=445 dir=up days="Fri" kind=mixed
+mile,station,principal,prov,tz,M446,M445
+0.0,Swift Current,1,SK,M,lv 9.30a,ar 1.50p
+5.9,Aikins,0,SK,M,,
+8.2,Baird,0,SK,M,9.55a,1.25p
+14.4,St. Aldwyn,0,SK,M,10.20a,1.05p
+20.5,Leinan,0,SK,M,10.50a,12.45p
+28.1,Stewart Valley,1,SK,M,ar 11.15a,lv 12.20p

@@ -1,0 +1,77 @@
+# Canadian Pacific, Table 98, Winnipeg - Souris - Arcola - Regina (via Glenboro; also via Brandon): main line Winnipeg - Elm Creek - Glenboro - Souris -
+# Schwitzer - Arcola - Stoughton - Regina, with all trains that use any of its rows.
+# From the Canadian Pacific public timetable of about 1948 (scan cp1948_sk/table098_winnipeg_souris_arcola_regina.png, printed sideways; page "TABLES 93 to 98").
+# Signs (explanation of signs on this page): f = stops on signal; || = meal station; M = mixed train; black dot = motor train (307, 308);
+# C.T. = Central Time, M.T. = Mountain Time. (Other signs on that page, a b n s t v dagger, are not used in Table 98.)
+# Times as printed: CENTRAL TIME Winnipeg - Arcola ("Central Time" heads the table, "Arcola C.T."), MOUNTAIN TIME Arcola - Regina ("Arcola M.T.",
+# "Regina M.T."). Arcola is printed twice (Ar Arcola C.T. 254.7 / Lv Arcola M.T., no mile): one row, tz C/M: 55 arrives 8.05p C.T. and leaves 7.20p M.T.
+# (= 8.20p C.T., 15 minutes); 56 arrives 9.05a M.T. and leaves 10.20a C.T. (= 9.20a M.T.). ab_table.py flags 55 at Arcola: the time-zone change.
+# Miles from Winnipeg as printed. Elm Creek, Souris, Schwitzer and Stoughton are each printed twice (Ar / Lv): one row each.
+# Provinces: Winnipeg - Sinclair Manitoba ("Sinclair, Man"), Antler ("Antler, Sask") and west Saskatchewan.
+# Connection rows printed in the columns but not entered as rows here: "Ar Estevan 106" (55 column 10.00, 56 column Lv 8.25, no mile: the Table 106 trains
+# 137/138 from/to Schwitzer); "Lv Stoughton 109 / Ar Weyburn 109" (55 column 8.15, 9.30; 56 column Weyburn 6.40, Stoughton 7.45; no miles: these are
+# 308 and 307 of Table 109, sk_cp_t109.csv); and the columns 7-137 / 138-8 Winnipeg - Brandon - Souris (Winnipeg 11.10a / 5.55p, Brandon 2.15p-3.10p / 2.30p-3.05p,
+# Souris 157.7 ar 4.00p / lv 1.40p): the Table 5 and Table 106 trains (sk_cp_t106b.csv), not entered here.
+# Table 109 prints 55 and 56 again Stoughton - Regina (same times; entered only here).
+# References: Plum Coulee 99, Souris 106, Schwitzer 106, Reston 103, Stoughton 109.
+# Columns 307 (Stoughton 8.10a - Regina 11.00a) and 308 (Regina 5.25p - Stoughton 8.06p), motor trains Ex. Sun., are the Table 109 trains
+# Weyburn - Stoughton - Regina (sk_cp_t109.csv, same times): NOT entered here.
+#train col=M233 num=233 dir=down days="Mon,Thu" kind=mixed to="Gretna" note="Winnipeg to Elm Creek here; continues Elm Creek 4.55p - Gretna 9.00p (sk_cp_t098b.csv)."
+#train col=No55 num=55 dir=down days="ex Sun" kind=passenger note="Winnipeg to Regina via Glenboro and Arcola; Central Time to Arcola, Mountain after."
+#train col=M245 num=245 dir=down days="Mon" kind=mixed to="Wolseley" note="Souris 6.50a to Reston 8.40a here; continues Reston 9.05a - Wolseley (Table 103, sk_cp_t103.csv)."
+#train col=No56 num=56 dir=up days="ex Sun" kind=passenger note="Regina to Winnipeg via Arcola and Glenboro; Mountain Time to Arcola, Central after."
+#train col=M234 num=234 dir=up days="Wed,Sat" kind=mixed from="Gretna" note="From Gretna 6.15a - Elm Creek 9.50a (sk_cp_t098b.csv); Elm Creek 9.55a to Winnipeg 12.20p here."
+#train col=M246 num=246 dir=up days="Sat" kind=mixed from="Wolseley" note="From Wolseley (Table 103, sk_cp_t103.csv) to Reston; Reston 3.30p to Souris 5.25p here."
+mile,station,principal,prov,tz,M233,No55,M245,No56,M234,M246
+0.0,Winnipeg,1,MB,C,lv 1.45p,lv 10.10a,,ar 6.25p,ar 12.20p,
+9.0,Murray Park,0,MB,C,f2.17p,f10.32a,,f5.58p,f11.40a,
+15.3,Headingley,0,MB,C,f2.35p,10.45a,,5.47p,f11.25a,
+22.7,Springstein,0,MB,C,f3.00p,11.00a,,5.35p,f11.00a,
+28.8,Starbuck,0,MB,C,f3.30p,11.13a,,5.25p,f10.36a,
+36.5,Fannystelle,0,MB,C,f4.00p,11.26a,,5.12p,f10.21a,
+42.9,Culross,0,MB,C,f4.15p,11.37a,,5.00p,f10.06a,
+47.3,Elm Creek,1,MB,C,ar 4.30p,ar 11.47a / lv 11.47a,,ar 4.52p / lv 4.52p,lv 9.55a,
+56.5,Haywood,0,MB,C,,12.03p,,4.35p,,
+63.0,St. Claude,0,MB,C,,12.16p,,4.25p,,
+72.1,Rathwell,0,MB,C,,12.35p,,4.10p,,
+79.0,Treherne,0,MB,C,,12.55p,,3.57p,,
+87.6,Holland,0,MB,C,,1.15p,,3.40p,,
+92.0,Landseer,0,MB,C,,1.23p,,3.30p,,
+97.6,Cypress River,0,MB,C,,1.40p,,3.20p,,
+106.6,Glenboro,0,MB,C,,2.05p,,3.05p,,
+114.3,Stockton,0,MB,C,,2.20p,,2.53p,,
+122.1,Treesbank,0,MB,C,,2.40p,,2.40p,,
+124.7,Banting,0,MB,C,,f2.45p,,f2.31p,,
+127.9,Methven,0,MB,C,,2.50p,,2.25p,,
+133.8,Nesbitt,0,MB,C,,3.02p,,2.17p,,
+142.2,Carroll,0,MB,C,,3.17p,,2.05p,,
+147.3,Newstead,0,MB,C,,f3.26p,,f1.58p,,
+152.6,Souris,1,MB,C,,ar 3.45p / lv 4.30p,lv 6.50a,ar 1.30p / lv 1.50p,,ar 5.25p
+158.0,Schwitzer,1,MB,C,,ar 4.40p / lv 4.40p,ar 7.07a / lv 7.10a,ar 1.17p / lv 1.18p,,ar 5.05p / lv 5.05p
+162.8,Denbow,0,MB,C,,f4.49p,,f1.08p,,
+167.2,Deleau,0,MB,C,,4.58p,7.35a,1.00p,,4.25p
+175.3,Findlay,0,MB,C,,5.11p,f7.55a,12.45p,,f4.05p
+184.1,Pipestone,0,MB,C,,5.26p,8.20a,12.31p,,3.45p
+190.5,Reston,1,MB,C,,5.40p,ar 8.40a,12.20p,,lv 3.30p
+199.7,Sinclair,0,MB,C,,6.00p,,12.02p,,
+207.2,Antler,0,SK,C,,6.14p,,11.48a,,
+213.0,Fry's,0,SK,C,,6.25p,,11.38a,,
+218.2,Redvers,0,SK,C,,6.36p,,11.29a,,
+227.8,Wauchope,0,SK,C,,6.57p,,11.11a,,
+235.8,Manor,0,SK,C,,7.14p,,10.56a,,
+244.4,Carlyle,0,SK,C,,7.36p,,10.39a,,
+254.7,Arcola,1,SK,C/M,,ar 8.05p / lv 7.20p,,ar 9.05a / lv 10.20a,,
+263.0,Kisbey,0,SK,M,,7.35p,,8.44a,,
+271.8,Forget,0,SK,M,,7.50p,,8.32a,,
+279.6,Stoughton,1,SK,M,,ar 8.03p / lv 8.06p,,ar 8.10a / lv 8.20a,,
+286.6,Heward,0,SK,M,,8.18p,,7.56a,,
+295.6,Creelman,0,SK,M,,8.33p,,7.40a,,
+302.5,Fillmore,0,SK,M,,8.45p,,7.26a,,
+310.9,Osage,0,SK,M,,8.59p,,7.10a,,
+319.4,Tyvan,0,SK,M,,9.13p,,6.54a,,
+327.0,Francis,0,SK,M,,9.26p,,6.39a,,
+335.2,Sedley,0,SK,M,,9.40p,,6.25a,,
+343.1,Lajord,0,SK,M,,9.54p,,6.12a,,
+350.9,Kronau,0,SK,M,,10.08p,,6.00a,,
+359.5,Richardson,0,SK,M,,10.21p,,5.47a,,
+368.1,Regina,1,SK,M,,ar 10.40p,,lv 5.30a,,

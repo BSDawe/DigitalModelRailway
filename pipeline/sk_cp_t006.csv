@@ -1,0 +1,91 @@
+# Canadian Pacific, Table 6, Broadview - Regina - Moose Jaw - Swift Current - Calgary - Banff - Lake Louise - Field: ONLY Broadview - Hatton plus Walsh
+# (the first Alberta station), as instructed; Walsh and west are in ab_cp_t006.csv.
+# From the Canadian Pacific public timetable of 1948 (scans cp1948/table006_broadview_field_LARGE.png and table006_broadview_calgary_field.png for the
+# times, read in both; table006_stations_miles_zoom.png for names and miles). Times as printed: MOUNTAIN TIME ("Mountain Time" heads the station column).
+# Miles as printed, counted from Montreal (Broadview 1672.5). Regina (Ar / Lv, both 1764.9), Moose Jaw (1806.5) and Swift Current (1916.9) are each
+# printed twice: one row each with ar / lv. Provinces: all Saskatchewan to "Hatton, Sask." (2020.2); "Walsh, Alta" 2032.1.
+# Signs (explanation of signs on this page):
+#   f = stops on signal; || = meal station (Broadview, Regina, Moose Jaw, Swift Current); black dot = motor train (353, 347, 345, 343, 341 and 340, 342,
+#   344, 348; the dot over the "58 346" column is printed above 58, probably meant for 346, the Regina - Moose Jaw part: 346 entered as motor, 58 as passenger,
+#   in doubt); cross = connections with C.P. Air Lines (Regina, Moose Jaw);
+#   a = stops to detrain for south of Portal, July 4 to Sept. 3 only (No. 1 Pasqua 7.45a): entered as a plain time;
+#   c = stops on signal for revenue passengers to and from east of Swift Current (No. 7 Morse 10.56p): entered f10.56p;
+#   p = stops Sundays to entrain for Regina and west (No. 7 Wolseley 5.53p): entered as a plain time;
+#   t = stops to detrain from Winnipeg and east (No. 7 Indian Head 6.18p): plain time;
+#   z = stops on signal Tue., Thur., Sat. (No. 1 Wolseley 5.09a): entered f5.09a;
+#   y = stops to detrain from Winnipeg and east and entrain for Calgary and west; on Mon., Wed. and Fri. stops Wolseley to entrain (No. 3 Grenfell 4.57p,
+#   Wolseley 5.18p, Qu'Appelle 6.00p): plain times. g and M are not used in this section.
+# References printed: Wolseley 103; Regina 98, 109, 115; Moose Jaw 117; Swift Current 111, 132.
+# The Mountaineer 13 / 14 run Moose Jaw - west only here (to/from Portal by Table 108): 13 "From Chicago June 29 to Sept. 3", 14 "From Vancouver July 2 to
+# Sept. 1" (dates of leaving Chicago / Vancouver, as printed). 13 has no call between Swift Current (lv 10.15p) and Medicine Hat (2.10a); 14 none between
+# Medicine Hat (11.40p) and Swift Current (ar 3.30a).
+# Through trains run on beyond Broadview (Table 5, Central Time: No. 1 ar 5.10a C.T. = 4.10a M.T., leaves 4.25a M.T. here) and beyond Walsh (ab_cp_t006.csv).
+# Column 58 / 346: one column headed "58 346 Ex. Sun.": No. 58 Regina 7.00p - Broadview 10.30p, No. 346 Moose Jaw 5.15p - Regina 6.25p. Entered as two trains.
+# No. 57 (Ex. Sun., no dot) runs Broadview - Regina only (Regina ar 9.10a; nothing printed in its column below Regina).
+#train col=No57 num=57 dir=down days="ex Sun" kind=passenger note="Broadview to Regina."
+#train col=No1 num=1 dir=down days="daily" kind=passenger from="Fort William" to="Vancouver" note="From Table 5 (Fort William, Winnipeg); on to Calgary and Vancouver (ab_cp_t006.csv). Wolseley 5.09a sign z (stops on signal Tue., Thu., Sat.); Pasqua 7.45a sign a (stops to detrain for south of Portal, July 4 to Sept. 3)."
+#train col=No7 num=7 dir=down days="daily" kind=passenger from="Fort William" to="Vancouver" note="The Dominion. Wolseley 5.53p sign p (stops Sundays to entrain for Regina and west); Indian Head 6.18p sign t (stops to detrain from Winnipeg and east); Morse 10.56p sign c (stops on signal for revenue passengers to and from east of Swift Current)."
+#train col=No3 num=3 dir=down days="daily" kind=passenger from="Fort William" to="Vancouver" note="The Dominion. Grenfell 4.57p, Wolseley 5.18p, Qu'Appelle 6.00p sign y (stop to detrain from Winnipeg and east and entrain for Calgary and west; Mon., Wed., Fri. Wolseley stops to entrain)."
+#train col=No13 num=13 dir=down days="daily" kind=passenger from="Chicago" to="Vancouver" note="The Mountaineer. Summer only: from Chicago June 29 to Sept. 3 (dates of leaving Chicago). From Portal by Table 108 (ar Moose Jaw 6.55p); leaves Moose Jaw 7.30p."
+#train col=No341 num=341 dir=down days="ex Sun" kind=motor note="Motor train. Regina to Moose Jaw."
+#train col=No343 num=343 dir=down days="daily" kind=motor note="Motor train. Regina to Moose Jaw."
+#train col=No345 num=345 dir=down days="ex Sun" kind=motor note="Motor train. Regina to Moose Jaw."
+#train col=No347 num=347 dir=down days="ex Sun" kind=motor note="Motor train. Regina to Moose Jaw."
+#train col=No353 num=353 dir=down days="daily" kind=motor note="Motor train. Regina 11.00p to Moose Jaw 12.00 midnight (printed MN'T)."
+#train col=No2 num=2 dir=up days="daily" kind=passenger from="Calgary" to="Fort William" note="From Calgary (lv 7.00a, ab_cp_t006.csv); on from Broadview 12.20a M.T. (Table 5: lv 1.35a C.T.) to Winnipeg and Fort William."
+#train col=No8 num=8 dir=up days="daily" kind=passenger from="Vancouver" to="Fort William" note="The Dominion. On from Broadview (Table 5)."
+#train col=No4 num=4 dir=up days="daily" kind=passenger from="Vancouver" to="Fort William" note="The Dominion. On from Broadview (Table 5)."
+#train col=No14 num=14 dir=up days="daily" kind=passenger from="Vancouver" to="Chicago" note="The Mountaineer. Summer only: from Vancouver July 2 to Sept. 1 (dates of leaving Vancouver). Ends here at Moose Jaw (ar 5.55a); on to Portal by Table 108 (lv 7.35a)."
+#train col=No340 num=340 dir=up days="ex Sun" kind=motor note="Motor train. Moose Jaw to Regina."
+#train col=No342 num=342 dir=up days="daily" kind=motor note="Motor train. Moose Jaw 11.00a to Regina 12.10p."
+#train col=No344 num=344 dir=up days="ex Sun" kind=motor note="Motor train. Moose Jaw to Regina."
+#train col=No346 num=346 dir=up days="ex Sun" kind=motor note="Moose Jaw to Regina; column headed 58 346 Ex. Sun. (Brendan: 58 and 346 are both motor trains)."
+#train col=No58 num=58 dir=up days="ex Sun" kind=motor note="Regina to Broadview; column headed 58 346 Ex. Sun.: two motor trains (Brendan: 58 and 346, both motor trains, paralleling 57 and 345 or 347)."
+#train col=No348 num=348 dir=up days="daily" kind=motor note="Motor train. Moose Jaw to Regina."
+mile,station,principal,prov,tz,No57,No1,No7,No3,No13,No341,No343,No345,No347,No353,No2,No8,No4,No14,No340,No342,No344,No346,No58,No348
+1672.5,Broadview,1,SK,M,lv 6.00a,lv 4.25a,lv 5.10p,lv 4.35p,,,,,,,ar 12.20a,ar 10.35a,ar 11.15a,,,,,,ar 10.30p,
+1680.6,Oakshela,0,SK,M,6.15a,,,,,,,,,,,,,,,,,,10.15p,
+1688.1,Grenfell,0,SK,M,6.30a,4.50a,,4.57p,,,,,,,11.53p,,,,,,,,10.05p,
+1695.6,Summerberry,0,SK,M,6.43a,,,,,,,,,,,,,,,,,,9.37p,
+1703.3,Wolseley,0,SK,M,6.58a,f5.09a,5.53p,5.18p,,,,,,,11.33p,,,,,,,,9.25p,
+1712.2,Sintaluta,0,SK,M,7.12a,,,,,,,,,,,,,,,,,,8.57p,
+1722.8,Indian Head,0,SK,M,7.32a,5.38a,6.18p,5.43p,,,,,,,11.07p,9.27a,10.07a,,,,,,8.35p,
+1731.9,Qu'Appelle,0,SK,M,7.58a,,,6.00p,,,,,,,,,,,,,,,8.07p,
+1740.8,McLean,0,SK,M,8.12a,,,,,,,,,,,,,,,,,,7.48p,
+1749.7,Balgonie,0,SK,M,8.40a,,,,,,,,,,,,,,,,,,7.28p,
+1756.3,Pilot Butte,0,SK,M,8.55a,,,,,,,,,,,,,,,,,,7.15p,
+1764.9,Regina,1,SK,M,ar 9.10a,ar 6.40a / lv 7.05a,ar 7.20p / lv 7.40p,ar 6.45p / lv 7.05p,,lv 8.00a,lv 12.40p,lv 3.45p,lv 8.00p,lv 11.00p,ar 9.40p / lv 10.05p,ar 8.10a / lv 8.30a,ar 8.50a / lv 9.10a,,ar 7.25a,ar 12.10p,ar 3.15p,ar 6.25p,lv 7.00p,ar 10.30p
+1774.3,Grand Coulee,0,SK,M,,,,,,8.13a,f12.54p,3.58p,f8.13p,f11.13p,,,,,f7.09a,11.52a,f3.00p,6.07p,,f10.11p
+1781.7,Pense,0,SK,M,,,,,,8.22a,f1.05p,4.07p,f8.22p,f11.22p,,,,,f6.59a,11.39a,f2.52p,5.55p,,f10.01p
+1789.4,Belle Plaine,0,SK,M,,,,,,8.31a,f1.15p,f4.16p,f8.30p,f11.30p,,,,,f6.50a,11.27a,f2.36p,5.42p,,f9.51p
+1794.4,Madrid,0,SK,M,,,,,,f8.38a,,,f8.38p,,,,,,,f11.19a,,f5.33p,,
+1799.6,Pasqua,1,SK,M,,7.45a,,,,8.45a,f1.30p,f4.30p,f8.45p,f11.45p,,,,,f6.40a,f11.11a,f2.25p,5.26p,,f9.40p
+1806.5,Moose Jaw,1,SK,M,,ar 8.00a / lv 8.45a,ar 8.35p / lv 9.10p,ar 8.00p / lv 8.35p,lv 7.30p,ar 9.00a,ar 1.45p,ar 4.45p,ar 9.00p,ar 12.00a,ar 8.05p / lv 8.45p,ar 6.40a / lv 7.15a,ar 7.20a / lv 7.55a,ar 5.55a,lv 6.30a,lv 11.00a,lv 2.15p,lv 5.15p,,lv 9.30p
+1814.7,Boharm,0,SK,M,,8.58a,,,,,,,,,7.48p,,,,,,,,,
+1822.7,Caron,0,SK,M,,9.12a,,,,,,,,,7.34p,,,,,,,,,
+1832.1,Mortlach,0,SK,M,,9.26a,,,,,,,,,7.19p,,,,,,,,,
+1841.2,Parkbeg,0,SK,M,,9.40a,,,,,,,,,7.02p,,,,,,,,,
+1851.5,Secretan,0,SK,M,,9.59a,,,,,,,,,6.44p,,,,,,,,,
+1860.3,Chaplin,0,SK,M,,10.17a,,,,,,,,,6.30p,,,,,,,,,
+1865.4,Uren,0,SK,M,,f10.26a,,,,,,,,,f6.21p,,,,,,,,,
+1873.0,Ernfold,0,SK,M,,10.38a,,,,,,,,,6.09p,,,,,,,,,
+1880.2,Morse,0,SK,M,,10.52a,f10.56p,10.15p,,,,,,,5.54p,,,,,,,,,
+1888.5,Herbert,0,SK,M,,11.09a,,,,,,,,,5.40p,,,,,,,,,
+1895.6,Rush Lake,0,SK,M,,11.25a,,,,,,,,,5.26p,,,,,,,,,
+1905.8,Waldeck,0,SK,M,,11.39a,,,,,,,,,5.13p,,,,,,,,,
+1911.0,Aikins,0,SK,M,,f11.48a,,,,,,,,,f5.05p,,,,,,,,,
+1916.9,Swift Current,1,SK,M,,ar 12.00p / lv 12.20p,ar 11.50p / lv 12.05a,ar 11.15p / lv 11.30p,ar 10.00p / lv 10.15p,,,,,,ar 4.40p / lv 4.55p,ar 4.15a / lv 4.30a,ar 4.55a / lv 5.10a,ar 3.30a / lv 3.45a,,,,,,
+1925.7,Beverley,0,SK,M,,f12.35p,,,,,,,,,f4.25p,,,,,,,,,
+1937.8,Webb,0,SK,M,,12.55p,,,,,,,,,4.09p,,,,,,,,,
+1944.2,Antelope,0,SK,M,,1.05p,,,,,,,,,3.59p,,,,,,,,,
+1951.8,Gull Lake,0,SK,M,,1.20p,12.54a,12.19a,,,,,,,3.45p,3.25a,4.04a,,,,,,,
+1960.2,Carmichael,0,SK,M,,1.36p,,,,,,,,,3.33p,,,,,,,,,
+1966.9,Tompkins,0,SK,M,,1.50p,f1.14a,,,,,,,,3.22p,,f3.45a,,,,,,,
+1973.7,Sidewood,0,SK,M,,2.00p,,,,,,,,,3.10p,,,,,,,,,
+1984.0,Piapot,0,SK,M,,2.20p,,,,,,,,,2.55p,,,,,,,,,
+1988.9,Cross,0,SK,M,,f2.29p,,,,,,,,,f2.45p,,,,,,,,,
+1993.3,Cardell,0,SK,M,,f2.38p,,,,,,,,,f2.38p,,,,,,,,,
+2001.4,Maple Creek,0,SK,M,,2.55p,2.00a,1.25a,,,,,,,2.15p,2.20a,2.58a,,,,,,,
+2014.2,Kincorth,0,SK,M,,f3.27p,,,,,,,,,f1.53p,,,,,,,,,
+2020.2,Hatton,0,SK,M,,3.37p,,,,,,,,,1.44p,,,,,,,,,
+2032.1,Walsh,0,AB,M,,3.53p,,,,,,,,,1.25p,,,,,,,,,

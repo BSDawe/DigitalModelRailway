@@ -1,0 +1,22 @@
+# Canadian Pacific, Table 105, Brandon - Miniota. From the Canadian Pacific public timetable of about 1948 (scan cp1948_sk/tables103_105_reston_wolseley_brandon.png).
+# Transcribed 18 October 2026. CENTRAL TIME. Miles from Brandon as printed. All stations in Manitoba.
+# Rapid City: the trains run in and out of Rapid City from Gautier: printed "Ar Gautier Lv" 33.3, "Ar Rapid City 102 Lv" (no miles), "Lv Gautier Ar" 33.3.
+#   Gautier kept as two rows in printed order; Rapid City mile 35.8 is from Table 102 (Brandon - Rapid City - Minnedosa), not printed in Table 105.
+# Signs: f = stops on signal; d = stops to detrain (M216 at Chater 4.45p): entered as a plain time. References: Brandon 5; Rapid City 102.
+#train col=M215 num=215 dir=down days="Tue,Fri" kind=mixed note="Brandon 6.00 a.m. to Miniota 11.00 a.m., in and out of Rapid City from Gautier."
+#train col=M216 num=216 dir=up days="Tue,Fri" kind=mixed note="Miniota 12.05 p.m. to Brandon 5.05 p.m., in and out of Rapid City from Gautier. Chater 4.45 p.m.: stops to detrain."
+mile,station,principal,prov,tz,M215,M216
+0.0,Brandon,1,MB,C,lv 6.00a,ar 5.05p
+5.5,Chater,0,MB,C,6.15a,4.45p
+16.3,Forrest,0,MB,C,6.50a,4.10p
+23.8,Varcoe,0,MB,C,7.10a,3.45p
+33.3,Gautier,0,MB,C,ar 7.35a,lv 3.05p
+35.8,Rapid City,1,MB,C,7.45a,2.55p
+33.3,Gautier,0,MB,C,lv 7.55a,ar 2.45p
+38.2,Pettapiece,0,MB,C,8.10a,2.24p
+42.8,Floors,0,MB,C,f8.25a,f2.07p
+48.9,Oak River,0,MB,C,8.50a,1.50p
+56.9,Hamiota,0,MB,C,9.30a,1.20p
+65.7,Crandall,0,MB,C,10.05a,12.47p
+70.9,Arrow River,0,MB,C,10.35a,12.25p
+77.1,Miniota,1,MB,C,ar 11.00a,lv 12.05p

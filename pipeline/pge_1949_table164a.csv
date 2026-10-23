@@ -1,0 +1,8 @@
+# Pacific Great Eastern Railway, Table 164A. Rail portion only (Union Steamships connect Vancouver - Squamish Dock).
+# No. 1 Mon/Wed/Fri northbound; No. 2 Wed/Fri/Sun southbound. Mileage from Squamish (NRWN mileposts less 40.4).
+station,mile,No1,No2
+Squamish,0.0,lv 1.50p,ar 2.10p (2nd day)
+Shalalth,102.0,8.00p,8.05a (next day)
+Lillooet,117.2,ar 8.50p / lv 9.20p,ar 6.45a / lv 7.15a (next day)
+Williams Lake,272.5,ar 5.30a / lv 6.00a (next day),ar 10.25p / lv 10.55p
+Quesnel,344.4,ar 9.40a (next day),lv 6.45p

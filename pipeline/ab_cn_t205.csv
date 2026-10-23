@@ -1,0 +1,27 @@
+# Canadian National Railways, Table 205, Edmonton - Camrose - Alliance: the direct line by Bretona, Hay Lake and Armena, with the two
+# mixed trains that use it. Official Guide, May 1948; table dated April 25, 1948. Times as printed: MOUNTAIN TIME ("Mt. time").
+# Wholly in Alberta.
+# The table's other two trains, Nos. 88 and 87, run "Via Tofield" (Edmonton - Tofield - Camrose - Alliance) and are entered whole, Edmonton
+# to Alliance, in ab_cn_t205b.csv. They do not use the Bretona - Armena rows, so they are not in this file; between Camrose and Alliance they
+# run over the rows below.
+# Signs (the page's own key): M = mixed train; g = Monday and Thursday (M342 at Edmonton); p = Wednesday and Saturday (M341 at Alliance);
+# + coupon station; triangle at Edmonton = restaurant or lunch counter.
+# Camrose is printed twice (arr. and lve.), one row here. M342 stands 65 minutes at Camrose, M341 80 minutes.
+# Looma is mile 23.5 in this table (23.4 in Table 209 on the same page).
+#train col=M342 num=342 dir=down days="Mon,Thu" kind=mixed note="By Hay Lake and Armena."
+#train col=M341 num=341 dir=up days="Wed,Sat" kind=mixed note="By Armena and Hay Lake."
+mile,station,principal,M342,M341
+0.0,Edmonton,1,lv 9.00a,ar 3.15p
+3.1,North Edmonton,0,9.15a,2.55p
+16.3,Bretona,0,9.43a,2.15p
+23.5,Looma,0,9.58a,1.45p
+31.1,New Sarepta,0,10.13a,1.15p
+37.7,Hay Lake,0,10.27a,12.50p
+44.4,Armena,0,10.42a,12.07p
+54.6,Camrose,1,ar 11.15a / lv 12.20p,ar 10.10a / lv 11.30a
+71.4,Kelsey,0,1.35p,9.15a
+77.2,Rosalind,0,2.05p,8.55a
+89.7,Heisler,0,3.05p,8.15a
+98.6,Forestburg,0,3.45p,7.45a
+106.2,Galahad,0,4.20p,7.25a
+114.3,Alliance,1,ar 4.50p,lv 7.00a

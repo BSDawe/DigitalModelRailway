@@ -1,0 +1,96 @@
+# Canadian National, Table 180, Winnipeg - Dauphin - Swan River - Prince Albert and North Battleford. Official Guide, April 25, 1948
+#   (scan cn1948_sk/tables180_184_winnipeg_dauphin_princealbert_sturgis_churchill_emerson.png). The whole table is entered (Manitoba part = the same trains).
+# Times as printed: CENTRAL TIME Winnipeg - Hudson Bay Jn. ("C.T." head; "ar. Hudson Bay Jn. (C.T.) lv."), MOUNTAIN TIME Hudson Bay Jn. - Prince Albert -
+#   North Battleford ("lv. Hudson Bay Jn. (M.T.) ar."). Hudson Bay Jn. is printed twice and entered as one row, tz C/M: No. 15 ar 2.40 a.m. C.T., lv 3.15 a.m.
+#   M.T. (= 4.15 C.T.); No. 16 ar 10.20 p.m. M.T., lv 12.01 a.m. C.T. (= 11.01 p.m. M.T.); motor 77 lv 1.15 a.m. and motor 78 ar 6.35 a.m. are on the M.T. line.
+# Miles from Winnipeg as printed, continuing through Prince Albert to North Battleford (555.4 - 686.6). Westgate is printed "Westgate, Man."; Manitoba to
+#   Westgate, Saskatchewan from Hudson Bay Jn. Dauphin, Swan River and Prince Albert are printed twice (arr./lve. lines) and entered as one row.
+# Key to signs (printed on this page): "* Daily. + Daily, except Sunday. ++ Daily, except Saturday. para. Daily, except Monday. Section Sunday only.
+#   a Monday, Wednesday and Friday. b Tuesday, Thursday and Saturday. c Monday only. d Tuesday only. e Thursday and Saturday. f Flag stop.
+#   h Thursday only. k Saturday only. o Wednesday only. r Tuesday and Thursday. x Daily, except Saturday and Sunday. y Tuesday and Friday.
+#   s Stops on signal for revenue passengers only. natural-sign Friday only. (boxed dot) Autobus between Ranier and International Falls.
+#   (black square) Motor train. # Monday and Thursday. (triangle) Restaurant or lunch counter. + Coupon stations. Telegraph stations. M - Mixed train."
+# Day signs at single stations, read as day changes along the run: No. 15 Winnipeg a10.35 a.m. (Mon Wed Fri), Novra a11.39 p.m., Baden b12.34 a.m. and
+#   Prince Albert b9.35 a.m. (next morning, Tue Thu Sat). No. 16 Hudson Bay Jn. ar a10.20 p.m. (Mon Wed Fri), lv b12.01 a.m., Winnipeg b3.30 p.m. (Tue Thu Sat).
+#   Motor 78: Prince Albert k10.30 p.m. (Saturday), Weldon k11.54 p.m., Kinistino Section-12.07 a.m. and Hudson Bay Jn. Section-6.35 a.m. (Sunday).
+# COLUMNS SPLIT BY DAYS (my reading of the signs; in doubt):
+#   - The column headed "(black square) 77-71-75" (motor; the head is printed at Baden/National Mills/Westgate, above "A M") has Hudson Bay Jn. c1.15 a.m.
+#     (Monday only), Crooked River a5.35 a.m. and Prince Albert a9.35 a.m. (Mon Wed Fri), then Prince Albert a12.45 p.m. to North Battleford 5.45 p.m.
+#     Entered as Mot77 (Monday, from Hudson Bay Jn.) and Mot71 (Wednesday and Friday, from Crooked River), identical from Crooked River on.
+#     Which number applies to which leg (77, 71, 75) is not printed; the Prince Albert - North Battleford leg is probably No. 75.
+#     Crooked River - Prince Albert times of this motor are the same minutes as No. 15 (which runs there Tue Thu Sat), as printed.
+#   - Column 16 has North Battleford r9.45 a.m. - Prince Albert r3.05 p.m. (Tue and Thu), Prince Albert x3.35 p.m. and Crooked River x7.46 p.m. (daily except
+#     Sat and Sun), Hudson Bay Jn. a10.20 p.m. (Mon Wed Fri). Entered as No16 (Mon Wed Fri, Prince Albert - Winnipeg) and No16TT (Tue and Thu, North
+#     Battleford - Prince Albert - Crooked River, ending at Crooked River). No number is printed for the Tue/Thu North Battleford leg.
+#   - Rightmost column: "Motor 78" (head printed at National Mills/Westgate) Prince Albert - Hudson Bay Jn.; in the North Battleford section the same column
+#     is headed "176" (North Battleford k11.00 a.m. Saturday - Prince Albert 4.05 p.m.): entered as two trains No176 and Mot78, both Saturday.
+# No. 15 ends at Prince Albert (its column is blank in the North Battleford section, "A M" head only).
+# ADDITIONAL TRAINS note under the table (bottom of the scan, partly cut off): "Leave Hudson Bay Junction natural-sign 6.10 a.m., arrive Melfort 11.40 a.m."
+#   (entered, AddHM, Friday only by the natural sign); "Leave Melfort M natural-sign 4.20 p.m., arrive Prince Albert 7.05 p.m." (entered, AddMP, mixed, Friday).
+#   NOT ENTERED: a train between them whose line is cut through the middle on the scan, apparently "Leave Melfort [?.?0] p.m., arrive Hudson Bay Junction
+#   [9.35?] p.m." (figures unreadable), and the last train, "Leave Prince Albert ..." (cut off).
+#train col=No15 num=15 dir=down days="Mon,Wed,Fri" kind=passenger note="Winnipeg 10.35 a.m. marked a (Mon Wed Fri); arrives Prince Albert b9.35 a.m. the next day (Tue Thu Sat)."
+#train col=M239 num=239 dir=down days="Tue,Thu,Sat" kind=mixed note="Dauphin 9.00 a.m. marked b (Tue Thu Sat)."
+#train col=Mot77 num=77 dir=down days="Mon" kind=motor note="Column '77-71-75', motor train. Hudson Bay Jn. 1.15 a.m. marked c (Monday only); Crooked River and Prince Albert marked a; on to North Battleford (No. 75?). See comments: split by days."
+#train col=Mot71 num=71 dir=down days="Wed,Fri" kind=motor from="Arborfield" note="From Arborfield (e4.45 a.m., Table 193a, sk_cn_t193a.csv, No. 71 - which confirms this number). Column '77-71-75', motor train, the Wednesday and Friday run from Crooked River (a5.35 a.m., Mon Wed Fri; Hudson Bay Jn. Monday only). On to North Battleford (No. 75?). Split by days - see comments."
+#train col=AddHM num="" dir=down days="Fri" kind=passenger note="Additional Trains note: leave Hudson Bay Junction 6.10 a.m. (natural sign, Friday only), arrive Melfort 11.40 a.m. No number printed; intermediate stations not given."
+#train col=AddMP num="" dir=down days="Fri" kind=mixed note="Additional Trains note: leave Melfort 4.20 p.m. (M, natural sign: mixed, Friday only), arrive Prince Albert 7.05 p.m. No number printed."
+#train col=No16 num=16 dir=up days="Mon,Wed,Fri" kind=passenger note="Prince Albert 3.35 p.m. marked x (daily except Sat and Sun) but Hudson Bay Jn. ar a10.20 p.m. (Mon Wed Fri), lv b12.01 a.m., Winnipeg b3.30 p.m. (Tue Thu Sat): entered as the Mon Wed Fri through run. See comments."
+#train col=No16TT num=16 dir=up days="Tue,Thu" kind=passenger to="Arborfield" note="Continues from Crooked River 7.46 p.m. as No. 72 to Arborfield (Table 193a, sk_cn_t193a.csv, sign p = Tue and Thu there); possibly this whole Tue/Thu run is No. 72. Column 16 on Tuesday and Thursday by the signs: North Battleford r9.45 a.m. - Prince Albert r3.05 p.m.; Prince Albert x3.35 p.m. - Crooked River x7.46 p.m. (daily ex Sat and Sun), not beyond (Hudson Bay Jn. a = Mon Wed Fri). My reading - in doubt."
+#train col=M240 num=240 dir=up days="Mon,Wed,Fri" kind=mixed note="Swan River 7.30 a.m. marked a (Mon Wed Fri)."
+#train col=No176 num=176 dir=up days="Sat" kind=passenger note="Headed 176 in the North Battleford section of the 'Motor 78' column; North Battleford 11.00 a.m. marked k (Saturday only). Kind not printed (probably the motor car)."
+#train col=Mot78 num=78 dir=up days="Sat" kind=motor note="Motor 78: Prince Albert k10.30 p.m. (Saturday), Kinistino and Hudson Bay Jn. Section (Sunday): overnight Saturday-Sunday."
+mile,station,principal,prov,tz,No15,M239,Mot77,Mot71,AddHM,AddMP,No16,No16TT,M240,No176,Mot78
+0.0,Winnipeg,1,MB,C,lv 10.35a,,,,,,ar 3.30p,,,,
+55.0,Portage la Prairie,1,MB,C,12.20p,,,,,,1.43p,,,,
+82.5,Muir,1,MB,C,1.19p,,,,,,12.48p,,,,
+109.6,Hallboro,0,MB,C,2.26p,,,,,,11.45a,,,,
+115.8,Neepawa,1,MB,C,3.00p,,,,,,11.30a,,,,
+120.4,Rossburn Junction,1,MB,C,f3.10p,,,,,,f11.03a,,,,
+126.2,Eden,0,MB,C,3.24p,,,,,,10.49a,,,,
+131.5,Birnie,0,MB,C,3.36p,,,,,,10.37a,,,,
+137.4,Riding Mountain,0,MB,C,3.49p,,,,,,10.24a,,,,
+143.7,Kelwood,0,MB,C,4.03p,,,,,,10.10a,,,,
+147.8,Norgate,0,MB,C,4.12p,,,,,,10.00a,,,,
+154.3,McCreary,0,MB,C,4.27p,,,,,,9.46a,,,,
+162.8,Laurier,0,MB,C,4.43p,,,,,,9.30a,,,,
+171.2,Makinak,0,MB,C,4.58p,,,,,,9.15a,,,,
+181.5,Ochre River,1,MB,C,5.09p,,,,,,9.01a,,,,
+186.4,Paulson,0,MB,C,f5.25p,,,,,,f8.45a,,,,
+192.1,Dauphin,1,MB,C,ar 5.40p / lv 6.10p,lv 9.00a,,,,,ar 8.05a / lv 8.35a,,ar 1.40p,,
+200.4,Valley River,0,MB,C,6.32p,9.30a,,,,,7.43a,,1.10p,,
+208.0,Sifton,0,MB,C,6.52p,9.55a,,,,,7.26a,,12.50p,,
+224.6,Ethelbert,0,MB,C,7.32p,11.10a,,,,,6.49a,,11.55a,,
+282.0,Minitonas,0,MB,C,9.41p,3.30p,,,,,4.50a,,8.10a,,
+293.3,Swan River,1,MB,C,ar 10.05p / lv 10.25p,ar 4.05p,,,,,ar 4.05a / lv 4.25a,,lv 7.30a,,
+303.0,Bowsman,0,MB,C,10.51p,,,,,,3.40a,,,,
+314.7,Birch River,0,MB,C,11.16p,,,,,,3.16a,,,,
+324.2,Novra,0,MB,C,11.39p,,,,,,f2.55a,,,,
+343.7,Baden,0,MB,C,12.34a,,,,,,f1.59a,,,,
+360.0,National Mills,0,MB,C,1.06a,,,,,,1.21a,,,,
+363.2,Westgate,0,MB,C,1.14a,,,,,,f1.14a,,,,
+394.3,Hudson Bay Jn.,1,SK,C/M,ar 2.40a / lv 3.15a,,lv 1.15a,,lv 6.10a,,ar 10.20p / lv 12.01a,,,,ar 6.35a
+453.5,Crooked River,1,SK,M,5.35a,,5.35a,lv 5.35a,,,7.46p,ar 7.46p,,,2.15a
+467.1,Tisdale,1,SK,M,6.07a,,6.07a,6.07a,,,7.13p,7.13p,,,1.46a
+472.7,Valparaiso,0,SK,M,6.18a,,6.18a,6.18a,,,6.55p,6.55p,,,1.30a
+479.4,Star City,0,SK,M,6.32a,,6.32a,6.32a,,,6.41p,6.41p,,,1.16a
+493.0,Melfort,1,SK,M,7.20a,,7.20a,7.20a,ar 11.40a,lv 4.20p,6.15p,6.15p,,,12.50a
+501.3,Beatty,0,SK,M,7.37a,,7.37a,7.37a,,,5.33p,5.33p,,,12.30a
+511.7,Kinistino,0,SK,M,7.59a,,7.59a,7.59a,,,5.10p,5.10p,,,12.07a
+517.8,Weldon,0,SK,M,8.12a,,8.12a,8.12a,,,4.57p,4.57p,,,11.54p
+522.7,Brancepeth,0,SK,M,8.23a,,8.23a,8.23a,,,4.46p,4.46p,,,11.43p
+529.9,Birch Hills,0,SK,M,8.38a,,8.38a,8.38a,,,4.26p,4.26p,,,11.23p
+555.4,Prince Albert,1,SK,M,ar 9.35a,,ar 9.35a / lv 12.45p,ar 9.35a / lv 12.45p,,ar 7.05p,lv 3.35p,ar 3.05p / lv 3.35p,,ar 4.05p,lv 10.30p
+584.1,Shellbrook,1,SK,M,,,1.40p,1.40p,,,,2.00p,,2.56p,
+591.3,Parkside,0,SK,M,,,1.55p,1.55p,,,,1.40p,,2.37p,
+605.1,Leask,0,SK,M,,,2.30p,2.30p,,,,1.09p,,2.07p,
+612.1,Marcelin,0,SK,M,,,2.45p,2.45p,,,,12.53p,,1.52p,
+619.8,Blaine Lake,1,SK,M,,,3.05p,3.05p,,,,12.35p,,1.35p,
+629.3,Krydor,0,SK,M,,,3.30p,3.30p,,,,11.57a,,1.12p,
+642.3,Hafford,0,SK,M,,,4.05p,4.05p,,,,11.25a,,12.40p,
+651.1,Speers,1,SK,M,,,4.30p,4.30p,,,,11.04a,,12.19p,
+657.8,Richard,0,SK,M,,,4.45p,4.45p,,,,10.46a,,12.01p,
+664.3,Lilac,0,SK,M,,,5.00p,5.00p,,,,10.32a,,11.47a,
+672.2,Denholm,1,SK,M,,,5.20p,5.20p,,,,10.16a,,11.31a,
+679.7,Brada,0,SK,M,,,f5.35p,f5.35p,,,,f9.58a,,f11.13a,
+686.6,North Battleford,1,SK,M,,,ar 5.45p,ar 5.45p,,,,lv 9.45a,,lv 11.00a,

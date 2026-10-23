@@ -1,0 +1,16 @@
+# Canadian National, Table 184 (second section), Winnipeg - Morris - Emerson - Sprague: M208 and M207. See sk_cn_t184.csv for the table notes.
+# Official Guide, April 25, 1948 (scan cn1948_mb/t184.png). CENTRAL TIME. Miles from Winnipeg as printed. Emerson printed twice (arr. / lve.): one row.
+#train col=M208 num=208 dir=down days="Mon,Wed,Fri" kind=mixed note="Monday, Wednesday and Friday. Winnipeg 8.30 a.m. by Morris and Emerson to Sprague 5.45 p.m."
+#train col=M207 num=207 dir=up days="Tue,Thu,Sat" kind=mixed note="Tuesday, Thursday and Saturday. Sprague 8.00 a.m. by Emerson and Morris to Winnipeg 4.30 p.m."
+mile,station,principal,prov,tz,M208,M207
+0.0,Winnipeg,1,MB,C,lv 8.30a,ar 4.30p
+2.7,Portage Junction,0,MB,C,9.20a,4.05p
+23.1,Ste. Agathe,0,MB,C,10.13a,3.11p
+40.0,Morris,1,MB,C,11.05a,2.27p
+46.3,St. Jean Baptiste,0,MB,C,11.24a,2.07p
+55.5,Letellier,0,MB,C,11.44a,1.39p
+64.8,Emerson Junction,0,MB,C,12.05p,1.15p
+66.1,Emerson,1,MB,C,ar 12.20p / lv 12.55p,ar 11.35a / lv 12.05p
+76.4,Ridgeville,0,MB,C,1.40p,11.05a
+126.7,Piney,0,MB,C,4.45p,8.50a
+143.5,Sprague,1,MB,C,ar 5.45p,lv 8.00a

@@ -1,0 +1,41 @@
+# Joined through train (cp327), sk_join.py: skcp116b:No327, skcp115:No327; up skcp115:No328, skcp116b:No328
+# Rows and times as in the section files (see them for the scans, signs and doubts). Miles: counted along the run from the first station.
+#train col=D num=327 dir=down days="ex Sun" kind=passenger note="Through train: No. 327 Regina - Lanigan; No. 327 Lanigan - Gronlid. Continues Lanigan 3.30p - Melfort 6.10p - Gronlid 7.20p (Table 115; sk_cp_t115.csv)."
+#train col=U num=328 dir=up days="ex Sun" kind=passenger note="Through train: No. 328 Gronlid - Lanigan; No. 328 Lanigan - Regina. Leaves Lanigan 12.20p, arrives Regina 4.00p (Table 116; sk_cp_t116b.csv)."
+mile,station,principal,prov,tz,D,U
+0.0,Regina,1,SK,M,lv 10.40a,ar 4.00p
+10.4,Brora,0,SK,M,,f3.35p
+12.7,Tregarva,0,SK,M,11.06a,f3.31p
+21.8,Craven,0,SK,M,11.23a,3.13p
+25.7,Valeport,1,SK,M,11.31a,3.04p
+29.9,Saskatchewan Beach,0,SK,M,f11.39a,f2.56p
+30.7,Silton,0,SK,M,11.42a,2.54p
+37.7,Gibbs,0,SK,M,11.56a,2.41p
+43.8,Bulyea,1,SK,M,12.10p,2.30p
+51.2,Strasbourg,0,SK,M,12.35p,2.10p
+57.5,Duval,0,SK,M,12.47p,1.58p
+63.2,Cymric,0,SK,M,12.57p,1.48p
+68.1,Govan,0,SK,M,1.09p,1.39p
+76.0,Hatfield,0,SK,M,1.24p,1.24p
+82.0,Nokomis,0,SK,M,1.40p,1.12p
+86.4,Ambassador,0,SK,M,f1.50p,f1.03p
+91.1,Lockwood,0,SK,M,2.03p,12.56p
+98.2,Drake,0,SK,M,2.18p,12.41p
+105.5,Lanigan,1,SK,M,ar 2.40p / lv 3.30p,ar 11.35a / lv 12.20p
+112.6,Sinnett,0,SK,M,3.45p,11.18a
+122.5,Leroy,0,SK,M,4.02p,10.56a
+129.0,Romance,0,SK,M,4.12p,10.43a
+135.2,Watson,0,SK,M,4.22p,10.31a
+142.3,Daphne,0,SK,M,4.35p,10.16a
+149.3,Spalding,0,SK,M,4.48p,10.03a
+155.3,Naicam,0,SK,M,5.00p,9.50a
+161.2,Lac Vert,0,SK,M,5.11p,9.37a
+166.5,Pleasantdale,0,SK,M,5.20p,9.26a
+172.7,Silver Park,0,SK,M,5.32p,9.13a
+177.5,Resource,0,SK,M,5.41p,9.02a
+182.2,Clemens,0,SK,M,5.53p,8.48a
+188.3,Melfort,1,SK,M,6.10p,8.30a
+195.7,Thaxted,0,SK,M,6.50p,7.59a
+200.1,Lenvale,0,SK,M,6.59p,7.48a
+201.9,Fairy Glen,0,SK,M,7.04p,7.44a
+207.3,Gronlid,1,SK,M,ar 7.20p,lv 7.30a

@@ -1,0 +1,13 @@
+# Canadian National Railways, Table 215, Hanna - Wardlow. Table dated April 25, 1948 (Official Guide, May 1948).
+# Times as printed: MOUNTAIN TIME. Wholly in Alberta (Wardlow is misprinted "Atla.").
+# Signs (page key): t = Tuesday only (M328 at Hanna, M327 at Wardlow; the general key of the section gives t another meaning, the page's own
+# key is used); f = flag stop (Cessford, both ways); M = mixed train.
+# "Medicine Hat Junc." as printed, written out here; it is in light type but is a junction, so principal = 1.
+#train col=M328 num=328 dir=down days="Tue" kind=mixed note="Tuesday only."
+#train col=M327 num=327 dir=up days="Tue" kind=mixed note="Tuesday only."
+mile,station,principal,M328,M327
+0,Hanna,1,lv 9.00a,ar 6.35p
+4.6,Medicine Hat Junction,1,9.15a,6.20p
+30.2,Sunnynook,1,10.55a,3.35p
+50.9,Cessford,1,f12.15p,f2.10p
+58.3,Wardlow,1,ar 12.40p,lv 1.45p

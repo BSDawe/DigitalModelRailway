@@ -1,0 +1,20 @@
+# Canadian National, Table 165, North Regina - Mawer - Main Centre ("Line Mawer to Main Centre operated by Construction Department.").
+#   Official Guide, April 25, 1948 (scan cn1948_sk/tables160_165_carlton_alonsa_brandon_maincentre.png, bottom right).
+# Times as printed: MOUNTAIN TIME ("M.T." head). All stations in Saskatchewan. Miles from North Regina as printed; no stations printed between North Regina
+#   and Mawer (91.0); Mawer printed "lve. Mawer arr." with one time per train.
+# Key to signs: not on this scan. M = mixed train. M261 North Regina x5.00 a.m.: x = "Tuesday only" in the Table 193-201 key, "daily, except Saturday and
+#   Sunday" in the Table 180-184 key - entered Tue, IN DOUBT. M262 Main Centre v8.30 a.m.: v not in any key seen - DAYS UNKNOWN, "Wed" is a placeholder.
+#train col=M261 num=261 dir=down days="Mon" kind=mixed note="North Regina 5.00 a.m. marked x: Monday only (key for Tables 152-165) (Brendan, 12 Oct)."
+#train col=M262 num=262 dir=up days="Tue" kind=mixed note="Main Centre 8.30 a.m. marked v: Tuesday only (key for Tables 152-165) (Brendan, 12 Oct)."
+mile,station,principal,prov,tz,M261,M262
+0.0,North Regina,1,SK,M,lv 5.00a,ar 5.40p
+91.0,Mawer,1,SK,M,11.00a,11.30a
+97.4,Kettlehut,0,SK,M,11.19a,11.01a
+102.7,Thunder Creek,0,SK,M,11.37a,10.43a
+107.9,Halvorgate,0,SK,M,11.56a,10.24a
+113.7,Aquadell,0,SK,M,12.14p,10.06a
+117.0,Calderbank,0,SK,M,12.29p,9.51a
+124.0,Glen Kerr,0,SK,M,12.51p,9.29a
+129.1,Teakle,0,SK,M,1.11p,9.09a
+133.8,Gouldtown,0,SK,M,1.30p,8.50a
+140.2,Main Centre,1,SK,M,ar 2.00p,lv 8.30a

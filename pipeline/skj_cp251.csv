@@ -1,0 +1,23 @@
+# Joined through train (cp251), sk_join.py: skcp106b:M251, skcp106c:M251, skcp106d:M251
+# Rows and times as in the section files (see them for the scans, signs and doubts). Miles: counted along the run from the first station.
+#train col=D num=251 dir=down days="Mon,Thu" kind=mixed note="Through train: No. 251 Souris - Lauder; No. 251 Lauder - Deloraine; No. 251 Deloraine - Lyleton. Souris 2.45p to Lauder 3.55p here; continues Lauder 5.15p - Boissevain - Deloraine 8.45p (sk_cp_t106c.csv) and Deloraine 9.00p - Lyleton 11.00p (sk_cp_t106d.csv)."
+mile,station,principal,prov,tz,D
+0.0,Souris,1,MB,C,lv 2.45p
+25.4,Lauder,1,MB,C,ar 3.55p / lv 5.15p
+35.3,Dand,0,MB,C,5.45p
+43.4,Regent,0,MB,C,6.25p
+49.6,Croll,0,MB,C,6.47p
+54.9,Orthez,0,MB,C,7.05p
+58.0,Schaffner,0,MB,C,f7.15p
+62.3,Boissevain,1,MB,C,ar 7.40p / lv 8.00p
+67.6,Cadzow,0,MB,C,f8.10p
+72.8,Whitewater,0,MB,C,8.25p
+77.8,Naples,0,MB,C,f8.35p
+82.4,Deloraine,1,MB,C,ar 8.45p / lv 9.00p
+90.8,Goodlands,0,MB,C,9.25p
+94.8,Cranmer,0,MB,C,f9.40p
+99.6,Waskada,0,MB,C,10.00p
+104.3,Dalny,0,MB,C,10.15p
+110.4,Coulter,0,MB,C,10.30p
+114.8,Cameron,0,MB,C,10.45p
+119.6,Lyleton,1,MB,C,ar 11.00p

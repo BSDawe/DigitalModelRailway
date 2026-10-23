@@ -1,0 +1,29 @@
+# Canadian Pacific, Table 132 "SWIFT CURRENT-BASSANO-IRRICANA", Saskatchewan part: Swift Current - Leader - Empress (the first Alberta station).
+# From the Canadian Pacific public timetable of about 1948 (scan cp1948/tables132_135_136_bassano_irricana_kneehill.png). Transcribed 16 October 2026
+# (Brendan asked: missing trains Swift Current - Empress); the Alberta part, Empress - Bassano - Irricana, is in ab_cp_t132a.csv and ab_cp_t132b.csv.
+# Times as printed: MOUNTAIN TIME ("Mountain Time" heads the station column). Miles from Swift Current as printed.
+# Signs: M = mixed train; f = stops on signal. Provinces: "Estuary, Sask" (last Saskatchewan station), "Empress, Alta." (first Alberta station).
+# Not entered here: M671 Wed. Leader 4.40p - Empress 5.45p and M672 Tue. Empress 9.30a - Leader 10.30a (the Table 133 trains, in sk_cp_t133b.csv);
+# M611 / M612 start and end at Empress (ab_cp_t132a.csv).
+#train col=No65 num=65 dir=down days="ex Sun" kind=passenger note="Swift Current to Empress, daily except Sunday."
+#train col=No66 num=66 dir=up days="ex Sun" kind=passenger note="Empress to Swift Current, daily except Sunday."
+#train col=M673 num=673 dir=down days="Tue" kind=mixed note="Swift Current to Pennant, Tuesdays."
+#train col=M674 num=674 dir=up days="Tue" kind=mixed note="Pennant to Swift Current, Tuesdays."
+mile,station,principal,prov,tz,No65,M673,No66,M674
+0.0,Swift Current,1,SK,M,lv 5.20p,lv 9.00a,ar 11.40a,ar 4.55p
+13.0,Cantuar,0,SK,M,5.45p,9.30a,11.07a,4.25p
+19.8,Success,0,SK,M,5.58p,9.45a,10.55a,4.10p
+28.4,Pennant,0,SK,M,6.16p,ar 10.35a,10.35a,lv 3.50p
+33.1,Battrum,0,SK,M,6.27p,,10.20a,
+40.6,Cabri,1,SK,M,6.42p,,10.05a,
+49.3,Shackleton,0,SK,M,6.58p,,9.43a,
+56.8,Abbey,0,SK,M,7.11p,,9.20a,
+64.2,Lancer,0,SK,M,7.32p,,9.05a,
+70.0,Portreeve,0,SK,M,7.42p,,8.50a,
+75.1,Lemsford,0,SK,M,7.53p,,8.35a,
+81.6,Sceptre,0,SK,M,8.06p,,8.20a,
+87.8,Prelate,0,SK,M,8.19p,,8.00a,
+94.3,Leader,1,SK,M,8.30p,,7.40a,
+99.5,Westerham,0,SK,M,f8.45p,,f7.28a,
+107.7,Estuary,0,SK,M,9.00p,,7.15a,
+117.9,Empress,1,AB,M,ar 9.20p,,lv 7.00a,

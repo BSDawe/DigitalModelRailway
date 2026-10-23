@@ -1,0 +1,82 @@
+# Canadian National Railways, Table 75: Montreal - Ottawa - North Bay - Toronto - Capreol - Winnipeg - Saskatoon - Edmonton, table of April 25, 1948
+#   (Official Guide, May 1948; scan og1948_cn/table075_winnipeg_saskatoon_edmonton.png, printed sideways). ENTERED HERE: Winnipeg to Chauvin, Alta
+#   (the first Alberta station; Chauvin and west is in ab_cn_t075.csv, so the two files overlap at Chauvin). Miles as printed (from Montreal).
+# Times as printed: CENTRAL TIME from Winnipeg to Watrous ("Cent. time" in the head; "Watrous (C.T.)" on the arrival line), MOUNTAIN TIME from
+#   Watrous ("Watrous (M. T.)" on the departure line) westward. Watrous is printed on two lines and entered as one row, tz C/M: down trains arrive
+#   on Central and leave on Mountain time, up trains arrive on Mountain and leave on Central time (so ab_table.py shows a time going back there).
+# A.M./P.M.: "P M"/"A M" heads, and light figures a.m., heavy figures p.m. down the columns.
+# Provinces as printed: "Winnipeg, Man.", "Rivers, Man.", "Lazare, Man" then "Welby, Sask" (the first Saskatchewan station), "Biggar, Sask",
+#   "Artland, Sask" (the last), "Chauvin, Alta". Stations between are taken from these.
+# Key to signs (og1948_cn/key_to_signs.png; this page's own key is not on the scan): "* Daily; + daily, except Sunday; e stops for revenue
+#   passengers to or from Winnipeg and beyond; f flag stop; z stops on signal for revenue passengers". Coupon (+), telegraph and restaurant
+#   (triangle: Winnipeg, Rivers, Melville, Watrous, Saskatoon, Biggar) signs are not entered; a motor-car sign after Winnipeg is not entered.
+#   "(Brandon - See Note [diamond])" is printed as a line under Brandon North with no times; the note is not on the scan. Not entered as a station.
+# No. 11 leaves Winnipeg *6.00 p.m. (daily) and arrives Saskatoon *8.30 a.m., but leaves Saskatoon +9.20 a.m. (daily except Sunday). No. 12 arrives
+#   Saskatoon +5.40 p.m. (daily except Sunday, from Edmonton) and leaves Saskatoon *6.00 p.m. (daily). Each is therefore entered as two columns
+#   with the same number, split at Saskatoon: No11E Winnipeg - Saskatoon daily and No11 Saskatoon - Chauvin daily except Sunday; No12 Chauvin -
+#   Saskatoon daily except Sunday and No12E Saskatoon - Winnipeg daily. No11 and No12 are the columns that carry on in ab_cn_t075.csv.
+# NOT ENTERED: Nos. 1, 2, 3, 4 (The Continental Limited, "See Note A/B/C/D"; the notes are cut off the scan: "Note A - No. 1 will stop on signal
+#   at any station between Win..."). They are already entered from Table 166 (sk_cn_t166.csv: Winnipeg, Saskatoon, Edmonton only). For use if
+#   wanted, their Saskatchewan/Manitoba times in this table, read twice (down 1, 3 / up 2, 4; C = Central, M = Mountain):
+#   Winnipeg lv 11.20a, 10.15a / ar 6.00p, 6.50p (all *); Portage la Prairie 12.43p, 11.37a / 4.30p, 5.20p; Brandon North 2.30p, 1.22p / 3.00p, 3.45p;
+#   Rivers ar 3.05p, 1.45p, lv 3.15p, 1.55p / ar 2.30p, 3.15p, lv 2.40p, 3.25p; Oakner - , - / - , f2.45p; Lazare - , - / - , e1.41p;
+#   Welby f5.00p, f3.50p / f12.35p, f1.25p; Melville ar 6.30p, 5.15p, lv 6.40p, 5.25p / ar 11.00a, 11.55a, lv 11.10a, 12.05p;
+#   Nokomis z9.10p, - / - , z9.18a; Watrous ar 9.50p, 8.25p (C), lv 9.00p, 7.35p (M) / ar 6.45a, 7.40a (M), lv 7.55a, 8.50a (C);
+#   Saskatoon ar 10.45p, 9.25p, lv 11.15p, 9.55p / ar 4.45a, 5.45a, lv 5.15a, 6.10a; Biggar ar 12.55a, 11.30p, lv 1.05a, 11.40p /
+#   ar 3.10a, 4.10a, lv 3.20a, 4.20a; Unity - , f12.49a / 1.59a, - . (A dash = does not call.)
+# Additional Trains under the table (Tofield - Edmonton, Nos. 87/88) are wholly in Alberta: in ab_cn_t075.csv.
+#train col=No11E num=11 dir=down days="daily" kind=passenger to="Edmonton" note="Winnipeg *6.00 p.m. (daily) to Saskatoon *8.30 a.m.; continues as column No11 (daily except Sunday west of Saskatoon) to Edmonton."
+#train col=No11 num=11 dir=down days="ex Sun" kind=passenger from="Winnipeg" to="Edmonton" note="Leaves Saskatoon +9.20 a.m. (daily except Sunday); Chauvin 2.57 p.m., Edmonton 8.15 p.m. (ab_cn_t075.csv). From Winnipeg the evening before (column No11E)."
+#train col=No12 num=12 dir=up days="ex Sun" kind=passenger from="Edmonton" to="Winnipeg" note="From Edmonton 7.00 a.m. daily except Sunday (ab_cn_t075.csv); Chauvin 12.38 p.m.; arrives Saskatoon +5.40 p.m.; continues as column No12E."
+#train col=No12E num=12 dir=up days="daily" kind=passenger from="Edmonton" note="Leaves Saskatoon *6.00 p.m. (daily), arrives Winnipeg 10.00 a.m. next morning. Flag stops at Gregg f7.16a and Justice f6.42a. From Edmonton (column No12, daily except Sunday)."
+mile,station,principal,prov,tz,No11E,No11,No12,No12E
+1358.5,Winnipeg,1,MB,C,lv 6.00p,,,ar 10.00a
+1412.8,Portage la Prairie,1,MB,C,7.26p,,,8.30a
+1458.2,Gregg,0,MB,C,8.48p,,,f7.16a
+1480.3,Justice,0,MB,C,9.24p,,,f6.42a
+1486.2,Brandon North,0,MB,C,9.37p,,,6.33a
+1500.7,Rivers,1,MB,C,ar 10.05p / lv 10.15p,,,ar 6.00a / lv 6.10a
+1516.9,Oakner,0,MB,C,10.44p,,,5.30a
+1523.2,Pope,0,MB,C,10.55p,,,5.20a
+1562.0,Lazare,0,MB,C,11.57p,,,4.10a
+1575.5,Welby,0,SK,C,12.22a,,,3.48a
+1583.1,Spy Hill,0,SK,C,12.35a,,,3.28a
+1589.6,Gerald,0,SK,C,12.47a,,,3.15a
+1610.3,Atwater,0,SK,C,1.23a,,,2.35a
+1615.8,Bangor,0,SK,C,1.33a,,,2.25a
+1623.9,Waldron,0,SK,C,1.48a,,,2.10a
+1637.8,Melville,1,SK,C,ar 2.20a / lv 2.45a,,,ar 1.30a / lv 1.50a
+1649.9,Fenwood,0,SK,C,3.15a,,,1.10a
+1656.6,Goodeve,0,SK,C,3.32a,,,12.58a
+1666.2,Hubbard,0,SK,C,3.50a,,,12.43a
+1672.3,Ituna,0,SK,C,4.10a,,,12.30a
+1684.6,Kelliher,0,SK,C,4.35a,,,12.07a
+1695.8,Lestock,1,SK,C,5.00a,,,11.40p
+1710.3,Puunichy,0,SK,C,5.27a,,,11.12p
+1715.4,Quinton,0,SK,C,5.38a,,,11.00p
+1720.7,Raymore,0,SK,C,5.50a,,,10.50p
+1730.0,Semans,0,SK,C,6.05a,,,10.30p
+1735.0,Tate,0,SK,C,6.15a,,,10.20p
+1744.0,Nokomis,0,SK,C,6.30a,,,10.00p
+1758.5,Venn,0,SK,C,6.55a,,,9.35p
+1766.8,Watrous,1,SK,C/M,ar 7.10a / lv 6.20a,,,ar 8.00p / lv 9.15p
+1780.7,Young,0,SK,M,6.50a,,,7.38p
+1789.3,Zelma,0,SK,M,7.10a,,,7.18p
+1796.5,Allan,0,SK,M,7.28a,,,7.02p
+1805.0,Bradwell,0,SK,M,7.42a,,,6.45p
+1812.1,Clavet,0,SK,M,7.55a,,,6.32p
+1828.8,Saskatoon,1,SK,M,ar 8.30a,lv 9.20a,ar 5.40p,lv 6.00p
+1857.8,Asquith,0,SK,M,,10.05a,4.50p,
+1862.9,Juniata,0,SK,M,,10.15a,4.40p,
+1867.4,Kinley,0,SK,M,,10.25a,4.32p,
+1873.4,Leney,0,SK,M,,10.37a,4.23p,
+1892.6,Biggar,1,SK,M,,ar 11.15a / lv 11.35a,ar 3.45p / lv 3.55p,
+1901.2,Oban,1,SK,M,,11.50a,f3.32p,
+1919.2,Landis,0,SK,M,,12.15p,3.09p,
+1922.6,Cavell,0,SK,M,,12.27p,2.57p,
+1935.3,Scott,1,SK,M,,12.54p,2.34p,
+1949.5,Unity,1,SK,M,,1.28p,2.07p,
+1969.9,Winter,0,SK,M,,2.07p,1.29p,
+1977.1,Yonker,0,SK,M,,2.19p,f1.17p,
+1989.1,Artland,0,SK,M,,2.39p,12.56p,
+1999.5,Chauvin,0,AB,M,,2.57p,12.38p,

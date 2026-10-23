@@ -1,0 +1,11 @@
+# Canadian National, Table 192, Regina - Melville - Yorkton - Canora - Flin Flon: section C, Cranberry Portage - Heming Lake - Sherridon (Nos. 63 and 64).
+#   Official Guide, April 25, 1948 (scan cn1948_sk/table192_regina_melville_canora_flinflon.png). All stations in Manitoba (Sherridon by position).
+# Times as printed: CENTRAL TIME (as the rest of the table below Melville). Miles from Regina as printed.
+# Signs (Table 193-201 key): a Mon Wed Fri; b Tue Thu Sat; f flag stop. The "M 357" head printed in this section's left columns belongs to the Flin Flon section
+#   below it (entered in sk_cn_t192b.csv); likewise "M 358".
+#train col=No63 num=63 dir=down days="Tue,Thu,Sat" kind=passenger from="Winnipeg" note="Sherridon portion of No. 63 (Monday, Wednesday and Friday from Winnipeg/Canora, sk_cn_t192b.csv; arrives Cranberry Portage 8.50 a.m.); Cranberry Portage 10.00 a.m. marked b."
+#train col=No64 num=64 dir=up days="Mon,Wed,Fri" kind=passenger to="Winnipeg" note="Sherridon portion of No. 64; Sherridon 2.00 p.m. marked a; joins at Cranberry Portage (lv 4.50 p.m., sk_cn_t192b.csv)."
+mile,station,principal,prov,tz,No63,No64
+390.1,Cranberry Portage,1,MB,C,lv 10.00a,ar 4.05p
+413.9,Heming Lake,0,MB,C,f11.21a,f2.50p
+432.4,Sherridon,1,MB,C,ar 12.15p,lv 2.00p

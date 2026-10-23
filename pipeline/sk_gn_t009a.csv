@@ -1,0 +1,26 @@
+# Great Northern, Table 9a, Grand Forks, Grafton and Gretna: Nos. 307 and 308. From the Great Northern timetable of February 8, 1948 (scan
+# gn1948/gn_t009a.png). Transcribed 18 October 2026. CENTRAL TIME. Miles from St. Paul as printed. Entered from Grand Forks (Brendan, 18 Oct).
+# The columns are headed "9-307" and "308-10": No. 9 St. Paul 9.00 p.m. (daily except Saturday) - Minneapolis 9.55 p.m. - Grand Forks ar 8.25 a.m., then
+#   No. 307 Grand Forks 9.20 a.m. (daily except Sunday) - Gretna 1.50 p.m.; No. 308 Gretna 2.00 p.m. (daily except Sunday) - Grand Forks ar 7.05 p.m., then
+#   No. 10 Grand Forks 7.55 p.m. - Minneapolis 7.05 a.m. - St. Paul 7.40 a.m.
+# Printed below: "lve. Gretna (C.P.Ry.) arr." 403, Morris 431, Winnipeg 473: 1.25 p.m., 11.38 a.m., 10.15 a.m., sign ":" = Monday and Thursday (CP connection,
+#   Winnipeg to Gretna; CP Table 99 has these times by Nos. 121 / 123 to Rosenfeld and M235, Tue. and Fri., Rosenfeld - Gretna: the two timetables differ).
+# Signs: dagger = daily except Sunday; f = flag stop for revenue passengers; "- -" = does not stop (University).
+# States / province: Grand Forks - Neche North Dakota; Gretna Manitoba.
+#train col=No307 num=307 dir=down days="ex Sun" kind=passenger note="Grand Forks 9.20 a.m. to Gretna 1.50 p.m. From St. Paul by No. 9 (9.00 p.m. the night before). At Gretna: CP from Winnipeg (Mon. and Thu. by this table)."
+#train col=No308 num=308 dir=up days="ex Sun" kind=passenger note="Gretna 2.00 p.m. to Grand Forks 7.05 p.m.; on by No. 10 to St. Paul 7.40 a.m."
+mile,station,principal,prov,tz,No307,No308
+320,Grand Forks,1,ND,C,lv 9.20a,ar 7.05p
+322,University,0,ND,C,,
+334,Manvel,0,ND,C,10.03a,6.30p
+346,Ardoch,0,ND,C,10.34a,5.58p
+353,Minto,0,ND,C,10.50a,5.38p
+357,Herriott,0,ND,C,f11.02a,f5.22p
+361,Grafton,1,ND,C,11.31a,5.10p
+368,Auburn,0,ND,C,11.55a,4.20p
+376,St. Thomas,0,ND,C,12.10p,3.58p
+382,Glasston,0,ND,C,12.31p,3.33p
+389,Hamilton,0,ND,C,12.55p,3.13p
+394,Bathgate,0,ND,C,1.15p,2.48p
+402,Neche,0,ND,C,1.40p,2.25p
+403,Gretna,1,MB,C,ar 1.50p,lv 2.00p

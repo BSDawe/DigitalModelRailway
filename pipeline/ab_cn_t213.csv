@@ -1,0 +1,28 @@
+# Canadian National Railways, Table 213, Edson - Luscar - Mountain Park. Table dated April 25, 1948 (Official Guide, May 1948).
+# Times as printed: MOUNTAIN TIME. Wholly in Alberta. Rows and miles as printed.
+# LUSCAR IS ON A SPUR: the miles run Leyland 69.0, Luscar 74.1, then Cadomin 71.0 and Mountain Park 78.0, so Luscar is 5.1 miles up a branch
+# from Leyland and the trains go up to Luscar and come back through Leyland. No. 179: Leyland 9.25 p.m., Luscar arr. 9.55 p.m., then back
+# through Leyland (no time printed) to Cadomin 10.45 p.m. No. 180: Mountain Park, Cadomin 7.15 a.m., through Leyland (no time printed) up to
+# Luscar, leaves Luscar 8.10 a.m., Leyland 8.35 a.m. The checker's slow-speed flags between Luscar and Cadomin are this double run (7.1 miles
+# by rail, not 3.1), and "miles are not in order" is the spur.
+# Coalspur is printed twice (arr. and lve.), entered as one row.
+# Signs (page key): r = Sunday, Tuesday and Thursday (179 at Edson); a = Monday, Wednesday and Friday (180 at Mountain Park and at Luscar);
+# b = Tuesday, Thursday and Saturday (M318 at Coalspur); M = mixed train. The letters of the r and a entries are cut off at the edge of the
+# scan of the key: taken from their places in the alphabetical key, and they fit (179 out in the evening, 180 back the next morning).
+# IN DOUBT: the sign before M317's 12.50 at Edson is squeezed against the figures and reads as an upright 'a' (it could be an 's', which is
+# not in the key). Entered as a = Monday, Wednesday and Friday, which agrees with Table 213a, where the same train leaves Coalspur "a 3.45 p.m.".
+# M317 and M318 run Edson - Coalspur here and Coalspur - Foothills in Table 213a (file ab_cn_t213a.csv).
+#train col=No179 num=179 dir=down days="Sun,Tue,Thu" kind=passenger note="Runs up the spur to Luscar and back through Leyland before Cadomin."
+#train col=M317 num=317 dir=down days="Mon,Wed,Fri" kind=mixed to="Foothills" note="Goes on from Coalspur 3.45 p.m. to Foothills (Table 213a). Day sign at Edson not certain."
+#train col=No180 num=180 dir=up days="Mon,Wed,Fri" kind=passenger note="Runs from Cadomin up the spur to Luscar and back to Leyland."
+#train col=M318 num=318 dir=up days="Tue,Thu,Sat" kind=mixed from="Foothills" note="From Foothills 11.00 a.m., arrives Coalspur 12.45 p.m. (Table 213a)."
+# A second Leyland row (no times) is added after Luscar: the trains go up the spur to Luscar and back through Leyland (added for the map).
+mile,station,principal,No179,M317,No180,M318
+0,Edson,1,lv 6.30p,lv 12.50p,ar 11.35a,ar 4.00p
+10.0,Bickerdike,0,6.50p,1.25p,11.15a,3.30p
+47.0,Coalspur,1,ar 8.07p / lv 8.20p,ar 3.25p,ar 9.40a / lv 9.50a,lv 1.15p
+69.0,Leyland,1,9.25p,,8.35a,
+74.1,Luscar,1,ar 9.55p,,lv 8.10a,
+69.0,Leyland,1,,,,
+71.0,Cadomin,0,10.45p,,7.15a,
+78.0,Mountain Park,1,ar 11.10p,,lv 6.50a,

@@ -1,0 +1,20 @@
+# Canadian Pacific, Table 111, Moose Jaw - Vanguard - Swift Current: Meyronne - Vanguard - Wymark. Miles from Meyronne as printed.
+# From the Canadian Pacific public timetable of about 1948 (scan cp1948_sk/table111_moosejaw_vanguard_swiftcurrent.png).
+# Times as printed: MOUNTAIN TIME ("Mountain Time" heads the station column). All stations in Saskatchewan.
+# Signs: f = stops on signal; || = meal station (Moose Jaw, Swift Current); M = mixed train; .. = does not stop. (Explanation of signs not on
+# this scan; same signs as the Tables 117-119 page.) "Swift Current 6" refers to Table 6.
+# Meyronne is on Table 120. Vanguard is printed twice (Ar / Lv, both 32.5, same time): one row.
+# Print: M406 Esme "9 40" (dot not printed), read 9.40a.
+#train col=M405 num=405 dir=down days="Wed,Sat" kind=mixed to="Swift Current" note="Continues Wymark 4.40p - Swift Current 5.40p (sk_cp_t111a.csv)."
+#train col=M406 num=406 dir=up days="Wed,Sat" kind=mixed from="Swift Current" note="Comes from Swift Current 6.00a - Wymark 6.50a (sk_cp_t111a.csv)."
+mile,station,principal,prov,tz,M405,M406
+0.0,Meyronne,1,SK,M,lv 12.45p,ar 12.15p
+6.0,Royer,0,SK,M,1.05p,11.45a
+11.9,Arbuthnot,0,SK,M,1.25p,11.15a
+18.0,Glenbain,0,SK,M,1.45p,10.25a
+24.7,Esme,0,SK,M,2.05p,9.40a
+32.5,Vanguard,1,SK,M,ar 2.35p / lv 2.35p,ar 9.00a / lv 9.00a
+39.9,Pambrun,0,SK,M,3.00p,8.25a
+48.1,Neville,0,SK,M,3.40p,7.55a
+53.8,Blumenhof,0,SK,M,4.10p,7.20a
+60.6,Wymark,1,SK,M,ar 4.40p,lv 6.50a

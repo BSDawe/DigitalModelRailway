@@ -1,0 +1,80 @@
+# Canadian Pacific, Table 5, main line Fort William - Kenora - Winnipeg: the section EAST of Winnipeg (the Winnipeg - Broadview section is
+# sk_cp_t005.csv). Transcribed 18 October 2026 (Brendan: the map to go as far as the Lakehead) from the same scans, cp1948_sk/
+# table005_westbound_fortwilliam_broadview.png and table005_eastbound_broadview_fortwilliam.png (printed sideways). CENTRAL TIME throughout.
+# Miles from the westbound page (from Montreal; Fort William 989.4, Winnipeg 1408.5). Provinces: Fort William - Ingolf, Ont.; Telford, Man. - Winnipeg.
+# Kenora is printed "Ar Kenora, Devil's Gap Lv" and "Lv Kenora Ar": one row with ar / lv. Ignace (meal station) likewise.
+# Signs: f = stops on signal. NOT EXPLAINED on these scans, entered as plain times: c (No. 5 Murillo 10.40p), a (No. 7 Upsala 1.39a),
+#   b (No. 7 Ingolf 7.51a; No. 8 Ingolf 8.51p and Laclu 9.22p, printed like a b or a small sigma).
+# Uncertain reading: M203 Eagle River printed "11. 5" (a figure missing): entered 11.25a, between Minnitaki f11.05 and Gunne f11.55.
+# NOT ENTERED (they run Molson - Winnipeg by East Selkirk, Table 97, not on this line): 101 (Ex. Sun. and Mon., Molson 9.00a - Winnipeg 10.15a),
+#   103 (Sun. only, Molson 7.15p - Winnipeg 8.30p), M205 (Tue. Fri., Molson 12.30p - Winnipeg 3.40p), 102 (Ex. Sun., Winnipeg 5.15p - Molson 6.30p),
+#   104 (Sat. only, Winnipeg 1.30p - Molson 2.35p). M205 (Tue. Thu.) Kenora - Molson continues to Great Falls on Table 97.
+#train col=No1 num=1 dir=down days="daily" kind=passenger to="Vancouver" note="From Fort William 7.50 a.m.; on from Winnipeg 9.00 p.m. (Table 5 west, Table 6) to Vancouver."
+#train col=No3 num=3 dir=down days="daily" kind=passenger from="Montreal" to="Vancouver" note="The Dominion. Fort William 10.55 p.m.; on from Winnipeg 10.30 a.m. to Vancouver."
+#train col=No5 num=5 dir=down days="daily" kind=passenger from="Toronto" note="The Dominion (eastern section). Fort William 10.15 p.m. to Winnipeg 9.00 a.m."
+#train col=No7 num=7 dir=down days="daily" kind=passenger from="Toronto" to="Vancouver" note="The Dominion. Fort William 11.25 p.m.; on from Winnipeg 11.10 a.m. to Vancouver."
+#train col=M201 num=201 dir=down days="Mon,Wed,Fri" kind=mixed note="Fort William 8.35 a.m. to Ignace 4.20 p.m."
+#train col=M203 num=203 dir=down days="Tue,Thu,Sat" kind=mixed note="Ignace 5.50 a.m. to Kenora 2.10 p.m."
+#train col=M205 num=205 dir=down days="Tue,Thu" kind=mixed note="Kenora 8.00 a.m. to Molson 12.10 p.m.; Tuesday on to Winnipeg by East Selkirk as M205, Thursday M208 Molson - Great Falls (Table 97, sk_cp_t097.csv)."
+#train col=SplW num=Spl dir=down days="Sun" kind=passenger note="Special, coaches and parlour car: Kenora 6.50 p.m. to Winnipeg 9.30 p.m. Operates June 13 to September 6 (Sundays, and Monday August 2 and Monday September 6)."
+#train col=No2 num=2 dir=up days="daily" kind=passenger from="Vancouver" note="From Vancouver; Winnipeg 9.40 a.m. to Fort William 9.20 p.m."
+#train col=No4 num=4 dir=up days="daily" kind=passenger from="Vancouver" to="Montreal" note="The Dominion. Winnipeg 7.20 p.m.; Fort William 5.40 a.m."
+#train col=No6 num=6 dir=up days="daily" kind=passenger to="Toronto" note="The Dominion (eastern section). Winnipeg 7.50 p.m.; Fort William 6.10 a.m."
+#train col=No8 num=8 dir=up days="daily" kind=passenger from="Vancouver" to="Toronto" note="The Dominion. Winnipeg 6.40 p.m.; Fort William 5.00 a.m."
+#train col=M202 num=202 dir=up days="Tue,Thu,Sat" kind=mixed note="Ignace 7.00 a.m. to Fort William 2.30 p.m."
+#train col=M204 num=204 dir=up days="Mon,Wed,Fri" kind=mixed note="Kenora 6.05 a.m. to Ignace 3.00 p.m."
+#train col=M206 num=206 dir=up days="Wed,Sat" kind=mixed note="Winnipeg 7.00 a.m. to Kenora 2.15 p.m."
+#train col=SplF num=Spl dir=up days="Fri" kind=passenger note="Friday special, coaches, parlour car and diner: Winnipeg 4.30 p.m. to Kenora 7.00 p.m. July 9 to September 3."
+#train col=SplS num=Spl dir=up days="Sat" kind=passenger note="Saturday special, coaches and parlour car: Winnipeg 1.00 p.m. to Kenora 3.30 p.m. June 12 to September 4."
+mile,station,principal,prov,tz,No1,No3,No5,No7,M201,M203,M205,SplW,No2,No4,No6,No8,M202,M204,M206,SplF,SplS
+989.4,Fort William,1,ON,C,lv 7.50a,lv 10.55p,lv 10.15p,lv 11.25p,lv 8.35a,,,,ar 9.20p,ar 5.40a,ar 6.10a,ar 5.00a,ar 2.30p,,,,
+991.4,West Fort William,0,ON,C,,,,,8.45a,,,,,,,,2.05p,,,,
+1002.2,Murillo,0,ON,C,8.12a,,10.40p,,9.15a,,,,8.54p,,,,1.40p,,,,
+1012.8,Kaministiquia,0,ON,C,8.30a,,,,9.50a,,,,f8.36p,,,,1.05p,,,,
+1021.9,Finmark,0,ON,C,8.46a,,,,10.20a,,,,f8.21p,,,,12.45p,,,,
+1029.3,Buda,0,ON,C,,,,,f10.45a,,,,,,,,f12.30p,,,,
+1042.4,Raith,0,ON,C,9.21a,,,,12.00p,,,,7.49p,,,,12.00p,,,,
+1060.7,Savanne,0,ON,C,f9.49a,,,,12.40p,,,,f7.24p,,,,10.30a,,,,
+1073.0,Upsala,0,ON,C,10.10a,,,1.39a,1.35p,,,,7.07p,,,,10.05a,,,,
+1086.0,Niblock,0,ON,C,,,,,f2.05p,,,,,,,,f9.05a,,,,
+1100.3,English River,0,ON,C,f10.48a,,,,2.30p,,,,f6.30p,,,,8.40a,,,,
+1118.9,Bonheur,0,ON,C,,,,,f3.40p,,,,,,,,f7.35a,,,,
+1136.6,Ignace,1,ON,C,ar 11.45a / lv 12.00p,ar 2.30a / lv 2.45a,ar 1.50a / lv 2.10a,ar 3.00a / lv 3.15a,ar 4.20p,lv 5.50a,,,ar 5.30p / lv 5.45p,ar 2.10a / lv 2.25a,ar 2.40a / lv 2.55a,ar 1.30a / lv 1.45a,lv 7.00a,ar 3.00p,,,
+1141.7,Osaquan,0,ON,C,,,,,,f6.00a,,,,,,,,f2.40p,,,
+1150.8,Raleigh,0,ON,C,,,,,,f6.18a,,,,,,,,f2.20p,,,
+1164.5,Tache,0,ON,C,,,,,,f6.43a,,,,,,,,f1.55p,,,
+1171.8,Dyment,0,ON,C,,,,,,6.58a,,,,,,,,1.40p,,,
+1181.5,Dinorwic,0,ON,C,12.57p,,,,,7.30a,,,4.21p,,,,,1.15p,,,
+1187.1,Wabigoon,0,ON,C,1.08p,,,,,7.40a,,,4.11p,,,,,1.00p,,,
+1193.3,Barclay,0,ON,C,,,,,,f7.51a,,,,,,,,f12.45p,,,
+1199.9,Dryden,1,ON,C,1.30p,4.07a,3.32a,4.37a,,10.40a,,,3.49p,12.45a,1.15a,12.05a,,12.30p,,,
+1206.5,Oxdrift,0,ON,C,1.42p,,,,,10.55a,,,3.29p,,,,,10.05a,,,
+1211.9,Minnitaki,0,ON,C,1.51p,,,,,f11.05a,,,f3.21p,,,,,f9.50a,,,
+1216.6,Eagle River,0,ON,C,2.02p,,,,,11.25a,,,3.11p,,,,,9.40a,,,
+1221.9,Gunne,0,ON,C,2.13p,,,,,f11.55a,,,,,,,,f8.30a,,,
+1226.6,Vermilion Bay,0,ON,C,2.25p,,,,,12.15p,,,2.50p,,,,,8.20a,,,
+1235.6,Edison,0,ON,C,,,,,,f12.31p,,,,,,,,f8.00a,,,
+1247.2,Pine,0,ON,C,,,,,,f12.51p,,,,,,,,f7.35a,,,
+1258.2,Hawk Lake,0,ON,C,3.15p,,,,,1.15p,,,2.03p,,,,,7.05a,,,
+1269.5,Scovil,0,ON,C,,,,,,f1.38p,,,,,,,,f6.40a,,,
+1276.5,Margach,0,ON,C,,,,,,f1.52p,,,,,,,,f6.25a,,,
+1282.8,Kenora,1,ON,C,ar 3.55p / lv 4.10p,ar 6.15a / lv 6.30a,ar 5.40a / lv 6.00a,ar 6.45a / lv 7.00a,,ar 2.10p,lv 8.00a,lv 6.50p,ar 1.10p / lv 1.25p,ar 10.25p / lv 10.40p,ar 10.55p / lv 11.10p,ar 9.45p / lv 10.00p,,lv 6.05a,ar 2.15p,ar 7.00p,ar 3.30p
+1285.9,Keewatin,0,ON,C,4.20p,6.40a,6.10a,7.10a,,,8.15a,7.00p,1.00p,10.15p,10.45p,9.35p,,,1.55p,6.50p,3.20p
+1292.7,Laclu,0,ON,C,4.32p,,,,,,f8.30a,7.10p,12.43p,,,9.22p,,,f1.40p,6.37p,3.07p
+1296.7,Busteed,0,ON,C,,,,,,,f8.40a,,,,,,,,f1.30p,,
+1303.0,Lowther,0,ON,C,,,,,,,f8.51a,,,,,,,,f1.15p,,
+1314.1,Ingolf,0,ON,C,5.06p,,,7.51a,,,9.15a,7.40p,12.08p,,,8.51p,,,12.45p,6.06p,2.36p
+1327.2,Telford,0,MB,C,,,,,,,f9.40a,,,,,,,,f12.15p,,
+1334.9,Rennie,0,MB,C,5.36p,,,,,,10.30a,,11.40a,,,,,,12.00p,,
+1348.4,Darwin,0,MB,C,,,,,,,f10.55a,,,,,,,,f10.12a,,
+1354.9,Whitemouth,0,MB,C,6.05p,8.12a,7.42a,8.42a,,,11.40a,,11.12a,8.33p,9.03p,7.53p,,,10.00a,,
+1360.8,Shelley,0,MB,C,f6.15p,,,,,,f11.51a,,f10.58a,,,,,,f9.30a,,
+1366.3,Julius,0,MB,C,,,,,,,f12.01p,,,,,,,,f9.20a,,
+1370.6,Molson,0,MB,C,6.33p,,,,,,ar 12.10p,,10.45a,,,,,,9.10a,,
+1377.7,Lydiatt,0,MB,C,f6.46p,,,,,,,,10.31a,,,,,,8.15a,,
+1382.5,Cloverleaf,0,MB,C,6.53p,,,,,,,,10.24a,,,,,,8.05a,,
+1389.3,Hazelridge,0,MB,C,7.04p,,,,,,,,10.12a,,,,,,7.50a,,
+1395.2,Oakbank,0,MB,C,7.15p,,,,,,,,10.03a,,,,,,7.35a,,
+1398.8,Transcona,0,MB,C,,,,,,,,,,,,,,,,,
+1402.6,North Transcona,0,MB,C,f7.28p,,,,,,,,f9.52a,,,,,,f7.15a,,
+1408.5,Winnipeg,1,MB,C,ar 7.45p,ar 9.30a,ar 9.00a,ar 10.00a,,,,ar 9.30p,lv 9.40a,lv 7.20p,lv 7.50p,lv 6.40p,,,lv 7.00a,lv 4.30p,lv 1.00p

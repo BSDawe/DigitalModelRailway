@@ -1,0 +1,50 @@
+# Chicago, Milwaukee, St. Paul & Pacific Railroad (Milwaukee Road), Table 3, Chicago - Milwaukee - St. Paul - Minneapolis - Gallatin Gateway - Butte -
+# Spokane - Seattle - Tacoma (continued), table of February 22, 1948 (Official Guide). Washington part: Spokane - Othello - Ellensburg - Cle Elum -
+# Renton - Seattle - Tacoma. Miles as printed (from Chicago; Seattle 2189).
+# Times as printed: PACIFIC TIME (the table changes from Mountain to Pacific time at Avery, Idaho, mile 1774).
+# IDAHO: the last Idaho station is Setters, Idaho, mile 1851 (no trains); the first Washington station beyond it is Manito (1858, no trains).
+# Nos. 17 and 18 stop at Worley y8.11 p.m. / y8.58 a.m. (Idaho, 1844). Spokane cells give arrival and departure.
+# Electrically operated Othello - Tacoma ("Electrically Operated" printed beside those rows).
+# Signs (key on the page): * daily; f stops on signal; o stops to take or leave revenue passengers for or from Spokane and beyond and for or from
+# Seattle and beyond; y - not explained in the part of the key on the scan (the key lists o, p, r, t, u, v, w, x). o and y entered as plain
+# times. No. 15 at Othello shows a trident-like sign before 5.00 a.m. (key not found on milw_200248/200313): entered as a plain time.
+# Seattle: arr. 2189 here, lve. 0 in wa_milw_t003b. Black River (2179), Taunton, Horlick, Whittier, Bandera, Garcia, Barneston, Landsburg, Noble,
+# Cedar Mountain: no trains, entered empty.
+#train col=No15 num=15 dir=down days="daily" kind=passenger from="Chicago" to="Tacoma" note="The Olympian Hiawatha."
+#train col=No17 num=17 dir=down days="daily" kind=passenger from="Chicago" to="Tacoma" note="The Columbian."
+#train col=No16 num=16 dir=up days="daily" kind=passenger from="Tacoma" to="Chicago" note="The Olympian Hiawatha."
+#train col=No18 num=18 dir=up days="daily" kind=passenger from="Tacoma" to="Chicago" note="The Columbian."
+mile,station,principal,No15,No17,No16,No18
+1858,Manito,0,,,,
+1879,Spokane,1,ar 1.45a / lv 1.55a,ar 9.15p / lv 9.40p,ar 9.55p / lv 10.15p,ar 7.30a / lv 8.00a
+1896,Cheney,0,,10.14p,,6.56a
+1941,Marengo,1,,11.13p,,6.00a
+1950,Ralston,0,,f11.27p,,f5.33a
+1965,Lind,1,,11.45p,,5.13a
+1977,Roxboro,0,,f12.05a,,f4.52a
+1987,Warden,1,,f12.20a,,f4.42a
+2000,Othello,1,5.00a,12.55a,7.35p,4.27a
+2009,Taunton,0,,,,
+2015,Corfu,0,,1.14a,,3.50a
+2025,Smyrna,0,,1.25a,,3.35a
+2038,Beverly,1,,1.44a,,3.15a
+2067,Kittitas,0,,2.58a,,2.08a
+2074,Ellensburg,1,6.57a,3.11a,5.33p,1.54a
+2080,Thorp,1,,3.23a,,1.42a
+2089,Horlick,0,,,,
+2099,Cle Elum,1,7.31a,3.58a,5.01p,1.15a
+2110,Easton,1,,4.18a,,12.58a
+2119,Whittier,0,,,,
+2128,Hyak,0,,4.53a,,12.32a
+2130,Rockdale,0,,5.00a,,12.25a
+2136,Bandera,0,,,,
+2141,Garcia,0,,,,
+2150,Cedar Falls,1,,5.53a,,11.40p
+2154,Barneston,1,,,,
+2161,Landsburg,0,,,,
+2163,Noble,0,,,,
+2166,Maple Valley,0,,6.30a,,11.12p
+2170,Cedar Mountain,0,,,,
+2177,Renton,1,9.53a,6.45a,3.06p,10.54p
+2179,Black River,1,,,,
+2189,Seattle,1,ar 10.30a,ar 7.30a,lv 2.45p,lv 10.30p

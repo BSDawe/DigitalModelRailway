@@ -1,0 +1,28 @@
+# Joined through train (cn61), sk_join.py: skcn192a:No61, skcn192b:No61; up skcn192b:No62, skcn192a:No62
+# Rows and times as in the section files (see them for the scans, signs and doubts). Miles: counted along the run from the first station.
+#train col=D num=61 dir=down days="Tue,Thu,Sat" kind=passenger note="Through train: No. 61 Regina - Melville; No. 61 Melville - Flin Flon. Regina 12.10 p.m. marked b (Tue Thu Sat); continues Melville - Hudson Bay Jn. - The Pas - Flin Flon in sk_cn_t192b.csv (the Winnipeg cars come on No. 3, Table 166, and join at Melville, sk_cn_t192d.csv)."
+#train col=U num=62 dir=up days="Sun,Tue,Thu" kind=passenger note="Through train: No. 62 Flin Flon - Melville; No. 62 Melville - Regina. Flin Flon 9.00 p.m. and Cranberry Portage 10.38 p.m. marked r (Sun Tue Thu); The Pas and Hudson Bay Jn. marked a (Mon Wed Fri, next morning). From Melville to Regina (sk_cn_t192a.csv) and to Winnipeg (sk_cn_t192d.csv)."
+mile,station,principal,prov,tz,D,U
+0.0,Regina,1,SK,M,lv 12.10p,ar 2.30p
+23.0,Edenwold,0,SK,M,1.12p,1.28p
+34.2,Edgeley,0,SK,M,1.39p,12.59p
+49.0,Ft. Qu'Appelle,1,SK,M,2.12p,12.23p
+53.4,Lebret,0,SK,M,2.25p,12.10p
+62.7,Balcarres,0,SK,M,2.48p,11.48a
+83.2,Duff,0,SK,M,3.31p,11.00a
+96.3,Melville,1,SK,M/C,ar 4.00p / lv 5.45p,ar 10.45a / lv 10.30a
+112.1,Otthon,0,SK,C,6.15p,10.07a
+122.5,Yorkton,1,SK,C,ar 6.35p / lv 7.00p,ar 9.30a / lv 9.45a
+133.4,Ebenezer,0,SK,C,7.23p,9.00a
+152.7,Canora,1,SK,C,ar 8.15p / lv 9.35p,ar 7.55a / lv 8.20a
+174.8,Sturgis,1,SK,C,ar 10.20p / lv 10.25p,7.00a
+215.9,Reserve,1,SK,C,11.55p,5.20a
+246.5,Hudson Bay Jn.,1,SK,C,ar 1.05a / lv 1.20a,ar 3.50a / lv 4.15a
+334.8,The Pas,1,MB,C,ar 4.25a / lv 5.00a,ar 12.30a / lv 12.45a
+352.5,Root Lake,0,MB,C,f5.36a,f11.45p
+361.2,Wanless,0,MB,C,f5.49a,f11.30p
+369.3,Atik,0,MB,C,f6.03a,f11.16p
+380.0,Simonhouse,0,MB,C,f6.23a,f10.57p
+390.1,Cranberry Portage,1,MB,C,ar 6.40a / lv 6.50a,ar 10.29p / lv 10.38p
+405.0,Athapap,0,MB,C,f7.24a,f9.58p
+426.1,Flin Flon,1,MB,C,ar 8.25a,lv 9.00p

@@ -1,0 +1,30 @@
+# Greater Winnipeg Water District - Railway Dept. (G. McFadden, Superintendent, St. Boniface). Official Guide, April 1948 (scan cn1948_mb/gwwd.png).
+# Transcribed 18 October 2026. CENTRAL TIME. Waugh 97.2 miles as printed; no intermediate stations printed in 1948. Connections at St. Boniface with the CN and CP.
+# SUMMER SERVICE entered (effective on or about June 5th; the model's July week, Brendan 18 Oct): St. Boniface b1.00 p.m. - Waugh 5.20 p.m.; Waugh a7.30 a.m. - St. Boniface 11.30 a.m.
+# Winter service (effective October 1st), not entered: St. Boniface a9.30 a.m. - Waugh 2.10 p.m.; Waugh b7.30 a.m. - St. Boniface 11.30 a.m.
+# Signs: a = Monday, Wednesday and Friday; b = Tuesday, Thursday and Saturday. No train numbers printed; kind not printed (entered as mixed).
+# INTERMEDIATE STATIONS AND TIMES RECONSTRUCTED (Brendan, 19 Oct): stations from the GWWD Railway public timetable, Winter Schedule, Sept. 9, 1974
+#   (scan cn1948_mb/gwwd_1974.jpg; 'Trans. Can. Hwy.' 67.3, a post-1948 stop, left out). The 1974 running time between stations is stretched evenly so the run
+#   fits the 1948 printed ends (down 1.00 - 5.20 p.m., 4 h 20 against 3 h 15 in 1974, x1.33; up 7.30 - 11.30 a.m., x1.23). Miles: 1974 mileposts (St. Boniface 5,
+#   Waugh 97) scaled to the 1948 printed 97.2. Only the end times are printed 1948 times.
+#train col=Down num="" dir=down days="Tue,Thu,Sat" kind=mixed note="Summer service (from about June 5): Tuesday, Thursday and Saturday, St. Boniface 1.00 p.m. to Waugh 5.20 p.m. Intermediate times estimated from the 1974 timetable."
+#train col=Up num="" dir=up days="Mon,Wed,Fri" kind=mixed note="Summer service (from about June 5): Monday, Wednesday and Friday, Waugh 7.30 a.m. to St. Boniface 11.30 a.m. Intermediate times estimated from the 1974 timetable."
+mile,station,principal,prov,tz,Down,Up
+0.0,St. Boniface,1,MB,C,lv 1.00p,ar 11.30a
+8.5,Deacon,0,MB,C,1.31p,11.07a
+18.0,Millbrook,0,MB,C,1.55p,10.40a
+22.2,Richland,0,MB,C,2.05p,10.30a
+27.5,Monominto,0,MB,C,2.19p,10.17a
+30.6,Ostenfeld,0,MB,C,2.27p,10.10a
+34.9,Ross,0,MB,C,2.37p,10.00a
+40.1,Bruce,0,MB,C,2.51p,9.48a
+45.4,Larkhall,0,MB,C,3.03p,9.37a
+53.9,Sadlow,0,MB,C,3.23p,9.18a
+62.3,Hadashville,1,MB,C,3.45p,8.57a
+67.6,Prawda,0,MB,C,3.59p,8.45a
+72.9,McMunn,0,MB,C,4.12p,8.33a
+76.1,East Braintree,0,MB,C,4.20p,8.25a
+79.2,Wye,0,MB,C,4.28p,8.18a
+81.4,Glenn,0,MB,C,4.35p,8.12a
+88.7,Haute,0,MB,C,4.55p,7.53a
+97.2,Waugh,1,MB,C,ar 5.20p,lv 7.30a

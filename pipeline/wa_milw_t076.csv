@@ -1,0 +1,16 @@
+# Chicago, Milwaukee, St. Paul & Pacific Railroad (Milwaukee Road), Table 76, Warden - Marcellus, table of February 22, 1948 (Official Guide).
+# Times as printed: PACIFIC TIME. Black square = mixed train (key milw_200313). The first time of each train has a sign like a "natural" sign:
+# in the key on milw_200313 that is "Friday only" (another Milwaukee key, milw_200248, gives a similar sign as "Monday, Wednesday and Friday").
+# Entered as Friday only - IN DOUBT. f stops on signal. Tiflis has arr./lve. rows (folded).
+#train col=No315 num=315 dir=down days="Fri" kind=mixed from="Warden" to="Marcellus" note="Mixed. Days from a sign read as Friday only - check."
+#train col=No316 num=316 dir=up days="Fri" kind=mixed from="Marcellus" to="Warden" note="Mixed. Days from a sign read as Friday only - check."
+mile,station,principal,No315,No316
+0,Warden,1,lv 7.00a,ar 1.30p
+8,Tiflis,1,ar 7.25a / lv 7.25a,ar 12.50p / lv 12.50p
+16,Ruff,0,f7.55a,f12.20p
+22,Moody,0,f8.15a,f11.55a
+27,Batum,0,f8.35a,f11.35a
+31,Lauer,0,f8.50a,f11.20a
+38,Schoonover,0,f9.15a,f10.55a
+42,Packard,0,f9.35a,f10.35a
+47,Marcellus,1,ar 9.55a,lv 10.15a

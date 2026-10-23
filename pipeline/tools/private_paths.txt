@@ -1,0 +1,20 @@
+# Private source files: kept in BSDawe/DigitalModelRailway-sources (same paths under pipeline/). See tools/link_sources.py.
+British_Columbia_Electric_Railway_Company.kml
+traces/ontario/kmz/
+traces/ontario/lakehead_all.json
+traces/gn/kmz/
+traces/cnw/kmz/
+traces/soo/kmz/
+traces/washington/Washington State/
+traces/washington/Oregon-Washington_RR_Navigation_Co.kmz
+traces/washington/x/
+traces/hr_rails/
+traces/np/NP_Winnipeg.gpkg
+traces/saskatchewan/verlo_gap.gpkg
+places/cgn_bc/
+places/cgn_sk/
+places/cgn_mb/
+places/wa/wa_place_names.csv
+nrwn/yt.kml
+scans/cn1948_mb/gwwd_1974.jpg
+traffic_density.gpkg

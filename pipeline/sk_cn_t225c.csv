@@ -1,0 +1,28 @@
+# Canadian National, Table 225, North Battleford - St. Walburg - Frenchman Butte - Turtleford - Medstead - North Battleford: section C, Medstead - Glenbush - Prinham - No. Battleford.
+# Official Guide, April 25, 1948 (scan cn1948_sk/table225_northbattleford_stwalburg_medstead.png).
+# Times as printed: MOUNTAIN TIME ("Mt. time" head). All stations in Saskatchewan. Miles as printed in each section.
+# Table 225 has five sections: N. Battleford - St. Walburg (0-77.3) and St. Walburg - Spruce Lake Junction - Frenchman Butte (77.3-110.6) [sk_cn_t225a.csv];
+#   Turtleford - Medstead (0-46.9) [sk_cn_t225b.csv]; Medstead - Glenbush - Prinham - No. Battleford (0-48.0) [sk_cn_t225c.csv]; Medstead - Rabbit Lake -
+#   Speers - No. Battleford (0-91.2) [sk_cn_t225d.csv]. Each column usually carries different train numbers in different sections (heads like "119-121",
+#   "M291-285", "107-109", "M286 M292", "110-108", "281-79", "M289-287"): entered as separate trains per section, linked by from/to; which number of a
+#   pair belongs to which section is my reading (first number = first part run).
+# KEY TO SIGNS: none on this scan. Used, from the Table 193-201 key: b Tue Thu Sat; e Wednesday and Friday; h Thursday only; k Saturday only; t Wednesday only;
+#   u Friday only; x Tuesday only; z Wednesday, Friday and Sunday; M mixed train. The black square before a train number is "Motor train" (end of the
+#   cut-off left note: "... Motor train."). NOT EXPLAINED on the scans: c (M285; "Monday only" in the Table 180-184 key), d (Nos. 100, 106), v (M292),
+#   y (M289; "Tuesday and Friday" in the 180-184 key), and a black dot (Nos. 103, 113). Days given for trains with these signs are PLACEHOLDERS / DOUBTFUL.
+# Notes printed sideways in empty parts of columns (they appear to give the running dates of the column they sit in; no sign links them):
+#   - column 113 (cut off at the left edge of the scan): "... 29, also Thurs., July 1, Mon., Aug. 2, / ... Sun., June 6, account holiday). Has /
+#     ...y 30 to July 25, then Mon., Aug. 2, and / Motor train."
+#   - columns 120-122 and M286-M292 (below the Frenchman Butte section): "# May 22, 24, 29, June 5, 7, 12, 19, 23, 26, 28, then daily, except Sun. to
+#     Aug. 21, also Aug. 25, 27, 28, Sept. 3, 4, 6." (no # found on any time).
+#   - column 100: "To No. 106." and "natural-sign Sat. only, June 26 to Aug. 21, also Thurs., July 1, Mon., Aug. 2, Sat., Sept. 4, Mon. Sept. 6."
+# "Rail-Auto Service available at this point" printed in the empty column 107-109 below Frenchman Butte (refers to a car sign, not a train).
+# Glenbush 4.7 and No. Battleford 48.0 in this section (91.2 by the Speers line, sk_cn_t225d.csv).
+#train col=No282 num=282 dir=down days="Fri" kind=passenger from="Turtleford" note="Column 80-282; from Turtleford u6.00 a.m. as No. 80 (Table 226, sk_cn_t226.csv; No. 80 goes on to Prince Albert). Kind not printed."
+#train col=Mot102 num=102 dir=down days="Fri" kind=motor note="Motor 102; Medstead 8.40 p.m. marked u (Friday only)."
+#train col=No281 num=281 dir=up days="Fri" kind=passenger to="Turtleford" note="Column 281-79; N. Battleford 4.30 p.m. marked u (Friday only); No. 79 (Prince Albert - Turtleford, Table 226, sk_cn_t226.csv) is in the same column at Medstead (8.30 p.m.). Kind not printed."
+mile,station,principal,prov,tz,No282,Mot102,No281
+0.0,Medstead,1,SK,M,lv 8.15a,lv 8.40p,ar 7.50p
+4.7,Glenbush,0,SK,M,8.30a,8.52p,7.30p
+37.1,Prinham,0,SK,M,10.25a,10.13p,5.08p
+48.0,No. Battleford,1,SK,M,ar 11.05a,ar 10.40p,lv 4.30p

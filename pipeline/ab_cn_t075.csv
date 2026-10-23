@@ -1,0 +1,45 @@
+# Canadian National Railways, Table 75: Montreal - Ottawa - North Bay - Toronto - Capreol - Winnipeg - Saskatoon - Edmonton (- Jasper - Vancouver),
+# table of April 25, 1948 (Official Guide, May 1948). ALBERTA PART ONLY: Chauvin to Edmonton. Miles as printed (from Montreal).
+# Times as printed: MOUNTAIN TIME (the table is on Mountain time west of Watrous, Sask.; Edmonton is headed "M.T."). Light figures a.m., heavy figures p.m.
+# Last Saskatchewan station next to the boundary: Artland, Sask., mile 1989.1 (No. 11 at 2.39p, No. 12 at 12.56p; Nos. 1-4 do not call).
+# Signs: * daily; dagger = daily except Sunday; f flag stop; y Tuesday and Friday; a cross before a name = coupon station; a triangle = restaurant
+# or lunch counter (Wainwright, Edmonton); the telegraph sign is not entered. A dash in a column (Nos. 1-4) = does not call.
+# No. 11 leaves Winnipeg daily (*6.00p Central) but leaves Saskatoon daily except Sunday (dagger 9.20a) and its Edmonton arrival carries the dagger:
+# in Alberta it runs daily except Sunday. No. 12 leaves Edmonton 7.00a with the dagger (daily except Sunday), leaves Saskatoon *6.00p, due Winnipeg 10.00a next day.
+# Nos. 1-4 are "The Continental Limited. See Note A / C / B / D": the notes themselves are cut off the bottom of the scan (only "Note A - No. 1 will
+# stop on signal at any station between Win..." shows), so stops on signal at the smaller stations may apply and are not entered.
+# Edmonton times west of here are from the continuation of the same table (Edmonton - Jasper - Vancouver): No. 1 lv 8.55a, No. 3 lv 7.20a,
+# No. 2 ar 8.15p, No. 4 ar 9.15p. They are not entered in the cells, which hold only what this page prints (arrive for 1, 3; leave for 2, 4).
+# "Additional Trains" (printed under the table): "Leaves Tofield y10.20 a.m., arrives Edmonton 11.40 a.m. Leaves Edmonton y5.15 p.m., arrives
+# Tofield 6.28 p.m. from and to Alliance, see Table 205." Entered as No87 and No88: the numbers are from Table 205 (Edmonton - Camrose - Alliance),
+# where they are Nos. 87 and 88 "Via Tofield", not marked mixed. Table 75 gives only these two calls. THE SAME TRAINS ARE IN TABLE 205: do not draw twice.
+#train col=No11 num=11 dir=down days="ex Sun" kind=passenger from="Winnipeg" note="Local from Winnipeg (lv 6.00p Central the evening before) by Saskatoon; ends at Edmonton. Daily Winnipeg to Saskatoon, daily except Sunday west of Saskatoon."
+#train col=No1 num=1 dir=down days="daily" kind=passenger from="Winnipeg" to="Vancouver" note="The Continental Limited, from the east (Montreal/Toronto) by Winnipeg and Saskatoon, through to Jasper and Vancouver; leaves Edmonton 8.55a. See Note A (not on the scan)."
+#train col=No3 num=3 dir=down days="daily" kind=passenger from="Winnipeg" to="Vancouver" note="The Continental Limited, from the east (Montreal/Toronto) by Winnipeg and Saskatoon, through to Jasper and Vancouver; leaves Edmonton 7.20a. See Note C (not on the scan)."
+#train col=No2 num=2 dir=up days="daily" kind=passenger from="Vancouver" to="Winnipeg" note="The Continental Limited, from Vancouver and Jasper (arrives Edmonton 8.15p), to Saskatoon, Winnipeg and the east (Montreal/Toronto). See Note B (not on the scan)."
+#train col=No4 num=4 dir=up days="daily" kind=passenger from="Vancouver" to="Winnipeg" note="The Continental Limited, from Vancouver and Jasper (arrives Edmonton 9.15p), to Saskatoon, Winnipeg and the east (Montreal/Toronto). See Note D (not on the scan)."
+#train col=No12 num=12 dir=up days="ex Sun" kind=passenger to="Winnipeg" note="Local Edmonton to Winnipeg by Saskatoon (due Winnipeg 10.00a Central next day)."
+#train col=No87 num=87 dir=down days="Tue,Fri" kind=passenger from="Alliance" note="Additional train from Alliance by Camrose (Table 205), on this line Tofield to Edmonton only; only these two times printed in Table 75."
+#train col=No88 num=88 dir=up days="Tue,Fri" kind=passenger to="Alliance" note="Additional train to Alliance by Camrose (Table 205), on this line Edmonton to Tofield only; only these two times printed in Table 75."
+mile,station,principal,No11,No1,No3,No2,No4,No12,No87,No88
+1999.5,Chauvin,0,2.57p,,,,,12.38p,,
+2004.6,Ribstone,0,3.07p,,,,,12.28p,,
+2009.4,Dunn,0,f3.14p,,,,,f12.19p,,
+2013.8,Edgerton,0,3.22p,,,,,12.12p,,
+2032.7,Wainwright,1,ar 3.55p / lv 4.10p,ar 4.45a / lv 5.00a,ar 3.15a / lv 3.30a,ar 11.45p / lv 11.55p,ar 12.45a / lv 12.55a,ar 11.25a / lv 11.40a,,
+2050.3,Irma,0,4.42p,,,,,10.49a,,
+2057.9,Jarrow,0,4.55p,,,,,10.32a,,
+2064.7,Kinsella,0,5.07p,,,,,10.19a,,
+2077.1,Viking,0,5.32p,,,,,9.50a,,
+2089.3,Bruce,0,5.54p,,,,,9.23a,,
+2098.5,Holden,0,6.14p,,,,,9.05a,,
+2107.3,Ryley,0,6.31p,,,,,8.43a,,
+2118.8,Tofield,1,6.55p,,,,,8.20a,lv 10.20a,ar 6.28p
+2125.0,Lindbrook,0,f7.05p,,,,,8.04a,,
+2130.7,Deville,0,f7.15p,,,,,7.56a,,
+2136.4,Uncas,0,f7.25p,,,,,7.46a,,
+2142.6,Ardrossan,0,f7.37p,,,,,7.36a,,
+2147.1,Bremner,0,f7.45p,,,,,7.27a,,
+2151.7,Clover Bar,0,f7.54p,,,,,7.20a,,
+2156.2,North Edmonton,0,8.03p,,,,,7.12a,,
+2159.4,Edmonton,1,ar 8.15p,ar 8.15a,ar 6.40a,lv 8.45p,lv 9.45p,lv 7.00a,ar 11.40a,lv 5.15p

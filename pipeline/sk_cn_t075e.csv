@@ -1,0 +1,52 @@
+# Canadian National Railways, Table 75: Transcontinental Service, Montreal - Ottawa - North Bay - Toronto - Capreol - Winnipeg, table of April 25, 1948
+#   (Official Guide; scans cn1948_mb/t075a.png, t075b.png, sent by Brendan 19 October 2026). Transcribed 20 October 2026.
+# ENTERED HERE: Armstrong - Sioux Lookout - Redditt - Winnipeg (the National Transcontinental line), the last section of the page before Winnipeg.
+#   Winnipeg and west is in sk_cn_t075.csv / sk_cn_t166w.csv; Capreol - Armstrong is not entered (no track for it yet).
+# Miles as printed (from Montreal). CENTRAL TIME: Armstrong is printed on two lines, "Armstrong (E.T.)" and "Armstrong (C.T.)"; westbound trains
+#   arrive on Eastern and leave on Central, eastbound arrive on Central and leave on Eastern. Only the Central times are entered (Armstrong is the
+#   end of every train here); the Eastern times are in the notes. Provinces as printed: "Malachi, Ont.", "Indigo, Man."
+# Key to signs (on the page): * Daily; a Mon., Wed. and Fri.; b Tues., Thurs. and Sat.; f flag stop; h stops on signal for revenue passengers;
+#   k Sat. only; l Mon. and Wed.; n Tues. and Fri.; p stops for revenue passengers to or from Winnipeg and beyond; r stops for passengers to or from
+#   Winnipeg and beyond; z Fri. only; (crossed sign) stops for revenue passengers to or from Ottawa and beyond; § Sun. only; triangle Sun. only, June 27
+#   until Sept. 6; (moon) Runs Fri., May 21, 28, June 4, 11, 18, Sept. 10, 17 only. Stop signs (f, h, p, r, crossed) are kept as calls.
+# DAYS are those in the model week MONDAY JULY 5 - SUNDAY JULY 11, 1948. Column notes on the page: M215 "Will not run Saturdays after June 13";
+#   M216 "Will not run Fridays after May 16"; M214 "Runs Tuesday and Thursday"; 37 and 38 "First trip June 22. Last trip September 7";
+#   554 "First trip June 12. Last trip September 4"; 552 "First trip June 25. Last trip September 3"; 551 "Runs Mondays, May 24 and Sept. 6, instead
+#   of Sundays, May 23 and Sept. 5" and "Mondays, August 2 and Sept. 6, instead of Sundays, August 1 and Sept. 5"; 553 "Runs Monday, May 24, Sundays,
+#   June 13, 20, 27, July 4, 11, 18, 25, Monday, Aug. 2, Sundays, Aug. 8, 15, 22, 29, Monday, Sept. 6".
+# NOT ENTERED: the "Spl." (moon) Winnipeg 4.10 p.m. - Minaki 7.35 p.m. - Redditt 8.10 p.m., "Makes all local stops" (Fridays in May, June and
+#   September only: not in the model week). Notes A-D (where Nos. 1-4 stop on signal) are summarised in the train notes.
+# READ ONCE AT HIGHER ZOOM; doubtful: 552's sign (read as z, Fri. only, which agrees with its first and last trips, June 25 and Sept. 3, both Fridays).
+#train col=No1 num=1 dir=down days="daily" kind=passenger from="Montreal" name="Continental Limited" note="The Continental Limited, Montreal section. From Montreal (Capreol 9.10 a.m., Armstrong ar 11.45 p.m. E.T.). Armstrong lv 10.55 p.m. C.T. Note A: stops on signal between Armstrong and Winnipeg for passengers from east or south of Winnipeg. Continues west from Winnipeg 11.20 a.m."
+#train col=No3 num=3 dir=down days="daily" kind=passenger from="Toronto" name="Continental Limited" note="The Continental Limited, Toronto section. From Toronto 11.00 p.m. (Capreol 8.15 a.m., Armstrong ar 10.30 p.m. E.T.). Armstrong lv 9.40 p.m. C.T. Continues west from Winnipeg 10.15 a.m."
+#train col=M211 num=211 dir=down days="Sat" kind=mixed note="Mixed, Saturdays only. Armstrong 7.15 a.m. to Sioux Lookout 1.20 p.m."
+#train col=M213 num=213 dir=down days="Mon,Wed" kind=mixed note="Mixed, Mon. and Wed. Sioux Lookout 8.30 a.m. to Redditt 5.00 p.m."
+#train col=M215 num=215 dir=down days="Tue,Thu" kind=mixed note="Mixed, Tues., Thurs. and Sat. (not Saturdays after June 13). Redditt 8.00 a.m. to Winnipeg 2.30 p.m."
+#train col=No37 num=37 dir=down days="Tue,Fri" kind=passenger note="Tues. and Fri., June 22 to Sept. 7. Redditt 2.45 p.m. to Winnipeg 6.45 p.m."
+#train col=No551 num=551 dir=down days="Sun" kind=passenger note="Sundays, June 27 to Sept. 6 (Mondays instead on the Aug. 2 and Sept. 6 holidays). Sioux Lookout 1.30 p.m. to Winnipeg 9.00 p.m."
+#train col=No553 num=553 dir=down days="Sun" kind=passenger note="Sundays, June 13 to Aug. 29 (Mondays May 24, Aug. 2, Sept. 6 instead). Redditt 6.10 p.m. to Winnipeg 10.00 p.m."
+#train col=No2 num=2 dir=up days="daily" kind=passenger to="Montreal" name="Continental Limited" note="The Continental Limited, Montreal section. To Montreal. Winnipeg 6.45 p.m.; Armstrong ar 5.30 a.m. C.T., lv 6.40 a.m. E.T.; Capreol 9.00 p.m. From the west, Winnipeg ar 6.00 p.m."
+#train col=No4 num=4 dir=up days="daily" kind=passenger to="Toronto" name="Continental Limited" note="The Continental Limited, Toronto section. To Toronto (arrive 7.00 a.m.). Winnipeg 7.40 p.m.; Armstrong ar 6.35 a.m. C.T., lv 7.45 a.m. E.T.; Capreol 10.20 p.m. From the west, Winnipeg ar 6.50 p.m."
+#train col=M216 num=216 dir=up days="Mon,Wed" kind=mixed note="Mixed, Mon., Wed. and Fri. (not Fridays after May 16). Winnipeg 8.35 a.m. to Redditt 4.35 p.m."
+#train col=M214 num=214 dir=up days="Tue,Thu" kind=mixed note="Mixed, Tues. and Thurs. Redditt 8.00 a.m. to Sioux Lookout 3.10 p.m."
+#train col=M212 num=212 dir=up days="Fri" kind=mixed note="Mixed, Fridays only. Sioux Lookout 8.55 a.m. to Armstrong 4.30 p.m."
+#train col=No38 num=38 dir=up days="Tue,Fri" kind=passenger note="Tues. and Fri., June 22 to Sept. 7. Winnipeg 9.15 a.m. to Redditt 1.30 p.m."
+#train col=No554 num=554 dir=up days="Sat" kind=passenger note="Saturdays, June 12 to Sept. 4. Winnipeg 12.30 p.m. to Redditt 4.15 p.m."
+#train col=No552 num=552 dir=up days="Fri" kind=passenger note="Fridays, June 25 to Sept. 3. Winnipeg 4.10 p.m. to Sioux Lookout 11.20 p.m."
+mile,station,principal,prov,tz,No1,No3,M211,M213,M215,No37,No551,No553,No2,No4,M216,M214,M212,No38,No554,No552
+967.6,Armstrong,1,ON,C,lv 10.55p,lv 9.40p,lv 7.15a,,,,,,ar 5.30a,ar 6.35a,,,ar 4.30p,,,
+1083.5,Ghost River,0,ON,C,2.07a,,12.30p,,,,,,,3.35a,,,10.20a,,,
+1100.1,Superior Junction,0,ON,C,,1.13a,1.05p,,,,,,,3.10a,,,9.20a,,,
+1106.5,Sioux Lookout,1,ON,C,ar 2.55a / lv 3.10a,ar 1.25a / lv 1.40a,ar 1.20p,lv 8.30a,,,lv 1.30p,,ar 1.40a / lv 1.55a,ar 2.40a / lv 2.55a,,ar 3.10p,lv 8.55a,,,ar 11.20p
+1119.1,Hudson,0,ON,C,3.35a,2.10a,,9.30a,,,1.58p,,1.15a,2.10a,,2.28p,,,,10.55p
+1181.1,Quibell,0,ON,C,5.17a,,,2.30p,,,3.34p,,,12.26a,,10.25a,,,,9.16p
+1190.0,McIntosh,0,ON,C,5.32a,,,3.00p,,,3.48p,,11.16p,12.11a,,10.00a,,,,9.03p
+1219.9,Farlane,0,ON,C,6.17a,,,4.35p,,,4.40p,,10.31p,11.26p,,8.36a,,,,8.12p
+1229.6,Redditt,1,ON,C,ar 6.35a / lv 6.45a,ar 5.05a / lv 5.15a,,ar 5.00p,lv 8.00a,lv 2.45p,ar 4.55p / lv 5.10p,lv 6.10p,ar 10.05p / lv 10.15p,ar 11.00p / lv 11.10p,ar 4.35p,lv 8.00a,,ar 1.30p,ar 4.15p,ar 7.35p / lv 7.55p
+1236.2,Ena,0,ON,C,,,,,8.15a,2.56p,,,,,4.14p,,,1.15p,,
+1244.0,Minaki,1,ON,C,7.08a,5.40a,,,8.40a,3.15p,5.40p,7.00p,9.39p,10.34p,3.59p,,,1.00p,3.30p,7.10p
+1250.2,Wade,0,ON,C,7.20a,,,,8.55a,3.28p,5.52p,7.12p,,10.24p,3.15p,,,12.41p,3.15p,6.52p
+1259.7,Malachi,0,ON,C,7.36a,,,,9.25a,,6.09p,7.27p,,10.10p,2.35p,,,12.17p,2.55p,6.31p
+1288.3,Indigo,0,MB,C,,,,,10.50a,,,,,,12.32p,,,,,
+1351.4,Transcona,0,MB,C,,,,,2.00p,6.30p,,,,,9.05a,,,9.30a,,
+1358.5,Winnipeg,1,MB,C,ar 10.10a,ar 9.00a,,,ar 2.30p,ar 6.45p,ar 9.00p,ar 10.00p,lv 6.45p,lv 7.40p,lv 8.35a,,,lv 9.15a,lv 12.30p,lv 4.10p

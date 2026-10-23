@@ -1,0 +1,22 @@
+# Canadian Pacific, Table 101, Brandon - Varcoe - MacGregor - Portage la Prairie ("via Varcoe"). MacGregor - Portage is the main line (Table 5).
+# From the Canadian Pacific public timetable of 1948 (scan cp1948_mb/t100_102.png, printed sideways; page "TABLES 99 to 106"). Transcribed 18 October 2026.
+# CENTRAL TIME. Miles as printed. All Manitoba. Signs: f = stops on signal; d = stops to detrain (entered as a plain time); || = meal station; M = mixed train.
+# MacGregor is printed twice (Ar / Lv, 79.3): one row.
+#train col=M220 num=220 dir=down days="Wed,Sat" kind=mixed note="Brandon 7.15 a.m. by Varcoe and MacGregor to Portage la Prairie 1.00 p.m."
+#train col=M219 num=219 dir=up days="Mon,Thu" kind=mixed note="Portage la Prairie 10.45 a.m. by MacGregor and Varcoe to Brandon 4.15 p.m. Chater 3.55 p.m.: stops to detrain."
+mile,station,principal,prov,tz,M220,M219
+0.0,Brandon,1,MB,C,lv 7.15a,ar 4.15p
+5.5,Chater,0,MB,C,7.30a,3.55p
+16.3,Forrest,0,MB,C,8.10a,3.20p
+23.8,Varcoe,0,MB,C,8.35a,2.55p
+32.3,Moorepark,0,MB,C,9.04a,2.25p
+42.4,Brookdale,0,MB,C,9.40a,1.48p
+45.8,Oberon,0,MB,C,9.55a,1.23p
+52.6,Wellwood,0,MB,C,10.22a,1.03p
+62.0,Edrans,0,MB,C,10.56a,12.35p
+68.3,Pine Creek,0,MB,C,11.21a,12.19p
+72.9,Hugo,0,MB,C,11.37a,12.02p
+79.3,MacGregor,1,MB,C,ar 11.55a / lv 12.10p,ar 11.27a / lv 11.45a
+86.0,Bagot,0,MB,C,f12.25p,f11.13a
+93.5,Burnside,0,MB,C,f12.40p,f11.00a
+101.5,Portage la Prairie,1,MB,C,ar 1.00p,lv 10.45a

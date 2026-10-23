@@ -1,0 +1,14 @@
+# Canadian National, Table 212, Biggar - Oban - North Battleford. Official Guide, April 25, 1948 (scan cn1948_sk/tables207_212_216_canora_yorkton_biggar_vegreville.png).
+# Times as printed: MOUNTAIN TIME ("Mt. time" head). All stations in Saskatchewan. Miles from Biggar as printed. A.M./P.M. beside each time.
+# Key to signs: not on this scan. f flag stop; M mixed train. M379 Biggar t2.30 p.m.: t = "Wednesday only" (Table 193-201 key; t is not in the 180-184 key).
+#   M380 North Battleford 8.15 a.m. carries a black dot (in the Table 193-201 key a dot = "Motor train; limited baggage accommodation", which does not give days
+#   and conflicts with the M head). DAYS OF M380 UNKNOWN: entered Thu (the morning after M379) as a placeholder.
+# M380 is timed Battleford 9.30 a.m. - Cando f12.05 p.m. (30.7 miles in 2 h 35 min), as printed.
+#train col=M379 num=379 dir=down days="Wed" kind=mixed note="Biggar 2.30 p.m. marked t (Wednesday only)."
+#train col=M380 num=380 dir=up days="Wed" kind=mixed note="North Battleford 8.15 a.m. marked with a black dot: Wednesday only (key for Tables 203-215) (Brendan, 12 Oct)."
+mile,station,principal,prov,tz,M379,M380
+0.0,Biggar,1,SK,M,lv 2.30p,ar 1.40p
+8.6,Oban,1,SK,M,2.55p,1.15p
+26.3,Cando,0,SK,M,4.25p,f12.05p
+57.0,Battleford,1,SK,M,6.45p,9.30a
+70.9,North Battleford,1,SK,M,ar 7.40p,lv 8.15a

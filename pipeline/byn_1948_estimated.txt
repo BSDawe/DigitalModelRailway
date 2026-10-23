@@ -1,0 +1,48 @@
+British Yukon Navigation Co. (White Pass & Yukon), summer 1948: ESTIMATED schedule (Brendan, 13 Oct 2026). Round trip 6-7 days, not on a fixed
+weekly schedule; the White Pass table says "modern sternwheel steamers operate to Dawson City twice a week". Tributary: S.S. Keno, Mayo - Stewart
+River - Stewart Landing. Week shown: Mon 5 - Sun 11 July (times 24 h, local).
+
+[July 5, Mon]  18:00 - Train arrives at Whitehorse; cargo/passenger transfer begins.
+               20:00 - Ship A DEPARTS Whitehorse (Downstream Run).
+                       Ship B is mid-river, traveling Upstream (near Fort Selkirk).
+[July 6, Tue]  02:00 - Ship A enters Lake Laberge.
+               12:00 - Ship A passes Carmacks.
+               14:30 - Ship A navigates Five Finger Rapids.
+               22:00 - Ship B arrives at Carmacks Wood Camp (takes on 4 cords).
+[July 7, Wed]  04:00 - Ship A ARRIVES at Dawson City (~32 hours).
+               10:00 - Ship A unloading supplies, loading silver ore.
+               08:00 - Ship C (S.S. Keno) departs Mayo down the Stewart River.
+[July 8, Thu]  06:00 - Ship A DEPARTS Dawson City (Upstream Run, pushing empty barge).
+               19:00 - Ship B ARRIVES at Whitehorse (~4.5 days). Maintenance (boiler blowout).
+[July 9, Fri]  11:00 - Ship C arrives at Stewart Landing; unloads ore to riverbank cache.
+               15:00 - Ship A arrives at Stewart Landing; hitches to loaded ore barge.
+[July 10, Sat] 08:00 - Ship A traveling upstream at 3-4 mph (heavy load).
+                       Ship B sits in Whitehorse (idle/loading).
+[July 11, Sun] 18:00 - Ship A ARRIVES at Whitehorse (~3.5 days from Dawson).
+               23:59 - Week cycle resets. Ship B prepares for Monday evening departure.
+
+AGREED VERSION (Brendan, 13 Oct 11:12: use Claude's estimates; all estimated, a looping week):
+- Ship A: Whitehorse lv Mon 20:00 - Lake Laberge Tue 02:00 - Carmacks Tue 12:00 - Five Finger Rapids Tue 14:30 - Dawson City ar Wed 04:00;
+  Dawson lv Thu 06:00 (upstream) - Stewart Landing Fri 15:00 (picks up the ore barge) - Whitehorse ar Sun 18:00.
+- Ship B (second sailing, so twice a week as the White Pass table says): Whitehorse lv Fri 20:00 - Dawson ar Sun 04:00; Dawson lv Sun 06:00
+  (upstream) - Fort Selkirk Mon - Carmacks Tue 22:00 (wood camp) - Whitehorse ar Thu 19:00 (boiler blowout; out again Fri 20:00).
+  Downstream calls and running times as Ship A.
+- S.S. Keno (Stewart River): Mayo lv Wed 08:00 - Stewart Landing ar Fri 11:00; Stewart Landing lv Fri 14:00 (upstream) - Mayo ar Mon about
+  12:00; lies at Mayo to Wednesday.
+- Names (Brendan, 11:13): Ship A = S.S. Klondike, Ship B = S.S. Casca, S.S. Keno. HYPOTHETICAL assignment: their notes must say the
+  schedule and the choice of boats are a model, not a record of which boat ran when.
+
+POINTS (Brendan, 13 Oct 11:25), in river order Whitehorse -> Dawson:
+Whitehorse Landing 60.720871,-135.049767
+Upper Laberge 60.947996,-135.092295
+Lower Laberge 61.394534,-135.227103
+Big Salmon 61.881685,-134.926223
+Carmacks 62.090537,-136.282676
+Five Finger Rapids 62.271012,-136.355926
+Fort Selkirk 62.775918,-137.389729
+Stewart Landing 63.316040,-139.429242 (mouth of the Stewart; the Keno's lower end)
+Dawson City 64.063786,-139.435619
+Mayo 63.591014,-135.896955 (up the Stewart River; the Keno's upper end)
+Calls: DOWNRIVER the sternwheelers call only at Carmacks and Fort Selkirk (Five Finger Rapids and Lake Laberge are passing points);
+UPRIVER they call at every point (Dawson, Stewart Landing, Fort Selkirk, Five Finger Rapids, Carmacks, Big Salmon, Lower Laberge,
+Upper Laberge, Whitehorse). The Keno: Mayo and Stewart Landing.

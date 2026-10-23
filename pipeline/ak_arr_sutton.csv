@@ -1,0 +1,10 @@
+# The Alaska Railroad, Sutton Branch, December 1947 (same page). Times as printed: 150th MERIDIAN TIME (two hours earlier than Pacific).
+# Elevations: Anchorage 38, Matanuska 36, Palmer 256, Moose Creek 340, Sutton 448. The Jonesville - Eska Branch below is freight only (Brendan): not for the map.
+#train col=Out num="" dir=down days="ex Sun" kind=passenger note="Daily except Sunday (no train number printed)."
+#train col=Back num="" dir=up days="ex Sun" kind=passenger note="Daily except Sunday (no train number printed)."
+mile,station,principal,Out,Back
+0,Anchorage,1,lv 9.00a,ar 5.30p
+36.4,Matanuska,1,10.50a,3.50p
+42.9,Palmer,1,11.30a,3.30p
+49.6,Moose Creek,1,12.10p,2.45p
+55.3,Sutton,1,ar 12.30p,lv 2.30p

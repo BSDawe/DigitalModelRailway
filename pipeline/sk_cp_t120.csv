@@ -1,0 +1,60 @@
+# Canadian Pacific, Table 120, Moose Jaw - Assiniboia - Shaunavon - Lethbridge: the SASKATCHEWAN part, Moose Jaw to Jaydot (first Alberta station).
+# From the Canadian Pacific public timetable of about 1948 (scan cp1948_sk/tables120_122_moosejaw_shaunavon_lethbridge.png, printed sideways).
+# Times as printed: MOUNTAIN TIME ("Mountain Time" heads the station column). Miles from Moose Jaw, as printed.
+# Last Saskatchewan station Altawan ("Altawan, Sask"), mile 269.8; first Alberta station Jaydot ("Jaydot, Alta"), mile 276.4, included here.
+# Jaydot to Lethbridge is in ab_cp_t120.csv (M641/M642 run Manyberries - Lethbridge, all in Alberta, and are not entered here).
+# Signs (explanation of signs on this page, partly cut off at the right edge of the scan): f = flag stop (stops on signal); || = meal station (Moose Jaw,
+# Assiniboia); M = mixed train; .. = does not stop (left empty).
+# Assiniboia is printed twice (Ar / Lv) with a reference to Table 125: one row with ar / lv. Consul and Notukeu refer to Table 135.
+# 319 and 320 run Moose Jaw - Shaunavon only. M657 runs Shaunavon - Consul (Mon), M656 Consul - Shaunavon (Thu).
+# M643 continues Jaydot - Manyberries (ar 6.10p) and M644 starts at Manyberries (lv 6.15a): see ab_cp_t120.csv.
+# Print: M657 Robsart "1 35" and Vidora "2 20" with the dot faint; read 1.35 and 2.20.
+#train col=No319 num=319 dir=down days="ex Sun" kind=passenger note="Moose Jaw to Shaunavon."
+#train col=M657 num=657 dir=down days="Mon" kind=mixed note="Shaunavon to Consul."
+#train col=M643 num=643 dir=down days="Wed,Fri" kind=mixed to="Manyberries" note="Shaunavon to Manyberries (ar 6.10p, Alberta part in ab_cp_t120.csv)."
+#train col=No320 num=320 dir=up days="ex Sun" kind=passenger note="Shaunavon to Moose Jaw. Hazenmore 12.00 is noon."
+#train col=M644 num=644 dir=up days="Tue,Sat" kind=mixed from="Manyberries" note="Manyberries (lv 6.15a, Alberta part in ab_cp_t120.csv) to Shaunavon. Knollys f12.00 is noon."
+#train col=M656 num=656 dir=up days="Thu" kind=mixed note="Consul to Shaunavon."
+mile,station,principal,prov,tz,No319,M657,M643,No320,M644,M656
+0.0,Moose Jaw,1,SK,M,lv 9.45a,,,ar 5.05p,,
+10.0,Archive,0,SK,M,10.11a,,,4.39p,,
+16.0,Buttress,0,SK,M,10.25a,,,4.26p,,
+23.1,Crestwynd,0,SK,M,10.41a,,,4.12p,,
+29.4,Dunkirk,0,SK,M,10.54a,,,3.56p,,
+33.4,Bishopric,0,SK,M,11.02a,,,3.49p,,
+36.7,Expanse,0,SK,M,11.15a,,,3.36p,,
+43.6,Mossbank,0,SK,M,11.32a,,,3.16p,,
+51.9,Vantage,0,SK,M,11.50a,,,2.58p,,
+58.0,Congress,0,SK,M,12.08p,,,2.45p,,
+67.5,Assiniboia,1,SK,M,ar 12.30p / lv 1.00p,,,ar 1.55p / lv 2.25p,,
+73.6,Valor,0,SK,M,1.11p,,,1.40p,,
+80.2,Limerick,0,SK,M,1.26p,,,1.26p,,
+89.2,Melaval,0,SK,M,1.47p,,,1.07p,,
+94.9,La Fleche,0,SK,M,2.02p,,,12.55p,,
+101.8,Woodrow,0,SK,M,2.21p,,,12.39p,,
+107.3,Meyronne,0,SK,M,2.34p,,,12.28p,,
+114.7,Kincaid,0,SK,M,2.50p,,,12.13p,,
+120.8,Hazenmore,0,SK,M,3.04p,,,12.00p,,
+128.3,Aneroid,0,SK,M,3.21p,,,11.44a,,
+137.1,Ponteix,0,SK,M,3.39p,,,11.27a,,
+143.7,Gouverneur,0,SK,M,3.55p,,,11.13a,,
+150.2,Cadillac,0,SK,M,4.08p,,,11.00a,,
+156.9,Crichton,0,SK,M,4.22p,,,10.46a,,
+163.7,Admiral,0,SK,M,4.38p,,,10.32a,,
+170.6,Scotsguard,0,SK,M,4.55p,,,10.17a,,
+177.5,Instow,0,SK,M,5.10p,,,10.02a,,
+185.7,Shaunavon,1,SK,M,ar 5.30p,lv 9.00a,lv 9.00a,lv 9.45a,ar 2.20p,ar 1.00p
+194.0,Dollard,0,SK,M,,9.45a,9.40a,,1.45p,12.40p
+200.9,South Fork,0,SK,M,,10.25a,10.15a,,1.15p,12.10p
+209.0,Eastend,0,SK,M,,11.30a,11.15a,,12.45p,11.45a
+214.8,Knollys,0,SK,M,,f11.50a,11.30a,,f12.00p,f10.50a
+222.5,Ravenscrag,0,SK,M,,12.35p,12.10p,,11.40a,10.30a
+230.2,Palisade,0,SK,M,,f1.05p,f12.40p,,f11.10a,f9.50a
+236.1,Robsart,0,SK,M,,1.35p,1.05p,,10.50a,9.30a
+242.6,Vidora,0,SK,M,,2.20p,1.45p,,10.25a,9.00a
+248.2,Consul,1,SK,M,,ar 3.10p,2.10p,,9.55a,lv 8.30a
+251.4,Notukeu,1,SK,M,,,2.35p,,9.30a,
+256.7,Senate,0,SK,M,,,3.15p,,9.00a,
+263.6,Govenlock,0,SK,M,,,3.40p,,8.40a,
+269.8,Altawan,0,SK,M,,,f4.05p,,f8.15a,
+276.4,Jaydot,0,AB,M,,,f4.30p,,f7.55a,

@@ -1,0 +1,13 @@
+# Union Pacific Railroad, Table 66, Spokane, Tekoa, Wallace, table of April 4, 1948 (Official Guide). Times as printed: STANDARD - PACIFIC TIME
+# (key on the page). Washington part only: Spokane - Manito - Tekoa (this table prints only these three Washington stations).
+# IDAHO: the first Idaho station beyond Tekoa (49) is Lovell, mile 56 (No. 67 f10.02 a.m., No. 68 f5.08 p.m.); the trains run on to Wallace, Ida.
+# (130; No. 67 ar 12.45 p.m., No. 68 lv 2.45 p.m.).
+# DUPLICATE: the same Nos. 67 and 68 are in UP Table 57 (wa_up_t057) with all the Spokane - Tekoa stations; times agree (T57 gives only Tekoa ar
+# 9.45 a.m. for No. 67 and lv 5.25 p.m. for No. 68). Use one of the two.
+# Signs (key on the page): * daily; f stops on signal. Kind not printed: passenger.
+#train col=No67 num=67 dir=down days="daily" kind=passenger from="Spokane" to="Wallace" note="Spokane - Tekoa - Wallace, Idaho."
+#train col=No68 num=68 dir=up days="daily" kind=passenger from="Wallace" to="Spokane" note="Wallace, Idaho - Tekoa - Spokane."
+mile,station,principal,No67,No68
+0,Spokane,1,lv 8.10a,ar 7.05p
+22,Manito,1,8.51a,f6.16p
+49,Tekoa,1,ar 9.45a / lv 9.50a,ar 5.20p / lv 5.25p

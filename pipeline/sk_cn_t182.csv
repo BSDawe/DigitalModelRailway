@@ -1,0 +1,16 @@
+# Canadian National, Table 182, Sturgis - Preeceville - Kelvington. Official Guide, April 25, 1948
+#   (scan cn1948_sk/tables180_184_winnipeg_dauphin_princealbert_sturgis_churchill_emerson.png, Table 182 at top centre).
+# Times as printed: CENTRAL TIME ("C.T." head). All stations in Saskatchewan. Miles from Sturgis as printed.
+# Key to signs (printed on this page, quoted in full in sk_cn_t180.csv): a Monday, Wednesday and Friday; b Tuesday, Thursday and Saturday; M mixed train.
+# M248's Sturgis arrival is printed "Noon / 12 00".
+# Through workings matched by times: M247 comes from Swan River (Table 182a, Sturgis ar 3.20 p.m.); M248 goes on to Swan River (Table 182a, Sturgis lv b1.35 p.m.);
+#   M243 comes from Canora (Table 192, Canora b10.30 a.m. - Sturgis 11.50 a.m.); M244 goes on to Canora and Yorkton (Table 192, Sturgis a4.40 p.m.).
+#train col=M247 num=247 dir=down days="Mon,Wed,Fri" kind=mixed from="Swan River" note="Sturgis 4.45 p.m. marked a; from Swan River (Table 182a)."
+#train col=M243 num=243 dir=down days="Tue,Thu,Sat" kind=mixed from="Canora" note="Sturgis 1.40 p.m. marked b; from Canora (Table 192, sk_cn_t192b.csv)."
+#train col=M248 num=248 dir=up days="Tue,Thu,Sat" kind=mixed to="Swan River" note="Kelvington 9.00 a.m. marked b; on to Swan River (Table 182a)."
+#train col=M244 num=244 dir=up days="Mon,Wed,Fri" kind=mixed to="Yorkton" note="Kelvington 11.25 a.m. marked a; on to Canora and Yorkton (Table 192, sk_cn_t192b.csv)."
+mile,station,principal,prov,tz,M247,M243,M248,M244
+0.0,Sturgis,1,SK,C,lv 4.45p,lv 1.40p,ar 12.00p,ar 3.10p
+6.3,Preeceville,0,SK,C,5.10p,2.15p,11.35a,2.40p
+34.0,Lintlaw,0,SK,C,6.50p,4.20p,9.50a,12.30p
+47.7,Kelvington,1,SK,C,ar 7.35p,ar 5.30p,lv 9.00a,lv 11.25a

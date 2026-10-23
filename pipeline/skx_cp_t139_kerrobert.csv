@@ -1,0 +1,13 @@
+# DERIVED (Claude, 16 Oct 2026): CP Table 139, the Saskatchewan end of the Kerrobert - Coronation mixed trains M617 / M618, from the times quoted
+# in the head of ab_cp_t139a.csv (Kerrobert lv 9.15a / ar 4.45p; Court, the last Saskatchewan station, 12.00 noon / 1.35p) and its first Alberta
+# station Compeer (12.25p / 1.15p). The Saskatchewan stations between Kerrobert and Court read by Brendan (17 Oct 2026). Mountain time.
+#train col=M617 num=617 dir=down days="Mon,Wed,Fri" kind=mixed note="Kerrobert, Sask. to Coronation."
+#train col=M618 num=618 dir=up days="Tue,Thu,Sat" kind=mixed note="Coronation to Kerrobert, Sask."
+mile,station,principal,prov,tz,M617,M618
+0.0,Kerrobert,1,SK,M,lv 9.15a,ar 4.45p
+8.6,Onward,0,SK,M,9.50a,4.05p
+15.1,Superb,0,SK,M,10.30a,3.25p
+22.6,Major,0,SK,M,11.05a,2.50p
+30.5,Fusilier,0,SK,M,11.35a,2.10p
+37.3,Court,0,SK,M,12.00p,1.35p
+43.3,Compeer,0,AB,M,12.25p,1.15p

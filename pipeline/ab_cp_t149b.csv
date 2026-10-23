@@ -1,0 +1,39 @@
+# Canadian Pacific Railway, Table 149, Calgary - Macleod - Lethbridge: the second route printed in the table, Calgary - Aldersyde - Vulcan -
+# Kipp - Lethbridge, trains 538 and 537. From the Canadian Pacific public timetable, 1948. Times as printed: MOUNTAIN TIME. All in Alberta.
+# This route leaves the High River - Macleod route (file ab_cp_t149.csv) at ALDERSYDE (mile 33.2) and meets it again at KIPP (mile 118.6 by
+# this route, 132.3 by Macleod); Kipp, Coalhurst and Lethbridge are common to both. Calgary to Aldersyde the four trains share the same rows.
+# The table prints the Mazeppa - Coalhurst rows as its own section, between the Calgary - Aldersyde rows and the Aldersyde - Macleod rows.
+# Signs: f = stops on signal. A double bar after Lethbridge = meal station. Star (in the equipment list) = regularly assigned cars air-conditioned.
+# Figures after a station name are connecting tables: Calgary 6; Aldersyde 137; Blackie 137; Coalhurst 145; Lethbridge 120, 150, 151.
+# Both trains "Daily" in the column headings. 538: A.M. at the head, P.M. at the foot, light type to Champion 11.59, heavy from
+# Carmangay 12.16. 537 all p.m. (P.M. at head and foot, heavy type).
+# Miles as printed, from Calgary (Lethbridge 126.5 is by this route).
+# 537 has no time at Kipp (".." printed); 538 stops there on signal. 537 stops on signal at Dewinton (f10.18), where the other three trains
+# have plain times.
+# Equipment as printed, trains 537-538: coaches and buffet parlor car Calgary - Lethbridge.
+# Nothing in doubt: every figure was read twice from separate enlargements and against the smaller capture, and agreed.
+#train col=No538 num=538 dir=down days="daily" kind=passenger note="Calgary to Lethbridge by Aldersyde, Vulcan and Kipp. Coaches and buffet parlor car."
+#train col=No537 num=537 dir=up days="daily" kind=passenger note="Lethbridge to Calgary by Kipp, Vulcan and Aldersyde. Coaches and buffet parlor car."
+mile,station,principal,No538,No537
+0.0,Calgary,1,lv 9.15a,ar 10.55p
+6.0,Turner,0,f9.29a,f10.40p
+10.1,Midnapore,0,9.36a,10.34p
+18.5,Dewinton,0,9.52a,f10.18p
+23.5,Sandstone,0,f9.59a,f10.08p
+27.6,Okotoks,0,10.07a,10.00p
+33.2,Aldersyde,1,10.20a,9.48p
+40.4,Mazeppa,0,10.35a,f9.35p
+46.2,Blackie,1,10.48a,9.26p
+55.1,Brant,0,11.06a,9.07p
+59.6,Ensign,0,11.13a,8.58p
+69.2,Vulcan,0,11.25a,8.40p
+74.4,Kirkcaldy,0,11.40a,8.25p
+82.1,Champion,0,11.59a,8.10p
+90.6,Carmangay,0,12.16p,7.53p
+94.5,Peacock,0,f12.24p,f7.43p
+100.0,Barons,0,12.35p,7.36p
+108.2,Nobleford,0,12.50p,7.20p
+113.9,Whitney,0,f1.00p,f7.10p
+118.6,Kipp,1,f1.07p,
+120.2,Coalhurst,1,1.15p,7.00p
+126.5,Lethbridge,1,ar 1.30p,lv 6.45p

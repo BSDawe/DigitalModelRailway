@@ -1,0 +1,23 @@
+# Canadian Pacific, Table 130, Wilkie - North Battleford - Ravenhead: Wilkie - Battleford - North Battleford. Miles from Wilkie as printed.
+# From the Canadian Pacific public timetable of about 1948 (scan cp1948_sk/tables129_130_wilkie_lloydminster_northbattleford.png, printed sideways).
+# Times as printed: MOUNTAIN TIME ("Mountain Time" heads the station column). All stations in Saskatchewan.
+# Signs: f = stops on signal; M = mixed train; cross sign after No. Battleford = C.P. Air Lines connection (as explained on the Tables 117-119 page).
+# The signs a large black dot (M462 at No. Battleford 3.00 and Ravenhead 6.30) and a black triangle (M466 at Wilkie 3.00 and No. Battleford 10.30;
+# M463 at Ravenhead 5.30 and No. Battleford 8.55) are explained by Brendan (10 Oct): black dot = operates the second Friday of each month (shown as operating); black triangle = operates the
+# Saturday following the second Friday. The week shown is the one with the second Friday: M464 (will not operate the second Friday) runs Mon,Wed.
+# Station name "No. Battleford" kept as printed (North Battleford). References: Wilkie 92, 129; Cutknife 129; No. Battleford 131.
+# Column heads: "M461 M462 Mon. We.Fri" (M461 above, M462 in the Ravenhead block); "M464 M463 Mon. We.Fri" (M464 above; in the Ravenhead block
+# an arrow pointing up and "Will not operate second Friday of each month"); "M466 M465" with no days (M466 above; the Ravenhead block headed "M463").
+# Battleford is printed twice (Ar / Lv, both 62.6): one row with ar / lv.
+#train col=M461 num=461 dir=down days="Mon,Wed,Fri" kind=mixed
+#train col=M464 num=464 dir=up days="Mon,Wed" kind=mixed note="Will not operate the second Friday of each month (note printed in its column, under an arrow pointing up)."
+#train col=M466 num=466 dir=up days="Sat" kind=mixed note="Black triangle: operates the Saturday following the second Friday of each month (Brendan)."
+mile,station,principal,prov,tz,M461,M464,M466
+0.0,Wilkie,1,SK,M,lv 9.20a,ar 7.40p,ar 3.00p
+8.7,Thackeray,0,SK,M,f9.45a,f7.20p,f2.35p
+14.7,Cloan,0,SK,M,f10.00a,f7.05p,f2.20p
+20.5,Rockhaven,0,SK,M,f10.15a,6.50p,2.05p
+28.7,Cutknife,1,SK,M,10.35a,6.30p,1.40p
+33.6,Rosemound,0,SK,M,10.55a,6.10p,1.20p
+62.6,Battleford,1,SK,M,ar 12.45p / lv 12.50p,ar 4.15p / lv 4.20p,ar 11.25a / lv 11.30a
+76.5,No. Battleford,1,SK,M,ar 1.45p,lv 3.20p,lv 10.30a

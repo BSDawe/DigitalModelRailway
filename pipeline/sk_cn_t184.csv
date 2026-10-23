@@ -1,0 +1,20 @@
+# Canadian National, Table 184, Winnipeg - Morris - Somerset and Morris - Emerson - Sprague. Official Guide, April 25, 1948 (scan cn1948_mb/t184.png).
+# Transcribed 18 October 2026. CENTRAL TIME. Miles from Winnipeg as printed. All Manitoba. Morris printed in both sections (arr. / lve.); Emerson printed
+#   twice (arr. / lve., 66.1): one row each. Emerson (66.1) is the town east of the Red River; Emerson Junction (64.8) the junction west of it.
+# Section 1 Winnipeg - Morris - Somerset (M192 / M191); section 2 Morris - Emerson - Sprague (M208 / M207 run Winnipeg - Sprague): two files, sk_cn_t184 (Somerset)
+#   and sk_cn_t184s (Sprague). Also printed in this table: G.N. Ry. trains 7 / 8 and N.P. Ry. trains 13 / 14 (sk_gn_t007.csv, sk_np_t014.csv; same times).
+# Signs (key on the Tables 182-183 page): a = Mon. Wed. Fri.; b = Tue. Thu. Sat.; y = Tuesday and Friday; # = Monday and Thursday; f = flag stop; M = mixed.
+# DOUBT: M192's day sign at Winnipeg (11.05 a.m.) is small: read as # (Monday and Thursday; M191 returns Tuesday and Friday); it could be a double dagger
+#   (daily except Saturday).
+#train col=M192 num=192 dir=down days="Mon,Thu" kind=mixed note="Monday and Thursday (day sign read as #, uncertain). Winnipeg 11.05 a.m. to Somerset 5.30 p.m."
+#train col=M191 num=191 dir=up days="Tue,Fri" kind=mixed note="Tuesday and Friday. Somerset 8.00 a.m. to Winnipeg 2.30 p.m."
+mile,station,principal,prov,tz,M192,M191
+0.0,Winnipeg,1,MB,C,lv 11.05a,ar 2.30p
+2.7,Portage Junction,0,MB,C,11.25a,2.05p
+23.1,Ste. Agathe,0,MB,C,12.20p,1.10p
+40.0,Morris,1,MB,C,1.05p,12.15p
+65.8,Roland,0,MB,C,2.50p,10.20a
+73.7,Rosebank,0,MB,C,3.18p,9.50a
+79.6,Miami,0,MB,C,3.50p,9.30a
+94.3,Altamont,0,MB,C,4.55p,8.25a
+102.0,Somerset,1,MB,C,ar 5.30p,lv 8.00a

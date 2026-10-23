@@ -1,0 +1,14 @@
+# DERIVED (Claude, 16 Oct 2026): CP Nos. 3, 4, 7, 8, 13 and 14, Walsh - Medicine Hat, to join the Saskatchewan part of Table 6 (sk_cp_t006.csv,
+# which stops at Walsh, the first Alberta station) to the trains already on the map from Medicine Hat west (the CP main line, where Nos. 3, 4, 7, 8,
+# 13 and 14 begin and end). These trains have no time at Walsh in Table 6. Medicine Hat times (Mountain time) are those of the main-line trips there:
+# No. 3 ar 3.20a, No. 4 lv 1.15a, No. 7 ar 4.00a, No. 8 lv 12.35a, No. 13 ar 2.10a (as Table 6 prints it), No. 14 lv 11.40p.
+# Miles: Table 6's Walsh 2032.1 plus the main line's Walsh - Medicine Hat 32.2.
+#train col=No3 num=3 dir=down days="daily" kind=passenger note="The Dominion."
+#train col=No4 num=4 dir=up days="daily" kind=passenger note="The Dominion."
+#train col=No7 num=7 dir=down days="daily" kind=passenger note="The Dominion."
+#train col=No8 num=8 dir=up days="daily" kind=passenger note="The Dominion."
+#train col=No13 num=13 dir=down days="daily" kind=passenger note="The Mountaineer."
+#train col=No14 num=14 dir=up days="daily" kind=passenger note="The Mountaineer."
+mile,station,principal,prov,tz,No3,No4,No7,No8,No13,No14
+2032.1,Walsh,0,AB,M,,,,,,
+2064.3,Medicine Hat,1,AB,M,ar 3.20a,lv 1.15a,ar 4.00a,lv 12.35a,ar 2.10a,lv 11.40p

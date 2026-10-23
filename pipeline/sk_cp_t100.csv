@@ -1,0 +1,25 @@
+# Canadian Pacific, Table 100, Winnipeg - Stonewall - Teulon - Arborg.
+# From the Canadian Pacific public timetable of 1948 (scan cp1948_mb/t100_102.png, printed sideways; page "TABLES 99 to 106"). Transcribed 18 October 2026.
+# CENTRAL TIME. Miles as printed. All Manitoba. Signs: f = stops on signal; d = stops to detrain (entered as a plain time); || = meal station; M = mixed train.
+# Orpa, Lait and McKinnell: every train prints f with no time (stops on signal): not entered as stop times.
+#train col=No107 num=107 dir=down days="Mon,Wed,Fri" kind=passenger note="Winnipeg 5.05 p.m. to Arborg 7.45 p.m."
+#train col=M211 num=211 dir=down days="Tue,Thu,Sat" kind=mixed note="Winnipeg 3.30 p.m. to Arborg 8.20 p.m."
+#train col=No108 num=108 dir=up days="Mon,Wed,Fri" kind=passenger note="Arborg 7.00 a.m. to Winnipeg 9.35 a.m."
+#train col=M212 num=212 dir=up days="Tue,Thu,Sat" kind=mixed note="Arborg 6.30 a.m. to Winnipeg 12.05 p.m."
+mile,station,principal,prov,tz,No107,M211,No108,M212
+0.0,Winnipeg,1,MB,C,lv 5.05p,lv 3.30p,ar 9.35a,ar 12.05p
+8.3,Orpa,0,MB,C,,,,
+13.5,Stony Mountain,0,MB,C,5.32p,4.15p,9.05a,11.15a
+20.1,Stonewall,1,MB,C,5.46p,4.50p,8.53a,10.25a
+24.6,Lait,0,MB,C,,,,
+29.7,Balmoral,0,MB,C,6.06p,5.45p,8.31a,9.15a
+34.9,Gunton,0,MB,C,6.16p,6.00p,8.21a,9.00a
+39.6,Teulon,1,MB,C,6.26p,6.20p,8.12a,8.45a
+43.9,McKinnell,0,MB,C,,,,
+47.8,Komarno,0,MB,C,6.42p,6.45p,7.57a,8.10a
+53.1,Malonton,0,MB,C,6.52p,7.00p,7.47a,7.55a
+57.7,Fraserwood,0,MB,C,7.01p,7.20p,7.38a,7.40a
+63.8,Meleb,0,MB,C,7.14p,7.38p,7.25a,7.15a
+68.7,Rembrandt,0,MB,C,7.24p,7.51p,7.15a,7.00a
+72.0,Silver,0,MB,C,7.33p,8.03p,7.08a,6.45a
+76.2,Arborg,1,MB,C,ar 7.45p,ar 8.20p,lv 7.00a,lv 6.30a

@@ -1,0 +1,28 @@
+# Canadian National Steamships, Pacific Coast Services, Alaska Service 1948, Table 315: "Special 10-day cruises on the new T.S.S. Prince
+# George (radar equipped)" (scan scans/cn_steamships/cn_t315_prince_george_alaska_1948.png). Schedules in Pacific Standard Time; "Alaska
+# time north of Ketchikan is one hour slower". *Haines: stop only to embark and disembark passengers. Convenient connection at Skagway with
+# the White Pass & Yukon trains (Skagway - West Taku Arm tour, Bennett and White Horse side trip). Gardiner Canal and Douglas Channel and
+# Taku Glacier are cruising points, not ports. One row per port; one column per cruise (the date of leaving Vancouver). Dates as printed.
+# Brendan: the ship entered service in June 1948 (12 June); the first cruise in this table leaves Vancouver Sat 19 June.
+# Week shown (about 5-11 July): the 30 June cruise is southbound (Skagway Mon 5 7.00 p.m. -> Vancouver Sat 10 9.30 a.m.) and the next
+# cruise leaves Vancouver Sat 10 July 9.00 p.m. (Ocean Falls Sun 11).
+dir,arrlv,port,time,Jun19,Jun30,Jul10,Jul21,Jul31,Aug11,Aug21,Sep1
+N,lv,Vancouver,9.00p,Jun 19,Jun 30,Jul 10,Jul 21,Jul 31,Aug 11,Aug 21,Sep 1
+N,lv,Ocean Falls,pm,Jun 20,Jul 1,Jul 11,Jul 22,Aug 1,Aug 12,Aug 22,Sep 2
+N,ar,Prince Rupert,9.00a,Jun 21,Jul 2,Jul 12,Jul 23,Aug 2,Aug 13,Aug 23,Sep 3
+N,lv,Prince Rupert,1.00p,Jun 21,Jul 2,Jul 12,Jul 23,Aug 2,Aug 13,Aug 23,Sep 3
+N,lv,Ketchikan,pm,Jun 21,Jul 2,Jul 12,Jul 23,Aug 2,Aug 13,Aug 23,Sep 3
+N,lv,Taku Glacier,pm,Jun 22,Jul 3,Jul 13,Jul 24,Aug 3,Aug 14,Aug 24,Sep 4
+N,lv,Juneau,pm,Jun 22,Jul 3,Jul 13,Jul 24,Aug 3,Aug 14,Aug 24,Sep 4
+N,lv,Haines,am,Jun 23,Jul 4,Jul 14,Jul 25,Aug 4,Aug 15,Aug 25,Sep 5
+N,ar,Skagway,9.00a,Jun 23,Jul 4,Jul 14,Jul 25,Aug 4,Aug 15,Aug 25,Sep 5
+S,lv,Skagway,7.00p,Jun 24,Jul 5,Jul 15,Jul 26,Aug 5,Aug 16,Aug 26,Sep 6
+S,lv,Haines,pm,Jun 24,Jul 5,Jul 15,Jul 26,Aug 5,Aug 16,Aug 26,Sep 6
+S,lv,Juneau,am,Jun 25,Jul 6,Jul 16,Jul 27,Aug 6,Aug 17,Aug 27,Sep 7
+S,lv,Wrangell,pm,Jun 25,Jul 6,Jul 16,Jul 27,Aug 6,Aug 17,Aug 27,Sep 7
+S,lv,Ketchikan,12.00p,Jun 26,Jul 7,Jul 17,Jul 28,Aug 7,Aug 18,Aug 28,Sep 8
+S,ar,Prince Rupert,7.00p,Jun 26,Jul 7,Jul 17,Jul 28,Aug 7,Aug 18,Aug 28,Sep 8
+S,lv,Prince Rupert,11.15p,Jun 26,Jul 7,Jul 17,Jul 28,Aug 7,Aug 18,Aug 28,Sep 8
+S,lv,Gardiner Canal and Douglas Channel,am,Jun 27,Jul 8,Jul 18,Jul 29,Aug 8,Aug 19,Aug 29,Sep 9
+S,lv,Ocean Falls,am,Jun 28,Jul 9,Jul 19,Jul 30,Aug 9,Aug 20,Aug 30,Sep 10
+S,ar,Vancouver,9.30a,Jun 29,Jul 10,Jul 20,Jul 31,Aug 10,Aug 21,Aug 31,Sep 11

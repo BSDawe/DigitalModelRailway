@@ -1,0 +1,22 @@
+# Joined through train (cp449), sk_join.py: skcp092a:M449, skcp113:M449; up skcp113:M450, skcp092a:M450
+# Rows and times as in the section files (see them for the scans, signs and doubts). Miles: counted along the run from the first station.
+#train col=D num=449 dir=down days="Fri" kind=mixed note="Through train: No. 449 Saskatoon - Perdue; No. 449 Perdue - Gunnworth. Saskatoon to Perdue here; continues Perdue 9.15a - Gunnworth 3.15p (Table 113, sk_cp_t113.csv)."
+#train col=U num=450 dir=up days="Sat" kind=mixed note="Through train: No. 450 Gunnworth - Perdue; No. 450 Perdue - Saskatoon. Arrives Saskatoon 5.50p (row printed without mile), from Perdue over the Table 92 line."
+mile,station,principal,prov,tz,D,U
+0.0,Saskatoon,1,SK,M,lv 7.20a,ar 5.50p
+7.4,Cory,0,SK,M,f7.40a,f5.35p
+15.9,Dunfermline,0,SK,M,f7.55a,f5.15p
+24.5,Asquith,1,SK,M,8.20a,4.35p
+30.9,Rhyl,0,SK,M,f8.32a,f4.18p
+34.3,Kinley,0,SK,M,f8.41a,f4.10p
+39.3,Perdue,1,SK,M,ar 8.55a / lv 9.15a,ar 3.30p / lv 4.00p
+45.8,Catherwood,0,SK,M,9.35a,3.00p
+52.3,Feudal,0,SK,M,10.05a,2.30p
+58.6,Bents,0,SK,M,10.35a,2.05p
+64.3,Valley Centre,0,SK,M,11.20a,1.35p
+70.0,Marriott,0,SK,M,11.50a,1.05p
+75.2,Malmgren,0,SK,M,12.15p,12.40p
+85.3,Rosetown,1,SK,M,1.35p,12.00p
+89.1,Glen Payne,0,SK,M,2.00p,11.15a
+94.2,Stockdill,0,SK,M,2.30p,10.55a
+102.2,Gunnworth,1,SK,M,ar 3.15p,lv 10.30a

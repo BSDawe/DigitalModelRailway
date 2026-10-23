@@ -1,0 +1,16 @@
+# Northern Alberta Railways, the Barrhead trains, from the Northern Alberta's own table of April 25, 1948 (Official Guide, May 1948), checked
+# against the reprint as Table 179b in the Canadian National section. Times as printed: MOUNTAIN TIME. Miles from Edmonton.
+# Nos. 25 and 26 (Brendan, 4 October 2026: the headings "7-25" and "8-26" are two trains each): No. 25 takes the Barrhead passengers on from
+# No. 7 (Edmonton - Lac La Biche, in ab_nar_t179c.csv) and No. 26 brings them to No. 8. The columns give Carbondale as the place where the
+# times change from one train to the other (No. 7 arrives 11.58 a.m., No. 25 leaves 12.35 p.m.; No. 26 arrives 11.05 a.m., No. 8 leaves
+# 11.18 a.m.), and No. 7 turns off there for Lac La Biche, so Nos. 25 and 26 are entered Carbondale - Morinville - Busby - Barrhead.
+# The Guide's equipment note names coaches and sleepers for Nos. 1, 2, 5, 6, 7, 8, 23 and 24 and says nothing of Nos. 25 and 26. Some outside
+# sources call them a mixed train; that is not in the Guide, so they are shown as an ordinary passenger train (Brendan, 4 October 2026).
+# Out Monday, Wednesday and Friday (sign 'a' in the reprint), back Tuesday, Thursday and Saturday (sign 'b' in the table's own key).
+#train col=No25 num=25 dir=down days="Mon,Wed,Fri" kind=passenger note="Carbondale to Barrhead by Busby, connecting out of No. 7 from Edmonton."
+#train col=No26 num=26 dir=up days="Tue,Thu,Sat" kind=passenger note="Barrhead to Carbondale by Busby, connecting into No. 8 for Edmonton."
+mile,station,principal,No25,No26
+19.2,Carbondale,1,lv 12.35p,ar 11.05a
+24.9,Morinville,0,12.51p,10.44a
+40.1,Busby,0,1.40p,9.40a
+66.3,Barrhead,1,ar 3.45p,lv 7.40a

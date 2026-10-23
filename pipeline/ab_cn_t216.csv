@@ -1,0 +1,11 @@
+# Canadian National Railways, Table 216, Vegreville - Camrose. Table dated April 25, 1948 (Official Guide, May 1948).
+# Times as printed: MOUNTAIN TIME. Wholly in Alberta.
+# Signs (the page's own key): b = Tuesday, Thursday and Saturday (M338 at Vegreville); a = Monday, Wednesday and Friday (M337 at Camrose);
+# M = mixed train. M338 is a.m. throughout (A M at head and foot of the column); M337 p.m. throughout.
+#train col=M338 num=338 dir=down days="Tue,Thu,Sat" kind=mixed note="Vegreville to Camrose."
+#train col=M337 num=337 dir=up days="Mon,Wed,Fri" kind=mixed note="Camrose to Vegreville."
+mile,station,principal,M338,M337
+0.0,Vegreville,1,lv 6.00a,ar 5.20p
+23.9,Ryley,0,7.30a,3.30p
+36.5,Roundhill,0,8.25a,1.55p
+50.1,Camrose,1,ar 9.20a,lv 1.00p

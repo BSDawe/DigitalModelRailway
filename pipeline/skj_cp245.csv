@@ -1,0 +1,27 @@
+# Joined through train (cp245), sk_join.py: skcp098a:M245, skcp103:M245; up skcp103:M246, skcp098a:M246
+# Rows and times as in the section files (see them for the scans, signs and doubts). Miles: counted along the run from the first station.
+#train col=D num=245 dir=down days="Mon" kind=mixed note="Through train: No. 245 Souris - Reston; No. 245 Reston - Wolseley. Souris 6.50a to Reston 8.40a here; continues Reston 9.05a - Wolseley (Table 103, sk_cp_t103.csv)."
+#train col=U num=246 dir=up days="Tue,Thu,Sat" kind=mixed note="Through train: No. 246 Wolseley - Reston; No. 246 Reston - Souris. Wawota ar and lv both 12.20p as printed."
+mile,station,principal,prov,tz,D,U
+0.0,Souris,1,MB,C,lv 6.50a,ar 5.25p
+5.4,Schwitzer,1,MB,C,ar 7.07a / lv 7.10a,ar 5.05p / lv 5.05p
+14.6,Deleau,0,MB,C,7.35a,4.25p
+22.7,Findlay,0,MB,C,f7.55a,f4.05p
+31.5,Pipestone,0,MB,C,8.20a,3.45p
+37.9,Reston,1,MB,C,ar 8.40a / lv 9.05a,ar 3.10p / lv 3.30p
+46.0,Ewart,0,MB,C,9.28a,2.30p
+54.5,Ebor,0,MB,C,9.52a,2.10p
+65.7,Maryfield,0,SK,C,10.25a,1.40p
+73.0,Fairlight,0,SK,C,10.55a,1.15p
+79.9,Walpole,0,SK,C,11.15a,12.45p
+89.5,Wawota,1,SK,C,ar 11.40a / lv 12.15p,ar 12.20p / lv 12.20p
+97.0,Dumas,0,SK,C,12.40p,11.50a
+106.6,Kennedy,0,SK,C,1.20p,11.25a
+115.8,Bender,0,SK,C,1.45p,10.55a
+122.2,Neelby,0,SK,C,2.02p,10.38a
+129.3,Windthorst,0,SK,C,2.30p,10.20a
+136.0,Peebles,0,SK,C,2.50p,9.55a
+143.5,Baring,0,SK,C,3.15p,9.35a
+148.8,Deveron,0,SK,C,3.35p,9.18a
+154.6,Adair,0,SK,C,4.00p,9.00a
+160.3,Wolseley,1,SK,C,ar 4.35p,lv 8.40a

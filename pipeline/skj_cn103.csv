@@ -1,0 +1,16 @@
+# Joined through train (cn103), sk_join.py: skcn225d:Mot103, skcn225b:Mot103; up skcn225b:Mot106, skcn225d:Mot106
+# Rows and times as in the section files (see them for the scans, signs and doubts). Miles: counted along the run from the first station.
+#train col=D num=103 dir=down days="Sat" kind=motor note="Through train: No. 103 No. Battleford - Medstead; No. 103 Medstead - Turtleford. Motor 103; N. Battleford 9.20 a.m. marked with a black dot (unexplained) - days PLACEHOLDER. Continues Medstead - Turtleford (sk_cn_t225b.csv) and as No. 113 to St. Walburg."
+#train col=U num=106 dir=up days="Sat" kind=motor note="Through train: No. 106 Turtleford - Medstead; No. 106 Medstead - No. Battleford. Motor; Turtleford d1.53 p.m. (d unexplained); from St. Walburg as No. 100 (summer Saturdays and holidays, see comments); continues Medstead - Speers - N. Battleford (sk_cn_t225d.csv). Days PLACEHOLDER."
+mile,station,principal,prov,tz,D,U
+0.0,No. Battleford,1,SK,M,lv 9.20a,ar 7.15p
+14.4,Denholm,0,SK,M,9.55a,6.49p
+35.5,Speers,1,SK,M,10.50a,6.10p
+58.2,Mayfair,0,SK,M,12.00p,5.07p
+72.4,Rabbit Lake,0,SK,M,12.40p,4.33p
+86.5,Glenbush,0,SK,M,1.15p,3.59p
+91.2,Medstead,1,SK,M,ar 1.25p / lv 1.35p,3.47p
+97.0,Robinhood,0,SK,M,1.50p,3.33p
+114.7,Fairholme,0,SK,M,2.33p,2.51p
+132.1,Hartwell,0,SK,M,3.13p,2.08p
+138.1,Turtleford,1,SK,M,ar 3.27p,lv 1.53p

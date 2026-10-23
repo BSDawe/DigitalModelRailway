@@ -1,0 +1,47 @@
+# Joined through train (cp123), sk_join.py: skcp099a:No123, skcp106d:No123; up skcp106d:No124, skcp099a:No124
+# Rows and times as in the section files (see them for the scans, signs and doubts). Miles: counted along the run from the first station.
+#train col=D num=123 dir=down days="Mon,Wed,Fri" kind=passenger note="Through train: No. 123 Winnipeg - Deloraine; No. 123 Deloraine - Lyleton. Winnipeg 10.15 a.m. to Deloraine 6.30 p.m.; continues Deloraine 6.40 p.m. - Lyleton 8.20 p.m. (sk_cp_t106d.csv)."
+#train col=U num=124 dir=up days="Tue,Thu,Sat" kind=passenger note="Through train: No. 124 Lyleton - Deloraine; No. 124 Deloraine - Winnipeg. "
+mile,station,principal,prov,tz,D,U
+0.0,Winnipeg,1,MB,C,lv 10.15a,ar 1.30p
+4.9,Portage Ave,0,MB,C,10.29a,1.14p
+9.3,Fort Whyte,0,MB,C,10.37a,1.04p
+18.3,La Salle,0,MB,C,10.54a,12.48p
+24.4,Domain,0,MB,C,11.05a,12.37p
+29.7,Osborne,0,MB,C,11.14a,12.28p
+35.5,McTavish,0,MB,C,11.23a,12.18p
+39.3,Trump,0,MB,C,f11.29a,f12.12p
+42.6,Morris,1,MB,C,11.38a,12.05p
+49.9,Sewell,0,MB,C,11.50a,11.50a
+56.1,Rosenfeld,1,MB,C,12.05p,11.37a
+61.4,Horndean,0,MB,C,12.18p,11.26a
+65.7,Plum Coulee,0,MB,C,12.28p,11.18a
+73.8,Winkler,0,MB,C,12.45p,11.05a
+81.2,Morden,1,MB,C,1.05p,10.50a
+87.8,Thornhill,0,MB,C,1.25p,10.36a
+94.5,Darlingford,0,MB,C,1.45p,10.25a
+102.3,Manitou,0,MB,C,2.08p,10.13a
+105.4,Binney,0,MB,C,f2.16p,f10.05a
+112.9,La Riviere,1,MB,C,ar 2.35p / lv 2.55p,ar 9.30a / lv 9.50a
+120.4,Wood Bay,0,MB,C,3.12p,9.10a
+125.3,Pilot Mound,0,MB,C,3.25p,8.59a
+129.9,Crystal City,0,MB,C,3.35p,8.47a
+134.1,Clearwater,0,MB,C,3.45p,8.38a
+141.6,Mather,0,MB,C,4.02p,8.23a
+148.4,Cartwright,0,MB,C,4.18p,8.11a
+155.7,Holmfield,0,MB,C,4.35p,7.55a
+164.3,Killarney,1,MB,C,4.53p,7.39a
+170.6,Rhodes,0,MB,C,f5.15p,f7.26a
+175.1,Ninga,0,MB,C,5.25p,7.17a
+182.7,Boissevain,1,MB,C,5.40p,7.00a
+188.0,Cadzow,0,MB,C,f6.00p,f6.50a
+193.2,Whitewater,0,MB,C,6.12p,6.42a
+198.2,Naples,0,MB,C,f6.22p,f6.34a
+202.8,Deloraine,1,MB,C,ar 6.30p / lv 6.40p,ar 6.20a / lv 6.25a
+211.2,Goodlands,0,MB,C,7.00p,6.05a
+215.2,Cranmer,0,MB,C,f7.10p,f5.52a
+220.0,Waskada,0,MB,C,7.25p,5.43a
+224.7,Dalny,0,MB,C,f7.40p,f5.33a
+230.8,Coulter,0,MB,C,7.55p,5.20a
+235.2,Cameron,0,MB,C,f8.05p,f5.10a
+240.0,Lyleton,1,MB,C,ar 8.20p,lv 5.00a

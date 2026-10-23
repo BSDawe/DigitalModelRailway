@@ -1,0 +1,26 @@
+# Canadian National, Table 172, Regina - Saskatoon - Prince Albert. Official Guide, April 25, 1948 (scan cn1948_sk/tables172_173_regina_princealbert_maryfield_radville.png).
+# Times as printed: MOUNTAIN TIME ("Mt. time" in the head). All stations in Saskatchewan. Miles from Regina as printed.
+# The key to signs is not on this scan; the signs used here mean the same in the keys printed on the Table 180-184 and Table 193-201 pages:
+#   "* Daily; + daily, except Sunday; f flag stop" (dagger written + here). Coupon (+) and telegraph signs dropped from names.
+# Column heads: "5-[sign]59" and "[sign]60-6": the sign before 59 and 60 looks like a natural sign; the Table 193-201 key gives "Monday only" and the
+#   Table 180-184 key "Friday only" for it, which cannot apply to trains whose first time carries the dagger (daily except Sunday). Meaning unknown; days entered ex Sun.
+# Columns "5-59" and "60-6" (Brendan, 19 Oct): Nos. 59 and 60 are the Saskatoon - Prince Albert trains; 5 and 6 (Table 171, Winnipeg - Edmonton) are
+#   connections printed in the same column, not the same train. Entered as 59 / 60 (Saskatoon - Prince Albert only, sk_cn_t172s). No A.M./P.M. head over 5-59; times a.m. from 9.30 to
+#   Saskatoon 3.55 p.m. (foot of column "P M").
+# Clark's Crossing, up trains: 60-6 has a small sign before 12.17 that looks like a dagger (daily except Sunday, the train's own days; possibly a worn f);
+#   No. 8 has a sign before 8.38 that looks like a sharp (Table 193-201 key: "# Thursday and Saturday"; Table 180-184 key: "# Monday and Thursday") or a
+#   double dagger ("daily, except Saturday"). Both entered as plain times; in doubt whether they call every day / are flag stops.
+#train col=No5 num=59 dir=down days="Mon,Tue,Wed,Thu,Fri,Sat" kind=passenger note="No. 59, Saskatoon 6.10 p.m. - Prince Albert 9.05 p.m., daily except Sunday; connects at Saskatoon with No. 5 from Regina (9.30 a.m.; Table 171)."
+#train col=No7 num=7 dir=down days="daily" kind=passenger note="Regina 11.55 p.m. marked * (daily). Clark's Crossing flag stop."
+#train col=No60 num=60 dir=up days="Mon,Tue,Wed,Thu,Fri,Sat" kind=passenger note="No. 60, Prince Albert 9.45 a.m. - Saskatoon 12.35 p.m., daily except Sunday; connects at Saskatoon with No. 6 for Regina (1.00 p.m.; Table 171)."
+#train col=No8 num=8 dir=up days="daily" kind=passenger note="Prince Albert 5.55 p.m. marked * (daily). Clark's Crossing 8.38 carries a sharp or double-dagger sign (only some days?)."
+mile,station,principal,prov,tz,No5,No7,No60,No8
+0.0,Regina,1,SK,M,lv 9.30a,lv 11.55p,ar 6.55p,ar 5.10a
+161.9,Saskatoon,1,SK,M,ar 3.55p / lv 6.10p,ar 5.40a / lv 9.05a,ar 12.35p / lv 1.00p,ar 8.55p / lv 11.40p
+170.3,Clark's Crossing,0,SK,M,6.25p,f9.23a,12.17p,8.38p
+175.5,Warman,1,SK,M,6.38p,9.33a,12.09p,8.30p
+179.4,Osler,0,SK,M,6.48p,9.42a,11.58a,8.20p
+190.6,Hague,0,SK,M,7.10p,10.04a,11.36a,8.00p
+201.7,Rosthern,0,SK,M,7.36p,10.30a,11.17a,7.36p
+213.2,Duck Lake,0,SK,M,7.55p,10.55a,10.55a,7.11p
+249.0,Prince Albert,1,SK,M,ar 9.05p,ar 12.15p,lv 9.45a,lv 5.55p

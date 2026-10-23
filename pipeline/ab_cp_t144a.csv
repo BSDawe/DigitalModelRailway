@@ -1,0 +1,47 @@
+# Canadian Pacific Railway, Table 144, Lloydminster - Willingdon - Edmonton: main section, trains 63 and 64. Canadian Pacific public timetable, 1948
+# (page 41). Times as printed: MOUNTAIN TIME.
+# Signs: f = stops on signal. A double bar after Edmonton = meal station. No M before 63 / 64, so they are passenger trains ("Ex. Sun." in the
+# column headings). Figures after a station name are the tables that connect there: Lloydminster 121, 128; So. Edmonton 92, 138, 141.
+# Lloydminster (mile 0.0) sits on the Saskatchewan - Alberta boundary and is the first station of the table: there is no Saskatchewan station in it.
+# Willingdon is printed twice, as the arrive row above the Vegreville - Willingdon section (file ab_cp_t144b.csv) and as the leave row below it,
+# with the same time in both rows for each train (63: 10.14 a.m.; 64: 1.10 p.m.). It is one row here.
+# Lambton Park (mile 169.6) is printed with no time for either train (".."). "So. Edmonton" is written out as South Edmonton.
+# a.m./p.m.: 63 is headed A.M. and footed P.M., light type to Akenside 11.59, heavy from Cloverbar 12.10; 64 is headed P.M. at Lloydminster and
+# footed A.M. at Edmonton, light type from Edmonton 10.45 to Bruderheim 11.57, heavy from Beaverhill 12.03.
+# Nothing in doubt: every figure was read twice from separate enlargements and agreed.
+#train col=No63 num=63 dir=down days="ex Sun" kind=passenger note="Lloydminster to Edmonton by Willingdon and South Edmonton. Mixed 619 from Vegreville (Wed, Sat) reaches Willingdon 9.15 a.m., ahead of it."
+#train col=No64 num=64 dir=up days="ex Sun" kind=passenger note="Edmonton to Lloydminster by South Edmonton and Willingdon. Mixed 620 for Vegreville (Tue, Fri) leaves Willingdon 2.45 p.m., after it."
+mile,station,principal,No63,No64
+0.0,Lloydminster,1,lv 6.45a,ar 5.20p
+5.6,Staplehurst,0,f6.55a,f5.06p
+12.5,Streamstown,0,7.08a,4.51p
+21.1,Marwayne,0,7.24a,4.31p
+27.9,Hazeldine,0,7.39a,4.14p
+31.3,Dewberry,0,7.47a,4.06p
+40.3,Clandonald,1,8.05a,3.46p
+46.5,Rusylvia,0,8.18a,3.34p
+52.5,Derwent,0,8.31a,3.20p
+60.4,Slawa,0,8.47a,3.02p
+65.0,Myrnam,0,8.56a,2.50p
+71.4,Beauvallon,0,9.09a,2.33p
+75.5,Morecambe,0,9.17a,2.22p
+80.8,Musidora,0,9.26a,2.10p
+87.6,Two Hills,0,9.39a,1.55p
+92.8,Kaleland,0,9.49a,1.39p
+98.1,Hairy Hill,0,9.59a,1.27p
+105.4,Willingdon,1,ar 10.14a / lv 10.14a,ar 1.10p / lv 1.10p
+110.3,Whitford,0,10.26a,12.57p
+115.5,Andrew,0,10.36a,12.46p
+121.4,Wostok,0,10.47a,12.35p
+128.3,St. Michael,0,11.00a,12.22p
+134.5,Star,0,11.12a,12.10p
+138.0,Beaverhill,0,f11.19a,f12.03p
+141.1,Bruderheim,0,f11.25a,f11.57a
+143.4,Elk Island,0,f11.30a,f11.52a
+149.8,Josephburg,0,f11.41a,f11.41a
+155.6,Griesbach,0,f11.51a,f11.32a
+160.4,Akenside,0,f11.59a,f11.23a
+165.4,Cloverbar,0,f12.10p,f11.14a
+169.6,Lambton Park,0,,
+174.5,South Edmonton,1,12.40p,10.54a
+176.7,Edmonton,1,ar 12.55p,lv 10.45a

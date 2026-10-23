@@ -1,0 +1,42 @@
+# Canadian Pacific, Table 106: section B, Brandon - Souris - Lauder - Napinka - Melita - Estevan (Nos. 137 and 138; M251 and M254 Souris - Lauder).
+# From the Canadian Pacific public timetable of about 1948 (scan cp1948_sk/table106_winnipeg_souris_lyleton_estevan.png, printed sideways).
+# Times as printed: CENTRAL TIME ("Central Time" heads the station column; "Estevan C.T." at the foot), all rows.
+# Signs (explanation of signs on this page): || = meal station; * = daily; dagger = daily ex. Sun.; f = stop on signal; d = stops to detrain;
+# M = mixed train. Only || and f appear in the time columns of this table. .. = does not run/stop (left empty).
+# Column heads: "7 137 Ex. Sun." (No. 7 Winnipeg - Brandon, No. 137 Brandon - Estevan), "8 138 Ex. Sun." (No. 138 Estevan - Brandon, No. 8 Brandon -
+# Winnipeg), "M251 Mon. Thur.", "M252 Tue. Fri." (two columns, one each way), "M254 Wed. Sat.", "123" and "124" (days printed lower in the column:
+# 123 Mon. Wed. Fri., 124 Tue. Thu. Sat.).
+# The mixed trains run a circuit: M251 Souris - Lauder - Boissevain - Deloraine - Lyleton; M252 Lyleton - Deloraine - Boissevain - Lauder, then
+# Lauder - Alida; M254 Alida - Lauder - Souris. Each section of the table is a separate file (sk_cp_t106b to e; the Winnipeg - Brandon section is not entered), miles as printed.
+# The table's first section, Winnipeg 0.0 - Brandon 133.1 (No. 7 lv 11.10a / ar 2.15p; No. 8 lv 3.05p / ar 5.55p), is The Dominion of Table 5 (Manitoba;
+# left out as Table 5 is) and is not entered. Miles from Brandon as printed. Souris (Ar / Lv) is printed twice, Lauder twice (end of the Brandon block, head of the Napinka block) and Napinka twice:
+# one row each. References: Brandon 5, Souris 98. Provinces: Brandon - Pierson Manitoba ("Pierson, Man"), Gainsborough ("Gainsborough, Sask") - Estevan
+# Saskatchewan. Estevan times are Central ("Estevan C.T."); Table 108 gives Estevan in Mountain Time.
+#train col=No137 num=137 dir=down days="ex Sun" kind=passenger from="Winnipeg" note="Column headed 7 137: No. 7 (The Dominion, Table 5) Winnipeg 11.10a - Brandon 2.15p, then No. 137 from Brandon."
+#train col=M251 num=251 dir=down days="Mon,Thu" kind=mixed to="Lyleton" note="Souris 2.45p to Lauder 3.55p here; continues Lauder 5.15p - Boissevain - Deloraine 8.45p (sk_cp_t106c.csv) and Deloraine 9.00p - Lyleton 11.00p (sk_cp_t106d.csv)."
+#train col=No138 num=138 dir=up days="ex Sun" kind=passenger to="Winnipeg" note="Column headed 8 138: becomes No. 8 (The Dominion, Table 5) at Brandon, lv 3.05p, to Winnipeg 5.55p."
+#train col=M254 num=254 dir=up days="Wed,Sat" kind=mixed from="Alida" note="Comes from Alida 7.30a - Lauder 10.55a (sk_cp_t106e.csv); Lauder 11.15a to Souris 12.15p here."
+mile,station,principal,prov,tz,No137,M251,No138,M254
+0.0,Brandon,1,MB,C,lv 3.10p,,ar 2.30p,
+8.2,Kemnay,0,MB,C,3.28p,,2.16p,
+16.6,Beresford,0,MB,C,3.44p,,1.58p,
+24.6,Souris,1,MB,C,ar 4.00p / lv 4.10p,lv 2.45p,ar 1.05p / lv 1.40p,ar 12.15p
+30.0,Schwitzer,0,MB,C,4.20p,,12.53p,
+34.1,Menteith,0,MB,C,f4.28p,,f12.45p,
+40.7,Hartney,0,MB,C,4.40p,,12.33p,
+44.6,Emblem,0,MB,C,f4.50p,,f12.24p,
+50.0,Lauder,1,MB,C,5.03p,ar 3.55p,12.10p,lv 11.15a
+58.8,Napinka,1,MB,C,5.31p,,11.53a,
+67.1,Melita,1,MB,C,6.10p,,11.35a,
+74.2,Elva,0,MB,C,6.25p,,11.20a,
+81.3,Pierson,0,MB,C,6.40p,,11.07a,
+89.6,Gainsborough,0,SK,C,6.58p,,10.51a,
+98.0,Carievale,0,SK,C,7.16p,,10.35a,
+105.5,Carnduff,0,SK,C,7.34p,,10.21a,
+115.6,Glen Ewen,0,SK,C,7.57p,,10.02a,
+123.1,Oxbow,0,SK,C,8.10p,,9.47a,
+130.1,Alameda,0,SK,C,8.38p,,9.32a,
+137.9,Frobisher,0,SK,C,8.57p,,9.16a,
+145.8,Hirsch,0,SK,C,9.16p,,9.01a,
+156.0,Bienfait,0,SK,C,9.36p,,8.42a,
+164.5,Estevan,1,SK,C,ar 10.00p,,lv 8.25a,

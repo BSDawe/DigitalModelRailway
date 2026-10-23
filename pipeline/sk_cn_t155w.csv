@@ -1,0 +1,11 @@
+# Canadian National, Table 155: the Winnipeg - Sprague mixed trains M202 and M201 (Manitoba). See sk_cn_t155.csv for the table. Official Guide, April 25, 1948
+# (scan cn1948_mb/t155.png). CENTRAL TIME. Miles from Port Arthur as printed. Signs: section = Sunday only; x = Monday only.
+#train col=M202 num=202 dir=up days="Sun" kind=mixed note="Sunday only. Winnipeg 1.00 p.m. to Sprague 6.00 p.m."
+#train col=M201 num=201 dir=down days="Mon" kind=mixed note="Monday only. Sprague 6.35 a.m. to Winnipeg 9.45 a.m."
+mile,station,principal,prov,tz,M202,M201
+342.9,Sprague,1,MB,C,ar 6.00p,lv 6.35a
+391.1,Marchand,0,MB,C,3.30p,8.10a
+403.5,Giroux,0,MB,C,2.55p,8.33a
+411.4,Ste. Anne,0,MB,C,2.35p,8.46a
+437.0,St. Boniface,0,MB,C,1.15p,9.38a
+438.6,Winnipeg,1,MB,C,lv 1.00p,ar 9.45a

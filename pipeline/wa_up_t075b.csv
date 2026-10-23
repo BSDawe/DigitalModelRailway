@@ -1,0 +1,12 @@
+# Union Pacific Railroad, Table 75, Portland, Seattle, Tacoma and Olympia, table of April 4, 1948 (Official Guide). Times as printed: PACIFIC TIME.
+# Section 2: Seattle - Tacoma - East Olympia (73 miles as printed), pool trains Nos. 408, 458 (down) and 457 (up). Same times as NP Table 4.
+# Seattle station not named (Table 4: No. 408 King St., Nos. 457/458 Union Sta.).
+# NOT ENTERED: East Olympia - Olympia rows (black square = bus, see wa_up_t075a).
+# Signs: * daily.
+#train col=No408 num=408 dir=down days="daily" kind=passenger from="Seattle" to="Portland" note="Pool train."
+#train col=No458 num=458 dir=down days="daily" kind=passenger from="Seattle" to="Portland" note="Pool train."
+#train col=No457 num=457 dir=up days="daily" kind=passenger from="Portland" to="Seattle" note="Pool train."
+mile,station,principal,No408,No458,No457
+0,Seattle,1,lv 12.25p,lv 4.00p,ar 2.00p
+38,Tacoma,1,1.19p,5.10p,12.35p
+73,East Olympia,1,ar 2.03p,ar 5.59p,lv 11.40a

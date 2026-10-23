@@ -1,0 +1,16 @@
+# Washington, Idaho & Montana Ry. Co. (C. L. Billings, President, Lewiston, Idaho), table of March, 1948 (Official Guide). Times as printed:
+# STANDARD - PACIFIC TIME. Palouse (1) - Potlatch (12) - Bovill (48) - Purdue (50).
+# ONLY ONE WASHINGTON CALL: the trains start/end at Palouse, Wash. (mile 1), connection there with the N.P. and Great Northern ("1 With N.P. Ry.
+# and Great Northern Ry."; Bovill "2 With C.M.St.P.&Pac. R.R."). IDAHO: the first Idaho station beyond Palouse is Wellesley, mile 5 (taken to be
+# in Idaho - check). Lairds (mile 0, no times) is entered empty; whether it is in Washington is not certain. Each train therefore has ONE call in
+# this file (the checker reports "1 calls"): the file records only where and when the Idaho trains reach Washington. Drop it if not wanted.
+# Signs (key on the page): dagger daily except Sunday; f stops on signal. No. 2 at Palouse prints "f11.05" with a dagger (flag stop, ex Sun).
+# Far ends: No. 4 Palouse - Potlatch (ar 4.35 p.m.); No. 2 Palouse - Bovill (ar 1.13 p.m.); No. 1 Potlatch (lv 8.20 a.m.) - Palouse; No. 3 Bovill
+# (lv 1.45 p.m.) - Palouse. Kind not printed: passenger.
+#train col=No4 num=4 dir=down days="ex Sun" kind=passenger from="Palouse" to="Potlatch" note="Palouse - Potlatch, Idaho; connects with NP and GN at Palouse."
+#train col=No2 num=2 dir=down days="ex Sun" kind=passenger from="Palouse" to="Bovill" note="Palouse - Potlatch - Bovill, Idaho; connects with NP and GN at Palouse, Milwaukee at Bovill."
+#train col=No1 num=1 dir=up days="ex Sun" kind=passenger from="Potlatch" to="Palouse" note="Potlatch, Idaho - Palouse."
+#train col=No3 num=3 dir=up days="ex Sun" kind=passenger from="Bovill" to="Palouse" note="Bovill, Idaho - Potlatch - Palouse."
+mile,station,principal,No4,No2,No1,No3
+0,Lairds,1,,,,
+1,Palouse,1,lv 4.10p,f11.05a,ar 8.45a,ar 3.52p

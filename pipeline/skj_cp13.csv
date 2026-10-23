@@ -1,0 +1,61 @@
+# Joined through train (cp13), sk_join.py: skcnw017:No403, skcp108s:M13, skcp108:No13M, skcp005:No13; up skcp005:No14, skcp108:No14M, skcp108s:M14, skcnw017:No404
+# Rows and times as in the section files (see them for the scans, signs and doubts). Miles: counted along the run from the first station.
+#train col=D num=13 dir=down days="daily" kind=passenger note="The Mountaineer (CP No. 13), June 29 to September 3 from Chicago. Chicago - Minneapolis as C&NW No. 403 (over the Milwaukee Road St. Paul - Minneapolis); Minneapolis - Portal over the Soo Line (times of Soo No. 3, September 1947 table: the summer Soo table is not in hand); CP No. 13 from North Portal (Table 108) by Moose Jaw (Tables 6) on to Vancouver."
+#train col=U num=14 dir=up days="daily" kind=passenger note="The Mountaineer (CP No. 14), July 5 to September 4 into Chicago. CP No. 14 by Moose Jaw to North Portal (Table 108); Portal - Minneapolis over the Soo Line (times of Soo No. 4, September 1947 table: they do not meet C&NW 404's 6.25 a.m. Minneapolis departure); Minneapolis - Chicago as C&NW No. 404."
+mile,station,principal,prov,tz,D,U
+0.0,Chicago,1,IL,C,lv 12.30p,ar 3.05p
+12.0,Evanston,0,IL,C,12.46p,2.45p
+61.9,Racine,0,WI,C,1.33p,1.48p
+85.0,Milwaukee,1,WI,C,ar 1.55p / lv 2.00p,ar 1.15p / lv 1.20p
+209.5,Adams,0,WI,C,4.30p,10.55a
+323.1,Eau Claire,1,WI,C,6.51p,8.42a
+408.6,St. Paul,1,MN,C,8.45p,7.05a
+419.2,Minneapolis,1,MN,C,ar 9.15p / lv 10.25p,ar 6.30a / lv 6.25a
+457.2,Buffalo,0,MN,C,11.33p,
+476.3,South Haven,0,MN,C,12.05a,
+540.9,Glenwood,1,MN,C,ar 1.30a / lv 1.45a,ar 3.15a / lv 3.30a
+580.1,Elbow Lake,0,MN,C,2.45a,2.10a
+611.2,Fairmount,0,ND,C,3.25a,1.25a
+625.4,Hankinson,1,ND,C,4.05a,12.55a
+643.4,Wyndmere,0,ND,C,4.33a,12.19a
+677.1,Enderlin,1,ND,C,ar 5.25a / lv 5.55a,ar 11.05p / lv 11.30p
+707.0,Valley City,0,ND,C,6.50a,10.18p
+750.6,Kensal,0,ND,C,7.50a,
+772.3,Carrington,0,ND,C,8.30a,8.55p
+799.7,Fessenden,0,ND,C,9.08a,8.15p
+816.3,Harvey,1,ND,C,ar 9.30a / lv 9.45a,ar 7.35p / lv 7.50p
+832.7,Anamoose,0,ND,C,10.08a,7.12p
+839.4,Drake,0,ND,C,10.20a,7.00p
+867.6,Velva,0,ND,C,11.05a,6.08p
+888.8,Minot,1,ND,C,11.55a,5.25p
+896.4,Burlington,0,ND,C,12.07p,5.15p
+906.4,Foxholm,0,ND,C,12.22p,5.02p
+914.8,Carpio,0,ND,C,12.36p,4.51p
+924.1,Donnybrook,0,ND,C,12.51p,4.38p
+938.7,Kenmare,0,ND,C,1.15p,4.20p
+950.8,Bowbells,0,ND,C,1.37p,3.58p
+960.3,Flaxton,0,ND,C,1.50p,3.44p
+970.1,Portal,1,ND,C,ar 2.20p,lv 3.20p
+970.6,North Portal,1,SK,M,lv 2.15p,ar 12.40p
+983.5,Roche Percee,0,SK,M,,12.15p
+993.7,Estevan,1,SK,M,3.05p,11.50a
+1001.8,Hitchcock,0,SK,M,,11.31a
+1010.8,Macoun,0,SK,M,,11.17a
+1019.5,Midale,0,SK,M,,11.05a
+1028.7,Halbrite,0,SK,M,,10.51a
+1037.2,Ralph,0,SK,M,,10.39a
+1046.9,Weyburn,1,SK,M,ar 4.15p / lv 4.20p,ar 10.20a / lv 10.20a
+1055.3,McTaggart,0,SK,M,,9.58a
+1063.9,Yellow Grass,0,SK,M,,9.43a
+1076.2,Lang,0,SK,M,,9.23a
+1084.3,Milestone,0,SK,M,,9.10a
+1090.7,Corinne,0,SK,M,,8.58a
+1095.9,Wilcox,0,SK,M,,8.50a
+1106.4,Rouleau,0,SK,M,,8.32a
+1113.1,Pitman,0,SK,M,,8.20a
+1118.9,Drinkwater,0,SK,M,,8.10a
+1125.0,Stelcam,0,SK,M,,8.00a
+1131.2,Pasqua,1,SK,M,6.35p,7.50a
+1138.1,Moose Jaw,1,SK,M,ar 6.55p / lv 7.30p,ar 5.55a / lv 7.35a
+1248.5,Swift Current,1,SK,M,ar 10.00p / lv 10.15p,ar 3.30a / lv 3.45a
+1395.9,Medicine Hat,1,AB,M,ar 2.10a,lv 11.40p

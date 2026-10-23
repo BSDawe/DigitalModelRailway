@@ -1,0 +1,14 @@
+# Canadian Pacific, Table 122, Foam Lake - Wishart. Headed "Until May 15".
+# From the Canadian Pacific public timetable of about 1948 (scan cp1948_sk/tables120_122_moosejaw_shaunavon_lethbridge.png, printed sideways).
+# Times as printed: MOUNTAIN TIME ("Mountain Time" heads the station column).
+# Signs (explanation of signs on this page): M = mixed train; f = flag stop (none used in this table).
+# Miles from Foam Lake as printed. "Foam Lake 92" refers to Table 92. All stations in Saskatchewan.
+# Note printed: "After May 15, trains 443 and 444 will operate on Friday only." Days entered Tue,Fri (until May 15).
+#train col=M443 num=443 dir=down days="Fri" kind=mixed note="Tue. and Fri. until May 15; after May 15 Friday only."
+#train col=M444 num=444 dir=up days="Fri" kind=mixed note="Tue. and Fri. until May 15; after May 15 Friday only."
+mile,station,principal,prov,tz,M443,M444
+0.0,Foam Lake,1,SK,M,lv 10.20a,ar 3.15p
+6.3,Edmore,0,SK,M,10.40a,2.50p
+14.1,West Bend,0,SK,M,11.10a,2.15p
+21.3,Bankend,0,SK,M,11.40a,1.40p
+27.2,Wishart,1,SK,M,ar 12.15p,lv 1.15p

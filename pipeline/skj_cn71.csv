@@ -1,0 +1,29 @@
+# Joined through train (cn71), sk_join.py: skcn193a:Mot71, skcn180:Mot71
+# Rows and times as in the section files (see them for the scans, signs and doubts). Miles: counted along the run from the first station.
+#train col=D num=71 dir=down days="Wed,Fri" kind=motor note="Through train: No. 71 Arborfield - Crooked River; No. 71 Crooked River - North Battleford. Arborfield 4.45 a.m. marked e (Wednesday and Friday); continues from Crooked River 5.35 a.m. in Table 180 (motor column 77-71-75) to Prince Albert and North Battleford."
+mile,station,principal,prov,tz,D
+0.0,Arborfield,1,SK,M,lv 4.45a
+21.2,Crooked River,1,SK,M,5.35a
+34.8,Tisdale,1,SK,M,6.07a
+40.4,Valparaiso,0,SK,M,6.18a
+47.1,Star City,0,SK,M,6.32a
+60.7,Melfort,1,SK,M,7.20a
+69.0,Beatty,0,SK,M,7.37a
+79.4,Kinistino,0,SK,M,7.59a
+85.5,Weldon,0,SK,M,8.12a
+90.4,Brancepeth,0,SK,M,8.23a
+97.6,Birch Hills,0,SK,M,8.38a
+123.1,Prince Albert,1,SK,M,ar 9.35a / lv 12.45p
+151.8,Shellbrook,1,SK,M,1.40p
+159.0,Parkside,0,SK,M,1.55p
+172.8,Leask,0,SK,M,2.30p
+179.8,Marcelin,0,SK,M,2.45p
+187.5,Blaine Lake,1,SK,M,3.05p
+197.0,Krydor,0,SK,M,3.30p
+210.0,Hafford,0,SK,M,4.05p
+218.8,Speers,1,SK,M,4.30p
+225.5,Richard,0,SK,M,4.45p
+232.0,Lilac,0,SK,M,5.00p
+239.9,Denholm,1,SK,M,5.20p
+247.4,Brada,0,SK,M,f5.35p
+254.3,North Battleford,1,SK,M,ar 5.45p

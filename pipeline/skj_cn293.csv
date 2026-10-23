@@ -1,0 +1,12 @@
+# Joined through train (cn293), sk_join.py: skcn199c:M293, skcn199a:M293; up skcn199a:M294, skcn199c:M294
+# Rows and times as in the section files (see them for the scans, signs and doubts). Miles: counted along the run from the first station.
+#train col=D num=293 dir=down days="Thu" kind=mixed note="Through train: No. 293 Whitebear - Eston; No. 293 Eston - Kindersley. Whitebear 8.00 a.m. marked h (Thursday only); on from Eston 12.30 p.m. to Kindersley (sk_cn_t199a.csv)."
+#train col=U num=294 dir=up days="Wed" kind=mixed note="Through train: No. 294 Kindersley - Eston; No. 294 Eston - Whitebear. Kindersley 9.00 a.m. marked t (Wednesday only); Eston ar 11.30 a.m.; on to Whitebear (Eston lv 12.30 p.m.) in sk_cn_t199c.csv."
+mile,station,principal,prov,tz,D,U
+0.0,Whitebear,1,SK,M,lv 8.00a,ar 4.00p
+12.1,Lacadena,0,SK,M,8.50a,3.00p
+34.3,Eston,1,SK,M,ar 11.30a / lv 12.30p,ar 11.30a / lv 12.30p
+40.9,Snipe Lake,0,SK,M,1.00p,10.55a
+47.6,Madison,0,SK,M,1.30p,10.30a
+54.1,Glidden,1,SK,M,2.00p,10.05a
+70.6,Kindersley,1,SK,M,ar 3.20p,lv 9.00a

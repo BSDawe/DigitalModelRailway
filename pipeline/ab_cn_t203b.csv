@@ -1,0 +1,23 @@
+# Canadian National Railways, Table 203, Edmonton - Heinsburg - Beaver River: the branch Abilene - Bonnyville - Beaver River.
+# Official Guide, May 1948; table dated April 25, 1948. Times as printed: MOUNTAIN TIME. Wholly in Alberta.
+# Miles as printed, counted from Edmonton (Abilene 115.3). The table prints only these four stations on the branch. St. Paul is NOT on this
+# branch: the table prints it on the Heinsburg line (mile 127.0, between Abilene and Elk Point), see ab_cn_t203a.csv.
+# Signs (the page's own key): a double dagger = daily, except Saturday (No. 126); a dagger = daily, except Sunday (No. 125);
+# a = Monday, Wednesday and Friday (No. 160); b = Tuesday, Thursday and Saturday (No. 159); + coupon station.
+# No train is marked M (mixed) or as a motor train, so all are entered as passenger.
+# Bonnyville is printed twice (ar./lv. for Nos. 126 and 125, lve./arr. for Nos. 160 and 159); the two lines are one row here.
+# Nos. 125 and 126 are one Bonnyville - Abilene - St. Paul train, turning at Abilene. Their Abilene - Bonnyville calls are here and their
+# Abilene - St. Paul calls are in ab_cn_t203a.csv under the same col names and nums (T125, T126):
+#   No. 125: Bonnyville lv 8.00a, Abilene ar 9.25a (this file); Abilene lv 9.50a, St. Paul ar 10.15a (file a).
+#   No. 126: St. Paul lv 4.15p, Abilene ar 4.40p (file a); Abilene lv 5.35p, Bonnyville ar 7.15p (this file).
+# Nos. 160 and 159 run Bonnyville - Beaver River only; No. 160 leaves Bonnyville 30 minutes after No. 126 arrives, No. 159 reaches Bonnyville
+# 20 minutes before No. 125 leaves.
+#train col=T126 num=126 dir=down days="Mon,Tue,Wed,Thu,Fri,Sun" kind=passenger from="St. Paul" note="Daily except Saturday. From St. Paul 4.15p, at Abilene 4.40p (see ab_cn_t203a.csv); connection at Abilene from Edmonton by No. 96."
+#train col=T125 num=125 dir=up days="ex Sun" kind=passenger to="St. Paul" note="Goes on from Abilene 9.50a to St. Paul 10.15a (see ab_cn_t203a.csv); connects at Abilene with No. 95 for Edmonton."
+#train col=T160 num=160 dir=down days="Mon,Wed,Fri" kind=passenger note="Bonnyville to Beaver River."
+#train col=T159 num=159 dir=up days="Tue,Thu,Sat" kind=passenger note="Beaver River to Bonnyville."
+mile,station,principal,T126,T125,T160,T159
+115.3,Abilene,1,lv 5.35p,ar 9.25a,,
+152.2,Bonnyville,1,ar 7.15p,lv 8.00a,lv 7.45p,ar 7.40a
+158.5,Fort Kent,0,,,8.03p,7.25a
+172.8,Beaver River,1,,,ar 8.45p,lv 6.45a

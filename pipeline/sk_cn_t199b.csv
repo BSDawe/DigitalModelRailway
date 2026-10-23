@@ -1,0 +1,31 @@
+# Canadian National, Table 199, Saskatoon - Tichfield - Beechy - Whitebear - Kindersley: section B, Tichfield - Beechy.
+# Official Guide, April 25, 1948 (scan cn1948_sk/tables193_201_drumheller_reserve_dauphin_saskatoon_regina_nbattleford.png, Table 199 at top right).
+# Times as printed: MOUNTAIN TIME ("Mt. time" head). All stations in Saskatchewan.
+# The table has six sections: Saskatoon - Tichfield (0-77.2); Tichfield - Beechy (0-44.1); Tichfield - Eston (77.2-160.9); Eston - Lacadena - Whitebear (0-34.3);
+#   the same line again as Whitebear - Lacadena - Eston (0-34.3) for other trains; Eston - Kindersley (160.9-197.2). Files: sk_cn_t199a.csv (Saskatoon - Tichfield -
+#   Eston - Kindersley), sk_cn_t199b.csv (Tichfield - Beechy), sk_cn_t199c.csv (Eston - Whitebear, both printings merged, miles from Eston).
+# The column headed "27-M302" (Saskatoon a9.35 a.m.) divides at Tichfield: lv a1.15 p.m. for Beechy and lv a1.07 p.m. for Eston; at Eston it goes on either
+#   o4.45 p.m. to Kindersley (o = Monday and Wednesday) or u4.50 p.m. to Whitebear (u = Friday). Which number belongs to which part is not printed: taken as
+#   No. 27 Saskatoon - Tichfield - Eston and on, M302 Tichfield - Beechy (my assumption). No. 27 is split by days into No27 (Mon, Wed: to Kindersley) and
+#   No27F (Fri: to Whitebear).
+# Column "M 28" likewise: Kindersley p5.50 a.m. (Tue and Thu) or Whitebear k5.45 a.m. (Saturday) to Eston, then Eston b7.45 a.m. - Saskatoon b2.20 p.m.:
+#   split into M28 (Tue, Thu, from Kindersley) and M28S (Sat, from Whitebear).
+# The first column of the table (unheaded) is blank throughout.
+# Key to signs (printed on this page, the Table 193-201 page): "* Daily; + daily, except Sunday; ++ daily, except Saturday; para. daily, except Monday;
+#   Section Sunday only; a Monday, Wednesday and Friday; b Tuesday, Thursday and Saturday; e Wednesday and Friday; f flag stop; h Thursday only;
+#   k Saturday only; l Tuesday and Saturday; n Monday and Friday; o Monday and Wednesday; p Tuesday and Thursday; r Sunday, Tuesday and Thursday;
+#   t Wednesday only; u Friday only; x Tuesday only; z Wednesday, Friday and Sunday. (dot) Motor train; limited baggage accommodation.
+#   # Thursday and Saturday. natural-sign Monday only. (triangle) Restaurant or lunch counter. + Coupon stations; Telegraph stations. M - Mixed train."
+# M301: Beechy b7.00 a.m. ... Dunblane 9.30 a.m.; no time at Tichfield; its column then shows 10.10 a.m. at MacRorie (on the Saskatoon line, 4.9 miles from Tichfield
+#   towards Saskatoon) with "A M" above at Conquest. Entered here to Dunblane only, with to="MacRorie"; the MacRorie figure may be a misplaced Tichfield arrival - in doubt.
+#train col=M302 num=302 dir=down days="Mon,Wed,Fri" kind=mixed from="Saskatoon" note="Beechy part of column 27-M302 (from Saskatoon 9.35 a.m., Tichfield ar 12.57 p.m., sk_cn_t199a.csv); Tichfield 1.15 p.m. marked a. Number assumed (see comments)."
+#train col=M301 num=301 dir=up days="Tue,Thu,Sat" kind=mixed to="MacRorie" note="Beechy 7.00 a.m. marked b. No time printed at Tichfield; the column has MacRorie 10.10 a.m. (Saskatoon line), possibly the Tichfield arrival misplaced."
+mile,station,principal,prov,tz,M302,M301
+0.0,Tichfield,1,SK,M,lv 1.15p,
+9.1,Dunblane,1,SK,M,2.25p,ar 9.30a
+17.9,Birsay,0,SK,M,3.00p,8.45a
+22.7,Tullis,0,SK,M,3.20p,8.25a
+28.9,Lucky Lake,0,SK,M,4.05p,8.05a
+33.8,Dudley,0,SK,M,4.25p,f7.40a
+38.0,Demaine,1,SK,M,4.55p,7.25a
+44.1,Beechy,1,SK,M,ar 5.30p,lv 7.00a

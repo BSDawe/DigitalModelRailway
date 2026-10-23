@@ -1,0 +1,21 @@
+# Alaska Steamship Company ("The Alaska Line"), 1948 Sailing Schedule, Southeastern and Southwestern Alaska Route (Official Guide p. 1227;
+# scans/ak1948/alaska_steamship_1948.png). Ship operations Pier 42, Seattle.
+# One row per sailing: the DATE at each port as printed (month day, year 1948). Times printed only: leave Seattle (Pier 42) 9.00 a.m.;
+# arrive Seward "A.M."; leave Seward 9.00 p.m.; arrive Seattle (Pier 42) "A.M.". Other ports: "Arrive / Leave" with the date only.
+# Northbound Cordova and Valdez: Baranof sailings only; southbound: Aleutian sailings only (dots where no call). Seattle and Seward times are
+# Pacific / 150th meridian time as each port kept it (not stated per column; the railroad page says 150th meridian is two hours earlier than
+# Pacific). The Seward 'arrive' and 'leave' dates are always the same day.
+# Note on the page: "Freight steamers do not operate on schedule ... All sailings subject to change without notice." Connections: at Seattle
+# with the Milwaukee, GN, NP and UP; at Skagway with the White Pass & Yukon Route; at Seward with the Alaska Railroad.
+# Weekly from Seattle (every Saturday): Aleutian and Baranof alternate; each ship's round trip is 12 days (back at Seattle on a Thursday,
+# away again on the second Saturday). Seward day differs by ship: Aleutian Thursday, Baranof Friday.
+steamer,seattle_lv,ketchikan_n,juneau_n,cordova_n,valdez_n,seward_ar,seward_lv,valdez_s,cordova_s,juneau_s,ketchikan_s,seattle_ar
+Aleutian,May 1,May 3,May 4,,,May 6,May 6,May 7,May 7,May 9,May 10,May 13
+Baranof,May 8,May 10,May 11,May 13,May 13,May 14,May 14,,,May 16,May 17,May 20
+Aleutian,May 15,May 17,May 18,,,May 20,May 20,May 21,May 21,May 23,May 24,May 27
+Baranof,May 22,May 24,May 25,May 27,May 27,May 28,May 28,,,May 30,May 31,June 3
+Aleutian,May 29,May 31,June 1,,,June 3,June 3,June 4,June 4,June 6,June 7,June 10
+Baranof,June 5,June 7,June 8,June 10,June 10,June 11,June 11,,,June 13,June 14,June 17
+Aleutian,June 12,June 14,June 15,,,June 17,June 17,June 18,June 18,June 20,June 21,June 24
+Baranof,June 19,June 21,June 22,June 24,June 24,June 25,June 25,,,June 27,June 28,July 1
+Aleutian,June 26,June 28,June 29,,,July 1,July 1,July 2,July 2,July 4,July 5,July 8

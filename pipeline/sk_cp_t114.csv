@@ -1,0 +1,14 @@
+# Canadian Pacific, Table 114, Swift Current - Simmie.
+# From the Canadian Pacific public timetable of about 1948 (scan cp1948_sk/tables108_112_115_northportal_moosejaw_saskatoon_lanigan.png, page 37).
+# Times as printed: MOUNTAIN TIME ("Mountain Time" heads the station column). All stations in Saskatchewan.
+# Signs (explanation of signs on this page): f = stops on signal; || = meal station; M = mixed train.
+# Miles from Swift Current as printed.
+#train col=M404 num=404 dir=down days="Thu" kind=mixed
+#train col=M403 num=403 dir=up days="Thu" kind=mixed
+mile,station,principal,prov,tz,M404,M403
+0.0,Swift Current,1,SK,M,lv 9.30a,ar 2.45p
+7.7,Player,0,SK,M,9.50a,2.20p
+13.1,Wyatt,0,SK,M,10.15a,1.55p
+20.9,Duncairn,0,SK,M,10.50a,1.20p
+25.2,Vesper,0,SK,M,11.10a,1.00p
+32.3,Simmie,1,SK,M,ar 11.40a,lv 12.25p

@@ -1,0 +1,22 @@
+# Joined through train (cp429), sk_join.py: skcp123:M429, skcp123b:M429; up skcp123b:M430, skcp123:M430
+# Rows and times as in the section files (see them for the scans, signs and doubts). Miles: counted along the run from the first station.
+#train col=D num=429 dir=down days="Mon,Thu" kind=mixed note="Through train: No. 429 Weyburn - Amulet; No. 429 Amulet - Cardross. Weyburn to Amulet here; continues Amulet 11.10a - Cardross 4.30p (sk_cp_t123b.csv)."
+#train col=U num=430 dir=up days="Tue,Fri" kind=mixed note="Through train: No. 430 Cardross - Amulet; No. 430 Amulet - Weyburn. Continues Amulet 12.10p - Weyburn 2.30p (sk_cp_t123.csv)."
+mile,station,principal,prov,tz,D,U
+0.0,Weyburn,1,SK,M,lv 8.30a,ar 2.30p
+6.5,Tatagwa,0,SK,M,f8.50a,f2.05p
+10.6,Yeoman,0,SK,M,9.00a,1.50p
+16.5,Trossachs,0,SK,M,9.20a,1.30p
+25.8,Axford,0,SK,M,9.50a,1.00p
+30.6,Khedive,0,SK,M,10.05a,12.45p
+37.6,Pangman,0,SK,M,10.30a,12.25p
+44.2,Amulet,1,SK,M,ar 10.50a / lv 11.10a,ar 11.40a / lv 12.10p
+46.2,Wallace,0,SK,M,11.15a,11.30a
+52.6,Bures,0,SK,M,f11.35a,f10.55a
+57.8,Edgeworth,0,SK,M,11.55a,10.25a
+61.5,Dahinda,0,SK,M,12.25p,10.00a
+67.1,Kayville,0,SK,M,1.15p,9.30a
+72.0,Wheatstone,0,SK,M,1.55p,9.00a
+78.4,Ormiston,0,SK,M,2.40p,8.35a
+84.7,Crane Valley,0,SK,M,3.55p,8.10a
+91.5,Cardross,1,SK,M,ar 4.30p,lv 7.45a

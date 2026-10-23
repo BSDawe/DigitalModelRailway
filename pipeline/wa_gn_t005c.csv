@@ -1,0 +1,12 @@
+# Great Northern Railway, Table 5, Main Line (continued), table of February 8, 1948 (Official Guide): the block "Via S. P. & S. Ry." Spokane -
+# Portland, GN mileage as printed (Spokane 1434, Portland 1813). Times as printed: PACIFIC TIME. Signs: * daily.
+# These are S. P. & S. trains (SP&S Table 1); the GN prints just "Spokane" and "Portland". The No27 and No3 columns show the SAME train (Spokane 9.45 p.m. - Portland 7.35 a.m., also the
+# train in NP Table 3's S.P.&S. block); No1 is a different one (12.06 a.m. - 8.00 a.m.).
+#train col=No27 num=27 dir=down days="daily" kind=passenger from="Spokane" to="Portland" note="Portland connection of No. 27 via S.P.&S.; same S.P.&S. train as the No3 column."
+#train col=No1 num=1 dir=down days="daily" kind=passenger from="Spokane" to="Portland" note="Portland connection of the Empire Builder via S.P.&S."
+#train col=No3 num=3 dir=down days="daily" kind=passenger from="Spokane" to="Portland" note="Portland connection of the Oriental Limited via S.P.&S.; same S.P.&S. train as the No27 column."
+#train col=No2 num=2 dir=up days="daily" kind=passenger from="Portland" to="Spokane" note="Portland connection of the Empire Builder via S.P.&S."
+#train col=No4 num=4 dir=up days="daily" kind=passenger from="Portland" to="Spokane" note="Portland connection of the Oriental Limited via S.P.&S."
+mile,station,principal,No27,No1,No3,No2,No4
+1434,Spokane (S. P. & S.),1,lv 9.45p,lv 12.06a,lv 9.45p,ar 10.55p,ar 6.50a
+1813,Portland (Union Sta.),1,ar 7.35a,ar 8.00a,ar 7.35a,lv 3.00p,lv 8.45p

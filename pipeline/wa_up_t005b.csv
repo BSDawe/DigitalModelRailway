@@ -1,0 +1,52 @@
+# Union Pacific Railroad, Table 5, table of April 4, 1948 (Official Guide page 840): Portland - Tacoma - Seattle connections (the pooled trains),
+# northbound only. Times as printed: PACIFIC TIME. Miles from Portland as printed.
+# No. 457 is printed twice (under the Portland Rose No. 17 and under the City of Portland No. 105), identical: entered once. No. 401 is printed
+# under the Idahoan No. 11. Columns 459 and 407 are printed at the left.
+# All four are shown "Via Steilacoom" (Nisqually - Steilacoom - Titlow - Tacoma); the West Tenino - Rainier - Yelm - Roy - Hillhurst - Lakeview -
+# Tacoma rows (second mileage from West Tenino 0 to Tacoma 39.0) have no trains and are not entered.
+# SEATTLE: No. 457 to Seattle (Union Sta.), Nos. 459, 407 and 401 to Seattle (King St. Sta.), both mile 183.4.
+# CASTLE ROCK is printed mile 52.6 (read three times), only 1.2 miles beyond Ostrander (51.4) and 14.6 short of Vader (67.2); NP Table 4 / GN
+# Table 46 put it 6 miles beyond Ostrander - likely a misprint for 57.6. Entered as printed. Puyallup has no mile printed: entered 151.0 to place it (NP station, about 3 miles before Sumner).
+# CHECKER FLAGS for No. 401 Ostrander - Castle Rock - Vader come from that printed mile, not from the times. Centralia has arr./lve. rows (90.8), folded. Tacoma "arrive" and "leave" sections folded into one row (144.7).
+# OLYMPIA BRANCH CONNECTION, NOT ENTERED: rows "arr. East Olympia - arr. Olympia (8.1 mi)" and "lve. Olympia - lve. East Olympia": No. 457 East
+# Olympia ar 11.40 a.m. - Olympia ar 12.10 p.m. and Olympia lv 11.10 a.m. - East Olympia 11.40 a.m.; No. 407 East Olympia 2.24 - Olympia ar 2.50
+# p.m. Each Olympia figure carries a sign "t" (key not on the scans supplied; possibly a motor-coach connection) - check.
+# Signs: * daily; f flag. Entered as plain times, key not supplied: square-like ":" (459 Puyallup - Kent), check mark (457 Sumner, Auburn, Kent),
+# n (407 East Olympia). No. 459 shows a black dot at Winlock and No. 407 a "y" at Chehalis, both with NO TIME (NP Table 4: 459 Winlock 6.10 p.m.,
+# 407 Chehalis 1.50 p.m.): left empty here.
+#train col=No459 num=459 dir=down days="daily" kind=passenger from="Portland" to="Seattle" note="Pool train, via Steilacoom."
+#train col=No407 num=407 dir=down days="daily" kind=passenger from="Portland" to="Seattle" note="Pool train, via Steilacoom."
+#train col=No457 num=457 dir=down days="daily" kind=passenger from="Portland" to="Seattle" note="Pool train, via Steilacoom; Seattle Union Sta. Connection from the Portland Rose and City of Portland."
+#train col=No401 num=401 dir=down days="daily" kind=passenger from="Portland" to="Seattle" note="Night pool train, via Steilacoom. Connection from the Idahoan."
+mile,station,principal,No459,No407,No457,No401
+0,Portland,1,lv 4.30p,lv 12.01p,lv 8.30a,lv 11.30p
+7.3,North Portland,1,,,f8.54a,
+8.7,Vancouver,1,4.55p,12.22p,8.58a,11.57p
+14.6,Felida,0,,,f9.05a,
+23.0,Ridgefield,0,,,f9.16a,12.18a
+28.4,Woodland,0,,,9.25a,12.30a
+37.5,Kalama,0,,,9.39a,12.49a
+42.6,Carrolls,0,,,,
+47.7,Kelso-Longview,1,5.40p,1.05p,9.56a,1.22a
+51.4,Ostrander,0,,,f10.01a,f1.27a
+52.6,Castle Rock,0,,,10.10a,1.40a
+67.2,Vader,0,,,10.25a,f1.54a
+73.7,Winlock,0,,,10.35a,2.07a
+76.8,Evaline,0,,,,
+80.0,Napavine,1,,,10.43a,f2.21a
+87.1,Chehalis,1,6.27p,,10.58a,2.43a
+90.8,Centralia,1,6.37p,2.00p,ar 11.05a / lv 11.10a,ar 2.55a / lv 3.10a
+98.1,Bucoda,0,,,f11.21a,f3.20a
+101.8,Tenino,0,,,11.26a,3.32a
+109.8,East Olympia,1,,2.24p,11.40a,
+120.3,Nisqually,1,f7.15p,,,f4.10a
+129.1,Steilacoom,0,,,12.10p,4.25a
+135.0,Titlow,0,,,,f4.38a
+144.7,Tacoma,1,ar 7.50p / lv 8.00p,ar 3.11p / lv 3.15p,ar 12.35p / lv 12.45p,ar 5.00a / lv 5.20a
+151.0,Puyallup,1,8.13p,,,5.40a
+152.6,North Puyallup,0,,,1.01p,
+154.4,Sumner,0,8.17p,,1.06p,5.48a
+161.5,Auburn,1,8.28p,,1.21p,6.01a
+166.5,Kent,1,8.37p,,1.30p,6.13a
+183.4,Seattle (Union Sta.),1,,,ar 2.00p,
+183.4,Seattle (King St. Sta.),1,ar 9.00p,ar 4.10p,,ar 6.45a

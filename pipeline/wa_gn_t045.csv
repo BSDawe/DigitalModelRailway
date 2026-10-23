@@ -1,0 +1,34 @@
+# Great Northern Railway, Table 45, Wenatchee and Oroville, table of February 8, 1948 (Official Guide). Times as printed: PACIFIC TIME.
+# Signs (GN key, gn_201249): dagger daily except Sunday; f flag stop for revenue passengers. No train kind printed: entered as passenger.
+# CHECKER FLAG, as printed (read twice): No. 254 Chelan Falls 8.19 - Chelan 8.30 a.m., 1 mile in 11 min.
+#train col=No254 num=254 dir=down days="ex Sun" kind=passenger from="Wenatchee" to="Oroville"
+#train col=No253 num=253 dir=up days="ex Sun" kind=passenger from="Oroville" to="Wenatchee"
+mile,station,principal,No254,No253
+0,Wenatchee,1,lv 7.00a,ar 7.00p
+3,Olds,0,f7.07a,f6.50p
+8,Zena,0,f7.17a,f6.40p
+14,Wagnersburg,0,f7.28a,f6.28p
+19,Entiat,0,7.40a,6.16p
+26,Winesap,0,f7.55a,f6.01p
+32,Stayman,0,f8.07a,f5.48p
+38,Chelan Falls,0,8.19a,5.36p
+39,Chelan,1,8.30a,5.32p
+44,Hugo,0,f8.40a,f5.18p
+50,Azwell,0,f8.52a,f5.06p
+53,Starr,0,f9.00a,f4.59p
+59,Pateros,0,9.20a,4.49p
+65,Brewster,0,9.35a,4.35p
+72,Monse,0,f9.50a,f4.22p
+76,Wakefield,0,f10.00a,f4.13p
+83,Malott,0,f10.13a,f4.01p
+87,Chillowist,0,f10.20a,f3.54p
+92,Okanogan,0,10.35a,3.45p
+96,Omak,0,10.50a,3.30p
+101,Cherokee,0,f11.00a,f3.16p
+105,Riverside,0,11.08a,3.07p
+110,Barker,0,f11.19a,f2.56p
+115,Janis,0,f11.30a,f2.45p
+120,Tonasket,0,11.40a,2.35p
+126,Ellisford,0,f11.52a,f2.23p
+132,Cordell,0,f12.03p,f2.12p
+137,Oroville,1,ar 12.15p,lv 2.00p

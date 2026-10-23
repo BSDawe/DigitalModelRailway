@@ -1,0 +1,23 @@
+# Canadian Pacific, Table 117, Moose Jaw - Kerrobert - Macklin: Outlook - Milden - Gunnworth - McMorran (mixed trains M427 / M428).
+# From the Canadian Pacific public timetable of about 1948 (scan cp1948_sk/tables117_119_moosejaw_kerrobert_macklin_wilkie.png, printed sideways; "READ DOWN" / "READ UP").
+# Times as printed: MOUNTAIN TIME ("Mountain Time" heads the station column). All stations in Saskatchewan (Macklin is the last Saskatchewan station of the line).
+# Signs (explanation of signs on this page): f = stops on signal; || = meal station (Moose Jaw, Outlook); M = mixed train; .. = does not stop (left empty).
+# Miles from Moose Jaw as printed. Outlook - Milden rows are those of the main section (Lv OUTLOOK 119.4 ... Ar Milden 141.7); Milden is printed twice
+# (Ar / Lv, section break): one row with ar / lv. "Gunnworth 113" refers to Table 113.
+#train col=M427 num=427 dir=down days="Mon" kind=mixed
+#train col=M428 num=428 dir=up days="Mon" kind=mixed
+mile,station,principal,prov,tz,M427,M428
+119.4,Outlook,1,SK,M,lv 7.00a,ar 6.15p
+121.7,Betalock,0,SK,M,,
+128.8,Conquest,0,SK,M,f7.30a,f5.45p
+134.1,Bounty,0,SK,M,f7.50a,f5.30p
+141.7,Milden,1,SK,M,ar 8.15a / lv 8.30a,ar 4.50p / lv 5.08p
+149.6,Gaines,0,SK,M,f9.00a,f4.20p
+157.4,Glamis,0,SK,M,9.25a,3.50p
+165.0,Thrasher,0,SK,M,f9.50a,f3.25p
+172.4,Gunnworth,1,SK,M,10.20a,3.00p
+178.4,Chipperfield,0,SK,M,10.45a,2.30p
+186.1,Bickleigh,0,SK,M,11.15a,2.05p
+192.0,Totnes,0,SK,M,11.40a,1.35p
+197.6,Penkill,0,SK,M,12.05p,1.15p
+202.5,McMorran,1,SK,M,ar 12.20p,lv 12.55p

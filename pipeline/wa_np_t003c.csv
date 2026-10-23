@@ -1,0 +1,16 @@
+# Northern Pacific Railway, Table 3, Main Line Trains (continued), table of April 4, 1948 (Official Guide page 1092): the through service
+# Spokane - Pasco - Portland over the Spokane, Portland & Seattle, printed in two sections ("lve. Spokane (S.P.&S.) - arr. Pasco - arr. Portland
+# (Un. Sta.)" and "lve. Pasco (S.P.&S.) - arr. Portland (Un. Sta.)"). The two sections are folded here: the Pasco cell gives the arrival from the
+# first and the departure from the second section. NP mileage as printed (Pasco 1642, Portland 1874 = 232 miles beyond Pasco).
+# Times as printed: PACIFIC TIME. Signs: * daily.
+# These are S. P. & S. trains (see SP&S Table 1). The No1 and No3 columns show the SAME train (Spokane 9.45 p.m. - Portland 7.35 a.m.); No5 is
+# a Pasco - Portland connection only (Pasco 10.40 a.m. - Portland 4.40 p.m.). No. 6 has no Portland connection in the table.
+#train col=No1 num=1 dir=down days="daily" kind=passenger from="Spokane" to="Portland" note="Portland connection of the North Coast Limited via S.P.&S.; same S.P.&S. train as the No3 column."
+#train col=No3 num=3 dir=down days="daily" kind=passenger from="Spokane" to="Portland" note="Portland connection of No. 3 via S.P.&S.; same S.P.&S. train as the No1 column."
+#train col=No5 num=5 dir=down days="daily" kind=passenger from="Pasco" to="Portland" note="Pasco - Portland connection of No. 5 via S.P.&S."
+#train col=No2 num=2 dir=up days="daily" kind=passenger from="Portland" to="Spokane" note="Portland connection of the North Coast Limited via S.P.&S. (Pasco ar 2.40 a.m., NP No. 2 leaves Pasco 5.02 a.m.)."
+#train col=No4 num=4 dir=up days="daily" kind=passenger from="Portland" to="Spokane" note="Portland connection of No. 4 via S.P.&S."
+mile,station,principal,No1,No3,No5,No2,No4
+1496,Spokane (S. P. & S.),1,lv 9.45p,lv 9.45p,,ar 6.50a,ar 8.05p
+1642,Pasco (S. P. & S.),1,ar 1.35a / lv 1.50a,ar 1.35a / lv 1.50a,lv 10.40a,ar 2.40a / lv 3.10a,ar 3.45p / lv 4.30p
+1874,Portland (Union Sta.),1,ar 7.35a,ar 7.35a,ar 4.40p,lv 8.45p,lv 9.00a

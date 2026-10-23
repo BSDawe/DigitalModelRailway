@@ -1,0 +1,15 @@
+# Canadian National, Table 232, Prince Albert - Shellbrook - Big River. Official Guide, April 25, 1948 (scan cn1948_sk/table232_princealbert_bigriver.png).
+# Times as printed: MOUNTAIN TIME ("Mt. time" head). All stations in Saskatchewan. Miles from Prince Albert as printed. Shellbrook "lv. Shellbrook ar.", one time per train.
+# Key to signs: none on this scan. Used (Table 193-201 key): h Thursday only; k Saturday only; u Friday only; M mixed train. y (M271 Prince Albert 12.35 p.m.)
+#   is not in the 193-201 key; "Tuesday and Friday" in the Table 180-184 key - entered Tue,Fri, IN DOUBT. M272 Big River 7.00 a.m. read as k (Saturday) - the
+#   italic k/h are hard to tell apart at this size - in doubt.
+#train col=M345 num=345 dir=down days="Fri" kind=mixed note="Prince Albert 4.00 p.m. marked u (Friday only)."
+#train col=M271 num=271 dir=down days="Tue,Thu" kind=mixed note="Prince Albert 12.35 p.m. marked y: Tuesday and Thursday (key for Tables 224-233) (Brendan, 12 Oct)."
+#train col=M346 num=346 dir=up days="Fri" kind=mixed note="Big River 7.00 a.m. marked u (Friday only)."
+#train col=M272 num=272 dir=up days="Wed,Sat" kind=mixed note="Big River 7.00 a.m. marked h: Wednesday and Saturday (key for Tables 224-233) (Brendan, 12 Oct)."
+mile,station,principal,prov,tz,M345,M271,M346,M272
+0.0,Prince Albert,1,SK,M,lv 4.00p,lv 12.35p,ar 11.10a,ar 12.30p
+28.7,Shellbrook,1,SK,M,5.05p,2.09p,10.05a,10.57a
+43.6,Canwood,0,SK,M,5.55p,3.15p,9.16a,10.00a
+60.1,Debden,0,SK,M,6.48p,4.15p,8.23a,8.45a
+86.0,Big River,1,SK,M,ar 8.10p,ar 5.50p,lv 7.00a,lv 7.00a

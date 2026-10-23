@@ -1,0 +1,60 @@
+# Canadian Pacific, Table 116, Regina - Saskatoon - Prince Albert - Meadow Lake: section B, Regina - Craven - Valeport - Bulyea - Lanigan - Prince Albert.
+# From the Canadian Pacific public timetable of about 1948 (scan cp1948_sk/table116_regina_saskatoon_princealbert_meadowlake.png, printed sideways; "READ DOWN" / "READ UP").
+# Times as printed: MOUNTAIN TIME ("Mountain Time" heads the station column). All stations in Saskatchewan.
+# Signs (explanation of signs on the facing page of Tables 117-119, tables117_119_moosejaw_kerrobert_macklin_wilkie.png): f = stops on signal;
+#   || = meal station; M = mixed train; .. = does not stop (left empty); cross sign (Regina, Saskatoon, Prince Albert) = connections with C.P. Air Lines;
+#   n = stops on signal to detrain from north of Valeport, also flag stop at Tregarva on Saturdays to entrain; s = stops on Mondays and Thursdays to detrain.
+# Equipment note (same page): Nos. 303 and 304 Regina - Prince Albert, coaches and standard sleeper; Nos. 303-331 and 332-304 Regina - Saskatoon.
+# Miles from Regina as printed (Valeport 25.7, Bulyea 43.8, Lanigan 105.5, Prince Albert 218.9). Bulyea is printed twice (Ar / Lv, a section break)
+# and Lanigan twice (Ar at the end of the Bulyea section, Lv at the head of the Prince Albert section): each entered as one row with ar / lv.
+# Trains 60 and 59 have times only at Regina and Bulyea (60) and Bulyea, Silton and Regina (59); every other row is .. for them.
+# Rows printed in this table but NOT entered (duplicates): "Lv Lanigan 115 / Melfort / Ar Gronlid" in the 327 and 328 columns (327 Lanigan 3.30p - Melfort
+# 6.10p - Gronlid 7.20p; 328 Gronlid 7.30a - Melfort 8.30a - Lanigan 11.35a), the same as Table 115 (sk_cp_t115.csv); and "Lv Lanigan 92 / Ar Saskatoon 92"
+# in the 303 and 304 columns (Lanigan 4.15a - Saskatoon 6.50a; Saskatoon 11.20p - Lanigan 1.30a), which are Nos. 331 and 332 of Table 92 (sk_cp_t092a.csv;
+# equipment note: sleeper 303-331 and 332-304 Regina - Saskatoon).
+# 303 and 304 are night trains: 303 leaves Regina 11.55 p.m. ("P.M." heads the column), arrives Prince Albert 8.25 a.m. ("A.M." at its foot);
+# 304 leaves Prince Albert 8.45 p.m. and arrives Regina 5.10 a.m.
+# Columns 60 (Regina 9.25a - Bulyea ar 10.45a) and 59 (Bulyea 3.20p - Silton 3.44p - Regina 4.50p), both Ex. Sun., are the Table 107 trains 59/60
+# (Brandon - Neudorf - Bulyea - Regina, sk_cp_t107a.csv / sk_cp_t107b.csv, same times): NOT entered here. Table 107 has no Silton row; Table 116 gives 59 a call at Silton 3.44p.
+#train col=No327 num=327 dir=down days="ex Sun" kind=passenger to="Gronlid" note="Continues Lanigan 3.30p - Melfort 6.10p - Gronlid 7.20p (Table 115; sk_cp_t115.csv)."
+#train col=No303 num=303 dir=down days="daily" kind=passenger note="Overnight Regina - Prince Albert. A Lanigan 4.15a - Saskatoon 6.50a connection (No. 331, Table 92) is printed in its column."
+#train col=No304 num=304 dir=up days="daily" kind=passenger note="Overnight Prince Albert - Regina. A Saskatoon 11.20p - Lanigan 1.30a connection (No. 332, Table 92) is printed in its column."
+#train col=No328 num=328 dir=up days="ex Sun" kind=passenger from="Gronlid" note="Comes from Gronlid 7.30a - Melfort 8.30a - Lanigan 11.35a (Table 115; sk_cp_t115.csv)."
+mile,station,principal,prov,tz,No327,No303,No304,No328
+0.0,Regina,1,SK,M,lv 10.40a,lv 11.55p,ar 5.10a,ar 4.00p
+10.4,Brora,0,SK,M,,f12.17a,f4.45a,f3.35p
+12.7,Tregarva,0,SK,M,11.06a,f12.21a,f4.41a,f3.31p
+21.8,Craven,0,SK,M,11.23a,12.38a,4.24a,3.13p
+25.7,Valeport,1,SK,M,11.31a,,,3.04p
+29.9,Saskatchewan Beach,0,SK,M,f11.39a,,,f2.56p
+30.7,Silton,0,SK,M,11.42a,12.57a,4.06a,2.54p
+37.7,Gibbs,0,SK,M,11.56a,1.10a,3.54a,2.41p
+43.8,Bulyea,1,SK,M,12.10p,1.22a,3.43a,2.30p
+51.2,Strasbourg,0,SK,M,12.35p,1.39a,3.31a,2.10p
+57.5,Duval,0,SK,M,12.47p,1.49a,3.18a,1.58p
+63.2,Cymric,0,SK,M,12.57p,f1.59a,f3.10a,1.48p
+68.1,Govan,0,SK,M,1.09p,2.08a,3.03a,1.39p
+76.0,Hatfield,0,SK,M,1.24p,f2.23a,f2.51a,1.24p
+82.0,Nokomis,0,SK,M,1.40p,2.42a,2.42a,1.12p
+86.4,Ambassador,0,SK,M,f1.50p,f2.52a,f2.34a,f1.03p
+91.1,Lockwood,0,SK,M,2.03p,3.03a,2.27a,12.56p
+98.2,Drake,0,SK,M,2.18p,3.18a,2.14a,12.41p
+105.5,Lanigan,1,SK,M,ar 2.40p,ar 3.35a / lv 4.10a,ar 12.55a / lv 2.00a,lv 12.20p
+112.7,Attica,0,SK,M,,4.24a,12.37a,
+120.1,Burr,0,SK,M,,4.36a,12.22a,
+124.9,Bay Trail,0,SK,M,,4.45a,12.12a,
+132.0,Humboldt,0,SK,M,,5.00a,11.56p,
+137.1,Burton Lake,0,SK,M,,f5.23a,f11.42p,
+144.5,Fulda,0,SK,M,,5.38a,11.27p,
+150.1,Pilger,0,SK,M,,5.51a,11.16p,
+154.5,Middle Lake,0,SK,M,,6.00a,11.06p,
+162.2,St. Benedict,0,SK,M,,6.21a,10.47p,
+167.0,Reynaud,0,SK,M,,6.30a,10.38p,
+169.8,Bonne Madone,0,SK,M,,6.36a,10.32p,
+176.0,Tway,0,SK,M,,6.49a,10.19p,
+182.6,Crystal Springs,0,SK,M,,7.04a,10.05p,
+187.3,Waitville,0,SK,M,,7.13a,9.55p,
+193.0,Tiger Hills,0,SK,M,,7.25a,9.43p,
+196.3,Hagen,0,SK,M,,7.33a,9.36p,
+199.9,Northway,0,SK,M,,7.40a,9.30p,
+218.9,Prince Albert,1,SK,M,,ar 8.25a,lv 8.45p,

@@ -1,0 +1,30 @@
+# Canadian National, Table 176, Regina - Moose Jaw - Avonlea - Gravelbourg - Neidpath. Official Guide, April 25, 1948 (scan cn1948_sk/table176_regina_neidpath.png).
+# Times as printed: MOUNTAIN TIME ("Mountain time" head). All stations in Saskatchewan. Miles from Regina as printed. Moose Jaw and Avonlea are printed twice
+#   (ar./lv. lines), one row each.
+# Key to signs: only its cut-off top edge is on this scan (a line ending "...cept Saturday; para. daily, except Monday; Section Sunday..."). Used, from the
+#   Table 193-201 key: a Monday, Wednesday and Friday; b Tuesday, Thursday and Saturday; n Monday and Friday; M mixed train.
+#   No. 53 at Gravelbourg 6.30 p.m. carries a psi sign; the Table 166 key gives psi = "Via North Elie" (a Manitoba routing, cannot apply here); meaning
+#   unknown, time entered plainly.
+#   M316 at Moose Jaw 10.00 a.m. carries the unexplained sign "g" (as in Tables 173 and 175): days unknown, entered Mon,Fri as M315 (assumption).
+# M316 and M315 run Moose Jaw - Avonlea here and Avonlea - Radville in Table 175 (sk_cn_t175.csv): M316 Avonlea ar 12.55 p.m. here, lv 2.00 p.m. there;
+#   M315 Avonlea ar 2.00 p.m. there, lv n3.15 p.m. here.
+#train col=No53 num=53 dir=down days="Mon,Wed,Fri" kind=passenger note="Regina 10.30 a.m. marked a (Mon Wed Fri). Gravelbourg: psi = arrives 6.00 p.m. (Brendan, 12 Oct); leaves 6.30 p.m."
+#train col=M316 num=316 dir=down days="Tue" kind=mixed to="Radville" note="Moose Jaw 10.00 a.m. marked g: Tuesday only (key for CN Tables 171-179C, Brendan 12 Oct). Continues Avonlea - Radville (Table 175)."
+#train col=No54 num=54 dir=up days="Tue,Thu,Sat" kind=passenger note="Neidpath 8.20 a.m. marked b (Tue Thu Sat)."
+#train col=M315 num=315 dir=up days="Mon" kind=mixed from="Radville" note="From Radville (Table 175); Avonlea 3.15 p.m. marked n: Monday only (key for CN Tables 171-179C, Brendan 12 Oct)."
+mile,station,principal,prov,tz,No53,M316,No54,M315
+0.0,Regina,1,SK,M,lv 10.30a,,ar 5.00p,
+43.1,Moose Jaw,1,SK,M,ar 12.10p / lv 12.50p,lv 10.00a,ar 3.05p / lv 3.15p,ar 5.20p
+57.1,Tilney,0,SK,M,1.28p,11.22a,2.34p,4.30p
+64.2,Briercrest,0,SK,M,1.45p,12.08p,2.18p,4.05p
+78.5,Avonlea,1,SK,M,ar 2.15p / lv 2.30p,ar 12.55p,ar 1.15p / lv 1.45p,lv 3.15p
+87.0,Claybank,0,SK,M,2.58p,,12.54p,
+98.1,Spring Valley,0,SK,M,3.30p,,12.29p,
+115.8,Mitchellton,0,SK,M,4.10p,,11.50a,
+127.7,Mossbank,0,SK,M,4.45p,,11.22a,
+136.2,Ettington,0,SK,M,5.05p,,11.03a,
+142.3,Mazenod,0,SK,M,5.22p,,10.50a,
+158.2,Gravelbourg,1,SK,M,ar 6.00p / lv 6.30p,,10.15a,
+176.4,St. Boswells,0,SK,M,7.25p,,9.21a,
+183.8,Hodgeville,0,SK,M,7.45p,,9.00a,
+197.8,Neidpath,1,SK,M,ar 8.30p,,lv 8.20a,

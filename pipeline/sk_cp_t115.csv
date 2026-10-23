@@ -1,0 +1,28 @@
+# Canadian Pacific, Table 115, Lanigan - Melfort - Gronlid (with Regina - Lanigan).
+# From the Canadian Pacific public timetable of about 1948 (scan cp1948_sk/tables108_112_115_northportal_moosejaw_saskatoon_lanigan.png, page 37).
+# Times as printed: MOUNTAIN TIME ("Mountain Time" heads the station column). All stations in Saskatchewan.
+# Signs (explanation of signs on this page): f = stops on signal; || = meal station; M = mixed train.
+# Miles from Lanigan as printed. The table heads with two rows "Lv Regina || 116 Ar" 0.0 (327 10.40a, 328 4.00p) and "Ar Lanigan || 92 Lv" 105.5
+# (327 2.40p, 328 12.20p): the same trains and times as Table 116 (sk_cp_t116b.csv, Regina - Bulyea - Lanigan with all stations), so they are not
+# repeated here; this file starts at Lanigan. Table 116 also prints Lanigan, Melfort and Gronlid for these trains (same times; not entered there).
+#train col=No327 num=327 dir=down days="ex Sun" kind=passenger from="Regina" note="Leaves Regina 10.40a, arrives Lanigan 2.40p (Table 116; sk_cp_t116b.csv)."
+#train col=No328 num=328 dir=up days="ex Sun" kind=passenger to="Regina" note="Leaves Lanigan 12.20p, arrives Regina 4.00p (Table 116; sk_cp_t116b.csv)."
+mile,station,principal,prov,tz,No327,No328
+0.0,Lanigan,1,SK,M,lv 3.30p,ar 11.35a
+7.1,Sinnett,0,SK,M,3.45p,11.18a
+17.0,Leroy,0,SK,M,4.02p,10.56a
+23.5,Romance,0,SK,M,4.12p,10.43a
+29.7,Watson,0,SK,M,4.22p,10.31a
+36.8,Daphne,0,SK,M,4.35p,10.16a
+43.8,Spalding,0,SK,M,4.48p,10.03a
+49.8,Naicam,0,SK,M,5.00p,9.50a
+55.7,Lac Vert,0,SK,M,5.11p,9.37a
+61.0,Pleasantdale,0,SK,M,5.20p,9.26a
+67.2,Silver Park,0,SK,M,5.32p,9.13a
+72.0,Resource,0,SK,M,5.41p,9.02a
+76.7,Clemens,0,SK,M,5.53p,8.48a
+82.8,Melfort,1,SK,M,6.10p,8.30a
+90.2,Thaxted,0,SK,M,6.50p,7.59a
+94.6,Lenvale,0,SK,M,6.59p,7.48a
+96.4,Fairy Glen,0,SK,M,7.04p,7.44a
+101.8,Gronlid,1,SK,M,ar 7.20p,lv 7.30a

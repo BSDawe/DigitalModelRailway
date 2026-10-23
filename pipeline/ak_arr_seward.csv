@@ -1,0 +1,17 @@
+# The Alaska Railroad, Passenger Train Schedule, Seward and Fairbanks, March 1948 (Official Guide, "Alaska Railroad Connections" page;
+# scans/ak1948/arr_1948_03.png). This file: Seward - Portage - Anchorage.
+# Times as printed: STANDARD - 150th MERIDIAN TIME, "two hours earlier than Pacific time". Light/heavy type not used; A.M./P.M. printed.
+# All station names printed in heavy type: principal = 1. Elevations printed (feet): Seward 20, Portage 33, Anchorage 38 (not entered).
+# Not a through train with the Fairbanks line (Anchorage - Fairbanks runs Mon/Wed/Fri north, Tue/Thu/Sat south: ak_arr_fairbanks.csv).
+# SPECIAL TRAINS (printed note): passenger trains connect with Alaska Steamship ships ARRIVING Seward, leaving Seward 1 h 30 min after the
+# ship arrives but not before 9.00 a.m.; a ship arriving after 4.00 p.m. gets a train at 9.00 a.m. next morning. A special runs Anchorage -
+# Seward for ships DEPARTING Seward, time "announced in advance". Not entered here (no times printed): see STATE.md, Alaska.
+#train col=No1 num="" dir=down days="Thu,Fri,Sat" kind=passenger note="Column headed Thurs., Fri. and Sat. (no train number printed)."
+#train col=No2 num="" dir=up days="Wed,Thu,Fri" kind=passenger note="Column headed Wed., Thurs. and Fri. (no train number printed). It also serves the Alaska Steamship sailings from Seward (Brendan: it stands for the special from Anchorage)."
+# ESTIMATED (not printed): the boat special for the Alaska Steamship arrival in the week shown (about 5-11 July 1948: the Baranof, Friday 9 July;
+# Brendan, 13 October 2026, moved from Thursday): leaves Seward at 9.00 a.m. (ship taken to arrive before 7.30 a.m.), running as the regular train (4 h 30 min).
+#train col=SP num="" dir=down days="Fri" kind=passenger note="Boat special for the Alaska Steamship arrival (the Baranof, Friday 9 July): times estimated from the printed rule (leaves 1 h 30 min after the ship arrives, not before 9.00 a.m.)."
+mile,station,principal,No1,No2,SP
+0,Seward,1,lv 8.30a,ar 7.00p,lv 9.00a
+64.2,Portage,1,11.10a,4.25p,11.40a
+114.3,Anchorage,1,ar 1.00p,lv 2.30p,ar 1.30p

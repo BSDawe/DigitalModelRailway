@@ -1,0 +1,24 @@
+# Northern Pacific Railway, Table 44, Spokane, Pullman and Lewiston, table of April 4, 1948 (Official Guide). Times as printed: PACIFIC TIME
+# ("(P. T.)"). Washington part only: Spokane - Pullman - Sunshine.
+# IDAHO: the first Idaho station beyond is Moscow, mile 95 (the trains go on to Troy, Kendrick, Juliaetta, Arrow, Spalding, North Lapwai and
+# Lewiston, mile 146). Sunshine (mile 90, between Pullman and Moscow) is taken to be in Washington (Whitman County) - check.
+# Signs: * daily; f stops on flag. 313/314 are night/evening trains (P.M./A.M. by the column headings and heavy type for P.M.).
+#train col=No313 num=313 dir=down days="daily" kind=passenger from="Spokane" to="Lewiston" note="Night train; Lewiston ar 2.50 a.m."
+#train col=No311 num=311 dir=down days="daily" kind=passenger from="Spokane" to="Lewiston" note="Day train; Lewiston ar 1.45 p.m."
+#train col=No312 num=312 dir=up days="daily" kind=passenger from="Lewiston" to="Spokane" note="Day train; Lewiston lv 8.05 a.m."
+#train col=No314 num=314 dir=up days="daily" kind=passenger from="Lewiston" to="Spokane" note="Afternoon train; Lewiston lv 3.20 p.m."
+mile,station,principal,No313,No311,No312,No314
+0,Spokane,1,lv 9.45p,lv 8.50a,ar 1.00p,ar 8.10p
+9,Marshall,1,f10.01p,f9.05a,f12.42p,f7.55p
+20,Spangle,0,10.21p,9.22a,12.19p,7.36p
+28,Plaza,0,f10.33p,f9.34a,f12.07p,f7.23p
+36,Rosalia,0,10.45p,9.46a,11.55a,7.12p
+47,Oakesdale,0,11.06p,10.05a,11.35a,6.54p
+52,Belmont,1,11.19p,f10.20a,f11.26a,f6.45p
+56,Eden,0,,f10.26a,f11.19a,
+58,Garfield,0,11.33p,10.31a,11.11a,6.30p
+68,Palouse,0,11.53p,10.55a,10.55a,6.12p
+75,Fallon,0,,f11.07a,f10.38a,
+79,Whelan,0,,f11.15a,f10.30a,
+84,Pullman,1,12.31a,11.36a,10.20a,5.40p
+90,Sunshine,0,,f11.48a,f10.06a,

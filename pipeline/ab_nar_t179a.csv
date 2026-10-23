@@ -1,0 +1,17 @@
+# Northern Alberta Railways, Table 179a in the Canadian National section of the Official Guide, May 1948: McLennan - Peace River - Hines Creek,
+# table of April 25, 1948. Times as printed: MOUNTAIN TIME. Nos. 5 and 6 (the numbers from the Northern Alberta's own table: Brendan, 4 October 2026; the reprint does not print them).
+# The sign 'b' stands against the Hines Creek arrival (12.00 noon) and departure (2.00 p.m.): Tuesday, Thursday and Saturday by the key printed
+# beside the Northern Alberta's main table. 'M' (mixed) against the McLennan departure.
+#train col=Dn num=5 dir=down days="Tue,Thu,Sat" kind=passenger note="McLennan to Hines Creek by Peace River. First-class coaches and sleepers (the Guide's equipment note)."
+#train col=Up num=6 dir=up days="Tue,Thu,Sat" kind=passenger note="Hines Creek to McLennan by Peace River. First-class coaches and sleepers (the Guide's equipment note)."
+mile,station,principal,Dn,Up
+0.0,McLennan,1,lv 6.15a,ar 7.25p
+1.4,Winagami,0,6.20a,7.21p
+49.9,Peace River,1,8.45a,5.00p
+66.6,Grimshaw,1,9.47a,3.55p
+72.6,Berwyn,0,10.02a,3.40p
+78.8,Brownvale,0,10.22a,3.26p
+86.0,Whitelaw,0,10.42a,3.09p
+93.1,Bluesky,0,11.00a,2.54p
+98.8,Fairview,1,11.15a,2.40p
+114.8,Hines Creek,1,ar 12.00p,lv 2.00p

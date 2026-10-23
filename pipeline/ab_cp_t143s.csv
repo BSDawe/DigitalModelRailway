@@ -1,0 +1,21 @@
+# Canadian Pacific main line trains Nos. 1 to 4 between Calgary and Gleichen by Strathmore, as printed in CP Table 143 (1948 timetable),
+# where they are listed for their local stops with "See Table 6" below Gleichen (the figures are in the comments of ab_cp_t143a.csv).
+# Times as printed: MOUNTAIN TIME. f = stops on signal. Miles: Table 143's miles from Calgary (Ogden 4.9, Shepard 10.2, Bennett 15.6,
+# Langdon 20.7, Cheadle 27.6, Strathmore 34.8, Namaka 42.6, Stobart 50.8, Gleichen 55.5), entered as Table 6 miles (Calgary 2240.1 less the
+# miles from Calgary), so Gleichen comes out at 2184.6 by Strathmore against 2189.1 by Carseland.
+# Rows run east to west like Table 6 (ab_cp_t006.csv); Nos. 7 and 8 ran by Carseland and are not in this file.
+#train col=No1 num=1 dir=down days="daily" kind=passenger
+#train col=No3 num=3 dir=down days="daily" kind=passenger
+#train col=No4 num=4 dir=up days="daily" kind=passenger
+#train col=No2 num=2 dir=up days="daily" kind=passenger
+mile,station,principal,No1,No3,No4,No2
+2184.6,Gleichen,1,lv 8.50p,lv 6.35a,ar 10.06p,ar 8.37a
+2189.3,Stobart,0,f8.58p,,,f8.30a
+2197.5,Namaka,0,9.09p,,,8.19a
+2205.3,Strathmore,1,9.20p,7.05a,9.40p,8.07a
+2212.5,Cheadle,0,f9.30p,,,f7.55a
+2219.4,Langdon,0,9.45p,,,7.45a
+2224.5,Bennett,0,f9.52p,,,f7.35a
+2229.9,Shepard,0,10.00p,,f9.00p,7.25a
+2235.2,Ogden,0,,,,
+2240.1,Calgary,1,ar 10.30p,ar 8.20a,lv 8.40p,lv 7.00a

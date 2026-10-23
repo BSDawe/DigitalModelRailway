@@ -1,0 +1,34 @@
+# Union Pacific Railroad, Table 5, Chicago, Omaha, Spokane, Portland, Tacoma and Seattle, table of April 4, 1948 (Official Guide page 840):
+# the westbound block The Dalles - Portland (Oregon, Columbia River south bank), miles as printed (from Omaha, The Dalles 1700). Times as printed:
+# PACIFIC TIME. The table above The Dalles (Pendleton and east) is not on the scans supplied.
+# !! TRAINS THAT DO NOT ENTER WASHINGTON: Nos. 17 (Portland Rose), 11 (Idahoan) and 105 (City of Portland) run Pendleton - The Dalles - Portland
+# entirely in Oregon (they come from Chicago/Omaha via Idaho). Entered because the request names them and the map shows the Columbia River line,
+# but by the rule "only trains that enter Washington" they may be dropped. No. 19 (The Spokane) comes from Spokane over Table 56 (wa_up_t056a)
+# and its times here agree with that table. Eastbound Nos. 12 and 18 are in wa_up_t005c (summary only); Nos. 20 and 106 are not on the scans.
+# Signs: * daily. No. 19 shows a "#"-like sign and Nos. 17 and 11 a trident-like sign at every intermediate station (Rowena - Graham), with no
+# time; the key is not on the scans supplied (probably "stops on signal to discharge/receive"). Left empty. f stops on flag. "No Extra Fare" on No. 105.
+#train col=No19 num=19 dir=down days="daily" kind=passenger from="Spokane" to="Portland" note="The Spokane. See wa_up_t056a for the Washington part."
+#train col=No17 num=17 dir=down days="daily" kind=passenger from="Chicago" to="Portland" note="Portland Rose. Does not enter Washington."
+#train col=No11 num=11 dir=down days="daily" kind=passenger from="Omaha" to="Portland" note="Idahoan. Does not enter Washington. Far end not on this page."
+#train col=No105 num=105 dir=down days="daily" kind=passenger from="Chicago" to="Portland" note="Streamliner City of Portland, no extra fare. Does not enter Washington."
+mile,station,principal,No19,No17,No11,No105
+1700,The Dalles,1,lv 5.00a,lv 4.00a,lv 3.50p,lv 6.10a
+1707,Rowena,0,,,,
+1711,Chatfield,0,,,,
+1715,Mosier,0,,,,
+1721,Hood River,1,5.40a,4.40a,4.27p,f6.38a
+1730,Lindsey,0,,,,
+1734,Wyeth,0,,,,
+1737,Farley,0,,,,
+1741,Cascade Locks,0,,,,
+1745,Bonneville,0,,,,
+1750,Dodson,0,,,,
+1752,Oneonta,0,,,,
+1754,Multnomah Falls,0,,,,
+1757,Bridal Veil,0,,,,
+1761,Rooster Rock,0,,,,
+1768,Troutdale,0,,,,
+1771,Fairview,0,,,,
+1775,Clarnie,0,,,,
+1780,Graham,0,,,,
+1784,Portland,1,ar 7.30a,ar 6.30a,ar 6.15p,ar 8.00a

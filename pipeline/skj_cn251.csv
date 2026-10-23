@@ -1,0 +1,12 @@
+# Joined through train (cn251), sk_join.py: skcn168:M251, skcn192b:M251; up skcn192b:M252, skcn168:M252
+# Rows and times as in the section files (see them for the scans, signs and doubts). Miles: counted along the run from the first station.
+#train col=D num=251 dir=down days="Tue,Thu,Sat" kind=mixed note="Through train: No. 251 Kamsack - Canora; No. 251 Canora - Hudson Bay Jn.. Kamsack b9.05 a.m. (Tue Thu Sat); Canora 10.25 a.m., then to Hudson Bay Junction (sk_cn_t192b.csv)."
+#train col=U num=252 dir=up days="Mon,Wed,Fri" kind=mixed note="Through train: No. 252 Hudson Bay Jn. - Canora; No. 252 Canora - Kamsack. Head 'M252' printed below M260 in the same column; Hudson Bay Jn. 6.15 a.m. marked a."
+mile,station,principal,prov,tz,D,U
+0.0,Kamsack,1,SK,C,lv 9.05a,ar 5.00p
+8.4,Verigin,0,SK,C,9.35a,4.30p
+16.6,Mikado,0,SK,C,f10.05a,f4.05p
+24.0,Canora,1,SK,C,ar 10.25a / lv 11.30a,ar 2.05p / lv 3.30p
+46.1,Sturgis,1,SK,C,ar 1.00p / lv 2.15p,ar 12.00p / lv 12.45p
+87.2,Reserve,1,SK,C,5.30p,8.25a
+117.8,Hudson Bay Jn.,1,SK,C,ar 7.25p,lv 6.15a

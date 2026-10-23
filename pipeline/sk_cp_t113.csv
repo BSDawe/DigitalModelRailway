@@ -1,0 +1,22 @@
+# Canadian Pacific, Table 113, Saskatoon - Gunnworth.
+# From the Canadian Pacific public timetable of about 1948 (scan cp1948_sk/tables108_112_115_northportal_moosejaw_saskatoon_lanigan.png, page 37).
+# Times as printed: MOUNTAIN TIME ("Mountain Time" heads the station column). Miles from Perdue as printed. All stations in Saskatchewan.
+# Signs (explanation of signs on this page): || = meal station; M = mixed train.
+# The table heads with "Lv Saskatoon || 92 Ar" with no mile ("..") and times M449 7.20a, M450 5.50p: the trains run Saskatoon - Perdue over the
+# Table 92 line ("Perdue 92"). Saskatoon has no mile in this table, so it is not a row here; its times are in the train notes.
+# References: Rosetown 117, Gunnworth 117. Malmgren 12.15 (M449) and Rosetown 12.00 (M450) are noon-hour p.m. times (column heads A.M./P.M.).
+# Slow running as printed (seen in two crops): M450 Glen Payne 11.15a to Rosetown 12.00p (3.8 miles in 45 minutes); M449 Malmgren 12.15p to Rosetown 1.35p.
+#train col=M449 num=449 dir=down days="Fri" kind=mixed from="Saskatoon" note="Leaves Saskatoon 7.20a (row printed without mile), over the Table 92 line to Perdue."
+#train col=M450 num=450 dir=up days="Sat" kind=mixed to="Saskatoon" note="Arrives Saskatoon 5.50p (row printed without mile), from Perdue over the Table 92 line."
+mile,station,principal,prov,tz,M449,M450
+0.0,Perdue,1,SK,M,9.15a,3.30p
+6.5,Catherwood,0,SK,M,9.35a,3.00p
+13.0,Feudal,0,SK,M,10.05a,2.30p
+19.3,Bents,0,SK,M,10.35a,2.05p
+25.0,Valley Centre,0,SK,M,11.20a,1.35p
+30.7,Marriott,0,SK,M,11.50a,1.05p
+35.9,Malmgren,0,SK,M,12.15p,12.40p
+46.0,Rosetown,1,SK,M,1.35p,12.00p
+49.8,Glen Payne,0,SK,M,2.00p,11.15a
+54.9,Stockdill,0,SK,M,2.30p,10.55a
+62.9,Gunnworth,1,SK,M,ar 3.15p,lv 10.30a

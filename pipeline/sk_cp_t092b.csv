@@ -1,0 +1,25 @@
+# Canadian Pacific, Tables 92 and 94: the Binscarth - Russell - Inglis branch, trains 105 and 106. All Manitoba.
+# From the Canadian Pacific public timetable of 1948 (scan cp1948/table092_winnipeg_saskatoon_wilkie_edmonton.png, printed sideways, small: every column
+# read at 3.4x and the Colonsay row at 6x; Wilkie - Hayter checked against cp1948/table092_wilkie_edmonton_LARGE.png, same figures).
+# Times as printed: CENTRAL TIME Winnipeg - Bredenbury, MOUNTAIN TIME Bredenbury and west (column "Time": "Central time" at the top, Bredenbury
+# "Ar ... Lv C.T." and "Lv ... Ar M.T.", "Mtn. time" at Edmonton). Bredenbury is printed twice (252.8 both): one row, tz C/M: No. 51 arrives 7.05a C.T.
+# and leaves 6.25a M.T. (= 7.25a C.T., 20 minutes); No. 52 arrives 9.40p M.T. and leaves 11.00p C.T. (= 10.00p M.T.). ab_table.py flags 51 at
+# Bredenbury: the time-zone change. Miles from Winnipeg as printed.
+# Signs (explanation not on these scans; meanings as on the Tables 149/150 page, as in ab_cp_t092.csv): f = stops on signal; || = meal station;
+# M = mixed train; dagger = daily ex. Sun.; double dagger = daily ex. Sat.; paragraph sign = daily ex. Mon.; cross = C.P. Air Lines connection (Saskatoon);
+# c (No. 51 Sclanders 1.01p, No. 52 Sclanders 2.18p) is not explained on any scan in the set: entered as a plain time.
+# Day signs of Nos. 51 and 52: No. 51 leaves Winnipeg 10.15p with double dagger (daily ex. Sat.), Gladstone 12.33a and Bredenbury, Lanigan, Saskatoon,
+# Wilkie, Hayter with dagger (daily ex. Sun.). No. 52 arrives Winnipeg 8.10a and Millwood 12.14a with paragraph (daily ex. Mon.), Harrowby 11.58p,
+# Bredenbury 9.40p, Saskatoon, Wilkie, Hardisty with dagger (daily ex. Sun.); it leaves Edmonton 10.40p daily ex. Sat. and Hayter 5.10a daily ex. Sun.
+# Equipment note (Nos. 51-52 "Great West", Winnipeg - Edmonton: coaches, tourist sleeper, sleeper; buffet parlor Bredenbury - Wilkie).
+# Times as printed: CENTRAL TIME. Miles from Winnipeg as printed. "Russell 94" refers to Table 94. Table 92 printed Binscarth lv 5.20p / ar 8.15a (11 miles in 77 and 58 minutes);
+# Extended 18 Oct 2026 from Table 94 (cp1948_mb/t094.png): Binscarth ar 5.20p / lv 5.50p (105) and ar 7.55a / lv 8.15a (106); Penrith f, Russell,
+#   Cracknell, Inglis (234.6) added. f = stops on signal.
+#train col=No105 num=105 dir=down days="Tue,Thu,Sat" kind=passenger from="Winnipeg" note="From Winnipeg 9.50a - Binscarth 5.20p (sk_cp_t092a.csv); Binscarth 5.50p to Inglis 7.25p."
+#train col=No106 num=106 dir=up days="Mon,Wed,Fri" kind=passenger to="Winnipeg" note="Inglis 6.30a to Binscarth 7.55a; continues Binscarth 8.15a - Winnipeg 3.25p (sk_cp_t092a.csv)."
+mile,station,principal,prov,tz,No105,No106
+210.7,Binscarth,1,MB,C,ar 5.20p / lv 5.50p,ar 7.55a / lv 8.15a
+215.9,Penrith,0,MB,C,f6.05p,f7.33a
+221.7,Russell,1,MB,C,6.37p,7.17a
+228.5,Cracknell,0,MB,C,7.00p,6.45a
+234.6,Inglis,1,MB,C,ar 7.25p,lv 6.30a

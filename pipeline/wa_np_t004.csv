@@ -1,0 +1,59 @@
+# Northern Pacific Railway, Table 4, Puget Sound Line - Seattle - Tacoma - Portland, table of April 4, 1948 (Official Guide). Times as printed:
+# PACIFIC TIME. Pooled Seattle - Portland trains of the NP, GN and UP.
+# SEATTLE: two rows as printed, "Seattle (King St. Sta.)" and "lv. Seattle (Un. Sta.) ar.", both mile 0. Nos. 458 and 457 use Union Station
+# and North Puyallup (UP trains); the rest King Street Station. North Puyallup has NO MILE PRINTED: entered as 31 (between Sumner 29 and
+# Puyallup 32) only to place it - not from the scan. Tacoma "arr." and "lve." rows are folded into one row.
+# No "Via Steilacoom"/"Via Point Defiance" note is printed; Steilacoom (mile 56) is on the line, Nos. 460, 457 and 401 call there.
+# Signs: * daily; f stops on flag; dagger (entered days "ex Sun") daily except Sunday. The other signs are entered as plain times: t (402 Kent),
+# b (460 Kent), z (460 Sumner; could be g), double dagger or # (460 Puyallup), square (458 Kent, Auburn, Sumner, North Puyallup), x (457 Kent,
+# Auburn, Sumner), n (408 Chehalis; 459 Kent, Auburn, Sumner, Puyallup), c (458 Winlock), a (459 Winlock), v (407 East Olympia), a dot (407
+# Chehalis). The NP key on np_201928 (Table 3's page) defines a, b, c, d, e, f, g, h, n, t, y, z for main-line trains and does not fit these
+# uses; the key for the square, x, v, dot and the crescent moon is not on the scans supplied.
+# Nos. 422 and 423 show a crescent moon at Steilacoom (key not supplied; left empty). They run to / come from Grays Harbor points via St.
+# Clair (Table 60). Nos. 402 and 460 have an "f" with no time at Evaline and Carrolls (flag stops, no time printed): left empty.
+# Titlow (Brendan, 12 Oct 2026): not printed in NP Table 4; GN Table 46 and UP Table 5 give No. 401 a flag stop 4.38 a.m. (GN mile 137, UP 135.0).
+#   Mile 49.9 here: UP 9.7 mi from Tacoma, scaled to this table's Tacoma - Steilacoom 16 mi.
+#train col=No402 num=402 dir=down days="daily" kind=passenger from="Seattle" to="Portland" note="Night train, King St. Sta."
+#train col=No458 num=458 dir=down days="daily" kind=passenger from="Seattle" to="Portland" note="From Seattle Union Sta. via North Puyallup (UP pool train)."
+#train col=No408 num=408 dir=down days="daily" kind=passenger from="Seattle" to="Portland" note="King St. Sta."
+#train col=No460 num=460 dir=down days="daily" kind=passenger from="Seattle" to="Portland" note="Local, via Steilacoom. King St. Sta."
+#train col=No422 num=422 dir=down days="ex Sun" kind=passenger from="Seattle" to="Grays Harbor points" note="To Grays Harbor points, see Table 60."
+#train col=No457 num=457 dir=up days="daily" kind=passenger from="Portland" to="Seattle" note="Local, via Steilacoom; to Seattle Union Sta. via North Puyallup (UP pool train)."
+#train col=No407 num=407 dir=up days="daily" kind=passenger from="Portland" to="Seattle" note="King St. Sta."
+#train col=No423 num=423 dir=up days="ex Sun" kind=passenger from="Grays Harbor points" to="Seattle" note="From Grays Harbor points, see Table 60."
+#train col=No459 num=459 dir=up days="daily" kind=passenger from="Portland" to="Seattle" note="King St. Sta."
+#train col=No401 num=401 dir=up days="daily" kind=passenger from="Portland" to="Seattle" note="Night train, via Steilacoom. King St. Sta."
+mile,station,principal,No402,No458,No408,No460,No422,No457,No407,No423,No459,No401
+0,Seattle (King St. Sta.),1,lv 11.30p,,lv 12.25p,lv 8.20a,lv 7.45a,,ar 4.10p,ar 8.20p,ar 9.00p,ar 6.45a
+0,Seattle (Union Sta.),1,,lv 4.00p,,,,ar 2.00p,,,,
+16,Kent,0,11.54p,4.24p,,8.44a,8.11a,1.30p,,7.47p,8.37p,6.13a
+22,Auburn,1,12.02a,4.31p,,8.54a,8.20a,1.21p,,7.35p,8.28p,6.01a
+26,Dieringer,0,,,,,f8.31a,,,,,
+29,Sumner,0,f12.12a,4.42p,,9.04a,8.37a,1.06p,,7.19p,8.17p,5.48a
+31,North Puyallup,0,,4.46p,,,,1.01p,,,,
+32,Puyallup,1,12.20a,,,9.09a,8.45a,,,7.12p,8.13p,5.40a
+40,Tacoma,1,ar 12.40a / lv 1.00a,ar 5.00p / lv 5.10p,ar 1.15p / lv 1.19p,ar 9.25a / lv 9.35a,ar 9.05a / lv 9.25a,ar 12.35p / lv 12.45p,ar 3.11p / lv 3.15p,ar 6.42p / lv 6.55p,ar 7.50p / lv 8.00p,ar 5.00a / lv 5.20a
+49.9,Titlow,0,,,,,,,,,,f4.38a
+56,Steilacoom,0,,,,10.00a,,12.10p,,,,4.25a
+65,Nisqually,1,f1.38a,,,f10.11a,10.27a,,,5.44p,f7.15p,f4.10a
+68,St. Clair,1,,,,,ar 10.37a,,,lv 5.35p,,
+75,East Olympia,1,f1.51a,5.59p,2.03p,,,11.40a,2.24p,,,
+83,Tenino,1,2.15a,,,,,11.26a,,,,3.32a
+87,Bucoda,1,f2.23a,,,10.39a,,f11.21a,,,,f3.20a
+94,Centralia,1,2.53a,6.28p,2.30p,10.55a,,11.10a,2.00p,,6.37p,3.10a
+98,Chehalis,1,3.05a,6.37p,2.38p,11.08a,,10.58a,1.50p,,6.27p,2.43a
+105,Napavine,1,3.25a,,,11.21a,,10.43a,,,,f2.21a
+108,Evaline,0,,,,,,,,,,
+111,Winlock,0,3.36a,6.55p,,11.33a,,10.35a,,,6.10p,2.07a
+119,Vader,1,3.47a,,,11.44a,,10.25a,,,,f1.54a
+128,Castle Rock,0,4.05a,,,12.02p,,10.10a,,,,1.40a
+134,Ostrander,0,f4.15a,,,f12.13p,,f10.01a,,,,f1.27a
+137,Kelso-Longview,1,4.35a,7.30p,3.24p,12.20p,,9.56a,1.05p,,5.40p,1.22a
+142,Carrolls,0,,,,,,,,,,
+147,Kalama,1,4.55a,,,12.35p,,9.39a,,,,12.49a
+157,Woodland,0,5.16a,,,12.48p,,9.25a,,,,12.30a
+162,Ridgefield,0,5.31a,,,12.56p,,f9.16a,,,,12.18a
+170,Felida,0,,,,f1.07p,,f9.05a,,,,
+176,Vancouver,1,6.15a,8.17p,4.10p,1.20p,,8.58a,12.22p,,4.55p,11.57p
+178,North Portland,1,,,,f1.25p,,f8.54a,,,,
+186,Portland,1,ar 6.45a,ar 8.45p,ar 4.35p,ar 1.50p,,lv 8.30a,lv 12.01p,,lv 4.30p,lv 11.30p

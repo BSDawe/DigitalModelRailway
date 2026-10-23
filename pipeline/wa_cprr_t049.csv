@@ -1,0 +1,10 @@
+# Camas Prairie Railroad (NP/UP joint; R. E. Hanrahan, Manager, Lewiston, Idaho), Table 49, Lewiston - Almota - Riparia, table of February 1,
+# 1948 (Official Guide, in the NP section). Times as printed: PACIFIC TIME. "M" printed over the table: mixed trains.
+# IDAHO: the trains start/end at Lewiston, Idaho (mile 0), the first Idaho station beyond Almota; only the Washington stations are entered.
+# Signs: * (at Lewiston for No. 73, Riparia for No. 74) taken as daily; the Camas Prairie key is not on the scan supplied.
+# Tables 48 (Lewiston - Grangeville) and 50 (Lewiston - Arrow - Orofino - Stites) on the same scan are all Idaho: skipped.
+#train col=No73 num=73 dir=down days="daily" kind=passenger from="Lewiston" to="Riparia" note="Lewiston lv 6.20 p.m. Daily taken from the * sign (key not supplied)."
+#train col=No74 num=74 dir=up days="daily" kind=passenger from="Riparia" to="Lewiston" note="Lewiston ar 8.25 a.m. Daily taken from the * sign (key not supplied)."
+mile,station,principal,No73,No74
+36,Almota,0,7.18p,7.15a
+71,Riparia,1,ar 8.30p,lv 6.15a

@@ -1,0 +1,48 @@
+# Union Pacific Railroad, Table 5, Chicago, Omaha, Spokane, Portland, Tacoma and Seattle, table of April 4, 1948 (Official Guide pages 839-840,
+# scans up_t005_p1 and p2, supplied by Brendan 9 October 2026). Transcribed by Claude. Times as printed: PACIFIC TIME (west of Huntington).
+# The UP's Oregon trains that share the Columbia River line with the Washington trains (Brendan: they appear and disappear where the data
+# ends, here at Pendleton). Pendleton - The Dalles they run "Via Cut-off" (Hinkle - Ordnance), not by Umatilla. Nos. 19/20 (The Spokane)
+# are in wa_up_t056a/c (Table 56), and 65/66 in wa_up_t056b. Signs (Brendan's key): * daily; f stops on signal; the d, c, z, y, trident and
+# similar conditional signs at intermediate stations (no time) are not modelled. "No Extra Fare" on the City of Portland. Replaces wa_up_t005a/c.
+# Pendleton: No. 106 arrives 9.38 p.m. (leaves 9.43 east, upper part of p2); The Dalles: No. 105's single time 6.10 a.m. on both pages.
+#train col=No17 num=17 dir=down days="daily" kind=passenger note="Portland Rose."
+#train col=No11 num=11 dir=down days="daily" kind=passenger note="Idahoan."
+#train col=No105 num=105 dir=down days="daily" kind=passenger note="Streamliner City of Portland. No extra fare."
+#train col=No106 num=106 dir=up days="daily" kind=passenger note="Streamliner City of Portland. No extra fare."
+#train col=No12 num=12 dir=up days="daily" kind=passenger note="Idahoan."
+#train col=No18 num=18 dir=up days="daily" kind=passenger note="Portland Rose."
+mile,station,principal,No17,No11,No105,No106,No12,No18
+1568,Pendleton,1,lv 12.10a,lv 12.35p,lv 3.55a,ar 9.38p,ar 1.20p,ar 2.00a
+1600,Hinkle,0,,,,,,
+1613,Ordnance,0,f1.13a,f1.39p,,,12.18p,
+1620,Boardman,0,,,,,,
+1635,Heppner Junction,1,,,,,,
+1646,Arlington,1,2.20a,2.25p,,,11.30a,12.19a
+1654,Blalock,0,,,,,,
+1660,Quinton,0,,,,,,
+1668,Goff,0,,,,,,
+1674,Rufus,0,,,,,,
+1677,Grant,0,,,,,,
+1680,Biggs,1,,,,,,
+1683,Miller,0,,,,,,
+1687,Celilo,0,,,,,,
+1700,The Dalles,1,ar 3.50a / lv 4.00a,ar 3.45p / lv 3.50p,6.10a,7.20p,ar 10.15a / lv 10.20a,ar 11.10p / lv 11.15p
+1707,Rowena,0,,,,,,
+1711,Chatfield,0,,,,,,
+1715,Mosier,0,,,,,,
+1721,Hood River,1,4.40a,4.27p,f6.38a,f6.50p,9.40a,10.38p
+1730,Lindsey,0,,,,,,
+1734,Wyeth,0,,,,,,
+1737,Farley,0,,,,,,
+1741,Cascade Locks,0,,,,,,
+1745,Bonneville,0,,,,,f9.04a,
+1750,Dodson,0,,,,,,
+1752,Oneonta,0,,,,,,
+1754,Multnomah Falls,0,,,,,,
+1757,Bridal Veil,0,,,,,,
+1761,Rooster Rock,0,,,,,,
+1768,Troutdale,0,,,,,f8.36a,
+1771,Fairview,0,,,,,,
+1775,Clarnie,0,,,,,,
+1780,Graham,0,,,,,,
+1784,Portland,1,ar 6.30a,ar 6.15p,ar 8.00a,lv 5.30p,lv 8.10a,lv 9.10p

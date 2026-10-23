@@ -1,0 +1,44 @@
+# Canadian Pacific, Table 126, Bredenbury - Yorkton - Nipawin.
+# From the Canadian Pacific public timetable of about 1948 (scan cp1948_sk/tables126_128_bredenbury_nipawin_swiftcurrent_lloydminster.png, printed sideways).
+# Times as printed: MOUNTAIN TIME ("Mountain Time" heads the station column). Miles from Bredenbury as printed. All stations in Saskatchewan.
+# Signs: f = stops on signal; || = meal station (Rose Valley). (Explanation of signs not on this scan.) References: Bredenbury 92, Yorkton 92,
+# Sheho 92, Nipawin 116. Yorkton, Sheho and Rose Valley are printed twice (Ar / Lv): one row each with ar / lv.
+# Odd print: 330 at Lurgan "10f36" (f between hour and minutes): entered f10.36a. 329 at Rose Valley ar 2.50 and lv 2.50 (no stop time printed).
+#train col=No329 num=329 dir=down days="Tue,Thu,Sat" kind=passenger
+#train col=No330 num=330 dir=up days="Mon,Wed,Fri" kind=passenger
+mile,station,principal,prov,tz,No329,No330
+0.0,Bredenbury,1,SK,M,lv 8.45a,ar 5.35p
+8.4,Saltcoats,0,SK,M,9.01a,5.20p
+14.0,Clonmel,0,SK,M,f9.10a,f5.08p
+18.2,Rokeby,0,SK,M,9.17a,5.00p
+26.0,Yorkton,1,SK,M,ar 9.30a / lv 10.25a,ar 4.25p / lv 4.45p
+34.0,Orcadia,0,SK,M,10.40a,4.10p
+41.6,Springside,0,SK,M,10.55a,3.56p
+50.9,Theodore,0,SK,M,11.15a,3.40p
+60.6,Insinger,0,SK,M,11.30a,3.24p
+67.9,Sheho,1,SK,M,ar 11.40a / lv 12.10p,ar 3.00p / lv 3.10p
+73.8,Goudie,0,SK,M,12.25p,2.45p
+80.3,Layco,0,SK,M,12.40p,2.30p
+86.6,Edfield,0,SK,M,12.53p,2.17p
+91.1,Fishing Lake,0,SK,M,1.02p,2.07p
+97.8,Tornea,0,SK,M,1.15p,1.53p
+103.4,Wadena,0,SK,M,1.35p,1.41p
+107.5,Hinchley,0,SK,M,f1.45p,f1.31p
+113.7,Hendon,0,SK,M,2.05p,1.18p
+120.9,Fosston,0,SK,M,2.25p,1.00p
+127.9,Rose Valley,1,SK,M,ar 2.50p / lv 2.50p,ar 12.20p / lv 12.45p
+133.8,Nora,0,SK,M,3.05p,12.08p
+138.4,Archerwill,0,SK,M,3.20p,11.58a
+141.9,Algrove,0,SK,M,3.30p,11.49a
+146.4,Barford,0,SK,M,3.40p,11.39a
+151.0,McKague,0,SK,M,3.55p,11.29a
+157.5,Sylvania,0,SK,M,4.15p,11.15a
+161.9,Golburn,0,SK,M,4.29p,11.03a
+168.3,Tisdale,0,SK,M,4.50p,10.48a
+172.7,Lurgan,0,SK,M,f5.02p,f10.36a
+178.7,Runciman,0,SK,M,5.15p,10.24a
+183.2,Leacross,0,SK,M,5.25p,10.13a
+188.0,Armley,0,SK,M,5.36p,10.02a
+194.2,Pontrilas,0,SK,M,5.50p,9.48a
+199.3,Codette,0,SK,M,6.05p,9.35a
+205.5,Nipawin,1,SK,M,ar 6.20p,lv 9.20a

@@ -1,0 +1,23 @@
+# Canadian Pacific Railway, Table 143, Calgary - Wimborne - Kneehill: section b, the Wimborne branch, Cosway - Wimborne (all in Alberta).
+# From the Canadian Pacific public timetable, 1948 (scans table143_calgary_wimborne_kneehill_LARGE.png and tables138_143_calgary_edmonton_kneehill.png;
+# the two captures agree on every figure). Times as printed: MOUNTAIN TIME.
+# This branch LEAVES THE CALGARY - KNEEHILL LINE (ab_cp_t143a.csv) AT COSWAY, which is mile 62.4 from Calgary on that line (1.9 miles beyond
+# Acme). The table starts the miles again at Cosway: the miles here are from Cosway, as printed (Wimborne is 62.4 + 27.3 = 89.7 from Calgary).
+# Signs (the scans do not show this page's "Explanation of signs"; meanings from the 149/150 page of the same timetable): M before a train
+# number = mixed train; f = stops on signal. Days are in the column headings: M629 Fri., M630 Sat.
+# Both are through trains from and to Calgary: M629 leaves Calgary 7.20a Friday and is at Cosway 11.50a (one time printed, in the arrive row
+# of the Calgary section and again in the leave row of this section); M630 leaves Wimborne Saturday morning, is at Cosway 9.15a (the same in
+# both rows) and arrives Calgary 2.30p. The train stays the night at Wimborne.
+# a.m./p.m.: M629 Cosway 11.50 a.m., p.m. from Bargrave 12.05 (foot of column P.M.); M630 a.m. throughout.
+# Slow running the scan really shows: M629 Sunnyslope 12.50p to Allingham 1.30p (3.5 miles in 40 minutes), Allingham to Torrington (6.3 miles
+# in an hour); M630 Wimborne 7.00a to Torrington 7.55a (7.0 miles in 55 minutes).
+#train col=M629 num=629 dir=down days="Fri" kind=mixed from="Calgary" note="Calgary (lv 7.20a) to Wimborne by Langdon, Irricana and Cosway; Calgary to Cosway is in ab_cp_t143a.csv. Meal station at Acme."
+#train col=M630 num=630 dir=up days="Sat" kind=mixed to="Calgary" note="Wimborne to Calgary (ar 2.30p) by Cosway, Irricana and Langdon; Cosway to Calgary is in ab_cp_t143a.csv. Meal station at Acme."
+mile,station,principal,M629,M630
+0.0,Cosway,1,lv 11.50a,ar 9.15a
+2.9,Bargrave,0,f12.05p,f9.05a
+5.7,Linden,0,f12.20p,f8.55a
+10.5,Sunnyslope,0,12.50p,8.40a
+14.0,Allingham,0,1.30p,8.25a
+20.3,Torrington,0,2.30p,7.55a
+27.3,Wimborne,1,ar 3.00p,lv 7.00a

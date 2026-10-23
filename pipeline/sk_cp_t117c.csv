@@ -1,0 +1,26 @@
+# Canadian Pacific, Table 117, Moose Jaw - Kerrobert - Macklin: Outlook - Milden - Gunnworth and Wartime - Matador (mixed trains M421 / M422).
+# From the Canadian Pacific public timetable of about 1948 (scan cp1948_sk/tables117_119_moosejaw_kerrobert_macklin_wilkie.png, printed sideways; "READ DOWN" / "READ UP").
+# Times as printed: MOUNTAIN TIME ("Mountain Time" heads the station column). All stations in Saskatchewan (Macklin is the last Saskatchewan station of the line).
+# Signs (explanation of signs on this page): f = stops on signal; || = meal station (Moose Jaw, Outlook); M = mixed train; .. = does not stop (left empty).
+# Miles from Moose Jaw as printed. The table prints the Wartime - Matador section (Lv Wartime 180.5 ... Ar Matador 216.0) as a separate block; M421 and
+# M422 run Outlook - Milden - Gunnworth in the rows above it (M421 Gunnworth 4.00p, Wartime 4.30p; M422 Wartime 9.25a, Gunnworth 10.20a). The junction
+# for Wartime is not printed; Gunnworth 172.4 to Wartime 180.5 is taken from the mileages. Outlook - Gunnworth rows are the same as in sk_cp_t117b.csv.
+#train col=M421 num=421 dir=down days="Tue,Fri" kind=mixed
+#train col=M422 num=422 dir=up days="Wed,Sat" kind=mixed note="Gaines 12.05p, Glamis 11.30a: the noon change as printed."
+mile,station,principal,prov,tz,M421,M422
+119.4,Outlook,1,SK,M,lv 11.30a,ar 2.05p
+121.7,Betalock,0,SK,M,,
+128.8,Conquest,0,SK,M,12.10p,f1.35p
+134.1,Bounty,0,SK,M,f12.35p,f1.15p
+141.7,Milden,1,SK,M,ar 1.00p / lv 1.30p,ar 12.35p / lv 12.50p
+149.6,Gaines,0,SK,M,2.05p,12.05p
+157.4,Glamis,0,SK,M,2.40p,11.30a
+165.0,Thrasher,0,SK,M,3.10p,10.55a
+172.4,Gunnworth,1,SK,M,4.00p,10.20a
+180.5,Wartime,1,SK,M,4.30p,9.25a
+186.8,Lille,0,SK,M,4.50p,9.05a
+192.4,Mondou,0,SK,M,5.10p,8.45a
+198.4,Sanctuary,0,SK,M,6.00p,8.25a
+204.7,Tuberose,0,SK,M,6.45p,7.30a
+210.9,Kyle,0,SK,M,7.45p,6.50a
+216.0,Matador,1,SK,M,ar 8.05p,lv 6.20a

@@ -1,0 +1,94 @@
+# Great Northern Railway, Table 5, Main Line (continued), table of February 8, 1948 (Official Guide). Washington part: Newport - Spokane -
+# Wenatchee - Skykomish - Everett - Seattle (King St. Station). Times as printed: PACIFIC TIME. Through service Spokane - Portland over the
+# S.P.&S. is wa_gn_t005c.csv.
+# IDAHO: the first Idaho station beyond Newport, Wash. (mile 1388) is Priest River, Idaho, mile 1381 (the table begins at Sand Point, 1354).
+# Spokane cells give the arrival from the Sand Point section and the departure of the main section (Nos. 27, 1, 3, 2, 4, 28).
+# Signs: * daily; f flag stop for revenue passengers (GN key, gn_201249). No. 3 shows the sign "#" at most stations from Fort Wright to Ballard:
+# "stops to discharge revenue passengers from points south of Shelby or east of Havre where No. 3 is scheduled to stop" - no time printed, left
+# empty. No. 4 shows a black square at most stations (Penrith - Hillyard, Fort Wright - Ballard), no time printed and no key on the scans: left
+# empty. No. 3 at Sand Point has a sign like a yen mark and at Priest River an "a" (Idaho; key not supplied). Wenatchee has one time per train.
+# Heavy type = P.M. in this table. Not entered: the Victoria steamer row (No. 3 ar Victoria 8.00 a.m., No. 4 lv 12.15 p.m., "Steamer via
+# Seattle") and the Seattle (King St.) - Kent - Auburn - Sumner - Puyallup - Tacoma (Union Station) block, which repeats pool trains of NP Table 4
+# (cols 1 and 3 = NP 460, Seattle 8.20 - Tacoma 9.25 a.m.; col 2 = NP 457, Tacoma 12.45 - Seattle 2.00 p.m.; col 4 = NP 459, Tacoma 8.00 - Seattle
+# 9.00 p.m.; col 6 = NP 401, Tacoma 5.20 - Seattle 6.45 a.m.; same times).
+# Far ends of Nos. 1-4, 27 and 28 are not on this page (the table begins at Sand Point here).
+# CHECKER FLAG, as printed (read twice): No. 5 Voltage f12.30 - Rock Island f12.32 p.m., No. 6 Rock Island f2.00 - Voltage f2.02 p.m.:
+# 3 miles in 2 minutes (90 mph). One of the figures is likely a misprint in the Guide; not changed.
+#train col=No5 num=5 dir=down days="daily" kind=passenger from="Spokane" to="Seattle" note="Day local Spokane - Wenatchee - Seattle."
+#train col=No27 num=27 dir=down days="daily" kind=passenger from="St. Paul" to="Seattle" note="The Fast Mail, St. Paul - Seattle. Carries coach passengers only."
+#train col=No1 num=1 dir=down days="daily" kind=passenger from="Chicago" to="Seattle" note="The Empire Builder. Far end not on this page."
+#train col=No3 num=3 dir=down days="daily" kind=passenger from="Chicago" to="Seattle" note="The Oriental Limited. Steamer connection for Victoria. Far end not on this page."
+#train col=No2 num=2 dir=up days="daily" kind=passenger from="Seattle" to="Chicago" note="The Empire Builder. Far end not on this page."
+#train col=No4 num=4 dir=up days="daily" kind=passenger from="Seattle" to="Chicago" note="The Oriental Limited. Steamer connection from Victoria. Far end not on this page."
+#train col=No6 num=6 dir=up days="daily" kind=passenger from="Seattle" to="Spokane" note="Day local Seattle - Wenatchee - Spokane."
+#train col=No28 num=28 dir=up days="daily" kind=passenger from="Seattle" to="St. Paul" note="The Fast Mail, Seattle - St. Paul. Carries coach passengers only."
+mile,station,principal,No5,No27,No1,No3,No2,No4,No6,No28
+1388,Newport,1,,4.55p,,f7.55p,,f8.48a,,10.40a
+1391,Penrith,0,,f5.02p,,,,,,f10.31a
+1395,Scotia,0,,f5.09p,,,,,,f10.24a
+1402,Camden,0,,f5.20p,,,,,,f10.13a
+1405,Elk,0,,f5.25p,,,,,,f10.08a
+1409,Milan,0,,f5.33p,,,,,,f10.00a
+1416,Chattaroy,0,,f5.42p,,,,,,f9.50a
+1420,Dean,0,,f5.47p,,,,,,f9.45a
+1424,Mead,0,,f5.56p,,,,,,f9.38a
+1429,Hillyard,1,,6.05p,,,,,,9.30a
+1434,Spokane,1,lv 8.30a,ar 6.20p / lv 7.00p,ar 11.30p / lv 11.59p,ar 9.15p / lv 9.35p,ar 11.00p / lv 11.30p,ar 7.00a / lv 7.30a,ar 6.30p,ar 8.10a / lv 9.15a
+1436,Fort Wright,0,f8.35a,,,,,,f6.22p,
+1443,Highland,0,f8.45a,,,,,,f6.10p,
+1446,Lyons,0,f8.50a,,,,,,f6.04p,
+1451,Galena,0,f8.59a,,,,,,f5.55p,
+1455,Espanola,0,f9.05a,,,,,,f5.48p,
+1462,Waukon,0,f9.15a,,,,,,f5.39p,
+1468,Edwall,0,9.24a,,,,,,5.31p,
+1471,Canby,0,f9.29a,,,,,,f5.23p,
+1477,Bluestem,0,f9.36a,,,,,,f5.16p,
+1484,Harrington,0,9.46a,,,,,,5.05p,
+1491,Mohler,0,f9.55a,,,,,,f4.54p,
+1495,Downs,0,f10.00a,,,,,,f4.47p,
+1499,Lamona,0,f10.06a,,,,,,f4.40p,
+1505,Nemo,0,f10.14a,,,,,,f4.31p,
+1510,Odessa,0,10.22a,,,,,,4.23p,
+1518,Irby,0,f10.35a,,,,,,f4.08p,
+1526,Marlin,0,10.45a,,,,,,3.58p,
+1533,Wilson Creek,0,10.55a,,,,,,3.48p,
+1540,Stratford,0,f11.05a,,,,,,f3.35p,
+1546,Adrian,1,f11.12a,,,,,,f3.27p,
+1550,Soap Lake,0,11.18a,,,,,,3.19p,
+1556,Ephrata,0,11.30a,9.50p,2.17a,12.33a,8.35p,4.08a,3.10p,5.31a
+1561,Naylor,0,f11.38a,,,,,,f2.59p,
+1566,Winchester,0,f11.45a,,,,,,f2.51p,
+1572,Quincy,0,11.55a,,,,,,2.42p,
+1577,Crater,0,f12.02p,,,,,,f2.32p,
+1583,Trinidad,0,12.12p,,,,,,2.23p,
+1592,Columbia River,0,f12.25p,,,,,,f2.08p,
+1595,Voltage,0,f12.30p,,,,,,f2.02p,
+1598,Rock Island,0,f12.32p,,,,,,f2.00p,
+1601,Malaga,0,f12.41p,,,,,,f1.53p,
+1608,Wenatchee,1,1.05p,11.15p,3.30a,2.00a,7.30p,2.35a,1.40p,4.15a
+1615,Monitor,0,f1.18p,,,,,,f1.18p,
+1619,Cashmere,0,1.29p,,,,,,1.09p,3.25a
+1624,Dryden,0,1.38p,,,,,,12.57p,
+1627,Peshastin,0,1.44p,,,,,,12.49p,
+1630,Leavenworth,0,1.52p,,,,,,12.43p,3.10a
+1636,Chumstick,0,f2.03p,,,,,,f12.34p,
+1644,Winton,0,f2.16p,,,,,,f12.24p,
+1650,Merritt,0,f2.27p,,,,,,f12.15p,
+1657,Berne,0,f2.42p,,,,,,f12.01p,
+1666,Scenic,0,3.03p,,,,,,11.40a,
+1678,Skykomish,1,3.37p,2.15a,5.55a,4.45a,5.13p,12.05a,11.10a,1.05a
+1683,Grotto,0,f3.43p,,,,,,f10.51a,
+1688,Baring,0,f3.48p,,,,,,f10.45a,
+1693,Index,0,3.59p,,,,,,10.33a,
+1698,Reiter,0,f4.08p,,,,,,f10.24a,
+1702,Gold Bar,0,4.28p,,,,,,10.16a,
+1708,Sultan,0,4.36p,,,,,,10.07a,
+1715,Monroe,0,4.48p,,,,,,9.57a,11.52p
+1722,Snohomish,1,4.58p,,,,,,9.42a,11.34p
+1731,Everett,1,5.25p,3.55a,7.10a,6.28a,3.55p,10.34p,9.30a,11.18p
+1735,Mukilteo,0,f5.32p,,,,,,,
+1742,Meadowdale,0,,,,,,,,
+1746,Edmonds,0,5.49p,,,,,,,
+1749,Richmond Beach,0,5.55p,,,,,,,
+1757,Ballard,1,,,,,,,,
+1764,Seattle (King St. Sta.),1,ar 6.30p,ar 5.00a,ar 8.00a,ar 7.30a,lv 3.00p,lv 9.30p,lv 8.30a,lv 10.00p

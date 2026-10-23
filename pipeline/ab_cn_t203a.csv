@@ -1,0 +1,31 @@
+# Canadian National Railways, Table 203, Edmonton - Heinsburg - Beaver River: the part Edmonton - Abilene - St. Paul - Heinsburg.
+# Official Guide, May 1948; table dated April 25, 1948. Times as printed: MOUNTAIN TIME ("M.T." in the heading). Wholly in Alberta.
+# The table divides at Abilene (mile 115.3). As printed, St. Paul and Elk Point are on the Heinsburg line (miles 127.0, 146.4, 166.8); the other
+# branch, Abilene - Bonnyville - Fort Kent - Beaver River (miles 115.3, 152.2, 158.5, 172.8), is in ab_cn_t203b.csv.
+# Signs (the page's own key, which differs from the key to the section): a double dagger = daily, except Saturday (heads the column of No. 96 and
+# stands at both starts of No. 126); a dagger = daily, except Sunday (No. 95 at Heinsburg, No. 125); + coupon station; triangle at Edmonton =
+# restaurant or lunch counter. No train in this table is marked M (mixed) or as a motor train, so all are entered as passenger.
+# Abilene is printed twice (arr. and lve.); the two lines are one row here.
+# Nos. 125 and 126 are one Bonnyville - Abilene - St. Paul train, turning at Abilene. Its Abilene - St. Paul calls are here and its
+# Abilene - Bonnyville calls are in ab_cn_t203b.csv, under the same col names and nums (T125, T126):
+#   No. 125: Bonnyville lv 8.00a, Abilene ar 9.25a (file b); Abilene lv 9.50a, St. Paul ar 10.15a (this file).
+#   No. 126: St. Paul lv 4.15p, Abilene ar 4.40p (this file); Abilene lv 5.35p, Bonnyville ar 7.15p (file b).
+# At Abilene No. 96 (ar 5.20p) meets No. 126 (lv 5.35p for Bonnyville), and No. 125 (ar 9.25a from Bonnyville) meets No. 95 (lv 9.40a).
+# No. 96 takes 65 minutes over the 11.7 miles Abilene - St. Paul (11 mph); the figures 5.35 and 6.40 are clear in the scan.
+#train col=T96 num=96 dir=down days="Mon,Tue,Wed,Thu,Fri,Sun" kind=passenger note="Daily except Saturday. Connects at Abilene with No. 126 for Bonnyville."
+#train col=T95 num=95 dir=up days="ex Sun" kind=passenger note="Connection at Abilene from Bonnyville by No. 125."
+#train col=T125 num=125 dir=down days="ex Sun" kind=passenger from="Bonnyville" note="From Bonnyville 8.00a, at Abilene 9.25a (see ab_cn_t203b.csv); turns at Abilene."
+#train col=T126 num=126 dir=up days="Mon,Tue,Wed,Thu,Fri,Sun" kind=passenger to="Bonnyville" note="Daily except Saturday. Goes on from Abilene 5.35p to Bonnyville 7.15p (see ab_cn_t203b.csv); turns at Abilene."
+mile,station,principal,T96,T95,T125,T126
+0.0,Edmonton,1,lv 12.30p,ar 2.00p,,
+3.1,North Edmonton,0,12.42p,1.45p,,
+22.4,Gibbons,0,1.28p,12.57p,,
+49.9,Radway,0,2.28p,12.03p,,
+71.4,Smoky Lake,0,3.29p,11.22a,,
+86.8,Bellis,0,4.10p,10.40a,,
+96.6,Vilna,0,4.32p,10.20a,,
+111.5,Ashmont,0,5.05p,9.50a,,
+115.3,Abilene,1,ar 5.20p / lv 5.35p,ar 9.25a / lv 9.40a,lv 9.50a,ar 4.40p
+127.0,St. Paul,1,6.40p,9.00a,ar 10.15a,lv 4.15p
+146.4,Elk Point,0,7.25p,8.10a,,
+166.8,Heinsburg,1,ar 8.10p,lv 7.30a,,

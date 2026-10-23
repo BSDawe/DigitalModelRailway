@@ -1,0 +1,24 @@
+# Northern Alberta Railways, Edmonton - Lac La Biche - Waterways, table of April 25, 1948 (Official Guide, May 1948: Table 179c in the Canadian
+# National section, with Dunvegan Yards from the Northern Alberta's own table). Times as printed: MOUNTAIN TIME.
+# FOUR TRAINS (Brendan, 4 October 2026: the headings "7-23" and "24-8" are two trains each, not one): Nos. 7 and 8 run Edmonton - Lac La Biche,
+# Nos. 23 and 24 Lac La Biche - Waterways. No. 7 reaches Lac La Biche 4.50 p.m. and No. 23 goes on at 8.00 next morning; No. 24 reaches Lac La
+# Biche 4.30 p.m. and No. 8 leaves at 6.30 next morning. Only the stations the Guide prints (it leaves most out).
+# DAYS: the Guide's signs are 'a' at Edmonton (11.00) and Lac La Biche (4.50), a double dagger at Lac La Biche (8.00 and 4.30) and 'c' at Waterways;
+# the key for this table is cut off on the scan. No. 7 is taken as Mon., Wed., Fri. ('a' in the Guide's CN keys). The rest follow from one train
+# set working round: No. 23 on Tue., Thu., Sat. (the morning after No. 7 arrives); No. 24 back Mon., Wed., Fri.; No. 8 on Tue., Thu., Sat., which
+# is also the day No. 26 from Barrhead (sign 'b' = Tue., Thur., Sat. in the Northern Alberta's own key) meets it at Carbondale. NOT CONFIRMED.
+# No 'M' (mixed) is printed against these trains in the reprint, so they are entered as passenger.
+#train col=No7 num=7 dir=down days="Mon,Wed,Fri" kind=passenger note="Edmonton to Lac La Biche. No. 25 for Barrhead connects at Carbondale; No. 23 goes on to Waterways next morning. Days worked out, not confirmed. First-class coaches and sleepers (the Guide's equipment note)."
+#train col=No23 num=23 dir=down days="Tue,Thu,Sat" kind=passenger note="Lac La Biche to Waterways, the morning after No. 7 arrives from Edmonton. Days worked out, not confirmed. First-class coaches and sleepers (the Guide's equipment note)."
+#train col=No24 num=24 dir=up days="Mon,Wed,Fri" kind=passenger note="Waterways to Lac La Biche; No. 8 goes on to Edmonton next morning. Days worked out, not confirmed. First-class coaches and sleepers (the Guide's equipment note)."
+#train col=No8 num=8 dir=up days="Tue,Thu,Sat" kind=passenger note="Lac La Biche to Edmonton, the morning after No. 24 arrives from Waterways. No. 26 from Barrhead connects at Carbondale. Days worked out, not confirmed. First-class coaches and sleepers (the Guide's equipment note)."
+mile,station,principal,No7,No23,No24,No8
+0.0,Edmonton,1,lv 11.00a,,,ar 12.15p
+5.6,Dunvegan Yards,0,11.25a,,,11.50a
+19.2,Carbondale,0,12.00p,,,11.18a
+27.5,Bon Accord,0,12.20p,,,10.51a
+91.7,Boyle,0,3.10p,,,8.13a
+132.3,Lac La Biche,1,ar 4.50p,lv 8.00a,ar 4.30p,lv 6.30a
+185.5,Behan,0,,f10.55a,f1.40p,
+192.8,Margie,0,,f11.37a,f1.02p,
+304.7,Waterways,1,,ar 6.30p,lv 6.00a,

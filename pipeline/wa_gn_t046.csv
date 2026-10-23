@@ -1,0 +1,94 @@
+# Great Northern Railway, Table 46, Portland, Tacoma, Seattle and Vancouver, table of April 4, 1948 (Official Guide page 1076). Times as printed:
+# PACIFIC TIME. GN mileage from Portland as printed (Seattle 182, Vancouver B.C. 336).
+# SEATTLE - VANCOUVER, B.C. (Nos. 355-360): ALREADY ON THE MAP from GN Table 90 of 1947 - entered here as printed, but do not double them.
+# White Rock (304) to Vancouver, B.C. (336) are in British Columbia (Blaine, mile 300, is the last Washington station).
+# Portland - Seattle trains are the pooled trains of NP Table 4 / UP tables: all shown "Via Point Defiance" (Nisqually - Steilacoom - Titlow -
+# Tacoma). NOT ENTERED, no trains shown: Fort Lewis (126, "arr. Fort Lewis lve." row empty) and the West Tenino - Rainier - Yelm - Roy -
+# Lakeview - Tacoma block (miles 103-142), across which every column prints "Via Point Defiance".
+# TACOMA: two rows as printed, "arr. Tacoma lve." mile 146 (via Point Defiance) and "lve. Tacoma arr." mile 142 (the mileage for Seattle runs
+# from the Lakeview line). North Puyallup has no mile printed: entered as 151 only to place it (printed between Puyallup 150 and Sumner 153).
+# SEATTLE: "Seattle (Union Depot)" mile 182 (Nos. 457, 458: entered as Seattle (Union Sta.)) and "Seattle (King St. Sta.)" mile 182.
+# Combined column headings "401-360", "359-458", "355-402" are split into one train each, meeting at Seattle.
+# Signs: * daily; f flag stop (GN key, gn_201249). Entered as plain times, key not on the scans supplied: a (459 Winlock), g (407 Chehalis),
+# b (407 East Olympia), square (459 Puyallup, Sumner, Auburn, Kent), check mark (457 Sumner, Auburn, Kent), c (458 Winlock), z (458 Kent -
+# North Puyallup), d (408 Chehalis), e (402 Kent), v (460 Kent), a dagger-like sign (460 Sumner) and r (460 Puyallup) - the last two uncertain.
+# "f" with no time (flag stop, no time printed) at Carrolls and Evaline for Nos. 402 and 460: left empty.
+#train col=No459 num=459 dir=down days="daily" kind=passenger from="Portland" to="Seattle" note="Pool train, via Point Defiance."
+#train col=No407 num=407 dir=down days="daily" kind=passenger from="Portland" to="Seattle" note="Pool train, via Point Defiance."
+#train col=No457 num=457 dir=down days="daily" kind=passenger from="Portland" to="Seattle" note="Pool train, via Point Defiance and North Puyallup to Seattle Union Depot."
+#train col=No401 num=401 dir=down days="daily" kind=passenger from="Portland" to="Seattle" note="Night pool train, via Point Defiance; through to Vancouver B.C. as No. 360 (column headed 401-360)."
+#train col=No358 num=358 dir=down days="daily" kind=passenger from="Seattle" to="Vancouver, B.C." note="Seattle - Vancouver B.C.: already on the map (GN Table 90, 1947)."
+#train col=No360 num=360 dir=down days="daily" kind=passenger from="Seattle" to="Vancouver, B.C." note="From Portland as No. 401. Seattle - Vancouver B.C.: already on the map (GN Table 90, 1947)."
+#train col=No356 num=356 dir=down days="daily" kind=passenger from="Seattle" to="Vancouver, B.C." note="Local. Seattle - Vancouver B.C.: already on the map (GN Table 90, 1947)."
+#train col=No359 num=359 dir=up days="daily" kind=passenger from="Vancouver, B.C." to="Seattle" note="To Portland as No. 458 (column headed 359-458). Already on the map (GN Table 90, 1947)."
+#train col=No357 num=357 dir=up days="daily" kind=passenger from="Vancouver, B.C." to="Seattle" note="Local. Already on the map (GN Table 90, 1947)."
+#train col=No355 num=355 dir=up days="daily" kind=passenger from="Vancouver, B.C." to="Seattle" note="To Portland as No. 402 (column headed 355-402). Already on the map (GN Table 90, 1947)."
+#train col=No458 num=458 dir=up days="daily" kind=passenger from="Seattle" to="Portland" note="Pool train from Seattle Union Depot via North Puyallup and Point Defiance; from Vancouver B.C. as No. 359."
+#train col=No402 num=402 dir=up days="daily" kind=passenger from="Seattle" to="Portland" note="Night pool train, via Point Defiance; from Vancouver B.C. as No. 355."
+#train col=No460 num=460 dir=up days="daily" kind=passenger from="Seattle" to="Portland" note="Pool train, via Point Defiance."
+#train col=No408 num=408 dir=up days="daily" kind=passenger from="Seattle" to="Portland" note="Pool train, via Point Defiance."
+mile,station,principal,No459,No407,No457,No401,No358,No360,No356,No359,No357,No355,No458,No402,No460,No408
+0,Portland,1,lv 4.30p,lv 12.01p,lv 8.30a,lv 11.30p,,,,,,,ar 8.45p,ar 6.45a,ar 1.50p,ar 4.35p
+9,North Portland,1,,,f8.54a,,,,,,,,,,f1.25p,
+10,Vancouver,1,4.55p,12.22p,8.58a,11.57p,,,,,,,8.17p,6.15a,1.20p,4.10p
+16,Felida,0,,,f9.05a,,,,,,,,,,f1.07p,
+24,Ridgefield,0,,,f9.16a,12.18a,,,,,,,,5.31a,12.56p,
+30,Woodland,0,,,9.25a,12.30a,,,,,,,,5.16a,12.48p,
+39,Kalama,1,,,9.39a,12.49a,,,,,,,,4.55a,12.35p,
+43,Carrolls,0,,,,,,,,,,,,,,
+49,Kelso-Longview,1,5.40p,1.05p,9.56a,1.22a,,,,,,,7.30p,4.35a,12.20p,3.24p
+53,Ostrander,0,,,f10.01a,f1.27a,,,,,,,,f4.15a,f12.13p,
+59,Castle Rock,0,,,10.10a,1.40a,,,,,,,,4.05a,12.02p,
+69,Vader,0,,,10.25a,f1.54a,,,,,,,,3.47a,11.44a,
+75,Winlock,0,6.10p,,10.35a,2.07a,,,,,,,6.55p,3.36a,11.33a,
+78,Evaline,0,,,,,,,,,,,,,,
+81,Napavine,1,,,10.43a,f2.21a,,,,,,,,3.25a,11.21a,
+89,Chehalis,1,6.27p,1.50p,10.58a,2.43a,,,,,,,6.37p,3.05a,11.08a,2.38p
+92,Centralia,1,6.37p,2.00p,11.10a,3.10a,,,,,,,6.28p,2.53a,10.55a,2.30p
+100,Bucoda,1,,,f11.21a,f3.20a,,,,,,,,f2.23a,10.39a,
+103,Tenino,0,,,11.26a,3.32a,,,,,,,,2.15a,,
+109,Plumb,0,,,,,,,,,,,,,,
+112,East Olympia,1,,2.24p,11.40a,,,,,,,,5.59p,f1.51a,,2.03p
+117,Kyro,0,,,,,,,,,,,,,,
+118,St. Clair,0,,,,,,,,,,,,,,
+122,Nisqually,1,f7.15p,,,f4.10a,,,,,,,,f1.38a,f10.11a,
+131,Steilacoom,0,,,12.10p,4.25a,,,,,,,,,10.00a,
+137,Titlow,0,,,,f4.38a,,,,,,,,,,
+146,Tacoma,1,ar 7.50p,ar 3.11p,ar 12.35p,ar 5.00a,,,,,,,lv 5.10p,lv 1.00a,lv 9.35a,lv 1.19p
+142,Tacoma,1,lv 8.00p,lv 3.15p,lv 12.45p,lv 5.20a,,,,,,,ar 5.00p,ar 12.40a,ar 9.25a,ar 1.15p
+150,Puyallup,1,8.13p,,,5.40a,,,,,,,,12.20a,9.09a,
+151,North Puyallup,0,,,1.01p,,,,,,,,4.46p,,,
+153,Sumner,0,8.17p,,1.06p,5.48a,,,,,,,4.42p,f12.12a,9.04a,
+160,Auburn,0,8.28p,,1.21p,6.01a,,,,,,,4.31p,12.02a,8.54a,
+166,Kent,0,8.37p,,1.30p,6.13a,,,,,,,4.24p,11.54p,8.44a,
+182,Seattle (Union Sta.),1,,,ar 2.00p,,,,,,,,lv 4.00p,,,
+182,Seattle (King St. Sta.),1,ar 9.00p,ar 4.10p,,ar 6.45a,lv 5.00p,lv 8.15a,lv 7.15a,ar 12.45p,ar 10.20p,ar 9.30p,,lv 11.30p,lv 8.20a,lv 12.25p
+188,Ballard,0,,,,,,,f7.32a,,f10.02p,,,,,
+196,Richmond Beach,0,,,,,,,f7.43a,,f9.52p,,,,,
+199,Edmonds,0,,,,,,,7.53a,,9.47p,,,,,
+203,Meadowdale,0,,,,,,,f7.59a,,f9.40p,,,,,
+210,Mukilteo,0,,,,,,,f8.09a,,f9.29p,,,,,
+215,Everett,1,,,,,6.00p,9.12a,8.38a,11.47a,9.20p,8.30p,,,,
+221,Marysville,0,,,,,,,8.55a,,8.53p,,,,,
+224,Tulalip,0,,,,,,,,,,,,,,
+228,English,0,,,,,,,f9.05a,,f8.40p,,,,,
+232,Silvana,0,,,,,,,f9.10a,,f8.35p,,,,,
+238,Stanwood,0,,,,,,,9.20a,,8.26p,,,,,
+245,Fir,0,,,,,,,f9.30a,,f8.15p,,,,,
+250,Mt. Vernon,0,,,,,6.53p,10.08a,9.50a,10.52a,8.05p,7.35p,,,,
+254,Burlington,1,,,,,7.03p,10.18a,10.04a,10.42a,7.45p,7.27p,,,,
+262,Bow,0,,,,,,,f10.16a,,f7.30p,,,,,
+266,Samish,0,,,,,,,f10.24a,,f7.23p,,,,,
+275,South Bellingham,0,,,,,,,f10.45a,,f6.59p,,,,,
+278,Bellingham,1,,,,,7.48p,11.01a,11.01a,10.03a,6.48p,6.48p,,,,
+287,Ferndale,0,,,,,,,11.15a,,6.17p,,,,,
+293,Custer,0,,,,,,,11.24a,,6.05p,,,,,
+300,Blaine,0,,,,,8.21p,11.33a,11.40a,9.34a,5.55p,6.19p,,,,
+304,White Rock,0,,,,,8.31p,11.43a,12.05p,9.20a,5.35p,6.12p,,,,
+307,Ocean Park,0,,,,,,,f12.16p,,f5.14p,,,,,
+309,Crescent,0,,,,,,,12.22p,f9.01a,f5.10p,,,,,
+312,Colebrook,1,,,,,,,f12.30p,,f5.03p,,,,,
+323,New Westminster,0,,,,,9.10p,12.26p,12.55p,8.33a,4.42p,5.24p,,,,
+325,Sapperton,0,,,,,,,,,,,,,,
+334,Still Creek,0,,,,,,,,,,,,,,
+336,"Vancouver, B.C.",1,,,,,ar 9.30p,ar 12.45p,ar 1.15p,lv 8.10a,lv 4.15p,lv 5.00p,,,,

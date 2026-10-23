@@ -1,0 +1,25 @@
+# Canadian National, Table 193a, Reserve - Crooked River - Arborfield. Official Guide, April 25, 1948
+#   (scan cn1948_sk/tables193_201_drumheller_reserve_dauphin_saskatoon_regina_nbattleford.png, Table 193a at top centre).
+# Times as printed: MOUNTAIN TIME ("M.T." head). All stations in Saskatchewan. Miles from Reserve as printed. Crooked River printed twice (ar./lv.), one row here.
+# Key to signs (Table 193-201 page, quoted in sk_cn_t199a.csv): a Mon Wed Fri; b Tue Thu Sat; e Wednesday and Friday; o Monday and Wednesday;
+#   p Tuesday and Thursday; u Friday only; M mixed train.
+# Connections with Table 180 (sk_cn_t180.csv) and Table 192 (sk_cn_t192b.csv), matched by times:
+#   - No. 71 (Arborfield e4.45 a.m. - Crooked River ar 5.35 a.m.) is the Wednesday/Friday run of Table 180's motor column "77-71-75", which leaves Crooked River
+#     a5.35 a.m. for Prince Albert and North Battleford (entered there as Mot71).
+#   - No. 72 (Crooked River p7.46 p.m. - Arborfield 8.40 p.m.) continues Table 180's column 16 on Tuesdays and Thursdays (North Battleford r9.45 a.m. - Prince Albert -
+#     Crooked River 7.46 p.m.; entered there as No16TT).
+#   - M270 (Arborfield - Reserve ar b2.05 p.m. M.T.) continues in Table 192 Reserve b3.15 p.m. C.T. - Hudson Bay Jn. 4.35 p.m.
+# ADDITIONAL TRAINS note under the table: "Leave Reserve u7.25, b11.05 a.m., arrive Crooked River 9.58 a.m., 1.35 p.m. Leave Crooked River a2.35, u6.05 p.m.,
+#   arrive Reserve 4.55, 8.23 p.m." - entered as four trains AddRC1 (Fri), AddRC2 (Tue Thu Sat), AddCR1 (Mon Wed Fri), AddCR2 (Fri); no numbers or kinds printed.
+#train col=M269 num=269 dir=down days="Mon,Wed" kind=mixed note="Reserve 9.00 a.m. marked o (Monday and Wednesday)."
+#train col=No72 num=72 dir=down days="Tue,Thu" kind=passenger from="North Battleford" note="Crooked River 7.46 p.m. marked p (Tue and Thu); continues Table 180 column 16 (North Battleford - Prince Albert - Crooked River) on those days. Kind not printed."
+#train col=AddRC1 num="" dir=down days="Fri" kind=passenger note="Additional Trains note: leave Reserve u7.25 a.m. (Friday), arrive Crooked River 9.58 a.m."
+#train col=AddRC2 num="" dir=down days="Tue,Thu,Sat" kind=passenger note="Additional Trains note: leave Reserve b11.05 a.m., arrive Crooked River 1.35 p.m."
+#train col=M270 num=270 dir=up days="Tue,Thu,Sat" kind=mixed to="Hudson Bay Jn." note="Arborfield 7.00 a.m. and Crooked River ar 8.30 a.m. marked p (Tue and Thu) but Crooked River lv 9.25 a.m. and Reserve 2.05 p.m. marked b (Tue Thu Sat): on Saturday it may start at Crooked River. Continues Reserve - Hudson Bay Jn. (Table 192)."
+#train col=Mot71 num=71 dir=up days="Wed,Fri" kind=motor to="North Battleford" note="Arborfield 4.45 a.m. marked e (Wednesday and Friday); continues from Crooked River 5.35 a.m. in Table 180 (motor column 77-71-75) to Prince Albert and North Battleford."
+#train col=AddCR1 num="" dir=up days="Mon,Wed,Fri" kind=passenger note="Additional Trains note: leave Crooked River a2.35 p.m., arrive Reserve 4.55 p.m."
+#train col=AddCR2 num="" dir=up days="Fri" kind=passenger note="Additional Trains note: leave Crooked River u6.05 p.m. (Friday), arrive Reserve 8.23 p.m."
+mile,station,principal,prov,tz,M269,No72,AddRC1,AddRC2,M270,Mot71,AddCR1,AddCR2
+0.0,Reserve,1,SK,M,lv 9.00a,,lv 7.25a,lv 11.05a,ar 2.05p,,ar 4.55p,ar 8.23p
+60.4,Crooked River,1,SK,M,ar 2.00p / lv 2.40p,lv 7.46p,ar 9.58a,ar 1.35p,ar 8.30a / lv 9.25a,ar 5.35a,lv 2.35p,lv 6.05p
+81.6,Arborfield,1,SK,M,ar 4.10p,ar 8.40p,,,lv 7.00a,lv 4.45a,,

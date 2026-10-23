@@ -1,0 +1,138 @@
+# Canadian Pacific, Table 92, Winnipeg - Yorkton - Lanigan - Saskatoon - Wilkie - Edmonton: from Winnipeg up to and including the first Alberta station,
+# Hayter (main line; the Binscarth - Russell branch is in sk_cp_t092b.csv). Hayter to Edmonton is in ab_cp_t092.csv.
+# From the Canadian Pacific public timetable of 1948 (scan cp1948/table092_winnipeg_saskatoon_wilkie_edmonton.png, printed sideways, small: every column
+# read at 3.4x and the Colonsay row at 6x; Wilkie - Hayter checked against cp1948/table092_wilkie_edmonton_LARGE.png, same figures).
+# Times as printed: CENTRAL TIME Winnipeg - Bredenbury, MOUNTAIN TIME Bredenbury and west (column "Time": "Central time" at the top, Bredenbury
+# "Ar ... Lv C.T." and "Lv ... Ar M.T.", "Mtn. time" at Edmonton). Bredenbury is printed twice (252.8 both): one row, tz C/M: No. 51 arrives 7.05a C.T.
+# and leaves 6.25a M.T. (= 7.25a C.T., 20 minutes); No. 52 arrives 9.40p M.T. and leaves 11.00p C.T. (= 10.00p M.T.). ab_table.py flags 51 at
+# Bredenbury: the time-zone change. Miles from Winnipeg as printed.
+# Signs (explanation not on these scans; meanings as on the Tables 149/150 page, as in ab_cp_t092.csv): f = stops on signal; || = meal station;
+# M = mixed train; dagger = daily ex. Sun.; double dagger = daily ex. Sat.; paragraph sign = daily ex. Mon.; cross = C.P. Air Lines connection (Saskatoon);
+# c (No. 51 Sclanders 1.01p, No. 52 Sclanders 2.18p): stops on signal (Brendan, 10 Oct): entered as f.
+# Day signs of Nos. 51 and 52: No. 51 leaves Winnipeg 10.15p with double dagger (daily ex. Sat.), Gladstone 12.33a and Bredenbury, Lanigan, Saskatoon,
+# Wilkie, Hayter with dagger (daily ex. Sun.). No. 52 arrives Winnipeg 8.10a and Millwood 12.14a with paragraph (daily ex. Mon.), Harrowby 11.58p,
+# Bredenbury 9.40p, Saskatoon, Wilkie, Hardisty with dagger (daily ex. Sun.); it leaves Edmonton 10.40p daily ex. Sat. and Hayter 5.10a daily ex. Sun.
+# Equipment note (Nos. 51-52 "Great West", Winnipeg - Edmonton: coaches, tourist sleeper, sleeper; buffet parlor Bredenbury - Wilkie).
+# Provinces: Winnipeg - Millwood and "Harrowby, Man" Manitoba; "Marchwell, Sask" to "Macklin, Sask" Saskatchewan; "Hayter, Alta" Alberta.
+# Binscarth is printed "Ar Binscarth ... Lv" (210.7); 51 and 52 run on by Millwood (218.3); 105 and 106 go to and from Russell (sk_cp_t092b.csv).
+# Lanigan, Saskatoon and Wilkie are printed twice (Ar / Lv): one row each. Clonmel, Engen and Swinburne: 51 and 52 do not stop ("..").
+# Columns of Table 92 NOT entered (duplicates of other tables, same times): 329 Tu.Th.Sa. and 330 Mo.We.Fr. Bredenbury - Yorkton - Sheho (= Table 126,
+# sk_cp_t126.csv); M437 Thurs. and M438 Thurs. Saskatoon - Asquith (= Table 112, sk_cp_t112.csv); 527 / 528 (Alberta only).
+# Entered here although also printed elsewhere: 331 / 332 Lanigan - Saskatoon (also printed in the 303 / 304 columns of Table 116); M449 / M450
+# Saskatoon - Perdue (Table 113 starts them at Perdue: sk_cp_t113.csv); M419 / M420 Wilkie - Hayter (they go on to Hardisty, ab_cp_t092.csv);
+# M481 / M480 Macklin - Hayter (Table 117 gives them Kerrobert - Macklin with Macklin ar 12.05p / lv 2.50p; here Macklin lv 12.30p / ar 2.00p).
+# In doubt between tables: Table 116 prints 301 leaving Colonsay 1.50p for Saskatoon (ar 3.30p, the time of No. 51); here No. 51 is at Colonsay 1.35p.
+# Slow running as printed: M420 Rutland 3.40p - Senlac 3.20p - Evesham 2.50p; M449 and M450 Saskatoon - Perdue (mixed trains).
+# Manitoba rows Winnipeg - Binscarth (all stations) replaced 18 Oct 2026 from Tables 93 (Winnipeg - Portage) and 94 (Portage - Binscarth), clearer scans
+#   (cp1948_mb/t093.png, t094.png). Portage and Minnedosa ar / lv from those tables (105 Portage ar 10.57a Table 93, lv 11.07a Table 94). Signs of Table 94
+#   (explained on the Tables 93-98 page), entered as plain times, every day: m (No. 51 Westbourne, Woodside, Keyes, Franklin) = Sun., Tue., Thu. stops to detrain,
+#   also on signal daily ex. Sat. to entrain for west of Binscarth; n (No. 52 Westbourne, Woodside, Keyes, Franklin) = stops Tue., Thu., Sat. to entrain for
+#   Portage and Winnipeg, also on signal daily ex. Mon. to detrain from west of Binscarth; v (51 and 52, Basswood - Foxwarren) = stops for and from Winnipeg
+#   or east and west of Binscarth; a (No. 105 Bergen - High Bluff, Table 93) = stops on signal to entrain for points north of Portage.
+#train col=No105 num=105 dir=down days="Tue,Thu,Sat" kind=passenger to="Inglis" note="Winnipeg to Binscarth here, then Russell and Inglis (sk_cp_t092b.csv)."
+#train col=No51 num=51 dir=down days="Mon,Tue,Wed,Thu,Fri,Sun" kind=passenger to="Edmonton" note="Great West. Leaves Winnipeg 10.15p daily ex. Sat.; Hayter 11.55p the next day; Edmonton 7.05a (ab_cp_t092.csv)."
+#train col=No331 num=331 dir=down days="daily" kind=passenger note="Lanigan to Saskatoon (carries the Regina - Saskatoon sleeper of No. 303, Table 116)."
+#train col=M449 num=449 dir=down days="Fri" kind=mixed to="Gunnworth" note="Saskatoon to Perdue here; continues Perdue 9.15a - Gunnworth 3.15p (Table 113, sk_cp_t113.csv)."
+#train col=M419 num=419 dir=down days="Mon,Fri" kind=mixed to="Hardisty" note="Wilkie 7.15a to Hayter 11.50a here; on to Hardisty 4.45p (ab_cp_t092.csv)."
+#train col=M481 num=481 dir=down days="Wed" kind=mixed from="Kerrobert" to="Hardisty" note="Macklin 12.30p to Hayter 12.50p here; on to Hardisty 4.45p (ab_cp_t092.csv). Comes from Kerrobert (Table 117, Macklin ar 12.05p)."
+#train col=No52 num=52 dir=up days="ex Sun" kind=passenger from="Edmonton" note="Great West. Leaves Edmonton 10.40p daily ex. Sat. (ab_cp_t092.csv); Hayter 5.10a; Winnipeg 8.10a the next morning."
+#train col=No106 num=106 dir=up days="Mon,Wed,Fri" kind=passenger from="Inglis" note="From Inglis 6.30a (sk_cp_t092b.csv); Binscarth 8.15a to Winnipeg 3.25p here."
+#train col=No332 num=332 dir=up days="daily" kind=passenger note="Saskatoon 11.20p to Lanigan 1.30a (connects with No. 304 to Regina, Table 116)."
+#train col=M450 num=450 dir=up days="Sat" kind=mixed from="Gunnworth" note="From Gunnworth 10.30a by Table 113 to Perdue (ar 3.30p); Perdue 4.00p to Saskatoon 5.50p here."
+#train col=M420 num=420 dir=up days="Thu,Sat" kind=mixed from="Hardisty" note="From Hardisty 9.20a (ab_cp_t092.csv); Hayter 1.40p to Wilkie 5.30p here."
+#train col=M480 num=480 dir=up days="Tue" kind=mixed from="Hardisty" to="Kerrobert" note="From Hardisty 9.20a (ab_cp_t092.csv); Hayter 1.40p to Macklin 2.00p here; on to Kerrobert (Table 117, Macklin lv 2.50p)."
+mile,station,principal,prov,tz,No105,No51,No331,M449,M419,M481,No52,No106,No332,M450,M420,M480
+0.0,Winnipeg,1,MB,C,lv 9.50a,lv 10.15p,,,,,ar 8.10a,ar 3.25p,,,,
+7.5,Bergen,0,MB,C,10.03a,,,,,,,f3.08p,,,,
+15.2,Rosser,0,MB,C,10.11a,f10.36p,,,,,f7.44a,2.58p,,,,
+22.4,Meadows,0,MB,C,10.19a,f10.44p,,,,,f7.32a,2.47p,,,,
+28.9,Marquette,0,MB,C,10.26a,,,,,,f7.20a,2.36p,,,,
+35.3,Reaburn,0,MB,C,10.33a,,,,,,f7.08a,2.27p,,,,
+40.5,Poplar Point,0,MB,C,10.39a,,,,,,f6.58a,2.19p,,,,
+48.8,High Bluff,0,MB,C,10.48a,,,,,,f6.42a,2.07p,,,,
+55.6,Portage la Prairie,1,MB,C,ar 10.57a / lv 11.07a,ar 11.27p / lv 11.33p,,,,,ar 6.25a / lv 6.30a,ar 1.50p / lv 1.55p,,,,
+61.7,Genest,0,MB,C,f11.19a,,,,,,,f1.38p,,,,
+65.5,Macdonald,0,MB,C,11.30a,f11.52p,,,,,6.03a,1.31p,,,,
+72.5,Westbourne,0,MB,C,11.42a,12.05a,,,,,5.50a,1.18p,,,,
+82.4,Woodside,0,MB,C,12.02p,12.19a,,,,,5.32a,1.01p,,,,
+90.7,Gladstone,0,MB,C,12.20p,12.33a,,,,,5.17a,12.47p,,,,
+98.8,Keyes,0,MB,C,12.35p,12.45a,,,,,5.00a,12.32p,,,,
+107.1,Arden,0,MB,C,12.51p,f12.57a,,,,,f4.45a,12.19p,,,,
+116.6,Neepawa,0,MB,C,1.15p,1.20a,,,,,4.30a,11.57a,,,,
+125.8,Franklin,0,MB,C,1.40p,1.40a,,,,,4.05a,11.41a,,,,
+134.2,Minnedosa,1,MB,C,ar 2.05p / lv 2.25p,ar 2.10a / lv 2.25a,,,,,ar 3.30a / lv 3.45a,ar 11.05a / lv 11.25a,,,,
+144.2,Basswood,0,MB,C,2.52p,2.54a,,,,,2.54a,10.42a,,,,
+152.5,Newdale,0,MB,C,3.10p,3.08a,,,,,2.39a,10.25a,,,,
+161.8,Strathclair,0,MB,C,3.31p,3.23a,,,,,2.22a,10.05a,,,,
+170.6,Shoal Lake,0,MB,C,3.50p,3.40a,,,,,2.05a,9.45a,,,,
+178.8,Kelloe,0,MB,C,4.07p,3.58a,,,,,1.50a,9.26a,,,,
+185.4,Solsgirth,0,MB,C,4.21p,4.08a,,,,,1.38a,9.13a,,,,
+193.4,Birtle,0,MB,C,4.42p,4.30a,,,,,1.20a,8.54a,,,,
+201.0,Foxwarren,0,MB,C,4.59p,4.45a,,,,,1.04a,8.34a,,,,
+210.7,Binscarth,1,MB,C,ar 5.20p,4.58a,,,,,12.47a,lv 8.15a,,,,
+218.3,Millwood,0,MB,C,,5.29a,,,,,12.14a,,,,,
+223.4,Harrowby,0,MB,C,,5.49a,,,,,11.58p,,,,,
+229.9,Marchwell,0,SK,C,,6.04a,,,,,11.45p,,,,,
+236.0,Langenburg,0,SK,C,,6.19a,,,,,11.31p,,,,,
+245.1,Churchbridge,0,SK,C,,6.43a,,,,,11.13p,,,,,
+252.8,Bredenbury,1,SK,C/M,,ar 7.05a / lv 6.25a,,,,,ar 9.40p / lv 11.00p,,,,,
+261.2,Saltcoats,0,SK,M,,6.41a,,,,,9.18p,,,,,
+266.8,Clonmel,0,SK,M,,,,,,,,,,,,
+271.0,Rokeby,0,SK,M,,6.57a,,,,,8.55p,,,,,
+278.8,Yorkton,1,SK,M,,ar 7.10a / lv 7.30a,,,,,ar 8.15p / lv 8.35p,,,,,
+286.8,Orcadia,0,SK,M,,7.45a,,,,,8.00p,,,,,
+294.4,Springside,0,SK,M,,8.00a,,,,,7.45p,,,,,
+303.7,Theodore,0,SK,M,,8.18a,,,,,7.27p,,,,,
+313.4,Insinger,0,SK,M,,8.37a,,,,,7.10p,,,,,
+320.7,Sheho,1,SK,M,,8.55a,,,,,6.53p,,,,,
+329.1,Tuffnell,0,SK,M,,9.19a,,,,,6.20p,,,,,
+336.2,Foam Lake,1,SK,M,,9.36a,,,,,6.05p,,,,,
+344.7,Leslie,0,SK,M,,9.52a,,,,,5.45p,,,,,
+352.1,Elfros,0,SK,M,,10.06a,,,,,5.30p,,,,,
+358.4,Mozart,0,SK,M,,10.19a,,,,,5.17p,,,,,
+366.6,Wynyard,0,SK,M,,10.50a,,,,,5.00p,,,,,
+374.2,Kandahar,0,SK,M,,11.05a,,,,,4.31p,,,,,
+381.5,Dafoe,0,SK,M,,11.18a,,,,,4.16p,,,,,
+389.9,Jansen,0,SK,M,,11.32a,,,,,3.55p,,,,,
+395.7,Esk,0,SK,M,,11.42a,,,,,3.40p,,,,,
+404.3,Lanigan,1,SK,M,,ar 12.00p / lv 12.15p,lv 4.15a,,,,ar 3.00p / lv 3.20p,,ar 1.30a,,,
+411.0,Guernsey,0,SK,M,,12.29p,4.28a,,,,2.46p,,1.15a,,,
+415.7,Wolverine,0,SK,M,,12.37p,f4.36a,,,,2.36p,,f1.07a,,,
+422.5,Plunkett,0,SK,M,,12.52p,4.48a,,,,2.26p,,12.56a,,,
+427.4,Sclanders,0,SK,M,,f1.01p,f4.59a,,,,f2.18p,,f12.48a,,,
+431.7,Viscount,0,SK,M,,1.11p,5.08a,,,,1.55p,,12.41a,,,
+437.8,Arpiers,0,SK,M,,f1.21p,f5.21a,,,,f1.43p,,f12.31a,,,
+442.3,Colonsay,1,SK,M,,1.35p,5.30a,,,,1.20p,,12.24a,,,
+450.0,Elstow,0,SK,M,,2.05p,5.45a,,,,1.08p,,12.12a,,,
+456.6,Blucher,0,SK,M,,2.18p,5.58a,,,,12.57p,,12.01a,,,
+463.7,Cheviot,0,SK,M,,2.33p,f6.12a,,,,12.45p,,f11.50p,,,
+468.7,Floral,0,SK,M,,f2.44p,f6.23a,,,,12.36p,,11.42p,,,
+472.1,Engen,0,SK,M,,,,,,,,,,,,
+476.3,Sutherland,0,SK,M,,3.00p,6.38a,,,,12.20p,,11.30p,,,
+480.1,Saskatoon,1,SK,M,,ar 3.30p / lv 4.45p,ar 6.50a,lv 7.20a,,,ar 11.20a / lv 11.55a,,lv 11.20p,ar 5.50p,,
+487.5,Cory,0,SK,M,,f5.02p,,f7.40a,,,f11.05a,,,f5.35p,,
+496.0,Dunfermline,0,SK,M,,5.15p,,f7.55a,,,10.52a,,,f5.15p,,
+504.6,Asquith,1,SK,M,,5.31p,,8.20a,,,10.40a,,,4.35p,,
+511.0,Rhyl,0,SK,M,,f5.45p,,f8.32a,,,f10.29a,,,f4.18p,,
+514.4,Kinley,0,SK,M,,5.54p,,f8.41a,,,10.23a,,,f4.10p,,
+519.4,Perdue,1,SK,M,,6.07p,,ar 8.55a,,,10.13a,,,lv 4.00p,,
+527.7,Keppel,0,SK,M,,6.26p,,,,,9.58a,,,,,
+535.4,Vance,0,SK,M,,6.44p,,,,,9.47a,,,,,
+540.3,Biggar,0,SK,M,,7.03p,,,,,9.37a,,,,,
+544.4,Castlewood,0,SK,M,,f7.20p,,,,,f9.27a,,,,,
+548.6,Oban,0,SK,M,,f7.27p,,,,,f9.21a,,,,,
+551.9,Naseby,0,SK,M,,7.35p,,,,,9.16a,,,,,
+561.6,Trayner,0,SK,M,,7.54p,,,,,9.01a,,,,,
+567.9,Wolfe,0,SK,M,,8.06p,,,,,8.46a,,,,,
+575.6,St. Alphege,0,SK,M,,f8.20p,,,,,f8.34a,,,,,
+579.7,Wilkie,1,SK,M,,ar 8.30p / lv 9.00p,,,lv 7.15a,,ar 8.00a / lv 8.25a,,,,ar 5.30p,
+587.9,Phippen,0,SK,M,,9.17p,,,7.48a,,7.48a,,,,5.05p,
+595.1,Adanac,0,SK,M,,9.29p,,,8.05a,,7.35a,,,,4.45p,
+600.5,Unity,0,SK,M,,9.40p,,,8.20a,,7.20a,,,,4.25p,
+605.4,Swinburne,0,SK,M,,,,,f8.35a,,,,,,f4.01p,
+608.3,Bucleugh,0,SK,M,,f10.03p,,,8.45a,,f7.02a,,,,f3.55p,
+616.9,Rutland,0,SK,M,,10.17p,,,9.15a,,6.49a,,,,3.40p,
+624.8,Senlac,0,SK,M,,10.33p,,,9.40a,,6.35a,,,,3.20p,
+634.5,Evesham,0,SK,M,,10.53p,,,10.05a,,6.15a,,,,2.50p,
+641.9,Macklin,1,SK,M,,11.40p,,,11.15a,lv 12.30p,6.00a,,,,2.30p,ar 2.00p
+649.3,Hayter,0,AB,M,,11.55p,,,11.50a,12.50p,5.10a,,,,1.40p,1.40p

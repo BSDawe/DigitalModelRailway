@@ -1,0 +1,22 @@
+# Canadian Pacific Railway, Table 139, Kerrobert - Coronation - Lacombe: the Kerrobert - Coronation section (mixed trains M617 and M618),
+# Alberta stations only. From the Canadian Pacific public timetable, 1948 (page 41). Times as printed: MOUNTAIN TIME.
+# Signs: M before a train number = mixed train. No other signs in this section. The days are in the column headings
+# (M617 "Mo. We. Fr.", M618 "Tu. Th. Sa.").
+# The table starts at Kerrobert, Sask. (mile 0.0; M617 lv 9.15a, M618 ar 4.45p). Last Saskatchewan station next to the boundary:
+# Court, Sask., mile 37.3 (M617 12.00 noon, M618 1.35p). First Alberta station: Compeer, mile 43.3. Miles are as printed, from Kerrobert.
+# No connection the same day at Coronation with trains 529 / 530 to and from Lacombe (see ab_cp_t139b.csv): M617 arrives 6.15p and 529
+# leaves 6.00a; 530 arrives 5.50p and M618 leaves 7.40a.
+# In doubt: Throne, M618: the last digit is blurred in the scan, 7.55 or 7.56 (every other time in the column ends in 0 or 5).
+#train col=M617 num=617 dir=down days="Mon,Wed,Fri" kind=mixed from="Kerrobert" note="Kerrobert, Sask. (lv 9.15a) to Coronation."
+#train col=M618 num=618 dir=up days="Tue,Thu,Sat" kind=mixed to="Kerrobert" note="Coronation to Kerrobert, Sask. (ar 4.45p)."
+mile,station,principal,M617,M618
+43.3,Compeer,0,12.25p,1.15p
+51.9,Altario,0,12.55p,12.45p
+59.0,Kirriemuir,0,1.40p,12.00p
+67.8,Pemukan,0,2.10p,11.15a
+74.7,Monitor,0,2.50p,10.50a
+84.4,Consort,0,3.35p,10.05a
+93.7,Loyalist,0,4.20p,9.20a
+101.0,Veteran,0,5.05p,8.35a
+108.9,Throne,0,5.40p,7.55a?
+116.5,Coronation,1,ar 6.15p,lv 7.40a

@@ -1,0 +1,13 @@
+# Union Pacific Railroad, Table 74, Seattle, Tacoma and Fort Lewis, table of April 4, 1948 (Official Guide). Times as printed: PACIFIC TIME.
+# Nos. 422 and 423 (NP trains; the same as NP Tables 4 and 60, times agree: Lakeview 9.46 a.m. / 6.19 p.m., Fort Lewis 10.17 a.m. / 6.00 p.m.).
+# As printed: Seattle 0, Tacoma 40, "arr. Nisqually" 63 (no times), "arr. Lakeview lve." (no mile printed: entered 48 from NP Table 60), then
+# "lve. Nisqually (N.P.Ry.) arr." mile 0 (no times) and "Fort Lewis" mile 4. The Nisqually rows have no times and are left out; Fort Lewis is
+# entered at 56 as in NP Table 60 - the Lakeview and Fort Lewis miles are NOT from this scan.
+# Signs (key on the page): dagger daily except Sunday.
+#train col=No422 num=422 dir=down days="ex Sun" kind=passenger from="Seattle" to="Hoquiam" note="NP train; goes on to St. Clair and Hoquiam (NP Table 60)."
+#train col=No423 num=423 dir=up days="ex Sun" kind=passenger from="Hoquiam" to="Seattle" note="NP train; from Hoquiam via St. Clair (NP Table 60)."
+mile,station,principal,No422,No423
+0,Seattle,1,lv 7.45a,ar 8.20p
+40,Tacoma,1,lv 9.25a,ar 6.42p
+48,Lakeview,1,ar 9.46a,lv 6.19p
+56,Fort Lewis,1,ar 10.17a,lv 6.00p

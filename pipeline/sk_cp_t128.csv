@@ -1,0 +1,19 @@
+# Canadian Pacific, Table 128, Lloydminster - Paradise Valley.
+# From the Canadian Pacific public timetable of about 1948 (scan cp1948_sk/tables126_128_bredenbury_nipawin_swiftcurrent_lloydminster.png, printed sideways).
+# Times as printed: MOUNTAIN TIME. Miles from Lloydminster as printed. Signs: f = stops on signal; M = mixed train. "Lloydminster 129, 144" refers to
+# Tables 129 and 144.
+# PROVINCE IN DOUBT: the table prints no "Sask" or "Alta". Southminster and Furness are also on the Wilkie - Lloydminster line (Table 129, east of
+# Lloydminster), so they are in Saskatchewan and the branch leaves that line at Furness. Lloydminster straddles the border (SK?). Epping (2.9 miles past
+# Furness) is probably Saskatchewan (SK?); Rivercourse, McLaughlin and Paradise Valley are, to my knowledge, Alberta places (AB?), not printed.
+# Not found in the Alberta files (no ab_cp_t128.csv), so entered in full here.
+# Slow running as printed: M447 McLaughlin 2.20p to Rivercourse 3.10p (5.0 miles in 50 minutes; mixed train).
+#train col=M448 num=448 dir=down days="Thu" kind=mixed
+#train col=M447 num=447 dir=up days="Thu" kind=mixed
+mile,station,principal,prov,tz,M448,M447
+0.0,Lloydminster,1,SK?,M,lv 9.00a,ar 5.00p
+6.1,Southminster,0,SK,M,f9.15a,f4.40p
+13.2,Furness,0,SK,M,9.30a,4.20p
+16.1,Epping,0,SK?,M,9.50a,4.00p
+22.9,Rivercourse,0,AB?,M,10.20a,3.10p
+27.9,McLaughlin,0,AB?,M,11.00a,2.20p
+35.4,Paradise Valley,1,AB?,M,ar 11.30a,lv 1.30p

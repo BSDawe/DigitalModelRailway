@@ -1,0 +1,19 @@
+# Canadian Pacific, Table 98: Elm Creek - Rosenfeld - Gretna (M233, M234). All Manitoba.
+# From the Canadian Pacific public timetable of about 1948 (scan cp1948_sk/table098_winnipeg_souris_arcola_regina.png, printed sideways; page "TABLES 93 to 98").
+# Signs (explanation of signs on this page): f = stops on signal; || = meal station; M = mixed train; black dot = motor train (307, 308);
+# C.T. = Central Time, M.T. = Mountain Time. (Other signs on that page, a b n s t v dagger, are not used in Table 98.)
+# Times as printed: CENTRAL TIME. Miles from Winnipeg as printed. Rosenfeld is printed twice (Ar 96.6 / Lv, no mile): one row. "Plum Coulee 99" refers to Table 99.
+#train col=M233 num=233 dir=down days="Mon,Thu" kind=mixed from="Winnipeg" note="From Winnipeg 1.45p - Elm Creek 4.30p (sk_cp_t098a.csv)."
+#train col=M234 num=234 dir=up days="Wed,Sat" kind=mixed to="Winnipeg" note="Continues Elm Creek 9.55a - Winnipeg 12.20p (sk_cp_t098a.csv)."
+mile,station,principal,prov,tz,M233,M234
+47.3,Elm Creek,1,MB,C,lv 4.55p,ar 9.50a
+53.3,Barnsley,0,MB,C,5.12p,9.32a
+59.5,Carman,0,MB,C,5.40p,9.15a
+67.5,Graham,0,MB,C,6.06p,8.29a
+71.7,Roland,0,MB,C,6.25p,8.17a
+79.3,Kronsgart,0,MB,C,6.50p,7.55a
+87.0,Plum Coulee,0,MB,C,7.10p,7.30a
+91.3,Horndean,0,MB,C,f7.25p,f7.14a
+96.6,Rosenfeld,1,MB,C,ar 7.40p / lv 8.00p,ar 6.50a / lv 7.00a
+103.4,Altona,0,MB,C,8.30p,6.33a
+110.4,Gretna,1,MB,C,ar 9.00p,lv 6.15a

@@ -1,0 +1,11 @@
+# Canadian Pacific, Table 99: Rosenfeld - Altona - Gretna, M235 and M236 (Tue. Fri.).
+# From the Canadian Pacific public timetable of about 1948 (scan cp1948_mb/t099.png, printed sideways; page "TABLES 99 to 106"). Transcribed 18 October 2026.
+# CENTRAL TIME. All stations in Manitoba. Signs: f = stops on signal; || = meal station (Winnipeg, La Riviere).
+# Miles from Winnipeg as printed. M = mixed train. M233 / M234 on this section are in sk_cp_t098b.csv (same times). M236 and M235 make a Gretna - Rosenfeld
+#   round trip on Tuesdays and Fridays (no connection printed).
+#train col=M235 num=235 dir=down days="Tue,Fri" kind=mixed note="Rosenfeld 12.30 p.m. to Gretna 1.25 p.m."
+#train col=M236 num=236 dir=up days="Tue,Fri" kind=mixed note="Gretna 10.00 a.m. to Rosenfeld 10.50 a.m."
+mile,station,principal,prov,tz,M235,M236
+56.1,Rosenfeld,1,MB,C,lv 12.30p,ar 10.50a
+62.9,Altona,0,MB,C,1.00p,10.30a
+69.9,Gretna,1,MB,C,ar 1.25p,lv 10.00a

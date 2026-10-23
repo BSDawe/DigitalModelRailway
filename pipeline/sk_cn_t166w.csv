@@ -1,0 +1,26 @@
+# DERIVED (Claude, 15 Oct 2026; calls added 17 Oct 2026, Brendan: Nos. 1-4 had lost their intermediate stops): CN Nos. 1 to 4, the Continental
+#   Limited and No. 3/4, Winnipeg - Saskatoon - Wainwright. Calls from Table 75 (read twice, recorded in the notes of sk_cn_t075.csv), Wainwright from
+#   the CN main-line trips. Miles from Winnipeg = Table 75 miles (from Montreal) less 1358.5. Signs: f flag stop; Lazare 'e' = stops for revenue passengers
+#   to or from Winnipeg and beyond; Nokomis 'z' = stops on signal for revenue passengers (Brendan, 17 Oct; entered f). Watrous: arrive Central time, leave Mountain time (one row).
+# Key to signs (printed sideways on the left of this page): "* Daily; + daily, except Sunday; ++ daily, except Saturday; para. daily, except Monday;
+#   Section Sunday only; a Monday, Wednesday and Friday; b Tuesday, Thursday and Saturday; d Wednesday, Friday and Sunday; f flag stop; k Saturday only.
+#   (circle-dot) Via Neepawa. (psi) Via North Elie. (triangle) Restaurant or lunch counter. + Coupon stations; Telegraph stations. M - Mixed train."
+#train col=No1 num=1 dir=down days="daily" kind=passenger to="Vancouver" note="Winnipeg 11.20 a.m. marked * (daily). Continues Edmonton (lv 8.55 a.m.) - Jasper (ar 3.20 p.m.) and on to Vancouver (Alberta/B.C. files)."
+#train col=No3 num=3 dir=down days="daily" kind=passenger to="Vancouver" note="Winnipeg 10.15 a.m. marked * (daily). Continues Edmonton (lv 7.20 a.m.) - Jasper (ar 1.15 p.m.) and on to Vancouver (Alberta/B.C. files)."
+#train col=No2 num=2 dir=up days="daily" kind=passenger from="Vancouver" note="Winnipeg ar 6.00 p.m. marked * (daily). From Vancouver and Jasper (lv 2.25 p.m.), Edmonton lv 8.45 p.m."
+#train col=No4 num=4 dir=up days="daily" kind=passenger from="Vancouver" note="Lazare 1.41 p.m.: stops for revenue passengers to or from Winnipeg and beyond. Winnipeg ar 6.50 p.m. marked * (daily). From Vancouver and Jasper (lv 3.20 p.m.), Edmonton lv 9.45 p.m."
+mile,station,principal,prov,tz,No1,No3,No2,No4
+0.0,Winnipeg,1,MB,C,lv 11.20a,lv 10.15a,ar 6.00p,ar 6.50p
+54.3,Portage la Prairie,1,MB,C,12.43p,11.37a,4.30p,5.20p
+127.7,Brandon North,0,MB,C,2.30p,1.22p,3.00p,3.45p
+142.2,Rivers,1,MB,C,ar 3.05p / lv 3.15p,ar 1.45p / lv 1.55p,ar 2.30p / lv 2.40p,ar 3.15p / lv 3.25p
+158.4,Oakner,0,MB,C,,,,f2.45p
+203.5,Lazare,0,MB,C,,,,1.41p
+217.0,Welby,0,SK,C,f5.00p,f3.50p,f12.35p,f1.25p
+279.3,Melville,1,SK,C,ar 6.30p / lv 6.40p,ar 5.15p / lv 5.25p,ar 11.00a / lv 11.10a,ar 11.55a / lv 12.05p
+385.5,Nokomis,0,SK,C,f9.10p,,,f9.18a
+408.3,Watrous,1,SK,C/M,ar 9.50p / lv 9.00p,ar 8.25p / lv 7.35p,ar 6.45a / lv 7.55a,ar 7.40a / lv 8.50a
+470.3,Saskatoon,1,SK,M,ar 10.45p / lv 11.15p,ar 9.25p / lv 9.55p,ar 4.45a / lv 5.15a,ar 5.45a / lv 6.10a
+534.1,Biggar,1,SK,M,ar 12.55a / lv 1.05a,ar 11.30p / lv 11.40p,ar 3.10a / lv 3.20a,ar 4.10a / lv 4.20a
+591.0,Unity,1,SK,M,,f12.49a,1.59a,
+674.2,Wainwright,1,AB,M,ar 4.45a,ar 3.15a,lv 11.55p,lv 12.55a

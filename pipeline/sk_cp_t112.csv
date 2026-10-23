@@ -1,0 +1,18 @@
+# Canadian Pacific, Table 112, Saskatoon - Baljennie.
+# From the Canadian Pacific public timetable of about 1948 (scan cp1948_sk/tables108_112_115_northportal_moosejaw_saskatoon_lanigan.png, page 37).
+# Times as printed: MOUNTAIN TIME ("Mountain Time" heads the station column). All stations in Saskatchewan.
+# Signs (explanation of signs on this page): f = stops on signal; || = meal station; M = mixed train.
+# Miles from Saskatoon as printed. Saskatoon, Cory, Dunfermline and Asquith refer to Table 92 (the train runs over the Table 92 line to Asquith).
+#train col=M437 num=437 dir=down days="Thu" kind=mixed
+#train col=M438 num=438 dir=up days="Thu" kind=mixed
+mile,station,principal,prov,tz,M437,M438
+0.0,Saskatoon,1,SK,M,lv 8.15a,ar 5.50p
+7.4,Cory,0,SK,M,f8.35a,f5.35p
+15.9,Dunfermline,0,SK,M,f8.55a,f5.15p
+24.5,Asquith,1,SK,M,9.20a,4.35p
+35.6,Environ,0,SK,M,9.55a,3.55p
+44.6,Arelee,0,SK,M,10.35a,3.15p
+50.6,Struan,0,SK,M,11.05a,2.45p
+56.3,Sonningdale,0,SK,M,11.45a,2.25p
+65.2,Spinneyhill,0,SK,M,12.15p,1.50p
+71.4,Baljennie,1,SK,M,ar 12.45p,lv 1.30p

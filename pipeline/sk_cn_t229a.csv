@@ -1,0 +1,21 @@
+# Canadian National, Table 229, Alsask - Acadia Valley - Kindersley: section A, Alsask - Eyre - Eatonia - Glidden - Kindersley.
+#   Official Guide, April 25, 1948 (scan cn1948_sk/table229_alsask_kindersley.png).
+# Times as printed: MOUNTAIN TIME ("Alsask, Sask. (M.T.)"). All stations in Saskatchewan. Miles from Alsask as printed. Acadia Valley (36.9) is on a branch
+#   from Eyre (12.6): sk_cn_t229b.csv. Eyre and Glidden are each printed twice (arr./lve. lines), one row each.
+# Key printed under the table: "+ Coupon stations; Telegraph stations. M Mixed train." Day signs from the Table 193-201 key: h Thursday only; k Saturday only;
+#   n Monday and Friday; f flag stop.
+# M332: Alsask 8.00 a.m. carries an italic sign read as k (Saturday only) or h; its Acadia Valley departure 11.45 a.m. is marked h (Thursday only). One train in
+#   one column, so both are taken as h (Thursday) - IN DOUBT. M332 runs Alsask - Eyre (ar 8.45) - Acadia Valley (ar 10.10, lv 11.45) - Eyre (lv 1.15 p.m.) - Kindersley.
+# Checker flags M331 Dankin f10.35 a.m. - Eatonia 12.30 p.m. (4.8 mi, 3 mph) and Eatonia - La Porte 1.45 p.m. (5 mph): as printed (re-read three times; mixed-train
+#   station work). M331 does not go to Acadia Valley (its column is blank there): Eyre ar 3.30 p.m. (lower section), lv 3.30 p.m. (upper section), Alsask 4.35 p.m.
+#train col=M332 num=332 dir=down days="Wed,Sat" kind=mixed note="Alsask 8.00 a.m. marked h: Wednesday and Saturday (key for Tables 224-233) (Brendan, 12 Oct)."
+#train col=M331 num=331 dir=up days="Tue,Fri" kind=mixed note="Kindersley 9.00 a.m. marked n: Tuesday and Friday (Brendan, 12 Oct)."
+mile,station,principal,prov,tz,M332,M331
+0.0,Alsask,1,SK,M,lv 8.00a,ar 4.35p
+12.6,Eyre,1,SK,M,ar 8.45a / lv 1.15p,ar 3.30p / lv 3.30p
+18.5,Mantario,0,SK,M,1.50p,3.00p
+27.5,La Porte,0,SK,M,2.50p,1.45p
+33.9,Eatonia,1,SK,M,3.50p,12.30p
+38.7,Dankin,0,SK,M,f4.20p,f10.35a
+44.1,Glidden,1,SK,M,ar 4.45p / lv 4.50p,ar 9.55a / lv 10.10a
+61.6,Kindersley,1,SK,M,ar 5.50p,lv 9.00a

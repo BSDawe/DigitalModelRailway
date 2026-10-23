@@ -1,0 +1,16 @@
+# Chicago, Milwaukee, St. Paul & Pacific Railroad (Milwaukee Road), Table 3 (continued), table of February 22, 1948 (Official Guide): the
+# Seattle - Tacoma section, miles as printed from Seattle (0) to Tacoma (38). Spokane - Seattle is wa_milw_t003a (same trains).
+# Times as printed: PACIFIC TIME ("(Pac. time.)" at Tacoma). Signs: * daily; y (Kent, Auburn, North Puyallup for Nos. 17 and 18) is not explained
+# in the part of the key on the scan: entered as plain times. Nos. 15 and 16 run Seattle - Tacoma without intermediate stops. Black River (9): no trains.
+#train col=No15 num=15 dir=down days="daily" kind=passenger from="Seattle" to="Tacoma" note="The Olympian Hiawatha."
+#train col=No17 num=17 dir=down days="daily" kind=passenger from="Seattle" to="Tacoma" note="The Columbian."
+#train col=No16 num=16 dir=up days="daily" kind=passenger from="Tacoma" to="Seattle" note="The Olympian Hiawatha."
+#train col=No18 num=18 dir=up days="daily" kind=passenger from="Tacoma" to="Seattle" note="The Columbian."
+mile,station,principal,No15,No17,No16,No18
+0,Seattle,1,lv 10.45a,lv 7.50a,ar 2.30p,ar 10.00p
+9,Black River,1,,,,
+16,Kent,1,,8.20a,,9.20p
+21,Auburn,1,,8.28a,,9.12p
+28,Sumner,0,,8.40a,,9.02p
+30,North Puyallup,0,,8.44a,,8.58p
+38,Tacoma,1,ar 11.45a,ar 9.05a,lv 1.30p,lv 8.45p

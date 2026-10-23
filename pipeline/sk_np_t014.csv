@@ -1,0 +1,48 @@
+# Northern Pacific, Table 14, St. Paul, Minneapolis - Grand Forks, Winnipeg. From the Northern Pacific timetable of May 18, 1947 (scan np1947/np_t014.png,
+# printed sideways; signs np1947/np_signs.png). Transcribed 18 October 2026. CENTRAL TIME. Miles from St. Paul as printed.
+# Entered from Manitoba Junction (Brendan, 18 Oct): the column heads "7-13" and "14-8": No. 7 (St. Paul 8.42a - Minneapolis 9.17a - Staples 12.09p / 12.19p -
+#   Detroit Lakes 1.36p - Manitoba Junction ar 2.03p) connects with No. 13 (Manitoba Junction lv 2.13p - Winnipeg); No. 14 (Winnipeg 8.50a - Manitoba Junction ar 4.12p)
+#   connects with No. 8 (Manitoba Junction lv 4.38p - Detroit Lakes 5.07p - Staples 6.35p / 6.52p - Minneapolis 9.52p - St. Paul 10.25p).
+#   Also printed: Duluth 7.30a - Superior 7.45a - Staples ar 11.40a (for No. 7) and Staples lv 6.50p - Superior 10.34p - Duluth 10.50p (from No. 8);
+#   Fargo 12.54p - Moorhead 12.58p - Manitoba Junction 1.50p (for No. 13) and Manitoba Junction 4.40p - Moorhead 5.31p - Fargo 5.35p (from No. 14).
+# Pembina, N.D. (412) "arr ... lve" and Emerson Jn., Man. (415) "lve ... arr": two rows; the border is between them (23 minutes at Pembina / Emerson).
+# Signs: * = daily; f = stops on flag; a = stops on flag to pick up or let off revenue passengers (entered as f); "- -" = does not stop (Harold, Freeman,
+#   Davidson, Carthage Junction: rows kept, no times). St. Jean B'Tiste as printed = St. Jean Baptiste.
+# Provinces / states: Manitoba Junction - East Grand Forks MN; Grand Forks - Pembina ND; Emerson Jn. - Winnipeg MB.
+#train col=No13 num=13 dir=down days="daily" kind=passenger from="St. Paul (No. 7 to Manitoba Junction)" note="From St. Paul 8.42 a.m. by No. 7 (Manitoba Junction ar 2.03 p.m.); connection from Fargo 12.54 p.m. Manitoba Junction 2.13 p.m. to Winnipeg 9.40 p.m."
+#train col=No14 num=14 dir=up days="daily" kind=passenger to="St. Paul (No. 8 from Manitoba Junction)" note="Winnipeg 8.50 a.m. to Manitoba Junction 4.12 p.m.; on by No. 8 to St. Paul 10.25 p.m., connection to Fargo 5.35 p.m."
+mile,station,principal,prov,tz,No13,No14
+224,Manitoba Junction,1,MN,C,lv 2.13p,ar 4.12p
+229,Hitterdal,0,MN,C,2.21p,4.02p
+236,Ulen,0,MN,C,2.31p,3.51p
+243,Syre,0,MN,C,f2.41p,f3.40p
+249,Twin Valley,0,MN,C,2.51p,3.31p
+256,Gary,0,MN,C,3.01p,3.20p
+268,Fertile,0,MN,C,3.24p,3.00p
+284,Harold,0,MN,C,,
+291,Crookston,1,MN,C,3.57p,2.23p
+302,Freeman,0,MN,C,,
+307,Davidson,0,MN,C,,
+313,Carthage Junction,0,MN,C,,
+318,East Grand Forks,0,MN,C,4.45p,1.46p
+319,Grand Forks,1,ND,C,4.50p,1.35p
+335,Meckinock,0,ND,C,5.14p,1.06p
+340,Honeyford,0,ND,C,f5.21p,f12.57p
+344,Gilby,0,ND,C,5.27p,12.50p
+348,Johnstown,0,ND,C,f5.33p,12.42p
+353,Forest River,0,ND,C,5.40p,12.35p
+358,Voss,0,ND,C,f5.52p,f12.20p
+368,Grafton,1,ND,C,6.07p,12.05p
+375,Cashel,0,ND,C,f6.19p,f11.52a
+383,Drayton,0,ND,C,6.35p,11.41a
+392,Bowesmont,0,ND,C,6.50p,11.27a
+401,Joliette,0,ND,C,7.08p,11.11a
+412,Pembina,1,ND,C,ar 7.27p,lv 10.55a
+415,Emerson Jn.,0,MB,C,lv 7.50p,ar 10.35a
+424,Letellier,0,MB,C,f8.03p,f10.19a
+433,St. Jean Baptiste,0,MB,C,f8.17p,f10.06a
+440,Morris,0,MB,C,8.28p,9.56a
+457,St. Agathe,0,MB,C,f8.57p,f9.28a
+465,Cartier,0,MB,C,f9.11p,f9.16a
+477,Portage Junction,0,MB,C,9.30p,9.00a
+480,Winnipeg,1,MB,C,ar 9.40p,lv 8.50a

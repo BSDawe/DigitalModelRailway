@@ -1,0 +1,12 @@
+# Canadian National, Table 161a, Belmont - Deloraine. Official Guide, April 25, 1948 (scan cn1948_mb/t156_165.png). Transcribed 18 October 2026. CENTRAL TIME. Miles as printed. All Manitoba.
+# Signs (key on this page): a = Monday, Wednesday and Friday; b = Tuesday, Thursday and Saturday; l = Tuesday and Saturday; n = Tuesday and Thursday;
+#   p = Monday and Friday; v = Tuesday only; x = Monday only; f = flag stop; M = mixed train.
+# Miles as printed: Holmfield 44.9, Deloraine 95.9 (51 miles Holmfield - Deloraine, 4 hours 20 minutes down).
+#train col=M235 num=235 dir=down days="Mon" kind=mixed note="Monday only. Belmont 1.45 p.m. to Deloraine 10.00 p.m."
+#train col=M236 num=236 dir=up days="Tue" kind=mixed note="Tuesday only. Deloraine 5.05 a.m. to Belmont 11.55 a.m."
+mile,station,principal,prov,tz,M235,M236
+0.0,Belmont,1,MB,C,lv 1.45p,ar 11.55a
+9.8,Baldur,0,MB,C,2.20p,11.25a
+15.8,Greenway,0,MB,C,3.30p,11.10a
+44.9,Holmfield,0,MB,C,5.40p,8.25a
+95.9,Deloraine,1,MB,C,ar 10.00p,lv 5.05a

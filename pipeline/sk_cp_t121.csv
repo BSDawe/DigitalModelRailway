@@ -1,0 +1,14 @@
+# Canadian Pacific, Table 121, Lloydminster - Hillmond.
+# From the Canadian Pacific public timetable of about 1948 (scan cp1948_sk/tables120_122_moosejaw_shaunavon_lethbridge.png, printed sideways).
+# Times as printed: MOUNTAIN TIME ("Mountain Time" heads the station column).
+# Signs (explanation of signs on this page): M = mixed train; f = flag stop (none used in this table).
+# Miles from Lloydminster as printed. Lloydminster is printed without "Sask" or "Alta"; the town straddles the border (the 4th meridian) and the next
+# station Northminster is in Saskatchewan: entered SK?, in doubt.
+#train col=M451 num=451 dir=down days="Fri" kind=mixed
+#train col=M452 num=452 dir=up days="Fri" kind=mixed
+mile,station,principal,prov,tz,M451,M452
+0.0,Lloydminster,1,SK?,M,lv 7.30a,ar 12.45p
+7.2,Northminster,0,SK,M,8.00a,11.55a
+14.6,Rex,0,SK,M,8.30a,11.15a
+19.6,Greenstreet,0,SK,M,8.50a,10.50a
+25.3,Hillmond,1,SK,M,ar 9.15a,lv 10.30a

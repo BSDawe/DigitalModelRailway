@@ -1,0 +1,414 @@
+direction,train,name,days,station,mile,time,flag
+# Westbound (read down). Mileages are CP main-line miles; Kettle Valley trains enter at Odlum (Hope 423.2 -> Odlum 425.5 on the KV).
+west,1,,Daily,North Bend,2752.7,ar 5.30p / lv 5.40p,
+west,1,,Daily,China Bar,2758.9,5.53p,f
+west,1,,Daily,Spuzzum,2768.2,6.12p,f
+west,1,,Daily,Yale,2779.8,6.40p,
+west,1,,Daily,Choate,2786.7,6.53p,f
+west,1,,Daily,Haig,2792.8,7.06p,
+west,1,,Daily,Katz,2797.4,7.15p,f
+west,1,,Daily,Ruby Creek,2800.7,7.23p,f
+west,1,,Daily,Agassiz,2811.6,7.40p,
+west,1,,Daily,Harrison Mills,2820.8,7.55p,f
+west,1,,Daily,Mission,2840.0,8.27p,
+west,1,,Daily,Ruskin,2846.5,8.38p,b
+west,1,,Daily,Haney,2855.5,8.53p,
+west,1,,Daily,Hammond,2857.8,8.57p,
+west,1,,Daily,Coquitlam,2865.2,9.10p,
+west,1,,Daily,Port Moody,2869.9,9.26p,b
+west,1,,Daily,Vancouver,2881.7,ar 10.00p,
+west,13,The Mountaineer,Daily,North Bend,2752.7,ar 3.50a / lv 4.10a,
+west,13,The Mountaineer,Daily,Agassiz,2811.6,6.16a,d
+west,13,The Mountaineer,Daily,Mission,2840.0,7.00a,d
+west,13,The Mountaineer,Daily,Coquitlam,2865.2,7.35a,
+west,13,The Mountaineer,Daily,Vancouver,2881.7,ar 8.25a,
+west,7,The Dominion,Daily,North Bend,2752.7,ar 4.55a / lv 5.05a,
+west,7,The Dominion,Daily,Agassiz,2811.6,7.07a,
+west,7,The Dominion,Daily,Mission,2840.0,7.53a,
+west,7,The Dominion,Daily,Coquitlam,2865.2,8.40a,
+west,7,The Dominion,Daily,Vancouver,2881.7,ar 9.20a,
+west,3,The Dominion,Daily,North Bend,2752.7,ar 4.25a / lv 4.35a,
+west,3,The Dominion,Daily,Yale,2779.8,5.40a,f
+west,3,The Dominion,Daily,Agassiz,2811.6,6.36a,
+west,3,The Dominion,Daily,Harrison Mills,2820.8,6.50a,d
+west,3,The Dominion,Daily,Mission,2840.0,7.20a,
+west,3,The Dominion,Daily,Haney,2855.5,7.42a,d
+west,3,The Dominion,Daily,Hammond,2857.8,7.45a,d
+west,3,The Dominion,Daily,Coquitlam,2865.2,7.55a,
+west,3,The Dominion,Daily,Port Moody,2869.9,8.11a,d
+west,3,The Dominion,Daily,Vancouver,2881.7,ar 8.45a,
+west,11,Kootenay Express,Daily,Hope (KV),423.2,6.45a,
+west,11,Kootenay Express,Daily,Odlum,2794.4,7.05a,
+west,11,Kootenay Express,Daily,Katz,2797.4,7.10a,f
+west,11,Kootenay Express,Daily,Ruby Creek,2800.7,7.20a,
+west,11,Kootenay Express,Daily,Agassiz,2811.6,7.39a,
+west,11,Kootenay Express,Daily,Harrison Mills,2820.8,7.54a,
+west,11,Kootenay Express,Daily,Deroche,2826.1,8.06a,
+west,11,Kootenay Express,Daily,Dewdney,2834.2,8.16a,
+west,11,Kootenay Express,Daily,Hatzic,2837.1,8.21a,
+west,11,Kootenay Express,Daily,Mission,2840.0,8.30a,
+west,11,Kootenay Express,Daily,Ruskin,2846.5,8.43a,
+west,11,Kootenay Express,Daily,Whonock,2849.0,8.48a,
+west,11,Kootenay Express,Daily,Albion,2852.4,8.54a,
+west,11,Kootenay Express,Daily,Haney,2855.5,9.01a,
+west,11,Kootenay Express,Daily,Hammond,2857.8,9.07a,
+west,11,Kootenay Express,Daily,Pitt Meadows,2860.0,9.12a,
+west,11,Kootenay Express,Daily,Coquitlam,2865.2,9.25a,
+west,11,Kootenay Express,Daily,Port Moody,2869.9,9.31a,
+west,11,Kootenay Express,Daily,Barnet,2872.6,9.36a,f
+west,11,Kootenay Express,Daily,Vancouver,2881.7,ar 10.05a,
+west,45,,Daily,Odlum,2794.4,4.10a,
+west,45,,Daily,Katz,2797.4,4.16a,f
+west,45,,Daily,Ruby Creek,2800.7,4.30a,
+west,45,,Daily,Wahleach,2806.1,4.39a,f
+west,45,,Daily,Agassiz,2811.6,4.49a,
+west,45,,Daily,Deroche,2826.1,5.16a,f
+west,45,,Daily,Mission,2840.0,5.35a,
+west,45,,Daily,Silverdale,2844.7,5.42a,f
+west,45,,Daily,Coquitlam,2865.2,6.20a,
+west,45,,Daily,Vancouver,2881.7,ar 7.00a,
+west,M809,Mixed,Except Sunday,Mission,2840.0,2.55p,
+west,M809,Mixed,Except Sunday,Silverdale,2844.7,3.06p,f
+west,M809,Mixed,Except Sunday,Ruskin,2846.5,3.10p,
+west,M809,Mixed,Except Sunday,Whonock,2849.0,3.17p,f
+west,M809,Mixed,Except Sunday,Albion,2852.4,3.24p,f
+west,M809,Mixed,Except Sunday,Haney,2855.5,3.33p,f
+west,M809,Mixed,Except Sunday,Hammond,2857.8,3.42p,f
+west,M809,Mixed,Except Sunday,Pitt Meadows,2860.0,3.47p,f
+west,M809,Mixed,Except Sunday,Coquitlam,2865.2,4.00p,
+west,M809,Mixed,Except Sunday,Port Moody,2869.9,4.23p,f
+west,M809,Mixed,Except Sunday,Barnet,2872.6,4.32p,f
+west,M809,Mixed,Except Sunday,Vancouver,2881.7,ar 5.00p,
+# Eastbound (read up)
+east,8,The Dominion,Daily,Vancouver,2881.7,lv 7.15p,
+east,8,The Dominion,Daily,Coquitlam,2865.2,7.55p,
+east,8,The Dominion,Daily,Mission,2840.0,8.40p,
+east,8,The Dominion,Daily,Agassiz,2811.6,9.22p,
+east,8,The Dominion,Daily,North Bend,2752.7,ar 11.15p / lv 11.25p,
+east,4,The Dominion,Daily,Vancouver,2881.7,lv 7.45p,
+east,4,The Dominion,Daily,Coquitlam,2865.2,8.25p,
+east,4,The Dominion,Daily,Haney,2855.5,8.40p,h
+east,4,The Dominion,Daily,Mission,2840.0,9.10p,
+east,4,The Dominion,Daily,Agassiz,2811.6,9.52p,
+east,4,The Dominion,Daily,Yale,2779.8,10.41p,f
+east,4,The Dominion,Daily,North Bend,2752.7,ar 11.45p / lv 11.55p,
+east,14,The Mountaineer,Daily,Vancouver,2881.7,lv 6.45p,
+east,14,The Mountaineer,Daily,Coquitlam,2865.2,7.25p,
+east,14,The Mountaineer,Daily,Mission,2840.0,8.08p,e
+east,14,The Mountaineer,Daily,Agassiz,2811.6,8.47p,e
+east,14,The Mountaineer,Daily,North Bend,2752.7,ar 10.40p / lv 10.50p,
+east,2,,Daily,Vancouver,2881.7,lv 10.30a,
+east,2,,Daily,Port Moody,2869.9,10.55a,
+east,2,,Daily,Coquitlam,2865.2,11.10a,
+east,2,,Daily,Hammond,2857.8,11.24a,
+east,2,,Daily,Haney,2855.5,11.29a,
+east,2,,Daily,Ruskin,2846.5,11.44a,f
+east,2,,Daily,Mission,2840.0,11.59a,
+east,2,,Daily,Hatzic,2837.1,12.04p,f
+east,2,,Daily,Dewdney,2834.2,12.09p,f
+east,2,,Daily,Deroche,2826.1,12.20p,f
+east,2,,Daily,Harrison Mills,2820.8,12.32p,
+east,2,,Daily,Agassiz,2811.6,12.48p,
+east,2,,Daily,Ruby Creek,2800.7,1.08p,
+east,2,,Daily,Katz,2797.4,1.14p,f
+east,2,,Daily,Haig,2792.8,1.23p,
+east,2,,Daily,Choate,2786.7,1.35p,f
+east,2,,Daily,Yale,2779.8,1.50p,
+east,2,,Daily,Spuzzum,2768.2,2.15p,f
+east,2,,Daily,China Bar,2758.9,2.40p,f
+east,2,,Daily,North Bend,2752.7,ar 2.55p / lv 3.05p,
+east,KVX,Kettle Valley Express,Daily,Vancouver,2881.7,lv 5.50p,
+east,KVX,Kettle Valley Express,Daily,Barnet,2872.6,6.10p,
+east,KVX,Kettle Valley Express,Daily,Port Moody,2869.9,6.16p,
+east,KVX,Kettle Valley Express,Daily,Coquitlam,2865.2,6.26p,
+east,KVX,Kettle Valley Express,Daily,Pitt Meadows,2860.0,6.41p,
+east,KVX,Kettle Valley Express,Daily,Hammond,2857.8,6.46p,
+east,KVX,Kettle Valley Express,Daily,Haney,2855.5,6.51p,
+east,KVX,Kettle Valley Express,Daily,Albion,2852.4,6.57p,
+east,KVX,Kettle Valley Express,Daily,Whonock,2849.0,7.04p,
+east,KVX,Kettle Valley Express,Daily,Ruskin,2846.5,7.09p,
+east,KVX,Kettle Valley Express,Daily,Mission,2840.0,7.24p,
+east,KVX,Kettle Valley Express,Daily,Hatzic,2837.1,7.30p,
+east,KVX,Kettle Valley Express,Daily,Dewdney,2834.2,7.36p,
+east,KVX,Kettle Valley Express,Daily,Deroche,2826.1,7.48p,
+east,KVX,Kettle Valley Express,Daily,Harrison Mills,2820.8,8.01p,
+east,KVX,Kettle Valley Express,Daily,Agassiz,2811.6,8.19p,
+east,KVX,Kettle Valley Express,Daily,Ruby Creek,2800.7,8.40p,
+east,KVX,Kettle Valley Express,Daily,Odlum,2794.4,8.55p,
+east,KVX,Kettle Valley Express,Daily,Hope (KV),423.2,9.00p,
+east,46,,Daily,Vancouver,2881.7,lv 8.30p,
+east,46,,Daily,Coquitlam,2865.2,9.05p,
+east,46,,Daily,Hammond,2857.8,9.19p,
+east,46,,Daily,Haney,2855.5,9.24p,
+east,46,,Daily,Ruskin,2846.5,9.39p,f
+east,46,,Daily,Silverdale,2844.7,9.42p,f
+east,46,,Daily,Mission,2840.0,9.52p,
+east,46,,Daily,Dewdney,2834.2,10.00p,f
+east,46,,Daily,Nicomen,2829.4,10.08p,f
+east,46,,Daily,Deroche,2826.1,10.11p,f
+east,46,,Daily,Harrison Mills,2820.8,10.23p,f
+east,46,,Daily,Agassiz,2811.6,10.38p,
+east,46,,Daily,Wahleach,2806.1,10.46p,f
+east,46,,Daily,Ruby Creek,2800.7,11.00p,
+east,46,,Daily,Katz,2797.4,11.11p,f
+east,46,,Daily,Odlum,2794.4,11.20p,
+east,M810,Mixed,Except Sunday,Vancouver,2881.7,lv 7.30a,
+east,M810,Mixed,Except Sunday,Barnet,2872.6,7.50a,f
+east,M810,Mixed,Except Sunday,Port Moody,2869.9,8.00a,
+east,M810,Mixed,Except Sunday,Coquitlam,2865.2,8.20a,
+east,M810,Mixed,Except Sunday,Pitt Meadows,2860.0,8.30a,f
+east,M810,Mixed,Except Sunday,Hammond,2857.8,9.10a,
+east,M810,Mixed,Except Sunday,Haney,2855.5,9.30a,
+east,M810,Mixed,Except Sunday,Albion,2852.4,9.38a,f
+east,M810,Mixed,Except Sunday,Whonock,2849.0,9.48a,f
+east,M810,Mixed,Except Sunday,Ruskin,2846.5,10.00a,
+east,M810,Mixed,Except Sunday,Silverdale,2844.7,10.05a,f
+east,M810,Mixed,Except Sunday,Mission,2840.0,ar 10.15a,
+# CP main line, Table 7 (1948) Field - North Bend, with Stephen and Hector from Table 6 (Mountain time, converted to Pacific). Chaumox-Lytton rows replace the earlier photo (row names were hidden: they are Cisco, Kanaka, Keefers).
+# Nos. 13 and 14 (The Mountaineer) are summer trains: No. 13 from Chicago June 29 to Sept. 3; No. 14 from Vancouver July 2 to Sept. 1.
+west,1,,Daily,Hector,2365.1,2.17a,f
+west,1,,Daily,Field,2376.7,ar 2.55a / lv 3.10a,
+west,1,,Daily,Golden,2411.7,4.30a,
+west,1,,Daily,Beavermouth,2439.7,5.30a,
+west,1,,Daily,Rogers,2444.5,5.40a,f
+west,1,,Daily,Glacier,2462.2,6.25a,
+west,1,,Daily,Albert Canyon,2481.5,7.07a,f
+west,1,,Daily,Revelstoke,2502.4,ar 7.50a / lv 8.10a,
+west,1,,Daily,Taft,2526.6,9.05a,
+west,1,,Daily,Craigellachie,2530.7,9.13a,f
+west,1,,Daily,Malakwa,2535.0,9.21a,f
+west,1,,Daily,Solsqua,2543.5,9.37a,f
+west,1,,Daily,Sicamous,2547.1,ar 9.45a / lv 9.55a,
+west,1,,Daily,Canoe,2559.7,10.21a,
+west,1,,Daily,Salmon Arm,2565.8,10.35a,
+west,1,,Daily,Tappen,2573.0,10.50a,
+west,1,,Daily,Carlin,2577.7,11.05a,f
+west,1,,Daily,Notch Hill,2582.2,11.20a,
+west,1,,Daily,Elson,2586.3,11.30a,f
+west,1,,Daily,Squilax,2589.9,11.38a,
+west,1,,Daily,Chase,2596.1,11.52a,
+west,1,,Daily,Shuswap,2598.0,11.56a,f
+west,1,,Daily,Pritchard,2607.0,12.13p,
+west,1,,Daily,Monte Creek,2614.0,12.28p,
+west,1,,Daily,Kamloops,2631.2,ar 1.00p / lv 1.15p,
+west,1,,Daily,Tranquille,2639.8,1.29p,f
+west,1,,Daily,Cherry Creek,2645.8,1.42p,f
+west,1,,Daily,Savona,2656.4,2.02p,
+west,1,,Daily,Walhachin,2663.2,2.16p,
+west,1,,Daily,Ashcroft,2678.5,2.46p,
+west,1,,Daily,Basque,2687.1,3.02p,f
+west,1,,Daily,Spatsum,2692.1,3.10p,f
+west,1,,Daily,Toketic,2698.5,3.21p,f
+west,1,,Daily,Spence's Bridge,2703.9,3.34p,
+west,1,,Daily,Drynoch,2710.5,3.48p,f
+west,1,,Daily,Thompson,2716.8,4.02p,f
+west,1,,Daily,Gladwin,2721.3,4.18p,f
+west,1,,Daily,Lytton,2726.1,4.30p,
+west,1,,Daily,Kanaka,2735.1,4.51p,f
+west,1,,Daily,Keefers,2742.0,5.06p,f
+west,1,,Daily,Chaumox,2747.7,5.18p,f
+west,13,The Mountaineer,Daily,Hector,2365.1,11.22a,f
+west,13,The Mountaineer,Daily,Field,2376.7,ar 11.55a / lv 12.10p,
+west,13,The Mountaineer,Daily,Golden,2411.7,1.55p,f
+west,13,The Mountaineer,Daily,Glacier,2462.2,4.00p,
+west,13,The Mountaineer,Daily,Revelstoke,2502.4,ar 5.30p / lv 5.50p,
+west,13,The Mountaineer,Daily,Sicamous,2547.1,ar 6.25p / lv 6.35p,
+west,13,The Mountaineer,Daily,Kamloops,2631.2,ar 10.45p / lv 10.55p,
+west,13,The Mountaineer,Daily,Ashcroft,2678.5,12.25a,
+west,7,The Dominion,Daily,Hector,2365.1,12.37p,f
+west,7,The Dominion,Daily,Field,2376.7,ar 1.10p / lv 1.25p,
+west,7,The Dominion,Daily,Golden,2411.7,3.00p,
+west,7,The Dominion,Daily,Beavermouth,2439.7,4.05p,
+west,7,The Dominion,Daily,Glacier,2462.2,5.15p,
+west,7,The Dominion,Daily,Revelstoke,2502.4,ar 6.50p / lv 7.10p,
+west,7,The Dominion,Daily,Taft,2526.6,8.05p,
+west,7,The Dominion,Daily,Sicamous,2547.1,ar 8.50p / lv 9.05p,
+west,7,The Dominion,Daily,Salmon Arm,2565.8,9.45p,
+west,7,The Dominion,Daily,Kamloops,2631.2,ar 12.15a / lv 12.25a,
+west,7,The Dominion,Daily,Ashcroft,2678.5,2.00a,
+west,7,The Dominion,Daily,Spence's Bridge,2703.9,3.10a,
+west,7,The Dominion,Daily,Lytton,2726.1,3.56a,
+west,3,The Dominion,Daily,Stephen,2362.3,12.00p,f
+west,3,The Dominion,Daily,Hector,2365.1,12.07p,f
+west,3,The Dominion,Daily,Field,2376.7,ar 12.40p / lv 12.55p,
+west,3,The Dominion,Daily,Leanchoil,2393.7,1.45p,f
+west,3,The Dominion,Daily,Golden,2411.7,2.35p,
+west,3,The Dominion,Daily,Moberly,2418.2,2.48p,f
+west,3,The Dominion,Daily,Forde,2424.2,2.59p,f
+west,3,The Dominion,Daily,Donald,2428.2,3.07p,f
+west,3,The Dominion,Daily,Beavermouth,2439.7,3.37p,
+west,3,The Dominion,Daily,Rogers,2444.5,3.48p,f
+west,3,The Dominion,Daily,Stoney Creek,2453.8,4.21p,f
+west,3,The Dominion,Daily,Glacier,2462.2,4.45p,
+west,3,The Dominion,Daily,Albert Canyon,2481.5,5.34p,
+west,3,The Dominion,Daily,Twin Butte,2491.8,5.56p,f
+west,3,The Dominion,Daily,Greely,2496.2,6.05p,f
+west,3,The Dominion,Daily,Revelstoke,2502.4,ar 6.20p / lv 6.40p,
+west,3,The Dominion,Daily,Three Valley,2517.0,7.15p,f
+west,3,The Dominion,Daily,Taft,2526.6,7.35p,
+west,3,The Dominion,Daily,Craigellachie,2530.7,7.43p,f
+west,3,The Dominion,Daily,Malakwa,2535.0,7.52p,f
+west,3,The Dominion,Daily,Cambie,2539.9,8.03p,f
+west,3,The Dominion,Daily,Solsqua,2543.5,8.12p,f
+west,3,The Dominion,Daily,Sicamous,2547.1,ar 8.20p / lv 8.35p,
+west,3,The Dominion,Daily,Canoe,2559.7,8.59p,f
+west,3,The Dominion,Daily,Salmon Arm,2565.8,9.15p,
+west,3,The Dominion,Daily,Notch Hill,2582.2,10.08p,
+west,3,The Dominion,Daily,Chase,2596.1,10.38p,f
+west,3,The Dominion,Daily,Kamloops,2631.2,ar 11.45p / lv 11.55p,
+west,3,The Dominion,Daily,Savona,2656.4,12.42a,f
+west,3,The Dominion,Daily,Ashcroft,2678.5,1.25a,
+west,3,The Dominion,Daily,Spence's Bridge,2703.9,2.40a,
+west,3,The Dominion,Daily,Lytton,2726.1,3.26a,
+east,8,The Dominion,Daily,Lytton,2726.1,12.26a,
+east,8,The Dominion,Daily,Spence's Bridge,2703.9,1.12a,
+east,8,The Dominion,Daily,Ashcroft,2678.5,2.00a,
+east,8,The Dominion,Daily,Kamloops,2631.2,ar 3.35a / lv 3.50a,
+east,8,The Dominion,Daily,Chase,2596.1,4.52a,
+east,8,The Dominion,Daily,Notch Hill,2582.2,5.25a,f
+east,8,The Dominion,Daily,Salmon Arm,2565.8,5.56a,
+east,8,The Dominion,Daily,Sicamous,2547.1,ar 6.35a / lv 6.45a,
+east,8,The Dominion,Daily,Malakwa,2535.0,7.07a,f
+east,8,The Dominion,Daily,Taft,2526.6,7.25a,
+east,8,The Dominion,Daily,Revelstoke,2502.4,ar 8.20a / lv 8.40a,
+east,8,The Dominion,Daily,Glacier,2462.2,10.15a,
+east,8,The Dominion,Daily,Rogers,2444.5,10.54a,f
+east,8,The Dominion,Daily,Beavermouth,2439.7,11.07a,
+east,8,The Dominion,Daily,Donald,2428.2,11.31a,f
+east,8,The Dominion,Daily,Golden,2411.7,12.05p,
+east,8,The Dominion,Daily,Field,2376.7,ar 1.50p / lv 2.05p,
+east,8,The Dominion,Daily,Hector,2365.1,2.49p,f
+east,4,The Dominion,Daily,Lytton,2726.1,12.56a,f
+east,4,The Dominion,Daily,Spence's Bridge,2703.9,1.42a,
+east,4,The Dominion,Daily,Ashcroft,2678.5,2.35a,
+east,4,The Dominion,Daily,Kamloops,2631.2,ar 4.10a / lv 4.25a,
+east,4,The Dominion,Daily,Chase,2596.1,5.27a,
+east,4,The Dominion,Daily,Squilax,2589.9,5.39a,f
+east,4,The Dominion,Daily,Notch Hill,2582.2,6.00a,f
+east,4,The Dominion,Daily,Tappen,2573.0,6.17a,f
+east,4,The Dominion,Daily,Salmon Arm,2565.8,6.31a,
+east,4,The Dominion,Daily,Canoe,2559.7,6.44a,f
+east,4,The Dominion,Daily,Sicamous,2547.1,ar 7.10a / lv 7.20a,
+east,4,The Dominion,Daily,Revelstoke,2502.4,ar 9.00a / lv 9.20a,
+east,4,The Dominion,Daily,Albert Canyon,2481.5,10.05a,f
+east,4,The Dominion,Daily,Glacier,2462.2,10.55a,
+east,4,The Dominion,Daily,Beavermouth,2439.7,11.43a,
+east,4,The Dominion,Daily,Golden,2411.7,12.40p,
+east,4,The Dominion,Daily,Field,2376.7,ar 2.30p / lv 2.45p,
+east,4,The Dominion,Daily,Hector,2365.1,3.29p,f
+east,14,The Mountaineer,Daily,Lytton,2726.1,11.49p,
+east,14,The Mountaineer,Daily,Ashcroft,2678.5,1.25a,
+east,14,The Mountaineer,Daily,Kamloops,2631.2,ar 3.00a / lv 3.10a,
+east,14,The Mountaineer,Daily,Salmon Arm,2565.8,5.16a,
+east,14,The Mountaineer,Daily,Sicamous,2547.1,5.55a,
+east,14,The Mountaineer,Daily,Revelstoke,2502.4,ar 7.30a / lv 7.50a,
+east,14,The Mountaineer,Daily,Glacier,2462.2,9.25a,
+east,14,The Mountaineer,Daily,Golden,2411.7,11.10a,
+east,14,The Mountaineer,Daily,Field,2376.7,ar 12.55p / lv 1.10p,
+east,14,The Mountaineer,Daily,Hector,2365.1,1.54p,f
+east,2,,Daily,Lytton,2726.1,4.07p,
+east,2,,Daily,Gladwin,2721.3,4.18p,f
+east,2,,Daily,Thompson,2716.8,4.28p,f
+east,2,,Daily,Drynoch,2710.5,4.40p,f
+east,2,,Daily,Spence's Bridge,2703.9,5.00p,
+east,2,,Daily,Toketic,2698.5,5.12p,f
+east,2,,Daily,Spatsum,2692.1,5.25p,f
+east,2,,Daily,Basque,2687.1,5.35p,f
+east,2,,Daily,Ashcroft,2678.5,5.55p,
+east,2,,Daily,Semlin,2668.5,6.15p,f
+east,2,,Daily,Walhachin,2663.2,6.27p,
+east,2,,Daily,Savona,2656.4,6.43p,
+east,2,,Daily,Cherry Creek,2645.8,7.05p,f
+east,2,,Daily,Tranquille,2639.8,7.17p,f
+east,2,,Daily,Kamloops,2631.2,ar 7.35p / lv 7.45p,
+east,2,,Daily,Monte Creek,2614.0,8.10p,
+east,2,,Daily,Pritchard,2607.0,8.25p,
+east,2,,Daily,Shuswap,2598.0,8.42p,f
+east,2,,Daily,Chase,2596.1,8.50p,
+east,2,,Daily,Squilax,2589.9,9.04p,f
+east,2,,Daily,Elson,2586.3,9.16p,f
+east,2,,Daily,Notch Hill,2582.2,9.32p,
+east,2,,Daily,Carlin,2577.7,9.50p,f
+east,2,,Daily,Tappen,2573.0,10.05p,f
+east,2,,Daily,Salmon Arm,2565.8,10.22p,
+east,2,,Daily,Canoe,2559.7,10.37p,
+east,2,,Daily,Sicamous,2547.1,ar 11.05p / lv 11.15p,
+east,2,,Daily,Solsqua,2543.5,11.21p,f
+east,2,,Daily,Cambie,2539.9,11.27p,f
+east,2,,Daily,Malakwa,2535.0,11.38p,f
+east,2,,Daily,Craigellachie,2530.7,11.47p,f
+east,2,,Daily,Taft,2526.6,11.57p,f
+east,2,,Daily,Three Valley,2517.0,12.23a,f
+east,2,,Daily,Revelstoke,2502.4,ar 1.00a / lv 1.20a,
+east,2,,Daily,Greely,2496.2,1.35a,f
+east,2,,Daily,Twin Butte,2491.8,1.45a,f
+east,2,,Daily,Albert Canyon,2481.5,2.08a,
+east,2,,Daily,Glacier,2462.2,3.03a,
+east,2,,Daily,Rogers,2444.5,3.42a,f
+east,2,,Daily,Beavermouth,2439.7,3.55a,
+east,2,,Daily,Donald,2428.2,4.21a,f
+east,2,,Daily,Forde,2424.2,4.30a,f
+east,2,,Daily,Moberly,2418.2,4.43a,f
+east,2,,Daily,Golden,2411.7,5.00a,
+east,2,,Daily,Leanchoil,2393.7,5.58a,f
+east,2,,Daily,Field,2376.7,ar 6.40a / lv 6.55a,
+east,2,,Daily,Hector,2365.1,7.34a,f
+east,2,,Daily,Stephen,2362.3,7.44a,f
+# Calgary - Banff - Lake Louise, from Table 6 (1948). The table prints Mountain time; entered here in Pacific time, an hour earlier, like the rest of this file.
+west,1,,Daily,Calgary,2240.1,lv 10.15p,
+west,1,,Daily,Robertson,2248.8,10.32p,f
+west,1,,Daily,Bearspaw,2254.1,10.40p,f
+west,1,,Daily,Glenbow,2258.3,10.46p,f
+west,1,,Daily,Cochrane,2262.9,10.56p,
+west,1,,Daily,Radnor,2273.9,11.14p,f
+west,1,,Daily,Morley,2281.7,11.30p,
+west,1,,Daily,Seebe,2292.2,11.47p,f
+west,1,,Daily,Kananaskis,2294.4,11.51p,f
+west,1,,Daily,Exshaw,2297.4,11.58p,
+west,1,,Daily,Canmore,2307.2,12.20a,
+west,1,,Daily,Banff,2322.0,ar 12.45a / lv 12.55a,
+west,1,,Daily,Lake Louise,2356.7,1.50a,
+west,13,The Mountaineer,Daily,Calgary,2240.1,lv 6.50a,
+west,13,The Mountaineer,Daily,Banff,2322.0,ar 9.15a / lv 9.35a,
+west,13,The Mountaineer,Daily,Lake Louise,2356.7,ar 10.35a / lv 10.50a,
+west,7,The Dominion,Daily,Calgary,2240.1,lv 8.35a,
+west,7,The Dominion,Daily,Banff,2322.0,ar 11.05a / lv 11.15a,
+west,7,The Dominion,Daily,Lake Louise,2356.7,12.10p,
+west,3,The Dominion,Daily,Calgary,2240.1,lv 8.00a,
+west,3,The Dominion,Daily,Cochrane,2262.9,8.42a,
+west,3,The Dominion,Daily,Radnor,2273.9,9.00a,f
+west,3,The Dominion,Daily,Morley,2281.7,9.16a,
+west,3,The Dominion,Daily,Kananaskis,2294.4,9.38a,
+west,3,The Dominion,Daily,Exshaw,2297.4,9.50a,
+west,3,The Dominion,Daily,Canmore,2307.2,10.10a,
+west,3,The Dominion,Daily,Banff,2322.0,ar 10.30a / lv 10.40a,
+west,3,The Dominion,Daily,Castle Mountain,2339.1,11.04a,f
+west,3,The Dominion,Daily,Lake Louise,2356.7,11.35a,
+east,8,The Dominion,Daily,Lake Louise,2356.7,3.15p,
+east,8,The Dominion,Daily,Banff,2322.0,ar 4.05p / lv 4.15p,
+east,8,The Dominion,Daily,Canmore,2307.2,4.40p,f
+east,8,The Dominion,Daily,Calgary,2240.1,ar 6.20p,
+east,4,The Dominion,Daily,Lake Louise,2356.7,3.55p,
+east,4,The Dominion,Daily,Banff,2322.0,ar 4.45p / lv 4.55p,
+east,4,The Dominion,Daily,Exshaw,2297.4,5.34p,f
+east,4,The Dominion,Daily,Kananaskis,2294.4,5.38p,f
+east,4,The Dominion,Daily,Seebe,2292.2,5.41p,f
+east,4,The Dominion,Daily,Morley,2281.7,5.57p,f
+east,4,The Dominion,Daily,Cochrane,2262.9,6.26p,f
+east,4,The Dominion,Daily,Calgary,2240.1,ar 7.05p,
+east,14,The Mountaineer,Daily,Lake Louise,2356.7,ar 2.20p / lv 2.35p,
+east,14,The Mountaineer,Daily,Banff,2322.0,ar 3.25p / lv 3.45p,
+east,14,The Mountaineer,Daily,Calgary,2240.1,ar 5.45p,
+east,2,,Daily,Lake Louise,2356.7,ar 7.55a / lv 8.05a,
+east,2,,Daily,Castle Mountain,2339.1,8.31a,f
+east,2,,Daily,Banff,2322.0,ar 8.55a / lv 9.05a,
+east,2,,Daily,Canmore,2307.2,9.35a,
+east,2,,Daily,Exshaw,2297.4,9.50a,
+east,2,,Daily,Kananaskis,2294.4,9.58a,
+east,2,,Daily,Morley,2281.7,10.24a,
+east,2,,Daily,Radnor,2273.9,10.36a,f
+east,2,,Daily,Cochrane,2262.9,10.54a,
+east,2,,Daily,Glenbow,2258.3,11.02a,f
+east,2,,Daily,Bearspaw,2254.1,11.09a,f
+east,2,,Daily,Robertson,2248.8,11.18a,f
+east,2,,Daily,Calgary,2240.1,ar 11.35a,

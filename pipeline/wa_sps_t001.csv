@@ -1,0 +1,69 @@
+# Spokane, Portland & Seattle Railway, Table 1, Spokane, Pasco and Portland, table of April 4, 1948 (Official Guide). Times as printed:
+# PACIFIC TIME. Miles: the table prints two columns, from Spokane (left, used here) and from Portland (right; Pasco 231.3, Portland 0).
+# SPOKANE: two rows as printed, "Spokane (N. P. Station)" and "Spokane (G. N. Station)", both mile 0 from Spokane (377.5 and 379.5 from
+# Portland). SP&S trains use the G.N. station; the N.P. station row carries only the NP connections (not entered, see below).
+# Columns as printed: 1 (The Streamlined Empire Builder), 3 (Oriental Limited, "See Note" - note not on the scan), "1-3" (North Coast Limited,
+# "operates east of Pasco via N. P. Ry.", New Streamlined Coaches), "5-5" ("No. Pac. Train No. 5 Spokane to Pasco"), and up "6-4" ("No. Pac.
+# Train No. 4 Pasco to Spokane"), "4-2" ("operates east of Pasco via N. P. Ry."), 4 (Oriental Limited), 2 (Empire Builder).
+# ENTERED as SP&S trains: Nos. 1, 3, 2, 4 (Spokane - Portland), No. 5 (Pasco - Portland, the SP&S part of column 5-5) and No. 6 (Portland -
+# Pasco, the SP&S part of column 6-4). NOT ENTERED: the NP parts Spokane (N.P. Station) - Pasco over the NP (already in wa_np_t003a): column
+# 1-3 NP No. 1 Spokane 9.00 p.m. - Pasco ar 12.13 a.m.; 5-5 NP No. 5 Spokane 7.15 a.m. - Pasco ar 10.30 a.m.; 6-4 NP No. 4 Pasco 4.30 p.m. -
+# Spokane 8.05 p.m.; 4-2 NP No. 2 Pasco 5.02 a.m. - Spokane 8.15 a.m. South of Pasco column 1-3 is identical to No. 3 and column 4-2 to No. 4.
+# Signs: * daily; f stops on flag. Entered as plain times, key not on the scans supplied: z (No. 3 Maryhill), c (No. 3 Stevenson), y (Nos. 3,
+# 4 Camas), b (No. 4 Maryhill), e (No. 4 Stevenson) - probably conditional stops.
+#train col=No1 num=1 dir=down days="daily" kind=passenger from="Spokane" to="Portland" note="The Streamlined Empire Builder (Portland section from GN No. 1)."
+#train col=No3 num=3 dir=down days="daily" kind=passenger from="Spokane" to="Portland" note="Oriental Limited (Portland section); also carries the North Coast Limited's passengers from Pasco (NP No. 1 Spokane - Pasco)."
+#train col=No5 num=5 dir=down days="daily" kind=passenger from="Pasco" to="Portland" note="Day local; connects at Pasco with NP No. 5 from Spokane."
+#train col=No6 num=6 dir=up days="daily" kind=passenger from="Portland" to="Pasco" note="Day local; connects at Pasco with NP No. 4 to Spokane."
+#train col=No4 num=4 dir=up days="daily" kind=passenger from="Portland" to="Spokane" note="Oriental Limited (Portland section); also connects at Pasco with NP No. 2 (North Coast Limited) to Spokane."
+#train col=No2 num=2 dir=up days="daily" kind=passenger from="Portland" to="Spokane" note="The Streamlined Empire Builder (Portland section to GN No. 2)."
+mile,station,principal,No1,No3,No5,No6,No4,No2
+0,Spokane (N. P. Station),1,,,,,,
+0,Spokane (G. N. Station),1,lv 12.06a,lv 9.45p,,,ar 6.50a,ar 10.55p
+19.2,South Cheney,0,,,,,,
+29.8,Amber,0,,10.39p,,,6.02a,
+35.6,Rodna,0,,,,,,
+44.1,Lamont,0,,10.59p,,,5.44a,
+56.1,Macall,0,,,,,,
+68.3,Benge,0,,11.29p,,,5.11a,
+88.1,Washtucna,0,,11.53p,,,4.44a,
+102.0,Kahlotus,0,,12.13a,,,4.25a,
+122.8,Snake River,0,,12.51a,,,3.52a,
+134.9,Levey,0,,,,,,
+148.2,Pasco,1,ar 3.10a / lv 3.20a,ar 1.35a / lv 1.50a,lv 10.40a,ar 3.45p,ar 2.40a / lv 3.10a,ar 7.30p / lv 7.40p
+150.3,Kennewick,0,,f1.57a,10.48a,3.38p,,
+155.4,Finley,0,,,f10.55a,f3.29p,,
+159.6,Hover,0,,,f11.01a,f3.22p,,
+166.1,Yellepit,0,,,f11.10a,f3.12p,,
+181.3,Berrian,0,,,f11.27a,f2.52p,,
+186.6,Plymouth,0,,,11.33a,2.44p,,
+199.0,Paterson,0,,,f11.49a,f2.27p,,
+208.8,Whitcomb,0,,,f12.01p,f2.13p,,
+217.2,Alderdale,0,,,f12.10p,f2.03p,,
+221.6,McCredie,0,,,f12.15p,f1.58p,,
+232.8,Roosevelt,0,,,12.28p,1.45p,,
+238.7,Sundale,0,,,f12.35p,f1.35p,,
+248.9,Goodnoe,0,,,f12.47p,f1.20p,,
+260.6,Cliffs,0,,,f1.01p,f1.01p,,
+265.2,Maryhill,0,,4.15a,1.10p,12.51p,12.19a,
+273.4,Wishram,1,5.38a,4.40a,1.25p,12.37p,12.05a,5.15p
+276.7,Avery,0,,,f1.30p,f12.21p,,
+285.5,Northdalles,0,,,f1.43p,f12.08p,,
+294.2,Lyle,1,,5.10a,1.57p,11.55a,11.18p,
+303.9,Bingen-White Salmon,0,,f5.24a,2.15p,11.35a,10.53p,
+306.8,Underwood,0,,,f2.20p,f11.20a,,
+308.6,Hood,0,,,f2.23p,f11.15a,,
+313.7,Cooks,0,,,f2.30p,f11.08a,,
+321.8,Carson,0,,,f2.42p,f10.57a,,
+325.7,Stevenson,0,,5.55a,2.50p,10.51a,10.18p,
+330.7,North Bonneville,0,,,2.58p,10.41a,,
+336.7,Skamania,0,,,f3.07p,f10.30a,,
+341.7,Prindle,0,,,f3.15p,f10.22a,,
+343.9,Cape Horn,0,,,f3.19p,f10.18a,,
+351.9,Washougal,0,,,f3.31p,f10.05a,,
+355.1,Camas,0,,6.38a,3.41p,10.00a,9.38p,
+360.2,Fisher,0,,,f3.52p,f9.45a,,
+369.5,Vancouver,1,7.32a,7.05a,4.10p,9.30a,9.15p,3.23p
+370.9,North Portland,0,,,f4.20p,9.17a,,
+372.5,East St. Johns,0,,,f4.23p,f9.14a,,
+379.5,Portland (Union Sta.),1,ar 8.00a,ar 7.35a,ar 4.40p,lv 9.00a,lv 8.45p,lv 3.00p

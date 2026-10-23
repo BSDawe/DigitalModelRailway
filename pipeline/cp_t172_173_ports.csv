@@ -1,0 +1,22 @@
+# Port positions for CP Tables 172 (Skagway) and 173 (Princess Maquinna) and the Denali (Brendan, 13 Oct 2026; est = his estimate;
+# names = B.C. names file). Ports already on the map (Vancouver, Victoria, Prince Rupert, Ketchikan, Juneau, Skagway, Port Alberni) are
+# taken from the map and not listed. Lanes snap the nearest water, so river and point positions are fine.
+port,lat,lon,source
+Wrangell,56.470886,-132.388941,Brendan
+Yakutat,59.548500,-139.733907,Brendan
+Seldovia,59.440491,-151.720376,Brendan
+Kodiak,57.787078,-152.402206,Brendan (beyond the water layer)
+Herbert Arm,49.301864,-125.967755,Brendan (est)
+Carmanah,48.611030,-124.744730,Brendan (est)
+Franklin River,49.095782,-124.815126,Brendan (est)
+Muchalat,49.679070,-126.117161,Brendan
+Sydney Inlet,49.421041,-126.314198,Brendan
+Markale,50.065278,-127.185000,names file Markale Point (est landing near the point)
+Bedwell River,49.364167,-125.776667,names file (river)
+Haines,59.229438,-135.435393,Brendan
+Taku Glacier,58.304627,-134.074628,Brendan (cruising point)
+Petersburg,56.812853,-132.964131,Brendan
+Sitka,57.051239,-135.344842,Brendan
+Pacofi,52.831131,-131.881414,Brendan (est; by Pacofi Creek)
+Aero,53.050833,-131.961389,Brendan (Aero Steamer Landing, north side of Gillatt Arm; one of the Cumshewa Inlet Camps)
+Moresby Camp,53.049444,-132.035,Brendan (head of Gillatt Arm; one of the Cumshewa Inlet Camps)

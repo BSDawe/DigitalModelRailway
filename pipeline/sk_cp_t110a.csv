@@ -1,0 +1,19 @@
+# Canadian Pacific, Table 110, Estevan - Neptune - Minton: Estevan - Bromhead - Neptune.
+# From the Canadian Pacific public timetable of about 1948 (scan cp1948_sk/table110_estevan_neptune_minton.png).
+# Times as printed: MOUNTAIN TIME ("Mountain Time" heads the station column). Miles from Estevan as printed. All stations in Saskatchewan.
+# Signs: f = stops on signal; M = mixed train; .. = does not stop. "Estevan 106, 108" refers to Tables 106 and 108.
+# Bromhead is printed three times (Ar at the end of Estevan - Bromhead, Lv at the head of the Neptune and of the Minton sections), all 32.0.
+# M433 and M434 run Estevan - Bromhead in the rows here and Bromhead - Minton in sk_cp_t110b.csv.
+#train col=M409 num=409 dir=down days="Mon" kind=mixed
+#train col=M433 num=433 dir=down days="Tue,Fri" kind=mixed to="Minton" note="Continues Bromhead 8.50a - Minton 12.40p (sk_cp_t110b.csv)."
+#train col=M434 num=434 dir=up days="Tue,Fri" kind=mixed from="Minton" note="Comes from Minton 1.25p - Bromhead 4.50p (sk_cp_t110b.csv)."
+#train col=M410 num=410 dir=up days="Mon" kind=mixed
+mile,station,principal,prov,tz,M409,M433,M434,M410
+0.0,Estevan,1,SK,M,lv 6.30a,lv 6.30a,ar 6.45p,ar 2.05p
+9.0,Tableland,0,SK,M,f7.00a,f7.00a,f6.10p,f1.25p
+15.6,Outram,0,SK,M,7.30a,7.30a,5.50p,12.55p
+23.2,Torquay,0,SK,M,8.05a,8.05a,5.25p,12.25p
+32.0,Bromhead,1,SK,M,ar 8.50a / lv 8.50a,ar 8.50a,lv 4.50p,ar 11.55a / lv 11.55a
+40.0,Tribune,0,SK,M,9.15a,,,11.25a
+48.2,Maxim,0,SK,M,9.40a,,,10.55a
+54.1,Neptune,1,SK,M,ar 10.05a,,,lv 10.35a

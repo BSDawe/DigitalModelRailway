@@ -1,0 +1,14 @@
+# Canadian Pacific, Table 102, Brandon - Varcoe - Rapid City - Minnedosa.
+# From the Canadian Pacific public timetable of 1948 (scan cp1948_mb/t100_102.png, printed sideways; page "TABLES 99 to 106"). Transcribed 18 October 2026.
+# CENTRAL TIME. Miles as printed. All Manitoba. Signs: f = stops on signal; d = stops to detrain (entered as a plain time); || = meal station; M = mixed train.
+#train col=M221 num=221 dir=down days="Mon,Thu" kind=mixed note="Brandon 7.30 a.m. to Minnedosa 11.00 a.m."
+#train col=M222 num=222 dir=up days="Mon,Thu" kind=mixed note="Minnedosa 2.25 p.m. to Brandon 5.05 p.m. Chater 4.50 p.m.: stops to detrain."
+mile,station,principal,prov,tz,M221,M222
+0.0,Brandon,1,MB,C,lv 7.30a,ar 5.05p
+5.5,Chater,0,MB,C,7.50a,4.50p
+16.3,Forrest,0,MB,C,8.45a,4.15p
+23.8,Varcoe,0,MB,C,9.15a,3.55p
+33.3,Gautier,0,MB,C,9.45a,3.25p
+35.8,Rapid City,1,MB,C,10.05a,3.15p
+42.7,Riverdale,0,MB,C,10.30a,2.45p
+51.3,Minnedosa,1,MB,C,ar 11.00a,lv 2.25p

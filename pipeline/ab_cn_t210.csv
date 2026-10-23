@@ -1,0 +1,18 @@
+# Canadian National Railways, Table 210, Edmonton - Whitecourt. Table dated April 25, 1948 (Official Guide, May 1948).
+# Times as printed: MOUNTAIN TIME. Wholly in Alberta. Both trains are motor trains (the small square before the number = "Motor train").
+# Signs, from the key on the page: v = daily, except Tuesday and Saturday (No. 93 at Edmonton); x = daily, except Sunday and Wednesday
+# (No. 94 at Whitecourt). The letter of the 'x' entry is cut off at the edge of the scan: it is taken as x from its place in the alphabetical
+# key (between v and y), and it fits: 93 goes out in the evening, 94 comes back the next morning.
+# The car sign at Edmonton = "Rail-Auto Service available at this point". + = coupon station, the circle-and-cross = telegraph station.
+# Sangudo's mile reads 68.9 (the 8 is not sharp; 63.9 would give 36 mph on to Rochfort Bridge against 20 mph elsewhere).
+#train col=No93 num=93 dir=down days="Mon,Wed,Thu,Fri,Sun" kind=motor note="Motor train. Daily except Tuesday and Saturday."
+#train col=No94 num=94 dir=up days="Mon,Tue,Thu,Fri,Sat" kind=motor note="Motor train. Daily except Sunday and Wednesday."
+mile,station,principal,No93,No94
+0,Edmonton,1,lv 5.50p,ar 11.30a
+11.4,St. Albert,0,6.22p,10.58a
+35.8,Onoway,1,7.16p,10.12a
+68.9,Sangudo,0,8.37p,8.56a
+75.3,Rochfort Bridge,0,8.56p,8.36a
+80.7,Mayerthorpe,0,9.12p,8.21a
+86.2,Greencourt,0,9.27p,8.08a
+109.5,Whitecourt,1,ar 10.25p,lv 7.15a

@@ -1,0 +1,48 @@
+# Canadian Pacific, Table 107, Brandon - Virden - McAuley - Neudorf - Bulyea - Regina: the route by Kirkella (Nos. 159 and 160).
+# From the Canadian Pacific public timetable of about 1948 (scan cp1948_sk/table107_brandon_virden_neudorf_regina.png; "READ DOWN" / "READ UP").
+# Times as printed: CENTRAL TIME Brandon - Neudorf ("Central Time" heads and ends that part), MOUNTAIN TIME Neudorf - Regina ("Mountain Time" heads
+# and ends the lower part). Neudorf is printed twice: "Ar Neudorf || Lv" in the Central part and "Lv Neudorf Ar" in the Mountain part; entered as one
+# row with tz C/M: the arrival from the east (westbound) or departure to the east (eastbound) is Central, the other Mountain. So 59/159 arrive
+# 1.05p C.T. and leave 12.25p M.T. (= 1.25p C.T., a 20-minute stop); 60/160 arrive 2.45p M.T. and leave 4.05p C.T. (= 3.05p M.T., 20 minutes).
+# ab_table.py flags the westbound Neudorf call as time going back: that is the time-zone change, not an error.
+# Signs: f = stops on signal; || = meal station (Brandon, Neudorf, Bulyea); .. = does not run/stop there (left empty).
+# Provinces: Brandon - McAuley Manitoba ("McAuley, Man."), Welwyn ("Welwyn, Sask") and west Saskatchewan.
+# References: Brandon 5, Virden 5 (Table 5, main line), Bulyea 116, Regina 116.
+# Column heads: upper part "159 Tue. Sat.", "59 Mon. Wed. Thur. Fri.", "60 Mon. Tues. Thur. Sat.", "160 Wed. Fri."; McAuley - Neudorf the 159 and 59
+# columns (and 60 and 160) have identical times; below Neudorf one column "59 Ex. Sun." and one "60 Ex. Sun.". So No. 59 runs Mon/Wed/Thu/Fri by
+# Scallion and No. 159 Tue/Sat by Kirkella; west of McAuley they are one train, numbered 59 west of Neudorf. Likewise 60 / 160 eastbound.
+# Virden - Kirkella is over the main line (the "Lv Virden 5" row of this section has no mile, ".."; Virden entered at 47.2 as in the row above it).
+# McAuley is printed "Ar McAuley 87.2" (by Kirkella) and "Lv McAuley, Man. 83.6" (miles by Scallion, used for the rest of the table): entered as one
+# row at 83.6, so Manson 78.5 - McAuley shows 5.1 miles instead of the real 8.7 (87.2 - 78.5). Miles otherwise as printed.
+# Rows McAuley - Regina have the same times as sk_cp_t107a.csv (one train, different days).
+#train col=No159 num=159 dir=down days="Tue,Sat" kind=passenger note="Tue. and Sat. by Kirkella; numbered 59 west of Neudorf (column '59 Ex. Sun.'). Times Central to Neudorf, Mountain after."
+#train col=No160 num=160 dir=up days="Wed,Fri" kind=passenger note="Wed. and Fri. by Kirkella; numbered 60 west of Neudorf (column '60 Ex. Sun.'). Times Mountain to Neudorf, Central after."
+mile,station,principal,prov,tz,No159,No160
+0.0,Brandon,1,MB,C,lv 7.00a,ar 10.10p
+47.2,Virden,1,MB,C,8.15a,8.55p
+70.4,Kirkella,0,MB,C,8.57a,8.11p
+78.5,Manson,0,MB,C,9.13a,7.50p
+83.6,McAuley,1,MB,C,ar 9.30a / lv 9.30a,ar 7.30p / lv 7.31p
+90.9,Welwyn,0,SK,C,9.45a,7.15p
+100.1,Rocanville,0,SK,C,10.06a,6.53p
+108.4,Bear Creek,0,SK,C,10.25a,6.34p
+113.3,Tantallon,0,SK,C,10.38a,6.22p
+120.8,Hazelcliffe,0,SK,C,10.57a,6.07p
+129.8,Esterhazy,0,SK,C,11.19a,5.45p
+139.6,Stockholm,0,SK,C,11.40a,5.25p
+147.5,Dubuc,0,SK,C,11.59a,5.06p
+155.5,Grayson,0,SK,C,12.19p,4.47p
+164.4,Killaly,0,SK,C,12.40p,4.26p
+173.4,Neudorf,1,SK,C/M,ar 1.05p / lv 12.25p,ar 2.45p / lv 4.05p
+181.6,Lemberg,0,SK,M,12.42p,2.25p
+191.5,Abernethy,0,SK,M,12.59p,2.04p
+198.4,Balcarres,0,SK,M,1.11p,1.49p
+206.6,Patrick,0,SK,M,1.30p,1.30p
+213.4,Lipton,0,SK,M,1.44p,1.08p
+222.6,Dysart,0,SK,M,2.03p,12.43p
+230.2,Cupar,0,SK,M,2.18p,12.22p
+237.1,Markinch,0,SK,M,2.32p,11.58a
+243.1,Southey,0,SK,M,2.44p,11.38a
+252.4,Earl Grey,0,SK,M,3.00p,11.12a
+260.1,Bulyea,1,SK,M,ar 3.15p / lv 3.20p,ar 10.45a / lv 10.50a
+303.9,Regina,1,SK,M,ar 4.50p,lv 9.25a

@@ -1,0 +1,22 @@
+# Canadian National, Table 157, Winnipeg - Steep Rock - Gypsumville. Official Guide, April 25, 1948 (scan cn1948_mb/t156_165.png). Transcribed 18 October 2026. CENTRAL TIME. Miles as printed. All Manitoba.
+# Signs (key on this page): a = Monday, Wednesday and Friday; b = Tuesday, Thursday and Saturday; l = Tuesday and Saturday; n = Tuesday and Thursday;
+#   p = Monday and Friday; v = Tuesday only; x = Monday only; f = flag stop; M = mixed train.
+# The trains run in and out of Steep Rock from Steep Rock Jn. (134.2): printed arr. Steep Rock Jn. - arr. Faulkner (140.1) - arr. / lve. Steep Rock (146.3) -
+#   lve. Faulkner - lve. Steep Rock Jn., then Gypsumville (161.2). Entered as rows in printed order (Steep Rock Jn. and Faulkner twice).
+#train col=No21 num=21 dir=down days="Tue,Thu,Sat" kind=passenger note="Tuesday, Thursday and Saturday. Winnipeg 12.10 p.m. by Steep Rock to Gypsumville 8.45 p.m."
+#train col=No22 num=22 dir=up days="Mon,Wed,Fri" kind=passenger note="Monday, Wednesday and Friday. Gypsumville 6.00 a.m. by Steep Rock to Winnipeg 1.30 p.m."
+mile,station,principal,prov,tz,No21,No22
+0.0,Winnipeg,1,MB,C,lv 12.10p,ar 1.30p
+6.9,Westside,0,MB,C,12.36p,1.04p
+24.7,Grosse Isle,0,MB,C,1.15p,12.28p
+57.7,St. Laurent,0,MB,C,2.32p,11.16a
+65.2,Oak Point,1,MB,C,2.50p,11.00a
+78.4,Lundar,0,MB,C,3.25p,10.31a
+90.7,Eriksdale,0,MB,C,4.00p,10.03a
+98.9,Mulvihill,0,MB,C,4.16p,9.46a
+134.2,Steep Rock Jn.,0,MB,C,ar 6.04p,lv 8.23a
+140.1,Faulkner,0,MB,C,6.19p,8.11a
+146.3,Steep Rock,1,MB,C,ar 6.34p / lv 6.44p,ar 7.48a / lv 7.58a
+140.1,Faulkner,0,MB,C,7.07p,7.23a
+134.2,Steep Rock Jn.,0,MB,C,lv 7.22p,ar 7.11a
+161.2,Gypsumville,1,MB,C,ar 8.45p,lv 6.00a

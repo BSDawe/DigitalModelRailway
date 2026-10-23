@@ -1,0 +1,30 @@
+# Canadian National, Edmonton - Edson - Jasper: the schedule of April 25, 1948, from the Official Guide of May 1948 (Brendan's scan). The Guide's
+# table is condensed, so these are the stations it prints. Miles from Montreal. The Guide prints MOUNTAIN time east of Jasper; the times here are
+# PACIFIC, an hour earlier, like the rest of the map. f = flag stop.
+# Nos. 1 and 3 westbound, 2 and 4 eastbound (The Continental Limited and the second train): only Edmonton and Edson are timed east of Jasper.
+# Jasper's times for Nos. 1 to 4 are in cn_1949_table23.csv; here it carries only the local trains. No. 189 runs Edmonton to Jasper (marked "c")
+# and No. 190 Jasper to Edmonton (marked "a").
+# The Guide's key to the signs (Brendan's scan, 3 October 2026): * daily; + daily except Sunday; a Mon., Wed. and Fri.; b Tues., Thurs. and Sat.;
+# c Sun., Tues. and Thurs.; k Saturday only; t Wednesday and Saturday; y Tuesday and Friday; f flag stop; z stops on signal for revenue
+# passengers; d No. 2 does not operate via Kamloops (connection between Kamloops and Kamloops Junction); No. 4 does not operate via Kamloops
+# (free taxi to Kamloops Junction); No. 1's passengers from east of Capreol get a free taxi from Kamloops Junction; M mixed train.
+mile,station,No1,No3,No2,No4,No189,No190
+2159.4,Edmonton,lv 7.55a,lv 6.20a,ar 7.15p,ar 8.15p,lv 12.00p,ar 3.55p
+2179.1,Spruce Grove,,,,,12.40p,3.10p
+2183.4,Stony Plain,,,,,12.51p,3.03p
+2203.7,Wabamun,,,,,1.30p,2.25p
+2217.5,Gainford,,,,,2.02p,1.55p
+2225.7,Entwistle,,,,,2.22p,1.35p
+2227.5,Evansburg,,,,,2.28p,1.28p
+2236.9,Wildwood,,,,,2.50p,1.08p
+2269.2,Peers,,,,,4.05p,12.10p
+2289.0,Edson,ar 11.00a / lv 11.10a,ar 9.25a / lv 9.35a,ar 3.55p / lv 4.05p,ar 4.50p / lv 5.00p,ar 4.50p / lv 5.50p,ar 10.55a / lv 11.30a
+2298.3,Bickerdike,,,,,6.10p,f10.35a
+2303.4,Marlboro,,,,,6.21p,10.01a
+2324.7,Obed,,,,,7.02p,9.05a
+2349.2,Entrance,,,,,8.06p,8.12a
+2360.6,Brule,,,,,8.45p,7.51a
+2366.6,Miette,,,,,9.00p,f7.36a
+2374.1,Devona,,,,,f9.10p,f7.25a
+2387.1,Henry House,,,,,f9.32p,f7.00a
+2395.2,Jasper,,,,,ar 9.50p,lv 6.45a

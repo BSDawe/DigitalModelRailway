@@ -1,0 +1,25 @@
+# Union Pacific Railroad, Table 62, Riparia, Lewiston and Grangeville (Camas Prairie R.R.), table of February 1, 1948 (Official Guide). Times as
+# printed: "STANDARD - Pacific time." Washington part only: Riparia - Wilma. Columns headed "20-74-344" and "343-73-19": entered as Camas Prairie
+# Nos. 74 (Riparia - Lewiston) and 73 (Lewiston - Riparia); the Ayer - Riparia connection is wa_up_t056d; Lewiston - Grangeville (Nos. 344/343,
+# all Idaho) is not entered.
+# IDAHO: the first Idaho station beyond Wilma (66) is Lewiston, mile 72 (No. 74 ar 8.25 a.m., No. 73 lv 6.20 p.m.).
+# DUPLICATE: these are the same trains as Camas Prairie Table 49 (wa_cprr_t049, which gives only Almota and Riparia, same times; it calls them
+# mixed). Use one of the two files.
+# Summary rows above Riparia, not entered: Portland lv 9.20 p.m. (No. 20), Wallula 3.30 a.m. (this is No. 66's Wallula time in Table 56; No. 20
+# leaves Wallula 3.05), Ayer ar 4.55 / lv 5.30 a.m., Riparia ar 6.10 a.m.; up: Riparia lv 8.35, Ayer ar 9.10 / lv 10.00 p.m., Wallula 11.30 p.m. (No.
+# 65's time; No. 19 leaves 1.20 a.m.), Portland ar 7.30 a.m. (No. 19).
+# Signs (key on the page): * daily; f stops on signal. Kind not printed in this table: entered mixed as in Table 49.
+#train col=No74 num=74 dir=down days="daily" kind=passenger from="Ayer" to="Lewiston" note="Camas Prairie R.R. Connection from UP No. 20 / No. 66."
+#train col=No73 num=73 dir=up days="daily" kind=passenger from="Lewiston" to="Ayer" note="Camas Prairie R.R. Connection to UP No. 19 / No. 65."
+mile,station,principal,No74,No73
+0,Riparia,1,lv 6.15a,ar 8.30p
+15,Central Ferry,0,f6.39a,f7.53p
+24,Penawawa,0,f6.55a,f7.39p
+29,Swift,0,f7.03a,f7.31p
+36,Almota,0,7.15a,7.18p
+43,Wawawai,0,7.31a,7.06p
+44,Crum,0,f7.33a,f7.04p
+48,Truax,0,f7.40a,f6.58p
+55,Indian,0,f7.53a,f6.47p
+62,Moses,0,f8.05a,f6.37p
+66,Wilma,0,f8.11a,f6.31p

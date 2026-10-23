@@ -1,0 +1,90 @@
+# Canadian National Railways, Table 171, Winnipeg - Regina - Saskatoon - Edmonton, table of April 25, 1948 (Official Guide, May 1948; scan
+#   og1948_cn/table171_winnipeg_regina_saskatoon_edmonton.png, printed sideways). ENTERED HERE: Winnipeg to Lloydminster ("Lloydminster Alta", the
+#   first Alberta station; Lloydminster and west is in ab_cn_t171.csv, so the files overlap at Lloydminster). Miles from Winnipeg as printed.
+# Times as printed: CENTRAL TIME from Winnipeg ("Cent. time" in the head) to Kipling, printed on two lines "arr. Kipling (C.T.) lve." and
+#   "lve. Kipling (M.T.) arr." and entered as one row, tz C/M (No. 5 arrives 6.00 a.m. C.T. and leaves 5.15 a.m. M.T.; No. 6 arrives 10.40 p.m. M.T.
+#   and leaves 11.50 p.m. C.T.; ab_table.py shows a time going back there). MOUNTAIN TIME from Kipling west.
+# A.M./P.M. from the "P M"/"A M" heads and the changes down the columns (light figures a.m., heavy figures p.m.).
+# Provinces as printed: "Winnipeg, Man.", "Butler, Manitoba" (the last Manitoba station), "Maryfield, Sask." (the first Saskatchewan station),
+#   "Marshall, Sask" (the last), "Lloydminster Alta".
+# Key printed at the foot of this table, cut off at the right edge of the scan: "*Daily; +daily, except Sunday; ++daily, exc[ept ...]; b Tuesday,
+#   Thursday and Saturday; e Friday only; [...]nesday and Friday; t daily, except Tuesday; x T[...]". Signs used in the part entered: * (No. 5 at
+#   Winnipeg, Nos. 7 and 8 at Regina/Saskatoon) and f flag stop. Coupon (+), telegraph and restaurant (triangle) signs dropped; a motor-car sign
+#   after Winnipeg not entered. Brandon is printed twice with "PRINCE EDWARD HOTEL. 80 Rooms. Continental Plan. Open all year" between the lines.
+# No. 6 at Brada: the small solid square means "stops on signal Sunday, Monday, Friday and Saturday only" (Brendan, 15 Oct 2026): entered as a flag stop; the days go in the note.
+# NOT ENTERED: Nos. 7 and 8, "The Owl", timed Regina - Saskatoon only, "To Prince Albert, See Table 172" / "From Prince Albert, See Table 172":
+#   they are in sk_cn_t172.csv (Regina and Saskatoon only). Their intermediate times here, read twice (7 down / 8 up, Mountain time):
+#   Regina lv *11.55p / ar 5.10a; Condie f12.28a / f4.30a; Lumsden 12.50a / 4.08a; Disley f1.08a / f3.50a; Bethune 1.25a / 3.35a; Findlater 1.40a /
+#   3.15a; Chamberlain 1.55a / 3.00a; Aylesbury 2.10a / 2.45a; Craik 2.30a / 2.30a; Girvin 2.55a / 2.15a; Davidson 3.10a / 2.00a; Bladworth 3.30a /
+#   1.40a; Kenaston 3.55a / 1.15a; Hanley 4.17a / 12.53a; Dundurn 4.45a / 12.25a; Saskatoon ar 5.40a / lv *11.40p.
+# OVERLAP: sk_cn_t172.csv also has No. 5 (as "5-59", Regina lv 9.30 a.m., Saskatoon ar 3.55 p.m.) and No. 6 (as "60-6", Saskatoon lv 1.00 p.m.,
+#   Regina ar 6.55 p.m.) between Regina and Saskatoon: the same trains as Nos. 5 and 6 here (same times). They run Winnipeg - Edmonton in this
+#   table, so they are entered here in full; the Regina - Saskatoon part is therefore in both files. Table 172 marks No. 5's Regina 9.30 with a
+#   dagger (daily except Sunday); Table 171 prints no sign there (No. 5 is daily from Winnipeg here and in ab_cn_t171.csv).
+#train col=No5 num=5 dir=down days="daily" kind=passenger to="Edmonton" note="Winnipeg *8.00 p.m. (daily); Regina 8.15/9.30 a.m., Saskatoon 3.55/5.25 p.m., Lloydminster 1.05 a.m. the second morning; Edmonton 7.10 a.m. (ab_cn_t171.csv)."
+#train col=No6 num=6 dir=up days="daily" kind=passenger from="Edmonton" note="From Edmonton *10.10 p.m. (ab_cn_t171.csv); Lloydminster 5.15 a.m.; Saskatoon 12.05/1.00 p.m.; Regina 6.55/7.30 p.m.; Winnipeg ar 8.40 a.m. Brada 8.58 a.m.: stops on signal Sunday, Monday, Friday and Saturday only."
+mile,station,principal,prov,tz,No5,No6
+0.0,Winnipeg,1,MB,C,lv 8.00p,ar 8.40a
+54.3,Portage la Prairie,1,MB,C,9.26p,7.10a
+72.7,Rossendale,0,MB,C,10.00p,6.31a
+99.4,Pleasant Point,0,MB,C,10.59p,5.38a
+106.9,Brandon Junction,1,MB,C,f11.14p,f5.24a
+114.2,Onah,0,MB,C,f11.26p,f5.11a
+119.8,Shilo Camp,0,MB,C,11.39p,5.00a
+121.8,Wytonville,0,MB,C,f11.43p,f4.54a
+129.7,Leon,0,MB,C,f11.56p,f4.43a
+134.6,Brandon,1,MB,C,ar 12.15a / lv 12.45a,ar 4.10a / lv 4.30a
+154.6,Terence,0,MB,C,1.32a,3.18a
+181.9,Scarth,0,MB,C,2.30a,2.30a
+187.7,Woodnorth,0,MB,C,2.47a,2.15a
+194.8,Cromer,0,MB,C,3.05a,1.59a
+202.1,Butler,0,MB,C,3.23a,f1.40a
+210.3,Maryfield,1,SK,C,4.00a,1.25a
+218.1,Fairlight,0,SK,C,4.18a,1.08a
+231.6,Kelso,0,SK,C,4.46a,12.44a
+248.0,Langbank,0,SK,C,5.20a,12.15a
+263.3,Kipling,1,SK,C/M,ar 6.00a / lv 5.15a,ar 10.40p / lv 11.50p
+277.7,Peebles,1,SK,M,5.41a,10.10p
+287.4,Glenavon,0,SK,M,5.58a,9.50p
+292.9,Candiac,0,SK,M,6.10a,9.36p
+301.4,Montmartre,0,SK,M,6.28a,9.20p
+309.3,Kendal,0,SK,M,6.42a,8.59p
+317.3,Odessa,0,SK,M,6.56a,8.44p
+325.3,Vibank,0,SK,M,7.10a,8.29p
+333.2,Davin,0,SK,M,7.24a,8.14p
+355.9,Regina,1,SK,M,ar 8.15a / lv 9.30a,ar 6.55p / lv 7.30p
+366.7,Condie,0,SK,M,f10.18a,
+376.3,Lumsden,0,SK,M,10.40a,5.38p
+385.1,Disley,0,SK,M,11.00a,5.20p
+393.4,Bethune,0,SK,M,11.15a,5.08p
+403.6,Findlater,0,SK,M,11.40a,4.50p
+412.3,Chamberlain,0,SK,M,11.58a,4.33p
+420.5,Aylesbury,0,SK,M,12.15p,4.17p
+430.1,Craik,0,SK,M,12.35p,4.00p
+438.7,Girvin,0,SK,M,12.50p,3.45p
+447.9,Davidson,0,SK,M,1.15p,3.30p
+456.7,Bladworth,0,SK,M,1.35p,3.10p
+468.6,Kenaston,0,SK,M,2.00p,2.50p
+479.0,Hanley,0,SK,M,2.25p,2.25p
+493.1,Dundurn,0,SK,M,2.55p,1.45p
+517.8,Saskatoon,1,SK,M,ar 3.55p / lv 5.25p,ar 12.05p / lv 1.00p
+531.4,Warman,1,SK,M,5.50p,11.40a
+540.2,Dalmeny,0,SK,M,6.10p,11.21a
+548.0,Langham,0,SK,M,6.29p,11.05a
+562.0,Borden,0,SK,M,7.04p,10.30a
+569.9,Radisson,0,SK,M,7.24p,10.14a
+577.2,Fielding,0,SK,M,7.40p,10.00a
+584.8,Maymont,0,SK,M,7.57p,9.45a
+591.7,Ruddell,0,SK,M,8.10p,9.30a
+599.2,Denholm,0,SK,M,8.25p,9.15a
+607.7,Brada,0,SK,M,f8.43p,f8.58a
+613.6,North Battleford,1,SK,M,ar 8.55p / lv 9.40p,ar 8.15a / lv 8.45a
+619.7,Battleford Junction,1,SK,M,,
+632.6,Delmas,0,SK,M,10.19p,7.37a
+639.8,Bresaylor,0,SK,M,10.31p,7.22a
+647.5,Paynton,0,SK,M,10.46p,7.07a
+663.5,Maidstone,0,SK,M,11.20p,6.32a
+671.2,Waseca,0,SK,M,11.35p,6.13a
+677.9,Lashburn,0,SK,M,11.53p,5.58a
+686.2,Marshall,0,SK,M,12.16a,5.38a
+698.0,Lloydminster,1,AB,M,1.05a,5.15a

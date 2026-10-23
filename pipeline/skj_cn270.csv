@@ -1,0 +1,8 @@
+# Joined through train (cn270), sk_join.py: skcn193a:M270, skcn192b:M270
+# Rows and times as in the section files (see them for the scans, signs and doubts). Miles: counted along the run from the first station.
+#train col=D num=270 dir=down days="Tue,Thu,Sat" kind=mixed note="Through train: No. 270 Arborfield - Reserve; No. 270 Reserve - Hudson Bay Jn.. Arborfield 7.00 a.m. and Crooked River ar 8.30 a.m. marked p (Tue and Thu) but Crooked River lv 9.25 a.m. and Reserve 2.05 p.m. marked b (Tue Thu Sat): on Saturday it may start at Crooked River. Continues Reserve - Hudson Bay Jn. (Table 192)."
+mile,station,principal,prov,tz,D
+0.0,Arborfield,1,SK,M,lv 7.00a
+21.2,Crooked River,1,SK,M,ar 8.30a / lv 9.25a
+81.6,Reserve,1,SK,M/C,ar 2.05p / lv 3.15p
+112.2,Hudson Bay Jn.,1,SK,C,ar 4.35p

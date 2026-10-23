@@ -1,0 +1,35 @@
+# Canadian Pacific, Table 132 "SWIFT CURRENT-BASSANO-IRRICANA" (public timetable, 1948; date of issue not on the scan): first section, Empress - Bassano.
+# Alberta stations only. Times as printed: MOUNTAIN TIME. Miles as printed, from Swift Current.
+# Last Saskatchewan station next to the boundary: "Estuary, Sask" mile 107.7; first Alberta station: "Empress, Alta." mile 117.9.
+# Signs: M before a train number = mixed train; f = stops on signal (printed before the time or between hours and minutes, e.g. 10f40).
+# Table references printed after stations: Empress 133, Rosemary 136, Bassano 6 (the main line, Table 6). Bassano is printed twice (Ar / Lv), both mile 236.3;
+# the second section, Bassano - Irricana, has its own trains and is in ab_cp_t132b.csv.
+# Other train columns of Table 132 that touch these rows and are NOT entered as columns here:
+#   65 Ex. Sun. (passenger) Swift Current lv 5.20p ... Leader 8.30p, Westerham f8.45p, Estuary 9.00p, Empress ar 9.20p: Empress is its only Alberta call.
+#   66 Ex. Sun. (passenger) Empress lv 7.00a, Estuary 7.15a, Westerham f7.28a, Leader 7.40a ... Swift Current ar 11.40a: Empress is its only Alberta call.
+#   M671 Wed. Leader 4.40p - Empress ar 5.45p and M672 Tue. Empress lv 9.30a - Leader 10.30a: the Table 133 trains, entered in ab_cp_t133.csv.
+#   M633 Wed. Bassano lv 8.00a, Countess 8.25a, Rosemary 8.50a and M634 Tue. Rosemary 1.40p, Countess 2.10p, Bassano ar 2.40p: the Table 136 trains,
+#   entered in ab_cp_t136.csv (same times in both tables).
+#   M673 / M674 Tue. run Swift Current - Pennant only (Saskatchewan).
+# M612 Millicent 12.25p to Patricia 1.40p (4.6 miles in 75 minutes) is as printed.
+#train col=M611 num=611 dir=down days="Thu,Sat" kind=mixed note="Empress to Bassano."
+#train col=M612 num=612 dir=up days="Mon,Fri" kind=mixed note="Bassano to Empress."
+mile,station,principal,M611,M612
+117.9,Empress,1,lv 8.30a,ar 6.30p
+126.6,Sharrow,0,f8.50a,f5.50p
+131.5,Bindloss,0,9.25a,5.30p
+141.3,Cavendish,0,9.50a,5.00p
+151.0,Buffalo,0,10.20a,4.35p
+157.6,Majestic,0,f10.40a,f4.10p
+163.1,Atlee,0,10.55a,3.50p
+171.1,Halsbury,0,f11.15a,f3.30p
+175.6,Jenner,0,11.45a,3.15p
+181.1,Iddesleigh,0,12.05p,2.45p
+188.1,Denhart,0,f12.25p,f2.15p
+194.6,Princess,0,f12.55p,f2.00p
+200.4,Patricia,0,1.40p,1.40p
+205.0,Millicent,0,2.00p,12.25p
+210.8,Duchess,0,2.45p,12.05p
+219.0,Rosemary,1,3.45p,11.20a
+227.8,Countess,0,f4.15p,f10.25a
+236.3,Bassano,1,ar 4.50p,lv 10.00a

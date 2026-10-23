@@ -1,0 +1,47 @@
+# Assemble the map from the saved parts and publish it to GitHub Pages on every push to main.
+# The heavy steps (routing over the national network, the steamer lanes) are run locally and their results committed as pipeline/parts/*.json;
+# here only the cheap merge runs, so a deploy takes about a minute and needs nothing beyond Python's standard library.
+name: Build and deploy the map
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+concurrency:
+  group: pages
+  cancel-in-progress: true
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Assemble the page and the GTFS feed from the saved parts
+        run: |
+          cd pipeline
+          python3 build.py --status
+          python3 build.py --assemble
+      - name: Collect the site
+        run: |
+          mkdir -p _site
+          cp -r pipeline/site/. _site/
+          cp pipeline/bcer_fraser_valley_1949_gtfs.zip _site/gtfs.zip
+          touch _site/.nojekyll
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

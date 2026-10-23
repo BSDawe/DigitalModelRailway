@@ -1,0 +1,25 @@
+# Canadian Pacific, Table 106: section C, Lauder - Boissevain - Deloraine (M251, M252). All Manitoba.
+# From the Canadian Pacific public timetable of about 1948 (scan cp1948_sk/table106_winnipeg_souris_lyleton_estevan.png, printed sideways).
+# Times as printed: CENTRAL TIME ("Central Time" heads the station column; "Estevan C.T." at the foot), all rows.
+# Signs (explanation of signs on this page): || = meal station; * = daily; dagger = daily ex. Sun.; f = stop on signal; d = stops to detrain;
+# M = mixed train. Only || and f appear in the time columns of this table. .. = does not run/stop (left empty).
+# Column heads: "7 137 Ex. Sun." (No. 7 Winnipeg - Brandon, No. 137 Brandon - Estevan), "8 138 Ex. Sun." (No. 138 Estevan - Brandon, No. 8 Brandon -
+# Winnipeg), "M251 Mon. Thur.", "M252 Tue. Fri." (two columns, one each way), "M254 Wed. Sat.", "123" and "124" (days printed lower in the column:
+# 123 Mon. Wed. Fri., 124 Tue. Thu. Sat.).
+# The mixed trains run a circuit: M251 Souris - Lauder - Boissevain - Deloraine - Lyleton; M252 Lyleton - Deloraine - Boissevain - Lauder, then
+# Lauder - Alida; M254 Alida - Lauder - Souris. Each section of the table is a separate file (sk_cp_t106b to e; the Winnipeg - Brandon section is not entered), miles as printed.
+# Miles from Brandon (via Souris) as printed. Boissevain is printed twice (Ar 86.9 / Lv, no mile): one row.
+#train col=M251 num=251 dir=down days="Mon,Thu" kind=mixed from="Souris" to="Lyleton" note="From Souris 2.45p - Lauder 3.55p (sk_cp_t106b.csv); continues Deloraine 9.00p - Lyleton 11.00p (sk_cp_t106d.csv)."
+#train col=M252 num=252 dir=up days="Tue,Fri" kind=mixed from="Lyleton" to="Alida" note="From Lyleton 9.00a - Deloraine 11.00a (sk_cp_t106d.csv); after Lauder 3.15p goes on Lauder 5.05p - Alida 8.00p (sk_cp_t106e.csv)."
+mile,station,principal,prov,tz,M251,M252
+50.0,Lauder,1,MB,C,lv 5.15p,ar 3.15p
+59.9,Dand,0,MB,C,5.45p,2.40p
+68.0,Regent,0,MB,C,6.25p,2.00p
+74.2,Croll,0,MB,C,6.47p,1.15p
+79.5,Orthez,0,MB,C,7.05p,12.50p
+82.6,Schaffner,0,MB,C,f7.15p,12.35p
+86.9,Boissevain,1,MB,C,ar 7.40p / lv 8.00p,ar 12.00p / lv 12.20p
+92.2,Cadzow,0,MB,C,f8.10p,f11.50a
+97.4,Whitewater,0,MB,C,8.25p,11.40a
+102.4,Naples,0,MB,C,f8.35p,f11.25a
+107.0,Deloraine,1,MB,C,ar 8.45p,lv 11.15a

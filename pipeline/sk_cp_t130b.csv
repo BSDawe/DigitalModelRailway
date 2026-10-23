@@ -1,0 +1,23 @@
+# Canadian Pacific, Table 130, Wilkie - North Battleford - Ravenhead: North Battleford - Ravenhead. Miles from No. Battleford as printed.
+# From the Canadian Pacific public timetable of about 1948 (scan cp1948_sk/tables129_130_wilkie_lloydminster_northbattleford.png, printed sideways).
+# Times as printed: MOUNTAIN TIME ("Mountain Time" heads the station column). All stations in Saskatchewan.
+# Signs: f = stops on signal; M = mixed train; cross sign after No. Battleford = C.P. Air Lines connection (as explained on the Tables 117-119 page).
+# The signs a large black dot (M462 at No. Battleford 3.00 and Ravenhead 6.30) and a black triangle (M466 at Wilkie 3.00 and No. Battleford 10.30;
+# M463 at Ravenhead 5.30 and No. Battleford 8.55) are explained by Brendan (10 Oct): black dot = operates the second Friday of each month (shown as operating); black triangle = operates the
+# Saturday following the second Friday. The week shown is the one with the second Friday: M464 (will not operate the second Friday) runs Mon,Wed.
+# Station name "No. Battleford" kept as printed (North Battleford). References: Wilkie 92, 129; Cutknife 129; No. Battleford 131.
+# Column heads: "M461 M462 Mon. We.Fri" (M461 above, M462 in the Ravenhead block); "M464 M463 Mon. We.Fri" (M464 above; in the Ravenhead block
+# an arrow pointing up and "Will not operate second Friday of each month"); "M466 M465" with no days (M466 above; the Ravenhead block headed "M463").
+#train col=M462 num=462 dir=down days="Mon,Wed,Fri" kind=mixed note="Black dot at No. Battleford and Ravenhead: operates the second Friday of each month (Brendan); shown as operating."
+#train col=M463 num=463 dir=up days="Sat" kind=mixed note="Black triangle: operates the Saturday following the second Friday of each month (Brendan)."
+mile,station,principal,prov,tz,M462,M463
+0.0,No. Battleford,1,SK,M,lv 3.00p,ar 8.55a
+7.8,Hamlin,0,SK,M,f3.25p,f8.25a
+14.5,Scentgrass,0,SK,M,f3.50p,f8.00a
+18.9,Iffley,0,SK,M,f4.05p,f7.40a
+23.3,Pierard,0,SK,M,4.20p,7.20a
+25.5,Craigavon,0,SK,M,4.30p,7.05a
+32.1,Whitkow,0,SK,M,5.05p,6.35a
+36.8,Redfield,0,SK,M,5.35p,6.10a
+42.7,Green Canyon,0,SK,M,6.05p,5.50a
+49.0,Ravenhead,1,SK,M,ar 6.30p,lv 5.30a

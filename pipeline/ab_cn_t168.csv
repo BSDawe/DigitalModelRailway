@@ -1,0 +1,49 @@
+# Canadian National, Table 168 (Winnipeg - Dauphin - Kamsack - Saskatoon - Kindersley - Drumheller - Calgary), table of April 25, 1948, from the
+# Official Guide of May 1948, page 1135. ALBERTA PART ONLY: Sibbald to Calgary. Miles from Winnipeg, as printed. Times as printed: MOUNTAIN TIME
+# (the table changes from Central to Mountain time at Humboldt, Sask.; the foot of the table at Calgary is headed "Mount. time").
+# Last Saskatchewan station: Alsask, Sask., mile 673.9 (No. 9 at 11.52 p.m., No. 10 at 4.59 a.m.); first Alberta station: Sibbald, Alberta, mile 680.9.
+# The table prints "Sask." and "Alberta" after these two names.
+# Nos. 9 and 10 run the whole table. Nos. 26 and 25 are the Edmonton - Camrose - Stettler - Calgary trains (Table 209), printed here in their own
+# columns headed "26 From Edmonton" and "25 To Edmonton" from Munson Junction to Calgary only. None of the four is marked M (mixed).
+# Signs: dagger = daily except Sunday (No. 9 at Alsask 11.52 p.m., No. 10 at Calgary 8.00 p.m. and Munson Junction 11.58 p.m.).
+# A paragraph sign is printed at the first time after midnight (No. 9 at Sibbald 12.05 a.m. and Calgary 8.20 a.m., No. 10 at Michichi 12.22 a.m.).
+# It is NOT in the key supplied (key_to_signs.png) nor in the key on the branch-line page, and page 1135's own key is not on the scan. Entered as
+# daily except Monday: that is what follows from the dagger before midnight, and it is the Official Guide's usual meaning of the sign.
+# a = Mon., Wed. and Fri. (No. 25 at Calgary); b = Tues., Thurs. and Sat. (No. 26 at Munson Junction): the same in both keys.
+# f = flag stop (Medicine Hat Junction, both trains). The station is printed "Medicine Hat Junc."
+# Between the two Drumheller lines the table prints "See Note" with a square-and-dot sign; in the key supplied that sign is "Freight service
+# only". The note itself is not on the scan, so what it says of Drumheller is not known.
+# Also printed and not entered: + coupon station, telegraph sign, and a motor car sign at Calgary (= "Rail-Auto Service available at this point"
+# in the branch-line page's key).
+# Nos. 9 and 10 pass each other at Stanmore (both 2.19 a.m.). principal = 1: heavy type, and Medicine Hat Junction and Rosedale as junctions
+# (Rosedale, printed light, is where the Trefoil branch of Table 193 leaves, 4.5 miles from Drumheller in both tables).
+#train col=No9 num=9 dir=down days="Tue,Wed,Thu,Fri,Sat,Sun" kind=passenger from="Winnipeg" note="From Winnipeg and Saskatoon by Kindersley; leaves Alsask 11.52 p.m. daily except Sunday, so in Alberta daily except Monday."
+#train col=No10 num=10 dir=up days="ex Sun" kind=passenger to="Winnipeg" note="To Saskatoon and Winnipeg by Kindersley; Alsask 4.59 a.m. Past midnight from Michichi."
+#train col=No26 num=26 dir=down days="Tue,Thu,Sat" kind=passenger from="Edmonton" note="From Edmonton by Camrose and Stettler (Table 209); joins this line at Munson Junction."
+#train col=No25 num=25 dir=up days="Mon,Wed,Fri" kind=passenger to="Edmonton" note="To Edmonton by Stettler and Camrose (Table 209); leaves this line at Munson Junction."
+mile,station,principal,No9,No10,No26,No25
+680.9,Sibbald,0,12.05a,4.42a,,
+690.6,Benton,0,12.22a,4.23a,,
+696.6,Oyen,1,12.44a,4.02a,,
+701.3,Excel,0,12.54a,3.48a,,
+706.9,Lanfine,0,1.04a,3.39a,,
+712.9,Cereal,0,1.16a,3.23a,,
+718.7,Chinook,0,1.27a,3.15a,,
+732.2,Youngstown,0,1.52a,2.51a,,
+746.1,Stanmore,0,2.19a,2.19a,,
+750.6,Richdale,0,2.32a,2.08a,,
+761.7,Medicine Hat Junction,1,f2.54a,f1.48a,,
+766.3,Hanna,1,ar 3.05a / lv 3.15a,ar 1.25a / lv 1.40a,,
+780.8,Craigmyle,0,3.43a,12.57a,,
+788.2,Delia,0,3.58a,12.42a,,
+796.2,Michichi,0,4.14a,12.22a,,
+806.6,Munson Junction,1,4.35a,11.58p,3.47p,11.27a
+807.4,Munson,1,4.38a,11.55p,3.50p,11.21a
+818.6,Drumheller,1,ar 5.05a / lv 5.20a,ar 10.55p / lv 11.20p,ar 4.15p / lv 4.25p,ar 10.44a / lv 10.50a
+823.1,Rosedale,1,5.30a,10.45p,4.36p,10.33a
+826.7,Wayne,0,5.41a,10.35p,4.46p,10.23a
+842.7,Rosebud,0,6.15a,9.57p,5.20p,9.47a
+845.3,Redland,0,6.21a,9.50p,5.26p,9.41a
+853.4,Rockyford,0,6.38a,9.34p,5.44p,9.25a
+877.4,Lyalta,0,7.24a,8.48p,6.29p,8.40a
+903.1,Calgary,1,ar 8.20a,lv 8.00p,ar 7.20p,lv 7.45a

@@ -1,0 +1,13 @@
+# Canadian National Railways, Table 213a, Coalspur - Foothills. Table dated April 25, 1948 (Official Guide, May 1948).
+# Times as printed: MOUNTAIN TIME. Wholly in Alberta. Miles are printed as whole numbers (column headed "Ms"): 0, 10, 13.
+# Signs (page key): a = Monday, Wednesday and Friday (M317 at Coalspur); b = Tuesday, Thursday and Saturday (M318 at Foothills);
+# f = flag stop (Sterco, both ways); M = mixed train. The letter of the 'a' entry is cut off at the edge of the scan of the key.
+# The same trains run Edson - Coalspur in Table 213 (file ab_cn_t213.csv): M317 leaves Edson 12.50 p.m., arrives Coalspur 3.25 p.m.;
+# M318 leaves Coalspur 1.15 p.m., arrives Edson 4.00 p.m.
+# The checker flags Sterco - Foothills (3 miles in 30 and in 40 minutes): the figures are as printed.
+#train col=M317 num=317 dir=down days="Mon,Wed,Fri" kind=mixed from="Edson" note="From Edson 12.50 p.m., arrives Coalspur 3.25 p.m. (Table 213)."
+#train col=M318 num=318 dir=up days="Tue,Thu,Sat" kind=mixed to="Edson" note="Goes on from Coalspur 1.15 p.m. to Edson 4.00 p.m. (Table 213)."
+mile,station,principal,M317,M318
+0,Coalspur,1,lv 3.45p,ar 12.45p
+10,Sterco,0,f4.45p,f11.40a
+13,Foothills,1,ar 5.15p,lv 11.00a

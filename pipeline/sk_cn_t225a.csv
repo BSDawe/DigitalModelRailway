@@ -1,0 +1,45 @@
+# Canadian National, Table 225, North Battleford - St. Walburg - Frenchman Butte - Turtleford - Medstead - North Battleford: section A, N. Battleford - St. Walburg - Frenchman Butte.
+# Official Guide, April 25, 1948 (scan cn1948_sk/table225_northbattleford_stwalburg_medstead.png).
+# Times as printed: MOUNTAIN TIME ("Mt. time" head). All stations in Saskatchewan. Miles as printed in each section.
+# Table 225 has five sections: N. Battleford - St. Walburg (0-77.3) and St. Walburg - Spruce Lake Junction - Frenchman Butte (77.3-110.6) [sk_cn_t225a.csv];
+#   Turtleford - Medstead (0-46.9) [sk_cn_t225b.csv]; Medstead - Glenbush - Prinham - No. Battleford (0-48.0) [sk_cn_t225c.csv]; Medstead - Rabbit Lake -
+#   Speers - No. Battleford (0-91.2) [sk_cn_t225d.csv]. Each column usually carries different train numbers in different sections (heads like "119-121",
+#   "M291-285", "107-109", "M286 M292", "110-108", "281-79", "M289-287"): entered as separate trains per section, linked by from/to; which number of a
+#   pair belongs to which section is my reading (first number = first part run).
+# KEY TO SIGNS: none on this scan. Used, from the Table 193-201 key: b Tue Thu Sat; e Wednesday and Friday; h Thursday only; k Saturday only; t Wednesday only;
+#   u Friday only; x Tuesday only; z Wednesday, Friday and Sunday; M mixed train. The black square before a train number is "Motor train" (end of the
+#   cut-off left note: "... Motor train."). NOT EXPLAINED on the scans: c (M285; "Monday only" in the Table 180-184 key), d (Nos. 100, 106), v (M292),
+#   y (M289; "Tuesday and Friday" in the 180-184 key), and a black dot (Nos. 103, 113). Days given for trains with these signs are PLACEHOLDERS / DOUBTFUL.
+# Notes printed sideways in empty parts of columns (they appear to give the running dates of the column they sit in; no sign links them):
+#   - column 113 (cut off at the left edge of the scan): "... 29, also Thurs., July 1, Mon., Aug. 2, / ... Sun., June 6, account holiday). Has /
+#     ...y 30 to July 25, then Mon., Aug. 2, and / Motor train."
+#   - columns 120-122 and M286-M292 (below the Frenchman Butte section): "# May 22, 24, 29, June 5, 7, 12, 19, 23, 26, 28, then daily, except Sun. to
+#     Aug. 21, also Aug. 25, 27, 28, Sept. 3, 4, 6." (no # found on any time).
+#   - column 100: "To No. 106." and "natural-sign Sat. only, June 26 to Aug. 21, also Thurs., July 1, Mon., Aug. 2, Sat., Sept. 4, Mon. Sept. 6."
+# "Rail-Auto Service available at this point" printed in the empty column 107-109 below Frenchman Butte (refers to a car sign, not a train).
+# St. Walburg is printed twice ("arr. St. Walburg lve." / "lve. St. Walburg arr."), one row here. Spruce Lake Junction (82.4) is beyond St. Walburg on the Frenchman Butte line.
+#train col=Mot113 num=113 dir=down days="Sat" kind=motor from="Medstead" note="Column 113, From No. 103 (Medstead - Turtleford, sk_cn_t225b.csv). Turtleford 3.30 p.m. carries a black dot (unexplained); dates in a cut-off note (see comments). Days PLACEHOLDER."
+#train col=No119 num=119 dir=down days="Fri" kind=passenger to="Frenchman Butte" note="Column 119-121; N. Battleford 5.00 p.m. marked u (Friday only). Number for this part assumed. Kind not printed."
+#train col=No121 num=121 dir=down days="Fri" kind=passenger from="St. Walburg" note="Column 119-121, St. Walburg - Frenchman Butte part (no sign; same column as No. 119, u = Friday). Kind not printed."
+#train col=M291 num=291 dir=down days="Wed,Fri" kind=mixed note="Column M291-285; N. Battleford 9.40 a.m. and St. Walburg ar 3.30 p.m. marked e (Wed and Fri, 193-201 key; Thu and Sat in the 180-184 key) - in doubt."
+#train col=M285 num=285 dir=down days="Mon" kind=mixed note="Column M291-285, St. Walburg - Frenchman Butte: all three times marked c (not in the 193-201 key; Monday only in the 180-184 key) - days in doubt."
+#train col=Mot107 num=107 dir=down days="Wed,Fri,Sun" kind=motor note="Column 107-109 (motor); N. Battleford 9.00 a.m. and St. Walburg 12.20 p.m. marked z (Wed Fri Sun)."
+#train col=Mot109 num=109 dir=down days="Wed" kind=motor note="Column 107-109, St. Walburg 1.10 p.m. and Frenchman Butte 2.30 p.m. marked t (Wednesday only)."
+#train col=No120 num=120 dir=up days="Fri" kind=passenger to="N. Battleford" note="Column 120-122; Frenchman Butte 7.10 a.m. marked u (Friday only). Kind not printed."
+#train col=No122 num=122 dir=up days="ex Sun" kind=passenger from="Frenchman Butte" note="Column 120-122, St. Walburg 9.05 a.m. - N. Battleford 12.05 p.m.; no sign; the # note printed below this column (summer dates, daily except Sunday May 22 - Aug. 21 with exceptions) may apply - days IN DOUBT."
+#train col=M292 num=292 dir=up days="Wed" kind=mixed to="N. Battleford" note="Column M286 M292, Frenchman Butte 7.00 a.m. and St. Walburg ar 9.05 a.m. marked v (unexplained): days unknown, Wed is a PLACEHOLDER. Number for this part assumed."
+#train col=M286 num=286 dir=up days="Tue,Thu,Sat" kind=mixed note="Column M286 M292, St. Walburg 9.50 a.m. and N. Battleford 3.40 p.m. marked b."
+#train col=Mot114 num=114 dir=up days="Sat" kind=motor note="Motor; St. Walburg 1.00 p.m. marked k (Saturday only)."
+#train col=No100 num=100 dir=up days="Sat" kind=passenger to="N. Battleford" note="St. Walburg d1.00 p.m. (d unexplained) - Spruce Lake - Turtleford 1.50 p.m.; To No. 106 (Turtleford - Medstead - Speers - N. Battleford, sk_cn_t225b/d). Column note: Sat. only, June 26 to Aug. 21, also Thurs. July 1, Mon. Aug. 2, Sat. Sept. 4, Mon. Sept. 6. Not running on the table date (April 25)."
+#train col=No110 num=110 dir=up days="Wed" kind=passenger to="N. Battleford" note="Column 110-108, Frenchman Butte 2.55 p.m. and St. Walburg 4.20 p.m. marked t (Wednesday only). Kind not printed (108 is motor)."
+#train col=Mot108 num=108 dir=up days="Tue" kind=motor note="Column 110-108 (motor sign before 108), St. Walburg 4.40 p.m. and N. Battleford 7.40 p.m. marked x (Tuesday only) - differs from No. 110 (Wednesday), as printed."
+mile,station,principal,prov,tz,Mot113,No119,No121,M291,M285,Mot107,Mot109,No120,No122,M292,M286,Mot114,No100,No110,Mot108
+0.0,N. Battleford,1,SK,M,,lv 5.00p,,lv 9.40a,,lv 9.00a,,,ar 12.05p,,ar 3.40p,ar 4.00p,,,ar 7.40p
+14.7,Prince,0,SK,M,,5.34p,,10.33a,,9.33a,,,11.31a,,2.35p,3.26p,,,7.06p
+21.0,Meota,0,SK,M,,5.48p,,10.58a,,9.48a,,,11.17a,,2.05p,3.12p,,,6.52p
+38.7,Edam,0,SK,M,,6.27p,,12.20p,,10.34a,,,10.36a,,1.00p,2.31p,,,6.11p
+55.9,Turtleford,1,SK,M,lv 3.30p,7.13p,,2.05p,,11.23a,,,9.55a,,11.23a,1.50p,ar 1.50p,,5.30p
+68.8,Spruce Lake,1,SK,M,3.59p,7.42p,,3.00p,,12.00p,,,9.26a,,10.25a,1.21p,1.21p,,5.01p
+77.3,St. Walburg,1,SK,M,ar 4.20p,ar 8.00p,lv 8.40p,ar 3.30p,lv 5.00p,ar 12.20p,lv 1.10p,ar 8.35a,lv 9.05a,ar 9.05a,lv 9.50a,lv 1.00p,lv 1.00p,ar 4.20p,lv 4.40p
+82.4,Spruce Lake Junction,1,SK,M,,,8.52p,,5.20p,,1.21p,8.23a,,8.45a,,,,4.08p,
+110.6,Frenchman Butte,1,SK,M,,,ar 10.00p,,ar 7.10p,,ar 2.30p,lv 7.10a,,lv 7.00a,,,,lv 2.55p,

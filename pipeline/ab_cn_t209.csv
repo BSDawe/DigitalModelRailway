@@ -1,0 +1,34 @@
+# Canadian National Railways, Table 209, Edmonton - Camrose - Stettler - Calgary (by Big Valley and Drumheller). Table dated April 25, 1948
+# (Official Guide, May 1948). Times as printed: MOUNTAIN TIME. Wholly in Alberta.
+# Signs (the page's own key): b = Tuesday, Thursday and Saturday (No. 26 at Edmonton); a = Monday, Wednesday and Friday (No. 25 at Calgary);
+# f = flag stop (Battle, both trains). Light and heavy type: No. 26 is a.m. to Meeting Creek 11.51, p.m. from Donalda 12.16; No. 25 is a.m.
+# from Calgary to Munson Junc. 11.27, p.m. from Rowley 12.03. Both trains stand 25 minutes at Big Valley (arr. and lve. printed).
+# The table prints no station between Drumheller and Calgary (84.5 miles; those stations are in Table 168).
+# Hay Lake is printed mile 37.1 in this table but 37.7 in Tables 208 and 205 (the same station): entered as printed, probably a misprint for 37.7.
+# Looma is 23.4 here (23.5 in Table 205). The station is printed "Munson Junc."
+# No. 25, Edberg 3.38p to Battle f4.15p (12.8 miles in 37 minutes) and Battle to Camrose 4.40p (5.6 miles in 25 minutes): as printed.
+#train col=No26 num=26 dir=down days="Tue,Thu,Sat" kind=passenger note="Edmonton to Calgary by Camrose, Stettler and Drumheller. Stops 25 min at Big Valley. Battle on signal."
+#train col=No25 num=25 dir=up days="Mon,Wed,Fri" kind=passenger note="Calgary to Edmonton by Drumheller, Stettler and Camrose. Stops 25 min at Big Valley. Battle on signal."
+mile,station,principal,No26,No25
+0.0,Edmonton,1,lv 8.30a,ar 6.40p
+3.1,North Edmonton,0,8.42a,6.26p
+16.3,Bretona,0,9.07a,5.58p
+23.4,Looma,0,9.20a,5.43p
+31.1,New Sarepta,0,9.35a,5.28p
+37.1,Hay Lake,0,9.48a,5.13p
+44.7,Armena,0,10.01a,4.58p
+54.6,Camrose,1,10.40a,4.40p
+60.2,Battle,0,f10.52a,f4.15p
+73.0,Edberg,0,11.27a,3.38p
+81.9,Meeting Creek,0,11.51a,3.15p
+91.6,Donalda,0,12.16p,2.51p
+101.1,Red Willow,0,12.38p,2.29p
+111.6,Stettler,1,1.10p,2.07p
+116.5,Warden,1,1.27p,1.52p
+132.8,Big Valley,1,ar 2.05p / lv 2.30p,ar 12.50p / lv 1.15p
+140.6,Scollard,0,2.46p,12.33p
+147.5,Rumsey,0,3.01p,12.18p
+153.6,Rowley,0,3.15p,12.03p
+168.7,Munson Junc.,1,3.47p,11.27a
+180.7,Drumheller,1,4.15p,10.50a
+265.2,Calgary,1,ar 7.20p,lv 7.45a

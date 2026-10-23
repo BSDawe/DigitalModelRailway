@@ -1,0 +1,35 @@
+# Canadian National, Table 224, Winnipeg - Pine Falls - Grand Beach - Victoria Beach: the Grand Beach - Victoria Beach line. Official Guide, April 25, 1948
+# (scans cn1948_mb/t224.png, t224_notes.png, t224_signs.png, t224_side.png). Transcribed 20 October 2026. CENTRAL TIME. Miles from Winnipeg as printed.
+# All Manitoba. The Pine Falls trains (M222 / M221) are in sk_cn_t224p.csv. "- -" = does not stop (Beaconia for all but M218 / M217).
+# SUMMER BEACH SERVICE: the days entered are those that fall in the model week, MONDAY JULY 5 - SUNDAY JULY 11, 1948; each train's note gives the printed rule.
+# Signs read: j (50) May 22, 24, 29, June 5 ... 26, then daily except Sun. until Aug. 21, also ... ; t (52) Tues. only; g (46) Fri. only, June 25 to Aug. 27;
+#   q (44) ... then Wed., Sat., Sun., June 23 to Aug. 22, also July 1, Aug. 2 ...; p (42) Sat. only, June 26 to Sept. 4; a (M218) Mon., Wed. and Fri.;
+#   o (40) ... then daily June 26 to Sept. 6; check-mark (39) Mon. and Sat., June 26 to Aug. 30 (flag stops at all stations Sat. only, Beaconia and
+#   Scanterbury Mon. only, for revenue passengers to Winnipeg); colon (41) Fri., July 2, then Thurs. only, July 8 to Aug. 19; r (M217) ... then Tues. and
+#   Thurs. only, June 22 to Sept. 4; square (43) May 24, June 7, Sat. and Sun., June 26 to Sept. 5, also July 1, Aug. 2, Sept. 6 (Sat. July 17, 31, Aug. 14,
+#   28 and Mon. Sept. 6 from Victoria Beach 4.40 p.m. and Grand Beach 5.40 p.m.); l (45) ... then daily except Fri., until Sept. 6 ...; Psi (49) May 24,
+#   then Sun. only, May 30 to Aug. 29, also Thurs. July 1, Mon. Aug. 2, Sept. 6; section (35) Sun. only, "Runs June 27 to Aug. 29, inclusive";
+#   double dagger (51) daily except Sat.; natural sign (67): not in this page's key; read as Monday only (the Tables 193-201 key) - DOUBT.
+# Buffet parlor cars: 42 (column "Buffet Parlor Car"); 46 Fri. June 25 - Aug. 27; 51 Fri. only July 2 - Sept. 3; 50 Fri. Sept. 3 only; 39 Sat. June 26 only.
+#train col=No50 num=50 dir=down days="Mon,Tue,Wed,Thu,Fri,Sat" kind=passenger note="Daily except Sunday (summer, to Aug. 21). Winnipeg 5.25 p.m. to Victoria Beach 7.45 p.m."
+#train col=No52 num=52 dir=down days="Tue" kind=passenger note="Tuesdays only. Winnipeg 5.00 p.m. to Grand Beach 6.30 p.m."
+#train col=No46 num=46 dir=down days="Fri" kind=passenger note="Fridays only, June 25 to Aug. 27 (buffet parlor car). Winnipeg 4.50 p.m. to Victoria Beach 6.45 p.m."
+#train col=No44 num=44 dir=down days="Wed,Sat,Sun" kind=passenger note="Wed., Sat. and Sun., June 23 to Aug. 22 (and holidays). Winnipeg 12.45 p.m. to Victoria Beach 3.10 p.m."
+#train col=No42 num=42 dir=down days="Sat" kind=passenger note="Saturdays only, June 26 to Sept. 4; buffet parlor car. Winnipeg 12.10 p.m. to Victoria Beach 2.10 p.m."
+#train col=M218 num=218 dir=down days="Mon,Wed,Fri" kind=mixed note="Mixed, Mon., Wed. and Fri. Winnipeg 10.15 a.m. by Beaconia to Victoria Beach 3.55 p.m."
+#train col=No40 num=40 dir=down days="daily" kind=passenger note="Daily, June 26 to Sept. 6. Winnipeg 8.30 a.m. to Victoria Beach 10.55 a.m."
+#train col=No39 num=39 dir=up days="Mon,Sat" kind=passenger note="Mon. and Sat., June 26 to Aug. 30. Victoria Beach 5.10 a.m. to Winnipeg 7.30 a.m."
+#train col=No41 num=41 dir=up days="Thu" kind=passenger note="Thursdays only, July 8 to Aug. 19 (and Fri. July 2). Victoria Beach 7.00 a.m. to Winnipeg 9.25 a.m."
+#train col=M217 num=217 dir=up days="Tue,Thu" kind=mixed note="Mixed, Tues. and Thurs., June 22 to Sept. 4. Victoria Beach 7.20 a.m. by Beaconia to Winnipeg 12.00 noon."
+#train col=No43 num=43 dir=up days="Sat,Sun" kind=passenger note="Sat. and Sun., June 26 to Sept. 5 (and holidays). Grand Beach 5.40 p.m. to Winnipeg 7.30 p.m."
+#train col=No45 num=45 dir=up days="Sun,Mon,Tue,Wed,Thu,Sat" kind=passenger note="Daily except Friday (summer, to Sept. 6). Victoria Beach 6.00 p.m. to Winnipeg 8.50 p.m."
+#train col=No49 num=49 dir=up days="Sun" kind=passenger note="Sundays only, May 30 to Aug. 29 (and holidays). Victoria Beach 7.20 p.m. to Winnipeg 9.20 p.m."
+#train col=No35 num=35 dir=up days="Sun" kind=passenger note="Sundays only, June 27 to Aug. 29. Grand Beach 8.30 p.m. to Winnipeg 10.20 p.m."
+#train col=No51 num=51 dir=up days="Sun,Mon,Tue,Wed,Thu,Fri" kind=passenger note="Daily except Saturday; buffet parlor car Fridays, July 2 to Sept. 3. Victoria Beach 8.20 p.m. to Winnipeg 10.59 p.m."
+#train col=No67 num=67 dir=up days="Mon" kind=passenger note="Day sign read as Monday only (uncertain). Grand Beach 9.45 p.m. to Winnipeg 11.30 p.m."
+mile,station,principal,prov,tz,No50,No52,No46,No44,No42,M218,No40,No39,No41,M217,No43,No45,No49,No35,No51,No67
+0,Winnipeg,1,MB,C,lv 5.25p,lv 5.00p,lv 4.50p,lv 12.45p,lv 12.10p,lv 10.15a,lv 8.30a,ar 7.30a,ar 9.25a,ar 12.00p,ar 7.30p,ar 8.50p,ar 9.20p,ar 10.20p,ar 10.59p,ar 11.30p
+51.6,Beaconia,0,MB,C,,,,,,1.20p,,,,9.15a,,,,,,
+60.9,Grand Beach,1,MB,C,7.00p,ar 6.30p,,2.25p,,2.00p,10.10a,5.50a,7.40a,8.50a,lv 5.40p,7.00p,,lv 8.30p,9.20p,lv 9.45p
+70.4,Hillside Beach,0,MB,C,f7.36p,,,3.01p,,3.41p,10.46a,f5.16a,f7.06a,7.35a,,f6.06p,,,f8.28p,
+73.8,Victoria Beach,1,MB,C,ar 7.45p,,ar 6.45p,ar 3.10p,ar 2.10p,ar 3.55p,ar 10.55a,lv 5.10a,lv 7.00a,lv 7.20a,,lv 6.00p,lv 7.20p,,lv 8.20p,

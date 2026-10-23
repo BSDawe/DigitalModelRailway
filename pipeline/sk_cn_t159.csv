@@ -1,0 +1,19 @@
+# Canadian National, Table 159, Saskatoon - Melfort - Carrot River. Official Guide, April 25, 1948 (scan cn1948_mb/t156_165.png). Transcribed 18 October 2026.
+# MOUNTAIN TIME ("Mountain time" head). All Saskatchewan. Miles from Saskatoon as printed. Melfort printed twice (arr. / lve.): one row.
+# Entered here: Nos. 68, 56 and 55 (Saskatoon - Melfort). NOT entered (already in other files, same times): 32 / 31 (sk_cn_t170.csv, Saskatoon - Melville; their
+#   Saskatoon - Melfort stops were added there from this table) and the Melfort - Carrot River mixed trains 388, 336, 387 (sk_cn_t214.csv).
+# Day signs (key on this page): k = Saturday only (68); n = Tuesday and Thursday (56); a = Monday, Wednesday and Friday (55, Melfort 7.35 a.m.).
+#   The 55 column is headed "M 336-55": M336 Carrot River (Wednesday only) - Melfort ar 7.30 a.m., then No. 55 Melfort 7.35 a.m. - Saskatoon.
+#train col=No68 num=68 dir=down days="Sat" kind=passenger note="Saturdays only. Saskatoon 7.00 p.m. to Melfort 11.15 p.m."
+#train col=No56 num=56 dir=down days="Tue,Thu" kind=passenger note="Tuesdays and Thursdays. Saskatoon 1.10 p.m. to Melfort 5.15 p.m."
+#train col=No55 num=55 dir=up days="Mon,Wed,Fri" kind=passenger note="Monday, Wednesday and Friday. Melfort 7.35 a.m. to Saskatoon 11.45 a.m. (Wednesdays from Carrot River by M336)."
+mile,station,principal,prov,tz,No68,No56,No55
+0.0,Saskatoon,1,SK,M,lv 7.00p,lv 1.10p,ar 11.45a
+13.7,Warman,0,SK,M,7.30p,1.34p,11.16a
+26.4,Aberdeen,0,SK,M,7.56p,1.58p,10.51a
+37.7,Smuts,0,SK,M,8.20p,2.22p,10.26a
+51.2,Carpenter,0,SK,M,8.47p,2.49p,9.55a
+61.4,Wakaw,0,SK,M,9.13p,3.15p,9.36a
+80.9,Tarnopol,0,SK,M,9.53p,3.56p,8.55a
+103.5,Ethelton,0,SK,M,10.42p,4.42p,8.06a
+118.3,Melfort,1,SK,M,ar 11.15p,ar 5.15p,lv 7.35a

@@ -1,0 +1,38 @@
+# Canadian National Railways, Table 171 in the Official Guide, May 1948: Winnipeg - Regina - Saskatoon - North Battleford - Lloydminster -
+# Vegreville - Edmonton, table of April 25, 1948. ALBERTA PART ONLY, from Lloydminster (on the boundary) to Edmonton.
+# Times as printed: MOUNTAIN TIME (the foot of the table at Edmonton is headed "Mt. time"; the head at Winnipeg "Cent. time").
+# Miles as printed, counted from Winnipeg by Regina and Saskatoon. Every station the Guide prints between Lloydminster and Edmonton is entered.
+# Last Saskatchewan station next to the boundary: Marshall, Sask., mile 686.2 (No. 5 at 12.16 a.m., No. 6 at 5.38 a.m.). Lloydminster is printed
+# "Lloydminster Alta", mile 698.0.
+# Trains: the table has four columns (7, 5, 6, 8). Nos. 5 and 6 run the whole way; Nos. 7 and 8 ("The Owl") are timed between Regina and Saskatoon
+# only (to and from Prince Albert, Table 172) and their columns are blank in Alberta. The table changes from Central to Mountain time at Kipling, Sask.
+# Signs: * daily (at No. 5's Winnipeg time and at No. 6's P.M. heading at Edmonton). Light figures a.m., heavy figures p.m. (No. 6 is heavy from
+# Edmonton 10.10 to Chipman 11.54, light from Hilliard 12.10 on; No. 5 is light throughout Alberta, with A.M. at the foot of the column).
+# + coupon station (every station here), the ring-and-cross sign = telegraph station, black triangle = restaurant or lunch counter (Vermilion,
+# Edmonton). A small motor-car sign after Edmonton is not explained in the keys on these scans. No flag stops and no other signs in the Alberta part.
+# Vermilion is printed on two lines (arr. and lve.), the second in heavy type; Vegreville is in heavy type.
+# The Guide spells Mannville "Manville" and Fort Saskatchewan "Ft. Saskatchewan".
+# Both trains are timed at Mannville at 3.07 a.m. (they meet there); No. 6 is slow from Minburn (2.35) to Mannville (3.07) and from Blackfoot
+# (4.44) to Lloydminster (5.15), and No. 5 from Marshall (12.16) to Lloydminster (1.05): as printed.
+#train col=No5 num=5 dir=down days="daily" kind=passenger from="Winnipeg" note="From Winnipeg 8.00 p.m. (Central) two evenings before, by Regina, Saskatoon and North Battleford."
+#train col=No6 num=6 dir=up days="daily" kind=passenger to="Winnipeg" note="To Winnipeg by North Battleford, Saskatoon and Regina, arriving 8.40 a.m. (Central) on the second morning after."
+mile,station,principal,No5,No6
+698.0,Lloydminster,1,lv 1.05a,ar 5.15a
+705.0,Blackfoot,0,1.20a,4.44a
+712.9,Kitscoty,0,1.35a,4.30a
+723.0,Islay,0,1.57a,4.11a
+738.0,Vermilion,1,ar 2.25a / lv 2.35a,ar 3.30a / lv 3.45a
+752.6,Mannville,0,3.07a,3.07a
+760.9,Minburn,0,3.25a,2.35a
+769.6,Innisfree,0,3.45a,2.13a
+777.2,Ranfurly,0,4.00a,1.55a
+786.2,Lavoy,0,4.20a,1.35a
+795.1,Vegreville,1,4.45a,1.10a
+807.9,Mundare,0,5.12a,12.30a
+815.6,Hilliard,0,5.25a,12.10a
+823.1,Chipman,0,5.40a,11.54p
+830.5,Lamont,0,5.55a,11.36p
+837.2,Bruderheim,0,6.08a,11.20p
+850.7,Fort Saskatchewan,0,6.32a,10.51p
+864.6,North Edmonton,1,6.58a,10.21p
+867.7,Edmonton,1,ar 7.10a,lv 10.10p

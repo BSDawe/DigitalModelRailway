@@ -1,0 +1,15 @@
+# Canadian National, Table 230, Biggar - Unity - Bodo, table of April 25, 1948, from the Official Guide of May 1948. The heading adds
+# "(Line Unity to Bodo under Construction Dept.)". Times as printed: MOUNTAIN TIME (the table is headed "Mount. time"). Miles from Biggar.
+# ALBERTA PART ONLY, and that is one station: Bodo, Alta., mile 109.9, the end of the line. So each train has a single call in this file
+# (ab_table.py reports "1 calls" for both: nothing is missing).
+# Last Saskatchewan station: Cosine, Sask., mile 103.3 (No. 311 at 5.10 p.m., No. 312 at 5.35 a.m.). The boundary is certain as far as the
+# table goes: it prints "Sask" after Cosine and "Alta" after Bodo, so the boundary falls in the 6.6 miles between them.
+# The stations before Cosine, all in Saskatchewan: Cactus Lake 98.0 (4.45 p.m. / 5.55 a.m.), Heart's Hill 90.0 (4.05 / 6.25), Salvador 84.7
+# (3.40 / 6.50), Donegal 79.4 (3.15 / 7.15); Unity 57.9 (leave 1.40 p.m. / arrive 9.15 a.m.), Biggar 0 (leave 9.30 a.m. / arrive 12.45 p.m.).
+# Signs: M = mixed train. u at Biggar 9.30 a.m. (No. 311) and k at Bodo 5.00 a.m. (No. 312). k = Saturday only in the key supplied and in the
+# key on the branch-line page (Tables 203-219). u is NOT in the key supplied; the branch-line page's key gives u = Friday only, which fits:
+# out on Friday, the night at Bodo, back on Saturday morning. This table's own key is not on its scan, so Friday is good but not printed proof.
+#train col=M311 num=311 dir=down days="Fri" kind=mixed from="Biggar" note="From Biggar 9.30 a.m. and Unity 1.40 p.m.; Cosine, Sask. 5.10 p.m. Stays the night at Bodo. Friday by sign u (branch-line page key)."
+#train col=M312 num=312 dir=up days="Sat" kind=mixed to="Biggar" note="To Unity 9.15 a.m. and Biggar 12.45 p.m.; Cosine, Sask. 5.35 a.m."
+mile,station,principal,M311,M312
+109.9,Bodo,1,ar 5.45p,lv 5.00a

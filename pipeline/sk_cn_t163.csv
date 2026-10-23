@@ -1,0 +1,9 @@
+# Canadian National, Table 163, Belmont - Brandon. Official Guide, April 25, 1948 (scan cn1948_mb/t156_165.png). Transcribed 18 October 2026. CENTRAL TIME. Miles as printed. All Manitoba.
+# Signs (key on this page): a = Monday, Wednesday and Friday; b = Tuesday, Thursday and Saturday; l = Tuesday and Saturday; n = Tuesday and Thursday;
+#   p = Monday and Friday; v = Tuesday only; x = Monday only; f = flag stop; M = mixed train.
+#train col=M237 num=237 dir=down days="Tue,Thu" kind=mixed note="Tuesday and Thursday. Belmont 12.40 p.m. to Brandon 3.45 p.m."
+#train col=M238 num=238 dir=up days="Mon,Fri" kind=mixed note="Monday and Friday. Brandon 7.00 a.m. to Belmont 9.25 a.m."
+mile,station,principal,prov,tz,M237,M238
+0.0,Belmont,1,MB,C,lv 12.40p,ar 9.25a
+18.0,Wawanesa,0,MB,C,1.50p,8.36a
+43.2,Brandon,1,MB,C,ar 3.45p,lv 7.00a

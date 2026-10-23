@@ -1,0 +1,8 @@
+# Canadian National, Table 224: Winnipeg - Beaconia - Pine Falls, mixed trains M222 and M221 (daily except Sunday). See sk_cn_t224.csv for the table.
+# Official Guide, April 25, 1948 (scan cn1948_mb/t224.png). CENTRAL TIME. Miles from Winnipeg as printed. All Manitoba.
+#train col=M222 num=222 dir=down days="ex Sun" kind=mixed note="Mixed, daily except Sunday. Winnipeg 7.10 a.m. to Pine Falls 10.10 a.m."
+#train col=M221 num=221 dir=up days="ex Sun" kind=mixed note="Mixed, daily except Sunday. Pine Falls 12.45 p.m. to Winnipeg 3.55 p.m."
+mile,station,principal,prov,tz,M222,M221
+0,Winnipeg,1,MB,C,lv 7.10a,ar 3.55p
+51.6,Beaconia,0,MB,C,9.10a,1.50p
+70.8,Pine Falls,1,MB,C,ar 10.10a,lv 12.45p

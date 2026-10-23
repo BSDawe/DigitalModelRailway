@@ -1,0 +1,16 @@
+# Canadian National, Table 207, Canora - Wroxton - Yorkton. Official Guide, April 25, 1948 (scan cn1948_sk/tables207_212_216_canora_yorkton_biggar_vegreville.png, top).
+# Times as printed: CENTRAL TIME ("Cent. time" head). All stations in Saskatchewan. Miles from Canora as printed (this branch reaches Yorkton by Wroxton;
+#   Table 192's Canora - Yorkton by Ebenezer is 30.2 miles). Wroxton printed twice ("arr. Wroxton lve." / "lve. Wroxton arr."), one row here. A.M./P.M. beside
+#   each time; M259 at Wroxton "12 00 Noon".
+# Key to signs: not on this scan. a = Monday, Wednesday and Friday (every key); M mixed train.
+#   M259 Yorkton 9.35 a.m. carries the natural sign: "Monday only" in the Table 193-201 key, "Friday only" in the Table 180-184 key; Table 190 prints the same
+#   time (Yorkton 9.35 a.m. - Wroxton 11.10 a.m.) with sign e (Thursday and Saturday in the 180-184 key, Wednesday and Friday in the 193-201 key).
+#   The signs disagree: M259 DAYS IN DOUBT, entered Mon (natural sign, Table 193-201 key).
+# Also printed in Table 190 (Winnipeg - Russell - Yorkton): M260 Wroxton a1.20 p.m. - Yorkton ar 3.00 p.m. and M259 Yorkton 9.35 a.m. - Wroxton 11.10 a.m.;
+#   entered only here. M260 goes on from Yorkton a3.55 p.m. to Melville (Table 192, sk_cn_t192b.csv).
+#train col=M260 num=260 dir=down days="Mon,Wed,Fri" kind=mixed to="Melville" note="Canora 9.55 a.m. marked a; continues Yorkton 3.55 p.m. - Melville 5.05 p.m. (Table 192)."
+#train col=M259 num=259 dir=up days="Thu,Sat" kind=mixed note="Yorkton 9.35 a.m. marked with the sharp sign: Thursday and Saturday (as the e in Table 190) (Brendan, 12 Oct)."
+mile,station,principal,prov,tz,M260,M259
+0.0,Canora,1,SK,C,lv 9.55a,ar 2.40p
+41.7,Wroxton,1,SK,C,ar 12.30p / lv 1.20p,ar 11.10a / lv 12.00p
+69.3,Yorkton,1,SK,C,ar 3.00p,lv 9.35a

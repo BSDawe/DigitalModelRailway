@@ -1,0 +1,135 @@
+# Canadian National Tables 225 and 226 (1949), Jasper - Prince George - Smithers - Prince Rupert. Pacific time. Miles from Winnipeg.
+# No. 195 leaves Jasper Mon/Wed/Fri 4.00p, arrives Prince Rupert Tue/Thu/Sat 10.45p.
+# No. 196 leaves Prince Rupert Mon/Wed/Fri 8.00p, arrives Jasper 6.00a two days later. (Connections at Jasper with Nos. 1-4, Winnipeg-Edmonton-Vancouver.)
+# M389 McBride-Prince George Tue/Thu/Sat; M390 Prince George-McBride Mon/Wed/Fri. f = flag stop; "f" alone = flag stop, no time printed.
+mile,station,No195,No196,M389,M390
+1037.3,Jasper,lv 4.00p,ar 6.00a,,
+1045.6,Geikie,f4.20p,f5.36a,,
+1050.2,Decoigne,f4.30p,f5.25a,,
+1054.8,Yellowhead,f4.40p,f5.14a,,
+1059.1,Lucerne,4.50p,5.04a,,
+1065.2,Fitzwilliam,f5.02p,f4.52a,,
+1069.0,Grant Brook,f5.09p,f4.44a,,
+1075.1,Rainbow,f5.22p,f4.32a,,
+1081.0,Red Pass Jct,5.45p,4.20a,,
+1082.8,Selwyn,f5.50p,f4.05a,,
+1089.2,Alpland,f6.04p,f3.42a,,
+1091.8,Emperor,f6.09p,f3.28a,,
+1095.3,Swiftwater,f6.18p,f3.20a,,
+1098.9,Rearguard,f6.27p,f3.05a,,
+1106.1,Tete Jaune,6.45p,2.42a,,
+1111.1,Shere,f6.55p,f2.27a,,
+1118.4,Croydon,f7.11p,f2.12a,,
+1124.6,Dunster,7.30p,1.59a,,
+1132.2,Raush Valley,f7.50p,f1.43a,,
+1137.9,Eddy,f8.05p,f1.30a,,
+1144.6,McBride,ar 8.25p / lv 8.45p,ar 12.55a / lv 1.15a,lv 6.00a,ar 4.15p
+1150.0,Lamming Mills,f,f,f,f
+1157.8,Legrand,f9.22p,f12.20a,f6.46a,f3.30p
+1166.1,Rider,f9.41p,f11.58p,f7.11a,f3.00p
+1172.4,Goat River,9.56p,f11.42p,7.29a,2.35p
+1178.5,Crescent Spur,f,f,f,f
+1180.9,Loos,f10.16p,f11.19p,f7.55a,f2.05p
+1189.6,Urling,f10.36p,f10.58p,f8.19a,f1.35p
+1196.5,Kidd,f10.52p,f10.41p,f8.41a,f1.10p
+1200.2,Dome Creek,11.05p,10.31p,9.00a,12.59p
+1202.3,Bend,f11.11p,f10.22p,f9.12a,f12.47p
+1210.2,Guilford,f11.29p,f10.00p,f9.33a,f12.24p
+1214.1,Penny,11.38p,9.50p,9.48a,12.11p
+1219.6,Lindup,11.53p,f9.36p,f10.08a,f11.50a
+1224.0,Longworth,12.05a,9.21p,10.25a,11.27a
+1232.0,Hutton,12.24a,9.02p,11.00a,11.06a
+1235.2,Sinclair Mills,12.32a,f8.53p,f,f
+1236.8,Dewey,f12.37a,f8.48p,f11.16a,f10.48a
+1244.8,Hansard,12.57a,8.28p,11.41a,10.22a
+1248.6,Upper Fraser,f,f,f,f
+1253.4,Aleza Lake,1.19a,8.02p,12.09p,9.57a
+1259.9,Newlands,f1.35a,f7.47p,f12.32p,f9.32a
+1266.9,Giscome,1.53a,7.30p,1.00p,9.12a
+1271.6,Willow River,f2.04a,f7.15p,1.15p,8.50a
+1280.9,Shelley,f2.28a,f6.53p,f1.42p,f8.27a
+1285.3,Foreman,f2.41a,f6.43p,f1.57p,f8.11a
+1290.7,Prince George,ar 2.55a / lv 3.20a,ar 6.00p / lv 6.30p,ar 2.15p,lv 7.50a
+1295.9,Otway,f3.34a,f5.46p,,
+1299.7,Miworth,f3.43a,f5.37p,,
+1304.6,Chilako,f3.54a,f5.26p,,
+1310.7,Bednesti,f4.08a,f5.12p,,
+1318.7,Nichol,f4.26a,f4.53p,,
+1323.1,Isle Pierre,f4.36a,f4.43p,,
+1329.4,Hutchison,f4.50a,f4.29p,,
+1335.6,Wedgwood,f5.03a,f4.16p,,
+1340.9,Finmoore,5.18a,4.05p,,
+1347.5,Hulatt,f5.33a,f3.46p,,
+1353.9,Sinkut,f5.47a,f3.31p,,
+1360.1,Vanderhoof,6.04a,3.17p,,
+1367.0,McCall,f6.20a,f3.00p,,
+1373.4,Engen,f6.35a,f2.44p,,
+1378.6,Marten Lake,f6.47a,f2.32p,,
+1385.0,Fort Fraser,7.00a,2.18p,,
+1392.4,Encombe,f7.15a,f2.02p,,
+1394.5,Le Jac,f7.20a,f1.57p,,
+1398.4,Fraser Lake,f7.28a,f1.49p,,
+1406.1,Endako,ar 7.45a / lv 8.00a,ar 1.10p / lv 1.30p,,
+1412.4,Savory,f8.14a,f12.57p,,
+1420.9,Priestly,f8.32a,f12.39p,,
+1426.9,Sheraton,f8.45a,f12.25p,,
+1433.2,Tintagel,f8.58a,12.11p,,
+1441.1,Burns Lake,9.18a,11.54a,,
+1446.4,Decker Lake,f9.29a,f11.37a,,
+1451.8,Palling,f9.41a,f11.24a,,
+1457.4,Rose Lake,9.56a,11.10a,,
+1465.0,Forestdale,f10.13a,f10.51a,,
+1473.2,Topley,10.33a,10.33a,,
+1479.0,Perow,f10.46a,f10.12a,,
+1486.2,Knockholt,f11.02a,f9.50a,,
+1491.2,Houston,11.13a,9.37a,,
+1497.5,Barrett,f11.26a,f9.21a,,
+1504.9,Walcott,11.41a,9.03a,,
+1513.2,Quick,11.58a,8.41a,,
+1518.9,Hubert,f12.09p,f8.26a,,
+1522.1,Telkwa,12.20p,8.15a,,
+1525.5,Tatlow,f12.30p,f8.02a,,
+1531.4,Smithers,ar 12.45p / lv 1.05p,ar 7.20a / lv 7.45a,,
+1534.8,Lake Kathlyn,f1.14p,f7.12a,,
+1540.5,Evelyn,f1.27p,f6.53a,,
+1546.8,Doughty,f1.40p,f6.34a,,
+1553.3,Moricetown,f1.54p,f6.15a,,
+1558.7,Seaton,f2.06p,f6.00a,,
+1563.3,Beament,f2.16p,f5.47a,,
+1570.7,Bulkley Canyon,f2.33p,f5.28a,,
+1571.6,Bulkley Gate,,,,
+1577.3,New Hazelton,2.50p,5.10a,,
+1581.0,Hazelton,3.00p,4.58a,,
+1588.0,Carnaby,f3.15p,f4.37a,,
+1593.4,Skeena Crossing,3.27p,4.22a,,
+1595.2,Nash,f3.31p,f4.18a,,
+1599.8,Andimaul,f3.40p,f4.04a,,
+1604.5,Kitwanga,3.52p,3.50a,,
+1612.0,Woodcock,4.12p,3.28a,,
+1617.5,Cedarvale,4.25p,3.15a,,
+1625.9,Ritchie,f4.44p,f2.51a,,
+1632.4,Dorreen,f5.00p,f2.33a,,
+1638.5,Pacific,ar 5.15p / lv 5.35p,ar 1.50a / lv 2.15a,,
+1644.0,Pitman,f5.49p,f1.34a,,
+1650.7,Usk,6.04p,1.16a,,
+1657.7,Kitselas,f6.20p,f12.57a,,
+1659.0,Dobies,f,f,,
+1663.3,Terrace,ar 6.35p / lv 6.45p,ar 12.30a / lv 12.45a,,
+1670.3,Remo,f,f,,
+1672.9,Amsbury,f7.10p,12.07a,,
+1681.0,Shames,f7.28p,f11.40p,,
+1688.0,Exstew,f7.44p,f11.20p,,
+1699.8,Salvus,f8.10p,f10.52p,,
+1711.4,Kwinitsa,8.37p,10.25p,,
+1725.1,Skeena,f9.10p,f9.45p,,
+1731.4,Tyee,f9.27p,f9.27p,,
+1734.3,Haysport,9.35p,9.15p,,
+1741.2,Sockeye,f9.52p,f8.55p,,
+1742.9,Caspaco,f,f,,
+1744.4,Sunnyside,f,f,,
+1745.2,North Pacific,f,f,,
+1746.7,Inverness,f,f,,
+1748.5,Phelan,f10.12p,f8.33p,,
+1749.3,Port Edward,10.20p,8.26p,,
+1752.5,Kaien,f10.29p,f8.15p,,
+1757.9,Prince Rupert,ar 10.45p,lv 8.00p,,

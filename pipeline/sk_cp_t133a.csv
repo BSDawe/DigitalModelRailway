@@ -1,0 +1,18 @@
+# Canadian Pacific, Table 133, Fox Valley - Schuler - Empress: Fox Valley - Pivot - Schuler (Saskatchewan part up to the first Alberta station, Schuler).
+# From the Canadian Pacific public timetable of about 1948 (scan cp1948_sk/tables133_134_foxvalley_empress_hatton.png, printed sideways).
+# Times as printed: MOUNTAIN TIME ("Mountain Time" heads the station column). Miles from Fox Valley as printed.
+# Signs: || = meal station (Schuler, Burstall; explanation of signs for this page cut off at the edge of the scan); M = mixed train; f = stops on signal.
+# Provinces: Fox Valley - Pivot no province printed, all Saskatchewan by position; Schuler printed "SCHULER, ALTA" (Lv row) = first Alberta station.
+# Schuler is at the end of a 6.0-mile spur from Pivot: M671 goes Fox Valley - Pivot - Schuler (ar 11.20a), leaves Schuler 12.05p, back by Pivot 12.25p to
+# Hilda, Alta. (30.8) and on (sk_cp_t133b.csv). M672 comes from Empress by Hilda 2.15p and Pivot 2.40p to Schuler (ar 3.00p), leaves Schuler 4.00p by
+# Pivot 4.30p to Fox Valley. The Schuler - Pivot - Hilda leg (Pivot 12.25p / 2.40p) is in ab_cp_t133.csv; it is not repeated here.
+# Same figures as read in ab_cp_t133.csv.
+#train col=M671 num=671 dir=down days="Wed" kind=mixed to="Empress" note="Fox Valley to Schuler here; then Schuler 12.05p - Pivot 12.25p - Hilda - Leader - Empress 5.45p (ab_cp_t133.csv, sk_cp_t133b.csv)."
+#train col=M672 num=672 dir=up days="Tue" kind=mixed from="Empress" note="Comes from Empress 9.30a by Leader, Hilda 2.15p, Pivot 2.40p to Schuler ar 3.00p (sk_cp_t133b.csv, ab_cp_t133.csv); Schuler 4.00p to Fox Valley here."
+mile,station,principal,prov,tz,M671,M672
+0.0,Fox Valley,1,SK,M,lv 8.30a,ar 7.30p
+6.4,Linacre,0,SK,M,9.00a,6.45p
+12.9,Richmound,0,SK,M,9.45a,6.00p
+19.1,Horsham,0,SK,M,10.15a,5.00p
+25.6,Pivot,0,SK,M,10.45a,4.30p
+31.6,Schuler,1,AB,M,ar 11.20a,lv 4.00p

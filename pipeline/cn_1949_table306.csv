@@ -1,0 +1,24 @@
+# Canadian National Table 306, Kamloops Jct - Kelowna (Okanagan). Trains 194 (read down) and 193 (read up), daily except Sunday.
+# 194 connects from No. 2 (Vancouver lv 7.15p, Kamloops Jct ar 4.20a); 193 connects with No. 3 (Kamloops Jct lv 10.55p, Vancouver ar 8.45a).
+# f = flag stop. Lavington and Lumby (Lumby branch) are freight only. Buses to Penticton not included.
+mile,station,No194,No193
+0.0,Kamloops Jct,lv 4.45a,
+2.8,Kamloops,ar 5.00a / lv 5.30a,ar 9.55p / lv 10.45p
+14.5,Campbell Creek Jct,5.59a,9.30p
+26.5,Ducks Meadow,f6.45a,f8.53p
+30.9,Monte Lake,f6.57a,f8.41p
+37.8,Westwold,f7.14a,f8.25p
+47.3,Falkland,7.35a,8.02p
+52.4,Sweetbridge,f7.47a,f7.46p
+61.6,O'Keefe,f8.06a,f7.26p
+71.0,Armstrong,8.25a,7.05p
+73.3,Realm,8.33a,6.55p
+77.3,Larkin,8.43a,6.45p
+85.4,Vernon,ar 9.05a / lv 9.25a,ar 6.10p / lv 6.25p
+87.6,Lumby Jct,f9.32a,f6.00p
+92.3,Kalamalka,f9.48a,f5.45p
+99.2,Oyama,10.07a,5.28p
+105.9,Winfield,f10.22a,f5.14p
+109.5,Postill,f10.30a,f5.06p
+113.0,Rutland,f10.37a,f4.59p
+118.9,Kelowna,ar 10.50a,lv 4.45p

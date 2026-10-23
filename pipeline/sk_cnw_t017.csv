@@ -1,0 +1,19 @@
+# Chicago and North Western, Table 17, Chicago - Milwaukee - St. Paul - Minneapolis: ONLY Nos. 403 and 404, The Mountaineer (Brendan, 18 Oct: disregard the rest).
+# Official Guide, April 25, 1948 (scans cnw1948/t017w_*.png, t017e_*.png). Transcribed 18 October 2026. CENTRAL TIME. Miles from Chicago as printed (Milwaukee - Adams -
+#   Wyeville - Eau Claire line, the Adams cut-off; 403 / 404 pass Wyeville without stopping). 403: "First trip June 29. Last trip September 3."; 404: "First trip
+#   July 5. Last trip September 4." Signs: * = daily; square (403 Evanston) = stops only to receive passengers; z (404 Evanston) = stops only to leave revenue passengers.
+# Minneapolis: the Milwaukee Road station (Brendan: St. Paul Union Station, then Milwaukee Road track to Minneapolis, where the Soo takes over: sk_cp_t108s.csv).
+# Miles: Table 17 counts Wyeville 238.9 by Adams but 226.4 by Madison, and the miles beyond (Eau Claire 310.6, St. Paul 396.1, Minneapolis 406.7) by Madison;
+#   for 403 / 404 (by Adams) 12.5 is added beyond Wyeville: Eau Claire 323.1, St. Paul 408.6, Minneapolis 419.2 (Claude, 19 Oct; the KMZ agrees: Wyeville - Eau Claire 84.4 mi).
+# Track: Brendan's Chicago__Northwestern.kmz (traces/cnw), Milwaukee Road St. Paul - Minneapolis (traces/milw).
+#train col=No403 num=403 dir=down days="daily" kind=passenger to="Vancouver (Soo and CP)" note="The Mountaineer, June 29 to September 3. Chicago 12.30 p.m. to Minneapolis 9.15 p.m.; on by the Soo Line (No. 13)."
+#train col=No404 num=404 dir=up days="daily" kind=passenger from="Vancouver (CP and Soo)" note="The Mountaineer, July 5 to September 4. Minneapolis 6.25 a.m. to Chicago 3.05 p.m."
+mile,station,principal,prov,tz,No403,No404
+0,Chicago,1,IL,C,lv 12.30p,ar 3.05p
+12.0,Evanston,0,IL,C,12.46p,2.45p
+61.9,Racine,0,WI,C,1.33p,1.48p
+85.0,Milwaukee,1,WI,C,ar 1.55p / lv 2.00p,ar 1.15p / lv 1.20p
+209.5,Adams,0,WI,C,4.30p,10.55a
+323.1,Eau Claire,1,WI,C,6.51p,8.42a
+408.6,St. Paul,1,MN,C,8.45p,7.05a
+419.2,Minneapolis,1,MN,C,ar 9.15p,lv 6.25a

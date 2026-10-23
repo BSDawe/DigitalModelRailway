@@ -1,0 +1,35 @@
+# Union Pacific Railroad, Table 56, Portland and Spokane, table of April 4, 1948 (Official Guide, "Oregon and Washington"). Times as printed:
+# PACIFIC TIME. Miles from Portland as printed (Umatilla 183, Wallula 211, Ayer 264, Spokane 368 via Cheney).
+# This file: Umatilla - Wallula - Ayer - Cheney - Spokane, Nos. 20 and 66 (down), 19 and 65 (up). Umatilla, Sand and Juniper are in Oregon;
+# Wallula (211) is the first Washington station. Portland - Umatilla is wa_up_t056a, Pendleton - Umatilla wa_up_t056b.
+# Signs: * daily. Entered as plain times or left empty, key not on the scans supplied: "c" with no time (No. 66 at Sand, Juniper, Attalia -
+# Ruxby, Emden: probably stops on signal; left empty), "y" with no time (No. 20 at Hooper Junction, Emden; left empty), a boxed dot (No. 19)
+# and a circled dot (No. 65) at Hooper Junction with no time (left empty), trident sign (No. 19 Sand, Juniper; left empty). f flag.
+# NOT ENTERED (connections printed in this table): (1) Wallula - Walla Walla (242): "arr. Walla Walla" 5.30 a.m. under Nos. 66 and 20, "lve. Walla
+# Walla" 9.45 p.m. under Nos. 19 and 65 - see UP Table 61. (2) Ayer lv 5.30 - Tucannon 5.58 - Riparia ar 6.10 / lv 6.15 - Lewiston ar 8.25 a.m.,
+# and Lewiston lv 6.20 - Riparia 8.30 / 8.35 - Tucannon 8.45 - Ayer ar 9.10 p.m.: Camas Prairie Nos. 74/73, entered in wa_up_t056d and
+# wa_up_t062. (3) Ayer lv 5.45 - Tucannon 6.12 - Riparia 6.22 - LaCrosse 7.06 - Winona 7.20 - Colfax ar 8.05 a.m. and Colfax lv 6.50 - Winona 7.40 -
+# LaCrosse 7.57 - Riparia 8.50 - Tucannon 9.01 - Ayer ar 9.30 p.m. (Tekoa 380 and Spokane 429 printed without times): UP Nos. 62 and 61 of
+# Table 57, entered in wa_up_t057 with all stations (same times).
+#train col=No20 num=20 dir=down days="daily" kind=passenger from="Portland" to="Spokane" note="The Spokane."
+#train col=No66 num=66 dir=down days="daily" kind=passenger from="Pendleton" to="Spokane"
+#train col=No19 num=19 dir=up days="daily" kind=passenger from="Spokane" to="Portland" note="The Spokane."
+#train col=No65 num=65 dir=up days="daily" kind=passenger from="Spokane" to="Pendleton"
+mile,station,principal,No20,No66,No19,No65
+183,Umatilla,1,lv 2.05a,lv 2.25a,ar 2.05a,ar 12.15a
+197,Sand,0,,,,
+203,Juniper,0,,,,
+211,Wallula,1,ar 2.45a / lv 3.05a,ar 3.10a / lv 3.30a,ar 12.59a / lv 1.20a,ar 11.10p / lv 11.30p
+213,Attalia,0,,,,
+220,Humorist,0,,,,
+226,Ash,0,,,,
+233,Page,0,,,,
+241,Simmons,0,,,,
+250,Scott,0,,,,
+257,Ruxby,0,,,,
+264,Ayer,1,4.23a,4.55a,11.48p,10.00p
+286,Hooper Junction,1,,f5.33a,,
+307,Marengo,0,5.37a,6.10a,10.46p,8.51p
+313,Emden,0,,,,
+351,Cheney,0,6.32a,f7.06a,9.56p,8.04p
+368,Spokane,1,ar 7.00a,ar 7.40a,lv 9.30p,lv 7.40p

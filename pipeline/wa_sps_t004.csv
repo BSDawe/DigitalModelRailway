@@ -1,0 +1,15 @@
+# Spokane, Portland & Seattle Railway, Table 4, Goldendale Branch, table of April 4, 1948 (Official Guide). Times as printed: PACIFIC TIME.
+# Miles from Goldendale as printed (the up column prints miles from Lyle). "Nos. 120 and 121 - Coaches only."
+# Signs: double dagger at the first station of each train, taken as daily except Saturday (the NP and GN keys; the SP&S key is not on the
+# scans supplied); f stops on flag. No. 120 leaves Lyle 11.40 p.m. (after SP&S No. 4 calls there at 11.18 p.m.) and reaches Goldendale 2.25 a.m.
+#train col=No121 num=121 dir=down days="Sun,Mon,Tue,Wed,Thu,Fri" kind=passenger from="Goldendale" to="Lyle" note="Coaches only. Days from the double-dagger sign (ex Sat), key not supplied."
+#train col=No120 num=120 dir=up days="Sun,Mon,Tue,Wed,Thu,Fri" kind=passenger from="Lyle" to="Goldendale" note="Coaches only. Leaves Lyle 11.40 p.m. Days from the double-dagger sign (ex Sat), key not supplied."
+mile,station,principal,No121,No120
+0,Goldendale,1,lv 6.15p,ar 2.25a
+6.3,Centerville,0,6.35p,2.00a
+11.4,Warwick,0,f6.51p,f1.40a
+24.7,Wahkiakus,0,f7.32p,f12.45a
+28.2,Klickitat,0,7.43p,12.30a
+31.3,Pitt,0,f7.53p,f12.20a
+35.2,Wrights,0,f8.05p,f12.05a
+41.6,Lyle,1,ar 8.25p,lv 11.40p

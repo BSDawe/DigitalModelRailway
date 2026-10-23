@@ -1,0 +1,46 @@
+mile,station,M395_wb,M397_wb,No1_wb,No3_wb,No2_eb,No4_eb,M398_eb,M396_eb
+2672.9,Kamloops Jct,lv 8.10a,,,,,,,ar 2.50p
+2673.9,Halston,f8.15a,,,,,,,f2.46p
+2680.7,Tranquille,f8.38a,,12.00a,11.10p,4.07a,4.52a,,f2.32p
+2686.7,Frederick,f9.03a,,,,,,,f1.56p
+2693.7,Copper Creek,f9.25a,,,,,,,f1.35p
+2698.6,Savona,f9.45a,,,,,,,f1.17p
+2705.5,Walhachin,f10.08a,,,,,,,f12.56p
+2709.2,Anglesey,f10.20a,,,,,,,f12.47p
+2713.9,McAbee,f10.30a,,,,,,,f12.35p
+2721.8,Ashcroft,11.00a,,,f12.30a,b2.46a,f3.29a,,12.12p
+2731.5,Basque,f11.30a,,,,,,,f11.31a
+2741.2,Martel,f11.55a,,,,,,,f11.05a
+2747.7,Spence's Bridge,12.50p,,f2.18a,f1.19a,,f2.38a,,10.47a
+2752.0,Skoonka,f1.05p,,,,,,,f10.20a
+2756.0,Seddell,f1.20p,,,,,,,f10.07a
+2763.9,Gossett,f1.50p,,,,,,,f9.34a
+2770.7,Lytton,f2.20p,,,f2.24a,f1.00a,f1.40a,,9.06a
+2777.1,Cisco,f2.45p,,,,,,,f8.36a
+2783.1,Falls Creek,f3.10p,,,,,,,f8.14a
+2787.8,Inkitsaph,f3.30p,,,,,,,f7.53a
+2792.3,Boothroyd,f3.50p,,,,,,,f7.38a
+2798.5,Boston Bar,ar 4.15p,lv 6.50a,ar 4.20a / lv 4.30a,ar 3.30a / lv 3.40a,ar 11.45p / lv 11.55p,ar 12.25a / lv 12.35a,ar 6.35p,lv 7.15a
+2805.9,Gorge (Hell's Gate),,f7.17a,,,,,f6.08p,
+2811.2,Chapman's,,f7.33a,,,,,f5.48p,
+2816.8,Stout,,f7.50a,,,,,f5.28p,
+2825.2,Yale,,f8.25a,,,,,f4.58p,
+2830.0,Squeah,,f8.40a,,,,,f4.41p,
+2834.5,Trafalgar,,f8.53a,,,,,f4.25p,
+2838.7,Hope,,9.10a,,f5.15a,,f10.55p,4.10p,
+2842.6,Floods,,f9.26a,,,,,f3.38p,
+2848.1,Laidlaw,,f9.42a,,,,,f3.20p,
+2852.6,Cheam View,,f9.52a,,,,,f3.05p,
+2859.5,Popkum,,f10.13a,,,,,f2.43p,
+2863.6,Rosedale,,f10.26a,,,,,f2.33p,
+2870.3,Chilliwack,,11.25a,6.54a,6.12a,9.30p,10.05p,2.15p,
+2875.0,Arnold,,f11.41a,,,,,f1.30p,
+2881.7,Cox,,f12.04p,,,,,f1.15p,
+2885.9,Matsqui,,f12.18p,,b6.45a,b9.02p,9.35p,f1.05p,
+2891.0,Mt. Lehman,,f12.35p,,,,,f12.45p,
+2896.5,Glen Valley,,f12.54p,,,,,f12.25p,
+2901.7,Fort Langley,,f1.12p,,b7.18a,b8.35p,9.02p,f12.15p,
+2905.6,Westlang,,f1.30p,,,,,f11.45a,
+2913.4,Port Mann,,2.35p,8.20a,7.45a,8.15p,8.40p,11.20a,
+2917.2,New Westminster,,2.50p,8.49a,8.13a,7.50p,8.15p,10.09a,
+2930.3,Vancouver,,ar 3.30p,ar 9.20a,ar 8.45a,lv 7.15p,lv 7.45p,lv 9.30a,

@@ -1,0 +1,24 @@
+# Joined through train (cn65), sk_join.py: skcn192a:No65, skcn192b:M165, skcn182a:No65; up skcn182a:No66, skcn192b:M166, skcn192a:No66
+# Rows and times as in the section files (see them for the scans, signs and doubts). Miles: counted along the run from the first station.
+#train col=D num=65 dir=down days="Mon,Wed,Fri" kind=passenger note="Through train: No. 65 Regina - Melville; No. 165 Melville - Sturgis; No. 65 Sturgis - Swan River. Column 65-M165; Regina 6.45 a.m. marked a (Mon Wed Fri); continues as M165 Melville - Sturgis (sk_cn_t192b.csv) and No. 65 Sturgis - Swan River (Table 182a)."
+#train col=U num=66 dir=up days="Tue,Thu,Sat" kind=passenger note="Through train: No. 66 Swan River - Sturgis; No. 166 Sturgis - Melville; No. 66 Melville - Regina. Swan River 9.55 a.m. marked b; on to Melville (as M166) and Regina (No. 66), Table 192."
+mile,station,principal,prov,tz,D,U
+0.0,Regina,1,SK,M,lv 6.45a,ar 8.30p
+23.0,Edenwold,0,SK,M,7.42a,7.25p
+34.2,Edgeley,0,SK,M,8.08a,6.57p
+49.0,Ft. Qu'Appelle,1,SK,M,8.43a,6.21p
+53.4,Lebret,0,SK,M,8.56a,6.08p
+62.7,Balcarres,0,SK,M,9.18a,5.46p
+83.2,Duff,0,SK,M,10.01a,5.03p
+96.3,Melville,1,SK,M/C,ar 10.30a / lv 12.10p,ar 4.55p / lv 4.35p
+112.1,Otthon,0,SK,C,12.48p,4.17p
+122.5,Yorkton,1,SK,C,ar 1.15p / lv 1.40p,ar 3.40p / lv 3.55p
+133.4,Ebenezer,0,SK,C,2.03p,3.19p
+152.7,Canora,1,SK,C,ar 2.55p / lv 3.25p,ar 2.25p / lv 2.40p
+174.8,Sturgis,1,SK,C,ar 4.25p / lv 4.55p,ar 12.55p / lv 1.25p
+182.7,Stenen,0,SK,C,5.17p,12.33p
+195.4,Norquay,0,SK,C,5.51p,12.00p
+214.2,Arran,0,SK,C,6.42p,11.08a
+221.7,Benito,0,MB,C,7.01p,10.49a
+234.1,Kenville,0,MB,C,7.32p,10.18a
+242.3,Swan River,1,MB,C,ar 7.55p,lv 9.55a

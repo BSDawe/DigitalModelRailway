@@ -1,0 +1,20 @@
+# Canadian Pacific, Table 133, Fox Valley - Schuler - Empress: Hilda - Charmian - Leader - Estuary - Empress (from the Alberta station Hilda through
+# Saskatchewan to the first Alberta station again, Empress).
+# From the Canadian Pacific public timetable of about 1948 (scan cp1948_sk/tables133_134_foxvalley_empress_hatton.png, printed sideways).
+# Times as printed: MOUNTAIN TIME. Miles from Fox Valley as printed (Leader - Empress over the Table 132 line).
+# Signs: || = meal station (Burstall); f = stops on signal; M = mixed train.
+# Provinces printed: "Hilda, Alta.", "Charmian, Sask", "Estuary, Sask", "Empress, Alta."; Burstall - Westerham none printed, Saskatchewan by position.
+# Leader is printed twice (Ar / Lv, ref. 132): one row. Leader - Empress times are also in Table 132 (65/66 are other trains there).
+# Hilda's mile: the second figure looks smudged in the Alberta reading; read here 30.8 clearly. Empress 93.1: last figure smudged, read 1 (as in ab_cp_t133.csv).
+#train col=M671 num=671 dir=down days="Wed" kind=mixed from="Fox Valley" note="Comes from Fox Valley 8.30a - Schuler - Pivot 12.25p (sk_cp_t133a.csv, ab_cp_t133.csv)."
+#train col=M672 num=672 dir=up days="Tue" kind=mixed to="Fox Valley" note="Continues Hilda 2.15p - Pivot 2.40p - Schuler - Fox Valley 7.30p (ab_cp_t133.csv, sk_cp_t133a.csv)."
+mile,station,principal,prov,tz,M671,M672
+30.8,Hilda,0,AB,M,1.00p,2.15p
+39.3,Charmian,0,SK,M,f1.25p,f1.20p
+44.9,Burstall,1,SK,M,2.15p,1.00p
+51.9,Gascoigne,0,SK,M,f2.45p,f12.15p
+58.9,Mendham,0,SK,M,3.30p,11.50a
+69.5,Leader,1,SK,M,ar 4.00p / lv 4.40p,ar 10.30a / lv 11.00a
+74.7,Westerham,0,SK,M,f5.00p,f10.09a
+82.9,Estuary,0,SK,M,5.20p,9.52a
+93.1,Empress,1,AB,M,ar 5.45p,lv 9.30a

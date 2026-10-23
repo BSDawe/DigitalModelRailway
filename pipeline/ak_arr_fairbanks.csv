@@ -1,0 +1,13 @@
+# The Alaska Railroad, March 1948 (as ak_arr_seward.csv). This file: Anchorage - Curry - McKinley Park - Healy - Nenana - Fairbanks.
+# Times as printed: 150th MERIDIAN TIME (two hours earlier than Pacific). Miles from Seward as printed. Northbound headed "Monday, Wednesday,
+# Friday" (over both blocks: Anchorage - Curry and Curry - Fairbanks, the same day); southbound "Tuesday, Thursday, Saturday".
+# Elevations: Anchorage 38, Curry 546, McKinley Park 1732, Healy 1368, Nenana 362, Fairbanks 448. McKinley Park printed "lv." both ways.
+#train col=N num="" dir=down days="Mon,Wed,Fri" kind=passenger note="Monday, Wednesday and Friday (no train number printed)."
+#train col=S num="" dir=up days="Tue,Thu,Sat" kind=passenger note="Tuesday, Thursday and Saturday (no train number printed)."
+mile,station,principal,N,S
+114.3,Anchorage,1,lv 8.30a,ar 9.30p
+248.5,Curry,1,ar 1.00p / lv 1.10p,ar 4.50p / lv 5.00p
+347.9,McKinley Park,1,4.55p,1.05p
+358.1,Healy,1,ar 5.30p / lv 5.40p,ar 12.20p / lv 12.30p
+411.7,Nenana,1,7.20p,10.40a
+470.3,Fairbanks,1,ar 9.30p,lv 8.30a

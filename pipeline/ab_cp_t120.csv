@@ -1,0 +1,36 @@
+# Canadian Pacific, Table 120, Moose Jaw - Assiniboia - Shaunavon - Lethbridge: the ALBERTA part, Jaydot to Lethbridge.
+# From the Canadian Pacific public timetable of 1948 (scans table120_moose_jaw_shaunavon_lethbridge_LARGE.png and the smaller capture).
+# Times as printed: MOUNTAIN TIME ("Mountain Time" heads the station column). Miles are from Moose Jaw, as printed.
+# Last Saskatchewan station: Altawan, Sask., mile 269.8 (M643 f4.05p, M644 f8.15a); first Alberta station: Jaydot, Alta., mile 276.4.
+# Signs (explanation of signs as printed on the page of Tables 149/150, tables149_150_signs.png, which has the sign s for this table):
+#   f = stops on signal;  M before a train number = mixed train;  || after a station (Foremost, Lethbridge) = meal station;
+#   s (M641 at Wilson, 1.45p) = stops to detrain from east of Stirling: entered as a flag stop, see the note of M641.
+# Stirling has a reference to Table 150. The spelling Nemiscam is as printed.
+# No train runs through: east of Manyberries M643 (from Shaunavon) and M644 (to Shaunavon); west of it M641 and M642, on other days.
+# M643 arrives Manyberries Wed. and Fri. evening, M641 leaves next morning (Thu., Sat.; and Tue.); M642 arrives Mon., Wed., Fri. evening,
+# M644 leaves Tue. and Sat. morning. Trains 319/320 (Moose Jaw - Shaunavon) and M657/M656 (Shaunavon - Consul) are in Saskatchewan only.
+# Slow running as printed: M641 Nemiscam 8.45a to Foremost 9.45a (7.3 miles), M642 Foremost 2.50p from Legend f1.45p (7.7 miles): Foremost is a meal station.
+# Light and heavy type: M641 Wrentham 12.05 onward p.m.; M642 Wrentham 12.10 onward p.m.
+#train col=M643 num=643 dir=down days="Wed,Fri" kind=mixed from="Shaunavon" note="Leaves Shaunavon 9.00a; ends at Manyberries."
+#train col=M644 num=644 dir=up days="Tue,Sat" kind=mixed to="Shaunavon" note="Starts at Manyberries; arrives Shaunavon 2.20p."
+#train col=M641 num=641 dir=down days="Tue,Thu,Sat" kind=mixed note="Manyberries to Lethbridge. Meal station Foremost. Wilson 1.45p: stops only to detrain passengers from east of Stirling."
+#train col=M642 num=642 dir=up days="Mon,Wed,Fri" kind=mixed note="Lethbridge to Manyberries. Meal station Foremost."
+mile,station,principal,M643,M644,M641,M642
+276.4,Jaydot,0,f4.30p,f7.55a,,
+284.7,Cressday,0,f5.00p,f7.30a,,
+291.2,Bain,0,f5.20p,f7.10a,,
+297.9,Craigower,0,f5.40p,f6.45a,,
+307.8,Manyberries,1,ar 6.10p,lv 6.15a,lv 7.00a,ar 5.40p
+314.4,Orion,0,,,7.25a,5.05p
+321.0,Pakowki,0,,,f7.45a,f4.20p
+328.1,Etzikom,0,,,8.20a,3.55p
+335.8,Nemiscam,0,,,8.45a,3.15p
+343.1,Foremost,0,,,9.45a,2.50p
+350.8,Legend,0,,,f10.20a,f1.45p
+359.1,Skiff,0,,,10.55a,1.15p
+367.7,Conrad,0,,,f11.25a,f12.45p
+376.4,Wrentham,0,,,12.05p,12.10p
+384.0,Judson,0,,,f12.35p,f11.10a
+392.3,Stirling,1,,,1.20p,10.50a
+400.2,Wilson,0,,,f1.45p,f10.20a
+411.5,Lethbridge,1,,,ar 2.30p,lv 9.50a

@@ -1,0 +1,19 @@
+# Chicago, Milwaukee, St. Paul & Pacific Railroad (Milwaukee Road), Table 84, Maytown - Chehalis - Raymond (Coast Division), table of February 22,
+# 1948 (Official Guide). Times as printed: PACIFIC TIME. "Mix." printed over both columns: mixed trains.
+# Signs (key milw_200313): dagger daily except Sunday; f stops on signal. The trains start/end at Chehalis: Maytown (0), Essex (8), Centralia (14)
+# and Dryad (35) have no times (entered empty).
+#train col=No963 num=963 dir=down days="ex Sun" kind=mixed from="Chehalis" to="Raymond" note="Mixed."
+#train col=No964 num=964 dir=up days="ex Sun" kind=mixed from="Raymond" to="Chehalis" note="Mixed."
+mile,station,principal,No963,No964
+0,Maytown,1,,
+8,Essex,0,,
+14,Centralia,1,,
+17,Chehalis,1,lv 4.30p,ar 3.20p
+35,Dryad,0,,
+36,Doty,0,f5.45p,f1.50p
+42,Hilda,0,f6.00p,f1.30p
+50,MacPhail,0,f6.30p,f1.00p
+53,Sutico,0,f6.50p,f12.45p
+55,Firdale,0,f7.00p,f12.30p
+62,Willapa,1,f7.34p,f12.10p
+66,Raymond,1,ar 7.55p,lv 12.01p

@@ -1,0 +1,26 @@
+# Canadian Pacific, Table 103, Reston - Wolseley.
+# From the Canadian Pacific public timetable of about 1948 (scan cp1948_sk/tables103_105_reston_wolseley_brandon.png, page 36).
+# Times as printed: CENTRAL TIME ("Central Time" heads the station column), all rows, including Wolseley (which Table 6 may give in Mountain Time).
+# Miles from Reston as printed. Provinces: Reston - Ebor Manitoba ("Ebor, Man"), Maryfield ("Maryfield, Sask") - Wolseley Saskatchewan.
+# Signs: || = meal station (Wawota); M = mixed train. References: Reston 98, Wolseley 6.
+# Wawota is printed twice (Ar 51.6 / Lv, no mile): one row.
+#train col=M245 num=245 dir=down days="Mon,Wed,Fri" kind=mixed
+#train col=M246 num=246 dir=up days="Tue,Thu,Sat" kind=mixed note="Wawota ar and lv both 12.20p as printed."
+mile,station,principal,prov,tz,M245,M246
+0.0,Reston,1,MB,C,lv 9.05a,ar 3.10p
+8.1,Ewart,0,MB,C,9.28a,2.30p
+16.6,Ebor,0,MB,C,9.52a,2.10p
+27.8,Maryfield,0,SK,C,10.25a,1.40p
+35.1,Fairlight,0,SK,C,10.55a,1.15p
+42.0,Walpole,0,SK,C,11.15a,12.45p
+51.6,Wawota,1,SK,C,ar 11.40a / lv 12.15p,ar 12.20p / lv 12.20p
+59.1,Dumas,0,SK,C,12.40p,11.50a
+68.7,Kennedy,0,SK,C,1.20p,11.25a
+77.9,Bender,0,SK,C,1.45p,10.55a
+84.3,Neelby,0,SK,C,2.02p,10.38a
+91.4,Windthorst,0,SK,C,2.30p,10.20a
+98.1,Peebles,0,SK,C,2.50p,9.55a
+105.6,Baring,0,SK,C,3.15p,9.35a
+110.9,Deveron,0,SK,C,3.35p,9.18a
+116.7,Adair,0,SK,C,4.00p,9.00a
+122.4,Wolseley,1,SK,C,ar 4.35p,lv 8.40a

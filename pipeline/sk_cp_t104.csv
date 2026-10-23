@@ -1,0 +1,17 @@
+# Canadian Pacific, Table 104, Brandon - Lenore. From the Canadian Pacific public timetable of about 1948 (scan cp1948_sk/tables103_105_reston_wolseley_brandon.png).
+# Transcribed 18 October 2026. CENTRAL TIME. Miles from Brandon as printed. All stations in Manitoba.
+# Signs: f = stops on signal; d = stops to detrain (M218 at Chater 4.00p): entered as a plain time. References: Brandon 5; Forrest 102.
+#train col=M217 num=217 dir=down days="Tue,Fri" kind=mixed note="Brandon 8.20 a.m. to Lenore 12.10 p.m."
+#train col=M218 num=218 dir=up days="Tue,Fri" kind=mixed note="Lenore 1.05 p.m. to Brandon 4.20 p.m. Chater 4.00 p.m.: stops to detrain."
+mile,station,principal,prov,tz,M217,M218
+0.0,Brandon,1,MB,C,lv 8.20a,ar 4.20p
+5.5,Chater,0,MB,C,8.35a,4.00p
+16.3,Forrest,0,MB,C,9.25a,3.30p
+23.2,Carnegie,0,MB,C,9.45a,3.00p
+27.2,Pendennis,0,MB,C,10.00a,2.43p
+33.2,Cossar,0,MB,C,f10.15a,f2.25p
+35.3,Wheatland,0,MB,C,10.30a,2.20p
+43.7,Bradwardine,0,MB,C,11.07a,1.55p
+46.7,Harding,0,MB,C,11.22a,1.40p
+50.3,Kenton,0,MB,C,11.42a,1.25p
+57.2,Lenore,1,MB,C,ar 12.10p,lv 1.05p

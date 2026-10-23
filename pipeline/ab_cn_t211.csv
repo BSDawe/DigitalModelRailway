@@ -1,0 +1,16 @@
+# Canadian National Railways, Table 211, Biggar - Loverna - Hemaruka. Table dated April 25, 1948 (Official Guide, May 1948).
+# Times as printed: MOUNTAIN TIME. Only the Alberta stations are entered: New Brigden, Sedalia and Hemaruka.
+# Last Saskatchewan station next to the boundary: Loverna, Sask., mile 104.5 (M267 leaves Loverna 8.00 a.m., M268 arrives Loverna 4.30 p.m.).
+# The table has two sections: Biggar - Loverna (mixed 257 and 258, wholly in Saskatchewan, not entered) and Loverna - Hemaruka (mixed 267 and 268).
+# Signs: M = mixed train. u = Friday only (at Loverna for 267 and at Hemaruka for 268). The letter of the "Friday only" entry is cut off at
+# the edge of the scan of the page's key: it is taken as u from its place in the alphabetical key (between t and v).
+# 267's times are in light type (a.m.) and Hemaruka is printed "12 00 Noon"; 268's are in heavy type (p.m.).
+#train col=M267 num=267 dir=down days="Fri" kind=mixed from="Loverna" note="Friday only. Leaves Loverna, Sask. 8.00 a.m."
+#train col=M268 num=268 dir=up days="Fri" kind=mixed to="Loverna" note="Friday only. Arrives Loverna, Sask. 4.30 p.m."
+# Hemaruka is placed at Brendan's point on the old right of way at the wye (4 October 2026). Sedalia to that point is 19.5 miles in a straight
+# line against 17.8 by the printed miles (the figures 135.2 and 153.0 were read again and are as printed), so either a printed mile or the
+# names-file point for Sedalia or New Brigden is a little out. The line is a straight estimate from station to station.
+mile,station,principal,M267,M268
+127.1,New Brigden,0,9.45a,3.15p
+135.2,Sedalia,0,10.25a,2.35p
+153.0,Hemaruka,1,ar 12.00p,lv 1.20p

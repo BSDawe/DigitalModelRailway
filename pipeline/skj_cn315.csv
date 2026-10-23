@@ -1,0 +1,14 @@
+# Joined through train (cn315), sk_join.py: skcn175:M315, skcn176:M315; up skcn176:M316, skcn175:M316
+# Rows and times as in the section files (see them for the scans, signs and doubts). Miles: counted along the run from the first station.
+#train col=D num=315 dir=down days="Mon" kind=mixed note="Through train: No. 315 Radville - Avonlea; No. 315 Avonlea - Moose Jaw. On from Avonlea n3.15 p.m. to Moose Jaw (Table 176). n: Monday only (key for CN Tables 171-179C, Brendan 12 Oct)."
+#train col=U num=316 dir=up days="Tue" kind=mixed note="Through train: No. 316 Moose Jaw - Avonlea; No. 316 Avonlea - Radville. Moose Jaw 10.00 a.m. marked g: Tuesday only (key for CN Tables 171-179C, Brendan 12 Oct). Continues Avonlea - Radville (Table 175)."
+mile,station,principal,prov,tz,D,U
+0.0,Radville,1,SK,M,lv 11.00a,ar 5.20p
+14.4,Forward,0,SK,M,11.50a,4.30p
+30.2,Parry,0,SK,M,12.40p,3.35p
+35.7,Dummer,0,SK,M,1.05p,3.10p
+43.1,Truax,0,SK,M,1.30p,2.40p
+52.2,Avonlea,1,SK,M,ar 2.00p / lv 3.15p,ar 12.55p / lv 2.00p
+66.5,Briercrest,0,SK,M,4.05p,12.08p
+73.6,Tilney,0,SK,M,4.30p,11.22a
+87.6,Moose Jaw,1,SK,M,ar 5.20p,lv 10.00a

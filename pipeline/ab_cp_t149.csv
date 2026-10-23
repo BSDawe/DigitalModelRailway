@@ -1,0 +1,44 @@
+# Canadian Pacific Railway, Table 149, Calgary - Macleod - Lethbridge: the route by High River and Macleod, trains 542 and 541.
+# From the Canadian Pacific public timetable, 1948. Times as printed: MOUNTAIN TIME. All in Alberta.
+# The table prints three sections under one heading: Calgary - Aldersyde (all four trains), then Mazeppa - Coalhurst by Vulcan (trains 538 / 537,
+# file ab_cp_t149b.csv), then Aldersyde - Macleod - Coalhurst (trains 542 / 541, this file), and a last row for Lethbridge. The two routes part at
+# Aldersyde (mile 33.2) and meet again at Kipp.
+# Signs: f = stops on signal. A double bar after Lethbridge = meal station. Star (in the equipment list) = regularly assigned cars air-conditioned.
+# Figures after a station name are connecting tables: Calgary 6; Aldersyde 137; Coalhurst 145; Lethbridge 120, 150, 151.
+# Both trains "Daily" in the column headings. 542 is all p.m. (P.M. at head and foot), 541 all a.m. (A.M. at head and foot).
+# Aldersyde is printed twice (foot of the first section, head of the third) with the same times: 542 8.27, 541 10.20. One row here.
+# Macleod is printed twice at mile 108.6, an arrive row and a leave row: 542 ar 10.45 lv 11.00; 541 ar 7.20 lv 7.45.
+# Miles as printed, from Calgary, EXCEPT LETHBRIDGE: the table prints one Lethbridge row, mile 126.5, which is the distance by Vulcan
+# (Coalhurst 120.2 + 6.3). By Macleod, Coalhurst is 133.9, so Lethbridge is entered here as 140.2 (133.9 + 6.3; worked out, not printed).
+# Kipp is mile 132.3 by this route (118.6 by Vulcan).
+# 542 has no time at Pearce or Kipp (".." printed); 541 calls at both.
+# Equipment as printed. Train 542: coaches Calgary to Lethbridge; 12-section drawing-room sleeper Calgary to Vancouver and cafe parlor Calgary
+# to Penticton, "in train 542 Calgary to Macleod, thence No. 11" (the Kettle Valley train, Table 151). Train 541: coaches Lethbridge to Calgary;
+# sleeper Vancouver to Calgary and cafe parlor Penticton to Calgary, "in train 12 to Macleod, thence No. 541".
+# Nothing in doubt: every figure was read twice from separate enlargements and against the smaller capture, and agreed.
+#train col=No542 num=542 dir=down days="daily" kind=passenger note="Calgary to Lethbridge by High River and Macleod. Coaches Calgary to Lethbridge. Sleeper Calgary to Vancouver and cafe parlor Calgary to Penticton, handed to train 11 at Macleod."
+#train col=No541 num=541 dir=up days="daily" kind=passenger note="Lethbridge to Calgary by Macleod and High River. Coaches Lethbridge to Calgary. Sleeper from Vancouver and cafe parlor from Penticton come off train 12 at Macleod."
+mile,station,principal,No542,No541
+0.0,Calgary,1,lv 7.30p,ar 11.30a
+6.0,Turner,0,f7.42p,f11.15a
+10.1,Midnapore,0,7.47p,11.07a
+18.5,Dewinton,0,8.00p,10.51a
+23.5,Sandstone,0,f8.08p,f10.42a
+27.6,Okotoks,0,8.16p,10.36a
+33.2,Aldersyde,1,8.27p,10.20a
+39.9,High River,0,8.42p,10.08a
+49.2,Cayley,0,8.58p,9.46a
+57.3,Nanton,0,9.11p,9.30a
+65.8,Parkland,0,9.24p,9.12a
+72.1,Stavely,0,9.36p,9.00a
+78.1,Pulteney,0,f9.46p,f8.47a
+81.9,Claresholm,0,9.56p,8.40a
+88.3,Woodhouse,0,f10.05p,f8.24a
+93.4,Granum,0,10.16p,8.15a
+105.1,Mekastoe,0,f10.34p,f7.52a
+108.6,Macleod,1,ar 10.45p / lv 11.00p,ar 7.20a / lv 7.45a
+117.6,Pearce,0,,7.05a
+124.7,Monarch,0,f11.31p,6.55a
+132.3,Kipp,1,,6.44a
+133.9,Coalhurst,1,11.44p,6.41a
+140.2,Lethbridge,1,ar 11.55p,lv 6.30a

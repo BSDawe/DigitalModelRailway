@@ -1,0 +1,34 @@
+# Canadian Pacific, Table 111, Moose Jaw - Vanguard - Swift Current: Moose Jaw - Wymark - Swift Current. Miles from Moose Jaw as printed.
+# From the Canadian Pacific public timetable of about 1948 (scan cp1948_sk/table111_moosejaw_vanguard_swiftcurrent.png).
+# Times as printed: MOUNTAIN TIME ("Mountain Time" heads the station column). All stations in Saskatchewan.
+# Signs: f = stops on signal; || = meal station (Moose Jaw, Swift Current); M = mixed train; .. = does not stop. (Explanation of signs not on
+# this scan; same signs as the Tables 117-119 page.) "Swift Current 6" refers to Table 6.
+# Wymark is printed "Ar Wymark 115.2" (end of the Moose Jaw block) and "Lv Wymark 115.1" (head of the Wymark - Swift Current block): 115.1 is as
+# printed (a misprint for 115.2, or a printing quirk); one row entered at 115.2. The Meyronne - Vanguard - Wymark block (M405/M406) is in sk_cp_t111b.csv;
+# M405 and M406 run Wymark - Swift Current in the rows here.
+#train col=M495 num=495 dir=down days="Fri" kind=mixed
+#train col=M411 num=411 dir=down days="Tue" kind=mixed
+#train col=M405 num=405 dir=down days="Wed,Sat" kind=mixed from="Meyronne" note="Comes from Meyronne 12.45p - Vanguard - Wymark 4.40p (sk_cp_t111b.csv)."
+#train col=M412 num=412 dir=up days="Mon" kind=mixed
+#train col=M406 num=406 dir=up days="Wed,Sat" kind=mixed to="Meyronne" note="Continues Wymark 6.50a - Vanguard - Meyronne 12.15p (sk_cp_t111b.csv)."
+#train col=M494 num=494 dir=up days="Thu" kind=mixed
+mile,station,principal,prov,tz,M495,M411,M405,M412,M406,M494
+0.0,Moose Jaw,1,SK,M,lv 10.30a,lv 8.25a,,ar 3.45p,,ar 1.45p
+10.0,Archive,0,SK,M,11.10a,9.05a,,3.00p,,1.10p
+17.5,Abound,0,SK,M,f11.35a,f9.30a,,f2.30p,,f12.50p
+23.6,Lillestrom,0,SK,M,f11.55a,f9.50a,,f2.05p,,f12.35p
+31.6,Old Wives,0,SK,M,12.20p,10.15a,,1.35p,,12.10p
+37.9,Lake Johnston,0,SK,M,f12.40p,f10.35a,,f1.05p,,f11.50a
+43.8,Courval,0,SK,M,1.05p,11.00a,,12.40p,,11.35a
+50.0,Coderre,0,SK,M,1.40p,11.35a,,12.05p,,11.15a
+55.3,Trewdale,0,SK,M,2.00p,11.55a,,11.25a,,10.50a
+60.8,Shamrock,0,SK,M,2.30p,12.25p,,11.05a,,10.35a
+69.3,Kelstern,0,SK,M,3.10p,1.05p,,10.30a,,10.00a
+76.2,Vogel,0,SK,M,3.35p,1.30p,,10.05a,,9.35a
+83.9,Dendron,0,SK,M,4.05p,2.00p,,9.35a,,9.05a
+90.1,Hallonquist,0,SK,M,4.30p,2.25p,,9.15a,,8.45a
+95.9,Braddock,0,SK,M,4.55p,2.50p,,8.55a,,8.25a
+105.7,McMahon,0,SK,M,5.25p,3.20p,,8.25a,,7.55a
+115.2,Wymark,1,SK,M,ar 6.00p / lv 6.00p,ar 4.00p / lv 4.00p,lv 4.40p,ar 7.50a / lv 7.50a,ar 6.50a,ar 7.20a / lv 7.20a
+122.3,Dunelm,0,SK,M,6.25p,4.25p,5.05p,7.21a,6.30a,6.51a
+131.0,Swift Current,1,SK,M,ar 7.00p,ar 5.00p,ar 5.40p,lv 7.00a,lv 6.00a,lv 6.30a

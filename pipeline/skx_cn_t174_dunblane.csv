@@ -1,0 +1,6 @@
+# Derived from sk_cn_t174.csv: the Central Butte - Dunblane branch of CN Table 174 (Mixed 389 / 390), with the mileage continued from North Regina as printed.
+#train col=M389 num=389 dir=down days="Fri" kind=mixed note="Central Butte 4.00 p.m. marked e: Friday only (key for CN Tables 171-179C, Brendan 12 Oct)."
+#train col=M390 num=390 dir=up days="Sat" kind=mixed note="Dunblane 10.00 a.m. marked k (Saturday only)."
+mile,station,principal,prov,tz,M389,M390
+94.7,Central Butte,1,SK,M,lv 4.00p,ar 11.45a
+132.9,Dunblane,1,SK,M,ar 6.00p,lv 10.00a

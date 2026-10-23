@@ -1,0 +1,28 @@
+# Joined through train (cn63), sk_join.py: skcn168:No63, skcn192b:No63; up skcn192b:No64, skcn168:No64
+# Rows and times as in the section files (see them for the scans, signs and doubts). Miles: counted along the run from the first station.
+#train col=D num=63 dir=down days="Mon,Wed,Fri" kind=passenger note="Through train: No. 63 Winnipeg - Canora; No. 63 Canora - Flin Flon. Winnipeg 12.40 p.m. marked a (Mon Wed Fri); via North Elie; Canora 10.45 p.m., then by Hudson Bay Jn. to Flin Flon (sk_cn_t192b.csv)."
+#train col=U num=64 dir=up days="Mon,Wed,Fri" kind=passenger note="Through train: No. 64 Flin Flon - Canora; No. 64 Canora - Winnipeg. From Flin Flon (3.10 p.m., a) and Sherridon (sk_cn_t192c.csv), combined at Cranberry Portage; Hudson Bay Jn. a11.50 p.m.; Reserve and Canora marked b (next morning); to Winnipeg by Dauphin (see Table 168)."
+mile,station,principal,prov,tz,D,U
+0.0,Winnipeg,1,MB,C,lv 12.40p,ar 1.30p
+55.0,Portage la Prairie,1,MB,C,2.05p,12.00p
+91.9,Gladstone,1,MB,C,3.10p,10.53a
+139.4,McCreary,0,MB,C,4.47p,9.26a
+163.6,Ochre River,1,MB,C,5.29p,8.41a
+177.2,Dauphin,1,MB,C,ar 6.00p / lv 6.30p,ar 7.45a / lv 8.15a
+197.2,Gilbert Plains,0,MB,C,7.09p,7.11a
+206.7,Grandview,1,MB,C,7.30p,6.56a
+239.8,Roblin,0,MB,C,8.35p,5.46a
+256.7,Togo,0,SK,C,f9.04p,f5.10a
+278.1,Kamsack,1,SK,C,ar 9.45p / lv 10.00p,ar 4.10a / lv 4.30a
+302.1,Canora,1,SK,C,ar 10.45p / lv 11.00p,ar 3.10a / lv 3.25a
+324.2,Sturgis,1,SK,C,ar 11.58p / lv 11.58p,2.26a
+365.3,Reserve,1,SK,C,1.40a,12.55a
+395.9,Hudson Bay Jn.,1,SK,C,ar 2.40a / lv 3.20a,ar 11.00p / lv 11.50p
+484.2,The Pas,1,MB,C,ar 6.30a / lv 7.00a,ar 6.45p / lv 7.30p
+501.9,Root Lake,0,MB,C,f7.39a,f6.02p
+510.6,Wanless,0,MB,C,7.54a,f5.46p
+518.7,Atik,0,MB,C,f8.12a,f5.30p
+529.4,Simonhouse,0,MB,C,f8.32a,f5.08p
+539.5,Cranberry Portage,1,MB,C,ar 8.50a / lv 9.00a,ar 4.41p / lv 4.50p
+554.4,Athapap,0,MB,C,f9.35a,4.10p
+575.5,Flin Flon,1,MB,C,ar 10.40a,lv 3.10p

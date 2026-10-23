@@ -1,0 +1,41 @@
+# Canadian Pacific, Table 131, North Battleford - Meadow Lake.
+# From the Canadian Pacific public timetable of about 1948 (scan cp1948_sk/table131_northbattleford_meadowlake.png, printed sideways).
+# Times as printed: MOUNTAIN TIME ("Mountain Time" heads the station column). Miles from No. Battleford as printed. All stations in Saskatchewan.
+# Signs (partly explained at the foot of this page, rest cut off): f = stops on signal; || = meal station; M = mixed train; cross sign after
+# No. Battleford = C.P. Air Lines connection. References: No. Battleford 130; Leoville 116; Meadow Lake 116.
+# The trains run into Leoville and back out: printed "Ar Panton 84.6", "Ar Leoville 116 88.7", "Lv Leoville 116 88.7", "Lv Panton 92.8". Entered as
+# Panton (84.6), Leoville (one row, ar / lv), Panton (92.8): miles therefore not in order there, as printed.
+# Column heads: "M457 M459 Wed." (M457 No. Battleford - Leoville, M459 Leoville - Meadow Lake) and "M456 M454 Tue." (M454 Meadow Lake - Leoville,
+# M456 Leoville - No. Battleford). Entered as four trains. Leoville - Meadow Lake times of M459 and M454 agree with Table 116 (sk_cp_t116f.csv), a duplicate.
+#train col=M457 num=457 dir=down days="Wed" kind=mixed note="No. Battleford to Leoville; continues as M459 to Meadow Lake."
+#train col=M459 num=459 dir=down days="Wed" kind=mixed note="Leoville to Meadow Lake (from M457); also in Table 116."
+#train col=M454 num=454 dir=up days="Tue" kind=mixed note="Meadow Lake to Leoville; continues as M456 to No. Battleford. Also in Table 116."
+#train col=M456 num=456 dir=up days="Tue" kind=mixed note="Leoville to No. Battleford (from M454)."
+mile,station,principal,prov,tz,M457,M459,M454,M456
+0.0,No. Battleford,1,SK,M,lv 9.00a,,,ar 6.00p
+7.8,Hamlin,0,SK,M,f9.25a,,,f5.33p
+14.5,Scentgrass,0,SK,M,f9.50a,,,f5.05p
+18.9,Iffley,0,SK,M,f10.10a,,,f4.35p
+23.3,Pierard,0,SK,M,10.25a,,,4.13p
+25.5,Hatherleigh,0,SK,M,f10.35a,,,f4.05p
+34.4,Sandwith,0,SK,M,f10.58a,,,f3.30p
+43.4,Glenbush,0,SK,M,11.25a,,,3.00p
+48.1,Medstead,0,SK,M,12.05p,,,2.45p
+53.8,Cater,0,SK,M,12.30p,,,2.25p
+60.5,Birch Lake,0,SK,M,12.50p,,,1.55p
+72.2,Junor,0,SK,M,1.30p,,,12.45p
+79.8,Ranger,0,SK,M,2.10p,,,12.15p
+84.6,Panton,0,SK,M,2.35p,,,lv 11.45a
+88.7,Leoville,1,SK,M,ar 3.00p,lv 3.30p,ar 10.55a,lv 11.25a
+92.8,Panton,0,SK,M,,3.40p,10.35a,
+95.6,Penn,0,SK,M,,3.50p,10.20a,
+100.9,Chitek Lake,0,SK,M,,4.10p,10.00a,
+104.0,Chitek,0,SK,M,,4.25p,9.50a,
+108.4,Mollison,0,SK,M,,f4.40p,f9.35a,
+117.6,Meetoos,0,SK,M,,5.10p,9.10a,
+123.6,Neeb,0,SK,M,,5.35p,8.50a,
+127.7,Sergent,0,SK,M,,f5.50p,f8.30a,
+131.8,Prendergast,0,SK,M,,6.05p,8.15a,
+137.1,Matchee,0,SK,M,,f6.25p,f8.00a,
+142.5,Eckner,0,SK,M,,f6.40p,f7.45a,
+147.8,Meadow Lake,1,SK,M,,ar 6.55p,lv 7.30a,

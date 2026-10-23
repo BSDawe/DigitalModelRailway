@@ -1,0 +1,50 @@
+# Esquimalt & Nanaimo Railway (Canadian Pacific), Table 164. Trains 1-4 daily except Sunday. f = flag stop.
+# line,station,mile,No1,No2,No3,No4
+main,Victoria,0.0,lv 9.10a,ar 4.30p,,
+main,Russells,0.8,9.13a,4.25p,,
+main,Admirals Road,2.5,f9.18a,f4.20p,,
+main,Esquimalt,3.7,f9.20a,f4.18p,,
+main,Langford,7.9,9.30a,f4.08p,,
+main,Goldstream,10.7,f9.37a,f4.01p,,
+main,Malahat,20.0,f9.56a,f3.36p,,
+main,Cliffside,25.0,f10.07a,f3.22p,,
+main,Strathcona Lodge,26.2,f10.09a,f3.20p,,
+main,Shawnigan,27.8,10.18a,3.14p,,
+main,Cobble Hill,31.2,10.27a,3.02p,,
+main,Hillbank,34.1,f10.33a,f2.56p,,
+main,Cowichan,35.5,10.36a,2.52p,,
+main,Koksilah,38.1,f10.44a,f2.43p,,
+main,Duncan,39.7,11.02a,2.38p,,
+main,Somenos,42.6,f11.09a,f2.27p,,
+main,Stratford's Crossing,44.4,f11.14a,f2.22p,,
+main,Westholme,46.8,11.19a,2.16p,,
+main,Chemainus,51.2,11.34a,2.05p,,
+main,Saltair,54.5,f11.42a,f1.54p,,
+main,Ladysmith,58.4,11.56a,1.45p,,
+main,Cassidy,64.7,f12.11p,f1.28p,,
+main,South Wellington,67.2,12.17p,1.22p,,
+main,Stark's,69.2,f12.32p,f1.08p,,
+main,Nanaimo,72.5,ar 12.45p / lv 1.15p,ar 12.40p / lv 1.00p,,
+main,Northfield,75.0,f1.20p,f12.33p,,
+main,Wellington,77.3,1.30p,12.24p,,
+main,Nanoose,86.8,1.54p,12.00p,,
+main,Craig,92.0,f2.07p,f11.48a,,
+main,Parksville,95.2,ar 2.15p / lv 2.25p,ar 11.30a / lv 11.40a,,
+main,Qualicum Beach,101.8,2.44p,11.14a,,
+main,Dashwood,105.0,f2.53p,f11.07a,,
+main,Dunsmuir,110.2,f3.03p,f10.56a,,
+main,Bowser,114.5,3.16p,10.42a,,
+main,Mud Bay,121.0,f3.32p,f10.27a,,
+main,Fanny Bay,124.7,3.40p,10.17a,,
+main,Buckley Bay,126.1,3.43p,f10.14a,,
+main,Union Bay,130.2,3.54p,10.05a,,
+main,Royston,136.0,4.10p,9.50a,,
+main,Courtenay,139.7,ar 4.20p,lv 9.40a,,
+alberni,Parksville,0.0,,,lv 2.26p,ar 11.20a
+alberni,Coombs,4.3,,,2.38p,11.07a
+alberni,Hilliers,7.5,,,2.46p,10.58a
+alberni,Cameron Lake,12.7,,,3.02p,10.43a
+alberni,Arrowsmith,21.9,,,f3.31p,f10.11a
+alberni,Bainbridge,31.7,,,4.01p,9.40a
+alberni,Alberni,36.7,,,4.18p,9.26a
+alberni,Port Alberni,38.8,,,ar 4.25p,lv 9.20a

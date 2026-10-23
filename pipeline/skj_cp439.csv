@@ -1,0 +1,17 @@
+# Joined through train (cp439), sk_join.py: skcp125a:M439, skcp125b:M439; up skcp125b:M440, skcp125a:M440
+# Rows and times as in the section files (see them for the scans, signs and doubts). Miles: counted along the run from the first station.
+#train col=D num=439 dir=down days="Tue,Fri" kind=mixed note="Through train: No. 439 Assiniboia - Maxstone; No. 439 Maxstone - Mankota. Assiniboia to Maxstone here; continues Maxstone 2.35p - Mankota 7.25p (sk_cp_t125b.csv)."
+#train col=U num=440 dir=up days="Wed,Sat" kind=mixed note="Through train: No. 440 Mankota - Maxstone; No. 440 Maxstone - Assiniboia. Continues Maxstone f10.45a - Assiniboia 11.30a (sk_cp_t125a.csv). Maxstone printed f10.45 (flag) although in capitals."
+mile,station,principal,prov,tz,D,U
+0.0,Assiniboia,1,SK,M,lv 2.00p,ar 11.30a
+8.4,Bexhill,0,SK,M,f2.21p,f11.00a
+12.8,Maxstone,1,SK,M,2.35p,f10.45a
+18.6,Stonehenge,0,SK,M,2.55p,10.25a
+25.7,Lakenheath,0,SK,M,3.20p,9.55a
+33.2,Flintoft,0,SK,M,3.45p,9.25a
+41.7,Wood Mountain,0,SK,M,4.15p,8.45a
+50.2,Fir Mountain,0,SK,M,4.55p,8.10a
+58.3,Glentworth,0,SK,M,5.35p,7.35a
+66.5,McCord,0,SK,M,6.35p,7.00a
+72.3,Ferland,0,SK,M,7.05p,6.25a
+78.3,Mankota,1,SK,M,ar 7.25p,lv 6.00a

@@ -1,0 +1,9 @@
+# Canadian National, Table 162, Peebles - Handsworth. Official Guide, April 25, 1948 (scan cn1948_mb/t156_165.png). MOUNTAIN TIME (as Table 171 at Peebles).
+# The table prints only the stations (Peebles 0, Handsworth 22.3) and "Freight with coach operates Tuesday in each direction, carries passengers."
+# NO TIMES PRINTED: the times here are a GUESS (Claude, agreed by Brendan 21 Oct 2026): a day turn from Peebles after No. 5 (westbound, 5.41 a.m.),
+#   back in the afternoon, so its passengers can take No. 6 (eastbound, 10.10 p.m.); about 11 mph, three hours at Handsworth.
+#train col=M1 num="" dir=down days="Tue" kind=mixed note="Freight with coach, Tuesdays (no number printed). TIMES ARE A GUESS: the table gives none. Out from Peebles after No. 5."
+#train col=M2 num="" dir=up days="Tue" kind=mixed note="Freight with coach, Tuesdays (no number printed). TIMES ARE A GUESS: the table gives none. Back at Peebles for No. 6 in the evening."
+mile,station,principal,prov,tz,M1,M2
+0.0,Peebles,1,SK,M,lv 8.00a,ar 3.00p
+22.3,Handsworth,1,SK,M,ar 10.00a,lv 1.00p

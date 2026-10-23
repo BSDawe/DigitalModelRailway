@@ -1,0 +1,26 @@
+# Canadian Pacific, Table 125, Assiniboia - Mankota - Big Beaver - Killdeer: Assiniboia - Maxstone - Big Beaver.
+# From the Canadian Pacific public timetable of about 1948 (scan cp1948_sk/tables123_125_weyburn_assiniboia_killdeer.png, printed sideways).
+# Times as printed: MOUNTAIN TIME ("Mountain Time" heads the station column). All stations in Saskatchewan.
+# Signs: f = stops on signal; || = meal station (Assiniboia); M = mixed train; .. = does not stop. "Assiniboia 120" refers to Table 120.
+# The table prints Assiniboia - Bexhill - Maxstone (miles 0.0 - 12.8) for M439, M432, M431, M440, then Maxstone - Mankota (miles from Maxstone,
+# sk_cp_t125b.csv) and Maxstone - Big Beaver (miles from Assiniboia, 12.8 - 80.9), then Assiniboia - Killdeer (sk_cp_t125c.csv).
+# Maxstone is printed twice for 432/431 (Ar / Lv): one row. M440 has f10.45 at both Maxstone rows (in capitals but printed f).
+#train col=M432 num=432 dir=down days="Mon,Thu" kind=mixed
+#train col=M439 num=439 dir=down days="Tue,Fri" kind=mixed to="Mankota" note="Assiniboia to Maxstone here; continues Maxstone 2.35p - Mankota 7.25p (sk_cp_t125b.csv)."
+#train col=M431 num=431 dir=up days="Tue,Fri" kind=mixed
+#train col=M440 num=440 dir=up days="Wed,Sat" kind=mixed from="Mankota" note="Comes from Mankota 6.00a - Maxstone f10.45a (sk_cp_t125b.csv); Maxstone to Assiniboia here."
+mile,station,principal,prov,tz,M432,M439,M431,M440
+0.0,Assiniboia,1,SK,M,lv 2.00p,lv 2.00p,ar 11.30a,ar 11.30a
+8.4,Bexhill,0,SK,M,f2.21p,f2.21p,f11.00a,f11.00a
+12.8,Maxstone,1,SK,M,ar 2.35p / lv 2.35p,ar 2.35p,ar 10.45a / lv 10.45a,lv f10.45a
+19.0,Pickthall,0,SK,M,f2.50p,,f10.20a,
+24.0,Scout Lake,0,SK,M,3.10p,,9.55a,
+30.6,Lisieux,0,SK,M,3.30p,,9.20a,
+38.2,Rockglen,0,SK,M,4.10p,,8.45a,
+44.9,Constance,0,SK,M,4.45p,,8.05a,
+48.8,Fife Lake,0,SK,M,5.15p,,7.50a,
+55.0,Hart,0,SK,M,5.35p,,7.10a,
+61.1,Coronach,0,SK,M,6.15p,,6.45a,
+68.8,East Poplar,0,SK,M,6.45p,,6.10a,
+75.0,Buffalo Gap,0,SK,M,7.15p,,5.50a,
+80.9,Big Beaver,1,SK,M,ar 7.35p,,lv 5.30a,

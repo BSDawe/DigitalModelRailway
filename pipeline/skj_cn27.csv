@@ -1,0 +1,26 @@
+# Joined through train (cn27), sk_join.py: skcn199a:No27F, skcn199c:No27F; up skcn199c:M28S, skcn199a:M28S
+# Rows and times as in the section files (see them for the scans, signs and doubts). Miles: counted along the run from the first station.
+#train col=D num=27 dir=down days="Fri" kind=passenger note="Through train: No. 27 Saskatoon - Eston; No. 27 Eston - Whitebear. Friday run of column 27-M302: Saskatoon - Eston (a), then Eston u4.50 p.m. - Whitebear u6.35 p.m. (u = Friday), sk_cn_t199c.csv."
+#train col=U num=28 dir=up days="Sat" kind=mixed note="Through train: No. 28 Whitebear - Eston; No. 28 Eston - Saskatoon. Whitebear 5.45 a.m. and Eston 7.20 a.m. marked k (Saturday only); on to Saskatoon (sk_cn_t199a.csv)."
+mile,station,principal,prov,tz,D,U
+0.0,Saskatoon,1,SK,M,lv 9.35a,ar 2.20p
+7.7,Hawker,0,SK,M,f10.00a,f1.56p
+17.4,Vanscoy,0,SK,M,10.20a,1.40p
+26.1,Delisle,1,SK,M,10.40a,1.25p
+35.5,Donavon,0,SK,M,11.03a,1.01p
+42.8,Swanson,0,SK,M,11.19a,12.46p
+49.4,Ardath,0,SK,M,11.32a,12.33p
+56.0,Conquest,0,SK,M,11.46a,12.20p
+72.3,MacRorie,0,SK,M,12.45p,11.40a
+77.2,Tichfield,1,SK,M,ar 12.57p / lv 1.07p,ar 11.00a / lv 11.05a
+98.9,Dinsmore,0,SK,M,1.52p,10.14a
+107.9,Wiseton,0,SK,M,2.11p,9.50a
+115.3,Forgan,0,SK,M,2.25p,9.35a
+120.8,Hughton,0,SK,M,2.42p,9.22a
+126.4,Elrose,1,SK,M,2.57p,9.05a
+133.8,Wartime,0,SK,M,3.17p,8.51a
+146.5,Plato,0,SK,M,3.46p,8.20a
+153.4,Richlea,0,SK,M,4.03p,8.03a
+160.9,Eston,1,SK,M,ar 4.20p / lv 4.50p,ar 7.20a / lv 7.45a
+183.1,Lacadena,0,SK,M,6.05p,6.10a
+195.2,Whitebear,1,SK,M,ar 6.35p,lv 5.45a

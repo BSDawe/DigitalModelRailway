@@ -1,0 +1,25 @@
+S.S. NENANA, Alaska Railroad river service, Nenana - Marshall: ESTIMATED schedule (Claude, 21 Oct 2026, from Brendan's facts). NOT BUILT:
+waiting for river course (Tanana and Yukon water / trace), which will also give the stop mileages.
+Facts (Brendan): 14-day cycle; Nenana - Marshall 858 miles; 17 mph downriver, 7 mph upriver (whether moving or overall speeds is unknown);
+leave Nenana Tuesday afternoon after the southbound train from Fairbanks (ak_arr_fairbanks.csv: Nenana 10.40 a.m. Tue/Thu/Sat), with time to load.
+Stops: Nenana, Minto, Tanana, Ruby, Galena, Koyukuk, Nulato, Kaltag, Anvik, Holy Cross, Russian Mission, Marshall.
+Times: 150th meridian time, as the ARR file.
+PROPOSAL (speeds taken as moving speeds; 2 h at each of the 10 intermediate landings):
+  Week 1  Tue 4.00 p.m.  lv Nenana          (5 h 20 min after the train)
+          Fri 2.30 p.m.  ar Marshall        (50.5 h running + 20 h at landings = 70.5 h)
+          Sat 8.00 a.m.  lv Marshall        (17.5 h turnaround)
+  Week 2  Fri 6.30 a.m.  ar Nenana          (122.6 h running + 20 h at landings = 142.6 h); connects the Fri northbound, Nenana 7.20 p.m. - Fairbanks 9.30 p.m.
+          Fri - Tue      at Nenana          (next sailing Tue of week 3)
+ALTERNATIVE if the speeds are overall averages: Marshall Thu 6.30 p.m. (50.5 h); back at Nenana 122.6 h after leaving Marshall.
+Intermediate times: by mileage once the river course is in.
+DECIDED (Brendan, 20 Oct): the model week is the sailing week: leaves Nenana Tue 6 July 1948 4.00 p.m.; Marshall Fri 9 July; up from Sat 10 July (still upriver at the end of the week, Sun 11). Speeds: running speeds assumed (not yet confirmed).
+
+S.S. AGULLEIT, Northern Commercial Co., Marshall - St. Michael, connecting with the Nenana (Brendan, 20 Oct). ESTIMATED (Claude), NOT BUILT.
+Calls (Brendan's order): Marshall, St. Mary's, Pilot Station, Kotlik, Sheldon Point, Akulurak, Alaskanuk, Kwiguk, St. Michael.
+Distance and speed not given: assumed about 230 mi Marshall - St. Michael (lower Yukon, the delta channels and Norton Sound), about 12 mph down
+(slower on the sea leg) and 7 mph up, 1.5 h at each landing. Model week (synchronized with the Nenana at Marshall Fri 9 July):
+  Wed 7 July 3.00 p.m.  lv St. Michael (upriver)
+  Fri 9 July 10.00 a.m. ar Marshall    (in before the Nenana, 2.30 p.m., so her freight is aboard when the Nenana leaves Sat 8.00 a.m.)
+  Fri 9 July 8.00 p.m.  lv Marshall    (5.5 h after the Nenana's arrival)
+  Sun 11 July 2.00 a.m. ar St. Michael
+Fortnightly (Brendan, 20 Oct). Open: call order (Pilot Station is above St. Mary's; Kotlik is on the north mouth, Sheldon Point on the south one), weekly or fortnightly, distances.

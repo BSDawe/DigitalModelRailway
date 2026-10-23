@@ -1,0 +1,27 @@
+# Canadian Pacific, Table 129, Wilkie - Lloydminster.
+# From the Canadian Pacific public timetable of about 1948 (scan cp1948_sk/tables129_130_wilkie_lloydminster_northbattleford.png, printed sideways;
+# page headed "TABLES 129 to 137").
+# Times as printed: MOUNTAIN TIME ("Mountain Time" heads the station column). Miles from Wilkie as printed.
+# Signs: f = stops on signal; M = mixed train. References: Wilkie 92; Cutknife 130 (printed "Ar Cutknife 130 Lv" with one time); Lloydminster 121, 128.
+# prov: all Saskatchewan except Lloydminster (border town, no "Sask"/"Alta" printed): SK?.
+# Slow running as printed: M436 Neilburg 12.00 (noon) - Marsden 11.00a - Unwin 10.00a (an hour each, mixed train).
+#train col=M435 num=435 dir=down days="Mon,Wed,Fri" kind=mixed
+#train col=M436 num=436 dir=up days="Tue,Thu,Sat" kind=mixed
+mile,station,principal,prov,tz,M435,M436
+0.0,Wilkie,1,SK,M,lv 9.40a,ar 4.15p
+8.7,Thackeray,0,SK,M,f10.05a,f3.35p
+14.7,Cloan,0,SK,M,10.30a,3.00p
+20.5,Rockhaven,0,SK,M,11.00a,2.35p
+28.7,Cutknife,1,SK,M,11.25a,2.05p
+34.0,Wilbert,0,SK,M,f11.45a,f1.40p
+40.3,Baldwinton,0,SK,M,12.15p,1.15p
+47.4,Ballinora,0,SK,M,f12.40p,f12.45p
+51.8,Freemont,0,SK,M,12.55p,12.25p
+58.0,Neilburg,0,SK,M,1.30p,12.00p
+66.0,Marsden,0,SK,M,2.05p,11.00a
+73.9,Unwin,0,SK,M,2.45p,10.00a
+82.3,Buzzard,0,SK,M,f3.25p,9.15a
+85.8,Lone Rock,0,SK,M,3.35p,9.00a
+92.0,Furness,0,SK,M,4.25p,8.30a
+99.1,Southminster,0,SK,M,f4.45p,f8.15a
+105.2,Lloydminster,1,SK?,M,ar 5.05p,lv 8.00a

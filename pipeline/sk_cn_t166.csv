@@ -1,0 +1,18 @@
+# Canadian National, Table 166, Winnipeg - Saskatoon - Edmonton - Jasper - Prince George - Smithers - Prince Rupert. Official Guide, April 25, 1948
+#   (scan cn1948_sk/table166_winnipeg_saskatoon_edmonton_princerupert.png). ENTERED HERE: only the summary lines Winnipeg - Saskatoon - Edmonton
+#   (Nos. 1, 2, 3, 4) as printed; Edmonton and west is in the Alberta/B.C. files. The table prints only Winnipeg, Saskatoon and Edmonton for these trains
+#   (they are the main-line Continental Limited trains, given in full in Table 75; the Alberta part of Table 75 is in ab_cn_t075.csv).
+# Times as printed: Winnipeg CENTRAL TIME ("Cent. time"), Saskatoon and Edmonton MOUNTAIN TIME ("Mountain time" printed below Winnipeg).
+#   Times with A M / P M printed beside each figure. Saskatoon is printed once ("lv. Saskatoon ar.").
+# Key to signs (printed sideways on the left of this page): "* Daily; + daily, except Sunday; ++ daily, except Saturday; para. daily, except Monday;
+#   Section Sunday only; a Monday, Wednesday and Friday; b Tuesday, Thursday and Saturday; d Wednesday, Friday and Sunday; f flag stop; k Saturday only.
+#   (circle-dot) Via Neepawa. (psi) Via North Elie. (triangle) Restaurant or lunch counter. + Coupon stations; Telegraph stations. M - Mixed train."
+#   Only * is used on these rows. Miles from Winnipeg as printed.
+#train col=No1 num=1 dir=down days="daily" kind=passenger to="Vancouver" note="Winnipeg 11.20 a.m. marked * (daily). Continues Edmonton (lv 8.55 a.m.) - Jasper (ar 3.20 p.m.) and on to Vancouver (Alberta/B.C. files)."
+#train col=No3 num=3 dir=down days="daily" kind=passenger to="Vancouver" note="Winnipeg 10.15 a.m. marked * (daily). Continues Edmonton (lv 7.20 a.m.) - Jasper (ar 1.15 p.m.) and on to Vancouver (Alberta/B.C. files)."
+#train col=No2 num=2 dir=up days="daily" kind=passenger from="Vancouver" note="Winnipeg ar 6.00 p.m. marked * (daily). From Vancouver and Jasper (lv 2.25 p.m.), Edmonton lv 8.45 p.m."
+#train col=No4 num=4 dir=up days="daily" kind=passenger from="Vancouver" note="Winnipeg ar 6.50 p.m. marked * (daily). From Vancouver and Jasper (lv 3.20 p.m.), Edmonton lv 9.45 p.m."
+mile,station,principal,prov,tz,No1,No3,No2,No4
+0.0,Winnipeg,1,MB,C,lv 11.20a,lv 10.15a,ar 6.00p,ar 6.50p
+470.4,Saskatoon,1,SK,M,11.15p,9.55p,4.45a,5.45a
+801.5,Edmonton,1,AB,M,ar 8.15a,ar 6.40a,lv 8.45p,lv 9.45p
