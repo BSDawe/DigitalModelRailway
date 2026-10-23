@@ -7,7 +7,7 @@ tp = open(os.path.join(HERE, 'page_template.html')).read()
 # water (water_wa.json) and the Gulf of Alaska (water_ak.json); and Alberta (water_alberta.json)
 _cut = os.path.join(HERE, 'water_bc_cut.json')
 water = json.load(open(_cut if os.path.exists(_cut) else os.path.join(HERE, 'water_embedded.json')))
-for _f in (['water_wa.json', 'water_ak.json', 'water_fill.json', 'water_north.json', 'water_sk.json'] if os.path.exists(_cut) else []) + ['water_alberta.json']:
+for _f in (['water_wa.json', 'water_ak.json', 'water_fill.json', 'water_north.json', 'water_sk.json', 'water_east.json'] if os.path.exists(_cut) else []) + ['water_alberta.json']:
     if os.path.exists(os.path.join(HERE, _f)): water += json.load(open(os.path.join(HERE, _f)))
 water = json.dumps(water, separators=(',', ':'))
 html = tp.replace('__DATA__', open(os.path.join(HERE, 'viz_data.json')).read()).replace('__WATER__', water)

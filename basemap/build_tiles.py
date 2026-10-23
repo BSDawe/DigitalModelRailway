@@ -28,9 +28,9 @@ from shapely import set_precision
 HERE = os.path.dirname(os.path.abspath(__file__)); ROOT = os.path.dirname(HERE); PIPE = os.path.join(ROOT, 'pipeline')
 OUT = os.path.join(HERE, 'tiles'); SRC = os.path.join(HERE, 'sources')
 PROJ = dict(kind='lcc-sphere', R=6371008, lat1=49, lat2=61, lon0=-122.5, origin=[-122.5, 49.12])   # must match P() in page_template.html
-EXTENT = (-170.0, 40.0, -80.0, 72.0)                           # lon/lat box the borders are cut to
+EXTENT = (-170.0, 38.0, -50.0, 72.0)                           # lon/lat box the borders are cut to
 FINEST = 64000                                                  # the last level's tiles are at most this many metres across
-WATER_FILES = ['water_bc_cut.json', 'water_wa.json', 'water_ak.json', 'water_fill.json', 'water_north.json', 'water_sk.json', 'water_alberta.json']
+WATER_FILES = ['water_bc_cut.json', 'water_wa.json', 'water_ak.json', 'water_fill.json', 'water_north.json', 'water_sk.json', 'water_alberta.json', 'water_east.json']
 
 def lcc():
     r = math.pi / 180; R = PROJ['R']; p1, p2, l0 = PROJ['lat1'] * r, PROJ['lat2'] * r, PROJ['lon0'] * r

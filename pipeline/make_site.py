@@ -56,7 +56,7 @@ def owners():
 def water():
     _cut = 'water_bc_cut.json'
     w = json.load(open(_cut if os.path.exists(_cut) else 'water_embedded.json'))
-    for f in (['water_wa.json', 'water_ak.json', 'water_fill.json', 'water_north.json', 'water_sk.json'] if os.path.exists(_cut) else []) + ['water_alberta.json']:
+    for f in (['water_wa.json', 'water_ak.json', 'water_fill.json', 'water_north.json', 'water_sk.json', 'water_east.json'] if os.path.exists(_cut) else []) + ['water_alberta.json']:
         if os.path.exists(f): w += json.load(open(f))
     return w
 

@@ -1358,3 +1358,7 @@ Stations of different railways within 250 m (70 pairs; script: same check over v
 - Traces (21 Oct): traces/saskatchewan/verlo_gap.geojson (CP, from verlo_gap.gpkg) and peebles_handsworth.geojson (CN). skcp140 55.7/54.9 and skcn162 23.0/22.3, all on track.
 - traffic_density.py -> traffic_density.gpkg (layer sections): trains/week per track section, per operator + track owner; rail only, trips wholly in the US left out. Built from the 22 Oct unpublished build. BCER Central Park / Burnaby Lake (pattern services) not counted.
 - Published as v62, 23 Oct 2026 ("Manitoba stations, Peebles, Verlo, Tutshi").
+- (23 Oct 2026) EASTERN WATER for the Ontario expansion (Brendan): places/east_water/eastern_lakes_and_ocean.gpkg (his simplified StatCan
+  selection, EPSG:3347: Great Lakes, Lake of the Woods, Rainy Lake, larger Ontario lakes, the Atlantic side). water_east.py -> water_east.json
+  (simplify 100 m), in make_page.py, make_site.py and basemap/build_tiles.py (WATER_FILES). Drawn only: not in water_extra.pkl, so no steamer
+  lanes on it yet. Basemap border extent widened to 50 W, 38 N (Natural Earth cut copies regenerated). STATE.md stays public (Brendan).
