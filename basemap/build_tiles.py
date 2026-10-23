@@ -125,7 +125,12 @@ def main():
     for z in range(zmax + 1):
         s = side / 2 ** z; tol = 0 if z == zmax else s / 1024; index['tol'].append(tol)
         wz = water.simplify(tol, preserve_topology=True) if tol else water
-        wparts = [p for p in polys(wz) if p.area > (tol * tol * 4 if tol else 0)]
+        small = (6 * tol) ** 2                                      # lakes and islands under about 6 x 6 pixels are left out at this level
+        wparts = []
+        for p in polys(wz):
+            if tol and p.area < small: continue
+            if tol: p = Polygon(p.exterior, [h for h in p.interiors if Polygon(h).area >= small])
+            wparts.append(p)
         bz = [(k, ln.simplify(tol) if tol else ln) for k, ln in B]
         wtree = STRtree(wparts); btree = STRtree([ln for _, ln in bz])
         n = int(2 ** z); names = []; ov = max(2.0, 2 * tol)
