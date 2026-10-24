@@ -1446,3 +1446,12 @@ Stations of different railways within 250 m (70 pairs; script: same check over v
   Beaver Lake = "Bear Lake" (Brendan: probably the same; Beaver Lake ends up placed by mileage). Worthington and Turbine (CP 70, 70b) pinned to the Soo
   branch: the collection's points snap to the parallel Algoma Eastern line.
 - No straight estimates left in Ontario/Quebec. Checks: check_gtfs 1 problem (old: CP-14-SKJCP13 at Minneapolis).
+- TO DO (Brendan, 23 Oct 2026 21:08, small corrections for later; do not build ahead of him):
+  * CN trains that do not call at Pembroke (Nos. 1 / 2) should run straight through on the through tracks at Pembroke Junction (on_cn_t075b).
+  * Ottawa is one Union Station; CP trains run through it, CN trains back out of it (check the CN routes in and out of Ottawa Union).
+  * Some "janky" uses of junctions in the Ontario/Quebec routings (Brendan has more; not now, keep on the list).
+  * Table 116 (Longlac - Fort William, Nos. 79 / 80): the Toronto section may be a connection with Nos. 3 / 4 at Longlac rather than through cars
+    (Brendan, not certain). Entered with from/to Toronto and the doubt in the notes; real_ends does not link them yet.
+- (23 Oct 2026) CN Table 108 (Cochrane - Kapuskasing - Hearst - Nakina: Nos. 11 / 12, mixed M421 / M422) and Table 116 (Longlac - Port Arthur - Fort William:
+  Nos. 79 / 80) transcribed (on_cn_t108, on_cn_t116); The Northland's Kapuskasing section Nos. 149 / 150 as ONR over the CN (on_onr_t108; ONR graph box
+  widened west to 82.6 W). Port Arthur placed by mileage (the CN Port Arthur point does not fit the printed miles), sharing the CN_PORT_ARTHUR stop.

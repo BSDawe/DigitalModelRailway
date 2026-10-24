@@ -1,0 +1,12 @@
+# Ontario Northland, The Northland's Kapuskasing section over the CN, Cochrane - Kapuskasing (Nos. 149 / 150 of CN Table 108).
+# Key (page of Table 108): * daily; dagger daily except Sunday; f flag stop; Psi Sunday and Thursday; sharp Monday and Friday.
+# Source: Official Guide, April 25, 1948, Table 108, Cochrane - Hearst - Nakina (Brendan, 23 Oct 2026; private scans/on1948/20_cn_t108.png, key 21). EASTERN TIME. Miles as printed.
+# The ONR key says No. 150 comes "from Kapuskasing daily, except Saturday and Sunday"; Table 108 prints 150 daily except Sunday (dagger): entered as Table 108.
+#train col=No149 num=149 dir=down days="ex Sun" kind=passenger from=Toronto name="The Northland" note="The Northland's Kapuskasing section, from Toronto: Cochrane 10.05 a.m. (over the CN) to Kapuskasing 12.15 p.m."
+#train col=No150 num=150 dir=up days="ex Sun" kind=passenger to=Toronto name="The Northland" note="The Northland's Kapuskasing section: Kapuskasing 3.00 p.m. to Cochrane 5.10 p.m., on to Toronto."
+mile,station,principal,prov,tz,No149,No150
+0,Cochrane,1,ON,E,lv 10.05a,ar 5.10p
+30.3,Smooth Rock,0,ON,E,11.00a,4.13p
+49.7,Fauquier,0,ON,E,11.36a,3.36p
+55.8,Moonbeam,0,ON,E,11.48a,3.25p
+69.4,Kapuskasing,1,ON,E,ar 12.15p,lv 3.00p

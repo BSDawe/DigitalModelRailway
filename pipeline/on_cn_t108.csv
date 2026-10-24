@@ -1,0 +1,21 @@
+# Canadian National, Table 108: Cochrane - Kapuskasing - Hearst - Nakina.
+# Key (page of Table 108): * daily; dagger daily except Sunday; f flag stop; Psi Sunday and Thursday; sharp Monday and Friday.
+# Source: Official Guide, April 25, 1948, Table 108, Cochrane - Hearst - Nakina (Brendan, 23 Oct 2026; private scans/on1948/20_cn_t108.png, key 21). EASTERN TIME. Miles as printed.
+# Nos. 149 and 150 (Cochrane - Kapuskasing) are the Ontario Northland's Northland, entered in on_onr_t108.csv.
+#train col=No11 num=11 dir=down days=daily kind=passenger from=Quebec note="From Quebec and Montreal (Table 38) by Senneterre: Cochrane 6.30 p.m. to Hearst 10.30 p.m."
+#train col=M421 num=421 dir=down days="Sun,Thu" kind=mixed note="Mixed, Sundays and Thursdays: Hearst 9.00 a.m. to Nakina 4.50 p.m."
+#train col=No12 num=12 dir=up days=daily kind=passenger to=Quebec note="Hearst 5.50 a.m. to Cochrane 9.50 a.m.; on (Table 38) by Senneterre to Quebec and Montreal."
+#train col=M422 num=422 dir=up days="Mon,Fri" kind=mixed note="Mixed, Mondays and Fridays: Nakina 11.15 a.m. to Hearst 6.15 p.m."
+mile,station,principal,prov,tz,No11,M421,No12,M422
+0,Cochrane,1,ON,E,lv 6.30p,,ar 9.50a,
+30.3,Smooth Rock,0,ON,E,7.25p,,8.53a,
+49.7,Fauquier,0,ON,E,8.01p,,8.16a,
+55.8,Moonbeam,0,ON,E,8.13p,,8.05a,
+69.4,Kapuskasing,1,ON,E,8.40p,,7.40a,
+75.4,Valrita,0,ON,E,8.52p,,7.28a,
+91.3,Opasatika,0,ON,E,9.21p,,6.59a,
+98.8,Lowther,0,ON,E,f9.35p,,f6.45a,
+110.0,Mattice,0,ON,E,9.56p,,6.24a,
+129.1,Hearst,1,ON,E,ar 10.30p,lv 9.00a,lv 5.50a,ar 6.15p
+205.1,Pagwa River,0,ON,E,,f1.02p,,f2.30p
+273.2,Nakina,1,ON,E,,ar 4.50p,,lv 11.15a

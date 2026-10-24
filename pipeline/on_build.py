@@ -18,6 +18,7 @@ LONG = {'on_cp_t004': 'Montreal – Ottawa – North Bay – Sudbury – Fort Wi
         'on_cn_t038h': 'Hervey – La Tuque – Senneterre – Taschereau – Cochrane', 'on_cn_t038n': "Senneterre – Val d'Or – Noranda",
         'on_cn_t038t': 'Taschereau – Noranda', 'on_onr_t001': 'Toronto – North Bay – Porquis – Timmins', 'on_onr_t001c': 'Porquis – Cochrane',
         'on_onr_t018m': 'Cochrane – Moosonee', 'on_onr_t018s': 'Swastika – Kirkland Lake – Rouyn – Noranda',
+        'on_cn_t108': 'Cochrane – Kapuskasing – Hearst – Nakina', 'on_onr_t108': 'Cochrane – Kapuskasing (The Northland, over the CN)', 'on_cn_t116': 'Longlac – Port Arthur – Fort William',
         'on_acr_t001': 'Sault Ste. Marie – Hawk Junction – Hearst', 'on_acr_t001m': 'Hawk Junction – Michipicoten'}
 OVER = {'on_cn_t075b': dict(noplace=['Ottawa (Bank Street)']),
         'on_cp_t058b': dict(places={'Camp Borden (Lower Station)': (-79.891308, 44.269889),      # Brendan, 23 Oct 2026: "about here"

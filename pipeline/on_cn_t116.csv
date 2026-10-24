@@ -1,0 +1,15 @@
+# Canadian National, Table 116: Toronto - Longlac - Port Arthur - Fort William, the Longlac - Fort William section (the Lakehead line of the
+# Canadian Northern). Toronto - Longlac (Toronto 11.00 p.m. / Hornepayne 4.30 p.m. / Longlac 6.56 p.m.; back Longlac 11.15 a.m., UNCERTAIN (Brendan): through cars or only a connection
+# with Nos. 3 / 4; Hornepayne 1.50 p.m., Toronto 7.00 a.m.) runs as Nos. 3 / 4, already on the map. Source: Official Guide, April 25, 1948 (Brendan, 23 Oct 2026; scans/on1948/
+# 22_cn_t116.png, key 23). EASTERN TIME (as printed for Port Arthur and Fort William). Miles from Longlac as printed. Key: * daily; f flag stop.
+#train col=No79 num=79 dir=down days=daily kind=passenger from=Toronto note="From Toronto with No. 3 (through cars or a connection at Longlac: not certain): Longlac 8.10 p.m. to Port Arthur 3.05 a.m. and Fort William 3.35 a.m."
+#train col=No80 num=80 dir=up days=daily kind=passenger to=Toronto note="Fort William 1.45 a.m., Port Arthur 2.15 a.m., to Longlac 9.30 a.m.; on to Toronto with No. 4 (through cars or a connection: not certain)."
+mile,station,principal,prov,tz,No79,No80
+0,Longlac,1,ON,E,lv 8.10p,ar 9.30a
+49.7,Jellicoe,1,ON,E,ar 9.50p / lv 10.00p,ar 7.30a / lv 7.40a
+86.3,Macdiarmid,0,ON,E,11.15p,6.02a
+91.0,Orient Bay,1,ON,E,11.29p,5.51a
+127.6,Nipigon,0,ON,E,12.40a,4.43a
+149.6,Dorion,0,ON,E,1.21a,3.57a
+197.6,Port Arthur,1,ON,E,3.05a,2.15a
+201.4,Fort William,1,ON,E,ar 3.35a,lv 1.45a
