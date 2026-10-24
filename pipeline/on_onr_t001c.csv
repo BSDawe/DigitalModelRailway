@@ -1,0 +1,11 @@
+# Ontario Northland, Porquis - Cochrane: the Cochrane sections of the Timmins trains. EASTERN TIME. Source as on_onr_t001.csv; miles as printed plus 228.0.
+#train col=No151 num=151 dir=down days=daily kind=passenger note="Cochrane section of No. 51: Porquis 7.00 p.m. to Cochrane 8.00 p.m."
+#train col=No147 num=147 dir=down days=daily kind=passenger from=Toronto note="Cochrane section of No. 47 from Toronto: Porquis 3.45 p.m. to Cochrane 4.45 p.m."
+#train col=No149 num=149 dir=down days="ex Sun" kind=passenger from=Toronto name="The Northland" note="Cochrane section of The Northland (No. 49): Porquis 8.35 a.m. to Cochrane 9.35 a.m."
+#train col=No152 num=152 dir=up days="ex Sun" kind=passenger note="Cochrane section of No. 52: Cochrane 6.55 a.m. to Porquis 8.00 a.m."
+#train col=No146 num=146 dir=up days=daily kind=passenger to=Toronto note="Cochrane section of No. 46 for North Bay and Toronto: Cochrane 1.15 p.m. to Porquis 2.15 p.m."
+#train col=No150 num=150 dir=up days=daily kind=passenger to=Toronto name="The Northland" note="Cochrane section of The Northland (No. 50): Cochrane 5.30 p.m. daily to Porquis 6.25 p.m."
+mile,station,principal,prov,tz,No151,No147,No149,No152,No146,No150
+453.7,Porquis,1,ON,E,lv 7.00p,lv 3.45p,lv 8.35a,ar 8.00a,ar 2.15p,ar 6.25p
+477.3,Nahma,0,ON,E,f7.49p,f4.34p,f9.24a,f7.04a,f1.24p,f5.39p
+481.6,Cochrane,1,ON,E,ar 8.00p,ar 4.45p,ar 9.35a,lv 6.55a,lv 1.15p,lv 5.30p

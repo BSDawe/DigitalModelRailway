@@ -1402,3 +1402,5 @@ Stations of different railways within 250 m (70 pairs; script: same check over v
   Jonquiere (the empty folders). Only 7 give a milepost: intermediate stations by printed mileage. Track: Riviere-du-Loup - Mont-Joli - Matapedia - Gaspe
   continuous on CN (an earlier note that track stopped short of Matapedia was a wrong test position); CN Hervey - Chicoutimi about 68 km missing; several CP gaps around Montreal (Farnham, Joliette,
   St-Jerome) close only through other railways' pieces: recheck when the fuller file arrives.
+- (23 Oct 2026) CHECK LATER (Brendan): CN Table 75 Valleyfield sections (on_cn_t075v.csv) are an interpretation (cars split/joined at Coteau,
+  short Coteau - Valleyfield runs). Brendan agrees it makes sense; recheck against the Valleyfield timetables when he supplies them.
