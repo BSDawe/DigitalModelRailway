@@ -1458,3 +1458,9 @@ Stations of different railways within 250 m (70 pairs; script: same check over v
 - (23 Oct 2026 21:46) FIXED: CN Nos. 1 / 2 (Montreal transcontinentals) ran North Bay - Capreol over the CP (Field had no point of its own; the cheapest
   route went by Sudbury). Field pinned on the CN line (Brendan: about -80.0243, 46.5235; on_lines HAND). Now North Bay - Capreol 83.7 mi traced
   (printed 83.4), all CN track.
+- TO DO WHEN THE NEXT INTERURBAN IS ADDED (Brendan, 23 Oct 2026 21:57; REMIND HIM when he brings a new interurban, e.g. the Ontario lines from
+  Delamere's electric railway file):
+  * The B.C. Electric's line-by-line track colours (Central Park, Burnaby Lake, Lulu Island, Marpole - New Westminster: LINE_COLOR / station rings in
+    page_template.html) are dated: all BCER track one colour.
+  * All interurban track (every company) drawn in the same style as the Chilliwack line; lines and companies told apart by the CAR colour, not the track.
+  * He is not satisfied with the interurban train icon: revisit later (not part of the above).
