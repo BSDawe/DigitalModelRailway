@@ -1,0 +1,7 @@
+# Canadian Pacific, Table 58: the Ypres - Camp Borden connection printed under Nos. 25 and 26. Eastern time. Source as on_cp_t058.csv.
+#train col=No25B num=25 dir=down days="ex Sun" kind=passenger note="Connection from No. 25: Ypres 11.40 a.m. to Camp Borden 12.05 p.m. (Table 58)."
+#train col=No26B num=26 dir=up days="ex Sun" kind=passenger note="Connection to No. 26: Camp Borden 12.45 p.m. to Ypres 1.15 p.m. (Table 58)."
+mile,station,principal,prov,tz,No25B,No26B
+0.0,Ypres,1,ON,E,lv 11.40a,ar 1.15p
+3.3,Camp Borden (Lower Station),0,ON,E,11.55a,12.50p
+4.5,Camp Borden (Upper Station),1,ON,E,ar 12.05p,lv 12.45p
