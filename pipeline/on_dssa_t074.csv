@@ -1,0 +1,23 @@
+# Duluth, South Shore & Atlantic Ry., Table 74 of the CP timetable, S.S. Marie - Marquette - Duluth (scans/on1948/13.png; key 15.png). NOT BUILT YET (United States;
+# Brendan 23 Oct 2026: transcribe now, build later). Mackinaw City is printed Eastern time (E.T.), the rest Central time (C.T.).
+# Miles: the table prints three mileages (from S.S. Marie, Mich. to Trout Lake 45.0, Soo Jct 60.0, Marquette 168.0, Nestoria 214.0, Ewen 268.4, Ashland 358.0,
+# Superior 423.0, Duluth 430.0; Mackinaw City - Trout Lake 37.0; Nestoria - Calumet 63.0). Here put on one line from Mackinaw City: printed S.S. Marie miles
+# minus 8.0 east of Trout Lake (Trout Lake 37.0). The Soo Line Nos. 7 and 8 S.S. Marie, Mich. - Trout Lake rows duplicate on_soo_t070.csv: not entered again.
+# Key: * daily; double dagger daily except Saturday; dagger daily except Sunday; f stops on signal. Nos. 7 and 8: the signs change down the column
+# (No. 7 Marquette * , Nestoria and Ewen double dagger, Ashland and Duluth dagger; No. 8 Duluth and Ashland double dagger, Ewen and Nestoria dagger,
+# Marquette *): entered as running daily, the signs in the note. Equipment: Nos. 1 and 2 coaches; Nos. 7 and 8 coaches, sleeping cars Marquette - Duluth
+# Mon. Wed. Fri., Duluth - Marquette Tue. Thu. Sun.
+#train col=No1 num=1 dir=down days="ex Sun" kind=passenger to=Calumet note="DSS&A No. 1, daily except Sunday: Mackinaw City 8.45 a.m. (Eastern) by Trout Lake and Soo Junction to Marquette 1.45 p.m.; on to Nestoria and Calumet 5.50 p.m. (on_dssa_t074c.csv)."
+#train col=No7 num=7 dir=down days=daily kind=passenger note="DSS&A No. 7: Marquette 6.10 p.m. to Duluth 5.40 a.m. Signs: Marquette daily, Nestoria and Ewen daily except Saturday, Ashland and Duluth daily except Sunday."
+#train col=No2 num=2 dir=up days="ex Sun" kind=passenger from=Calumet note="DSS&A No. 2, daily except Sunday: from Calumet 9.45 a.m.; Marquette 1.30 p.m. to Mackinaw City 8.30 p.m. (Eastern)."
+#train col=No8 num=8 dir=up days=daily kind=passenger note="DSS&A No. 8: Duluth 8.15 p.m. to Marquette 7.40 a.m. Signs: Duluth and Ashland daily except Saturday, Ewen and Nestoria daily except Sunday, Marquette daily."
+mile,station,principal,prov,tz,No1,No7,No2,No8
+0.0,Mackinaw City,1,MI,E,lv 8.45a,,ar 8.30p,
+37.0,Trout Lake,1,MI,C,ar 9.45a / lv 10.20a,,ar 5.03p / lv 5.15p,
+52.0,Soo Junction,0,MI,C,f10.45a,,f4.38p,
+160.0,Marquette,1,MI,C,ar 1.45p / lv 2.00p,lv 6.10p,ar 1.17p / lv 1.30p,ar 7.40a
+206.0,Nestoria,1,MI,C,ar 3.38p,8.15p,lv 11.47a,5.35a
+260.4,Ewen,1,MI,C,,ar 10.35p / lv 10.55p,,ar 3.10a / lv 3.10a
+350.0,Ashland,1,WI,C,,2.30a,,11.55p
+415.0,Superior,1,WI,C,,5.05a,,8.45p
+422.0,Duluth,1,MN,C,,ar 5.40a,,lv 8.15p

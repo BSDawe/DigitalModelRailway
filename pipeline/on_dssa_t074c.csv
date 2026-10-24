@@ -1,0 +1,7 @@
+# Duluth, South Shore & Atlantic Ry., Table 74 of the CP timetable, S.S. Marie - Marquette - Duluth (scans/on1948/13.png; key 15.png). NOT BUILT YET (United States;
+# The Nestoria - Calumet line (63.0 mi as printed). Central time. Not built yet.
+#train col=No1C num=1 dir=down days="ex Sun" kind=passenger from="Mackinaw City" note="DSS&A No. 1: Nestoria 3.40 p.m. to Calumet 5.50 p.m."
+#train col=No2C num=2 dir=up days="ex Sun" kind=passenger to="Mackinaw City" note="DSS&A No. 2: Calumet 9.45 a.m. to Nestoria 11.44 a.m."
+mile,station,principal,prov,tz,No1C,No2C
+0.0,Nestoria,1,MI,C,lv 3.40p,ar 11.44a
+63.0,Calumet,1,MI,C,ar 5.50p,lv 9.45a
