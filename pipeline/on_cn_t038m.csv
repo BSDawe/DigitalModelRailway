@@ -1,0 +1,13 @@
+# Canadian National, Table 38: Montreal (Central Station) - Hervey, 125.2 mi, no intermediate stations printed (the line by Joliette and Shawinigan Falls). Source: Official Guide, April 25, 1948, Table 38, Quebec - Hervey (Montreal - Hervey) - Senneterre - Noranda - Rouyn - Taschereau - Cochrane (Brendan, 23 Oct 2026; scans/on1948/01.png, key 02.png). EASTERN TIME.
+# Signs (key, 02.png): * daily; dagger daily except Sunday; double dagger daily except Saturday; pilcrow daily except Monday; a Mon. Wed. Fri.; b Tue. Thu. Sat.;
+# c arrives 30 minutes earlier (entered as ar 30 min before / lv as printed); d stops on signal Monday only (entered f); e Tue. and Fri.; f flag stop; h Wednesday only.
+# Margin: "# Effective May 24, runs Monday, Wednesday, Thursday and Friday" (the sign over Nos. 697 and 698). A day sign printed in the middle of a column
+# (No. 11 Fitzpatrick lv, Senneterre; No. 12 Fitzpatrick ar, Cochrane) is read as the days from (or to) that point: Nos. 11 and 12 run daily Quebec/Montreal -
+# Fitzpatrick and daily except Sunday (from Fitzpatrick, resp. Cochrane) beyond, so each is split at Fitzpatrick.
+#train col=No11M num=11 dir=down days=daily kind=passenger to=Cochrane note="Montreal section of No. 11: Montreal 7.00 p.m. to Hervey 11.15 p.m., on with the Quebec section 11.40 p.m. DOUBT: the sign before 7.00 and 11.15 is unclear (double dagger, daily except Saturday?)."
+#train col=No698 num=698 dir=down days="Mon,Wed,Thu,Fri" kind=passenger to=Fitzpatrick note="Montreal 8.40 a.m. to Hervey 1.55 p.m., on to La Tuque and Fitzpatrick 3.55 p.m. Mon. Wed. Thu. Fri. (from May 24; before, daily except Sunday)."
+#train col=No12M num=12 dir=up days=daily kind=passenger from=Cochrane note="Montreal section of No. 12: Hervey 4.40 a.m. to Montreal 9.00 a.m."
+#train col=No697 num=697 dir=up days="Mon,Wed,Thu,Fri" kind=passenger from=Fitzpatrick note="From Fitzpatrick 9.40 a.m.: Hervey 11.31 a.m. to Montreal 4.45 p.m. Mon. Wed. Thu. Fri. (from May 24)."
+mile,station,principal,prov,tz,No11M,No698,No12M,No697
+0.0,Montreal (Central Station),1,QC,E,lv 7.00p,lv 8.40a,ar 9.00a,ar 4.45p
+125.2,Hervey,1,QC,E,ar 11.15p,ar 1.55p,lv 4.40a,lv 11.31a

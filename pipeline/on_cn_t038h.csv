@@ -1,0 +1,54 @@
+# Canadian National, Table 38: Hervey - La Tuque - Fitzpatrick - Parent - Senneterre - Amos - Taschereau - Cochrane (the National Transcontinental). Source: Official Guide, April 25, 1948, Table 38, Quebec - Hervey (Montreal - Hervey) - Senneterre - Noranda - Rouyn - Taschereau - Cochrane (Brendan, 23 Oct 2026; scans/on1948/01.png, key 02.png). EASTERN TIME.
+# Miles from Quebec as printed. Senneterre and Taschereau are printed as separate arr. / lve. rows for each branch: one row each here. Rene is printed Rene (no accent).
+# DOUBT: No. 11 Gouin and Rene and No. 12 Rene carry a sign read as d (stops on signal Mondays only): entered f.
+# Signs (key, 02.png): * daily; dagger daily except Sunday; double dagger daily except Saturday; pilcrow daily except Monday; a Mon. Wed. Fri.; b Tue. Thu. Sat.;
+# c arrives 30 minutes earlier (entered as ar 30 min before / lv as printed); d stops on signal Monday only (entered f); e Tue. and Fri.; f flag stop; h Wednesday only.
+# Margin: "# Effective May 24, runs Monday, Wednesday, Thursday and Friday" (the sign over Nos. 697 and 698). A day sign printed in the middle of a column
+# (No. 11 Fitzpatrick lv, Senneterre; No. 12 Fitzpatrick ar, Cochrane) is read as the days from (or to) that point: Nos. 11 and 12 run daily Quebec/Montreal -
+# Fitzpatrick and daily except Sunday (from Fitzpatrick, resp. Cochrane) beyond, so each is split at Fitzpatrick.
+#train col=No11A num=11 dir=down days=daily kind=passenger from=Quebec note="Quebec and Montreal sections combined at Hervey: Hervey 11.40 p.m. to Fitzpatrick 1.35 a.m.; on (daily except Sunday from Fitzpatrick) to Senneterre and Cochrane."
+#train col=No11B num=11 dir=down days="Mon,Tue,Wed,Thu,Fri,Sat" kind=passenger from=Quebec note="Fitzpatrick 1.55 a.m. (daily except Sunday) by Parent and Senneterre to Cochrane 6.20 p.m. Parent: arrives 30 minutes before the printed 7.00 a.m. (sign c)."
+#train col=No698 num=698 dir=down days="Mon,Wed,Thu,Fri" kind=passenger from=Montreal note="From Montreal 8.40 a.m.: Hervey 1.56 p.m. to Fitzpatrick 3.55 p.m. Mon. Wed. Thu. Fri. (from May 24)."
+#train col=M221 num=221 dir=down days="ex Sun" kind=mixed note="Mixed, daily except Sunday: La Tuque 7.30 a.m. to Parent 4.00 p.m."
+#train col=M541 num=541 dir=down days="Mon,Wed,Fri" kind=mixed note="Mixed, Mondays, Wednesdays and Fridays: Parent 8.00 a.m. to Senneterre 3.40 p.m."
+#train col=No12B num=12 dir=up days="ex Sun" kind=passenger to=Quebec note="Cochrane 10.00 a.m. (daily except Sunday) by Taschereau, Senneterre and Parent to Fitzpatrick 1.55 a.m. Parent: arrives 9.10, leaves 9.40 p.m. (sign c)."
+#train col=No12A num=12 dir=up days=daily kind=passenger to=Quebec note="Fitzpatrick 2.15 a.m. to Hervey 4.05 a.m.; sections on to Quebec 7.30 a.m. and Montreal 9.00 a.m."
+#train col=No697 num=697 dir=up days="Mon,Wed,Thu,Fri" kind=passenger to=Montreal note="Fitzpatrick 9.40 a.m. to Hervey 11.30 a.m.; on to Montreal 4.45 p.m., and a section to Garneau for No. 108 to Quebec. Mon. Wed. Thu. Fri. (from May 24)."
+#train col=M222 num=222 dir=up days="ex Sun" kind=mixed note="Mixed, daily except Sunday: Parent 7.30 a.m. to La Tuque 3.00 p.m."
+#train col=M542 num=542 dir=up days="Tue,Thu,Sat" kind=mixed note="Mixed, Tuesdays, Thursdays and Saturdays: Senneterre 6.15 a.m. to Parent 2.15 p.m."
+mile,station,principal,prov,tz,No11A,No11B,No698,M221,M541,No12B,No12A,No697,M222,M542
+80.5,Hervey,1,QC,E,lv 11.40p,,lv 1.56p,,,,ar 4.05a,ar 11.30a,,
+92.8,Gouin,0,QC,E,f12.01a,,f2.21p,,,,f3.42a,f11.10a,,
+99.4,Doheny,0,QC,E,f12.15a,,2.34p,,,,f3.28a,10.57a,,
+114.7,Rene,0,QC,E,f12.46a,,f3.07p,,,,f2.56a,f10.22a,,
+131.1,La Tuque,1,QC,E,1.30a,,3.48p,lv 7.30a,,,2.25a,9.50a,ar 3.00p,
+134.3,Fitzpatrick,1,QC,E,ar 1.35a,lv 1.55a,ar 3.55p,ar 7.40a / lv 8.00a,,ar 1.55a,lv 2.15a,lv 9.40a,ar 2.40p / lv 2.50p,
+154.5,Rapide Blanc,0,QC,E,,2.40a,,9.30a,,1.10a,,,1.15p,
+177.7,Windigo,0,QC,E,,3.32a,,11.15a,,12.20a,,,11.43a,
+192.1,Vandry,0,QC,E,,4.03a,,f12.15p,,11.46p,,,f10.58a,
+204.2,Sanmaur,0,QC,E,,4.32a,,1.05p,,11.20p,,,10.20a,
+219.1,Hibbard,0,QC,E,,f5.07a,,f2.05p,,10.47p,,,f9.25a,
+228.0,Casey,0,QC,E,,5.30a,,f2.35p,,10.28p,,,f8.50a,
+253.1,Parent,1,QC,E,,ar 6.30a / lv 7.00a,,ar 4.00p,lv 8.00a,ar 9.10p / lv 9.40p,,,lv 7.30a,ar 2.15p
+276.6,Greening,0,QC,E,,f7.40a,,,f9.10a,f8.27p,,,,f12.45p
+287.1,Oskelaneo River,0,QC,E,,8.03a,,,10.00a,8.03p,,,,11.45a
+294.8,Clova,0,QC,E,,8.19a,,,10.35a,7.46p,,,,11.05a
+309.4,Monet,0,QC,E,,8.48a,,,11.20a,7.17p,,,,10.06a
+355.6,Doucet,0,QC,E,,10.18a,,,2.20p,5.48p,,,,7.55a
+391.3,Senneterre,1,QC,E,,ar 11.40a / lv 12.15p,,,ar 3.40p,ar 4.10p / lv 4.40p,,,,lv 6.15a
+396.5,Belcourt,0,QC,E,,12.25p,,,,3.57p,,,,
+409.9,Barraute,0,QC,E,,12.49p,,,,3.30p,,,,
+418.6,Fisher,0,QC,E,,f1.04p,,,,f3.10p,,,,
+426.9,Landrienne,0,QC,E,,1.19p,,,,2.55p,,,,
+434.6,Amos,1,QC,E,,1.32p,,,,2.35p,,,,
+447.2,Villemontel,0,QC,E,,2.10p,,,,2.10p,,,,
+455.3,Launay,0,QC,E,,2.25p,,,,1.55p,,,,
+462.7,Taschereau,1,QC,E,,ar 2.40p / lv 2.50p,,,,ar 1.30p / lv 1.40p,,,,
+471.6,Authier,0,QC,E,,3.07p,,,,1.10p,,,,
+478.5,Makamik,0,QC,E,,3.22p,,,,12.55p,,,,
+488.6,La Sarre,0,QC,E,,3.42p,,,,12.33p,,,,
+495.9,Dupuy,0,QC,E,,3.56p,,,,12.20p,,,,
+502.9,La Reine,0,QC,E,,4.09p,,,,12.08p,,,,
+560.4,Norembega,0,ON,E,,5.52p,,,,10.25a,,,,
+566.1,Brower,0,ON,E,,6.02p,,,,10.15a,,,,
+575.3,Cochrane,1,ON,E,,ar 6.20p,,,,lv 10.00a,,,,

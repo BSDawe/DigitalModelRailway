@@ -1,0 +1,26 @@
+# Canadian National, Table 38: Quebec - Garneau - Hervey. Source: Official Guide, April 25, 1948, Table 38, Quebec - Hervey (Montreal - Hervey) - Senneterre - Noranda - Rouyn - Taschereau - Cochrane (Brendan, 23 Oct 2026; scans/on1948/01.png, key 02.png). EASTERN TIME.
+# Miles from Quebec as printed (Garneau 66.6 not printed: estimated between St. Prosper 61.3 and St. Adelphe 71.8).
+# Signs (key, 02.png): * daily; dagger daily except Sunday; double dagger daily except Saturday; pilcrow daily except Monday; a Mon. Wed. Fri.; b Tue. Thu. Sat.;
+# c arrives 30 minutes earlier (entered as ar 30 min before / lv as printed); d stops on signal Monday only (entered f); e Tue. and Fri.; f flag stop; h Wednesday only.
+# Margin: "# Effective May 24, runs Monday, Wednesday, Thursday and Friday" (the sign over Nos. 697 and 698). A day sign printed in the middle of a column
+# (No. 11 Fitzpatrick lv, Senneterre; No. 12 Fitzpatrick ar, Cochrane) is read as the days from (or to) that point: Nos. 11 and 12 run daily Quebec/Montreal -
+# Fitzpatrick and daily except Sunday (from Fitzpatrick, resp. Cochrane) beyond, so each is split at Fitzpatrick.
+#train col=No107 num=107 dir=down days="Mon,Wed,Fri" kind=passenger note="Mondays, Wednesdays and Fridays: Quebec 10.00 a.m. to Garneau 12.40 p.m.; connects with the Garneau - Hervey section of No. 698 for La Tuque."
+#train col=No11 num=11 dir=down days=daily kind=passenger to=Cochrane note="Quebec 8.10 p.m. to Hervey 10.55 p.m.; with the Montreal section on from Hervey 11.40 p.m. to Senneterre and Cochrane (on_cn_t038h.csv)."
+#train col=No698G num=698 dir=down days="Mon,Wed,Thu,Fri" kind=passenger note="Garneau 1.10 p.m. to Hervey 1.55 p.m., joining No. 698 from Montreal for La Tuque and Fitzpatrick. Mon. Wed. Thu. Fri. (from May 24)."
+#train col=No108 num=108 dir=up days="ex Sun" kind=passenger note="Daily except Sunday: Garneau 12.45 p.m. to Quebec 3.30 p.m.; connection from No. 697 (Fitzpatrick - Hervey - Garneau)."
+#train col=No12 num=12 dir=up days=daily kind=passenger from=Cochrane note="From Cochrane and Senneterre (on_cn_t038h.csv): Hervey 4.45 a.m. to Quebec 7.30 a.m."
+#train col=No697G num=697 dir=up days="Mon,Wed,Thu,Fri" kind=passenger note="Garneau section of No. 697 from Fitzpatrick: Hervey 11.31 a.m. to Garneau 12.10 p.m. (connects with No. 108 for Quebec). Mon. Wed. Thu. Fri. (from May 24)."
+mile,station,principal,prov,tz,No107,No11,No698G,No108,No12,No697G
+0.0,Quebec (Palais Station),1,QC,E,lv 10.00a,lv 8.10p,,ar 3.30p,ar 7.30a,
+8.9,Cap Rouge,1,QC,E,10.21a,8.31p,,3.07p,7.09a,
+15.8,St. Augustin (de Portneuf),0,QC,E,f10.32a,f8.42p,,f2.54p,f6.55a,
+22.5,Neuville,0,QC,E,10.44a,8.54p,,2.42p,6.42a,
+31.4,Donnacona,0,QC,E,11.02a,9.12p,,2.24p,6.23a,
+33.8,Cap Sante,0,QC,E,11.08a,9.18p,,2.18p,6.17a,
+48.4,St. Marc,0,QC,E,11.37a,9.47p,,1.49p,5.48a,
+52.8,St. Casimir,0,QC,E,11.48a,9.57p,,1.39p,5.38a,
+61.3,St. Prosper,1,QC,E,12.03p,10.14p,,1.24p,5.23a,
+66.6,Garneau,1,QC,E,ar 12.40p,,lv 1.10p,lv 12.45p,,ar 12.10p
+71.8,St. Adelphe,0,QC,E,,10.35p,,,5.02a,
+80.5,Hervey,1,QC,E,,ar 10.55p,ar 1.55p,,lv 4.45a,lv 11.31a

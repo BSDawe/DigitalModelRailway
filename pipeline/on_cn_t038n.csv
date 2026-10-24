@@ -1,0 +1,17 @@
+# Canadian National, Table 38: Senneterre - Val d'Or - Noranda-Rouyn. Source: Official Guide, April 25, 1948, Table 38, Quebec - Hervey (Montreal - Hervey) - Senneterre - Noranda - Rouyn - Taschereau - Cochrane (Brendan, 23 Oct 2026; scans/on1948/01.png, key 02.png). EASTERN TIME.
+# Miles from Quebec as printed.
+# Signs (key, 02.png): * daily; dagger daily except Sunday; double dagger daily except Saturday; pilcrow daily except Monday; a Mon. Wed. Fri.; b Tue. Thu. Sat.;
+# c arrives 30 minutes earlier (entered as ar 30 min before / lv as printed); d stops on signal Monday only (entered f); e Tue. and Fri.; f flag stop; h Wednesday only.
+# Margin: "# Effective May 24, runs Monday, Wednesday, Thursday and Friday" (the sign over Nos. 697 and 698). A day sign printed in the middle of a column
+# (No. 11 Fitzpatrick lv, Senneterre; No. 12 Fitzpatrick ar, Cochrane) is read as the days from (or to) that point: Nos. 11 and 12 run daily Quebec/Montreal -
+# Fitzpatrick and daily except Sunday (from Fitzpatrick, resp. Cochrane) beyond, so each is split at Fitzpatrick.
+#train col=No21 num=21 dir=down days="ex Sun" kind=passenger note="Daily except Sunday: Senneterre 12.10 p.m. to Noranda-Rouyn 3.40 p.m.; connection from No. 11."
+#train col=No22 num=22 dir=up days="ex Sun" kind=passenger note="Daily except Sunday: Noranda-Rouyn 1.00 p.m. to Senneterre 4.30 p.m.; connection with No. 12."
+mile,station,principal,prov,tz,No21,No22
+391.3,Senneterre,1,QC,E,lv 12.10p,ar 4.30p
+398.2,Tiblemont,0,QC,E,f12.25p,f3.50p
+412.6,Pascalis,0,QC,E,12.46p,3.32p
+427.7,Val d'Or,1,QC,E,1.20p,3.05p
+445.0,Malartic,0,QC,E,1.55p,2.26p
+458.5,Cadillac,0,QC,E,2.30p,2.00p
+492.8,Noranda-Rouyn,1,QC,E,ar 3.40p,lv 1.00p

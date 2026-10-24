@@ -1,0 +1,13 @@
+# Canadian National, Table 38: Taschereau - Noranda-Rouyn, mixed. Source: Official Guide, April 25, 1948, Table 38, Quebec - Hervey (Montreal - Hervey) - Senneterre - Noranda - Rouyn - Taschereau - Cochrane (Brendan, 23 Oct 2026; scans/on1948/01.png, key 02.png). EASTERN TIME.
+# Miles from Taschereau as printed.
+# Signs (key, 02.png): * daily; dagger daily except Sunday; double dagger daily except Saturday; pilcrow daily except Monday; a Mon. Wed. Fri.; b Tue. Thu. Sat.;
+# c arrives 30 minutes earlier (entered as ar 30 min before / lv as printed); d stops on signal Monday only (entered f); e Tue. and Fri.; f flag stop; h Wednesday only.
+# Margin: "# Effective May 24, runs Monday, Wednesday, Thursday and Friday" (the sign over Nos. 697 and 698). A day sign printed in the middle of a column
+# (No. 11 Fitzpatrick lv, Senneterre; No. 12 Fitzpatrick ar, Cochrane) is read as the days from (or to) that point: Nos. 11 and 12 run daily Quebec/Montreal -
+# Fitzpatrick and daily except Sunday (from Fitzpatrick, resp. Cochrane) beyond, so each is split at Fitzpatrick.
+#train col=M232 num=232 dir=down days="ex Sun" kind=mixed note="Mixed, daily except Sunday: Taschereau 3.00 p.m. to Noranda-Rouyn 4.50 p.m."
+#train col=M231 num=231 dir=up days="ex Sun" kind=mixed note="Mixed, daily except Sunday: Noranda-Rouyn 11.20 a.m. to Taschereau 1.10 p.m."
+mile,station,principal,prov,tz,M232,M231
+0.0,Taschereau,1,QC,E,lv 3.00p,ar 1.10p
+36.6,Waite,0,QC,E,f4.32p,f11.37a
+43.9,Noranda-Rouyn,1,QC,E,ar 4.50p,lv 11.20a
