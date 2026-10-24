@@ -1464,3 +1464,6 @@ Stations of different railways within 250 m (70 pairs; script: same check over v
     page_template.html) are dated: all BCER track one colour.
   * All interurban track (every company) drawn in the same style as the Chilliwack line; lines and companies told apart by the CAR colour, not the track.
   * He is not satisfied with the interurban train icon: revisit later (not part of the above).
+- (24 Oct 2026) Ottawa: one Union Station for CP and CN (Brendan: every train to Ottawa uses Union Station unless the table says otherwise). CP Table 4's
+  "Ottawa" now shares stop OTTAWA_UNION (on_lines SHARED); Ottawa (Bank Street) stays separate (CN mixed M205 / M206). The routing part (CP through,
+  CN backing out) is still on the to-do list.

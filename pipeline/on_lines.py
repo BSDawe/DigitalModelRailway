@@ -186,6 +186,7 @@ for _r in OWN: ab_lines.EXT_PLACE[_r] = place_for(_r)
 # ---------------------------------------------------------------- stop ids: one station per railway and name, shared where the trains used one station
 SHARED = {('onr', 'toronto union'): 'TORONTO_UNION', ('oncn', 'toronto union'): 'TORONTO_UNION', ('oncp', 'toronto union'): 'TORONTO_UNION',
           ('oncn', 'ottawa union'): 'OTTAWA_UNION', ('oncp', 'ottawa union'): 'OTTAWA_UNION',
+          ('oncp', 'ottawa'): 'OTTAWA_UNION', ('oncn', 'ottawa'): 'OTTAWA_UNION',   # Brendan, 24 Oct 2026: every train to Ottawa uses Union Station unless the table says otherwise (Bank Street)
           ('onr', 'north bay'): 'CN_NORTH_BAY',                           # "North Bay (C.N.)": ONR trains used the CN station
           ('onr', 'cochrane'): 'CN_COCHRANE'}                             # one station at Cochrane (CN Table 38 and the ONR)
 def register(files):
@@ -194,7 +195,7 @@ def register(files):
         for r in ab_table.load(os.path.join(HERE, fn))['rows']:
             n = r['station']; c = canon(n); cu = canon(re.sub(r'[()]', ' ', n).replace(' Station', ''))
             if (rail, cu) in SHARED: ab_lines.EXT_GID[(rail, n)] = SHARED[(rail, cu)]; continue
-            if (rail, c) in SHARED and not (rail == 'onr' and c == 'north bay' and 'C.P.' in n): ab_lines.EXT_GID[(rail, n)] = SHARED[(rail, c)]; continue
+            if (rail, c) in SHARED and not (rail == 'onr' and c == 'north bay' and 'C.P.' in n) and not ('(' in n and 'Union' not in n and c == 'ottawa'): ab_lines.EXT_GID[(rail, n)] = SHARED[(rail, c)]; continue   # Ottawa (Bank Street) stays its own
             m = _map().get((OWN[rail], c))
             full = canon(re.sub(r'[()]', ' ', n))                         # the whole name: Ottawa (Bank Street) is not Ottawa (Union Station)
             ab_lines.EXT_GID[(rail, n)] = m[2] if m else ab_lines.RAILS[rail]['pfx'] + '_' + re.sub(r'\W+', '_', full.upper()).strip('_')
