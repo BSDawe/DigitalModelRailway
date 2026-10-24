@@ -1426,3 +1426,7 @@ Stations of different railways within 250 m (70 pairs; script: same check over v
   Porquis -> Porquis Junction, Quebec -> Palais, Ottawa -> Ottawa Union, Port McNicoll -> Port McNicoll main.
 - NOT YET: through running at the Lakehead (CP 1/2/3/4/7/8 and CN 1-4 end at Fort William / Armstrong here and start again on the Manitoba lines:
   link them in real_ends like the Saskatchewan pieces); the ACR days (printed Mon/Wed/Fri south of Hawk Jct but daily ex Sun north of it: asked).
+- NEXT UPDATE (Brendan, 23 Oct 2026 19:52): ONR track needs its own distinct colour. The ONR owns its track north of North Bay; south of North Bay
+  its trains run over the CN (already drawn in CN colours, on_lines 'onr' graph CN at 1.2). The current --onr #1f5c3a is almost the same green as
+  --cn #2f6b44, so ONR track reads as CN. Change --onr (light and dark) in page_template.html and the 'onr' colour in on_lines.RAILS; check the
+  North Bay - Cochrane / Timmins / Moosonee / Swastika - Noranda track all draws in it and Toronto - North Bay stays CN. Colour: to pick with Brendan.
