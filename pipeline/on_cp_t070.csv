@@ -1,0 +1,40 @@
+# Canadian Pacific, Table 70, Montreal - Toronto - Sudbury - Little Current - S.S. Marie - Duluth - St. Paul - Minneapolis (via Soo Line): the Sudbury -
+# Sault Ste. Marie, Ont. line. Source: CP 1940s timetable (Brendan, 23 Oct 2026; scans/on1948/16.png, signs 15.png). EASTERN TIME. Miles from Montreal as printed.
+# Montreal - Sudbury (No. 9, No. 10) is Table 4; Toronto - Sudbury (Nos. 27, 28) Table 58. McKerrow - Little Current: on_cp_t070b.csv. Soo Line: on_soo_t070.csv.
+# Signs: f stops on signal. c (No. 27 Naughton - Nairn: stops to detrain sleeping car passengers and to entrain for Webbwood and west; flag stop on
+# Sundays) and d (No. 28 Nairn - Naughton: to detrain from Webbwood and west; flag stop Sundays): entered as plain times.
+#train col=No27 num=27 dir=down days=daily kind=passenger from=Toronto note="From Toronto 11.15 p.m. (Table 58) and, with sleeping cars, from Montreal on No. 9: Sudbury 8.25 a.m. to Sault Ste. Marie, Ont. 1.30 p.m. No through service to Sault Ste. Marie, Mich.: taxi and ferry with free transfer coupons."
+#train col=No28 num=28 dir=up days=daily kind=passenger to=Toronto note="Sault Ste. Marie, Ont. 5.10 p.m. to Sudbury 10.30 p.m.; on to Toronto (Table 58) and, sleeping cars, to Montreal on No. 10."
+mile,station,principal,prov,tz,No27,No28
+437.9,Sudbury,1,ON,E,lv 8.25a,ar 10.30p
+442.4,Copper Cliff,0,ON,E,8.38a,10.17p
+449.1,Naughton,0,ON,E,8.48a,10.06p
+456.2,White Fish,0,ON,E,8.58a,9.55p
+459.8,Victoria Mine,0,ON,E,9.03a,9.50p
+463.0,Worthington,0,ON,E,9.08a,9.44p
+466.2,Turbine,0,ON,E,9.13a,9.38p
+470.5,Nairn,0,ON,E,9.19a,9.31p
+479.8,McKerrow,1,ON,E,9.31a,9.17p
+486.1,Webbwood,0,ON,E,9.50a,8.55p
+496.4,Massey,0,ON,E,10.06a,8.35p
+504.3,Walford,0,ON,E,10.18a,8.23p
+509.6,Spanish,0,ON,E,10.26a,8.12p
+515.4,Cutler,0,ON,E,f10.35a,f8.00p
+525.3,Spragge,0,ON,E,10.52a,7.45p
+533.1,Algoma,0,ON,E,f11.05a,f7.32p
+540.3,Blind River,1,ON,E,11.20a,7.22p
+544.1,Mississauga,0,ON,E,f11.26a,f7.14p
+550.7,Dean Lake,0,ON,E,11.36a,7.04p
+554.6,Eley,0,ON,E,f11.42a,f6.57p
+559.8,Dayton,0,ON,E,f11.50a,f6.50p
+564.6,Livingston,0,ON,E,f11.58a,f6.43p
+568.7,Thessalon,0,ON,E,12.07p,6.36p
+572.8,Nestorville,0,ON,E,f12.15p,f6.26p
+574.7,Glen Otter,0,ON,E,f12.19p,f6.23p
+581.2,Bruce,0,ON,E,12.31p,6.12p
+587.2,Portlock,0,ON,E,f12.40p,f6.01p
+589.2,Desbarats,0,ON,E,12.45p,5.55p
+598.4,Bar River,0,ON,E,f1.00p,f5.39p
+602.3,Echo Bay,0,ON,E,1.07p,5.32p
+608.4,Garden River,0,ON,E,f1.17p,f5.22p
+617.1,"Sault Ste. Marie, Ont.",1,ON,E,ar 1.30p,lv 5.10p

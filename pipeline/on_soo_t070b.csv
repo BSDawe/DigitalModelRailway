@@ -1,0 +1,7 @@
+# Soo Line, Table 70: the Duluth section, Ladysmith - Superior - Duluth. CENTRAL TIME. Not built yet. Source as on_soo_t070.csv.
+#train col=No7D num=7 dir=down days=daily kind=passenger from="Sault Ste. Marie, Mich." note="Duluth section of Soo Line No. 7: Ladysmith 4.50 a.m. to Duluth 8.10 a.m."
+#train col=No8D num=8 dir=up days=daily kind=passenger to="Sault Ste. Marie, Mich." note="Duluth section of Soo Line No. 8: Duluth 6.00 p.m. to Ladysmith 8.57 p.m."
+mile,station,principal,prov,tz,No7D,No8D
+0.0,Ladysmith,1,WI,C,lv 4.50a,ar 8.57p
+108.6,Superior,1,WI,C,7.33a,6.25p
+115.8,Duluth,1,MN,C,ar 8.10a,lv 6.00p

@@ -1,0 +1,16 @@
+# Soo Line, from CP Table 70: Sault Ste. Marie, Mich. - Gladstone - Pembine - Ladysmith - St. Paul - Minneapolis. CENTRAL TIME (printed "C.T.").
+# Not built yet (no track in Michigan or Wisconsin on hand; Brendan 23 Oct 2026: transcribe now, build later). Miles from Montreal as printed.
+# Left out: the bus Gladstone - Escanaba, and the Milwaukee Road connection Pembine - Chicago (Lv 10.40 p.m. - Ar Chicago Union 6.50 a.m.; Lv Chicago 7.40 p.m. -
+# Ar Pembine 3.25 a.m.), a connecting train of another railway. Equipment and the Trout Lake connection to Table 74 (DSS&A).
+#train col=No7 num=7 dir=down days=daily kind=passenger to=Minneapolis note="Soo Line. Sault Ste. Marie, Mich. 3.50 p.m. (Central time) to Minneapolis 8.15 a.m.; Duluth section from Ladysmith (on_soo_t070b.csv). Connects with CP No. 27 by taxi and ferry from Sault Ste. Marie, Ont."
+#train col=No8 num=8 dir=up days=daily kind=passenger note="Soo Line. Minneapolis 7.35 p.m. to Sault Ste. Marie, Mich. 11.45 a.m.; the Duluth section joins at Ladysmith."
+mile,station,principal,prov,tz,No7,No8
+621.0,"Sault Ste. Marie, Mich.",1,MI,C,lv 3.50p,ar 11.45a
+665.8,Trout Lake,1,MI,C,5.18p,10.25a
+728.8,Manistique,1,MI,C,7.20p,8.15a
+772.8,Gladstone,1,MI,C,ar 8.30p / lv 8.45p,ar 6.45a / lv 7.00a
+826.0,Pembine,1,WI,C,ar 10.10p / lv 10.40p,ar 4.52a / lv 5.22a
+985.8,Ladysmith,1,WI,C,3.31a,12.13a
+1067.9,Dresser,0,WI,C,6.22a,9.36p
+1112.0,St. Paul,1,MN,C,7.35a,8.20p
+1122.9,Minneapolis (Milwaukee Road Station),1,MN,C,ar 8.15a,lv 7.35p

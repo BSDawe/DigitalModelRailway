@@ -1,0 +1,25 @@
+# Canadian Pacific, Table 70 (also Table 58): Sudbury - McKerrow - Espanola - Little Current, mixed trains M873 / M874. EASTERN TIME. Source as on_cp_t070.csv.
+# Miles: Sudbury - McKerrow from the main-line miles of Table 70 (437.9 - 479.8, re-zeroed at Sudbury); McKerrow - Little Current as printed (0.0 - 38.7) plus 41.9.
+# Table 58 prints Sudbury 8.25 a.m. ("Sudbury 70") - Little Current 12.45 p.m. for the same service; Table 70 gives Sudbury 8.45 a.m. (entered).
+# McKerrow: M873 printed "ar 10.20 / lv 10.20" (entered 10.20a); M874 "lv 5.30" both rows.
+#train col=M873 num=873 dir=down days="ex Sun" kind=mixed note="Daily except Sunday: Sudbury 8.45 a.m. to Little Current 12.45 p.m. by McKerrow and Espanola. Connects with No. 27 from Toronto."
+#train col=M874 num=874 dir=up days="ex Sun" kind=mixed note="Daily except Sunday: Little Current 3.15 p.m. to Sudbury 7.30 p.m.; connects with No. 28 for Toronto."
+mile,station,principal,prov,tz,M873,M874
+0.0,Sudbury,1,ON,E,lv 8.45a,ar 7.30p
+4.5,Copper Cliff,0,ON,E,8.58a,7.15p
+11.2,Naughton,0,ON,E,f9.10a,f6.56p
+18.3,White Fish,0,ON,E,f9.25a,f6.37p
+21.9,Victoria Mine,0,ON,E,f9.32a,f6.27p
+25.1,Worthington,0,ON,E,f9.42a,f6.18p
+28.3,Turbine,0,ON,E,f9.50a,f6.09p
+32.6,Nairn,0,ON,E,f10.01a,f5.57p
+41.9,McKerrow,1,ON,E,10.20a,5.30p
+43.7,Espanola,1,ON,E,ar 10.30a / lv 10.40a,ar 5.16p / lv 5.25p
+48.4,Anderson Lake,0,ON,E,f10.55a,f5.04p
+53.2,Fox Lake,0,ON,E,f11.07a,f4.50p
+59.2,Willisville,0,ON,E,f11.25a,f4.27p
+60.6,Lawson Quarry,0,ON,E,f11.30a,f4.20p
+61.8,Whitefish Falls,0,ON,E,f11.34a,f4.16p
+68.2,Birch Island,0,ON,E,f11.52a,f4.00p
+71.7,McGregor Bay,0,ON,E,f12.04p,f3.48p
+80.6,Little Current,1,ON,E,ar 12.45p,lv 3.15p

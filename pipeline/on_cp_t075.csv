@@ -1,0 +1,11 @@
+# Canadian Pacific, Table 75, Sudbury - Creighton, mixed trains. EASTERN TIME. Source: CP 1940s timetable (Brendan, 23 Oct 2026; scans/on1948/14.png).
+# Times as printed; f stops on signal.
+#train col=M89 num=89 dir=down days="ex Sun" kind=mixed note="Daily except Sunday: Sudbury 10.00 a.m. to Creighton 12.01 p.m."
+#train col=M90 num=90 dir=up days="ex Sun" kind=mixed note="Daily except Sunday: Creighton 4.25 p.m. to Sudbury 6.30 p.m."
+mile,station,principal,prov,tz,M89,M90
+0.0,Sudbury,1,ON,E,lv 10.00a,ar 6.30p
+3.8,Clara Belle,0,ON,E,10.55a,5.15p
+4.5,Nickelton,0,ON,E,f11.35a,f4.50p
+8.5,Milate,0,ON,E,f11.45a,f4.40p
+11.4,East Creighton,0,ON,E,f11.55a,f4.30p
+11.9,Creighton,1,ON,E,ar 12.01p,lv 4.25p
