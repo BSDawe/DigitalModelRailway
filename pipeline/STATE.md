@@ -1448,7 +1448,8 @@ Stations of different railways within 250 m (70 pairs; script: same check over v
 - No straight estimates left in Ontario/Quebec. Checks: check_gtfs 1 problem (old: CP-14-SKJCP13 at Minneapolis).
 - TO DO (Brendan, 23 Oct 2026 21:08, small corrections for later; do not build ahead of him):
   * CN trains that do not call at Pembroke (Nos. 1 / 2) should run straight through on the through tracks at Pembroke Junction (on_cn_t075b).
-  * Ottawa is one Union Station; CP trains run through it, CN trains back out of it (check the CN routes in and out of Ottawa Union).
+  * Ottawa is one Union Station (one stop: done 24 Oct). CN trains back out of it; CP trains CAN run through but do not have to (Brendan, 24 Oct):
+    route each by its table, a CP train backing out where its route comes and goes on the same side. Check the CN routes in and out.
   * Some "janky" uses of junctions in the Ontario/Quebec routings (Brendan has more; not now, keep on the list).
   * Table 116 (Longlac - Fort William, Nos. 79 / 80): the Toronto section may be a connection with Nos. 3 / 4 at Longlac rather than through cars
     (Brendan, not certain). Entered with from/to Toronto and the doubt in the notes; real_ends does not link them yet.
@@ -1465,5 +1466,5 @@ Stations of different railways within 250 m (70 pairs; script: same check over v
   * All interurban track (every company) drawn in the same style as the Chilliwack line; lines and companies told apart by the CAR colour, not the track.
   * He is not satisfied with the interurban train icon: revisit later (not part of the above).
 - (24 Oct 2026) Ottawa: one Union Station for CP and CN (Brendan: every train to Ottawa uses Union Station unless the table says otherwise). CP Table 4's
-  "Ottawa" now shares stop OTTAWA_UNION (on_lines SHARED); Ottawa (Bank Street) stays separate (CN mixed M205 / M206). The routing part (CP through,
-  CN backing out) is still on the to-do list.
+  "Ottawa" now shares stop OTTAWA_UNION (on_lines SHARED); Ottawa (Bank Street) stays separate (CN mixed M205 / M206). The routing part (CN backing out;
+  CP may run through or back out) is still on the to-do list.
