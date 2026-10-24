@@ -1,0 +1,11 @@
+# Canadian Pacific, Table 58: the Port McNicoll boat trains, Toronto - Medonte - Port McNicoll (branch 13.6 mi from Medonte, printed 109.4). EASTERN TIME.
+# Source as on_cp_t058.csv. Steamships Keewatin and Assiniboia: marine/on_cp_greatlakes_1948.csv (not built yet).
+#train col=No703 num=703 dir=down days="Tue,Sat" kind=passenger note="Tuesdays and Saturdays June 5 to September 11: Toronto 2.15 p.m. to Port McNicoll 5.15 p.m., boat train for the Great Lakes steamships Keewatin and Assiniboia (to Fort William)."
+#train col=No704 num=704 dir=up days="Mon,Thu" kind=passenger note="Mondays and Thursdays June 7 to September 13: Port McNicoll 8.45 a.m. to Toronto 11.45 a.m., from the Great Lakes steamships."
+mile,station,principal,prov,tz,No703,No704
+0.0,Toronto (Union Station),1,ON,E,lv 2.15p,ar 11.45a
+2.3,Parkdale,0,ON,E,2.22p,11.35a
+4.5,West Toronto,1,ON,E,2.30p,11.28a
+71.7,Midhurst (Barrie),0,ON,E,4.08p,
+95.8,Medonte,1,ON,E,,
+109.4,Port McNicoll,1,ON,E,ar 5.15p,lv 8.45a

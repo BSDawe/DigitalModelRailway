@@ -1,5 +1,5 @@
-# Canadian Pacific, Table 58, Toronto - Sudbury - North Bay - Sault Ste. Marie: the Toronto - Sudbury main line (by MacTier and Parry Sound) and the
-# Port McNicoll branch (Medonte - Port McNicoll, 13.6 mi; its row is placed after Medonte). Source: CP 1940s public timetable (Brendan, 23 Oct 2026;
+# Canadian Pacific, Table 58, Toronto - Sudbury - North Bay - Sault Ste. Marie: the Toronto - Sudbury main line (by MacTier and Parry Sound). The Port
+# McNicoll boat trains 703 / 704 are in on_cp_t058p.csv. Source: CP 1940s public timetable (Brendan, 23 Oct 2026;
 # scans/on1948/06.png, signs 07.png). EASTERN TIME. Miles from Toronto. Times as printed.
 # Left to other files: Sudbury - North Bay (Nos. 857, 858, 2, 9: Table 4); Sudbury - Little Current and Sudbury - Sault Ste. Marie (Table 70);
 # the Ypres - Camp Borden connection (on_cp_t058b.csv).
@@ -10,7 +10,6 @@
 # Orillia; E taxi at Medonte for Coldwater. No. 6 at Weston and Severn Falls prints only the sign c, no time: not entered.
 # DOUBT: No. 26 Brignall printed "10f5?" (last digit blurred): entered f10.56a?.
 #train col=No771 num=771 dir=down days=Fri kind=passenger note="Bala Special, Fridays July 2 to September 3: Toronto 5.15 p.m. to MacTier 9.00 p.m. (Muskoka Lakes steamers at Bala)."
-#train col=No703 num=703 dir=down days="Tue,Sat" kind=passenger note="Tuesdays and Saturdays June 5 to September 11: Toronto 2.15 p.m. to Port McNicoll 5.15 p.m., boat train for the Great Lakes steamships Keewatin and Assiniboia (to Fort William)."
 #train col=No27 num=27 dir=down days=daily kind=passenger to="Sault Ste. Marie, Ont." note="Toronto 11.15 p.m. to Sudbury 7.55 a.m.; connects there with No. 1 for the west, and goes on 8.25 a.m. to Sault Ste. Marie, Ont. 1.30 p.m. (Table 70)."
 #train col=No3 num=3 dir=down days=daily kind=passenger to=Vancouver note="The Dominion. Toronto 10.55 p.m. to Sudbury 6.50 a.m.; on to Fort William (Table 4) and Vancouver."
 #train col=No5 num=5 dir=down days=daily kind=passenger to=Winnipeg note="The Dominion (eastern section). Toronto 10.20 p.m. to Sudbury 6.00 a.m.; with the Montreal cars of No. 9 on to Fort William and Winnipeg."
@@ -19,62 +18,60 @@
 #train col=No6 num=6 dir=up days=daily kind=passenger from=Winnipeg note="The Dominion (eastern section). From Winnipeg and Fort William: Sudbury 11.00 p.m. to Toronto 7.00 a.m."
 #train col=No28 num=28 dir=up days=daily kind=passenger from="Sault Ste. Marie, Ont." note="From Sault Ste. Marie, Ont. 5.10 p.m. (Table 70); Sudbury 11.20 p.m. to Toronto 7.30 a.m.; connects at Sudbury with No. 2 from the west."
 #train col=No26 num=26 dir=up days="ex Sun" kind=passenger note="Daily except Sunday: Sudbury 7.30 a.m. to Toronto 3.20 p.m."
-#train col=No704 num=704 dir=up days="Mon,Thu" kind=passenger note="Mondays and Thursdays June 7 to September 13: Port McNicoll 8.45 a.m. to Toronto 11.45 a.m., from the Great Lakes steamships."
 #train col=No772 num=772 dir=up days=Sun kind=passenger note="Bala Special, Sundays July 4 to September 6 (on the holidays August 1 and September 5 it runs on the Mondays instead): MacTier 5.45 p.m. to Toronto 9.30 p.m."
-mile,station,principal,prov,tz,No771,No703,No27,No3,No5,No25,No4,No6,No28,No26,No704,No772
-0.0,Toronto (Union Station),1,ON,E,lv 5.15p,lv 2.15p,lv 11.15p,lv 10.55p,lv 10.20p,lv 9.30a,ar 6.40a,ar 7.00a,ar 7.30a,ar 3.20p,ar 11.45a,ar 9.30p
-2.3,Parkdale,0,ON,E,5.22p,2.22p,11.23p,11.03p,10.28p,9.37a,6.30a,6.50a,7.20a,3.10p,11.35a,9.20p
-4.5,West Toronto,1,ON,E,5.35p,2.30p,11.35p,11.15p,10.40p,9.45a,6.20a,6.40a,7.10a,3.00p,11.28a,9.10p
-8.3,Weston,0,ON,E,f5.45p,,,,,9.55a,6.07a,,6.58a,2.53p,,f9.00p
-16.3,Woodbridge,0,ON,E,,,,,,10.09a,5.50a,6.14a,6.44a,2.40p,,
-21.2,Kleinburg,0,ON,E,,,,,,10.18a,5.40a,6.07a,6.37a,2.30p,,
-26.1,Bolton,0,ON,E,f6.10p,,f12.19a,,,10.26a,5.29a,5.59a,6.29a,2.20p,,f8.35p
-30.5,Humber,0,ON,E,,,,,,f10.35a,5.22a,5.52a,,,,
-35.8,Palgrave,0,ON,E,,,,,,f10.45a,5.15a,5.45a,,f2.03p,,
-39.9,Tottenham,0,ON,E,f6.30p,,f12.39a,,,f10.52a,5.09a,5.39a,f6.09a,f1.55p,,f8.15p
-43.4,Beeton,0,ON,E,f6.35p,,f12.44a,,,f10.59a,5.03a,5.33a,f6.03a,f1.47p,,f8.10p
-49.6,Alliston,0,ON,E,f6.45p,,12.55a,12.32a,11.57p,11.10a,4.55a,5.25a,5.55a,1.37p,,f8.00p
-56.3,Baxter,0,ON,E,,,f1.08a,,,f11.22a,4.45a,5.15a,f5.45a,f1.25p,,
-57.3,Ypres,0,ON,E,,,,,,11.25a,4.43a,5.13a,,1.20p,,
-63.4,Essa (Camp Borden),0,ON,E,,,f1.19a,12.51a,12.16a,f11.35a,4.33a,5.03a,f5.33a,f1.12p,,
-71.7,Midhurst (Barrie),0,ON,E,f7.20p,4.08p,1.32a,1.08a,12.33a,11.52a,4.18a,4.48a,5.18a,12.58p,,f7.28p
-78.4,Craighurst,0,ON,E,f7.32p,,,,,12.05p,4.06a,4.36a,,12.48p,,f7.15p
-86.2,Carley,0,ON,E,f7.45p,,,,,f12.17p,3.55a,4.25a,,f12.38p,,f7.05p
-91.6,Eady,0,ON,E,,,f2.04a,,,f12.30p,3.47a,4.17a,f4.47a,f12.30p,,
-95.8,Medonte,1,ON,E,f8.00p,,2.10a,,,12.40p,3.41a,4.10a,4.40a,12.23p,,f6.52p
-109.4,Port McNicoll,1,ON,E,,ar 5.15p,,,,,,,,,lv 8.45a,
-99.7,Lovering,0,ON,E,f8.07p,,,,,f12.50p,3.36a,4.03a,,f12.15p,,f6.45p
-108.3,Severn Falls,0,ON,E,8.20p,,f2.31a,,,f1.04p,3.25a,,f4.20a,f12.02p,,6.30p
-119.4,Bala,1,ON,E,8.35p,,2.45a,2.22a,1.47a,1.23p,3.05a,3.30a,4.00a,11.45a,,6.05p
-123.7,Roderick,0,ON,E,,,,,,,2.57a,3.22a,,,,
-131.4,MacTier,1,ON,E,ar 9.00p,,ar 3.40a / lv 3.50a,ar 2.45a / lv 3.00a,ar 2.10a / lv 2.25a,ar 1.50p / lv 2.00p,ar 2.25a / lv 2.45a,ar 3.00a / lv 3.10a,ar 3.25a / lv 3.40a,ar 11.15a / lv 11.25a,,lv 5.45p
-135.5,Lake Joseph,0,ON,E,,,,,,f2.08p,,,,f11.06a,,
-136.5,Gordon Bay,0,ON,E,,,,,,f2.10p,,,,f11.04a,,
-141.8,Brignall,0,ON,E,,,,,,f2.18p,,,,f10.56a?,,
-143.9,Rosseau Road,0,ON,E,,,,,,f2.22p,,,,f10.52a,,
-145.1,Black Road,0,ON,E,,,,,,f2.25p,,,,f10.49a,,
-148.4,Otter Lake,0,ON,E,,,,,,f2.30p,,,,f10.44a,,
-149.0,Dockmure,0,ON,E,,,f4.18a,,,f2.31p,,,f2.38a,f10.43a,,
-154.5,Parry Sound,1,ON,E,,,4.30a,3.50a,3.22a,2.43p,1.28a,2.03a,2.23a,10.32a,,
-161.2,Nobel,0,ON,E,,,4.47a,,,2.57p,,,2.14a,10.20a,,
-166.6,Carling,0,ON,E,,,,,,f3.05p,,,,f10.12a,,
-172.3,Shawanaga,0,ON,E,,,f5.04a,,,3.15p,,,,10.03a,,
-179.9,Pointe au Baril,0,ON,E,,,f5.18a,,,3.29p,,,1.40a,9.50a,,
-183.9,Manbert,0,ON,E,,,f5.25a,,,f3.35p,,,f1.33a,f9.42a,,
-186.6,Naiscoot,0,ON,E,,,,,,f3.40p,,,,f9.38a,,
-193.5,Byng Inlet,0,ON,E,,,f5.41a,,,3.51p,,,f1.18a,9.28a,,
-196.4,Britt,0,ON,E,,,5.46a,,,3.57p,,,1.09a,9.21a,,
-200.9,Bekanon,0,ON,E,,,f6.04a,,,f4.06p,,,f12.56a,f9.11a,,
-206.1,Pakesley,0,ON,E,,,f6.13a,,,4.15p,,,f12.48a,9.03a,,
-210.8,Pickerel,0,ON,E,,,f6.21a,,,4.23p,,,f12.41a,8.55a,,
-212.7,Wanikewin,0,ON,E,,,,,,f4.26p,,,,f8.52a,,
-214.8,French River,1,ON,E,,,,,,f4.30p,,,,f8.49a,,
-216.3,Bigwood,0,ON,E,,,f6.30a,,,4.34p,,,f12.32a,8.46a,,
-221.9,Rutter,0,ON,E,,,f6.40a,,,4.44p,,,f12.24a,8.37a,,
-227.3,Delamere,0,ON,E,,,,,,f4.54p,,,,f8.27a,,
-232.2,Paget,0,ON,E,,,,,,f5.03p,,,f12.08a,f8.19a,,
-238.7,Burwash,0,ON,E,,,f7.07a,,,5.14p,,,f11.59p,8.08a,,
-244.8,Wanup,0,ON,E,,,f7.17a,,,f5.25p,,,f11.49p,f7.58a,,
-247.6,Dill,0,ON,E,,,,,,f5.30p,,,f11.43p,f7.54a,,
-253.2,Romford,0,ON,E,,,7.37a,,,5.40p,,,11.35p,7.45a,,
-259.8,Sudbury,1,ON,E,,,ar 7.55a,ar 6.50a,ar 6.00a,ar 5.55p,lv 10.30p,lv 11.00p,lv 11.20p,lv 7.30a,,
+mile,station,principal,prov,tz,No771,No27,No3,No5,No25,No4,No6,No28,No26,No772
+0.0,Toronto (Union Station),1,ON,E,lv 5.15p,lv 11.15p,lv 10.55p,lv 10.20p,lv 9.30a,ar 6.40a,ar 7.00a,ar 7.30a,ar 3.20p,ar 9.30p
+2.3,Parkdale,0,ON,E,5.22p,11.23p,11.03p,10.28p,9.37a,6.30a,6.50a,7.20a,3.10p,9.20p
+4.5,West Toronto,1,ON,E,5.35p,11.35p,11.15p,10.40p,9.45a,6.20a,6.40a,7.10a,3.00p,9.10p
+8.3,Weston,0,ON,E,f5.45p,,,,9.55a,6.07a,,6.58a,2.53p,f9.00p
+16.3,Woodbridge,0,ON,E,,,,,10.09a,5.50a,6.14a,6.44a,2.40p,
+21.2,Kleinburg,0,ON,E,,,,,10.18a,5.40a,6.07a,6.37a,2.30p,
+26.1,Bolton,0,ON,E,f6.10p,f12.19a,,,10.26a,5.29a,5.59a,6.29a,2.20p,f8.35p
+30.5,Humber,0,ON,E,,,,,f10.35a,5.22a,5.52a,,,
+35.8,Palgrave,0,ON,E,,,,,f10.45a,5.15a,5.45a,,f2.03p,
+39.9,Tottenham,0,ON,E,f6.30p,f12.39a,,,f10.52a,5.09a,5.39a,f6.09a,f1.55p,f8.15p
+43.4,Beeton,0,ON,E,f6.35p,f12.44a,,,f10.59a,5.03a,5.33a,f6.03a,f1.47p,f8.10p
+49.6,Alliston,0,ON,E,f6.45p,12.55a,12.32a,11.57p,11.10a,4.55a,5.25a,5.55a,1.37p,f8.00p
+56.3,Baxter,0,ON,E,,f1.08a,,,f11.22a,4.45a,5.15a,f5.45a,f1.25p,
+57.3,Ypres,0,ON,E,,,,,11.25a,4.43a,5.13a,,1.20p,
+63.4,Essa (Camp Borden),0,ON,E,,f1.19a,12.51a,12.16a,f11.35a,4.33a,5.03a,f5.33a,f1.12p,
+71.7,Midhurst (Barrie),0,ON,E,f7.20p,1.32a,1.08a,12.33a,11.52a,4.18a,4.48a,5.18a,12.58p,f7.28p
+78.4,Craighurst,0,ON,E,f7.32p,,,,12.05p,4.06a,4.36a,,12.48p,f7.15p
+86.2,Carley,0,ON,E,f7.45p,,,,f12.17p,3.55a,4.25a,,f12.38p,f7.05p
+91.6,Eady,0,ON,E,,f2.04a,,,f12.30p,3.47a,4.17a,f4.47a,f12.30p,
+95.8,Medonte,1,ON,E,f8.00p,2.10a,,,12.40p,3.41a,4.10a,4.40a,12.23p,f6.52p
+99.7,Lovering,0,ON,E,f8.07p,,,,f12.50p,3.36a,4.03a,,f12.15p,f6.45p
+108.3,Severn Falls,0,ON,E,8.20p,f2.31a,,,f1.04p,3.25a,,f4.20a,f12.02p,6.30p
+119.4,Bala,1,ON,E,8.35p,2.45a,2.22a,1.47a,1.23p,3.05a,3.30a,4.00a,11.45a,6.05p
+123.7,Roderick,0,ON,E,,,,,,2.57a,3.22a,,,
+131.4,MacTier,1,ON,E,ar 9.00p,ar 3.40a / lv 3.50a,ar 2.45a / lv 3.00a,ar 2.10a / lv 2.25a,ar 1.50p / lv 2.00p,ar 2.25a / lv 2.45a,ar 3.00a / lv 3.10a,ar 3.25a / lv 3.40a,ar 11.15a / lv 11.25a,lv 5.45p
+135.5,Lake Joseph,0,ON,E,,,,,f2.08p,,,,f11.06a,
+136.5,Gordon Bay,0,ON,E,,,,,f2.10p,,,,f11.04a,
+141.8,Brignall,0,ON,E,,,,,f2.18p,,,,f10.56a?,
+143.9,Rosseau Road,0,ON,E,,,,,f2.22p,,,,f10.52a,
+145.1,Black Road,0,ON,E,,,,,f2.25p,,,,f10.49a,
+148.4,Otter Lake,0,ON,E,,,,,f2.30p,,,,f10.44a,
+149.0,Dockmure,0,ON,E,,f4.18a,,,f2.31p,,,f2.38a,f10.43a,
+154.5,Parry Sound,1,ON,E,,4.30a,3.50a,3.22a,2.43p,1.28a,2.03a,2.23a,10.32a,
+161.2,Nobel,0,ON,E,,4.47a,,,2.57p,,,2.14a,10.20a,
+166.6,Carling,0,ON,E,,,,,f3.05p,,,,f10.12a,
+172.3,Shawanaga,0,ON,E,,f5.04a,,,3.15p,,,,10.03a,
+179.9,Pointe au Baril,0,ON,E,,f5.18a,,,3.29p,,,1.40a,9.50a,
+183.9,Manbert,0,ON,E,,f5.25a,,,f3.35p,,,f1.33a,f9.42a,
+186.6,Naiscoot,0,ON,E,,,,,f3.40p,,,,f9.38a,
+193.5,Byng Inlet,0,ON,E,,f5.41a,,,3.51p,,,f1.18a,9.28a,
+196.4,Britt,0,ON,E,,5.46a,,,3.57p,,,1.09a,9.21a,
+200.9,Bekanon,0,ON,E,,f6.04a,,,f4.06p,,,f12.56a,f9.11a,
+206.1,Pakesley,0,ON,E,,f6.13a,,,4.15p,,,f12.48a,9.03a,
+210.8,Pickerel,0,ON,E,,f6.21a,,,4.23p,,,f12.41a,8.55a,
+212.7,Wanikewin,0,ON,E,,,,,f4.26p,,,,f8.52a,
+214.8,French River,1,ON,E,,,,,f4.30p,,,,f8.49a,
+216.3,Bigwood,0,ON,E,,f6.30a,,,4.34p,,,f12.32a,8.46a,
+221.9,Rutter,0,ON,E,,f6.40a,,,4.44p,,,f12.24a,8.37a,
+227.3,Delamere,0,ON,E,,,,,f4.54p,,,,f8.27a,
+232.2,Paget,0,ON,E,,,,,f5.03p,,,f12.08a,f8.19a,
+238.7,Burwash,0,ON,E,,f7.07a,,,5.14p,,,f11.59p,8.08a,
+244.8,Wanup,0,ON,E,,f7.17a,,,f5.25p,,,f11.49p,f7.58a,
+247.6,Dill,0,ON,E,,,,,f5.30p,,,f11.43p,f7.54a,
+253.2,Romford,0,ON,E,,7.37a,,,5.40p,,,11.35p,7.45a,
+259.8,Sudbury,1,ON,E,,ar 7.55a,ar 6.50a,ar 6.00a,ar 5.55p,lv 10.30p,lv 11.00p,lv 11.20p,lv 7.30a,

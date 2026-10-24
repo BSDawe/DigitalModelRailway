@@ -306,6 +306,40 @@
     "skx_cp_t006_medhat.csv",
     "skx_cp_t139_kerrobert.csv"
    ]
+  },
+  {
+   "name": "on_build",
+   "script": "on_build.py",
+   "needs": [
+    "sk_build"
+   ],
+   "inputs": [
+    "traces/ontario/ontario_all.json",
+    "traces/quebec/quebec_all.json",
+    "on_acr_t001.csv",
+    "on_acr_t001m.csv",
+    "on_cn_t038h.csv",
+    "on_cn_t038m.csv",
+    "on_cn_t038n.csv",
+    "on_cn_t038q.csv",
+    "on_cn_t038t.csv",
+    "on_cn_t075a.csv",
+    "on_cn_t075b.csv",
+    "on_cn_t075t.csv",
+    "on_cn_t075v.csv",
+    "on_cp_t004.csv",
+    "on_cp_t058.csv",
+    "on_cp_t058b.csv",
+    "on_cp_t058p.csv",
+    "on_cp_t070.csv",
+    "on_cp_t070b.csv",
+    "on_cp_t075.csv",
+    "on_cp_t707.csv",
+    "on_onr_t001.csv",
+    "on_onr_t001c.csv",
+    "on_onr_t018m.csv",
+    "on_onr_t018s.csv"
+   ]
   }
  ]
 }

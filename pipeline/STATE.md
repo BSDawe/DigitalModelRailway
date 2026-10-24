@@ -1404,3 +1404,25 @@ Stations of different railways within 250 m (70 pairs; script: same check over v
   St-Jerome) close only through other railways' pieces: recheck when the fuller file arrives.
 - (23 Oct 2026) CHECK LATER (Brendan): CN Table 75 Valleyfield sections (on_cn_t075v.csv) are an interpretation (cars split/joined at Coteau,
   short Coteau - Valleyfield runs). Brendan agrees it makes sense; recheck against the Valleyfield timetables when he supplies them.
+
+## Version 63 (23 October 2026): Ontario and Quebec, first pass (published to GitHub Pages)
+- Timetables (Brendan's scans, private repo scans/on1948/01-19.png), transcribed by hand one table at a time: on_cp_t004 (Montreal - Fort William),
+  on_cp_t058 / t058b / t058p (Toronto - Sudbury, Camp Borden, Port McNicoll boat trains), on_cp_t070 / t070b (Sudbury - Sault, Little Current mixed),
+  on_cp_t075 (Creighton), on_cp_t707 (Toronto - Owen Sound boat trains, miles ESTIMATED 121), on_cn_t075a/v/b/t (Montreal - Ottawa, Valleyfield
+  sections, Ottawa - North Bay - Capreol - Armstrong, Toronto - Capreol), on_cn_t038q/m/h/n/t (Quebec/Montreal - Hervey - Senneterre - Cochrane,
+  Noranda), on_onr_t001 / t001c / t018m / t018s (ONR main line, Cochrane sections, Moosonee, Swastika - Noranda), on_acr_t001 / t001m (Algoma Central).
+  Transcribed, NOT BUILT: on_soo_t070 / t070b (Soo Line, U.S.), on_dssa_t074 / t074c (DSS&A, U.S.), marine/ (Pointe au Baril, Muskoka Lakes, CP
+  Keewatin / Assiniboia, S.S. Manitoba: waiting for port positions, marine/PORTS_NEEDED.md; Muskoka lakes water missing).
+- Step on_build (on_build.py, helper on_lines.py): Delamere's collections are the track and the stations. on_lines switches ab_lines to a Lambert
+  conic centred on Ontario for this step (UTM 10 overstates 8-18 % there); graphs per railway ('sk:oncp', 'sk:oncn', 'sk:onr', 'sk:acr'; own track
+  1.0, sidings 1.6, other railways 2.5 drawn in their colour; other railways' sidings left out to keep the graphs small). Eastern time = -3 h (TZ 'E').
+  New kinds h (Ontario Northland) and z (Algoma Central), colours Claude's picks; views nont, ontario, quebec. GTFS agencies ONR, ACR (and GWWD,
+  missing since 18 Oct).
+- Traced vs printed: CP 4 989.8 / 989.4; CN 75 east 858.4 / 852.7; ONR 476.9 / 486.8; ACR 294.4 / 296.0; all on track except straight estimates:
+  CP Tottenham - Midhurst 30.5 mi (the CP line by Beeton not found as CP track), Ypres - Camp Borden 3.2, Worthington - Turbine 3.0; CN Hervey -
+  Gouin 10.7, Quebec - Neuville 18.6 (CN Palais approach); ONR Larder Lake - Cheminis 8.7. Checks: ab.py vs V62 nothing moved; GTFS 1 problem (old).
+- HAND POINTS BY CLAUDE (approximate, to confirm with Brendan): Toronto Union, Montreal Windsor and Central, Capreol, Timmins, Taschereau, Ypres,
+  Camp Borden, CN Noranda-Rouyn (nearest CN line to the ONR station). Collection names aliased: Hervey -> Hervey Junction, Coteau -> Coteau Junction,
+  Porquis -> Porquis Junction, Quebec -> Palais, Ottawa -> Ottawa Union, Port McNicoll -> Port McNicoll main.
+- NOT YET: through running at the Lakehead (CP 1/2/3/4/7/8 and CN 1-4 end at Fort William / Armstrong here and start again on the Manitoba lines:
+  link them in real_ends like the Saskatchewan pieces); the ACR days (printed Mon/Wed/Fri south of Hawk Jct but daily ex Sun north of it: asked).

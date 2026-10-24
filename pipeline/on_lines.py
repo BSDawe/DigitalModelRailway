@@ -1,0 +1,183 @@
+"""Ontario and Quebec, 1948 (Brendan, 23 October 2026): track graphs and station places for the ab_lines.py machinery. A helper, imported by
+on_build.py.
+
+Track and stations come from Paul Delamere's collections, the only source besides the timetables (Brendan, 23 October 2026): the Ontario Railway
+Map Collection (traces/ontario/ontario_all.json) and his Quebec collection (traces/quebec/quebec_all.json), both parsed from the KMZs by
+tools/parse_kmz.py and kept in the private repository. Whose track a piece is comes from its folder (Canadian National, Canadian Pacific, Ontario
+Northland, Algoma Central, ...). A railway's own main track costs 1.0, its sidings and yards 1.6, other railways' track 2.5 (drawn in their
+colour), independent and American lines 1.5. Pieces whose note says they were abandoned before 1948, and the CN Toronto bypass (1960s), are left out.
+
+Stations, in order: a point given by hand (HAND), a station of that railway already on the map (the Lakehead and Winnipeg lines), a station point of
+the collection for that railway (the name is in the placemark's name or, often in Quebec, its description), any railway's station point of that name;
+every other station goes by its printed mileage between located neighbours.
+
+PROJECTION: ab_lines works in UTM zone 10 metres, which overstates lengths here by 8 % (Lakehead) to 18 % (Montreal), so the check of traced
+against printed miles would fail. This module switches ab_lines to a Lambert conformal conic centred on Ontario (parallels 44 and 50 N, central
+meridian 84 W; scale within about 0.5 % from 42 to 52 N) for this step only: on_build.py runs in its own process. Graph names start 'sk:' so that
+ab_lines' fallback to the shortest route by distance (written for Saskatchewan) applies here too."""
+import json, math, os, re, unicodedata
+import numpy as np
+from pyproj import Transformer
+from scipy.spatial import cKDTree
+import ab_lines
+HERE = os.path.dirname(os.path.abspath(__file__))
+
+_T = Transformer.from_crs(4326, '+proj=lcc +lat_1=44 +lat_2=50 +lon_0=-84 +lat_0=46 +datum=WGS84 +units=m +no_defs', always_xy=True)
+_I = Transformer.from_crs('+proj=lcc +lat_1=44 +lat_2=50 +lon_0=-84 +lat_0=46 +datum=WGS84 +units=m +no_defs', 4326, always_xy=True)
+ab_lines.fwd, ab_lines.inv = _T.transform, _I.transform
+ab_lines._T, ab_lines._I = _T, _I                                      # _xy() uses the transformer itself
+fwd = _T.transform
+ab_lines.TZ_SHIFT['E'] = -10800                                        # Eastern time: three hours ahead of Pacific
+
+ab_lines.RAILS.update({'oncn': dict(kind='q', label='Canadian National', own='cn', agency='CN', color='2F6B44', pfx='CN'),
+                       'oncp': dict(kind='p', label='Canadian Pacific', own='cp', agency='CP', color='7A1E2C', pfx='CP'),
+                       'onr': dict(kind='h', label='Ontario Northland', own='onr', agency='ONR', color='1F5C3A', pfx='ONR'),          # colour: Claude's pick
+                       'acr': dict(kind='z', label='Algoma Central', own='acr', agency='ACR', color='8A3B12', pfx='ACR')})            # colour: Claude's pick
+OWN = {'oncn': 'cn', 'oncp': 'cp', 'onr': 'onr', 'acr': 'acr'}
+
+# ---------------------------------------------------------------- the collections
+_D = []
+def pieces():
+    if not _D:
+        for sub, fn in (('ontario', 'ontario_all.json'), ('quebec', 'quebec_all.json')):
+            p = os.path.join(HERE, 'traces', sub, fn)
+            if os.path.exists(p): _D.extend(json.load(open(p)))
+    return _D
+def owner(path):
+    """whose track (or station) a piece of the collections is, from its folders"""
+    top = path[2] if len(path) > 2 else ''
+    sub = ' / '.join(path[3:])
+    if 'Ontario Northland' in sub: return 'onr'
+    if 'Algoma Central' in sub: return 'acr'
+    if 'Algoma Eastern' in sub: return 'cp'                             # Sudbury - McKerrow - Little Current: CP from 1930
+    if top.startswith('Canadian National'): return 'cn'
+    if top.startswith('Canadian Pacific'): return 'cp'
+    return None
+_GONE = re.compile(r'(?:abandon\w*|lifted|removed|closed)\s+(?:in\s+|by\s+|after\s+|c\.\s*)?(?:18\d\d|19[0-4]\d)\b', re.I)
+class _Gone:                                                            # a piece abandoned before 1948, by its own note ("abandoned in 1924")
+    @staticmethod
+    def search(desc):                                                   # the long "Location: ..." railway histories mention old dates near
+        return None if desc.lstrip().startswith('Location') else _GONE.search(desc)   # "abandoned" for other parts: not used to drop the piece
+GONE = _Gone()
+LATER = re.compile(r'Toronto bypass', re.I)                              # the CN bypass and MacMillan Yard (1960s)
+def label(o):
+    n = o.get('name') or ''
+    if not n or n in ('Canadian Pacific Railway', 'Canadian National Railway', 'Untitled Placemark'): n = (o.get('desc') or '').split('\n')[0]
+    return n.strip()
+
+# ---------------------------------------------------------------- track
+BOXES = {'onr': (-81.6, -78.4, 43.5, 51.5), 'acr': (-85.2, -82.8, 46.3, 49.9)}   # the small railways' graphs: their own part of the map only
+def _graph(me):
+    """the track graph for one railway. Every piece goes in as network-like track ('n': its ends tie to track within 150 m) rather than as a backup
+    ('b': every point tied to track beside it), and other railways' sidings and yards are left out: the full collections as backups made graphs of
+    about two million points each, more than the machine holds four of (23 October 2026)."""
+    box = BOXES.get(me)
+    def feed(add):
+        for o in pieces():
+            if o['kind'] != 'LineString' or len(o['coords']) < 2: continue
+            if GONE.search(o.get('desc', '')) or any(LATER.search(x) for x in o['path']): continue
+            c = o['coords']
+            if box and not any(box[0] <= p[0] <= box[1] and box[2] <= p[1] <= box[3] for p in c[::max(1, len(c) // 6)]): continue
+            ow = owner(o['path']); side = any(re.search(r'siding|yard|spur', x, re.I) for x in o['path'])
+            if ow == me: fac, draw = (1.6 if side else 1.0), None
+            elif side: continue
+            elif me == 'onr' and ow == 'cn': fac, draw = 1.2, 'cn'           # ONR trains run Toronto - North Bay over the CN
+            elif ow in ('cn', 'cp', 'onr', 'acr'): fac, draw = 2.5, ow
+            else: fac, draw = 1.5, None
+            add(ab_lines._xy(c), fac, 'n', draw)
+    return lambda: ab_lines.make_graph(feed, tie_end=150, tie_loose=60)
+for _r, _o in OWN.items(): ab_lines.EXT_GRAPH['sk:' + _r] = _graph(_o)
+
+# ---------------------------------------------------------------- names
+def canon(n):
+    n = unicodedata.normalize('NFKD', n).encode('ascii', 'ignore').decode().lower().strip()
+    n = re.sub(r'\s*\(.*?\)', '', n)
+    n = re.sub(r',\s*(ont|que|mich|wis|minn)\.?$', '', n)                   # "Sault Ste. Marie, Ont."
+    n = re.sub(r'^(gare|care)\s+', '', n)                                # Quebec: "Gare Mont-Joli station"
+    n = re.sub(r'\b(station|flag stop)\b\.?', '', n)
+    n = re.sub(r'^(?:\d(?:st|nd|rd|th)|deux)\s+', '', n)                 # "1st Windsor station", "Gare deux Drummondville station 1st"
+    n = re.sub(r'\s+\d(?:st|nd|rd|th)$', '', n)
+    n = n.replace('junc.', 'junction').replace('jct.', 'junction').replace('jct', 'junction').replace('st.', 'st ').replace('ste.', 'ste ')
+    n = n.replace('-', ' ').replace('.', ' ').replace("'", '')
+    return re.sub(r'\s+', ' ', n).strip()
+
+# ---------------------------------------------------------------- places
+# Points given by hand: APPROXIMATE, Claude's from general knowledge, to be confirmed by Brendan (the collections have no point for them)
+HAND = {('cp', 'toronto'): (-79.3806, 43.6453, 'Toronto Union Station (approx.; to confirm)'),
+        ('cn', 'toronto'): (-79.3806, 43.6453, 'Toronto Union Station (approx.; to confirm)'),
+        ('onr', 'toronto'): (-79.3806, 43.6453, 'Toronto Union Station (approx.; to confirm)'),
+        ('cp', 'montreal'): (-73.5690, 45.4972, 'Windsor Station, Montreal (approx.; to confirm)'),
+        ('cn', 'montreal'): (-73.5667, 45.5000, 'Central Station, Montreal (approx.; the 1943 station; to confirm)'),
+        ('cn', 'capreol'): (-80.9245, 46.7068, 'Capreol (approx., on the CN line; to confirm)'),
+        ('onr', 'timmins'): (-81.3330, 48.4760, 'Timmins station (approx., Claude; the collection has no point: to confirm)'),
+        ('cn', 'taschereau'): (-78.6930, 48.6670, 'Taschereau (approx., Claude; the Quebec collection has no point: to confirm)'),
+        ('cp', 'ypres'): (-79.8600, 44.3150, 'Ypres, junction for Camp Borden (approx., Claude: to confirm)'),
+        ('cp', 'camp borden'): (-79.9100, 44.2850, 'Camp Borden (Upper Station) (approx., Claude: to confirm)'),
+        ('cn', 'noranda rouyn'): (-79.0243, 48.2521, 'CN Noranda-Rouyn (approx.: the CN line nearest the ONR Noranda station; to confirm)'),
+        ('cp', 'port arthur'): (-89.217683, 48.434547, 'Canadian Pacific station, Port Arthur (Brendan, 19 October)'),
+        ('cp', 'fort william'): (-89.24722, 48.37807, 'Canadian Pacific station, Fort William (Brendan, 19 October)')}
+_MAP = {}
+def _map():
+    """stations already on the map in north-western Ontario (the Lakehead lines; not Minnesota or Wisconsin: Eau Claire, Wis. is not Eau Claire, Ont.)"""
+    if not _MAP:
+        _MAP['x'] = True
+        p = os.path.join(HERE, 'viz_data.json')
+        for L in (json.load(open(p))['lines'] if os.path.exists(p) else []):
+            if L.get('water') or L['key'].startswith('on'): continue
+            for s in L['stations']:
+                if -95.5 < s['lon'] < -84.0 and 48.0 < s['lat'] < 52.0: _MAP.setdefault((L['owner'], canon(s['name'])), (s['lon'], s['lat'], s['gid']))
+    return _MAP
+_ST = {}
+def stations():
+    """(owner, canon name) -> [(lon, lat)] of the collections' station points; also (None, canon)"""
+    if not _ST:
+        for o in pieces():
+            if o['kind'] != 'Point': continue
+            lb = label(o)
+            if not (any('station' in x.lower() for x in o['path']) or re.search(r'\bstation\b|\bgare\b', lb, re.I)): continue
+            if re.search(r'bridge|culvert|tower|roundhouse|shed', ' '.join(o['path']), re.I) and not re.search(r'station|gare', lb, re.I): continue
+            c = canon(lb)
+            if not c: continue
+            q = tuple(o['coords'][0][:2]); ow = owner(o['path'])
+            _ST.setdefault((ow, c), []).append(q); _ST.setdefault((None, c), []).append(q)
+    return _ST
+_TRK = {}
+def track_tree(own):
+    if own not in _TRK:
+        pts = [fwd(*p[:2]) for o in pieces() if o['kind'] == 'LineString' and owner(o['path']) == own for p in o['coords'][::3]]
+        _TRK[own] = cKDTree(np.array(pts)) if pts else None
+    return _TRK[own]
+ALIAS = {('cn', 'hervey'): 'hervey junction', ('cn', 'coteau'): 'coteau junction', ('onr', 'porquis'): 'porquis junction',
+         ('cp', 'port mcnicoll'): 'port mcnicoll main', ('cn', 'quebec'): 'palais', ('cn', 'ottawa'): 'ottawa union', ('cp', 'ottawa'): 'ottawa union'}   # table name -> collection name
+def place_for(rail):
+    own = OWN[rail]
+    def f(name):
+        c = canon(name); c = ALIAS.get((own, c), c)
+        if (own, c) in HAND: h = HAND[(own, c)]; return (h[0], h[1], 'hand', 800)
+        m = _map().get((own, c))
+        if m: return (m[0], m[1], 'map', 300)
+        for key in ((own, c), (None, c)):
+            st = stations().get(key)
+            if st:
+                t = track_tree(own if key[0] else None) if key[0] else None
+                q = min(st, key=lambda q: t.query(fwd(*q))[0]) if t is not None else st[0]
+                return (q[0], q[1], 'collection' if key[0] else 'collection (other railway)', 700)
+        return None
+    return f
+for _r in OWN: ab_lines.EXT_PLACE[_r] = place_for(_r)
+
+# ---------------------------------------------------------------- stop ids: one station per railway and name, shared where the trains used one station
+SHARED = {('onr', 'toronto union'): 'TORONTO_UNION', ('oncn', 'toronto union'): 'TORONTO_UNION', ('oncp', 'toronto union'): 'TORONTO_UNION',
+          ('oncn', 'ottawa union'): 'OTTAWA_UNION', ('oncp', 'ottawa union'): 'OTTAWA_UNION',
+          ('onr', 'north bay'): 'CN_NORTH_BAY',                           # "North Bay (C.N.)": ONR trains used the CN station
+          ('onr', 'cochrane'): 'CN_COCHRANE'}                             # one station at Cochrane (CN Table 38 and the ONR)
+def register(files):
+    import ab_table
+    for rail, fn in files:
+        for r in ab_table.load(os.path.join(HERE, fn))['rows']:
+            n = r['station']; c = canon(n); cu = canon(re.sub(r'[()]', ' ', n).replace(' Station', ''))
+            if (rail, cu) in SHARED: ab_lines.EXT_GID[(rail, n)] = SHARED[(rail, cu)]; continue
+            if (rail, c) in SHARED and not (rail == 'onr' and c == 'north bay' and 'C.P.' in n): ab_lines.EXT_GID[(rail, n)] = SHARED[(rail, c)]; continue
+            m = _map().get((OWN[rail], c))
+            full = canon(re.sub(r'[()]', ' ', n))                         # the whole name: Ottawa (Bank Street) is not Ottawa (Union Station)
+            ab_lines.EXT_GID[(rail, n)] = m[2] if m else ab_lines.RAILS[rail]['pfx'] + '_' + re.sub(r'\W+', '_', full.upper()).strip('_')
