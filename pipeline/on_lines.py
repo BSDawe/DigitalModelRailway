@@ -31,7 +31,7 @@ ab_lines.TZ_SHIFT['E'] = -10800                                        # Eastern
 
 ab_lines.RAILS.update({'oncn': dict(kind='q', label='Canadian National', own='cn', agency='CN', color='2F6B44', pfx='CN'),
                        'oncp': dict(kind='p', label='Canadian Pacific', own='cp', agency='CP', color='7A1E2C', pfx='CP'),
-                       'onr': dict(kind='h', label='Ontario Northland', own='onr', agency='ONR', color='1F5C3A', pfx='ONR'),          # colour: Claude's pick
+                       'onr': dict(kind='h', label='Ontario Northland', own='onr', agency='ONR', color='FEBC11', pfx='ONR'),          # colour: Brendan, 23 Oct 2026 (today's ONR yellow)
                        'acr': dict(kind='z', label='Algoma Central', own='acr', agency='ACR', color='8A3B12', pfx='ACR')})            # colour: Claude's pick
 OWN = {'oncn': 'cn', 'oncp': 'cp', 'onr': 'onr', 'acr': 'acr'}
 
@@ -66,6 +66,20 @@ def label(o):
     return n.strip()
 
 # ---------------------------------------------------------------- track
+def despike(c):
+    """drop single stray vertices: a point far (over 400 m) from both its neighbours while they are close together (under 80 m). The collections
+    have a few (the ONR Noranda branch near Bear Lake jumped 2 miles north and back, 4.4 mi of false track; Brendan, 23 October 2026)."""
+    if len(c) < 3: return c
+    kx = 111320 * math.cos(math.radians(c[0][1])); d = lambda a, b: math.hypot((a[0] - b[0]) * kx, (a[1] - b[1]) * 110540)
+    out = [c[0]]
+    for i in range(1, len(c) - 1):
+        if d(c[i - 1], c[i + 1]) < 80 and d(c[i], c[i - 1]) > 400 and d(c[i], c[i + 1]) > 400: continue
+        out.append(c[i])
+    return out + [c[-1]]
+def _links():
+    out = []
+    for fn in sorted(__import__('glob').glob(os.path.join(HERE, 'traces', 'ontario', 'brendan', '*.geojson'))): out += json.load(open(fn))['features']
+    return out
 BOXES = {'onr': (-81.6, -78.4, 43.5, 51.5), 'acr': (-85.2, -82.8, 46.3, 49.9)}   # the small railways' graphs: their own part of the map only
 def _graph(me):
     """the track graph for one railway. Every piece goes in as network-like track ('n': its ends tie to track within 150 m) rather than as a backup
@@ -76,7 +90,7 @@ def _graph(me):
         for o in pieces():
             if o['kind'] != 'LineString' or len(o['coords']) < 2: continue
             if GONE.search(o.get('desc', '')) or any(LATER.search(x) for x in o['path']): continue
-            c = o['coords']
+            c = despike(o['coords'])
             if box and not any(box[0] <= p[0] <= box[1] and box[2] <= p[1] <= box[3] for p in c[::max(1, len(c) // 6)]): continue
             ow = owner(o['path']); side = any(re.search(r'siding|yard|spur', x, re.I) for x in o['path'])
             if ow == me: fac, draw = (1.6 if side else 1.0), None
@@ -85,6 +99,10 @@ def _graph(me):
             elif ow in ('cn', 'cp', 'onr', 'acr'): fac, draw = 2.5, ow
             else: fac, draw = 1.5, None
             add(ab_lines._xy(c), fac, 'n', draw)
+        for f in _links():                                              # Brendan's traces and connectors (traces/ontario/brendan/)
+            ow = f['properties']['own']; c = f['geometry']['coordinates']
+            if box and not any(box[0] <= p[0] <= box[1] and box[2] <= p[1] <= box[3] for p in c): continue
+            add(ab_lines._xy(c), 1.0 if ow == me else 2.5, 't', None if ow == me else ow)
     return lambda: ab_lines.make_graph(feed, tie_end=150, tie_loose=60)
 for _r, _o in OWN.items(): ab_lines.EXT_GRAPH['sk:' + _r] = _graph(_o)
 
@@ -103,17 +121,15 @@ def canon(n):
 
 # ---------------------------------------------------------------- places
 # Points given by hand: APPROXIMATE, Claude's from general knowledge, to be confirmed by Brendan (the collections have no point for them)
-HAND = {('cp', 'toronto'): (-79.3806, 43.6453, 'Toronto Union Station (approx.; to confirm)'),
-        ('cn', 'toronto'): (-79.3806, 43.6453, 'Toronto Union Station (approx.; to confirm)'),
-        ('onr', 'toronto'): (-79.3806, 43.6453, 'Toronto Union Station (approx.; to confirm)'),
-        ('cp', 'montreal'): (-73.5690, 45.4972, 'Windsor Station, Montreal (approx.; to confirm)'),
-        ('cn', 'montreal'): (-73.5667, 45.5000, 'Central Station, Montreal (approx.; the 1943 station; to confirm)'),
-        ('cn', 'capreol'): (-80.9245, 46.7068, 'Capreol (approx., on the CN line; to confirm)'),
-        ('onr', 'timmins'): (-81.3330, 48.4760, 'Timmins station (approx., Claude; the collection has no point: to confirm)'),
-        ('cn', 'taschereau'): (-78.6930, 48.6670, 'Taschereau (approx., Claude; the Quebec collection has no point: to confirm)'),
-        ('cp', 'ypres'): (-79.8600, 44.3150, 'Ypres, junction for Camp Borden (approx., Claude: to confirm)'),
-        ('cp', 'camp borden'): (-79.9100, 44.2850, 'Camp Borden (Upper Station) (approx., Claude: to confirm)'),
-        ('cn', 'noranda rouyn'): (-79.0243, 48.2521, 'CN Noranda-Rouyn (approx.: the CN line nearest the ONR Noranda station; to confirm)'),
+_TU = (-79.380688, 43.645186, 'Toronto Union Station (the collection\'s "2nd Toronto Union station"; Brendan, 23 Oct 2026)')
+HAND = {('cp', 'toronto'): _TU, ('cn', 'toronto'): _TU, ('onr', 'toronto'): _TU,
+        ('cp', 'montreal'): (-73.567980, 45.497179, 'Windsor Station, Montreal (the collection\'s "Gare Windsor station"; Brendan, 23 Oct 2026)'),
+        ('cn', 'montreal'): (-73.567251, 45.500458, 'Central Station, Montreal (the collection\'s "Gare Centrale station"; Brendan, 23 Oct 2026)'),
+        ('cn', 'quebec'): (-71.213860, 46.817443, 'Quebec, Palais Station (the collection\'s "Gare Palais station"; Brendan, 23 Oct 2026)'),
+        ('cn', 'capreol'): (-80.928981, 46.710925, 'Capreol (Brendan, 23 Oct 2026)'),
+        ('cn', 'taschereau'): (-78.680875, 48.662350, 'Taschereau (Brendan, 23 Oct 2026: not sure, for now)'),
+        ('cp', 'ypres'): (-79.843000, 44.261342, 'Ypres, junction for Camp Borden (Brendan, 23 Oct 2026)'),
+        ('cn', 'noranda rouyn'): (-79.026961, 48.246808, 'CN Noranda-Rouyn (Brendan, 23 Oct 2026, estimate)'),
         ('cp', 'port arthur'): (-89.217683, 48.434547, 'Canadian Pacific station, Port Arthur (Brendan, 19 October)'),
         ('cp', 'fort william'): (-89.24722, 48.37807, 'Canadian Pacific station, Fort William (Brendan, 19 October)')}
 _MAP = {}
@@ -148,7 +164,7 @@ def track_tree(own):
         _TRK[own] = cKDTree(np.array(pts)) if pts else None
     return _TRK[own]
 ALIAS = {('cn', 'hervey'): 'hervey junction', ('cn', 'coteau'): 'coteau junction', ('onr', 'porquis'): 'porquis junction',
-         ('cp', 'port mcnicoll'): 'port mcnicoll main', ('cn', 'quebec'): 'palais', ('cn', 'ottawa'): 'ottawa union', ('cp', 'ottawa'): 'ottawa union'}   # table name -> collection name
+         ('cp', 'port mcnicoll'): 'port mcnicoll main', ('onr', 'timmins'): 'timmons', ('onr', 'beaver lake'): 'bear lake', ('cn', 'ottawa'): 'ottawa union', ('cp', 'ottawa'): 'ottawa union'}   # table name -> collection name
 def place_for(rail):
     own = OWN[rail]
     def f(name):

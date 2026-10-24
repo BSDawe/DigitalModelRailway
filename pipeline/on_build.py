@@ -19,7 +19,12 @@ LONG = {'on_cp_t004': 'Montreal – Ottawa – North Bay – Sudbury – Fort Wi
         'on_cn_t038t': 'Taschereau – Noranda', 'on_onr_t001': 'Toronto – North Bay – Porquis – Timmins', 'on_onr_t001c': 'Porquis – Cochrane',
         'on_onr_t018m': 'Cochrane – Moosonee', 'on_onr_t018s': 'Swastika – Kirkland Lake – Rouyn – Noranda',
         'on_acr_t001': 'Sault Ste. Marie – Hawk Junction – Hearst', 'on_acr_t001m': 'Hawk Junction – Michipicoten'}
-OVER = {'on_cn_t075b': dict(noplace=['Ottawa (Bank Street)'])}   # Bank Street by its mileage from Union Station (canon names both 'ottawa')
+OVER = {'on_cn_t075b': dict(noplace=['Ottawa (Bank Street)']),
+        'on_cp_t058b': dict(places={'Camp Borden (Lower Station)': (-79.891308, 44.269889),      # Brendan, 23 Oct 2026: "about here"
+                                    'Camp Borden (Upper Station)': (-79.886619, 44.286324)}),    # at the end of its spur (his trace)
+        'on_cp_t070': dict(places={'Worthington': (-81.4516144, 46.3826754), 'Turbine': (-81.5119836, 46.3741679)}),
+        'on_cp_t070b': dict(places={'Worthington': (-81.4516144, 46.3826754), 'Turbine': (-81.5119836, 46.3741679)})}   # on the Soo branch (the collection's
+                                                                  # points snap to the parallel Algoma Eastern line, which does not join between them)   # Bank Street by its mileage from Union Station (canon names both 'ottawa')
 def specs():
     out = []
     for fn in sorted(glob.glob(os.path.join(HERE, 'on_c[pn]_t*.csv')) + glob.glob(os.path.join(HERE, 'on_onr_t*.csv')) + glob.glob(os.path.join(HERE, 'on_acr_t*.csv'))):
@@ -33,7 +38,7 @@ def specs():
         key = stem.replace('on_', 'on').replace('_t', '')
         out.append(dict(key=key, rail=rail, graph='sk:' + rail, legs=[dict(csv=os.path.basename(fn))], dirs=['to ' + b, 'to ' + a], short=short,
                         long=o.get('long', LONG.get(stem, f'{a} – {b}')), src=f'{short} ({SRC[rail]})', cols=o.get('cols'), shift=-10800, tzrows=True, tznote=TZ,
-                        names=o.get('names', {}), notes=o.get('notes', {}), via=o.get('via', ()), noplace=o.get('noplace', ()), force=o.get('force', ()), ends=True, realends=True))
+                        names=o.get('names', {}), notes=o.get('notes', {}), via=o.get('via', ()), noplace=o.get('noplace', ()), force=o.get('force', ()), places=o.get('places'), ends=True, realends=True))
     return out
 SPECS = specs()
 on_lines.register([(s['rail'], s['legs'][0]['csv']) for s in SPECS])

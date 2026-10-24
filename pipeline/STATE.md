@@ -1426,7 +1426,23 @@ Stations of different railways within 250 m (70 pairs; script: same check over v
   Porquis -> Porquis Junction, Quebec -> Palais, Ottawa -> Ottawa Union, Port McNicoll -> Port McNicoll main.
 - NOT YET: through running at the Lakehead (CP 1/2/3/4/7/8 and CN 1-4 end at Fort William / Armstrong here and start again on the Manitoba lines:
   link them in real_ends like the Saskatchewan pieces); the ACR days (printed Mon/Wed/Fri south of Hawk Jct but daily ex Sun north of it: asked).
-- NEXT UPDATE (Brendan, 23 Oct 2026 19:52): ONR track needs its own distinct colour. The ONR owns its track north of North Bay; south of North Bay
+- DONE in Version 64 (below). (Brendan, 23 Oct 2026 19:52): ONR track needs its own distinct colour. The ONR owns its track north of North Bay; south of North Bay
   its trains run over the CN (already drawn in CN colours, on_lines 'onr' graph CN at 1.2). The current --onr #1f5c3a is almost the same green as
   --cn #2f6b44, so ONR track reads as CN. Change --onr (light and dark) in page_template.html and the 'onr' colour in on_lines.RAILS; check the
   North Bay - Cochrane / Timmins / Moosonee / Swastika - Noranda track all draws in it and Toronto - North Bay stays CN. Colour: to pick with Brendan.
+
+## Version 64 (23 October 2026, evening; published)
+- ONR colour #febc11 (today's ONR yellow; Brendan), light and dark; ONR badge text dark. ONR own track North Bay - Cochrane / Timmins / Moosonee /
+  Noranda draws yellow; Toronto - North Bay stays CN.
+- traces/ontario/brendan/ontario_quebec_links.geojson (public; fed to the Ontario/Quebec graphs as own track of 'own', other railways at 2.5):
+  Brendan's Hervey Junction gap, Camp Borden upper-station spur, Montreal Central Station wye (transcontinentals reach Central Station from the West
+  Island, not the Mount Royal tunnel); straight connectors from the end of track to Gare Windsor (CP) and Gare Palais (CN); a 40 m CN tie at the
+  Quebec junction (-71.2317, 46.8359) where two lines meet mid-piece.
+- on_lines.despike(): drops single stray vertices (49 pieces; the ONR Noranda branch near Bear Lake jumped 2 mi north and back: 4.4 mi of false track,
+  which made Larder Lake - Cheminis fail).
+- Hand points (Brendan): Toronto = collection "2nd Toronto Union station"; Montreal CP = "Gare Windsor station", CN = "Gare Centrale station"; Quebec CN =
+  "Gare Palais station"; Capreol 46.710925 -80.928981; Taschereau 48.662350 -78.680875 (he is not sure); Ypres 44.261342 -79.843000; Camp Borden lower
+  44.269889 -79.891308, upper 44.286324 -79.886619 (on_build OVER places); CN Noranda 48.246808 -79.026961 (est). Aliases: Timmins = "Timmons station",
+  Beaver Lake = "Bear Lake" (Brendan: probably the same; Beaver Lake ends up placed by mileage). Worthington and Turbine (CP 70, 70b) pinned to the Soo
+  branch: the collection's points snap to the parallel Algoma Eastern line.
+- No straight estimates left in Ontario/Quebec. Checks: check_gtfs 1 problem (old: CP-14-SKJCP13 at Minneapolis).
