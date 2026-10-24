@@ -1,5 +1,5 @@
 # Canadian Pacific, Table 75, Sudbury - Creighton, mixed trains. EASTERN TIME. Source: CP 1940s timetable (Brendan, 23 Oct 2026; scans/on1948/14.png).
-# Times as printed; f stops on signal.
+# Times as printed; f stops on signal. The low speeds near Sudbury (M90 Nickelton - Sudbury 4.5 mi in 100 min) are as printed: a mine mixed train.
 #train col=M89 num=89 dir=down days="ex Sun" kind=mixed note="Daily except Sunday: Sudbury 10.00 a.m. to Creighton 12.01 p.m."
 #train col=M90 num=90 dir=up days="ex Sun" kind=mixed note="Daily except Sunday: Creighton 4.25 p.m. to Sudbury 6.30 p.m."
 mile,station,principal,prov,tz,M89,M90
