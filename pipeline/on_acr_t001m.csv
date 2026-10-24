@@ -1,0 +1,11 @@
+# Algoma Central and Hudson Bay Railway, Sault Ste. Marie - Hawk Junction - Hearst and Hawk Junction - Michipicoten, April 25, 1948 (scans/on1948/19.png, sideways).
+# EASTERN TIME. Miles as printed (whole miles). Key: dagger daily except Sunday; f flag stop; double dagger Monday, Wednesday and Friday; reversed c Tuesday, Thursday
+# The Michipicoten branch (Michipicoten Harbour, Lake Superior steamer connection).
+#train col=No3 num=3 dir=down days="Mon,Wed,Fri" kind=passenger note="Mondays, Wednesdays and Fridays: Hawk Junction 4.00 p.m. to Michipicoten 5.30 p.m., connection from No. 1 from Sault Ste. Marie."
+#train col=No4 num=4 dir=up days="Tue,Thu,Sat" kind=passenger note="Tuesdays, Thursdays and Saturdays: Michipicoten 11.00 a.m. to Hawk Junction 12.35 p.m., connection with No. 2 for Sault Ste. Marie."
+mile,station,principal,prov,tz,No3,No4
+165,Hawk Junction,1,ON,E,lv 4.00p,ar 12.35p
+174,Magpie,0,ON,E,4.23p,12.10p
+183,Jamestown,0,ON,E,4.50p,11.43a
+190,Brient,0,ON,E,5.15p,11.15a
+191,Michipicoten,1,ON,E,ar 5.30p,lv 11.00a

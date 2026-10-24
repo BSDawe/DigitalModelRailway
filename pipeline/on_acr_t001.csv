@@ -1,0 +1,59 @@
+# Algoma Central and Hudson Bay Railway, Sault Ste. Marie - Hawk Junction - Hearst and Hawk Junction - Michipicoten, April 25, 1948 (scans/on1948/19.png, sideways).
+# EASTERN TIME. Miles as printed (whole miles). Key: dagger daily except Sunday; f flag stop; double dagger Monday, Wednesday and Friday; reversed c Tuesday, Thursday
+# and Saturday. "Cafe service from Sault Ste. Marie to Hearst Mon., Wed. and Fri.; from Hearst to Sault Ste. Marie Tues., Thurs. and Sat."
+# Connections printed: at Sault Ste. Marie with the CP and the DSS&A / Soo Line; at Hawk Junction (Michipicoten); at Franz with the CP; at Oba with the CN; at Hearst with the CN.
+# DAYS IN DOUBT: Sault - Hawk Junction and the Michipicoten branch carry the Mon. Wed. Fri. / Tue. Thu. Sat. signs, but Hawk Junction - Hearst and Hearst - Hawk
+# Junction carry the dagger (daily except Sunday). Entered as printed, each part as its own trip (Nos. 1 and 2 split at Hawk Junction); the cafe note says
+# the through service is Mon. Wed. Fri. north and Tue. Thu. Sat. south. Asked Brendan.
+#train col=No1S num=1 dir=down days="Mon,Wed,Fri" kind=passenger to=Hearst note="Mondays, Wednesdays and Fridays: Sault Ste. Marie 9.00 a.m. to Hawk Junction 3.35 p.m.; on to Hearst 9.00 p.m. Cafe service."
+#train col=No1H num=1 dir=down days="ex Sun" kind=passenger from="Sault Ste. Marie" note="Hawk Junction 3.50 p.m. to Hearst 9.00 p.m. (printed daily except Sunday; the through train from Sault Ste. Marie runs Mon. Wed. Fri.). Franz 4.55 p.m., connection with the CP."
+#train col=No2H num=2 dir=up days="ex Sun" kind=passenger to="Sault Ste. Marie" note="Hearst 7.30 a.m. to Hawk Junction 12.25 p.m. (printed daily except Sunday; on to Sault Ste. Marie Tue. Thu. Sat.)."
+#train col=No2S num=2 dir=up days="Tue,Thu,Sat" kind=passenger from=Hearst note="Tuesdays, Thursdays and Saturdays: Hawk Junction 1.00 p.m. to Sault Ste. Marie 7.25 p.m. Cafe service."
+mile,station,principal,prov,tz,No1S,No1H,No2H,No2S
+0,Sault Ste. Marie,1,ON,E,lv 9.00a,,,ar 7.25p
+2,Steelton,0,ON,E,9.10a,,,7.15p
+8,Odena,0,ON,E,9.24a,,,7.00p
+14,Heyden,0,ON,E,9.36a,,,6.48p
+25,Northland,0,ON,E,9.56a,,,6.28p
+32,Searchmont,0,ON,E,10.15a,,,6.10p
+36,Wabos,0,ON,E,10.25a,,,5.58p
+42,Achigan,0,ON,E,10.38a,,,5.45p
+48,Ogidaki,0,ON,E,10.54a,,,5.32p
+56,Mashkode,0,ON,E,11.13a,,,5.14p
+64,Mekatina,0,ON,E,11.33a,,,4.57p
+73,Summit,0,ON,E,11.55a,,,4.38p
+80,Batchewana,0,ON,E,12.12p,,,4.20p
+86,Rand,0,ON,E,12.31p,,,4.02p
+89,Regent,0,ON,E,12.37p,,,3.55p
+92,Montreal Falls,0,ON,E,12.45p,,,3.48p
+96,Hubert,0,ON,E,12.55p,,,3.40p
+102,Frater,1,ON,E,1.20p,,,3.20p
+114,Canyon,0,ON,E,1.45p,,,2.48p
+120,Eton,0,ON,E,1.59p,,,2.34p
+131,Agawa,0,ON,E,2.20p,,,2.14p
+141,Tabor,0,ON,E,2.40p,,,1.55p
+150,Perry,0,ON,E,3.00p,,,1.35p
+156,Limer,0,ON,E,3.15p,,,1.20p
+165,Hawk Junction,1,ON,E,ar 3.35p,lv 3.50p,ar 12.25p,lv 1.00p
+173,Alden,0,ON,E,,4.10p,12.05p,
+178,Goudreau,0,ON,E,,4.19p,11.57a,
+188,Wanda,0,ON,E,,4.40p,11.40a,
+195,Franz,1,ON,E,,4.55p,11.25a,
+201,Scully,0,ON,E,,5.08p,11.10a,
+208,Hilda,0,ON,E,,5.18p,11.00a,
+215,Tatnall,0,ON,E,,5.35p,10.45a,
+221,Price,0,ON,E,,5.50p,10.30a,
+228,Dana,0,ON,E,,6.05p,10.15a,
+233,Akron,0,ON,E,,6.15p,10.05a,
+239,Langdon,0,ON,E,,6.25p,9.55a,
+245,Oba,1,ON,E,,ar 6.45p / lv 6.45p,ar 9.40a / lv 9.40a,
+253,Norris,0,ON,E,,7.05p,9.15a,
+266,Hale,0,ON,E,,7.35p,8.45a,
+273,Horsey,0,ON,E,,7.55p,8.31a,
+275,Mead,0,ON,E,,8.00p,8.25a,
+281,Coppell,0,ON,E,,8.12p,8.15a,
+284,Ripco,0,ON,E,,8.20p,8.08a,
+286,Delray,0,ON,E,,8.25p,8.03a,
+288,Stavert,0,ON,E,,8.35p,7.58a,
+294,Wyborn,0,ON,E,,8.50p,7.43a,
+296,Hearst,1,ON,E,,ar 9.00p,lv 7.30a,
