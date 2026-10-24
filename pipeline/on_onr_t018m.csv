@@ -1,0 +1,26 @@
+# Ontario Northland, Cochrane - Moosonee, mixed, November 16, 1947 (scans/on1948/18.png). EASTERN TIME. Miles as printed.
+# The slow McInnis - Island Falls times (1.0 mi, 31 and 15 min) are as printed (meal or water stop at Island Falls).
+# Key (page 18): * daily; dagger daily except Sunday; double dagger daily except Saturday; section Sunday only; pilcrow daily except Monday; b Tuesday and
+# Friday only; f flag stop; j flag stop Tue. Thu. Sat.; k Saturday only; n stops on flag daily except Saturday; o Thursday and Saturday; p daily except
+# Saturday and Sunday; r connection by bus; t flag stop daily except Monday and Friday. Buses (Porquis - Iroquois Falls, Elk Lake - New Liskeard) left out.
+# DOUBT: M221's sign is read as the double dagger (daily except Saturday), but M222 back is b (Tuesday and Friday only): the two do not match; asked Brendan.
+#train col=M221 num=221 dir=down days="Sun,Mon,Tue,Wed,Thu,Fri" kind=mixed note="Mixed: Cochrane 10.00 a.m. to Moosonee 5.30 p.m. Days as read (double dagger, daily except Saturday): in doubt."
+#train col=M222 num=222 dir=up days="Tue,Fri" kind=mixed note="Mixed, Tuesdays and Fridays: Moosonee 7.30 a.m. to Cochrane 3.30 p.m."
+mile,station,principal,prov,tz,M221,M222
+0,Cochrane,1,ON,E,lv 10.00a,ar 3.30p
+5.7,Larocque,0,ON,E,f10.12a,f3.10p
+8.2,Genier,0,ON,E,f10.16a,f3.05p
+9.8,Clute,0,ON,E,f10.20a,f3.00p
+15.2,Blount,0,ON,E,f10.30a,f2.35p
+18.6,Gardiner,0,ON,E,f10.36a,f2.20p
+22.4,Workman,0,ON,E,f10.43a,f2.10p
+26.2,Wurtele,0,ON,E,f10.52a,f2.00p
+31.7,Maher,0,ON,E,f11.04a,f1.40p
+42.1,McInnis,0,ON,E,f11.30a,f1.15p
+43.1,Island Falls,0,ON,E,12.01p,1.00p
+55.9,Brownrigg,0,ON,E,f12.25p,f12.30p
+69.2,Fraserdale,1,ON,E,1.00p,12.05p
+96.3,Coral Rapids,0,ON,E,f1.50p,f11.00a
+126.1,Onakawana,0,ON,E,f2.41p,f9.50a
+141.9,Moose River,0,ON,E,3.25p,9.20a
+186.2,Moosonee,1,ON,E,ar 5.30p,lv 7.30a

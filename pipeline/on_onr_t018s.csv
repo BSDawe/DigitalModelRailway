@@ -1,0 +1,26 @@
+# Ontario Northland (Nipissing Central), Swastika - Kirkland Lake - Rouyn - Noranda, November 16, 1947 (scans/on1948/18.png). EASTERN TIME. Miles as printed.
+# Provinces: the line crosses into Quebec between Cheminis and Dasserat (taken as the boundary; Cheminis Ont.).
+# Key (page 18): * daily; dagger daily except Sunday; double dagger daily except Saturday; section Sunday only; pilcrow daily except Monday; b Tuesday and
+# Friday only; f flag stop; j flag stop Tue. Thu. Sat.; k Saturday only; n stops on flag daily except Saturday; o Thursday and Saturday; p daily except
+# Saturday and Sunday; r connection by bus; t flag stop daily except Monday and Friday. Buses (Porquis - Iroquois Falls, Elk Lake - New Liskeard) left out.
+#train col=No58 num=58 dir=down days=daily kind=passenger note="Swastika 1.55 p.m. to Noranda 4.25 p.m.; connection from No. 47 (Toronto 11.30 p.m.)."
+#train col=No54 num=54 dir=down days="ex Sun" kind=passenger note="Daily except Sunday: Swastika 6.50 a.m. to Noranda 9.20 a.m.; connection from The Northland, No. 49."
+#train col=No51 num=51 dir=up days=daily kind=passenger to=Timmins note="Noranda 1.30 p.m. to Swastika 4.05 p.m.; on as No. 51 to Timmins 8.10 p.m. (on_onr_t001.csv)."
+#train col=No53 num=53 dir=up days="Sun,Mon,Tue,Wed,Thu,Fri" kind=passenger note="Daily except Saturday: Noranda 5.45 p.m. to Swastika 8.10 p.m.; connection with The Northland, No. 50, for Toronto."
+mile,station,principal,prov,tz,No58,No54,No51,No53
+0,Swastika,1,ON,E,lv 1.55p,lv 6.50a,ar 4.05p,ar 8.10p
+5.7,Kirkland Lake,1,ON,E,2.17p,7.09a,3.44p,7.51p
+9.6,King Kirkland,0,ON,E,f2.28p,f7.19a,f3.30p,f7.39p
+14.1,Northlands Park,0,ON,E,f2.41p,f7.31a,f3.21p,f7.30p
+16.4,West Dobie,0,ON,E,f2.46p,,f3.16p,
+22.5,Larder Lake,0,ON,E,3.01p,7.50a,3.01p,7.12p
+26.0,Beaver Lake,0,ON,E,f3.08p,f7.57a,f2.52p,f7.04p
+32.1,Cheminis,0,ON,E,3.20p,8.10a,2.40p,6.52p
+38.5,Dasserat,0,QC,E,f3.34p,f8.23a,f2.26p,f6.38p
+42.0,Kanasuta,0,QC,E,f3.41p,f8.30a,f2.18p,f6.31p
+44.4,Lake Fortune,0,QC,E,f3.47p,f8.36a,f2.13p,f6.25p
+46.6,Arntfield,0,QC,E,3.53p,8.42a,2.07p,6.19p
+49.3,Aldermac,0,QC,E,f4.00p,f8.49a,f2.00p,f6.12p
+55.3,Boischatel,0,QC,E,f4.11p,f9.02a,f1.47p,f6.00p
+58.7,Rouyn,1,QC,E,4.20p,9.13a,1.38p,5.52p
+59.9,Noranda,1,QC,E,ar 4.25p,ar 9.20a,lv 1.30p,lv 5.45p

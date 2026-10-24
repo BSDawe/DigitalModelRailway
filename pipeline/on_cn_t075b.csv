@@ -7,7 +7,7 @@
 # w (Norway Bay) stops on signal from June 20 to Sept. 6, solid dot: stops for revenue passengers to or from Winnipeg or beyond (June 12 - Sept. 4):
 # conditional and day-only stops entered as f; passenger-condition stops as plain times. Mixed train days: z Fridays only (M205), i Tuesdays only (M209),
 # v Tuesdays and Saturdays (M213), a Mon. Wed. Fri. (M217), k Saturdays only (M206), x Mondays and Fridays (M214), b Tues. Thurs. Sat. (M218).
-# DOUBT: M210 Brent sign read as l (Mondays and Wednesdays). Mixed trains' slow stretches (Pembroke spur, M218 Gogama - Bethnal 107 min) are as printed.
+# M210 Brent: the check-mark sign (Wed. only; Brendan, 23 Oct 2026). Mixed trains' slow stretches (Pembroke spur, M218 Gogama - Bethnal 107 min) are as printed.
 #train col=No1 num=1 dir=down days=daily kind=passenger from=Montreal to=Vancouver name="Continental Limited" note="The Continental Limited, Montreal section (Montreal 8.20 p.m., on_cn_t075a.csv): Ottawa 10.55 p.m. by Pembroke Junction, North Bay and Capreol to Armstrong 11.45 p.m. (Eastern); on to Winnipeg and Vancouver."
 #train col=No3 num=3 dir=down days=daily kind=passenger from=Toronto to=Vancouver name="Continental Limited" note="The Continental Limited, Toronto section: Toronto 11.00 p.m. to Capreol 7.55 a.m. (on_cn_t075t.csv), Capreol 8.15 a.m. to Armstrong 10.30 p.m. (Eastern); on to Winnipeg and Vancouver."
 #train col=M205 num=205 dir=down days=Fri kind=mixed note="Mixed, Fridays: Ottawa (Bank Street) 8.20 a.m. to Pembroke 2.00 p.m."
@@ -17,7 +17,7 @@
 #train col=No2 num=2 dir=up days=daily kind=passenger from=Vancouver to=Montreal name="Continental Limited" note="The Continental Limited, Montreal section: Armstrong 6.40 a.m. (Eastern) by Capreol and North Bay to Ottawa 6.10 a.m.; on to Montreal 9.00 a.m."
 #train col=No4 num=4 dir=up days=daily kind=passenger from=Vancouver to=Toronto name="Continental Limited" note="The Continental Limited, Toronto section: Armstrong 7.45 a.m. (Eastern) to Capreol 10.20 p.m.; on to Toronto 7.00 a.m."
 #train col=M206 num=206 dir=up days=Sat kind=mixed note="Mixed, Saturdays: Pembroke 10.00 a.m. to Ottawa (Bank Street) 3.40 p.m."
-#train col=M210 num=210 dir=up days="Mon,Wed" kind=mixed note="Mixed: Brent 8.30 a.m. to Pembroke 2.25 p.m. DAYS IN DOUBT: the sign before 8.30 is read as l, Mondays and Wednesdays."
+#train col=M210 num=210 dir=up days=Wed kind=mixed note="Mixed, Wednesdays only: Brent 8.30 a.m. to Pembroke 2.25 p.m."
 #train col=M214 num=214 dir=up days="Mon,Fri" kind=mixed note="Mixed, Mondays and Fridays: Capreol 9.25 a.m. to Brent 5.30 p.m."
 #train col=M218 num=218 dir=up days="Tue,Thu,Sat" kind=mixed note="Mixed, Tuesdays, Thursdays and Saturdays: Foleyet 7.30 a.m. to Capreol 4.00 p.m."
 mile,station,principal,prov,tz,No1,No3,M205,M209,M213,M217,No2,No4,M206,M210,M214,M218
