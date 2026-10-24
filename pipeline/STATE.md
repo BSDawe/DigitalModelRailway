@@ -1455,3 +1455,6 @@ Stations of different railways within 250 m (70 pairs; script: same check over v
 - (23 Oct 2026) CN Table 108 (Cochrane - Kapuskasing - Hearst - Nakina: Nos. 11 / 12, mixed M421 / M422) and Table 116 (Longlac - Port Arthur - Fort William:
   Nos. 79 / 80) transcribed (on_cn_t108, on_cn_t116); The Northland's Kapuskasing section Nos. 149 / 150 as ONR over the CN (on_onr_t108; ONR graph box
   widened west to 82.6 W). Port Arthur placed by mileage (the CN Port Arthur point does not fit the printed miles), sharing the CN_PORT_ARTHUR stop.
+- (23 Oct 2026 21:46) FIXED: CN Nos. 1 / 2 (Montreal transcontinentals) ran North Bay - Capreol over the CP (Field had no point of its own; the cheapest
+  route went by Sudbury). Field pinned on the CN line (Brendan: about -80.0243, 46.5235; on_lines HAND). Now North Bay - Capreol 83.7 mi traced
+  (printed 83.4), all CN track.
