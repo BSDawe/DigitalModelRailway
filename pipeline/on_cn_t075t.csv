@@ -1,0 +1,7 @@
+# Canadian National, Table 75: Toronto - Capreol, the Toronto section of the Continental Limited (no intermediate stations printed). EASTERN TIME. Source: Official Guide, April 25, 1948, Table 75, Transcontinental Service (Brendan, 23 Oct 2026; scans/on1948/04.png westbound, 03.png eastbound, sideways).
+# Miles as printed (276.1). The line is the Canadian Northern route by Washago and Parry Sound (to route over the collection track).
+#train col=No3 num=3 dir=down days=daily kind=passenger to=Vancouver name="Continental Limited" note="The Continental Limited, Toronto section: Toronto 11.00 p.m. to Capreol 7.55 a.m.; on to Armstrong (on_cn_t075b.csv), Winnipeg and Vancouver."
+#train col=No4 num=4 dir=up days=daily kind=passenger from=Vancouver name="Continental Limited" note="The Continental Limited, Toronto section: Capreol 10.40 p.m. to Toronto 7.00 a.m."
+mile,station,principal,prov,tz,No3,No4
+0.0,Toronto (Union Station),1,ON,E,lv 11.00p,ar 7.00a
+276.1,Capreol,1,ON,E,ar 7.55a,lv 10.40p

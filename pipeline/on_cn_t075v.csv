@@ -1,0 +1,22 @@
+# Canadian National, Table 75: the Valleyfield sections of the Montreal - Ottawa trains, Coteau - Valleyfield (5.3 mi). EASTERN TIME. Source: Official Guide, April 25, 1948, Table 75, Transcontinental Service (Brendan, 23 Oct 2026; scans/on1948/04.png westbound, 03.png eastbound, sideways).
+# INTERPRETATION (to confirm): the table prints, under each Montreal - Ottawa train, "arr. Valleyfield" and "lve. Valleyfield" beside Coteau. Read as
+# cars split and joined at Coteau: westbound, one section on from Coteau to Valleyfield and one from Valleyfield joining for Ottawa; eastbound the
+# reverse. Only the Valleyfield times are printed; the Coteau end of each is taken from the main train at Coteau. No. 48: Coteau 9.50 - Valleyfield
+# 11.00 a.m. as printed (70 min for 5.3 mi).
+#train col=V153 num=153 dir=down days=Sun kind=passenger note="Valleyfield section of No. 153 from Montreal (Montreal 5.50 p.m., Coteau 7.00 p.m.)."
+#train col=V51 num=51 dir=down days="Mon,Tue,Wed,Thu,Fri" kind=passenger note="Valleyfield section of No. 51 from Montreal."
+#train col=V151 num=151 dir=down days=Sat kind=passenger note="Valleyfield section of No. 151 from Montreal."
+#train col=V47 num=47 dir=down days=daily kind=passenger note="Valleyfield section of No. 47 from Montreal."
+#train col=W153 num=153 dir=up days=Sun kind=passenger note="Valleyfield section of No. 153, joining at Coteau for Ottawa. Arrival at Coteau not printed: taken as the main train's departure."
+#train col=W51 num=51 dir=up days="Mon,Tue,Wed,Thu,Fri" kind=passenger note="Valleyfield section of No. 51 for Ottawa. Arrival at Coteau not printed."
+#train col=W151 num=151 dir=up days=Sat kind=passenger note="Valleyfield section of No. 151 for Ottawa. Arrival at Coteau not printed."
+#train col=W47 num=47 dir=up days=daily kind=passenger note="Valleyfield section of No. 47 for Ottawa (Sundays: leaves Valleyfield 9.55 a.m.). Arrival at Coteau not printed."
+#train col=V48 num=48 dir=down days="ex Sun" kind=passenger note="Valleyfield section of No. 48 from Ottawa: Coteau to Valleyfield 11.00 a.m. (as printed). Departure from Coteau not printed."
+#train col=V50 num=50 dir=down days=daily kind=passenger note="Valleyfield section of No. 50 from Ottawa. Departure from Coteau not printed."
+#train col=V152 num=152 dir=down days=Sun kind=passenger note="Valleyfield section of No. 152 from Ottawa. Departure from Coteau not printed."
+#train col=W48 num=48 dir=up days="ex Sun" kind=passenger note="Valleyfield section of No. 48 for Montreal. Arrival at Coteau not printed."
+#train col=W50 num=50 dir=up days=daily kind=passenger note="Valleyfield section of No. 50 for Montreal. Arrival at Coteau not printed."
+#train col=W152 num=152 dir=up days=Sun kind=passenger note="Valleyfield section of No. 152 for Montreal. Arrival at Coteau not printed."
+mile,station,principal,prov,tz,V153,V51,V151,V47,W153,W51,W151,W47,V48,V50,V152,W48,W50,W152
+39.4,Coteau,1,QC,E,lv 7.00p,lv 4.38p,lv 1.27p,lv 10.38a,ar 7.04p,ar 4.44p,ar 1.30p,ar 10.44a,lv 9.50a,lv 6.03p,lv 8.42p,ar 9.53a,ar 6.07p,ar 8.45p
+44.7,Valleyfield,1,QC,E,ar 7.20p,ar 4.55p,ar 1.50p,ar 11.00a,lv 6.35p,lv 4.05p,lv 1.00p,lv 9.30a,ar 11.00a,ar 6.25p,ar 9.00p,lv 9.30a,lv 5.35p,lv 8.20p

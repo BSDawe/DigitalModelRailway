@@ -1,0 +1,67 @@
+# Canadian National, Table 75 (Transcontinental Service), Ottawa - Pembroke Junction - Brent - North Bay - Capreol - Foleyet - Hornepayne - Armstrong.
+# EASTERN TIME (Armstrong is printed twice, "Armstrong (E.T.)" and "Armstrong (C.T.)": only the Eastern arrival/departure is entered here; Armstrong
+# and west is sk_cn_t075e.csv, in Central time). Source: Official Guide, April 25, 1948, Table 75, Transcontinental Service (Brendan, 23 Oct 2026; scans/on1948/04.png westbound, 03.png eastbound, sideways).
+# Miles from Montreal as printed. Pembroke is a short spur from Pembroke Junction: printed Pembroke Junction - Pembroke - Pembroke Junction (both 205.8);
+# No. 1 and No. 2 do not go into Pembroke (No. 1: Jct ar 1.38 / lv 1.50; No. 2: 3.45 both rows).
+# Signs: f flag stop; d stops for passengers to North Bay and beyond, s stops Sundays only, o stops Mondays only, #(sharp) stops on flag Tuesdays only,
+# w (Norway Bay) stops on signal from June 20 to Sept. 6, solid dot: stops for revenue passengers to or from Winnipeg or beyond (June 12 - Sept. 4):
+# conditional and day-only stops entered as f; passenger-condition stops as plain times. Mixed train days: z Fridays only (M205), i Tuesdays only (M209),
+# v Tuesdays and Saturdays (M213), a Mon. Wed. Fri. (M217), k Saturdays only (M206), x Mondays and Fridays (M214), b Tues. Thurs. Sat. (M218).
+# DOUBT: M210 Brent sign read as l (Mondays and Wednesdays). Mixed trains' slow stretches (Pembroke spur, M218 Gogama - Bethnal 107 min) are as printed.
+#train col=No1 num=1 dir=down days=daily kind=passenger from=Montreal to=Vancouver name="Continental Limited" note="The Continental Limited, Montreal section (Montreal 8.20 p.m., on_cn_t075a.csv): Ottawa 10.55 p.m. by Pembroke Junction, North Bay and Capreol to Armstrong 11.45 p.m. (Eastern); on to Winnipeg and Vancouver."
+#train col=No3 num=3 dir=down days=daily kind=passenger from=Toronto to=Vancouver name="Continental Limited" note="The Continental Limited, Toronto section: Toronto 11.00 p.m. to Capreol 7.55 a.m. (on_cn_t075t.csv), Capreol 8.15 a.m. to Armstrong 10.30 p.m. (Eastern); on to Winnipeg and Vancouver."
+#train col=M205 num=205 dir=down days=Fri kind=mixed note="Mixed, Fridays: Ottawa (Bank Street) 8.20 a.m. to Pembroke 2.00 p.m."
+#train col=M209 num=209 dir=down days=Tue kind=mixed note="Mixed, Tuesdays: Pembroke 8.00 a.m. to Brent 1.40 p.m."
+#train col=M213 num=213 dir=down days="Tue,Sat" kind=mixed note="Mixed, Tuesdays and Saturdays: Brent 7.00 a.m. to Capreol 3.10 p.m."
+#train col=M217 num=217 dir=down days="Mon,Wed,Fri" kind=mixed note="Mixed, Mondays, Wednesdays and Fridays: Capreol 9.30 a.m. to Foleyet 5.35 p.m."
+#train col=No2 num=2 dir=up days=daily kind=passenger from=Vancouver to=Montreal name="Continental Limited" note="The Continental Limited, Montreal section: Armstrong 6.40 a.m. (Eastern) by Capreol and North Bay to Ottawa 6.10 a.m.; on to Montreal 9.00 a.m."
+#train col=No4 num=4 dir=up days=daily kind=passenger from=Vancouver to=Toronto name="Continental Limited" note="The Continental Limited, Toronto section: Armstrong 7.45 a.m. (Eastern) to Capreol 10.20 p.m.; on to Toronto 7.00 a.m."
+#train col=M206 num=206 dir=up days=Sat kind=mixed note="Mixed, Saturdays: Pembroke 10.00 a.m. to Ottawa (Bank Street) 3.40 p.m."
+#train col=M210 num=210 dir=up days="Mon,Wed" kind=mixed note="Mixed: Brent 8.30 a.m. to Pembroke 2.25 p.m. DAYS IN DOUBT: the sign before 8.30 is read as l, Mondays and Wednesdays."
+#train col=M214 num=214 dir=up days="Mon,Fri" kind=mixed note="Mixed, Mondays and Fridays: Capreol 9.25 a.m. to Brent 5.30 p.m."
+#train col=M218 num=218 dir=up days="Tue,Thu,Sat" kind=mixed note="Mixed, Tuesdays, Thursdays and Saturdays: Foleyet 7.30 a.m. to Capreol 4.00 p.m."
+mile,station,principal,prov,tz,No1,No3,M205,M209,M213,M217,No2,No4,M206,M210,M214,M218
+117.7,Ottawa (Union Station),1,ON,E,lv 10.55p,,,,,,ar 6.10a,,,,,
+119.6,Ottawa (Bank Street),0,ON,E,,,lv 8.20a,,,,,,ar 3.40p,,,
+146.6,Woodlawn,0,ON,E,,,f9.45a,,,,,,f2.20p,,,
+152.6,Fitzroy,0,ON,E,f12.05a,,10.00a,,,,f5.09a,,2.00p,,,
+159.3,Pontiac,0,QC,E,,,f10.20a,,,,,,f1.25p,,,
+164.6,Norway Bay,0,QC,E,,,f10.30a,,,,,,f1.10p,,,
+166.9,Bristol,0,QC,E,f12.30a,,10.55a,,,,f4.48a,,1.05p,,,
+178.2,Portage du Fort,0,QC,E,f12.50a,,11.45a,,,,f4.30a,,12.25p,,,
+191.6,Beachburg,0,ON,E,1.16a,,1.00p,,,,4.07a,,11.30a,,,
+198.8,Finchley,0,ON,E,,,f1.25p,,,,,,f10.50a,,,
+205.8,Pembroke Junction,1,ON,E,ar 1.38a / lv 1.50a,,1.45p,,,,,,10.30a,,,
+207.2,Pembroke,1,ON,E,,,ar 2.00p,lv 8.00a,,,,,lv 10.00a,ar 2.25p,,
+205.8,Pembroke Junction,1,ON,E,,,,8.25a,,,3.45a,,,2.10p,,
+215.7,Alice,0,ON,E,,,,f9.05a,,,,,,f1.15p,,
+242.2,Achray,0,ON,E,,,,f10.45a,,,,,,f11.20a,,
+259.8,Lake Traverse,0,ON,E,f3.35a,,,12.20p,,,f2.28a,,,9.50a,,
+282.9,Brent,1,ON,E,4.45a,,,ar 1.40p,lv 7.00a,,1.50a,,,lv 8.30a,ar 5.30p,
+286.9,Government Park,0,ON,E,4.52a,,,,f7.08a,,1.25a,,,,f5.15p,
+304.6,Kiosk,0,ON,E,f5.17a,,,,f7.58a,,12.43a,,,,f4.25p,
+317.7,Fossmill,0,ON,E,f5.38a,,,,f8.23a,,f12.19a,,,,3.20p,
+325.6,Alderdale,0,ON,E,5.50a,,,,8.50a,,12.06a,,,,2.50p,
+344.3,North Bay,1,ON,E,ar 6.24a / lv 6.39a,,,,ar 9.50a / lv 10.00a,,ar 11.20p / lv 11.30p,,,,ar 1.20p / lv 1.20p,
+359.0,Meadowside,0,ON,E,,,,,f10.30a,,,,,,f12.35p,
+376.6,Field,0,ON,E,7.28a,,,,11.50a,,10.34p,,,,11.50a,
+404.9,Crerar,0,ON,E,,,,,f1.40p,,,,,,f10.14a,
+417.0,Skead,0,ON,E,,,,,f2.35p,,,,,,f9.40a,
+427.7,Capreol,1,ON,E,ar 8.50a / lv 9.10a,lv 8.15a,,,ar 3.10p,lv 9.30a,ar 9.00p / lv 9.20p,ar 10.20p,,,lv 9.25a,ar 4.00p
+436.9,Milnet,0,ON,E,,,,,,9.50a,,,,,,3.35p
+479.3,Ruel,0,ON,E,,,,,,11.40a,,,,,,1.40p
+492.0,Westree,0,ON,E,f10.49a,,,,,12.45p,,8.34p,,,,1.05p
+496.3,Ostrom,0,ON,E,,,,,,f12.55p,,,,,,f12.20p
+514.3,Gogama,1,ON,E,11.26a,10.31a,,,,2.25p,6.41p,7.59p,,,,11.30a
+523.4,Bethnal,0,ON,E,,,,,,f2.45p,,,,,,f9.43a
+532.8,Stackpool,0,ON,E,,,,,,3.05p,,,,,,9.25a
+553.2,Tionaga,0,ON,E,,,,,,4.05p,,,,,,8.15a
+576.0,Foleyet,1,ON,E,ar 1.00p / lv 1.10p,ar 12.05p / lv 12.15p,,,,ar 5.35p,ar 5.00p / lv 5.10p,ar 6.15p / lv 6.25p,,,,lv 7.30a
+610.9,Elsas,0,ON,E,f2.05p,1.09p,,,,,f4.04p,5.13p,,,,
+685.3,Oba,0,ON,E,4.06p,3.08p,,,,,2.00p,3.08p,,,,
+723.8,Hornepayne,1,ON,E,5.25p,4.30p,,,,,1.00p,2.10p,,,,
+743.3,Nagogami River,0,ON,E,,4.52p,,,,,,1.23p,,,,
+825.1,Longlac,1,ON,E,7.51p,6.50p,,,,,10.04a,11.15a,,,,
+855.4,Nakina,1,ON,E,8.50p,7.35p,,,,,9.15a,10.25a,,,,
+870.4,Cavell,0,ON,E,,,,,,,,,,,,
+967.6,Armstrong,1,ON,E,ar 11.45p,ar 10.30p,,,,,lv 6.40a,lv 7.45a,,,,

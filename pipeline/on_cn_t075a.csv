@@ -1,0 +1,37 @@
+# Canadian National, Table 75 (Transcontinental Service), Montreal - Coteau - Ottawa. EASTERN TIME. Source: Official Guide, April 25, 1948, Table 75, Transcontinental Service (Brendan, 23 Oct 2026; scans/on1948/04.png westbound, 03.png eastbound, sideways).
+# Miles from Montreal as printed. Times as printed. The Valleyfield sections (Coteau - Valleyfield, 5.3 mi) are in on_cn_t075v.csv.
+# Signs (key at the head of the page): f flag stop; e stops for passengers to or from St. Polycarpe and beyond; g stops for passengers from Levis and
+# beyond or to Coteau and beyond; c stops for passengers to North Bay and beyond; colon (:) stops to leave passengers from west of Coteau; open square:
+# stops for passengers to or from Ottawa and beyond; natural sign: stops for revenue passengers to or from Capreol, Port Arthur, Armstrong or beyond.
+# All these conditional stops are entered as plain times. s (No. 2 Alexandria) stops Sundays only: entered f. j (No. 50 Carlsbad Springs 4.15) not
+# in the key as read: plain time. No. 51 Psi = daily except Saturday and Sunday. No. 47 Sunday sign y: on Sundays leaves (Valleyfield) 9.55 a.m.
+#train col=No1 num=1 dir=down days=daily kind=passenger to=Vancouver name="Continental Limited" note="The Continental Limited, Montreal section: Montreal 8.20 p.m.; Ottawa 10.45 - 10.55 p.m.; on by Pembroke, North Bay and Capreol (on_cn_t075b.csv) to Winnipeg and Vancouver."
+#train col=No153 num=153 dir=down days=Sun kind=passenger note="Sundays (Mondays May 24 and Sept. 6 instead of the Sundays before): Montreal 5.50 p.m. to Ottawa 9.05 p.m. by Coteau; a section from Valleyfield joins at Coteau."
+#train col=No51 num=51 dir=down days="Mon,Tue,Wed,Thu,Fri" kind=passenger note="Daily except Saturday and Sunday: Montreal 3.35 p.m. to Ottawa 6.55 p.m.; a section from Valleyfield joins at Coteau."
+#train col=No151 num=151 dir=down days=Sat kind=passenger note="Saturdays: Montreal 12.30 p.m. to Ottawa 3.35 p.m.; a section from Valleyfield joins at Coteau."
+#train col=No47 num=47 dir=down days=daily kind=passenger note="Montreal 9.30 a.m. to Ottawa 12.45 p.m.; a section from Valleyfield joins at Coteau (on Sundays it leaves Valleyfield 9.55 a.m.)."
+#train col=No2 num=2 dir=up days=daily kind=passenger from=Vancouver name="Continental Limited" note="The Continental Limited, Montreal section, from Vancouver and Winnipeg: Ottawa 6.35 a.m. to Montreal 9.00 a.m. Alexandria: stops Sundays only (entered as a flag stop)."
+#train col=No48 num=48 dir=up days="ex Sun" kind=passenger note="Daily except Sunday: Ottawa 7.45 a.m. to Montreal 11.00 a.m. by Coteau; a section goes on from Coteau to Valleyfield."
+#train col=No50 num=50 dir=up days=daily kind=passenger note="Ottawa 4.00 p.m. to Montreal 7.10 p.m.; a section goes on from Coteau to Valleyfield."
+#train col=No152 num=152 dir=up days=Sun kind=passenger note="Sundays: Ottawa 7.10 p.m. to Montreal 9.55 p.m.; a section goes on from Coteau to Valleyfield."
+mile,station,principal,prov,tz,No1,No153,No51,No151,No47,No2,No48,No50,No152
+0.0,Montreal (Central Station),1,QC,E,lv 8.20p,lv 5.50p,lv 3.35p,lv 12.30p,lv 9.30a,ar 9.00a,ar 11.00a,ar 7.10p,ar 9.55p
+9.4,Lachine,0,QC,E,8.41p,6.15p,4.00p,12.56p,9.55a,,10.30a,6.40p,9.28p
+11.8,Dorval,0,QC,E,,,4.04p,,,,,,
+22.3,Ste. Anne de Bellevue,1,QC,E,8.54p,6.28p,4.18p,1.10p,10.10a,8.19a,10.14a,6.26p,9.13p
+26.0,Vaudreuil (Dorion),0,QC,E,,,4.22p,,f10.15a,,10.10a,,9.09p
+30.7,Cedar-Cedres,0,QC,E,,6.41p,,,10.22a,,10.03a,,9.02p
+39.4,Coteau,1,QC,E,,ar 7.00p / lv 7.04p,ar 4.38p / lv 4.44p,ar 1.27p / lv 1.30p,ar 10.38a / lv 10.44a,,ar 9.50a / lv 9.53a,ar 6.03p / lv 6.07p,ar 8.42p / lv 8.45p
+43.2,St. Polycarpe,0,QC,E,,7.11p,4.50p,1.36p,10.50a,,9.42a,5.54p,
+45.6,De Beaujeu,0,QC,E,,f7.16p,4.54p,1.41p,,,9.37a,,
+50.4,Ste. Justine,0,QC,E,,7.25p,5.03p,1.48p,11.00a,,9.29a,5.43p,
+54.9,Glen Robertson,1,ON,E,,7.33p,5.11p,1.56p,11.10a,,9.22a,5.36p,
+62.4,Alexandria,0,ON,E,9.38p,7.46p,5.24p,2.08p,11.22a,f7.35a,9.08a,5.24p,8.17p
+69.0,Greenfield,0,ON,E,,f7.54p,5.35p,2.18p,11.32a,,8.55a,5.10p,
+73.7,Maxville,0,ON,E,,8.01p,5.45p,2.26p,11.40a,,8.48a,5.02p,
+79.7,Moose Creek,0,ON,E,,8.10p,5.55p,2.36p,11.49a,,8.39a,4.53p,
+86.9,Casselman,0,ON,E,,8.19p,6.06p,2.46p,11.59a,,8.28a,4.42p,
+95.3,Limoges,0,ON,E,,8.29p,6.17p,2.56p,12.09p,,8.16a,4.30p,
+100.1,Vars,0,ON,E,,8.36p,6.25p,3.04p,12.17p,,8.09a,4.23p,
+106.4,Carlsbad Springs,0,ON,E,,f8.46p,6.36p,3.15p,12.27p,,8.00a,4.15p,
+117.7,Ottawa (Union Station),1,ON,E,ar 10.45p,ar 9.05p,ar 6.55p,ar 3.35p,ar 12.45p,lv 6.35a,lv 7.45a,lv 4.00p,lv 7.10p
