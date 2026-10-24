@@ -1,0 +1,7 @@
+# Canadian Pacific boat trains for the S.S. Manitoba cruises, Toronto - Owen Sound, every Thursday (707) and Tuesday (708), June 24 to August 26 (scans/on1948/10.png).
+# EASTERN TIME. No intermediate stations printed; miles not printed (CP Toronto - Owen Sound by Orangeville, about 121 mi: ESTIMATE, to check against the line).
+#train col=No707 num=707 dir=down days=Thu kind=passenger note="Boat train for the S.S. Manitoba cruise, Thursdays June 24 to August 26: Toronto 6.00 p.m. to Owen Sound 10.30 p.m."
+#train col=No708 num=708 dir=up days=Tue kind=passenger note="Boat train from the S.S. Manitoba cruise, Tuesdays: Owen Sound 4.45 p.m. to Toronto 9.15 p.m."
+mile,station,principal,prov,tz,No707,No708
+0.0,Toronto (Union Station),1,ON,E,lv 6.00p,ar 9.15p
+121.0,Owen Sound,1,ON,E,ar 10.30p,lv 4.45p

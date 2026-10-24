@@ -1,0 +1,18 @@
+# "Happy Holiday Cruises", S.S. Manitoba (CP), Port McNicoll / Owen Sound - Sault Ste. Marie - Fort William, every Thursday June 24 to August 26
+# inclusive (CP timetable 1948, scans/on1948/10.png). EASTERN TIME. NOT BUILT: waiting for port positions. A 5-day cruise: in the model week
+# (Mon 5 - Sun 11 July) the Thursday 8 July sailing is out Thu - Sun and the previous week's (Thu 1 July) comes back Mon 5 - Tue 6 July.
+# Boat trains (CP, Toronto - Owen Sound, no intermediate times): 707 Toronto 6.00 p.m. - Owen Sound 10.30 p.m. Thu.; 708 Owen Sound 4.45 p.m. -
+# Toronto 9.15 p.m. Tue. (on_cp_t707.csv). Fare includes meals and berth on the ship at Fort William (Sat. 5.00 p.m. - Sun. 6.00 p.m.).
+ship,port,arrlv,time,day
+Manitoba,Port McNicoll,lv,4.00p,Thu
+Manitoba,Owen Sound,ar,10.00p,Thu
+Manitoba,Owen Sound,lv,11.00p,Thu
+Manitoba,Sault Ste. Marie,ar,7.30p,Fri
+Manitoba,Sault Ste. Marie,lv,8.00p,Fri
+Manitoba,Fort William,ar,5.00p,Sat
+Manitoba,Fort William,lv,6.00p,Sun
+Manitoba,Sault Ste. Marie,ar,4.00p,Mon
+Manitoba,Sault Ste. Marie,lv,6.00p,Mon
+Manitoba,Owen Sound,ar,2.30p,Tue
+Manitoba,Owen Sound,lv,3.00p,Tue
+Manitoba,Port McNicoll,ar,9.00p,Tue

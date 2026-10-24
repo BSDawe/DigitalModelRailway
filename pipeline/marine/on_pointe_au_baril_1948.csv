@@ -1,0 +1,14 @@
+# Pointe au Baril Island Transport (operated by Fred G. Barned), boat schedule, CP timetable 1948 (scans/on1948/05.png). EASTERN TIME. NOT BUILT:
+# waiting for port positions (Brendan, 23 Oct 2026). Pte. au Baril = the Government Wharf; the boat meets CP Train No. 25 (Table 58).
+# May 1 to 31: tri-weekly, Tuesday, Thursday and Saturday, leaving the Government Wharf after the arrival of Train No. 25 (no times given).
+# June 1 to Sept. 6 inclusive, as below. Rows as printed (an out-and-back run). "Leaving times not shown are by appointment."
+# Bellevue lv and Skerryvore lv are blank on the return except the Sunday p.m. run (Bellevue lv 6.30): the boat returns direct otherwise.
+port,arrlv,Daily ex Sun a.m.,Sun only a.m.,Daily ex Sun p.m.,Sun only p.m.
+Pte. au Baril,lv,6.30a,7.30a,3.45p,5.30p
+Skerryvore,ar,7.15a,8.15a,4.30p,6.15p
+Bellevue,ar,7.15a,8.15a,4.45p,6.30p
+Ojibway,ar,7.45a,8.45a,5.00p,7.00p
+Ojibway,lv,8.00a,9.00a,6.00p,7.15p
+Bellevue,lv,,,,6.30p
+Skerryvore,lv,,,,
+Pte. au Baril,ar,9.00a,9.45a,7.30p,8.30p

@@ -1,0 +1,28 @@
+# Canadian Pacific Great Lakes steamships Keewatin and Assiniboia, Port McNicoll - Sault Ste. Marie - Port Arthur - Fort William, June 5 to Sept. 11
+# (CP timetable 1948, scans/on1948/09.png). NOT BUILT: waiting for port positions (the Sault is the CP / canal wharf, Ont. or Mich.?).
+# Times as printed: Eastern time (E.T.) throughout the voyage. Westbound from Port McNicoll every Tuesday and Saturday; eastbound from Fort William
+# every Tuesday and Saturday. Boat trains: 703 Toronto 2.15 p.m. - Port McNicoll 5.15 p.m. Tue. Sat.; 704 Port McNicoll 8.45 a.m. - Toronto 11.45 a.m.
+# Mon. Thu. (both in on_cp_t058.csv). At Fort William: Train 1 lv 7.50 a.m. C.T. Thu. Mon., ar Winnipeg 7.45 p.m. (= CP No. 1, extra coaches, parlour
+# and dining cars Mon. and Thu.); Train 4 lv Winnipeg 7.20 p.m. C.T. Fri. Mon., ar Fort William 5.40 a.m. C.T. Sat. Tue. (= CP No. 4, sleepers placed
+# at ship's side on sailing days, occupancy until 9.00 a.m. E.T.).
+ship,port,arrlv,time,day
+Keewatin,Port McNicoll,lv,5.30p,Tue
+Keewatin,Sault Ste. Marie,ar,11.45a,Wed
+Keewatin,Sault Ste. Marie,lv,12.30p,Wed
+Keewatin,Port Arthur,ar,6.45a,Thu
+Keewatin,Fort William,ar,8.30a,Thu
+Assiniboia,Port McNicoll,lv,5.30p,Sat
+Assiniboia,Sault Ste. Marie,ar,11.45a,Sun
+Assiniboia,Sault Ste. Marie,lv,12.30p,Sun
+Assiniboia,Port Arthur,ar,6.45a,Mon
+Assiniboia,Fort William,ar,8.30a,Mon
+Keewatin,Fort William,lv,11.00a,Sat
+Keewatin,Port Arthur,lv,12.30p,Sat
+Keewatin,Sault Ste. Marie,ar,8.30a,Sun
+Keewatin,Sault Ste. Marie,lv,11.30a,Sun
+Keewatin,Port McNicoll,ar,6.30a,Mon
+Assiniboia,Fort William,lv,4.00p,Tue
+Assiniboia,Port Arthur,lv,5.30p,Tue
+Assiniboia,Sault Ste. Marie,ar,1.00p,Wed
+Assiniboia,Sault Ste. Marie,lv,2.00p,Wed
+Assiniboia,Port McNicoll,ar,8.30a,Thu

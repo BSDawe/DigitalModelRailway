@@ -1,0 +1,21 @@
+# Muskoka Lakes Navigation Company, steamer service, CP timetable 1948 (scans/on1948/08.png). EASTERN TIME. NOT BUILT: waiting for port positions.
+# Rows as printed (the order is not the order of calls; each column's times give its own route). Connecting CP trains at Bala (Table 58):
+#   col 1: Toronto Union lv 11.15 p.m. (dagger = daily except Sunday), Bala (Can. Pac.) ar 2.45 a.m. = Train No. 27.
+#   col 2: Toronto lv 9.30 a.m. (daily except Sunday), Bala ar 1.23 p.m. = Train No. 25.
+#   col 3: Bala (Can. Pac.) lv 11.45 a.m., Toronto ar 3.20 p.m. (daily except Sunday) = Train No. 26.
+#   col 4: Bala (Can. Pac.) lv 4.00 a.m., Toronto ar 7.30 a.m. (daily except Sunday) = Train No. 28.
+# Signs: dagger daily except Sunday (Natural Park col 1 and col 4, Elgin House col 2 and col 3); f stops on signal (no time in col 1 at Elgin House).
+# DOUBTS: col 1 Minett 11.10 a.m. comes before Rosseau 12.00 noon (route Royal Muskoka - Minett - Rosseau - Elgin House - Natural Park); col 2 Elgin
+# House 6.05 before Rosseau 7.30; col 3 Rosseau 7.30 a.m. before Elgin House 7.45; col 4 Rosseau 2.00 p.m. = Natural Park 2.00 p.m. (two boats meeting?)
+# and Beaumaris 3.30 p.m. out of sequence (between Port Carling 5.00 and Bala 7.00). Possibly two boats and a transfer: ask Brendan / a route map.
+port,arrlv,Jun 26-Sep 6 down,Jun 14-Sep 6 down,Jun 14-Sep 6 up,Jun 26-Sep 6 up
+Bala (Steamer),lv/ar,lv 7.30a,lv 2.00p,ar 11.40a,ar 7.00p
+Beaumaris,,,3.30p,10.40a,3.30p
+Port Carling,,9.40a,4.30p,10.00a,5.00p
+Windermere,,10.30a,5.10p,9.10a,4.30p
+Wigwassan,,10.40a,5.15p,9.00a,f4.15p
+Royal Muskoka,,10.50a,5.30p,8.45a,4.00p
+Rosseau,,12.00n,7.30p,7.30a,2.00p
+Minett,,11.10a,5.50p,8.20a,f3.40p
+Elgin House,,f,6.05p,7.45a,f3.10p
+Natural Park,,1.05p,,,2.00p
