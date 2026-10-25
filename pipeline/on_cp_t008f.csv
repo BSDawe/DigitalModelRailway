@@ -1,4 +1,4 @@
-# Quebec Central Railway (CP): Vallee Jct. - Beauceville - St. Georges - Lac Frontiere, the connecting trains of Table 8 (printed in italics, no numbers; mixed). Canadian Pacific timetable, 1948, Table 8 (Quebec Central Railway, a CP property). Eastern time.
+# Quebec Central Railway (CP): Vallee Jct. - Beauceville - St. Georges - Lac Frontiere, the connecting trains of Table 8 (printed in italics, no numbers; mixed). Canadian Pacific timetable, 1948, Table 8 (Quebec Central Railway, a CP property), with the intermediate stations (whole miles, times) from the Official Guide, April 25, 1948, which the CP table leaves out. Eastern time.
 # Down: Morisset printed "Ar" 12.40 and Lac Frontiere "Ar" 3.35: entered as one run.
 #train col=VF1 num="" dir=down days="Mon,Tue,Wed,Thu,Fri,Sat" kind=mixed note="Connects at Vallee Jct. with No. 2 from Levis."
 #train col=VF2 num="" dir=up days="Mon,Tue,Wed,Thu,Fri,Sat" kind=mixed note="Connects at Vallee Jct. with No. 5 for Levis."
@@ -6,6 +6,7 @@ mile,station,principal,prov,tz,VF1,VF2
 0.0,Vallee Jct.,1,QC,E,lv 10.15a,ar 4.10p
 4.8,St. Joseph,0,QC,E,10.30a,3.45p
 14.5,Beauceville,1,QC,E,10.55a,3.15p
-22.8,St. Georges,1,QC,E,11.35a,2.15p
+22.8,St. Georges,1,QC,E,11.35a,2.45p
 34.8,Morisset,0,QC,E,12.40p,1.30p
+61.0,St. Camille,0,QC,E,2.35p,11.20a
 79.0,Lac Frontiere,1,QC,E,ar 3.35p,lv 10.15a

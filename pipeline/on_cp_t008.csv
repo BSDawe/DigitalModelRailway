@@ -1,4 +1,4 @@
-# Quebec Central Railway (CP): Quebec (Palais Station) - Scotts Jct. - Vallee Jct. - Tring Jct. - Thetford Mines - Sherbrooke - Beebe Jct. - Newport, Vt. Canadian Pacific timetable, 1948, Table 8 (Quebec Central Railway, a CP property). Eastern time.
+# Quebec Central Railway (CP): Quebec (Palais Station) - Scotts Jct. - Vallee Jct. - Tring Jct. - Thetford Mines - Sherbrooke - Beebe Jct. - Newport, Vt. Canadian Pacific timetable, 1948, Table 8 (Quebec Central Railway, a CP property), with the intermediate stations (whole miles, times) from the Official Guide, April 25, 1948, which the CP table leaves out. Eastern time.
 # On the map to the border south of Beebe Jct.; the border times (~) are estimated by mileage between Beebe Jct. and Newport (not printed). Quebec - Scotts Jct. runs over the
 # CN where the CP has no track (Quebec Bridge; Brendan, 25 Oct 2026: CP track preferred). Sherbrooke - Beebe Jct. - Newport is the Massawippi Valley line.
 # Buses (the Beebe Jct. - Rock Island shuttle and the Sherbrooke - Newport buses) are not entered. Vallee Jct., Tring Jct., Sherbrooke and Beebe Jct. printed Ar / Lv: one row.
@@ -6,14 +6,22 @@
 #train col=No1 num=1 dir=up days=daily kind=passenger note="Quebec Central. From Boston and New York (CP No. 209, The Red Wing, to Newport, Vt.; Newport 4.45 a.m.). Air-conditioned cars."
 mile,station,principal,prov,tz,No6,No1
 0.0,Quebec (Palais Station),1,QC,E,lv 3.15p,ar 11.45a
+14.0,Charny,0,QC,E,3.50p,11.09a
 36.5,Scotts Jct.,1,QC,E,4.32p,10.28a
 41.3,Ste. Marie,0,QC,E,4.44p,10.18a
 48.1,Vallee Jct.,1,QC,E,ar 4.56p / lv 5.06p,ar 9.59a / lv 10.05a
 57.7,Tring Jct.,1,QC,E,5.32p,ar 9.35a / lv 9.40a
+63.0,East Broughton,0,QC,E,5.42p,9.21a
 79.3,Thetford Mines,1,QC,E,6.13p,8.50a
+84.0,Black Lake,0,QC,E,6.27p,8.36a
+94.0,Disraeli,0,QC,E,6.48p,8.12a
+99.0,Garthby,0,QC,E,6.58p,8.01a
+110.0,Weedon,0,QC,E,7.18p,7.41a
+121.0,Bishopton,0,QC,E,7.34p,7.24a
 130.1,East Angus,0,QC,E,7.52p,7.05a
 147.0,Sherbrooke,1,QC,E,ar 8.25p / lv 8.40p,ar 6.15a / lv 6.30a
 149.9,Lennoxville,0,QC,E,8.48p,6.04a
 159.4,North Hatley,0,QC,E,9.05p,5.47a
+168.0,Ayers Cliff,0,QC,E,9.24p,5.28a
 180.9,Beebe Jct.,1,QC,E,ar 9.50p / lv 10.00p,ar 4.57a / lv 5.05a
 182.0,"International Boundary (QC, to Newport, Vt.)",1,QC,E,~ar 10.02p,~lv 4.55a

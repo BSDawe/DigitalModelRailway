@@ -1,6 +1,9 @@
-# Quebec Central Railway (CP): Tring Jct. - Megantic, the connecting trains of Table 8 (printed in italics, no numbers, no intermediate times; mixed). Canadian Pacific timetable, 1948, Table 8 (Quebec Central Railway, a CP property). Eastern time.
+# Quebec Central Railway (CP): Tring Jct. - Megantic, the connecting trains of Table 8 (printed in italics, no numbers, no intermediate times; mixed). Canadian Pacific timetable, 1948, Table 8 (Quebec Central Railway, a CP property), with the intermediate stations (whole miles, times) from the Official Guide, April 25, 1948, which the CP table leaves out. Eastern time.
 #train col=TM1 num="" dir=down days="Mon,Tue,Wed,Thu,Fri,Sat" kind=mixed note="Connects at Tring Jct. with No. 2 from Levis."
 #train col=TM2 num="" dir=up days="Mon,Tue,Wed,Thu,Fri,Sat" kind=mixed note="Connects at Tring Jct. with No. 1 for Quebec."
 mile,station,principal,prov,tz,TM1,TM2
 0.0,Tring Jct.,1,QC,E,lv 12.20p,ar 9.15a
+11.0,St. Victor,0,QC,E,12.55p,8.25a
+24.0,St. Evariste,0,QC,E,2.30p,7.20a
+32.0,Courcelles,0,QC,E,3.05p,6.30a
 60.0,Megantic,1,QC,E,ar 5.15p,lv 4.50a

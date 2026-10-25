@@ -1,4 +1,4 @@
-# Quebec Central Railway (CP): Levis - Scotts Jct. - Vallee Jct. - Tring Jct. - Thetford Mines - Sherbrooke (Nos. 2 / 5). Canadian Pacific timetable, 1948, Table 8 (Quebec Central Railway, a CP property). Eastern time.
+# Quebec Central Railway (CP): Levis - Scotts Jct. - Vallee Jct. - Tring Jct. - Thetford Mines - Sherbrooke (Nos. 2 / 5). Canadian Pacific timetable, 1948, Table 8 (Quebec Central Railway, a CP property), with the intermediate stations (whole miles, times) from the Official Guide, April 25, 1948, which the CP table leaves out. Eastern time.
 # Levis - Scotts Jct. 32.0 mi; beyond, the Quebec - Scotts Jct. miles less 4.5. The Quebec - Levis ferry is not built (to do).
 #train col=No2 num=2 dir=down days="Mon,Tue,Wed,Thu,Fri,Sat" kind=passenger note="Quebec Central. Connects from the Quebec - Levis ferry (Quebec 6.40 a.m.)."
 #train col=No5 num=5 dir=up days="Mon,Tue,Wed,Thu,Fri,Sat" kind=passenger note="Quebec Central. Connects with the Levis - Quebec ferry (Quebec 7.50 p.m.)."
@@ -8,6 +8,12 @@ mile,station,principal,prov,tz,No2,No5
 36.8,Ste. Marie,0,QC,E,8.19a,6.16p
 43.6,Vallee Jct.,1,QC,E,ar 8.32a / lv 8.42a,ar 5.49p / lv 6.03p
 53.2,Tring Jct.,1,QC,E,9.08a,5.32p
+58.5,East Broughton,0,QC,E,9.21a,5.19p
 74.8,Thetford Mines,1,QC,E,9.52a,4.47p
+79.5,Black Lake,0,QC,E,10.09a,4.32p
+89.5,Disraeli,0,QC,E,10.30a,4.10p
+94.5,Garthby,0,QC,E,10.40a,4.00p
+105.5,Weedon,0,QC,E,11.00a,3.40p
+116.5,Bishopton,0,QC,E,11.17a,3.23p
 125.6,East Angus,0,QC,E,11.35a,3.05p
 142.5,Sherbrooke,1,QC,E,ar 12.10p,lv 2.30p

@@ -1686,3 +1686,10 @@ Stations of different railways within 250 m (70 pairs; script: same check over v
 - (25 Oct 2026, Brendan) Zoomed-out views: below FAR_K = 0.0009 px/m (the Saskatchewan, Manitoba, Lakehead, Northern Ontario, Ontario and Quebec views;
   Regina 0.0012 and closer unchanged) only junctions and terminals are drawn (station hub: one neighbour or three or more in the network of all lines' consecutive stops; overlapping lines count once) and train-number labels are left off (a selected train keeps its number, a selected
   station is still drawn). page_template.html: FAR_K, the station loop in drawBase, the three number-label blocks.
+- (25 Oct 2026) QUEBEC CENTRAL from the Official Guide (April 25, 1948; scan og1948_qc/quebec_central, signs; Brendan: the CP table is condensed): intermediate
+  stations added to on_cp_t008 / t008l / t008f / t008m with the Guide's times and whole miles: Charny (CN; Nos. 6 / 1), East Broughton, Black Lake, Disraeli,
+  Garthby, Weedon, Bishopton, Ayers Cliff (main line); St. Camille (Lac Frontiere branch); St. Victor, St. Evariste, Courcelles (Megantic branch, which had only
+  its ends). CP times kept where both print one (Thetford Mines CP 6.13 / 9.52, Guide 6.18 / 10.00). Lac Frontiere up mixed: St. Georges 2.45 (Guide; my
+  CP reading had 2.15). Guide signs: large dot = connecting train (the B&M south of Newport). NOT ADDED (ask Brendan): the Guide's Sherbrooke - Rock Island -
+  Newport trains "34" / "35" (Sherbrooke 1.00 p.m. / Newport 11.25 a.m.), the Beebe Jct. - Rock Island - Stanstead shuttle with Nos. 6 / 1, and a Vallee Jct. -
+  St. Georges run in the No. 6 column (6.20 - 7.20 p.m.): the July CP table showed buses or nothing there.
