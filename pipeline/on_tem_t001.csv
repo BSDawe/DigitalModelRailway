@@ -1,0 +1,18 @@
+# Temiscouata Railway (Official Guide, April 25, 1948): Riviere du Loup - Notre Dame du Lac - Ste. Rose - Edmundston, N.B. ATLANTIC (standard) time, as printed.
+# On the map to the end of its track in the Quebec collection at the New Brunswick line; border times (~) estimated by mileage between Ste. Rose and St. Jacques, N.B.
+# Not built (New Brunswick): St. Jacques 75.8, Edmundston 81.5 (connection with the CP), and the mixed trains 3 / 4 Edmundston - Baker Brook - Clairs - Connors 113.1.
+# Ste. Rose is the collection's "Ste. Rose du Degele" (Degelis). The columns for Nos. 1 and 2 carry the word "Mixed.": entered as mixed.
+#train col=No1 num=1 dir=down days="ex Sun" kind=mixed note="Mixed. Riviere du Loup 7.30 a.m. to Edmundston 12.55 p.m. (Atlantic time); connects at Riviere du Loup with the CN."
+#train col=No2 num=2 dir=up days="ex Sun" kind=mixed note="Mixed. Edmundston 10.30 a.m. to Riviere du Loup 4.15 p.m. (Atlantic time)."
+mile,station,principal,prov,tz,No1,No2
+0.0,Riviere du Loup,1,QC,A,lv 7.30a,ar 4.15p
+7.3,St. Modeste,0,QC,A,8.00a,3.40p
+16.6,Whitworth,0,QC,A,8.30a,3.10p
+27.1,St. Honore,0,QC,A,9.30a,2.30p
+33.8,Vauban,0,QC,A,9.50a,2.05p
+37.9,St. Louis du Ha! Ha!,0,QC,A,10.10a,1.45p
+43.3,Cabano,1,QC,A,10.40a,1.20p
+51.1,Cloutier,0,QC,A,11.20a,12.25p
+52.1,Notre Dame du Lac,1,QC,A,11.25a,12.20p
+60.8,Ste. Rose,1,QC,A,11.50a,11.50a
+69.8,"International Boundary (Temiscouata, to Edmundston, N.B.)",1,QC,A,~ar 12.17p,~lv 11.11a

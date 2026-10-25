@@ -1,0 +1,12 @@
+# Roberval and Saguenay Railway (Official Guide, April 1948; the name is cut off in the scan: Brendan, 25 Oct 2026): Arvida - Port Alfred - Bagotville.
+# Eastern time. One train: No. 2, mixed, daily except Sunday, Arvida to Bagotville (read up). Laterriere Junction: flag stop, no time. Racine (25 mi): freight only.
+# The Laterriere Junction - Portage des Roches branch not operated. Connection with the CN at Arvida.
+#train col=M2 num=2 dir=up days="ex Sun" kind=mixed note=Mixed.
+mile,station,principal,prov,tz,M2
+0.0,Bagotville,1,QC,E,ar 10.40a
+1.0,Port Alfred,1,QC,E,10.35a
+7.0,Ruisseau Rouge,0,QC,E,f10.20a
+13.0,Laterriere Junction,0,QC,E,
+16.0,LaBrosse Junction,0,QC,E,f9.50a
+20.0,Diamond Crossing,0,QC,E,f9.35a
+21.0,Arvida,1,QC,E,lv 9.30a

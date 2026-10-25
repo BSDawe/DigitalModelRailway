@@ -1,0 +1,10 @@
+# Canada & Gulf Terminal Railway (Official Guide, April 1948): Mont Joli - Metis Beach - Matane. Eastern time. Printed as a paragraph: two trains each way,
+# daily except Sunday, times at Mont Joli, Metis Beach (flag) and Matane only. Connection with the CN at Mont Joli.
+#train col=A1 num="" dir=down days="ex Sun" kind=passenger
+#train col=A3 num="" dir=down days="ex Sun" kind=passenger
+#train col=A2 num="" dir=up days="ex Sun" kind=passenger
+#train col=A4 num="" dir=up days="ex Sun" kind=passenger
+mile,station,principal,prov,tz,A1,A3,A2,A4
+0.0,Mont Joli,1,QC,E,lv 7.00a,lv 5.00p,ar 9.40a,ar 7.50p
+10.0,Metis Beach,1,QC,E,f7.20a,f5.20p,f9.20a,f7.30p
+36.0,Matane,1,QC,E,ar 8.10a,ar 6.10p,lv 8.30a,lv 6.40p

@@ -1,0 +1,9 @@
+# Alma & Jonquiere Railway (Official Guide, March 1948): Isle Maligne - St. Joseph d'Alma - St. Bruno - Saguenay Power. Eastern time. Mixed trains,
+# daily except Sunday. St. Bruno: flag stop, no time. Riverbend printed between St. Joseph d'Alma and St. Bruno with no mileage or times. Connection with the CN at Saguenay Power.
+#train col=M1 num=1 dir=down days="ex Sun" kind=mixed note=Mixed.
+#train col=M2 num=2 dir=up days="ex Sun" kind=mixed note=Mixed.
+mile,station,principal,prov,tz,M1,M2
+0.0,Isle Maligne,1,QC,E,lv 6.00a,ar 8.05a
+2.5,St. Joseph d'Alma,1,QC,E,6.08a,7.58a
+10.0,St. Bruno,0,QC,E,,
+11.0,Saguenay Power,1,QC,E,ar 6.45a,lv 7.40a

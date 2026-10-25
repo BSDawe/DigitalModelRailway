@@ -1618,3 +1618,22 @@ Stations of different railways within 250 m (70 pairs; script: same check over v
 - TO DO WHEN THE CN LEVIS TRAINS ARE BUILT (Brendan, 25 Oct 2026): one Levis station for CN and CP, and it is the CN station (the collection's CN
   "Levis", -71.18712, 46.81032; the Quebec Central Nos. 2 / 5 already start there). Share the stop: on_lines SHARED ('oncp', 'levis') and ('oncn', 'levis')
   -> the CN Levis gid.
+
+## Version 71 (25 October 2026): Quebec's independent railways (Official Guide, 1948)
+- Scans (private repo scans/og1948_qc/): canada_gulf_terminal, temiscouata, roberval_saguenay (the railway name is cut off in the scan: "Roberval and
+  Saguenay Railway", Brendan), alma_jonquiere. Source: Official Guide of the Railways (Timetable World).
+- Four new railways, each its own kind, colour (Claude's picks) and GTFS agency: Temiscouata (T, ontem, #9c2f6b), Canada & Gulf Terminal (G, oncgt,
+  #5a5ea8), Roberval & Saguenay (R, onrs, #1b7f5c), Alma & Jonquiere (J, onaj, #4a6d8c). Upper-case kind letters (the lower-case ones are used up).
+  on_lines.owner(): Temiscouata Railway (filed under CN in the collection; independent until 1949) -> 'tem'; Matapedia and Gulf (the C&GT) -> 'cgt';
+  Roberval and Saguenay -> 'rs', its Alma and Jonquiere folder -> 'aj'.
+- on_tem_t001: Riviere du Loup - Cabano - Notre Dame du Lac - Ste. Rose (Degelis) - New Brunswick line, Nos. 1 / 2 (mixed), ATLANTIC time (new TZ 'A',
+  four hours ahead of Pacific; on_build OVER shift). Border times (~) by mileage Ste. Rose - St. Jacques. NOT BUILT (New Brunswick): St. Jacques,
+  Edmundston (CP connection), the mixed 3 / 4 Edmundston - Connors. Riviere du Loup shares the CN stop id (CN_RIVIERE_DU_LOUP).
+- on_cgt_t001: Mont Joli - Metis Beach - Matane, two each way ex Sun (unnumbered). Mont Joli shares CN_MONT_JOLI. CLAUDE'S TIE: a 25 m link where the C&GT
+  meets the CN main east of Mont Joli (mid-piece, so the collection did not join them).
+- on_rs_t001: No. 2 mixed Arvida - Bagotville only (one train, read up). CLAUDE'S TIE at the Port Alfred yard - main line meeting (mid-piece). Port Alfred -
+  Ruisseau Rouge forced: the collection's line climbs by a hairpin, 7.7 mi of track for 6.0 printed. Hand point (Claude, approximate): Arvida by the R&S
+  roundhouse (-71.1656, 48.4259); no station point.
+- on_aj_t001: Isle Maligne - St. Joseph d'Alma - St. Bruno - Saguenay Power, M1 / M2 ex Sun. Hand point (Claude, approximate): Saguenay Power at the south
+  end of the A&J main line by the CN (Hebertville Jct., -71.6365, 48.4483).
+- Checks: all on track; nothing else moved; check_gtfs 1 problem (old).

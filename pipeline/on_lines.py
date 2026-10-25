@@ -27,15 +27,21 @@ _I = Transformer.from_crs('+proj=lcc +lat_1=44 +lat_2=50 +lon_0=-84 +lat_0=46 +d
 ab_lines.fwd, ab_lines.inv = _T.transform, _I.transform
 ab_lines._T, ab_lines._I = _T, _I                                      # _xy() uses the transformer itself
 fwd = _T.transform
-ab_lines.TZ_SHIFT['E'] = -10800                                        # Eastern time: three hours ahead of Pacific
+ab_lines.TZ_SHIFT['E'] = -10800
+ab_lines.TZ_SHIFT['A'] = -14400                                        # Atlantic time (the Temiscouata)                                        # Eastern time: three hours ahead of Pacific
 
 ab_lines.RAILS.update({'oncn': dict(kind='q', label='Canadian National', own='cn', agency='CN', color='2F6B44', pfx='CN'),
                        'oncp': dict(kind='p', label='Canadian Pacific', own='cp', agency='CP', color='7A1E2C', pfx='CP'),
                        'onr': dict(kind='h', label='Ontario Northland', own='onr', agency='ONR', color='FEBC11', pfx='ONR'),          # colour: Brendan, 23 Oct 2026 (today's ONR yellow)
                        'acr': dict(kind='z', label='Algoma Central', own='acr', agency='ACR', color='8A3B12', pfx='ACR'),           # colour: Claude's pick
                        'onnyc': dict(kind='t', label='New York Central', own='nyc', agency='NYC', color='3D3D3D', pfx='NYC'),      # dark grey: Brendan, 24 Oct 2026
-                       'ondh': dict(kind='f', label='Delaware & Hudson', own='dh', agency='DH', color='0F6FA8', pfx='DH')})        # colour: Claude's pick
-OWN = {'oncn': 'cn', 'oncp': 'cp', 'onr': 'onr', 'acr': 'acr', 'onnyc': 'nyc', 'ondh': 'dh'}
+                       'ondh': dict(kind='f', label='Delaware & Hudson', own='dh', agency='DH', color='0F6FA8', pfx='DH'),         # colour: Claude's pick
+                       # Quebec's independent railways (Official Guide, 1948; Brendan, 25 Oct 2026); colours Claude's picks
+                       'ontem': dict(kind='T', label='Temiscouata', own='tem', agency='TEM', color='9C2F6B', pfx='TEM'),
+                       'oncgt': dict(kind='G', label='Canada & Gulf Terminal', own='cgt', agency='CGT', color='5A5EA8', pfx='CGT'),
+                       'onrs': dict(kind='R', label='Roberval & Saguenay', own='rs', agency='RS', color='1B7F5C', pfx='RS'),
+                       'onaj': dict(kind='J', label='Alma & Jonquiere', own='aj', agency='AJ', color='4A6D8C', pfx='AJ')})
+OWN = {'oncn': 'cn', 'oncp': 'cp', 'onr': 'onr', 'acr': 'acr', 'onnyc': 'nyc', 'ondh': 'dh', 'ontem': 'tem', 'oncgt': 'cgt', 'onrs': 'rs', 'onaj': 'aj'}
 # the New York Central and the Delaware & Hudson (CP Table 18) run over the CP from Windsor Station; the NYC leaves it at Adirondack Junction for its
 # own St. Lawrence & Adirondack line, the D&H follows the CP to the end of its track at the border (Brendan, 24 Oct 2026). Both stop at the border for now.
 
@@ -54,6 +60,10 @@ def owner(path):
     if 'Ontario Northland' in sub: return 'onr'
     if 'Algoma Central' in sub: return 'acr'
     if 'Algoma Eastern' in sub: return 'cp'
+    if 'Temiscouata Railway' in sub: return 'tem'                       # independent until 1949 (the collection files it under CN)
+    if 'Matap' in sub and 'Gulf' in sub: return 'cgt'                   # Canada & Gulf Terminal (filed under CN as the Matapedia and Gulf)
+    if 'Alma and Jonquiere' in sub: return 'aj'
+    if sub.startswith('Roberval and Saguenay'): return 'rs'
     if 'New York Central' in sub: return 'nyc'                          # the St. Lawrence & Adirondack (Adirondack Junction - Valleyfield - Huntingdon - border)                             # Sudbury - McKerrow - Little Current: CP from 1930
     if top.startswith('Canadian National'): return 'cn'
     if top.startswith('Canadian Pacific'): return 'cp'
@@ -85,7 +95,8 @@ def _links():
     out = []
     for fn in sorted(__import__('glob').glob(os.path.join(HERE, 'traces', 'ontario', 'brendan', '*.geojson'))): out += json.load(open(fn))['features']
     return out
-BOXES = {'onr': (-82.6, -78.4, 43.5, 51.5), 'acr': (-85.2, -82.8, 46.3, 49.9), 'nyc': (-74.4, -73.4, 44.9, 45.6), 'dh': (-74.0, -73.2, 44.95, 45.6)}   # the small railways' graphs: their own part of the map only
+BOXES = {'onr': (-82.6, -78.4, 43.5, 51.5), 'acr': (-85.2, -82.8, 46.3, 49.9), 'nyc': (-74.4, -73.4, 44.9, 45.6), 'dh': (-74.0, -73.2, 44.95, 45.6),
+         'tem': (-69.7, -68.3, 47.3, 47.95), 'cgt': (-68.4, -67.4, 48.5, 48.95), 'rs': (-71.4, -70.8, 48.25, 48.5), 'aj': (-71.9, -71.5, 48.4, 48.8)}   # the small railways' graphs: their own part of the map only
 def _graph(me):
     """the track graph for one railway. Every piece goes in as network-like track ('n': its ends tie to track within 150 m) rather than as a backup
     ('b': every point tied to track beside it), and other railways' sidings and yards are left out: the full collections as backups made graphs of
@@ -101,7 +112,8 @@ def _graph(me):
             if GONE.search(o.get('desc', '')) or any(LATER.search(x) for x in o['path']): continue
             c = despike(o['coords'])
             if len(c) > 3 and covered(c): continue
-            if box and not any(box[0] <= p[0] <= box[1] and box[2] <= p[1] <= box[3] for p in c[::max(1, len(c) // (6 if me in ('onr', 'acr') else 200))]): continue
+            if box and not any(box[0] <= p[0] <= box[1] and box[2] <= p[1] <= box[3] for p in c[::max(1, len(c) // (6 if me in ('onr', 'acr') else 200))]) \
+               and not any(box[0] <= p[0] <= box[1] and box[2] <= p[1] <= box[3] for p in (c[0], c[-1])): continue
             ow = owner(o['path']); side = any(re.search(r'siding|yard|spur', x, re.I) for x in o['path'])
             if ow == me: fac, draw = (1.6 if side else 1.0), None
             elif me in ('nyc', 'dh') and ow == 'cp': fac, draw = (1.6 if side else 1.0), 'cp'   # over the CP from Windsor Station (its yard tracks join the Adirondack line at Montreal West)
@@ -150,6 +162,10 @@ HAND = {('cp', 'toronto'): _TU, ('cn', 'toronto'): _TU, ('onr', 'toronto'): _TU,
         ('cp', 'brockville'): (-75.6904427, 44.5934311, 'Brockville: the end of the CP (Brockville and Ottawa) main line by the CN station, where the pool trains met the CN (Claude, to confirm; the collection has no CP Brockville station point)'),
         ('cp', 'boundary'): (-70.7015, 45.5446, 'Boundary, Que. (CP Table 10): the middle of the collection\'s "Boundry siding", by the border (Claude, to confirm)'),
         ('cp', 'vaudreuil'): (-74.0084965, 45.3865095, 'Vaudreuil (Dorion): the CP station of 1948 is the collection\'s "Dorion" (its "Vaudreuil" is the modern commuter station; Brendan, 25 Oct 2026)'),
+        ('tem', 'international boundary'): (-68.4807425, 47.487259, 'the end of the Temiscouata track in the Quebec collection, at the New Brunswick line'),
+        ('tem', 'ste rose'): (-68.6395756, 47.5488634, 'Ste. Rose (du Degele), the collection\'s point'),
+        ('rs', 'arvida'): (-71.1656, 48.4259, 'Arvida, by the Roberval & Saguenay roundhouse (Claude, approximate: no station point in the collection)'),
+        ('aj', 'saguenay power'): (-71.6365122, 48.4483422, 'Saguenay Power: the south end of the Alma & Jonquiere main line, at the CN (Hebertville Jct.; Claude, approximate)'),
         ('nyc', 'international boundary'): (-74.2423085, 44.9921679, 'the end of the St. Lawrence & Adirondack trace in the Quebec collection, at the border (Brendan, 24 Oct 2026)'),
         ('dh', 'international boundary'): (-73.3727996, 45.0103103, 'the end of CP track toward Rouses Point (Brendan, 24 Oct 2026)')}
 _MAP = {}
@@ -183,7 +199,7 @@ def track_tree(own):
         pts = [fwd(*p[:2]) for o in pieces() if o['kind'] == 'LineString' and owner(o['path']) == own for p in o['coords'][::3]]
         _TRK[own] = cKDTree(np.array(pts)) if pts else None
     return _TRK[own]
-ALIAS = {('cn', 'hervey'): 'hervey junction', ('cn', 'coteau'): 'coteau junction', ('onr', 'porquis'): 'porquis junction',
+ALIAS = {('aj', 'isle maligne'): 'ile maligne', ('aj', 'st joseph dalma'): 'st joseph de alma', ('rs', 'laterriere junction'): 'laterriere junction',('cn', 'hervey'): 'hervey junction', ('cn', 'coteau'): 'coteau junction', ('onr', 'porquis'): 'porquis junction',
          ('cp', 'port mcnicoll'): 'port mcnicoll main', ('onr', 'timmins'): 'timmons', ('onr', 'beaver lake'): 'bear lake', ('cn', 'ottawa'): 'ottawa union', ('cp', 'ottawa'): 'ottawa union',
          ('cp', 'clearys'): 'cleary', ('cp', 'tourvilles'): 'tourville', ('cp', 'sutton'): 'sutton flats',
          ('cp', 'st guillaume'): 'st guillaume junction',
@@ -199,6 +215,7 @@ def place_for(rail):
         c = canon(name); c = ALIAS.get((own, c), c)
         if (own, c) in HAND: h = HAND[(own, c)]; return (h[0], h[1], 'hand', 800)
         if own in ('nyc', 'dh'): return place_for('oncp')(name)          # the stations in Montreal are the CP's
+        if own in ('tem', 'cgt') and c in ('riviere du loup', 'mont joli'): return place_for('oncn')(name)   # the CN stations
         m = _map().get((own, c))
         if m: return (m[0], m[1], 'map', 300)
         for key in ((own, c), (None, c)):
@@ -218,6 +235,7 @@ SHARED = {('onr', 'toronto union'): 'TORONTO_UNION', ('oncn', 'toronto union'): 
           ('onr', 'north bay'): 'CN_NORTH_BAY',                           # "North Bay (C.N.)": ONR trains used the CN station
           ('onr', 'cochrane'): 'CN_COCHRANE',
           ('oncp', 'quebec'): 'CN_QUEBEC_PALAIS',
+          ('ontem', 'riviere du loup'): 'CN_RIVIERE_DU_LOUP', ('oncgt', 'mont joli'): 'CN_MONT_JOLI',   # at the CN stations (the CN trains there are not built yet)
           ('oncp', 'levis'): 'LEVIS', ('oncn', 'levis'): 'LEVIS',          # one Levis station for CN and CP (Quebec Central; Brendan, 25 Oct 2026)                          # one Palais Station (CP Table 33 and CN Table 38)                             # one station at Cochrane (CN Table 38 and the ONR)
           **{(r, c): g for r in ('onnyc', 'ondh') for c, g in (('montreal', 'CP_MONTREAL_WINDSOR'), ('westmount', 'CP_WESTMOUNT'), ('montreal west', 'CP_MONTREAL_WEST'))}}   # the NYC and D&H used the CP stations
 def register(files):
