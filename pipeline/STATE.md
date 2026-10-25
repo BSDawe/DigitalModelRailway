@@ -1544,6 +1544,8 @@ Stations of different railways within 250 m (70 pairs; script: same check over v
   abandoned line; a straight tie added to ontario_quebec_links.geojson. Aliases: Place Viger, De Sales -> St. Francois de Sales, Berthier ->
   Berthierville (the table brackets Berthier 62.5 / Berthierville 64.6 with a bus), Quebec -> Palais, Grand'Mere, Grandes Piles, Les Gres, La Gabelle.
   Trois Rivieres is placed by mileage on the Montreal - Quebec lines (its point snaps to a stub; Tables 36 / 37 start at the point).
-- QUESTION for Brendan: CN Table 38's "Garneau" (oncn038q) sits at -72.3848, 46.6715, but the collection's CN "Garneau Junction" is at -72.6463, 46.6362
-  (where the CP Grandes Piles line crosses). Check which is right.
+- Garneau: CN Table 38's "Garneau" (oncn038q, -72.3848, 46.6715) and the collection's CN "Garneau Junction" (-72.6463, 46.6362, used for CP Table
+  37) need not be the same place (Brendan, 24 Oct 2026; he has not checked the map). Left as is.
+- TO DO AT THE NEXT BUILD (Brendan, 24 Oct 2026): the Windsor Station - Quebec trains (on_cp_t033) should take the other side of the wye near Park
+  Avenue (they now run Montreal West - Park Avenue and on toward Bordeaux through the same leg as the Place Viger trains).
 - Checks: only trip names changed on existing lines; check_gtfs 1 problem (old).
