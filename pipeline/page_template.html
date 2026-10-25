@@ -354,6 +354,11 @@ for (const L of LINES) for (const bt of L.trips || []) TRIPS.push(buildTrip({ id
       only.set(r[0], (only.get(r[0]) ?? true) && mixed && !end); });
   }
   for (const [i, m] of only) if (m) ST[i].principal = false; }
+// junctions and terminals: the only stations drawn in the province-wide views (Brendan, 25 Oct 2026)
+// (by the network of all lines: a station with one neighbour is a terminal, three or more a junction; lines that overlap do not count twice)
+{ const nb = ST.map(() => new Set());
+  for (const L of LINES) { const ix = (L.idx || []).filter((v, k, a) => k === 0 || v !== a[k - 1]); for (let k = 1; k < ix.length; k++) { nb[ix[k]].add(ix[k - 1]); nb[ix[k - 1]].add(ix[k]); } }
+  ST.forEach((s, i) => { if (nb[i].size !== 2) s.hub = true; }); }
 const NW_CHAIN = ST.find(s => s.name === 'New Westminster').chains.main;
 
 // meets: a held train waits while an opposing train reaches that station
@@ -629,9 +634,9 @@ function renderBase() {
   // stations
   const labels = [];
   const zoomedIn = k > 0.028, selI = S.sel?.kind === 'station' ? S.sel.i : -1;
-  const far = k < FAR_K;                                            // a province-wide view (Saskatchewan, Ontario, Quebec): minor stations not drawn (Brendan, 25 Oct 2026)
+  const far = k < FAR_K;                                            // a province-wide view (Saskatchewan, Ontario, Quebec): only junctions and terminals drawn (Brendan, 25 Oct 2026)
   for (const s of ST) {
-    if (far && !s.principal && selI !== s.i) continue;
+    if (far && !s.hub && selI !== s.i) continue;
     let [x, y] = toScreen(s.x, s.y); x += M; y += M;
     if (x < -40 || y < -40 || x > w + 40 || y > h + 40) continue;
     const r = s.principal ? 4.2 : 2.6;

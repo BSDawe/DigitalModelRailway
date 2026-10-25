@@ -1684,5 +1684,5 @@ Stations of different railways within 250 m (70 pairs; script: same check over v
   St. Annes suburban stops (Grovehill ... Baie d'Urfe) added to on_cp_t050 (hand-merged after t049.py: rerunning t049.py loses them).
 - Checks: all on track; check_gtfs 1 problem (old).
 - (25 Oct 2026, Brendan) Zoomed-out views: below FAR_K = 0.0009 px/m (the Saskatchewan, Manitoba, Lakehead, Northern Ontario, Ontario and Quebec views;
-  Regina 0.0012 and closer unchanged) minor stations are not drawn and train-number labels are left off (a selected train keeps its number, a selected
+  Regina 0.0012 and closer unchanged) only junctions and terminals are drawn (station hub: one neighbour or three or more in the network of all lines' consecutive stops; overlapping lines count once) and train-number labels are left off (a selected train keeps its number, a selected
   station is still drawn). page_template.html: FAR_K, the station loop in drawBase, the three number-label blocks.
