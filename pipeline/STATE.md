@@ -1613,3 +1613,5 @@ Stations of different railways within 250 m (70 pairs; script: same check over v
   "Vaudreuil" is the modern commuter station. Hand point added; Table 43's mileage placed it within 100 m of that point (23.7 mi checks); Table 4 had
   used the modern station (Westmount - Vaudreuil traced 24.0 vs printed 21.7): now fixed.
 - Checks: check_gtfs 1 problem (old); only oncp004 / oncp043 (Dorion) moved, and segment colouring on oncp033 / ondh018.
+- TO DO (Brendan, 25 Oct 2026, reminder): fix the trains that stop at "expansion joints": trains pausing mid-run where nothing is printed, at joins
+  between track pieces. Find where (likely the joins / ties between collection pieces or links, or a route point that doubles back) and make them run through.
