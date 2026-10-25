@@ -1586,7 +1586,7 @@ Stations of different railways within 250 m (70 pairs; script: same check over v
 - Hand point (Claude, to confirm): CP Brockville at the end of the Brockville and Ottawa main line (-75.6904, 44.5934); the collection has no CP
   Brockville station (it had placed it at the CN station, leaving a 5.4 mi straight line).
 - Checks: all on track; check_gtfs 1 problem (old).
-- FOR THE NEXT UPDATE (Brendan, 25 Oct 2026; not built yet):
+- FOR THE NEXT UPDATE (Brendan, 25 Oct 2026; DONE in Version 73 for Brockville):
   * Brockville: CP trains of this era ran on from the end of the CP line down the CN track to Brockville Union Station (CN and CP), 44°35'31.98"N
     75°41'34.23"W = (-75.692842, 44.591217). Replace Claude's hand point (cp, brockville) with this, let the CP graph use the CN track there (as
     CP), and share one stop with CN Brockville (on_lines SHARED).
@@ -1658,3 +1658,12 @@ Stations of different railways within 250 m (70 pairs; script: same check over v
 - NOT BUILT: on_cnpool_t049.csv (CN-station pool trains), on_cpx_t050.csv (Pool 33 / 34 via Peterboro; 35 / 36 Table 51 parts). TO DO: Table 51 (Glen
   Tay - Havelock - Peterboro - Toronto), Table 55 (Kingston - Tichborne), Table 56 (Toronto - Hamilton), Detroit - Chicago (U.S.).
 - Checks: all on track; only oncp044p moved (the removed columns); check_gtfs 1 problem (old). P15 Belleville - Port Hope 49 mi in 43 min (as printed).
+
+## Version 73 (25 October 2026): Brockville Union Station, CP approach to Toronto Union from the east, CP Leaside
+- Brockville Union Station (CN and CP; Brendan): hand points (cp / cn, brockville) at (-75.692842, 44.591217); shared stop BROCKVILLE_UNION for CP Table 47,
+  Pool 15 / 6 and (later) the CN. CP trains run on from the end of the CP line down the CN track (drawn CN). Claude's earlier CP Brockville point removed.
+- Toronto Union from the east (Brendan): CP trains take the CP connector east of the station (the collection's "Leaside to Union" line, Campbellford Lake
+  Ontario and Western, which stops 200 m short of the station point): link "Toronto Union Station, CP approach from the east". Before, the Shore Line trains
+  ran Leaside - North Toronto - West Toronto and into Union from the west (Leaside had been placed by mileage on that line). Hand points CP Leaside and CP Don
+  (the collection's points). Tables 50 (both) 3.7 km shorter. Every line ending at Union moved by ~50 m (the station end now snaps to the link), and the ONR
+  and CN Toronto - North Bay / Capreol lines now leave Union by the same CN track (ONR's had used a different CN line for 24 km).

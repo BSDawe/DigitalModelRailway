@@ -164,7 +164,6 @@ HAND = {('cp', 'toronto'): _TU, ('cn', 'toronto'): _TU, ('onr', 'toronto'): _TU,
         ('cp', 'fort william'): (-89.24722, 48.37807, 'Canadian Pacific station, Fort William (Brendan, 19 October)'),
         ('cp', 'lanoraie'): (-73.315943, 45.992274, 'Lanoraie, on the main line beside the collection\'s station point (its other "Lanoraie" is the old village end of the abandoned branch)'),
         ('cp', 'montreal park avenue'): (-73.6240, 45.5307, 'Park Avenue Station, Montreal (Claude, approximate: Park Avenue at the CP line; no point in the collection)'),
-        ('cp', 'brockville'): (-75.6904427, 44.5934311, 'Brockville: the end of the CP (Brockville and Ottawa) main line by the CN station, where the pool trains met the CN (Claude, to confirm; the collection has no CP Brockville station point)'),
         ('cp', 'boundary'): (-70.7015, 45.5446, 'Boundary, Que. (CP Table 10): the middle of the collection\'s "Boundry siding", by the border (Claude, to confirm)'),
         ('cp', 'vaudreuil'): (-74.0084965, 45.3865095, 'Vaudreuil (Dorion): the CP station of 1948 is the collection\'s "Dorion" (its "Vaudreuil" is the modern commuter station; Brendan, 25 Oct 2026)'),
         ('tem', 'international boundary'): (-68.4807425, 47.487259, 'the end of the Temiscouata track in the Quebec collection, at the New Brunswick line'),
@@ -172,6 +171,10 @@ HAND = {('cp', 'toronto'): _TU, ('cn', 'toronto'): _TU, ('onr', 'toronto'): _TU,
         ('rs', 'arvida'): (-71.1656, 48.4259, 'Arvida, by the Roberval & Saguenay roundhouse (Claude, approximate: no station point in the collection)'),
         ('aj', 'saguenay power'): (-71.6365122, 48.4483422, 'Saguenay Power: the south end of the Alma & Jonquiere main line, at the CN (Hebertville Jct.; Claude, approximate)'),
         ('cn', 'cornwall'): (-74.7434434, 45.0421843, 'Cornwall CN, on the main line beside the collection\'s station point (which snaps to a siding)'),
+        ('cp', 'brockville'): (-75.692842, 44.591217, 'Brockville Union Station (CN and CP; Brendan, 25 Oct 2026): CP trains run on from the end of the CP line down the CN track'),
+        ('cn', 'brockville'): (-75.692842, 44.591217, 'Brockville Union Station (CN and CP; Brendan, 25 Oct 2026)'),
+        ('cp', 'leaside'): (-79.3578985, 43.7028199, 'CP Leaside, the collection\'s point (Brendan, 25 Oct 2026: it had been placed by mileage on the North Toronto line)'),
+        ('cp', 'don'): (-79.3544042, 43.6576529, 'CP Don station, the collection\'s point, on the Leaside - Union connector'),
         ('nyc', 'international boundary'): (-74.2423085, 44.9921679, 'the end of the St. Lawrence & Adirondack trace in the Quebec collection, at the border (Brendan, 24 Oct 2026)'),
         ('dh', 'international boundary'): (-73.3727996, 45.0103103, 'the end of CP track toward Rouses Point (Brendan, 24 Oct 2026)')}
 _MAP = {}
@@ -243,6 +246,7 @@ SHARED = {('onr', 'toronto union'): 'TORONTO_UNION', ('oncn', 'toronto union'): 
           ('onr', 'cochrane'): 'CN_COCHRANE',
           ('oncp', 'quebec'): 'CN_QUEBEC_PALAIS',
           ('ontem', 'riviere du loup'): 'CN_RIVIERE_DU_LOUP', ('oncgt', 'mont joli'): 'CN_MONT_JOLI',   # at the CN stations (the CN trains there are not built yet)
+          ('oncp', 'brockville'): 'BROCKVILLE_UNION', ('oncpcn', 'brockville'): 'BROCKVILLE_UNION', ('oncn', 'brockville'): 'BROCKVILLE_UNION',   # Brockville Union Station (Brendan)
           ('oncp', 'levis'): 'LEVIS', ('oncn', 'levis'): 'LEVIS',          # one Levis station for CN and CP (Quebec Central; Brendan, 25 Oct 2026)                          # one Palais Station (CP Table 33 and CN Table 38)                             # one station at Cochrane (CN Table 38 and the ONR)
           ('oncpcn', 'toronto union'): 'TORONTO_UNION', ('oncpcn', 'toronto'): 'TORONTO_UNION',
           **{(r, c): g for r in ('onnyc', 'ondh', 'oncpcn') for c, g in (('montreal', 'CP_MONTREAL_WINDSOR'), ('westmount', 'CP_WESTMOUNT'), ('montreal west', 'CP_MONTREAL_WEST'))}}   # the NYC and D&H used the CP stations

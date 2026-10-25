@@ -47,7 +47,7 @@ OVER = {'on_cn_t075b': dict(noplace=['Ottawa (Bank Street)']),
         'on_cp_t024': dict(places={'International Boundary (CP, to Richford, Vt.)': (-72.6637808, 45.0152297)}),   # end of CP track beyond Abercorn
         'on_cp_t008': dict(places={'International Boundary (QC, to Newport, Vt.)': (-72.171437, 45.0058471)}),   # the end of the Massawippi Valley line in the Quebec collection
         'on_tem_t001': dict(shift=-14400),
-        'on_cp_t050': dict(noplace=['Rosedale', 'Don']), 'on_cp_t050o': dict(noplace=['Rosedale', 'Don']),   # the collection's "Rosedale" found is Toronto's
+        'on_cp_t050': dict(noplace=['Rosedale']), 'on_cp_t050o': dict(noplace=['Rosedale']),   # the collection's "Rosedale" found is Toronto's
         'on_rs_t001': dict(force=[('Port Alfred', 'Ruisseau Rouge')]),   # the collection's line climbs out of Port Alfred by a hairpin: 7.7 mi of track for 6.0 printed
         'on_cp_t022s': dict(places={'Stanbridge': (-73.0198692, 45.1161065)}),   # end of the 2.78 mi Stanbridge junction segment (Brendan, 24 Oct 2026)
         'on_cp_t070': dict(places={'Worthington': (-81.4516144, 46.3826754), 'Turbine': (-81.5119836, 46.3741679)}),
