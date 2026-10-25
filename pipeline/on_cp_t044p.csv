@@ -1,20 +1,12 @@
-# Canadian Pacific, Table 44A: Ottawa - Kemptville - Bedell - Smiths Falls (the pool trains to and from Toronto, and the Bedell connection). Canadian Pacific timetable, 1948, pages 16 - 19. Eastern time.
+# Canadian Pacific, Table 44A: Ottawa - Kemptville - Bedell - Smiths Falls (the pool trains to and from Toronto). Canadian Pacific timetable, 1948, pages 16 - 19. Eastern time.
 # Bedell - Smiths Falls 20.8 mi, added to Bedell's 31.9.
 #train col=P23 num=23 dir=down days="Sun,Mon,Tue,Wed,Thu,Fri" kind=passenger note="Pool train (CP - CN joint Ottawa - Toronto service). To Toronto. Daily except Saturday."
 #train col=P33 num=33 dir=down days=daily kind=passenger note="Pool train (CP - CN joint Ottawa - Toronto service). To Toronto."
 #train col=P34 num=34 dir=up days=daily kind=passenger note="Pool train (CP - CN joint Ottawa - Toronto service). From Toronto. Osgoode: stops on signal Mondays only, to take on passengers."
 #train col=P24 num=24 dir=up days="Mon,Tue,Wed,Thu,Fri,Sat" kind=passenger note="Pool train (CP - CN joint Ottawa - Toronto service). From Toronto. Daily except Sunday."
-#train col=C29 num="" dir=down days="ex Sun" kind=passenger note="Connection from No. 29 (Ottawa - Prescott) at Bedell."
-#train col=C30 num="" dir=up days="ex Sun" kind=passenger note="Connection for No. 30 (Prescott - Ottawa) at Bedell."
-mile,station,principal,prov,tz,P23,P33,P34,P24,C29,C30
-0.0,Ottawa,1,ON,E,lv 11.00p,lv 10.40p,ar 6.45a,ar 7.35a,,
-2.9,Billings,0,ON,E,,,,,,
-5.4,Ellwood,0,ON,E,,,,,,
-10.5,Gloucester,0,ON,E,,,,,,
-13.7,Manotick,0,ON,E,,,,,,
-18.1,Bray,0,ON,E,,,,,,
-21.6,Osgoode,0,ON,E,,,6.06a,,,
-25.9,Sabourin,0,ON,E,,,,,,
-30.2,Kemptville,1,ON,E,,11.25p,f5.55a,,,
-31.9,Bedell,1,ON,E,,,,,lv 7.45p,ar 7.30a
-52.7,Smiths Falls,1,ON,E,ar 12.35a,ar 11.59p,lv 5.25a,lv 6.20a,ar 8.25p,lv 7.00a
+# The Bedell - Smiths Falls connections for Nos. 29 / 30 that were here are the Montreal trains 29 / 30 of Table 50 (on_cp_t050), 25 Oct 2026.
+mile,station,principal,prov,tz,P23,P33,P34,P24
+0.0,Ottawa,1,ON,E,lv 11.00p,lv 10.40p,ar 6.45a,ar 7.35a
+21.6,Osgoode,0,ON,E,,,6.06a,
+30.2,Kemptville,1,ON,E,,11.25p,f5.55a,
+52.7,Smiths Falls,1,ON,E,ar 12.35a,ar 11.59p,lv 5.25a,lv 6.20a

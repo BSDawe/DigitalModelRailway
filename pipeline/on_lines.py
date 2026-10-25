@@ -40,8 +40,9 @@ ab_lines.RAILS.update({'oncn': dict(kind='q', label='Canadian National', own='cn
                        'ontem': dict(kind='T', label='Temiscouata', own='tem', agency='TEM', color='9C2F6B', pfx='TEM'),
                        'oncgt': dict(kind='G', label='Canada & Gulf Terminal', own='cgt', agency='CGT', color='5A5EA8', pfx='CGT'),
                        'onrs': dict(kind='R', label='Roberval & Saguenay', own='rs', agency='RS', color='1B7F5C', pfx='RS'),
+                       'oncpcn': dict(kind='p', label='Canadian Pacific', own='cp', agency='CP', color='7A1E2C', pfx='CP'),   # CP pool trains over the CN (Table 49)
                        'onaj': dict(kind='J', label='Alma & Jonquiere', own='aj', agency='AJ', color='4A6D8C', pfx='AJ')})
-OWN = {'oncn': 'cn', 'oncp': 'cp', 'onr': 'onr', 'acr': 'acr', 'onnyc': 'nyc', 'ondh': 'dh', 'ontem': 'tem', 'oncgt': 'cgt', 'onrs': 'rs', 'onaj': 'aj'}
+OWN = {'oncn': 'cn', 'oncp': 'cp', 'onr': 'onr', 'acr': 'acr', 'onnyc': 'nyc', 'ondh': 'dh', 'ontem': 'tem', 'oncgt': 'cgt', 'onrs': 'rs', 'onaj': 'aj', 'oncpcn': 'cpcn'}
 # the New York Central and the Delaware & Hudson (CP Table 18) run over the CP from Windsor Station; the NYC leaves it at Adirondack Junction for its
 # own St. Lawrence & Adirondack line, the D&H follows the CP to the end of its track at the border (Brendan, 24 Oct 2026). Both stop at the border for now.
 
@@ -115,7 +116,10 @@ def _graph(me):
             if box and not any(box[0] <= p[0] <= box[1] and box[2] <= p[1] <= box[3] for p in c[::max(1, len(c) // (6 if me in ('onr', 'acr') else 200))]) \
                and not any(box[0] <= p[0] <= box[1] and box[2] <= p[1] <= box[3] for p in (c[0], c[-1])): continue
             ow = owner(o['path']); side = any(re.search(r'siding|yard|spur', x, re.I) for x in o['path'])
-            if ow == me: fac, draw = (1.6 if side else 1.0), None
+            if me == 'cpcn' and ow in ('cp', 'cn'):                         # Pool 15 / 6 (CP Table 49): Windsor Station over the CP to Dorval, then the CN to Toronto
+                if side and not any(re.search(r'main', x, re.I) for x in o['path']): continue   # "Toronto Montreal - Mainline and sidings" is the main line
+                fac, draw = 1.0, ow
+            elif ow == me: fac, draw = (1.6 if side else 1.0), None
             elif me in ('nyc', 'dh') and ow == 'cp': fac, draw = (1.6 if side else 1.0), 'cp'   # over the CP from Windsor Station (its yard tracks join the Adirondack line at Montreal West)
             elif side: continue
             elif me == 'onr' and ow == 'cn': fac, draw = 1.2, 'cn'           # ONR trains run Toronto - North Bay over the CN
@@ -126,7 +130,8 @@ def _graph(me):
         for f in _links():                                              # Brendan's traces and connectors (traces/ontario/brendan/)
             ow = f['properties']['own']; c = f['geometry']['coordinates']
             if box and not any(box[0] <= p[0] <= box[1] and box[2] <= p[1] <= box[3] for p in c): continue
-            add(ab_lines._xy(c), f['properties'].get('cost', 1.0) if ow == me else 2.5, 't', None if ow == me else ow)   # 'cost': a link the trains must take (cheaper than the track beside it)
+            mine = ow == me or (me == 'cpcn' and ow in ('cp', 'cn'))
+            add(ab_lines._xy(c), f['properties'].get('cost', 1.0) if mine else 2.5, 't', None if ow == me else ow)   # 'cost': a link the trains must take (cheaper than the track beside it)
     return lambda: ab_lines.make_graph(feed, tie_end=150, tie_loose=60)
 for _r, _o in OWN.items(): ab_lines.EXT_GRAPH['sk:' + _r] = _graph(_o)
 
@@ -166,6 +171,7 @@ HAND = {('cp', 'toronto'): _TU, ('cn', 'toronto'): _TU, ('onr', 'toronto'): _TU,
         ('tem', 'ste rose'): (-68.6395756, 47.5488634, 'Ste. Rose (du Degele), the collection\'s point'),
         ('rs', 'arvida'): (-71.1656, 48.4259, 'Arvida, by the Roberval & Saguenay roundhouse (Claude, approximate: no station point in the collection)'),
         ('aj', 'saguenay power'): (-71.6365122, 48.4483422, 'Saguenay Power: the south end of the Alma & Jonquiere main line, at the CN (Hebertville Jct.; Claude, approximate)'),
+        ('cn', 'cornwall'): (-74.7434434, 45.0421843, 'Cornwall CN, on the main line beside the collection\'s station point (which snaps to a siding)'),
         ('nyc', 'international boundary'): (-74.2423085, 44.9921679, 'the end of the St. Lawrence & Adirondack trace in the Quebec collection, at the border (Brendan, 24 Oct 2026)'),
         ('dh', 'international boundary'): (-73.3727996, 45.0103103, 'the end of CP track toward Rouses Point (Brendan, 24 Oct 2026)')}
 _MAP = {}
@@ -214,7 +220,8 @@ def place_for(rail):
     def f(name):
         c = canon(name); c = ALIAS.get((own, c), c)
         if (own, c) in HAND: h = HAND[(own, c)]; return (h[0], h[1], 'hand', 800)
-        if own in ('nyc', 'dh'): return place_for('oncp')(name)          # the stations in Montreal are the CP's
+        if own in ('nyc', 'dh'): return place_for('oncp')(name)
+        if own == 'cpcn': return place_for('oncp')(name) if c.startswith('montreal') or c in ('westmount', 'toronto', 'toronto union') else (place_for('oncn')(name) or place_for('oncp')(name))          # the stations in Montreal are the CP's
         if own in ('tem', 'cgt') and c in ('riviere du loup', 'mont joli'): return place_for('oncn')(name)   # the CN stations
         m = _map().get((own, c))
         if m: return (m[0], m[1], 'map', 300)
@@ -237,7 +244,8 @@ SHARED = {('onr', 'toronto union'): 'TORONTO_UNION', ('oncn', 'toronto union'): 
           ('oncp', 'quebec'): 'CN_QUEBEC_PALAIS',
           ('ontem', 'riviere du loup'): 'CN_RIVIERE_DU_LOUP', ('oncgt', 'mont joli'): 'CN_MONT_JOLI',   # at the CN stations (the CN trains there are not built yet)
           ('oncp', 'levis'): 'LEVIS', ('oncn', 'levis'): 'LEVIS',          # one Levis station for CN and CP (Quebec Central; Brendan, 25 Oct 2026)                          # one Palais Station (CP Table 33 and CN Table 38)                             # one station at Cochrane (CN Table 38 and the ONR)
-          **{(r, c): g for r in ('onnyc', 'ondh') for c, g in (('montreal', 'CP_MONTREAL_WINDSOR'), ('westmount', 'CP_WESTMOUNT'), ('montreal west', 'CP_MONTREAL_WEST'))}}   # the NYC and D&H used the CP stations
+          ('oncpcn', 'toronto union'): 'TORONTO_UNION', ('oncpcn', 'toronto'): 'TORONTO_UNION',
+          **{(r, c): g for r in ('onnyc', 'ondh', 'oncpcn') for c, g in (('montreal', 'CP_MONTREAL_WINDSOR'), ('westmount', 'CP_WESTMOUNT'), ('montreal west', 'CP_MONTREAL_WEST'))}}   # the NYC and D&H used the CP stations
 def register(files):
     import ab_table
     for rail, fn in files:
@@ -247,4 +255,4 @@ def register(files):
             if (rail, c) in SHARED and not (rail == 'onr' and c == 'north bay' and 'C.P.' in n) and not ('(' in n and 'Union' not in n and c == 'ottawa'): ab_lines.EXT_GID[(rail, n)] = SHARED[(rail, c)]; continue   # Ottawa (Bank Street) stays its own
             m = _map().get((OWN[rail], c))
             full = canon(re.sub(r'[()]', ' ', n))                         # the whole name: Ottawa (Bank Street) is not Ottawa (Union Station)
-            ab_lines.EXT_GID[(rail, n)] = m[2] if m else ab_lines.RAILS[rail]['pfx'] + '_' + re.sub(r'\W+', '_', full.upper()).strip('_')
+            ab_lines.EXT_GID[(rail, n)] = m[2] if m else ('CN' if rail == 'oncpcn' else ab_lines.RAILS[rail]['pfx']) + '_' + re.sub(r'\W+', '_', full.upper()).strip('_')

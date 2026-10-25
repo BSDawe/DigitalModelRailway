@@ -1,0 +1,19 @@
+# CP Tables 49 / 50: Pool 33 / 34 (Ottawa - Toronto via Peterboro) and the Glen Tay - Toronto (Table 51) parts of Nos. 35 / 36, as far as Tables 49 and 50 print them.
+# Canadian Pacific timetable, 1948. Eastern time. NOT BUILT: Table 51 (Glen Tay - Havelock - Peterboro - Toronto) not in hand. No miles (Table 51).
+#train col=P33 num=33 dir=down days=daily kind=passenger note="Pool train."
+#train col=P34 num=34 dir=up days=daily kind=passenger note="Pool train."
+#train col=No35 num=35 dir=down days="ex Sun" kind=passenger
+#train col=No36 num=36 dir=up days="ex Sun" kind=passenger
+mile,station,principal,prov,tz,P33,P34,No35,No36
+,Ottawa,1,ON,E,lv 10.40p,ar 6.45a,,
+,Bedell,1,ON,E,,,,
+,Merrickville,1,ON,E,,f5.37a,,
+,Smiths Falls,1,ON,E,ar 11.59p / lv 12.10a,ar 5.15a / lv 5.25a,,
+,Perth,1,ON,E,12.30a,4.53a,,
+,Glen Tay,1,ON,E,,,1.23p,3.10p
+,Havelock (Table 51),1,ON,E,,,,
+,Peterboro,1,ON,E,4.35a,1.05a,,
+,Agincourt,1,ON,E,,f11.35p,7.00p,9.57a
+,Leaside,1,ON,E,6.25a,11.17p,7.10p,9.44a
+,Don,1,ON,E,6.35a,,7.20p,9.36a
+,Toronto (Union),1,ON,E,ar 6.45a,lv 11.00p,ar 7.30p,lv 9.30a

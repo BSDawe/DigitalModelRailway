@@ -1637,3 +1637,24 @@ Stations of different railways within 250 m (70 pairs; script: same check over v
 - on_aj_t001: Isle Maligne - St. Joseph d'Alma - St. Bruno - Saguenay Power, M1 / M2 ex Sun. Hand point (Claude, approximate): Saguenay Power at the south
   end of the A&J main line by the CN (Hebertville Jct., -71.6365, 48.4483).
 - Checks: all on track; nothing else moved; check_gtfs 1 problem (old).
+
+## Version 72 (25 October 2026): CP Tables 49, 50 (Montreal / Ottawa - Toronto, Toronto - Windsor)
+- Scans (private repo scans/cp1948_qc/): t049a, t049b, t049_signs, t050a, t050b.
+- Brendan (25 Oct 2026): the pool trains at CN stations (Note A: 5, 17, 9, 109 / 16, 14, 10, from Central Station) wait for the CN tables
+  (on_cnpool_t049.csv); build Pool 15 / 6 now; build west of Toronto to Windsor, Ont. (Detroit and the NYC to Chicago kept in notes).
+- on_cpcn_t049: Pool 15 (The Canadian) / 6 (Royal York), Windsor Station - Westmount - Montreal West - CP to Dorval - CN main - Toronto. New rail
+  'oncpcn' (kind p, drawn CP / CN by the track; own graph 'cpcn': CP and CN at 1.0, the Quebec "Mainline and sidings" folder counted as main line;
+  CN stop ids). No miles printed: CN main-line miles measured along the collection (Windsor Station - Toronto 333.2). Claude's ties: Dorval CP - CN
+  connection (11 m), Coteau main-line tie (the Quebec and Ontario collections' CN main line pieces end 5 m apart, unjoined: the CN Montreal - Cornwall
+  route had gone by Ottawa). Hand point CN Cornwall on the main line.
+- on_cp_t050 (Lake Ontario Shore Line, printed miles): Pool 21 Chicago Express / 22 The Overseas (Note A: CP stations; they run Smiths Falls - Tichborne -
+  Belleville - Agincourt - Leaside, not the CN), 29 / 30 and 35 / 36 (Montreal - Glen Tay / Perth part; Table 51 beyond not in hand), 597 / 598 (Sun,
+  Montreal - Smiths Falls), M85 / M86 (Smiths Falls - Tichborne - Trenton mixed; Kingston connections not entered). on_cp_t050o: Pool 23 / 24 Ottawa -
+  Bedell - Smiths Falls - Tichborne - Toronto (daily except Saturday). Rosedale and Don placed by mileage (the collection's points are Toronto's).
+- on_cp_t044p: the "Bedell - Smiths Falls connection" columns removed: they were the Montreal trains 29 / 30 of Table 50.
+- on_cp_t049w: Toronto - Parkdale - West Toronto - Guelph Jct. - Galt - Woodstock - London - Chatham - Windsor (no miles printed: measured along the CP
+  track, 227.9): 19 The Canadian, 37 Royal York, 21 Chicago Express, 635 The Michigan (daily ex Sat), 629, 631 / 20, 38, 22, 634, 630, 632. Detroit and
+  the NYC connections (Chicago, Central time) in the notes; from / to Montreal and Chicago set.
+- NOT BUILT: on_cnpool_t049.csv (CN-station pool trains), on_cpx_t050.csv (Pool 33 / 34 via Peterboro; 35 / 36 Table 51 parts). TO DO: Table 51 (Glen
+  Tay - Havelock - Peterboro - Toronto), Table 55 (Kingston - Tichborne), Table 56 (Toronto - Hamilton), Detroit - Chicago (U.S.).
+- Checks: all on track; only oncp044p moved (the removed columns); check_gtfs 1 problem (old). P15 Belleville - Port Hope 49 mi in 43 min (as printed).

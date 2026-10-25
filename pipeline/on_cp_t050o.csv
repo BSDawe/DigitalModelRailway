@@ -1,0 +1,39 @@
+# Canadian Pacific, Tables 49 and 50: Pool 23 / 24, Ottawa - Bedell - Smiths Falls - Tichborne - Belleville - Toronto. Canadian Pacific timetable, 1948, Tables 49 and 50. Eastern time.
+# Miles: Ottawa - Bedell 31.9 and Bedell - Smiths Falls 20.8 (Table 44A), then Table 50's Smiths Falls miles. Pool 33 / 34 (Ottawa - Toronto via Peterboro, Table 51) not built.
+#train col=P23 num=23 dir=down days="Sun,Mon,Tue,Wed,Thu,Fri" kind=passenger note="Pool train (CP - CN joint Montreal / Ottawa - Toronto service). Daily except Saturday. No checked baggage. Kingston connection at Tichborne."
+#train col=P24 num=24 dir=up days="Sun,Mon,Tue,Wed,Thu,Fri" kind=passenger note="Pool train (CP - CN joint Montreal / Ottawa - Toronto service). Daily except Saturday (Table 49; Table 50 marks the Ottawa end daily except Sunday). No checked baggage. Roblindale: stops on signal to take on passengers for Smiths Falls and beyond."
+mile,station,principal,prov,tz,P23,P24
+0.0,Ottawa,1,ON,E,lv 11.00p,ar 7.35a
+31.9,Bedell,1,ON,E,,
+43.6,Merrickville,0,ON,E,f12.19a,
+52.7,Smiths Falls,1,ON,E,ar 12.35a / lv 1.25a,ar 6.05a / lv 6.20a
+58.4,Elmsley,0,ON,E,,
+64.3,Perth,1,ON,E,1.45a,5.35a
+68.1,Glen Tay,1,ON,E,,
+76.6,Christie Lake,0,ON,E,,
+83.1,Bolingbroke,0,ON,E,,
+87.0,Crow Lake,0,ON,E,,
+93.5,Tichborne,1,ON,E,2.30a,4.40a
+95.5,Parham,0,ON,E,,
+99.9,Echo,0,ON,E,,
+105.1,Wilkinson,0,ON,E,,
+113.9,Lens,0,ON,E,,
+121.1,Roblindale,0,ON,E,,4.03a
+127.2,Kingsford,0,ON,E,,
+132.2,Lonsdale,0,ON,E,,
+139.7,Shannonville,0,ON,E,,
+145.0,Belleville,1,ON,E,4.05a,3.10a
+155.4,Trenton,1,ON,E,ar 4.30a / lv 4.40a,ar 2.35a / lv 2.45a
+165.3,Brighton,0,ON,E,,
+173.4,Colborne,0,ON,E,,
+180.2,Grafton,0,ON,E,,
+187.8,Cobourg,1,ON,E,5.20a,1.50a
+194.1,Port Hope,1,ON,E,5.30a,1.37a
+211.4,Newcastle,0,ON,E,,
+217.2,Bowmanville,0,ON,E,6.00a,1.05a
+227.1,Oshawa,1,ON,E,6.20a,12.30a
+231.7,Whitby,0,ON,E,,
+251.7,Agincourt,0,ON,E,,
+259.2,Leaside,1,ON,E,7.10a,11.37p
+262.5,Don,0,ON,E,7.20a,
+264.5,Toronto (Union),1,ON,E,ar 7.30a,lv 11.20p

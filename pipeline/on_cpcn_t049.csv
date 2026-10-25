@@ -1,0 +1,18 @@
+# Canadian Pacific, Table 49: Pool 15 / 6, Montreal (Windsor Station) - Toronto over the CN west of Dorval (stops at CN stations; Note A). Canadian Pacific timetable, 1948, Tables 49 and 50. Eastern time.
+# No miles printed in Table 49: CN main-line miles measured along the collection's track, from Windsor Station by the CP to Dorval. The other pool trains of the table
+# (5, 17, 9, 109 / 16, 14, 10, from Central Station) are in on_cnpool_t049.csv, to build with the CN timetables (Brendan, 25 Oct 2026).
+#train col=P15 num=15 dir=down days=daily kind=passenger name="The Canadian" note="Pool train (CP - CN joint Montreal / Ottawa - Toronto service). The Canadian: on from Toronto as CP No. 19 to London, Windsor and Detroit. Leaves the CP for the CN at Dorval (Table 49 Note A). Westmount, Montreal West: stop to pick up passengers only. Danforth: stops on signal Fridays only to let off. The Ottawa section runs Ottawa - Smiths Falls - Brockville (Table 47, Pool 559)."
+#train col=P6 num=6 dir=up days=daily kind=passenger name="Royal York" note="Pool train (CP - CN joint Montreal / Ottawa - Toronto service). Royal York: from Detroit and Windsor as CP No. 38. Joins the CP at Dorval. Port Hope: stops on signal. The Ottawa section runs Brockville - Smiths Falls - Ottawa (Table 47, Pool 560)."
+mile,station,principal,prov,tz,P15,P6
+0.0,Montreal (Windsor Station),1,QC,E,lv 3.30p,ar 10.15p
+2.0,Westmount,0,QC,E,3.36p,10.07p
+4.7,Montreal West,0,QC,E,3.42p,10.00p
+66.1,Cornwall,1,ON,E,4.47p,8.54p
+113.7,Prescott,0,ON,E,,
+126.1,Brockville,1,ON,E,ar 5.45p / lv 5.55p,ar 7.50p / lv 7.55p
+173.0,Kingston,1,ON,E,6.47p,6.59p
+220.3,Belleville,1,ON,E,ar 7.45p / lv 7.48p,ar 5.58p / lv 6.01p
+270.0,Port Hope,0,ON,E,f8.31p,f5.13p
+300.3,Oshawa,0,ON,E,9.05p,4.43p
+328.0,Danforth,0,ON,E,f9.34p,
+333.2,Toronto (Union),1,ON,E,ar 9.45p,lv 4.00p

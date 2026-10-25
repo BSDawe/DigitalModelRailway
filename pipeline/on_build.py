@@ -12,7 +12,7 @@ TZ = ' Shown in Pacific time: three hours earlier than the Eastern time printed.
 TZA = ' Shown in Pacific time: four hours earlier than the Atlantic time printed.'
 SRC = {'oncp': 'Canadian Pacific timetable, 1948', 'oncn': 'Official Guide, April 25, 1948', 'onr': 'Ontario Northland timetable, November 16, 1947',
        'acr': 'Algoma Central timetable, April 25, 1948', 'onnyc': 'Canadian Pacific timetable, 1948', 'ondh': 'Canadian Pacific timetable, 1948',
-       'ontem': 'Official Guide, April 25, 1948', 'oncgt': 'Official Guide, April 1948', 'onrs': 'Official Guide, April 1948', 'onaj': 'Official Guide, March 1948'}
+       'ontem': 'Official Guide, April 25, 1948', 'oncgt': 'Official Guide, April 1948', 'onrs': 'Official Guide, April 1948', 'onaj': 'Official Guide, March 1948', 'oncpcn': 'Canadian Pacific timetable, 1948'}
 LONG = {'on_cp_t004': 'Montreal – Ottawa – North Bay – Sudbury – Fort William', 'on_cp_t058': 'Toronto – MacTier – Parry Sound – Sudbury (and Port McNicoll)',
         'on_cp_t058b': 'Ypres – Camp Borden', 'on_cp_t058p': 'Toronto – Medonte – Port McNicoll (boat trains)', 'on_cp_t070': 'Sudbury – Sault Ste. Marie', 'on_cp_t070b': 'Sudbury – McKerrow – Little Current',
         'on_cp_t075': 'Sudbury – Creighton', 'on_cp_t707': 'Toronto – Owen Sound (boat trains)',
@@ -37,6 +37,8 @@ LONG = {'on_cp_t004': 'Montreal – Ottawa – North Bay – Sudbury – Fort Wi
         'on_cp_t010': 'Sherbrooke – Cookshire – Megantic – Boundary (Montreal – Saint John)',
         'on_tem_t001': 'Rivière du Loup – Cabano – Notre Dame du Lac – Ste. Rose (to Edmundston, N.B.)', 'on_cgt_t001': 'Mont Joli – Métis Beach – Matane',
         'on_rs_t001': 'Arvida – Port Alfred – Bagotville', 'on_aj_t001': "Isle Maligne – St. Joseph d'Alma – Saguenay Power",
+        'on_cp_t050': 'Montreal – Smiths Falls – Tichborne – Belleville – Toronto (Lake Ontario Shore Line)', 'on_cp_t050o': 'Ottawa – Smiths Falls – Belleville – Toronto (Pool 23 / 24)',
+        'on_cpcn_t049': 'Montreal (Windsor Station) – Cornwall – Kingston – Toronto (Pool 15 / 6, over the CN)', 'on_cp_t049w': 'Toronto – Galt – London – Windsor (for Detroit and Chicago)',
         'on_dh_t018': 'Montreal – Rouses Point – Albany – New York (on this map to the border)', 'on_nyc_t018': 'Montreal – Malone – Albany – New York (on this map to the border)',
         'on_acr_t001': 'Sault Ste. Marie – Hawk Junction – Hearst', 'on_acr_t001m': 'Hawk Junction – Michipicoten'}
 OVER = {'on_cn_t075b': dict(noplace=['Ottawa (Bank Street)']),
@@ -45,6 +47,7 @@ OVER = {'on_cn_t075b': dict(noplace=['Ottawa (Bank Street)']),
         'on_cp_t024': dict(places={'International Boundary (CP, to Richford, Vt.)': (-72.6637808, 45.0152297)}),   # end of CP track beyond Abercorn
         'on_cp_t008': dict(places={'International Boundary (QC, to Newport, Vt.)': (-72.171437, 45.0058471)}),   # the end of the Massawippi Valley line in the Quebec collection
         'on_tem_t001': dict(shift=-14400),
+        'on_cp_t050': dict(noplace=['Rosedale', 'Don']), 'on_cp_t050o': dict(noplace=['Rosedale', 'Don']),   # the collection's "Rosedale" found is Toronto's
         'on_rs_t001': dict(force=[('Port Alfred', 'Ruisseau Rouge')]),   # the collection's line climbs out of Port Alfred by a hairpin: 7.7 mi of track for 6.0 printed
         'on_cp_t022s': dict(places={'Stanbridge': (-73.0198692, 45.1161065)}),   # end of the 2.78 mi Stanbridge junction segment (Brendan, 24 Oct 2026)
         'on_cp_t070': dict(places={'Worthington': (-81.4516144, 46.3826754), 'Turbine': (-81.5119836, 46.3741679)}),
@@ -55,14 +58,15 @@ def specs():
     LATE = {'on_cp_t010.csv'}                              # continuations of trains another table names first (Table 23's 39 - 42 keep their trip ids)
     for fn in sorted(glob.glob(os.path.join(HERE, 'on_c[pn]_t*.csv')) + glob.glob(os.path.join(HERE, 'on_onr_t*.csv')) + glob.glob(os.path.join(HERE, 'on_acr_t*.csv'))
                      + glob.glob(os.path.join(HERE, 'on_dh_t*.csv')) + glob.glob(os.path.join(HERE, 'on_nyc_t*.csv'))
+                     + glob.glob(os.path.join(HERE, 'on_cpcn_t*.csv'))
                      + [f for x in ('tem', 'cgt', 'rs', 'aj') for f in glob.glob(os.path.join(HERE, f'on_{x}_t*.csv'))], key=lambda f: (os.path.basename(f) in LATE, f)):
         stem = os.path.basename(fn)[:-4]; o = OVER.get(stem, {})
         if o.get('skip'): continue
-        rail = {'cp': 'oncp', 'cn': 'oncn', 'onr': 'onr', 'acr': 'acr', 'dh': 'ondh', 'nyc': 'onnyc', 'tem': 'ontem', 'cgt': 'oncgt', 'rs': 'onrs', 'aj': 'onaj'}[re.match(r'on_(cp|cn|onr|acr|dh|nyc|tem|cgt|rs|aj)_', stem).group(1)]
+        rail = {'cp': 'oncp', 'cn': 'oncn', 'onr': 'onr', 'acr': 'acr', 'dh': 'ondh', 'nyc': 'onnyc', 'tem': 'ontem', 'cgt': 'oncgt', 'rs': 'onrs', 'aj': 'onaj', 'cpcn': 'oncpcn'}[re.match(r'on_(cpcn|cp|cn|onr|acr|dh|nyc|tem|cgt|rs|aj)_', stem).group(1)]
         R = ab_table.load(fn)['rows']; a, b = R[0]['station'], R[-1]['station']
         table = re.match(r'on_\w+?_t(\d+)', stem).group(1).lstrip('0')
-        rw = {'oncp': 'CP', 'oncn': 'CN', 'onr': 'ONR', 'acr': 'ACR', 'ondh': 'D&H', 'onnyc': 'NYC', 'ontem': 'TEM', 'oncgt': 'C&GT', 'onrs': 'R&S', 'onaj': 'A&J'}[rail]
-        short = o.get('short', f'{rw} Table {table}' if rail in ('oncp', 'oncn') else f'{rw} (CP Table {table})' if rail in ('ondh', 'onnyc') else ab_lines.RAILS[rail]['label'])
+        rw = {'oncp': 'CP', 'oncn': 'CN', 'onr': 'ONR', 'acr': 'ACR', 'ondh': 'D&H', 'onnyc': 'NYC', 'ontem': 'TEM', 'oncgt': 'C&GT', 'onrs': 'R&S', 'onaj': 'A&J', 'oncpcn': 'CP'}[rail]
+        short = o.get('short', f'{rw} Table {table}' if rail in ('oncp', 'oncn', 'oncpcn') else f'{rw} (CP Table {table})' if rail in ('ondh', 'onnyc') else ab_lines.RAILS[rail]['label'])
         key = stem.replace('on_', 'on').replace('_t', '')
         out.append(dict(key=key, rail=rail, graph='sk:' + rail, legs=[dict(csv=os.path.basename(fn))], dirs=['to ' + b, 'to ' + a], short=short,
                         long=o.get('long', LONG.get(stem, f'{a} – {b}')), src=f'{short} ({SRC[rail]})', cols=o.get('cols'), shift=o.get('shift', -10800), tzrows=True, tznote=TZA if o.get('shift') == -14400 else TZ,

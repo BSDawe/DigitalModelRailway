@@ -1,0 +1,25 @@
+# Canadian Pacific, Table 49: Toronto - Guelph Jct. - Galt - Woodstock - London - Chatham - Windsor. Canadian Pacific timetable, 1948, Tables 49 and 50. Eastern time.
+# No miles printed: measured along the CP track in the Ontario collection. On the map to Windsor; Detroit and the New York Central to Chicago (Central time) in the notes and
+# on_cpfull_t049.csv (not built: United States). London and Windsor printed Ar / Lv: one row here (Windsor: the arrival, then on to Detroit).
+#train col=No19 num=19 dir=down days=daily kind=passenger name="The Canadian" from=Montreal to=Chicago note="The Canadian, from Montreal (Pool 15). Windsor 2.40 - 2.50 a.m., Detroit 3.00 a.m.; New York Central No. 39 to Chicago (8.30 a.m. Central time)."
+#train col=No37 num=37 dir=down days=daily kind=passenger name="Royal York" from=Montreal to=Chicago note="Royal York, from Montreal (Pool 5, Central Station). Windsor 11.05 - 11.15 p.m., Detroit 11.25 p.m.; New York Central No. 315 to Chicago (7.20 a.m. Central time)."
+#train col=No21 num=21 dir=down days=daily kind=passenger name="Chicago Express" from=Montreal to=Chicago note="Chicago Express, from Montreal (Pool 21). Windsor 1.55 - 2.05 p.m., Detroit 2.15 p.m.; New York Central No. 31 to Chicago (7.45 p.m. Central time, La Salle St. Station)."
+#train col=No635 num=635 dir=down days="Sun,Mon,Tue,Wed,Thu,Fri" kind=passenger name="The Michigan" to=Chicago note="The Michigan. Daily except Saturday. Windsor 6.40 - 6.55 a.m., Detroit 7.05 a.m.; New York Central No. 17 to Chicago (11.15 a.m. Central time)."
+#train col=No629 num=629 dir=down days="Mon,Tue,Wed,Thu,Fri" kind=passenger
+#train col=No631 num=631 dir=down days=Sat kind=passenger
+#train col=No20 num=20 dir=up days=daily kind=passenger name="The Canadian" from=Chicago to=Montreal note="The Canadian, to Montreal (Pool 14, Central Station). From Chicago 7.50 p.m. (NYC No. 358), Detroit 2.55 a.m., Windsor 3.05 - 3.15 a.m."
+#train col=No38 num=38 dir=up days=daily kind=passenger name="Royal York" from=Chicago to=Montreal note="Royal York, to Montreal (Pool 6). From Chicago 11.05 p.m. (NYC No. 342), Detroit 9.00 a.m., Windsor 9.10 - 9.20 a.m."
+#train col=No22 num=22 dir=up days=daily kind=passenger name="The Overseas" from=Chicago to=Montreal note="The Overseas, to Montreal (Pool 22). From Chicago 9.30 a.m. (NYC No. 76), Detroit 4.15 p.m., Windsor 4.25 - 4.40 p.m."
+#train col=No634 num=634 dir=up days="ex Sun" kind=passenger note="From Windsor Yard."
+#train col=No630 num=630 dir=up days="ex Sun" kind=passenger
+#train col=No632 num=632 dir=up days="ex Sun" kind=passenger
+mile,station,principal,prov,tz,No19,No37,No21,No635,No629,No631,No20,No38,No22,No634,No630,No632
+0.0,Toronto (Union),1,ON,E,lv 10.00p,lv 5.40p,lv 8.00a,lv 11.30p,lv 2.30p,lv 12.30p,ar 8.30a,ar 3.05p,ar 10.10p,,ar 9.30a,ar 9.40p
+2.5,Parkdale,0,ON,E,10.08p,5.48p,8.08a,11.38p,f2.37p,f12.37p,8.20a,2.55p,10.00p,,f9.22a,9.30p
+4.8,West Toronto,0,ON,E,10.18p,5.58p,8.20a,11.50p,2.42p,12.42p,8.12a,2.47p,9.52p,,9.17a,9.22p
+39.6,Guelph Jct.,0,ON,E,,6.48p,9.25a,1.00a,3.25p,1.25p,7.19a,1.55p,9.03p,,8.36a,8.25p
+57.6,Galt,1,ON,E,11.23p,7.14p,9.55a,1.35a,3.45p,1.45p,6.56a,1.32p,8.35p,,8.15a,7.40p
+88.3,Woodstock,1,ON,E,11.59p,8.02p,10.53a,2.42a,4.23p,2.23p,6.13a,12.45p,7.48p,,7.39a,6.40p
+115.1,London,1,ON,E,ar 12.30a / lv 12.35a,ar 8.40p / lv 8.50p,ar 11.35a / lv 11.50a,ar 3.40a / lv 3.55a,ar 4.50p,ar 2.50p,ar 5.20a / lv 5.35a,ar 11.50a / lv 12.05p,ar 6.50p / lv 7.10p,ar 6.30p,lv 7.10a,lv 5.50p
+179.5,Chatham,1,ON,E,1.42a,10.00p,12.53p,5.35a,,,4.13a,10.26a,5.40p,5.15p,,
+227.9,Windsor,1,ON,E,ar 2.40a,ar 11.05p,ar 1.55p,ar 6.40a,,,lv 3.15a,lv 9.20a,lv 4.40p,lv 4.00p,,
