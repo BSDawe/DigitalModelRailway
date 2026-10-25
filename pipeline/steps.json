@@ -305,6 +305,10 @@
     "places/cgn_ab_places.csv",
     "skx_cp_t006_medhat.csv",
     "skx_cp_t139_kerrobert.csv"
+   ],
+   "input_globs": [
+    "traces/np/*.geojson",
+    "traces/gn/*.geojson"
    ]
   },
   {

@@ -29,6 +29,13 @@ def inputs(step):
         seen.append(f); src = open(f).read()
         todo += [m + '.py' for m in re.findall(r'^\s*(?:from|import)\s+(\w+)', src, re.M)]
     files = set(seen) | set(step.get('inputs', []))
+    import glob as _glob                                            # files a script finds by a pattern (a folder of traces) are inputs too
+    pats = list(step.get('input_globs', []))                         # (24 October 2026: a new trace in traces/saskatchewan/ did not make sk_build stale)
+    for f in seen:
+        for m in re.findall(r"os\.path\.join\(HERE,\s*((?:'[^']*'\s*,\s*)*'[^']*\*[^']*')\s*\)", open(f).read()):
+            pats.append(os.path.join(*re.findall(r"'([^']*)'", m)))
+        for m in re.findall(r"glob\.glob\('([^']*\*[^']*)'\)", open(f).read()): pats.append(m)
+    for pat in pats: files |= set(_glob.glob(pat))
     for f in seen:
         for m in re.findall(r"'([\w.-]+\.(?:csv|tsv|json|pkl|kml|kmz|gpkg|txt))'", open(f).read()): files |= {m, 'nrwn/' + m, 'traces/' + m, 'places/' + m}
     return sorted(f for f in files if os.path.exists(f) and f not in (VIZ, 'steps.json') and not f.startswith(PARTS))

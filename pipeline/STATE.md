@@ -1468,3 +1468,9 @@ Stations of different railways within 250 m (70 pairs; script: same check over v
 - (24 Oct 2026) Ottawa: one Union Station for CP and CN (Brendan: every train to Ottawa uses Union Station unless the table says otherwise). CP Table 4's
   "Ottawa" now shares stop OTTAWA_UNION (on_lines SHARED); Ottawa (Bank Street) stays separate (CN mixed M205 / M206). The routing part (CN backing out;
   CP may run through or back out) is still on the to-do list.
+- (24 Oct 2026) FIXED: CN Table 161a Holmfield - Deloraine on Brendan's trace (it had run by Killarney). Two causes: (1) build.py did not count files a
+  script finds by a pattern (glob of traces/<folder>/*.geojson) as inputs, so new traces never made sk_build (or on_build) stale; build.py now adds them
+  (literal os.path.join(HERE, ..., '*...') and glob.glob('...*') patterns found in the scripts, plus steps.json "input_globs" for patterns built from
+  variables: sk_build traces/np, traces/gn). (2) The trace's west end stopped 0.6 km short of the track through Deloraine and tied to nothing: a link
+  north added in the same file, and the trace costs 0.7 so it beats the Killarney line. 99.6 mi traced, 95.9 printed. Only skcn161a moved (the CP lines
+  through Deloraine shift by about 7 m where the link meets their track).
