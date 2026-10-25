@@ -1586,3 +1586,8 @@ Stations of different railways within 250 m (70 pairs; script: same check over v
 - Hand point (Claude, to confirm): CP Brockville at the end of the Brockville and Ottawa main line (-75.6904, 44.5934); the collection has no CP
   Brockville station (it had placed it at the CN station, leaving a 5.4 mi straight line).
 - Checks: all on track; check_gtfs 1 problem (old).
+- FOR THE NEXT UPDATE (Brendan, 25 Oct 2026; not built yet):
+  * Brockville: CP trains of this era ran on from the end of the CP line down the CN track to Brockville Union Station (CN and CP), 44°35'31.98"N
+    75°41'34.23"W = (-75.692842, 44.591217). Replace Claude's hand point (cp, brockville) with this, let the CP graph use the CN track there (as
+    CP), and share one stop with CN Brockville (on_lines SHARED).
+  * TO DO: the Prescott - Ogdensburg ferry (connection for Table 44A No. 29 / 30 at Prescott; also noted in marine/PORTS_NEEDED.md).

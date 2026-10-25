@@ -9,3 +9,5 @@
 - Quebec - Levis ferry (CN connection, CP Table 33; times in on_cnpool_t033.csv): Brendan, 24 Oct 2026: from Levis Station to the Quebec wharf at
   46.81183142623051, -71.20161491263052. Levis Station: the Quebec collection has CN "Levis" at 46.81032, -71.18712 (to confirm). To build with the
   CN Montreal - Levis trains (CN timetables); the St. Lawrence at Quebec needs adding to the steamer routing then.
+- Prescott - Ogdensburg ferry (CP Table 44A, connection with Nos. 29 / 30 at Prescott): to do (Brendan, 25 Oct 2026); needs the Prescott and
+  Ogdensburg landings and the St. Lawrence there in the steamer routing; times not printed in Table 44A.
