@@ -1,0 +1,12 @@
+# Barre and Chelsea R.R. (as printed in CP Table 26; the trains are probably the Boston & Maine / Montpelier & Wells River service). Eastern time.
+# United States only, not built. No mileage printed (left blank).
+#train col=BC1 num="" dir=down days="ex Sun" kind=passenger
+#train col=BC3 num="" dir=down days=Sun kind=passenger
+#train col=BC5 num="" dir=down days="ex Sun" kind=passenger
+#train col=BC2 num="" dir=up days="ex Sun" kind=passenger
+#train col=BC4 num="" dir=up days=Sun kind=passenger
+#train col=BC6 num="" dir=up days="ex Sun" kind=passenger
+mile,station,principal,prov,tz,BC1,BC3,BC5,BC2,BC4,BC6
+0.0,"Woodsville, N.H.",1,NH,E,lv 4.55p,lv 4.10p,lv 8.30a,ar 7.15a,ar 2.50p,ar 3.40p
+,"Wells River, Vt.",1,VT,E,4.58p,4.13p,8.35a,7.10a,2.45p,f3.35p
+,"Montpelier, Vt.",1,VT,E,ar 6.45p,ar 6.35p,ar 10.55a,lv 5.15a,lv 12.30p,lv 1.00p

@@ -20,11 +20,13 @@ LONG = {'on_cp_t004': 'Montreal – Ottawa – North Bay – Sudbury – Fort Wi
         'on_cn_t038t': 'Taschereau – Noranda', 'on_onr_t001': 'Toronto – North Bay – Porquis – Timmins', 'on_onr_t001c': 'Porquis – Cochrane',
         'on_onr_t018m': 'Cochrane – Moosonee', 'on_onr_t018s': 'Swastika – Kirkland Lake – Rouyn – Noranda',
         'on_cn_t108': 'Cochrane – Kapuskasing – Hearst – Nakina', 'on_onr_t108': 'Cochrane – Kapuskasing (The Northland, over the CN)', 'on_cn_t116': 'Longlac – Port Arthur – Fort William',
+        'on_cp_t023': 'Montreal – Farnham – Foster – Magog – Sherbrooke', 'on_cp_t024': 'Montreal – Farnham – Sutton – Newport – Boston (on this map to the border)',
         'on_dh_t018': 'Montreal – Rouses Point – Albany – New York (on this map to the border)', 'on_nyc_t018': 'Montreal – Malone – Albany – New York (on this map to the border)',
         'on_acr_t001': 'Sault Ste. Marie – Hawk Junction – Hearst', 'on_acr_t001m': 'Hawk Junction – Michipicoten'}
 OVER = {'on_cn_t075b': dict(noplace=['Ottawa (Bank Street)']),
         'on_cp_t058b': dict(places={'Camp Borden (Lower Station)': (-79.891308, 44.269889),      # Brendan, 23 Oct 2026: "about here"
                                     'Camp Borden (Upper Station)': (-79.886619, 44.286324)}),    # at the end of its spur (his trace)
+        'on_cp_t024': dict(places={'International Boundary (CP, to Richford, Vt.)': (-72.6637808, 45.0152297)}),   # end of CP track beyond Abercorn
         'on_cp_t022s': dict(places={'Stanbridge': (-73.0198692, 45.1161065)}),   # end of the 2.78 mi Stanbridge junction segment (Brendan, 24 Oct 2026)
         'on_cp_t070': dict(places={'Worthington': (-81.4516144, 46.3826754), 'Turbine': (-81.5119836, 46.3741679)}),
         'on_cp_t070b': dict(places={'Worthington': (-81.4516144, 46.3826754), 'Turbine': (-81.5119836, 46.3741679)})}   # on the Soo branch (the collection's

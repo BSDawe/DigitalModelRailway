@@ -1505,3 +1505,20 @@ Stations of different railways within 250 m (70 pairs; script: same check over v
   junction segment (Brendan, 24 Oct 2026; on_build OVER places). Claude's straight tie removed. 13.8 mi traced, 13.8 printed.
 - Checks: all new lines on track; no existing line moved (viz_data compared); check_gtfs 1 problem (old).
 - TO DO (Brendan, 23 Oct): recheck the Valleyfield sections (CN Table 75, on_cn_t075v) when he supplies the Valleyfield timetables.
+
+## Version 66 (24 October 2026): CP Tables 23, 24, 26 (Montreal - Sherbrooke, Montreal - Boston)
+- Scans (private repo scans/cp1948_qc/): t023, t024 (printed sideways), t026_signs (Table 26 and the page's signs).
+- on_cp_t023 (Table 23: Montreal - Farnham - Foster - Magog - Sherbrooke; Nos. 42, 40, 204, 202 / 41, 39, 215, 203, 205). REPLACES on_cp_t019m (deleted):
+  Table 23 prints these trains in full. Its days differ from Table 19's: Nos. 42, 202, 39 daily here (Table 19 gives them only on the days they connect for
+  Drummondville). No. 41's column sits half a row low on the curved page; read against No. 213's rows. Sherbrooke - Megantic is Table 10 (not in hand).
+- on_cp_t024 (Table 24 Montreal - Boston, map part): Nos. 210 / 209 The Red Wing, 212 / 211 The Alouette, 214 / 213 Montreal - Newport, Vt., over the
+  Table 23 stations to Farnham, then Brookport - Brigham - Cowansville - West Brome - Enlaugra - Sutton - Abercorn to the end of CP track at the border
+  (-72.6637808, 45.0152297; Richford, Vt. next). Border times estimated by mileage ('~'). 209 Sutton 5.33 - West Brome 5.40 (7.7 mi in 7 min) as printed.
+  NOT ON THE MAP: Glenton and Highwater, Que. (the CP dips through Richford, Vt. and back into Quebec before North Troy); join them when the U.S. track comes.
+  Full run with the Boston & Maine connections: on_cpfull_t024.csv; mixed M770 / M769 Newport - Woodsville: on_cpfull_t024m.csv (not built).
+- Table 26 Barre and Chelsea R.R. (Woodsville - Wells River - Montpelier): on_bch_t026.csv, not built (U.S.). Tables 16, 16A, 17: Atlantic build; 21: a gap.
+- Aliases: South Stukely -> "Stukely South", St. Johns -> "St Jean sur Richelieu", Iberville -> "Iberville Junction". Eastray, Mount Orford, Petit lac
+  Magog, Sweetsburg and the stations Montreal West - Ste. Brigide other than Delson, St. Johns, Iberville, Versailles are placed by mileage.
+- Page fix: a main-line train's panel showed mile 0 at a shared station whose own mile is 0 on another line (Farnham on Table 22); the origin override is
+  now for local lines only.
+- Checks: no existing line moved (bar the deleted oncp019m); check_gtfs 1 problem (old).

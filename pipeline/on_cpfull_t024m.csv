@@ -1,0 +1,19 @@
+# Canadian Pacific, Table 24: mixed trains M770 / M769, Newport, Vt. - Woodsville, N.H. (United States only, not built). Eastern time.
+#train col=M770 num=770 dir=down days=daily kind=mixed note=Mixed.
+#train col=M769 num=769 dir=up days=daily kind=mixed note=Mixed.
+mile,station,principal,prov,tz,M770,M769
+107.9,"Newport, Vt.",1,VT,E,lv 1.35p,ar 6.50a
+112.6,"Coventry, Vt.",0,VT,E,f1.45p,f6.20a
+116.9,"Orleans, Vt.",0,VT,E,2.05p,6.10a
+122.1,"Barton, Vt.",0,VT,E,2.35p,5.48a
+126.8,"Kimball, Vt.",0,VT,E,f2.50p,f5.33a
+135.0,"West Burke, Vt.",0,VT,E,f3.10p,5.10a
+142.7,"Lyndonville, Vt.",0,VT,E,3.30p,4.50a
+151.4,"St. Johnsbury, Vt.",1,VT,E,ar 4.00p / lv 4.25p,4.15a
+154.4,"Passumpsic, Vt.",0,VT,E,f4.32p,f3.53a
+158.3,"Inwood, Vt.",0,VT,E,f4.39p,f3.40a
+161.0,"Barnet, Vt.",0,VT,E,5.00p,3.33a
+163.7,"McIndoes, Vt.",0,VT,E,f5.07p,f3.20a
+167.7,"East Ryegate, Vt.",0,VT,E,f5.20p,f3.10a
+171.6,"Wells River, Vt.",1,VT,E,5.40p,3.00a
+171.9,"Woodsville, N.H.",1,NH,E,ar 6.00p,lv 2.45a

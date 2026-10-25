@@ -921,7 +921,7 @@ function renderTrain(t, st, T) {
     const cls = [k < curIdx ? 'past' : '', k === curIdx && st ? 'now' : '', 'clickable'].join(' ');
     const lm = x => x.miles?.[t.rk] ?? x.mile;
     const mile = t.mainline ? (Math.floor(Math.abs(lm(s) - lm(t.origin)) * 10 + 1e-6) / 10).toFixed(1) : t.local ? (Math.abs(s.chains[t.rk] - t.origin.chains[t.rk]) / 1609.344).toFixed(1) : t.dir === 0 ? s.mile : +(76.3 - s.mile).toFixed(1);
-    h += `<tr class="${cls}" data-station="${s.i}"><td class="mile">${chained && t.mainline ? fm(t, s) : !t.water && s.mile < 1 && t.dir === 0 ? 0 : mile}</td><td class="name">${esc(s.name)}${r[3] === 0 ? ' <span style="color:var(--muted);font-size:11px">(est.)</span>' : ''}</td><td class="t">${tspan(r[1])}</td><td class="m">${t.meets?.has(s.i) ? 'M' : ''}</td></tr>`;
+    h += `<tr class="${cls}" data-station="${s.i}"><td class="mile">${chained && t.mainline ? fm(t, s) : !t.water && !t.mainline && s.mile < 1 && t.dir === 0 ? 0 : mile}</td><td class="name">${esc(s.name)}${r[3] === 0 ? ' <span style="color:var(--muted);font-size:11px">(est.)</span>' : ''}</td><td class="t">${tspan(r[1])}</td><td class="m">${t.meets?.has(s.i) ? 'M' : ''}</td></tr>`;
   });
   for (const n of after) n.stops.slice(1).forEach(r => { h += linkRow(r, false, n); });            // and after it
   h += `</tbody></table>`;

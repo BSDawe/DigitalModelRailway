@@ -1,0 +1,43 @@
+# Canadian Pacific, Table 23: Montreal (Windsor Station) - Farnham - Foster - Magog - Sherbrooke. Canadian Pacific timetable, 1948. Eastern time.
+# Replaces the Montreal - Foster head of Tables 19 / 19A (on_cp_t019m, deleted): Table 23 prints the trains in full and their days (Nos. 42, 202, 39 daily here;
+# Table 19 gives them only on the days they connect for Drummondville). The Boston and Newport trains of Table 23 (210, 214, 212, 209, 213, 211) are in on_cp_t024.
+# Foster is printed as two rows (Ar, Lv): one row here. St. Johns is printed "St. Johns - St. Jean". Signs n, g, w, r, s, c, p entered as plain stops (in the notes).
+# No. 41: the right half of the page curves; its times read against the rows of No. 213 (LaSalle 6.42, Delson 6.31, St. Philippe s6.26, St. Johns 6.14).
+#train col=No42 num=42 dir=down days=daily kind=passenger note="St. Philippe: stops Sundays to let off passengers from Montreal. West Shefford: stops Fridays, Saturdays and Sundays to let off passengers from Montreal. Connects at Foster with No. 269 for Drummondville on Sundays (Table 19)."
+#train col=No40 num=40 dir=down days="Sun,Mon,Tue,Wed,Thu,Fri" kind=passenger note="Delson: stops to let off passengers."
+#train col=No204 num=204 dir=down days=Sat kind=passenger
+#train col=No202 num=202 dir=down days=daily kind=passenger
+#train col=No41 num=41 dir=up days=daily kind=passenger note="St. Philippe: stops on signal for passengers to Montreal. West Shefford: stops Mondays and Saturdays for passengers to Montreal and beyond."
+#train col=No39 num=39 dir=up days=daily kind=passenger note="LaSalle: stops on signal Sundays for passengers. Iberville: stops on signal Sundays only."
+#train col=No215 num=215 dir=up days=Sat kind=passenger
+#train col=No203 num=203 dir=up days="Mon,Tue,Wed,Thu,Fri" kind=passenger
+#train col=No205 num=205 dir=up days=Sun kind=passenger
+mile,station,principal,prov,tz,No42,No40,No204,No202,No41,No39,No215,No203,No205
+0.0,Montreal (Windsor Station),1,QC,E,lv 7.40p,lv 3.15p,lv 12.40p,lv 7.50a,ar 7.05a,ar 10.35a,ar 3.25p,ar 5.50p,ar 8.55p
+2.0,Westmount,0,QC,E,7.47p,3.22p,12.46p,7.56a,6.57a,10.27a,3.17p,5.42p,8.47p
+4.7,Montreal West,0,QC,E,7.55p,3.29p,12.52p,8.02a,6.50a,10.20a,3.10p,5.35p,8.40p
+7.1,LaSalle,0,QC,E,,,,,6.42a,10.12a,,f5.29p,f8.33p
+8.8,Adirondack Junction,0,QC,E,,,,,,,,,
+13.5,St. Constant,0,QC,E,,,,,,,,,
+14.5,Delson,0,QC,E,,3.44p,f1.08p,,6.31a,,,,
+18.3,St. Philippe,0,QC,E,8.14p,,,,6.26a,,,,
+25.0,Lacadie,0,QC,E,,,,f8.30a,,,,,
+29.5,St. Johns,1,QC,E,8.28p,4.01p,1.28p,8.38a,6.14a,9.46a,2.33p,5.03p,8.05p
+30.3,Iberville,0,QC,E,,,1.31p,,,9.43a,,,
+34.1,St. Gregoire,0,QC,E,,,,,,,,,
+36.7,Versailles,0,QC,E,,,,,,,,,
+39.0,Ste. Brigide,0,QC,E,,,,,,,,,
+43.2,Farnham,1,QC,E,8.45p,4.23p,1.48p,8.57a,5.55a,9.25a,2.14p,4.45p,7.46p
+49.5,Brookport,0,QC,E,,,f2.04p,,,,f2.04p,,f7.37p
+53.5,Adamsville,0,QC,E,,4.41p,2.12p,9.17a,,9.03a,1.58p,4.28p,7.32p
+60.7,West Shefford,0,QC,E,9.16p,4.51p,2.24p,9.27a,5.30a,8.51a,1.48p,4.18p,7.22p
+66.0,Fulford,0,QC,E,,,f2.31p,f9.35a,,f8.40a,f1.39p,f4.10p,f7.13p
+69.5,Foster,1,QC,E,9.33p,ar 5.05p / lv 5.11p,ar 2.37p / lv 2.42p,ar 9.41a / lv 9.46a,5.18a,ar 8.25a / lv 8.34a,1.34p,ar 4.00p / lv 4.05p,7.06p
+74.2,South Stukely,0,QC,E,,,2.53p,9.55a,,8.17a,1.22p,3.52p,f6.57p
+77.8,Eastray,0,QC,E,,5.27p,3.00p,10.02a,,8.10a,1.16p,3.46p,f6.51p
+81.2,Orford Lake,0,QC,E,,f5.33p,f3.06p,f10.08a,,f8.02a,,,f6.46p
+82.9,Mount Orford,0,QC,E,,,f3.10p,f10.12a,,,f1.08p,f3.38p,f6.44p
+88.3,Magog,1,QC,E,10.04p,5.47p,3.21p,10.23a,4.45a,7.47a,12.58p,3.28p,6.34p
+97.6,Petit lac Magog,0,QC,E,,,f3.35p,f10.36a,,f7.30a,,f3.13p,f6.19p
+99.8,Rock Forest,0,QC,E,,f6.05p,f3.39p,f10.40a,,f7.27a,,f3.10p,f6.16p
+106.6,Sherbrooke,1,QC,E,ar 10.35p,ar 6.15p,ar 3.55p,ar 10.55a,lv 4.20a,lv 7.15a,lv 12.30p,lv 3.00p,lv 6.00p
