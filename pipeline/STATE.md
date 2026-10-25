@@ -1490,7 +1490,7 @@ Stations of different railways within 250 m (70 pairs; script: same check over v
   * Full runs kept, not built: on_nycfull_t018.csv, on_dhfull_t018.csv (Troy, Albany, New York). "We will extend the Montreal - New York trains over the
     border at a future date" (Brendan).
   * Rutland trains (Montreal CENTRAL Station - New York, 387 mi, 2 each way, no numbers or intermediate times): on_rut_t018.csv, NOT BUILT. Asked
-    Brendan how to route them.
+    Brendan: the Rutland ran over the CN from Central Station (to Rouses Point); leave it until the CN timetables, which detail it (24 Oct 2026).
   * D&H No. 37 entered with its times effective June 6 (until June 5: New York 9.00 a.m., Montreal 7.10 p.m.; in the note).
   * Montreal stops shared with the CP (SHARED: CP_MONTREAL_WINDSOR, CP_WESTMOUNT, CP_MONTREAL_WEST). Montreal West is placed by mileage, as in CP Table 4:
     the collection's "Montreal Ouest" point snaps to a dead-end siding and made Table 4 run out and back.
@@ -1501,7 +1501,7 @@ Stations of different railways within 250 m (70 pairs; script: same check over v
   Tourvilles f7.22 as printed, probably a misprint), on_cp_t019a (Foster - Knowlton - Sutton), on_cp_t022 (Farnham - St. Hyacinthe - St. Guillaume),
   on_cp_t022s (Farnham - Bedford - Stanbridge; the northbound mixed trains take an hour Stanbridge - Bedford, as printed).
   Aliases: Clearys -> Cleary, Tourvilles -> Tourville, Sutton -> "Sutton Flats", St. Guillaume -> St. Guillaume Junction, Stanbridge -> "Stanbridge
-  Union" (on the Central Vermont). CLAUDE'S TIE (to confirm): the CP Stanbridge track ends at the Stanbridge junction siding 1.1 km short of the
-  Stanbridge Union point; a straight tie added to ontario_quebec_links.geojson.
+  Union" was wrong (a Central Vermont station): Stanbridge is the end of the 2.78 mi "Lake Champlain and St. Lawrence Junction Railway" Stanbridge
+  junction segment (Brendan, 24 Oct 2026; on_build OVER places). Claude's straight tie removed. 13.8 mi traced, 13.8 printed.
 - Checks: all new lines on track; no existing line moved (viz_data compared); check_gtfs 1 problem (old).
 - TO DO (Brendan, 23 Oct): recheck the Valleyfield sections (CN Table 75, on_cn_t075v) when he supplies the Valleyfield timetables.

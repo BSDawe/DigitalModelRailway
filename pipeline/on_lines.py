@@ -176,7 +176,7 @@ def track_tree(own):
 ALIAS = {('cn', 'hervey'): 'hervey junction', ('cn', 'coteau'): 'coteau junction', ('onr', 'porquis'): 'porquis junction',
          ('cp', 'port mcnicoll'): 'port mcnicoll main', ('onr', 'timmins'): 'timmons', ('onr', 'beaver lake'): 'bear lake', ('cn', 'ottawa'): 'ottawa union', ('cp', 'ottawa'): 'ottawa union',
          ('cp', 'clearys'): 'cleary', ('cp', 'tourvilles'): 'tourville', ('cp', 'sutton'): 'sutton flats',
-         ('cp', 'st guillaume'): 'st guillaume junction', ('cp', 'stanbridge'): 'stanbridge union'}   # CP Tables 19-22   # table name -> collection name
+         ('cp', 'st guillaume'): 'st guillaume junction'}   # CP Tables 19-22   # table name -> collection name
 def place_for(rail):
     own = OWN[rail]
     def f(name):
