@@ -1522,3 +1522,28 @@ Stations of different railways within 250 m (70 pairs; script: same check over v
 - Page fix: a main-line train's panel showed mile 0 at a shared station whose own mile is 0 on another line (Farnham on Table 22); the origin override is
   now for local lines only.
 - Checks: no existing line moved (bar the deleted oncp019m); check_gtfs 1 problem (old).
+
+## Version 67 (24 October 2026): CP page 13 (Tables 33, 35-39); train names
+- Scans (private repo scans/cp1948_qc/): t033 (Montreal - Trois Rivieres - Quebec), t035_039.
+- TRAIN NAMES (Brendan: "make sure to capture train names"): on_build now passes `name=` from the CSV #train lines to the trips (the CN and ONR CSVs
+  already had them but on_build dropped them). Added: The Dominion (CP 4, 58), The Red Wing / The Alouette (CP 24), Frontenac (Pool 354 / 353) and
+  Viger (Pool 356 / 355) (CP 33, printed down the columns); The Continental Limited and The Northland now show too.
+- on_cp_t033 (Windsor Station trains: Pool 358, 356 Viger, 362, 354 Frontenac, CP 350 / Pool 353 Frontenac, CP 351, Pool 355 Viger, Pool 357) and
+  on_cp_t033v (Place Viger trains: 352 / 349 Quebec; Sunday 378 / 375 to and from Lanoraie for St. Gabriel). Route Windsor - Montreal West - Park Avenue
+  - Bordeaux - St. Martin Jct. - Terrebonne - Lanoraie - Berthier - Trois Rivieres - Quebec (Palais), shared stop CN_QUEBEC_PALAIS. Place Viger has no
+  printed mileage: set to the traced distance (Park Avenue 6.2 mi). Pool trains noted "Pool train (CP - CN joint service)"; sleepers and the Montreal -
+  Edmundston through car (Pool 356 - CN 68 / CN 67 - Pool 357) in the notes.
+- NOT BUILT (Brendan, 24 Oct 2026): the CN trains of Table 33 (60, 4, 2 / 3, 59, 1: Central Station - Charny - Levis, ferry to Quebec), with the CN
+  timetables: on_cnpool_t033.csv. Ferry Levis Station - Quebec wharf 46.81183142623051, -71.20161491263052 (marine/PORTS_NEEDED.md). Tables 38 (Quebec
+  - Murray Bay - La Malbaie) and 39 (Quebec - Lac Edouard - Chicoutimi), "via Can. Nat. Rys.": on_cnvia_t038.csv, on_cnvia_t039.csv, with the CN tables.
+- on_cp_t035 (Lanoraie - Joliette - St. Gabriel), on_cp_t036 (Trois Rivieres - Shawinigan Falls - Grand'Mere; No. 380 Trois Rivieres printed 7.30,
+  before Les Forges 7.32: entered 7.50), on_cp_t037 (Trois Rivieres - Grandes Piles mixed; Garneau = the collection's CN "Garneau Junction" point).
+- Hand points (Claude, to confirm): Montreal Park Avenue (-73.6240, 45.5307), approximate (no collection point; by mileage the two Montreal lines put it
+  in two places); Lanoraie on the main line (-73.315943, 45.992274) beside the collection's station (its other "Lanoraie" is the old village end of the
+  abandoned branch). CLAUDE'S TIE (to confirm): the Joliette branch ("Current") ends 480 m north of the main line at Lanoraie and joins it only by the
+  abandoned line; a straight tie added to ontario_quebec_links.geojson. Aliases: Place Viger, De Sales -> St. Francois de Sales, Berthier ->
+  Berthierville (the table brackets Berthier 62.5 / Berthierville 64.6 with a bus), Quebec -> Palais, Grand'Mere, Grandes Piles, Les Gres, La Gabelle.
+  Trois Rivieres is placed by mileage on the Montreal - Quebec lines (its point snaps to a stub; Tables 36 / 37 start at the point).
+- QUESTION for Brendan: CN Table 38's "Garneau" (oncn038q) sits at -72.3848, 46.6715, but the collection's CN "Garneau Junction" is at -72.6463, 46.6362
+  (where the CP Grandes Piles line crosses). Check which is right.
+- Checks: only trip names changed on existing lines; check_gtfs 1 problem (old).

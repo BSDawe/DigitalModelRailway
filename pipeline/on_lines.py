@@ -140,6 +140,8 @@ HAND = {('cp', 'toronto'): _TU, ('cn', 'toronto'): _TU, ('onr', 'toronto'): _TU,
         ('cn', 'noranda rouyn'): (-79.026961, 48.246808, 'CN Noranda-Rouyn (Brendan, 23 Oct 2026, estimate)'),
         ('cp', 'port arthur'): (-89.217683, 48.434547, 'Canadian Pacific station, Port Arthur (Brendan, 19 October)'),
         ('cp', 'fort william'): (-89.24722, 48.37807, 'Canadian Pacific station, Fort William (Brendan, 19 October)'),
+        ('cp', 'lanoraie'): (-73.315943, 45.992274, 'Lanoraie, on the main line beside the collection\'s station point (its other "Lanoraie" is the old village end of the abandoned branch)'),
+        ('cp', 'montreal park avenue'): (-73.6240, 45.5307, 'Park Avenue Station, Montreal (Claude, approximate: Park Avenue at the CP line; no point in the collection)'),
         ('nyc', 'international boundary'): (-74.2423085, 44.9921679, 'the end of the St. Lawrence & Adirondack trace in the Quebec collection, at the border (Brendan, 24 Oct 2026)'),
         ('dh', 'international boundary'): (-73.3727996, 45.0103103, 'the end of CP track toward Rouses Point (Brendan, 24 Oct 2026)')}
 _MAP = {}
@@ -177,7 +179,10 @@ ALIAS = {('cn', 'hervey'): 'hervey junction', ('cn', 'coteau'): 'coteau junction
          ('cp', 'port mcnicoll'): 'port mcnicoll main', ('onr', 'timmins'): 'timmons', ('onr', 'beaver lake'): 'bear lake', ('cn', 'ottawa'): 'ottawa union', ('cp', 'ottawa'): 'ottawa union',
          ('cp', 'clearys'): 'cleary', ('cp', 'tourvilles'): 'tourville', ('cp', 'sutton'): 'sutton flats',
          ('cp', 'st guillaume'): 'st guillaume junction',
-         ('cp', 'south stukely'): 'stukely south', ('cp', 'st johns'): 'st jean sur richelieu', ('cp', 'iberville'): 'iberville junction'}   # CP Tables 23-24   # CP Tables 19-22   # table name -> collection name
+         ('cp', 'south stukely'): 'stukely south', ('cp', 'st johns'): 'st jean sur richelieu', ('cp', 'iberville'): 'iberville junction',
+         ('cp', 'montreal place viger'): 'viger', ('cp', 'de sales'): 'st francois de sales', ('cp', 'berthier'): 'berthierville', ('cp', 'quebec'): 'palais',
+         ('cp', 'grandmere'): 'grand mere', ('cp', 'grandes piles'): 'grand piles', ('cp', 'les gres'): 'gres', ('cp', 'la gabelle'): 'gabelle',
+         ('cp', 'garneau'): 'garneau junction'}   # CP Tables 33-37   # CP Tables 23-24   # CP Tables 19-22   # table name -> collection name
 def place_for(rail):
     own = OWN[rail]
     def f(name):
@@ -201,7 +206,8 @@ SHARED = {('onr', 'toronto union'): 'TORONTO_UNION', ('oncn', 'toronto union'): 
           ('oncn', 'ottawa union'): 'OTTAWA_UNION', ('oncp', 'ottawa union'): 'OTTAWA_UNION',
           ('oncp', 'ottawa'): 'OTTAWA_UNION', ('oncn', 'ottawa'): 'OTTAWA_UNION',   # Brendan, 24 Oct 2026: every train to Ottawa uses Union Station unless the table says otherwise (Bank Street)
           ('onr', 'north bay'): 'CN_NORTH_BAY',                           # "North Bay (C.N.)": ONR trains used the CN station
-          ('onr', 'cochrane'): 'CN_COCHRANE',                             # one station at Cochrane (CN Table 38 and the ONR)
+          ('onr', 'cochrane'): 'CN_COCHRANE',
+          ('oncp', 'quebec'): 'CN_QUEBEC_PALAIS',                          # one Palais Station (CP Table 33 and CN Table 38)                             # one station at Cochrane (CN Table 38 and the ONR)
           **{(r, c): g for r in ('onnyc', 'ondh') for c, g in (('montreal', 'CP_MONTREAL_WINDSOR'), ('westmount', 'CP_WESTMOUNT'), ('montreal west', 'CP_MONTREAL_WEST'))}}   # the NYC and D&H used the CP stations
 def register(files):
     import ab_table

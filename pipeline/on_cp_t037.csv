@@ -1,0 +1,13 @@
+# Canadian Pacific, Table 37: Trois Rivieres - Cap de la Madeleine - Grandes Piles. Canadian Pacific timetable, 1948, page 13. Eastern time.
+# Garneau is printed as two rows (Ar, Lv): one row here.
+#train col=M367 num=367 dir=down days="ex Sun" kind=mixed note=Mixed.
+#train col=M366 num=366 dir=up days="ex Sun" kind=mixed note=Mixed.
+mile,station,principal,prov,tz,M367,M366
+0.0,Trois Rivieres,1,QC,E,lv 7.15p,ar 2.25p
+2.6,Cap de la Madeleine,1,QC,E,7.25p,2.15p
+9.3,St. Maurice,0,QC,E,7.45p,1.42p
+13.8,St. Narcisse,0,QC,E,8.10p,f1.27p
+20.9,Lac a la Tortue,0,QC,E,8.40p,1.02p
+22.9,Garneau,1,QC,E,ar 8.45p / lv 9.10p,ar 12.25p / lv 12.55p
+26.4,Proulx,0,QC,E,f9.25p,f12.15p
+29.5,Grandes Piles,1,QC,E,ar 9.45p,lv 12.05p

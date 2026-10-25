@@ -1,0 +1,9 @@
+# CP Table 38: Quebec - Murray Bay - La Malbaie, "via Can. Nat. Rys." Canadian Pacific timetable, 1948, page 13. Eastern time. NOT BUILT: CN trains, with the CN timetables. h: daily except Sunday and Monday.
+#train col=A1 num="" dir=down days="ex Sun" kind=passenger
+#train col=A2 num="" dir=up days="Tue,Wed,Thu,Fri,Sat" kind=passenger
+#train col=A4 num="" dir=up days=Sun kind=passenger
+mile,station,principal,prov,tz,A1,A2,A4
+0.0,Quebec (Palais Station),1,QC,E,lv 2.00p,ar 11.10a,ar 10.00p
+,Ste. Anne de Beaupre,1,QC,E,2.53p,10.15a,9.05p
+,Pointe au Pic (Murray Bay),1,QC,E,5.45p,7.20a,6.15p
+,La Malbaie,1,QC,E,ar 5.55p,lv 7.15a,lv 6.10p

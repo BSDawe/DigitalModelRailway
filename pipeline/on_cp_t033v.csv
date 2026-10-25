@@ -1,0 +1,46 @@
+# Canadian Pacific, Table 33: the trains from Montreal Place Viger Station (Nos. 352 / 349 to and from Quebec, Sunday Nos. 378 / 375 to and from
+# Lanoraie for St. Gabriel). Canadian Pacific timetable, 1948, page 13. Eastern time. Place Viger has no mileage printed: its mile here is the traced distance to Park Avenue, counted back from Park Avenue's 11.8.
+#train col=No352 num=352 dir=down days=daily kind=passenger note="Coaches. The Berthier - Berthierville bus meets the train."
+#train col=No378 num=378 dir=down days=Sun kind=passenger note="On to St. Gabriel (Table 35)."
+#train col=No349 num=349 dir=up days=daily kind=passenger note="Coaches. The Berthier - Berthierville bus meets the train."
+#train col=No375 num=375 dir=up days=Sun kind=passenger note="From St. Gabriel (Table 35). c: stops to let off passengers."
+mile,station,principal,prov,tz,No352,No378,No349,No375
+5.6,Montreal Place Viger,1,QC,E,lv 4.00p,lv 8.30a,ar 11.00a,ar 9.50p
+11.8,Montreal Park Avenue,1,QC,E,4.15p,8.45a,10.45a,9.35p
+15.5,Bordeaux,0,QC,E,4.21p,8.51a,10.35a,9.26p
+15.9,Laval Rapides,0,QC,E,,,,
+17.7,St. Martin,0,QC,E,,,,
+18.5,St. Martin Jct.,0,QC,E,,f8.56a,,9.20p
+19.4,Le Cap,0,QC,E,4.28p,f8.58a,f10.25a,f9.17p
+23.4,St. Vincent de Paul,0,QC,E,4.34p,f9.03a,10.17a,9.11p
+28.5,De Sales,0,QC,E,f4.42p,f9.09a,f10.08a,9.04p
+28.9,Terrebonne,0,QC,E,4.44p,9.10a,10.07a,9.02p
+32.7,Mascouche,0,QC,E,4.51p,f9.14a,9.57a,8.55p
+35.8,Cabane Ronde,0,QC,E,f4.57p,f9.17a,f9.52a,
+41.3,L'Epiphanie,0,QC,E,5.07p,9.27a,9.42a,8.43p
+45.3,Vaucluse,0,QC,E,f5.13p,f9.35a,,
+48.9,Lavaltrie,0,QC,E,5.19p,f9.42a,f9.29a,8.32p
+54.2,Lanoraie,1,QC,E,5.25p,ar 9.50a,9.19a,lv 8.25p
+62.5,Berthier,1,QC,E,5.47p,,9.04a,
+65.9,St. Cuthbert,0,QC,E,5.52p,,9.00a,
+70.7,St. Barthelemy,0,QC,E,6.01p,,8.52a,
+76.2,Maskinonge,0,QC,E,6.10p,,8.44a,
+80.2,Louiseville,1,QC,E,6.19p,,8.37a,
+85.8,Yamachiche,0,QC,E,6.28p,,8.29a,
+92.8,Pointe du Lac,0,QC,E,f6.38p,,8.20a,
+100.8,Trois Rivieres,1,QC,E,ar 6.50p / lv 7.00p,,ar 8.00a / lv 8.10a,
+107.4,Redmill,0,QC,E,f7.10p,,f7.47a,
+113.5,Champlain,0,QC,E,7.18p,,7.39a,
+120.5,Batiscan,0,QC,E,7.27p,,7.29a,
+125.7,La Perade,0,QC,E,7.35p,,7.22a,
+132.9,Grondines,0,QC,E,7.45p,,7.11a,
+136.0,Lachevrotiere,0,QC,E,7.50p,,7.06a,
+139.3,Deschambault,0,QC,E,7.55p,,f7.01a,
+143.5,Portneuf,0,QC,E,8.02p,,6.55a,
+148.1,St. Basile,0,QC,E,8.09p,,6.48a,
+152.8,Pont Rouge,0,QC,E,8.17p,,6.40a,
+159.5,Trenholme,0,QC,E,f8.28p,,f6.31a,
+165.0,Belair,0,QC,E,f8.36p,,6.22a,
+170.9,Lorette,0,QC,E,f8.45p,,6.13a,
+176.2,Cadorna,0,QC,E,,,,
+178.3,Quebec (Palais Station),1,QC,E,ar 9.00p,,lv 6.00a,

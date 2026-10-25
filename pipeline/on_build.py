@@ -21,6 +21,8 @@ LONG = {'on_cp_t004': 'Montreal – Ottawa – North Bay – Sudbury – Fort Wi
         'on_onr_t018m': 'Cochrane – Moosonee', 'on_onr_t018s': 'Swastika – Kirkland Lake – Rouyn – Noranda',
         'on_cn_t108': 'Cochrane – Kapuskasing – Hearst – Nakina', 'on_onr_t108': 'Cochrane – Kapuskasing (The Northland, over the CN)', 'on_cn_t116': 'Longlac – Port Arthur – Fort William',
         'on_cp_t023': 'Montreal – Farnham – Foster – Magog – Sherbrooke', 'on_cp_t024': 'Montreal – Farnham – Sutton – Newport – Boston (on this map to the border)',
+        'on_cp_t033': 'Montreal (Windsor Station) – Trois Rivières – Quebec', 'on_cp_t033v': 'Montreal (Place Viger) – Trois Rivières – Quebec',
+        'on_cp_t035': 'Lanoraie – Joliette – St. Gabriel', 'on_cp_t036': "Trois Rivières – Shawinigan Falls – Grand'Mère", 'on_cp_t037': 'Trois Rivières – Grandes Piles',
         'on_dh_t018': 'Montreal – Rouses Point – Albany – New York (on this map to the border)', 'on_nyc_t018': 'Montreal – Malone – Albany – New York (on this map to the border)',
         'on_acr_t001': 'Sault Ste. Marie – Hawk Junction – Hearst', 'on_acr_t001m': 'Hawk Junction – Michipicoten'}
 OVER = {'on_cn_t075b': dict(noplace=['Ottawa (Bank Street)']),
@@ -45,7 +47,7 @@ def specs():
         key = stem.replace('on_', 'on').replace('_t', '')
         out.append(dict(key=key, rail=rail, graph='sk:' + rail, legs=[dict(csv=os.path.basename(fn))], dirs=['to ' + b, 'to ' + a], short=short,
                         long=o.get('long', LONG.get(stem, f'{a} – {b}')), src=f'{short} ({SRC[rail]})', cols=o.get('cols'), shift=-10800, tzrows=True, tznote=TZ,
-                        names=o.get('names', {}), notes=o.get('notes', {}), via=o.get('via', ()), noplace=o.get('noplace', ()), force=o.get('force', ()), places=o.get('places'), ends=True, realends=True))
+                        names={**{t['col']: t['name'] for t in ab_table.load(fn)['trains'] if t.get('name')}, **o.get('names', {})}, notes=o.get('notes', {}), via=o.get('via', ()), noplace=o.get('noplace', ()), force=o.get('force', ()), places=o.get('places'), ends=True, realends=True))
     return out
 SPECS = specs()
 on_lines.register([(s['rail'], s['legs'][0]['csv']) for s in SPECS])

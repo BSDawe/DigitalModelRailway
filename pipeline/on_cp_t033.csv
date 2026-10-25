@@ -1,0 +1,55 @@
+# Canadian Pacific, Table 33: Montreal (Windsor Station) - Park Avenue - Trois Rivieres - Quebec (Palais Station): the trains from Windsor Station.
+# Canadian Pacific timetable, 1948, page 13. Eastern time. The CN trains of the table (from Central Station to Levis) are in on_cnpool_t033.csv, not built (Brendan, 24 Oct 2026: with the CN timetables).
+# Train names as printed down the columns: Frontenac (Pool 354 / 353), Viger (Pool 356 / 355). St. Martin Jct. and Trois Rivieres are printed as two rows (Ar, Lv): one row here.
+# Berthier: the collection's point is "Berthierville"; the table brackets Berthier and Berthierville (62.5 / 64.6 miles), with a bus between them.
+#train col=P358 num=358 dir=down days=daily kind=passenger note="Pool train (CP - CN joint Montreal - Quebec service). Coaches and sleeping cars (12 sections, drawing room; 8 sections, 4 double bedrooms); sleepers open 9.30 p.m., may be occupied in Quebec until 7.00 a.m. b: stops to let off passengers from Montreal."
+#train col=P356 num=356 dir=down days="Sun,Mon,Tue,Wed,Thu,Fri" kind=passenger name=Viger note="Pool train (CP - CN joint Montreal - Quebec service). Coaches, diner, parlour cars. Through sleeping car (12 sections, drawing room) Montreal - Quebec - Edmundston as Pool 356 - CN 68 (from Montreal Mondays, Wednesdays, Fridays)."
+#train col=P362 num=362 dir=down days=Sat kind=passenger note="Pool train (CP - CN joint Montreal - Quebec service). Coaches, diner, parlour cars."
+#train col=P354 num=354 dir=down days=daily kind=passenger name=Frontenac note="Pool train (CP - CN joint Montreal - Quebec service). Coaches, diner, parlour cars."
+#train col=No350 num=350 dir=down days=daily kind=passenger note="Coaches. The Berthier - Berthierville bus meets the train."
+#train col=P353 num=353 dir=up days=daily kind=passenger name=Frontenac note="Pool train (CP - CN joint Montreal - Quebec service). Coaches, diner, parlour cars."
+#train col=No351 num=351 dir=up days=daily kind=passenger note="Coaches. The Berthier - Berthierville bus meets the train."
+#train col=P355 num=355 dir=up days=daily kind=passenger name=Viger note="Pool train (CP - CN joint Montreal - Quebec service). Coaches, diner, parlour cars."
+#train col=P357 num=357 dir=up days=daily kind=passenger note="Pool train (CP - CN joint Montreal - Quebec service). Coaches and sleeping cars; sleepers may be occupied in Montreal (Windsor Station) until 6.45 a.m. Through sleeping car from Edmundston (CN 67 - Pool 357; from Edmundston Sundays, Tuesdays, Thursdays). p: flag stop Sundays only, to take on passengers."
+mile,station,principal,prov,tz,P358,P356,P362,P354,No350,P353,No351,P355,P357
+0.0,Montreal (Windsor Station),1,QC,E,lv 11.00p,lv 6.00p,lv 12.20p,lv 9.15a,lv 7.20a,ar 4.55p,ar 7.45p,ar 9.15p,ar 6.30a
+2.0,Westmount,0,QC,E,11.06p,6.07p,12.27p,9.22a,7.26a,4.47p,7.37p,9.07p,6.22a
+4.7,Montreal West,0,QC,E,11.12p,6.15p,12.35p,9.30a,7.32a,4.40p,7.30p,9.00p,6.12a
+11.8,Montreal Park Avenue,1,QC,E,11.30p,6.30p,12.50p,9.45a,7.50a,4.25p,7.15p,8.45p,5.45a
+15.5,Bordeaux,0,QC,E,11.38p,,f12.56p,,7.56a,,7.06p,,5.35a
+15.9,Laval Rapides,0,QC,E,,,,,,,,,
+17.7,St. Martin,0,QC,E,,,,,,,,,
+18.5,St. Martin Jct.,0,QC,E,,,,,,,,,5.25a
+19.4,Le Cap,0,QC,E,,,,,,,,,
+23.4,St. Vincent de Paul,0,QC,E,,,,,8.08a,,6.48p,,
+28.5,De Sales,0,QC,E,,,,,f8.15a,,,,
+28.9,Terrebonne,0,QC,E,12.04a,,,,8.16a,,6.35p,,5.01a
+32.7,Mascouche,0,QC,E,12.11a,,,,8.21a,,6.28p,,f4.52a
+35.8,Cabane Ronde,0,QC,E,,,,,f8.27a,,f6.23p,,
+41.3,L'Epiphanie,0,QC,E,12.26a,,,,8.36a,,6.13p,,4.36a
+45.3,Vaucluse,0,QC,E,,,,,f8.42a,,,,
+48.9,Lavaltrie,0,QC,E,,,,,f8.48a,,f6.00p,,
+54.2,Lanoraie,1,QC,E,12.49a,,1.40p,,9.01a,,5.50p,,4.09a
+62.5,Berthier,1,QC,E,1.03a,,,,9.15a,,5.36p,,f3.47a
+65.9,St. Cuthbert,0,QC,E,,,,,9.19a,,5.32p,,
+70.7,St. Barthelemy,0,QC,E,1.17a,,,,9.27a,,5.24p,,f3.32a
+76.2,Maskinonge,0,QC,E,1.28a,,,,9.36a,,5.15p,,f3.21a
+80.2,Louiseville,1,QC,E,1.37a,,2.07p,,9.44a,,5.08p,,3.12a
+85.8,Yamachiche,0,QC,E,1.48a,,,,9.53a,,5.00p,,f3.01a
+92.8,Pointe du Lac,0,QC,E,,,,,f10.03a,,4.51p,,
+100.8,Trois Rivieres,1,QC,E,ar 2.15a / lv 2.35a,ar 8.15p / lv 8.25p,ar 2.35p / lv 2.45p,ar 11.20a / lv 11.30a,ar 10.15a / lv 10.25a,ar 2.40p / lv 2.50p,ar 4.30p / lv 4.40p,ar 6.45p / lv 6.55p,ar 1.55a / lv 2.25a
+107.4,Redmill,0,QC,E,,,,,f10.35a,,f4.17p,,
+113.5,Champlain,0,QC,E,3.02a,,,,10.43a,,4.09p,,f1.26a
+120.5,Batiscan,0,QC,E,3.16a,,,,10.52a,,3.59p,,1.11a
+125.7,La Perade,0,QC,E,3.26a,,f3.14p,,11.00a,,3.52p,,1.00a
+132.9,Grondines,0,QC,E,f3.40a,,,,11.10a,,3.41p,,f12.45a
+136.0,Lachevrotiere,0,QC,E,3.47a,,,,11.15a,,3.36p,,12.38a
+139.3,Deschambault,0,QC,E,,,,,f11.20a,,f3.30p,,
+143.5,Portneuf,0,QC,E,4.04a,,f3.37p,,11.27a,,3.24p,,12.21a
+148.1,St. Basile,0,QC,E,f4.14a,,,,11.34a,,3.17p,,12.11a
+152.8,Pont Rouge,0,QC,E,4.26a,,f3.51p,,11.41a,,3.10p,,12.01a
+159.5,Trenholme,0,QC,E,f4.41a,,,,f11.51a,,,,f11.47p
+165.0,Belair,0,QC,E,f4.53a,,,,,,2.52p,,
+170.9,Lorette,0,QC,E,f5.05a,,,,,,2.43p,,
+176.2,Cadorna,0,QC,E,5.17a,,,,,,,,
+178.3,Quebec (Palais Station),1,QC,E,ar 5.25a,ar 10.00p,ar 4.30p,ar 1.10p,ar 12.20p,lv 1.10p,lv 2.30p,lv 5.15p,lv 11.00p

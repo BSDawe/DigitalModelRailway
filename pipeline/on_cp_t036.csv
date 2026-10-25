@@ -1,0 +1,21 @@
+# Canadian Pacific, Table 36: Trois Rivieres - Shawinigan Falls - Grand'Mere. Canadian Pacific timetable, 1948, page 13. Eastern time.
+# Shawinigan Falls is printed as two rows (Ar, Lv): one row here.
+#train col=No387 num=387 dir=down days="Sun,Mon,Tue,Wed,Thu,Fri" kind=passenger
+#train col=M385 num=385 dir=down days=Sat kind=mixed note=Mixed.
+#train col=M383 num=383 dir=down days=daily kind=mixed note=Mixed.
+#train col=No381 num=381 dir=down days=daily kind=passenger
+#train col=M379 num=379 dir=down days="ex Sun" kind=mixed note=Mixed.
+#train col=No380 num=380 dir=up days="ex Sun" kind=passenger note="Trois Rivieres printed 7.30, before Les Forges 7.32: probably 7.50 (the other trains take 18 minutes from Les Forges); entered as 7.50."
+#train col=No382 num=382 dir=up days=daily kind=passenger
+#train col=No384 num=384 dir=up days=daily kind=passenger
+#train col=M386 num=386 dir=up days=Sat kind=mixed note=Mixed.
+#train col=M388 num=388 dir=up days="Sun,Mon,Tue,Wed,Thu,Fri" kind=mixed note=Mixed.
+mile,station,principal,prov,tz,No387,M385,M383,No381,M379,No380,No382,No384,M386,M388
+0.0,Trois Rivieres,1,QC,E,lv 8.30p,lv 7.05p,lv 3.00p,lv 11.40a,lv 4.45a,ar 7.50a,ar 2.30p,ar 6.40p,ar 10.05p,ar 11.15p
+7.3,Les Forges,0,QC,E,f8.46p,f7.21p,f3.16p,f11.56a,f5.06a,f7.32a,f2.12p,f6.22p,f9.45p,f10.55p
+9.8,Marchand,0,QC,E,f8.51p,f7.26p,f3.21p,f12.01p,f5.13a,f7.26a,f2.06p,f6.16p,f9.39p,f10.49p
+13.0,La Gabelle,0,QC,E,f8.57p,f7.32p,f3.27p,f12.07p,f5.22a,f7.20a,f2.00p,f6.10p,f9.32p,f10.42p
+14.5,Les Gres,0,QC,E,f9.01p,f7.36p,f3.31p,f12.11p,f5.28a,f7.16a,f1.56p,f6.06p,f9.28p,f10.38p
+16.7,Labissoniere,0,QC,E,f9.06p,f7.41p,f3.36p,f12.16p,f5.35a,f7.11a,f1.51p,f6.01p,f9.23p,f10.33p
+21.1,Shawinigan Falls,1,QC,E,9.20p,ar 7.55p / lv 8.05p,ar 3.50p / lv 4.00p,12.30p,5.48a,7.00a,1.40p,5.50p,9.10p,10.20p
+27.4,Grand'Mere,1,QC,E,ar 9.35p,ar 8.20p,ar 4.15p,ar 12.45p,ar 6.15a,lv 6.45a,lv 1.25p,lv 5.35p,lv 8.55p,lv 10.05p

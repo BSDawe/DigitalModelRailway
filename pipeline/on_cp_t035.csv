@@ -1,0 +1,17 @@
+# Canadian Pacific, Table 35: Lanoraie - Joliette - St. Gabriel. Canadian Pacific timetable, 1948, page 13. Eastern time.
+#train col=No309 num=309 dir=down days="ex Sun" kind=passenger
+#train col=No307 num=307 dir=down days=Sat kind=passenger
+#train col=No378 num=378 dir=down days=Sun kind=passenger note="From Montreal Place Viger (Table 33)."
+#train col=No305 num=305 dir=down days="ex Sun" kind=passenger
+#train col=No304 num=304 dir=up days="ex Sun" kind=passenger
+#train col=No306 num=306 dir=up days=Sat kind=passenger
+#train col=No308 num=308 dir=up days="ex Sun" kind=passenger
+#train col=No375 num=375 dir=up days=Sun kind=passenger note="On to Montreal Place Viger (Table 33)."
+mile,station,principal,prov,tz,No309,No307,No378,No305,No304,No306,No308,No375
+0.0,Lanoraie,1,QC,E,lv 6.00p,lv 1.50p,lv 9.55a,lv 9.25a,ar 8.50a,ar 1.20p,ar 5.20p,ar 8.25p
+2.6,Voligny,0,QC,E,f6.07p,f1.57p,f10.02a,f9.32a,f8.43a,f1.13p,f5.13p,f8.18p
+6.3,Joliette,1,QC,E,6.15p,2.05p,10.10a,9.40a,8.35a,1.05p,5.05p,8.10p
+11.5,Lourdes,0,QC,E,f6.32p,f2.21p,f10.22a,f9.56a,f8.16a,f12.48p,f4.48p,7.53p
+16.7,St. Felix,0,QC,E,6.45p,2.32p,10.33a,10.07a,8.04a,12.37p,4.37p,7.42p
+20.8,St. Cleophas,0,QC,E,f6.55p,f2.40p,f10.41a,f10.15a,f7.54a,f12.29p,f4.29p,f7.34p
+27.6,St. Gabriel,1,QC,E,ar 7.10p,ar 2.55p,ar 10.55a,ar 10.30a,lv 7.40a,lv 12.15p,lv 4.15p,lv 7.20p
