@@ -1693,3 +1693,5 @@ Stations of different railways within 250 m (70 pairs; script: same check over v
   CP reading had 2.15). Guide signs: large dot = connecting train (the B&M south of Newport). NOT ADDED (ask Brendan): the Guide's Sherbrooke - Rock Island -
   Newport trains "34" / "35" (Sherbrooke 1.00 p.m. / Newport 11.25 a.m.), the Beebe Jct. - Rock Island - Stanstead shuttle with Nos. 6 / 1, and a Vallee Jct. -
   St. Georges run in the No. 6 column (6.20 - 7.20 p.m.): the July CP table showed buses or nothing there.
+  RESOLVED by the Guide's signs (scan quebec_central_signs2): a = daily except Sunday, BUS (Sherbrooke - Newport 34 / 35); v = daily, connection via BUS (Beebe - Stanstead):
+  both stay out. The Vallee Jct. - St. Georges 6.20 p.m. run in the No. 6 column has no sign: asked Brendan.
