@@ -1,0 +1,10 @@
+# Canadian Pacific, Table 45A: Renfrew - Eganville (mixed). Canadian Pacific timetable, 1948, pages 16 - 19. Eastern time.
+#train col=M583 num=583 dir=down days="ex Sun" kind=mixed note=Mixed.
+#train col=M582 num=582 dir=up days="ex Sun" kind=mixed note=Mixed.
+mile,station,principal,prov,tz,M583,M582
+0.0,Renfrew,1,ON,E,lv 11.30a,ar 3.15p
+3.7,Payne,0,ON,E,11.45a,3.05p
+7.0,Northcote,0,ON,E,f11.55a,f2.45p
+13.2,Douglas,0,ON,E,12.12p,2.30p
+17.2,Fourth Chute,0,ON,E,f12.28p,f2.05p
+22.9,Eganville,1,ON,E,ar 12.45p,lv 1.45p

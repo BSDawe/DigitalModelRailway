@@ -1,0 +1,36 @@
+# Canadian Pacific, Table 44: Montreal Place Viger - Ste. Therese - Lachute - Montebello - Hull - Ottawa. Canadian Pacific timetable, 1948, pages 16 - 19. Eastern time.
+# Stops between Park Avenue and Ste. Therese from Table 42. Miles from Place Viger as printed.
+#train col=No423 num=423 dir=down days=daily kind=passenger note="Laval Rapides, Rosemere (Table 42): stop to let off passengers."
+#train col=No422 num=422 dir=up days=daily kind=passenger
+mile,station,principal,prov,tz,No423,No422
+0.0,Montreal Place Viger,1,QC,E,lv 4.55p,ar 11.55a
+6.1,Montreal Park Avenue,1,QC,E,5.10p,11.40a
+9.8,Bordeaux,0,QC,E,5.16p,11.30a
+10.2,Laval Rapides,0,QC,E,5.18p,f11.28a
+12.0,St. Martin,0,QC,E,,
+12.8,St. Martin Jct.,0,QC,E,,
+17.2,Ste. Rose,0,QC,E,5.28p,11.16a
+17.9,Rosemere,0,QC,E,5.30p,f11.14a
+19.9,Ste. Therese,1,QC,E,5.35p,11.10a
+27.5,St. Augustin,0,QC,E,5.47p,10.55a
+32.4,Ste. Scholastique,0,QC,E,5.55p,10.46a
+37.3,St. Hermas,0,QC,E,6.03p,10.37a
+44.1,Lachute,1,QC,E,6.20p,10.25a
+48.7,Staynerville,0,QC,E,6.28p,10.15a
+54.9,Marelan,0,QC,E,f6.38p,f10.06a
+57.6,Grenville,0,QC,E,6.43p,10.00a
+59.5,Calumet,1,QC,E,6.52p,9.55a
+64.8,Pointe au Chene,0,QC,E,7.03p,9.45a
+70.8,Fassett,0,QC,E,7.16p,9.34a
+74.5,Montebello,1,QC,E,7.27p,9.26a
+79.1,Papineauville,0,QC,E,7.37p,9.14a
+83.9,Plaisance,0,QC,E,7.46p,9.03a
+90.6,Thurso,1,QC,E,7.57p,8.51a
+94.0,Lochaber,0,QC,E,f8.03p,f8.45a
+99.9,Buckingham Jct.,0,QC,E,8.16p,8.35a
+103.8,Angers,0,QC,E,f8.23p,f8.25a
+109.7,Templeton,0,QC,E,f8.32p,8.15a
+111.9,Gatineau,0,QC,E,8.37p,8.11a
+114.4,Talon,0,QC,E,f8.42p,f8.06a
+118.2,Hull,1,QC,E,8.52p,7.58a
+119.9,Ottawa,1,ON,E,ar 9.00p,lv 7.50a

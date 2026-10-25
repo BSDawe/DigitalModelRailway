@@ -1,0 +1,29 @@
+# Canadian Pacific, Table 47: Ottawa - Carleton Place - Smiths Falls - Brockville. Canadian Pacific timetable, 1948, pages 16 - 19. Eastern time.
+# Carleton Place and Smiths Falls are printed Ar and Lv: one row here. Table 48's Smiths Falls - Carleton Place connections are these trains (560, 562 / 563, 559).
+#train col=P559 num=559 dir=down days=daily kind=passenger note="Pool train (CP - CN joint Ottawa - Toronto service). Jasper: stops Sundays only for passengers."
+#train col=No563 num=563 dir=down days="ex Sun" kind=passenger note="From Prescott as No. 30 (Table 44A)."
+#train col=M561 num=561 dir=down days="ex Sun" kind=mixed note=Mixed.
+#train col=No562 num=562 dir=up days="ex Sun" kind=passenger note="Goes on from Ottawa as No. 29 to Prescott (Table 44A)."
+#train col=M564 num=564 dir=up days="ex Sun" kind=mixed note=Mixed.
+#train col=P560 num=560 dir=up days=daily kind=passenger note="Pool train (CP - CN joint Ottawa - Toronto service)."
+mile,station,principal,prov,tz,P559,No563,M561,No562,M564,P560
+0.0,Ottawa,1,ON,E,lv 3.30p,lv 9.20a,,ar 5.35p,,ar 9.55p
+1.6,Hull,0,ON,E,,9.28a,,5.27p,,
+2.3,Hull West,0,ON,E,,9.30a,,5.25p,,
+3.9,Ottawa West,1,ON,E,3.42p,9.35a,,5.20p,,9.42p
+5.8,Westboro,0,ON,E,,9.39a,,5.14p,,
+18.1,Stittsville,0,ON,E,,9.58a,,4.55p,,
+26.9,Ashton,0,ON,E,,10.13a,,4.43p,,
+31.6,Carleton Place,1,ON,E,ar 4.20p / lv 4.25p,ar 10.20a / lv 10.25a,,ar 4.30p / lv 4.35p,,9.11p
+39.8,Franktown,0,ON,E,,10.37a,,4.11p,,
+48.7,Smiths Falls,1,ON,E,ar 4.50p / lv 4.55p,ar 10.50a / lv 10.55a,lv 8.00a,ar 3.40p / lv 3.55p,ar 7.10p,ar 8.48p / lv 8.51p
+52.6,Story,0,ON,E,,,f8.10a,,f6.55p,
+55.4,Jasper,0,ON,E,5.05p,11.06a,8.20a,3.27p,6.48p,
+60.7,Yule,0,ON,E,,,f8.33a,,f6.35p,
+62.9,Bell,0,ON,E,,,f8.39a,,f6.28p,
+64.5,Jelly,0,ON,E,,,f8.45a,,f6.22p,
+66.9,Bellamy,0,ON,E,,11.26a,8.53a,3.11p,6.15p,
+68.4,Hawkens,0,ON,E,,,f8.58a,,f6.10p,
+69.8,Clark,0,ON,E,,,f9.03a,,f6.06p,
+71.2,Fairfield,0,ON,E,,,f9.08a,,f6.02p,
+76.2,Brockville,1,ON,E,ar 5.30p,ar 11.45a,ar 9.20a,lv 2.55p,lv 5.50p,lv 8.05p

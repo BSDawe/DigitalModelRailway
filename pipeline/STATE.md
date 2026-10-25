@@ -1565,3 +1565,24 @@ Stations of different railways within 250 m (70 pairs; script: same check over v
 - STILL JANKY (for Brendan's junction list): at Montreal West the Windsor trains for Park Avenue run a few hundred metres south onto the Adirondack line
   and back north (the collection has no north-facing curve there).
 - Checks: only oncp033 / oncp033v moved; check_gtfs 1 problem (old).
+
+## Version 69 (25 October 2026): CP Tables 43, 44, 44A, 45, 45A, 46, 47, 48 (Montreal - Ottawa and the Ottawa district)
+- Scans (private repo scans/cp1948_qc/): t043_down, t043_up, t043_signs, t044, t044a, t045_046, t047, t048. "Wd. Stn." = Windsor Station (Brendan).
+- MONTREAL WEST WYE, EAST LEG (Brendan, 24 Oct 2026): the curve by which trains between Windsor Station and Park Avenue leave the main line east of
+  Montreal West (the collection has it only inside a long "Current" siding piece): ontario_quebec_links.geojson "Montreal West wye, east leg" (cost
+  1.5 so the Adirondack / Delson trains keep the main line through Montreal West). Windsor - Park Avenue trains (33, 42w, 44w) no longer run out and
+  back on the Adirondack line. Tables 23, 24 and 4 moved slightly (they had used the yard track; now the main line).
+- on_cp_t043 (Short Line, Montreal - Vaudreuil - Rigaud - Vankleek Hill - Ottawa: through 503 / 502, 505 / 504, 507 / 506 and the Montreal suburban trains
+  to Vaudreuil / Rigaud, up miles printed from Ottawa). Seasonal A / B marks are about Monday May 24 only (ignored for July).
+- on_cp_t004 (transcontinentals 1, 7, 9 / 2, 8, 10): Table 43 and Table 48 intermediate stops added (Pointe Claire, St. Annes, Vaudreuil, Rigaud,
+  St. Eugene, Vankleek Hill, Ottawa West, Westboro, Almonte, Arnprior, Cobden; Carleton Place and Pembroke Ar / Lv). The Ottawa - Chalk River locals
+  (551, 557, 555 / 556, 558, 550) MOVED to on_cp_t048 with all their stops.
+- on_cp_t044 (Place Viger trains 423 / 422) and on_cp_t044w (Windsor Station trains 421, 427 / 428, 424): Montreal - Park Avenue - Ste. Therese -
+  Lachute - Montebello - Hull - Ottawa, with their Table 42 stops; on_cpx_t042.csv deleted (now built).
+- on_cp_t044a (No. 29 / 30 Ottawa - Bedell - Prescott, the Ogdensburg ferry not built), on_cp_t044p (pool trains 23, 33 / 34, 24 Ottawa - Kemptville -
+  Smiths Falls for Toronto, and the Bedell - Smiths Falls connection), on_cp_t045 (Ottawa - Hull - Shawville - Waltham), on_cp_t045a (Renfrew -
+  Eganville mixed), on_cp_t046 (Ottawa - Wakefield - Maniwaki), on_cp_t047 (Ottawa - Carleton Place - Smiths Falls - Brockville: pool 559 / 560, 563 /
+  562, mixed M561 / M564), on_cp_t048 (the Chalk River locals).
+- Hand point (Claude, to confirm): CP Brockville at the end of the Brockville and Ottawa main line (-75.6904, 44.5934); the collection has no CP
+  Brockville station (it had placed it at the CN station, leaving a 5.4 mi straight line).
+- Checks: all on track; check_gtfs 1 problem (old).

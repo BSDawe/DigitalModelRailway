@@ -1,0 +1,44 @@
+# Canadian Pacific, Table 46: Ottawa - Hull - Wakefield - Gracefield - Maniwaki. Canadian Pacific timetable, 1948, pages 16 - 19. Eastern time.
+#train col=No535 num=535 dir=down days="Mon,Tue,Wed,Thu,Fri" kind=passenger
+#train col=No539 num=539 dir=down days=Sat kind=passenger
+#train col=No537 num=537 dir=down days=Sun kind=passenger
+#train col=No532 num=532 dir=up days="ex Sun" kind=passenger note="Alcove to Ottawa (first trip May 3)."
+#train col=No534 num=534 dir=up days="ex Sun" kind=passenger
+#train col=No538 num=538 dir=up days=Sun kind=passenger
+mile,station,principal,prov,tz,No535,No539,No537,No532,No534,No538
+0.0,Ottawa,1,ON,E,lv 4.30p,lv 12.40p,lv 8.15a,ar 7.25a,ar 10.45a,ar 9.40p
+1.6,Hull,1,QC,E,4.38p,12.48p,8.23a,7.17a,10.37a,9.32p
+4.6,Ironside,0,QC,E,f4.44p,f12.54p,f8.28a,f7.10a,f10.29a,f9.25p
+8.1,Chelsea,0,QC,E,4.52p,1.02p,8.35a,7.01a,10.20a,9.16p
+10.4,Tenaga,0,QC,E,f4.57p,f1.07p,f8.40a,f6.56a,f10.12a,9.08p
+10.9,Glen Eagle,0,QC,E,f4.59p,f1.09p,f8.41a,f6.54a,f10.10a,9.05p
+11.6,Kirk's Ferry,0,QC,E,f5.01p,f1.11p,8.43a,f6.52a,f10.08a,9.02p
+12.9,Larrimac Links,0,QC,E,f5.04p,f1.14p,f8.46a,f6.49a,f10.04a,f8.57p
+14.4,Burnet,0,QC,E,f5.07p,f1.17p,f8.49a,f6.46a,f10.00a,f8.52p
+15.5,Pine Road,0,QC,E,f5.09p,f1.19p,f8.51a,f6.43a,f9.57a,f8.49p
+16.4,Cascades,0,QC,E,5.11p,1.21p,8.53a,6.41a,9.55a,8.47p
+18.0,Farm Point,0,QC,E,f5.16p,f1.26p,f8.58a,f6.36a,f9.50a,8.42p
+20.5,Rockhurst,0,QC,E,5.21p,1.31p,9.03a,6.31a,9.45a,f8.37p
+21.3,Wakefield,1,QC,E,5.25p,1.35p,9.07a,6.27a,9.41a,8.33p
+24.5,Alcove,0,QC,E,5.32p,1.42p,9.14a,lv 6.20a,9.33a,8.25p
+29.0,Lordsvale,0,QC,E,f5.41p,f1.51p,f9.25a,,f9.23a,f8.15p
+29.7,Farrellton,0,QC,E,f5.43p,f1.53p,f9.27a,,f9.21a,f8.13p
+33.0,Brennan,0,QC,E,f5.50p,f2.00p,f9.34a,,f9.14a,f8.06p
+34.9,Low,0,QC,E,5.55p,2.05p,9.39a,,9.10a,8.02p
+41.0,Venosta,0,QC,E,6.08p,2.18p,9.52a,,8.56a,7.52p
+47.0,Kazabazua,1,QC,E,6.22p,2.32p,10.06a,,8.46a,7.42p
+48.7,Aylwin,0,QC,E,f6.27p,f2.37p,f10.11a,,f8.39a,f7.35p
+53.0,Marks,0,QC,E,f6.37p,f2.47p,f10.20a,,f8.27a,f7.23p
+56.0,Perras,0,QC,E,f6.44p,f2.54p,f10.26a,,f8.20a,f7.16p
+57.8,Eagle,0,QC,E,f6.48p,f2.58p,f10.30a,,f8.16a,f7.12p
+59.4,Gracefield,1,QC,E,6.54p,3.04p,10.35a,,8.12a,7.08p
+63.7,Clemow,0,QC,E,f7.03p,f3.13p,f10.44a,,f8.03a,f6.59p
+67.2,Blue Sea,0,QC,E,f7.13p,f3.23p,f10.53a,,7.55a,f6.51p
+67.8,Gravelle,0,QC,E,f7.16p,f3.26p,f10.55a,,f7.52a,f6.48p
+68.6,Orlo,0,QC,E,f7.19p,f3.29p,f10.57a,,f7.50a,f6.46p
+69.3,New Lismore,0,QC,E,f7.22p,f3.32p,f10.59a,,f7.48a,f6.43p
+70.1,Ellard,0,QC,E,f7.25p,f3.35p,f11.02a,,f7.46a,f6.41p
+70.7,Rockhaven,0,QC,E,f7.28p,f3.38p,f11.04a,,f7.44a,f6.39p
+71.7,Messines,0,QC,E,7.31p,3.41p,11.07a,,7.42a,6.37p
+75.6,Farley,0,QC,E,f7.42p,f3.52p,f11.16a,,f7.34a,f6.29p
+82.3,Maniwaki,1,QC,E,ar 8.00p,ar 4.10p,ar 11.35a,,lv 7.20a,lv 6.15p

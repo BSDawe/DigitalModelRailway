@@ -1,0 +1,29 @@
+# Canadian Pacific, Table 45: Ottawa - Hull - Aylmer - Shawville - Waltham. Canadian Pacific timetable, 1948, pages 16 - 19. Eastern time.
+#train col=No543 num=543 dir=down days="ex Sun" kind=passenger
+#train col=No542 num=542 dir=up days="ex Sun" kind=passenger
+mile,station,principal,prov,tz,No543,No542
+0.0,Ottawa,1,ON,E,lv 3.50p,ar 9.40a
+1.6,Hull,1,QC,E,3.58p,9.32a
+2.3,Hull West,0,QC,E,4.00p,9.30a
+9.7,Aylmer,1,QC,E,4.19p,9.15a
+17.5,Breckenridge,0,QC,E,f4.36p,9.00a
+19.8,Dominican,0,QC,E,f4.42p,f8.54a
+20.4,Lusk,0,QC,E,f4.44p,f8.52a
+22.9,Eardley,0,QC,E,f4.49p,8.46a
+25.1,Parker,0,QC,E,f4.53p,f8.41a
+27.1,Muldoon,0,QC,E,f4.58p,f8.36a
+29.1,Mohr,0,QC,E,f5.02p,f8.31a
+32.9,Quyon,0,QC,E,5.09p,8.22a
+36.0,Wyman,0,QC,E,f5.16p,f8.16a
+40.2,Maryland,0,QC,E,5.25p,8.07a
+42.8,McKee,0,QC,E,f5.32p,f8.01a
+46.8,Shawville,1,QC,E,5.43p,7.52a
+52.7,Lawn,0,QC,E,f5.56p,f7.38a
+54.1,Morehead,0,QC,E,f6.00p,f7.34a
+57.9,Campbell's Bay,1,QC,E,6.09p,7.24a
+62.3,Vinton,0,QC,E,f6.19p,f7.11a
+69.4,Fort Coulonge,1,QC,E,6.31p,6.55a
+71.3,Davidson,0,QC,E,f6.35p,f6.50a
+75.4,Devonshire Park,0,QC,E,f6.44p,f6.40a
+76.6,Mellon,0,QC,E,f6.47p,f6.37a
+79.8,Waltham,1,QC,E,ar 7.00p,lv 6.30a

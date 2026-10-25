@@ -1,0 +1,40 @@
+# Canadian Pacific, Table 44: Montreal (Windsor Station) - Park Avenue - Ste. Therese - Montebello - Ottawa (Nos. 421, 427 / 428, 424; also in Table 43
+# "via Montebello"). Canadian Pacific timetable, 1948, pages 16 - 19. Eastern time. Stops between Park Avenue and Ste. Therese from Table 42. Miles: Windsor Station - Park Avenue 11.8 (Table 33), then Place Viger miles + 5.7.
+#train col=No421 num=421 dir=down days=daily kind=passenger note="Ste. Rose, Rosemere (Table 42): stop on signal to take on passengers for west of Ste. Therese."
+#train col=No427 num=427 dir=down days=Sat kind=passenger note="Bordeaux: flag stop (Table 42)."
+#train col=No428 num=428 dir=up days=Sat kind=passenger note="Bordeaux: stops to let off passengers."
+#train col=No424 num=424 dir=up days=daily kind=passenger note="Ste. Rose, Bordeaux: stop to let off passengers (Table 42)."
+mile,station,principal,prov,tz,No421,No427,No428,No424
+0.0,Montreal (Windsor Station),1,QC,E,lv 7.40a,lv 12.10p,ar 4.30p,ar 9.40p
+2.0,Westmount,0,QC,E,7.46a,12.16p,4.22p,9.32p
+4.7,Montreal West,0,QC,E,7.52a,12.22p,4.15p,9.25p
+11.8,Montreal Park Avenue,1,QC,E,8.10a,12.40p,4.00p,9.10p
+15.5,Bordeaux,0,QC,E,8.16a,12.46p,3.48p,8.59p
+15.9,Laval Rapides,0,QC,E,,,,
+17.7,St. Martin,0,QC,E,,,,
+18.5,St. Martin Jct.,0,QC,E,,,,
+22.9,Ste. Rose,0,QC,E,8.28a,,,8.46p
+23.6,Rosemere,0,QC,E,8.30a,,,
+25.6,Ste. Therese,1,QC,E,8.35a,1.05p,3.33p,8.40p
+33.2,St. Augustin,0,QC,E,8.47a,,,f8.26p
+38.1,Ste. Scholastique,0,QC,E,8.55a,,,8.19p
+43.0,St. Hermas,0,QC,E,9.03a,,,f8.12p
+49.8,Lachute,1,QC,E,9.17a,1.35p,2.58p,8.03p
+54.4,Staynerville,0,QC,E,9.29a,,,7.54p
+60.6,Marelan,0,QC,E,f9.40a,,,f7.45p
+63.3,Grenville,0,QC,E,9.46a,,,f7.40p
+65.2,Calumet,1,QC,E,9.55a,2.00p,2.34p,7.35p
+70.5,Pointe au Chene,0,QC,E,10.03a,,,f7.26p
+76.5,Fassett,0,QC,E,10.13a,,,7.16p
+80.2,Montebello,1,QC,E,10.22a,2.27p,2.11p,7.07p
+84.8,Papineauville,0,QC,E,10.31a,2.34p,2.02p,6.56p
+89.6,Plaisance,0,QC,E,10.38a,,,6.47p
+96.3,Thurso,1,QC,E,10.48a,2.51p,1.47p,6.37p
+99.7,Lochaber,0,QC,E,f10.53a,,,
+105.6,Buckingham Jct.,0,QC,E,11.04a,3.05p,1.35p,6.22p
+109.5,Angers,0,QC,E,f11.10a,,,f6.13p
+115.4,Templeton,0,QC,E,f11.19a,,,6.04p
+117.6,Gatineau,0,QC,E,11.23a,f3.24p,f1.17p,6.00p
+120.1,Talon,0,QC,E,f11.27a,,,f5.56p
+123.9,Hull,1,QC,E,11.37a,3.38p,1.08p,5.48p
+125.6,Ottawa,1,ON,E,ar 11.45a,ar 3.45p,lv 1.00p,lv 5.40p

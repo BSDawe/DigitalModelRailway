@@ -147,6 +147,7 @@ HAND = {('cp', 'toronto'): _TU, ('cn', 'toronto'): _TU, ('onr', 'toronto'): _TU,
         ('cp', 'fort william'): (-89.24722, 48.37807, 'Canadian Pacific station, Fort William (Brendan, 19 October)'),
         ('cp', 'lanoraie'): (-73.315943, 45.992274, 'Lanoraie, on the main line beside the collection\'s station point (its other "Lanoraie" is the old village end of the abandoned branch)'),
         ('cp', 'montreal park avenue'): (-73.6240, 45.5307, 'Park Avenue Station, Montreal (Claude, approximate: Park Avenue at the CP line; no point in the collection)'),
+        ('cp', 'brockville'): (-75.6904427, 44.5934311, 'Brockville: the end of the CP (Brockville and Ottawa) main line by the CN station, where the pool trains met the CN (Claude, to confirm; the collection has no CP Brockville station point)'),
         ('nyc', 'international boundary'): (-74.2423085, 44.9921679, 'the end of the St. Lawrence & Adirondack trace in the Quebec collection, at the border (Brendan, 24 Oct 2026)'),
         ('dh', 'international boundary'): (-73.3727996, 45.0103103, 'the end of CP track toward Rouses Point (Brendan, 24 Oct 2026)')}
 _MAP = {}

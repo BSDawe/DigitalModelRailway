@@ -25,6 +25,11 @@ LONG = {'on_cp_t004': 'Montreal – Ottawa – North Bay – Sudbury – Fort Wi
         'on_cp_t035': 'Lanoraie – Joliette – St. Gabriel', 'on_cp_t036': "Trois Rivières – Shawinigan Falls – Grand'Mère", 'on_cp_t037': 'Trois Rivières – Grandes Piles',
         'on_cp_t042': 'Montreal (Place Viger) – St. Jérôme – Ste. Agathe – Labelle – Mont-Laurier', 'on_cp_t042w': 'Montreal (Windsor Station) – St. Jérôme – Ste. Agathe – Labelle – Mont-Laurier',
         'on_cp_t042s': 'Montreal (Place Viger) – Ste. Thérèse – St. Lin',
+        'on_cp_t043': 'Montreal – Vaudreuil – Rigaud – Vankleek Hill – Ottawa (Short Line)', 'on_cp_t044': 'Montreal (Place Viger) – Lachute – Montebello – Hull – Ottawa',
+        'on_cp_t044w': 'Montreal (Windsor Station) – Lachute – Montebello – Hull – Ottawa', 'on_cp_t044a': 'Ottawa – Kemptville – Bedell – Prescott',
+        'on_cp_t044p': 'Ottawa – Kemptville – Bedell – Smiths Falls (pool trains)', 'on_cp_t045': 'Ottawa – Hull – Shawville – Waltham', 'on_cp_t045a': 'Renfrew – Eganville',
+        'on_cp_t046': 'Ottawa – Hull – Wakefield – Maniwaki', 'on_cp_t047': 'Ottawa – Carleton Place – Smiths Falls – Brockville',
+        'on_cp_t048': 'Ottawa – Carleton Place – Renfrew – Pembroke – Chalk River',
         'on_dh_t018': 'Montreal – Rouses Point – Albany – New York (on this map to the border)', 'on_nyc_t018': 'Montreal – Malone – Albany – New York (on this map to the border)',
         'on_acr_t001': 'Sault Ste. Marie – Hawk Junction – Hearst', 'on_acr_t001m': 'Hawk Junction – Michipicoten'}
 OVER = {'on_cn_t075b': dict(noplace=['Ottawa (Bank Street)']),

@@ -1,0 +1,80 @@
+# Canadian Pacific, Table 43: Montreal (Windsor Station) - Vaudreuil - Rigaud - Vankleek Hill - Ottawa (the Short Line). Canadian Pacific timetable, 1948, pages 16 - 19. Eastern time.
+# Through trains 503 / 502, 505 / 504, 507 / 506 and the Montreal suburban trains. Nos. 1, 7, 9 / 2, 8, 10 (transcontinental) are in on_cp_t004 (their Table 43
+# stops added there); Nos. 421, 427 / 428, 424 run via Montebello (on_cp_t044w). A: does not run Mon. May 24; B: also runs Mon. May 24 (not in July).
+# Vankleek Hill is printed with Hawkesbury (bus). Up miles printed from Ottawa; here as from Montreal.
+#train col=No503 num=503 dir=down days=daily kind=passenger note="Dorval: stops on signal to take on passengers for Ottawa."
+#train col=No505 num=505 dir=down days="ex Sun" kind=passenger
+#train col=No507 num=507 dir=down days=Sun kind=passenger
+#train col=No573 num=573 dir=down days="Mon,Tue,Wed,Thu,Fri" kind=passenger
+#train col=No515 num=515 dir=down days=Sun kind=passenger
+#train col=No35 num=35 dir=down days="ex Sun" kind=passenger
+#train col=No597 num=597 dir=down days=Sun kind=passenger
+#train col=No529 num=529 dir=down days=Sat kind=passenger
+#train col=No517 num=517 dir=down days="Sun,Mon,Tue,Wed,Thu,Fri" kind=passenger
+#train col=No575 num=575 dir=down days=Sat kind=passenger
+#train col=No531 num=531 dir=down days=Sat kind=passenger
+#train col=No513 num=513 dir=down days=Sat kind=passenger
+#train col=No29 num=29 dir=down days="ex Sun" kind=passenger
+#train col=No519 num=519 dir=down days="Mon,Tue,Wed,Thu,Fri" kind=passenger
+#train col=No581 num=581 dir=down days="Mon,Tue,Wed,Thu,Fri" kind=passenger
+#train col=No587 num=587 dir=down days="Mon,Tue,Wed,Thu,Fri" kind=passenger
+#train col=No521 num=521 dir=down days="Mon,Tue,Wed,Thu,Fri" kind=passenger
+#train col=No571 num=571 dir=down days="Mon,Tue,Wed,Thu,Fri" kind=passenger
+#train col=No533 num=533 dir=down days=Sat kind=passenger
+#train col=No511 num=511 dir=down days="Mon,Tue,Wed,Thu,Fri" kind=passenger
+#train col=No523 num=523 dir=down days=daily kind=passenger
+#train col=No502 num=502 dir=up days="ex Sun" kind=passenger note="St. Annes: stops to let off passengers from points between Ottawa and Vaudreuil."
+#train col=No504 num=504 dir=up days=daily kind=passenger
+#train col=No506 num=506 dir=up days=Sun kind=passenger note="Rigaud, Hudson: stop to let off passengers."
+#train col=No516 num=516 dir=up days="ex Sun" kind=passenger
+#train col=No512 num=512 dir=up days="ex Sun" kind=passenger
+#train col=No572 num=572 dir=up days="ex Sun" kind=passenger
+#train col=No510 num=510 dir=up days="ex Sun" kind=passenger
+#train col=No518 num=518 dir=up days=daily kind=passenger
+#train col=No30 num=30 dir=up days="ex Sun" kind=passenger note="Baie d'Urfe: stops Saturdays only, to take on passengers."
+#train col=No574 num=574 dir=up days="Mon,Tue,Wed,Thu,Fri" kind=passenger
+#train col=No514 num=514 dir=up days=daily kind=passenger
+#train col=No580 num=580 dir=up days="Mon,Tue,Wed,Thu,Fri" kind=passenger
+#train col=No36 num=36 dir=up days="ex Sun" kind=passenger note="Baie d'Urfe to Summerlea: stops on signal Saturdays only."
+#train col=No586 num=586 dir=up days="Mon,Tue,Wed,Thu,Fri" kind=passenger
+#train col=No598 num=598 dir=up days=Sun kind=passenger
+#train col=No520 num=520 dir=up days=Sun kind=passenger
+mile,station,principal,prov,tz,No503,No505,No507,No573,No515,No35,No597,No529,No517,No575,No531,No513,No29,No519,No581,No587,No521,No571,No533,No511,No523,No502,No504,No506,No516,No512,No572,No510,No518,No30,No574,No514,No580,No36,No586,No598,No520
+0.0,Montreal (Windsor Station),1,QC,E,lv 7.15a,lv 3.10p,lv 5.55p,lv 8.40a,lv 8.45a,lv 9.25a,lv 9.25a,lv 11.15a,lv 11.15a,lv 11.20a,lv 12.15p,lv 12.25p,lv 3.40p,lv 4.15p,lv 4.20p,lv 4.50p,lv 5.20p,lv 5.45p,lv 6.00p,lv 8.15p,lv 10.40p,ar 11.40a,ar 6.20p,ar 9.10p,ar 6.40a,ar 7.15a,ar 7.35a,ar 7.45a,ar 8.15a,ar 12.00p,ar 12.50p,ar 4.35p,ar 6.45p,ar 7.30p,ar 8.30p,ar 8.35p,ar 8.50p
+2.0,Westmount,0,QC,E,7.21a,3.16p,6.01p,8.46a,8.51a,9.31a,9.31a,11.21a,11.21a,11.26a,12.21p,12.31p,3.46p,4.21p,4.26p,4.56p,5.26p,5.51p,6.06p,8.21p,10.46p,11.32a,6.12p,9.02p,6.32a,7.07a,7.27a,7.37a,8.07a,11.52a,12.42p,4.27p,6.37p,7.22p,8.22p,8.27p,8.42p
+4.7,Montreal West,0,QC,E,7.27a,3.22p,6.07p,8.52a,8.57a,9.37a,9.37a,,11.27a,11.32a,,12.37p,3.55p,,4.32p,5.02p,5.33p,5.57p,6.12p,8.27p,10.52p,11.25a,6.05p,8.55p,6.25a,7.00a,7.20a,7.30a,8.00a,11.45a,12.35p,4.20p,6.30p,7.15p,8.15p,8.20p,8.35p
+7.6,Grovehill,0,QC,E,,,,f8.58a,f9.02a,,,,f11.33a,f11.38a,,f12.42p,,,f4.37p,,,f6.01p,f6.17p,,f10.58p,,,,,,,,,,,f4.12p,f6.24p,,f8.09p,f8.12p,
+8.2,Summerlea,0,QC,E,,,,f9.01a,f9.04a,,f9.45a,,f11.34a,f11.39a,,f12.44p,f4.04p,,f4.39p,f5.09p,,,,,f11.01p,,,,,f6.53a,,,f7.45a,,f12.28p,f4.10p,f6.22p,,f8.08p,f8.09p,
+9.6,Dorval,0,QC,E,c7.33a,c3.28p,f6.14p,9.03a,9.06a,,f9.47a,,11.36a,11.41a,,12.46p,4.06p,,4.41p,5.11p,5.41p,6.05p,6.22p,8.35p,11.03p,,,,6.16a,6.51a,7.11a,,7.43a,11.22a,f12.26p,4.07p,f6.20p,,f8.06p,f8.07p,f8.27p
+11.5,Strathmore,0,QC,E,,,,9.07a,9.10a,,f9.51a,,11.40a,11.45a,,12.50p,f4.10p,,4.45p,5.15p,5.45p,6.09p,6.26p,8.39p,11.07p,,,,f6.12a,f6.47a,f7.08a,,f7.39a,f11.19a,f12.22p,f4.03p,f6.16p,,f8.02p,f8.03p,f8.24p
+12.0,Valois,0,QC,E,,,6.19p,9.09a,9.12a,,f9.53a,11.38a,11.42a,11.47a,12.38p,12.52p,f4.11p,4.37p,4.47p,5.17p,5.47p,6.10p,6.28p,8.40p,11.09p,,,,6.10a,6.45a,7.06a,7.17a,7.37a,f11.17a,f12.20p,4.01p,f6.14p,,f8.00p,f8.01p,8.22p
+12.6,Lakeside,0,QC,E,,,,9.11a,9.14a,,f9.55a,,11.44a,11.49a,,12.54p,f4.13p,,4.49p,5.19p,5.49p,6.12p,6.30p,8.42p,11.11p,,,,f6.08a,f6.43a,f7.04a,,f7.35a,f11.15a,f12.18p,f3.59p,f6.12p,,f7.58p,f7.59p,f8.20p
+13.6,Cedar Park,0,QC,E,,,,9.13a,9.16a,,f9.58a,,11.46a,11.51a,,12.56p,f4.15p,,4.51p,5.21p,5.51p,6.14p,6.32p,8.44p,11.13p,,,,f6.06a,f6.41a,f7.02a,,f7.33a,f11.13a,f12.16p,f3.57p,f6.10p,,f7.56p,f7.57p,f8.18p
+14.0,Pointe Claire,0,QC,E,,f3.34p,6.24p,9.15a,9.18a,,f10.00a,11.43a,11.48a,11.53a,12.42p,12.58p,4.17p,4.40p,f4.53p,5.23p,5.53p,6.15p,6.34p,8.45p,11.15p,,,,6.04a,6.39a,,7.13a,7.31a,f11.12a,f12.14p,3.55p,f6.08p,,f7.54p,f7.55p,8.17p
+15.0,Beaconsfield,0,QC,E,,,,9.17a,9.20a,,f10.02a,,11.50a,11.55a,,1.00p,4.20p,,4.55p,5.25p,5.55p,6.17p,6.36p,8.47p,f11.17p,,,,f6.02a,f6.37a,,7.11a,7.29a,11.10a,f12.12p,f3.52p,f6.06p,,f7.52p,f7.53p,f8.15p
+16.9,Beaurepaire,0,QC,E,,,,f9.21a,f9.24a,,f10.06a,,11.54a,11.59a,12.47p,1.04p,4.24p,,4.59p,5.29p,5.59p,6.21p,6.40p,8.51p,f11.21p,,,,f5.58a,f6.33a,f6.56a,,f7.25a,f11.07a,f12.08p,f3.48p,f6.02p,,f7.48p,f7.49p,f8.11p
+18.6,Baie d'Urfe,0,QC,E,,,,f9.24a,f9.27a,,f10.09a,,f11.57a,f12.02p,,f1.07p,f4.27p,,f5.02p,f5.32p,f6.02p,f6.24p,f6.43p,f8.54p,f11.24p,,,,f5.54a,f6.30a,f6.53a,,f7.20a,11.04a,f12.04p,f3.44p,,,f7.44p,f7.45p,f8.08p
+20.4,St. Annes (Ste. Anne de Bellevue),1,QC,E,7.45a,3.43p,6.33p,9.28a,9.32a,9.54a,10.13a,11.52a,12.02p,12.07p,12.52p,1.12p,4.31p,4.49p,5.07p,5.37p,6.07p,6.28p,6.48p,8.58p,11.28p,10.55a,5.45p,8.35p,5.50a,6.27a,6.50a,7.03a,7.17a,11.01a,12.01p,3.40p,5.55p,6.49p,7.40p,7.41p,8.05p
+23.7,Vaudreuil (Dorion),1,QC,E,7.51a,3.50p,6.40p,ar 9.35a,9.40a,ar 10.00a,ar 10.20a,12.00p,12.10p,ar 12.15p,1.00p,1.20p,ar 4.38p,4.55p,ar 5.15p,ar 5.45p,6.15p,ar 6.35p,6.55p,9.05p,11.35p,10.50a,5.40p,f8.30p,5.45a,6.22a,lv 6.45a,6.58a,7.12a,lv 10.55a,lv 11.55a,3.30p,lv 5.50p,lv 6.43p,lv 7.35p,lv 7.35p,8.00p
+26.9,Isle Cadieux,0,QC,E,,,,,f9.45a,,,,f12.15p,,,f1.25p,,,,,f6.20p,,,,f11.40p,,,,,,,,f7.06a,,,,,,,,
+30.0,Como,0,QC,E,,4.01p,f6.50p,,f9.50a,,,f12.10p,f12.20p,,f1.10p,f1.30p,,f5.05p,,,f6.25p,,f7.05p,f9.15p,f11.45p,f10.37a,,,f5.35a,f6.10a,,f6.47a,f7.01a,,,f3.19p,,,,,f7.50p
+32.1,Hudson,1,QC,E,8.03a,4.06p,6.55p,,9.54a,,,12.14p,12.24p,,1.14p,1.34p,,5.09p,,,6.29p,,7.09p,9.20p,11.49p,10.32a,5.26p,8.16p,5.30a,6.05a,,6.42a,6.56a,,,3.15p,,,,,7.46p
+32.7,Hudson Heights,0,QC,E,,,,,f9.56a,,,f12.16p,f12.26p,,f1.16p,f1.36p,,f5.11p,,,f6.31p,,f7.11p,f9.23p,f11.51p,,,,f5.27a,f6.02a,,f6.39a,f6.53a,,,f3.12p,,,,,f7.43p
+34.3,Alstonvale,0,QC,E,,,,,f10.00a,,,f12.20p,f12.30p,,f1.20p,f1.40p,,f5.15p,,,f6.35p,,f7.15p,f9.26p,f11.55p,,,,f5.24a,f5.59a,,f6.35a,f6.50a,,,f3.09p,,,,,f7.40p
+36.1,Choisy,0,QC,E,,f4.13p,f7.02p,,f10.05a,,,f12.25p,f12.35p,,f1.25p,f1.45p,,f5.19p,,,f6.40p,,f7.20p,f9.29p,f11.59p,f10.24a,,,f5.21a,f5.56a,,f6.31a,f6.47a,,,f3.06p,,,,,f7.37p
+37.9,Dragon,0,QC,E,,,,,f10.09a,,,,f12.39p,,,f1.49p,,f5.25p,,,f6.44p,,f7.24p,,f12.04a,,,,f5.18a,f5.53a,,f6.28a,f6.44a,,,f3.03p,,,,,f7.34p
+40.2,Rigaud,1,QC,E,8.17a,4.20p,7.09p,,ar 10.15a,,,ar 12.35p,ar 12.45p,,ar 1.35p,ar 1.55p,,ar 5.35p,,,ar 6.50p,,ar 7.30p,ar 9.35p,ar 12.10a,10.18a,5.10p,7.57p,lv 5.15a,lv 5.50a,,lv 6.25a,lv 6.40a,,,lv 3.00p,,,,,lv 7.30p
+48.2,St. Eugene,0,ON,E,8.28a,4.31p,7.20p,,,,,,,,,,,,,,,,,,,10.07a,4.59p,,,,,,,,,,,,,,
+53.3,Stardale,0,ON,E,,f4.38p,f7.27p,,,,,,,,,,,,,,,,,,,f9.59a,,,,,,,,,,,,,,,
+57.6,Vankleek Hill,1,ON,E,8.41a,4.45p,7.34p,,,,,,,,,,,,,,,,,,,9.52a,4.45p,7.34p,,,,,,,,,,,,,
+60.2,McAlpin,0,ON,E,,4.51p,f7.41p,,,,,,,,,,,,,,,,,,,9.44a,,,,,,,,,,,,,,,
+65.2,Caledonia Springs,0,ON,E,,4.59p,f7.48p,,,,,,,,,,,,,,,,,,,9.35a,,,,,,,,,,,,,,,
+69.8,Alfred,0,ON,E,,5.07p,7.55p,,,,,,,,,,,,,,,,,,,9.28a,,,,,,,,,,,,,,,
+74.5,Plantagenet,0,ON,E,9.05a,5.15p,8.03p,,,,,,,,,,,,,,,,,,,9.23a,4.22p,7.14p,,,,,,,,,,,,,
+79.7,Pendleton,0,ON,E,f9.13a,5.25p,8.13p,,,,,,,,,,,,,,,,,,,9.13a,f4.14p,,,,,,,,,,,,,,
+85.3,Bourget,0,ON,E,9.23a,5.35p,8.23p,,,,,,,,,,,,,,,,,,,9.03a,4.08p,,,,,,,,,,,,,,
+88.8,Hammond,0,ON,E,f9.31a,5.42p,8.31p,,,,,,,,,,,,,,,,,,,8.56a,f4.02p,,,,,,,,,,,,,,
+94.3,Leonard,0,ON,E,f9.41a,5.51p,8.39p,,,,,,,,,,,,,,,,,,,8.47a,f3.56p,,,,,,,,,,,,,,
+98.6,Navan,0,ON,E,,5.59p,f8.46p,,,,,,,,,,,,,,,,,,,8.40a,,,,,,,,,,,,,,,
+104.9,Blackburn,0,ON,E,,f6.10p,f8.55p,,,,,,,,,,,,,,,,,,,f8.31a,,,,,,,,,,,,,,,
+111.4,Ottawa,1,ON,E,ar 10.10a,ar 6.25p,ar 9.10p,,,,,,,,,,,,,,,,,,,lv 8.20a,lv 3.35p,lv 6.35p,,,,,,,,,,,,,

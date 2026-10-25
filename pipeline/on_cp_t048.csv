@@ -1,0 +1,36 @@
+# Canadian Pacific, Table 48: Ottawa - Carleton Place - Renfrew - Pembroke - Chalk River, the local trains (they were in on_cp_t004 with their principal stops
+# only). Canadian Pacific timetable, 1948, pages 16 - 19. Eastern time. The transcontinentals 7, 9, 1 / 2, 8, 10 are in on_cp_t004, their Table 48 stops added there. Carleton Place and Pembroke printed Ar / Lv: one row here.
+#train col=No551 num=551 dir=down days=Sun kind=passenger
+#train col=No557 num=557 dir=down days="ex Sun" kind=passenger note="Hill's: stops on signal on school days."
+#train col=No555 num=555 dir=down days=daily kind=passenger
+#train col=No556 num=556 dir=up days=daily kind=passenger note="Hill's: stops on signal on school days."
+#train col=No558 num=558 dir=up days="ex Sun" kind=passenger note="Ashton, Westboro: stop to let off passengers."
+#train col=No550 num=550 dir=up days=Sun kind=passenger
+mile,station,principal,prov,tz,No551,No557,No555,No556,No558,No550
+0.0,Ottawa,1,ON,E,lv 8.10p,lv 4.15p,lv 8.00a,ar 11.05a,ar 5.05p,ar 9.20p
+1.6,Hull,0,ON,E,8.18p,4.23p,8.08a,10.57a,4.57p,9.12p
+2.3,Hull West,0,ON,E,8.20p,4.25p,8.10a,10.55a,4.55p,9.10p
+3.9,Ottawa West,1,ON,E,8.25p,4.30p,8.15a,10.50a,4.50p,9.05p
+5.8,Westboro,0,ON,E,f8.29p,4.34p,8.19a,10.45a,4.44p,8.59p
+18.1,Stittsville,0,ON,E,f8.49p,4.55p,8.40a,10.27a,f4.25p,8.35p
+26.9,Ashton,0,ON,E,f9.02p,5.08p,8.52a,10.13a,4.13p,8.23p
+31.6,Carleton Place,1,ON,E,ar 9.11p / lv 9.15p,ar 5.15p / lv 5.20p,ar 9.00a / lv 9.05a,ar 10.00a / lv 10.05a,ar 4.00p / lv 4.05p,8.15p
+38.4,Almonte,1,ON,E,9.24p,5.33p,9.16a,9.47a,3.47p,8.00p
+42.1,Snedden,0,ON,E,f9.30p,f5.41p,f9.22a,f9.39a,f3.40p,f7.52p
+47.2,Pakenham,0,ON,E,f9.37p,5.50p,9.30a,9.30a,3.32p,7.44p
+55.0,Arnprior,1,ON,E,9.49p,6.05p,9.44a,9.18a,3.18p,7.30p
+58.2,Braeside,0,ON,E,f9.54p,6.10p,9.50a,9.09a,3.12p,f7.21p
+60.1,Sand Point,0,ON,E,f9.58p,6.14p,9.53a,9.05a,3.09p,f7.17p
+65.5,Castleford,0,ON,E,f10.07p,f6.23p,f10.01a,f8.55a,f3.01p,f7.08p
+70.3,Mayhew,0,ON,E,f10.14p,f6.30p,f10.08a,f8.47a,f2.54p,f7.00p
+73.3,Renfrew,1,ON,E,10.22p,6.38p,10.15a,8.42a,2.48p,6.55p
+77.0,Payne,0,ON,E,,,,,f2.40p,
+82.0,Haley's,0,ON,E,f10.36p,6.52p,10.29a,8.26a,2.32p,6.40p
+89.1,Cobden,0,ON,E,f10.47p,7.05p,10.40a,8.15a,2.21p,6.30p
+92.2,Hill's,0,ON,E,,7.10p,,8.10a,,
+94.6,Snake River,0,ON,E,f10.55p,f7.15p,f10.48a,f8.07a,f2.13p,f6.22p
+98.3,Meath,0,ON,E,f11.01p,f7.20p,f10.53a,f8.01a,f2.07p,f6.16p
+102.8,Government Road,0,ON,E,,f7.28p,f11.01a,f7.54a,f1.59p,f6.09p
+108.0,Pembroke,1,ON,E,11.18p,ar 7.35p / lv 7.45p,ar 11.08a / lv 11.18a,ar 7.40a / lv 7.45a,ar 1.45p / lv 1.50p,6.00p
+118.1,Petawawa,0,ON,E,f11.33p,8.00p,11.33a,7.25a,1.30p,5.45p
+129.8,Chalk River,1,ON,E,ar 11.59p,ar 8.30p,ar 12.00p,lv 7.05a,lv 1.10p,lv 5.25p

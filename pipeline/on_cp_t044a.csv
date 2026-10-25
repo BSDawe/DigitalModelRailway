@@ -1,0 +1,20 @@
+# Canadian Pacific, Table 44A: Ottawa - Kemptville - Bedell - Prescott (for the Ogdensburg ferry). Canadian Pacific timetable, 1948, pages 16 - 19. Eastern time.
+# Bedell is printed Ar and Lv: one row here.
+#train col=No29 num=29 dir=down days="ex Sun" kind=passenger note="Printed 562 / 29: the train from Brockville (No. 562, Table 47) goes on as No. 29. Connection Bedell 7.45 p.m. - Smiths Falls 8.25 p.m."
+#train col=No30 num=30 dir=up days="ex Sun" kind=passenger note="Printed 563 / 30: No. 30 goes on from Ottawa as No. 563 (Table 47). Connection Smiths Falls 7.00 a.m. - Bedell 7.30 a.m."
+mile,station,principal,prov,tz,No29,No30
+0.0,Ottawa,1,ON,E,lv 6.35p,ar 8.35a
+2.9,Billings,0,ON,E,f6.42p,f8.27a
+5.4,Ellwood,0,ON,E,f6.47p,f8.23a
+10.5,Gloucester,0,ON,E,f6.56p,f8.16a
+13.7,Manotick,0,ON,E,7.02p,8.11a
+18.1,Bray,0,ON,E,f7.09p,f8.04a
+21.6,Osgoode,0,ON,E,7.15p,7.59a
+25.9,Sabourin,0,ON,E,f7.22p,f7.52a
+30.2,Kemptville,1,ON,E,7.30p,7.46a
+31.9,Bedell,1,ON,E,ar 7.35p / lv 7.50p,ar 7.25a / lv 7.42a
+36.2,Oxford,0,ON,E,f7.58p,f7.17a
+40.4,Groveton,0,ON,E,f8.06p,f7.09a
+43.7,Spencerville,0,ON,E,8.12p,7.03a
+47.5,Domville,0,ON,E,f8.19p,f6.55a
+52.9,Prescott,1,ON,E,ar 8.30p,lv 6.45a
