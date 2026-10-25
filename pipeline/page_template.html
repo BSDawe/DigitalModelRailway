@@ -145,6 +145,7 @@ canvas#map.hover { cursor: pointer; }
 .tt tr.clickable { cursor: pointer; }
 .tt tr.clickable:hover td { background: color-mix(in srgb, var(--ink) 5%, transparent); }
 .tt td.name { min-width: 0; }
+.tt tr.tt-head td { font: 600 11px/1 var(--ui); letter-spacing: .09em; text-transform: uppercase; color: var(--ink-soft); border-bottom: none; padding-top: 12px; padding-bottom: 6px; } .tt tr.tt-head td.section-label:first-child { padding-left: 16px; } .tt tr.tt-head td.t { padding-right: 8px; font-variant-numeric: tabular-nums; }
 .meta { padding: 10px 16px 4px; font: 13px/1.45 var(--ui); color: var(--muted); }
 .meta b { color: var(--text); font-weight: 600; }
 
@@ -964,9 +965,9 @@ function renderStation(s, T) {
       .filter(x => x.at >= 3 * 3600 && x.at < 27 * 3600).sort((a, b) => a.at - b.at);   // the calls of this day (3 a.m. to 3 a.m.): a train two days on the road is listed once
     const locals = all.filter(x => x.t.local && x.at >= T - 60).slice(0, 8);
     const rows = all.filter(x => !x.t.local || locals.includes(x));
-    h += `<div class="section-label">${title}</div>`;
-    if (!rows.length) { h += `<div class="empty">No ${arr ? 'arrivals' : 'departures'} here on ${DAYNAME[S.day]}.</div>`; continue; }
-    h += `<table class="tt"><tbody>`;
+    if (!rows.length) { h += `<div class="section-label">${title}</div><div class="empty">No ${arr ? 'arrivals' : 'departures'} here on ${DAYNAME[S.day]}.</div>`; continue; }
+    // the heading row carries the day's count, in the time column (Brendan, 25 Oct 2026)
+    h += `<table class="tt"><thead><tr class="tt-head"><td colspan="2" class="section-label">${title}</td><td class="t section-label" title="${all.length} ${arr ? 'arrivals' : 'departures'} on ${DAYNAME[S.day]}">${all.length}</td><td class="m"></td></tr></thead><tbody>`;
     for (const { t, at } of rows) h += `<tr class="clickable ${at < T ? 'past' : ''}" data-train="${t.id}"><td class="mile${t.water ? ' ship' : ''}"><span class="badge ${t.kind}${t.livery ? ' ' + t.livery : ''}" style="min-width:0;height:18px;font-size:11px">${esc(t.short || KIND_BADGE[t.kind])}</span></td><td class="name">${esc(t.local ? KIND_LABEL[t.kind] + ' car' : t.mainline ? t.label : t.name)} ${arr ? 'from ' + esc(fromName(t)) : 'to ' + esc(toName(t))}</td><td class="t">${tspan(at)}</td><td class="m">${t.meets?.has(s.i) ? 'M' : ''}</td></tr>`;
     h += `</tbody></table>`;
   }
