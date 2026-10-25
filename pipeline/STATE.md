@@ -1476,8 +1476,8 @@ Stations of different railways within 250 m (70 pairs; script: same check over v
   through Deloraine shift by about 7 m where the link meets their track).
 
 ## Version 65 (24 October 2026): CP Tables 18, 19, 19A, 22 (Montreal - New York; Eastern Townships)
-- Scans (private repo scans/cp1948_qc/): t018, t019, t019a, t020_022. Brendan asked for Tables 16-22 "all the same page": 16, 17 and 21 were not in the
-  images; Table 20 (Eastray - Kingsbury) is freight only. Transcribed by Claude.
+- Scans (private repo scans/cp1948_qc/): t018, t019, t019a, t020_022. Brendan asked for Tables 16-22 "all the same page". Tables 16, 16A and 17 are for a
+  future Atlantic Canada build; Table 21 is a gap in the numbering (Brendan, 24 Oct 2026). Table 20 (Eastray - Kingsbury) is freight only. Transcribed by Claude.
 - Table 18 (Montreal - New York). New railways in on_lines.RAILS: 'onnyc' (kind t, New York Central, own 'nyc', dark grey #3d3d3d / dark theme
   #a8a8a8, Brendan) and 'ondh' (kind f, Delaware & Hudson, own 'dh', #0f6fa8 / #6fb3e0, Claude's pick). GTFS agencies NYC and DH.
   * on_nyc_t018.csv: Windsor Station - Westmount - Montreal West over the CP, then at Adirondack Junction onto the St. Lawrence & Adirondack (owner()
