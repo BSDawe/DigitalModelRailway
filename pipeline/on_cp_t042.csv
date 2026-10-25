@@ -1,0 +1,58 @@
+# Canadian Pacific, Table 42: Montreal - St. Jerome - Ste. Agathe - Labelle - Mont-Laurier (the Laurentians). Canadian Pacific timetable, 1948, Table 42 (pages 14 and 15). Eastern time.
+# Week of 5 July 1948: seasonal trains entered on their July days (notes give the printed ones). Ste. Agathe and Ste. Therese printed Ar / Lv: one row here.
+# Signs b, c, d, e, g, n entered as plain stops.
+# This file: the trains from Montreal Place Viger (miles as printed, from Place Viger); No. 441 starts at Park Avenue.
+#train col=No439 num=439 dir=down days=Sun kind=passenger
+#train col=No441 num=441 dir=down days="Sat,Sun" kind=passenger note="Sundays; also Saturdays June 19 to September 4 inclusive. Starts at Park Avenue."
+#train col=No445 num=445 dir=down days=Sat kind=passenger
+#train col=No457 num=457 dir=down days="Mon,Tue,Wed,Thu,Fri" kind=passenger
+#train col=No465 num=465 dir=down days=Fri kind=passenger
+#train col=No463 num=463 dir=down days="Sat,Sun,Mon,Tue,Wed,Thu" kind=passenger
+#train col=No464 num=464 dir=up days="ex Sun" kind=passenger
+#train col=No466 num=466 dir=up days=Sun kind=passenger
+#train col=No452 num=452 dir=up days="ex Sun" kind=passenger
+#train col=No456 num=456 dir=up days=Sun kind=passenger
+mile,station,principal,prov,tz,No439,No441,No445,No457,No465,No463,No464,No466,No452,No456
+0.0,Montreal Place Viger,1,QC,E,lv 7.00a,,lv 12.00p,lv 4.20p,lv 7.30p,lv 10.30p,ar 7.35a,ar 8.35a,ar 1.00p,ar 10.50p
+6.1,Montreal Park Avenue,1,QC,E,7.20a,lv 8.00a,12.20p,4.40p,7.45p,10.45p,7.20a,8.18a,12.43p,10.33p
+9.8,Bordeaux,0,QC,E,7.27a,,12.27p,4.47p,7.51p,10.51p,7.11a,8.08a,12.33p,10.19p
+10.2,Laval Rapides,0,QC,E,,,,,f7.53p,f10.53p,7.09a,8.06a,,
+12.0,St. Martin,0,QC,E,,,,,f7.56p,f10.55p,f7.06a,f8.03a,,
+12.8,St. Martin Jct.,0,QC,E,,,,,f7.58p,f10.57p,f7.04a,f8.01a,,
+17.2,Ste. Rose,0,QC,E,,,,4.59p,8.05p,11.02p,6.57a,7.54a,12.19p,f10.06p
+17.9,Rosemere,0,QC,E,,,,5.01p,f8.07p,f11.04p,f6.54a,f7.51a,f12.16p,
+19.9,Ste. Therese,1,QC,E,7.47a,8.23a,12.45p,5.05p,8.12p,11.10p,6.50a,7.47a,12.12p,10.00p
+21.7,St. Lin Jct.,0,QC,E,,,,,f8.16p,f11.13p,f6.45a,f7.42a,,
+24.1,Bouchard,0,QC,E,f7.57a,,f12.58p,5.18p,f8.20p,f11.17p,f6.40a,f7.37a,12.01p,f9.50p
+27.1,St. Janvier,0,QC,E,f8.03a,,1.04p,5.24p,f8.26p,f11.23p,6.35a,7.32a,11.55a,9.44p
+33.2,St. Jerome,1,QC,E,8.15a,8.47a,1.18p,5.37p,8.36p,11.33p,6.25a,7.22a,11.45a,9.33p
+40.9,Lesage,0,QC,E,f8.33a,,f1.36p,5.57p,f8.54p,f11.51p,f6.08a,f7.04a,,f9.15p
+41.8,Shawbridge,1,QC,E,8.36a,9.07a,1.40p,6.01p,8.57p,11.54p,6.06a,7.02a,11.25a,9.12p
+46.0,Piedmont (St. Sauveur),0,QC,E,8.46a,9.17a,1.50p,6.12p,9.07p,12.04a,5.57a,6.53a,11.15a,9.02p
+49.0,Mont Rolland,0,QC,E,8.56a,9.27a,2.00p,6.22p,9.17p,12.14a,5.51a,6.47a,11.08a,8.54p
+53.6,Ste. Marguerite,1,QC,E,9.08a,9.39a,2.12p,6.35p,9.29p,12.24a,5.41a,6.37a,10.57a,8.43p
+57.3,Val Morin,0,QC,E,9.19a,9.50a,2.23p,6.47p,9.40p,f12.34a,5.33a,6.29a,10.47a,8.33p
+59.5,Val David,0,QC,E,9.27a,9.58a,2.30p,6.56p,9.48p,f12.39a,5.28a,6.24a,10.40a,8.27p
+61.7,Prefontaine,0,QC,E,f9.34a,f10.04a,f2.38p,f7.03p,9.55p,f12.45a,f5.24a,f6.19a,f10.35a,f8.21p
+63.7,Ste. Agathe,1,QC,E,ar 9.40a / lv 9.50a,ar 10.10a,ar 2.45p / lv 2.55p,ar 7.10p / lv 7.20p,ar 10.00p,ar 12.50a,lv 5.20a,lv 6.15a,ar 10.20a / lv 10.30a,ar 8.05p / lv 8.15p
+67.4,Ivry,0,QC,E,9.58a,,3.03p,7.28p,,,,,f10.12a,7.56p
+69.1,Degrosbois,0,QC,E,f10.02a,,f3.06p,f7.32p,,,,,f10.07a,f7.52p
+71.5,Nantel,0,QC,E,10.07a,,3.11p,7.37p,,,,,10.02a,7.47p
+76.9,St. Faustin (Lac Carre),0,QC,E,10.23a,,3.28p,7.53p,,,,,9.46a,7.26p
+80.6,Morrison,0,QC,E,f10.32a,,f3.37p,f8.02p,,,,,f9.37a,f7.15p
+85.0,St. Jovite,1,QC,E,10.43a,,3.48p,8.13p,,,,,9.26a,7.05p
+90.6,Mont Tremblant,0,QC,E,10.57a,,4.01p,8.26p,,,,,9.12a,6.52p
+93.8,Conception,0,QC,E,f11.04a,,f4.08p,f8.33p,,,,,f9.05a,f6.45p
+100.1,Labelle,1,QC,E,11.15a,,4.19p,8.44p,,,,,8.55a,lv 6.35p
+106.1,Macaza,0,QC,E,11.30a,,4.34p,8.59p,,,,,f8.40a,
+113.3,Annonciation,0,QC,E,11.43a,,4.47p,9.12p,,,,,8.27a,
+116.8,Lacoste,0,QC,E,11.50a,,4.54p,9.19p,,,,,8.20a,
+121.7,Bellerive,0,QC,E,11.59a,,5.03p,9.28p,,,,,8.11a,
+123.6,Nominingue,0,QC,E,12.03p,,5.07p,9.32p,,,,,8.07a,
+127.4,Loranger,0,QC,E,f12.10p,,f5.14p,f9.39p,,,,,f8.00a,
+134.5,Lac Saguay,0,QC,E,12.23p,,5.27p,9.52p,,,,,7.47a,
+139.6,Bedard,0,QC,E,f12.34p,,f5.38p,f10.03p,,,,,f7.36a,
+141.7,Guenette,0,QC,E,f12.40p,,f5.43p,f10.08p,,,,,f7.32a,
+149.7,Barrette,0,QC,E,12.57p,,6.00p,10.25p,,,,,7.15a,
+154.5,Brunet,0,QC,E,f1.05p,,f6.10p,10.35p,,,,,f7.07a,
+158.1,Mont-Laurier,1,QC,E,ar 1.15p,,ar 6.20p,ar 10.45p,,,,,lv 7.00a,

@@ -1,0 +1,23 @@
+# Canadian Pacific, Table 42: Montreal Place Viger - Ste. Therese - St. Lin. Canadian Pacific timetable, 1948, Table 42 (pages 14 and 15). Eastern time.
+# Branch miles printed from Ste. Therese (St. Lin Jct. 1.8, Ravins 4.1, Lepage 7.4, Bruchesi 9.3, La Plaine 12.3, St. Lin 16.9): added to Ste. Therese's 19.9 here.
+#train col=No471 num=471 dir=down days=Sun kind=passenger
+#train col=No473 num=473 dir=down days=Sat kind=passenger
+#train col=No469 num=469 dir=down days="Mon,Tue,Wed,Thu,Fri" kind=passenger
+#train col=No470 num=470 dir=up days="ex Sun" kind=passenger
+#train col=No472 num=472 dir=up days=Sun kind=passenger
+mile,station,principal,prov,tz,No471,No473,No469,No470,No472
+0.0,Montreal Place Viger,1,QC,E,lv 8.15a,lv 12.10p,lv 5.15p,ar 6.35a,ar 8.15p
+6.1,Montreal Park Avenue,1,QC,E,8.30a,12.25p,5.30p,6.18a,8.00p
+9.8,Bordeaux,0,QC,E,8.36a,12.31p,5.36p,6.08a,7.51p
+10.2,Laval Rapides,0,QC,E,f8.38a,f12.33p,f5.38p,6.06a,f7.49p
+12.0,St. Martin,0,QC,E,,f12.37p,f5.41p,f6.03a,
+12.8,St. Martin Jct.,0,QC,E,f8.43a,f12.39p,f5.43p,f6.01a,f7.44p
+17.2,Ste. Rose,0,QC,E,8.50a,12.46p,5.50p,5.54a,7.37p
+17.9,Rosemere,0,QC,E,f8.52a,12.48p,5.52p,f5.51a,f7.34p
+19.9,Ste. Therese,1,QC,E,8.57a,12.53p,5.57p,5.47a,7.30p
+21.7,St. Lin Jct.,0,QC,E,9.01a,1.00p,6.05p,5.39a,7.25p
+24.0,Ravins,0,QC,E,f9.06a,f1.05p,f6.10p,f5.33a,f7.18p
+27.299999999999997,Lepage,0,QC,E,f9.13a,f1.12p,f6.17p,5.24a,7.11p
+29.2,Bruchesi,0,QC,E,9.18a,1.17p,6.22p,5.17a,7.07p
+32.2,La Plaine,0,QC,E,f9.24a,f1.24p,f6.29p,5.10a,7.01p
+36.8,St. Lin,1,QC,E,ar 9.35a,ar 1.35p,ar 6.40p,lv 5.00a,lv 6.50p

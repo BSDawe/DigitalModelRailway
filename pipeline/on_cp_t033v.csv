@@ -5,7 +5,7 @@
 #train col=No349 num=349 dir=up days=daily kind=passenger note="Coaches. The Berthier - Berthierville bus meets the train."
 #train col=No375 num=375 dir=up days=Sun kind=passenger note="From St. Gabriel (Table 35). c: stops to let off passengers."
 mile,station,principal,prov,tz,No352,No378,No349,No375
-5.6,Montreal Place Viger,1,QC,E,lv 4.00p,lv 8.30a,ar 11.00a,ar 9.50p
+5.7,Montreal Place Viger,1,QC,E,lv 4.00p,lv 8.30a,ar 11.00a,ar 9.50p
 11.8,Montreal Park Avenue,1,QC,E,4.15p,8.45a,10.45a,9.35p
 15.5,Bordeaux,0,QC,E,4.21p,8.51a,10.35a,9.26p
 15.9,Laval Rapides,0,QC,E,,,,

@@ -23,6 +23,8 @@ LONG = {'on_cp_t004': 'Montreal – Ottawa – North Bay – Sudbury – Fort Wi
         'on_cp_t023': 'Montreal – Farnham – Foster – Magog – Sherbrooke', 'on_cp_t024': 'Montreal – Farnham – Sutton – Newport – Boston (on this map to the border)',
         'on_cp_t033': 'Montreal (Windsor Station) – Trois Rivières – Quebec', 'on_cp_t033v': 'Montreal (Place Viger) – Trois Rivières – Quebec',
         'on_cp_t035': 'Lanoraie – Joliette – St. Gabriel', 'on_cp_t036': "Trois Rivières – Shawinigan Falls – Grand'Mère", 'on_cp_t037': 'Trois Rivières – Grandes Piles',
+        'on_cp_t042': 'Montreal (Place Viger) – St. Jérôme – Ste. Agathe – Labelle – Mont-Laurier', 'on_cp_t042w': 'Montreal (Windsor Station) – St. Jérôme – Ste. Agathe – Labelle – Mont-Laurier',
+        'on_cp_t042s': 'Montreal (Place Viger) – Ste. Thérèse – St. Lin',
         'on_dh_t018': 'Montreal – Rouses Point – Albany – New York (on this map to the border)', 'on_nyc_t018': 'Montreal – Malone – Albany – New York (on this map to the border)',
         'on_acr_t001': 'Sault Ste. Marie – Hawk Junction – Hearst', 'on_acr_t001m': 'Hawk Junction – Michipicoten'}
 OVER = {'on_cn_t075b': dict(noplace=['Ottawa (Bank Street)']),

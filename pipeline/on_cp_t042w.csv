@@ -1,0 +1,62 @@
+# Canadian Pacific, Table 42: Montreal - St. Jerome - Ste. Agathe - Labelle - Mont-Laurier (the Laurentians). Canadian Pacific timetable, 1948, Table 42 (pages 14 and 15). Eastern time.
+# Week of 5 July 1948: seasonal trains entered on their July days (notes give the printed ones). Ste. Agathe and Ste. Therese printed Ar / Lv: one row here.
+# Signs b, c, d, e, g, n entered as plain stops.
+# This file: the trains from Windsor Station. Table 42 prints no miles for Windsor Station - Park Avenue: Table 33's 11.8, and the Place
+# Viger miles plus 5.7 beyond Park Avenue.
+#train col=No453 num=453 dir=down days=daily kind=passenger note="Daily except Sunday; daily June 27 to August 29 inclusive. Parlor car to Labelle (first trip June 19, not June 20)."
+#train col=No447 num=447 dir=down days=Sat kind=passenger
+#train col=No451 num=451 dir=down days=Sat kind=passenger note="Saturdays: first train June 26, last train September 4."
+#train col=No449 num=449 dir=down days=Fri kind=passenger note="Fridays: first train June 18, last train September 3. Parlor car to Mont Laurier."
+#train col=No455 num=455 dir=down days=Sat kind=passenger
+#train col=No448 num=448 dir=up days=Sat kind=passenger note="Saturdays: first train June 19, last train September 4."
+#train col=No454 num=454 dir=up days="ex Sun" kind=passenger note="Parlor car from Labelle (first trip June 19)."
+#train col=SPL num="" dir=up days=Sun kind=passenger note="Sunday special (printed "SPL."), Mont Rolland to Montreal: first train June 20, last train August 29."
+#train col=No462 num=462 dir=up days=Sun kind=passenger
+#train col=No458 num=458 dir=up days=Sun kind=passenger note="Sundays: first train June 27, last train August 29. Parlor car from Labelle (first trip June 27)."
+#train col=No460 num=460 dir=up days=Sun kind=passenger note="Parlor car from Mont Laurier (first trip June 20). Bordeaux: stops to let off passengers from north of Ste. Agathe."
+mile,station,principal,prov,tz,No453,No447,No451,No449,No455,No448,No454,SPL,No462,No458,No460
+0.0,Montreal (Windsor Station),1,QC,E,lv 7.55a,lv 11.40a,lv 12.30p,lv 3.50p,lv 6.05p,ar 9.20a,ar 6.00p,ar 7.50p,ar 8.10p,ar 9.05p,ar 10.00p
+2.0,Westmount,0,QC,E,8.01a,11.46a,12.36p,3.56p,6.11p,9.12a,5.52p,7.42p,8.02p,8.57p,9.52p
+4.7,Montreal West,0,QC,E,8.07a,11.52a,12.42p,4.02p,6.17p,9.05a,5.45p,7.35p,7.55p,8.50p,9.45p
+11.8,Montreal Park Avenue,1,QC,E,8.25a,12.10p,1.00p,4.20p,6.35p,8.50a,5.25p,7.20p,7.40p,8.35p,9.25p
+15.5,Bordeaux,0,QC,E,8.31a,,,,6.41p,8.40a,5.16p,7.09p,7.29p,,9.14p
+15.9,Laval Rapides,0,QC,E,f8.33a,,,,,f8.38a,,,,,
+17.7,St. Martin,0,QC,E,,,,,,,,,,,
+18.5,St. Martin Jct.,0,QC,E,f8.38a,,,,,f8.33a,f5.10p,,,,
+22.9,Ste. Rose,0,QC,E,8.45a,,,,f6.53p,8.25a,5.02p,,,,
+23.6,Rosemere,0,QC,E,f8.47a,,,,,f8.22a,f4.59p,,,,
+25.6,Ste. Therese,1,QC,E,8.51a,12.32p,1.22p,4.42p,7.00p,8.18a,4.55p,6.50p,7.10p,8.05p,8.55p
+27.4,St. Lin Jct.,0,QC,E,,,,,,,,,,,
+29.8,Bouchard,0,QC,E,9.02a,,,,f7.09p,f8.08a,4.42p,,,,
+32.8,St. Janvier,0,QC,E,f9.10a,,,,f7.15p,f8.03a,f4.37p,6.35p,6.55p,,
+38.9,St. Jerome,1,QC,E,9.23a,12.52p,,,7.27p,7.54a,4.27p,6.25p,6.44p,7.40p,
+46.6,Lesage,0,QC,E,f9.40a,,,f5.23p,f7.45p,f7.38a,f4.11p,f6.07p,f6.28p,f7.24p,
+47.5,Shawbridge,1,QC,E,9.43a,1.11p,2.06p,5.26p,7.48p,7.36a,4.09p,6.05p,6.25p,7.21p,
+51.7,Piedmont (St. Sauveur),0,QC,E,9.53a,1.19p,2.17p,5.36p,7.58p,7.27a,3.59p,5.56p,6.15p,7.12p,
+54.7,Mont Rolland,0,QC,E,10.03a,1.28p,2.27p,5.46p,8.08p,7.21a,3.53p,lv 5.50p,6.07p,7.05p,
+59.3,Ste. Marguerite,1,QC,E,10.15a,1.40p,2.39p,5.58p,8.18p,7.11a,3.43p,,5.55p,6.54p,
+63.0,Val Morin,0,QC,E,10.26a,1.50p,2.50p,6.08p,8.29p,7.03a,3.35p,,5.45p,6.45p,
+65.2,Val David,0,QC,E,10.40a,1.57p,2.58p,6.13p,8.34p,6.58a,3.30p,,5.40p,6.40p,
+67.4,Prefontaine,0,QC,E,f10.48a,f2.04p,f3.05p,f6.19p,f8.40p,f6.54a,f3.25p,,f5.35p,f6.35p,
+69.4,Ste. Agathe,1,QC,E,ar 10.55a / lv 11.05a,ar 2.10p,ar 3.10p / lv 3.20p,ar 6.25p / lv 6.35p,ar 8.45p / lv 8.55p,ar 6.40a / lv 6.50a,ar 3.10p / lv 3.20p,,lv 5.30p,ar 6.20p / lv 6.30p,ar 7.20p / lv 7.30p
+73.1,Ivry,0,QC,E,f11.13a,,f3.28p,f6.43p,f9.03p,,f3.03p,,,6.09p,7.09p
+74.8,Degrosbois,0,QC,E,f11.17a,,,,,,f2.59p,,,,
+77.2,Nantel,0,QC,E,f11.22a,,f3.37p,f6.52p,9.12p,,2.54p,,,6.00p,7.00p
+82.6,St. Faustin (Lac Carre),0,QC,E,11.38a,,3.53p,7.05p,9.28p,f6.12a,2.38p,,,5.49p,6.49p
+86.3,Morrison,0,QC,E,f11.47a,,,,f9.37p,,f2.28p,,,,
+90.7,St. Jovite,1,QC,E,11.58a,,4.13p,7.25p,9.48p,f5.55a,2.19p,,,5.30p,6.30p
+96.3,Mont Tremblant,0,QC,E,12.11p,,4.26p,7.38p,10.01p,f5.44a,2.07p,,,5.17p,6.17p
+99.5,Conception,0,QC,E,f12.18p,,,,f10.08p,,f2.00p,,,,
+105.8,Labelle,1,QC,E,ar 12.30p,,ar 4.45p,7.55p,ar 10.20p,5.28a,lv 1.50p,,,lv 5.00p,6.00p
+111.8,Macaza,0,QC,E,,,,8.10p,,,,,,,5.45p
+119.0,Annonciation,0,QC,E,,,,8.23p,,f5.00a,,,,,5.32p
+122.5,Lacoste,0,QC,E,,,,,,f4.54a,,,,,5.25p
+127.4,Bellerive,0,QC,E,,,,8.39p,,f4.46a,,,,,5.16p
+129.3,Nominingue,0,QC,E,,,,8.43p,,f4.42a,,,,,5.12p
+133.1,Loranger,0,QC,E,,,,,,,,,,,5.05p
+140.2,Lac Saguay,0,QC,E,,,,9.03p,,f4.23a,,,,,4.52p
+145.3,Bedard,0,QC,E,,,,,,,,,,,f4.41p
+147.4,Guenette,0,QC,E,,,,,,,,,,,f4.37p
+155.4,Barrette,0,QC,E,,,,9.35p,,f3.54a,,,,,4.20p
+160.2,Brunet,0,QC,E,,,,f9.45p,,,,,,,f4.12p
+163.8,Mont-Laurier,1,QC,E,,,,ar 9.55p,,lv 3.40a,,,,,lv 4.05p

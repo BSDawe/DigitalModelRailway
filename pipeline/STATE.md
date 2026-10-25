@@ -1546,6 +1546,22 @@ Stations of different railways within 250 m (70 pairs; script: same check over v
   Trois Rivieres is placed by mileage on the Montreal - Quebec lines (its point snaps to a stub; Tables 36 / 37 start at the point).
 - Garneau: CN Table 38's "Garneau" (oncn038q, -72.3848, 46.6715) and the collection's CN "Garneau Junction" (-72.6463, 46.6362, used for CP Table
   37) need not be the same place (Brendan, 24 Oct 2026; he has not checked the map). Left as is.
-- TO DO AT THE NEXT BUILD (Brendan, 24 Oct 2026): the Windsor Station - Quebec trains (on_cp_t033) should take the other side of the wye near Park
-  Avenue (they now run Montreal West - Park Avenue and on toward Bordeaux through the same leg as the Place Viger trains).
+- DONE in Version 68 (Brendan, 24 Oct 2026): the Windsor Station - Quebec trains take the other side of the wye near Park Avenue (see below).
 - Checks: only trip names changed on existing lines; check_gtfs 1 problem (old).
+
+## Version 68 (24 October 2026): CP Table 42 (the Laurentians: St. Jerome - Ste. Agathe - Labelle - Mont-Laurier; St. Lin)
+- Scans (private repo scans/cp1948_qc/): t042 (page 14, outbound), t042_up (page 15, inbound).
+- on_cp_t042 (Place Viger trains, miles as printed from Place Viger: 439, 441 (from Park Avenue), 445, 457, 465, 463 / 464, 466, 452, 456),
+  on_cp_t042w (Windsor Station trains: 453, 447, 451, 449, 455 / 448, 454, the Sunday "SPL." from Mont Rolland, 462, 458, 460; Table 42 prints no
+  Windsor - Park Avenue miles: Table 33's 11.8, Place Viger miles + 5.7 beyond), on_cp_t042s (Place Viger - Ste. Therese - St. Lin: 471, 473, 469 /
+  470, 472). Seasonal trains on their July days (441 Sat + Sun; 453 daily June 27 - Aug 29; 451, 449, 448, SPL, 458 in season), the printed dates and
+  the parlour cars (453 to Labelle, 449 to Mont Laurier, 454 / 458 from Labelle, 460 from Mont Laurier) in the notes.
+- NOT BUILT: the Montreal - Ste. Therese part of Table 44 trains (421, 427, 423 / 422, 428, 424): on_cpx_t042.csv, to join to Table 44.
+- Table 42 gives Place Viger - Park Avenue as 6.1 mi: on_cp_t033v's Place Viger now at Park Avenue less 6.1 (was the traced 5.6).
+- PARK AVENUE WYE (Brendan): ontario_quebec_links.geojson "Park Avenue wye, west leg" (the collection's "Outremont yard" piece from the Montreal West
+  line round to the Park Avenue line), marked "replaces": on_lines._graph leaves out collection pieces with the same ends as a link that replaces them
+  (two coincident yard pieces had kept the leg tied only to the yard, so the routes had gone to Mile End and reversed). Windsor Station trains (Tables 33,
+  42) now run Montreal West - wye - Park Avenue - Bordeaux; on_cp_t033 1.7 km shorter. Links may also carry "cost" (a factor for their own railway).
+- STILL JANKY (for Brendan's junction list): at Montreal West the Windsor trains for Park Avenue run a few hundred metres south onto the Adirondack line
+  and back north (the collection has no north-facing curve there).
+- Checks: only oncp033 / oncp033v moved; check_gtfs 1 problem (old).

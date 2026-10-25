@@ -91,11 +91,16 @@ def _graph(me):
     ('b': every point tied to track beside it), and other railways' sidings and yards are left out: the full collections as backups made graphs of
     about two million points each, more than the machine holds four of (23 October 2026)."""
     box = BOXES.get(me)
+    def covered(c):                                                     # a collection piece that one of the links replaces (same ends, within 120 m)
+        kx = 111320 * math.cos(math.radians(c[0][1])); d = lambda p, q: math.hypot((p[0] - q[0]) * kx, (p[1] - q[1]) * 110540)
+        return any(f['properties'].get('replaces') and ((d(c[0], g[0]) < 120 and d(c[-1], g[-1]) < 120) or (d(c[0], g[-1]) < 120 and d(c[-1], g[0]) < 120))
+                   for f in _links() for g in [f['geometry']['coordinates']])
     def feed(add):
         for o in pieces():
             if o['kind'] != 'LineString' or len(o['coords']) < 2: continue
             if GONE.search(o.get('desc', '')) or any(LATER.search(x) for x in o['path']): continue
             c = despike(o['coords'])
+            if len(c) > 3 and covered(c): continue
             if box and not any(box[0] <= p[0] <= box[1] and box[2] <= p[1] <= box[3] for p in c[::max(1, len(c) // (6 if me in ('onr', 'acr') else 200))]): continue
             ow = owner(o['path']); side = any(re.search(r'siding|yard|spur', x, re.I) for x in o['path'])
             if ow == me: fac, draw = (1.6 if side else 1.0), None
@@ -109,7 +114,7 @@ def _graph(me):
         for f in _links():                                              # Brendan's traces and connectors (traces/ontario/brendan/)
             ow = f['properties']['own']; c = f['geometry']['coordinates']
             if box and not any(box[0] <= p[0] <= box[1] and box[2] <= p[1] <= box[3] for p in c): continue
-            add(ab_lines._xy(c), 1.0 if ow == me else 2.5, 't', None if ow == me else ow)
+            add(ab_lines._xy(c), f['properties'].get('cost', 1.0) if ow == me else 2.5, 't', None if ow == me else ow)   # 'cost': a link the trains must take (cheaper than the track beside it)
     return lambda: ab_lines.make_graph(feed, tie_end=150, tie_loose=60)
 for _r, _o in OWN.items(): ab_lines.EXT_GRAPH['sk:' + _r] = _graph(_o)
 
