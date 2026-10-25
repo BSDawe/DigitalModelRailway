@@ -1591,3 +1591,25 @@ Stations of different railways within 250 m (70 pairs; script: same check over v
     75°41'34.23"W = (-75.692842, 44.591217). Replace Claude's hand point (cp, brockville) with this, let the CP graph use the CN track there (as
     CP), and share one stop with CN Brockville (on_lines SHARED).
   * TO DO: the Prescott - Ogdensburg ferry (connection for Table 44A No. 29 / 30 at Prescott; also noted in marine/PORTS_NEEDED.md).
+
+## Version 70 (25 October 2026): CP Tables 8 (Quebec Central) and 10 (the Quebec part of Montreal - Saint John); Dorion
+- Scans (private repo scans/cp1948_qc/): t008, t008_signs, t010, t010_signs (both printed sideways).
+- QUEBEC CENTRAL (Brendan, 25 Oct 2026): a CP property, drawn and run as CP (it is the collection's "Tring subdivisin", already owner cp). Trains use CP
+  track where there is any and the CN where they must (Quebec - Scotts Jct. runs CN across the Quebec Bridge by Charny; Levis' first 4 mi CN).
+  on_cp_t008 (Nos. 6 / 1: Quebec Palais - Scotts Jct. - Vallee Jct. - Tring Jct. - Thetford Mines - East Angus - Sherbrooke - North Hatley - Beebe Jct. -
+  border, for Newport, Vt. and the Red Wing to Boston; border at the end of the Massawippi Valley line, times '~' by mileage to Newport);
+  on_cp_t008l (Nos. 2 / 5 Levis - Sherbrooke); on_cp_t008f (Vallee Jct. - St. Georges - Lac Frontiere, unnumbered mixed); on_cp_t008m (Tring Jct. -
+  Megantic, unnumbered mixed). Buses (Beebe Jct. - Rock Island shuttle, Sherbrooke - Newport buses) not entered. Ste. Marie by mileage (no CP point).
+- on_cp_t010 (Table 10 west of the border: Sherbrooke - Cookshire - Scotstown - Megantic - Boundary, Que.): 40, 204, 42, M256 / 39, 41, M257 (the mixed
+  trains lay over at Megantic: separate runs each side). Times west of Vanceboro taken as Eastern (the A.T. dittos are a misprint there; Table 8 prints
+  "Megantic E.T."). Border-side times for 39, 41, 40, 42 estimated Holeb - Megantic. on_cp_t010 builds after Table 23 so Table 23's 39 - 42 keep their
+  trip ids (on_build LATE).
+- Hand point (Claude, to confirm): Boundary, Que. at the middle of the collection's "Boundry siding" (-70.7015, 45.5446).
+- TO DO LATER (Brendan: ignore the routing outside Quebec for now): Table 10 east of Boundary (Maine: Jackman, Greenville, Brownville Jct., Vanceboro;
+  New Brunswick: McAdam, Fredericton, Saint John, St. Andrews, St. Stephen, Woodstock; the CN Halifax - Truro - Moncton - Saint John trains and the
+  P.E.I. ferry), the Bangor & Aroostook connection, Table 8 south of the border (Newport - Wells River - Boston / New York over the B&M and the New
+  Haven), the Quebec - Levis ferry (QC Nos. 2 / 5), the Beebe Jct. - Rock Island bus.
+- DORION (Brendan, 25 Oct 2026): CP "Vaudreuil (Dorion)" of 1948 is the collection's "Dorion" station (-74.0084965, 45.3865095); the collection's
+  "Vaudreuil" is the modern commuter station. Hand point added; Table 43's mileage placed it within 100 m of that point (23.7 mi checks); Table 4 had
+  used the modern station (Westmount - Vaudreuil traced 24.0 vs printed 21.7): now fixed.
+- Checks: check_gtfs 1 problem (old); only oncp004 / oncp043 (Dorion) moved, and segment colouring on oncp033 / ondh018.

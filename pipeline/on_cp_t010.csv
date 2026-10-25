@@ -1,0 +1,32 @@
+# Canadian Pacific, Table 10 (Montreal - Saint John), the Quebec part: Sherbrooke - Cookshire - Megantic - Boundary. Canadian Pacific timetable, 1948, Table 10. Eastern time (the Maine and Quebec part is Eastern time; Atlantic time east of Vanceboro).
+# Miles from Sherbrooke (printed from Saint John: Sherbrooke 375.1). Boundary, Que. is the last station in Quebec; the line goes on into Maine (Lowelltown, Jackman,
+# Greenville, Brownville Jct., Vanceboro, McAdam, Saint John: not built, to do with New Brunswick and the U.S.). Border-side times (~) for 39, 41, 40, 42 estimated between
+# Holeb, Me. and Megantic. Montreal - Sherbrooke times are Table 23's. The A.T. dittos down the time-zone column are taken as Eastern time west of Vanceboro (Table 8
+# prints Megantic E.T.; Atlantic time would make 41 run Holeb - Megantic in 12 minutes).
+#train col=No40 num=40 dir=down days="Sun,Mon,Tue,Wed,Thu,Fri" kind=passenger note="From Montreal (Windsor Station) 3.15 p.m. (Table 23); on through Maine to Saint John (Table 10)."
+#train col=No204 num=204 dir=down days=Sat kind=passenger note="From Montreal (Windsor Station) 12.40 p.m. (Table 23); ends at Megantic."
+#train col=No42 num=42 dir=down days=daily kind=passenger note="From Montreal (Windsor Station) 7.40 p.m. (Table 23); on through Maine to Saint John 11.35 a.m. Atlantic time. Birchton, Bury: stop Saturdays to let off passengers."
+#train col=M256 num=256 dir=down days="Mon,Tue,Wed,Thu,Fri,Sat" kind=mixed note="Mixed. Sherbrooke - Megantic."
+#train col=M256B num=256 dir=down days="Mon,Tue,Wed,Thu,Fri,Sat" kind=mixed note="Mixed. Megantic - Boundary and on to Greenville, Me. (a separate run from the Sherbrooke - Megantic one)."
+#train col=No39 num=39 dir=up days=daily kind=passenger note="From Saint John (Table 10; daily except Monday east of Megantic); on to Montreal (Table 23)."
+#train col=No41 num=41 dir=up days=daily kind=passenger note="From Saint John 4.30 p.m. Atlantic time (Table 10); on to Montreal (Table 23)."
+#train col=M257B num=257 dir=up days="Mon,Tue,Wed,Thu,Fri,Sat" kind=mixed note="Mixed. From Greenville, Me.; ends at Megantic (a separate run from the Megantic - Sherbrooke one)."
+#train col=M257 num=257 dir=up days="Mon,Tue,Wed,Thu,Fri,Sat" kind=mixed note="Mixed. Megantic - Sherbrooke."
+mile,station,principal,prov,tz,No40,No204,No42,M256,M256B,No39,No41,M257B,M257
+0.0,Sherbrooke,1,QC,E,lv 6.30p,lv 4.10p,lv 10.50p,lv 7.30a,,ar 7.00a,ar 4.10a,,ar 5.15p
+3.1,Lennoxville,1,QC,E,6.38p,4.19p,10.58p,7.40a,,6.50a,3.59a,,5.07p
+10.3,Johnville,0,QC,E,6.56p,4.38p,,8.03a,,6.35a,,,f4.51p
+13.7,Bulwer,0,QC,E,f7.03p,f4.45p,,f8.11a,,f6.26a,,,f4.45p
+16.4,Birchton,0,QC,E,7.10p,4.51p,11.28p,f8.18a,,6.21a,,,f4.36p
+21.1,Cookshire,1,QC,E,7.22p,5.10p,11.40p,8.34a,,6.06a,,,4.20p
+30.2,Bury,0,QC,E,7.41p,5.32p,11.59p,8.59a,,5.49a,,,3.54p
+34.8,Long Swamp,0,QC,E,,f5.40p,,f9.10a,,,,,f3.43p
+38.3,Gould,0,QC,E,f7.53p,f5.46p,,f9.18a,,f5.32a,,,f3.35p
+43.5,Scotstown,1,QC,E,8.05p,5.58p,12.25a,9.30a,,5.20a,2.46a,,3.18p
+50.0,McLeod's,0,QC,E,,f6.13p,,f9.46a,,5.08a,,,f3.07p
+53.7,Milan,0,QC,E,8.27p,6.21p,,9.57a,,5.03a,,,3.00p
+60.1,Spring Hill,0,QC,E,8.37p,6.30p,,10.10a,,4.52a,,,2.45p
+68.5,Megantic,1,QC,E,ar 8.55p / lv 9.10p,ar 6.50p,ar 1.10a / lv 1.20a,ar 10.45a,lv 8.00a,ar 4.15a / lv 4.30a,ar 1.55a / lv 2.05a,ar 3.20p,lv 2.20p
+74.6,Ditchfield,0,QC,E,,,,,f8.15a,,,f3.00p,
+78.6,Trudel,0,QC,E,,,,,f8.23a,,,f2.48p,
+83.7,Boundary,1,QC,E,~ar 9.40p,,~ar 1.53a,,ar f8.35a,~lv 3.38a,~lv 1.19a,lv f2.35p,

@@ -148,6 +148,8 @@ HAND = {('cp', 'toronto'): _TU, ('cn', 'toronto'): _TU, ('onr', 'toronto'): _TU,
         ('cp', 'lanoraie'): (-73.315943, 45.992274, 'Lanoraie, on the main line beside the collection\'s station point (its other "Lanoraie" is the old village end of the abandoned branch)'),
         ('cp', 'montreal park avenue'): (-73.6240, 45.5307, 'Park Avenue Station, Montreal (Claude, approximate: Park Avenue at the CP line; no point in the collection)'),
         ('cp', 'brockville'): (-75.6904427, 44.5934311, 'Brockville: the end of the CP (Brockville and Ottawa) main line by the CN station, where the pool trains met the CN (Claude, to confirm; the collection has no CP Brockville station point)'),
+        ('cp', 'boundary'): (-70.7015, 45.5446, 'Boundary, Que. (CP Table 10): the middle of the collection\'s "Boundry siding", by the border (Claude, to confirm)'),
+        ('cp', 'vaudreuil'): (-74.0084965, 45.3865095, 'Vaudreuil (Dorion): the CP station of 1948 is the collection\'s "Dorion" (its "Vaudreuil" is the modern commuter station; Brendan, 25 Oct 2026)'),
         ('nyc', 'international boundary'): (-74.2423085, 44.9921679, 'the end of the St. Lawrence & Adirondack trace in the Quebec collection, at the border (Brendan, 24 Oct 2026)'),
         ('dh', 'international boundary'): (-73.3727996, 45.0103103, 'the end of CP track toward Rouses Point (Brendan, 24 Oct 2026)')}
 _MAP = {}
@@ -188,7 +190,9 @@ ALIAS = {('cn', 'hervey'): 'hervey junction', ('cn', 'coteau'): 'coteau junction
          ('cp', 'south stukely'): 'stukely south', ('cp', 'st johns'): 'st jean sur richelieu', ('cp', 'iberville'): 'iberville junction',
          ('cp', 'montreal place viger'): 'viger', ('cp', 'de sales'): 'st francois de sales', ('cp', 'berthier'): 'berthierville', ('cp', 'quebec'): 'palais',
          ('cp', 'grandmere'): 'grand mere', ('cp', 'grandes piles'): 'grand piles', ('cp', 'les gres'): 'gres', ('cp', 'la gabelle'): 'gabelle',
-         ('cp', 'garneau'): 'garneau junction'}   # CP Tables 33-37   # CP Tables 23-24   # CP Tables 19-22   # table name -> collection name
+         ('cp', 'garneau'): 'garneau junction',
+         ('cp', 'lac frontiere'): 'frontiere', ('cp', 'megantic'): 'lac megantic', ('cp', 'scotts junction'): 'scott junction', ('cp', 'thetford mines'): 'thetford',
+         ('cp', 'st joseph'): 'st joseph de beauce', ('cp', 'mcleods'): 'mcleod crossing', ('cp', 'trudel'): 'trudell', ('cp', 'beebe junction'): 'beebe junction'}   # CP Tables 8, 10   # CP Tables 33-37   # CP Tables 23-24   # CP Tables 19-22   # table name -> collection name
 def place_for(rail):
     own = OWN[rail]
     def f(name):

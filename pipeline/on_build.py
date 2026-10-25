@@ -30,20 +30,25 @@ LONG = {'on_cp_t004': 'Montreal – Ottawa – North Bay – Sudbury – Fort Wi
         'on_cp_t044p': 'Ottawa – Kemptville – Bedell – Smiths Falls (pool trains)', 'on_cp_t045': 'Ottawa – Hull – Shawville – Waltham', 'on_cp_t045a': 'Renfrew – Eganville',
         'on_cp_t046': 'Ottawa – Hull – Wakefield – Maniwaki', 'on_cp_t047': 'Ottawa – Carleton Place – Smiths Falls – Brockville',
         'on_cp_t048': 'Ottawa – Carleton Place – Renfrew – Pembroke – Chalk River',
+        'on_cp_t008': 'Quebec – Thetford Mines – Sherbrooke – Beebe (Quebec Central; to Newport, Vt.)', 'on_cp_t008l': 'Levis – Vallée Jct. – Thetford Mines – Sherbrooke (Quebec Central)',
+        'on_cp_t008f': 'Vallée Jct. – St. Georges – Lac Frontière (Quebec Central)', 'on_cp_t008m': 'Tring Jct. – Megantic (Quebec Central)',
+        'on_cp_t010': 'Sherbrooke – Cookshire – Megantic – Boundary (Montreal – Saint John)',
         'on_dh_t018': 'Montreal – Rouses Point – Albany – New York (on this map to the border)', 'on_nyc_t018': 'Montreal – Malone – Albany – New York (on this map to the border)',
         'on_acr_t001': 'Sault Ste. Marie – Hawk Junction – Hearst', 'on_acr_t001m': 'Hawk Junction – Michipicoten'}
 OVER = {'on_cn_t075b': dict(noplace=['Ottawa (Bank Street)']),
         'on_cp_t058b': dict(places={'Camp Borden (Lower Station)': (-79.891308, 44.269889),      # Brendan, 23 Oct 2026: "about here"
                                     'Camp Borden (Upper Station)': (-79.886619, 44.286324)}),    # at the end of its spur (his trace)
         'on_cp_t024': dict(places={'International Boundary (CP, to Richford, Vt.)': (-72.6637808, 45.0152297)}),   # end of CP track beyond Abercorn
+        'on_cp_t008': dict(places={'International Boundary (QC, to Newport, Vt.)': (-72.171437, 45.0058471)}),   # the end of the Massawippi Valley line in the Quebec collection
         'on_cp_t022s': dict(places={'Stanbridge': (-73.0198692, 45.1161065)}),   # end of the 2.78 mi Stanbridge junction segment (Brendan, 24 Oct 2026)
         'on_cp_t070': dict(places={'Worthington': (-81.4516144, 46.3826754), 'Turbine': (-81.5119836, 46.3741679)}),
         'on_cp_t070b': dict(places={'Worthington': (-81.4516144, 46.3826754), 'Turbine': (-81.5119836, 46.3741679)})}   # on the Soo branch (the collection's
                                                                   # points snap to the parallel Algoma Eastern line, which does not join between them)   # Bank Street by its mileage from Union Station (canon names both 'ottawa')
 def specs():
     out = []
+    LATE = {'on_cp_t010.csv'}                              # continuations of trains another table names first (Table 23's 39 - 42 keep their trip ids)
     for fn in sorted(glob.glob(os.path.join(HERE, 'on_c[pn]_t*.csv')) + glob.glob(os.path.join(HERE, 'on_onr_t*.csv')) + glob.glob(os.path.join(HERE, 'on_acr_t*.csv'))
-                     + glob.glob(os.path.join(HERE, 'on_dh_t*.csv')) + glob.glob(os.path.join(HERE, 'on_nyc_t*.csv'))):
+                     + glob.glob(os.path.join(HERE, 'on_dh_t*.csv')) + glob.glob(os.path.join(HERE, 'on_nyc_t*.csv')), key=lambda f: (os.path.basename(f) in LATE, f)):
         stem = os.path.basename(fn)[:-4]; o = OVER.get(stem, {})
         if o.get('skip'): continue
         rail = {'cp': 'oncp', 'cn': 'oncn', 'onr': 'onr', 'acr': 'acr', 'dh': 'ondh', 'nyc': 'onnyc'}[re.match(r'on_(cp|cn|onr|acr|dh|nyc)_', stem).group(1)]
