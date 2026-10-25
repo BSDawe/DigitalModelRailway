@@ -1615,3 +1615,6 @@ Stations of different railways within 250 m (70 pairs; script: same check over v
 - Checks: check_gtfs 1 problem (old); only oncp004 / oncp043 (Dorion) moved, and segment colouring on oncp033 / ondh018.
 - TO DO (Brendan, 25 Oct 2026, reminder): fix the trains that stop at "expansion joints": trains pausing mid-run where nothing is printed, at joins
   between track pieces. Find where (likely the joins / ties between collection pieces or links, or a route point that doubles back) and make them run through.
+- TO DO WHEN THE CN LEVIS TRAINS ARE BUILT (Brendan, 25 Oct 2026): one Levis station for CN and CP, and it is the CN station (the collection's CN
+  "Levis", -71.18712, 46.81032; the Quebec Central Nos. 2 / 5 already start there). Share the stop: on_lines SHARED ('oncp', 'levis') and ('oncn', 'levis')
+  -> the CN Levis gid.
