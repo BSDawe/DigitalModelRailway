@@ -1,0 +1,72 @@
+# Canadian Pacific, Table 51: Montreal - Smiths Falls - Perth - Sharbot Lake - Havelock - Peterboro - Toronto, via Peterboro. Canadian Pacific timetable, 1948, Tables 50 (Toronto - Windsor page) and 51 - 55. Eastern time.
+# Montreal - Smiths Falls stops of Nos. 35 / 36 from Table 50 (same miles). Havelock and Peterboro printed Ar / Lv: one row here. Toronto - Hamilton (Table 56) not entered.
+#train col=No35 num=35 dir=down days="ex Sun" kind=passenger note="Montreal - Toronto via Sharbot Lake and Peterboro (Tables 50 and 51). Coaches and buffet parlour car. Kingston connection at Sharbot Lake (Table 55). Connection at De Beaujeu for Cornwall (M593, Table 52); Bobcaygeon - Lindsay connection at Dranoel (Table 53)."
+#train col=No36 num=36 dir=up days="ex Sun" kind=passenger note="Toronto - Montreal via Peterboro and Sharbot Lake. Coaches and buffet parlour car. Connection at Dranoel for Bobcaygeon (M605, Table 53)."
+#train col=No601 num=601 dir=down days="ex Sun" kind=passenger note="Peterboro - Toronto."
+#train col=No619 num=619 dir=down days=Sun kind=passenger note="Havelock - Toronto."
+#train col=No620 num=620 dir=up days=Sun kind=passenger note="Toronto - Havelock."
+#train col=No604 num=604 dir=up days=Sat kind=passenger note="Toronto - Peterboro."
+#train col=No602 num=602 dir=up days="Mon,Tue,Wed,Thu,Fri" kind=passenger note="Toronto - Peterboro. Daily except Saturday and Sunday."
+mile,station,principal,prov,tz,No35,No36,No601,No619,No620,No604,No602
+0.0,Montreal (Windsor Station),1,QC,E,lv 9.25a,ar 7.30p,,,,,
+2.0,Westmount,0,QC,E,9.31a,7.22p,,,,,
+4.7,Montreal West,0,QC,E,9.37a,7.15p,,,,,
+20.4,St. Annes (Ste. Anne de Bellevue),0,QC,E,9.54a,6.49p,,,,,
+23.7,Vaudreuil (Dorion),1,QC,E,10.00a,6.43p,,,,,
+28.4,St. Lazare,0,QC,E,10.07a,6.36p,,,,,
+34.4,St. Clet,0,QC,E,10.17a,6.28p,,,,,
+40.2,De Beaujeu,0,QC,E,10.26a,6.18p,,,,,
+43.7,St. Telesphore,0,QC,E,f10.31a,f6.11p,,,,,
+46.3,Dalhousie Mills,0,QC,E,10.36a,6.06p,,,,,
+50.2,Glen Norman,0,ON,E,10.42a,6.01p,,,,,
+54.0,Green Valley,0,ON,E,10.50a,5.55p,,,,,
+56.7,Glenroy,0,ON,E,10.54a,5.50p,,,,,
+62.7,Apple Hill,0,ON,E,11.03a,5.41p,,,,,
+68.1,Monklands,0,ON,E,11.12a,5.32p,,,,,
+72.9,Avonmore,0,ON,E,11.19a,5.25p,,,,,
+79.0,Finch,0,ON,E,11.29a,5.15p,,,,,
+81.7,Goldfield,0,ON,E,,,,,,,
+86.7,Chesterville,0,ON,E,11.41a,4.56p,,,,,
+92.6,Winchester,0,ON,E,11.50a,4.44p,,,,,
+95.8,Inkerman,0,ON,E,f11.55a,f4.37p,,,,,
+100.6,Mountain,0,ON,E,12.03p,4.30p,,,,,
+107.9,Bedell,1,ON,E,12.15p,4.21p,,,,,
+111.6,Swan,0,ON,E,f12.21p,f4.14p,,,,,
+115.8,Burritts,0,ON,E,f12.27p,f4.09p,,,,,
+119.6,Merrickville,0,ON,E,12.35p,4.04p,,,,,
+124.6,Rosedale,0,ON,E,f12.42p,f3.56p,,,,,
+128.7,Smiths Falls,1,ON,E,ar 12.50p / lv 1.00p,ar 3.40p / lv 3.50p,,,,,
+134.4,Elmsley,0,ON,E,,,,,,,
+140.3,Perth,1,ON,E,1.16p,3.20p,,,,,
+144.1,Glen Tay,0,ON,E,1.23p,3.10p,,,,,
+147.8,Bathurst,0,ON,E,1.29p,f3.02p,,,,,
+155.3,Maberley,0,ON,E,1.39p,2.50p,,,,,
+165.5,Sharbot Lake,1,ON,E,1.55p,2.30p,,,,,
+174.6,Mountain Grove,0,ON,E,2.12p,2.12p,,,,,
+180.3,Ardendale,0,ON,E,2.23p,2.03p,,,,,
+190.4,Kaladar,0,ON,E,2.40p,1.48p,,,,,
+201.4,Sulphide,0,ON,E,2.58p,1.30p,,,,,
+206.6,Tweed,1,ON,E,3.13p,1.18p,,,,,
+215.8,Ivanhoe,0,ON,E,3.30p,1.02p,,,,,
+224.5,Bonarlaw,0,ON,E,3.44p,12.49p,,,,,
+237.8,Havelock,1,ON,E,ar 4.05p / lv 4.15p,ar 12.25p / lv 12.32p,,lv 4.45p,ar 12.05p,,
+243.9,Norwood,0,ON,E,4.25p,12.13p,,4.55p,11.53a,,
+252.3,Indian River,0,ON,E,4.37p,12.01p,,f5.06p,f11.40a,,
+262.1,Peterboro,1,ON,E,ar 4.55p / lv 5.10p,ar 11.40a / lv 11.40a,lv 6.10a,ar 5.30p / lv 5.30p,ar 11.20a / lv 11.20a,ar 3.45p,ar 8.00p
+268.2,Kendry,0,ON,E,,,f6.19a,,,f3.32p,f7.47p
+271.1,Cavan,0,ON,E,5.27p,11.24a,6.23a,f5.47p,f11.04a,3.27p,7.42p
+276.5,Dranoel,0,ON,E,,11.15a,f6.31a,f5.56p,f10.55a,3.18p,f7.33p
+279.3,Manvers,0,ON,E,f5.41p,f11.10a,f6.36a,f6.02p,f10.49a,f3.13p,7.28p
+283.2,Pontypool,0,ON,E,5.48p,11.04a,6.43a,f6.09p,f10.42a,3.06p,7.20p
+292.1,Burketon,0,ON,E,6.03p,10.49a,6.55a,f6.22p,f10.30a,2.53p,7.05p
+301.4,Myrtle,0,ON,E,6.18p,10.35a,7.08a,6.37p,10.15a,2.39p,6.50p
+305.1,Dagmar,0,ON,E,f6.25p,f10.28a,f7.14a,f6.45p,f10.08a,f2.31p,f6.43p
+306.6,Glen Major,0,ON,E,,,f7.17a,f6.48p,,f2.28p,f6.40p
+310.3,Claremont,0,ON,E,6.32p,10.20a,7.22a,f6.56p,f9.59a,2.22p,6.32p
+313.9,Atha Road,0,ON,E,,,f7.28a,,,f2.15p,f6.25p
+317.8,Locust Hill,0,ON,E,6.45p,10.10a,7.35a,f7.07p,f9.47a,2.08p,6.18p
+323.7,Brown's Corners,0,ON,E,,,f7.44a,,,f1.59p,f6.09p
+325.8,Agincourt,0,ON,E,7.00p,9.57a,7.48a,7.22p,9.33a,1.55p,6.05p
+333.3,Leaside,1,ON,E,7.10p,9.44a,8.00a,7.35p,9.18a,1.42p,5.52p
+336.6,Don,0,ON,E,7.20p,9.36a,8.07a,7.45p,9.07a,1.35p,5.45p
+338.6,Toronto (Union),1,ON,E,ar 7.30p,lv 9.30a,ar 8.15a,ar 7.55p,lv 9.00a,lv 1.30p,lv 5.40p

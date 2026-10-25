@@ -1,0 +1,35 @@
+# Canadian Pacific, Table 55: Kingston - Tichborne - Sharbot Lake - Renfrew (the Kingston & Pembroke; mixed trains). Canadian Pacific timetable, 1948, Tables 50 (Toronto - Windsor page) and 51 - 55. Eastern time.
+# Tichborne and Sharbot Lake printed Ar / Lv: one row here. M617: on Saturdays leaves Kingston 9.30 p.m. (not entered).
+#train col=M617 num=617 dir=down days=daily kind=mixed note="Mixed. Kingston - Sharbot Lake (for Pool 33 / 34 and Nos. 35 / 36). On Saturdays leaves Kingston 9.30 p.m."
+#train col=M613 num=613 dir=down days="ex Sun" kind=mixed note="Mixed. Kingston - Renfrew."
+#train col=M618 num=618 dir=up days=daily kind=mixed note="Mixed. Sharbot Lake - Kingston."
+#train col=M612 num=612 dir=up days="ex Sun" kind=mixed note="Mixed. Renfrew - Kingston."
+mile,station,principal,prov,tz,M617,M613,M618,M612
+0.0,Kingston,1,ON,E,lv 8.30p,lv 10.30a,ar 7.15a,ar 5.15p
+5.8,Cataraqui,0,ON,E,f8.48p,f10.48a,f6.42a,f4.40p
+10.2,Glenvale,0,ON,E,f9.00p,f11.00a,f6.30a,f4.29p
+14.1,Murvale,0,ON,E,f9.10p,f11.10a,f6.20a,f4.19p
+18.6,Harrowsmith,0,ON,E,f9.25p,11.25a,6.08a,4.08p
+21.5,Hartington,0,ON,E,f9.35p,f11.33a,f6.00a,f4.00p
+25.0,Verona,0,ON,E,9.50p,11.45a,5.50a,3.50p
+29.4,Godfrey,0,ON,E,f10.10p,11.58a,f5.40a,3.38p
+32.2,Hinchinbrooke,0,ON,E,f10.20p,f12.05p,f5.30a,f3.30p
+38.3,Tichborne,1,ON,E,ar 10.40p / lv 10.40p,ar 12.20p / lv 12.45p,ar 5.00a / lv 5.00a,ar 3.00p / lv 3.00p
+42.1,Oconto,0,ON,E,f11.25p,f1.05p,f4.42a,f2.48p
+46.8,Sharbot Lake,1,ON,E,ar 11.45p,ar 1.20p / lv 2.40p,lv 4.30a,ar 1.00p / lv 2.35p
+50.1,Oso,0,ON,E,,f2.50p,,f12.45p
+55.5,Clarendon,0,ON,E,,3.05p,,12.28p
+57.2,Robertsville,0,ON,E,,f3.10p,,f12.22p
+59.3,Mississippi,0,ON,E,,f3.17p,,12.16p
+61.3,Snow Road,0,ON,E,,3.23p,,12.11p
+67.4,Wilbur,0,ON,E,,f3.38p,,f11.50a
+69.2,Lavant,0,ON,E,,3.45p,,11.45a
+71.4,Folger,0,ON,E,,3.55p,,f11.35a
+76.2,Clyde Forks,0,ON,E,,4.10p,,f11.20a
+78.2,Flower,0,ON,E,,f4.16p,,11.10a
+87.3,Barryvale,0,ON,E,,4.40p,,f10.45a
+89.2,Calabogie,1,ON,E,,4.50p,,10.35a
+93.1,Ashdod,0,ON,E,,f5.10p,,f10.15a
+99.1,Opeongo,0,ON,E,,f5.30p,,f9.55a
+102.3,Renfrew Jct.,0,ON,E,,f5.40p,,f9.45a
+103.6,Renfrew,1,ON,E,,ar 5.50p,,lv 9.40a

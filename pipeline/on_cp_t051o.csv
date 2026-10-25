@@ -1,0 +1,42 @@
+# Canadian Pacific, Tables 49 and 51: Pool 33 / 34, Ottawa - Bedell - Smiths Falls - Sharbot Lake - Peterboro - Toronto. Canadian Pacific timetable, 1948, Tables 50 (Toronto - Windsor page) and 51 - 55. Eastern time.
+# Miles: Ottawa - Bedell - Smiths Falls as Table 44A, then Table 51's Smiths Falls miles. Kingston connection at Sharbot Lake (Table 55).
+#train col=P33 num=33 dir=down days=daily kind=passenger note="Pool train (CP - CN joint Ottawa - Toronto service). Coaches and buffet parlour car (Table 49A)."
+#train col=P34 num=34 dir=up days=daily kind=passenger note="Pool train (CP - CN joint Ottawa - Toronto service). Coaches and buffet parlour car (Table 49A)."
+mile,station,principal,prov,tz,P33,P34
+0.0,Ottawa,1,ON,E,lv 10.40p,ar 6.45a
+31.9,Bedell,1,ON,E,,
+43.6,Merrickville,0,ON,E,,f5.37a
+52.7,Smiths Falls,1,ON,E,ar 11.59p / lv 12.10a,ar 5.15a / lv 5.25a
+64.3,Perth,1,ON,E,12.30a,4.53a
+68.1,Glen Tay,0,ON,E,,
+71.8,Bathurst,0,ON,E,,
+79.3,Maberley,0,ON,E,,
+89.5,Sharbot Lake,1,ON,E,1.15a,4.10a
+98.6,Mountain Grove,0,ON,E,,
+104.3,Ardendale,0,ON,E,e1.39a,h3.44a
+114.4,Kaladar,0,ON,E,e1.55a,h3.30a
+125.4,Sulphide,0,ON,E,,
+130.6,Tweed,1,ON,E,2.30a,3.00a
+139.8,Ivanhoe,0,ON,E,c3.00a,2.40a
+148.5,Bonarlaw,0,ON,E,,2.25a
+161.8,Havelock,1,ON,E,ar 3.40a / lv 3.50a,ar 1.55a / lv 2.05a
+167.9,Norwood,0,ON,E,b4.00a,b1.45a
+176.3,Indian River,0,ON,E,,
+186.1,Peterboro,1,ON,E,ar 4.35a / lv 4.35a,ar 1.05a / lv 1.05a
+192.2,Kendry,0,ON,E,,
+195.1,Cavan,0,ON,E,,
+200.5,Dranoel,0,ON,E,,
+203.3,Manvers,0,ON,E,,
+207.2,Pontypool,0,ON,E,,
+216.1,Burketon,0,ON,E,,
+225.4,Myrtle,0,ON,E,,
+229.1,Dagmar,0,ON,E,,
+230.6,Glen Major,0,ON,E,,
+234.3,Claremont,0,ON,E,,
+237.9,Atha Road,0,ON,E,,
+241.8,Locust Hill,0,ON,E,,
+247.7,Brown's Corners,0,ON,E,,
+249.8,Agincourt,0,ON,E,,f11.35p
+257.3,Leaside,1,ON,E,6.25a,11.17p
+260.6,Don,0,ON,E,6.35a,
+262.6,Toronto (Union),1,ON,E,ar 6.45a,lv 11.00p

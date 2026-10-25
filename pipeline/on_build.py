@@ -39,6 +39,8 @@ LONG = {'on_cp_t004': 'Montreal – Ottawa – North Bay – Sudbury – Fort Wi
         'on_rs_t001': 'Arvida – Port Alfred – Bagotville', 'on_aj_t001': "Isle Maligne – St. Joseph d'Alma – Saguenay Power",
         'on_cp_t050': 'Montreal – Smiths Falls – Tichborne – Belleville – Toronto (Lake Ontario Shore Line)', 'on_cp_t050o': 'Ottawa – Smiths Falls – Belleville – Toronto (Pool 23 / 24)',
         'on_cpcn_t049': 'Montreal (Windsor Station) – Cornwall – Kingston – Toronto (Pool 15 / 6, over the CN)', 'on_cp_t049w': 'Toronto – Galt – London – Windsor (for Detroit and Chicago)',
+        'on_cp_t051': 'Montreal – Smiths Falls – Sharbot Lake – Peterboro – Toronto', 'on_cp_t051o': 'Ottawa – Smiths Falls – Sharbot Lake – Peterboro – Toronto (Pool 33 / 34)',
+        'on_cp_t052': 'De Beaujeu – Cornwall', 'on_cp_t053': 'Havelock – Peterboro – Lindsay – Bobcaygeon', 'on_cp_t055': 'Kingston – Tichborne – Sharbot Lake – Renfrew',
         'on_dh_t018': 'Montreal – Rouses Point – Albany – New York (on this map to the border)', 'on_nyc_t018': 'Montreal – Malone – Albany – New York (on this map to the border)',
         'on_acr_t001': 'Sault Ste. Marie – Hawk Junction – Hearst', 'on_acr_t001m': 'Hawk Junction – Michipicoten'}
 OVER = {'on_cn_t075b': dict(noplace=['Ottawa (Bank Street)']),
@@ -47,6 +49,7 @@ OVER = {'on_cn_t075b': dict(noplace=['Ottawa (Bank Street)']),
         'on_cp_t024': dict(places={'International Boundary (CP, to Richford, Vt.)': (-72.6637808, 45.0152297)}),   # end of CP track beyond Abercorn
         'on_cp_t008': dict(places={'International Boundary (QC, to Newport, Vt.)': (-72.171437, 45.0058471)}),   # the end of the Massawippi Valley line in the Quebec collection
         'on_tem_t001': dict(shift=-14400),
+        'on_cp_t049w': dict(noplace=['London (Quebec St.)']),
         'on_cp_t050': dict(noplace=['Rosedale']), 'on_cp_t050o': dict(noplace=['Rosedale']),   # the collection's "Rosedale" found is Toronto's
         'on_rs_t001': dict(force=[('Port Alfred', 'Ruisseau Rouge')]),   # the collection's line climbs out of Port Alfred by a hairpin: 7.7 mi of track for 6.0 printed
         'on_cp_t022s': dict(places={'Stanbridge': (-73.0198692, 45.1161065)}),   # end of the 2.78 mi Stanbridge junction segment (Brendan, 24 Oct 2026)
@@ -55,7 +58,7 @@ OVER = {'on_cn_t075b': dict(noplace=['Ottawa (Bank Street)']),
                                                                   # points snap to the parallel Algoma Eastern line, which does not join between them)   # Bank Street by its mileage from Union Station (canon names both 'ottawa')
 def specs():
     out = []
-    LATE = {'on_cp_t010.csv'}                              # continuations of trains another table names first (Table 23's 39 - 42 keep their trip ids)
+    LATE = {'on_cp_t010.csv', 'on_cp_t049w.csv'}                              # continuations of trains another table names first (Table 23's 39 - 42 keep their trip ids)
     for fn in sorted(glob.glob(os.path.join(HERE, 'on_c[pn]_t*.csv')) + glob.glob(os.path.join(HERE, 'on_onr_t*.csv')) + glob.glob(os.path.join(HERE, 'on_acr_t*.csv'))
                      + glob.glob(os.path.join(HERE, 'on_dh_t*.csv')) + glob.glob(os.path.join(HERE, 'on_nyc_t*.csv'))
                      + glob.glob(os.path.join(HERE, 'on_cpcn_t*.csv'))

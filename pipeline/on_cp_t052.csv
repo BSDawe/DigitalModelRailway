@@ -1,0 +1,14 @@
+# Canadian Pacific, Table 52: De Beaujeu - Cornwall (mixed, connecting with Nos. 35 / 30 at De Beaujeu; Montreal - De Beaujeu is Table 50). Canadian Pacific timetable, 1948, Tables 50 (Toronto - Windsor page) and 51 - 55. Eastern time.
+# Printed "35-M593" and "30-M592": the mixed trains M593 / M592.
+#train col=M593 num=593 dir=down days="ex Sun" kind=mixed note="Mixed. Connects from No. 35 (Montreal 9.25 a.m.) at De Beaujeu."
+#train col=M592 num=592 dir=up days="ex Sun" kind=mixed note="Mixed. Connects with No. 30 for Montreal at De Beaujeu."
+mile,station,principal,prov,tz,M593,M592
+40.2,De Beaujeu,1,QC,E,lv 1.30p,ar 9.25a
+43.7,Laberge,0,QC,E,f1.40p,f9.13a
+46.9,Bridge End,0,ON,E,f1.50p,f9.05a
+50.7,North Lancaster,0,ON,E,2.05p,8.55a
+54.4,Glen Gordon,0,ON,E,2.20p,8.40a
+57.9,Williamstown,0,ON,E,2.30p,8.20a
+60.6,Summerstown,0,ON,E,f2.37p,f8.07a
+61.9,Glenbrook,0,ON,E,f2.42p,f8.03a
+69.2,Cornwall,1,ON,E,ar 3.00p,lv 7.45a

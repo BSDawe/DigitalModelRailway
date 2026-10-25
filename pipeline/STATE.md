@@ -1667,3 +1667,19 @@ Stations of different railways within 250 m (70 pairs; script: same check over v
   ran Leaside - North Toronto - West Toronto and into Union from the west (Leaside had been placed by mileage on that line). Hand points CP Leaside and CP Don
   (the collection's points). Tables 50 (both) 3.7 km shorter. Every line ending at Union moved by ~50 m (the station end now snaps to the link), and the ONR
   and CN Toronto - North Bay / Capreol lines now leave Union by the same CN track (ONR's had used a different CN line for 24 km).
+
+## Version 74 (25 October 2026): CP Toronto - Windsor (full), Tables 51, 52, 53, 55
+- Scans (private repo scans/cp1948_qc/): tw050a, tw050b (Toronto - London - Windsor - Detroit - Chicago, printed as a second "Table 50"), t051_055 (sideways), signs.
+- on_cp_t049w REWRITTEN from the full table with printed miles and every stop: 635 The Michigan, 19 The Canadian, 707 (/ 709) and 705 Toronto - Streetsville,
+  37 Royal York, 629, 631, 21 Chicago Express / 20, 630, 706, 38, 708 (/ 710), 632, 22 The Overseas, 634. Not entered: Guelph - Goderich (Table 68), St. Thomas
+  (69), St. Marys (69A) connections, and the LONDON & PORT STANLEY RY. connections (electric: London - St. Thomas - Port Stanley; times printed for 635, 37,
+  629, 631, 21 / 20, 630, 38, 632, 22) -> REMIND BRENDAN: an interurban (his interurban to-do applies). London (Quebec St.) by mileage. Built after the
+  boat trains (on_build LATE) so the Owen Sound boat trains keep CP-707 / CP-708.
+- on_cp_t051 (Table 51 via Peterboro, Montreal - Smiths Falls - Perth - Sharbot Lake - Havelock - Peterboro - Toronto): 35 / 36 in full (Montreal - Smiths Falls
+  stops from Table 50; MOVED out of on_cp_t050), 601, 619 / 620, 604, 602 (Peterboro / Havelock - Toronto locals). on_cp_t051o: Pool 33 / 34 Ottawa - Bedell -
+  Smiths Falls - Sharbot Lake - Peterboro - Toronto (on_cpx_t050.csv deleted).
+- on_cp_t052 (De Beaujeu - Cornwall mixed M593 / M592, connecting with 35 / 30). on_cp_t053 (M605 / M606 Havelock - Peterboro - Dranoel - Lindsay - Bobcaygeon).
+  on_cp_t055 (Kingston - Tichborne - Sharbot Lake - Renfrew mixed M617, M613 / M618, M612).
+- DUPLICATES REMOVED: Table 43's 29, 35, 597 / 30, 36, 598 (Montreal - Vaudreuil) are the Table 50 / 51 trains: dropped from on_cp_t043; their Montreal West -
+  St. Annes suburban stops (Grovehill ... Baie d'Urfe) added to on_cp_t050 (hand-merged after t049.py: rerunning t049.py loses them).
+- Checks: all on track; check_gtfs 1 problem (old).

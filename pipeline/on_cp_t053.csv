@@ -1,0 +1,23 @@
+# Canadian Pacific, Tables 51 and 53: mixed M605 / M606, Havelock - Peterboro - Dranoel - Lindsay - Bobcaygeon (printed "36-M605" and "35-M606": they connect with
+# Nos. 36 / 35 at Dranoel and Peterboro). Canadian Pacific timetable, 1948, Tables 50 (Toronto - Windsor page) and 51 - 55. Eastern time. Miles: Table 51 from Havelock to Dranoel, then Table 53's Dranoel miles. M606 passes Dranoel (no time).
+#train col=M605 num=605 dir=down days="ex Sun" kind=mixed note="Mixed. Havelock - Peterboro - Bobcaygeon; connects at Dranoel with No. 36 from Toronto (9.30 a.m.)."
+#train col=M606 num=606 dir=up days="ex Sun" kind=mixed note="Mixed. Bobcaygeon - Peterboro - Havelock; passengers for Toronto change to No. 35 at Peterboro (5.10 p.m.)."
+mile,station,principal,prov,tz,M605,M606
+0.0,Havelock,1,ON,E,lv 7.45a,ar 6.30p
+6.1,Norwood,0,ON,E,7.57a,6.10p
+14.5,Indian River,0,ON,E,f8.13a,f5.55p
+24.3,Peterboro,1,ON,E,ar 8.35a / lv 10.10a,ar 4.35p / lv 5.30p
+30.4,Kendry,0,ON,E,f10.23a,
+33.3,Cavan,0,ON,E,f10.30a,f4.15p
+38.7,Dranoel,1,ON,E,ar 10.50a / lv 11.15a,
+40.9,Bethany,0,ON,E,f11.22a,4.00p
+45.0,Fleetwood,0,ON,E,f11.32a,f3.50p
+49.4,Rea's,0,ON,E,f11.43a,f3.40p
+51.7,Hillhead,0,ON,E,f11.48a,f3.33p
+56.8,Lindsay,1,ON,E,ar 12.01p / lv 12.25p,ar 2.40p / lv 3.20p
+61.1,Pleasant Point,0,ON,E,f12.37p,f2.30p
+65.1,Dunsford,0,ON,E,12.48p,2.20p
+69.0,Ancona Point,0,ON,E,f12.58p,f2.10p
+70.3,Birch Point,0,ON,E,f1.02p,f2.07p
+71.8,Kenstone,0,ON,E,f1.05p,f2.04p
+73.0,Bobcaygeon,1,ON,E,ar 1.15p,lv 2.00p

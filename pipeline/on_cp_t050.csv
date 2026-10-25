@@ -1,73 +1,83 @@
 # Canadian Pacific, Table 50: Montreal (Windsor Station) - Smiths Falls - Tichborne - Belleville - Toronto, the Lake Ontario Shore Line. Canadian Pacific timetable, 1948, Tables 49 and 50. Eastern time.
-# Pool 21 / 22 (Chicago Express / The Overseas) ran on this CP line (Table 49 Note A: from and to the CP stations). Pool 23 / 24 (Ottawa) in on_cp_t050o; Pool 33 / 34 and the
-# Table 51 parts of 29, 30, 35, 36 (via Havelock and Peterboro) in on_cpx_t050.csv, not built. Smiths Falls, Tichborne and Trenton printed Ar / Lv: one row here.
+# Pool 21 / 22 (Chicago Express / The Overseas) ran on this CP line (Table 49 Note A: from and to the CP stations). Pool 23 / 24 (Ottawa) in on_cp_t050o; Nos. 35 / 36 and Pool 33 / 34
+# (via Sharbot Lake, Havelock and Peterboro) in on_cp_t051 / t051o. Smiths Falls, Tichborne and Trenton printed Ar / Lv: one row here.
 # Signs b, e, g, n, s, ss, u, v, w, x entered as plain stops. The Toronto - Hamilton connections (Table 56) not entered.
 #train col=P21 num=21 dir=down days=daily kind=passenger name="Chicago Express" note="Pool train (CP - CN joint Montreal / Ottawa - Toronto service). Chicago Express: on from Toronto as CP No. 21 to Windsor and Detroit (Table 49). St. Annes, Montreal West: stop on signal. Kingston connection at Tichborne."
 #train col=P22 num=22 dir=up days=daily kind=passenger name="The Overseas" note="Pool train (CP - CN joint Montreal / Ottawa - Toronto service). The Overseas: from Detroit and Windsor as CP No. 22 (Table 49). Winchester, Chesterville: stop on signal to let off passengers from Belleville and beyond."
-#train col=No29 num=29 dir=down days="ex Sun" kind=passenger note="Montreal - Glen Tay; on by Table 51 (not in hand). Connection at Bedell for Ottawa - Prescott No. 29 (Table 44A)."
-#train col=No30 num=30 dir=up days="ex Sun" kind=passenger note="From Perth (Table 51 beyond, not in hand) to Montreal. Connection at Bedell with Prescott - Ottawa No. 30 (Table 44A)."
-#train col=No35 num=35 dir=down days="ex Sun" kind=passenger note="Montreal - Glen Tay; on via Peterboro (Table 51, not in hand) to Toronto 7.30 p.m."
-#train col=No36 num=36 dir=up days="ex Sun" kind=passenger note="From Toronto 9.30 a.m. via Peterboro (Table 51, not in hand); Glen Tay - Montreal."
+#train col=No29 num=29 dir=down days="ex Sun" kind=passenger note="Montreal - Glen Tay. Connection at Bedell for Ottawa - Prescott No. 29 (Table 44A)."
+#train col=No30 num=30 dir=up days="ex Sun" kind=passenger note="Perth - Montreal. Connection at Bedell with Prescott - Ottawa No. 30 (Table 44A)."
 #train col=No597 num=597 dir=down days=Sun kind=passenger
 #train col=No598 num=598 dir=up days=Sun kind=passenger
 #train col=M85 num=85 dir=down days="ex Sun" kind=mixed note="Mixed. Kingston connection at Tichborne (Table 55)."
 #train col=M86 num=86 dir=up days="ex Sun" kind=mixed note="Mixed. Kingston connection at Tichborne (Table 55). Elmsley printed f3.45, after Perth 2.40."
-mile,station,principal,prov,tz,P21,P22,No29,No30,No35,No36,No597,No598,M85,M86
-0.0,Montreal (Windsor Station),1,QC,E,lv 10.15p,ar 7.00a,lv 3.40p,ar 12.00p,lv 9.25a,ar 7.30p,lv 9.27a,ar 8.35p,,
-2.0,Westmount,0,QC,E,10.22p,6.52a,3.46p,11.52a,9.31a,7.22p,9.31a,8.27p,,
-4.7,Montreal West,0,QC,E,f10.30p,6.45a,3.55p,11.30a,9.37a,7.15p,9.37a,8.20p,,
-20.4,St. Annes (Ste. Anne de Bellevue),0,QC,E,f10.48p,6.22a,4.31p,11.01a,9.54a,6.49p,10.13a,7.41p,,
-23.7,Vaudreuil (Dorion),1,QC,E,,,4.38p,10.55a,10.00a,6.43p,10.20a,7.35p,,
-28.4,St. Lazare,0,QC,E,,,4.50p,10.46a,10.07a,6.36p,10.27a,7.28p,,
-34.4,St. Clet,0,QC,E,,,5.00p,10.34a,10.17a,6.28p,10.35a,7.19p,,
-40.2,De Beaujeu,0,QC,E,,,5.10p,10.15a,10.26a,6.18p,10.43a,7.10p,,
-43.7,St. Telesphore,0,QC,E,,,f5.20p,f10.03a,f10.31a,f6.11p,f10.48a,f7.03p,,
-46.3,Dalhousie Mills,0,QC,E,,,5.27p,9.57a,10.36a,6.06p,10.53a,6.58p,,
-50.2,Glen Norman,0,ON,E,,,f5.34p,f9.48a,10.42a,6.01p,f10.58a,f6.51p,,
-54.0,Green Valley,0,ON,E,,,5.42p,9.40a,10.50a,5.55p,f11.03a,6.45p,,
-56.7,Glenroy,0,ON,E,,,f5.48p,f9.31a,10.54a,5.50p,f11.07a,f6.40p,,
-62.7,Apple Hill,0,ON,E,,,5.59p,9.21a,11.03a,5.41p,11.15a,6.32p,,
-68.1,Monklands,0,ON,E,,,6.09p,9.10a,11.12a,5.32p,f11.23a,6.24p,,
-72.9,Avonmore,0,ON,E,,,6.19p,9.00a,11.19a,5.25p,f11.30a,6.17p,,
-79.0,Finch,0,ON,E,,,6.32p,8.49a,11.29a,5.15p,11.38a,6.09p,,
-81.7,Goldfield,0,ON,E,,,6.37p,8.40a,,,f11.42a,f6.03p,,
-86.7,Chesterville,1,ON,E,f11.59p,5.10a,6.50p,8.33a,11.41a,4.56p,11.49a,5.57p,,
-92.6,Winchester,1,ON,E,f12.07a,5.03a,7.04p,8.20a,11.50a,4.44p,11.57a,5.49p,,
-95.8,Inkerman,0,ON,E,,,7.12p,8.08a,f11.55a,f4.37p,f12.01p,5.43p,,
-100.6,Mountain,0,ON,E,,,7.23p,7.55a,12.03p,4.30p,12.08p,5.37p,,
-107.9,Bedell,1,ON,E,,,7.45p,7.30a,12.15p,4.21p,12.18p,5.28p,,
-111.6,Swan,0,ON,E,,,f7.51p,f7.25a,f12.21p,f4.14p,f12.22p,f5.23p,,
-115.8,Burritts,0,ON,E,,,f7.58p,f7.19a,f12.27p,f4.09p,f12.27p,f5.18p,,
-119.6,Merrickville,0,ON,E,,,8.07p,7.13a,12.35p,4.04p,12.32p,5.13p,,
-124.6,Rosedale,0,ON,E,,,f8.16p,f7.06a,f12.42p,f3.56p,f12.39p,f5.06p,,
-128.7,Smiths Falls,1,ON,E,ar 12.55a / lv 1.10a,ar 4.10a / lv 4.25a,ar 8.25p / lv 9.05p,ar 6.50a / lv 7.00a,ar 12.50p / lv 1.00p,ar 3.40p / lv 3.50p,ar 12.50p,lv 5.00p,lv 11.30a,ar 4.00p
-134.4,Elmsley,0,ON,E,,,f9.15p,f6.40a,1.16p,,,,f11.45a,f3.45p
-140.3,Perth,1,ON,E,1.30a,3.47a,9.25p,lv 6.30a,ar 1.23p,3.20p,,,12.45p,2.40p
-144.1,Glen Tay,1,ON,E,,,ar 9.35p,,,lv 3.10p,,,1.25p,2.20p
-152.6,Christie Lake,0,ON,E,,,,,,,,,f1.50p,f1.50p
-159.1,Bolingbroke,0,ON,E,,,,,,,,,f2.03p,f1.35p
-163.0,Crow Lake,0,ON,E,,,,,,,,,f2.15p,f1.25p
-169.5,Tichborne,1,ON,E,2.15a,3.00a,,,,,,,3.10p,ar 12.10p / lv 1.00p
-171.5,Parham,0,ON,E,,,,,,,,,f3.20p,f11.50a
-175.9,Echo,0,ON,E,,,,,,,,,f3.35p,f11.40a
-181.1,Wilkinson,0,ON,E,,,,,,,,,f4.00p,f11.20a
-189.9,Lens,0,ON,E,,,,,,,,,f4.22p,f10.50a
-197.1,Roblindale,0,ON,E,,,,,,,,,4.50p,f10.25a
-203.2,Kingsford,0,ON,E,,,,,,,,,f5.05p,f10.00a
-208.2,Lonsdale,0,ON,E,,,,,,,,,f5.20p,f9.50a
-215.7,Shannonville,0,ON,E,,,,,,,,,f5.35p,f9.25a
-221.0,Belleville,1,ON,E,3.37a,1.45a,,,,,,,5.45p,9.10a
-231.4,Trenton,1,ON,E,ar 4.00a / lv 4.10a,ar 1.15a / lv 1.25a,,,,,,,ar 7.00p,lv 8.00a
-241.3,Brighton,0,ON,E,,,,,,,,,,
-249.4,Colborne,0,ON,E,,,,,,,,,,
-256.2,Grafton,0,ON,E,,,,,,,,,,
-263.8,Cobourg,1,ON,E,4.55a,12.33a,,,,,,,,
-270.1,Port Hope,1,ON,E,5.05a,f12.22a,,,,,,,,
-287.4,Newcastle,0,ON,E,,,,,,,,,,
-293.2,Bowmanville,0,ON,E,5.35a,11.53p,,,,,,,,
-303.1,Oshawa,1,ON,E,5.53a,11.35p,,,,,,,,
-307.7,Whitby,0,ON,E,,,,,,,,,,
-327.7,Agincourt,0,ON,E,,,,,,,,,,
-335.2,Leaside,1,ON,E,6.40a,10.47p,,,,,,,,
-338.5,Don,0,ON,E,,,,,,,,,,
-340.5,Toronto (Union),1,ON,E,ar 7.00a,lv 10.30p,,,,,,,,
+# Montreal West - St. Annes stops of Nos. 29, 30, 597, 598 from Table 43.
+mile,station,principal,prov,tz,P21,P22,No29,No30,No597,No598,M85,M86
+0.0,Montreal (Windsor Station),1,QC,E,lv 10.15p,ar 7.00a,lv 3.40p,ar 12.00p,lv 9.27a,ar 8.35p,,
+2.0,Westmount,0,QC,E,10.22p,6.52a,3.46p,11.52a,9.31a,8.27p,,
+4.7,Montreal West,0,QC,E,f10.30p,6.45a,3.55p,11.30a,9.37a,8.20p,,
+7.6,Grovehill,0,QC,E,,,,,,f8.12p,,
+8.2,Summerlea,0,QC,E,,,f4.04p,,f9.45a,f8.09p,,
+9.6,Dorval,0,QC,E,,,4.06p,11.22a,f9.47a,f8.07p,,
+11.5,Strathmore,0,QC,E,,,f4.10p,f11.19a,f9.51a,f8.03p,,
+12.0,Valois,0,QC,E,,,f4.11p,f11.17a,f9.53a,f8.01p,,
+12.6,Lakeside,0,QC,E,,,f4.13p,f11.15a,f9.55a,f7.59p,,
+13.6,Cedar Park,0,QC,E,,,f4.15p,f11.13a,f9.58a,f7.57p,,
+14.0,Pointe Claire,0,QC,E,,,4.17p,f11.12a,f10.00a,f7.55p,,
+15.0,Beaconsfield,0,QC,E,,,4.20p,11.10a,f10.02a,f7.53p,,
+16.9,Beaurepaire,0,QC,E,,,4.24p,f11.07a,f10.06a,f7.49p,,
+18.6,Baie d'Urfe,0,QC,E,,,f4.27p,11.04a,f10.09a,f7.45p,,
+20.4,St. Annes (Ste. Anne de Bellevue),0,QC,E,f10.48p,6.22a,4.31p,11.01a,10.13a,7.41p,,
+23.7,Vaudreuil (Dorion),1,QC,E,,,4.38p,10.55a,10.20a,7.35p,,
+28.4,St. Lazare,0,QC,E,,,4.50p,10.46a,10.27a,7.28p,,
+34.4,St. Clet,0,QC,E,,,5.00p,10.34a,10.35a,7.19p,,
+40.2,De Beaujeu,0,QC,E,,,5.10p,10.15a,10.43a,7.10p,,
+43.7,St. Telesphore,0,QC,E,,,f5.20p,f10.03a,f10.48a,f7.03p,,
+46.3,Dalhousie Mills,0,QC,E,,,5.27p,9.57a,10.53a,6.58p,,
+50.2,Glen Norman,0,ON,E,,,f5.34p,f9.48a,f10.58a,f6.51p,,
+54.0,Green Valley,0,ON,E,,,5.42p,9.40a,f11.03a,6.45p,,
+56.7,Glenroy,0,ON,E,,,f5.48p,f9.31a,f11.07a,f6.40p,,
+62.7,Apple Hill,0,ON,E,,,5.59p,9.21a,11.15a,6.32p,,
+68.1,Monklands,0,ON,E,,,6.09p,9.10a,f11.23a,6.24p,,
+72.9,Avonmore,0,ON,E,,,6.19p,9.00a,f11.30a,6.17p,,
+79.0,Finch,0,ON,E,,,6.32p,8.49a,11.38a,6.09p,,
+81.7,Goldfield,0,ON,E,,,6.37p,8.40a,f11.42a,f6.03p,,
+86.7,Chesterville,1,ON,E,f11.59p,5.10a,6.50p,8.33a,11.49a,5.57p,,
+92.6,Winchester,1,ON,E,f12.07a,5.03a,7.04p,8.20a,11.57a,5.49p,,
+95.8,Inkerman,0,ON,E,,,7.12p,8.08a,f12.01p,5.43p,,
+100.6,Mountain,0,ON,E,,,7.23p,7.55a,12.08p,5.37p,,
+107.9,Bedell,1,ON,E,,,7.45p,7.30a,12.18p,5.28p,,
+111.6,Swan,0,ON,E,,,f7.51p,f7.25a,f12.22p,f5.23p,,
+115.8,Burritts,0,ON,E,,,f7.58p,f7.19a,f12.27p,f5.18p,,
+119.6,Merrickville,0,ON,E,,,8.07p,7.13a,12.32p,5.13p,,
+124.6,Rosedale,0,ON,E,,,f8.16p,f7.06a,f12.39p,f5.06p,,
+128.7,Smiths Falls,1,ON,E,ar 12.55a / lv 1.10a,ar 4.10a / lv 4.25a,ar 8.25p / lv 9.05p,ar 6.50a / lv 7.00a,ar 12.50p,lv 5.00p,lv 11.30a,ar 4.00p
+134.4,Elmsley,0,ON,E,,,f9.15p,f6.40a,,,f11.45a,f3.45p
+140.3,Perth,1,ON,E,1.30a,3.47a,9.25p,lv 6.30a,,,12.45p,2.40p
+144.1,Glen Tay,1,ON,E,,,ar 9.35p,,,,1.25p,2.20p
+152.6,Christie Lake,0,ON,E,,,,,,,f1.50p,f1.50p
+159.1,Bolingbroke,0,ON,E,,,,,,,f2.03p,f1.35p
+163.0,Crow Lake,0,ON,E,,,,,,,f2.15p,f1.25p
+169.5,Tichborne,1,ON,E,2.15a,3.00a,,,,,3.10p,ar 12.10p / lv 1.00p
+171.5,Parham,0,ON,E,,,,,,,f3.20p,f11.50a
+175.9,Echo,0,ON,E,,,,,,,f3.35p,f11.40a
+181.1,Wilkinson,0,ON,E,,,,,,,f4.00p,f11.20a
+189.9,Lens,0,ON,E,,,,,,,f4.22p,f10.50a
+197.1,Roblindale,0,ON,E,,,,,,,4.50p,f10.25a
+203.2,Kingsford,0,ON,E,,,,,,,f5.05p,f10.00a
+208.2,Lonsdale,0,ON,E,,,,,,,f5.20p,f9.50a
+215.7,Shannonville,0,ON,E,,,,,,,f5.35p,f9.25a
+221.0,Belleville,1,ON,E,3.37a,1.45a,,,,,5.45p,9.10a
+231.4,Trenton,1,ON,E,ar 4.00a / lv 4.10a,ar 1.15a / lv 1.25a,,,,,ar 7.00p,lv 8.00a
+241.3,Brighton,0,ON,E,,,,,,,,
+249.4,Colborne,0,ON,E,,,,,,,,
+256.2,Grafton,0,ON,E,,,,,,,,
+263.8,Cobourg,1,ON,E,4.55a,12.33a,,,,,,
+270.1,Port Hope,1,ON,E,5.05a,f12.22a,,,,,,
+287.4,Newcastle,0,ON,E,,,,,,,,
+293.2,Bowmanville,0,ON,E,5.35a,11.53p,,,,,,
+303.1,Oshawa,1,ON,E,5.53a,11.35p,,,,,,
+307.7,Whitby,0,ON,E,,,,,,,,
+327.7,Agincourt,0,ON,E,,,,,,,,
+335.2,Leaside,1,ON,E,6.40a,10.47p,,,,,,
+338.5,Don,0,ON,E,,,,,,,,
+340.5,Toronto (Union),1,ON,E,ar 7.00a,lv 10.30p,,,,,,
