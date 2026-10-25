@@ -1,0 +1,18 @@
+# Canadian Pacific, Table 19A: Foster - Knowlton - Brome - Sutton. Canadian Pacific timetable, 1948, Tables 19, 19A and 22 (one page). Eastern time.
+# M261 leaves Sutton at 12.00 noon (entered as 12.00p).
+#train col=No268 num=268 dir=down days=Sun kind=passenger note="From Drummondville (Table 19). Foster to Knowlton only."
+#train col=No252 num=252 dir=down days="Mon,Tue,Wed,Thu,Fri" kind=passenger note="From Drummondville (Table 19)."
+#train col=No250 num=250 dir=down days=Sat kind=passenger note="From Drummondville (Table 19)."
+#train col=M254 num=254 dir=down days="ex Sun" kind=mixed note="Mixed. From Drummondville (Table 19)."
+#train col=No251 num=251 dir=up days="ex Sun" kind=passenger note="On to Drummondville (Table 19)."
+#train col=M261 num=261 dir=up days=Sat kind=mixed note="Mixed. On to Waterloo (Table 19)."
+#train col=M255 num=255 dir=up days="Mon,Tue,Wed,Thu,Fri" kind=mixed note="Mixed. On to Waterloo (Table 19)."
+#train col=No269 num=269 dir=up days=Sun kind=passenger note="Knowlton to Foster; on to Drummondville (Table 19)."
+mile,station,principal,prov,tz,No268,No252,No250,M254,No251,M261,M255,No269
+69.5,Foster,1,QC,E,lv 6.37p,lv 5.30p,lv 2.45p,lv 10.10a,ar 8.01a,ar 12.47p,ar 2.10p,ar 7.05p
+72.5,Fishers,0,QC,E,f6.43p,f5.36p,f2.51p,f10.16a,f7.50a,f12.39p,f2.02p,f6.59p
+74.0,Brome Lake,0,QC,E,f6.46p,f5.39p,f2.54p,f10.20a,f7.47a,f12.35p,f1.58p,f6.56p
+74.8,Knowlton,1,QC,E,ar 6.50p,5.43p,2.57p,10.40a,7.45a,12.33p,1.55p,lv 6.54p
+78.1,Brome,0,QC,E,,5.53p,3.06p,10.50a,7.35a,12.21p,1.40p,
+81.7,Enlaugra,0,QC,E,,6.05p,3.15p,11.00a,7.25a,12.10p,1.25p,
+84.9,Sutton,1,QC,E,,ar 6.15p,ar 3.25p,ar 11.10a,lv 7.15a,lv 12.00p,lv 1.15p,

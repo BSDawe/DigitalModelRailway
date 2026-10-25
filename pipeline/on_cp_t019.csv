@@ -1,0 +1,27 @@
+# Canadian Pacific, Table 19: Foster - Waterloo - Drummondville. Canadian Pacific timetable, 1948, Tables 19, 19A and 22 (one page). Eastern time.
+# Waterloo is printed as two rows (Ar and Lv): one row here.
+# Columns M255, M261 (Foster - Waterloo) and M264, M260 (Waterloo - Foster) run only that far.
+# M253: Wickham 7.18, Tourvilles f7.22 as printed (5.4 miles in 4 minutes: probably a misprint).
+#train col=M255 num=255 dir=down days="Mon,Tue,Wed,Thu,Fri" kind=mixed note="Mixed. Foster to Waterloo only; from Sutton (Table 19A)."
+#train col=M261 num=261 dir=down days=Sat kind=mixed note="Mixed. Foster to Waterloo only; from Sutton (Table 19A)."
+#train col=No269 num=269 dir=down days=Sun kind=passenger note="From Knowlton (Table 19A); connects with No. 42 from Montreal."
+#train col=M253 num=253 dir=down days="Mon,Tue,Wed,Thu,Fri" kind=mixed note=Mixed.
+#train col=M265 num=265 dir=down days=Sat kind=mixed note=Mixed.
+#train col=No251 num=251 dir=down days="ex Sun" kind=passenger note="From Sutton (Table 19A)."
+#train col=M254 num=254 dir=up days="ex Sun" kind=mixed note="Mixed. On to Sutton (Table 19A)."
+#train col=M264 num=264 dir=up days=Sat kind=mixed note="Mixed. Waterloo to Foster only."
+#train col=No250 num=250 dir=up days=Sat kind=passenger note="On to Sutton (Table 19A)."
+#train col=No252 num=252 dir=up days="Mon,Tue,Wed,Thu,Fri" kind=passenger note="On to Sutton (Table 19A)."
+#train col=No268 num=268 dir=up days=Sun kind=passenger note="On to Knowlton (Table 19A)."
+#train col=M260 num=260 dir=up days="Mon,Tue,Wed,Thu,Fri" kind=mixed note="Mixed. Waterloo to Foster only."
+mile,station,principal,prov,tz,M255,M261,No269,M253,M265,No251,M254,M264,No250,No252,No268,M260
+69.5,Foster,1,QC,E,lv 2.19p,lv 12.47p,lv 9.40p,lv 5.25p,lv 2.43p,lv 10.15a,ar 8.10a,ar 1.15p,ar 2.25p,ar 3.15p,ar 6.37p,ar 4.50p
+73.9,Waterloo,1,QC,E,ar 2.30p,ar 12.58p,9.55p,5.42p,ar 2.54p / lv 4.20p,10.30a,7.58a,lv 1.00p,2.15p,3.04p,ar 6.20p / lv 6.25p,lv 4.35p
+76.4,Warden,0,QC,E,,,10.00p,5.50p,4.28p,10.35a,7.50a,,2.06p,2.54p,6.11p,
+81.3,Clearys,0,QC,E,,,f10.09p,f6.02p,f4.40p,f10.44a,f7.28a,,f1.55p,f2.43p,f6.00p,
+86.2,South Roxton,0,QC,E,,,10.19p,6.13p,4.51p,10.54a,7.16a,,1.45p,2.32p,5.49p,
+93.2,Roxton Falls,0,QC,E,,,10.33p,6.35p,5.13p,11.08a,6.58a,,1.31p,2.16p,5.33p,
+99.0,Actonvale,1,QC,E,,,10.45p,6.55p,5.33p,11.20a,6.43a,,1.19p,2.02p,5.21p,
+107.6,Wickham,0,QC,E,,,11.02p,7.18p,5.56p,11.37a,6.22a,,1.03p,1.43p,5.03p,
+113.0,Tourvilles,0,QC,E,,,f11.12p,f7.22p,f6.10p,f11.47a,f6.08a,,f12.52p,f1.32p,f4.52p,
+116.1,Drummondville,1,QC,E,,,ar 11.20p,ar 8.00p,ar 6.35p,ar 11.55a,lv 6.00a,,lv 12.45p,lv 1.25p,lv 4.45p,

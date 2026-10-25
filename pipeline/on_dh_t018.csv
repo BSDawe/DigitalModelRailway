@@ -1,0 +1,15 @@
+# Delaware & Hudson trains in CP Table 18 (Montreal - Albany - New York), on the map from Windsor Station over the CP to the end of
+# CP track at the border (Brendan, 24 Oct 2026). Canadian Pacific timetable, 1948, Table 18 (Montreal - New York). Eastern time.
+# The border times (~) are not printed: estimated by mileage between Montreal West and Troy (or Albany).
+# The whole run is in on_dhfull_t018.csv.
+#train col=No10 num=10 dir=down days=daily kind=passenger to="New York" note="Sleeping cars and reclining-seat coach, Montreal - New York."
+#train col=No8 num=8 dir=down days=daily kind=passenger to="New York" note="Through coach and sleeping car, Montreal - New York."
+#train col=No34 num=34 dir=down days=daily kind=passenger to="New York" note="Air-conditioned through coach and dining car, Montreal - New York."
+#train col=No37 num=37 dir=up days=daily kind=passenger from="New York" note="Air-conditioned through coach and dining car, New York - Montreal. Times effective June 6 (until June 5: New York 9.00 a.m., Montreal 7.10 p.m.)."
+#train col=No7 num=7 dir=up days=daily kind=passenger from="New York" note="Through coach and sleeping car, New York - Montreal."
+#train col=No9 num=9 dir=up days=daily kind=passenger from="New York" note="Sleeping cars and reclining-seat coach, New York - Montreal."
+mile,station,principal,prov,tz,No10,No8,No34,No37,No7,No9
+0.0,Montreal (Windsor Station),1,QC,E,lv 8.50p,lv 7.15p,lv 9.10a,ar 6.35p,ar 6.55a,ar 7.30a
+2.0,Westmount,0,QC,E,8.57p,7.21p,9.16a,6.27p,6.47a,7.22a
+5.0,Montreal West,0,QC,E,9.04p,7.27p,9.22a,6.20p,6.40a,7.15a
+41.8,"International Boundary (D&H, to Rouses Point)",1,QC,E,~ar 9.59p,~ar 8.35p,~ar 10.24a,~lv 5.18p,~lv 5.21a,~lv 6.18a

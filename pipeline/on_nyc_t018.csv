@@ -1,0 +1,13 @@
+# New York Central trains in CP Table 18 (no train numbers printed), on the map from Windsor Station over the CP to Adirondack Junction,
+# then the St. Lawrence & Adirondack to the end of its trace at the border (Brendan, 24 Oct 2026). Canadian Pacific timetable, 1948, Table 18 (Montreal - New York). Eastern time.
+# e: stops to take on passengers; d: stops to let off passengers. The border times (~) are not printed: estimated by mileage between Montreal West and Albany.
+# The table also prints Utica; left out (Brendan, 24 Oct 2026). The whole run is in on_nycfull_t018.csv.
+#train col=NYC1 num="" dir=down days=daily kind=passenger to="New York" note="Stops at Montreal West to take on passengers."
+#train col=NYC3 num="" dir=down days=daily kind=passenger to="New York"
+#train col=NYC2 num="" dir=up days="ex Sun" kind=passenger from="New York" note="Stops at Montreal West to let off passengers."
+#train col=NYC4 num="" dir=up days=daily kind=passenger from="New York" note="Stops at Montreal West to let off passengers."
+mile,station,principal,prov,tz,NYC1,NYC3,NYC2,NYC4
+0.0,Montreal (Windsor Station),1,QC,E,lv 5.25p,lv 7.25a,ar 8.55p,ar 10.45a
+2.0,Westmount,0,QC,E,5.31p,7.31a,8.47p,10.37a
+5.0,Montreal West,0,QC,E,e5.37p,7.37a,d8.40p,d10.30a
+55.1,"International Boundary (NYC, to Malone)",1,QC,E,~ar 7.05p,~ar 9.11a,~lv 7.03p,~lv 8.44a

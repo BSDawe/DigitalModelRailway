@@ -226,7 +226,7 @@ def rows_of(spec):
                 rows[-1]['pm'] = r['mile']; continue
             run = 0.0 if not rows else rows[-1]['run'] + abs(r['mile'] - (part[k - 1]['mile'] if k else rows[-1]['pm']))
             rows.append(dict(name=name, mile=r['mile'], pm=r['mile'], run=run, principal=r['principal'] == '1', cells={c: [v] for c, v in cells.items()}, src=leg['csv'],
-                             tz=r.get('tz'), prov=r.get('prov')))
+                             tz=r.get('tz'), prov=r.get('prov'), est={c for c in cells if '~' in (r.get(c) or '')}))   # '~': a time estimated, not printed (shown "est.")
     trains = {c: t for c, t in trains.items() if sum(c in r['cells'] for r in rows) >= 2}
     for after, name, miles in spec.get('via', ()):                    # a point the line passes that is not a station (a junction): after a station, so many miles on
         i = next(k for k, r in enumerate(rows) if r['name'] == after)
@@ -367,7 +367,7 @@ def trips_of(spec, rows, trains, stn_index, taken, log=print):
         ends = ((f" From {tr['from']}." if tr.get('from') else '') + (f" To {tr['to']}." if tr.get('to') else '')) if spec.get('ends', True) else ''
         note = (spec.get('notes', {}).get(col) or tr.get('note', '')).strip()
         note = (note + ('' if not note or note.endswith('.') else '.') + ends + (spec.get('tznote', ' Shown in Pacific time, an hour earlier than the Mountain time printed.') if spec.get('shift', -3600) else '')).strip()
-        out.append(dict(id=tid, num=num, name=name, svc=svc_of(days), dir=0 if tr['along'] else 1, stops=[[stn_index[i], a, b, 1] for i, a, b in calls], note=note,
+        out.append(dict(id=tid, num=num, name=name, svc=svc_of(days), dir=0 if tr['along'] else 1, stops=[[stn_index[i], a, b, 0 if col in rows[i].get('est', ()) else 1] for i, a, b in calls], note=note,
                         **({k: tr[k] for k in ('from', 'to') if tr.get(k)} if spec.get('realends') else {})))
     return out
 

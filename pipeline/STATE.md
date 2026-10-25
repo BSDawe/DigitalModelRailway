@@ -1474,3 +1474,34 @@ Stations of different railways within 250 m (70 pairs; script: same check over v
   variables: sk_build traces/np, traces/gn). (2) The trace's west end stopped 0.6 km short of the track through Deloraine and tied to nothing: a link
   north added in the same file, and the trace costs 0.7 so it beats the Killarney line. 99.6 mi traced, 95.9 printed. Only skcn161a moved (the CP lines
   through Deloraine shift by about 7 m where the link meets their track).
+
+## Version 65 (24 October 2026): CP Tables 18, 19, 19A, 22 (Montreal - New York; Eastern Townships)
+- Scans (private repo scans/cp1948_qc/): t018, t019, t019a, t020_022. Brendan asked for Tables 16-22 "all the same page": 16, 17 and 21 were not in the
+  images; Table 20 (Eastray - Kingsbury) is freight only. Transcribed by Claude.
+- Table 18 (Montreal - New York). New railways in on_lines.RAILS: 'onnyc' (kind t, New York Central, own 'nyc', dark grey #3d3d3d / dark theme
+  #a8a8a8, Brendan) and 'ondh' (kind f, Delaware & Hudson, own 'dh', #0f6fa8 / #6fb3e0, Claude's pick). GTFS agencies NYC and DH.
+  * on_nyc_t018.csv: Windsor Station - Westmount - Montreal West over the CP, then at Adirondack Junction onto the St. Lawrence & Adirondack (owner()
+    gives 'nyc' for the Quebec collection's American Railroads / New York Central folders; drawn dark grey) to the end of its trace at the border
+    (-74.2423085, 44.9921679). 55.1 mi traced. No train numbers printed (trip ids NYC-ONNYC018-NYCn). UTICA LEFT OUT (Brendan, 24 Oct 2026).
+  * on_dh_t018.csv: the same CP start, then the CP by Adirondack Junction and Delson to the end of CP track at (-73.3727996, 45.0103103) (Brendan).
+    41.8 mi traced; all CP track (drawn CP).
+  * Border times are NOT printed: estimated by mileage between Montreal West and Troy / Albany, marked '~' in the CSV (new: ab_lines reads '~' as an
+    estimated time, timepoint 0, shown "est." on the page for kinds t and f too).
+  * Full runs kept, not built: on_nycfull_t018.csv, on_dhfull_t018.csv (Troy, Albany, New York). "We will extend the Montreal - New York trains over the
+    border at a future date" (Brendan).
+  * Rutland trains (Montreal CENTRAL Station - New York, 387 mi, 2 each way, no numbers or intermediate times): on_rut_t018.csv, NOT BUILT. Asked
+    Brendan how to route them.
+  * D&H No. 37 entered with its times effective June 6 (until June 5: New York 9.00 a.m., Montreal 7.10 p.m.; in the note).
+  * Montreal stops shared with the CP (SHARED: CP_MONTREAL_WINDSOR, CP_WESTMOUNT, CP_MONTREAL_WEST). Montreal West is placed by mileage, as in CP Table 4:
+    the collection's "Montreal Ouest" point snaps to a dead-end siding and made Table 4 run out and back.
+  * The 'nyc' and 'dh' graphs are boxed to the Montreal - border area and take CP sidings (the CP yard track at Montreal West is what joins the main
+    line to the Adirondack line in the collection).
+- Eastern Townships (CP): on_cp_t019m (Montreal - Farnham - Foster: Tables 19/19A print Montreal and Foster only, Farnham times from Table 22; No. 40
+  runs daily except Saturday: Table 19 says ex Sat & Sun, 19A adds Sunday), on_cp_t019 (Foster - Waterloo - Drummondville; M253 Wickham 7.18 -
+  Tourvilles f7.22 as printed, probably a misprint), on_cp_t019a (Foster - Knowlton - Sutton), on_cp_t022 (Farnham - St. Hyacinthe - St. Guillaume),
+  on_cp_t022s (Farnham - Bedford - Stanbridge; the northbound mixed trains take an hour Stanbridge - Bedford, as printed).
+  Aliases: Clearys -> Cleary, Tourvilles -> Tourville, Sutton -> "Sutton Flats", St. Guillaume -> St. Guillaume Junction, Stanbridge -> "Stanbridge
+  Union" (on the Central Vermont). CLAUDE'S TIE (to confirm): the CP Stanbridge track ends at the Stanbridge junction siding 1.1 km short of the
+  Stanbridge Union point; a straight tie added to ontario_quebec_links.geojson.
+- Checks: all new lines on track; no existing line moved (viz_data compared); check_gtfs 1 problem (old).
+- TO DO (Brendan, 23 Oct): recheck the Valleyfield sections (CN Table 75, on_cn_t075v) when he supplies the Valleyfield timetables.

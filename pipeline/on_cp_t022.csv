@@ -1,0 +1,18 @@
+# Canadian Pacific, Table 22: Farnham - St. Hyacinthe - St. Guillaume. Canadian Pacific timetable, 1948, Tables 19, 19A and 22 (one page). Eastern time.
+#train col=No263 num=263 dir=down days="Mon,Tue,Wed,Thu,Fri" kind=passenger note="Connects at Farnham with M263 from Stanbridge."
+#train col=No271 num=271 dir=down days=Sat kind=passenger note="Connects at Farnham with M271 from Stanbridge."
+#train col=No262 num=262 dir=up days="ex Sun" kind=passenger note="Connects at Farnham with M262 for Stanbridge."
+mile,station,principal,prov,tz,No263,No271,No262
+0.0,Farnham,1,QC,E,lv 4.55p,lv 2.30p,ar 8.55a
+5.6,Canrobert,0,QC,E,5.12p,2.47p,8.31a
+9.6,Papineau,0,QC,E,f5.22p,f2.57p,f8.22a
+11.5,Abbotsford,0,QC,E,5.25p,3.03p,8.17a
+16.4,St. Pie,0,QC,E,5.40p,3.17p,8.05a
+24.7,St. Hyacinthe,1,QC,E,6.00p,3.35p,7.45a
+26.4,Ste. Rosalie Jct.,0,QC,E,6.05p,3.40p,7.28a
+27.3,Ste. Rosalie,0,QC,E,f6.08p,f3.43p,f7.18a
+33.0,St. Simon,0,QC,E,6.22p,3.57p,7.04a
+38.1,St. Hugues,0,QC,E,6.34p,4.09p,6.52a
+40.9,Cavignac,0,QC,E,f6.41p,f4.14p,f6.45a
+43.1,St. Prime,0,QC,E,f6.47p,f4.20p,f6.39a
+46.7,St. Guillaume,1,QC,E,ar 7.00p,ar 4.35p,lv 6.30a

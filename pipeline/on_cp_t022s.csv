@@ -1,0 +1,13 @@
+# Canadian Pacific, Table 22: Farnham - Bedford - Stanbridge. Canadian Pacific timetable, 1948, Tables 19, 19A and 22 (one page). Eastern time.
+# Notre Dame Crossing is printed "Notre Dame Crsg".
+# Stanbridge to Bedford takes an hour going north (Stanbridge 12.01 p.m. and 11.30 a.m., Bedford 1.06 and 12.36), as printed.
+#train col=M262 num=262 dir=down days="ex Sun" kind=mixed note=Mixed.
+#train col=M263 num=263 dir=up days="Mon,Tue,Wed,Thu,Fri" kind=mixed note="Mixed. Connects at Farnham with No. 263 for St. Guillaume."
+#train col=M271 num=271 dir=up days=Sat kind=mixed note="Mixed. Connects at Farnham with No. 271 for St. Guillaume."
+mile,station,principal,prov,tz,M262,M263,M271
+0.0,Farnham,1,QC,E,lv 9.45a,ar 2.00p,ar 1.30p
+3.6,St. Sabine,0,QC,E,f9.55a,f1.35p,f1.05p
+7.9,Notre Dame Crossing,0,QC,E,f10.04a,f1.20p,f12.50p
+9.1,Mystic,0,QC,E,f10.08a,f1.15p,f12.45p
+11.5,Bedford,1,QC,E,10.20a,1.06p,12.36p
+13.8,Stanbridge,1,QC,E,ar 10.55a,lv 12.01p,lv 11.30a

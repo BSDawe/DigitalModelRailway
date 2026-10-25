@@ -1,0 +1,15 @@
+# Canadian Pacific, Tables 19, 19A and 22: Montreal (Windsor Station) - Farnham - Foster. Canadian Pacific timetable, 1948, Tables 19, 19A and 22 (one page). Eastern time.
+# Tables 19 and 19A print Montreal and Foster only; Farnham times are from Table 22 (Montreal - Farnham).
+#train col=No42 num=42 dir=down days=Sun kind=passenger note="Connects at Foster with No. 269 for Drummondville. No time printed at Farnham."
+#train col=No40 num=40 dir=down days="Sun,Mon,Tue,Wed,Thu,Fri" kind=passenger note="Daily except Saturday (Table 19: except Saturday and Sunday; Table 19A: also Sunday). Farnham time from Table 22."
+#train col=No204 num=204 dir=down days=Sat kind=passenger
+#train col=No202 num=202 dir=down days="ex Sun" kind=passenger note="No time printed at Farnham."
+#train col=No212 num=212 dir=down days="ex Sun" kind=passenger note="Montreal to Farnham only (Table 22)."
+#train col=No39 num=39 dir=up days="ex Sun" kind=passenger
+#train col=No215 num=215 dir=up days=Sat kind=passenger
+#train col=No203 num=203 dir=up days="Mon,Tue,Wed,Thu,Fri" kind=passenger
+#train col=No205 num=205 dir=up days=Sun kind=passenger note="No time printed at Farnham."
+mile,station,principal,prov,tz,No42,No40,No204,No202,No212,No39,No215,No203,No205
+0.0,Montreal (Windsor Station),1,QC,E,lv 7.40p,lv 3.15p,lv 12.40p,lv 7.50a,lv 8.15a,ar 10.35a,ar 3.25p,ar 5.50p,ar 8.55p
+43.2,Farnham,1,QC,E,,4.23p,1.48p,,ar 9.32a,9.25a,2.14p,4.45p,
+69.5,Foster,1,QC,E,ar 9.33p,ar 5.05p,ar 2.37p,ar 9.41a,,lv 8.34a,lv 1.34p,lv 4.05p,lv 7.06p
