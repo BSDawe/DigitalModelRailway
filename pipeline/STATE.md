@@ -1683,3 +1683,6 @@ Stations of different railways within 250 m (70 pairs; script: same check over v
 - DUPLICATES REMOVED: Table 43's 29, 35, 597 / 30, 36, 598 (Montreal - Vaudreuil) are the Table 50 / 51 trains: dropped from on_cp_t043; their Montreal West -
   St. Annes suburban stops (Grovehill ... Baie d'Urfe) added to on_cp_t050 (hand-merged after t049.py: rerunning t049.py loses them).
 - Checks: all on track; check_gtfs 1 problem (old).
+- (25 Oct 2026, Brendan) Zoomed-out views: below FAR_K = 0.0009 px/m (the Saskatchewan, Manitoba, Lakehead, Northern Ontario, Ontario and Quebec views;
+  Regina 0.0012 and closer unchanged) minor stations are not drawn and train-number labels are left off (a selected train keeps its number, a selected
+  station is still drawn). page_template.html: FAR_K, the station loop in drawBase, the three number-label blocks.
