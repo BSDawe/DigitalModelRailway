@@ -1,6 +1,6 @@
 # Canadian Pacific, Table 24: Montreal - Boston, on the map from Windsor Station by Farnham, Cowansville and Sutton to the end of CP track at the
-# border beyond Abercorn (Richford, Vt. next). Canadian Pacific timetable, 1948. Eastern time. The border times (~) are not printed: estimated by mileage between
-# the last Canadian time (Abercorn, or Sutton) and Richford. Glenton and Highwater (Que.), between Richford and North Troy, are not on the map (no track joins them yet).
+# border beyond Highwater, Que., through Richford, Vt. (Brendan's trace, 26 Oct 2026; North Troy, Vt. next). Canadian Pacific timetable, 1948. Eastern time. The border
+# times (~) are not printed: estimated by mileage between the last time before and the first after.
 # The whole run, with the Boston & Maine connections, is in on_cpfull_t024.csv. Nos. 214 / 213 run Montreal - Newport, Vt.
 #train col=No210 num=210 dir=down days=daily kind=passenger name="The Red Wing" to=Boston note="The Red Wing. Coach Montreal - Boston; coach via White River Jct. (B. & M. 78-79) Montreal - Springfield; sleeping cars and buffet compartment-observation car Montreal - Boston. Boston & Maine No. 78-302 south of Wells River. West Brome: a conditional stop."
 #train col=No214 num=214 dir=down days="ex Sun" kind=passenger to="Newport, Vt."
@@ -33,4 +33,9 @@ mile,station,principal,prov,tz,No210,No214,No212,No209,No213,No211
 65.7,Enlaugra,0,QC,E,,7.01p,,,7.45a,4.34p
 68.9,Sutton,1,QC,E,9.10p,7.14p,10.13a,5.33a,7.35a,4.30p
 74.4,Abercorn,0,QC,E,,7.24p,10.21a,,7.21a,4.17p
-75.8,"International Boundary (CP, to Richford, Vt.)",1,QC,E,~ar 9.26p,~ar 7.27p,~ar 10.23a,~lv 5.19a,~lv 7.17a,~lv 4.15p
+76.9,"Richford, Vt.",1,VT,E,9.29p,7.30p,10.25a,5.17a,7.13a,4.13p
+80.2,"Stevens Mills, Vt.",0,VT,E,,f7.38p,,,f7.03a,
+82.0,"Missisquoi, Vt.",0,VT,E,,7.42p,,,6.58a,
+85.0,"Glenton, Que.",0,QC,E,,7.49p,,,6.50a,3.59p
+91.1,"Highwater, Que.",0,QC,E,,7.57p,10.43a,,6.39a,3.51p
+92.7,"International Boundary (CP, to North Troy, Vt.)",1,QC,E,~ar 9.52p,~ar 8.05p,~ar 10.46a,~lv 4.53a,~lv 6.34a,~lv 3.48p

@@ -1707,3 +1707,7 @@ Stations of different railways within 250 m (70 pairs; script: same check over v
   Cornwall stations) plus Brendan's trace over the border to Helena (links file). Finch shares stop CP_FINCH with CP Table 50 (Brendan: one station at the
   crossing). Hand points: Helena (trace end), Rooseveltown (on the trace, approximate), NYC Cornwall / Cornwall Jct. / Uscan moved onto the main line.
   Helena - Rooseveltown printed 13 mi, the trace ~4.5 (forced): 62.8 mi traced vs 72 printed. NYC place_for now uses its own stations, CP only for Montreal.
+- (26 Oct 2026) Brendan's trace "Richford, Vt. (CP, Newport and Richford Ry.)" (links file): the CP line from the border south of Abercorn through Richford, Vt.
+  to the border before Glenton, Que., missing from the collections. Table 24 (on_cp_t024) now runs on to Richford, Stevens Mills, Missisquoi (Vt.), Glenton and
+  Highwater (Que.) and the end of CP track at the border before North Troy, Vt. (-72.4122, 45.0072; mile 92.7, times by mileage). The old border point south of
+  Abercorn is gone.

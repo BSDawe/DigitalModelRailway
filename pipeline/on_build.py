@@ -46,7 +46,7 @@ LONG = {'on_cp_t004': 'Montreal – Ottawa – North Bay – Sudbury – Fort Wi
 OVER = {'on_cn_t075b': dict(noplace=['Ottawa (Bank Street)']),
         'on_cp_t058b': dict(places={'Camp Borden (Lower Station)': (-79.891308, 44.269889),      # Brendan, 23 Oct 2026: "about here"
                                     'Camp Borden (Upper Station)': (-79.886619, 44.286324)}),    # at the end of its spur (his trace)
-        'on_cp_t024': dict(places={'International Boundary (CP, to Richford, Vt.)': (-72.6637808, 45.0152297)}),   # end of CP track beyond Abercorn
+        'on_cp_t024': dict(places={'International Boundary (CP, to North Troy, Vt.)': (-72.4121988, 45.0071654)}),   # end of CP track east of Highwater (through Richford, Vt. on Brendan's trace)
         'on_cp_t008': dict(places={'International Boundary (QC, to Newport, Vt.)': (-72.171437, 45.0058471)}),   # the end of the Massawippi Valley line in the Quebec collection
         'on_tem_t001': dict(shift=-14400),
         'on_nyco_t073': dict(force=[('Helena, N.Y.', 'Rooseveltown, N.Y.')], short='NYC (Table 73)'),   # printed 13 mi; Brendan's trace about 4.5
