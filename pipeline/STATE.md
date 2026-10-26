@@ -1697,3 +1697,5 @@ Stations of different railways within 250 m (70 pairs; script: same check over v
   both stay out. The Vallee Jct. - St. Georges 6.20 p.m. run in the No. 6 column (no sign): ADDED as a train, VF3 in on_cp_t008f (Brendan, 25 Oct 2026).
 - (25 Oct 2026, Brendan) Station panel: the Departures / Arrivals headings are now a table row carrying the day's count (all calls of the open day, 3 a.m. to 3 a.m.,
   including local cars not listed) right-aligned in the time column (renderStation, CSS .tt tr.tt-head).
+- FOR TABLE 56 (Toronto - Hamilton, not in hand yet; Brendan, 25 Oct 2026): CP / TH&B trains ran over the CN Lake Shore line between Toronto and the junction
+  just before Hamilton (trackage rights), then TH&B to Hamilton (Hunter St.). Route them on the CN Lake Shore, drawn CN, not over a CP line.
