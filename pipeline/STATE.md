@@ -1699,3 +1699,5 @@ Stations of different railways within 250 m (70 pairs; script: same check over v
   including local cars not listed) right-aligned in the time column (renderStation, CSS .tt tr.tt-head).
 - FOR TABLE 56 (Toronto - Hamilton, not in hand yet; Brendan, 25 Oct 2026): CP / TH&B trains ran over the CN Lake Shore line between Toronto and the junction
   just before Hamilton (trackage rights), then TH&B to Hamilton (Hunter St.). Route them on the CN Lake Shore, drawn CN, not over a CP line.
+- (25 Oct 2026) Brendan's trace "Ottawa east gap (CN Montreal - Ottawa)" (-75.596, 45.392 to -75.592, 45.390) in ontario_quebec_links.geojson: the CN Montreal -
+  Ottawa trains (on_cn_t075a) had detoured north round the gap into Union Station; now direct, 0.6 mi shorter. oncp004 changed only in segment colouring.
