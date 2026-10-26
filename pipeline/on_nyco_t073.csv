@@ -1,0 +1,29 @@
+# New York Central, Table 73 (Official Guide, April 25, 1948): Helena, N.Y. - Rooseveltown - Cornwall - Finch - Ottawa (N.Y.C. Station). Eastern time.
+# Transcribed by Brendan (25 Oct 2026). By 1948 the NYC used its own Ottawa terminal (the collection's "Ottawa Mann Avenue" station), not Union Station.
+# Finch printed twice (Ar / Lv): one row here; Finch is the NYC - CP crossing, one station shared with the CP. Helena - Rooseveltown printed 13 mi; on the map
+# Brendan's trace from the border to Helena (about 4.5 mi). f: flag stop.
+#train col=No61 num=61 dir=down days="ex Sun" kind=passenger to=Ottawa
+#train col=No62 num=62 dir=up days="ex Sun" kind=passenger from=Ottawa
+mile,station,principal,prov,tz,No61,No62
+0,"Helena, N.Y.",1,NY,E,lv 7.25a,ar 6.30p
+13,"Rooseveltown, N.Y.",0,NY,E,7.50a,6.16p
+15,Uscan,0,NY,E,f7.57a,f6.07p
+16,Cornwall,1,ON,E,8.17a,6.00p
+17,Cornwall Junction,0,ON,E,8.20a,5.54p
+24,Black River,0,ON,E,f8.31a,5.42p
+25,Harrison,0,ON,E,8.35a,5.39p
+27,Northfield,0,ON,E,8.41a,5.33p
+31,Newington,0,ON,E,8.47a,5.27p
+35,Finch,1,ON,E,ar 8.55a / lv 9.03a,ar 5.12p / lv 5.19p
+38,Berwick,0,ON,E,9.08a,5.08p
+41,Crysler,0,ON,E,9.15a,5.01p
+44,St. Albert,0,ON,E,9.21a,4.55p
+45,Cambridge,0,ON,E,f9.25a,f4.51p
+49,Embrun,0,ON,E,9.33a,4.45p
+52,Russell,0,ON,E,9.41a,4.38p
+56,Pana,0,ON,E,f9.48a,f4.31p
+59,Edwards,0,ON,E,9.56a,4.25p
+62,Piperville,0,ON,E,f10.04a,f4.19p
+65,Ramsayville,0,ON,E,10.12a,4.14p
+67,Hawthorne,0,ON,E,f10.16a,f4.10p
+72,Ottawa (N.Y.C. Station),1,ON,E,ar 10.30a,lv 4.00p

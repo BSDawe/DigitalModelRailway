@@ -1701,3 +1701,9 @@ Stations of different railways within 250 m (70 pairs; script: same check over v
   just before Hamilton (trackage rights), then TH&B to Hamilton (Hunter St.). Route them on the CN Lake Shore, drawn CN, not over a CP line.
 - (25 Oct 2026) Brendan's trace "Ottawa east gap (CN Montreal - Ottawa)" (-75.596, 45.392 to -75.592, 45.390) in ontario_quebec_links.geojson: the CN Montreal -
   Ottawa trains (on_cn_t075a) had detoured north round the gap into Union Station; now direct, 0.6 mi shorter. oncp004 changed only in segment colouring.
+- (25 Oct 2026) NYC Ottawa line: on_nyco_t073.csv (NYC Table 73, Official Guide April 25, 1948; TRANSCRIBED BY BRENDAN): Nos. 61 / 62 ex Sun, Helena, N.Y. -
+  Rooseveltown - Uscan - Cornwall - Finch - Embrun - Russell - Ottawa (N.Y.C. Station = the collection's "Ottawa Mann Avenue"; not Union Station by 1948).
+  New rail 'onnyco' (kind t, NYC grey) with its own graph 'nyco': the Ontario collection's NYC main line only (CN / CP track and NYC sidings caught the
+  Cornwall stations) plus Brendan's trace over the border to Helena (links file). Finch shares stop CP_FINCH with CP Table 50 (Brendan: one station at the
+  crossing). Hand points: Helena (trace end), Rooseveltown (on the trace, approximate), NYC Cornwall / Cornwall Jct. / Uscan moved onto the main line.
+  Helena - Rooseveltown printed 13 mi, the trace ~4.5 (forced): 62.8 mi traced vs 72 printed. NYC place_for now uses its own stations, CP only for Montreal.
