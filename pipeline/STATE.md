@@ -1731,3 +1731,11 @@ Stations of different railways within 250 m (70 pairs; script: same check over v
   and Huntsville Dock - Britannia - Bigwin Inn - Dorset steamers -> marine to-do. 42 (p: ex Sun and Mon, also Mon June 28 - Sept. 6) entered ex Sun.
 - Readings to check: 43 Trout Creek printed 5.39, read 5.59?; untimed flag stops of 633 / 634 (Port Bolster ... Moorelands, Hydro Glen) and Orillia Institute
   estimated by miles.
+
+## TO DO, Thursday evening 29 Oct 2026 (Brendan, 26 Oct 2026, 23:01)
+- RUN-THROUGH TRAINS: re-configure trains split across files to run through as one trip, e.g. CN 3 / 4 Toronto - Capreol (on_cn_t122a / t122) - Armstrong -
+  Winnipeg - Vancouver (on_cn_t075b, Manitoba / west files). Same for the other trains split by table (ONR 47 / 46 and 49 / 50 at North Bay, 54 -> 56 and
+  55 -> 53 at Scotia, CP pool trains, etc.). Needs a join step in the build (trips with the same railway and number meeting at a shared stop).
+- UNNUMBERED CONNECTING TRAINS: branch sections and connections printed in a parent train's column currently get the parent's number by default
+  (e.g. on_cn_t126m / d / p / c / g: No. 41, 44, 38 ... sections). Brendan is uncertain of this practice. Review: through-car sections vs separate connecting
+  trains; consider no number (or "connection to No. 41") where the table prints none.
