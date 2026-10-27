@@ -1739,3 +1739,5 @@ Stations of different railways within 250 m (70 pairs; script: same check over v
 - UNNUMBERED CONNECTING TRAINS: branch sections and connections printed in a parent train's column currently get the parent's number by default
   (e.g. on_cn_t126m / d / p / c / g: No. 41, 44, 38 ... sections). Brendan is uncertain of this practice. Review: through-car sections vs separate connecting
   trains; consider no number (or "connection to No. 41") where the table prints none.
+- (Brendan, 23:03) Much may settle itself as the branch tables come in: their own numbers will replace the main-table sections (then delete the section
+  files, e.g. on_cn_t126m / d / p / c / g, as duplicates). Wait for the branch tables before renumbering by hand.
