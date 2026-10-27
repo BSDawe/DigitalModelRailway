@@ -1,0 +1,10 @@
+# Canadian National, Table 126: Scotia - Joe Lake - Algonquin Park. Source: Official Guide, April 25, 1948, CN Tables 122 and 126 (Brendan, 26 Oct 2026; private scans/og1948_on/cn122a, cn122b, cn122_signs, cn126a-c). EASTERN TIME.
+# Miles as printed (from Toronto by Allandale). Stations between Scotia and Joe Lake not printed.
+#train col=No41G num=41 dir=down days="Mon,Fri" kind=passenger note="Algonquin Park section of No. 41, Monday and Friday: Scotia (departure estimated) to Algonquin Park 6.40 p.m.; Joe Lake stops on signal Mon and Fri."
+#train col=No55G num=55 dir=down days="Tue,Thu,Sat" kind=passenger note="Algonquin Park section of No. 55, Tuesday, Thursday and Saturday: Scotia (departure estimated) to Algonquin Park 5.50 p.m."
+#train col=No44G num=44 dir=up days="Tue,Sat" kind=passenger note="Algonquin Park section of No. 44, Tuesday and Saturday: Algonquin Park 9.20 a.m. to Scotia (arrival estimated) for the 1.04 p.m. to Toronto; Joe Lake stops on signal."
+#train col=No56G num=56 dir=up days="Mon,Wed,Fri" kind=passenger note="Algonquin Park section of No. 56, Monday, Wednesday and Friday: Algonquin Park 2.00 p.m. to Scotia (arrival estimated) for the 4.27 p.m. to Toronto."
+mile,station,principal,prov,tz,No41G,No55G,No44G,No56G
+161.2,Scotia,1,ON,E,~lv 3.10p,~lv 3.42p,~ar 11.25a,~ar 4.05p
+198.5,Joe Lake,0,ON,E,f6.07p,5.27p,f9.42a,2.19p
+206.2,Algonquin Park,1,ON,E,ar 6.40p,ar 5.50p,lv 9.20a,lv 2.00p

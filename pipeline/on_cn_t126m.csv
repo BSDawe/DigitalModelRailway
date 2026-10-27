@@ -1,0 +1,24 @@
+# Canadian National, Table 126: Toronto - Allandale - Collingwood - Meaford. Source: Official Guide, April 25, 1948, CN Tables 122 and 126 (Brendan, 26 Oct 2026; private scans/og1948_on/cn122a, cn122b, cn122_signs, cn126a-c). EASTERN TIME.
+# Miles as printed (from Toronto). Stations between Allandale and Collingwood not printed.
+# No. 148 (Sunday, Meaford 5.30 p.m.; will not run June 27 to September 5) not entered.
+#train col=No45 num=45 dir=down days="ex Sun" kind=passenger note="Daily except Sunday: Toronto 5.50 p.m. to Allandale 8.02, Collingwood 9.20 and Meaford 10.05 p.m.; the Midland section leaves Allandale 8.12 p.m. (on_cn_t126d.csv)."
+#train col=No42 num=42 dir=up days="ex Sun" kind=passenger note="Printed p: daily except Sunday and Monday; also Mondays June 28 to September 6 (entered as daily except Sunday). Meaford 6.00 a.m. by Collingwood and Allandale to Toronto 10.10 a.m.; the Midland section joins at Allandale (on_cn_t126d.csv)."
+#train col=No41M num=41 dir=down days="ex Sun" kind=passenger note="Section of No. 41: Allandale (departure not printed, estimated) to Collingwood 12.42 and Meaford 1.30 p.m."
+#train col=No44M num=44 dir=up days="ex Sun" kind=passenger note="Section of No. 44: Meaford 2.15 p.m., Collingwood 3.04 to Allandale (arrival not printed, estimated) for the 4.40 p.m. to Toronto."
+#train col=No38M num=38 dir=up days=Sun kind=passenger note="Section of No. 38, Sundays June 27 to September 5: Meaford 6.40 p.m., Collingwood 7.30 to Allandale (arrival estimated) for the 8.44 p.m. to Toronto."
+mile,station,principal,prov,tz,No45,No42,No41M,No44M,No38M
+0.0,Toronto (Union Station),1,ON,E,lv 5.50p,ar 10.10a,,,
+2.4,Parkdale,0,ON,E,5.59p,10.01a,,,
+5.2,St. Clair Avenue,0,ON,E,6.08p,9.52a,,,
+14.3,Concord,0,ON,E,6.26p,9.38a,,,
+18.3,Maple,0,ON,E,6.35p,9.31a,,,
+22.7,King,0,ON,E,6.45p,9.23a,,,
+30.0,Aurora,0,ON,E,7.00p,9.09a,,,
+34.1,Newmarket,1,ON,E,7.10p,9.00a,,,
+41.5,Bradford,0,ON,E,7.24p,8.45a,,,
+49.0,Gilford,0,ON,E,7.37p,8.32a,,,
+51.8,Lefroy,0,ON,E,7.43p,8.27a,,,
+57.5,Craigvale,0,ON,E,f7.53p,f8.17a,,,
+63.0,Allandale,1,ON,E,8.02p,8.07a,~lv 11.25a,~ar 4.30p,~ar 8.40p
+94.4,Collingwood,1,ON,E,9.20p,6.50a,12.42p,3.04p,7.30p
+115.2,Meaford,1,ON,E,ar 10.05p,lv 6.00a,ar 1.30p,lv 2.15p,lv 6.40p

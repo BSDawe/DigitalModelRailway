@@ -1,0 +1,7 @@
+# Canadian National, Table 126: Allandale - Camp Borden. Source: Official Guide, April 25, 1948, CN Tables 122 and 126 (Brendan, 26 Oct 2026; private scans/og1948_on/cn122a, cn122b, cn122_signs, cn126a-c). EASTERN TIME.
+# No miles printed for Camp Borden: 78.0 is an estimate (about 15 miles from Allandale).
+#train col=No41C num=41 dir=down days="ex Sun" kind=passenger note="Camp Borden section of No. 41: Allandale (departure estimated) to Camp Borden 12.10 p.m."
+#train col=No44C num=44 dir=up days="ex Sun" kind=passenger note="Camp Borden section of No. 44: Camp Borden 1.00 p.m. to Allandale (arrival estimated)."
+mile,station,principal,prov,tz,No41C,No44C
+63.0,Allandale,1,ON,E,~lv 11.25a,~ar 1.45p
+78.0,Camp Borden,1,ON,E,ar 12.10p,lv 1.00p

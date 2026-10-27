@@ -1711,3 +1711,23 @@ Stations of different railways within 250 m (70 pairs; script: same check over v
   to the border before Glenton, Que., missing from the collections. Table 24 (on_cp_t024) now runs on to Richford, Stevens Mills, Missisquoi (Vt.), Glenton and
   Highwater (Que.) and the end of CP track at the border before North Troy, Vt. (-72.4122, 45.0072; mile 92.7, times by mileage). The old border point south of
   Abercorn is gone.
+
+## Version 78 (26 October 2026): CN Tables 122 and 126 (Toronto - Parry Sound - Capreol, Toronto - Orillia - North Bay)
+- Scans (private repo scans/og1948_on/): cn122a, cn122b, cn122_signs, cn126a-c. Script: scratchpad on/t122.py (writes every file below, and rewrites on_onr_t001).
+- Two Toronto - Washago routes: by Beaverton (Table 122 miles, Washago 88.9) and by Allandale / Barrie / Orillia (Table 126 miles, Washago 98.8). One file per
+  route: on_cn_t122 (Beaverton - Parry Sound - Capreol: 37, 633, M215, 631 / 4, 634, M216, 632), on_cn_t122a (Allandale - Parry Sound - Capreol: 3 / 38; Table 122
+  miles + 9.9 north of Washago), on_cn_t126 (Allandale - North Bay: 41, 43 / 44, 54, 56), on_cn_t126b (Beaverton - North Bay: 55, 53 / 156; Table 126 miles - 9.9).
+  Branch sections: on_cn_t126m (Toronto - Allandale - Collingwood - Meaford: 45 / 42 in full; 41, 44, 38 sections), on_cn_t126d (Allandale - Orillia - Midland),
+  on_cn_t126p (Penetang), on_cn_t126c (Camp Borden; mile 78.0 estimated), on_cn_t126g (Scotia - Joe Lake - Algonquin Park). Junction times of sections are
+  not printed: estimated (~).
+- DUPLICATES: on_cn_t075t (3 / 4, ends only) DELETED: No. 3 now in full in on_cn_t122a, No. 4 in on_cn_t122. ONR 47 / 46 (on_onr_t001) gained their Table 126
+  stops by Allandale; ONR 49 / 50, The Northland, MOVED to on_onr_t001n (by Beaverton; ONR miles - 9.9); 49 now daily except Saturday (Table 126 sign). The
+  633 / 634 Hamilton sections (Allandale - Washago) are the same times as 41 / 44: not entered again (notes). 37's and 55's Allandale-block times are 43's.
+- ONR trains on the CN share the CN stop ids (on_lines ONR_ON_CN, post-pass in register; their places from the CN). Aliases: Severn = severn bridge,
+  Muskoka Wharf = gravenhurst wharf, Scotia = scotia junction, Penetang = penetanguishene. HAND (APPROXIMATE, Claude): CN Allandale (on the main line by the
+  Collingwood line junction), CN Camp Borden (end of the Grand Trunk spur from Angus) -> ask Brendan to confirm both.
+- Don (Queen St. East): CN stop shares CP_DON (one station). Not entered: Buffalo / Niagara Falls rows (connections; Brendan), Sudbury Jct. - Sudbury and Winnipeg rows (connections), No. 148 (will not run June 27 -
+  Sept. 5), Muskoka Wharf calls of No. 41 (June 14 - 24 only), Muskoka Lakes steamers (Muskoka Wharf - Beaumaris - Port Carling - Wigwassan - Royal Muskoka)
+  and Huntsville Dock - Britannia - Bigwin Inn - Dorset steamers -> marine to-do. 42 (p: ex Sun and Mon, also Mon June 28 - Sept. 6) entered ex Sun.
+- Readings to check: 43 Trout Creek printed 5.39, read 5.59?; untimed flag stops of 633 / 634 (Port Bolster ... Moorelands, Hydro Glen) and Orillia Institute
+  estimated by miles.

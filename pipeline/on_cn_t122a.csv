@@ -1,0 +1,55 @@
+# Canadian National, Tables 122 and 126: Toronto - Allandale - Orillia - Washago - Parry Sound - Capreol: the trains of Table 122 that run by Allandale. Source: Official Guide, April 25, 1948, CN Tables 122 and 126 (Brendan, 26 Oct 2026; private scans/og1948_on/cn122a, cn122b, cn122_signs, cn126a-c). EASTERN TIME.
+# Miles: Toronto - Washago as printed in Table 126 (98.8); Washago - Capreol as printed in Table 122 plus 9.9 (Table 122 measures by Beaverton, Washago 88.9).
+# Replaces on_cn_t075t.csv (Nos. 3 / 4 with only Toronto and Capreol): No. 3 is here, No. 4 (by Beaverton) in on_cn_t122.csv.
+#train col=No3 num=3 dir=down days=daily kind=passenger name="Continental Limited" to=Vancouver note="The Continental Limited, Toronto section: Toronto 11.00 p.m. by Allandale and Orillia to Capreol 7.55 a.m.; on to Armstrong (on_cn_t075b.csv), Winnipeg and Vancouver. Barrie, Orillia: stops only to take passengers for Washago and west. Ardbeg, Bolger, South Magnetawan, Hartley Bay, Coniston: conditional stops, entered as flag stops."
+#train col=No38 num=38 dir=up days=Sun kind=passenger note="Sundays June 27 to September 5 (and Mondays August 2 and September 6): Parry Sound 5.20 p.m. by Washago, Orillia and Allandale to Toronto 10.55 p.m. Sections from Meaford and Midland (on_cn_t126m.csv, on_cn_t126d.csv)."
+mile,station,principal,prov,tz,No3,No38
+0.0,Toronto (Union Station),1,ON,E,lv 11.00p,ar 10.55p
+2.4,Parkdale,0,ON,E,11.11p,10.45p
+5.2,St. Clair Avenue,0,ON,E,11.21p,10.35p
+14.3,Concord,0,ON,E,,
+18.3,Maple,0,ON,E,,f10.12p
+22.7,King,0,ON,E,,f10.02p
+30.0,Aurora,0,ON,E,,9.48p
+34.1,Newmarket,1,ON,E,,9.40p
+41.5,Bradford,0,ON,E,,9.28p
+49.0,Gilford,0,ON,E,,f9.15p
+51.8,Lefroy,0,ON,E,,9.10p
+57.5,Craigvale,0,ON,E,,
+63.0,Allandale,1,ON,E,ar 12.48a / lv 12.55a,ar 8.39p / lv 8.44p
+64.1,Barrie,1,ON,E,1.00a,8.36p
+69.7,Shanty Bay,0,ON,E,,f8.26p
+74.2,Oro,0,ON,E,,8.19p
+77.9,Hawkestone,0,ON,E,,8.13p
+84.2,Orillia Institute,0,ON,E,,
+86.3,Orillia,1,ON,E,1.32a,8.00p
+88.5,Atherley,0,ON,E,,
+93.7,Longford,0,ON,E,,7.43p
+98.8,Washago,1,ON,E,ar 1.52a / lv 1.57a,ar 7.31p / lv 7.32p
+103.8,Sparrow Lake,0,ON,E,,7.17p
+110.2,Hydro Glen,0,ON,E,,
+121.9,Torrance,0,ON,E,,6.44p
+123.2,Bala Park,1,ON,E,,6.40p
+128.1,Medora,0,ON,E,,f6.30p
+135.2,Footes Bay,0,ON,E,,6.16p
+139.7,Lake Joseph,1,ON,E,,6.06p
+157.0,South Parry,1,ON,E,ar 3.37a / lv 3.47a,5.29p
+159.9,Parry Sound,1,ON,E,3.58a,lv 5.20p
+167.9,Waubamik,0,ON,E,,
+182.0,Ardbeg,0,ON,E,f4.32a,
+185.7,Bolger,0,ON,E,f4.38a,
+191.2,Burton,0,ON,E,,
+193.5,South Magnetawan,0,ON,E,f4.50a,
+196.8,North Magnetawan,0,ON,E,,
+208.7,Mowat,0,ON,E,,
+223.8,Key Junction,0,ON,E,f5.36a,
+225.5,Pickerel River,0,ON,E,f5.39a,
+228.0,Hartley Bay,0,ON,E,f5.43a,
+231.9,Bayswater,0,ON,E,5.57a,
+246.0,Burwash,0,ON,E,6.22a,
+251.6,Waterfall,0,ON,E,,
+258.6,St. Cloud,0,ON,E,,
+267.0,Coniston,0,ON,E,f6.59a,
+272.0,Sudbury Junction,1,ON,E,ar 7.10a / lv 7.25a,
+281.6,Hanmer,0,ON,E,,
+286.0,Capreol,1,ON,E,ar 7.55a,

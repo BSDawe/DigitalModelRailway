@@ -1,0 +1,40 @@
+# Ontario Northland Railway: The Northland, Nos. 49 / 50, Toronto - Beaverton - North Bay - Timmins (Brendan, 26 Oct 2026). Toronto - North Bay over the CN by
+# Beaverton (Official Guide, April 25, 1948, CN Tables 122 and 126: Table 122 miles to Washago, then Table 126 miles minus 9.9); North Bay - Timmins from the
+# ONR table of November 16, 1947 (on_onr_t001.csv, where they were until now), its miles minus 9.9. No. 49 leaves Toronto daily except Saturday (Table 126 sign);
+# No. 50 leaves Timmins daily except Saturday. Cochrane sections Nos. 149 / 150: on_onr_t001c.csv. EASTERN TIME.
+#train col=No49 num=49 dir=down days="Sun,Mon,Tue,Wed,Thu,Fri" kind=passenger name="The Northland" note="The Northland. Toronto 6.05 p.m. daily except Saturday (over the CN by Beaverton to North Bay) to Timmins 9.40 a.m.; Cochrane section No. 149. Connections to Rouyn and Noranda (9.13 / 9.20 a.m.) not entered."
+#train col=No50 num=50 dir=up days="Sun,Mon,Tue,Wed,Thu,Fri" kind=passenger name="The Northland" note="The Northland. Timmins 5.30 p.m. daily except Saturday to North Bay 1.55 a.m. and Toronto 8.10 a.m. (CN by Beaverton); Cochrane section No. 150 joins at Porquis."
+mile,station,principal,prov,tz,No49,No50
+0.0,Toronto (Union Station),1,ON,E,lv 6.05p,ar 8.10a
+64.2,Beaverton,1,ON,E,f8.00p,f6.22a
+88.9,Washago,1,ON,E,8.42p,5.41a
+102.3,Gravenhurst,1,ON,E,ar 9.07p / lv 9.14p,ar 5.11a / lv 5.16a
+112.2,Bracebridge,1,ON,E,9.31p,4.53a
+136.3,Huntsville,1,ON,E,10.12p,4.18a
+218.1,North Bay (C.N.),1,ON,E,ar 12.35a / lv 1.05a,ar 1.55a / lv 2.10a
+291.2,Temagami,1,ON,E,3.18a,11.43p
+313.5,Latchford,0,ON,E,f3.58a,f10.59p
+322.2,Cobalt,1,ON,E,4.12a,10.40p
+326.8,Haileybury,0,ON,E,4.26a,10.26p
+332.0,New Liskeard,1,ON,E,4.40a,10.14p
+348.0,Earlton,1,ON,E,,9.48p
+357.9,Englehart,1,ON,E,ar 5.25a / lv 5.40a,ar 9.15p / lv 9.30p
+372.3,Boston Creek,0,ON,E,f6.03a,
+383.9,Swastika,1,ON,E,ar 6.24a / lv 6.40a,ar 8.20p / lv 8.35p
+387.4,Kenogami Lake,0,ON,E,f6.46a,
+395.2,Sesekinika,0,ON,E,f6.56a,
+402.1,Bourkes,0,ON,E,f7.08a,f7.55p
+407.5,Wavell,0,ON,E,f7.17a,f7.48p
+414.1,Ramore,0,ON,E,7.27a,7.38p
+424.3,Matheson,0,ON,E,7.44a,7.22p
+434.2,Val Gagne,0,ON,E,7.58a,f7.07p
+437.2,Monteith,0,ON,E,8.05a,7.02p
+441.1,Kelso,0,ON,E,f8.12a,
+443.8,Porquis,1,ON,E,ar 8.17a / lv 8.30a,ar 6.40p / lv 6.50p
+450.3,McIntosh Springs,0,ON,E,f8.42a,f6.25p
+453.8,Connaught,0,ON,E,8.49a,6.18p
+460.8,Keyson,0,ON,E,f9.01a,
+467.8,Porcupine,0,ON,E,f9.14a,f5.50p
+470.4,South Porcupine,0,ON,E,9.20a,5.44p
+475.4,Schumacher,0,ON,E,9.35a,5.34p
+476.9,Timmins,1,ON,E,ar 9.40a,lv 5.30p

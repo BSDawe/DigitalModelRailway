@@ -1,0 +1,61 @@
+# Canadian National, Table 122: Toronto - Beaverton - Washago - Parry Sound - Sudbury Junction - Capreol (the Canadian Northern line). Source: Official Guide, April 25, 1948, CN Tables 122 and 126 (Brendan, 26 Oct 2026; private scans/og1948_on/cn122a, cn122b, cn122_signs, cn126a-c). EASTERN TIME.
+# Miles as printed. Leaside (no stops) left out. The Allandale route trains of the table (No. 3, No. 38) are in on_cn_t122a.csv; Nos. 55 / 53 and 156 (to and from
+# North Bay) are in on_cn_t126b.csv; Nos. 49 / 50 (The Northland) in on_onr_t001n.csv. The Sudbury Junction - Sudbury rows and the Winnipeg rows are connections.
+# Conditional signs n (stops on signal Tue and Sat), x (Mon and Fri), z, v entered as flag stops; untimed flag stops with an estimated time (~).
+#train col=No37 num=37 dir=down days=Sat kind=passenger note="Saturdays, June 26 to September 4: Toronto 12.15 p.m. to Parry Sound 5.00 p.m. by Beaverton. Connects at Allandale with No. 43 (Table 126)."
+#train col=No633 num=633 dir=down days="Mon,Wed,Fri" kind=motor note="Motor train, Monday, Wednesday and Friday: Toronto 9.40 a.m. to Parry Sound 2.55 p.m. Port Bolster, Maple Beach, Cedarhurst, Moorelands and Hydro Glen: stops on signal, no time printed (estimated). The Hamilton section (Hamilton 7.15 a.m., Georgetown 8.40, Allandale 11.35, Barrie 11.38, Orillia 12.22, Washago 12.48 p.m.) runs with No. 41 (Table 126) and is not entered again."
+#train col=M215 num=215 dir=down days="Tue,Sat" kind=mixed note="Mixed, Tuesday and Saturday: South Parry 9.15 a.m. to Capreol 4.20 p.m."
+#train col=No631 num=631 dir=down days="Mon,Wed,Fri" kind=passenger note="Monday, Wednesday and Friday, June 26 to September 4: South Parry 3.10 p.m. to Sudbury Junction 6.45 p.m. and Sudbury 7.05 p.m. (the Sudbury Junction - Sudbury run is not entered)." to=Sudbury
+#train col=No4 num=4 dir=up days=daily kind=passenger name="Continental Limited" from=Vancouver note="The Continental Limited, Toronto section: Capreol 10.40 p.m. to Toronto 7.00 a.m. by Parry Sound and Beaverton. Coniston, Hartley Bay, South Magnetawan, Bolger, Ardbeg: conditional stops (z, x, n), entered as flag stops. Taxi transfer arrangements from Washago to Orillia for passengers off No. 4."
+#train col=No634 num=634 dir=up days="Tue,Thu,Sat" kind=motor note="Motor train, Tuesday, Thursday and Saturday: Parry Sound 12.05 p.m. to Toronto 5.05 p.m. Untimed flag stops estimated. The Hamilton section (Washago 3.06, Orillia 3.34, Barrie 4.20, Allandale 4.24, Georgetown 6.33, Hamilton 7.55 p.m.) runs with No. 44 (Table 126) and is not entered again."
+#train col=M216 num=216 dir=up days="Mon,Fri" kind=mixed note="Mixed, Monday and Friday: Capreol 8.30 a.m. to South Parry 3.35 p.m."
+#train col=No632 num=632 dir=up days="Tue,Thu,Sat" kind=passenger note="Tuesday, Thursday and Saturday, June 26 to September 4: Sudbury 8.00 a.m. (not entered), Sudbury Junction 8.20 a.m. to South Parry 11.50 a.m." from=Sudbury
+mile,station,principal,prov,tz,No37,No633,M215,No631,No4,No634,M216,No632
+0.0,Toronto (Union Station),1,ON,E,lv 12.15p,lv 9.40a,,,ar 7.00a,ar 5.05p,,
+2.0,Don,0,ON,E,12.23p,9.48a,,,,4.58p,,
+11.2,Oriole,0,ON,E,,f10.06a,,,,f4.38p,,
+21.2,Richmond Hill,0,ON,E,f12.58p,10.25a,,,,4.21p,,
+25.9,Gormley,0,ON,E,f1.05p,f10.34a,,,,f4.12p,,
+31.0,Vandorf,0,ON,E,,f10.44a,,,,f4.02p,,
+35.5,Pine Orchard,0,ON,E,,f10.53a,,,,f3.53p,,
+40.9,Mount Albert,0,ON,E,f1.28p,11.04a,,,,3.42p,,
+45.2,Zephyr,0,ON,E,f1.34p,f11.13a,,,,f3.33p,,
+49.2,Cedar Brae,0,ON,E,f1.41p,f11.21a,,,,f3.23p,,
+55.5,Pefferlaw,0,ON,E,1.50p,11.32a,,,,3.14p,,
+57.9,Port Bolster,0,ON,E,,~f11.38a,,,,~f3.10p,,
+59.9,Maple Beach,0,ON,E,,~f11.43a,,,,~f3.06p,,
+61.9,Cedarhurst,0,ON,E,,~f11.49a,,,,~f3.02p,,
+62.3,Moorelands,0,ON,E,,~f11.50a,,,,~f3.01p,,
+64.2,Beaverton,1,ON,E,2.10p,11.55a,,,f5.20a,2.57p,,
+68.9,Gamebridge East,0,ON,E,f2.19p,f12.04p,,,,f2.49p,,
+72.4,Brechin East,0,ON,E,f2.25p,f12.10p,,,,f2.42p,,
+77.5,Udney,0,ON,E,f2.34p,f12.18p,,,,f2.34p,,
+81.4,Rathburn,0,ON,E,f2.43p,f12.25p,,,,f2.26p,,
+88.9,Washago,1,ON,E,ar 3.03p / lv 3.08p,ar 12.42p / lv 12.55p,,,4.40a,2.13p,,
+93.9,Sparrow Lake,0,ON,E,3.18p,1.05p,,,,2.01p,,
+100.3,Hydro Glen,0,ON,E,,~f1.16p,,,,~f1.50p,,
+112.0,Torrance,0,ON,E,3.47p,1.35p,,,,1.30p,,
+113.3,Bala Park,1,ON,E,3.51p,f1.39p,,,,f1.25p,,
+118.2,Medora,0,ON,E,f3.59p,f1.47p,,,,f1.14p,,
+125.3,Footes Bay,0,ON,E,4.10p,2.00p,,,,1.00p,,
+129.8,Lake Joseph,1,ON,E,4.19p,f2.09p,,,,f12.51p,,
+147.1,South Parry,1,ON,E,4.52p,2.46p,lv 9.15a,lv 3.10p,ar 2.40a / lv 2.50a,12.12p,ar 3.35p,ar 11.50a
+150.0,Parry Sound,1,ON,E,ar 5.00p,ar 2.55p,10.00a,3.20p,2.29a,lv 12.05p,3.25p,11.40a
+158.0,Waubamik,0,ON,E,,,10.22a,3.35p,,,3.10p,11.22a
+172.1,Ardbeg,0,ON,E,,,10.55a,4.00p,f1.49a,,2.30p,10.55a
+175.8,Bolger,0,ON,E,,,f11.03a,f4.06p,f1.43a,,f2.05p,f10.48a
+181.3,Burton,0,ON,E,,,f11.18a,f4.16p,,,f1.45p,f10.37a
+183.6,South Magnetawan,0,ON,E,,,f11.25a,f4.21p,f1.30a,,f1.35p,f10.32a
+186.9,North Magnetawan,0,ON,E,,,f11.40a,f4.27p,,,f1.25p,f10.26a
+198.8,Mowat,0,ON,E,,,12.10p,f4.48p,,,12.58p,f10.05a
+213.9,Key Junction,0,ON,E,,,1.05p,5.13p,f12.41a,,12.15p,9.38a
+215.6,Pickerel River,0,ON,E,,,f1.15p,5.19p,f12.37a,,f11.50a,9.35a
+218.1,Hartley Bay,0,ON,E,,,f1.25p,f5.24p,f12.31a,,f11.35a,f9.30a
+222.0,Bayswater,0,ON,E,,,1.50p,5.30p,12.23a,,11.25a,f9.24a
+236.1,Burwash,0,ON,E,,,2.20p,5.54p,11.55p,,10.35a,9.02a
+241.7,Waterfall,0,ON,E,,,f2.35p,f6.05p,,,f10.05a,f8.52a
+248.7,St. Cloud,0,ON,E,,,f2.50p,f6.20p,,,f9.45a,f8.40a
+257.1,Coniston,0,ON,E,,,3.15p,6.34p,f11.20p,,9.30a,8.28a
+262.1,Sudbury Junction,1,ON,E,,,3.40p,ar 6.45p,ar 11.00p / lv 11.10p,,9.10a,lv 8.20a
+271.7,Hanmer,0,ON,E,,,4.05p,,,,8.40a,
+276.1,Capreol,1,ON,E,,,ar 4.20p,,lv 10.40p,,lv 8.30a,

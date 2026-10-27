@@ -1,0 +1,44 @@
+# Canadian National, Tables 122 and 126: Toronto - Beaverton - Washago - Muskoka Wharf - Huntsville - North Bay: the Table 126 trains that run by Beaverton. Source: Official Guide, April 25, 1948, CN Tables 122 and 126 (Brendan, 26 Oct 2026; private scans/og1948_on/cn122a, cn122b, cn122_signs, cn126a-c). EASTERN TIME.
+# Miles: Toronto - Washago as printed in Table 122 (88.9); Washago - North Bay as printed in Table 126 minus 9.9 (Table 126 measures by Allandale, Washago 98.8).
+#train col=No55 num=55 dir=down days="ex Sun" kind=passenger note="Printed with No. 53 as 55-53. Daily except Sunday, June 25 to September 4: Toronto 11.15 a.m. by Beaverton and Muskoka Wharf to Scotia 3.37 p.m.; on to North Bay as No. 53 (Mon Wed Fri) and to Algonquin Park (Tue Thu Sat)."
+#train col=No53 num=53 dir=down days="Mon,Wed,Fri" kind=passenger note="Monday, Wednesday and Friday, June 25 to September 4: Scotia 3.39 p.m. (from Toronto as No. 55) to North Bay 5.50 p.m."
+#train col=No156 num=156 dir=up days=Sun kind=passenger note="Sundays June 27 to September 5 (and Mondays August 2 and September 6): North Bay 3.15 p.m. by Muskoka Wharf and Beaverton to Toronto 10.20 p.m."
+mile,station,principal,prov,tz,No55,No53,No156
+0.0,Toronto (Union Station),1,ON,E,lv 11.15a,,ar 10.20p
+2.0,Don,0,ON,E,,,10.13p
+11.2,Oriole,0,ON,E,,,
+21.2,Richmond Hill,0,ON,E,,,f9.38p
+25.9,Gormley,0,ON,E,,,f9.30p
+31.0,Vandorf,0,ON,E,,,
+35.5,Pine Orchard,0,ON,E,,,
+40.9,Mount Albert,0,ON,E,,,f9.03p
+45.2,Zephyr,0,ON,E,,,f8.55p
+49.2,Cedar Brae,0,ON,E,,,f8.45p
+55.5,Pefferlaw,0,ON,E,,,8.37p
+57.9,Port Bolster,0,ON,E,,,
+59.9,Maple Beach,0,ON,E,,,
+61.9,Cedarhurst,0,ON,E,,,
+62.3,Moorelands,0,ON,E,,,
+64.2,Beaverton,1,ON,E,f12.53p,,8.16p
+68.9,Gamebridge East,0,ON,E,,,f8.08p
+72.4,Brechin East,0,ON,E,,,f8.01p
+77.5,Udney,0,ON,E,,,f7.52p
+81.4,Rathburn,0,ON,E,,,f7.45p
+88.9,Washago,1,ON,E,1.30p,,7.32p
+90.5,Severn,0,ON,E,,,f7.29p
+102.8,Muskoka Wharf,0,ON,E,ar 1.52p / lv 1.57p,,ar 7.03p / lv 7.07p
+102.3,Gravenhurst,1,ON,E,ar 2.05p / lv 2.15p,,ar 6.50p / lv 6.55p
+112.2,Bracebridge,1,ON,E,2.30p,,6.32p
+125.5,Utterson,0,ON,E,f2.49p,,6.10p
+136.3,Huntsville,1,ON,E,3.10p,,5.51p
+145.7,Novar,0,ON,E,f3.25p,,5.35p
+151.3,Scotia,1,ON,E,ar 3.37p,lv 3.39p,5.25p
+153.1,Emsdale,0,ON,E,,f3.44p,5.19p
+157.1,Katrine,0,ON,E,,f3.51p,f5.11p
+161.5,Burk's Falls,0,ON,E,,4.00p,5.02p
+173.3,Sundridge,0,ON,E,,4.19p,4.40p
+178.9,South River,0,ON,E,,4.31p,4.30p
+190.3,Trout Creek,0,ON,E,,4.55p,4.05p
+197.9,Powassan,0,ON,E,,5.09p,3.52p
+209.8,Callander,0,ON,E,,f5.28p,3.32p
+218.1,North Bay,1,ON,E,,ar 5.50p,lv 3.15p

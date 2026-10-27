@@ -179,6 +179,8 @@ HAND = {('cp', 'toronto'): _TU, ('cn', 'toronto'): _TU, ('onr', 'toronto'): _TU,
         ('cp', 'brockville'): (-75.692842, 44.591217, 'Brockville Union Station (CN and CP; Brendan, 25 Oct 2026): CP trains run on from the end of the CP line down the CN track'),
         ('cn', 'brockville'): (-75.692842, 44.591217, 'Brockville Union Station (CN and CP; Brendan, 25 Oct 2026)'),
         ('cp', 'leaside'): (-79.3578985, 43.7028199, 'CP Leaside, the collection\'s point (Brendan, 25 Oct 2026: it had been placed by mileage on the North Toronto line)'),
+        ('cn', 'allandale'): (-79.689458, 44.3767402, 'CN Allandale (Barrie), APPROXIMATE: Claude, on the CN main line by the junction with the Collingwood line (no point in the collection)'),
+        ('cn', 'camp borden'): (-79.8984, 44.2678, 'CN Camp Borden, APPROXIMATE: Claude, the end of the Grand Trunk spur from Angus (no point in the collection)'),
         ('cp', 'don'): (-79.3544042, 43.6576529, 'CP Don station, the collection\'s point, on the Leaside - Union connector'),
         ('nyc', 'cornwall'): (-74.7509129, 45.0151306, 'NYC Cornwall, on the NYC main line beside the collection\'s point (which snaps to a siding or other track)'),
         ('nyc', 'cornwall junction'): (-74.7598314, 45.025622, 'NYC Cornwall Junction, on the NYC main line beside the collection\'s point (which snaps to a siding or other track)'),
@@ -218,7 +220,7 @@ def track_tree(own):
         pts = [fwd(*p[:2]) for o in pieces() if o['kind'] == 'LineString' and owner(o['path']) == own for p in o['coords'][::3]]
         _TRK[own] = cKDTree(np.array(pts)) if pts else None
     return _TRK[own]
-ALIAS = {('nyc', 'harrison'): 'harrisons corners', ('nyc', 'helena, n y'): 'helena', ('nyc', 'rooseveltown, n y'): 'rooseveltown', ('nyc', 'ottawa'): 'ottawa mann avenue',('aj', 'isle maligne'): 'ile maligne', ('aj', 'st joseph dalma'): 'st joseph de alma', ('rs', 'laterriere junction'): 'laterriere junction',('cn', 'hervey'): 'hervey junction', ('cn', 'coteau'): 'coteau junction', ('onr', 'porquis'): 'porquis junction',
+ALIAS = {('nyc', 'harrison'): 'harrisons corners', ('nyc', 'helena, n y'): 'helena', ('nyc', 'rooseveltown, n y'): 'rooseveltown', ('nyc', 'ottawa'): 'ottawa mann avenue',('aj', 'isle maligne'): 'ile maligne', ('aj', 'st joseph dalma'): 'st joseph de alma', ('rs', 'laterriere junction'): 'laterriere junction',('cn', 'hervey'): 'hervey junction', ('cn', 'severn'): 'severn bridge', ('cn', 'muskoka wharf'): 'gravenhurst wharf', ('cn', 'scotia'): 'scotia junction', ('cn', 'penetang'): 'penetanguishene', ('cn', 'coteau'): 'coteau junction', ('onr', 'porquis'): 'porquis junction',
          ('cp', 'port mcnicoll'): 'port mcnicoll main', ('onr', 'timmins'): 'timmons', ('onr', 'beaver lake'): 'bear lake', ('cn', 'ottawa'): 'ottawa union', ('cp', 'ottawa'): 'ottawa union',
          ('cp', 'clearys'): 'cleary', ('cp', 'tourvilles'): 'tourville', ('cp', 'sutton'): 'sutton flats',
          ('cp', 'st guillaume'): 'st guillaume junction',
@@ -236,6 +238,7 @@ def place_for(rail):
         if own == 'dh' or (own == 'nyc' and c in ('montreal', 'westmount', 'montreal west')): return place_for('oncp')(name)
         if own == 'cpcn': return place_for('oncp')(name) if c.startswith('montreal') or c in ('westmount', 'toronto', 'toronto union') else (place_for('oncn')(name) or place_for('oncp')(name))          # the stations in Montreal are the CP's
         if own in ('tem', 'cgt') and c in ('riviere du loup', 'mont joli'): return place_for('oncn')(name)   # the CN stations
+        if own == 'onr' and name in ONR_ON_CN: return place_for('oncn')(name)   # Toronto - North Bay: the ONR trains call at the CN stations
         m = _map().get((own, c))
         if m: return (m[0], m[1], 'map', 300)
         for key in ((own, c), (None, c)):
@@ -258,9 +261,12 @@ SHARED = {('onr', 'toronto union'): 'TORONTO_UNION', ('oncn', 'toronto union'): 
           ('ontem', 'riviere du loup'): 'CN_RIVIERE_DU_LOUP', ('oncgt', 'mont joli'): 'CN_MONT_JOLI',   # at the CN stations (the CN trains there are not built yet)
           ('oncp', 'brockville'): 'BROCKVILLE_UNION', ('oncpcn', 'brockville'): 'BROCKVILLE_UNION', ('oncn', 'brockville'): 'BROCKVILLE_UNION',   # Brockville Union Station (Brendan)
           ('oncp', 'levis'): 'LEVIS', ('oncn', 'levis'): 'LEVIS',          # one Levis station for CN and CP (Quebec Central; Brendan, 25 Oct 2026)                          # one Palais Station (CP Table 33 and CN Table 38)                             # one station at Cochrane (CN Table 38 and the ONR)
+          ('oncn', 'don'): 'CP_DON',                                       # Don (Queen St. East): one station, CN Table 122 and CP Table 50
           ('onnyco', 'finch'): 'CP_FINCH',                                 # Finch: one station at the NYC - CP crossing (Brendan, 25 Oct 2026)
           ('oncpcn', 'toronto union'): 'TORONTO_UNION', ('oncpcn', 'toronto'): 'TORONTO_UNION',
           **{(r, c): g for r in ('onnyc', 'ondh', 'oncpcn') for c, g in (('montreal', 'CP_MONTREAL_WINDSOR'), ('westmount', 'CP_WESTMOUNT'), ('montreal west', 'CP_MONTREAL_WEST'))}}   # the NYC and D&H used the CP stations
+ONR_ON_CN = {'Parkdale', 'St. Clair Avenue', 'Aurora', 'Newmarket', 'Allandale', 'Barrie', 'Orillia', 'Atherley', 'Longford', 'Hawkestone', 'Washago', 'Gravenhurst',
+             'Bracebridge', 'Utterson', 'Huntsville', 'Scotia', 'Emsdale', "Burk's Falls", 'Sundridge', 'South River', 'Trout Creek', 'Powassan', 'Callander', 'Beaverton'}   # CN Table 126 stations of ONR 46 / 47 / 49 / 50
 def register(files):
     import ab_table
     for rail, fn in files:
@@ -271,3 +277,5 @@ def register(files):
             m = _map().get((OWN[rail], c))
             full = canon(re.sub(r'[()]', ' ', n))                         # the whole name: Ottawa (Bank Street) is not Ottawa (Union Station)
             ab_lines.EXT_GID[(rail, n)] = m[2] if m else ('CN' if rail == 'oncpcn' else ab_lines.RAILS[rail]['pfx']) + '_' + re.sub(r'\W+', '_', full.upper()).strip('_')
+    for (rail, n) in list(ab_lines.EXT_GID):
+        if rail == 'onr' and n in ONR_ON_CN and ('oncn', n) in ab_lines.EXT_GID: ab_lines.EXT_GID[(rail, n)] = ab_lines.EXT_GID[('oncn', n)]   # one stop at each CN station

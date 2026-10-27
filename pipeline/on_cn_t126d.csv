@@ -1,0 +1,17 @@
+# Canadian National, Table 126: Allandale - Barrie - Orillia - Midland. Source: Official Guide, April 25, 1948, CN Tables 122 and 126 (Brendan, 26 Oct 2026; private scans/og1948_on/cn122a, cn122b, cn122_signs, cn126a-c). EASTERN TIME.
+# Miles as printed (from Toronto by Allandale). Stations between Orillia and Midland not printed.
+# Midland Dock (119.0) has no calls in this timetable. No. 148 (Midland 5.50 p.m. Sundays; will not run June 27 to September 5) not entered.
+#train col=No45D num=45 dir=down days="ex Sun" kind=passenger note="Midland section of No. 45: Allandale 8.12 p.m. to Midland 10.05 p.m."
+#train col=No41D num=41 dir=down days="ex Sun" kind=passenger note="Midland section of No. 41: Orillia (departure not printed, estimated) to Midland 1.30 p.m."
+#train col=No42D num=42 dir=up days="ex Sun" kind=passenger note="Midland section of No. 42 (printed p, see on_cn_t126m.csv): Midland 6.15 a.m. to Allandale 7.59 a.m., there joining the train from Meaford."
+#train col=No44D num=44 dir=up days="ex Sun" kind=passenger note="Midland section of No. 44: Midland 2.30 p.m. to Orillia (arrival not printed, estimated)."
+#train col=No38D num=38 dir=up days=Sun kind=passenger note="Midland section of No. 38, Sundays June 27 to September 5: Midland 6.45 p.m. to Orillia (arrival estimated)."
+mile,station,principal,prov,tz,No45D,No41D,No42D,No44D,No38D
+63.0,Allandale,1,ON,E,lv 8.12p,,ar 7.59a,,
+64.1,Barrie,1,ON,E,8.17p,,7.56a,,
+69.7,Shanty Bay,0,ON,E,8.28p,,7.47a,,
+74.2,Oro,0,ON,E,8.37p,,7.40a,,
+77.9,Hawkestone,0,ON,E,8.43p,,7.34a,,
+84.2,Orillia Institute,0,ON,E,~f8.56p,,~f7.24a,,
+86.3,Orillia,1,ON,E,9.00p,~lv 12.22p,7.20a,~ar 3.34p,~ar 7.55p
+118.9,Midland,1,ON,E,ar 10.05p,ar 1.30p,lv 6.15a,lv 2.30p,lv 6.45p

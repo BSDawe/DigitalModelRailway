@@ -1,0 +1,50 @@
+# Canadian National, Table 126: Toronto - Allandale - Orillia - Washago - Muskoka Wharf - Huntsville - North Bay. Source: Official Guide, April 25, 1948, CN Tables 122 and 126 (Brendan, 26 Oct 2026; private scans/og1948_on/cn122a, cn122b, cn122_signs, cn126a-c). EASTERN TIME.
+# Miles as printed. Muskoka Wharf (112.7) is on the spur to the wharf beside Gravenhurst (112.2): the trains call there and back out.
+# Other trains of the table: No. 3 (on_cn_t122a.csv); Nos. 47 / 46 (ONR, on_onr_t001.csv); Nos. 49 / 50, The Northland, and Nos. 55 / 53, 156 by Beaverton
+# (on_onr_t001n.csv, on_cn_t126b.csv); No. 45 / 42 and the branch sections (on_cn_t126m / d / p / c / g). No. 148 (will not run June 27 to September 5) and
+# the Buffalo and Niagara Falls rows (connections) are not entered; nor the Muskoka Lakes and Huntsville - Dorset steamers (marine, to do).
+#train col=No41 num=41 dir=down days="ex Sun" kind=passenger note="Daily except Sunday: Toronto 9.10 a.m. to North Bay 5.15 p.m. Sections from Allandale to Collingwood and Meaford, Penetang and Camp Borden, from Orillia to Midland, from Scotia to Algonquin Park (Mon and Fri), and the Parry Sound cars (No. 633 from Washago, Mon Wed Fri). Muskoka Wharf: June 14 to 24 only (not entered). Carries the Hamilton - Parry Sound cars from Allandale."
+#train col=No43 num=43 dir=down days=Sat kind=passenger note="Saturdays, June 26 to September 4: Toronto 12.00 noon to North Bay 6.50 p.m. Trout Creek is printed 5.39 (between South River 5.35 and Powassan 6.12): read as 5.59. Connects at Washago with No. 37 for Parry Sound."
+#train col=No44 num=44 dir=up days="ex Sun" kind=passenger note="Daily except Sunday: North Bay 11.00 a.m. to Toronto 6.55 p.m. Sections from Algonquin Park (Tue and Sat), Meaford and Collingwood, Camp Borden, Midland, and the Parry Sound cars (No. 634, Tue Thu Sat) at Washago; carries the Hamilton cars from Allandale."
+#train col=No54 num=54 dir=up days="Tue,Thu,Sat" kind=passenger note="Printed with No. 56 as 54-56. Tuesday, Thursday and Saturday: North Bay 2.25 p.m. to Scotia 4.25 p.m., there continuing as No. 56 to Toronto."
+#train col=No56 num=56 dir=up days="ex Sun" kind=passenger note="Daily except Sunday, June 26 to September: Scotia 4.27 p.m. to Toronto 9.10 p.m. by Muskoka Wharf; from North Bay as No. 54 (Tue Thu Sat), with the Algonquin Park section (Mon Wed Fri) and the Penetang section at Allandale."
+mile,station,principal,prov,tz,No41,No43,No44,No54,No56
+0.0,Toronto (Union Station),1,ON,E,lv 9.10a,lv 12.00p,ar 6.55p,,ar 9.10p
+2.4,Parkdale,0,ON,E,9.20a,12.09p,6.45p,,9.01p
+5.2,St. Clair Avenue,0,ON,E,9.30a,12.18p,6.35p,,8.52p
+14.3,Concord,0,ON,E,,,6.16p,,
+18.3,Maple,0,ON,E,9.53a,,6.07p,,
+22.7,King,0,ON,E,10.04a,,5.58p,,
+30.0,Aurora,0,ON,E,10.19a,,5.43p,,
+34.1,Newmarket,1,ON,E,10.28a,,5.34p,,
+41.5,Bradford,0,ON,E,10.40a,,5.19p,,
+49.0,Gilford,0,ON,E,10.51a,,5.06p,,
+51.8,Lefroy,0,ON,E,10.58a,,5.01p,,
+57.5,Craigvale,0,ON,E,11.07a,,4.51p,,
+63.0,Allandale,1,ON,E,ar 11.20a / lv 11.35a,ar 1.55p / lv 2.00p,ar 4.24p / lv 4.40p,,ar 7.34p / lv 7.39p
+64.1,Barrie,1,ON,E,11.38a,2.02p,4.20p,,7.32p
+69.7,Shanty Bay,0,ON,E,11.51a,,4.09p,,
+74.2,Oro,0,ON,E,11.58a,,4.02p,,
+77.9,Hawkestone,0,ON,E,12.05p,,3.55p,,
+84.2,Orillia Institute,0,ON,E,~f12.14p,,~f3.44p,,
+86.3,Orillia,1,ON,E,ar 12.17p / lv 12.22p,2.38p,ar 3.34p / lv 3.40p,,7.04p
+88.5,Atherley,0,ON,E,f12.27p,,,,
+93.7,Longford,0,ON,E,12.36p,2.51p,3.21p,,
+98.8,Washago,1,ON,E,12.48p,3.06p,3.06p,,6.43p
+100.4,Severn,0,ON,E,12.54p,,3.01p,,
+112.7,Muskoka Wharf,0,ON,E,,,,,ar 6.09p / lv 6.19p
+112.2,Gravenhurst,1,ON,E,ar 1.23p / lv 1.40p,ar 3.28p / lv 3.35p,ar 2.30p / lv 2.40p,,ar 5.48p / lv 5.59p
+122.1,Bracebridge,1,ON,E,1.56p,3.49p,2.14p,,5.32p
+135.4,Utterson,0,ON,E,2.21p,f4.08p,1.52p,,5.10p
+146.2,Huntsville,1,ON,E,2.41p,4.25p,1.32p,,4.53p
+155.6,Novar,0,ON,E,2.56p,f4.37p,1.14p,,4.37p
+161.2,Scotia,1,ON,E,3.05p,4.46p,1.04p,ar 4.25p,lv 4.27p
+163.0,Emsdale,0,ON,E,3.10p,f4.49p,12.59p,,
+167.0,Katrine,0,ON,E,3.17p,f4.55p,12.51p,,
+171.4,Burk's Falls,0,ON,E,3.26p,5.03p,12.43p,4.08p,
+183.2,Sundridge,0,ON,E,3.47p,5.22p,12.22p,3.47p,
+188.8,South River,0,ON,E,3.59p,5.35p,12.12p,3.37p,
+200.2,Trout Creek,0,ON,E,4.23p,5.59p?,11.49a,3.11p,
+207.8,Powassan,0,ON,E,4.37p,6.12p,11.37a,2.58p,
+219.7,Callander,0,ON,E,4.56p,6.31p,11.18a,f2.40p,
+228.0,North Bay,1,ON,E,ar 5.15p,ar 6.50p,lv 11.00a,lv 2.25p,

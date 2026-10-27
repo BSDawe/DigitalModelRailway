@@ -9,57 +9,80 @@
 # beyond and on flag to take...; colon stops to leave revenue passengers from North Bay and beyond; dot stops for passengers from beyond Englehart;
 # q, d, a, h, j, n, c: not legible in the key. All conditional stops WITH a time are entered as f (flag); conditional signs without a time
 # (No. 47 Tomiko - Rib Lake "d y z") are not entered as calls.
+# Toronto - North Bay rows (CN, Table 126 miles and times, by Allandale and Orillia) added for Nos. 47 / 46 (Brendan, 26 Oct 2026; Official Guide, April 25, 1948,
+# CN Table 126). Nos. 49 / 50, The Northland, run by Beaverton and are in on_onr_t001n.csv. Hawkestone (No. 46): stops on signal Mondays only.
 #train col=M209 num=209 dir=down days="ex Sun" kind=mixed note="Mixed, daily except Sunday: North Bay (C.P. station) 10.15 a.m. to Englehart 6.10 p.m."
 #train col=No47 num=47 dir=down days=daily kind=passenger note="Toronto 11.30 p.m. (over the CN to North Bay) to Timmins 4.50 p.m.; Cochrane section No. 147 from Porquis. Connections to Rouyn and Noranda (ar 4.20 / 4.25 p.m.) not entered."
-#train col=No49 num=49 dir=down days="ex Sun" kind=passenger name="The Northland" note="The Northland. Toronto 6.05 p.m. daily except Sunday (over the CN to North Bay) to Timmins 9.40 a.m.; Cochrane section No. 149. Connections to Rouyn and Noranda (9.13 / 9.20 a.m.) not entered."
 #train col=No51 num=51 dir=down days=daily kind=passenger note="Swastika 4.50 p.m. to Timmins 8.10 p.m.; Cochrane section No. 151. North Bay - Swastika by connecting motor bus (North Bay 11.20 a.m., Swastika 4.35 p.m.), not shown."
 #train col=No52 num=52 dir=up days="ex Sun" kind=passenger note="Daily except Sunday: Timmins 7.15 a.m. to Swastika 10.25 a.m. (Cochrane section No. 152 joins at Porquis). Motor bus connection Swastika 10.35 a.m. - North Bay 3.50 p.m., not shown."
 #train col=No56 num=56 dir=up days=Sun kind=passenger note="Sundays: Timmins 9.15 a.m. to Swastika 12.10 p.m. Motor bus connection Swastika 12.20 p.m. - North Bay 5.25 p.m., not shown."
 #train col=No46 num=46 dir=up days=daily kind=passenger note="Timmins 1.15 p.m. to North Bay 10.15 p.m. and Toronto 7.00 a.m. (CN from North Bay); Cochrane section No. 146 joins at Porquis."
-#train col=No50 num=50 dir=up days="Sun,Mon,Tue,Wed,Thu,Fri" kind=passenger name="The Northland" note="The Northland. Timmins 5.30 p.m. daily except Saturday to North Bay 1.55 a.m. and Toronto 8.10 a.m.; Cochrane section No. 150 joins at Porquis."
 #train col=M210 num=210 dir=up days="ex Sun" kind=mixed note="Mixed, daily except Sunday: Englehart 7.00 a.m. to North Bay (C.P. station) 4.55 p.m."
-mile,station,principal,prov,tz,M209,No47,No49,No51,No52,No56,No46,No50,M210
-0.0,Toronto (Union Station),1,ON,E,,lv 11.30p,lv 6.05p,,,,ar 7.00a,ar 8.10a,
-228.0,North Bay (C.N.),1,ON,E,,ar 7.30a / lv 8.00a,ar 12.35a / lv 1.05a,,,,ar 10.15p / lv 10.45p,ar 1.55a / lv 2.10a,
-228.0,North Bay (C.P.),1,ON,E,lv 10.15a,,,,,,,,ar 4.55p
-238.0,Feronia,0,ON,E,f10.53a,,,,,,,,f4.10p
-242.8,Widdifield,0,ON,E,f11.06a,f8.33a,,,,,,,f4.00p
-247.4,Mulock,0,ON,E,f11.18a,,,,,,,,f3.45p
-256.6,Tomiko,0,ON,E,f11.43a,,,,,,,,3.25p
-267.0,Osborne,0,ON,E,f12.01p,,,,,,f9.00p,,f2.55p
-269.1,Diver,0,ON,E,f12.06p,,,,,,,,f2.50p
-276.4,Bushnell,0,ON,E,f12.19p,,,,,,f8.46p,,f2.35p
-284.8,Redwater,0,ON,E,f12.36p,,,,,,f8.33p,,f2.20p
-292.7,Doherty,0,ON,E,f12.50p,,,,,,f8.20p,,f1.50p
-301.1,Temagami,1,ON,E,1.30p,10.05a,3.18a,,,,8.05p,11.43p,1.30p
-312.3,Rib Lake,0,ON,E,f2.00p,,,,,,f7.43p,,f11.50a
-323.4,Latchford,0,ON,E,2.40p,10.43a,f3.58a,,,,7.23p,f10.59p,11.15a
-332.1,Cobalt,1,ON,E,3.30p,10.56a,4.12a,,,,7.06p,10.40p,10.00a
-335.0,North Cobalt,0,ON,E,f3.35p,11.05a,,,,,,,f9.38a
-336.7,Haileybury,0,ON,E,3.45p,11.13a,4.26a,,,,6.50p,10.26p,9.30a
-341.9,New Liskeard,1,ON,E,ar 4.00p / lv 4.40p,11.28a,4.40a,,,,6.37p,10.14p,9.00a
-347.7,Uno Park,0,ON,E,4.52p,11.39a,,,,,6.23p,,8.00a
-354.1,Thornloe,0,ON,E,5.09p,11.51a,,,,,6.13p,,7.47a
-357.9,Earlton,1,ON,E,5.32p,12.01p,,,,,6.05p,9.48p,7.32a
-364.2,Heaslip,0,ON,E,f5.53p,12.12p,,,,,f5.53p,,f7.12a
-367.8,Englehart,1,ON,E,ar 6.10p,ar 12.20p / lv 12.35p,ar 5.25a / lv 5.40a,,,,ar 5.30p / lv 5.45p,ar 9.15p / lv 9.30p,lv 7.00a
-382.2,Boston Creek,0,ON,E,,f1.02p,f6.03a,,,,f5.04p,,
-388.7,Dane,0,ON,E,,f1.15p,,,,,f4.51p,,
-393.8,Swastika,1,ON,E,,ar 1.25p / lv 1.40p,ar 6.24a / lv 6.40a,lv 4.50p,ar 10.25a,ar 12.10p,ar 4.25p / lv 4.40p,ar 8.20p / lv 8.35p,
-397.3,Kenogami Lake,0,ON,E,,f1.46p,f6.46a,f4.57p,f10.19a,f12.04p,,,
-405.1,Sesekinika,0,ON,E,,f1.57p,f6.56a,f5.10p,f10.06a,f11.51a,f4.07p,,
-412.0,Bourkes,0,ON,E,,2.11p,f7.08a,f5.24p,9.55a,11.40a,3.56p,f7.55p,
-417.4,Wavell,0,ON,E,,f2.20p,f7.17a,f5.35p,f9.46a,f11.31a,f3.47p,f7.48p,
-424.0,Ramore,0,ON,E,,2.31p,7.27a,5.48p,9.34a,11.19a,3.36p,7.38p,
-434.2,Matheson,0,ON,E,,2.46p,7.44a,6.06p,9.16a,11.01a,3.18p,7.22p,
-444.1,Val Gagne,0,ON,E,,3.02p,7.58a,6.23p,8.59a,10.44a,3.02p,f7.07p,
-447.1,Monteith,0,ON,E,,3.09p,8.05a,6.30p,8.53a,10.38a,2.47p,7.02p,
-451.0,Kelso,0,ON,E,,f3.16p,f8.12a,f6.40p,f8.46a,f10.31a,,,
-453.7,Porquis,1,ON,E,,ar 3.20p / lv 3.35p,ar 8.17a / lv 8.30a,ar 6.50p / lv 7.00p,ar 8.25a / lv 8.40a,ar 10.20a / lv 10.25a,ar 2.25p / lv 2.35p,ar 6.40p / lv 6.50p,
-460.2,McIntosh Springs,0,ON,E,,f3.47p,f8.42a,f7.13p,f8.10a,f10.07a,f2.10p,f6.25p,
-463.7,Connaught,0,ON,E,,3.55p,8.49a,7.21p,8.03a,10.00a,2.03p,6.18p,
-470.7,Keyson,0,ON,E,,f4.08p,f9.01a,f7.34p,f7.48a,f9.46a,,,
-477.7,Porcupine,0,ON,E,,f4.21p,f9.14a,f7.47p,f7.35a,f9.34a,1.35p,f5.50p,
-480.3,South Porcupine,0,ON,E,,4.27p,9.20a,7.53p,7.29a,9.29a,1.29p,5.44p,
-485.3,Schumacher,0,ON,E,,4.44p,9.35a,8.05p,7.19a,9.19a,1.19p,5.34p,
-486.8,Timmins,1,ON,E,,ar 4.50p,ar 9.40a,ar 8.10p,lv 7.15a,lv 9.15a,lv 1.15p,lv 5.30p,
+mile,station,principal,prov,tz,M209,No47,No51,No52,No56,No46,M210
+0.0,Toronto (Union Station),1,ON,E,,lv 11.30p,,,,ar 7.00a,
+2.4,Parkdale,0,ON,E,,11.39p,,,,6.50a,
+5.2,St. Clair Avenue,0,ON,E,,11.48p,,,,6.40a,
+30.0,Aurora,0,ON,E,,f12.31a,,,,f5.59a,
+34.1,Newmarket,1,ON,E,,,,,,f5.53a,
+63.0,Allandale,1,ON,E,,ar 1.20a / lv 1.30a,,,,ar 4.58a / lv 5.10a,
+64.1,Barrie,1,ON,E,,1.34a,,,,4.53a,
+77.9,Hawkestone,0,ON,E,,,,,,f4.30a,
+86.3,Orillia,1,ON,E,,ar 2.06a / lv 2.13a,,,,4.14a,
+88.5,Atherley,0,ON,E,,,,,,f4.08a,
+93.7,Longford,0,ON,E,,f2.27a,,,,f4.00a,
+98.8,Washago,1,ON,E,,2.39a,,,,3.50a,
+112.2,Gravenhurst,1,ON,E,,ar 3.03a / lv 3.15a,,,,ar 2.58a / lv 3.22a,
+122.1,Bracebridge,1,ON,E,,3.40a,,,,2.37a,
+135.4,Utterson,0,ON,E,,f4.13a,,,,f2.07a,
+146.2,Huntsville,1,ON,E,,4.43a,,,,1.45a,
+161.2,Scotia,1,ON,E,,f5.12a,,,,f1.13a,
+163.0,Emsdale,0,ON,E,,f5.16a,,,,f1.08a,
+171.4,Burk's Falls,0,ON,E,,5.32a,,,,12.52a,
+183.2,Sundridge,0,ON,E,,5.55a,,,,12.27a,
+188.8,South River,0,ON,E,,6.06a,,,,12.14a,
+200.2,Trout Creek,0,ON,E,,6.32a,,,,11.43p,
+207.8,Powassan,0,ON,E,,6.47a,,,,11.28p,
+219.7,Callander,0,ON,E,,7.10a,,,,11.02p,
+228.0,North Bay (C.N.),1,ON,E,,ar 7.30a / lv 8.00a,,,,ar 10.15p / lv 10.45p,
+228.0,North Bay (C.P.),1,ON,E,lv 10.15a,,,,,,ar 4.55p
+238.0,Feronia,0,ON,E,f10.53a,,,,,,f4.10p
+242.8,Widdifield,0,ON,E,f11.06a,f8.33a,,,,,f4.00p
+247.4,Mulock,0,ON,E,f11.18a,,,,,,f3.45p
+256.6,Tomiko,0,ON,E,f11.43a,,,,,,3.25p
+267.0,Osborne,0,ON,E,f12.01p,,,,,f9.00p,f2.55p
+269.1,Diver,0,ON,E,f12.06p,,,,,,f2.50p
+276.4,Bushnell,0,ON,E,f12.19p,,,,,f8.46p,f2.35p
+284.8,Redwater,0,ON,E,f12.36p,,,,,f8.33p,f2.20p
+292.7,Doherty,0,ON,E,f12.50p,,,,,f8.20p,f1.50p
+301.1,Temagami,1,ON,E,1.30p,10.05a,,,,8.05p,1.30p
+312.3,Rib Lake,0,ON,E,f2.00p,,,,,f7.43p,f11.50a
+323.4,Latchford,0,ON,E,2.40p,10.43a,,,,7.23p,11.15a
+332.1,Cobalt,1,ON,E,3.30p,10.56a,,,,7.06p,10.00a
+335.0,North Cobalt,0,ON,E,f3.35p,11.05a,,,,,f9.38a
+336.7,Haileybury,0,ON,E,3.45p,11.13a,,,,6.50p,9.30a
+341.9,New Liskeard,1,ON,E,ar 4.00p / lv 4.40p,11.28a,,,,6.37p,9.00a
+347.7,Uno Park,0,ON,E,4.52p,11.39a,,,,6.23p,8.00a
+354.1,Thornloe,0,ON,E,5.09p,11.51a,,,,6.13p,7.47a
+357.9,Earlton,1,ON,E,5.32p,12.01p,,,,6.05p,7.32a
+364.2,Heaslip,0,ON,E,f5.53p,12.12p,,,,f5.53p,f7.12a
+367.8,Englehart,1,ON,E,ar 6.10p,ar 12.20p / lv 12.35p,,,,ar 5.30p / lv 5.45p,lv 7.00a
+382.2,Boston Creek,0,ON,E,,f1.02p,,,,f5.04p,
+388.7,Dane,0,ON,E,,f1.15p,,,,f4.51p,
+393.8,Swastika,1,ON,E,,ar 1.25p / lv 1.40p,lv 4.50p,ar 10.25a,ar 12.10p,ar 4.25p / lv 4.40p,
+397.3,Kenogami Lake,0,ON,E,,f1.46p,f4.57p,f10.19a,f12.04p,,
+405.1,Sesekinika,0,ON,E,,f1.57p,f5.10p,f10.06a,f11.51a,f4.07p,
+412.0,Bourkes,0,ON,E,,2.11p,f5.24p,9.55a,11.40a,3.56p,
+417.4,Wavell,0,ON,E,,f2.20p,f5.35p,f9.46a,f11.31a,f3.47p,
+424.0,Ramore,0,ON,E,,2.31p,5.48p,9.34a,11.19a,3.36p,
+434.2,Matheson,0,ON,E,,2.46p,6.06p,9.16a,11.01a,3.18p,
+444.1,Val Gagne,0,ON,E,,3.02p,6.23p,8.59a,10.44a,3.02p,
+447.1,Monteith,0,ON,E,,3.09p,6.30p,8.53a,10.38a,2.47p,
+451.0,Kelso,0,ON,E,,f3.16p,f6.40p,f8.46a,f10.31a,,
+453.7,Porquis,1,ON,E,,ar 3.20p / lv 3.35p,ar 6.50p / lv 7.00p,ar 8.25a / lv 8.40a,ar 10.20a / lv 10.25a,ar 2.25p / lv 2.35p,
+460.2,McIntosh Springs,0,ON,E,,f3.47p,f7.13p,f8.10a,f10.07a,f2.10p,
+463.7,Connaught,0,ON,E,,3.55p,7.21p,8.03a,10.00a,2.03p,
+470.7,Keyson,0,ON,E,,f4.08p,f7.34p,f7.48a,f9.46a,,
+477.7,Porcupine,0,ON,E,,f4.21p,f7.47p,f7.35a,f9.34a,1.35p,
+480.3,South Porcupine,0,ON,E,,4.27p,7.53p,7.29a,9.29a,1.29p,
+485.3,Schumacher,0,ON,E,,4.44p,8.05p,7.19a,9.19a,1.19p,
+486.8,Timmins,1,ON,E,,ar 4.50p,ar 8.10p,lv 7.15a,lv 9.15a,lv 1.15p,
