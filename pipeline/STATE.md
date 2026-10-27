@@ -1744,8 +1744,9 @@ Stations of different railways within 250 m (70 pairs; script: same check over v
 
 ## FOR THE NEXT BIG UPLOAD: how trains are drawn (Brendan, 27 Oct 2026)
 - INTERURBAN (B.C. Electric Chilliwack trains, now two coupled cars): draw like the mainline consists (drawConsist: laid along the track, true-ish length
-  zoomed in) but FOUR capsules, all in the interurban red (no black locomotive: self-propelled cars), direction nose on the leading car. Local cars
-  (Central Park, Burnaby Lake, Lulu Island) stay single cars.
+  zoomed in) but FOUR capsules, all in the interurban red (no black locomotive: self-propelled cars), direction nose on the leading car. The local
+  lines (Central Park, Burnaby Lake, Lulu Island) drawn THE SAME WAY (Brendan, 10:16: no need to tell them apart by drawing; the Chilliwack trains
+  already carry train numbers).
 - MOTOR TRAINS (Brendan asked whether plausible: yes): kind=motor is already in the CSVs (41 trains in 15 files: CN 633 / 634, Saskatchewan and Alberta
   CN / CP branch motor trains). Carry a motor flag into viz_data (ab_lines sets the name 'Motor train' only when the train has no name; use the kind,
   not the label) and draw a short consist: a power car in the railway colour with a nose, plus one trailer (2 capsules). Check the other files that print
