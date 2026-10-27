@@ -1747,7 +1747,7 @@ Stations of different railways within 250 m (70 pairs; script: same check over v
   zoomed in) but FOUR capsules, all in the interurban red (no black locomotive: self-propelled cars), direction nose on the leading car. The local
   lines (Central Park, Burnaby Lake, Lulu Island) drawn THE SAME WAY (Brendan, 10:16: no need to tell them apart by drawing; the Chilliwack trains
   already carry train numbers).
-- MOTOR TRAINS (Brendan asked whether plausible: yes): kind=motor is already in the CSVs (41 trains in 15 files: CN 633 / 634, Saskatchewan and Alberta
+- MOTOR TRAINS: ON HOLD (Brendan, 27 Oct 2026, 10:16: hold off for now). Notes kept for later. (Asked whether plausible: yes): kind=motor is already in the CSVs (41 trains in 15 files: CN 633 / 634, Saskatchewan and Alberta
   CN / CP branch motor trains). Carry a motor flag into viz_data (ab_lines sets the name 'Motor train' only when the train has no name; use the kind,
   not the label) and draw a short consist: a power car in the railway colour with a nose, plus one trailer (2 capsules). Check the other files that print
   motor-train signs but are not tagged (e.g. Alberta CN 168 / 171 / 203, CP 6 / 138, Saskatchewan CN 199 / 211 / 212 / 214 ...; many mentions are motor
