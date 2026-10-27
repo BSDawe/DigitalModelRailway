@@ -1741,3 +1741,14 @@ Stations of different railways within 250 m (70 pairs; script: same check over v
   trains; consider no number (or "connection to No. 41") where the table prints none.
 - (Brendan, 23:03) Much may settle itself as the branch tables come in: their own numbers will replace the main-table sections (then delete the section
   files, e.g. on_cn_t126m / d / p / c / g, as duplicates). Wait for the branch tables before renumbering by hand.
+
+## FOR THE NEXT BIG UPLOAD: how trains are drawn (Brendan, 27 Oct 2026)
+- INTERURBAN (B.C. Electric Chilliwack trains, now two coupled cars): draw like the mainline consists (drawConsist: laid along the track, true-ish length
+  zoomed in) but FOUR capsules, all in the interurban red (no black locomotive: self-propelled cars), direction nose on the leading car. Local cars
+  (Central Park, Burnaby Lake, Lulu Island) stay single cars.
+- MOTOR TRAINS (Brendan asked whether plausible: yes): kind=motor is already in the CSVs (41 trains in 15 files: CN 633 / 634, Saskatchewan and Alberta
+  CN / CP branch motor trains). Carry a motor flag into viz_data (ab_lines sets the name 'Motor train' only when the train has no name; use the kind,
+  not the label) and draw a short consist: a power car in the railway colour with a nose, plus one trailer (2 capsules). Check the other files that print
+  motor-train signs but are not tagged (e.g. Alberta CN 168 / 171 / 203, CP 6 / 138, Saskatchewan CN 199 / 211 / 212 / 214 ...; many mentions are motor
+  BUSES, left out) and tag the real motor trains.
+- page_template.html: drawConsist (n = 7 cars, 4 for local / mixed), the twin-car branch of the car drawing for the interurban.
