@@ -880,27 +880,29 @@ function renderList(states, T) {
   const row = ({ t, st }) => `<button class="trow" data-train="${t.id}"><span class="badge ${t.kind}${t.livery ? ' ' + t.livery : ''}">${esc(t.name)}</span>
       <span class="dest">${t.mainline ? esc(t.label) + ' to ' + esc(toName(t)) : 'To ' + esc(t.dest.name)}</span>
       <span class="status">${statusLine(t, st, T)}</span></button>`;
+  let nd = '';                                                     // next departures first (Brendan, 27 Oct 2026)
+  const upcoming = activeTrips(S.day).filter(t => !t.local && t.start > T).sort((a, b) => a.start - b.start).slice(0, 4);
+  nd += `<div class="section-label">Next departures</div>`;
+  if (!upcoming.length) nd += `<div class="empty">No more departures today.</div>`;
+  for (const t of upcoming) nd += `<button class="trow" data-train="${t.id}"><span class="badge ${t.kind}${t.livery ? ' ' + t.livery : ''}">${esc(t.name)}</span>
+      <span class="dest">${esc(fromName(t))} to ${esc(toName(t))}</span>
+      <span class="status">Leaves ${tspan(t.start)}${t.label ? ' · ' + esc(t.label) : ''}</span></button>`;
+  const nextCar = dir => activeTrips(S.day).filter(t => t.kind === 'c' && t.dir === dir && t.start > T).sort((a, b) => a.start - b.start)[0];
+  const cv0 = nextCar(0), cv1 = nextCar(1);
+  if (cv0 || cv1) nd += `<div class="meta">Next Central Park cars: ${cv0 ? 'from Vancouver ' + tspan(cv0.start) : ''}${cv0 && cv1 ? ', ' : ''}${cv1 ? 'from New Westminster ' + tspan(cv1.start) : ''}.</div>`;
+  h += nd;
   const main = states.filter(x => !x.t.local && !x.t.mainline);
   h += `<div class="section-label">Chilliwack line</div>`;
   if (!main.length) h += `<div class="empty">No Chilliwack trains running now.</div>`;
   h += main.map(row).join('');
   for (const kd of ['c', 'b', 'l', 'n', 'g', 'q', 'p', 'i', 'r', 'y', 'a', 'o', 'd', 'u', 'm', 'k', 'x', 'j', 'h', 'z', 't', 'f', 'T', 'G', 'R', 'J', 'B', 'v']) {   // x, j were missing (C&NW, GWWD; 23 Oct 2026)
     const xs = states.filter(x => x.t.kind === kd);
-    if ('yaodumkxjhztfTGRJ'.includes(kd) && !xs.length) continue;    // a railway of a few trains: no heading when nothing is running
-    const unit = kd === 'v' ? ['boat', 'boats'] : 'gpqiryaodumkxjhztfTGRJ'.includes(kd) ? ['train', 'trains'] : ['car', 'cars'];
+    if ('yaodumkxjhztfTGRJB'.includes(kd) && !xs.length) continue;    // a railway of a few trains: no heading when nothing is running
+    const unit = kd === 'v' ? ['boat', 'boats'] : 'gpqiryaodumkxjhztfTGRJB'.includes(kd) ? ['train', 'trains'] : ['car', 'cars'];
     h += `<div class="section-label">${KIND_LABEL[kd]} · ${xs.length} ${xs.length === 1 ? unit[0] : unit[1]}</div>`;
     if (!xs.length) h += `<div class="empty">No ${unit[1]} running now.</div>`;
     h += xs.map(row).join('');
   }
-  const upcoming = activeTrips(S.day).filter(t => !t.local && t.start > T).sort((a, b) => a.start - b.start).slice(0, 4);
-  h += `<div class="section-label">Next departures</div>`;
-  if (!upcoming.length) h += `<div class="empty">No more departures today.</div>`;
-  for (const t of upcoming) h += `<button class="trow" data-train="${t.id}"><span class="badge ${t.kind}${t.livery ? ' ' + t.livery : ''}">${esc(t.name)}</span>
-      <span class="dest">${esc(fromName(t))} to ${esc(toName(t))}</span>
-      <span class="status">Leaves ${tspan(t.start)}${t.label ? ' · ' + esc(t.label) : ''}</span></button>`;
-  const nextCar = dir => activeTrips(S.day).filter(t => t.kind === 'c' && t.dir === dir && t.start > T).sort((a, b) => a.start - b.start)[0];
-  const cv0 = nextCar(0), cv1 = nextCar(1);
-  if (cv0 || cv1) h += `<div class="meta">Next Central Park cars: ${cv0 ? 'from Vancouver ' + tspan(cv0.start) : ''}${cv0 && cv1 ? ', ' : ''}${cv1 ? 'from New Westminster ' + tspan(cv1.start) : ''}.</div>`;
   body.innerHTML = h;
 }
 function renderTrain(t, st, T) {

@@ -1778,3 +1778,5 @@ Stations of different railways within 250 m (70 pairs; script: same check over v
 - DUPLICATES REMOVED: on_cp_t707.csv (S.S. Manitoba boat trains 707 Thu / 708 Tue, ends only) DELETED: the regular 707 / 708 with the same times (notes
   carry the boat-train days). The Toronto - Streetsville columns 705, 707 (/ 709), 706, 708 (/ 710) dropped from on_cp_t049w.
 - Brendan (27 Oct 2026): STOP CP ONTARIO HERE FOR THIS WEEK. Still to come: Tables 63 (Elora), 65 (Orangeville - Walkerton / Teeswater ...), others.
+- (27 Oct 2026, Brendan) "On the line" panel: Next departures (and the next Central Park cars line) now at the TOP of the list (renderList in
+  page_template). TH&B ('B') added to the few-trains kinds (no heading when none running). Page-only changes: `python3 build.py --assemble` (7 s), not a build.
