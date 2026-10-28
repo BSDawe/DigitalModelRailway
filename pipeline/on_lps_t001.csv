@@ -1,0 +1,82 @@
+# London & Port Stanley Railway (electric; City of London): London - St. Thomas - Port Stanley - Beach. Time Table No. 76, effective May 21, 1947 (Brendan, 28 Oct 2026:
+# the 1947 summer timetable as printed stands in for summer 1948; the Official Guide of March 1948 and the June 8, 1949 timetable are in the private scans). EASTERN STANDARD TIME as printed
+# (local daylight time one hour later). Miles: the Canadian Electric Railway Mapping project stop list (Stop 7 printed 9.0, read 7.8 by its position; Colborne St., Philip St.,
+# C.N.R. - Wabash Depot, Palm St., Elm St. by Claude, approximate). Stops for all trains (timetable note): Colborne St., Philip St., Stop 1, C.N.R. - Wabash Depot, Palm St., Elm St.,
+# Crafts, Stop 23 (times estimated, ~); the other numbered stops are flag stops of the locals (Brendan; times estimated, ~f). Trains through the N.Y.C. Depot back out of the
+# spur to Talbot Street and then go south (Brendan). D: stops at Bessie St., Port Stanley on request (not entered). Train numbers are the L&PS's.
+#train col=No202 num=202 dir=down days="ex Sun" kind=passenger note=Local.
+#train col=No2 num=2 dir=down days="ex Sun" kind=passenger note=Local.
+#train col=No4 num=4 dir=down days=daily kind=passenger note=Local.
+#train col=No204 num=204 dir=down days="ex Sun" kind=passenger note=Local.
+#train col=No6 num=6 dir=down days=daily kind=passenger note=Local.
+#train col=No8 num=8 dir=down days=daily kind=passenger note="Limited. Calls at the N.Y.C. (Michigan Central) Depot, St. Thomas, backing out of the spur to Talbot Street." name=Limited
+#train col=No10 num=10 dir=down days=daily kind=passenger note=Local.
+#train col=No12 num=12 dir=down days=daily kind=passenger note=Local.
+#train col=No14 num=14 dir=down days=daily kind=passenger note=Limited. name=Limited
+#train col=No16 num=16 dir=down days=daily kind=passenger note=Local.
+#train col=No18 num=18 dir=down days=daily kind=passenger note=Local.
+#train col=No20 num=20 dir=down days=daily kind=passenger note=Local.
+#train col=No22 num=22 dir=down days=daily kind=passenger note="Local. Conductor arranges transfer at St. Thomas for passengers with N.Y.C. tickets."
+#train col=No24 num=24 dir=down days=daily kind=passenger note="Local. Conductor arranges transfer at St. Thomas for passengers with N.Y.C. tickets."
+#train col=No26 num=26 dir=down days=daily kind=passenger note=Limited. name=Limited
+#train col=No28 num=28 dir=down days=daily kind=passenger note="Limited. Conductor arranges transfer at St. Thomas for passengers with N.Y.C. tickets." name=Limited
+#train col=No30 num=30 dir=down days=daily kind=passenger note=Local.
+#train col=No32 num=32 dir=down days=daily kind=passenger note=Limited. name=Limited
+#train col=No34 num=34 dir=down days=daily kind=passenger note="Local. London to St. Thomas only."
+#train col=No36 num=36 dir=down days=daily kind=passenger note="Local. Night car, London 12.55 a.m. to St. Thomas and the N.Y.C. Depot."
+#train col=No203 num=203 dir=up days="ex Sun" kind=passenger note=Local.
+#train col=No3 num=3 dir=up days="ex Sun" kind=passenger note=Local.
+#train col=No5 num=5 dir=up days=daily kind=passenger note=Local.
+#train col=No205 num=205 dir=up days="ex Sun" kind=passenger note=Local.
+#train col=No7 num=7 dir=up days=daily kind=passenger note=Local.
+#train col=No9 num=9 dir=up days=daily kind=passenger note="Limited. Calls at the N.Y.C. (Michigan Central) Depot, St. Thomas, backing out of the spur to Talbot Street. On Sundays stops Glanworth to Stop 15 as required (not entered)." name=Limited
+#train col=No11 num=11 dir=up days=daily kind=passenger note=Local.
+#train col=No13 num=13 dir=up days=daily kind=passenger note=Local.
+#train col=No15 num=15 dir=up days=daily kind=passenger note=Limited. name=Limited
+#train col=No17 num=17 dir=up days=daily kind=passenger note=Local.
+#train col=No19 num=19 dir=up days=daily kind=passenger note=Local.
+#train col=No21 num=21 dir=up days=daily kind=passenger note=Limited. name=Limited
+#train col=No23 num=23 dir=up days=daily kind=passenger note=Local.
+#train col=No25 num=25 dir=up days=daily kind=passenger note=Limited. name=Limited
+#train col=No27 num=27 dir=up days=daily kind=passenger note=Local.
+#train col=No29 num=29 dir=up days=daily kind=passenger note=Limited. name=Limited
+#train col=No31 num=31 dir=up days=daily kind=passenger note=Limited. name=Limited
+#train col=No33 num=33 dir=up days=daily kind=passenger note="Local. St. Thomas 11.35 p.m. to London 12.10 a.m."
+#train col=No35 num=35 dir=up days=daily kind=passenger note=Local.
+#train col=No37 num=37 dir=up days=daily kind=passenger note="Local. Night car from the N.Y.C. Depot, St. Thomas, 1.42 a.m. to London 2.21 a.m. St. Thomas time partly illegible (1.46?)."
+mile,station,principal,prov,tz,No202,No2,No4,No204,No6,No8,No10,No12,No14,No16,No18,No20,No22,No24,No26,No28,No30,No32,No34,No36,No203,No3,No5,No205,No7,No9,No11,No13,No15,No17,No19,No21,No23,No25,No27,No29,No31,No33,No35,No37
+0.0,London,1,ON,E,lv 4.10a,lv 5.10a,lv 6.05a,lv 6.55a,lv 7.55a,lv 9.16a,lv 10.30a,lv 12.25p,lv 1.25p,lv 2.20p,lv 3.15p,lv 4.15p,lv 5.20p,lv 6.10p,lv 7.18p,lv 8.15p,lv 8.55p,lv 9.45p,lv 10.50p,lv 12.55a,ar 6.30a,ar 7.27a,ar 8.27a,ar 9.16a,ar 10.13a,ar 11.40a,ar 12.53p,ar 2.49p,ar 3.44p,ar 4.45p,ar 5.48p,ar 6.38p,ar 7.45p,ar 8.42p,ar 9.38p,ar 10.28p,ar 11.51p,ar 12.10a,ar 12.26a,ar 2.21a
+0.4,Colborne Street,0,ON,E,~4.11a,~5.11a,~6.06a,~6.56a,~7.56a,~9.17a,~10.31a,~12.26p,~1.26p,~2.21p,~3.16p,~4.16p,~5.21p,~6.11p,~7.19p,~8.16p,~8.56p,~9.46p,~10.51p,~12.56a,~6.29a,~7.26a,~8.26a,~9.15a,~10.12a,~11.39a,~12.52p,~2.48p,~3.43p,~4.44p,~5.47p,~6.37p,~7.44p,~8.41p,~9.37p,~10.27p,~11.50p,~12.09a,~12.25a,~2.20a
+1.1,Philip Street,0,ON,E,~4.12a,~5.12a,~6.07a,~6.58a,~7.58a,~9.18a,~10.33a,~12.28p,~1.27p,~2.23p,~3.18p,~4.18p,~5.23p,~6.13p,~7.20p,~8.17p,~8.58p,~9.48p,~10.53p,~12.58a,~6.27a,~7.24a,~8.24a,~9.13a,~10.10a,~11.38a,~12.50p,~2.46p,~3.42p,~4.42p,~5.45p,~6.35p,~7.42p,~8.39p,~9.35p,~10.26p,~11.48p,~12.07a,~12.23a,~2.18a
+1.8,Stop 1 (Thompson Road),0,ON,E,~4.14a,~5.14a,~6.09a,~7.00a,~8.00a,~9.20a,~10.35a,~12.30p,~1.29p,~2.25p,~3.20p,~4.20p,~5.25p,~6.15p,~7.22p,~8.19p,~8.59p,~9.49p,~10.54p,~1.00a,~6.26a,~7.22a,~8.22a,~9.11a,~10.08a,~11.36a,~12.48p,~2.44p,~3.40p,~4.40p,~5.43p,~6.33p,~7.40p,~8.38p,~9.33p,~10.24p,~11.47p,~12.05a,~12.21a,~2.17a
+2.8,Stop 2 (Commissioners Road),0,ON,E,~f4.16a,~f5.16a,~f6.11a,~f7.03a,~f8.03a,,~f10.37a,~f12.32p,,~f2.28p,~f3.23p,~f4.23p,~f5.27p,~f6.17p,,,~f9.02p,,~f10.57p,~f1.02a,~f6.23a,~f7.19a,~f8.19a,~f9.08a,~f10.06a,,~f12.46p,~f2.42p,,~f4.38p,~f5.41p,,~f7.38p,,~f9.31p,,,~f12.03a,~f12.19a,~f2.14a
+4.0,Stop 3 (Pond Mills),0,ON,E,~f4.19a,~f5.19a,~f6.14a,~f7.07a,~f8.07a,,~f10.41a,~f12.36p,,~f2.31p,~f3.27p,~f4.27p,~f5.31p,~f6.21p,,,~f9.05p,,~f11.00p,~f1.06a,~f6.20a,~f7.15a,~f8.15a,~f9.04a,~f10.02a,,~f12.42p,~f2.38p,,~f4.34p,~f5.37p,,~f7.34p,,~f9.27p,,,~f11.59p,~f12.15a,~f2.11a
+4.6,Stop 3½,0,ON,E,~f4.20a,~f5.20a,~f6.15a,~f7.09a,~f8.09a,,~f10.42a,~f12.37p,,~f2.33p,~f3.29p,~f4.29p,~f5.32p,~f6.22p,,,~f9.06p,,~f11.01p,~f1.07a,~f6.19a,~f7.13a,~f8.13a,~f9.02a,~f10.01a,,~f12.41p,~f2.37p,,~f4.33p,~f5.36p,,~f7.33p,,~f9.26p,,,~f11.58p,~f12.14a,~f2.10a
+5.3,Westminster,0,ON,E,4.22a,5.22a,6.17a,7.11a,8.11a,,10.44a,12.39p,,2.35p,3.31p,4.31p,5.34p,6.24p,,,9.08p,,11.03p,1.09a,6.17a,7.11a,8.11a,9.00a,9.59a,,12.39p,2.35p,,4.31p,5.34p,,7.31p,,9.24p,,,11.56p,12.12a,2.08a
+6.1,Stop 5 (Brockley),0,ON,E,~f4.23a,~f5.23a,~f6.18a,~f7.12a,~f8.12a,,~f10.45a,~f12.40p,,~f2.36p,~f3.33p,~f4.33p,~f5.35p,~f6.25p,,,~f9.09p,,~f11.04p,~f1.10a,~f6.15a,~f7.09a,~f8.09a,~f8.58a,~f9.58a,,~f12.37p,~f2.34p,,~f4.29p,~f5.33p,,~f7.29p,,~f9.23p,,,~f11.55p,~f12.11a,~f2.07a
+7.0,Stop 6,0,ON,E,~f4.25a,~f5.25a,~f6.20a,~f7.14a,~f8.14a,,~f10.47a,~f12.42p,,~f2.38p,~f3.34p,~f4.34p,~f5.37p,~f6.27p,,,~f9.11p,,~f11.06p,~f1.12a,~f6.14a,~f7.07a,~f8.07a,~f8.56a,~f9.56a,,~f12.35p,~f2.32p,,~f4.27p,~f5.31p,,~f7.27p,,~f9.21p,,,~f11.53p,~f12.09a,~f2.05a
+7.8,Stop 7,0,ON,E,~f4.26a,~f5.26a,~f6.21a,~f7.15a,~f8.16a,,~f10.49a,~f12.44p,,~f2.40p,~f3.36p,~f4.36p,~f5.39p,~f6.29p,,,~f9.13p,,~f11.08p,~f1.14a,~f6.12a,~f7.05a,~f8.05a,~f8.54a,~f9.54a,,~f12.33p,~f2.30p,,~f4.25p,~f5.29p,,~f7.25p,,~f9.19p,,,~f11.52p,~f12.07a,~f2.04a
+8.5,Stop 8,0,ON,E,~f4.27a,~f5.27a,~f6.22a,~f7.16a,~f8.17a,,~f10.50a,~f12.45p,,~f2.41p,~f3.38p,~f4.38p,~f5.40p,~f6.30p,,,~f9.14p,,~f11.09p,~f1.15a,~f6.10a,~f7.04a,~f8.04a,~f8.53a,~f9.53a,,~f12.31p,~f2.29p,,~f4.23p,~f5.28p,,~f7.24p,,~f9.18p,,,~f11.51p,~f12.06a,~f2.03a
+9.7,Glanworth,0,ON,E,4.29a,5.29a,6.24a,7.18a,8.19a,,10.52a,12.47p,,2.43p,3.40p,4.40p,5.42p,6.32p,,,9.16p,,11.11p,1.17a,6.08a,7.01a,8.01a,8.50a,9.51a,,12.28p,2.27p,,4.20p,5.26p,,7.21p,,9.16p,,,11.49p,12.04a,2.01a
+10.3,Stop 10,0,ON,E,~f4.30a,~f5.30a,~f6.25a,~f7.19a,~f8.20a,,~f10.53a,~f12.48p,,~f2.44p,~f3.41p,~f4.41p,~f5.43p,~f6.33p,,,~f9.17p,,~f11.13p,~f1.18a,~f6.07a,~f7.00a,~f8.00a,~f8.49a,~f9.50a,,~f12.27p,~f2.26p,,~f4.19p,~f5.25p,,~f7.19p,,~f9.15p,,,~f11.48p,~f12.03a,~f2.00a
+10.7,Stop 11,0,ON,E,~f4.31a,~f5.31a,~f6.26a,~f7.20a,~f8.21a,,~f10.54a,~f12.49p,,~f2.45p,~f3.42p,~f4.42p,~f5.44p,~f6.34p,,,~f9.18p,,~f11.14p,~f1.19a,~f6.06a,~f6.59a,~f7.59a,~f8.48a,~f9.49a,,~f12.26p,~f2.25p,,~f4.18p,~f5.24p,,~f7.18p,,~f9.14p,,,~f11.47p,~f12.02a,~f1.59a
+11.6,Stop 12,0,ON,E,~f4.33a,~f5.33a,~f6.28a,~f7.21a,~f8.23a,,~f10.56a,~f12.51p,,~f2.47p,~f3.44p,~f4.44p,~f5.46p,~f6.36p,,,~f9.20p,,~f11.16p,~f1.21a,~f6.04a,~f6.57a,~f7.57a,~f8.46a,~f9.47a,,~f12.24p,~f2.23p,,~f4.16p,~f5.22p,,~f7.16p,,~f9.12p,,,~f11.45p,~f12.00a,~f1.57a
+12.4,Stop 13,0,ON,E,~f4.34a,~f5.34a,~f6.29a,~f7.23a,~f8.25a,,~f10.57a,~f12.53p,,~f2.49p,~f3.46p,~f4.46p,~f5.48p,~f6.38p,,,~f9.22p,,~f11.19p,~f1.23a,~f6.02a,~f6.55a,~f7.55a,~f8.44a,~f9.45a,,~f12.22p,~f2.21p,,~f4.15p,~f5.20p,,~f7.14p,,~f9.10p,,,~f11.44p,~f11.58p,~f1.56a
+13.2,Yarmouth,0,ON,E,4.36a,5.36a,6.31a,7.24a,8.27a,,10.59a,12.55p,,2.51p,3.48p,4.48p,5.50p,6.40p,,,9.24p,,11.21p,1.25a,6.00a,6.53a,7.53a,8.42a,9.43a,,12.20p,2.19p,,4.13p,5.18p,,7.12p,,9.08p,,,11.42p,11.56p,1.54a
+14.1,Stop 15 (Edgeware Road),0,ON,E,~f4.39a,~f5.39a,~f6.34a,~f7.26a,~f8.30a,,~f11.02a,~f12.58p,,~f2.54p,~f3.51p,~f4.51p,~f5.53p,~f6.43p,,,~f9.27p,,~f11.24p,~f1.28a,~f5.56a,~f6.50a,~f7.50a,~f8.39a,~f9.39a,,~f12.17p,~f2.16p,,~f4.10p,~f5.15p,,~f7.08p,,~f9.05p,,,~f11.39p,~f11.53p,~f1.51a
+15.1,C.N.R. - Wabash Depot,0,ON,E,~4.42a,~5.42a,~6.37a,~7.29a,~8.33a,~9.49a,~11.05a,~1.01p,~1.58p,~2.57p,~3.54p,~4.54p,~5.56p,~6.46p,~7.51p,~8.49p,~9.30p,~10.21p,~11.27p,~1.31a,~5.52a,~6.47a,~7.47a,~8.36a,~9.35a,~11.07a,~12.14p,~2.13p,~3.11p,~4.07p,~5.12p,~5.58p,~7.04p,~8.06p,~9.02p,~9.55p,~11.14p,~11.36p,~11.50p,~1.48a
+15.6,St. Thomas (Talbot Street),1,ON,E,4.43a,5.43a,6.38a,7.30a,8.35a,9.50a,11.06a,1.03p,1.59p,2.59p,3.56p,4.56p,5.57p,6.48p,7.52p,8.50p,9.32p,10.22p,ar 11.28p,1.33a,5.50a,6.45a,7.45a,8.35a,9.33a,11.06a,12.12p,2.11p,3.10p,4.05p,5.10p,5.57p,7.02p,8.05p,9.00p,9.54p,11.13p,lv 11.35p,11.48p,1.46a
+16.0,N.Y.C. Depot,1,ON,E,,,,,,9.54a,,,,,,,,,,,,,,ar 1.37a,,,,,,11.01a,,,,,,,,,,,,,,lv 1.42a
+15.6,St. Thomas (Talbot Street),1,ON,E,,,,,,10.00a,,,,,,,,,,,,,,,,,,,,10.53a,,,,,,,,,,,,,,
+16.2,Palm Street,0,ON,E,~4.45a,~5.45a,~6.40a,~7.32a,~8.37a,~10.02a,~11.08a,~1.05p,~2.01p,~3.01p,~3.58p,~4.58p,~5.59p,~6.50p,~7.54p,~8.52p,~9.34p,~10.24p,,,~5.48a,~6.43a,~7.43a,~8.32a,~9.31a,~10.51a,~12.09p,~2.08p,~3.08p,~4.03p,~5.08p,~5.54p,~7.00p,~8.03p,~8.58p,~9.52p,~11.10p,,~11.45p,
+16.5,Elm Street,0,ON,E,~4.46a,~5.46a,~6.41a,~7.34a,~8.38a,~10.03a,~11.09a,~1.06p,~2.02p,~3.02p,~3.59p,~4.59p,~6.00p,~6.51p,~7.55p,~8.53p,~9.35p,~10.25p,,,~5.47a,~6.42a,~7.42a,~8.30a,~9.30a,~10.50a,~12.08p,~2.07p,~3.07p,~4.02p,~5.07p,~5.53p,~6.58p,~8.02p,~8.57p,~9.51p,~11.09p,,~11.44p,
+17.1,Stop 17,0,ON,E,~f4.49a,~f5.49a,~f6.44a,~f7.36a,~f8.41a,,~f11.12a,~f1.09p,,~f3.05p,~f4.02p,~f5.02p,~f6.03p,~f6.54p,,,~f9.38p,,,,~f5.44a,~f6.39a,~f7.39a,~f8.28a,~f9.27a,,~f12.05p,~f2.05p,,~f3.59p,~f5.04p,,~f6.56p,,~f8.54p,,,,~f11.41p,
+17.4,Stop 18,0,ON,E,~f4.50a,~f5.50a,~f6.45a,~f7.38a,~f8.42a,,~f11.13a,~f1.10p,,~f3.06p,~f4.03p,~f5.03p,~f6.04p,~f6.55p,,,~f9.39p,,,,~f5.43a,~f6.38a,~f7.38a,~f8.26a,~f9.26a,,~f12.04p,~f2.04p,,~f3.58p,~f5.03p,,~f6.54p,,~f8.53p,,,,~f11.40p,
+18.0,Crafts,0,ON,E,4.52a,5.52a,6.47a,7.40a,8.44a,10.09a,11.15a,1.12p,2.08p,3.08p,4.05p,5.05p,6.06p,6.57p,8.01p,8.59p,9.41p,10.31p,,,5.41a,6.36a,7.36a,8.23a,9.24a,10.45a,12.01p,2.01p,3.01p,3.56p,5.01p,5.47p,6.52p,7.56p,8.51p,9.45p,11.03p,,11.37p,
+18.4,Stop 19,0,ON,E,~f4.53a,~f5.53a,~f6.48a,~f7.41a,~f8.45a,,~f11.16a,~f1.13p,,~f3.09p,~f4.06p,~f5.06p,~f6.07p,~f6.58p,,,~f9.42p,,,,~f5.41a,~f6.36a,~f7.36a,~f8.22a,~f9.24a,,~f12.01p,~f2.01p,,~f3.56p,~f5.01p,,~f6.51p,,~f8.51p,,,,~f11.36p,
+19.7,Whites,0,ON,E,4.54a,5.54a,6.49a,7.42a,8.46a,,11.17a,1.14p,,3.10p,4.07p,5.07p,6.08p,7.00p,,,9.43p,,,,5.39a,6.34a,7.34a,8.20a,9.22a,,11.59a,1.59p,,3.54p,4.59p,,6.49p,,8.49p,,,,11.34p,
+20.7,Stop 21 (Union),0,ON,E,~f4.56a,~f5.56a,~f6.51a,~f7.44a,~f8.48a,,~f11.19a,~f1.16p,,~f3.12p,~f4.09p,~f5.09p,~f6.10p,~f7.02p,,,~f9.45p,,,,~f5.37a,~f6.32a,~f7.32a,~f8.17a,~f9.20a,,~f11.57a,~f1.57p,,~f3.52p,~f4.57p,,~f6.47p,,~f8.47p,,,,~f11.32p,
+21.6,Stop 22,0,ON,E,~f4.59a,~f5.59a,~f6.54a,~f7.47a,~f8.51a,,~f11.22a,~f1.19p,,~f3.15p,~f4.12p,~f5.12p,~f6.13p,~f7.05p,,,~f9.48p,,,,~f5.34a,~f6.29a,~f7.29a,~f8.15a,~f9.17a,,~f11.54a,~f1.54p,,~f3.49p,~f4.54p,,~f6.44p,,~f8.44p,,,,~f11.29p,
+22.9,Stop 23,0,ON,E,~5.02a,~6.02a,~6.57a,~7.50a,~8.54a,~10.19a,~11.25a,~1.22p,~2.18p,~3.18p,~4.15p,~5.15p,~6.16p,~7.08p,~8.11p,~9.09p,~9.51p,~10.41p,,,~5.31a,~6.26a,~7.26a,~8.11a,~9.14a,~10.36a,~11.51a,~1.51p,~2.51p,~3.46p,~4.51p,~5.38p,~6.41p,~7.46p,~8.41p,~9.36p,~10.53p,,~11.26p,
+23.8,Port Stanley,1,ON,E,5.04a,6.04a,6.59a,7.52a,8.56a,10.21a,11.27a,1.24p,2.20p,3.20p,4.17p,5.17p,6.18p,7.10p,8.13p,9.11p,9.53p,10.43p,,,5.29a,6.24a,7.24a,8.09a,9.12a,10.34a,11.49a,1.49p,2.49p,3.44p,4.49p,5.36p,6.39p,7.44p,8.39p,9.34p,10.51p,,11.24p,
+24.5,Beach,1,ON,E,ar 5.08a,ar 6.08a,ar 7.03a,ar 7.56a,ar 9.00a,ar 10.25a,ar 11.31a,ar 1.28p,ar 2.24p,ar 3.24p,ar 4.21p,ar 5.21p,ar 6.22p,ar 7.14p,ar 8.17p,ar 9.15p,ar 9.57p,ar 10.47p,,,lv 5.25a,lv 6.20a,lv 7.20a,lv 8.05a,lv 9.08a,lv 10.30a,lv 11.45a,lv 1.45p,lv 2.45p,lv 3.40p,lv 4.45p,lv 5.33p,lv 6.35p,lv 7.40p,lv 8.35p,lv 9.30p,lv 10.47p,,lv 11.20p,

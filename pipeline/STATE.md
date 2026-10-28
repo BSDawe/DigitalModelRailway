@@ -1780,3 +1780,17 @@ Stations of different railways within 250 m (70 pairs; script: same check over v
 - Brendan (27 Oct 2026): STOP CP ONTARIO HERE FOR THIS WEEK. Still to come: Tables 63 (Elora), 65 (Orangeville - Walkerton / Teeswater ...), others.
 - (27 Oct 2026, Brendan) "On the line" panel: Next departures (and the next Central Park cars line) now at the TOP of the list (renderList in
   page_template). TH&B ('B') added to the few-trains kinds (no heading when none running). Page-only changes: `python3 build.py --assemble` (7 s), not a build.
+
+## Version 81 (28 October 2026): London & Port Stanley Railway (the first interurban outside B.C.)
+- Sources (private scans/lps/): Time Table No. 76, May 21, 1947 (USED, Brendan's choice: the 1947 summer as printed stands in for summer 1948); Time Table
+  No. 80, June 8, 1949; Official Guide March 1948 (winter, 13 / 14 trains). Track and stops: the Canadian Electric Railway Mapping project KMZ (Brendan, same
+  source as the BCER) -> traces/ontario/brendan/london_port_stanley.geojson (main line London - Beach, London station leads, St. Thomas track 81 to the
+  N.Y.C. Depot; own 'lps'). The Ontario collection had only London - St. Thomas (owner now 'lps').
+- on_lps_t001: 20 southbound / 20 northbound, L&PS numbers (Locals and Limiteds; 202 / 2 / 204 / 203 / 3 / 205 ex Sun; 36 / 37 night cars to / from the N.Y.C.
+  Depot). EASTERN STANDARD TIME as printed. Stops: the timetable's ten; the all-train stops of the timetable note (Colborne St., Philip St., Stop 1, C.N.R. -
+  Wabash Depot, Palm St., Elm St., Stop 23; times ~); the KMZ's numbered stops as flag stops of the locals (Brendan; ~f). Colborne, Philip, Elm by mileage
+  (Claude). Stop 7 printed mile 9.0, read 7.8. Trains via the N.Y.C. Depot (8, 9) back out of the spur to Talbot Street (Brendan): Talbot St. row twice.
+- Shared stops: L&PS London = CN_LONDON (same complex as the CN station; Brendan); C.N.R. - Wabash Depot = CN_ST_THOMAS.
+- Drawing: new kind 'P', rail 'onlps', colour dark blue 1C2F5E with gold d4a62a (Brendan: L&PS livery dark blue and gold); drawConsist draws kind P as
+  an interurban: four cars, no locomotive, gold band, nose on the leading car (the first use of the planned four-capsule interurban style).
+- ab_table warns: estimated flag stops at the same minute as a timed neighbour (Crafts - Stop 19 - Whites, 2 min printed): cosmetic.
