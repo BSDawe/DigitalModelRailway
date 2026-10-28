@@ -4,57 +4,54 @@
 # line: London - St. Thomas - Port Stanley). Arrival / departure rows (Guelph Jct., Galt, Woodstock, London, Windsor) one row here.
 #train col=No635 num=635 dir=down days="Sun,Mon,Tue,Wed,Thu,Fri" kind=passenger name="The Michigan" to=Chicago note="The Michigan. Daily except Saturday. Windsor 6.40 - 6.55 a.m., Detroit 7.05 a.m.; New York Central No. 17 to Chicago (11.15 a.m. Central time)."
 #train col=No19 num=19 dir=down days=daily kind=passenger name="The Canadian" from=Montreal to=Chicago note="The Canadian, from Montreal (Pool 15). Windsor 2.40 - 2.50 a.m., Detroit 3.00 a.m.; New York Central No. 39 to Chicago (8.30 a.m. Central time)."
-#train col=No707 num=707 dir=down days=daily kind=passenger note="Printed 707 / 709: Toronto - Streetsville."
 #train col=No37 num=37 dir=down days=daily kind=passenger name="Royal York" from=Montreal to=Chicago note="Royal York, from Montreal (Pool 5, Central Station). Windsor 11.05 - 11.15 p.m., Detroit 11.25 p.m.; New York Central No. 315 to Chicago (7.20 a.m. Central time). Streetsville: stops on signal to take on passengers."
 #train col=No629 num=629 dir=down days="Mon,Tue,Wed,Thu,Fri" kind=passenger note="Daily except Saturday and Sunday. London & Port Stanley connection to St. Thomas and Port Stanley."
 #train col=No631 num=631 dir=down days=Sat kind=passenger
 #train col=No21 num=21 dir=down days=daily kind=passenger name="Chicago Express" from=Montreal to=Chicago note="Chicago Express, from Montreal (Pool 21). Windsor 1.55 - 2.05 p.m., Detroit 2.15 p.m.; New York Central No. 31 to Chicago (7.45 p.m. Central time, La Salle St. Station)."
-#train col=No705 num=705 dir=down days="ex Sun" kind=passenger note="Toronto - Streetsville."
 #train col=No20 num=20 dir=up days=daily kind=passenger name="The Canadian" from=Chicago to=Montreal note="The Canadian, to Montreal (Pool 14, Central Station). From Chicago 7.50 p.m. (NYC No. 358), Detroit 2.55 a.m., Windsor 3.05 - 3.15 a.m."
 #train col=No630 num=630 dir=up days="ex Sun" kind=passenger note="London - Toronto."
-#train col=No706 num=706 dir=up days="ex Sun" kind=passenger note="Streetsville - Toronto."
 #train col=No38 num=38 dir=up days=daily kind=passenger name="Royal York" from=Chicago to=Montreal note="Royal York, to Montreal (Pool 6). From Chicago 11.05 p.m. (NYC No. 342), Detroit 9.00 a.m., Windsor 9.10 - 9.20 a.m."
-#train col=No708 num=708 dir=up days=daily kind=passenger note="Printed 708 (ex Sun) and 710 (Sun) with the same times: Streetsville - Toronto."
 #train col=No632 num=632 dir=up days="ex Sun" kind=passenger note="London - Toronto."
 #train col=No22 num=22 dir=up days=daily kind=passenger name="The Overseas" from=Chicago to=Montreal note="The Overseas, to Montreal (Pool 22). From Chicago 9.30 a.m. (NYC No. 76), Detroit 4.15 p.m., Windsor 4.25 - 4.40 p.m."
 #train col=No634 num=634 dir=up days="ex Sun" kind=passenger note="Windsor (from Windsor Yard) - London."
-mile,station,principal,prov,tz,No635,No19,No707,No37,No629,No631,No21,No705,No20,No630,No706,No38,No708,No632,No22,No634
-0.0,Toronto (Union),1,ON,E,lv 11.30p,lv 10.00p,lv 6.00p,lv 5.40p,lv 2.30p,lv 12.30p,lv 8.00a,lv 7.45a,,,ar 11.50a,ar 3.05p,ar 9.15p,ar 9.40p,ar 10.10p,
-2.3,Parkdale,0,ON,E,11.38p,10.08p,6.08p,5.48p,f2.37p,f12.37p,8.08a,7.53a,ar 8.30a,ar 9.30a,11.42a,2.55p,9.07p,9.30p,10.00p,
-4.5,West Toronto,1,ON,E,11.50p,10.18p,6.18p,5.58p,2.42p,12.42p,8.20a,8.03a,8.20a,f9.22a,11.35a,2.47p,9.00p,9.22p,9.52p,
-8.7,Islington,0,ON,E,f12.04a,,6.24p,,,,,8.11a,8.12a,9.17a,11.26a,,,9.10p,,
-10.9,Summerville,0,ON,E,,,f6.27p,,,,,,,,,,,,,
-12.6,Dixie,0,ON,E,,,f6.30p,,,,,,,,,,,,,
-14.2,Cooksville,0,ON,E,f12.14a,,6.33p,,,,,8.18a,,,11.18a,,,9.01p,,
-17.3,Erindale,0,ON,E,,,6.38p,,,,,f8.23a,,,f11.13a,,,,,
-21.2,Streetsville,1,ON,E,f12.26a,,ar 6.43p,h6.18p,,,h8.45a,ar 8.29a,,,lv 11.08a,,lv 8.32p,f8.52p,m9.26p,
-27.6,Hornby,0,ON,E,f12.36a,,,,,,f8.56a,,f7.48a,,,,,f8.44p,,
-32.1,Milton,1,ON,E,f12.43a,,,6.31p,,,f9.05a,,,,,2.07p,,8.37p,m9.14p,
-38.0,Campbellville,0,ON,E,,,,,,,,,7.31a,,,,,f8.27p,,
-39.2,Guelph Jct.,1,ON,E,ar 1.00a / lv 1.15a,,,6.48p,3.25p,1.25p,9.25a,,,8.36a,,1.55p,,ar 8.10p / lv 8.25p,9.03p,
-44.9,Puslinch,0,ON,E,f1.23a,,,,,,f9.35a,,7.19a,,,,,f8.00p,,
-52.0,Killean,0,ON,E,,,,,,,,,,,,,,f7.50p,,
-57.2,Galt,1,ON,E,ar 1.35a / lv 2.00a,11.23p,,7.14p,3.45p,1.45p,9.55a,,,8.15a,,1.32p,,ar 7.30p / lv 7.40p,8.35p,
-62.7,Dumfries,0,ON,E,,,,,,,,,6.56a,,,,,f7.15p,,
-67.6,Ayr,0,ON,E,f2.17a,,,7.30p,,,v10.16a,,,,,1.10p,,7.08p,p8.12p,
-74.3,Drumbo,0,ON,E,f2.25a,,,a7.38p,,,f10.26a,,n6.39a,,,a1.01p,,6.58p,,
-81.6,Innerkip,0,ON,E,f2.34a,,,u7.46p,,,f10.37a,,,,,v12.52p,,6.48p,,
-87.8,Woodstock,1,ON,E,ar 2.42a / lv 3.00a,11.59p,,8.02p,4.23p,2.23p,10.53a,,,7.39a,,12.45p,,ar 6.30p / lv 6.40p,7.48p,
-94.9,Zorra,0,ON,E,,,,,,,,,6.13a,,,,,6.19p,,
-101.0,Thamesford,0,ON,E,f3.20a,,,u8.22p,,,f11.15a,,,,,a12.25p,,6.10p,,
-109.1,Crumlin,0,ON,E,,,,,,,,,,,,,,f6.00p,,
-113.1,London (Quebec St.),0,ON,E,,,,,,,,,,,,,,5.55p,,
-114.6,London,1,ON,E,ar 3.40a / lv 3.55a,ar 12.30a / lv 12.35a,,ar 8.40p / lv 8.50p,ar 4.50p,ar 2.50p,ar 11.35a / lv 11.50a,,,lv 7.10a,,ar 11.50a / lv 12.05p,,lv 5.50p,ar 6.50p / lv 7.10p,ar 6.30p
-125.1,Komoka,0,ON,E,f4.08a,,,,,,,,ar 5.20a / lv 5.35a,,,a11.33a,,,,
-129.7,Caradoc,0,ON,E,f4.13a,,,,,,,,,,,a11.26a,,,,
-144.8,Glencoe,0,ON,E,,,,,,,,,,,,a11.07a,,,,
-163.9,Thamesville,0,ON,E,f4.57a,,,a9.41p,,,d12.37p,,,,,10.45a,,,,f5.34p
-169.3,Kent Bridge,0,ON,E,f5.02a,,,,,,,,,,,,,,,
-178.8,Chatham,1,ON,E,5.35a,1.42a,,10.00p,,,12.53p,,4.13a,,,10.26a,,,5.40p,5.15p
-190.6,Jeanette,0,ON,E,f5.54a,,,,,,,,,,,,,,,
-194.5,Tilbury,0,ON,E,6.00a,,,10.24p,,,1.16p,,,,,10.00a,,,j5.16p,4.45p
-204.7,St. Joachim,0,ON,E,f6.11a,,,,,,,,,,,,,,,
-208.8,Belle River,0,ON,E,f6.15a,,,a10.39p,,,,,,,,a9.44a,,,j5.03p,f4.19p
-215.6,Elmstead,0,ON,E,,,,,,,,,,,,,,,,
-222.7,Walkerville Junction,0,ON,E,f6.30a,,,,,,,,,,,,,,,
-226.1,Windsor,1,ON,E,ar 6.40a,ar 2.40a,,ar 11.05p,,,ar 1.55p,,lv 3.15a,,,lv 9.20a,,,lv 4.40p,lv z4.00p
+# (27 Oct 2026) The Owen Sound trains 705, 707 / 709, 706, 708 / 710 (Toronto - Streetsville here) moved to on_cp_t062.csv (Table 62, in full).
+mile,station,principal,prov,tz,No635,No19,No37,No629,No631,No21,No20,No630,No38,No632,No22,No634
+0.0,Toronto (Union),1,ON,E,lv 11.30p,lv 10.00p,lv 5.40p,lv 2.30p,lv 12.30p,lv 8.00a,,,ar 3.05p,ar 9.40p,ar 10.10p,
+2.3,Parkdale,0,ON,E,11.38p,10.08p,5.48p,f2.37p,f12.37p,8.08a,ar 8.30a,ar 9.30a,2.55p,9.30p,10.00p,
+4.5,West Toronto,1,ON,E,11.50p,10.18p,5.58p,2.42p,12.42p,8.20a,8.20a,f9.22a,2.47p,9.22p,9.52p,
+8.7,Islington,0,ON,E,f12.04a,,,,,,8.12a,9.17a,,9.10p,,
+10.9,Summerville,0,ON,E,,,,,,,,,,,,
+12.6,Dixie,0,ON,E,,,,,,,,,,,,
+14.2,Cooksville,0,ON,E,f12.14a,,,,,,,,,9.01p,,
+17.3,Erindale,0,ON,E,,,,,,,,,,,,
+21.2,Streetsville,1,ON,E,f12.26a,,h6.18p,,,h8.45a,,,,f8.52p,m9.26p,
+27.6,Hornby,0,ON,E,f12.36a,,,,,f8.56a,f7.48a,,,f8.44p,,
+32.1,Milton,1,ON,E,f12.43a,,6.31p,,,f9.05a,,,2.07p,8.37p,m9.14p,
+38.0,Campbellville,0,ON,E,,,,,,,7.31a,,,f8.27p,,
+39.2,Guelph Jct.,1,ON,E,ar 1.00a / lv 1.15a,,6.48p,3.25p,1.25p,9.25a,,8.36a,1.55p,ar 8.10p / lv 8.25p,9.03p,
+44.9,Puslinch,0,ON,E,f1.23a,,,,,f9.35a,7.19a,,,f8.00p,,
+52.0,Killean,0,ON,E,,,,,,,,,,f7.50p,,
+57.2,Galt,1,ON,E,ar 1.35a / lv 2.00a,11.23p,7.14p,3.45p,1.45p,9.55a,,8.15a,1.32p,ar 7.30p / lv 7.40p,8.35p,
+62.7,Dumfries,0,ON,E,,,,,,,6.56a,,,f7.15p,,
+67.6,Ayr,0,ON,E,f2.17a,,7.30p,,,v10.16a,,,1.10p,7.08p,p8.12p,
+74.3,Drumbo,0,ON,E,f2.25a,,a7.38p,,,f10.26a,n6.39a,,a1.01p,6.58p,,
+81.6,Innerkip,0,ON,E,f2.34a,,u7.46p,,,f10.37a,,,v12.52p,6.48p,,
+87.8,Woodstock,1,ON,E,ar 2.42a / lv 3.00a,11.59p,8.02p,4.23p,2.23p,10.53a,,7.39a,12.45p,ar 6.30p / lv 6.40p,7.48p,
+94.9,Zorra,0,ON,E,,,,,,,6.13a,,,6.19p,,
+101.0,Thamesford,0,ON,E,f3.20a,,u8.22p,,,f11.15a,,,a12.25p,6.10p,,
+109.1,Crumlin,0,ON,E,,,,,,,,,,f6.00p,,
+113.1,London (Quebec St.),0,ON,E,,,,,,,,,,5.55p,,
+114.6,London,1,ON,E,ar 3.40a / lv 3.55a,ar 12.30a / lv 12.35a,ar 8.40p / lv 8.50p,ar 4.50p,ar 2.50p,ar 11.35a / lv 11.50a,,lv 7.10a,ar 11.50a / lv 12.05p,lv 5.50p,ar 6.50p / lv 7.10p,ar 6.30p
+125.1,Komoka,0,ON,E,f4.08a,,,,,,ar 5.20a / lv 5.35a,,a11.33a,,,
+129.7,Caradoc,0,ON,E,f4.13a,,,,,,,,a11.26a,,,
+144.8,Glencoe,0,ON,E,,,,,,,,,a11.07a,,,
+163.9,Thamesville,0,ON,E,f4.57a,,a9.41p,,,d12.37p,,,10.45a,,,f5.34p
+169.3,Kent Bridge,0,ON,E,f5.02a,,,,,,,,,,,
+178.8,Chatham,1,ON,E,5.35a,1.42a,10.00p,,,12.53p,4.13a,,10.26a,,5.40p,5.15p
+190.6,Jeanette,0,ON,E,f5.54a,,,,,,,,,,,
+194.5,Tilbury,0,ON,E,6.00a,,10.24p,,,1.16p,,,10.00a,,j5.16p,4.45p
+204.7,St. Joachim,0,ON,E,f6.11a,,,,,,,,,,,
+208.8,Belle River,0,ON,E,f6.15a,,a10.39p,,,,,,a9.44a,,j5.03p,f4.19p
+215.6,Elmstead,0,ON,E,,,,,,,,,,,,
+222.7,Walkerville Junction,0,ON,E,f6.30a,,,,,,,,,,,
+226.1,Windsor,1,ON,E,ar 6.40a,ar 2.40a,ar 11.05p,,,ar 1.55p,lv 3.15a,,lv 9.20a,,lv 4.40p,lv z4.00p

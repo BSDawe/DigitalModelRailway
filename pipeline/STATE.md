@@ -1771,3 +1771,10 @@ Stations of different railways within 250 m (70 pairs; script: same check over v
 - Not entered: Welland - Niagara Falls rows (bus connections, the bus sign in the Guide), Dunnville / St. Anns buses.
 - Links (APPROXIMATE, Claude): International Railway Bridge, Fort Erie - mid-river border; TH&B - Canada Southern eastbound main tie at Welland.
   Hand: TH&B Hamilton = Hunter Street = the collection's "2nd West Hamilton station" (Brendan, 27 Oct 2026), Welland (NYC station point), Waterford (BW&LE station building), Fort Erie = Bridgeburg.
+
+## Version 80 (27 October 2026): CP Table 62 Toronto - Orangeville - Owen Sound; CP Ontario paused for the week
+- on_cp_t062 (CP timetable 1948, Brendan's image; scan cp1948_on/t062.png): 705, 707 (ex Sun), 709 (Sun) / 706, 708 (ex Sun), 710 (Sun) Toronto - Streetsville -
+  Orangeville - Owen Sound, printed miles; M748 / M747 Cataract - Orangeville mixed (Elora line, Table 63, not in hand). Cataract, Melville, Fraxa by mileage.
+- DUPLICATES REMOVED: on_cp_t707.csv (S.S. Manitoba boat trains 707 Thu / 708 Tue, ends only) DELETED: the regular 707 / 708 with the same times (notes
+  carry the boat-train days). The Toronto - Streetsville columns 705, 707 (/ 709), 706, 708 (/ 710) dropped from on_cp_t049w.
+- Brendan (27 Oct 2026): STOP CP ONTARIO HERE FOR THIS WEEK. Still to come: Tables 63 (Elora), 65 (Orangeville - Walkerton / Teeswater ...), others.

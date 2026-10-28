@@ -1,0 +1,44 @@
+# Canadian Pacific, Table 62: Toronto - Streetsville - Orangeville - Owen Sound. Canadian Pacific timetable, 1948 (Brendan, 27 Oct 2026). Eastern time. Miles as printed.
+# Cataract and Orangeville are printed as two rows (Ar, Lv): one row each here. Connections: Streetsville Table 50, Cataract Table 63, Orangeville Table 65 (not in hand).
+# Replaces on_cp_t707.csv (the S.S. Manitoba boat trains 707 / 708, Toronto - Owen Sound ends only: the same times as the regular 707 / 708) and the Toronto -
+# Streetsville columns 705, 707 (/ 709), 706, 708 (/ 710) of on_cp_t049w.csv (Table 50 prints these Owen Sound trains to Streetsville).
+#train col=No705 num=705 dir=down days="ex Sun" kind=passenger note="Daily except Sunday: Toronto 7.45 a.m. to Owen Sound 12.30 p.m."
+#train col=No707 num=707 dir=down days="ex Sun" kind=passenger note="Daily except Sunday: Toronto 6.00 p.m. to Owen Sound 10.30 p.m.; the boat train for the S.S. Manitoba cruises from Owen Sound on Thursdays, June 24 to August 26."
+#train col=No709 num=709 dir=down days=Sun kind=passenger note="Sunday only: Toronto 6.00 p.m. to Owen Sound 10.15 p.m."
+#train col=M748 num=748 dir=down days="ex Sun" kind=mixed note="Mixed, daily except Sunday: Cataract 6.00 p.m. to Orangeville 6.30 p.m. (from the Elora line, Table 63, not yet in hand)."
+#train col=No706 num=706 dir=up days="ex Sun" kind=passenger note="Daily except Sunday: Owen Sound 7.30 a.m. to Toronto 11.50 a.m."
+#train col=No708 num=708 dir=up days="ex Sun" kind=passenger note="Daily except Sunday: Owen Sound 4.45 p.m. to Toronto 9.15 p.m.; the boat train from the S.S. Manitoba cruises on Tuesdays, June 24 to August 26."
+#train col=No710 num=710 dir=up days=Sun kind=passenger note="Sunday only: Owen Sound 5.15 p.m. to Toronto 9.15 p.m."
+#train col=M747 num=747 dir=up days="ex Sun" kind=mixed note="Mixed, daily except Sunday: Orangeville 10.30 a.m. to Cataract 10.50 a.m. (on to the Elora line, Table 63, not yet in hand)."
+mile,station,principal,prov,tz,No705,No707,No709,M748,No706,No708,No710,M747
+0.0,Toronto (Union Station),1,ON,E,lv 7.45a,lv 6.00p,lv 6.00p,,ar 11.50a,ar 9.15p,ar 9.15p,
+2.3,Parkdale,0,ON,E,7.53a,6.08p,6.08p,,11.42a,9.07p,9.07p,
+4.5,West Toronto,1,ON,E,8.03a,6.18p,6.18p,,11.35a,9.00p,9.00p,
+21.2,Streetsville,1,ON,E,8.32a,6.45p,6.45p,,11.05a,8.30p,8.30p,
+23.3,Meadowvale,0,ON,E,8.37a,6.50p,,,f11.00a,8.22p,,
+25.5,Churchville,0,ON,E,f8.42a,f6.55p,,,f10.55a,f8.17p,f8.19p,
+28.7,Brampton,1,ON,E,8.50a,7.02p,7.00p,,10.48a,8.08p,8.12p,
+33.4,Snelgrove,0,ON,E,f9.00a,f7.10p,,,f10.37a,f7.58p,,
+38.3,Cheltenham,0,ON,E,9.10a,7.19p,7.16p,,f10.31a,7.50p,7.55p,
+41.0,Inglewood,0,ON,E,9.16a,7.26p,7.21p,,10.26a,7.43p,7.50p,
+45.2,Forks of Credit,0,ON,E,9.26a,7.35p,7.30p,,10.18a,7.35p,7.42p,
+47.8,Cataract,1,ON,E,9.33a,7.43p,7.36p,lv 6.00p,10.12a,7.28p,7.36p,ar 10.50a
+50.9,Alton,0,ON,E,9.41a,7.50p,7.43p,,10.05a,7.22p,7.30p,f10.42a
+53.0,Melville,0,ON,E,f9.47a,f7.55p,,,f10.00a,f7.17p,7.25p,
+55.8,Orangeville,1,ON,E,ar 9.55a / lv 10.05a,ar 8.00p / lv 8.05p,ar 7.55p / lv 8.00p,ar 6.30p,ar 9.45a / lv 9.55a,ar 7.00p / lv 7.10p,ar 7.15p / lv 7.20p,lv 10.30a
+59.8,Fraxa,0,ON,E,10.15a,8.20p,8.10p,,9.35a,6.50p,7.05p,
+63.0,Laurel,0,ON,E,10.21a,f8.27p,,,f9.29a,6.43p,,
+67.3,Crombies,0,ON,E,f10.27a,f8.35p,,,f9.22a,f6.36p,,
+71.8,Shelburne,1,ON,E,10.36a,8.43p,8.31p,,9.13a,6.28p,6.44p,
+75.3,Melancthon,0,ON,E,10.42a,f8.50p,,,f9.07a,6.20p,,
+79.1,Corbetton,0,ON,E,10.49a,8.57p,8.44p,,9.00a,6.13p,6.32p,
+83.1,Dundalk,1,ON,E,10.57a,9.05p,8.52p,,8.52a,6.06p,6.25p,
+88.1,Proton,0,ON,E,11.05a,9.14p,9.00p,,8.44a,5.57p,6.17p,
+90.2,Saugeen,0,ON,E,11.10a,9.18p,9.05p,,8.40a,5.52p,6.13p,
+93.5,Flesherton,1,ON,E,11.20a,9.25p,9.13p,,8.34a,5.46p,6.08p,
+99.9,Markdale,1,ON,E,11.35a,9.35p,9.23p,,8.23a,5.35p,5.59p,
+105.2,Berkeley,0,ON,E,11.45a,f9.44p,f9.32p,,f8.13a,5.25p,5.51p,
+109.3,Holland Centre,0,ON,E,11.53a,f9.52p,,,8.05a,5.17p,,
+116.2,Chatsworth,1,ON,E,12.07p,10.05p,9.52p,,7.53a,5.05p,5.35p,
+121.4,Rockford,0,ON,E,f12.16p,f10.15p,,,f7.42a,f4.56p,,
+128.8,Owen Sound,1,ON,E,ar 12.30p,ar 10.30p,ar 10.15p,,lv 7.30a,lv 4.45p,lv 5.15p,
