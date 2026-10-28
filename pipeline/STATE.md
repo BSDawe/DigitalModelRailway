@@ -1770,4 +1770,4 @@ Stations of different railways within 250 m (70 pairs; script: same check over v
 - Agency THB added (on_build agencies list).
 - Not entered: Welland - Niagara Falls rows (bus connections, the bus sign in the Guide), Dunnville / St. Anns buses.
 - Links (APPROXIMATE, Claude): International Railway Bridge, Fort Erie - mid-river border; TH&B - Canada Southern eastbound main tie at Welland.
-  Hand: TH&B Hamilton (Hunter St.), Welland (NYC station point), Waterford (BW&LE station building), Fort Erie = Bridgeburg.
+  Hand: TH&B Hamilton = Hunter Street = the collection's "2nd West Hamilton station" (Brendan, 27 Oct 2026), Welland (NYC station point), Waterford (BW&LE station building), Fort Erie = Bridgeburg.

@@ -163,7 +163,7 @@ def canon(n):
 # ---------------------------------------------------------------- places
 # Points given by hand: APPROXIMATE, Claude's from general knowledge, to be confirmed by Brendan (the collections have no point for them)
 _TU = (-79.380688, 43.645186, 'Toronto Union Station (the collection\'s "2nd Toronto Union station"; Brendan, 23 Oct 2026)')
-_HUNTER = (-79.8716495, 43.2538612, 'TH&B Hamilton (Hunter Street) station, APPROXIMATE: Claude, on the TH&B track by Hunter Street')
+_HUNTER = (-79.8691523, 43.253237, 'TH&B Hamilton (Hunter Street) station: the collection\'s "2nd West Hamilton station" (TH&B, filed under CP; Brendan, 27 Oct 2026)')
 _FE = (-78.9163205, 42.9283318, 'Fort Erie (NYC / Michigan Central), the collection\'s Bridgeburg station by the International Bridge (Bridgeburg was renamed Fort Erie in 1932)')
 HAND = {('thb', 'toronto'): _TU, ('cpthb', 'toronto'): _TU, ('thb', 'hamilton'): _HUNTER, ('cpthb', 'hamilton'): _HUNTER, ('thb', 'fort erie'): _FE,
         ('thb', 'welland'): (-79.2503608, 42.9765386, 'Welland (NYC / Michigan Central station used by the TH&B), APPROXIMATE: the collection\'s Welland point by the Canada Southern'),
