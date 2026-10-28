@@ -1,0 +1,28 @@
+# Toronto, Hamilton & Buffalo Railway: Hamilton - Smithville - Welland, then the New York Central (Michigan Central) Welland - Fort Erie - Buffalo. TH&B Nos. 73, 76, 144, 145 are gas-electric cars (kind motor; Official Guide notes, Brendan 27 Oct 2026). Sources: CP timetable 1948, Table 56 (Toronto - Hamilton - Niagara Falls - Buffalo), and the Official Guide, April 25, 1948, TH&B table (Montreal, Ottawa, Toronto, Hamilton, Buffalo and the East; Chicago, Waterford, Hamilton and Toronto); Brendan, 27 Oct 2026. EASTERN TIME.
+# Built to the international boundary on the International Railway Bridge (border times by mileage, ~); Black Rock and Buffalo in the notes (U.S., not built).
+# Miles: TH&B as printed (Welland 38); Welland - Fort Erie 17.3 from CP Table 56 (76.8 to 94.1). Welland and Fort Erie arrival / departure from Table 56.
+# NOT ENTERED: the Welland - Niagara Falls, Ont. - Niagara Falls, N.Y. rows (bus connections, sign: connection by bus), Dunnville and St. Anns buses.
+# The TH&B prints its own numbers for the through Toronto - Buffalo trains (CP 721 / TH&B 372, 741 / 374, 801 / 380, 821 / 382; 712 / 371, 732 / 73, 752 / 375,
+# 792 / 379, 832 / 383): the CP numbers on the Toronto - Hamilton file, the TH&B numbers here (one trip each until the run-through join).
+#train col=No372 num=372 dir=down days=daily kind=passenger note="Through from Toronto as CP No. 721 (on_cpthb_t056.csv). Black Rock 11.30, Buffalo (Terrace Station) 11.43, Buffalo (Central Terminal) 11.55 a.m. St. Anns: connection by bus (not entered)." to=Buffalo
+#train col=No374 num=374 dir=down days=daily kind=passenger note="Through from Toronto as CP No. 741 (on_cpthb_t056.csv). Black Rock 3.10, Buffalo (Terrace Station) 3.23, Buffalo (Central Terminal) 3.35 p.m." to=Buffalo
+#train col=No76 num=76 dir=down days="ex Sun" kind=motor note="Black Rock 6.15, Buffalo (Terrace Station) 6.27, Buffalo (Central Terminal) 6.40 p.m. Gas-electric car. Daily except Sunday; starts at Hamilton (not in CP Table 56)." to=Buffalo
+#train col=No380 num=380 dir=down days=daily kind=passenger note="Through from Toronto as CP No. 801 (on_cpthb_t056.csv). Black Rock 8.50, Buffalo (Terrace Station) 9.03, Buffalo (Central Terminal) 9.15 p.m. Fenwick (x): stops on signal to discharge passengers from Toronto, and on signal Sunday." to=Buffalo
+#train col=No382 num=382 dir=down days=daily kind=passenger note="Through from Toronto as CP No. 821 (on_cpthb_t056.csv). Black Rock 11.20, Buffalo (Terrace Station) 11.34, Buffalo (Central Terminal) 11.45 p.m." to=Buffalo
+#train col=No371 num=371 dir=up days=daily kind=passenger note="Through to Toronto as CP No. 712. From Buffalo (Central Terminal) 5.05 a.m., Black Rock 5.27. Welland: departure printed f (stops on signal)." from=Buffalo
+#train col=No73 num=73 dir=up days="ex Sun" kind=motor note="Through to Toronto as CP No. 732. From Buffalo (Central Terminal) 5.35 a.m., Terrace Station 5.45, Black Rock 5.59. Gas-electric car." from=Buffalo
+#train col=No375 num=375 dir=up days=daily kind=passenger note="Through to Toronto as CP No. 752. From Buffalo (Central Terminal) 8.45 a.m., Terrace Station 8.56, Black Rock 9.09. Fenwick (z): stops on signal Sunday (entered as a flag stop)." from=Buffalo
+#train col=No379 num=379 dir=up days=daily kind=passenger note="Through to Toronto as CP No. 792. From Buffalo (Central Terminal) 2.05 p.m., Terrace Station 2.16, Black Rock 2.29. St. Anns 3.13: connection by bus (not entered)." from=Buffalo
+#train col=No383 num=383 dir=up days=daily kind=passenger note="Through to Toronto as CP No. 832. From Buffalo (Central Terminal) 5.30 p.m., Terrace Station 5.41, Black Rock 5.55." from=Buffalo
+mile,station,principal,prov,tz,No372,No374,No76,No380,No382,No371,No73,No375,No379,No383
+0.0,Hamilton,1,ON,E,lv 9.40a,lv 1.20p,lv 4.00p,lv 7.10p,lv 9.35p,ar 7.05a,ar 8.05a,ar 10.55a,ar 4.10p,ar 7.50p
+7.0,Stoney Creek,0,ON,E,,,,,,,f7.47a,,,
+11.0,Vinemount,0,ON,E,,,f4.18p,,,,f7.38a,,f3.50p,
+15.0,Grassies,0,ON,E,f10.02a,,f4.24p,,,,f7.32a,,f3.44p,
+20.0,Smithville,1,ON,E,f10.09a,f1.50p,4.32p,f7.44p,,,7.23a,f10.25a,f3.37p,f7.13p
+23.0,St. Anns,0,ON,E,,,f4.37p,,,,f7.18a,,,
+26.0,Silverdale,0,ON,E,,,f4.42p,,,,f7.13a,,,
+31.0,Fenwick,0,ON,E,f10.26a,f2.05p,f4.51p,f7.59p,,,f7.05a,f10.10a,f3.20p,f6.56p
+38.0,Welland,1,ON,E,10.40a,2.20p,5.10p,8.12p,10.37p,ar 6.05a / lv 6.06a,ar 6.45a / lv 6.55a,ar 9.55a / lv 10.00a,ar 3.05p / lv 3.10p,ar 6.40p / lv 6.45p
+55.3,"Fort Erie, Ont.",1,ON,E,11.12a,2.52p,5.55p,8.37p,11.03p,5.38a,6.15a,9.31a,2.42p,6.10p
+55.6,"International Boundary (Niagara River, to Black Rock, N.Y.)",0,ON,E,~ar 11.18a,~ar 2.58p,~ar 6.02p,~ar 8.41p,~ar 11.09p,~lv 5.31a,~lv 6.04a,~lv 9.16a,~lv 2.33p,~lv 6.00p

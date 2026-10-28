@@ -1,0 +1,12 @@
+# Toronto, Hamilton & Buffalo Railway: Hamilton - Brantford - Waterford (gas-electric cars; connections with the NYC / Michigan Central at Waterford for St. Thomas, Detroit and Chicago). TH&B Nos. 73, 76, 144, 145 are gas-electric cars (kind motor; Official Guide notes, Brendan 27 Oct 2026). Sources: CP timetable 1948, Table 56 (Toronto - Hamilton - Niagara Falls - Buffalo), and the Official Guide, April 25, 1948, TH&B table (Montreal, Ottawa, Toronto, Hamilton, Buffalo and the East; Chicago, Waterford, Hamilton and Toronto); Brendan, 27 Oct 2026. EASTERN TIME.
+# Miles as printed from Waterford. Also printed in CP Table 56 (Hamilton - Brantford - Waterford, in the columns of 721 and 722).
+#train col=No144 num=144 dir=down days="ex Sun" kind=motor note="Gas-electric car, daily except Sunday: Waterford 11.30 a.m. to Hamilton 12.55 p.m. Connections (not through service): at Waterford from the NYC (Chicago 11.05 p.m., Detroit 8.20 a.m., St. Thomas 10.27 a.m.); at Hamilton CP No. 722, 2.15 p.m. to Toronto 3.10 p.m."
+#train col=No145 num=145 dir=up days="ex Sun" kind=motor note="Gas-electric car, daily except Sunday: Hamilton 8.50 a.m. to Waterford 10.10 a.m. Connections (not through service): at Hamilton from CP No. 731 (Toronto 7.45 a.m.); at Waterford the NYC to St. Thomas 11.01 a.m., Detroit 1.25 p.m., Chicago 7.20 a.m."
+mile,station,principal,prov,tz,No144,No145
+0.0,Waterford,1,ON,E,lv 11.30a,ar 10.10a
+8.0,Scotland,0,ON,E,f11.46a,f9.51a
+18.0,Brantford,1,ON,E,12.05p,9.34a
+28.0,Jerseyville,0,ON,E,f12.24p,f9.19a
+32.0,Summit,0,ON,E,f12.30p,f9.14a
+39.0,Dundas,0,ON,E,f12.43p,
+43.0,Hamilton,1,ON,E,ar 12.55p,lv 8.50a

@@ -1753,3 +1753,21 @@ Stations of different railways within 250 m (70 pairs; script: same check over v
   motor-train signs but are not tagged (e.g. Alberta CN 168 / 171 / 203, CP 6 / 138, Saskatchewan CN 199 / 211 / 212 / 214 ...; many mentions are motor
   BUSES, left out) and tag the real motor trains.
 - page_template.html: drawConsist (n = 7 cars, 4 for local / mixed), the twin-car branch of the car drawing for the interurban.
+
+## Version 79 (27 October 2026): Table 56 Toronto - Hamilton - Buffalo; the TH&B as its own railway
+- Sources: CP timetable 1948 Table 56 (Brendan's image) and the Official Guide, April 25, 1948 TH&B table (Hamilton - Welland - Fort Erie with every station;
+  Waterford - Brantford - Hamilton Nos. 144 / 145; Dunnville bus). Script: scratchpad on/t056.py (helpers on/t122lib.py).
+- TH&B OWN COLOUR (Brendan, 27 Oct 2026: CP-filed but NYC majority-owned; between CP and NYC): new rail 'onthb', kind 'B', colour 6A4048 (dark mode c99aa3),
+  Claude's pick; page_template wired (css vars, badge, legend, KIND_*, colours, kinds list). owner(): the collection's TH&B folder (under CP) -> 'thb';
+  'American railroads / Canada Southern' -> 'nyc' (Michigan Central; was None).
+- on_cpthb_t056 (rail 'oncpthb', CP colour, graph 'cpthb'): CP 731, 721, 741, 761, 801, 821, 763 / 712, 732, 752, 722, 792, 832, 762 Toronto - Sunnyside -
+  Hamilton over the CN Lake Shore (trackage rights), then TH&B to Hunter Street. on_thb_t056: TH&B 372, 374, 76, 380, 382 / 371, 73, 375, 379, 383 Hamilton -
+  Smithville - Welland, NYC Welland - Fort Erie (= Bridgeburg station point; Brendan: watch for NYC Bridgeburg) - International Boundary on the bridge (border
+  times by mileage; Black Rock / Buffalo in notes). The through trains change numbers at Hamilton (CP 721 = TH&B 372 ...): RUN-THROUGH JOIN candidates.
+  on_thb_t056w: TH&B 144 / 145 Waterford - Brantford - Hamilton: CONNECTIONS with the NYC at Waterford, not through service (Brendan doubts a through train).
+- Gas-electric cars (Guide notes; Brendan): TH&B 73, 76, 144, 145 tagged kind=motor (motor drawing itself on hold).
+- Michigan Central / Canada Southern = straight NYC (Brendan): owner 'nyc', drawn NYC grey.
+- Agency THB added (on_build agencies list).
+- Not entered: Welland - Niagara Falls rows (bus connections, the bus sign in the Guide), Dunnville / St. Anns buses.
+- Links (APPROXIMATE, Claude): International Railway Bridge, Fort Erie - mid-river border; TH&B - Canada Southern eastbound main tie at Welland.
+  Hand: TH&B Hamilton (Hunter St.), Welland (NYC station point), Waterford (BW&LE station building), Fort Erie = Bridgeburg.

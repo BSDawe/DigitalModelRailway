@@ -1,0 +1,21 @@
+# Canadian Pacific, Table 56: Toronto - Sunnyside - Hamilton. TH&B Nos. 73, 76, 144, 145 are gas-electric cars (kind motor; Official Guide notes, Brendan 27 Oct 2026). Sources: CP timetable 1948, Table 56 (Toronto - Hamilton - Niagara Falls - Buffalo), and the Official Guide, April 25, 1948, TH&B table (Montreal, Ottawa, Toronto, Hamilton, Buffalo and the East; Chicago, Waterford, Hamilton and Toronto); Brendan, 27 Oct 2026. EASTERN TIME.
+# CP trains over the CN Lake Shore line (trackage rights) to the junction before Hamilton, then the TH&B into Hamilton (Hunter Street). Miles as printed.
+# The through Buffalo trains change numbers at Hamilton (TH&B numbers: on_thb_t056.csv). Signs: * daily, dagger daily except Sunday.
+#train col=No731 num=731 dir=down days="ex Sun" kind=passenger note="Connects at Hamilton with TH&B No. 145 for Brantford and Waterford (Chicago)."
+#train col=No721 num=721 dir=down days=daily kind=passenger note="Through train Toronto - Buffalo: TH&B No. 372 from Hamilton (on_thb_t056.csv)." to=Buffalo
+#train col=No741 num=741 dir=down days=daily kind=passenger note="Through train Toronto - Buffalo: TH&B No. 374 from Hamilton (on_thb_t056.csv)." to=Buffalo
+#train col=No761 num=761 dir=down days="ex Sun" kind=passenger
+#train col=No801 num=801 dir=down days=daily kind=passenger note="Through train Toronto - Buffalo: TH&B No. 380 from Hamilton (on_thb_t056.csv)." to=Buffalo
+#train col=No821 num=821 dir=down days=daily kind=passenger note="Through train Toronto - Buffalo: TH&B No. 382 from Hamilton (on_thb_t056.csv)." to=Buffalo
+#train col=No763 num=763 dir=down days=daily kind=passenger
+#train col=No712 num=712 dir=up days=daily kind=passenger note="Through train Buffalo - Toronto: TH&B No. 371 to Hamilton (on_thb_t056.csv)." from=Buffalo
+#train col=No732 num=732 dir=up days="ex Sun" kind=passenger note="Through train Buffalo - Toronto: TH&B No. 73 to Hamilton (on_thb_t056.csv)." from=Buffalo
+#train col=No752 num=752 dir=up days=daily kind=passenger note="Through train Buffalo - Toronto: TH&B No. 375 to Hamilton (on_thb_t056.csv)." from=Buffalo
+#train col=No722 num=722 dir=up days="ex Sun" kind=passenger note="Connects at Hamilton with TH&B No. 144 from Waterford and Brantford (Chicago)."
+#train col=No792 num=792 dir=up days=daily kind=passenger note="Through train Buffalo - Toronto: TH&B No. 379 to Hamilton (on_thb_t056.csv)." from=Buffalo
+#train col=No832 num=832 dir=up days=daily kind=passenger note="Through train Buffalo - Toronto: TH&B No. 383 to Hamilton (on_thb_t056.csv)." from=Buffalo
+#train col=No762 num=762 dir=up days=daily kind=passenger
+mile,station,principal,prov,tz,No731,No721,No741,No761,No801,No821,No763,No712,No732,No752,No722,No792,No832,No762
+0.0,Toronto (Union Station),1,ON,E,lv 7.45a,lv 8.40a,lv 12.20p,lv 4.15p,lv 6.10p,lv 8.30p,lv 10.10p,ar 8.05a,ar 9.05a,ar 11.55a,ar 3.10p,ar 5.15p,ar 8.55p,ar 9.55p
+3.5,Sunnyside,0,ON,E,7.54a,8.49a,12.29p,4.24p,6.19p,8.39p,10.19p,7.54a,8.54a,11.44a,2.59p,5.04p,8.44p,9.44p
+39.3,Hamilton,1,ON,E,ar 8.40a,ar 9.35a,ar 1.15p,ar 5.10p,ar 7.05p,ar 9.30p,ar 11.05p,lv 7.10a,lv 8.10a,lv 11.00a,lv 2.15p,lv 4.20p,lv 8.00p,lv 9.00p
