@@ -1743,6 +1743,10 @@ Stations of different railways within 250 m (70 pairs; script: same check over v
   files, e.g. on_cn_t126m / d / p / c / g, as duplicates). Wait for the branch tables before renumbering by hand.
 
 ## FOR THE NEXT BIG UPLOAD: how trains are drawn (Brendan, 27 Oct 2026)
+- (Brendan, 28 Oct 2026, 09:28) INTERURBAN TRACK AND STATIONS: every interurban line drawn as a SOLID line with CIRCLE stations, as the Chilliwack line
+  is now (not the railway double-dash track and square stations). Collapse all the B.C. Electric lines (Chilliwack, Central Park, Burnaby Lake, Lulu
+  Island, Marpole - New Westminster) into ONE style, red (one legend entry instead of the five circles). The L&PS (kind 'P', its own dark blue / gold)
+  in the same format: solid line, circle stations.
 - INTERURBAN (B.C. Electric Chilliwack trains, now two coupled cars): draw like the mainline consists (drawConsist: laid along the track, true-ish length
   zoomed in) but FOUR capsules, all in the interurban red (no black locomotive: self-propelled cars), direction nose on the leading car. The local
   lines (Central Park, Burnaby Lake, Lulu Island) drawn THE SAME WAY (Brendan, 10:16: no need to tell them apart by drawing; the Chilliwack trains
