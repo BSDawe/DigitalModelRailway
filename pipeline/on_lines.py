@@ -167,7 +167,7 @@ def canon(n):
 _TU = (-79.380688, 43.645186, 'Toronto Union Station (the collection\'s "2nd Toronto Union station"; Brendan, 23 Oct 2026)')
 _HUNTER = (-79.8691523, 43.253237, 'TH&B Hamilton (Hunter Street) station: the collection\'s "2nd West Hamilton station" (TH&B, filed under CP; Brendan, 27 Oct 2026)')
 _FE = (-78.9163205, 42.9283318, 'Fort Erie (NYC / Michigan Central), the collection\'s Bridgeburg station by the International Bridge (Bridgeburg was renamed Fort Erie in 1932)')
-HAND = {('thb', 'toronto'): _TU, ('cpthb', 'toronto'): _TU, ('thb', 'hamilton'): _HUNTER, ('cpthb', 'hamilton'): _HUNTER, ('thb', 'fort erie'): _FE,
+HAND = {('thb', 'toronto'): _TU, ('cpthb', 'toronto'): _TU, ('thb', 'hamilton'): _HUNTER, ('cpthb', 'hamilton'): _HUNTER, ('cp', 'hamilton'): _HUNTER, ('thb', 'fort erie'): _FE,
         ('thb', 'welland'): (-79.2503608, 42.9765386, 'Welland (NYC / Michigan Central station used by the TH&B), APPROXIMATE: the collection\'s Welland point by the Canada Southern'),
         ('thb', 'waterford'): (-80.3058704, 42.9328303, 'TH&B Waterford, the collection\'s Brantford Waterloo & Lake Erie station building'),
         ('cp', 'toronto'): _TU, ('cn', 'toronto'): _TU, ('onr', 'toronto'): _TU,
@@ -277,7 +277,7 @@ SHARED = {('onr', 'toronto union'): 'TORONTO_UNION', ('oncn', 'toronto union'): 
           ('oncp', 'levis'): 'LEVIS', ('oncn', 'levis'): 'LEVIS',          # one Levis station for CN and CP (Quebec Central; Brendan, 25 Oct 2026)                          # one Palais Station (CP Table 33 and CN Table 38)                             # one station at Cochrane (CN Table 38 and the ONR)
           ('oncn', 'don'): 'CP_DON',                                       # Don (Queen St. East): one station, CN Table 122 and CP Table 50
           ('onthb', 'toronto union'): 'TORONTO_UNION', ('oncpthb', 'toronto union'): 'TORONTO_UNION', ('onthb', 'toronto'): 'TORONTO_UNION', ('oncpthb', 'toronto'): 'TORONTO_UNION',
-          ('onthb', 'hamilton'): 'THB_HAMILTON', ('oncpthb', 'hamilton'): 'THB_HAMILTON',   # Hunter Street: CP and TH&B trains
+          ('onthb', 'hamilton'): 'THB_HAMILTON', ('oncpthb', 'hamilton'): 'THB_HAMILTON', ('oncp', 'hamilton'): 'THB_HAMILTON',   # Hunter Street: CP and TH&B trains
           ('onlps', 'london'): 'CN_LONDON', ('onlps', 'c n r wabash depot'): 'CN_ST_THOMAS',   # L&PS London station: part of the CN London station complex (Brendan); C.N.R. - Wabash Depot = CN St. Thomas
           ('onnyco', 'finch'): 'CP_FINCH',                                 # Finch: one station at the NYC - CP crossing (Brendan, 25 Oct 2026)
           ('oncpcn', 'toronto union'): 'TORONTO_UNION', ('oncpcn', 'toronto'): 'TORONTO_UNION',

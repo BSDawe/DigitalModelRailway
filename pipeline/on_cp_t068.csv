@@ -1,0 +1,47 @@
+# Canadian Pacific, Table 68: Hamilton - Guelph Jct. - Guelph - Elmira - Milverton - Goderich. Canadian Pacific timetable, 1948 (Brendan, 28 Oct 2026). Eastern time.
+# Every train of the table is a motor train (sign: large dot). Miles: Hamilton - Guelph Jct. as printed (19.3); Guelph Jct. - Goderich printed from Toronto (39.2 - 134.6), here minus 19.9.
+# Not entered (connections, already built in on_cp_t049w.csv, Table 50): Toronto - Guelph Jct. (21, 631, 629, 37 / 20, 630, 38, 632, 22) and Detroit / London - Guelph Jct.
+# (22, 630, 38, 20 / 21, 631, 629, 37, 635). Signs: dagger daily except Sunday; a daily except Saturday and Sunday; k Saturday only; f stops on signal.
+# Hamilton: the CP station is Hunter Street (TH&B), shared with Table 56.
+#train col=No637 num=637 dir=down days="ex Sun" kind=motor note="Motor train. Daily except Sunday: Hamilton 8.20 a.m. by Guelph Jct. (9.00 / 9.30) and Guelph to Goderich 12.40 p.m."
+#train col=No643 num=643 dir=down days="ex Sun" kind=motor note="Motor train. Guelph Jct. - Guelph, connecting with the Table 50 trains at Guelph Jct."
+#train col=No645 num=645 dir=down days="ex Sun" kind=motor note="Motor train. Guelph Jct. - Guelph, connecting with the Table 50 trains at Guelph Jct."
+#train col=No647 num=647 dir=down days="ex Sun" kind=motor note="Motor train. Guelph Jct. - Guelph, connecting with the Table 50 trains at Guelph Jct."
+#train col=No649 num=649 dir=down days="Mon,Tue,Wed,Thu,Fri" kind=motor note="Motor train. Guelph Jct. - Guelph, connecting with the Table 50 trains at Guelph Jct."
+#train col=No651 num=651 dir=down days="ex Sun" kind=motor note="Motor train. Guelph Jct. - Guelph, connecting with the Table 50 trains at Guelph Jct."
+#train col=No653 num=653 dir=down days="ex Sun" kind=motor note="Motor train. Guelph Jct. - Guelph, connecting with the Table 50 trains at Guelph Jct."
+#train col=No642 num=642 dir=up days="ex Sun" kind=motor note="Motor train. Guelph - Guelph Jct., connecting with the Table 50 trains at Guelph Jct."
+#train col=No644 num=644 dir=up days="ex Sun" kind=motor note="Motor train. Guelph - Guelph Jct., connecting with the Table 50 trains at Guelph Jct."
+#train col=No646 num=646 dir=up days=Sat kind=motor note="Motor train. Guelph - Guelph Jct., connecting with the Table 50 trains at Guelph Jct."
+#train col=No648 num=648 dir=up days="Mon,Tue,Wed,Thu,Fri" kind=motor note="Motor train. Guelph - Guelph Jct., connecting with the Table 50 trains at Guelph Jct."
+#train col=No650 num=650 dir=up days="Mon,Tue,Wed,Thu,Fri" kind=motor note="Motor train. Guelph - Guelph Jct., connecting with the Table 50 trains at Guelph Jct."
+#train col=No652 num=652 dir=up days="ex Sun" kind=motor note="Motor train. Guelph - Guelph Jct., connecting with the Table 50 trains at Guelph Jct."
+#train col=No654 num=654 dir=up days="ex Sun" kind=motor note="Motor train. Guelph - Guelph Jct., connecting with the Table 50 trains at Guelph Jct."
+#train col=No640 num=640 dir=up days="ex Sun" kind=motor note="Motor train. Daily except Sunday: Goderich 4.35 p.m. by Guelph and Guelph Jct. to Hamilton 8.40 p.m."
+mile,station,principal,prov,tz,No637,No643,No645,No647,No649,No651,No653,No642,No644,No646,No648,No650,No652,No654,No640
+0.0,Hamilton,1,ON,E,lv 8.20a,,,,,,,,,,,,,,ar 8.40p
+7.5,Waterdown South,0,ON,E,8.37a,,,,,,,,,,,,,,8.23p
+8.4,Waterdown North,0,ON,E,f8.41a,,,,,,,,,,,,,,f8.19p
+10.6,Millgrove,0,ON,E,f8.45a,,,,,,,,,,,,,,f8.15p
+13.9,Flamboro,0,ON,E,f8.50a,,,,,,,,,,,,,,f8.10p
+19.3,Guelph Jct.,1,ON,E,ar 9.00a / lv 9.30a,lv 7.20a,lv 8.40a,lv 2.00p,lv 3.30p,lv 6.50p,lv 9.05p,ar 7.10a,ar 8.30a,ar 1.20p,ar 1.50p,ar 3.20p,ar 6.40p,ar 8.50p,7.55p
+23.1,Moffat,0,ON,E,9.37a,,f8.47a,f2.07p,f3.37p,f6.57p,f9.12p,f7.00a,f8.20a,f1.10p,f1.40p,f3.10p,f6.30p,f8.40p,7.45p
+26.1,Corwhin,0,ON,E,f9.42a,f7.32a,f8.52a,f2.12p,f3.42p,f7.02p,f9.17p,f6.55a,f8.15a,f1.05p,f1.35p,f3.05p,f6.25p,f8.35p,f7.40p
+30.0,Arkell,0,ON,E,f9.48a,,,f2.19p,,f7.09p,,f6.49a,f8.09a,f12.58p,f1.29p,f2.59p,f6.19p,f8.29p,f7.34p
+32.5,Speedwell,0,ON,E,f9.52a,,f9.03a,f2.23p,f3.53p,f7.13p,f9.28p,f6.45a,f8.05a,f12.55p,f1.25p,f2.55p,f6.15p,f8.25p,f7.30p
+34.5,Guelph,1,ON,E,10.02a,ar 7.55a,ar 9.15a,ar 2.35p,ar 4.05p,ar 7.25p,ar 9.40p,lv 6.40a,lv 8.00a,lv 12.50p,lv 1.20p,lv 2.50p,lv 6.10p,lv 8.20p,7.25p
+40.6,Ariss,0,ON,E,10.24a,,,,,,,,,,,,,,6.55p
+46.6,West Montrose,0,ON,E,10.35a,,,,,,,,,,,,,,6.44p
+50.5,Elmira,1,ON,E,10.43a,,,,,,,,,,,,,,6.36p
+54.6,Wallenstein,0,ON,E,10.50a,,,,,,,,,,,,,,6.27p
+59.5,Linwood,0,ON,E,11.01a,,,,,,,,,,,,,,6.17p
+65.1,Millbank,0,ON,E,11.11a,,,,,,,,,,,,,,6.06p
+69.3,Milverton,1,ON,E,11.19a,,,,,,,,,,,,,,5.58p
+78.0,West Monkton,0,ON,E,11.34a,,,,,,,,,,,,,,5.43p
+84.2,McNaught,0,ON,E,f11.44a,,,,,,,,,,,,,,f5.32p
+90.6,Walton,0,ON,E,11.55a,,,,,,,,,,,,,,5.21p
+98.2,Blyth,0,ON,E,12.08p,,,,,,,,,,,,,,5.09p
+104.1,Auburn,0,ON,E,12.19p,,,,,,,,,,,,,,4.58p
+109.1,McGaw,0,ON,E,f12.27p,,,,,,,,,,,,,,f4.49p
+113.0,Meneset,0,ON,E,f12.34p,,,,,,,,,,,,,,f4.40p
+114.7,Goderich,1,ON,E,ar 12.40p,,,,,,,,,,,,,,lv 4.35p

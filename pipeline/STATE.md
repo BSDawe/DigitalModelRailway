@@ -1798,3 +1798,14 @@ Stations of different railways within 250 m (70 pairs; script: same check over v
 - Drawing: new kind 'P', rail 'onlps', colour dark blue 1C2F5E with gold d4a62a (Brendan: L&PS livery dark blue and gold); drawConsist draws kind P as
   an interurban: four cars, no locomotive, gold band, nose on the leading car (the first use of the planned four-capsule interurban style).
 - ab_table warns: estimated flag stops at the same minute as a timed neighbour (Crafts - Stop 19 - Whites, 2 min printed): cosmetic.
+
+## Version 82 (28 October 2026): CP Table 68 Hamilton - Guelph Jct. - Guelph - Goderich
+- on_cp_t068 (CP timetable 1948, Brendan's image; scan cp1948_on/t068.png): all MOTOR trains (sign: large dot; tagged kind=motor). 637 / 640 Hamilton (Hunter
+  Street, THB_HAMILTON) - Waterdown - Guelph Jct. - Guelph - Elmira - Milverton - Goderich (ex Sun); Guelph Jct. - Guelph shuttles 643, 645, 647, 649 (ex Sat & Sun),
+  651, 653 / 642, 644, 646 (Sat), 648, 650 (ex Sat & Sun), 652, 654. Miles: Hamilton branch as printed; Guelph Jct. - Goderich printed from Toronto, minus 19.9.
+  Linwood by mileage.
+- Connections NOT entered (Brendan, 28 Oct 2026: the Detroit / London - Guelph Jct. connecting trains wait for their own input if not already in): they ARE
+  already in on_cp_t049w (Table 50): 21, 631, 629, 37 / 20, 630, 38, 22 at Guelph Jct.
+- TO CHECK (on_cp_t049w, Table 50): No. 20 The Canadian. Table 68 prints it Detroit 2.55, LONDON 5.35, GUELPH JCT. 7.19, Toronto 8.30 a.m.; on_cp_t049w has
+  Komoka 5.20 / 5.35 and Puslinch 7.19 with no London or Guelph Jct. call: probably a row slip in the Table 50 reading (London -> Komoka, Guelph Jct. ->
+  Puslinch). Recheck against the Table 50 scan (cp1948 tw050a / tw050b).
