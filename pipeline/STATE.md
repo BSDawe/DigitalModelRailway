@@ -1809,3 +1809,11 @@ Stations of different railways within 250 m (70 pairs; script: same check over v
 - TO CHECK (on_cp_t049w, Table 50): No. 20 The Canadian. Table 68 prints it Detroit 2.55, LONDON 5.35, GUELPH JCT. 7.19, Toronto 8.30 a.m.; on_cp_t049w has
   Komoka 5.20 / 5.35 and Puslinch 7.19 with no London or Guelph Jct. call: probably a row slip in the Table 50 reading (London -> Komoka, Guelph Jct. ->
   Puslinch). Recheck against the Table 50 scan (cp1948 tw050a / tw050b).
+
+## Version 83 (28 October 2026): CP Table 73 Mattawa - Timiskaming - Angliers
+- on_cp_t073 (CP timetable 1948, Brendan's image; scans cp1948_on/t073.png, signs page27_signs.png): 49 / 50 ex Sun, Mattawa (CP Table 4 station) - Town Hall, Ont. -
+  Timiskaming - Gendreau - Kipawa (spur: in and out) - Gendreau - Laniel - Fabre - Gaboury - Ville Marie (branch: in and out) - Gaboury - Lorrainville - Angliers.
+  Gendreau and Gaboury printed twice (rows twice, like Pembroke Junction). Miles as printed.
+- 50: Elma printed f8.09, impossible (Crest 8.04, 9.6 mi): estimated ~f8.26 (ask Brendan if his copy reads otherwise).
+- Alias Timiskaming = the collection's 'Temiscaming'; Crest by mileage (the collection's point ~2 mi short). Mattawa - Timiskaming traced 42.5 mi, printed 37.9.
+- Not entered: Chenier Bus Lines connections (Ville Marie - Belleterre, Rouyn, Noranda, New Liskeard).

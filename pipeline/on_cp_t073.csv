@@ -1,0 +1,33 @@
+# Canadian Pacific, Table 73: Mattawa - Timiskaming - Kipawa - Ville Marie - Angliers. Canadian Pacific timetable, 1948 (Brendan, 28 Oct 2026). Eastern time.
+# Miles as printed. Gendreau and Gaboury are printed twice (Ar before the Kipawa / Ville Marie spur, Lv after): the train runs into Kipawa and Ville Marie and back.
+# Not entered: Les Autobus Chenier (Chenier Bus Lines) connections Ville Marie - Belleterre, Rouyn, Noranda, New Liskeard. Mattawa: CP Table 4 station.
+#train col=No49 num=49 dir=down days="ex Sun" kind=passenger note="Daily except Sunday: Mattawa 8.10 a.m. to Angliers 1.40 p.m.; runs into Kipawa and out again to Gendreau, and into Ville Marie and out again to Gaboury."
+#train col=No50 num=50 dir=up days="ex Sun" kind=passenger note="Daily except Sunday: Angliers 3.30 p.m. to Mattawa 9.05 p.m., by Ville Marie and Kipawa (in and out again). Elma printed f8.09, impossible between Crest 8.04 and Snake Creek 8.35 (9.6 mi in 5 min): estimated 8.26."
+mile,station,principal,prov,tz,No49,No50
+0.0,Mattawa,1,ON,E,lv 8.10a,ar 9.05p
+0.5,"Town Hall, Ont.",0,ON,E,8.13a,9.00p
+6.5,"Ceramic, Que.",0,QC,E,,f8.46p
+10.9,Snake Creek,0,QC,E,f8.37a,f8.35p
+15.0,Elma,0,QC,E,f8.47a,~f8.26p
+24.6,Crest,0,QC,E,f9.09a,f8.04p
+30.4,Beauchene,0,QC,E,9.24a,7.50p
+33.7,Ketchen,0,QC,E,,
+36.2,Grimmer,0,QC,E,,
+37.9,Timiskaming,1,QC,E,9.45a,7.31p
+42.5,Tee Lake,0,QC,E,10.00a,7.13p
+44.1,Gendreau,0,QC,E,10.05a,7.08p
+45.4,Kipawa,1,QC,E,10.08a,7.02p
+44.1,Gendreau,0,QC,E,10.15a,6.55p
+54.1,Dozois,0,QC,E,f10.37a,f6.34p
+63.0,Tabaret,0,QC,E,f10.55a,f6.13p
+71.8,Laniel,0,QC,E,11.16a,5.55p
+74.0,Shehyn,0,QC,E,f11.22a,f5.45p
+85.3,Fabre,0,QC,E,11.48a,5.23p
+91.8,Bearn,0,QC,E,12.03p,5.07p
+94.1,Gaboury,0,QC,E,12.08p,5.00p
+101.8,Ville Marie,1,QC,E,ar 12.33p / lv 12.35p,ar 4.37p / lv 4.40p
+94.1,Gaboury,0,QC,E,12.55p,4.12p
+97.1,Lorrainville,0,QC,E,1.03p,4.06p
+102.9,Laverlochere,0,QC,E,1.15p,3.53p
+108.5,Geoffroy,0,QC,E,f1.25p,f3.40p
+113.3,Angliers,1,QC,E,ar 1.40p,lv 3.30p

@@ -241,7 +241,7 @@ ALIAS = {('nyc', 'harrison'): 'harrisons corners', ('nyc', 'helena, n y'): 'hele
          ('cp', 'south stukely'): 'stukely south', ('cp', 'st johns'): 'st jean sur richelieu', ('cp', 'iberville'): 'iberville junction',
          ('cp', 'montreal place viger'): 'viger', ('cp', 'de sales'): 'st francois de sales', ('cp', 'berthier'): 'berthierville', ('cp', 'quebec'): 'palais',
          ('cp', 'grandmere'): 'grand mere', ('cp', 'grandes piles'): 'grand piles', ('cp', 'les gres'): 'gres', ('cp', 'la gabelle'): 'gabelle',
-         ('cp', 'garneau'): 'garneau junction',
+         ('cp', 'garneau'): 'garneau junction', ('cp', 'timiskaming'): 'temiscaming',
          ('cp', 'lac frontiere'): 'frontiere', ('cp', 'megantic'): 'lac megantic', ('cp', 'scotts junction'): 'scott junction', ('cp', 'thetford mines'): 'thetford',
          ('cp', 'st joseph'): 'st joseph de beauce', ('cp', 'mcleods'): 'mcleod crossing', ('cp', 'trudel'): 'trudell', ('cp', 'beebe junction'): 'beebe junction'}   # CP Tables 8, 10   # CP Tables 33-37   # CP Tables 23-24   # CP Tables 19-22   # table name -> collection name
 def place_for(rail):
