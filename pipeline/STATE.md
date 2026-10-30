@@ -1845,3 +1845,19 @@ Stations of different railways within 250 m (70 pairs; script: same check over v
   times). CP St. Thomas = the NYC (Michigan Central) station (Brendan, 29 Oct 2026): stop NYC_ST_THOMAS, shared with the L&PS N.Y.C. Depot; the CP trains run straight from the end of the CP line onto the NYC track to the station (link 'CP - NYC connection, St. Thomas': the NYC siding the CP line joins; drawn NYC). The first build had routed them through the yards and over CN and L&PS track (Brendan caught it).
 - on_cp_t069b: M655 / M659 Woodstock - Ingersoll - Tillsonburg - Port Burwell (M655 Woodstock 10.00 from the first column, Ingersoll - Port Burwell from the second).
 - on_cp_t069a: M681 / M682 Woodstock - Zorra - Embro - St. Marys (Woodstock - Zorra over the main line, 7.1 mi from Table 50; branch miles printed from Zorra).
+
+## Version 89 (29 October 2026): CP electric lines, Grand River Railway and Lake Erie & Northern
+- Sources: CP timetable 1948 Tables 66 / 67 (scan cp1948_on/t066_067.png), Official Guide 1948 GRR / L&N page and map (og1948_on/grr_len.png, grr_len_map.png);
+  Canadian Electric Railway Mapping project KMZs (scans/cerm/) -> traces/ontario/brendan/grand_river.geojson (own 'grr': main lines, Kitchener Jct. wye and the
+  left-fork private right of way to Queen Street, CPR Galt interchange; the Berlin & Bridgeport and Berlin & Waterloo street railways left out) and
+  lake_erie_northern.geojson (own 'len', main line).
+- Brendan (29 Oct 2026): CP properties, CP colours, drawn as interurbans (new kind 'E': four cars, no locomotive, CP colour, no band; rails 'ongrr' / 'onlen').
+- GRR: on_grr_t066k / t066h: the Table 66 trains connecting with the CP at Galt, from / to the CP Galt station (stop CP_GALT, by the interchange wyes); each column
+  is two trains, Galt - Preston - Kitchener (Queen Street; left fork at Kitchener Junction) and Galt - Preston - Hespeler (Brendan). Numbers = the CP trains they
+  connect with, as headed. Up 631 = 38 and up 635 = 19 (same times): one train each. Hespeler trains' "Preston" entered at Joseph Street (the Hespeler line leaves
+  before Preston station). on_grr_t000k / t000h: the Guide's hourly service RECONSTRUCTED (Galt :55 / Kitchener :10, Galt :25 / Hespeler :55, first / last cars
+  as printed; running times estimated: Galt - Preston 10, Preston - Kitchener 25, Preston - Hespeler 12 min). Galt Main Street (GALT_MAIN_STREET) shared with the L&N.
+  Miles: by distance between station points, scaled to the Guide / KMZ. Intermediate KMZ stations as flag stops (~f).
+- L&N: on_len_t067: Table 67, 9 trains each way, unnumbered. All KMZ stops as flag stops (Brendan). Port Dover = the second station (1947 - 55, mile 50.3);
+  Brantford Union station (L&N); L&N Waterford station (KMZ); Wilsonville printed mile 23.10, read 32.1 by position. Guide differences noted in the file.
+- TO CHECK: the reconstructed hourly GRR pattern and running times; Joseph Street as the Hespeler trains' Preston stop.

@@ -45,8 +45,10 @@ ab_lines.RAILS.update({'oncn': dict(kind='q', label='Canadian National', own='cn
                        'onthb': dict(kind='B', label='Toronto, Hamilton & Buffalo', own='thb', agency='THB', color='6A4048', pfx='THB'),   # Brendan, 27 Oct 2026: its own colour, between CP and NYC (CP-filed, NYC majority-owned)
                        'oncpthb': dict(kind='p', label='Canadian Pacific', own='cp', agency='CP', color='7A1E2C', pfx='CP'),   # CP Toronto - Hamilton trains (Table 56): CN Lake Shore, then TH&B
                        'onlps': dict(kind='P', label='London & Port Stanley', own='lps', agency='LPS', color='1C2F5E', pfx='LPS'),   # electric interurban, City of London; dark blue and gold (Brendan, 28 Oct 2026)
+                       'ongrr': dict(kind='E', label='Grand River Railway (CP electric)', own='grr', agency='GRR', color='7A1E2C', pfx='GRR'),   # CP electric lines: CP colours, drawn as interurbans (Brendan, 29 Oct 2026)
+                       'onlen': dict(kind='E', label='Lake Erie & Northern (CP electric)', own='len', agency='LEN', color='7A1E2C', pfx='LEN'),
                        'onaj': dict(kind='J', label='Alma & Jonquiere', own='aj', agency='AJ', color='4A6D8C', pfx='AJ')})
-OWN = {'oncn': 'cn', 'oncp': 'cp', 'onr': 'onr', 'acr': 'acr', 'onnyc': 'nyc', 'ondh': 'dh', 'ontem': 'tem', 'oncgt': 'cgt', 'onrs': 'rs', 'onaj': 'aj', 'oncpcn': 'cpcn', 'onnyco': 'nyc', 'onthb': 'thb', 'oncpthb': 'cpthb', 'onlps': 'lps'}
+OWN = {'oncn': 'cn', 'oncp': 'cp', 'onr': 'onr', 'acr': 'acr', 'onnyc': 'nyc', 'ondh': 'dh', 'ontem': 'tem', 'oncgt': 'cgt', 'onrs': 'rs', 'onaj': 'aj', 'oncpcn': 'cpcn', 'onnyco': 'nyc', 'onthb': 'thb', 'oncpthb': 'cpthb', 'onlps': 'lps', 'ongrr': 'grr', 'onlen': 'len'}
 # the New York Central and the Delaware & Hudson (CP Table 18) run over the CP from Windsor Station; the NYC leaves it at Adirondack Junction for its
 # own St. Lawrence & Adirondack line, the D&H follows the CP to the end of its track at the border (Brendan, 24 Oct 2026). Both stop at the border for now.
 
@@ -104,7 +106,7 @@ def _links():
     for fn in sorted(__import__('glob').glob(os.path.join(HERE, 'traces', 'ontario', 'brendan', '*.geojson'))): out += json.load(open(fn))['features']
     return out
 BOXES = {'onr': (-82.6, -78.4, 43.5, 51.5), 'acr': (-85.2, -82.8, 46.3, 49.9), 'nyc': (-74.4, -73.4, 44.9, 45.6), 'dh': (-74.0, -73.2, 44.95, 45.6),
-         'tem': (-69.7, -68.3, 47.3, 47.95), 'nyco': (-75.8, -74.6, 44.9, 45.5), 'cgt': (-68.4, -67.4, 48.5, 48.95), 'rs': (-71.4, -70.8, 48.25, 48.5), 'aj': (-71.9, -71.5, 48.4, 48.8), 'thb': (-80.5, -78.85, 42.85, 43.75), 'cpthb': (-80.5, -78.85, 42.85, 43.75), 'lps': (-81.35, -81.05, 42.6, 43.05)}   # the small railways' graphs: their own part of the map only
+         'tem': (-69.7, -68.3, 47.3, 47.95), 'nyco': (-75.8, -74.6, 44.9, 45.5), 'cgt': (-68.4, -67.4, 48.5, 48.95), 'rs': (-71.4, -70.8, 48.25, 48.5), 'aj': (-71.9, -71.5, 48.4, 48.8), 'thb': (-80.5, -78.85, 42.85, 43.75), 'cpthb': (-80.5, -78.85, 42.85, 43.75), 'lps': (-81.35, -81.05, 42.6, 43.05), 'grr': (-80.56, -80.28, 43.33, 43.48), 'len': (-80.42, -80.18, 42.76, 43.38)}   # the small railways' graphs: their own part of the map only
 def _graph(me):
     """the track graph for one railway. Every piece goes in as network-like track ('n': its ends tie to track within 150 m) rather than as a backup
     ('b': every point tied to track beside it), and other railways' sidings and yards are left out: the full collections as backups made graphs of
@@ -137,7 +139,7 @@ def _graph(me):
             elif side: continue
             elif me == 'onr' and ow == 'cn': fac, draw = 1.2, 'cn'           # ONR trains run Toronto - North Bay over the CN
             elif me in ('nyc', 'dh') and ow == 'nyc': fac, draw = 2.5, 'nyc'
-            elif ow in ('cn', 'cp', 'onr', 'acr', 'thb', 'lps', 'nyc'): fac, draw = 2.5, ow
+            elif ow in ('cn', 'cp', 'onr', 'acr', 'thb', 'lps', 'nyc', 'grr', 'len'): fac, draw = 2.5, ow
             else: fac, draw = 1.5, None
             add(ab_lines._xy(c), fac, 'n', draw)
         for f in _links():                                              # Brendan's traces and connectors (traces/ontario/brendan/)
@@ -284,6 +286,8 @@ SHARED = {('onr', 'toronto union'): 'TORONTO_UNION', ('oncn', 'toronto union'): 
           ('onthb', 'hamilton'): 'THB_HAMILTON', ('oncpthb', 'hamilton'): 'THB_HAMILTON', ('oncp', 'hamilton'): 'THB_HAMILTON',   # Hunter Street: CP and TH&B trains
           ('onthb', 'waterford'): 'NYC_WATERFORD',   # the NYC station (Brendan)
           ('oncp', 'st thomas'): 'NYC_ST_THOMAS', ('onlps', 'n y c depot'): 'NYC_ST_THOMAS',   # CP trains used the NYC (Michigan Central) station at St. Thomas (Brendan); the L&PS N.Y.C. Depot
+          ('ongrr', 'galt'): 'GALT_MAIN_STREET', ('onlen', 'galt'): 'GALT_MAIN_STREET',   # one Main Street station for the GRR and the L&N (KMZ; Brendan)
+          ('ongrr', 'galt c p r'): 'CP_GALT',                              # Table 66 trains: the CP Galt station (Brendan)
           ('onlps', 'london'): 'CN_LONDON', ('onlps', 'c n r wabash depot'): 'CN_ST_THOMAS',   # L&PS London station: part of the CN London station complex (Brendan); C.N.R. - Wabash Depot = CN St. Thomas
           ('onnyco', 'finch'): 'CP_FINCH',                                 # Finch: one station at the NYC - CP crossing (Brendan, 25 Oct 2026)
           ('oncpcn', 'toronto union'): 'TORONTO_UNION', ('oncpcn', 'toronto'): 'TORONTO_UNION',

@@ -1,0 +1,31 @@
+# Grand River Railway (Canadian Pacific, electric): Galt (C.P.R. station) - Preston - Kitchener (Queen Street): the trains of CP Table 66 connecting with the CP at Galt. Canadian Pacific timetable, 1948, Table 66 (Brendan, 29 Oct 2026; scan cp1948_on/t066_067.png). Eastern time.
+# Miles: by distance between the KMZ station points, scaled to the Guide (Galt - Preston 4, Preston - Hespeler 3) and the KMZ (Galt - Queen Street 12.6); from the CP station 0.5 less. Intermediate stops: flag stops (KMZ), times by mileage (~f).
+# Each Table 66 column reaches both Hespeler and Kitchener: two trains (on_grr_t066k / on_grr_t066h; Brendan, 29 Oct 2026), both Galt - Preston. Kitchener trains take the left fork at Kitchener Junction to Queen Street (Brendan).
+# Signs: * daily, dagger daily except Sunday, a daily except Saturday and Sunday, k Saturday only.
+#train col=D20 num=20 dir=down days=daily kind=passenger note="Grand River Railway connecting train for CP No. 20 at Galt (C.P.R. station; Table 66 heads its columns with the CP train numbers). "
+#train col=D630 num=630 dir=down days="ex Sun" kind=passenger note="Grand River Railway connecting train for CP No. 630 at Galt (C.P.R. station; Table 66 heads its columns with the CP train numbers). "
+#train col=D21 num=21 dir=down days=daily kind=passenger note="Grand River Railway connecting train for CP No. 21 at Galt (C.P.R. station; Table 66 heads its columns with the CP train numbers). "
+#train col=D38 num=38 dir=down days=daily kind=passenger note="Grand River Railway connecting train for CP No. 38 at Galt (C.P.R. station; Table 66 heads its columns with the CP train numbers). "
+#train col=D631 num=631 dir=down days=Sat kind=passenger note="Grand River Railway connecting train for CP No. 631 at Galt (C.P.R. station; Table 66 heads its columns with the CP train numbers). "
+#train col=D629 num=629 dir=down days="Mon,Tue,Wed,Thu,Fri" kind=passenger note="Grand River Railway connecting train for CP No. 629 at Galt (C.P.R. station; Table 66 heads its columns with the CP train numbers). "
+#train col=D37 num=37 dir=down days=daily kind=passenger note="Grand River Railway connecting train for CP No. 37 at Galt (C.P.R. station; Table 66 heads its columns with the CP train numbers). "
+#train col=D632 num=632 dir=down days="ex Sun" kind=passenger note="Grand River Railway connecting train for CP No. 632 at Galt (C.P.R. station; Table 66 heads its columns with the CP train numbers). "
+#train col=D22 num=22 dir=down days=daily kind=passenger note="Grand River Railway connecting train for CP No. 22 at Galt (C.P.R. station; Table 66 heads its columns with the CP train numbers). "
+#train col=D19 num=19 dir=down days=daily kind=passenger note="Grand River Railway connecting train for CP No. 19 at Galt (C.P.R. station; Table 66 heads its columns with the CP train numbers). "
+#train col=U20 num=20 dir=up days=daily kind=passenger note="Grand River Railway connecting train for CP No. 20 at Galt (C.P.R. station; Table 66 heads its columns with the CP train numbers). "
+#train col=U630 num=630 dir=up days="ex Sun" kind=passenger note="Grand River Railway connecting train for CP No. 630 at Galt (C.P.R. station; Table 66 heads its columns with the CP train numbers). "
+#train col=U21 num=21 dir=up days=daily kind=passenger note="Grand River Railway connecting train for CP No. 21 at Galt (C.P.R. station; Table 66 heads its columns with the CP train numbers). "
+#train col=U38 num=38 dir=up days=daily kind=passenger note="Grand River Railway connecting train for CP No. 38 at Galt (C.P.R. station; Table 66 heads its columns with the CP train numbers). Columns 38 and 631 print the same times (one train here, daily)."
+#train col=U629 num=629 dir=up days="Mon,Tue,Wed,Thu,Fri" kind=passenger note="Grand River Railway connecting train for CP No. 629 at Galt (C.P.R. station; Table 66 heads its columns with the CP train numbers). "
+#train col=U37 num=37 dir=up days=daily kind=passenger note="Grand River Railway connecting train for CP No. 37 at Galt (C.P.R. station; Table 66 heads its columns with the CP train numbers). "
+#train col=U632 num=632 dir=up days="ex Sun" kind=passenger note="Grand River Railway connecting train for CP No. 632 at Galt (C.P.R. station; Table 66 heads its columns with the CP train numbers). "
+#train col=U22 num=22 dir=up days=daily kind=passenger note="Grand River Railway connecting train for CP No. 22 at Galt (C.P.R. station; Table 66 heads its columns with the CP train numbers). "
+#train col=U19 num=19 dir=up days=daily kind=passenger note="Grand River Railway connecting train for CP No. 19 at Galt (C.P.R. station; Table 66 heads its columns with the CP train numbers). Printed twice (also under CP No. 635), the same times."
+mile,station,principal,prov,tz,D20,D630,D21,D38,D631,D629,D37,D632,D22,D19,U20,U630,U21,U38,U629,U37,U632,U22,U19
+0.0,Galt (C.P.R.),1,ON,E,lv 6.56a,lv 8.15a,lv 9.55a,lv 1.35p,lv 1.45p,lv 3.45p,lv 7.15p,lv 7.40p,lv 8.35p,lv 11.23p,ar 6.50a,ar 8.10a,ar 9.50a,ar 1.25p,ar 3.40p,ar 7.05p,ar 7.20p,ar 8.30p,ar 11.20p
+3.5,Preston,1,ON,E,7.04a,8.25a,10.03a,1.43p,1.55p,3.55p,7.23p,7.55p,8.43p,11.31p,6.39a,7.53a,9.33a,1.08p,3.25p,6.50p,7.05p,8.13p,11.08p
+4.5,Hagey,0,ON,E,~f7.07a,~f8.28a,~f10.06a,~f1.46p,~f1.58p,~f3.58p,~f7.26p,~f7.58p,~f8.46p,~f11.34p,~f6.37a,~f7.51a,~f9.31a,~f1.06p,~f3.23p,~f6.48p,~f7.01p,~f8.11p,~f11.06p
+7.2,Freeport,0,ON,E,~f7.15a,~f8.36a,~f10.15a,~f1.55p,~f2.06p,~f4.06p,~f7.35p,~f8.05p,~f8.55p,~f11.43p,~f6.33a,~f7.45a,~f9.25a,~f1.00p,~f3.16p,~f6.41p,~f6.50p,~f8.05p,~f11.00p
+8.1,Centerville,0,ON,E,~f7.18a,~f8.38a,~f10.17a,~f1.57p,~f2.08p,~f4.08p,~f7.37p,~f8.07p,~f8.57p,~f11.45p,~f6.32a,~f7.43a,~f9.23a,~f12.58p,~f3.14p,~f6.39p,~f6.46p,~f8.03p,~f10.58p
+10.3,Kitchener Junction,0,ON,E,~f7.25a,~f8.45a,~f10.24a,~f2.04p,~f2.15p,~f4.15p,~f7.44p,~f8.13p,~f9.04p,~f11.52p,~f6.28a,~f7.39a,~f9.19a,~f12.54p,~f3.09p,~f6.34p,~f6.37p,~f7.59p,~f10.54p
+12.1,Kitchener (Queen Street),1,ON,E,ar 7.30a,ar 8.50a,ar 10.30a,ar 2.10p,ar 2.20p,ar 4.20p,ar 7.50p,ar 8.18p,ar 9.10p,ar 11.58p,lv 6.25a,lv 7.35a,lv 9.15a,lv 12.50p,lv 3.05p,lv 6.30p,lv 6.30p,lv 7.55p,lv 10.50p

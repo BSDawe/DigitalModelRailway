@@ -1,0 +1,63 @@
+# Lake Erie & Northern Railway (Canadian Pacific, electric): Galt - Paris - Brantford - Waterford - Simcoe - Port Dover. Canadian Pacific timetable, 1948, Table 67 (Brendan, 29 Oct 2026). Eastern time.
+# Unnumbered trains. Miles and stops: the Canadian Electric Railway Mapping project KMZ (Wilsonville printed mile 23.10, out of order: 32.1 by its position; Brantford 21.1 from the Guide).
+# All the KMZ stops other than the six timed stations as flag stops (Brendan), times by mileage (~f). Port Dover: the second station (1947 - 1955, mile 50.3). Galt: Main Street, shared with the GRR.
+# The Guide (1948) prints the same departures except: from Port Dover also 4.20 a.m. and 3.00 p.m.; no 4.35 p.m. ex Sun (CP Table 67 followed). Signs: * daily, dagger ex Sun, section Sunday only.
+#train col=D558a num="" dir=down days="ex Sun" kind=passenger note="Galt 5.58 a.m. to Port Dover 8.10."
+#train col=D900a num="" dir=down days=daily kind=passenger note="Galt 9.00 a.m. to Port Dover 10.50."
+#train col=D1050a num="" dir=down days=daily kind=passenger note="Galt 10.50 a.m. to Port Dover 12.40."
+#train col=D205p num="" dir=down days=daily kind=passenger note="Galt 2.05 p.m. to Port Dover 4.10."
+#train col=D420p num="" dir=down days=Sun kind=passenger note="Galt 4.20 p.m. to Port Dover 6.05."
+#train col=D530p num="" dir=down days="ex Sun" kind=passenger note="Galt 5.30 p.m. to Port Dover 7.30."
+#train col=D730p num="" dir=down days=daily kind=passenger note="Galt 7.30 p.m. to Port Dover 9.30."
+#train col=D925p num="" dir=down days=daily kind=passenger note="Galt 9.25 p.m. to Port Dover 11.05."
+#train col=D1135p num="" dir=down days=daily kind=passenger note="Galt 11.35 p.m. to Port Dover 1.20."
+#train col=U525a num="" dir=up days="ex Sun" kind=passenger note="Port Dover 5.25 a.m. to Galt 7.25."
+#train col=U735a num="" dir=up days=daily kind=passenger note="Port Dover 7.35 a.m. to Galt 9.30."
+#train col=U1105a num="" dir=up days=daily kind=passenger note="Port Dover 11.05 a.m. to Galt 1.13."
+#train col=U110p num="" dir=up days=daily kind=passenger note="Port Dover 1.10 p.m. to Galt 3.10."
+#train col=U435ps num="" dir=up days=Sun kind=passenger note="Port Dover 4.35 p.m. to Galt 6.25."
+#train col=U435p num="" dir=up days="ex Sun" kind=passenger note="Port Dover 4.35 p.m. to Galt 6.40."
+#train col=U625p num="" dir=up days=daily kind=passenger note="Port Dover 6.25 p.m. to Galt 8.20."
+#train col=U825p num="" dir=up days=daily kind=passenger note="Port Dover 8.25 p.m. to Galt 10.30."
+#train col=U1115p num="" dir=up days=daily kind=passenger note="Port Dover 11.15 p.m. to Galt 1.10."
+mile,station,principal,prov,tz,D558a,D900a,D1050a,D205p,D420p,D530p,D730p,D925p,D1135p,U525a,U735a,U1105a,U110p,U435ps,U435p,U625p,U825p,U1115p
+0.0,Galt,1,ON,E,lv 5.58a,lv 9.00a,lv 10.50a,lv 2.05p,lv 4.20p,lv 5.30p,lv 7.30p,lv 9.25p,lv 11.35p,ar 7.25a,ar 9.30a,ar 1.13p,ar 3.10p,ar 6.25p,ar 6.40p,ar 8.20p,ar 10.30p,ar 1.10a
+0.37,Concession Street,0,ON,E,~f5.59a,~f9.01a,~f10.51a,~f2.06p,~f4.21p,~f5.31p,~f7.31p,~f9.26p,~f11.36p,~f7.24a,~f9.29a,~f1.12p,~f3.09p,~f6.24p,~f6.39p,~f8.19p,~f10.29p,~f1.09a
+1.07,Soapworks,0,ON,E,~f6.00a,~f9.02a,~f10.52a,~f2.07p,~f4.22p,~f5.32p,~f7.32p,~f9.27p,~f11.37p,~f7.23a,~f9.28a,~f1.11p,~f3.08p,~f6.23p,~f6.38p,~f8.18p,~f10.28p,~f1.08a
+2.06,McPhearson,0,ON,E,~f6.03a,~f9.04a,~f10.54a,~f2.09p,~f4.24p,~f5.34p,~f7.34p,~f9.29p,~f11.39p,~f7.21a,~f9.26a,~f1.09p,~f3.06p,~f6.22p,~f6.36p,~f8.16p,~f10.26p,~f1.06a
+2.45,River Bridge,0,ON,E,~f6.04a,~f9.05a,~f10.55a,~f2.10p,~f4.25p,~f5.35p,~f7.35p,~f9.30p,~f11.40p,~f7.20a,~f9.25a,~f1.08p,~f3.05p,~f6.21p,~f6.35p,~f8.15p,~f10.25p,~f1.05a
+4.47,Carrick,0,ON,E,~f6.08a,~f9.08a,~f10.58a,~f2.13p,~f4.28p,~f5.38p,~f7.38p,~f9.33p,~f11.43p,~f7.17a,~f9.21a,~f1.04p,~f3.01p,~f6.17p,~f6.32p,~f8.12p,~f10.22p,~f1.02a
+5.03,McRae,0,ON,E,~f6.09a,~f9.09a,~f10.59a,~f2.14p,~f4.29p,~f5.39p,~f7.39p,~f9.34p,~f11.44p,~f7.16a,~f9.20a,~f1.02p,~f3.00p,~f6.16p,~f6.31p,~f8.11p,~f10.21p,~f1.01a
+6.73,Glen Morris,0,ON,E,~f6.13a,~f9.13a,~f11.02a,~f2.17p,~f4.32p,~f5.42p,~f7.43p,~f9.38p,~f11.47p,~f7.12a,~f9.17a,~f12.59p,~f2.56p,~f6.13p,~f6.27p,~f8.07p,~f10.17p,~f12.57a
+9.38,Robertson,0,ON,E,~f6.19a,~f9.18a,~f11.07a,~f2.22p,~f4.37p,~f5.46p,~f7.48p,~f9.43p,~f11.52p,~f7.07a,~f9.12a,~f12.53p,~f2.51p,~f6.08p,~f6.22p,~f8.02p,~f10.12p,~f12.52a
+10.85,Blue Lake,0,ON,E,~f6.22a,~f9.20a,~f11.10a,~f2.25p,~f4.40p,~f5.49p,~f7.50p,~f9.45p,~f11.55p,~f7.05a,~f9.09a,~f12.50p,~f2.48p,~f6.05p,~f6.20p,~f8.00p,~f10.10p,~f12.50a
+11.64,Braeside,0,ON,E,~f6.24a,~f9.22a,~f11.11a,~f2.26p,~f4.41p,~f5.50p,~f7.52p,~f9.47p,~f11.56p,~f7.03a,~f9.07a,~f12.49p,~f2.46p,~f6.04p,~f6.18p,~f7.58p,~f10.08p,~f12.48a
+13.32,Paris,1,ON,E,6.28a,9.25a,11.14a,2.29p,4.44p,5.53p,7.55p,9.50p,11.59p,7.00a,9.04a,12.45p,2.43p,6.01p,6.15p,7.55p,10.05p,12.45a
+15.21,Oak Park,0,ON,E,~f6.35a,~f9.31a,~f11.20a,~f2.37p,~f4.50p,~f6.01p,~f8.02p,~f9.55p,~f12.04a,~f6.56a,~f9.01a,~f12.40p,~f2.39p,~f5.57p,~f6.09p,~f7.51p,~f10.01p,~f12.41a
+16.47,Stuart,0,ON,E,~f6.39a,~f9.35a,~f11.25a,~f2.42p,~f4.54p,~f6.06p,~f8.07p,~f9.58p,~f12.08a,~f6.54a,~f8.58a,~f12.37p,~f2.36p,~f5.55p,~f6.05p,~f7.49p,~f9.59p,~f12.39a
+17.8,Hardy Road,0,ON,E,~f6.44a,~f9.39a,~f11.29a,~f2.47p,~f4.58p,~f6.11p,~f8.12p,~f10.02p,~f12.11a,~f6.51a,~f8.56a,~f12.33p,~f2.33p,~f5.52p,~f6.01p,~f7.46p,~f9.56p,~f12.36a
+18.62,Golf Club,0,ON,E,~f6.46a,~f9.42a,~f11.32a,~f2.50p,~f5.00p,~f6.15p,~f8.15p,~f10.04p,~f12.13a,~f6.50a,~f8.54a,~f12.31p,~f2.31p,~f5.50p,~f5.58p,~f7.45p,~f9.55p,~f12.35a
+20.3,West Mill Street,0,ON,E,~f6.52a,~f9.47a,~f11.37a,~f2.57p,~f5.06p,~f6.22p,~f8.22p,~f10.08p,~f12.18a,~f6.47a,~f8.51a,~f12.27p,~f2.27p,~f5.47p,~f5.53p,~f7.42p,~f9.52p,~f12.32a
+21.1,Brantford,1,ON,E,6.55a,9.50a,11.40a,3.00p,5.08p,6.25p,8.25p,10.10p,12.20a,6.45a,8.50a,12.25p,2.25p,5.45p,5.50p,7.40p,9.50p,12.30a
+22.17,Mount Pleasant Road,0,ON,E,~f6.58a,~f9.52a,~f11.42a,~f3.02p,~f5.10p,~f6.27p,~f8.27p,~f10.12p,~f12.22a,~f6.42a,~f8.47a,~f12.22p,~f2.22p,~f5.43p,~f5.47p,~f7.37p,~f9.46p,~f12.27a
+23.7,Fairchild,0,ON,E,~f7.01a,~f9.55a,~f11.45a,~f3.06p,~f5.13p,~f6.31p,~f8.31p,~f10.15p,~f12.25a,~f6.37a,~f8.42a,~f12.17p,~f2.18p,~f5.39p,~f5.43p,~f7.33p,~f9.41p,~f12.23a
+25.1,Lundy Lane,0,ON,E,~f7.04a,~f9.58a,~f11.48a,~f3.09p,~f5.16p,~f6.34p,~f8.34p,~f10.17p,~f12.28a,~f6.32a,~f8.38a,~f12.13p,~f2.14p,~f5.36p,~f5.39p,~f7.29p,~f9.36p,~f12.19a
+26.17,Mount Pleasant,0,ON,E,~f7.07a,~f10.00a,~f11.50a,~f3.11p,~f5.18p,~f6.36p,~f8.36p,~f10.19p,~f12.30a,~f6.29a,~f8.35a,~f12.10p,~f2.11p,~f5.34p,~f5.36p,~f7.26p,~f9.32p,~f12.16a
+27.73,Maple Grove,0,ON,E,~f7.11a,~f10.03a,~f11.53a,~f3.15p,~f5.21p,~f6.40p,~f8.40p,~f10.22p,~f12.33a,~f6.24a,~f8.30a,~f12.05p,~f2.07p,~f5.31p,~f5.32p,~f7.21p,~f9.27p,~f12.12a
+29.45,Oakland,0,ON,E,~f7.15a,~f10.06a,~f11.57a,~f3.19p,~f5.24p,~f6.44p,~f8.44p,~f10.25p,~f12.36a,~f6.18a,~f8.25a,~f12.00p,~f2.02p,~f5.27p,~f5.27p,~f7.16p,~f9.21p,~f12.07a
+32.1,Wilsonville,0,ON,E,~f7.21a,~f10.11a,~f12.02p,~f3.25p,~f5.29p,~f6.50p,~f8.50p,~f10.30p,~f12.41a,~f6.10a,~f8.18a,~f11.52a,~f1.55p,~f5.21p,~f5.20p,~f7.09p,~f9.12p,~f12.00a
+33.78,Lutesville,0,ON,E,~f7.25a,~f10.14a,~f12.05p,~f3.28p,~f5.32p,~f6.53p,~f8.53p,~f10.33p,~f12.44a,~f6.04a,~f8.13a,~f11.47a,~f1.50p,~f5.17p,~f5.15p,~f7.04p,~f9.06p,~f11.55p
+34.41,Dundurn,0,ON,E,~f7.27a,~f10.16a,~f12.06p,~f3.30p,~f5.34p,~f6.55p,~f8.55p,~f10.34p,~f12.46a,~f6.02a,~f8.11a,~f11.45a,~f1.48p,~f5.16p,~f5.13p,~f7.03p,~f9.04p,~f11.53p
+35.7,Stop 7 (Round Plains),0,ON,E,~f7.30a,~f10.18a,~f12.09p,~f3.33p,~f5.36p,~f6.58p,~f8.58p,~f10.36p,~f12.48a,~f5.58a,~f8.07a,~f11.41a,~f1.45p,~f5.13p,~f5.10p,~f6.59p,~f9.00p,~f11.50p
+36.5,Bunker Hill,0,ON,E,~f7.31a,~f10.20a,~f12.11p,~f3.35p,~f5.38p,~f7.00p,~f9.00p,~f10.38p,~f12.50a,~f5.56a,~f8.05a,~f11.39a,~f1.43p,~f5.12p,~f5.08p,~f6.57p,~f8.57p,~f11.48p
+36.72,Waterford,1,ON,E,7.32a,10.20a,12.11p,3.35p,5.38p,7.00p,9.00p,10.38p,12.50a,5.55a,8.04a,11.38a,1.42p,5.11p,5.07p,6.56p,8.56p,11.47p
+38.26,Cherry Valley,0,ON,E,~f7.36a,~f10.23a,~f12.14p,~f3.39p,~f5.41p,~f7.03p,~f9.03p,~f10.41p,~f12.53a,~f5.52a,~f8.01a,~f11.35a,~f1.39p,~f5.08p,~f5.05p,~f6.53p,~f8.53p,~f11.44p
+40.2,Bloomsburg,0,ON,E,~f7.42a,~f10.27a,~f12.17p,~f3.45p,~f5.44p,~f7.08p,~f9.08p,~f10.44p,~f12.57a,~f5.48a,~f7.58a,~f11.31a,~f1.36p,~f5.04p,~f5.02p,~f6.49p,~f8.49p,~f11.39p
+42.09,Colborne,0,ON,E,~f7.48a,~f10.30a,~f12.20p,~f3.50p,~f5.47p,~f7.12p,~f9.12p,~f10.47p,~f1.00a,~f5.45a,~f7.55a,~f11.28a,~f1.33p,~f5.00p,~f5.00p,~f6.45p,~f8.45p,~f11.35p
+42.93,Simcoe North,0,ON,E,~f7.50a,~f10.32a,~f12.22p,~f3.52p,~f5.49p,~f7.14p,~f9.14p,~f10.49p,~f1.02a,~f5.43a,~f7.53a,~f11.26a,~f1.31p,~f4.58p,~f4.59p,~f6.43p,~f8.43p,~f11.34p
+43.62,Simcoe,1,ON,E,7.52a,10.33a,12.23p,3.54p,5.50p,7.15p,9.15p,10.50p,1.03a,5.42a,7.52a,11.25a,1.30p,4.57p,4.58p,6.42p,8.42p,11.32p
+45.54,Lynn Valley,0,ON,E,~f7.57a,~f10.38a,~f12.28p,~f3.59p,~f5.54p,~f7.19p,~f9.19p,~f10.54p,~f1.08a,~f5.37a,~f7.47a,~f11.19a,~f1.24p,~f4.51p,~f4.51p,~f6.37p,~f8.37p,~f11.27p
+46.64,Stickney,0,ON,E,~f8.00a,~f10.41a,~f12.31p,~f4.01p,~f5.57p,~f7.22p,~f9.22p,~f10.57p,~f1.11a,~f5.34a,~f7.44a,~f11.16a,~f1.21p,~f4.47p,~f4.48p,~f6.34p,~f8.34p,~f11.24p
+48.5,Bowlby,0,ON,E,~f8.05a,~f10.45a,~f12.35p,~f4.06p,~f6.01p,~f7.26p,~f9.26p,~f11.01p,~f1.15a,~f5.30a,~f7.40a,~f11.10a,~f1.15p,~f4.41p,~f4.41p,~f6.30p,~f8.30p,~f11.20p
+50.0,Main Street (Port Dover),0,ON,E,~f8.09a,~f10.49a,~f12.39p,~f4.09p,~f6.04p,~f7.29p,~f9.29p,~f11.04p,~f1.19a,~f5.26a,~f7.36a,~f11.06a,~f1.11p,~f4.36p,~f4.36p,~f6.26p,~f8.26p,~f11.16p
+50.3,Port Dover,1,ON,E,ar 8.10a,ar 10.50a,ar 12.40p,ar 4.10p,ar 6.05p,ar 7.30p,ar 9.30p,ar 11.05p,ar 1.20a,lv 5.25a,lv 7.35a,lv 11.05a,lv 1.10p,lv 4.35p,lv 4.35p,lv 6.25p,lv 8.25p,lv 11.15p
