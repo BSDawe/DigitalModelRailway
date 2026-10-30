@@ -137,7 +137,7 @@ def _graph(me):
             elif side: continue
             elif me == 'onr' and ow == 'cn': fac, draw = 1.2, 'cn'           # ONR trains run Toronto - North Bay over the CN
             elif me in ('nyc', 'dh') and ow == 'nyc': fac, draw = 2.5, 'nyc'
-            elif ow in ('cn', 'cp', 'onr', 'acr', 'thb', 'lps'): fac, draw = 2.5, ow
+            elif ow in ('cn', 'cp', 'onr', 'acr', 'thb', 'lps', 'nyc'): fac, draw = 2.5, ow
             else: fac, draw = 1.5, None
             add(ab_lines._xy(c), fac, 'n', draw)
         for f in _links():                                              # Brendan's traces and connectors (traces/ontario/brendan/)
@@ -173,7 +173,7 @@ HAND = {('thb', 'toronto'): _TU, ('cpthb', 'toronto'): _TU, ('thb', 'hamilton'):
         ('cp', 'cataract'): (-80.018278, 43.828291, 'CP Cataract: where Table 62 placed it by mileage (no point in the collection); junction for the Elora line (Table 63)'),
         ('cp', 'wingham'): (-81.3195, 43.8872, 'CP Wingham: the end of the Wingham branch (the collection\'s point is the CN station)'),
         ('cp', 'wingham junction'): (-81.2474, 43.9239, 'CP Wingham Jct.: where the Wingham branch leaves the Teeswater line, by Glenannan (Claude, from the miles: Wingham Jct. 124.7, Wingham 129.2, Glenannan 134.1)'),
-        ('cp', 'st thomas'): (-81.17369, 42.77768, 'CP St. Thomas (Credit Valley), APPROXIMATE: Claude, the end of the CP track in St. Thomas'),
+        ('cp', 'st thomas'): (-81.1860511, 42.7779249, 'CP St. Thomas = the NYC (Michigan Central) station (Brendan, 29 Oct 2026); the collection\'s point'),
         ('cp', 'toronto'): _TU, ('cn', 'toronto'): _TU, ('onr', 'toronto'): _TU,
         ('cp', 'montreal'): (-73.567980, 45.497179, 'Windsor Station, Montreal (the collection\'s "Gare Windsor station"; Brendan, 23 Oct 2026)'),
         ('cn', 'montreal'): (-73.567251, 45.500458, 'Central Station, Montreal (the collection\'s "Gare Centrale station"; Brendan, 23 Oct 2026)'),
@@ -282,6 +282,7 @@ SHARED = {('onr', 'toronto union'): 'TORONTO_UNION', ('oncn', 'toronto union'): 
           ('oncn', 'don'): 'CP_DON',                                       # Don (Queen St. East): one station, CN Table 122 and CP Table 50
           ('onthb', 'toronto union'): 'TORONTO_UNION', ('oncpthb', 'toronto union'): 'TORONTO_UNION', ('onthb', 'toronto'): 'TORONTO_UNION', ('oncpthb', 'toronto'): 'TORONTO_UNION',
           ('onthb', 'hamilton'): 'THB_HAMILTON', ('oncpthb', 'hamilton'): 'THB_HAMILTON', ('oncp', 'hamilton'): 'THB_HAMILTON',   # Hunter Street: CP and TH&B trains
+          ('oncp', 'st thomas'): 'NYC_ST_THOMAS', ('onlps', 'n y c depot'): 'NYC_ST_THOMAS',   # CP trains used the NYC (Michigan Central) station at St. Thomas (Brendan); the L&PS N.Y.C. Depot
           ('onlps', 'london'): 'CN_LONDON', ('onlps', 'c n r wabash depot'): 'CN_ST_THOMAS',   # L&PS London station: part of the CN London station complex (Brendan); C.N.R. - Wabash Depot = CN St. Thomas
           ('onnyco', 'finch'): 'CP_FINCH',                                 # Finch: one station at the NYC - CP crossing (Brendan, 25 Oct 2026)
           ('oncpcn', 'toronto union'): 'TORONTO_UNION', ('oncpcn', 'toronto'): 'TORONTO_UNION',

@@ -1741,7 +1741,7 @@ Stations of different railways within 250 m (70 pairs; script: same check over v
   - Table 50 (on_cp_t049w): No. 20 The Canadian probably read one row off (Komoka 5.20 / 5.35 and Puslinch 7.19 should be London 5.35 and Guelph Jct. 7.19,
     per Table 68): recheck against the scan.
   - Table 73: No. 50 Elma printed 8.09 (impossible), estimated 8.26; Crest by mileage (collection point ~2 mi short).
-  - Table 69: CP St. Thomas station placed at the end of the CP (Credit Valley) track (approximate); Ostrander, Kinglake, Embro, Bennington, McConkey, Lind by mileage.
+  - Table 69: Ostrander, Kinglake, Embro, Bennington, McConkey, Lind by mileage.
   - Table 65: hand points CP Wingham (branch end), Wingham Jct. (by Glenannan); the Wingham in-and-out reading of the miles. Table 63: Fergus - Elora 65 / 50
     min as printed. Cataract hand point (shared by Tables 62 and 63).
 - RUN-THROUGH CANDIDATES added since 26 Oct: CP / TH&B Toronto - Buffalo trains (CP 721 = TH&B 372, 741 / 374, 801 / 380, 821 / 382; 712 / 371, 732 / 73, 752 / 375,
@@ -1842,6 +1842,6 @@ Stations of different railways within 250 m (70 pairs; script: same check over v
 ## Version 85 (29 October 2026): CP Tables 69 and 69A (mixed)
 - Scan cp1948_on/t069.png. All mixed, daily except Sunday; Toronto rows (Table 50 connections) not entered.
 - on_cp_t069: M660 / M656 Woodstock - Ingersoll - Belmont - St. Thomas (M660 printed in the column headed "M660 / M655": its Woodstock - St. Thomas
-  times). CP St. Thomas: hand point at the end of the CP (Credit Valley) track, APPROXIMATE -> ask Brendan.
+  times). CP St. Thomas = the NYC (Michigan Central) station (Brendan, 29 Oct 2026): stop NYC_ST_THOMAS, shared with the L&PS N.Y.C. Depot; the CP trains run the last stretch on NYC track (drawn NYC; 'nyc' added to the other-railway owners drawn in their own colour).
 - on_cp_t069b: M655 / M659 Woodstock - Ingersoll - Tillsonburg - Port Burwell (M655 Woodstock 10.00 from the first column, Ingersoll - Port Burwell from the second).
 - on_cp_t069a: M681 / M682 Woodstock - Zorra - Embro - St. Marys (Woodstock - Zorra over the main line, 7.1 mi from Table 50; branch miles printed from Zorra).
