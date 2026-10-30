@@ -1863,4 +1863,13 @@ Stations of different railways within 250 m (70 pairs; script: same check over v
 - TO CHECK: the reconstructed hourly GRR pattern and running times; Joseph Street as the Hespeler trains' Preston stop.
 - (29 Oct 2026, Brendan: "these tracks be styled as interurbans") page_template: track of owners lps / grr / len drawn as a SOLID line (no white dash),
   stations used only by interurban lines (kinds P, E) drawn as CIRCLES in the line colour; stations shared with a steam railway stay squares (Galt C.P.R.,
-  N.Y.C. Depot St. Thomas). The B.C. Electric one-style change (next rebuild) still to do.
+  N.Y.C. Depot St. Thomas). 
+
+## Version 90 (29 October 2026): B.C. Electric in the uniform interurban style
+- SAVED FIRST for a future "BCER system simulator" (Brendan): pipeline/archive/bcer_simulator/page_template_cd8a1b3.html + README (git tag bcer-simulator-base):
+  the old BCER drawing (two-car Chilliwack trains, single local cars, double-track sides, passing-siding meeting halo), ink track, line-coloured station rings,
+  five-ring legend, per-line "On the line" headings.
+- Now (page_template): BCER track solid BCER red (Chilliwack and local lines alike); BCER stations red circles (no line colours); BCER cars drawn by drawConsist as
+  the four-car interurban (inter = kinds P, E or any non-mainline train); legend: one "B.C. Electric" entry and one "Interurban station" ring; "On the line":
+  one "B.C. Electric · N cars" heading (Chilliwack trains first, then the local cars). The planned four-capsule interurban cars are thereby done for all
+  interurbans. Not carried over: the BCER double-track offset and the meeting halo (in the archive).

@@ -108,6 +108,7 @@ canvas#map.hover { cursor: pointer; }
 .sw.boat { width: 20px; height: 8px; border-radius: 2px 8px 8px 2px / 2px 4px 4px 2px; background: linear-gradient(90deg, var(--loco) 0 12%, var(--paper) 12% 34%, var(--cpss-funnel) 34% 46%, var(--paper) 46% 62%, var(--loco) 62%); border: 1.5px solid var(--loco); box-sizing: border-box; }
 .sw.car { background: var(--bcer); width: 14px; }
 .sw.consist.cp { --gn: var(--cp); } .sw.consist.cn { --gn: var(--cn); } .sw.consist.pge { --gn: var(--pge); }
+.sw.consist.bcer { --gn: var(--bcer); background: var(--bcer); } .sw.ring.bcer { border-color: var(--bcer); }
 .sw.consist { width: 26px; height: 7px; border-radius: 2px; background: linear-gradient(90deg, var(--loco) 0 28%, var(--paper) 28% 32%, var(--gn) 32% 62%, var(--paper) 62% 66%, var(--gn) 66%); }
 .sw.ring { width: 10px; height: 10px; border-radius: 50%; background: var(--paper); border: 2px solid var(--ink); }
 .sw.ring.c { border-color: var(--local); } .sw.ring.b { border-color: var(--lake); } .sw.ring.l { border-color: var(--lulu); } .sw.ring.n { border-color: var(--nwm); }
@@ -205,8 +206,8 @@ button:focus-visible, select:focus-visible, input:focus-visible, .trow:focus-vis
       <span class="day" id="clockDay">Monday</span>
     </div>
     <div class="legend">
-      <span><i class="sw car"></i>B.C. Electric car</span><span><i class="sw consist cp"></i>Canadian Pacific and E&amp;N</span><span><i class="sw consist cn"></i>Canadian National</span><span><i class="sw consist"></i>Great Northern</span><span><i class="sw consist pge"></i>Pacific Great Eastern</span><span><i class="sw consist si"></i>Spokane International</span><span><i class="sw consist wpy"></i>White Pass &amp; Yukon</span><span><i class="sw consist nar"></i>Northern Alberta</span><span><i class="sw consist np"></i>Northern Pacific</span><span><i class="sw consist sps"></i>Spokane, Portland &amp; Seattle</span><span><i class="sw consist up"></i>Union Pacific</span><span><i class="sw consist milw"></i>Milwaukee Road</span><span><i class="sw consist arr"></i>Alaska Railroad</span><span><i class="sw consist gwwd"></i>Greater Winnipeg Water District</span><span><i class="sw consist onr"></i>Ontario Northland</span><span><i class="sw consist acr"></i>Algoma Central</span><span><i class="sw consist nyc"></i>New York Central</span><span><i class="sw consist dh"></i>Delaware &amp; Hudson</span><span><i class="sw consist tem"></i>Temiscouata</span><span><i class="sw consist cgt"></i>Canada &amp; Gulf Terminal</span><span><i class="sw consist rs"></i>Roberval &amp; Saguenay</span><span><i class="sw consist aj"></i>Alma &amp; Jonquière</span><span><i class="sw consist thb"></i>Toronto, Hamilton &amp; Buffalo</span><span><i class="sw consist lps"></i>London &amp; Port Stanley</span><span><i class="sw consist cp"></i>Grand River and Lake Erie &amp; Northern (CP electric)</span><span><i class="sw boat"></i>Steamer</span></div>
-    <div class="legend"><span><i class="sw ring"></i>Chilliwack</span><span><i class="sw ring c"></i>Central Park</span><span><i class="sw ring b"></i>Burnaby Lake</span><span><i class="sw ring l"></i>Lulu Island</span><span><i class="sw ring n"></i>Marpole–New Westminster</span><span><i class="sw sq"></i>Railway station</span><span><i class="sw dia"></i>Steamer landing</span>
+      <span><i class="sw consist bcer"></i>B.C. Electric</span><span><i class="sw consist cp"></i>Canadian Pacific and E&amp;N</span><span><i class="sw consist cn"></i>Canadian National</span><span><i class="sw consist"></i>Great Northern</span><span><i class="sw consist pge"></i>Pacific Great Eastern</span><span><i class="sw consist si"></i>Spokane International</span><span><i class="sw consist wpy"></i>White Pass &amp; Yukon</span><span><i class="sw consist nar"></i>Northern Alberta</span><span><i class="sw consist np"></i>Northern Pacific</span><span><i class="sw consist sps"></i>Spokane, Portland &amp; Seattle</span><span><i class="sw consist up"></i>Union Pacific</span><span><i class="sw consist milw"></i>Milwaukee Road</span><span><i class="sw consist arr"></i>Alaska Railroad</span><span><i class="sw consist gwwd"></i>Greater Winnipeg Water District</span><span><i class="sw consist onr"></i>Ontario Northland</span><span><i class="sw consist acr"></i>Algoma Central</span><span><i class="sw consist nyc"></i>New York Central</span><span><i class="sw consist dh"></i>Delaware &amp; Hudson</span><span><i class="sw consist tem"></i>Temiscouata</span><span><i class="sw consist cgt"></i>Canada &amp; Gulf Terminal</span><span><i class="sw consist rs"></i>Roberval &amp; Saguenay</span><span><i class="sw consist aj"></i>Alma &amp; Jonquière</span><span><i class="sw consist thb"></i>Toronto, Hamilton &amp; Buffalo</span><span><i class="sw consist lps"></i>London &amp; Port Stanley</span><span><i class="sw consist cp"></i>Grand River and Lake Erie &amp; Northern (CP electric)</span><span><i class="sw boat"></i>Steamer</span></div>
+    <div class="legend"><span><i class="sw ring bcer"></i>Interurban station</span><span><i class="sw sq"></i>Railway station</span><span><i class="sw dia"></i>Steamer landing</span>
     </div>
     <div class="typenote">Light face type, a.m. hours; heavy face type, p.m. hours.</div>
   </header>
@@ -621,8 +622,7 @@ function renderBase() {
   g.lineWidth = 1.6 / k; g.stroke(PATH_INTER);
   g.strokeStyle = colors.siding; g.lineWidth = 1.1 / k; g.stroke(PATH_SIDING);
   g.setLineDash([1 / k, 5 / k]); g.strokeStyle = colors['ink-soft']; g.lineWidth = 1.6 / k; for (const L of LANES) strokePieces(g, L, k, box); g.setLineDash([]);   // steamer lanes: dotted
-  g.strokeStyle = colors.ink; g.lineWidth = 2.4 / k; PATH_LINES.forEach(p => g.stroke(p));
-  g.lineWidth = 3 / k; g.stroke(PATH_ROUTE);
+  g.strokeStyle = colors.bcer; g.lineWidth = 2.6 / k; PATH_LINES.forEach(p => g.stroke(p)); g.stroke(PATH_ROUTE);   // B.C. Electric: one interurban style, BCER red (Brendan, 29 Oct 2026; the old style: archive/bcer_simulator)
   // main line railways: owner-coloured line with a half-width white dash on top
   g.lineCap = 'butt';
   for (const T of TRACK) for (const r of T.runs) {
@@ -647,7 +647,7 @@ function renderBase() {
     if (LINE_OF[s.line]?.water) { const hh = s.principal ? 5.2 : 3.8; g.beginPath(); g.moveTo(x, y - hh); g.lineTo(x + hh, y); g.lineTo(x, y + hh); g.lineTo(x - hh, y); g.closePath(); g.strokeStyle = colors.tie; }
     else if (s.inter) { g.beginPath(); g.arc(x, y, r, 0, Math.PI * 2); g.strokeStyle = colors[KIND_COLOR[LINE_OF[s.line].kind]]; }   // interurban station: a circle in the line's colour
     else if (LINE_OF[s.line]?.mainline) { const hh = s.principal ? 4.5 : 3.2; g.beginPath(); g.rect(x - hh, y - hh, 2 * hh, 2 * hh); g.strokeStyle = colors.tie; }
-    else { g.beginPath(); g.arc(x, y, r, 0, Math.PI * 2); g.strokeStyle = s.line ? colors[LINE_COLOR[s.line]] : colors.ink; }
+    else { g.beginPath(); g.arc(x, y, r, 0, Math.PI * 2); g.strokeStyle = colors.bcer; }   // B.C. Electric station: a red circle (no line colours)
     g.fillStyle = colors.paper; g.fill(); g.lineWidth = s.principal ? 2 : 1.4; g.stroke();
     if (s.principal || zoomedIn || selI === s.i) labels.push({ s, x, y });
   }
@@ -764,44 +764,7 @@ function draw(states, now = performance.now()) {
   const baseLen = Math.max(20, Math.min(34, 20 + (k - 0.01) * 300));
   for (const { t, st } of states) {
     if (t.water) { drawBoat(t, st); continue; }
-    if (t.mainline) { drawConsist(t, st); continue; }
-    let [x, y] = toScreen(st.x, st.y);
-    let ang = st.ang;
-    // Central Park, Burnaby Lake and Lulu Island cars are single cars; a Chilliwack train is drawn as two cars coupled, each no bigger than a local car
-    const twin = !t.local;
-    const len = twin ? Math.max(11, baseLen * 0.5) : Math.max(14, baseLen * 0.62), wid = 8, gap = 1.5;
-    const dbl = (t.rk === 'main' && st.d < NW_CHAIN - 5) || (LINE_OF[t.rk]?.doubleTo && st.d < LINE_OF[t.rk].doubleTo - 5);   // double track: keep to the right
-    const meeting = !st.moving && st.e?.meet;                                                                                // in the passing siding, to the right of travel
-    const dirSign = t.dir === 0 ? 1 : -1, side = (dbl ? (view.k > 0.02 ? 5 : 3.5) : 0) + (meeting ? 9 : 0);
-    const shift = a => [-Math.sin(a) * side * dirSign, Math.cos(a) * side * dirSign];
-    { const [ox, oy] = shift(ang); x += ox; y += oy; }
-    const col = colors[KIND_COLOR[t.kind]];
-    const selected = S.sel?.kind === 'train' && S.sel.id === t.id;
-    const RLEN = ROUTES[t.rk].len, half = (len + gap) / 2 / view.k;                 // half a car pitch, in metres along the track
-    const mid = twin ? Math.max(half, Math.min(RLEN - half, st.d)) : st.d;
-    for (const c of (twin ? [-1, 1] : [0])) {                                        // rear car first, leading car on top
-      let cx = x, cy = y, ca = ang;
-      if (twin) { const p = along(mid + c * dirSign * half, t.rk), [px, py] = toScreen(p.x, p.y), [ox, oy] = shift(p.ang); cx = px + ox; cy = py + oy; ca = p.ang; }
-      ctx.save(); ctx.translate(cx, cy); ctx.rotate(ca);
-      if (selected) { roundRect(-len / 2 - 3, -wid / 2 - 3, len + 6, wid + 6, (wid + 6) / 2); ctx.strokeStyle = col; ctx.lineWidth = 2; ctx.stroke(); }
-      roundRect(-len / 2, -wid / 2, len, wid, twin ? 3 : wid / 2);
-      ctx.fillStyle = col; ctx.fill(); ctx.lineWidth = 1.5; ctx.strokeStyle = colors.paper; ctx.stroke();
-      if (c >= 0) { ctx.beginPath(); ctx.arc(dirSign * (len / 2 - 3.5), 0, 1.8, 0, Math.PI * 2); ctx.fillStyle = colors.paper; ctx.fill(); }   // direction nose, leading car
-      ctx.restore();
-    }
-    // number label, kept upright (left off in the province-wide views unless the train is selected)
-    if (t.short && (view.k >= FAR_K || selected)) {
-    ctx.font = `700 11px ${getFont('ui')}`; ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
-    ctx.lineWidth = 3; ctx.strokeStyle = colors.paper;
-    const lx = x + Math.sin(ang) * 15 * (meeting ? (t.dir === 0 ? -1 : 1) : 1), ly = y - Math.abs(Math.cos(ang)) * 15 - 2;
-    ctx.strokeText(t.short, lx, ly); ctx.fillStyle = col; ctx.fillText(t.short, lx, ly);
-    ctx.textAlign = 'start'; ctx.textBaseline = 'alphabetic';
-    }
-    if (!st.moving && st.e?.meet) {
-      ctx.beginPath(); ctx.arc(x, y, (twin ? len + gap / 2 : len / 2) + 6 + 2 * Math.sin(performance.now() / 300), 0, Math.PI * 2);
-      ctx.strokeStyle = colors.hold; ctx.globalAlpha = .45; ctx.lineWidth = 1.5; ctx.stroke(); ctx.globalAlpha = 1;
-    }
-    trainHits.push({ t, x, y });
+    drawConsist(t, st);                                             // B.C. Electric cars too: the interurban consist (four cars), since 29 Oct 2026
   }
 }
 function drawBoat(t, st) {
@@ -828,7 +791,7 @@ function drawConsist(t, st) {
   const k = view.k, RR = ROUTES[t.rk];
   const seg = Math.max(24, 6 / k), back = t.dir === 0 ? -1 : 1;
   // locals shorter than the named trains; keep the whole train under ~48 px when zoomed far out
-  const inter = t.kind === 'P' || t.kind === 'E';                                   // an electric interurban (the London & Port Stanley): four cars, no locomotive
+  const inter = t.kind === 'P' || t.kind === 'E' || !t.mainline;   // electric interurbans: B.C. Electric, L&PS, GRR, L&N                                   // an electric interurban (the London & Port Stanley): four cars, no locomotive
   const n = inter ? 3 : Math.max(2, Math.min(/local|mixed/i.test(t.label || '') ? 4 : 7, Math.floor(48 / (seg * k)) - 1));
   const col = colors[t.livery || KIND_COLOR[t.kind]];             // a line may carry its own livery (the Spokane International)
   const selected = S.sel?.kind === 'train' && S.sel.id === t.id;
@@ -898,11 +861,11 @@ function renderList(states, T) {
   const cv0 = nextCar(0), cv1 = nextCar(1);
   if (cv0 || cv1) nd += `<div class="meta">Next Central Park cars: ${cv0 ? 'from Vancouver ' + tspan(cv0.start) : ''}${cv0 && cv1 ? ', ' : ''}${cv1 ? 'from New Westminster ' + tspan(cv1.start) : ''}.</div>`;
   h += nd;
-  const main = states.filter(x => !x.t.local && !x.t.mainline);
-  h += `<div class="section-label">Chilliwack line</div>`;
-  if (!main.length) h += `<div class="empty">No Chilliwack trains running now.</div>`;
-  h += main.map(row).join('');
-  for (const kd of ['c', 'b', 'l', 'n', 'g', 'q', 'p', 'i', 'r', 'y', 'a', 'o', 'd', 'u', 'm', 'k', 'x', 'j', 'h', 'z', 't', 'f', 'T', 'G', 'R', 'J', 'B', 'P', 'E', 'v']) {   // x, j were missing (C&NW, GWWD; 23 Oct 2026)
+  const bc = states.filter(x => !x.t.mainline && !x.t.water).sort((a, b) => (a.t.local ? 1 : 0) - (b.t.local ? 1 : 0));   // one B.C. Electric heading (Brendan, 29 Oct 2026)
+  h += `<div class="section-label">B.C. Electric · ${bc.length} ${bc.length === 1 ? 'car' : 'cars'}</div>`;
+  if (!bc.length) h += `<div class="empty">No cars running now.</div>`;
+  h += bc.map(row).join('');
+  for (const kd of ['g', 'q', 'p', 'i', 'r', 'y', 'a', 'o', 'd', 'u', 'm', 'k', 'x', 'j', 'h', 'z', 't', 'f', 'T', 'G', 'R', 'J', 'B', 'P', 'E', 'v']) {   // x, j were missing (C&NW, GWWD; 23 Oct 2026)
     const xs = states.filter(x => x.t.kind === kd);
     if ('yaodumkxjhztfTGRJBPE'.includes(kd) && !xs.length) continue;    // a railway of a few trains: no heading when nothing is running
     const unit = kd === 'v' ? ['boat', 'boats'] : 'gpqiryaodumkxjhztfTGRJBPE'.includes(kd) ? ['train', 'trains'] : ['car', 'cars'];
