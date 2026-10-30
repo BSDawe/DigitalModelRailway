@@ -1761,6 +1761,133 @@
      ]
     ]
    }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "own": "nyc",
+    "name": "CP - NYC connection, St. Thomas (Claude)",
+    "note": "Brendan, 29 Oct 2026: the CP tracks connect directly to the NYC tracks at St. Thomas and the CP trains run through to the NYC station. The collection's NYC siding from the end of the CP (Credit Valley) line to the station (sidings of other railways are left out of the CP graph), tied to the main at the station."
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -81.1736932,
+      42.7776827
+     ],
+     [
+      -81.1738912,
+      42.7776673
+     ],
+     [
+      -81.1740661,
+      42.7776577
+     ],
+     [
+      -81.1741933,
+      42.7776521
+     ],
+     [
+      -81.1743558,
+      42.7776465
+     ],
+     [
+      -81.1839047,
+      42.7778146
+     ],
+     [
+      -81.1839977,
+      42.7778174
+     ],
+     [
+      -81.1840859,
+      42.7778212
+     ],
+     [
+      -81.1841821,
+      42.7778276
+     ],
+     [
+      -81.18425,
+      42.7778365
+     ],
+     [
+      -81.1843124,
+      42.7778492
+     ],
+     [
+      -81.1847817,
+      42.7779753
+     ],
+     [
+      -81.1848791,
+      42.7779998
+     ],
+     [
+      -81.184976,
+      42.7780184
+     ],
+     [
+      -81.1850799,
+      42.7780316
+     ],
+     [
+      -81.1852006,
+      42.7780389
+     ],
+     [
+      -81.1854289,
+      42.7780437
+     ],
+     [
+      -81.1860419,
+      42.7778264
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "own": "thb",
+    "name": "TH&B (BW&LE) Waterford wye, east leg tie (Claude)",
+    "note": "Brendan, 29 Oct 2026: TH&B trains run through the wye between the two Brantford Waterloo & Lake Erie pieces onto the NYC to the NYC Waterford station. The east leg starts mid-segment on the BW&LE main (no shared vertex): tie along the main's line. Plus a 15 m tie from the east leg end to the NYC eastbound main (the leg met only the westbound main, which the station does not sit on)."
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.3142813,
+      42.9378719
+     ],
+     [
+      -80.3083852,
+      42.9345127
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "own": "nyc",
+    "name": "TH&B - NYC eastbound main tie, Waterford (Claude)",
+    "note": "see the BW&LE Waterford wye tie"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.3024028,
+      42.9328554
+     ],
+     [
+      -80.302318,
+      42.932737
+     ]
+    ]
+   }
   }
  ]
 }

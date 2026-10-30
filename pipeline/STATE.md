@@ -1736,7 +1736,7 @@ Stations of different railways within 250 m (70 pairs; script: same check over v
 - TO CHECK (Brendan, list added 29 Oct 2026): points and readings Claude placed or guessed in Versions 78 - 84:
   - CN 122 / 126: hand points CN Allandale and CN Camp Borden (Camp Borden mile 78.0 estimated); No. 43 Trout Creek printed 5.39, read 5.59; No. 42 (p: ex Sun
     and Mon, also Mon June 28 - Sept 6) entered ex Sun; estimated junction times of the branch sections and untimed flag stops.
-  - Table 56 / TH&B: International Railway Bridge border point (mid-river); TH&B - Michigan Central tie at Welland; Welland and Waterford station points.
+  - Table 56 / TH&B: International Railway Bridge border point (mid-river); TH&B - Michigan Central tie at Welland; Welland station point.
   - L&PS: Colborne St., Philip St., Elm St. placed by estimated mileage; Stop 7 printed mile 9.0, read 7.8; No. 37 St. Thomas time smudged, read 1.46.
   - Table 50 (on_cp_t049w): No. 20 The Canadian probably read one row off (Komoka 5.20 / 5.35 and Puslinch 7.19 should be London 5.35 and Guelph Jct. 7.19,
     per Table 68): recheck against the scan.
@@ -1787,7 +1787,7 @@ Stations of different railways within 250 m (70 pairs; script: same check over v
 - Agency THB added (on_build agencies list).
 - Not entered: Welland - Niagara Falls rows (bus connections, the bus sign in the Guide), Dunnville / St. Anns buses.
 - Links (APPROXIMATE, Claude): International Railway Bridge, Fort Erie - mid-river border; TH&B - Canada Southern eastbound main tie at Welland.
-  Hand: TH&B Hamilton = Hunter Street = the collection's "2nd West Hamilton station" (Brendan, 27 Oct 2026), Welland (NYC station point), Waterford (BW&LE station building), Fort Erie = Bridgeburg.
+  Hand: TH&B Waterford = the NYC Waterford station (Brendan, 29 Oct 2026; through the BW&LE wye; stop NYC_WATERFORD); TH&B Hamilton = Hunter Street = the collection's "2nd West Hamilton station" (Brendan, 27 Oct 2026), Welland (NYC station point), Waterford (BW&LE station building), Fort Erie = Bridgeburg.
 
 ## Version 80 (27 October 2026): CP Table 62 Toronto - Orangeville - Owen Sound; CP Ontario paused for the week
 - on_cp_t062 (CP timetable 1948, Brendan's image; scan cp1948_on/t062.png): 705, 707 (ex Sun), 709 (Sun) / 706, 708 (ex Sun), 710 (Sun) Toronto - Streetsville -
@@ -1842,6 +1842,6 @@ Stations of different railways within 250 m (70 pairs; script: same check over v
 ## Version 85 (29 October 2026): CP Tables 69 and 69A (mixed)
 - Scan cp1948_on/t069.png. All mixed, daily except Sunday; Toronto rows (Table 50 connections) not entered.
 - on_cp_t069: M660 / M656 Woodstock - Ingersoll - Belmont - St. Thomas (M660 printed in the column headed "M660 / M655": its Woodstock - St. Thomas
-  times). CP St. Thomas = the NYC (Michigan Central) station (Brendan, 29 Oct 2026): stop NYC_ST_THOMAS, shared with the L&PS N.Y.C. Depot; the CP trains run the last stretch on NYC track (drawn NYC; 'nyc' added to the other-railway owners drawn in their own colour).
+  times). CP St. Thomas = the NYC (Michigan Central) station (Brendan, 29 Oct 2026): stop NYC_ST_THOMAS, shared with the L&PS N.Y.C. Depot; the CP trains run straight from the end of the CP line onto the NYC track to the station (link 'CP - NYC connection, St. Thomas': the NYC siding the CP line joins; drawn NYC). The first build had routed them through the yards and over CN and L&PS track (Brendan caught it).
 - on_cp_t069b: M655 / M659 Woodstock - Ingersoll - Tillsonburg - Port Burwell (M655 Woodstock 10.00 from the first column, Ingersoll - Port Burwell from the second).
 - on_cp_t069a: M681 / M682 Woodstock - Zorra - Embro - St. Marys (Woodstock - Zorra over the main line, 7.1 mi from Table 50; branch miles printed from Zorra).

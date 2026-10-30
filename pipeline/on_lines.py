@@ -169,7 +169,7 @@ _HUNTER = (-79.8691523, 43.253237, 'TH&B Hamilton (Hunter Street) station: the c
 _FE = (-78.9163205, 42.9283318, 'Fort Erie (NYC / Michigan Central), the collection\'s Bridgeburg station by the International Bridge (Bridgeburg was renamed Fort Erie in 1932)')
 HAND = {('thb', 'toronto'): _TU, ('cpthb', 'toronto'): _TU, ('thb', 'hamilton'): _HUNTER, ('cpthb', 'hamilton'): _HUNTER, ('cp', 'hamilton'): _HUNTER, ('thb', 'fort erie'): _FE,
         ('thb', 'welland'): (-79.2503608, 42.9765386, 'Welland (NYC / Michigan Central station used by the TH&B), APPROXIMATE: the collection\'s Welland point by the Canada Southern'),
-        ('thb', 'waterford'): (-80.3058704, 42.9328303, 'TH&B Waterford, the collection\'s Brantford Waterloo & Lake Erie station building'),
+        ('thb', 'waterford'): (-80.29625, 42.93341, 'TH&B Waterford = the NYC (Canada Southern) Waterford station (Brendan, 29 Oct 2026): the TH&B trains run through the BW&LE wye onto the NYC'),
         ('cp', 'cataract'): (-80.018278, 43.828291, 'CP Cataract: where Table 62 placed it by mileage (no point in the collection); junction for the Elora line (Table 63)'),
         ('cp', 'wingham'): (-81.3195, 43.8872, 'CP Wingham: the end of the Wingham branch (the collection\'s point is the CN station)'),
         ('cp', 'wingham junction'): (-81.2474, 43.9239, 'CP Wingham Jct.: where the Wingham branch leaves the Teeswater line, by Glenannan (Claude, from the miles: Wingham Jct. 124.7, Wingham 129.2, Glenannan 134.1)'),
@@ -282,6 +282,7 @@ SHARED = {('onr', 'toronto union'): 'TORONTO_UNION', ('oncn', 'toronto union'): 
           ('oncn', 'don'): 'CP_DON',                                       # Don (Queen St. East): one station, CN Table 122 and CP Table 50
           ('onthb', 'toronto union'): 'TORONTO_UNION', ('oncpthb', 'toronto union'): 'TORONTO_UNION', ('onthb', 'toronto'): 'TORONTO_UNION', ('oncpthb', 'toronto'): 'TORONTO_UNION',
           ('onthb', 'hamilton'): 'THB_HAMILTON', ('oncpthb', 'hamilton'): 'THB_HAMILTON', ('oncp', 'hamilton'): 'THB_HAMILTON',   # Hunter Street: CP and TH&B trains
+          ('onthb', 'waterford'): 'NYC_WATERFORD',   # the NYC station (Brendan)
           ('oncp', 'st thomas'): 'NYC_ST_THOMAS', ('onlps', 'n y c depot'): 'NYC_ST_THOMAS',   # CP trains used the NYC (Michigan Central) station at St. Thomas (Brendan); the L&PS N.Y.C. Depot
           ('onlps', 'london'): 'CN_LONDON', ('onlps', 'c n r wabash depot'): 'CN_ST_THOMAS',   # L&PS London station: part of the CN London station complex (Brendan); C.N.R. - Wabash Depot = CN St. Thomas
           ('onnyco', 'finch'): 'CP_FINCH',                                 # Finch: one station at the NYC - CP crossing (Brendan, 25 Oct 2026)
