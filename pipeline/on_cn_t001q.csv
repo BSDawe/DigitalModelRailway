@@ -1,0 +1,8 @@
+# Canadian National, Table 1: Quebec (Palais Station) - Charny - Chaudiere (by the Quebec Bridge). Source: Official Guide, April 25, 1948, CN Table 1 (Brendan, 29 Oct 2026; private scans og1948_cnq/). EASTERN TIME unless marked.
+# Miles: Charny - Quebec 14.2 from Table 23 (Charny 459.1, Quebec 473.3).
+#train col=No43 num=43 dir=down days="ex Sun" kind=passenger note="Daily except Sunday: Quebec (Palais Station) 12.00 noon to Charny 12.36 and Chaudiere 12.40 p.m. (on to the Sherbrooke line; that table not in hand)."
+#train col=No44 num=44 dir=up days="ex Sun" kind=passenger note="Daily except Sunday: Chaudiere 1.10 p.m. to Quebec (Palais Station) 1.50 p.m."
+mile,station,principal,prov,tz,No43,No44
+0.0,Quebec (Palais Station),1,QC,E,lv 12.00p,ar 1.50p
+14.2,Charny,1,QC,E,12.36p,1.15p
+15.4,Chaudiere,0,QC,E,ar 12.40p,lv 1.10p

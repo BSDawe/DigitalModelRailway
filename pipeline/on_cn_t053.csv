@@ -1,0 +1,17 @@
+# Canadian National, Table 53: Quebec (Palais Station) - Ste. Anne de Beaupre - St. Joachim - Baie St. Paul - Murray Bay - La Malbaie. Source: Official Guide, April 25, 1948, CN Table 53 (Brendan, 29 Oct 2026; private scans og1948_cnq/). EASTERN TIME unless marked.
+# Miles as printed (Ste. Anne de Beaupre not printed: 21.0 estimated). Pointe au Pic is printed with Murray Bay. Nairn's Falls (92.1): freight only. The Pool trains 354 / 353 / 357
+# (Montreal Windsor Station - Quebec, CP Table 33) are connections, not entered. Psi: daily except Sunday and Monday. Replaces CP Table 38 "via Can. Nat. Rys." (on_cnvia_t038.csv, deleted).
+#train col=No176 num=176 dir=down days="ex Sun" kind=passenger note="Daily except Sunday: Quebec 2.00 p.m. to La Malbaie 5.55 p.m. Connects at Quebec with Pool No. 354 from Montreal (Windsor Station) 9.15 a.m., Quebec 1.10 p.m."
+#train col=No175 num=175 dir=up days="Tue,Wed,Thu,Fri,Sat" kind=passenger note="Daily except Sunday and Monday: La Malbaie 7.15 a.m. to Quebec 11.10 a.m.; connects with Pool No. 353 for Montreal (Windsor Station) 4.46 p.m."
+#train col=No173 num=173 dir=up days=Sun kind=passenger note="Sunday only: La Malbaie 6.10 p.m. to Quebec 10.00 p.m.; connects with Pool No. 357 for Montreal (Windsor Station) 6.30 a.m."
+mile,station,principal,prov,tz,No176,No175,No173
+0.0,Quebec (Palais Station),1,QC,E,lv 2.00p,ar 11.10a,ar 10.00p
+21.0,Ste. Anne de Beaupre,1,QC,E,2.53p,10.15a,9.15p
+25.1,St. Joachim,0,QC,E,3.15p,9.55a,8.45p
+40.8,Sault au Cochon,0,QC,E,f3.53p,f9.13a,f8.06p
+49.4,Petite Riviere,0,QC,E,4.15p,8.50a,7.45p
+59.6,Baie St. Paul,1,QC,E,4.40p,8.27a,7.22p
+67.8,Les Eboulements,0,QC,E,5.00p,8.06a,7.01p
+80.2,St. Irenee,0,QC,E,5.30p,7.35a,6.30p
+86.0,Pointe au Pic,1,QC,E,5.45p,7.20a,6.15p
+87.8,La Malbaie,1,QC,E,ar 5.55p,lv 7.15a,lv 6.10p

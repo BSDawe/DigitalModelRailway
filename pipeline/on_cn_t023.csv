@@ -1,0 +1,34 @@
+# Canadian National, Table 23: Fredericton - Moncton - Edmundston - Quebec: the Quebec part, from the N.B. boundary between Lac Baker, N.B. and Courchesne to Monk, Charny and Quebec (Palais Station). Source: Official Guide, April 25, 1948, CN Table 23 (Brendan, 29 Oct 2026; private scans og1948_cnq/). EASTERN TIME unless marked.
+# ATLANTIC TIME from the boundary to Monk (rows tz A), Eastern from Monk. Miles as printed (from Fredericton / McGivney). The boundary point (257.6, the end of the Quebec collection's National Transcontinental track) and its times estimated (~).
+# Monk: one row, arrival and departure both given here in Eastern time. Signs: a Mon Wed Fri; b Tue Thu Sat; f flag; x, v (conditional) as flag stops. 67: printed with the sign for daily except Saturday and Sunday.
+#train col=No51 num=28-51 dir=down days="Tue,Thu,Sat" kind=passenger from=Moncton note="Printed 28-51: Fredericton (No. 28, 6.30 p.m. ex Sun) and Moncton (No. 51, 5.10 p.m. Mon Wed Fri) joined at McGivney; Edmundston 1.45 / 2.10 a.m. (A.T.) to Quebec 10.25 a.m. Tuesday, Thursday and Saturday mornings. Monk: arrives 6.35 A.T., leaves 6.00 E.T."
+#train col=No67 num=67 dir=down days="Mon,Tue,Wed,Thu,Fri" kind=passenger from=Edmundston note="Daily except Saturday and Sunday: Edmundston 4.00 p.m. (A.T.) to Quebec 10.25 p.m. Monk: arrives 7.35 A.T., leaves 6.50 E.T."
+#train col=No52 num=27-52 dir=up days="Tue,Thu,Sat" kind=passenger to=Moncton note="Printed 27-52: Quebec 6.30 p.m. Tuesday, Thursday and Saturday to Edmundston 4.30 a.m. (A.T.), there dividing for Moncton (No. 52) and Fredericton (No. 27). Monk: arrives 10.50 E.T., leaves 12.15 A.T."
+#train col=No68 num=68 dir=up days="Mon,Wed,Fri" kind=passenger to=Edmundston note="Monday, Wednesday and Friday: Quebec 10.45 p.m. to Edmundston 7.40 a.m. (A.T.). Monk: arrives 2.25 E.T., leaves 3.45 A.T."
+mile,station,principal,prov,tz,No51,No67,No52,No68
+257.6,"Provincial boundary (N.B., Table 23)",0,QC,A,~lv 2.59a,~lv 4.42p,~ar 3.40a,~ar 6.48a
+260.8,Courchesne,0,QC,A,f3.05a,,f3.32a,
+267.5,Glendyne,0,QC,A,3.20a,,3.20a,
+277.0,Riviere Bleue,1,QC,A,3.45a,f5.13p,2.52a,f6.18a
+283.6,Sully,0,QC,A,3.59a,,2.40a,
+286.2,Estcourt,0,QC,A,4.07a,5.30p,2.35a,6.01a
+291.4,St. Eleuthere,0,QC,A,4.21a,f5.41p,2.26a,f5.49a
+299.7,Pelletier,0,QC,A,4.41a,,2.05a,
+317.6,River Manie,0,QC,A,5.16a,,1.32a,
+331.4,Holliday,0,QC,A,f5.45a,,f1.05a,
+343.9,De Gaulle,0,QC,A,6.05a,,12.42a,
+352.6,Lafontaine,0,QC,A,6.27a,,12.22a,
+355.6,Monk,1,QC,E,ar 5.35a / lv 6.00a,ar 6.35p / lv 6.50p,ar 10.50p / lv 11.15p,ar 2.25a / lv 2.45a
+370.5,Bras d'Apic,0,QC,E,6.30a,,10.20p,
+379.3,Ste. Apolline,0,QC,E,6.47a,,10.03p,
+387.3,Rosaire,0,QC,E,7.05a,,9.45p,
+393.0,Ste. Euphemie,0,QC,E,7.17a,,9.32p,
+401.4,Armagh,1,QC,E,7.34a,8.05p,9.12p,1.01a
+412.1,St. Damien,0,QC,E,7.58a,,8.47p,
+421.3,St. Malachie,0,QC,E,8.17a,,8.28p,
+428.1,Ste. Claire,0,QC,E,f8.34a,,f8.11p,
+434.9,St. Anselme,0,QC,E,f8.49a,,f7.55p,
+441.1,St. Isidore,0,QC,E,9.03a,,7.41p,
+447.2,Cantin,0,QC,E,f9.18a,,f7.28p,
+459.1,Charny,1,QC,E,9.49a,9.54p,7.05p,11.17p
+473.3,Quebec (Palais Station),1,QC,E,ar 10.25a,ar 10.25p,lv 6.30p,lv 10.45p

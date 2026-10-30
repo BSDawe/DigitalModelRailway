@@ -1,0 +1,30 @@
+# Canadian National, Table 1a: Campbellton - Matapedia - New Carlisle - Gaspe: the Quebec part, Matapedia - Gaspe. Source: Official Guide, April 25, 1948, CN Table 1a (Brendan, 29 Oct 2026; private scans og1948_cnq/). EASTERN TIME unless marked.
+# Miles as printed (from Matapedia). Grande Riviere is printed "Grande Riviere (Grand River)". Campbellton - Matapedia (N.B., the Table 1 line) waits for the Maritime build.
+#train col=No36 num=36 dir=down days="ex Sun" kind=passenger from=Campbellton note="Daily except Sunday: Campbellton 8.25 a.m. (Matapedia ar 8.55) - Matapedia 9.40 a.m. to Gaspe 7.45 p.m. Brillant Cove: flag stop, no time printed (estimated)."
+#train col=No35 num=35 dir=up days="ex Sun" kind=passenger to=Campbellton note="Daily except Sunday: Gaspe 6.45 a.m. to Matapedia 4.25 p.m. (on 4.40 p.m. to Campbellton 5.20 p.m.). Brillant Cove: flag stop, no time printed (estimated)."
+mile,station,principal,prov,tz,No36,No35
+0.0,Matapedia,1,QC,E,lv 9.40a,ar 4.25p
+12.8,Cross Point,0,QC,E,10.05a,3.55p
+35.5,Nouvelle,0,QC,E,11.04a,2.59p
+52.7,Maria,0,QC,E,11.53a,2.10p
+60.7,Cascapedia,0,QC,E,12.14p,1.51p
+67.8,New Richmond,1,QC,E,12.34p,1.31p
+71.8,Black Capes,0,QC,E,12.44p,1.22p
+78.6,Caplan,0,QC,E,1.04p,1.04p
+89.3,Bonaventure,0,QC,E,1.33p,12.35p
+98.1,New Carlisle,1,QC,E,2.25p,12.15p
+101.7,Paspebiac,0,QC,E,2.40p,11.40a
+109.2,St. Godfroi,0,QC,E,3.00p,11.18a
+114.3,Marcil,0,QC,E,3.15p,10.58a
+120.6,Port Daniel,0,QC,E,3.33p,10.35a
+126.4,Gascons,0,QC,E,3.52p,10.20a
+135.0,Newport,0,QC,E,4.17p,9.55a
+142.0,Chandler,1,QC,E,4.40p,9.34a
+146.2,St. Adelaide,0,QC,E,4.53p,9.24a
+152.1,Grande Riviere,0,QC,E,5.12p,9.11a
+160.4,Cape Cove,0,QC,E,5.38p,8.51a
+163.2,Perce,1,QC,E,5.51p,8.39a
+177.4,Barachois,0,QC,E,6.35p,7.55a
+186.1,Brillant Cove,0,QC,E,~f6.58p,~f7.30a
+194.8,Douglastown,0,QC,E,7.22p,7.05a
+202.3,Gaspe,1,QC,E,ar 7.45p,lv 6.45a

@@ -1,0 +1,15 @@
+# Canadian National, Tables 1 and 54: Levis - Charny - Villeroy - Fortierville (mixed). Source: Official Guide, April 25, 1948, CN Table 54 and Table 1 (Brendan, 29 Oct 2026; private scans og1948_cnq/). EASTERN TIME unless marked.
+# Miles: Levis - Villeroy as printed in Table 1; Villeroy - Fortierville 10.3 as printed in Table 54.
+#train col=M255 num=255 dir=down days="ex Sun" kind=mixed note="Mixed, daily except Sunday: Levis 5.15 p.m. to Villeroy 7.00 and Fortierville 7.55 p.m. Parisville (13.1 mi from Villeroy): no time printed, not entered."
+#train col=M256 num=256 dir=up days="ex Sun" kind=mixed note="Mixed, daily except Sunday: Fortierville 6.15 a.m. to Villeroy 7.10 and Levis 9.15 a.m. (Quebec by ferry 9.30 a.m.)."
+mile,station,principal,prov,tz,M255,M256
+679.2,Levis,1,QC,E,lv 5.15p,ar 9.15a
+683.5,St. Romuald,0,QC,E,5.31p,8.58a
+687.3,Charny,1,QC,E,5.43p,8.46a
+688.5,Chaudiere,0,QC,E,5.47p,8.40a
+691.9,St. Nicholas,0,QC,E,f5.54p,f8.30a
+700.6,St. Apollinaire,0,QC,E,6.08p,8.12a
+708.6,Laurier,0,QC,E,6.23p,7.52a
+719.2,Val Alain,0,QC,E,6.46p,7.26a
+725.5,Villeroy,1,QC,E,7.00p,7.10a
+735.8,Fortierville,1,QC,E,ar 7.55p,lv 6.15a

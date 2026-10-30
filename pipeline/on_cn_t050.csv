@@ -1,0 +1,42 @@
+# Canadian National, Table 50: Quebec (Palais Station) - St. Raymond - Riviere a Pierre - Lac Edouard - Chambord - Chicoutimi. Source: Official Guide, April 25, 1948, CN Table 50 (Brendan, 29 Oct 2026; private scans og1948_cnq/). EASTERN TIME unless marked.
+# Miles as printed. Signs (Table 50 page): * daily; dagger ex Sun; double dagger ex Sat; section Sun; a Mon Wed Fri; b Tue Thu Sat; d Sunday leaves 6.00 p.m.; f flag; k Sat only;
+# n, z and the colon / check signs: conditional (entered as flag stops). Montreal - Riviere a Pierre: on_cn_t050m.csv; Chambord - Dolbeau: on_cn_t050d.csv.
+# Replaces CP Table 39 "via Can. Nat. Rys." (on_cnvia_t039.csv, deleted).
+#train col=No163 num=163 dir=down days=daily kind=passenger note="Daily: Quebec 10.20 p.m. to Riviere a Pierre 12.20 a.m. (there the Montreal cars of No. 211 join No. 211, below), Chambord 6.05 / 6.20 a.m. and Chicoutimi 9.15 a.m.; Dolbeau cars: on_cn_t050d.csv."
+#train col=No211 num=211 dir=down days=daily kind=passenger from=Montreal note="Daily sleeping-car train (printed 163-211): from Montreal (Central Station) 7.00 p.m. (Sundays 6.00 p.m.; on_cn_t050m.csv) and the Quebec cars of No. 163; Riviere a Pierre 1.00 a.m. to Chambord 5.15 / 5.30 and Chicoutimi 7.30 a.m. Stops at any station between Riviere a Pierre and Chicoutimi for sleeping-car passengers."
+#train col=No171 num=171 dir=down days="ex Sun" kind=passenger note="Daily except Sunday: Quebec 4.25 p.m. to St. Raymond 5.50 p.m."
+#train col=No169 num=169 dir=down days=Sat kind=passenger note="Saturday only: Quebec 12.15 p.m. to St. Raymond 1.40 p.m. Runs June 19 until September 11, inclusive."
+#train col=No161 num=161 dir=down days="Tue,Thu,Sat" kind=passenger note="Tuesday, Thursday and Saturday: Quebec 8.50 a.m. to Chambord 3.30 / 3.40 p.m. and Chicoutimi 5.50 p.m."
+#train col=No177 num=177 dir=down days=Sun kind=passenger note="Sunday only: Quebec 8.15 a.m. to St. Raymond 9.40 a.m."
+#train col=No172 num=172 dir=up days="ex Sun" kind=passenger note="Daily except Sunday: St. Raymond 6.15 a.m. to Quebec 7.40 a.m."
+#train col=No162 num=162 dir=up days="Mon,Wed,Fri" kind=passenger note="Monday, Wednesday and Friday: Chicoutimi 6.20 a.m. to Chambord 8.30 / 8.40 a.m. and Quebec 3.15 p.m."
+#train col=No170 num=170 dir=up days=Sat kind=passenger note="Saturday only: St. Raymond 2.00 p.m. to Quebec 3.20 p.m. Runs June 19 until September 11, inclusive."
+#train col=No164 num=164 dir=up days=daily kind=passenger note="Daily: Chicoutimi 7.25 p.m. to Chambord 9.40 / 10.00 p.m., Riviere a Pierre 2.35 / 3.40 a.m. (Montreal cars on with No. 212 at 3.30 a.m.) and Quebec 5.45 a.m."
+#train col=No212 num=212 dir=up days=daily kind=passenger to=Montreal note="Daily sleeping-car train (printed 212-164): Chicoutimi 9.10 p.m. to Riviere a Pierre 3.10 a.m., on 3.30 a.m. to Montreal (Central Station) 9.00 a.m. (on_cn_t050m.csv); Quebec cars on No. 164. Stops at any station between Chicoutimi and Riviere a Pierre for sleeping-car passengers."
+mile,station,principal,prov,tz,No163,No211,No171,No169,No161,No177,No172,No162,No170,No164,No212
+0.0,Quebec (Palais Station),1,QC,E,lv 10.20p,,lv 4.25p,lv 12.15p,lv 8.50a,lv 8.15a,ar 7.40a,ar 3.15p,ar 3.20p,ar 5.45a,
+0.5,Limoilou,0,QC,E,10.26p,,4.31p,12.21p,8.56a,8.21a,7.32a,3.05p,3.12p,5.37a,
+8.4,Loretteville,0,QC,E,10.41p,,4.50p,12.41p,9.17a,8.41a,7.16a,2.46p,2.55p,5.21a,
+16.2,Valcartier,0,QC,E,10.54p,,5.05p,12.57p,9.31a,8.57a,7.02a,2.33p,2.48p,5.08a,
+21.0,Ste. Catherine,0,QC,E,11.04p,,5.14p,1.07p,9.40a,9.07a,6.52a,2.23p,2.32p,4.58a,
+27.6,Lac Sergent,0,QC,E,f11.17p,,f5.34p,f1.24p,f9.56a,f9.23a,f6.29a,f2.07p,f2.15p,f4.44a,
+34.2,St. Raymond,1,QC,E,11.32p,,ar 5.50p,ar 1.40p,10.10a,ar 9.40a,lv 6.15a,1.53p,lv 2.00p,4.29a,
+38.5,St. Leonard de Portneuf,0,QC,E,f11.42p,,,,10.19a,,,1.44p,,f4.19a,
+42.0,Allen's Mill,0,QC,E,f11.49p,,,,f10.26a,,,f1.36p,,f4.11a,
+56.3,Riviere a Pierre,1,QC,E,ar 12.20a / lv 1.30a,lv 1.00a,,,11.01a,,,1.05p,,ar 2.35a / lv 3.40a,ar 3.10a
+78.3,Linton,0,QC,E,2.25a,,,,11.48a,,,12.13p,,1.45a,
+111.7,Lac Edouard,1,QC,E,ar 3.40a / lv 3.50a,ar 3.00a / lv 3.10a,,,ar 1.01p / lv 1.10p,,,ar 10.50a / lv 11.05a,,ar 12.15a / lv 12.25a,ar 1.00a / lv 1.05a
+123.7,Summit,0,QC,E,,,,,f1.36p,,,f10.26a,,,f12.17a
+134.5,Van Bruyssels,0,QC,E,f4.34a,,,,2.01p,,,10.05a,,f11.25p,
+159.4,Lac Bouchette,0,QC,E,5.30a,,,,2.55p,,,9.16a,,10.37p,
+164.0,Bilodeau,0,QC,E,f5.41a,,,,f3.05p,,,f9.06a,,f10.26p,
+176.0,Chambord,1,QC,E,ar 6.05a / lv 6.20a,ar 5.15a / lv 5.30a,,,ar 3.30p / lv 3.40p,,,ar 8.30a / lv 8.40a,,ar 9.40p / lv 10.00p,ar 10.50p / lv 11.05p
+181.8,Desbiens,0,QC,E,6.33a,,,,3.53p,,,8.17a,,9.25p,f10.39p
+185.4,Metabetchouan,0,QC,E,6.43a,f5.47a,,,4.01p,,,8.08a,,9.13p,f10.33p
+190.8,St. Gedeon,0,QC,E,6.56a,,,,4.14p,,,7.55a,,9.00p,
+197.6,Hebertville,0,QC,E,7.12a,,,,4.29p,,,7.38a,,8.45p,10.13p
+199.4,Saguenay Power,0,QC,E,7.30a,,,,4.35p,,,7.30a,,8.40p,
+213.4,La Ratiere,0,QC,E,,,,,~f5.05p,,,~f7.02a,,,
+217.1,Jonquiere,1,QC,E,8.20a,6.50a,,,5.13p,,,6.55a,,8.02p,9.40p
+220.9,Arvida,1,QC,E,8.45a,7.08a,,,5.25p,,,6.42a,,7.50p,9.30p
+227.4,Chicoutimi,1,QC,E,ar 9.15a,ar 7.30a,,,ar 5.50p,,,lv 6.20a,,lv 7.25p,lv 9.10p

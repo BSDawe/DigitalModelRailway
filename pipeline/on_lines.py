@@ -47,8 +47,9 @@ ab_lines.RAILS.update({'oncn': dict(kind='q', label='Canadian National', own='cn
                        'onlps': dict(kind='P', label='London & Port Stanley', own='lps', agency='LPS', color='1C2F5E', pfx='LPS'),   # electric interurban, City of London; dark blue and gold (Brendan, 28 Oct 2026)
                        'ongrr': dict(kind='E', label='Grand River Railway (CP electric)', own='grr', agency='GRR', color='7A1E2C', pfx='GRR'),   # CP electric lines: CP colours, drawn as interurbans (Brendan, 29 Oct 2026)
                        'onlen': dict(kind='E', label='Lake Erie & Northern (CP electric)', own='len', agency='LEN', color='7A1E2C', pfx='LEN'),
+                       'oncnfy': dict(kind='v', label='Quebec – Levis ferry', own='cnfy', agency='CN', color='2F6B44', pfx='CNFY'),   # the ferry with the CN trains (CN Table 1; Brendan, 29 Oct 2026)
                        'onaj': dict(kind='J', label='Alma & Jonquiere', own='aj', agency='AJ', color='4A6D8C', pfx='AJ')})
-OWN = {'oncn': 'cn', 'oncp': 'cp', 'onr': 'onr', 'acr': 'acr', 'onnyc': 'nyc', 'ondh': 'dh', 'ontem': 'tem', 'oncgt': 'cgt', 'onrs': 'rs', 'onaj': 'aj', 'oncpcn': 'cpcn', 'onnyco': 'nyc', 'onthb': 'thb', 'oncpthb': 'cpthb', 'onlps': 'lps', 'ongrr': 'grr', 'onlen': 'len'}
+OWN = {'oncn': 'cn', 'oncp': 'cp', 'onr': 'onr', 'acr': 'acr', 'onnyc': 'nyc', 'ondh': 'dh', 'ontem': 'tem', 'oncgt': 'cgt', 'onrs': 'rs', 'onaj': 'aj', 'oncpcn': 'cpcn', 'onnyco': 'nyc', 'onthb': 'thb', 'oncpthb': 'cpthb', 'onlps': 'lps', 'ongrr': 'grr', 'onlen': 'len', 'oncnfy': 'cnfy'}
 # the New York Central and the Delaware & Hudson (CP Table 18) run over the CP from Windsor Station; the NYC leaves it at Adirondack Junction for its
 # own St. Lawrence & Adirondack line, the D&H follows the CP to the end of its track at the border (Brendan, 24 Oct 2026). Both stop at the border for now.
 
@@ -106,7 +107,7 @@ def _links():
     for fn in sorted(__import__('glob').glob(os.path.join(HERE, 'traces', 'ontario', 'brendan', '*.geojson'))): out += json.load(open(fn))['features']
     return out
 BOXES = {'onr': (-82.6, -78.4, 43.5, 51.5), 'acr': (-85.2, -82.8, 46.3, 49.9), 'nyc': (-74.4, -73.4, 44.9, 45.6), 'dh': (-74.0, -73.2, 44.95, 45.6),
-         'tem': (-69.7, -68.3, 47.3, 47.95), 'nyco': (-75.8, -74.6, 44.9, 45.5), 'cgt': (-68.4, -67.4, 48.5, 48.95), 'rs': (-71.4, -70.8, 48.25, 48.5), 'aj': (-71.9, -71.5, 48.4, 48.8), 'thb': (-80.5, -78.85, 42.85, 43.75), 'cpthb': (-80.5, -78.85, 42.85, 43.75), 'lps': (-81.35, -81.05, 42.6, 43.05), 'grr': (-80.56, -80.28, 43.33, 43.48), 'len': (-80.42, -80.18, 42.76, 43.38)}   # the small railways' graphs: their own part of the map only
+         'tem': (-69.7, -68.3, 47.3, 47.95), 'nyco': (-75.8, -74.6, 44.9, 45.5), 'cgt': (-68.4, -67.4, 48.5, 48.95), 'rs': (-71.4, -70.8, 48.25, 48.5), 'aj': (-71.9, -71.5, 48.4, 48.8), 'thb': (-80.5, -78.85, 42.85, 43.75), 'cpthb': (-80.5, -78.85, 42.85, 43.75), 'lps': (-81.35, -81.05, 42.6, 43.05), 'grr': (-80.56, -80.28, 43.33, 43.48), 'len': (-80.42, -80.18, 42.76, 43.38), 'cnfy': (-71.25, -71.15, 46.79, 46.83)}   # the small railways' graphs: their own part of the map only
 def _graph(me):
     """the track graph for one railway. Every piece goes in as network-like track ('n': its ends tie to track within 150 m) rather than as a backup
     ('b': every point tied to track beside it), and other railways' sidings and yards are left out: the full collections as backups made graphs of
@@ -119,7 +120,7 @@ def _graph(me):
     def feed(add):
         for o in pieces():
             if o['kind'] != 'LineString' or len(o['coords']) < 2: continue
-            if GONE.search(o.get('desc', '')) or any(LATER.search(x) for x in o['path']): continue
+            if GONE.search(o.get('desc', '')) or any(LATER.search(x) for x in o['path']) or 'Pelletierjunction to near St. Andre' in (o.get('desc') or ''): continue   # NTR Pelletier - St. Andre: built after 1948 (Brendan, 29 Oct 2026)
             c = despike(o['coords'])
             if len(c) > 3 and covered(c): continue
             if box and not any(box[0] <= p[0] <= box[1] and box[2] <= p[1] <= box[3] for p in c[::max(1, len(c) // (6 if me in ('onr', 'acr') else 200))]) \
@@ -176,6 +177,13 @@ HAND = {('thb', 'toronto'): _TU, ('cpthb', 'toronto'): _TU, ('thb', 'hamilton'):
         ('cp', 'wingham'): (-81.3195, 43.8872, 'CP Wingham: the end of the Wingham branch (the collection\'s point is the CN station)'),
         ('cp', 'wingham junction'): (-81.2474, 43.9239, 'CP Wingham Jct.: where the Wingham branch leaves the Teeswater line, by Glenannan (Claude, from the miles: Wingham Jct. 124.7, Wingham 129.2, Glenannan 134.1)'),
         ('cp', 'st thomas'): (-81.1860511, 42.7779249, 'CP St. Thomas = the NYC (Michigan Central) station (Brendan, 29 Oct 2026); the collection\'s point'),
+        ('cn', 'st hyacinthe'): (-72.9391349, 45.6298369, 'CN St. Hyacinthe, on the main line (the collection\'s point is off the line, 1.9 km west); APPROXIMATE, Claude'),
+        ('cn', 'ste rosalie junction'): (-72.9091837, 45.6363857, 'CN Ste. Rosalie Junction: where the Drummondville line (Drummond County Railroad) meets the St. Lawrence & Atlantic'),
+        ('cn', 'ste rosalie'): (-72.8940748, 45.6399046, 'CN Ste. Rosalie, on the Drummondville line 0.4 mi from the junction (by the printed miles); APPROXIMATE, Claude'),
+        ('cn', 'bridge street'): (-73.5515986, 45.4843264, 'CN Bridge Street, Montreal (Pointe St. Charles), on the main line; APPROXIMATE, Claude (the collection\'s Bridge Street is Ottawa\'s)'),
+        ('cn', 'nicolet'): (-72.6095388, 46.2280408, 'CN Nicolet, on the branch from St. Leonard (the collection files it as abandoned sidings); APPROXIMATE, Claude'),
+        ('cn', 'chambord'): (-72.0554882, 48.421918, 'CN Chambord (Junction): where the Roberval line leaves the Lac St. Jean line; the end of the collection\'s Roberval subdivision'),
+        ('cn', 'st charles'): (-70.9473, 46.7724, 'CN St. Charles (de Bellechasse): the collection\'s point on the Intercolonial (it has a second St. Charles at Quebec)'),
         ('cp', 'toronto'): _TU, ('cn', 'toronto'): _TU, ('onr', 'toronto'): _TU,
         ('cp', 'montreal'): (-73.567980, 45.497179, 'Windsor Station, Montreal (the collection\'s "Gare Windsor station"; Brendan, 23 Oct 2026)'),
         ('cn', 'montreal'): (-73.567251, 45.500458, 'Central Station, Montreal (the collection\'s "Gare Centrale station"; Brendan, 23 Oct 2026)'),
@@ -288,6 +296,7 @@ SHARED = {('onr', 'toronto union'): 'TORONTO_UNION', ('oncn', 'toronto union'): 
           ('oncp', 'st thomas'): 'NYC_ST_THOMAS', ('onlps', 'n y c depot'): 'NYC_ST_THOMAS',   # CP trains used the NYC (Michigan Central) station at St. Thomas (Brendan); the L&PS N.Y.C. Depot
           ('ongrr', 'galt'): 'GALT_MAIN_STREET', ('onlen', 'galt'): 'GALT_MAIN_STREET',   # one Main Street station for the GRR and the L&N (KMZ; Brendan)
           ('ongrr', 'galt c p r'): 'CP_GALT',                              # Table 66 trains: the CP Galt station (Brendan)
+          ('oncnfy', 'levis'): 'LEVIS', ('onaj', 'saguenay power'): 'CN_SAGUENAY_POWER',   # the ferry lands at Levis station; A&J meets the CN at Saguenay Power
           ('onlps', 'london'): 'CN_LONDON', ('onlps', 'c n r wabash depot'): 'CN_ST_THOMAS',   # L&PS London station: part of the CN London station complex (Brendan); C.N.R. - Wabash Depot = CN St. Thomas
           ('onnyco', 'finch'): 'CP_FINCH',                                 # Finch: one station at the NYC - CP crossing (Brendan, 25 Oct 2026)
           ('oncpcn', 'toronto union'): 'TORONTO_UNION', ('oncpcn', 'toronto'): 'TORONTO_UNION',

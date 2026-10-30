@@ -1,0 +1,25 @@
+# Canadian National, Table 1: Nicolet - St. Leonard de Nicolet - Drummondville - St. Hyacinthe - Montreal. Source: Official Guide, April 25, 1948, CN Table 1 (Brendan, 29 Oct 2026; private scans og1948_cnq/). EASTERN TIME unless marked.
+# No miles printed for Nicolet and Ste. Monique: Nicolet - St. Leonard about 15 mi (estimated); the main line as printed in Table 1, here from Nicolet.
+#train col=No241 num=241 dir=down days=Sat kind=passenger note="Saturday only: Nicolet 12.55 p.m. to Montreal 4.15 p.m."
+#train col=No141 num=141 dir=down days="Sun,Mon,Tue,Wed,Thu,Fri" kind=passenger note="Daily except Saturday: Nicolet 5.20 p.m. to St. Hyacinthe 8.05 p.m."
+#train col=No142 num=142 dir=up days="ex Sun" kind=passenger note="Daily except Sunday: St. Hyacinthe 9.40 a.m. to Nicolet 12.00 noon."
+mile,station,principal,prov,tz,No241,No141,No142
+0.0,Nicolet,1,QC,E,lv 12.55p,lv 5.20p,ar 12.00p
+7.0,Ste. Monique,0,QC,E,f1.15p,f5.40p,f11.40a
+15.0,St. Leonard de Nicolet,0,QC,E,1.41p,6.08p,11.10a
+19.9,Ste. Perpetue,0,QC,E,1.50p,6.17p,11.00a
+21.4,Mitchell,0,QC,E,f1.53p,f6.20p,f10.55a
+26.0,Bon Conseil,0,QC,E,f2.00p,f6.29p,f10.48a
+28.7,St. Cyrille,0,QC,E,2.05p,6.34p,10.42a
+33.3,Drummondville,1,QC,E,2.15p,7.05p,10.30a
+37.8,St. Germain,0,QC,E,2.23p,7.13p,10.23a
+44.1,St. Eugene,0,QC,E,2.35p,7.25p,10.12a
+49.2,Bagot,0,QC,E,2.44p,7.34p,10.03a
+53.9,St. Edward,0,QC,E,f2.52p,f7.44p,f9.55a
+59.9,Ste. Rosalie,0,QC,E,f3.03p,f7.56p,f9.45a
+60.3,Ste. Rosalie Junction,0,QC,E,3.05p,7.58p,f9.43a
+62.3,St. Hyacinthe,1,QC,E,3.15p,ar 8.05p,lv 9.40a
+69.8,Ste. Madeleine,0,QC,E,,,
+91.8,St. Lambert,0,QC,E,3.54p,,
+93.9,Bridge Street,0,QC,E,4.06p,,
+95.8,Montreal (Central Station),1,QC,E,ar 4.15p,,

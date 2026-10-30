@@ -1,0 +1,28 @@
+# Quebec - Levis ferry, as printed with the CN trains: CN Table 1 "Quebec, Que. (Via Ferry)" times (Official Guide, April 25, 1948; Brendan, 29 Oct 2026: build the ferry).
+# One crossing for each printed connection (the ferry ran more often; its own timetable not in hand). Quebec landing: Brendan's wharf point (46.81183, -71.20161); Levis: the station (shared with the CN and CP trains).
+# Crossing about 10 - 12 minutes (estimated, ~).
+#train col=Q1 num="" dir=down days=daily kind=passenger note="Ferry from Quebec for train No. 1 at Levis (Quebec time as printed in CN Table 1; the crossing time estimated)."
+#train col=Q59 num="" dir=down days=daily kind=passenger note="Ferry from Quebec for train No. 59 at Levis (Quebec time as printed in CN Table 1; the crossing time estimated)."
+#train col=Q3 num="" dir=down days=daily kind=passenger note="Ferry from Quebec for train No. 3 at Levis (Quebec time as printed in CN Table 1; the crossing time estimated)."
+#train col=Q31 num="" dir=down days="ex Sun" kind=passenger note="Ferry from Quebec for train No. 31 at Levis (Quebec time as printed in CN Table 1; the crossing time estimated)."
+#train col=Q135 num="" dir=down days=daily kind=passenger note="Ferry from Quebec for train No. 135 at Levis (Quebec time as printed in CN Table 1; the crossing time estimated)."
+#train col=Q255 num="" dir=down days="ex Sun" kind=passenger note="Ferry from Quebec for train No. M255 at Levis (Quebec time as printed in CN Table 1; the crossing time estimated)."
+#train col=Q4 num="" dir=down days=daily kind=passenger note="Ferry from Quebec for train No. 4 at Levis (Quebec time as printed in CN Table 1; the crossing time estimated)."
+#train col=Q60 num="" dir=down days=daily kind=passenger note="Ferry from Quebec for train No. 60 at Levis (Quebec time as printed in CN Table 1; the crossing time estimated)."
+#train col=Q2 num="" dir=down days=daily kind=passenger note="Ferry from Quebec for train No. 2 at Levis (Quebec time as printed in CN Table 1; the crossing time estimated)."
+#train col=Q136 num="" dir=down days=daily kind=passenger note="Ferry from Quebec for train No. 136 at Levis (Quebec time as printed in CN Table 1; the crossing time estimated)."
+#train col=Q32 num="" dir=down days="ex Sun" kind=passenger note="Ferry from Quebec for train No. 32 at Levis (Quebec time as printed in CN Table 1; the crossing time estimated)."
+#train col=L1 num="" dir=up days=daily kind=passenger note="Ferry to Quebec from train No. 1 at Levis (Quebec arrival as printed in CN Table 1; the Levis departure estimated)."
+#train col=L59 num="" dir=up days=daily kind=passenger note="Ferry to Quebec from train No. 59 at Levis (Quebec arrival as printed in CN Table 1; the Levis departure estimated)."
+#train col=L3 num="" dir=up days=daily kind=passenger note="Ferry to Quebec from train No. 3 at Levis (Quebec arrival as printed in CN Table 1; the Levis departure estimated)."
+#train col=L31 num="" dir=up days="ex Sun" kind=passenger note="Ferry to Quebec from train No. 31 at Levis (Quebec arrival as printed in CN Table 1; the Levis departure estimated)."
+#train col=L135 num="" dir=up days="ex Sun" kind=passenger note="Ferry to Quebec from train No. 135 at Levis (Quebec arrival as printed in CN Table 1; the Levis departure estimated)."
+#train col=L256 num="" dir=up days="ex Sun" kind=passenger note="Ferry to Quebec from train No. M256 at Levis (Quebec arrival as printed in CN Table 1; the Levis departure estimated)."
+#train col=L4 num="" dir=up days=daily kind=passenger note="Ferry to Quebec from train No. 4 at Levis (Quebec arrival as printed in CN Table 1; the Levis departure estimated)."
+#train col=L60 num="" dir=up days=daily kind=passenger note="Ferry to Quebec from train No. 60 at Levis (Quebec arrival as printed in CN Table 1; the Levis departure estimated)."
+#train col=L2 num="" dir=up days=daily kind=passenger note="Ferry to Quebec from train No. 2 at Levis (Quebec arrival as printed in CN Table 1; the Levis departure estimated)."
+#train col=L136 num="" dir=up days=daily kind=passenger note="Ferry to Quebec from train No. 136 at Levis (Quebec arrival as printed in CN Table 1; the Levis departure estimated)."
+#train col=L32 num="" dir=up days="ex Sun" kind=passenger note="Ferry to Quebec from train No. 32 at Levis (Quebec arrival as printed in CN Table 1; the Levis departure estimated)."
+mile,station,principal,prov,tz,Q1,Q59,Q3,Q31,Q135,Q255,Q4,Q60,Q2,Q136,Q32,L1,L59,L3,L31,L135,L256,L4,L60,L2,L136,L32
+0.0,Quebec (Ferry Wharf),1,QC,E,lv 1.00p,lv 4.20a,lv 2.00a,lv 8.20p,lv 9.20a,lv 5.00p,lv 11.40p,lv 12.00a,lv 4.20p,lv 5.20p,lv 7.20a,ar 1.30p,ar 4.30a,ar 3.40a,ar 8.30p,ar 9.50a,ar 9.30a,ar 11.55p,ar 12.40a,ar 4.40p,ar 5.30p,ar 7.30a
+0.9,Levis,1,QC,E,~ar 1.10p,~ar 4.30a,~ar 2.10a,~ar 8.30p,~ar 9.30a,~ar 5.10p,~ar 11.50p,~ar 12.10a,~ar 4.30p,~ar 5.30p,~ar 7.30a,~lv 1.18p,~lv 4.18a,~lv 3.28a,~lv 8.18p,~lv 9.38a,~lv 9.18a,~lv 11.43p,~lv 12.28a,~lv 4.28p,~lv 5.18p,~lv 7.18a

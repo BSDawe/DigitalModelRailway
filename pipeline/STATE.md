@@ -1873,3 +1873,27 @@ Stations of different railways within 250 m (70 pairs; script: same check over v
   the four-car interurban (inter = kinds P, E or any non-mainline train); legend: one "B.C. Electric" entry and one "Interurban station" ring; "On the line":
   one "B.C. Electric · N cars" heading (Chilliwack trains first, then the local cars). The planned four-capsule interurban cars are thereby done for all
   interurbans. Not carried over: the BCER double-track offset and the meeting halo (in the archive).
+
+## Version 91 (29-30 October 2026): CN Quebec parts of the Maritime tables (Official Guide, April 25, 1948)
+- Brendan: CP east of New Brunswick is done; start CN Maritime service, building only the Quebec parts. Scans (private og1948_cnq/): Table 1 (two pages), 1a, 23, 50,
+  53, 54, signs. Script: scratchpad on/cn001.py.
+- Brendan's answers (29 Oct): build the Quebec - Levis ferry now; start the Quebec lines at the N.B. boundary; build the branch trains over the parts shown;
+  delete the CP-table holding files (on_cnpool_t033 = CN 1 - 4, 59, 60; on_cnvia_t038 / t039 = CN Tables 53 / 50): DELETED.
+- on_cn_t001: N.B. boundary at the Restigouche (Matapedia) - Mont Joli - Riviere du Loup - Levis - Charny - Drummondville - St. Hyacinthe - Montreal (Central
+  Station), Table 1 miles: 1 / 2 Maritime Express, 59 / 60 Scotian, 3 / 4 Ocean Limited, 31 / 32 Campbellton locals, 135 (RdL - Charny), 136 (Charny - RdL), 143,
+  11, 23 / 16, 38. on_cn_t001q: 43 / 44 Quebec (Palais) - Charny - Chaudiere. on_cn_t001n: 241 (Sat), 141 / 142 Nicolet - St. Leonard - St. Hyacinthe (- Montreal).
+  on_cn_t001a: 36 / 35 Matapedia - New Carlisle - Perce - Gaspe. on_cn_t023: 28-51, 67 / 27-52, 68 N.B. boundary - Monk - Charny - Quebec (ATLANTIC time to Monk,
+  rows tz A). on_cn_t054: M255 / M256 Levis - Villeroy - Fortierville. on_cn_t050: Quebec - St. Raymond - Riviere a Pierre - Chambord - Chicoutimi (163, 211, 171,
+  169, 161, 177 / 172, 162, 170, 164, 212); on_cn_t050m: 211 / 212 Montreal - Riviere a Pierre (no stations printed); on_cn_t050d: Chambord - Dolbeau sections
+  (unnumbered, junction times estimated; D2 Dolbeau 11.55 p.m. reading UNCERTAIN). on_cn_t053: 176 / 175 (Tue - Sat), 173 (Sun) Quebec - Ste. Anne de Beaupre -
+  Baie St. Paul - Murray Bay - La Malbaie (Ste. Anne mile 21.0 estimated; Pool 353 / 354 / 357 connections not entered).
+- on_cnfy_t001 (rail 'oncnfy', kind v, drawn as a boat, GTFS route type 4; post-processed in on_build after build): Quebec - Levis ferry, one crossing per
+  "Quebec (Via Ferry)" time printed in Table 1 (22 crossings, 10 - 12 min, estimated). Quebec wharf: Brendan's point; Levis: shared LEVIS stop.
+- The new CN files are in on_build LATE, so the older trips keep their ids (CN 1 - 4 Continental, 11 / 12, 38 ...).
+- Track: NTR Pelletier - St. Andre piece excluded (built after 1948; Brendan); links: NTR gap west of St. Isidore, Nicolet branch (collection piece dropped by the
+  abandonment filter: Nicolet - wharf abandoned 1926, the rest 1955) and its tie at St. Leonard, ferry crossing. Hand points (APPROXIMATE, Claude): CN St. Hyacinthe
+  (on the main line), Ste. Rosalie Junction, Ste. Rosalie, Bridge Street (Montreal), Nicolet, St. Charles (Bellechasse), Chambord (junction). Boundary points:
+  Restigouche crossing (-66.93886, 47.97488), N.B. boundary on the NTR (-68.7317, 47.372). A&J Saguenay Power = CN Saguenay Power (shared).
+- Doubts: 32 Luceville 3.20 - Mont Joli 3.25 (8.2 mi in 5 min, as read); 170 Valcartier 2.48 - Loretteville 2.55 (as read); R&S Arvida not shared with CN Arvida (ask).
+- Not built: the N.B. parts of Tables 1, 1a, 23 (Maritime build); the CN pool trains Montreal - Quebec (Table 1 refers to another table, not in hand); the Sherbrooke
+  and Nicolet line tables for 11 / 16 / 23 / 43 / 44.
