@@ -1920,11 +1920,11 @@ Stations of different railways within 250 m (70 pairs; script: same check over v
   Actonvale), 117 (Sun, from Coaticook), 23 (from Sherbrooke).
   - Model week: e and h as in summer (July 3 - Sept 4): No. 16 beyond Richmond Mon - Fri, 126 and 209 Saturdays. c, n, x, y conditional stops entered as flag stops.
   - ASSUMED: No. 17 daily except Sunday (the Portland end of its column, where the sign is, is not in the scans; its Quebec connection is ex Sun and No. 117 runs
-    Sundays). 12: the sign read as a dagger (blurred).
+    Sundays). 12: dagger (daily except Sunday), confirmed by Brendan.
   - The Quebec rows (Sherbrooke - Quebec passengers by the Table 52 trains at Richmond) are in the notes. U.S. part (Grand Trunk, Island Pond - Portland) not built.
 - on_cn_t001: Nos. 11, 16, 23 removed (now whole in t059); St. Hubert - St. Hilaire rows added for No. 38 (Table 59 times). on_cn_t001n: the same rows; 241 Beloeil
   3.34 p.m. 241 is in Table 59 too: kept in t001n only.
-- on_cn_t060a: Coteau - Soulanges - Valleyfield motor trains, 620 - 640 / 619 - 639 (crescent-sign trains = Sundays). on_cn_t075v (Valleyfield sections read from
+- on_cn_t060a: Coteau - Soulanges - Valleyfield motor trains, 620 - 640 / 619 - 639 (crescent-sign trains 633 - 635, 634 - 638: Sunday trains that run on Mondays May 24 and Sept. 7 instead of Sundays May 23 and Sept. 6; Sundays in the model week, Brendan confirmed). on_cn_t075v (Valleyfield sections read from
   Table 75) DELETED: the same service.
 - Table 59a (pool trains Montreal - Quebec): all duplicates, NOT entered: the pool trains 349 - 362 are built from CP Table 33; the CN columns are CN 1 - 4, 59, 60
   (Table 1) with the Levis ferry. Its ferry times differ from Table 1's by up to 10 min in places (e.g. No. 4: Quebec 11.50 p.m. vs 11.55); left as built.
