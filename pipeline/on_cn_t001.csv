@@ -1,7 +1,7 @@
 # Canadian National, Table 1: Halifax - Saint John - Moncton - Mont Joli - Quebec - Montreal: the Quebec part, from the N.B. boundary at the Restigouche (Matapedia) to Levis and Montreal (Central Station). Source: Official Guide, April 25, 1948, CN Table 1 (Brendan, 29 Oct 2026; private scans og1948_cnq/). EASTERN TIME unless marked.
 # Miles as printed (from Halifax). The boundary point (388.3) and its times are estimated (~); the trains run on to / from Campbellton, N.B. (the N.B. parts wait for the Maritime build).
 # Quebec (Via Ferry) times: in the notes and the Quebec - Levis ferry (on_cnfy_t001.csv). Metis Beach rows (connections by the Canada & Gulf Terminal) not entered.
-# Not here: M255 / M256 (Levis - Villeroy - Fortierville: on_cn_t054.csv); 43 / 44 Quebec (Palais) - Charny - Chaudiere (Richmond - Quebec trains: on_cn_t052.csv); 241, 141 / 142 Nicolet (on_cn_t001n.csv).
+# Not here: M255 / M256 (Levis - Villeroy - Fortierville: on_cn_t054.csv); 43 / 44 Quebec (Palais) - Charny - Chaudiere (Richmond - Quebec trains: on_cn_t052.csv); 241, 141 / 142 Nicolet (on_cn_t001n.csv); 11, 16, 23 (St. Hyacinthe - Montreal: the Sherbrooke line trains, on_cn_t059.csv, Table 59).
 # Signs (Table 1): * daily; dagger ex Sun; double dagger ex Sat; pilcrow ex Mon; section Sun only; a Mon Wed Fri; k Sat only; f stops on signal; c, d, g, h, i, j, n, o, p, q, r, t, u, v, x, y, z and the box / dot / sharp signs are conditional stops (for passengers to or from points named): entered as flag stops.
 #train col=No1 num=1 dir=down days=daily kind=passenger name="Maritime Express" from=Halifax note="The Maritime Express from Halifax (Campbellton E.T. 2.35 a.m.). Quebec by ferry from Levis 1.30 p.m.; the ferry from Quebec 1.00 p.m. for Levis 1.20 p.m."
 #train col=No59 num=59 dir=down days=daily kind=passenger name=Scotian from=Halifax note="The Scotian from Halifax (Campbellton E.T. 6.40 p.m.). Quebec by ferry from Levis 4.30 a.m.; the ferry from Quebec 4.20 a.m."
@@ -9,91 +9,94 @@
 #train col=No31 num=31 dir=down days="ex Sun" kind=passenger from=Campbellton note="Local, daily except Sunday: Campbellton 6.50 a.m. (E.T.) to Levis 8.15 p.m. and Charny 9.00 p.m. Quebec by ferry from Levis 8.30 p.m.; the ferry from Quebec 8.20 p.m. for Levis 8.35 p.m."
 #train col=No135 num=135 dir=down days="ex Sun" kind=passenger note="Daily except Sunday: Riviere du Loup 5.30 a.m. to Levis 9.30 a.m. and Charny 10.10 a.m. (Levis - Charny printed daily). Quebec by ferry from Levis 9.50 a.m.; the ferry from Quebec 9.20 a.m. for Levis 9.45 a.m."
 #train col=No143 num=143 dir=down days="ex Sun" kind=passenger note="Daily except Sunday: St. Leonard de Nicolet 6.45 a.m. to St. Hyacinthe 8.15 a.m."
-#train col=No11 num=11 dir=down days="ex Sun" kind=passenger note="Daily except Sunday: St. Hyacinthe 8.32 a.m. to Montreal 9.50 a.m. (from the Sherbrooke line; that table not in hand)."
-#train col=No23 num=23 dir=down days="ex Sun" kind=passenger note="Daily except Sunday: St. Hyacinthe 8.25 p.m. to Montreal 9.35 p.m. (from the Sherbrooke line; that table not in hand)."
 #train col=No2 num=2 dir=up days=daily kind=passenger name="Maritime Express" to=Halifax note="The Maritime Express to Halifax (Campbellton E.T. 3.15 a.m.). Quebec passengers by ferry, Quebec 4.20 p.m. (from Levis 4.40 p.m.)."
 #train col=No60 num=60 dir=up days=daily kind=passenger name=Scotian to=Halifax note="The Scotian to Halifax (Campbellton E.T. 9.45 a.m.). Quebec passengers by ferry, Quebec 12.00 night (from Levis 12.40 a.m.)."
 #train col=No4 num=4 dir=up days=daily kind=passenger name="Ocean Limited" to=Halifax note="The Ocean Limited to Halifax (Campbellton E.T. 8.25 a.m.). Quebec passengers by ferry, Quebec 11.40 p.m. (from Levis 11.55 p.m.)."
 #train col=No32 num=32 dir=up days="ex Sun" kind=passenger to=Campbellton note="Local, daily except Sunday: Chaudiere 6.40 a.m., Levis 7.40 a.m. to Matapedia 7.36 p.m. and Campbellton 8.00 p.m. (E.T.). Quebec passengers by ferry, Quebec 7.20 a.m. (from Levis 7.30 a.m.)."
 #train col=No136 num=136 dir=up days=daily kind=passenger note="Daily: Charny 4.43 p.m., Levis 5.10 / 5.30 p.m. to Riviere du Loup 9.30 p.m. Quebec passengers by ferry, Quebec 5.20 p.m. (from Levis 5.30 p.m.)."
-#train col=No16 num=16 dir=up days="ex Sun" kind=passenger note="Daily except Sunday: Montreal 8.30 a.m. to St. Hyacinthe 9.27 a.m. (for the Sherbrooke line; that table not in hand)."
 #train col=No38 num=38 dir=up days="ex Sun" kind=passenger note="Daily except Sunday: Montreal 4.20 p.m. to St. Leonard de Nicolet 7.35 p.m."
-mile,station,principal,prov,tz,No1,No59,No3,No31,No135,No143,No11,No23,No2,No60,No4,No32,No136,No16,No38
-388.3,"Provincial boundary (N.B., Restigouche River)",0,QC,E,~lv 3.14a,~lv 7.07p,~lv 6.02p,~lv 7.19a,,,,,~ar 2.39a,~ar 9.11a,~ar 7.58a,~ar 7.37p,,,
-388.4,Matapedia,1,QC,E,3.15a,7.08p,6.03p,7.20a,,,,,2.38a,9.10a,7.57a,7.36p,,,
-393.7,St. Alexis,0,QC,E,,,,7.30a,,,,,,,,7.26p,,,
-398.3,Millstream,0,QC,E,,,,8.00a,,,,,,,,7.06p,,,
-409.5,Routhierville,0,QC,E,,,,8.26a,,,,,,,,6.41p,,,
-416.6,Ste. Florence,0,QC,E,f3.55a,,,8.45a,,,,,f1.49a,,,6.26p,,,
-423.1,Causapscal,1,QC,E,4.06a,8.05p,,9.08a,,,,,1.35a,8.04a,,6.10p,,,
-430.9,Lac au Saumon,0,QC,E,f4.26a,,,9.24a,,,,,f1.18a,,,5.54p,,,
-436.5,Amqui,1,QC,E,4.36a,8.33p,,9.37a,,,,,1.07a,7.42a,,5.41p,,,
-444.9,Val Brillant,0,QC,E,f4.49a,f8.50p,,9.55a,,,,,f12.52a,7.29a,,5.24p,,,
-451.5,Sayabec,0,QC,E,5.03a,9.03p,,10.10a,,,,,12.39a,7.19a,,5.00p,,,
-459.0,St. Noel,0,QC,E,f5.18a,,,10.32a,,,,,f12.24a,,,4.40p,,,
-467.0,Padoue,0,QC,E,f5.31a,,,10.52a,,,,,f12.10a,,,4.28p,,,
-471.8,Petit Metis,0,QC,E,,,,11.00a,,,,,,,,4.15p,,,
-475.6,St. Octave,0,QC,E,f6.05a,,,11.12a,,,,,f11.48p,,,4.05p,,,
-481.0,Mont Joli,1,QC,E,ar 6.20a / lv 6.40a,ar 10.05p / lv 10.20p,ar 8.40p / lv 9.00p,ar 11.25a / lv 11.45a,,,,,ar 11.15p / lv 11.35p,ar 6.05a / lv 6.20a,ar 5.05a / lv 5.25a,ar 3.25p / lv 3.50p,,,
-489.2,Luceville,0,QC,E,6.59a,f10.35p,,12.10p,,,,,10.58p,f5.46a,,3.20p,,,
-499.0,Rimouski,1,QC,E,7.17a,10.55p,9.29p,12.55p,,,,,10.25p,5.25a,4.35a,2.50p,,,
-503.2,Sacre Coeur,0,QC,E,f7.28a,,,1.05p,,,,,f10.15p,,,2.25p,,,
-509.5,Bic,0,QC,E,7.39a,11.20p,,1.15p,,,,,10.05p,5.07a,,2.17p,,,
-518.9,St. Fabien,0,QC,E,8.00a,,,1.35p,,,,,9.41p,f4.53a,,1.58p,,,
-528.8,St. Simon,0,QC,E,8.16a,,,1.57p,,,,,9.26p,,,1.40p,,,
-537.4,Trois Pistoles,1,QC,E,8.36a,12.03a,,2.18p,,,,,9.08p,4.27a,,1.25p,,,
-543.8,St. Eloi,0,QC,E,8.46a,,,2.39p,,,,,8.55p,,,1.12p,,,
-548.2,Isle Verte,0,QC,E,8.56a,f12.18a,,2.50p,,,,,8.46p,f4.12a,,1.01p,,,
-556.7,St. Arsene,0,QC,E,9.15a,,,3.05p,,,,,8.31p,,,12.47p,,,
-558.9,Cacouna,0,QC,E,9.20a,,,3.13p,,,,,8.25p,,,12.40p,,,
-564.4,Riviere du Loup,1,QC,E,ar 9.35a / lv 9.55a,ar 12.50a / lv 1.10a,ar 11.20p / lv 11.35p,ar 3.25p / lv 4.05p,lv 5.30a,,,,ar 8.00p / lv 8.15p,ar 3.35a / lv 3.50a,ar 2.50a / lv 3.05a,ar 11.55a / lv 12.30p,ar 9.30p,,
-576.2,St. Alexandre,0,QC,E,,,,4.30p,5.52a,,,,,,,11.23a,9.03p,,
-580.5,St. Andre,0,QC,E,,,,f4.38p,6.00a,,,,,,,f11.15a,8.53p,,
-584.2,Ste. Helene,0,QC,E,,,,4.45p,6.07a,,,,,,,11.07a,8.45p,,
-589.8,St. Pascal,0,QC,E,10.33a,,,4.55p,6.17a,,,,7.10p,,,10.54a,8.32p,,
-595.7,St. Philippe de Neri,0,QC,E,,,,5.05p,6.27a,,,,,,,10.40a,8.19p,,
-599.4,Riviere Ouelle,1,QC,E,,,,5.12p,6.34a,,,,,,,10.25a,8.11p,,
-601.3,St. Pacome,0,QC,E,,,,5.16p,6.38a,,,,,,,10.20a,8.07p,,
-605.5,Ste. Anne,0,QC,E,10.57a,f2.15a,,5.26p,6.48a,,,,6.49p,f2.30a,,10.10a,7.59p,,
-612.9,Ste. Louise,0,QC,E,,,,5.41p,7.00a,,,,,,,9.56a,7.44p,,
-620.7,St. Jean Port Joli,0,QC,E,f11.18a,,,5.57p,7.15a,,,,f6.28p,,,9.40a,7.28p,,
-629.1,L'Islet,0,QC,E,11.28a,,,6.18p,7.30a,,,,6.18p,f2.02a,,9.23a,7.11p,,
-635.6,Cap St. Ignace,0,QC,E,,,,6.32p,7.44a,,,,,,,9.12a,7.00p,,
-642.5,Montmagny,1,QC,E,11.48a,f3.04a,,6.45p,8.00a,,,,5.55p,1.42a,,8.58a,6.45p,,
-647.4,St. Pierre,0,QC,E,,,,6.55p,8.10a,,,,,,,8.48a,6.37p,,
-650.7,St. Francois,0,QC,E,,,,7.03p,8.18a,,,,,,,8.42a,6.30p,,
-655.9,St. Valier,0,QC,E,,,,7.12p,8.30a,,,,,,,8.30a,6.20p,,
-659.2,La Durantaye,0,QC,E,,,,7.25p,8.45a,,,,,,,8.22a,6.13p,,
-665.7,St. Charles,0,QC,E,,,,7.40p,8.58a,,,,,,,8.11a,6.01p,,
-677.1,St. Joseph,0,QC,E,,,,f8.08p,f9.24a,,,,,,,f7.45a,f5.35p,,
-679.2,Levis,1,QC,E,ar 1.00p / lv 1.20p,ar 4.10a / lv 4.30a,ar 2.35a / lv 2.50a,ar 8.15p / lv 8.35p,ar 9.30a / lv 9.45a,,,,ar 4.25p / lv 4.45p,ar 12.15a / lv 12.35a,ar 11.35p / lv 11.50p,ar 7.15a / lv 7.40a,ar 5.10p / lv 5.30p,,
-683.5,St. Romuald,0,QC,E,,,,8.49p,9.59a,,,,4.14p,,,6.58a,4.51p,,
-687.3,Charny,1,QC,E,1.40p,,,ar 9.00p,ar 10.10a,,,,4.05p,11.54p,,6.46a,lv 4.43p,,
-688.5,Chaudiere,0,QC,E,f1.45p,,,,,,,,f3.54p,,,lv 6.40a,,,
-691.9,St. Nicholas,0,QC,E,f1.52p,,,,,,,,f3.47p,,,,,,
-700.6,St. Apollinaire,0,QC,E,f2.03p,,,,,,,,f3.34p,,,,,,
-708.6,Laurier,0,QC,E,2.13p,,,,,,,,3.21p,,,,,,
-719.2,Val Alain,0,QC,E,f2.31p,,,,,,,,f2.58p,,,,,,
-725.5,Villeroy,1,QC,E,f2.48p,,,,,,,,f2.48p,,,,,,
-731.8,Manseau,0,QC,E,f3.04p,f5.48a,,,,,,,2.38p,f10.54p,,,,,
-739.8,Lemieux,0,QC,E,f3.20p,,,,,,,,2.25p,,,,,,
-746.1,Daveluyville,0,QC,E,f3.32p,,,,,,,,2.12p,,,,,,
-751.2,Aston Junction,0,QC,E,3.45p,f6.16a,,,,,,,1.56p,f10.29p,,,,,
-755.0,St. Wenceslas,0,QC,E,f3.52p,,,,,,,,1.49p,,,,,,
-759.2,St. Leonard de Nicolet,0,QC,E,4.00p,,,,,lv 6.45a,,,1.35p,,,,,,ar 7.35p
-764.1,Ste. Perpetue,0,QC,E,f4.12p,,,,,6.54a,,,,,,,,,7.21p
-765.6,Mitchell,0,QC,E,,,,,,f6.57a,,,,,,,,,f7.15p
-770.2,Bon Conseil,0,QC,E,f4.23p,,,,,f7.06a,,,,,,,,,f7.06p
-772.9,St. Cyrille,0,QC,E,f4.29p,,,,,7.11a,,,,,,,,,7.00p
-777.5,Drummondville,1,QC,E,4.40p,6.53a,5.15a,,,7.22a,,,1.07p,9.56p,9.21p,,,,6.45p
-782.0,St. Germain,0,QC,E,f4.50p,,,,,7.30a,,,,,,,,,6.38p
-788.3,St. Eugene,0,QC,E,f5.00p,,,,,7.41a,,,,,,,,,6.26p
-793.4,Bagot,0,QC,E,f5.07p,,,,,7.50a,,,,,,,,,6.16p
-798.1,St. Edward,0,QC,E,,,,,,f7.58a,,,,,,,,,f6.07p
-804.1,Ste. Rosalie,0,QC,E,,,,,,f8.08a,,,,,,,,,f5.56p
-804.5,Ste. Rosalie Junction,0,QC,E,,,,,,8.10a,,,,,,,,,f5.54p
-806.5,St. Hyacinthe,1,QC,E,5.36p,7.44a,5.54a,,,ar 8.15a,lv 8.32a,lv 8.25p,12.34p,9.24p,8.49p,,,ar 9.27a,5.50p
-814.0,Ste. Madeleine,0,QC,E,,,,,,,8.45a,,,,,,,,5.32p
-836.0,St. Lambert,0,QC,E,f6.16p,f8.25a,,,,,9.28a,9.14p,f11.50a,f8.35p,,,,8.49a,4.41p
-838.1,Bridge Street,0,QC,E,,,,,,,9.41a,9.26p,,,,,,8.43a,4.34p
-840.0,Montreal (Central Station),1,QC,E,ar 6.40p,ar 8.45a,ar 7.00a,,,,ar 9.50a,ar 9.35p,lv 11.30a,lv 8.15p,lv 8.00p,,,lv 8.30a,lv 4.20p
+# Rows St. Hubert - St. Hilaire (not in Table 1) added from Table 59 for No. 38 (30 Oct 2026).
+mile,station,principal,prov,tz,No1,No59,No3,No31,No135,No143,No2,No60,No4,No32,No136,No38
+388.3,"Provincial boundary (N.B., Restigouche River)",0,QC,E,~lv 3.14a,~lv 7.07p,~lv 6.02p,~lv 7.19a,,,~ar 2.39a,~ar 9.11a,~ar 7.58a,~ar 7.37p,,
+388.4,Matapedia,1,QC,E,3.15a,7.08p,6.03p,7.20a,,,2.38a,9.10a,7.57a,7.36p,,
+393.7,St. Alexis,0,QC,E,,,,7.30a,,,,,,7.26p,,
+398.3,Millstream,0,QC,E,,,,8.00a,,,,,,7.06p,,
+409.5,Routhierville,0,QC,E,,,,8.26a,,,,,,6.41p,,
+416.6,Ste. Florence,0,QC,E,f3.55a,,,8.45a,,,f1.49a,,,6.26p,,
+423.1,Causapscal,1,QC,E,4.06a,8.05p,,9.08a,,,1.35a,8.04a,,6.10p,,
+430.9,Lac au Saumon,0,QC,E,f4.26a,,,9.24a,,,f1.18a,,,5.54p,,
+436.5,Amqui,1,QC,E,4.36a,8.33p,,9.37a,,,1.07a,7.42a,,5.41p,,
+444.9,Val Brillant,0,QC,E,f4.49a,f8.50p,,9.55a,,,f12.52a,7.29a,,5.24p,,
+451.5,Sayabec,0,QC,E,5.03a,9.03p,,10.10a,,,12.39a,7.19a,,5.00p,,
+459.0,St. Noel,0,QC,E,f5.18a,,,10.32a,,,f12.24a,,,4.40p,,
+467.0,Padoue,0,QC,E,f5.31a,,,10.52a,,,f12.10a,,,4.28p,,
+471.8,Petit Metis,0,QC,E,,,,11.00a,,,,,,4.15p,,
+475.6,St. Octave,0,QC,E,f6.05a,,,11.12a,,,f11.48p,,,4.05p,,
+481.0,Mont Joli,1,QC,E,ar 6.20a / lv 6.40a,ar 10.05p / lv 10.20p,ar 8.40p / lv 9.00p,ar 11.25a / lv 11.45a,,,ar 11.15p / lv 11.35p,ar 6.05a / lv 6.20a,ar 5.05a / lv 5.25a,ar 3.25p / lv 3.50p,,
+489.2,Luceville,0,QC,E,6.59a,f10.35p,,12.10p,,,10.58p,f5.46a,,3.20p,,
+499.0,Rimouski,1,QC,E,7.17a,10.55p,9.29p,12.55p,,,10.25p,5.25a,4.35a,2.50p,,
+503.2,Sacre Coeur,0,QC,E,f7.28a,,,1.05p,,,f10.15p,,,2.25p,,
+509.5,Bic,0,QC,E,7.39a,11.20p,,1.15p,,,10.05p,5.07a,,2.17p,,
+518.9,St. Fabien,0,QC,E,8.00a,,,1.35p,,,9.41p,f4.53a,,1.58p,,
+528.8,St. Simon,0,QC,E,8.16a,,,1.57p,,,9.26p,,,1.40p,,
+537.4,Trois Pistoles,1,QC,E,8.36a,12.03a,,2.18p,,,9.08p,4.27a,,1.25p,,
+543.8,St. Eloi,0,QC,E,8.46a,,,2.39p,,,8.55p,,,1.12p,,
+548.2,Isle Verte,0,QC,E,8.56a,f12.18a,,2.50p,,,8.46p,f4.12a,,1.01p,,
+556.7,St. Arsene,0,QC,E,9.15a,,,3.05p,,,8.31p,,,12.47p,,
+558.9,Cacouna,0,QC,E,9.20a,,,3.13p,,,8.25p,,,12.40p,,
+564.4,Riviere du Loup,1,QC,E,ar 9.35a / lv 9.55a,ar 12.50a / lv 1.10a,ar 11.20p / lv 11.35p,ar 3.25p / lv 4.05p,lv 5.30a,,ar 8.00p / lv 8.15p,ar 3.35a / lv 3.50a,ar 2.50a / lv 3.05a,ar 11.55a / lv 12.30p,ar 9.30p,
+576.2,St. Alexandre,0,QC,E,,,,4.30p,5.52a,,,,,11.23a,9.03p,
+580.5,St. Andre,0,QC,E,,,,f4.38p,6.00a,,,,,f11.15a,8.53p,
+584.2,Ste. Helene,0,QC,E,,,,4.45p,6.07a,,,,,11.07a,8.45p,
+589.8,St. Pascal,0,QC,E,10.33a,,,4.55p,6.17a,,7.10p,,,10.54a,8.32p,
+595.7,St. Philippe de Neri,0,QC,E,,,,5.05p,6.27a,,,,,10.40a,8.19p,
+599.4,Riviere Ouelle,1,QC,E,,,,5.12p,6.34a,,,,,10.25a,8.11p,
+601.3,St. Pacome,0,QC,E,,,,5.16p,6.38a,,,,,10.20a,8.07p,
+605.5,Ste. Anne,0,QC,E,10.57a,f2.15a,,5.26p,6.48a,,6.49p,f2.30a,,10.10a,7.59p,
+612.9,Ste. Louise,0,QC,E,,,,5.41p,7.00a,,,,,9.56a,7.44p,
+620.7,St. Jean Port Joli,0,QC,E,f11.18a,,,5.57p,7.15a,,f6.28p,,,9.40a,7.28p,
+629.1,L'Islet,0,QC,E,11.28a,,,6.18p,7.30a,,6.18p,f2.02a,,9.23a,7.11p,
+635.6,Cap St. Ignace,0,QC,E,,,,6.32p,7.44a,,,,,9.12a,7.00p,
+642.5,Montmagny,1,QC,E,11.48a,f3.04a,,6.45p,8.00a,,5.55p,1.42a,,8.58a,6.45p,
+647.4,St. Pierre,0,QC,E,,,,6.55p,8.10a,,,,,8.48a,6.37p,
+650.7,St. Francois,0,QC,E,,,,7.03p,8.18a,,,,,8.42a,6.30p,
+655.9,St. Valier,0,QC,E,,,,7.12p,8.30a,,,,,8.30a,6.20p,
+659.2,La Durantaye,0,QC,E,,,,7.25p,8.45a,,,,,8.22a,6.13p,
+665.7,St. Charles,0,QC,E,,,,7.40p,8.58a,,,,,8.11a,6.01p,
+677.1,St. Joseph,0,QC,E,,,,f8.08p,f9.24a,,,,,f7.45a,f5.35p,
+679.2,Levis,1,QC,E,ar 1.00p / lv 1.20p,ar 4.10a / lv 4.30a,ar 2.35a / lv 2.50a,ar 8.15p / lv 8.35p,ar 9.30a / lv 9.45a,,ar 4.25p / lv 4.45p,ar 12.15a / lv 12.35a,ar 11.35p / lv 11.50p,ar 7.15a / lv 7.40a,ar 5.10p / lv 5.30p,
+683.5,St. Romuald,0,QC,E,,,,8.49p,9.59a,,4.14p,,,6.58a,4.51p,
+687.3,Charny,1,QC,E,1.40p,,,ar 9.00p,ar 10.10a,,4.05p,11.54p,,6.46a,lv 4.43p,
+688.5,Chaudiere,0,QC,E,f1.45p,,,,,,f3.54p,,,lv 6.40a,,
+691.9,St. Nicholas,0,QC,E,f1.52p,,,,,,f3.47p,,,,,
+700.6,St. Apollinaire,0,QC,E,f2.03p,,,,,,f3.34p,,,,,
+708.6,Laurier,0,QC,E,2.13p,,,,,,3.21p,,,,,
+719.2,Val Alain,0,QC,E,f2.31p,,,,,,f2.58p,,,,,
+725.5,Villeroy,1,QC,E,f2.48p,,,,,,f2.48p,,,,,
+731.8,Manseau,0,QC,E,f3.04p,f5.48a,,,,,2.38p,f10.54p,,,,
+739.8,Lemieux,0,QC,E,f3.20p,,,,,,2.25p,,,,,
+746.1,Daveluyville,0,QC,E,f3.32p,,,,,,2.12p,,,,,
+751.2,Aston Junction,0,QC,E,3.45p,f6.16a,,,,,1.56p,f10.29p,,,,
+755.0,St. Wenceslas,0,QC,E,f3.52p,,,,,,1.49p,,,,,
+759.2,St. Leonard de Nicolet,0,QC,E,4.00p,,,,,lv 6.45a,1.35p,,,,,ar 7.35p
+764.1,Ste. Perpetue,0,QC,E,f4.12p,,,,,6.54a,,,,,,7.21p
+765.6,Mitchell,0,QC,E,,,,,,f6.57a,,,,,,f7.15p
+770.2,Bon Conseil,0,QC,E,f4.23p,,,,,f7.06a,,,,,,f7.06p
+772.9,St. Cyrille,0,QC,E,f4.29p,,,,,7.11a,,,,,,7.00p
+777.5,Drummondville,1,QC,E,4.40p,6.53a,5.15a,,,7.22a,1.07p,9.56p,9.21p,,,6.45p
+782.0,St. Germain,0,QC,E,f4.50p,,,,,7.30a,,,,,,6.38p
+788.3,St. Eugene,0,QC,E,f5.00p,,,,,7.41a,,,,,,6.26p
+793.4,Bagot,0,QC,E,f5.07p,,,,,7.50a,,,,,,6.16p
+798.1,St. Edward,0,QC,E,,,,,,f7.58a,,,,,,f6.07p
+804.1,Ste. Rosalie,0,QC,E,,,,,,f8.08a,,,,,,f5.56p
+804.5,Ste. Rosalie Junction,0,QC,E,,,,,,8.10a,,,,,,f5.54p
+806.5,St. Hyacinthe,1,QC,E,5.36p,7.44a,5.54a,,,ar 8.15a,12.34p,9.24p,8.49p,,,5.50p
+814.0,Ste. Madeleine,0,QC,E,,,,,,,,,,,,5.32p
+820.0,St. Hilaire,0,QC,E,,,,,,,,,,,,5.18p
+821.0,Beloeil,0,QC,E,,,,,,,,,,,,5.13p
+825.0,St. Basile le Grand,0,QC,E,,,,,,,,,,,,5.03p
+828.0,St. Bruno,0,QC,E,,,,,,,,,,,,4.56p
+832.1,St. Hubert,0,QC,E,,,,,,,,,,,,4.48p
+836.0,St. Lambert,0,QC,E,f6.16p,f8.25a,,,,,f11.50a,f8.35p,,,,4.41p
+838.1,Bridge Street,0,QC,E,,,,,,,,,,,,4.34p
+840.0,Montreal (Central Station),1,QC,E,ar 6.40p,ar 8.45a,ar 7.00a,,,,lv 11.30a,lv 8.15p,lv 8.00p,,,lv 4.20p

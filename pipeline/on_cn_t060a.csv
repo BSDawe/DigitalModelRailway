@@ -1,0 +1,28 @@
+# Canadian National, Table 60a: Coteau - Valleyfield (motor trains). Source: Official Guide, April 25, 1948, CN Table 60a (Brendan, 30 Oct 2026; private scans og1948_cnq/). EASTERN TIME.
+# Miles as printed from Valleyfield (Soulanges 3.3, Coteau 5.4), here from Coteau. Replaces on_cn_t075v.csv (the Valleyfield sections read from Table 75: these motor trains; deleted).
+# Table 60 (Danville Jct. - Lewiston, Maine, Grand Trunk) is wholly in the U.S.: not entered.
+# Signs: * daily; dagger ex Sun; section Sun only; k Sat only; f flag; crescent: Sundays (holiday Mondays instead).
+#train col=No620 num=620 dir=down days="ex Sun" kind=motor note="Motor train, Coteau - Valleyfield."
+#train col=No622 num=622 dir=down days="ex Sun" kind=motor note="Motor train, Coteau - Valleyfield."
+#train col=No624 num=624 dir=down days=Sun kind=motor note="Motor train, Coteau - Valleyfield."
+#train col=No626 num=626 dir=down days=daily kind=motor note="Motor train, Coteau - Valleyfield."
+#train col=No628 num=628 dir=down days=Sat kind=motor note="Motor train, Coteau - Valleyfield."
+#train col=No630 num=630 dir=down days=daily kind=motor note="Motor train, Coteau - Valleyfield."
+#train col=No632 num=632 dir=down days=daily kind=motor note="Motor train, Coteau - Valleyfield."
+#train col=No634 num=634 dir=down days=Sun kind=motor note="Motor train, Coteau - Valleyfield (crescent sign: Sundays; on the holiday Mondays May 24 and September 7 instead)."
+#train col=No638 num=638 dir=down days=Sun kind=motor note="Motor train, Coteau - Valleyfield (crescent sign: Sundays; on the holiday Mondays May 24 and September 7 instead)."
+#train col=No640 num=640 dir=down days=daily kind=motor note="Motor train, Coteau - Valleyfield."
+#train col=No619 num=619 dir=up days="ex Sun" kind=motor note="Motor train, Valleyfield - Coteau."
+#train col=No621 num=621 dir=up days="ex Sun" kind=motor note="Motor train, Valleyfield - Coteau."
+#train col=No623 num=623 dir=up days=Sun kind=motor note="Motor train, Valleyfield - Coteau."
+#train col=No625 num=625 dir=up days=Sat kind=motor note="Motor train, Valleyfield - Coteau."
+#train col=No627 num=627 dir=up days=daily kind=motor note="Motor train, Valleyfield - Coteau."
+#train col=No631 num=631 dir=up days=daily kind=motor note="Motor train, Valleyfield - Coteau."
+#train col=No633 num=633 dir=up days=Sun kind=motor note="Motor train, Valleyfield - Coteau (crescent sign: Sundays; on the holiday Mondays May 24 and September 7 instead)."
+#train col=No635 num=635 dir=up days=Sun kind=motor note="Motor train, Valleyfield - Coteau (crescent sign: Sundays; on the holiday Mondays May 24 and September 7 instead)."
+#train col=No637 num=637 dir=up days=daily kind=motor note="Motor train, Valleyfield - Coteau."
+#train col=No639 num=639 dir=up days=daily kind=motor note="Motor train, Valleyfield - Coteau."
+mile,station,principal,prov,tz,No620,No622,No624,No626,No628,No630,No632,No634,No638,No640,No619,No621,No623,No625,No627,No631,No633,No635,No637,No639
+0.0,Coteau,1,QC,E,lv 7.30a,lv 8.55a,lv 9.25a,lv 10.45a,lv 1.35p,lv 4.40p,lv 6.10p,lv 7.05p,lv 8.45p,lv 10.05p,ar 8.15a,ar 9.45a,ar 10.10a,ar 1.15p,ar 4.20p,ar 5.50p,ar 6.50p,ar 8.35p,ar 9.50p,ar 11.05p
+2.1,Soulanges,0,QC,E,f7.35a,f9.00a,f9.30a,f10.50a,f1.40p,f4.45p,f6.15p,f7.10p,f8.50p,f10.10p,f8.10a,f9.40a,f10.05a,f1.10p,f4.15p,f5.45p,f6.45p,f8.30p,f9.45p,f11.00p
+5.4,Valleyfield,1,QC,E,ar 7.45a,ar 9.10a,ar 9.40a,ar 11.00a,ar 1.50p,ar 4.55p,ar 6.25p,ar 7.20p,ar 9.00p,ar 10.20p,lv 8.00a,lv 9.30a,lv 9.55a,lv 1.00p,lv 4.05p,lv 5.35p,lv 6.35p,lv 8.20p,lv 9.35p,lv 10.50p

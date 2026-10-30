@@ -1908,3 +1908,29 @@ Stations of different railways within 250 m (70 pairs; script: same check over v
   Richmond line, = Table 1's 16 / 11 / 23 numbers on the Sherbrooke line) in the notes. on_cn_t001q (43 / 44 partial) DELETED. Richmond: Richmond, Que. (places).
 - on_cn_t055: 193, 195 / 194, 196 Chambord - Roberval - St. Felicien - Dolbeau (confirms the 11.55 p.m. Dolbeau arrival = No. 195, from Chambord 9.50 p.m.).
   on_cn_t050d (estimated Dolbeau sections) DELETED.
+
+## Version 93 (30 October 2026): CN Tables 59 (Quebec part), 59a, 60, 60a
+- Scans (Brendan, 30 Oct; Timetable World screenshots of the Official Guide, May 1948 issue, tables dated April 25, 1948): Table 59 (three views), 59a, 60 / 60a,
+  signs. Script: scratchpad on/t059.py.
+- on_cn_t059: Montreal (Central) - St. Hyacinthe - Richmond - Sherbrooke - Coaticook - international boundary (129.4, the end of the collection's St. Lawrence &
+  Atlantic track just short of Norton, Vt., 129.5; boundary times estimated). 25 trips. Down: 30 (Mon - Fri, Montreal - Ste. Rosalie) / 230 (Sat night, on to
+  Richmond), 112 (Sun) and 12 (to Island Pond), 24 (to Sherbrooke), 124 (Sat, to St. Hyacinthe), 22 (Sun, to Actonvale), 218 (Sun, to Coaticook), 16 (Mon - Fri)
+  / 126 (Sat, express beyond Richmond), 10 (Mon - Fri, to Richmond) / 210 (Sat, on to Island Pond), 602 (Richmond - Sherbrooke). Up: 17, 27 and 37 (from Ste.
+  Rosalie), 601 (Sherbrooke - Richmond), 29 (Sun, from Richmond), 11, 111 (Sun), 9 (Mon - Fri, from Richmond) / 209 (Sat, from Island Pond), 39 (Sun, from
+  Actonvale), 117 (Sun, from Coaticook), 23 (from Sherbrooke).
+  - Model week: e and h as in summer (July 3 - Sept 4): No. 16 beyond Richmond Mon - Fri, 126 and 209 Saturdays. c, n, x, y conditional stops entered as flag stops.
+  - ASSUMED: No. 17 daily except Sunday (the Portland end of its column, where the sign is, is not in the scans; its Quebec connection is ex Sun and No. 117 runs
+    Sundays). 12: the sign read as a dagger (blurred).
+  - The Quebec rows (Sherbrooke - Quebec passengers by the Table 52 trains at Richmond) are in the notes. U.S. part (Grand Trunk, Island Pond - Portland) not built.
+- on_cn_t001: Nos. 11, 16, 23 removed (now whole in t059); St. Hubert - St. Hilaire rows added for No. 38 (Table 59 times). on_cn_t001n: the same rows; 241 Beloeil
+  3.34 p.m. 241 is in Table 59 too: kept in t001n only.
+- on_cn_t060a: Coteau - Soulanges - Valleyfield motor trains, 620 - 640 / 619 - 639 (crescent-sign trains = Sundays). on_cn_t075v (Valleyfield sections read from
+  Table 75) DELETED: the same service.
+- Table 59a (pool trains Montreal - Quebec): all duplicates, NOT entered: the pool trains 349 - 362 are built from CP Table 33; the CN columns are CN 1 - 4, 59, 60
+  (Table 1) with the Levis ferry. Its ferry times differ from Table 1's by up to 10 min in places (e.g. No. 4: Quebec 11.50 p.m. vs 11.55); left as built.
+- Table 60 (Danville Jct. - Lewiston, Maine): wholly U.S., not entered.
+- Track: the collection's St. Lawrence & Atlantic main line Richmond - border doubles back for about 1.4 km south of Compton (trace 1.9 mi too long): replaced by a
+  link without the doubled stretch. Ste. Rosalie: the St. L. & A. and the Drummondville line run 24 m apart from the junction past the station; a short link ties
+  them at the station (one Ste. Rosalie stop for both lines; CP Table 22's Ste. Rosalie is the CP station, separate). Hand: CN Sherbrooke = the Grand Trunk station
+  on rue du Depot (Brendan's point, 45.40055, -71.88820; the CP station is separate, about 850 m away, heritageguide.ca).
+- Side effect: CP Table 8 at Lennoxville (where the CP crosses the St. L. & A.) no longer runs out and back north of the station: 0.8 mi shorter. Check on the map.

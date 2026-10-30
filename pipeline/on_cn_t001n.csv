@@ -3,6 +3,7 @@
 #train col=No241 num=241 dir=down days=Sat kind=passenger note="Saturday only: Nicolet 12.55 p.m. to Montreal 4.15 p.m."
 #train col=No141 num=141 dir=down days="Sun,Mon,Tue,Wed,Thu,Fri" kind=passenger note="Daily except Saturday: Nicolet 5.20 p.m. to St. Hyacinthe 8.05 p.m."
 #train col=No142 num=142 dir=up days="ex Sun" kind=passenger note="Daily except Sunday: St. Hyacinthe 9.40 a.m. to Nicolet 12.00 noon."
+# Rows St. Hilaire - St. Hubert added from Table 59 (241: Beloeil 3.34 p.m.; 30 Oct 2026).
 mile,station,principal,prov,tz,No241,No141,No142
 0.0,Nicolet,1,QC,E,lv 12.55p,lv 5.20p,ar 12.00p
 7.0,Ste. Monique,0,QC,E,f1.15p,f5.40p,f11.40a
@@ -20,6 +21,11 @@ mile,station,principal,prov,tz,No241,No141,No142
 60.3,Ste. Rosalie Junction,0,QC,E,3.05p,7.58p,f9.43a
 62.3,St. Hyacinthe,1,QC,E,3.15p,ar 8.05p,lv 9.40a
 69.8,Ste. Madeleine,0,QC,E,,,
+75.8,St. Hilaire,0,QC,E,,,
+76.8,Beloeil,0,QC,E,3.34p,,
+80.8,St. Basile le Grand,0,QC,E,,,
+83.8,St. Bruno,0,QC,E,,,
+87.9,St. Hubert,0,QC,E,,,
 91.8,St. Lambert,0,QC,E,3.54p,,
 93.9,Bridge Street,0,QC,E,4.06p,,
 95.8,Montreal (Central Station),1,QC,E,ar 4.15p,,

@@ -179,6 +179,7 @@ HAND = {('thb', 'toronto'): _TU, ('cpthb', 'toronto'): _TU, ('thb', 'hamilton'):
         ('cp', 'st thomas'): (-81.1860511, 42.7779249, 'CP St. Thomas = the NYC (Michigan Central) station (Brendan, 29 Oct 2026); the collection\'s point'),
         ('cn', 'st hyacinthe'): (-72.9391349, 45.6298369, 'CN St. Hyacinthe, on the main line (the collection\'s point is off the line, 1.9 km west); APPROXIMATE, Claude'),
         ('cn', 'ste rosalie junction'): (-72.9091837, 45.6363857, 'CN Ste. Rosalie Junction: where the Drummondville line (Drummond County Railroad) meets the St. Lawrence & Atlantic'),
+        ('cn', 'sherbrooke'): (-71.888203, 45.400550, 'CN (Grand Trunk) Sherbrooke station, rue du Dépôt (Brendan, 30 Oct 2026, "about"); the CP station is separate, about 850 m away'),
         ('cn', 'ste rosalie'): (-72.8940748, 45.6399046, 'CN Ste. Rosalie, on the Drummondville line 0.4 mi from the junction (by the printed miles); APPROXIMATE, Claude'),
         ('cn', 'bridge street'): (-73.5515986, 45.4843264, 'CN Bridge Street, Montreal (Pointe St. Charles), on the main line; APPROXIMATE, Claude (the collection\'s Bridge Street is Ottawa\'s)'),
         ('cn', 'nicolet'): (-72.6095388, 46.2280408, 'CN Nicolet, on the branch from St. Leonard (the collection files it as abandoned sidings); APPROXIMATE, Claude'),

@@ -1,0 +1,60 @@
+# Canadian National, Table 59: Montreal (Central Station) - St. Hyacinthe - Richmond - Sherbrooke - Coaticook - (Island Pond - Portland): the Quebec part, to the international boundary at Norton, Vt. Source: Official Guide, April 25, 1948, CN Table 59 (Brendan, 30 Oct 2026; private scans og1948_cnq/). EASTERN TIME.
+# Miles as printed; the boundary (129.4: the end of the collection's St. Lawrence & Atlantic track, just short of Norton, Vt., 129.5) and its times estimated. The U.S. part (Grand Trunk, Island Pond - Portland), the Quebec rows (Table 52 connections, in the notes) and Table 59a (pool trains Montreal - Quebec: all built from CP Table 33 and CN Table 1) not entered.
+# Model week (July 5 - 11): e, h runs as in summer (No. 16 beyond Richmond Monday to Friday; Nos. 126 and 209 Saturdays). Replaces Nos. 11, 16, 23 of on_cn_t001.csv (St. Hyacinthe - Montreal only).
+# Signs: * daily; dagger ex Sun; section Sun only; k Sat only; f flag; c, n, x, y conditional stops (entered as flag stops); i Saturday 5 minutes later.
+#train col=No30 num=30 dir=down days="Mon,Tue,Wed,Thu,Fri" kind=passenger note="Monday to Friday: Montreal 10.35 p.m. to Ste. Rosalie 12.00 midnight (on Saturday nights it runs on to Richmond as No. 230)."
+#train col=No230 num=230 dir=down days=Sat kind=passenger note="Saturday night: No. 30 from Montreal 10.35 p.m. (Ste. Rosalie 5 minutes later on Saturdays, 12.05), on to Richmond 1.20 a.m. Sunday as No. 230."
+#train col=No112 num=112 dir=down days=Sun kind=passenger to=Portland note="Sunday only: Montreal 6.55 p.m. to Island Pond, Vt. 11.45 p.m. (Norton, Vt. 11.22 p.m.). Boundary time estimated."
+#train col=No12 num=12 dir=down days="ex Sun" kind=passenger to=Portland note="Daily except Sunday: Montreal 5.25 p.m. to Island Pond, Vt. 10.25 p.m. (Norton, Vt. 9.59 p.m.). Quebec passengers join at Richmond (Quebec 3.00 p.m., Table 52 No. 45). Boundary time estimated."
+#train col=No24 num=24 dir=down days="ex Sun" kind=passenger note="Daily except Sunday: Montreal 1.20 p.m. to Sherbrooke 4.35 p.m. Quebec passengers join at Richmond (Quebec 12.00 noon, Table 52 No. 43)."
+#train col=No124 num=124 dir=down days=Sat kind=passenger note="Saturday only: Montreal 12.20 p.m. to St. Hyacinthe 1.35 p.m."
+#train col=No22 num=22 dir=down days=Sun kind=passenger note="Sunday only: Montreal 11.40 a.m. to Actonvale 1.30 p.m."
+#train col=No218 num=218 dir=down days=Sun kind=passenger note="Sunday only: Montreal 8.30 a.m. to Coaticook 12.40 p.m."
+#train col=No16 num=16 dir=down days="Mon,Tue,Wed,Thu,Fri" kind=passenger to=Portland note="Monday to Friday in summer (e: daily except Saturday and Sunday, July 3 to September 4; daily except Sunday otherwise): Montreal 8.30 a.m. to Island Pond, Vt. 12.35 p.m. (Norton, Vt. 12.02 p.m.). Quebec passengers by No. 44 from Richmond 10.25 a.m. Boundary time estimated."
+#train col=No126 num=126 dir=down days=Sat kind=passenger to=Portland note="Saturday, July 3 to September 4 (h): No. 16 from Montreal 8.30 a.m. to Richmond, on as No. 126 (Bromptonville: c, stops only for passengers to and from Montreal and beyond) to Island Pond, Vt. 12.35 p.m. Boundary time estimated."
+#train col=No10 num=10 dir=down days="Mon,Tue,Wed,Thu,Fri" kind=passenger note="Monday to Friday: Montreal 6.50 a.m. to Richmond 9.30 a.m. (on Saturdays it runs on as No. 210). Quebec passengers by No. 44 from Richmond 10.25 a.m."
+#train col=No210 num=210 dir=down days=Sat kind=passenger to=Portland note="Saturday only (k): No. 10 from Montreal 6.50 a.m. to Richmond, on as No. 210 to Island Pond, Vt. 11.55 a.m. (Norton, Vt. 11.17 a.m.). Boundary time estimated."
+#train col=No602 num=602 dir=down days="ex Sun" kind=passenger note="Daily except Sunday: Richmond 7.00 a.m. to Sherbrooke 7.45 a.m."
+#train col=No17 num=17 dir=up days="ex Sun" kind=passenger from=Portland note="From Portland: Island Pond, Vt. 1.20 p.m. (Norton, Vt. 2.02 p.m.) to Montreal 5.45 p.m. Days: the Portland end of the column is not in the scans; taken as daily except Sunday, like No. 16 and its Quebec connection (No. 43; on Sundays No. 117 runs). c stops (Dixville, Compton, Waterville, Lennoxville: only for passengers to and from Montreal and beyond, July 3 - September 4) entered as flag stops. Boundary time estimated."
+#train col=No27 num=27 dir=up days="ex Sun" kind=passenger note="Daily except Sunday: Ste. Rosalie 4.48 a.m. to Montreal 6.05 a.m."
+#train col=No37 num=37 dir=up days="ex Sun" kind=passenger note="Daily except Sunday: Ste. Rosalie 5.55 a.m. to Montreal 7.25 a.m."
+#train col=No601 num=601 dir=up days="ex Sun" kind=passenger note="Daily except Sunday: Sherbrooke 9.10 a.m. to Richmond 9.55 a.m. (for Quebec by No. 44, arriving 1.50 p.m.)."
+#train col=No29 num=29 dir=up days=Sun kind=passenger note="Sunday only: Richmond 6.05 a.m. to Montreal 8.25 a.m."
+#train col=No11 num=11 dir=up days="ex Sun" kind=passenger from=Portland note="Daily except Sunday: Island Pond, Vt. 4.40 a.m. (Norton, Vt. 5.07 a.m.) to Montreal 9.50 a.m. Boundary time estimated."
+#train col=No111 num=111 dir=up days=Sun kind=passenger from=Portland note="Sunday only: Island Pond, Vt. 5.00 a.m. (Norton, Vt. 5.26 a.m.) to Montreal 9.30 a.m. Boundary time estimated."
+#train col=No9 num=9 dir=up days="Mon,Tue,Wed,Thu,Fri" kind=passenger note="Monday to Friday: Richmond 4.45 p.m. to Montreal 7.25 p.m. (on Saturdays No. 209 from Island Pond runs through). Ste. Rosalie Junction: n, stops only for connection with the Canadian Pacific (flag stop). Quebec passengers from Quebec 12.00 noon (Table 52 No. 43)."
+#train col=No209 num=209 dir=up days=Sat kind=passenger from=Portland note="Saturday, July 3 to September 4 (h): Island Pond, Vt. 2.20 p.m. (Norton, Vt. 2.47 p.m.) to Richmond 4.30 p.m., on as No. 9 to Montreal 7.25 p.m. Boundary time estimated."
+#train col=No39 num=39 dir=up days=Sun kind=passenger note="Sunday only: Actonvale 5.55 p.m. to Montreal 7.55 p.m."
+#train col=No117 num=117 dir=up days=Sun kind=passenger note="Sunday only: Coaticook 4.40 p.m. to Montreal 8.40 p.m. x stops (stop to leave passengers from Danby and beyond) entered as flag stops."
+#train col=No23 num=23 dir=up days="ex Sun" kind=passenger note="Daily except Sunday: Sherbrooke 6.20 p.m. to Montreal 9.35 p.m. Quebec passengers from Quebec 3.00 p.m. (Table 52 No. 45). South Durham: y, stops to leave passengers from east of Richmond (flag stop)."
+mile,station,principal,prov,tz,No30,No230,No112,No12,No24,No124,No22,No218,No16,No126,No10,No210,No602,No17,No27,No37,No601,No29,No11,No111,No9,No209,No39,No117,No23
+0.0,Montreal (Central Station),1,QC,E,lv 10.35p,lv 10.35p,lv 6.55p,lv 5.25p,lv 1.20p,lv 12.20p,lv 11.40a,lv 8.30a,lv 8.30a,lv 8.30a,lv 6.50a,lv 6.50a,,ar 5.45p,ar 6.05a,ar 7.25a,,ar 8.25a,ar 9.50a,ar 9.30a,ar 7.25p,ar 7.25p,ar 7.55p,ar 8.40p,ar 9.35p
+1.9,Bridge Street,0,QC,E,10.49p,10.49p,7.09p,5.39p,1.34p,12.34p,11.54a,8.44a,8.44a,8.44a,7.04a,7.04a,,,5.56a,7.16a,,8.16a,9.41a,9.20a,7.16p,7.16p,7.46p,8.31p,9.26p
+4.0,St. Lambert,0,QC,E,10.56p,10.56p,7.16p,5.46p,1.41p,12.41p,12.01p,8.51a,8.51a,8.51a,7.11a,7.11a,,5.25p,5.44a,7.04a,,8.04a,9.28a,9.10a,7.04p,7.04p,7.34p,8.19p,9.14p
+7.9,St. Hubert,0,QC,E,11.02p,11.02p,7.23p,5.53p,1.47p,12.48p,12.08p,8.58a,,,7.20a,7.20a,,,5.38a,6.56a,,7.56a,9.21a,,f6.58p,f6.58p,7.28p,f8.12p,
+12.0,St. Bruno,0,QC,E,11.09p,11.09p,7.30p,6.00p,1.53p,12.55p,12.14p,9.05a,,,7.27a,7.27a,,,5.32a,6.48a,,7.52a,9.14a,,f6.51p,f6.51p,7.20p,,f9.03p
+15.0,St. Basile le Grand,0,QC,E,11.16p,11.16p,7.35p,6.06p,1.59p,1.01p,f12.19p,f9.10a,,,f7.32a,f7.32a,,,5.26a,6.38a,,f7.46a,9.08a,,f6.44p,f6.44p,7.14p,,
+19.0,Beloeil,0,QC,E,11.23p,11.23p,7.42p,6.13p,2.04p,1.08p,12.26p,9.17a,,,7.39a,7.39a,,,5.19a,6.31a,,7.39a,9.01a,8.48a,6.37p,6.37p,7.06p,7.56p,8.52p
+20.0,St. Hilaire,0,QC,E,11.27p,11.27p,7.47p,6.18p,2.08p,1.14p,12.32p,9.22a,,,7.45a,7.45a,,,5.15a,6.27a,,7.35a,8.56a,8.45a,6.31p,6.31p,7.00p,f7.53p,
+25.9,Ste. Madeleine,0,QC,E,11.38p,11.38p,7.58p,6.30p,2.18p,1.25p,12.44p,9.33a,,,7.57a,7.57a,,,5.05a,6.15a,,7.25a,8.45a,,6.20p,6.20p,6.48p,,
+33.5,St. Hyacinthe,1,QC,E,11.48p,11.48p,8.15p,6.45p,2.33p,ar 1.35p,12.56p,9.50a,9.27a,9.27a,8.15a,8.15a,,4.47p,4.55a,6.05a,,7.15a,8.32a,8.27a,6.10p,6.10p,6.37p,7.33p,8.25p
+35.5,Ste. Rosalie Junction,0,QC,E,,,,,,,,,,,,,,,,,,,f8.24a,,f6.00p,f6.00p,,,
+35.9,Ste. Rosalie,0,QC,E,ar 12.00a,f12.05a,8.21p,6.50p,2.37p,,1.01p,f9.57a,,,f8.22a,f8.22a,,,lv 4.48a,lv 5.55a,,7.08a,8.22a,,5.58p,5.58p,6.25p,f7.21p,
+40.5,Britannia Mills,0,QC,E,,,,f6.57p,f2.44p,,f1.08p,,,,8.31a,8.31a,,,,,,f7.01a,f8.16a,,,,f6.18p,f7.11p,
+42.8,St. Liboire,0,QC,E,,f12.14a,f8.34p,7.03p,2.49p,,1.13p,10.09a,,,8.38a,8.38a,,,,,,f6.58a,8.13a,,5.38p,5.38p,6.12p,f7.07p,
+45.9,Upton,0,QC,E,,f12.19a,f8.39p,7.08p,2.54p,,1.18p,10.14a,,,8.44a,8.44a,,,,,,f6.53a,8.06a,,5.32p,5.32p,6.05p,f7.01p,f7.54p
+52.2,Actonvale,0,QC,E,,12.31a,8.49p,7.18p,3.04p,,ar 1.30p,10.24a,,,8.54a,8.54a,,4.23p,,,,6.42a,7.56a,8.03a,5.22p,5.22p,lv 5.55p,f6.51p,7.44p
+59.8,Danby,0,QC,E,,f12.44a,f8.59p,f7.33p,,,,f10.34a,,,f9.04a,f9.04a,,,,,,,7.46a,7.54a,f5.11p,f5.11p,,6.41p,
+64.0,South Durham,0,QC,E,,12.56a,9.08p,7.41p,3.23p,,,10.43a,,,9.13a,9.13a,,,,,,6.23a,7.38a,7.47a,5.03p,5.03p,,6.33p,f7.28p
+67.0,Lisgar,0,QC,E,,1.04a,f9.12p,7.46p,f3.30p,,,10.47a,,,,,,,,,,,7.29a,7.38a,f4.57p,f4.57p,,,
+74.3,Richmond,1,QC,E,,ar 1.20a,ar 9.25p / lv 9.35p,ar 8.00p / lv 8.15p,ar 3.45p / lv 3.55p,,,ar 11.00a / lv 11.10a,ar 10.15a / lv 10.25a,ar 10.15a / lv 10.25a,ar 9.30a,ar 9.30a / lv 9.40a,lv 7.00a,ar 3.45p / lv 3.55p,,,ar 9.55a,lv 6.05a,ar 6.50a / lv 7.05a,ar 7.10a / lv 7.20a,lv 4.45p,ar 4.30p / lv 4.45p,,ar 6.05p / lv 6.15p,ar 7.00p / lv 7.10p
+84.4,Windsor Mills,0,QC,E,,,9.51p,8.33p,4.11p,,,11.30a,10.41a,,,9.56a,7.18a,3.26p,,,f9.36a,,6.31a,6.51a,,4.11p,,5.48p,6.43p
+88.1,Titus,0,QC,E,,,,,,,,,,,,,f7.23a,,,,f9.28a,,,,,,,,
+92.3,Bromptonville,0,QC,E,,,10.05p,8.45p,4.24p,,,11.43a,10.55a,f10.55a,,10.10a,7.30a,3.13p,,,9.22a,,6.16a,6.36a,,3.58p,,5.36p,6.31p
+98.9,Sherbrooke,1,QC,E,,,10.20p,9.00p,ar 4.35p,,,12.00p,11.10a,11.10a,,10.25a,ar 7.45a,3.01p,,,lv 9.10a,,6.05a,6.25a,,3.46p,,5.25p,lv 6.20p
+102.0,Lennoxville,0,QC,E,,,10.27p,9.06p,,,,12.07p,11.16a,,,10.31a,,f2.50p,,,,,5.58a,6.17a,,3.35p,,5.13p,
+109.0,Waterville,0,QC,E,,,10.37p,9.16p,,,,12.20p,11.26a,,,10.41a,,f2.41p,,,,,5.46a,6.05a,,3.26p,,5.00p,
+112.3,Compton,0,QC,E,,,10.43p,9.22p,,,,12.26p,11.32a,,,10.47a,,f2.35p,,,,,5.40a,5.59a,,3.20p,,4.53p,
+120.4,Coaticook,1,QC,E,,,11.00p,9.37p,,,,ar 12.40p,11.47a,11.40a,,11.02a,,2.23p,,,,,5.26a,5.45a,,3.08p,,lv 4.40p,
+125.5,Dixville,0,QC,E,,,f11.09p,9.45p,,,,,11.55a,,,11.10a,,f2.10p,,,,,5.15a,5.34a,,2.55p,,,
+129.4,"International Boundary (to Norton, Vt.)",0,QC,E,,,~ar 11.21p,~ar 9.58p,,,,,~ar 12.01p,~ar 11.59a,,~ar 11.16a,,~lv 2.03p,,,,,~lv 5.08a,~lv 5.27a,,~lv 2.48p,,,
