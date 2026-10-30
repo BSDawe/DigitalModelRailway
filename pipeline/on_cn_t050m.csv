@@ -1,6 +1,0 @@
-# Canadian National, Table 50: Montreal (Central Station) - Riviere a Pierre (146.6 mi; no intermediate stations printed: by Joliette and Hervey). Source: Official Guide, April 25, 1948, CN Table 50 (Brendan, 29 Oct 2026; private scans og1948_cnq/). EASTERN TIME unless marked.
-#train col=No211M num=211 dir=down days=daily kind=passenger to=Chicoutimi note="Montreal section of No. 211: Montreal (Central Station) 7.00 p.m. (Sundays 6.00 p.m.) to Riviere a Pierre 12.20 a.m. (Sundays 11.59 p.m.); on to Chicoutimi. No stations printed between."
-#train col=No212M num=212 dir=up days=daily kind=passenger from=Chicoutimi note="Montreal section of No. 212: Riviere a Pierre 3.30 a.m. to Montreal (Central Station) 9.00 a.m. No stations printed between."
-mile,station,principal,prov,tz,No211M,No212M
-0.0,Montreal (Central Station),1,QC,E,lv 7.00p,ar 9.00a
-146.6,Riviere a Pierre,1,QC,E,ar 12.20a,lv 3.30a

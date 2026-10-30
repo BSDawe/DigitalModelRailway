@@ -179,6 +179,9 @@ HAND = {('thb', 'toronto'): _TU, ('cpthb', 'toronto'): _TU, ('thb', 'hamilton'):
         ('cp', 'st thomas'): (-81.1860511, 42.7779249, 'CP St. Thomas = the NYC (Michigan Central) station (Brendan, 29 Oct 2026); the collection\'s point'),
         ('cn', 'st hyacinthe'): (-72.9391349, 45.6298369, 'CN St. Hyacinthe, on the main line (the collection\'s point is off the line, 1.9 km west); APPROXIMATE, Claude'),
         ('cn', 'ste rosalie junction'): (-72.9091837, 45.6363857, 'CN Ste. Rosalie Junction: where the Drummondville line (Drummond County Railroad) meets the St. Lawrence & Atlantic'),
+        ('cn', 'sorel'): (-73.1203, 46.0375, 'CN Sorel: the end of the collection\'s Montreal - Sorel main line (the Sorel - Nicolet and St. Hyacinthe lines go on from it); APPROXIMATE, Claude'),
+        ('cn', 'st isidore junction'): (-73.6402, 45.3455, 'CN St. Isidore Junction: the north end of the collection\'s Lake St. Louis & Province line (Hemmingford branch)'),
+        ('cn', 'lac remi'): (-74.7572, 46.0151, 'CN Lac Remi: the end of the collection\'s St. Raymond subdivision (Montfort line)'),
         ('cn', 'sherbrooke'): (-71.888203, 45.400550, 'CN (Grand Trunk) Sherbrooke station, rue du Dépôt (Brendan, 30 Oct 2026, "about"); the CP station is separate, about 850 m away'),
         ('cn', 'ste rosalie'): (-72.8940748, 45.6399046, 'CN Ste. Rosalie, on the Drummondville line 0.4 mi from the junction (by the printed miles); APPROXIMATE, Claude'),
         ('cn', 'bridge street'): (-73.5515986, 45.4843264, 'CN Bridge Street, Montreal (Pointe St. Charles), on the main line; APPROXIMATE, Claude (the collection\'s Bridge Street is Ottawa\'s)'),
@@ -251,7 +254,7 @@ def track_tree(own):
         pts = [fwd(*p[:2]) for o in pieces() if o['kind'] == 'LineString' and owner(o['path']) == own for p in o['coords'][::3]]
         _TRK[own] = cKDTree(np.array(pts)) if pts else None
     return _TRK[own]
-ALIAS = {('nyc', 'harrison'): 'harrisons corners', ('nyc', 'helena, n y'): 'helena', ('nyc', 'rooseveltown, n y'): 'rooseveltown', ('nyc', 'ottawa'): 'ottawa mann avenue',('aj', 'isle maligne'): 'ile maligne', ('aj', 'st joseph dalma'): 'st joseph de alma', ('rs', 'laterriere junction'): 'laterriere junction',('cn', 'hervey'): 'hervey junction', ('cn', 'severn'): 'severn bridge', ('cn', 'muskoka wharf'): 'gravenhurst wharf', ('cn', 'scotia'): 'scotia junction', ('cn', 'penetang'): 'penetanguishene', ('cn', 'coteau'): 'coteau junction', ('onr', 'porquis'): 'porquis junction',
+ALIAS = {('nyc', 'harrison'): 'harrisons corners', ('nyc', 'helena, n y'): 'helena', ('nyc', 'rooseveltown, n y'): 'rooseveltown', ('nyc', 'ottawa'): 'ottawa mann avenue',('aj', 'isle maligne'): 'ile maligne', ('aj', 'st joseph dalma'): 'st joseph de alma', ('rs', 'laterriere junction'): 'laterriere junction',('cn', 'hervey'): 'hervey junction', ('cn', 'severn'): 'severn bridge', ('cn', 'muskoka wharf'): 'gravenhurst wharf', ('cn', 'scotia'): 'scotia junction', ('cn', 'penetang'): 'penetanguishene', ('cn', 'coteau'): 'coteau junction', ('cn', 'shawinigan falls'): 'shawinigan', ('cn', 'garneau'): 'garneau junction', ('onr', 'porquis'): 'porquis junction',
          ('cp', 'port mcnicoll'): 'port mcnicoll main', ('onr', 'timmins'): 'timmons', ('onr', 'beaver lake'): 'bear lake', ('cn', 'ottawa'): 'ottawa union', ('cp', 'ottawa'): 'ottawa union',
          ('cp', 'clearys'): 'cleary', ('cp', 'tourvilles'): 'tourville', ('cp', 'sutton'): 'sutton flats',
          ('cp', 'st guillaume'): 'st guillaume junction',
@@ -292,6 +295,7 @@ SHARED = {('onr', 'toronto union'): 'TORONTO_UNION', ('oncn', 'toronto union'): 
           ('ontem', 'riviere du loup'): 'CN_RIVIERE_DU_LOUP', ('oncgt', 'mont joli'): 'CN_MONT_JOLI',   # at the CN stations (the CN trains there are not built yet)
           ('oncp', 'brockville'): 'BROCKVILLE_UNION', ('oncpcn', 'brockville'): 'BROCKVILLE_UNION', ('oncn', 'brockville'): 'BROCKVILLE_UNION',   # Brockville Union Station (Brendan)
           ('oncp', 'levis'): 'LEVIS', ('oncn', 'levis'): 'LEVIS',          # one Levis station for CN and CP (Quebec Central; Brendan, 25 Oct 2026)                          # one Palais Station (CP Table 33 and CN Table 38)                             # one station at Cochrane (CN Table 38 and the ONR)
+          ('oncn', 'farnham'): 'CP_FARNHAM', ('oncn', 'iberville c p r'): 'CP_IBERVILLE',   # CN Table 72: Farnham Union Station; the trains leave Iberville by the CP (30 Oct 2026)
           ('oncn', 'don'): 'CP_DON',                                       # Don (Queen St. East): one station, CN Table 122 and CP Table 50
           ('onthb', 'toronto union'): 'TORONTO_UNION', ('oncpthb', 'toronto union'): 'TORONTO_UNION', ('onthb', 'toronto'): 'TORONTO_UNION', ('oncpthb', 'toronto'): 'TORONTO_UNION',
           ('onthb', 'hamilton'): 'THB_HAMILTON', ('oncpthb', 'hamilton'): 'THB_HAMILTON', ('oncp', 'hamilton'): 'THB_HAMILTON',   # Hunter Street: CP and TH&B trains

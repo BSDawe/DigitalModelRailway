@@ -1,0 +1,33 @@
+# Canadian National, Table 65: Montreal (Central Station) - Sorel - Pierreville - Nicolet - Des Ormeaux - Trois Rivieres (Ferry). Source: Official Guide, April 25, 1948, CN Table 65 (Brendan, 30 Oct 2026, page 1121; private scans og1948_cnq/). EASTERN TIME.
+# Miles as printed. Lisieux and Les Greves: flag stops, no times printed (estimated). The ferry across the St. Lawrence to Three Rivers is not entered (no times printed).
+# Signs (page 1121): * daily; dagger ex Sun; double dagger ex Sat; pilcrow ex Mon; section Sun only; a Mon Wed Fri; b Tue Thu Sat; c Mon only; d Fri only; k Sat only; v daily except Sun and Mon; double sharp Sat and Sun; psi Mon - Thu; f flag; crescent: stops on signal Sept. 5 only (no stop); M mixed; motor train sign.
+#train col=No646 num=646 dir=down days="Mon,Tue,Wed,Thu,Fri,Sat" kind=motor note="Motor train, daily except Sunday: Montreal 4.50 p.m. to Nicolet 8.00 p.m."
+#train col=No138 num=138 dir=down days="Mon,Tue,Wed,Thu,Fri,Sat" kind=passenger note="Daily except Sunday: Montreal 7.50 a.m. to Trois Rivieres (ferry landing, Three Rivers) 11.45 a.m."
+#train col=No645 num=645 dir=up days="Mon,Tue,Wed,Thu,Fri,Sat" kind=motor note="Motor train, daily except Sunday: Nicolet 5.15 a.m. to Montreal 8.25 a.m."
+#train col=No137 num=137 dir=up days="Mon,Tue,Wed,Thu,Fri,Sat" kind=passenger note="Daily except Sunday: Trois Rivieres (ferry landing) 4.30 p.m. to Montreal 9.00 p.m."
+mile,station,principal,prov,tz,No646,No138,No645,No137
+0.0,Montreal (Central Station),1,QC,E,lv 4.50p,lv 7.50a,ar 8.25a,ar 9.00p
+1.9,Bridge Street,0,QC,E,5.04p,8.04a,8.16a,8.51p
+4.0,St. Lambert,0,QC,E,5.11p,8.11a,8.04a,8.39p
+6.9,Longueuil,0,QC,E,5.17p,8.18a,7.58a,8.30p
+12.5,Boucherville,0,QC,E,f5.28p,f8.30a,f7.47a,f8.15p
+17.7,Varennes,0,QC,E,f5.39p,f8.42a,f7.36a,f8.03p
+25.2,Vercheres,0,QC,E,5.55p,8.58a,7.20a,7.47p
+29.8,St. Antoine,0,QC,E,f6.04p,f9.08a,f7.11a,f7.36p
+33.4,Contrecoeur,0,QC,E,6.11p,9.13a,7.04a,7.25p
+37.9,St. Roch de Richelieu,0,QC,E,f6.20p,f9.21a,f6.55a,f7.10p
+39.8,Lisieux,0,QC,E,~f6.23p,~f9.24a,~f6.51a,~f7.07p
+42.5,Les Greves,0,QC,E,~f6.28p,~f9.28a,~f6.46a,~f7.02p
+47.7,St. Joseph de Sorel,0,QC,E,f6.37p,9.37a,f6.36a,6.53p
+48.4,Sorel,1,QC,E,ar 6.40p / lv 6.45p,ar 9.40a / lv 9.43a,ar 6.28a / lv 6.34a,ar 6.45p / lv 6.50p
+53.4,Bellevue Junction,0,QC,E,f6.56p,f9.53a,f6.18a,f6.35p
+58.5,Yamaska,0,QC,E,7.08p,10.03a,6.07a,6.26p
+58.9,Yamaska East,0,QC,E,f7.10p,f10.04a,f6.05a,f6.25p
+61.3,Gerard,0,QC,E,f7.16p,f10.09a,f5.59a,f6.20p
+64.8,St. Francois du Lac,0,QC,E,7.24p,10.17a,5.51a,6.12p
+65.4,Pierreville,0,QC,E,7.27p,10.20a,5.48a,6.09p
+72.1,La Baie,0,QC,E,7.42p,10.35a,5.33a,5.55p
+79.9,Nicolet,1,QC,E,ar 8.00p,10.53a,lv 5.15a,5.38p
+86.5,St. Gregoire,0,QC,E,,11.07a,,5.26p
+91.3,Des Ormeaux,0,QC,E,,11.20a,,5.15p
+93.1,Trois Rivieres (Ferry),1,QC,E,,ar 11.45a,,lv 4.30p

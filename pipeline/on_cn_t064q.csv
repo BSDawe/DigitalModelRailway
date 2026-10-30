@@ -1,0 +1,20 @@
+# Canadian National, Table 64: Garneau - St. Stanislas - St. Prosper - Portneuf - Quebec (Palais Station). Source: Official Guide, April 25, 1948, CN Table 64 (Brendan, 30 Oct 2026, page 1121; private scans og1948_cnq/). EASTERN TIME.
+# Miles from Garneau (printed 106.4 - 185.7). Replaces Nos. 107, 108 and the Garneau sections of 697 / 698 in on_cn_t038q.csv (Table 38, which placed Garneau on the St. Prosper - Hervey line).
+# Signs (page 1121): * daily; dagger ex Sun; double dagger ex Sat; pilcrow ex Mon; section Sun only; a Mon Wed Fri; b Tue Thu Sat; c Mon only; d Fri only; k Sat only; v daily except Sun and Mon; double sharp Sat and Sun; psi Mon - Thu; f flag; crescent: stops on signal Sept. 5 only (no stop); M mixed; motor train sign.
+#train col=No108 num=108 dir=down days="Tue,Thu,Sat" kind=passenger note="Tuesday, Thursday and Saturday: Garneau 12.45 p.m. (from No. 110, Montreal) to Quebec 3.30 p.m."
+#train col=No107 num=107 dir=up days="Mon,Wed,Fri" kind=passenger note="Monday, Wednesday and Friday: Quebec 10.00 a.m. to Garneau 12.40 p.m. (for No. 698 to Hervey and La Tuque, No. 109 to Montreal)."
+mile,station,principal,prov,tz,No108,No107
+0.0,Garneau,1,QC,E,lv 12.45p,ar 12.40p
+6.3,Proulxville,0,QC,E,f1.00p,f12.27p
+13.2,St. Stanislas,0,QC,E,1.13p,12.14p
+18.0,St. Prosper,1,QC,E,1.24p,12.04p
+26.5,St. Casimir,0,QC,E,1.39p,11.48a
+30.9,St. Marc,0,QC,E,1.49p,11.37a
+40.4,Portneuf,0,QC,E,2.03p,11.18a
+45.5,Cap Sante,0,QC,E,2.18p,11.08a
+47.9,Donnacona,0,QC,E,2.24p,11.02a
+49.6,Ecureuils,0,QC,E,f2.28p,f10.58a
+56.8,Neuville,0,QC,E,2.42p,10.44a
+63.5,St. Augustin (de Portneuf),0,QC,E,f2.54p,f10.32a
+70.4,Cap Rouge,1,QC,E,3.07p,10.21a
+79.3,Quebec (Palais Station),1,QC,E,ar 3.30p,lv 10.00a

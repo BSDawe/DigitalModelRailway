@@ -1,0 +1,14 @@
+# Canadian National, Table 68: St. Isidore Jn. - St. Remi - Hemmingford (mixed). Source: Official Guide, April 25, 1948, CN Table 68 (Brendan, 30 Oct 2026, page 1121; private scans og1948_cnq/). EASTERN TIME.
+# Miles as printed (from Montreal).
+# Signs (page 1121): * daily; dagger ex Sun; double dagger ex Sat; pilcrow ex Mon; section Sun only; a Mon Wed Fri; b Tue Thu Sat; c Mon only; d Fri only; k Sat only; v daily except Sun and Mon; double sharp Sat and Sun; psi Mon - Thu; f flag; crescent: stops on signal Sept. 5 only (no stop); M mixed; motor train sign.
+#train col=M200 num=200 dir=down days="Tue,Thu,Sat" kind=mixed note="Mixed, Tuesday, Thursday and Saturday: St. Isidore Jn. 4.09 p.m. (from No. 80, Montreal 3.05 p.m.) to Hemmingford 5.10 p.m."
+#train col=M198 num=198 dir=down days="Mon,Wed,Fri" kind=mixed note="Mixed, Monday, Wednesday and Friday: St. Isidore Jn. 4.09 p.m. (from No. 80) to St. Remi 4.25 p.m."
+#train col=M197 num=197 dir=up days="Mon,Wed,Fri" kind=mixed note="Mixed, Monday, Wednesday and Friday: Hemmingford 7.00 a.m. to St. Isidore Jn. 8.02 a.m. (for No. 79, Montreal 9.10 a.m.)."
+#train col=M199 num=199 dir=up days="Tue,Thu,Sat" kind=mixed note="Mixed, Tuesday, Thursday and Saturday: St. Remi 7.45 a.m. to St. Isidore Jn. 8.02 a.m. (for No. 79)."
+mile,station,principal,prov,tz,M200,M198,M197,M199
+20.5,St. Isidore Junction,1,QC,E,lv 4.09p,lv 4.09p,ar 8.02a,ar 8.02a
+26.9,St. Remi,0,QC,E,4.29p,ar 4.25p,7.47a,lv 7.45a
+30.6,St. Michel,0,QC,E,4.39p,,7.32a,
+34.3,Sherrington,0,QC,E,4.49p,,7.22a,
+36.8,Barrington,0,QC,E,4.57p,,7.14a,
+41.8,Hemmingford,1,QC,E,ar 5.10p,,lv 7.00a,

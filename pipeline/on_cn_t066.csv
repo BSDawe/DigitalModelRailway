@@ -1,0 +1,15 @@
+# Canadian National, Table 66: Sorel - Bellevue Junction - St. Hyacinthe (mixed). Source: Official Guide, April 25, 1948, CN Table 66 (Brendan, 30 Oct 2026, page 1121; private scans og1948_cnq/). EASTERN TIME.
+# Miles as printed. St. Louis entered as 'St. Louis (Richelieu)' (apart from CN St. Louis, Sask.). Montreal times (Table 59 trains) in the notes.
+# Signs (page 1121): * daily; dagger ex Sun; double dagger ex Sat; pilcrow ex Mon; section Sun only; a Mon Wed Fri; b Tue Thu Sat; c Mon only; d Fri only; k Sat only; v daily except Sun and Mon; double sharp Sat and Sun; psi Mon - Thu; f flag; crescent: stops on signal Sept. 5 only (no stop); M mixed; motor train sign.
+#train col=M268 num=268 dir=down days="Tue,Thu,Sat" kind=mixed note="Mixed, Tuesday, Thursday and Saturday: Sorel 5.50 a.m. to St. Hyacinthe 8.00 a.m. (Montreal 9.50 a.m. by No. 11)."
+#train col=M267 num=267 dir=up days="Mon,Wed,Fri" kind=mixed note="Mixed, Monday, Wednesday and Friday: (Montreal 4.20 p.m. by No. 38) St. Hyacinthe 6.15 p.m. to Sorel 8.50 p.m."
+mile,station,principal,prov,tz,M268,M267
+0.0,Sorel,1,QC,E,lv 5.50a,ar 8.50p
+4.9,Bellevue Junction,0,QC,E,6.05a,8.35p
+8.2,St. Robert,0,QC,E,6.15a,8.23p
+13.3,St. Aime,0,QC,E,6.35a,8.04p
+17.7,St. Louis (Richelieu),0,QC,E,6.51a,7.42p
+21.2,Fleury,0,QC,E,f7.02a,f7.25p
+23.6,St. Judes,0,QC,E,7.12a,7.04p
+27.9,St. Barnabe South,0,QC,E,7.26a,6.43p
+36.8,St. Hyacinthe,1,QC,E,ar 8.00a,lv 6.15p

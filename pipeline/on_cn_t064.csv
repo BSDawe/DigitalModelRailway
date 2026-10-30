@@ -1,0 +1,42 @@
+# Canadian National, Table 64: Montreal (Central Station) - L'Epiphanie - Joliette - Shawinigan Falls - Garneau - Hervey - Riviere a Pierre. Source: Official Guide, April 25, 1948, CN Table 64 (Brendan, 30 Oct 2026, page 1121; private scans og1948_cnq/). EASTERN TIME.
+# Miles as printed (Montreal - L'Epiphanie stations and times from Table 63, which shows these trains to L'Epiphanie or Pointe aux Trembles). Replaces on_cn_t038m.csv and on_cn_t050m.csv
+# (Montreal - Hervey / Riviere a Pierre sections with no stations printed; deleted) and the Joliette-line trains of on_cn_t063.csv. Nos. 11 and 12 (Quebec - St. Prosper - Hervey) stay in on_cn_t038q.csv.
+# Signs (page 1121): * daily; dagger ex Sun; double dagger ex Sat; pilcrow ex Mon; section Sun only; a Mon Wed Fri; b Tue Thu Sat; c Mon only; d Fri only; k Sat only; v daily except Sun and Mon; double sharp Sat and Sun; psi Mon - Thu; f flag; crescent: stops on signal Sept. 5 only (no stop); M mixed; motor train sign.
+#train col=No116 num=116 dir=down days="Mon,Tue,Wed,Thu,Fri,Sat" kind=passenger note="Daily except Sunday: Montreal 7.00 p.m. to Hervey 11.15 p.m. and Riviere a Pierre 12.20 a.m.: carries the Montreal sections of No. 11 (from Hervey to Cochrane) and No. 211 (from Riviere a Pierre to Chicoutimi). Montreal - L'Epiphanie stops from Table 63."
+#train col=No216 num=216 dir=down days=Sun kind=passenger note="Sunday only: Montreal 6.00 p.m. to Riviere a Pierre 11.59 p.m. (the Sunday Montreal sections of Nos. 11 and 211). Montreal - L'Epiphanie stops from Table 63."
+#train col=No114 num=114 dir=down days="Mon,Tue,Wed,Thu,Fri,Sat" kind=passenger note="Daily except Sunday: Montreal 5.45 p.m. to Hervey 10.37 p.m. Montreal - L'Epiphanie stops from Table 63."
+#train col=No110 num=110 dir=down days=daily kind=passenger note="Daily: Montreal 8.40 a.m. to Garneau 12.35 p.m. (printed 110-698-108: on from Garneau as No. 698 to Hervey and La Tuque, and No. 108 to Quebec). Montreal - L'Epiphanie stops from Table 63."
+#train col=No698 num=698 dir=down days="Mon,Wed,Thu,Fri" kind=passenger note="Garneau 1.10 p.m. to Hervey 1.55 p.m., on to La Tuque and Fitzpatrick (on_cn_t038h.csv); from No. 110 (Montreal) and No. 107 (Quebec). Days: Mon. Wed. Thu. Fri. from May 24 (Table 38; printed daily except Sunday here)."
+#train col=No115 num=115 dir=up days="Mon,Tue,Wed,Thu,Fri,Sat" kind=passenger note="Riviere a Pierre 3.30 a.m. (daily; the Montreal cars of No. 212 from Chicoutimi) and Hervey 4.40 a.m. (No. 12 from Cochrane) to Garneau; on daily except Sunday to Montreal 9.00 a.m. (on Sundays No. 215). Montreal - L'Epiphanie stops from Table 63."
+#train col=No215 num=215 dir=up days=Sun kind=passenger note="Sundays: as No. 115 to Garneau 5.20 a.m., on as No. 215 (all stations) to Montreal 9.00 a.m. Montreal - L'Epiphanie stops from Table 63."
+#train col=No113 num=113 dir=up days="Mon,Tue,Wed,Thu,Fri,Sat" kind=passenger note="Daily except Sunday: Garneau 6.35 a.m. to Montreal 9.50 a.m. Montreal - L'Epiphanie stops from Table 63."
+#train col=No697 num=697 dir=up days="Mon,Wed,Thu,Fri" kind=passenger note="From La Tuque and Fitzpatrick (on_cn_t038h.csv): Hervey 11.31 a.m. to Garneau 12.10 p.m.; on as No. 109 to Montreal and (Table 64 prints a Quebec connection, No. 108, Tue. Thu. Sat.). Days as in Table 38 (from May 24)."
+#train col=No109 num=109 dir=up days="Mon,Tue,Wed,Thu,Fri,Sat" kind=passenger note="Daily except Sunday: Garneau 12.55 p.m. (from No. 697) to Montreal 4.45 p.m. Montreal - L'Epiphanie stops from Table 63."
+#train col=No209 num=209 dir=up days=Sun kind=passenger note="Sunday (also Monday Sept. 6): Garneau 5.45 p.m. to Montreal 9.35 p.m. Montreal - L'Epiphanie stops from Table 63."
+mile,station,principal,prov,tz,No116,No216,No114,No110,No698,No115,No215,No113,No697,No109,No209
+0.0,Montreal (Central Station),1,QC,E,lv 7.00p,lv 6.00p,lv 5.45p,lv 8.40a,,ar 9.00a,ar 9.00a,ar 9.50a,,ar 4.45p,ar 9.35p
+3.9,Mount Royal,0,QC,E,f7.10p,f6.10p,f5.55p,8.50a,,f8.50a,f8.50a,f9.40a,,4.35p,9.25p
+19.2,Pointe aux Trembles,0,QC,E,7.45p,6.42p,6.30p,9.23a,,8.10a,8.10a,9.11a,,4.02p,8.50p
+22.4,Charlemagne,0,QC,E,,,,9.30a,,,,,,3.55p,8.42p
+29.6,L'Assomption,0,QC,E,,6.57p,6.42p,9.43a,,,,8.53a,,3.40p,8.28p
+32.6,L'Epiphanie,1,QC,E,,7.05p,6.53p,9.48a,,,,8.48a,,3.35p,8.22p
+45.1,Joliette,1,QC,E,ar 8.25p / lv 8.30p,ar 7.30p / lv 7.35p,ar 7.15p / lv 7.20p,ar 10.15a / lv 10.20a,,ar 7.20a / lv 7.25a,ar 7.20a / lv 7.25a,ar 8.23a / lv 8.28a,,ar 3.10p / lv 3.15p,ar 8.00p / lv 8.05p
+51.5,Ste. Elizabeth,0,QC,E,,7.46p,7.33p,10.31a,,,7.09a,8.11a,,2.55p,7.46p
+58.7,St. Cuthbert,0,QC,E,,7.58p,7.47p,10.45a,,,6.57a,8.01a,,2.40p,7.26p
+64.1,St. Barthelemi,0,QC,E,,f8.07p,f7.58p,f10.55a,,,f6.47a,f7.52a,,f2.30p,f7.14p
+68.8,St. Justin,0,QC,E,,8.17p,8.07p,11.04a,,,6.40a,7.44a,,2.21p,7.04p
+73.5,Ste. Ursule,0,QC,E,,8.26p,8.16p,11.13a,,,6.33a,7.37a,,2.12p,6.55p
+79.0,St. Paulin,0,QC,E,,8.38p,8.28p,11.25a,,,6.24a,7.27a,,2.00p,6.42p
+84.7,Charette,0,QC,E,,8.50p,8.40p,11.36a,,,6.15a,7.17a,,1.50p,6.31p
+91.0,St. Boniface (Shawinigan),0,QC,E,,f9.02p,f8.52p,f11.48a,,,f6.05a,f7.06a,,f1.37p,f6.18p
+97.5,Shawinigan Falls,1,QC,E,ar 9.45p / lv 9.55p,ar 9.15p / lv 9.25p,ar 9.05p / lv 9.15p,ar 12.01p / lv 12.11p,,ar 5.50a / lv 6.00a,ar 5.45a / lv 5.55a,6.55a,,ar 1.15p / lv 1.25p,6.05p
+102.7,Grand Mere,1,QC,E,10.05p,9.35p,9.25p,12.21p,,5.40a,5.37a,6.45a,,1.05p,5.55p
+106.4,Garneau,1,QC,E,ar 10.20p / lv 10.25p,ar 9.45p / lv 9.50p,ar 9.40p / lv 9.45p,ar 12.35p,lv 1.10p,ar 5.20a / lv 5.30a,ar 5.20a / lv 5.30a,lv 6.35a,ar 12.10p,lv 12.55p,lv 5.45p
+109.5,Herouxville,0,QC,E,f10.32p,f9.57p,f9.57p,,f1.17p,f5.13a,f5.13a,,f12.03p,,
+113.8,St. Tite,0,QC,E,10.43p,10.05p,10.05p,,1.27p,5.04a,5.04a,,11.54a,,
+121.3,Ste. Thecle,0,QC,E,11.04p,10.26p,10.26p,,1.45p,4.48a,4.48a,,11.39a,,
+125.2,Hervey,1,QC,E,ar 11.15p / lv 11.30p,ar 10.37p / lv 11.10p,ar 10.37p,,ar 1.55p,ar 4.18a / lv 4.40a,ar 4.18a / lv 4.40a,,lv 11.31a,,
+129.9,Lac aux Sables,0,QC,E,11.39p,11.19p,,,,4.07a,4.07a,,,,
+134.5,Montauban,0,QC,E,11.50p,11.30p,,,,3.56a,3.56a,,,,
+138.3,Rousseau,0,QC,E,f11.58p,f11.38p,,,,f3.48a,f3.48a,,,,
+146.6,Riviere a Pierre,1,QC,E,ar 12.20a,ar 11.59p,,,,lv 3.30a,lv 3.30a,,,,

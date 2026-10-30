@@ -1,0 +1,27 @@
+# Canadian National, Table 68: Montreal (Central Station) - St. Isidore Jn. - Ste. Martine - Huntingdon - (Fort Covington, N.Y.), to the international boundary. Source: Official Guide, April 25, 1948, CN Table 68 (Brendan, 30 Oct 2026, page 1121; private scans og1948_cnq/). EASTERN TIME.
+# Miles as printed; the boundary (the end of the collection's United States & Canada Railroad track, about 70.8) and its times estimated; Fort Covington, N.Y. (71.3) in the notes. Beauharnois (passengers on freight trains from Ste. Martine) and Fort Covington - Massena, N.Y. (freight only): not entered.
+# St. Isidore entered as 'St. Isidore (Laprairie)' (as printed; apart from CN St. Isidore, Table 23).
+# Signs (page 1121): * daily; dagger ex Sun; double dagger ex Sat; pilcrow ex Mon; section Sun only; a Mon Wed Fri; b Tue Thu Sat; c Mon only; d Fri only; k Sat only; v daily except Sun and Mon; double sharp Sat and Sun; psi Mon - Thu; f flag; crescent: stops on signal Sept. 5 only (no stop); M mixed; motor train sign.
+#train col=No80 num=80 dir=down days="Mon,Tue,Wed,Thu,Fri,Sat" kind=passenger to="Fort Covington" note="Daily except Sunday: Montreal 3.05 p.m. to Fort Covington, N.Y. 5.47 p.m. (printed 80-M200-80: the Hemmingford mixed No. M200 connects at St. Isidore Jn.). Boundary time estimated."
+#train col=No79 num=79 dir=up days="Mon,Tue,Wed,Thu,Fri,Sat" kind=passenger from="Fort Covington" note="Daily except Sunday: Fort Covington, N.Y. 6.15 a.m. to Montreal 9.10 a.m. (the Hemmingford mixed No. M197 connects at St. Isidore Jn.). Boundary time estimated."
+mile,station,principal,prov,tz,No80,No79
+0.0,Montreal (Central Station),1,QC,E,lv 3.05p,ar 9.10a
+1.9,Bridge Street,0,QC,E,3.19p,9.01a
+4.0,St. Lambert,0,QC,E,3.26p,8.49a
+9.1,Brosseau,0,QC,E,3.34p,8.41a
+11.4,Laprairie,0,QC,E,3.38p,8.34a
+15.6,La Tortue,0,QC,E,f3.45p,f8.28a
+16.0,Delson,0,QC,E,f3.47p,f8.26a
+17.0,St. Constant,0,QC,E,3.51p,8.22a
+20.5,St. Isidore Junction,1,QC,E,4.01p,8.14a
+24.5,St. Isidore (Laprairie),0,QC,E,4.08p,8.00a
+30.8,Ste. Martine,0,QC,E,4.20p,7.49a
+36.0,Howick,0,QC,E,4.29p,7.39a
+37.0,Ayrness,0,QC,E,4.33p,7.29a
+40.8,Brysons,0,QC,E,4.40p,7.20a
+44.5,Ormstown,0,QC,E,4.53p,7.10a
+54.1,Huntingdon,1,QC,E,5.11p,6.52a
+59.5,Carrs,0,QC,E,f5.24p,f6.39a
+61.6,Whites,0,QC,E,5.29p,6.34a
+66.4,Ste. Agnes,0,QC,E,5.39p,6.23a
+70.8,"International Boundary (to Fort Covington, N.Y.)",0,QC,E,~ar 5.46p,~lv 6.16a

@@ -1959,3 +1959,32 @@ Stations of different railways within 250 m (70 pairs; script: same check over v
   the Turcot West - Dorval line in the collection is the 1961 bypass. The two collection main-line pieces are replaced by copies that follow the old line between
   those junctions (links 'Grand Trunk main line in 1948'); the collection's Lachine station stands (no hand point). St. Dominique by its mileage (its point snaps to the other track of the double main line, which
   broke the Coteau fit). Many Lakeshore stations have no CN point in the collection (or only the CP's): placed by mileage.
+
+## Version 96 (30 October 2026): CN Tables 64, 65, 66, 68, 70, 72 (Official Guide page 1121)
+- Scans (Brendan, 30 Oct): page 1121 (Tables 64, 65, 66, 68, 70, 72; signs with Table 65). Script: scratchpad on/t064.py (t061.py must NOT be rerun as is: on_cn_t063.csv
+  was edited after it, see below).
+- on_cn_t064: Montreal - L'Epiphanie (Table 63 stops) - Joliette - Shawinigan Falls - Garneau - Hervey - Riviere a Pierre: 116 (Mon - Sat) / 216 (Sun) to Riviere a Pierre
+  (the Montreal sections of 11 and 211), 114 to Hervey, 110 to Garneau, 698 Garneau - Hervey (Mon Wed Thu Fri, as Table 38); 115 (Mon - Sat) / 215 (Sun, all stations)
+  from Riviere a Pierre, 113, 109, 209 (Sun) from Garneau, 697 Hervey - Garneau. on_cn_t064q: Garneau - St. Stanislas - St. Prosper - Portneuf - Quebec: 108 (Tue Thu Sat,
+  sign b; Table 38 had it daily except Sunday), 107 (Mon Wed Fri).
+  DELETED: on_cn_t038m, on_cn_t050m (Montreal - Hervey / Riviere a Pierre with no stations). on_cn_t038q: 107, 108, 697G, 698G and its Garneau row removed (Table 38 had
+  put Garneau on the St. Prosper - Hervey line; it is on the Shawinigan line), Ecureuils and Portneuf rows added for 11 / 12. on_cn_t063: the Joliette-line columns
+  (110, 114, 116, 216 / 109, 113, 115, 215, 209) removed (now whole in t064).
+- on_cn_t065: Montreal - Longueuil - Sorel - Pierreville - Nicolet - Des Ormeaux - Trois Rivieres (Ferry): 138 / 137, motor trains 646 / 645 (Montreal - Nicolet). The
+  "Trois Rivieres (Ferry)" end is the south-shore landing (end of the collection's track opposite Three Rivers); the printed times there seem to include the river
+  crossing (Des Ormeaux - landing 1.8 mi in 25 / 45 min). The ferry itself is NOT built (ask Brendan).
+- on_cn_t066: Sorel - Bellevue Jct. - St. Hyacinthe, mixed M268 (Tue Thu Sat) / M267 (Mon Wed Fri). St. Hyacinthe for these trains: the United Counties line's nearest
+  point (1.7 km from the CN main-line station; the collection has no tie between them). ASK Brendan where they stopped.
+- on_cn_t068: Montreal - Laprairie - St. Isidore Jn. - Ste. Martine - Howick - Huntingdon - boundary (to Fort Covington, N.Y.): 80 / 79 (ex Sun). on_cn_t068h: St. Isidore
+  Jn. - St. Remi - Hemmingford mixed M200 (Tue Thu Sat) / M197 (Mon Wed Fri), and M198 / M199 St. Isidore Jn. - St. Remi. Beauharnois (passengers on freight) and
+  Fort Covington - Massena (freight) not entered.
+- on_cn_t070: Montreal - Fresniere - St. Jerome - Montfort - Huberdeau - Lac Remi; seasonal days read for the model week: 99 Sat + Sun, 97 / 95 Sat, 91 Mon - Fri, 93 Fri,
+  90 Mon, 92 Tue - Sat, 94 Sat + Sun, 98 Sun, 100 Tue - Sun.
+- on_cn_t072: Montreal - St. Johns - Iberville - (CP) Farnham - Granby - Waterloo: 606, 608 / 605, 607. Iberville: arrives at the C.V. station, leaves from Iberville
+  (C.P.R.) = CP_IBERVILLE; Farnham Union Station = CP_FARNHAM (SHARED). on_cn_t051i DELETED (same trains to Iberville only).
+- Renamed for unique stop ids (the id drops ", Que." and brackets only for matching): St. Boniface (Shawinigan), St. Louis (Richelieu), St. Isidore (Laprairie),
+  Hamilton (Montcalm) (Table 63's, was "Hamilton, Que.").
+- Track: links for the old CN main line through Mirabel (Deux Montagnes tie, St. Jerome tie, straight 1.3 km APPROXIMATE) and the Lake St. Louis & Province line
+  St. Isidore Jn. - Hemmingford (the collection piece was dropped by the abandonment filter). Hand points (APPROXIMATE): CN Sorel (end of the Montreal - Sorel main),
+  St. Isidore Junction, Lac Remi. Aliases: CN Shawinigan Falls = the collection's Shawinigan; Garneau = Garneau Junction.
+- Open: CN and CP stations at Joliette, Shawinigan Falls, Garneau, St. Jerome, Waterloo, Granby kept separate (ask if any were shared).

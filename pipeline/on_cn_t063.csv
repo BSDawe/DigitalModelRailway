@@ -1,30 +1,22 @@
 # Canadian National, Table 63: Montreal (Central Station) - Mount Royal - L'Epiphanie - Rawdon. Source: Official Guide, April 25, 1948, CN Table 63 (Brendan, 30 Oct 2026, page 1120; private scans og1948_cnq/). EASTERN TIME.
-# Miles as printed. St. Alexis and Hamilton named 'St. Alexis de Montcalm' and 'Hamilton, Que.' to keep them apart from the CN St. Alexis (Matapedia) and Hamilton, Ont.
+# Miles as printed. St. Alexis and Hamilton named 'St. Alexis de Montcalm' and 'Hamilton (Montcalm)' to keep them apart from the CN St. Alexis (Matapedia) and Hamilton, Ont.
 # Signs: * daily; dagger ex Sun; section Sun only; j Fri only; k Sat only; natural sign daily except Fri, Sat and Sun; M mixed; f flag; i conditional (flag stop).
 #train col=No206 num=206 dir=down days=Sun kind=passenger note="Sunday (also July 1): Montreal 8.20 a.m. to Rawdon 10.15 a.m."
-#train col=No110 num=110 dir=down days=daily kind=passenger note="Daily: Montreal 8.40 a.m. to L'Epiphanie 9.48 a.m. (on beyond: not in this table)."
 #train col=No210 num=210 dir=down days=Sat kind=passenger note="Saturday only: Montreal 12.30 p.m. to Rawdon 2.30 p.m."
 #train col=M202 num=202 dir=down days="Mon,Tue,Wed,Thu" kind=mixed note="Mixed train, daily except Friday, Saturday and Sunday: Montreal 3.15 p.m. to Rawdon 5.30 p.m."
 #train col=No208 num=208 dir=down days=Fri kind=passenger note="Friday only: Montreal 4.50 p.m. to Rawdon 6.45 p.m."
-#train col=No114 num=114 dir=down days="ex Sun" kind=passenger note="Daily except Sunday: Montreal 5.45 p.m. to L'Epiphanie 6.53 p.m. Mount Royal: i, stops for passengers to or from Joliette and beyond (flag stop); the train runs on beyond the part shown (that table not in hand)."
-#train col=No216 num=216 dir=down days=Sun kind=passenger note="Sunday only: Montreal 6.00 p.m. to L'Epiphanie 7.05 p.m. Mount Royal: i, stops for passengers to or from Joliette and beyond (flag stop); the train runs on beyond the part shown (that table not in hand)."
-#train col=No116 num=116 dir=down days="ex Sun" kind=passenger note="Daily except Sunday: Montreal 7.00 p.m. to Pointe aux Trembles 7.45 p.m. Mount Royal: i, stops for passengers to or from Joliette and beyond (flag stop); the train runs on beyond the part shown (that table not in hand)."
 #train col=M201 num=201 dir=up days="ex Sun" kind=mixed note="Mixed train, daily except Sunday: Rawdon 7.20 a.m. to Montreal 9.40 a.m."
-#train col=No115 num=115 dir=up days="ex Sun" kind=passenger note="Daily except Sunday: Pointe aux Trembles 8.10 a.m. to Montreal 9.00 a.m. Mount Royal: i, stops for passengers to or from Joliette and beyond (flag stop); the train runs on beyond the part shown (that table not in hand)."
-#train col=No215 num=215 dir=up days=Sun kind=passenger note="Sunday only: Pointe aux Trembles 8.10 a.m. to Montreal 9.00 a.m. Mount Royal: i, stops for passengers to or from Joliette and beyond (flag stop); the train runs on beyond the part shown (that table not in hand)."
-#train col=No113 num=113 dir=up days="ex Sun" kind=passenger note="Daily except Sunday: L'Epiphanie 8.48 a.m. to Montreal 9.50 a.m. Mount Royal: i, stops for passengers to or from Joliette and beyond (flag stop); the train runs on beyond the part shown (that table not in hand)."
-#train col=No109 num=109 dir=up days="ex Sun" kind=passenger note="Daily except Sunday: L'Epiphanie 3.35 p.m. to Montreal 4.45 p.m. (from beyond: not in this table)."
 #train col=No205 num=205 dir=up days=Sun kind=passenger note="Sunday (also Mondays May 24 and Sept. 6; not Sundays May 23 and Sept. 5): Rawdon 7.00 p.m. to Montreal 8.55 p.m."
-#train col=No209 num=209 dir=up days=Sun kind=passenger note="Sunday (also Monday Sept. 6): L'Epiphanie 8.22 p.m. to Montreal 9.35 p.m. (from beyond: not in this table)."
-mile,station,principal,prov,tz,No206,No110,No210,M202,No208,No114,No216,No116,M201,No115,No215,No113,No109,No205,No209
-0.0,Montreal (Central Station),1,QC,E,lv 8.20a,lv 8.40a,lv 12.30p,lv 3.15p,lv 4.50p,lv 5.45p,lv 6.00p,lv 7.00p,ar 9.40a,ar 9.00a,ar 9.00a,ar 9.50a,ar 4.45p,ar 8.55p,ar 9.35p
-3.9,Mount Royal,0,QC,E,8.30a,8.50a,12.40p,3.24p,5.00p,f5.55p,f6.10p,f7.10p,9.30a,f8.50a,f8.50a,f9.40a,4.35p,8.45p,9.25p
-19.2,Pointe aux Trembles,0,QC,E,9.02a,9.23a,1.18p,4.02p,5.37p,6.30p,6.42p,ar 7.45p,8.56a,lv 8.10a,lv 8.10a,9.11a,4.02p,8.12p,8.50p
-22.4,Charlemagne,0,QC,E,9.08a,9.30a,1.24p,4.08p,5.43p,,,,8.45a,,,,3.55p,8.06p,8.42p
-29.6,L'Assomption,0,QC,E,9.20a,9.43a,1.36p,4.25p,5.58p,6.42p,6.57p,,8.32a,,,8.53a,3.40p,7.55p,8.28p
-32.6,L'Epiphanie,1,QC,E,9.25a,ar 9.48a,1.42p,4.37p,6.03p,ar 6.53p,ar 7.05p,,8.25a,,,lv 8.48a,lv 3.35p,7.50p,lv 8.22p
-41.2,St. Jacques,0,QC,E,9.49a,,2.04p,4.59p,6.20p,,,,7.55a,,,,,7.25p,
-42.0,St. Alexis de Montcalm,0,QC,E,f9.51a,,f2.06p,f5.04p,f6.22p,,,,f7.50a,,,,,f7.22p,
-46.4,Cordon,0,QC,E,f10.02a,,f2.17p,f5.19p,f6.33p,,,,f7.35a,,,,,f7.10p,
-48.7,"Hamilton, Que.",0,QC,E,f10.10a,,f2.25p,f5.25p,f6.40p,,,,f7.25a,,,,,f7.05p,
-50.2,Rawdon,1,QC,E,ar 10.15a,,ar 2.30p,ar 5.30p,ar 6.45p,,,,lv 7.20a,,,,,lv 7.00p,
+# The Joliette-line trains of Table 63 (110, 114, 116, 216 / 109, 113, 115, 215, 209) moved to on_cn_t064.csv with the whole run (30 Oct 2026).
+mile,station,principal,prov,tz,No206,No210,M202,No208,M201,No205
+0.0,Montreal (Central Station),1,QC,E,lv 8.20a,lv 12.30p,lv 3.15p,lv 4.50p,ar 9.40a,ar 8.55p
+3.9,Mount Royal,0,QC,E,8.30a,12.40p,3.24p,5.00p,9.30a,8.45p
+19.2,Pointe aux Trembles,0,QC,E,9.02a,1.18p,4.02p,5.37p,8.56a,8.12p
+22.4,Charlemagne,0,QC,E,9.08a,1.24p,4.08p,5.43p,8.45a,8.06p
+29.6,L'Assomption,0,QC,E,9.20a,1.36p,4.25p,5.58p,8.32a,7.55p
+32.6,L'Epiphanie,1,QC,E,9.25a,1.42p,4.37p,6.03p,8.25a,7.50p
+41.2,St. Jacques,0,QC,E,9.49a,2.04p,4.59p,6.20p,7.55a,7.25p
+42.0,St. Alexis de Montcalm,0,QC,E,f9.51a,f2.06p,f5.04p,f6.22p,f7.50a,f7.22p
+46.4,Cordon,0,QC,E,f10.02a,f2.17p,f5.19p,f6.33p,f7.35a,f7.10p
+48.7,"Hamilton (Montcalm)",0,QC,E,f10.10a,f2.25p,f5.25p,f6.40p,f7.25a,f7.05p
+50.2,Rawdon,1,QC,E,ar 10.15a,ar 2.30p,ar 5.30p,ar 6.45p,lv 7.20a,lv 7.00p

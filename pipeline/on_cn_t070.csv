@@ -1,0 +1,27 @@
+# Canadian National, Table 70: Montreal (Central Station) - St. Jerome - St. Sauveur des Monts - Montfort - Huberdeau - Lac Remi. Source: Official Guide, April 25, 1948, CN Table 70 (Brendan, 30 Oct 2026, page 1121; private scans og1948_cnq/). EASTERN TIME.
+# Miles as printed. Seasonal days read for the model week (July 5 - 11): Nos. 91 Mon - Fri, 93 Fri, 95 / 97 Sat, 99 Sat and Sun, 90 Mon, 92 Tue - Sat, 94 Sat and Sun, 98 Sun, 100 Tue - Sun.
+# Signs (page 1121): * daily; dagger ex Sun; double dagger ex Sat; pilcrow ex Mon; section Sun only; a Mon Wed Fri; b Tue Thu Sat; c Mon only; d Fri only; k Sat only; v daily except Sun and Mon; double sharp Sat and Sun; psi Mon - Thu; f flag; crescent: stops on signal Sept. 5 only (no stop); M mixed; motor train sign.
+#train col=No99 num=99 dir=down days="Sat,Sun" kind=passenger note="Sunday (also Saturdays June 26 to Sept. 4, and May 24, June 7, July 1, Sept. 6): Montreal 8.00 a.m. to Lac Remi 12.30 p.m."
+#train col=No97 num=97 dir=down days=Sat kind=passenger note="Saturday only, June 19 to Sept. 4: Montreal 12.10 p.m. to Lac Remi 4.10 p.m."
+#train col=No95 num=95 dir=down days=Sat kind=passenger note="Saturday only: Montreal 1.10 p.m. to Lac Remi 5.30 p.m."
+#train col=No91 num=91 dir=down days="Mon,Tue,Wed,Thu,Fri" kind=passenger note="Monday to Thursday (also Fridays June 25 to Sept. 3, May 21 and June 4): Montreal 2.40 p.m. to Lac Remi 7.00 p.m."
+#train col=No93 num=93 dir=down days=Fri kind=passenger note="Friday only (also Wednesday June 30): Montreal 5.20 p.m. to Lac Remi 9.30 p.m."
+#train col=No90 num=90 dir=up days=Mon kind=passenger note="Monday only, June 28 to Aug. 30: Lac Remi 4.00 a.m. to Montreal 8.00 a.m. Laurel: flag stop, no time printed (estimated)."
+#train col=No92 num=92 dir=up days="Tue,Wed,Thu,Fri,Sat" kind=passenger note="Daily except Sunday and Monday: Lac Remi 6.00 a.m. to Montreal 10.05 a.m."
+#train col=No94 num=94 dir=up days="Sat,Sun" kind=passenger note="Saturday and Sunday, June 20 to Monday Sept. 6: Lac Remi 2.45 p.m. to Montreal 7.00 p.m. (Laurel: stops on signal Sept. 5 only)."
+#train col=No98 num=98 dir=up days=Sun kind=passenger note="Sunday (not May 23 or Sept. 5; also Mon. May 24, Thu. July 1, Mon. Sept. 6): Lac Remi 3.30 p.m. to Montreal 8.00 p.m."
+#train col=No100 num=100 dir=up days="Tue,Wed,Thu,Fri,Sat,Sun" kind=passenger note="Daily except Monday (also Mon. May 24, June 7, July 1 and Sept. 6): Lac Remi 4.50 p.m. to Montreal 9.20 p.m."
+mile,station,principal,prov,tz,No99,No97,No95,No91,No93,No90,No92,No94,No98,No100
+0.0,Montreal (Central Station),1,QC,E,lv 8.00a,lv 12.10p,lv 1.10p,lv 2.40p,lv 5.20p,ar 8.00a,ar 10.05a,ar 7.00p,ar 8.00p,ar 9.20p
+22.0,Fresniere,0,QC,E,8.53a,,2.02p,3.30p,6.08p,7.12a,9.16a,6.08p,7.06p,8.31p
+38.3,St. Jerome,1,QC,E,9.28a,1.32p,2.35p,4.05p,6.38p,6.42a,8.45a,5.40p,6.35p,8.00p
+47.4,Shawbridge,0,QC,E,f9.48a,1.50p,f2.54p,f4.24p,f6.57p,f6.24a,f8.24a,5.20p,6.14p,7.38p
+51.5,St. Sauveur des Monts,0,QC,E,10.00a,2.00p,3.06p,4.36p,7.08p,6.15a,8.15a,5.10p,6.04p,7.30p
+56.7,Morin Heights,0,QC,E,10.20a,2.15p,3.21p,4.54p,7.25p,6.00a,8.00a,4.55p,5.48p,7.15p
+62.3,Montfort,1,QC,E,10.43a,2.35p,3.43p,5.15p,7.45p,5.42a,7.42a,4.36p,5.21p,6.48p
+66.3,Laurel,0,QC,E,f10.57a,,f3.59p,f5.26p,f7.58p,~f5.29a,f7.29a,,f4.58p,f6.22p
+70.4,Sixteen Island,0,QC,E,11.11a,3.02p,4.12p,5.40p,8.13p,5.16a,7.16a,4.12p,4.44p,6.08p
+75.5,Weir,0,QC,E,11.30a,3.20p,4.30p,5.57p,8.31p,4.58a,6.58a,3.52p,4.27p,5.50p
+79.4,Arundel,0,QC,E,11.43a,3.32p,4.44p,6.10p,8.40p,4.45a,6.45a,3.38p,4.15p,5.37p
+80.8,Huberdeau,1,QC,E,11.56a,,4.50p,6.18p,8.50p,4.40a,6.40a,3.28p,4.10p,5.32p
+93.0,Lac Remi,1,QC,E,ar 12.30p,ar 4.10p,ar 5.30p,ar 7.00p,ar 9.30p,lv 4.00a,lv 6.00a,lv 2.45p,lv 3.30p,lv 4.50p
