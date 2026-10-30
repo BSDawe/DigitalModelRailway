@@ -1909,6 +1909,11 @@ Stations of different railways within 250 m (70 pairs; script: same check over v
 - on_cn_t055: 193, 195 / 194, 196 Chambord - Roberval - St. Felicien - Dolbeau (confirms the 11.55 p.m. Dolbeau arrival = No. 195, from Chambord 9.50 p.m.).
   on_cn_t050d (estimated Dolbeau sections) DELETED.
 
+## WAITING: Quebec Railway, Light & Power (Brendan, 30 Oct 2026)
+- In 1948 the CN Murray Bay trains (Table 53: 176 / 175, 173) ran over the Quebec Railway, Light & Power Co. (Quebec - Ste. Anne de Beaupre - Murray Bay) by running
+  rights; the collection shows it as CN because CN bought it in 1951. Brendan will upload the QRL&P's own information. When it goes in: the QRL&P track drawn as
+  an interurban (its own railway, solid track, circle stations where it alone calls), the CN trains over it still drawn as ordinary CN trains.
+
 ## Version 93 (30 October 2026): CN Tables 59 (Quebec part), 59a, 60, 60a
 - Scans (Brendan, 30 Oct; Timetable World screenshots of the Official Guide, May 1948 issue, tables dated April 25, 1948): Table 59 (three views), 59a, 60 / 60a,
   signs. Script: scratchpad on/t059.py.
