@@ -1861,3 +1861,6 @@ Stations of different railways within 250 m (70 pairs; script: same check over v
 - L&N: on_len_t067: Table 67, 9 trains each way, unnumbered. All KMZ stops as flag stops (Brendan). Port Dover = the second station (1947 - 55, mile 50.3);
   Brantford Union station (L&N); L&N Waterford station (KMZ); Wilsonville printed mile 23.10, read 32.1 by position. Guide differences noted in the file.
 - TO CHECK: the reconstructed hourly GRR pattern and running times; Joseph Street as the Hespeler trains' Preston stop.
+- (29 Oct 2026, Brendan: "these tracks be styled as interurbans") page_template: track of owners lps / grr / len drawn as a SOLID line (no white dash),
+  stations used only by interurban lines (kinds P, E) drawn as CIRCLES in the line colour; stations shared with a steam railway stay squares (Galt C.P.R.,
+  N.Y.C. Depot St. Thomas). The B.C. Electric one-style change (next rebuild) still to do.

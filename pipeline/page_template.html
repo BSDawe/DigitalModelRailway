@@ -539,6 +539,8 @@ function strokePieces(g, lods, k, box) {                          // box: the wo
 }
 const LANES = LINES.filter(L => L.water).map(L => pieces(ROUTES[L.key].pts));     // steamer lanes
 // main line track: split each route into owner runs
+const INTER_KIND = new Set(['P', 'E']), INTER_OWN = new Set(['lps', 'grr', 'len']);   // electric interurbans outside B.C.: solid track, circle stations (Brendan, 29 Oct 2026)
+for (const s of ST) { const ks = Object.keys(s.chains || {}); s.inter = ks.length > 0 && ks.every(k => INTER_KIND.has(LINE_OF[k]?.kind)); }   // a station only interurbans use (not one shared with a steam railway)
 const TRACK = LINES.filter(L => L.mainline && !L.water).map(L => {
   const RR = ROUTES[L.key], runs = [];
   const ownerAt = d => { const s = (L.segments || []).find(s => d >= s.a && d <= s.b); return s ? s.owner + (s.est ? '~' : '') : L.owner; };   // ~: a straight-line estimate
@@ -626,7 +628,8 @@ function renderBase() {
   for (const T of TRACK) for (const r of T.runs) {
     if (!r.lods) continue;
     if (r.est) { g.setLineDash([7 / k, 7 / k]); g.strokeStyle = colors[r.owner]; g.lineWidth = 2.2 / k; strokePieces(g, r.lods, k, box); continue; }   // no track to follow: a straight line from station to station, drawn broken
-    g.setLineDash([]); g.strokeStyle = colors[r.owner]; g.lineWidth = 3.2 / k; strokePieces(g, r.lods, k, box);
+    g.setLineDash([]); g.strokeStyle = colors[r.owner]; g.lineWidth = (INTER_OWN.has(r.owner) ? 2.6 : 3.2) / k; strokePieces(g, r.lods, k, box);
+    if (INTER_OWN.has(r.owner)) continue;                           // interurban track: a solid line, like the Chilliwack line
     g.setLineDash([6 / k, 6 / k]); g.strokeStyle = colors.dash; g.lineWidth = 1.6 / k; strokePieces(g, r.lods, k, box);
   }
   g.setLineDash([]); g.lineCap = 'round';
@@ -642,6 +645,7 @@ function renderBase() {
     if (x < -40 || y < -40 || x > w + 40 || y > h + 40) continue;
     const r = s.principal ? 4.2 : 2.6;
     if (LINE_OF[s.line]?.water) { const hh = s.principal ? 5.2 : 3.8; g.beginPath(); g.moveTo(x, y - hh); g.lineTo(x + hh, y); g.lineTo(x, y + hh); g.lineTo(x - hh, y); g.closePath(); g.strokeStyle = colors.tie; }
+    else if (s.inter) { g.beginPath(); g.arc(x, y, r, 0, Math.PI * 2); g.strokeStyle = colors[KIND_COLOR[LINE_OF[s.line].kind]]; }   // interurban station: a circle in the line's colour
     else if (LINE_OF[s.line]?.mainline) { const hh = s.principal ? 4.5 : 3.2; g.beginPath(); g.rect(x - hh, y - hh, 2 * hh, 2 * hh); g.strokeStyle = colors.tie; }
     else { g.beginPath(); g.arc(x, y, r, 0, Math.PI * 2); g.strokeStyle = s.line ? colors[LINE_COLOR[s.line]] : colors.ink; }
     g.fillStyle = colors.paper; g.fill(); g.lineWidth = s.principal ? 2 : 1.4; g.stroke();
