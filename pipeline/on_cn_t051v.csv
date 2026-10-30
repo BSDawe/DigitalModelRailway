@@ -1,0 +1,16 @@
+# Canadian National, Table 51: Montreal (Central Station) - St. Johns - Cantic: the Central Vermont trains (by East Alburgh and St. Albans, Vt.), to the international boundary. Source: Official Guide, April 25, 1948, CN Table 51 (Brendan, 30 Oct 2026; private scans og1948_cnq/). EASTERN TIME.
+# Miles as printed to Cantic; the boundary (the end of the collection's Coteau & Province Line track toward East Alburgh, about 6.5 mi) and its times estimated.
+# Signs: * daily; dagger ex Sun; f flag; dot (St. Lambert, St. Johns): stops to take or leave passengers for or from St. Albans and beyond; y, sharp: conditional (entered as flag stops).
+#train col=No20 num=20 dir=down days=daily kind=passenger name="The Washingtonian" to=Washington note="Daily: Montreal 7.40 p.m. to Cantic 8.50 p.m., on over the Central Vermont (St. Albans) for New York and Washington. Boundary time estimated."
+#train col=No332 num=332 dir=down days=daily kind=passenger name="The Ambassador" to=Boston note="Daily: Montreal 8.20 a.m. to Cantic 9.31 a.m., on over the Central Vermont. Boundary time estimated."
+#train col=No21 num=21 dir=up days=daily kind=passenger name="The Montrealer" from=Washington note="Daily: over the Central Vermont to Cantic 6.44 a.m. and Montreal 8.00 a.m. Boundary time estimated."
+#train col=No307 num=307 dir=up days=daily kind=passenger name="The Ambassador" from=Boston note="Daily: over the Central Vermont to Cantic 7.19 p.m. and Montreal 8.30 p.m. Boundary time estimated."
+mile,station,principal,prov,tz,No20,No332,No21,No307
+0.0,Montreal (Central Station),1,QC,E,lv 7.40p,lv 8.20a,ar 8.00a,ar 8.30p
+1.9,Bridge Street,0,QC,E,,,,
+4.0,St. Lambert,0,QC,E,f7.58p,f8.40a,f7.38a,f8.12p
+9.1,Brosseau,0,QC,E,,,,
+17.0,Lacadie,0,QC,E,,,,
+23.2,St. Johns,1,QC,E,f8.25p,9.06a,7.10a,7.46p
+40.3,Cantic,1,QC,E,8.50p,9.31a,6.44a,7.19p
+46.8,"International Boundary (to East Alburgh, Vt.)",0,QC,E,~ar 9.00p,~ar 9.41a,~lv 6.34a,~lv 7.09p

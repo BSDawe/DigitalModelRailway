@@ -1,8 +1,8 @@
 # Canadian National, Table 50: Quebec (Palais Station) - St. Raymond - Riviere a Pierre - Lac Edouard - Chambord - Chicoutimi. Source: Official Guide, April 25, 1948, CN Table 50 (Brendan, 29 Oct 2026; private scans og1948_cnq/). EASTERN TIME unless marked.
 # Miles as printed. Signs (Table 50 page): * daily; dagger ex Sun; double dagger ex Sat; section Sun; a Mon Wed Fri; b Tue Thu Sat; d Sunday leaves 6.00 p.m.; f flag; k Sat only;
-# n, z and the colon / check signs: conditional (entered as flag stops). Montreal - Riviere a Pierre: on_cn_t050m.csv; Chambord - Dolbeau: on_cn_t050d.csv.
+# n, z and the colon / check signs: conditional (entered as flag stops). Montreal - Riviere a Pierre: on_cn_t050m.csv; Chambord - Dolbeau: on_cn_t055.csv (Table 55).
 # Replaces CP Table 39 "via Can. Nat. Rys." (on_cnvia_t039.csv, deleted).
-#train col=No163 num=163 dir=down days=daily kind=passenger note="Daily: Quebec 10.20 p.m. to Riviere a Pierre 12.20 a.m. (there the Montreal cars of No. 211 join No. 211, below), Chambord 6.05 / 6.20 a.m. and Chicoutimi 9.15 a.m.; Dolbeau cars: on_cn_t050d.csv."
+#train col=No163 num=163 dir=down days=daily kind=passenger note="Daily: Quebec 10.20 p.m. to Riviere a Pierre 12.20 a.m. (there the Montreal cars of No. 211 join No. 211, below), Chambord 6.05 / 6.20 a.m. and Chicoutimi 9.15 a.m.; Dolbeau: No. 193 (on_cn_t055.csv)."
 #train col=No211 num=211 dir=down days=daily kind=passenger from=Montreal note="Daily sleeping-car train (printed 163-211): from Montreal (Central Station) 7.00 p.m. (Sundays 6.00 p.m.; on_cn_t050m.csv) and the Quebec cars of No. 163; Riviere a Pierre 1.00 a.m. to Chambord 5.15 / 5.30 and Chicoutimi 7.30 a.m. Stops at any station between Riviere a Pierre and Chicoutimi for sleeping-car passengers."
 #train col=No171 num=171 dir=down days="ex Sun" kind=passenger note="Daily except Sunday: Quebec 4.25 p.m. to St. Raymond 5.50 p.m."
 #train col=No169 num=169 dir=down days=Sat kind=passenger note="Saturday only: Quebec 12.15 p.m. to St. Raymond 1.40 p.m. Runs June 19 until September 11, inclusive."

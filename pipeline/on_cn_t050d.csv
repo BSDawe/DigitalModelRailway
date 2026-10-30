@@ -1,9 +1,0 @@
-# Canadian National, Table 50: Chambord - Dolbeau (only Dolbeau printed, 233.4 mi from Quebec; Roberval line, stations between not printed). Source: Official Guide, April 25, 1948, CN Table 50 (Brendan, 29 Oct 2026; private scans og1948_cnq/). EASTERN TIME unless marked.
-# Unnumbered sections of the Chicoutimi trains; the Chambord times estimated (~).
-#train col=D1 num="" dir=down days=daily kind=passenger note="Dolbeau cars of Nos. 163 and 211: Chambord (departure not printed, estimated) to Dolbeau 8.55 a.m."
-#train col=D2 num="" dir=down days=daily kind=passenger note="Dolbeau arrival 11.55 p.m., printed in the columns of Nos. 161 and 164 (cars from the evening trains at Chambord; departure estimated). UNCERTAIN reading."
-#train col=U1 num="" dir=up days=daily kind=passenger note="Dolbeau 4.00 a.m. (printed in the columns of Nos. 163 and 162) to Chambord (arrival not printed, estimated), for No. 163 to Chicoutimi 6.20 a.m. and No. 162 to Quebec (Mon Wed Fri) 8.40 a.m."
-#train col=U2 num="" dir=up days=daily kind=passenger note="Dolbeau 7.15 p.m. (printed in the columns of Nos. 164 and 212) to Chambord (arrival estimated), for No. 164 to Quebec 10.00 p.m. and No. 212 to Montreal 11.05 p.m."
-mile,station,principal,prov,tz,D1,D2,U1,U2
-176.0,Chambord,1,QC,E,~lv 6.15a,~lv 9.45p,~ar 6.15a,~ar 9.35p
-233.4,Dolbeau,1,QC,E,ar 8.55a,ar 11.55p,lv 4.00a,lv 7.15p

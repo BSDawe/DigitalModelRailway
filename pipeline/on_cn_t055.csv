@@ -1,0 +1,20 @@
+# Canadian National, Table 55: Chambord - Roberval - St. Felicien - Dolbeau. Source: Official Guide, April 25, 1948, CN Table 55 (Brendan, 30 Oct 2026; private scans og1948_cnq/). EASTERN TIME.
+# Miles as printed (from Chambord). Replaces on_cn_t050d.csv (the Dolbeau sections read from Table 50, with estimated Chambord times; deleted).
+#train col=No193 num=193 dir=down days=daily kind=passenger note="Daily: Chambord 6.35 a.m. (from No. 163 / 211) to Dolbeau 8.55 a.m. Ticouape, Rang Nord, Ruisseau Clair, L'Afrique: flag stops, no time printed (estimated)."
+#train col=No195 num=195 dir=down days=daily kind=passenger note="Daily: Chambord 9.50 p.m. (from No. 164) to Dolbeau 11.55 p.m. Ticouape, Rang Nord, Ruisseau Clair, L'Afrique: flag stops, no time printed (estimated)."
+#train col=No194 num=194 dir=up days=daily kind=passenger note="Daily: Dolbeau 4.00 a.m. to Chambord 5.55 a.m. (for No. 163 to Chicoutimi and No. 162 to Quebec). Ticouape, Rang Nord, Ruisseau Clair, L'Afrique: flag stops, no time printed (estimated)."
+#train col=No196 num=196 dir=up days=daily kind=passenger note="Daily: Dolbeau 7.15 p.m. to Chambord 9.20 p.m. (for No. 164 to Quebec and No. 212 to Montreal). Ticouape, Rang Nord, Ruisseau Clair, L'Afrique: flag stops, no time printed (estimated)."
+mile,station,principal,prov,tz,No193,No195,No194,No196
+0.0,Chambord,1,QC,E,lv 6.35a,lv 9.50p,ar 5.55a,ar 9.20p
+6.6,Val Jalbert,0,QC,E,f6.48a,f10.03p,f5.41a,f9.02p
+12.0,Roberval,1,QC,E,6.59a,10.14p,5.30a,8.49p
+16.8,Pointe Bleue,0,QC,E,f7.15a,f10.27p,f5.20a,f8.38p
+22.1,St. Prime,0,QC,E,7.27a,10.41p,5.11a,8.28p
+29.5,St. Felicien,1,QC,E,7.42a,10.56p,4.59a,8.15p
+33.1,Ticouape,0,QC,E,~f7.49a,~f11.03p,~f4.52a,~f8.07p
+42.7,Normandin,0,QC,E,8.08a,11.23p,4.32a,7.47p
+44.8,Rang Nord,0,QC,E,~f8.15a,~f11.28p,~f4.27a,~f7.42p
+45.9,Ruisseau Clair,0,QC,E,~f8.19a,~f11.30p,~f4.24a,~f7.39p
+47.8,Albanel,0,QC,E,8.25a,11.34p,4.20a,7.35p
+52.3,L'Afrique,0,QC,E,~f8.39a,~f11.44p,~f4.11a,~f7.26p
+57.4,Dolbeau,1,QC,E,ar 8.55a,ar 11.55p,lv 4.00a,lv 7.15p

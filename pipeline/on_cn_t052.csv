@@ -1,0 +1,29 @@
+# Canadian National, Table 52: Richmond - Victoriaville - Lyster - Charny - Quebec (Palais Station). Source: Official Guide, April 25, 1948, CN Table 52 (Brendan, 30 Oct 2026; private scans og1948_cnq/). EASTERN TIME.
+# Miles as printed. The Montreal times printed with the table are the connecting trains on the Montreal - Richmond line (that table not in hand), in the notes. Replaces on_cn_t001q.csv
+# (43 / 44 Quebec - Charny - Chaudiere from Table 1, deleted).
+#train col=No42 num=42 dir=down days="ex Sun" kind=passenger note="Daily except Sunday: Richmond 5.20 a.m. to Quebec 9.00 a.m. Tingwick: flag stop, no time printed (estimated)."
+#train col=No44 num=44 dir=down days="ex Sun" kind=passenger from=Montreal note="Daily except Sunday: (Montreal 8.30 a.m., by No. 16 to Richmond) Richmond 10.25 a.m. to Quebec 1.50 p.m. Tingwick: flag stop, no time printed (estimated)."
+#train col=No46 num=46 dir=down days="ex Sun" kind=passenger from=Montreal note="Daily except Sunday: (Montreal 5.25 p.m.) Richmond 8.15 p.m. to Lyster 10.15 p.m. Tingwick: flag stop, no time printed (estimated)."
+#train col=No48 num=48 dir=down days=Sun kind=passenger from=Montreal note="Sunday only: (Montreal 6.55 p.m.) Richmond 9.35 p.m. to Lyster 11.25 p.m. Tingwick: flag stop, no time printed (estimated)."
+#train col=No41 num=41 dir=up days="ex Sun" kind=passenger to=Montreal note="Daily except Sunday: Lyster 4.45 a.m. to Richmond 6.45 a.m. (Montreal 9.50 a.m.). Tingwick: flag stop, no time printed (estimated)."
+#train col=No43 num=43 dir=up days="ex Sun" kind=passenger to=Montreal note="Daily except Sunday: Quebec 12.00 noon to Richmond 3.30 p.m. (Montreal 5.45 p.m.). Tingwick: flag stop, no time printed (estimated)."
+#train col=No45 num=45 dir=up days="ex Sun" kind=passenger to=Montreal note="Daily except Sunday: Quebec 3.00 p.m. to Richmond 6.40 p.m. (Montreal 9.35 p.m.). Tingwick: flag stop, no time printed (estimated)."
+#train col=No47 num=47 dir=up days=Sun kind=passenger to=Montreal note="Sunday only: Lyster 4.15 p.m. to Richmond 6.05 p.m. (Montreal 8.40 p.m.). Tingwick: flag stop, no time printed (estimated)."
+mile,station,principal,prov,tz,No42,No44,No46,No48,No41,No43,No45,No47
+0.0,Richmond,1,QC,E,lv 5.20a,lv 10.25a,lv 8.15p,lv 9.35p,ar 6.45a,ar 3.30p,ar 6.40p,ar 6.05p
+12.2,Danville,0,QC,E,5.51a,10.45a,8.36p,9.56p,6.19a,3.07p,6.15p,5.43p
+16.2,Kingsey,0,QC,E,6.05a,10.53a,8.45p,10.05p,6.05a,2.59p,6.04p,5.35p
+19.6,Tingwick,0,QC,E,~f6.11a,~f10.59a,~f8.51p,~f10.11p,~f5.59a,~f2.53p,~f5.57p,~f5.29p
+24.2,Warwick,0,QC,E,6.19a,11.07a,8.59p,10.19p,5.50a,2.45p,5.48p,5.20p
+32.1,Victoriaville,1,QC,E,6.32a,11.22a,9.15p,10.35p,5.35a,2.27p,5.30p,5.05p
+41.0,Princeville,0,QC,E,6.48a,11.38a,9.36p,10.51p,5.18a,2.11p,5.12p,4.48p
+47.0,Plessisville,0,QC,E,6.59a,11.48a,9.45p,11.02p,5.07a,2.00p,5.00p,4.37p
+55.2,Ste. Julie,0,QC,E,7.15a,12.02p,10.02p,11.11p,4.53a,1.45p,4.44p,4.23p
+59.7,Lyster,1,QC,E,7.25a,12.12p,ar 10.15p,ar 11.25p,lv 4.45a,1.36p,4.35p,lv 4.15p
+67.5,Dosquet,0,QC,E,7.39a,12.26p,,,,1.23p,4.21p,
+75.8,St. Agapit,0,QC,E,7.55a,12.43p,,,,1.08p,4.05p,
+87.4,Chaudiere,0,QC,E,8.21a,1.10p,,,,12.41p,3.41p,
+88.6,Charny,1,QC,E,8.26a,1.16p,,,,12.36p,3.36p,
+91.9,Bridge,0,QC,E,8.34a,1.24p,,,,12.25p,3.25p,
+93.9,Cap Rouge,0,QC,E,8.39a,1.29p,,,,12.20p,3.20p,
+102.8,Quebec (Palais Station),1,QC,E,ar 9.00a,ar 1.50p,,,,lv 12.00p,lv 3.00p,

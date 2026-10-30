@@ -182,6 +182,8 @@ HAND = {('thb', 'toronto'): _TU, ('cpthb', 'toronto'): _TU, ('thb', 'hamilton'):
         ('cn', 'ste rosalie'): (-72.8940748, 45.6399046, 'CN Ste. Rosalie, on the Drummondville line 0.4 mi from the junction (by the printed miles); APPROXIMATE, Claude'),
         ('cn', 'bridge street'): (-73.5515986, 45.4843264, 'CN Bridge Street, Montreal (Pointe St. Charles), on the main line; APPROXIMATE, Claude (the collection\'s Bridge Street is Ottawa\'s)'),
         ('cn', 'nicolet'): (-72.6095388, 46.2280408, 'CN Nicolet, on the branch from St. Leonard (the collection files it as abandoned sidings); APPROXIMATE, Claude'),
+        ('cn', 'st johns'): (-73.2546656, 45.3031519, 'CN St. Johns (St. Jean), on the Rouses Point subdivision (no point in the collection); APPROXIMATE, Claude'),
+        ('cn', 'cantic'): (-73.3494352, 45.0640152, 'CN Cantic = the collection\'s Lacolle Junction: where the Central Vermont line to East Alburgh leaves the Rouses Point line; APPROXIMATE'),
         ('cn', 'chambord'): (-72.0554882, 48.421918, 'CN Chambord (Junction): where the Roberval line leaves the Lac St. Jean line; the end of the collection\'s Roberval subdivision'),
         ('cn', 'st charles'): (-70.9473, 46.7724, 'CN St. Charles (de Bellechasse): the collection\'s point on the Intercolonial (it has a second St. Charles at Quebec)'),
         ('cp', 'toronto'): _TU, ('cn', 'toronto'): _TU, ('onr', 'toronto'): _TU,

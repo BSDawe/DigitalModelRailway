@@ -1,0 +1,19 @@
+# Canadian National, Table 51: Montreal (Central Station) - St. Johns (St. Jean) - Cantic - Rouses Point, N.Y.: the Rutland Railway trains, to the international boundary. Source: Official Guide, April 25, 1948, CN Table 51 (Brendan, 30 Oct 2026; private scans og1948_cnq/). EASTERN TIME.
+# Miles as printed; the boundary (44.2: the end of the collection's Rouses Point subdivision track) and its times estimated; Rouses Point, N.Y. (45.5) in the notes. Replaces on_rut_t018.csv (CP Table 18 Rutland trains, ends only; deleted).
+# Signs: * daily; dagger ex Sun; f flag; dot (St. Lambert, St. Johns): stops to take or leave passengers for or from St. Albans and beyond; y, sharp: conditional (entered as flag stops).
+#train col=No52 num=52 dir=down days=daily kind=passenger name="The Mount Royal" to="New York" note="Rutland Railway train: Montreal 7.20 p.m. to Rouses Point, N.Y. 8.42 p.m. and (Rutland) New York 6.20 a.m. Boundary time estimated."
+#train col=No64 num=64 dir=down days=daily kind=passenger name="The Green Mountain Flyer" to="New York" note="Rutland Railway train: Montreal 8.55 a.m. to Rouses Point, N.Y. 10.17 a.m. and (Rutland) New York 7.30 p.m. Boundary time estimated."
+#train col=No51 num=51 dir=up days=daily kind=passenger name="The Mount Royal" from="New York" note="Rutland Railway train: (New York 7.10 p.m.) Rouses Point, N.Y. 6.50 a.m. to Montreal 8.20 a.m. Boundary time estimated."
+#train col=No65 num=65 dir=up days=daily kind=passenger name="The Green Mountain Flyer" from="New York" note="Rutland Railway train: (New York 9.45 a.m.) Rouses Point, N.Y. 5.00 p.m. to Montreal 6.30 p.m. Boundary time estimated."
+mile,station,principal,prov,tz,No52,No64,No51,No65
+0.0,Montreal (Central Station),1,QC,E,lv 7.20p,lv 8.55a,ar 8.20a,ar 6.30p
+1.9,Bridge Street,0,QC,E,,,,
+4.0,St. Lambert,0,QC,E,7.41p,9.16a,7.58a,6.08p
+9.1,Brosseau,0,QC,E,,f9.23a,,f6.00p
+17.0,Lacadie,0,QC,E,,f9.32a,,f5.50p
+23.2,St. Johns,1,QC,E,8.06p,9.41a,7.30a,5.40p
+29.7,Grande Ligne,0,QC,E,,9.50a,,5.30p
+32.1,Girard,0,QC,E,,,,
+35.8,St. Valentin,0,QC,E,,9.58a,,5.22p
+40.3,Cantic,1,QC,E,8.32p,10.07a,7.04a,5.14p
+44.2,"International Boundary (to Rouses Point, N.Y.)",0,QC,E,~ar 8.39p,~ar 10.14a,~lv 6.54a,~lv 5.04p

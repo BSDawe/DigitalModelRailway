@@ -1897,3 +1897,14 @@ Stations of different railways within 250 m (70 pairs; script: same check over v
 - Doubts: 32 Luceville 3.20 - Mont Joli 3.25 (8.2 mi in 5 min, as read); 170 Valcartier 2.48 - Loretteville 2.55 (as read); R&S Arvida not shared with CN Arvida (ask).
 - Not built: the N.B. parts of Tables 1, 1a, 23 (Maritime build); the CN pool trains Montreal - Quebec (Table 1 refers to another table, not in hand); the Sherbrooke
   and Nicolet line tables for 11 / 16 / 23 / 43 / 44.
+
+## Version 92 (30 October 2026): CN Tables 51, 52, 55 (the last page of the CN Quebec tables)
+- on_cn_t051: Rutland trains 52 / 51 The Mount Royal, 64 / 65 The Green Mountain Flyer, Montreal (Central) - St. Johns - Cantic - international boundary (to Rouses
+  Point, N.Y.). on_cn_t051v: Central Vermont trains 20 The Washingtonian / 21 The Montrealer, 332 / 307 The Ambassador, Montreal - St. Johns - Cantic - boundary
+  (to East Alburgh, Vt.). on_cn_t051i: 606, 608 / 605, 607 Montreal - St. Johns - Iberville (for Waterloo; that table not in hand). on_rut_t018.csv (CP Table 18
+  Rutland ends-only) DELETED: the same trains. Hand: St. Johns, Cantic (= the collection's Lacolle Junction). Boundary points: ends of the collection's Rouses
+  Point subdivision and Coteau & Province Line track. St. Johns - Iberville: a short straight (no bridge track in the collection).
+- on_cn_t052: Richmond - Victoriaville - Lyster - Charny - Quebec: 42, 44, 46, 48 (Sun) / 41, 43, 45, 47 (Sun). Montreal times (connecting trains on the Montreal -
+  Richmond line, = Table 1's 16 / 11 / 23 numbers on the Sherbrooke line) in the notes. on_cn_t001q (43 / 44 partial) DELETED. Richmond: Richmond, Que. (places).
+- on_cn_t055: 193, 195 / 194, 196 Chambord - Roberval - St. Felicien - Dolbeau (confirms the 11.55 p.m. Dolbeau arrival = No. 195, from Chambord 9.50 p.m.).
+  on_cn_t050d (estimated Dolbeau sections) DELETED.
