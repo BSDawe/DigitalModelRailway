@@ -1733,6 +1733,18 @@ Stations of different railways within 250 m (70 pairs; script: same check over v
   estimated by miles.
 
 ## TO DO, Thursday evening 29 Oct 2026 (Brendan, 26 Oct 2026, 23:01)
+- TO CHECK (Brendan, list added 29 Oct 2026): points and readings Claude placed or guessed in Versions 78 - 84:
+  - CN 122 / 126: hand points CN Allandale and CN Camp Borden (Camp Borden mile 78.0 estimated); No. 43 Trout Creek printed 5.39, read 5.59; No. 42 (p: ex Sun
+    and Mon, also Mon June 28 - Sept 6) entered ex Sun; estimated junction times of the branch sections and untimed flag stops.
+  - Table 56 / TH&B: International Railway Bridge border point (mid-river); TH&B - Michigan Central tie at Welland; Welland and Waterford station points.
+  - L&PS: Colborne St., Philip St., Elm St. placed by estimated mileage; Stop 7 printed mile 9.0, read 7.8; No. 37 St. Thomas time smudged, read 1.46.
+  - Table 50 (on_cp_t049w): No. 20 The Canadian probably read one row off (Komoka 5.20 / 5.35 and Puslinch 7.19 should be London 5.35 and Guelph Jct. 7.19,
+    per Table 68): recheck against the scan.
+  - Table 73: No. 50 Elma printed 8.09 (impossible), estimated 8.26; Crest by mileage (collection point ~2 mi short).
+  - Table 65: hand points CP Wingham (branch end), Wingham Jct. (by Glenannan); the Wingham in-and-out reading of the miles. Table 63: Fergus - Elora 65 / 50
+    min as printed. Cataract hand point (shared by Tables 62 and 63).
+- RUN-THROUGH CANDIDATES added since 26 Oct: CP / TH&B Toronto - Buffalo trains (CP 721 = TH&B 372, 741 / 374, 801 / 380, 821 / 382; 712 / 371, 732 / 73, 752 / 375,
+  792 / 379, 832 / 383) at Hamilton; M747 / M748 Orangeville - Cataract (Table 62) - Elora (Table 63) at Cataract.
 - RUN-THROUGH TRAINS: re-configure trains split across files to run through as one trip, e.g. CN 3 / 4 Toronto - Capreol (on_cn_t122a / t122) - Armstrong -
   Winnipeg - Vancouver (on_cn_t075b, Manitoba / west files). Same for the other trains split by table (ONR 47 / 46 and 49 / 50 at North Bay, 54 -> 56 and
   55 -> 53 at Scotia, CP pool trains, etc.). Needs a join step in the build (trips with the same railway and number meeting at a shared stop).
