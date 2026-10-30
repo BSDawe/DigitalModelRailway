@@ -1,0 +1,16 @@
+# Canadian Pacific, Table 69: Woodstock - Ingersoll - Tillsonburg - Port Burwell. Canadian Pacific timetable, 1948 (Brendan, 29 Oct 2026; scan cp1948_on/t069.png). Eastern time. Miles as printed (from Toronto).
+#train col=M655 num=655 dir=down days="ex Sun" kind=mixed note="Mixed, daily except Sunday: Woodstock 10.00 a.m., Ingersoll 10.25 / 11.40 a.m., Tillsonburg to Port Burwell 1.45 p.m."
+#train col=M659 num=659 dir=up days="ex Sun" kind=mixed note="Mixed, daily except Sunday: Port Burwell 2.40 p.m. to Ingersoll 5.00 / 5.05 and Woodstock 5.30 p.m. (connection to Toronto 9.40 p.m.)."
+mile,station,principal,prov,tz,M655,M659
+87.8,Woodstock,1,ON,E,lv 10.00a,ar 5.30p
+92.0,Beachville,0,ON,E,f10.10a,5.19p
+96.7,Ingersoll,1,ON,E,ar 10.25a / lv 11.40a,ar 5.00p / lv 5.05p
+101.2,Salford,0,ON,E,f11.55a,f4.45p
+104.4,Mount Elgin,0,ON,E,12.03p,4.30p
+109.0,Ostrander,0,ON,E,f12.16p,f4.15p
+112.1,Tillsonburg,1,ON,E,ar 12.30p / lv 12.45p,ar 3.40p / lv 4.00p
+118.8,Eden,0,ON,E,f1.08p,f3.20p
+122.5,Straffordville,0,ON,E,1.20p,3.10p
+125.4,Kinglake,0,ON,E,f1.29p,f3.00p
+128.2,Vienna,0,ON,E,1.38p,2.50p
+130.3,Port Burwell,1,ON,E,ar 1.45p,lv 2.40p

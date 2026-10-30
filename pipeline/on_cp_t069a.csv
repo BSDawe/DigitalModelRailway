@@ -1,0 +1,13 @@
+# Canadian Pacific, Table 69A: Woodstock - Zorra - Embro - St. Marys. Canadian Pacific timetable, 1948 (Brendan, 29 Oct 2026; scan cp1948_on/t069.png). Eastern time. Miles: Woodstock - Zorra 7.1 (Table 50); the branch as printed from Zorra, plus 7.1.
+#train col=M681 num=681 dir=down days="ex Sun" kind=mixed note="Mixed, daily except Sunday: Woodstock 11.00 a.m., Zorra 11.25 / 11.30, to St. Marys 12.45 p.m. (connection from Toronto 8.00 a.m.)."
+#train col=M682 num=682 dir=up days="ex Sun" kind=mixed note="Mixed, daily except Sunday: St. Marys 3.50 p.m., Zorra 5.05 / 5.35, Woodstock 5.50 p.m. (connection to Toronto 9.40 p.m.)."
+mile,station,principal,prov,tz,M681,M682
+0.0,Woodstock,1,ON,E,lv 11.00a,ar 5.50p
+7.1,Zorra,0,ON,E,ar 11.25a / lv 11.30a,ar 5.05p / lv 5.35p
+12.1,Embro,0,ON,E,11.45a,4.50p
+14.9,Bennington,0,ON,E,f11.55a,f4.30p
+16.3,McConkey,0,ON,E,f12.01p,f4.27p
+19.1,Lakeside,0,ON,E,12.10p,4.19p
+21.9,Uniondale,0,ON,E,f12.20p,f4.06p
+26.5,Lind,0,ON,E,f12.35p,f3.54p
+27.8,St. Marys,1,ON,E,ar 12.45p,lv 3.50p
