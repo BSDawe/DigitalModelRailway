@@ -1817,3 +1817,11 @@ Stations of different railways within 250 m (70 pairs; script: same check over v
 - 50: Elma printed f8.09, impossible (Crest 8.04, 9.6 mi): estimated ~f8.26 (ask Brendan if his copy reads otherwise).
 - Alias Timiskaming = the collection's 'Temiscaming'; Crest by mileage (the collection's point ~2 mi short). Mattawa - Timiskaming traced 42.5 mi, printed 37.9.
 - Not entered: Chenier Bus Lines connections (Ville Marie - Belleterre, Rouyn, Noranda, New Liskeard).
+
+## Version 84 (29 October 2026): CP Tables 63, 64, 65 (mixed branches off the Owen Sound line)
+- Scan cp1948_on/t063_065.png. All mixed, daily except Sunday; the Toronto rows are the Table 62 connections (705 / 708), not entered.
+- on_cp_t063: M747 / M748 Cataract - Erin - Fergus - Elora (continue to / from Orangeville in Table 62: run-through candidates). Fergus - Elora 2.4 mi in 65 / 50 min as printed.
+- on_cp_t064: M715 / M716 Saugeen - Durham - Hanover - Walkerton.
+- on_cp_t065: M753 / M756 Orangeville - Arthur - Mount Forest - Harriston - Wingham Jct. - Wingham - Glenannan - Teeswater. Wingham is a 4.5 mi branch: the
+  trains run in and back out (the printed miles count both ways); Wingham Jct. row twice (the return call estimated ~). Hand points (Claude): CP Wingham (branch
+  end), Wingham Jct. (branch junction by Glenannan), Cataract (where Table 62 had placed it by mileage).

@@ -1,0 +1,23 @@
+# Canadian Pacific, Table 65: Orangeville - Arthur - Mount Forest - Harriston - Wingham - Teeswater (Toronto - Wingham - Teeswater). Canadian Pacific timetable, 1948 (Brendan, 29 Oct 2026). Eastern time. Miles as printed (from Toronto). The Toronto rows are the connecting Table 62 trains (not entered).
+# Wingham is at the end of a 4.5 mi branch from Wingham Jct.: the trains run in and back out (the miles count both ways: Glenannan 134.1 = 124.7 + 4.5 + 4.5 + 0.4).
+# Wingham Jct. on the way back: no time printed (estimated ~).
+#train col=M753 num=753 dir=down days="ex Sun" kind=mixed note="Mixed, daily except Sunday: Orangeville 10.25 a.m. (connection from Toronto 7.45 a.m., Table 62 No. 705) to Wingham 3.05 and Teeswater 3.50 p.m."
+#train col=M756 num=756 dir=up days="ex Sun" kind=mixed note="Mixed, daily except Sunday: Teeswater 12.55 p.m. to Orangeville 6.05 p.m. (connection to Toronto 9.15 p.m., Table 62)."
+mile,station,principal,prov,tz,M753,M756
+55.8,Orangeville,1,ON,E,lv 10.25a,ar 6.05p
+59.8,Fraxa,0,ON,E,10.55a,5.45p
+63.5,Amaranth,0,ON,E,f11.05a,f5.30p
+65.8,Waldemar,0,ON,E,f11.13a,f5.20p
+68.0,Grand Valley,0,ON,E,11.25a,5.10p
+79.4,Arthur,1,ON,E,11.54a,4.35p
+86.3,Kenilworth,0,ON,E,f12.13p,f4.10p
+94.1,Mount Forest,1,ON,E,12.50p,3.40p
+103.9,Harriston,1,ON,E,1.30p,2.50p
+112.3,Fordwich,0,ON,E,1.58p,2.22p
+116.3,Gorrie,0,ON,E,2.10p,2.10p
+118.3,Wroxeter,0,ON,E,2.20p,2.03p
+124.7,Wingham Jct.,0,ON,E,2.45p,1.45p
+129.2,Wingham,1,ON,E,3.05p,1.30p
+133.7,Wingham Jct.,0,ON,E,~3.28p,~1.08p
+134.1,Glenannan,0,ON,E,f3.30p,f1.07p
+139.1,Teeswater,1,ON,E,ar 3.50p,lv 12.55p

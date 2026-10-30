@@ -1,0 +1,12 @@
+# Canadian Pacific, Table 64: Saugeen - Durham - Hanover - Walkerton (Toronto - Walkerton). Canadian Pacific timetable, 1948 (Brendan, 29 Oct 2026). Eastern time. Miles as printed (from Toronto). The Toronto rows are the connecting Table 62 trains (not entered).
+#train col=M715 num=715 dir=down days="ex Sun" kind=mixed note="Mixed, daily except Sunday: Saugeen 11.35 a.m. (connection from Toronto 7.45 a.m., Table 62 No. 705) to Walkerton 2.45 p.m."
+#train col=M716 num=716 dir=up days="ex Sun" kind=mixed note="Mixed, daily except Sunday: Walkerton 1.15 p.m. to Saugeen 4.30 p.m. (connection to Toronto 9.15 p.m., Table 62 No. 708)."
+mile,station,principal,prov,tz,M715,M716
+90.2,Saugeen,0,ON,E,lv 11.35a,ar 4.30p
+95.7,Priceville,0,ON,E,f11.55a,f4.10p
+100.1,Glen,0,ON,E,f12.07p,f3.55p
+102.1,McWilliams,0,ON,E,f12.12p,f3.50p
+106.8,Durham,1,ON,E,12.40p,3.35p
+113.4,Allan Park,0,ON,E,f1.00p,f3.00p
+117.7,Hanover,1,ON,E,1.15p,2.45p
+127.8,Walkerton,1,ON,E,ar 2.45p,lv 1.15p

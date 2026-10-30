@@ -1,0 +1,13 @@
+# Canadian Pacific, Table 63: Cataract - Erin - Fergus - Elora (Toronto - Elora). Canadian Pacific timetable, 1948 (Brendan, 29 Oct 2026). Eastern time. Miles as printed (from Toronto). The Toronto rows are the connecting Table 62 trains (not entered).
+# M747 / M748 continue to and from Orangeville in Table 62 (one train: run-through join candidate).
+#train col=M747 num=747 dir=down days="ex Sun" kind=mixed note="Mixed, daily except Sunday: Cataract 10.50 a.m. to Elora 1.15 p.m.; from Orangeville 10.30 a.m. (Table 62, on_cp_t062.csv)."
+#train col=M748 num=748 dir=up days="ex Sun" kind=mixed note="Mixed, daily except Sunday: Elora 3.30 p.m. to Cataract 6.00 p.m.; on to Orangeville 6.30 p.m. (Table 62)."
+mile,station,principal,prov,tz,M747,M748
+47.8,Cataract,1,ON,E,lv 10.50a,ar 6.00p
+52.3,Erin,0,ON,E,11.05a,5.40p
+56.0,Hillsburg,0,ON,E,11.15a,5.25p
+60.5,Orton,0,ON,E,11.28a,5.10p
+65.4,Belwood,0,ON,E,11.43a,4.55p
+71.8,Spier,0,ON,E,f12.01p,f4.35p
+74.8,Fergus,1,ON,E,12.10p,4.20p
+77.2,Elora,1,ON,E,ar 1.15p,lv 3.30p
