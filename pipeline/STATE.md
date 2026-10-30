@@ -1939,3 +1939,22 @@ Stations of different railways within 250 m (70 pairs; script: same check over v
   them at the station (one Ste. Rosalie stop for both lines; CP Table 22's Ste. Rosalie is the CP station, separate). Hand: CN Sherbrooke = the Grand Trunk station
   on rue du Depot (Brendan's point, 45.40055, -71.88820; the CP station is separate, about 850 m away, heritageguide.ca).
 - Side effect: CP Table 8 at Lennoxville (where the CP crosses the St. L. & A.) no longer runs out and back north of the station: 0.8 mi shorter. Check on the map.
+
+## Version 94 (30 October 2026): CN Tables 61 (Montreal suburban, Lakeshore) and 63 (Montreal - L'Epiphanie - Rawdon); page 1120
+- Scans (Brendan, 30 Oct): Official Guide page 1120 (Tables 61, 63, signs). Script: scratchpad on/t061.py.
+- on_cn_t061: suburban trains, Montreal (Bonaventure Station) - St. Henri - Lachine - Ste. Anne de Bellevue - Vaudreuil (and 25, 255, 261 / 26, 270 to and from
+  Coteau). 32 trips: down 225, 227, 235, 237 (Sun), 249, 251, 255 (Sat), 253 (Sun), 259, 261 (Mon - Fri), 25, 263, 265, 271, 279, and the two "additional local
+  trains" (Sat, Bonaventure 11.15 a.m. and 1.30 p.m. to Vaudreuil, ends only printed; unnumbered); up 226, 236, 238, 242, 244, 26, 252 (Sun), 254, 256, 262 (Sat),
+  272, 274, 270 (Mon - Sat from Coteau) / 280 (Sun from Vaudreuil), 284. Bonaventure Station: the collection's point (Grand Trunk). Miles as printed (from Central
+  Station; St. Henri 1.5 from Bonaventure), so Bonaventure - Lachine is shorter than the miles say.
+  - No. 26: its dagger is printed at the Valleyfield (motor train) time: taken as daily except Sunday.
+- on_cn_t061c: the Central Station trains of Table 61 that are not in Table 75, Montreal - Coteau only: 5 The La Salle (pool), 19 / 18, 14 The International
+  Limited (pool), 78 (May 30 - Sept. 19; from beyond Coteau, origin not in the table). TO REPLACE with the CN Montreal - Toronto table (cf. on_cnpool_t049, held).
+- on_cn_t075a: rows Pointe Claire, St. Dominique, Wilsonvale added from Table 61 (47, 48, 51, 152, 153); "Cedar-Cedres" corrected to Cedars-Cedres.
+- on_cn_t063: Montreal (Central) - Mount Royal - Pointe aux Trembles - L'Epiphanie - Rawdon: 206 (Sun), 210 (Sat), M202 (mixed, Mon - Thu), 208 (Fri), M201 (mixed),
+  205 (Sun); and the parts shown of the Joliette-line trains 110, 114, 216, 116 / 115, 215, 113, 109, 209 (to / from L'Epiphanie or Pointe aux Trembles; the rest
+  not in hand). St. Alexis and Hamilton entered as "St. Alexis de Montcalm" and "Hamilton, Que." (stop ids apart from CN St. Alexis, Matapedia, and Hamilton, Ont.).
+  CN L'Epiphanie kept separate from CP L'Epiphanie (ask Brendan if they shared a station).
+- Track and places: CN Lachine hand point on the main line (the collection's Lachine station is the old one on the Lachine spur, 1.2 km south; trains went into
+  the spur and back, Lachine - Dorval 3.4 mi traced for 2.4). St. Dominique by its mileage (its point snaps to the other track of the double main line, which
+  broke the Coteau fit). Many Lakeshore stations have no CN point in the collection (or only the CP's): placed by mileage.

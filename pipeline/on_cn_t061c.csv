@@ -1,0 +1,18 @@
+# Canadian National, Table 61: the Central Station trains to and from Coteau not in Table 75 (the Montreal - Toronto line trains, Montreal - Coteau only). Source: Official Guide, April 25, 1948, CN Table 61 (Brendan, 30 Oct 2026, page 1120; private scans og1948_cnq/). EASTERN TIME.
+# Miles as printed. To replace with the CN Montreal - Toronto table when it comes (the pool trains are also held, not built, in on_cnpool_t049.csv).
+# Signs: * daily; dagger ex Sun; section Sun only; h daily except Sat and Sun; k Sat only; o daily except Sun; f flag; c, d, e, l, n, p, u, x, y, z, colon, sharp, dot, open square: conditional stops (entered as flag stops). Circle (will not run July 1 or Sept. 6) and diamond (also runs July 1 and Sept. 6): no effect in the model week.
+#train col=No5 num=5 dir=down days=daily kind=passenger name="The La Salle" to=Toronto note="Pool train. Montreal 9.15 a.m.; Valleyfield passengers by motor train No. 626 (Valleyfield 11.00 a.m.). Montreal - Coteau only (Table 61); the train runs on by the Toronto line (CN Montreal - Toronto table not in hand)."
+#train col=No19 num=19 dir=down days=daily kind=passenger to=Toronto note="Montreal 8.55 p.m.; Valleyfield passengers by motor train No. 640 (Valleyfield 10.20 p.m.). Montreal - Coteau only (Table 61); the train runs on by the Toronto line (CN Montreal - Toronto table not in hand)."
+#train col=No18 num=18 dir=up days=daily kind=passenger from=Toronto note="Coteau 5.12 a.m. to Montreal 6.30 a.m. Montreal - Coteau only (Table 61); the train runs on by the Toronto line (CN Montreal - Toronto table not in hand)."
+#train col=No14 num=14 dir=up days=daily kind=passenger name="The International Limited" from=Toronto note="Pool train. Coteau 4.38 p.m. to Montreal 5.45 p.m.; Valleyfield passengers by motor train No. 627 (Valleyfield 4.05 p.m.). Montreal - Coteau only (Table 61); the train runs on by the Toronto line (CN Montreal - Toronto table not in hand)."
+#train col=No78 num=78 dir=up days=daily kind=passenger note="Runs May 30 to September 19 inclusive: Coteau 8.02 p.m. to Montreal 9.20 p.m. (where it comes from beyond Coteau is not in this table)."
+mile,station,principal,prov,tz,No5,No19,No18,No14,No78
+0.0,Montreal (Central Station),1,QC,E,lv 9.15a,lv 8.55p,ar 6.30a,ar 5.45p,ar 9.20p
+9.4,Lachine,0,QC,E,f9.41a,f9.25p,f5.58a,f5.15p,8.50p
+16.2,Pointe Claire,0,QC,E,,,,,8.43p
+22.3,Ste. Anne de Bellevue,1,QC,E,f9.57a,9.38p,5.36a,f4.59p,8.34p
+26.0,Vaudreuil (Dorion),1,QC,E,,,f5.30a,,8.29p
+30.7,Cedars-Cedres,0,QC,E,,,,,8.21p
+32.8,St. Dominique,0,QC,E,,,,,f8.13p
+36.3,Wilsonvale,0,QC,E,,,,,8.08p
+39.4,Coteau,1,QC,E,ar 10.18a,ar 10.00p,lv 5.12a,lv 4.38p,lv 8.02p

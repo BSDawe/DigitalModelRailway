@@ -1,5 +1,5 @@
 # Canadian National, Table 75 (Transcontinental Service), Montreal - Coteau - Ottawa. EASTERN TIME. Source: Official Guide, April 25, 1948, Table 75, Transcontinental Service (Brendan, 23 Oct 2026; scans/on1948/04.png westbound, 03.png eastbound, sideways).
-# Miles from Montreal as printed. Times as printed. The Valleyfield sections (Coteau - Valleyfield, 5.3 mi) are in on_cn_t075v.csv.
+# Miles from Montreal as printed. Times as printed. Valleyfield: the Table 60a motor trains (on_cn_t060a.csv).
 # Signs (key at the head of the page): f flag stop; e stops for passengers to or from St. Polycarpe and beyond; g stops for passengers from Levis and
 # beyond or to Coteau and beyond; c stops for passengers to North Bay and beyond; colon (:) stops to leave passengers from west of Coteau; open square:
 # stops for passengers to or from Ottawa and beyond; natural sign: stops for revenue passengers to or from Capreol, Port Arthur, Armstrong or beyond.
@@ -14,13 +14,17 @@
 #train col=No48 num=48 dir=up days="ex Sun" kind=passenger note="Daily except Sunday: Ottawa 7.45 a.m. to Montreal 11.00 a.m. by Coteau; a section goes on from Coteau to Valleyfield."
 #train col=No50 num=50 dir=up days=daily kind=passenger note="Ottawa 4.00 p.m. to Montreal 7.10 p.m.; a section goes on from Coteau to Valleyfield."
 #train col=No152 num=152 dir=up days=Sun kind=passenger note="Sundays: Ottawa 7.10 p.m. to Montreal 9.55 p.m.; a section goes on from Coteau to Valleyfield."
+# Rows Pointe Claire, St. Dominique, Wilsonvale added from Table 61 (30 Oct 2026); "Cedar-Cedres" corrected to Cedars-Cedres.
 mile,station,principal,prov,tz,No1,No153,No51,No151,No47,No2,No48,No50,No152
 0.0,Montreal (Central Station),1,QC,E,lv 8.20p,lv 5.50p,lv 3.35p,lv 12.30p,lv 9.30a,ar 9.00a,ar 11.00a,ar 7.10p,ar 9.55p
 9.4,Lachine,0,QC,E,8.41p,6.15p,4.00p,12.56p,9.55a,,10.30a,6.40p,9.28p
 11.8,Dorval,0,QC,E,,,4.04p,,,,,,
+16.2,Pointe Claire,0,QC,E,,,f4.10p,,,,f10.22a,,
 22.3,Ste. Anne de Bellevue,1,QC,E,8.54p,6.28p,4.18p,1.10p,10.10a,8.19a,10.14a,6.26p,9.13p
 26.0,Vaudreuil (Dorion),0,QC,E,,,4.22p,,f10.15a,,10.10a,,9.09p
-30.7,Cedar-Cedres,0,QC,E,,6.41p,,,10.22a,,10.03a,,9.02p
+30.7,Cedars-Cedres,0,QC,E,,6.41p,,,10.22a,,10.03a,,9.02p
+32.8,St. Dominique,0,QC,E,,f6.47p,,,f10.26a,,,,f8.57p
+36.3,Wilsonvale,0,QC,E,,f6.52p,,,10.32a,,,,8.52p
 39.4,Coteau,1,QC,E,,ar 7.00p / lv 7.04p,ar 4.38p / lv 4.44p,ar 1.27p / lv 1.30p,ar 10.38a / lv 10.44a,,ar 9.50a / lv 9.53a,ar 6.03p / lv 6.07p,ar 8.42p / lv 8.45p
 43.2,St. Polycarpe,0,QC,E,,7.11p,4.50p,1.36p,10.50a,,9.42a,5.54p,
 45.6,De Beaujeu,0,QC,E,,f7.16p,4.54p,1.41p,,,9.37a,,

@@ -1,0 +1,58 @@
+# Canadian National, Table 61: suburban service, Montreal (Bonaventure Station) - St. Henri - Lachine - Ste. Anne de Bellevue - Vaudreuil - Coteau. Source: Official Guide, April 25, 1948, CN Table 61 (Brendan, 30 Oct 2026, page 1120; private scans og1948_cnq/). EASTERN TIME.
+# Miles as printed (from Central Station; St. Henri 1.5 from Bonaventure Station). The Central Station trains of the table are in on_cn_t075a.csv (1, 2, 47, 48, 50, 51, 151, 152, 153) and on_cn_t061c.csv (5, 14, 18, 19, 78).
+# Valleyfield times printed under some trains are the Table 60a motor trains (on_cn_t060a.csv), in the notes.
+# Signs: * daily; dagger ex Sun; section Sun only; h daily except Sat and Sun; k Sat only; o daily except Sun; f flag; c, d, e, l, n, p, u, x, y, z, colon, sharp, dot, open square: conditional stops (entered as flag stops). Circle (will not run July 1 or Sept. 6) and diamond (also runs July 1 and Sept. 6): no effect in the model week.
+#train col=No225 num=225 dir=down days="ex Sun" kind=passenger note="Suburban train, Montreal (Bonaventure Station) - Vaudreuil."
+#train col=No227 num=227 dir=down days="ex Sun" kind=passenger note="Suburban train, Montreal (Bonaventure Station) - Vaudreuil."
+#train col=No235 num=235 dir=down days="ex Sun" kind=passenger note="Suburban train, Montreal (Bonaventure Station) - Vaudreuil."
+#train col=No237 num=237 dir=down days=Sun kind=passenger note="Suburban train, Montreal (Bonaventure Station) - Vaudreuil."
+#train col=No249 num=249 dir=down days=Sat kind=passenger note="Suburban train, Montreal (Bonaventure Station) - Vaudreuil."
+#train col=No251 num=251 dir=down days=Sat kind=passenger note="Suburban train, Montreal (Bonaventure Station) - Vaudreuil."
+#train col=No253 num=253 dir=down days=Sun kind=passenger note="Suburban train, Montreal (Bonaventure Station) - Vaudreuil."
+#train col=No255 num=255 dir=down days=Sat kind=passenger note="Suburban train, Montreal (Bonaventure Station) - Coteau."
+#train col=No259 num=259 dir=down days="Mon,Tue,Wed,Thu,Fri" kind=passenger note="Suburban train, Montreal (Bonaventure Station) - Vaudreuil."
+#train col=No261 num=261 dir=down days="Mon,Tue,Wed,Thu,Fri" kind=passenger note="Suburban train, Montreal (Bonaventure Station) - Coteau. Valleyfield passengers by motor train No. 632 from Coteau (Valleyfield 6.25 p.m.)."
+#train col=No25 num=25 dir=down days="ex Sun" kind=passenger note="Suburban train, Montreal (Bonaventure Station) - Coteau. Valleyfield passengers by motor train No. 632 from Coteau (Valleyfield 6.25 p.m.)."
+#train col=No263 num=263 dir=down days="ex Sun" kind=passenger note="Suburban train, Montreal (Bonaventure Station) - Vaudreuil."
+#train col=No265 num=265 dir=down days=daily kind=passenger note="Suburban train, Montreal (Bonaventure Station) - Vaudreuil."
+#train col=No271 num=271 dir=down days=daily kind=passenger note="Suburban train, Montreal (Bonaventure Station) - Vaudreuil."
+#train col=No279 num=279 dir=down days=daily kind=passenger note="Suburban train, Montreal (Bonaventure Station) - Vaudreuil."
+#train col=LA num="" dir=down days=Sat kind=passenger note="Additional local train, Saturdays only (k): Bonaventure Station 11.15 to Vaudreuil 12.10; only these two times printed (intermediate stops not shown)."
+#train col=LB num="" dir=down days=Sat kind=passenger note="Additional local train, Saturdays only (k): Bonaventure Station 1.30 to Vaudreuil 2.25; only these two times printed (intermediate stops not shown)."
+#train col=No226 num=226 dir=up days="ex Sun" kind=passenger note="Suburban train, Vaudreuil - Montreal (Bonaventure Station)."
+#train col=No236 num=236 dir=up days="ex Sun" kind=passenger note="Suburban train, Vaudreuil - Montreal (Bonaventure Station)."
+#train col=No238 num=238 dir=up days=daily kind=passenger note="Suburban train, Vaudreuil - Montreal (Bonaventure Station)."
+#train col=No242 num=242 dir=up days="ex Sun" kind=passenger note="Suburban train, Vaudreuil - Montreal (Bonaventure Station)."
+#train col=No244 num=244 dir=up days="ex Sun" kind=passenger note="Suburban train, Vaudreuil - Montreal (Bonaventure Station)."
+#train col=No26 num=26 dir=up days="ex Sun" kind=passenger note="Suburban train, Coteau - Montreal (Bonaventure Station). Valleyfield passengers by motor train No. 619 (Valleyfield 8.00 a.m.). Days: the dagger is printed at the Valleyfield time; taken as daily except Sunday."
+#train col=No252 num=252 dir=up days=Sun kind=passenger note="Suburban train, Vaudreuil - Montreal (Bonaventure Station)."
+#train col=No254 num=254 dir=up days=Sat kind=passenger note="Suburban train, Vaudreuil - Montreal (Bonaventure Station)."
+#train col=No256 num=256 dir=up days=Sat kind=passenger note="Suburban train, Vaudreuil - Montreal (Bonaventure Station)."
+#train col=No262 num=262 dir=up days=Sat kind=passenger note="Suburban train, Vaudreuil - Montreal (Bonaventure Station)."
+#train col=No272 num=272 dir=up days=daily kind=passenger note="Suburban train, Vaudreuil - Montreal (Bonaventure Station)."
+#train col=No274 num=274 dir=up days="ex Sun" kind=passenger note="Suburban train, Vaudreuil - Montreal (Bonaventure Station)."
+#train col=No270 num=270 dir=up days="Mon,Tue,Wed,Thu,Fri,Sat" kind=passenger note="Suburban train, Coteau - Montreal (Bonaventure Station). No. 270 (o: daily except Sunday) from Coteau 6.15 p.m.; on Sundays No. 280 runs from Vaudreuil 6.50 p.m. only. Valleyfield passengers by motor train No. 631 (Valleyfield 5.35 p.m.)."
+#train col=No280 num=280 dir=up days=Sun kind=passenger note="Suburban train, Vaudreuil - Montreal (Bonaventure Station). Sundays: No. 280 from Vaudreuil 6.50 p.m. (No. 270 from Coteau does not run)."
+#train col=No284 num=284 dir=up days=daily kind=passenger note="Suburban train, Vaudreuil - Montreal (Bonaventure Station)."
+mile,station,principal,prov,tz,No225,No227,No235,No237,No249,No251,No253,No255,No259,No261,No25,No263,No265,No271,No279,LA,LB,No226,No236,No238,No242,No244,No26,No252,No254,No256,No262,No272,No274,No270,No280,No284
+0.0,Montreal (Bonaventure Station),1,QC,E,lv 4.55a,lv 5.20a,lv 6.05a,lv 7.40a,lv 11.45a,lv 12.15p,lv 12.15p,lv 12.50p,lv 3.50p,lv 4.15p,lv 4.25p,lv 4.50p,lv 5.15p,lv 8.30p,lv 10.30p,lv 11.15a,lv 1.30p,ar 5.40a,ar 7.15a,ar 7.35a,ar 7.45a,ar 8.10a,ar 9.50a,ar 11.55a,ar 1.15p,ar 2.45p,ar 4.20p,ar 5.55p,ar 7.25p,ar 7.45p,ar 7.45p,ar 10.40p
+1.5,St. Henri,0,QC,E,4.59a,5.25a,6.10a,7.45a,11.50a,12.20p,12.20p,12.55p,3.55p,4.20p,4.30p,4.55p,5.20p,8.35p,10.35p,,,5.34a,7.09a,7.29a,7.39a,8.04a,9.44a,11.49a,1.09p,2.39p,4.14p,5.50p,7.19p,7.39p,7.39p,10.34p
+8.1,Dominion,0,QC,E,5.09a,5.36a,f6.21a,f7.56a,12.01p,,12.31p,1.06p,4.06p,,4.41p,5.06p,5.31p,f8.46p,f10.46p,,,5.23a,6.58a,7.18a,,f7.53a,,11.38a,12.58p,,f4.03p,5.39p,7.07p,7.28p,7.28p,
+8.5,Convent,0,QC,E,5.11a,5.38a,f6.23a,7.58a,12.03p,,12.33p,1.08p,4.08p,,4.43p,5.08p,5.33p,8.48p,10.48p,,,5.21a,6.56a,7.16a,,7.51a,9.31a,11.36a,12.56p,2.26p,4.01p,f5.37p,7.05p,7.26p,7.26p,10.21p
+9.4,Lachine,0,QC,E,5.13a,5.40a,6.25a,8.00a,12.05p,,12.35p,1.10p,4.10p,,4.46p,5.10p,5.35p,8.50p,10.50p,,,5.20a,6.53a,7.13a,,7.50a,9.28a,11.35a,12.55p,2.25p,4.00p,5.35p,7.02p,7.25p,7.25p,10.20p
+10.8,Dixie,0,QC,E,f5.15a,f5.43a,6.28a,8.03a,12.08p,,12.38p,1.13p,4.13p,,4.49p,5.13p,5.38p,f8.53p,10.53p,,,5.17a,6.48a,7.09a,,7.48a,f9.24a,11.33a,12.53p,2.23p,3.58p,5.33p,6.59p,f7.23p,f7.23p,10.18p
+11.8,Dorval,0,QC,E,5.17a,5.46a,6.30a,8.05a,12.10p,12.35p,12.41p,1.16p,4.15p,,4.53p,5.16p,5.41p,8.56p,10.56p,,,5.14a,6.45a,7.05a,,7.46a,9.21a,11.30a,12.50p,2.20p,3.55p,5.31p,6.56p,f7.20p,f7.20p,10.15p
+13.7,Strathmore,0,QC,E,f5.20a,5.49a,6.33a,f8.08a,12.13p,12.38p,12.44p,1.19p,4.18p,,4.58p,5.19p,5.44p,8.59p,10.59p,,,5.11a,6.41a,7.01a,,7.43a,f9.17a,11.27a,12.47p,f2.17p,3.53p,5.27p,f6.52p,f7.17p,f7.17p,10.12p
+14.3,Valois,0,QC,E,5.22a,5.51a,6.35a,f8.10a,12.15p,12.40p,12.46p,1.21p,4.20p,4.35p,5.00p,5.21p,5.46p,9.01p,11.01p,,,5.09a,6.39a,6.59a,7.19a,7.41a,f9.15a,11.25a,12.45p,2.15p,3.50p,5.25p,6.50p,7.15p,7.15p,10.10p
+14.9,Lakeside,0,QC,E,f5.24a,f5.53a,6.37a,f8.12a,12.17p,12.42p,12.48p,1.23p,4.22p,,5.02p,5.23p,5.48p,9.03p,11.03p,,,5.07a,6.37a,6.57a,7.17a,7.39a,f9.13a,11.23a,12.43p,f2.13p,3.48p,f5.23p,f6.48p,f7.13p,f7.13p,f10.08p
+16.2,Pointe Claire,0,QC,E,5.26a,5.56a,6.40a,8.15a,12.20p,12.45p,12.52p,1.27p,4.25p,4.39p,5.06p,5.27p,5.52p,9.07p,11.07p,,,5.04a,6.34a,6.54a,7.14a,7.37a,9.10a,11.20a,12.40p,2.10p,3.45p,5.20p,6.45p,7.10p,7.10p,10.05p
+17.2,Beaconsfield,0,QC,E,f5.28a,f5.59a,f6.42a,f8.17a,12.22p,12.47p,12.54p,f1.29p,f4.27p,,5.09p,f5.29p,f5.54p,f9.09p,11.09p,,,f5.01a,f6.31a,f6.51a,,7.35a,9.07a,f11.17a,f12.37p,f2.07p,f3.42p,f5.17p,f6.42p,f7.07p,f7.07p,f10.02p
+19.1,Beaurepaire,0,QC,E,f5.31a,f6.02a,f6.45a,f8.20a,12.25p,12.50p,12.57p,f1.32p,4.30p,4.43p,5.12p,5.32p,5.57p,f9.12p,f11.12p,,,f4.58a,6.28a,6.48a,7.08a,7.32a,f9.04a,11.14a,12.34p,2.04p,3.39p,f5.14p,f6.39p,f7.04p,f7.04p,f9.59p
+20.7,Baie d'Urfe,0,QC,E,f5.34a,f6.05a,f6.48a,f8.23a,,,1.00p,f1.35p,f4.33p,,f5.15p,f5.35p,f6.00p,f9.15p,f11.15p,,,f4.55a,f6.25a,f6.45a,,f7.29a,f9.02a,f11.10a,f12.30p,f2.00p,f3.35p,f5.11p,f6.36p,f7.00p,f7.00p,f9.55p
+22.3,Ste. Anne de Bellevue,1,QC,E,5.36a,6.09a,6.51a,8.26a,12.31p,12.55p,1.04p,1.39p,4.36p,4.48p,5.18p,5.39p,6.04p,9.19p,11.19p,,,4.51a,6.22a,6.42a,7.02a,7.27a,8.59a,11.07a,12.27p,1.57p,3.32p,5.08p,6.33p,6.57p,6.57p,9.52p
+23.6,Isle Perrot,0,QC,E,f5.39a,f6.12a,f6.54a,f8.29a,f12.34p,f12.58p,f1.07p,f1.42p,f4.39p,f4.50p,5.21p,f5.42p,f6.07p,f9.22p,f11.22p,,,f4.45a,f6.18a,f6.38a,f6.58a,f7.23a,f8.54a,f11.03a,f12.23p,f1.53p,f3.28p,f5.03p,f6.29p,f6.53p,f6.53p,9.48p
+26.0,Vaudreuil (Dorion),1,QC,E,ar 5.45a,ar 6.20a,ar 7.00a,ar 8.35a,ar 12.40p,ar 1.00p,ar 1.15p,1.50p,ar 4.45p,4.55p,5.32p,ar 5.50p,ar 6.15p,ar 9.30p,ar 11.30p,ar 12.10p,ar 2.25p,lv 4.42a,lv 6.15a,lv 6.35a,lv 6.55a,lv 7.20a,8.51a,lv 11.00a,lv 12.20p,lv 1.50p,lv 3.25p,lv 5.00p,lv 6.25p,6.50p,lv 6.50p,lv 9.45p
+30.7,Cedars-Cedres,0,QC,E,,,,,,,,1.58p,,5.03p,5.41p,,,,,,,,,,,,8.45a,,,,,,,6.31p,,
+32.8,St. Dominique,0,QC,E,,,,,,,,f2.02p,,f5.08p,f5.46p,,,,,,,,,,,,8.41a,,,,,,,6.25p,,
+36.3,Wilsonvale,0,QC,E,,,,,,,,f2.09p,,f5.13p,5.52p,,,,,,,,,,,,8.37a,,,,,,,f6.21p,,
+39.4,Coteau,1,QC,E,,,,,,,,ar 2.15p,,ar 5.20p,ar 6.04p,,,,,,,,,,,,lv 8.31a,,,,,,,lv 6.15p,,
