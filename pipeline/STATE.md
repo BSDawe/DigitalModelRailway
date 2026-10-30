@@ -1955,6 +1955,7 @@ Stations of different railways within 250 m (70 pairs; script: same check over v
   205 (Sun); and the parts shown of the Joliette-line trains 110, 114, 216, 116 / 115, 215, 113, 109, 209 (to / from L'Epiphanie or Pointe aux Trembles; the rest
   not in hand). St. Alexis and Hamilton entered as "St. Alexis de Montcalm" and "Hamilton, Que." (stop ids apart from CN St. Alexis, Matapedia, and Hamilton, Ont.).
   CN L'Epiphanie kept separate from CP L'Epiphanie (ask Brendan if they shared a station).
-- Track and places: CN Lachine hand point on the main line (the collection's Lachine station is the old one on the Lachine spur, 1.2 km south; trains went into
-  the spur and back, Lachine - Dorval 3.4 mi traced for 2.4). St. Dominique by its mileage (its point snaps to the other track of the double main line, which
+- Track and places (corrected same day, Brendan): until 1961 the CN main line ran from Turcot West through Lachine station on the old Lachine line to Dorval;
+  the Turcot West - Dorval line in the collection is the 1961 bypass. The two collection main-line pieces are replaced by copies that follow the old line between
+  those junctions (links 'Grand Trunk main line in 1948'); the collection's Lachine station stands (no hand point). St. Dominique by its mileage (its point snaps to the other track of the double main line, which
   broke the Coteau fit). Many Lakeshore stations have no CN point in the collection (or only the CP's): placed by mileage.
