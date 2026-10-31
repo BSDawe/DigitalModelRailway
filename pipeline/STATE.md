@@ -1909,6 +1909,13 @@ Stations of different railways within 250 m (70 pairs; script: same check over v
 - on_cn_t055: 193, 195 / 194, 196 Chambord - Roberval - St. Felicien - Dolbeau (confirms the 11.55 p.m. Dolbeau arrival = No. 195, from Chambord 9.50 p.m.).
   on_cn_t050d (estimated Dolbeau sections) DELETED.
 
+## WAITING: Thousand Islands Railway (Brendan, 31 Oct 2026) - build with the CN Montreal - Toronto table
+- In 1948 the Thousand Islands Railway is a separate company (Official Guide listing: Gananoque - Gananoque Junction, 4.51 mi, "connecting with all Canadian
+  National trains"). Plan: its own railway (rail / agency TIR, own colour); for every CN train that stops at Gananoque Junction, a TIR connecting trip
+  (Gananoque -> Junction timed to arrive before the train; Junction -> Gananoque after it), running time estimated (about 15 min, no times printed). Track: the
+  collection's 'Thousand Islands Railway' main line (147 points); the collection's Gananoque Junction station point is on the Grand Trunk main line (-76.15375,
+  44.36873); its TIR "Thousand Island Junction" point (-76.17974, 44.36070) is the TIR end. No built CN train stops at Gananoque Junction yet.
+
 ## WAITING: Quebec Railway, Light & Power (Brendan, 30 Oct 2026)
 - In 1948 the CN Murray Bay trains (Table 53: 176 / 175, 173) ran over the Quebec Railway, Light & Power Co. (Quebec - Ste. Anne de Beaupre - Murray Bay) by running
   rights; the collection shows it as CN because CN bought it in 1951. Brendan will upload the QRL&P's own information. When it goes in: the QRL&P track drawn as
