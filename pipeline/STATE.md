@@ -2064,3 +2064,6 @@ Stations of different railways within 250 m (70 pairs; script: same check over v
   their notes mention later abandonments). Places: Hamilton (James St.) = the collection's '2nd Hamilton station' (-79.86457, 43.26584; Brendan); boundary at the end of the GW main line at the Niagara River bridge (-79.05833, 43.10923); CN Burlington on the main
   line at the junction (Freeman), by the printed miles (the collection's Burlington is on the old branch to the lake), APPROXIMATE. Sunnyside: one station with the CP
   trains (CP_SUNNYSIDE, SHARED). St. Catharines and Niagara Falls, Ont. by their mileage (their points did not fit the track).
+- (Version 105, 31 Oct, Brendan) Trenton station is off the main line; the main-line trains called at Trenton Junction. CN Trenton Junction hand point at Brendan's
+  point on the collection track (44.09969, -77.57823), where the Trenton subdivision, Central Ontario and Rideau subdivision lines meet. Table 81f's mixed runs
+  Picton - Trenton - back to Trenton Jn. - Belleville (traced 47.7 mi, printed 44.3: the in-and-out at Trenton).
