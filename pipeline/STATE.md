@@ -1909,18 +1909,6 @@ Stations of different railways within 250 m (70 pairs; script: same check over v
 - on_cn_t055: 193, 195 / 194, 196 Chambord - Roberval - St. Felicien - Dolbeau (confirms the 11.55 p.m. Dolbeau arrival = No. 195, from Chambord 9.50 p.m.).
   on_cn_t050d (estimated Dolbeau sections) DELETED.
 
-## WAITING: Thousand Islands Railway (Brendan, 31 Oct 2026) - build with the CN Montreal - Toronto table
-- In 1948 the Thousand Islands Railway is a separate company (Official Guide listing: Gananoque - Gananoque Junction, 4.51 mi, "connecting with all Canadian
-  National trains"). Plan: its own railway (rail / agency TIR, own colour); for every CN train that stops at Gananoque Junction, a TIR connecting trip
-  (Gananoque -> Junction timed to arrive before the train; Junction -> Gananoque after it), running time estimated (about 15 min, no times printed). Track: the
-  collection's 'Thousand Islands Railway' main line (147 points); the collection's Gananoque Junction station point is on the Grand Trunk main line (-76.15375,
-  44.36873); its TIR "Thousand Island Junction" point (-76.17974, 44.36070) is the TIR end. No built CN train stops at Gananoque Junction yet.
-- Brendan (31 Oct): 15 minutes each way, as a simulated schedule. No train numbers; the engine is named "Susan Push" (show it as the vehicle name, like the
-  ferries' vessel names).
-- Brendan (31 Oct): Gananoque Junction is the CN station (the collection's GT main-line point), one stop shared with the TIR, which runs over CN track for the short
-  stretch Thousand Islands Junction (TIR end) - Gananoque Junction. Drawn: TIR track Gananoque - Thousand Islands Jct. in TIR colour, then on CN track (CN colour,
-  as other trackage rights). CN trains stop at Gananoque Junction as timetabled.
-
 ## WAITING: Quebec Railway, Light & Power (Brendan, 30 Oct 2026)
 - In 1948 the CN Murray Bay trains (Table 53: 176 / 175, 173) ran over the Quebec Railway, Light & Power Co. (Quebec - Ste. Anne de Beaupre - Murray Bay) by running
   rights; the collection shows it as CN because CN bought it in 1951. Brendan will upload the QRL&P's own information. When it goes in: the QRL&P track drawn as
@@ -2079,3 +2067,20 @@ Stations of different railways within 250 m (70 pairs; script: same check over v
 - (Versions 105 - 106, 31 Oct, Brendan) Trenton station is off the main line; the main-line trains called at Trenton Junction. Brendan's point (44.09969, -77.57823,
   on the collection track where the Trenton subdivision, Central Ontario and Rideau subdivision lines meet) is TRENTON station (CN hand point); Trenton Junction is
   the collection's point on the main line. (Version 105 had them the wrong way round.)
+
+## Version 107 (31 October 2026): CN Table 82 Montreal - Toronto (pool trains) and the Thousand Islands Railway
+- Scans (Brendan, 31 Oct): Table 82 (two halves) and the pool-train signs. Script: scratchpad on/t082.py.
+- on_cn_t082 (Montreal Central - Toronto Union): down 77 (Sun Tue Thu, May 30 - Sept. 19, Montreal - Prescott wharfs), 17 The Inter-City Limited, 19, 5 The La Salle,
+  9 (Mon - Fri, Belleville - Toronto), 109 (Sun, Belleville - Toronto), M445 (Napanee - Belleville, from Forfar); up 14 The International Limited, 10 (Mon - Sat,
+  Toronto - Belleville), 18 (Mon - Sat) and 118 (Sun, on as 18 from Brockville), 16 The Maple Leaf, 78 (Sun Tue Thu), M446 (Belleville - Napanee).
+  on_cn_t082b: 25 / 26 Montreal (Bonaventure) - Coteau - Cornwall - Brockville (all stations). NOT ENTERED: pool 15 / 6 (Windsor Station, on_cpcn_t049) and 21 / 22
+  (via CP lines, on_cp_t050). Ottawa connections (by Coteau, Table 75; Ottawa - Brockville), Valleyfield, Prescott - Ogdensburg ferry: in the notes.
+  DELETED: on_cn_t061c (5, 14, 18, 19, 78 Montreal - Coteau) and on_cnpool_t049 (held pool trains). Conditional stops as flag stops.
+- Thousand Islands Railway (rail 'ontir', kind K, agency TIR, colour #7a5a2e Claude's pick; on_tir_t082.csv): Gananoque - Gananoque Junction over its own line to
+  Thousand Islands Jct. and the CN from there; Gananoque Junction = the CN station (shared stop). 8 unnumbered daily trips named "Susan Push", at the Gananoque times
+  printed in Table 82 (Via T.I.Ry.) with junction times estimated (~15 min): 12.20 / 1.10 p.m. (No. 5), 1.20 / 2.15 p.m. (No. 14), 12.30 / 1.15 a.m. (No. 19; DOUBT: 1.15
+  arrival only 7 min after the train's 1.08), 1.40 / 2.40 a.m. (Nos. 18 / 118). One engine covers all eight.
+- Track: Cornwall - Cardinal is the pre-Seaway line (flooded 1958); the collection's pieces for it are crude (vertices up to 12 km apart), so Cornwall - Wales and
+  Aultsville - Morrisburg are drawn as straight estimates. Mille Roches, Moulinette, Cardinal have no points (by mileage). Port Hope - Newcastle traces 17.6 mi for 15.6
+  printed: CHECK the route there.
+- Kingston (Brendan): the 1948 station is at 44.25389, -76.48477 (the collection's point, CN_KINGSTON, used by the pool and CN trains); the later VIA station further west did not exist.

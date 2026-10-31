@@ -1,0 +1,33 @@
+# Canadian National, Table 82: Montreal (Bonaventure Station) - Coteau - Cornwall - Prescott - Brockville, Nos. 25 / 26. Source: Official Guide, April 25, 1948, CN Table 82 (Brendan, 31 Oct 2026; private scans og1948_cnq/). EASTERN TIME.
+# Miles as printed (from Central Station; St. Henri 1.5 from Bonaventure, as Table 61).
+# Signs: * daily; dagger ex Sun; double dagger ex Sat; pilcrow ex Mon; section Sun only; e stops Mon Wed Fri only; f flag; i stops to leave from beyond Sunnyside; j stops Tue Thu Sat only; k Sat only; m daily ex Sun, stops for passengers from Danforth and beyond; n stops to take for Belleville and beyond; r stops to take or leave from Danforth and beyond; s stops Sunday; t stops to leave from Belleville and beyond; v stops to take for Montreal and beyond; y stops to leave from or take for Kingston and beyond; z stops to leave from Toronto and beyond; psi daily ex Sat and Sun; check: stops to leave revenue passengers; triangle: stops to discharge from Montreal; bullet Monday only; circle-dot: on Sunday stops to take for Montreal. Conditional stops entered as flag stops (the day-limited e, j, s as flag stops on all days).
+#train col=No25 num=25 dir=down days="Mon,Tue,Wed,Thu,Fri,Sat" kind=passenger note="Daily except Sunday: Montreal (Bonaventure Station) 4.25 p.m. to Brockville 8.40 p.m. (Ottawa 4.00 p.m. by No. 50 to Coteau; Ogdensburg ferry from Prescott)."
+#train col=No26 num=26 dir=up days="Mon,Tue,Wed,Thu,Fri,Sat" kind=passenger note="Daily except Sunday: Brockville 5.50 a.m. to Montreal (Bonaventure Station) 9.50 a.m. (Ottawa 12.45 p.m. via Coteau, Valleyfield 9.10 a.m.)."
+mile,station,principal,prov,tz,No25,No26
+0.0,Montreal (Bonaventure Station),1,QC,E,lv 4.25p,ar 9.50a
+1.5,St. Henri,0,QC,E,4.30p,9.44a
+9.4,Lachine,0,QC,E,4.46p,9.28a
+16.2,Pointe Claire,0,QC,E,,
+22.3,Ste. Anne de Bellevue,1,QC,E,5.18p,8.59a
+26.0,Vaudreuil (Dorion),1,QC,E,5.32p,8.51a
+30.7,Cedars-Cedres,0,QC,E,5.41p,8.45a
+32.8,St. Dominique,0,QC,E,f5.46p,8.41a
+36.3,Wilsonvale,0,QC,E,5.52p,8.37a
+39.4,Coteau,1,QC,E,6.04p,8.31a
+41.3,St. Zotique,0,QC,E,f6.08p,f8.23a
+44.9,River Beaudette,0,QC,E,6.14p,8.18a
+50.1,Bainsville,0,ON,E,6.24p,8.10a
+55.5,Lancaster,0,ON,E,6.32p,7.59a
+61.1,Summerstown,0,ON,E,6.42p,7.50a
+69.2,Cornwall,1,ON,E,7.00p,7.38a
+74.0,Mille Roches,0,ON,E,7.09p,7.23a
+75.3,Moulinette,0,ON,E,7.12p,7.18a
+78.8,Wales,0,ON,E,7.18p,7.13a
+83.2,Farran's Point,0,ON,E,7.27p,7.04a
+85.7,Aultsville,0,ON,E,7.32p,6.59a
+94.1,Morrisburg,0,ON,E,7.44p,6.47a
+100.8,Iroquois,0,ON,E,7.55p,6.35a
+106.3,Cardinal,0,ON,E,8.05p,6.26a
+115.4,Prescott,1,ON,E,8.18p,6.12a
+122.1,Maitland,0,ON,E,8.30p,5.58a
+127.1,Brockville,1,ON,E,ar 8.40p,lv 5.50a

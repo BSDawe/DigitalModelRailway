@@ -49,8 +49,9 @@ ab_lines.RAILS.update({'oncn': dict(kind='q', label='Canadian National', own='cn
                        'onlen': dict(kind='E', label='Lake Erie & Northern (CP electric)', own='len', agency='LEN', color='7A1E2C', pfx='LEN'),
                        'onqlf': dict(kind='v', label='Quebec & Levis Ferry Co.', own='cnfy', agency='QLF', color='34506B', pfx='QLF'),   # its own company, not CN (Brendan, 30 Oct 2026); colours: Claude's pick
                        'ontsl': dict(kind='v', label='Traverse du Saint-Laurent', own='cnfy', agency='TSL', color='5A4A7A', pfx='TSL'),   # Compagnie de la Traverse du Saint-Laurent Ltee, Three Rivers (Brendan, 30 Oct 2026)
+                       'ontir': dict(kind='K', label='Thousand Islands Railway', own='tir', agency='TIR', color='7A5A2E', pfx='TIR'),   # Gananoque - Gananoque Jct., separate company in 1948 (Brendan, 31 Oct 2026); colour: Claude's pick
                        'onaj': dict(kind='J', label='Alma & Jonquiere', own='aj', agency='AJ', color='4A6D8C', pfx='AJ')})
-OWN = {'oncn': 'cn', 'oncp': 'cp', 'onr': 'onr', 'acr': 'acr', 'onnyc': 'nyc', 'ondh': 'dh', 'ontem': 'tem', 'oncgt': 'cgt', 'onrs': 'rs', 'onaj': 'aj', 'oncpcn': 'cpcn', 'onnyco': 'nyc', 'onthb': 'thb', 'oncpthb': 'cpthb', 'onlps': 'lps', 'ongrr': 'grr', 'onlen': 'len', 'onqlf': 'cnfy', 'ontsl': 'cnfy'}
+OWN = {'oncn': 'cn', 'oncp': 'cp', 'onr': 'onr', 'acr': 'acr', 'onnyc': 'nyc', 'ondh': 'dh', 'ontem': 'tem', 'oncgt': 'cgt', 'onrs': 'rs', 'onaj': 'aj', 'ontir': 'tir', 'oncpcn': 'cpcn', 'onnyco': 'nyc', 'onthb': 'thb', 'oncpthb': 'cpthb', 'onlps': 'lps', 'ongrr': 'grr', 'onlen': 'len', 'onqlf': 'cnfy', 'ontsl': 'cnfy'}
 # the New York Central and the Delaware & Hudson (CP Table 18) run over the CP from Windsor Station; the NYC leaves it at Adirondack Junction for its
 # own St. Lawrence & Adirondack line, the D&H follows the CP to the end of its track at the border (Brendan, 24 Oct 2026). Both stop at the border for now.
 
@@ -72,6 +73,7 @@ def owner(path):
     if 'Temiscouata Railway' in sub: return 'tem'                       # independent until 1949 (the collection files it under CN)
     if 'Matap' in sub and 'Gulf' in sub: return 'cgt'                   # Canada & Gulf Terminal (filed under CN as the Matapedia and Gulf)
     if 'Alma and Jonquiere' in sub: return 'aj'
+    if 'Thousand Islands Railway' in sub: return 'tir'                   # separate company in 1948 (filed under CN)
     if sub.startswith('Roberval and Saguenay'): return 'rs'
     if 'New York Central' in sub: return 'nyc'                          # the St. Lawrence & Adirondack (Adirondack Junction - Valleyfield - Huntingdon - border)                             # Sudbury - McKerrow - Little Current: CP from 1930
     if 'London and Port Stanley' in sub: return 'lps'                     # electric, City of London (filed under CN)
@@ -108,7 +110,7 @@ def _links():
     for fn in sorted(__import__('glob').glob(os.path.join(HERE, 'traces', 'ontario', 'brendan', '*.geojson'))): out += json.load(open(fn))['features']
     return out
 BOXES = {'onr': (-82.6, -78.4, 43.5, 51.5), 'acr': (-85.2, -82.8, 46.3, 49.9), 'nyc': (-74.4, -73.4, 44.9, 45.6), 'dh': (-74.0, -73.2, 44.95, 45.6),
-         'tem': (-69.7, -68.3, 47.3, 47.95), 'nyco': (-75.8, -74.6, 44.9, 45.5), 'cgt': (-68.4, -67.4, 48.5, 48.95), 'rs': (-71.4, -70.8, 48.25, 48.5), 'aj': (-71.9, -71.5, 48.4, 48.8), 'thb': (-80.5, -78.85, 42.85, 43.75), 'cpthb': (-80.5, -78.85, 42.85, 43.75), 'lps': (-81.35, -81.05, 42.6, 43.05), 'grr': (-80.56, -80.28, 43.33, 43.48), 'len': (-80.42, -80.18, 42.76, 43.38), 'cnfy': (-72.56, -71.15, 46.32, 46.83)}   # the small railways' graphs: their own part of the map only
+         'tem': (-69.7, -68.3, 47.3, 47.95), 'nyco': (-75.8, -74.6, 44.9, 45.5), 'cgt': (-68.4, -67.4, 48.5, 48.95), 'rs': (-71.4, -70.8, 48.25, 48.5), 'tir': (-76.25, -76.10, 44.30, 44.40), 'aj': (-71.9, -71.5, 48.4, 48.8), 'thb': (-80.5, -78.85, 42.85, 43.75), 'cpthb': (-80.5, -78.85, 42.85, 43.75), 'lps': (-81.35, -81.05, 42.6, 43.05), 'grr': (-80.56, -80.28, 43.33, 43.48), 'len': (-80.42, -80.18, 42.76, 43.38), 'cnfy': (-72.56, -71.15, 46.32, 46.83)}   # the small railways' graphs: their own part of the map only
 def _graph(me):
     """the track graph for one railway. Every piece goes in as network-like track ('n': its ends tie to track within 150 m) rather than as a backup
     ('b': every point tied to track beside it), and other railways' sidings and yards are left out: the full collections as backups made graphs of
@@ -300,6 +302,7 @@ SHARED = {('onr', 'toronto union'): 'TORONTO_UNION', ('oncn', 'toronto union'): 
           ('oncn', 'farnham'): 'CP_FARNHAM',   # CN Table 72: Farnham Union Station; the trains leave Iberville by the CP (30 Oct 2026)
           ('ondh', 'delson'): 'CP_DELSON',   # the D&H (Napierville Junction Ry.) trains at the CP Delson station
           ('oncn', 'sunnyside'): 'CP_SUNNYSIDE',   # one Sunnyside station, CN Table 79 and the CP trains over the Lake Shore (CP Table 56)
+          ('ontir', 'gananoque junction'): 'CN_GANANOQUE_JUNCTION',   # the TIR at the CN station (over the CN from Thousand Islands Jct.; Brendan)
           ('oncn', 'don'): 'CP_DON',                                       # Don (Queen St. East): one station, CN Table 122 and CP Table 50
           ('onthb', 'toronto union'): 'TORONTO_UNION', ('oncpthb', 'toronto union'): 'TORONTO_UNION', ('onthb', 'toronto'): 'TORONTO_UNION', ('oncpthb', 'toronto'): 'TORONTO_UNION',
           ('onthb', 'hamilton'): 'THB_HAMILTON', ('oncpthb', 'hamilton'): 'THB_HAMILTON', ('oncp', 'hamilton'): 'THB_HAMILTON',   # Hunter Street: CP and TH&B trains

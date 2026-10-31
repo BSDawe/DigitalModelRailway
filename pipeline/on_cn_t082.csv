@@ -1,0 +1,70 @@
+# Canadian National, Table 82: Montreal (Central / Bonaventure Station) - Coteau - Cornwall - Brockville - Kingston - Belleville - Toronto (Union Station), CN - CP pool trains. Source: Official Guide, April 25, 1948, CN Table 82 (Brendan, 31 Oct 2026; private scans og1948_cnq/). EASTERN TIME.
+# Miles as printed . NOT ENTERED (already built from the CP tables): pool 15 and 6 (Windsor Station over the CN from Dorval, on_cpcn_t049.csv),
+# 21 and 22 (via Smiths Falls and Belleville on CP lines). Ottawa connections (by Coteau, Table 75; Ottawa - Brockville), Valleyfield (Table 60a) and the Prescott - Ogdensburg ferry: in the notes.
+# Replaces on_cn_t061c.csv (5, 14, 18, 19, 78 Montreal - Coteau only) and on_cnpool_t049.csv (pool trains held from CP Table 49). Gananoque Junction: Thousand Islands Railway connections (on_tir_t082.csv).
+# Signs: * daily; dagger ex Sun; double dagger ex Sat; pilcrow ex Mon; section Sun only; e stops Mon Wed Fri only; f flag; i stops to leave from beyond Sunnyside; j stops Tue Thu Sat only; k Sat only; m daily ex Sun, stops for passengers from Danforth and beyond; n stops to take for Belleville and beyond; r stops to take or leave from Danforth and beyond; s stops Sunday; t stops to leave from Belleville and beyond; v stops to take for Montreal and beyond; y stops to leave from or take for Kingston and beyond; z stops to leave from Toronto and beyond; psi daily ex Sat and Sun; check: stops to leave revenue passengers; triangle: stops to discharge from Montreal; bullet Monday only; circle-dot: on Sunday stops to take for Montreal. Conditional stops entered as flag stops (the day-limited e, j, s as flag stops on all days).
+#train col=No77 num=77 dir=down days="Sun,Tue,Thu" kind=passenger note="Sunday, Tuesday and Thursday, May 30 to Sept. 19: Montreal 8.50 a.m. to Prescott 11.40 a.m. (arrives Prescott Wharfs)."
+#train col=No17 num=17 dir=down days=daily kind=passenger name="The Inter-City Limited" note="The Inter-City Limited (pool train between Montreal and Toronto only), daily: Montreal 10.59 p.m. to Toronto 7.15 a.m."
+#train col=No19 num=19 dir=down days=daily kind=passenger note="Daily: Montreal 8.55 p.m. to Toronto 6.30 a.m. (Ottawa and Valleyfield connections at Coteau: Table 75 / 60a). Gananoque: by the Thousand Islands Railway (on_tir_t082.csv)."
+#train col=P5 num=5 dir=down days=daily kind=passenger name="The La Salle" note="The La Salle, pool train (Montreal - Toronto), daily: Montreal 9.15 a.m. to Toronto 5.25 p.m. (Ottawa section by No. 48 to Coteau; Ottawa - Brockville connection 9.20 a.m.). Gananoque: by the Thousand Islands Railway (on_tir_t082.csv)."
+#train col=P9 num=9 dir=down days="Mon,Tue,Wed,Thu,Fri" kind=passenger note="Pool train, daily except Saturday and Sunday: Belleville 4.50 p.m. to Toronto 7.55 p.m."
+#train col=P109 num=109 dir=down days=Sun kind=passenger note="Pool train, Sunday only: Belleville 6.30 p.m. to Toronto 9.05 p.m."
+#train col=M445 num=445 dir=down days="Mon,Tue,Wed,Thu,Fri,Sat" kind=mixed note="Mixed, daily except Sunday (Belleville daily except Monday, after midnight): from Ottawa (Bank St.) 6.00 p.m. and Forfar (on_cn_t081b.csv); Napanee 11.20 p.m. to Belleville 12.15 a.m."
+#train col=P14 num=14 dir=up days=daily kind=passenger name="The International Limited" note="The International Limited, pool train (Toronto - Montreal), daily: Toronto 9.15 a.m. to Montreal 5.45 p.m. (Brockville - Ottawa 2.55 - 5.35 p.m., ex Sun; Ottawa by Coteau 6.55 p.m.). Gananoque: by the Thousand Islands Railway (on_tir_t082.csv)."
+#train col=P10 num=10 dir=up days="Mon,Tue,Wed,Thu,Fri,Sat" kind=passenger note="Pool train, daily except Sunday: Toronto 12.35 p.m. to Belleville 3.40 p.m."
+#train col=No18 num=18 dir=up days="Mon,Tue,Wed,Thu,Fri,Sat" kind=passenger note="Daily except Sunday: Toronto 8.45 p.m. to Montreal 6.30 a.m. (Ottawa 12.45 p.m. via Coteau). Gananoque: by the Thousand Islands Railway (on_tir_t082.csv)."
+#train col=No118 num=118 dir=up days=Sun kind=passenger note="Sunday only: Toronto 9.30 p.m. to Brockville 3.05 a.m. (Monday), on as No. 18 to Montreal 6.30 a.m. Gananoque: by the Thousand Islands Railway (on_tir_t082.csv)."
+#train col=P16 num=16 dir=up days=daily kind=passenger name="The Maple Leaf" note="The Maple Leaf, pool train (Toronto - Montreal), daily: Toronto 11.30 p.m. to Montreal 7.30 a.m. (Ottawa 7.45 a.m. ex Sun via Coteau)."
+#train col=No78 num=78 dir=up days="Sun,Tue,Thu" kind=passenger note="Sunday, Tuesday and Thursday, May 30 to Sept. 19: Brockville 6.00 p.m. to Montreal 9.20 p.m. Pointe Claire 8.43 from Table 61."
+#train col=M446 num=446 dir=up days="Mon,Tue,Wed,Thu,Fri,Sat" kind=mixed note="Mixed, daily except Sunday: Belleville 11.00 p.m. to Napanee 12.05 a.m., on by Forfar to Ottawa (Bank St.) 5.00 a.m. (on_cn_t081b.csv)."
+mile,station,principal,prov,tz,No77,No17,No19,P5,P9,P109,M445,P14,P10,No18,No118,P16,No78,M446
+0.0,Montreal (Central Station),1,QC,E,lv 8.50a,lv 10.59p,lv 8.55p,lv 9.15a,,,,ar 5.45p,,ar 6.30a,ar 6.30a,ar 7.30a,ar 9.20p,
+9.4,Lachine,0,QC,E,,11.21p,f9.22p,f9.41a,,,,f5.15p,,f5.58a,f5.58a,f7.00a,8.50p,
+16.2,Pointe Claire,0,QC,E,,,,,,,,,,,,,8.43p,
+22.3,Ste. Anne de Bellevue,1,QC,E,,11.37p,9.38p,f9.57a,,,,f4.59p,,5.36a,5.36a,f6.32a,8.34p,
+26.0,Vaudreuil (Dorion),1,QC,E,,,,,,,,,,~f5.31a,~f5.31a,,8.29p,
+30.7,Cedars-Cedres,0,QC,E,,,,,,,,,,,,,8.21p,
+32.8,St. Dominique,0,QC,E,,,,,,,,,,,,,f8.13p,
+36.3,Wilsonvale,0,QC,E,,,,,,,,,,,,,8.08p,
+39.4,Coteau,1,QC,E,,f11.59p,10.00p,10.18a,,,,4.38p,,5.12a,5.12a,f6.09a,8.02p,
+41.3,St. Zotique,0,QC,E,,,,,,,,,,,,,f7.59p,
+44.9,River Beaudette,0,QC,E,,,,,,,,,,,,,7.54p,
+50.1,Bainsville,0,ON,E,,,,,,,,,,,,,f7.47p,
+55.5,Lancaster,0,ON,E,,,f10.18p,,,,,,,~f4.54a,~f4.54a,,7.40p,
+61.1,Summerstown,0,ON,E,,,,,,,,,,,,,f7.31p,
+69.2,Cornwall,1,ON,E,10.32a,12.37a,10.39p,10.52a,,,,4.06p,,4.37a,4.37a,5.36a,7.20p,
+74.0,Mille Roches,0,ON,E,,,,,,,,,,,,,f7.10p,
+75.3,Moulinette,0,ON,E,,,,,,,,,,,,,f7.07p,
+78.8,Wales,0,ON,E,,,,,,,,,,,,,f7.01p,
+83.2,Farran's Point,0,ON,E,,,,,,,,,,,,,f6.54p,
+85.7,Aultsville,0,ON,E,,,,,,,,,,,,,f6.50p,
+94.1,Morrisburg,0,ON,E,,,11.09p,11.19a,,,,3.33p,,~f4.06a,~f4.06a,,6.39p,
+100.8,Iroquois,0,ON,E,,,f11.17p,~f11.28a,,,,~f3.25p,,,,,f6.31p,
+106.3,Cardinal,0,ON,E,,,~f11.26p,~f11.35a,,,,~f3.18p,,,,,f6.25p,
+115.4,Prescott,1,ON,E,ar 11.40a,,11.42p,11.47a,,,,3.07p,,3.39a,3.39a,f4.44a,6.14p,
+122.1,Maitland,0,ON,E,,,,,,,,,,,,,f6.07p,
+127.1,Brockville,1,ON,E,,ar 1.50a / lv 2.00a,ar 12.04a / lv 12.20a,ar 12.05p / lv 12.15p,,,,ar 2.40p / lv 2.50p,,ar 3.05a / lv 3.20a,ar 3.05a / lv 3.20a,ar 4.15a / lv 4.25a,lv 6.00p,
+139.8,Mallorytown,0,ON,E,,,12.42a,f12.33p,,,,f2.18p,,2.38a,2.40a,,,
+148.1,Landsdowne,0,ON,E,,,12.54a,f12.44p,,,,f2.08p,,2.23a,2.30a,,,
+155.4,Gananoque Junction,1,ON,E,,,1.08a,12.55p,,,,1.57p,,2.07a,2.19a,,,
+174.5,Kingston,1,ON,E,,3.10a,1.40a,1.25p,,,,1.32p,,1.33a,1.49a,3.16a,,
+181.9,Collin's Bay,0,ON,E,,,,,,,,,,,,,,
+189.6,Ernestown,0,ON,E,,,,,,,,,,,,,,
+200.4,Napanee,1,ON,E,,,2.18a,1.57p,,,ar 11.15p / lv 11.20p,12.56p,,12.55a,1.10a,f2.38a,,ar 11.59p / lv 12.05a
+208.6,Marysville,0,ON,E,,,,,,,,,,,,,,
+222.2,Belleville,1,ON,E,,4.25a,3.10a,2.40p,lv 4.50p,lv 6.30p,ar 12.15a,12.20p,ar 3.40p,12.10a,12.35a,2.02a,,lv 11.00p
+234.3,Trenton Junction,1,ON,E,,,3.34a,3.00p,5.10p,6.47p,,11.59a,3.23p,11.33p,12.05a,,,
+243.5,Brighton,0,ON,E,,,3.48a,3.14p,5.22p,6.59p,,11.44a,3.08p,11.12p,f11.51p,,,
+251.1,Colborne,0,ON,E,,,3.59a,,5.32p,7.09p,,11.33a,2.58p,,f11.41p,,,
+257.6,Grafton,0,ON,E,,,,,5.40p,7.17p,,,2.45p,,,,,
+265.5,Cobourg,1,ON,E,,f5.20a,4.28a,3.42p,5.54p,7.27p,,11.11a,2.36p,10.45p,11.23p,f1.09a,,
+272.3,Port Hope,1,ON,E,,f5.31a,4.42a,3.55p,6.05p,7.37p,,11.00a,2.21p,10.30p,11.10p,f12.58a,,
+287.9,Newcastle,0,ON,E,,,,,6.23p,7.55p,,10.38a,1.56p,,10.49p,,,
+292.3,Bowmanville,0,ON,E,,,5.12a,4.21p,6.33p,8.02p,,10.29a,1.48p,10.03p,10.42p,,,
+302.0,Oshawa,1,ON,E,,6.14a,5.32a,4.36p,6.48p,8.15p,,10.13a,1.33p,9.45p,10.27p,12.25a,,
+306.5,Whitby,0,ON,E,,,f5.40a,4.44p,7.00p,8.22p,,10.02a,1.23p,9.34p,10.15p,,,
+313.0,Pickering,0,ON,E,,,,,7.11p,8.30p,,,1.12p,,,,,
+319.1,Port Union,0,ON,E,,,,,f7.20p,,,,f1.04p,,,,,
+326.5,Scarboro,0,ON,E,,,f6.10a,,f7.35p,f8.47p,,,f12.55p,,,,,
+330.1,Danforth,0,ON,E,,7.01a,6.18a,5.14p,7.43p,8.54p,,9.32a,12.48p,8.59p,9.45p,11.45p,,
+335.4,Toronto (Union Station),1,ON,E,,ar 7.15a,ar 6.30a,ar 5.25p,ar 7.55p,ar 9.05p,,lv 9.15a,lv 12.35p,lv 8.45p,lv 9.30p,lv 11.30p,,
