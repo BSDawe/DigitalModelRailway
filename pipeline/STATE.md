@@ -2084,3 +2084,9 @@ Stations of different railways within 250 m (70 pairs; script: same check over v
   Aultsville - Morrisburg are drawn as straight estimates. Mille Roches, Moulinette, Cardinal have no points (by mileage). Port Hope - Newcastle traces 17.6 mi for 15.6
   printed: CHECK the route there.
 - Kingston (Brendan): the 1948 station is at 44.25389, -76.48477 (the collection's point, CN_KINGSTON, used by the pool and CN trains); the later VIA station further west did not exist.
+- (Version 108, Brendan) Pre-Seaway main line: CN Cornwall = the collection's '1st Cornwall station', Morrisburg = '1st Morrisburg station', Cardinal = Cardinal/Edwardsburg
+  (hand points; Iroquois by mileage, its point is the relocated town's). CN Tables 82 / 82b and the CP pool trains 15 / 6 (on_cpcn_t049) now run on the old line
+  Cornwall - Cardinal. Aultsville - Morrisburg stays a straight estimate (the collection's old-line trace is very coarse there). St. Catharines (Great Western
+  station; the other point was the Welland Railway's) and Niagara Falls, Ont. (GW station) now hand points; Niagara Falls - boundary 0.2 mi straight (the GW
+  main line ends at the station).
+
