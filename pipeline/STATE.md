@@ -1915,6 +1915,8 @@ Stations of different railways within 250 m (70 pairs; script: same check over v
   (Gananoque -> Junction timed to arrive before the train; Junction -> Gananoque after it), running time estimated (about 15 min, no times printed). Track: the
   collection's 'Thousand Islands Railway' main line (147 points); the collection's Gananoque Junction station point is on the Grand Trunk main line (-76.15375,
   44.36873); its TIR "Thousand Island Junction" point (-76.17974, 44.36070) is the TIR end. No built CN train stops at Gananoque Junction yet.
+- Brendan (31 Oct): 15 minutes each way, as a simulated schedule. No train numbers; the engine is named "Susan Push" (show it as the vehicle name, like the
+  ferries' vessel names). Still to settle: one shared Gananoque Junction stop or two (the collection's GT main-line point and the TIR end are about 2 km apart).
 
 ## WAITING: Quebec Railway, Light & Power (Brendan, 30 Oct 2026)
 - In 1948 the CN Murray Bay trains (Table 53: 176 / 175, 173) ran over the Quebec Railway, Light & Power Co. (Quebec - Ste. Anne de Beaupre - Murray Bay) by running
