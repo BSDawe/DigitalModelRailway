@@ -1982,6 +1982,9 @@ Stations of different railways within 250 m (70 pairs; script: same check over v
   90 Mon, 92 Tue - Sat, 94 Sat + Sun, 98 Sun, 100 Tue - Sun.
 - on_cn_t072: Montreal - St. Johns - Iberville - (CP) Farnham - Granby - Waterloo: 606, 608 / 605, 607. Iberville: arrives at the C.V. station, leaves from Iberville
   (C.P.R.) = CP_IBERVILLE; Farnham Union Station = CP_FARNHAM (SHARED). on_cn_t051i DELETED (same trains to Iberville only).
+- (Version 100, Brendan) Table 72 trains rerouted Iberville - Farnham over the CN (the collection's Stanstead, Shefford & Chambly main line St. Jean - Farnham, which
+  also gives St. Johns - Iberville track: no more straight estimate). The two printed Iberville rows (arr. C.V. station 23.9, lve. Iberville 25.3 with "C.P.Ry.")
+  are one stop with arr / lv times; the CP_IBERVILLE sharing and place were removed. Farnham (Union Station) still CP_FARNHAM.
 - Renamed for unique stop ids (the id drops ", Que." and brackets only for matching): St. Boniface (Shawinigan), St. Louis (Richelieu), St. Isidore (Laprairie),
   Hamilton (Montcalm) (Table 63's, was "Hamilton, Que.").
 - Track: links for the old CN main line through Mirabel (Deux Montagnes tie, St. Jerome tie, straight 1.3 km APPROXIMATE) and the Lake St. Louis & Province line

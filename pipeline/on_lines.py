@@ -295,7 +295,7 @@ SHARED = {('onr', 'toronto union'): 'TORONTO_UNION', ('oncn', 'toronto union'): 
           ('ontem', 'riviere du loup'): 'CN_RIVIERE_DU_LOUP', ('oncgt', 'mont joli'): 'CN_MONT_JOLI',   # at the CN stations (the CN trains there are not built yet)
           ('oncp', 'brockville'): 'BROCKVILLE_UNION', ('oncpcn', 'brockville'): 'BROCKVILLE_UNION', ('oncn', 'brockville'): 'BROCKVILLE_UNION',   # Brockville Union Station (Brendan)
           ('oncp', 'levis'): 'LEVIS', ('oncn', 'levis'): 'LEVIS',          # one Levis station for CN and CP (Quebec Central; Brendan, 25 Oct 2026)                          # one Palais Station (CP Table 33 and CN Table 38)                             # one station at Cochrane (CN Table 38 and the ONR)
-          ('oncn', 'farnham'): 'CP_FARNHAM', ('oncn', 'iberville c p r'): 'CP_IBERVILLE',   # CN Table 72: Farnham Union Station; the trains leave Iberville by the CP (30 Oct 2026)
+          ('oncn', 'farnham'): 'CP_FARNHAM',   # CN Table 72: Farnham Union Station; the trains leave Iberville by the CP (30 Oct 2026)
           ('ondh', 'delson'): 'CP_DELSON',   # the D&H (Napierville Junction Ry.) trains at the CP Delson station
           ('oncn', 'don'): 'CP_DON',                                       # Don (Queen St. East): one station, CN Table 122 and CP Table 50
           ('onthb', 'toronto union'): 'TORONTO_UNION', ('oncpthb', 'toronto union'): 'TORONTO_UNION', ('onthb', 'toronto'): 'TORONTO_UNION', ('oncpthb', 'toronto'): 'TORONTO_UNION',
