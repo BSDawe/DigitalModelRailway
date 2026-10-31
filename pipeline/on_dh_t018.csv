@@ -1,15 +1,21 @@
 # Delaware & Hudson trains in CP Table 18 (Montreal - Albany - New York), on the map from Windsor Station over the CP to the end of
 # CP track at the border (Brendan, 24 Oct 2026). Canadian Pacific timetable, 1948, Table 18 (Montreal - New York). Eastern time.
-# The border times (~) are not printed: estimated by mileage between Montreal West and Troy (or Albany).
+# The border times (~) are not printed: estimated from the Rouses Point times in the Napierville Junction Railway table (Official Guide, April 25, 1948; Brendan, 30 Oct 2026).
 # The whole run is in on_dhfull_t018.csv.
 #train col=No10 num=10 dir=down days=daily kind=passenger to="New York" note="Sleeping cars and reclining-seat coach, Montreal - New York."
 #train col=No8 num=8 dir=down days=daily kind=passenger to="New York" note="Through coach and sleeping car, Montreal - New York."
 #train col=No34 num=34 dir=down days=daily kind=passenger to="New York" note="Air-conditioned through coach and dining car, Montreal - New York."
-#train col=No37 num=37 dir=up days=daily kind=passenger from="New York" note="Air-conditioned through coach and dining car, New York - Montreal. Times effective June 6 (until June 5: New York 9.00 a.m., Montreal 7.10 p.m.)."
+#train col=No35 num=35 dir=up days=daily kind=passenger from="New York" note="Air-conditioned through coach and dining car, New York - Montreal. No. 35 from June 6 (NJR table; No. 37 ran until June 5: Rouses Point 5.48, Montreal 7.10 p.m.). St. Edouard, St. Mathieu: c, stop on signal Sundays (flag stops)."
 #train col=No7 num=7 dir=up days=daily kind=passenger from="New York" note="Through coach and sleeping car, New York - Montreal."
 #train col=No9 num=9 dir=up days=daily kind=passenger from="New York" note="Sleeping cars and reclining-seat coach, New York - Montreal."
-mile,station,principal,prov,tz,No10,No8,No34,No37,No7,No9
+# Delson - Lacolle (Napierville Junction Railway, a D&H subsidiary; Brendan, 30 Oct 2026): stations and times from the NJR table in the Official Guide; miles measured along the collection track from CP Delson (14.5).
+mile,station,principal,prov,tz,No10,No8,No34,No35,No7,No9
 0.0,Montreal (Windsor Station),1,QC,E,lv 8.50p,lv 7.15p,lv 9.10a,ar 6.35p,ar 6.55a,ar 7.30a
 2.0,Westmount,0,QC,E,8.57p,7.21p,9.16a,6.27p,6.47a,7.22a
 5.0,Montreal West,0,QC,E,9.04p,7.27p,9.22a,6.20p,6.40a,7.15a
-41.8,"International Boundary (D&H, to Rouses Point)",1,QC,E,~ar 9.59p,~ar 8.35p,~ar 10.24a,~lv 5.18p,~lv 5.21a,~lv 6.18a
+14.5,Delson,0,QC,E,,7.47p,,,6.20a,
+18.7,St. Mathieu,0,QC,E,,7.55p,f9.45a,f5.53p,6.11a,
+23.1,St. Edouard,0,QC,E,,8.04p,f9.51a,f5.46p,6.03a,
+29.2,Napierville,0,QC,E,,8.14p,9.59a,5.38p,5.53a,
+36.8,Lacolle,0,QC,E,,8.28p,10.09a,5.27p,5.41a,
+41.8,"International Boundary (D&H, to Rouses Point)",1,QC,E,~ar 10.02p,~ar 8.35p,~ar 10.16a,~lv 5.15p,~lv 5.30a,~lv 6.10a

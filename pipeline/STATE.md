@@ -1988,3 +1988,11 @@ Stations of different railways within 250 m (70 pairs; script: same check over v
   St. Isidore Jn. - Hemmingford (the collection piece was dropped by the abandonment filter). Hand points (APPROXIMATE): CN Sorel (end of the Montreal - Sorel main),
   St. Isidore Junction, Lac Remi. Aliases: CN Shawinigan Falls = the collection's Shawinigan; Garneau = Garneau Junction.
 - Open: CN and CP stations at Joliette, Shawinigan Falls, Garneau, St. Jerome, Waterloo, Granby kept separate (ask if any were shared).
+
+## Version 97 (30 October 2026): Napierville Junction Railway (D&H)
+- Brendan: the collection's CP Lacolle subdivision (Delson - Lacolle - Rouses Point) was in 1948 the Napierville Junction Railway, a Delaware & Hudson subsidiary.
+  Link 'Napierville Junction Railway, Delson - Rouses Point (boundary)' (own dh, replaces the collection piece): drawn in D&H colour.
+- NJR table (Official Guide, April 25, 1948; scan p1121_njr.png): on_dh_t018 now has St. Mathieu, St. Edouard, Napierville, Lacolle and CP Delson (shared CP_DELSON)
+  with the NJR times; boundary times from the Rouses Point times (No. 34's had been estimated too late). No. 37 renamed No. 35: the NJR table shows No. 35 from
+  June 6 with the times in the file (No. 37 last ran June 5). Miles Delson - boundary measured along the collection track. on_dhfull_t018 (held, not built)
+  still says No. 37.
