@@ -2041,3 +2041,6 @@ Stations of different railways within 250 m (70 pairs; script: same check over v
   - Calumet Beach run printed in No. 85's column. St. Eustache-sur-le-Lac = the collection's "St. Eustache (Junction)" station (Deux-Montagnes); Calumet Beach placed
   at Pointe-Calumet on the collection's "Pointe Calumet gravel pits spur" (APPROXIMATE, by the printed 5.6 mi).
 - on_cn_t070: Mount Royal, Val Royal, Bigras Island, Laval sur le Lac, St. Eustache-sur-le-Lac rows added from Table 77 for 91, 92, 100.
+- (Version 103, Brendan) Track gap on the tunnel line between Monklands and the Vertu wye: a long straight route stretch straddling the start of a line's own
+  (not-shared) segment took the 'none' owner of its midpoint and went undrawn. page_template.html now cuts each route stretch at segment boundaries before
+  splitting the track into owner runs (page only; ab_lines' own 'drawn' bookkeeping for later lines still works point by point: to fix if it bites).

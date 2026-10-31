@@ -546,10 +546,16 @@ const TRACK = LINES.filter(L => L.mainline && !L.water).map(L => {
   const RR = ROUTES[L.key], runs = [];
   const ownerAt = d => { const s = (L.segments || []).find(s => d >= s.a && d <= s.b); return s ? s.owner + (s.est ? '~' : '') : L.owner; };   // ~: a straight-line estimate
   let cur = null;                                                 // each stretch between two points takes the owner at its middle (a long straight
+  const cuts = [...new Set((L.segments || []).flatMap(s => [s.a, s.b]))].sort((a, b) => a - b);
   for (let i = 1; i < RR.pts.length; i++) {                       // stretch of track has no points between its ends)
-    const p = RR.pts[i - 1], q = RR.pts[i], o = ownerAt((p.d + q.d) / 2);
-    if (!cur || cur.owner !== o) { cur = { owner: o, pts: [p] }; runs.push(cur); }
-    cur.pts.push(q);
+    const P0 = RR.pts[i - 1], Q0 = RR.pts[i], sub = [P0];          // a long straight stretch is cut where a segment begins or ends (30 Oct 2026:
+    for (const c of cuts) if (c > P0.d && c < Q0.d) { const f = (c - P0.d) / (Q0.d - P0.d); sub.push({ ...P0, x: P0.x + (Q0.x - P0.x) * f, y: P0.y + (Q0.y - P0.y) * f, d: c }); }   // the tunnel line by Vertu went undrawn)
+    sub.push(Q0);
+    for (let j = 1; j < sub.length; j++) {
+      const p = sub[j - 1], q = sub[j], o = ownerAt((p.d + q.d) / 2);
+      if (!cur || cur.owner !== o) { cur = { owner: o, pts: [p] }; runs.push(cur); }
+      cur.pts.push(q);
+    }
   }
   for (const r of runs) { r.est = r.owner.endsWith('~'); r.owner = r.owner.replace('~', ''); r.pts = r.pts.filter(Boolean); if (r.owner !== 'none' && r.pts.length > 1) r.lods = pieces(r.pts); }
   return { L, runs };
