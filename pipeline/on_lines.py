@@ -183,7 +183,7 @@ HAND = {('thb', 'toronto'): _TU, ('cpthb', 'toronto'): _TU, ('thb', 'hamilton'):
         ('cn', 'sorel'): (-73.113775, 46.038944, 'CN Sorel station (Brendan, 30 Oct 2026)'),
         ('cn', 'st isidore junction'): (-73.6402, 45.3455, 'CN St. Isidore Junction: the north end of the collection\'s Lake St. Louis & Province line (Hemmingford branch)'),
         ('cn', 'lac remi'): (-74.7572, 46.0151, 'CN Lac Remi: the end of the collection\'s St. Raymond subdivision (Montfort line)'),
-        ('cn', 'trenton junction'): (-77.578233, 44.09969, 'CN Trenton Junction, where the main-line trains called (Trenton station is off the main line): Brendan\'s point, on the collection track (31 Oct 2026)'),
+        ('cn', 'trenton'): (-77.578233, 44.09969, 'CN Trenton station, off the main line (the main-line trains called at Trenton Junction, the collection\'s point): Brendan\'s point, on the collection track (31 Oct 2026)'),
         ('cn', 'sherbrooke'): (-71.888203, 45.400550, 'CN (Grand Trunk) Sherbrooke station, rue du Dépôt (Brendan, 30 Oct 2026, "about"); the CP station is separate, about 850 m away'),
         ('cn', 'ste rosalie'): (-72.8940748, 45.6399046, 'CN Ste. Rosalie, on the Drummondville line 0.4 mi from the junction (by the printed miles); APPROXIMATE, Claude'),
         ('cn', 'bridge street'): (-73.5515986, 45.4843264, 'CN Bridge Street, Montreal (Pointe St. Charles), on the main line; APPROXIMATE, Claude (the collection\'s Bridge Street is Ottawa\'s)'),
