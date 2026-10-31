@@ -1,0 +1,30 @@
+# Canadian National, Table 90: Toronto - Bayview Jct. - Dundas - Brantford - London, the trains that do not call at Hamilton (James St.). Source: Official Guide, April 25, 1948, CN Table 90 (Brendan, 31 Oct 2026, page 1127; private scans og1948_cnq/). EASTERN TIME.
+# Miles from Toronto, Hamilton (4.8 mi in and out) left out; Bayview Jct. estimated (Aldershot + 2.0).
+# Signs: * daily; dagger ex Sun; double dagger ex Sat (Table 90 Sarnia section: stops to take for west of Port Huron); section Sun only; a Mon Wed Fri; b Tue Thu Sat; d bus connection Hamilton - Dundas (leaves Hamilton 3.45 p.m.); e stops to take passengers only; f flag; i Wed only; k Sat only; o does not stop Sunday; p stops Sat and Sun to leave from Windsor; u stops to leave from west of London; x Fri only; z Sunday only; square: motor train; natural / root / black square: bus connection to and from Petrolia (not entered). Conditional stops entered as flag stops.
+#train col=No75 num=75 dir=down days="Mon,Tue,Wed,Thu,Fri,Sat" kind=passenger note="Daily except Sunday (printed 75-83): Toronto 3.30 p.m. to London 5.50 p.m. by Bayview Jct., not calling at Hamilton (bus from Hamilton 3.45 p.m. to Dundas, d); on to Windsor and Detroit as No. 83."
+#train col=No82 num=82 dir=up days="Mon,Tue,Wed,Thu,Fri,Sat" kind=passenger note="Daily except Sunday: London 7.15 a.m. to Toronto 9.35 a.m. by Bayview Jct., not calling at Hamilton."
+#train col=No20 num=20 dir=up days=daily kind=passenger name="The Ontario Limited" note="The Ontario Limited, daily: (Chicago 9.40 p.m., Port Huron 6.05 a.m., Sarnia 6.25) London 7.35 a.m. to Toronto 10.05 a.m. by Bayview Jct., not calling at Hamilton (Paris: u, stops to leave from west of London)."
+mile,station,principal,prov,tz,No75,No82,No20
+0.0,Toronto (Union Station),1,ON,E,lv 3.30p,ar 9.35a,ar 10.05a
+3.5,Sunnyside,0,ON,E,3.41p,9.24a,9.54a
+6.8,Mimico,0,ON,E,,,
+11.1,Lakeview,0,ON,E,,,
+12.8,Port Credit,0,ON,E,,,
+15.0,Lorne Park,0,ON,E,,,
+16.1,Clarkson's,0,ON,E,,,
+21.4,Oakville,0,ON,E,,,
+25.6,Bronte,0,ON,E,,,
+32.0,Burlington,1,ON,E,,,
+34.9,Aldershot,0,ON,E,,,
+36.9,Bayview,0,ON,E,,,
+41.6,Dundas,0,ON,E,4.24p,,9.09a
+46.5,Copetown,0,ON,E,,,
+50.900000000000006,Lynden,0,ON,E,,,
+59.900000000000006,Brantford,1,ON,E,4.47p,8.19a,8.46a
+67.10000000000001,Paris,1,ON,E,,,f8.34a
+74.7,Princeton,0,ON,E,,,
+86.4,Woodstock,1,ON,E,5.16p,7.47a,8.12a
+91.3,Beachville,0,ON,E,,,
+95.9,Ingersoll,0,ON,E,,,
+105.4,Dorchester,0,ON,E,,,
+115.10000000000001,London,1,ON,E,ar 5.50p,lv 7.15a,lv 7.35a

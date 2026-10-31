@@ -2090,3 +2090,20 @@ Stations of different railways within 250 m (70 pairs; script: same check over v
   station; the other point was the Welland Railway's) and Niagara Falls, Ont. (GW station) now hand points; Niagara Falls - boundary 0.2 mi straight (the GW
   main line ends at the station).
 
+## Version 109 (31 October 2026): CN Tables 90 (Toronto - London - Windsor / Sarnia) and 91 (Trenton - Maynooth); page 1127
+- Scans (Brendan, 31 Oct): page 1127 (Tables 90, 91, 92 header; signs). Script: scratchpad on/t090.py (reads the Table 79 cells; on_cn_t079.csv was trimmed by it: do not rerun).
+- on_cn_t090: Toronto - Hamilton (James St.) - (back out by Bayview Jct.) - Dundas - Brantford - Paris - Woodstock - London, whole trips with Table 79's Toronto - Hamilton
+  stops: down 15 The International Limited, 5 The La Salle, 83 (ex Sun), 183 (Sun), 73 (Sat), 77 (ex Sun), 17 The Inter-City Limited, 9; up 14, 80, 6, 18 (ex Sun), 118 (Sun),
+  16 The Maple Leaf. Their Table 79 columns REMOVED from on_cn_t079 (left there: 101, 85, 79, 81, 89, 187 / 74, 76, 94, 92, 108).
+  on_cn_t090b: 75 (printed 75-83), 82, 20 The Ontario Limited: Toronto - Bayview - Dundas - London, not calling at Hamilton.
+- on_cn_t090w: London - Glencoe - Chatham - Walkerville - Windsor: 105 La Salle, 83, 183, 117 Inter-City, 9 / 10 International, 12 Inter-City, 18, 118, 16 Maple Leaf.
+  Windsor - Detroit (1.6 mi in about 45 min: across the river) NOT built, Detroit times in the notes: ASK Brendan (car ferry or tunnel).
+- on_cn_t090s: London - Strathroy - Wyoming - Sarnia - boundary in the St. Clair Tunnel: 15, 5, 17, motor 605, 621 / 14, 6, 20, motor 606, 620. Petrolia: bus connections
+  (not built); Table 92 (Wyoming - Petrolia) body not in the scans.
+- Trains that split or change number at London (5 / 105, 17 / 117, 75 / 83, 12 / 6, 10 -> via Stratford) are separate trips per section (run-through join to-do).
+- on_cn_t091: Trenton - Trenton Jn. - Marmora - Bannockburn - Ormsby Jn. - Coe Hill - Bancroft - Maynooth mixed: M313 (MWF, Trenton - Bancroft), M315 (Fri), M321 (Wed)
+  Bancroft - Maynooth / M314 (TThS, Bancroft by Coe Hill to Trenton; Coe Hill arrival estimated), M316 (Sat), M320 (Wed). Miles run through the Coe Hill branch and back.
+- Track: the Great Western main line London - Windsor (8 collection pieces) re-added as links (dropped by the abandonment filter; piece 23 London - Chatham is very coarse,
+  trusted); pre-Seaway line Cornwall - Cardinal: the collection's eastbound and westbound pieces replaced by one line (they never met, so Aultsville - Morrisburg was a
+  straight; Brendan: trust the file, it was very straight). Places: Windsor = the GW station at the river; Sarnia station; boundary at the end of the Sarnia branch
+  (APPROXIMATE, 0.3 mi from Sarnia for 1.5 printed); Chatham, Brantford, Marmora by mileage.

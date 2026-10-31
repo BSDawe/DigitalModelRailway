@@ -1,0 +1,22 @@
+# Canadian National, Table 90: London - Komoka - Strathroy - Wyoming - Sarnia - (St. Clair Tunnel to Port Huron, Mich.), to the international boundary. Source: Official Guide, April 25, 1948, CN Table 90 (Brendan, 31 Oct 2026, page 1127; private scans og1948_cnq/). EASTERN TIME.
+# Miles from London (printed from Montreal: London 455.3); the boundary in the St. Clair Tunnel (about 1.5 mi past Sarnia) and its times estimated. Petrolia: bus connections from Wyoming (not trains; not entered). Port Huron - Chicago in the notes.
+# Signs: * daily; dagger ex Sun; double dagger ex Sat (Table 90 Sarnia section: stops to take for west of Port Huron); section Sun only; a Mon Wed Fri; b Tue Thu Sat; d bus connection Hamilton - Dundas (leaves Hamilton 3.45 p.m.); e stops to take passengers only; f flag; i Wed only; k Sat only; o does not stop Sunday; p stops Sat and Sun to leave from Windsor; u stops to leave from west of London; x Fri only; z Sunday only; square: motor train; natural / root / black square: bus connection to and from Petrolia (not entered). Conditional stops entered as flag stops.
+#train col=No15S num=15 dir=down days=daily kind=passenger name="The International Limited" note="The International Limited, daily: London 12.52 a.m. to Sarnia 1.54 a.m., Port Huron 2.16 (lv 2.30) and Chicago 8.00 a.m. Boundary time estimated; Port Huron and the Michigan times in the notes."
+#train col=No5S num=5 dir=down days=daily kind=passenger name="The La Salle" note="The La Salle, Chicago section, daily: London 9.30 p.m. to Sarnia 10.40 p.m., Port Huron 11.02 (lv 11.20), Durand 1.40 and Chicago 7.00 a.m. (Petrolia by bus). Boundary time estimated; Port Huron and the Michigan times in the notes."
+#train col=No605 num=605 dir=down days="Mon,Tue,Wed,Thu,Fri,Sat" kind=motor note="Motor train, daily except Sunday: London 6.15 p.m. to Sarnia 7.45 p.m. (Petrolia by bus from Wyoming)."
+#train col=No621 num=621 dir=down days=daily kind=motor note="Motor train, daily: London 12.20 p.m. to Sarnia 1.55 p.m. (Petrolia by bus from Wyoming)."
+#train col=No17S num=17 dir=down days=daily kind=passenger name="The Inter-City Limited" note="The Inter-City Limited, Chicago section, daily: London 12.05 p.m. to Sarnia 1.10 p.m., Port Huron 1.32 (lv 1.50) and Chicago 8.10 p.m. Strathroy, Watford, Wyoming: stop to take passengers for west of Port Huron. Boundary time estimated; Port Huron and the Michigan times in the notes."
+#train col=No14S num=14 dir=up days=daily kind=passenger name="The International Limited" note="The International Limited, daily: (Chicago 8.00 p.m., Port Huron 4.20 a.m.) Sarnia 4.40 a.m. to London 5.37 a.m., on to Toronto and Montreal. Boundary time estimated; Port Huron and the Michigan times in the notes."
+#train col=No606 num=606 dir=up days=daily kind=motor note="Motor train, daily: Sarnia 5.35 a.m. to London 7.05 a.m. (Petrolia by bus to Wyoming, ex Sun)."
+#train col=No6S num=6 dir=up days=daily kind=passenger name="The Inter-City Limited" note="The Inter-City Limited, Chicago section, daily: (Chicago 11.00 p.m., Port Huron 9.35 a.m.) Sarnia 10.00 a.m. to London 11.40 a.m., on to Toronto as No. 6. Boundary time estimated; Port Huron and the Michigan times in the notes."
+#train col=No620 num=620 dir=up days=daily kind=motor note="Motor train, daily: Sarnia 4.30 p.m. to London 6.05 p.m. (Petrolia by bus to Wyoming)."
+#train col=No20S num=20 dir=up days=daily kind=passenger name="The Ontario Limited" note="The Ontario Limited, daily: (Chicago 9.40 p.m., Port Huron 6.05 a.m.) Sarnia 6.25 a.m. to London 7.25 a.m., on to Toronto. Boundary time estimated; Port Huron and the Michigan times in the notes."
+mile,station,principal,prov,tz,No15S,No5S,No605,No621,No17S,No14S,No606,No6S,No620,No20S
+0.0,London,1,ON,E,lv 12.52a,lv 9.30p,lv 6.15p,lv 12.20p,lv 12.05p,ar 5.37a,ar 7.05a,ar 11.40a,ar 6.05p,ar 7.25a
+4.1,Hyde Park,0,ON,E,,,6.22p,f12.28p,,,f6.57a,,,
+9.9,Komoka,0,ON,E,,,6.30p,12.35p,,,6.48a,f11.25a,5.45p,
+19.9,Strathroy,0,ON,E,,9.53p,6.45p,12.50p,f12.28p,,6.33a,11.00a,5.30p,
+33.2,Watford,0,ON,E,,10.08p,7.07p,1.12p,f12.40p,,6.09a,10.45a,5.08p,
+45.3,Wyoming,1,ON,E,,10.22p,7.27p,1.30p,f12.52p,,5.52a,10.25a,4.50p,
+58.9,Sarnia,1,ON,E,1.54a,10.40p,ar 7.45p,ar 1.55p,1.10p,4.40a,lv 5.35a,10.00a,lv 4.30p,6.25a
+60.4,"International Boundary (St. Clair Tunnel, to Port Huron, Mich.)",0,ON,E,~ar 2.03a,~ar 10.49p,,,~ar 1.19p,~lv 4.29a,,~lv 9.46a,,~lv 6.14a

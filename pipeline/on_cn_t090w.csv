@@ -1,0 +1,31 @@
+# Canadian National, Table 90: London - Glencoe - Chatham - Walkerville - Windsor (for Detroit). Source: Official Guide, April 25, 1948, CN Table 90 (Brendan, 31 Oct 2026, page 1127; private scans og1948_cnq/). EASTERN TIME.
+# Miles as printed (from London). Hyde Park printed with no times on this line. Windsor - Detroit (1.6 mi printed, about 45 minutes: across the Detroit River) not built (ASK Brendan: car ferry or tunnel).
+# Signs: * daily; dagger ex Sun; double dagger ex Sat (Table 90 Sarnia section: stops to take for west of Port Huron); section Sun only; a Mon Wed Fri; b Tue Thu Sat; d bus connection Hamilton - Dundas (leaves Hamilton 3.45 p.m.); e stops to take passengers only; f flag; i Wed only; k Sat only; o does not stop Sunday; p stops Sat and Sun to leave from Windsor; u stops to leave from west of London; x Fri only; z Sunday only; square: motor train; natural / root / black square: bus connection to and from Petrolia (not entered). Conditional stops entered as flag stops.
+#train col=No105 num=105 dir=down days=daily kind=passenger name="The La Salle" note="The La Salle, Detroit section, daily: London 9.25 p.m. to Windsor 11.25 p.m. (Detroit 12.10 a.m.). Windsor - Detroit (1.6 mi, across the river) not built: Detroit times in the notes."
+#train col=No83W num=83 dir=down days="Mon,Tue,Wed,Thu,Fri,Sat" kind=passenger note="Daily except Sunday: (from Toronto as Nos. 83 and 75) London 6.00 p.m. to Windsor 8.50 p.m. (Detroit 9.35 p.m.). Windsor - Detroit (1.6 mi, across the river) not built: Detroit times in the notes."
+#train col=No183W num=183 dir=down days=Sun kind=passenger note="Sunday only: (from Toronto as No. 183) London 5.15 p.m. to Windsor 7.55 p.m. (Detroit 8.35 p.m.). Windsor - Detroit (1.6 mi, across the river) not built: Detroit times in the notes."
+#train col=No117 num=117 dir=down days=daily kind=passenger name="The Inter-City Limited" note="The Inter-City Limited, Detroit section, daily: London 12.08 p.m. to Windsor 2.25 p.m. (Detroit 3.10 p.m.). Windsor - Detroit (1.6 mi, across the river) not built: Detroit times in the notes."
+#train col=No9W num=9 dir=down days=daily kind=passenger note="Daily: (from Toronto) London 4.00 a.m. to Windsor 7.15 a.m. (Detroit 8.05 a.m.). o stops (no stop Sundays) entered as flag stops. Windsor - Detroit (1.6 mi, across the river) not built: Detroit times in the notes."
+#train col=No10 num=10 dir=up days=daily kind=passenger name="The International Limited" note="The International Limited, Detroit section, daily: (Detroit 10.00 p.m.) Windsor 11.05 p.m. to London 1.50 a.m.; on to Toronto via Stratford and Guelph (London 3.40 a.m., Toronto 7.10 a.m.; that table not in hand). Windsor - Detroit (1.6 mi, across the river) not built: Detroit times in the notes."
+#train col=No12 num=12 dir=up days=daily kind=passenger name="The Inter-City Limited" note="The Inter-City Limited, Detroit section, daily: (Detroit 8.55 a.m.) Windsor 9.45 a.m. to London 11.55 a.m., on as No. 6 to Toronto. Windsor - Detroit (1.6 mi, across the river) not built: Detroit times in the notes."
+#train col=No18W num=18 dir=up days="Mon,Tue,Wed,Thu,Fri,Sat" kind=passenger note="Daily except Sunday: (Detroit 12.20 p.m.) Windsor 1.15 p.m. to London 4.15 p.m., on as No. 18 to Toronto. Windsor - Detroit (1.6 mi, across the river) not built: Detroit times in the notes."
+#train col=No118W num=118 dir=up days=Sun kind=passenger note="Sunday only: (Detroit 1.05 p.m.) Windsor 1.45 p.m. to London 4.30 p.m., on as No. 118 to Toronto. Windsor - Detroit (1.6 mi, across the river) not built: Detroit times in the notes."
+#train col=No16W num=16 dir=up days=daily kind=passenger name="The Maple Leaf" note="The Maple Leaf, Detroit section, daily: (Detroit 4.00 p.m.) Windsor 5.00 p.m. to London 7.28 p.m., on to Toronto and Montreal. Windsor - Detroit (1.6 mi, across the river) not built: Detroit times in the notes."
+mile,station,principal,prov,tz,No105,No83W,No183W,No117,No9W,No10,No12,No18W,No118W,No16W
+0.0,London,1,ON,E,lv 9.25p,lv 6.00p,lv 5.15p,lv 12.08p,lv 4.00a,ar 1.50a,ar 11.55a,ar 4.15p,ar 4.30p,ar 7.28p
+10.0,Komoka,0,ON,E,,f6.13p,f5.27p,,4.15a,,,4.00p,4.16p,
+14.7,Mount Brydges,0,ON,E,,6.21p,5.33p,,4.25a,,,3.51p,4.08p,
+20.7,Longwood,0,ON,E,,6.29p,f5.40p,,4.33a,,,3.41p,4.01p,
+25.7,Appin,0,ON,E,,6.36p,5.47p,,4.41a,,,3.32p,3.54p,
+30.4,Glencoe,1,ON,E,9.59p,6.46p,5.55p,12.44p,4.52a,1.10a,11.21a,3.25p,3.47p,6.48p
+36.6,Newbury,0,ON,E,,6.54p,6.03p,,f5.02a,,,3.13p,f3.37p,
+41.7,Bothwell,0,ON,E,,7.03p,6.12p,f12.57p,f5.11a,f12.48a,11.06a,3.04p,3.29p,
+49.2,Thamesville,0,ON,E,,7.13p,6.22p,f1.06p,f5.23a,,f10.57a,2.53p,3.17p,
+55.3,Northwood,0,ON,E,,f7.23p,f6.30p,,f5.32a,,,2.43p,f3.07p,
+64.3,Chatham,1,ON,E,10.35p,7.40p,6.50p,1.30p,5.58a,12.15a,10.39a,2.31p,2.55p,6.05p
+78.0,Jeannette's Creek,0,ON,E,,7.58p,7.08p,,,,,2.05p,f2.33p,
+84.6,Stoney Point,0,ON,E,,8.07p,7.16p,f1.51p,6.26a,,,1.55p,2.23p,
+92.7,Belle River,0,ON,E,,8.19p,7.27p,,6.39a,,,1.44p,f2.12p,
+101.9,Tecumseh,0,ON,E,,8.31p,7.38p,,f6.53a,,,1.32p,f2.01p,
+108.3,Walkerville,0,ON,E,11.18p,8.43p,7.48p,2.18p,7.07a,,9.50a,1.22p,1.52p,5.07p
+109.9,Windsor,1,ON,E,ar 11.25p,ar 8.50p,ar 7.55p,ar 2.25p,ar 7.15a,lv 11.05p,lv 9.45a,lv 1.15p,lv 1.45p,lv 5.00p

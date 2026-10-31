@@ -1,0 +1,43 @@
+# Canadian National, Table 90: Toronto (Union Station) - Oakville - Hamilton (James St.) - Dundas - Brantford - Paris - Woodstock - London. Source: Official Guide, April 25, 1948, CN Table 90 (Brendan, 31 Oct 2026, page 1127; private scans og1948_cnq/). EASTERN TIME.
+# Miles from Toronto (Table 90 prints them from Montreal: Toronto 335.4). Toronto - Hamilton stops and times from Table 79 (the same trains; their Table 79 columns removed from on_cn_t079.csv). Trains beyond Hamilton go back out through Bayview Jct. (printed 2.4 mi from Hamilton).
+# Buffalo / Suspension Bridge connections and the Montreal times in the notes. The trains that do not call at Hamilton (75, 82, 20) are in on_cn_t090b.csv; No. 10 (London - Toronto via Stratford and Guelph) is not in this table.
+# Signs: * daily; dagger ex Sun; double dagger ex Sat (Table 90 Sarnia section: stops to take for west of Port Huron); section Sun only; a Mon Wed Fri; b Tue Thu Sat; d bus connection Hamilton - Dundas (leaves Hamilton 3.45 p.m.); e stops to take passengers only; f flag; i Wed only; k Sat only; o does not stop Sunday; p stops Sat and Sun to leave from Windsor; u stops to leave from west of London; x Fri only; z Sunday only; square: motor train; natural / root / black square: bus connection to and from Petrolia (not entered). Conditional stops entered as flag stops.
+#train col=No15 num=15 dir=down days=daily kind=passenger name="The International Limited" note="The International Limited, daily: (Montreal, Windsor Station, 3.30 p.m.; pool train) Toronto 10.00 p.m. to London 12.47 a.m.; on to Sarnia and Chicago (on_cn_t090s.csv)."
+#train col=No5 num=5 dir=down days=daily kind=passenger name="The La Salle" note="The La Salle, daily: (Montreal 9.15 a.m.) Toronto 6.00 p.m. to London 9.14 p.m.; on to Sarnia and Chicago (No. 5) and to Windsor and Detroit (No. 105)."
+#train col=No83 num=83 dir=down days="Mon,Tue,Wed,Thu,Fri,Sat" kind=passenger note="Daily except Sunday: Toronto 1.35 p.m. to London 5.35 p.m., on to Windsor and Detroit (on_cn_t090w.csv); a section on from Hamilton to Niagara Falls as No. 86."
+#train col=No183 num=183 dir=down days=Sun kind=passenger note="Sunday only: Toronto 1.35 p.m. to London 5.07 p.m., on to Windsor and Detroit; a section on from Hamilton to Niagara Falls as No. 186."
+#train col=No73 num=73 dir=down days=Sat kind=passenger note="Saturday only: Toronto 12.15 p.m. to London 3.00 p.m."
+#train col=No77 num=77 dir=down days="Mon,Tue,Wed,Thu,Fri,Sat" kind=passenger note="Daily except Sunday: (Montreal 8.55 p.m. the night before, ex Sat) Toronto 7.10 a.m. to London 11.00 a.m."
+#train col=No17 num=17 dir=down days=daily kind=passenger name="The Inter-City Limited" note="The Inter-City Limited, daily: (Montreal 10.59 p.m.) Toronto 8.30 a.m. to London 11.42 a.m.; on to Sarnia and Chicago (No. 17) and to Windsor and Detroit (No. 117)."
+#train col=No9 num=9 dir=down days=daily kind=passenger note="Daily: (Montreal, Windsor Station, 3.30 p.m.) Toronto 11.59 p.m. to London 3.30 a.m.; on to Windsor and Detroit."
+#train col=No14 num=14 dir=up days=daily kind=passenger name="The International Limited" note="The International Limited, daily: (Chicago 8.00 p.m., Sarnia, on_cn_t090s.csv) London 5.47 a.m. to Toronto 8.50 a.m., on to Montreal 5.45 p.m. (on_cn_t082.csv)."
+#train col=No80 num=80 dir=up days="Mon,Tue,Wed,Thu,Fri,Sat" kind=passenger note="Daily except Sunday: London 7.20 a.m. to Toronto 10.50 a.m."
+#train col=No6 num=6 dir=up days=daily kind=passenger name="The Inter-City Limited" note="The Inter-City Limited, daily: (Chicago and Sarnia as No. 6; Detroit and Windsor as No. 12) London 12.10 p.m. to Toronto 3.25 p.m., on to Montreal (pool No. 6); joined at Hamilton by No. 95 from Niagara Falls."
+#train col=No18 num=18 dir=up days="Mon,Tue,Wed,Thu,Fri,Sat" kind=passenger note="Daily except Sunday: (Detroit 12.20 p.m.) London 4.25 p.m. to Toronto 8.10 p.m., on to Montreal 6.30 a.m."
+#train col=No118 num=118 dir=up days=Sun kind=passenger note="Sunday only: (Detroit 1.05 p.m.) London 4.40 p.m. to Toronto 8.10 p.m., on to Brockville and Montreal."
+#train col=No16 num=16 dir=up days=daily kind=passenger name="The Maple Leaf" note="The Maple Leaf, daily: (Detroit 4.00 p.m.) London 7.40 p.m. to Toronto 10.40 p.m., on to Montreal 7.30 a.m. (pool No. 16)."
+mile,station,principal,prov,tz,No15,No5,No83,No183,No73,No77,No17,No9,No14,No80,No6,No18,No118,No16
+0.0,Toronto (Union Station),1,ON,E,lv 10.00p,lv 6.00p,lv 1.35p,lv 1.35p,lv 12.15p,lv 7.10a,lv 8.30a,lv 11.59p,ar 8.50a,ar 10.50a,ar 3.25p,ar 8.10p,ar 8.10p,ar 10.40p
+3.5,Sunnyside,0,ON,E,10.11p,6.11p,1.45p,1.44p,12.25p,7.21a,8.41a,12.10a,8.39a,10.39a,3.14p,7.59p,7.59p,10.29p
+6.8,Mimico,0,ON,E,,,1.52p,,,7.27a,,,,,,,,
+11.1,Lakeview,0,ON,E,,,,,,,,,,,,,,
+12.8,Port Credit,0,ON,E,,,2.02p,1.59p,,7.35a,,12.22a,,10.25a,,7.45p,7.45p,
+15.0,Lorne Park,0,ON,E,,,,,,7.39a,,,,,,,,
+16.1,Clarkson's,0,ON,E,,,2.09p,f2.05p,,7.43a,,,,10.20a,,,,
+21.4,Oakville,0,ON,E,,6.31p,2.20p,2.15p,,7.53a,,12.36a,,10.13a,2.50p,7.31p,7.31p,f10.06p
+25.6,Bronte,0,ON,E,,,2.28p,f2.22p,,7.59a,,,,,,,,
+32.0,Burlington,1,ON,E,,,2.40p,2.31p,,8.11a,,,,9.58a,,7.17p,7.17p,
+34.9,Aldershot,0,ON,E,,,,,,8.16a,,,,,,,,
+39.3,Hamilton (James St.),1,ON,E,ar 10.55p / lv 10.58p,ar 6.55p / lv 7.05p,ar 2.57p / lv 3.07p,ar 2.45p / lv 2.55p,ar 1.10p / lv 1.15p,ar 8.30a / lv 8.50a,ar 9.25a / lv 9.32a,ar 1.01a / lv 1.13a,ar 7.45a / lv 7.52a,ar 9.32a / lv 9.43a,ar 2.12p / lv 2.27p,ar 6.49p / lv 7.02p,ar 6.48p / lv 7.02p,ar 9.40p / lv 9.45p
+41.7,Bayview,0,ON,E,,,,,,,,,,,,,,
+46.4,Dundas,0,ON,E,,,3.26p,3.12p,,f9.07a,,,,9.20a,,6.31p,6.30p,
+51.3,Copetown,0,ON,E,,,3.37p,,,,,,,9.13a,,,,
+55.7,Lynden,0,ON,E,,,3.44p,3.29p,,9.23a,,,,9.06a,,6.16p,f6.17p,
+64.7,Brantford,1,ON,E,11.43p,ar 7.48p / lv 7.55p,ar 3.56p / lv 4.03p,3.44p,1.54p,ar 9.34a / lv 9.40a,ar 10.15a / lv 10.20a,ar 1.58a / lv 2.05a,7.05a,8.55a,1.30p,ar 5.55p / lv 6.03p,6.05p,9.00p
+71.9,Paris,1,ON,E,,f8.08p,4.16p,3.56p,,9.53a,10.34a,f2.19a,6.50a,8.39a,1.16p,5.45p,5.50p,8.46p
+79.5,Princeton,0,ON,E,,,4.31p,f4.10p,,f10.04a,,,,8.25a,,5.30p,5.36p,
+91.2,Woodstock,1,ON,E,12.17a,8.34p,4.51p,4.26p,2.25p,10.22a,11.04a,2.50a,6.27a,8.09a,12.52p,5.15p,5.22p,8.21p
+96.1,Beachville,0,ON,E,,,4.58p,f4.32p,,,,,,7.55a,,5.00p,f5.13p,
+100.7,Ingersoll,0,ON,E,,8.49p,5.06p,4.40p,,10.36a,11.18a,3.05a,6.10a,7.48a,12.34p,4.53p,5.06p,8.04p
+110.2,Dorchester,0,ON,E,,,5.18p,4.52p,,,,,,7.35a,,4.39p,4.54p,
+119.9,London,1,ON,E,ar 12.47a,ar 9.14p,ar 5.35p,ar 5.07p,ar 3.00p,ar 11.00a,ar 11.42a,ar 3.30a,lv 5.47a,lv 7.20a,lv 12.10p,lv 4.25p,lv 4.40p,lv 7.40p

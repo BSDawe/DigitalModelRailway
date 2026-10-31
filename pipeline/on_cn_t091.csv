@@ -1,0 +1,27 @@
+# Canadian National, Table 91: Trenton - Trenton Jn. - Marmora - Bannockburn - Ormsby Jn. - (Coe Hill) - Bancroft - Maynooth (mixed). Source: Official Guide, April 25, 1948, CN Table 91 (Brendan, 31 Oct 2026, page 1127; private scans og1948_cnq/). EASTERN TIME.
+# Miles as printed: they run through the Coe Hill branch and back (Ormsby Jn. 66.3, Coe Hill 73.5, Ormsby Jn. 80.7). M313 does not go to Coe Hill (passes Ormsby Jn. twice, no time).
+# Signs: * daily; dagger ex Sun; double dagger ex Sat (Table 90 Sarnia section: stops to take for west of Port Huron); section Sun only; a Mon Wed Fri; b Tue Thu Sat; d bus connection Hamilton - Dundas (leaves Hamilton 3.45 p.m.); e stops to take passengers only; f flag; i Wed only; k Sat only; o does not stop Sunday; p stops Sat and Sun to leave from Windsor; u stops to leave from west of London; x Fri only; z Sunday only; square: motor train; natural / root / black square: bus connection to and from Petrolia (not entered). Conditional stops entered as flag stops.
+#train col=M313 num=313 dir=down days="Mon,Wed,Fri" kind=mixed note="Mixed, Monday, Wednesday and Friday: Trenton 10.15 a.m. to Bancroft 4.40 p.m. (not by Coe Hill)."
+#train col=M315 num=315 dir=down days=Fri kind=mixed note="Mixed, Friday only: Bancroft 5.20 p.m. to Maynooth 6.20 p.m."
+#train col=M321 num=321 dir=down days=Wed kind=mixed note="Mixed, Wednesday only: Bancroft 7.30 a.m. to Maynooth 8.30 a.m."
+#train col=M314 num=314 dir=up days="Tue,Thu,Sat" kind=mixed note="Mixed, Tuesday, Thursday and Saturday: Bancroft 7.30 a.m. by Ormsby Jn. (8.45) to Coe Hill (lv 10.30) and back to Ormsby Jn. (11.10), on to Trenton 4.50 p.m. Coe Hill arrival estimated."
+#train col=M316 num=316 dir=up days=Sat kind=mixed note="Mixed, Saturday only: Maynooth 6.00 a.m. to Bancroft 7.00 a.m. (for No. 314)."
+#train col=M320 num=320 dir=up days=Wed kind=mixed note="Mixed, Wednesday only: Maynooth 2.00 p.m. to Bancroft 3.30 p.m."
+mile,station,principal,prov,tz,M313,M315,M321,M314,M316,M320
+0.0,Trenton,1,ON,E,lv 10.15a,,,ar 4.50p,,
+1.6,Trenton Junction,1,ON,E,10.30a,,,4.40p,,
+7.9,Frankford,0,ON,E,11.20a,,,4.10p,,
+15.4,Anson,0,ON,E,f11.55a,,,f3.35p,,
+25.0,Bonarlaw,0,ON,E,12.25p,,,2.50p,,
+30.4,Marmora,0,ON,E,1.10p,,,2.25p,,
+40.6,Eldorado,0,ON,E,1.50p,,,1.15p,,
+45.6,Bannockburn,0,ON,E,2.10p,,,1.00p,,
+50.0,Millbridge,0,ON,E,f2.25p,,,f12.10p,,
+59.6,Gilmour,0,ON,E,3.00p,,,11.45a,,
+66.3,Ormsby Junction,1,ON,E,~f3.16p,,,11.10a,,
+73.5,Coe Hill,1,ON,E,,,,~ar 9.15a / lv 10.30a,,
+80.7,Ormsby Junction,1,ON,E,~f3.50p,,,8.45a,,
+93.2,Detlor,0,ON,E,4.20p,,,8.00a,,
+100.3,Bancroft,1,ON,E,ar 4.40p,lv 5.20p,lv 7.30a,lv 7.30a,ar 7.00a,ar 3.30p
+103.1,York River,0,ON,E,,,,,,
+116.1,Maynooth,1,ON,E,,ar 6.20p,ar 8.30a,,lv 6.00a,lv 2.00p
