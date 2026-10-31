@@ -11,8 +11,14 @@
 #train col=No94 num=94 dir=up days="Sat,Sun" kind=passenger note="Saturday and Sunday, June 20 to Monday Sept. 6: Lac Remi 2.45 p.m. to Montreal 7.00 p.m. (Laurel: stops on signal Sept. 5 only)."
 #train col=No98 num=98 dir=up days=Sun kind=passenger note="Sunday (not May 23 or Sept. 5; also Mon. May 24, Thu. July 1, Mon. Sept. 6): Lac Remi 3.30 p.m. to Montreal 8.00 p.m."
 #train col=No100 num=100 dir=up days="Tue,Wed,Thu,Fri,Sat,Sun" kind=passenger note="Daily except Monday (also Mon. May 24, June 7, July 1 and Sept. 6): Lac Remi 4.50 p.m. to Montreal 9.20 p.m."
+# Rows Mount Royal, Val Royal, Bigras Island, Laval sur le Lac, St. Eustache-sur-le-Lac added from Table 77 for Nos. 91, 92, 100 (30 Oct 2026; No. 100 at St. Eustache and Bigras Island: printed Sunday only, entered for all its days).
 mile,station,principal,prov,tz,No99,No97,No95,No91,No93,No90,No92,No94,No98,No100
 0.0,Montreal (Central Station),1,QC,E,lv 8.00a,lv 12.10p,lv 1.10p,lv 2.40p,lv 5.20p,ar 8.00a,ar 10.05a,ar 7.00p,ar 8.00p,ar 9.20p
+3.9,Mount Royal,0,QC,E,,,,2.48p,,,9.55a,,,9.10p
+7.3,Val Royal,0,QC,E,,,,3.00p,,,9.45a,,,9.03p
+14.7,Bigras Island,0,QC,E,,,,,,,,,,8.46p
+16.5,Laval sur le Lac,0,QC,E,,,,,,,f9.27a,,,
+17.0,St. Eustache-sur-le-Lac,0,QC,E,,,,3.19p,,,9.25a,,,8.40p
 22.0,Fresniere,0,QC,E,8.53a,,2.02p,3.30p,6.08p,7.12a,9.16a,6.08p,7.06p,8.31p
 38.3,St. Jerome,1,QC,E,9.28a,1.32p,2.35p,4.05p,6.38p,6.42a,8.45a,5.40p,6.35p,8.00p
 47.4,Shawbridge,0,QC,E,f9.48a,1.50p,f2.54p,f4.24p,f6.57p,f6.24a,f8.24a,5.20p,6.14p,7.38p

@@ -2012,3 +2012,32 @@ Stations of different railways within 250 m (70 pairs; script: same check over v
   continuous summer service: two boats (Cite des Trois-Rivieres, 1930 - 1949, and Laviolette, per Brendan's source; the Laviolette's 1948 date not checked), a departure
   from each side every 30 min, 6.00 a.m. - 11.30 p.m. daily, 15-minute crossing (72 crossings; vessel names from the trip notes, shown on the page). Meets 138 (11.30
   boat) and 137 (Three Rivers 4.30 p.m.). Sources: troisrivieresnumerique.ca (Traversier Cite des Trois-Rivieres), patrimoinebecancour.com (La Grand Riviere).
+
+## Version 101 (30 October 2026): the two ferries as their own companies
+- Brendan: neither ferry is a CN service. Quebec - Levis: Quebec & Levis Ferry Co. (rail 'onqlf', agency QLF, file on_qlf_t001.csv); Three Rivers: Compagnie de la
+  Traverse du Saint-Laurent Ltee (rail 'ontsl', agency TSL, file on_tsl_t065.csv). Rail 'oncnfy' and the on_cnfy_* files are gone (both new rails share the 'cnfy'
+  graph). Page: liveries qlf (#34506b, funnel red) and tsl (#5a4a7a, funnel gold), Claude's picks; GTFS route type 4.
+- Quebec - Levis rebuilt from Brendan's company pamphlet (summer): every 20 min 5 a.m. - midnight, every 30 min midnight - 1 a.m., hourly 1 - 5 a.m. Departures from
+  Quebec at :00 / :20 / :40, from Levis at :10 / :30 / :50 (the pattern of every CN-printed ferry time). The CN times 4.20 a.m. (Quebec) and 4.30 a.m. (Levis) put the
+  start of the 20-minute service at about 4.20. Night: Quebec 12.30, 1.00, 2.00, 3.00, 4.00; Levis 12.10, 12.40, 1.40, 2.40, 3.40 (3.40 CN-printed). Crossing 12 min
+  (estimate). 129 crossings a day. Boats: three in the 20-minute service (Quebec :00 -> Levis :12, out of Levis :30 -> Quebec :42, out again at :00: an hour round
+  for each boat), two in the half-hourly hour, one at night. Vessel names not known (not shown).
+
+## Version 102 (30 October 2026): CN page 1124 - Tables 76, 77, 77a, 78, 78a
+- Scans (Brendan, 30 Oct): page 1124 (p1124_*.png). Script: scratchpad on/t076.py.
+- on_cn_t076: Ottawa (Union) - Arnprior - Renfrew - Golden Lake - Barrys Bay - Madawaska - Whitney: 89 (Mon - Sat) / 90 (Mon - Sat, on to Montreal as No. 50), 389 (Sat) / 390
+  (Sun), mixed M219 / M220 (Fri) and M221 / M222 (Tue) Barrys Bay - Whitney. on_cn_t076p: Golden Lake - Pembroke connections printed in the 89 / 90 columns (numbered
+  89 / 90: see the to-do on connecting-train numbers). Rock Lake and Two Rivers printed with no trains.
+- on_cn_t078: Algonquin Park - Scotia - Parry Sound: 139 (MWF, June 28 - Sept. 6) / 140 (TThS, June 26 - Sept. 4) Algonquin Park - Scotia; 264 (MWF, June 28 - Sept. 3)
+  Parry Sound - Scotia; mixed M263 (Sat) Algonquin Park - Scotia - Parry Sound. M264 (Mon, Fri) "will not run June 28 to Sept. 3": not entered. DOUBT: M263 has no such
+  mark and is entered. on_cn_t126g (Algonquin Park sections read from Table 126) DELETED. Link: OA&PS main line without a stray vertex near Edgington (12 km spike).
+  OA&PS Parry Sound / South Parry = the CN stations of Table 122 (same points in the collection).
+- on_cn_t078a: Glen Robertson - Vankleek Hill - Hawkesbury, mixed M217 / M216 (Mon - Sat). Link: Vankleek line tied to the main line at Glen Robertson (273 m).
+- on_cn_t077a: Montreal - Val Royal - St. Eustache-sur-le-Lac - Fresniere - St. Benoit - Grenville - Hawkesbury: 81 (Mon - Fri), 85 (Sat), 83 (Sun) / 82 (Mon - Sat),
+  84 (Sun), with Table 77's suburban stops. Link: Hawkesbury station piece tied to the L'Orignal subdivision (about 380 m). Hawkesbury is one CN station for 77a and 78a.
+- on_cn_t077: Montreal - Mount Royal - Val Royal - St. Eustache-sur-le-Lac - Pine Beach - Roger Beach - St. Joseph du Lac - Calumet Beach: 49 trips, nearly all motor
+  trains; Calumet Beach service June 20 - Sept. 4. Trains whose Calumet part runs on fewer days are entered twice (S = the other days, to St. Eustache only: 359, 361,
+  358, 360, 368). Unnumbered: the "additional trains" (Montreal 5.00 p.m. ex Sun, 8.15 p.m. Sun; St. Eustache 9.20 p.m. Sun) and the Saturday St. Eustache 2.00 p.m.
+  - Calumet Beach run printed in No. 85's column. St. Eustache-sur-le-Lac = the collection's "St. Eustache (Junction)" station (Deux-Montagnes); Calumet Beach placed
+  at Pointe-Calumet on the collection's "Pointe Calumet gravel pits spur" (APPROXIMATE, by the printed 5.6 mi).
+- on_cn_t070: Mount Royal, Val Royal, Bigras Island, Laval sur le Lac, St. Eustache-sur-le-Lac rows added from Table 77 for 91, 92, 100.

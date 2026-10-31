@@ -1,0 +1,26 @@
+# Canadian National, Table 77a: Montreal (Central Station) - St. Eustache-sur-le-Lac - St. Benoit - Grenville - Hawkesbury. Source: Official Guide, April 25, 1948, CN Table 77a (Brendan, 30 Oct 2026, page 1124; private scans og1948_cnq/). EASTERN TIME.
+# Miles as printed; the stops Vertu, Monklands, Ste. Genevieve, Bigras Island from the same trains in Table 77.
+# Signs (page 1124): * daily; dagger ex Sun; section Sun only; a Mon Wed Fri; b Tue Thu Sat; d daily except Sat and Sun; e Tue only; f flag; i Mon - Thu; k Sat only; n runs June 20 - Sept. 6; o Fri only; p daily except Sun and Mon; x Sat only (first trip May 22); z Mon and Fri; black square motor train; sharp: will not run July 1 or Sept. 6; crescent: also runs July 1 and Sept. 6; natural: runs June 27 - Sept. 6; root: May 22 - Sept. 25; circle-dot: from May 25; psi: May 25 - Sept. 24; open square: May 25 - Sept. 24, not on Saturdays June 26 - Sept. 4; colon: also runs on the holidays; diamond: Mondays May 24 and Sept. 6 instead of the Sundays; circle: on July 1 and Sept. 6 from Val Royal only. Holiday signs have no effect in the model week (July 5 - 11).
+#train col=No81 num=81 dir=down days="Mon,Tue,Wed,Thu,Fri" kind=passenger note="Daily except Saturday and Sunday: Montreal 4.10 p.m. to Hawkesbury 6.15 p.m."
+#train col=No85 num=85 dir=down days=Sat kind=passenger note="Saturday only: Montreal 12.50 p.m. to Hawkesbury 3.05 p.m."
+#train col=No83 num=83 dir=down days=Sun kind=passenger note="Sunday only: Montreal 9.00 a.m. to Hawkesbury 11.10 a.m."
+#train col=No82 num=82 dir=up days="Mon,Tue,Wed,Thu,Fri,Sat" kind=passenger note="Daily except Sunday: Hawkesbury 6.05 a.m. to Montreal 8.15 a.m."
+#train col=No84 num=84 dir=up days=Sun kind=passenger note="Sunday (Mondays May 24 and Sept. 6 instead of the Sundays before): Hawkesbury 6.40 p.m. to Montreal 8.45 p.m. (St. Eustache 8.00 p.m.: Table 77 additional trains)."
+mile,station,principal,prov,tz,No81,No85,No83,No82,No84
+0.0,Montreal (Central Station),1,QC,E,lv 4.10p,lv 12.50p,lv 9.00a,ar 8.15a,ar 8.45p
+3.9,Mount Royal,0,QC,E,4.20p,1.00p,9.10a,8.05a,8.35p
+5.4,Vertu,0,QC,E,,f1.03p,f9.13a,7.58a,
+6.8,Monklands,0,QC,E,,f1.06p,f9.16a,,
+7.3,Val Royal,0,QC,E,4.30p,1.12p,9.22a,7.54a,8.25p
+12.8,Ste. Genevieve,0,QC,E,f4.43p,f1.24p,f9.31a,f7.41a,
+14.7,Bigras Island,0,QC,E,f4.48p,f1.28p,9.35a,f7.37a,
+16.5,Laval sur le Lac,0,QC,E,f4.53p,f1.37p,f9.40a,f7.32a,f8.02p
+17.0,St. Eustache-sur-le-Lac,1,QC,E,4.55p,1.40p,9.42a,7.30a,8.00p
+22.0,Fresniere,0,QC,E,5.05p,1.50p,9.54a,7.18a,7.50p
+27.9,St. Benoit,0,QC,E,5.20p,2.05p,10.08a,7.00a,7.36p
+34.9,Lalande,0,QC,E,5.35p,2.20p,10.24a,6.45a,7.20p
+39.7,St. Andrews East,0,QC,E,5.45p,2.32p,10.35a,6.35a,7.10p
+46.6,Cushing,0,QC,E,f5.58p,f2.47p,f10.50a,f6.22a,f6.58p
+50.0,Stonefield,0,QC,E,f6.05p,f2.54p,f10.58a,f6.15a,f6.49p
+53.0,Grenville,0,QC,E,6.10p,3.00p,11.05a,6.10a,6.43p
+54.4,Hawkesbury,1,ON,E,ar 6.15p,ar 3.05p,ar 11.10a,lv 6.05a,lv 6.40p

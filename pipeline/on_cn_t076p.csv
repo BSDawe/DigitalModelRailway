@@ -1,0 +1,10 @@
+# Canadian National, Table 76: Golden Lake - Pembroke, the connections printed in the Nos. 89 and 90 columns. Source: Official Guide, April 25, 1948, CN Table 76 (Brendan, 30 Oct 2026, page 1124; private scans og1948_cnq/). EASTERN TIME.
+# Miles as printed. The trains carry the numbers of the columns they are printed in (the numbering of connecting trains is on the to-do list).
+# Signs (page 1124): * daily; dagger ex Sun; section Sun only; a Mon Wed Fri; b Tue Thu Sat; d daily except Sat and Sun; e Tue only; f flag; i Mon - Thu; k Sat only; n runs June 20 - Sept. 6; o Fri only; p daily except Sun and Mon; x Sat only (first trip May 22); z Mon and Fri; black square motor train; sharp: will not run July 1 or Sept. 6; crescent: also runs July 1 and Sept. 6; natural: runs June 27 - Sept. 6; root: May 22 - Sept. 25; circle-dot: from May 25; psi: May 25 - Sept. 24; open square: May 25 - Sept. 24, not on Saturdays June 26 - Sept. 4; colon: also runs on the holidays; diamond: Mondays May 24 and Sept. 6 instead of the Sundays; circle: on July 1 and Sept. 6 from Val Royal only. Holiday signs have no effect in the model week (July 5 - 11).
+#train col=No89P num=89 dir=down days="Mon,Tue,Wed,Thu,Fri,Sat" kind=passenger note="Daily except Sunday: Golden Lake 10.40 a.m. (from No. 89, Ottawa) to Pembroke 11.25 a.m."
+#train col=No90P num=90 dir=down days="Mon,Tue,Wed,Thu,Fri,Sat" kind=passenger note="Daily except Sunday: Golden Lake 1.20 p.m. (from No. 90, Barrys Bay) to Pembroke 2.35 p.m."
+#train col=No89C num=89 dir=up days="Mon,Tue,Wed,Thu,Fri,Sat" kind=passenger note="Daily except Sunday: Pembroke 9.00 a.m. to Golden Lake 10.00 a.m. (for No. 89 to Barrys Bay)."
+#train col=No90C num=90 dir=up days="Mon,Tue,Wed,Thu,Fri,Sat" kind=passenger note="Daily except Sunday: Pembroke 12.10 p.m. to Golden Lake 12.54 p.m. (for No. 90 to Ottawa)."
+mile,station,principal,prov,tz,No89P,No90P,No89C,No90C
+0.0,Golden Lake,1,ON,E,lv 10.40a,lv 1.20p,ar 10.00a,ar 12.54p
+21.1,Pembroke,1,ON,E,ar 11.25a,ar 2.35p,lv 9.00a,lv 12.10p

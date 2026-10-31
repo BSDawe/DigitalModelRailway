@@ -1,0 +1,11 @@
+# Canadian National, Table 78a: Glen Robertson - Vankleek Hill - Hawkesbury (mixed). Source: Official Guide, April 25, 1948, CN Table 78a (Brendan, 30 Oct 2026, page 1124; private scans og1948_cnq/). EASTERN TIME.
+# Miles as printed.
+# Signs (page 1124): * daily; dagger ex Sun; section Sun only; a Mon Wed Fri; b Tue Thu Sat; d daily except Sat and Sun; e Tue only; f flag; i Mon - Thu; k Sat only; n runs June 20 - Sept. 6; o Fri only; p daily except Sun and Mon; x Sat only (first trip May 22); z Mon and Fri; black square motor train; sharp: will not run July 1 or Sept. 6; crescent: also runs July 1 and Sept. 6; natural: runs June 27 - Sept. 6; root: May 22 - Sept. 25; circle-dot: from May 25; psi: May 25 - Sept. 24; open square: May 25 - Sept. 24, not on Saturdays June 26 - Sept. 4; colon: also runs on the holidays; diamond: Mondays May 24 and Sept. 6 instead of the Sundays; circle: on July 1 and Sept. 6 from Val Royal only. Holiday signs have no effect in the model week (July 5 - 11).
+#train col=M217 num=217 dir=down days="Mon,Tue,Wed,Thu,Fri,Sat" kind=mixed note="Mixed, daily except Sunday: Glen Robertson 11.12 a.m. to Hawkesbury 12.30 p.m."
+#train col=M216 num=216 dir=up days="Mon,Tue,Wed,Thu,Fri,Sat" kind=mixed note="Mixed, daily except Sunday: Hawkesbury 7.35 a.m. to Glen Robertson 9.00 a.m."
+mile,station,principal,prov,tz,M217,M216
+0.0,Glen Robertson,1,ON,E,lv 11.12a,ar 9.00a
+3.6,Glen Sandfield,0,ON,E,11.25a,8.40a
+7.2,Dalkeith,0,ON,E,11.40a,8.25a
+13.7,Vankleek Hill,0,ON,E,12.05p,8.00a
+21.0,Hawkesbury,1,ON,E,ar 12.30p,lv 7.35a

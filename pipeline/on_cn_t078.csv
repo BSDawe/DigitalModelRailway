@@ -1,0 +1,21 @@
+# Canadian National, Table 78: Algonquin Park - Scotia - Parry Sound (with Toronto connections at Scotia, in the notes). Source: Official Guide, April 25, 1948, CN Table 78 (Brendan, 30 Oct 2026, page 1124; private scans og1948_cnq/). EASTERN TIME.
+# Miles as printed (from Algonquin Park). Replaces on_cn_t126g.csv (the Algonquin Park sections read from Table 126; deleted).
+# Signs (page 1124): * daily; dagger ex Sun; section Sun only; a Mon Wed Fri; b Tue Thu Sat; d daily except Sat and Sun; e Tue only; f flag; i Mon - Thu; k Sat only; n runs June 20 - Sept. 6; o Fri only; p daily except Sun and Mon; x Sat only (first trip May 22); z Mon and Fri; black square motor train; sharp: will not run July 1 or Sept. 6; crescent: also runs July 1 and Sept. 6; natural: runs June 27 - Sept. 6; root: May 22 - Sept. 25; circle-dot: from May 25; psi: May 25 - Sept. 24; open square: May 25 - Sept. 24, not on Saturdays June 26 - Sept. 4; colon: also runs on the holidays; diamond: Mondays May 24 and Sept. 6 instead of the Sundays; circle: on July 1 and Sept. 6 from Val Royal only. Holiday signs have no effect in the model week (July 5 - 11).
+#train col=No139 num=139 dir=down days="Mon,Wed,Fri" kind=passenger note="Monday, Wednesday and Friday, June 28 to Sept. 6: Algonquin Park 2.00 p.m. to Scotia 4.10 p.m. (Toronto 9.10 p.m.)."
+#train col=M263 num=263 dir=down days=Sat kind=mixed note="Mixed, Saturday only: Algonquin Park 9.20 a.m. to Scotia 12.40 p.m. (Toronto 6.55 p.m.); Scotia 3.30 p.m. (from Toronto 9.10 a.m.) to Parry Sound 6.35 p.m. DOUBT: the mixed No. 264 is marked will-not-run June 28 to September 3; No. 263 carries no such mark and is entered as running."
+#train col=No140 num=140 dir=up days="Tue,Thu,Sat" kind=passenger note="Tuesday, Thursday and Saturday, June 26 to Sept. 4: (Toronto 11.15 a.m.) Scotia 3.39 p.m. to Algonquin Park 5.50 p.m."
+#train col=No264 num=264 dir=up days="Mon,Wed,Fri" kind=passenger note="Monday, Wednesday and Friday, June 28 to Sept. 3: Parry Sound 6.00 a.m. to Scotia 9.50 a.m. (Toronto 6.55 p.m.). The mixed No. M264 (Parry Sound 8.40 a.m. Mon. and Fri., to Algonquin Park 6.40 p.m.) will not run June 28 to Sept. 3: not entered."
+mile,station,principal,prov,tz,No139,M263,No140,No264
+0.0,Algonquin Park,1,ON,E,lv 2.00p,lv 9.20a,ar 5.50p,
+7.7,Joe Lake,0,ON,E,2.19p,f9.42a,5.27p,
+8.1,Canoe Lake,0,ON,E,2.21p,9.45a,5.25p,
+14.7,Brule Lake,0,ON,E,f2.39p,f10.20a,f5.04p,
+32.0,Ravensworth,0,ON,E,f3.28p,11.20a,f4.22p,
+39.2,Kearney,0,ON,E,3.50p,12.05p,4.04p,
+45.0,Scotia,1,ON,E,ar 4.10p,ar 12.40p / lv 3.30p,lv 3.39p,ar 9.50a
+56.2,Sprucedale,0,ON,E,,4.08p,,9.00a
+59.2,Whitehall,0,ON,E,,4.27p,,8.35a
+74.4,Edgington,0,ON,E,,5.30p,,7.27a
+87.8,Holmur,0,ON,E,,6.10p,,f6.31a
+91.5,South Parry,0,ON,E,,6.22p,,
+94.4,Parry Sound,1,ON,E,,ar 6.35p,,lv 6.00a
