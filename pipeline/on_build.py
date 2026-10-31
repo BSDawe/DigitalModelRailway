@@ -78,7 +78,7 @@ OVER = {'on_cn_t075b': dict(noplace=['Ottawa (Bank Street)']),
         'on_cn_t072': dict(places={'Iberville (C.P.R.)': (-73.239757, 45.311701), 'Farnham': (-72.979017, 45.282024)}),   # the CP stations (Farnham Union Station)
         'on_cn_t059': dict(places={'Richmond': (-72.1482, 45.6651), 'International Boundary (to Norton, Vt.)': (-71.7951269, 45.010647)}),   # Richmond, Que.; the end of the collection's St. Lawrence & Atlantic track at Norton   # Richmond, Que. (the collection also has a Richmond near Ottawa)
         'on_cn_t023': dict(places={'Provincial boundary (N.B., Table 23)': (-68.7317, 47.372)}, noplace=['St. Anselme']),   # St. Anselme: the collection's point is the Quebec Central's   # the end of the Quebec collection's NTR track at the N.B. boundary
-        'on_cnfy_t065': dict(places={'Trois Rivieres (Ferry)': (-72.518, 46.3364), 'Three Rivers (Ferry Wharf)': (-72.5385, 46.3425)}, short='Trois Rivieres ferry', src='Official Guide, April 25, 1948 (CN Table 65, Trois Rivieres (Ferry))'),
+        'on_cnfy_t065': dict(places={'Trois Rivieres (Ferry)': (-72.518, 46.3364), 'Three Rivers (Ferry Wharf)': (-72.538617, 46.340631)}, short='Trois Rivieres ferry', src='Official Guide, April 25, 1948 (CN Table 65, Trois Rivieres (Ferry))'),
         'on_cnfy_t001': dict(places={'Quebec (Ferry Wharf)': (-71.20161491263052, 46.81183142623051)}, short='Quebec – Levis ferry'),   # Brendan, 24 Oct 2026
         'on_thb_t056': dict(places={'International Boundary (Niagara River, to Black Rock, N.Y.)': (-78.9040, 42.9300)}),   # mid-river on the International Railway Bridge (approximate)
         'on_cp_t022s': dict(places={'Stanbridge': (-73.0198692, 45.1161065)}),   # end of the 2.78 mi Stanbridge junction segment (Brendan, 24 Oct 2026)
@@ -118,7 +118,7 @@ if __name__ == '__main__':
         import json as _j
         _vp = os.path.join(HERE, 'viz_data.json'); _vd = _j.load(open(_vp))
         for _L in _vd['lines']:
-            if _L['key'].startswith('oncnfy'): _L.update(water=True, livery='cnss', segments=[]); [t.update(vessel=t.get('vessel') or '') for t in _L['trips']]
+            if _L['key'].startswith('oncnfy'): _L.update(water=True, livery='cnss', segments=[]); [t.update(vessel=t.get('vessel') or (__import__('re').search(r'Vessel: ([^.]+)\.', t.get('note') or '') or [None, ''])[1]) for t in _L['trips']]
         open(_vp, 'w').write(_j.dumps(_vd, separators=(',', ':')))
         _rp = os.path.join(HERE, 'gtfs', 'routes.txt'); _rl = open(_rp).read().split('\n')
         open(_rp, 'w').write('\n'.join((_r.replace(',2,', ',4,', 1) if _r.startswith('ONCNFY') else _r) for _r in _rl))

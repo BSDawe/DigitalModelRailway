@@ -2005,3 +2005,7 @@ Stations of different railways within 250 m (70 pairs; script: same check over v
 - Trois Rivieres ferry BUILT: on_cnfy_t065 (rail oncnfy, drawn as a boat like Quebec - Levis): two crossings, Three Rivers 4.30 p.m. (for No. 137) and to Three
   Rivers 11.45 a.m. (from No. 138), as printed; the landing times and the Three Rivers wharf point (-72.5385, 46.3425) are estimates. Table 65's "Trois Rivieres
   (Ferry)" rows now carry estimated landing times (138 ~ar 11.25 a.m., 137 ~lv 5.05 p.m.). BOXES['cnfy'] widened to take in Three Rivers.
+- (later, Brendan) Three Rivers terminal at his point (46.340631, -72.538617); the ferry is the Compagnie de la Traverse du Saint-Laurent Ltee and is now SIMULATED as
+  continuous summer service: two boats (Cite des Trois-Rivieres, 1930 - 1949, and Laviolette, per Brendan's source; the Laviolette's 1948 date not checked), a departure
+  from each side every 30 min, 6.00 a.m. - 11.30 p.m. daily, 15-minute crossing (72 crossings; vessel names from the trip notes, shown on the page). Meets 138 (11.30
+  boat) and 137 (Three Rivers 4.30 p.m.). Sources: troisrivieresnumerique.ca (Traversier Cite des Trois-Rivieres), patrimoinebecancour.com (La Grand Riviere).
