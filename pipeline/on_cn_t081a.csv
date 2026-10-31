@@ -1,0 +1,9 @@
+# Canadian National, Table 81a: Madoc - Madoc Junction - Belleville (mixed). Source: Official Guide, April 25, 1948, CN Table 81a (Brendan, 30 Oct 2026, page 1125; private scans og1948_cnq/). EASTERN TIME.
+# Miles as printed.
+# Signs (page 1125): * daily; dagger ex Sun; double dagger ex Sat; section Sun only; a Mon Wed Fri; b Tue Thu Sat; e stops to take passengers for beyond Suspension Bridge; f flag; g Tue and Fri; i Wed Thu Sat; k Sat only; t Wed and Sat; v Windsor Station time; x stops for passengers from London and beyond; y through train not via Buffalo (connection at Depew Jct.); z Sun Tue Thu; natural: stops to leave passengers from New York; psi Tue Thu Fri; open square: daily except Sat and Sun; diamond: will not run May 24, July 1, Aug. 2, Sept. 6 (no effect in the model week); M mixed. Conditional stops entered as flag stops.
+#train col=M364 num=364 dir=down days="Tue,Thu,Sat" kind=mixed note="Mixed, Tuesday, Thursday and Saturday: Madoc 12.01 p.m. to Belleville 1.45 p.m."
+#train col=M365 num=365 dir=up days="Tue,Thu,Sat" kind=mixed note="Mixed, Tuesday, Thursday and Saturday: Belleville 9.00 a.m. to Madoc 10.40 a.m."
+mile,station,principal,prov,tz,M364,M365
+0.0,Madoc,1,ON,E,lv 12.01p,ar 10.40a
+14.9,Madoc Junction,0,ON,E,1.09p,9.36a
+27.2,Belleville,1,ON,E,ar 1.45p,lv 9.00a

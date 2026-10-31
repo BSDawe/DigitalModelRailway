@@ -1,0 +1,13 @@
+# Canadian National, Table 81f: Picton - Wellington - Trenton - Trenton Jn. - Belleville (mixed). Source: Official Guide, April 25, 1948, CN Table 81f (Brendan, 30 Oct 2026, page 1125; private scans og1948_cnq/). EASTERN TIME.
+# Miles as printed; Trenton Jn. has no miles printed (32.0 estimated). The train runs in to Trenton and out again to Trenton Jn. on the main line (by the printed times).
+# Signs (page 1125): * daily; dagger ex Sun; double dagger ex Sat; section Sun only; a Mon Wed Fri; b Tue Thu Sat; e stops to take passengers for beyond Suspension Bridge; f flag; g Tue and Fri; i Wed Thu Sat; k Sat only; t Wed and Sat; v Windsor Station time; x stops for passengers from London and beyond; y through train not via Buffalo (connection at Depew Jct.); z Sun Tue Thu; natural: stops to leave passengers from New York; psi Tue Thu Fri; open square: daily except Sat and Sun; diamond: will not run May 24, July 1, Aug. 2, Sept. 6 (no effect in the model week); M mixed. Conditional stops entered as flag stops.
+#train col=M353 num=353 dir=down days="Mon,Wed,Fri" kind=mixed note="Mixed (printed 353-354), Monday, Wednesday and Friday: Picton 12.30 p.m. to Trenton 2.15, Trenton Jn. 2.45 and Belleville 3.20 p.m. (Toronto 7.55 p.m., Montreal 10.15 p.m. by the main-line trains)."
+#train col=M351 num=351 dir=up days="Mon,Wed,Fri" kind=mixed note="Mixed (printed 351-352), Monday, Wednesday and Friday: Belleville 7.00 a.m. to Trenton Jn. 7.35, Trenton 8.30 and Picton 10.50 a.m. (from Toronto 8.45 p.m. and Montreal 10.59 p.m. the night before)."
+mile,station,principal,prov,tz,M353,M351
+0.0,Picton,1,ON,E,lv 12.30p,ar 10.50a
+4.3,Bloomfield,0,ON,E,12.50p,10.35a
+10.9,Wellington,0,ON,E,1.15p,10.00a
+21.2,Consecon,0,ON,E,1.50p,9.05a
+30.5,Trenton,1,ON,E,2.15p,8.30a
+32.0,Trenton Junction,1,ON,E,2.45p,7.35a
+44.3,Belleville,1,ON,E,ar 3.20p,lv 7.00a

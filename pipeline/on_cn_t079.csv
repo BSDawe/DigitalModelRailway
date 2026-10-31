@@ -1,0 +1,41 @@
+# Canadian National, Table 79: Toronto (Union Station) - Sunnyside - Oakville - Burlington - Hamilton (James St.). Source: Official Guide, April 25, 1948, CN Table 79 (Brendan, 30 Oct 2026, page 1125; private scans og1948_cnq/). EASTERN TIME.
+# Miles as printed. The Montreal times printed with the table (CN Montreal - Toronto trains, that table not in hand) are in the notes. Bayview: no times printed.
+# Trains that change number at Hamilton (101 / 102, 83 / 86, 183 / 186, 89 / 90, 187 / 184; 93 / 94, 95 / 6, 91 / 92, 107 / 108): one trip each side (on_cn_t079n.csv), until the run-through join.
+# Signs (page 1125): * daily; dagger ex Sun; double dagger ex Sat; section Sun only; a Mon Wed Fri; b Tue Thu Sat; e stops to take passengers for beyond Suspension Bridge; f flag; g Tue and Fri; i Wed Thu Sat; k Sat only; t Wed and Sat; v Windsor Station time; x stops for passengers from London and beyond; y through train not via Buffalo (connection at Depew Jct.); z Sun Tue Thu; natural: stops to leave passengers from New York; psi Tue Thu Fri; open square: daily except Sat and Sun; diamond: will not run May 24, July 1, Aug. 2, Sept. 6 (no effect in the model week); M mixed. Conditional stops entered as flag stops.
+#train col=No77 num=77 dir=down days="Mon,Tue,Wed,Thu,Fri,Sat" kind=passenger note="Daily except Sunday: Toronto 7.10 a.m. to Hamilton 8.30 a.m. (from Montreal 8.55 p.m. the night before, daily except Saturday). Montreal - Toronto: the CN Montreal - Toronto table is not in hand."
+#train col=No101 num=101 dir=down days=daily kind=passenger note="Daily: (Montreal 10.59 p.m.) Toronto 8.00 a.m. to Hamilton 9.00 a.m.; on as No. 102 to Niagara Falls and Buffalo (on_cn_t079n.csv). Montreal - Toronto: the CN Montreal - Toronto table is not in hand."
+#train col=No17 num=17 dir=down days=daily kind=passenger name="The Inter-City Limited" note="The Inter-City Limited, daily: (Montreal 10.59 p.m.) Toronto 8.30 a.m. to Hamilton 9.25 a.m. Montreal - Toronto: the CN Montreal - Toronto table is not in hand."
+#train col=No73 num=73 dir=down days=Sat kind=passenger note="Saturday only: Toronto 12.15 p.m. to Hamilton 1.10 p.m."
+#train col=No85 num=85 dir=down days=Sat kind=passenger note="Saturday only: Toronto 12.25 p.m. to Hamilton 1.45 p.m."
+#train col=No83 num=83 dir=down days="Mon,Tue,Wed,Thu,Fri,Sat" kind=passenger note="Daily except Sunday: Toronto 1.35 p.m. to Hamilton 2.57 p.m.; on as No. 86 to Niagara Falls and Buffalo."
+#train col=No183 num=183 dir=down days=Sun kind=passenger note="Sunday only: Toronto 1.35 p.m. to Hamilton 2.45 p.m.; on as No. 186 to Niagara Falls and Buffalo."
+#train col=No79 num=79 dir=down days="Mon,Tue,Wed,Thu,Fri,Sat" kind=passenger note="Daily except Sunday: Toronto 4.20 p.m. to Hamilton 5.40 p.m."
+#train col=No81 num=81 dir=down days="Mon,Tue,Wed,Thu,Fri" kind=passenger note="Daily except Saturday and Sunday: (Montreal 9.15 a.m.) Toronto 5.20 p.m. to Hamilton 6.40 p.m. Montreal - Toronto: the CN Montreal - Toronto table is not in hand."
+#train col=No5 num=5 dir=down days=daily kind=passenger note="Daily: (Montreal 9.15 a.m.) Toronto 6.00 p.m. to Hamilton 6.55 p.m. Montreal - Toronto: the CN Montreal - Toronto table is not in hand."
+#train col=No89 num=89 dir=down days=daily kind=passenger name="The Maple Leaf" note="The Maple Leaf, daily: (Montreal 9.15 a.m.) Toronto 6.30 p.m. to Hamilton 7.25 p.m.; on as No. 90 to Niagara Falls and (Lehigh Valley) Buffalo and New York. Oakville: stops to take passengers for beyond Suspension Bridge. Montreal - Toronto: the CN Montreal - Toronto table is not in hand."
+#train col=No15 num=15 dir=down days=daily kind=passenger name="The International Limited" note="The International Limited, daily: (Montreal, Windsor Station, 3.30 p.m.: pool train) Toronto 10.00 p.m. to Hamilton 10.55 p.m., on west (that table not in hand)."
+#train col=No187 num=187 dir=down days=Sat kind=passenger note="Saturday night: (Montreal, Windsor Station, 3.30 p.m.) Toronto 11.15 p.m. to Hamilton 12.10 a.m.; on as No. 184 (Sunday) to Niagara Falls."
+#train col=No9 num=9 dir=down days=daily kind=passenger note="Daily: (Montreal, Windsor Station, 3.30 p.m.) Toronto 11.59 p.m. to Hamilton 1.01 a.m."
+#train col=No74 num=74 dir=up days="Mon,Tue,Wed,Thu,Fri,Sat" kind=passenger note="Daily except Sunday: Hamilton 5.15 a.m. to Toronto 6.35 a.m. (Montreal 5.45 p.m.)."
+#train col=No76 num=76 dir=up days="Mon,Tue,Wed,Thu,Fri,Sat" kind=passenger note="Daily except Sunday: Hamilton 6.05 a.m. to Toronto 7.30 a.m. (Montreal 5.45 p.m.)."
+#train col=No94 num=94 dir=up days=daily kind=passenger name="The Maple Leaf" note="The Maple Leaf, daily: from New York and (Lehigh Valley) Buffalo as No. 93; Hamilton 7.00 a.m. to Toronto 7.55 a.m. (Montreal 5.45 p.m.). Port Credit: stops to leave passengers from New York."
+#train col=No14 num=14 dir=up days=daily kind=passenger name="The International Limited" note="The International Limited, daily: (from the west) Hamilton 7.52 a.m. to Toronto 8.50 a.m. (Montreal 5.45 p.m.: pool train)."
+#train col=No80 num=80 dir=up days="Mon,Tue,Wed,Thu,Fri,Sat" kind=passenger note="Daily except Sunday: Hamilton 9.43 a.m. to Toronto 10.50 a.m."
+#train col=No6 num=6 dir=up days=daily kind=passenger name="The Inter-City Limited" note="The Inter-City Limited, daily: from Niagara Falls as No. 95; Hamilton 2.27 p.m. to Toronto 3.25 p.m. (Montreal, Windsor Station time, 10.15 p.m.)."
+#train col=No92 num=92 dir=up days=daily kind=passenger note="Daily: from Niagara Falls as No. 91; Hamilton 6.40 p.m. to Toronto 7.50 p.m. (Montreal 6.30 a.m.)."
+#train col=No18 num=18 dir=up days=daily kind=passenger note="Daily: Hamilton 7.02 p.m. to Toronto 8.10 p.m. (Montreal 6.30 a.m.)."
+#train col=No108 num=108 dir=up days=daily kind=passenger note="Daily: from Niagara Falls as No. 107; Hamilton 8.40 p.m. to Toronto 9.40 p.m. (Montreal 7.30 a.m.)."
+#train col=No16 num=16 dir=up days=daily kind=passenger note="Daily: Hamilton 9.45 p.m. to Toronto 10.40 p.m. (Montreal 7.30 a.m.). Oakville: stops for passengers from London and beyond."
+mile,station,principal,prov,tz,No77,No101,No17,No73,No85,No83,No183,No79,No81,No5,No89,No15,No187,No9,No74,No76,No94,No14,No80,No6,No92,No18,No108,No16
+0.0,Toronto (Union Station),1,ON,E,lv 7.10a,lv 8.00a,lv 8.30a,lv 12.15p,lv 12.25p,lv 1.35p,lv 1.35p,lv 4.20p,lv 5.20p,lv 6.00p,lv 6.30p,lv 10.00p,lv 11.15p,lv 11.59p,ar 6.35a,ar 7.30a,ar 7.55a,ar 8.50a,ar 10.50a,ar 3.25p,ar 7.50p,ar 8.10p,ar 9.40p,ar 10.40p
+3.5,Sunnyside,0,ON,E,7.21a,8.11a,8.41a,12.25p,12.34p,1.45p,1.44p,4.29p,5.29p,6.11p,6.41p,10.11p,11.26p,12.10a,6.24a,7.19a,7.44a,8.39a,10.39a,3.14p,7.39p,7.59p,9.29p,10.29p
+6.8,Mimico,0,ON,E,7.27a,,,,12.40p,1.52p,,4.35p,5.35p,,,,,,6.18a,7.12a,,,,,,,,
+11.1,Lakeview,0,ON,E,,,,,f12.47p,,,4.43p,f5.42p,,,,,,6.07a,6.59a,,,,,,,,
+12.8,Port Credit,0,ON,E,7.35a,,,,12.52p,2.02p,1.59p,4.48p,5.47p,,,,,12.22a,6.03a,6.56a,f7.31a,,10.25a,,7.25p,7.45p,,
+15.0,Lorne Park,0,ON,E,7.39a,,,,12.56p,,,4.52p,5.51p,,,,,,5.58a,6.51a,,,,,,,,
+16.1,Clarkson's,0,ON,E,7.43a,,,,1.00p,2.09p,f2.05p,4.55p,5.55p,,,,,,5.55a,6.48a,,,10.20a,,,,,
+21.4,Oakville,0,ON,E,7.53a,8.32a,,,1.10p,2.20p,2.15p,5.07p,6.05p,6.31p,f7.01p,,,12.36a,5.47a,6.40a,f7.21a,,10.13a,2.50p,7.10p,7.31p,f9.06p,f10.06p
+25.6,Bronte,0,ON,E,7.59a,,,,1.19p,2.28p,f2.22p,5.15p,f6.14p,,,,,,5.38a,f6.27a,,,,,,,,
+32.0,Burlington,1,ON,E,8.11a,8.46a,,,1.30p,2.40p,2.31p,5.25p,6.25p,,,,,,5.29a,6.19a,,,9.58a,,6.55p,7.17p,f8.54p,
+34.9,Aldershot,0,ON,E,8.16a,,,,,,,5.29p,f6.30p,,,,,,f5.24a,f6.14a,,,,,f6.49p,,,
+39.3,Hamilton (James St.),1,ON,E,ar 8.30a,ar 9.00a,ar 9.25a,ar 1.10p,ar 1.45p,ar 2.57p,ar 2.45p,ar 5.40p,ar 6.40p,ar 6.55p,ar 7.25p,ar 10.55p,ar 12.10a,ar 1.01a,lv 5.15a,lv 6.05a,lv 7.00a,lv 7.52a,lv 9.43a,lv 2.27p,lv 6.40p,lv 7.02p,lv 8.40p,lv 9.45p

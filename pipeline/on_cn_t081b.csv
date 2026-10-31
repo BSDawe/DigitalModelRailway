@@ -1,0 +1,19 @@
+# Canadian National, Table 81b: Forfar - Chaffey's Locks - Sydenham - Yarker - Napanee (mixed). Source: Official Guide, April 25, 1948, CN Table 81b (Brendan, 30 Oct 2026, page 1125; private scans og1948_cnq/). EASTERN TIME.
+# Miles as printed.
+# Signs (page 1125): * daily; dagger ex Sun; double dagger ex Sat; section Sun only; a Mon Wed Fri; b Tue Thu Sat; e stops to take passengers for beyond Suspension Bridge; f flag; g Tue and Fri; i Wed Thu Sat; k Sat only; t Wed and Sat; v Windsor Station time; x stops for passengers from London and beyond; y through train not via Buffalo (connection at Depew Jct.); z Sun Tue Thu; natural: stops to leave passengers from New York; psi Tue Thu Fri; open square: daily except Sat and Sun; diamond: will not run May 24, July 1, Aug. 2, Sept. 6 (no effect in the model week); M mixed. Conditional stops entered as flag stops.
+#train col=M445 num=445 dir=down days="Mon,Tue,Wed,Thu,Fri,Sat" kind=mixed note="Mixed, daily except Sunday: Forfar 9.00 p.m. to Napanee 11.15 p.m."
+#train col=M337 num=337 dir=down days="Tue,Fri" kind=mixed note="Mixed, Tuesday and Friday: Forfar 2.10 p.m. (from Westport, No. 336) to Napanee 5.20 p.m."
+#train col=M446 num=446 dir=up days="Mon,Tue,Wed,Thu,Fri,Sat" kind=mixed note="Mixed, daily except Sunday: Napanee 12.05 a.m. to Forfar 2.05 a.m."
+#train col=M338 num=338 dir=up days="Wed,Sat" kind=mixed note="Mixed, Wednesday and Saturday: Napanee 9.30 a.m. to Forfar 12.01 p.m. (for Westport, No. 339)."
+mile,station,principal,prov,tz,M445,M337,M446,M338
+0.0,Forfar,1,ON,E,lv 9.00p,lv 2.10p,ar 2.05a,ar 12.01p
+1.9,Elgin,0,ON,E,f9.10p,2.20p,f1.55a,11.55a
+7.2,Chaffey's Locks,0,ON,E,f9.25p,f2.40p,f1.45a,f11.40a
+18.6,Perth Road,0,ON,E,f9.45p,3.10p,f1.25a,f11.15a
+25.4,Sydenham,0,ON,E,10.00p,3.25p,1.10a,11.00a
+29.7,Harrowsmith,0,ON,E,f10.15p,f3.40p,f12.55a,f10.45a
+36.0,Yarker,1,ON,E,10.45p,4.20p,12.40a,10.25a
+40.0,Camden East,0,ON,E,f10.55p,4.35p,f12.25a,10.05a
+42.5,Newburgh,0,ON,E,f11.01p,4.45p,f12.20a,9.55a
+44.4,Strathcona,0,ON,E,f11.05p,5.10p,f12.15a,9.45a
+49.1,Napanee,1,ON,E,ar 11.15p,ar 5.20p,lv 12.05a,lv 9.30a

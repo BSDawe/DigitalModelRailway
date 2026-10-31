@@ -1,0 +1,18 @@
+# Canadian National, Table 80: Brockville (G.T. Station) - Athens - Forfar - Westport (mixed). Source: Official Guide, April 25, 1948, CN Table 80 (Brendan, 30 Oct 2026, page 1125; private scans og1948_cnq/). EASTERN TIME.
+# Miles as printed. Brockville = the one Brockville Union station (Brendan).
+# Signs (page 1125): * daily; dagger ex Sun; double dagger ex Sat; section Sun only; a Mon Wed Fri; b Tue Thu Sat; e stops to take passengers for beyond Suspension Bridge; f flag; g Tue and Fri; i Wed Thu Sat; k Sat only; t Wed and Sat; v Windsor Station time; x stops for passengers from London and beyond; y through train not via Buffalo (connection at Depew Jct.); z Sun Tue Thu; natural: stops to leave passengers from New York; psi Tue Thu Fri; open square: daily except Sat and Sun; diamond: will not run May 24, July 1, Aug. 2, Sept. 6 (no effect in the model week); M mixed. Conditional stops entered as flag stops.
+#train col=M335 num=335 dir=down days="Tue,Thu,Fri" kind=mixed note="Mixed, Tuesday, Thursday and Friday: Brockville (G.T. station) 8.30 a.m. to Westport 12.05 p.m."
+#train col=M339 num=339 dir=down days="Wed,Sat" kind=mixed note="Mixed, Wednesday and Saturday: Forfar 12.15 p.m. (from Napanee, No. 338) to Westport 12.45 p.m."
+#train col=M336 num=336 dir=up days="Tue,Fri" kind=mixed note="Mixed, Tuesday and Friday: Westport 1.05 p.m. to Forfar 1.35 p.m. (for Napanee, No. 337)."
+#train col=M340 num=340 dir=up days="Sun,Tue,Thu" kind=mixed note="Mixed, Sunday, Tuesday and Thursday: Westport 1.40 p.m. to Brockville 4.15 p.m."
+mile,station,principal,prov,tz,M335,M339,M336,M340
+0.0,Brockville,1,ON,E,lv 8.30a,,,ar 4.15p
+5.2,Lyn,0,ON,E,8.50a,,,3.55p
+12.9,Forthton,0,ON,E,f9.15a,,,f3.35p
+17.6,Athens,0,ON,E,9.50a,,,3.20p
+26.4,Lyndhurst,0,ON,E,10.35a,,,2.55p
+28.1,Delta,0,ON,E,10.50a,,,2.35p
+33.1,Phillipsville,0,ON,E,f11.05a,,,f2.20p
+35.1,Forfar,1,ON,E,11.30a,lv 12.15p,ar 1.35p,2.10p
+40.0,Newboro,0,ON,E,11.50a,12.30p,1.20p,1.50p
+44.5,Westport,1,ON,E,ar 12.05p,ar 12.45p,lv 1.05p,lv 1.40p

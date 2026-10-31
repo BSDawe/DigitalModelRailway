@@ -1,0 +1,12 @@
+# Canadian National, Table 79a: Victoriaville - Aston Junction - St. Gregoire - Des Ormeaux - Ferry Wharf (for Trois Rivieres by the ferry). Source: Official Guide, April 25, 1948, CN Table 79a (Brendan, 30 Oct 2026, page 1125; private scans og1948_cnq/). EASTERN TIME.
+# Miles as printed. 'Ferry Wharf' (35.7) is entered as 'Trois Rivieres (Ferry)', the stop of Table 65 at the same landing; the crossing to Three Rivers (37.1) is the Traverse du Saint-Laurent ferry (on_tsl_t065.csv).
+# Signs (page 1125): * daily; dagger ex Sun; double dagger ex Sat; section Sun only; a Mon Wed Fri; b Tue Thu Sat; e stops to take passengers for beyond Suspension Bridge; f flag; g Tue and Fri; i Wed Thu Sat; k Sat only; t Wed and Sat; v Windsor Station time; x stops for passengers from London and beyond; y through train not via Buffalo (connection at Depew Jct.); z Sun Tue Thu; natural: stops to leave passengers from New York; psi Tue Thu Fri; open square: daily except Sat and Sun; diamond: will not run May 24, July 1, Aug. 2, Sept. 6 (no effect in the model week); M mixed. Conditional stops entered as flag stops.
+#train col=No137 num=137 dir=down days="Mon,Tue,Wed,Thu,Fri,Sat" kind=passenger note="Daily except Sunday: Victoriaville 3.15 p.m. to the ferry wharf 4.50 p.m. (Three Rivers by ferry 5.15 p.m.); the same number then runs the wharf - Montreal (Table 65, on_cn_t065.csv)."
+#train col=No138 num=138 dir=up days="Mon,Tue,Wed,Thu,Fri,Sat" kind=passenger note="Daily except Sunday: (Three Rivers by ferry 11.15 a.m.) ferry wharf 11.35 a.m. to Victoriaville 1.20 p.m.; the same number runs Montreal - the wharf before (Table 65)."
+mile,station,principal,prov,tz,No137,No138
+0.0,Victoriaville,1,QC,E,lv 3.15p,ar 1.20p
+16.3,Aston Junction,0,QC,E,4.00p,12.38p
+17.8,Aston,0,QC,E,4.03p,12.34p
+30.5,St. Gregoire,0,QC,E,4.34p,12.01p
+35.3,Des Ormeaux,0,QC,E,4.47p,11.50a
+35.7,Trois Rivieres (Ferry),1,QC,E,ar 4.50p,lv 11.35a

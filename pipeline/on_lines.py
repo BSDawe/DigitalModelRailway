@@ -298,6 +298,7 @@ SHARED = {('onr', 'toronto union'): 'TORONTO_UNION', ('oncn', 'toronto union'): 
           ('oncp', 'levis'): 'LEVIS', ('oncn', 'levis'): 'LEVIS',          # one Levis station for CN and CP (Quebec Central; Brendan, 25 Oct 2026)                          # one Palais Station (CP Table 33 and CN Table 38)                             # one station at Cochrane (CN Table 38 and the ONR)
           ('oncn', 'farnham'): 'CP_FARNHAM',   # CN Table 72: Farnham Union Station; the trains leave Iberville by the CP (30 Oct 2026)
           ('ondh', 'delson'): 'CP_DELSON',   # the D&H (Napierville Junction Ry.) trains at the CP Delson station
+          ('oncn', 'sunnyside'): 'CP_SUNNYSIDE',   # one Sunnyside station, CN Table 79 and the CP trains over the Lake Shore (CP Table 56)
           ('oncn', 'don'): 'CP_DON',                                       # Don (Queen St. East): one station, CN Table 122 and CP Table 50
           ('onthb', 'toronto union'): 'TORONTO_UNION', ('oncpthb', 'toronto union'): 'TORONTO_UNION', ('onthb', 'toronto'): 'TORONTO_UNION', ('oncpthb', 'toronto'): 'TORONTO_UNION',
           ('onthb', 'hamilton'): 'THB_HAMILTON', ('oncpthb', 'hamilton'): 'THB_HAMILTON', ('oncp', 'hamilton'): 'THB_HAMILTON',   # Hunter Street: CP and TH&B trains

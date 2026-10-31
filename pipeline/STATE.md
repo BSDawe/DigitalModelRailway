@@ -2044,3 +2044,23 @@ Stations of different railways within 250 m (70 pairs; script: same check over v
 - (Version 103, Brendan) Track gap on the tunnel line between Monklands and the Vertu wye: a long straight route stretch straddling the start of a line's own
   (not-shared) segment took the 'none' owner of its midpoint and went undrawn. page_template.html now cuts each route stretch at segment boundaries before
   splitting the track into owner runs (page only; ab_lines' own 'drawn' bookkeeping for later lines still works point by point: to fix if it bites).
+
+## Version 104 (30 October 2026): CN page 1125 - Tables 79, 79a, 80, 81a, 81b, 81f
+- Scans (Brendan, 30 Oct): page 1125 (p1125_*.png). Script: scratchpad on/t079.py.
+- on_cn_t079: Toronto (Union) - Sunnyside - Oakville - Burlington - Hamilton (James St.): down 77, 101, 17 The Inter-City Limited, 73 (Sat), 85 (Sat), 83, 183 (Sun),
+  79, 81 (Mon - Fri), 5, 89 The Maple Leaf, 15 The International Limited, 187 (Sat night), 9; up 74, 76, 94 The Maple Leaf, 14 The International Limited, 80,
+  6 The Inter-City Limited, 92, 18, 108, 16. Montreal times (the CN Montreal - Toronto table, not in hand; 15, 187, 9 from Windsor Station) in the notes.
+- on_cn_t079n: Hamilton (James St.) - Grimsby - St. Catharines - Merritton - Niagara Falls, Ont. - boundary on the bridge to Suspension Bridge, N.Y. (the end of the
+  collection's Great Western main line): 102, 86, 186 (Sun), 90 The Maple Leaf, 184 (Sun, from 187), 84 (to Niagara Falls) / 93 The Maple Leaf, 95, 91, 107. The number
+  changes at Hamilton (101/102, 83/86, 183/186, 89/90, 187/184; 93/94, 95/6, 91/92, 107/108): separate trips until the run-through join. U.S. connections in the notes.
+- on_cn_t079a: Victoriaville - Aston Jct. - St. Gregoire - Des Ormeaux - Ferry Wharf (= the Trois Rivieres (Ferry) stop of Table 65): 137 / 138. They are the same
+  numbers as Table 65's Montreal - wharf trains: 138 Montreal -> wharf -> Victoriaville, 137 Victoriaville -> wharf -> Montreal, reversing at the wharf (join later).
+  on_cn_t065: the wharf row moved to 91.7 mi (Table 79a: 0.4 mi past Des Ormeaux); 137's wharf departure ~5.10 p.m.
+- on_cn_t080: Brockville (Union) - Athens - Forfar - Westport mixed M335 (Tue Thu Fri), M339 (Wed Sat, Forfar - Westport) / M336 (Tue Fri, Westport - Forfar), M340 (Sun Tue Thu).
+- on_cn_t081b: Forfar - Sydenham - Yarker - Napanee mixed M445 / M446 (Mon - Sat), M337 (Tue Fri) / M338 (Wed Sat).
+- on_cn_t081f: Picton - Trenton - Trenton Jn. - Belleville mixed M353 / M351 (MWF; printed 353-354, 351-352). Trenton Jn. miles not printed (32.0 estimated).
+- on_cn_t081a: Madoc - Madoc Jct. - Belleville mixed M364 / M365 (TThS).
+- Track: links for the Great Western main line Hamilton - Niagara Falls and the Madoc subdivision Madoc Jct. - Madoc (both dropped by the abandonment filter because
+  their notes mention later abandonments). Places: Hamilton (James St.) = the collection's '2nd Hamilton station' (-79.86457, 43.26584; Brendan); boundary at the end of the GW main line at the Niagara River bridge (-79.05833, 43.10923); CN Burlington on the main
+  line at the junction (Freeman), by the printed miles (the collection's Burlington is on the old branch to the lake), APPROXIMATE. Sunnyside: one station with the CP
+  trains (CP_SUNNYSIDE, SHARED). St. Catharines and Niagara Falls, Ont. by their mileage (their points did not fit the track).

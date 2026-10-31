@@ -1,0 +1,26 @@
+# Canadian National, Table 79: Hamilton (James St.) - Grimsby - St. Catharines - Merritton - Niagara Falls, Ont. - (Suspension Bridge, N.Y.), to the international boundary. Source: Official Guide, April 25, 1948, CN Table 79 (Brendan, 30 Oct 2026, page 1125; private scans og1948_cnq/). EASTERN TIME.
+# Miles as printed; the boundary (on the bridge, between Niagara Falls, Ont. 82.4 and Suspension Bridge, N.Y. 83.9) and its times estimated. The U.S. connections (N.Y.C. and Lehigh Valley to Niagara Falls, N.Y. and Buffalo) in the notes.
+# Signs (page 1125): * daily; dagger ex Sun; double dagger ex Sat; section Sun only; a Mon Wed Fri; b Tue Thu Sat; e stops to take passengers for beyond Suspension Bridge; f flag; g Tue and Fri; i Wed Thu Sat; k Sat only; t Wed and Sat; v Windsor Station time; x stops for passengers from London and beyond; y through train not via Buffalo (connection at Depew Jct.); z Sun Tue Thu; natural: stops to leave passengers from New York; psi Tue Thu Fri; open square: daily except Sat and Sun; diamond: will not run May 24, July 1, Aug. 2, Sept. 6 (no effect in the model week); M mixed. Conditional stops entered as flag stops.
+#train col=No102 num=102 dir=down days=daily kind=passenger note="Daily: from Toronto as No. 101; Hamilton 9.15 a.m. to Suspension Bridge, N.Y. 11.05 a.m., Niagara Falls, N.Y. (N.Y.C.) 12.01 and Buffalo (Central Terminal) 1.00 p.m. Boundary time estimated."
+#train col=No86 num=86 dir=down days="Mon,Tue,Wed,Thu,Fri,Sat" kind=passenger note="Daily except Sunday: from Toronto as No. 83; Hamilton 3.10 p.m. to Suspension Bridge 4.45 p.m., Niagara Falls, N.Y. 5.50 and Buffalo (N.Y.C.) 7.00 p.m. Boundary time estimated."
+#train col=No186 num=186 dir=down days=Sun kind=passenger note="Sunday only: from Toronto as No. 183; Hamilton 2.55 p.m. to Suspension Bridge 4.35 p.m., Niagara Falls, N.Y. 5.50 and Buffalo (N.Y.C.) 7.00 p.m. Boundary time estimated."
+#train col=No90 num=90 dir=down days=daily kind=passenger name="The Maple Leaf" note="The Maple Leaf, daily: from Toronto as No. 89; Hamilton 7.35 p.m. to Suspension Bridge 8.50 p.m., Niagara Falls (Lehigh Valley) 9.10 and Buffalo (L.V.) 10.25 p.m., on to New York. Boundary time estimated."
+#train col=No184 num=184 dir=down days=Sun kind=passenger note="Sunday (early morning): from Toronto as No. 187; Hamilton 12.20 a.m. to Niagara Falls, Ont. 1.30 a.m."
+#train col=No84 num=84 dir=down days="Mon,Tue,Wed,Thu,Fri,Sat" kind=passenger note="Daily except Sunday: Hamilton 3.10 a.m. to Niagara Falls, Ont. 4.25 a.m."
+#train col=No93 num=93 dir=up days=daily kind=passenger name="The Maple Leaf" note="The Maple Leaf, daily: from New York and (Lehigh Valley) Buffalo 3.50 a.m. (not via Buffalo: connection at Depew Jct.), Niagara Falls (L.V.) 5.11, Suspension Bridge 5.30 a.m.; to Hamilton 6.55 a.m., on as No. 94. Boundary time estimated."
+#train col=No95 num=95 dir=up days=daily kind=passenger note="Daily: (Buffalo, N.Y.C., 8.50 a.m., Niagara Falls, N.Y. 9.56) Suspension Bridge 12.45 p.m. to Hamilton 2.10 p.m., on as No. 6 (The Inter-City Limited). Boundary time estimated."
+#train col=No91 num=91 dir=up days=daily kind=passenger note="Daily: (Buffalo, N.Y.C., 2.35, Niagara Falls, N.Y. 3.41) Suspension Bridge 4.30 p.m. to Hamilton 6.30 p.m., on as No. 92. Boundary time estimated."
+#train col=No107 num=107 dir=up days=daily kind=passenger note="Daily: (Buffalo, N.Y.C., 4.30, Niagara Falls, N.Y. 5.28) Suspension Bridge 6.50 p.m. to Hamilton 8.30 p.m., on as No. 108. Boundary time estimated."
+mile,station,principal,prov,tz,No102,No86,No186,No90,No184,No84,No93,No95,No91,No107
+39.3,Hamilton (James St.),1,ON,E,lv 9.15a,lv 3.10p,lv 2.55p,lv 7.35p,lv 12.20a,lv 3.10a,ar 6.55a,ar 2.10p,ar 6.30p,ar 8.30p
+45.4,Stoney Creek,0,ON,E,,3.21p,3.06p,,f12.30a,,,,f6.14p,
+50.8,Winona,0,ON,E,9.33a,3.28p,f3.13p,,f12.35a,,f6.37a,,f6.03p,8.10p
+55.5,Grimsby,0,ON,E,9.42a,3.38p,3.23p,7.56p,12.42a,,6.30a,1.45p,5.53p,8.01p
+57.3,Grimsby Beach,0,ON,E,,3.41p,f3.26p,,,,,,f5.46p,
+59.7,Beamsville,0,ON,E,9.51a,3.46p,3.31p,,f12.47a,,f6.24a,,5.42p,7.50p
+64.1,Vineland,0,ON,E,,3.52p,f3.37p,,f12.53a,,,,5.34p,7.42p
+65.5,Jordan,0,ON,E,f10.01a,3.55p,3.40p,,f12.55a,,6.17a,,5.27p,7.38p
+71.2,St. Catharines,1,ON,E,10.08a,4.05p,3.52p,8.18p,1.03a,3.50a,6.09a,1.24p,5.17p,7.28p
+73.5,Merritton,0,ON,E,10.21a,4.16p,4.00p,8.23p,f1.10a,3.55a,6.00a,1.15p,5.03p,7.18p
+82.4,"Niagara Falls, Ont.",1,ON,E,10.46a,4.33p,4.18p,8.40p,ar 1.30a,ar 4.25a,5.45a,1.00p,4.45p,7.00p
+83.2,"International Boundary (Niagara River, to Suspension Bridge, N.Y.)",0,ON,E,~ar 10.56a,~ar 4.40p,~ar 4.27p,~ar 8.45p,,,~lv 5.35a,~lv 12.50p,~lv 4.35p,~lv 6.55p
