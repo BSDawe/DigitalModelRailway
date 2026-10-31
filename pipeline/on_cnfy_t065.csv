@@ -1,0 +1,8 @@
+# Three Rivers - CN landing (Trois Rivieres (Ferry)) ferry, for CN Table 65 trains 138 / 137 (Official Guide, April 25, 1948; Brendan, 30 Oct 2026: build the ferry).
+# One crossing for each printed connection (the ferry ran more often; its own timetable not in hand). Three Rivers wharf APPROXIMATE (Claude); the south-shore landing is the end of the CN track.
+# The Three Rivers times are as printed in Table 65; the landing times estimated (~).
+#train col=T137 num="" dir=down days="Mon,Tue,Wed,Thu,Fri,Sat" kind=passenger note="Ferry from Three Rivers for train No. 137 to Montreal (Three Rivers 4.30 p.m. as printed; the crossing time estimated)."
+#train col=L138 num="" dir=up days="Mon,Tue,Wed,Thu,Fri,Sat" kind=passenger note="Ferry to Three Rivers from train No. 138 from Montreal (Three Rivers 11.45 a.m. as printed; the landing departure estimated)."
+mile,station,principal,prov,tz,T137,L138
+0.0,Three Rivers (Ferry Wharf),1,QC,E,lv 4.30p,ar 11.45a
+0.8,Trois Rivieres (Ferry),1,QC,E,~ar 4.48p,~lv 11.32a

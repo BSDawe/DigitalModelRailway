@@ -1,5 +1,5 @@
 # Canadian National, Table 65: Montreal (Central Station) - Sorel - Pierreville - Nicolet - Des Ormeaux - Trois Rivieres (Ferry). Source: Official Guide, April 25, 1948, CN Table 65 (Brendan, 30 Oct 2026, page 1121; private scans og1948_cnq/). EASTERN TIME.
-# Miles as printed. Lisieux and Les Greves: flag stops, no times printed (estimated). The ferry across the St. Lawrence to Three Rivers is not entered (no times printed).
+# Miles as printed. Lisieux and Les Greves: flag stops, no times printed (estimated). The printed Trois Rivieres (Ferry) times (138 ar 11.45 a.m., 137 lv 4.30 p.m.) are at Three Rivers, across the river: the landing times here are estimated and the crossing is in on_cnfy_t065.csv (Brendan, 30 Oct 2026: build the ferry).
 # Signs (page 1121): * daily; dagger ex Sun; double dagger ex Sat; pilcrow ex Mon; section Sun only; a Mon Wed Fri; b Tue Thu Sat; c Mon only; d Fri only; k Sat only; v daily except Sun and Mon; double sharp Sat and Sun; psi Mon - Thu; f flag; crescent: stops on signal Sept. 5 only (no stop); M mixed; motor train sign.
 #train col=No646 num=646 dir=down days="Mon,Tue,Wed,Thu,Fri,Sat" kind=motor note="Motor train, daily except Sunday: Montreal 4.50 p.m. to Nicolet 8.00 p.m."
 #train col=No138 num=138 dir=down days="Mon,Tue,Wed,Thu,Fri,Sat" kind=passenger note="Daily except Sunday: Montreal 7.50 a.m. to Trois Rivieres (ferry landing, Three Rivers) 11.45 a.m."
@@ -30,4 +30,4 @@ mile,station,principal,prov,tz,No646,No138,No645,No137
 79.9,Nicolet,1,QC,E,ar 8.00p,10.53a,lv 5.15a,5.38p
 86.5,St. Gregoire,0,QC,E,,11.07a,,5.26p
 91.3,Des Ormeaux,0,QC,E,,11.20a,,5.15p
-93.1,Trois Rivieres (Ferry),1,QC,E,,ar 11.45a,,lv 4.30p
+93.1,Trois Rivieres (Ferry),1,QC,E,,~ar 11.25a,,~lv 5.05p

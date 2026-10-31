@@ -1996,3 +1996,12 @@ Stations of different railways within 250 m (70 pairs; script: same check over v
   with the NJR times; boundary times from the Rouses Point times (No. 34's had been estimated too late). No. 37 renamed No. 35: the NJR table shows No. 35 from
   June 6 with the times in the file (No. 37 last ran June 5). Miles Delson - boundary measured along the collection track. on_dhfull_t018 (held, not built)
   still says No. 37.
+
+## Version 98 (30 October 2026): Brendan's answers on page 1121
+- L'Epiphanie: CN and CP are different stations (as built). Stations printed separately for CN and CP stay two stations (Brendan's presumption).
+- Sorel - St. Hyacinthe trains run to the main CN station: the United Counties line joins the main line west of St. Hyacinthe without a tie in the collection;
+  link 'St. Hyacinthe: United Counties line to the main line' (162 m) added, the t066 place override removed (traced 37.0 mi, printed 36.8).
+- CN Sorel station: Brendan's point (46.038944, -73.113775).
+- Trois Rivieres ferry BUILT: on_cnfy_t065 (rail oncnfy, drawn as a boat like Quebec - Levis): two crossings, Three Rivers 4.30 p.m. (for No. 137) and to Three
+  Rivers 11.45 a.m. (from No. 138), as printed; the landing times and the Three Rivers wharf point (-72.5385, 46.3425) are estimates. Table 65's "Trois Rivieres
+  (Ferry)" rows now carry estimated landing times (138 ~ar 11.25 a.m., 137 ~lv 5.05 p.m.). BOXES['cnfy'] widened to take in Three Rivers.
