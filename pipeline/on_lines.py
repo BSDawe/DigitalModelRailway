@@ -316,6 +316,7 @@ SHARED = {('onr', 'toronto union'): 'TORONTO_UNION', ('oncn', 'toronto union'): 
           ('ongrr', 'galt c p r'): 'CP_GALT',                              # Table 66 trains: the CP Galt station (Brendan)
           ('onqlf', 'levis'): 'LEVIS', ('ontsl', 'trois rivieres ferry'): 'CN_TROIS_RIVIERES_FERRY', ('onaj', 'saguenay power'): 'CN_SAGUENAY_POWER',   # the ferry lands at Levis station; A&J meets the CN at Saguenay Power
           ('onlps', 'london'): 'CN_LONDON', ('onlps', 'c n r wabash depot'): 'CN_ST_THOMAS',   # L&PS London station: part of the CN London station complex (Brendan); C.N.R. - Wabash Depot = CN St. Thomas
+          ('oncn', 'kinmount victoria'): 'CN_KINMOUNT_ONT', ('oncn', 'richmond carleton'): 'CN_RICHMOND_ONT',   # not the Minnesota Kinmount, not Richmond, Que.
           ('onnyco', 'finch'): 'CP_FINCH',                                 # Finch: one station at the NYC - CP crossing (Brendan, 25 Oct 2026)
           ('oncpcn', 'toronto union'): 'TORONTO_UNION', ('oncpcn', 'toronto'): 'TORONTO_UNION',
           **{(r, c): g for r in ('onnyc', 'ondh', 'oncpcn') for c, g in (('montreal', 'CP_MONTREAL_WINDSOR'), ('westmount', 'CP_WESTMOUNT'), ('montreal west', 'CP_MONTREAL_WEST'))}}   # the NYC and D&H used the CP stations

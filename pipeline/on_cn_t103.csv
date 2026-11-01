@@ -1,0 +1,11 @@
+# Canadian National, Table 103: Ottawa (Bank Street) - Richmond - Smiths Falls (C.N. Station) - Portland - Forfar (mixed). Source: Official Guide, April 25, 1948, CN Table 103 (Brendan, 31 Oct 2026, page after 1127; private scans og1948_cnq/). EASTERN TIME.
+# Miles as printed. The pool trains of Table 103 (23, 33, 559, 563 / 24, 34, 560, 562) run over CP and are in the CP files.
+# Signs: * daily; dagger ex Sun; a Mon Wed Fri; f flag; k Sat only; root sign: Ottawa Bank Street station. Conditional stops entered as flag stops.
+#train col=M445 num=445 dir=down days="ex Sun" kind=mixed note="Mixed, daily except Sunday: Ottawa (Bank Street) 6.00 p.m. to Forfar 9.00 p.m., on to Napanee (on_cn_t081b.csv)."
+#train col=M446 num=446 dir=up days="ex Sun" kind=mixed note="Mixed, daily except Sunday: (Napanee 12.05 a.m.) Forfar 2.05 a.m. to Ottawa (Bank Street) 5.00 a.m."
+mile,station,principal,prov,tz,M445,M446
+0.0,Ottawa (Bank Street),1,ON,E,lv 6.00p,ar 5.00a
+19.9,Richmond (Carleton),0,ON,E,f7.10p,f3.50a
+42.4,Smiths Falls (C.N. Station),1,ON,E,8.15p,2.45a
+58.6,Portland,0,ON,E,f8.45p,f2.15a
+62.6,Forfar,1,ON,E,ar 9.00p,lv 2.05a

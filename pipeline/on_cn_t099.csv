@@ -1,0 +1,21 @@
+# Canadian National, Table 99: Palmerston - Listowel - Wingham - Lucknow - Kincardine. Source: Official Guide, April 25, 1948, CN Table 99 (Brendan, 31 Oct 2026, page after 1127; private scans og1948_cnq/). EASTERN TIME.
+# Miles as printed. CN Wingham is its own station (not the CP one).
+# Signs: * daily; dagger ex Sun; a Mon Wed Fri; f flag; k Sat only; root sign: Ottawa Bank Street station. Conditional stops entered as flag stops.
+#train col=No177 num=177 dir=down days="ex Sun" kind=passenger note="Daily except Sunday: Palmerston 9.10 p.m. to Kincardine 11.25 p.m."
+#train col=M331 num=331 dir=down days="ex Sun" kind=mixed note="Mixed, daily except Sunday: Palmerston 11.35 a.m. to Kincardine 2.40 p.m."
+#train col=No176 num=176 dir=up days="ex Sun" kind=passenger note="Daily except Sunday: Kincardine 5.45 a.m. to Palmerston 7.55 a.m."
+#train col=M332 num=332 dir=up days="ex Sun" kind=mixed note="Mixed, daily except Sunday: Kincardine 12.25 p.m. to Palmerston 3.50 p.m."
+mile,station,principal,prov,tz,No177,M331,No176,M332
+0.0,Palmerston,1,ON,E,lv 9.10p,lv 11.35a,ar 7.55a,ar 3.50p
+5.6,Gowanstown,0,ON,E,f9.20p,f11.47a,f7.43a,f3.39p
+8.7,Listowel,1,ON,E,9.28p,11.59a,7.38a,3.33p
+14.7,Atwood,0,ON,E,9.38p,12.13p,7.25a,3.13p
+18.7,Henfryn,0,ON,E,f9.45p,f12.23p,f7.17a,f3.01p
+21.7,Ethel,0,ON,E,f9.51p,12.33p,7.11a,2.55p
+27.3,Brussels,0,ON,E,10.01p,12.46p,6.59a,2.42p
+34.2,Bluevale,0,ON,E,f10.14p,1.00p,6.48a,2.27p
+38.4,Wingham,1,ON,E,10.24p,1.15p,6.38a,2.17p
+43.7,Whitechurch,0,ON,E,f10.34p,f1.27p,6.28a,1.53p
+50.0,Lucknow,0,ON,E,10.46p,1.40p,6.16a,1.40p
+58.1,Ripley,0,ON,E,11.01p,2.15p,6.01a,12.45p
+66.6,Kincardine,1,ON,E,ar 11.25p,ar 2.40p,lv 5.45a,lv 12.25p

@@ -1,0 +1,14 @@
+# Canadian National, Table 98: Beeton - Alliston - Creemore - Collingwood (mixed). Source: Official Guide, April 25, 1948, CN Table 98 (Brendan, 31 Oct 2026, page after 1127; private scans og1948_cnq/). EASTERN TIME.
+# Miles as printed.
+# Signs: * daily; dagger ex Sun; a Mon Wed Fri; f flag; k Sat only; root sign: Ottawa Bank Street station. Conditional stops entered as flag stops.
+#train col=M391 num=391 dir=down days="ex Sun" kind=mixed note="Mixed, daily except Sunday: Beeton 10.20 a.m. to Collingwood 12.45 p.m. (connection from Toronto 7.25 a.m. and Hamilton 7.15 a.m.)."
+#train col=M394 num=394 dir=up days="ex Sun" kind=mixed note="Mixed, daily except Sunday: Collingwood 1.45 p.m. to Beeton 4.55 p.m. (connection to Toronto 7.30 p.m. and Hamilton 7.55 p.m.)."
+mile,station,principal,prov,tz,M391,M394
+0.0,Beeton,1,ON,E,lv 10.20a,ar 4.55p
+6.6,Alliston,1,ON,E,10.45a,4.35p
+11.1,Everett,0,ON,E,10.59a,3.49p
+17.1,Lisle,0,ON,E,11.18a,3.27p
+20.2,Glencairn,0,ON,E,11.29a,3.11p
+25.1,Creemore,0,ON,E,11.55a,2.44p
+33.1,Duntroon,0,ON,E,12.19p,2.12p
+41.9,Collingwood,1,ON,E,ar 12.45p,lv 1.45p

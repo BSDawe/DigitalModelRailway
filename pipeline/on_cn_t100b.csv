@@ -1,0 +1,17 @@
+# Canadian National, Table 100: Lindsay - Kinmount - Howland - York River - Bancroft (mixed). Source: Official Guide, April 25, 1948, CN Table 100 (Brendan, 31 Oct 2026, page after 1127; private scans og1948_cnq/). EASTERN TIME.
+# Miles: the Bancroft branch miles are printed from Howland (York River 50.9, Bancroft 53.7; the old Irondale, Bancroft and Ottawa line, meeting the Trenton - Maynooth line at York River); entered here from Lindsay. Stations between Howland and York River not printed.
+# Signs: * daily; dagger ex Sun; a Mon Wed Fri; f flag; k Sat only; root sign: Ottawa Bank Street station. Conditional stops entered as flag stops.
+#train col=M391 num=391 dir=down days="Tue,Thu" kind=mixed note="Mixed (391 - 324), Tuesday and Thursday: Lindsay 11.50 a.m. by Howland (1.45 - 2.00) to Bancroft 6.45 p.m."
+#train col=M391S num=391 dir=down days=Sat kind=mixed note="Mixed (391 - 324), Saturday: Lindsay 11.50 a.m., Howland 1.45, on at 3.40 to Bancroft 7.40 p.m."
+#train col=M323 num=323 dir=up days="Tue,Thu,Sat" kind=mixed note="Mixed (323 - 390), Tuesday, Thursday and Saturday: Bancroft 8.30 a.m. by Howland (1.00 - 2.15 p.m.) to Lindsay 4.45 p.m."
+mile,station,principal,prov,tz,M391,M391S,M323
+0.0,Lindsay,1,ON,E,lv 11.50a,lv 11.50a,ar 4.45p
+7.4,Cameron,0,ON,E,12.10p,12.10p,4.15p
+14.0,Fenelon Falls,1,ON,E,12.40p,12.40p,3.55p
+19.2,Fell,0,ON,E,f12.56p,f12.56p,f3.27p
+24.8,Burnt River,0,ON,E,1.15p,1.15p,3.06p
+29.0,Watsons,0,ON,E,f1.25p,f1.25p,f2.57p
+33.4,Kinmount (Victoria),1,ON,E,1.40p,1.40p,2.45p
+35.7,Howland,1,ON,E,ar 1.45p / lv 2.00p,ar 1.45p / lv 3.40p,ar 1.00p / lv 2.15p
+86.6,York River,0,ON,E,6.36p,7.25p,8.39a
+89.4,Bancroft,1,ON,E,ar 6.45p,ar 7.40p,lv 8.30a

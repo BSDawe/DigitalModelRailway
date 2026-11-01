@@ -2107,3 +2107,21 @@ Stations of different railways within 250 m (70 pairs; script: same check over v
   trusted); pre-Seaway line Cornwall - Cardinal: the collection's eastbound and westbound pieces replaced by one line (they never met, so Aultsville - Morrisburg was a
   straight; Brendan: trust the file, it was very straight). Places: Windsor = the GW station at the river; Sarnia station; boundary at the end of the Sarnia branch
   (APPROXIMATE, 0.3 mi from Sarnia for 1.5 printed); Chatham, Brantford, Marmora by mileage.
+
+## Version 110 (31 October 2026): CN Tables 98, 99, 100, 103 (the page after 1127)
+- Scans (Brendan, 31 Oct): Tables 95 (Port Huron - Chicago: US only, not built), 98, 99, 100, 103 and the signs. Script: scratchpad on/t098.py.
+- on_cn_t098: Beeton - Alliston - Creemore - Collingwood mixed M391 / M394 (ex Sun).
+- on_cn_t099: Palmerston - Listowel - Wingham (CN, not the CP station) - Lucknow - Kincardine: 177, M331 / 176, M332 (ex Sun). Kincardine placed at the end
+  of the collection's branch (no station point there; APPROXIMATE).
+- on_cn_t100: Lindsay - Fenelon Falls - Kinmount - Howland - Gelert - Haliburton: 393 (Sat, summer), 89 The Highlander (Sat), M395 (Tue Thu), M389 (MWF; Lindsay - Watsons
+  times not printed, taken from 391 as estimates) / M388 (printed a = MWF; ASK), M392 (Sat), 87 The Highlander (Sun).
+  on_cn_t100b: Lindsay - Howland - York River - Bancroft (the old IB&O, joining the Central Ontario line at York River): M391 (Tue Thu; Sat leaves Howland 3.40), M323 (TThS).
+  The branch miles are printed FROM HOWLAND (York River 50.9, Bancroft 53.7); entered from Lindsay. Howland - York River takes about 4 1/2 hours each way as printed.
+  Names: Kinmount (Victoria) = CN_KINMOUNT_ONT (CN_KINMOUNT is the Minnesota one); Richmond (Carleton) = CN_RICHMOND_ONT (not Richmond, Que.); Lindsay at the CN (Victoria Railway) station, not CP_LINDSAY; Howland = Howland Junction station.
+- on_cn_t103: Ottawa (Bank Street) - Richmond - Smiths Falls (C.N. Station) - Portland - Forfar mixed M445 / M446 (ex Sun; on to / from Napanee in on_cn_t081b). The Table 103
+  pool trains are already in the CP files.
+- To come from Brendan: the Windsor - Detroit CN car ferry details (Brendan: it is a CN ferry in this era); points for Chatham, Brantford, Marmora, Bronte, the Sarnia tunnel border.
+- FOUND (31 Oct): stop ids shared by two far-apart stations of the same name (the feed sends trips to the wrong place): CN_ROSEDALE, CN_ARMSTRONG, CP_HAMMOND,
+  CP_STRATHMORE, CP_BROOKS, CP_ERSKINE, CP_BUFFALO, CP_ROSEDALE, CP_GLENWOOD, CN_STE_ANNE, CN_CARDINAL, CN_ELGIN, CN_LAURIER, CP_DOUGLAS, CP_OGEMA, CP_GLADSTONE,
+  CP_DRAKE, CP_ROCKHAVEN, CP_EAU_CLAIRE, CP_LAKESIDE (and near-twins CP_MCAULEY, CP_ROSETOWN_JCT). Kinmount and Richmond fixed in Version 110; the rest: offered to
+  Brendan as one general fix (a distinct id when the same name is more than about 5 km away).
