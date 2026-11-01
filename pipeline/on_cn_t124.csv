@@ -1,0 +1,21 @@
+# Canadian National, Table 124 (number cut off in the scan): Fort Erie - Port Colborne - Dunnville - Caledonia - Brantford - Paris - Tavistock - Stratford (mixed). Source: Official Guide, April 25, 1948, CN Table 124 (Brendan, 1 Nov 2026, page 1130; private scans og1948_cnq/). EASTERN TIME.
+# Miles as printed. Fort Erie - Black Rock, N.Y.: freight service only (not entered). Canfield Junction: no stop.
+# Signs: * daily; dagger ex Sun; f flag; square: motor train; M mixed; circled dot (Lucan Crossing): baggage not checked.
+#train col=M219 num=219 dir=down days="ex Sun" kind=mixed note="Mixed, daily except Sunday: Fort Erie 4.15 p.m. by Dunnville, Caledonia and Brantford to Stratford 9.25 p.m. (connections: Caledonia - Hamilton 7.20, Brantford - London 9.14)."
+#train col=M218 num=218 dir=up days="ex Sun" kind=mixed note="Mixed, daily except Sunday: Stratford 7.15 a.m. by Brantford, Caledonia and Dunnville to Fort Erie 12.15 p.m. (connections: London 7.15 - Brantford, Hamilton 9.10 - Caledonia)."
+mile,station,principal,prov,tz,M219,M218
+0.0,Fort Erie,1,ON,E,lv 4.15p,ar 12.15p
+8.9,Ridgeway,0,ON,E,4.35p,11.48a
+19.0,Port Colborne,1,ON,E,4.55p,11.30a
+37.8,Dunnville,1,ON,E,ar 5.22p / lv 5.37p,ar 10.40a / lv 10.55a
+45.3,Canfield Junction,0,ON,E,,
+46.1,Canfield,0,ON,E,5.53p,10.25a
+58.6,Caledonia,1,ON,E,ar 6.14p / lv 6.33p,ar 9.52a / lv 10.05a
+67.6,Onondaga,0,ON,E,f6.50p,9.36a
+75.6,Brantford,1,ON,E,ar 7.05p / lv 7.57p,ar 8.37a / lv 9.20a
+82.8,Paris,1,ON,E,8.10p,8.27a
+89.2,Richwood,0,ON,E,f8.24p,8.13a
+91.8,Drumbo,0,ON,E,8.32p,8.07a
+97.5,Bright,0,ON,E,8.46p,7.54a
+107.2,Tavistock,1,ON,E,9.08p,7.34a
+114.9,Stratford,1,ON,E,ar 9.25p,lv 7.15a

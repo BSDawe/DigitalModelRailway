@@ -1,0 +1,21 @@
+# Canadian National, Table 123: Hamilton (James St.) - Burlington - Milton - Georgetown - Beeton - Allandale - Barrie (motor trains). Source: Official Guide, April 25, 1948, CN Table 123 (Brendan, 1 Nov 2026, page 1130; private scans og1948_cnq/). EASTERN TIME.
+# Miles as printed. Toronto - Georgetown connections (29.3 mi) in the notes. Allandale 11.00 - Barrie 11.38 (1.1 mi) as printed.
+# Signs: * daily; dagger ex Sun; f flag; square: motor train; M mixed; circled dot (Lucan Crossing): baggage not checked.
+#train col=No660 num=660 dir=down days="ex Sun" kind=motor note="Motor train 660 - 661, daily except Sunday: Hamilton 7.15 a.m. by Georgetown (connection from Toronto 7.25 a.m.) to Allandale 11.00 and Barrie 11.38 a.m. (as printed)."
+#train col=No662 num=662 dir=up days="ex Sun" kind=motor note="Motor train 662 - 663, daily except Sunday: Barrie 4.20 p.m., Allandale 4.30 by Georgetown (connection to Toronto 7.30 p.m.) to Hamilton 7.55 p.m."
+mile,station,principal,prov,tz,No660,No662
+0.0,Hamilton (James St.),1,ON,E,lv 7.15a,ar 7.55p
+4.4,Aldershot,0,ON,E,f7.23a,f7.45p
+7.3,Burlington,1,ON,E,7.31a,7.40p
+21.2,Milton,0,ON,E,7.58a,7.10p
+32.8,Georgetown,1,ON,E,ar 8.20a / lv 8.40a,ar 6.33p / lv 6.47p
+40.9,Cheltenham,0,ON,E,9.00a,f6.13p
+43.6,Inglewood,0,ON,E,9.07a,6.07p
+50.0,Caledon East,0,ON,E,9.21a,5.54p
+56.3,Palgrave,0,ON,E,9.36a,5.41p
+62.2,Tottenham,0,ON,E,9.50a,5.30p
+66.9,Beeton,1,ON,E,10.02a,5.20p
+75.8,Cookstown,0,ON,E,10.23a,5.02p
+81.7,Thornton,0,ON,E,10.36a,4.51p
+91.5,Allandale,1,ON,E,11.00a,4.30p
+92.6,Barrie,1,ON,E,ar 11.38a,lv 4.20p

@@ -1,0 +1,21 @@
+# Canadian National, Table 125: London - Hyde Park - Exeter - Clinton Jn. - Clinton - Goderich (motor trains). Source: Official Guide, April 25, 1948, CN Table 125 (Brendan, 1 Nov 2026, page 1130; private scans og1948_cnq/). EASTERN TIME.
+# Miles as printed.
+# Signs: * daily; dagger ex Sun; f flag; square: motor train; M mixed; circled dot (Lucan Crossing): baggage not checked.
+#train col=No603 num=603 dir=down days="ex Sun" kind=motor note="Motor train, daily except Sunday: London 8.00 a.m. to Clinton 10.20, Goderich 12.20 p.m."
+#train col=No604 num=604 dir=up days="ex Sun" kind=motor note="Motor train, daily except Sunday: Goderich 3.00 p.m., Clinton 3.25 - 3.33 to London 5.45 p.m."
+mile,station,principal,prov,tz,No603,No604
+0.0,London,1,ON,E,lv 8.00a,ar 5.45p
+4.1,Hyde Park,0,ON,E,8.10a,f5.35p
+7.6,Ettrick,0,ON,E,f8.20a,f5.26p
+11.2,Ilderton,0,ON,E,8.28a,5.19p
+15.5,Denfield,0,ON,E,8.38a,5.10p
+18.7,Lucan Crossing,0,ON,E,f8.45a,f5.03p
+20.4,Clandeboye,0,ON,E,8.49a,5.00p
+26.3,Centralia,0,ON,E,9.02a,4.47p
+31.1,Exeter,1,ON,E,9.17a,4.32p
+36.9,Hensall,0,ON,E,9.34a,4.16p
+39.3,Kippen,0,ON,E,9.43a,4.06p
+43.3,Brucefield,0,ON,E,9.55a,3.54p
+49.7,Clinton Junction,0,ON,E,10.12a,3.37p
+50.3,Clinton,1,ON,E,ar 10.20a / lv 11.50a,ar 3.25p / lv 3.33p
+63.1,Goderich,1,ON,E,ar 12.20p,lv 3.00p

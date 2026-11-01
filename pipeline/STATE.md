@@ -2221,3 +2221,12 @@ Stations of different railways within 250 m (70 pairs; script: same check over v
   the exact 1948 station position still to confirm.
 - stubs.py: a station whose stop id is shared with another railway is never moved (the cut had pulled the L&PS N.Y.C. Depot at St. Thomas off the NYC depot,
   Brendan); KEEP adds ('onlps001', 'N.Y.C. Depot'). 266 cut.
+
+## Version 118 (1 November 2026): page 1130 (Tables 123, 124, 125; Table 122 already in)
+- Script: scratchpad on/t123.py. on_cn_t123 Hamilton (James St.) - Burlington - Milton - Georgetown - Beeton - Allandale - Barrie, motor 660 (- 661) / 662 (- 663),
+  ex Sun; Toronto - Georgetown connections in the notes; Allandale 11.00 - Barrie 11.38 as printed. Burlington by the collection (Aldershot - Burlington 3.7 mi
+  traced for 2.9; which Burlington station the H&NW trains used: to check).
+- on_cn_t124 (table number cut off in the scan; between 123 and 125): Fort Erie - Port Colborne - Dunnville - Caledonia - Brantford - Paris - Tavistock - Stratford,
+  mixed M219 / M218 ex Sun. Black Rock: freight only (not entered). Fort Erie - Port Colborne traces 21.1 for 19.0.
+- on_cn_t125 London - Exeter - Clinton Jn. - Clinton - Goderich, motor 603 / 604 ex Sun (same numbers as the Table 113a motor trains, other line).
+  London, Huron & Bruce London - Clinton re-added as links (dropped by the abandonment filter for Clinton - Wingham Jct., 1941).
