@@ -2141,3 +2141,13 @@ Stations of different railways within 250 m (70 pairs; script: same check over v
   Detroit mirrored (Windsor lv as printed). Windsor departure / arrival and the slip and border times estimated.
 - The route reverses at Windsor station and runs back about 0.4 km along the main line to the slip (the path-finder ties the slip end to the main line, so it does not
   use the full length of the ferry lead). Detroit end (slip, Brush Street) in the notes only.
+
+## Version 113 (31 October 2026): the Windsor - Detroit ferry finished (Brendan: fix the jump, include the Detroit side)
+- on_cn_t090w now runs to Detroit (Brush Street) (Brendan's point -83.03976, 42.32851), by Windsor Ferry Slip (110.5) and Detroit Ferry Slip (111.0); the border stop is
+  gone (the trains cross it). Rows made by scratchpad on/t090w_ferry.py from the Version 111 file (copy kept: scratchpad on_cn_t090w_v111.csv). Times: Windsor ar T,
+  lv T+0.11I, Windsor slip T+0.22I - T+0.5I, Detroit slip T+0.75I - T+0.89I, Brush Street T+I as printed (mirrored from Detroit); I = printed Windsor - Detroit.
+- Links (property net: true): Windsor ferry track, the crossing (own water, the whole course, bowed about 150 m downstream), the Detroit slip lead (east along the river)
+  and the Brush Street station track (trains reverse at the lead's end). Trains reverse at Windsor station, run back to the ferry track junction and down the lead.
+- on_lines: net links go into the graph as kind 'x' (a copy of ab_lines.make_graph, _make_graph): tied only at their loose ends, and traces are not tied onto them
+  (the Great Western main line link tied itself to the Windsor slip end, 36 m away). ab_lines.py itself unchanged.
+- Careful: the Quebec - Levis and Trois Rivieres ferry crossings are links named '... ferry crossing (Claude)': do not filter links by the word ferry.

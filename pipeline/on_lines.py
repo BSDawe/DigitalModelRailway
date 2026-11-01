@@ -111,6 +111,16 @@ def _links():
     return out
 BOXES = {'onr': (-82.6, -78.4, 43.5, 51.5), 'acr': (-85.2, -82.8, 46.3, 49.9), 'nyc': (-74.4, -73.4, 44.9, 45.6), 'dh': (-74.0, -73.2, 44.95, 45.6),
          'tem': (-69.7, -68.3, 47.3, 47.95), 'nyco': (-75.8, -74.6, 44.9, 45.5), 'cgt': (-68.4, -67.4, 48.5, 48.95), 'rs': (-71.4, -70.8, 48.25, 48.5), 'tir': (-76.25, -76.10, 44.30, 44.40), 'aj': (-71.9, -71.5, 48.4, 48.8), 'thb': (-80.5, -78.85, 42.85, 43.75), 'cpthb': (-80.5, -78.85, 42.85, 43.75), 'lps': (-81.35, -81.05, 42.6, 43.05), 'grr': (-80.56, -80.28, 43.33, 43.48), 'len': (-80.42, -80.18, 42.76, 43.38), 'cnfy': (-72.56, -71.15, 46.32, 46.83)}   # the small railways' graphs: their own part of the map only
+def _mk():
+    """ab_lines.make_graph with one more kind of line, 'x' (31 Oct 2026): like the network ('n') it is tied only at its loose ends, and the points of
+    traces are not tied onto it (the Windsor ferry lead runs 35 m from the main line; the trains must take it from its junction, not jump to its end)"""
+    import inspect
+    src = inspect.getsource(ab_lines.make_graph).replace('def make_graph(', 'def _make_graph_x(', 1)
+    src = src.replace("if src != 'n': loose.extend", "if src not in ('n', 'x'): loose.extend", 1)
+    src = src.replace("lambda u, v, att, f=f: att['fid'] == f,", "lambda u, v, att, f=f: att['fid'] == f or att['src'] == 'x',", 1)
+    assert "('n', 'x')" in src and "att['src'] == 'x'" in src
+    ns = vars(ab_lines); exec(src, ns); return ns['_make_graph_x']
+_make_graph = _mk()
 def _graph(me):
     """the track graph for one railway. Every piece goes in as network-like track ('n': its ends tie to track within 150 m) rather than as a backup
     ('b': every point tied to track beside it), and other railways' sidings and yards are left out: the full collections as backups made graphs of
@@ -150,8 +160,8 @@ def _graph(me):
             ow = f['properties']['own']; c = f['geometry']['coordinates']
             if box and not any(box[0] <= p[0] <= box[1] and box[2] <= p[1] <= box[3] for p in c): continue
             mine = ow == me or (me == 'cpcn' and ow in ('cp', 'cn')) or (me == 'nyco' and ow == 'nyc') or (me in ('thb', 'cpthb') and ow in ('cn', 'cp', 'thb', 'nyc'))
-            add(ab_lines._xy(c), f['properties'].get('cost', 1.0) if mine else 2.5, 't', None if ow == me else ow)   # 'cost': a link the trains must take (cheaper than the track beside it)
-    return lambda: ab_lines.make_graph(feed, tie_end=150, tie_loose=60)
+            add(ab_lines._xy(c), f['properties'].get('cost', 1.0) if mine else 2.5, 'x' if f['properties'].get('net') else 't', None if ow == me else ow)   # 'net' ('x'): tied only at its loose ends, and nothing ties onto it along its length (the Windsor ferry lead beside the main line)   # 'cost': a link the trains must take (cheaper than the track beside it)
+    return lambda: _make_graph(feed, tie_end=150, tie_loose=60)
 for _r, _o in OWN.items(): ab_lines.EXT_GRAPH['sk:' + _r] = _graph(_o)
 ab_lines.EXT_GRAPH['sk:onnyco'] = _graph('nyco')
 
