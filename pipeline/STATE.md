@@ -2230,3 +2230,6 @@ Stations of different railways within 250 m (70 pairs; script: same check over v
   mixed M219 / M218 ex Sun. Black Rock: freight only (not entered). Fort Erie - Port Colborne traces 21.1 for 19.0.
 - on_cn_t125 London - Exeter - Clinton Jn. - Clinton - Goderich, motor 603 / 604 ex Sun (same numbers as the Table 113a motor trains, other line).
   London, Huron & Bruce London - Clinton re-added as links (dropped by the abandonment filter for Clinton - Wingham Jct., 1941).
+- Version 119 (1 Nov): Table 123 Burlington = the Table 90 station at the junction (-79.815227, 43.338803); the trains had run 1.8 km out to another
+  Burlington point and back (Brendan's screenshot). 93.4 traced / 92.6. Table 124 Fort Erie: on the Canada Air Line beside the CN station (a vertex added by
+  a net link); it had snapped to the Canada Southern main 14 m away and run to the bridge and back (Brendan). Fort Erie - Port Colborne 20.3 / 19.0.
