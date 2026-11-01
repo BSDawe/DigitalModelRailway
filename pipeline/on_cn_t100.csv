@@ -4,17 +4,17 @@
 #train col=No393 num=393 dir=down days=Sat kind=passenger note="Saturday only, June 26 to September 4: Lindsay 7.15 p.m. to Haliburton 9.40 p.m. (intermediate times not printed)."
 #train col=No89 num=89 dir=down days=Sat kind=passenger name="The Highlander" note="The Highlander (88 - 89), Saturday only: Toronto 12.15 p.m., Lindsay 2.15 to Haliburton 4.15 p.m."
 #train col=M395 num=395 dir=down days="Tue,Thu" kind=mixed note="Mixed, Tuesday and Thursday: Lindsay 1.30 p.m. to Haliburton 4.15 p.m."
-#train col=M389 num=389 dir=down days="Mon,Wed,Fri" kind=mixed note="Mixed, Monday, Wednesday and Friday: Lindsay 11.50 a.m. to Haliburton 3.30 p.m. Lindsay - Watsons times as No. 391 (estimated)."
+#train col=M389 num=389 dir=down days="Mon,Wed,Fri" kind=mixed note="Mixed, Monday, Wednesday and Friday: Lindsay 11.50 a.m. to Haliburton 3.30 p.m. Lindsay - Watsons times as Brendan read them (1 Nov 2026)."
 #train col=M388 num=388 dir=up days="Mon,Wed,Fri" kind=mixed note="Mixed, printed a (Monday, Wednesday and Friday): Haliburton 5.00 a.m. to Lindsay 7.15 a.m."
 #train col=M392 num=392 dir=up days=Sat kind=mixed note="Mixed, Saturday only: Haliburton 3.00 p.m. to Lindsay 5.40 p.m."
 #train col=No87 num=87 dir=up days=Sun kind=passenger name="The Highlander" note="The Highlander (84 - 87), Sunday only: Haliburton 5.50 p.m. to Lindsay 7.45 p.m., Toronto 10.15 p.m."
 mile,station,principal,prov,tz,No393,No89,M395,M389,M388,M392,No87
 0.0,Lindsay,1,ON,E,lv 7.15p,lv 2.15p,lv 1.30p,lv 11.50a,ar 7.15a,ar 5.40p,ar 7.45p
-7.4,Cameron,0,ON,E,,2.31p,1.50p,~12.10p,6.53a,5.20p,7.25p
-14.0,Fenelon Falls,1,ON,E,,2.46p,2.10p,~12.40p,6.40a,5.05p,7.13p
-19.2,Fell,0,ON,E,,f3.06p,f2.18p,~f12.56p,f6.26a,f4.49p,
-24.8,Burnt River,0,ON,E,,f3.14p,2.28p,~1.15p,6.16a,4.35p,6.51p
-29.0,Watsons,0,ON,E,,,f2.33p,~f1.25p,f6.06a,f4.25p,f6.43p
+7.4,Cameron,0,ON,E,,2.31p,1.50p,12.10p,6.53a,5.20p,7.25p
+14.0,Fenelon Falls,1,ON,E,,2.46p,2.10p,12.40p,6.40a,5.05p,7.13p
+19.2,Fell,0,ON,E,,f3.06p,f2.18p,f12.59p,f6.26a,f4.49p,
+24.8,Burnt River,0,ON,E,,f3.14p,2.28p,1.15p,6.16a,4.35p,6.51p
+29.0,Watsons,0,ON,E,,,f2.33p,f1.25p,f6.06a,f4.25p,f6.43p
 33.4,Kinmount (Victoria),1,ON,E,,3.25p,2.45p,1.50p,5.57a,4.15p,6.35p
 35.7,Howland,1,ON,E,,3.30p,2.50p,,,,f6.28p
 42.8,Gelert,0,ON,E,,3.47p,3.20p,2.25p,5.33a,3.47p,6.15p

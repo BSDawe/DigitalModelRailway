@@ -2171,3 +2171,31 @@ Stations of different railways within 250 m (70 pairs; script: same check over v
   Manilla = Manilla Junction station, Brechin = the Midland Ry. point; Schepeler by mileage (the collection's line there is a 9.6 km straight).
 - To check with Brendan: which Peterboro point is the 1948 CN station (by mileage now); No. 95 Campbellcroft 4.27 - Carmel f4.32 (5.2 mi in 5 min, as printed).
 - TO CHECK (Brendan, 31 Oct 2026, 23:20): the CN Port Dover routing (on_cn_t121d Simcoe (South) - Port Dover, 236 / 235: traced 8.1 mi for 7.5 printed; Simcoe (South) by mileage).
+
+## Version 115 (1 November 2026): Brendan's answers to the to-do list
+- Hand points (on_lines HAND, all CN files): Chatham (the GW station; force Northwood - Chatham, the collection's line there is coarse and long), Brantford
+  (Brendan's point, not in the collection), Marmora (the Central Ontario station), Kincardine (the collection's "Kinkardine" point), Peterboro (the Midland Ry.
+  point, the primary station in 1948), Port Hope (the GT main-line station; Port Hope (Main St.) on Table 113 = the Midland Ry. station). Brantford (Colborne St.)
+  on Table 120 at Brendan's point. CP Table 69: Embro, McConkey at their points (force: the printed miles disagree with the line); Ostrander = the CP Springford
+  point, Kinglake = Kingslake.
+- Track: the GT main-line old alignments by Port Hope ('Re-alignment.') and Bowmanville ('Abandoned mainline.') dropped (realigned 1900 - 1911); the
+  Peterborough & Chemong dropped (Lakefield trains take the Millbrook - Lakefield branch); a Port Hope crossover between the collection's two main-line tracks
+  (they meet only at their far ends); St. Clair Tunnel trace (Brendan) to the border mid-river, Sarnia = the CN Sarnia Tunnel station (was the Pere Marquette
+  point); Table 56 border at the end of the International Railway Bridge track (Brendan's point); Midland Dock 0.2 mi along the Canada Steamship Lines siding.
+- Timetables: M389 Lindsay - Watsons times (Brendan's reading); CP No. 20 (on_cp_t049w) re-entered from Brendan's scan (was one row off); Midland Dock call of 603.
+- Brendan confirmed: M388 is a; 328 by Otterville (table heading "via Norwich and Otterville"); No. 95 as printed; M263 stays; TIR No. 19 as printed; Laviolette
+  in 1948; Table 65 OK; Sorel trains at the main St. Hyacinthe station (already so).
+- Manson - McAuley trace (Brendan, 1 Nov): the same line as traces/saskatchewan/kirkella_mcauley.geojson (not added twice). skcp107b still straight Manson -
+  Welwyn: McAuley (trace end) is 9.0 mi from Manson for 5.1 printed, and there is no track McAuley - Welwyn.
+
+## TO DO (1 November 2026, replaces the lists above)
+- TO CHECK (Brendan): CN 122 / 126 Camp Borden (Brendan to trace); L&PS Colborne St., Philip St., Elm St., Stop 7, No. 37 St. Thomas; CP Table 73 No. 50 Elma
+  (8.09 printed) and Crest; CP Table 69 Bennington, Lind (by mileage); CP Table 107 McAuley - Welwyn; CN Port Dover routing (Simcoe South - Port Dover).
+- WAITING ON BRENDAN: Quebec Railway, Light & Power; the Stratford table (No. 10); the Camp Borden trace; the remaining steamship points and waterways; the rest
+  of the Official Guide pages.
+- BUILD: run-through joins (London, Hamilton, North Bay, CN 3 / 4, CP / TH&B at Hamilton, Cataract); numbering of connecting sections (wait for the branch tables);
+  Trois Rivieres south-shore landing times vs the ferry.
+- IDEAS (considering only): streetcar texture; North Yonge interurban.
+- FOUND (1 Nov, after Version 115): stations a little off the track get an in-and-out stub on the route (the train runs to the point and back): about 150
+  cases in Ontario and Quebec, mostly 30 - 150 m, a few large (CP Kipawa 603 m, Ville Marie 739 m, Foster 461 m, St. Basile 438 m, Leaside 328 m; CN Windsor
+  264 m is the ferry reversal, intended). Offered to Brendan as one general fix (stop on the track beside the point instead of running out to it).

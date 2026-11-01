@@ -133,7 +133,8 @@ def _graph(me):
     def feed(add):
         for o in pieces():
             if o['kind'] != 'LineString' or len(o['coords']) < 2: continue
-            if GONE.search(o.get('desc', '')) or any(LATER.search(x) for x in o['path']) or 'Pelletierjunction to near St. Andre' in (o.get('desc') or ''): continue   # NTR Pelletier - St. Andre: built after 1948 (Brendan, 29 Oct 2026)
+            if GONE.search(o.get('desc', '')) or any(LATER.search(x) for x in o['path']) or 'Pelletierjunction to near St. Andre' in (o.get('desc') or '') \
+               or ('Grand Trunk Railway Main Line' in o['path'] and (o.get('desc') or '').strip() in ('Abandoned mainline.', 'Re-alignment.')) or o.get('name') == 'Peterborough and Chemong': continue   # GTR main line old alignments by Port Hope and Bowmanville (realigned 1900 - 1911; Brendan, 1 Nov 2026); the Peterborough & Chemong (abandoned in the 19th century)   # NTR Pelletier - St. Andre: built after 1948 (Brendan, 29 Oct 2026)
             c = despike(o['coords'])
             if len(c) > 3 and covered(c): continue
             if box and not any(box[0] <= p[0] <= box[1] and box[2] <= p[1] <= box[3] for p in c[::max(1, len(c) // (6 if me in ('onr', 'acr') else 200))]) \
@@ -193,6 +194,12 @@ HAND = {('thb', 'toronto'): _TU, ('cpthb', 'toronto'): _TU, ('thb', 'hamilton'):
         ('cn', 'st hyacinthe'): (-72.9391349, 45.6298369, 'CN St. Hyacinthe, on the main line (the collection\'s point is off the line, 1.9 km west); APPROXIMATE, Claude'),
         ('cn', 'ste rosalie junction'): (-72.9091837, 45.6363857, 'CN Ste. Rosalie Junction: where the Drummondville line (Drummond County Railroad) meets the St. Lawrence & Atlantic'),
         ('cn', 'sorel'): (-73.113775, 46.038944, 'CN Sorel station (Brendan, 30 Oct 2026)'),
+        ('cn', 'chatham'): (-82.179646, 42.3970551, 'CN Chatham: the collection\'s Great Western Chatham station (Brendan, 1 Nov 2026)'),
+        ('cn', 'brantford'): (-80.265506, 43.146675, 'CN Brantford station (Brendan, 1 Nov 2026; not in the collection)'),
+        ('cn', 'marmora'): (-77.6474768, 44.4929612, 'CN Marmora: the collection\'s Central Ontario Railway Marmora station (Brendan, 1 Nov 2026)'),
+        ('cn', 'kincardine'): (-81.6403383, 44.1761815, 'CN Kincardine: the collection\'s point, spelled Kinkardine (Brendan, 1 Nov 2026)'),
+        ('cn', 'peterboro'): (-78.3240941, 44.3026289, 'CN Peterboro: the primary station in 1948 (Brendan, 1 Nov 2026; the collection\'s Midland Railway point)'),
+        ('cn', 'port hope'): (-78.298768, 43.9434821, 'CN Port Hope: the main line station (the collection\'s Grand Trunk point; the Midland Railway station up the branch is not it)'),
         ('cn', 'st isidore junction'): (-73.6402, 45.3455, 'CN St. Isidore Junction: the north end of the collection\'s Lake St. Louis & Province line (Hemmingford branch)'),
         ('cn', 'lac remi'): (-74.7572, 46.0151, 'CN Lac Remi: the end of the collection\'s St. Raymond subdivision (Montfort line)'),
         ('cn', 'trenton'): (-77.578233, 44.09969, 'CN Trenton station, off the main line (the main-line trains called at Trenton Junction, the collection\'s point): Brendan\'s point, on the collection track (31 Oct 2026)'),
