@@ -1,0 +1,19 @@
+# Canadian National, Table 145: Palmerston - Harriston - Walkerton - Paisley - Port Elgin - Southampton. Source: Official Guide, April 25, 1948, CN Table 145 (Brendan, 1 Nov 2026, pages 1133 - 1134; private scans og1948_cnq/p1133_*). EASTERN TIME.
+# Miles as printed.
+# Signs: * daily; dagger ex Sun; double dagger (Table 150) daily ex Sat and Sun; section Sun only; a Mon Wed Fri; b Tue Thu Sat; d stops to leave from Durand and west; f flag; k Sat only; Psi: runs Sundays June 27 - Sept. 5 (and Mondays Aug. 2, Sept. 6); circled dot: will not run on U.S. holidays; crescent: no checked baggage Detroit - Pontiac; boxed sign at Brantford: frequent bus service to and from St. George; square: motor train; M mixed.
+#train col=No179 num=179 dir=down days="ex Sun" kind=passenger note="Daily except Sunday: Palmerston 9.10 p.m. to Southampton 11.10 p.m."
+#train col=M329 num=329 dir=down days="ex Sun" kind=mixed note="Mixed, daily except Sunday: Palmerston 11.30 a.m. to Southampton 1.50 p.m."
+#train col=No178 num=178 dir=up days="ex Sun" kind=passenger note="Daily except Sunday: Southampton 5.50 a.m. to Palmerston 7.50 a.m."
+#train col=M330 num=330 dir=up days="ex Sun" kind=mixed note="Mixed, daily except Sunday: Southampton 1.05 p.m. to Palmerston 3.45 p.m."
+#train col=No142S num=142 dir=up days=Sun kind=passenger note="Sundays June 27 to September 5 (and Mondays August 2 and September 6): Southampton 6.00 p.m. to Palmerston 7.52 p.m. (on to Guelph and Toronto)."
+mile,station,principal,prov,tz,No179,M329,No178,M330,No142S
+0.0,Palmerston,1,ON,E,lv 9.10p,lv 11.30a,ar 7.50a,ar 3.45p,ar 7.52p
+5.7,Harriston,1,ON,E,9.20p,11.40a,7.38a,3.35p,7.42p
+12.4,Clifford,0,ON,E,9.33p,11.55a,7.22a,3.17p,f7.29p
+21.2,Mildmay,0,ON,E,9.48p,12.12p,7.07a,2.59p,7.14p
+27.0,Walkerton,1,ON,E,10.01p,12.30p,6.55a,2.46p,7.02p
+34.5,Cargill,0,ON,E,10.15p,12.46p,6.39a,2.22p,f6.46p
+35.7,Pinkerton,0,ON,E,f10.19p,12.49p,6.35a,2.17p,f6.43p
+42.2,Paisley,0,ON,E,10.32p,1.03p,6.24a,2.03p,6.33p
+55.1,Port Elgin,0,ON,E,11.00p,1.33p,5.59a,1.33p,6.09p
+59.2,Southampton,1,ON,E,ar 11.10p,ar 1.50p,lv 5.50a,lv 1.05p,lv 6.00p

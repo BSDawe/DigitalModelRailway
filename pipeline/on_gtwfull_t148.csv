@@ -1,0 +1,14 @@
+# Grand Trunk Western (CN), Michigan: TRANSCRIBED ONLY, not built (United States). Table 148: Detroit - Mount Clemens - Richmond - Port Huron (Tunnel). Source: Official Guide, April 25, 1948, CN Table 148 (Brendan, 1 Nov 2026, pages 1133 - 1134; private scans og1948_cnq/p1133_*). EASTERN TIME.
+# Signs: * daily; dagger ex Sun; double dagger (Table 150) daily ex Sat and Sun; section Sun only; a Mon Wed Fri; b Tue Thu Sat; d stops to leave from Durand and west; f flag; k Sat only; Psi: runs Sundays June 27 - Sept. 5 (and Mondays Aug. 2, Sept. 6); circled dot: will not run on U.S. holidays; crescent: no checked baggage Detroit - Pontiac; boxed sign at Brantford: frequent bus service to and from St. George; square: motor train; M mixed.
+#train col=No34 num=34 dir=down days="ex Sun" kind=motor note="Motor train: Detroit 3.15 p.m. to Port Huron 5.10 p.m."
+#train col=No35 num=35 dir=up days="ex Sun" kind=motor note="Motor train: Port Huron 7.30 p.m. to Detroit 9.20 p.m."
+mile,station,principal,prov,tz,No34,No35
+0,Detroit,1,MI,E,lv 3.15p,ar 9.20p
+4.13,Milwaukee Junction,0,MI,E,3.25p,9.10p
+16.04,Fraser,0,MI,E,3.50p,f8.44p
+21.53,Mount Clemens,1,MI,E,4.05p,8.35p
+26.17,Chesterfield,0,MI,E,f4.11p,f8.19p
+31.77,New Haven,0,MI,E,4.20p,8.12p
+37.48,Richmond,1,MI,E,4.30p,8.05p
+48.17,Smith's Creek,0,MI,E,4.50p,f7.45p
+56.97,Port Huron (Tunnel),1,MI,E,ar 5.10p,lv 7.30p

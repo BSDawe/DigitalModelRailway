@@ -1,0 +1,41 @@
+# Canadian National, Table 143: Hamilton - Harrisburg - (St. George) - Galt - Preston - Guelph - Fergus - Palmerston - Hanover - Parkhead - Owen Sound. Source: Official Guide, April 25, 1948, CN Table 143 (Brendan, 1 Nov 2026, pages 1133 - 1134; private scans og1948_cnq/p1133_*). EASTERN TIME.
+# Miles as printed (the trains run in and out of St. George from Harrisburg: Harrisburg 19.2 and 23.1). Brantford - St. George: bus (not entered). Toronto - Guelph and London - Palmerston connections in the notes.
+# Signs: * daily; dagger ex Sun; double dagger (Table 150) daily ex Sat and Sun; section Sun only; a Mon Wed Fri; b Tue Thu Sat; d stops to leave from Durand and west; f flag; k Sat only; Psi: runs Sundays June 27 - Sept. 5 (and Mondays Aug. 2, Sept. 6); circled dot: will not run on U.S. holidays; crescent: no checked baggage Detroit - Pontiac; boxed sign at Brantford: frequent bus service to and from St. George; square: motor train; M mixed.
+#train col=No173 num=173 dir=down days="ex Sun" kind=passenger note="Daily except Sunday: Hamilton 6.35 a.m. by Galt and Guelph (8.55 - 9.40) and Palmerston (11.03 - 11.20) to Owen Sound 2.05 p.m.; in and out of St. George from Harrisburg."
+#train col=No175 num=175 dir=down days="ex Sun" kind=passenger note="Daily except Sunday: (Toronto 5.35 p.m., on_cn_t127) Guelph 7.25 p.m. by Palmerston (8.45 - 9.00) to Owen Sound 11.20 p.m."
+#train col=M339 num=339 dir=down days="ex Sun" kind=mixed note="Mixed, daily except Sunday: Parkhead 3.12 p.m. to Owen Sound 3.50 p.m."
+#train col=No172 num=172 dir=up days="ex Sun" kind=passenger note="Daily except Sunday: Owen Sound 5.40 a.m. by Palmerston (8.00 - 8.10) to Guelph 9.19 a.m. (on to Toronto 11.00 a.m., on_cn_t127)."
+#train col=No174 num=174 dir=up days="ex Sun" kind=passenger note="Daily except Sunday: Owen Sound 1.25 p.m. by Palmerston (4.12 - 4.30) and Guelph (5.53 - 6.15) to Hamilton 8.20 p.m.; in and out of St. George from Harrisburg."
+#train col=M340 num=340 dir=up days="ex Sun" kind=mixed note="Mixed, daily except Sunday: Owen Sound 9.45 a.m. to Parkhead 10.15 a.m."
+#train col=No142 num=142 dir=up days=Sun kind=passenger note="Sundays June 27 to September 5 (and Mondays August 2 and September 6): (Southampton 6.00 p.m., on_cn_t145) Palmerston 8.02 p.m. to Guelph 9.12 p.m. (on to Toronto 10.20 p.m.)."
+mile,station,principal,prov,tz,No173,No175,M339,No172,No174,M340,No142
+0.0,Hamilton (James St.),1,ON,E,lv 6.35a,,,,ar 8.20p,,
+6.7,Dundas,0,ON,E,6.49a,,,,f8.07p,,
+11.6,Copetown,0,ON,E,6.57a,,,,f8.01p,,
+16.0,Lynden,0,ON,E,7.05a,,,,7.54p,,
+19.2,Harrisburg,1,ON,E,7.10a,,,,7.45p,,
+21.2,St. George,0,ON,E,7.17a,,,,7.41p,,
+23.1,Harrisburg,1,ON,E,7.27a,,,,7.35p,,
+29.2,Branchton,0,ON,E,7.39a,,,,7.25p,,
+34.9,Galt,1,ON,E,7.53a,,,,7.15p,,
+39.0,Preston,0,ON,E,8.07a,,,,7.00p,,
+42.3,Hespeler,0,ON,E,8.18a,,,,6.50p,,
+51.0,Guelph,1,ON,E,ar 8.55a / lv 9.40a,lv 7.25p,,ar 9.19a,ar 5.53p / lv 6.15p,,ar 9.12p
+65.7,Elora,0,ON,E,10.05a,7.50p,,8.59a,5.29p,,8.49p
+68.3,Fergus,1,ON,E,10.14a,7.58p,,8.54a,5.22p,,8.44p
+74.5,Alma,0,ON,E,10.25a,8.08p,,8.44a,5.07p,,f8.34p
+80.0,Goldstone,0,ON,E,f10.34a,f8.17p,,f8.37a,f4.58p,,f8.27p
+83.6,Drayton,0,ON,E,10.41a,8.24p,,8.31a,4.52p,,8.22p
+87.8,Moorefield,0,ON,E,10.50a,8.33p,,8.23a,4.43p,,8.15p
+94.8,Palmerston,1,ON,E,ar 11.03a / lv 11.20a,ar 8.45p / lv 9.00p,,ar 8.00a / lv 8.10a,ar 4.12p / lv 4.30p,,lv 8.02p
+100.6,Harriston,1,ON,E,11.30a,9.10p,,7.51a,4.00p,,
+110.5,Ayton,0,ON,E,11.50a,9.28p,,7.32a,3.35p,,
+114.5,Neustadt,0,ON,E,11.58a,9.36p,,7.24a,3.25p,,
+120.8,Hanover,1,ON,E,12.15p,9.50p,,7.10a,3.11p,,
+127.1,Elmwood,0,ON,E,12.29p,10.04p,,6.56a,2.56p,,
+131.6,Chesley,1,ON,E,12.40p,10.13p,,6.47a,2.47p,,
+144.4,Tara,0,ON,E,1.05p,10.35p,,6.25a,2.21p,,
+149.4,Allenford,0,ON,E,1.15p,f10.45p,,6.13a,2.07p,,
+154.0,Parkhead,1,ON,E,ar 1.24p / lv 1.33p,f10.54p,lv 3.12p,6.04a,ar 1.47p / lv 1.57p,ar 10.15a,
+156.6,Shallow Lake,0,ON,E,1.41p,11.00p,f3.21p,5.58a,1.41p,f10.09a,
+166.3,Owen Sound,1,ON,E,ar 2.05p,ar 11.20p,ar 3.50p,lv 5.40a,lv 1.25p,lv 9.45a,

@@ -1,0 +1,46 @@
+# Grand Trunk Western (CN), Michigan: TRANSCRIBED ONLY, not built (United States). Table 150: Detroit - Pontiac - Durand - Owosso - Ionia - Grand Rapids - Muskegon. Source: Official Guide, April 25, 1948, CN Table 150 (Brendan, 1 Nov 2026, pages 1133 - 1134; private scans og1948_cnq/p1133_*). EASTERN TIME.
+# Grand Rapids - Coopersville - Spring Lake - Grand Haven (175.60 - 191.32): mixed M51 Grand Rapids 10.00 a.m. - Coopersville 10.40 - Spring Lake 11.00 - Grand Haven 11.30 a.m.; M50 Grand Haven 3.00 p.m. - Spring Lake f3.04 - Coopersville 3.30 - Grand Rapids 4.00 p.m. (ex Sun). Muskegon - Milwaukee car ferry (limited passengers, 6 1/2 hours): from Milwaukee 8.00 a.m., 2.00, 7.30, 11.00 p.m. (Central); from Muskegon 5.00, 11.00 a.m., 4.00, 11.00 p.m. (Eastern), daily.
+# Signs: * daily; dagger ex Sun; double dagger (Table 150) daily ex Sat and Sun; section Sun only; a Mon Wed Fri; b Tue Thu Sat; d stops to leave from Durand and west; f flag; k Sat only; Psi: runs Sundays June 27 - Sept. 5 (and Mondays Aug. 2, Sept. 6); circled dot: will not run on U.S. holidays; crescent: no checked baggage Detroit - Pontiac; boxed sign at Brantford: frequent bus service to and from St. George; square: motor train; M mixed.
+#train col=No57 num=57 dir=down days=daily kind=passenger note="Daily: Detroit 11.15 p.m. by Durand (1.10 - 2.20) and Grand Rapids (4.35 - 4.45) to Muskegon 6.00 a.m. (Durand - Muskegon printed ex Sun)."
+#train col=No19 num=19 dir=down days="ex Sun" kind=passenger note="Detroit 5.10 p.m. to Durand 7.25 p.m."
+#train col=No79 num=79 dir=down days="Mon,Tue,Wed,Thu,Fri" kind=passenger note="Detroit 4.20 p.m. to Pontiac 5.20 p.m."
+#train col=No77 num=77 dir=down days="ex Sun" kind=passenger note="Detroit 3.45 p.m. to Pontiac 4.35 p.m."
+#train col=No21 num=21 dir=down days=daily kind=passenger note="Daily: Detroit 1.40 p.m. by Durand (3.30 - 3.55) and Grand Rapids (6.00 - 6.05) to Muskegon 7.15 p.m."
+#train col=No23 num=23 dir=down days=Sat kind=passenger note="Saturday only: Detroit 11.30 a.m. to Pontiac 12.20 p.m."
+#train col=No22 num=22 dir=up days="ex Sun" kind=passenger note="Muskegon 12.01 a.m. by Grand Rapids (1.00 - 1.30) and Durand (4.00 - 4.15) to Detroit 6.40 a.m."
+#train col=No72 num=72 dir=up days="ex Sun" kind=passenger note="Pontiac 6.15 a.m. to Detroit 7.10 a.m."
+#train col=No74 num=74 dir=up days="ex Sun" kind=passenger note="Pontiac 6.50 a.m. to Detroit 7.40 a.m."
+#train col=No28 num=28 dir=up days="ex Sun" kind=passenger note="Durand 6.15 a.m. to Detroit 7.55 a.m."
+#train col=No128 num=128 dir=up days=Sun kind=passenger note="Sunday only: Durand 6.25 a.m. to Detroit 8.25 a.m."
+#train col=No54 num=54 dir=up days="ex Sun" kind=passenger note="Durand 7.00 a.m. to Detroit 9.30 a.m."
+#train col=No56 num=56 dir=up days=daily kind=passenger note="Daily: Muskegon 12.05 p.m. by Grand Rapids (1.00 - 1.05) and Durand (3.20 - 4.00) to Detroit 5.50 p.m."
+mile,station,principal,prov,tz,No57,No19,No79,No77,No21,No23,No22,No72,No74,No28,No128,No54,No56
+0,Detroit,1,MI,E,lv 11.15p,lv 5.10p,lv 4.20p,lv 3.45p,lv 1.40p,lv 11.30a,ar 6.40a,ar 7.10a,ar 7.40a,ar 7.55a,ar 8.25a,ar 9.30a,ar 5.50p
+4.13,Milwaukee Junction,0,MI,E,11.25p,5.19p,4.30p,3.54p,1.49p,11.39a,6.29a,6.59a,7.29a,7.44a,8.10a,9.19a,5.38p
+6.58,Highland Park,0,MI,E,,5.23p,4.36p,3.58p,f1.53p,11.43a,6.24a,6.54a,7.24a,f7.38a,f8.02a,f9.11a,f5.31p
+10.89,Ferndale,0,MI,E,,5.31p,4.45p,4.06p,,11.51a,6.15a,6.45a,7.15a,,,f9.05a,f5.26p
+12.95,Royal Oak,0,MI,E,11.40p,5.40p,4.51p,4.10p,2.05p,11.55a,6.10a,6.40a,7.12a,7.30a,7.54a,9.02a,5.23p
+17.75,Birmingham,0,MI,E,11.50p,5.55p,5.02p,4.20p,2.12p,12.05p,6.00a,6.30a,7.04a,7.24a,7.48a,8.48a,5.17p
+26.34,Pontiac,1,MI,E,12.15a,6.20p,ar 5.20p,ar 4.35p,2.30p,ar 12.20p,5.45a,lv 6.15a,lv 6.50a,7.12a,7.35a,8.30a,5.05p
+31.74,Drayton Plains,0,MI,E,,f6.27p,,,,,f5.15a,,,,,8.00a,
+33.29,Waterford,0,MI,E,,f6.30p,,,,,f5.11a,,,,,7.56a,
+35.23,Clarkston,0,MI,E,,6.34p,,,,,f5.06a,,,,,7.52a,
+41.45,Davisburg,0,MI,E,,f6.43p,,,,,f4.57a,,,,,7.43a,
+46.49,Holly,0,MI,E,12.40a,6.52p,,,2.58p,,4.49a,,,f6.48a,f7.01a,7.35a,4.30p
+50.74,Fenton,0,MI,E,12.47a,7.00p,,,3.05p,,4.40a,,,f6.42a,f6.55a,7.26a,4.23p
+55.29,Linden,0,MI,E,,7.06p,,,,,f4.33a,,,,,7.18a,
+62.63,Gaines,0,MI,E,,7.15p,,,,,f4.24a,,,,,7.08a,
+66.97,Durand,1,MI,E,ar 1.10a / lv 2.20a,ar 7.25p,,,ar 3.30p / lv 3.55p,,ar 4.00a / lv 4.15a,,,lv 6.15a,lv 6.25a,lv 7.00a,ar 3.20p / lv 4.00p
+70.15,Vernon,0,MI,E,,,,,,,,,,,,,
+75.52,Corunna,0,MI,E,,,,,,,,,,,,,
+78.52,Owosso,1,MI,E,2.38a,,,,4.11p,,3.35a,,,,,,3.02p
+88.78,Ovid,0,MI,E,3.02a,,,,4.25p,,,,,,,,2.43p
+91.49,Shepardsville,0,MI,E,,,,,,,,,,,,,
+98.13,St. Johns,0,MI,E,3.15a,,,,4.36p,,2.55a,,,,,,2.30p
+112.79,Pewamo,0,MI,E,,,,,,,,,,,,,
+124.16,Ionia,1,MI,E,3.46a,,,,5.07p,,2.17a,,,,,,1.55p
+132.47,Saranac,0,MI,E,,,,,,,,,,,,,
+139.38,Lowell,0,MI,E,,,,,,,,,,,,,
+148.01,Ada,0,MI,E,,,,,,,,,,,,,
+159.72,Grand Rapids,1,MI,E,ar 4.35a / lv 4.45a,,,,ar 6.00p / lv 6.05p,,ar 1.00a / lv 1.30a,,,,,,ar 1.00p / lv 1.05p
+197.3,Muskegon,1,MI,E,ar 6.00a,,,,ar 7.15p,,lv 12.01a,,,,,,lv 12.05p

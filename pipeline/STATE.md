@@ -2248,3 +2248,15 @@ Stations of different railways within 250 m (70 pairs; script: same check over v
   on_cn_t137 Allandale - Collingwood - Meaford 63, 61 / 60 (e: Tue - Sat), 62, 160 (summer Sun); on_cn_t137c Allandale - Angus - Camp Borden 61 section / M396
   (replaces on_cn_t126c, DELETED; Camp Borden mile still estimated, Brendan to trace); on_cn_t126m cut to Toronto - Allandale (45 / 42; 41M, 44M, 38M removed).
   on_cn_t138 Parkhead - Wiarton M341, M337 / M336, M338 (Parkhead at the junction, APPROXIMATE).
+
+## Version 121 (1 November 2026): pages 1133 - 1134 (CN Tables 143, 145; GTW Tables 146 - 154)
+- Scans saved to dmr-sources (og1948_cnq/p1128_* to p1133_*, cp_t050_no20). Script: scratchpad on/t143.py.
+- on_cn_t143 Hamilton (James St.) - Dundas - Lynden - Harrisburg - (St. George and back) - Galt - Preston - Hespeler - Guelph - Elora - Fergus - Palmerston - Harriston -
+  Hanover - Chesley - Parkhead - Owen Sound: 173, 175 (from Guelph; Toronto - Guelph in on_cn_t127), M339 (Parkhead - Owen Sound) / 172 (to Guelph; on to Toronto in
+  t127), 174 (to Hamilton), M340 (Owen Sound - Parkhead), 142 (summer Sun, Palmerston - Guelph). Link: GW original main Lynden - Harrisburg - St. George (part of
+  collection piece 6028, dropped by the abandonment filter for Harrisburg - Alford, 1923). Brantford - St. George bus not entered.
+- on_cn_t145 Palmerston - Harriston - Walkerton - Paisley - Port Elgin - Southampton: 179, M329 / 178, M330, 142 (summer Sun).
+- GRAND TRUNK WESTERN (Michigan): TRANSCRIBED, NOT BUILT (United States): on_gtwfull_t146 (Durand - Bay City), t148 (Detroit - Port Huron), t149 (Jackson - Pontiac -
+  Richmond), t150 (Detroit - Durand - Grand Rapids - Muskegon; Grand Haven mixed and the Muskegon - Milwaukee car ferry in its notes), t152 (Durand - Greenville),
+  t153 (Pontiac - Caseville). Tables 151 (St. Thomas - Glencoe - Alvinston, Ontario) and 154: freight only.
+- TO CHECK (Brendan): Parkhead station point (now at the junction of the Wiarton line, APPROXIMATE; used by Tables 138 and 143); St. George end of the stub.

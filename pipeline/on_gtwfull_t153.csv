@@ -1,0 +1,21 @@
+# Grand Trunk Western (CN), Michigan: TRANSCRIBED ONLY, not built (United States). Table 153: Pontiac - Imlay City - Cass City - Caseville (mixed). Tables 151 (St. Thomas - Glencoe - Alvinston, Ontario) and 154 (Cass City - Bad Axe): freight (and express) only. Source: Official Guide, April 25, 1948, CN Table 153 (Brendan, 1 Nov 2026, pages 1133 - 1134; private scans og1948_cnq/p1133_*). EASTERN TIME.
+# Signs: * daily; dagger ex Sun; double dagger (Table 150) daily ex Sat and Sun; section Sun only; a Mon Wed Fri; b Tue Thu Sat; d stops to leave from Durand and west; f flag; k Sat only; Psi: runs Sundays June 27 - Sept. 5 (and Mondays Aug. 2, Sept. 6); circled dot: will not run on U.S. holidays; crescent: no checked baggage Detroit - Pontiac; boxed sign at Brantford: frequent bus service to and from St. George; square: motor train; M mixed.
+#train col=M49 num=49 dir=down days="Mon,Wed,Fri" kind=mixed note="Pontiac 8.00 a.m. to Caseville 1.30 p.m."
+#train col=M52 num=52 dir=up days="Tue,Thu,Sat" kind=mixed note="Caseville 8.00 a.m. to Pontiac 1.45 p.m."
+mile,station,principal,prov,tz,M49,M52
+0,Pontiac,1,MI,E,lv 8.00a,ar 1.45p
+13.92,Oxford,0,MI,E,8.30a,1.15p
+27.28,Dryden,0,MI,E,9.00a,12.05p
+33.57,Imlay City,1,MI,E,9.20a,11.45a
+39.3,Lum,0,MI,E,10.00a,11.12a
+48.62,North Branch,0,MI,E,10.40a,10.50a
+54.74,Clifford,0,MI,E,10.50a,10.20a
+61.65,Kingston,0,MI,E,11.05a,10.05a
+64.85,Wilmot,0,MI,E,11.15a,9.55a
+68.56,Deford,0,MI,E,11.23a,9.45a
+74.35,Cass City,1,MI,E,12.00p,9.30a
+80.01,Gagetown,0,MI,E,12.20p,9.00a
+84.84,Owendale,0,MI,E,12.40p,8.40a
+86.9,Linkville,0,MI,E,f12.45p,f8.35a
+91.75,Pigeon,0,MI,E,1.05p,8.25a
+99.39,Caseville,1,MI,E,ar 1.30p,lv 8.00a
