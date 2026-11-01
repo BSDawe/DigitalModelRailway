@@ -2125,3 +2125,8 @@ Stations of different railways within 250 m (70 pairs; script: same check over v
   CP_STRATHMORE, CP_BROOKS, CP_ERSKINE, CP_BUFFALO, CP_ROSEDALE, CP_GLENWOOD, CN_STE_ANNE, CN_CARDINAL, CN_ELGIN, CN_LAURIER, CP_DOUGLAS, CP_OGEMA, CP_GLADSTONE,
   CP_DRAKE, CP_ROCKHAVEN, CP_EAU_CLAIRE, CP_LAKESIDE (and near-twins CP_MCAULEY, CP_ROSETOWN_JCT). Kinmount and Richmond fixed in Version 110; the rest: offered to
   Brendan as one general fix (a distinct id when the same name is more than about 5 km away).
+- Version 111 (31 Oct): split_stops.py (run at assembly after merge_stations): a stop id used by places more than 5 km apart gets one id per place (old id + line key,
+  e.g. CN_CARDINAL_ONCN082); names on the page unchanged (Brendan: unique ids, not visible). 21 split; the B.C. place keeps the old id. 5522 stops.
+- Windsor - Detroit (Brendan, 31 Oct): a CN TRAIN FERRY, coaches roll on and off to CN's Detroit terminal (Brush Street). Model: the Table 90 Windsor trains carry on over
+  the river on a water crossing line (no boat, no track drawn), with holds for loading / unloading, to the border. CN had no tunnel access; buses only from 1955.
+  DO NOTHING until Brendan locates the wharves.

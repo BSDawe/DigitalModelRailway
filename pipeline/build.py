@@ -126,6 +126,8 @@ def finish(state):
     import merge_stations                                              # joint stations: one stop for two railways (Brendan, 17 October 2026)
     unused = merge_stations.apply(viz, gt)
     if unused: print('  merge_stations: no such stations', unused)
+    import split_stops                                                 # one id per place: same-named stations far apart get their own ids (31 October 2026)
+    print('  split_stops:', ' '.join(split_stops.apply(viz, gt)))
     import real_ends                                                   # where trains that run off the map really start and end
     miss = real_ends.apply(viz, gt)
     if 'calendar.txt' in gt:                                           # a service added by two steps (W_ day lists) is written once
