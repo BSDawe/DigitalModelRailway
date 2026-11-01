@@ -2199,3 +2199,19 @@ Stations of different railways within 250 m (70 pairs; script: same check over v
 - FOUND (1 Nov, after Version 115): stations a little off the track get an in-and-out stub on the route (the train runs to the point and back): about 150
   cases in Ontario and Quebec, mostly 30 - 150 m, a few large (CP Kipawa 603 m, Ville Marie 739 m, Foster 461 m, St. Basile 438 m, Leaside 328 m; CN Windsor
   264 m is the ferry reversal, intended). Offered to Brendan as one general fix (stop on the track beside the point instead of running out to it).
+
+## Version 116 (1 November 2026)
+- Chatham: the collection's Great Western pieces through Chatham never reached the station (trains ran 2 km past and back: the 2.9 mi extra Brendan saw);
+  the two duplicate 2-point links replaced by one net link through the station (end of the coarse London - Chatham piece, the station, the start of the
+  Chatham - Windsor piece). Force removed. oncn090w 111.8 traced / 111.5 printed.
+- CP 159 / 160 (skcp107b): McAuley - Welwyn IS in the NRWN (CP Rocanville subdivision, mb_all.json; it passes 44 m from the end of Brendan's Kirkella -
+  McAuley trace). The straight came from the printed miles: Manson - McAuley 5.1 printed, 8.9 on the track. Hand points (sk_lines HAND) Kirkella, Manson (CGN,
+  on the trace), McAuley (trace end); force Kirkella - Manson - McAuley - Welwyn. All on track (315.7 traced / 303.9 printed).
+- STUBS (Brendan: fix, prairies too): stubs.py at assembly (after split_stops): where the route runs out to a station point and straight back (up to 800 m),
+  the stub is cut, the station stops on the track where the stub left it, and the chains close up (viz route, stations, segments; GTFS shapes, stop_times
+  shape_dist, stops.txt position). Kept: real reversals (the train leaves the way it came, heading turned more than about 100 degrees) and KEEP (Windsor ferry).
+  Only lines whose GTFS route id is their key (all Ontario, Quebec, prairie, Alberta, Washington steps). About 267 cut; the largest: St. Gregoire 776 m, Fassett
+  594 m, Peterboro 456 m, N.Y.C. Depot (St. Thomas) 442 m, Winagami 404 m, Hammond 371 m, Roblindale 336 m, Oriole 332 m, Maple Creek 311 m, Oak Lake 272 m.
+- LEFT (about 90 stations): out-and-back stubs where the route turns back the way it came, kept as possible real reversals: e.g. Coe Hill (real),
+  Trenton Junction, Bridge Street (Montreal, 232 m), Leaside 328 m, St. Basile 438 m, Foster 461 m, Kipawa 603 m, Ville Marie 739 m, Bulyea 459 m, Brandon
+  387 m, Battleford 320 m, Avonlea 735 m; over 800 m not touched (Prinham 2.7 km, Schuler 1.3 km, Virden (107a) 1.0 km, Kennewick 1.0 km). To review with Brendan.

@@ -128,6 +128,8 @@ def finish(state):
     if unused: print('  merge_stations: no such stations', unused)
     import split_stops                                                 # one id per place: same-named stations far apart get their own ids (31 October 2026)
     print('  split_stops:', ' '.join(split_stops.apply(viz, gt)))
+    import stubs                                                       # stations off the track: stop beside it, no out-and-back stub (1 November 2026)
+    _st = stubs.apply(viz, gt); print(f'  stubs: {len(_st)} cut;', '; '.join(x for x in _st if int(x.rsplit(' ', 2)[1]) > 250))
     import real_ends                                                   # where trains that run off the map really start and end
     miss = real_ends.apply(viz, gt)
     if 'calendar.txt' in gt:                                           # a service added by two steps (W_ day lists) is written once
