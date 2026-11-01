@@ -633,6 +633,7 @@ function renderBase() {
   g.lineCap = 'butt';
   for (const T of TRACK) for (const r of T.runs) {
     if (!r.lods) continue;
+    if (r.owner === 'water') { g.setLineDash([1 / k, 5 / k]); g.lineCap = 'round'; g.strokeStyle = colors['ink-soft']; g.lineWidth = 1.6 / k; strokePieces(g, r.lods, k, box); g.lineCap = 'butt'; continue; }   // a train ferry: the train crosses on a water line, no track (Windsor - Detroit, Brendan 31 Oct 2026)
     if (r.est) { g.setLineDash([7 / k, 7 / k]); g.strokeStyle = colors[r.owner]; g.lineWidth = 2.2 / k; strokePieces(g, r.lods, k, box); continue; }   // no track to follow: a straight line from station to station, drawn broken
     g.setLineDash([]); g.strokeStyle = colors[r.owner]; g.lineWidth = (INTER_OWN.has(r.owner) ? 2.6 : 3.2) / k; strokePieces(g, r.lods, k, box);
     if (INTER_OWN.has(r.owner)) continue;                           // interurban track: a solid line, like the Chilliwack line

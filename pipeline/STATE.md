@@ -2129,4 +2129,15 @@ Stations of different railways within 250 m (70 pairs; script: same check over v
   e.g. CN_CARDINAL_ONCN082); names on the page unchanged (Brendan: unique ids, not visible). 21 split; the B.C. place keeps the old id. 5522 stops.
 - Windsor - Detroit (Brendan, 31 Oct): a CN TRAIN FERRY, coaches roll on and off to CN's Detroit terminal (Brush Street). Model: the Table 90 Windsor trains carry on over
   the river on a water crossing line (no boat, no track drawn), with holds for loading / unloading, to the border. CN had no tunnel access; buses only from 1955.
-  DO NOTHING until Brendan locates the wharves.
+  BUILT in Version 112 (below).
+
+## Version 112 (31 October 2026): Windsor - Detroit CN train ferry
+- Brendan's KMZ (USGS quad 1947): Windsor ferry track (lead off the GW main to the slip), Windsor wharf (-83.03400, 42.32190), Detroit wharf (-83.03763, 42.32825),
+  Detroit Brush Street station (-83.03976, 42.32851). Links added: 'CN Windsor ferry track' (own cn) and the crossing (own 'water': Windsor slip to mid-river, a smooth
+  quadratic curve bowed about 150 m downstream / west; border at mid-course (-83.0374941, 42.3245451), APPROXIMATE).
+- Page: a track run whose owner is 'water' is drawn as a dotted water line (like steamer lanes), no track; the train itself crosses (no boat).
+- on_cn_t090w: rows Windsor Ferry Slip (110.4) and International Boundary (Detroit River, to Detroit, Mich.) (110.7) added (scratchpad patch; t090.py is NOT rerun).
+  Times from the printed Windsor - Detroit interval I (40 - 65 min): to Detroit: Windsor ar T, lv T+0.11I, slip ar T+0.22I, lv T+0.55I, border T+0.67I; from
+  Detroit mirrored (Windsor lv as printed). Windsor departure / arrival and the slip and border times estimated.
+- The route reverses at Windsor station and runs back about 0.4 km along the main line to the slip (the path-finder ties the slip end to the main line, so it does not
+  use the full length of the ferry lead). Detroit end (slip, Brush Street) in the notes only.
