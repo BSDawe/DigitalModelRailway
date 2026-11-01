@@ -2216,3 +2216,8 @@ Stations of different railways within 250 m (70 pairs; script: same check over v
   Trenton Junction, Bridge Street (Montreal, 232 m), Leaside 328 m, St. Basile 438 m, Foster 461 m, Kipawa 603 m, Ville Marie 739 m, Bulyea 459 m, Brandon
   387 m, Battleford 320 m, Avonlea 735 m; over 800 m not touched (Prinham 2.7 km, Schuler 1.3 km, Virden (107a) 1.0 km, Kennewick 1.0 km). To review with Brendan.
 - Brendan (1 Nov): CN Brandon and Battleford reversals are real (added to stubs.KEEP; they were already kept). The rest of the list still to review.
+- Version 117 (1 Nov): Bridge Street (Montreal) hand point moved onto the line the trains run (-73.551793, 45.485113): the old point sent every train from
+  Central Station past it toward the Victoria Bridge and back (Montreal - St. Lambert 1.1 mi shorter now). Brendan: Bridge Street was an error he meant to fix;
+  the exact 1948 station position still to confirm.
+- stubs.py: a station whose stop id is shared with another railway is never moved (the cut had pulled the L&PS N.Y.C. Depot at St. Thomas off the NYC depot,
+  Brendan); KEEP adds ('onlps001', 'N.Y.C. Depot'). 266 cut.

@@ -4,20 +4,23 @@ map, the train driving out and back). At assembly the stub is cut out: the stati
 steps) are left alone. KEEP: real reversals (the Windsor ferry: trains back out of Windsor station to the slip)."""
 import csv, io, math
 MAX_M = 800.0
-KEEP = {('oncn090w', 'Windsor'), ('skcn171', 'Brandon'), ('skcn201', 'Battleford'), ('skcp130a', 'Battleford')}   # real reversals (Brendan, 1 Nov 2026)
+KEEP = {('oncn090w', 'Windsor'), ('skcn171', 'Brandon'), ('skcn201', 'Battleford'), ('skcp130a', 'Battleford'), ('onlps001', 'N.Y.C. Depot')}   # real reversals (Brendan, 1 Nov 2026)
 def _d(a, b): return math.hypot((a[0] - b[0]) * 111320 * math.cos(math.radians(a[1])), (a[1] - b[1]) * 110540)
 def apply(viz, gt):
     def table(fn): return list(csv.reader(io.StringIO(''.join(gt[fn]))))
     def put(fn, t): buf = io.StringIO(); csv.writer(buf, lineterminator='\n').writerows(t); gt[fn] = buf.getvalue().splitlines(keepends=True)
     routes = {r[0] for r in table('routes.txt')[1:] if r}
     fix, done, moved = {}, [], {}
+    owners = {}                                                          # a station shared with another railway stays where it is (St. Thomas: the L&PS into the NYC depot, Brendan 1 Nov 2026)
+    for L in viz.get('lines', []):
+        for s in L.get('stations', []): owners.setdefault(s.get('gid'), set()).add(L.get('owner'))
     for L in viz.get('lines', []):
         R = L.get('route') or []
         if L['key'].upper() not in routes or not R or len(R[0]) < 3: continue
         st = L.get('stations', []); cuts = []
         at = {round(p[2], 1): k for k, p in enumerate(R)}
         for s in st[1:-1]:
-            if (L['key'], s['name']) in KEEP: continue
+            if (L['key'], s['name']) in KEEP or len(owners.get(s.get('gid'), ())) > 1: continue
             t = at.get(round(s['chain'], 1))
             if t is None: continue
             K = 0

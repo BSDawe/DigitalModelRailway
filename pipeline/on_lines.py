@@ -205,7 +205,7 @@ HAND = {('thb', 'toronto'): _TU, ('cpthb', 'toronto'): _TU, ('thb', 'hamilton'):
         ('cn', 'trenton'): (-77.578233, 44.09969, 'CN Trenton station, off the main line (the main-line trains called at Trenton Junction, the collection\'s point): Brendan\'s point, on the collection track (31 Oct 2026)'),
         ('cn', 'sherbrooke'): (-71.888203, 45.400550, 'CN (Grand Trunk) Sherbrooke station, rue du Dépôt (Brendan, 30 Oct 2026, "about"); the CP station is separate, about 850 m away'),
         ('cn', 'ste rosalie'): (-72.8940748, 45.6399046, 'CN Ste. Rosalie, on the Drummondville line 0.4 mi from the junction (by the printed miles); APPROXIMATE, Claude'),
-        ('cn', 'bridge street'): (-73.5515986, 45.4843264, 'CN Bridge Street, Montreal (Pointe St. Charles), on the main line; APPROXIMATE, Claude (the collection\'s Bridge Street is Ottawa\'s)'),
+        ('cn', 'bridge street'): (-73.551793, 45.485113, 'CN Bridge Street, Montreal (Pointe St. Charles), on the line from Central Station to the Victoria Bridge; APPROXIMATE, Claude (moved onto the line 1 Nov 2026: the old point sent trains past and back; the collection\'s Bridge Street is Ottawa\'s)'),
         ('cn', 'nicolet'): (-72.6095388, 46.2280408, 'CN Nicolet, on the branch from St. Leonard (the collection files it as abandoned sidings); APPROXIMATE, Claude'),
         ('cn', 'st johns'): (-73.2546656, 45.3031519, 'CN St. Johns (St. Jean), on the Rouses Point subdivision (no point in the collection); APPROXIMATE, Claude'),
         ('cn', 'cantic'): (-73.3494352, 45.0640152, 'CN Cantic = the collection\'s Lacolle Junction: where the Central Vermont line to East Alburgh leaves the Rouses Point line; APPROXIMATE'),
