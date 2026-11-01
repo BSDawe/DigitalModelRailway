@@ -4,7 +4,7 @@ map, the train driving out and back). At assembly the stub is cut out: the stati
 steps) are left alone. KEEP: real reversals (the Windsor ferry: trains back out of Windsor station to the slip)."""
 import csv, io, math
 MAX_M = 800.0
-KEEP = {('oncn090w', 'Windsor')}
+KEEP = {('oncn090w', 'Windsor'), ('skcn171', 'Brandon'), ('skcn201', 'Battleford'), ('skcp130a', 'Battleford')}   # real reversals (Brendan, 1 Nov 2026)
 def _d(a, b): return math.hypot((a[0] - b[0]) * 111320 * math.cos(math.radians(a[1])), (a[1] - b[1]) * 110540)
 def apply(viz, gt):
     def table(fn): return list(csv.reader(io.StringIO(''.join(gt[fn]))))

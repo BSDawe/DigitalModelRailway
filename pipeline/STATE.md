@@ -2215,3 +2215,4 @@ Stations of different railways within 250 m (70 pairs; script: same check over v
 - LEFT (about 90 stations): out-and-back stubs where the route turns back the way it came, kept as possible real reversals: e.g. Coe Hill (real),
   Trenton Junction, Bridge Street (Montreal, 232 m), Leaside 328 m, St. Basile 438 m, Foster 461 m, Kipawa 603 m, Ville Marie 739 m, Bulyea 459 m, Brandon
   387 m, Battleford 320 m, Avonlea 735 m; over 800 m not touched (Prinham 2.7 km, Schuler 1.3 km, Virden (107a) 1.0 km, Kennewick 1.0 km). To review with Brendan.
+- Brendan (1 Nov): CN Brandon and Battleford reversals are real (added to stubs.KEEP; they were already kept). The rest of the list still to review.
