@@ -2170,3 +2170,4 @@ Stations of different railways within 250 m (70 pairs; script: same check over v
   Hamilton & Lake Erie Hamilton - Caledonia - Jarvis (5 pieces; Jarvis - Port Dover, abandoned 1935, left out). Places: Blackwater = Blackwater Junction station,
   Manilla = Manilla Junction station, Brechin = the Midland Ry. point; Schepeler by mileage (the collection's line there is a 9.6 km straight).
 - To check with Brendan: which Peterboro point is the 1948 CN station (by mileage now); No. 95 Campbellcroft 4.27 - Carmel f4.32 (5.2 mi in 5 min, as printed).
+- TO CHECK (Brendan, 31 Oct 2026, 23:20): the CN Port Dover routing (on_cn_t121d Simcoe (South) - Port Dover, 236 / 235: traced 8.1 mi for 7.5 printed; Simcoe (South) by mileage).
