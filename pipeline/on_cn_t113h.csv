@@ -1,0 +1,22 @@
+# Canadian National, Tables 115, 113a and 113: The Highlander on Sundays, Lindsay - Lorneville - Blackwater - Uxbridge - Toronto (via Lorneville). Source: Official Guide, April 25, 1948, CN Table 113, 113a and 115 (Brendan, 31 Oct 2026, page 1129; private scans og1948_cnq/). EASTERN TIME.
+# Miles from Lindsay, added up from the three tables.
+# Signs (page 1129): * daily; dagger ex Sun; section Sun only; a Mon Wed Fri; b Tue Thu Sat; f flag; k Sat only; z runs to Midland Dock June 21 to Sept. 6; circle: will not run May 24, July 1 or Sept. 6; black dot: Mon. Aug. 2 and Sept. 6 instead of Sun.; double dagger ex Sun and Mon; boxed dot: via Lorneville; square: motor train. Model week July 5 - 11: the summer trains run, the trains cancelled June 27 - Sept. 5 do not.
+#train col=No85 num=85 dir=down days=Sun kind=passenger name="The Highlander" note="The Highlander (87 - 85), Sundays June 27 to September 5: (Haliburton 5.50 p.m., No. 87) Lindsay 7.55 p.m. by Lorneville and Blackwater to Toronto 10.15 p.m."
+mile,station,principal,prov,tz,No85
+0.0,Lindsay,1,ON,E,lv 7.55p
+11.1,Grass Hill,0,ON,E,
+15.1,Lorneville,1,ON,E,ar 8.20p / lv 8.21p
+16.9,Woodville,0,ON,E,8.25p
+20.8,Cannington,0,ON,E,8.33p
+26.8,Sunderland,0,ON,E,8.43p
+29.0,Blackwater,1,ON,E,ar 8.47p / lv 8.48p
+38.7,Uxbridge,0,ON,E,9.02p
+45.5,Goodwood,0,ON,E,f9.15p
+50.9,Stouffville,1,ON,E,9.26p
+57.3,Markham,0,ON,E,9.37p
+60.1,Unionville,0,ON,E,9.42p
+63.0,Millikens,0,ON,E,
+65.9,Agincourt,0,ON,E,9.51p
+70.8,Scarboro,1,ON,E,9.58p
+74.4,Danforth,0,ON,E,10.06p
+79.6,Toronto (Union Station),1,ON,E,ar 10.15p

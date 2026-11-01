@@ -1,0 +1,16 @@
+# Canadian National, Table 121: Jarvis - Simcoe (North Station) - Delhi - Tillsonburg - Tillsonburg Jct. - Aylmer - St. Thomas (mixed). Source: Official Guide, April 25, 1948, CN Table 121 (Brendan, 31 Oct 2026, page 1129; private scans og1948_cnq/). EASTERN TIME.
+# Miles as printed (from Hamilton).
+# Signs (page 1129): * daily; dagger ex Sun; section Sun only; a Mon Wed Fri; b Tue Thu Sat; f flag; k Sat only; z runs to Midland Dock June 21 to Sept. 6; circle: will not run May 24, July 1 or Sept. 6; black dot: Mon. Aug. 2 and Sept. 6 instead of Sun.; double dagger ex Sun and Mon; boxed dot: via Lorneville; square: motor train. Model week July 5 - 11: the summer trains run, the trains cancelled June 27 - Sept. 5 do not.
+#train col=M355 num=355 dir=down days="ex Sun" kind=mixed note="Mixed, daily except Sunday: Jarvis 12.05 p.m. by Simcoe (North), Delhi and Tillsonburg to St. Thomas 3.45 p.m."
+#train col=M356 num=356 dir=up days="ex Sun" kind=mixed note="Mixed, daily except Sunday: St. Thomas 6.30 a.m. by Tillsonburg and Delhi to Simcoe (North) 10.35 and Jarvis 10.55 a.m."
+mile,station,principal,prov,tz,M355,M356
+32.6,Jarvis,1,ON,E,lv 12.05p,ar 10.55a
+43.2,Simcoe (North Sta.),1,ON,E,12.40p,10.35a
+47.7,Nixon,0,ON,E,12.55p,10.00a
+52.9,Delhi,1,ON,E,1.25p,9.44a
+59.8,Courtland,0,ON,E,1.40p,9.05a
+64.3,Tillsonburg,1,ON,E,2.00p,8.45a
+66.0,Tillsonburg Junction,1,ON,E,2.15p,8.30a
+70.3,Corinth,0,ON,E,2.25p,8.10a
+78.3,Aylmer,1,ON,E,3.10p,7.45a
+89.0,St. Thomas,1,ON,E,ar 3.45p,lv 6.30a

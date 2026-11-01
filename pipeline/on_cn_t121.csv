@@ -1,0 +1,15 @@
+# Canadian National, Table 121: Hamilton (James St.) - Caledonia - Hagersville - Jarvis - Simcoe - Port Rowan. Source: Official Guide, April 25, 1948, CN Table 121 (Brendan, 31 Oct 2026, page 1129; private scans og1948_cnq/). EASTERN TIME.
+# Miles as printed.
+# Signs (page 1129): * daily; dagger ex Sun; section Sun only; a Mon Wed Fri; b Tue Thu Sat; f flag; k Sat only; z runs to Midland Dock June 21 to Sept. 6; circle: will not run May 24, July 1 or Sept. 6; black dot: Mon. Aug. 2 and Sept. 6 instead of Sun.; double dagger ex Sun and Mon; boxed dot: via Lorneville; square: motor train. Model week July 5 - 11: the summer trains run, the trains cancelled June 27 - Sept. 5 do not.
+#train col=No233 num=233 dir=down days="ex Sun" kind=passenger note="Daily except Sunday: (Toronto 8.00 a.m.) Hamilton 9.10 a.m. by Simcoe to Port Rowan 12.30 p.m."
+#train col=No238 num=238 dir=up days="ex Sun" kind=passenger note="Daily except Sunday: Port Rowan 2.00 p.m. to Simcoe (South) 2.55, there 5.17 p.m. (in between to Port Dover and back as 236 and 235), Hamilton 7.20 p.m. (Toronto 9.40 p.m.)."
+mile,station,principal,prov,tz,No233,No238
+0.0,Hamilton (James St.),1,ON,E,lv 9.10a,ar 7.20p
+17.2,Caledonia,1,ON,E,ar 10.00a / lv 10.17a,ar 6.25p / lv 6.32p
+26.9,Hagersville,0,ON,E,10.37a,6.05p
+32.6,Jarvis,1,ON,E,10.55a,5.50p
+43.2,Simcoe (North Sta.),1,ON,E,11.15a,f5.25p
+46.1,Simcoe (So. Sta.),1,ON,E,ar 11.28a / lv 11.35a,ar 2.55p / lv 5.17p
+51.6,Vittoria,0,ON,E,11.55a,2.36p
+60.0,St. Williams,0,ON,E,12.20p,2.11p
+63.3,Port Rowan,1,ON,E,ar 12.30p,lv 2.00p

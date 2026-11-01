@@ -1,0 +1,31 @@
+# Canadian National, Table 113a: Blackwater - Cannington - Lorneville - Beaverton East - Orillia - Coldwater - Midland. Source: Official Guide, April 25, 1948, CN Table 113a (Brendan, 31 Oct 2026, page 1129; private scans og1948_cnq/). EASTERN TIME.
+# Miles as printed. Nos. 45 and 42 (Orillia - Midland) are the Midland sections of Table 126 (on_cn_t126d.csv, now with these stations); No. 148 (cancelled June 27 to Sept. 5) not entered.
+# Signs (page 1129): * daily; dagger ex Sun; section Sun only; a Mon Wed Fri; b Tue Thu Sat; f flag; k Sat only; z runs to Midland Dock June 21 to Sept. 6; circle: will not run May 24, July 1 or Sept. 6; black dot: Mon. Aug. 2 and Sept. 6 instead of Sun.; double dagger ex Sun and Mon; boxed dot: via Lorneville; square: motor train. Model week July 5 - 11: the summer trains run, the trains cancelled June 27 - Sept. 5 do not.
+#train col=No603 num=603 dir=down days="ex Sun" kind=motor note="Motor train, daily except Sunday: Blackwater 10.55 a.m. by Lorneville and Orillia to Midland 1.30 p.m.; to Midland Dock June 21 to September 6 (no time printed; the dock not entered: no point for it)."
+#train col=No605 num=605 dir=down days="ex Sun" kind=motor note="Motor train, daily except Sunday: Blackwater 7.00 p.m. to Lorneville 7.27 p.m. (on to Lindsay as No. 606, Table 115)."
+#train col=No107 num=107 dir=down days=Sun kind=passenger note="Sundays June 27 to September 5 (and Monday September 6): Orillia 8.00 p.m. to Midland 9.00 p.m."
+#train col=No602 num=602 dir=up days="ex Sun" kind=motor note="Motor train, daily except Sunday: (Lindsay 7.05 a.m., No. 601) Lorneville 7.35 a.m. to Blackwater 8.00 a.m."
+#train col=No604 num=604 dir=up days="ex Sun" kind=motor note="Motor train, daily except Sunday: Midland 2.30 p.m. by Orillia (3.35 - 4.40) and Lorneville to Blackwater 6.15 p.m."
+#train col=No106 num=106 dir=up days=Sun kind=passenger note="Sundays June 27 to September 5 (and Monday September 6): Midland 6.45 p.m. to Orillia 7.45 p.m."
+mile,station,principal,prov,tz,No603,No605,No107,No602,No604,No106
+0.0,Blackwater,1,ON,E,lv 10.55a,lv 7.00p,,ar 8.00a,ar 6.15p,
+2.2,Sunderland,0,ON,E,11.00a,7.05p,,7.55a,6.10p,
+8.2,Cannington,0,ON,E,11.10a,7.15p,,7.46a,5.58p,
+12.1,Woodville,0,ON,E,11.17a,7.22p,,7.39a,5.49p,
+13.9,Lorneville,1,ON,E,11.22a,ar 7.27p,,lv 7.35a,5.41p,
+21.4,Beaverton East,0,ON,E,11.33a,,,,5.25p,
+25.9,Gamebridge,0,ON,E,11.39a,,,,5.15p,
+29.3,Brechin,0,ON,E,11.44a,,,,5.09p,
+32.5,Schepeler,0,ON,E,~f11.48a,,,,~f5.02p,
+36.8,Uptergrove,0,ON,E,11.53a,,,,4.52p,
+39.2,Atherley,0,ON,E,11.57a,,,,4.47p,
+41.6,Orillia,1,ON,E,12.20p,,lv 8.00p,,ar 3.35p / lv 4.40p,ar 7.45p
+49.5,Uhthoff,0,ON,E,12.33p,,f8.13p,,3.23p,f7.30p
+52.3,Foxmead,0,ON,E,12.37p,,f8.17p,,f3.18p,f7.26p
+57.1,Coldwater,0,ON,E,12.44p,,8.24p,,3.10p,7.18p
+59.2,Fesserton,0,ON,E,12.48p,,f8.28p,,f3.05p,f7.13p
+61.2,Waubaushene,0,ON,E,12.53p,,f8.33p,,3.01p,7.09p
+63.6,Sturgeon Bay,0,ON,E,~f12.56p,,~f8.36p,,~f2.56p,~f7.05p
+67.0,Victoria Harbor,0,ON,E,1.01p,,8.41p,,2.50p,6.59p
+71.0,Martyr's Shrine,0,ON,E,f1.09p,,f8.49p,,f2.37p,f6.50p
+74.0,Midland,1,ON,E,ar 1.30p,,ar 9.00p,,lv 2.30p,lv 6.45p

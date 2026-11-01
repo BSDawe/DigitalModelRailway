@@ -1,0 +1,33 @@
+# Canadian National, Table 113: Toronto - Lindsay - Peterboro - Campbellford - Madoc Jct. - Belleville. Source: Official Guide, April 25, 1948, CN Table 113 (Brendan, 31 Oct 2026, page 1129; private scans og1948_cnq/). EASTERN TIME.
+# Miles as printed. Madoc Jct. - Madoc mixed 364 / 365 are in on_cn_t081a.csv (Table 81a, the same times).
+# Signs (page 1129): * daily; dagger ex Sun; section Sun only; a Mon Wed Fri; b Tue Thu Sat; f flag; k Sat only; z runs to Midland Dock June 21 to Sept. 6; circle: will not run May 24, July 1 or Sept. 6; black dot: Mon. Aug. 2 and Sept. 6 instead of Sun.; double dagger ex Sun and Mon; boxed dot: via Lorneville; square: motor train. Model week July 5 - 11: the summer trains run, the trains cancelled June 27 - Sept. 5 do not.
+#train col=No94 num=94 dir=down days="ex Sun" kind=passenger note="Daily except Sunday: Toronto 4.35 p.m. by Lindsay and Peterboro to Belleville 9.55 p.m."
+#train col=No93 num=93 dir=up days="ex Sun" kind=passenger note="Daily except Sunday: Belleville 4.40 a.m. by Peterboro and Lindsay to Toronto 9.50 a.m."
+mile,station,principal,prov,tz,No94,No93
+0.0,Toronto (Union Station),1,ON,E,lv 4.35p,ar 9.50a
+5.2,Danforth,0,ON,E,4.49p,9.38a
+8.8,Scarboro,1,ON,E,4.59p,9.28a
+13.7,Agincourt,0,ON,E,5.07p,9.20a
+16.6,Millikens,0,ON,E,f5.11p,f9.14a
+19.5,Unionville,0,ON,E,5.19p,9.07a
+22.3,Markham,0,ON,E,5.24p,9.02a
+28.7,Stouffville,1,ON,E,5.38p,8.50a
+34.1,Goodwood,0,ON,E,5.50p,f8.38a
+40.9,Uxbridge,0,ON,E,6.04p,8.24a
+50.6,Blackwater,1,ON,E,6.20p,8.10a
+56.9,Manilla,0,ON,E,6.28p,7.58a
+61.8,Mariposa,0,ON,E,6.35p,7.51a
+69.3,Lindsay,1,ON,E,ar 6.45p / lv 6.55p,ar 7.30a / lv 7.40a
+74.5,Reaboro,0,ON,E,f7.04p,f7.22a
+78.8,Omemee,0,ON,E,7.09p,7.16a
+84.3,Carmagner,0,ON,E,~f7.20p,~f7.06a
+85.8,Bests,0,ON,E,~f7.23p,~f7.03a
+92.2,Peterboro,1,ON,E,ar 7.35p / lv 7.45p,ar 6.42a / lv 6.52a
+101.9,Keene,0,ON,E,8.05p,6.17a
+114.5,Hastings,0,ON,E,8.30p,5.57a
+124.8,Campbellford,1,ON,E,8.50p,5.36a
+136.0,Anson,0,ON,E,f9.14p,f5.13a
+138.2,Stirling,0,ON,E,9.20p,5.09a
+143.5,Madoc Junction,0,ON,E,f9.30p,f4.58a
+152.9,Corbyville,0,ON,E,f9.47p,4.45a
+155.7,Belleville,1,ON,E,ar 9.55p,lv 4.40a

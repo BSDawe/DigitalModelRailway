@@ -1,0 +1,8 @@
+# Canadian National, Table 114: Peterboro - Lakefield (mixed). Source: Official Guide, April 25, 1948, CN Table 114 (Brendan, 31 Oct 2026, page 1129; private scans og1948_cnq/). EASTERN TIME.
+# Miles as printed.
+# Signs (page 1129): * daily; dagger ex Sun; section Sun only; a Mon Wed Fri; b Tue Thu Sat; f flag; k Sat only; z runs to Midland Dock June 21 to Sept. 6; circle: will not run May 24, July 1 or Sept. 6; black dot: Mon. Aug. 2 and Sept. 6 instead of Sun.; double dagger ex Sun and Mon; boxed dot: via Lorneville; square: motor train. Model week July 5 - 11: the summer trains run, the trains cancelled June 27 - Sept. 5 do not.
+#train col=M373 num=373 dir=down days="ex Sun" kind=mixed note="Mixed, daily except Sunday (not July 1): Peterboro 3.00 p.m. to Lakefield 3.30 p.m."
+#train col=M372 num=372 dir=up days="ex Sun" kind=mixed note="Mixed, daily except Sunday (not July 1): Lakefield 4.30 p.m. to Peterboro 5.00 p.m."
+mile,station,principal,prov,tz,M373,M372
+0.0,Peterboro,1,ON,E,lv 3.00p,ar 5.00p
+9.8,Lakefield,1,ON,E,ar 3.30p,lv 4.30p

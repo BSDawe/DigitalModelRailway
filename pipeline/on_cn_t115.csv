@@ -1,0 +1,14 @@
+# Canadian National, Table 115: Lindsay - Grass Hill - Lorneville - Kirkfield - Coboconk. Source: Official Guide, April 25, 1948, CN Table 115 (Brendan, 31 Oct 2026, page 1129; private scans og1948_cnq/). EASTERN TIME.
+# Miles as printed. No. 85 (Sundays, Lindsay 7.55 p.m. - Lorneville 8.20 p.m.) is The Highlander, whole in on_cn_t113h.csv.
+# Signs (page 1129): * daily; dagger ex Sun; section Sun only; a Mon Wed Fri; b Tue Thu Sat; f flag; k Sat only; z runs to Midland Dock June 21 to Sept. 6; circle: will not run May 24, July 1 or Sept. 6; black dot: Mon. Aug. 2 and Sept. 6 instead of Sun.; double dagger ex Sun and Mon; boxed dot: via Lorneville; square: motor train. Model week July 5 - 11: the summer trains run, the trains cancelled June 27 - Sept. 5 do not.
+#train col=M387 num=387 dir=down days="Mon,Wed,Fri" kind=mixed note="Mixed, Monday, Wednesday and Friday: Lindsay 10.15 a.m. by Lorneville to Coboconk 12.50 p.m."
+#train col=No601 num=601 dir=down days="ex Sun" kind=motor note="Motor train, daily except Sunday: Lindsay 7.05 a.m. to Lorneville 7.32 a.m. (on to Blackwater as No. 602, Table 113a)."
+#train col=M386 num=386 dir=up days="Mon,Wed,Fri" kind=mixed note="Mixed, Monday, Wednesday and Friday: Coboconk 3.15 p.m. by Lorneville to Lindsay 5.35 p.m."
+#train col=No606 num=606 dir=up days="ex Sun" kind=motor note="Motor train, daily except Sunday: (Blackwater 7.00 p.m., No. 605) Lorneville 7.30 p.m. to Lindsay 7.55 p.m."
+mile,station,principal,prov,tz,M387,No601,M386,No606
+0.0,Lindsay,1,ON,E,lv 10.15a,lv 7.05a,ar 5.35p,ar 7.55p
+11.1,Grass Hill,0,ON,E,f10.50a,f7.25a,f5.10p,f7.37p
+15.1,Lorneville,1,ON,E,ar 11.05a / lv 11.30a,ar 7.32a,ar 4.40p / lv 5.00p,lv 7.30p
+26.4,Kirkfield,0,ON,E,12.10p,,4.00p,
+29.2,Victoria Road,0,ON,E,12.25p,,3.45p,
+37.6,Coboconk,1,ON,E,ar 12.50p,,lv 3.15p,

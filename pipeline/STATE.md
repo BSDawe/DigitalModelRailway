@@ -2151,3 +2151,22 @@ Stations of different railways within 250 m (70 pairs; script: same check over v
 - on_lines: net links go into the graph as kind 'x' (a copy of ab_lines.make_graph, _make_graph): tied only at their loose ends, and traces are not tied onto them
   (the Great Western main line link tied itself to the Windsor slip end, 36 m away). ab_lines.py itself unchanged.
 - Careful: the Quebec - Levis and Trois Rivieres ferry crossings are links named '... ferry crossing (Claude)': do not filter links by the word ferry.
+
+## Version 114 (31 October 2026): page 1129, CN Tables 113, 113a, 114, 115, 119, 120, 121
+- Script: scratchpad on/t113.py (also rewrites on_cn_t126d.csv; the old copy: scratchpad on_cn_t126d_v113.csv).
+- on_cn_t113: Toronto - Stouffville - Uxbridge - Blackwater - Manilla - Lindsay - Peterboro - Millbrook - Port Hope: 92 / 95 (ex Sun), 88 The Highlander (Sat, Toronto - Lindsay; on as 89).
+  on_cn_t113b: Toronto - Lindsay - Peterboro - Campbellford - Madoc Jct. - Belleville: 94 / 93 (ex Sun). Madoc Jct. - Madoc 364 / 365 = on_cn_t081a (same times).
+  on_cn_t113h: The Highlander Sundays (87 from Haliburton, then 85): Lindsay - Lorneville - Blackwater - Toronto (Tables 115, 113a, 113 joined).
+  Not entered: 84 and the first 85 - 87 (cancelled June 27 - Sept 5); 148 (113a, same). Table 119 = 10 / 92 / 95 / 5 (nothing new).
+- on_cn_t113a: Blackwater - Lorneville - Beaverton East - Orillia - Coldwater - Midland: motor 603, 605 / 602, 604 (ex Sun), 107 / 106 (Sundays, summer). Midland Dock (603 in
+  summer, no time) not entered (no point for it). on_cn_t126d now only 45D and 42D with the Orillia - Midland stations; 41D, 44D, 38D were 603, 604 and 106.
+- on_cn_t114 Peterboro - Lakefield M373 / M372; on_cn_t115 Lindsay - Lorneville - Coboconk M387 / M386 (MWF), motor 601 / 606 (ex Sun).
+- on_cn_t120 Brantford - Norwich Jct. - Norwich - Otterville - Norwich Jct. - Tillsonburg - Tillsonburg Jct.: M329 (with 331, 330, 333 round the loop) / M328 (ex Sun).
+  READING: 328 leaves Norwich Jct. 5.15 and is at Norwich 5.25, printed in the Otterville sections with no Otterville time: entered as going round by Otterville
+  without stopping (ASK Brendan; else Norwich Jct. - Norwich direct).
+- on_cn_t121 Hamilton (James St.) - Caledonia - Jarvis - Simcoe (North / South) - Port Rowan 233 / 238; on_cn_t121d Simcoe (South) - Port Dover 236 / 235;
+  on_cn_t121t Jarvis - Simcoe (North) - Delhi - Tillsonburg - Aylmer - St. Thomas M355 / M356 (ex Sun).
+- Track: links re-added (dropped by the abandonment filter for notes about other sections): Toronto & Ottawa Ry. Blackwater - Manilla Jct. and Omemee - Peterboro;
+  Hamilton & Lake Erie Hamilton - Caledonia - Jarvis (5 pieces; Jarvis - Port Dover, abandoned 1935, left out). Places: Blackwater = Blackwater Junction station,
+  Manilla = Manilla Junction station, Brechin = the Midland Ry. point; Schepeler by mileage (the collection's line there is a 9.6 km straight).
+- To check with Brendan: which Peterboro point is the 1948 CN station (by mileage now); No. 95 Campbellcroft 4.27 - Carmel f4.32 (5.2 mi in 5 min, as printed).

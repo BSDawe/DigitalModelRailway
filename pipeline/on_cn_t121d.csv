@@ -1,0 +1,8 @@
+# Canadian National, Table 121: Simcoe (South Station) - Port Dover. Source: Official Guide, April 25, 1948, CN Table 121 (Brendan, 31 Oct 2026, page 1129; private scans og1948_cnq/). EASTERN TIME.
+# Miles as printed.
+# Signs (page 1129): * daily; dagger ex Sun; section Sun only; a Mon Wed Fri; b Tue Thu Sat; f flag; k Sat only; z runs to Midland Dock June 21 to Sept. 6; circle: will not run May 24, July 1 or Sept. 6; black dot: Mon. Aug. 2 and Sept. 6 instead of Sun.; double dagger ex Sun and Mon; boxed dot: via Lorneville; square: motor train. Model week July 5 - 11: the summer trains run, the trains cancelled June 27 - Sept. 5 do not.
+#train col=No236 num=236 dir=down days="ex Sun" kind=passenger note="Daily except Sunday: Simcoe (South) 3.05 p.m. to Port Dover 3.40 p.m. (the train of 238)."
+#train col=No235 num=235 dir=up days="ex Sun" kind=passenger note="Daily except Sunday: Port Dover 4.45 p.m. to Simcoe (South) 5.15 p.m. (on as 238)."
+mile,station,principal,prov,tz,No236,No235
+0.0,Simcoe (So. Sta.),1,ON,E,lv 3.05p,ar 5.15p
+7.5,Port Dover,1,ON,E,ar 3.40p,lv 4.45p

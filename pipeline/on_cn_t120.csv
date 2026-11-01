@@ -1,0 +1,18 @@
+# Canadian National, Table 120: Brantford - Burford - Norwich Jct. - Norwich - Otterville - Norwich Jct. - Tillsonburg - Tillsonburg Jct. (mixed). Source: Official Guide, April 25, 1948, CN Table 120 (Brendan, 31 Oct 2026, page 1129; private scans og1948_cnq/). EASTERN TIME.
+# Miles added up through the Norwich - Otterville loop (Norwich Jct. 23.5, Norwich 1.1, Otterville 3.0 on, back to Norwich Jct. 3.0; then Springford 28.5 printed). Burgessville (3.5 from Norwich Jct.) has no trains.
+# Signs (page 1129): * daily; dagger ex Sun; section Sun only; a Mon Wed Fri; b Tue Thu Sat; f flag; k Sat only; z runs to Midland Dock June 21 to Sept. 6; circle: will not run May 24, July 1 or Sept. 6; black dot: Mon. Aug. 2 and Sept. 6 instead of Sun.; double dagger ex Sun and Mon; boxed dot: via Lorneville; square: motor train. Model week July 5 - 11: the summer trains run, the trains cancelled June 27 - Sept. 5 do not.
+#train col=M329 num=329 dir=down days="ex Sun" kind=mixed note="Mixed 329, daily except Sunday: Brantford 9.25 a.m. to Norwich Jct. 11.10, on as 331 to Norwich (11.15), 330 to Otterville (11.55) and 333 back to Norwich Jct. (12.15), then as 329 to Tillsonburg and Tillsonburg Jct. 1.30 p.m. (for St. Thomas, Table 121)."
+#train col=M328 num=328 dir=up days="ex Sun" kind=mixed note="Mixed 328, daily except Sunday: Tillsonburg Jct. 1.45 p.m., Tillsonburg (1.55 - 4.45) to Norwich Jct. 5.15, by the Otterville line (no time there) to Norwich 5.25 - 5.35, Norwich Jct. 5.40, Brantford 7.00 p.m."
+mile,station,principal,prov,tz,M329,M328
+0.0,Brantford,1,ON,E,lv 9.25a,ar 7.00p
+1.3,Brantford (Colborne St.),0,ON,E,f9.40a,6.50p
+10.7,Burford,0,ON,E,10.20a,6.25p
+17.7,Hatchley,0,ON,E,f10.45a,f5.55p
+21.8,Norwich East,0,ON,E,f11.05a,f5.45p
+23.5,Norwich Junction,1,ON,E,11.10a,5.40p
+24.6,Norwich,1,ON,E,ar 11.15a / lv 11.40a,ar 5.25p / lv 5.35p
+27.6,Otterville,0,ON,E,ar 11.55a / lv 12.01p,
+30.6,Norwich Junction,1,ON,E,12.15p,5.15p
+35.6,Springford,0,ON,E,12.40p,5.00p
+41.3,Tillsonburg,1,ON,E,ar 1.00p / lv 1.20p,ar 1.55p / lv 4.45p
+43.3,Tillsonburg Junction,1,ON,E,ar 1.30p,lv 1.45p
