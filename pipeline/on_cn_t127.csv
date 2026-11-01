@@ -1,0 +1,45 @@
+# Canadian National, Table 127: Toronto - Brampton - Georgetown - Guelph - Kitchener - Stratford - St. Marys - London. Source: Official Guide, April 25, 1948, CN Table 127 (Brendan, 1 Nov 2026, page 1132; private scans og1948_cnq/). EASTERN TIME.
+# Miles as printed. London - Stratford - Palmerston trains 168, 170 / 169, 171 (Table 140) are in on_cn_t140.csv.
+# Signs (page 1132): * daily; dagger ex Sun; double dagger ex Sat; pilcrow ex Mon; section Sun only; d ex Sat and Sun; e ex Sun and Mon; f flag; k Sat only; y stops to leave from Windsor, Sarnia and west or take for Toronto and east (entered as flag); square: motor train; boxed sign: Monday only; circle: also runs May 24, July 1, Sept. 6; crescent: will not run May 24, July 1, Sept. 6; open square: runs Sundays June 27 - Sept. 5 (and Mondays Aug. 2, Sept. 6); black dot: last trip June 27 ...; diamond: first trip June 27, last Sept. 6; tick: also Mondays Aug. 2 and Sept. 6; triangle: Mondays Aug. 2 and Sept. 6 instead of Sundays. Model week July 5 - 11.
+#train col=No39 num=39 dir=down days="ex Sun" kind=passenger note="Daily except Sunday (from Montreal, Windsor Station, 3.30 p.m.): Toronto 11.55 p.m. to Stratford 2.50 and London 3.50 a.m."
+#train col=No139 num=139 dir=down days=Sun kind=passenger note="Sunday only (from Montreal 3.30 p.m.): Toronto 10.45 p.m. to Stratford 1.40 and London 2.35 a.m. (the Monday-only signs are the same train past midnight)."
+#train col=No37 num=37 dir=down days="ex Sun" kind=passenger note="Daily except Sunday (from Montreal 9.15 a.m.): Toronto 6.15 p.m. to Stratford 9.25 p.m., on to Goderich 11.00 p.m. (on_cn_t127g.csv)."
+#train col=No175 num=175 dir=down days="ex Sun" kind=passenger note="Daily except Sunday (from Montreal 9.15 a.m.): Toronto 5.35 p.m. to Guelph 7.13 p.m."
+#train col=No11 num=11 dir=down days="Mon,Tue,Wed,Thu,Fri" kind=passenger note="Daily except Saturday and Sunday: Toronto 4.35 p.m. to Stratford 7.20 and London 8.28 p.m."
+#train col=No111 num=111 dir=down days=Sat kind=passenger note="Saturday only: Toronto 12.10 p.m. to Stratford 3.18 and London 4.20 p.m."
+#train col=No29 num=29 dir=down days="ex Sun" kind=passenger note="Daily except Sunday (from Montreal 10.59 p.m. the night before): Toronto 8.05 a.m. to Stratford 10.38 and London 11.40 a.m."
+#train col=No137 num=137 dir=down days=Sun kind=passenger note="Sunday only (from Montreal, Saturday 10.59 p.m.): Toronto 7.30 a.m. to Stratford 10.10 a.m."
+#train col=No27 num=27 dir=down days="ex Sun" kind=passenger note="Daily except Sunday (from Montreal 10.59 p.m., ex Sat): Toronto 7.25 a.m. to Guelph 9.10 a.m."
+#train col=No10 num=10 dir=up days="ex Sun" kind=passenger note="The International Limited section, daily except Sunday: (Detroit 10.00 p.m., Windsor 11.05) London 3.40 a.m. by Stratford to Toronto 7.10 a.m.; Montreal 5.45 p.m." name="The International Limited"
+#train col=No28 num=28 dir=up days="ex Sun" kind=passenger note="Daily except Sunday: (Goderich 5.40 a.m.) Stratford 7.17 a.m. to Toronto 9.50 a.m."
+#train col=No172 num=172 dir=up days="ex Sun" kind=passenger note="Daily except Sunday: Guelph 9.27 a.m. to Toronto 11.00 a.m."
+#train col=No34 num=34 dir=up days="ex Sun" kind=passenger note="Daily except Sunday: (Goderich 3.00 p.m.) Stratford 4.55 p.m. to Toronto 7.30 p.m., on to Montreal 6.30 a.m."
+#train col=No36 num=36 dir=up days="ex Sun" kind=passenger note="Daily except Sunday: Guelph 6.50 p.m. to Toronto 8.35 p.m., on to Montreal 6.30 a.m."
+#train col=No138 num=138 dir=up days=Sun kind=passenger note="Sunday only: Stratford 6.45 p.m. to Toronto 9.30 p.m., on to Montreal 7.30 a.m. (Monday)."
+#train col=No142 num=142 dir=up days=Sun kind=motor note="Sundays June 27 to September 5 (and Mondays August 2 and September 6): Guelph 9.12 p.m. to Toronto 10.20 p.m."
+#train col=No40 num=40 dir=up days=daily kind=passenger note="Daily: London 7.45 p.m. by Stratford to Toronto 11.00 p.m., on to Montreal 7.30 a.m."
+mile,station,principal,prov,tz,No39,No139,No37,No175,No11,No111,No29,No137,No27,No10,No28,No172,No34,No36,No138,No142,No40
+0.0,Toronto (Union Station),1,ON,E,lv 11.55p,lv 10.45p,lv 6.15p,lv 5.35p,lv 4.35p,lv 12.10p,lv 8.05a,lv 7.30a,lv 7.25a,ar 7.10a,ar 9.50a,ar 11.00a,ar 7.30p,ar 8.35p,ar 9.30p,ar 10.20p,ar 11.00p
+2.4,Parkdale,0,ON,E,12.05a,10.55p,6.25p,5.44p,4.45p,12.20p,8.15a,7.40a,7.36a,7.01a,9.41a,10.52a,7.20p,8.27p,9.20p,10.11p,10.52p
+5.0,West Toronto,0,ON,E,12.15a,11.05p,6.35p,5.52p,4.52p,12.30p,8.21a,7.48a,7.45a,6.52a,9.33a,10.45a,7.12p,8.18p,9.12p,10.05p,10.45p
+8.6,Weston,0,ON,E,f12.23a,11.13p,6.44p,6.01p,5.01p,12.39p,,f7.56a,7.54a,6.43a,,10.35a,,8.10p,9.02p,,
+15.3,Malton,0,ON,E,f12.33a,11.25p,6.57p,,,12.51p,,f8.05a,8.05a,6.30a,,10.23a,,8.00p,8.55p,,
+21.3,Brampton,1,ON,E,12.46a,11.36p,7.12p,6.22p,5.22p,1.05p,8.43a,8.16a,8.21a,6.20a,9.10a,10.14a,,7.50p,8.46p,,10.23p
+29.3,Georgetown,1,ON,E,1.03a,11.53p,7.30p,6.37p,5.36p,1.21p,8.57a,f8.30a,8.37a,6.08a,,10.02a,6.37p,7.27p,8.31p,,10.11p
+32.5,Limehouse,0,ON,E,,,,,,,,,,,,9.53a,,f7.15p,f8.24p,,
+35.6,Acton,0,ON,E,1.17a,12.09a,7.44p,,,1.36p,,f8.43a,8.47a,5.55a,,9.48a,,7.10p,8.19p,,
+41.2,Rockwood,0,ON,E,f1.25a,,f7.53p,,,1.46p,,f8.51a,f9.00a,,,9.37a,,7.00p,8.07p,,
+48.8,Guelph,1,ON,E,1.42a,12.33a,8.06p,ar 7.13p,6.10p,2.01p,ar 9.27a / lv 9.37a,9.05a,ar 9.10a,5.37a,8.30a,lv 9.27a,ar 6.03p / lv 6.10p,lv 6.50p,7.59p,lv 9.12p,9.45p
+58.4,Breslau,0,ON,E,,,8.22p,,,f2.18p,,f9.21a,,,8.10a,,5.46p,,f7.39p,,
+62.7,Kitchener,1,ON,E,2.14a,1.04a,8.35p,,6.45p,2.30p,10.01a,9.30a,,5.12a,8.04a,,5.40p,,7.32p,,9.20p
+69.2,Petersburg,0,ON,E,f2.24a,,f8.45p,,,f2.42p,f10.11a,f9.42a,,,7.50a,,5.27p,,7.18p,,
+72.5,Baden,0,ON,E,f2.28a,f1.18a,8.50p,,,2.48p,f10.15a,f9.46a,,,7.41a,,5.20p,,7.09p,,
+75.0,New Hamburg,0,ON,E,f2.31a,f1.21a,8.58p,,,2.54p,10.20a,f9.49a,,f4.52a,7.38a,,5.16p,,7.06p,,
+82.1,Shakespeare,0,ON,E,f2.39a,,f9.13p,,,f3.06p,,f9.58a,,,7.28a,,5.06p,,6.55p,,
+88.6,Stratford,1,ON,E,ar 2.50a / lv 3.00a,ar 1.40a / lv 1.45a,ar 9.25p,,ar 7.20p / lv 7.28p,ar 3.18p / lv 3.23p,ar 10.38a / lv 10.45a,ar 10.10a,,ar 4.30a / lv 4.34a,lv 7.17a,,lv 4.55p,,lv 6.45p,,ar 8.35p / lv 8.40p
+98.8,St. Marys Junction,0,ON,E,,,,,,,,,,,,,,,,,
+99.7,St. Marys,1,ON,E,f3.17a,2.03a,,,7.45p,3.43p,11.03a,,,4.12a,,,,,,,8.16p
+105.7,Kellys,0,ON,E,,,,,,3.53p,,,,,,,,,,,
+110.7,Thorndale,0,ON,E,,,,,,4.00p,11.18a,,,,,,,,,,
+118.5,Pottersburg,0,ON,E,,,,,,4.10p,11.29a,,,,,,,,,,
+121.4,London,1,ON,E,ar 3.50a,ar 2.35a,,,ar 8.28p,ar 4.20p,ar 11.40a,,,lv 3.40a,,,,,,,lv 7.45p

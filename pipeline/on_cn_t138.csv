@@ -1,0 +1,12 @@
+# Canadian National, Table 138: Parkhead - Hepworth - Clavering - Wiarton (mixed). Source: Official Guide, April 25, 1948, CN Table 138 (Brendan, 1 Nov 2026, page 1132; private scans og1948_cnq/). EASTERN TIME.
+# Miles as printed.
+# Signs (page 1132): * daily; dagger ex Sun; double dagger ex Sat; pilcrow ex Mon; section Sun only; d ex Sat and Sun; e ex Sun and Mon; f flag; k Sat only; y stops to leave from Windsor, Sarnia and west or take for Toronto and east (entered as flag); square: motor train; boxed sign: Monday only; circle: also runs May 24, July 1, Sept. 6; crescent: will not run May 24, July 1, Sept. 6; open square: runs Sundays June 27 - Sept. 5 (and Mondays Aug. 2, Sept. 6); black dot: last trip June 27 ...; diamond: first trip June 27, last Sept. 6; tick: also Mondays Aug. 2 and Sept. 6; triangle: Mondays Aug. 2 and Sept. 6 instead of Sundays. Model week July 5 - 11.
+#train col=M341 num=341 dir=down days="ex Sun" kind=mixed note="Mixed, daily except Sunday: Parkhead 10.25 a.m. to Wiarton 10.55 a.m."
+#train col=M337 num=337 dir=down days="ex Sun" kind=mixed note="Mixed, daily except Sunday: Parkhead 1.50 p.m. to Wiarton 2.20 p.m."
+#train col=M336 num=336 dir=up days="ex Sun" kind=mixed note="Mixed, daily except Sunday: Wiarton 12.40 p.m. to Parkhead 1.10 p.m."
+#train col=M338 num=338 dir=up days="ex Sun" kind=mixed note="Mixed, daily except Sunday: Wiarton 2.40 p.m. to Parkhead 3.10 p.m."
+mile,station,principal,prov,tz,M341,M337,M336,M338
+0.0,Parkhead,1,ON,E,lv 10.25a,lv 1.50p,ar 1.10p,ar 3.10p
+2.4,Hepworth,0,ON,E,f10.30a,1.58p,f1.01p,3.02p
+5.5,Clavering,0,ON,E,f10.44a,2.08p,f12.51p,f2.52p
+10.0,Wiarton,1,ON,E,ar 10.55a,ar 2.20p,lv 12.40p,lv 2.40p

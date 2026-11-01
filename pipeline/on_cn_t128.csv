@@ -1,0 +1,10 @@
+# Canadian National, Table 128: Palmerston - Mount Forest - Holstein - Durham (mixed). Source: Official Guide, April 25, 1948, CN Table 128 (Brendan, 1 Nov 2026, page 1132; private scans og1948_cnq/). EASTERN TIME.
+# Miles as printed. CN Mount Forest is not the CP station.
+# Signs (page 1132): * daily; dagger ex Sun; double dagger ex Sat; pilcrow ex Mon; section Sun only; d ex Sat and Sun; e ex Sun and Mon; f flag; k Sat only; y stops to leave from Windsor, Sarnia and west or take for Toronto and east (entered as flag); square: motor train; boxed sign: Monday only; circle: also runs May 24, July 1, Sept. 6; crescent: will not run May 24, July 1, Sept. 6; open square: runs Sundays June 27 - Sept. 5 (and Mondays Aug. 2, Sept. 6); black dot: last trip June 27 ...; diamond: first trip June 27, last Sept. 6; tick: also Mondays Aug. 2 and Sept. 6; triangle: Mondays Aug. 2 and Sept. 6 instead of Sundays. Model week July 5 - 11.
+#train col=M333 num=333 dir=down days="ex Sun" kind=mixed note="Mixed, daily except Sunday: Palmerston 11.45 a.m. to Durham 1.40 p.m."
+#train col=M334 num=334 dir=up days="ex Sun" kind=mixed note="Mixed, daily except Sunday: Durham 2.25 p.m. to Palmerston 4.05 p.m."
+mile,station,principal,prov,tz,M333,M334
+0.0,Palmerston,1,ON,E,lv 11.45a,ar 4.05p
+11.6,Mount Forest,1,ON,E,12.40p,3.30p
+17.8,Holstein,0,ON,E,1.10p,2.58p
+26.7,Durham,1,ON,E,ar 1.40p,lv 2.25p

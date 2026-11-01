@@ -2233,3 +2233,18 @@ Stations of different railways within 250 m (70 pairs; script: same check over v
 - Version 119 (1 Nov): Table 123 Burlington = the Table 90 station at the junction (-79.815227, 43.338803); the trains had run 1.8 km out to another
   Burlington point and back (Brendan's screenshot). 93.4 traced / 92.6. Table 124 Fort Erie: on the Canada Air Line beside the CN station (a vertex added by
   a net link); it had snapped to the Canada Southern main 14 m away and run to the bridge and back (Brendan). Fort Erie - Port Colborne 20.3 / 19.0.
+
+## Version 120 (1 November 2026): page 1132 (Tables 127, 128, 136, 137, 138, 140)
+- Script: scratchpad on/t127.py (also cuts on_cn_t126m to Toronto - Allandale); t123.py rerun for Table 125.
+- on_cn_t127 Toronto - Brampton - Georgetown - Guelph - Kitchener - Stratford - St. Marys - London: down 39 (ex Sun), 139 (Sun), 37 (to Stratford), 175 and 27 (to
+  Guelph), 11 (Mon - Fri), 111 (Sat), 29, 137 (Sun, to Stratford); up 10 (from London; the International Limited section - the "Stratford table" Brendan was to send),
+  28, 34, 138 (Sun) from Stratford, 172, 36, 142 (summer Sun) from Guelph, 40 (daily, from London).
+- on_cn_t127g Stratford - Mitchell - Seaforth - Clinton - Goderich: 37, 35 / 28, 34. Table 125 motor trains 603 / 604 now London - Clinton only: their printed
+  Clinton - Goderich times are Nos. 35 / 34.
+- on_cn_t127s Stratford - St. Marys Jct. - Lucan - Forest - Sarnia (CN Sarnia Tunnel station): motor 601 / 600.
+- on_cn_t140 London - St. Marys - Stratford - Listowel - Palmerston: 170, 168 / 171 (Palmerston - London), 169 (Palmerston - Stratford; London by No. 29). Owen Sound
+  (Palmerston - Owen Sound) in the notes.
+- on_cn_t128 Palmerston - Mount Forest - Durham M333 / M334; on_cn_t136 Allandale - Elmvale - Penetang M397 / M398 (replaces on_cn_t126p, DELETED);
+  on_cn_t137 Allandale - Collingwood - Meaford 63, 61 / 60 (e: Tue - Sat), 62, 160 (summer Sun); on_cn_t137c Allandale - Angus - Camp Borden 61 section / M396
+  (replaces on_cn_t126c, DELETED; Camp Borden mile still estimated, Brendan to trace); on_cn_t126m cut to Toronto - Allandale (45 / 42; 41M, 44M, 38M removed).
+  on_cn_t138 Parkhead - Wiarton M341, M337 / M336, M338 (Parkhead at the junction, APPROXIMATE).

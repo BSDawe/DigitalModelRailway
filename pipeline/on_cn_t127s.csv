@@ -1,0 +1,17 @@
+# Canadian National, Table 127: Stratford - St. Marys Jct. - Lucan - Forest - Sarnia (motor trains). Source: Official Guide, April 25, 1948, CN Table 127 (Brendan, 1 Nov 2026, page 1132; private scans og1948_cnq/). EASTERN TIME.
+# Miles as printed.
+# Signs (page 1132): * daily; dagger ex Sun; double dagger ex Sat; pilcrow ex Mon; section Sun only; d ex Sat and Sun; e ex Sun and Mon; f flag; k Sat only; y stops to leave from Windsor, Sarnia and west or take for Toronto and east (entered as flag); square: motor train; boxed sign: Monday only; circle: also runs May 24, July 1, Sept. 6; crescent: will not run May 24, July 1, Sept. 6; open square: runs Sundays June 27 - Sept. 5 (and Mondays Aug. 2, Sept. 6); black dot: last trip June 27 ...; diamond: first trip June 27, last Sept. 6; tick: also Mondays Aug. 2 and Sept. 6; triangle: Mondays Aug. 2 and Sept. 6 instead of Sundays. Model week July 5 - 11.
+#train col=No601 num=601 dir=down days="ex Sun" kind=motor note="Motor train, daily except Sunday: Stratford 7.45 a.m. to Sarnia 10.40 a.m."
+#train col=No600 num=600 dir=up days="ex Sun" kind=motor note="Motor train, daily except Sunday: Sarnia 2.00 p.m. to Stratford 4.45 p.m."
+mile,station,principal,prov,tz,No601,No600
+0.0,Stratford,1,ON,E,lv 7.45a,ar 4.45p
+10.2,St. Marys Junction,0,ON,E,8.05a,4.17p
+19.5,Granton,0,ON,E,8.25a,4.03p
+25.4,Lucan,0,ON,E,8.38a,3.51p
+27.6,Lucan Crossing,0,ON,E,f8.45a,f3.45p
+32.5,Ailsa Craig,0,ON,E,8.56a,3.35p
+40.2,Parkhill,0,ON,E,9.12a,3.20p
+48.9,Thedford,0,ON,E,9.30a,3.03p
+57.7,Forest,1,ON,E,9.50a,2.45p
+66.9,Camlachie,0,ON,E,10.10a,2.27p
+81.1,Sarnia,1,ON,E,ar 10.40a,lv 2.00p

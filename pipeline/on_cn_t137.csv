@@ -1,0 +1,17 @@
+# Canadian National, Table 137: Allandale - Colwell - Angus - New Lowell - Stayner - Collingwood - Thornbury - Meaford. Source: Official Guide, April 25, 1948, CN Table 137 (Brendan, 1 Nov 2026, page 1132; private scans og1948_cnq/). EASTERN TIME.
+# Miles as printed. Replaces the Collingwood / Meaford sections of Table 126 (on_cn_t126m.csv cut to Toronto - Allandale). The first No. 160 (Sundays, Meaford 5.30 p.m., last trip before June 27) not entered.
+# Signs (page 1132): * daily; dagger ex Sun; double dagger ex Sat; pilcrow ex Mon; section Sun only; d ex Sat and Sun; e ex Sun and Mon; f flag; k Sat only; y stops to leave from Windsor, Sarnia and west or take for Toronto and east (entered as flag); square: motor train; boxed sign: Monday only; circle: also runs May 24, July 1, Sept. 6; crescent: will not run May 24, July 1, Sept. 6; open square: runs Sundays June 27 - Sept. 5 (and Mondays Aug. 2, Sept. 6); black dot: last trip June 27 ...; diamond: first trip June 27, last Sept. 6; tick: also Mondays Aug. 2 and Sept. 6; triangle: Mondays Aug. 2 and Sept. 6 instead of Sundays. Model week July 5 - 11.
+#train col=No63 num=63 dir=down days="ex Sun" kind=passenger note="Daily except Sunday: (Toronto 5.50 p.m., No. 45) Allandale 8.15 p.m. to Collingwood 9.20 and Meaford 10.05 p.m."
+#train col=No61 num=61 dir=down days="ex Sun" kind=passenger note="Daily except Sunday: (Toronto 9.10 a.m., No. 41) Allandale 11.35 a.m. to Collingwood 12.42 and Meaford 1.30 p.m.; a section from Angus to Camp Borden (12.10 p.m., on_cn_t137c.csv)."
+#train col=No60 num=60 dir=up days="Tue,Wed,Thu,Fri,Sat" kind=passenger note="Printed e (daily except Sunday and Monday; also Mondays August 2 and September 6): Meaford 6.00 a.m. to Allandale 7.50 a.m. (Toronto 10.10 a.m., No. 42)."
+#train col=No62 num=62 dir=up days="ex Sun" kind=passenger note="Daily except Sunday: Meaford 2.15 p.m. to Allandale 4.10 p.m. (Toronto 6.55 p.m., No. 44)."
+#train col=No160 num=160 dir=up days=Sun kind=passenger note="Sundays June 27 to September 6 (Mondays August 2 and September 6 instead of Sundays August 1 and September 5): Meaford 6.40 p.m. to Allandale 8.30 p.m. (Toronto 10.55 p.m.)."
+mile,station,principal,prov,tz,No63,No61,No60,No62,No160
+0.0,Allandale,1,ON,E,lv 8.15p,lv 11.35a,ar 7.50a,ar 4.10p,ar 8.30p
+5.5,Colwell,0,ON,E,8.25p,11.44a,7.40a,3.59p,8.20p
+10.3,Angus,0,ON,E,8.35p,11.55a,7.31a,3.50p,8.10p
+15.7,New Lowell,0,ON,E,8.46p,12.06p,7.21a,3.35p,8.01p
+22.8,Stayner,0,ON,E,9.00p,12.20p,7.08a,3.22p,7.48p
+31.4,Collingwood,1,ON,E,9.20p,12.42p,6.50a,3.04p,7.30p
+44.0,Thornbury,0,ON,E,9.47p,1.10p,6.19a,2.35p,6.59p
+52.2,Meaford,1,ON,E,ar 10.05p,ar 1.30p,lv 6.00a,lv 2.15p,lv 6.40p

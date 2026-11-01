@@ -1,0 +1,10 @@
+# Canadian National, Table 137: Allandale - Colwell - Angus - Camp Borden. Source: Official Guide, April 25, 1948, CN Table 137 (Brendan, 1 Nov 2026, page 1132; private scans og1948_cnq/). EASTERN TIME.
+# Camp Borden has no miles printed: 15.0 from Allandale is an estimate (as on_cn_t126c.csv, now deleted); Brendan to trace the Camp Borden line.
+# Signs (page 1132): * daily; dagger ex Sun; double dagger ex Sat; pilcrow ex Mon; section Sun only; d ex Sat and Sun; e ex Sun and Mon; f flag; k Sat only; y stops to leave from Windsor, Sarnia and west or take for Toronto and east (entered as flag); square: motor train; boxed sign: Monday only; circle: also runs May 24, July 1, Sept. 6; crescent: will not run May 24, July 1, Sept. 6; open square: runs Sundays June 27 - Sept. 5 (and Mondays Aug. 2, Sept. 6); black dot: last trip June 27 ...; diamond: first trip June 27, last Sept. 6; tick: also Mondays Aug. 2 and Sept. 6; triangle: Mondays Aug. 2 and Sept. 6 instead of Sundays. Model week July 5 - 11.
+#train col=No61C num=61 dir=down days="ex Sun" kind=passenger note="Camp Borden section of No. 61: Allandale 11.35, Angus 11.55 a.m. to Camp Borden 12.10 p.m."
+#train col=M396 num=396 dir=up days="ex Sun" kind=mixed note="Mixed, daily except Sunday: Camp Borden 1.00 p.m. to Allandale 1.35 p.m. (Toronto 6.55 p.m.)."
+mile,station,principal,prov,tz,No61C,M396
+0.0,Allandale,1,ON,E,lv 11.35a,ar 1.35p
+5.5,Colwell,0,ON,E,11.44a,1.22p
+10.3,Angus,0,ON,E,11.55a,1.10p
+15.0,Camp Borden,1,ON,E,ar 12.10p,lv 1.00p

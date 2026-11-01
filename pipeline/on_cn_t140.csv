@@ -1,0 +1,22 @@
+# Canadian National, Table 140 (and 127): London - St. Marys - Stratford - Milverton - Listowel - Palmerston. Source: Official Guide, April 25, 1948, CN Table 140 and 127 (Brendan, 1 Nov 2026, page 1132; private scans og1948_cnq/). EASTERN TIME.
+# Miles: London - Stratford 32.8 (Table 140), stations between from Table 127; Stratford - Palmerston as printed. Palmerston - Owen Sound (108.3 from Stratford) in the notes.
+# Signs (page 1132): * daily; dagger ex Sun; double dagger ex Sat; pilcrow ex Mon; section Sun only; d ex Sat and Sun; e ex Sun and Mon; f flag; k Sat only; y stops to leave from Windsor, Sarnia and west or take for Toronto and east (entered as flag); square: motor train; boxed sign: Monday only; circle: also runs May 24, July 1, Sept. 6; crescent: will not run May 24, July 1, Sept. 6; open square: runs Sundays June 27 - Sept. 5 (and Mondays Aug. 2, Sept. 6); black dot: last trip June 27 ...; diamond: first trip June 27, last Sept. 6; tick: also Mondays Aug. 2 and Sept. 6; triangle: Mondays Aug. 2 and Sept. 6 instead of Sundays. Model week July 5 - 11.
+#train col=No170 num=170 dir=down days="ex Sun" kind=passenger note="Daily except Sunday: London 6.25 p.m. by Stratford (7.28 - 7.35) to Palmerston 8.45 p.m. (Owen Sound 11.20 p.m.)."
+#train col=No168 num=168 dir=down days="ex Sun" kind=passenger note="Daily except Sunday: London 6.10 a.m. by Stratford (7.10 - 7.37) to Palmerston 9.00 a.m. (Owen Sound 2.05 p.m.)."
+#train col=No169 num=169 dir=up days="ex Sun" kind=passenger note="Daily except Sunday: (Owen Sound 5.40 a.m.) Palmerston 8.20 a.m. to Stratford 9.35 a.m. (London 11.40 a.m. by No. 29)."
+#train col=No171 num=171 dir=up days="ex Sun" kind=passenger note="Daily except Sunday: (Owen Sound 1.25 p.m.) Palmerston 4.35 p.m. by Stratford (5.48 - 6.00) to London 7.05 p.m."
+mile,station,principal,prov,tz,No170,No168,No169,No171
+0.0,London,1,ON,E,lv 6.25p,lv 6.10a,,ar 7.05p
+2.9,Pottersburg,0,ON,E,6.34p,,,6.54p
+10.7,Thorndale,0,ON,E,6.42p,6.29a,,6.42p
+15.7,Kellys,0,ON,E,f6.54p,6.37a,,6.30p
+21.7,St. Marys,1,ON,E,7.07p,6.50a,,6.21p
+22.6,St. Marys Junction,0,ON,E,,,,
+32.8,Stratford,1,ON,E,ar 7.28p / lv 7.35p,ar 7.10a / lv 7.37a,ar 9.35a,ar 5.48p / lv 6.00p
+44.4,Brunner,0,ON,E,7.55p,8.02a,9.13a,5.26p
+47.3,Milverton,0,ON,E,8.01p,8.07a,9.05a,5.20p
+49.7,Newton,0,ON,E,8.05p,8.14a,9.00a,5.14p
+56.4,Britton,0,ON,E,f8.17p,8.26a,8.48a,5.02p
+60.8,Listowel,1,ON,E,8.27p,8.37a,8.37a,4.51p
+63.9,Gowanstown,0,ON,E,f8.33p,8.43a,8.30a,4.45p
+69.7,Palmerston,1,ON,E,ar 8.45p,ar 9.00a,lv 8.20a,lv 4.35p
