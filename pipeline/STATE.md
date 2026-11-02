@@ -2260,3 +2260,11 @@ Stations of different railways within 250 m (70 pairs; script: same check over v
   Richmond), t150 (Detroit - Durand - Grand Rapids - Muskegon; Grand Haven mixed and the Muskegon - Milwaukee car ferry in its notes), t152 (Durand - Greenville),
   t153 (Pontiac - Caseville). Tables 151 (St. Thomas - Glencoe - Alvinston, Ontario) and 154: freight only.
 - TO CHECK (Brendan): Parkhead station point (now at the junction of the Wiarton line, APPROXIMATE; used by Tables 138 and 143); St. George end of the stub.
+
+## Version 122 (1 November 2026): Table 72 Iberville - Farnham by the CP (Brendan)
+- Brendan: the direct CN (Stanstead, Shefford & Chambly) line Iberville - Farnham was abandoned in 1935; the trains run in to the CN Iberville station, north to
+  the CP, reverse onto it and run over the CP to Farnham (CP station), then the CN again. Undoes Version 100's routing.
+- on_cn_t072: Iberville split again: Iberville (CN station, 23.9; arrival down / departure up) and Iberville (C.P.) (25.3, = CP_IBERVILLE; departure down / arrival up)
+  as printed. Collection piece 572 (desc "Main line from Saint-Jean to Farnham.") dropped; its St. Johns - Iberville part re-added as a link ending at the CN
+  station; north from the CN station by the collection's East Richelieu Valley piece to the CP Adirondack line.
+- The St. Johns - Iberville link now starts at the St. Johns station point (net link): the trains had run west to a wye and back first.

@@ -1,5 +1,5 @@
 # Canadian National, Table 72: Montreal (Central Station) - St. Johns - Iberville - Farnham - Granby - Waterloo. Source: Official Guide, April 25, 1948, CN Table 72 (Brendan, 30 Oct 2026, page 1121; private scans og1948_cnq/). EASTERN TIME.
-# Miles as printed. Iberville - Farnham over the CN (Stanstead, Shefford & Chambly line; Brendan, 30 Oct 2026). Iberville is printed twice (arr. C.V. station 23.9, lve. Iberville 25.3, bracketed "C.P.Ry." with Farnham): entered as one stop with the two times. Farnham (Union Station) shared with the CP. Replaces on_cn_t051i.csv (the same trains to Iberville only; deleted).
+# Miles as printed. Iberville - Farnham over the CP by running rights (Brendan, 1 Nov 2026: the direct CN line was abandoned in 1935): in to the CN Iberville station, north to the CP, reverse onto it at the CP Iberville station (printed: lve. Iberville C.P.Ry. 25.3), CP to Farnham, then the CN again. Iberville is printed twice (arr. C.V. station 23.9, lve. Iberville 25.3, bracketed "C.P.Ry." with Farnham): entered as one stop with the two times. Farnham (Union Station) shared with the CP. Replaces on_cn_t051i.csv (the same trains to Iberville only; deleted).
 # Signs (page 1121): * daily; dagger ex Sun; double dagger ex Sat; pilcrow ex Mon; section Sun only; a Mon Wed Fri; b Tue Thu Sat; c Mon only; d Fri only; k Sat only; v daily except Sun and Mon; double sharp Sat and Sun; psi Mon - Thu; f flag; crescent: stops on signal Sept. 5 only (no stop); M mixed; motor train sign.
 #train col=No606 num=606 dir=down days="Mon,Tue,Wed,Thu,Fri,Sat" kind=passenger note="Daily except Sunday: Montreal 9.10 a.m. to Waterloo 11.40 a.m. Iberville - Farnham over the CN."
 #train col=No608 num=608 dir=down days="Mon,Tue,Wed,Thu,Fri,Sat" kind=passenger note="Daily except Sunday: Montreal 5.40 p.m. to Waterloo 8.15 p.m. Iberville - Farnham over the CN."
@@ -12,7 +12,8 @@ mile,station,principal,prov,tz,No606,No608,No605,No607
 9.1,Brosseau,0,QC,E,f9.34a,f6.04p,f8.06a,f4.26p
 17.0,Lacadie,0,QC,E,f9.45a,f6.15p,f7.55a,f4.15p
 23.2,St. Johns,1,QC,E,ar 9.55a / lv 10.00a,ar 6.25p / lv 6.30p,ar 7.42a / lv 7.45a,ar 4.02p / lv 4.05p
-23.9,Iberville,0,QC,E,ar 10.05a / lv 10.15a,ar 6.35p / lv 6.45p,ar 7.25a / lv 7.37a,ar 3.45p / lv 3.57p
+23.9,Iberville,0,QC,E,10.05a,6.35p,lv 7.37a,lv 3.57p
+25.3,Iberville (C.P.),0,QC,E,lv 10.15a,lv 6.45p,7.25a,3.45p
 38.2,Farnham,1,QC,E,10.39a,7.10p,7.00a,3.20p
 43.0,Rang Casimir,0,QC,E,f10.50a,f7.22p,f6.49a,f3.09p
 45.2,Angeline,0,QC,E,10.56a,7.28p,6.44a,3.04p

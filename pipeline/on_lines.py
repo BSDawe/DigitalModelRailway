@@ -134,7 +134,7 @@ def _graph(me):
         for o in pieces():
             if o['kind'] != 'LineString' or len(o['coords']) < 2: continue
             if GONE.search(o.get('desc', '')) or any(LATER.search(x) for x in o['path']) or 'Pelletierjunction to near St. Andre' in (o.get('desc') or '') \
-               or ('Grand Trunk Railway Main Line' in o['path'] and (o.get('desc') or '').strip() in ('Abandoned mainline.', 'Re-alignment.')) or o.get('name') == 'Peterborough and Chemong': continue   # GTR main line old alignments by Port Hope and Bowmanville (realigned 1900 - 1911; Brendan, 1 Nov 2026); the Peterborough & Chemong (abandoned in the 19th century)   # NTR Pelletier - St. Andre: built after 1948 (Brendan, 29 Oct 2026)
+               or ('Grand Trunk Railway Main Line' in o['path'] and (o.get('desc') or '').strip() in ('Abandoned mainline.', 'Re-alignment.')) or o.get('name') == 'Peterborough and Chemong' or (o.get('desc') or '').strip() == 'Main line from Saint-Jean to Farnham.': continue   # GTR main line old alignments by Port Hope and Bowmanville (realigned 1900 - 1911; Brendan, 1 Nov 2026); the Peterborough & Chemong (abandoned in the 19th century)   # NTR Pelletier - St. Andre: built after 1948 (Brendan, 29 Oct 2026)
             c = despike(o['coords'])
             if len(c) > 3 and covered(c): continue
             if box and not any(box[0] <= p[0] <= box[1] and box[2] <= p[1] <= box[3] for p in c[::max(1, len(c) // (6 if me in ('onr', 'acr') else 200))]) \
@@ -320,7 +320,7 @@ SHARED = {('onr', 'toronto union'): 'TORONTO_UNION', ('oncn', 'toronto union'): 
           ('ontem', 'riviere du loup'): 'CN_RIVIERE_DU_LOUP', ('oncgt', 'mont joli'): 'CN_MONT_JOLI',   # at the CN stations (the CN trains there are not built yet)
           ('oncp', 'brockville'): 'BROCKVILLE_UNION', ('oncpcn', 'brockville'): 'BROCKVILLE_UNION', ('oncn', 'brockville'): 'BROCKVILLE_UNION',   # Brockville Union Station (Brendan)
           ('oncp', 'levis'): 'LEVIS', ('oncn', 'levis'): 'LEVIS',          # one Levis station for CN and CP (Quebec Central; Brendan, 25 Oct 2026)                          # one Palais Station (CP Table 33 and CN Table 38)                             # one station at Cochrane (CN Table 38 and the ONR)
-          ('oncn', 'farnham'): 'CP_FARNHAM',   # CN Table 72: Farnham Union Station; the trains leave Iberville by the CP (30 Oct 2026)
+          ('oncn', 'farnham'): 'CP_FARNHAM', ('oncn', 'iberville c p'): 'CP_IBERVILLE',   # CN Table 72: Farnham Union Station; the trains leave Iberville by the CP (30 Oct 2026)
           ('ondh', 'delson'): 'CP_DELSON',   # the D&H (Napierville Junction Ry.) trains at the CP Delson station
           ('oncn', 'sunnyside'): 'CP_SUNNYSIDE',   # one Sunnyside station, CN Table 79 and the CP trains over the Lake Shore (CP Table 56)
           ('ontir', 'gananoque junction'): 'CN_GANANOQUE_JUNCTION',   # the TIR at the CN station (over the CN from Thousand Islands Jct.; Brendan)
