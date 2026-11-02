@@ -2191,6 +2191,10 @@ Stations of different railways within 250 m (70 pairs; script: same check over v
 ## TO DO (1 November 2026, replaces the lists above)
 - TO CHECK (Brendan): CN 122 / 126 Camp Borden (Brendan to trace); L&PS Colborne St., Philip St., Elm St., Stop 7, No. 37 St. Thomas; CP Table 73 No. 50 Elma
   (8.09 printed) and Crest; CP Table 69 Bennington, Lind (by mileage); CP Table 107 McAuley - Welwyn; CN Port Dover routing (Simcoe South - Port Dover).
+- TO CHECK (Brendan, 2 Nov 2026): Iberville, CN Table 72: keep "lve. Iberville (C.P.Ry.) 25.3" only as the timing point after the reversal at the junction, or drop the row
+  (Brendan doubts the trains ran into the CP station; trace of the short CN link up to the CP); NYC Tables 6 / 11 readings: 364 St. Thomas 11.28 - Aylmer p11.33
+  (10.7 mi in 5 min), 366 Lythmore f4.23 - Cayuga 4.25, M362 Charing Cross 6.58 - Fargo 7.25; the Detroit River Tunnel portal and border point (APPROXIMATE, Brendan
+  to trace); the Table 44 Petrolia / Oil Springs branch miles (estimated); Otterville.
 - WAITING ON BRENDAN: Quebec Railway, Light & Power; the Stratford table (No. 10); the Camp Borden trace; the remaining steamship points and waterways; the rest
   of the Official Guide pages.
 - BUILD: run-through joins (London, Hamilton, North Bay, CN 3 / 4, CP / TH&B at Hamilton, Cataract); numbering of connecting sections (wait for the branch tables);
