@@ -2291,3 +2291,10 @@ Stations of different railways within 250 m (70 pairs; script: same check over v
 - CP (on_cp_t049w): Windsor = the NYC Windsor station (Brendan: by 1948 CP trains used it; the old CP station was demolished in the 1930s); stop id NYC_WINDSOR
   (SHARED ('oncp', 'windsor')); force Walkerville Junction - Windsor (over the CP yard to the Michigan Central).
 - Brendan doubts the Table 72 reversal into the CP Iberville station (asked how he reads it).
+
+## Version 124 (2 November 2026): CP into Windsor over the Michigan Central connection
+- Brendan: the Version 123 CP routing at Windsor was odd (up the CP yard toward the old ferry dock and back down the MC, then back to the station).
+  New link (own cp, cost 0.8) "CP Windsor: connection from the CP main line to the Michigan Central, through the NYC Windsor station to the tunnel": the
+  collection's CP Windsor siding that curves from the CP main line west of Walkerville onto the Canada Southern by the station, then the MC main through the
+  station to the start of the tunnel link (ready for the trains to run on to Detroit). The force (Walkerville Junction - Windsor) removed.
+  Dry run: 227.4 / 226.1 mi; Elmstead - Windsor now matches the printed 10.5; Walkerville Junction on its point.
