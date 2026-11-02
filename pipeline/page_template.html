@@ -838,7 +838,7 @@ let panelKey = '';
 // scheduled average speed over the stretch the train is on: printed miles between the timed stops either side, leaving time to arriving time
 // (untimed / estimated stops skipped; shown beside Follow, Brendan, 2 Nov 2026)
 function segSpeed(t, st) {
-  if (!st || !t.mainline || t.water || t.local) return null;
+  if (!st || t.water) return null;
   const S_ = t.stops, ok = r => r[3] !== 0;
   let a, b;
   if (st.moving) { const r = nextStop(t, st), j = S_.indexOf(r); if (j < 1) return null;
@@ -846,7 +846,7 @@ function segSpeed(t, st) {
   else { const i = S_.findIndex(r => r[0] === st.at); if (i < 0 || i >= S_.length - 1) return null;
     for (a = i; a > 0 && !ok(S_[a]); a--); for (b = i + 1; b < S_.length - 1 && !ok(S_[b]); b++); }
   const lm = x => x.miles?.[t.rk] ?? x.mile, sa = ST[S_[a][0]], sb = ST[S_[b][0]];
-  let mi = (lm(sa) != null && lm(sb) != null) ? Math.abs(lm(sb) - lm(sa)) : NaN;
+  let mi = t.mainline && lm(sa) != null && lm(sb) != null ? Math.abs(lm(sb) - lm(sa)) : NaN;   // B.C. Electric: the traced track
   if (!(mi > 0)) mi = Math.abs(sb.chains[t.rk] - sa.chains[t.rk]) / 1609.344;
   let dt = S_[b][1] - S_[a][2]; if (dt < 0) dt += 86400;
   if (!(mi > 0) || dt <= 0) return null;
