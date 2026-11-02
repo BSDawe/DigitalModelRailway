@@ -1,0 +1,27 @@
+# New York Central (Michigan Central): St. Thomas - Alvinston - Oil City - Brigden - Courtright (St. Clair branch, mixed). Source: Official Guide, April 25, 1948, New York Central Table 44 (Brendan, 1 Nov 2026). EASTERN TIME.
+# Miles as printed. Petrolia Jct. (101) and Oil City (102) times between the branch trips estimated.
+# Signs (Table 44): z Mon Wed Fri; double dagger Tue Thu Sat; f flag; Mix. mixed train.
+#train col=M101 num=101 dir=down days="Mon,Wed,Fri" kind=mixed note="Mixed, Monday, Wednesday and Friday: St. Thomas 8.30 a.m. to Oil City 11.24 a.m. (then the Oil Springs and Petrolia trips 104, 105, 108, on_mc_t044b)."
+#train col=M101B num=101 dir=down days="Mon,Wed,Fri" kind=mixed note="Mixed 101 continued, Monday, Wednesday and Friday: (Petrolia 2.30 p.m. as 108) Petrolia Jct. (departure estimated) to Brigden 3.25 and Courtright 4.15 p.m."
+#train col=M102 num=102 dir=up days="Tue,Thu,Sat" kind=mixed note="Mixed, Tuesday, Thursday and Saturday: Courtright 9.30 a.m. to Petrolia Jct. 10.08 a.m. (then the Petrolia and Oil Springs trips 103, 106, 107, on_mc_t044b)."
+#train col=M102B num=102 dir=up days="Tue,Thu,Sat" kind=mixed note="Mixed 102 continued, Tuesday, Thursday and Saturday: (Eddys 1.01 p.m. as 107) Oil City (departure estimated) to St. Thomas 5.15 p.m."
+mile,station,principal,prov,tz,M101,M101B,M102,M102B
+0.0,St. Thomas,1,ON,E,lv 8.30a,,,ar 5.15p
+4.3,St. Clair Junction,0,ON,E,8.45a,,,
+5.3,Air Line Crossing,0,ON,E,f8.59a,,,f4.38p
+13.5,Muncey,0,ON,E,f9.22a,,,f4.11p
+19.3,Melbourne,0,ON,E,9.39a,,,3.55p
+22.3,Can. Nat. Crossing,0,ON,E,f9.55a,,,f3.39p
+25.8,Appin Road,0,ON,E,f10.07a,,,f3.21p
+29.9,Walkers,0,ON,E,f10.15a,,,f3.11p
+35.3,Alvinston,1,ON,E,10.43a,,,2.55p
+41.0,Inwood,0,ON,E,11.05a,,,2.35p
+42.3,Weidman,0,ON,E,f11.09a,,,f1.58p
+43.8,Glen Rae,0,ON,E,f11.13a,,,f1.51p
+45.0,Holmesdale,0,ON,E,f11.17a,,,f1.45p
+48.2,Oil City,1,ON,E,ar 11.24a,,,~lv 1.35p
+50.2,Petrolia Junction,0,ON,E,,~lv 2.55p,ar 10.08a,
+56.6,Brigden,0,ON,E,,3.25p,9.54a,
+59.8,Kimballs,0,ON,E,,f3.40p,f9.45a,
+65.8,Courtright Junction,0,ON,E,,,,
+66.4,Courtright,1,ON,E,,ar 4.15p,lv 9.30a,

@@ -2268,3 +2268,22 @@ Stations of different railways within 250 m (70 pairs; script: same check over v
   as printed. Collection piece 572 (desc "Main line from Saint-Jean to Farnham.") dropped; its St. Johns - Iberville part re-added as a link ending at the CN
   station; north from the CN station by the collection's East Richelieu Valley piece to the CP Adirondack line.
 - The St. Johns - Iberville link now starts at the St. Johns station point (net link): the trains had run west to a wye and back first.
+
+## Version 123 (1 November 2026): New York Central (Michigan Central) in Ontario; CP Windsor
+- New railway key 'onmc' (label New York Central (Michigan Central), own nyc, agency NYC, pfx NYC; graph 'mc': NYC track only, box SW Ontario). Files on_mc_t*.csv.
+  Script: scratchpad on/mc006.py. Scans: dmr-sources og1948_cnq/nyc_t006_t011_t044_*.
+- on_mc_t006 (NYC Tables 6 / 11, the Canada Southern line, border to border): Detroit River Tunnel border (APPROXIMATE, straight link from the end of the Canada
+  Southern main by the Windsor station; no trace) - Windsor (the '2nd Windsor station') - Essex - Ridgetown - St. Thomas - Tillsonburg - Waterford - Welland - Fort
+  Erie - International Railway Bridge border (Brendan's point). East: 366 (motor, Windsor - St. Thomas a.m.), 366 (St. Thomas - Fort Erie p.m.), M362, 44, 8 The
+  Wolverine, 364, 50 Empire State Express, 40 North Shore Limited (no Ontario stops printed: border times and St. Thomas estimated). West: 17 The Wolverine,
+  33 New England Wolverine, M361, 365 (Fort Erie - St. Thomas a.m.), 365 (St. Thomas - Windsor p.m.), 35, 51 Empire State Express, 39 North Shore Limited.
+  on_mc_t006n: 358 The Canadian - The Niagara (Windsor - Welland - Niagara Falls, Ont. - border at the bridge to Suspension Bridge).
+  Not entered: the TH&B trains printed in these tables (in on_thb_t056), the Welland - Niagara Falls motor buses, The Detroiter 48 / 47 (no Ontario times), the
+  Michigan-only trains. Several station points by mileage (Ruscomb, Comber, Fargo, Mull, Charing Cross, Ridgetown, West Lorne, Dutton, Cayuga, Edward: the
+  collection points did not fit the line).
+  DOUBTS: 364 St. Thomas 11.28 - Aylmer p11.33 (10.7 mi in 5 min) and 366 Lythmore f4.23 - Cayuga 4.25 as read; M362 Charing Cross 6.58 - Fargo 7.25.
+- on_mc_t044 (NYC Table 44) St. Thomas - Alvinston - Oil City - Brigden - Courtright mixed M101 (MWF) / M102 (TThS), each split at the branch trips;
+  on_mc_t044b Eddys - Oil Springs - Oil City - Petrolia Jct. - Petrolia: M105, M107, M103 / M104, M106, M108 (branch miles estimated).
+- CP (on_cp_t049w): Windsor = the NYC Windsor station (Brendan: by 1948 CP trains used it; the old CP station was demolished in the 1930s); stop id NYC_WINDSOR
+  (SHARED ('oncp', 'windsor')); force Walkerville Junction - Windsor (over the CP yard to the Michigan Central).
+- Brendan doubts the Table 72 reversal into the CP Iberville station (asked how he reads it).

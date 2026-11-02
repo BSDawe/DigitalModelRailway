@@ -1,0 +1,45 @@
+# New York Central (Michigan Central): Detroit - Windsor - St. Thomas - Welland - Niagara Falls, Ont. - Suspension Bridge, the Ontario part (border to border). Source: Official Guide, April 25, 1948, New York Central Tables 6 (Chicago and Detroit to Niagara Falls and Buffalo) and 11 (the reverse) (Brendan, 1 Nov 2026; private scans og1948_cnq/nyc_*). EASTERN TIME.
+# Miles from Chicago as printed; the borders estimated.
+# Signs (Tables 6 and 11): * daily; dagger ex Sun; double dagger ex Sat; b, e, i, p, v, x, y, z: conditional stops (entered as flag stops); f flag; QQ Taylor: regular stop when schools are open (entered as flag); square: motor bus Welland - Niagara Falls (not entered). Border times estimated (Detroit River Tunnel; the International Railway Bridge to Black Rock; the Niagara River bridge to Suspension Bridge).
+#train col=No358 num=358 dir=down days=daily kind=passenger name="The Canadian - The Niagara" note="The Canadian - The Niagara, daily: (Detroit 2.50 a.m.) Windsor 3.06 a.m. by St. Thomas (4.52 - 4.57) and Welland (6.41) to Niagara Falls, Ont. 7.11 a.m. (Suspension Bridge 7.20, Niagara Falls, N.Y. 7.35; Buffalo 8.30 by connecting train)."
+mile,station,principal,prov,tz,No358
+285.0,"International Boundary (Detroit River Tunnel, to Detroit, Mich.)",0,ON,E,~lv 2.58a
+286.3,Windsor,1,ON,E,3.06a
+296.2,Maidstone,0,ON,E,
+300.7,Essex,1,ON,E,
+306.2,Woodslee,0,ON,E,
+310.2,Ruscomb,0,ON,E,
+315.2,Comber,1,ON,E,
+321.6,Tilbury,0,ON,E,
+328.7,Fletcher,0,ON,E,
+332.7,Buxton,0,ON,E,
+339.1,Charing Cross,0,ON,E,
+341.4,Fargo,0,ON,E,
+346.4,Mull,0,ON,E,
+352.2,Ridgetown,1,ON,E,
+357.9,Highgate,0,ON,E,
+360.0,Muirkirk,0,ON,E,
+362.5,Taylor,0,ON,E,
+366.0,Rodney,0,ON,E,
+370.4,West Lorne,0,ON,E,
+376.9,Dutton,0,ON,E,
+382.9,Iona,0,ON,E,
+386.8,Shedden,0,ON,E,
+395.9,St. Thomas,1,ON,E,ar 4.52a / lv 4.57a
+406.6,Aylmer,0,ON,E,
+409.1,Springfield,0,ON,E,
+420.3,Tillsonburg,1,ON,E,
+430.8,Hawtrey,0,ON,E,
+432.1,La Salette,0,ON,E,
+442.8,Waterford,1,ON,E,f5.46a
+455.5,Hagersville,0,ON,E,
+462.6,Lythmore,0,ON,E,
+465.4,Cayuga,0,ON,E,
+467.1,Edward,0,ON,E,
+471.9,Canfield Junction,0,ON,E,
+487.4,Perry,0,ON,E,
+496.8,Welland,1,ON,E,6.41a
+508.2,Falls View,0,ON,E,
+509.3,Victoria Park,0,ON,E,
+510.5,"Niagara Falls, Ont.",1,ON,E,7.11a
+511.0,"International Boundary (Niagara River, to Suspension Bridge, N.Y.)",0,ON,E,~ar 7.16a

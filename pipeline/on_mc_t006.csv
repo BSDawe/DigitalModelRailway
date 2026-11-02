@@ -1,0 +1,59 @@
+# New York Central (Michigan Central, the Canada Southern line): Detroit - Windsor - St. Thomas - Welland - Fort Erie - Buffalo, the Ontario part (border to border). Source: Official Guide, April 25, 1948, New York Central Tables 6 (Chicago and Detroit to Niagara Falls and Buffalo) and 11 (the reverse) (Brendan, 1 Nov 2026; private scans og1948_cnq/nyc_*). EASTERN TIME.
+# Miles from Chicago as printed; the borders 285.0 (Detroit River Tunnel) and 515.0 (International Railway Bridge) estimated. Not entered: the TH&B trains printed in these tables (372, 374, 380, 382 / 371, 375, 379, 383: on_thb_t056), the motor buses Welland - Niagara Falls, The Detroiter (48 / 47, Pullman only, no Ontario times printed), and the trains that run only in Michigan. London - St. Thomas connections (the L&PS) in the notes.
+# Signs (Tables 6 and 11): * daily; dagger ex Sun; double dagger ex Sat; b, e, i, p, v, x, y, z: conditional stops (entered as flag stops); f flag; QQ Taylor: regular stop when schools are open (entered as flag); square: motor bus Welland - Niagara Falls (not entered). Border times estimated (Detroit River Tunnel; the International Railway Bridge to Black Rock; the Niagara River bridge to Suspension Bridge).
+#train col=No366 num=366 dir=down days="ex Sun" kind=motor note="Motor train, daily except Sunday: (Detroit 5.25 a.m.) Windsor 5.40 a.m. to St. Thomas 8.50 a.m. (London 9.46 by the L&PS)."
+#train col=No366B num=366 dir=down days="ex Sun" kind=motor note="Motor train, daily except Sunday: St. Thomas 2.30 p.m. (London 12.20 by the L&PS) to Welland 5.24 and Fort Erie 5.55 p.m. (Black Rock 6.15, Buffalo 6.40 p.m.)."
+#train col=M362 num=362 dir=down days="ex Sun" kind=mixed note="Mixed, daily except Sunday: Windsor 4.30 p.m. to St. Thomas 10.45 p.m."
+#train col=No44 num=44 dir=down days=daily kind=passenger note="Daily: (Chicago 8.45 a.m., Detroit 4.45 p.m.) Windsor 5.04 p.m. by St. Thomas (6.50 - 6.54) and Welland (8.31) to Fort Erie 8.56 p.m. (Black Rock 9.15, Buffalo 9.40 p.m.)."
+#train col=No8 num=8 dir=down days=daily kind=passenger name="The Wolverine" note="The Wolverine, daily: (Chicago 2.15 p.m., Detroit 8.30 p.m.) Windsor 8.45 p.m. by St. Thomas (10.27 - 10.31) to Black Rock 12.48 a.m., Buffalo 1.10 a.m."
+#train col=No364 num=364 dir=down days=daily kind=passenger note="Daily: (Detroit 9.00 p.m.) Windsor 9.15 p.m. by St. Thomas (11.23 - 11.28) and Welland (1.27) to Fort Erie 2.05 a.m. (Black Rock 2.28, Buffalo 2.50 a.m.)."
+#train col=No50 num=50 dir=down days=daily kind=passenger name="Empire State Express" note="Empire State Express (Detroit section), daily: (Detroit 8.20 a.m.) Windsor 8.37 a.m. by St. Thomas (10.23 - 10.27) and Welland (12.05) to Fort Erie 12.30 p.m. (Black Rock 12.40, Buffalo 1.06 p.m.); Welland - Niagara Falls by motor bus."
+#train col=No40 num=40 dir=down days=daily kind=passenger name="North Shore Limited" note="North Shore Limited, daily: Detroit 4.50 a.m. to Buffalo 9.30 a.m. by Fort Erie, no stops printed in Ontario (border times estimated)."
+#train col=No17 num=17 dir=up days=daily kind=passenger name="The Wolverine" note="The Wolverine, daily: (Buffalo 2.05 a.m., Black Rock 2.27) St. Thomas 4.30, Windsor 6.35 a.m. (Detroit 6.50 a.m., Chicago 11.15 a.m.). Stops only to discharge."
+#train col=No33 num=33 dir=up days=daily kind=passenger name="New England Wolverine" note="New England Wolverine, daily: (Buffalo 2.45 a.m., Black Rock 3.07) Fort Erie 3.17, St. Thomas 5.13 - 5.18, Windsor 7.15 a.m. (Detroit 7.30 a.m., Chicago 12.45 p.m.)."
+#train col=M361 num=361 dir=up days="ex Sun" kind=mixed note="Mixed, daily except Sunday: St. Thomas 7.00 a.m. to Windsor 12.15 p.m."
+#train col=No365 num=365 dir=up days="ex Sun" kind=motor note="Motor train, daily except Sunday: (Buffalo 5.35 a.m., Black Rock 5.59) Fort Erie 6.15 a.m. by Welland (6.45 - 6.53) to St. Thomas 9.50 a.m. (London 11.42 by the L&PS)."
+#train col=No365B num=365 dir=up days="ex Sun" kind=motor note="Motor train, daily except Sunday: (London 4.10 by the L&PS) St. Thomas 5.05 p.m. to Windsor 8.07 p.m. (Detroit 8.30 p.m.)."
+#train col=No35 num=35 dir=up days=daily kind=passenger note="Daily: (Buffalo 8.20 a.m., Black Rock 8.42) Fort Erie 8.59 a.m. by Welland (9.21) and St. Thomas (11.01 - 11.06) to Windsor 1.06 p.m. (Detroit 1.25 p.m., Chicago 4.30 p.m.)."
+#train col=No51 num=51 dir=up days=daily kind=passenger name="Empire State Express" note="Empire State Express (Detroit section), daily: (Buffalo 4.17 p.m., Black Rock 4.42) Fort Erie 4.54 p.m. by Welland (5.16) and St. Thomas (7.05 - 7.10) to Windsor 9.00 p.m. (Detroit 9.15 p.m.)."
+#train col=No39 num=39 dir=up days=daily kind=passenger name="North Shore Limited" note="North Shore Limited, daily: (Buffalo 9.55 p.m., Black Rock 10.17) St. Thomas 12.23 - 12.28, Windsor 2.24 a.m. (Detroit 2.40 a.m., Chicago 8.30 a.m.)."
+mile,station,principal,prov,tz,No366,No366B,M362,No44,No8,No364,No50,No40,No17,No33,M361,No365,No365B,No35,No51,No39
+285.0,"International Boundary (Detroit River Tunnel, to Detroit, Mich.)",0,ON,E,~lv 5.32a,,,~lv 4.52p,~lv 8.37p,~lv 9.07p,~lv 8.28a,~lv 4.58a,~ar 6.42a,~ar 7.22a,,,~ar 8.15p,~ar 1.14p,~ar 9.07p,~ar 2.31a
+286.3,Windsor,1,ON,E,5.40a,,lv 4.30p,5.04p,8.45p,9.15p,8.37a,,f6.35a,7.15a,ar 12.15p,,8.07p,1.06p,9.00p,2.24a
+296.2,Maidstone,0,ON,E,f5.52a,,4.46p,,,,,,,,11.55a,,f7.47p,,,
+300.7,Essex,1,ON,E,5.59a,,5.05p,,,f9.32p,,,,,11.45a,,7.40p,,,
+306.2,Woodslee,0,ON,E,f6.06a,,5.10p,,,,,,,,11.19a,,f7.32p,,,
+310.2,Ruscomb,0,ON,E,6.13a,,5.20p,,,,,,,,11.10a,,7.26p,,,
+315.2,Comber,1,ON,E,6.21a,,5.40p,,,f9.45p,,,,,11.00a,,7.18p,,,
+321.6,Tilbury,0,ON,E,6.31a,,6.35p,,,f9.53p,,,,,10.45a,,7.08p,,,
+328.7,Fletcher,0,ON,E,6.42a,,6.47p,,,,,,,,10.21a,,6.56p,,,
+332.7,Buxton,0,ON,E,f6.48a,,6.52p,,,,,,,,10.13a,,f6.48p,,,
+339.1,Charing Cross,0,ON,E,6.59a,,6.58p,,,,,,,,9.58a,,6.40p,,,
+341.4,Fargo,0,ON,E,7.03a,,7.25p,,,,,,,,9.50a,,6.35p,,,
+346.4,Mull,0,ON,E,7.11a,,7.32p,,,,,,,,9.31a,,6.27p,,,
+352.2,Ridgetown,1,ON,E,7.21a,,7.50p,,,f10.24p,f9.39a,,,,9.16a,,6.17p,,f7.56p,
+357.9,Highgate,0,ON,E,7.31a,,8.03p,,,,,,,,8.58a,,6.07p,,,
+360.0,Muirkirk,0,ON,E,7.35a,,8.07p,,,,,,,,8.46a,,6.03p,,,
+362.5,Taylor,0,ON,E,~f7.39a,,,,,,,,,,,,~f5.58p,,,
+366.0,Rodney,0,ON,E,7.45a,,8.30p,,,~f10.43p,,,,,8.30a,,5.52p,,,
+370.4,West Lorne,0,ON,E,7.54a,,8.45p,,,~f10.49p,,,,,8.06a,,5.45p,,,
+376.9,Dutton,0,ON,E,8.07a,,9.15p,,,~f10.58p,,,,,7.45a,,5.35p,,,
+382.9,Iona,0,ON,E,8.18a,,9.45p,,,,,,,,7.31a,,5.26p,,,
+386.8,Shedden,0,ON,E,8.26a,,9.50p,,,,,,,,7.22a,,5.21p,,,
+395.9,St. Thomas,1,ON,E,ar 8.50a,lv 2.30p,ar 10.45p,ar 6.50p / lv 6.54p,ar 10.27p / lv 10.31p,ar 11.23p / lv 11.28p,ar 10.23a / lv 10.27a,~6.25a,f4.30a,ar 5.13a / lv 5.18a,lv 7.00a,ar 9.50a,lv 5.05p,ar 11.01a / lv 11.06a,ar 7.05p / lv 7.10p,ar 12.23a / lv 12.28a
+406.6,Aylmer,0,ON,E,,2.45p,,,,f11.33p,,,,,,9.24a,,,,
+409.1,Springfield,0,ON,E,,2.49p,,,,f11.47p,,,,,,9.19a,,,,
+420.3,Tillsonburg,1,ON,E,,3.08p,,,,f12.01a,,,,,,9.01a,,,f6.38p,
+430.8,Hawtrey,0,ON,E,,f3.20p,,,,,,,,,,f8.45a,,,,
+432.1,La Salette,0,ON,E,,3.24p,,,,,,,,,,8.43a,,,,
+442.8,Waterford,1,ON,E,,3.50p,,,,~f12.28a,~f11.13a,,,,,8.27a,,f10.16a,f6.12p,
+455.5,Hagersville,0,ON,E,,4.15p,,,,f12.43a,,,,,,7.56a,,,,
+462.6,Lythmore,0,ON,E,,f4.23p,,,,,,,,,,f7.38a,,,,
+465.4,Cayuga,0,ON,E,,4.25p,,,,,,,,,,7.35a,,,,
+467.1,Edward,0,ON,E,,f4.34p,,,,,,,,,,f7.33a,,,,
+471.9,Canfield Junction,0,ON,E,,f4.41p,,,,,,,,,,f7.28a,,,,
+487.4,Perry,0,ON,E,,5.05p,,,,,,,,,,f7.05a,,,,
+496.8,Welland,1,ON,E,,5.24p,,f8.31p,,1.27a,12.05p,,,,,ar 6.45a / lv 6.53a,,9.21a,5.16p,
+506.8,Stevensville,0,ON,E,,5.41p,,,,,,,,,,6.29a,,,,
+514.1,Fort Erie,1,ON,E,,5.55p,,8.56p,,2.05a,12.30p,,,3.17a,,6.15a,,8.59a,4.54p,
+515.0,"International Boundary (Niagara River, to Black Rock, N.Y.)",0,ON,E,,~ar 6.02p,,~ar 9.03p,~ar 12.44a,~ar 2.15a,~ar 12.35p,~ar 9.08a,~lv 2.31a,~lv 3.11a,,~lv 6.05a,,~lv 8.50a,~lv 4.48p,~lv 10.21p

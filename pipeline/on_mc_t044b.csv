@@ -1,0 +1,16 @@
+# New York Central (Michigan Central): Eddys - Oil Springs - Oil City - Petrolia Jct. - Petrolia (the Oil Springs and Petrolia branches, mixed). Source: Official Guide, April 25, 1948, New York Central Table 44 (Brendan, 1 Nov 2026). EASTERN TIME.
+# No miles printed for Eddys, Oil Springs, Corey and Petrolia: estimated (Oil City - Petrolia Jct. 2.0 as printed).
+# Signs (Table 44): z Mon Wed Fri; double dagger Tue Thu Sat; f flag; Mix. mixed train.
+#train col=M105 num=105 dir=down days="Mon,Wed,Fri" kind=mixed note="Mixed, Monday, Wednesday and Friday: Eddys 12.03 p.m. by Oil Springs and Oil City to Petrolia 12.59 p.m."
+#train col=M107 num=107 dir=down days="Tue,Thu,Sat" kind=mixed note="Mixed, Tuesday, Thursday and Saturday: Eddys 1.01 p.m. to Oil City 1.31 p.m."
+#train col=M103 num=103 dir=down days="Tue,Thu,Sat" kind=mixed note="Mixed, Tuesday, Thursday and Saturday: Petrolia Jct. 10.10 a.m. to Petrolia 10.31 a.m."
+#train col=M104 num=104 dir=up days="Mon,Wed,Fri" kind=mixed note="Mixed, Monday, Wednesday and Friday: Oil City 11.29 a.m. to Eddys 11.53 a.m."
+#train col=M106 num=106 dir=up days="Tue,Thu,Sat" kind=mixed note="Mixed, Tuesday, Thursday and Saturday: Petrolia 12.20 p.m. by Oil City to Eddys 12.56 p.m."
+#train col=M108 num=108 dir=up days="Mon,Wed,Fri" kind=mixed note="Mixed, Monday, Wednesday and Friday: Petrolia 2.30 p.m. to Petrolia Jct. 2.49 p.m."
+mile,station,principal,prov,tz,M105,M107,M103,M104,M106,M108
+0.0,Eddys,0,ON,E,lv 12.03p,lv 1.01p,,ar 11.53a,ar 12.56p,
+2.0,Oil Springs,1,ON,E,12.12p,1.16p,,11.41a,12.49p,
+5.0,Oil City,1,ON,E,12.22p,ar 1.31p,,lv 11.29a,12.38p,
+7.0,Petrolia Junction,0,ON,E,f12.27p,,lv 10.10a,,12.33p,ar 2.49p
+9.0,Corey,0,ON,E,,,f10.20a,,f12.29p,f2.44p
+11.0,Petrolia,1,ON,E,ar 12.59p,,ar 10.31a,,lv 12.20p,lv 2.30p
