@@ -2298,3 +2298,11 @@ Stations of different railways within 250 m (70 pairs; script: same check over v
   collection's CP Windsor siding that curves from the CP main line west of Walkerville onto the Canada Southern by the station, then the MC main through the
   station to the start of the tunnel link (ready for the trains to run on to Detroit). The force (Walkerville Junction - Windsor) removed.
   Dry run: 227.4 / 226.1 mi; Elmstead - Windsor now matches the printed 10.5; Walkerville Junction on its point.
+
+## Version 125 (2 November 2026): scheduled speed beside Follow
+- Page: the train panel's head shows "x m.p.h." right of the train number, beside Follow (Brendan, 2 Nov 2026: no explanation; period style "m.p.h.").
+  segSpeed(): printed miles (station miles on the route; traced chainage if none) between the timed stops either side of the train (estimated / untimed
+  stops skipped), from the departure time to the arrival time, rounded. Moving: the stretch it is on; standing at a station: the stretch ahead. Not shown
+  for B.C. Electric local cars, boats, or at the terminus. Also a free data check (e.g. No. 364 St. Thomas - Aylmer).
+- Ideas discussed, not built: through trains as linked trips (highlight end to end, one timetable with the hand-off row); multi-coloured pooled consists
+  (CN / CP pool trains) and through cars from the Guide's equipment notes; a time-zone drop-down (Alaska - Newfoundland, plus "Local, as printed").

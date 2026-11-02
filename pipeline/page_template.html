@@ -84,6 +84,7 @@ canvas#map.hover { cursor: pointer; }
 /* panel */
 .panel { position: absolute; top: 16px; right: 16px; bottom: 92px; width: 340px; display: flex; flex-direction: column; overflow: hidden; }
 .panel-head { padding: 12px 16px 10px; border-bottom: 1px solid var(--rule); display: flex; align-items: center; gap: 10px; min-height: 48px; }
+.panel-head .mph { font: 600 13px/1 var(--ui); color: var(--ink-soft); white-space: nowrap; font-variant-numeric: tabular-nums; }
 .panel-head h2 { margin: 0; font: 700 17px/1.2 var(--display); color: var(--ink); flex: 1; min-width: 0; }
 .panel-body { overflow-y: auto; padding: 6px 0 12px; flex: 1; min-height: 0; }
 .panel-foot { border-top: 1px solid var(--rule); padding: 10px 16px; font: 12px/1.45 var(--ui); color: var(--muted); max-height: 8.6em; overflow-y: auto; }
@@ -834,6 +835,23 @@ function getFont(role) { return fontCache[role] ||= getComputedStyle(document.do
 // ---------------------------------------------------------------- panel
 const head = document.getElementById('panelHead'), body = document.getElementById('panelBody');
 let panelKey = '';
+// scheduled average speed over the stretch the train is on: printed miles between the timed stops either side, leaving time to arriving time
+// (untimed / estimated stops skipped; shown beside Follow, Brendan, 2 Nov 2026)
+function segSpeed(t, st) {
+  if (!st || !t.mainline || t.water || t.local) return null;
+  const S_ = t.stops, ok = r => r[3] !== 0;
+  let a, b;
+  if (st.moving) { const r = nextStop(t, st), j = S_.indexOf(r); if (j < 1) return null;
+    for (a = j - 1; a > 0 && !ok(S_[a]); a--); for (b = j; b < S_.length - 1 && !ok(S_[b]); b++); }
+  else { const i = S_.findIndex(r => r[0] === st.at); if (i < 0 || i >= S_.length - 1) return null;
+    for (a = i; a > 0 && !ok(S_[a]); a--); for (b = i + 1; b < S_.length - 1 && !ok(S_[b]); b++); }
+  const lm = x => x.miles?.[t.rk] ?? x.mile, sa = ST[S_[a][0]], sb = ST[S_[b][0]];
+  let mi = (lm(sa) != null && lm(sb) != null) ? Math.abs(lm(sb) - lm(sa)) : NaN;
+  if (!(mi > 0)) mi = Math.abs(sb.chains[t.rk] - sa.chains[t.rk]) / 1609.344;
+  let dt = S_[b][1] - S_[a][2]; if (dt < 0) dt += 86400;
+  if (!(mi > 0) || dt <= 0) return null;
+  return Math.round(mi / (dt / 3600));
+}
 function nextStop(t, st) {
   if (!st.moving) return null;
   if (!t.local) return (st.e?.k != null && t.stops[st.e.k]) || t.stops.find(r => r[0] === st.to);
@@ -886,7 +904,7 @@ function renderTrain(t, st, T) {
   const key = 'train|' + t.id + '|' + Math.floor(T / 60) + '|' + (st ? (st.moving ? (nextStop(t, st)?.[0] ?? st.to) : 'a' + st.at) : 'off') + '|' + S.follow;
   if (key === panelKey) return; panelKey = key;
   head.innerHTML = `<button class="back" data-back>‹ All</button><h2>${esc(t.name)}</h2>
-    <button class="iconbtn" data-follow aria-pressed="${S.follow}">Follow</button>`;
+    ${(sp => sp ? `<span class="mph">${sp} m.p.h.</span>` : '')(segSpeed(t, st))}<button class="iconbtn" data-follow aria-pressed="${S.follow}">Follow</button>`;
   const days = { DAILY: 'Daily', FRI: 'Fridays only', SAT: 'Saturdays only', CP_WKDY: 'Weekdays', CP_SAT: 'Saturdays', CP_SUN: 'Sundays', BL_WKDY: 'Daily except Sundays', BL_SUN: 'Sundays', GN_DAILY: 'Daily', CN_DAILY: 'Daily', CP_DAILY: 'Daily', CP_XSUN: 'Daily except Sunday', NAR_XSUN: 'Daily except Sunday', CN_SUTT: 'Sundays, Tuesdays and Thursdays', CN_WS: 'Wednesdays and Saturdays', CN_TF: 'Tuesdays and Fridays', EN_XSUN: 'Daily except Sunday', CN_XSUN: 'Daily except Sunday', CN_MWF: 'Mondays, Wednesdays and Fridays', CP_MON1: 'Mondays', CP_WED1: 'Wednesdays', CP_SAT1: 'Saturdays', CP_SUN1: 'Sundays', CP_TTH: 'Tuesdays and Thursdays', CP_WF: 'Wednesdays and Fridays', CP_TF: 'Tuesdays and Fridays', CP_WS: 'Wednesdays and Saturdays', CN_TTS: 'Tuesdays, Thursdays and Saturdays', PGE_MWF: 'Mondays, Wednesdays and Fridays', PGE_WFS: 'Wednesdays, Fridays and Sundays', PGE_TTS: 'Tuesdays, Thursdays and Saturdays', CP_MTH: 'Mondays and Thursdays', CP_TUE1: 'Tuesdays', CP_THU1: 'Thursdays', CP_FRI1: 'Fridays', CP_XMON: 'Daily except Monday', WP_MTTFS: 'Mondays, Tuesdays, Thursdays, Fridays and Saturdays', WP_SW: 'Sundays and Wednesdays', LU_WKDY: 'Monday to Friday', LU_SAT: 'Saturdays', LU_SUN: 'Sundays', NM_WKDY: 'Monday to Friday', NM_SAT: 'Saturdays', NM_SUN: 'Sundays' }[t.svc] || weekdaysOf(t.svc);
   let state = st ? statusLine(t, st, T) : (T < t.start ? `Leaves ${esc(t.origin.name)} at ${tspan(t.start)}` : `Arrived ${esc(t.dest.name)} at ${tspan(t.end)}`);
   // a through train in pieces: the pieces before and after this one, shown with it as one train
