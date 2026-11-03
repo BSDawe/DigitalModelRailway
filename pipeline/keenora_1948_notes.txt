@@ -6,3 +6,10 @@ passenger steamer on the lake. Phones Winnipeg and Selkirk.
 Implied: down the Red River from Winnipeg past Lockport and Selkirk to the lake; 6 days out and back, so back at Winnipeg about Saturday.
 Needed: intermediate calls and times (Selkirk? Gimli? Hecla? Berens River? etc.), the Norway House connecting boat (the Chicama II?),
 Red River and Lake Winnipeg water, points for Redwood Dock, Lockport, Warren's Landing, Norway House.
+
+POINTS (Brendan, 2 Nov 2026; traces/manitoba/selkirk_navigation_points.kmz): Redwood Dock, Winnipeg -97.127556,49.916419 (the file's first point);
+Selkirk Wharf -96.870754,50.141508; Gimli -96.981657,50.630037; Hecla Island -96.663271,51.132494; Berens River ("Barens River") -97.021814,52.353315;
+Warren's Landing -97.870075,53.697450; Grand Rapids -99.260043,53.184759; Norway House: HBC Archway Warehouse -97.836122,53.981860, Rossville Dock -97.790644,53.995447.
+Brendan: no schedule, to be estimated. The M.S. Chicama II is the connecting boat at Warren's Landing, serving points around Norway House.
+Water: Lake Winnipeg, the Red River to Selkirk and Grand Rapids are in places/sk_water/saskman3.gpkg (drawn only, not in the lane mask);
+Playgreen Lake / the Jack River to Norway House are not (Warren's Landing - Norway House about 9 km from the nearest water in the file).
