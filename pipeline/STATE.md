@@ -2306,3 +2306,17 @@ Stations of different railways within 250 m (70 pairs; script: same check over v
   for boats or at the terminus (B.C. Electric added the same day, by the traced track). Also a free data check (e.g. No. 364 St. Thomas - Aylmer).
 - Ideas discussed, not built: through trains as linked trips (highlight end to end, one timetable with the hand-off row); multi-coloured pooled consists
   (CN / CP pool trains) and through cars from the Guide's equipment notes; a time-zone drop-down (Alaska - Newfoundland, plus "Local, as printed").
+
+## Version 126 (2 November 2026): Selkirk Navigation Co., Lake Winnipeg (S.S. Keenora, M.S. Chicama II)
+- boats_build.py, operator Selkirk Navigation Co. (livery 'snc', agency SNC, America/Winnipeg; colour Claude's pick #8A3B2B). A MODEL week (Brendan):
+  from the advertisements only the Monday noon sailing from Redwood Dock and the Sunday Lockport cruise (2 - 8 p.m., 1937 ad); the rest estimated
+  (about 9 mph, time at the calls for freight and flag stops, running through the nights). keenora_1948_notes.txt.
+  snk: Keenora north Mon 12.00 Redwood Dock - Selkirk Wharf 3.00 / 4.30p - Gimli 9.00 / 10.00p - Hecla Island Tue 2.30 / 3.30a - Berens River 2.00 / 4.00p
+  - Warren's Landing Wed 3.30a; south Thu 6.00a Warren's Landing - Grand Rapids 2.00 / 4.00p (a call, Brendan; no overnight) - Berens River Fri 4.30 /
+  6.00a - Hecla 4.30 / 5.30p - Gimli 10.00 / 11.00p - Selkirk Sat 3.30 / 4.30a - Redwood Dock 8.00a. snl: Sunday cruise Redwood Dock 2.00p - Lockport
+  4.00 / 5.30p - Redwood Dock 8.00p (Lockport by the St. Andrews Lock, APPROXIMATE). snc: Chicama II Wed Warren's Landing 7.00a - Norway House (HBC
+  warehouse) 9.30 / 10.00a - Rossville 10.30a; back 3.00p - Norway House 3.30 / 4.00p - Warren's Landing 6.30p, over Brendan's trace
+  (traces/manitoba/warrens_landing_norway_house.kml; the drawn water does not have this channel). Points: traces/manitoba/selkirk_navigation_points.kmz.
+- Lanes: water_extra.py now adds the Manitoba part of saskman3 (Lake Winnipeg, the Red River) to water_extra.pkl (cached lanes unchanged).
+- FIX: on_build.py rewrote gtfs/routes.txt with '\n' line endings (the csv files use '\r\n'): build.py then saw every row as changed, and rows that
+  earlier steps added since on_build last ran landed above the header. Now kept with their endings.

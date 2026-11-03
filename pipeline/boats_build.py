@@ -697,6 +697,49 @@ service('bse', BST, 'Port Alberni – Bamfield (Sunday excursion)', 'Barkley Sou
   ('R', 'Uchuck I', 'Sunday excursion', 'W_0000001', 'Uchuck I', [(1, T('~3.15p')), (0, T('~6.30p'))], 'M.V. Uchuck I, Sunday excursion: Bamfield about 3.15 p.m., back at Port Alberni about 6.30 p.m.' + _bs)],
   ['to Bamfield', 'to Port Alberni'])
 
+# ---- Selkirk Navigation Co., Lake Winnipeg (keenora_1948_notes.txt): the S.S. Keenora's weekly six-day cruise, Redwood Dock (Winnipeg) - Selkirk -
+# Gimli - Hecla - Berens River - Warren's Landing (turnaround at the north end of the lake) - Grand Rapids - back; the M.S. Chicama II from Warren's
+# Landing to Norway House and Rossville for the Keenora's passengers; and the Keenora's Sunday excursion to Lockport (2 - 8 p.m., 1937 advertisement).
+# A MODEL week (Brendan, 2 November 2026): only the Monday noon sailing and the Sunday 2 - 8 p.m. cruise are from the advertisements; the rest is
+# estimated (about 9 mph on the lake, slower up the river, with time at the calls for freight and flag stops; she runs through the nights).
+SNC = 'Selkirk Navigation Co.'
+OPS[SNC] = ('snc', 'SNC', '8A3B2B'); OPLABEL[SNC] = 'Selkirk Navigation'
+SRC[SNC] = 'Selkirk Navigation Co. Ltd., Winnipeg and Selkirk: a model week (Brendan, 2 November 2026) from its advertisements (1937; the Keenora ran to 1965): the Monday noon sailing from Redwood Dock and the Sunday Lockport cruise, 2 to 8 p.m.; every other time estimated'
+P.update({'Redwood Dock': (-97.127556, 49.916419, True), 'Lockport': (-96.937272, 50.083991, False), 'Selkirk Wharf': (-96.870754, 50.141508, True),
+          'Gimli': (-96.981657, 50.630037, True), 'Hecla Island': (-96.663271, 51.132494, False), 'Berens River': (-97.021814, 52.353315, True),
+          "Warren's Landing": (-97.870075, 53.697450, True), 'Grand Rapids': (-99.260043, 53.184759, True),
+          'Norway House': (-97.836122, 53.981860, True), 'Rossville': (-97.790644, 53.995447, False)})
+for _n, _t in (('Redwood Dock', 'Redwood Dock, Winnipeg (Brendan)'), ('Lockport', 'Lockport, by the St. Andrews Lock (APPROXIMATE)'), ('Selkirk Wharf', 'Selkirk wharf (Brendan)'),
+               ('Gimli', 'Gimli (Brendan)'), ('Hecla Island', 'Hecla Island (Brendan)'), ('Berens River', 'Berens River (Brendan)'), ("Warren's Landing", "Warren's Landing (Brendan)"),
+               ('Grand Rapids', 'Grand Rapids, at the mouth of the Saskatchewan (Brendan)'), ('Norway House', 'Norway House, the Hudson\'s Bay Company archway warehouse (Brendan)'),
+               ('Rossville', 'Rossville dock, Norway House (Brendan)')): PLACED[_n] = _t
+# the Chicama II's channel from Warren's Landing up to Norway House and Rossville: Brendan's trace (traces/manitoba/warrens_landing_norway_house.kml)
+VIA[("Warren's Landing", 'Norway House')] = [(-97.872253, 53.705633), (-97.872704, 53.710116), (-97.872513, 53.714937), (-97.869806, 53.720231), (-97.867956, 53.724568), (-97.86776, 53.727458), (-97.868499, 53.73017), (-97.870141, 53.733079), (-97.872918, 53.735917), (-97.880416, 53.739175), (-97.887129, 53.741057), (-97.895004, 53.744659), (-97.898057, 53.746054), (-97.901639, 53.747102), (-97.909026, 53.74853), (-97.919506, 53.750194), (-97.923433, 53.751974), (-97.92587, 53.754295), (-97.927272, 53.757556), (-97.961139, 53.774344), (-97.996448, 53.804447), (-98.004681, 53.812094), (-98.010914, 53.821055), (-98.010921, 53.821133), (-98.016586, 53.831903), (-98.019149, 53.838317), (-98.019198, 53.838863), (-98.019561, 53.842921), (-98.019575, 53.843077), (-98.019513, 53.845348), (-98.019165, 53.847393), (-98.015901, 53.849451), (-98.010631, 53.851336), (-98.002673, 53.854322), (-98.00002, 53.85595), (-97.997663, 53.860146), (-97.991143, 53.878965), (-97.990243, 53.879895), (-97.973819, 53.898052), (-97.967083, 53.902631), (-97.962021, 53.906289), (-97.959149, 53.910607), (-97.957906, 53.915602), (-97.956089, 53.917905), (-97.954915, 53.919857), (-97.946358, 53.923265), (-97.942507, 53.925485), (-97.93911, 53.92678), (-97.936333, 53.928371), (-97.935635, 53.929233), (-97.935267, 53.931136), (-97.934756, 53.932098), (-97.930214, 53.935284), (-97.928826, 53.935747), (-97.928536, 53.935826), (-97.925901, 53.936326), (-97.92441, 53.936302), (-97.922533, 53.935938), (-97.921284, 53.935941), (-97.920052, 53.936153), (-97.916021, 53.937712), (-97.907182, 53.940619), (-97.902523, 53.941811), (-97.895596, 53.94293), (-97.887968, 53.94421), (-97.881111, 53.945467), (-97.877419, 53.946839), (-97.874965, 53.948068), (-97.869577, 53.949806), (-97.861477, 53.952459), (-97.858384, 53.953798), (-97.856711, 53.95545), (-97.85511, 53.957955), (-97.853618, 53.959601), (-97.850659, 53.962502), (-97.850062, 53.964016), (-97.850033, 53.965797), (-97.850026, 53.967827), (-97.849038, 53.97042), (-97.846518, 53.972809)]
+VIA[('Norway House', 'Rossville')] = [(-97.836189, 53.983445), (-97.832709, 53.987654), (-97.827919, 53.991684), (-97.823535, 53.993586), (-97.812608, 53.995525), (-97.800313, 53.99599), (-97.795493, 53.995661)]
+BY_HAND |= {frozenset(("Warren's Landing", 'Norway House')), frozenset(('Norway House', 'Rossville'))}
+_sn = (' Selkirk Navigation Co.: a MODEL week, not a record. The advertisement (1937; the Keenora ran to 1965) gives six-day cruises on Lake Winnipeg'
+       ' weekly in July and August, leaving Redwood Dock, Winnipeg, every Monday at noon for Warren\'s Landing at the north end of the lake, connecting there'
+       ' with a boat for Norway House; the other calls and every other time are estimated (Brendan), with time for freight and flag stops.')
+service('snk', SNC, 'Winnipeg – Selkirk – Gimli – Berens River – Warren\'s Landing – Grand Rapids', 'Selkirk Navigation Co. (model)', 150,
+  ['Redwood Dock', 'Selkirk Wharf', 'Gimli', 'Hecla Island', 'Berens River', "Warren's Landing", 'Grand Rapids', 'Berens River', 'Hecla Island', 'Gimli', 'Selkirk Wharf', 'Redwood Dock'], [
+  ('N', 'Keenora', 'Lake Winnipeg cruise', 'W_1000000', 'Keenora', [(0, T('12.00p')), (1, T('~3.00p / 4.30p')), (2, T('~9.00p / 10.00p')), (3, T('~2.30a / 3.30a', D1)),
+                                                                     (4, T('~2.00p / 4.00p', D1)), (5, T('~3.30a', D2))],
+   'S.S. Keenora, northbound: Redwood Dock, Winnipeg, Monday at noon; Selkirk, Gimli, Hecla Island in the night, Berens River Tuesday afternoon, Warren\'s Landing early Wednesday (the M.S. Chicama II on to Norway House).' + _sn),
+  ('S', 'Keenora', 'Lake Winnipeg cruise', 'W_0001000', 'Keenora', [(5, T('~6.00a')), (6, T('~2.00p / 4.00p')), (7, T('~4.30a / 6.00a', D1)), (8, T('~4.30p / 5.30p', D1)),
+                                                                     (9, T('~10.00p / 11.00p', D1)), (10, T('~3.30a / 4.30a', D2)), (11, T('~8.00a', D2))],
+   'S.S. Keenora, southbound: Warren\'s Landing Thursday 6.00 a.m., across the lake to Grand Rapids in the afternoon, Berens River early Friday, Hecla Island, Gimli, Selkirk, Redwood Dock Saturday morning.' + _sn)],
+  ['to Warren\'s Landing', 'to Winnipeg'])
+service('snl', SNC, 'Winnipeg – Lockport (Sunday cruise)', 'Selkirk Navigation Co. (model)', 40, ['Redwood Dock', 'Lockport'], [
+  ('O', 'Keenora', 'Sunday cruise', 'W_0000001', 'Keenora', [(0, T('2.00p')), (1, T('~4.00p'))], 'S.S. Keenora, Sunday cruise: Redwood Dock 2.00 p.m. down the Red River to Lockport.' + _sn),
+  ('R', 'Keenora', 'Sunday cruise', 'W_0000001', 'Keenora', [(1, T('~5.30p')), (0, T('8.00p'))], 'S.S. Keenora, Sunday cruise: Lockport about 5.30 p.m., back at Redwood Dock 8.00 p.m.' + _sn)],
+  ['to Lockport', 'to Winnipeg'])
+service('snc', SNC, "Warren's Landing – Norway House – Rossville (Chicama II)", 'Selkirk Navigation Co. (model)', 60, ["Warren's Landing", 'Norway House', 'Rossville'], [
+  ('O', 'Chicama II', 'Norway House boat', 'W_0010000', 'Chicama II', [(0, T('~7.00a')), (1, T('~9.30a / 10.00a')), (2, T('~10.30a'))],
+   'M.S. Chicama II: Warren\'s Landing Wednesday morning, with the Keenora\'s passengers, to Norway House and Rossville.' + _sn),
+  ('R', 'Chicama II', 'Norway House boat', 'W_0010000', 'Chicama II', [(2, T('~3.00p')), (1, T('~3.30p / 4.00p')), (0, T('~6.30p'))],
+   'M.S. Chicama II: Rossville Wednesday afternoon, Norway House, back to the Keenora at Warren\'s Landing in the evening.' + _sn)],
+  ["to Norway House", "to Warren's Landing"])
+
 # ---------------- lanes
 LEGS = {}
 _CF = os.path.join(HERE, 'sea_legs.json'); CACHE = json.load(open(_CF)) if os.path.exists(_CF) else {}        # computed lanes, kept between builds (delete the file to redraw them)
@@ -803,7 +846,8 @@ for _ag in (['GIF', 'Gulf Islands Ferry Company', 'https://en.wikipedia.org/wiki
             ['HNC', 'Harbour Navigation Co.', 'https://en.wikipedia.org/wiki/Indian_Arm', 'America/Vancouver', 'en', ''],
             ['ASS', 'Alaska Steamship Company', 'https://en.wikipedia.org/wiki/Alaska_Steamship_Company', 'America/Vancouver', 'en', ''],
             ['BYN', 'British Yukon Navigation Company (White Pass & Yukon Route)', 'https://en.wikipedia.org/wiki/White_Pass_and_Yukon_Route', 'America/Vancouver', 'en', ''],
-            ['BST', 'Barkley Sound Transportation Company', 'https://en.wikipedia.org/wiki/Barkley_Sound', 'America/Vancouver', 'en', '']):
+            ['BST', 'Barkley Sound Transportation Company', 'https://en.wikipedia.org/wiki/Barkley_Sound', 'America/Vancouver', 'en', ''],
+            ['SNC', 'Selkirk Navigation Company', 'https://en.wikipedia.org/wiki/SS_Keenora', 'America/Winnipeg', 'en', '']):
     if _ag[0] not in set(r[0] for r in csv.reader(open(os.path.join(GT, 'agency.txt')))): app('agency.txt', [_ag])
 if 'PSN' not in set(r[0] for r in csv.reader(open(os.path.join(GT, 'agency.txt')))):
     app('agency.txt', [['PSN', 'Puget Sound Navigation Company (Black Ball Line)', 'https://en.wikipedia.org/wiki/Puget_Sound_Navigation_Company', 'America/Vancouver', 'en', '']])

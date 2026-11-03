@@ -91,14 +91,16 @@ def gpkg(fn):
     for (b,) in c.execute(f'select "{col}" from "{table}"'):
         env = {0: 0, 1: 32, 2: 48, 3: 48, 4: 64}[(b[3] >> 1) & 7]; g = wkb.loads(bytes(b[8 + env:])); out.append(g if g.is_valid else g.buffer(0))
     return unary_union(out)
-from shapely.geometry import LineString
+from shapely.geometry import LineString, box
 narrows = transform(to_3347, LineString([(-134.7122, 60.1677), (-134.7004, 60.1699)])).buffer(60)
 north3347 = unary_union([gpkg('traces/yukon/yukon_water.gpkg'), gpkg('traces/yukon/bc_north_water.gpkg'), narrows])
 write('water_north.json', [q for q in parts(transform(ll_from_3347, north3347.simplify(80))) if q.area > 5e-5])
 # Saskatchewan and Manitoba (Brendan, 17 October 2026): places/sk_water/saskman3.gpkg, his simplified selection (the Saskatchewan rivers, Lake
-# Winnipeg, Lake Manitoba and the larger lakes; StatCan hydro, EPSG:3347). Drawn only; no boats on it.
-write('water_sk.json', [q for q in parts(transform(ll_from_3347, gpkg('places/sk_water/saskman3.gpkg').simplify(100))) if q.area > 5e-5])
+# Winnipeg, Lake Manitoba and the larger lakes; StatCan hydro, EPSG:3347). Drawn; the Manitoba part also for the lanes (below).
+sk3347 = gpkg('places/sk_water/saskman3.gpkg')
+write('water_sk.json', [q for q in parts(transform(ll_from_3347, sk3347.simplify(100))) if q.area > 5e-5])
+# Lake Winnipeg and the Red River for the Selkirk Navigation boats (Brendan, 2 November 2026): the lanes use the Manitoba part of saskman3
 # for the lanes
-pickle.dump(dict(cut=transform(to_3347, CUT), add=unary_union([transform(to_3347, wa), ak3347, transform(to_3347, FILL), north3347])),
+pickle.dump(dict(cut=transform(to_3347, CUT), add=unary_union([transform(to_3347, wa), ak3347, transform(to_3347, FILL), north3347, sk3347.intersection(transform(to_3347, box(-99.6, 49.7, -96.0, 54.1)))])),
             open(os.path.join(HERE, 'water_extra.pkl'), 'wb'))
 print('water_extra.pkl written')

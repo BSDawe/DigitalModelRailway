@@ -142,8 +142,8 @@ if __name__ == '__main__':
         for _L in _vd['lines']:
             if _L['key'].startswith(('onqlf', 'ontsl')): _L.update(water=True, livery=_L['key'][2:5], segments=[]); [t.update(vessel=t.get('vessel') or (__import__('re').search(r'Vessel: ([^.]+)\.', t.get('note') or '') or [None, ''])[1]) for t in _L['trips']]
         open(_vp, 'w').write(_j.dumps(_vd, separators=(',', ':')))
-        _rp = os.path.join(HERE, 'gtfs', 'routes.txt'); _rl = open(_rp).read().split('\n')
-        open(_rp, 'w').write('\n'.join((_r.replace(',2,', ',4,', 1) if _r.startswith(('ONQLF', 'ONTSL')) else _r) for _r in _rl))
+        _rp = os.path.join(HERE, 'gtfs', 'routes.txt'); _rl = open(_rp, newline='').read().splitlines(keepends=True)   # keep the csv line endings (\r\n): rewriting them made build.py see every row as changed, and rows added by earlier steps landed above the header (2 Nov 2026)
+        open(_rp, 'w', newline='').write(''.join((_r.replace(',2,', ',4,', 1) if _r.startswith(('ONQLF', 'ONTSL')) else _r) for _r in _rl))
         import csv
         GT = os.path.join(HERE, 'gtfs'); have = {r[0] for r in csv.reader(open(os.path.join(GT, 'agency.txt')))}
         with open(os.path.join(GT, 'agency.txt'), 'a', newline='') as fh:
