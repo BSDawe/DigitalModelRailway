@@ -13,3 +13,6 @@ Warren's Landing -97.870075,53.697450; Grand Rapids -99.260043,53.184759; Norway
 Brendan: no schedule, to be estimated. The M.S. Chicama II is the connecting boat at Warren's Landing, serving points around Norway House.
 Water: Lake Winnipeg, the Red River to Selkirk and Grand Rapids are in places/sk_water/saskman3.gpkg (drawn only, not in the lane mask);
 Playgreen Lake / the Jack River to Norway House are not (Warren's Landing - Norway House about 9 km from the nearest water in the file).
+- (2 Nov 2026, 20:49) Brendan's trace Warren's Landing - Norway House (HBC) - Rossville: traces/manitoba/warrens_landing_norway_house.kml (the Chicama II's lane).
+  Lockport: at the St. Andrews Lock (vicinity is close enough; APPROXIMATE). Grand Rapids: Claude's guess only (Wikipedia: the turnaround was at the north
+  end of the lake, Warren Landing; Grand Rapids is off that route) - proposed to drop it; the slack goes to freight handling and flag stops (Brendan).
