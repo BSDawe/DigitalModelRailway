@@ -85,7 +85,7 @@ OVER = {'on_cn_t075b': dict(noplace=['Ottawa (Bank Street)']),
         'on_cn_t120': dict(places={'Brantford (Colborne St.)': (-80.258781, 43.138564)}),   # Brendan, 1 Nov 2026
         'on_cp_t069a': dict(places={'Embro': (-80.9025615, 43.1581399), 'McConkey': (-80.9478744, 43.1783915)}, force=[('Embro', 'McConkey'), ('McConkey', 'Lakeside')]), 'on_cp_t069b': dict(places={'Ostrander': (-80.7572675, 42.9049146), 'Kinglake': (-80.7740144, 42.7081766)}),   # Brendan, 1 Nov 2026: Ostrander = the collection's CP Springford point, Kinglake = Kingslake
         'on_cn_t123': dict(places={'Hamilton (James St.)': (-79.8645656, 43.2658409), 'Burlington': (-79.815227, 43.338803)}),   # Burlington: the station of Table 90 (Brendan), at the junction
-        'on_cn_t124': dict(places={'Fort Erie': (-78.9161684, 42.9280214)}),   # on the Canada Air Line beside the CN station (not the Canada Southern main beside it)
+        'on_cn_t124': dict(places={'Fort Erie': (-78.9161684, 42.9280214), 'Ridgeway': (-79.051745, 42.882312)}),   # Ridgeway: Brendan, 4 Nov 2026 (it had been placed by mileage on a line further north)   # on the Canada Air Line beside the CN station (not the Canada Southern main beside it)
         'on_cn_t138': dict(places={'Parkhead': (-81.1399864, 44.5987855)}),   # Parkhead: the junction of the Wiarton line (no station point; APPROXIMATE)
         'on_cn_t143': dict(places={'Hamilton (James St.)': (-79.8645656, 43.2658409), 'Parkhead': (-81.1399864, 44.5987855)}),
         'on_cn_t127s': dict(places={'Sarnia': (-82.3889142, 42.9572446)}),   # the CN Sarnia (Tunnel) station, as Table 90

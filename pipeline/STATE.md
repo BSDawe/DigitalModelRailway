@@ -2201,6 +2201,9 @@ Stations of different railways within 250 m (70 pairs; script: same check over v
 - TO DO (Brendan, 3 Nov 2026): Canadian Pacific Car & Passenger Transfer Co. (the Prescott - Ogdensburg car ferry across the St. Lawrence).
 - TO DO (Brendan, 4 Nov 2026): CN Peebles - Handsworth (sk_cn_t162; Saskatchewan): the intermediate stops (the table prints only Peebles and Handsworth).
 - TO DO (Brendan, 4 Nov 2026): the Cobourg - Genesee (Rochester) car ferry across Lake Ontario.
+- STAGED FOR THE NEXT BUILD (4 Nov 2026): CN Table 124 Ridgeway at Brendan's point (-79.051745, 42.882312) (it had been placed by mileage on the line further
+  north, so the trains ran the wrong way to Port Colborne); a straight APPROXIMATE link along the river from the Fort Erie station to the south end of the B&LH
+  (Dunnville sub.) main (the collection has no track there): Brendan to trace. Dry run: 115.7 / 114.9 mi, all on track.
 - WAITING ON BRENDAN: Quebec Railway, Light & Power; the Stratford table (No. 10); the Camp Borden trace; the remaining steamship points and waterways; the rest
   of the Official Guide pages.
 - BUILD: run-through joins (London, Hamilton, North Bay, CN 3 / 4, CP / TH&B at Hamilton, Cataract); numbering of connecting sections (wait for the branch tables);
