@@ -366,7 +366,8 @@
    "inputs": [
     "traces/lakes/cp_great_lakes.kml",
     "traces/lakes/northern_navigation_co.kmz",
-    "water_east.json"
+    "water_east.json",
+    "traces/lakes/cp_pa_fw_track.kml"
    ]
   },
   {
@@ -379,7 +380,8 @@
    "inputs": [
     "traces/lakes/cp_great_lakes.kml",
     "traces/lakes/northern_navigation_co.kmz",
-    "water_east.json"
+    "water_east.json",
+    "traces/lakes/cp_pa_fw_track.kml"
    ]
   }
  ]

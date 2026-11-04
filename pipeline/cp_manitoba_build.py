@@ -47,12 +47,20 @@ def port(n, v, note):
 ports = [port(*p) for p in PORTS]
 ports[2]['gid'] = 'PORT_SAULT_STE_MARIE_C_S_L_DOCK'                  # the same stop as the Noronic's, so the two merge on the page
 
+
+# Brendan's hand-drawn Port Arthur - Fort William track (traces/lakes/cp_pa_fw_track.kml, drawn Fort William to Port Arthur; kept here Port Arthur first)
+def _track():
+    t = ET.parse(os.path.join(HERE, 'traces', 'lakes', 'cp_pa_fw_track.kml')).getroot().find('.//k:LineString/k:coordinates', _ns).text.split()
+    return [(float(a), float(b)) for a, b, _ in (x.split(',') for x in t)][::-1]
+TRACK = _track()
+assert math.dist(fwd(*TRACK[0]), fwd(*CPK['Port Arthur'])) < 100 and math.dist(fwd(*TRACK[-1]), fwd(*CPK['Fort William'])) < 100, 'track ends at the two docks'
+
 # ---------------- lanes (cache: cpmb_legs.json)
 RES = {(0, 1): 250, (1, 2): 250, (2, 3): 250}
 _CF = os.path.join(HERE, 'cpmb_legs.json'); CACHE = json.load(open(_CF)) if os.path.exists(_CF) else {}
 VIA = {(2, 3): [(-85.00, 46.93), (-86.35, 47.35), (-88.15, 48.33)]}      # as nn_build: past Passage Island and across the lake, then into Thunder Bay (Sault towards Fort William)
-def lane(k):
-    a, b = ports[k], ports[k + 1]; res = RES[(k, k + 1)]
+def sealane(k):
+    a, b = ports[k], (dict(name='Port Arthur', lon=TRACK[0][0], lat=TRACK[0][1]) if k == 2 else ports[k + 1]); res = RES[(k, k + 1)]
     seq = [(a['lon'], a['lat'])] + VIA.get((k, k + 1), []) + [(b['lon'], b['lat'])]; out = []
     for p, q in zip(seq, seq[1:]):
         ck = f'{SEA_VERSION}|{p[0]:.4f},{p[1]:.4f}|{q[0]:.4f},{q[1]:.4f}|{res}'
@@ -65,6 +73,7 @@ def lane(k):
             print(f"   {a['name']} - {b['name']} ({p[0]:.2f},{p[1]:.2f} to {q[0]:.2f},{q[1]:.2f}): lane over {land * 100:.1f}% land; snaps {S.snap_m(p):.0f} / {S.snap_m(q):.0f} m")
         leg = [tuple(x) for x in CACHE[ck]]; out += leg if not out else leg[1:]
     return out
+def lane(k): return sealane(k) + TRACK[1:] if k == 2 else sealane(k)    # Sault - Port Arthur harbour by lane, then Brendan's track to Fort William (the ship does not call at Port Arthur)
 pts, at = [], []
 for k, p in enumerate(ports):
     if k == 0: pts.append((p['lon'], p['lat'])) if p['rail'] else None
