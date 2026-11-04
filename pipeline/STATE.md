@@ -1,7 +1,7 @@
 # The Digital Model Railway — project state
 
 Read this first. It is meant to be enough to start a short, single-task chat without replaying the project's history.
-Last updated 3 November 2026 (Version 128: the CP Great Lakes steamers Keewatin and Assiniboia; Version 127: the S.S. Noronic; before that, Version 62 moved the project to git, with a hosted site with split data files and a tiled basemap).
+Last updated 3 November 2026 (Version 129: the CP S.S. Manitoba cruise; Version 128: the CP Great Lakes steamers Keewatin and Assiniboia; Version 127: the S.S. Noronic; before that, Version 62 moved the project to git, with a hosted site with split data files and a tiled basemap).
 
 ## What this is
 
@@ -89,6 +89,7 @@ Output is quiet: one line per step run. Logs are in `build_logs/<step>.log`; rea
 | `ab_nar_build` | nar_bh (Barrhead), nar_ww (Waterways), nar_hc (Hines Creek) | nar_build, ab_cn_build | ab_nar_t179*.csv, ab_lines.py, traces/nar_barrhead_branch.tsv |
 | `nn_build` | nn (S.S. Noronic, Windsor - Duluth) | on_build (the Detroit ferry slip) | traces/lakes/northern_navigation_co.kmz, water_east.json, nn_legs.json (lane cache) |
 | `cp_lakes_build` | cpgl (CP steamers Keewatin and Assiniboia, Port McNicoll - Fort William) | nn_build (the Sault dock), on_build (Port McNicoll) | traces/lakes/cp_great_lakes.kml, traces/lakes/northern_navigation_co.kmz, water_east.json, cpgl_legs.json (lane cache) |
+| `cp_manitoba_build` | cpmb (CP S.S. Manitoba cruise, Port McNicoll - Owen Sound - Sault - Fort William) | cp_lakes_build (the Sault and Fort William stops), on_build (the two CP stations) | traces/lakes/cp_great_lakes.kml, traces/lakes/northern_navigation_co.kmz, water_east.json, cpmb_legs.json (lane cache) |
 
 Rules that keep this working:
 
@@ -2350,3 +2351,9 @@ Stations of different railways within 250 m (70 pairs; script: same check over v
 - New step `cp_lakes_build` (key `cpgl`, livery `cpss`, CP): Port McNicoll (the CP station, gid CP_PORT_MCNICOLL) - Sault Ste. Marie (Government Dock, the Noronic's stop, same gid PORT_SAULT_STE_MARIE_C_S_L_DOCK so they merge) - Port Arthur (CPR Dock) - Fort William (CP Docks); dock points are Brendan's (traces/lakes/cp_great_lakes.kml). The connecting trains were already in the model.
 - Four sailings, Eastern time minus 3 h, all printed: westbound Keewatin from Port McNicoll Tuesday 5.30 p.m., Assiniboia Saturday; eastbound Keewatin from Fort William Saturday 11.00 a.m., Assiniboia Tuesday 4.00 p.m. (Sault 11.45 a.m. / 12.30 p.m. westbound; Port Arthur 6.45 a.m., Fort William 8.30 a.m.). One round trip a week each, no overlaps.
 - Lanes: 310 mi Port McNicoll - Sault (Georgian Bay, North Channel, St. Marys River), 313 mi Sault - Port Arthur (same three waypoints as the Noronic), 4.6 mi Port Arthur - Fort William. Speeds 15 - 17 mph. The Fort William dock lies about 2 km inland of the water layer, so the vessel is drawn to the shore end of the lane and the station marker sits on Brendan's point (as for the Noronic's docks).
+
+## Version 129 (3 November 2026): Canadian Pacific S.S. Manitoba, the Great Lakes cruise
+- Source: the April 1948 CP timetable, "Every Thursday, June 24 to August 26, inclusive" (Brendan, 3 Nov 2026). New step `cp_manitoba_build` (key `cpmb`, livery `cpss`).
+- Port McNicoll and Owen Sound are the CP stations (CP_PORT_MCNICOLL, CP_OWEN_SOUND; Brendan: Owen Sound is the CP station); Sault Ste. Marie and Fort William are the same stops as Version 128's, so the ships merge on the page. Trains 707 / 708 were already in the model.
+- Two trips on one ship, all times printed, Eastern minus 3 h: outbound Thursday (svc W_0001000) Port McNicoll 4.00 p.m., Owen Sound 10.00 p.m. - 11.00 p.m., Sault Friday 7.30 - 8.00 p.m., Fort William Saturday 5.00 p.m.; homeward Sunday (svc W_0000001) Fort William 6.00 p.m., Sault Monday 4.00 - 6.00 p.m., Owen Sound Tuesday 2.30 - 3.00 p.m., Port McNicoll 9.00 p.m. The cruise fare includes meals and berth on the ship at Fort William, where she lies Saturday evening to Sunday evening.
+- Lanes 79 / 274 / 311 mi (Port McNicoll - Owen Sound, Owen Sound - Sault, Sault - Fort William with the Noronic's three waypoints); speeds 13 - 15 mph.

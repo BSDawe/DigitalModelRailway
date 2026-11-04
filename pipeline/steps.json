@@ -368,6 +368,19 @@
     "traces/lakes/northern_navigation_co.kmz",
     "water_east.json"
    ]
+  },
+  {
+   "name": "cp_manitoba_build",
+   "script": "cp_manitoba_build.py",
+   "needs": [
+    "cp_lakes_build",
+    "on_build"
+   ],
+   "inputs": [
+    "traces/lakes/cp_great_lakes.kml",
+    "traces/lakes/northern_navigation_co.kmz",
+    "water_east.json"
+   ]
   }
  ]
 }
