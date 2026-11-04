@@ -344,6 +344,17 @@
     "on_onr_t018m.csv",
     "on_onr_t018s.csv"
    ]
+  },
+  {
+   "name": "nn_build",
+   "script": "nn_build.py",
+   "needs": [
+    "on_build"
+   ],
+   "inputs": [
+    "traces/lakes/northern_navigation_co.kmz",
+    "water_east.json"
+   ]
   }
  ]
 }

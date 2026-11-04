@@ -1,7 +1,7 @@
 # The Digital Model Railway — project state
 
 Read this first. It is meant to be enough to start a short, single-task chat without replaying the project's history.
-Last updated 22 October 2026 (Version 62 moved to git; hosted site with split data files and a tiled basemap of water and borders).
+Last updated 3 November 2026 (Version 127: the S.S. Noronic; before that, Version 62 moved the project to git, with a hosted site with split data files and a tiled basemap).
 
 ## What this is
 
@@ -87,6 +87,7 @@ Output is quiet: one line per step run. Logs are in `build_logs/<step>.log`; rea
 | `ab_cn_build` | 18 CN lines in Alberta (cn_171 … cn_213f) | mainline_build, nar_build | ab_cn_t*.csv, ab_lines.py, nrwn/alberta_all.json, the two backup sets, places/cgn_ab_places.csv |
 | `ab_cp_build` | 18 CP lines in Alberta (cp_138 … cp_120) | mainline_build, cp_south_build, kv_through | ab_cp_t*.csv, ab_lines.py, nrwn/alberta_all.json, places/cgn_ab_places.csv |
 | `ab_nar_build` | nar_bh (Barrhead), nar_ww (Waterways), nar_hc (Hines Creek) | nar_build, ab_cn_build | ab_nar_t179*.csv, ab_lines.py, traces/nar_barrhead_branch.tsv |
+| `nn_build` | nn (S.S. Noronic, Windsor - Duluth) | on_build (the Detroit ferry slip) | traces/lakes/northern_navigation_co.kmz, water_east.json, nn_legs.json (lane cache) |
 
 Rules that keep this working:
 
@@ -2320,3 +2321,24 @@ Stations of different railways within 250 m (70 pairs; script: same check over v
 - Lanes: water_extra.py now adds the Manitoba part of saskman3 (Lake Winnipeg, the Red River) to water_extra.pkl (cached lanes unchanged).
 - FIX: on_build.py rewrote gtfs/routes.txt with '\n' line endings (the csv files use '\r\n'): build.py then saw every row as changed, and rows that
   earlier steps added since on_build last ran landed above the header. Now kept with their endings.
+
+## Version 127 (3 November 2026): Northern Navigation Co., the S.S. Noronic (Great Lakes)
+- New step `nn_build.py` (needs on_build), line `nn`, GTFS route NN, agency NNC: one round trip a week, westbound from Windsor Fridays (NN-W, W_0000100), eastbound from Duluth
+  Tuesdays (NN-E, W_0100000). Windsor (Government Dock) - Detroit - Sarnia (Pt. Edward) - Sault Ste. Marie (C.S.L. Dock) - Port Arthur (C.N.R. Dock) - Duluth (Northern Pacific
+  Dock No. 4); 901.9 mi of lane. Timetable (a screenshot from Brendan, midsummer, Eastern time, Duluth Central; the weekdays are 1948's) and the ports: noronic_1948_notes.txt,
+  traces/lakes/northern_navigation_co.kmz (Brendan's points). Eastern times are shown 3 hours earlier (one Pacific clock), Duluth's Central time 2 hours earlier.
+- The Detroit call is the CN Windsor - Detroit car ferry slip (Brendan: the same pier): gid CN_DETROIT_FERRY_SLIP, one station for the boat and the ferry trains. That is why this is
+  a step of its own after on_build, not part of boats_build.py (which runs before on_build and would have added a second stop with the same id). Detroit is printed on one side
+  only each way, so it shows "est.".
+- Lanes: the Great Lakes water (water_east.json, until now drawn only) is added to the lane mask inside nn_build.py (`sea._U`); sea.py, boats_build and its lane cache are untouched
+  (boats_build stays "ok"). Own lane cache nn_legs.json. Grid by leg (60 m Windsor - Detroit, 100 m Detroit - Sarnia, 250 m the lake legs). Port Arthur - Sault Ste. Marie has three
+  waypoints (Passage Island, mid-lake, off Whitefish Point): the raster path bends 45 degrees and cut the Keweenaw tip, and the layer has no Isle Royale.
+- Livery `csl` (Canada Steamship Lines, for every CSL service later: Brendan: "the same livery, perhaps a bright red if that isn't taken"): --csl and --csl-funnel #d93a1c light,
+  #ff7048 dark (Claude's pick, a warmer vermilion than the B.C. Electric red #d7261e so the two stay apart; not confirmed), .badge.v.csl, BOAT_COLOR, readColors.
+- Page: new view "Lake Superior to Detroit" (`lakes`, menu bottom right). A box this far from the central meridian (122.5 W) turns on the page's projection, and `fit()` kept every
+  point in the turned box's bounding rectangle (all of eastern Canada). VIEWS entries may now end in 'q': `fit()` then keeps only the points inside the turned box itself. Other views
+  unchanged.
+- Checks: check_vessels 35 named vessels, 0 overlaps; check_gtfs 1 problem (old: CP-14-SKJCP13 at Minneapolis); screenshots of the lakes, the Soo, Duluth and Detroit; page errors none.
+- TO CHECK (Selkirk Navigation, Version 126, not changed here): its times look to be stored as printed (Central), e.g. Keenora Monday noon at 12.00, while sk_build shows Central
+  time 2 hours earlier on the Pacific clock, and agency SNC is America/Winnipeg while the other agencies are America/Vancouver. Probably meant to be 10.00; ask Brendan.
+- Not entered: any other Northern Navigation / Canada Steamship Lines service. The scan of the timetable page is not in the repo (it should go in the private sources repo, scans/boats/).

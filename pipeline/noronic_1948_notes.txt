@@ -1,0 +1,48 @@
+S.S. NORONIC, Northern Navigation Co. (a Canada Steamship Lines subsidiary), Windsor - Detroit - Sarnia - Sault Ste. Marie - Port Arthur - Duluth
+(Brendan, 3 Nov 2026; timetable page supplied as a screenshot, not kept in the repo; points in traces/lakes/northern_navigation_co.kmz).
+
+THE PAGE. Headed "Midsummer": westbound (read down) "June 25 to September 3", eastbound (read up) "June 29 to September 7". "All times shown are Eastern
+Standard time, except where Central time is indicated thus (C.T.)": only Duluth. The year is not printed. June 25 and September 3 are Fridays and June 29 and
+September 7 are Tuesdays, which is the 1948 calendar (also 1937 and 1943). Taken as summer 1948 (Brendan: "the SS Noronic"; she ran to 1949).
+
+WESTBOUND (leaves Windsor Fridays)                      EASTBOUND (leaves Duluth Tuesdays)
+ Fri  9.30 p.m.  lve Windsor, Ont. - Gov't Dock             arr 4.45 p.m. Fri
+ Fri 11.00 p.m.  lve Detroit, Mich. - Gr. Trunk Ry.         arr 3.30 p.m. Fri
+ Sat  6.45 a.m.  arr Sarnia, Ont. - Pt. Edward              lve 11.00 a.m. Fri
+ Sat  4.30 p.m.  lve Sarnia, Ont. - Pt. Edward              arr  6.30 a.m. Fri
+ Sun  9.45 a.m.  arr Sault Ste. Marie, Ont. - C.S.L. Dock   lve 10.30 a.m. Thu
+ Sun 12.00 noon  lve Sault Ste. Marie, Ont. - C.S.L. Dock   arr  8.30 a.m. Thu
+ Mon  6.30 a.m.  arr Port Arthur, Ont. - C.N.R. Dock        lve  1.00 p.m. Wed
+ Mon  6.30 p.m.  lve Port Arthur, Ont. - C.N.R. Dock        arr  7.00 a.m. Wed
+ Tue  7.30 a.m.  arr Duluth, Minn. - No. Pac. Dock No. 4    lve  4.30 p.m. Tue   (both C.T.)
+One round trip a week: the ship is at Windsor from 4.45 p.m. to 9.30 p.m. on Fridays.
+
+WHAT IS PRINTED AND WHAT IS NOT. Every time above is printed except two: Detroit has only the westbound departure (11.00 p.m.) and the eastbound arrival
+(3.30 p.m.). Estimated (shown "est."): westbound arrival at Detroit 9.50 p.m. (20 min from Windsor, 0.7 mi, a stop of 70 min); eastbound departure 4.30 p.m.
+(a stop of 60 min, then 15 min to Windsor). The Detroit stop is therefore shown "est." on both sailings.
+
+THE CLOCK. The map has one Pacific clock. Eastern times are shown 3 hours earlier. Duluth (Central) is printed an hour behind Eastern: 7.30 a.m. C.T. westbound
+arrival = 8.30 a.m. Eastern = 5.30 a.m. on the map; 4.30 p.m. C.T. departure = 5.30 p.m. Eastern = 2.30 p.m. on the map. Westbound sailing starts Friday 6.30 p.m. map
+time and arrives Tuesday 5.30 a.m. (3 days 11 hours, carried over into the next week as the page does for every long sailing). Eastbound starts Tuesday 2.30 p.m.,
+ends Friday 1.45 p.m.
+
+PORTS (Brendan's KMZ; a point per landing).
+ Windsor (Government Dock)            -83.04128, 42.32013
+ Detroit                               -83.03763, 42.32825   = the Grand Trunk Railway wharf = the CN Windsor - Detroit car ferry slip (Brendan: "the Detroit pier is the
+                                                                same as our CN Detroit Ferry landing"): station gid CN_DETROIT_FERRY_SLIP, one station for the Noronic and the ferry trains
+ Sarnia (Point Edward)                 -82.40939, 42.97215   (the point is in Sarnia itself; the timetable says "Pt. Edward")
+ Sault Ste. Marie (C.S.L. Dock)        -84.32730, 46.50337   (below the locks; "also known as Government Dock or Northern Navigation Dock", from the KMZ)
+ Port Arthur (C.N.R. Dock)             -89.21484, 48.43214
+ Duluth (Northern Pacific Dock No. 4)  -92.10081, 46.77835
+
+LANES. Least-cost paths over Brendan's Great Lakes water layer (water_east.json, until now drawn only), added to the lane mask in nn_build.py (sea.py and
+boats_build's cached lanes are untouched). Lengths: Windsor - Detroit 0.7 mi, Detroit - Sarnia 68.8, Sarnia - Sault 319.0, Sault - Port Arthur 312.5 (steered
+past Passage Island and across the lake by three waypoints: the raster path cut the Keweenaw tip; the layer has no Isle Royale), Port Arthur - Duluth 200.8; 901.9 mi.
+Implied speeds 14 - 19 mph between ports (Sarnia - Sault westbound is the fastest, 18.5 mph in 17.25 h), 9 mph for the slow overnight Detroit - Sarnia leg westbound.
+
+LIVERY. "csl": Canada Steamship Lines red (Brendan: "the same livery, perhaps a bright red if that isn't taken"). B.C. Electric uses a bright red (#d7261e) for every interurban,
+so the CSL colour is a warmer vermilion (#d93a1c light, #ff7048 dark), Claude's pick, not confirmed. The funnel takes the same red. Any other Canada Steamship Lines
+service (Georgian Bay, the Toronto - Montreal boats, the Saguenay) should use livery csl.
+
+NOT DONE. Any other Northern Navigation Co. or Canada Steamship Lines service: none has been supplied. The Noronic burned at Toronto on 17 September 1949,
+after this timetable year.
