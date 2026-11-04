@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+	<name>KmlFile</name>
+	<Folder>
+		<name>CP Great Lakes</name>
+		<Placemark>
+			<name>Fort William </name>
+			<description>CP Docks</description>
+			<Point><coordinates>-89.24406944444445,48.37900277777779,0</coordinates></Point>
+		</Placemark>
+		<Placemark>
+			<name>Port Arthur</name>
+			<description>CPR Dock</description>
+			<Point><coordinates>-89.21417777777778,48.43282777777777,0</coordinates></Point>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>

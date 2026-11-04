@@ -117,7 +117,7 @@ for tid, svc, calls, d in (('W', 'W_0000100', WEST, 0), ('E', 'W_0100000', EAST,
         print(f"  NN-{tid} {stations[i]['name'][:22]:22s} - {stations[j]['name'][:22]:22s} {leg:6.1f} mi in {h:5.2f} h = {leg / h:5.1f} mph" + ('   !! check' if not 4 < leg / h < 21 and leg > 5 else ''))
     trips.append(dict(id=f'NN-{tid}', num='Noronic', name='Northern Navigation', svc=svc, dir=d, stops=stops, note=NOTE[tid], vessel='Noronic'))
     print(f'NN-{tid}: {run:.1f} mi in {hrs:.1f} h = {run / hrs:.1f} mph overall')
-SRC = ('Northern Navigation Co. (Canada Steamship Lines), midsummer timetable supplied by Brendan, 3 November 2026 (year not printed; the weekdays are those of 1948). Eastern Standard Time as printed, '
+SRC = ('Northern Navigation Co. (Canada Steamship Lines), midsummer timetable from the May 1948 Official Guide, supplied by Brendan, 3 November 2026. Eastern Standard Time as printed, '
        'Duluth in Central, shown on the Pacific clock')
 LINE = dict(key='nn', kind='v', label='Northern Navigation Co.', mainline=True, water=True, livery='csl', src=SRC, owner='cp', route=route, stations=stations,
             dirLabels=['to Duluth', 'to Windsor'], segments=[], trips=trips)

@@ -1,5 +1,5 @@
 S.S. NORONIC, Northern Navigation Co. (a Canada Steamship Lines subsidiary), Windsor - Detroit - Sarnia - Sault Ste. Marie - Port Arthur - Duluth
-(Brendan, 3 Nov 2026; timetable page supplied as a screenshot, not kept in the repo; points in traces/lakes/northern_navigation_co.kmz).
+(Brendan, 3 Nov 2026; timetable page from the May 1948 Official Guide, supplied as a screenshot, not kept in the repo; points in traces/lakes/northern_navigation_co.kmz).
 
 THE PAGE. Headed "Midsummer": westbound (read down) "June 25 to September 3", eastbound (read up) "June 29 to September 7". "All times shown are Eastern
 Standard time, except where Central time is indicated thus (C.T.)": only Duluth. The year is not printed. June 25 and September 3 are Fridays and June 29 and

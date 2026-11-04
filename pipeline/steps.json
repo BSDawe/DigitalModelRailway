@@ -355,6 +355,19 @@
     "traces/lakes/northern_navigation_co.kmz",
     "water_east.json"
    ]
+  },
+  {
+   "name": "cp_lakes_build",
+   "script": "cp_lakes_build.py",
+   "needs": [
+    "nn_build",
+    "on_build"
+   ],
+   "inputs": [
+    "traces/lakes/cp_great_lakes.kml",
+    "traces/lakes/northern_navigation_co.kmz",
+    "water_east.json"
+   ]
   }
  ]
 }

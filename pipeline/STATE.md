@@ -1,7 +1,7 @@
 # The Digital Model Railway — project state
 
 Read this first. It is meant to be enough to start a short, single-task chat without replaying the project's history.
-Last updated 3 November 2026 (Version 127: the S.S. Noronic; before that, Version 62 moved the project to git, with a hosted site with split data files and a tiled basemap).
+Last updated 3 November 2026 (Version 128: the CP Great Lakes steamers Keewatin and Assiniboia; Version 127: the S.S. Noronic; before that, Version 62 moved the project to git, with a hosted site with split data files and a tiled basemap).
 
 ## What this is
 
@@ -88,6 +88,7 @@ Output is quiet: one line per step run. Logs are in `build_logs/<step>.log`; rea
 | `ab_cp_build` | 18 CP lines in Alberta (cp_138 … cp_120) | mainline_build, cp_south_build, kv_through | ab_cp_t*.csv, ab_lines.py, nrwn/alberta_all.json, places/cgn_ab_places.csv |
 | `ab_nar_build` | nar_bh (Barrhead), nar_ww (Waterways), nar_hc (Hines Creek) | nar_build, ab_cn_build | ab_nar_t179*.csv, ab_lines.py, traces/nar_barrhead_branch.tsv |
 | `nn_build` | nn (S.S. Noronic, Windsor - Duluth) | on_build (the Detroit ferry slip) | traces/lakes/northern_navigation_co.kmz, water_east.json, nn_legs.json (lane cache) |
+| `cp_lakes_build` | cpgl (CP steamers Keewatin and Assiniboia, Port McNicoll - Fort William) | nn_build (the Sault dock), on_build (Port McNicoll) | traces/lakes/cp_great_lakes.kml, traces/lakes/northern_navigation_co.kmz, water_east.json, cpgl_legs.json (lane cache) |
 
 Rules that keep this working:
 
@@ -2343,3 +2344,9 @@ Stations of different railways within 250 m (70 pairs; script: same check over v
 - FIXED (Brendan, 3 Nov 2026): Selkirk Navigation (Version 126) times were stored as printed (Central); boats_build now shifts them two hours earlier onto the Pacific clock
   (`DST[SNC]`, Keenora Monday noon from Redwood Dock now 10.00), the trip note says so, and agency SNC is America/Vancouver like the others.
 - Not entered: any other Northern Navigation / Canada Steamship Lines service. The scan of the timetable page is not in the repo (it should go in the private sources repo, scans/boats/).
+
+## Version 128 (3 November 2026): Canadian Pacific Great Lakes steamers Keewatin and Assiniboia
+- Source: the April 1948 CP timetable (Brendan: the same one used all along). The Noronic (Version 127) is from the May 1948 Official Guide; its SRC line and notes now say so.
+- New step `cp_lakes_build` (key `cpgl`, livery `cpss`, CP): Port McNicoll (the CP station, gid CP_PORT_MCNICOLL) - Sault Ste. Marie (Government Dock, the Noronic's stop, same gid PORT_SAULT_STE_MARIE_C_S_L_DOCK so they merge) - Port Arthur (CPR Dock) - Fort William (CP Docks); dock points are Brendan's (traces/lakes/cp_great_lakes.kml). The connecting trains were already in the model.
+- Four sailings, Eastern time minus 3 h, all printed: westbound Keewatin from Port McNicoll Tuesday 5.30 p.m., Assiniboia Saturday; eastbound Keewatin from Fort William Saturday 11.00 a.m., Assiniboia Tuesday 4.00 p.m. (Sault 11.45 a.m. / 12.30 p.m. westbound; Port Arthur 6.45 a.m., Fort William 8.30 a.m.). One round trip a week each, no overlaps.
+- Lanes: 310 mi Port McNicoll - Sault (Georgian Bay, North Channel, St. Marys River), 313 mi Sault - Port Arthur (same three waypoints as the Noronic), 4.6 mi Port Arthur - Fort William. Speeds 15 - 17 mph. The Fort William dock lies about 2 km inland of the water layer, so the vessel is drawn to the shore end of the lane and the station marker sits on Brendan's point (as for the Noronic's docks).
