@@ -54,6 +54,8 @@ OVER['sk_cp_t099a'] = dict(noplace=['Morris'])   # CP Morris: on its own main li
 OVER['sk_cp_t132'] = dict(cols=['No65', 'No66'])   # M673 / M674 run on to Verlo: entered whole in sk_cp_t140.csv (Table 140, 21 October)
 OVER['sk_cp_t107b'] = dict(force=[('Kirkella', 'Manson'), ('Manson', 'McAuley'), ('McAuley', 'Welwyn')])   # the printed miles (Manson - McAuley 5.1) do not fit the track (8.8 by Brendan's trace); McAuley - Welwyn is the NRWN Rocanville sub (1 Nov 2026)
 OVER['sk_ww_t001'] = dict(short='Greater Winnipeg Water District Railway', long='St. Boniface – Waugh')
+for _k in ('sk_cn_t184', 'sk_cp_t098b'):                                  # Roland: the CN and CP stations each on its own line, on opposite sides of the town (Brendan, 4 Nov 2026); by mileage, not the town point
+    OVER.setdefault(_k, {}); OVER[_k]['noplace'] = list(OVER[_k].get('noplace', [])) + ['Roland']
 PENDING = {}                                                               # all end points in (Brendan, 17 October 23:00)
 def specs():
     out = []

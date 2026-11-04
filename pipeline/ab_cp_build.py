@@ -33,6 +33,8 @@ SPECS = [
  L('cp_150c', ['ab_cp_t150b.csv'], ['to Coutts', 'to Lethbridge'], 'Lethbridge – Stirling – Coutts', '150'),
  L('cp_120', [('ab_cp_t120.csv', 'Lethbridge', 'Jaydot')], ['to Foremost and Manyberries', 'to Lethbridge'], 'Lethbridge – Stirling – Foremost – Manyberries – Jaydot', '120'),
 ]
+for _s in SPECS:                                                          # Rosedale, Alta.: one station for CN and CP, by the shared line (Brendan, 4 November 2026: estimated)
+    if _s['key'] in ('cp_136',): _s['places'] = {**(_s.get('places') or {}), 'Rosedale': (-112.630350, 51.419370)}
 if __name__ == '__main__':
     if os.environ.get('AB_DRY'):
         for s in SPECS:

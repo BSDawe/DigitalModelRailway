@@ -34,6 +34,8 @@ SPECS = [
  L('cn_213', ['ab_cn_t213.csv'], ['to Luscar and Mountain Park', 'to Edson'], 'Edson – Coalspur – Luscar – Mountain Park', '213', cols=['No179', 'No180'], force=[('Leyland', 'Cadomin')]),
  L('cn_213f', [('ab_cn_t213.csv', 'Edson', 'Coalspur'), 'ab_cn_t213a.csv'], ['to Coalspur and Foothills', 'to Edson'], 'Edson – Coalspur – Foothills', '213 and 213a', cols=['M317', 'M318']),
 ]
+for _s in SPECS:                                                          # Rosedale, Alta.: one station for CN and CP, by the shared line (Brendan, 4 November 2026: estimated)
+    if _s['key'] in ('cn_168', 'cn_209', 'cn_193'): _s['places'] = {**(_s.get('places') or {}), 'Rosedale': (-112.630350, 51.419370)}
 if __name__ == '__main__':
     if os.environ.get('AB_DRY'):
         for s in SPECS:

@@ -19,11 +19,21 @@ MERGE = [
  ['CN_WINNIPEG', 'NP_WINNIPEG', 'GN_WINNIPEG'], ['CN_EMERSON_JUNCTION', 'NP_EMERSON_JN', 'GN_EMERSON_JUNCTION'], ['CN_LETELLIER', 'NP_LETELLIER', 'GN_LETELLIER'],
  ['CN_ST_JEAN_BAPTISTE', 'NP_ST_JEAN_BAPTISTE', 'GN_ST_JEAN_BAPTISTE', 'GN_ST_JEAN'], ['CN_MORRIS', 'NP_MORRIS', 'GN_MORRIS'],
  ['CN_STE_AGATHE', 'NP_ST_AGATHE', 'GN_ST_AGATHE'],   # CN, NP and GN one station each (Brendan, 20 October)
- ['NP_PORTAGE_JUNCTION', 'GN_PORTAGE_JUNCTION'], ['CP_GRETNA', 'GN_GRETNA'], ['CP_NOYES', 'GN_NOYES'], ['CN_EMERSON', 'GN_EMERSON'],
+ ['CN_PORTAGE_JUNCTION', 'NP_PORTAGE_JUNCTION', 'GN_PORTAGE_JUNCTION'],   # one station (Brendan, 4 November 2026)
+ ['CP_GRETNA', 'GN_GRETNA'], ['CP_NOYES', 'GN_NOYES'], ['CN_EMERSON', 'GN_EMERSON'],
 ]
+MERGE += [
+ # Brendan, 4 November 2026
+ ['CN_MARYFIELD', 'CP_MARYFIELD'],                                    # both railways' trains call at the CN station
+ ['CP_ST_PAUL', 'GN_ST_PAUL'],                                        # St. Paul Union Depot: one station for every St. Paul railway unless a table says otherwise
+ ['CN_SMOOTH_ROCK', 'ONR_SMOOTH_ROCK'], ['CN_FAUQUIER', 'ONR_FAUQUIER'], ['CN_MOONBEAM', 'ONR_MOONBEAM'], ['CN_KAPUSKASING', 'ONR_KAPUSKASING'],   # ONR trains over the CN: the CN stations
+]
+# after split_stops (the ids it gives same-named stations far apart): Rosedale, Alta., CN and CP one station (the CP over the CN; Brendan, 4 November 2026)
+MERGE_AFTER = [['CN_ROSEDALE_CN_168', 'CP_ROSEDALE']]
 TO = {g: grp[0] for grp in MERGE for g in grp[1:]}
 
-def apply(viz, gt):
+def apply(viz, gt, groups=None):
+    TO = {g: grp[0] for grp in (groups if groups is not None else MERGE) for g in grp[1:]}
     seen = set()
     for L in viz.get('lines', []):
         for s in L.get('stations', []):
