@@ -1,7 +1,7 @@
 # The Digital Model Railway — project state
 
 Read this first. It is meant to be enough to start a short, single-task chat without replaying the project's history.
-Last updated 3 November 2026 (Version 129: the CP S.S. Manitoba cruise; Version 128: the CP Great Lakes steamers Keewatin and Assiniboia; Version 127: the S.S. Noronic; before that, Version 62 moved the project to git, with a hosted site with split data files and a tiled basemap).
+Last updated 4 November 2026 (Version 130: six more CN mixed trains, Foleyet - Armstrong; Version 129: the CP S.S. Manitoba cruise; Version 128: the CP Great Lakes steamers Keewatin and Assiniboia; Version 127: the S.S. Noronic; before that, Version 62 moved the project to git, with a hosted site with split data files and a tiled basemap).
 
 ## What this is
 
@@ -2360,3 +2360,8 @@ Stations of different railways within 250 m (70 pairs; script: same check over v
 - Two trips on one ship, all times printed, Eastern minus 3 h: outbound Thursday (svc W_0001000) Port McNicoll 4.00 p.m., Owen Sound 10.00 p.m. - 11.00 p.m., Sault Friday 7.30 - 8.00 p.m., Fort William Saturday 5.00 p.m.; homeward Sunday (svc W_0000001) Fort William 6.00 p.m., Sault Monday 4.00 - 6.00 p.m., Owen Sound Tuesday 2.30 - 3.00 p.m., Port McNicoll 9.00 p.m. The cruise fare includes meals and berth on the ship at Fort William, where she lies Saturday evening to Sunday evening.
 - Lanes 79 / 274 / 311 mi (Port McNicoll - Owen Sound, Owen Sound - Sault, Sault - Fort William with the Noronic's three waypoints); speeds 13 - 15 mph.
 - Port Arthur - Fort William track (Brendan, 3 Nov 2026): his hand-drawn path (traces/lakes/cp_pa_fw_track.kml, 4.9 mi, drawn Fort William to Port Arthur) replaces the least-cost lane for Keewatin and Assiniboia; both docks now sit on it. The Manitoba (which does not call at Port Arthur) runs the Sault lane to the Port Arthur harbour mouth and then his track to Fort William (670 mi from Port McNicoll). Both steps list the KML as an input.
+
+## Version 130 (4 November 2026): six more CN mixed trains, Foleyet - Hornepayne - Longlac - Nakina - Armstrong
+- Source: the April 1948 CN timetable (not the Official Guide), Brendan, 4 Nov 2026. Unnumbered mixed trains added as columns MFH, MHL, MNA (down) and MHF, MLH, MAN (up) in `on_cn_t075b.csv` (line oncn075b): Foleyet 7.00 a.m. Sat for Hornepayne; Hornepayne 7.30 a.m. Fri for Foleyet; Hornepayne 7.30 a.m. Wed for Longlac; Longlac 9.30 a.m. Thu for Hornepayne; Nakina 7.00 a.m. Fri for Armstrong; Armstrong 8.00 a.m. Sat for Nakina. Eastern time.
+- Only departures were supplied: every other time is estimated (`~`, shown est.) at 17 mph with 3 minutes at each intermediate stop (Elsas, Oba, Nagogami River, Cavell), so the runs are 6 - 9 hours. Replace with the printed times when Brendan supplies them.
+- Rebuilding on_build needs the private sources: clone BSDawe/DigitalModelRailwayPrivate and run `python3 tools/link_sources.py <clone>` first (without them on_build fails at onacr001). It took about 10 minutes; nn_build, cp_lakes_build and cp_manitoba_build re-ran after it.
