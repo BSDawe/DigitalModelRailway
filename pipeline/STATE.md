@@ -2365,3 +2365,17 @@ Stations of different railways within 250 m (70 pairs; script: same check over v
 - Source: the April 1948 CN timetable (not the Official Guide), Brendan, 4 Nov 2026. Unnumbered mixed trains added as columns MFH, MHL, MNA (down) and MHF, MLH, MAN (up) in `on_cn_t075b.csv` (line oncn075b): Foleyet 7.00 a.m. Sat for Hornepayne; Hornepayne 7.30 a.m. Fri for Foleyet; Hornepayne 7.30 a.m. Wed for Longlac; Longlac 9.30 a.m. Thu for Hornepayne; Nakina 7.00 a.m. Fri for Armstrong; Armstrong 8.00 a.m. Sat for Nakina. Eastern time.
 - Only departures were supplied: every other time is estimated (`~`, shown est.) at 17 mph with 3 minutes at each intermediate stop (Elsas, Oba, Nagogami River, Cavell), so the runs are 6 - 9 hours. Replace with the printed times when Brendan supplies them.
 - Rebuilding on_build needs the private sources: clone BSDawe/DigitalModelRailwayPrivate and run `python3 tools/link_sources.py <clone>` first (without them on_build fails at onacr001). It took about 10 minutes; nn_build, cp_lakes_build and cp_manitoba_build re-ran after it.
+
+## Version 128 (4 November 2026): TH&B at the NYC stations
+- on_lines SHARED: ('onthb', 'welland') NYC_WELLAND, ('onthb', 'fort erie') NYC_FORT_ERIE, ('onthb', 'international boundary') the NYC Black Rock border point
+  (Brendan: two Wellands on top of each other).
+
+## Version 129 (4 November 2026): stations (Brendan, 4 Nov, after a sweep for different stops on the same point)
+- Carman: CN station (-98.003927, 49.508874), CP (-98.012480, 49.509258, estimated) (sk_lines HAND): the CN line is now straight through town (it had
+  been routed round the CP loop south of town to the town point).
+- Roland: CN and CP each by mileage on its own line (sk_build OVER noplace for sk_cn_t184 and sk_cp_t098b): east and south of the crossing. Points to come?
+- Russell: CP station (-101.291910, 50.782035); CN as it was.
+- merge_stations.py: Maryfield (CP trains at the CN station), Portage Junction (CN, NP, GN one station), St. Paul (CP and GN: Union Depot for every St. Paul
+  railway unless a table says otherwise), Smooth Rock, Fauquier, Moonbeam, Kapuskasing (ONR over the CN: the CN stations). New MERGE_AFTER, applied after
+  split_stops (build.py): Rosedale, Alta. (CN_ROSEDALE_CN_168 + CP_ROSEDALE), placed at (-112.630350, 51.419370) in ab_cn_build / ab_cp_build (estimated).
+- Kept separate (Brendan): the NYC and CN Niagara border points (to be fixed with his CN track route).
