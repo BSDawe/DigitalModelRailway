@@ -331,6 +331,7 @@ SHARED = {('onr', 'toronto union'): 'TORONTO_UNION', ('oncn', 'toronto union'): 
           ('ontir', 'gananoque junction'): 'CN_GANANOQUE_JUNCTION',   # the TIR at the CN station (over the CN from Thousand Islands Jct.; Brendan)
           ('oncn', 'don'): 'CP_DON',                                       # Don (Queen St. East): one station, CN Table 122 and CP Table 50
           ('onthb', 'toronto union'): 'TORONTO_UNION', ('oncpthb', 'toronto union'): 'TORONTO_UNION', ('onthb', 'toronto'): 'TORONTO_UNION', ('oncpthb', 'toronto'): 'TORONTO_UNION',
+          ('onthb', 'welland'): 'NYC_WELLAND', ('onthb', 'fort erie'): 'NYC_FORT_ERIE', ('onthb', 'international boundary'): 'NYC_INTERNATIONAL_BOUNDARY_NIAGARA_RIVER_TO_BLACK_ROCK_N_Y',   # TH&B trains at the NYC (Michigan Central) stations: one stop each (Brendan, 4 Nov 2026: two Wellands on top of each other)
           ('onthb', 'hamilton'): 'THB_HAMILTON', ('oncpthb', 'hamilton'): 'THB_HAMILTON', ('oncp', 'hamilton'): 'THB_HAMILTON',   # Hunter Street: CP and TH&B trains
           ('onthb', 'waterford'): 'NYC_WATERFORD',   # the NYC station (Brendan)
           ('oncp', 'st thomas'): 'NYC_ST_THOMAS', ('onlps', 'n y c depot'): 'NYC_ST_THOMAS',   # CP trains used the NYC (Michigan Central) station at St. Thomas (Brendan); the L&PS N.Y.C. Depot
