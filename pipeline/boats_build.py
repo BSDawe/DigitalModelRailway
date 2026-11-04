@@ -704,6 +704,7 @@ service('bse', BST, 'Port Alberni – Bamfield (Sunday excursion)', 'Barkley Sou
 # estimated (about 9 mph on the lake, slower up the river, with time at the calls for freight and flag stops; she runs through the nights).
 SNC = 'Selkirk Navigation Co.'
 OPS[SNC] = ('snc', 'SNC', '8A3B2B'); OPLABEL[SNC] = 'Selkirk Navigation'
+DST[SNC] = 2 * 3600            # printed in Central time, shown on the Pacific clock: two hours earlier (fixed 3 November 2026, Brendan)
 SRC[SNC] = 'Selkirk Navigation Co. Ltd., Winnipeg and Selkirk: a model week (Brendan, 2 November 2026) from its advertisements (1937; the Keenora ran to 1965): the Monday noon sailing from Redwood Dock and the Sunday Lockport cruise, 2 to 8 p.m.; every other time estimated'
 P.update({'Redwood Dock': (-97.127556, 49.916419, True), 'Lockport': (-96.937272, 50.083991, False), 'Selkirk Wharf': (-96.870754, 50.141508, True),
           'Gimli': (-96.981657, 50.630037, True), 'Hecla Island': (-96.663271, 51.132494, False), 'Berens River': (-97.021814, 52.353315, True),
@@ -818,7 +819,8 @@ for D in SV:
         off = DST.get(D['op'], 0)
         stops = [[i, int(round(arr[k] / 60.0)) * 60 - off, int(round(dep[k] / 60.0)) * 60 - off, 1 if k in printed else 0] for k, (i, _) in enumerate(calls)]
         assert stops[0][1] >= 0, (D['key'], tid)
-        if off: note = note + ' Hours named in this note are the guide\'s Daylight Saving Time; the list above is in standard time, an hour earlier.'
+        if off and D['op'] == SNC: note = note + ' Times named in this note are Central time; the list above is on the Pacific clock, two hours earlier.'
+        elif off: note = note + ' Hours named in this note are the guide\'s Daylight Saving Time; the list above is in standard time, an hour earlier.'
         assert all(y[1] >= x[2] for x, y in zip(stops, stops[1:])), (D['key'], tid, stops)
         d = 0 if ch[-1] > ch[0] else 1; hrs = (stops[-1][1] - stops[0][2]) / 3600; run = run_[-1] / MI
         trips.append(dict(id=f"{D['key'].upper()}-{tid}", num=badge, name=OPLABEL['lake' if D['key'] in ('bsl', 'bkl', 'bal') else D['op']], svc=svc, dir=d, stops=stops, note=note, **({'vessel': vessel} if vessel else {}), **extra))
@@ -847,7 +849,7 @@ for _ag in (['GIF', 'Gulf Islands Ferry Company', 'https://en.wikipedia.org/wiki
             ['ASS', 'Alaska Steamship Company', 'https://en.wikipedia.org/wiki/Alaska_Steamship_Company', 'America/Vancouver', 'en', ''],
             ['BYN', 'British Yukon Navigation Company (White Pass & Yukon Route)', 'https://en.wikipedia.org/wiki/White_Pass_and_Yukon_Route', 'America/Vancouver', 'en', ''],
             ['BST', 'Barkley Sound Transportation Company', 'https://en.wikipedia.org/wiki/Barkley_Sound', 'America/Vancouver', 'en', ''],
-            ['SNC', 'Selkirk Navigation Company', 'https://en.wikipedia.org/wiki/SS_Keenora', 'America/Winnipeg', 'en', '']):
+            ['SNC', 'Selkirk Navigation Company', 'https://en.wikipedia.org/wiki/SS_Keenora', 'America/Vancouver', 'en', '']):
     if _ag[0] not in set(r[0] for r in csv.reader(open(os.path.join(GT, 'agency.txt')))): app('agency.txt', [_ag])
 if 'PSN' not in set(r[0] for r in csv.reader(open(os.path.join(GT, 'agency.txt')))):
     app('agency.txt', [['PSN', 'Puget Sound Navigation Company (Black Ball Line)', 'https://en.wikipedia.org/wiki/Puget_Sound_Navigation_Company', 'America/Vancouver', 'en', '']])

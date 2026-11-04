@@ -2339,6 +2339,6 @@ Stations of different railways within 250 m (70 pairs; script: same check over v
   point in the turned box's bounding rectangle (all of eastern Canada). VIEWS entries may now end in 'q': `fit()` then keeps only the points inside the turned box itself. Other views
   unchanged.
 - Checks: check_vessels 35 named vessels, 0 overlaps; check_gtfs 1 problem (old: CP-14-SKJCP13 at Minneapolis); screenshots of the lakes, the Soo, Duluth and Detroit; page errors none.
-- TO CHECK (Selkirk Navigation, Version 126, not changed here): its times look to be stored as printed (Central), e.g. Keenora Monday noon at 12.00, while sk_build shows Central
-  time 2 hours earlier on the Pacific clock, and agency SNC is America/Winnipeg while the other agencies are America/Vancouver. Probably meant to be 10.00; ask Brendan.
+- FIXED (Brendan, 3 Nov 2026): Selkirk Navigation (Version 126) times were stored as printed (Central); boats_build now shifts them two hours earlier onto the Pacific clock
+  (`DST[SNC]`, Keenora Monday noon from Redwood Dock now 10.00), the trip note says so, and agency SNC is America/Vancouver like the others.
 - Not entered: any other Northern Navigation / Canada Steamship Lines service. The scan of the timetable page is not in the repo (it should go in the private sources repo, scans/boats/).
