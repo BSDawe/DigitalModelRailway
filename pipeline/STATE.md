@@ -2196,6 +2196,7 @@ Stations of different railways within 250 m (70 pairs; script: same check over v
   (Brendan doubts the trains ran into the CP station; trace of the short CN link up to the CP); NYC Tables 6 / 11 readings: 364 St. Thomas 11.28 - Aylmer p11.33
   (10.7 mi in 5 min), 366 Lythmore f4.23 - Cayuga 4.25, M362 Charing Cross 6.58 - Fargo 7.25; the Detroit River Tunnel portal and border point (APPROXIMATE, Brendan
   to trace); the Table 44 Petrolia / Oil Springs branch miles (estimated); Otterville.
+- TO DO (Brendan, 3 Nov 2026): Canadian Pacific Car & Passenger Transfer Co. (the Prescott - Ogdensburg car ferry across the St. Lawrence).
 - WAITING ON BRENDAN: Quebec Railway, Light & Power; the Stratford table (No. 10); the Camp Borden trace; the remaining steamship points and waterways; the rest
   of the Official Guide pages.
 - BUILD: run-through joins (London, Hamilton, North Bay, CN 3 / 4, CP / TH&B at Hamilton, Cataract); numbering of connecting sections (wait for the branch tables);
