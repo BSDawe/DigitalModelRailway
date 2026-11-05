@@ -2382,3 +2382,12 @@ Stations of different railways within 250 m (70 pairs; script: same check over v
   railway unless a table says otherwise), Smooth Rock, Fauquier, Moonbeam, Kapuskasing (ONR over the CN: the CN stations). New MERGE_AFTER, applied after
   split_stops (build.py): Rosedale, Alta. (CN_ROSEDALE_CN_168 + CP_ROSEDALE), placed at (-112.630350, 51.419370) in ab_cn_build / ab_cp_build (estimated).
 - Kept separate (Brendan): the NYC and CN Niagara border points (to be fixed with his CN track route).
+
+## Version 130 (5 November 2026): North America Lambert; Brendan's new water basemap
+- Projection: Lambert conformal conic, standard parallels 20 and 60 N, central meridian 96 W (ESRI:102009's, on a sphere), origin still Vancouver; in P()
+  (page_template.html) and PROJ (basemap/build_tiles.py), which must match. Station / line data are lon/lat and follow.
+- Basemap: Brendan's QGIS water layer (water_na.geojson, 51 MB, EPSG:4326; kept on his computer, not in the repo), tiled ON HIS COMPUTER:
+  python basemap\build_tiles.py --water "C:\Users\info\Documents\Doodles\DMR Basemap\water_na.geojson" (OSGeo4W Shell, in
+  C:\Users\info\Documents\GitHub\DigitalModelRailway), pushed on branch na-tiles, merged here with the page change in one push. 9 levels (0-8), 120 MB.
+  Borders still Natural Earth cut to 38 N (EXTENT): going south of Cape May / Cape Mendocino needs a re-cut from the full files.
+- Not changed: the steamer lanes still use the old water (sea.py / water_extra.pkl); the single-file page's WATER still the old water files.

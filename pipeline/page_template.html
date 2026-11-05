@@ -255,11 +255,12 @@ const DATA = __DATA__;
 const WATER = __WATER__;   // [[ring, ...], ...] each ring delta-encoded lon/lat in 1e-4 degrees
 
 // ---------------------------------------------------------------- projection (metres, y down)
-// Lambert conformal conic (Brendan, October 2026): standard parallels 49 and 61 N, central meridian 122.5 W (was 128 W until 17 Oct 2026: balances the lean at Fairbanks and Winnipeg), on a sphere; metres, y down,
-// with Vancouver (49.12 N, 122.5 W) at the origin. Shapes stay true from Portland to Fairbanks; scale is within a few per cent.
+// Lambert conformal conic, North America Lambert (Brendan, 5 November 2026; ESRI:102009's standard parallels 20 and 60 N and central meridian 96 W,
+// on a sphere; it was 49 / 61 N and 122.5 W until then); metres, y down, with Vancouver (49.12 N, 122.5 W) still at the origin. Must match PROJ in
+// basemap/build_tiles.py, whose tiles are drawn as they are.
 const LAT0 = 49.12, LON0 = -122.5;
 const LCC = (() => {
-  const r = Math.PI / 180, R = 6371008, p1 = 49 * r, p2 = 61 * r, l0 = -122.5 * r, t = p => Math.tan(Math.PI / 4 + p / 2);
+  const r = Math.PI / 180, R = 6371008, p1 = 20 * r, p2 = 60 * r, l0 = -96 * r, t = p => Math.tan(Math.PI / 4 + p / 2);
   const n = Math.log(Math.cos(p1) / Math.cos(p2)) / Math.log(t(p2) / t(p1)), F = Math.cos(p1) * Math.pow(t(p1), n) / n;
   const raw = (lon, lat) => { const rho = R * F / Math.pow(t(lat * r), n), th = n * (lon * r - l0); return [rho * Math.sin(th), rho * Math.cos(th)]; };
   const o = raw(LON0, LAT0);
