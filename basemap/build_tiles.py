@@ -2,6 +2,9 @@
 """Build the map's own tiled basemap: water from Brendan's layers and province/state borders, cut into tiles at several levels of detail.
 
   python3 basemap/build_tiles.py            writes basemap/tiles/index.json and basemap/tiles/<z>/<x>_<y>.json
+  python3 basemap/build_tiles.py --water C:\path\to\water_na.geojson
+                                            the same, with the water from one GeoJSON file (Brendan's QGIS layer, exported in EPSG:4326,
+                                            polygons or multipolygons) in place of the pipeline's water files
 
 Sources
 - Water: the water layers the page has always drawn (pipeline/water_*.json, made by pipeline/water_extra.py and water_alberta.py from the
@@ -27,7 +30,7 @@ from shapely import set_precision
 
 HERE = os.path.dirname(os.path.abspath(__file__)); ROOT = os.path.dirname(HERE); PIPE = os.path.join(ROOT, 'pipeline')
 OUT = os.path.join(HERE, 'tiles'); SRC = os.path.join(HERE, 'sources')
-PROJ = dict(kind='lcc-sphere', R=6371008, lat1=49, lat2=61, lon0=-122.5, origin=[-122.5, 49.12])   # must match P() in page_template.html
+PROJ = dict(kind='lcc-sphere', R=6371008, lat1=20, lat2=60, lon0=-96, origin=[-122.5, 49.12])   # must match P() in page_template.html: North America Lambert (ESRI:102009's parallels and meridian, on a sphere; Brendan, 5 Nov 2026), origin still Vancouver
 EXTENT = (-170.0, 38.0, -50.0, 72.0)                           # lon/lat box the borders are cut to
 FINEST = 64000                                                  # the last level's tiles are at most this many metres across
 WATER_FILES = ['water_bc_cut.json', 'water_wa.json', 'water_ak.json', 'water_fill.json', 'water_north.json', 'water_sk.json', 'water_alberta.json', 'water_east.json']
@@ -59,6 +62,20 @@ def water_geoms():
             g = Polygon(rings[0], rings[1:])                        # the water files write the outline first, then the islands
             if not g.is_valid: g = g.buffer(0)
             if not g.is_empty: out.append(g)
+    return out
+
+def water_geojson(path):
+    """each polygon of a GeoJSON file (EPSG:4326), projected"""
+    out = []
+    for ft in json.load(open(path, encoding='utf-8'))['features']:
+        g = ft.get('geometry')
+        if not g or g['type'] not in ('Polygon', 'MultiPolygon'): continue
+        for poly in (g['coordinates'] if g['type'] == 'MultiPolygon' else [g['coordinates']]):
+            rings = [proj_coords([q[:2] for q in r]) for r in poly if len(r) >= 4]
+            if not rings: continue
+            p = Polygon(rings[0], rings[1:])
+            if not p.is_valid: p = p.buffer(0)
+            if not p.is_empty: out.append(p)
     return out
 
 def border_geoms():
@@ -105,7 +122,8 @@ def lines(g):
     return []
 
 def main():
-    print('reading water'); W = water_geoms()
+    src = sys.argv[sys.argv.index('--water') + 1] if '--water' in sys.argv else None
+    print('reading water', src or '(the pipeline water files)'); W = water_geojson(src) if src else water_geoms()
     print(f'  {len(W)} bodies; merging'); water = unary_union(W)
     print('reading borders'); B = border_geoms()
     xs = [water.bounds[0], water.bounds[2]] + [b[1].bounds[i] for b in B for i in (0, 2)]
