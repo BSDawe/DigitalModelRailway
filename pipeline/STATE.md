@@ -1767,7 +1767,7 @@ Stations of different railways within 250 m (70 pairs; script: same check over v
   zoomed in) but FOUR capsules, all in the interurban red (no black locomotive: self-propelled cars), direction nose on the leading car. The local
   lines (Central Park, Burnaby Lake, Lulu Island) drawn THE SAME WAY (Brendan, 10:16: no need to tell them apart by drawing; the Chilliwack trains
   already carry train numbers).
-- MOTOR TRAINS: ON HOLD (Brendan, 27 Oct 2026, 10:16: hold off for now). Notes kept for later. (Asked whether plausible: yes): kind=motor is already in the CSVs (41 trains in 15 files: CN 633 / 634, Saskatchewan and Alberta
+- MOTOR TRAINS: DONE in Version 136 (6 Nov 2026), see that section. Earlier note: ON HOLD (Brendan, 27 Oct 2026, 10:16: hold off for now). Notes kept for later. (Asked whether plausible: yes): kind=motor is already in the CSVs (41 trains in 15 files: CN 633 / 634, Saskatchewan and Alberta
   CN / CP branch motor trains). Carry a motor flag into viz_data (ab_lines sets the name 'Motor train' only when the train has no name; use the kind,
   not the label) and draw a short consist: a power car in the railway colour with a nose, plus one trailer (2 capsules). Check the other files that print
   motor-train signs but are not tagged (e.g. Alberta CN 168 / 171 / 203, CP 6 / 138, Saskatchewan CN 199 / 211 / 212 / 214 ...; many mentions are motor
@@ -2438,6 +2438,13 @@ Stations of different railways within 250 m (70 pairs; script: same check over v
   the zone the timetable was printed in (no "shown in Pacific time ..."). FIX the same evening: ZOFF declared with var (hm runs above its line).
 - NS&T / CN steamers page (condensed tables) saved: dmr-sources og1948_cnq/nst_cn_steamers_condensed.png. Questions out to Brendan (track KMZ, Port
   Dalhousie cars, Toronto - Port Dalhousie boat, Cobourg - Genesee points, colours).
+
+## Version 136 (6 November 2026): motor trains drawn like interurbans
+- Brendan: known motor trains look like interurbans but run on the regular track. ab_lines emits motor=1 for kind=motor (all 153 tagged trains; 142 trips
+  on the page, the rest are not built: GTW 34 / 35, three unnumbered Table 77 trips fold in elsewhere); page_template carries t.motor and drawConsist treats it
+  as inter: four cars, no black locomotive, direction nose, in the RAILWAY'S colour (CP red, CN green ...). Track and station drawing unchanged (line kind decides).
+- This version patched parts/*.json (motor=1 where name == 'Motor train', identical to what ab_lines now emits) and ran --assemble; the next full build
+  reruns every ab_lines step because ab_lines.py changed (about 70 min). Untagged files only print the sign key, or motor BUSES; sk_cn_t212 dot left untagged.
 
 ## Version 135 (5 November 2026): Niagara, St. Catharines & Toronto; CN steamers Toronto - Port Dalhousie; Cobourg - Genesee car ferry; Newfoundland Railway
 - New rail 'onnst' (kind 'N', own 'nst', CN colours like the M&SC, interurban style; agency NST). Track: Brendan's NS&T KMZ, stitched by scratchpad

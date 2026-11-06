@@ -357,7 +357,7 @@ for (const [svc, byDir] of Object.entries(DATA.cp.deps)) for (const [dir, deps] 
     stops: pat.map(([si, a, b, tp]) => [si, d + a, d + b, tp]) }));
 }
 for (const L of LINES) for (const bt of L.trips || []) TRIPS.push(buildTrip({ id: bt.id, svc: bt.svc, dir: bt.dir, rk: L.key, kind: L.kind,
-  label: L.mainline ? (bt.name || L.label) : L.label, mainline: !!L.mainline, realFrom: bt.from, realTo: bt.to, railway: L.label, num: bt.num, note: bt.note, livery: L.livery, src: L.src, water: !!L.water, vessel: bt.vessel, d0: bt.d0, next: bt.next, prev: bt.prev,
+  label: L.mainline ? (bt.name || L.label) : L.label, mainline: !!L.mainline, realFrom: bt.from, realTo: bt.to, railway: L.label, num: bt.num, motor: !!bt.motor, note: bt.note, livery: L.livery, src: L.src, water: !!L.water, vessel: bt.vessel, d0: bt.d0, next: bt.next, prev: bt.prev,
   stops: bt.stops.map(([bi, a, b, tp]) => [L.idx[bi], a, b, tp, L.stations[bi].chain]) }));
 // a station that only mixed trains call at is drawn as a minor station (Brendan); a steamer or a passenger train calling keeps it as it was
 { const only = new Map();
@@ -828,7 +828,7 @@ function drawConsist(t, st) {
   const k = view.k, RR = ROUTES[t.rk];
   const seg = Math.max(24, 6 / k), back = t.dir === 0 ? -1 : 1;
   // locals shorter than the named trains; keep the whole train under ~48 px when zoomed far out
-  const inter = t.kind === 'P' || t.kind === 'E' || t.kind === 'M' || t.kind === 'N' || t.kind === 'Q' || !t.mainline;   // electric interurbans: B.C. Electric, L&PS, GRR, L&N                                   // an electric interurban (the London & Port Stanley): four cars, no locomotive
+  const inter = t.kind === 'P' || t.kind === 'E' || t.kind === 'M' || t.kind === 'N' || t.kind === 'Q' || !t.mainline || t.motor;   // motor trains: the interurban cars in the railway's colour, on the railway's track (Brendan, 6 Nov 2026)   // electric interurbans: B.C. Electric, L&PS, GRR, L&N                                   // an electric interurban (the London & Port Stanley): four cars, no locomotive
   const n = inter ? 3 : Math.max(2, Math.min(/local|mixed/i.test(t.label || '') ? 4 : 7, Math.floor(48 / (seg * k)) - 1));
   const col = colors[t.livery || KIND_COLOR[t.kind]];             // a line may carry its own livery (the Spokane International)
   const selected = S.sel?.kind === 'train' && S.sel.id === t.id;

@@ -367,7 +367,7 @@ def trips_of(spec, rows, trains, stn_index, taken, log=print):
         ends = ((f" From {tr['from']}." if tr.get('from') else '') + (f" To {tr['to']}." if tr.get('to') else '')) if spec.get('ends', True) else ''
         note = (spec.get('notes', {}).get(col) or tr.get('note', '')).strip()
         note = (note + ('' if not note or note.endswith('.') else '.') + ends + (spec.get('tznote', ' Shown in Pacific time, an hour earlier than the Mountain time printed.') if spec.get('shift', -3600) else '')).strip()
-        out.append(dict(id=tid, num=num, name=name, svc=svc_of(days), dir=0 if tr['along'] else 1, stops=[[stn_index[i], a, b, 0 if col in rows[i].get('est', ()) else 1] for i, a, b in calls], note=note,
+        out.append(dict(id=tid, num=num, name=name, svc=svc_of(days), dir=0 if tr['along'] else 1, stops=[[stn_index[i], a, b, 0 if col in rows[i].get('est', ()) else 1] for i, a, b in calls], note=note, **({'motor': 1} if tr['kind'] == 'motor' else {}),   # self-propelled: drawn like an interurban on the railway's own track (Brendan, 6 Nov 2026)
                         **({k: tr[k] for k in ('from', 'to') if tr.get(k)} if spec.get('realends') else {})))
     return out
 
