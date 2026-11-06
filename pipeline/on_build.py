@@ -157,6 +157,7 @@ if __name__ == '__main__':
                        ['AJ', 'Alma and Jonquiere Railway', 'https://en.wikipedia.org/wiki/Alma_and_Jonqui%C3%A8re_Railway', 'America/Vancouver', 'en', ''],
                        ['GRR', 'Grand River Railway (Canadian Pacific)', 'https://en.wikipedia.org/wiki/Grand_River_Railway', 'America/Vancouver', 'en', ''],
                        ['LEN', 'Lake Erie and Northern Railway (Canadian Pacific)', 'https://en.wikipedia.org/wiki/Lake_Erie_and_Northern_Railway', 'America/Vancouver', 'en', ''],
+                       ['MSC', 'Montreal and Southern Counties Railway (Canadian National)', 'https://en.wikipedia.org/wiki/Montreal_and_Southern_Counties_Railway', 'America/Vancouver', 'en', ''],
                        ['LPS', 'London and Port Stanley Railway', 'https://en.wikipedia.org/wiki/London_and_Port_Stanley_Railway', 'America/Vancouver', 'en', ''],
                        ['THB', 'Toronto, Hamilton and Buffalo Railway', 'https://en.wikipedia.org/wiki/Toronto,_Hamilton_and_Buffalo_Railway', 'America/Vancouver', 'en', ''],
                        ['NYC', 'New York Central Railroad', 'https://en.wikipedia.org/wiki/New_York_Central_Railroad', 'America/Vancouver', 'en', ''],

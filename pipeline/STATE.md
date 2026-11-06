@@ -2403,3 +2403,13 @@ Stations of different railways within 250 m (70 pairs; script: same check over v
   landings between (timed by distance, flag calls) estimated. Huntsville dock = CN_HUNTSVILLE (Brendan). Left out: Dwight, Glen Cove (private launch), Raymur
   Pines (no point). Points traces/ontario/brendan/lake_of_bays.kmz; the lanes over Brendan's basemap tiles (level 8, read back from basemap/tiles; lob_legs.json).
 - Built: the Table 124 Ridgeway / Fort Erie Junction fix (staged 4 Nov).
+
+## Version 132 (5 November 2026): Montreal & Southern Counties (CN electric)
+- New rail 'onmsc' (kind 'M', own 'msc', CN colours, drawn as an interurban: INTER_KIND / INTER_OWN), track Brendan's KMZ only (traces/quebec/msc.kmz ->
+  traces/ontario/brendan/msc_track.geojson: main line, Ste. Angele branch, Granby piece; collection pieces skipped). on_msc_t001 (Interurban Division,
+  Montreal McGill & Youville - Marieville - Granby, all trains incl. 820 / 821 East End - Montreal River Road) and on_msc_t001a (432 Montreal - Ste. Angele,
+  453 Ste. Angele - Marieville). OG May 1948 (April 25, 1948); scan dmr-sources og1948_cnq/msc_interurban.png. Granby = CN_GRANBY ("Granby (C.N.Ry.)").
+  No. 431's "a" stops (on signal Sundays only) left out. Suburban Division (streetcars) not entered (Brendan). Script: scratchpad on/msc.py.
+  46.8 / 47.5 mi, 26.1 / 25.9 (Ste. Angele), all on track.
+- Built: the H&LB minor landings (staged 5 Nov). Page: KIND_BADGE / KIND_LABEL for 'L' (H&LB) and 'M' (M&SC).
+- STAGED FOR THE NEXT BUILD: GTFS agency MSC (missing: check_gtfs "no agency MSC").
