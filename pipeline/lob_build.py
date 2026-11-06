@@ -88,6 +88,8 @@ def lane(p, q, res):
         CACHE[ck] = [[round(x, 6), round(y, 6)] for x, y in leg]
         print(f'   lane {p[0]:.4f},{p[1]:.4f} - {q[0]:.4f},{q[1]:.4f}: over {land * 100:.1f}% land; snaps {S.snap_m(p):.0f} / {S.snap_m(q):.0f} m')
     return [tuple(x) for x in CACHE[ck]]
+# principal landings: those the 1948 Official Guide lists (Huntsville, Dorset), and the Portages where the boats meet the Flyer; the rest minor (Brendan, 5 Nov 2026)
+MAJOR = {'Huntsville', 'Dorset', 'North Portage', 'South Portage'}
 def chain(pts):
     route, acc, prev = [], 0.0, None
     for lon, lat in pts:
@@ -103,7 +105,7 @@ def water_line(ports, res):
             leg = lane((ports[k - 1]['lon'], ports[k - 1]['lat']), (p['lon'], p['lat']), res); pts += leg[1:] + [(p['lon'], p['lat'])]
         at.append(len(pts) - 1)
     route = chain(pts)
-    return route, [dict(name=p['name'], chain=route[i][2], lon=route[i][0], lat=route[i][1], mile=round(route[i][2] / MI, 2), lmile=round(route[i][2] / MI, 2), principal=True, kml='',
+    return route, [dict(name=p['name'], chain=route[i][2], lon=route[i][0], lat=route[i][1], mile=round(route[i][2] / MI, 2), lmile=round(route[i][2] / MI, 2), principal=p['name'] in MAJOR, kml='',
                         gid=p['gid'], **({} if p['rail'] else {'xy': [p['lon'], p['lat']]}), note=p['note']) for p, i in zip(ports, at)]
 alg_route, alg_st = water_line(ALG, 20)
 iro_route, iro_st = water_line(IRO, 40)

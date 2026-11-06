@@ -2204,6 +2204,8 @@ Stations of different railways within 250 m (70 pairs; script: same check over v
 - STAGED FOR THE NEXT BUILD (4 Nov 2026): CN Table 124 Ridgeway at Brendan's point (-79.051745, 42.882312) (it had been placed by mileage on the line further
   north, so the trains ran the wrong way to Port Colborne); a short link across the gap by Fort Erie Junction station (Brendan: the Dunnville division
   yard track to the GTR 1873 connector), so the trains take the Buffalo & Lake Huron. Dry run: 116.2 / 114.9 mi, all on track (Fort Erie - Ridgeway 9.5 / 8.9).
+- STAGED FOR THE NEXT BUILD (5 Nov 2026): H&LB landings not listed in the Official Guide shown as minor (lob_build MAJOR: Huntsville, Dorset, and the
+  two Portages as the Flyer's ends; Brendan to say if the Portages should be minor too).
 - WAITING ON BRENDAN: Quebec Railway, Light & Power; the Stratford table (No. 10); the Camp Borden trace; the remaining steamship points and waterways; the rest
   of the Official Guide pages.
 - BUILD: run-through joins (London, Hamilton, North Bay, CN 3 / 4, CP / TH&B at Hamilton, Cataract); numbering of connecting sections (wait for the branch tables);
