@@ -2423,3 +2423,18 @@ Stations of different railways within 250 m (70 pairs; script: same check over v
   apart). New CN links: Brendan's Victoria Bridge trace; the St. Lambert curved connector east of the station (Table 72 and the St. Johns trains no longer turn
   onto the bridge leg and back into St. Lambert).
 - GTFS agency MSC added (the V132 gap).
+
+## Version 134 (5 November 2026): Quebec Railway, Light & Power; CN Table 53 over it; time zones
+- New rail 'onqrl' (kind 'Q', own 'qrl', maroon #8C1D40, interurban style), track Brendan's KMZ only (traces/quebec/qrlp.kmz -> traces/ontario/brendan/
+  qrl_track.geojson: St. Paul Street - Limoilou link, main line to St. Joachim, double track, Montmorency Falls wye; St. Joachim - Cap Tourmente as CN).
+  on_qrl_t001 (39 trains; printed in daylight time, all an hour earlier; running times Brendan's: Quebec - Falls 18, Falls - Ste. Anne 30, - Beaupre 5,
+  - St. Joachim 5, the rest of the printed St. Joachim - Ste. Anne time recovery at Ste. Anne; the 12.30 a.m. car moves to 11.30 p.m. the evening before,
+  days back one); on_qrl_t001m (Montmorency Falls cars every 15 minutes, 6.00 a.m. - 10.45 p.m. from Quebec, to the Elevator station; a slot left out on
+  the days a through train is within 7 min). Every other station a flag stop. Giffard (in the heading only) not a stop. Kent House line closed (Brendan).
+  Script scratchpad on/qrl.py. The CN may use the QRL&P links (trackage rights); no other railway. CN Table 53: Palais - Limoilou - QRL&P - St. Joachim
+  (87.6 / 87.8 mi), shares QRL_STE_ANNE_DE_BEAUPRE and QRL_ST_JOACHIM.
+- Page: time-zone selector (Alaska -2 ... Newfoundland +4.5 h from Pacific, standard time; hidden in Hide boxes mode; remembered per browser): hm() adds
+  ZOFF, so the clock, slider ticks, timetables, boards and lists follow; the day name follows the shifted clock. tzNote(): the trip notes and sources say
+  the zone the timetable was printed in (no "shown in Pacific time ..."). FIX the same evening: ZOFF declared with var (hm runs above its line).
+- NS&T / CN steamers page (condensed tables) saved: dmr-sources og1948_cnq/nst_cn_steamers_condensed.png. Questions out to Brendan (track KMZ, Port
+  Dalhousie cars, Toronto - Port Dalhousie boat, Cobourg - Genesee points, colours).

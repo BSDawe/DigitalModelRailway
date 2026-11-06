@@ -448,9 +448,9 @@ const activeTrips = day => TRIPS.filter(t => runsOn(t.svc, t.carry ? dayBack(day
 
 // ---------------------------------------------------------------- time formatting (timetable style)
 // the time zone shown (Brendan, 5 Nov 2026): every time is kept in Pacific Standard Time and shown in the zone chosen, in standard time (as the 1948 Guide)
-let ZOFF = 0;                                       // seconds added to Pacific time
+var ZOFF = 0;                                       // seconds added to Pacific time (var: hm is used above this line)
 function hm(sec) {
-  sec += ZOFF;
+  sec += ZOFF || 0;
   sec = ((sec % 86400) + 86400) % 86400;          // carried-over trains have times before midnight of the shown day
   let m = Math.floor(sec / 60), h = Math.floor(m / 60) % 24; m = m % 60;
   const pm = h >= 12; let h12 = h % 12; if (h12 === 0) h12 = 12;
