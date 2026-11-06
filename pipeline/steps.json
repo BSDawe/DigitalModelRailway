@@ -368,6 +368,13 @@
    ]
   },
   {
+   "name": "lo_build",
+   "script": "lo_build.py",
+   "needs": [
+    "on_build"
+   ]
+  },
+  {
    "name": "cp_lakes_build",
    "script": "cp_lakes_build.py",
    "needs": [

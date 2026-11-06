@@ -2438,3 +2438,20 @@ Stations of different railways within 250 m (70 pairs; script: same check over v
   the zone the timetable was printed in (no "shown in Pacific time ..."). FIX the same evening: ZOFF declared with var (hm runs above its line).
 - NS&T / CN steamers page (condensed tables) saved: dmr-sources og1948_cnq/nst_cn_steamers_condensed.png. Questions out to Brendan (track KMZ, Port
   Dalhousie cars, Toronto - Port Dalhousie boat, Cobourg - Genesee points, colours).
+
+## Version 135 (5 November 2026): Niagara, St. Catharines & Toronto; CN steamers Toronto - Port Dalhousie; Cobourg - Genesee car ferry
+- New rail 'onnst' (kind 'N', own 'nst', CN colours like the M&SC, interurban style; agency NST). Track: Brendan's NS&T KMZ, stitched by scratchpad
+  nst/track.py into traces/ontario/brendan/nst_track.geojson (St. Catharines Terminal - Lincoln Jct. - the high line - Thorold - Substation Jct.; Niagara
+  Falls line - Bridge St. - Victoria Ave. - Tower Inn terminal; the wye's north leg and the Welland Division main line to Port Colborne; Geneva, St. Paul,
+  James and Lake Streets and the Port Dalhousie Division to Lakeside Park). The NS&T uses its own links only, and nobody else uses them (as the M&SC).
+  NOTE: the Welland Division main line is a Placemark straight under a Folder in the KMZ; an early parse missed it (Brendan caught it).
+- CSVs from scratchpad on/nst.py, printed in daylight time, all an hour earlier: on_nst_t001 Thorold - Port Colborne (36), on_nst_t002 St. Catharines -
+  Niagara Falls (39; Bridge and Victoria = Stop 69, Union Bus Terminal = Stop 70 / Tower Inn; the Niagara Falls, N.Y. leg left out: a bus transfer by
+  1948, Brendan), on_nst_t003 Port Dalhousie cars every 20 minutes (from May 23; first and last cars as printed, 15 min each way estimated; 210).
+  Every other KMZ stop a flag stop. Port Colborne = CN_PORT_COLBORNE (printed "C.N.R. Depot"). Thorold, Merritton, Niagara Falls stay separate from the CN.
+- lo_build.py (new step after on_build): CN steamers Toronto (C.N.R. wharf) - Port Dalhousie (the CN station point), as printed May 21 - June 4; signs
+  from the page's footnotes (Brendan; dmr-sources og1948_cnq/nst_cn_steamers_signs.png): disc Sunday and May 24, ) Monday May 31 (left out), square
+  Friday and May 31, k Saturday, double dagger daily except Saturday. Crossing 2 h 30 (from the Saturday turns); ships per sailing estimated. Out of
+  Toronto by the Eastern Gap (waypoints: the water lacks the Toronto Islands). Ontario Car Ferry Co. (CN / B&O, agency OCF) S.S. Ontario, Cobourg
+  (C.N.R. wharf) - Genesee Docks, summer daily, Eastern time. Water: basemap tiles + water_east.json. Livery cnss.
+- Page: kind N (label, badge NS&T, colour cn, --nst, interurban sets, kinds list, legend).
