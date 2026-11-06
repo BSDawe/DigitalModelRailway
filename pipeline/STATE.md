@@ -2439,7 +2439,7 @@ Stations of different railways within 250 m (70 pairs; script: same check over v
 - NS&T / CN steamers page (condensed tables) saved: dmr-sources og1948_cnq/nst_cn_steamers_condensed.png. Questions out to Brendan (track KMZ, Port
   Dalhousie cars, Toronto - Port Dalhousie boat, Cobourg - Genesee points, colours).
 
-## Version 135 (5 November 2026): Niagara, St. Catharines & Toronto; CN steamers Toronto - Port Dalhousie; Cobourg - Genesee car ferry
+## Version 135 (5 November 2026): Niagara, St. Catharines & Toronto; CN steamers Toronto - Port Dalhousie; Cobourg - Genesee car ferry; Newfoundland Railway
 - New rail 'onnst' (kind 'N', own 'nst', CN colours like the M&SC, interurban style; agency NST). Track: Brendan's NS&T KMZ, stitched by scratchpad
   nst/track.py into traces/ontario/brendan/nst_track.geojson (St. Catharines Terminal - Lincoln Jct. - the high line - Thorold - Substation Jct.; Niagara
   Falls line - Bridge St. - Victoria Ave. - Tower Inn terminal; the wye's north leg and the Welland Division main line to Port Colborne; Geneva, St. Paul,
@@ -2455,3 +2455,15 @@ Stations of different railways within 250 m (70 pairs; script: same check over v
   Toronto by the Eastern Gap (waypoints: the water lacks the Toronto Islands). Ontario Car Ferry Co. (CN / B&O, agency OCF) S.S. Ontario, Cobourg
   (C.N.R. wharf) - Genesee Docks, summer daily, Eastern time. Water: basemap tiles + water_east.json. Livery cnss.
 - Page: kind N (label, badge NS&T, colour cn, --nst, interurban sets, kinds list, legend).
+- (first build attempt failed: the NF track file was written into traces/ontario/brendan/ while on_build was reading it. Do not write traces during a build.)
+- Newfoundland Railway (Brendan, 5 Nov 2026): rail 'onnfr' (kind 'W', own 'nfr', bright red #C8102E, agency NFR, steam style). Track: Wikipedia's Newfoundland
+  Railway map data (CC-BY-4.0), traces/ontario/brendan/nfr_track.geojson (main line, Brigus cut-off and the Harbour Grace line, Carbonear, Placentia, Bonavista
+  (one piece so the trains go round the Trinity Loop, which crosses itself where Wikipedia's two pieces met: Brendan), Lewisporte). Trepassey and Heart's
+  Content branches left out (not in the Guide). Argentia branch ESTIMATED (straight, Argentia Jct. 1.0 mi short of the Placentia end to the CGN Argentia
+  point): ask Brendan for a trace. Stations: CGN points (Brendan's cgn_nl_csv_eng.csv) snapped onto the track (scratchpad nf/places.py); St. John's
+  Brendan's point; Stephenville = Stephenville Crossing; Holyrood, Tickle Harbour, Humbermouth, Curling, Trinity Junction by mileage. Every pair 'force'd
+  (the printed whole miles and the Wikipedia trace differ by a mile here and there).
+- CSVs from scratchpad on/nfr.py, schedule of January 11, 1948 (May 9 change not printed), Newfoundland time (row tz 'N', TZ_SHIFT -16200; page regex
+  now reads "four and a half hours"): t001 main line (1, 15 to Millertown Jct., 2, 16 from Millertown Jct.), t002 Brigus branch mixed 7/8, t003 Argentia -
+  Placentia mixed 5/6 (Placentia Jct. - Argentia Jct. - Placentia, back to Argentia Jct. - Argentia), t004 Bonavista mixed 27, 11, 12, 28, 24, t005 Lewisporte
+  mixed (from the side note). Port-aux-Basques - North Sydney steamer: no times on the page, not built.
