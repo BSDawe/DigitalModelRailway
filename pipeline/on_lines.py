@@ -165,6 +165,7 @@ def _graph(me):
             add(ab_lines._xy(c), fac, 'n', draw)
         for f in _links():                                              # Brendan's traces and connectors (traces/ontario/brendan/)
             ow = f['properties']['own']; c = f['geometry']['coordinates']
+            if (ow == 'msc') != (me == 'msc'): continue                     # the M&SC's own tracks (Victoria Bridge, St. Lambert): not mixed with the steam railways' (Brendan, 5 Nov 2026)
             if box and not any(box[0] <= p[0] <= box[1] and box[2] <= p[1] <= box[3] for p in c): continue
             mine = ow == me or (me == 'cpcn' and ow in ('cp', 'cn')) or (me in ('nyco', 'mc') and ow == 'nyc') or (me in ('thb', 'cpthb') and ow in ('cn', 'cp', 'thb', 'nyc'))
             add(ab_lines._xy(c), f['properties'].get('cost', 1.0) if mine else 2.5, 'x' if f['properties'].get('net') else 't', None if ow == me else ow)   # 'net' ('x'): tied only at its loose ends, and nothing ties onto it along its length (the Windsor ferry lead beside the main line)   # 'cost': a link the trains must take (cheaper than the track beside it)
