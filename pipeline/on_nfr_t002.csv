@@ -1,0 +1,20 @@
+# Newfoundland Railway: Brigus branch, St. John's - Brigus Junction - Brigus - Bay Roberts - Harbor Grace - Carbonear (mixed trains).
+# Official Guide, May 1948: Newfoundland Railway, schedule of January 11, 1948 ("Change of schedules will be effective May 9, figures not available"); Newfoundland time (noon Atlantic is 12.30 p.m. Newfoundland). Track: the Wikipedia map of the Newfoundland Railway (CC-BY-4.0; Brendan); stations at the CGN points (Brendan), on the track.
+# Signs: a Mon. and Thurs.; b Wed. and Sat.; c Thurs. and Sun.; d Tues., Thurs. and Sat.; e Fri. and Mon.; f flag stop; g Mon. only; h Wed. only; i Sun., Tues., Thurs., Fri.; o Tues. and Fri.; q Fri. only; y Wed. and Sat.; z Tues. only; double cross Mon., Wed. and Fri.; # Thurs. only; psi mixed train.
+#train col=M7 num=7 dir=down days="Tue,Thu,Sat" kind=mixed note="Newfoundland Railway mixed No. 7: St. John's 9.00 a.m. to Brigus Junction and the Brigus branch, Carbonear 1.20 p.m. (Tues., Thurs. and Sat.)."
+#train col=M8 num=8 dir=up days="Tue,Thu,Sat" kind=mixed note="Newfoundland Railway mixed No. 8: Carbonear 3.05 p.m. by the Brigus branch and Brigus Junction to St. John's 7.25 p.m. (Tues., Thurs. and Sat.)."
+mile,station,principal,prov,tz,M7,M8
+0,St. John's,1,NL,N,lv 9.00a,ar 7.25p
+9,Irvine,0,NL,N,f9.22a,f7.02p
+13,Topsail,0,NL,N,f9.30a,f6.50p
+19,Kelligrew's,0,NL,N,f9.50a,f6.32p
+25,Duff's,0,NL,N,f10.05a,f6.20p
+30,Holyrood,0,NL,N,10.20a,6.08p
+34,Woodford's,0,NL,N,f10.29a,f5.50p
+36,Avondale,0,NL,N,10.40a,5.40p
+42,Brigus Junction,1,NL,N,ar 10.55a / lv 11.10a,ar 5.10p / lv 5.24p
+53,Brigus,1,NL,N,11.45a,4.41p
+64,Bay Roberts,1,NL,N,12.24p,4.07p
+68,Tilton,0,NL,N,f12.41p,f3.45p
+74,Harbor Grace,1,NL,N,1.05p,3.28p
+80,Carbonear,1,NL,N,ar 1.20p,lv 3.05p

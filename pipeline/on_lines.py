@@ -28,7 +28,7 @@ ab_lines.fwd, ab_lines.inv = _T.transform, _I.transform
 ab_lines._T, ab_lines._I = _T, _I                                      # _xy() uses the transformer itself
 fwd = _T.transform
 ab_lines.TZ_SHIFT['E'] = -10800
-ab_lines.TZ_SHIFT['A'] = -14400                                        # Atlantic time (the Temiscouata)                                        # Eastern time: three hours ahead of Pacific
+ab_lines.TZ_SHIFT['N'] = -16200; ab_lines.TZ_SHIFT['A'] = -14400                                        # Atlantic time (the Temiscouata)                                        # Eastern time: three hours ahead of Pacific
 
 ab_lines.RAILS.update({'oncn': dict(kind='q', label='Canadian National', own='cn', agency='CN', color='2F6B44', pfx='CN'),
                        'oncp': dict(kind='p', label='Canadian Pacific', own='cp', agency='CP', color='7A1E2C', pfx='CP'),
@@ -49,13 +49,14 @@ ab_lines.RAILS.update({'oncn': dict(kind='q', label='Canadian National', own='cn
                        'ongrr': dict(kind='E', label='Grand River Railway (CP electric)', own='grr', agency='GRR', color='7A1E2C', pfx='GRR'),   # CP electric lines: CP colours, drawn as interurbans (Brendan, 29 Oct 2026)
                        'onlen': dict(kind='E', label='Lake Erie & Northern (CP electric)', own='len', agency='LEN', color='7A1E2C', pfx='LEN'),
                        'onqrl': dict(kind='Q', label='Quebec Railway, Light & Power', own='qrl', agency='QRL', color='8C1D40', pfx='QRL'),   # independent electric interurban, maroon (Brendan, 5 Nov 2026); CN trains over it by trackage rights
+                       'onnfr': dict(kind='W', label='Newfoundland Railway', own='nfr', agency='NFR', color='C8102E', pfx='NFR'),   # bright red in the 1940s (Brendan, 5 Nov 2026); 3 ft 6 in gauge
                        'onnst': dict(kind='N', label='Niagara, St. Catharines & Toronto (CN electric)', own='nst', agency='NST', color='2F6B44', pfx='NST'),   # CN subsidiary: CN colours, drawn as an interurban, as the M&SC (Brendan, 5 Nov 2026)
                        'onmsc': dict(kind='M', label='Montreal & Southern Counties (CN electric)', own='msc', agency='MSC', color='2F6B44', pfx='MSC'),   # CN subsidiary: CN colours, drawn as an interurban (Brendan, 5 Nov 2026)
                        'onqlf': dict(kind='v', label='Quebec & Levis Ferry Co.', own='cnfy', agency='QLF', color='34506B', pfx='QLF'),   # its own company, not CN (Brendan, 30 Oct 2026); colours: Claude's pick
                        'ontsl': dict(kind='v', label='Traverse du Saint-Laurent', own='cnfy', agency='TSL', color='5A4A7A', pfx='TSL'),   # Compagnie de la Traverse du Saint-Laurent Ltee, Three Rivers (Brendan, 30 Oct 2026)
                        'ontir': dict(kind='K', label='Thousand Islands Railway', own='tir', agency='TIR', color='7A5A2E', pfx='TIR'),   # Gananoque - Gananoque Jct., separate company in 1948 (Brendan, 31 Oct 2026); colour: Claude's pick
                        'onaj': dict(kind='J', label='Alma & Jonquiere', own='aj', agency='AJ', color='4A6D8C', pfx='AJ')})
-OWN = {'onnst': 'nst', 'onqrl': 'qrl', 'onmsc': 'msc', 'onmc': 'nyc', 'oncn': 'cn', 'oncp': 'cp', 'onr': 'onr', 'acr': 'acr', 'onnyc': 'nyc', 'ondh': 'dh', 'ontem': 'tem', 'oncgt': 'cgt', 'onrs': 'rs', 'onaj': 'aj', 'ontir': 'tir', 'oncpcn': 'cpcn', 'onnyco': 'nyc', 'onthb': 'thb', 'oncpthb': 'cpthb', 'onlps': 'lps', 'ongrr': 'grr', 'onlen': 'len', 'onqlf': 'cnfy', 'ontsl': 'cnfy'}
+OWN = {'onnfr': 'nfr', 'onnst': 'nst', 'onqrl': 'qrl', 'onmsc': 'msc', 'onmc': 'nyc', 'oncn': 'cn', 'oncp': 'cp', 'onr': 'onr', 'acr': 'acr', 'onnyc': 'nyc', 'ondh': 'dh', 'ontem': 'tem', 'oncgt': 'cgt', 'onrs': 'rs', 'onaj': 'aj', 'ontir': 'tir', 'oncpcn': 'cpcn', 'onnyco': 'nyc', 'onthb': 'thb', 'oncpthb': 'cpthb', 'onlps': 'lps', 'ongrr': 'grr', 'onlen': 'len', 'onqlf': 'cnfy', 'ontsl': 'cnfy'}
 # the New York Central and the Delaware & Hudson (CP Table 18) run over the CP from Windsor Station; the NYC leaves it at Adirondack Junction for its
 # own St. Lawrence & Adirondack line, the D&H follows the CP to the end of its track at the border (Brendan, 24 Oct 2026). Both stop at the border for now.
 
@@ -114,7 +115,7 @@ def _links():
     for fn in sorted(__import__('glob').glob(os.path.join(HERE, 'traces', 'ontario', 'brendan', '*.geojson'))): out += json.load(open(fn))['features']
     return out
 BOXES = {'onr': (-82.6, -78.4, 43.5, 51.5), 'acr': (-85.2, -82.8, 46.3, 49.9), 'nyc': (-74.4, -73.4, 44.9, 45.6), 'dh': (-74.0, -73.2, 44.95, 45.6),
-         'tem': (-69.7, -68.3, 47.3, 47.95), 'nyco': (-75.8, -74.6, 44.9, 45.5), 'mc': (-83.25, -78.85, 42.0, 43.2), 'msc': (-73.60, -72.65, 45.35, 45.56), 'nst': (-79.32, -79.03, 42.86, 43.23), 'qrl': (-71.25, -70.74, 46.80, 47.10), 'cgt': (-68.4, -67.4, 48.5, 48.95), 'rs': (-71.4, -70.8, 48.25, 48.5), 'tir': (-76.25, -76.10, 44.30, 44.40), 'aj': (-71.9, -71.5, 48.4, 48.8), 'thb': (-80.5, -78.85, 42.85, 43.75), 'cpthb': (-80.5, -78.85, 42.85, 43.75), 'lps': (-81.35, -81.05, 42.6, 43.05), 'grr': (-80.56, -80.28, 43.33, 43.48), 'len': (-80.42, -80.18, 42.76, 43.38), 'cnfy': (-72.56, -71.15, 46.32, 46.83)}   # the small railways' graphs: their own part of the map only
+         'tem': (-69.7, -68.3, 47.3, 47.95), 'nyco': (-75.8, -74.6, 44.9, 45.5), 'mc': (-83.25, -78.85, 42.0, 43.2), 'msc': (-73.60, -72.65, 45.35, 45.56), 'nst': (-79.32, -79.03, 42.86, 43.23), 'nfr': (-59.6, -52.4, 46.4, 49.6), 'qrl': (-71.25, -70.74, 46.80, 47.10), 'cgt': (-68.4, -67.4, 48.5, 48.95), 'rs': (-71.4, -70.8, 48.25, 48.5), 'tir': (-76.25, -76.10, 44.30, 44.40), 'aj': (-71.9, -71.5, 48.4, 48.8), 'thb': (-80.5, -78.85, 42.85, 43.75), 'cpthb': (-80.5, -78.85, 42.85, 43.75), 'lps': (-81.35, -81.05, 42.6, 43.05), 'grr': (-80.56, -80.28, 43.33, 43.48), 'len': (-80.42, -80.18, 42.76, 43.38), 'cnfy': (-72.56, -71.15, 46.32, 46.83)}   # the small railways' graphs: their own part of the map only
 def _mk():
     """ab_lines.make_graph with one more kind of line, 'x' (31 Oct 2026): like the network ('n') it is tied only at its loose ends, and the points of
     traces are not tied onto it (the Windsor ferry lead runs 35 m from the main line; the trains must take it from its junction, not jump to its end)"""
@@ -143,7 +144,7 @@ def _graph(me):
             if len(c) > 3 and covered(c): continue
             if box and not any(box[0] <= p[0] <= box[1] and box[2] <= p[1] <= box[3] for p in c[::max(1, len(c) // (6 if me in ('onr', 'acr') else 200))]) \
                and not any(box[0] <= p[0] <= box[1] and box[2] <= p[1] <= box[3] for p in (c[0], c[-1])): continue
-            if me in ('msc', 'qrl', 'nst'): continue                                          # Montreal & Southern Counties: Brendan's trace only (links), over the Victoria Bridge to McGill and Youville
+            if me in ('msc', 'qrl', 'nst', 'nfr'): continue                                          # Montreal & Southern Counties: Brendan's trace only (links), over the Victoria Bridge to McGill and Youville
             ow = owner(o['path']); side = any(re.search(r'siding|yard|spur', x, re.I) for x in o['path'])
             if me == 'mc':                                                    # Michigan Central (Canada Southern): its own track only
                 if ow != 'nyc' or side: continue
@@ -167,7 +168,7 @@ def _graph(me):
             add(ab_lines._xy(c), fac, 'n', draw)
         for f in _links():                                              # Brendan's traces and connectors (traces/ontario/brendan/)
             ow = f['properties']['own']; c = f['geometry']['coordinates']
-            if (ow in ('msc', 'nst') or me in ('msc', 'nst')) and ow != me: continue      # the M&SC and the NS&T: their own tracks only, not mixed with the steam railways'
+            if (ow in ('msc', 'nst', 'nfr') or me in ('msc', 'nst', 'nfr')) and ow != me: continue      # the M&SC and the NS&T: their own tracks only, not mixed with the steam railways'
             if ow == 'qrl' and me not in ('qrl', 'cn'): continue                # the QRL&P: its own cars, and the CN by trackage rights (Brendan, 5 Nov 2026)
             if me == 'qrl' and ow != 'qrl': continue                     # the M&SC's own tracks (Victoria Bridge, St. Lambert): not mixed with the steam railways' (Brendan, 5 Nov 2026)
             if box and not any(box[0] <= p[0] <= box[1] and box[2] <= p[1] <= box[3] for p in c): continue
