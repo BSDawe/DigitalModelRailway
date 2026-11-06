@@ -1,0 +1,43 @@
+# Montreal & Southern Counties Railway (electric; Canadian National): Interurban Division, Montreal (McGill and Youville Sts., Customs House) - Marieville - Granby (C.N.Ry.).
+# Official Guide, May 1948 (schedule April 25, 1948), Eastern Standard Time (Brendan, 5 Nov 2026). Signs: * daily, dagger daily except Sunday, section Sunday only, k Saturday only;
+# f stops on signal; a stops on signal Sunday only (No. 431, daily: those stops left out). Suburban Division (Montreal - St. Lambert - Montreal South, Greenfield Park, Mackayville):
+# streetcars, not entered (Brendan). Points: Brendan's KMZ (traces/quebec/msc.kmz). The Ste. Angele trains (432, 453): on_msc_t001a.
+#train col=No422 num=422 dir=down days=daily kind=passenger note="Montreal & Southern Counties (electric) No. 422: Montreal to Granby."
+#train col=No424 num=424 dir=down days=daily kind=passenger note="Montreal & Southern Counties (electric) No. 424: Montreal to Granby."
+#train col=No426 num=426 dir=down days=Sat kind=passenger note="Montreal & Southern Counties (electric) No. 426: Montreal to Marieville."
+#train col=No428 num=428 dir=down days=daily kind=passenger note="Montreal & Southern Counties (electric) No. 428: Montreal to Marieville."
+#train col=No434 num=434 dir=down days="ex Sun" kind=passenger note="Montreal & Southern Counties (electric) No. 434: Montreal to Granby."
+#train col=No436 num=436 dir=down days="ex Sun" kind=passenger note="Montreal & Southern Counties (electric) No. 436: Montreal to Marieville."
+#train col=No438 num=438 dir=down days="ex Sun" kind=passenger note="Montreal & Southern Counties (electric) No. 438: Montreal to Marieville."
+#train col=No440 num=440 dir=down days=Sun kind=passenger note="Montreal & Southern Counties (electric) No. 440: Montreal to Granby."
+#train col=No442 num=442 dir=down days="ex Sun" kind=passenger note="Montreal & Southern Counties (electric) No. 442: Montreal to Marieville."
+#train col=No444 num=444 dir=down days=daily kind=passenger note="Montreal & Southern Counties (electric) No. 444: Montreal to Granby."
+#train col=No820 num=820 dir=down days="ex Sun" kind=passenger note="Montreal & Southern Counties (electric) No. 820: East End to Montreal River Road."
+#train col=No821 num=821 dir=up days="ex Sun" kind=passenger note="Montreal & Southern Counties (electric) No. 821: Montreal River Road to Montreal."
+#train col=No423 num=423 dir=up days="ex Sun" kind=passenger note="Montreal & Southern Counties (electric) No. 423: Marieville to Montreal."
+#train col=No427 num=427 dir=up days="ex Sun" kind=passenger note="Montreal & Southern Counties (electric) No. 427: Marieville to Montreal."
+#train col=No429 num=429 dir=up days="ex Sun" kind=passenger note="Montreal & Southern Counties (electric) No. 429: Marieville to Montreal."
+#train col=No431 num=431 dir=up days=daily kind=passenger note="Montreal & Southern Counties (electric) No. 431: Granby to Montreal. Croydon, East Greenfield, Highland Gardens and Montreal River Road: on signal Sundays only (not shown)."
+#train col=No433 num=433 dir=up days=daily kind=passenger note="Montreal & Southern Counties (electric) No. 433: Granby to Montreal."
+#train col=No449 num=449 dir=up days=Sat kind=passenger note="Montreal & Southern Counties (electric) No. 449: Marieville to Montreal."
+#train col=No435 num=435 dir=up days=daily kind=passenger note="Montreal & Southern Counties (electric) No. 435: Granby to Montreal."
+#train col=No439 num=439 dir=up days="ex Sun" kind=passenger note="Montreal & Southern Counties (electric) No. 439: Granby to Montreal."
+#train col=No441 num=441 dir=up days=Sun kind=passenger note="Montreal & Southern Counties (electric) No. 441: Marieville to Montreal."
+#train col=No443 num=443 dir=up days=Sun kind=passenger note="Montreal & Southern Counties (electric) No. 443: Granby to Montreal."
+#train col=No445 num=445 dir=up days="ex Sun" kind=passenger note="Montreal & Southern Counties (electric) No. 445: Marieville to Montreal."
+mile,station,principal,prov,tz,No422,No424,No426,No428,No434,No436,No438,No440,No442,No444,No820,No821,No423,No427,No429,No431,No433,No449,No435,No439,No441,No443,No445
+0.0,Montreal,1,QC,E,lv 6.57a,lv 9.20a,lv 11.40a,lv 12.40p,lv 4.17p,lv 4.20p,lv 5.20p,lv 6.20p,lv 7.00p,lv 10.40p,,ar 5.15a,ar 6.15a,ar 7.15a,ar 7.55a,ar 8.15a,ar 11.35a,ar 2.35p,ar 3.35p,ar 6.35p,ar 6.35p,ar 9.15p,ar 9.35p
+2.79,East End,1,QC,E,7.18a,9.35a,11.55a,12.55p,4.30p,4.40p,5.35p,6.35p,7.15p,10.55p,lv 3.50a,4.59a,5.55a,6.55a,7.37a,8.00a,11.20a,2.15p,3.15p,6.18p,6.15p,8.55p,9.15p
+7.96,Croydon,0,QC,E,f7.33a,f9.50a,f12.10p,f1.10p,,f4.54p,f5.49p,f6.49p,f7.31p,f11.10p,f4.05a,f4.41a,f5.39a,f6.39a,f7.21a,,f11.06a,f1.57p,f3.01p,f6.04p,f5.58p,f8.42p,f8.59p
+9.49,East Greenfield,0,QC,E,f7.38a,f9.55a,f12.15p,f1.15p,,f4.59p,f5.54p,f6.54p,f7.36p,f11.13p,f4.09a,f4.37a,f5.34a,f6.34a,f7.17a,,f11.02a,f1.53p,f2.56p,f6.00p,f5.54p,f8.38p,f8.55p
+11.02,Brookline,0,QC,E,f7.41a,f9.58a,f12.19p,f1.19p,,f5.03p,f5.58p,f6.58p,f7.40p,f11.17p,f4.12a,f4.33a,f5.30a,f6.30a,f7.13a,f7.41a,f10.58a,f1.50p,f2.53p,f5.58p,f5.50p,f8.34p,f8.51p
+12.28,Highland Gardens,0,QC,E,f7.43a,f10.01a,f12.22p,f1.22p,,f5.06p,f6.00p,f7.00p,f7.42p,f11.19p,f4.15a,f4.30a,f5.27a,f6.27a,f7.10a,,f10.56a,f1.48p,f2.50p,f5.51p,f5.47p,f8.31p,f8.49p
+15.02,Montreal River Road,0,QC,E,f7.48a,f10.06a,f12.28p,f1.27p,,f5.13p,f6.05p,f7.06p,f7.48p,f11.24p,ar 4.20a,lv 4.25a,f5.21a,f6.21a,f7.04a,,f10.51a,f1.43p,f2.45p,f5.44p,f5.42p,f8.26p,f8.44p
+15.86,Chambly Basin,1,QC,E,7.51a,10.10a,12.32p,1.30p,4.59p,5.17p,6.09p,7.09p,7.51p,11.27p,,,5.18a,6.18a,7.01a,7.31a,10.48a,1.40p,2.42p,5.40p,5.38p,8.23p,8.41p
+17.23,Chambly Canton,1,QC,E,7.55a,10.15a,12.37p,1.35p,5.03p,5.22p,6.14p,7.13p,7.56p,11.32p,,,5.13a,6.13a,6.57a,7.27a,10.43a,1.35p,2.38p,5.35p,5.33p,8.18p,8.37p
+18.08,Richelieu,1,QC,E,7.59a,10.19a,12.41p,1.40p,5.07p,5.28p,6.19p,7.17p,8.00p,11.36p,,,5.10a,6.10a,6.54a,7.24a,10.39a,1.30p,2.34p,5.28p,5.29p,8.14p,8.34p
+22.44,Marieville,1,QC,E,8.08a,10.30a,ar 12.50p,ar 1.50p,5.17p,ar 5.39p,ar 6.30p,7.27p,ar 8.10p,11.45p,,,lv 5.00a,lv 6.00a,lv 6.45a,7.15a,10.30a,lv 1.20p,2.25p,5.17p,lv 5.20p,8.05p,lv 8.25p
+27.5,Rougemont,1,QC,E,8.17a,10.43a,,,5.28p,,,7.37p,,11.54p,,,,,,7.05a,10.20a,,2.14p,5.07p,,7.55p,
+31.17,St. Cesaire,1,QC,E,8.23a,10.51a,,,5.35p,,,7.45p,,12.02a,,,,,,6.55a,10.12a,,2.05p,4.58p,,7.45p,
+38.0,Abbotsford,1,QC,E,8.38a,11.06a,,,5.52p,,,8.01p,,12.17a,,,,,,6.40a,9.58a,,1.50p,4.43p,,7.26p,
+47.46,Granby,1,QC,E,ar 9.02a,ar 11.30a,,,ar 6.17p,,,ar 8.28p,,ar 12.40a,,,,,,lv 6.15a,lv 9.35a,,lv 1.25p,lv 4.20p,,lv 7.00p,

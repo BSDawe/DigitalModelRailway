@@ -1,0 +1,18 @@
+# Montreal & Southern Counties Railway (electric; Canadian National): Interurban Division, Montreal (McGill and Youville Sts., Customs House) - Marieville - Granby (C.N.Ry.).
+# Official Guide, May 1948 (schedule April 25, 1948), Eastern Standard Time (Brendan, 5 Nov 2026). Signs: * daily, dagger daily except Sunday, section Sunday only, k Saturday only;
+# The Ste. Angele branch trains (Table: Ste. Angele 25.93 mi from Montreal by Marieville).
+#train col=No432 num=432 dir=down days="ex Sun" kind=passenger note="Montreal & Southern Counties (electric) No. 432: Montreal 3.20 p.m. to Ste. Angele 4.40, by Marieville."
+#train col=No453 num=453 dir=up days="ex Sun" kind=passenger note="Montreal & Southern Counties (electric) No. 453: Ste. Angele 4.45 p.m. to Marieville 4.55."
+mile,station,principal,prov,tz,No432,No453
+0.0,Montreal,1,QC,E,lv 3.20p,
+2.79,East End,1,QC,E,3.35p,
+7.96,Croydon,0,QC,E,f3.49p,
+9.49,East Greenfield,0,QC,E,f3.54p,
+11.02,Brookline,0,QC,E,f3.59p,
+12.28,Highland Gardens,0,QC,E,f4.02p,
+15.02,Montreal River Road,0,QC,E,f4.08p,
+15.86,Chambly Basin,1,QC,E,4.12p,
+17.23,Chambly Canton,1,QC,E,4.17p,
+18.08,Richelieu,1,QC,E,4.21p,
+22.44,Marieville,1,QC,E,4.30p,ar 4.55p
+25.93,Ste. Angele,1,QC,E,ar 4.40p,lv 4.45p
