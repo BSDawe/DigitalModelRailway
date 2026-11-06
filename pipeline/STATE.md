@@ -2413,3 +2413,13 @@ Stations of different railways within 250 m (70 pairs; script: same check over v
   46.8 / 47.5 mi, 26.1 / 25.9 (Ste. Angele), all on track.
 - Built: the H&LB minor landings (staged 5 Nov). Page: KIND_BADGE / KIND_LABEL for 'L' (H&LB) and 'M' (M&SC).
 - STAGED FOR THE NEXT BUILD: GTFS agency MSC (missing: check_gtfs "no agency MSC").
+
+## Version 133 (5 November 2026): Montreal and the M&SC (Brendan)
+- M&SC Montreal terminal at the end of the station stub (McGill and Youville; link added to msc_track.geojson); Granby by Westview, Cowie Street and Miner
+  (the diagonal Main Street line, abandoned 1925, dropped from msc_track.geojson). Every stop on file east of Mackayville added as a minor flag stop, times by
+  mileage (24; the pre-1925 Gare Granby station left out; Albani 14.0 and Bennett's 17.65 by position, Mariecourt 10.5 and Miner 46.9 estimated); none for
+  express 434 between East End and Chambly Basin, nor in 431's Sunday-only stretch. 47.6 / 47.5 mi.
+- on_lines _graph: the M&SC links are used by the M&SC only and the M&SC uses only its own (Victoria Bridge - St. Lambert: interurban and main-line tracks
+  apart). New CN links: Brendan's Victoria Bridge trace; the St. Lambert curved connector east of the station (Table 72 and the St. Johns trains no longer turn
+  onto the bridge leg and back into St. Lambert).
+- GTFS agency MSC added (the V132 gap).
