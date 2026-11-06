@@ -2391,3 +2391,13 @@ Stations of different railways within 250 m (70 pairs; script: same check over v
   C:\Users\info\Documents\GitHub\DigitalModelRailway), pushed on branch na-tiles, merged here with the page change in one push. 9 levels (0-8), 120 MB.
   Borders still Natural Earth cut to 38 N (EXTENT): going south of Cape May / Cape Mendocino needs a re-cut from the full files.
 - Not changed: the steamer lanes still use the old water (sea.py / water_extra.pkl); the single-file page's WATER still the old water files.
+
+## Version 131 (5 November 2026): Huntsville and Lake of Bays; Ridgeway
+- New step lob_build.py (needs on_build; lines hla, hlf, hli; GTFS agency HLB; kind 'L' / livery 'hlb', dark teal #1F5F5B, Claude's pick): S.S. Algonquin
+  (Huntsville - Fairy and Peninsula Lakes - North Portage), the Portage Flyer (North Portage - South Portage, the collection's line with its switchback spur:
+  out to the spur end and back, Brendan), S.S. Iroquois (South Portage - Lake of Bays - Bigwin Inn - Dorset); daily except Sunday, two round trips. A MODEL day:
+  printed (1948 Guide, CN Table 126, Brendan) Huntsville dock 8.00a / 3.25p, Dorset 12.45p / 8.00p, Dorset 6.30a, Huntsville 11.40a; the calls and the
+  afternoon sailing from Dorset (1.15p) from the company's 1942 summer timetable (dmr-sources scans/marine/hlb_1942_summer.png); meets at the Portages and the
+  landings between (timed by distance, flag calls) estimated. Huntsville dock = CN_HUNTSVILLE (Brendan). Left out: Dwight, Glen Cove (private launch), Raymur
+  Pines (no point). Points traces/ontario/brendan/lake_of_bays.kmz; the lanes over Brendan's basemap tiles (level 8, read back from basemap/tiles; lob_legs.json).
+- Built: the Table 124 Ridgeway / Fort Erie Junction fix (staged 4 Nov).

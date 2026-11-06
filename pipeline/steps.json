@@ -357,6 +357,17 @@
    ]
   },
   {
+   "name": "lob_build",
+   "script": "lob_build.py",
+   "needs": [
+    "on_build"
+   ],
+   "inputs": [
+    "traces/ontario/brendan/lake_of_bays.kmz",
+    "../basemap/tiles/index.json"
+   ]
+  },
+  {
    "name": "cp_lakes_build",
    "script": "cp_lakes_build.py",
    "needs": [
