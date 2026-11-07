@@ -2208,8 +2208,10 @@ Stations of different railways within 250 m (70 pairs; script: same check over v
   two Portages as the Flyer's ends; Brendan to say if the Portages should be minor too).
 - TO DO (Brendan, 7 Nov 2026): check the Montreal suburban trains against the CN Montreal employee timetable of June 20, 1948:
   https://www.traingeek.ca/files/19480620-ett-montreal-16.pdf
-- DONE (7 Nov 2026): the CN special train for westbound C.S.L. passengers is CN Table 82 No. 77 (Sun, Tue, Thu, Montreal 8.50 a.m. - Prescott 11.40), already
-  built; its note now names the steamer connection.
+- DONE (7 Nov 2026): the CN special train for westbound C.S.L. passengers is CN Table 82 No. 77 (Sun, Tue, Thu, Montreal 8.50 a.m. - Prescott 11.40).
+  Brendan (CN employee timetable, June 20, 1948): 77 leaves the CN main line at Prescott Junction for the CP line into Prescott, by the wharf. Moved to its own
+  file on_cn_t082d.csv (out of on_cn_t082.csv), ending at Prescott (C.P.R. Station) = CP_PRESCOTT (shared stop, SHARED ('oncn', 'prescott c p r')); connector
+  "Prescott Junction" (estimated curve, south-east quadrant, CN NE leg to CP south leg) in ontario_quebec_links.geojson. Dry run 114.9 traced / 115.1 (est.), on track, ends on CP.
 - WAITING ON BRENDAN: Quebec Railway, Light & Power; the Stratford table (No. 10); the Camp Borden trace; the remaining steamship points and waterways; the rest
   of the Official Guide pages.
 - BUILD: run-through joins (London, Hamilton, North Bay, CN 3 / 4, CP / TH&B at Hamilton, Cataract); numbering of connecting sections (wait for the branch tables);

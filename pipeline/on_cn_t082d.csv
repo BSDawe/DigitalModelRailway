@@ -1,0 +1,9 @@
+# Canadian National, Table 82, train 77 only: Montreal (Central Station) - Cornwall - Prescott Junction - Prescott (C.P.R. station, by the wharf). Source: Official Guide, April 25, 1948, CN Table 82 (Brendan; private scans og1948_cnq/). EASTERN TIME.
+# Brendan, 7 Nov 2026, from the CN employee timetable (June 20, 1948): 77 leaves the CN main line at Prescott Junction for the Canadian Pacific line to Prescott, by the wharf
+# (printed "arrives Prescott Wharfs"): the special train for westbound Canada Steamship Lines passengers, who join the lake steamer at Prescott Dock (noon).
+# Connector at Prescott Junction: traces/ontario/brendan/ontario_quebec_links.geojson (estimated curve, south-east quadrant). Mile 115.1 to the CP station estimated.
+#train col=No77 num=77 dir=down days="Sun,Tue,Thu" kind=passenger note="Sunday, Tuesday and Thursday, May 30 to Sept. 19: Montreal 8.50 a.m. to Prescott 11.40 a.m., arriving by the wharf over the Canadian Pacific from Prescott Junction. The special train for Canada Steamship Lines passengers going west: they join the lake steamer at Prescott Dock (noon) for the 1000 Islands, Kingston, Rochester and Toronto."
+mile,station,principal,prov,tz,No77
+0.0,Montreal (Central Station),1,QC,E,lv 8.50a
+69.2,Cornwall,1,ON,E,10.32a
+115.1,Prescott (C.P.R. Station),1,ON,E,ar 11.40a
