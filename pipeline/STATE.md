@@ -2208,8 +2208,8 @@ Stations of different railways within 250 m (70 pairs; script: same check over v
   two Portages as the Flyer's ends; Brendan to say if the Portages should be minor too).
 - TO DO (Brendan, 7 Nov 2026): check the Montreal suburban trains against the CN Montreal employee timetable of June 20, 1948:
   https://www.traingeek.ca/files/19480620-ett-montreal-16.pdf
-- TO DO (7 Nov 2026, with the next full build): the CN special train for westbound C.S.L. passengers, Montreal (Central Station) 8.50 a.m. - Cornwall 10.32 -
-  Prescott Dock 11.40 a.m., Sun, Tue, Thu (Version 139).
+- DONE (7 Nov 2026): the CN special train for westbound C.S.L. passengers is CN Table 82 No. 77 (Sun, Tue, Thu, Montreal 8.50 a.m. - Prescott 11.40), already
+  built; its note now names the steamer connection.
 - WAITING ON BRENDAN: Quebec Railway, Light & Power; the Stratford table (No. 10); the Camp Borden trace; the remaining steamship points and waterways; the rest
   of the Official Guide pages.
 - BUILD: run-through joins (London, Hamilton, North Bay, CN 3 / 4, CP / TH&B at Hamilton, Cataract); numbering of connecting sections (wait for the branch tables);
