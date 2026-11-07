@@ -24,6 +24,8 @@ vd = json.load(open(os.path.join(HERE, 'viz_data.json')))
 BOX = (-79.50, -77.45, 43.10, 44.05)
 PAB_BOX = (-80.60, -80.30, 45.48, 45.64)        # Pointe au Baril, Georgian Bay
 MUSK_BOX = (-79.76, -79.33, 44.88, 45.29)       # the Muskoka lakes
+CSL_BOX = (-79.50, -73.40, 43.10, 45.62)        # Canada Steamship Lines: Lake Ontario and the St. Lawrence to Montreal
+SAG_BOX = (-73.60, -69.55, 45.45, 48.45)        # Canada Steamship Lines: Montreal - Quebec - the Saguenay
 
 # ---------------- water: the basemap tiles (page projection) back to lon/lat, and water_east.json
 _idx = json.load(open(os.path.join(ROOT, 'basemap', 'tiles', 'index.json'))); _PJ = _idx['proj']
@@ -37,7 +39,7 @@ def page_ll(x, y):
     X, Y = x + _ox, y + _oy; rho = math.copysign(math.hypot(X, Y), _n); th = math.atan2(X, Y)
     return (th / _n + _l0) / _r, (2 * math.atan((_R * _F / rho) ** (1 / _n)) - math.pi / 2) / _r
 _z = _idx['zmax']; _s = _idx['side'] / 2 ** _z; _polys = []
-for _B in (BOX, PAB_BOX, MUSK_BOX):
+for _B in (BOX, PAB_BOX, MUSK_BOX, CSL_BOX, SAG_BOX):
   _xs, _ys = zip(*[page_xy(lon, lat) for lon in _B[:2] for lat in _B[2:]])
   for tx in range(int((min(_xs) - _idx['origin'][0]) // _s), int((max(_xs) - _idx['origin'][0]) // _s) + 1):
       for ty in range(int((min(_ys) - _idx['origin'][1]) // _s), int((max(_ys) - _idx['origin'][1]) // _s) + 1):
@@ -57,7 +59,7 @@ for poly in json.load(open(os.path.join(HERE, 'water_east.json'))):
         lon, lat = r[0], r[1]; pts = [(lon / 1e4, lat / 1e4)]
         for i in range(2, len(r), 2): lon += r[i]; lat += r[i + 1]; pts.append((lon / 1e4, lat / 1e4))
         rings.append(pts)
-    if not any(B[0] - 0.5 <= x <= B[1] + 0.5 and B[2] - 0.5 <= y <= B[3] + 0.5 for B in (BOX, PAB_BOX, MUSK_BOX) for x, y in rings[0]): continue
+    if not any(B[0] - 0.5 <= x <= B[1] + 0.5 and B[2] - 0.5 <= y <= B[3] + 0.5 for B in (BOX, PAB_BOX, MUSK_BOX, CSL_BOX, SAG_BOX) for x, y in rings[0]): continue
     g = Polygon([sea.to_xy(*p) for p in rings[0]], [[sea.to_xy(*p) for p in h] for h in rings[1:]]); _polys.append(g if g.is_valid else g.buffer(0))
 # canals the basemap lacks (Brendan, 7 Nov 2026: the Port Carling canal failed to make the water file): the locks between the Indian River ends
 from shapely.geometry import LineString
@@ -67,6 +69,8 @@ sea._U = unary_union(_polys)
 if sea._U.geom_type == 'Polygon': sea._U = MultiPolygon([sea._U])
 
 # ---------------- ports (Brendan's points)
+def dms(t):   # 45°04'13.36"N 79°29'38.27"W -> lon, lat
+    a = [float(x) for x in re.findall(r"[\d.]+", t)]; return -(a[3] + a[4] / 60 + a[5] / 3600), a[0] + a[1] / 60 + a[2] / 3600
 def gid(n): return 'PORT_' + re.sub(r'\W+', '_', n.upper()).strip('_')
 def port(n, lon, lat, note): return dict(name=n, gid=gid(n), lon=lon, lat=lat, note=note)
 TOR = port('Toronto (C.N.R. Wharf)', -79.37373709478712, 43.64070298018153, 'Canadian National wharf, Toronto harbour (Brendan)')
@@ -77,8 +81,6 @@ SKE = port('Skerryvore', -80.38790250561203, 45.54048159737791, 'Skerryvore, Geo
 BEL = port('Bellevue', -80.50219116470214, 45.55749629211946, 'Bellevue, Georgian Bay (Brendan)')
 OJI = port('Ojibway', -80.45691208451146, 45.53595001144631, 'Ojibway (the Ojibway Hotel), Georgian Bay (Brendan)')
 MUSKOKA_NOTE = 'Muskoka Lakes Navigation Co. steamer landing (Brendan)'
-def dms(t):   # 45°04'13.36"N 79°29'38.27"W -> lon, lat
-    a = [float(x) for x in re.findall(r"[\d.]+", t)]; return -(a[3] + a[4] / 60 + a[5] / 3600), a[0] + a[1] / 60 + a[2] / 3600
 def mport(n, t): lon, lat = dms(t); return port(n, lon, lat, MUSKOKA_NOTE)
 MWF = dict(name='Muskoka Wharf', gid='CN_MUSKOKA_WHARF', lon=-79.391368, lat=44.920517, note='Muskoka Wharf, Gravenhurst: the Canadian National wharf station (Brendan)')
 BALA = dict(name='Bala', gid='CP_BALA', lon=-79.613611, lat=45.013662, note='Bala: the Canadian Pacific station (Brendan)')
@@ -87,6 +89,24 @@ WIN = mport('Windermere', '45°09\'48.22"N 79°33\'01.95"W'); WIG = mport('Wigwa
 RMU = mport('Royal Muskoka', '45°11\'23.77"N 79°35\'51.70"W'); MIN = mport('Minett', '45°09\'54.59"N 79°38\'47.16"W')
 ROS = mport('Rosseau', '45°15\'15.01"N 79°38\'24.43"W'); ELG = mport('Elgin House', '45°06\'33.00"N 79°37\'49.42"W')
 NAP = mport('Natural Park', '45°12\'52.78"N 79°41\'22.70"W')
+CSLN = 'Canada Steamship Lines landing (Brendan)'
+TCS = port('Toronto (Canada Steamship Lines)', *dms('43°38\'22.81"N 79°22\'33.44"W'), 'Canada Steamship Lines dock, foot of Yonge Street, Toronto (Brendan)')
+QUE = port('Queenston', *dms('43°09\'56.73"N 79°03\'08.39"W'), 'Queenston dock, Niagara River: the coaches to Niagara Falls (Brendan)')
+NOTL = port('Niagara-on-the-Lake', *dms('43°15\'21.93"N 79°03\'44.43"W'), CSLN)
+ROC = port('Rochester (Municipal Dock)', *dms('43°15\'19.39"N 77°36\'25.42"W'), 'Municipal Dock, Rochester, N.Y. (Brendan)')
+KGN = port('Kingston', *dms('44°13\'39.77"N 76°28\'45.88"W'), CSLN)
+ALX = port('Alexandria Bay', *dms('44°20\'18.89"N 75°55\'10.10"W'), 'Alexandria Bay, N.Y., Thousand Islands (Brendan)')
+BRK = port('Brockville', *dms('44°35\'11.79"N 75°40\'57.14"W'), 'Brockville wharf (Brendan)')
+PRE = port('Prescott Dock', *dms('44°42\'38.80"N 75°30\'34.68"W'), 'Prescott Dock: lake and rapids steamers change here; the Canadian Pacific dock (Brendan)')
+CORN = port('Cornwall', *dms('45°00\'41.29"N 74°44\'19.48"W'), 'Cornwall, on the Cornwall Canal (Brendan)')
+MTV = port('Montreal (Victoria Pier)', *dms('45°30\'33.91"N 73°32\'46.08"W'), 'Victoria Pier, Montreal harbour (Brendan)')
+SOR = port('Sorel', *dms('46°02\'45.11"N 73°07\'08.22"W'), CSLN)
+TRV = dict(name='Three Rivers (Ferry Wharf)', gid='TSL_THREE_RIVERS_FERRY_WHARF', lon=-72.538617, lat=46.340631, note='Three Rivers: the ferry wharf (Brendan)')
+QFW = dict(name='Quebec (Ferry Wharf)', gid='QLF_QUEBEC_FERRY_WHARF', lon=-71.201614, lat=46.811832, note='Quebec: the ferry wharf (Brendan)')
+MUR = port('Murray Bay', *dms('47°37\'24.64"N 70°08\'19.76"W'), CSLN)
+SIM = port('St. Simeon', *dms('47°50\'23.96"N 69°52\'23.00"W'), CSLN)
+TAD = port('Tadoussac', *dms('48°08\'21.41"N 69°43\'36.59"W'), CSLN)
+BAG = port('Bagotville (St. Alphonse)', *dms('48°20\'41.44"N 70°52\'36.48"W'), 'St. Alphonse wharf, Bagotville, on the Saguenay (Brendan)')
 GEN = port('Genesee Docks (Rochester)', -77.61655318811175, 43.22746248913674, 'Genesee Docks, Port of Rochester, N.Y., on the Genesee River (Brendan)')
 
 # ---------------- lanes (cache lo_legs.json)
@@ -248,6 +268,65 @@ M = (mtrips('MLJ', LJN, [('11.10a', None, '1.05p'), ('5.50p', '6.05p', None)], '
      + mtrips('MLJ', LJN[::-1], [('2.00p', '3.10p', '3.40p'), (None, '7.45a', '8.20a')], 'xSun', 1, LJM))
 mkline('mlj', 'Minett – Elgin House – Natural Park (Lake Joseph steamer)', lj_route, lj_st, M, ['to Natural Park', 'to Minett'],
        'Muskoka Lakes Navigation Co.: Canadian Pacific timetable 1948 (Brendan); Eastern Standard time as printed; Lake Joseph boat a reading', 'mln')
+# ---------------- Canada Steamship Lines, Sailing Schedules Season 1948 (Brendan, 7 Nov 2026; dmr-sources scans/marine/csl_1948_*.png). Eastern Standard
+# time as printed, three hours to the Pacific clock. Ports: Brendan's points. The Niagara Falls - Queenston motor coach (Canada Coach Lines) is a bus: not drawn.
+def water_route(seq, res):   # ports (dicts) and waypoints (lon, lat) in order; stations at the ports
+    pts = []; idx = []; prev = None
+    for p in seq:
+        q = (p['lon'], p['lat']) if isinstance(p, dict) else p
+        if prev is None: pts.append(q)
+        else: pts += lane(prev, q, res)[1:] + [q]
+        if isinstance(p, dict): idx.append((p, len(pts) - 1))
+        prev = q
+    route = chain(pts)
+    return route, [dict(name=p['name'], chain=route[i][2], lon=route[i][0], lat=route[i][1], mile=round(route[i][2] / MI, 1), lmile=round(route[i][2] / MI, 1), principal=True, kml='',
+                        gid=p['gid'], xy=[p['lon'], p['lat']], note=p['note']) for p, i in idx]
+GAP = [(-79.3600, 43.6375), (-79.3445, 43.6325), (-79.3380, 43.6260)]   # the Eastern Gap (the water lacks the Toronto Islands)
+SVC.update({'MoFr': 'W_1111100', 'SaSu': 'W_0000011', 'SaMoWe': 'W_1010010', 'SuTuTh': 'W_0101001'})
+DAYS.update({'MoFr': 'Monday to Friday', 'SaSu': 'Saturday and Sunday (and July 1, Aug. 2, Sept. 6)', 'SaMoWe': 'Saturday, Monday and Wednesday', 'SuTuTh': 'Sunday, Tuesday and Thursday'})
+CSLN_ = ' Canada Steamship Lines, season 1948. Printed in Eastern Standard time.'
+def ctrip(pfx, st, d, dy, calls, note):   # calls: (station index, arrive, leave); '+' = next day, '~' = estimated
+    def t(x): return hm(x.lstrip('+~')) - EST + (86400 if x.startswith('+') else 0)
+    stops = [[i, t(a), t(b), 0 if a.startswith('~') else 1] for i, a, b in calls]
+    i0, i1 = calls[0][0], calls[-1][0]
+    return dict(id=f'{pfx}-{"DU"[d]}{calls[0][2].lstrip("+~").replace(".", "")}{dy}', num='C.S.L. steamer', name='C.S.L. steamer', svc=SVC[dy], dir=d, vessel='', stops=stops,
+                note=f"{st[i0]['name']} {ptxt(t(calls[0][2]) + EST)} to {st[i1]['name']} ({DAYS[dy]})." + note + CSLN_)
+# Toronto - Niagara-on-the-Lake - Queenston
+qt_route, qt_st = water_route([TCS] + GAP + [NOTL, QUE], 80)
+QN = ' Queenston - Toronto steamer, with the Canada Coach Lines motor coach to and from Niagara Falls.'
+M = []
+for dy, rows in (('MoFr', [('7.15a', '9.20a', '9.55a'), ('5.00p', '7.00p', '7.35p')]), ('SaSu', [('7.15a', '9.20a', '9.55a'), ('1.00p', '3.15p', '3.50p'), ('8.30p', '10.30p', '11.05p')])):
+    for a, b, c in rows: M.append(ctrip('CSQT', qt_st, 0, dy, [(0, a, a), (1, b, b), (2, c, c)], QN + (' June 12 to Sept. 11.' if a == '8.30p' else '')))
+for dy, rows in (('MoFr', [('10.05a', '10.40a', '12.40p'), ('7.40p', '8.20p', '10.20p')]), ('SaSu', [('10.05a', '10.40a', '12.40p'), ('5.30p', '6.05p', '8.05p'), ('11.15p', None, '+1.50a')])):
+    for a, b, c in rows: M.append(ctrip('CSQT', qt_st, 1, dy, [(2, a, a)] + ([(1, b, b)] if b else []) + [(0, c, c)], QN + (' June 12 to Sept. 11; no call at Niagara-on-the-Lake.' if a == '11.15p' else '')))
+mkline('csqt', 'Toronto – Queenston (Canada Steamship Lines)', qt_route, qt_st, M, ['to Queenston', 'to Toronto'],
+       'Canada Steamship Lines, Sailing Schedules season 1948 (Brendan); Eastern Standard time as printed', 'csl')
+# the lake steamer: Toronto - Rochester - Kingston - Alexandria Bay - Brockville - Prescott Dock
+lk_route, lk_st = water_route([TCS] + GAP + [ROC, KGN, ALX, BRK, PRE], 150)
+LN = ' Toronto - Rochester - 1000 Islands - Prescott - Montreal: the lake steamer; eastbound passengers change at Prescott Dock to the rapids steamer, westbound passengers come up from Montreal by Canadian National special train (Montreal 8.50 a.m., Prescott Dock 11.40 a.m.).'
+M = [ctrip('CSLK', lk_st, 0, 'SaMoWe', [(0, '1.30p', '1.30p'), (1, '8.00p', '8.45p'), (2, '+2.40a', '+3.10a'), (3, '+5.20a', '+5.20a'), (5, '+7.30a', '+7.30a')],
+           LN + ' May 29, then June 2 to Sept. 18. Does not stop at Brockville eastbound.'),
+     ctrip('CSLK', lk_st, 1, 'SuTuTh', [(5, '12.00p', '12.00p'), (4, '1.00p', '1.00p'), (3, '2.35p', '2.35p'), (2, '4.50p', '5.00p'), (1, '11.30p', '11.50p'), (0, '+6.45a', '+6.45a')],
+           LN + ' May 31 to Sept. 20; arrives Toronto Monday, Wednesday and Friday.')]
+mkline('cslk', 'Toronto – Rochester – 1000 Islands – Prescott (Canada Steamship Lines)', lk_route, lk_st, M, ['to Prescott', 'to Toronto'],
+       'Canada Steamship Lines, Sailing Schedules season 1948 (Brendan); Eastern Standard time as printed', 'csl')
+# the rapids steamer, downstream only: Prescott Dock - Cornwall - Montreal (Victoria Pier)
+SOULANGES = [(-74.210, 45.245), (-74.185, 45.275), (-74.155, 45.298), (-74.090, 45.302), (-74.030, 45.310), (-73.975, 45.322), (-73.930, 45.345)]   # the old river past Coteau, the Cedars and the Cascades (not the Beauharnois power canal)
+rp_route, rp_st = water_route([PRE, CORN] + SOULANGES + [MTV], 60)
+RN = (' The rapids steamer, downstream only: shoots the Galops, Rapide du Plat and Long Sault rapids (nine miles) and the Lachine Rapids (a drop of 56 feet);'
+      ' westbound passengers go back by Canadian National special train. May 30, then June 3 to Sept. 19.')
+M = [ctrip('CSRP', rp_st, 0, 'SuTuTh', [(0, '7.45a', '7.45a'), (1, '11.15a', '11.15a'), (2, '6.30p', '6.30p')], RN)]
+mkline('csrp', 'Prescott – Montreal: the rapids (Canada Steamship Lines)', rp_route, rp_st, M, ['to Montreal', 'to Prescott'],
+       'Canada Steamship Lines, Sailing Schedules season 1948 (Brendan); Eastern Standard time as printed', 'csl')
+# Montreal - Quebec - Murray Bay - Tadoussac - the Saguenay (Brendan, 7 Nov 2026), daily both ways, two nights' sailing each way (two ships each way)
+sg_route, sg_st = water_route([MTV, SOR, TRV, QFW, MUR, SIM, TAD, BAG], 120)
+SN = ' Montreal - Quebec - Murray Bay - Tadoussac - Saguenay: daily from late May to late September.'
+M = [ctrip('CSSG', sg_st, 0, 'daily', [(0, '6.45p', '6.45p'), (1, '9.45p', '9.45p'), (2, '+12.15a', '+12.15a'), (3, '+5.30a', '+7.30a'), (4, '+12.00p', '+1.00p'), (5, '+2.30p', '+2.30p'),
+                                       (6, '+4.30p', '+5.30p'), (7, '+9.15p', '+9.15p')], SN),
+     ctrip('CSSG', sg_st, 1, 'daily', [(7, '6.00a', '6.00a'), (6, '9.35a', '9.50a'), (5, '11.50a', '11.50a'), (4, '1.10p', '1.25p'), (3, '6.00p', '6.30p'), (2, '11.30p', '11.30p'),
+                                       (1, '+2.15a', '+2.15a'), (0, '+7.00a', '+7.00a')], SN)]
+mkline('cssg', 'Montreal – Quebec – the Saguenay (Canada Steamship Lines)', sg_route, sg_st, M, ['to the Saguenay', 'to Montreal'],
+       'Canada Steamship Lines, Sailing Schedules season 1948 (Brendan); Eastern Standard time as printed', 'csl')
 keys = {L['key'] for L in LINES}
 vd['lines'] = [x for x in vd['lines'] if x['key'] not in keys] + LINES
 open(os.path.join(HERE, 'viz_data.json'), 'w').write(json.dumps(vd, separators=(',', ':')))
@@ -259,6 +338,7 @@ def app(name, rows_):
 def have(name, col=0): return set(r[col] for r in csv.reader(open(os.path.join(GT, name))))
 cal = have('calendar.txt'); app('calendar.txt', [[w, *w[2:], '19490616', '19491231'] for w in sorted({t['svc'] for L in LINES for t in L['trips']}) if w not in cal])
 if 'PABIT' not in have('agency.txt'): app('agency.txt', [['PABIT', 'Pointe au Baril Island Transport (Fred G. Barned)', 'https://en.wikipedia.org/wiki/Pointe_au_Baril', 'America/Vancouver', 'en', '']])
+if 'CSL' not in have('agency.txt'): app('agency.txt', [['CSL', 'Canada Steamship Lines', 'https://en.wikipedia.org/wiki/Canada_Steamship_Lines', 'America/Vancouver', 'en', '']])
 if 'MLN' not in have('agency.txt'): app('agency.txt', [['MLN', 'Muskoka Lakes Navigation and Hotel Co.', 'https://en.wikipedia.org/wiki/Muskoka_Lakes_Navigation_Company', 'America/Vancouver', 'en', '']])
 if 'OCF' not in have('agency.txt'): app('agency.txt', [['OCF', 'Ontario Car Ferry Company (Canadian National and Baltimore & Ohio)', 'https://en.wikipedia.org/wiki/SS_Ontario_No._1', 'America/Vancouver', 'en', '']])
 gseen = have('stops.txt')
@@ -266,9 +346,10 @@ _PDESC = 'Island boat, June 1 - Sept. 6, 1948. Times on the Pacific clock, three
 _MDESC = 'Muskoka Lakes Navigation Co. steamer, summer 1948. Times on the Pacific clock, three hours earlier than the Eastern Standard time printed.'
 for L, ag, desc in ((LINES[0], 'CN', 'Canadian National steamers, May 21 - June 4, 1948. Times on the Pacific clock (printed in Eastern Daylight Saving time).'),
                     (LINES[1], 'OCF', 'S.S. Ontario, summer service. Times on the Pacific clock, three hours earlier than the Eastern time printed.'),
-                    (LINES[2], 'PABIT', _PDESC), (LINES[3], 'PABIT', _PDESC), (LINES[4], 'MLN', _MDESC), (LINES[5], 'MLN', _MDESC), (LINES[6], 'MLN', _MDESC)):
+                    (LINES[2], 'PABIT', _PDESC), (LINES[3], 'PABIT', _PDESC), (LINES[4], 'MLN', _MDESC), (LINES[5], 'MLN', _MDESC), (LINES[6], 'MLN', _MDESC),
+                    *((L_, 'CSL', 'Canada Steamship Lines, season 1948. Times on the Pacific clock, three hours earlier than the Eastern Standard time printed.') for L_ in LINES[7:11])):
     rid = L['key'].upper(); st = L['stations']
-    app('routes.txt', [[rid, ag, L['label'], ' – '.join(s['name'] for s in st), 4, {'PABIT': '8B4A2B', 'MLN': '1F4E79'}.get(ag, '2F6B44'), 'FFFFFF', desc]])
+    app('routes.txt', [[rid, ag, L['label'], ' – '.join(s['name'] for s in st), 4, {'PABIT': '8B4A2B', 'MLN': '1F4E79', 'CSL': 'D93A1C'}.get(ag, '2F6B44'), 'FFFFFF', desc]])
     new = [[s['gid'], s['name'] + ' (steamer landing)', f"{s['lat']:.6f}", f"{s['lon']:.6f}", s['note']] for s in st if s['gid'] not in gseen]
     gseen |= {r[0] for r in new}; app('stops.txt', new)
     for t in L['trips']:
