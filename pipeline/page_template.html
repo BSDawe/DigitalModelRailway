@@ -15,6 +15,7 @@
   --context: #c9cad6;        /* other BCER lines, faint */
   --siding: #9ea3c4;
   --bcer: #d7261e;           /* B.C. Electric interurban cars: bright red */
+  --bcer-cream: #fff0c2;     /* B.C. Electric cars: red with a cream band, so they stand out on the red track (Brendan, 6 Nov 2026) */
   --cp: #7a1e2c;             /* Canadian Pacific trains: railway burgundy (reserved) */
   --gn: #d98a1c;             /* Great Northern: orange */
   --cn: #2f6b44;             /* Canadian National: dark green */
@@ -46,13 +47,13 @@
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
     --paper: #11131d; --panel: #191c29; --ink: #9fb0f2; --ink-soft: #7d88bd; --text: #e7e8f0; --muted: #9a9db0;
-    --rule: #2c3044; --bcer: #ff5a4a; --cp: #d0707e; --gn: #f2a95a; --cn: #7fcf93; --pge: #cfe8a8; --si: #dd5443; --si-gold: #f2c14e; --cpss-funnel: #e3bd66; --bb: #9db4dd; --bb-funnel: #ee6a5c; --cnss-funnel: #ee6a5c; --uss: #c9cbd6; --uss-funnel: #ee6a5c; --wpy: #a5cc6e; --wpy-gold: #f2d457; --water: #18222f; --loco: #e7e8f0; --tie: #9aa0bd; --freight: #b08a64; --context: #262a3c; --siding: #4d5578; --east: #f06a73; --west: #4cc9a6; --special: #e9a64a;
+    --rule: #2c3044; --bcer: #ff5a4a; --bcer-cream: #fff0c2; --cp: #d0707e; --gn: #f2a95a; --cn: #7fcf93; --pge: #cfe8a8; --si: #dd5443; --si-gold: #f2c14e; --cpss-funnel: #e3bd66; --bb: #9db4dd; --bb-funnel: #ee6a5c; --cnss-funnel: #ee6a5c; --uss: #c9cbd6; --uss-funnel: #ee6a5c; --wpy: #a5cc6e; --wpy-gold: #f2d457; --water: #18222f; --loco: #e7e8f0; --tie: #9aa0bd; --freight: #b08a64; --context: #262a3c; --siding: #4d5578; --east: #f06a73; --west: #4cc9a6; --special: #e9a64a;
     --hold: #e9a64a; --local: #c3a6ef; --lake: #6cc6e6; --lulu: #b5d36a; --nwm: #a9b8d8; --shadow: 0 1px 2px rgba(0,0,0,.4), 0 8px 24px rgba(0,0,0,.35); color-scheme: dark;
   }
 }
 :root[data-theme="dark"] {
   --paper: #11131d; --panel: #191c29; --ink: #9fb0f2; --ink-soft: #7d88bd; --text: #e7e8f0; --muted: #9a9db0;
-  --rule: #2c3044; --bcer: #ff5a4a; --cp: #d0707e; --gn: #f2a95a; --cn: #7fcf93; --pge: #cfe8a8; --si: #dd5443; --si-gold: #f2c14e; --cpss-funnel: #e3bd66; --bb: #9db4dd; --bb-funnel: #ee6a5c; --cnss-funnel: #ee6a5c; --uss: #c9cbd6; --uss-funnel: #ee6a5c; --wpy: #a5cc6e; --wpy-gold: #f2d457; --water: #18222f; --loco: #e7e8f0; --tie: #9aa0bd; --freight: #b08a64; --context: #262a3c; --siding: #4d5578; --east: #f06a73; --west: #4cc9a6; --special: #e9a64a;
+  --rule: #2c3044; --bcer: #ff5a4a; --bcer-cream: #fff0c2; --cp: #d0707e; --gn: #f2a95a; --cn: #7fcf93; --pge: #cfe8a8; --si: #dd5443; --si-gold: #f2c14e; --cpss-funnel: #e3bd66; --bb: #9db4dd; --bb-funnel: #ee6a5c; --cnss-funnel: #ee6a5c; --uss: #c9cbd6; --uss-funnel: #ee6a5c; --wpy: #a5cc6e; --wpy-gold: #f2d457; --water: #18222f; --loco: #e7e8f0; --tie: #9aa0bd; --freight: #b08a64; --context: #262a3c; --siding: #4d5578; --east: #f06a73; --west: #4cc9a6; --special: #e9a64a;
   --hold: #e9a64a; --local: #c3a6ef; --lake: #6cc6e6; --lulu: #b5d36a; --nwm: #a9b8d8; --shadow: 0 1px 2px rgba(0,0,0,.4), 0 8px 24px rgba(0,0,0,.35); color-scheme: dark;
 }
 html, body { height: 100%; }
@@ -109,7 +110,7 @@ canvas#map.hover { cursor: pointer; }
 .sw.boat { width: 20px; height: 8px; border-radius: 2px 8px 8px 2px / 2px 4px 4px 2px; background: linear-gradient(90deg, var(--loco) 0 12%, var(--paper) 12% 34%, var(--cpss-funnel) 34% 46%, var(--paper) 46% 62%, var(--loco) 62%); border: 1.5px solid var(--loco); box-sizing: border-box; }
 .sw.car { background: var(--bcer); width: 14px; }
 .sw.consist.cp { --gn: var(--cp); } .sw.consist.cn { --gn: var(--cn); } .sw.consist.pge { --gn: var(--pge); }
-.sw.consist.bcer { --gn: var(--bcer); background: var(--bcer); } .sw.ring.bcer { border-color: var(--bcer); }
+.sw.consist.bcer { --gn: var(--bcer); background: linear-gradient(var(--bcer) 0 38%, var(--bcer-cream) 38% 62%, var(--bcer) 62%); } .sw.ring.bcer { border-color: var(--bcer); }
 .sw.consist { width: 26px; height: 7px; border-radius: 2px; background: linear-gradient(90deg, var(--loco) 0 28%, var(--paper) 28% 32%, var(--gn) 32% 62%, var(--paper) 62% 66%, var(--gn) 66%); }
 .sw.ring { width: 10px; height: 10px; border-radius: 50%; background: var(--paper); border: 2px solid var(--ink); }
 .sw.ring.c { border-color: var(--local); } .sw.ring.b { border-color: var(--lake); } .sw.ring.l { border-color: var(--lulu); } .sw.ring.n { border-color: var(--nwm); }
@@ -475,7 +476,7 @@ const view = { cx: 0, cy: 0, k: 0.01 }; // k = px per metre
 let colors = {}, baseRev = 0;       // baseRev: bumped whenever the cached base picture must be redrawn (theme, fonts)
 function readColors() {
   const cs = getComputedStyle(document.documentElement);
-  for (const n of ['paper', 'ink', 'ink-soft', 'text', 'muted', 'context', 'siding', 'east', 'west', 'special', 'hold', 'panel', 'rule', 'local', 'lake', 'lulu', 'nwm', 'bcer', 'cp', 'gn', 'cn', 'pge', 'nar', 'si', 'si-gold', 'cpss-funnel', 'bb', 'bb-funnel', 'cnss-funnel', 'uss', 'uss-funnel', 'gif', 'gif-funnel', 'nvf', 'nvf-funnel', 'hnc', 'hnc-funnel', 'ass', 'ass-funnel', 'byn', 'byn-funnel', 'bst', 'bst-funnel', 'qlf', 'qlf-funnel', 'tsl', 'tsl-funnel', 'snc', 'snc-funnel', 'csl', 'csl-funnel', 'np', 'sps', 'gwwd', 'onr', 'acr', 'nyc', 'dh', 'tem', 'cgt', 'rs', 'aj', 'tir', 'thb', 'hlb', 'hlb-funnel', 'lps', 'lps-gold', 'grr', 'len', 'msc', 'nst', 'qrl', 'nfr', 'cnw', 'up', 'milw', 'arr', 'wpy', 'wpy-gold', 'loco', 'tie', 'dash', 'freight', 'water'])
+  for (const n of ['paper', 'ink', 'ink-soft', 'text', 'muted', 'context', 'siding', 'east', 'west', 'special', 'hold', 'panel', 'rule', 'local', 'lake', 'lulu', 'nwm', 'bcer', 'bcer-cream', 'cp', 'gn', 'cn', 'pge', 'nar', 'si', 'si-gold', 'cpss-funnel', 'bb', 'bb-funnel', 'cnss-funnel', 'uss', 'uss-funnel', 'gif', 'gif-funnel', 'nvf', 'nvf-funnel', 'hnc', 'hnc-funnel', 'ass', 'ass-funnel', 'byn', 'byn-funnel', 'bst', 'bst-funnel', 'qlf', 'qlf-funnel', 'tsl', 'tsl-funnel', 'snc', 'snc-funnel', 'csl', 'csl-funnel', 'np', 'sps', 'gwwd', 'onr', 'acr', 'nyc', 'dh', 'tem', 'cgt', 'rs', 'aj', 'tir', 'thb', 'hlb', 'hlb-funnel', 'lps', 'lps-gold', 'grr', 'len', 'msc', 'nst', 'qrl', 'nfr', 'cnw', 'up', 'milw', 'arr', 'wpy', 'wpy-gold', 'loco', 'tie', 'dash', 'freight', 'water'])
     colors[n] = cs.getPropertyValue('--' + n).trim();
   baseRev++;                                                        // the base picture is in the old colours
 }
@@ -843,6 +844,7 @@ function drawConsist(t, st) {
     ctx.fillStyle = i === 0 && !inter ? colors.loco : (mixed && i < n) ? colors.freight : col; ctx.fill();
     ctx.lineWidth = selected ? 2 : 1; ctx.strokeStyle = selected ? col : colors.paper; ctx.stroke();
     if (t.livery && i > 0 && L > 5) { ctx.fillStyle = colors[t.livery + '-gold']; ctx.fillRect(-L / 2 + 1.5, -1, L - 3, 2); }   // the band along the cars
+    if (!t.livery && KIND_COLOR[t.kind] === 'bcer' && L > 5) { ctx.fillStyle = colors['bcer-cream']; ctx.fillRect(-L / 2 + 1.5, -1, L - 3, 2); }   // B.C. Electric: red and cream
     if (t.kind === 'P' && L > 5) { ctx.fillStyle = colors['lps-gold']; ctx.fillRect(-L / 2 + 1.5, -1, L - 3, 2); }
     if (inter && i === 0) { ctx.beginPath(); ctx.arc(-back * (L / 2 - 2.5), 0, 1.6, 0, Math.PI * 2); ctx.fillStyle = colors.paper; ctx.fill(); }   // direction nose
     ctx.restore();

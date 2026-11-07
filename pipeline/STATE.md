@@ -2446,6 +2446,8 @@ Stations of different railways within 250 m (70 pairs; script: same check over v
 - This version patched parts/*.json (motor=1 where name == 'Motor train', identical to what ab_lines now emits) and ran --assemble; the next full build
   reruns every ab_lines step because ab_lines.py changed (about 70 min). Untagged files only print the sign key, or motor BUSES; sk_cn_t212 dot left untagged.
 
+- B.C. Electric livery (Brendan, 6 Nov 2026, 23:00): red and cream. Every BCER car (KIND_COLOR 'bcer', no line livery) gets a cream band (--bcer-cream #fff0c2,
+  both themes) along its middle, like the WP&Y / SI gold bands, so the unnumbered cars no longer vanish on the red track. Legend swatch: red with a cream stripe.
 ## Version 135 (5 November 2026): Niagara, St. Catharines & Toronto; CN steamers Toronto - Port Dalhousie; Cobourg - Genesee car ferry; Newfoundland Railway
 - New rail 'onnst' (kind 'N', own 'nst', CN colours like the M&SC, interurban style; agency NST). Track: Brendan's NS&T KMZ, stitched by scratchpad
   nst/track.py into traces/ontario/brendan/nst_track.geojson (St. Catharines Terminal - Lincoln Jct. - the high line - Thorold - Substation Jct.; Niagara
