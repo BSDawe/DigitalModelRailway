@@ -2445,6 +2445,11 @@ Stations of different railways within 250 m (70 pairs; script: same check over v
 - NS&T / CN steamers page (condensed tables) saved: dmr-sources og1948_cnq/nst_cn_steamers_condensed.png. Questions out to Brendan (track KMZ, Port
   Dalhousie cars, Toronto - Port Dalhousie boat, Cobourg - Genesee points, colours).
 
+## Version 140 (7 November 2026): full rebuild
+- Full build after the ab_lines.py change: motor trains are now flagged in the code (142 trips), not hand-patched parts. Train 77 (on_cn_t082d) runs over the
+  CP from Prescott Junction into Prescott (by the wharf). Ridgeway and the H&LB minor landings are in. check_gtfs: 510 routes, 3851 trips; one problem, already known:
+  CP-14-SKJCP13 at Minneapolis (the 1947 Soo arrival, 6.30 a.m., is after C&NW 404's 6.25 departure, as the note says).
+
 ## Version 139 (7 November 2026): Canada Steamship Lines, Lake Ontario - St. Lawrence - Saguenay
 - From Brendan's Sailing Schedules season 1948 pages (dmr-sources scans/marine/csl_1948_*), Eastern Standard time as printed; ports: Brendan's points; Three Rivers and
   Quebec are the existing ferry wharves (TSL_THREE_RIVERS_FERRY_WHARF, QLF_QUEBEC_FERRY_WHARF, shared stops). All in lo_build.py, livery csl, agency CSL.
@@ -2453,7 +2458,7 @@ Stations of different railways within 250 m (70 pairs; script: same check over v
   Sun, Tue, Thu from Prescott noon, Toronto 6.45 a.m. next day.
 - csrp rapids steamer Prescott - Cornwall - Montreal (Victoria Pier), DOWNSTREAM ONLY (Brendan), Sun, Tue, Thu 7.45 a.m. - 6.30 p.m. Waypoints keep it on the old river through
   Soulanges (Coteau, the Cedars, the Cascades), not the modern Beauharnois power canal. Cornwall on the Cornwall Canal remnant (in the tiles). Lane mileage is grid-jagged (147 mi).
-- TO DO: the westbound CN special train Montreal (Central Station) 8.50 a.m. - Cornwall 10.32 - Prescott Dock 11.40 a.m., Sun, Tue, Thu (needs on_build: do it with the next full build).
+- DONE in Version 140: the westbound CN special (train 77) Montreal 8.50 a.m. - Cornwall 10.32 - Prescott 11.40 a.m., Sun, Tue, Thu, over the CP from Prescott Junction.
 - cssg Montreal - Sorel - Three Rivers - Quebec - Murray Bay - St. Simeon - Tadoussac - Bagotville (St. Alphonse): daily both ways, two nights each way.
 
 ## Version 138 (7 November 2026): Muskoka Lakes steamers
