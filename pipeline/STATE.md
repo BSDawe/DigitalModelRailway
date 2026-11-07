@@ -2444,7 +2444,7 @@ Stations of different railways within 250 m (70 pairs; script: same check over v
   Eastern Standard time as printed (both tables). Colour --mln #1f4e79 (dark #7fb0e0), agency MLN.
 - CN (Table 126, og1948_on/cn126b.png), line mlcn Muskoka Wharf - Beaumaris - Port Carling - Wigwassan - Royal Muskoka: down 7.30 a.m. ex Sun (Sun 8.30,
   sign g) and 2.00 p.m. ex Sun (55-53 column; the 41 column's 1.45, June 14 - 24 only, left out); up 8.30 a.m. and 3.10 p.m. ex Sun, 3.45 p.m. Sun (156).
-- CP (marine/on_muskoka_lakes_1948.csv), READING (Claude, TO CONFIRM with Brendan): the dagger (ex Sun) is on exactly the Lake Joseph landings, so a Lake
+- CP (marine/on_muskoka_lakes_1948.csv), READING (Claude; Brendan, 7 Nov 2026: no better source short of the archives, keep it): the dagger (ex Sun) is on exactly the Lake Joseph landings, so a Lake
   Joseph boat (line mlj: Minett - Elgin House - Natural Park, ex Sun) meets the Bala boats at Minett; the two Bala boats (line mlcp: Bala - Beaumaris -
   Port Carling - Windermere - Wigwassan - Royal Muskoka - Minett - Rosseau) run daily: 7.30 a.m. (passes Beaumaris) - Rosseau 12.00, back 2.00 - Bala 7.00;
   2.00 p.m. - Rosseau 7.30, back 7.30 a.m. - Bala 11.40. Misprint read: Beaumaris 3.30 p.m. on the boat to Bala -> 5.30 estimated.
