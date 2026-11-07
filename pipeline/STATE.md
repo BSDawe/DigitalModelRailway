@@ -2439,6 +2439,18 @@ Stations of different railways within 250 m (70 pairs; script: same check over v
 - NS&T / CN steamers page (condensed tables) saved: dmr-sources og1948_cnq/nst_cn_steamers_condensed.png. Questions out to Brendan (track KMZ, Port
   Dalhousie cars, Toronto - Port Dalhousie boat, Cobourg - Genesee points, colours).
 
+## Version 138 (7 November 2026): Muskoka Lakes steamers
+- Muskoka Lakes Navigation Co., in lo_build.py; landings: Brendan's points (Bala = the CP station, Muskoka Wharf = the CN Gravenhurst wharf station, shared stops).
+  Eastern Standard time as printed (both tables). Colour --mln #1f4e79 (dark #7fb0e0), agency MLN.
+- CN (Table 126, og1948_on/cn126b.png), line mlcn Muskoka Wharf - Beaumaris - Port Carling - Wigwassan - Royal Muskoka: down 7.30 a.m. ex Sun (Sun 8.30,
+  sign g) and 2.00 p.m. ex Sun (55-53 column; the 41 column's 1.45, June 14 - 24 only, left out); up 8.30 a.m. and 3.10 p.m. ex Sun, 3.45 p.m. Sun (156).
+- CP (marine/on_muskoka_lakes_1948.csv), READING (Claude, TO CONFIRM with Brendan): the dagger (ex Sun) is on exactly the Lake Joseph landings, so a Lake
+  Joseph boat (line mlj: Minett - Elgin House - Natural Park, ex Sun) meets the Bala boats at Minett; the two Bala boats (line mlcp: Bala - Beaumaris -
+  Port Carling - Windermere - Wigwassan - Royal Muskoka - Minett - Rosseau) run daily: 7.30 a.m. (passes Beaumaris) - Rosseau 12.00, back 2.00 - Bala 7.00;
+  2.00 p.m. - Rosseau 7.30, back 7.30 a.m. - Bala 11.40. Misprint read: Beaumaris 3.30 p.m. on the boat to Bala -> 5.30 estimated.
+- WATER: the Port Carling canal (locks between the two ends of the Indian River) is missing from the basemap (Brendan): added in lo_build as a 30 m
+  corridor. Port Sandfield (Rosseau - Joseph) is open in the tiles. The canal is not drawn on the map, only routed.
+
 ## Version 137 (7 November 2026): Pointe au Baril Island Transport
 - Fred G. Barned's island boats on Georgian Bay, from the CP guide boat schedule (dmr-sources scans/cp1948_on/pab_island_transport.png), June 1 - Sept. 6
   table, Eastern Standard time (the 3.45 p.m. boat leaves after train 25, Pointe au Baril 3.29 p.m., CP Table 58). Landings: Brendan's Google Earth points.

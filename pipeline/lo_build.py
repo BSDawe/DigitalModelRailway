@@ -23,6 +23,7 @@ HERE = os.path.dirname(os.path.abspath(__file__)); GT = os.path.join(HERE, 'gtfs
 vd = json.load(open(os.path.join(HERE, 'viz_data.json')))
 BOX = (-79.50, -77.45, 43.10, 44.05)
 PAB_BOX = (-80.60, -80.30, 45.48, 45.64)        # Pointe au Baril, Georgian Bay
+MUSK_BOX = (-79.76, -79.33, 44.88, 45.29)       # the Muskoka lakes
 
 # ---------------- water: the basemap tiles (page projection) back to lon/lat, and water_east.json
 _idx = json.load(open(os.path.join(ROOT, 'basemap', 'tiles', 'index.json'))); _PJ = _idx['proj']
@@ -36,7 +37,7 @@ def page_ll(x, y):
     X, Y = x + _ox, y + _oy; rho = math.copysign(math.hypot(X, Y), _n); th = math.atan2(X, Y)
     return (th / _n + _l0) / _r, (2 * math.atan((_R * _F / rho) ** (1 / _n)) - math.pi / 2) / _r
 _z = _idx['zmax']; _s = _idx['side'] / 2 ** _z; _polys = []
-for _B in (BOX, PAB_BOX):
+for _B in (BOX, PAB_BOX, MUSK_BOX):
   _xs, _ys = zip(*[page_xy(lon, lat) for lon in _B[:2] for lat in _B[2:]])
   for tx in range(int((min(_xs) - _idx['origin'][0]) // _s), int((max(_xs) - _idx['origin'][0]) // _s) + 1):
       for ty in range(int((min(_ys) - _idx['origin'][1]) // _s), int((max(_ys) - _idx['origin'][1]) // _s) + 1):
@@ -56,8 +57,12 @@ for poly in json.load(open(os.path.join(HERE, 'water_east.json'))):
         lon, lat = r[0], r[1]; pts = [(lon / 1e4, lat / 1e4)]
         for i in range(2, len(r), 2): lon += r[i]; lat += r[i + 1]; pts.append((lon / 1e4, lat / 1e4))
         rings.append(pts)
-    if not any(B[0] - 0.5 <= x <= B[1] + 0.5 and B[2] - 0.5 <= y <= B[3] + 0.5 for B in (BOX, PAB_BOX) for x, y in rings[0]): continue
+    if not any(B[0] - 0.5 <= x <= B[1] + 0.5 and B[2] - 0.5 <= y <= B[3] + 0.5 for B in (BOX, PAB_BOX, MUSK_BOX) for x, y in rings[0]): continue
     g = Polygon([sea.to_xy(*p) for p in rings[0]], [[sea.to_xy(*p) for p in h] for h in rings[1:]]); _polys.append(g if g.is_valid else g.buffer(0))
+# canals the basemap lacks (Brendan, 7 Nov 2026: the Port Carling canal failed to make the water file): the locks between the Indian River ends
+from shapely.geometry import LineString
+for _c in ([(-79.5742, 45.1212), (-79.5752, 45.1203), (-79.5770, 45.1197), (-79.5790, 45.1190)],):
+    _polys.append(LineString([sea.to_xy(*p) for p in _c]).buffer(30))
 sea._U = unary_union(_polys)
 if sea._U.geom_type == 'Polygon': sea._U = MultiPolygon([sea._U])
 
@@ -71,6 +76,17 @@ PAB = port('Pointe au Baril (Government Wharf)', -80.37897617850626, 45.59492455
 SKE = port('Skerryvore', -80.38790250561203, 45.54048159737791, 'Skerryvore, Georgian Bay (Brendan)')
 BEL = port('Bellevue', -80.50219116470214, 45.55749629211946, 'Bellevue, Georgian Bay (Brendan)')
 OJI = port('Ojibway', -80.45691208451146, 45.53595001144631, 'Ojibway (the Ojibway Hotel), Georgian Bay (Brendan)')
+MUSKOKA_NOTE = 'Muskoka Lakes Navigation Co. steamer landing (Brendan)'
+def dms(t):   # 45°04'13.36"N 79°29'38.27"W -> lon, lat
+    a = [float(x) for x in re.findall(r"[\d.]+", t)]; return -(a[3] + a[4] / 60 + a[5] / 3600), a[0] + a[1] / 60 + a[2] / 3600
+def mport(n, t): lon, lat = dms(t); return port(n, lon, lat, MUSKOKA_NOTE)
+MWF = dict(name='Muskoka Wharf', gid='CN_MUSKOKA_WHARF', lon=-79.391368, lat=44.920517, note='Muskoka Wharf, Gravenhurst: the Canadian National wharf station (Brendan)')
+BALA = dict(name='Bala', gid='CP_BALA', lon=-79.613611, lat=45.013662, note='Bala: the Canadian Pacific station (Brendan)')
+BEA = mport('Beaumaris', '45°04\'13.36"N 79°29\'38.27"W'); PCA = mport('Port Carling', '45°07\'14.04"N 79°34\'33.37"W')
+WIN = mport('Windermere', '45°09\'48.22"N 79°33\'01.95"W'); WIG = mport('Wigwassan', '45°10\'16.59"N 79°34\'18.98"W')
+RMU = mport('Royal Muskoka', '45°11\'23.77"N 79°35\'51.70"W'); MIN = mport('Minett', '45°09\'54.59"N 79°38\'47.16"W')
+ROS = mport('Rosseau', '45°15\'15.01"N 79°38\'24.43"W'); ELG = mport('Elgin House', '45°06\'33.00"N 79°37\'49.42"W')
+NAP = mport('Natural Park', '45°12\'52.78"N 79°41\'22.70"W')
 GEN = port('Genesee Docks (Rochester)', -77.61655318811175, 43.22746248913674, 'Genesee Docks, Port of Rochester, N.Y., on the Genesee River (Brendan)')
 
 # ---------------- lanes (cache lo_legs.json)
@@ -181,6 +197,57 @@ mkline('pabs', 'Pointe au Baril – Skerryvore (Island Transport)', sk_route, sk
        'Pointe au Baril Island Transport (Fred G. Barned): the Canadian Pacific guide boat schedule, June 1 - Sept. 6 (Brendan); Eastern Standard time as printed', 'pab')
 mkline('pabo', 'Pointe au Baril – Bellevue – Ojibway (Island Transport)', oj_route, oj_st, OJ, ['round the islands', 'to Pointe au Baril'],
        'Pointe au Baril Island Transport (Fred G. Barned): the Canadian Pacific guide boat schedule, June 1 - Sept. 6 (Brendan); Eastern Standard time as printed', 'pab')
+# ---------------- Muskoka Lakes Navigation Co. (Brendan, 7 Nov 2026). Eastern Standard time as printed (both tables), three hours to the Pacific clock.
+# CN, Official Guide April 1948 Table 126 (dmr-sources og1948_on/cn126b.png): Muskoka Wharf - Beaumaris - Port Carling - Wigwassan - Royal Muskoka.
+#   Summer columns: down 7.30 a.m. (g: daily ex Sun; Sundays an hour later, June 20 - Sept. 12) and 2.00 p.m. (the 55-53 column, from June 26; the 41
+#   column's 1.45 p.m. is June 14 - 24 only, left out); up Royal Muskoka 8.30 a.m. and 3.10 p.m. (daily ex Sun), 3.45 p.m. Sundays (156 column).
+# CP 1948 timetable (marine/on_muskoka_lakes_1948.csv, scans/on1948/08.png), from Bala. READING (Claude, to confirm): the dagger (daily ex Sun) falls
+#   exactly on Elgin House and Natural Park, the Lake Joseph landings: a Lake Joseph boat, daily ex Sunday, meets the Bala boats at Minett (11.10 a.m.,
+#   3.40, 5.50 and 8.20); the two Bala boats run daily: Bala 7.30 a.m. - Rosseau 12.00, back 2.00 p.m. - Bala 7.00; Bala 2.00 p.m. - Rosseau 7.30, back
+#   7.30 a.m. - Bala 11.40. Misprint read: Beaumaris "3.30 p.m." on the 2.00 p.m. boat from Rosseau (the Bala - Beaumaris time of the other boat) -> 5.30
+#   estimated, between Port Carling 5.00 and Bala 7.00. The 7.30 a.m. from Bala does not call at Beaumaris (it passes).
+MLNOTE = ' Muskoka Lakes Navigation Co. steamer, summer 1948. Printed in Eastern Standard time.'
+def mtrips(pfx, st_names, rows, dy, d, src_note, num='Muskoka steamer'):
+    out = []
+    for r in rows:
+        stops = []
+        for k, x in enumerate(r):
+            if x is None: continue
+            a, b = (x if isinstance(x, tuple) else (x, x)); f = 0 if a.startswith('~') else 1
+            ta, tb = hm(a.lstrip('~')) - EST, hm(b.lstrip('~')) - EST; stops.append([k if d == 0 else len(r) - 1 - k, ta, tb, f])
+        first = next(x for x in r if x is not None); first = first[1] if isinstance(first, tuple) else first
+        names = [st_names[k] for k, x in enumerate(r) if x is not None]
+        out.append(dict(id=f'{pfx}-{"DU"[d]}{first.lstrip("~").replace(".", "")}{dy}', num=num, name='Muskoka steamer', svc=SVC[dy], dir=d, vessel='', stops=stops,
+                        note=f'{names[0]} {ptxt(hm(first.lstrip("~")))} to {names[-1]} ({DAYS[dy]}), calling at ' + ', '.join(names[1:-1]) + '.' + src_note + MLNOTE))
+    return out
+# CN: Muskoka Wharf, Beaumaris, Port Carling, Wigwassan, Royal Muskoka
+cn_route, cn_st = water_path([MWF, BEA, PCA, WIG, RMU], 40)
+CNM = ' Canadian National Table 126 (Official Guide, April 1948): meets the CN trains at Muskoka Wharf.'
+CN_N = [s['name'] for s in cn_st]
+M = (mtrips('MLCN', CN_N, [('7.30a', '8.40a', '9.35a', '10.15a', '10.30a'), ('2.00p', '3.20p', '4.05p', '4.55p', '5.15p')], 'xSun', 0, CNM)
+     + mtrips('MLCN', CN_N, [('8.30a', '9.40a', '10.35a', '11.15a', '11.30a')], 'Sun', 0, CNM + ' On Sunday an hour later than the weekday boat.')
+     + mtrips('MLCN', CN_N[::-1], [('8.30a', '8.50a', '9.45a', '10.30a', '11.45a'), ('3.10p', '3.20p', '4.00p', '5.00p', '6.10p')], 'xSun', 1, CNM)
+     + mtrips('MLCN', CN_N[::-1], [('3.45p', '4.00p', '4.35p', '5.25p', '6.45p')], 'Sun', 1, CNM + ' Sundays June 27 - Aug. 29, and Mondays Aug. 2 and Sept. 6.'))
+mkline('mlcn', 'Muskoka Wharf – Royal Muskoka (Muskoka Lakes steamers)', cn_route, cn_st, M, ['to Royal Muskoka', 'to Muskoka Wharf'],
+       'Muskoka Lakes Navigation Co.: CN Table 126, Official Guide April 25, 1948 (Brendan); Eastern Standard time as printed', 'mln')
+# CP: Bala, Beaumaris, Port Carling, Windermere, Wigwassan, Royal Muskoka, Minett, Rosseau
+bp_route, bp_st = water_path([BALA, BEA, PCA, WIN, WIG, RMU, MIN, ROS], 40)
+CPM = ' Canadian Pacific timetable 1948: meets the CP trains at Bala.'
+BP_N = [s['name'] for s in bp_st]
+M = (mtrips('MLCP', BP_N, [('7.30a', None, '9.40a', '10.30a', '10.40a', '10.50a', '11.10a', '12.00p'), ('2.00p', '3.30p', '4.30p', '5.10p', '5.15p', '5.30p', '5.50p', '7.30p')], 'daily', 0,
+             CPM + ' Lake Joseph passengers change at Minett (except Sunday).')
+     + mtrips('MLCP', BP_N[::-1], [('2.00p', '3.40p', '4.00p', '4.15p', '4.30p', '5.00p', '~5.30p', '7.00p'), ('7.30a', '8.20a', '8.45a', '9.00a', '9.10a', '10.00a', '10.40a', '11.40a')], 'daily', 1,
+             CPM + ' Lake Joseph passengers join at Minett (except Sunday). The 2.00 p.m. boat: Beaumaris printed 3.30 p.m., read 5.30 (estimated).'))
+mkline('mlcp', 'Bala – Rosseau (Muskoka Lakes steamers)', bp_route, bp_st, M, ['to Rosseau', 'to Bala'],
+       'Muskoka Lakes Navigation Co.: Canadian Pacific timetable 1948 (Brendan); Eastern Standard time as printed', 'mln')
+# Lake Joseph boat: Minett, Elgin House, Natural Park (daily ex Sunday)
+lj_route, lj_st = water_path([MIN, ELG, NAP], 40)
+LJN = [s['name'] for s in lj_st]
+LJM = ' Canadian Pacific timetable 1948: the Lake Joseph landings, daily except Sunday; reading (Claude): a Lake Joseph boat meeting the Bala boats at Minett.'
+M = (mtrips('MLJ', LJN, [('11.10a', None, '1.05p'), ('5.50p', '6.05p', None)], 'xSun', 0, LJM)
+     + mtrips('MLJ', LJN[::-1], [('2.00p', '3.10p', '3.40p'), (None, '7.45a', '8.20a')], 'xSun', 1, LJM))
+mkline('mlj', 'Minett – Elgin House – Natural Park (Lake Joseph steamer)', lj_route, lj_st, M, ['to Natural Park', 'to Minett'],
+       'Muskoka Lakes Navigation Co.: Canadian Pacific timetable 1948 (Brendan); Eastern Standard time as printed; Lake Joseph boat a reading', 'mln')
 keys = {L['key'] for L in LINES}
 vd['lines'] = [x for x in vd['lines'] if x['key'] not in keys] + LINES
 open(os.path.join(HERE, 'viz_data.json'), 'w').write(json.dumps(vd, separators=(',', ':')))
@@ -192,14 +259,16 @@ def app(name, rows_):
 def have(name, col=0): return set(r[col] for r in csv.reader(open(os.path.join(GT, name))))
 cal = have('calendar.txt'); app('calendar.txt', [[w, *w[2:], '19490616', '19491231'] for w in sorted({t['svc'] for L in LINES for t in L['trips']}) if w not in cal])
 if 'PABIT' not in have('agency.txt'): app('agency.txt', [['PABIT', 'Pointe au Baril Island Transport (Fred G. Barned)', 'https://en.wikipedia.org/wiki/Pointe_au_Baril', 'America/Vancouver', 'en', '']])
+if 'MLN' not in have('agency.txt'): app('agency.txt', [['MLN', 'Muskoka Lakes Navigation and Hotel Co.', 'https://en.wikipedia.org/wiki/Muskoka_Lakes_Navigation_Company', 'America/Vancouver', 'en', '']])
 if 'OCF' not in have('agency.txt'): app('agency.txt', [['OCF', 'Ontario Car Ferry Company (Canadian National and Baltimore & Ohio)', 'https://en.wikipedia.org/wiki/SS_Ontario_No._1', 'America/Vancouver', 'en', '']])
 gseen = have('stops.txt')
+_PDESC = 'Island boat, June 1 - Sept. 6, 1948. Times on the Pacific clock, three hours earlier than the Eastern Standard time printed.'
+_MDESC = 'Muskoka Lakes Navigation Co. steamer, summer 1948. Times on the Pacific clock, three hours earlier than the Eastern Standard time printed.'
 for L, ag, desc in ((LINES[0], 'CN', 'Canadian National steamers, May 21 - June 4, 1948. Times on the Pacific clock (printed in Eastern Daylight Saving time).'),
                     (LINES[1], 'OCF', 'S.S. Ontario, summer service. Times on the Pacific clock, three hours earlier than the Eastern time printed.'),
-                    (LINES[2], 'PABIT', 'Island boat, June 1 - Sept. 6, 1948. Times on the Pacific clock, three hours earlier than the Eastern Standard time printed.'),
-                    (LINES[3], 'PABIT', 'Island boat, June 1 - Sept. 6, 1948. Times on the Pacific clock, three hours earlier than the Eastern Standard time printed.')):
+                    (LINES[2], 'PABIT', _PDESC), (LINES[3], 'PABIT', _PDESC), (LINES[4], 'MLN', _MDESC), (LINES[5], 'MLN', _MDESC), (LINES[6], 'MLN', _MDESC)):
     rid = L['key'].upper(); st = L['stations']
-    app('routes.txt', [[rid, ag, L['label'], ' – '.join(s['name'] for s in st), 4, '8B4A2B' if ag == 'PABIT' else '2F6B44', 'FFFFFF', desc]])
+    app('routes.txt', [[rid, ag, L['label'], ' – '.join(s['name'] for s in st), 4, {'PABIT': '8B4A2B', 'MLN': '1F4E79'}.get(ag, '2F6B44'), 'FFFFFF', desc]])
     new = [[s['gid'], s['name'] + ' (steamer landing)', f"{s['lat']:.6f}", f"{s['lon']:.6f}", s['note']] for s in st if s['gid'] not in gseen]
     gseen |= {r[0] for r in new}; app('stops.txt', new)
     for t in L['trips']:

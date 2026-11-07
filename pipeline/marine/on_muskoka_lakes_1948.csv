@@ -1,4 +1,4 @@
-# Muskoka Lakes Navigation Company, steamer service, CP timetable 1948 (scans/on1948/08.png). EASTERN TIME. NOT BUILT: waiting for port positions.
+# Muskoka Lakes Navigation Company, steamer service, CP timetable 1948 (scans/on1948/08.png). EASTERN TIME. BUILT in Version 138 (lo_build.py), points from Brendan 7 Nov 2026.
 # Rows as printed (the order is not the order of calls; each column's times give its own route). Connecting CP trains at Bala (Table 58):
 #   col 1: Toronto Union lv 11.15 p.m. (dagger = daily except Sunday), Bala (Can. Pac.) ar 2.45 a.m. = Train No. 27.
 #   col 2: Toronto lv 9.30 a.m. (daily except Sunday), Bala ar 1.23 p.m. = Train No. 25.
