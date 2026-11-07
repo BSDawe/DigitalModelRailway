@@ -2439,6 +2439,15 @@ Stations of different railways within 250 m (70 pairs; script: same check over v
 - NS&T / CN steamers page (condensed tables) saved: dmr-sources og1948_cnq/nst_cn_steamers_condensed.png. Questions out to Brendan (track KMZ, Port
   Dalhousie cars, Toronto - Port Dalhousie boat, Cobourg - Genesee points, colours).
 
+## Version 137 (7 November 2026): Pointe au Baril Island Transport
+- Fred G. Barned's island boats on Georgian Bay, from the CP guide boat schedule (dmr-sources scans/cp1948_on/pab_island_transport.png), June 1 - Sept. 6
+  table, Eastern Standard time (the 3.45 p.m. boat leaves after train 25, Pointe au Baril 3.29 p.m., CP Table 58). Landings: Brendan's Google Earth points.
+- TWO BOATS (Brendan): they leave the Government Wharf together. Skerryvore boat (line pabs): out 45 min; its return is by appointment, so estimated
+  (leaves 15 min after arriving, 45 min back). Ojibway boat (line pabo, a loop): Pointe au Baril - Bellevue - Ojibway - Pointe au Baril; the Sunday evening
+  "Lv Bellevue 6.30" read as its Bellevue call. Daily ex Sun 6.30 a.m. and 3.45 p.m.; Sunday 7.30 a.m. and 5.30 p.m. May tri-weekly service left out.
+- In lo_build.py (water for a second box, PAB_BOX, from the basemap tiles; lanes at 25 m). Colour --pab #8b4a2b (dark #d68a5f), agency PABIT.
+- Run alone with build.stale_reason patched to 'lo_build' only, so the 14 steps still marked stale by the ab_lines change (Version 136) were left alone.
+
 ## Version 136 (6 November 2026): motor trains drawn like interurbans
 - Brendan: known motor trains look like interurbans but run on the regular track. ab_lines emits motor=1 for kind=motor (all 153 tagged trains; 142 trips
   on the page, the rest are not built: GTW 34 / 35, three unnumbered Table 77 trips fold in elsewhere); page_template carries t.motor and drawConsist treats it

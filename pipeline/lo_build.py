@@ -1,4 +1,4 @@
-"""Lake Ontario boats (Brendan, 5 November 2026): the Canadian National steamers Toronto - Port Dalhousie (S.S. Dalhousie City and S.S. Northumberland,
+"""Lake Ontario boats (Brendan, 5 November 2026), and the Pointe au Baril Island Transport on Georgian Bay (7 November 2026, see below): the Canadian National steamers Toronto - Port Dalhousie (S.S. Dalhousie City and S.S. Northumberland,
 meeting the Niagara, St. Catharines & Toronto cars at Port Dalhousie) and the Ontario Car Ferry Co. (CN and Baltimore & Ohio) S.S. Ontario, Cobourg - Genesee
 Docks (port of Rochester, N.Y.).
 
@@ -22,6 +22,7 @@ from sea import Sea, SEA_VERSION
 HERE = os.path.dirname(os.path.abspath(__file__)); GT = os.path.join(HERE, 'gtfs'); ROOT = os.path.dirname(HERE)
 vd = json.load(open(os.path.join(HERE, 'viz_data.json')))
 BOX = (-79.50, -77.45, 43.10, 44.05)
+PAB_BOX = (-80.60, -80.30, 45.48, 45.64)        # Pointe au Baril, Georgian Bay
 
 # ---------------- water: the basemap tiles (page projection) back to lon/lat, and water_east.json
 _idx = json.load(open(os.path.join(ROOT, 'basemap', 'tiles', 'index.json'))); _PJ = _idx['proj']
@@ -35,26 +36,27 @@ def page_ll(x, y):
     X, Y = x + _ox, y + _oy; rho = math.copysign(math.hypot(X, Y), _n); th = math.atan2(X, Y)
     return (th / _n + _l0) / _r, (2 * math.atan((_R * _F / rho) ** (1 / _n)) - math.pi / 2) / _r
 _z = _idx['zmax']; _s = _idx['side'] / 2 ** _z; _polys = []
-_xs, _ys = zip(*[page_xy(lon, lat) for lon in BOX[:2] for lat in BOX[2:]])
-for tx in range(int((min(_xs) - _idx['origin'][0]) // _s), int((max(_xs) - _idx['origin'][0]) // _s) + 1):
-    for ty in range(int((min(_ys) - _idx['origin'][1]) // _s), int((max(_ys) - _idx['origin'][1]) // _s) + 1):
-        fn = os.path.join(ROOT, 'basemap', 'tiles', str(_z), f'{tx}_{ty}.json')
-        if not os.path.exists(fn): continue
-        for poly in json.load(open(fn))['w']:
-            rings = []
-            for ring in poly:
-                x, y = ring[0], ring[1]; pts = [sea.to_xy(*page_ll(x, y))]
-                for i in range(2, len(ring), 2): x += ring[i]; y += ring[i + 1]; pts.append(sea.to_xy(*page_ll(x, y)))
-                if len(pts) >= 3: rings.append(pts)
-            if rings:
-                g = Polygon(rings[0], rings[1:]); _polys.append(g if g.is_valid else g.buffer(0))
+for _B in (BOX, PAB_BOX):
+  _xs, _ys = zip(*[page_xy(lon, lat) for lon in _B[:2] for lat in _B[2:]])
+  for tx in range(int((min(_xs) - _idx['origin'][0]) // _s), int((max(_xs) - _idx['origin'][0]) // _s) + 1):
+      for ty in range(int((min(_ys) - _idx['origin'][1]) // _s), int((max(_ys) - _idx['origin'][1]) // _s) + 1):
+          fn = os.path.join(ROOT, 'basemap', 'tiles', str(_z), f'{tx}_{ty}.json')
+          if not os.path.exists(fn): continue
+          for poly in json.load(open(fn))['w']:
+              rings = []
+              for ring in poly:
+                  x, y = ring[0], ring[1]; pts = [sea.to_xy(*page_ll(x, y))]
+                  for i in range(2, len(ring), 2): x += ring[i]; y += ring[i + 1]; pts.append(sea.to_xy(*page_ll(x, y)))
+                  if len(pts) >= 3: rings.append(pts)
+              if rings:
+                  g = Polygon(rings[0], rings[1:]); _polys.append(g if g.is_valid else g.buffer(0))
 for poly in json.load(open(os.path.join(HERE, 'water_east.json'))):
     rings = []
     for r in poly:
         lon, lat = r[0], r[1]; pts = [(lon / 1e4, lat / 1e4)]
         for i in range(2, len(r), 2): lon += r[i]; lat += r[i + 1]; pts.append((lon / 1e4, lat / 1e4))
         rings.append(pts)
-    if not any(BOX[0] - 0.5 <= x <= BOX[1] + 0.5 and BOX[2] - 0.5 <= y <= BOX[3] + 0.5 for x, y in rings[0]): continue
+    if not any(B[0] - 0.5 <= x <= B[1] + 0.5 and B[2] - 0.5 <= y <= B[3] + 0.5 for B in (BOX, PAB_BOX) for x, y in rings[0]): continue
     g = Polygon([sea.to_xy(*p) for p in rings[0]], [[sea.to_xy(*p) for p in h] for h in rings[1:]]); _polys.append(g if g.is_valid else g.buffer(0))
 sea._U = unary_union(_polys)
 if sea._U.geom_type == 'Polygon': sea._U = MultiPolygon([sea._U])
@@ -65,6 +67,10 @@ def port(n, lon, lat, note): return dict(name=n, gid=gid(n), lon=lon, lat=lat, n
 TOR = port('Toronto (C.N.R. Wharf)', -79.37373709478712, 43.64070298018153, 'Canadian National wharf, Toronto harbour (Brendan)')
 PDH = port('Port Dalhousie (C.N.R.)', -79.2625135, 43.2029713, 'Port Dalhousie: the CN (Welland Railway) station point, by the harbour; the NS&T cars at Lakeside Park, steps away (Brendan)')
 COB = port('Cobourg (C.N.R. Wharf)', -78.1658271688718, 43.95537172092824, 'Canadian National wharf, Cobourg harbour (Brendan)')
+PAB = port('Pointe au Baril (Government Wharf)', -80.37897617850626, 45.59492455033443, 'Government Wharf, Pointe au Baril, Georgian Bay; Canadian Pacific station 2 miles inland (Brendan)')
+SKE = port('Skerryvore', -80.38790250561203, 45.54048159737791, 'Skerryvore, Georgian Bay (Brendan)')
+BEL = port('Bellevue', -80.50219116470214, 45.55749629211946, 'Bellevue, Georgian Bay (Brendan)')
+OJI = port('Ojibway', -80.45691208451146, 45.53595001144631, 'Ojibway (the Ojibway Hotel), Georgian Bay (Brendan)')
 GEN = port('Genesee Docks (Rochester)', -77.61655318811175, 43.22746248913674, 'Genesee Docks, Port of Rochester, N.Y., on the Genesee River (Brendan)')
 
 # ---------------- lanes (cache lo_legs.json)
@@ -92,6 +98,14 @@ def water_line(a, b, res, via=()):
     return route, st
 pd_route, pd_st = water_line(TOR, PDH, 120, [(-79.3600, 43.6375), (-79.3445, 43.6325), (-79.3380, 43.6260)])   # out of Toronto harbour by the Eastern Gap (the water layer lacks the Toronto Islands)
 cf_route, cf_st = water_line(COB, GEN, 200)
+def water_path(ports, res):   # several landings in order along one lane
+    pts = [(ports[0]['lon'], ports[0]['lat'])]; idx = [0]
+    for a, b in zip(ports, ports[1:]):
+        q = (b['lon'], b['lat']); pts += lane((a['lon'], a['lat']), q, res)[1:] + [q]; idx.append(len(pts) - 1)
+    route = chain(pts)
+    st = [dict(name=p['name'], chain=route[i][2], lon=route[i][0], lat=route[i][1], mile=round(route[i][2] / MI, 1), lmile=round(route[i][2] / MI, 1), principal=True, kml='',
+               gid=p['gid'], xy=[p['lon'], p['lat']], note=p['note']) for p, i in zip(ports, idx)]
+    return route, st
 json.dump(CACHE, open(_CF, 'w'))
 
 # ---------------- times
@@ -101,8 +115,8 @@ def hm(txt):
     if m.group(3) == 'a' and h == 12: h = 0
     return h * 3600 + mn * 60
 DST, EST = 4 * 3600, 3 * 3600          # printed daylight time: an hour to standard, three more to the Pacific clock; printed Eastern (standard): three
-SVC = {'Sun': 'W_0000001', 'xSat': 'W_1111101', 'Sat': 'W_0000010', 'Fri': 'W_0000100', 'daily': 'W_1111111'}
-DAYS = {'Sun': 'Sunday (and May 24)', 'xSat': 'daily except Saturday', 'Sat': 'Saturday', 'Fri': 'Friday (and May 31)', 'daily': 'daily'}
+SVC = {'xSun': 'W_1111110', 'Sun': 'W_0000001', 'xSat': 'W_1111101', 'Sat': 'W_0000010', 'Fri': 'W_0000100', 'daily': 'W_1111111'}
+DAYS = {'xSun': 'daily except Sunday', 'Sun': 'Sunday (and May 24)', 'xSat': 'daily except Saturday', 'Sat': 'Saturday', 'Fri': 'Friday (and May 31)', 'daily': 'daily'}
 CROSS = 150 * 60
 def ptxt(t): return f"{t // 3600 % 12 or 12}.{t % 3600 // 60:02d} {'p.m.' if t % 86400 >= 43200 else 'a.m.'}"
 _s = (' Canadian National steamer service Toronto - Port Dalhousie (32 miles), May 21 to June 4, 1948 (Official Guide); for the NS&T cars to St. Catharines at Port'
@@ -134,9 +148,39 @@ mkline('locf', 'Cobourg – Genesee Docks (Ontario Car Ferry Co.)', cf_route, cf
        'Ontario Car Ferry Co. (CN and B&O), Cobourg - Genesee Docks: the May 1948 Official Guide (Brendan); Eastern time as printed', 'cnss')
 for L in LINES:
     for t in L['trips']:
+        if len(t['stops']) != 2: continue
         (i, a, b, _), (j, a2, b2, _) = t['stops']; leg = abs(L['stations'][j]['chain'] - L['stations'][i]['chain']) / MI; h = (a2 - b) / 3600
         assert a >= 0 and a2 > b, t['id']
         if not 7 < leg / h < 18: print(f"  {t['id']}: {leg:.1f} mi in {h:.2f} h = {leg / h:.1f} mph  !! check")
+# ---------------- Pointe au Baril Island Transport (Fred G. Barned), CP guide boat schedule, June 1 - Sept. 6 (Brendan, 7 Nov 2026)
+# Printed in Eastern Standard time, like CP Table 58 (the 3.45 p.m. boat leaves after train 25, Pointe au Baril 3.29 p.m.).
+# TWO BOATS (Brendan: "Skerryvore and Bellevue are quite far apart, they've got to be different boats"): both leave Pointe au Baril together;
+# the Skerryvore boat runs out to Skerryvore (45 minutes); the other runs Bellevue - Ojibway and back to Pointe au Baril (the Sunday evening
+# "Lv Bellevue 6.30" read as its Bellevue call, arrive and leave 6.30). "Leaving times not shown are by appointment": the Skerryvore boat's
+# return is estimated (leaves 15 minutes after arriving, 45 minutes back). The May tri-weekly service (Tue, Thu, Sat after train 25) is outside the summer week.
+_p = (' Pointe au Baril Island Transport, operated by Fred G. Barned: June 1 to Sept. 6, 1948 (Canadian Pacific guide). Printed in Eastern Standard time;'
+      ' meets the Canadian Pacific trains at Pointe au Baril. Leaving times not shown are by appointment. Two boats leave Pointe au Baril together (Brendan).')
+sk_route, sk_st = water_path([PAB, SKE], 25)
+oj_route, oj_st = water_path([PAB, BEL, OJI, PAB], 25)
+PABT = [  # (days, leave PaB, Skerryvore, Bellevue, Ojibway ar, Ojibway lv, PaB ar)
+    ('xSun', '6.30a', '7.15a', '7.15a', '7.45a', '8.00a', '9.00a'),
+    ('Sun', '7.30a', '8.15a', '8.15a', '8.45a', '9.00a', '9.45a'),
+    ('xSun', '3.45p', '4.30p', '4.45p', '5.00p', '6.00p', '7.30p'),
+    ('Sun', '5.30p', '6.15p', '6.30p', '7.00p', '7.15p', '8.30p')]
+SK, OJ = [], []
+for dy, a0, sk, be, oa, ol, pa in PABT:
+    t0, t1, t2, t3, t4, t6 = (hm(x) - EST for x in (a0, sk, be, oa, ol, pa)); tag = a0.replace('.', ''); r0 = t1 + 15 * 60
+    SK.append(dict(id=f'PABS-{tag}{dy}', num='Skerryvore boat', name='Island boat', svc=SVC[dy], dir=0, vessel='', stops=[[0, t0, t0, 1], [1, t1, t1, 1]],
+                   note=f'Island boat: Pointe au Baril {ptxt(t0 + EST)} to Skerryvore {ptxt(t1 + EST)} ({DAYS[dy]}).' + _p))
+    SK.append(dict(id=f'PABS-R{tag}{dy}', num='Skerryvore boat', name='Island boat', svc=SVC[dy], dir=1, vessel='', stops=[[1, r0, r0, 0], [0, r0 + 2700, r0 + 2700, 0]],
+                   note=f'Island boat: Skerryvore back to Pointe au Baril ({DAYS[dy]}), times estimated: the return is by appointment.' + _p))
+    OJ.append(dict(id=f'PABO-{tag}{dy}', num='Ojibway boat', name='Island boat', svc=SVC[dy], dir=0, vessel='',
+                   stops=[[0, t0, t0, 1], [1, t2, t2, 1], [2, t3, t4, 1], [3, t6, t6, 1]],
+                   note=f'Island boat: Pointe au Baril {ptxt(t0 + EST)} to Bellevue {ptxt(t2 + EST)} and Ojibway {ptxt(t3 + EST)}, back to Pointe au Baril {ptxt(t6 + EST)} ({DAYS[dy]}).' + _p))
+mkline('pabs', 'Pointe au Baril – Skerryvore (Island Transport)', sk_route, sk_st, SK, ['to Skerryvore', 'to Pointe au Baril'],
+       'Pointe au Baril Island Transport (Fred G. Barned): the Canadian Pacific guide boat schedule, June 1 - Sept. 6 (Brendan); Eastern Standard time as printed', 'pab')
+mkline('pabo', 'Pointe au Baril – Bellevue – Ojibway (Island Transport)', oj_route, oj_st, OJ, ['round the islands', 'to Pointe au Baril'],
+       'Pointe au Baril Island Transport (Fred G. Barned): the Canadian Pacific guide boat schedule, June 1 - Sept. 6 (Brendan); Eastern Standard time as printed', 'pab')
 keys = {L['key'] for L in LINES}
 vd['lines'] = [x for x in vd['lines'] if x['key'] not in keys] + LINES
 open(os.path.join(HERE, 'viz_data.json'), 'w').write(json.dumps(vd, separators=(',', ':')))
@@ -147,17 +191,21 @@ def app(name, rows_):
     with open(os.path.join(GT, name), 'a', newline='') as fh: csv.writer(fh).writerows(rows_)
 def have(name, col=0): return set(r[col] for r in csv.reader(open(os.path.join(GT, name))))
 cal = have('calendar.txt'); app('calendar.txt', [[w, *w[2:], '19490616', '19491231'] for w in sorted({t['svc'] for L in LINES for t in L['trips']}) if w not in cal])
+if 'PABIT' not in have('agency.txt'): app('agency.txt', [['PABIT', 'Pointe au Baril Island Transport (Fred G. Barned)', 'https://en.wikipedia.org/wiki/Pointe_au_Baril', 'America/Vancouver', 'en', '']])
 if 'OCF' not in have('agency.txt'): app('agency.txt', [['OCF', 'Ontario Car Ferry Company (Canadian National and Baltimore & Ohio)', 'https://en.wikipedia.org/wiki/SS_Ontario_No._1', 'America/Vancouver', 'en', '']])
 gseen = have('stops.txt')
 for L, ag, desc in ((LINES[0], 'CN', 'Canadian National steamers, May 21 - June 4, 1948. Times on the Pacific clock (printed in Eastern Daylight Saving time).'),
-                    (LINES[1], 'OCF', 'S.S. Ontario, summer service. Times on the Pacific clock, three hours earlier than the Eastern time printed.')):
+                    (LINES[1], 'OCF', 'S.S. Ontario, summer service. Times on the Pacific clock, three hours earlier than the Eastern time printed.'),
+                    (LINES[2], 'PABIT', 'Island boat, June 1 - Sept. 6, 1948. Times on the Pacific clock, three hours earlier than the Eastern Standard time printed.'),
+                    (LINES[3], 'PABIT', 'Island boat, June 1 - Sept. 6, 1948. Times on the Pacific clock, three hours earlier than the Eastern Standard time printed.')):
     rid = L['key'].upper(); st = L['stations']
-    app('routes.txt', [[rid, ag, L['label'], ' – '.join(s['name'] for s in st), 4, '2F6B44', 'FFFFFF', desc]])
+    app('routes.txt', [[rid, ag, L['label'], ' – '.join(s['name'] for s in st), 4, '8B4A2B' if ag == 'PABIT' else '2F6B44', 'FFFFFF', desc]])
     new = [[s['gid'], s['name'] + ' (steamer landing)', f"{s['lat']:.6f}", f"{s['lon']:.6f}", s['note']] for s in st if s['gid'] not in gseen]
     gseen |= {r[0] for r in new}; app('stops.txt', new)
     for t in L['trips']:
         i0, i1 = t['stops'][0][0], t['stops'][-1][0]
-        pts_ = L['route'] if i0 == 0 else L['route'][::-1]
+        pts_ = [p for p in L['route'] if min(st[i0]['chain'], st[i1]['chain']) - 0.05 <= p[2] <= max(st[i0]['chain'], st[i1]['chain']) + 0.05]
+        if i0 > i1: pts_ = pts_[::-1]
         app('shapes.txt', [[t['id'], f'{p[1]:.6f}', f'{p[0]:.6f}', k, f'{abs(p[2] - pts_[0][2]):.1f}'] for k, p in enumerate(pts_)])
         app('trips.txt', [[rid, t['svc'], t['id'], st[i1]['name'], t['num'], t['dir'], t['id']]])
         app('stop_times.txt', [[t['id'], fmt(a_), fmt(b_), st[i]['gid'], k, f"{abs(st[i]['chain'] - st[i0]['chain']):.1f}", tp] for k, (i, a_, b_, tp) in enumerate(t['stops'], 1)])
