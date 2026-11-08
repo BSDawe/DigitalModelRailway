@@ -1,6 +1,6 @@
 """Chicago, Duluth and Georgian Bay Transit Co.: the S.S. North American (Chicago - Mackinac Island - Parry Sound - Detroit - Cleveland - Buffalo, back by
 Detroit and Mackinac) and the S.S. South American (Buffalo - Cleveland - Detroit - the Soo - Houghton - Port Arthur - Duluth, back by the Soo and Detroit),
-from the timetable page Brendan supplied (7 November 2026; the year and the season are not printed). One round trip a week each: North American from Chicago
+from the Official Guide, May 1948 (page supplied by Brendan, 7 November 2026). One round trip a week each: North American from Chicago
 Saturdays and from Buffalo Wednesdays, South American from Buffalo Saturdays and from Duluth Wednesdays. Times printed in Eastern Standard Time (Chicago and Duluth
 also in Central), shown on the Pacific clock: three hours earlier than Eastern, two earlier than Central.
 Ports: Brendan's points (Buffalo is the Lackawanna (D.L.&W.) depot); Port Arthur is the C.P.R. dock and Duluth the Northern Pacific dock no. 4, the stops already on
@@ -126,9 +126,9 @@ SAIL = {   # line: (svc, ship, [(port key, arrive, leave)], text)
 }
 LABEL = {'cdna_e': ('North American: Chicago – Parry Sound – Buffalo', 'to Buffalo'), 'cdna_w': ('North American: Buffalo – Mackinac Island – Chicago', 'to Chicago'),
          'cdsa_w': ('South American: Buffalo – Port Arthur – Duluth', 'to Duluth'), 'cdsa_e': ('South American: Duluth – Buffalo', 'to Buffalo')}
-_n = (' Chicago, Duluth and Georgian Bay Transit Co.: one round trip a week each (year and season not printed on the page). Times printed in Eastern Standard Time'
+_n = (' Chicago, Duluth and Georgian Bay Transit Co.: one round trip a week each (Official Guide, May 1948). Times printed in Eastern Standard Time'
       ' (Chicago and Duluth in Central too) and shown here in Pacific time. Passing points printed in the timetable are shown as timing points, not calls.')
-SRC = 'Chicago, Duluth and Georgian Bay Transit Co. timetable (S.S. North American, S.S. South American), supplied by Brendan, 7 November 2026; year not printed. Eastern Standard Time as printed (Chicago, Duluth Central), shown on the Pacific clock'
+SRC = 'Chicago, Duluth and Georgian Bay Transit Co. timetable (S.S. North American, S.S. South American), Official Guide, May 1948 (page supplied by Brendan). Eastern Standard Time as printed (Chicago, Duluth Central), shown on the Pacific clock'
 NEW = []
 for key, seq in LINES.items():
     route, st = build(seq)

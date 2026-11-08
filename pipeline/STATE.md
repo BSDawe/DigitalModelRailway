@@ -2446,7 +2446,7 @@ Stations of different railways within 250 m (70 pairs; script: same check over v
   Dalhousie cars, Toronto - Port Dalhousie boat, Cobourg - Genesee points, colours).
 
 ## Version 142 (7 November 2026): Chicago, Duluth and Georgian Bay Transit Co.
-- New step cdgb_build.py (after cp_manitoba_build; lane cache cdgb_legs.json), four lines, one weekly sailing each, from Brendan's timetable page (year not printed):
+- New step cdgb_build.py (after cp_manitoba_build; lane cache cdgb_legs.json), four lines, one weekly sailing each, from the Official Guide, May 1948 (page supplied by Brendan):
   cdna_e North American Chicago Sat 6.30p CST - Mackinac Island - Cove Island - Parry Sound (Town Dock) - St. Clair River - Detroit - Cleveland - Buffalo Wed 11.30a;
   cdna_w Buffalo Wed 7.30p - Detroit - Mackinac - Chicago Sat 10.45a CST; cdsa_w South American Buffalo Sat 8.30p - Cleveland - Detroit - St. Mary's River - Soo Locks -
   Houghton (Keweenaw Waterway) - Isle Royale - Port Arthur (C.P.R. Dock) - Duluth (N.P. Dock No. 4) Wed 9.00a CST; cdsa_e Duluth Wed 2.00p CST - Soo - Detroit - Buffalo Sat 11.00a.
