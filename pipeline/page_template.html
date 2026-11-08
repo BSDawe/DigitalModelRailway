@@ -134,6 +134,10 @@ canvas#map.hover { cursor: pointer; }
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --pab: #d68a5f; --pab-funnel: #d68a5f; } }
 :root[data-theme="dark"] { --pab: #d68a5f; --pab-funnel: #d68a5f; }
 .badge.v.pab { background: var(--pab); }
+:root { --cdgb: #1d6b6b; --cdgb-funnel: #1d6b6b; }   /* Chicago, Duluth and Georgian Bay Transit Co. (placeholder colour) */
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --cdgb: #6cc5c5; --cdgb-funnel: #6cc5c5; } }
+:root[data-theme="dark"] { --cdgb: #6cc5c5; --cdgb-funnel: #6cc5c5; }
+.badge.v.cdgb { background: var(--cdgb); }
 :root { --mln: #1f4e79; --mln-funnel: #1f4e79; }   /* Muskoka Lakes Navigation Co. steamers */
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --mln: #7fb0e0; --mln-funnel: #7fb0e0; } }
 :root[data-theme="dark"] { --mln: #7fb0e0; --mln-funnel: #7fb0e0; }
@@ -316,7 +320,7 @@ const plain = (t, n) => t.water ? n.replace(/ \(.*\)$/, '') : n;      // a saili
 const KIND_BADGE = { c: 'CPL', b: 'BL', l: 'LI', n: 'MN', g: 'GN', q: 'CN', p: 'CP', v: 'Steamer', y: 'WP', a: 'NAR', o: 'NP', d: 'SP&S', u: 'UP', m: 'MILW', k: 'ARR', x: 'C&NW', j: 'GWWD', h: 'ONR', z: 'ACR', W: 'Nfld. Ry.', t: 'NYC', f: 'D&H', T: 'TEM', G: 'C&GT', R: 'R&S', J: 'A&J', B: 'TH&B', L: 'H&LB', P: 'L&PS', E: 'CP', M: 'M&SC', N: 'NS&T', Q: 'QRL&P' };
 // B.C. Electric cars are all bright red now that main line railways share the map; lines are told apart by station rings and the panel.
 const KIND_COLOR = { e: 'bcer', w: 'bcer', s: 'bcer', c: 'bcer', b: 'bcer', l: 'bcer', n: 'bcer', g: 'gn', p: 'cp', q: 'cn', i: 'cp', r: 'pge', v: 'cp', y: 'wpy', a: 'nar', o: 'np', d: 'sps', u: 'up', m: 'milw', k: 'arr', x: 'cnw', j: 'gwwd', h: 'onr', z: 'acr', W: 'nfr', t: 'nyc', f: 'dh', T: 'tem', G: 'cgt', R: 'rs', J: 'aj', K: 'tir', B: 'thb', L: 'hlb', P: 'lps', E: 'cp', M: 'cn', N: 'cn', Q: 'qrl' };
-const BOAT_COLOR = { cpss: 'cp', bb: 'bb', cnss: 'cn', uss: 'uss', gif: 'gif', nvf: 'nvf', hnc: 'hnc', ass: 'ass', byn: 'byn', bst: 'bst', qlf: 'qlf', tsl: 'tsl', snc: 'snc', csl: 'csl', hlb: 'hlb', pab: 'pab', mln: 'mln' };     // a steamer's label takes its company's colour
+const BOAT_COLOR = { cpss: 'cp', bb: 'bb', cnss: 'cn', uss: 'uss', gif: 'gif', nvf: 'nvf', hnc: 'hnc', ass: 'ass', byn: 'byn', bst: 'bst', qlf: 'qlf', tsl: 'tsl', snc: 'snc', csl: 'csl', hlb: 'hlb', pab: 'pab', mln: 'mln', cdgb: 'cdgb' };     // a steamer's label takes its company's colour
 const LINE_COLOR = { cpl: 'local', bl: 'lake', lulu: 'lulu', nwm: 'nwm' };
 
 // ---------------------------------------------------------------- services & motion model
@@ -484,7 +488,7 @@ const view = { cx: 0, cy: 0, k: 0.01 }; // k = px per metre
 let colors = {}, baseRev = 0;       // baseRev: bumped whenever the cached base picture must be redrawn (theme, fonts)
 function readColors() {
   const cs = getComputedStyle(document.documentElement);
-  for (const n of ['paper', 'ink', 'ink-soft', 'text', 'muted', 'context', 'siding', 'east', 'west', 'special', 'hold', 'panel', 'rule', 'local', 'lake', 'lulu', 'nwm', 'bcer', 'bcer-cream', 'cp', 'gn', 'cn', 'pge', 'nar', 'si', 'si-gold', 'cpss-funnel', 'bb', 'bb-funnel', 'cnss-funnel', 'uss', 'uss-funnel', 'gif', 'gif-funnel', 'nvf', 'nvf-funnel', 'hnc', 'hnc-funnel', 'ass', 'ass-funnel', 'byn', 'byn-funnel', 'bst', 'bst-funnel', 'qlf', 'qlf-funnel', 'tsl', 'tsl-funnel', 'snc', 'snc-funnel', 'csl', 'csl-funnel', 'pab', 'pab-funnel', 'mln', 'mln-funnel', 'np', 'sps', 'gwwd', 'onr', 'acr', 'nyc', 'dh', 'tem', 'cgt', 'rs', 'aj', 'tir', 'thb', 'hlb', 'hlb-funnel', 'lps', 'lps-gold', 'grr', 'len', 'msc', 'nst', 'qrl', 'nfr', 'cnw', 'up', 'milw', 'arr', 'wpy', 'wpy-gold', 'loco', 'tie', 'dash', 'freight', 'water'])
+  for (const n of ['paper', 'ink', 'ink-soft', 'text', 'muted', 'context', 'siding', 'east', 'west', 'special', 'hold', 'panel', 'rule', 'local', 'lake', 'lulu', 'nwm', 'bcer', 'bcer-cream', 'cp', 'gn', 'cn', 'pge', 'nar', 'si', 'si-gold', 'cpss-funnel', 'bb', 'bb-funnel', 'cnss-funnel', 'uss', 'uss-funnel', 'gif', 'gif-funnel', 'nvf', 'nvf-funnel', 'hnc', 'hnc-funnel', 'ass', 'ass-funnel', 'byn', 'byn-funnel', 'bst', 'bst-funnel', 'qlf', 'qlf-funnel', 'tsl', 'tsl-funnel', 'snc', 'snc-funnel', 'csl', 'csl-funnel', 'pab', 'pab-funnel', 'mln', 'mln-funnel', 'cdgb', 'cdgb-funnel', 'np', 'sps', 'gwwd', 'onr', 'acr', 'nyc', 'dh', 'tem', 'cgt', 'rs', 'aj', 'tir', 'thb', 'hlb', 'hlb-funnel', 'lps', 'lps-gold', 'grr', 'len', 'msc', 'nst', 'qrl', 'nfr', 'cnw', 'up', 'milw', 'arr', 'wpy', 'wpy-gold', 'loco', 'tie', 'dash', 'freight', 'water'])
     colors[n] = cs.getPropertyValue('--' + n).trim();
   baseRev++;                                                        // the base picture is in the old colours
 }

@@ -401,6 +401,17 @@
     "water_east.json",
     "traces/lakes/cp_pa_fw_track.kml"
    ]
+  },
+  {
+   "name": "cdgb_build",
+   "script": "cdgb_build.py",
+   "needs": [
+    "cp_manitoba_build",
+    "on_build"
+   ],
+   "inputs": [
+    "water_east.json"
+   ]
   }
  ]
 }
