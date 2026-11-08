@@ -5,7 +5,7 @@ Saturdays and from Buffalo Wednesdays, South American from Buffalo Saturdays and
 also in Central), shown on the Pacific clock: three hours earlier than Eastern, two earlier than Central.
 Ports: Brendan's points (Buffalo is the Lackawanna (D.L.&W.) depot); Port Arthur is the C.P.R. dock and Duluth the Northern Pacific dock no. 4, the stops already on
 file for the CP steamships and the Noronic. The printed passing points (Cove Island, the St. Clair River, the St. Mary's River, the Soo locks, Isle Royale) are
-timing points on the page, not stops in the GTFS. The Keweenaw Waterway is in neither water layer: it is drawn here from rough points (Claude's, to be checked).
+timing points on the page, not stops in the GTFS. The Keweenaw Waterway is in neither lane layer: it is traced here off the basemap's water.
 Same method as cp_lakes_build.py. Run after cp_manitoba_build."""
 import csv, json, math, os, re
 from shapely.geometry import MultiPolygon, Polygon
@@ -49,9 +49,11 @@ P = {'CHI': ('Chicago (Michigan Avenue Bridge)', dms('41°53\'18.79"N 87°37\'26
      'SOO': ('"Soo" Locks', (-84.352, 46.504), 'Passing point: the locks at Sault Ste. Marie', 0),
      'IR': ('Isle Royale (Mott Island)', (-88.520, 48.090), 'Passing point: Isle Royale, by Mott Island and out by Passage Island', 0)}
 def gid(k): return 'PORT_' + re.sub(r'\W+', '_', P[k][0].upper()).strip('_') if P[k][3] else 'PASS_CDGB_' + k
-# the Keweenaw Waterway: Keweenaw Bay (lower entry) - Portage River - Portage Lake - Houghton - the ship canal - Lake Superior (upper entry). Rough points.
-KEW_IN = [(-88.420, 46.965), (-88.455, 47.000), (-88.495, 47.040), (-88.535, 47.085), (-88.560, 47.112)]
-KEW_OUT = [(-88.600, 47.133), (-88.635, 47.165), (-88.645, 47.205), (-88.632, 47.236), (-88.620, 47.262)]
+# the Keweenaw Waterway: Keweenaw Bay (lower entry) - Portage River - Portage Lake - Houghton - the ship canal - Lake Superior (upper entry), traced off the basemap water
+KEW_IN = [(-88.430, 46.966), (-88.435, 46.980), (-88.440, 46.992), (-88.452, 47.006), (-88.468, 47.018), (-88.470, 47.032), (-88.490, 47.060), (-88.505, 47.085),
+          (-88.508, 47.105), (-88.530, 47.117), (-88.555, 47.121)]
+KEW_OUT = [(-88.595, 47.125), (-88.614, 47.128), (-88.624, 47.137), (-88.632, 47.152), (-88.640, 47.168), (-88.633, 47.180), (-88.626, 47.192), (-88.620, 47.205),
+           (-88.620, 47.216), (-88.628, 47.232), (-88.640, 47.245)]
 PASSAGE = (-88.390, 48.212)          # between Passage Island and Blake Point
 WHITEFISH = (-85.00, 46.93)          # as nn_build: out of Whitefish Bay
 # a line: a list of ports (keys) and ('via', points) / ('track', points); Sea lanes between, Brendan-style tracks drawn straight

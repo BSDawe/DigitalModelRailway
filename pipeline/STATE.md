@@ -2445,6 +2445,16 @@ Stations of different railways within 250 m (70 pairs; script: same check over v
 - NS&T / CN steamers page (condensed tables) saved: dmr-sources og1948_cnq/nst_cn_steamers_condensed.png. Questions out to Brendan (track KMZ, Port
   Dalhousie cars, Toronto - Port Dalhousie boat, Cobourg - Genesee points, colours).
 
+## Version 142 (7 November 2026): Chicago, Duluth and Georgian Bay Transit Co.
+- New step cdgb_build.py (after cp_manitoba_build; lane cache cdgb_legs.json), four lines, one weekly sailing each, from Brendan's timetable page (year not printed):
+  cdna_e North American Chicago Sat 6.30p CST - Mackinac Island - Cove Island - Parry Sound (Town Dock) - St. Clair River - Detroit - Cleveland - Buffalo Wed 11.30a;
+  cdna_w Buffalo Wed 7.30p - Detroit - Mackinac - Chicago Sat 10.45a CST; cdsa_w South American Buffalo Sat 8.30p - Cleveland - Detroit - St. Mary's River - Soo Locks -
+  Houghton (Keweenaw Waterway) - Isle Royale - Port Arthur (C.P.R. Dock) - Duluth (N.P. Dock No. 4) Wed 9.00a CST; cdsa_e Duluth Wed 2.00p CST - Soo - Detroit - Buffalo Sat 11.00a.
+- Ports from Brendan (Buffalo = the Lackawanna (D.L.&W.) depot, for a future DL&W line); Port Arthur and Duluth are the existing CP / Noronic stops. Printed passing
+  points (Cove Island, St. Clair River, St. Mary's River at De Tour, Soo Locks, Isle Royale) are page timing points only, not GTFS stops (gids PASS_CDGB_*).
+- Keweenaw Waterway is in neither lane layer: traced by hand off the basemap water (KEW_IN / KEW_OUT). Livery cdgb is a placeholder teal (#1d6b6b / #6cc5c5).
+- Each boat is one ship (turnarounds: N.A. Buffalo 8 h, Chicago 7.75 h; S.A. Duluth 5 h, Buffalo 9.5 h).
+
 ## Version 141 (7 November 2026): C.S.L. boats named
 - The boats carry their names (shown as the boat label, like the car ferry Ontario): Cayuga (Queenston - Toronto) and Kingston (lake steamer), both from a 1949-season account (Thousand Islands Life, "Niagara
   to the Sea"); Rapids Prince (the only rapids boat running by then: Rapids King laid up 1931, Rapids Queen retired 1929). Saguenay: "One of the Bateaux
