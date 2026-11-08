@@ -320,7 +320,7 @@ mkline('csrp', 'Prescott – Montreal: the rapids (Canada Steamship Lines)', rp_
        'Canada Steamship Lines, Sailing Schedules season 1948 (Brendan); Eastern Standard time as printed', 'csl')
 # Montreal - Quebec - Murray Bay - Tadoussac - the Saguenay (Brendan, 7 Nov 2026), daily both ways, two nights' sailing each way (two ships each way)
 sg_route, sg_st = water_route([MTV, SOR, TRV, QFW, MUR, SIM, TAD, BAG], 120)
-SN = ' Montreal - Quebec - Murray Bay - Tadoussac - Saguenay: daily from late May to late September.'
+SN = ' One of the Bateaux Blancs, the white fleet. Montreal - Quebec - Murray Bay - Tadoussac - Saguenay: daily from late May to late September.'
 M = [ctrip('CSSG', sg_st, 0, 'daily', [(0, '6.45p', '6.45p'), (1, '9.45p', '9.45p'), (2, '+12.15a', '+12.15a'), (3, '+5.30a', '+7.30a'), (4, '+12.00p', '+1.00p'), (5, '+2.30p', '+2.30p'),
                                        (6, '+4.30p', '+5.30p'), (7, '+9.15p', '+9.15p')], SN),
      ctrip('CSSG', sg_st, 1, 'daily', [(7, '6.00a', '6.00a'), (6, '9.35a', '9.50a'), (5, '11.50a', '11.50a'), (4, '1.10p', '1.25p'), (3, '6.00p', '6.30p'), (2, '11.30p', '11.30p'),
