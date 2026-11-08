@@ -2445,6 +2445,11 @@ Stations of different railways within 250 m (70 pairs; script: same check over v
 - NS&T / CN steamers page (condensed tables) saved: dmr-sources og1948_cnq/nst_cn_steamers_condensed.png. Questions out to Brendan (track KMZ, Port
   Dalhousie cars, Toronto - Port Dalhousie boat, Cobourg - Genesee points, colours).
 
+## Version 141 (7 November 2026): C.S.L. boats named
+- Trip notes name the boats: Cayuga (Queenston - Toronto) and Kingston (lake steamer), both from a 1949-season account (Thousand Islands Life, "Niagara
+  to the Sea"); Rapids Prince (the only rapids boat running by then: Rapids King laid up 1931, Rapids Queen retired 1929). Saguenay: "One of the Bateaux
+  Blancs, the white fleet" (Brendan: the four Saguenay boats, Tadoussac, St. Lawrence, Quebec, Richelieu; the timetable needs three).
+
 ## Version 140 (7 November 2026): full rebuild
 - Full build after the ab_lines.py change: motor trains are now flagged in the code (142 trips), not hand-patched parts. Train 77 (on_cn_t082d) runs over the
   CP from Prescott Junction into Prescott (by the wharf). Ridgeway and the H&LB minor landings are in. check_gtfs: 510 routes, 3851 trips; one problem, already known:
