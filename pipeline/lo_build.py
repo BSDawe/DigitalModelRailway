@@ -285,15 +285,16 @@ GAP = [(-79.3600, 43.6375), (-79.3445, 43.6325), (-79.3380, 43.6260)]   # the Ea
 SVC.update({'MoFr': 'W_1111100', 'SaSu': 'W_0000011', 'SaMoWe': 'W_1010010', 'SuTuTh': 'W_0101001'})
 DAYS.update({'MoFr': 'Monday to Friday', 'SaSu': 'Saturday and Sunday (and July 1, Aug. 2, Sept. 6)', 'SaMoWe': 'Saturday, Monday and Wednesday', 'SuTuTh': 'Sunday, Tuesday and Thursday'})
 CSLN_ = ' Canada Steamship Lines, season 1948. Printed in Eastern Standard time.'
+CSL_BOAT = {'CSQT': 'Cayuga', 'CSLK': 'Kingston', 'CSRP': 'Rapids Prince', 'CSSG': 'Bateaux Blancs'}
 def ctrip(pfx, st, d, dy, calls, note):   # calls: (station index, arrive, leave); '+' = next day, '~' = estimated
     def t(x): return hm(x.lstrip('+~')) - EST + (86400 if x.startswith('+') else 0)
     stops = [[i, t(a), t(b), 0 if a.startswith('~') else 1] for i, a, b in calls]
     i0, i1 = calls[0][0], calls[-1][0]
-    return dict(id=f'{pfx}-{"DU"[d]}{calls[0][2].lstrip("+~").replace(".", "")}{dy}', num='C.S.L. steamer', name='C.S.L. steamer', svc=SVC[dy], dir=d, vessel='', stops=stops,
+    return dict(id=f'{pfx}-{"DU"[d]}{calls[0][2].lstrip("+~").replace(".", "")}{dy}', num=CSL_BOAT[pfx], name='C.S.L. steamer', svc=SVC[dy], dir=d, vessel=CSL_BOAT[pfx], stops=stops,
                 note=f"{st[i0]['name']} {ptxt(t(calls[0][2]) + EST)} to {st[i1]['name']} ({DAYS[dy]})." + note + CSLN_)
 # Toronto - Niagara-on-the-Lake - Queenston
 qt_route, qt_st = water_route([TCS] + GAP + [NOTL, QUE], 80)
-QN = ' Steamer Cayuga (the boat on this run in 1949). Queenston - Toronto steamer, with the Canada Coach Lines motor coach to and from Niagara Falls.'
+QN = ' The Cayuga was on this run in 1949. Queenston - Toronto steamer, with the Canada Coach Lines motor coach to and from Niagara Falls.'
 M = []
 for dy, rows in (('MoFr', [('7.15a', '9.20a', '9.55a'), ('5.00p', '7.00p', '7.35p')]), ('SaSu', [('7.15a', '9.20a', '9.55a'), ('1.00p', '3.15p', '3.50p'), ('8.30p', '10.30p', '11.05p')])):
     for a, b, c in rows: M.append(ctrip('CSQT', qt_st, 0, dy, [(0, a, a), (1, b, b), (2, c, c)], QN + (' June 12 to Sept. 11.' if a == '8.30p' else '')))
@@ -303,7 +304,7 @@ mkline('csqt', 'Toronto – Queenston (Canada Steamship Lines)', qt_route, qt_st
        'Canada Steamship Lines, Sailing Schedules season 1948 (Brendan); Eastern Standard time as printed', 'csl')
 # the lake steamer: Toronto - Rochester - Kingston - Alexandria Bay - Brockville - Prescott Dock
 lk_route, lk_st = water_route([TCS] + GAP + [ROC, KGN, ALX, BRK, PRE], 150)
-LN = ' Steamer Kingston (the boat on this run in 1949). Toronto - Rochester - 1000 Islands - Prescott - Montreal: the lake steamer; eastbound passengers change at Prescott Dock to the rapids steamer, westbound passengers come up from Montreal by Canadian National special train (Montreal 8.50 a.m., Prescott Dock 11.40 a.m.).'
+LN = ' The Kingston was on this run in 1949. Toronto - Rochester - 1000 Islands - Prescott - Montreal: the lake steamer; eastbound passengers change at Prescott Dock to the rapids steamer, westbound passengers come up from Montreal by Canadian National special train (Montreal 8.50 a.m., Prescott Dock 11.40 a.m.).'
 M = [ctrip('CSLK', lk_st, 0, 'SaMoWe', [(0, '1.30p', '1.30p'), (1, '8.00p', '8.45p'), (2, '+2.40a', '+3.10a'), (3, '+5.20a', '+5.20a'), (5, '+7.30a', '+7.30a')],
            LN + ' May 29, then June 2 to Sept. 18. Does not stop at Brockville eastbound.'),
      ctrip('CSLK', lk_st, 1, 'SuTuTh', [(5, '12.00p', '12.00p'), (4, '1.00p', '1.00p'), (3, '2.35p', '2.35p'), (2, '4.50p', '5.00p'), (1, '11.30p', '11.50p'), (0, '+6.45a', '+6.45a')],
@@ -313,14 +314,14 @@ mkline('cslk', 'Toronto – Rochester – 1000 Islands – Prescott (Canada Stea
 # the rapids steamer, downstream only: Prescott Dock - Cornwall - Montreal (Victoria Pier)
 SOULANGES = [(-74.210, 45.245), (-74.185, 45.275), (-74.155, 45.298), (-74.090, 45.302), (-74.030, 45.310), (-73.975, 45.322), (-73.930, 45.345)]   # the old river past Coteau, the Cedars and the Cascades (not the Beauharnois power canal)
 rp_route, rp_st = water_route([PRE, CORN] + SOULANGES + [MTV], 60)
-RN = (' Rapids Prince, the rapids steamer, downstream only: shoots the Galops, Rapide du Plat and Long Sault rapids (nine miles) and the Lachine Rapids (a drop of 56 feet);'
+RN = (' The rapids steamer, downstream only: shoots the Galops, Rapide du Plat and Long Sault rapids (nine miles) and the Lachine Rapids (a drop of 56 feet);'
       ' westbound passengers go back by Canadian National special train. May 30, then June 3 to Sept. 19.')
 M = [ctrip('CSRP', rp_st, 0, 'SuTuTh', [(0, '7.45a', '7.45a'), (1, '11.15a', '11.15a'), (2, '6.30p', '6.30p')], RN)]
 mkline('csrp', 'Prescott – Montreal: the rapids (Canada Steamship Lines)', rp_route, rp_st, M, ['to Montreal', 'to Prescott'],
        'Canada Steamship Lines, Sailing Schedules season 1948 (Brendan); Eastern Standard time as printed', 'csl')
 # Montreal - Quebec - Murray Bay - Tadoussac - the Saguenay (Brendan, 7 Nov 2026), daily both ways, two nights' sailing each way (two ships each way)
 sg_route, sg_st = water_route([MTV, SOR, TRV, QFW, MUR, SIM, TAD, BAG], 120)
-SN = ' One of the Bateaux Blancs, the white fleet. Montreal - Quebec - Murray Bay - Tadoussac - Saguenay: daily from late May to late September.'
+SN = ' One of the Bateaux Blancs, the white fleet of Saguenay steamers. Montreal - Quebec - Murray Bay - Tadoussac - Saguenay: daily from late May to late September.'
 M = [ctrip('CSSG', sg_st, 0, 'daily', [(0, '6.45p', '6.45p'), (1, '9.45p', '9.45p'), (2, '+12.15a', '+12.15a'), (3, '+5.30a', '+7.30a'), (4, '+12.00p', '+1.00p'), (5, '+2.30p', '+2.30p'),
                                        (6, '+4.30p', '+5.30p'), (7, '+9.15p', '+9.15p')], SN),
      ctrip('CSSG', sg_st, 1, 'daily', [(7, '6.00a', '6.00a'), (6, '9.35a', '9.50a'), (5, '11.50a', '11.50a'), (4, '1.10p', '1.25p'), (3, '6.00p', '6.30p'), (2, '11.30p', '11.30p'),
