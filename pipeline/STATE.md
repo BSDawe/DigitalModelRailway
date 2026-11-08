@@ -2446,7 +2446,7 @@ Stations of different railways within 250 m (70 pairs; script: same check over v
   Dalhousie cars, Toronto - Port Dalhousie boat, Cobourg - Genesee points, colours).
 
 ## Version 141 (7 November 2026): C.S.L. boats named
-- Trip notes name the boats: Cayuga (Queenston - Toronto) and Kingston (lake steamer), both from a 1949-season account (Thousand Islands Life, "Niagara
+- The boats carry their names (shown as the boat label, like the car ferry Ontario): Cayuga (Queenston - Toronto) and Kingston (lake steamer), both from a 1949-season account (Thousand Islands Life, "Niagara
   to the Sea"); Rapids Prince (the only rapids boat running by then: Rapids King laid up 1931, Rapids Queen retired 1929). Saguenay: "One of the Bateaux
   Blancs, the white fleet" (Brendan: the four Saguenay boats, Tadoussac, St. Lawrence, Quebec, Richelieu; the timetable needs three).
 
