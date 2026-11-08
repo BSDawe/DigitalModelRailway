@@ -1,0 +1,60 @@
+# Digital Model Railway: handover for a new chat (8 November 2026)
+
+Read this first, then STATE.md: "Starting a fresh chat", "Build", "Conventions Brendan has set", "Checks" and the "TO DO (1 November 2026)" list. The
+version sections at the end of STATE.md (Versions 130-142) hold the details of recent work. Everything else in STATE.md is reference: search it, don't read it through.
+
+## Where things stand
+- Version 142 is published (https://bsdawe.github.io/DigitalModelRailway/): 514 lines, 3855 trips, 6050 stops, 51 agencies.
+- check_gtfs reports one problem, which is known and accepted: CP-14-SKJCP13 at Minneapolis. The 1947 Soo Line arrival (6.30 a.m.) is after C&NW 404 leaves (6.25).
+- A leftover branch, `wip-cdgb`, is on GitHub (the proxy refused to delete it). It is merged; Brendan can delete it.
+
+## Working with Brendan
+- Ask before building when something is unclear. Don't build ahead of him on items marked "waiting" or "do not build ahead".
+- He dislikes slow work: batch changes into one rebuild, and run only the steps a change touches.
+- Connections and buses are not trains, so they are not drawn.
+- Times are shown on the Pacific clock. Notes say what time zone was printed (e.g. "Eastern Standard Time as printed").
+- Most timetables come from the Official Guide, May 1948. Name the source in the trip notes and the line `src`.
+- He sends places as DMS coordinates, KML or traces. Use his points as given. Shared stops use the gid already on file (e.g. CP_BALA, PORT_DULUTH_...).
+- He doesn't need running commentary. Report what changed, what is uncertain, and anything he needs to check.
+
+## Routine
+- Test any page change in a browser (Playwright, `pipeline/site/` served on a local port) before pushing.
+- Commit messages end with the Co-Authored-By / Claude-Session lines the session gives you.
+- Pushing to `main` republishes the site (GitHub Actions runs `build.py --assemble` from the committed parts). So:
+  - while a build is running, commit only source edits, never half-written `parts/`;
+  - don't write files into traces/ or the timetable CSVs during a build;
+  - unfinished work that must be pushed goes on a side branch.
+- After each version: add a "## Version N" section to STATE.md and update its top line. Then mirror it to the claude.ai project:
+  `Projects project_write(path='claude/STATE.md', local_path=<repo>/pipeline/STATE.md)` (and this file as `claude/HANDOFF.md`).
+- If a stop hook says there are "unpushed commits" after a push, refresh the remote ref: `git fetch origin '+refs/heads/main:refs/remotes/origin/main'`.
+- Run one step only:
+  `python3 -c "import build; build.stale_reason=lambda s,p,r: 'asked' if s['name']=='lo_build' else None; build.main([])"`
+- Full build: `timeout 7100 python3 -u build.py > log` in the background, about 70-80 minutes (on_build about 60).
+- Ontario dry run: `ON_DRY='key*' python3 on_build.py`. Ontario connectors are in `traces/ontario/brendan/ontario_quebec_links.geojson`.
+
+## Boats (recent work)
+- `lo_build.py` holds the lake and river boats in Ontario and Quebec:
+  - Pointe au Baril, the Muskoka Lakes, Huntsville & Lake of Bays, the Niagara and Cobourg boats, Canada Steamship Lines.
+  - Helpers: port(), dms(), water_route(), mkline(), ctrip().
+  - Water comes from basemap tiles plus `water_east.json`. A canal is added as a buffered line (see the Port Carling corridor).
+- `cdgb_build.py` (new in Version 142) holds the North American and South American:
+  - Lanes are cached in `cdgb_legs.json`.
+  - The Keweenaw Waterway is hand-traced off the basemap water.
+  - Printed passing points are page-only timing points (gids PASS_CDGB_*), not GTFS stops.
+  - The livery is a placeholder teal.
+- Fleet (Brendan):
+  - The C.S.L. rapids boat is the Rapids Prince.
+  - Cayuga (Niagara run) and Kingston (lake steamer) are named from a 1949-season account.
+  - The four Saguenay boats are the Bateaux Blancs (the white fleet); the timetable needs three of them.
+- A new livery needs: CSS vars in 3 places, `.badge.v.X`, a BOAT_COLOR entry, and an entry in the colors list.
+
+## Open items
+- Brendan is checking the Montreal suburban trains against the CN Montreal employee timetable of 20 June 1948 himself. Wait for his corrections.
+- Brendan will send another page of C.S.L. routes.
+- Still to do:
+  - the Prescott - Ogdensburg car ferry (CP Car & Passenger Transfer Co.);
+  - the CN Peebles - Handsworth intermediate stops;
+  - the company colours for C.D.&G.B.;
+  - the "TO CHECK" items in the STATE.md to-do list;
+  - the joint-station review and the expansion-joint pauses (older to-dos in STATE.md).
+- `claude/incoming-sk-nrwn.md` in the project is an old (10 October) note and is superseded by STATE.md.

@@ -1,7 +1,7 @@
 # The Digital Model Railway — project state
 
 Read this first. It is meant to be enough to start a short, single-task chat without replaying the project's history.
-Last updated 4 November 2026 (Version 130: six more CN mixed trains, Foleyet - Armstrong; Version 129: the CP S.S. Manitoba cruise; Version 128: the CP Great Lakes steamers Keewatin and Assiniboia; Version 127: the S.S. Noronic; before that, Version 62 moved the project to git, with a hosted site with split data files and a tiled basemap).
+Last updated 8 November 2026 (Version 142: the Chicago, Duluth & Georgian Bay steamers North American and South American; 141: C.S.L. boats named; 140: full rebuild; 135-139: Niagara, the Muskoka, Pointe au Baril and C.S.L. boats, motor trains, the Newfoundland Railway; Version 62 moved the project to git). For a new chat, read HANDOFF.md first (short), then the sections of this file it points to.
 
 ## What this is
 
@@ -31,7 +31,7 @@ deploys `pipeline/site/`. It does not run the routing steps: run those here and 
    repo and into `tools/private_paths.txt`; traces Brendan draws himself go in the public repo.
 
 Needs Python with shapely, pyproj, numpy, networkx, scipy, scikit-image, Pillow, pyshp and playwright (Chromium at /opt/pw-browsers/chromium).
-A full `build.py --all` takes about 7 minutes (sk_build alone about 4.5).
+A full `build.py --all` now takes about 70-80 minutes (on_build alone about 60): run it in the background and do not write traces/ or timetable CSVs while it runs.
 
 ## The hosted site and the basemap (22 October 2026)
 
@@ -2200,11 +2200,11 @@ Stations of different railways within 250 m (70 pairs; script: same check over v
   to trace); the Table 44 Petrolia / Oil Springs branch miles (estimated); Otterville.
 - TO DO (Brendan, 3 Nov 2026): Canadian Pacific Car & Passenger Transfer Co. (the Prescott - Ogdensburg car ferry across the St. Lawrence).
 - TO DO (Brendan, 4 Nov 2026): CN Peebles - Handsworth (sk_cn_t162; Saskatchewan): the intermediate stops (the table prints only Peebles and Handsworth).
-- TO DO (Brendan, 4 Nov 2026): the Cobourg - Genesee (Rochester) car ferry across Lake Ontario.
-- STAGED FOR THE NEXT BUILD (4 Nov 2026): CN Table 124 Ridgeway at Brendan's point (-79.051745, 42.882312) (it had been placed by mileage on the line further
+- DONE (Version 135): the Cobourg - Genesee (Rochester) car ferry across Lake Ontario.
+- BUILT in Version 140 (staged 4 Nov 2026): CN Table 124 Ridgeway at Brendan's point (-79.051745, 42.882312) (it had been placed by mileage on the line further
   north, so the trains ran the wrong way to Port Colborne); a short link across the gap by Fort Erie Junction station (Brendan: the Dunnville division
   yard track to the GTR 1873 connector), so the trains take the Buffalo & Lake Huron. Dry run: 116.2 / 114.9 mi, all on track (Fort Erie - Ridgeway 9.5 / 8.9).
-- STAGED FOR THE NEXT BUILD (5 Nov 2026): H&LB landings not listed in the Official Guide shown as minor (lob_build MAJOR: Huntsville, Dorset, and the
+- BUILT in Version 140 (staged 5 Nov 2026): H&LB landings not listed in the Official Guide shown as minor (lob_build MAJOR: Huntsville, Dorset, and the
   two Portages as the Flyer's ends; Brendan to say if the Portages should be minor too).
 - TO DO (Brendan, 7 Nov 2026): check the Montreal suburban trains against the CN Montreal employee timetable of June 20, 1948:
   https://www.traingeek.ca/files/19480620-ett-montreal-16.pdf
