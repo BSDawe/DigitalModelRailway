@@ -1,0 +1,35 @@
+# Canadian National, Table 1 (Official Guide, April 25, 1948, page 1118; Brendan, 8 Nov 2026): the trains from Saint John. ATLANTIC time. STAGED for the next rebuild.
+# Nos. 25 / 26 Saint John - Moncton - Campbellton; Nos. 51 / 52 Saint John - Moncton - Pacific Junction (Mon., Wed., Fri.: sign a), on into the NTR (Table 23, the N.B. part not in hand).
+# Miles from Halifax as printed, but Saint John's is not printed (Table 1 gives Halifax and Saint John as two starting points): 99.3 = 188.7 less 89.4, Claude's figure
+# for Saint John - Moncton by Sussex, TO CHECK against the Saint John - Moncton table. Saint John - Moncton intermediate stops: that table (not in hand).
+# Signs: dagger ex Sun; a Mon., Wed., Fri.; f flag; the "thorn" (stops only to leave passengers) and other conditional stops entered as flag stops.
+#train col=No25 num=25 dir=down days="ex Sun" kind=passenger note="Daily except Sunday: Saint John 7.05 a.m., Moncton 10.40 a.m. to Campbellton 5.35 p.m. (Atlantic time)."
+#train col=No51 num=51 dir=down days="Mon,Wed,Fri" kind=passenger note="Mon., Wed. and Fri.: Saint John 12.50 p.m., Moncton 5.10 p.m., Pacific Junction 5.37 p.m., on by the National Transcontinental (Table 23)."
+#train col=No26 num=26 dir=up days=daily kind=passenger note="Campbellton 6.15 a.m. (dagger at Campbellton: daily except Sunday, TO CHECK) to Moncton 1.00 p.m. and Saint John 5.45 p.m. (Atlantic time)."
+#train col=No52 num=52 dir=up days="Mon,Wed,Fri" kind=passenger note="Mon., Wed. and Fri.: from the National Transcontinental (Table 23), Pacific Junction 1.06 p.m., Moncton 1.30 p.m., Saint John 5.45 p.m."
+mile,station,principal,prov,tz,No25,No51,No26,No52
+99.3,Saint John,1,NB,A,lv 7.05a,lv 12.50p,ar 5.45p,ar 5.45p
+188.7,Moncton,1,NB,A,10.40a,5.10p,1.00p,1.30p
+197.5,Berry Mills,0,NB,A,10.58a,f5.25p,12.44p,f1.11p
+200.9,Pacific Junction,0,NB,A,f11.07a,ar 5.37p,,lv 1.06p
+209.2,Canaan,0,NB,A,11.23a,,12.20p,
+217.8,Coal Branch,0,NB,A,11.40a,,11.59a,
+221.1,Adamsville,0,NB,A,11.52a,,11.52a,
+226.9,Harcourt,0,NB,A,12.05p,,11.41a,
+235.9,Kent Junction,1,NB,A,12.17p,,11.26a,
+246.9,Rogersville,0,NB,A,12.42p,,11.04a,
+258.8,Barnaby River,0,NB,A,1.08p,,10.35a,
+264.9,Derby Junction,0,NB,A,1.22p,,10.23a,
+268.6,Newcastle,1,NB,A,ar 1.35p / lv 1.55p,,ar 10.10a / lv 10.15a,
+289.4,Bartibog,0,NB,A,f2.38p,,f9.25a,
+312.7,Bathurst,1,NB,A,3.15p,,8.34a,
+324.1,Petit Rocher,0,NB,A,3.44p,,8.09a,
+332.2,Belledune,0,NB,A,3.58p,,7.52a,
+341.1,Jacquet River,0,NB,A,4.20p,,7.33a,
+344.7,Nash Creek,0,NB,A,4.29p,,7.23a,
+351.0,New Mills,0,NB,A,4.44p,,7.08a,
+356.8,Charlo,0,NB,A,4.58p,,6.54a,
+362.4,Eel River,0,NB,A,5.09p,,6.42a,
+366.8,Dalhousie Junction,1,NB,A,5.19p,,6.34a,
+370.3,McLeod,0,NB,A,f5.25p,,6.26a,
+375.6,Campbellton,1,NB,A,ar 5.35p,,lv 6.15a,

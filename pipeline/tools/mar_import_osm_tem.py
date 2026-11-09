@@ -25,17 +25,20 @@ def orient(ids, first):   # start the chain at the given end of its first way
     c = chain(ids); return c if math.dist(c[0], first) < math.dist(c[-1], first) else c[::-1]
 NOTE = 'OpenStreetMap (c) OpenStreetMap contributors, ODbL; export supplied by Brendan, 8 Nov 2026 (ways: {})'
 PIECES = [('Temiscouata Railway: Edmundston station - NTR (west leg)', ['847846930', '847846929', '847846928', '409427033'], (-68.3231, 47.3675), 'ok', None),
-          ('Temiscouata Railway: Connors branch (Couturier Siding - Baker Brook - Clair - Connors)',
+          ('Temiscouata Railway: Connors branch (Baker Brook Junction - Baker Brook - Clair - Connors)',
            ['136572900', '847846923', '136545145', '847846922', '917643611', '917643612', '764299884', '1032358071', '764299886', '1032358073', '1032358070', '764299885',
             '764299882', '136545150', '764412579', '764412573', '764412575', '764412574', '764412576', '119324207', '119324407', '119324115'], (-68.4947, 47.3039), 'ok', None),
           ('Temiscouata Railway: Connors, track beyond the station (1)', ['119324372'], (-68.8228, 47.2117), 'ok', None),
           ('Temiscouata Railway: Connors, track beyond the station (2)', ['119324384'], (-68.8228, 47.2117), 'ok', None),
           ('Temiscouata Railway: riverside line Edmundston - Baker Brook', ['847846924'], (-68.3279, 47.3614), 'pre1948',
            'abandoned 1941 (U of T historical rails); in 1948 the trains ran over the CN (NTR) by trackage rights (Brendan)')]
+BBJ = (-68.4950083, 47.3039499)     # Baker Brook Junction, the CN / Temiscouata junction west of Edmundston (Brendan, 8 Nov 2026; CGN "Couturier Siding" 25 m away)
 fs = []
 for name, ids, first, status, why in PIECES:
     p = dict(own='tem', name=name, constituent='Temiscouata Railway', branch=name.split(': ', 1)[1], note=NOTE.format(', '.join(ids)), cost=1.0, fid=None, group='osm', status=status)
     if why: p['why'] = why
-    fs.append(dict(type='Feature', properties=p, geometry=dict(type='LineString', coordinates=[[round(x, 7), round(y, 7)] for x, y in orient(ids, first)])))
+    c = orient(ids, first)
+    if 'Connors branch' in name: c = [BBJ] + c[1:]                     # start the branch at Brendan's junction point
+    fs.append(dict(type='Feature', properties=p, geometry=dict(type='LineString', coordinates=[[round(x, 7), round(y, 7)] for x, y in c])))
 json.dump(dict(type='FeatureCollection', features=fs), open(OUT, 'w'), separators=(',', ':'))
 print(OUT, len(fs))

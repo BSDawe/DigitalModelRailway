@@ -44,6 +44,7 @@ until decided) - `post1948` built after 1948 (Canso Causeway line, rail from May
    rights, CN over the E&NA ...) = `owner=('cn', 'cp')` with the other owner's cost raised in the graph, as `on_lines._graph` does.
 
 ## Open
+- To add (Brendan, 8 Nov 2026; stage 3, short lines with passenger service in 1948): the Maritime Coal, Railway & Power Co.; the Sydney & Louisburg.
 - Gaps to join (estimated links, Brendan to say): Gulf Shore - Caraquet 209 m; Montreal & European Short Line - Intercolonial 204 m; International Railway - NTR 487 m;
   Nova Scotia Railway - Dartmouth Branch 525 m; Liverpool & Milton - Halifax & South Western 676 m; Chatham Branch - Northern & Western 983 m; Pictou Town Branch -
   Nova Scotia Railway 1,180 m; Fredericton bridge extension - Chatham Branch 1,546 m. Cape Breton Railway (Wikipedia) ends 29.6 km short of other track.

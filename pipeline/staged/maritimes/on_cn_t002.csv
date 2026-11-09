@@ -1,0 +1,25 @@
+# Canadian National, Table 2: Oxford Junction - Oxford - Pugwash Junction - Pugwash - Tatamagouche - River John - Pictou (Official Guide, April 25, 1948, page 1118;
+# Brendan, 8 Nov 2026). ATLANTIC time. STAGED for the next rebuild. All four are motor trains (square sign: "motor train, limited baggage accommodation"), dagger: ex Sun.
+# 334 runs Oxford Jn. - Pugwash Junction - into Pugwash and back - Pictou; 333 the other way. 332 / 331 Oxford Jn. - Oxford only.
+# Miles as printed (from Oxford Jn.) to Pugwash 20.2; past the spur the printed miles (from Oxford Jn. by Pugwash Junction, 15.6 ...) plus 9.2 for the spur out and back,
+# as the Placentia branch (on_nfr_t003). Printed: Wallace 23.2, Malagash 27.5, Tatamagouche 35.1, Denmark 41.8, River John 47.2, Meadowville 55.3, Scotsburn 60.3,
+# Brown Point 67.4, Pictou 69.2. Pugwash: 333's arrival is not printed (lv 9.59 a.m.). Track: traces/maritimes/cn.geojson (Montreal & European Short Line, Pugwash branch).
+#train col=No334 num=334 dir=down days="ex Sun" kind=motor note="Motor train, daily except Sunday: Oxford Jn. 2.20 p.m., Pugwash 3.00 p.m., to Pictou 5.50 p.m."
+#train col=No332 num=332 dir=down days="ex Sun" kind=motor note="Motor train, daily except Sunday: Oxford Jn. 11.35 a.m. to Oxford 11.45 a.m."
+#train col=No333 num=333 dir=up days="ex Sun" kind=motor note="Motor train, daily except Sunday: Pictou 7.50 a.m., Pugwash 9.59 a.m., to Oxford Jn. 10.55 a.m."
+#train col=No331 num=331 dir=up days="ex Sun" kind=motor note="Motor train, daily except Sunday: Oxford 1.35 p.m. to Oxford Jn. 1.45 p.m."
+mile,station,principal,prov,tz,No334,No332,No333,No331
+0.0,Oxford Junction,1,NS,A,lv 2.20p,lv 11.35a,ar 10.55a,ar 1.45p
+2.8,Oxford,1,NS,A,2.25p,ar 11.45a,10.45a,lv 1.35p
+15.6,Pugwash Junction,0,NS,A,2.51p,,10.13a,
+20.2,Pugwash,1,NS,A,ar 3.00p,,lv 9.59a,
+24.8,Pugwash Junction,0,NS,A,3.21p,,9.43a,
+32.4,Wallace,0,NS,A,3.37p,,9.30a,
+36.7,Malagash,0,NS,A,3.48p,,9.20a,
+44.3,Tatamagouche,1,NS,A,4.10p,,9.01a,
+51.0,Denmark,0,NS,A,4.25p,,8.48a,
+56.4,River John,0,NS,A,4.35p,,8.37a,
+64.5,Meadowville,0,NS,A,4.51p,,8.21a,
+69.5,Scotsburn,0,NS,A,5.15p,,8.11a,
+76.6,Brown Point,0,NS,A,5.35p,,7.55a,
+78.4,Pictou,1,NS,A,ar 5.50p,,lv 7.50a,
