@@ -343,6 +343,9 @@
     "on_onr_t001c.csv",
     "on_onr_t018m.csv",
     "on_onr_t018s.csv"
+   ],
+   "input_globs": [
+    "traces/maritimes/*.geojson"
    ]
   },
   {
@@ -365,6 +368,9 @@
    "inputs": [
     "traces/ontario/brendan/lake_of_bays.kmz",
     "../basemap/tiles/index.json"
+   ],
+   "input_globs": [
+    "traces/maritimes/*.geojson"
    ]
   },
   {

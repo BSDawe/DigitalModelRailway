@@ -4,7 +4,7 @@ Read this first, then STATE.md: "Starting a fresh chat", "Build", "Conventions B
 version sections at the end of STATE.md (Versions 130-142) hold the details of recent work. Everything else in STATE.md is reference: search it, don't read it through.
 
 ## Where things stand
-- Version 142 is published (https://bsdawe.github.io/DigitalModelRailway/): 514 lines, 3855 trips, 6050 stops, 51 agencies.
+- Version 143 is published (https://bsdawe.github.io/DigitalModelRailway/): 517 lines, 3867 trips, 6097 stops, 51 agencies. The Maritimes have begun (Version 143 in STATE.md).
 - check_gtfs reports one problem, which is known and accepted: CP-14-SKJCP13 at Minneapolis. The 1947 Soo Line arrival (6.30 a.m.) is after C&NW 404 leaves (6.25).
 - A leftover branch, `wip-cdgb`, is on GitHub (the proxy refused to delete it). It is merged; Brendan can delete it.
 
@@ -47,6 +47,13 @@ version sections at the end of STATE.md (Versions 130-142) hold the details of r
   - Cayuga (Niagara run) and Kingston (lake steamer) are named from a 1949-season account.
   - The four Saguenay boats are the Bateaux Blancs (the white fleet); the timetable needs three of them.
 - A new livery needs: CSS vars in 3 places, `.badge.v.X`, a BOAT_COLOR entry, and an entry in the colors list.
+
+## Maritimes (Version 143)
+- Order (Brendan): 1 CN Maritimes, 2 CP Maritimes, 3 short lines (incl. Maritime Coal, Railway & Power; Sydney & Louisburg), 4 U.S. connections.
+- Track: pipeline/traces/maritimes/ (README there), read by mar_tracks.py (`python3 mar_tracks.py` after adding a file). U.S. railways get their own folders.
+- The Maritime timetables are built in on_build (on_cn_*, on_tem_*), so trains from Quebec run through as one trip. New files go in on_build's LAST set.
+- Trip chaining across files: do it when all the CN Maritime files are in (plan: pipeline/staged/maritimes/STAGED.md).
+- on_build now takes about 100 s (not 60 min); a full `build.py` after an on_build change takes about 8 min (lo_build 3 min).
 
 ## Open items
 - Brendan is checking the Montreal suburban trains against the CN Montreal employee timetable of 20 June 1948 himself. Wait for his corrections.

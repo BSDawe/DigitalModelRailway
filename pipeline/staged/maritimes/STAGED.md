@@ -1,5 +1,7 @@
 # Staged for the next full rebuild
 
+BUILT in Version 143 (8 Nov 2026): the Témiscouata files and page 1118 (Tables 1, 1s, 1a, 2). What remains below: the trip-chaining plan and the open items.
+
 Brendan, 8 Nov 2026: build these through the Quebec build (on_build / on_lines), together with the batch of CN Maritime track, in one rebuild. Nothing here is read by
 any step until it is moved into `pipeline/`. Track: `traces/maritimes/` (`python3 mar_tracks.py` for what is there and how it joins).
 

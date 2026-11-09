@@ -1,7 +1,7 @@
 # The Digital Model Railway — project state
 
 Read this first. It is meant to be enough to start a short, single-task chat without replaying the project's history.
-Last updated 8 November 2026 (Version 142: the Chicago, Duluth & Georgian Bay steamers North American and South American; 141: C.S.L. boats named; 140: full rebuild; 135-139: Niagara, the Muskoka, Pointe au Baril and C.S.L. boats, motor trains, the Newfoundland Railway; Version 62 moved the project to git). For a new chat, read HANDOFF.md first (short), then the sections of this file it points to.
+Last updated 8 November 2026 (Version 143: the Maritimes begin: the Temiscouata to Edmundston and Connors, CN Tables 1, 1a and 2 in N.B. and N.S., the Maritime track bank; 142: the Chicago, Duluth & Georgian Bay steamers North American and South American; 141: C.S.L. boats named; 140: full rebuild; 135-139: Niagara, the Muskoka, Pointe au Baril and C.S.L. boats, motor trains, the Newfoundland Railway; Version 62 moved the project to git). For a new chat, read HANDOFF.md first (short), then the sections of this file it points to.
 
 ## What this is
 
@@ -2444,6 +2444,44 @@ Stations of different railways within 250 m (70 pairs; script: same check over v
   the zone the timetable was printed in (no "shown in Pacific time ..."). FIX the same evening: ZOFF declared with var (hm runs above its line).
 - NS&T / CN steamers page (condensed tables) saved: dmr-sources og1948_cnq/nst_cn_steamers_condensed.png. Questions out to Brendan (track KMZ, Port
   Dalhousie cars, Toronto - Port Dalhousie boat, Cobourg - Genesee points, colours).
+
+## Version 143 (8 November 2026): the Maritimes begin (Temiscouata in N.B.; CN page 1118: Tables 1, 1a, 2)
+- MARITIME TRACK BANK: pipeline/traces/maritimes/ (README there: one file per owner or provenance; properties own, name, constituent, branch, note, cost, fid, group,
+  status; status says only whether the TRACK was there in 1948: ok / check / post1948 / pre1948 / quebec_overlap). Read as one set by mar_tracks.py
+  (features(owner=, status=, box=, dirs=); `python3 mar_tracks.py` = what is on file, connected groups, loose ends within 1.5 km). Files: cn.geojson (Wikipedia
+  Canadian Government Railways map data, Brendan's CN_Maritimes.gpkg, plus the Inverness & Richmond, Halifax & South Western, Middleton & Victoria Beach from
+  cnor_all.geojson), brendan.geojson (his Mulgrave - Point Tupper, Port Hawkesbury and Halifax North Street - Deepwater Terminal traces; Wikipedia track under them
+  cut), tem.geojson / tem_osm.geojson (Temiscouata: Wikipedia N.B. part; OSM export by Brendan: Edmundston station leg, Connors branch from Baker Brook Junction,
+  the 1941-abandoned riverside line as pre1948), industrial.geojson (colliery railways), links_estimated.geojson (Saint John: E&NA track end - Union Station,
+  4.5 km straight, until Brendan's trace). Importers (one-shot records): tools/mar_import_cgr.py, tools/mar_import_osm_tem.py.
+- U.S. railways (future) get folders of their own under traces/ (traces/mec, traces/bar ...), as do Canadian railways' tracks in the U.S. (CP across Maine:
+  e.g. traces/cpme); plain own codes, no region prefix. mar_tracks.DIRS / dirs= borrows them where a Maritime line meets them.
+- on_lines._links() now also reads the Maritime bank ('ok' pieces; read once); BOXES['tem'] to 47.15 N. steps.json: input_globs traces/maritimes/*.geojson for
+  on_build and lob_build. The Maritime lines are built in on_build (Brendan: so through trains are one trip).
+- Places: places/cgn_nb_places.csv, cgn_ns_places.csv, cgn_pe_places.csv (Brendan's CGN files, cut by tools/cgn_places.py; full files to go to the private repo).
+- on_tem_t001 now to St. Jacques Church and Edmundston (81.5 / 81.5 mi); on_tem_t003 mixed 3 / 4 Edmundston - Baker Brook Junction (CN NTR by trackage rights,
+  drawn CN) - Baker Brook - Clairs - Connors (31.1 / 31.6). Edmundston = Brendan's point, the CP / Temiscouata station (to share with CP later); Baker Brook
+  Junction (-68.4950083, 47.3039499) Brendan's.
+- on_cn_t001: the N.B. rows (Halifax, Moncton ... Newcastle, Bathurst ... Campbellton, Tide Head, Flatlands); the estimated boundary row gone (843.9 / 840.0 mi).
+  Nos. 1 / 2: dagger at Halifax / Moncton only, daily west of Campbellton (Brendan): through trips on six days (CN-1-ONCN001 Mon - Sat, CN-2-ONCN001 Sun - Fri) plus
+  the seventh day's Campbellton - Montreal run under the same number (CN-1-ONCN001-ONCN001, CN-2-ONCN001-ONCN001). Saint John times of 1 / 59 / 3 / 2 / 60 / 4
+  are connections (notes). Atlantic rows to Campbellton, Eastern beyond (tzrows; Campbellton's E.T. departures entered +1 h); OVER tznote (new key) for the
+  mixed-zone note. on_cn_t001s: 25 / 26 Saint John - Campbellton, 51 / 52 Saint John - Pacific Junction (Mon, Wed, Fri; on by the NTR, Table 23 N.B. part not in
+  hand); Saint John = Union Station (Brendan, 45.276776, -66.064504); Saint John's mile 99.3 is Claude's (89.4 to Moncton; traced 277.0 / 276.3).
+  on_cn_t001a: 36 / 35 from / to Campbellton. on_cn_t002 Oxford Jn. - Pugwash - Pictou motor 334 / 333 (into Pugwash and back), 332 / 331 Oxford Jn. - Oxford
+  (78.0 / 78.4). New files sort LAST in on_build so no older trip id changes (CN 332, 51, 52 are also Rutland / CV numbers).
+- Places (on_build OVER): CGN points on the line; Halifax = end of Brendan's trace 118 (South End station, APPROXIMATE: confirm); Moncton on the line at the printed
+  12.2 mi from Pacific Junction (APPROXIMATE); Newcastle, Bathurst, Oxford: CGN town snapped onto the line (APPROXIMATE). By mileage: Berry Mills, Canaan, Kent Jn.,
+  Barnaby River, Bartibog, Petit Rocher, Belledune, Jacquet River, New Mills, Eel River, McLeod, Baker Brook, Ledges, Little River Mills, Pugwash Jn., Wallace,
+  Malagash, River John, Meadowville, Brown Point (Brendan may send points).
+- Page: view "The Maritimes" (VIEWS maritimes, turned box 'q').
+- Checks: check_gtfs 1 problem (the known Minneapolis one); ab.py: only oncn001 moved (CN-1-ONCN001, the days), new oncn001s, oncn002, ontem003 and the N.B. rows.
+  517 lines, 3867 trips, 6097 stops.
+- STILL NEEDED: Halifax - Truro - Moncton table; Saint John - Moncton table; Table 23 N.B. part; Saint John track trace; Oxford Jn. connector (MESL - Intercolonial
+  204 m: the 002 trains found track anyway); No. 26 dagger at Campbellton (kept daily); Temiscouata No. 4 Baker Brook 8.15 - Edmundston 9.15 as read.
+- TO DO (Brendan, 8 Nov 2026): trip chaining across files and steps when all the CN Maritime files are in (then again for CP): plan in staged/maritimes/STAGED.md
+  (railway + number at the same stop, days compatible, auto under an hour, named trains only when the names agree, review list, GTFS block_id).
+- TO DO, short lines (stage 3): Maritime Coal, Railway & Power; Sydney & Louisburg. Order (Brendan): 1 CN Maritimes, 2 CP Maritimes, 3 short lines, 4 U.S. connections.
 
 ## Version 142 (7 November 2026): Chicago, Duluth and Georgian Bay Transit Co.
 - New step cdgb_build.py (after cp_manitoba_build; lane cache cdgb_legs.json), four lines, one weekly sailing each, from the Official Guide, May 1948 (page supplied by Brendan):

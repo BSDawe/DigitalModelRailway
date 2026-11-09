@@ -1,7 +1,7 @@
 # Canadian National, Table 1 (Official Guide, April 25, 1948, page 1118; Brendan, 8 Nov 2026): the trains from Saint John. ATLANTIC time. STAGED for the next rebuild.
 # Nos. 25 / 26 Saint John - Moncton - Campbellton; Nos. 51 / 52 Saint John - Moncton - Pacific Junction (Mon., Wed., Fri.: sign a), on into the NTR (Table 23, the N.B. part not in hand).
 # Miles from Halifax as printed, but Saint John's is not printed (Table 1 gives Halifax and Saint John as two starting points): 99.3 = 188.7 less 89.4, Claude's figure
-# for Saint John - Moncton by Sussex, TO CHECK against the Saint John - Moncton table. Saint John - Moncton intermediate stops: that table (not in hand).
+# for Saint John - Moncton by Sussex, TO CHECK against the Saint John - Moncton table. Saint John: Union Station (Brendan's point); track into it to be traced. Saint John - Moncton intermediate stops: that table (not in hand).
 # Signs: dagger ex Sun; a Mon., Wed., Fri.; f flag; the "thorn" (stops only to leave passengers) and other conditional stops entered as flag stops.
 #train col=No25 num=25 dir=down days="ex Sun" kind=passenger note="Daily except Sunday: Saint John 7.05 a.m., Moncton 10.40 a.m. to Campbellton 5.35 p.m. (Atlantic time)."
 #train col=No51 num=51 dir=down days="Mon,Wed,Fri" kind=passenger note="Mon., Wed. and Fri.: Saint John 12.50 p.m., Moncton 5.10 p.m., Pacific Junction 5.37 p.m., on by the National Transcontinental (Table 23)."
