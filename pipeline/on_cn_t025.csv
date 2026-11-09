@@ -1,0 +1,22 @@
+# Canadian National, Table 25: Charlottetown - Mount Stewart - Souris (Official Guide, April 25, 1948, page 1116 (Brendan, 9 Nov 2026)). ATLANTIC time.
+# Sherwood: flag stop, no times printed (not entered). Bullet: Mon., Wed. and Fri. until May 23, thereafter Mon., Wed., Thu. and Fri.; triangle: Tue., Thu. and Sat. until May 23, thereafter Tue. and Sat. (Table 28 notes). M215 / M216: the sign read as the natural (Sun., Tue., Thu.; TO CHECK). Signs (page legend): dagger daily except Sunday; a Mon., Wed., Fri.; b Tue., Thu., Sat.; d Mon., Wed., Thu., Fri.; o Tue. and Sat.; k Sat. only; natural sign Sun., Tue., Thu.; f flag; M mixed; square motor train.
+#train col=M55 num=55 dir=down days="Mon,Wed,Thu,Fri" kind=mixed note="Mixed, Mon., Wed., Thu. and Fri.: Charlottetown 2.30 p.m. to Souris 6.30 p.m."
+#train col=No51 num=51 dir=down days="Tue,Sat" kind=passenger note="Tue. and Sat.: Charlottetown 2.30 p.m. to Souris 5.30 p.m."
+#train col=M215 num=215 dir=down days="Sun,Tue,Thu" kind=mixed note="Mixed, Sun., Tue. and Thu.: Charlottetown 7.30 a.m. to Souris 11.30 a.m."
+#train col=No52 num=52 dir=up days="Tue,Sat" kind=passenger note="Tue. and Sat.: Souris 7.30 a.m. to Charlottetown 10.20 a.m."
+#train col=M56 num=56 dir=up days="Mon,Wed,Thu,Fri" kind=mixed note="Mixed, Mon., Wed., Thu. and Fri.: Souris 7.30 a.m. to Charlottetown 11.00 a.m."
+#train col=M216 num=216 dir=up days="Sun,Tue,Thu" kind=mixed note="Mixed, Sun., Tue. and Thu.: Souris 1.30 p.m. to Charlottetown 5.30 p.m."
+mile,station,principal,prov,tz,M55,No51,M215,No52,M56,M216
+0.0,Charlottetown,1,PE,A,lv 2.30p,lv 2.30p,lv 7.30a,ar 10.20a,ar 11.00a,ar 5.30p
+1.9,St. Dunstan's,0,PE,A,f2.37p,f2.35p,f7.37a,f10.10a,f10.48a,f5.20p
+3.9,Sherwood,0,PE,A,,,,,,
+5.3,Royalty Junction,1,PE,A,f2.50p,2.45p,7.50a,10.02a,10.40a,5.10p
+9.0,York,0,PE,A,3.02p,2.54p,8.02a,9.50a,10.24a,4.50p
+13.7,Bedford,0,PE,A,3.17p,3.06p,8.19a,9.37a,10.08a,4.35p
+22.1,Mount Stewart Junction,1,PE,A,3.45p,3.35p,9.15a,9.15a,9.40a,4.05p
+31.4,Morell,0,PE,A,4.16p,3.58p,9.42a,8.44a,8.57a,3.20p
+38.6,St. Peters,0,PE,A,4.45p,4.20p,10.05a,8.23a,8.33a,2.45p
+47.9,St. Charles,0,PE,A,f5.20p,f4.44p,f10.32a,f8.01a,f8.07a,f2.03p
+50.0,Bear River,0,PE,A,5.30p,4.50p,10.39a,7.56a,8.02a,1.56p
+55.3,Harmony Junction,1,PE,A,6.00p,5.07p,11.00a,7.42a,7.42a,1.42p
+60.1,Souris,1,PE,A,ar 6.30p,ar 5.30p,ar 11.30a,lv 7.30a,lv 7.30a,lv 1.30p

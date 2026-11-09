@@ -1,0 +1,11 @@
+# Canadian National, Tables 28 and 31: Summerside - Emerald Junction - Borden (Official Guide, April 25, 1948, page 1116 (Brendan, 9 Nov 2026)). ATLANTIC time.
+# Miles from Summerside, worked out from the printed miles from Charlottetown. Signs (page legend): dagger daily except Sunday; a Mon., Wed., Fri.; b Tue., Thu., Sat.; d Mon., Wed., Thu., Fri.; o Tue. and Sat.; k Sat. only; natural sign Sun., Tue., Thu.; f flag; M mixed; square motor train.
+#train col=M207 num=207 dir=down days="ex Sun" kind=mixed note="Mixed, daily except Sunday: Summerside 2.45 p.m., Emerald Junction 4.15 / 4.45 (with M53's Borden cars) to Borden 5.30 p.m. (printed 207-40)."
+mile,station,principal,prov,tz,M207
+0.0,Summerside,1,PE,A,lv 2.45p
+8.4,Kensington,1,PE,A,3.30p
+13.6,Freetown,0,PE,A,3.55p
+17.0,Emerald Junction,1,PE,A,ar 4.15p / lv 4.45p
+20.8,Kinkora,0,PE,A,4.58p
+24.3,Albany,0,PE,A,5.10p
+28.8,Borden,1,PE,A,ar 5.30p

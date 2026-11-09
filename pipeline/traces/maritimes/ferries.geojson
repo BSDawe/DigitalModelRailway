@@ -1,0 +1,37 @@
+{
+ "type": "FeatureCollection",
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "own": "water",
+    "name": "Borden - Cape Tormentine car ferry",
+    "status": "ok",
+    "note": "Train ferry across Northumberland Strait (Brendan, 9 Nov 2026: the trains run through, like CN at Detroit). Straight between the ends of the Borden and Cape Tormentine pier tracks: course APPROXIMATE.",
+    "constituent": "Canadian National car ferry (Northumberland Strait)",
+    "branch": ""
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -63.700029,
+      46.245421
+     ],
+     [
+      -63.72,
+      46.21
+     ],
+     [
+      -63.745,
+      46.17
+     ],
+     [
+      -63.77225,
+      46.13484
+     ]
+    ]
+   }
+  }
+ ]
+}

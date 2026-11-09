@@ -1,7 +1,7 @@
 # The Digital Model Railway — project state
 
 Read this first. It is meant to be enough to start a short, single-task chat without replaying the project's history.
-Last updated 9 November 2026 (Version 145: CN page 1115, N.S. and N.B. branches, Cabot Strait and Yarmouth - Boston steamers; Version 144: CN Table 4 Halifax - Truro - Moncton - Saint John; Version 143: the Maritimes begin: the Temiscouata to Edmundston and Connors, CN Tables 1, 1a and 2 in N.B. and N.S., the Maritime track bank; 142: the Chicago, Duluth & Georgian Bay steamers North American and South American; 141: C.S.L. boats named; 140: full rebuild; 135-139: Niagara, the Muskoka, Pointe au Baril and C.S.L. boats, motor trains, the Newfoundland Railway; Version 62 moved the project to git). For a new chat, read HANDOFF.md first (short), then the sections of this file it points to.
+Last updated 9 November 2026 (Version 146: CN page 1116, P.E.I., Pictou, Newcastle - Loggieville, Table 23 N.B. part, Borden - Cape Tormentine train ferry; Version 145: CN page 1115, N.S. and N.B. branches, Cabot Strait and Yarmouth - Boston steamers; Version 144: CN Table 4 Halifax - Truro - Moncton - Saint John; Version 143: the Maritimes begin: the Temiscouata to Edmundston and Connors, CN Tables 1, 1a and 2 in N.B. and N.S., the Maritime track bank; 142: the Chicago, Duluth & Georgian Bay steamers North American and South American; 141: C.S.L. boats named; 140: full rebuild; 135-139: Niagara, the Muskoka, Pointe au Baril and C.S.L. boats, motor trains, the Newfoundland Railway; Version 62 moved the project to git). For a new chat, read HANDOFF.md first (short), then the sections of this file it points to.
 
 ## What this is
 
@@ -2444,6 +2444,31 @@ Stations of different railways within 250 m (70 pairs; script: same check over v
   the zone the timetable was printed in (no "shown in Pacific time ..."). FIX the same evening: ZOFF declared with var (hm runs above its line).
 - NS&T / CN steamers page (condensed tables) saved: dmr-sources og1948_cnq/nst_cn_steamers_condensed.png. Questions out to Brendan (track KMZ, Port
   Dalhousie cars, Toronto - Port Dalhousie boat, Cobourg - Genesee points, colours).
+
+## Version 146 (9 November 2026): CN page 1116 (Table 23 N.B. part, Newcastle - Loggieville, Pictou, P.E.I.), Borden - Cape Tormentine train ferry
+- on_cn_t023 now runs Moncton - Pacific Junction - McGivney - Edmundston - Quebec (Table 23's N.B. part added; Nos. 51 / 52 taken out of on_cn_t001s). No. 51 Mon /
+  Wed / Fri from Moncton. No. 52 from Quebec Tue / Thu / Sat reaches Edmundston 4.30 a.m. and leaves 6.00 a.m. Mon / Wed / Fri, so the Saturday train lies over until
+  Monday: entered as 52 (Tue, Thu, through), 52s (Sat, Quebec - Edmundston), 52m (Mon, Edmundston - Moncton). 475.1 mi traced / 473.3. on_cn_t023f: Fredericton -
+  McGivney, Nos. 28 / 27 (35.0 / 35.6).
+- New: t024 Newcastle - Chatham - Loggieville (motors; 20.5 / 17.7, see Nelson below); t025 Charlottetown - Souris (60.1 / 60.1); t027 Charlottetown - Vernon -
+  Murray Harbor (out and back to Vernon from Lake Verde; 54.4 / 55.7); t028 Charlottetown - Borden - Cape Tormentine - Sackville (39, 40, M41, M42 through on the
+  car ferry; M206 Borden - Charlottetown; 89.0 / 88.7); t029 New Glasgow - Pictou (16.1 / 15.9); t030 Hopewell - New Glasgow - Pictou Landing (17.0 / 16.2); t031
+  Charlottetown - Summerside - Tignish (115.9 / 115.7); t031a Elmira - Souris (14.9 / 14.7); t031b Summerside - Emerald Jct. - Borden, M207 (29.0 / 28.8).
+  Not entered: Nos. 301 / 302 P.E.I. motors (last trips May 22 / 23), Table 31a's spring-only mixed trains, Table 28's connection rows (other tables).
+- TRAIN FERRY Borden - Cape Tormentine (Brendan, 9 Nov 2026: like CN at Detroit): traces/maritimes/ferries.geojson, own 'water' (dotted water line; the train itself
+  crosses), straight between the pier-track ends. Rows Borden (ferry slip) 43.0 and Cape Tormentine (ferry slip) 52.5 as printed; the trains creep the 0.8 mi between
+  station and slip in the printed 15 - 45 min.
+- Track: fid 26 (Harmony Jct. - Elmira, 9.9 mi = Table 31a) and fid 20 (Emerald Jct. - Kinkora - Albany, the Cape Traverse branch, which the Borden branch leaves)
+  set ok in the importer. links_estimated: Nelson, a 0.2 km tie where the Intercolonial and the Chatham Branch cross (no junction in the Wikipedia data); on_build
+  forces Derby Jct. - Chatham onto that track (printed Nelson Jct. is 1.4 mi short of the crossing: real connection wanted).
+- Places: MAR_PLACES gains the page's CGN points within 200 m of track plus hand points (track ends: Fredericton, Loggieville, Pictou Landing, Murray Harbor, Vernon,
+  Elmira, the two slips; junctions: Lake Verde, Emerald Jct.; projected: Charlottetown, Summerside; as on existing lines: Newcastle, Sackville, Stellarton, Pictou).
+  MAR_PE (P.E.I. files) drops N.S.'s St. Peters and Bedford. noplace: St. Charles (t025). t024: Chatham at the Chatham Branch end.
+- Mixed trains entered as plain numbers with kind=mixed (the page adds the M).
+- Checks: check_gtfs 1 known problem; 543 lines, 4009 trips, 6296 stops, 52 agencies. Compared with V145: only oncn023 changed among existing lines, plus the 10 new.
+- KNOWN: the Pictou trains run Stellarton - Westville over the coal companies' tracks (no CN piece joins the Pictou Town Branch; 1.2 km gap). oncn023 turns in
+  0.7 km to Brendan's Edmundston point (stub cut). Open questions: OPEN_QUESTIONS.md.
+- NEXT: the queued fixes (OPEN_QUESTIONS.md "Fixes queued") when Brendan says; trip chaining across the CN Maritime files; CP Maritimes.
 
 ## Version 145 (9 November 2026): CN page 1115 (Halifax - Sydney, N.S. branches, N.B. branches), Cabot Strait and Yarmouth - Boston steamers
 - Timetables (Atlantic time, shift -4 h, places MAR_PLACES; each spur its own file so trains don't detour onto it): on_cn_t005 Halifax - Sydney (5, 7, 9 /

@@ -1,0 +1,20 @@
+# Canadian National, Table 30: Hopewell - Stellarton - New Glasgow - Pictou Landing (Official Guide, April 25, 1948, page 1116 (Brendan, 9 Nov 2026)). ATLANTIC time.
+# No. 124 New Glasgow 10.30 - Stellarton 10.35 a.m. is the start of No. 263 (on_cn_t029.csv). Signs (page legend): dagger daily except Sunday; a Mon., Wed., Fri.; b Tue., Thu., Sat.; d Mon., Wed., Thu., Fri.; o Tue. and Sat.; k Sat. only; natural sign Sun., Tue., Thu.; f flag; M mixed; square motor train.
+#train col=No119 num=119 dir=down days="ex Sun" kind=motor note="Motor train, daily except Sunday: Hopewell 6.00 a.m. to Trenton 6.27 a.m."
+#train col=No121 num=121 dir=down days="ex Sun" kind=motor note="Motor train, daily except Sunday: Hopewell 7.13 a.m. to Pictou Landing 8.10 a.m."
+#train col=No123 num=123 dir=down days="ex Sun" kind=motor note="Motor train, daily except Sunday: Stellarton 5.00 p.m. to Pictou Landing 5.35 p.m."
+#train col=No125 num=125 dir=down days="ex Sun" kind=motor note="Motor train, daily except Sunday: Hopewell 6.35 p.m. to Stellarton 6.50 p.m."
+#train col=No131 num=131 dir=down days="Sat" kind=motor note="Motor train, Saturday only: Hopewell 11.00 p.m. to New Glasgow 11.25 p.m."
+#train col=No120 num=120 dir=up days="ex Sun" kind=motor note="Motor train, daily except Sunday: Stellarton 5.35 a.m. to Hopewell 5.53 a.m."
+#train col=No122 num=122 dir=up days="ex Sun" kind=motor note="Motor train, daily except Sunday: Trenton 6.38 a.m. to Hopewell 7.08 a.m."
+#train col=No124 num=124 dir=up days="ex Sun" kind=mixed note="Mixed, daily except Sunday: Pictou Landing 8.20 a.m. to New Glasgow 8.50 a.m.; on at 10.30 as No. 263 to Pictou (on_cn_t029.csv)."
+#train col=No126 num=126 dir=up days="ex Sun" kind=motor note="Motor train, daily except Sunday: Pictou Landing 5.40 p.m. to Hopewell 6.30 p.m."
+#train col=No130 num=130 dir=up days="Sat" kind=motor note="Motor train, Saturday only: New Glasgow 10.30 p.m. to Hopewell 10.55 p.m."
+mile,station,principal,prov,tz,No119,No121,No123,No125,No131,No120,No122,No124,No126,No130
+0.0,Hopewell,1,NS,A,lv 6.00a,lv 7.13a,,lv 6.35p,lv 11.00p,ar 5.53a,ar 7.08a,,ar 6.30p,ar 10.55p
+1.4,Eureka,0,NS,A,6.03a,7.17a,,f6.38p,11.05p,f5.45a,f7.03a,,6.23p,10.50p
+2.2,Ferrona Junction,0,NS,A,6.05a,7.22a,,f6.40p,11.08p,f5.43a,f7.01a,,6.20p,10.43p
+5.9,Stellarton,1,NS,A,6.17a,7.30a,lv 5.00p,ar 6.50p,11.18p,lv 5.35a,6.52a,,6.13p,10.36p
+7.9,New Glasgow,1,NS,A,6.23a,7.45a,5.10p,,ar 11.25p,,6.45a,ar 8.50a,6.06p,lv 10.30p
+9.6,Trenton,0,NS,A,ar 6.27a,7.48a,5.15p,,,,lv 6.38a,8.40a,5.58p,
+16.2,Pictou Landing,1,NS,A,,ar 8.10a,ar 5.35p,,,,,lv 8.20a,lv 5.40p,

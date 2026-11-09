@@ -1,0 +1,16 @@
+# Canadian National, Table 29: New Glasgow - Stellarton - Westville - Pictou (Official Guide, April 25, 1948, page 1116 (Brendan, 9 Nov 2026)). ATLANTIC time.
+# 124-263: the mixed from Pictou Landing (Table 30, No. 124, New Glasgow 8.50 a.m.) goes on as No. 263 at 10.30 (Stellarton 10.35, Table 30; 11.05 here, entered as arrive / leave). 262-5 printed so. Signs (page legend): dagger daily except Sunday; a Mon., Wed., Fri.; b Tue., Thu., Sat.; d Mon., Wed., Thu., Fri.; o Tue. and Sat.; k Sat. only; natural sign Sun., Tue., Thu.; f flag; M mixed; square motor train.
+#train col=No361 num=361 dir=down days="ex Sun" kind=motor note="Motor train, daily except Sunday: New Glasgow 6.10 a.m. to Pictou 7.15 a.m."
+#train col=No263 num=124-263 dir=down days="ex Sun" kind=mixed note="Mixed, daily except Sunday: New Glasgow 10.30 a.m. to Pictou 12.01 p.m. (No. 124 from Pictou Landing)."
+#train col=No265 num=265 dir=down days="ex Sun" kind=passenger note="Daily except Sunday: New Glasgow 3.00 p.m. to Pictou 4.20 p.m."
+#train col=No367 num=367 dir=down days="ex Sun" kind=motor note="Motor train, daily except Sunday: New Glasgow 10.45 p.m. to Pictou 11.50 p.m."
+#train col=No360 num=360 dir=up days="ex Sun" kind=motor note="Motor train, daily except Sunday: Pictou 5.00 a.m. to New Glasgow 5.50 a.m."
+#train col=No262 num=262-5 dir=up days="ex Sun" kind=mixed note="Mixed, daily except Sunday: Pictou 9.00 a.m. to New Glasgow 10.40 a.m. (printed 262-5)."
+#train col=No264 num=264 dir=up days="ex Sun" kind=passenger note="Daily except Sunday: Pictou 1.50 p.m. to New Glasgow 2.45 p.m."
+#train col=No366 num=366 dir=up days="ex Sun" kind=motor note="Motor train, daily except Sunday: Pictou 6.00 p.m. to New Glasgow 6.50 p.m."
+mile,station,principal,prov,tz,No361,No263,No265,No367,No360,No262,No264,No366
+0.0,New Glasgow,1,NS,A,lv 6.10a,lv 10.30a,lv 3.00p,lv 10.45p,ar 5.50a,ar 10.40a,ar 2.45p,ar 6.50p
+2.1,Stellarton,1,NS,A,6.30a,ar 10.35a / lv 11.05a,3.30p,11.00p,5.45a,9.55a,2.40p,6.45p
+5.1,Westville,0,NS,A,6.40a,11.20a,3.40p,11.10p,5.32a,9.45a,2.25p,6.30p
+14.1,Brown Point,0,NS,A,7.08a,11.49a,4.10p,11.40p,5.05a,9.05a,1.58p,6.05p
+15.9,Pictou,1,NS,A,ar 7.15a,ar 12.01p,ar 4.20p,ar 11.50p,lv 5.00a,lv 9.00a,lv 1.50p,lv 6.00p

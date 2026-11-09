@@ -42,8 +42,8 @@ bu = unary_union(btr).buffer(15)
 NOT_CN = {28: ('nscc', 'Railroad of the Nova Scotia Coal Co.'), 33: ('acc', 'Railroad of the Acadia Coal Co.'), 36: ('nssc', 'Railway of the Nova Scotia Steel and Coal Co.'), 37: ('vale', 'Vale Railway')}
 # 'check' = was this track there in 1948? (Whether trains ran over it is the timetables' business, not the track's: a branch with no train is simply not routed over.)
 CHECK = {8: 'Realignment at Tide Head: alternate alignment, which one was in use in 1948?', 17: 'NB&PEI "Ferry Reroute": earlier or later than 1948?',
-         20: 'Cape Traverse branch: still there in 1948?', 23: 'PEI Short Line Cutoff: there in 1948?', 26: 'PEI main line realignment to Elmira: before or after 1948?',
-         14: 'Albert Southern: still there in 1948?'}   # 11, 12, 13 (Havelock, Elgin, Albert) and 41 (Dartmouth 1896) have 1948 trains (page 1115)
+         23: 'PEI Short Line Cutoff: there in 1948?',
+         14: 'Albert Southern: still there in 1948?'}   # 11, 12, 13 (Havelock, Elgin, Albert) and 41 (Dartmouth 1896) have 1948 trains (page 1115); 26 (Harmony Jct. - Elmira, 9.9 mi) has Table 31a's (page 1116); 20 (Emerald Jct. - Kinkora - Albany, on to the Borden branch) carries Tables 28 / 31
 for fid, f in F.items():
     if 51 < fid < 132 or fid == 134: continue
     if fid == 7: REPORT.append('fid 7 York and Carleton: exact duplicate of fid 1, dropped'); continue

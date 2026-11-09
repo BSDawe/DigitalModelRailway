@@ -1,0 +1,9 @@
+# Canadian National, Table 31a: Elmira - Harmony Junction - Souris (Official Guide, April 25, 1948, page 1116 (Brendan, 9 Nov 2026)). ATLANTIC time.
+# In the modelled week (July): M63 u (Tue. and Wed., first trip May 25), M62 colon (Tue. only, first trip May 25), M64 e (Mon. only, first trip May 24). Not entered: M63 t and M64 r (last trips May 21 / 22), and M62 with a double dagger (TO CHECK; read as the spring service).
+#train col=M63 num=63 dir=down days="Tue,Wed" kind=mixed note="Mixed, Tue. and Wed.: Elmira 6.30 a.m. to Souris 7.15 a.m."
+#train col=M62 num=62 dir=up days="Tue" kind=mixed note="Mixed, Tuesday: Souris 5.45 p.m. to Elmira 6.30 p.m."
+#train col=M64 num=64 dir=up days="Mon" kind=mixed note="Mixed, Monday: Souris 6.45 p.m. to Elmira 7.30 p.m."
+mile,station,principal,prov,tz,M63,M62,M64
+0.0,Elmira,1,PE,A,lv 6.30a,ar 6.30p,ar 7.30p
+9.9,Harmony Junction,1,PE,A,7.00a,6.00p,7.00p
+14.7,Souris,1,PE,A,ar 7.15a,lv 5.45p,lv 6.45p

@@ -1,0 +1,26 @@
+# Canadian National, Table 28: Charlottetown - Borden - Cape Tormentine - Sackville (train ferry across Northumberland Strait) (Official Guide, April 25, 1948, page 1116 (Brendan, 9 Nov 2026)). ATLANTIC time.
+# A TRAIN FERRY (Brendan, 9 Nov 2026), like Windsor - Detroit: the trains cross on the car ferry, Borden (Ferry) 43.0 to Cape Tormentine 52.5 as printed; the slips are the ends of the pier tracks.
+# Table 28 also prints the connections beyond Sackville and Emerald Junction (Truro, Halifax, Moncton, Saint John, Boston, Montreal; Summerside, Tignish): those are other tables. Nos. 301 / 302 (motor): last trip May 22, not entered.
+# Moon: runs June 28 to Sept. 11 (M41 / M42; in the modelled week). Signs (page legend): dagger daily except Sunday; a Mon., Wed., Fri.; b Tue., Thu., Sat.; d Mon., Wed., Thu., Fri.; o Tue. and Sat.; k Sat. only; natural sign Sun., Tue., Thu.; f flag; M mixed; square motor train.
+#train col=No39 num=39 dir=down days="ex Sun" kind=passenger note="Daily except Sunday: Charlottetown 7.00 a.m., Borden 8.50, across on the car ferry 9.10 - 10.05, Cape Tormentine 10.25 to Sackville 11.40 a.m. (Summerside cars from Emerald Junction: M206 / M208)."
+#train col=M41 num=41 dir=down days="ex Sun" kind=mixed note="Mixed, June 28 - Sept. 11, nightly except Sunday: Charlottetown 10.30 p.m., Borden 12.40 a.m., across on the car ferry 1.00 - 1.55, Cape Tormentine 2.40 to Sackville 3.55 a.m."
+#train col=No40 num=40 dir=up days="ex Sun" kind=passenger note="Daily except Sunday: Sackville 1.00 p.m., Cape Tormentine 2.15, across on the car ferry 2.40 - 3.35, Borden 4.00 to Charlottetown 6.10 p.m. (cars for Summerside and Tignish go on from Emerald Junction by M53)."
+#train col=M42 num=42 dir=up days="ex Sun" kind=mixed note="Mixed, June 28 - Sept. 11, daily except Sunday: Sackville 6.00 a.m., Cape Tormentine 7.15, across on the car ferry 7.30 - 8.25, Borden 8.45 to Charlottetown 10.30 a.m."
+#train col=M206 num=206 dir=up days="ex Sun" kind=mixed note="Mixed, daily except Sunday: Borden 7.10 a.m. to Charlottetown 10.00 a.m. (the Summerside cars go on from Emerald Junction as M208)."
+mile,station,principal,prov,tz,No39,M41,No40,M42,M206
+0.0,Charlottetown,1,PE,A,lv 7.00a,lv 10.30p,ar 6.10p,ar 10.30a,ar 10.00a
+1.9,St. Dunstan's,0,PE,A,f7.04a,,f6.00p,f10.22a,f9.50a
+5.3,Royalty Junction,1,PE,A,7.13a,10.40p,5.50p,10.14a,9.42a
+15.6,North Wiltshire,0,PE,A,7.35a,11.05p,5.23p,9.52a,9.13a
+19.3,Hunter River,0,PE,A,7.44a,11.18p,5.13p,9.43a,8.58a
+28.0,Bradalbane,0,PE,A,8.04a,11.45p,4.50p,9.25a,8.27a
+30.4,Emerald Junction,1,PE,A,ar 8.10a / lv 8.20a,ar 11.55p / lv 12.05a,ar 4.30p / lv 4.45p,ar 9.15a / lv 9.20a,ar 8.00a / lv 8.20a
+34.2,Kinkora,0,PE,A,8.29a,12.15a,4.20p,9.05a,7.45a
+37.7,Albany,0,PE,A,8.37a,12.25a,4.13p,8.58a,7.30a
+42.2,Borden,1,PE,A,8.50a,12.40a,4.00p,8.45a,7.10a
+43.0,Borden (ferry slip),0,PE,A,9.10a,1.00a,3.35p,8.25a,
+52.5,Cape Tormentine (ferry slip),0,PE,A,10.05a,1.55a,2.40p,7.30a,
+53.3,Cape Tormentine,1,PE,A,10.25a,2.40a,2.15p,7.15a,
+68.8,Port Elgin,0,PE,A,11.00a,3.15a,1.41p,6.41a,
+70.9,Baie Verte,0,PE,A,f11.05a,f3.20a,f1.31p,f6.31a,
+88.7,Sackville,1,PE,A,ar 11.40a,ar 3.55a,lv 1.00p,lv 6.00a,lv 

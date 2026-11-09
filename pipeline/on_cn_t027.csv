@@ -1,0 +1,15 @@
+# Canadian National, Table 27: Charlottetown - Lake Verde - Vernon - Murray Harbor (Official Guide, April 25, 1948, page 1116 (Brendan, 9 Nov 2026)). ATLANTIC time.
+# The trains run out to Vernon and back to Lake Verde (Lake Verde printed twice). Signs (page legend): dagger daily except Sunday; a Mon., Wed., Fri.; b Tue., Thu., Sat.; d Mon., Wed., Thu., Fri.; o Tue. and Sat.; k Sat. only; natural sign Sun., Tue., Thu.; f flag; M mixed; square motor train.
+#train col=M209 num=209 dir=down days="Mon,Wed,Thu,Fri" kind=mixed note="Mixed, Mon., Wed., Thu. and Fri.: Charlottetown 3.15 p.m. to Murray Harbor 6.50 p.m., by Vernon."
+#train col=No65 num=65 dir=down days="Tue,Sat" kind=passenger note="Tue. and Sat.: Charlottetown 3.15 p.m. to Murray Harbor 5.55 p.m., by Vernon."
+#train col=No66 num=66 dir=up days="Tue,Sat" kind=passenger note="Tue. and Sat.: Murray Harbor 7.00 a.m. to Charlottetown 9.45 a.m., by Vernon."
+#train col=M210 num=210 dir=up days="Mon,Wed,Thu,Fri" kind=mixed note="Mixed, Mon., Wed., Thu. and Fri.: Murray Harbor 7.00 a.m. to Charlottetown 10.45 a.m., by Vernon."
+mile,station,principal,prov,tz,M209,No65,No66,M210
+0.0,Charlottetown,1,PE,A,lv 3.15p,lv 3.15p,ar 9.45a,ar 10.45a
+12.9,Lake Verde,0,PE,A,4.00p,3.46p,9.05a,9.35a
+16.8,Vernon,1,PE,A,4.18p,4.00p,8.53a,9.20a
+20.8,Lake Verde,0,PE,A,4.30p,4.12p,8.38a,9.04a
+24.5,Vernon River,0,PE,A,4.47p,4.25p,8.28a,8.48a
+30.9,Grandview,0,PE,A,5.10p,4.43p,8.06a,8.25a
+51.6,Murray River,0,PE,A,6.33p,5.42p,7.10a,7.15a
+55.7,Murray Harbor,1,PE,A,ar 6.50p,ar 5.55p,lv 7.00a,lv 7.00a

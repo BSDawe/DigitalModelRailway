@@ -1,0 +1,15 @@
+# Canadian National, Table 24: Newcastle - Chatham - Loggieville (Official Guide, April 25, 1948, page 1116 (Brendan, 9 Nov 2026)). ATLANTIC time.
+# All motor trains. The third westbound column is printed 305, like the eastbound one (entered 305; TO CHECK, perhaps 306). Signs (page legend): dagger daily except Sunday; a Mon., Wed., Fri.; b Tue., Thu., Sat.; d Mon., Wed., Thu., Fri.; o Tue. and Sat.; k Sat. only; natural sign Sun., Tue., Thu.; f flag; M mixed; square motor train.
+#train col=No302 num=302 dir=down days="ex Sun" kind=motor note="Motor train, daily except Sunday: Newcastle 7.55 a.m. to Loggieville 8.45 a.m."
+#train col=No304 num=304 dir=down days="ex Sun" kind=motor note="Motor train, daily except Sunday: Newcastle 2.15 p.m. to Loggieville 3.00 p.m."
+#train col=No305d num=305 dir=down days="ex Sun" kind=motor note="Motor train, daily except Sunday: Newcastle 4.40 p.m. to Loggieville 5.30 p.m. (printed 305)."
+#train col=No301 num=301 dir=up days="ex Sun" kind=motor note="Motor train, daily except Sunday: Loggieville 6.25 a.m. to Newcastle 7.10 a.m."
+#train col=No303 num=303 dir=up days="ex Sun" kind=motor note="Motor train, daily except Sunday: Loggieville 11.15 a.m. to Newcastle 12.05 p.m."
+#train col=No305 num=305 dir=up days="ex Sun" kind=motor note="Motor train, daily except Sunday: Loggieville 3.20 p.m. to Newcastle 4.05 p.m."
+mile,station,principal,prov,tz,No302,No304,No305d,No301,No303,No305
+0.0,Newcastle,1,NB,A,lv 7.55a,lv 2.15p,lv 4.40p,ar 7.10a,ar 12.05p,ar 4.05p
+3.7,Derby Junction,0,NB,A,8.00a,2.20p,4.45p,7.00a,11.55a,3.54p
+4.2,Nelson Junction,0,NB,A,8.01a,2.21p,4.46p,6.58a,11.54a,3.53p
+7.0,South Nelson,0,NB,A,8.08a,2.28p,4.53p,6.50a,11.46a,3.45p
+12.4,Chatham,1,NB,A,8.25a,2.40p,5.10p,6.35a,11.30a,3.30p
+17.7,Loggieville,1,NB,A,ar 8.45a,ar 3.00p,ar 5.30p,lv 6.25a,lv 11.15a,lv 3.20p
