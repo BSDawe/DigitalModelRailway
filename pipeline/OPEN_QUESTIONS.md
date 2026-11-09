@@ -1,0 +1,38 @@
+# Open questions for Brendan
+
+A running tally. Claude adds new questions as they come up and moves answered ones to "Answered" with the answer and date. Each item says what the build does in the meantime.
+Last updated 9 November 2026 (Version 145).
+
+## Timetable readings (CN, pages 1113 - 1115)
+- [ ] No. 20, Folly Lake f3.35 - Londonderry 3.41 a.m. (7.6 mi in 6 min). Was it f3.25? Built as printed. (V144)
+- [ ] The second No. 13 column, Sunday only, Moncton 4.30 p.m. Is this a real Sunday train? Entered as 13s. (V144)
+- [ ] The "b" sign on 379 / 380. Read as daily except Sat and Sun, the complement of 383 / 384 (Sat only). (V144)
+- [ ] 382: dagger or "k"? (V145)
+- [ ] No. 26 at Campbellton has a dagger (ex Sun). The file keeps it daily. (V143)
+- [ ] 253 / 260: the "-14" columns at Salisbury 1.35. What do they mean? (V145)
+- [ ] Témiscouata No. 4: Baker Brook 8.15 - Edmundston 9.15 a.m., as read. (V143)
+
+## Traces wanted (straight estimated links until then)
+- [ ] Saint John: E&NA track end to Union Station (4.5 km). (V143)
+- [ ] Yarmouth: track end to the station point. (V145)
+- [ ] Newfoundland Railway: trace end to Port-aux-Basques. (V145)
+- [ ] Oxford Junction connector (MESL to Intercolonial, a 204 m gap; the trains find track anyway). (V143)
+
+## Points and track
+- [ ] Approximate station points to confirm or replace: Halifax, Newcastle, Bathurst, Oxford, the Mulgrave / Point Tupper ferry slips. (V145)
+- [ ] Edmundston station point: you marked it "I think". (V143)
+- [ ] Is Dartmouth fid 40 the Narrows bridge line? For now, the part past fid 41 is pre-1948. (V145)
+- [ ] Track bank pieces still marked "check": Wikipedia fids 8, 14, 17, 20, 23, 26. (V143)
+- [ ] Moncton: the traced miles are Painsec Jct. 7.6 (6.9 printed) and Pacific Jct. 11.3 (12.2), which would put the station about 0.7 mi east. Kept your point as given. (V144)
+
+## Housekeeping
+- [ ] Licence of the Wikipedia Canadian Government Railways map data (for the credits). (V143)
+- [ ] The raw GeoPackage, the CGN zips and the OSM exports belong in the private repo. Claude has read-only access there, so they need adding from your side. (V143)
+- [ ] ESL livery colour: the placeholder is #7a2430. (V145)
+
+## Answered
+- Through trains: a train runs through as one trip; within one file, use the six-day / seventh-day split (8 Nov). Chaining across files waits until all the CN Maritime files are in, then again for CP. It joins automatically under an hour; named trains join only when the names agree (8 Nov).
+- Saint John is a connecting train, not a through point. Union Station 45.276776, -66.064504 (8 Nov).
+- The earlier page was 1113, not 1118; Table 4 is page 1114 (8 Nov).
+- North Sydney: the wye is scrapped and the main follows the OSM Sydney Subdivision, with trains using the ferry spur (8 Nov).
+- The NFR ferry is a Newfoundland Railway service, and the NFR terminates at 47.5807910, -59.1423107 (8 Nov).
