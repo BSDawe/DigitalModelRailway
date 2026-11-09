@@ -39,3 +39,15 @@ any step until it is moved into `pipeline/`. Track: `traces/maritimes/` (`python
   Moncton, to check); Table 23's N.B. part (51 / 52 and 27 / 28 on the NTR).
 - Nos. 1 / 2 (Brendan, 8 Nov 2026): through trips on six days, plus the seventh day's Campbellton - Montreal run under the same number (see on_cn_t001.csv).
 - To check (Brendan): No. 26 has a dagger (ex Sun) at Campbellton; the file keeps it daily. No. 4 Témiscouata Baker Brook 8.15 - Edmundston 9.15 a.m. (as read).
+
+## Trip chaining (Brendan, 8 Nov 2026: do it when all the CN Maritime files are in; again for CP)
+Generalise the through-train linking in `real_ends.py` (runs at assembly, ~10 s, no rebuild). Today it links only trips whose ids differ by '-SK...' / 'E'
+suffixes (50 trips: the Saskatchewan / Alberta pieces, CP 2E). Plan:
+- Match on railway (id prefix) + number, the last stop of one = the first stop of the next (same gid), and compatible days (the next piece's service days, shifted
+  for midnight, cover the first's).
+- Join automatically when the stop is short (under an hour: Brendan to confirm); named trains only when the names agree (to confirm). Every other candidate goes to
+  a review list in the build log; an explicit JOIN / NOJOIN table settles them.
+- GTFS: a shared `block_id` for each chain (stay-seated through running).
+- Found on Version 142 (re-assembled 8 Nov): 160 candidate pairs not linked today, e.g. CN 1 - 4 at Ottawa / Capreol / Armstrong, CP 1 - 8 at Fort William / Sudbury,
+  CN 11 / 12 at Hervey / Fitzpatrick / Cochrane. Must NOT join: CN No. 1 Maritime Express arriving Montreal (Central) with CN No. 1 Continental leaving it (100 min;
+  same number, different trains). To decide: Kootenay Central M681 at Cranbrook (8.5 h layover).
