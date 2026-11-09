@@ -34,6 +34,8 @@ Last updated 9 November 2026 (Version 145).
 - [ ] Unnamed ships show a "Steamer" label. The rule is no visible label until clicked. Cause: the new NFR and ESL sailings in lo_build.py carry num='Steamer'. Older unnamed sailings show how it was done.
 - [ ] Straight links over gaps must be drawn dashed, except trivially short ones or ones Brendan asked for. Cause: traces/maritimes/links_estimated.geojson is read into on_lines._links() as ordinary track, so the page gets no est flag and draws it solid. Affected: Saint John (4.5 km), Yarmouth, NFR Port-aux-Basques. The Canso car-ferry link (~1.2 km) is probably "trivially short". Also check the other Quebec-build straight estimates.
 
+- [ ] North Sydney is misrouted (Brendan, 9 Nov 2026). The main should run from Boularderie across the Bras d'Or at the bridge, east toward Sydney Mines, loop round, then south through North Sydney to Leitches Creek and North West Arm, plus a spur to the ferry landing. His map is staged/maritimes/north_sydney_route_brendan.png. Check cn_osm_sydney.geojson against it: which OSM ways the trains took, and whether the Sydney Mines loop is on file.
+
 ## Answered
 - Through trains: a train runs through as one trip; within one file, use the six-day / seventh-day split (8 Nov). Chaining across files waits until all the CN Maritime files are in, then again for CP. It joins automatically under an hour; named trains join only when the names agree (8 Nov).
 - Saint John is a connecting train, not a through point. Union Station 45.276776, -66.064504 (8 Nov).
