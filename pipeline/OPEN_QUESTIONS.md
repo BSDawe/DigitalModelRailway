@@ -27,7 +27,7 @@ Last updated 9 November 2026 (Version 146).
 
 ## Points and track
 - [ ] Approximate station points to confirm or replace: Halifax, Newcastle, Bathurst, Oxford, the Mulgrave / Point Tupper ferry slips. (V145)
-- [ ] Edmundston station point: you marked it "I think". (V143) The CN trains (Table 23) use it too and turn in about 0.7 km off the National Transcontinental to reach it. Was CN's station somewhere else? (V146)
+- [ ] Edmundston station point: you marked it "I think". (V143) ANSWERED for CN (Brendan, 9 Nov 2026): CN's Edmundston station was a different station, on the main line. Fix queued below.
 - [ ] Page 1116 approximate points: Charlottetown and Summerside (the town points moved onto the track), Fredericton (the end of the bridge track). (V146)
 - [ ] Is Dartmouth fid 40 the Narrows bridge line? For now, the part past fid 41 is pre-1948. (V145)
 - [ ] Track bank pieces still marked "check": Wikipedia fids 8, 14, 17, 23. (V143) Now in use: fid 26 Harmony Jct. - Elmira (9.9 mi, as Table 31a prints) and fid 20, the Cape Traverse branch from Emerald Jct. through Kinkora and Albany to the Borden branch. Was the stub on to Cape Traverse still there? (V146)
@@ -54,6 +54,8 @@ Last updated 9 November 2026 (Version 146).
 - [ ] Campbellton stray track (Brendan's screenshot, 9 Nov 2026, No. 223). FOUND: the Campbellton station point (CGN, -66.6835, 47.9993) sits south of the Intercolonial, next to the end of the International Railway (fid 9, from St. Leonard). Trains that start or end at Campbellton (oncn013 Dalhousie, oncn001s from Moncton, oncn001a Gaspe) leave the point on the International's track and curve ~800 m round onto the main; the through trains (oncn001) are unaffected. Fix: put Campbellton on the Intercolonial at the 1948 station. Brendan's estimate (9 Nov 2026): 48.004637292532756, -66.67888636638031 (on the main, ~15 m from the traced line). Use it for every Campbellton file (MAR_PLACES, on_cn_t001 / t001s / t001a, t013). Also check how fid 9 meets fid 43, so the International joins the main where it really did.
 
 - [ ] Eastern Steamship Lines from the Official Guide (Brendan, 9 Nov 2026; staged/maritimes/esl_official_guide.png). S.S. YARMOUTH, June 2 - Sept. 26. Boston (Central Wharf) 4.30 p.m. EDT Mon, Wed, Fri, to Yarmouth (Evangeline Wharf) 7.30 a.m. AST. Yarmouth 6.30 p.m. AST Sun, Tue, Thu, to Boston 8.30 a.m. EDT. The TIMES ARE ALREADY RIGHT: CN Table 9 printed Boston in Eastern standard time (3.30 p.m., 7.30 a.m.), the same instants as the guide's EDT, and the map's Pacific standard clock gives 12.30 p.m. and 4.30 a.m. either way. Fix: move Boston to CENTRAL WHARF (Brendan, 9 Nov 2026: yes), name the boat "Yarmouth" (so no "Steamer" label), call Yarmouth "Evangeline Wharf" in the notes, and have the notes cite the guide's EDT times next to CN's.
+
+- [ ] CN Edmundston (Brendan, 9 Nov 2026): CN's station was a separate station on its main line (the National Transcontinental). on_cn_t023 should stop there, not at the Témiscouata / CP point (now a 0.7 km turn-in). WAITING: a point from Brendan, or estimate one on the NTR in town.
 
 ## Answered
 - Through trains: a train runs through as one trip; within one file, use the six-day / seventh-day split (8 Nov). Chaining across files waits until all the CN Maritime files are in, then again for CP. It joins automatically under an hour; named trains join only when the names agree (8 Nov).
