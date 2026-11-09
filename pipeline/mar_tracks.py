@@ -14,7 +14,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 # Folders under traces/ read by default. A US railway, or a Canadian railway's track in the U.S. (CP across Maine, CN's Grand Trunk to Portland), lives in a folder of
 # its own (as traces/milw, traces/cnmn) so its own build can own it later; add the folder here, or pass dirs=, when a Maritimes line runs onto it.
 DIRS = ['maritimes']
-STATUS = {'ok': 'there in 1948: use', 'check': 'there in 1948? not used until decided (see why)', 'post1948': 'built after 1948',
+STATUS = {'ok': 'there in 1948: use', 'check': 'there in 1948? not used until decided (see why)', 'post1948': 'built after 1948', 'pre1948': 'gone by 1948',
           'quebec_overlap': 'already in the Quebec collection'}
 def files(dirs=None):
     return sorted(fn for d in (dirs or DIRS) for fn in glob.glob(os.path.join(HERE, 'traces', d, '*.geojson')))

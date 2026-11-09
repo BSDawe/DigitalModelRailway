@@ -1,0 +1,674 @@
+name,kind,lat,lon,location
+48 Road,Locality,46.2557110,-62.7144720,Kings
+Abney,Locality,45.9942800,-62.5697330,Kings
+Abram-Village,Community,46.4500000,-64.0833330,Prince
+Afton,Community,46.1701500,-63.2032400,Queens
+Afton Road,Locality,46.3784410,-62.9254120,Queens
+Alaska,Locality,46.6169810,-64.1086770,Prince
+Albany,Locality,46.2860520,-63.6438340,Prince
+Albany Corner,Locality,46.2797300,-63.6250430,Prince
+Alberry Plains,Locality,46.2132370,-62.7924010,Queens
+Alberton,Town,46.8128040,-64.0652970,Prince
+Alberton Harbour,Harbour,46.7964820,-64.0514260,Prince
+Alberton South,Locality,46.7972220,-64.0777780,Prince
+Albion,Locality,46.1314220,-62.5545170,Kings
+Albion Cross,Locality,46.3357710,-62.4869190,Kings
+Alexandra,Community,46.1958330,-63.0319440,Queens
+Alexandra,Locality,46.1959100,-63.0194790,Queens
+Allisary,Locality,46.3635640,-62.8513460,Queens
+Alliston,Locality,46.0584060,-62.6067010,Kings
+Alma,Locality,46.8614830,-64.1095420,Prince
+Anglo Rustico,Locality,46.4422440,-63.2948590,Queens
+Anglo Tignish,Locality,46.9757820,-63.9957180,Prince
+Annandale,Locality,46.2608520,-62.4236880,Kings
+Annandale-Little Pond-Howe Bay,Community,46.2896300,-62.4132400,Kings
+Appin Road,Locality,46.2408080,-63.3967540,Queens
+Argyle Shore,Locality,46.1645660,-63.3507920,Queens
+Arlington,Locality,46.5292850,-63.9114950,Prince
+Ascension,Locality,46.9592690,-64.0646920,Prince
+Ashton,Former Railway Point,46.4241060,-62.5120030,Kings
+Auburn,Locality,46.2936410,-62.9079480,Queens
+Augustine Cove,Locality,46.2249840,-63.6081860,Prince
+Augustus,Former Railway Point,46.3283390,-62.8909360,Queens
+Avondale,Locality,46.2434250,-62.8320190,Queens
+Baie-Egmont,Locality,46.4833330,-64.1000000,Prince
+Baldwin Road,Locality,46.2666670,-62.7333330,Kings
+Bangor,Locality,46.3658330,-62.6902640,Kings
+Basin Head Harbour,Harbour,46.3852940,-62.1129880,Kings
+Bay Fortune,Locality,46.3306690,-62.3619310,Kings
+Bayfield,Locality,46.4746220,-62.2017580,Kings
+Bayside,Locality,46.5185050,-63.8919030,Prince
+Bayview,Locality,46.4746870,-63.4360440,Queens
+Beach Point,Locality,46.0134390,-62.4801300,Kings
+Bear River,Locality,46.4040090,-62.3587860,Kings
+Bear River North,Community,46.4333330,-62.3666670,NW of Souris
+Bear River South,Community,46.3833330,-62.3500000,NW of Souris
+Beaton Road,Locality,46.6314970,-64.1479570,Prince
+Bedeque,Locality,46.3367950,-63.7246780,Prince
+Bedeque and Area,Community,46.3400000,-63.7105556,
+Bedford Corner,Locality,46.3278850,-63.0171100,Queens
+Bedford Station,Locality,46.3360750,-63.0214910,Queens
+Belfast,Post Office,46.1000000,-62.8833330,Queens
+Belfast,Locality,46.0833330,-62.8833330,Queens
+Belfast,Community,46.0785210,-62.8782890,Queens
+Belle River,Locality,45.9867360,-62.8351860,Queens
+Bellevue,Locality,46.1075780,-62.7567350,Queens
+Belmont Lot 16,Locality,46.4795740,-63.8234310,Prince
+Bethel,Locality,46.2446160,-62.9712930,Queens
+Bideford,Locality,46.6046640,-63.9138680,Prince
+Big Pond,Locality,46.4645960,-62.2550690,Kings
+Birch Hill,Locality,46.2149320,-62.9624930,Queens
+Birch Hill,Locality,46.5550070,-63.8721750,Prince
+Black Banks,Locality,46.7327940,-64.0013150,Prince
+Bloomfield,Locality,46.7743880,-64.2294380,Prince
+Bloomfield Corner,Locality,46.7613130,-64.1806090,Prince
+Bloomfield Station,Post Office,46.7666670,-64.2333330,Prince
+Blooming Point,Locality,46.3868230,-62.9731830,Queens
+Bonshaw,Locality,46.2000000,-63.3500000,Queens
+Bonshaw,Community,46.1935180,-63.3540740,Queens
+Borden,Locality,46.2541670,-63.6958330,Prince
+Borden-Carleton,Town,46.2616670,-63.6738890,Prince
+Bothwell,Locality,46.4039260,-62.0803050,Kings
+Brackley,Community,46.3130556,-63.1638889,Queens
+Brackley,Locality,46.3166670,-63.1500000,Queens
+Brackley Beach,Locality,46.4240500,-63.1920780,Queens
+Brackley Point,Locality,46.3845620,-63.1850470,Queens
+Brae,Locality,46.6592430,-64.1909980,Prince
+Brae Harbour,Harbour,46.6222400,-64.1967820,Prince
+Brae Harbour,Locality,46.6168730,-64.1841520,Prince
+Breadalbane,Community,46.3569440,-63.5019440,Queens
+Bridgetown,Locality,46.3074180,-62.5257290,Kings
+Brighton,Locality,46.2347220,-63.1500000,Queens
+Bristol,Locality,46.4142630,-62.7299760,Kings
+Brockton,Locality,46.8007010,-64.2494590,Prince
+Brookfield,Locality,46.3257340,-63.2840600,Queens
+Brooklyn,Locality,46.0936090,-62.6704340,Kings
+Brooklyn,Locality,46.8033890,-64.1109290,Prince
+Brooks Wharf,Wharf,46.6537330,-63.9212950,Prince
+Brookvale,Locality,46.2838790,-63.4076960,Queens
+Brudenell,Community,46.1833330,-62.6166670,Kings
+Brudenell,Locality,46.1874980,-62.6518740,Kings
+Bunbury,Locality,46.2361110,-63.0869440,Queens
+Bungay,Locality,46.3681390,-63.3124660,Queens
+Burlington,Locality,46.4853840,-63.6032390,Prince
+Burnt Point,Locality,46.1777400,-62.5071130,Kings
+Burton,Locality,46.7707390,-64.3342680,Prince
+Byrnes Road,Locality,46.3299180,-62.7419930,Kings
+Cable Head East,Locality,46.4658470,-62.5681550,Kings
+Cable Head West,Locality,46.4583570,-62.6261120,Kings
+Caledonia,Locality,46.0603100,-62.7109300,Queens
+Cambridge,Locality,46.0744970,-62.5258270,Kings
+Campbells Cove,Locality,46.4758970,-62.1417250,Kings
+Campbellton,Locality,46.4761960,-63.4750710,Queens
+Campbellton,Locality,46.7920110,-64.2992710,Prince
+Canavoy,Locality,46.3998170,-62.8099980,Kings
+Canoe Cove,Locality,46.1547690,-63.2954050,Queens
+Cap-Egmont,Locality,46.4027780,-64.1000000,Prince
+Cape Traverse,Locality,46.2426710,-63.6375930,Prince
+Cape Traverse Landing,Locality,46.2357340,-63.6514940,Prince
+Cape Wolfe,Locality,46.7212320,-64.3933070,Prince
+Cardigan,Locality,46.2333330,-62.6166670,Kings
+Cardigan,Community,46.2330570,-62.6184500,Kings
+Cardigan North,Locality,46.2415790,-62.5651320,Kings
+Cardross,Locality,46.2739420,-62.6289650,Kings
+Carleton,Locality,46.6920230,-64.1518940,Prince
+Carleton,Locality,46.2569440,-63.6680560,Prince
+Carleton Siding,Locality,46.2625000,-63.6744440,Prince
+Cascumpec,Locality,46.7397180,-64.0914640,Prince
+Cavendish,Locality,46.4912610,-63.3786740,Queens
+Central Bedeque,Locality,46.3397760,-63.7026920,Prince
+Central Kildare,Locality,46.8721040,-64.0061470,Prince
+Central Kings,Community,46.3243700,-62.4942700,Kings
+Central Lot 16,Locality,46.4811110,-63.8708330,Prince
+Central Lot 16 Wharf,Wharf,46.5022430,-63.8849900,Prince
+Charlottetown,City,46.2402780,-63.1347220,Queens
+Charlottetown Harbour,Harbour,46.2162730,-63.1406840,Queens
+Chelton,Locality,46.3039450,-63.7443730,Prince
+Chepstow,Locality,46.3547830,-62.2149040,Kings
+Cherry Hill,Locality,46.3707590,-62.8171320,Kings
+Cherry Valley,Locality,46.1745020,-62.9234080,Queens
+China Point,Locality,46.1461810,-62.9023280,Queens
+Christopher Cross,Locality,46.9847880,-64.0424360,Prince
+Church Road,Locality,46.3736980,-62.6211380,Kings
+Churchill,Locality,46.2180770,-63.3307250,Queens
+Clarkin,Locality,46.2446770,-62.8832410,Queens
+Clearspring,Locality,46.4588340,-62.3442740,Kings
+Clermont,Locality,46.4485740,-63.6789350,Prince
+Clinton,Locality,46.4483950,-63.5478070,Queens
+Clyde,Former Railway Point,46.3462120,-63.3976330,Queens
+Clyde River,Locality,46.2238740,-63.2571600,Queens
+Clyde River,Community,46.2239600,-63.2636400,Queens
+Coleman,Locality,46.6858940,-64.1679270,Prince
+Colville,Former Railway Point,46.3025010,-63.2822000,Queens
+Commercial Cross,Locality,46.1275250,-62.6331460,Kings
+Conway,Locality,46.6581480,-63.9906560,Prince
+Cornwall,Town,46.2263890,-63.2194440,Queens
+Corran Ban,Locality,46.3833360,-63.0397030,Queens
+Corraville,Locality,46.3184210,-62.6104140,Kings
+Covehead,Locality,46.3819880,-63.1251400,Queens
+Covehead Road,Locality,46.3585630,-63.1153640,Queens
+Crapaud,Community,46.2392730,-63.4970830,Queens
+Crosbys Mill,Locality,46.2037830,-63.3527400,Queens
+Cross River,Locality,46.4954300,-63.9619210,Prince
+Cross Roads,Locality,46.2176020,-63.0778050,Queens
+Culloden,Locality,46.0240320,-62.7761720,Queens
+Cumberland,Locality,46.1705470,-63.1591180,Queens
+Cymbria,Locality,46.4023910,-63.2547710,Queens
+Dalvay,Community,46.4115110,-63.0664660,E. of Brackley
+Dalvay by the Sea,Locality,46.4169150,-63.0750700,Queens
+Darlington,Community,46.3199700,-63.3247800,Queens
+Darlington,Locality,46.3152550,-63.3258550,Queens
+Darnley,Locality,46.5412300,-63.6341280,Prince
+Days Corner,Locality,46.4546990,-63.9776110,Prince
+DeBlois,Locality,46.9126080,-64.1121730,Prince
+DeGros Marsh,Locality,46.2285000,-62.4845870,Kings
+DeSable,Locality,46.1974840,-63.4140680,Queens
+Derby,Locality,46.6396780,-64.1910000,Prince
+Dingwell,Locality,46.4166670,-62.6666670,Kings
+Dingwells Mills,Locality,46.3597740,-62.4482440,Kings
+Dock Corner,Locality,46.8105690,-64.0819650,Prince
+Donagh,Locality,46.2636750,-62.9617980,Queens
+Donaldston,Locality,46.3567940,-63.0058620,Queens
+Douglas,Former Railway Point,46.3903670,-62.8155060,Kings
+Dover,Locality,46.0242770,-62.6423440,Kings
+Dromore,Locality,46.3000000,-62.8333330,Queens
+Dunblane,Locality,46.6501070,-64.3438440,Prince
+Dundas,Locality,46.3167880,-62.5087360,Kings
+Dundee,Locality,46.4026280,-62.7676040,Kings
+Dunedin,Locality,46.2021480,-63.2872850,Queens
+Dunstaffnage,Locality,46.3234180,-63.0327620,Queens
+Duvar,Locality,46.7460880,-64.2283360,Prince
+Earnscliffe,Locality,46.1390930,-62.9527430,Queens
+East Baltic,Community,46.4333330,-62.1666670,NW of Souris
+East Bideford,Locality,46.6238140,-63.9129230,Prince
+East Point,Locality,46.4469380,-62.0000950,Kings
+East Royalty,Locality,46.2777780,-63.1036110,Queens
+East Wiltshire,Locality,46.2541670,-63.2152780,Queens
+Eastern Kings,Community,46.4347100,-62.1161600,Kings
+Ebbsfleet,Settlement,46.8833330,-64.2333330,
+Ebenezer,Locality,46.3508750,-63.2592230,Queens
+Eglington,Locality,46.3164170,-62.3690710,Kings
+Eldon,Locality,46.0945240,-62.8876980,Queens
+Ellerslie,Locality,46.6033460,-63.9443480,Prince
+Ellerslie-Bideford,Locality,46.6032500,-63.9510300,Prince
+Elliotts,Locality,46.3642090,-63.4650390,Queens
+Elliotvale,Locality,46.2465200,-62.7739720,Kings
+Elmira,Locality,46.4405910,-62.0647430,Kings
+Elmsdale,Locality,46.8201580,-64.1390270,Prince
+Elmwood,Locality,46.2442140,-63.3305060,Queens
+Emerald,Community,46.3666670,-63.5500000,NW of Crapaud
+Emyvale,Locality,46.2783030,-63.3583710,Queens
+Enmore,Locality,46.5839830,-64.0404050,Prince
+Fairfield,Locality,46.4731070,-62.1133990,Kings
+Fairview,Locality,46.1787770,-63.2023130,Queens
+Fanning Brook,Locality,46.3394620,-62.8194590,Kings
+Farmington,Locality,46.3834510,-62.4887360,Kings
+Fernwood,Locality,46.3213590,-63.8068180,Prince
+Five Houses,Locality,46.4063350,-62.5322880,Kings
+Flat River,Locality,46.0099510,-62.8647350,Queens
+Fodhla,Locality,46.0964450,-62.8143020,Queens
+Forest Hill,Locality,46.3602670,-62.5646460,Kings
+Forestview,Locality,46.7230570,-64.2801970,Prince
+Fort Augustus,Locality,46.3216670,-62.9208650,Queens
+Fortune Bridge,Locality,46.3458040,-62.3777130,Kings
+Fortune Cove,Locality,46.7578770,-64.1296870,Prince
+Fortune Harbour,Locality,46.3353870,-62.3574840,Kings
+Founds Mills,Locality,46.4389670,-63.4978150,Queens
+Foxley River,Locality,46.6924730,-64.0120920,Prince
+Fredericton,Locality,46.3606350,-63.4261800,Queens
+Freeland,Locality,46.6773990,-63.9631050,Prince
+Freetown,Locality,46.3738700,-63.6197840,Prince
+French River,Locality,46.5167090,-63.5193960,Queens
+French Village,Locality,46.4098530,-62.8765920,Queens
+French Village,Locality,46.4022870,-63.4135340,Queens
+Frenchfort,Locality,46.3171490,-63.0153010,Queens
+Gairloch,Community,46.0333330,-62.8166670,Queens
+Gambles Corner,Locality,46.2655140,-63.5160320,Prince; Queens
+Garfield,Locality,46.0598950,-62.8583560,Queens
+Gaspereaux,Locality,46.1063540,-62.4677020,Kings
+Georgetown,Town,46.1820950,-62.5325730,Kings
+Georgetown Harbour,Harbour,46.1724810,-62.5342610,Kings
+Georgetown Royalty,Community,46.2089700,-62.5673550,NE of Montague
+Gladstone,Locality,46.0193470,-62.5675490,Kings
+Glen Valley,Locality,46.3499480,-63.4437590,Queens
+Glencoe,Locality,46.2010970,-62.8139500,Queens
+Glencorradale,Locality,46.4500000,-62.1833330,Kings
+Glenfanning,Locality,46.2753030,-62.5875260,Kings
+Glenfinnan,Locality,46.2939980,-62.9697620,Queens
+Glengarry,Locality,46.7624400,-64.3110400,Prince
+Glenmartin,Locality,46.0728230,-62.6655790,Kings
+Glenroy,Locality,46.3560890,-62.9053740,Queens
+Glenwilliam,Locality,46.0482310,-62.6554640,Kings
+Glenwood,Locality,46.6469940,-64.3120250,Prince
+Goose Harbour,Harbour,46.7513490,-64.0096710,Prince
+Goose River,Locality,46.4570790,-62.5073330,Kings
+Gowanbrae,Locality,46.3878400,-62.3040270,Kings
+Grahams Road,Locality,46.4282690,-63.5311410,Queens
+Grand River,Locality,46.5083160,-63.9115740,Prince
+Grand Tracadie,Locality,46.3897430,-63.0427250,Queens
+Grand Tracadie,Community,46.3973600,-63.0442700,Queens
+Grandview,Locality,46.1234250,-62.7734400,Queens
+Granville,Locality,46.4258470,-63.4698570,Queens
+Green Bay,Locality,46.2540080,-63.3596650,Queens
+Green Gables,Post Office,46.4833330,-63.3833330,Queens
+Green Meadows,Locality,46.3643740,-62.7323150,Kings
+Green Road,Locality,46.2024550,-63.3822580,Queens
+Greenfield,Locality,46.1819370,-62.7367130,Kings
+Greenmount,Locality,46.9008130,-64.0400850,Prince
+Greenmount-Montrose,Community,46.8666670,-64.0333330,Prince
+Greenvale,Locality,46.3939360,-62.1821500,Kings
+Greenvale,Locality,46.3402690,-63.3147240,Queens
+Greenwich,Locality,46.4366930,-62.6426880,Kings
+Guernsey Cove,Locality,45.9864230,-62.4948560,Kings
+Haliburton,Locality,46.7072310,-64.3518810,Prince
+Hamilton,Locality,46.4932250,-63.7021510,Prince
+Hampshire,Locality,46.2865950,-63.2798590,Queens
+Hampshire,Community,46.2872700,-63.2730600,Queens
+Hampton,Locality,46.2125960,-63.4609180,Queens
+Harmony,Locality,46.5236180,-64.0457970,Prince
+Harmony Junction,Locality,46.4058870,-62.2530970,Kings
+Harper,Locality,46.9362420,-64.0837320,Prince
+Harrington,Locality,46.3502360,-63.1677100,Queens
+Hartsville,Locality,46.3198670,-63.3956880,Queens
+Hazel Grove,Community,46.3666670,-63.4000000,NE of Crapaud
+Hazelbrook,Community,46.2224200,-62.9996000,Queens
+Hazelbrook,Locality,46.2180780,-62.9919220,Queens
+Hazelgrove,Locality,46.3633750,-63.4027750,Queens
+Head of Cardigan,Locality,46.2568310,-62.6916700,Kings
+Head of Hillsborough,Locality,46.3675320,-62.7878130,Kings
+Head of Montague,Locality,46.1634470,-62.7388480,Kings
+Heatherdale,Locality,46.1144570,-62.6976280,Kings
+Hebron,Locality,46.6297200,-64.2578760,Prince
+Hermanville,Locality,46.4613220,-62.2791930,Kings
+Hermitage,Locality,46.2166670,-62.8333330,Queens
+Higgins Road,Locality,46.5183720,-64.0758250,Prince
+Higgins Wharf,Wharf,46.5496820,-64.0881830,Prince
+High Bank,Locality,45.9680350,-62.6149560,Kings
+Highfield,Locality,46.2888890,-63.1722220,Queens
+Hillsborough Park,Locality,46.2630560,-63.0986110,Queens
+Hope River,Locality,46.4341640,-63.4010180,Queens
+Hopefield,Locality,45.9998030,-62.6843190,Kings; Queens
+Howe Bay,Locality,46.3047590,-62.4123320,Kings
+Howlan,Locality,46.7296250,-64.2244940,Prince
+Hunter River,Locality,46.3500000,-63.3500000,Queens
+Hunter River,Community,46.3549480,-63.3489800,Queens
+Huntley,Locality,46.8460320,-64.0841720,Prince
+Indian River,Locality,46.4771430,-63.6872760,Prince
+Inkerman,Community,46.3666670,-63.4000000,NE of Crapaud
+Inverness,Locality,46.6505980,-64.0323120,Prince
+Iona,Locality,46.0981310,-62.8053180,Queens
+Iris,Locality,46.0162280,-62.6906980,Kings; Queens
+Irishtown,Locality,46.4997370,-63.5895570,Queens
+Johnstons River,Locality,46.2695930,-63.0182210,Queens
+Judes Point,Locality,46.9529100,-64.0057020,Prince
+Kelly Road,Locality,46.7242540,-64.1307260,Prince
+Kellys Cross,Locality,46.2701870,-63.4471510,Queens
+Kelvin,Former Railway Point,46.4155740,-63.6165610,Prince
+Kelvin Grove,Locality,46.4102140,-63.6436020,Prince
+Kensington,Town,46.4366640,-63.6373530,Prince
+Keppoch,Locality,46.1977780,-63.1111110,Queens
+Kildare Capes,Locality,46.9010220,-63.9818600,Prince
+Kilmuir,Locality,46.1205080,-62.6665200,Kings
+Kingsboro,Locality,46.3929750,-62.1066070,Kings
+Kingston,Community,46.2640400,-63.3284200,Queens
+Kingston,Locality,46.2629220,-63.2773900,Queens
+Kinkora,Locality,46.3166670,-63.6000000,Prince
+Kinkora,Community,46.3227410,-63.6030980,Prince
+Kinlock,Locality,46.2041670,-63.0902780,Queens
+Kinross,Locality,46.1578890,-62.8092650,Queens
+Knutsford,Locality,46.6969780,-64.2857670,Prince
+Lady Fane,Locality,46.2795480,-63.5212520,Queens; Prince
+Lady Slipper,Locality,46.5924200,-64.0323700,Prince
+Lake Verde,Locality,46.2335320,-62.8802690,Queens
+Lakeville,Locality,46.4619080,-62.0979650,Kings
+Launching Place,Locality,46.2202190,-62.4311920,Kings
+Lauretta,Locality,46.8571970,-64.1561700,Prince
+Leards Mill,Locality,46.3000800,-62.7106320,Kings
+Lennox Island,Locality,46.6020890,-63.8582290,Prince
+Leoville,Locality,46.9290710,-64.1229310,Prince
+Lewes,Locality,46.0538360,-62.7435530,Queens
+Lewis Point,Locality,46.2519440,-63.1619440,Queens
+Linkletter,Community,46.4069270,-63.8359720,Prince
+Little Harbour,Harbour,46.3627440,-62.1575000,Kings
+Little Harbour,Locality,46.3568650,-62.1920880,Kings
+Little Pond,Locality,46.2841950,-62.4107340,Kings
+Little Sands,Locality,45.9659600,-62.6470430,Kings
+Little York,Post Office,46.3166670,-63.1000000,Queens
+Locke Road,Locality,46.7166520,-64.3133850,Prince
+Long Creek,Locality,46.1716690,-63.2709330,Queens
+Long River,Locality,46.4902920,-63.5431720,Queens
+Lorne Valley,Locality,46.2666670,-62.6833330,Kings
+Lorne Valley,Community,46.2690020,-62.6927050,Kings
+Lot 11 and Area,Community,46.6666670,-63.9666670,Prince
+Low Point,Locality,46.5819820,-63.8622050,Prince
+Lower Bedeque,Locality,46.3441250,-63.7641770,Prince
+Lower Darnley,Locality,46.5554390,-63.6503790,Prince
+Lower Freetown,Locality,46.3636920,-63.6675480,Prince
+Lower Hamilton,Locality,46.5064690,-63.7025950,Prince
+Lower Malpeque,Locality,46.5401990,-63.6923230,Prince
+Lower Montague,Community,46.1575600,-62.5920600,Kings
+Lower Montague,Locality,46.1660900,-62.5590950,Kings
+Lower New Annan,Locality,46.4276270,-63.7151820,Prince
+Lower Newtown,Locality,46.1094530,-62.8609200,Queens
+Lower Rollo Bay,Locality,46.3439980,-62.3017760,Kings
+Lower Tryon,Locality,46.2265980,-63.5490070,Prince
+Loyalist,Locality,46.3012290,-63.2399010,Queens
+Lyndale,Locality,46.1500000,-62.7833330,Queens
+MacDougall,Locality,46.5097140,-63.9379280,Prince
+Malpeque,Locality,46.5262420,-63.6862000,Prince
+Malpeque Bay,Community,46.5128600,-63.6557700,Prince; Queens
+Malpeque Harbour,Harbour,46.5669690,-63.7177290,Prince
+Maple Hill,Locality,46.3502290,-62.8605710,Queens
+Maple Plains,Locality,46.2920800,-63.5585800,Prince
+Maplewood,Locality,46.2833330,-63.4500000,Queens
+Margate,Locality,46.4589030,-63.5883870,Prince
+Marie,Locality,46.4050380,-62.6591050,Kings
+Marshfield,Locality,46.3028100,-63.0690440,Queens
+Martinvale,Locality,46.2955260,-62.6436200,Kings
+Maximeville,Locality,46.4319470,-64.1346350,Prince
+Mayfield,Locality,46.4492340,-63.3559480,Queens
+McNeills Mills,Locality,46.6331420,-63.9681600,Prince
+Meadow Bank,Community,46.2009130,-63.2282260,Queens
+Meadowbank,Community,46.2000000,-63.2333330,
+Melville,Locality,46.0193230,-62.8270150,Queens
+Mermaid,Locality,46.2620020,-63.0362550,Queens
+Middleton,Locality,46.3216580,-63.6449790,Prince
+Midgell,Locality,46.4134930,-62.6371410,Kings
+Milburn,Locality,46.6621550,-64.2740660,Prince
+Milburn,Locality,46.3622830,-62.6366220,Kings
+Mill River East,Locality,46.7660630,-64.1453520,Prince
+Mill Road,Locality,46.7459110,-64.1248290,Prince
+Mill Valley,Locality,46.4020040,-63.6278040,Prince
+Millcove,Locality,46.3574910,-63.0336270,Queens
+Milligans Wharf,Wharf,46.6551130,-63.9118950,Prince
+Mills Point,Locality,46.4503490,-63.7053110,Prince
+Milltown Cross,Locality,46.1035670,-62.6222560,Kings
+Millvale,Locality,46.4103270,-63.4225980,Queens
+Millview,Locality,46.1990920,-62.8749770,Queens
+Milo,Locality,46.6475840,-64.2238430,Prince
+Milton Station,Locality,46.3021040,-63.2119210,Queens
+Miltonvale Park,Community,46.3142200,-63.2281200,Queens
+Miminegash,Locality,46.8810000,-64.2260000,Prince
+Miminegash Harbour,Harbour,46.8833330,-64.2333330,Prince
+Miscouche,Community,46.4326150,-63.8682550,Prince
+Mont-Carmel,Locality,46.4000000,-64.0333330,Prince
+Montague,Town,46.1691880,-62.6506810,Kings
+Montague Junction,Former Railway Point,46.2210170,-62.6030260,Kings
+Monticello,Locality,46.4609530,-62.4491630,Kings
+Montrose,Locality,46.8686680,-64.0656410,Prince
+Morell,Community,46.4162260,-62.7050600,Kings
+Morell East,Locality,46.3898430,-62.6831440,Kings
+Mount Albion,Locality,46.2299270,-62.9445470,Queens
+Mount Buchanan,Locality,46.0807740,-62.9379200,Queens
+Mount Herbert,Locality,46.2303750,-63.0393980,Queens
+Mount Hope,Locality,46.3675000,-62.5000000,Kings
+Mount Mellick,Locality,46.2027300,-62.9462730,Queens
+Mount Pleasant,Locality,46.5805570,-64.0088450,Prince
+Mount Royal,Locality,46.6826820,-64.2602820,Prince
+Mount Stewart,Community,46.3676070,-62.8751530,Queens
+Mount Tryon,Community,46.2833330,-63.5833330,NE of Borden
+Mount Vernon,Locality,46.0159980,-62.7435470,Queens
+Muddy Creek,Locality,46.4225000,-63.9680560,Prince
+Munns Road,Locality,46.4197780,-62.0884970,Kings
+Murray Harbour,Community,46.0059940,-62.5275230,Kings
+Murray Harbour,Harbour,46.0263150,-62.4894930,Kings
+Murray Harbour North,Locality,46.0561790,-62.4856370,Kings
+Murray River,Community,46.0169620,-62.6155080,Kings
+Murray Road,Locality,46.7028790,-63.9817280,Prince
+Nail Pond,Locality,46.9847220,-64.0638890,Prince
+Naufrage,Locality,46.4676410,-62.4166770,Kings
+Naufrage Harbour,Harbour,46.4692310,-62.4162560,Kings
+New Acadia,Locality,46.3998660,-62.3961560,Kings
+New Annan,Locality,46.4197010,-63.7117340,Prince
+New Argyle,Locality,46.1697670,-63.3041900,Queens
+New Dominion,Locality,46.1749050,-63.2401930,Queens
+New Glasgow,Locality,46.4104920,-63.3495160,Queens
+New Glasgow Mills,Locality,46.4342390,-63.3477800,Queens
+New Harmony,Locality,46.4166670,-62.2333330,Kings
+New Haven,Locality,46.2192390,-63.2976560,Queens
+New Haven-Riverdale,Community,46.2267200,-63.3240900,Queens
+New London,Locality,46.4644940,-63.5111890,Queens
+New Perth,Locality,46.2121370,-62.6984540,Kings
+New Zealand,Locality,46.4099890,-62.3130480,Kings
+Newport,Locality,46.2181660,-62.5278850,Kings
+Newton,Locality,46.3405130,-63.5863230,Prince
+Newtown Cross,Locality,46.1283090,-62.8225960,Queens
+Nine Mile Creek,Locality,46.1471640,-63.2331320,Queens
+Norboro,Locality,46.4113140,-63.5757090,Prince
+North Bedeque,Locality,46.3660860,-63.7223610,Prince
+North Carleton,Locality,46.2883220,-63.6985940,Prince
+North Enmore,Locality,46.6021770,-64.0554160,Prince
+North Lake,Locality,46.4609410,-62.0649940,Kings
+North Lake Harbour,Harbour,46.4688710,-62.0684140,Kings
+North Milton,Locality,46.3338860,-63.2146810,Queens
+North River,Locality,46.2583330,-63.1958330,Queens
+North Rustico,Town,46.4583140,-63.3129950,Queens
+North Rustico Harbour,Harbour,46.4504410,-63.2956710,Queens
+North Rustico Harbour,Locality,46.4564580,-63.2935810,Queens
+North Shore,Community,46.3868800,-63.1211000,Queens
+North St. Eleanors,Locality,46.4440060,-63.8122460,Prince
+North Tryon,Locality,46.2509240,-63.5473300,Prince
+North Wiltshire,Locality,46.3014820,-63.3330190,Queens
+North Wiltshire,Community,46.2983300,-63.3237900,Queens
+North Winsloe,Community,46.3500000,-63.2000000,
+Northam,Locality,46.5457240,-63.9657170,Prince
+Northport,Community,46.7960000,-64.0640000,
+Norway,Locality,47.0088140,-64.0336550,Prince
+O'Leary,Town,46.7071640,-64.2268380,Prince
+Ocean View,Community,46.0666670,-62.8166670,SW of Montague
+Orwell,Locality,46.1578990,-62.8329660,Queens
+Orwell Cove,Locality,46.1412340,-62.8621350,Queens
+Oyster Bed,Community,46.3817260,-63.2385300,N. of Charlottetown
+Oyster Bed Bridge,Locality,46.3883450,-63.2370050,Queens
+Palmer Road,Locality,46.9127200,-64.1589790,Prince
+Panmure Island,Locality,46.1412310,-62.4856870,Kings
+Park Corner,Locality,46.5265890,-63.5577980,Queens
+Parkdale,Locality,46.2519440,-63.1194440,Queens
+Peakes,Locality,46.2997380,-62.7790380,Kings
+Peakes Road,Locality,46.3092270,-62.7342460,Kings
+Pembroke,Locality,46.0840800,-62.4777850,Kings
+Peters Road,Locality,46.0667290,-62.5638430,Kings
+Peterville,Locality,46.9379050,-64.1009510,Prince
+Pinette,Locality,46.0577650,-62.9052770,Queens
+Pisquid,Locality,46.3388030,-62.8560260,Queens
+Pisquid East,Community,46.3166670,-62.8333330,SE of Mount Stewart
+Pisquid West,Locality,46.3357050,-62.8694690,Queens
+Piusville,Locality,46.7925120,-64.1929520,Prince
+Pleasant Grove,Community,46.3632660,-63.0772190,Queens
+Pleasant Grove,Locality,46.3666670,-63.0666670,Queens
+Pleasant Valley,Locality,46.3666670,-63.4833330,Queens
+Pleasant View,Locality,46.9203550,-64.1858060,Prince
+Point Deroche,Locality,46.4187820,-62.9065400,Queens
+Point Pleasant,Locality,46.0414020,-62.5638490,Kings
+Point Prim,Locality,46.0666670,-62.9833330,Queens
+Pooles Corner,Locality,46.2108810,-62.6523490,Kings
+Poplar Grove,Locality,46.6552050,-63.9317490,Prince
+Poplar Point,Locality,46.2810240,-62.4887680,Kings
+Port Borden,Post Office,46.2527780,-63.6986110,Prince
+Port Borden,Port,46.2474770,-63.6962590,Prince
+Port Hill,Locality,46.5795550,-63.8782980,Prince
+Port Hill Station,Locality,46.5791820,-63.9520200,Prince
+Portage,Locality,46.6644140,-64.0596730,Prince
+Pownal,Locality,46.2026320,-62.9730910,Queens
+Priest Pond,Locality,46.4781250,-62.1804200,Kings
+Primrose,Locality,46.2986030,-62.5422820,Kings
+Profits Corner,Locality,46.8966450,-64.0849300,Prince
+Reads Corner,Locality,46.4020440,-63.7456670,Prince
+Red House,Locality,46.3269410,-62.3928150,Kings
+Red Point,Locality,46.3795730,-62.1404920,Kings
+Rennies Road,Locality,46.3764030,-63.3517820,Queens
+Rice Point,Locality,46.1340670,-63.2339950,Queens
+Richmond,Locality,46.5079930,-63.9914700,Prince
+Riverdale,Locality,46.2330320,-63.3412030,Queens
+Riverton,Locality,46.3104670,-62.6772780,Kings
+Robertson,Former Railway Point,46.1772930,-62.6238760,Kings
+Rock Barra,Locality,46.4711230,-62.2361970,Kings
+Rocky Point,Locality,46.2024100,-63.1505000,Queens
+Rollo Bay,Locality,46.3597600,-62.3386880,Kings
+Rollo Bay West,Settlement,46.3666670,-62.3666670,Kings
+Rose Valley,Locality,46.3206310,-63.4953250,Queens
+Rosebank,Locality,46.7942520,-64.1576120,Prince
+Rosebank,Locality,46.2180560,-63.1166670,Queens
+Roseberry,Locality,46.0383480,-62.8736730,Queens
+Rosehill,Locality,46.4630560,-63.8597220,Prince
+Roseneath,Locality,46.2104560,-62.6231440,Kings
+Roseville,Locality,46.8211640,-64.2454360,Prince
+Ross Corner,Locality,46.3598700,-63.7060690,Prince
+Roxbury,Locality,46.7045600,-64.1053020,Prince
+Royalty Junction,Locality,46.2972890,-63.1417880,Queens
+Rusticoville,Locality,46.4327210,-63.3189010,Queens
+Scotchfort,Locality,46.3504660,-62.9202520,Queens
+Sea View,Locality,46.5393470,-63.5943020,Queens
+Seabrook,Former Railway Point,46.4258640,-63.6688530,Prince
+Seacow Pond,Locality,47.0225230,-63.9915340,Prince
+Seal River,Locality,46.1970490,-62.8919090,Queens
+Seal River,Locality,46.2317110,-62.5434740,Kings
+Searletown,Locality,46.3019130,-63.6849760,Prince
+Selkirk,Locality,46.4255450,-62.4448340,Kings
+Shamrock,Locality,46.3215680,-63.5368490,Prince; Queens
+Sherbrooke,Community,46.4250000,-63.7805560,Prince
+Sherbrooke,Locality,46.4222220,-63.7625000,Prince
+Sherwood,Locality,46.2680560,-63.1297220,Queens
+Skinners Pond,Locality,46.9641290,-64.1175390,Prince
+Slemon Park,Locality,46.4347220,-63.8222220,Prince
+Souris,Town,46.3544620,-62.2516400,Kings
+Souris Harbour,Harbour,46.3503450,-62.2536720,Kings
+Souris Line Road,Locality,46.3966110,-62.2492430,Kings
+Souris River,Locality,46.3771640,-62.2818100,Kings
+Souris West,Locality,46.3660000,-62.2870000,Kings
+Souris West,Community,46.3588230,-62.2833630,Kings
+South Freetown,Locality,46.3557920,-63.6159400,Prince
+South Granville,Locality,46.3962370,-63.4656620,Queens
+South Lake,Locality,46.4229790,-62.0494790,Kings
+South Melville,Locality,46.2333960,-63.4330660,Queens
+South Pinette,Community,46.0413770,-62.9103570,SE of Charlottetown
+South Rustico,Locality,46.4157570,-63.2917490,Queens
+Southampton,Locality,46.3813060,-62.5833220,Kings
+Southport,Locality,46.2263890,-63.1055560,Queens
+Southwest Lot 16,Locality,46.4842060,-63.9002140,Prince
+Spring Park,Locality,46.2505556,-63.1425000,Queens
+Spring Valley,Locality,46.4972670,-63.6258890,Prince
+Springbrook,Locality,46.4933980,-63.5057260,Queens
+Springfield,Locality,46.3896450,-63.5228850,Queens
+Springfield West,Locality,46.6840820,-64.3597110,Prince
+Springhill,Locality,46.5627560,-64.0047580,Prince
+Springton,Locality,46.3201490,-63.4250080,Queens
+Springvale,Locality,46.3136290,-63.2452670,Queens
+St-Gilbert,Locality,46.4833330,-64.0500000,Prince
+St-Hubert,Locality,46.5000000,-64.0333330,Prince
+St-Nicholas,Locality,46.4194440,-63.9552780,Prince
+St-Philippe,Locality,46.5000000,-64.0666670,Prince
+St-Raphaël,Locality,46.4333330,-64.0166670,Prince
+St-Timothée,Locality,46.4166670,-64.0666670,Prince
+St. Andrews,Locality,46.3833930,-62.8531260,Queens
+St. Ann,Locality,46.4294180,-63.3991870,Queens
+St. Anthony,Locality,46.7368970,-64.1746300,Prince
+St. Catherines,Locality,46.3703760,-62.2105200,Kings
+St. Catherines,Locality,46.1920060,-63.2973790,Queens
+St. Charles,Locality,46.3941020,-62.4251220,Kings
+St. Chrysostome,Locality,46.5088850,-64.0995950,Prince
+St. Dunstan's,Former Railway Point,46.2569440,-63.1375000,Queens
+St. Edward,Locality,46.8790480,-64.1825330,Prince
+St. Eleanors,Locality,46.4213890,-63.8111110,Prince
+St. Felix,Locality,46.9333330,-64.0166670,Prince
+St. Felix,Community,46.9267240,-64.0228140,Prince
+St. Georges,Locality,46.2612370,-62.4854480,Kings
+St. Lawrence,Locality,46.8463490,-64.2131100,Prince
+St. Louis,Community,46.8860320,-64.1443460,Prince
+St. Margarets,Locality,46.4553560,-62.3823390,Kings
+St. Marys Road,Locality,46.0832280,-62.6145690,Kings
+St. Nicholas,Community,46.4194440,-63.9552780,Prince
+St. Patrick Road,Locality,46.3299640,-62.7767590,Kings
+St. Patricks,Locality,46.3928290,-63.3848990,Queens
+St. Peter and St. Paul,Locality,46.9176330,-64.0702890,Prince
+St. Peters Bay,Community,46.4177670,-62.5817690,Kings
+St. Peters Harbour,Locality,46.4333330,-62.7500000,Kings
+St. Roch,Locality,46.9119770,-64.0581610,Prince
+St. Teresa,Locality,46.2818880,-62.7430360,Kings
+Stanchel,Locality,46.3196040,-63.4654530,Queens
+Stanhope,Locality,46.4067730,-63.1075680,Queens
+Stanhope Bayshore,Locality,46.4166670,-63.1166670,Queens
+Stanhope by the Sea,Locality,46.4134640,-63.1128380,Queens
+Stanley Bridge,Locality,46.4624800,-63.4622020,Queens
+"Stanley Bridge, Hope River, Bayview, Cavendish and North Rustico",Resort Municipality,46.4805560,-63.3922220,Queens
+Stratford,Town,46.2177780,-63.0808330,Queens
+Strathcona,Locality,46.3228880,-62.5568240,Kings
+Strathgartney,Locality,46.2168590,-63.3351000,Queens
+Sturgeon,Locality,46.1090280,-62.5227750,Kings
+Suffolk,Locality,46.3317380,-63.0643900,Queens
+Summerfield,Locality,46.4006330,-63.5497620,Queens
+Summerside,City,46.3958330,-63.7888890,Prince
+Summerside Harbour,Harbour,46.3838080,-63.7940950,Prince
+Summerville,Locality,46.2137540,-62.7575120,Queens; Kings
+Surrey,Locality,46.0686610,-62.8144080,Queens
+Tarantum,Locality,46.2907260,-62.9529770,Queens
+Tea Hill,Locality,46.2111110,-63.0666670,Queens
+Tenmile House,Locality,46.3345180,-62.9830440,Queens
+Tignish,Town,46.9504930,-64.0335830,Prince
+Tignish,Locality,46.9500000,-64.0333330,Prince
+Tignish Corner,Locality,46.9469410,-64.0490990,Prince
+Tignish Harbour,Harbour,46.9531820,-64.0013310,Prince
+Tignish Shore,Community,46.9462340,-63.9951830,Prince
+Toronto,Locality,46.4524690,-63.3799670,Queens
+Tracadie,Locality,46.3469780,-62.9632210,Queens
+Tracadie Cross,Locality,46.3510910,-62.9614120,Queens
+Tracadie Harbour,Harbour,46.4120910,-63.0392820,Queens
+Travellers Rest,Locality,46.4182800,-63.7386660,Prince
+Tryon,Locality,46.2377960,-63.5428410,Prince
+Tyne Valley,Community,46.5742300,-63.9293170,Prince
+Tyrone,Locality,46.2785740,-63.3434590,Queens
+Uigg,Locality,46.1636200,-62.8130790,Queens
+Union,Former Railway Point,46.3109960,-63.1265240,Queens
+Union Corner,Locality,46.3890290,-63.9932150,Prince
+Union Road,Community,46.3244270,-63.1319590,Queens
+Union Road,Locality,46.1810270,-62.6997130,Kings
+Union Road,Locality,46.3333330,-63.1333330,Queens
+Unionvale,Locality,46.7145750,-64.1837500,Prince
+Upton,Locality,46.3397640,-62.5390670,Kings
+Urbainville,Locality,46.4636590,-64.0372770,Prince
+Valley,Locality,46.0657890,-62.7927730,Queens
+Valleyfield,Community,46.1302200,-62.7098500,Kings; Queens
+Valleyfield,Locality,46.1295820,-62.7359660,Kings; Queens
+Vernon Bridge,Locality,46.1754120,-62.8821570,Queens
+Vernon River,Locality,46.2078860,-62.8332420,Queens
+Victoria,Community,46.2170240,-63.4931740,Queens
+Victoria Cross,Locality,46.1645090,-62.6951130,Kings
+Victoria Harbour,Harbour,46.2020360,-63.4855350,Queens
+Victoria West,Locality,46.5437290,-64.0578830,Prince
+Village Green,Locality,46.2140310,-62.9247020,Queens
+Warren Grove,Community,46.2730600,-63.2213200,Queens
+Waterford,Locality,46.9468200,-64.1639850,Prince
+Waterside,Locality,46.1979110,-62.9580070,Queens
+Watervale,Locality,46.2677470,-62.8963120,Queens
+Websters Corner,Locality,46.3084560,-62.9537410,Queens
+Wellington,Community,46.4508040,-63.9982830,Prince
+Wellington,Locality,46.4500000,-64.0000000,Prince
+Wellington Centre,Locality,46.4891120,-63.9872440,Prince
+Wellington Station,Post Office,46.4500000,-64.0000000,Prince
+West Cape,Locality,46.6770680,-64.4076120,Prince
+West Covehead,Locality,46.3961760,-63.1365020,Queens
+West Devon,Locality,46.6679280,-64.1178110,Prince
+West Point,Locality,46.6266960,-64.3714540,Prince
+West River,Community,46.1716800,-63.2947900,Queens
+West Royalty,Locality,46.2583330,-63.1638890,Queens
+West St. Peters,Locality,46.4121040,-62.7765280,Kings
+Westmoreland,Locality,46.2687320,-63.4904710,Queens
+Wheatley River,Locality,46.3731120,-63.2897800,Queens
+Whim Road,Locality,46.1336690,-62.5999900,Kings
+White Sands,Locality,45.9719620,-62.5493300,Kings
+Wild Harbour,Locality,46.4216190,-62.8636940,
+Wilmot,Locality,46.0070820,-62.5779130,Kings
+Wilmot,Locality,46.3944440,-63.7625000,Prince
+Wilmot Valley,Locality,46.3994790,-63.6971880,Prince
+Windon,Locality,46.3511550,-62.7218910,Kings
+Winsloe,Locality,46.2933330,-63.1788890,Queens
+Winsloe South,Locality,46.3130070,-63.1760150,Queens
+Wood Island,Former Railway Point,46.0000000,-62.7500000,Queens
+Wood Islands,Locality,45.9661350,-62.7510960,Queens
+Wood Islands Harbour,Harbour,45.9517840,-62.7488370,Queens
+Woodstock,Locality,46.7177590,-64.1654220,Prince
+Woodvale,Locality,46.8847630,-64.0842440,Prince
+Woodville Mills,Locality,46.2387290,-62.5102630,Kings
+York,Locality,46.3166670,-63.1000000,Queens
+York,Community,46.3159830,-63.0975060,Queens
+York Point,Locality,46.2233330,-63.1680560,Queens

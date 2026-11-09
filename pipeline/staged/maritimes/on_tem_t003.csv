@@ -1,0 +1,16 @@
+# Temiscouata Railway (Official Guide, April 25, 1948): Edmundston - Baker Brook - Clairs - Connors, mixed Nos. 3 / 4, daily except Sunday. ATLANTIC
+# (standard) time, as printed. Miles from Riviere du Loup, as printed. STAGED (8 Nov 2026) for the next full rebuild.
+# Track (Brendan, 8 Nov 2026): CN (NTR) by trackage rights Edmundston - Baker Brook (draw in CN colours), the Temiscouata's own track west of there:
+# traces/maritimes/tem_osm.geojson (west leg out of Edmundston station, Connors branch from Couturier Siding). Places: Edmundston Brendan's point; Caron
+# Brook, Clairs (CGN "Clair"), Connors CGN points (98.6, 101.3, 112.6 traced); Baker Brook (the CGN point is 1 km off the line), Ledges, Little River Mills by
+# mileage. No. 4 Baker Brook 8.15 - Edmundston 9.15 a.m. (13.8 mi in an hour) as read. f = flag stop (Little River Mills).
+#train col=No3 num=3 dir=down days="ex Sun" kind=mixed note="Mixed. Edmundston 2.15 p.m. to Connors 4.15 p.m. (Atlantic time)."
+#train col=No4 num=4 dir=up days="ex Sun" kind=mixed note="Mixed. Connors 7.00 a.m. to Edmundston 9.15 a.m. (Atlantic time)."
+mile,station,principal,prov,tz,No3,No4
+81.5,Edmundston,1,NB,A,lv 2.15p,ar 9.15a
+95.3,Baker Brook,0,NB,A,3.05p,8.15a
+98.8,Caron Brook,0,NB,A,3.17p,8.00a
+101.7,Clairs,0,NB,A,3.25p,7.50a
+106.4,Ledges,0,NB,A,3.35p,7.30a
+109.6,Little River Mills,0,NB,A,f3.55p,f7.15a
+113.1,Connors,1,NB,A,ar 4.15p,lv 7.00a

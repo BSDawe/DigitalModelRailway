@@ -7,6 +7,8 @@ together by `mar_tracks.py` (`python3 mar_tracks.py` prints what is on file and 
 |---|---|---|
 | `cn.geojson` | Canadian Government Railways / CN: Intercolonial, NTR (N.B.), PEI, Cape Breton, Nova Scotia Railway, E&NA, Canada Eastern ...; plus the Inverness & Richmond and Halifax & South Western from the Canadian Northern collection | Wikipedia maps (CGR map; `traces/cnor_all.geojson`), supplied by Brendan |
 | `brendan.geojson` | Brendan's own traces: Mulgrave - Point Tupper (ferry piers, yards, Port Hawkesbury mainline), Halifax North Street - Deepwater Terminal. Wikipedia track under them was cut: his trace is the line there | Brendan |
+| `tem.geojson` | Témiscouata Railway (Wikipedia): the Quebec part (`quebec_overlap`) and the N.B. part, N.B. line - St. Jacques - Edmundston | Wikipedia maps |
+| `tem_osm.geojson` | Témiscouata in N.B.: Edmundston station leg, Connors branch (from the NTR at Couturier Siding), the 1941-abandoned riverside line (`pre1948`) | OpenStreetMap (© OpenStreetMap contributors, ODbL), export by Brendan; `tools/mar_import_osm_tem.py` |
 | `industrial.geojson` | Colliery / steel railways on the map (own codes `nscc`, `acc`, `nssc`, `vale`) | Wikipedia maps |
 
 Provenance of the first import: `tools/mar_import_cgr.py` (one-shot, kept as the record). Raw input `CN_Maritimes.gpkg` is Brendan's (private-repo rule: raw files private,
@@ -20,7 +22,7 @@ only traces used are public).
 ## Status words
 The status says whether the TRACK was there in 1948, nothing else: who may run over it is `own` (a step asks for its owners), and whether a train ran over
 it is the timetables' business (a branch with no train is just not routed over). `ok` there - `check` there in 1948? (the question is in `why`; not used
-until decided) - `post1948` built after 1948 (Canso Causeway line, rail from May 1955) - `quebec_overlap` the same track is already in the Quebec collection.
+until decided) - `post1948` built after 1948 (Canso Causeway line, rail from May 1955) - `pre1948` gone by 1948 - `quebec_overlap` the same track is already in the Quebec collection.
 `mar_tracks.features()` takes `ok` unless told otherwise, so deciding a `check` piece is changing one word.
 
 ## Where a railway goes
@@ -47,3 +49,7 @@ until decided) - `post1948` built after 1948 (Canso Causeway line, rail from May
   Nova Scotia Railway 1,180 m; Fredericton bridge extension - Chatham Branch 1,546 m. Cape Breton Railway (Wikipedia) ends 29.6 km short of other track.
 - PEI is a separate network (Cape Tormentine - Borden car ferry); Mulgrave and Point Tupper are separate until the Strait of Canso ferry is built.
 - Ties to the Quebec build: Restigouche crossing (-66.93886, 47.97488) and the NTR boundary point (-68.7317, 47.372).
+
+## Places
+`places/cgn_nb_places.csv`, `cgn_ns_places.csv`, `cgn_pe_places.csv`: populated places and railway points, landings, wharves, harbours, ports, post offices of the federal
+Canadian Geographical Names files (Brendan, 8 Nov 2026), cut by `tools/cgn_places.py`, in the columns of `cgn_bc_places.csv`. The full files go to the private repo.

@@ -24,7 +24,7 @@ F[134] = dict(fid=134, title=None, desc='', coords=[(-61.36827384679986, 45.6190
 for f in F.values(): f['ls'] = LineString([T.transform(x, y) for x, y in f['coords']])
 NOTE_W = 'Wikipedia map data, Canadian Government Railways (and the linked railway maps), supplied by Brendan, 8 Nov 2026'
 NOTE_B = "Brendan's trace, 8 Nov 2026"; NOTE_C = 'Canadian Northern collection (Wikipedia maps), traces/cnor_all.geojson'
-FILES = {'cn': [], 'brendan': [], 'industrial': []}; REPORT = []
+FILES = {'cn': [], 'brendan': [], 'industrial': [], 'tem': []}; REPORT = []
 def add(file, ls, own, name, note, fid, group, status, why=None, constituent=None, branch=None):
     if ls.length < 1: return
     p = dict(own=own, name=name, constituent=constituent or name, branch=branch or '', note=note, cost=1.0, fid=fid, group=group, status=status)
@@ -55,7 +55,7 @@ for fid, f in F.items():
     own, status, why, file = 'cn', 'ok', None, 'cn'
     if fid in NOT_CN: own, nm, file = NOT_CN[fid][0], NOT_CN[fid][1], 'industrial'; title = nm     # status stays 'ok': whose track it is is 'own', not the status
     if fid in CHECK: status, why = 'check', CHECK[fid]
-    if fid == 4: own, status, why = 'tem', 'quebec_overlap', 'Temiscouata Railway: mostly in Quebec, which already has it (ontem)'
+    if fid == 4: own, file = 'tem', 'tem'                               # the Temiscouata: its own file (tem.geojson)
     ls = f['ls']; pieces = [(ls, nm, status, why)]
     if fid == 29:
         j = F[65]['ls'].interpolate(0); d = ls.project(j); REPORT.append(f'fid 29 split {d:.0f} m along at Brendan\'s junction (trace 65), gap {ls.distance(j):.0f} m')
@@ -63,6 +63,9 @@ for fid, f in F.items():
     if fid == 6:
         bd = Point(T.transform(-68.7317, 47.372)); d = ls.project(bd); REPORT.append(f'fid 6 NTR cut {d / 1000:.1f} km along at the N.B. boundary point ({ls.distance(bd):.0f} m off)')
         pieces = [(substring(ls, 0, d), nm + ' (west of the N.B. boundary)', 'quebec_overlap', 'the Quebec collection already carries the NTR to the N.B. boundary'), (substring(ls, d, ls.length), nm, status, why)]
+    if fid == 4:   # cut where the Quebec build's Temiscouata track ends (its 'International Boundary' point); the N.B. part is new
+        q = Point(T.transform(-68.480743, 47.487259)); d = ls.project(q); REPORT.append(f'fid 4 Temiscouata cut {d / 1000:.1f} km along at the end of the Quebec build\'s track ({ls.distance(q):.0f} m off)')
+        pieces = [(substring(ls, 0, d), nm + ' (Quebec, to the N.B. line)', 'quebec_overlap', 'the Quebec collection already carries it (ontem)'), (substring(ls, d, ls.length), nm + ' (N.B. line - St. Jacques - Edmundston)', status, why)]
     for g, n, s, w in pieces:
         if s in ('ok', 'check') and g.intersects(bu):
             left = g.difference(bu); parts = [x for x in (list(left.geoms) if hasattr(left, 'geoms') else [left]) if not x.is_empty and x.length >= 60]
