@@ -54,3 +54,11 @@ suffixes (50 trips: the Saskatchewan / Alberta pieces, CP 2E). Plan:
 - Found on Version 142 (re-assembled 8 Nov): 160 candidate pairs not linked today, e.g. CN 1 - 4 at Ottawa / Capreol / Armstrong, CP 1 - 8 at Fort William / Sudbury,
   CN 11 / 12 at Hervey / Fitzpatrick / Cochrane. Must NOT join: CN No. 1 Maritime Express arriving Montreal (Central) with CN No. 1 Continental leaving it (100 min;
   same number, different trains). To decide: Kootenay Central M681 at Cranbrook (8.5 h layover).
+
+## Maritime Coal, Railway & Power Co. (Official Guide, April 1948; Brendan, 9 Nov 2026; staged/maritimes/mcrp_official_guide.jpg)
+For later (stage 3, short lines). Atlantic time. Daily except Sunday (†). Connects with CN at Maccan.
+- Maccan 1.20 p.m., via River Hebert, to Joggins Mines (12 miles) 2.20 p.m.
+- Joggins Mines 10.15 a.m. to Maccan 11.15 a.m.
+- So the train lies over at Joggins overnight. The return sits before the outbound in the day: it leaves Joggins 10.15 a.m. and gets back there at 2.20 p.m.
+- Branch Chignecto - Maccan (3 miles) is freight only: not modelled.
+- NEEDED: track (Maccan - River Hebert - Joggins; nothing in the bank yet), and a River Hebert time (not printed; interpolate by mileage).

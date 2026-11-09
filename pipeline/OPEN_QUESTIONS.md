@@ -30,6 +30,10 @@ Last updated 9 November 2026 (Version 145).
 - [ ] The raw GeoPackage, the CGN zips and the OSM exports belong in the private repo. Claude has read-only access there, so they need adding from your side. (V143)
 - [ ] ESL livery colour: the placeholder is #7a2430. (V145)
 
+## Short lines (stage 3)
+- [ ] Maritime Coal, Railway & Power: timetable filed (Official Guide, April 1948). Needs a trace Maccan - River Hebert - Joggins Mines. (9 Nov)
+- [ ] Sydney & Louisburg: timetable and track. (8 Nov)
+
 ## Fixes queued (Brendan, 9 Nov 2026: flagged, don't fix yet)
 - [ ] Unnamed ships show a "Steamer" label. The rule is no visible label until clicked. Cause: the new NFR and ESL sailings in lo_build.py carry num='Steamer'. Older unnamed sailings show how it was done.
 - [ ] Straight links over gaps must be drawn dashed, except trivially short ones or ones Brendan asked for. Cause: traces/maritimes/links_estimated.geojson is read into on_lines._links() as ordinary track, so the page gets no est flag and draws it solid. Affected: Saint John (4.5 km), Yarmouth, NFR Port-aux-Basques. The Canso car-ferry link (~1.2 km) is probably "trivially short". Also check the other Quebec-build straight estimates.
