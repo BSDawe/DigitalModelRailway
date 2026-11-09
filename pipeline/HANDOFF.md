@@ -9,6 +9,8 @@ version sections at the end of STATE.md (Versions 130-142) hold the details of r
 - A leftover branch, `wip-cdgb`, is on GitHub (the proxy refused to delete it). It is merged; Brendan can delete it.
 
 ## Working with Brendan
+- Unnamed ships carry no visible label on the map until clicked; never a stand-in such as "Steamer" (Brendan, 9 Nov 2026).
+- A straight link that bridges a gap in the track is drawn DASHED, unless it is trivially short or Brendan asked for it; traces stay solid (Brendan, 9 Nov 2026).
 - OPEN_QUESTIONS.md is the running tally of questions for him. Add each new question there, and when he answers, move it to "Answered" with the date. Mirror it to the project with STATE and HANDOFF.
 - Ask before building when something is unclear. Don't build ahead of him on items marked "waiting" or "do not build ahead".
 - He dislikes slow work: batch changes into one rebuild, and run only the steps a change touches.
