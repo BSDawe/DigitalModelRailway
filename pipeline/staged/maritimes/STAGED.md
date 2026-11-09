@@ -38,4 +38,4 @@ any step until it is moved into `pipeline/`. Track: `traces/maritimes/` (`python
 - Tables: Halifax - Truro - Moncton (Table 1 gives only Halifax and Moncton); Saint John - Moncton (Saint John's mileage in on_cn_t001s is Claude's 89.4 mi to
   Moncton, to check); Table 23's N.B. part (51 / 52 and 27 / 28 on the NTR).
 - To check (Brendan): No. 1 has a dagger (ex Sun) at Halifax and Moncton, No. 2 at Moncton and Halifax, and No. 26 at Campbellton: the files keep "daily" for 1 / 2 (as
-  the Quebec page) and 26. No. 1's sign at Berry Mills (read as a conditional stop). No. 4 Témiscouata Baker Brook 8.15 - Edmundston 9.15 a.m. (as read).
+  the Quebec page) and 26. No. 4 Témiscouata Baker Brook 8.15 - Edmundston 9.15 a.m. (as read).

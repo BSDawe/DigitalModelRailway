@@ -2,8 +2,8 @@
 # Miles as printed (from Halifax). Campbellton: arrival printed in Atlantic time, departure in Eastern; both entered in Atlantic (E.T. + 1 h). Halifax - Moncton intermediate
 # stops are in another table (not in hand). Saint John times for Nos. 1, 59, 3 / 2, 60, 4 are connecting trains (Saint John lv 5.15 p.m., 7.05 a.m., 7.05 a.m.; ar 1.20 p.m., 7.15 p.m. Sun only (sign section),
 # 5.35 p.m. (d: Sunday 7.15 p.m.)): in the notes. The Saint John trains 25 / 26 and 51 / 52 are on_cn_t001s.csv.
-# N.B. stops printed with a sign and no time (No. 1 Coal Branch "w"; No. 2 Adamsville and Coal Branch "m", Canaan triangle) are not entered. No. 1 Berry Mills: the sign
-# is unclear in the scan (read as a conditional stop). DAYS TO CHECK: No. 1 is printed with a dagger (ex Sun) at Halifax and Moncton, No. 2 at Moncton and Halifax;
+# N.B. stops printed with a sign and no time (No. 1 Coal Branch "w"; No. 2 Adamsville and Coal Branch "m", Canaan triangle) are not entered. No. 1 Berry Mills: sign u (stops
+# Saturday for passengers from Moncton or for beyond Campbellton; Brendan), entered as a flag stop. DAYS TO CHECK: No. 1 is printed with a dagger (ex Sun) at Halifax and Moncton, No. 2 at Moncton and Halifax;
 # this file keeps "daily" as entered from the Quebec page.
 # Quebec (Via Ferry) times: in the notes and the Quebec - Levis ferry (on_cnfy_t001.csv). Metis Beach rows (connections by the Canada & Gulf Terminal) not entered.
 # Not here: M255 / M256 (Levis - Villeroy - Fortierville: on_cn_t054.csv); 43 / 44 Quebec (Palais) - Charny - Chaudiere (Richmond - Quebec trains: on_cn_t052.csv); 241, 141 / 142 Nicolet (on_cn_t001n.csv); 11, 16, 23 (St. Hyacinthe - Montreal: the Sherbrooke line trains, on_cn_t059.csv, Table 59).
