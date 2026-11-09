@@ -41,6 +41,8 @@ Last updated 9 November 2026 (Version 145).
 
 - [ ] An isolated piece of track outside Campbellton that some trains route onto (Brendan, 9 Nov 2026). First look found no reversal or spur detour within ~25 km. The Gaspé trains (oncn001a) run Campbellton - Matapedia and back east on the Quebec shore by Cross Point, which is correct for 1948. One oddity: a 4.7 km straight in oncn001a near Pointe-a-la-Croix (-66.735, 48.016 to -66.688, 48.044). The Tide Head realignment (fid 8) is "check" and not used. WAITING: which trains, and roughly where.
 
+- [ ] Eastern Steamship Lines from the Official Guide (Brendan, 9 Nov 2026; staged/maritimes/esl_official_guide.png). S.S. YARMOUTH, direct overnight service June 2 - Sept. 26. Leave Boston (Central Wharf) 4.30 p.m. EDT Mon, Wed, Fri, due Yarmouth (Evangeline Wharf) 7.30 a.m. AST Tue, Thu, Sat. Leave Yarmouth 6.30 p.m. AST Sun, Tue, Thu, due Boston 8.30 a.m. EDT Mon, Wed, Fri. EDT = AST = UTC-4, so the crossing takes 15 h out and 14 h back. Built now (V145): Boston 3.30 p.m., Boston arrival 7.30 a.m., Boston taken as EST. Fix: both Boston times, zone EDT, and label the boat "Yarmouth" (a named ship, which also settles its "Steamer" label). QUESTION: the guide says Central Wharf. Brendan's point is India Wharf, the next pier south (~150 m). Keep it or move it?
+
 ## Answered
 - Through trains: a train runs through as one trip; within one file, use the six-day / seventh-day split (8 Nov). Chaining across files waits until all the CN Maritime files are in, then again for CP. It joins automatically under an hour; named trains join only when the names agree (8 Nov).
 - Saint John is a connecting train, not a through point. Union Station 45.276776, -66.064504 (8 Nov).
