@@ -36,6 +36,9 @@ Last updated 9 November 2026 (Version 145).
 
 - [ ] North Sydney is misrouted (Brendan, 9 Nov 2026). The main should run from Boularderie across the Bras d'Or at the bridge, east toward Sydney Mines, loop round, then south through North Sydney to Leitches Creek and North West Arm, plus a spur to the ferry landing. His map is staged/maritimes/north_sydney_route_brendan.png. Check cn_osm_sydney.geojson against it: which OSM ways the trains took, and whether the Sydney Mines loop is on file.
 
+- [ ] Mulgrave - Point Tupper is a TRAIN FERRY (Brendan, 9 Nov 2026), to be drawn like the Windsor - Detroit CN ferry (Version 112): the link becomes own 'water' (dotted water line, no track, no boat), the train itself crosses, and it holds at each slip for loading and unloading. Now: the 1.2 km link in links_estimated.geojson is own cn, drawn as track, with no slip holds. This replaces the "trivially short" call in the dashed-links item above.
+- [ ] Mulgrave switchback (Brendan, 9 Nov 2026): on the Mulgrave side, trains run to the end of the switchback tail just before town, then reverse into Mulgrave, so the map shows the switchback. Check Brendan's Mulgrave traces (brendan.geojson, traces 65 and 107) for the tail. The path-finder will need a forced via point at the tail end, as with the Windsor station reversal.
+
 ## Answered
 - Through trains: a train runs through as one trip; within one file, use the six-day / seventh-day split (8 Nov). Chaining across files waits until all the CN Maritime files are in, then again for CP. It joins automatically under an hour; named trains join only when the names agree (8 Nov).
 - Saint John is a connecting train, not a through point. Union Station 45.276776, -66.064504 (8 Nov).
