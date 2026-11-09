@@ -110,12 +110,21 @@ def despike(c):
         if d(c[i - 1], c[i + 1]) < 80 and d(c[i], c[i - 1]) > 400 and d(c[i], c[i + 1]) > 400: continue
         out.append(c[i])
     return out + [c[-1]]
+_LINKS = None
 def _links():
-    out = []
-    for fn in sorted(__import__('glob').glob(os.path.join(HERE, 'traces', 'ontario', 'brendan', '*.geojson'))): out += json.load(open(fn))['features']
-    return out
+    """Brendan's traces and connectors (traces/ontario/brendan/), and the Maritime track bank (traces/maritimes/, 'ok' pieces, read by mar_tracks; Brendan,
+    8 Nov 2026: the Maritime lines are built through this step so the trains from Quebec run on into N.B. and N.S.). Read once."""
+    global _LINKS
+    if _LINKS is None:
+        out = []
+        for fn in sorted(__import__('glob').glob(os.path.join(HERE, 'traces', 'ontario', 'brendan', '*.geojson'))): out += json.load(open(fn))['features']
+        import mar_tracks
+        for p in mar_tracks.features(status='ok'):
+            out.append(dict(properties=dict(own=p['own'], name=p['name'], cost=p.get('cost', 1.0)), geometry=dict(type='LineString', coordinates=[list(c) for c in p['coords']])))
+        _LINKS = out
+    return _LINKS
 BOXES = {'onr': (-82.6, -78.4, 43.5, 51.5), 'acr': (-85.2, -82.8, 46.3, 49.9), 'nyc': (-74.4, -73.4, 44.9, 45.6), 'dh': (-74.0, -73.2, 44.95, 45.6),
-         'tem': (-69.7, -68.3, 47.3, 47.95), 'nyco': (-75.8, -74.6, 44.9, 45.5), 'mc': (-83.25, -78.85, 42.0, 43.2), 'msc': (-73.60, -72.65, 45.35, 45.56), 'nst': (-79.32, -79.03, 42.86, 43.23), 'nfr': (-59.6, -52.4, 46.4, 49.6), 'qrl': (-71.25, -70.74, 46.80, 47.10), 'cgt': (-68.4, -67.4, 48.5, 48.95), 'rs': (-71.4, -70.8, 48.25, 48.5), 'tir': (-76.25, -76.10, 44.30, 44.40), 'aj': (-71.9, -71.5, 48.4, 48.8), 'thb': (-80.5, -78.85, 42.85, 43.75), 'cpthb': (-80.5, -78.85, 42.85, 43.75), 'lps': (-81.35, -81.05, 42.6, 43.05), 'grr': (-80.56, -80.28, 43.33, 43.48), 'len': (-80.42, -80.18, 42.76, 43.38), 'cnfy': (-72.56, -71.15, 46.32, 46.83)}   # the small railways' graphs: their own part of the map only
+         'tem': (-69.7, -68.25, 47.15, 47.95), 'nyco': (-75.8, -74.6, 44.9, 45.5), 'mc': (-83.25, -78.85, 42.0, 43.2), 'msc': (-73.60, -72.65, 45.35, 45.56), 'nst': (-79.32, -79.03, 42.86, 43.23), 'nfr': (-59.6, -52.4, 46.4, 49.6), 'qrl': (-71.25, -70.74, 46.80, 47.10), 'cgt': (-68.4, -67.4, 48.5, 48.95), 'rs': (-71.4, -70.8, 48.25, 48.5), 'tir': (-76.25, -76.10, 44.30, 44.40), 'aj': (-71.9, -71.5, 48.4, 48.8), 'thb': (-80.5, -78.85, 42.85, 43.75), 'cpthb': (-80.5, -78.85, 42.85, 43.75), 'lps': (-81.35, -81.05, 42.6, 43.05), 'grr': (-80.56, -80.28, 43.33, 43.48), 'len': (-80.42, -80.18, 42.76, 43.38), 'cnfy': (-72.56, -71.15, 46.32, 46.83)}   # the small railways' graphs: their own part of the map only
 def _mk():
     """ab_lines.make_graph with one more kind of line, 'x' (31 Oct 2026): like the network ('n') it is tied only at its loose ends, and the points of
     traces are not tied onto it (the Windsor ferry lead runs 35 m from the main line; the trains must take it from its junction, not jump to its end)"""
