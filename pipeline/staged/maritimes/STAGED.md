@@ -45,7 +45,8 @@ Generalise the through-train linking in `real_ends.py` (runs at assembly, ~10 s,
 suffixes (50 trips: the Saskatchewan / Alberta pieces, CP 2E). Plan:
 - Match on railway (id prefix) + number, the last stop of one = the first stop of the next (same gid), and compatible days (the next piece's service days, shifted
   for midnight, cover the first's).
-- Join automatically when the stop is short (under an hour: Brendan to confirm); named trains only when the names agree (to confirm). Every other candidate goes to
+- Join automatically when the stop is under an hour; when both pieces carry a name, only if the names agree (Brendan, 8 Nov 2026: both confirmed). A piece
+  without a name does not block a join: CP 1 / 2 is unnamed (perhaps the only unnamed long-distance train), and some pieces carry the name only in one file. Every other candidate goes to
   a review list in the build log; an explicit JOIN / NOJOIN table settles them.
 - GTFS: a shared `block_id` for each chain (stay-seated through running).
 - Found on Version 142 (re-assembled 8 Nov): 160 candidate pairs not linked today, e.g. CN 1 - 4 at Ottawa / Capreol / Armstrong, CP 1 - 8 at Fort William / Sudbury,
