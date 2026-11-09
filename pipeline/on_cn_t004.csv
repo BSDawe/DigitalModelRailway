@@ -1,0 +1,91 @@
+# Canadian National, Table 4: Halifax - Truro - Moncton - Saint John (Official Guide, April 25, 1948, page 1114; Brendan, 8 Nov 2026). ATLANTIC time, as printed.
+# Table 4's own trains. The Table 1 trains (1, 59, 3 / 2, 4, 60) are in on_cn_t001.csv with their Halifax - Moncton stops from this table. Columns printed as pairs:
+# 3-13, 14-60, 7-11, 77-19, 20-12 = two trains joined at Moncton / Truro (entered as separate trains; 3 and 60 in Table 1).
+# Not entered: the Painsec Junction - Moncton pieces of the Point du Chene / Buctouche trains (77 Painsec 6.23 a.m., 279 12.12 p.m., 289 Sat 12.37 p.m. into Moncton;
+# 276 Moncton 10.35 a.m. (mixed), 292 Sat 11.20 a.m., 78 4.25 p.m. out to Painsec): with their own table.
+# Signs: * daily; dagger ex Sun; double dagger ex Sat; k Sat only; section Sun only; "b" (daily except Sat and Sun) on 379 / 380, read off the scan; Psi on No. 13:
+# daily except Sunday, daily June 20 - September 5 (entered daily); square = motor train. Conditional stops (v, z, s, :, x, y, g, the dot) entered as flag stops.
+# Motor trains 378 / 379 / 380 / 381 "will not run May 24, June 7, July 1 or September 6" (none in the modelled week). 41 / 42 run June 28 - September 11.
+#train col=No385 num=385 dir=down days="Sat" kind=motor note="Motor train, Saturday only: Halifax 10.00 p.m. to Windsor Junction 10.40 p.m."
+#train col=No381 num=381 dir=down days="ex Sun" kind=motor note="Motor train, daily except Sunday: Halifax 5.20 p.m. to Windsor Junction 6.00 p.m. (not May 24, June 7, July 1, September 6)."
+#train col=No383 num=383 dir=down days="Sat" kind=motor note="Motor train, Saturday only: Halifax 12.30 p.m. to Elmsdale 1.40 p.m."
+#train col=No379 num=379 dir=down days="Mon,Tue,Wed,Thu,Fri" kind=motor note="Motor train, daily except Saturday and Sunday: Halifax 12.30 p.m. to Windsor Junction 1.05 p.m. (not May 24, June 7, July 1, September 6)."
+#train col=No5 num=5 dir=down days="ex Sun" kind=passenger note="Daily except Sunday: Halifax 6.30 a.m. to Truro 8.40 a.m."
+#train col=No9 num=9 dir=down days="ex Sun" kind=passenger note="Daily except Sunday: Halifax 4.30 p.m. to Truro 7.05 p.m."
+#train col=No7 num=7 dir=down days=daily kind=passenger note="Daily: Halifax 7.00 p.m. to Truro 8.55 p.m.; on as No. 11 (Truro 10.00 p.m., daily except Saturday)."
+#train col=No11 num=11 dir=down days="Sun,Mon,Tue,Wed,Thu,Fri" kind=passenger note="Daily except Saturday: Truro 10.00 p.m. to Moncton 1.45 a.m. (from Halifax as No. 7)."
+#train col=No39 num=39 dir=down days="ex Sun" kind=passenger note="Daily except Sunday: Sackville 12.10 p.m. to Moncton 1.25 p.m."
+#train col=No41 num=41 dir=down days="ex Sun" kind=passenger note="Daily except Sunday, June 28 to September 11: Sackville 4.20 p.m. to Moncton 5.35 p.m."
+#train col=No43 num=43 dir=down days="ex Sun" kind=passenger note="Daily except Sunday: Moncton 3.00 a.m. to Saint John 6.20 a.m."
+#train col=No19 num=19 dir=down days="ex Sun" kind=passenger note="Daily except Sunday: Moncton 10.20 a.m. to Saint John 1.20 p.m."
+#train col=No13 num=13 dir=down days=daily kind=passenger note="Moncton 2.55 p.m. to Saint John 5.45 p.m. (daily except Sunday; daily June 20 to September 5). Connects from Nos. 3 and 52."
+#train col=No13s num=13 dir=down days="Sun" kind=passenger note="Sunday only: Moncton 4.30 p.m. to Saint John 7.15 p.m. (printed as No. 13 in a second column; TO CHECK)."
+#train col=No351 num=351 dir=down days="ex Sun" kind=motor note="Motor train, daily except Sunday: Sussex 5.00 a.m. to Saint John 7.40 a.m."
+#train col=No357 num=357 dir=down days="Sat" kind=motor note="Motor train, Saturday only: Sussex 6.40 p.m. to Saint John 8.55 p.m."
+#train col=No355 num=355 dir=down days="Sat" kind=motor note="Motor train, Saturday only: Hampton 10.45 p.m. to Saint John 11.45 p.m."
+#train col=No378 num=378 dir=up days="ex Sun" kind=motor note="Motor train, daily except Sunday: Windsor Junction 5.45 a.m. to Halifax 6.35 a.m. (not May 24, June 7, July 1, September 6)."
+#train col=No380 num=380 dir=up days="Mon,Tue,Wed,Thu,Fri" kind=motor note="Motor train, daily except Saturday and Sunday: Windsor Junction 1.15 p.m. to Halifax 1.55 p.m. (not May 24, June 7, July 1, September 6)."
+#train col=No384 num=384 dir=up days="Sat" kind=motor note="Motor train, Saturday only: Elmsdale 1.55 p.m. to Halifax 3.00 p.m."
+#train col=No382 num=382 dir=up days="Sat" kind=motor note="Motor train, Saturday only: Windsor Junction 6.30 p.m. to Halifax 7.10 p.m."
+#train col=No8 num=8 dir=up days="ex Sun" kind=passenger note="Daily except Sunday: Truro 5.35 a.m. to Halifax 7.45 a.m."
+#train col=No8s num=8 dir=up days="Sun" kind=passenger note="Sunday only: Truro 6.10 a.m. to Halifax 7.45 a.m."
+#train col=No10 num=10 dir=up days="ex Sun" kind=passenger note="Daily except Sunday: Truro 9.30 a.m. to Halifax 11.50 a.m."
+#train col=No6 num=6 dir=up days="ex Sun" kind=passenger note="Daily except Sunday: Truro 4.50 p.m. to Halifax 7.00 p.m."
+#train col=No20 num=20 dir=up days="ex Sun" kind=passenger note="Moncton 11.00 p.m. (daily except Sunday) to Truro 4.20 a.m."
+#train col=No40 num=40 dir=up days="ex Sun" kind=passenger note="Daily except Sunday: Moncton 10.45 a.m. to Sackville 12.05 p.m."
+#train col=No42 num=42 dir=up days="ex Sun" kind=passenger note="Daily except Sunday, June 28 to September 11: Moncton 4.40 p.m. to Sackville 5.45 p.m."
+#train col=No44 num=44 dir=up days="ex Sun" kind=passenger note="Daily except Sunday: Saint John 7.05 a.m. to Moncton 10.10 a.m. (connects with No. 25)."
+#train col=No14 num=14 dir=up days=daily kind=passenger note="Daily: Saint John 12.50 p.m. to Moncton 3.35 p.m. (connects with No. 51, and No. 60 to Halifax)."
+#train col=No12 num=12 dir=up days="ex Sun" kind=passenger note="Daily except Sunday: Saint John 5.15 p.m. to Moncton 8.25 p.m."
+#train col=No352 num=352 dir=up days="ex Sun" kind=motor note="Motor train, daily except Sunday: Saint John 4.15 p.m. to Sussex 6.40 p.m."
+#train col=No354 num=354 dir=up days="ex Sun" kind=motor note="Motor train, daily except Sunday: Saint John 9.30 p.m. to Hampton 10.30 p.m."
+#train col=No358 num=358 dir=up days="Sat" kind=motor note="Motor train, Saturday only: Saint John 12.15 p.m. to Sussex 1.55 p.m."
+mile,station,principal,prov,tz,No385,No381,No383,No379,No5,No9,No7,No11,No39,No41,No43,No19,No13,No13s,No351,No357,No355,No378,No380,No384,No382,No8,No8s,No10,No6,No20,No40,No42,No44,No14,No12,No352,No354,No358
+0.0,Halifax,1,NS,A,lv 10.00p,lv 5.20p,lv 12.30p,lv 12.30p,lv 6.30a,lv 4.30p,lv 7.00p,,,,,,,,,,,ar 6.35a,ar 1.55p,ar 3.00p,ar 7.10p,ar 7.45a,ar 7.45a,ar 11.50a,ar 7.00p,,,,,,,,,
+4.9,Fairview Junction,0,NS,A,10.11p,5.31p,12.40p,12.40p,,f4.42p,,,,,,,,,,,,6.19a,1.45p,2.50p,6.56p,f7.26a,f7.33a,f11.36a,,,,,,,,,,
+6.0,Rockingham,0,NS,A,10.14p,5.34p,12.43p,12.43p,6.41a,4.46p,f7.12p,,,,,,,,,,,6.13a,1.41p,2.47p,6.54p,7.23a,7.30a,11.33a,6.42p,,,,,,,,,
+10.6,Bedford,0,NS,A,10.27p,5.47p,12.53p,12.53p,6.49a,4.57p,7.20p,,,,,,,,,,,5.55a,1.28p,2.37p,6.42p,7.11a,7.24a,11.22a,6.31p,,,,,,,,,
+15.8,Windsor Junction,1,NS,A,ar 10.40p,ar 6.00p,1.05p,ar 1.05p,7.00a,5.10p,7.30p,,,,,,,,,,,lv 5.45a,lv 1.15p,2.25p,lv 6.30p,6.59a,7.17a,11.10a,6.20p,,,,,,,,,
+29.7,Enfield,0,NS,A,,,f1.34p,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+32.1,Elmsdale,0,NS,A,,,ar 1.40p,,7.30a,5.49p,f7.52p,,,,,,,,,,,,,lv 1.55p,,6.33a,6.56a,10.37a,5.49p,,,,,,,,,
+38.4,Milford,0,NS,A,,,,,7.44a,6.02p,f8.08p,,,,,,,,,,,,,,,6.23a,6.47a,10.27a,5.39p,,,,,,,,,
+42.2,Shubenacadie,0,NS,A,,,,,7.52a,6.12p,8.16p,,,,,,,,,,,,,,,6.17a,6.41a,10.21a,5.32p,,,,,,,,,
+46.7,Stewiacke,0,NS,A,,,,,8.02a,6.25p,8.24p,,,,,,,,,,,,,,,6.08a,6.35a,10.13a,5.24p,,,,,,,,,
+56.0,Brookfield,0,NS,A,,,,,8.20a,6.49p,,,,,,,,,,,,,,,,f5.50a,f6.20a,9.55a,5.06p,,,,,,,,,
+64.0,Truro,1,NS,A,,,,,ar 8.40a,ar 7.05p,ar 8.55p,lv 10.00p,,,,,,,,,,,,,,lv 5.35a,lv 6.10a,lv 9.30a,lv 4.50p,ar 4.20a,,,,,,,,
+71.6,Belmont,0,NS,A,,,,,,,,f10.10p,,,,,,,,,,,,,,,,,,4.08a,,,,,,,,
+75.3,Debert,0,NS,A,,,,,,,,f10.17p,,,,,,,,,,,,,,,,,,3.58a,,,,,,,,
+81.1,Londonderry,0,NS,A,,,,,,,,f10.27p,,,,,,,,,,,,,,,,,,3.41a,,,,,,,,
+88.7,Folly Lake,0,NS,A,,,,,,,,f10.44p,,,,,,,,,,,,,,,,,,f3.35a,,,,,,,,
+93.3,Wentworth,0,NS,A,,,,,,,,f10.52p,,,,,,,,,,,,,,,,,,3.12a,,,,,,,,
+97.9,Westchester,0,NS,A,,,,,,,,f11.00p,,,,,,,,,,,,,,,,,,3.02a,,,,,,,,
+106.6,Thomson,0,NS,A,,,,,,,,,,,,,,,,,,,,,,,,,,f2.43a,,,,,,,,
+110.8,Oxford Junction,1,NS,A,,,,,,,,11.20p,,,,,,,,,,,,,,,,,,2.35a,,,,,,,,
+117.0,Salt Springs,0,NS,A,,,,,,,,,,,,,,,,,,,,,,,,,,f2.17a,,,,,,,,
+123.6,Springhill Junction,1,NS,A,,,,,,,,11.50p,,,,,,,,,,,,,,,,,,2.05a,,,,,,,,
+132.7,Maccan,0,NS,A,,,,,,,,f12.02a,,,,,,,,,,,,,,,,,,1.35a,,,,,,,,
+136.3,Nappan,0,NS,A,,,,,,,,,,,,,,,,,,,,,,,,,,f1.22a,,,,,,,,
+140.9,Amherst,1,NS,A,,,,,,,,12.20a,,,,,,,,,,,,,,,,,,1.10a,,,,,,,,
+146.9,Aulac,0,NB,A,,,,,,,,,,,,,,,,,,,,,,,,,,f12.51a,,,,,,,,
+150.7,Sackville,1,NB,A,,,,,,,,12.35a,lv 12.10p,lv 4.20p,,,,,,,,,,,,,,,,12.45a,ar 12.05p,ar 5.45p,,,,,,
+162.2,Dorchester,0,NB,A,,,,,,,,f12.55a,12.35p,f4.43p,,,,,,,,,,,,,,,,12.05a,11.37a,f5.25p,,,,,,
+167.8,College Bridge,0,NB,A,,,,,,,,f1.05a,12.45p,f4.53p,,,,,,,,,,,,,,,,11.50p,11.24a,f5.17p,,,,,,
+169.5,Memramcook,0,NB,A,,,,,,,,,12.50p,f5.02p,,,,,,,,,,,,,,,,f11.45p,11.21a,f5.15p,,,,,,
+181.8,Painsec Junction,1,NB,A,,,,,,,,,,f5.20p,,,,,,,,,,,,,,,,f11.16p,f11.00a,f4.55p,,,,,,
+186.8,Humphrey,0,NB,A,,,,,,,,,,f5.30p,,,,,,,,,,,,,,,,f11.05p,,f4.45p,,,,,,
+188.7,Moncton,1,NB,A,,,,,,,,ar 1.45a,ar 1.25p,ar 5.35p,lv 3.00a,lv 10.20a,lv 2.55p,lv 4.30p,,,,,,,,,,,,lv 11.00p,lv 10.45a,lv 4.40p,ar 10.10a,ar 3.35p,ar 8.25p,,,
+198.9,Boundary Creek,0,NB,A,,,,,,,,,,,f3.19a,f10.35a,,,,,,,,,,,,,,,,,f9.48a,,f8.03p,,,
+202.1,Salisbury,0,NB,A,,,,,,,,,,,3.28a,10.40a,3.22p,4.53p,,,,,,,,,,,,,,,9.42a,3.10p,7.57p,,,
+206.9,River Glade,0,NB,A,,,,,,,,,,,f3.35a,10.48a,3.29p,f5.00p,,,,,,,,,,,,,,,9.33a,f3.02p,f7.48p,,,
+211.7,Petitcodiac,0,NB,A,,,,,,,,,,,3.45a,10.58a,3.38p,5.10p,,,,,,,,,,,,,,,9.25a,2.55p,7.40p,,,
+217.3,Anagance,0,NB,A,,,,,,,,,,,f4.04a,11.07a,,,,,,,,,,,,,,,,,9.14a,,7.30p,,,
+226.9,Penobsquis,0,NB,A,,,,,,,,,,,f4.17a,11.21a,,,,,,,,,,,,,,,,,8.58a,,7.15p,,,
+234.3,Sussex,1,NB,A,,,,,,,,,,,4.34a,11.36a,4.18p,5.44p,lv 5.00a,lv 6.40p,,,,,,,,,,,,,8.48a,2.20p,7.05p,ar 6.40p,,ar 1.55p
+238.8,Apohaqui,0,NB,A,,,,,,,,,,,4.42a,11.48a,4.29p,5.53p,5.21a,7.01p,,,,,,,,,,,,,8.36a,2.09p,6.54p,6.30p,,1.46p
+245.4,Norton,0,NB,A,,,,,,,,,,,4.52a,11.59a,4.39p,6.04p,5.46a,7.26p,,,,,,,,,,,,,8.23a,1.57p,6.43p,6.10p,,1.35p
+250.4,Bloomfield,0,NB,A,,,,,,,,,,,5.01a,12.09p,f4.47p,f6.13p,5.57a,7.37p,,,,,,,,,,,,,8.12a,,f6.34p,5.50p,,1.25p
+256.1,Hampton,1,NB,A,,,,,,,,,,,5.13a,12.23p,4.58p,6.25p,6.15a,7.55p,lv 10.45p,,,,,,,,,,,,8.00a,1.38p,6.23p,5.35p,ar 10.30p,1.15p
+261.3,Nauwigewauk,0,NB,A,,,,,,,,,,,5.25a,f12.35p,,,6.32a,8.07p,f10.57p,,,,,,,,,,,,7.47a,,6.11p,5.12p,10.16p,1.00p
+269.2,Rothesay,0,NB,A,,,,,,,,,,,5.52a,12.53p,5.24p,6.53p,7.05a,8.30p,11.20p,,,,,,,,,,,,7.30a,1.12p,5.42p,4.40p,9.55p,12.34p
+275.0,Coldbrook,0,NB,A,,,,,,,,,,,6.12a,1.12p,,,7.32a,8.47p,11.37p,,,,,,,,,,,,f7.14a,,5.22p,4.22p,9.38p,12.22p
+278.1,Saint John,1,NB,A,,,,,,,,,,,ar 6.20a,ar 1.20p,ar 5.45p,ar 7.15p,ar 7.40a,ar 8.55p,ar 11.45p,,,,,,,,,,,,lv 7.05a,lv 12.50p,lv 5.15p,lv 4.15p,lv 9.30p,lv 12.15p

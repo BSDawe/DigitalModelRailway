@@ -10,6 +10,7 @@ together by `mar_tracks.py` (`python3 mar_tracks.py` prints what is on file and 
 | `tem.geojson` | Témiscouata Railway (Wikipedia): the Quebec part (`quebec_overlap`) and the N.B. part, N.B. line - St. Jacques - Edmundston | Wikipedia maps |
 | `tem_osm.geojson` | Témiscouata in N.B.: Edmundston station leg, Connors branch (from the NTR at Couturier Siding), the 1941-abandoned riverside line (`pre1948`) | OpenStreetMap (© OpenStreetMap contributors, ODbL), export by Brendan; `tools/mar_import_osm_tem.py` |
 | `links_estimated.geojson` | Estimated connectors until a trace replaces them: Saint John, E&NA track end - Union Station (4.5 km straight) | Claude |
+| `brendan_truro.geojson` | Brendan's Truro Wye (8 Nov 2026); his later traces go in `brendan_<area>.geojson` files like this | Brendan |
 | `industrial.geojson` | Colliery / steel railways on the map (own codes `nscc`, `acc`, `nssc`, `vale`) | Wikipedia maps |
 
 Provenance of the first import: `tools/mar_import_cgr.py` (one-shot, kept as the record). Raw input `CN_Maritimes.gpkg` is Brendan's (private-repo rule: raw files private,

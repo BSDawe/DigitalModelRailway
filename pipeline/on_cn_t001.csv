@@ -1,7 +1,7 @@
-# Canadian National, Table 1: Halifax - Moncton - Campbellton - Mont Joli - Quebec - Montreal (the N.B. rows added 8 Nov 2026 from page 1118, Brendan; STAGED for the next rebuild). Source: Official Guide, April 25, 1948, CN Table 1. ATLANTIC time to Campbellton, EASTERN beyond, as printed.
-# Miles as printed (from Halifax). Campbellton: arrival printed in Atlantic time, departure in Eastern; both entered in Atlantic (E.T. + 1 h). Halifax - Moncton intermediate
-# stops are in another table (not in hand). Saint John times for Nos. 1, 59, 3 / 2, 60, 4 are connecting trains (Saint John lv 5.15 p.m., 7.05 a.m., 7.05 a.m.; ar 1.20 p.m., 7.15 p.m. Sun only (sign section),
-# 5.35 p.m. (d: Sunday 7.15 p.m.)): in the notes. The Saint John trains 25 / 26 and 51 / 52 are on_cn_t001s.csv.
+# Canadian National, Table 1: Halifax - Moncton - Campbellton - Mont Joli - Quebec - Montreal (the N.S. and N.B. rows added 8 Nov 2026 from pages 1113 and 1114, Brendan). Source: Official Guide, April 25, 1948, CN Table 1. ATLANTIC time to Campbellton, EASTERN beyond, as printed.
+# Miles as printed (from Halifax). Campbellton: arrival printed in Atlantic time, departure in Eastern; both entered in Atlantic (E.T. + 1 h). Halifax - Moncton
+# stops from Table 4 (page 1114, Brendan, 8 Nov 2026; conditional-stop signs v, s, z, :, y, x, g, ‡ (Westchester) entered as flag stops). Saint John times for Nos. 1, 59, 3 / 2, 60, 4 are connecting trains (Saint John lv 5.15 p.m., 7.05 a.m., 7.05 a.m.; ar 1.20 p.m., 7.15 p.m. Sun only (sign section),
+# 5.35 p.m. (d: Sunday 7.15 p.m.)): in the notes. Nos. 25 / 26 (Moncton - Campbellton) and 51 / 52 (Moncton - Pacific Junction) are on_cn_t001s.csv; Table 4's own trains on_cn_t004.csv.
 # N.B. stops printed with a sign and no time (No. 1 Coal Branch "w"; No. 2 Adamsville and Coal Branch "m", Canaan triangle) are not entered. No. 1 Berry Mills: sign u (stops
 # Saturday for passengers from Moncton or for beyond Campbellton; Brendan), entered as a flag stop. DAYS (Brendan, 8 Nov 2026): No. 1 is printed
 # with a dagger (ex Sun) at Halifax and Moncton and daily west of there, No. 2 the same way round: one through trip each on six days (No1, No2), and the
@@ -26,7 +26,38 @@
 # Rows St. Hubert - St. Hilaire (not in Table 1) added from Table 59 for No. 38 (30 Oct 2026).
 mile,station,principal,prov,tz,No1,No59,No3,No31,No135,No143,No2,No60,No4,No32,No136,No38,No1x,No2x
 0.0,Halifax,1,NB,A,lv 3.10p,lv 8.15a,lv 8.00a,,,,ar 6.00p,ar 10.30p,ar 7.50p,,,,,
-188.7,Moncton,1,NB,A,10.00p,2.20p,1.20p,,,,10.00a,4.10p,2.30p,,,,,
+4.9,Fairview Junction,0,NS,A,,,,,,,,,,,,,,
+6.0,Rockingham,0,NS,A,,,,,,,,,,,,,,
+10.6,Bedford,0,NS,A,f3.28p,,,,,,f5.37p,,,,,,,
+15.8,Windsor Junction,1,NS,A,3.38p,,,,,,f5.30p,f10.00p,,,,,,
+29.7,Enfield,0,NS,A,,,,,,,,,,,,,,
+32.1,Elmsdale,0,NS,A,,,,,,,,,,,,,,
+38.4,Milford,0,NS,A,,,,,,,,,,,,,,
+42.2,Shubenacadie,0,NS,A,4.13p,,,,,,f4.55p,f9.23p,,,,,,
+46.7,Stewiacke,0,NS,A,4.21p,,,,,,f4.47p,f9.16p,,,,,,
+56.0,Brookfield,0,NS,A,,,,,,,,,,,,,,
+64.0,Truro,1,NS,A,ar 4.55p / lv 5.15p,ar 9.50a / lv 10.05a,ar 9.30a / lv 9.45a,,,,ar 3.50p / lv 4.15p,ar 8.25p / lv 8.45p,ar 6.05p / lv 6.20p,,,,,
+71.6,Belmont,0,NS,A,5.26p,,,,,,3.35p,,,,,,,
+75.3,Debert,0,NS,A,5.34p,f10.22a,,,,,3.23p,f8.05p,,,,,,
+81.1,Londonderry,0,NS,A,5.48p,10.33a,,,,,3.10p,7.55p,,,,,,
+88.7,Folly Lake,0,NS,A,f6.03p,,,,,,f2.55p,,,,,,,
+93.3,Wentworth,0,NS,A,f6.11p,,,,,,f2.40p,f7.32p,,,,,,
+97.9,Westchester,0,NS,A,f6.20p,f11.06a,,,,,2.28p,f7.20p,,,,,,
+106.6,Thomson,0,NS,A,f6.33p,,,,,,f2.09p,,,,,,,
+110.8,Oxford Junction,1,NS,A,6.42p,11.27a,,,,,2.01p,6.53p,,,,,,
+117.0,Salt Springs,0,NS,A,f6.53p,,,,,,f1.42p,,,,,,,
+123.6,Springhill Junction,1,NS,A,7.20p,11.55a,11.22a,,,,1.30p,6.35p,4.35p,,,,,
+132.7,Maccan,0,NS,A,7.36p,12.08p,,,,,12.58p,6.05p,,,,,,
+136.3,Nappan,0,NS,A,f7.42p,,,,,,12.44p,,,,,,,
+140.9,Amherst,1,NS,A,7.54p,12.22p,11.45a,,,,12.35p,5.49p,3.55p,,,,,
+146.9,Aulac,0,NB,A,f8.04p,,,,,,12.12p,,,,,,,
+150.7,Sackville,1,NB,A,8.21p,12.48p,12.05p,,,,12.05p,5.30p,3.40p,,,,,
+162.2,Dorchester,0,NB,A,8.46p,1.10p,,,,,11.15a,5.12p,,,,,,
+167.8,College Bridge,0,NB,A,8.58p,f1.21p,,,,,11.06a,5.04p,,,,,,
+169.5,Memramcook,0,NB,A,,,,,,,,,,,,,,
+181.8,Painsec Junction,1,NB,A,f9.25p,,,,,,,,,,,,,
+186.8,Humphrey,0,NB,A,,,,,,,,,,,,,,
+188.7,Moncton,1,NB,A,ar 9.40p / lv 10.00p,ar 2.00p / lv 2.20p,ar 1.05p / lv 1.20p,,,,ar 10.00a / lv 10.30a,ar 4.10p / lv 4.30p,ar 2.30p / lv 2.45p,,,,,
 197.5,Berry Mills,0,NB,A,f10.17p,,,,,,f9.37a,,,,,,,
 200.9,Pacific Junction,0,NB,A,,,,,,,,,,,,,,
 209.2,Canaan,0,NB,A,f10.38p,,,,,,,,,,,,,

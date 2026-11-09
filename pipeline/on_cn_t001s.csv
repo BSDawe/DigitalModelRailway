@@ -1,15 +1,14 @@
-# Canadian National, Table 1 (Official Guide, April 25, 1948, page 1118; Brendan, 8 Nov 2026): the trains from Saint John. ATLANTIC time. STAGED for the next rebuild.
-# Nos. 25 / 26 Saint John - Moncton - Campbellton; Nos. 51 / 52 Saint John - Moncton - Pacific Junction (Mon., Wed., Fri.: sign a), on into the NTR (Table 23, the N.B. part not in hand).
-# Miles from Halifax as printed, but Saint John's is not printed (Table 1 gives Halifax and Saint John as two starting points): 99.3 = 188.7 less 89.4, Claude's figure
-# for Saint John - Moncton by Sussex, TO CHECK against the Saint John - Moncton table. Saint John: Union Station (Brendan's point); track into it to be traced. Saint John - Moncton intermediate stops: that table (not in hand).
+# Canadian National, Table 1 (Official Guide, April 25, 1948, page 1113; Brendan, 8 Nov 2026): the trains that start or end at Moncton. ATLANTIC time.
+# Nos. 25 / 26 Moncton - Campbellton; Nos. 51 / 52 Moncton - Pacific Junction (Mon., Wed., Fri.: sign a), on into the NTR (Table 23, the N.B. part not in hand).
+# Table 1 also prints Saint John times for them; Table 4 (page 1114) shows those are connecting trains (Brendan): No. 44 Saint John 7.05 a.m. - Moncton 10.10 for
+# No. 25, No. 14 Saint John 12.50 p.m. - Moncton 3.35 for No. 51, No. 13 Moncton 2.55 - Saint John 5.45 p.m. for Nos. 26 and 52 (on_cn_t004.csv).
 # Signs: dagger ex Sun; a Mon., Wed., Fri.; f flag; the "thorn" (stops only to leave passengers) and other conditional stops entered as flag stops.
-#train col=No25 num=25 dir=down days="ex Sun" kind=passenger note="Daily except Sunday: Saint John 7.05 a.m., Moncton 10.40 a.m. to Campbellton 5.35 p.m. (Atlantic time)."
-#train col=No51 num=51 dir=down days="Mon,Wed,Fri" kind=passenger note="Mon., Wed. and Fri.: Saint John 12.50 p.m., Moncton 5.10 p.m., Pacific Junction 5.37 p.m., on by the National Transcontinental (Table 23)."
-#train col=No26 num=26 dir=up days=daily kind=passenger note="Campbellton 6.15 a.m. (dagger at Campbellton: daily except Sunday, TO CHECK) to Moncton 1.00 p.m. and Saint John 5.45 p.m. (Atlantic time)."
-#train col=No52 num=52 dir=up days="Mon,Wed,Fri" kind=passenger note="Mon., Wed. and Fri.: from the National Transcontinental (Table 23), Pacific Junction 1.06 p.m., Moncton 1.30 p.m., Saint John 5.45 p.m."
+#train col=No25 num=25 dir=down days="ex Sun" kind=passenger note="Daily except Sunday: Moncton 10.40 a.m. to Campbellton 5.35 p.m. (Atlantic time). From Saint John by No. 44 (7.05 a.m.)."
+#train col=No51 num=51 dir=down days="Mon,Wed,Fri" kind=passenger note="Mon., Wed. and Fri.: Moncton 5.10 p.m., Pacific Junction 5.37 p.m., on by the National Transcontinental (Table 23). From Saint John by No. 14 (12.50 p.m.)."
+#train col=No26 num=26 dir=up days=daily kind=passenger note="Campbellton 6.15 a.m. (dagger at Campbellton: daily except Sunday, TO CHECK) to Moncton 1.00 p.m. (Atlantic time). To Saint John by No. 13 (5.45 p.m.)."
+#train col=No52 num=52 dir=up days="Mon,Wed,Fri" kind=passenger note="Mon., Wed. and Fri.: from the National Transcontinental (Table 23), Pacific Junction 1.06 p.m. to Moncton 1.30 p.m. To Saint John by No. 13 (5.45 p.m.)."
 mile,station,principal,prov,tz,No25,No51,No26,No52
-99.3,Saint John,1,NB,A,lv 7.05a,lv 12.50p,ar 5.45p,ar 5.45p
-188.7,Moncton,1,NB,A,10.40a,5.10p,1.00p,1.30p
+188.7,Moncton,1,NB,A,lv 10.40a,lv 5.10p,ar 1.00p,ar 1.30p
 197.5,Berry Mills,0,NB,A,10.58a,f5.25p,12.44p,f1.11p
 200.9,Pacific Junction,0,NB,A,f11.07a,ar 5.37p,,lv 1.06p
 209.2,Canaan,0,NB,A,11.23a,,12.20p,

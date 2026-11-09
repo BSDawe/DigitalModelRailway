@@ -1,7 +1,7 @@
 # The Digital Model Railway — project state
 
 Read this first. It is meant to be enough to start a short, single-task chat without replaying the project's history.
-Last updated 8 November 2026 (Version 143: the Maritimes begin: the Temiscouata to Edmundston and Connors, CN Tables 1, 1a and 2 in N.B. and N.S., the Maritime track bank; 142: the Chicago, Duluth & Georgian Bay steamers North American and South American; 141: C.S.L. boats named; 140: full rebuild; 135-139: Niagara, the Muskoka, Pointe au Baril and C.S.L. boats, motor trains, the Newfoundland Railway; Version 62 moved the project to git). For a new chat, read HANDOFF.md first (short), then the sections of this file it points to.
+Last updated 8 November 2026 (Version 144: CN Table 4 Halifax - Truro - Moncton - Saint John; Version 143: the Maritimes begin: the Temiscouata to Edmundston and Connors, CN Tables 1, 1a and 2 in N.B. and N.S., the Maritime track bank; 142: the Chicago, Duluth & Georgian Bay steamers North American and South American; 141: C.S.L. boats named; 140: full rebuild; 135-139: Niagara, the Muskoka, Pointe au Baril and C.S.L. boats, motor trains, the Newfoundland Railway; Version 62 moved the project to git). For a new chat, read HANDOFF.md first (short), then the sections of this file it points to.
 
 ## What this is
 
@@ -2445,7 +2445,26 @@ Stations of different railways within 250 m (70 pairs; script: same check over v
 - NS&T / CN steamers page (condensed tables) saved: dmr-sources og1948_cnq/nst_cn_steamers_condensed.png. Questions out to Brendan (track KMZ, Port
   Dalhousie cars, Toronto - Port Dalhousie boat, Cobourg - Genesee points, colours).
 
-## Version 143 (8 November 2026): the Maritimes begin (Temiscouata in N.B.; CN page 1118: Tables 1, 1a, 2)
+## Version 144 (8 November 2026): CN Table 4, Halifax - Truro - Moncton - Saint John (page 1114)
+- Page numbers corrected (Brendan): Tables 1, 1a, 2 are page 1113 (not 1118); Table 4 is page 1114.
+- on_cn_t001: the Halifax - Moncton stops of Nos. 1, 59, 3 / 2, 4, 60 from Table 4 (Moncton: ar / lv for all six). Halifax - Montreal 843.4 / 840.0 mi.
+- on_cn_t001s now Moncton - Campbellton (25 / 26) and Moncton - Pacific Junction (51 / 52): Table 4 shows the Saint John times in Table 1 are connections
+  (Brendan was right): No. 44 Saint John 7.05 a.m. - Moncton for 25, No. 14 for 51, No. 13 Moncton 2.55 p.m. - Saint John for 26 / 52 (in the notes).
+- on_cn_t004 (new, 34 trains, 277.7 / 278.1 mi): Halifax - Windsor Jct. / Elmsdale motor trains 378 - 385; Halifax - Truro 5, 7, 9 / 6, 8, 8 (Sunday), 10;
+  Truro - Moncton 11 (ex Sat) / 20; Sackville - Moncton 39, 41 / 40, 42 (41 / 42 June 28 - Sept. 11); Moncton - Saint John 13 (Psi: daily in July), 13 (Sunday-only
+  column, TO CHECK), 19, 43 / 12, 14, 44; Saint John motor trains 351, 355, 357 / 352, 354, 358. Column pairs (3-13, 14-60, 7-11, 77-19, 20-12) entered as
+  separate trains. NOT entered: the Painsec Junction - Moncton pieces of the Point du Chene / Buctouche trains (77, 279, 289 / 276, 292, 78): with their own
+  table. Signs: "b" on 379 / 380 read as daily except Sat and Sun (complements 383 / 384 Sat only); 'ex Sat' is written "Sun,Mon,...,Fri" (ab_table has no
+  "ex Sat").
+- Places: Moncton = Brendan's station point (46.083305, -64.785932); traced Painsec Jct. - Moncton 7.6 mi (printed 6.9) and Moncton - Pacific Jct. 11.3 (12.2):
+  the printed miles would put the station ~0.7 mi further east (kept as given). Saint John (Table 4) = Union Station with the estimated link. CGN points within
+  200 m of the line for the Halifax - Saint John stations; the rest by mileage (Truro among them).
+- Track: traces/maritimes/brendan_truro.geojson, Brendan's Truro Wye (trains now take it: Halifax - Moncton 0.5 mi shorter). Brendan's later traces go in
+  brendan_<area>.geojson files.
+- Checks: check_gtfs 1 known problem; ab.py: oncn001 / oncn001s moved (the new stops), oncn001s' Saint John part gone, oncn004 new. 518 lines, 3901 trips, 6141 stops.
+- TO CHECK (Brendan): No. 20 Folly Lake f3.35 - Londonderry 3.41 a.m. (7.6 mi in 6 min: f3.25?); the second No. 13 column (Sunday only, Moncton 4.30 p.m.).
+
+## Version 143 (8 November 2026): the Maritimes begin (Temiscouata in N.B.; CN page 1113: Tables 1, 1a, 2)
 - MARITIME TRACK BANK: pipeline/traces/maritimes/ (README there: one file per owner or provenance; properties own, name, constituent, branch, note, cost, fid, group,
   status; status says only whether the TRACK was there in 1948: ok / check / post1948 / pre1948 / quebec_overlap). Read as one set by mar_tracks.py
   (features(owner=, status=, box=, dirs=); `python3 mar_tracks.py` = what is on file, connected groups, loose ends within 1.5 km). Files: cn.geojson (Wikipedia
@@ -2477,7 +2496,7 @@ Stations of different railways within 250 m (70 pairs; script: same check over v
 - Page: view "The Maritimes" (VIEWS maritimes, turned box 'q').
 - Checks: check_gtfs 1 problem (the known Minneapolis one); ab.py: only oncn001 moved (CN-1-ONCN001, the days), new oncn001s, oncn002, ontem003 and the N.B. rows.
   517 lines, 3867 trips, 6097 stops.
-- STILL NEEDED: Halifax - Truro - Moncton table; Saint John - Moncton table; Table 23 N.B. part; Saint John track trace; Oxford Jn. connector (MESL - Intercolonial
+- STILL NEEDED (Halifax - Moncton and Saint John - Moncton came in Version 144): Table 23 N.B. part; Saint John track trace; Oxford Jn. connector (MESL - Intercolonial
   204 m: the 002 trains found track anyway); No. 26 dagger at Campbellton (kept daily); Temiscouata No. 4 Baker Brook 8.15 - Edmundston 9.15 as read.
 - TO DO (Brendan, 8 Nov 2026): trip chaining across files and steps when all the CN Maritime files are in (then again for CP): plan in staged/maritimes/STAGED.md
   (railway + number at the same stop, days compatible, auto under an hour, named trains only when the names agree, review list, GTFS block_id).
