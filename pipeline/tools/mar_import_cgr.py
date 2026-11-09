@@ -4,7 +4,7 @@ maps embedded in the Wikipedia articles) + 82 of Brendan's own traces (Mulgrave 
 Western, Middleton & Victoria Beach) are added from traces/cnor_all.geojson. Kept as the record of what was done; later additions are new files in
 traces/maritimes/ (see its README), not re-runs of this.
     python3 tools/mar_import_cgr.py /path/to/CN_Maritimes.gpkg
-Steps: names cleaned of HTML; duplicates dropped (York & Carleton twice); Wikipedia lines cut where they lie within 15 m of one of Brendan's traces (his trace is
+Status describes the TRACK (there in 1948 or not); who may use it is 'own'. Steps: names cleaned of HTML; duplicates dropped (York & Carleton twice); Wikipedia lines cut where they lie within 15 m of one of Brendan's traces (his trace is
 the line there); Halifax & Cape Breton split at his junction (trace 65: the 1948 line to Mulgrave / the post-1955 causeway leg); the NTR cut at the N.B. boundary
 point already used by the Quebec build (the tail before it is in the Quebec collection); every piece gets a status (see README)."""
 import sqlite3, struct, re, html, json, os, sys
@@ -40,11 +40,11 @@ for i in tup + hal:
 bu = unary_union(btr).buffer(15)
 # ---- Wikipedia pieces
 NOT_CN = {28: ('nscc', 'Railroad of the Nova Scotia Coal Co.'), 33: ('acc', 'Railroad of the Acadia Coal Co.'), 36: ('nssc', 'Railway of the Nova Scotia Steel and Coal Co.'), 37: ('vale', 'Vale Railway')}
-CHECK = {8: 'Realignment at Tide Head: alternate alignment, which one was in use in 1948?', 10: 'International Railway Bridge (Edmundston - Madawaska): passenger use in 1948?',
-         17: 'NB&PEI "Ferry Reroute": earlier or later than 1948?', 18: 'Summerside Airport branch (wartime): passenger use unlikely', 20: 'Cape Traverse branch: still open in 1948?',
-         23: 'PEI Short Line Cutoff: in use in 1948?', 26: 'PEI main line realignment to Elmira: before or after 1948?', 41: 'Dartmouth Branch 1896: superseded alignment? (compare fid 40)',
-         25: 'PEI Vernon Bridge branch: passenger?', 11: 'Elgin, Petitcodiac & Havelock: open in 1948?', 12: 'Elgin Branch: open in 1948?', 14: 'Albert Southern: open in 1948?',
-         13: 'Albert Railway: open in 1948?', 15: 'Moncton & Bouctouche: passenger in 1948?'}
+# 'check' = was this track there in 1948? (Whether trains ran over it is the timetables' business, not the track's: a branch with no train is simply not routed over.)
+CHECK = {8: 'Realignment at Tide Head: alternate alignment, which one was in use in 1948?', 17: 'NB&PEI "Ferry Reroute": earlier or later than 1948?',
+         20: 'Cape Traverse branch: still there in 1948?', 23: 'PEI Short Line Cutoff: there in 1948?', 26: 'PEI main line realignment to Elmira: before or after 1948?',
+         41: 'Dartmouth Branch 1896: superseded alignment? (compare fid 40)', 11: 'Elgin, Petitcodiac & Havelock: still there in 1948?', 12: 'Elgin Branch: still there in 1948?',
+         14: 'Albert Southern: still there in 1948?', 13: 'Albert Railway: still there in 1948?'}
 for fid, f in F.items():
     if 51 < fid < 132 or fid == 134: continue
     if fid == 7: REPORT.append('fid 7 York and Carleton: exact duplicate of fid 1, dropped'); continue
@@ -53,7 +53,7 @@ for fid, f in F.items():
     if fid == 132: title, branch = 'Intercolonial Railway', 'Moncton - Pacific Jct. approach (NTR wye)'
     nm = f'{title}: {branch}' if branch else title
     own, status, why, file = 'cn', 'ok', None, 'cn'
-    if fid in NOT_CN: own, nm, status, why, file = NOT_CN[fid][0], NOT_CN[fid][1], 'not_cn', 'private colliery / industrial railway, not CN', 'industrial'; title = nm
+    if fid in NOT_CN: own, nm, file = NOT_CN[fid][0], NOT_CN[fid][1], 'industrial'; title = nm     # status stays 'ok': whose track it is is 'own', not the status
     if fid in CHECK: status, why = 'check', CHECK[fid]
     if fid == 4: own, status, why = 'tem', 'quebec_overlap', 'Temiscouata Railway: mostly in Quebec, which already has it (ontem)'
     ls = f['ls']; pieces = [(ls, nm, status, why)]
@@ -75,7 +75,7 @@ for f in json.load(open(os.path.join(ROOT, 'traces', 'cnor_all.geojson')))['feat
     if p['source_map'] not in ('Inverness and Richmond Railway', 'Halifax and South Western Railway', 'Middleton and Victoria Beach Railway'): continue
     g = f['geometry']; title = html.unescape(re.sub('<[^>]+>', '', p['title'])); br = p.get('description') or ''; vb = 'Victoria Beach' in title
     for c in ([g['coordinates']] if g['type'] == 'LineString' else g['coordinates']):
-        add('cn', LineString([T.transform(x, y) for x, y in c]), 'cn', f'{title}: {br}' if br else title, NOTE_C, None, 'cnor', 'check' if vb else 'ok', 'Middleton - Victoria Beach: open in 1948?' if vb else None, title, br)
+        add('cn', LineString([T.transform(x, y) for x, y in c]), 'cn', f'{title}: {br}' if br else title, NOTE_C, None, 'cnor', 'check' if vb else 'ok', 'Middleton - Victoria Beach: still there in 1948?' if vb else None, title, br)
 os.makedirs(OUT, exist_ok=True)
 for k, v in FILES.items(): json.dump(dict(type='FeatureCollection', features=v), open(os.path.join(OUT, k + '.geojson'), 'w'), separators=(',', ':'))
 print({k: len(v) for k, v in FILES.items()}); print('\n'.join(REPORT))

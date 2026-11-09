@@ -10,24 +10,27 @@ traces/maritimes/README.md for the file layout, the properties and the status wo
       components of the track graph (ends tied to other track within --tie metres, as the loader does) and the loose ends that lie within --gaps
       metres of other track: the candidates for a connector. Run it after adding a file."""
 import glob, json, math, os, sys
-HERE = os.path.dirname(os.path.abspath(__file__)); DIR = os.path.join(HERE, 'traces', 'maritimes')
-STATUS = {'ok': 'use', 'check': 'in the file, not used until decided (see why)', 'post1948': 'built after 1948', 'not_cn': 'another company (industrial railway)',
+HERE = os.path.dirname(os.path.abspath(__file__))
+# Folders under traces/ read by default. A US railway, or a Canadian railway's track in the U.S. (CP across Maine, CN's Grand Trunk to Portland), lives in a folder of
+# its own (as traces/milw, traces/cnmn) so its own build can own it later; add the folder here, or pass dirs=, when a Maritimes line runs onto it.
+DIRS = ['maritimes']
+STATUS = {'ok': 'there in 1948: use', 'check': 'there in 1948? not used until decided (see why)', 'post1948': 'built after 1948',
           'quebec_overlap': 'already in the Quebec collection'}
-def files():
-    return sorted(glob.glob(os.path.join(DIR, '*.geojson')))
-def features(owner=None, status=('ok',), box=None, names=None):
+def files(dirs=None):
+    return sorted(fn for d in (dirs or DIRS) for fn in glob.glob(os.path.join(HERE, 'traces', d, '*.geojson')))
+def features(owner=None, status=('ok',), box=None, names=None, dirs=None):
     """owner: a code or a collection of codes (None = all); status: the words to take (None = all); box: (lon0, lon1, lat0, lat1), a piece is kept if any point is in it;
-    names: files to read (stems, e.g. ('cn', 'brendan')), None = all"""
+    names: files to read (stems, e.g. ('cn', 'brendan')), None = all; dirs: folders under traces/ (default DIRS)"""
     owner = {owner} if isinstance(owner, str) else (set(owner) if owner else None); status = {status} if isinstance(status, str) else (set(status) if status else None)
     out = []
-    for fn in files():
+    for fn in files(dirs):
         if names and os.path.splitext(os.path.basename(fn))[0] not in names: continue
         for f in json.load(open(fn))['features']:
             p = dict(f['properties']); c = [tuple(q[:2]) for q in f['geometry']['coordinates']]
             if owner and p['own'] not in owner: continue
             if status and p['status'] not in status: continue
             if box and not any(box[0] <= x <= box[1] and box[2] <= y <= box[3] for x, y in c): continue
-            p['coords'] = c; p['file'] = os.path.splitext(os.path.basename(fn))[0]; out.append(p)
+            p['coords'] = c; p['file'] = os.path.relpath(os.path.splitext(fn)[0], os.path.join(HERE, 'traces')); out.append(p)
     return out
 def _report(owner, status, tie, gaps):
     from pyproj import Transformer
@@ -37,7 +40,7 @@ def _report(owner, status, tie, gaps):
     allf = features(None, None); L = lambda c: LineString([T.transform(x, y) for x, y in c]).length / 1000
     print('on file (km):'); tab = {}
     for p in allf: k = (p['file'], p['own'], p['status']); tab[k] = tab.get(k, 0) + L(p['coords'])
-    for k, v in sorted(tab.items()): print(f'  {k[0]:11s} {k[1]:6s} {k[2]:15s} {v:8.1f}')
+    for k, v in sorted(tab.items()): print(f'  {k[0]:24s} {k[1]:6s} {k[2]:15s} {v:8.1f}')
     use = features(owner, status); ls = [LineString([T.transform(x, y) for x, y in p['coords']]) for p in use]; tree = STRtree(ls)
     parent = list(range(len(ls)))
     def find(a):

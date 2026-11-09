@@ -7,7 +7,7 @@ together by `mar_tracks.py` (`python3 mar_tracks.py` prints what is on file and 
 |---|---|---|
 | `cn.geojson` | Canadian Government Railways / CN: Intercolonial, NTR (N.B.), PEI, Cape Breton, Nova Scotia Railway, E&NA, Canada Eastern ...; plus the Inverness & Richmond and Halifax & South Western from the Canadian Northern collection | Wikipedia maps (CGR map; `traces/cnor_all.geojson`), supplied by Brendan |
 | `brendan.geojson` | Brendan's own traces: Mulgrave - Point Tupper (ferry piers, yards, Port Hawkesbury mainline), Halifax North Street - Deepwater Terminal. Wikipedia track under them was cut: his trace is the line there | Brendan |
-| `industrial.geojson` | Colliery / steel railways on the map (not CN) | Wikipedia maps |
+| `industrial.geojson` | Colliery / steel railways on the map (own codes `nscc`, `acc`, `nssc`, `vale`) | Wikipedia maps |
 
 Provenance of the first import: `tools/mar_import_cgr.py` (one-shot, kept as the record). Raw input `CN_Maritimes.gpkg` is Brendan's (private-repo rule: raw files private,
 only traces used are public).
@@ -18,12 +18,23 @@ only traces used are public).
 `status` - `why` (the open question, for `check` and `post1948`).
 
 ## Status words
-`ok` use - `check` in the file but not used until decided (the question is in `why`) - `post1948` built after 1948 (Canso Causeway line, rail from May 1955) -
-`not_cn` another company - `quebec_overlap` already in the Quebec collection. `mar_tracks.features()` takes `ok` unless told otherwise, so deciding a `check` piece is
-changing one word.
+The status says whether the TRACK was there in 1948, nothing else: who may run over it is `own` (a step asks for its owners), and whether a train ran over
+it is the timetables' business (a branch with no train is just not routed over). `ok` there - `check` there in 1948? (the question is in `why`; not used
+until decided) - `post1948` built after 1948 (Canso Causeway line, rail from May 1955) - `quebec_overlap` the same track is already in the Quebec collection.
+`mar_tracks.features()` takes `ok` unless told otherwise, so deciding a `check` piece is changing one word.
+
+## Where a railway goes
+- **Canadian railway track in the Maritimes** (CN, CP, a short line): a file here, named for the railway (`cp.geojson`, `sl.geojson` ...).
+- **A U.S. railway** (Boston & Maine, Maine Central, Bangor & Aroostook, Central Vermont ...): a folder of its own under `traces/`, named by its code
+  (`traces/mec/`, `traces/bar/`), like `traces/milw`, `traces/soo`, `traces/np`. Never in this folder: each will be a whole railway with its own build
+  later, and the Maritimes step only borrows the piece it meets (`mar_tracks.DIRS`, or `dirs=`), as `sk_lines` borrows `traces/milw` and `traces/cnmn`.
+- **A Canadian railway's track in the U.S.** (CP across Maine, Boundary - Jackman - Brownville Jct. - Vanceboro, with Maine Central rights east of
+  Mattawamkeag; CN's Grand Trunk to Portland): its own folder too, like `traces/cnmn` (CN in Minnesota), e.g. `traces/cpme/`.
+- **Codes are global**: `own` is the same code everywhere in the project (`cn`, `cp`, `np`, `milw`, `nyc`, `dh`, `tem` ...), plain, no region prefix.
+  Check `grep -o "own='[a-z_]*'" *.py` before picking a new one.
 
 ## Adding a railway (CP, a short line, a US connection)
-1. Put the track in a new `<name>.geojson` (same properties; `own` = its code; `status` `ok`). Brendan's traces of the same railway can go in their own file
+1. Put the track in a new file where the section above says (same properties; `own` = its code; `status` `ok`). Brendan's traces of the same railway can go in their own file
    (`brendan_<area>.geojson`) with the collection piece under them cut.
 2. `python3 mar_tracks.py --owner <code>`: the connected groups and the loose ends within 1.5 km (connector candidates). Connectors are ordinary features in a
    `links_<area>.geojson`, `cost` 0.9, `note` says estimated.
