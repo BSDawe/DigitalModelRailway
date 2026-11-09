@@ -1,0 +1,11 @@
+# Canadian National, Table 7: Dartmouth - Upper Musquodoboit, mixed trains (Official Guide, April 25, 1948, page 1115 (Brendan, 8 Nov 2026)). ATLANTIC time. Signs: k Sat only; j Tues. and Thurs.; f flag.
+#train col=No232 num=232 dir=down days="Sat" kind=mixed note="Mixed, Saturday only: Dartmouth 3.50 p.m. to Upper Musquodoboit 7.00 p.m."
+#train col=No230 num=230 dir=down days="Tue,Thu" kind=mixed note="Mixed, Tuesday and Thursday: Dartmouth 2.00 p.m. to Upper Musquodoboit 6.10 p.m."
+#train col=No231 num=231 dir=up days="Sat" kind=mixed note="Mixed, Saturday only: Upper Musquodoboit 5.15 a.m. to Dartmouth 8.25 a.m."
+#train col=No229 num=229 dir=up days="Tue,Thu" kind=mixed note="Mixed, Tuesday and Thursday: Upper Musquodoboit 5.15 a.m. to Dartmouth 9.30 a.m."
+mile,station,principal,prov,tz,No232,No230,No231,No229
+0.0,Dartmouth,1,NS,A,lv 3.50p,lv 2.00p,ar 8.25a,ar 9.30a
+2.6,Imperoyal,0,NS,A,f4.00p,f2.10p,8.14a,f9.12a
+35.0,Musquodoboit Harbour,1,NS,A,5.29p,4.08p,6.42a,7.08a
+56.8,Musquodoboit,0,NS,A,6.26p,5.20p,5.47a,5.55a
+69.3,Upper Musquodoboit,1,NS,A,ar 7.00p,ar 6.10p,lv 5.15a,lv 5.15a

@@ -1,0 +1,9 @@
+# Canadian National, Table 15: Moncton - Salisbury - Petitcodiac - Elgin, mixed (Official Guide, April 25, 1948, page 1115 (Brendan, 8 Nov 2026)). ATLANTIC time. Miles from Moncton (printed from Elgin: Moncton 36.9). Signs: i Tues. only.
+# The "253-14" column: Salisbury 1.35 p.m. as printed (Table 4's No. 14 is at Salisbury 3.10, Moncton 3.35), so 253 ends at Salisbury here (TO CHECK).
+#train col=No253 num=253 dir=up days="Tue" kind=mixed note="Mixed, Tuesday only: Elgin 11.45 a.m. to Petitcodiac 12.35 p.m. and Salisbury 1.35 p.m. (column "253-14": Moncton 3.35 p.m., by No. 14)."
+#train col=No254 num=254 dir=down days="Tue" kind=mixed note="Mixed, Tuesday only: Moncton 8.40 a.m., Salisbury 9.20 a.m., Petitcodiac 10.40 a.m. to Elgin 11.25 a.m."
+mile,station,principal,prov,tz,No253,No254
+0.0,Moncton,1,NB,A,,lv 8.40a
+13.4,Salisbury,1,NB,A,ar 1.35p,9.20a
+23.0,Petitcodiac,1,NB,A,12.35p,10.40a
+36.9,Elgin,1,NB,A,lv 11.45a,ar 11.25a

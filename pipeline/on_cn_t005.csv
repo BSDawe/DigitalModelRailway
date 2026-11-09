@@ -1,0 +1,61 @@
+# Canadian National, Table 5: Halifax - Truro - New Glasgow - Antigonish - Mulgrave - Point Tupper - Sydney (Official Guide, April 25, 1948, page 1115 (Brendan, 8 Nov 2026)). ATLANTIC time, as printed.
+# Nos. 5 - 10 run Halifax - Truro on Table 4 (page 1114: its stops entered here, so each is one trip). Mulgrave - Point Tupper: the train ferry across the Strait of Canso
+# (traces/maritimes/links_estimated.geojson, from Brendan's pier traces). North Sydney (273.2) at the end of the North Sydney track (Brendan: where the steamer leaves).
+# Not entered: the Saint John / Moncton connections (Saint John, Moncton rows: Nos. 14 / 60 and 12 / 20 etc.) and the Pictou connections (Pictou rows: by Stellarton or
+# New Glasgow, Table 6). Signs: * daily; dagger ex Sun; double dagger ex Sat; pilcrow ex Mon; e Sunday 6.10 a.m. (No. 8 at Truro: a Saturday-night trip of its own);
+# v (stops for revenue passengers) and f entered as flag stops. No. 7 Truro - Ferrona Jct. all "v".
+#train col=No7 num=7 dir=down days=daily kind=passenger note="Daily: Halifax 7.00 p.m., Truro 9.30 p.m. to North Sydney 8.15 a.m. and Sydney 9.00 a.m. Across the Strait of Canso by the Mulgrave - Point Tupper train ferry."
+#train col=No9 num=9 dir=down days="ex Sun" kind=passenger note="Daily except Sunday: Halifax 4.30 p.m., Truro 8.00 p.m. to North Sydney 5.45 a.m. and Sydney 6.30 a.m. Across the Strait of Canso by the train ferry."
+#train col=No5 num=5 dir=down days="ex Sun" kind=passenger note="Daily except Sunday: Halifax 6.30 a.m., Truro 9.05 a.m. to North Sydney 6.20 p.m. and Sydney 7.00 p.m. Across the Strait of Canso by the train ferry."
+#train col=No6 num=6 dir=up days="ex Sun" kind=passenger note="Daily except Sunday: Sydney 6.30 a.m., North Sydney 7.10 a.m. to Truro 4.30 p.m. and Halifax 7.00 p.m. Across the Strait of Canso by the train ferry."
+#train col=No8 num=8 dir=up days="Sun,Mon,Tue,Wed,Thu,Fri" kind=passenger note="Daily: Sydney 7.00 p.m., North Sydney 7.45 p.m. to Truro 5.15 a.m. and Halifax 7.45 a.m. (from Truro 5.35 a.m.; on Sunday mornings 6.10, the next trip). Across the Strait of Canso by the train ferry."
+#train col=No8s num=8 dir=up days="Sat" kind=passenger note="Saturday night from Sydney (7.00 p.m.): Truro on Sunday morning, leaving at 6.10 a.m. (sign e) to Halifax 7.45 a.m. Across the Strait of Canso by the train ferry."
+#train col=No10 num=10 dir=up days="Sun,Mon,Tue,Wed,Thu,Fri" kind=passenger note="Daily except Saturday: Sydney 9.30 p.m., North Sydney 10.25 p.m. to Truro 8.50 a.m. and Halifax 11.50 a.m. (Truro: dagger, daily except Sunday). Across the Strait of Canso by the train ferry."
+mile,station,principal,prov,tz,No7,No9,No5,No6,No8,No8s,No10
+0.0,Halifax,1,NS,A,lv 7.00p,lv 4.30p,lv 6.30a,ar 7.00p,ar 7.45a,ar 7.45a,ar 11.50a
+4.9,Fairview Junction,0,NS,A,,f4.42p,,,f7.26a,f7.33a,f11.36a
+6.0,Rockingham,0,NS,A,f7.12p,4.46p,6.41a,6.42p,7.23a,7.30a,11.33a
+10.6,Bedford,0,NS,A,7.20p,4.57p,6.49a,6.31p,7.11a,7.24a,11.22a
+15.8,Windsor Junction,1,NS,A,7.30p,5.10p,7.00a,6.20p,6.59a,7.17a,11.10a
+32.1,Elmsdale,0,NS,A,f7.52p,5.49p,7.30a,5.49p,6.33a,6.56a,10.37a
+38.4,Milford,0,NS,A,f8.08p,6.02p,7.44a,5.39p,6.23a,6.47a,10.27a
+42.2,Shubenacadie,0,NS,A,8.16p,6.12p,7.52a,5.32p,6.17a,6.41a,10.21a
+46.7,Stewiacke,0,NS,A,8.24p,6.25p,8.02a,5.24p,6.08a,6.35a,10.13a
+56.0,Brookfield,0,NS,A,,6.49p,8.20a,5.06p,f5.50a,f6.20a,9.55a
+64.0,Truro,1,NS,A,ar 8.55p / lv 9.30p,ar 7.05p / lv 8.00p,ar 8.40a / lv 9.05a,ar 4.30p / lv 4.50p,ar 5.15a / lv 5.35a,ar 5.15a / lv 6.10a,ar 8.50a / lv 9.30a
+68.5,Valley,0,NS,A,f9.40p,8.10p,f9.14a,4.18p,,,8.37a
+72.6,Union,0,NS,A,f9.48p,f8.18p,f9.22a,f4.10p,,,f8.26a
+76.7,Riversdale,0,NS,A,f9.56p,8.26p,9.30a,4.02p,4.40a,4.40a,8.18a
+84.6,West River,0,NS,A,f10.11p,8.41p,9.45a,3.40p,f4.21a,f4.21a,8.03a
+92.3,Glengarry,0,NS,A,f10.27p,f8.54p,f9.59a,f3.25p,,,f7.46a
+98.9,Hopewell,0,NS,A,f10.39p,9.05p,10.11a,3.11p,f3.45a,f3.45a,7.29a
+100.3,Eureka,0,NS,A,f10.42p,9.07p,10.14a,3.08p,f3.41a,f3.41a,7.24a
+101.0,Ferrona Junction,0,NS,A,f10.43p,f9.08p,f10.16a,f3.06p,,,7.22a
+104.7,Stellarton,1,NS,A,10.50p,9.15p,10.25a,2.58p,3.30a,3.30a,7.15a
+106.8,New Glasgow,1,NS,A,ar 11.07p / lv 11.25p,ar 9.30p / lv 9.40p,ar 10.40a / lv 10.50a,ar 2.40p / lv 2.43p,ar 3.10a / lv 3.15a,ar 3.10a / lv 3.15a,ar 6.40a / lv 7.00a
+112.6,Woodburn,0,NS,A,f11.38p,f9.53p,f11.02a,f2.27p,,,
+120.3,Merigomish,0,NS,A,f11.59p,f10.11p,11.20a,2.11p,f2.40a,f2.40a,f6.04a
+128.9,Avondale,0,NS,A,f12.15a,f10.28p,11.38a,1.55p,f2.20a,f2.20a,f5.45a
+138.7,James River,0,NS,A,f12.36a,f10.50p,11.56a,1.35p,f1.55a,f1.55a,f5.23a
+148.2,Antigonish,1,NS,A,1.10a,11.15p,12.22p,1.10p,1.35a,1.35a,5.00a
+153.3,South River,0,NS,A,,f11.25p,f12.35p,f12.55p,f1.22a,f1.22a,f4.48a
+160.3,Heatherton,0,NS,A,f1.37a,f11.39p,12.50p,12.40p,f1.09a,f1.09a,f4.30a
+162.6,Bayfield Road,0,NS,A,f1.46a,f11.43p,12.55p,12.34p,,,
+168.2,Tracadie,0,NS,A,f2.00a,11.55p,f1.06p,f12.23p,,,
+170.3,Monastery,0,NS,A,f2.10a,12.02a,1.15p,12.18p,f12.50a,f12.50a,f4.05a
+176.9,Harbor au Bouche,0,NS,A,f2.27a,f12.20a,1.30p,12.02p,f12.38a,f12.38a,f3.50a
+186.4,Mulgrave,1,NS,A,2.55a,12.50a,2.00p,11.30a,12.05a,12.05a,3.15a
+186.8,Point Tupper,1,NS,A,4.20a,2.00a,3.00p,10.30a,11.00p,11.00p,1.35a
+193.7,MacIntyre Lake,0,NS,A,f4.37a,f2.17a,3.18p,10.10a,10.40p,10.40p,f1.15a
+200.3,West Bay Road,0,NS,A,f4.52a,f2.32a,3.32p,9.55a,f10.25p,f10.25p,f1.00a
+207.6,River Denys,0,NS,A,f5.10a,f2.46a,3.45p,9.42a,f10.10p,f10.10p,f12.43a
+215.6,Orangedale,0,NS,A,5.30a,f3.06a,4.04p,9.21a,9.51p,9.51p,12.26a
+231.9,Iona,0,NS,A,f6.07a,f3.42a,4.39p,8.41a,f9.19p,f9.19p,11.54p
+232.5,Grand Narrows,0,NS,A,f6.12a,f3.47a,4.44p,8.35a,f9.14p,f9.14p,f11.49p
+241.2,Shenacadie,0,NS,A,f6.29a,f4.05a,f5.01p,f8.17a,f8.57p,f8.57p,f11.32p
+249.9,Boisdale,0,NS,A,f6.50a,f4.25a,5.19p,8.01a,f8.40p,f8.40p,f11.15p
+266.4,Little Bras d'Or,0,NS,A,f7.24a,f5.00a,5.53p,7.29a,f8.06p,f8.06p,f10.43p
+270.5,Sydney Mines,0,NS,A,7.40a,5.10a,6.05p,7.18a,7.55p,7.55p,10.35p
+273.2,North Sydney,1,NS,A,8.15a,5.45a,6.20p,7.10a,7.45p,7.45p,10.25p
+278.0,Leitches Creek,0,NS,A,,f5.55a,f6.30p,f6.55a,f7.25p,f7.25p,f9.55p
+288.3,Sydney,1,NS,A,ar 9.00a,ar 6.30a,ar 7.00p,lv 6.30a,lv 7.00p,lv 7.00p,lv 9.30p

@@ -1,0 +1,14 @@
+# Canadian National, Table 14: Moncton - Salisbury - Hillsboro - Albert, mixed (Official Guide, April 25, 1948, page 1115 (Brendan, 8 Nov 2026)). ATLANTIC time. Miles from Salisbury; Moncton -13.4 (Table 4: Salisbury 202.1 - Moncton
+# 188.7; not printed here). Column "258-262": 258 Moncton - Salisbury (Mon., Wed., Sat.),
+# 262 Salisbury - Hillsboro (sign h, except Sun. and Thurs.). 257 "double dagger" read as daily except Saturday.
+#train col=No258 num=258 dir=down days="Mon,Wed,Sat" kind=mixed note="Mixed, Mon., Wed. and Sat.: Moncton 12.20 p.m., Salisbury 1.55 p.m. (as No. 262) to Hillsboro 3.20 p.m."
+#train col=No262 num=262 dir=down days="Tue,Fri" kind=mixed note="Mixed, Tues. and Fri.: Salisbury 1.55 p.m. to Hillsboro 3.20 p.m. (sign h: daily except Sunday and Thursday; on Mon., Wed., Sat. it is the 258 from Moncton)."
+#train col=No256 num=256 dir=down days="ex Sun" kind=mixed note="Mixed, daily except Sunday: Moncton 8.40 a.m., Salisbury 10.20 a.m., Hillsboro 11.45 a.m. - 12.35 p.m. to Albert 2.05 p.m."
+#train col=No255 num=255 dir=up days="ex Sun" kind=mixed note="Mixed, daily except Sunday: Hillsboro 5.10 p.m. to Salisbury 6.40 p.m. and Moncton 7.35 p.m."
+#train col=No257 num=257 dir=up days="Sun,Mon,Tue,Wed,Thu,Fri" kind=mixed note="Mixed, daily except Saturday: Albert 3.00 p.m. to Hillsboro 4.20 p.m."
+mile,station,principal,prov,tz,No258,No262,No256,No255,No257
+-13.4,Moncton,1,NB,A,lv 12.20p,,lv 8.40a,ar 7.35p,
+0.0,Salisbury,1,NB,A,1.55p,lv 1.55p,10.20a,6.40p,
+24.3,Hillsboro,1,NB,A,ar 3.20p,ar 3.20p,ar 11.45a / lv 12.35p,lv 5.10p,ar 4.20p
+44.0,Riverside,0,NB,A,,,f2.00p,,f3.04p
+44.7,Albert,1,NB,A,,,ar 2.05p,,lv 3.00p

@@ -43,8 +43,7 @@ NOT_CN = {28: ('nscc', 'Railroad of the Nova Scotia Coal Co.'), 33: ('acc', 'Rai
 # 'check' = was this track there in 1948? (Whether trains ran over it is the timetables' business, not the track's: a branch with no train is simply not routed over.)
 CHECK = {8: 'Realignment at Tide Head: alternate alignment, which one was in use in 1948?', 17: 'NB&PEI "Ferry Reroute": earlier or later than 1948?',
          20: 'Cape Traverse branch: still there in 1948?', 23: 'PEI Short Line Cutoff: there in 1948?', 26: 'PEI main line realignment to Elmira: before or after 1948?',
-         41: 'Dartmouth Branch 1896: superseded alignment? (compare fid 40)', 11: 'Elgin, Petitcodiac & Havelock: still there in 1948?', 12: 'Elgin Branch: still there in 1948?',
-         14: 'Albert Southern: still there in 1948?', 13: 'Albert Railway: still there in 1948?'}
+         14: 'Albert Southern: still there in 1948?'}   # 11, 12, 13 (Havelock, Elgin, Albert) and 41 (Dartmouth 1896) have 1948 trains (page 1115)
 for fid, f in F.items():
     if 51 < fid < 132 or fid == 134: continue
     if fid == 7: REPORT.append('fid 7 York and Carleton: exact duplicate of fid 1, dropped'); continue
@@ -60,6 +59,9 @@ for fid, f in F.items():
     if fid == 29:
         j = F[65]['ls'].interpolate(0); d = ls.project(j); REPORT.append(f'fid 29 split {d:.0f} m along at Brendan\'s junction (trace 65), gap {ls.distance(j):.0f} m')
         pieces = [(substring(ls, 0, d), nm + ' (west of Mulgrave junction)', status, why), (substring(ls, d, ls.length), nm + ' (north leg to the causeway)', 'post1948', "Auld's Cove - Canso Causeway line: rail across the causeway from May 1955")]
+    if fid == 40:   # Dartmouth Branch: the Dartmouth end (to the 1896 line, which the Windsor Jct. - Dartmouth trains use, Table 11) stays; the stretch on to the Narrows is the 1885 bridge line, gone after the bridge fell (1890s)
+        j = F[41]['ls'].interpolate(0); d = ls.project(j); REPORT.append(f'fid 40 split {d:.0f} m along at the 1896 line (gap {ls.distance(j):.0f} m)')
+        pieces = [(substring(ls, 0, d), nm + ' (Dartmouth)', status, why), (substring(ls, d, ls.length), nm + ' (to the Narrows bridge)', 'pre1948', 'the 1885 line across the Narrows to Richmond; the bridge was lost in the 1890s and the branch rebuilt round Bedford Basin in 1896 (fid 41)')]
     if fid == 6:
         bd = Point(T.transform(-68.7317, 47.372)); d = ls.project(bd); REPORT.append(f'fid 6 NTR cut {d / 1000:.1f} km along at the N.B. boundary point ({ls.distance(bd):.0f} m off)')
         pieces = [(substring(ls, 0, d), nm + ' (west of the N.B. boundary)', 'quebec_overlap', 'the Quebec collection already carries the NTR to the N.B. boundary'), (substring(ls, d, ls.length), nm, status, why)]

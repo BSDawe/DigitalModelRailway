@@ -1,0 +1,13 @@
+# Canadian National, Table 9: the Lunenburg sections, Mahone Bay - Lunenburg (Official Guide, April 25, 1948, page 1115 (Brendan, 8 Nov 2026)). ATLANTIC time. Printed in the train's own column (Lunenburg ar / lv, Mahone Bay at
+# the same minute as the train): entered as short trips under the train's number. Miles as Table 9 (Lunenburg 77.7).
+#train col=No87L num=87 dir=down days="ex Sun" kind=passenger note="Lunenburg section of No. 87: Mahone Bay 10.39 to Lunenburg 11.15 (a.m.), daily except Sunday."
+#train col=No87M num=87 dir=up days="ex Sun" kind=passenger note="Lunenburg section of No. 87: Lunenburg 10.05 to Mahone Bay 10.39 (a.m.), daily except Sunday."
+#train col=No283L num=283 dir=down days="ex Sun" kind=mixed note="Lunenburg section of No. 283: Mahone Bay 6.00 to Lunenburg 6.35 (p.m.), daily except Sunday."
+#train col=No283M num=283 dir=up days="ex Sun" kind=mixed note="Lunenburg section of No. 283: Lunenburg 5.25 to Mahone Bay 6.00 (p.m.), daily except Sunday."
+#train col=No88L num=88 dir=down days="ex Sun" kind=passenger note="Lunenburg section of No. 88: Mahone Bay 3.15 to Lunenburg 3.50 (p.m.), daily except Sunday."
+#train col=No88M num=88 dir=up days="ex Sun" kind=passenger note="Lunenburg section of No. 88: Lunenburg 2.40 to Mahone Bay 3.15 (p.m.), daily except Sunday."
+#train col=No284L num=284 dir=down days="ex Sun" kind=mixed note="Lunenburg section of No. 284: Mahone Bay 8.03 to Lunenburg 8.35 (a.m.), daily except Sunday."
+#train col=No284M num=284 dir=up days="ex Sun" kind=mixed note="Lunenburg section of No. 284: Lunenburg 7.30 to Mahone Bay 8.03 (a.m.), daily except Sunday."
+mile,station,principal,prov,tz,No87L,No87M,No283L,No283M,No88L,No88M,No284L,No284M
+71.1,Mahone Bay,1,NS,A,lv 10.39a,ar 10.39a,lv 6.00p,ar 6.00p,lv 3.15p,ar 3.15p,lv 8.03a,ar 8.03a
+77.7,Lunenburg,1,NS,A,ar 11.15a,lv 10.05a,ar 6.35p,lv 5.25p,ar 3.50p,lv 2.40p,ar 8.35a,lv 7.30a

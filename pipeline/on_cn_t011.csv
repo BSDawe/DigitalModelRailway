@@ -1,0 +1,18 @@
+# Canadian National, Table 11: Windsor Junction - Waverley - Dartmouth (Official Guide, April 25, 1948, page 1115 (Brendan, 8 Nov 2026)). ATLANTIC time. With the motor trains 385, 381, 386 / 378, 382 that run Halifax - Waverley
+# (their Halifax - Windsor Junction times from Table 4, page 1114). Miles from Windsor Junction (Halifax rows negative, from Table 4). Track: Wikipedia's "Dartmouth Branch, 1896" (round Bedford Basin).
+#train col=No385 num=385 dir=down days="Sat" kind=motor note="Motor train, Saturday only: Halifax 10.00 p.m. to Waverley 10.50 p.m. (Halifax - Windsor Junction: Table 4)."
+#train col=No381 num=381 dir=down days="ex Sun" kind=motor note="Motor train, daily except Sunday: Halifax 5.20 p.m. to Waverley 6.10 p.m. (Halifax - Windsor Junction: Table 4; not May 24, June 7, July 1, September 6)."
+#train col=No386 num=386 dir=down days="ex Sun" kind=motor note="Motor train, daily except Sunday: Windsor Junction 5.25 a.m. to Waverley 5.30 a.m. (back as No. 378)."
+#train col=No378 num=378 dir=up days="ex Sun" kind=motor note="Motor train, daily except Sunday: Waverley 5.35 a.m. to Halifax 6.35 a.m. (Windsor Junction - Halifax: Table 4; not May 24, June 7, July 1, September 6)."
+#train col=No382 num=382 dir=up days="ex Sun" kind=motor note="Motor train: Waverley 6.20 p.m. (dagger: daily except Sunday) to Halifax 7.10 p.m. Table 4 prints the Windsor Junction time with k (Saturday only): TO CHECK."
+#train col=No247 num=247 dir=down days="ex Sun" kind=mixed note="Mixed, daily except Sunday: Windsor Junction 10.30 a.m. to Dartmouth 11.20 a.m."
+#train col=No248 num=248 dir=up days="ex Sun" kind=mixed note="Mixed, daily except Sunday: Dartmouth 5.00 p.m. to Windsor Junction 5.50 p.m."
+mile,station,principal,prov,tz,No385,No381,No386,No378,No382,No247,No248
+-15.8,Halifax,1,NS,A,lv 10.00p,lv 5.20p,,ar 6.35a,ar 7.10p,,
+-10.9,Fairview Junction,0,NS,A,10.11p,5.31p,,6.19a,6.56p,,
+-9.8,Rockingham,0,NS,A,10.14p,5.34p,,6.13a,6.54p,,
+-5.2,Bedford,0,NS,A,10.27p,5.47p,,5.55a,6.42p,,
+0.0,Windsor Junction,1,NS,A,ar 10.40p / lv 10.45p,ar 6.00p / lv 6.05p,lv 5.25a,ar 5.40a / lv 5.45a,ar 6.25p / lv 6.30p,lv 10.30a,ar 5.50p
+2.0,Waverley,0,NS,A,ar 10.50p,ar 6.10p,ar 5.30a,lv 5.35a,lv 6.20p,f10.40a,f5.40p
+9.9,Burnside,0,NS,A,,,,,,f10.48a,
+12.4,Dartmouth,1,NS,A,,,,,,ar 11.20a,lv 5.00p

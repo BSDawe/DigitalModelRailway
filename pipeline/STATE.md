@@ -1,7 +1,7 @@
 # The Digital Model Railway — project state
 
 Read this first. It is meant to be enough to start a short, single-task chat without replaying the project's history.
-Last updated 8 November 2026 (Version 144: CN Table 4 Halifax - Truro - Moncton - Saint John; Version 143: the Maritimes begin: the Temiscouata to Edmundston and Connors, CN Tables 1, 1a and 2 in N.B. and N.S., the Maritime track bank; 142: the Chicago, Duluth & Georgian Bay steamers North American and South American; 141: C.S.L. boats named; 140: full rebuild; 135-139: Niagara, the Muskoka, Pointe au Baril and C.S.L. boats, motor trains, the Newfoundland Railway; Version 62 moved the project to git). For a new chat, read HANDOFF.md first (short), then the sections of this file it points to.
+Last updated 9 November 2026 (Version 145: CN page 1115, N.S. and N.B. branches, Cabot Strait and Yarmouth - Boston steamers; Version 144: CN Table 4 Halifax - Truro - Moncton - Saint John; Version 143: the Maritimes begin: the Temiscouata to Edmundston and Connors, CN Tables 1, 1a and 2 in N.B. and N.S., the Maritime track bank; 142: the Chicago, Duluth & Georgian Bay steamers North American and South American; 141: C.S.L. boats named; 140: full rebuild; 135-139: Niagara, the Muskoka, Pointe au Baril and C.S.L. boats, motor trains, the Newfoundland Railway; Version 62 moved the project to git). For a new chat, read HANDOFF.md first (short), then the sections of this file it points to.
 
 ## What this is
 
@@ -2444,6 +2444,30 @@ Stations of different railways within 250 m (70 pairs; script: same check over v
   the zone the timetable was printed in (no "shown in Pacific time ..."). FIX the same evening: ZOFF declared with var (hm runs above its line).
 - NS&T / CN steamers page (condensed tables) saved: dmr-sources og1948_cnq/nst_cn_steamers_condensed.png. Questions out to Brendan (track KMZ, Port
   Dalhousie cars, Toronto - Port Dalhousie boat, Cobourg - Genesee points, colours).
+
+## Version 145 (9 November 2026): CN page 1115 (Halifax - Sydney, N.S. branches, N.B. branches), Cabot Strait and Yarmouth - Boston steamers
+- Timetables (Atlantic time, shift -4 h, places MAR_PLACES; each spur its own file so trains don't detour onto it): on_cn_t005 Halifax - Sydney (5, 7, 9 /
+  6, 8 Sun-Fri, 8s Sat (Truro 6.10), 10; 286.5 traced / 288.3 printed); t007 Dartmouth - Upper Musquodoboit (68.8 / 69.3); t008 Point Tupper - Inverness (61.9 /
+  61.6); t008a Point Tupper - St. Peters (29.4 / 28.9); t009 Halifax - Yarmouth (259.7 / 250: Lockeport in and out); t009a Mahone Bay - Lunenburg (6.8 / 6.6);
+  t010 Moncton - Buctouche, Thursday only (32.7 / 32.4); t011 Halifax - Windsor Jct. - Waverley - Dartmouth motors 385, 381, 386, 378, 382 and 247 / 248 (29.2 /
+  28.2); t012 Moncton - Point du Chene (19.2 / 18.6); t013 Campbellton - Dalhousie (15.9 / 15.1); t014 Moncton - Albert (57.9 / 58.1); t015 Moncton - Elgin
+  (36.8 / 36.9); t015a Moncton - Havelock (35.0 / 35.3).
+- on_cn_t004 restructured: Nos. 5 - 10 moved to t005 and the Waverley motors to t011; 23 trains left (379/380/383/384, 11, 20, 39 - 42, 13, 13s, 19, 43, 12, 14,
+  44, 351 - 358). New files are in on_build's LAST set so older trip ids don't move.
+- Track: traces/maritimes/cn_osm_sydney.geojson, Brendan's OSM export of the Sydney Subdivision (43 ways): the main was rerouted after the Intercolonial, and in
+  1948 trains briefly use the North Sydney ferry-terminal spur before going on to Sydney. The North Sydney wye trace was scrapped (Brendan). links_estimated.geojson
+  adds the Strait of Canso car-ferry link (Mulgrave - Point Tupper pier ends), Newfoundland Railway trace end - Port-aux-Basques (Brendan's point 47.5807910,
+  -59.1423107, own nfr; the NFR now terminates there) and Yarmouth track end - Brendan's Yarmouth station point. All three wait for traces.
+- Steamers (lo_build.py, GTFS LINES[11], [12]): Newfoundland Railway North Sydney - Port aux Basques (SaTuTh east / Mo, We, Fr west; livery nfr, agency NFR;
+  Newfoundland time = Atlantic + 0.5 h); Eastern Steamship Lines Yarmouth - Boston India Wharf (Brendan's points; Yarmouth TuThSu 6.30 p.m. - Boston 7.30 a.m.,
+  Boston MoWeFr 3.30 p.m. - Yarmouth 7.30 a.m.; Boston on EST; livery esl, new agency ESL, placeholder colour #7a2430). Tile boxes NFS_BOX, ESL_BOX.
+- Fixed: the L&PS's Yarmouth, Ont. had been given Nova Scotia's point (a duplicate key in its places dict) - back at (-81.19345, 42.811999). Compared with the V144
+  page, only onnfr001 (Port-aux-Basques), ontem001, oncn001 and oncn001a moved (all intended).
+- Checks: check_gtfs 1 known problem; 533 lines, 3958 trips, 6231 stops, 52 agencies.
+- TO CHECK (Brendan): No. 20 Folly Lake f3.35 (f3.25?); the second No. 13 (Sunday only); the "b" sign on 379 / 380; 382 dagger vs k; No. 26 dagger; 253 / 260 "-14"
+  columns at Salisbury 1.35; traces for Saint John, Yarmouth and the NFR at Port-aux-Basques; approximate points (Halifax, Newcastle, Bathurst, Oxford, the ferry
+  slips); is Dartmouth fid 40 the Narrows bridge line?
+- NEXT: Table 23 N.B. part, Table 6 (Pictou) connections, P.E.I.; then trip chaining across the CN Maritime files (staged/maritimes/STAGED.md).
 
 ## Version 144 (8 November 2026): CN Table 4, Halifax - Truro - Moncton - Saint John (page 1114)
 - Page numbers corrected (Brendan): Tables 1, 1a, 2 are page 1113 (not 1118); Table 4 is page 1114.

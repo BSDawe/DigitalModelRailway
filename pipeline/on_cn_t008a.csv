@@ -1,0 +1,7 @@
+# Canadian National, Table 8a: Point Tupper - St. Peters, mixed (Official Guide, April 25, 1948, page 1115 (Brendan, 8 Nov 2026)). ATLANTIC time. Signs: a Mon., Wed., Fri.; b Tues., Thurs., Sat. Track: the Cape Breton Railway (Wikipedia).
+#train col=No222 num=222 dir=down days="Tue,Thu,Sat" kind=mixed note="Mixed, Tues., Thurs. and Sat.: Point Tupper 3.25 p.m. to St. Peters 6.00 p.m."
+#train col=No221 num=221 dir=up days="Mon,Wed,Fri" kind=mixed note="Mixed, Mon., Wed. and Fri.: St. Peters 7.45 a.m. to Point Tupper 9.50 a.m."
+mile,station,principal,prov,tz,No222,No221
+0.0,Point Tupper,1,NS,A,lv 3.25p,ar 9.50a
+16.9,Louisdale,0,NS,A,4.55p,8.35a
+28.9,St. Peters,1,NS,A,ar 6.00p,lv 7.45a

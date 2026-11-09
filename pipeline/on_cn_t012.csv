@@ -1,0 +1,17 @@
+# Canadian National, Table 12: Moncton - Painsec Junction - Shediac - Point du Chene (Official Guide, April 25, 1948, page 1115 (Brendan, 8 Nov 2026)). ATLANTIC time. Signs: dagger ex Sun; k Sat only; section Sun only;
+# t daily except Sat. and Sun.; diamond: June 27 - Aug. 29 (in the modelled week). Table 4 prints 279 with a dagger at Painsec; this table's t is used.
+#train col=No276 num=276 dir=down days="ex Sun" kind=passenger note="Daily except Sunday: Moncton 10.35 a.m. to Point du Chene 11.20 a.m."
+#train col=No292 num=292 dir=down days="Sat" kind=passenger note="Saturday only: Moncton 11.20 a.m. to Point du Chene 12.01 p.m."
+#train col=No82 num=82 dir=down days="Sun" kind=passenger note="Sunday only, June 27 to August 29: Moncton 12.30 p.m. to Point du Chene 1.20 p.m."
+#train col=No78 num=78 dir=down days="ex Sun" kind=passenger note="Daily except Sunday: Moncton 4.25 p.m. to Point du Chene 5.20 p.m."
+#train col=No77 num=77 dir=up days="ex Sun" kind=passenger note="Daily except Sunday: Point du Chene 5.55 a.m. to Moncton 6.45 a.m."
+#train col=No279 num=279 dir=up days="Mon,Tue,Wed,Thu,Fri" kind=passenger note="Daily except Saturday and Sunday: Point du Chene 11.45 a.m. to Moncton 12.30 p.m."
+#train col=No289 num=289 dir=up days="Sat" kind=passenger note="Saturday only: Point du Chene 12.10 p.m. to Moncton 12.55 p.m."
+#train col=No83 num=83 dir=up days="Sun" kind=passenger note="Sunday only, June 27 to August 29: Point du Chene 6.30 p.m. to Moncton 7.20 p.m."
+mile,station,principal,prov,tz,No276,No292,No82,No78,No77,No279,No289,No83
+0.0,Moncton,1,NB,A,lv 10.35a,lv 11.20a,lv 12.30p,lv 4.25p,ar 6.45a,ar 12.30p,ar 12.55p,ar 7.20p
+2.0,Humphrey,0,NB,A,10.40a,11.25a,12.36p,4.30p,6.37a,f12.25p,f12.50p,7.10p
+7.0,Painsec Junction,1,NB,A,10.50a,11.35a,12.45p,4.40p,6.23a,12.12p,12.37p,7.00p
+12.8,Scoudouc,0,NB,A,11.03a,11.45a,1.00p,5.00p,6.10a,11.59a,12.24p,6.45p
+16.6,Shediac,1,NB,A,11.15a,11.57a,1.10p,5.14p,6.00a,11.49a,12.14p,6.35p
+18.6,Point du Chene,1,NB,A,ar 11.20a,ar 12.01p,ar 1.20p,ar 5.20p,lv 5.55a,lv 11.45a,lv 12.10p,lv 6.30p

@@ -1,0 +1,15 @@
+# Canadian National, Table 8: Point Tupper - Port Hastings - Inverness (Official Guide, April 25, 1948, page 1115 (Brendan, 8 Nov 2026)). ATLANTIC time. Miles from Point Tupper (the table counts from Inverness: 61.6 less
+# the printed figure). Signs: a Mon., Wed., Fri.; b Tues., Thurs., Sat.; dagger ex Sun.
+#train col=No155 num=155 dir=down days="Mon,Wed,Fri" kind=mixed note="Mixed, Mon., Wed. and Fri.: Point Tupper 11.20 a.m. to Inverness 3.45 p.m."
+#train col=No157 num=157 dir=down days="ex Sun" kind=passenger note="Daily except Sunday: Point Tupper 3.15 p.m. to Inverness 6.30 p.m."
+#train col=No158 num=158 dir=up days="Tue,Thu,Sat" kind=mixed note="Mixed, Tues., Thurs. and Sat.: Inverness 9.30 a.m. to Point Tupper 2.05 p.m."
+#train col=No156 num=156 dir=up days="ex Sun" kind=passenger note="Daily except Sunday: Inverness 6.40 a.m. to Point Tupper 9.55 a.m."
+mile,station,principal,prov,tz,No155,No157,No158,No156
+0.0,Point Tupper,1,NS,A,lv 11.20a,lv 3.15p,ar 2.05p,ar 9.55a
+2.1,Port Hawkesbury,0,NS,A,11.45a,3.25p,1.50p,9.43a
+5.5,Port Hastings,1,NS,A,12.05p,3.37p,1.30p,9.25a
+24.1,Judique,0,NS,A,,4.30p,,8.25a
+33.3,Port Hood,0,NS,A,,5.00p,,8.03a
+45.2,Mabou,0,NS,A,,5.35p,,7.30a
+57.4,Strathlorne,0,NS,A,,6.15p,,6.55a
+61.6,Inverness,1,NS,A,ar 3.45p,ar 6.30p,lv 9.30a,lv 6.40a

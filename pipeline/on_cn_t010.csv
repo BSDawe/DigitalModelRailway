@@ -1,0 +1,9 @@
+# Canadian National, Table 10: Moncton - Buctouche, mixed (Official Guide, April 25, 1948, page 1115 (Brendan, 8 Nov 2026)). ATLANTIC time. The columns "effective from May 20" (Thursday only); the "until May 15" ones not entered.
+#train col=No204 num=204 dir=down days="Thu" kind=mixed note="Mixed, Thursday only (from May 20): Moncton 8.30 a.m. to Buctouche 11.00 a.m."
+#train col=No203 num=203 dir=up days="Thu" kind=mixed note="Mixed, Thursday only (from May 20): Buctouche 1.00 p.m. to Moncton 3.45 p.m."
+mile,station,principal,prov,tz,No204,No203
+0.0,Moncton,1,NB,A,lv 8.30a,ar 3.45p
+2.0,Humphrey,0,NB,A,8.35a,3.40p
+19.4,Notre Dame,0,NB,A,9.57a,2.10p
+24.0,St. Anthony,0,NB,A,10.20a,1.45p
+32.4,Buctouche,1,NB,A,ar 11.00a,lv 1.00p

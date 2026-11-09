@@ -26,6 +26,8 @@ PAB_BOX = (-80.60, -80.30, 45.48, 45.64)        # Pointe au Baril, Georgian Bay
 MUSK_BOX = (-79.76, -79.33, 44.88, 45.29)       # the Muskoka lakes
 CSL_BOX = (-79.50, -73.40, 43.10, 45.62)        # Canada Steamship Lines: Lake Ontario and the St. Lawrence to Montreal
 SAG_BOX = (-73.60, -69.55, 45.45, 48.45)        # Canada Steamship Lines: Montreal - Quebec - the Saguenay
+NFS_BOX = (-60.40, -58.95, 46.15, 47.65)        # the Cabot Strait: North Sydney - Port aux Basques (Newfoundland Railway steamer)
+ESL_BOX = (-71.10, -65.90, 42.25, 43.95)        # the Gulf of Maine: Yarmouth - Boston (Eastern Steamship Lines)
 
 # ---------------- water: the basemap tiles (page projection) back to lon/lat, and water_east.json
 _idx = json.load(open(os.path.join(ROOT, 'basemap', 'tiles', 'index.json'))); _PJ = _idx['proj']
@@ -39,7 +41,7 @@ def page_ll(x, y):
     X, Y = x + _ox, y + _oy; rho = math.copysign(math.hypot(X, Y), _n); th = math.atan2(X, Y)
     return (th / _n + _l0) / _r, (2 * math.atan((_R * _F / rho) ** (1 / _n)) - math.pi / 2) / _r
 _z = _idx['zmax']; _s = _idx['side'] / 2 ** _z; _polys = []
-for _B in (BOX, PAB_BOX, MUSK_BOX, CSL_BOX, SAG_BOX):
+for _B in (BOX, PAB_BOX, MUSK_BOX, CSL_BOX, SAG_BOX, NFS_BOX, ESL_BOX):
   _xs, _ys = zip(*[page_xy(lon, lat) for lon in _B[:2] for lat in _B[2:]])
   for tx in range(int((min(_xs) - _idx['origin'][0]) // _s), int((max(_xs) - _idx['origin'][0]) // _s) + 1):
       for ty in range(int((min(_ys) - _idx['origin'][1]) // _s), int((max(_ys) - _idx['origin'][1]) // _s) + 1):
@@ -328,6 +330,45 @@ M = [ctrip('CSSG', sg_st, 0, 'daily', [(0, '6.45p', '6.45p'), (1, '9.45p', '9.45
                                        (1, '+2.15a', '+2.15a'), (0, '+7.00a', '+7.00a')], SN)]
 mkline('cssg', 'Montreal – Quebec – the Saguenay (Canada Steamship Lines)', sg_route, sg_st, M, ['to the Saguenay', 'to Montreal'],
        'Canada Steamship Lines, Sailing Schedules season 1948 (Brendan); Eastern Standard time as printed', 'csl')
+
+# North Sydney - Port aux Basques, the Newfoundland Railway steamer (Official Guide, April 25, 1948, CN page 1115; Brendan, 8 Nov 2026: a Newfoundland Railway service,
+# from the end of the North Sydney track to his Port aux Basques point, where the railway ends too). North Sydney sails Sat., Tues., Thurs. 8.30 p.m. Atlantic, Port aux
+# Basques 6.00 a.m. Newfoundland time (Atlantic + 30 min.); back Wed., Fri. 9.00 p.m. and Mon. 10.00 a.m. Newfoundland time, North Sydney 5.30 a.m. / 6.30 p.m. Atlantic.
+def _gid_of(key, name):
+    for L_ in vd['lines']:
+        if L_['key'] == key:
+            for s_ in L_['stations']:
+                if s_['name'] == name: return s_['gid']
+NSY = port('North Sydney', -60.2456, 46.2091, 'North Sydney: the end of the North Sydney track (Brendan, 8 Nov 2026), with the Canadian National trains.')
+PAQ = port('Port aux Basques', -59.1423107, 47.5807910, "Port aux Basques terminal (Brendan's point, 8 Nov 2026), with the Newfoundland Railway trains.")
+NSY['gid'] = _gid_of('oncn005', 'North Sydney') or NSY['gid']; PAQ['gid'] = _gid_of('onnfr001', 'Port-aux-Basques') or PAQ['gid']
+ns_route, ns_st = water_route([NSY, PAQ], 150)
+SVC.update({'SaTuTh': 'W_0101010', 'WeFr': 'W_0010100', 'Mo': 'W_1000000'}); DAYS.update({'SaTuTh': 'Saturday, Tuesday and Thursday', 'WeFr': 'Wednesday and Friday', 'Mo': 'Monday'})
+NN = (' Newfoundland Railway steamer across the Cabot Strait, connecting with the Canadian National trains at North Sydney and the Newfoundland Railway at Port aux Basques.'
+      ' Printed in Atlantic time at North Sydney and Newfoundland time (half an hour later) at Port aux Basques.')
+def _ns(d, dy, a, b, txt): return dict(id=f'NFSS-{"DU"[d]}{dy}', num='Steamer', name='Newfoundland Railway steamer', svc=SVC[dy], dir=d, vessel='Steamer',
+                                       stops=[[0 if d == 0 else 1, a, a, 1], [1 if d == 0 else 0, b, b, 1]], note=txt + NN)
+NS = [_ns(0, 'SaTuTh', hm('8.30p') - 4 * 3600, 86400 + hm('6.00a') - 4 * 3600 - 1800, 'North Sydney Sat., Tues. and Thurs. 8.30 p.m. to Port aux Basques 6.00 a.m. (Newfoundland time) Sun., Wed. and Fri.'),
+      _ns(1, 'WeFr', hm('9.00p') - 4 * 3600 - 1800, 86400 + hm('5.30a') - 4 * 3600, 'Port aux Basques Wed. and Fri. 9.00 p.m. (Newfoundland time) to North Sydney 5.30 a.m. Thurs. and Sat.'),
+      _ns(1, 'Mo', hm('10.00a') - 4 * 3600 - 1800, hm('6.30p') - 4 * 3600, 'Port aux Basques Monday 10.00 a.m. (Newfoundland time) to North Sydney 6.30 p.m.')]
+mkline('nfss', 'North Sydney – Port aux Basques (Newfoundland Railway steamer)', ns_route, ns_st, NS, ['to Port aux Basques', 'to North Sydney'],
+       'Newfoundland Railway steamer, North Sydney - Port aux Basques: CN page 1115, Official Guide, April 25, 1948 (Brendan); Atlantic / Newfoundland time as printed', 'nfr')
+
+# Yarmouth - Boston, Eastern Steamship Lines (CN Table 9, Official Guide, April 25, 1948, page 1115; Brendan, 8 Nov 2026: India Wharf, Boston, and his Yarmouth point).
+# June 3 - Sept. 26: Yarmouth Tues., Thurs., Sun. 6.30 p.m. Atlantic time, Boston 7.30 a.m. Eastern time (taken as standard, Atlantic - 1 h); June 2 - Sept. 24: Boston
+# Mon., Wed., Fri. 3.30 p.m. Eastern, Yarmouth 7.30 a.m. Atlantic. The May 28 / 31 sailings are outside the modelled week.
+YAR = port('Yarmouth', -66.12249900355755, 43.83744377078616, "Yarmouth, N.S. (Brendan's point), with the Canadian National trains (Lovitt Street wharf on boat days).")
+BOS = port('Boston (India Wharf)', -71.04892582977378, 42.358478309966216, "India Wharf, Boston (Brendan's point, 8 Nov 2026), Eastern Steamship Lines.")
+YAR['gid'] = _gid_of('oncn009', 'Yarmouth') or YAR['gid']
+es_route, es_st = water_route([YAR, BOS], 150)
+SVC.update({'TuThSu': 'W_0101001', 'MoWeFr': 'W_1010100'}); DAYS.update({'TuThSu': 'Tuesday, Thursday and Sunday', 'MoWeFr': 'Monday, Wednesday and Friday'})
+EN = ' Eastern Steamship Lines, Yarmouth - Boston (summer 1948). Printed in Atlantic time at Yarmouth, Eastern time at Boston.'
+ES = [dict(id='ESL-DTuThSu', num='Steamer', name='Eastern Steamship Lines', svc=SVC['TuThSu'], dir=0, vessel='Steamer', stops=[[0, hm('6.30p') - 4 * 3600, hm('6.30p') - 4 * 3600, 1], [1, 86400 + hm('7.30a') - 3 * 3600, 86400 + hm('7.30a') - 3 * 3600, 1]],
+           note='Yarmouth Tues., Thurs. and Sun. 6.30 p.m. (June 3 - Sept. 26) to Boston (India Wharf) 7.30 a.m.' + EN),
+      dict(id='ESL-UMoWeFr', num='Steamer', name='Eastern Steamship Lines', svc=SVC['MoWeFr'], dir=1, vessel='Steamer', stops=[[1, hm('3.30p') - 3 * 3600, hm('3.30p') - 3 * 3600, 1], [0, 86400 + hm('7.30a') - 4 * 3600, 86400 + hm('7.30a') - 4 * 3600, 1]],
+           note='Boston (India Wharf) Mon., Wed. and Fri. 3.30 p.m. (June 2 - Sept. 24) to Yarmouth 7.30 a.m.' + EN)]
+mkline('esl', 'Yarmouth – Boston (Eastern Steamship Lines)', es_route, es_st, ES, ['to Boston', 'to Yarmouth'],
+       'Eastern Steamship Lines, Yarmouth - Boston: CN Table 9, Official Guide, April 25, 1948 (Brendan); Atlantic / Eastern time as printed', 'esl')
 keys = {L['key'] for L in LINES}
 vd['lines'] = [x for x in vd['lines'] if x['key'] not in keys] + LINES
 open(os.path.join(HERE, 'viz_data.json'), 'w').write(json.dumps(vd, separators=(',', ':')))
@@ -341,6 +382,7 @@ cal = have('calendar.txt'); app('calendar.txt', [[w, *w[2:], '19490616', '194912
 if 'PABIT' not in have('agency.txt'): app('agency.txt', [['PABIT', 'Pointe au Baril Island Transport (Fred G. Barned)', 'https://en.wikipedia.org/wiki/Pointe_au_Baril', 'America/Vancouver', 'en', '']])
 if 'CSL' not in have('agency.txt'): app('agency.txt', [['CSL', 'Canada Steamship Lines', 'https://en.wikipedia.org/wiki/Canada_Steamship_Lines', 'America/Vancouver', 'en', '']])
 if 'MLN' not in have('agency.txt'): app('agency.txt', [['MLN', 'Muskoka Lakes Navigation and Hotel Co.', 'https://en.wikipedia.org/wiki/Muskoka_Lakes_Navigation_Company', 'America/Vancouver', 'en', '']])
+if 'ESL' not in have('agency.txt'): app('agency.txt', [['ESL', 'Eastern Steamship Lines', 'https://en.wikipedia.org/wiki/Eastern_Steamship_Lines', 'America/Vancouver', 'en', '']])
 if 'OCF' not in have('agency.txt'): app('agency.txt', [['OCF', 'Ontario Car Ferry Company (Canadian National and Baltimore & Ohio)', 'https://en.wikipedia.org/wiki/SS_Ontario_No._1', 'America/Vancouver', 'en', '']])
 gseen = have('stops.txt')
 _PDESC = 'Island boat, June 1 - Sept. 6, 1948. Times on the Pacific clock, three hours earlier than the Eastern Standard time printed.'
@@ -348,7 +390,9 @@ _MDESC = 'Muskoka Lakes Navigation Co. steamer, summer 1948. Times on the Pacifi
 for L, ag, desc in ((LINES[0], 'CN', 'Canadian National steamers, May 21 - June 4, 1948. Times on the Pacific clock (printed in Eastern Daylight Saving time).'),
                     (LINES[1], 'OCF', 'S.S. Ontario, summer service. Times on the Pacific clock, three hours earlier than the Eastern time printed.'),
                     (LINES[2], 'PABIT', _PDESC), (LINES[3], 'PABIT', _PDESC), (LINES[4], 'MLN', _MDESC), (LINES[5], 'MLN', _MDESC), (LINES[6], 'MLN', _MDESC),
-                    *((L_, 'CSL', 'Canada Steamship Lines, season 1948. Times on the Pacific clock, three hours earlier than the Eastern Standard time printed.') for L_ in LINES[7:11])):
+                    *((L_, 'CSL', 'Canada Steamship Lines, season 1948. Times on the Pacific clock, three hours earlier than the Eastern Standard time printed.') for L_ in LINES[7:11]),
+                    (LINES[11], 'NFR', 'Newfoundland Railway steamer, North Sydney - Port aux Basques. Times on the Pacific clock (printed in Atlantic time at North Sydney, Newfoundland time at Port aux Basques).'),
+                    (LINES[12], 'ESL', 'Eastern Steamship Lines, Yarmouth - Boston. Times on the Pacific clock (printed in Atlantic time at Yarmouth, Eastern time at Boston).')):
     rid = L['key'].upper(); st = L['stations']
     app('routes.txt', [[rid, ag, L['label'], ' – '.join(s['name'] for s in st), 4, {'PABIT': '8B4A2B', 'MLN': '1F4E79', 'CSL': 'D93A1C'}.get(ag, '2F6B44'), 'FFFFFF', desc]])
     new = [[s['gid'], s['name'] + ' (steamer landing)', f"{s['lat']:.6f}", f"{s['lon']:.6f}", s['note']] for s in st if s['gid'] not in gseen]
