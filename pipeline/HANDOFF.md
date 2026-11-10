@@ -11,8 +11,8 @@ version sections at the end of STATE.md (Versions 130-142) hold the details of r
 ## Working with Brendan
 - Unnamed ships carry no visible label on the map until clicked; never a stand-in such as "Steamer" (Brendan, 9 Nov 2026).
 - A straight link that bridges a gap in the track is drawn DASHED, unless it is trivially short or Brendan asked for it; traces stay solid (Brendan, 9 Nov 2026). Give such a link "est": true in its geojson properties.
-- When Brendan says "don't fix yet", queue it in OPEN_QUESTIONS.md, and ASK whether to include the queue before the next rebuild.
-- OPEN_QUESTIONS.md is the running tally of questions for him. Add each new question there, and when he answers, move it to "Answered" with the date. Mirror it to the project with STATE and HANDOFF.
+- When Brendan says "don't fix yet", queue it under "Fixes queued" in TODO.md, and ASK whether to include the queue before the next rebuild.
+- TODO.md is the one list of open questions, material wanted from Brendan, and work for Claude (OPEN_QUESTIONS.md and the TO DO lists in STATE.md were merged into it, 9 Nov 2026). Add each new item there; when it is answered or done, move it to "Done and answered" with the date. Mirror it to the project with STATE and HANDOFF. Do not start new TO DO lists in STATE.md.
 - Ask before building when something is unclear. Don't build ahead of him on items marked "waiting" or "do not build ahead".
 - He dislikes slow work: batch changes into one rebuild, and run only the steps a change touches.
 - Connections and buses are not trains, so they are not drawn.

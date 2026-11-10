@@ -2191,7 +2191,7 @@ Stations of different railways within 250 m (70 pairs; script: same check over v
 - Manson - McAuley trace (Brendan, 1 Nov): the same line as traces/saskatchewan/kirkella_mcauley.geojson (not added twice). skcp107b still straight Manson -
   Welwyn: McAuley (trace end) is 9.0 mi from Manson for 5.1 printed, and there is no track McAuley - Welwyn.
 
-## TO DO (1 November 2026, replaces the lists above)
+## TO DO (1 November 2026, replaces the lists above) - SUPERSEDED 9 Nov 2026: the open items are in TODO.md (merged with OPEN_QUESTIONS.md)
 - TO CHECK (Brendan): CN 122 / 126 Camp Borden (Brendan to trace); L&PS Colborne St., Philip St., Elm St., Stop 7, No. 37 St. Thomas; CP Table 73 No. 50 Elma
   (8.09 printed) and Crest; CP Table 69 Bennington, Lind (by mileage); CP Table 107 McAuley - Welwyn; CN Port Dover routing (Simcoe South - Port Dover).
 - TO CHECK (Brendan, 2 Nov 2026): Iberville, CN Table 72: keep "lve. Iberville (C.P.Ry.) 25.3" only as the timing point after the reversal at the junction, or drop the row
@@ -2499,8 +2499,8 @@ Stations of different railways within 250 m (70 pairs; script: same check over v
 - Mixed trains entered as plain numbers with kind=mixed (the page adds the M).
 - Checks: check_gtfs 1 known problem; 543 lines, 4009 trips, 6296 stops, 52 agencies. Compared with V145: only oncn023 changed among existing lines, plus the 10 new.
 - KNOWN: the Pictou trains run Stellarton - Westville over the coal companies' tracks (no CN piece joins the Pictou Town Branch; 1.2 km gap). oncn023 turns in
-  0.7 km to Brendan's Edmundston point (stub cut). Open questions: OPEN_QUESTIONS.md.
-- NEXT: the queued fixes (OPEN_QUESTIONS.md "Fixes queued") when Brendan says; trip chaining across the CN Maritime files; CP Maritimes.
+  0.7 km to Brendan's Edmundston point (stub cut). Open questions: TODO.md (was OPEN_QUESTIONS.md).
+- NEXT: the queued fixes (TODO.md "Fixes queued") when Brendan says; trip chaining across the CN Maritime files; CP Maritimes.
 
 ## Version 145 (9 November 2026): CN page 1115 (Halifax - Sydney, N.S. branches, N.B. branches), Cabot Strait and Yarmouth - Boston steamers
 - Timetables (Atlantic time, shift -4 h, places MAR_PLACES; each spur its own file so trains don't detour onto it): on_cn_t005 Halifax - Sydney (5, 7, 9 /
