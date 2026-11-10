@@ -2,7 +2,7 @@
 
 One list for the Digital Model Railway: questions for Brendan, material he is to supply, and work for Claude. It merges OPEN_QUESTIONS.md with the TO DO lists that were kept in STATE.md (the last of them: "TO DO (1 November 2026)"), as Brendan asked on 9 Nov 2026.
 Claude adds items as they come up. When one is answered or done, it moves to "Done and answered" with the date. Each open item says what the build does in the meantime. Version tags (V143) say when an item was raised.
-Last updated 10 November 2026 (Version 160).
+Last updated 10 November 2026 (Version 161).
 
 ## Decisions for Brendan
 - [ ] Norton (CP Table 16, Norton - Chipman mixed): did the CP trains use the CN station? Entered for now at the CN Norton stop (Claude's reading). (V159)
@@ -18,7 +18,7 @@ Last updated 10 November 2026 (Version 160).
 - [ ] DAR readings (V154): No. 33 (Windsor - Kentville, from No. 4) and No. 4 (Truro - Windsor) have no sign: entered daily except Sunday. No. 3 (34-3) entered Saturday only like No. 34. Boat days at Evangeline Wharf: No. 98 Tue., Thu., Sat. (the Boston boat in); No. 95 Tue., Thu. (the boat out; no No. 95 on Sundays); No. 99 leaving Halifax Mon., Wed., Fri. (Brendan: to the wharf on boat days only). Wharf times estimated.
 - [ ] Not built yet from the DAR page: the Kentville - Kingsport bus. (V154) The Digby - Saint John steamer is in (V155).
 - [ ] CP N.B. traces wanted (V159: these stretches run on dashed straight lines): the Gibson Sub North Devon - Keswick - Burtt's Corner - Barton (Table 16A, ~30 mi); Woodstock - Hartland (Tables 15, 16A, ~12 mi); Debec Jct. - Houlton, Me. (Table 15C: a 2 km gap at Debec and the Maine side; Houlton point APPROXIMATE); St. George - Bonny River (Table 17).
-- [ ] CP N.B. stations (V159): Saint John (Union Station), Westfield Beach and Norton entered as the CN stations (Norton: Claude's reading, TO CHECK). Kept apart from CN's: Edmundston, Fredericton, Woodstock, Chipman, Grand Falls, St. Leonard: joint or separate in 1948?
+- [ ] CP N.B. stations (V159): Saint John (Union Station), Westfield Beach and Norton entered as the CN stations (Norton: Claude's reading, TO CHECK). Kept apart from CN's: Edmundston, Woodstock, Chipman, Grand Falls, St. Leonard: joint or separate in 1948?
 - [ ] CP N.B. readings (V159): Table 10: 39 from Saint John ex Sun, from Megantic daily (Monday train from Megantic entered as No39m); 42 east of Brownville Jct. ex Sun, No. 104 on Sundays; 41 ex Sun from Saint John, No. 103 on Sundays. M117 / M118 (Brownville Jct. - Greenville - Megantic) mixed: Greenville and Holeb arrivals estimated. The Gull 113 / 114 daily (June 20 - Sept. 5). Table 12A 105 waits at Fredericton Jct. 6.30 - 8.55 p.m. as printed. Table 15 Theriault, Sigas, L'Eglise printed "f" without times: left out.
 
 ## Questions: readings to check
@@ -69,7 +69,7 @@ Maritime tables where the traced line differs from the printed miles by 1 mi and
 ### Maritimes: points and track
 - [ ] Approximate station points to confirm or replace: Halifax, Newcastle, Bathurst, Oxford, the Mulgrave / Point Tupper ferry slips. (V145)
 - [ ] Edmundston station point (the Témiscouata's): you marked it "I think". (V143) CN's own station: done (V147).
-- [ ] Page 1116 approximate points: Charlottetown and Summerside (the town points moved onto the track), Fredericton (the end of the bridge track). (V146)
+- [ ] Page 1116 approximate points: Charlottetown and Summerside (the town points moved onto the track). (V146) CN Table 34 Fredericton (Intercolonial station, V161) - South Devon: 0.7 mi traced, 1.7 printed.
 - [ ] Is Dartmouth fid 40 the Narrows bridge line? For now, the part past fid 41 is pre-1948. (V145)
 - [ ] Track bank pieces still marked "check": Wikipedia fids 8, 14, 17, 23. (V143) Now in use: fid 26 Harmony Jct. - Elmira (9.9 mi, as Table 31a prints) and fid 20, the Cape Traverse branch from Emerald Jct. through Kinkora and Albany to the Borden branch. Was the stub on to Cape Traverse still there? (V146)
 - [ ] Moncton: the traced miles are Painsec Jct. 7.6 (6.9 printed) and Pacific Jct. 11.3 (12.2), which would put the station about 0.7 mi east. Kept your point as given. (V144)
@@ -120,6 +120,7 @@ Maritime tables where the traced line differs from the printed miles by 1 mi and
 - Campbellton at Brendan's point on the main line (all Campbellton files). CN Edmundston at Brendan's point (47 21 41.94 N, 68 20 07.84 W), on_cn_t023.
 
 ### Answered
+- Fredericton (V161): CP at York Street Station, CN at the Intercolonial station, Brendan's points (10 Nov 2026).
 - Yarmouth (V158, V160): Brendan's OSM export and points: separate CN and DAR stations (V160; one station in V158-159 from a copy-paste slip); Evangeline Wharf (Lovitt Street in CN Table 9 is another name for it) served by both railways' boat trains (CN Nos. 87b / 88b added); the Boston boat at the wharf. Maccan moved to Brendan's point on the Intercolonial (CN and MCR&P). (Brendan, 10 Nov 2026)
 - The Dominion Atlantic uses the CN stations at Halifax, Bedford, Windsor Junction, Truro and Middleton: one stop each (merge_stations.py). Windsor Junction at Brendan's point, 44 47 11.3 N, 63 38 23.3 W, for both railways (Brendan, 10 Nov 2026; V155).
 - The C.P.S.S. Saint John - Digby steamer (S.S. Princess Helene, daily except Sunday; CP public timetable, April 1948) at Brendan's Long Wharf and Digby Wharf points (10 Nov 2026; V155).
