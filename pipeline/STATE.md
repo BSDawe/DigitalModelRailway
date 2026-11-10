@@ -1,7 +1,7 @@
 # The Digital Model Railway — project state
 
 Read this first. It is meant to be enough to start a short, single-task chat without replaying the project's history.
-Last updated 9 November 2026 (Version 146: CN page 1116, P.E.I., Pictou, Newcastle - Loggieville, Table 23 N.B. part, Borden - Cape Tormentine train ferry; Version 145: CN page 1115, N.S. and N.B. branches, Cabot Strait and Yarmouth - Boston steamers; Version 144: CN Table 4 Halifax - Truro - Moncton - Saint John; Version 143: the Maritimes begin: the Temiscouata to Edmundston and Connors, CN Tables 1, 1a and 2 in N.B. and N.S., the Maritime track bank; 142: the Chicago, Duluth & Georgian Bay steamers North American and South American; 141: C.S.L. boats named; 140: full rebuild; 135-139: Niagara, the Muskoka, Pointe au Baril and C.S.L. boats, motor trains, the Newfoundland Railway; Version 62 moved the project to git). For a new chat, read HANDOFF.md first (short), then the sections of this file it points to.
+Last updated 9 November 2026 (Version 147: the queued fixes - steamer labels, broken estimated links, North Sydney, Canso train ferry and Mulgrave switchback, ESL, Campbellton, CN Edmundston; Version 146: CN page 1116, P.E.I., Pictou, Newcastle - Loggieville, Table 23 N.B. part, Borden - Cape Tormentine train ferry; Version 145: CN page 1115, N.S. and N.B. branches, Cabot Strait and Yarmouth - Boston steamers; Version 144: CN Table 4 Halifax - Truro - Moncton - Saint John; Version 143: the Maritimes begin: the Temiscouata to Edmundston and Connors, CN Tables 1, 1a and 2 in N.B. and N.S., the Maritime track bank; 142: the Chicago, Duluth & Georgian Bay steamers North American and South American; 141: C.S.L. boats named; 140: full rebuild; 135-139: Niagara, the Muskoka, Pointe au Baril and C.S.L. boats, motor trains, the Newfoundland Railway; Version 62 moved the project to git). For a new chat, read HANDOFF.md first (short), then the sections of this file it points to.
 
 ## What this is
 
@@ -2444,6 +2444,23 @@ Stations of different railways within 250 m (70 pairs; script: same check over v
   the zone the timetable was printed in (no "shown in Pacific time ..."). FIX the same evening: ZOFF declared with var (hm runs above its line).
 - NS&T / CN steamers page (condensed tables) saved: dmr-sources og1948_cnq/nst_cn_steamers_condensed.png. Questions out to Brendan (track KMZ, Port
   Dalhousie cars, Toronto - Port Dalhousie boat, Cobourg - Genesee points, colours).
+
+## Version 147 (9 November 2026): the queued fixes (Brendan)
+- Steamers: the NFR Cabot Strait steamer has no number or vessel (no label until clicked); Eastern Steamship Lines: S.S. Yarmouth (num / vessel 'Yarmouth'), Boston
+  at Central Wharf (-71.0497, 42.3593, approximate), notes cite the ESL page's EDT times (the same instants as CN's Eastern standard ones; times unchanged).
+- Broken (dashed) estimated links: a track-bank or Brendan-folder feature with "est": true is drawn as a straight estimate (on_lines draws it as owner 'est';
+  ab_lines turns that stretch into an est segment). Marked: Saint John, Yarmouth, NFR Port-aux-Basques, NFR Argentia, NTR St. Isidore gap, Mirabel - St. Raymond
+  tie, Great Western through Chatham, MC Detroit River tunnel. Solid: ties under ~0.5 km and the links Brendan asked for.
+- North Sydney (Brendan's map, staged/maritimes/north_sydney_route_brendan.png): tools/mar_import_cgr.py splits fid 31 (old line round Little Bras d'Or, pre1948)
+  and fid 30 (old North Sydney branch by old Sydney Mines, pre1948; the ferry-terminal spur stays ok). Importer re-run on the GeoPackage. Halifax - Sydney now
+  291.5 mi traced (288.3 printed).
+- Mulgrave - Point Tupper: train ferry in ferries.geojson (own water; removed from links_estimated). on_cn_t005: Mulgrave and Point Tupper rows ar / lv with a
+  third of the printed interval held at each slip; new row "Mulgrave switchback" (185.5, tail end of Brendan's trace 98, ~3 min from Mulgrave) so the trains run
+  out to the tail and back into Mulgrave.
+- Campbellton: Brendan's point (-66.678886, 48.004637) everywhere (MAR_PLACES, on_cn_t001, t001a, t001s); the stray loop onto the International is gone.
+  CN Edmundston: Brendan's point (-68.335511, 47.36165) for on_cn_t023 (the Temiscouata keeps its own).
+- Checks: check_gtfs 1 known problem; 543 lines, 4009 trips, 6297 stops. Changed vs V146: the lines with new broken stretches (onmc006, onnfr001, onnfr003,
+  oncn004, oncn009, oncn023, oncn070, oncn090w) and oncn001, oncn001a, oncn001s, oncn005, oncn013, esl.
 
 ## Version 146 (9 November 2026): CN page 1116 (Table 23 N.B. part, Newcastle - Loggieville, Pictou, P.E.I.), Borden - Cape Tormentine train ferry
 - on_cn_t023 now runs Moncton - Pacific Junction - McGivney - Edmundston - Quebec (Table 23's N.B. part added; Nos. 51 / 52 taken out of on_cn_t001s). No. 51 Mon /

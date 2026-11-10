@@ -418,7 +418,9 @@ def build(specs, log=print):
                     if not o: k += 1; continue
                     j = k
                     while j + 1 < len(p['owns']) and p['owns'][j + 1] == o: j += 1
-                    if raw[j + 1] - raw[k] > 150: other.append(dict(owner=o, a=round(a0 + raw[k] * f, 1), b=round(a0 + raw[j + 1] * f, 1)))
+                    if raw[j + 1] - raw[k] > 150:
+                        if o == 'est': segs.append(dict(owner=own, a=round(a0 + raw[k] * f, 1), b=round(a0 + raw[j + 1] * f, 1), est=1))   # an estimated link in the track bank: drawn broken (Brendan, 9 Nov 2026)
+                        else: other.append(dict(owner=o, a=round(a0 + raw[k] * f, 1), b=round(a0 + raw[j + 1] * f, 1)))
                     k = j + 1
         def chain(d):
             for a0, a1, d0, d1 in scale.values():

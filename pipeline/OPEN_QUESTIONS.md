@@ -1,7 +1,7 @@
 # Open questions for Brendan
 
 A running tally. Claude adds new questions as they come up and moves answered ones to "Answered" with the answer and date. Each item says what the build does in the meantime.
-Last updated 9 November 2026 (Version 146).
+Last updated 9 November 2026 (Version 147).
 
 ## Timetable readings (CN, pages 1113 - 1116)
 - [ ] No. 20, Folly Lake f3.35 - Londonderry 3.41 a.m. (7.6 mi in 6 min). Was it f3.25? Built as printed. (V144)
@@ -27,7 +27,7 @@ Last updated 9 November 2026 (Version 146).
 
 ## Points and track
 - [ ] Approximate station points to confirm or replace: Halifax, Newcastle, Bathurst, Oxford, the Mulgrave / Point Tupper ferry slips. (V145)
-- [ ] Edmundston station point: you marked it "I think". (V143) ANSWERED for CN (Brendan, 9 Nov 2026): CN's Edmundston station was a different station, on the main line. Fix queued below.
+- [ ] Edmundston station point (the Témiscouata's): you marked it "I think". (V143) CN's own station: done (V147).
 - [ ] Page 1116 approximate points: Charlottetown and Summerside (the town points moved onto the track), Fredericton (the end of the bridge track). (V146)
 - [ ] Is Dartmouth fid 40 the Narrows bridge line? For now, the part past fid 41 is pre-1948. (V145)
 - [ ] Track bank pieces still marked "check": Wikipedia fids 8, 14, 17, 23. (V143) Now in use: fid 26 Harmony Jct. - Elmira (9.9 mi, as Table 31a prints) and fid 20, the Cape Traverse branch from Emerald Jct. through Kinkora and Albany to the Borden branch. Was the stub on to Cape Traverse still there? (V146)
@@ -42,20 +42,12 @@ Last updated 9 November 2026 (Version 146).
 - [ ] Maritime Coal, Railway & Power: timetable filed (Official Guide, April 1948). Needs a trace Maccan - River Hebert - Joggins Mines. (9 Nov)
 - [ ] Sydney & Louisburg: timetable and track. (8 Nov)
 
-## Fixes queued (Brendan, 9 Nov 2026: flagged, don't fix yet)
-- [ ] Unnamed ships show a "Steamer" label. The rule is no visible label until clicked. Cause: the new NFR and ESL sailings in lo_build.py carry num='Steamer'. Older unnamed sailings show how it was done.
-- [ ] Straight links over gaps must be drawn dashed, except trivially short ones or ones Brendan asked for. Cause: traces/maritimes/links_estimated.geojson is read into on_lines._links() as ordinary track, so the page gets no est flag and draws it solid. Affected: Saint John (4.5 km), Yarmouth, NFR Port-aux-Basques. The Canso car-ferry link (~1.2 km) is probably "trivially short". Also check the other Quebec-build straight estimates.
-
-- [ ] North Sydney is misrouted (Brendan, 9 Nov 2026). The main should run from Boularderie across the Bras d'Or at the bridge, east toward Sydney Mines, loop round, then south through North Sydney to Leitches Creek and North West Arm, plus a spur to the ferry landing. His map is staged/maritimes/north_sydney_route_brendan.png. Check cn_osm_sydney.geojson against it: which OSM ways the trains took, and whether the Sydney Mines loop is on file.
-
-- [ ] Mulgrave - Point Tupper is a TRAIN FERRY (Brendan, 9 Nov 2026), to be drawn like the Windsor - Detroit CN ferry (Version 112): the link becomes own 'water' (dotted water line, no track, no boat), the train itself crosses, and it holds at each slip for loading and unloading. Now: the 1.2 km link in links_estimated.geojson is own cn, drawn as track, with no slip holds. This replaces the "trivially short" call in the dashed-links item above.
-- [ ] Mulgrave switchback (Brendan, 9 Nov 2026): on the Mulgrave side, trains run to the end of the switchback tail just before town, then reverse into Mulgrave, so the map shows the switchback. Check Brendan's Mulgrave traces (brendan.geojson, traces 65 and 107) for the tail. The path-finder will need a forced via point at the tail end, as with the Windsor station reversal.
-
-- [ ] Campbellton stray track (Brendan's screenshot, 9 Nov 2026, No. 223). FOUND: the Campbellton station point (CGN, -66.6835, 47.9993) sits south of the Intercolonial, next to the end of the International Railway (fid 9, from St. Leonard). Trains that start or end at Campbellton (oncn013 Dalhousie, oncn001s from Moncton, oncn001a Gaspe) leave the point on the International's track and curve ~800 m round onto the main; the through trains (oncn001) are unaffected. Fix: put Campbellton on the Intercolonial at the 1948 station. Brendan's estimate (9 Nov 2026): 48.004637292532756, -66.67888636638031 (on the main, ~15 m from the traced line). Use it for every Campbellton file (MAR_PLACES, on_cn_t001 / t001s / t001a, t013). Also check how fid 9 meets fid 43, so the International joins the main where it really did.
-
-- [ ] Eastern Steamship Lines from the Official Guide (Brendan, 9 Nov 2026; staged/maritimes/esl_official_guide.png). S.S. YARMOUTH, June 2 - Sept. 26. Boston (Central Wharf) 4.30 p.m. EDT Mon, Wed, Fri, to Yarmouth (Evangeline Wharf) 7.30 a.m. AST. Yarmouth 6.30 p.m. AST Sun, Tue, Thu, to Boston 8.30 a.m. EDT. The TIMES ARE ALREADY RIGHT: CN Table 9 printed Boston in Eastern standard time (3.30 p.m., 7.30 a.m.), the same instants as the guide's EDT, and the map's Pacific standard clock gives 12.30 p.m. and 4.30 a.m. either way. Fix: move Boston to CENTRAL WHARF (Brendan, 9 Nov 2026: yes), name the boat "Yarmouth" (so no "Steamer" label), call Yarmouth "Evangeline Wharf" in the notes, and have the notes cite the guide's EDT times next to CN's.
-
-- [ ] CN Edmundston (Brendan, 9 Nov 2026): CN's station was a separate station on its main line (the National Transcontinental). on_cn_t023 should stop there, not at the Témiscouata / CP point (now a 0.7 km turn-in). WAITING: a point from Brendan, or estimate one on the NTR in town.
+## Fixes done in Version 147 (9 Nov 2026)
+- Unnamed ships carry no label (NFR Cabot Strait steamer); the Yarmouth - Boston boat is labelled with its name, S.S. Yarmouth, and sails from Central Wharf (approximate point).
+- Estimated straight links are drawn broken: Saint John, Yarmouth, NFR Port-aux-Basques and Argentia, NTR St. Isidore gap, Mirabel - St. Raymond tie (St. Jerome), Great Western through Chatham (Ont.), Michigan Central Detroit River tunnel. Left solid: trivially short ties (Nelson 0.2 km, Lanoraie 0.5 km, others under 0.3 km) and the links Brendan asked for. A link is marked with "est": true in its geojson.
+- North Sydney: the old Intercolonial pieces (round Little Bras d'Or, and by old Sydney Mines) are pre1948 in the importer; the trains take the OSM Sydney Subdivision by Bras d'Or, the loop, Sydney Mines and North Sydney (in and out of the ferry spur), then Leitches Creek.
+- Mulgrave - Point Tupper is a train ferry (ferries.geojson, own water) with holds at both slips (a third of the printed interval each, estimated); the trains run out to the end of the Mulgrave switchback tail (row "Mulgrave switchback", ~3 min) and back into Mulgrave.
+- Campbellton at Brendan's point on the main line (all Campbellton files). CN Edmundston at Brendan's point (47 21 41.94 N, 68 20 07.84 W), on_cn_t023.
 
 ## Answered
 - Through trains: a train runs through as one trip; within one file, use the six-day / seventh-day split (8 Nov). Chaining across files waits until all the CN Maritime files are in, then again for CP. It joins automatically under an hour; named trains join only when the names agree (8 Nov).

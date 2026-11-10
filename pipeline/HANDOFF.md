@@ -4,13 +4,14 @@ Read this first, then STATE.md: "Starting a fresh chat", "Build", "Conventions B
 version sections at the end of STATE.md (Versions 130-142) hold the details of recent work. Everything else in STATE.md is reference: search it, don't read it through.
 
 ## Where things stand
-- Version 146 is published (https://bsdawe.github.io/DigitalModelRailway/): 543 lines, 4009 trips, 6296 stops, 52 agencies. The Maritimes have begun (Versions 143 - 146 in STATE.md).
+- Version 147 is published (https://bsdawe.github.io/DigitalModelRailway/): 543 lines, 4009 trips, 6297 stops, 52 agencies. The Maritimes have begun (Versions 143 - 147 in STATE.md).
 - check_gtfs reports one problem, which is known and accepted: CP-14-SKJCP13 at Minneapolis. The 1947 Soo Line arrival (6.30 a.m.) is after C&NW 404 leaves (6.25).
 - A leftover branch, `wip-cdgb`, is on GitHub (the proxy refused to delete it). It is merged; Brendan can delete it.
 
 ## Working with Brendan
 - Unnamed ships carry no visible label on the map until clicked; never a stand-in such as "Steamer" (Brendan, 9 Nov 2026).
-- A straight link that bridges a gap in the track is drawn DASHED, unless it is trivially short or Brendan asked for it; traces stay solid (Brendan, 9 Nov 2026).
+- A straight link that bridges a gap in the track is drawn DASHED, unless it is trivially short or Brendan asked for it; traces stay solid (Brendan, 9 Nov 2026). Give such a link "est": true in its geojson properties.
+- When Brendan says "don't fix yet", queue it in OPEN_QUESTIONS.md, and ASK whether to include the queue before the next rebuild.
 - OPEN_QUESTIONS.md is the running tally of questions for him. Add each new question there, and when he answers, move it to "Answered" with the date. Mirror it to the project with STATE and HANDOFF.
 - Ask before building when something is unclear. Don't build ahead of him on items marked "waiting" or "do not build ahead".
 - He dislikes slow work: batch changes into one rebuild, and run only the steps a change touches.

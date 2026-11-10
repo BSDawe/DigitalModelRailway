@@ -62,6 +62,16 @@ for fid, f in F.items():
     if fid == 40:   # Dartmouth Branch: the Dartmouth end (to the 1896 line, which the Windsor Jct. - Dartmouth trains use, Table 11) stays; the stretch on to the Narrows is the 1885 bridge line, gone after the bridge fell (1890s)
         j = F[41]['ls'].interpolate(0); d = ls.project(j); REPORT.append(f'fid 40 split {d:.0f} m along at the 1896 line (gap {ls.distance(j):.0f} m)')
         pieces = [(substring(ls, 0, d), nm + ' (Dartmouth)', status, why), (substring(ls, d, ls.length), nm + ' (to the Narrows bridge)', 'pre1948', 'the 1885 line across the Narrows to Richmond; the bridge was lost in the 1890s and the branch rebuilt round Bedford Basin in 1896 (fid 41)')]
+    if fid == 31:   # Sydney Extension: the old Intercolonial round Little Bras d'Or between the two ends of the OSM Sydney Subdivision (Brendan, 9 Nov 2026: the main was
+                    # rerouted after the Intercolonial, by Bras d'Or, Sydney Mines and North Sydney; his map staged/maritimes/north_sydney_route_brendan.png) is pre-1948
+        a = ls.project(Point(T.transform(-60.37006, 46.20817))); b = ls.project(Point(T.transform(-60.30894, 46.16823))); a, b = min(a, b), max(a, b)
+        REPORT.append(f'fid 31 old line by Little Bras d\'Or {a / 1000:.1f} - {b / 1000:.1f} km along: pre1948')
+        pieces = [(substring(ls, 0, a), nm + ' (west)', status, why), (substring(ls, a, b), nm + " (old line by Little Bras d'Or)", 'pre1948', 'the Intercolonial line by Little Bras d\'Or, replaced by the line by Bras d\'Or and Sydney Mines (OSM Sydney Subdivision; Brendan, 9 Nov 2026)'),
+                  (substring(ls, b, ls.length), nm + ' (Leitches Creek - Sydney)', status, why)]
+    if fid == 30:   # North Sydney Branch: the old line by Sydney Mines is pre-1948; its end at the ferry terminal (the spur the 1948 trains use) stays
+        a = ls.project(Point(T.transform(-60.25279, 46.21524))); REPORT.append(f'fid 30 split {a:.0f} m along where the OSM Sydney Subdivision meets it')
+        pieces = [(substring(ls, 0, a), nm + ' (old line by Sydney Mines)', 'pre1948', 'the Intercolonial branch, replaced by the line by Bras d\'Or and Sydney Mines (Brendan, 9 Nov 2026)'),
+                  (substring(ls, a, ls.length), nm + ' (ferry terminal spur)', status, why)]
     if fid == 6:
         bd = Point(T.transform(-68.7317, 47.372)); d = ls.project(bd); REPORT.append(f'fid 6 NTR cut {d / 1000:.1f} km along at the N.B. boundary point ({ls.distance(bd):.0f} m off)')
         pieces = [(substring(ls, 0, d), nm + ' (west of the N.B. boundary)', 'quebec_overlap', 'the Quebec collection already carries the NTR to the N.B. boundary'), (substring(ls, d, ls.length), nm, status, why)]

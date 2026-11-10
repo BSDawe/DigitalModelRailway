@@ -120,7 +120,7 @@ def _links():
         for fn in sorted(__import__('glob').glob(os.path.join(HERE, 'traces', 'ontario', 'brendan', '*.geojson'))): out += json.load(open(fn))['features']
         import mar_tracks
         for p in mar_tracks.features(status='ok'):
-            out.append(dict(properties=dict(own=p['own'], name=p['name'], cost=p.get('cost', 1.0)), geometry=dict(type='LineString', coordinates=[list(c) for c in p['coords']])))
+            out.append(dict(properties=dict(own=p['own'], name=p['name'], cost=p.get('cost', 1.0), est=p.get('est')), geometry=dict(type='LineString', coordinates=[list(c) for c in p['coords']])))
         _LINKS = out
     return _LINKS
 BOXES = {'onr': (-82.6, -78.4, 43.5, 51.5), 'acr': (-85.2, -82.8, 46.3, 49.9), 'nyc': (-74.4, -73.4, 44.9, 45.6), 'dh': (-74.0, -73.2, 44.95, 45.6),
@@ -182,7 +182,7 @@ def _graph(me):
             if me == 'qrl' and ow != 'qrl': continue                     # the M&SC's own tracks (Victoria Bridge, St. Lambert): not mixed with the steam railways' (Brendan, 5 Nov 2026)
             if box and not any(box[0] <= p[0] <= box[1] and box[2] <= p[1] <= box[3] for p in c): continue
             mine = ow == me or (me == 'cn' and ow == 'qrl') or (me == 'cpcn' and ow in ('cp', 'cn')) or (me in ('nyco', 'mc') and ow == 'nyc') or (me in ('thb', 'cpthb') and ow in ('cn', 'cp', 'thb', 'nyc'))
-            add(ab_lines._xy(c), f['properties'].get('cost', 1.0) if mine else 2.5, 'x' if f['properties'].get('net') else 't', None if ow == me else ow)   # 'net' ('x'): tied only at its loose ends, and nothing ties onto it along its length (the Windsor ferry lead beside the main line)   # 'cost': a link the trains must take (cheaper than the track beside it)
+            add(ab_lines._xy(c), f['properties'].get('cost', 1.0) if mine else 2.5, 'x' if f['properties'].get('net') else 't', 'est' if f['properties'].get('est') else None if ow == me else ow)   # 'est': an estimated straight link, drawn broken like a straight estimate (Brendan, 9 Nov 2026: except trivially short ones or ones he asked for)   # 'net' ('x'): tied only at its loose ends, and nothing ties onto it along its length (the Windsor ferry lead beside the main line)   # 'cost': a link the trains must take (cheaper than the track beside it)
     return lambda: _make_graph(feed, tie_end=150, tie_loose=60)
 for _r, _o in OWN.items(): ab_lines.EXT_GRAPH['sk:' + _r] = _graph(_o)
 ab_lines.EXT_GRAPH['sk:onnyco'] = _graph('nyco')

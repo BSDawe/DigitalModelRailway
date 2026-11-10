@@ -32,6 +32,30 @@
      ]
     ]
    }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "own": "water",
+    "name": "Mulgrave - Point Tupper car ferry (Strait of Canso)",
+    "constituent": "Canadian National car ferry (Strait of Canso)",
+    "branch": "",
+    "status": "ok",
+    "note": "Train ferry (Brendan, 9 Nov 2026: drawn like Windsor - Detroit): between the ends of Brendan's Mulgrave and Point Tupper pier traces (66, 93). Course APPROXIMATE (straight)."
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -61.38743,
+      45.60547
+     ],
+     [
+      -61.37241,
+      45.60727
+     ]
+    ]
+   }
   }
  ]
 }

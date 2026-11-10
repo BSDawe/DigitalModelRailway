@@ -346,7 +346,8 @@ ns_route, ns_st = water_route([NSY, PAQ], 150)
 SVC.update({'SaTuTh': 'W_0101010', 'WeFr': 'W_0010100', 'Mo': 'W_1000000'}); DAYS.update({'SaTuTh': 'Saturday, Tuesday and Thursday', 'WeFr': 'Wednesday and Friday', 'Mo': 'Monday'})
 NN = (' Newfoundland Railway steamer across the Cabot Strait, connecting with the Canadian National trains at North Sydney and the Newfoundland Railway at Port aux Basques.'
       ' Printed in Atlantic time at North Sydney and Newfoundland time (half an hour later) at Port aux Basques.')
-def _ns(d, dy, a, b, txt): return dict(id=f'NFSS-{"DU"[d]}{dy}', num='Steamer', name='Newfoundland Railway steamer', svc=SVC[dy], dir=d, vessel='Steamer',
+def _ns(d, dy, a, b, txt): return dict(id=f'NFSS-{"DU"[d]}{dy}', num='', name='Newfoundland Railway steamer', svc=SVC[dy], dir=d, vessel='',   # unnamed: no label on the map (Brendan, 9 Nov 2026)
+                                      
                                        stops=[[0 if d == 0 else 1, a, a, 1], [1 if d == 0 else 0, b, b, 1]], note=txt + NN)
 NS = [_ns(0, 'SaTuTh', hm('8.30p') - 4 * 3600, 86400 + hm('6.00a') - 4 * 3600 - 1800, 'North Sydney Sat., Tues. and Thurs. 8.30 p.m. to Port aux Basques 6.00 a.m. (Newfoundland time) Sun., Wed. and Fri.'),
       _ns(1, 'WeFr', hm('9.00p') - 4 * 3600 - 1800, 86400 + hm('5.30a') - 4 * 3600, 'Port aux Basques Wed. and Fri. 9.00 p.m. (Newfoundland time) to North Sydney 5.30 a.m. Thurs. and Sat.'),
@@ -354,19 +355,20 @@ NS = [_ns(0, 'SaTuTh', hm('8.30p') - 4 * 3600, 86400 + hm('6.00a') - 4 * 3600 - 
 mkline('nfss', 'North Sydney – Port aux Basques (Newfoundland Railway steamer)', ns_route, ns_st, NS, ['to Port aux Basques', 'to North Sydney'],
        'Newfoundland Railway steamer, North Sydney - Port aux Basques: CN page 1115, Official Guide, April 25, 1948 (Brendan); Atlantic / Newfoundland time as printed', 'nfr')
 
-# Yarmouth - Boston, Eastern Steamship Lines (CN Table 9, Official Guide, April 25, 1948, page 1115; Brendan, 8 Nov 2026: India Wharf, Boston, and his Yarmouth point).
+# Yarmouth - Boston, Eastern Steamship Lines (CN Table 9, Official Guide, April 25, 1948, page 1115; Brendan, 8 Nov 2026: his Yarmouth point). The Official Guide's ESL page
+# (Brendan, 9 Nov 2026): S.S. Yarmouth; Boston (Central Wharf) 4.30 p.m. EDT, due 8.30 a.m. EDT = CN's 3.30 / 7.30 Eastern standard; Yarmouth (Evangeline Wharf). Central Wharf (Brendan: yes).
 # June 3 - Sept. 26: Yarmouth Tues., Thurs., Sun. 6.30 p.m. Atlantic time, Boston 7.30 a.m. Eastern time (taken as standard, Atlantic - 1 h); June 2 - Sept. 24: Boston
 # Mon., Wed., Fri. 3.30 p.m. Eastern, Yarmouth 7.30 a.m. Atlantic. The May 28 / 31 sailings are outside the modelled week.
-YAR = port('Yarmouth', -66.12249900355755, 43.83744377078616, "Yarmouth, N.S. (Brendan's point), with the Canadian National trains (Lovitt Street wharf on boat days).")
-BOS = port('Boston (India Wharf)', -71.04892582977378, 42.358478309966216, "India Wharf, Boston (Brendan's point, 8 Nov 2026), Eastern Steamship Lines.")
+YAR = port('Yarmouth', -66.12249900355755, 43.83744377078616, "Yarmouth, N.S. (Brendan's point; Evangeline Wharf), with the Canadian National trains.")
+BOS = port('Boston (Central Wharf)', -71.0497, 42.3593, "Central Wharf, Boston (Official Guide; Brendan, 9 Nov 2026; the point APPROXIMATE, the next wharf north of India Wharf), Eastern Steamship Lines.")
 YAR['gid'] = _gid_of('oncn009', 'Yarmouth') or YAR['gid']
 es_route, es_st = water_route([YAR, BOS], 150)
 SVC.update({'TuThSu': 'W_0101001', 'MoWeFr': 'W_1010100'}); DAYS.update({'TuThSu': 'Tuesday, Thursday and Sunday', 'MoWeFr': 'Monday, Wednesday and Friday'})
-EN = ' Eastern Steamship Lines, Yarmouth - Boston (summer 1948). Printed in Atlantic time at Yarmouth, Eastern time at Boston.'
-ES = [dict(id='ESL-DTuThSu', num='Steamer', name='Eastern Steamship Lines', svc=SVC['TuThSu'], dir=0, vessel='Steamer', stops=[[0, hm('6.30p') - 4 * 3600, hm('6.30p') - 4 * 3600, 1], [1, 86400 + hm('7.30a') - 3 * 3600, 86400 + hm('7.30a') - 3 * 3600, 1]],
-           note='Yarmouth Tues., Thurs. and Sun. 6.30 p.m. (June 3 - Sept. 26) to Boston (India Wharf) 7.30 a.m.' + EN),
-      dict(id='ESL-UMoWeFr', num='Steamer', name='Eastern Steamship Lines', svc=SVC['MoWeFr'], dir=1, vessel='Steamer', stops=[[1, hm('3.30p') - 3 * 3600, hm('3.30p') - 3 * 3600, 1], [0, 86400 + hm('7.30a') - 4 * 3600, 86400 + hm('7.30a') - 4 * 3600, 1]],
-           note='Boston (India Wharf) Mon., Wed. and Fri. 3.30 p.m. (June 2 - Sept. 24) to Yarmouth 7.30 a.m.' + EN)]
+EN = ' S.S. Yarmouth, Eastern Steamship Lines, direct overnight service June 2 - Sept. 26, 1948. Times as CN Table 9 prints them (Atlantic at Yarmouth, Eastern standard at Boston); the Eastern Steamship Lines page gives Boston in daylight time: leave 4.30 p.m., due 8.30 a.m. EDT.'
+ES = [dict(id='ESL-DTuThSu', num='Yarmouth', name='Eastern Steamship Lines', svc=SVC['TuThSu'], dir=0, vessel='Yarmouth', stops=[[0, hm('6.30p') - 4 * 3600, hm('6.30p') - 4 * 3600, 1], [1, 86400 + hm('7.30a') - 3 * 3600, 86400 + hm('7.30a') - 3 * 3600, 1]],
+           note='Yarmouth Tues., Thurs. and Sun. 6.30 p.m. (June 3 - Sept. 26) to Boston (Central Wharf) 7.30 a.m.' + EN),
+      dict(id='ESL-UMoWeFr', num='Yarmouth', name='Eastern Steamship Lines', svc=SVC['MoWeFr'], dir=1, vessel='Yarmouth', stops=[[1, hm('3.30p') - 3 * 3600, hm('3.30p') - 3 * 3600, 1], [0, 86400 + hm('7.30a') - 4 * 3600, 86400 + hm('7.30a') - 4 * 3600, 1]],
+           note='Boston (Central Wharf) Mon., Wed. and Fri. 3.30 p.m. (June 2 - Sept. 24) to Yarmouth 7.30 a.m.' + EN)]
 mkline('esl', 'Yarmouth – Boston (Eastern Steamship Lines)', es_route, es_st, ES, ['to Boston', 'to Yarmouth'],
        'Eastern Steamship Lines, Yarmouth - Boston: CN Table 9, Official Guide, April 25, 1948 (Brendan); Atlantic / Eastern time as printed', 'esl')
 keys = {L['key'] for L in LINES}

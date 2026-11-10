@@ -1,5 +1,6 @@
 # Canadian National, Table 5: Halifax - Truro - New Glasgow - Antigonish - Mulgrave - Point Tupper - Sydney (Official Guide, April 25, 1948, page 1115 (Brendan, 8 Nov 2026)). ATLANTIC time, as printed.
 # Nos. 5 - 10 run Halifax - Truro on Table 4 (page 1114: its stops entered here, so each is one trip). Mulgrave - Point Tupper: the train ferry across the Strait of Canso
+# Mulgrave - Point Tupper is a TRAIN FERRY (Brendan, 9 Nov 2026; like Windsor - Detroit): the printed Mulgrave and Point Tupper times are taken as the train reaching and leaving the slips; it holds a third of the interval at each slip (estimated) and crosses in the middle third. Mulgrave switchback (Brendan): the trains run out to the end of the switchback tail and back into Mulgrave; the tail row and its times are estimated (~, 3 min from Mulgrave).
 # (traces/maritimes/links_estimated.geojson, from Brendan's pier traces). North Sydney (273.2) at the end of the North Sydney track (Brendan: where the steamer leaves).
 # Not entered: the Saint John / Moncton connections (Saint John, Moncton rows: Nos. 14 / 60 and 12 / 20 etc.) and the Pictou connections (Pictou rows: by Stellarton or
 # New Glasgow, Table 6). Signs: * daily; dagger ex Sun; double dagger ex Sat; pilcrow ex Mon; e Sunday 6.10 a.m. (No. 8 at Truro: a Saturday-night trip of its own);
@@ -44,8 +45,9 @@ mile,station,principal,prov,tz,No7,No9,No5,No6,No8,No8s,No10
 168.2,Tracadie,0,NS,A,f2.00a,11.55p,f1.06p,f12.23p,,,
 170.3,Monastery,0,NS,A,f2.10a,12.02a,1.15p,12.18p,f12.50a,f12.50a,f4.05a
 176.9,Harbor au Bouche,0,NS,A,f2.27a,f12.20a,1.30p,12.02p,f12.38a,f12.38a,f3.50a
-186.4,Mulgrave,1,NS,A,2.55a,12.50a,2.00p,11.30a,12.05a,12.05a,3.15a
-186.8,Point Tupper,1,NS,A,4.20a,2.00a,3.00p,10.30a,11.00p,11.00p,1.35a
+185.5,Mulgrave switchback,0,NS,A,~2.52a,~12.47a,~1.57p,~11.33a,~12.08a,~12.08a,~3.18a
+186.4,Mulgrave,1,NS,A,ar 2.55a / lv 3.23a,ar 12.50a / lv 1.13a,ar 2.00p / lv 2.20p,ar 11.10a / lv 11.30a,ar 11.43p / lv 12.05a,ar 11.43p / lv 12.05a,ar 2.41a / lv 3.15a
+186.8,Point Tupper,1,NS,A,ar 3.51a / lv 4.20a,ar 1.36a / lv 2.00a,ar 2.40p / lv 3.00p,ar 10.30a / lv 10.50a,ar 11.00p / lv 11.21p,ar 11.00p / lv 11.21p,ar 1.35a / lv 2.08a
 193.7,MacIntyre Lake,0,NS,A,f4.37a,f2.17a,3.18p,10.10a,10.40p,10.40p,f1.15a
 200.3,West Bay Road,0,NS,A,f4.52a,f2.32a,3.32p,9.55a,f10.25p,f10.25p,f1.00a
 207.6,River Denys,0,NS,A,f5.10a,f2.46a,3.45p,9.42a,f10.10p,f10.10p,f12.43a
