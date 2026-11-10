@@ -1,0 +1,13 @@
+# Canadian National, Table 32: Mount Stewart Junction - Cardigan - Montague - Georgetown (Official Guide, April 25, 1948, page 1117 (Brendan, 9 Nov 2026)). ATLANTIC time.
+# The trains run in to Montague and back out to Montague Junction (printed twice). M59: bullet, effective May 25 runs Tue. and Sat. M57: printed a (Mon., Wed., Fri.) under a double-dagger heading; entered Mon., Wed., Fri. Signs (page legend): dagger daily except Sunday; a Mon., Wed., Fri.; b Tue., Thu., Sat.; e Tue. and Fri.; h Wed. only; q Thu. only; r stops only to leave passengers (entered as flag); u Mon. and Sat.; v Mon., Thu. and Sat.; y daily except Sunday and Wednesday; f flag; M mixed; square motor train; diamond freight only (not entered).
+#train col=M57 num=57 dir=down days="Mon,Wed,Fri" kind=mixed note="Mixed, Mon., Wed. and Fri.: Mount Stewart Junction 4.00 p.m. to Georgetown 6.00 p.m., by Montague."
+#train col=M59 num=59 dir=down days="Tue,Sat" kind=mixed note="Mixed, Tue. and Sat.: Mount Stewart Junction 3.45 p.m. to Georgetown 5.45 p.m., by Montague."
+#train col=M58 num=58 dir=up days="ex Sun" kind=mixed note="Mixed, daily except Sunday: Georgetown 7.00 a.m. to Mount Stewart Junction 9.10 a.m., by Montague."
+mile,station,principal,prov,tz,M57,M59,M58
+0.0,Mount Stewart Junction,1,PE,A,lv 4.00p,lv 3.45p,ar 9.10a
+7.0,Peake's,0,PE,A,4.20p,4.05p,8.36a
+18.1,Cardigan,0,PE,A,4.58p,4.43p,8.02a
+19.2,Montague Junction,0,PE,A,5.01p,4.46p,7.55a
+25.6,Montague,1,PE,A,5.25p,5.10p,7.35a
+31.9,Montague Junction,0,PE,A,5.41p,5.26p,7.15a
+36.7,Georgetown,1,PE,A,ar 6.00p,ar 5.45p,lv 7.00a

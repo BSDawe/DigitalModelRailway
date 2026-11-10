@@ -1,0 +1,8 @@
+# Canadian National, Table 47: Richibucto - Rexton - Kent Junction (Official Guide, April 25, 1948, page 1117 (Brendan, 9 Nov 2026)). ATLANTIC time.
+# No track on file (the Kent Northern): a straight estimate (drawn broken) until a trace comes. Signs (page legend): dagger daily except Sunday; a Mon., Wed., Fri.; b Tue., Thu., Sat.; e Tue. and Fri.; h Wed. only; q Thu. only; r stops only to leave passengers (entered as flag); u Mon. and Sat.; v Mon., Thu. and Sat.; y daily except Sunday and Wednesday; f flag; M mixed; square motor train; diamond freight only (not entered).
+#train col=M331 num=331 dir=down days="Wed" kind=mixed note="Mixed, Wednesday: Richibucto 8.30 a.m. to Kent Junction 11.00 a.m."
+#train col=M332 num=332 dir=up days="Wed" kind=mixed note="Mixed, Wednesday: Kent Junction 12.35 p.m. to Richibucto 2.35 p.m."
+mile,station,principal,prov,tz,M331,M332
+0.0,Richibucto,1,NB,A,lv 8.30a,ar 2.35p
+2.1,Rexton,0,NB,A,8.48a,2.21p
+26.4,Kent Junction,1,NB,A,ar 11.00a,lv 12.35p

@@ -1,0 +1,12 @@
+# Canadian National, Table 37: Bridgewater - New Germany - Caledonia (Official Guide, April 25, 1948, page 1117 (Brendan, 9 Nov 2026)). ATLANTIC time.
+# The Caledonia trains run through Caledonia Junction to New Germany and back (printed: Caledonia Junction 15.4, no stop; New Germany 16.5; Caledonia Junction 17.6). Signs (page legend): dagger daily except Sunday; a Mon., Wed., Fri.; b Tue., Thu., Sat.; e Tue. and Fri.; h Wed. only; q Thu. only; r stops only to leave passengers (entered as flag); u Mon. and Sat.; v Mon., Thu. and Sat.; y daily except Sunday and Wednesday; f flag; M mixed; square motor train; diamond freight only (not entered).
+#train col=M257 num=257 dir=down days="Tue,Thu,Sat" kind=mixed note="Mixed, Tue., Thu. and Sat.: Bridgewater 3.15 p.m., New Germany 4.15, to Caledonia 6.15 p.m."
+#train col=M258 num=258 dir=up days="Tue,Thu,Sat" kind=mixed note="Mixed, Tue., Thu. and Sat.: Caledonia 7.05 a.m., New Germany 8.55, to Bridgewater 9.55 a.m."
+mile,station,principal,prov,tz,M257,M258
+0.0,Bridgewater,1,NS,A,lv 3.15p,ar 9.55a
+1.1,Bridgewater Junction,0,NS,A,3.21p,9.50a
+5.7,Mossman,0,NS,A,f3.35p,f9.35a
+10.9,Pinehurst,0,NS,A,f3.55p,9.17a
+16.5,New Germany,1,NS,A,4.15p,8.55a
+17.6,Caledonia Junction,0,NS,A,4.46p,8.45a
+39.5,Caledonia,1,NS,A,ar 6.15p,lv 7.05a

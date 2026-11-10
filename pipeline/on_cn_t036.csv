@@ -1,0 +1,13 @@
+# Canadian National, Table 36: Campbellton - Kedgwick - St. Leonard - Edmundston (Official Guide, April 25, 1948, page 1117 (Brendan, 9 Nov 2026)). ATLANTIC time.
+# St. Leonard - Edmundston over the National Transcontinental. Signs (page legend): dagger daily except Sunday; a Mon., Wed., Fri.; b Tue., Thu., Sat.; e Tue. and Fri.; h Wed. only; q Thu. only; r stops only to leave passengers (entered as flag); u Mon. and Sat.; v Mon., Thu. and Sat.; y daily except Sunday and Wednesday; f flag; M mixed; square motor train; diamond freight only (not entered).
+#train col=M217 num=217 dir=down days="Mon,Wed,Fri" kind=mixed note="Mixed, Mon., Wed. and Fri.: Campbellton 8.15 a.m. to Edmundston 6.00 p.m."
+#train col=M216 num=216 dir=up days="Tue,Thu,Sat" kind=mixed note="Mixed, Tue., Thu. and Sat.: Edmundston 8.45 a.m. to Campbellton 5.10 p.m."
+mile,station,principal,prov,tz,M217,M216
+0.0,Campbellton,1,NB,A,lv 8.15a,ar 5.10p
+4.7,Tide Head,0,NB,A,8.35a,4.40p
+18.3,Upsalquitch,0,NB,A,9.32a,3.50p
+54.4,Kedgwick,0,NB,A,12.20p,1.35p
+69.8,St. Quentin,0,NB,A,1.30p,12.30p
+111.9,St. Leonard,1,NB,A,ar 4.15p / lv 4.50p,ar 9.40a / lv 9.50a
+127.1,Green River,0,NB,A,f5.31p,f9.09a
+137.1,Edmundston,1,NB,A,ar 6.00p,lv 8.45a

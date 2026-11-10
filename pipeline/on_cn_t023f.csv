@@ -1,7 +1,0 @@
-# Canadian National, Table 23: Fredericton - McGivney (connecting with the Moncton - Quebec trains, on_cn_t023.csv) (Official Guide, April 25, 1948, page 1116 (Brendan, 9 Nov 2026)). ATLANTIC time.
-# Only the end points are printed. Signs (page legend): dagger daily except Sunday; a Mon., Wed., Fri.; b Tue., Thu., Sat.; d Mon., Wed., Thu., Fri.; o Tue. and Sat.; k Sat. only; natural sign Sun., Tue., Thu.; f flag; M mixed; square motor train.
-#train col=No28 num=28 dir=down days="ex Sun" kind=passenger note="Daily except Sunday: Fredericton 6.30 p.m. to McGivney 8.20 p.m., connecting with No. 51 (Mon., Wed., Fri.) for Edmundston and Quebec."
-#train col=No27 num=27 dir=up days="ex Sun" kind=passenger note="Daily except Sunday: McGivney 10.50 a.m. to Fredericton 12.30 p.m., connecting from No. 52 (from Quebec and Edmundston)."
-mile,station,principal,prov,tz,No28,No27
-0.0,Fredericton,1,NB,A,lv 6.30p,ar 12.30p
-35.6,McGivney,1,NB,A,ar 8.20p,lv 10.50a

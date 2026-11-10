@@ -1,0 +1,20 @@
+# Canadian National, Table 34: Fredericton - McGivney - Boiestown - Blackville - Newcastle (Official Guide, April 25, 1948, page 1117 (Brendan, 9 Nov 2026)). ATLANTIC time.
+# Stanley (32.0, freight service only) not entered. Nos. 28 / 27 connect at McGivney with Nos. 51 / 52 (Moncton - Quebec, on_cn_t023.csv). Additional trains (motors, Mon., Wed., Fri.): only the end times printed. Signs (page legend): dagger daily except Sunday; a Mon., Wed., Fri.; b Tue., Thu., Sat.; e Tue. and Fri.; h Wed. only; q Thu. only; r stops only to leave passengers (entered as flag); u Mon. and Sat.; v Mon., Thu. and Sat.; y daily except Sunday and Wednesday; f flag; M mixed; square motor train; diamond freight only (not entered).
+#train col=No28 num=28 dir=down days="ex Sun" kind=passenger note="Daily except Sunday: Fredericton (Union Station) 6.30 p.m., McGivney 8.20 / 8.35 p.m. (connection with No. 51) to Newcastle 11.45 p.m."
+#train col=Mo1 num=Motor dir=down days="Mon,Wed,Fri" kind=motor note="Motor train, Mon., Wed. and Fri.: Fredericton 8.50 a.m. to Newcastle 1.45 p.m. (only the end times printed)."
+#train col=No27 num=27 dir=up days="ex Sun" kind=passenger note="Daily except Sunday: Newcastle 7.40 a.m., McGivney 10.45 / 10.50 a.m. (connection from No. 52) to Fredericton (Union Station) 12.30 p.m."
+#train col=Mo2 num=Motor dir=up days="Mon,Wed,Fri" kind=motor note="Motor train, Mon., Wed. and Fri.: Newcastle 5.00 p.m. to Fredericton 10.25 p.m. (only the end times printed)."
+mile,station,principal,prov,tz,No28,Mo1,No27,Mo2
+0.0,Fredericton,1,NB,A,lv 6.30p,lv 8.50a,ar 12.30p,ar 10.25p
+1.7,South Devon,1,NB,A,6.45p,,12.14p,
+3.8,Marysville,0,NB,A,6.52p,,12.04p,
+8.6,Penniac,0,NB,A,f7.03p,,f11.56a,
+26.2,Cross Creek,0,NB,A,7.46p,,11.11a,
+35.6,McGivney,1,NB,A,ar 8.20p / lv 8.35p,,ar 10.45a / lv 10.50a,
+48.3,Boiestown,0,NB,A,9.04p,,10.12a,
+64.3,Doaktown,0,NB,A,9.40p,,9.36a,
+88.4,Blackville,0,NB,A,10.38p,,8.43a,
+96.2,Renous,0,NB,A,10.58p,,8.23a,
+106.4,Millerton,0,NB,A,11.23p,,7.57a,
+110.7,Derby Junction,1,NB,A,11.32p,,7.48a,
+114.4,Newcastle,1,NB,A,ar 11.45p,ar 1.45p,lv 7.40a,lv 5.00p

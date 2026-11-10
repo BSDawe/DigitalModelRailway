@@ -1,0 +1,16 @@
+# Canadian National, Table 37: Bridgewater - New Germany - Middleton - Bridgetown (Official Guide, April 25, 1948, page 1117 (Brendan, 9 Nov 2026)). ATLANTIC time.
+# Caledonia Junction (15.4, no stops) not entered; the Caledonia trains are on_cn_t037a.csv. Middleton - Bridgetown is over the Dominion Atlantic (CP), not on file yet: a straight estimate (drawn broken). Signs (page legend): dagger daily except Sunday; a Mon., Wed., Fri.; b Tue., Thu., Sat.; e Tue. and Fri.; h Wed. only; q Thu. only; r stops only to leave passengers (entered as flag); u Mon. and Sat.; v Mon., Thu. and Sat.; y daily except Sunday and Wednesday; f flag; M mixed; square motor train; diamond freight only (not entered).
+#train col=M253 num=253 dir=down days="ex Sun" kind=mixed note="Mixed, daily except Sunday: Bridgewater 8.45 a.m. to Middleton 11.45 a.m."
+#train col=M255 num=255 dir=down days="Wed" kind=mixed note="Mixed, Wednesday: Middleton 11.55 a.m. to Bridgetown 12.45 p.m."
+#train col=M254 num=254 dir=up days="Mon,Tue,Thu,Fri,Sat" kind=mixed note="Mixed, daily except Sunday and Wednesday: Middleton 2.05 p.m. to Bridgewater 5.10 p.m."
+#train col=M256 num=256 dir=up days="Wed" kind=mixed note="Mixed, Wednesday: Bridgetown 2.15 p.m. to Bridgewater 6.30 p.m."
+mile,station,principal,prov,tz,M253,M255,M254,M256
+0.0,Bridgewater,1,NS,A,lv 8.45a,,ar 5.10p,ar 6.30p
+1.1,Bridgewater Junction,0,NS,A,8.51a,,5.05p,6.25p
+5.7,Mossman,0,NS,A,f9.02a,,f4.52p,f6.10p
+10.9,Pinehurst,0,NS,A,f9.17a,,4.34p,5.54p
+16.5,New Germany,1,NS,A,9.35a,,4.15p,5.40p
+26.4,Springfield,0,NS,A,10.10a,,3.35p,5.05p
+50.8,Nictaux,0,NS,A,11.32a,,f2.19p,f3.45p
+55.0,Middleton,1,NS,A,ar 11.45a,lv 11.55a,lv 2.05p,3.25p
+69.4,Bridgetown,1,NS,A,,ar 12.45p,,lv 2.15p

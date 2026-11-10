@@ -1,0 +1,15 @@
+# Canadian National, Table 33: Saint John - Westfield Beach - Fredericton - Woodstock - Centreville (Official Guide, April 25, 1948, page 1117 (Brendan, 9 Nov 2026)). ATLANTIC time.
+# No track on file for the Saint John Valley line (nor Saint John - Westfield Beach): the trains run on straight estimates (drawn broken) between the station points until a trace comes. Fredericton: Union Station. Signs (page legend): dagger daily except Sunday; a Mon., Wed., Fri.; b Tue., Thu., Sat.; e Tue. and Fri.; h Wed. only; q Thu. only; r stops only to leave passengers (entered as flag); u Mon. and Sat.; v Mon., Thu. and Sat.; y daily except Sunday and Wednesday; f flag; M mixed; square motor train; diamond freight only (not entered).
+#train col=M245 num=245 dir=down days="Tue,Thu,Sat" kind=mixed note="Mixed, Tue., Thu. and Sat.: Saint John 9.00 a.m. to Fredericton 2.00 p.m."
+#train col=M243 num=243 dir=down days="Mon,Wed,Fri" kind=mixed note="Mixed, Mon., Wed. and Fri.: Fredericton 8.00 a.m. to Centreville 1.30 p.m."
+#train col=M242 num=242 dir=up days="Mon,Wed,Fri" kind=mixed note="Mixed, Mon., Wed. and Fri.: Fredericton 9.20 a.m. to Saint John 2.00 p.m."
+#train col=M244 num=244 dir=up days="Tue,Thu,Sat" kind=mixed note="Mixed, Tue., Thu. and Sat.: Centreville 4.30 a.m. to Fredericton 10.30 a.m."
+mile,station,principal,prov,tz,M245,M243,M242,M244
+0.0,Saint John,1,NB,A,lv 9.00a,,ar 2.00p,
+14.0,Westfield Beach,1,NB,A,9.45a,,1.15p,
+28.5,Oak Point,0,NB,A,f10.30a,,f12.25p,
+51.9,Gagetown,0,NB,A,12.02p,,11.02a,
+71.4,Oromocto,0,NB,A,1.10p,,9.56a,
+83.8,Fredericton,1,NB,A,ar 2.00p,lv 8.00a,lv 9.20a,ar 10.30a
+146.8,Woodstock,1,NB,A,,11.59a,,6.58a
+172.6,Centreville,1,NB,A,,ar 1.30p,,lv 4.30a

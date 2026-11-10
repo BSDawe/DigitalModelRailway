@@ -1,0 +1,17 @@
+# Canadian National, Table 45: New Glasgow - Stellarton - Ferrona - Sunny Brae (Official Guide, April 25, 1948, page 1117 (Brendan, 9 Nov 2026)). ATLANTIC time.
+# Ferrona - Sunny Brae over the Nova Scotia Steel and Coal Co. railway (as on file). Signs (page legend): dagger daily except Sunday; a Mon., Wed., Fri.; b Tue., Thu., Sat.; e Tue. and Fri.; h Wed. only; q Thu. only; r stops only to leave passengers (entered as flag); u Mon. and Sat.; v Mon., Thu. and Sat.; y daily except Sunday and Wednesday; f flag; M mixed; square motor train; diamond freight only (not entered).
+#train col=No335 num=335 dir=down days="Mon,Thu,Sat" kind=motor note="Motor train, Mon., Thu. and Sat.: Stellarton 8.00 a.m. to Sunny Brae 8.55 a.m."
+#train col=M231 num=231 dir=down days="Tue,Fri" kind=mixed note="Mixed, Tue. and Fri.: Stellarton 8.10 a.m. to Sunny Brae 9.15 a.m."
+#train col=No337 num=337 dir=down days="Mon,Sat" kind=motor note="Motor train, Mon. and Sat.: New Glasgow 3.05 p.m. to Sunny Brae 4.00 p.m."
+#train col=No339 num=339 dir=down days="Thu" kind=motor note="Motor train, Thursday: New Glasgow 5.30 p.m. to Sunny Brae 6.30 p.m."
+#train col=No336 num=336 dir=up days="Mon,Thu,Sat" kind=motor note="Motor train, Mon., Thu. and Sat.: Sunny Brae 9.10 a.m. to New Glasgow 10.15 a.m."
+#train col=M232 num=232 dir=up days="Tue,Fri" kind=mixed note="Mixed, Tue. and Fri.: Sunny Brae 9.30 a.m. to Stellarton 10.40 a.m."
+#train col=No338 num=338 dir=up days="Mon,Sat" kind=motor note="Motor train, Mon. and Sat.: Sunny Brae 4.05 p.m. to New Glasgow 5.00 p.m."
+#train col=No340 num=340 dir=up days="Thu" kind=motor note="Motor train, Thursday: Sunny Brae 6.35 p.m. to New Glasgow 7.30 p.m."
+mile,station,principal,prov,tz,No335,M231,No337,No339,No336,M232,No338,No340
+0.0,New Glasgow,1,NS,A,,,lv 3.05p,lv 5.30p,ar 10.15a,,ar 5.00p,ar 7.30p
+2.1,Stellarton,1,NS,A,lv 8.00a,lv 8.10a,3.10p,5.37p,10.05a,ar 10.40a,4.50p,7.20p
+3.7,Ferrona Junction,0,NS,A,8.10a,8.20a,3.20p,5.50p,9.55a,10.30a,4.40p,7.10p
+4.4,Ferrona,0,NS,A,8.13a,8.23a,3.23p,5.53p,9.50a,10.25a,4.38p,7.08p
+10.2,Bridgeville,0,NS,A,8.35a,8.45a,3.37p,6.07p,9.28a,10.00a,4.23p,6.53p
+16.2,Sunny Brae,1,NS,A,ar 8.55a,ar 9.15a,ar 4.00p,ar 6.30p,lv 9.10a,lv 9.30a,lv 4.05p,lv 6.35p

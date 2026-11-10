@@ -1,5 +1,5 @@
 # Canadian National, Table 23: Moncton - McGivney - Edmundston - Quebec (National Transcontinental). Source: Official Guide, April 25, 1948, CN Table 23: the N.B. part page 1116 (Brendan, 9 Nov 2026), the Quebec part (Brendan, 29 Oct 2026; private scans og1948_cnq/). Fredericton - McGivney (Nos. 27 / 28): on_cn_t023f.csv.
-# ATLANTIC TIME to Monk (rows tz A), Eastern from Monk. Miles as printed, from Moncton (Fredericton - McGivney 35.6 in the Fredericton file). Moncton - Berry Mills - Pacific Junction from Table 1 (page 1113). The boundary point (257.6, the end of the Quebec collection's National Transcontinental track) and its times estimated (~).
+# ATLANTIC TIME to Monk (rows tz A), Eastern from Monk. Miles as printed, from Moncton (Fredericton - McGivney 35.6 in the Fredericton file). Moncton - McGivney intermediate stations from Table 32a (page 1117; Berry Mills r = stops only to leave passengers, entered as flag). The boundary point (257.6, the end of the Quebec collection's National Transcontinental track) and its times estimated (~).
 # Signs (page 1116 legend): a Mon Wed Fri; b Tue Thu Sat; v Sun Wed Fri; f flag; x stops for passengers to or from Montreal (entered as flag). No. 52 from Quebec Tue / Thu / Sat reaches Edmundston 4.30 a.m. Wed / Fri / Sun and leaves 6.00 a.m. Mon / Wed / Fri: the Saturday train lies over at Edmundston until Monday (Nos. 52s, 52m). 67: TO CHECK, the sign at Edmundston (page 1116 legend: double dagger = daily except Saturday); kept Mon - Fri as first read.
 #train col=No51 num=51 dir=down days="Mon,Wed,Fri" kind=passenger note="Mon., Wed. and Fri.: Moncton 5.10 p.m. (Atlantic time), McGivney 8.30 / 8.45 p.m. (connection from Fredericton, No. 28), Edmundston 1.45 / 2.10 a.m. to Quebec 10.25 a.m. (Eastern time) Tue., Thu. and Sat. Monk: arrives 6.35 A.T., leaves 6.00 E.T. From Saint John by No. 14 (12.50 p.m.)."
 #train col=No67 num=67 dir=down days="Mon,Tue,Wed,Thu,Fri" kind=passenger note="Edmundston 4.00 p.m. (A.T.) to Quebec 10.25 p.m. Monk: arrives 7.35 A.T., leaves 6.50 E.T."
@@ -11,6 +11,10 @@ mile,station,principal,prov,tz,No51,No67,No52,No52s,No52m,No68
 0.0,Moncton,1,NB,A,lv 5.10p,,ar 1.30p,,ar 1.30p,
 8.8,Berry Mills,0,NB,A,f5.25p,,f1.11p,,f1.11p,
 12.2,Pacific Junction,0,NB,A,5.37p,,1.06p,,1.06p,
+24.6,North Branch,0,NB,A,f6.01p,,f12.42p,,f12.42p,
+57.9,Chipman,1,NB,A,7.05p,,11.57a,,11.57a,
+66.5,Hardwood Ridge,0,NB,A,7.27p,,11.42a,,11.42a,
+81.7,Bantalor,0,NB,A,f7.58p,,f11.15a,,f11.15a,
 97.5,McGivney,1,NB,A,ar 8.30p / lv 8.45p,,ar 10.35a / lv 10.50a,,ar 10.35a / lv 10.50a,
 118.7,Napadogan,1,NB,A,9.40p,,10.00a,,10.00a,
 134.7,Juniper,0,NB,A,10.15p,,9.22a,,9.22a,

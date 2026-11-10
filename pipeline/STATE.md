@@ -1,7 +1,7 @@
 # The Digital Model Railway — project state
 
 Read this first. It is meant to be enough to start a short, single-task chat without replaying the project's history.
-Last updated 9 November 2026 (Version 147: the queued fixes - steamer labels, broken estimated links, North Sydney, Canso train ferry and Mulgrave switchback, ESL, Campbellton, CN Edmundston; Version 146: CN page 1116, P.E.I., Pictou, Newcastle - Loggieville, Table 23 N.B. part, Borden - Cape Tormentine train ferry; Version 145: CN page 1115, N.S. and N.B. branches, Cabot Strait and Yarmouth - Boston steamers; Version 144: CN Table 4 Halifax - Truro - Moncton - Saint John; Version 143: the Maritimes begin: the Temiscouata to Edmundston and Connors, CN Tables 1, 1a and 2 in N.B. and N.S., the Maritime track bank; 142: the Chicago, Duluth & Georgian Bay steamers North American and South American; 141: C.S.L. boats named; 140: full rebuild; 135-139: Niagara, the Muskoka, Pointe au Baril and C.S.L. boats, motor trains, the Newfoundland Railway; Version 62 moved the project to git). For a new chat, read HANDOFF.md first (short), then the sections of this file it points to.
+Last updated 9 November 2026 (Version 148: CN page 1117, the last of the CN Canadian timetables; Version 147: the queued fixes - steamer labels, broken estimated links, North Sydney, Canso train ferry and Mulgrave switchback, ESL, Campbellton, CN Edmundston; Version 146: CN page 1116, P.E.I., Pictou, Newcastle - Loggieville, Table 23 N.B. part, Borden - Cape Tormentine train ferry; Version 145: CN page 1115, N.S. and N.B. branches, Cabot Strait and Yarmouth - Boston steamers; Version 144: CN Table 4 Halifax - Truro - Moncton - Saint John; Version 143: the Maritimes begin: the Temiscouata to Edmundston and Connors, CN Tables 1, 1a and 2 in N.B. and N.S., the Maritime track bank; 142: the Chicago, Duluth & Georgian Bay steamers North American and South American; 141: C.S.L. boats named; 140: full rebuild; 135-139: Niagara, the Muskoka, Pointe au Baril and C.S.L. boats, motor trains, the Newfoundland Railway; Version 62 moved the project to git). For a new chat, read HANDOFF.md first (short), then the sections of this file it points to.
 
 ## What this is
 
@@ -2444,6 +2444,21 @@ Stations of different railways within 250 m (70 pairs; script: same check over v
   the zone the timetable was printed in (no "shown in Pacific time ..."). FIX the same evening: ZOFF declared with var (hm runs above its line).
 - NS&T / CN steamers page (condensed tables) saved: dmr-sources og1948_cnq/nst_cn_steamers_condensed.png. Questions out to Brendan (track KMZ, Port
   Dalhousie cars, Toronto - Port Dalhousie boat, Cobourg - Genesee points, colours).
+
+## Version 148 (9 November 2026): CN page 1117 - the last of CN's Canadian timetables
+- New: t032 Mount Stewart Jct. - Montague - Georgetown (in and out of Montague; 37.0 / 36.7); t033 Saint John - Fredericton - Woodstock - Centreville (NO TRACK
+  on file: broken straight estimates, 135.5 / 172.6); t034 Fredericton - McGivney - Blackville - Newcastle (Nos. 28 / 27, which replace on_cn_t023f, and the
+  Mon / Wed / Fri motors, end times only; 113.8 / 114.4); t036 Campbellton - St. Leonard - Edmundston (International Railway; 137.0 / 137.1); t037 Bridgewater -
+  New Germany - Middleton - Bridgetown (Middleton - Bridgetown over the DAR, straight estimate); t037a Bridgewater - New Germany - Caledonia (through Caledonia
+  Jct. to New Germany and back; 39.8 / 39.5); t039 New Glasgow - Thorburn (Vale Railway); t041 Bathurst - Caraquet - Shippigan - Tracadie (in and out of
+  Shippigan; 89.1 / 91.1); t045 New Glasgow - Stellarton - Sunny Brae (over the NSS&C railway; forced, 16.4 / 14.1 from Stellarton); t047 Richibucto - Kent Jct.
+  (no track: straight estimate).
+- on_cn_t023 gains Table 32a's Moncton - McGivney stations (North Branch, Chipman, Hardwood Ridge, Bantalor).
+- Track: links_estimated adds the Pokemouche Junction tie (0.2 km, solid). Places: MAR_PLACES gains the page's points (CGN within 200 m of track; track ends
+  Montague, Georgetown, Caledonia, Middleton (NS Central end), Thorburn, Sunny Brae; junctions Montague Jct., Caledonia Jct., Pokemouche Jct.; no-track lines
+  at CGN points), plus CN Edmundston. t041's Tracadie is N.B.'s (own places); t005 pins N.S.'s Tracadie where it was. t036: Tide Head by mileage (noplace).
+- Checks: check_gtfs 1 known problem; 552 lines, 4042 trips, 6348 stops. Compared with V147: only oncn023 changed among existing lines (oncn023f gone), 10 new.
+- NEXT: trip chaining across the CN Maritime files (Brendan, 8 Nov 2026: "when we get all the CN maritime files in"; plan in staged/maritimes/STAGED.md).
 
 ## Version 147 (9 November 2026): the queued fixes (Brendan)
 - Steamers: the NFR Cabot Strait steamer has no number or vessel (no label until clicked); Eastern Steamship Lines: S.S. Yarmouth (num / vessel 'Yarmouth'), Boston

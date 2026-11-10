@@ -1,0 +1,9 @@
+# Canadian National, Table 39: New Glasgow - Thorburn (Official Guide, April 25, 1948, page 1117 (Brendan, 9 Nov 2026)). ATLANTIC time.
+# Psi (M293 / M294): not on the holidays May 24, June 7, July 1, Sept. 6 (none in the modelled week). Over the Vale Railway (as on file). Signs (page legend): dagger daily except Sunday; a Mon., Wed., Fri.; b Tue., Thu., Sat.; e Tue. and Fri.; h Wed. only; q Thu. only; r stops only to leave passengers (entered as flag); u Mon. and Sat.; v Mon., Thu. and Sat.; y daily except Sunday and Wednesday; f flag; M mixed; square motor train; diamond freight only (not entered).
+#train col=M293 num=293 dir=down days="ex Sun" kind=mixed note="Mixed, daily except Sunday: New Glasgow 6.31 a.m. to Thorburn 6.50 a.m."
+#train col=M295 num=295 dir=down days="ex Sun" kind=mixed note="Mixed, daily except Sunday: New Glasgow 3.45 p.m. to Thorburn 4.10 p.m."
+#train col=M294 num=294 dir=up days="ex Sun" kind=mixed note="Mixed, daily except Sunday: Thorburn 8.00 a.m. to New Glasgow 8.25 a.m."
+#train col=M296 num=296 dir=up days="ex Sun" kind=mixed note="Mixed, daily except Sunday: Thorburn 4.15 p.m. to New Glasgow 4.40 p.m."
+mile,station,principal,prov,tz,M293,M295,M294,M296
+0.0,New Glasgow,1,NS,A,lv 6.31a,lv 3.45p,ar 8.25a,ar 4.40p
+5.8,Thorburn,1,NS,A,ar 6.50a,ar 4.10p,lv 8.00a,lv 4.15p

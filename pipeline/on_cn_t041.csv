@@ -1,0 +1,15 @@
+# Canadian National, Table 41: Bathurst - Caraquet - Shippigan - Tracadie (Official Guide, April 25, 1948, page 1117 (Brendan, 9 Nov 2026)). ATLANTIC time.
+# The motor runs in to Shippigan and back out to Pokemouche Junction (printed twice). Signs (page legend): dagger daily except Sunday; a Mon., Wed., Fri.; b Tue., Thu., Sat.; e Tue. and Fri.; h Wed. only; q Thu. only; r stops only to leave passengers (entered as flag); u Mon. and Sat.; v Mon., Thu. and Sat.; y daily except Sunday and Wednesday; f flag; M mixed; square motor train; diamond freight only (not entered).
+#train col=No398 num=398 dir=down days="ex Sun" kind=motor note="Motor train, daily except Sunday: Bathurst 2.40 p.m. to Tracadie 6.55 p.m., by Shippigan."
+#train col=No397 num=397 dir=up days="ex Sun" kind=motor note="Motor train, daily except Sunday: Tracadie 7.15 a.m. to Bathurst 11.40 a.m., by Shippigan."
+mile,station,principal,prov,tz,No398,No397
+0.0,Bathurst,1,NB,A,lv 2.40p,ar 11.40a
+8.7,East Bathurst,0,NB,A,3.25p,11.01a
+25.4,Stonehaven,0,NB,A,3.58p,10.20a
+41.6,Burnsville,0,NB,A,4.35p,9.35a
+53.2,Caraquet,1,NB,A,5.05p,9.07a
+63.9,Pokemouche Junction,0,NB,A,5.29p,8.37a
+70.8,Shippigan,1,NB,A,5.59p,8.20a
+77.6,Pokemouche Junction,0,NB,A,6.14p,7.51a
+79.4,Inkerman,0,NB,A,6.20p,7.46a
+91.1,Tracadie,1,NB,A,ar 6.55p,lv 7.15a
