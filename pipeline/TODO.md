@@ -2,7 +2,7 @@
 
 One list for the Digital Model Railway: questions for Brendan, material he is to supply, and work for Claude. It merges OPEN_QUESTIONS.md with the TO DO lists that were kept in STATE.md (the last of them: "TO DO (1 November 2026)"), as Brendan asked on 9 Nov 2026.
 Claude adds items as they come up. When one is answered or done, it moves to "Done and answered" with the date. Each open item says what the build does in the meantime. Version tags (V143) say when an item was raised.
-Last updated 10 November 2026 (Version 151).
+Last updated 10 November 2026 (Version 152).
 
 ## Decisions for Brendan
 - [ ] Trip chaining: when should two pieces of the same train join into one trip? The plan was to join automatically when the stop between them is under an hour (named trains only when the names agree; an unnamed piece never blocks a join). Brendan, 9 Nov 2026: not sure about the hour any more. Undecided; chaining waits on it.
@@ -11,6 +11,12 @@ Last updated 10 November 2026 (Version 151).
 
 ## Fixes queued (Brendan: "don't fix yet"; ask before the next rebuild whether to include them)
 - (none)
+
+## CP Maritimes (started 10 Nov 2026)
+- [ ] Dominion Atlantic track is in (dar.geojson, own dar). Livery: its own colours, or CP's like the E&N in B.C.? (V152)
+- [ ] The Windsor Branch (Windsor - Windsor Jct.): whose track in 1948, CN's (the old Nova Scotia Railway) with DAR running rights, or the DAR's? Entered as DAR for now. (V152)
+- [ ] Yarmouth: the Western Counties line ends about 0.7 km from Brendan's Yarmouth station point; check when the DAR timetables come in. (V152)
+- [ ] Wanted: the CP / DAR Official Guide pages for the Maritimes; CP track in New Brunswick (McAdam, Saint John, St. Andrews, St. Stephen, Woodstock, Edmundston). (V152)
 
 ## Questions: readings to check
 ### Maritimes: CN Official Guide pages 1113 - 1117
