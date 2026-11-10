@@ -13,7 +13,7 @@
 #train col=No99 num=99 dir=up days="Tue,Thu,Sat,Sun" kind=passenger note="Daily: Halifax 8.00 p.m. to Yarmouth 7.15 a.m. Sleeping cars Halifax - Yarmouth."
 #train col=No99b num=99 dir=up days="Mon,Wed,Fri" kind=passenger note="Boat days (leaving Halifax Mon., Wed., Fri.): Halifax 8.00 p.m. to Yarmouth 7.15 a.m. and Evangeline Wharf (Brendan, 10 Nov 2026)."
 mile,station,principal,prov,tz,No100,No98,No98b,No96,No34,No95,No95b,No97,No33,No99,No99b
--0.7,Evangeline Wharf,1,NS,A,,,lv ~9.10a,,,,ar ~4.55p,,,,ar ~7.20a
+-0.2,Evangeline Wharf,1,NS,A,,,lv ~9.10a,,,,ar ~4.55p,,,,ar ~7.20a
 0,Yarmouth,1,NS,A,lv 7.30p,lv 9.15a,9.15a,,,ar 4.50p,4.50p,,,ar 7.15a,7.15a
 29,Meteghan,0,NS,A,8.37p,10.12a,10.12a,,,3.53p,3.53p,,,6.05a,6.05a
 32,Saulnierville,0,NS,A,f8.45p,10.19a,10.19a,,,3.46p,3.46p,,,,

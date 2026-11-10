@@ -2,7 +2,7 @@
 
 One list for the Digital Model Railway: questions for Brendan, material he is to supply, and work for Claude. It merges OPEN_QUESTIONS.md with the TO DO lists that were kept in STATE.md (the last of them: "TO DO (1 November 2026)"), as Brendan asked on 9 Nov 2026.
 Claude adds items as they come up. When one is answered or done, it moves to "Done and answered" with the date. Each open item says what the build does in the meantime. Version tags (V143) say when an item was raised.
-Last updated 10 November 2026 (Version 159).
+Last updated 10 November 2026 (Version 160).
 
 ## Decisions for Brendan
 - [ ] Norton (CP Table 16, Norton - Chipman mixed): did the CP trains use the CN station? Entered for now at the CN Norton stop (Claude's reading). (V159)
@@ -120,7 +120,7 @@ Maritime tables where the traced line differs from the printed miles by 1 mi and
 - Campbellton at Brendan's point on the main line (all Campbellton files). CN Edmundston at Brendan's point (47 21 41.94 N, 68 20 07.84 W), on_cn_t023.
 
 ### Answered
-- Yarmouth (V158): Brendan's OSM export and points: one CN / DAR station; Evangeline Wharf (Lovitt Street in CN Table 9 is another name for it) served by both railways' boat trains (CN Nos. 87b / 88b added); the Boston boat at the wharf. Maccan moved to Brendan's point on the Intercolonial (CN and MCR&P). (Brendan, 10 Nov 2026)
+- Yarmouth (V158, V160): Brendan's OSM export and points: separate CN and DAR stations (V160; one station in V158-159 from a copy-paste slip); Evangeline Wharf (Lovitt Street in CN Table 9 is another name for it) served by both railways' boat trains (CN Nos. 87b / 88b added); the Boston boat at the wharf. Maccan moved to Brendan's point on the Intercolonial (CN and MCR&P). (Brendan, 10 Nov 2026)
 - The Dominion Atlantic uses the CN stations at Halifax, Bedford, Windsor Junction, Truro and Middleton: one stop each (merge_stations.py). Windsor Junction at Brendan's point, 44 47 11.3 N, 63 38 23.3 W, for both railways (Brendan, 10 Nov 2026; V155).
 - The C.P.S.S. Saint John - Digby steamer (S.S. Princess Helene, daily except Sunday; CP public timetable, April 1948) at Brendan's Long Wharf and Digby Wharf points (10 Nov 2026; V155).
 - Newcastle - Loggieville: the OSM line is fine, probably built after 1923 (Brendan, 10 Nov 2026).

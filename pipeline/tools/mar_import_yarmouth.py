@@ -1,12 +1,12 @@
 """Yarmouth, N.S. (Brendan, 10 Nov 2026): the joint CN / Dominion Atlantic station and the Evangeline Wharf spur, from Brendan's small OSM export
 (export__5_.geojson, abandoned railway ways round Yarmouth). Usage: python3 tools/mar_import_yarmouth.py <export.geojson>
 -> traces/maritimes/yarmouth.geojson:
-  - DAR (own cp): the Western Counties trace end south past the wharf to the station throat (way 98558732);
+  - DAR (own cp): the Western Counties trace end south past the DAR station and the wharf to the CN station throat (way 98558732);
   - CN (own cn): the Halifax & Yarmouth trace end (junction south of town) north to that throat (ways 585963208, 585963207, 98558748, 98560137);
   - the Evangeline Wharf spur (own cp): no spur track in the export (a 19 m fragment of 'rail' only), a straight tie of 71 m from the main line
     to Brendan's pier point (trivially short: drawn solid). Left out: the station stub (98559361; the station point is put on the main line), the parallel siding 98558408, the Main
     Street street track, the line west (98581432) and the ways north of the DAR trace end (the DAR trace has them).
-Brendan's points: CN and DAR Yarmouth station 43.82791431716285, -66.12238727842956; Evangeline Pier 43.83735336117989, -66.1222985749302 (approximate)."""
+Brendan's points: CN Yarmouth station 43.82791431716285, -66.12238727842956; DAR Yarmouth station 43 50 21.14 N, 66 07 12.60 W (on the DAR piece, north of the wharf); Evangeline Pier 43.83735336117989, -66.1222985749302 (approximate)."""
 import json, os, sys
 from shapely.geometry import LineString, Point
 HERE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
