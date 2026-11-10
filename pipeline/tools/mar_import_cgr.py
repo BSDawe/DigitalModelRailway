@@ -92,7 +92,14 @@ for f in json.load(open(os.path.join(ROOT, 'traces', 'cnor_all.geojson')))['feat
     if p['source_map'] not in ('Inverness and Richmond Railway', 'Halifax and South Western Railway', 'Middleton and Victoria Beach Railway'): continue
     g = f['geometry']; title = html.unescape(re.sub('<[^>]+>', '', p['title'])); br = p.get('description') or ''; vb = 'Victoria Beach' in title
     for c in ([g['coordinates']] if g['type'] == 'LineString' else g['coordinates']):
-        add('cn', LineString([T.transform(x, y) for x, y in c]), 'cn', f'{title}: {br}' if br else title, NOTE_C, None, 'cnor', 'check' if vb else 'ok', 'Middleton - Victoria Beach: still there in 1948?' if vb else None, title, br)
+        ls = LineString([T.transform(x, y) for x, y in c]); nm = f'{title}: {br}' if br else title
+        if vb:   # Middleton - Bridgetown carries CN Table 37's Wednesday trains (1948; Brendan, 9 Nov 2026): ok to Bridgetown; on to Port Wade still 'check'
+            bt = ls.project(Point(T.transform(-65.291209, 44.841582))); m0 = ls.project(Point(T.transform(-65.08278, 44.93992)))
+            a, b = (substring(ls, 0, bt), substring(ls, bt, ls.length)) if m0 < bt else (substring(ls, bt, ls.length), substring(ls, 0, bt))
+            REPORT.append(f'Middleton & Victoria Beach split at Bridgetown: {a.length / 1609.34:.1f} mi ok, {b.length / 1609.34:.1f} mi check')
+            add('cn', a, 'cn', nm + ' (Middleton - Bridgetown)', NOTE_C, None, 'cnor', 'ok', None, title, br)
+            add('cn', b, 'cn', nm + ' (Bridgetown - Port Wade)', NOTE_C, None, 'cnor', 'check', 'Bridgetown - Port Wade: still there in 1948? (no 1948 train found)', title, br)
+        else: add('cn', ls, 'cn', nm, NOTE_C, None, 'cnor', 'ok', None, title, br)
 os.makedirs(OUT, exist_ok=True)
 for k, v in FILES.items(): json.dump(dict(type='FeatureCollection', features=v), open(os.path.join(OUT, k + '.geojson'), 'w'), separators=(',', ':'))
 print({k: len(v) for k, v in FILES.items()}); print('\n'.join(REPORT))

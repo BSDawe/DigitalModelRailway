@@ -1,7 +1,7 @@
 # The Digital Model Railway — project state
 
 Read this first. It is meant to be enough to start a short, single-task chat without replaying the project's history.
-Last updated 9 November 2026 (Version 149: the Pictou County lines are CN; Version 148: CN page 1117, the last of the CN Canadian timetables; Version 147: the queued fixes - steamer labels, broken estimated links, North Sydney, Canso train ferry and Mulgrave switchback, ESL, Campbellton, CN Edmundston; Version 146: CN page 1116, P.E.I., Pictou, Newcastle - Loggieville, Table 23 N.B. part, Borden - Cape Tormentine train ferry; Version 145: CN page 1115, N.S. and N.B. branches, Cabot Strait and Yarmouth - Boston steamers; Version 144: CN Table 4 Halifax - Truro - Moncton - Saint John; Version 143: the Maritimes begin: the Temiscouata to Edmundston and Connors, CN Tables 1, 1a and 2 in N.B. and N.S., the Maritime track bank; 142: the Chicago, Duluth & Georgian Bay steamers North American and South American; 141: C.S.L. boats named; 140: full rebuild; 135-139: Niagara, the Muskoka, Pointe au Baril and C.S.L. boats, motor trains, the Newfoundland Railway; Version 62 moved the project to git). For a new chat, read HANDOFF.md first (short), then the sections of this file it points to.
+Last updated 9 November 2026 (Version 150: Middleton - Bridgetown on the Middleton & Victoria Beach; Version 149: the Pictou County lines are CN; Version 148: CN page 1117, the last of the CN Canadian timetables; Version 147: the queued fixes - steamer labels, broken estimated links, North Sydney, Canso train ferry and Mulgrave switchback, ESL, Campbellton, CN Edmundston; Version 146: CN page 1116, P.E.I., Pictou, Newcastle - Loggieville, Table 23 N.B. part, Borden - Cape Tormentine train ferry; Version 145: CN page 1115, N.S. and N.B. branches, Cabot Strait and Yarmouth - Boston steamers; Version 144: CN Table 4 Halifax - Truro - Moncton - Saint John; Version 143: the Maritimes begin: the Temiscouata to Edmundston and Connors, CN Tables 1, 1a and 2 in N.B. and N.S., the Maritime track bank; 142: the Chicago, Duluth & Georgian Bay steamers North American and South American; 141: C.S.L. boats named; 140: full rebuild; 135-139: Niagara, the Muskoka, Pointe au Baril and C.S.L. boats, motor trains, the Newfoundland Railway; Version 62 moved the project to git). For a new chat, read HANDOFF.md first (short), then the sections of this file it points to.
 
 ## What this is
 
@@ -2445,6 +2445,12 @@ Stations of different railways within 250 m (70 pairs; script: same check over v
 - NS&T / CN steamers page (condensed tables) saved: dmr-sources og1948_cnq/nst_cn_steamers_condensed.png. Questions out to Brendan (track KMZ, Port
   Dalhousie cars, Toronto - Port Dalhousie boat, Cobourg - Genesee points, colours).
 
+## Version 150 (9 November 2026): Middleton - Bridgetown on the Middleton & Victoria Beach
+- Brendan (9 Nov 2026): the Canadian Northern trace runs on to Port Wade. CN Table 37's Wednesday mixed trains (M255 / M256) Middleton - Bridgetown use CN's
+  own Middleton & Victoria Beach Railway, not the Dominion Atlantic (Claude had assumed DAR running; wrong). The importer had the whole line 'check'; it is
+  now split at Bridgetown: Middleton - Bridgetown ok (13.3 mi; 14.4 printed), Bridgetown - Port Wade still 'check' (no 1948 train found).
+- Bridgetown moved onto that line (-65.29019, 44.84499). oncn037: 67.4 mi traced, 69.4 printed, all on track.
+
 ## Version 149 (9 November 2026): the Pictou County lines are CN
 - Brendan (9 Nov 2026): the Nova Scotia Coal Co., Acadia Coal Co., Nova Scotia Steel and Coal Co. and Vale Railway pieces are on the Wikipedia map because they
   were part of the CGR, so CN from 1923. tools/mar_import_cgr.py: NOT_CN emptied, all four owner cn in cn.geojson; industrial.geojson removed (empty).
@@ -2456,7 +2462,7 @@ Stations of different railways within 250 m (70 pairs; script: same check over v
 - New: t032 Mount Stewart Jct. - Montague - Georgetown (in and out of Montague; 37.0 / 36.7); t033 Saint John - Fredericton - Woodstock - Centreville (NO TRACK
   on file: broken straight estimates, 135.5 / 172.6); t034 Fredericton - McGivney - Blackville - Newcastle (Nos. 28 / 27, which replace on_cn_t023f, and the
   Mon / Wed / Fri motors, end times only; 113.8 / 114.4); t036 Campbellton - St. Leonard - Edmundston (International Railway; 137.0 / 137.1); t037 Bridgewater -
-  New Germany - Middleton - Bridgetown (Middleton - Bridgetown over the DAR, straight estimate); t037a Bridgewater - New Germany - Caledonia (through Caledonia
+  New Germany - Middleton - Bridgetown (Middleton - Bridgetown on the Middleton & Victoria Beach (CN), see V150); t037a Bridgewater - New Germany - Caledonia (through Caledonia
   Jct. to New Germany and back; 39.8 / 39.5); t039 New Glasgow - Thorburn (Vale Railway); t041 Bathurst - Caraquet - Shippigan - Tracadie (in and out of
   Shippigan; 89.1 / 91.1); t045 New Glasgow - Stellarton - Sunny Brae (over the NSS&C railway; forced, 16.4 / 14.1 from Stellarton); t047 Richibucto - Kent Jct.
   (no track: straight estimate).
