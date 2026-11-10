@@ -2,7 +2,7 @@
 
 One list for the Digital Model Railway: questions for Brendan, material he is to supply, and work for Claude. It merges OPEN_QUESTIONS.md with the TO DO lists that were kept in STATE.md (the last of them: "TO DO (1 November 2026)"), as Brendan asked on 9 Nov 2026.
 Claude adds items as they come up. When one is answered or done, it moves to "Done and answered" with the date. Each open item says what the build does in the meantime. Version tags (V143) say when an item was raised.
-Last updated 10 November 2026 (Version 155).
+Last updated 10 November 2026 (Version 157).
 
 ## Decisions for Brendan
 - [ ] Trip chaining: when should two pieces of the same train join into one trip? The plan was to join automatically when the stop between them is under an hour (named trains only when the names agree; an unnamed piece never blocks a join). Brendan, 9 Nov 2026: not sure about the hour any more. Undecided; chaining waits on it.
@@ -104,7 +104,7 @@ Maritime tables where the traced line differs from the printed miles by 1 mi and
 - [ ] Interurban train icon: Brendan is not satisfied; revisit later. (23 Oct)
 
 ## Short lines (stage 3)
-- [ ] Maritime Coal, Railway & Power: timetable filed (Official Guide, April 1948); track in (traces/maritimes/mcrp.geojson, from the OSM regional export, 11.8 mi / 12 printed). Its Maccan station is the CN station (Brendan, 9 Nov 2026): share the stop. Ready to build when the short lines come up. (9 Nov)
+- [x] Maritime Coal, Railway & Power: built (V157), Maccan (the CN station) - River Hebert - Joggins Mines. River Hebert times estimated. Colour #4E5D2F is Claude's pick.
 - [ ] Sydney & Louisburg: timetable and track. (8 Nov)
 
 ## Done and answered

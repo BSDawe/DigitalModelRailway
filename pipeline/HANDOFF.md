@@ -4,7 +4,7 @@ Read this first, then STATE.md: "Starting a fresh chat", "Build", "Conventions B
 version sections at the end of STATE.md (Versions 130-142) hold the details of recent work. Everything else in STATE.md is reference: search it, don't read it through.
 
 ## Where things stand
-- Version 156 is published (https://bsdawe.github.io/DigitalModelRailway/): 556 lines, 4061 trips, 6376 stops, 52 agencies. CN's Canadian timetables are all in (Versions 143 - 148 in STATE.md); trip chaining is next.
+- Version 157 is published (https://bsdawe.github.io/DigitalModelRailway/): 557 lines, 4063 trips, 6378 stops, 53 agencies. CN's Canadian timetables are all in (Versions 143 - 148 in STATE.md); trip chaining is next.
 - check_gtfs reports one problem, which is known and accepted: CP-14-SKJCP13 at Minneapolis. The 1947 Soo Line arrival (6.30 a.m.) is after C&NW 404 leaves (6.25).
 - A leftover branch, `wip-cdgb`, is on GitHub (the proxy refused to delete it). It is merged; Brendan can delete it.
 

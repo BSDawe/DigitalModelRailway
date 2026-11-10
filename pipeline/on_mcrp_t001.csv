@@ -1,0 +1,10 @@
+# Maritime Coal, Railway & Power Co. (Limited), Maccan - River Hebert - Joggins Mines, 12 miles. Official Guide, April 1948 (Brendan, 9 Nov 2026; staged/maritimes/mcrp_official_guide.jpg). Atlantic time.
+# "Train leaves Maccan (connection with Canadian National Rys.) 1.20 p.m. for River Hebert, arriving Joggins Mines (12 miles) 2.20 p.m. Returning, leaves Joggins Mines 10.15 a.m., arriving Maccan 11.15 a.m." Daily except Sunday.
+# River Hebert: no time printed; mile 7.1 and times estimated by mileage (~), at the track nearest the village (7.0 of 11.8 mi traced). No train numbers printed. The Chignecto - Maccan branch (3 miles) was freight only: not entered.
+# Maccan is the CN station (Brendan, 9 Nov 2026). Track: traces/maritimes/mcrp.geojson (OSM regional export), 11.8 mi traced.
+#train col=D120 num="" dir=down days="Mon,Tue,Wed,Thu,Fri,Sat" kind=passenger note="Maritime Coal, Railway & Power train, Maccan 1.20 p.m. to Joggins Mines 2.20 p.m. (connection with the Canadian National at Maccan). No train number printed; River Hebert time estimated."
+#train col=U1015 num="" dir=up days="Mon,Tue,Wed,Thu,Fri,Sat" kind=passenger note="Maritime Coal, Railway & Power train, Joggins Mines 10.15 a.m. to Maccan 11.15 a.m. (connection with the Canadian National at Maccan). No train number printed; River Hebert time estimated."
+mile,station,principal,prov,tz,D120,U1015
+0.0,Maccan,1,NS,A,lv 1.20p,ar 11.15a
+7.1,River Hebert,1,NS,A,~1.55p,~10.40a
+12.0,Joggins Mines,1,NS,A,ar 2.20p,lv 10.15a
