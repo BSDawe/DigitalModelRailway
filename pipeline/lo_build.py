@@ -28,6 +28,7 @@ CSL_BOX = (-79.50, -73.40, 43.10, 45.62)        # Canada Steamship Lines: Lake O
 SAG_BOX = (-73.60, -69.55, 45.45, 48.45)        # Canada Steamship Lines: Montreal - Quebec - the Saguenay
 NFS_BOX = (-60.40, -58.95, 46.15, 47.65)        # the Cabot Strait: North Sydney - Port aux Basques (Newfoundland Railway steamer)
 ESL_BOX = (-71.10, -65.90, 42.25, 43.95)        # the Gulf of Maine: Yarmouth - Boston (Eastern Steamship Lines)
+BOF_BOX = (-66.20, -65.60, 44.55, 45.32)        # the Bay of Fundy: Saint John - Digby (C.P.S.S. Princess Helene)
 
 # ---------------- water: the basemap tiles (page projection) back to lon/lat, and water_east.json
 _idx = json.load(open(os.path.join(ROOT, 'basemap', 'tiles', 'index.json'))); _PJ = _idx['proj']
@@ -41,7 +42,7 @@ def page_ll(x, y):
     X, Y = x + _ox, y + _oy; rho = math.copysign(math.hypot(X, Y), _n); th = math.atan2(X, Y)
     return (th / _n + _l0) / _r, (2 * math.atan((_R * _F / rho) ** (1 / _n)) - math.pi / 2) / _r
 _z = _idx['zmax']; _s = _idx['side'] / 2 ** _z; _polys = []
-for _B in (BOX, PAB_BOX, MUSK_BOX, CSL_BOX, SAG_BOX, NFS_BOX, ESL_BOX):
+for _B in (BOX, PAB_BOX, MUSK_BOX, CSL_BOX, SAG_BOX, NFS_BOX, ESL_BOX, BOF_BOX):
   _xs, _ys = zip(*[page_xy(lon, lat) for lon in _B[:2] for lat in _B[2:]])
   for tx in range(int((min(_xs) - _idx['origin'][0]) // _s), int((max(_xs) - _idx['origin'][0]) // _s) + 1):
       for ty in range(int((min(_ys) - _idx['origin'][1]) // _s), int((max(_ys) - _idx['origin'][1]) // _s) + 1):
@@ -371,6 +372,19 @@ ES = [dict(id='ESL-DTuThSu', num='Yarmouth', name='Eastern Steamship Lines', svc
            note='Boston (Central Wharf) Mon., Wed. and Fri. 3.30 p.m. (June 2 - Sept. 24) to Yarmouth 7.30 a.m.' + EN)]
 mkline('esl', 'Yarmouth – Boston (Eastern Steamship Lines)', es_route, es_st, ES, ['to Boston', 'to Yarmouth'],
        'Eastern Steamship Lines, Yarmouth - Boston: CN Table 9, Official Guide, April 25, 1948 (Brendan); Atlantic / Eastern time as printed', 'esl')
+
+# Saint John - Digby, Canadian Pacific Steamships (Brendan, 10 Nov 2026: CP public timetable, April 1948). S.S. Princess Helene, daily except Sunday:
+# Saint John 7.30 a.m. - Digby 10.30 a.m.; Digby 3.15 p.m. - Saint John 6.00 p.m., Atlantic time. In dry dock April 25 - May 18 (outside the modelled week).
+SJW = port('Saint John (Long Wharf)', -66.068242, 45.273589, "Long Wharf, Saint John, N.B. (Brendan's point, 10 Nov 2026), Canadian Pacific Bay of Fundy steamer.")
+DGW = port('Digby (wharf)', -65.752175, 44.626581, "Digby wharf, N.S. (Brendan's point, 10 Nov 2026), with the Dominion Atlantic trains at Digby.")
+bf_route, bf_st = water_route([SJW, DGW], 150)
+BN = ' S.S. Princess Helene, Canadian Pacific Bay of Fundy service, daily except Sunday (CP public timetable, April 1948). Times printed in Atlantic time. The boat was in dry dock April 25 - May 18, 1948.'
+BF = [dict(id='CPSS-BOF-D', num='Princess Helene', name='Canadian Pacific Steamships', svc=SVC['xSun'], dir=0, vessel='Princess Helene', stops=[[0, hm('7.30a') - 4 * 3600, hm('7.30a') - 4 * 3600, 1], [1, hm('10.30a') - 4 * 3600, hm('10.30a') - 4 * 3600, 1]],
+           note='Saint John 7.30 a.m. to Digby 10.30 a.m.' + BN),
+      dict(id='CPSS-BOF-U', num='Princess Helene', name='Canadian Pacific Steamships', svc=SVC['xSun'], dir=1, vessel='Princess Helene', stops=[[1, hm('3.15p') - 4 * 3600, hm('3.15p') - 4 * 3600, 1], [0, hm('6.00p') - 4 * 3600, hm('6.00p') - 4 * 3600, 1]],
+           note='Digby 3.15 p.m. to Saint John 6.00 p.m.' + BN)]
+mkline('cpbof', 'Saint John – Digby (Princess Helene)', bf_route, bf_st, BF, ['to Digby', 'to Saint John'],
+       'Canadian Pacific Steamships, Saint John - Digby: CP public timetable, April 1948 (Brendan); Atlantic time as printed', 'cpss')
 keys = {L['key'] for L in LINES}
 vd['lines'] = [x for x in vd['lines'] if x['key'] not in keys] + LINES
 open(os.path.join(HERE, 'viz_data.json'), 'w').write(json.dumps(vd, separators=(',', ':')))
@@ -394,9 +408,10 @@ for L, ag, desc in ((LINES[0], 'CN', 'Canadian National steamers, May 21 - June 
                     (LINES[2], 'PABIT', _PDESC), (LINES[3], 'PABIT', _PDESC), (LINES[4], 'MLN', _MDESC), (LINES[5], 'MLN', _MDESC), (LINES[6], 'MLN', _MDESC),
                     *((L_, 'CSL', 'Canada Steamship Lines, season 1948. Times on the Pacific clock, three hours earlier than the Eastern Standard time printed.') for L_ in LINES[7:11]),
                     (LINES[11], 'NFR', 'Newfoundland Railway steamer, North Sydney - Port aux Basques. Times on the Pacific clock (printed in Atlantic time at North Sydney, Newfoundland time at Port aux Basques).'),
-                    (LINES[12], 'ESL', 'Eastern Steamship Lines, Yarmouth - Boston. Times on the Pacific clock (printed in Atlantic time at Yarmouth, Eastern time at Boston).')):
+                    (LINES[12], 'ESL', 'Eastern Steamship Lines, Yarmouth - Boston. Times on the Pacific clock (printed in Atlantic time at Yarmouth, Eastern time at Boston).'),
+                    (LINES[13], 'CP', 'Canadian Pacific Steamships, Bay of Fundy service, Saint John - Digby. Times on the Pacific clock, four hours earlier than the Atlantic time printed.')):
     rid = L['key'].upper(); st = L['stations']
-    app('routes.txt', [[rid, ag, L['label'], ' – '.join(s['name'] for s in st), 4, {'PABIT': '8B4A2B', 'MLN': '1F4E79', 'CSL': 'D93A1C'}.get(ag, '2F6B44'), 'FFFFFF', desc]])
+    app('routes.txt', [[rid, ag, L['label'], ' – '.join(s['name'] for s in st), 4, {'PABIT': '8B4A2B', 'MLN': '1F4E79', 'CSL': 'D93A1C', 'CP': '7A1E2C'}.get(ag, '2F6B44'), 'FFFFFF', desc]])
     new = [[s['gid'], s['name'] + ' (steamer landing)', f"{s['lat']:.6f}", f"{s['lon']:.6f}", s['note']] for s in st if s['gid'] not in gseen]
     gseen |= {r[0] for r in new}; app('stops.txt', new)
     for t in L['trips']:

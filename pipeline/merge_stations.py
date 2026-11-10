@@ -28,8 +28,10 @@ MERGE += [
  ['CP_ST_PAUL', 'GN_ST_PAUL'],                                        # St. Paul Union Depot: one station for every St. Paul railway unless a table says otherwise
  ['CN_SMOOTH_ROCK', 'ONR_SMOOTH_ROCK'], ['CN_FAUQUIER', 'ONR_FAUQUIER'], ['CN_MOONBEAM', 'ONR_MOONBEAM'], ['CN_KAPUSKASING', 'ONR_KAPUSKASING'],   # ONR trains over the CN: the CN stations
 ]
+ # Brendan, 10 November 2026: the Dominion Atlantic uses the CN stations at Halifax, Bedford, Windsor Junction and Truro, and Middleton
+MERGE += [['CN_HALIFAX', 'CP_HALIFAX'], ['CN_WINDSOR_JUNCTION', 'CP_WINDSOR_JUNCTION'], ['CN_TRURO', 'CP_TRURO'], ['CN_MIDDLETON', 'CP_MIDDLETON']]
 # after split_stops (the ids it gives same-named stations far apart): Rosedale, Alta., CN and CP one station (the CP over the CN; Brendan, 4 November 2026)
-MERGE_AFTER = [['CN_ROSEDALE_CN_168', 'CP_ROSEDALE']]
+MERGE_AFTER = [['CN_ROSEDALE_CN_168', 'CP_ROSEDALE'], ['CN_BEDFORD', 'CP_BEDFORD_ONCP900']]   # Bedford, N.S.: CN and the DAR one station (Brendan, 10 Nov 2026)
 TO = {g: grp[0] for grp in MERGE for g in grp[1:]}
 
 def apply(viz, gt, groups=None):

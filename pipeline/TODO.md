@@ -2,7 +2,7 @@
 
 One list for the Digital Model Railway: questions for Brendan, material he is to supply, and work for Claude. It merges OPEN_QUESTIONS.md with the TO DO lists that were kept in STATE.md (the last of them: "TO DO (1 November 2026)"), as Brendan asked on 9 Nov 2026.
 Claude adds items as they come up. When one is answered or done, it moves to "Done and answered" with the date. Each open item says what the build does in the meantime. Version tags (V143) say when an item was raised.
-Last updated 10 November 2026 (Version 154).
+Last updated 10 November 2026 (Version 155).
 
 ## Decisions for Brendan
 - [ ] Trip chaining: when should two pieces of the same train join into one trip? The plan was to join automatically when the stop between them is under an hour (named trains only when the names agree; an unnamed piece never blocks a join). Brendan, 9 Nov 2026: not sure about the hour any more. Undecided; chaining waits on it.
@@ -15,7 +15,7 @@ Last updated 10 November 2026 (Version 154).
 ## CP Maritimes (started 10 Nov 2026)
 - [ ] Yarmouth: Brendan to trace; both railways serve Evangeline Wharf (Brendan, 10 Nov 2026). Until then the DAR's Yarmouth is the Western Counties trace end and Evangeline Wharf is reached by a broken straight line (0.5 mi). (V152, V154)
 - [ ] DAR readings (V154): No. 33 (Windsor - Kentville, from No. 4) and No. 4 (Truro - Windsor) have no sign: entered daily except Sunday. No. 3 (34-3) entered Saturday only like No. 34. Boat days at Evangeline Wharf: No. 98 Tue., Thu., Sat. (the Boston boat in); No. 95 Tue., Thu. (the boat out; no No. 95 on Sundays); No. 99 leaving Halifax Mon., Wed., Fri. (Brendan: to the wharf on boat days only). Wharf times estimated.
-- [ ] Not built yet from the DAR page: the C.P.S.S. Digby - Saint John steamer (Digby 3.15 p.m. - Saint John 6.00 p.m.; Saint John 7.30 a.m. - Digby 10.30 a.m., daily except Sunday; needs the Saint John wharf point); the Kentville - Kingsport bus. (V154)
+- [ ] Not built yet from the DAR page: the Kentville - Kingsport bus. (V154) The Digby - Saint John steamer is in (V155).
 - [ ] CP N.B. track is in (cp_osm_nb.geojson, V153). Traces wanted for the two stretches the export lacks: Woodstock - Hartland, and the Gibson Subdivision from Fredericton (Gibson) to about Upper Kingsclear. Wanted: the CP Official Guide pages for New Brunswick. (V153)
 
 ## Questions: readings to check
@@ -47,6 +47,18 @@ Last updated 10 November 2026 (Version 154).
 - [ ] Parkhead station point (APPROXIMATE, at the Wiarton line junction; Tables 138 and 143); St. George end of the stub.
 - [ ] CN L'Epiphanie kept separate from CP L'Epiphanie: shared station?
 - [ ] H&LB: should the two Portages be minor landings too?
+
+## Mileage to review: traced vs printed (Brendan, 10 Nov 2026: flag big gaps for review)
+Maritime tables where the traced line differs from the printed miles by 1 mi and 2 % or more, with the stretches that carry the gap. Build behaviour meanwhile: trains run on the traced line; stations off the track are placed by printed mileage. (V155)
+- [ ] CN Table 9, Halifax - Yarmouth: 259.7 mi traced, 250.0 printed (+9.7). Liverpool - Lockeport 39.0 / 35.2 and Lockeport - Barrington Passage 55.1 / 51.5 carry most of it; Italy Cross - Liverpool 21.2 / 19.7. Does the route go out and back on the Lockeport spur (Brendan asked, 9 Nov), or does the trace take an older line?
+- [ ] CN Table 5, Halifax - Sydney: +3.2. North Sydney - Sydney 17.0 / 15.1 (the run into the North Sydney ferry spur and out again); Bayfield Road - Tracadie - Monastery offset each other (the Tracadie point).
+- [ ] CN Table 45, Stellarton - Sunny Brae: 16.4 / 14.1 (forced onto the track; see Ferrona Junction above).
+- [ ] CN Table 37, Bridgewater - Bridgetown: 67.4 / 69.4; Middleton - Bridgetown 13.3 / 14.4.
+- [ ] CN Table 41, Bathurst - Tracadie: 89.1 / 91.1; Bathurst - East Bathurst and East Bathurst - Stonehaven offset (the East Bathurst point); Pokemouche Junction - Shippigan 5.8 / 6.9.
+- [ ] CN Table 27, Charlottetown - Murray Harbor: 54.4 / 55.7.
+- [ ] CN Table 11, Halifax - Dartmouth: Burnside - Dartmouth 3.8 / 2.5 (the Dartmouth point, or fid 40 above).
+- [ ] DAR Windsor - Truro: 57.7 / 59.0.
+- [ ] Smaller ones (about 1 mi in a stretch): Moncton - Pacific Jct. 11.3 / 12.2 (the Moncton point, above); Boiestown - Doaktown 17.2 / 16.0; Borden - Cape Tormentine ferry 8.4 / 9.5 (the straight course); New Richmond - Caplan 9.7 / 10.8; Saint John - Centreville 171.3 / 172.6 overall.
 
 ## Questions: points and track
 ### Maritimes: points and track
@@ -104,6 +116,10 @@ Last updated 10 November 2026 (Version 154).
 - Campbellton at Brendan's point on the main line (all Campbellton files). CN Edmundston at Brendan's point (47 21 41.94 N, 68 20 07.84 W), on_cn_t023.
 
 ### Answered
+- The Dominion Atlantic uses the CN stations at Halifax, Bedford, Windsor Junction, Truro and Middleton: one stop each (merge_stations.py). Windsor Junction at Brendan's point, 44 47 11.3 N, 63 38 23.3 W, for both railways (Brendan, 10 Nov 2026; V155).
+- The C.P.S.S. Saint John - Digby steamer (S.S. Princess Helene, daily except Sunday; CP public timetable, April 1948) at Brendan's Long Wharf and Digby Wharf points (10 Nov 2026; V155).
+- Newcastle - Loggieville: the OSM line is fine, probably built after 1923 (Brendan, 10 Nov 2026).
+- International Railway: leaving the Intercolonial at Tide Head is right if the timetable calls there (Brendan, 10 Nov 2026).
 - The Dominion Atlantic is drawn like the other CP subsidiaries (E&N, Quebec Central): own cp. It owns the Windsor Branch to Windsor Jct. (Brendan, 10 Nov 2026)
 - Brendan's regional OpenStreetMap export (9 Nov 2026; N.B. and western N.S.) filled these gaps (V151): Saint John E&NA - Union Station; the Saint John Valley line (Saint John - Westfield Beach on CP, Westfield Beach - Fredericton - Woodstock - Centreville: 171.3 mi traced / 172.6); the Kent Northern (26.3 / 26.4); Nelson Junction - Chatham - Loggieville (Newcastle - Loggieville 17.8 / 17.7); the Oxford Junction connector; the International Railway, which leaves the Intercolonial at Tide Head (Tide Head now on the Intercolonial; Campbellton - Edmundston 137.4 / 137.1); the Maritime Coal, Railway & Power track (Maccan - Joggins Mines 11.8 / 12).
 - Middleton - Bridgetown (Table 37) is CN's own Middleton & Victoria Beach Railway (the Canadian Northern trace to Port Wade), not the Dominion Atlantic (Brendan, 9 Nov 2026; V150). On to Port Wade still "check" (no 1948 train found).
