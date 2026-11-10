@@ -99,6 +99,8 @@ for f in json.load(open(os.path.join(ROOT, 'traces', 'cnor_all.geojson')))['feat
             REPORT.append(f'Middleton & Victoria Beach split at Bridgetown: {a.length / 1609.34:.1f} mi ok, {b.length / 1609.34:.1f} mi check')
             add('cn', a, 'cn', nm + ' (Middleton - Bridgetown)', NOTE_C, None, 'cnor', 'ok', None, title, br)
             add('cn', b, 'cn', nm + ' (Bridgetown - Port Wade)', NOTE_C, None, 'cnor', 'check', 'Bridgetown - Port Wade: still there in 1948? (no 1948 train found)', title, br)
+        elif br == 'Lockeport Branch':   # Brendan, 10 Nov 2026: Lockeport is a junction station; the branch is pruned (it gave Table 9 7.4 mi it does not print)
+            add('cn', ls, 'cn', nm, NOTE_C, None, 'cnor', 'check', 'Lockeport Branch: pruned; Table 9 treats Lockeport as the junction station (Brendan, 10 Nov 2026)', title, br)
         else: add('cn', ls, 'cn', nm, NOTE_C, None, 'cnor', 'ok', None, title, br)
 os.makedirs(OUT, exist_ok=True)
 # Junction vertices: the Wikipedia lines have few vertices (km apart), and the router ties track at points, so a branch from another file that ends ON a

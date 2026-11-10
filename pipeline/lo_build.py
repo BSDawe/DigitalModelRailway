@@ -360,9 +360,9 @@ mkline('nfss', 'North Sydney – Port aux Basques (Newfoundland Railway steamer)
 # (Brendan, 9 Nov 2026): S.S. Yarmouth; Boston (Central Wharf) 4.30 p.m. EDT, due 8.30 a.m. EDT = CN's 3.30 / 7.30 Eastern standard; Yarmouth (Evangeline Wharf). Central Wharf (Brendan: yes).
 # June 3 - Sept. 26: Yarmouth Tues., Thurs., Sun. 6.30 p.m. Atlantic time, Boston 7.30 a.m. Eastern time (taken as standard, Atlantic - 1 h); June 2 - Sept. 24: Boston
 # Mon., Wed., Fri. 3.30 p.m. Eastern, Yarmouth 7.30 a.m. Atlantic. The May 28 / 31 sailings are outside the modelled week.
-YAR = port('Yarmouth', -66.12249900355755, 43.83744377078616, "Yarmouth, N.S. (Brendan's point; Evangeline Wharf), with the Canadian National trains.")
+YAR = port('Yarmouth (Evangeline Wharf)', -66.1222985749302, 43.83735336117989, "Evangeline Wharf, Yarmouth, N.S. (Brendan's Evangeline Pier point, 10 Nov 2026, approximate), with the Dominion Atlantic and Canadian National boat trains.")
 BOS = port('Boston (Central Wharf)', -71.0497, 42.3593, "Central Wharf, Boston (Official Guide; Brendan, 9 Nov 2026; the point APPROXIMATE, the next wharf north of India Wharf), Eastern Steamship Lines.")
-YAR['gid'] = _gid_of('oncn009', 'Yarmouth') or YAR['gid']
+YAR['gid'] = _gid_of('oncp900', 'Evangeline Wharf') or YAR['gid']
 es_route, es_st = water_route([YAR, BOS], 150)
 SVC.update({'TuThSu': 'W_0101001', 'MoWeFr': 'W_1010100'}); DAYS.update({'TuThSu': 'Tuesday, Thursday and Sunday', 'MoWeFr': 'Monday, Wednesday and Friday'})
 EN = ' S.S. Yarmouth, Eastern Steamship Lines, direct overnight service June 2 - Sept. 26, 1948. Times as CN Table 9 prints them (Atlantic at Yarmouth, Eastern standard at Boston); the Eastern Steamship Lines page gives Boston in daylight time: leave 4.30 p.m., due 8.30 a.m. EDT.'

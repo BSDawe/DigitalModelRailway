@@ -2,7 +2,7 @@
 
 One list for the Digital Model Railway: questions for Brendan, material he is to supply, and work for Claude. It merges OPEN_QUESTIONS.md with the TO DO lists that were kept in STATE.md (the last of them: "TO DO (1 November 2026)"), as Brendan asked on 9 Nov 2026.
 Claude adds items as they come up. When one is answered or done, it moves to "Done and answered" with the date. Each open item says what the build does in the meantime. Version tags (V143) say when an item was raised.
-Last updated 10 November 2026 (Version 157).
+Last updated 10 November 2026 (Version 158).
 
 ## Decisions for Brendan
 - [ ] Trip chaining: when should two pieces of the same train join into one trip? The plan was to join automatically when the stop between them is under an hour (named trains only when the names agree; an unnamed piece never blocks a join). Brendan, 9 Nov 2026: not sure about the hour any more. Undecided; chaining waits on it.
@@ -13,7 +13,6 @@ Last updated 10 November 2026 (Version 157).
 - (none)
 
 ## CP Maritimes (started 10 Nov 2026)
-- [ ] Yarmouth: Brendan to trace; both railways serve Evangeline Wharf (Brendan, 10 Nov 2026). Until then the DAR's Yarmouth is the Western Counties trace end and Evangeline Wharf is reached by a broken straight line (0.5 mi). (V152, V154)
 - [ ] DAR readings (V154): No. 33 (Windsor - Kentville, from No. 4) and No. 4 (Truro - Windsor) have no sign: entered daily except Sunday. No. 3 (34-3) entered Saturday only like No. 34. Boat days at Evangeline Wharf: No. 98 Tue., Thu., Sat. (the Boston boat in); No. 95 Tue., Thu. (the boat out; no No. 95 on Sundays); No. 99 leaving Halifax Mon., Wed., Fri. (Brendan: to the wharf on boat days only). Wharf times estimated.
 - [ ] Not built yet from the DAR page: the Kentville - Kingsport bus. (V154) The Digby - Saint John steamer is in (V155).
 - [ ] CP N.B. track is in (cp_osm_nb.geojson, V153). Traces wanted for the two stretches the export lacks: Woodstock - Hartland, and the Gibson Subdivision from Fredericton (Gibson) to about Upper Kingsclear. Wanted: the CP Official Guide pages for New Brunswick. (V153)
@@ -50,7 +49,7 @@ Last updated 10 November 2026 (Version 157).
 
 ## Mileage to review: traced vs printed (Brendan, 10 Nov 2026: flag big gaps for review)
 Maritime tables where the traced line differs from the printed miles by 1 mi and 2 % or more, with the stretches that carry the gap. Build behaviour meanwhile: trains run on the traced line; stations off the track are placed by printed mileage. (V155)
-- [ ] CN Table 9, Halifax - Yarmouth: 259.7 mi traced, 250.0 printed (+9.7). Liverpool - Lockeport 39.0 / 35.2 and Lockeport - Barrington Passage 55.1 / 51.5 carry most of it; Italy Cross - Liverpool 21.2 / 19.7. Does the route go out and back on the Lockeport spur (Brendan asked, 9 Nov), or does the trace take an older line?
+- [x] CN Table 9, Halifax - Yarmouth: was +9.7 mi; the Lockeport Branch pruned (Lockeport the junction station; Brendan, 10 Nov 2026): now 252.0 traced to the wharf, 250.7 printed. Italy Cross - Liverpool 21.2 / 19.7 remains. (V158)
 - [ ] CN Table 5, Halifax - Sydney: +3.2. North Sydney - Sydney 17.0 / 15.1 (the run into the North Sydney ferry spur and out again); Bayfield Road - Tracadie - Monastery offset each other (the Tracadie point).
 - [ ] CN Table 45, Stellarton - Sunny Brae: 16.4 / 14.1 (forced onto the track; see Ferrona Junction above).
 - [ ] CN Table 37, Bridgewater - Bridgetown: 67.4 / 69.4; Middleton - Bridgetown 13.3 / 14.4.
@@ -71,7 +70,6 @@ Maritime tables where the traced line differs from the printed miles by 1 mi and
 
 ## Material wanted from Brendan
 ### Traces
-- [ ] Yarmouth: track end to the station point. (V145)
 - [ ] Newfoundland Railway: trace end to Port-aux-Basques. (V145)
 - [ ] Stellarton - Westville (Table 29): the Pictou trains run over the former Acadia Coal Co. and Nova Scotia Coal Co. lines (CN since V149). If CN's 1948 route went another way, a trace is wanted. (V146)
 - [ ] Borden - Cape Tormentine car ferry: the course across the strait is a straight estimate between the pier ends. (V146)
@@ -116,6 +114,7 @@ Maritime tables where the traced line differs from the printed miles by 1 mi and
 - Campbellton at Brendan's point on the main line (all Campbellton files). CN Edmundston at Brendan's point (47 21 41.94 N, 68 20 07.84 W), on_cn_t023.
 
 ### Answered
+- Yarmouth (V158): Brendan's OSM export and points: one CN / DAR station; Evangeline Wharf (Lovitt Street in CN Table 9 is another name for it) served by both railways' boat trains (CN Nos. 87b / 88b added); the Boston boat at the wharf. Maccan moved to Brendan's point on the Intercolonial (CN and MCR&P). (Brendan, 10 Nov 2026)
 - The Dominion Atlantic uses the CN stations at Halifax, Bedford, Windsor Junction, Truro and Middleton: one stop each (merge_stations.py). Windsor Junction at Brendan's point, 44 47 11.3 N, 63 38 23.3 W, for both railways (Brendan, 10 Nov 2026; V155).
 - The C.P.S.S. Saint John - Digby steamer (S.S. Princess Helene, daily except Sunday; CP public timetable, April 1948) at Brendan's Long Wharf and Digby Wharf points (10 Nov 2026; V155).
 - Newcastle - Loggieville: the OSM line is fine, probably built after 1923 (Brendan, 10 Nov 2026).

@@ -1,0 +1,215 @@
+{
+"type": "FeatureCollection",
+"features": [
+{
+"type": "Feature",
+"properties": {
+"constituent": "Western Counties Railway",
+"branch": "Yarmouth",
+"group": "osm",
+"status": "ok",
+"cost": 1.0,
+"own": "cp",
+"name": "Dominion Atlantic: Yarmouth, Western Counties trace end - station",
+"note": "OpenStreetMap way 98558732 (abandoned), export by Brendan, 10 Nov 2026"
+},
+"geometry": {
+"type": "LineString",
+"coordinates": [
+[
+-66.1230565,
+43.8268759
+],
+[
+-66.1229274,
+43.8270763
+],
+[
+-66.122814,
+43.8273049
+],
+[
+-66.122774,
+43.8274923
+],
+[
+-66.1227629,
+43.8281045
+],
+[
+-66.1227375,
+43.8286386
+],
+[
+-66.122709,
+43.8288901
+],
+[
+-66.1223232,
+43.8305253
+],
+[
+-66.1222618,
+43.831218
+],
+[
+-66.1221395,
+43.8326429
+],
+[
+-66.1219029,
+43.8352801
+],
+[
+-66.1214624,
+43.8371571
+],
+[
+-66.121152,
+43.8384795
+],
+[
+-66.1205551,
+43.840187
+],
+[
+-66.1204189,
+43.8405695
+],
+[
+-66.120272,
+43.8409679
+],
+[
+-66.1198977,
+43.8418438
+],
+[
+-66.1194267,
+43.842803
+],
+[
+-66.1188373,
+43.8437518
+]
+]
+}
+},
+{
+"type": "Feature",
+"properties": {
+"constituent": "Halifax and South Western Railway",
+"branch": "Yarmouth",
+"group": "osm",
+"status": "ok",
+"cost": 1.0,
+"own": "cn",
+"name": "Halifax & Yarmouth: Yarmouth, track end - station",
+"note": "OpenStreetMap ways 585963208, 585963207, 98558748, 98560137 (abandoned), export by Brendan, 10 Nov 2026"
+},
+"geometry": {
+"type": "LineString",
+"coordinates": [
+[
+-66.1235405,
+43.8202649
+],
+[
+-66.1239831,
+43.8213422
+],
+[
+-66.124121,
+43.8217132
+],
+[
+-66.1241847,
+43.8219929
+],
+[
+-66.1242479,
+43.8224385
+],
+[
+-66.1242683,
+43.8227493
+],
+[
+-66.1242743,
+43.8230871
+],
+[
+-66.12426,
+43.8234404
+],
+[
+-66.1241054,
+43.8250919
+],
+[
+-66.1241554,
+43.8247746
+],
+[
+-66.124203,
+43.8243558
+],
+[
+-66.1242327,
+43.8239375
+],
+[
+-66.12426,
+43.8234404
+],
+[
+-66.1240568,
+43.8252598
+],
+[
+-66.1239304,
+43.8255634
+],
+[
+-66.1237767,
+43.8258416
+],
+[
+-66.1236329,
+43.8260554
+],
+[
+-66.1230565,
+43.8268759
+]
+]
+}
+},
+{
+"type": "Feature",
+"properties": {
+"constituent": "",
+"branch": "Yarmouth",
+"group": "osm",
+"status": "ok",
+"cost": 1.0,
+"own": "cp",
+"name": "Yarmouth: Evangeline Wharf spur (straight tie to the pier, 71 m)",
+"note": "Straight tie (no spur in the export); Brendan's Evangeline Pier point, 10 Nov 2026 (approximate)"
+},
+"geometry": {
+"type": "LineString",
+"coordinates": [
+[
+-66.1214624,
+43.8371571
+],
+[
+-66.1222985749302,
+43.83735336117989
+]
+]
+}
+}
+]
+}

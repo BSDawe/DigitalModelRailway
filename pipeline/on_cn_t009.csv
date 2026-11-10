@@ -1,33 +1,37 @@
 # Canadian National, Table 9: Halifax - Mahone Bay - Bridgewater - Liverpool - Lockeport - Shelburne - Yarmouth (Official Guide, April 25, 1948, page 1115 (Brendan, 8 Nov 2026)). ATLANTIC time. Track: the Halifax & South
-# Western (Canadian Northern collection). The Lunenburg sections (Mahone Bay - Lunenburg) are on_cn_t009a.csv. Lovitt Street (Yarmouth wharf,
-# boat days only) and the Eastern Steamship Lines Yarmouth - Boston steamer (Tue., Thurs., Sun. 6.30 p.m.; from Boston Mon., Wed., Fri. 3.30 p.m.) not entered.
-#train col=No87 num=87 dir=down days="ex Sun" kind=passenger note="Daily except Sunday: Halifax 8.05 a.m. to Yarmouth 5.45 p.m. (Lunenburg section: separate trips; Lovitt Street wharf on boat days, 5.55 p.m.)."
+# Western (Canadian Northern collection). The Lunenburg sections (Mahone Bay - Lunenburg) are on_cn_t009a.csv.
+# Lovitt Street (the Yarmouth wharf, boat days only) is Evangeline Wharf, the stop the Dominion Atlantic uses (Brendan, 10 Nov 2026: Lovitt Street is another name for the wharf). Lockeport: the junction station (the branch pruned; Brendan, 10 Nov 2026):
+# Nos. 87b / 88b. Boat days are the Eastern Steamship Lines sailings (lo_build.py): out of Yarmouth Tue., Thu., Sun. 6.30 p.m., in Tue., Thu., Sat. 7.30 a.m.
+#train col=No87 num=87 dir=down days="Mon,Wed,Fri,Sat" kind=passenger note="Daily except Sunday: Halifax 8.05 a.m. to Yarmouth 5.45 p.m. (Lunenburg section: separate trips; Lovitt Street wharf on boat days, 5.55 p.m.)."
+#train col=No87b num=87 dir=down days="Tue,Thu" kind=passenger note="Boat days (Tue., Thu.): Halifax 8.05 a.m. to Yarmouth 5.45 p.m. and on to the wharf (Lovitt Street, printed 5.55 p.m.) for the Boston boat, 6.30 p.m. Entered as Evangeline Wharf."
 #train col=No283 num=283 dir=down days="ex Sun" kind=mixed note="Mixed, daily except Sunday: Halifax 2.45 p.m. to Liverpool 8.15 p.m. (Lunenburg section: separate trips)."
-#train col=No88 num=88 dir=up days="ex Sun" kind=passenger note="Daily except Sunday: Yarmouth 8.40 a.m. to Halifax 5.45 p.m. (Lovitt Street wharf on boat days, 8.30 a.m.; Lunenburg section: separate trips)."
+#train col=No88 num=88 dir=up days="Mon,Wed,Fri" kind=passenger note="Daily except Sunday: Yarmouth 8.40 a.m. to Halifax 5.45 p.m. (Lovitt Street wharf on boat days, 8.30 a.m.; Lunenburg section: separate trips)."
+#train col=No88b num=88 dir=up days="Tue,Thu,Sat" kind=passenger note="Boat days (Tue., Thu., Sat.): from the wharf (Lovitt Street, printed 8.30 a.m.; the Boston boat in 7.30 a.m.), Yarmouth 8.40 a.m. to Halifax 5.45 p.m. Entered as Evangeline Wharf."
 #train col=No284 num=284 dir=up days="ex Sun" kind=mixed note="Mixed, daily except Sunday: Liverpool 5.45 a.m. to Halifax 10.55 a.m. (Lunenburg section: separate trips)."
-mile,station,principal,prov,tz,No87,No283,No88,No284
-0.0,Halifax,1,NS,A,lv 8.05a,lv 2.45p,ar 5.45p,ar 10.55a
-4.3,Southwestern Junction,0,NS,A,8.15a,3.10p,5.32p,10.40a
-21.4,French Village,0,NS,A,8.50a,3.52p,f5.00p,9.55a
-30.0,Ingramport,0,NS,A,f9.09a,f4.13p,f4.43p,f9.37a
-36.4,Hubbard,0,NS,A,9.22a,4.30p,4.30p,9.22a
-52.6,Chester,0,NS,A,9.57a,5.10p,3.52p,8.47a
-58.1,Chester Basin,0,NS,A,10.08a,5.23p,3.39p,8.33a
-71.1,Mahone Bay,1,NS,A,ar 10.39a / lv 10.39a,ar 6.00p / lv 6.00p,ar 3.15p / lv 3.15p,ar 8.03a / lv 8.03a
-72.6,Blockhouse,0,NS,A,f10.45a,f6.05p,f3.09p,f7.53a
-76.2,Maitland,0,NS,A,f10.54a,f6.12p,f3.04p,f7.45a
-82.3,Bridgewater,1,NS,A,ar 11.05a / lv 11.20a,ar 6.25p / lv 6.55p,ar 2.40p / lv 2.50p,ar 7.05a / lv 7.30a
-93.7,Italy Cross,0,NS,A,f11.47a,f7.25p,f2.17p,f6.33a
-104.9,Medway,0,NS,A,12.10p,7.50p,1.54p,6.05a
-113.4,Liverpool,1,NS,A,ar 12.28p / lv 12.40p,ar 8.15p,ar 1.30p / lv 1.37p,lv 5.45a
-125.8,Port Mouton,0,NS,A,1.07p,,1.07p,
-148.6,Lockeport,1,NS,A,ar 1.58p / lv 2.08p,,ar 12.07p / lv 12.22p,
-164.4,Shelburne,1,NS,A,2.43p,,11.37a,
-189.4,Port Clyde,0,NS,A,3.34p,,10.41a,
-196.7,Barrington,0,NS,A,3.46p,,10.29a,
-200.1,Barrington Passage,0,NS,A,3.56p,,10.21a,
-222.0,Pubnico,0,NS,A,4.46p,,9.36a,
-231.1,Argyle,0,NS,A,f5.06p,,f9.18a,
-236.5,Belleville,0,NS,A,f5.16p,,f9.09a,
-239.4,Tusket,0,NS,A,5.23p,,9.03a,
-250.0,Yarmouth,1,NS,A,ar 5.45p,,lv 8.40a,
+mile,station,principal,prov,tz,No87,No87b,No283,No88,No284,No88b
+0.0,Halifax,1,NS,A,lv 8.05a,lv 8.05a,lv 2.45p,ar 5.45p,ar 10.55a,ar 5.45p
+4.3,Southwestern Junction,0,NS,A,8.15a,8.15a,3.10p,5.32p,10.40a,5.32p
+21.4,French Village,0,NS,A,8.50a,8.50a,3.52p,f5.00p,9.55a,f5.00p
+30.0,Ingramport,0,NS,A,f9.09a,f9.09a,f4.13p,f4.43p,f9.37a,f4.43p
+36.4,Hubbard,0,NS,A,9.22a,9.22a,4.30p,4.30p,9.22a,4.30p
+52.6,Chester,0,NS,A,9.57a,9.57a,5.10p,3.52p,8.47a,3.52p
+58.1,Chester Basin,0,NS,A,10.08a,10.08a,5.23p,3.39p,8.33a,3.39p
+71.1,Mahone Bay,1,NS,A,ar 10.39a / lv 10.39a,ar 10.39a / lv 10.39a,ar 6.00p / lv 6.00p,ar 3.15p / lv 3.15p,ar 8.03a / lv 8.03a,ar 3.15p / lv 3.15p
+72.6,Blockhouse,0,NS,A,f10.45a,f10.45a,f6.05p,f3.09p,f7.53a,f3.09p
+76.2,Maitland,0,NS,A,f10.54a,f10.54a,f6.12p,f3.04p,f7.45a,f3.04p
+82.3,Bridgewater,1,NS,A,ar 11.05a / lv 11.20a,ar 11.05a / lv 11.20a,ar 6.25p / lv 6.55p,ar 2.40p / lv 2.50p,ar 7.05a / lv 7.30a,ar 2.40p / lv 2.50p
+93.7,Italy Cross,0,NS,A,f11.47a,f11.47a,f7.25p,f2.17p,f6.33a,f2.17p
+104.9,Medway,0,NS,A,12.10p,12.10p,7.50p,1.54p,6.05a,1.54p
+113.4,Liverpool,1,NS,A,ar 12.28p / lv 12.40p,ar 12.28p / lv 12.40p,ar 8.15p,ar 1.30p / lv 1.37p,lv 5.45a,ar 1.30p / lv 1.37p
+125.8,Port Mouton,0,NS,A,1.07p,1.07p,,1.07p,,1.07p
+148.6,Lockeport,1,NS,A,ar 1.58p / lv 2.08p,ar 1.58p / lv 2.08p,,ar 12.07p / lv 12.22p,,ar 12.07p / lv 12.22p
+164.4,Shelburne,1,NS,A,2.43p,2.43p,,11.37a,,11.37a
+189.4,Port Clyde,0,NS,A,3.34p,3.34p,,10.41a,,10.41a
+196.7,Barrington,0,NS,A,3.46p,3.46p,,10.29a,,10.29a
+200.1,Barrington Passage,0,NS,A,3.56p,3.56p,,10.21a,,10.21a
+222.0,Pubnico,0,NS,A,4.46p,4.46p,,9.36a,,9.36a
+231.1,Argyle,0,NS,A,f5.06p,f5.06p,,f9.18a,,f9.18a
+236.5,Belleville,0,NS,A,f5.16p,f5.16p,,f9.09a,,f9.09a
+239.4,Tusket,0,NS,A,5.23p,5.23p,,9.03a,,9.03a
+250.0,Yarmouth,1,NS,A,ar 5.45p,5.45p,,lv 8.40a,,8.40a
+250.7,Evangeline Wharf,1,NS,A,,ar 5.55p,,,,lv 8.30a
