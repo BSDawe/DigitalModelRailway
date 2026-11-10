@@ -12,6 +12,7 @@ version sections at the end of STATE.md (Versions 130-142) hold the details of r
 - Unnamed ships carry no visible label on the map until clicked; never a stand-in such as "Steamer" (Brendan, 9 Nov 2026).
 - A straight link that bridges a gap in the track is drawn DASHED, unless it is trivially short or Brendan asked for it; traces stay solid (Brendan, 9 Nov 2026). Give such a link "est": true in its geojson properties.
 - When Brendan says "don't fix yet", queue it under "Fixes queued" in TODO.md, and ASK whether to include the queue before the next rebuild.
+- Track sources (Brendan, 10 Nov 2026): the Wikipedia traces come first. Do not use an OSM trace to take trains off a Wikipedia trace without a compelling reason (an obvious missing wye or connection, a known station location, a known track consolidation). OSM fills gaps and lines the Wikipedia data lacks.
 - TODO.md is the one list of open questions, material wanted from Brendan, and work for Claude (OPEN_QUESTIONS.md and the TO DO lists in STATE.md were merged into it, 9 Nov 2026). Add each new item there; when it is answered or done, move it to "Done and answered" with the date. Mirror it to the project with STATE and HANDOFF. Do not start new TO DO lists in STATE.md.
 - Ask before building when something is unclear. Don't build ahead of him on items marked "waiting" or "do not build ahead".
 - He dislikes slow work: batch changes into one rebuild, and run only the steps a change touches.
