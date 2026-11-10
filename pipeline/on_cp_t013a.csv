@@ -1,0 +1,22 @@
+# Canadian Pacific, Table 13: McAdam - Watt - St. Andrews. Canadian Pacific public timetable, April 1948 (Brendan, 10 Nov 2026). ATLANTIC time.
+# M164 leaves No. 152 at Watt (152 / M164 share a column McAdam - Watt). 170 / 169: Sunday only, first train June 27, last Sept. 5 (in the modelled week).
+#train col=M164 num=164 dir=down days="Mon,Tue,Wed,Thu,Fri,Sat" kind=mixed note="Mixed, daily except Sunday: Watt 10.55 a.m. (from McAdam with No. 152) to St. Andrews 12.10 p.m."
+#train col=No170 num=170 dir=down days=Sun kind=passenger note="Sunday only (June 27 - Sept. 5): McAdam 9.00 a.m. to St. Andrews 10.20 a.m."
+#train col=M163 num=163 dir=up days="Mon,Tue,Wed,Thu,Fri,Sat" kind=mixed note="Mixed, daily except Sunday: St. Andrews 4.45 p.m. to McAdam 6.40 p.m."
+#train col=No169 num=169 dir=up days=Sun kind=passenger note="Sunday only (June 27 - Sept. 5): St. Andrews 6.00 p.m. to McAdam 7.20 p.m."
+mile,station,principal,prov,tz,M164,No170,M163,No169
+0.0,McAdam,1,NB,A,,lv 9.00a,ar 6.40p,ar 7.20p
+8.4,Barber Dam,0,NB,A,,,,
+13.8,Lawrence,0,NB,A,,,,
+14.8,Watt,1,NB,A,lv 10.55a,ar 9.27a / lv 9.28a,ar 6.05p / lv 6.11p,ar 6.52p / lv 6.53p
+18.1,Dumbarton,0,NB,A,f11.02a,,f5.55p,
+21.1,Rolling Dam,0,NB,A,f11.10a,,f5.48p,
+23.7,Hewitt,0,NB,A,f11.17a,,f5.40p,
+27.8,Roix Road,0,NB,A,f11.29a,,f5.29p,
+29.6,Waweig,0,NB,A,f11.35a,,f5.23p,
+32.0,Bartlett,0,NB,A,f11.42a,,f5.15p,
+37.4,Chamcook Lake,0,NB,A,f11.53a,f10.10a,f5.01p,f6.10p
+37.9,Chamcook,0,NB,A,f11.55a,f10.11a,f4.59p,f6.09p
+38.6,St. Andrews North,0,NB,A,f11.58a,,f4.56p,
+40.2,Bar Road,0,NB,A,f12.03p,f10.15a,f4.51p,f6.05p
+42.3,St. Andrews,1,NB,A,ar 12.10p,ar 10.20a,lv 4.45p,lv 6.00p

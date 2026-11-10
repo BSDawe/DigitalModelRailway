@@ -470,7 +470,7 @@ def build(specs, log=print):
             on_est = any(s['a'] - 1 <= ch <= s['b'] + 1 for s in segs)
             how = 'position from the federal names file' if r.get('how') not in (None, 'map', 'hand') else 'placed by its printed mileage' if 'raw' not in r else ''
             _lab = spec.get('label') or RI['label']; _g = gid_for(rail, r['name']); _host = {'CN_': 'Canadian National', 'CP_': 'Canadian Pacific'}.get(_g[:3])
-            note = (f'{_host} station; {_lab} trains' if _host and _host != _lab and not _lab.startswith(_host) and RI['own'] not in ('cn', 'cp') else _lab + ' station') + ('; on a stretch drawn as a straight estimate' if on_est else '')
+            note = (f'{_host} station; {_lab} trains' if _host and _host != RI['label'] and not _lab.startswith(_host) else _lab + ' station') + ('; on a stretch drawn as a straight estimate' if on_est else '')
             st.append(dict(name=r['name'], chain=round(ch, 1), lon=round(lon, 6), lat=round(lat, 6), mile=r['mile'], principal=r['principal'], note=note, kml='', gid=gid_for(rail, r['name'])))
         trips = trips_of(spec, rows, trains, stn_i, taken, log)
         route = [[round(lo, 6), round(la, 6), round(c, 1)] for (lo, la), c in zip((inv(*q) for q in pts), cum)]

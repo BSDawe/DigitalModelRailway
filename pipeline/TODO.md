@@ -2,9 +2,11 @@
 
 One list for the Digital Model Railway: questions for Brendan, material he is to supply, and work for Claude. It merges OPEN_QUESTIONS.md with the TO DO lists that were kept in STATE.md (the last of them: "TO DO (1 November 2026)"), as Brendan asked on 9 Nov 2026.
 Claude adds items as they come up. When one is answered or done, it moves to "Done and answered" with the date. Each open item says what the build does in the meantime. Version tags (V143) say when an item was raised.
-Last updated 10 November 2026 (Version 158).
+Last updated 10 November 2026 (Version 159).
 
 ## Decisions for Brendan
+- [ ] Norton (CP Table 16, Norton - Chipman mixed): did the CP trains use the CN station? Entered for now at the CN Norton stop (Claude's reading). (V159)
+- [ ] St. Stephen: the CP station point wanted. Watt - St. Stephen traces 22.6 mi against 19.1 printed, because the OSM line loops round before its end, where the station is now placed. (V159)
 - [ ] Trip chaining: when should two pieces of the same train join into one trip? The plan was to join automatically when the stop between them is under an hour (named trains only when the names agree; an unnamed piece never blocks a join). Brendan, 9 Nov 2026: not sure about the hour any more. Undecided; chaining waits on it.
 - [ ] Unnumbered connecting trains: branch sections printed in a parent train's column take the parent's number (e.g. on_cn_t126m / d / p / c / g). Through cars or separate connecting trains? No number, or "connection to No. 41"? (26 Oct) Brendan: much may settle as the branch tables come in.
 - [ ] CN Table 116 (Longlac - Fort William, Nos. 79 / 80): the Toronto section may be a connection with Nos. 3 / 4 at Longlac rather than through cars (Brendan not certain). Matters for chaining. (23 Oct)
@@ -15,7 +17,9 @@ Last updated 10 November 2026 (Version 158).
 ## CP Maritimes (started 10 Nov 2026)
 - [ ] DAR readings (V154): No. 33 (Windsor - Kentville, from No. 4) and No. 4 (Truro - Windsor) have no sign: entered daily except Sunday. No. 3 (34-3) entered Saturday only like No. 34. Boat days at Evangeline Wharf: No. 98 Tue., Thu., Sat. (the Boston boat in); No. 95 Tue., Thu. (the boat out; no No. 95 on Sundays); No. 99 leaving Halifax Mon., Wed., Fri. (Brendan: to the wharf on boat days only). Wharf times estimated.
 - [ ] Not built yet from the DAR page: the Kentville - Kingsport bus. (V154) The Digby - Saint John steamer is in (V155).
-- [ ] CP N.B. track is in (cp_osm_nb.geojson, V153). Traces wanted for the two stretches the export lacks: Woodstock - Hartland, and the Gibson Subdivision from Fredericton (Gibson) to about Upper Kingsclear. Wanted: the CP Official Guide pages for New Brunswick. (V153)
+- [ ] CP N.B. traces wanted (V159: these stretches run on dashed straight lines): the Gibson Sub North Devon - Keswick - Burtt's Corner - Barton (Table 16A, ~30 mi); Woodstock - Hartland (Tables 15, 16A, ~12 mi); Debec Jct. - Houlton, Me. (Table 15C: a 2 km gap at Debec and the Maine side; Houlton point APPROXIMATE); St. George - Bonny River (Table 17).
+- [ ] CP N.B. stations (V159): Saint John (Union Station), Westfield Beach and Norton entered as the CN stations (Norton: Claude's reading, TO CHECK). Kept apart from CN's: Edmundston, Fredericton, Woodstock, Chipman, Grand Falls, St. Leonard: joint or separate in 1948?
+- [ ] CP N.B. readings (V159): Table 10: 39 from Saint John ex Sun, from Megantic daily (Monday train from Megantic entered as No39m); 42 east of Brownville Jct. ex Sun, No. 104 on Sundays; 41 ex Sun from Saint John, No. 103 on Sundays. M117 / M118 (Brownville Jct. - Greenville - Megantic) mixed: Greenville and Holeb arrivals estimated. The Gull 113 / 114 daily (June 20 - Sept. 5). Table 12A 105 waits at Fredericton Jct. 6.30 - 8.55 p.m. as printed. Table 15 Theriault, Sigas, L'Eglise printed "f" without times: left out.
 
 ## Questions: readings to check
 ### Maritimes: CN Official Guide pages 1113 - 1117
@@ -57,6 +61,8 @@ Maritime tables where the traced line differs from the printed miles by 1 mi and
 - [ ] CN Table 27, Charlottetown - Murray Harbor: 54.4 / 55.7.
 - [ ] CN Table 11, Halifax - Dartmouth: Burnside - Dartmouth 3.8 / 2.5 (the Dartmouth point, or fid 40 above).
 - [ ] DAR Windsor - Truro: 57.7 / 59.0.
+- [ ] CP Table 13 Watt - St. Stephen: 22.6 mi traced, 19.1 printed (the OSM line loops before its end; the St. Stephen station point wanted). (V159)
+- [ ] CP McAdam - Vanceboro 6.9 traced / 5.9 printed; Megantic - Boundary stretches +-0.7 (station points by mileage). (V159)
 - [ ] Smaller ones (about 1 mi in a stretch): Moncton - Pacific Jct. 11.3 / 12.2 (the Moncton point, above); Boiestown - Doaktown 17.2 / 16.0; Borden - Cape Tormentine ferry 8.4 / 9.5 (the straight course); New Richmond - Caplan 9.7 / 10.8; Saint John - Centreville 171.3 / 172.6 overall.
 
 ## Questions: points and track
@@ -92,7 +98,7 @@ Maritime tables where the traced line differs from the printed miles by 1 mi and
 - [ ] Trip chaining across files (plan: staged/maritimes/STAGED.md; generalise real_ends.py; GTFS block_id). Waits on the decision above. Then again for CP.
 - [ ] Build-out order (Brendan, 8 Nov 2026): 1 CN Maritimes (done, V148), 2 CP Maritimes, 3 short lines with 1948 passenger service, 4 U.S. connections (whole U.S. railways in time).
 - [ ] Before the U.S. build-out: split parts/on_build.json (25 MB: Ontario, Quebec and the Maritimes in one file) by region or railway, so it stays under GitHub's 50 MB warning (100 MB refuses a push) and each version commits only the changed region; then have the page load a region's data when it is viewed. CP Maritimes is small enough to go first (Brendan, 10 Nov 2026).
-- [ ] CP Table 10 east of Boundary (Maine: Jackman, Greenville, Brownville Jct., Vanceboro; N.B.: McAdam, Fredericton, Saint John, St. Andrews, St. Stephen, Woodstock); the Bangor & Aroostook connection; Table 8 south of the border (Newport - Wells River - Boston / New York); the Quebec - Levis ferry (QC Nos. 2 / 5); the Beebe Jct. - Rock Island bus. (25 Oct; goes with CP Maritimes / U.S.)
+- [ ] CP Table 8 south of the border (Newport - Wells River - Boston / New York); Tables 25 / 26 (Montreal - Maine coast, Barre & Chelsea); the Bangor & Aroostook and Maine Central / B&M connections at Brownville Jct., Mattawamkeag and Vanceboro (The Gull and The Pine Tree beyond Vanceboro); the Quebec - Levis ferry (QC Nos. 2 / 5); the Beebe Jct. - Rock Island bus. (25 Oct; U.S. stage) CP Table 10 east of Boundary and the N.B. tables: built (V159).
 - [ ] The Prescott - Ogdensburg car ferry (Canadian Pacific Car & Passenger Transfer Co.). (3 Nov)
 - [ ] Check the Montreal suburban trains against the CN Montreal employee timetable of June 20, 1948 (https://www.traingeek.ca/files/19480620-ett-montreal-16.pdf). (7 Nov)
 - [ ] "Expansion joints": trains pausing mid-run where nothing is printed, at joins between track pieces; find and make them run through. (25 Oct)

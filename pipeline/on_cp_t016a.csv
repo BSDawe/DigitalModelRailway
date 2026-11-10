@@ -1,0 +1,37 @@
+# Canadian Pacific, Table 16A: Chipman - North Devon - (Fredericton) - Southampton - Woodstock (motor trains). Canadian Pacific public timetable, April 1948 (Brendan, 10 Nov 2026). ATLANTIC time. Daily except Sunday.
+# North Devon: passengers to and from Fredericton change there (S.M.T. bus North Devon - Fredericton). Southampton - Otis: freight only.
+#train col=No155 num=155 dir=down days="Mon,Tue,Wed,Thu,Fri,Sat" kind=motor note="Motor train, daily except Sunday: Chipman 7.20 a.m. to Woodstock 11.55 a.m. (North Devon 9.00 - 9.20 a.m.: bus to Fredericton)."
+#train col=No156 num=156 dir=up days="Mon,Tue,Wed,Thu,Fri,Sat" kind=motor note="Motor train, daily except Sunday: Woodstock 4.10 p.m. to Chipman 8.45 p.m. (North Devon 6.45 - 7.05 p.m.: bus to Fredericton)."
+mile,station,principal,prov,tz,No155,No156
+0.0,Chipman,1,NB,A,lv 7.20a,ar 8.45p
+4.9,Iron Bound Cove,0,NB,A,f7.30a,f8.34p
+5.8,Midland,0,NB,A,f7.32a,f8.32p
+11.5,Newcastle Bridge,0,NB,A,f7.43a,f8.21p
+12.6,Minto,1,NB,A,7.47a,8.18p
+22.4,Ripples,0,NB,A,f8.06a,f7.56p
+27.7,Fernmount,0,NB,A,,f7.46p
+40.1,Barker,0,NB,A,f8.40a,f7.21p
+45.2,Marysville Junction,0,NB,A,f8.49a,f7.12p
+45.7,South Devon,0,NB,A,8.50a,7.10p
+46.9,North Devon,1,NB,A,ar 9.00a / lv 9.20a,ar 6.45p / lv 7.05p
+48.2,Nashwaaksis,0,NB,A,f9.24a,f6.40p
+51.5,Clanfield,0,NB,A,f9.30a,f6.33p
+54.2,Sugar Island,0,NB,A,f9.36a,f6.27p
+55.8,Rockland,0,NB,A,f9.39a,f6.23p
+57.5,Keswick,0,NB,A,f9.43a,f6.19p
+62.1,Burtt's Corner,0,NB,A,9.55a,6.09p
+63.1,Upper Keswick,0,NB,A,f9.58a,f6.05p
+65.4,Zealand,0,NB,A,f10.03a,f5.58p
+68.5,Stoneridge,0,NB,A,f10.09a,f5.51p
+71.6,Hayne,0,NB,A,f10.16a,f5.45p
+74.1,Barton,0,NB,A,f10.22a,f5.40p
+82.7,Southampton,1,NB,A,10.47a,5.17p
+84.1,Millville,0,NB,A,10.55a,5.14p
+86.8,Woodstock Road,0,NB,A,f11.01a,f5.06p
+88.4,Nackawic,0,NB,A,f11.05a,f5.02p
+91.8,County Line,0,NB,A,f11.13a,f4.55p
+94.8,Carr,0,NB,A,f11.20a,f4.48p
+102.4,McKenna,0,NB,A,f11.37a,f4.30p
+104.7,Newburg,0,NB,A,ar 11.42a / lv 11.43a,ar 4.20p / lv 4.25p
+106.5,Upper Woodstock,0,NB,A,f11.48a,f4.16p
+108.9,Woodstock,1,NB,A,ar 11.55a,lv 4.10p

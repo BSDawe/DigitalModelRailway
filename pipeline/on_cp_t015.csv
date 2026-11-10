@@ -1,0 +1,50 @@
+# Canadian Pacific, Table 15: Edmundston - Grand Falls - Aroostook - Perth Jct. - Woodstock - McAdam. Canadian Pacific public timetable, April 1948 (Brendan, 10 Nov 2026). ATLANTIC time. Daily except Sunday.
+# Theriault, Sigas, L'Eglise: printed "f" with no time (stop on signal): not entered. The motor trains 155 / 156 (Newburg - Woodstock) are Table 16A's (on_cp_t016a.csv).
+# 152 and 154 go on from McAdam to St. Stephen (Table 13); 153 and 151 come from there.
+#train col=No154 num=154 dir=down days="Mon,Tue,Wed,Thu,Fri,Sat" kind=passenger note="Edmundston 12.20 p.m. to McAdam 6.20 p.m. (on to St. Stephen 7.35 p.m., Table 13)."
+#train col=No152 num=152 dir=down days="Mon,Tue,Wed,Thu,Fri,Sat" kind=passenger note="Woodstock 7.20 a.m. to McAdam 8.55 a.m. (on to St. Stephen 10.15 a.m., Table 13)."
+#train col=No153 num=153 dir=up days="Mon,Tue,Wed,Thu,Fri,Sat" kind=passenger note="McAdam 10.30 a.m. (from St. Stephen, Table 13) to Edmundston 5.30 p.m."
+#train col=No151 num=151 dir=up days="Mon,Tue,Wed,Thu,Fri,Sat" kind=passenger note="McAdam 7.30 p.m. (from St. Stephen, Table 13) to Woodstock 9.05 p.m."
+mile,station,principal,prov,tz,No154,No152,No153,No151
+0.0,Edmundston,1,NB,A,lv 12.20p,,ar 5.30p,
+4.5,St. Basil,0,NB,A,12.33p,,5.15p,
+9.6,Green River,0,NB,A,12.42p,,5.00p,
+13.8,Theriault,0,NB,A,,,,
+15.9,Quisibis,0,NB,A,f12.56p,,f4.46p,
+20.3,Sigas,0,NB,A,,,,
+24.8,St. Leonard,1,NB,A,1.17p,,4.27p,
+25.9,L'Eglise,0,NB,A,,,,
+27.9,Cyr Junction,0,NB,A,1.22p,,4.20p,
+31.3,Martin,0,NB,A,f1.30p,,,
+37.4,Grand Falls,1,NB,A,1.46p,,3.54p,
+42.3,Argosy,0,NB,A,f1.56p,,f3.40p,
+44.5,Ortonville,0,NB,A,f2.03p,,f3.32p,
+47.2,Limestone,0,NB,A,f2.11p,,f3.25p,
+52.5,Morrill,0,NB,A,f2.22p,,f3.13p,
+56.1,Aroostook,1,NB,A,ar 2.30p / lv 2.40p,,ar 2.55p / lv 3.05p,
+60.4,Andover,0,NB,A,2.48p,,2.48p,
+61.7,Perth Junction,1,NB,A,2.55p,,2.36p,
+68.9,Kilburn,0,NB,A,3.08p,,2.18p,
+73.8,Upper Kent,0,NB,A,3.17p,,2.08p,
+76.8,Beechwood,0,NB,A,f3.22p,,f2.00p,
+80.8,Bath,0,NB,A,3.31p,,1.52p,
+83.8,Bristol,0,NB,A,3.37p,,1.44p,
+87.0,Florenceville,0,NB,A,3.44p,,1.35p,
+91.7,Stickney,0,NB,A,3.53p,,1.24p,
+93.6,Peel,0,NB,A,f3.57p,,f1.20p,
+97.8,Hartland,1,NB,A,4.05p,,1.12p,
+101.4,Nixon,0,NB,A,f4.12p,,f1.01p,
+106.6,Newburg,0,NB,A,4.22p,,12.51p,
+108.4,Upper Woodstock,0,NB,A,f4.25p,,f12.46p,
+110.8,Woodstock,1,NB,A,ar 4.30p / lv 4.45p,lv 7.20a,ar 12.10p / lv 12.40p,ar 9.05p
+116.9,Teed's Mill,0,NB,A,f4.57p,f7.32a,f11.57a,f8.53p
+121.5,Debec Junction,1,NB,A,5.07p,7.42a,11.47a,8.44p
+128.8,Benton,0,NB,A,5.20p,7.55a,11.33a,8.31p
+134.8,Scott,0,NB,A,5.31p,f8.06a,11.22a,8.20p
+139.4,Canterbury,0,NB,A,5.40p,8.15a,11.12a,8.11p
+143.8,Shogomoc,0,NB,A,,f8.23a,,f8.03p
+145.6,Deer Lake,0,NB,A,f5.51p,f8.26a,f11.00a,f8.00p
+148.8,Cairds,0,NB,A,,f8.32a,,f7.53p
+151.8,Sugar Brook,0,NB,A,f6.02p,f8.37a,f10.48a,f7.48p
+155.2,Cottrell,0,NB,A,f6.08p,f8.42a,f10.43a,f7.42p
+161.9,McAdam,1,NB,A,ar 6.20p,ar 8.55a,lv 10.30a,lv 7.30p

@@ -1,0 +1,48 @@
+# Canadian Pacific, Table 12: Saint John - Fredericton Jct. - McAdam - Vanceboro, the local trains. Canadian Pacific public timetable, April 1948 (Brendan, 10 Nov 2026). ATLANTIC time.
+# The through trains of the table (39, 40, 41, 42, 103, 104) are in on_cp_t010.csv. 113 / 114 (The Gull, Saint John - Boston with the CN from Halifax and the Maine Central
+# beyond Vanceboro, Table 11) are printed daily except Sunday with the sign "will operate daily June 20 to Sept. 5 inclusive": daily in the modelled week.
+# Signs: b d e x conditional stops (revenue passengers only), entered as calls; f stops on signal. 105 ends at Fredericton Jct. and goes on to Fredericton at 8.55 p.m.
+# (Table 12A); 106 comes from Fredericton (Table 12A).
+#train col=No113 num=113 dir=down days=daily kind=passenger note="The Gull: Saint John 8.00 p.m. to Vanceboro 11.10 p.m. (from Halifax, CN No. 59-13; on to Boston by the Maine Central and Boston & Maine, Table 11). Daily June 20 to Sept. 5."
+#train col=No105 num=105 dir=down days="Mon,Tue,Wed,Thu,Fri,Sat" kind=passenger note="Daily except Sunday: Saint John 4.45 p.m. to Fredericton Jct. 6.30 p.m. (on to Fredericton 8.55 p.m., Table 12A)."
+#train col=No101 num=101 dir=down days="Mon,Tue,Wed,Thu,Fri,Sat" kind=passenger note="Daily except Sunday: Saint John 6.45 a.m. to McAdam 9.25 a.m."
+#train col=No106 num=106 dir=up days="Mon,Tue,Wed,Thu,Fri,Sat" kind=passenger note="Daily except Sunday: Fredericton Jct. 5.52 a.m. (from Fredericton 5.10 a.m., Table 12A) to Saint John 7.40 a.m."
+#train col=No114 num=114 dir=up days=daily kind=passenger note="The Gull: Vanceboro 9.15 a.m. (from Boston) to Saint John 12.20 p.m. (on to Halifax, CN No. 14-60). Daily June 20 to Sept. 5."
+#train col=No102 num=102 dir=up days="Mon,Tue,Wed,Thu,Fri,Sat" kind=passenger note="Daily except Sunday: McAdam 7.00 p.m. to Saint John 10.00 p.m."
+mile,station,principal,prov,tz,No113,No105,No101,No106,No114,No102
+0.0,Saint John,1,NB,A,lv 8.00p,lv 4.45p,lv 6.45a,ar 7.40a,ar 12.20p,ar 10.00p
+2.2,Fairville,0,NB,A,,4.55p,6.53a,7.30a,12.10p,9.50p
+4.6,South Bay,0,NB,A,,f5.00p,,f7.24a,,
+6.0,Acamac,0,NB,A,,f5.04p,,f7.19a,,
+6.9,Ketepec,0,NB,A,,f5.06p,,f7.16a,,
+7.9,Morna,0,NB,A,,f5.09p,,f7.13a,,f9.41p
+8.9,Martinon,0,NB,A,,f5.12p,,f7.10a,,f9.38p
+9.9,Grand Bay,0,NB,A,e8.20p,f5.17p,f7.03a,7.03a,d11.56a,f9.36p
+10.7,Pamdenec,0,NB,A,,f5.20p,,f6.59a,,f9.33p
+11.1,Epworth Park,0,NB,A,,f5.22p,,f6.57a,,
+11.7,Ingleside,0,NB,A,,f5.24p,,f6.54a,,
+12.4,Ononette,0,NB,A,,f5.26p,,f6.52a,,f9.31p
+13.2,Hillandale,0,NB,A,,f5.28p,,f6.49a,,
+14.0,Westfield Beach,1,NB,A,e8.27p,5.32p,7.11a,6.46a,d11.48a,f9.26p
+14.9,Lingley,0,NB,A,,f5.34p,,f6.43a,,
+16.2,Sagwa,0,NB,A,,f5.36p,f7.15a,f6.40a,,
+18.2,Nerepis,0,NB,A,,f5.40p,f7.18a,f6.36a,,f9.20p
+19.8,Blagdon,0,NB,A,,f5.42p,,f6.33a,,
+22.5,Bayard,0,NB,A,,f5.47p,,f6.29a,,
+23.8,Welsford,0,NB,A,,5.51p,7.27a,6.27a,d11.34a,9.12p
+28.2,Clarendon,0,NB,A,,f6.00p,f7.35a,f6.20a,,f9.04p
+31.7,Wirral,0,NB,A,,f6.05p,f7.40a,f6.14a,,f8.54p
+34.2,Enniskillen,0,NB,A,,f6.09p,f7.44a,f6.10a,,f8.46p
+36.9,Hoyt,0,NB,A,,6.15p,7.48a,6.06a,d11.16a,8.42p
+39.3,Blissville,0,NB,A,,f6.19p,f7.52a,f6.01a,,f8.38p
+41.5,Bailey,0,NB,A,,f6.24p,f7.55a,f5.57a,,f8.34p
+44.4,Fredericton Junction,1,NB,A,9.15p,ar 6.30p,ar 8.00a / lv 8.10a,lv 5.52a,ar 10.57a / lv 11.05a,ar 8.15p / lv 8.25p
+47.7,Tracy,0,NB,A,,,f8.16a,,f10.52a,f8.09p
+55.2,Rooth,0,NB,A,,,f8.29a,,,f8.00p
+59.6,Cork,0,NB,A,,,f8.37a,,,f7.54p
+65.1,Harvey,0,NB,A,,,8.50a,,10.30a,7.44p
+70.9,Prince William,0,NB,A,,,f9.00a,,,f7.23p
+75.2,Magaguadavic,0,NB,A,,,f9.08a,,,f7.16p
+78.6,Newcomb,0,NB,A,,,f9.14a,,,f7.10p
+84.4,McAdam,1,NB,A,ar 10.25p / lv 10.55p,,ar 9.25a,,ar 9.30a / lv 10.00a,lv 7.00p
+90.3,Vanceboro,1,NB,A,ar 11.10p,,,,lv 9.15a,

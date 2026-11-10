@@ -1,0 +1,15 @@
+# Canadian Pacific, Table 13: McAdam - Watt - St. Stephen. Canadian Pacific public timetable, April 1948 (Brendan, 10 Nov 2026). ATLANTIC time. Daily except Sunday.
+# The St. Andrews line from Watt is on_cp_t013a.csv. 152 and 154 come from Woodstock and Edmundston (Table 15); 151 and 153 go on to Woodstock and Edmundston.
+#train col=No152 num=152 dir=down days="Mon,Tue,Wed,Thu,Fri,Sat" kind=passenger note="McAdam 10.15 a.m. to St. Stephen 11.35 a.m. (from Woodstock, Table 15; the St. Andrews mixed M164 leaves it at Watt)."
+#train col=No154 num=154 dir=down days="Mon,Tue,Wed,Thu,Fri,Sat" kind=passenger note="McAdam 7.35 p.m. (from Edmundston, Table 15) to St. Stephen 8.45 p.m."
+#train col=No153 num=153 dir=up days="Mon,Tue,Wed,Thu,Fri,Sat" kind=passenger note="St. Stephen 8.00 a.m. to McAdam 9.10 a.m. (on to Edmundston 10.30 a.m., Table 15)."
+#train col=No151 num=151 dir=up days="Mon,Tue,Wed,Thu,Fri,Sat" kind=passenger note="St. Stephen 5.10 p.m. to McAdam 6.20 p.m. (on to Woodstock 7.30 p.m., Table 15)."
+mile,station,principal,prov,tz,No152,No154,No153,No151
+0.0,McAdam,1,NB,A,lv 10.15a,lv 7.35p,ar 9.10a,ar 6.20p
+8.4,Barber Dam,0,NB,A,f10.30a,f7.50p,f8.55a,f6.05p
+13.8,Lawrence,0,NB,A,f10.40a,8.00p,f8.44a,f5.54p
+14.8,Watt,1,NB,A,10.50a,8.04p,8.41a,5.51p
+19.2,Honeydale,0,NB,A,f11.01a,8.13p,f8.30a,f5.40p
+25.2,Moore's Mills,0,NB,A,f11.13a,8.25p,f8.18a,f5.28p
+28.6,Maxwell,0,NB,A,f11.20a,f8.32p,f8.11a,f5.21p
+33.9,St. Stephen,1,NB,A,ar 11.35a,ar 8.45p,lv 8.00a,lv 5.10p

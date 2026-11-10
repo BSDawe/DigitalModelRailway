@@ -1,7 +1,7 @@
 # The Digital Model Railway — project state
 
 Read this first. It is meant to be enough to start a short, single-task chat without replaying the project's history.
-Last updated 10 November 2026 (Version 158: Yarmouth station and Evangeline Wharf; Lockeport a junction station; Version 157: Maritime Coal, Railway & Power, Maccan - Joggins; Version 156: CP subsidiaries under their own names; SI its own heading; Version 155: the Princess Helene, Saint John - Digby; the DAR at the CN stations; Version 154: Dominion Atlantic timetables; Version 153: CP N.B. track; DAR drawn as CP; Version 152: Dominion Atlantic track (CP Maritimes begins); Version 151: the regional OSM export fills the N.B. gaps; Version 150: Middleton - Bridgetown on the Middleton & Victoria Beach; Version 149: the Pictou County lines are CN; Version 148: CN page 1117, the last of the CN Canadian timetables; Version 147: the queued fixes - steamer labels, broken estimated links, North Sydney, Canso train ferry and Mulgrave switchback, ESL, Campbellton, CN Edmundston; Version 146: CN page 1116, P.E.I., Pictou, Newcastle - Loggieville, Table 23 N.B. part, Borden - Cape Tormentine train ferry; Version 145: CN page 1115, N.S. and N.B. branches, Cabot Strait and Yarmouth - Boston steamers; Version 144: CN Table 4 Halifax - Truro - Moncton - Saint John; Version 143: the Maritimes begin: the Temiscouata to Edmundston and Connors, CN Tables 1, 1a and 2 in N.B. and N.S., the Maritime track bank; 142: the Chicago, Duluth & Georgian Bay steamers North American and South American; 141: C.S.L. boats named; 140: full rebuild; 135-139: Niagara, the Muskoka, Pointe au Baril and C.S.L. boats, motor trains, the Newfoundland Railway; Version 62 moved the project to git). For a new chat, read HANDOFF.md first (short), then the sections of this file it points to.
+Last updated 10 November 2026 (Version 159: CP New Brunswick and the line across Maine; Version 158: Yarmouth station and Evangeline Wharf; Lockeport a junction station; Version 157: Maritime Coal, Railway & Power, Maccan - Joggins; Version 156: CP subsidiaries under their own names; SI its own heading; Version 155: the Princess Helene, Saint John - Digby; the DAR at the CN stations; Version 154: Dominion Atlantic timetables; Version 153: CP N.B. track; DAR drawn as CP; Version 152: Dominion Atlantic track (CP Maritimes begins); Version 151: the regional OSM export fills the N.B. gaps; Version 150: Middleton - Bridgetown on the Middleton & Victoria Beach; Version 149: the Pictou County lines are CN; Version 148: CN page 1117, the last of the CN Canadian timetables; Version 147: the queued fixes - steamer labels, broken estimated links, North Sydney, Canso train ferry and Mulgrave switchback, ESL, Campbellton, CN Edmundston; Version 146: CN page 1116, P.E.I., Pictou, Newcastle - Loggieville, Table 23 N.B. part, Borden - Cape Tormentine train ferry; Version 145: CN page 1115, N.S. and N.B. branches, Cabot Strait and Yarmouth - Boston steamers; Version 144: CN Table 4 Halifax - Truro - Moncton - Saint John; Version 143: the Maritimes begin: the Temiscouata to Edmundston and Connors, CN Tables 1, 1a and 2 in N.B. and N.S., the Maritime track bank; 142: the Chicago, Duluth & Georgian Bay steamers North American and South American; 141: C.S.L. boats named; 140: full rebuild; 135-139: Niagara, the Muskoka, Pointe au Baril and C.S.L. boats, motor trains, the Newfoundland Railway; Version 62 moved the project to git). For a new chat, read HANDOFF.md first (short), then the sections of this file it points to.
 
 ## What this is
 
@@ -2444,6 +2444,24 @@ Stations of different railways within 250 m (70 pairs; script: same check over v
   the zone the timetable was printed in (no "shown in Pacific time ..."). FIX the same evening: ZOFF declared with var (hm runs above its line).
 - NS&T / CN steamers page (condensed tables) saved: dmr-sources og1948_cnq/nst_cn_steamers_condensed.png. Questions out to Brendan (track KMZ, Port
   Dalhousie cars, Toronto - Port Dalhousie boat, Cobourg - Genesee points, colours).
+
+## Version 159 (10 November 2026): CP New Brunswick and the line across Maine
+- Brendan's CP Main & NB material (CP public timetable, April 1948, screenshots; two KMZ traces). Track: tools/mar_import_cp_maine.py ->
+  traces/maritimes/cp_maine.geojson: the International Railway of Maine (own cp) and the Maine Central Mattawamkeag - Vanceboro (new owner mec, gold:
+  Brendan, B&M / MEC maroon and gold; page CSS --mec). Ties: at Boundary (2 m) and Vanceboro (84 m) to the CP traces.
+- on_cp_t010.csv rewritten Sherbrooke - Saint John (375.1 mi; 377.0 traced), the Table 12 intermediate stations for the through trains; Vanceboro row tz E/A.
+  Columns 40, 204, 42, 42s (Sat: ends at Brownville Jct.), 104 (Sun, Brownville Jct. - Saint John), 256, M118 (Megantic - Brownville Jct.; was M256B), 39,
+  39m (Mon, from Megantic), 41, 41s (Sun, from Brownville Jct.), 103 (Sun, Saint John - Brownville Jct.), M117 (Brownville Jct. - Megantic; was M257B), 257.
+  The Boundary border estimates are gone (Holeb and Jackman times printed).
+- New files: on_cp_t012 (Saint John - McAdam - Vanceboro locals 101/102/105/106 and The Gull 113/114, daily June 20 - Sept. 5), t012a (Fredericton Jct. -
+  Fredericton), t013 (McAdam - Watt - St. Stephen), t013a (Watt - St. Andrews, M163/M164, Sunday 169/170), t015 (Edmundston - Woodstock - McAdam), t015b
+  (Plaster Rock - Perth Jct.), t015c (Debec Jct. - Houlton), t016 (Norton - Chipman), t016a (Chipman - North Devon - Woodstock motor 155/156), t017 (West
+  Saint John - Bonny River). Generator: scratch mar_tt/cpnb.py. OVER: shift -14400, places CPNB_PLACES (names-file points within 200 m of CP track, ends
+  moved onto the track), force Watt - St. Stephen.
+- Shared stations (on_lines SHARED): CP Saint John and Westfield Beach at the CN stations; Norton at CN's (TO CHECK).
+- Gaps in the CP N.B. track (dashed straight): Gibson Sub North Devon - Barton, Woodstock - Hartland, Debec - Houlton, St. George - Bonny River.
+- ab_lines: a station whose gid belongs to another railway (CN_ / CP_) is noted "<host> station; <railway> trains" when the line's railway is not the host.
+- Checks: check_gtfs 1 known problem; 567 lines, 4108 trips, 6575 stops.
 
 ## Version 158 (10 November 2026): Yarmouth; Lockeport a junction station; Maccan
 - Yarmouth (Brendan's small OSM export and points, 10 Nov 2026): tools/mar_import_yarmouth.py -> traces/maritimes/yarmouth.geojson: DAR (own cp) from the

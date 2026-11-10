@@ -1,0 +1,21 @@
+# Canadian Pacific, Table 12A: Fredericton Jct. - Fredericton. Canadian Pacific public timetable, April 1948 (Brendan, 10 Nov 2026). ATLANTIC time. All daily except Sunday.
+# 105 is the Saint John train of Table 12 (Fredericton Jct. 6.30 p.m., on at 8.55 p.m.); 106 goes on to Saint John (Table 12).
+#train col=No107 num=107 dir=down days="Mon,Tue,Wed,Thu,Fri,Sat" kind=passenger note="Fredericton Jct. 8.20 a.m. to Fredericton 9.00 a.m. (connects from No. 40)."
+#train col=No109 num=109 dir=down days="Mon,Tue,Wed,Thu,Fri,Sat" kind=passenger note="Fredericton Jct. 11.15 a.m. to Fredericton 11.55 a.m. (connects from No. 42)."
+#train col=No111 num=111 dir=down days="Mon,Tue,Wed,Thu,Fri,Sat" kind=passenger note="Fredericton Jct. 6.00 p.m. to Fredericton 6.40 p.m."
+#train col=No105 num=105 dir=down days="Mon,Tue,Wed,Thu,Fri,Sat" kind=passenger note="Fredericton Jct. 8.55 p.m. (from Saint John, No. 105) to Fredericton 9.35 p.m."
+#train col=No106 num=106 dir=up days="Mon,Tue,Wed,Thu,Fri,Sat" kind=passenger note="Fredericton 5.10 a.m. to Fredericton Jct. 5.47 a.m., on to Saint John (Table 12)."
+#train col=No108 num=108 dir=up days="Mon,Tue,Wed,Thu,Fri,Sat" kind=passenger note="Fredericton 9.30 a.m. to Fredericton Jct. 10.10 a.m."
+#train col=No110 num=110 dir=up days="Mon,Tue,Wed,Thu,Fri,Sat" kind=passenger note="Fredericton 4.30 p.m. to Fredericton Jct. 5.10 p.m. (connects with No. 41)."
+#train col=No112 num=112 dir=up days="Mon,Tue,Wed,Thu,Fri,Sat" kind=passenger note="Fredericton 7.20 p.m. to Fredericton Jct. 8.00 p.m. (connects with No. 39)."
+mile,station,principal,prov,tz,No107,No109,No111,No105,No106,No108,No110,No112
+0.0,Fredericton Junction,1,NB,A,lv 8.20a,lv 11.15a,lv 6.00p,lv 8.55p,ar 5.47a,ar 10.10a,ar 5.10p,ar 8.00p
+3.0,Three Tree Creek,0,NB,A,f8.26a,f11.21a,f6.06p,f9.01p,f5.41a,f10.03a,f5.02p,f7.52p
+8.2,Rusagonis,0,NB,A,f8.34a,f11.29a,f6.14p,f9.09p,f5.33a,f9.55a,f4.53p,f7.44p
+12.1,Waasis,0,NB,A,f8.40a,f11.35a,f6.20p,f9.15p,f5.27a,f9.49a,f4.47p,f7.39p
+16.8,Glasier,0,NB,A,f8.47a,f11.42a,,f9.22p,f5.20a,f9.42a,,f7.32p
+18.8,Doak,0,NB,A,f8.50a,f11.45a,f6.30p,f9.25p,f5.17a,f9.39a,f4.37p,f7.29p
+20.0,Oborne,0,NB,A,f8.52a,f11.47a,,f9.27p,f5.15a,f9.36a,,f7.26p
+20.7,Morrison,0,NB,A,f8.54a,f11.49a,,f9.29p,f5.14a,f9.35a,,f7.25p
+21.2,Salamanca,0,NB,A,f8.56a,f11.50a,f6.36p,f9.30p,f5.13a,f9.33a,f4.33p,f7.23p
+22.2,Fredericton,1,NB,A,ar 9.00a,ar 11.55a,ar 6.40p,ar 9.35p,lv 5.10a,lv 9.30a,lv 4.30p,lv 7.20p

@@ -1,0 +1,10 @@
+# Canadian Pacific, Table 15C: Debec Jct. - Houlton, Me. (mixed). Canadian Pacific public timetable, April 1948 (Brendan, 10 Nov 2026). ATLANTIC time. Daily except Sunday.
+#train col=M171 num=171 dir=down days="Mon,Tue,Wed,Thu,Fri,Sat" kind=mixed note="Mixed, daily except Sunday: Debec Jct. 11.55 a.m. to Houlton, Me. 12.20 p.m."
+#train col=M173 num=173 dir=down days="Mon,Tue,Wed,Thu,Fri,Sat" kind=mixed note="Mixed, daily except Sunday: Debec Jct. 5.10 p.m. to Houlton, Me. 5.35 p.m."
+#train col=M172 num=172 dir=up days="Mon,Tue,Wed,Thu,Fri,Sat" kind=mixed note="Mixed, daily except Sunday: Houlton, Me. 10.45 a.m. to Debec Jct. 11.10 a.m."
+#train col=M174 num=174 dir=up days="Mon,Tue,Wed,Thu,Fri,Sat" kind=mixed note="Mixed, daily except Sunday: Houlton, Me. 4.15 p.m. to Debec Jct. 4.40 p.m."
+mile,station,principal,prov,tz,M171,M173,M172,M174
+0.0,Debec Junction,1,NB,A,lv 11.55a,lv 5.10p,ar 11.10a,ar 4.40p
+1.9,Elmwood,0,NB,A,f12.01p,f5.15p,f11.05a,f4.35p
+3.5,Green Road,0,NB,A,f12.05p,f5.20p,f11.00a,f4.30p
+8.0,Houlton,1,NB,A,ar 12.20p,ar 5.35p,lv 10.45a,lv 4.15p

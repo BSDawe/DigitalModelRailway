@@ -1,0 +1,20 @@
+# Canadian Pacific, Table 16: Norton - Chipman (mixed). Canadian Pacific public timetable, April 1948 (Brendan, 10 Nov 2026). ATLANTIC time. Daily except Sunday.
+#train col=M159 num=159 dir=down days="Mon,Tue,Wed,Thu,Fri,Sat" kind=mixed note="Mixed, daily except Sunday: Norton 8.30 a.m. to Chipman 11.20 a.m."
+#train col=M160 num=160 dir=up days="Mon,Tue,Wed,Thu,Fri,Sat" kind=mixed note="Mixed, daily except Sunday: Chipman 1.10 p.m. to Norton 3.40 p.m."
+mile,station,principal,prov,tz,M159,M160
+0.0,Norton,1,NB,A,lv 8.30a,ar 3.40p
+4.2,Case,0,NB,A,f8.44a,f3.21p
+7.5,Belleisle,0,NB,A,8.57a,f3.11p
+11.3,Scotch Settlement,0,NB,A,f9.11a,f2.58p
+12.9,Annidale,0,NB,A,f9.18a,f2.53p
+15.3,Thorne,0,NB,A,f9.25a,f2.43p
+16.4,Perry,0,NB,A,f9.28a,f2.39p
+18.3,Thompson,0,NB,A,,f2.29p
+20.2,Cody,0,NB,A,9.43a,2.23p
+21.8,Washademoak,0,NB,A,f9.50a,f2.17p
+23.4,Bagdad,0,NB,A,f9.55a,f2.13p
+25.5,Young's Cove Road,0,NB,A,10.05a,2.07p
+32.7,Granville,0,NB,A,f10.26a,f1.49p
+33.7,Cumberland Bay,0,NB,A,10.32a,1.46p
+38.4,Pennlyn,0,NB,A,f10.55a,f1.30p
+44.6,Chipman,1,NB,A,ar 11.20a,lv 1.10p

@@ -1,0 +1,19 @@
+# Canadian Pacific, Table 15B: Plaster Rock - Perth Jct. (mixed). Canadian Pacific public timetable, April 1948 (Brendan, 10 Nov 2026). ATLANTIC time. Daily except Sunday. (Table 15A, Presque Isle - Aroostook: freight only.)
+#train col=M184 num=184 dir=down days="Mon,Tue,Wed,Thu,Fri,Sat" kind=mixed note="Mixed, daily except Sunday: Plaster Rock 11.15 a.m. to Perth Jct. 1.30 p.m."
+#train col=M183 num=183 dir=up days="Mon,Tue,Wed,Thu,Fri,Sat" kind=mixed note="Mixed, daily except Sunday: Perth Jct. 3.05 p.m. to Plaster Rock 5.15 p.m."
+mile,station,principal,prov,tz,M184,M183
+0.0,Plaster Rock,1,NB,A,lv 11.15a,ar 5.15p
+1.7,Wapske,0,NB,A,f11.25a,f4.50p
+4.7,Three Brooks,0,NB,A,f11.35a,f4.38p
+6.1,Reed's Island,0,NB,A,f11.40a,f4.32p
+7.8,Beveridge,0,NB,A,f11.45a,f4.25p
+8.8,Odell River,0,NB,A,f11.50a,f4.20p
+12.3,Arthurette,0,NB,A,f12.03p,f4.08p
+13.1,Licford,0,NB,A,f12.08p,f4.03p
+13.9,Red Rapids,0,NB,A,f12.13p,f3.58p
+16.3,Hillside,0,NB,A,f12.25p,f3.48p
+18.0,Currie,0,NB,A,f12.35p,f3.43p
+20.4,Rowena,0,NB,A,f12.50p,f3.35p
+23.5,Tobique Narrows,0,NB,A,f1.05p,f3.22p
+25.2,Millicete,0,NB,A,f1.15p,f3.15p
+27.5,Perth Junction,1,NB,A,ar 1.30p,lv 3.05p

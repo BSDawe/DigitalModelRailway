@@ -1,32 +1,81 @@
-# Canadian Pacific, Table 10 (Montreal - Saint John), the Quebec part: Sherbrooke - Cookshire - Megantic - Boundary. Canadian Pacific timetable, 1948, Table 10. Eastern time (the Maine and Quebec part is Eastern time; Atlantic time east of Vanceboro).
-# Miles from Sherbrooke (printed from Saint John: Sherbrooke 375.1). Boundary, Que. is the last station in Quebec; the line goes on into Maine (Lowelltown, Jackman,
-# Greenville, Brownville Jct., Vanceboro, McAdam, Saint John: not built, to do with New Brunswick and the U.S.). Border-side times (~) for 39, 41, 40, 42 estimated between
-# Holeb, Me. and Megantic. Montreal - Sherbrooke times are Table 23's. The A.T. dittos down the time-zone column are taken as Eastern time west of Vanceboro (Table 8
-# prints Megantic E.T.; Atlantic time would make 41 run Holeb - Megantic in 12 minutes).
-#train col=No40 num=40 dir=down days="Sun,Mon,Tue,Wed,Thu,Fri" kind=passenger note="From Montreal (Windsor Station) 3.15 p.m. (Table 23); on through Maine to Saint John (Table 10)."
+# Canadian Pacific, Table 10 (Montreal - Saint John): Sherbrooke - Megantic - Boundary - Jackman - Greenville - Brownville Jct. - Mattawamkeag - Vanceboro - McAdam -
+# Fredericton Jct. - Saint John. Canadian Pacific public timetable, April 1948, Tables 10 and 12 (Brendan, 10 Nov 2026; the Quebec part first built 25 Oct 2026).
+# Miles from Sherbrooke (printed from Saint John: Sherbrooke 375.1). EASTERN time west of Vanceboro, ATLANTIC time east (Vanceboro row E/A: the arrival in the zone the
+# train comes from). Intermediate N.B. times from Table 12. Montreal - Sherbrooke times are Table 23's. Track in Maine: the International Railway of Maine (CP) to
+# Mattawamkeag, then the Maine Central to Vanceboro (CP trackage rights; traces/maritimes/cp_maine.geojson).
+# Signs: 39 leaves Saint John daily except Sunday and reaches Megantic daily except Monday; from Megantic it is daily (No39m: the Monday train from Megantic).
+# 41 leaves Saint John daily except Sunday; on Sundays No. 103 runs Saint John - Brownville Jct. and No. 41 runs on daily from there (No41s). 42 leaves Montreal daily
+# but runs east of Brownville Jct. daily except Sunday; on Sundays No. 104 runs Brownville Jct. - Saint John (No42s: the Saturday-night 42, ending at Brownville).
+# b d x: conditional stops (to let off or take on revenue passengers only); s: stops on signal for revenue passengers. Holeb and Greenville arrivals of the mixed
+# trains (~) estimated: the table prints only their departures.
+# The mixed trains: M118 Megantic 8.00 a.m. - Brownville Jct. 2.10 p.m., M117 Brownville Jct. 9.00 a.m. - Megantic 3.20 p.m. (before 10 Nov 2026 built as
+# M256B / M257B, Megantic - Boundary only). The Bangor & Aroostook Bangor - Greenville connection in Table 10 is U.S.: not built (stage 4).
+#train col=No40 num=40 dir=down days="Sun,Mon,Tue,Wed,Thu,Fri" kind=passenger note="From Montreal (Windsor Station) 3.15 p.m., daily except Saturday (Table 23); Saint John 6.30 a.m. daily except Sunday. Saturdays, through cars of The Pine Tree from Boston at Vanceboro."
 #train col=No204 num=204 dir=down days=Sat kind=passenger note="From Montreal (Windsor Station) 12.40 p.m. (Table 23); ends at Megantic."
-#train col=No42 num=42 dir=down days=daily kind=passenger note="From Montreal (Windsor Station) 7.40 p.m. (Table 23); on through Maine to Saint John 11.35 a.m. Atlantic time. Birchton, Bury: stop Saturdays to let off passengers."
+#train col=No42 num=42 dir=down days="Sun,Mon,Tue,Wed,Thu,Fri" kind=passenger note="From Montreal (Windsor Station) 7.40 p.m. (Table 23); Saint John 11.35 a.m. Atlantic time, daily except Sunday. Birchton, Bury: stop Saturdays to let off passengers."
+#train col=No42s num=42 dir=down days=Sat kind=passenger note="Saturday night from Montreal (Windsor Station) 7.40 p.m.: ends at Brownville Jct. on Sunday morning; No. 104 goes on to Saint John."
+#train col=No104 num=104 dir=down days=Sun kind=passenger note="Sunday only: Brownville Jct. 4.45 a.m. Eastern time (from No. 42) to Saint John 11.00 a.m. Atlantic time."
 #train col=M256 num=256 dir=down days="Mon,Tue,Wed,Thu,Fri,Sat" kind=mixed note="Mixed. Sherbrooke - Megantic."
-#train col=M256B num=256 dir=down days="Mon,Tue,Wed,Thu,Fri,Sat" kind=mixed note="Mixed. Megantic - Boundary and on to Greenville, Me. (a separate run from the Sherbrooke - Megantic one)."
-#train col=No39 num=39 dir=up days=daily kind=passenger note="From Saint John (Table 10; daily except Monday east of Megantic); on to Montreal (Table 23)."
-#train col=No41 num=41 dir=up days=daily kind=passenger note="From Saint John 4.30 p.m. Atlantic time (Table 10); on to Montreal (Table 23)."
-#train col=M257B num=257 dir=up days="Mon,Tue,Wed,Thu,Fri,Sat" kind=mixed note="Mixed. From Greenville, Me.; ends at Megantic (a separate run from the Megantic - Sherbrooke one)."
+#train col=M118 num=118 dir=down days="Mon,Tue,Wed,Thu,Fri,Sat" kind=mixed note="Mixed, daily except Sunday: Megantic 8.00 a.m. - Jackman - Greenville - Brownville Jct. 2.10 p.m. Holeb and Greenville arrivals estimated."
+#train col=No39 num=39 dir=up days="Mon,Tue,Wed,Thu,Fri,Sat" kind=passenger note="Saint John 7.30 p.m. Atlantic time, daily except Sunday; Megantic 4.15 a.m.; on to Montreal (Table 23)."
+#train col=No39m num=39 dir=up days=Mon kind=passenger note="Monday: No. 39 from Megantic 4.30 a.m. (daily from Megantic; the train from Saint John does not run on Sunday night)."
+#train col=No41 num=41 dir=up days="Mon,Tue,Wed,Thu,Fri,Sat" kind=passenger note="Saint John 4.30 p.m. Atlantic time, daily except Sunday; on to Montreal (Table 23), 7.05 a.m."
+#train col=No41s num=41 dir=up days=Sun kind=passenger note="Sunday: No. 41 from Brownville Jct. 9.55 p.m. Eastern time (from No. 103) to Montreal (Table 23)."
+#train col=No103 num=103 dir=up days=Sun kind=passenger note="Sunday only: Saint John 5.15 p.m. Atlantic time to Brownville Jct. 9.45 p.m. Eastern time, on as No. 41."
+#train col=M117 num=117 dir=up days="Mon,Tue,Wed,Thu,Fri,Sat" kind=mixed note="Mixed, daily except Sunday: Brownville Jct. 9.00 a.m. - Greenville - Jackman - Megantic 3.20 p.m. Greenville and Holeb arrivals estimated."
 #train col=M257 num=257 dir=up days="Mon,Tue,Wed,Thu,Fri,Sat" kind=mixed note="Mixed. Megantic - Sherbrooke."
-mile,station,principal,prov,tz,No40,No204,No42,M256,M256B,No39,No41,M257B,M257
-0.0,Sherbrooke,1,QC,E,lv 6.30p,lv 4.10p,lv 10.50p,lv 7.30a,,ar 7.00a,ar 4.10a,,ar 5.15p
-3.1,Lennoxville,1,QC,E,6.38p,4.19p,10.58p,7.40a,,6.50a,3.59a,,5.07p
-10.3,Johnville,0,QC,E,6.56p,4.38p,,8.03a,,6.35a,,,f4.51p
-13.7,Bulwer,0,QC,E,f7.03p,f4.45p,,f8.11a,,f6.26a,,,f4.45p
-16.4,Birchton,0,QC,E,7.10p,4.51p,11.28p,f8.18a,,6.21a,,,f4.36p
-21.1,Cookshire,1,QC,E,7.22p,5.10p,11.40p,8.34a,,6.06a,,,4.20p
-30.2,Bury,0,QC,E,7.41p,5.32p,11.59p,8.59a,,5.49a,,,3.54p
-34.8,Long Swamp,0,QC,E,,f5.40p,,f9.10a,,,,,f3.43p
-38.3,Gould,0,QC,E,f7.53p,f5.46p,,f9.18a,,f5.32a,,,f3.35p
-43.5,Scotstown,1,QC,E,8.05p,5.58p,12.25a,9.30a,,5.20a,2.46a,,3.18p
-50.0,McLeod's,0,QC,E,,f6.13p,,f9.46a,,5.08a,,,f3.07p
-53.7,Milan,0,QC,E,8.27p,6.21p,,9.57a,,5.03a,,,3.00p
-60.1,Spring Hill,0,QC,E,8.37p,6.30p,,10.10a,,4.52a,,,2.45p
-68.5,Megantic,1,QC,E,ar 8.55p / lv 9.10p,ar 6.50p,ar 1.10a / lv 1.20a,ar 10.45a,lv 8.00a,ar 4.15a / lv 4.30a,ar 1.55a / lv 2.05a,ar 3.20p,lv 2.20p
-74.6,Ditchfield,0,QC,E,,,,,f8.15a,,,f3.00p,
-78.6,Trudel,0,QC,E,,,,,f8.23a,,,f2.48p,
-83.7,Boundary,1,QC,E,~ar 9.40p,,~ar 1.53a,,ar f8.35a,~lv 3.38a,~lv 1.19a,lv f2.35p,
+mile,station,principal,prov,tz,No40,No204,No42,No42s,No104,M256,M118,No39,No39m,No41,No41s,No103,M117,M257
+0.0,Sherbrooke,1,QC,E,lv 6.30p,lv 4.10p,lv 10.50p,lv 10.50p,,lv 7.30a,,ar 7.00a,ar 7.00a,ar 4.10a,ar 4.10a,,,ar 5.15p
+3.1,Lennoxville,1,QC,E,6.38p,4.19p,10.58p,10.58p,,7.40a,,6.50a,6.50a,3.59a,3.59a,,,5.07p
+10.3,Johnville,0,QC,E,6.56p,4.38p,,,,8.03a,,6.35a,6.35a,,,,,f4.51p
+13.7,Bulwer,0,QC,E,f7.03p,f4.45p,,,,f8.11a,,f6.26a,f6.26a,,,,,f4.45p
+16.4,Birchton,0,QC,E,7.10p,4.51p,11.28p,11.28p,,f8.18a,,6.21a,6.21a,,,,,f4.36p
+21.1,Cookshire,1,QC,E,7.22p,5.10p,11.40p,11.40p,,8.34a,,6.06a,6.06a,,,,,4.20p
+30.2,Bury,0,QC,E,7.41p,5.32p,11.59p,11.59p,,8.59a,,5.49a,5.49a,,,,,3.54p
+34.8,Long Swamp,0,QC,E,,f5.40p,,,,f9.10a,,,,,,,,f3.43p
+38.3,Gould,0,QC,E,f7.53p,f5.46p,,,,f9.18a,,f5.32a,f5.32a,,,,,f3.35p
+43.5,Scotstown,1,QC,E,8.05p,5.58p,12.25a,12.25a,,9.30a,,5.20a,5.20a,2.46a,2.46a,,,3.18p
+50.0,McLeod's,0,QC,E,,f6.13p,,,,f9.46a,,5.08a,5.08a,,,,,f3.07p
+53.7,Milan,0,QC,E,8.27p,6.21p,,,,9.57a,,5.03a,5.03a,,,,,3.00p
+60.1,Spring Hill,0,QC,E,8.37p,6.30p,,,,10.10a,,4.52a,4.52a,,,,,2.45p
+68.5,Megantic,1,QC,E,ar 8.55p / lv 9.10p,ar 6.50p,ar 1.10a / lv 1.20a,ar 1.10a / lv 1.20a,,ar 10.45a,lv 8.00a,ar 4.15a / lv 4.30a,lv 4.30a,ar 1.55a / lv 2.05a,ar 1.55a / lv 2.05a,,ar 3.20p,lv 2.20p
+74.6,Ditchfield,0,QC,E,,,,,,,f8.15a,,,,,,f3.00p,
+78.6,Trudel,0,QC,E,,,,,,,f8.23a,,,,,,f2.48p,
+83.7,Boundary,1,QC,E,,,,,,,f8.35a,,,,,,f2.35p,
+87.9,Lowelltown,0,ME,E,,,,,,,f8.45a,,,,,,f2.20p,
+90.7,Skinner,0,ME,E,,,,,,,f8.50a,,,,,,f2.11p,
+93.2,Keough,0,ME,E,,,,,,,f8.55a,,,,,,f2.05p,
+99.3,Holeb,1,ME,E,10.11p,,2.26a,2.26a,,,ar ~9.05a / lv 9.50a,3.01a,,12.43a,12.43a,,ar ~1.15p / lv 1.55p,
+100.9,Boston Ranch,0,ME,E,,,,,,,f9.53a,,,,,,f1.10p,
+106.9,Attean,0,ME,E,,,,,,,f10.05a,,,,,,f12.55p,
+112.0,Jackman,1,ME,E,10.33p,,2.50a,2.50a,,,10.35a,2.29a,,12.19a,12.19a,,12.45p,
+116.1,Blair,0,ME,E,,,,,,,f10.43a,,,,,,f12.22p,
+120.5,Long Pond,0,ME,E,,,,,,,f10.55a,,,,,,12.06p,
+125.2,Mackamp,0,ME,E,,,,,,,f11.03a,,,,,,f11.56a,
+129.9,Brassua,0,ME,E,,,,,,,f11.14a,,,,,,f11.47a,
+133.9,Tarratine,0,ME,E,,,,,,,f11.22a,,,,,,f11.40a,
+136.6,Somerset,0,ME,E,,,,,,,f11.30a,,,,,,f11.30a,
+141.4,Moosehead,0,ME,E,,,,,,,f11.38a,,,,,,f11.20a,
+147.4,Squaw Brook,0,ME,E,,,,,,,f11.48a,,,,,,f11.10a,
+152.2,Greenville,1,ME,E,11.33p,,3.45a,3.45a,,,ar ~12.00p / lv 12.45p,1.32a,,11.08p,11.08p,,ar ~10.40a / lv 11.00a,
+159.1,Morkill,0,ME,E,,,,,,,f1.00p,,,,,,f10.20a,
+164.4,Bodfish,0,ME,E,,,,,,,f1.12p,,,,,,f10.05a,
+167.9,Onawa,0,ME,E,,,,,,,1.25p,,,,,,9.55a,
+177.1,Barnard,0,ME,E,,,,,,,f1.48p,,,,,,f9.30a,
+185.6,Brownville Junction,1,ME,E,ar 12.25a / lv 12.35a,,ar 4.35a / lv 4.45a,ar 4.35a,lv 4.45a,,ar 2.10p,ar 12.15a / lv 12.25a,,ar 9.45p / lv 9.55p,lv 9.55p,ar 9.45p,lv 9.00a,
+228.7,Mattawamkeag,1,ME,E,1.34a,,5.50a,,5.45a,,,11.05p,,8.35p,,8.35p,,
+258.7,Danforth,0,ME,E,,,s6.54a,,s6.41a,,,,,s7.31p,,s7.40p,,
+284.8,Vanceboro,1,ME,E/A,ar 2.50a / lv 3.55a,,ar 7.35a / lv 8.45a,,ar 7.15a / lv 8.25a,,,ar 10.25p / lv 9.35p,,ar 7.40p / lv 6.50p,,ar 7.58p / lv 7.05p,,
+290.7,McAdam,1,NB,A,ar 4.10a / lv 4.20a,,ar 9.00a / lv 9.25a,,ar 8.40a / lv 8.50a,,,ar 9.55p / lv 10.10p,,ar 7.00p / lv 7.25p,,ar 7.30p / lv 7.45p,,
+299.9,Magaguadavic,0,NB,A,,,,,,,,b9.39p,,,,,,
+304.2,Prince William,0,NB,A,,,,,,,,b9.33p,,,,,,
+310.0,Harvey,1,NB,A,,,9.53a,,9.18a,,,f9.25p,,6.27p,,6.57p,,
+315.5,Cork,0,NB,A,,,,,,,,b9.15p,,,,,,
+319.9,Rooth,0,NB,A,,,,,,,,b9.06p,,,,,,
+327.4,Tracy,0,NB,A,,,,,,,,b8.51p,,f5.56p,,,,
+330.7,Fredericton Junction,1,NB,A,ar 5.11a / lv 5.20a,,ar 10.20a / lv 10.25a,,9.47a,,,ar 8.38p / lv 8.45p,,ar 5.42p / lv 5.49p,,6.24p,,
+351.3,Welsford,0,NB,A,,,,,,,,b8.10p,,,,,,
+361.1,Westfield Beach,0,NB,A,,,d11.04a,,d10.29a,,,b7.56p,,f5.00p,,x5.40p,,
+365.2,Grand Bay,0,NB,A,f6.07a,,d11.12a,,d10.36a,,,b7.50p,,f4.52p,,x5.34p,,
+372.9,Fairville,0,NB,A,f6.20a,,11.25a,,10.50a,,,f7.40p,,4.40p,,f5.23p,,
+375.1,Saint John,1,NB,A,ar 6.30a,,ar 11.35a,,ar 11.00a,,,lv 7.30p,,lv 4.30p,,lv 5.15p,,
