@@ -75,6 +75,7 @@ Last updated 10 November 2026 (Version 151).
 ## Work for Claude
 - [ ] Trip chaining across files (plan: staged/maritimes/STAGED.md; generalise real_ends.py; GTFS block_id). Waits on the decision above. Then again for CP.
 - [ ] Build-out order (Brendan, 8 Nov 2026): 1 CN Maritimes (done, V148), 2 CP Maritimes, 3 short lines with 1948 passenger service, 4 U.S. connections (whole U.S. railways in time).
+- [ ] Before the U.S. build-out: split parts/on_build.json (25 MB: Ontario, Quebec and the Maritimes in one file) by region or railway, so it stays under GitHub's 50 MB warning (100 MB refuses a push) and each version commits only the changed region; then have the page load a region's data when it is viewed. CP Maritimes is small enough to go first (Brendan, 10 Nov 2026).
 - [ ] CP Table 10 east of Boundary (Maine: Jackman, Greenville, Brownville Jct., Vanceboro; N.B.: McAdam, Fredericton, Saint John, St. Andrews, St. Stephen, Woodstock); the Bangor & Aroostook connection; Table 8 south of the border (Newport - Wells River - Boston / New York); the Quebec - Levis ferry (QC Nos. 2 / 5); the Beebe Jct. - Rock Island bus. (25 Oct; goes with CP Maritimes / U.S.)
 - [ ] The Prescott - Ogdensburg car ferry (Canadian Pacific Car & Passenger Transfer Co.). (3 Nov)
 - [ ] Check the Montreal suburban trains against the CN Montreal employee timetable of June 20, 1948 (https://www.traingeek.ca/files/19480620-ett-montreal-16.pdf). (7 Nov)
