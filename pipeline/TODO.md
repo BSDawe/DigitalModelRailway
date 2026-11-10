@@ -2,7 +2,7 @@
 
 One list for the Digital Model Railway: questions for Brendan, material he is to supply, and work for Claude. It merges OPEN_QUESTIONS.md with the TO DO lists that were kept in STATE.md (the last of them: "TO DO (1 November 2026)"), as Brendan asked on 9 Nov 2026.
 Claude adds items as they come up. When one is answered or done, it moves to "Done and answered" with the date. Each open item says what the build does in the meantime. Version tags (V143) say when an item was raised.
-Last updated 9 November 2026 (Version 150).
+Last updated 10 November 2026 (Version 151).
 
 ## Decisions for Brendan
 - [ ] Trip chaining: when should two pieces of the same train join into one trip? The plan was to join automatically when the stop between them is under an hour (named trains only when the names agree; an unnamed piece never blocks a join). Brendan, 9 Nov 2026: not sure about the hour any more. Undecided; chaining waits on it.
@@ -53,17 +53,11 @@ Last updated 9 November 2026 (Version 150).
 
 ## Material wanted from Brendan
 ### Traces
-- [ ] Saint John: E&NA track end to Union Station (4.5 km). (V143)
 - [ ] Yarmouth: track end to the station point. (V145)
 - [ ] Newfoundland Railway: trace end to Port-aux-Basques. (V145)
-- [ ] Nelson Junction (Table 24). The Wikipedia traces of the Intercolonial and the Chatham Branch only cross, about 2 mi past Derby Junction. A 0.2 km estimated tie there lets the Newcastle - Loggieville motors run, 20.5 mi traced against 17.7 printed. The real connection is wanted. (V146)
 - [ ] Stellarton - Westville (Table 29): the Pictou trains run over the former Acadia Coal Co. and Nova Scotia Coal Co. lines (CN since V149). If CN's 1948 route went another way, a trace is wanted. (V146)
 - [ ] Borden - Cape Tormentine car ferry: the course across the strait is a straight estimate between the pier ends. (V146)
-- [ ] Saint John Valley line (Table 33): no track on file, Saint John - Westfield Beach - Fredericton - Woodstock - Centreville, so the whole table runs on broken straight estimates (135.5 mi against 172.6 printed). A trace is wanted. (V148)
-- [ ] Kent Northern (Table 47), Richibucto - Rexton - Kent Junction: no track on file (straight estimate). (V148)
 - [ ] Pokemouche Junction: the Wikipedia Gulf Shore trace stops 0.2 km short of the Caraquet Railway; a short tie added (solid). (V148)
-- [ ] International Railway at Campbellton (Table 36): Tide Head (4.7) is on the Intercolonial in the data, but the trains leave by the International's own curve out of Campbellton (137.0 mi traced, 137.1 printed), so Tide Head is placed by mileage on the International. Did the International have its own Tide Head station? (V148)
-- [ ] Oxford Junction connector (MESL to Intercolonial, a 204 m gap; the trains find track anyway). (V143)
 - [ ] Detroit River Tunnel portal and border point (APPROXIMATE).
 - [ ] Camp Borden (CN 122 / 126).
 
@@ -91,7 +85,7 @@ Last updated 9 November 2026 (Version 150).
 - [ ] Interurban train icon: Brendan is not satisfied; revisit later. (23 Oct)
 
 ## Short lines (stage 3)
-- [ ] Maritime Coal, Railway & Power: timetable filed (Official Guide, April 1948). Needs a trace Maccan - River Hebert - Joggins Mines. (9 Nov)
+- [ ] Maritime Coal, Railway & Power: timetable filed (Official Guide, April 1948); track in (traces/maritimes/mcrp.geojson, from the OSM regional export, 11.8 mi / 12 printed). Its Maccan station is the CN station (Brendan, 9 Nov 2026): share the stop. Ready to build when the short lines come up. (9 Nov)
 - [ ] Sydney & Louisburg: timetable and track. (8 Nov)
 
 ## Done and answered
@@ -103,6 +97,7 @@ Last updated 9 November 2026 (Version 150).
 - Campbellton at Brendan's point on the main line (all Campbellton files). CN Edmundston at Brendan's point (47 21 41.94 N, 68 20 07.84 W), on_cn_t023.
 
 ### Answered
+- Brendan's regional OpenStreetMap export (9 Nov 2026; N.B. and western N.S.) filled these gaps (V151): Saint John E&NA - Union Station; the Saint John Valley line (Saint John - Westfield Beach on CP, Westfield Beach - Fredericton - Woodstock - Centreville: 171.3 mi traced / 172.6); the Kent Northern (26.3 / 26.4); Nelson Junction - Chatham - Loggieville (Newcastle - Loggieville 17.8 / 17.7); the Oxford Junction connector; the International Railway, which leaves the Intercolonial at Tide Head (Tide Head now on the Intercolonial; Campbellton - Edmundston 137.4 / 137.1); the Maritime Coal, Railway & Power track (Maccan - Joggins Mines 11.8 / 12).
 - Middleton - Bridgetown (Table 37) is CN's own Middleton & Victoria Beach Railway (the Canadian Northern trace to Port Wade), not the Dominion Atlantic (Brendan, 9 Nov 2026; V150). On to Port Wade still "check" (no 1948 train found).
 - The four Pictou County lines on the Wikipedia map (Nova Scotia Coal Co., Acadia Coal Co., Nova Scotia Steel and Coal Co., Vale Railway) were part of the CGR, so CN from 1923: now CN track (Brendan, 9 Nov 2026; V149).
 - Through trains: a train runs through as one trip; within one file, use the six-day / seventh-day split (8 Nov). Chaining across files waits until all the CN Maritime files are in, then again for CP. Named trains join only when the names agree (8 Nov). The under-an-hour rule is reopened (9 Nov): see Decisions.

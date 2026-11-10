@@ -61,4 +61,5 @@ For later (stage 3, short lines). Atlantic time. Daily except Sunday (†). Conn
 - Joggins Mines 10.15 a.m. to Maccan 11.15 a.m.
 - So the train lies over at Joggins overnight. The return sits before the outbound in the day: it leaves Joggins 10.15 a.m. and gets back there at 2.20 p.m.
 - Branch Chignecto - Maccan (3 miles) is freight only: not modelled.
-- NEEDED: track (Maccan - River Hebert - Joggins; nothing in the bank yet), and a River Hebert time (not printed; interpolate by mileage).
+- Track: traces/maritimes/mcrp.geojson (own mcrp; OSM regional export, 9 Nov 2026), Maccan - River Hebert - Joggins Mines 11.8 mi. River Hebert: no time printed (by mileage).
+- Maccan: the same station as CN's (Brendan, 9 Nov 2026): a shared stop (on_lines SHARED) with the CN Maccan point.

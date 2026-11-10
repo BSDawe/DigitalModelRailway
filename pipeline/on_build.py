@@ -81,14 +81,14 @@ OVER = {'on_cn_t053': dict(places={'Ste. Anne de Beaupre': (-70.920533, 47.02704
         'on_cn_t010': dict(shift=-14400, places=MAR_PLACES), 'on_cn_t011': dict(shift=-14400, places=MAR_PLACES), 'on_cn_t012': dict(shift=-14400, places=MAR_PLACES),
         'on_cn_t013': dict(shift=-14400, places=MAR_PLACES), 'on_cn_t014': dict(shift=-14400, places=MAR_PLACES), 'on_cn_t015': dict(shift=-14400, places=MAR_PLACES),
         'on_cn_t015a': dict(shift=-14400, places=MAR_PLACES),
-        'on_cn_t024': dict(shift=-14400, places={**MAR_PLACES, 'Chatham': (-65.45757, 47.03461)}, force=[('Derby Junction', 'Chatham')]), 'on_cn_t025': dict(shift=-14400, places=MAR_PE, noplace=['St. Charles']),
+        'on_cn_t024': dict(shift=-14400, places=MAR_PLACES, noplace=['Chatham']), 'on_cn_t025': dict(shift=-14400, places=MAR_PE, noplace=['St. Charles']),
         'on_cn_t027': dict(shift=-14400, places=MAR_PE), 'on_cn_t028': dict(shift=-14400, places=MAR_PE), 'on_cn_t029': dict(shift=-14400, places=MAR_PLACES),
         'on_cn_t030': dict(shift=-14400, places=MAR_PLACES), 'on_cn_t031': dict(shift=-14400, places=MAR_PE), 'on_cn_t031a': dict(shift=-14400, places=MAR_PE),
         'on_cn_t031b': dict(shift=-14400, places=MAR_PE),   # CN page 1116 (9 Nov 2026)
-        'on_cn_t032': dict(shift=-14400, places=MAR_PE), 'on_cn_t033': dict(shift=-14400, places=MAR_PLACES), 'on_cn_t034': dict(shift=-14400, places=MAR_PLACES),
-        'on_cn_t036': dict(shift=-14400, places=MAR_PLACES, noplace=['Tide Head']), 'on_cn_t037': dict(shift=-14400, places=MAR_PLACES), 'on_cn_t037a': dict(shift=-14400, places=MAR_PLACES),
+        'on_cn_t032': dict(shift=-14400, places=MAR_PE), 'on_cn_t033': dict(shift=-14400, places=MAR_PLACES, noplace=['Oak Point', 'Gagetown', 'Oromocto']), 'on_cn_t034': dict(shift=-14400, places=MAR_PLACES),
+        'on_cn_t036': dict(shift=-14400, places=MAR_PLACES), 'on_cn_t037': dict(shift=-14400, places=MAR_PLACES), 'on_cn_t037a': dict(shift=-14400, places=MAR_PLACES),
         'on_cn_t039': dict(shift=-14400, places=MAR_PLACES), 'on_cn_t041': dict(shift=-14400, places={**MAR_PLACES, 'Tracadie': (-64.912046, 47.516984)}), 'on_cn_t045': dict(shift=-14400, places=MAR_PLACES, force=[('Stellarton', 'Sunny Brae')]),
-        'on_cn_t047': dict(shift=-14400, places=MAR_PLACES),   # CN page 1117 (9 Nov 2026); t041's Tracadie is N.B.'s (N.S. has one on the Sydney line)
+        'on_cn_t047': dict(shift=-14400, places=MAR_PLACES, noplace=['Rexton']),   # CN page 1117 (9 Nov 2026); t041's Tracadie is N.B.'s (N.S. has one on the Sydney line)
         'on_cn_t002': dict(shift=-14400, places={'Oxford Junction': (-63.880568, 45.693918), 'Oxford': (-63.860417, 45.733085), 'Pugwash': (-63.660303, 45.850093), 'Tatamagouche': (-63.291086, 45.712141), 'Denmark': (-63.159439, 45.709377), 'Scotsburn': (-62.853672, 45.651353), 'Pictou': (-62.708862, 45.676021)}),   # CGN points; Oxford snapped onto the line (APPROXIMATE)
         'on_nyco_t073': dict(force=[('Helena, N.Y.', 'Rooseveltown, N.Y.')], short='NYC (Table 73)'),   # printed 13 mi; Brendan's trace about 4.5
         'on_cp_t049w': dict(noplace=['London (Quebec St.)'], places={'Windsor': (-83.0446356, 42.2986487)}),   # Windsor: the NYC (Michigan Central) station, '2nd Windsor station' (Brendan, 1 Nov 2026)

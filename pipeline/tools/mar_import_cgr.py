@@ -7,7 +7,7 @@ traces/maritimes/ (see its README), not re-runs of this.
 Status describes the TRACK (there in 1948 or not); who may use it is 'own'. Steps: names cleaned of HTML; duplicates dropped (York & Carleton twice); Wikipedia lines cut where they lie within 15 m of one of Brendan's traces (his trace is
 the line there); Halifax & Cape Breton split at his junction (trace 65: the 1948 line to Mulgrave / the post-1955 causeway leg); the NTR cut at the N.B. boundary
 point already used by the Quebec build (the tail before it is in the Quebec collection); every piece gets a status (see README)."""
-import sqlite3, struct, re, html, json, os, sys
+import sqlite3, struct, re, html, json, math, os, sys
 from pyproj import Transformer
 from shapely.geometry import LineString, Point
 from shapely.ops import unary_union, substring
@@ -45,7 +45,7 @@ NOT_CN = {}
 # 'check' = was this track there in 1948? (Whether trains ran over it is the timetables' business, not the track's: a branch with no train is simply not routed over.)
 CHECK = {8: 'Realignment at Tide Head: alternate alignment, which one was in use in 1948?', 17: 'NB&PEI "Ferry Reroute": earlier or later than 1948?',
          23: 'PEI Short Line Cutoff: there in 1948?',
-         14: 'Albert Southern: still there in 1948?'}   # 11, 12, 13 (Havelock, Elgin, Albert) and 41 (Dartmouth 1896) have 1948 trains (page 1115); 26 (Harmony Jct. - Elmira, 9.9 mi) has Table 31a's (page 1116); 20 (Emerald Jct. - Kinkora - Albany, on to the Borden branch) carries Tables 28 / 31
+         14: 'Albert Southern: still there in 1948?', 9: 'International Railway (Wikipedia trace): set aside for the OpenStreetMap trace in cn_osm_region.geojson, which leaves the Intercolonial at Tide Head as Table 36 has it'}   # 11, 12, 13 (Havelock, Elgin, Albert) and 41 (Dartmouth 1896) have 1948 trains (page 1115); 26 (Harmony Jct. - Elmira, 9.9 mi) has Table 31a's (page 1116); 20 (Emerald Jct. - Kinkora - Albany, on to the Borden branch) carries Tables 28 / 31
 for fid, f in F.items():
     if 51 < fid < 132 or fid == 134: continue
     if fid == 7: REPORT.append('fid 7 York and Carleton: exact duplicate of fid 1, dropped'); continue
@@ -101,5 +101,29 @@ for f in json.load(open(os.path.join(ROOT, 'traces', 'cnor_all.geojson')))['feat
             add('cn', b, 'cn', nm + ' (Bridgetown - Port Wade)', NOTE_C, None, 'cnor', 'check', 'Bridgetown - Port Wade: still there in 1948? (no 1948 train found)', title, br)
         else: add('cn', ls, 'cn', nm, NOTE_C, None, 'cnor', 'ok', None, title, br)
 os.makedirs(OUT, exist_ok=True)
+# Junction vertices: the Wikipedia lines have few vertices (km apart), and the router ties track at points, so a branch from another file that ends ON a
+# Wikipedia line between two of its vertices does not join it (Kent Northern at Kent Junction, 9 Nov 2026). For every end of a line in the other files of
+# traces/maritimes within 30 m of one of these lines, a vertex is put into the line at that spot.
+import glob
+ENDS = []
+for fn in glob.glob(os.path.join(OUT, '*.geojson')):
+    if os.path.basename(fn)[:-8] in FILES: continue
+    for f in json.load(open(fn))['features']:
+        if f['geometry']['type'] == 'LineString': c = f['geometry']['coordinates']; ENDS += [tuple(c[0]), tuple(c[-1])]
+def _m(x, y): return (x * 111320 * math.cos(math.radians(46)), y * 110570)
+for v in FILES.values():
+    for f in v:
+        c = [tuple(x) for x in f['geometry']['coordinates']]; L = LineString([_m(*x) for x in c]); add_at = []
+        for e in ENDS:
+            P = Point(_m(*e))
+            if L.distance(P) < 30 and min(math.dist(_m(*x), _m(*e)) for x in c) > 30: add_at.append((L.project(P), e))
+        if not add_at: continue
+        cum = [0.0]
+        for a, b in zip(c, c[1:]): cum.append(cum[-1] + math.dist(_m(*a), _m(*b)))
+        for d, e in sorted(add_at, reverse=True):
+            i = max(k for k in range(len(cum) - 1) if cum[k] <= d); q = L.interpolate(d)
+            lon, lat = q.x / (111320 * math.cos(math.radians(46))), q.y / 110570
+            c.insert(i + 1, (round(lon, 6), round(lat, 6))); cum.insert(i + 1, d)
+        f['geometry']['coordinates'] = [list(x) for x in c]; REPORT.append(f"junction vertices: {len(add_at)} into {f['properties']['name'][:50]}")
 for k, v in FILES.items(): json.dump(dict(type='FeatureCollection', features=v), open(os.path.join(OUT, k + '.geojson'), 'w'), separators=(',', ':'))
 print({k: len(v) for k, v in FILES.items()}); print('\n'.join(REPORT))

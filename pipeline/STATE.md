@@ -1,7 +1,7 @@
 # The Digital Model Railway — project state
 
 Read this first. It is meant to be enough to start a short, single-task chat without replaying the project's history.
-Last updated 9 November 2026 (Version 150: Middleton - Bridgetown on the Middleton & Victoria Beach; Version 149: the Pictou County lines are CN; Version 148: CN page 1117, the last of the CN Canadian timetables; Version 147: the queued fixes - steamer labels, broken estimated links, North Sydney, Canso train ferry and Mulgrave switchback, ESL, Campbellton, CN Edmundston; Version 146: CN page 1116, P.E.I., Pictou, Newcastle - Loggieville, Table 23 N.B. part, Borden - Cape Tormentine train ferry; Version 145: CN page 1115, N.S. and N.B. branches, Cabot Strait and Yarmouth - Boston steamers; Version 144: CN Table 4 Halifax - Truro - Moncton - Saint John; Version 143: the Maritimes begin: the Temiscouata to Edmundston and Connors, CN Tables 1, 1a and 2 in N.B. and N.S., the Maritime track bank; 142: the Chicago, Duluth & Georgian Bay steamers North American and South American; 141: C.S.L. boats named; 140: full rebuild; 135-139: Niagara, the Muskoka, Pointe au Baril and C.S.L. boats, motor trains, the Newfoundland Railway; Version 62 moved the project to git). For a new chat, read HANDOFF.md first (short), then the sections of this file it points to.
+Last updated 10 November 2026 (Version 151: the regional OSM export fills the N.B. gaps; Version 150: Middleton - Bridgetown on the Middleton & Victoria Beach; Version 149: the Pictou County lines are CN; Version 148: CN page 1117, the last of the CN Canadian timetables; Version 147: the queued fixes - steamer labels, broken estimated links, North Sydney, Canso train ferry and Mulgrave switchback, ESL, Campbellton, CN Edmundston; Version 146: CN page 1116, P.E.I., Pictou, Newcastle - Loggieville, Table 23 N.B. part, Borden - Cape Tormentine train ferry; Version 145: CN page 1115, N.S. and N.B. branches, Cabot Strait and Yarmouth - Boston steamers; Version 144: CN Table 4 Halifax - Truro - Moncton - Saint John; Version 143: the Maritimes begin: the Temiscouata to Edmundston and Connors, CN Tables 1, 1a and 2 in N.B. and N.S., the Maritime track bank; 142: the Chicago, Duluth & Georgian Bay steamers North American and South American; 141: C.S.L. boats named; 140: full rebuild; 135-139: Niagara, the Muskoka, Pointe au Baril and C.S.L. boats, motor trains, the Newfoundland Railway; Version 62 moved the project to git). For a new chat, read HANDOFF.md first (short), then the sections of this file it points to.
 
 ## What this is
 
@@ -2444,6 +2444,22 @@ Stations of different railways within 250 m (70 pairs; script: same check over v
   the zone the timetable was printed in (no "shown in Pacific time ..."). FIX the same evening: ZOFF declared with var (hm runs above its line).
 - NS&T / CN steamers page (condensed tables) saved: dmr-sources og1948_cnq/nst_cn_steamers_condensed.png. Questions out to Brendan (track KMZ, Port
   Dalhousie cars, Toronto - Port Dalhousie boat, Cobourg - Genesee points, colours).
+
+## Version 151 (10 November 2026): Brendan's regional OSM export fills the N.B. gaps
+- Source: Brendan's OpenStreetMap export of N.B. and western N.S. (9 Nov 2026; "not a preferred source, but not rough"; labels inconsistent). New tool
+  tools/mar_import_osm_region.py: shortest paths over the export's railway ways (rail / abandoned / razed; way ends within 80 m tied; ways of another railway
+  can be made 5x dearer) between fixed points, ways of lines already on file dropped from the ends. Output: traces/maritimes/cn_osm_region.geojson (cn),
+  cp_osm_region.geojson (CP Saint John Union - Westfield Beach), mcrp.geojson (Maritime Coal, Railway & Power, Maccan - Joggins Mines, 11.8 mi; not yet timetabled).
+- Pieces (miles vs printed): Saint John E&NA end - Union Station 2.8 (replaces the estimated link); CP Union - Westfield Beach 13.9 (14.0); Valley line
+  Westfield Beach - Fredericton 69.1 (69.8), Fredericton - Woodstock 63.6 (63.0), Woodstock - Centreville 24.4 (25.8); Kent Northern 26.2 (26.4); Nelson Jct. -
+  Chatham - Loggieville (replaces the estimated Nelson tie); Oxford Jct. connector 0.2; International Railway Tide Head - St. Leonard 106.4.
+- tools/mar_import_cgr.py: fid 9 (Wikipedia International Railway into Campbellton) -> check (set aside); NEW junction vertices: any end of a line in the other
+  files within 30 m of a Wikipedia line gets a vertex put into that line there (the Wikipedia lines' vertices are km apart and the router ties at points).
+- on_build: t024 Chatham by mileage (no force); t033 Oak Point, Gagetown, Oromocto by mileage; t036 Tide Head back to its CGN point on the Intercolonial;
+  t047 Rexton by mileage. All on track: oncn033 171.3 / 172.6, oncn047 26.3 / 26.4, oncn024 17.8 / 17.7, oncn036 137.4 / 137.1.
+- Changed vs V150: oncn004 (its Saint John stretch no longer broken), oncn024, oncn033, oncn036, oncn047; oncn023 stations moved < 100 m (junction vertices).
+- Maccan: the MCR&P station is the CN station (Brendan, 9 Nov 2026) - for when the short lines are built (STAGED.md, TODO.md).
+- Checks: check_gtfs 1 known problem; 552 lines, 4042 trips, 6348 stops.
 
 ## Version 150 (9 November 2026): Middleton - Bridgetown on the Middleton & Victoria Beach
 - Brendan (9 Nov 2026): the Canadian Northern trace runs on to Port Wade. CN Table 37's Wednesday mixed trains (M255 / M256) Middleton - Bridgetown use CN's
