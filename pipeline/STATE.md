@@ -1,7 +1,7 @@
 # The Digital Model Railway — project state
 
 Read this first. It is meant to be enough to start a short, single-task chat without replaying the project's history.
-Last updated 10 November 2026 (Version 155: the Princess Helene, Saint John - Digby; the DAR at the CN stations; Version 154: Dominion Atlantic timetables; Version 153: CP N.B. track; DAR drawn as CP; Version 152: Dominion Atlantic track (CP Maritimes begins); Version 151: the regional OSM export fills the N.B. gaps; Version 150: Middleton - Bridgetown on the Middleton & Victoria Beach; Version 149: the Pictou County lines are CN; Version 148: CN page 1117, the last of the CN Canadian timetables; Version 147: the queued fixes - steamer labels, broken estimated links, North Sydney, Canso train ferry and Mulgrave switchback, ESL, Campbellton, CN Edmundston; Version 146: CN page 1116, P.E.I., Pictou, Newcastle - Loggieville, Table 23 N.B. part, Borden - Cape Tormentine train ferry; Version 145: CN page 1115, N.S. and N.B. branches, Cabot Strait and Yarmouth - Boston steamers; Version 144: CN Table 4 Halifax - Truro - Moncton - Saint John; Version 143: the Maritimes begin: the Temiscouata to Edmundston and Connors, CN Tables 1, 1a and 2 in N.B. and N.S., the Maritime track bank; 142: the Chicago, Duluth & Georgian Bay steamers North American and South American; 141: C.S.L. boats named; 140: full rebuild; 135-139: Niagara, the Muskoka, Pointe au Baril and C.S.L. boats, motor trains, the Newfoundland Railway; Version 62 moved the project to git). For a new chat, read HANDOFF.md first (short), then the sections of this file it points to.
+Last updated 10 November 2026 (Version 156: CP subsidiaries under their own names; SI its own heading; Version 155: the Princess Helene, Saint John - Digby; the DAR at the CN stations; Version 154: Dominion Atlantic timetables; Version 153: CP N.B. track; DAR drawn as CP; Version 152: Dominion Atlantic track (CP Maritimes begins); Version 151: the regional OSM export fills the N.B. gaps; Version 150: Middleton - Bridgetown on the Middleton & Victoria Beach; Version 149: the Pictou County lines are CN; Version 148: CN page 1117, the last of the CN Canadian timetables; Version 147: the queued fixes - steamer labels, broken estimated links, North Sydney, Canso train ferry and Mulgrave switchback, ESL, Campbellton, CN Edmundston; Version 146: CN page 1116, P.E.I., Pictou, Newcastle - Loggieville, Table 23 N.B. part, Borden - Cape Tormentine train ferry; Version 145: CN page 1115, N.S. and N.B. branches, Cabot Strait and Yarmouth - Boston steamers; Version 144: CN Table 4 Halifax - Truro - Moncton - Saint John; Version 143: the Maritimes begin: the Temiscouata to Edmundston and Connors, CN Tables 1, 1a and 2 in N.B. and N.S., the Maritime track bank; 142: the Chicago, Duluth & Georgian Bay steamers North American and South American; 141: C.S.L. boats named; 140: full rebuild; 135-139: Niagara, the Muskoka, Pointe au Baril and C.S.L. boats, motor trains, the Newfoundland Railway; Version 62 moved the project to git). For a new chat, read HANDOFF.md first (short), then the sections of this file it points to.
 
 ## What this is
 
@@ -2444,6 +2444,15 @@ Stations of different railways within 250 m (70 pairs; script: same check over v
   the zone the timetable was printed in (no "shown in Pacific time ..."). FIX the same evening: ZOFF declared with var (hm runs above its line).
 - NS&T / CN steamers page (condensed tables) saved: dmr-sources og1948_cnq/nst_cn_steamers_condensed.png. Questions out to Brendan (track KMZ, Port
   Dalhousie cars, Toronto - Port Dalhousie boat, Cobourg - Genesee points, colours).
+
+## Version 156 (10 November 2026): CP subsidiaries under their own names; the "On the line" headings
+- Brendan (10 Nov 2026): an unnamed train of a CP subsidiary shows the subsidiary's name when clicked (it also tells the train numbers apart). New on_build
+  OVER option label (ab_lines: the line label and "<label> station" notes): 'Quebec Central' on on_cp_t008 / t008l / t008f / t008m, 'Dominion Atlantic' on
+  on_cp_t900 / t900w / t900k. Their mixed trains are named "<label> mixed" (the page's mixed test now matches a label ending in "mixed"). E&N already
+  showed "Esquimalt & Nanaimo".
+- "On the line" panel: E&N (kind i), Quebec Central and the DAR listed under the Canadian Pacific heading; the Spokane International (kind p, railway
+  'Spokane International') has its own heading, shown only when one of its trains is running (headOf in page_template.html).
+- Checks: check_gtfs 1 known problem; 556 lines, 4061 trips, 6376 stops; only the seven QC / DAR lines changed (labels, mixed names).
 
 ## Version 155 (10 November 2026): Princess Helene; joint DAR stations; the mileage review list
 - C.P.S.S. Saint John - Digby (lo_build.py, line cpbof; CP public timetable, April 1948, Brendan): S.S. Princess Helene, daily except Sunday, Saint John 7.30 a.m.

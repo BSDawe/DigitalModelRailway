@@ -363,7 +363,7 @@ def trips_of(spec, rows, trains, stn_index, taken, log=print):
         tid = f"{pfx}-{num}" if tr['num'] else f"{pfx}-{spec['key'].split('_')[-1].upper()}-{col}"
         while tid in taken: tid += '-' + spec['key'].split('_')[-1].upper()
         taken.add(tid)
-        name = spec.get('names', {}).get(col, 'Mixed' if mixed else 'Motor train' if tr['kind'] == 'motor' else '')
+        name = spec.get('names', {}).get(col, (spec['label'] + ' mixed' if spec.get('label') else 'Mixed') if mixed else 'Motor train' if tr['kind'] == 'motor' else '')
         ends = ((f" From {tr['from']}." if tr.get('from') else '') + (f" To {tr['to']}." if tr.get('to') else '')) if spec.get('ends', True) else ''
         note = (spec.get('notes', {}).get(col) or tr.get('note', '')).strip()
         note = (note + ('' if not note or note.endswith('.') else '.') + ends + (spec.get('tznote', ' Shown in Pacific time, an hour earlier than the Mountain time printed.') if spec.get('shift', -3600) else '')).strip()
@@ -469,11 +469,12 @@ def build(specs, log=print):
             ch = chain(r['d']); lon, lat = inv(*line.interpolate(ch).coords[0]); stn_i[i] = len(st)
             on_est = any(s['a'] - 1 <= ch <= s['b'] + 1 for s in segs)
             how = 'position from the federal names file' if r.get('how') not in (None, 'map', 'hand') else 'placed by its printed mileage' if 'raw' not in r else ''
-            note = RI['label'] + ' station' + ('; on a stretch drawn as a straight estimate' if on_est else '')
+            note = (spec.get('label') or RI['label']) + ' station' + ('; on a stretch drawn as a straight estimate' if on_est else '')
             st.append(dict(name=r['name'], chain=round(ch, 1), lon=round(lon, 6), lat=round(lat, 6), mile=r['mile'], principal=r['principal'], note=note, kml='', gid=gid_for(rail, r['name'])))
         trips = trips_of(spec, rows, trains, stn_i, taken, log)
         route = [[round(lo, 6), round(la, 6), round(c, 1)] for (lo, la), c in zip((inv(*q) for q in pts), cum)]
-        vd['lines'].append(dict(key=spec['key'], kind=RI['kind'], label=RI['label'],
+        vd['lines'].append(dict(key=spec['key'], kind=RI['kind'], label=spec.get('label') or RI['label'],   # spec label: a CP subsidiary's own name (Quebec Central, Dominion Atlantic; Brendan, 10 Nov 2026)
+
                                 mainline=True, owner=own, route=route, stations=st, dirLabels=spec['dirs'], segments=segments, trips=trips, src=spec['src']))
         rid = spec['key'].upper()
         G['routes'].append([rid, RI['agency'], spec['short'], spec['long'], 2, RI['color'], 'FFFFFF',

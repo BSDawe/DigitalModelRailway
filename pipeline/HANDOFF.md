@@ -4,7 +4,7 @@ Read this first, then STATE.md: "Starting a fresh chat", "Build", "Conventions B
 version sections at the end of STATE.md (Versions 130-142) hold the details of recent work. Everything else in STATE.md is reference: search it, don't read it through.
 
 ## Where things stand
-- Version 155 is published (https://bsdawe.github.io/DigitalModelRailway/): 556 lines, 4061 trips, 6376 stops, 52 agencies. CN's Canadian timetables are all in (Versions 143 - 148 in STATE.md); trip chaining is next.
+- Version 156 is published (https://bsdawe.github.io/DigitalModelRailway/): 556 lines, 4061 trips, 6376 stops, 52 agencies. CN's Canadian timetables are all in (Versions 143 - 148 in STATE.md); trip chaining is next.
 - check_gtfs reports one problem, which is known and accepted: CP-14-SKJCP13 at Minneapolis. The 1947 Soo Line arrival (6.30 a.m.) is after C&NW 404 leaves (6.25).
 - A leftover branch, `wip-cdgb`, is on GitHub (the proxy refused to delete it). It is merged; Brendan can delete it.
 
@@ -13,6 +13,7 @@ version sections at the end of STATE.md (Versions 130-142) hold the details of r
 - A straight link that bridges a gap in the track is drawn DASHED, unless it is trivially short or Brendan asked for it; traces stay solid (Brendan, 9 Nov 2026). Give such a link "est": true in its geojson properties.
 - When Brendan says "don't fix yet", queue it under "Fixes queued" in TODO.md, and ASK whether to include the queue before the next rebuild.
 - Track sources (Brendan, 10 Nov 2026): the Wikipedia traces come first. Do not use an OSM trace to take trains off a Wikipedia trace without a compelling reason (an obvious missing wye or connection, a known station location, a known track consolidation). OSM fills gaps and lines the Wikipedia data lacks.
+- CP subsidiaries (E&N, Quebec Central, Dominion Atlantic): drawn and coloured as CP and listed under the CP heading in "On the line", but a clicked unnamed train shows the subsidiary's name (on_build OVER label=...). The Spokane International has its own heading (Brendan, 10 Nov 2026).
 - TODO.md is the one list of open questions, material wanted from Brendan, and work for Claude (OPEN_QUESTIONS.md and the TO DO lists in STATE.md were merged into it, 9 Nov 2026). Add each new item there; when it is answered or done, move it to "Done and answered" with the date. Mirror it to the project with STATE and HANDOFF. Do not start new TO DO lists in STATE.md.
 - Ask before building when something is unclear. Don't build ahead of him on items marked "waiting" or "do not build ahead".
 - He dislikes slow work: batch changes into one rebuild, and run only the steps a change touches.

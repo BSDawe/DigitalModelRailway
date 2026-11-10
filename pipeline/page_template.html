@@ -379,7 +379,7 @@ for (const L of LINES) for (const bt of L.trips || []) TRIPS.push(buildTrip({ id
 // a station that only mixed trains call at is drawn as a minor station (Brendan); a steamer or a passenger train calling keeps it as it was
 { const only = new Map();
   for (const t of TRIPS) {
-    const mixed = !t.water && (t.label === 'Mixed' || /^M\d/.test(t.num || '')), n = t.stops.length;
+    const mixed = !t.water && (/(^|\s)mixed$/i.test(t.label || '') || /^M\d/.test(t.num || '')), n = t.stops.length;
     t.stops.forEach((r, k) => {                                   // where a mixed train starts or ends, the station is drawn normally (Brendan, 5 October), unless the
       const end = (k === 0 && !t.realFrom) || (k === n - 1 && !t.realTo);   // train only enters or leaves the map there (it really starts or ends beyond)
       only.set(r[0], (only.get(r[0]) ?? true) && mixed && !end); });
@@ -937,11 +937,12 @@ function renderList(states, T) {
   h += `<div class="section-label">B.C. Electric · ${bc.length} ${bc.length === 1 ? 'car' : 'cars'}</div>`;
   if (!bc.length) h += `<div class="empty">No cars running now.</div>`;
   h += bc.map(row).join('');
-  for (const kd of ['g', 'q', 'p', 'i', 'r', 'y', 'a', 'o', 'd', 'u', 'm', 'k', 'x', 'j', 'h', 'z', 't', 'f', 'T', 'G', 'R', 'J', 'B', 'L', 'P', 'E', 'M', 'N', 'Q', 'W', 'v']) {   // x, j were missing (C&NW, GWWD; 23 Oct 2026)
-    const xs = states.filter(x => x.t.kind === kd);
-    if ('yaodumkxjhztfTGRJBPE'.includes(kd) && !xs.length) continue;    // a railway of a few trains: no heading when nothing is running
-    const unit = kd === 'v' ? ['boat', 'boats'] : 'gpqiryaodumkxjhztfTGRJBPE'.includes(kd) ? ['train', 'trains'] : ['car', 'cars'];
-    h += `<div class="section-label">${KIND_LABEL[kd]} · ${xs.length} ${xs.length === 1 ? unit[0] : unit[1]}</div>`;
+  const headOf = tr => tr.kind === 'i' ? 'p' : tr.railway === 'Spokane International' ? 'SI' : tr.kind;   // E&N with CP; the Spokane International its own heading (Brendan, 10 Nov 2026)
+  for (const kd of ['g', 'q', 'p', 'SI', 'r', 'y', 'a', 'o', 'd', 'u', 'm', 'k', 'x', 'j', 'h', 'z', 't', 'f', 'T', 'G', 'R', 'J', 'B', 'L', 'P', 'E', 'M', 'N', 'Q', 'W', 'v']) {   // x, j were missing (C&NW, GWWD; 23 Oct 2026)
+    const xs = states.filter(x => headOf(x.t) === kd);
+    if ((kd === 'SI' || 'yaodumkxjhztfTGRJBPE'.includes(kd)) && !xs.length) continue;    // a railway of a few trains: no heading when nothing is running
+    const unit = kd === 'v' ? ['boat', 'boats'] : (kd === 'SI' || 'gpqiryaodumkxjhztfTGRJBPE'.includes(kd)) ? ['train', 'trains'] : ['car', 'cars'];
+    h += `<div class="section-label">${kd === 'SI' ? 'Spokane International' : KIND_LABEL[kd]} · ${xs.length} ${xs.length === 1 ? unit[0] : unit[1]}</div>`;
     if (!xs.length) h += `<div class="empty">No ${unit[1]} running now.</div>`;
     h += xs.map(row).join('');
   }
