@@ -2,7 +2,7 @@
 
 One list for the Digital Model Railway: questions for Brendan, material he is to supply, and work for Claude. It merges OPEN_QUESTIONS.md with the TO DO lists that were kept in STATE.md (the last of them: "TO DO (1 November 2026)"), as Brendan asked on 9 Nov 2026.
 Claude adds items as they come up. When one is answered or done, it moves to "Done and answered" with the date. Each open item says what the build does in the meantime. Version tags (V143) say when an item was raised.
-Last updated 10 November 2026 (Version 152).
+Last updated 10 November 2026 (Version 153).
 
 ## Decisions for Brendan
 - [ ] Trip chaining: when should two pieces of the same train join into one trip? The plan was to join automatically when the stop between them is under an hour (named trains only when the names agree; an unnamed piece never blocks a join). Brendan, 9 Nov 2026: not sure about the hour any more. Undecided; chaining waits on it.
@@ -13,10 +13,8 @@ Last updated 10 November 2026 (Version 152).
 - (none)
 
 ## CP Maritimes (started 10 Nov 2026)
-- [ ] Dominion Atlantic track is in (dar.geojson, own dar). Livery: its own colours, or CP's like the E&N in B.C.? (V152)
-- [ ] The Windsor Branch (Windsor - Windsor Jct.): whose track in 1948, CN's (the old Nova Scotia Railway) with DAR running rights, or the DAR's? Entered as DAR for now. (V152)
-- [ ] Yarmouth: the Western Counties line ends about 0.7 km from Brendan's Yarmouth station point; check when the DAR timetables come in. (V152)
-- [ ] Wanted: the CP / DAR Official Guide pages for the Maritimes; CP track in New Brunswick (McAdam, Saint John, St. Andrews, St. Stephen, Woodstock, Edmundston). (V152)
+- [ ] Yarmouth: Brendan to trace; both railways serve Evangeline Wharf (Brendan, 10 Nov 2026). (V152)
+- [ ] CP N.B. track is in (cp_osm_nb.geojson, V153). Traces wanted for the two stretches the export lacks: Woodstock - Hartland, and the Gibson Subdivision from Fredericton (Gibson) to about Upper Kingsclear. Wanted: the CP Official Guide pages for New Brunswick. (V153)
 
 ## Questions: readings to check
 ### Maritimes: CN Official Guide pages 1113 - 1117
@@ -104,6 +102,7 @@ Last updated 10 November 2026 (Version 152).
 - Campbellton at Brendan's point on the main line (all Campbellton files). CN Edmundston at Brendan's point (47 21 41.94 N, 68 20 07.84 W), on_cn_t023.
 
 ### Answered
+- The Dominion Atlantic is drawn like the other CP subsidiaries (E&N, Quebec Central): own cp. It owns the Windsor Branch to Windsor Jct. (Brendan, 10 Nov 2026)
 - Brendan's regional OpenStreetMap export (9 Nov 2026; N.B. and western N.S.) filled these gaps (V151): Saint John E&NA - Union Station; the Saint John Valley line (Saint John - Westfield Beach on CP, Westfield Beach - Fredericton - Woodstock - Centreville: 171.3 mi traced / 172.6); the Kent Northern (26.3 / 26.4); Nelson Junction - Chatham - Loggieville (Newcastle - Loggieville 17.8 / 17.7); the Oxford Junction connector; the International Railway, which leaves the Intercolonial at Tide Head (Tide Head now on the Intercolonial; Campbellton - Edmundston 137.4 / 137.1); the Maritime Coal, Railway & Power track (Maccan - Joggins Mines 11.8 / 12).
 - Middleton - Bridgetown (Table 37) is CN's own Middleton & Victoria Beach Railway (the Canadian Northern trace to Port Wade), not the Dominion Atlantic (Brendan, 9 Nov 2026; V150). On to Port Wade still "check" (no 1948 train found).
 - The four Pictou County lines on the Wikipedia map (Nova Scotia Coal Co., Acadia Coal Co., Nova Scotia Steel and Coal Co., Vale Railway) were part of the CGR, so CN from 1923: now CN track (Brendan, 9 Nov 2026; V149).

@@ -2,7 +2,8 @@
 Yarmouth - Digby (Western Counties), Digby - Annapolis, Annapolis - Windsor (Windsor & Annapolis), Windsor - Truro (Midland), Windsor - Windsor Junction
 (Nova Scotia Railway, Windsor Branch), Kentville - Kingsport (Cornwallis Valley), and the North Mountain Railway.
     python3 tools/mar_import_dar.py /path/to/dominion_atlantic_railway.geojson
--> traces/maritimes/dar.geojson (own dar). Junction vertices: an end of any line in traces/maritimes within 30 m of a DAR line gets a vertex put into the
+-> traces/maritimes/dar.geojson (own cp: drawn like the other CP subsidiaries, the E&N and the Quebec Central - Brendan, 10 Nov 2026; the Windsor Branch to
+Windsor Jct. is the DAR's own). Junction vertices: an end of any line in traces/maritimes within 30 m of a DAR line gets a vertex put into the
 DAR line there (the router ties track at points), as tools/mar_import_cgr.py does for its lines."""
 import glob, html, json, math, os, re, sys
 from shapely.geometry import LineString, Point
@@ -13,7 +14,7 @@ feats = []
 for f in json.load(open(sys.argv[1]))['features']:
     p = f['properties']; con = html.unescape(re.sub('<[^>]+>', '', p.get('title') or '')).strip(); br = (p.get('description') or '').strip()
     src = re.search(r'title=([^&]+)', p.get('source_map') or ''); src = src.group(1).replace('+', ' ').replace('%28', '(').replace('%29', ')') if src else '?'
-    feats.append(dict(type='Feature', properties=dict(own='dar', name=f'{con}: {br}' if br else con, constituent=con, branch=br, status='ok', cost=1,
+    feats.append(dict(type='Feature', properties=dict(own='cp', name=f'{con}: {br}' if br else con, constituent=con, branch=br, status='ok', cost=1,
                       note=NOTE.format(src)), geometry=dict(type='LineString', coordinates=[[round(x, 6), round(y, 6)] for x, y in f['geometry']['coordinates']])))
 ENDS = [tuple(c) for f in feats for c in (f['geometry']['coordinates'][0], f['geometry']['coordinates'][-1])]
 for fn in glob.glob(os.path.join(OUT, '*.geojson')):
