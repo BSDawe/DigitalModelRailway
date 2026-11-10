@@ -1,7 +1,7 @@
 # The Digital Model Railway — project state
 
 Read this first. It is meant to be enough to start a short, single-task chat without replaying the project's history.
-Last updated 10 November 2026 (Version 153: CP N.B. track; DAR drawn as CP; Version 152: Dominion Atlantic track (CP Maritimes begins); Version 151: the regional OSM export fills the N.B. gaps; Version 150: Middleton - Bridgetown on the Middleton & Victoria Beach; Version 149: the Pictou County lines are CN; Version 148: CN page 1117, the last of the CN Canadian timetables; Version 147: the queued fixes - steamer labels, broken estimated links, North Sydney, Canso train ferry and Mulgrave switchback, ESL, Campbellton, CN Edmundston; Version 146: CN page 1116, P.E.I., Pictou, Newcastle - Loggieville, Table 23 N.B. part, Borden - Cape Tormentine train ferry; Version 145: CN page 1115, N.S. and N.B. branches, Cabot Strait and Yarmouth - Boston steamers; Version 144: CN Table 4 Halifax - Truro - Moncton - Saint John; Version 143: the Maritimes begin: the Temiscouata to Edmundston and Connors, CN Tables 1, 1a and 2 in N.B. and N.S., the Maritime track bank; 142: the Chicago, Duluth & Georgian Bay steamers North American and South American; 141: C.S.L. boats named; 140: full rebuild; 135-139: Niagara, the Muskoka, Pointe au Baril and C.S.L. boats, motor trains, the Newfoundland Railway; Version 62 moved the project to git). For a new chat, read HANDOFF.md first (short), then the sections of this file it points to.
+Last updated 10 November 2026 (Version 154: Dominion Atlantic timetables; Version 153: CP N.B. track; DAR drawn as CP; Version 152: Dominion Atlantic track (CP Maritimes begins); Version 151: the regional OSM export fills the N.B. gaps; Version 150: Middleton - Bridgetown on the Middleton & Victoria Beach; Version 149: the Pictou County lines are CN; Version 148: CN page 1117, the last of the CN Canadian timetables; Version 147: the queued fixes - steamer labels, broken estimated links, North Sydney, Canso train ferry and Mulgrave switchback, ESL, Campbellton, CN Edmundston; Version 146: CN page 1116, P.E.I., Pictou, Newcastle - Loggieville, Table 23 N.B. part, Borden - Cape Tormentine train ferry; Version 145: CN page 1115, N.S. and N.B. branches, Cabot Strait and Yarmouth - Boston steamers; Version 144: CN Table 4 Halifax - Truro - Moncton - Saint John; Version 143: the Maritimes begin: the Temiscouata to Edmundston and Connors, CN Tables 1, 1a and 2 in N.B. and N.S., the Maritime track bank; 142: the Chicago, Duluth & Georgian Bay steamers North American and South American; 141: C.S.L. boats named; 140: full rebuild; 135-139: Niagara, the Muskoka, Pointe au Baril and C.S.L. boats, motor trains, the Newfoundland Railway; Version 62 moved the project to git). For a new chat, read HANDOFF.md first (short), then the sections of this file it points to.
 
 ## What this is
 
@@ -2444,6 +2444,15 @@ Stations of different railways within 250 m (70 pairs; script: same check over v
   the zone the timetable was printed in (no "shown in Pacific time ..."). FIX the same evening: ZOFF declared with var (hm runs above its line).
 - NS&T / CN steamers page (condensed tables) saved: dmr-sources og1948_cnq/nst_cn_steamers_condensed.png. Questions out to Brendan (track KMZ, Port
   Dalhousie cars, Toronto - Port Dalhousie boat, Cobourg - Genesee points, colours).
+
+## Version 154 (10 November 2026): Dominion Atlantic timetables
+- Official Guide, April 1948, the DAR page (Brendan, 10 Nov 2026; Atlantic standard). Files (the guide numbers no DAR tables; keys oncp900*):
+  on_cp_t900.csv Yarmouth - Digby - Kentville - Windsor - Halifax (100, 98, 96, 34 / 95, 97, 33, 99; 217.3 mi traced / 217.5), on_cp_t900w.csv Windsor -
+  Truro (1, 3 / 2, 4; 57.7 / 59), on_cp_t900k.csv Kentville - Kingsport (13 / 12; 14.1 / 14). Evangeline Wharf on boat days (No. 98b Tue / Thu / Sat, 95b
+  Tue / Thu, 99b leaving Halifax Mon / Wed / Fri), times estimated. DAR_PLACES in on_build.py. short 'Dominion Atlantic', src 'Official Guide, April 1948'.
+- Trip ids: the DAR's Nos. 12 / 13 repeat CP main-line numbers kept in another part (mainline_build), which the taken-set in ab_lines does not see: new spec
+  option tidpfx (ab_lines.trips_of) and the DAR files use 'DAR' (DAR-12 ...). No existing trip id changed.
+- Checks: check_gtfs 1 known problem; 555 lines, 4059 trips, 6379 stops. No existing line changed.
 
 ## Version 153 (10 November 2026): CP's New Brunswick track; the DAR drawn as CP
 - Brendan (10 Nov 2026): the DAR looks like the other CP subsidiaries (E&N, Quebec Central): mar_import_dar.py now writes own cp; the DAR owns the Windsor Branch.

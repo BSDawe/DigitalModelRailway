@@ -1,0 +1,9 @@
+# Dominion Atlantic Railway (Canadian Pacific), Kentville - Canning - Kingsport (Cornwallis Valley) (Official Guide, April 1948 (Brendan, 10 Nov 2026)). ATLANTIC STANDARD time.
+# Table dated May 1, 1948. The bus (Kentville 11.30 a.m., Kingsport 1.15 p.m.) not entered. Centreville - Weston: no regular service. Signs: * daily; dagger daily except Sunday; k Saturday only; f flag; square: arrives or departs from Evangeline Wharf on boat days only (the Eastern Steamship Lines boat to and from Boston: in from Boston Tue., Thu., Sat. mornings, out Tue., Thu., Sun. evenings, June 2 - Sept. 26). Brendan (10 Nov 2026): No. 99 also goes on to Evangeline Wharf only on boat days. Evangeline Wharf times estimated (~5 min from Yarmouth); the Yarmouth station point is the end of the Western Counties trace and the wharf Brendan's point (a trace to come).
+#train col=No13 num=13 dir=down days="ex Sun" kind=passenger note="Daily except Sunday: Kentville 4.00 p.m. to Kingsport 4.45 p.m."
+#train col=No12 num=12 dir=up days="ex Sun" kind=passenger note="Daily except Sunday: Kingsport 7.30 a.m. to Kentville 8.30 a.m."
+mile,station,principal,prov,tz,No13,No12
+0,Kentville,1,NS,A,lv 4.00p,ar 8.30a
+5,Centreville,0,NS,A,4.16p,8.10a
+11,Canning,0,NS,A,4.35p,7.39a
+14,Kingsport,1,NS,A,ar 4.45p,lv 7.30a

@@ -2,7 +2,7 @@
 
 One list for the Digital Model Railway: questions for Brendan, material he is to supply, and work for Claude. It merges OPEN_QUESTIONS.md with the TO DO lists that were kept in STATE.md (the last of them: "TO DO (1 November 2026)"), as Brendan asked on 9 Nov 2026.
 Claude adds items as they come up. When one is answered or done, it moves to "Done and answered" with the date. Each open item says what the build does in the meantime. Version tags (V143) say when an item was raised.
-Last updated 10 November 2026 (Version 153).
+Last updated 10 November 2026 (Version 154).
 
 ## Decisions for Brendan
 - [ ] Trip chaining: when should two pieces of the same train join into one trip? The plan was to join automatically when the stop between them is under an hour (named trains only when the names agree; an unnamed piece never blocks a join). Brendan, 9 Nov 2026: not sure about the hour any more. Undecided; chaining waits on it.
@@ -13,7 +13,9 @@ Last updated 10 November 2026 (Version 153).
 - (none)
 
 ## CP Maritimes (started 10 Nov 2026)
-- [ ] Yarmouth: Brendan to trace; both railways serve Evangeline Wharf (Brendan, 10 Nov 2026). (V152)
+- [ ] Yarmouth: Brendan to trace; both railways serve Evangeline Wharf (Brendan, 10 Nov 2026). Until then the DAR's Yarmouth is the Western Counties trace end and Evangeline Wharf is reached by a broken straight line (0.5 mi). (V152, V154)
+- [ ] DAR readings (V154): No. 33 (Windsor - Kentville, from No. 4) and No. 4 (Truro - Windsor) have no sign: entered daily except Sunday. No. 3 (34-3) entered Saturday only like No. 34. Boat days at Evangeline Wharf: No. 98 Tue., Thu., Sat. (the Boston boat in); No. 95 Tue., Thu. (the boat out; no No. 95 on Sundays); No. 99 leaving Halifax Mon., Wed., Fri. (Brendan: to the wharf on boat days only). Wharf times estimated.
+- [ ] Not built yet from the DAR page: the C.P.S.S. Digby - Saint John steamer (Digby 3.15 p.m. - Saint John 6.00 p.m.; Saint John 7.30 a.m. - Digby 10.30 a.m., daily except Sunday; needs the Saint John wharf point); the Kentville - Kingsport bus. (V154)
 - [ ] CP N.B. track is in (cp_osm_nb.geojson, V153). Traces wanted for the two stretches the export lacks: Woodstock - Hartland, and the Gibson Subdivision from Fredericton (Gibson) to about Upper Kingsclear. Wanted: the CP Official Guide pages for New Brunswick. (V153)
 
 ## Questions: readings to check

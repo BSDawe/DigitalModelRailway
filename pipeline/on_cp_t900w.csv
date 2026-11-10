@@ -1,0 +1,11 @@
+# Dominion Atlantic Railway (Canadian Pacific), Windsor - Kennetcook - Truro (the Midland) (Official Guide, April 1948 (Brendan, 10 Nov 2026)). ATLANTIC STANDARD time.
+# The Truro sections of Nos. 98-1, 2-95, 34-3 and 4-33 (Windsor). No. 3 (34-3, Kentville Saturday only) entered Saturday only; No. 4 (4-33) has no sign: daily except Sunday (TO CHECK). Signs: * daily; dagger daily except Sunday; k Saturday only; f flag; square: arrives or departs from Evangeline Wharf on boat days only (the Eastern Steamship Lines boat to and from Boston: in from Boston Tue., Thu., Sat. mornings, out Tue., Thu., Sun. evenings, June 2 - Sept. 26). Brendan (10 Nov 2026): No. 99 also goes on to Evangeline Wharf only on boat days. Evangeline Wharf times estimated (~5 min from Yarmouth); the Yarmouth station point is the end of the Western Counties trace and the wharf Brendan's point (a trace to come).
+#train col=No1 num=1 dir=down days="ex Sun" kind=passenger note="Daily except Sunday: Windsor 4.30 p.m. (the Truro cars of No. 98 from Yarmouth) to Truro 7.00 p.m."
+#train col=No3 num=3 dir=down days="Sat" kind=passenger note="Saturday: Windsor 7.05 a.m. (No. 34 from Kentville) to Truro 9.30 a.m."
+#train col=No2 num=2 dir=up days="ex Sun" kind=passenger note="Daily except Sunday: Truro 7.00 a.m. to Windsor 9.25 a.m., on with No. 95 to Yarmouth."
+#train col=No4 num=4 dir=up days="ex Sun" kind=passenger note="Truro 5.30 p.m. to Windsor 7.48 p.m., on as No. 33 to Kentville."
+mile,station,principal,prov,tz,No1,No3,No2,No4
+170,Windsor,1,NS,A,lv 4.30p,lv 7.05a,ar 9.25a,ar 7.48p
+197,Kennetcook,0,NS,A,5.38p,8.14a,8.14a,6.45p
+211,South Maitland,0,NS,A,6.13p,8.46a,7.40a,6.13p
+229,Truro,1,NS,A,ar 7.00p,ar 9.30a,lv 7.00a,lv 5.30p

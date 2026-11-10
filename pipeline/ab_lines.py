@@ -327,7 +327,7 @@ def report(spec, rows, pieces, log=print):
 # ---------------------------------------------------------------- trips
 def svc_of(days): return 'W_' + ''.join(map(str, days))
 def trips_of(spec, rows, trains, stn_index, taken, log=print):
-    out = []; pfx = RAILS[spec['rail']]['pfx']
+    out = []; pfx = spec.get('tidpfx') or RAILS[spec['rail']]['pfx']   # tidpfx: a file's own trip-id prefix (the DAR's numbers repeat CP's main-line ones, which are in another part)
     for col, tr in trains.items():
         order = range(len(rows)) if tr['along'] else range(len(rows) - 1, -1, -1); calls = []
         for i in order:
