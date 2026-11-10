@@ -2,7 +2,7 @@
 
 One list for the Digital Model Railway: questions for Brendan, material he is to supply, and work for Claude. It merges OPEN_QUESTIONS.md with the TO DO lists that were kept in STATE.md (the last of them: "TO DO (1 November 2026)"), as Brendan asked on 9 Nov 2026.
 Claude adds items as they come up. When one is answered or done, it moves to "Done and answered" with the date. Each open item says what the build does in the meantime. Version tags (V143) say when an item was raised.
-Last updated 9 November 2026 (Version 148).
+Last updated 9 November 2026 (Version 149).
 
 ## Decisions for Brendan
 - [ ] Trip chaining: when should two pieces of the same train join into one trip? The plan was to join automatically when the stop between them is under an hour (named trains only when the names agree; an unnamed piece never blocks a join). Brendan, 9 Nov 2026: not sure about the hour any more. Undecided; chaining waits on it.
@@ -57,7 +57,7 @@ Last updated 9 November 2026 (Version 148).
 - [ ] Yarmouth: track end to the station point. (V145)
 - [ ] Newfoundland Railway: trace end to Port-aux-Basques. (V145)
 - [ ] Nelson Junction (Table 24). The Wikipedia traces of the Intercolonial and the Chatham Branch only cross, about 2 mi past Derby Junction. A 0.2 km estimated tie there lets the Newcastle - Loggieville motors run, 20.5 mi traced against 17.7 printed. The real connection is wanted. (V146)
-- [ ] Stellarton - Westville (Table 29): no CN track joins the Pictou Town Branch to the main line (a 1.2 km gap), so the Pictou trains run over the coal companies' tracks (drawn white). A trace of CN's line is wanted. (V146)
+- [ ] Stellarton - Westville (Table 29): the Pictou trains run over the former Acadia Coal Co. and Nova Scotia Coal Co. lines (CN since V149). If CN's 1948 route went another way, a trace is wanted. (V146)
 - [ ] Borden - Cape Tormentine car ferry: the course across the strait is a straight estimate between the pier ends. (V146)
 - [ ] Saint John Valley line (Table 33): no track on file, Saint John - Westfield Beach - Fredericton - Woodstock - Centreville, so the whole table runs on broken straight estimates (135.5 mi against 172.6 printed). A trace is wanted. (V148)
 - [ ] Kent Northern (Table 47), Richibucto - Rexton - Kent Junction: no track on file (straight estimate). (V148)
@@ -77,7 +77,6 @@ Last updated 9 November 2026 (Version 148).
 ## Housekeeping
 - [ ] Licence of the Wikipedia Canadian Government Railways map data (for the credits). (V143)
 - [ ] The raw GeoPackage, the CGN zips and the OSM exports belong in the private repo. Claude has read-only access there, so they need adding from your side. (V143)
-- [ ] Sunny Brae (Table 45) runs over the Nova Scotia Steel and Coal Co.'s railway and Thorburn (Table 39) over the Vale Railway, drawn as other railways' track. Were these CN's by 1948? (V148)
 - [ ] ESL livery colour: the placeholder is #7a2430. (V145)
 
 ## Work for Claude
@@ -105,6 +104,7 @@ Last updated 9 November 2026 (Version 148).
 - Campbellton at Brendan's point on the main line (all Campbellton files). CN Edmundston at Brendan's point (47 21 41.94 N, 68 20 07.84 W), on_cn_t023.
 
 ### Answered
+- The four Pictou County lines on the Wikipedia map (Nova Scotia Coal Co., Acadia Coal Co., Nova Scotia Steel and Coal Co., Vale Railway) were part of the CGR, so CN from 1923: now CN track (Brendan, 9 Nov 2026; V149).
 - Through trains: a train runs through as one trip; within one file, use the six-day / seventh-day split (8 Nov). Chaining across files waits until all the CN Maritime files are in, then again for CP. Named trains join only when the names agree (8 Nov). The under-an-hour rule is reopened (9 Nov): see Decisions.
 - Saint John is a connecting train, not a through point. Union Station 45.276776, -66.064504 (8 Nov).
 - The earlier page was 1113, not 1118; Table 4 is page 1114 (8 Nov).

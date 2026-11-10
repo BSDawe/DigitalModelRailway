@@ -13,7 +13,6 @@ together by `mar_tracks.py` (`python3 mar_tracks.py` prints what is on file and 
 | `ferries.geojson` | Train-ferry crossings (own `water`: drawn as a dotted water line, the train itself crosses, like Windsor - Detroit). Borden - Cape Tormentine (Table 28) and Mulgrave - Point Tupper (Strait of Canso), straight between the pier-track ends | Claude |
 | `brendan_truro.geojson` | Brendan's Truro Wye (8 Nov 2026); his later traces go in `brendan_<area>.geojson` files like this | Brendan |
 | `cn_osm_sydney.geojson` | The 1948 main line Little Bras d'Or - Sydney Mines - North Sydney - Sydney (CN Sydney Subdivision; disused in OSM), 43 ways; the Wikipedia North Sydney piece is then the spur to the ferry terminal | OpenStreetMap (© OpenStreetMap contributors, ODbL), export by Brendan |
-| `industrial.geojson` | Colliery / steel railways on the map (own codes `nscc`, `acc`, `nssc`, `vale`) | Wikipedia maps |
 
 Provenance of the first import: `tools/mar_import_cgr.py` (one-shot, kept as the record). Raw input `CN_Maritimes.gpkg` is Brendan's (private-repo rule: raw files private,
 only traces used are public).

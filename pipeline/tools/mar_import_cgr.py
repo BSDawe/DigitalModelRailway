@@ -1,6 +1,6 @@
 """One-shot import of Brendan's CN Maritimes bank (8 November 2026): CN_Maritimes.gpkg = Wikipedia's Canadian Government Railways map data (51 lines, from the
 maps embedded in the Wikipedia articles) + 82 of Brendan's own traces (Mulgrave - Point Tupper, Halifax North Street - Deepwater Terminal, Pacific Junction)
--> traces/maritimes/cn.geojson, brendan.geojson, industrial.geojson. The CN pieces of the Canadian Northern collection (Inverness & Richmond, Halifax & South
+-> traces/maritimes/cn.geojson, brendan.geojson, tem.geojson. The CN pieces of the Canadian Northern collection (Inverness & Richmond, Halifax & South
 Western, Middleton & Victoria Beach) are added from traces/cnor_all.geojson. Kept as the record of what was done; later additions are new files in
 traces/maritimes/ (see its README), not re-runs of this.
     python3 tools/mar_import_cgr.py /path/to/CN_Maritimes.gpkg
@@ -24,7 +24,7 @@ F[134] = dict(fid=134, title=None, desc='', coords=[(-61.36827384679986, 45.6190
 for f in F.values(): f['ls'] = LineString([T.transform(x, y) for x, y in f['coords']])
 NOTE_W = 'Wikipedia map data, Canadian Government Railways (and the linked railway maps), supplied by Brendan, 8 Nov 2026'
 NOTE_B = "Brendan's trace, 8 Nov 2026"; NOTE_C = 'Canadian Northern collection (Wikipedia maps), traces/cnor_all.geojson'
-FILES = {'cn': [], 'brendan': [], 'industrial': [], 'tem': []}; REPORT = []
+FILES = {'cn': [], 'brendan': [], 'tem': []}; REPORT = []
 def add(file, ls, own, name, note, fid, group, status, why=None, constituent=None, branch=None):
     if ls.length < 1: return
     p = dict(own=own, name=name, constituent=constituent or name, branch=branch or '', note=note, cost=1.0, fid=fid, group=group, status=status)
@@ -39,7 +39,9 @@ for i in tup + hal:
     btr.append(F[i]['ls'])
 bu = unary_union(btr).buffer(15)
 # ---- Wikipedia pieces
-NOT_CN = {28: ('nscc', 'Railroad of the Nova Scotia Coal Co.'), 33: ('acc', 'Railroad of the Acadia Coal Co.'), 36: ('nssc', 'Railway of the Nova Scotia Steel and Coal Co.'), 37: ('vale', 'Vale Railway')}
+# The four Pictou County lines (Nova Scotia Coal Co., Acadia Coal Co., Nova Scotia Steel and Coal Co., Vale Railway) are on the map because they were part of
+# the CGR, and so of CN from 1923 (Brendan, 9 Nov 2026): owner cn like the rest (they were 'industrial' owners until then).
+NOT_CN = {}
 # 'check' = was this track there in 1948? (Whether trains ran over it is the timetables' business, not the track's: a branch with no train is simply not routed over.)
 CHECK = {8: 'Realignment at Tide Head: alternate alignment, which one was in use in 1948?', 17: 'NB&PEI "Ferry Reroute": earlier or later than 1948?',
          23: 'PEI Short Line Cutoff: there in 1948?',
@@ -52,7 +54,7 @@ for fid, f in F.items():
     if fid == 132: title, branch = 'Intercolonial Railway', 'Moncton - Pacific Jct. approach (NTR wye)'
     nm = f'{title}: {branch}' if branch else title
     own, status, why, file = 'cn', 'ok', None, 'cn'
-    if fid in NOT_CN: own, nm, file = NOT_CN[fid][0], NOT_CN[fid][1], 'industrial'; title = nm     # status stays 'ok': whose track it is is 'own', not the status
+    if fid in NOT_CN: own, nm, file = NOT_CN[fid][0], NOT_CN[fid][1], 'cn'; title = nm     # status stays 'ok': whose track it is is 'own', not the status
     if fid in CHECK: status, why = 'check', CHECK[fid]
     if fid == 4: own, file = 'tem', 'tem'                               # the Temiscouata: its own file (tem.geojson)
     ls = f['ls']; pieces = [(ls, nm, status, why)]
