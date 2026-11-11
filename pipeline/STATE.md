@@ -2446,6 +2446,8 @@ Stations of different railways within 250 m (70 pairs; script: same check over v
   Dalhousie cars, Toronto - Port Dalhousie boat, Cobourg - Genesee points, colours).
 
 ## Version 165 (11 November 2026): Sydney and Springhill Junction stations
+- Then Brendan's estimate for the S&L Sydney station, on the S&L trace (46.151544, -60.176541): the S&L trains no longer use CN track. Sydney - Louisburg
+  37.6 traced / 39.0 printed (Sydney - Victoria Jct. 3.0 / 4.0).
 - Brendan's points: CN Sydney (46.14140112373684, -60.189691001734985; MAR_PLACES), S&L Sydney (46.14303091246871, -60.18270581860632; SNL_PLACES; 540 m
   from the end of the Wikipedia S&L trace), Springhill Junction CN station, used by the Cumberland (45.6918113183851, -64.11175438341256; all files).
   Halifax - Sydney now 290.3 traced / 288.3 printed; Sydney - Louisburg 38.3 / 39.0; Parrsboro - Springhill Jct. 31.1 / 32.0.

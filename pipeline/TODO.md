@@ -109,7 +109,7 @@ Maritime tables where the traced line differs from the printed miles by 1 mi and
 ## Short lines (stage 3)
 - [x] Cumberland Railway & Coal (Parrsboro - Springhill - Springhill Jct.): built (V164), S&L livery.
 - [x] Maritime Coal, Railway & Power: built (V157), Maccan (the CN station) - River Hebert - Joggins Mines. River Hebert times estimated. Colour #4E5D2F is Claude's pick.
-- [ ] Sydney & Louisburg at Sydney (V165): the Wikipedia trace ends 540 m from Brendan's S&L station point, so the trains run the first 1.0 km on the CN Sydney track. A trace of the S&L's own line into its station wanted.
+- [ ] Sydney & Louisburg at Sydney: Brendan's estimated station point on the S&L trace (V165). Sydney - Victoria Jct. 3.0 mi traced / 4.0 printed.
 - [x] Sydney & Louisburg: built (V163). Colour #5B3A8C is Claude's pick. Victoria Jct. - Glace Bay 9.9 mi traced / 11.0 printed (the trace may take a later route).
 
 ## Done and answered
