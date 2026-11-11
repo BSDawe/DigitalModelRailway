@@ -1,0 +1,13 @@
+# Cumberland Railway & Coal Company, Parrsboro - Springhill - Springhill Junction, 32 miles. Official Guide (table dated March 1948; Brendan, 11 Nov 2026;
+# staged/maritimes/crc_official_guide.png). Atlantic time. Daily except Sunday. No train numbers printed. Springhill Junction: connection with the CN (the CN station).
+# Printed: Parrsboro 3.50 p.m. for Springhill (27 miles), arriving Springhill Junction (32 miles) 5.30 p.m.; Springhill Junction 1.30 p.m., arrives Parrsboro 3.10 p.m.;
+# Springhill for Springhill Junction 11.00 a.m.; Springhill Junction for Springhill 6.30 p.m. Springhill times of the Parrsboro trains and the arrivals of the
+# Springhill - Junction trains are not printed: estimated by mileage (~).
+#train col=T1100 num="" dir=down days="Mon,Tue,Wed,Thu,Fri,Sat" kind=passenger note="Springhill 11.00 a.m. to Springhill Junction (arrival estimated)."
+#train col=T1330 num="" dir=up days="Mon,Tue,Wed,Thu,Fri,Sat" kind=passenger note="Springhill Junction 1.30 p.m. to Parrsboro 3.10 p.m. (Springhill time estimated)."
+#train col=T1550 num="" dir=down days="Mon,Tue,Wed,Thu,Fri,Sat" kind=passenger note="Parrsboro 3.50 p.m. to Springhill Junction 5.30 p.m. (Springhill time estimated)."
+#train col=T1830 num="" dir=up days="Mon,Tue,Wed,Thu,Fri,Sat" kind=passenger note="Springhill Junction 6.30 p.m. to Springhill (arrival estimated)."
+mile,station,principal,prov,tz,T1100,T1330,T1550,T1830
+0.0,Parrsboro,1,NS,A,,ar 3.10p,lv 3.50p,
+27.0,Springhill,1,NS,A,lv 11.00a,~1.46p,~5.14p,ar ~6.46p
+32.0,Springhill Junction,1,NS,A,ar ~11.16a,lv 1.30p,ar 5.30p,lv 6.30p

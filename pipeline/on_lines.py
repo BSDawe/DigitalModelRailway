@@ -55,10 +55,11 @@ ab_lines.RAILS.update({'oncn': dict(kind='q', label='Canadian National', own='cn
                        'onqlf': dict(kind='v', label='Quebec & Levis Ferry Co.', own='cnfy', agency='QLF', color='34506B', pfx='QLF'),   # its own company, not CN (Brendan, 30 Oct 2026); colours: Claude's pick
                        'ontsl': dict(kind='v', label='Traverse du Saint-Laurent', own='cnfy', agency='TSL', color='5A4A7A', pfx='TSL'),   # Compagnie de la Traverse du Saint-Laurent Ltee, Three Rivers (Brendan, 30 Oct 2026)
                        'ontir': dict(kind='K', label='Thousand Islands Railway', own='tir', agency='TIR', color='7A5A2E', pfx='TIR'),   # Gananoque - Gananoque Jct., separate company in 1948 (Brendan, 31 Oct 2026); colour: Claude's pick
+                       'oncrc': dict(kind='S', label='Cumberland Railway & Coal', own='crc', agency='CRC', color='5B3A8C', pfx='CRC'),   # Brendan, 11 Nov 2026: the S&L's parent (Dominion Steel & Coal), the same livery
                        'onsnl': dict(kind='S', label='Sydney & Louisburg', own='snl', agency='SNL', color='5B3A8C', pfx='SNL'),   # Brendan, 11 Nov 2026; colour: Claude's pick
                        'onmcrp': dict(kind='C', label='Maritime Coal, Railway & Power', own='mcrp', agency='MCRP', color='4E5D2F', pfx='MCRP'),   # Maccan - Joggins Mines (Brendan, 10 Nov 2026); colour: Claude's pick
                        'onaj': dict(kind='J', label='Alma & Jonquiere', own='aj', agency='AJ', color='4A6D8C', pfx='AJ')})
-OWN = {'onsnl': 'snl', 'onmcrp': 'mcrp', 'onnfr': 'nfr', 'onnst': 'nst', 'onqrl': 'qrl', 'onmsc': 'msc', 'onmc': 'nyc', 'oncn': 'cn', 'oncp': 'cp', 'onr': 'onr', 'acr': 'acr', 'onnyc': 'nyc', 'ondh': 'dh', 'ontem': 'tem', 'oncgt': 'cgt', 'onrs': 'rs', 'onaj': 'aj', 'ontir': 'tir', 'oncpcn': 'cpcn', 'onnyco': 'nyc', 'onthb': 'thb', 'oncpthb': 'cpthb', 'onlps': 'lps', 'ongrr': 'grr', 'onlen': 'len', 'onqlf': 'cnfy', 'ontsl': 'cnfy'}
+OWN = {'oncrc': 'crc', 'onsnl': 'snl', 'onmcrp': 'mcrp', 'onnfr': 'nfr', 'onnst': 'nst', 'onqrl': 'qrl', 'onmsc': 'msc', 'onmc': 'nyc', 'oncn': 'cn', 'oncp': 'cp', 'onr': 'onr', 'acr': 'acr', 'onnyc': 'nyc', 'ondh': 'dh', 'ontem': 'tem', 'oncgt': 'cgt', 'onrs': 'rs', 'onaj': 'aj', 'ontir': 'tir', 'oncpcn': 'cpcn', 'onnyco': 'nyc', 'onthb': 'thb', 'oncpthb': 'cpthb', 'onlps': 'lps', 'ongrr': 'grr', 'onlen': 'len', 'onqlf': 'cnfy', 'ontsl': 'cnfy'}
 # the New York Central and the Delaware & Hudson (CP Table 18) run over the CP from Windsor Station; the NYC leaves it at Adirondack Junction for its
 # own St. Lawrence & Adirondack line, the D&H follows the CP to the end of its track at the border (Brendan, 24 Oct 2026). Both stop at the border for now.
 
@@ -125,7 +126,7 @@ def _links():
             out.append(dict(properties=dict(own=p['own'], name=p['name'], cost=p.get('cost', 1.0), est=p.get('est')), geometry=dict(type='LineString', coordinates=[list(c) for c in p['coords']])))
         _LINKS = out
     return _LINKS
-BOXES = {'snl': (-60.25, -59.80, 45.88, 46.27), 'mcrp': (-64.50, -64.20, 45.66, 45.76), 'onr': (-82.6, -78.4, 43.5, 51.5), 'acr': (-85.2, -82.8, 46.3, 49.9), 'nyc': (-74.4, -73.4, 44.9, 45.6), 'dh': (-74.0, -73.2, 44.95, 45.6),
+BOXES = {'crc': (-64.36, -64.09, 45.38, 45.70), 'snl': (-60.25, -59.80, 45.88, 46.27), 'mcrp': (-64.50, -64.20, 45.66, 45.76), 'onr': (-82.6, -78.4, 43.5, 51.5), 'acr': (-85.2, -82.8, 46.3, 49.9), 'nyc': (-74.4, -73.4, 44.9, 45.6), 'dh': (-74.0, -73.2, 44.95, 45.6),
          'tem': (-69.7, -68.25, 47.15, 47.95), 'nyco': (-75.8, -74.6, 44.9, 45.5), 'mc': (-83.25, -78.85, 42.0, 43.2), 'msc': (-73.60, -72.65, 45.35, 45.56), 'nst': (-79.32, -79.03, 42.86, 43.23), 'nfr': (-59.6, -52.4, 46.4, 49.6), 'qrl': (-71.25, -70.74, 46.80, 47.10), 'cgt': (-68.4, -67.4, 48.5, 48.95), 'rs': (-71.4, -70.8, 48.25, 48.5), 'tir': (-76.25, -76.10, 44.30, 44.40), 'aj': (-71.9, -71.5, 48.4, 48.8), 'thb': (-80.5, -78.85, 42.85, 43.75), 'cpthb': (-80.5, -78.85, 42.85, 43.75), 'lps': (-81.35, -81.05, 42.6, 43.05), 'grr': (-80.56, -80.28, 43.33, 43.48), 'len': (-80.42, -80.18, 42.76, 43.38), 'cnfy': (-72.56, -71.15, 46.32, 46.83)}   # the small railways' graphs: their own part of the map only
 def _mk():
     """ab_lines.make_graph with one more kind of line, 'x' (31 Oct 2026): like the network ('n') it is tied only at its loose ends, and the points of
@@ -155,7 +156,7 @@ def _graph(me):
             if len(c) > 3 and covered(c): continue
             if box and not any(box[0] <= p[0] <= box[1] and box[2] <= p[1] <= box[3] for p in c[::max(1, len(c) // (6 if me in ('onr', 'acr') else 200))]) \
                and not any(box[0] <= p[0] <= box[1] and box[2] <= p[1] <= box[3] for p in (c[0], c[-1])): continue
-            if me in ('msc', 'qrl', 'nst', 'nfr', 'mcrp', 'snl'): continue                                          # Montreal & Southern Counties: Brendan's trace only (links), over the Victoria Bridge to McGill and Youville
+            if me in ('msc', 'qrl', 'nst', 'nfr', 'mcrp', 'snl', 'crc'): continue                                          # Montreal & Southern Counties: Brendan's trace only (links), over the Victoria Bridge to McGill and Youville
             ow = owner(o['path']); side = any(re.search(r'siding|yard|spur', x, re.I) for x in o['path'])
             if me == 'mc':                                                    # Michigan Central (Canada Southern): its own track only
                 if ow != 'nyc' or side: continue
@@ -348,7 +349,7 @@ SHARED = {('onr', 'toronto union'): 'TORONTO_UNION', ('oncn', 'toronto union'): 
           ('ondh', 'delson'): 'CP_DELSON',   # the D&H (Napierville Junction Ry.) trains at the CP Delson station
           ('oncn', 'sunnyside'): 'CP_SUNNYSIDE',   # one Sunnyside station, CN Table 79 and the CP trains over the Lake Shore (CP Table 56)
           ('ontir', 'gananoque junction'): 'CN_GANANOQUE_JUNCTION',
-          ('onmcrp', 'maccan'): 'CN_MACCAN',
+          ('onmcrp', 'maccan'): 'CN_MACCAN', ('oncrc', 'springhill junction'): 'CN_SPRINGHILL_JUNCTION',
           ('oncp', 'saint john'): 'CN_SAINT_JOHN', ('oncp', 'westfield beach'): 'CN_WESTFIELD_BEACH',   # Saint John Union Station; Westfield Beach on the CP, used by the CN Valley trains
           ('oncp', 'norton'): 'CN_NORTON',                                 # the Norton - Chipman trains at the CN station (Claude's reading; TO CHECK)                               # the MCR&P at the CN station (Brendan, 9 Nov 2026)   # the TIR at the CN station (over the CN from Thousand Islands Jct.; Brendan)
           ('oncn', 'don'): 'CP_DON',                                       # Don (Queen St. East): one station, CN Table 122 and CP Table 50
