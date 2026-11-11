@@ -1,0 +1,21 @@
+# Sydney & Louisburg Railway, Sydney - Victoria Jct. - Glace Bay - Louisburg, 39 miles. Official Guide, April 1948 (Brendan, 11 Nov 2026; staged/maritimes/snl_official_guide.png). Atlantic time.
+# All four trains are mixed, daily except Sunday: 91 Sydney 8.30 a.m. - Glace Bay 11.40 a.m. (waits at Victoria Jct. 9.00 - 10.45 for the Victoria Branch mixed);
+# 95 Glace Bay 2.45 p.m. - Louisburg 4.15 p.m.; 94 Louisburg 8.15 a.m. - Glace Bay 9.40 a.m.; 90 Glace Bay 12.30 p.m. - Sydney 2.00 p.m. Sydney: connection with the CN.
+# The Victoria Branch (Victoria Jct. - Waterford) is on_snl_t001v.csv. Track: traces/maritimes/snl.geojson (Wikipedia map data).
+#train col=M91 num=91 dir=down days="Mon,Tue,Wed,Thu,Fri,Sat" kind=mixed note="Mixed, daily except Sunday: Sydney 8.30 a.m. to Glace Bay 11.40 a.m."
+#train col=M95 num=95 dir=down days="Mon,Tue,Wed,Thu,Fri,Sat" kind=mixed note="Mixed, daily except Sunday: Glace Bay 2.45 p.m. to Louisburg 4.15 p.m."
+#train col=M94 num=94 dir=up days="Mon,Tue,Wed,Thu,Fri,Sat" kind=mixed note="Mixed, daily except Sunday: Louisburg 8.15 a.m. to Glace Bay 9.40 a.m."
+#train col=M90 num=90 dir=up days="Mon,Tue,Wed,Thu,Fri,Sat" kind=mixed note="Mixed, daily except Sunday: Glace Bay 12.30 p.m. to Sydney 2.00 p.m."
+mile,station,principal,prov,tz,M91,M95,M94,M90
+0.0,Sydney,1,NS,A,lv 8.30a,,,ar 2.00p
+4.0,Victoria Junction,1,NS,A,ar 9.00a / lv 10.45a,,,1.35p
+8.5,Gardiner,0,NS,A,10.57a,,,1.10p
+10.0,Dominion,0,NS,A,11.15a,,,12.55p
+12.0,Bridgeport,0,NS,A,11.30a,,,12.40p
+15.0,Glace Bay,1,NS,A,ar 11.40a,lv 2.45p,ar 9.40a,lv 12.30p
+16.0,Caledonia Junction,0,NS,A,,2.50p,9.37a,
+21.0,Morien Junction,0,NS,A,,3.12p,9.22a,
+25.0,Homeville,0,NS,A,,3.30p,9.09a,
+28.5,Mira,0,NS,A,,3.42p,8.50a,
+33.0,Catalone,0,NS,A,,4.00p,8.30a,
+39.0,Louisburg,1,NS,A,,ar 4.15p,lv 8.15a,

@@ -1,0 +1,7 @@
+# Sydney & Louisburg Railway, Victoria Branch: Victoria Jct. - Waterford (New Waterford), 7.5 miles. Official Guide, April 1948 (note under the S&L table). Atlantic time.
+# Mixed, daily except Sunday: Victoria Jct. 9.10 a.m. - Waterford 9.40 a.m.; Waterford 10.10 a.m. - Victoria Jct. 10.35 a.m. No train numbers printed.
+#train col=Md num="" dir=down days="Mon,Tue,Wed,Thu,Fri,Sat" kind=mixed note="Victoria Branch mixed, daily except Sunday: Victoria Jct. 9.10 a.m. to Waterford 9.40 a.m. (from Sydney with No. 91). No number printed."
+#train col=Mu num="" dir=up days="Mon,Tue,Wed,Thu,Fri,Sat" kind=mixed note="Victoria Branch mixed, daily except Sunday: Waterford 10.10 a.m. to Victoria Jct. 10.35 a.m. (on to Glace Bay with No. 91). No number printed."
+mile,station,principal,prov,tz,Md,Mu
+0.0,Victoria Junction,1,NS,A,lv 9.10a,ar 10.35a
+7.5,Waterford,1,NS,A,ar 9.40a,lv 10.10a
