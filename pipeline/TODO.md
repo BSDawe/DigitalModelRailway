@@ -2,7 +2,7 @@
 
 One list for the Digital Model Railway: questions for Brendan, material he is to supply, and work for Claude. It merges OPEN_QUESTIONS.md with the TO DO lists that were kept in STATE.md (the last of them: "TO DO (1 November 2026)"), as Brendan asked on 9 Nov 2026.
 Claude adds items as they come up. When one is answered or done, it moves to "Done and answered" with the date. Each open item says what the build does in the meantime. Version tags (V143) say when an item was raised.
-Last updated 11 November 2026 (Version 164).
+Last updated 11 November 2026 (Version 165).
 
 ## Decisions for Brendan
 - [ ] Fredericton Union Station (CN): Brendan's item, 10 Nov 2026. To be taken up; CN's Fredericton is now the Intercolonial station (V161). (V162)
@@ -53,7 +53,7 @@ Last updated 11 November 2026 (Version 164).
 ## Mileage to review: traced vs printed (Brendan, 10 Nov 2026: flag big gaps for review)
 Maritime tables where the traced line differs from the printed miles by 1 mi and 2 % or more, with the stretches that carry the gap. Build behaviour meanwhile: trains run on the traced line; stations off the track are placed by printed mileage. (V155)
 - [x] CN Table 9, Halifax - Yarmouth: was +9.7 mi; the Lockeport Branch pruned (Lockeport the junction station; Brendan, 10 Nov 2026): now 252.0 traced to the wharf, 250.7 printed. Italy Cross - Liverpool 21.2 / 19.7 remains. (V158)
-- [ ] CN Table 5, Halifax - Sydney: +3.2. North Sydney - Sydney 17.0 / 15.1 (the run into the North Sydney ferry spur and out again); Bayfield Road - Tracadie - Monastery offset each other (the Tracadie point).
+- [ ] CN Table 5, Halifax - Sydney: +3.2 (V155), +2.0 with Brendan's Sydney station point (V165). North Sydney - Sydney 17.0 / 15.1 (the run into the North Sydney ferry spur and out again); Bayfield Road - Tracadie - Monastery offset each other (the Tracadie point).
 - [ ] CN Table 45, Stellarton - Sunny Brae: 16.4 / 14.1 (forced onto the track; see Ferrona Junction above).
 - [ ] CN Table 37, Bridgewater - Bridgetown: 67.4 / 69.4; Middleton - Bridgetown 13.3 / 14.4.
 - [ ] CN Table 41, Bathurst - Tracadie: 89.1 / 91.1; Bathurst - East Bathurst and East Bathurst - Stonehaven offset (the East Bathurst point); Pokemouche Junction - Shippigan 5.8 / 6.9.
@@ -109,6 +109,7 @@ Maritime tables where the traced line differs from the printed miles by 1 mi and
 ## Short lines (stage 3)
 - [x] Cumberland Railway & Coal (Parrsboro - Springhill - Springhill Jct.): built (V164), S&L livery.
 - [x] Maritime Coal, Railway & Power: built (V157), Maccan (the CN station) - River Hebert - Joggins Mines. River Hebert times estimated. Colour #4E5D2F is Claude's pick.
+- [ ] Sydney & Louisburg at Sydney (V165): the Wikipedia trace ends 540 m from Brendan's S&L station point, so the trains run the first 1.0 km on the CN Sydney track. A trace of the S&L's own line into its station wanted.
 - [x] Sydney & Louisburg: built (V163). Colour #5B3A8C is Claude's pick. Victoria Jct. - Glace Bay 9.9 mi traced / 11.0 printed (the trace may take a later route).
 
 ## Done and answered
