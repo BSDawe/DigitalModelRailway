@@ -36,6 +36,13 @@ _N = list(G.nodes); _T = cKDTree([(x * 76, y * 111.2) for x, y in _N])
 for e in [n for n in _N if G.degree(n) == 1]:   # way ends within 80 m of another way's node: tied (the export's ways do not always share nodes)
     for j in _T.query_ball_point((e[0] * 76, e[1] * 111.2), 0.08):
         if _N[j] != e and not G.has_edge(e, _N[j]): G.add_edge(e, _N[j], w=km(e, _N[j]) * 3, wid='tie')
+# Gaps in the export longer than the 80 m tie, closed by hand (Brendan's lines, 10 Nov 2026), written out as connectors: the Shogomoc Trail north of Woodstock
+# to the Shogomoc Subdivision way (270 m); Woodstock, the line from Hartland to the station (420 m); St. George, the Shore Line to the Bonny River line (270 m);
+# North Devon, the Minto line to the Gibson Subdivision (490 m); Carr, the Southampton line to the Gibson Subdivision way towards Newburg (220 m).
+HAND = []
+for u, v in [((-67.5696, 46.177), (-67.5661, 46.1772)), ((-67.5809, 46.138), (-67.5864, 46.1378)), ((-66.8120273, 45.1327012), (-66.8086, 45.133)),
+             ((-66.6257635, 45.9619456), (-66.625656, 45.9663803)), ((-67.3838788, 46.18921), (-67.3864278, 46.1900576))]:
+    u, v = min(G.nodes, key=lambda n: km(n, u)), min(G.nodes, key=lambda n: km(n, v)); G.add_edge(u, v, w=km(u, v), wid='tie'); HAND.append((u, v))
 S = nx.Graph()
 for w in seed:
     c = W[w][1]; S.add_edges_from(zip(c, c[1:]))
@@ -49,7 +56,8 @@ for i, n in ends:   # bridge each loose seed end to the nearest other seed compo
     best = min(((d, m) for m, d in dist.items() if m not in comps[i] and m in S and d > 0), default=None)
     if best:
         P = path[best[1]]; added |= {G[u][v]['wid'] for u, v in zip(P, P[1:])} - seed - {'tie'}; TIES |= {(u, v) for u, v in zip(P, P[1:]) if G[u][v]['wid'] == 'tie'}
-# NOT in the export (10 Nov 2026): Woodstock - Hartland, and the Gibson Subdivision from Gibson (Fredericton) to about Upper Kingsclear - traces wanted.
+# Brendan, 10 Nov 2026 (evening): the remaining lines are in the export too: Woodstock - Hartland, the Gibson Subdivision North Devon - Keswick - Barton -
+# Millville, Debec Jct. - Houlton (Maine: the export's track stops short of the Houlton station area), St. George - Bonny River. Added as PAIRS below.
 # Lines whose OSM ways are mostly unlabelled: the shortest path between fixed points (CN-named ways 5x dearer), added whole.
 CNN = {'Newcastle Subdivision', 'Napadogan Subdivision', 'Sussex Subdivision', 'Springhill Subdivision', 'Oromocto Subdivision', 'Valley Line', 'Centreville Subdivision', 'Pelletier Subdivision'}
 def wt(u, v, e): p = W[e['wid']][0] if e['wid'] in W else {}; return e['w'] * (5 if p.get('name') in CNN or 'Canadian National' in str(p.get('operator')) else 1)
@@ -58,12 +66,15 @@ PAIRS = [('Fredericton Jct. - Fredericton', (-66.6186, 45.6623), (-66.6401, 45.9
          ('Hartland - Florenceville - Bath - Aroostook', (-67.5153, 46.2988), (-67.7183, 46.7886)), ('Aroostook - Perth - Grand Falls', (-67.7183, 46.7886), (-67.7392, 47.0469)),
          ('Grand Falls - Edmundston', (-67.7392, 47.0469), (-68.3228, 47.3672)),
          ('Perth - Plaster Rock', (-67.7, 46.74), (-67.395, 46.9097)), ('Fredericton - Minto - Chipman', (-66.6300, 45.9600), (-65.8775, 46.1778)),
-         ('Chipman - Norton', (-65.8775, 46.1778), (-65.70, 45.64)), ('Watt Jct. - St. Stephen', (-67.17, 45.42), (-67.2775, 45.1947))]
+         ('Chipman - Norton', (-65.8775, 46.1778), (-65.70, 45.64)), ('Watt Jct. - St. Stephen', (-67.17, 45.42), (-67.2775, 45.1947)),
+         ('Woodstock - Hartland', (-67.5983, 46.1522), (-67.5153, 46.2988)), ('North Devon - Keswick - Barton - Millville', (-66.6333, 45.9667), (-67.1922, 46.1273)),
+         ('Debec Jct. - Houlton', (-67.687118, 46.071894), (-67.8224665, 46.1240454)), ('St. George - Bonny River', (-66.8202, 45.1320), (-66.855218, 45.201921))]
 for nm, a, b in PAIRS:
     try: P = nx.shortest_path(G, node(a), node(b), weight=wt)
     except nx.NetworkXNoPath: print(f'{nm:35s} NO PATH'); continue
     ws = {G[u][v]['wid'] for u, v in zip(P, P[1:])} - {'tie'}; TIES |= {(u, v) for u, v in zip(P, P[1:]) if G[u][v]['wid'] == 'tie'}
     print(f'{nm:35s} {sum(G[u][v]["w"] for u, v in zip(P, P[1:])) / 1.609:6.1f} mi, {len(ws - seed - added)} ways added'); added |= ws - seed
+TIES |= set(HAND)
 lines = linemerge(MultiLineString([LineString(W[w][1]) for w in (seed | added) - {'tie'}] + [LineString([u, v]) for u, v in TIES]))
 geoms = list(lines.geoms) if lines.geom_type == 'MultiLineString' else [lines]
 feats = []
