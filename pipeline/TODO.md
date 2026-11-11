@@ -108,7 +108,7 @@ Maritime tables where the traced line differs from the printed miles by 1 mi and
 
 ## Short lines (stage 3)
 - [x] Maritime Coal, Railway & Power: built (V157), Maccan (the CN station) - River Hebert - Joggins Mines. River Hebert times estimated. Colour #4E5D2F is Claude's pick.
-- [ ] Sydney & Louisburg: timetable and track. (8 Nov)
+- [ ] Sydney & Louisburg: track in (traces/maritimes/snl.geojson, Wikipedia map, 11 Nov 2026; main line 39.9 mi). Timetable wanted (Official Guide page). (8 Nov)
 
 ## Done and answered
 ### Fixes done in Version 147 (9 Nov 2026)
