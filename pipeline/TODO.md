@@ -7,7 +7,7 @@ Last updated 11 November 2026 (Version 166).
 ## Decisions for Brendan
 - [ ] Fredericton Union Station (CN): Brendan's item, 10 Nov 2026. To be taken up; CN's Fredericton is now the Intercolonial station (V161). (V162)
 - [ ] Norton (CP Table 16, Norton - Chipman mixed): did the CP trains use the CN station? Entered for now at the CN Norton stop (Claude's reading). (V159)
-- [ ] Through trains at the hubs: 38 candidate joins (London 13, Toronto 8, Fort William 8, Sudbury 6, Ottawa 2, Montreal 1) for Brendan's Y / N; rulings go in real_ends.HUB_JOINS. Elsewhere joined automatically (V166, his rules of 11 Nov 2026).
+- [ ] Through trains at Toronto and Montreal (the only places numbers repeat, Brendan 11 Nov 2026): 9 candidate joins for his Y / N (CN 5, 14, 16, 17, 18, 118 at Toronto; CP 21, 22 at Toronto; CN 16 Maple Leaf on to Island Pond at Montreal); rulings go in real_ends.HUB_JOINS. Elsewhere joined automatically (V166).
 - [ ] Unnumbered connecting trains: branch sections printed in a parent train's column take the parent's number (e.g. on_cn_t126m / d / p / c / g). Through cars or separate connecting trains? No number, or "connection to No. 41"? (26 Oct) Brendan: much may settle as the branch tables come in.
 - [ ] CN Table 116 (Longlac - Fort William, Nos. 79 / 80): the Toronto section may be a connection with Nos. 3 / 4 at Longlac rather than through cars (Brendan not certain). Matters for chaining. (23 Oct)
 

@@ -2451,8 +2451,9 @@ Stations of different railways within 250 m (70 pairs; script: same check over v
   from the split to its terminus.
 - real_ends.py: _auto_chain links pieces (next / prev) with the same number (M prefix ignored), at the same stop, the next leaving within 3 h, days
   agreeing (allowing for midnight), names not differing, not a turnaround, one partner only on each side, not at a hub (HUBS) unless in HUB_JOINS;
-  _spread gives every piece of a chain the real ends of the whole run and its name. 110 joins; 106 chains in all (CP 45, CN 37, Grand River 18,
-  Milwaukee 4, Ontario Northland 2). Hub candidates left for Brendan: 38 (London 13, Toronto 8, Fort William 8, Sudbury 6, Ottawa 2, Montreal 1).
+  _spread gives every piece of a chain the real ends of the whole run and its name. Then (Brendan: "Toronto - Montreal are really our only
+  same number locations") HUBS = Montreal, Toronto only: 148 joins (Winnipeg, Fort William, Sudbury, Ottawa, London now joined). Before that, 110 joins; 106 chains in all (CP 45, CN 37, Grand River 18,
+  Milwaukee 4, Ontario Northland 2). Left for Brendan: 9 at Toronto and Montreal.
 
 ## Version 165 (11 November 2026): Sydney and Springhill Junction stations
 - Then Brendan's estimate for the S&L Sydney station, on the S&L trace (46.151544, -60.176541): the S&L trains no longer use CN track. Sydney - Louisburg

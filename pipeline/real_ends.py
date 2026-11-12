@@ -94,13 +94,12 @@ def apply(viz, gt):
 
 
 # Through trains across timetable files (Brendan, 11 November 2026): a piece that ends where another piece of the same number begins is the same
-# train, "same-numbered trains at non-major stations are highly unlikely to not be the same train"; at the hubs numbers are reused (CN 1 / 2 are
+# train, "same-numbered trains at non-major stations are highly unlikely to not be the same train"; at Montreal and Toronto numbers are reused (CN 1 / 2 are
 # both The Maritime Express and The Continental Limited at Montreal), so joins there wait for his rulings (HUB_JOINS). Sections: a train keeps its
 # number through a split; a section under a new number is a new train from the split (as Amtrak shows the Empire Builder and its Portland section).
 # A join needs: the same number (an M prefix ignored), the same stop, the next piece leaving within 3 hours, the days agreeing (allowing for midnight),
 # names that do not differ (no name matches any), not a turnaround (back to where the first came from), and one partner only on each side.
-HUBS = ('Montreal', 'Toronto', 'Ottawa', 'Quebec', 'Winnipeg', 'Vancouver', 'Halifax', 'Saint John', 'Moncton', 'Truro', 'Calgary', 'Edmonton', 'Regina',
-        'Saskatoon', 'Hamilton', 'London', 'Windsor', 'Sudbury', 'North Bay', 'Fort William', 'Port Arthur')
+HUBS = ('Montreal', 'Toronto')   # Brendan, 11 Nov 2026: "Toronto - Montreal are really our only same number locations" (numbers repeat only far apart elsewhere)
 HUB_JOINS = set()          # (first trip id, next trip id) ruled by Brendan at the hubs
 CPF = {'Canadian Pacific', 'Dominion Atlantic', 'Quebec Central'}
 GENERIC = {'', 'local', 'mixed', 'motor train', 'train', 'motor', 'mixed train', 'gas-electric car', 'quebec central', 'dominion atlantic'}
