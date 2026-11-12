@@ -105,7 +105,7 @@ Maritime tables where the traced line differs from the printed miles by 1 mi and
 - [ ] Interurban train icon: Brendan is not satisfied; revisit later. (23 Oct)
 
 ## Remaining 1948 services (list of 11 Nov 2026)
-- [ ] Rail: North Yonge Railways (TTC, Toronto - Richmond Hill; Brendan); Pere Marquette / C&O in southwestern Ontario and Wabash through Ontario: passenger service in 1948 to check. Streetcars out of scope so far.
+- [ ] Rail: North Yonge Railways (TTC, Toronto - Richmond Hill; Brendan) (Wabash and Pere Marquette: no passenger service in Canada in 1948; Brendan). Streetcars out of scope so far.
 - [ ] Water: Owen Sound Transportation Co. (Manitoulin: Norisle, Normac); Pelee Island and Wolfe Island ferries; Northumberland Ferries (Wood Islands - Caribou); Grand Manan ferry; Clarke Steamship (Gaspe, North Shore). Lake Winnipeg (Keenora) is in; the northern river boats were no longer scheduled common carriers after 1947 (Brendan).
 
 ## Cross-border trains cut at the border (stage 4; list of 11 Nov 2026)

@@ -142,16 +142,31 @@ def _auto_chain(viz, gt):
                 ta, td = x['t']['stops'][-1][1], y['t']['stops'][0][2]; gap = (td - ta) % 86400
                 if gap > 3 * 3600: continue
                 sh = ((ta + gap) // 86400) - (td // 86400)
-                if frozenset((d + sh) % 7 for d in x['days']) != y['days']: continue
+                xd = frozenset((d + sh) % 7 for d in x['days'])
+                if not (xd <= y['days'] or y['days'] <= xd): continue                          # the days agree, or one piece runs on some of the other's
+                x['xd'] = xd
                 hub = any(x['b']['name'].startswith(h) for h in HUBS)
                 if hub and (x['t']['id'], y['t']['id']) not in HUB_JOINS: continue
                 cand.append((x, y))
-    nx, ny = {}, {}
-    for x, y in cand: nx[id(x['t'])] = nx.get(id(x['t']), 0) + 1; ny[id(y['t'])] = ny.get(id(y['t']), 0) + 1
+    # One partner on each side, or several whose days do not overlap (Brendan, 11 Nov 2026, CP 39 / 41 / 42 at Sherbrooke: the daily train from
+    # Montreal is No. 42 to Saint John six days a week and No. 42s to Brownville Jct. on Saturday). Each piece follows on to its partner ('next');
+    # a piece with several before it points back ('prev') to the one running on most days.
+    byx, byy = {}, {}
+    for x, y in cand: byx.setdefault(id(x['t']), []).append((x, y)); byy.setdefault(id(y['t']), []).append((x, y))
+    def disjoint(ds):
+        seen = set()
+        for d in ds:
+            if seen & d: return False
+            seen |= d
+        return True
     n = 0
     for x, y in cand:
-        if nx[id(x['t'])] > 1 or ny[id(y['t'])] > 1 or x['t'].get('next') or y['t'].get('prev'): continue
-        x['t']['next'], y['t']['prev'] = y['t']['id'], x['t']['id']; n += 1
+        if not disjoint([q['days'] for _, q in byx[id(x['t'])]]) or not disjoint([p['xd'] for p, _ in byy[id(y['t'])]]): continue
+        if len(byx[id(x['t'])]) > 1 and len(byy[id(y['t'])]) > 1: continue
+        best = max(byy[id(y['t'])], key=lambda pq: len(pq[0]['xd']))[0]
+        if best is x and not y['t'].get('prev'): y['t']['prev'] = x['t']['id']       # a later piece on some days only (42s Saturday) still points back
+        if x['t'].get('next') and x['t']['next'] != y['t']['id']: continue
+        if not x['t'].get('next'): x['t']['next'] = y['t']['id']; n += 1
     print(f'  real_ends: {n} through-train joins across pieces (same number, not at a hub)')
 
 def _spread(viz, extra):
@@ -162,7 +177,8 @@ def _spread(viz, extra):
     first = lambda L, t: L['stations'][t['stops'][0][0]]['name']
     last = lambda L, t: L['stations'][t['stops'][-1][0]]['name']
     done = set()
-    for L, t in list(byid.values()):
+    branch = lambda t: t.get('prev') in byid and byid[t['prev']][1].get('next') != t['id']      # a some-days piece off a train that runs on (42s Saturday)
+    for L, t in sorted(byid.values(), key=lambda Lt: branch(Lt[1])):
         if not (t.get('next') or t.get('prev')) or t['id'] in done: continue
         chain = [(L, t)]; seen = {t['id']}
         while chain[0][1].get('prev') in byid and chain[0][1]['prev'] not in seen: chain.insert(0, byid[chain[0][1]['prev']]); seen.add(chain[0][1]['id'])
@@ -174,5 +190,6 @@ def _spread(viz, extra):
         T = (chain[-1][1].get('to') or _past(l0)) if l0.startswith('International Boundary') else l0
         nm = next((q.get('name') for _, q in chain if _nm(q)), None)
         for QL, q in chain:
+            if q['id'] in done: continue                                                         # the main train keeps its own ends
             done.add(q['id']); extra[q['id']] = (F, T); q['from'], q['to'] = F, T
             if nm and not _nm(q): q['name'] = nm

@@ -2848,3 +2848,12 @@ Stations of different railways within 250 m (70 pairs; script: same check over v
   now reads "four and a half hours"): t001 main line (1, 15 to Millertown Jct., 2, 16 from Millertown Jct.), t002 Brigus branch mixed 7/8, t003 Argentia -
   Placentia mixed 5/6 (Placentia Jct. - Argentia Jct. - Placentia, back to Argentia Jct. - Argentia), t004 Bonavista mixed 27, 11, 12, 28, 24, t005 Lewisporte
   mixed (from the side note). Port-aux-Basques - North Sydney steamer: no times on the page, not built.
+
+## Version 167 (11 November 2026): CP through Sherbrooke
+- Fix (Brendan: same-number CP trains not running through Sherbrooke): _auto_chain wanted identical day sets, but oncp010 splits trains by day
+  (39 Mon-Sat from Saint John and 39 Monday from Megantic both feed the daily 39 to Montreal; daily 42 runs to Saint John Sun-Fri and to
+  Brownville Jct. Saturday). Days now need only be a subset either way; several partners on one side are allowed when their days do not overlap
+  (never many-to-many). Each piece's 'next' is its partner; a some-days piece points back ('prev') to the train, and _spread gives it its own
+  ends (42 Saturday: Montreal - Brownville Junction) while the main train keeps its own. New joins elsewhere from the rule: CN 11 / 12
+  Saskatoon, CN 10 Detroit - London - Toronto, Algoma Central 1 / 2 at Hawk Jct., CN 11 / 12 Fitzpatrick, ONR 150 Cochrane.
+- Brendan: Wabash and Pere Marquette had no passenger service in Canada in 1948.
