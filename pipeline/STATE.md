@@ -2453,7 +2453,7 @@ Stations of different railways within 250 m (70 pairs; script: same check over v
   agreeing (allowing for midnight), names not differing, not a turnaround, one partner only on each side, not at a hub (HUBS) unless in HUB_JOINS;
   _spread gives every piece of a chain the real ends of the whole run and its name. Then (Brendan: "Toronto - Montreal are really our only
   same number locations") HUBS = Montreal, Toronto only: 148 joins (Winnipeg, Fort William, Sudbury, Ottawa, London now joined). Before that, 110 joins; 106 chains in all (CP 45, CN 37, Grand River 18,
-  Milwaukee 4, Ontario Northland 2). Left for Brendan: 9 at Toronto and Montreal.
+  Milwaukee 4, Ontario Northland 2). Then Toronto also joined (Brendan: "all Toronto through trains"): HUBS = Montreal only, 156 joins; CN 16 Montreal - Portland is a different train from The Maple Leaf.
 
 ## Version 165 (11 November 2026): Sydney and Springhill Junction stations
 - Then Brendan's estimate for the S&L Sydney station, on the S&L trace (46.151544, -60.176541): the S&L trains no longer use CN track. Sydney - Louisburg

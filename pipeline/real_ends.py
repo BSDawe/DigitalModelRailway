@@ -99,7 +99,8 @@ def apply(viz, gt):
 # number through a split; a section under a new number is a new train from the split (as Amtrak shows the Empire Builder and its Portland section).
 # A join needs: the same number (an M prefix ignored), the same stop, the next piece leaving within 3 hours, the days agreeing (allowing for midnight),
 # names that do not differ (no name matches any), not a turnaround (back to where the first came from), and one partner only on each side.
-HUBS = ('Montreal', 'Toronto')   # Brendan, 11 Nov 2026: "Toronto - Montreal are really our only same number locations" (numbers repeat only far apart elsewhere)
+HUBS = ('Montreal',)   # Brendan, 11 Nov 2026: Toronto - Montreal the only same-number places; then the Toronto candidates "are all Toronto through trains".
+# Montreal stays held: CN 16 Montreal - Portland, Me. is a different train from No. 16 The Maple Leaf (Detroit - Toronto - Montreal).
 HUB_JOINS = set()          # (first trip id, next trip id) ruled by Brendan at the hubs
 CPF = {'Canadian Pacific', 'Dominion Atlantic', 'Quebec Central'}
 GENERIC = {'', 'local', 'mixed', 'motor train', 'train', 'motor', 'mixed train', 'gas-electric car', 'quebec central', 'dominion atlantic'}

@@ -7,7 +7,6 @@ Last updated 11 November 2026 (Version 166).
 ## Decisions for Brendan
 - [ ] Fredericton Union Station (CN): Brendan's item, 10 Nov 2026. To be taken up; CN's Fredericton is now the Intercolonial station (V161). (V162)
 - [ ] Norton (CP Table 16, Norton - Chipman mixed): did the CP trains use the CN station? Entered for now at the CN Norton stop (Claude's reading). (V159)
-- [ ] Through trains at Toronto and Montreal (the only places numbers repeat, Brendan 11 Nov 2026): 9 candidate joins for his Y / N (CN 5, 14, 16, 17, 18, 118 at Toronto; CP 21, 22 at Toronto; CN 16 Maple Leaf on to Island Pond at Montreal); rulings go in real_ends.HUB_JOINS. Elsewhere joined automatically (V166).
 - [ ] Unnumbered connecting trains: branch sections printed in a parent train's column take the parent's number (e.g. on_cn_t126m / d / p / c / g). Through cars or separate connecting trains? No number, or "connection to No. 41"? (26 Oct) Brendan: much may settle as the branch tables come in.
 - [ ] CN Table 116 (Longlac - Fort William, Nos. 79 / 80): the Toronto section may be a connection with Nos. 3 / 4 at Longlac rather than through cars (Brendan not certain). Matters for chaining. (23 Oct)
 
@@ -135,6 +134,7 @@ Each runs to an International Boundary point (time estimated) or to the last Can
 - Campbellton at Brendan's point on the main line (all Campbellton files). CN Edmundston at Brendan's point (47 21 41.94 N, 68 20 07.84 W), on_cn_t023.
 
 ### Answered
+- Through trains at Toronto: all joined (Brendan, 11 Nov 2026). Montreal: held; CN 16 Montreal - Portland is not The Maple Leaf. (V166)
 - Trip chaining (11 Nov 2026): same-numbered pieces at non-major stations are one train; hubs by ruling; a section with a new number is a new train from the split (the Amtrak way). Built V166.
 - CP N.B. track (V162): the missing lines are in Brendan's export (unlabelled ways with small gaps; joined). Points: St. Stephen, Bonny River, Houlton, CP Edmundston (separate from CN's). CN Table 36 at St. Leonard stops on the NTR. (Brendan, 10 Nov 2026)
 - Fredericton (V161): CP at York Street Station, CN at the Intercolonial station, Brendan's points (10 Nov 2026).
