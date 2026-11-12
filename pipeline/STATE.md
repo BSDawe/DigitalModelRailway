@@ -2857,3 +2857,12 @@ Stations of different railways within 250 m (70 pairs; script: same check over v
   ends (42 Saturday: Montreal - Brownville Junction) while the main train keeps its own. New joins elsewhere from the rule: CN 11 / 12
   Saskatoon, CN 10 Detroit - London - Toronto, Algoma Central 1 / 2 at Hawk Jct., CN 11 / 12 Fitzpatrick, ONR 150 Cochrane.
 - Brendan: Wabash and Pere Marquette had no passenger service in Canada in 1948.
+
+## Export: trains per week (12 November 2026)
+- tools/export_frequency.py (Brendan): a GeoJSON line file of trains per week on Canadian track, in total and by railway (CP with E&N / QC /
+  DAR as "On the line"). Interurbans, boats and US track are left out, except CN through northern Minnesota (skcn155) and CP across Maine
+  (oncp010, Vanceboro). tools/border.py: Canada / US side from Natural Earth 1:10m, with named exceptions near the rivers.
+- Same track in two files: a piece between two stations takes another file's track when that file runs between the same stations at about the
+  same length in the same place (gid paths); the rest are snapped to common nodes (60 m; 120 m for the same owner). Stubs: doubling back is
+  taken out; a stub that leaves and rejoins by a different way is replaced by the shorter way already in the network. Each train counts once
+  per edge per day it runs. Fields: trains_wk, trains_day, railways, files, one column per railway.
