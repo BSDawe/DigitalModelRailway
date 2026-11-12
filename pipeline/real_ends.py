@@ -46,6 +46,7 @@ def apply(viz, gt):
                 if o: t['from'] = o
                 if d: t['to'] = d
             if t['id'] in NAMES and not t.get('name'): t['name'] = NAMES[t['id']]
+    _auto_chain(viz, gt)
     # Through trains in pieces (Brendan, 15 October 2026): a train shown as two or more trips, one ending where the next of the same number
     # begins (the Saskatchewan and Alberta parts at the boundary; CP No. 2 lying over at Calgary as 2E): the pieces are linked ('next' /
     # 'prev', which the page shows and follows as one train) and each takes the real ends of the whole run, and its name.
@@ -79,6 +80,7 @@ def apply(viz, gt):
             if nm and not t.get('name'): t['name'] = nm
         for L, t in ps:
             if t['id'] in extra: t['from'], t['to'] = extra[t['id']]
+    _spread(viz, extra)
     if 'trips.txt' in gt:
         rows = list(csv.reader(io.StringIO(''.join(gt['trips.txt']))))
         h = rows[0]; it, ih, isn = h.index('trip_id'), h.index('trip_headsign'), h.index('trip_short_name') if 'trip_short_name' in h else None
@@ -89,3 +91,82 @@ def apply(viz, gt):
         out = io.StringIO(); csv.writer(out, lineterminator='\r\n' if gt['trips.txt'][0].endswith('\r\n') else '\n').writerows(rows)
         gt['trips.txt'] = out.getvalue().splitlines(keepends=True)
     return sorted(set(REAL) - seen)
+
+
+# Through trains across timetable files (Brendan, 11 November 2026): a piece that ends where another piece of the same number begins is the same
+# train, "same-numbered trains at non-major stations are highly unlikely to not be the same train"; at the hubs numbers are reused (CN 1 / 2 are
+# both The Maritime Express and The Continental Limited at Montreal), so joins there wait for his rulings (HUB_JOINS). Sections: a train keeps its
+# number through a split; a section under a new number is a new train from the split (as Amtrak shows the Empire Builder and its Portland section).
+# A join needs: the same number (an M prefix ignored), the same stop, the next piece leaving within 3 hours, the days agreeing (allowing for midnight),
+# names that do not differ (no name matches any), not a turnaround (back to where the first came from), and one partner only on each side.
+HUBS = ('Montreal', 'Toronto', 'Ottawa', 'Quebec', 'Winnipeg', 'Vancouver', 'Halifax', 'Saint John', 'Moncton', 'Truro', 'Calgary', 'Edmonton', 'Regina',
+        'Saskatoon', 'Hamilton', 'London', 'Windsor', 'Sudbury', 'North Bay', 'Fort William', 'Port Arthur')
+HUB_JOINS = set()          # (first trip id, next trip id) ruled by Brendan at the hubs
+CPF = {'Canadian Pacific', 'Dominion Atlantic', 'Quebec Central'}
+GENERIC = {'', 'local', 'mixed', 'motor train', 'train', 'motor', 'mixed train', 'gas-electric car', 'quebec central', 'dominion atlantic'}
+
+def _cal(gt):
+    import csv as _csv, io as _io
+    days = {}
+    if 'calendar.txt' in gt:
+        for r in _csv.DictReader(_io.StringIO(''.join(gt['calendar.txt']))):
+            days[r['service_id']] = frozenset(i for i, d in enumerate(('monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday')) if r[d] == '1')
+    return days
+
+def _nm(t):
+    import re as _re
+    n = (t.get('name') or '').strip()
+    return '' if n.lower() in GENERIC or n.lower().startswith('canadian ') else _re.sub(r'^the ', '', n, flags=_re.I).lower()
+
+def _auto_chain(viz, gt):
+    import re as _re
+    cal = _cal(gt); ends, starts = {}, {}
+    for L in viz.get('lines', []):
+        if L.get('water') or L.get('kind') == 'v': continue
+        st = L['stations']
+        for t in L.get('trips', []):
+            if not t.get('stops') or t.get('svc') not in cal: continue
+            num = _re.sub(r'^M', '', str(t.get('num') or ''))
+            if not _re.match(r'^\d+$', num): continue
+            a, b = st[t['stops'][0][0]], st[t['stops'][-1][0]]
+            p = dict(L=L, t=t, num=num, nm=_nm(t), days=cal[t['svc']], a=a, b=b)
+            ends.setdefault(b['gid'], []).append(p); starts.setdefault(a['gid'], []).append(p)
+    cand = []
+    for g, E in ends.items():
+        for x in E:
+            for y in starts.get(g, []):
+                if x['t'] is y['t'] or x['num'] != y['num']: continue
+                if x['L']['label'] != y['L']['label'] and not {x['L']['label'], y['L']['label']} <= CPF: continue
+                if x['nm'] and y['nm'] and x['nm'] != y['nm']: continue
+                if y['b']['gid'] == x['a']['gid']: continue                                    # a turnaround
+                ta, td = x['t']['stops'][-1][1], y['t']['stops'][0][2]; gap = (td - ta) % 86400
+                if gap > 3 * 3600: continue
+                sh = ((ta + gap) // 86400) - (td // 86400)
+                if frozenset((d + sh) % 7 for d in x['days']) != y['days']: continue
+                hub = any(x['b']['name'].startswith(h) for h in HUBS)
+                if hub and (x['t']['id'], y['t']['id']) not in HUB_JOINS: continue
+                cand.append((x, y))
+    nx, ny = {}, {}
+    for x, y in cand: nx[id(x['t'])] = nx.get(id(x['t']), 0) + 1; ny[id(y['t'])] = ny.get(id(y['t']), 0) + 1
+    n = 0
+    for x, y in cand:
+        if nx[id(x['t'])] > 1 or ny[id(y['t'])] > 1 or x['t'].get('next') or y['t'].get('prev'): continue
+        x['t']['next'], y['t']['prev'] = y['t']['id'], x['t']['id']; n += 1
+    print(f'  real_ends: {n} through-train joins across pieces (same number, not at a hub)')
+
+def _spread(viz, extra):
+    """Every linked chain: each piece takes the real ends of the whole run and its name."""
+    byid = {t['id']: (L, t) for L in viz.get('lines', []) for t in L.get('trips', [])}
+    first = lambda L, t: L['stations'][t['stops'][0][0]]['name']
+    last = lambda L, t: L['stations'][t['stops'][-1][0]]['name']
+    for L, t in list(byid.values()):
+        if not (t.get('next') or t.get('prev')) or t['id'] in extra: continue
+        chain = [(L, t)]; seen = {t['id']}
+        while chain[0][1].get('prev') in byid and chain[0][1]['prev'] not in seen: chain.insert(0, byid[chain[0][1]['prev']]); seen.add(chain[0][1]['id'])
+        while chain[-1][1].get('next') in byid and chain[-1][1]['next'] not in seen: chain.append(byid[chain[-1][1]['next']]); seen.add(chain[-1][1]['id'])
+        F = chain[0][1].get('from') or first(*chain[0]); T = chain[-1][1].get('to') or last(*chain[-1])
+        nm = next((q.get('name') for _, q in chain if _nm(q)), None)
+        for QL, q in chain:
+            if q['id'] in extra: continue
+            extra[q['id']] = (F, T); q['from'], q['to'] = F, T
+            if nm and not _nm(q): q['name'] = nm

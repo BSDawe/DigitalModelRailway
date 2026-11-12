@@ -2,12 +2,12 @@
 
 One list for the Digital Model Railway: questions for Brendan, material he is to supply, and work for Claude. It merges OPEN_QUESTIONS.md with the TO DO lists that were kept in STATE.md (the last of them: "TO DO (1 November 2026)"), as Brendan asked on 9 Nov 2026.
 Claude adds items as they come up. When one is answered or done, it moves to "Done and answered" with the date. Each open item says what the build does in the meantime. Version tags (V143) say when an item was raised.
-Last updated 11 November 2026 (Version 165).
+Last updated 11 November 2026 (Version 166).
 
 ## Decisions for Brendan
 - [ ] Fredericton Union Station (CN): Brendan's item, 10 Nov 2026. To be taken up; CN's Fredericton is now the Intercolonial station (V161). (V162)
 - [ ] Norton (CP Table 16, Norton - Chipman mixed): did the CP trains use the CN station? Entered for now at the CN Norton stop (Claude's reading). (V159)
-- [ ] Trip chaining: when should two pieces of the same train join into one trip? The plan was to join automatically when the stop between them is under an hour (named trains only when the names agree; an unnamed piece never blocks a join). Brendan, 9 Nov 2026: not sure about the hour any more. Undecided; chaining waits on it.
+- [ ] Through trains at the hubs: 38 candidate joins (London 13, Toronto 8, Fort William 8, Sudbury 6, Ottawa 2, Montreal 1) for Brendan's Y / N; rulings go in real_ends.HUB_JOINS. Elsewhere joined automatically (V166, his rules of 11 Nov 2026).
 - [ ] Unnumbered connecting trains: branch sections printed in a parent train's column take the parent's number (e.g. on_cn_t126m / d / p / c / g). Through cars or separate connecting trains? No number, or "connection to No. 41"? (26 Oct) Brendan: much may settle as the branch tables come in.
 - [ ] CN Table 116 (Longlac - Fort William, Nos. 79 / 80): the Toronto section may be a connection with Nos. 3 / 4 at Longlac rather than through cars (Brendan not certain). Matters for chaining. (23 Oct)
 
@@ -94,7 +94,6 @@ Maritime tables where the traced line differs from the printed miles by 1 mi and
 - [ ] ESL livery colour: the placeholder is #7a2430. (V145)
 
 ## Work for Claude
-- [ ] Trip chaining across files (plan: staged/maritimes/STAGED.md; generalise real_ends.py; GTFS block_id). Waits on the decision above. Then again for CP.
 - [ ] Build-out order (Brendan, 8 Nov 2026): 1 CN Maritimes (done, V148), 2 CP Maritimes, 3 short lines with 1948 passenger service, 4 U.S. connections (whole U.S. railways in time).
 - [ ] Before the U.S. build-out: split parts/on_build.json (25 MB: Ontario, Quebec and the Maritimes in one file) by region or railway, so it stays under GitHub's 50 MB warning (100 MB refuses a push) and each version commits only the changed region; then have the page load a region's data when it is viewed. CP Maritimes is small enough to go first (Brendan, 10 Nov 2026).
 - [ ] CP Table 8 south of the border (Newport - Wells River - Boston / New York); Tables 25 / 26 (Montreal - Maine coast, Barre & Chelsea); the Bangor & Aroostook and Maine Central / B&M connections at Brownville Jct., Mattawamkeag and Vanceboro (The Gull and The Pine Tree beyond Vanceboro); the Quebec - Levis ferry (QC Nos. 2 / 5); the Beebe Jct. - Rock Island bus. (25 Oct; U.S. stage) CP Table 10 east of Boundary and the N.B. tables: built (V159).
@@ -136,6 +135,7 @@ Each runs to an International Boundary point (time estimated) or to the last Can
 - Campbellton at Brendan's point on the main line (all Campbellton files). CN Edmundston at Brendan's point (47 21 41.94 N, 68 20 07.84 W), on_cn_t023.
 
 ### Answered
+- Trip chaining (11 Nov 2026): same-numbered pieces at non-major stations are one train; hubs by ruling; a section with a new number is a new train from the split (the Amtrak way). Built V166.
 - CP N.B. track (V162): the missing lines are in Brendan's export (unlabelled ways with small gaps; joined). Points: St. Stephen, Bonny River, Houlton, CP Edmundston (separate from CN's). CN Table 36 at St. Leonard stops on the NTR. (Brendan, 10 Nov 2026)
 - Fredericton (V161): CP at York Street Station, CN at the Intercolonial station, Brendan's points (10 Nov 2026).
 - Yarmouth (V158, V160): Brendan's OSM export and points: separate CN and DAR stations (V160; one station in V158-159 from a copy-paste slip); Evangeline Wharf (Lovitt Street in CN Table 9 is another name for it) served by both railways' boat trains (CN Nos. 87b / 88b added); the Boston boat at the wharf. Maccan moved to Brendan's point on the Intercolonial (CN and MCR&P). (Brendan, 10 Nov 2026)
