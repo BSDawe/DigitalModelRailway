@@ -11,8 +11,6 @@ Last updated 11 November 2026 (Version 166).
 - [ ] CN Table 116 (Longlac - Fort William, Nos. 79 / 80): the Toronto section may be a connection with Nos. 3 / 4 at Longlac rather than through cars (Brendan not certain). Matters for chaining. (23 Oct)
 
 ## Fixes queued (Brendan: "don't fix yet"; ask before the next rebuild whether to include them)
-- (none)
-
 - [ ] Out-and-back joins (left for now, Brendan 11 Nov 2026: could be one train movement): Spl Kenora - Winnipeg - Kenora (skcp005e) and mixed M332
   Eyre - Acadia Valley - Eyre (skcn229b) are linked to their own return trips by the older group-key chaining in real_ends.py.
 
