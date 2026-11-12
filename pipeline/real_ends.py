@@ -155,18 +155,24 @@ def _auto_chain(viz, gt):
     print(f'  real_ends: {n} through-train joins across pieces (same number, not at a hub)')
 
 def _spread(viz, extra):
-    """Every linked chain: each piece takes the real ends of the whole run and its name."""
+    """Every linked chain: each piece takes the ends of the whole run and its name. The ends are the chain's own first and last stations; a 'from' /
+    'to' set earlier (REAL, or by a file) is kept only where the chain runs off the map at an International Boundary (Brendan, 11 Nov 2026: the
+    old Prairie guesses, CP 4 'to Montreal' and CP 8 'to Toronto', had them the wrong way round once the pieces were joined)."""
     byid = {t['id']: (L, t) for L in viz.get('lines', []) for t in L.get('trips', [])}
     first = lambda L, t: L['stations'][t['stops'][0][0]]['name']
     last = lambda L, t: L['stations'][t['stops'][-1][0]]['name']
+    done = set()
     for L, t in list(byid.values()):
-        if not (t.get('next') or t.get('prev')) or t['id'] in extra: continue
+        if not (t.get('next') or t.get('prev')) or t['id'] in done: continue
         chain = [(L, t)]; seen = {t['id']}
         while chain[0][1].get('prev') in byid and chain[0][1]['prev'] not in seen: chain.insert(0, byid[chain[0][1]['prev']]); seen.add(chain[0][1]['id'])
         while chain[-1][1].get('next') in byid and chain[-1][1]['next'] not in seen: chain.append(byid[chain[-1][1]['next']]); seen.add(chain[-1][1]['id'])
-        F = chain[0][1].get('from') or first(*chain[0]); T = chain[-1][1].get('to') or last(*chain[-1])
+        f0, l0 = first(*chain[0]), last(*chain[-1])
+        import re as _re
+        def _past(n): m = _re.search(r'to ([^)]+)\)$', n); return m.group(1) if m else n      # 'International Boundary (..., to Port Huron, Mich.)'
+        F = (chain[0][1].get('from') or _past(f0)) if f0.startswith('International Boundary') else f0
+        T = (chain[-1][1].get('to') or _past(l0)) if l0.startswith('International Boundary') else l0
         nm = next((q.get('name') for _, q in chain if _nm(q)), None)
         for QL, q in chain:
-            if q['id'] in extra: continue
-            extra[q['id']] = (F, T); q['from'], q['to'] = F, T
+            done.add(q['id']); extra[q['id']] = (F, T); q['from'], q['to'] = F, T
             if nm and not _nm(q): q['name'] = nm

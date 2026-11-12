@@ -2446,6 +2446,9 @@ Stations of different railways within 250 m (70 pairs; script: same check over v
   Dalhousie cars, Toronto - Port Dalhousie boat, Cobourg - Genesee points, colours).
 
 ## Version 166 (11 November 2026): through trains joined across pieces
+- Fix (Brendan: CP transcontinentals showed Montreal for Toronto and the reverse; 1 / 2 still said Fort William): _spread now gives every piece of a
+  chain the chain's own first and last stations, overriding the earlier per-group and REAL guesses; an end at an International Boundary takes the
+  piece's 'from' / 'to' or the place named in the boundary point (e.g. Port Huron, Mich.).
 - Brendan's rules (11 Nov 2026): same-numbered trains meeting at a non-major station are the same train; at the hubs numbers are reused, so joins
   there wait for his rulings. Sections as Amtrak shows them: the train keeps its number through a split; a section under a new number is a new train
   from the split to its terminus.
