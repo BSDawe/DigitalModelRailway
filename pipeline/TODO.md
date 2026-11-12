@@ -104,6 +104,10 @@ Maritime tables where the traced line differs from the printed miles by 1 mi and
 - [ ] CP Table 51 (Glen Tay - Havelock - Peterboro - Toronto), Table 56 (Toronto - Hamilton), Detroit - Chicago (U.S.): check what is still unbuilt. (25 Oct)
 - [ ] Interurban train icon: Brendan is not satisfied; revisit later. (23 Oct)
 
+## Remaining 1948 services (list of 11 Nov 2026)
+- [ ] Rail: North Yonge Railways (TTC, Toronto - Richmond Hill; Brendan); Pere Marquette / C&O in southwestern Ontario and Wabash through Ontario: passenger service in 1948 to check. Streetcars out of scope so far.
+- [ ] Water: Owen Sound Transportation Co. (Manitoulin: Norisle, Normac); Pelee Island and Wolfe Island ferries; Northumberland Ferries (Wood Islands - Caribou); Grand Manan ferry; Clarke Steamship (Gaspe, North Shore). Lake Winnipeg (Keenora) is in; the northern river boats were no longer scheduled common carriers after 1947 (Brendan).
+
 ## Cross-border trains cut at the border (stage 4; list of 11 Nov 2026)
 Each runs to an International Boundary point (time estimated) or to the last Canadian station; the U.S. part waits for the U.S. railways.
 - [ ] Niagara River, Black Rock (Buffalo): Michigan Central through trains Windsor - Fort Erie (8 Wolverine, 17, 33 New England Wolverine, 35, 39 / 40 North Shore Limited, 44, 50 / 51 Empire State Express, 364, motors 365 / 366); TH&B Hamilton - Buffalo 73, 76, 371, 372, 374, 375, 379, 380, 382, 383 (through from / to Toronto as CP 7xx / 8xx).
