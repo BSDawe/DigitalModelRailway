@@ -93,3 +93,20 @@ mile,mile2,station,72,36,35,71
 - For each train, read its column top to bottom on the page and in your output: the same values in the same order, every flag mark kept?
 - Times in each column should run steadily one way (down columns get later going down; up columns get later going up). A time that breaks the
   order usually means a slipped row or a missed A.M./P.M. change: look again, and if it really is printed that way, copy it and say so in UNSURE.
+
+## Check mode: comparing a scan with a table already transcribed
+
+When you are also given an existing transcription of the same table (a CSV, from another timetable such as the Official Guide), do not copy the
+whole table. Read the scan and report only what differs, in this shape:
+
+```
+TABLE: <as above>
+MATCHES: <stations and trains that agree, in a few words, e.g. "all 36 / 35 times Matapedia - Gaspe">
+NEW TRAIN <number> | dir= | heading="..."         (a column not in the existing file: give its full column as rows below)
+NEW STATION <mile>,<station>,<one cell per train, in the scan's column order>   (a row not in the existing file, between its neighbours)
+DIFF <station> / <train>: scan <value> | file <value>
+UNSURE: <as above>
+```
+
+Use the same cell values as the full format (`f10.05a`, `f`, `-`, `ar .. / lv ..`). The existing file uses the same notation; its `~` before a
+time marks a time that was estimated, not printed: if the scan prints a time there, report it as a DIFF.
