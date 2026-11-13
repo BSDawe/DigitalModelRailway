@@ -157,9 +157,12 @@ mile,station,principal,prov,tz,No1,No59,No3,No31,No135,No143,No2,No60,No4,No32,N
 804.5,Ste. Rosalie Junction,0,QC,E,,,,,,8.10a,,,,,,f5.54p,,
 806.5,St. Hyacinthe,1,QC,E,5.36p,7.44a,5.54a,,,ar 8.15a,12.34p,9.24p,8.49p,,,5.50p,5.36p,12.34p
 814.0,Ste. Madeleine,0,QC,E,,,,,,,,,,,,5.32p,,
+819.2,St. Hilaire East,0,QC,E,,,,,,,,,,,,~5.20p,,
 820.0,St. Hilaire,0,QC,E,,,,,,,,,,,,5.18p,,
+820.6,Otterburn Park,0,QC,E,,,,,,,,,,,,~5.15p,,
 821.0,Beloeil,0,QC,E,,,,,,,,,,,,5.13p,,
 825.0,St. Basile le Grand,0,QC,E,,,,,,,,,,,,5.03p,,
+826.1,Montarville,0,QC,E,,,,,,,,,,,,~5.00p,,
 828.0,St. Bruno,0,QC,E,,,,,,,,,,,,4.56p,,
 832.1,St. Hubert,0,QC,E,,,,,,,,,,,,4.48p,,
 836.0,St. Lambert,0,QC,E,f6.16p,f8.25a,,,,,f11.50a,f8.35p,,,,4.41p,f6.16p,f11.50a

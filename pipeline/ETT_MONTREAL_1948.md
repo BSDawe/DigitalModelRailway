@@ -9,7 +9,12 @@ the time the train passes (no stop). Stations below count as passenger stops onl
 
 The employee timetable is the summer timetable (20 June); the model is April. Train differences may be seasonal, not omissions.
 
-## Stations with stops that the model lacks
+## Done (Version 168, 13 Nov 2026)
+
+All the stations below added with their stops (estimated times); the Montreal Nord locals, the Golden Lake - Pembroke numbers and the Oka
+subdivision trains added or split as below. No. 84 was already in the model (on_cn_t077a.csv); 380 was the model's unnumbered Sunday train.
+
+## Stations with stops that the model lacked
 
 | Line (model file) | Station | Position | Stops |
 |---|---|---|---|

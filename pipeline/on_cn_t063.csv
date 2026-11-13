@@ -11,12 +11,20 @@
 mile,station,principal,prov,tz,No206,No210,M202,No208,M201,No205
 0.0,Montreal (Central Station),1,QC,E,lv 8.20a,lv 12.30p,lv 3.15p,lv 4.50p,ar 9.40a,ar 8.55p
 3.9,Mount Royal,0,QC,E,8.30a,12.40p,3.24p,5.00p,9.30a,8.45p
+7.4,Ahuntsic,0,QC,E,~8.37a,~f12.48p,~3.32p,~5.08p,~f9.22a,~f8.37p
+8.8,Sault au Recollet,0,QC,E,~f8.40a,~f12.52p,~f3.36p,~f5.12p,~f9.19a,~f8.34p
+9.1,St. Vital,0,QC,E,,~f12.53p,,,,
+9.7,Pie IX,0,QC,E,~f8.42a,~f12.54p,,,,
+10.5,Ste. Gertrude,0,QC,E,,~f12.56p,,,,
+15.4,Riviere des Prairies,0,QC,E,~f8.54a,~f1.08p,~f3.52p,~f5.28p,~f9.05a,~f8.20p
 19.2,Pointe aux Trembles,0,QC,E,9.02a,1.18p,4.02p,5.37p,8.56a,8.12p
 22.4,Charlemagne,0,QC,E,9.08a,1.24p,4.08p,5.43p,8.45a,8.06p
+24.7,St. Paul l'Ermite,0,QC,E,~9.12a,~1.28p,~4.13p,~5.48p,~8.41a,~8.03p
 29.6,L'Assomption,0,QC,E,9.20a,1.36p,4.25p,5.58p,8.32a,7.55p
 32.6,L'Epiphanie,1,QC,E,9.25a,1.42p,4.37p,6.03p,8.25a,7.50p
+38.5,St. Georges,0,QC,E,~f9.41a,~f1.57p,~f4.52p,~f6.15p,~f8.04a,~f7.33p
 41.2,St. Jacques,0,QC,E,9.49a,2.04p,4.59p,6.20p,7.55a,7.25p
 42.0,St. Alexis de Montcalm,0,QC,E,f9.51a,f2.06p,f5.04p,f6.22p,f7.50a,f7.22p
 46.4,Cordon,0,QC,E,f10.02a,f2.17p,f5.19p,f6.33p,f7.35a,f7.10p
-48.7,"Hamilton (Montcalm)",0,QC,E,f10.10a,f2.25p,f5.25p,f6.40p,f7.25a,f7.05p
+48.7,Hamilton (Montcalm),0,QC,E,f10.10a,f2.25p,f5.25p,f6.40p,f7.25a,f7.05p
 50.2,Rawdon,1,QC,E,ar 10.15a,ar 2.30p,ar 5.30p,ar 6.45p,lv 7.20a,lv 7.00p

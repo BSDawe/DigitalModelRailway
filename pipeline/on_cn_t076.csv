@@ -11,20 +11,26 @@
 #train col=M222 num=222 dir=up days=Tue kind=mixed note="Mixed, Tuesday only: Whitney 2.25 p.m. to Barrys Bay 5.00 p.m."
 mile,station,principal,prov,tz,No89,No389,M219,M221,No90,No390,M220,M222
 0.0,Ottawa (Union Station),1,ON,E,lv 7.50a,lv 1.45p,,,ar 3.50p,ar 9.45p,,
+9.2,Graham Bay,0,ON,E,~f8.08a,~f2.03p,,,~f3.30p,~f9.25p,,
 14.6,South March,0,ON,E,8.19a,2.13p,,,3.19p,9.14p,,
 20.6,Carp,0,ON,E,8.30a,2.22p,,,3.09p,9.04p,,
 29.0,Kinburn,0,ON,E,8.44a,2.37p,,,2.55p,8.50p,,
 33.6,Galetta,0,ON,E,8.53a,2.46p,,,2.46p,8.41p,,
 38.7,Arnprior,1,ON,E,9.05a,2.59p,,,2.34p,8.29p,,
 46.3,Glasgow,0,ON,E,9.18a,3.12p,,,2.21p,8.16p,,
+50.1,Goshen,0,ON,E,~f9.26a,~f3.20p,,,~f2.13p,~f8.08p,,
 55.0,Renfrew,1,ON,E,9.37a,3.30p,,,2.03p,7.58p,,
+57.0,Renfrew Junction,0,ON,E,~9.42a,~3.35p,,,~f1.58p,~f7.53p,,
 61.2,Admaston,0,ON,E,9.52a,3.45p,,,1.49p,7.44p,,
 66.9,Douglas,0,ON,E,10.02a,3.55p,,,1.39p,7.34p,,
 69.9,Caldwell,0,ON,E,10.08a,4.01p,,,1.33p,7.28p,,
 77.2,Eganville,0,ON,E,10.22a,4.15p,,,1.19p,7.14p,,
 84.9,Golden Lake,1,ON,E,10.38a,4.31p,,,1.04p,6.59p,,
+89.5,Ruby,0,ON,E,~f10.48a,~f4.43p,,,~f12.52p,~f6.47p,,
 94.0,Killaloe,0,ON,E,10.58a,4.55p,,,12.40p,6.35p,,
 102.4,Wilno,0,ON,E,11.18a,5.15p,,,12.20p,6.15p,,
 109.0,Barrys Bay,1,ON,E,ar 11.33a,ar 5.30p,lv 6.30a,lv 11.45a,lv 12.05p,lv 6.00p,ar 11.45a,ar 5.00p
+118.2,Aylen Lake,0,ON,E,,,~f6.56a,~f12.18p,,,~f11.19a,~f4.34p
 130.1,Madawaska,1,ON,E,,,7.30a,1.00p,,,10.45a,4.00p
+138.2,L'Amable,0,ON,E,,,~f8.01a,~f1.28p,,,~f9.59a,~f3.11p
 145.9,Whitney,1,ON,E,,,ar 8.30a,ar 1.55p,,,lv 9.15a,lv 2.25p

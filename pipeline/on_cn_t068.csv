@@ -15,13 +15,16 @@ mile,station,principal,prov,tz,No80,No79
 17.0,St. Constant,0,QC,E,3.51p,8.22a
 20.5,St. Isidore Junction,1,QC,E,4.01p,8.14a
 24.5,St. Isidore (Laprairie),0,QC,E,4.08p,8.00a
+27.5,Ste. Philomene,0,QC,E,~f4.14p,~f7.55a
 30.8,Ste. Martine,0,QC,E,4.20p,7.49a
 36.0,Howick,0,QC,E,4.29p,7.39a
 37.0,Ayrness,0,QC,E,4.33p,7.29a
 40.8,Brysons,0,QC,E,4.40p,7.20a
 44.5,Ormstown,0,QC,E,4.53p,7.10a
+49.3,Dewittville,0,QC,E,~f5.02p,~f7.01a
 54.1,Huntingdon,1,QC,E,5.11p,6.52a
 59.5,Carrs,0,QC,E,f5.24p,f6.39a
 61.6,Whites,0,QC,E,5.29p,6.34a
+64.5,Beaver Crossing,0,QC,E,~f5.35p,~f6.27a
 66.4,Ste. Agnes,0,QC,E,5.39p,6.23a
 70.8,"International Boundary (to Fort Covington, N.Y.)",0,QC,E,~ar 5.46p,~lv 6.16a

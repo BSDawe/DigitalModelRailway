@@ -7,6 +7,7 @@
 #train col=M199 num=199 dir=up days="Tue,Thu,Sat" kind=mixed note="Mixed, Tuesday, Thursday and Saturday: St. Remi 7.45 a.m. to St. Isidore Jn. 8.02 a.m. (for No. 79)."
 mile,station,principal,prov,tz,M200,M198,M197,M199
 20.5,St. Isidore Junction,1,QC,E,lv 4.09p,lv 4.09p,ar 8.02a,ar 8.02a
+24.1,Cote Ste. Therese,0,QC,E,~f4.20p,~f4.18p,~f7.54a,~f7.52a
 26.9,St. Remi,0,QC,E,4.29p,ar 4.25p,7.47a,lv 7.45a
 30.6,St. Michel,0,QC,E,4.39p,,7.32a,
 34.3,Sherrington,0,QC,E,4.49p,,7.22a,

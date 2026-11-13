@@ -21,6 +21,10 @@ Last updated 11 November 2026 (Version 166).
 - [ ] CP N.B. readings (V159): Table 10: 39 from Saint John ex Sun, from Megantic daily (Monday train from Megantic entered as No39m); 42 east of Brownville Jct. ex Sun, No. 104 on Sundays; 41 ex Sun from Saint John, No. 103 on Sundays. M117 / M118 (Brownville Jct. - Greenville - Megantic) mixed: Greenville and Holeb arrivals estimated. The Gull 113 / 114 daily (June 20 - Sept. 5). Table 12A 105 waits at Fredericton Jct. 6.30 - 8.55 p.m. as printed. Table 15 Theriault, Sigas, L'Eglise printed "f" without times: left out.
 
 ## Questions: readings to check
+- [ ] CN Montreal District employee timetable (20 June 1948), left open: No. 132 (St. Hyacinthe 11.58 p.m. ex Sat to the Drummondville
+  subdivision: where to?); day differences 30 (daily), 280 (daily), 621 / 622 (daily), 100 (Sunday only) against the April Official Guide;
+  Laurel (Official Guide) vs Lake Chapleau (employee timetable, 59.7 mi from Val Royal): the same station?; Dore Bay (flag for 155, 156, 193, 194,
+  no mileage) and National Jct.; Montreal Nord, Ahuntsic and the stations between placed by mileage (points wanted).
 ### Maritimes: CN Official Guide pages 1113 - 1117
 - [ ] No. 20, Folly Lake f3.35 - Londonderry 3.41 a.m. (7.6 mi in 6 min). Was it f3.25? Built as printed. (V144)
 - [ ] The second No. 13 column, Sunday only, Moncton 4.30 p.m. Is this a real Sunday train? Entered as 13s. (V144)

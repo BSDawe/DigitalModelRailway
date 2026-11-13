@@ -1,0 +1,19 @@
+# Canadian National: Montreal Nord - Ahuntsic - Gohier - (Mount Royal subdivision) - Montreal (Central Station), local trains. Source: CN Montreal District employee timetable No. 16, 20 June 1948, L'Assomption subdivision (Brendan, 13 Nov 2026); not in the Official Guide of April 1948. EASTERN TIME.
+# Miles from Montreal (Central) as on the L'Assomption line files (on_cn_t064.csv). Montreal Nord (no point in the collection): by mileage on the L.Assomption line (APPROXIMATE, Claude); the other stations by mileage. The employee timetable gives the trains between Montreal Nord and Gohier, then "to (from) Mount Royal subdivision":
+# Montreal times estimated (~) at 18 minutes from Gohier, as for the Joliette trains (No. 109: Gohier 4.27 p.m., Montreal 4.45 p.m.). Employee timetable signs: S regular stop, F flag stop.
+#train col=No163 num=163 dir=up days="Mon,Tue,Wed,Thu,Fri,Sat" kind=passenger note="Daily except Sunday: Montreal Nord 5.18 a.m. to Montreal (Central Station) about 5.52 a.m. (Gohier 5.34 a.m.)."
+#train col=No165 num=165 dir=up days="Mon,Tue,Wed,Thu,Fri,Sat" kind=passenger note="Daily except Sunday: Montreal Nord 6.48 a.m. to Montreal (Central Station) about 7.22 a.m. (Gohier 7.04 a.m.)."
+#train col=No171 num=171 dir=up days="Mon,Tue,Wed,Thu,Fri,Sat" kind=passenger note="Daily except Sunday: Montreal Nord 5.40 p.m. to Montreal (Central Station) about 6.12 p.m. (Gohier 5.54 p.m.)."
+#train col=No173 num=173 dir=up days="Mon,Tue,Wed,Thu,Fri" kind=passenger note="Daily except Saturday and Sunday: Montreal Nord 6.30 p.m. to Montreal (Central Station) about 7.02 p.m. (Gohier 6.44 p.m.)."
+#train col=No162 num=162 dir=down days="Mon,Tue,Wed,Thu,Fri,Sat" kind=passenger note="Daily except Sunday: Montreal (Central Station) about 4.32 a.m. (Gohier 4.50 a.m.) to Montreal Nord 5.00 a.m."
+#train col=No164 num=164 dir=down days="Mon,Tue,Wed,Thu,Fri,Sat" kind=passenger note="Daily except Sunday: Montreal (Central Station) about 6.08 a.m. (Gohier 6.26 a.m.) to Montreal Nord 6.40 a.m."
+#train col=No170 num=170 dir=down days="Mon,Tue,Wed,Thu,Fri,Sat" kind=passenger note="Daily except Sunday: Montreal (Central Station) about 4.25 p.m. (Gohier 4.43 p.m.) to Montreal Nord 5.05 p.m."
+#train col=No172 num=172 dir=down days="Mon,Tue,Wed,Thu,Fri" kind=passenger note="Daily except Saturday and Sunday: Montreal (Central Station) about 5.06 p.m. (Gohier 5.24 p.m.) to Montreal Nord 5.40 p.m."
+mile,station,principal,prov,tz,No163,No165,No171,No173,No162,No164,No170,No172
+0.0,Montreal (Central Station),1,QC,E,~ar 5.52a,~ar 7.22a,~ar 6.12p,~ar 7.02p,~lv 4.32a,~lv 6.08a,~lv 4.25p,~lv 5.06p
+7.4,Ahuntsic,0,QC,E,5.30a,7.00a,5.50p,6.40p,4.53a,6.30a,4.47p,5.28p
+8.8,Sault au Recollet,0,QC,E,f5.26a,f6.56a,f5.46p,f6.36p,f4.56a,f6.34a,f4.52p,f5.32p
+9.1,St. Vital,0,QC,E,f5.25a,f6.55a,f5.45p,f6.35p,f4.57a,f6.35a,f4.54p,f5.33p
+9.7,Pie IX,0,QC,E,f5.23a,f6.53a,f5.43p,f6.33p,f4.58a,f6.37a,f4.57p,f5.35p
+10.5,Ste. Gertrude,0,QC,E,f5.20a,f6.50a,f5.41p,f6.31p,f4.59a,f6.39a,f5.00p,f5.37p
+10.7,Montreal Nord,1,QC,E,lv 5.18a,lv 6.48a,lv 5.40p,lv 6.30p,ar 5.00a,ar 6.40a,ar 5.05p,ar 5.40p

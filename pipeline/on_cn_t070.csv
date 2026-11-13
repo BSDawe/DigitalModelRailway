@@ -20,14 +20,24 @@ mile,station,principal,prov,tz,No99,No97,No95,No91,No93,No90,No92,No94,No98,No10
 16.5,Laval sur le Lac,0,QC,E,,,,,,,f9.27a,,,
 17.0,St. Eustache-sur-le-Lac,0,QC,E,,,,3.19p,,,9.25a,,,8.40p
 22.0,Fresniere,0,QC,E,8.53a,,2.02p,3.30p,6.08p,7.12a,9.16a,6.08p,7.06p,8.31p
+26.5,St. Augustin,0,QC,E,,,,~f3.40p,,~f7.04a,~f9.07a,,,
+29.2,Deux Montagnes,0,QC,E,~f9.08a,,,~f3.46p,,~f6.59a,~f9.02a,~f5.56p,,~f8.17p
 38.3,St. Jerome,1,QC,E,9.28a,1.32p,2.35p,4.05p,6.38p,6.42a,8.45a,5.40p,6.35p,8.00p
+44.2,Filion,0,QC,E,~f9.41a,,~f2.47p,~f4.17p,~f6.50p,~f6.30a,~f8.31a,~f5.27p,~f6.21p,
 47.4,Shawbridge,0,QC,E,f9.48a,1.50p,f2.54p,f4.24p,f6.57p,f6.24a,f8.24a,5.20p,6.14p,7.38p
+49.1,Lac Marois,0,QC,E,~9.53a,,~f2.59p,~f4.29p,~f7.02p,~f6.20a,~f8.20a,~f5.16p,~f6.10p,~7.35p
 51.5,St. Sauveur des Monts,0,QC,E,10.00a,2.00p,3.06p,4.36p,7.08p,6.15a,8.15a,5.10p,6.04p,7.30p
+54.3,Christieville,0,QC,E,~f10.11a,~f2.08p,~f3.14p,~f4.46p,~f7.17p,~f6.07a,~f8.07a,~f5.02p,~f5.55p,~f7.22p
 56.7,Morin Heights,0,QC,E,10.20a,2.15p,3.21p,4.54p,7.25p,6.00a,8.00a,4.55p,5.48p,7.15p
+60.7,Lake Chevreuil,0,QC,E,~f10.36a,,~f3.37p,~f5.09p,~f7.39p,~f5.47a,~f7.47a,~f4.41p,~f5.29p,
 62.3,Montfort,1,QC,E,10.43a,2.35p,3.43p,5.15p,7.45p,5.42a,7.42a,4.36p,5.21p,6.48p
+63.2,Newaygo,0,QC,E,~f10.46a,~f2.38p,~f3.46p,~f5.17p,~f7.48p,~f5.39a,~f7.39a,~f4.33p,~5.16p,~6.42p
 66.3,Laurel,0,QC,E,f10.57a,,f3.59p,f5.26p,f7.58p,~f5.29a,f7.29a,,f4.58p,f6.22p
 70.4,Sixteen Island,0,QC,E,11.11a,3.02p,4.12p,5.40p,8.13p,5.16a,7.16a,4.12p,4.44p,6.08p
 75.5,Weir,0,QC,E,11.30a,3.20p,4.30p,5.57p,8.31p,4.58a,6.58a,3.52p,4.27p,5.50p
 79.4,Arundel,0,QC,E,11.43a,3.32p,4.44p,6.10p,8.40p,4.45a,6.45a,3.38p,4.15p,5.37p
 80.8,Huberdeau,1,QC,E,11.56a,,4.50p,6.18p,8.50p,4.40a,6.40a,3.28p,4.10p,5.32p
+85.4,Gray Valley,0,QC,E,~f12.09p,,~f5.05p,~f6.34p,~f9.05p,~f4.25a,~f6.25a,~f3.12p,~f3.55p,~f5.16p
+87.6,Rockway,0,QC,E,~f12.15p,,~f5.12p,~f6.42p,~f9.12p,~f4.18a,~f6.18a,~f3.04p,~f3.48p,~f5.08p
+90.1,Kasil,0,QC,E,~f12.22p,,~f5.20p,~f6.50p,~f9.20p,~f4.10a,~f6.10a,~f2.55p,~f3.40p,~f5.00p
 93.0,Lac Remi,1,QC,E,ar 12.30p,ar 4.10p,ar 5.30p,ar 7.00p,ar 9.30p,lv 4.00a,lv 6.00a,lv 2.45p,lv 3.30p,lv 4.50p

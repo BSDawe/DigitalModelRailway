@@ -14,13 +14,20 @@ mile,station,principal,prov,tz,No81,No85,No83,No82,No84
 7.3,Val Royal,0,QC,E,4.30p,1.12p,9.22a,7.54a,8.25p
 12.8,Ste. Genevieve,0,QC,E,f4.43p,f1.24p,f9.31a,f7.41a,
 14.7,Bigras Island,0,QC,E,f4.48p,f1.28p,9.35a,f7.37a,
+15.2,Ste. Dorothee,0,QC,E,~f4.49p,~f1.30p,~f9.36a,~f7.36a,~f8.05p
+16.1,Laval Links,0,QC,E,~f4.52p,~f1.35p,~f9.39a,~f7.33a,~f8.03p
 16.5,Laval sur le Lac,0,QC,E,f4.53p,f1.37p,f9.40a,f7.32a,f8.02p
 17.0,St. Eustache-sur-le-Lac,1,QC,E,4.55p,1.40p,9.42a,7.30a,8.00p
 22.0,Fresniere,0,QC,E,5.05p,1.50p,9.54a,7.18a,7.50p
 27.9,St. Benoit,0,QC,E,5.20p,2.05p,10.08a,7.00a,7.36p
+31.5,St. Placide,0,QC,E,~5.28p,~2.13p,~10.16a,~f6.52a,~f7.28p
 34.9,Lalande,0,QC,E,5.35p,2.20p,10.24a,6.45a,7.20p
 39.7,St. Andrews East,0,QC,E,5.45p,2.32p,10.35a,6.35a,7.10p
+42.0,Carillon,0,QC,E,~f5.49p,~f2.37p,~f10.40a,~f6.31a,~f7.06p
+44.1,Monalea,0,QC,E,~f5.53p,~f2.41p,~f10.44a,~f6.27a,~f7.02p
 46.6,Cushing,0,QC,E,f5.58p,f2.47p,f10.50a,f6.22a,f6.58p
+47.8,Watson,0,QC,E,~f6.00p,~f2.49p,~f10.53a,~f6.20a,~f6.55p
+48.4,Argenteuil,0,QC,E,~f6.01p,~f2.50p,~f10.54a,~f6.19a,~f6.53p
 50.0,Stonefield,0,QC,E,f6.05p,f2.54p,f10.58a,f6.15a,f6.49p
 53.0,Grenville,0,QC,E,6.10p,3.00p,11.05a,6.10a,6.43p
 54.4,Hawkesbury,1,ON,E,ar 6.15p,ar 3.05p,ar 11.10a,lv 6.05a,lv 6.40p

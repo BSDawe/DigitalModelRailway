@@ -2866,3 +2866,16 @@ Stations of different railways within 250 m (70 pairs; script: same check over v
   same length in the same place (gid paths); the rest are snapped to common nodes (60 m; 120 m for the same owner). Stubs: doubling back is
   taken out; a stub that leaves and rejoins by a different way is replaced by the shorter way already in the network. Each train counts once
   per edge per day it runs. Fields: trains_wk, trains_day, railways, files, one column per railway.
+
+## Version 168 (13 November 2026): CN Montreal District employee timetable
+- Source: CN Montreal District employee timetable No. 16, 20 June 1948 (Brendan; comparison in ETT_MONTREAL_1948.md). Stations where a passenger
+  or mixed train stops (S or F) added to the CN files with tools/add_stops.py: times estimated (~) in proportion to mileage from the train's
+  neighbouring calls; F = flag. 58 stations on t059, t001, t068, t068h, t075b, t076, t076p, t077, t077a, t078a, t070, t063, t064.
+- Oka subdivision (Brendan: separate trains unless the timetable says they run through): Calumet Beach portions with their own employee-
+  timetable numbers split from the Montreal trains at St. Eustache (381 - 397, 382 - 396); 123 - 130, 384, 387, 398, 399 run through.
+  Unnumbered additional trains numbered: 365, 379, 380 (with the employee timetable's times Val Royal - St. Eustache), C85 = 391.
+- New trains: Montreal Nord locals 162 / 164 / 170 / 172, 163 / 165 / 171 / 173 (on_cn_t064m.csv; Montreal Central times estimated at 18 min
+  from Gohier; Montreal Nord placed by mileage, APPROXIMATE). Golden Lake - Pembroke renumbered 193 / 194 (passenger) and 155 / 156 (mixed),
+  with Woito and Locksley (on_cn_t076p.csv).
+- Not added: No. 132 (St. Hyacinthe 11.58 p.m. ex Sat onto the Drummondville subdivision: its run beyond is not in this timetable). Day
+  differences (30, 280, 621, 622, 100) left as the April Official Guide has them (summer timetable).
