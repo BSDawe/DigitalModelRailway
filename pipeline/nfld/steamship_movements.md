@@ -49,3 +49,24 @@ Furness Red Cross
 Clarke
 - Island Connector leaving Charlottetown July 9th for St. John's. Due St. John's July 11th. Sailing July 12th for Montreal.
 - Gulfport loading at Montreal July 5th - 7th. Sailing July 12th via Corner Brook. Due at St. John's July 20th.
+
+## July 6
+Blue Peter
+- Atlantic Charter: [as before; due St. John's July 7, leaves St. John's July 9]. Leaves Halifax July 13. Leaves St. John's July 20th. Leaves Halifax
+  July 26th. Leaves North Sydney July 27th. Due St. John's July 30th.
+
+Furness Red Cross
+- Fort Townshend: arrived in port 9 a.m. [Monday July 5]. Sailing Wednesday July 7th for Halifax and New York.
+- Fort Amherst: en route to Bermuda. Leaving for Halifax and St. John's. Due St. John's July 22nd, sailing July 24th.
+
+Clarke (advertised for passengers, both ships: Brendan)
+- Island Connector leaving Charlottetown July 8th for St. John's. Due St. John's July 11th. Sailing July 12th for Montreal.
+
+Railway Boats
+- Kyle left Englee 6.15 a.m. yesterday [Monday July 5], outward.
+- Burgeo left Jersey Harbour 9.20 a.m. yesterday [July 5], outward.
+- Bar Haven: this morning's train to Argentia will make connection for Bay Route, Placentia Bay [as in the railway notice of Monday July 5].
+- Springdale left Springdale 9 a.m. outward.
+- Glencoe leaving St. John's 10 a.m. Thursday for regular ports to Lewisporte.
+- Northern Ranger: today's express [Tuesday July 6, the foreign express] will make connection at Corner Brook for regular ports to St. John's.
+- Codroy: Wednesday's express connection at Corner Brook for regular ports to Battle Harbour.
