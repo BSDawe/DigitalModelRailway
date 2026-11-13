@@ -2879,3 +2879,14 @@ Stations of different railways within 250 m (70 pairs; script: same check over v
   with Woito and Locksley (on_cn_t076p.csv).
 - Not added: No. 132 (St. Hyacinthe 11.58 p.m. ex Sat onto the Drummondville subdivision: its run beyond is not in this timetable). Day
   differences (30, 280, 621, 622, 100) left as the April Official Guide has them (summer timetable).
+
+## Version 169 (13 November 2026): Atlantic steamers to Newfoundland; Quebec collection spellings
+- Furness Red Cross Line (frc: New York Pier 96 - Halifax - St. John's; Fort Townshend, Fort Amherst) and Blue Peter Steamships (bps: M.V. Atlantic
+  Charter, St. John's - St. Pierre - North Sydney - Halifax), from The Daily News, St. John's, 2 - 5 July 1948 (Brendan). Sub-weekly: dated
+  sailings of the week of 5 July ('d0'), as the Alaska boats. ALL TIMES ESTIMATED (12.5 kn Furness, 10 kn Atlantic Charter over the drawn
+  lanes); port points APPROXIMATE (Claude). lo_build ATL_BOX; liveries frc / bps (Claude's picks); agencies FRC, BPS.
+- Employee-timetable stations placed on the Quebec collection's points under its spellings (on_lines ALIAS): St. Hilaire East (St Hilaire E),
+  Ste. Dorothee (St Dorthee), Kasil (Kansil), Watson (Watsons Siding), Rockway (Rockway Valley). About 20 of the 58 have no collection point
+  and stay by mileage (the Montreal Nord - Ahuntsic stations, Montarville, Morse, Stanhope, Carillon, Monalea, Argenteuil, St. Augustin,
+  Deux Montagnes, Lake Chevreuil, Gray Valley, Cote Ste. Therese, Forester's Falls, Ruby, Green Lane, Graham Bay ...).
+- Not built (Brendan: research to come): Newfoundland coastal steamers (TODO).

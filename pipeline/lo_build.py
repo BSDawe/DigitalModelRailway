@@ -29,6 +29,7 @@ SAG_BOX = (-73.60, -69.55, 45.45, 48.45)        # Canada Steamship Lines: Montre
 NFS_BOX = (-60.40, -58.95, 46.15, 47.65)        # the Cabot Strait: North Sydney - Port aux Basques (Newfoundland Railway steamer)
 ESL_BOX = (-71.10, -65.90, 42.25, 43.95)        # the Gulf of Maine: Yarmouth - Boston (Eastern Steamship Lines)
 BOF_BOX = (-66.20, -65.60, 44.55, 45.32)        # the Bay of Fundy: Saint John - Digby (C.P.S.S. Princess Helene)
+ATL_BOX = (-74.30, -52.40, 40.30, 48.00)        # the Atlantic: New York - Halifax - St. John's (Furness Red Cross Line), St. Pierre (Blue Peter Steamships)
 
 # ---------------- water: the basemap tiles (page projection) back to lon/lat, and water_east.json
 _idx = json.load(open(os.path.join(ROOT, 'basemap', 'tiles', 'index.json'))); _PJ = _idx['proj']
@@ -42,7 +43,7 @@ def page_ll(x, y):
     X, Y = x + _ox, y + _oy; rho = math.copysign(math.hypot(X, Y), _n); th = math.atan2(X, Y)
     return (th / _n + _l0) / _r, (2 * math.atan((_R * _F / rho) ** (1 / _n)) - math.pi / 2) / _r
 _z = _idx['zmax']; _s = _idx['side'] / 2 ** _z; _polys = []
-for _B in (BOX, PAB_BOX, MUSK_BOX, CSL_BOX, SAG_BOX, NFS_BOX, ESL_BOX, BOF_BOX):
+for _B in (BOX, PAB_BOX, MUSK_BOX, CSL_BOX, SAG_BOX, NFS_BOX, ESL_BOX, BOF_BOX, ATL_BOX):
   _xs, _ys = zip(*[page_xy(lon, lat) for lon in _B[:2] for lat in _B[2:]])
   for tx in range(int((min(_xs) - _idx['origin'][0]) // _s), int((max(_xs) - _idx['origin'][0]) // _s) + 1):
       for ty in range(int((min(_ys) - _idx['origin'][1]) // _s), int((max(_ys) - _idx['origin'][1]) // _s) + 1):
@@ -385,6 +386,41 @@ BF = [dict(id='CPSS-BOF-D', num='Princess Helene', name='Canadian Pacific Steams
            note='Digby 3.15 p.m. to Saint John 6.00 p.m.' + BN)]
 mkline('cpbof', 'Saint John – Digby (Princess Helene)', bf_route, bf_st, BF, ['to Digby', 'to Saint John'],
        'Canadian Pacific Steamships, Saint John - Digby: CP public timetable, April 1948 (Brendan); Atlantic time as printed', 'cpss')
+# ---------------- Ocean steamers to Newfoundland (Brendan, 13 Nov 2026: The Daily News, St. John's, 2 - 5 July 1948). Neither sails weekly: shown by the
+# real dates of the map's week (Monday 5 - Sunday 11 July 1948; 'd0' = the day the sailing starts, counted from Monday 5 July), as the Alaska boats.
+# ALL TIMES ESTIMATED (the advertisements give dates only): about 12.5 knots for the Furness ships, 10 for the Atlantic Charter, over the drawn lanes; St. John's in
+# Newfoundland time (Atlantic + 0.5 h), New York in daylight time (= Atlantic standard). Port points APPROXIMATE (Claude).
+NYP = port('New York (Pier 96, North River)', -73.9945, 40.7716, 'Pier No. 96, North River, foot of West 56th Street, New York (Furness Red Cross Line; the point APPROXIMATE, Claude).')
+HFX = port('Halifax (Furness Withy)', -63.5655, 44.6430, 'Halifax harbour, Furness, Withy & Co. agents, Water Street (the point APPROXIMATE, Claude).')
+SJN = port("St. John's (harbour)", -52.7085, 47.5650, "St. John's harbour, Water Street wharves (Harvey & Co., agents; the point APPROXIMATE, Claude).")
+SPM = port('St. Pierre', -56.1745, 46.7800, 'St. Pierre harbour, St. Pierre and Miquelon (the point APPROXIMATE, Claude).')
+fr_route, fr_st = water_route([NYP, HFX, SJN], 2000)
+bp_route, bp_st = water_route([SJN, SPM, NSY, HFX], 2000)
+H = 3600; D = 86400; PAC_A = 4 * H; PAC_N = 4 * H + 1800; PAC_NY = 4 * H   # local (Atlantic standard, Newfoundland, New York daylight) to the Pacific clock
+def _dsvc(d0): return 'W_' + ''.join('1' if i == d0 % 7 else '0' for i in range(7))
+FRN = (' Furness Red Cross Line (Furness, Withy & Co.), New York - Halifax - St. John\'s, passengers and freight; the Fort Amherst and Fort Townshend'
+       ' each make the round trip about every three and a half weeks (The Daily News, St. John\'s, 2 - 5 July 1948). Times ESTIMATED: the sailings are advertised by date only.')
+FR = [dict(id='FRC-TOWNSHEND-N', d0=-2, num='Fort Townshend', name='Furness Red Cross Line', svc=_dsvc(-2), dir=0, vessel='Fort Townshend',
+           stops=[[1, 16 * H - PAC_A, 16 * H - PAC_A, 0], [2, 2 * D + 22 * H + 1800 - PAC_N, 2 * D + 22 * H + 1800 - PAC_N, 0]],
+           note='S.S. Fort Townshend: left New York June 30; Halifax Saturday July 3 to St. John\'s Monday July 5 (due).' + FRN),
+      dict(id='FRC-TOWNSHEND-S', d0=2, num='Fort Townshend', name='Furness Red Cross Line', svc=_dsvc(2), dir=1, vessel='Fort Townshend',
+           stops=[[2, 11 * H - PAC_N, 11 * H - PAC_N, 0], [1, 2 * D + 16 * H + 1800 - PAC_A, 3 * D + 10 * H - PAC_A, 0], [0, 5 * D + 18 * H - PAC_NY, 5 * D + 18 * H - PAC_NY, 0]],
+           note='S.S. Fort Townshend: St. John\'s Wednesday July 7 for Halifax (Friday 9) and New York (Monday 12).' + FRN),
+      dict(id='FRC-AMHERST-S', d0=-2, num='Fort Amherst', name='Furness Red Cross Line', svc=_dsvc(-2), dir=1, vessel='Fort Amherst',
+           stops=[[1, 10 * H - PAC_A, 10 * H - PAC_A, 0], [0, 2 * D + 18 * H - PAC_NY, 2 * D + 18 * H - PAC_NY, 0]],
+           note='S.S. Fort Amherst: sailed St. John\'s June 30 at 11 a.m.; Halifax Saturday July 3 to New York Monday July 5. Next sailing from New York July 17.' + FRN)]
+mkline('frc', "New York – Halifax – St. John's (Furness Red Cross Line)", fr_route, fr_st, FR, ["to St. John's", 'to New York'],
+       "Furness Red Cross Line, New York - Halifax - St. John's: advertisements and shipping news, The Daily News, St. John's, 2 - 5 July 1948 (Brendan); times estimated", 'frc')
+BPN = (' M.V. Atlantic Charter, Blue Peter Steamships Ltd. (Montreal Shipping Co.), St. John\'s - St. Pierre - North Sydney - Halifax, passengers and freight;'
+       ' a round trip every 12 days, sailing from St. John\'s June 26, July 9, July 20, Aug. 1 ... (The Daily News, St. John\'s, July 1948). Times ESTIMATED: the sailings are advertised by date only.')
+BP = [dict(id='BPS-CHARTER-N', d0=-1, num='Atlantic Charter', name='Blue Peter Steamships', svc=_dsvc(-1), dir=1, vessel='Atlantic Charter',
+           stops=[[1, 10 * H - PAC_A, 10 * H - PAC_A, 0], [0, D + 12 * H + 1800 - PAC_N, D + 12 * H + 1800 - PAC_N, 0]],
+           note='M.V. Atlantic Charter, the end of the June 26 round trip: St. Pierre Sunday July 4 to St. John\'s Monday July 5.' + BPN),
+      dict(id='BPS-CHARTER-S', d0=4, num='Atlantic Charter', name='Blue Peter Steamships', svc=_dsvc(4), dir=0, vessel='Atlantic Charter',
+           stops=[[0, 17 * H - PAC_N, 17 * H - PAC_N, 0], [1, D + 18 * H + 1800 - PAC_A, 2 * D + 6 * H - PAC_A, 0], [2, 3 * D + 5 * H - PAC_A, 3 * D + 18 * H - PAC_A, 0], [3, 5 * D + 0 * H - PAC_A, 5 * D + 0 * H - PAC_A, 0]],
+           note='M.V. Atlantic Charter: St. John\'s Friday July 9 for St. Pierre (Saturday 10), North Sydney (Monday 12) and Halifax (Wednesday 14).' + BPN)]
+mkline('bps', "St. John's – St. Pierre – North Sydney – Halifax (Blue Peter Steamships)", bp_route, bp_st, BP, ['to Halifax', "to St. John's"],
+       "Blue Peter Steamships, M.V. Atlantic Charter: advertisement, The Daily News, St. John's, July 1948 (Brendan); times estimated", 'bps')
 keys = {L['key'] for L in LINES}
 vd['lines'] = [x for x in vd['lines'] if x['key'] not in keys] + LINES
 open(os.path.join(HERE, 'viz_data.json'), 'w').write(json.dumps(vd, separators=(',', ':')))
@@ -399,6 +435,8 @@ if 'PABIT' not in have('agency.txt'): app('agency.txt', [['PABIT', 'Pointe au Ba
 if 'CSL' not in have('agency.txt'): app('agency.txt', [['CSL', 'Canada Steamship Lines', 'https://en.wikipedia.org/wiki/Canada_Steamship_Lines', 'America/Vancouver', 'en', '']])
 if 'MLN' not in have('agency.txt'): app('agency.txt', [['MLN', 'Muskoka Lakes Navigation and Hotel Co.', 'https://en.wikipedia.org/wiki/Muskoka_Lakes_Navigation_Company', 'America/Vancouver', 'en', '']])
 if 'ESL' not in have('agency.txt'): app('agency.txt', [['ESL', 'Eastern Steamship Lines', 'https://en.wikipedia.org/wiki/Eastern_Steamship_Lines', 'America/Vancouver', 'en', '']])
+if 'FRC' not in have('agency.txt'): app('agency.txt', [['FRC', 'Furness Red Cross Line (Furness, Withy & Co.)', 'https://en.wikipedia.org/wiki/Furness_Withy', 'America/Vancouver', 'en', '']])
+if 'BPS' not in have('agency.txt'): app('agency.txt', [['BPS', 'Blue Peter Steamships Ltd.', 'https://en.wikipedia.org/wiki/Montreal_Shipping_Company', 'America/Vancouver', 'en', '']])
 if 'OCF' not in have('agency.txt'): app('agency.txt', [['OCF', 'Ontario Car Ferry Company (Canadian National and Baltimore & Ohio)', 'https://en.wikipedia.org/wiki/SS_Ontario_No._1', 'America/Vancouver', 'en', '']])
 gseen = have('stops.txt')
 _PDESC = 'Island boat, June 1 - Sept. 6, 1948. Times on the Pacific clock, three hours earlier than the Eastern Standard time printed.'
@@ -409,9 +447,11 @@ for L, ag, desc in ((LINES[0], 'CN', 'Canadian National steamers, May 21 - June 
                     *((L_, 'CSL', 'Canada Steamship Lines, season 1948. Times on the Pacific clock, three hours earlier than the Eastern Standard time printed.') for L_ in LINES[7:11]),
                     (LINES[11], 'NFR', 'Newfoundland Railway steamer, North Sydney - Port aux Basques. Times on the Pacific clock (printed in Atlantic time at North Sydney, Newfoundland time at Port aux Basques).'),
                     (LINES[12], 'ESL', 'Eastern Steamship Lines, Yarmouth - Boston. Times on the Pacific clock (printed in Atlantic time at Yarmouth, Eastern time at Boston).'),
-                    (LINES[13], 'CP', 'Canadian Pacific Steamships, Bay of Fundy service, Saint John - Digby. Times on the Pacific clock, four hours earlier than the Atlantic time printed.')):
+                    (LINES[13], 'CP', 'Canadian Pacific Steamships, Bay of Fundy service, Saint John - Digby. Times on the Pacific clock, four hours earlier than the Atlantic time printed.'),
+                    (LINES[14], 'FRC', 'Furness Red Cross Line, New York - Halifax - St. John\'s, sailings of the week of 5 July 1948. Times estimated, on the Pacific clock.'),
+                    (LINES[15], 'BPS', 'Blue Peter Steamships, M.V. Atlantic Charter, sailings of the week of 5 July 1948. Times estimated, on the Pacific clock.')):
     rid = L['key'].upper(); st = L['stations']
-    app('routes.txt', [[rid, ag, L['label'], ' – '.join(s['name'] for s in st), 4, {'PABIT': '8B4A2B', 'MLN': '1F4E79', 'CSL': 'D93A1C', 'CP': '7A1E2C'}.get(ag, '2F6B44'), 'FFFFFF', desc]])
+    app('routes.txt', [[rid, ag, L['label'], ' – '.join(s['name'] for s in st), 4, {'PABIT': '8B4A2B', 'MLN': '1F4E79', 'CSL': 'D93A1C', 'CP': '7A1E2C', 'FRC': '9E1B1B', 'BPS': '1F4F9A'}.get(ag, '2F6B44'), 'FFFFFF', desc]])
     new = [[s['gid'], s['name'] + ' (steamer landing)', f"{s['lat']:.6f}", f"{s['lon']:.6f}", s['note']] for s in st if s['gid'] not in gseen]
     gseen |= {r[0] for r in new}; app('stops.txt', new)
     for t in L['trips']:
