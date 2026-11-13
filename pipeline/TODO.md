@@ -110,7 +110,8 @@ Maritime tables where the traced line differs from the printed miles by 1 mi and
 - [ ] Interurban train icon: Brendan is not satisfied; revisit later. (23 Oct)
 
 ## Remaining 1948 services (list of 11 Nov 2026)
-- [ ] Newfoundland coastal steamers (Brendan researching; from Newfoundland Railway notices, The Daily News, 3 - 5 July 1948): S.S. Bar Haven,
+- [ ] Furness Warren R.M.S. Newfoundland (Liverpool - St. John's - Halifax - Boston): due St. John's July 12 from Boston and Halifax, sailing same day for Liverpool (Daily News July 7). In the week she is coming north from Boston via Halifax: draw once a Halifax or Boston date turns up.
+- [ ] Newfoundland coastal steamers (Brendan researching; from Newfoundland Railway notices, The Daily News, 2 - 7 July 1948; nfld/steamship_movements.md): S.S. Bar Haven,
   Bay Route of Placentia Bay (from Argentia, Monday, after the 9 a.m. train); S.S. Northern Ranger, Corner Brook service to St. John's (from
   Corner Brook, Monday, after the 5 p.m. local express); S.S. Springdale, Green Bay service (from Lewisporte, after the Saturday local express);
   S.S. Kyle, Labrador service to Hopedale (St. John's, Dry Dock Wharf, Saturday 4 p.m.); M.V. Codroy, Corner Brook - Battle Harbour (freight).
