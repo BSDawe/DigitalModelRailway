@@ -115,7 +115,10 @@ Maritime tables where the traced line differs from the printed miles by 1 mi and
   Corner Brook, Monday, after the 5 p.m. local express); S.S. Springdale, Green Bay service (from Lewisporte, after the Saturday local express);
   S.S. Kyle, Labrador service to Hopedale (St. John's, Dry Dock Wharf, Saturday 4 p.m.); M.V. Codroy, Corner Brook - Battle Harbour (freight).
   Not services: S.S. Tudor Prince (freighter, New York - St. John's - Corner Brook).
-- [ ] Newfoundland Railway summer schedule (July 1948, Daily News notices): Sat 5 p.m. local express St. John's - Port aux Basques; Sun 10 a.m.
+- [ ] Newfoundland Railway summer schedule. Reference: CN Newfoundland folder N No. 1, May 8, 1949 (Brendan, 13 Nov 2026; https://rollymartincountry.blogspot.com/2022/02/cnr-1949-newfoundland-public-timetable.html):
+  its pattern matches the 1948 notices (15 Mon / Wed / Sat 5 p.m., 1 Tue / Thu 5 p.m., 3 Overland Limited Sun 10 a.m., M5 Argentia Mon / Wed / Fri 9 a.m.);
+  summer Newfoundland time = Atlantic + 1.5 h. Not in 1949: the Wednesday 9 p.m. train for Bonavista (sleeper Trinity) of 7 July 1948. The folder also lists
+  the coastal steamer routes (ports and mileages, no times). July 1948 notices: Sat 5 p.m. local express St. John's - Port aux Basques; Sun 10 a.m.
   Fast Overland Limited (direct foreign connection); Mon 5 p.m. local express to Corner Brook; Tue 5 p.m. foreign express. The model has the
   January 1948 timetable (1 Mon / Thu, 15 Wed / Sat, 2 / 16 Thu / Sun). Needs a summer timetable (running times, eastbound days, branches) and
   the Cabot Strait steamer re-dated to meet the summer trains.

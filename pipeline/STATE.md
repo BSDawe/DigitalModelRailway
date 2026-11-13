@@ -2890,3 +2890,11 @@ Stations of different railways within 250 m (70 pairs; script: same check over v
   and stay by mileage (the Montreal Nord - Ahuntsic stations, Montarville, Morse, Stanhope, Carillon, Monalea, Argenteuil, St. Augustin,
   Deux Montagnes, Lake Chevreuil, Gray Valley, Cote Ste. Therese, Forester's Falls, Ruby, Green Lane, Graham Bay ...).
 - Not built (Brendan: research to come): Newfoundland coastal steamers (TODO).
+
+## Version 170 (13 November 2026): fixes
+- Quebec: the 5.9-mile straight run on Table 1 (Otterburn Park - Montarville, No. 38) came from forcing the Table 59 station points onto the
+  Table 1 line; the overrides are removed (Table 1's employee-timetable rows by mileage, all on track). Only change in straight (est) runs
+  against V167 now: the Argentia branch (gone).
+- Newfoundland Railway: Argentia branch traced from Brendan's OpenStreetMap export (abandoned railway, ODbL), replacing the straight estimate.
+- Ocean lanes (frc, bps): 500 m cells with an 8 km costly band along the shore (were 2 km cells); only harbour ends touch the generalised coast.
+  St. John's times in Newfoundland daylight time (Atlantic + 1.5 h in summer: CN Newfoundland folder, May 8, 1949).

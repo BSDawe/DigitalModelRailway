@@ -115,10 +115,10 @@ GEN = port('Genesee Docks (Rochester)', -77.61655318811175, 43.22746248913674, '
 
 # ---------------- lanes (cache lo_legs.json)
 _CF = os.path.join(HERE, 'lo_legs.json'); CACHE = json.load(open(_CF)) if os.path.exists(_CF) else {}
-def lane(p, q, res):
-    ck = f'{SEA_VERSION}|{p[0]:.5f},{p[1]:.5f}|{q[0]:.5f},{q[1]:.5f}|{res}'
+def lane(p, q, res, shore=500.0):
+    ck = f'{SEA_VERSION}|{p[0]:.5f},{p[1]:.5f}|{q[0]:.5f},{q[1]:.5f}|{res}' + ('' if shore == 500.0 else f'|{shore}')
     if ck not in CACHE:
-        d = math.dist(fwd(*p), fwd(*q)); S = Sea([p, q], res=res, margin=max(8000.0, 0.3 * d)); leg, land = S.leg(p, q)
+        d = math.dist(fwd(*p), fwd(*q)); S = Sea([p, q], res=res, margin=max(8000.0, 0.3 * d), shore=shore); leg, land = S.leg(p, q)
         CACHE[ck] = [[round(x, 6), round(y, 6)] for x, y in leg]
         print(f'   lane {p[0]:.4f},{p[1]:.4f} - {q[0]:.4f},{q[1]:.4f}: over {land * 100:.1f}% land; snaps {S.snap_m(p):.0f} / {S.snap_m(q):.0f} m')
     return [tuple(x) for x in CACHE[ck]]
@@ -274,12 +274,12 @@ mkline('mlj', 'Minett – Elgin House – Natural Park (Lake Joseph steamer)', l
        'Muskoka Lakes Navigation Co.: Canadian Pacific timetable 1948 (Brendan); Eastern Standard time as printed; Lake Joseph boat a reading', 'mln')
 # ---------------- Canada Steamship Lines, Sailing Schedules Season 1948 (Brendan, 7 Nov 2026; dmr-sources scans/marine/csl_1948_*.png). Eastern Standard
 # time as printed, three hours to the Pacific clock. Ports: Brendan's points. The Niagara Falls - Queenston motor coach (Canada Coach Lines) is a bus: not drawn.
-def water_route(seq, res):   # ports (dicts) and waypoints (lon, lat) in order; stations at the ports
+def water_route(seq, res, shore=500.0):   # ports (dicts) and waypoints (lon, lat) in order; stations at the ports
     pts = []; idx = []; prev = None
     for p in seq:
         q = (p['lon'], p['lat']) if isinstance(p, dict) else p
         if prev is None: pts.append(q)
-        else: pts += lane(prev, q, res)[1:] + [q]
+        else: pts += lane(prev, q, res, shore)[1:] + [q]
         if isinstance(p, dict): idx.append((p, len(pts) - 1))
         prev = q
     route = chain(pts)
@@ -389,14 +389,14 @@ mkline('cpbof', 'Saint John – Digby (Princess Helene)', bf_route, bf_st, BF, [
 # ---------------- Ocean steamers to Newfoundland (Brendan, 13 Nov 2026: The Daily News, St. John's, 2 - 5 July 1948). Neither sails weekly: shown by the
 # real dates of the map's week (Monday 5 - Sunday 11 July 1948; 'd0' = the day the sailing starts, counted from Monday 5 July), as the Alaska boats.
 # ALL TIMES ESTIMATED (the advertisements give dates only): about 12.5 knots for the Furness ships, 10 for the Atlantic Charter, over the drawn lanes; St. John's in
-# Newfoundland time (Atlantic + 0.5 h), New York in daylight time (= Atlantic standard). Port points APPROXIMATE (Claude).
+# Newfoundland daylight time (Atlantic + 1.5 h), New York in daylight time (= Atlantic standard). Port points APPROXIMATE (Claude).
 NYP = port('New York (Pier 96, North River)', -73.9945, 40.7716, 'Pier No. 96, North River, foot of West 56th Street, New York (Furness Red Cross Line; the point APPROXIMATE, Claude).')
 HFX = port('Halifax (Furness Withy)', -63.5655, 44.6430, 'Halifax harbour, Furness, Withy & Co. agents, Water Street (the point APPROXIMATE, Claude).')
 SJN = port("St. John's (harbour)", -52.7085, 47.5650, "St. John's harbour, Water Street wharves (Harvey & Co., agents; the point APPROXIMATE, Claude).")
 SPM = port('St. Pierre', -56.1745, 46.7800, 'St. Pierre harbour, St. Pierre and Miquelon (the point APPROXIMATE, Claude).')
-fr_route, fr_st = water_route([NYP, HFX, SJN], 2000)
-bp_route, bp_st = water_route([SJN, SPM, NSY, HFX], 2000)
-H = 3600; D = 86400; PAC_A = 4 * H; PAC_N = 4 * H + 1800; PAC_NY = 4 * H   # local (Atlantic standard, Newfoundland, New York daylight) to the Pacific clock
+fr_route, fr_st = water_route([NYP, HFX, SJN], 500, 8000.0)   # 500 m cells; keep well off the shore (8 km band costs extra) in the open sea
+bp_route, bp_st = water_route([SJN, SPM, NSY, HFX], 500, 8000.0)
+H = 3600; D = 86400; PAC_A = 4 * H; PAC_N = 5 * H + 1800; PAC_NY = 4 * H   # local (Atlantic standard, Newfoundland daylight = Atlantic + 1.5 h in summer (CN Newfoundland folder, May 1949), New York daylight) to the Pacific clock
 def _dsvc(d0): return 'W_' + ''.join('1' if i == d0 % 7 else '0' for i in range(7))
 FRN = (' Furness Red Cross Line (Furness, Withy & Co.), New York - Halifax - St. John\'s, passengers and freight; the Fort Amherst and Fort Townshend'
        ' each make the round trip about every three and a half weeks (The Daily News, St. John\'s, 2 - 5 July 1948). Times ESTIMATED: the sailings are advertised by date only.')

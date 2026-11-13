@@ -22,7 +22,7 @@ the page.
 - Canadian Northern and Grand Trunk Pacific track sets from the maps in the Wikipedia articles
   ["Canadian Northern Railway"](https://en.wikipedia.org/wiki/Canadian_Northern_Railway) and
   ["Grand Trunk Pacific Railway"](https://en.wikipedia.org/wiki/Grand_Trunk_Pacific_Railway), CC BY-SA.
-- Abandoned and disused lines in Saskatchewan and Manitoba from **OpenStreetMap**, © OpenStreetMap contributors, ODbL.
+- Abandoned and disused lines in Saskatchewan, Manitoba, the Maritimes and Newfoundland from **OpenStreetMap**, © OpenStreetMap contributors, ODbL.
 - Kettle Valley line: [kettlevalleyrailway.ca](https://www.kettlevalleyrailway.ca/map.html).
 - Brendan Dawe's own traces (Google Earth and OpenRailwayMap; OpenRailwayMap data © OpenStreetMap contributors).
 
