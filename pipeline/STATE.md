@@ -2898,3 +2898,5 @@ Stations of different railways within 250 m (70 pairs; script: same check over v
 - Newfoundland Railway: Argentia branch traced from Brendan's OpenStreetMap export (abandoned railway, ODbL), replacing the straight estimate.
 - Ocean lanes (frc, bps): 500 m cells with an 8 km costly band along the shore (were 2 km cells); only harbour ends touch the generalised coast.
   St. John's times in Newfoundland daylight time (Atlantic + 1.5 h in summer: CN Newfoundland folder, May 8, 1949).
+- Rule (Brendan, 13 Nov 2026): a ship is a passenger service if it was advertised for passengers (e.g. the Atlantic Charter, "Passengers and
+  Freight", 12 berths: kept). Freighters with a few berths that were not advertised are left out (Tudor Prince). No need to search for more.
