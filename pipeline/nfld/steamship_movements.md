@@ -135,3 +135,15 @@ Clarke
 
 Furness Warren
 - S.S. Newfoundland: as the previous day.
+
+## July 10 (Saturday)
+- Fort Amherst, Fort Townshend, Island Connector: as the previous day.
+
+Railway Boats
+- Kyle left Cartwright 6.45 p.m. Thursday [July 8], outward.
+- Burgeo: today's express will make connection at Port aux Basques.
+- Bar Haven: Monday morning's train [July 12] will make connection at Argentia for West Side, Placentia Bay.
+- Springdale left Fogo 10.30 a.m. Friday [July 9], inward.
+- Glencoe left St. Brendan's 7 p.m. Friday [July 9], outward.
+- Northern Ranger passed Point Amour 1 p.m. Thursday [July 8], inward to St. John's.
+- Codroy: Monday's express [July 12] will make connection at Corner Brook for regular ports to Battle Harbour.
