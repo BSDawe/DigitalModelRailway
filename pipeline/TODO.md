@@ -110,6 +110,7 @@ Maritime tables where the traced line differs from the printed miles by 1 mi and
 - [ ] Interurban train icon: Brendan is not satisfied; revisit later. (23 Oct)
 
 ## Remaining 1948 services (list of 11 Nov 2026)
+- [ ] Fort Townshend sailed St. John's Thursday July 8, not Wednesday 7 (Daily News July 8): move FRC-TOWNSHEND-S a day (d0=3) with the coastal-ships build.
 - [ ] Furness Warren R.M.S. Newfoundland (Liverpool - St. John's - Halifax - Boston): due St. John's July 12 from Boston and Halifax, sailing same day for Liverpool (Daily News July 7). In the week she is coming north from Boston via Halifax: draw once a Halifax or Boston date turns up.
 - [ ] Newfoundland coastal steamers (Brendan researching; from Newfoundland Railway notices, The Daily News, 2 - 7 July 1948; nfld/steamship_movements.md): S.S. Bar Haven,
   Bay Route of Placentia Bay (from Argentia, Monday, after the 9 a.m. train); S.S. Northern Ranger, Corner Brook service to St. John's (from

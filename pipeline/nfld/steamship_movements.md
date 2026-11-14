@@ -95,3 +95,27 @@ Railway Boats
 - Glencoe sailing from St. John's 10 a.m. Thursday for regular ports to Lewisporte.
 - Northern Ranger expected to leave Corner Brook some time this evening [July 7] for regular ports to St. John's.
 - Codroy leaving Corner Brook to-day [July 7], special trip to North Sydney.
+
+## July 8
+Blue Peter
+- Atlantic Charter: en route to St. John's, due July 7 [sic, as July 7]. Leaves July 9th. Leaves Halifax July 13th. Leaves North Sydney July 16th. Due
+  St. John's July 19th. Leaves St. John's July 20th. Leaves Halifax July 26th. Leaves North Sydney July 27th. Due St. John's July 30th.
+
+Furness Red Cross
+- Fort Townshend: sailing today [Thursday July 8] for Halifax and New York. [July 6 and 7 said Wednesday July 7: she sailed a day late.]
+- Fort Amherst: en route to Bermuda. Leaving New York again July 17th for Halifax and St. John's. Due St. John's July 22nd. Sailing July 24th.
+
+Clarke
+- Island Connector leaving Charlottetown July 8th for St. John's. Due St. John's July 11th. Sailing July 12th for Montreal.
+
+Furness Warren
+- S.S. Newfoundland due St. John's July 12 from Boston and Halifax, sailing same day for Liverpool. (Same details for the other direction as before.)
+
+Railway Boats [word for word as July 7 except the Kyle: probably the July 7 report reprinted, so "yesterday" = July 6]
+- Kyle stormbound at St. Anthony, outward. [July 7 transcription: St. Andrew; St. Anthony fits the Labrador run.]
+- Burgeo left Cape La Hune 2.45 p.m. yesterday, outward.
+- Bar Haven left Sound Island 11.50 a.m. yesterday, outward.
+- Springdale left Little Bay 3.30 p.m. yesterday, inward.
+- Glencoe sailing from St. John's 10 a.m. Thursday for regular ports to Lewisporte.
+- Northern Ranger expected to leave Corner Brook some time this evening for regular ports to St. John's.
+- Codroy leaving Corner Brook today, special trip to North Sydney.
