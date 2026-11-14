@@ -119,3 +119,19 @@ Railway Boats [word for word as July 7 except the Kyle: probably the July 7 repo
 - Glencoe sailing from St. John's 10 a.m. Thursday for regular ports to Lewisporte.
 - Northern Ranger expected to leave Corner Brook some time this evening for regular ports to St. John's.
 - Codroy leaving Corner Brook today, special trip to North Sydney.
+
+## July 9
+Blue Peter
+- Atlantic Charter: as the previous day.
+
+Furness Red Cross
+- Fort Townshend: en route New York via Halifax. Due New York July 12. [Then] en route Bermuda. Leaving New York again July 24th for Halifax and
+  St. John's. Due St. John's July 29th, sailing July 31st.
+- Fort Amherst: en route Bermuda. Leaving New York again July 17th for Halifax and St. John's. Due St. John's July 22, sailing July 24th.
+
+Clarke
+- Island Connector: leaving Charlottetown July 8th for St. John's. Due St. John's July 11th. Sailing July 11th [July 12 in earlier notices] for
+  Montreal. Leaving Montreal July 23rd. Leaving Charlottetown July 29th. Due St. John's August 1st.
+
+Furness Warren
+- S.S. Newfoundland: as the previous day.
