@@ -57,3 +57,13 @@ Cargo lines to the Far East, Australasia, Europe and South America; no Canadian 
 - C.N. "Lady boats" (Lady Nelson, Lady Rodney: Canadian National Steamships' passenger service to Bermuda, the Eastern Caribbean and British Guiana)
   sail from Halifax, Lady Nelson after July 8 - 16, Lady Rodney after July 16 - 27; * = from Saint John about three days earlier.
 - Transatlantic passenger liners in the St. Lawrence and off Halifax: Ascania, Empress of Canada, Aquitania, Beaverbrae (and Donaldson's Laurentia).
+
+# Ocean liners for the week of 5 July 1948 (Brendan, 15 Nov 2026: transatlantic and transpacific passenger ships, drawn to the edge of the map;
+# arrivals in Canada estimated where they fall in the week)
+- CP, Montreal - Quebec - Liverpool, summer season 1948 (CP public timetable; scan in the private repo, scans/marine/cp_1948_atlantic_summer.png):
+  Empress of Canada leaves Montreal 11.00 a.m. EST Saturday July 3, arrives Liverpool July 10 (in the Gulf and the Strait of Belle Isle on
+  Monday 5); next leaves Liverpool July 14, Quebec July 20, Montreal July 21 (after the week). Empress of France from Sept. 22.
+  Passenger-carrying freighters Beaverburn and Beaverford, 12 passengers, about twice monthly to Liverpool, eight days, dates on request
+  (Foreign Trade: Beaverford loads at Montreal July 11 - 18, Beaverburn July 27).
+- Pier 21 ship arrival database (https://pier21.ca/immigration-records/ship-arrival-database): arrivals by ship, day, month, ports, company;
+  filterable by ship name in a browser (not by date). Empress of Canada 1948: June 10, June 30, July 21, Aug. 11.
