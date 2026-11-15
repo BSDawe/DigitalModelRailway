@@ -110,6 +110,14 @@ Maritime tables where the traced line differs from the printed miles by 1 mi and
 - [ ] Interurban train icon: Brendan is not satisfied; revisit later. (23 Oct)
 
 ## Remaining 1948 services (list of 11 Nov 2026)
+- [ ] Ocean liners, week of 5 July 1948 (Brendan, 15 Nov 2026): transatlantic and transpacific passenger ships, incl. passenger-carrying freighters
+  (CP Beaverburn / Beaverford, 12 passengers), drawn from their Canadian port to the EDGE OF THE WATER FILE and then gone (Brendan: "sail to the edge
+  of the water file and then disappear"); arrivals in Canada in the week estimated the same way, appearing at the edge. Apply the same to the ships
+  already on the map that leave the water: the Denali (Kodiak) and the Fort Amherst's Bermuda trip (both now drawn beyond the water layer).
+  Known: Empress of Canada leaves Montreal 11 a.m. EST Sat July 3 (Liverpool July 10), so in the Gulf / Belle Isle on Mon 5; Beaverford loads at
+  Montreal July 11 - 18 (arrives about the 10th?). Brendan is checking the Pier 21 arrivals database for the others (Aquitania, Samaria, Scythia,
+  Ascania, Laurentia, Beaverbrae, Kota Inten, Tabinta, Volendam, Sobieski, Newfoundland, Nova Scotia, Lady Nelson, Lady Rodney). No transpacific
+  liner at Vancouver that week (Aorangi resumed later in 1948: Brendan). Notes: marine/FOREIGN_TRADE_1948.md.
 - [ ] Fort Townshend sailed St. John's Thursday July 8, not Wednesday 7 (Daily News July 8): move FRC-TOWNSHEND-S a day (d0=3) with the coastal-ships build; due New York Monday July 12 (Daily News July 9), so a short Halifax call (about Sat 10). Island Connector now sails St. John's July 11 (was 12).
 - [ ] Furness Warren R.M.S. Newfoundland (Liverpool - St. John's - Halifax - Boston): due St. John's July 12 from Boston and Halifax, sailing same day for Liverpool (Daily News July 7). In the week she is coming north from Boston via Halifax: draw once a Halifax or Boston date turns up.
 - [ ] Newfoundland coastal steamers (Brendan researching; from Newfoundland Railway notices, The Daily News, 2 - 7 July 1948; nfld/steamship_movements.md): S.S. Bar Haven,
