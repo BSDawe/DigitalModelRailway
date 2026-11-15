@@ -120,6 +120,7 @@ Maritime tables where the traced line differs from the printed miles by 1 mi and
   liner at Vancouver that week (Aorangi resumed later in 1948: Brendan). Notes: marine/FOREIGN_TRADE_1948.md.
 - [ ] Fort Townshend sailed St. John's Thursday July 8, not Wednesday 7 (Daily News July 8): move FRC-TOWNSHEND-S a day (d0=3) with the coastal-ships build; due New York Monday July 12 (Daily News July 9), so a short Halifax call (about Sat 10). Island Connector now sails St. John's July 11 (was 12).
 - [ ] Furness Warren R.M.S. Newfoundland (Liverpool - St. John's - Halifax - Boston): due St. John's July 12 from Boston and Halifax, sailing same day for Liverpool (Daily News July 7). In the week she is coming north from Boston via Halifax: draw once a Halifax or Boston date turns up.
+- Rule (Brendan, 15 Nov 2026): ships go by SCHEDULED times generally. The Newfoundland coastal (railway) boats are the exception: no schedule, so drawn from the ACTUAL reported positions in the Daily News (nfld/steamship_movements.md), interpolated between reports; mark them as shown from reports, not a timetable.
 - [ ] Newfoundland coastal steamers (Brendan researching; from Newfoundland Railway notices, The Daily News, 2 - 7 July 1948; nfld/steamship_movements.md): S.S. Bar Haven,
   Bay Route of Placentia Bay (from Argentia, Monday, after the 9 a.m. train); S.S. Northern Ranger, Corner Brook service to St. John's (from
   Corner Brook, Monday, after the 5 p.m. local express); S.S. Springdale, Green Bay service (from Lewisporte, after the Saturday local express);
