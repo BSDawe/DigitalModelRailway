@@ -67,3 +67,7 @@ Cargo lines to the Far East, Australasia, Europe and South America; no Canadian 
   (Foreign Trade: Beaverford loads at Montreal July 11 - 18, Beaverburn July 27).
 - Pier 21 ship arrival database (https://pier21.ca/immigration-records/ship-arrival-database): arrivals by ship, day, month, ports, company;
   filterable by ship name in a browser (not by date). Empress of Canada 1948: June 10, June 30, July 21, Aug. 11.
+  Its own note (Brendan, 15 Nov 2026): passenger ships calling at Pier 21, Halifax, 1928 - 1971; dates are SCHEDULED arrivals (occasionally
+  a day or two off); incomplete (1960 and 1962 - 1966 missing; some refugee-organisation charters not listed). The Empress of Canada rows
+  match CP's Montreal arrival dates (June 30, July 21), so a ship's date there may be its main Canadian port, not Halifax. Ships that never
+  called at Halifax (Donaldson's Glasgow - Montreal ships, the Beaver freighters) are likely absent.
