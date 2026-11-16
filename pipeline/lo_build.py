@@ -467,12 +467,18 @@ def nfseq(route, rev=False, skip=(), frm=None, to=None):
 CB = nfp('battle_harbour', 'Corner Brook')
 PAMOUR = port('Point Amour (passing)', -56.8585, 51.4595, 'Point Amour lighthouse, Strait of Belle Isle: where the Northern Ranger was reported passing (not a call; the point Claude).')
 NFR_RATE = 8.0
+# drawn as major stops (Brendan, 15 Nov 2026: "connections, termini, and just known significant points like Carbonear or Corner Brook"):
+# the railway connections, the ends of the runs, and the larger towns (Claude's pick); every other outport a minor stop
+NF_MAJOR = {"St. John's (harbour)", 'Argentia', 'Lewisporte', 'Corner Brook', 'Port aux Basques', 'North Sydney',
+            'Hopedale', 'Isle Valen', 'Shoe Cove', 'Fogo', "Cook's Hr.", 'Grand Bank',
+            'Carbonear', 'Catalina', 'Twillingate', 'St. Anthony', 'Battle Harbour', 'Cartwright', 'Burin', 'Marystown', 'Fortune', 'Hr. Breton', 'Burgeo'}
 NFR_NOTE = (' Newfoundland Railway coastal boat. Drawn from reported positions (The Daily News, St. John\'s, July 1948, transcribed by Brendan), not a timetable;'
             ' the other calls and their times are ESTIMATED, in between by distance (ports and their order from the CN Newfoundland folder of May 1949).')
 NFL_LINES = []
 def nf_voyage(key, label, seq, sails, labels, res=300):
     """sails: [(trip id, vessel, {port index: (arrive h, leave h)}, note)], hours from Monday 5 July 0.00 Newfoundland time"""
     route, st = water_route(seq, res)
+    for s_ in st: s_['principal'] = s_['name'] in NF_MAJOR
     trips = []
     for tid, ves, anc, note in sails:
         # true (ground) miles along the lane: the chain is in the map projection, which stretches distances this far north
