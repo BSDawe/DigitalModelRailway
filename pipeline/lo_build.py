@@ -348,8 +348,8 @@ NSY['gid'] = _gid_of('oncn005', 'North Sydney') or NSY['gid']; PAQ['gid'] = _gid
 ns_route, ns_st = water_route([NSY, PAQ], 150)
 SVC.update({'SaTuTh': 'W_0101010', 'WeFr': 'W_0010100', 'Mo': 'W_1000000'}); DAYS.update({'SaTuTh': 'Saturday, Tuesday and Thursday', 'WeFr': 'Wednesday and Friday', 'Mo': 'Monday'})
 NN = (' Newfoundland Railway steamer across the Cabot Strait, connecting with the Canadian National trains at North Sydney and the Newfoundland Railway at Port aux Basques.'
-      ' Printed in Atlantic time at North Sydney and Newfoundland time (half an hour later) at Port aux Basques.')
-def _ns(d, dy, a, b, txt): return dict(id=f'NFSS-{"DU"[d]}{dy}', num='', name='Newfoundland Railway steamer', svc=SVC[dy], dir=d, vessel='',   # unnamed: no label on the map (Brendan, 9 Nov 2026)
+      ' Printed in Atlantic time at North Sydney and Newfoundland time (half an hour later) at Port aux Basques. The ship on the run was generally the S.S. Cabot Strait (Brendan).')
+def _ns(d, dy, a, b, txt): return dict(id=f'NFSS-{"DU"[d]}{dy}', num='Cabot Strait', name='Newfoundland Railway steamer', svc=SVC[dy], dir=d, vessel='Cabot Strait',   # Brendan, 16 Nov 2026: "would generally have been the Cabot Strait" (was unnamed, 9 Nov)
                                       
                                        stops=[[0 if d == 0 else 1, a, a, 1], [1 if d == 0 else 0, b, b, 1]], note=txt + NN)
 NS = [_ns(0, 'SaTuTh', hm('8.30p') - 4 * 3600, 86400 + hm('6.00a') - 4 * 3600 - 1800, 'North Sydney Sat., Tues. and Thurs. 8.30 p.m. to Port aux Basques 6.00 a.m. (Newfoundland time) Sun., Wed. and Fri.'),

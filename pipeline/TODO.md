@@ -140,6 +140,15 @@ Maritime tables where the traced line differs from the printed miles by 1 mi and
   January 1948 timetable (1 Mon / Thu, 15 Wed / Sat, 2 / 16 Thu / Sun). Needs a summer timetable (running times, eastbound days, branches) and
   the Cabot Strait steamer re-dated to meet the summer trains.
 - [ ] Rail: North Yonge Railways (TTC, Toronto - Richmond Hill; Brendan) (Wabash and Pere Marquette: no passenger service in Canada in 1948; Brendan). Streetcars out of scope so far.
+- [ ] Investigate (Brendan, 16 Nov 2026), Quebec marine services in 1948:
+  - Tadoussac - Baie-Sainte-Catherine ferry across the Saguenay mouth: N.M. Jacques-Cartier (1938 - 1958; 12 vehicles, 88 passengers). Need a 1948
+    schedule or frequency (sources Brendan found: Societe des traversiers du Quebec post; https://www.tidesoftadoussac.com/ferries).
+  - Clarke Steamship Company, North Shore coastal service: Quebec, Montreal and South Shore ports to Baie-Comeau, Sept-Iles, Havre-Saint-Pierre,
+    Blanc-Sablon (Route 138 not yet through); 1948 fleet incl. North Shore (II) (ex-corvette, 1946) and North Pioneer (1946). Sources:
+    https://www.benjidog.co.uk/TheShipsList/ClarkeSSCo.php; https://semaphore.uqar.ca/id/eprint/2457/1/Les%20Clarke%20et%20la%20compagnie%20de%20transport%20du%20Bas%20St-Laurent%20%281921-1970%29.pdf;
+    https://clarkesteamship.wordpress.com/tag/north-shore-power-railway-navigation-co/; https://www.boisestgilles.ca/content/historique-maritime.
+    Need a 1948 sailing list (Clarke folder or newspaper). Also the Compagnie de transport du Bas-St-Laurent (Rimouski - North Shore) in the same thesis.
+  The map has only Canada Steamship Lines' Montreal - Quebec - Saguenay (cssg) in this area.
 - [ ] Water: Owen Sound Transportation Co. (Manitoulin: Norisle, Normac); Pelee Island and Wolfe Island ferries; Northumberland Ferries (Wood Islands - Caribou); Grand Manan ferry; Clarke Steamship (Gaspe, North Shore). Lake Winnipeg (Keenora) is in; the northern river boats were no longer scheduled common carriers after 1947 (Brendan).
 
 ## Cross-border trains cut at the border (stage 4; list of 11 Nov 2026)
