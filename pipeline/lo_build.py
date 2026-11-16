@@ -30,6 +30,7 @@ NFS_BOX = (-60.40, -58.95, 46.15, 47.65)        # the Cabot Strait: North Sydney
 ESL_BOX = (-71.10, -65.90, 42.25, 43.95)        # the Gulf of Maine: Yarmouth - Boston (Eastern Steamship Lines)
 BOF_BOX = (-66.20, -65.60, 44.55, 45.32)        # the Bay of Fundy: Saint John - Digby (C.P.S.S. Princess Helene)
 ATL_BOX = (-74.30, -52.40, 40.30, 48.00)        # the Atlantic: New York - Halifax - St. John's (Furness Red Cross Line), St. Pierre (Blue Peter Steamships)
+NFL_BOX = (-60.60, -52.40, 46.40, 55.80)        # Newfoundland and Labrador: the Newfoundland Railway coastal boats
 
 # ---------------- water: the basemap tiles (page projection) back to lon/lat, and water_east.json
 _idx = json.load(open(os.path.join(ROOT, 'basemap', 'tiles', 'index.json'))); _PJ = _idx['proj']
@@ -43,7 +44,7 @@ def page_ll(x, y):
     X, Y = x + _ox, y + _oy; rho = math.copysign(math.hypot(X, Y), _n); th = math.atan2(X, Y)
     return (th / _n + _l0) / _r, (2 * math.atan((_R * _F / rho) ** (1 / _n)) - math.pi / 2) / _r
 _z = _idx['zmax']; _s = _idx['side'] / 2 ** _z; _polys = []
-for _B in (BOX, PAB_BOX, MUSK_BOX, CSL_BOX, SAG_BOX, NFS_BOX, ESL_BOX, BOF_BOX, ATL_BOX):
+for _B in (BOX, PAB_BOX, MUSK_BOX, CSL_BOX, SAG_BOX, NFS_BOX, ESL_BOX, BOF_BOX, ATL_BOX, NFL_BOX):
   _xs, _ys = zip(*[page_xy(lon, lat) for lon in _B[:2] for lat in _B[2:]])
   for tx in range(int((min(_xs) - _idx['origin'][0]) // _s), int((max(_xs) - _idx['origin'][0]) // _s) + 1):
       for ty in range(int((min(_ys) - _idx['origin'][1]) // _s), int((max(_ys) - _idx['origin'][1]) // _s) + 1):
@@ -442,6 +443,126 @@ BP = [dict(id='BPS-CHARTER-N', d0=-2, num='Atlantic Charter', name='Blue Peter S
            note='M.V. Atlantic Charter: St. John\'s Friday July 9 for St. Pierre (Saturday 10) and Halifax (Tuesday 13; leaves Halifax July 13 for North Sydney and St. John\'s, due July 19).' + BPN)]
 mkline('bps', "St. John's – St. Pierre – North Sydney – Halifax (Blue Peter Steamships)", bp_route, bp_st, BP, ['to Halifax', "to St. John's"],
        "Blue Peter Steamships, M.V. Atlantic Charter: advertisement, The Daily News, St. John's, July 1948 (Brendan); times estimated", 'bps')
+
+# ---------------- Newfoundland Railway coastal boats, week of 5 July 1948 (Brendan, 13 - 15 Nov 2026)
+# Brendan: these boats had no schedule, so they alone are drawn from REPORTED POSITIONS: The Daily News, St. John's, "Steamship movements" and
+# the Newfoundland Railway notices, 2 - 13 July 1948 (nfld/steamship_movements.md). Each voyage's ports and order: the CN folder "Lines in
+# Newfoundland", May 1949, Steamship Service (nfld/coastal_routes.py; Englee added to the Kyle's Labrador run, where she was reported).
+# Ports: Canadian Geographical Names (nfld/coastal_ports.csv, nfld/geocode_ports.py). Times at the reported calls are as reported (or the
+# reported day, the hour estimated); every other call is put in between by distance along the lane, and before the first / after the last
+# report at 8 miles an hour with calls (Claude: ESTIMATED). Times kept on Newfoundland daylight time (Pacific + 5 1/2 hours) here.
+import sys as _sys
+_sys.path.insert(0, os.path.join(HERE, 'nfld')); from coastal_routes import ROUTES as NFR_ROUTES
+NFP = {(r['route'], r['port']): (float(r['lon']), float(r['lat']), r['how']) for r in csv.DictReader(open(os.path.join(HERE, 'nfld', 'coastal_ports.csv')))}
+def nfp(route, name):
+    lon, lat, how = NFP[(route, name)]; mi_ = dict((q[1], q[0]) for q in NFR_ROUTES[route][1]).get(name)
+    return dict(name=name, gid='NF_' + re.sub(r'\W+', '_', name.upper()).strip('_') + f'_{lat:.2f}'.replace('.', '_'), lon=lon, lat=lat,
+                note=f'{name}: steamer call, Newfoundland Railway coastal service' + (f' (mile {mi_} on the 1949 folder\'s list)' if mi_ is not None else '') + f'. The point: {how}.')
+def nfseq(route, rev=False, skip=(), frm=None, to=None):
+    ps = NFR_ROUTES[route][1][::-1] if rev else NFR_ROUTES[route][1]
+    names = [q[1] for q in ps if not (set(q[2:]) & set(skip))]
+    if frm: names = names[names.index(frm):]
+    if to: names = names[:names.index(to) + 1]
+    return [SJN if (n == "St. John's") else nfp(route, n) for n in names]
+CB = nfp('battle_harbour', 'Corner Brook')
+PAMOUR = port('Point Amour (passing)', -56.8585, 51.4595, 'Point Amour lighthouse, Strait of Belle Isle: where the Northern Ranger was reported passing (not a call; the point Claude).')
+NFR_RATE = 8.0
+NFR_NOTE = (' Newfoundland Railway coastal boat. Drawn from reported positions (The Daily News, St. John\'s, July 1948, transcribed by Brendan), not a timetable;'
+            ' the other calls and their times are ESTIMATED, in between by distance (ports and their order from the CN Newfoundland folder of May 1949).')
+NFL_LINES = []
+def nf_voyage(key, label, seq, sails, labels, res=300):
+    """sails: [(trip id, vessel, {port index: (arrive h, leave h)}, note)], hours from Monday 5 July 0.00 Newfoundland time"""
+    route, st = water_route(seq, res)
+    trips = []
+    for tid, ves, anc, note in sails:
+        c = [s['chain'] / MI for s in st]; n = len(st)
+        known = sorted(anc)
+        tt = [None] * n
+        for i in known: a, d = anc[i]; tt[i] = [a if a is not None else d, d if d is not None else a]
+        for i in range(n):
+            if tt[i]: continue
+            lo = max((k for k in known if k < i), default=None); hi = min((k for k in known if k > i), default=None)
+            if lo is not None and hi is not None:
+                f = (c[i] - c[lo]) / (c[hi] - c[lo]); t = tt[lo][1] + f * (tt[hi][0] - tt[lo][1])
+            elif hi is not None: t = tt[hi][0] - (c[hi] - c[i]) / NFR_RATE - 0.5 * (hi - i)
+            else: t = tt[lo][1] + (c[i] - c[lo]) / NFR_RATE + 0.5 * (i - lo)
+            tt[i] = [t, t]
+        d0 = math.floor((tt[0][1] - 5.5) / 24)
+        sec = lambda h: int(round((h - 5.5 - 24 * d0) * 3600 / 60)) * 60
+        stops = [[i, sec(tt[i][0]), sec(tt[i][1]), 1 if i in anc else 0] for i in range(n)]
+        trips.append(dict(id=tid, d0=d0, num=ves, name='Newfoundland Railway', svc=_dsvc(d0), dir=0, vessel=ves, stops=stops, note=note + NFR_NOTE))
+    mkline(key, label, route, st, trips, labels, "Newfoundland Railway coastal boats: The Daily News, St. John's, 2 - 13 July 1948 (Brendan); CN Newfoundland folder, May 1949", 'nfr')
+    NFL_LINES.append(LINES[-1])
+D_ = 24
+# S.S. Kyle, Labrador service: sailed St. John's 4 p.m. Saturday July 3; left Englee 6.15 a.m. Monday 5; stormbound at St. Anthony (reports of July 7 and 8);
+# left Cartwright 6.45 p.m. Thursday 8, outward. On to Hopedale and back south (ESTIMATED).
+_lab = nfseq('labrador'); _lab.insert(next(k for k, p in enumerate(_lab) if p['name'] == 'Twillingate') + 1, nfp('cooks_harbour', 'Englee'))
+_ix = lambda seq, n: next(k for k, p in enumerate(seq) if p['name'] == n)
+nf_voyage('nfkyo', "St. John's – Labrador, outward (S.S. Kyle)", _lab,
+  [('NFR-KYLE-OUT', 'Kyle', {0: (None, -32), _ix(_lab, 'Englee'): (None, 6.25), _ix(_lab, 'St. Anthony'): (12, 52), _ix(_lab, 'Cartwright'): (None, 90.75)},
+    'S.S. Kyle, Labrador service, outward: sailed St. John\'s 4 p.m. Saturday July 3; left Englee 6.15 a.m. Monday 5; stormbound at St. Anthony (July 6 - 7; leaving estimated); left Cartwright 6.45 p.m. Thursday 8; to Hopedale (estimated).')],
+  ['to Labrador', ''])
+_labi = nfseq('labrador', rev=True, skip=('out',))
+nf_voyage('nfkyi', "Labrador – St. John's, inward (S.S. Kyle)", _labi,
+  [('NFR-KYLE-IN', 'Kyle', {0: (None, 5 * D_ + 15)}, 'S.S. Kyle, Labrador service, inward from Hopedale: leaving Saturday July 10 (ESTIMATED from the Cartwright report).')],
+  ["to St. John's", ''])
+# S.S. Northern Ranger: left Corner Brook the evening of Wednesday July 7 for regular ports to St. John's; passed Point Amour 1 p.m. Thursday 8, inward.
+_nr = [CB, PAMOUR] + nfseq('cooks_harbour', rev=True)
+nf_voyage('nfnr', "Corner Brook – Strait of Belle Isle – St. John's (S.S. Northern Ranger)", _nr,
+  [('NFR-NRANGER', 'Northern Ranger', {0: (None, 2 * D_ + 20), 1: (3 * D_ + 13, 3 * D_ + 13)},
+    'S.S. Northern Ranger: left Corner Brook the evening of Wednesday July 7 (8 p.m. estimated) after the express, for regular ports to St. John\'s; passed Point Amour 1 p.m. Thursday 8, inward; then the Cook\'s Harbour - St. John\'s ports (estimated).')],
+  ["to St. John's", ''])
+# S.S. Burgeo, South Coast service, westbound: fogbound at St. Lawrence (July 2 - 3); left Jersey Harbour 9.20 a.m. Monday July 5; left Cape La Hune 2.45 p.m. Tuesday 6;
+# at Port aux Basques for the Saturday express connection (she starts back after the week).
+_bu = nfseq('south_coast', frm='St. Lawrence')
+nf_voyage('nfbur', 'South Coast, westbound to Port aux Basques (S.S. Burgeo)', _bu,
+  [('NFR-BURGEO-W', 'Burgeo', {0: (None, -30), _ix(_bu, 'Jersey Hr.'): (None, 9 + 20 / 60), _ix(_bu, 'Cape La Hune'): (None, D_ + 14.75)},
+    'S.S. Burgeo, South Coast service, westbound: fogbound at St. Lawrence July 2 - 3 (leaving Saturday 3 estimated); left Jersey Harbour 9.20 a.m. Monday July 5; left Cape La Hune 2.45 p.m. Tuesday 6; to Port aux Basques, for the connection with Saturday\'s express.')],
+  ['to Port aux Basques', ''])
+# S.S. Bar Haven, Placentia Bay, Bay Run: the Monday July 5 morning train to Argentia connected; left Sound Island 11.50 a.m. Tuesday 6, outward; back to Argentia (estimated).
+_bh = nfseq('placentia_bay')
+nf_voyage('nfbho', 'Placentia Bay, Bay Run, outward (S.S. Bar Haven)', _bh,
+  [('NFR-BARHAVEN-OUT', 'Bar Haven', {0: (None, 15), _ix(_bh, 'Sound Island'): (None, D_ + 11 + 50 / 60)},
+    'S.S. Bar Haven, Placentia Bay, Bay Run: from Argentia after the Monday July 5 morning train (3 p.m. estimated); left Sound Island 11.50 a.m. Tuesday 6, outward.')],
+  ['to Isle Valen', ''])
+nf_voyage('nfbhi', 'Placentia Bay, Bay Run, inward (S.S. Bar Haven)', nfseq('placentia_bay', rev=True, skip=('out',)),
+  [('NFR-BARHAVEN-IN', 'Bar Haven', {0: (None, 2 * D_ + 7)}, 'S.S. Bar Haven, Placentia Bay, Bay Run, inward to Argentia (ESTIMATED: leaving Isle Valen Wednesday July 7); her West Side run began Monday July 12.')],
+  ['to Argentia', ''])
+# S.S. Springdale: Green Bay from Lewisporte Sunday July 4; left Springdale 9 a.m. Monday 5, outward; left Little Bay 3.30 p.m. Tuesday 6, inward; Notre Dame Bay from Lewisporte
+# Thursday 8 (the folder's day); left Fogo 10.30 a.m. Friday 9, inward; Green Bay again Sunday 11 (the folder's day). Next: Lewisporte Wednesday 14 (railway notice).
+_gb = nfseq('green_bay')
+nf_voyage('nfgbo', 'Green Bay, outward (S.S. Springdale)', _gb,
+  [('NFR-SPRINGDALE-GB1-OUT', 'Springdale', {0: (None, -4), _ix(_gb, 'Springdale'): (None, 9)},
+    'S.S. Springdale, Green Bay service: from Lewisporte Sunday July 4 (evening, estimated); left Springdale 9 a.m. Monday 5, outward.'),
+   ('NFR-SPRINGDALE-GB2-OUT', 'Springdale', {0: (None, 6 * D_ + 20)},
+    'S.S. Springdale, Green Bay service: from Lewisporte Sunday July 11 (the folder\'s Sunday sailing; ESTIMATED).')],
+  ['to Shoe Cove', ''])
+_gbi = nfseq('green_bay', rev=True, skip=('out',))
+nf_voyage('nfgbi', 'Green Bay, inward (S.S. Springdale)', _gbi,
+  [('NFR-SPRINGDALE-GB1-IN', 'Springdale', {0: (None, D_ + 6), _ix(_gbi, 'Little Bay'): (None, D_ + 15.5)},
+    'S.S. Springdale, Green Bay service, inward: leaving Shoe Cove Tuesday July 6 (estimated); left Little Bay 3.30 p.m. Tuesday 6, inward; to Lewisporte.')],
+  ['to Lewisporte', ''])
+nf_voyage('nfndo', 'Notre Dame Bay, outward (S.S. Springdale)', nfseq('notre_dame', skip=('in',)),
+  [('NFR-SPRINGDALE-ND-OUT', 'Springdale', {0: (None, 3 * D_ + 8)}, 'S.S. Springdale, Notre Dame Bay service: from Lewisporte Thursday July 8 (the folder\'s day; the hour estimated).')],
+  ['to Fogo', ''])
+nf_voyage('nfndi', 'Notre Dame Bay, inward (S.S. Springdale)', nfseq('notre_dame', rev=True),
+  [('NFR-SPRINGDALE-ND-IN', 'Springdale', {0: (None, 4 * D_ + 10.5)}, 'S.S. Springdale, Notre Dame Bay service: left Fogo 10.30 a.m. Friday July 9, inward to Lewisporte.')],
+  ['to Lewisporte', ''])
+# S.S. Glencoe, St. John's - Lewisporte: sailing from St. John's 10 a.m. Thursday July 8; left St. Brendan's 7 p.m. Friday 9, outward.
+_gl = nfseq('lewisporte')
+nf_voyage('nfgl', "St. John's – Lewisporte (S.S. Glencoe)", _gl,
+  [('NFR-GLENCOE-OUT', 'Glencoe', {0: (None, 3 * D_ + 10), _ix(_gl, "St. Brendan's"): (None, 4 * D_ + 19)},
+    'S.S. Glencoe, St. John\'s - Lewisporte service: sailed St. John\'s 10 a.m. Thursday July 8 for regular ports to Lewisporte; left St. Brendan\'s 7 p.m. Friday 9, outward.')],
+  ['to Lewisporte', ''])
+# S.S. Codroy: special trip Corner Brook - North Sydney, leaving Wednesday July 7; back at Corner Brook for Monday's (July 12) express (the return ESTIMATED).
+NF_RATE_SAVE = NFR_RATE; NFR_RATE = 11.0
+nf_voyage('nfcod', 'Corner Brook – North Sydney, special trip (S.S. Codroy)', [CB, NSY],
+  [('NFR-CODROY-S', 'Codroy', {0: (None, 2 * D_ + 18)}, 'S.S. Codroy: special trip from Corner Brook to North Sydney, leaving Wednesday July 7 (6 p.m. estimated; arrival estimated).'),
+   ], ['to North Sydney', ''])
+nf_voyage('nfcodr', 'North Sydney – Corner Brook (S.S. Codroy)', [NSY, CB],
+  [('NFR-CODROY-N', 'Codroy', {0: (None, 4 * D_ + 19.5)}, 'S.S. Codroy: back from North Sydney to Corner Brook (ESTIMATED: leaving Friday July 9), for the Battle Harbour sailing with Monday\'s express, July 12.')],
+  ['to Corner Brook', ''])
+NFR_RATE = NF_RATE_SAVE
 keys = {L['key'] for L in LINES}
 vd['lines'] = [x for x in vd['lines'] if x['key'] not in keys] + LINES
 open(os.path.join(HERE, 'viz_data.json'), 'w').write(json.dumps(vd, separators=(',', ':')))
@@ -471,7 +592,8 @@ for L, ag, desc in ((LINES[0], 'CN', 'Canadian National steamers, May 21 - June 
                     (LINES[13], 'CP', 'Canadian Pacific Steamships, Bay of Fundy service, Saint John - Digby. Times on the Pacific clock, four hours earlier than the Atlantic time printed.'),
                     (LINES[14], 'FRC', 'Furness Red Cross Line, New York - Halifax - St. John\'s, sailings of the week of 5 July 1948. Times estimated, on the Pacific clock.'),
                     (LINES[15], 'FRC', 'Furness Red Cross Line, S.S. Fort Amherst, New York - Bermuda, week of 5 July 1948. Dates and times estimated, on the Pacific clock.'),
-                    (LINES[16], 'BPS', 'Blue Peter Steamships, M.V. Atlantic Charter, sailings of the week of 5 July 1948. Times estimated, on the Pacific clock.')):
+                    (LINES[16], 'BPS', 'Blue Peter Steamships, M.V. Atlantic Charter, sailings of the week of 5 July 1948. Times estimated, on the Pacific clock.'),
+                    *((L_, 'NFR', 'Newfoundland Railway coastal boat, week of 5 July 1948, from reported positions; times estimated, on the Pacific clock.') for L_ in NFL_LINES)):
     rid = L['key'].upper(); st = L['stations']
     app('routes.txt', [[rid, ag, L['label'], ' – '.join(s['name'] for s in st), 4, {'PABIT': '8B4A2B', 'MLN': '1F4E79', 'CSL': 'D93A1C', 'CP': '7A1E2C', 'FRC': '9E1B1B', 'BPS': '1F4F9A'}.get(ag, '2F6B44'), 'FFFFFF', desc]])
     new = [[s['gid'], s['name'] + ' (steamer landing)', f"{s['lat']:.6f}", f"{s['lon']:.6f}", s['note']] for s in st if s['gid'] not in gseen]
