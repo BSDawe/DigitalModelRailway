@@ -71,3 +71,8 @@ Cargo lines to the Far East, Australasia, Europe and South America; no Canadian 
   a day or two off); incomplete (1960 and 1962 - 1966 missing; some refugee-organisation charters not listed). The Empress of Canada rows
   match CP's Montreal arrival dates (June 30, July 21), so a ship's date there may be its main Canadian port, not Halifax. Ships that never
   called at Halifax (Donaldson's Glasgow - Montreal ships, the Beaver freighters) are likely absent.
+- Cunard Line - Donaldson Atlantic Line brochure, "The Historic St. Lawrence River Route to Europe", 1948 (GG Archives,
+  https://www.ggarchives.com/OT/Brochures/CunardDAL-1948-HistoricStLawrenceSeawayToEurope.html; Brendan, 15 Nov 2026): "Canadian Service
+  Oil-Burning Liners" from Montreal and Quebec: Cunard Franconia, Scythia, Samaria (20,000 tons), Ascania (14,500) to Liverpool, London,
+  Southampton, Havre (first and tourist class); Donaldson Laurentia (8,350) and Lismoria (8,000) to Glasgow (first class only). "Frequent
+  sailings"; no dates in the brochure. The Belle Isle route open to liners from the end of May to early November.
