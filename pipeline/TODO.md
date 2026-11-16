@@ -110,6 +110,11 @@ Maritime tables where the traced line differs from the printed miles by 1 mi and
 - [ ] Interurban train icon: Brendan is not satisfied; revisit later. (23 Oct)
 
 ## Remaining 1948 services (list of 11 Nov 2026)
+- [ ] CN Cartierville branch (Montreal): not in the Delamere Quebec file, so not in the model (Brendan, 16 Nov 2026). A 1950 Central Station departure
+  list (Brendan's notes) has ten Cartierville short trains each way and St. Eustache trains "via Cartierville"; neither the April 1948 Official Guide
+  nor the June 1948 Montreal District employee timetable as compared shows them. Need: a trace of the branch (e.g. OSM abandoned railway) and a 1948
+  source for any service (employee timetable page for that subdivision, or a 1948 suburban folder). Also check No. 365 (17:00): the 1950 list
+  marks it "via Cartierville". The 1950 list otherwise matches the model's weekday trains at Central (inbound times are at Mount Royal, ~10 min earlier).
 - [ ] Ocean liners, week of 5 July 1948 (Brendan, 15 Nov 2026): transatlantic and transpacific passenger ships, incl. passenger-carrying freighters
   (CP Beaverburn / Beaverford, 12 passengers), drawn from their Canadian port to the EDGE OF THE WATER FILE and then gone (Brendan: "sail to the edge
   of the water file and then disappear"); arrivals in Canada in the week estimated the same way, appearing at the edge. Apply the same to the ships
