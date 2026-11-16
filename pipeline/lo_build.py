@@ -401,9 +401,9 @@ H = 3600; D = 86400; PAC_A = 4 * H; PAC_N = 5 * H + 1800; PAC_NY = 4 * H   # loc
 def _dsvc(d0): return 'W_' + ''.join('1' if i == d0 % 7 else '0' for i in range(7))
 FRN = (' Furness Red Cross Line (Furness, Withy & Co.), New York - Halifax - St. John\'s, passengers and freight; the Fort Amherst and Fort Townshend'
        ' each make the round trip about every three and a half weeks (The Daily News, St. John\'s, 2 - 5 July 1948). Times ESTIMATED: the sailings are advertised by date only.')
-FR = [dict(id='FRC-TOWNSHEND-N', d0=-3, num='Fort Townshend', name='Furness Red Cross Line', svc=_dsvc(-3), dir=0, vessel='Fort Townshend',
-           stops=[[1, D + 1800 - PAC_A, D + 1800 - PAC_A, 0], [2, 3 * D + 9 * H - PAC_N, 3 * D + 9 * H - PAC_N, 1]],
-           note='S.S. Fort Townshend: left New York June 30; Halifax early Saturday July 3 (time estimated) to St. John\'s, arrived 9 a.m. Monday July 5 (The Daily News, July 6).' + FRN),
+FR = [dict(id='FRC-TOWNSHEND-N', d0=-2, num='Fort Townshend', name='Furness Red Cross Line', svc=_dsvc(-2), dir=0, vessel='Fort Townshend',
+           stops=[[1, 16 * H - PAC_A, 16 * H - PAC_A, 0], [2, 2 * D + 12 * H - PAC_N, 2 * D + 12 * H - PAC_N, 0]],
+           note='S.S. Fort Townshend: Halifax Saturday July 3 to St. John\'s, due Monday July 5 (as advertised; the hours estimated. She actually arrived 9 a.m. Monday, The Daily News, July 6).' + FRN),
       dict(id='FRC-TOWNSHEND-S', d0=2, num='Fort Townshend', name='Furness Red Cross Line', svc=_dsvc(2), dir=1, vessel='Fort Townshend',
            stops=[[2, 11 * H - PAC_N, 11 * H - PAC_N, 0], [1, 2 * D + 16 * H + 1800 - PAC_A, 3 * D + 10 * H - PAC_A, 0], [0, 5 * D + 18 * H - PAC_NY, 5 * D + 18 * H - PAC_NY, 0]],
            note='S.S. Fort Townshend: St. John\'s Wednesday July 7 for Halifax (Friday 9) and New York (Monday 12).' + FRN),
@@ -475,7 +475,12 @@ def nf_voyage(key, label, seq, sails, labels, res=300):
     route, st = water_route(seq, res)
     trips = []
     for tid, ves, anc, note in sails:
-        c = [s['chain'] / MI for s in st]; n = len(st)
+        # true (ground) miles along the lane: the chain is in the map projection, which stretches distances this far north
+        gm, acc = {}, 0.0
+        for k, p in enumerate(route):
+            if k: q = route[k - 1]; acc += 3958.8 * math.hypot(math.radians(p[0] - q[0]) * math.cos(math.radians((p[1] + q[1]) / 2)), math.radians(p[1] - q[1]))
+            gm[p[2]] = acc
+        c = [gm[min(gm, key=lambda x: abs(x - s['chain']))] for s in st]; n = len(st)
         known = sorted(anc)
         tt = [None] * n
         for i in known: a, d = anc[i]; tt[i] = [a if a is not None else d, d if d is not None else a]
@@ -504,7 +509,7 @@ nf_voyage('nfkyo', "St. John's – Labrador, outward (S.S. Kyle)", _lab,
   ['to Labrador', ''])
 _labi = nfseq('labrador', rev=True, skip=('out',))
 nf_voyage('nfkyi', "Labrador – St. John's, inward (S.S. Kyle)", _labi,
-  [('NFR-KYLE-IN', 'Kyle', {0: (None, 5 * D_ + 15)}, 'S.S. Kyle, Labrador service, inward from Hopedale: leaving Saturday July 10 (ESTIMATED from the Cartwright report).')],
+  [('NFR-KYLE-IN', 'Kyle', {0: (None, 6 * D_ + 6)}, 'S.S. Kyle, Labrador service, inward from Hopedale: leaving Sunday July 11 (ESTIMATED from the Cartwright report).')],
   ["to St. John's", ''])
 # S.S. Northern Ranger: left Corner Brook the evening of Wednesday July 7 for regular ports to St. John's; passed Point Amour 1 p.m. Thursday 8, inward.
 _nr = [CB, PAMOUR] + nfseq('cooks_harbour', rev=True)
@@ -539,7 +544,7 @@ nf_voyage('nfgbo', 'Green Bay, outward (S.S. Springdale)', _gb,
   ['to Shoe Cove', ''])
 _gbi = nfseq('green_bay', rev=True, skip=('out',))
 nf_voyage('nfgbi', 'Green Bay, inward (S.S. Springdale)', _gbi,
-  [('NFR-SPRINGDALE-GB1-IN', 'Springdale', {0: (None, D_ + 6), _ix(_gbi, 'Little Bay'): (None, D_ + 15.5)},
+  [('NFR-SPRINGDALE-GB1-IN', 'Springdale', {0: (None, D_ + 8.5), _ix(_gbi, 'Little Bay'): (None, D_ + 15.5)},
     'S.S. Springdale, Green Bay service, inward: leaving Shoe Cove Tuesday July 6 (estimated); left Little Bay 3.30 p.m. Tuesday 6, inward; to Lewisporte.')],
   ['to Lewisporte', ''])
 nf_voyage('nfndo', 'Notre Dame Bay, outward (S.S. Springdale)', nfseq('notre_dame', skip=('in',)),

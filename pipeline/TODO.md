@@ -118,10 +118,10 @@ Maritime tables where the traced line differs from the printed miles by 1 mi and
   Montreal July 11 - 18 (arrives about the 10th?). Brendan is checking the Pier 21 arrivals database for the others (Aquitania, Samaria, Scythia,
   Ascania, Laurentia, Beaverbrae, Kota Inten, Tabinta, Volendam, Sobieski, Newfoundland, Nova Scotia, Lady Nelson, Lady Rodney). No transpacific
   liner at Vancouver that week (Aorangi resumed later in 1948: Brendan). Notes: marine/FOREIGN_TRADE_1948.md.
-- [ ] Fort Townshend back on her schedule (Brendan, 15 Nov 2026: only the Newfoundland Railway boats go by reported positions; everything else by schedule where there is one): due St. John's Monday July 5 (time estimated, not the actual 9 a.m.), sailing Wednesday July 7 as advertised (the map already has the 7th; her actual Thursday 8 sailing is not used). Island Connector: sails St. John's July 11 (the latest notice).
+- [ ] Island Connector (Clarke): Charlottetown July 8 - St. John's July 11, sailing July 11 for Montreal: with the ocean liners.
 - [ ] Furness Warren R.M.S. Newfoundland (Liverpool - St. John's - Halifax - Boston): due St. John's July 12 from Boston and Halifax, sailing same day for Liverpool (Daily News July 7). In the week she is coming north from Boston via Halifax: draw once a Halifax or Boston date turns up.
 - Rule (Brendan, 15 Nov 2026): ships go by SCHEDULED times where there is one. Only the Newfoundland Railway boats are the exception: no schedule, so drawn from the ACTUAL reported positions in the Daily News (nfld/steamship_movements.md), interpolated between reports; mark them as shown from reports, not a timetable.
-- [ ] Newfoundland coastal steamers (Brendan researching; from Newfoundland Railway notices, The Daily News, 2 - 7 July 1948; nfld/steamship_movements.md): S.S. Bar Haven,
+- [x] Newfoundland coastal steamers (Version 172) (Brendan researching; from Newfoundland Railway notices, The Daily News, 2 - 7 July 1948; nfld/steamship_movements.md): S.S. Bar Haven,
   Bay Route of Placentia Bay (from Argentia, Monday, after the 9 a.m. train); S.S. Northern Ranger, Corner Brook service to St. John's (from
   Corner Brook, Monday, after the 5 p.m. local express); S.S. Springdale, Green Bay service (from Lewisporte, after the Saturday local express);
   S.S. Kyle, Labrador service to Hopedale (St. John's, Dry Dock Wharf, Saturday 4 p.m.); M.V. Codroy, Corner Brook - Battle Harbour (freight).
