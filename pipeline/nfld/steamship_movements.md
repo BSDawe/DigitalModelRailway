@@ -147,3 +147,6 @@ Railway Boats
 - Glencoe left St. Brendan's 7 p.m. Friday [July 9], outward.
 - Northern Ranger passed Point Amour 1 p.m. Thursday [July 8], inward to St. John's.
 - Codroy: Monday's express [July 12] will make connection at Corner Brook for regular ports to Battle Harbour.
+
+## July 11 (Sunday)
+- No Daily News published (Brendan).
