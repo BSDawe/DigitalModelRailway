@@ -187,6 +187,14 @@ canvas#map.hover { cursor: pointer; }
 .ticks .pm { font-weight: 700; }
 select { font: 600 12px/1 var(--ui); color: var(--text); background: var(--panel); border: 1px solid var(--rule); border-radius: 5px; padding: 8px 8px; flex: none; }
 .zoom { display: inline-flex; gap: 4px; flex: none; }
+.find { position: relative; flex: 1 1 190px; min-width: 150px; max-width: 280px; }
+.find input { width: 100%; box-sizing: border-box; font: 600 12px/1 var(--ui); color: var(--text); background: var(--panel); border: 1px solid var(--rule); border-radius: 5px; padding: 8px 8px; }
+.found { position: absolute; left: 0; bottom: calc(100% + 6px); width: max(100%, 300px); max-height: 320px; overflow: auto; background: var(--panel); border: 1px solid var(--rule); border-radius: 6px; box-shadow: var(--shadow); z-index: 6; }
+.found button { display: block; width: 100%; text-align: left; appearance: none; border: 0; border-bottom: 1px solid var(--rule); background: transparent; color: var(--text); font: 600 12px/1.35 var(--ui); padding: 7px 10px; cursor: pointer; }
+.found button:last-child { border-bottom: 0; }
+.found button:hover, .found button.on { background: var(--rule); }
+.found small { display: block; font-weight: 400; opacity: .75; }
+.found .none { padding: 8px 10px; font: 400 12px/1.3 var(--ui); opacity: .75; }
 button:focus-visible, select:focus-visible, input:focus-visible, .trow:focus-visible { outline: 2px solid var(--ink); outline-offset: 2px; }
 .sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
 
@@ -200,6 +208,7 @@ button:focus-visible, select:focus-visible, input:focus-visible, .trow:focus-vis
   .panel { top: auto; bottom: calc(var(--ctl, 140px) + 24px); left: 16px; right: 16px; width: auto; height: 34%; }
   .zoom { flex: 1 1 100%; min-width: 0; }
   .zoom select { flex: 1 1 0; min-width: 0; }
+  .find { flex: 1 1 100%; max-width: none; order: 4; }
   .panel-foot { display: none; }
   .controls { right: 16px; gap: 8px 10px; }
   .slider { order: 5; flex-basis: 100%; }
@@ -219,10 +228,10 @@ button:focus-visible, select:focus-visible, input:focus-visible, .trow:focus-vis
 </style>
 
 <div class="app">
-  <canvas id="map" aria-label="Map of British Columbia railways with moving trains"></canvas>
+  <canvas id="map" aria-label="Map of the railways, interurbans and steamships of 1948 with moving trains"></canvas>
 
   <header class="masthead card">
-    <div class="eyebrow">Interurban and main line railways</div>
+    <div class="eyebrow">Railways, Interurbans, Steamships · 1948</div>
     <h1>The Digital Model Railway</h1>
     <div class="sub">Mainline, interurban and steamship lines in the summer of 1948 · approximately the week of 5 July 1948</div>
     <div class="clock" aria-live="off">
@@ -253,12 +262,17 @@ button:focus-visible, select:focus-visible, input:focus-visible, .trow:focus-vis
     </select>
     <label class="sr" for="tz">Time zone</label>
     <select id="tz" title="Standard time in this zone (the clock, the timetables and the boards)">
-      <option value="-2">Alaska time</option><option value="0">Pacific time</option><option value="1">Mountain time</option><option value="2">Central time</option><option value="3">Eastern time</option><option value="4">Atlantic time</option><option value="4.5">Newfoundland time</option>
+      <option value="-2">Alaska time</option><option value="0">Pacific time</option><option value="1">Mountain time</option><option value="2">Central time</option><option value="3">Eastern time</option><option value="4">Atlantic time</option><option value="4.5">Newfoundland time</option><option value="5.5">Newfoundland summer time</option>
     </select>
     <div class="slider">
       <label class="sr" for="time">Time of day</label>
       <input type="range" id="time" min="10800" max="97200" step="60" value="34500">
       <div class="ticks" id="ticks" aria-hidden="true"></div>
+    </div>
+    <div class="find">
+      <label class="sr" for="q">Find a station, train or ship</label>
+      <input id="q" type="search" placeholder="Find a station, train or ship" autocomplete="off" spellcheck="false">
+      <div class="found" id="found" hidden></div>
     </div>
     <div class="zoom">
       <button class="iconbtn" id="mini" aria-pressed="false" title="Make the title card and the panel small, to see more of the map">Hide boxes</button>
@@ -266,7 +280,15 @@ button:focus-visible, select:focus-visible, input:focus-visible, .trow:focus-vis
       <button class="iconbtn" id="zout" aria-label="Zoom out">−</button>
       <label class="sr" for="view">Map view</label>
       <select id="view">
-        <option value="lm">Lower Mainland</option><option value="canyon">Fraser Canyon</option><option value="okanagan">Kamloops and Okanagan</option><option value="thompson">North Thompson and Yellowhead</option><option value="rockies">Revelstoke, the Rockies and Calgary</option><option value="kv">Kettle Valley and Kootenays</option><option value="trench">Crowsnest, Lethbridge and the Trench</option><option value="north">Prince George and Prince Rupert</option><option value="island">Vancouver Island</option><option value="sound">Victoria and Puget Sound</option><option value="spokane">Spokane International</option><option value="coast">North coast steamers</option><option value="peace">Edmonton and the Peace River</option><option value="edmonton">Edmonton, Red Deer and Lloydminster</option><option value="calgary">Calgary, Lethbridge and Medicine Hat</option><option value="sask">Saskatchewan</option><option value="regina">Regina, Moose Jaw and Saskatoon</option><option value="manitoba">Winnipeg to Saskatchewan</option><option value="lakehead">Winnipeg, Rainy River and the Lakehead</option><option value="nont">Northern Ontario</option><option value="ontario">Toronto, Ottawa and Montreal</option><option value="quebec">Quebec and the Abitibi</option><option value="maritimes">The Maritimes</option><option value="midwest">Minnesota and the Dakotas</option><option value="chicago">Chicago and the Twin Cities</option><option value="lakes">Lake Superior to Detroit</option><option value="waterways">Peace River, Athabasca and Waterways</option><option value="puget">Seattle, Tacoma and Portland</option><option value="inland">Spokane, Pasco and Wenatchee</option><option value="columbia">The Columbia River to Portland</option><option value="alaska">The Alaska Railroad</option><option value="gulf">Seattle to Alaska</option><option value="wpy">White Pass &amp; Yukon</option><option value="pge">PGE</option><option value="all">Whole map</option>
+        <optgroup label="British Columbia"><option value="lm">Lower Mainland</option><option value="island">Vancouver Island</option><option value="sound">Victoria and Puget Sound</option><option value="canyon">Fraser Canyon</option><option value="pge">Pacific Great Eastern</option><option value="okanagan">Kamloops and Okanagan</option><option value="kv">Kettle Valley and Kootenays</option><option value="thompson">North Thompson and Yellowhead</option><option value="north">Prince George and Prince Rupert</option><option value="coast">North coast steamers</option></optgroup>
+        <optgroup label="Alaska and the Yukon"><option value="gulf">Seattle to Alaska</option><option value="wpy">White Pass &amp; Yukon</option><option value="alaska">The Alaska Railroad</option></optgroup>
+        <optgroup label="Washington and Oregon"><option value="puget">Seattle, Tacoma and Portland</option><option value="inland">Spokane and the Inland Empire</option><option value="columbia">The Columbia River to Portland</option></optgroup>
+        <optgroup label="The Rockies and Alberta"><option value="rockies">Revelstoke, the Rockies and Calgary</option><option value="trench">Crowsnest, Lethbridge and the Trench</option><option value="calgary">Calgary, Lethbridge and Medicine Hat</option><option value="edmonton">Edmonton, Red Deer and Lloydminster</option><option value="peace">Peace River, Athabasca and Waterways</option></optgroup>
+        <optgroup label="The Prairies and the Midwest"><option value="sask">Saskatchewan</option><option value="regina">Regina, Moose Jaw and Saskatoon</option><option value="manitoba">Winnipeg and Manitoba</option><option value="lakehead">Winnipeg, Rainy River and the Lakehead</option><option value="midwest">Minnesota and the Dakotas</option><option value="chicago">Chicago and the Twin Cities</option></optgroup>
+        <optgroup label="Ontario"><option value="lakes">Lake Superior to Detroit</option><option value="nont">Northern Ontario</option><option value="sont">Southwestern Ontario</option><option value="toronto">Toronto, Hamilton and Niagara</option><option value="ontario">Toronto, Ottawa and Montreal</option></optgroup>
+        <optgroup label="Quebec"><option value="montreal">Montreal</option><option value="quebec">Quebec and the Abitibi</option><option value="gaspe">Quebec City, the Saguenay and Gaspé</option></optgroup>
+        <optgroup label="The Atlantic"><option value="maritimes">The Maritimes</option><option value="nfld">Newfoundland and Labrador</option><option value="atlantic">Atlantic steamers</option></optgroup>
+        <option value="all">Whole map</option>
       </select>
     </div>
   </div>
@@ -618,8 +640,9 @@ function insets() {
   return narrow ? { l: 60, r: 50, t: 200, b: H * 0.34 + cb } : { l: 40, r: 430, t: 420, b: 110 };
 }
 const FAR_K = 0.0009;                                               // pixels per metre below which the map counts as zoomed out (Regina 0.0012 and closer keep everything)
-const VIEWS = { lm: [-123.4, -121.85, 48.99, 49.33], canyon: [-122.1, -121.2, 49.15, 50.45], okanagan: [-121.5, -119.0, 49.85, 50.85], thompson: [-121.0, -117.9, 50.6, 53.1], rockies: [-120.5, -113.9, 50.5, 51.7], kv: [-121.6, -117.2, 48.95, 49.9], trench: [-117.4, -112.7, 48.95, 51.35], north: [-130.5, -118.3, 52.7, 55.4], island: [-125.1, -123.3, 48.4, 49.7], sound: [-124.0, -122.1, 47.4, 49.0], coast: [-132.0, -122.9, 49.2, 55.5], wpy: [-135.8, -134.3, 59.3, 60.9], spokane: [-117.7, -115.8, 47.5, 49.25], peace: [-120.5, -113.2, 53.4, 56.0], calgary: [-115.0, -109.9, 48.95, 52.0], puget: [-123.4, -122.0, 45.45, 48.1], inland: [-121.0, -116.9, 46.0, 48.3], columbia: [-123.0, -118.2, 45.4, 46.3], alaska: [-151.0, -146.5, 59.9, 65.0], gulf: [-152.0, -122.0, 47.4, 61.6], edmonton: [-115.8, -109.9, 51.9, 54.9], sask: [-110.3, -101.2, 48.95, 54.1], regina: [-107.2, -103.8, 50.1, 52.4], manitoba: [-102.6, -96.6, 49.0, 52.4], lakehead: [-97.6, -88.8, 47.5, 50.6], nont: [-90.0, -78.5, 46.0, 51.6], ontario: [-82.2, -74.2, 43.4, 46.9], quebec: [-80.2, -70.8, 45.0, 49.0], maritimes: [-68.5, -59.7, 43.3, 48.2, 'q'], midwest: [-104.0, -92.8, 44.7, 49.2], chicago: [-93.6, -87.4, 41.7, 45.3], lakes: [-94.6, -81.4, 41.9, 49.1, 'q'], waterways: [-118.5, -110.0, 53.4, 57.0],
-                pge: [-123.3, -121.2, 49.7, 53.0], all: null };
+const VIEWS = { lm: [-123.4, -121.85, 48.99, 49.33], island: [-125.1, -123.3, 48.4, 49.7], sound: [-124.0, -122.1, 47.4, 49.0], canyon: [-122.1, -121.2, 49.15, 50.45], pge: [-123.3, -121.2, 49.7, 53.0], okanagan: [-121.5, -119.0, 49.85, 50.85], kv: [-121.6, -117.2, 48.95, 49.9], thompson: [-121.0, -117.9, 50.6, 53.1], north: [-130.5, -118.3, 52.7, 55.4], coast: [-132.0, -122.9, 49.2, 55.5], gulf: [-152.0, -122.0, 47.4, 61.6], wpy: [-135.8, -134.3, 59.3, 60.9], alaska: [-151.0, -146.5, 59.9, 65.0], puget: [-123.4, -122.0, 45.45, 48.1], inland: [-121.0, -115.8, 46.0, 49.25], columbia: [-123.0, -118.2, 45.4, 46.3], rockies: [-120.5, -113.9, 50.5, 51.7], trench: [-117.4, -112.7, 48.95, 51.35], calgary: [-115.0, -109.9, 48.95, 52.0], edmonton: [-115.8, -109.9, 51.9, 54.9], peace: [-120.5, -110.0, 53.4, 57.0], sask: [-110.3, -101.2, 48.95, 54.1], regina: [-107.2, -103.8, 50.1, 52.4], manitoba: [-102.6, -96.6, 49.0, 52.4], lakehead: [-97.6, -88.8, 47.5, 50.6], midwest: [-104.0, -92.8, 44.7, 49.2], chicago: [-93.6, -87.4, 41.7, 45.3], lakes: [-94.6, -81.4, 41.9, 49.1, "q"], nont: [-90.0, -78.5, 46.0, 51.6], sont: [-83.2, -79.0, 42.0, 44.9], toronto: [-80.3, -78.7, 42.8, 44.1], ontario: [-82.2, -74.2, 43.4, 46.9], montreal: [-74.4, -73.1, 45.2, 45.9], quebec: [-80.2, -70.8, 45.0, 49.0], gaspe: [-72.6, -64.0, 46.4, 49.4, "q"], maritimes: [-68.5, -59.7, 43.3, 48.2, "q"], nfld: [-60.6, -52.4, 46.5, 55.7, "q"], atlantic: [-74.5, -52.4, 40.3, 48.0, "q"], all: null };
+// the clock's zone for each view (Brendan, 16 Nov 2026): choosing a view sets the time zone; the whole map leaves it as it is
+const VIEW_TZ = { lm: 0, island: 0, sound: 0, canyon: 0, pge: 0, okanagan: 0, kv: 0, thompson: 0, north: 0, coast: 0, gulf: 0, wpy: 0, alaska: -2, puget: 0, inland: 0, columbia: 0, rockies: 1, trench: 1, calgary: 1, edmonton: 1, peace: 1, sask: 1, regina: 1, manitoba: 2, lakehead: 2, midwest: 2, chicago: 2, lakes: 3, nont: 3, sont: 3, toronto: 3, ontario: 3, montreal: 3, quebec: 3, gaspe: 3, maritimes: 4, nfld: 5.5, atlantic: 4 };
 function fit(v = 'lm') {
   let all = Object.values(ROUTES).flatMap(r => r.pts);
   const b = VIEWS[v];
@@ -1062,7 +1085,48 @@ miniBtn.onclick = () => setMin(!S.min);
 document.querySelector('.masthead').addEventListener('click', () => { if (S.min) setMin(false); });
 document.getElementById('panelHead').addEventListener('click', e => { if (S.min && !e.target.closest('button')) setMin(false); });
 const viewSel = document.getElementById('view');
-viewSel.onchange = () => { S.follow = false; fit(viewSel.value); panelKey = ''; };
+viewSel.onchange = () => { S.follow = false; fit(viewSel.value); if (VIEW_TZ[viewSel.value] !== undefined) setTz(VIEW_TZ[viewSel.value]); try { localStorage.setItem('dmr-view', viewSel.value); } catch (e) {} panelKey = ''; };
+// search (Brendan, 16 Nov 2026): stations, trains by number or name, ships by name
+const qIn = document.getElementById('q'), qOut = document.getElementById('found');
+const fold = x => String(x || '').normalize('NFKD').replace(/[̀-ͯ]/g, '').toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim();
+let qHits = [], qOn = 0;
+function qRun() {
+  const q = fold(qIn.value); qHits = []; qOn = 0;
+  if (q.length < 2) { qOut.hidden = true; return; }
+  const rank = n => n === q ? 0 : n.startsWith(q) ? 1 : (' ' + n).includes(' ' + q) ? 2 : n.includes(q) ? 3 : 9;
+  const stn = [], seen = new Set();
+  ST.forEach((s, i) => { const r = rank(fold(s.name)); if (r > 3) return; const k = s.name + '|' + Math.round(s.x / 3000) + '|' + Math.round(s.y / 3000); if (seen.has(k)) return; seen.add(k);
+    stn.push({ r: r + (s.principal ? 0 : .5), kind: 'station', i, a: s.name, b: (LINE_OF[s.line]?.water ? 'Steamer landing · ' : 'Station · ') + (LINE_OF[s.line]?.label || '') }); });
+  const trn = [], num = q.replace(/^(no|train|car) /, '');
+  const got = new Set();
+  for (const t of [...TRIPS].sort((x, y) => (x.carry || 0) - (y.carry || 0) || x.start - y.start)) {   // a train in several pieces, or carried over midnight, is listed once
+    const r = Math.min(fold(t.num) === num ? 0 : 9, t.water ? rank(fold(t.vessel || t.num)) : 9, t.label && !t.water ? rank(fold(t.label)) + .2 : 9, fold(t.name) === q ? 0 : 9); if (r > 3.5) continue;
+    const key = t.id.replace(/~+$/, ''), key2 = t.name + '|' + (t.label || '') + '|' + fromName(t) + '|' + toName(t) + '|' + t.svc; if (got.has(key) || got.has(key2)) continue; got.add(key); got.add(key2);
+    trn.push({ r, kind: 'train', id: t.id, a: (t.water ? (t.vessel || t.name) : t.name) + (t.label && !t.water ? ' · ' + t.label : ''), b: `${fromName(t)} to ${toName(t)} · ${hm(t.start).txt}${hm(t.start).pm ? ' p.m.' : ' a.m.'}` }); }
+  const by = (x, y) => x.r - y.r || x.a.localeCompare(y.a);
+  qHits = [...stn.sort(by).slice(0, 7), ...trn.sort(by).slice(0, 9)];
+  qOut.innerHTML = qHits.length ? qHits.map((h, k) => `<button type="button" data-k="${k}"${k === 0 ? ' class="on"' : ''}>${esc(h.a)}<small>${esc(h.b)}</small></button>`).join('') : '<div class="none">Nothing found.</div>';
+  qOut.hidden = false;
+}
+function qGo(h) {
+  if (!h) return;
+  if (h.kind === 'station') { const s = ST[h.i]; S.sel = { kind: 'station', i: h.i }; S.follow = false; if (view.k < 0.03) view.k = 0.035; view.cx = s.x; view.cy = s.y; }
+  else { const t = TRIPS.find(x => x.id === h.id); if (!t) return;
+    if (!activeTrips(S.day).includes(t)) { const d = Object.keys(DAYI).find(d => activeTrips(d).includes(t)); if (d) { S.day = d; daySel.value = d; } }
+    if (S.T < t.start || S.T > t.end) S.T = Math.min(97200, Math.max(10800, t.start + 60));       // not out now: go to when it leaves
+    S.sel = { kind: 'train', id: t.id }; S.follow = true; if (view.k < 0.004) view.k = 0.006; }
+  panelKey = ''; qOut.hidden = true; qIn.value = ''; qIn.blur(); if (S.min && W > 760) setMin(false);
+}
+qIn.addEventListener('input', qRun);
+qIn.addEventListener('focus', () => { if (qIn.value) qRun(); });
+qIn.addEventListener('keydown', e => {
+  if (e.key === 'Enter') { e.preventDefault(); qGo(qHits[qOn]); }
+  else if (e.key === 'Escape') { qOut.hidden = true; qIn.blur(); }
+  else if (e.key === 'ArrowDown' || e.key === 'ArrowUp') { e.preventDefault(); if (!qHits.length) return; qOn = (qOn + (e.key === 'ArrowDown' ? 1 : qHits.length - 1)) % qHits.length;
+    [...qOut.children].forEach((b, k) => b.classList.toggle('on', k === qOn)); qOut.children[qOn]?.scrollIntoView({ block: 'nearest' }); }
+});
+qOut.addEventListener('pointerdown', e => { const b = e.target.closest('button'); if (b) { e.preventDefault(); qGo(qHits[+b.dataset.k]); } });
+document.addEventListener('pointerdown', e => { if (!e.target.closest('.find')) qOut.hidden = true; });
 document.addEventListener('keydown', e => {
   if (e.target.closest('input,select')) return;
   if (e.code === 'Space') { e.preventDefault(); S.playing = !S.playing; syncControls(); }
@@ -1150,7 +1214,8 @@ function start(saved) {
   boot(saved);
   let _tz = S.tz; try { const v = localStorage.getItem('dmr-tz'); if (v !== null && !isNaN(+v)) _tz = +v; } catch (e) {}
   setTz(_tz || 0);
-  resize(); setMin(S.min ?? (W <= 760), false); fit();          // on a narrow screen the boxes start minimised
+  try { const v = localStorage.getItem('dmr-view'); if (v && v in VIEWS) viewSel.value = v; } catch (e) {}   // the view last chosen
+  resize(); setMin(S.min ?? (W <= 760), false); fit(viewSel.value);          // on a narrow screen the boxes start minimised
   new ResizeObserver(() => { const k0 = view.k; resize(); if (!S.sel) fit(viewSel.value); }).observe(cv);
   syncControls();
   requestAnimationFrame(t => { last = t; frame(t); });

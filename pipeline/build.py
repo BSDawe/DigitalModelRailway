@@ -130,6 +130,8 @@ def finish(state):
     print('  split_stops:', ' '.join(split_stops.apply(viz, gt)))
     unused = merge_stations.apply(viz, gt, merge_stations.MERGE_AFTER)          # joint stations whose ids split_stops gives (Rosedale, Alta.)
     if unused: print('  merge_stations (after split): no such stations', unused)
+    import names                                                       # one spelling for one place (16 November 2026)
+    print('  names:', names.apply(viz, gt), 'stations respelled')
     import stubs                                                       # stations off the track: stop beside it, no out-and-back stub (1 November 2026)
     _st = stubs.apply(viz, gt); print(f'  stubs: {len(_st)} cut;', '; '.join(x for x in _st if int(x.rsplit(' ', 2)[1]) > 250))
     import real_ends                                                   # where trains that run off the map really start and end
@@ -144,6 +146,9 @@ def finish(state):
     if out.returncode: sys.exit('make_page failed:\n' + out.stderr[-800:])
     site = subprocess.run([sys.executable, 'make_site.py'], capture_output=True, text=True)    # the hosted site: page + data files (GitHub Pages)
     if site.returncode: sys.exit('make_site failed:\n' + site.stderr[-800:])
+    sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), 'tools')); import check_speeds   # standing check (16 November 2026)
+    _h = check_speeds.hops(viz)
+    print(f"  check_speeds: {len(_h)} impossible hops" + ''.join(f"\n    !! {e['line']} {e['a']} - {e['b']}: {e['miles']} mi in {sorted(e['mins'])} min ({', '.join(sorted(e['trains'])[:4])})" for e in _h))
     n = {fn: len(l) - 1 for fn, l in gt.items()}
     print(f"assembled: {len(viz.get('lines', []))} lines on the page; GTFS {n.get('routes.txt')} routes, {n.get('trips.txt')} trips, {n.get('stops.txt')} stops; {out.stdout.strip()}; {site.stdout.strip()}")
 

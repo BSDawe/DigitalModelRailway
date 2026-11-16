@@ -2,7 +2,7 @@
 
 One list for the Digital Model Railway: questions for Brendan, material he is to supply, and work for Claude. It merges OPEN_QUESTIONS.md with the TO DO lists that were kept in STATE.md (the last of them: "TO DO (1 November 2026)"), as Brendan asked on 9 Nov 2026.
 Claude adds items as they come up. When one is answered or done, it moves to "Done and answered" with the date. Each open item says what the build does in the meantime. Version tags (V143) say when an item was raised.
-Last updated 11 November 2026 (Version 166).
+Last updated 16 November 2026 (Version 176).
 
 ## Decisions for Brendan
 - [ ] Fredericton Union Station (CN): Brendan's item, 10 Nov 2026. To be taken up; CN's Fredericton is now the Intercolonial station (V161). (V162)
@@ -110,6 +110,12 @@ Maritime tables where the traced line differs from the printed miles by 1 mi and
 - [ ] Interurban train icon: Brendan is not satisfied; revisit later. (23 Oct)
 
 ## Remaining 1948 services (list of 11 Nov 2026)
+- [ ] Times to check against the scans (tools/check_speeds.py, V176): CP M253 Wickham 7.18 p.m. - Tourvilles f7.22 (5.9 mi; on_cp_t019.csv);
+  MC 364 St. Thomas lv 11.28 p.m. - Aylmer f11.33 (10.7 mi; on_mc_t006.csv); CN 32 Luceville 3.20 p.m. - Mont Joli ar 3.25 (8.2 mi; on_cn_t001.csv).
+- [ ] Saskatchewan's clock in the view menu: set to Mountain (CP changed at Broadview in 1948, Claude's reading); Brendan to confirm, also Lakehead (Central).
+- [ ] Ideas from the 16 Nov 2026 review, not taken up yet: side panels scoped to the view (legend, next departures, B.C. Electric list); station
+  boards in the station's own time and opening at the next departure; label overlaps (Montreal terminals, Toronto waterfront, Vancouver steamers);
+  shareable links (view, day, time, selection in the address; about 40 lines); ship schedule edits without the 6 1/2-minute lane rebuild.
 - [ ] Toronto - Hamilton - Buffalo pool trains (CP - TH&B - NYC) as one train in TH&B livery (Brendan, 16 Nov 2026: "the logical 'owner' of the train
   is the TH&B as the joint subsidiary ... run through in TH&B livery with notes as to their CP and NYC numbers"). Now: CP Toronto - Hamilton
   (721, 741, 801, 821 south; 712, 732, 752, 792, 832 north; on_cpthb_t056.csv) and TH&B Hamilton - Fort Erie - the boundary (372, 374, 380, 382;

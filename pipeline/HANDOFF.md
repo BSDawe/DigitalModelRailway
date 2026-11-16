@@ -1,10 +1,11 @@
 # Digital Model Railway: handover for a new chat (8 November 2026)
 
-Read this first, then STATE.md: "Starting a fresh chat", "Build", "Conventions Brendan has set", "Checks" and the "TO DO (1 November 2026)" list. The
-version sections at the end of STATE.md (Versions 130-142) hold the details of recent work. Everything else in STATE.md is reference: search it, don't read it through.
+Read this first, then STATE.md (about 350 lines: the current state and the standing rules; read "Starting a fresh chat", "Build", "Conventions Brendan has set",
+"Checks", "Recent versions" and "After each version") and TODO.md (the one list of open work). The version-by-version history and the old plans are in CHANGELOG.md:
+search it, don't read it through.
 
 ## Where things stand
-- Version 175 is published (https://bsdawe.github.io/DigitalModelRailway/): 587 lines, 4159 trips, 6838 stops, 57 agencies. CN's Canadian timetables are all in; CP Maritimes: the DAR and CP New Brunswick with the line across Maine (V159).
+- Version 176 is published (https://bsdawe.github.io/DigitalModelRailway/): 587 lines, 4159 trips, 6838 stops, 57 agencies. CN's Canadian timetables are all in; CP Maritimes: the DAR and CP New Brunswick with the line across Maine (V159).
 - check_gtfs reports one problem, which is known and accepted: CP-14-SKJCP13 at Minneapolis. The 1947 Soo Line arrival (6.30 a.m.) is after C&NW 404 leaves (6.25).
 - A leftover branch, `wip-cdgb`, is on GitHub (the proxy refused to delete it). It is merged; Brendan can delete it.
 
@@ -31,8 +32,9 @@ version sections at the end of STATE.md (Versions 130-142) hold the details of r
   - while a build is running, commit only source edits, never half-written `parts/`;
   - don't write files into traces/ or the timetable CSVs during a build;
   - unfinished work that must be pushed goes on a side branch.
-- After each version: add a "## Version N" section to STATE.md and update its top line. Then mirror it to the claude.ai project:
-  `Projects project_write(path='claude/STATE.md', local_path=<repo>/pipeline/STATE.md)` (and this file as `claude/HANDOFF.md`).
+- After each version: follow "After each version" in STATE.md (a "## Version N" section at the end of CHANGELOG.md; STATE.md's top line and "Recent versions").
+  Then mirror to the claude.ai project: `Projects project_write(path='claude/STATE.md', local_path=<repo>/pipeline/STATE.md)` (and this file as
+  `claude/HANDOFF.md`, TODO.md as `claude/TODO.md`; CHANGELOG.md is not mirrored).
 - If a stop hook says there are "unpushed commits" after a push, refresh the remote ref: `git fetch origin '+refs/heads/main:refs/remotes/origin/main'`.
 - Run one step only:
   `python3 -c "import build; build.stale_reason=lambda s,p,r: 'asked' if s['name']=='lo_build' else None; build.main([])"`
@@ -69,6 +71,5 @@ version sections at the end of STATE.md (Versions 130-142) hold the details of r
   - the Prescott - Ogdensburg car ferry (CP Car & Passenger Transfer Co.);
   - the CN Peebles - Handsworth intermediate stops;
   - the company colours for C.D.&G.B.;
-  - the "TO CHECK" items in the STATE.md to-do list;
-  - the joint-station review and the expansion-joint pauses (older to-dos in STATE.md).
+  - the "TO CHECK" items, the joint-station review and the expansion-joint pauses (older to-dos, now in CHANGELOG.md).
 - `claude/incoming-sk-nrwn.md` in the project is an old (10 October) note and is superseded by STATE.md.

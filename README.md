@@ -1,15 +1,17 @@
 # The Digital Model Railway
 
 An animated map of passenger trains and steamships running to their timetables of the summer of 1948 (approximately the week of 5 July 1948),
-from British Columbia and Alaska to Washington, the Prairies, the Lakehead and the American Midwest, plus a GTFS feed of the same services.
+from British Columbia, Alaska and Washington across the Prairies, the American Midwest, Ontario and Quebec to the Maritimes and Newfoundland,
+plus a GTFS feed of the same services.
 Inspired by [TRAVIC](https://tracker.geops.ch/).
 
 The map is published from this repository to GitHub Pages; the GTFS feed is at `gtfs.zip` next to the page.
 
 ## How it is built
 
-Everything lives in [`pipeline/`](pipeline/). Read [`pipeline/STATE.md`](pipeline/STATE.md) first: it is the working record of the project
-(sources, rules, decisions and the list of open fixes).
+Everything lives in [`pipeline/`](pipeline/). Read [`pipeline/STATE.md`](pipeline/STATE.md) first: the current state and the standing rules
+(sources, conventions, how to build and check). The version-by-version history is in [`pipeline/CHANGELOG.md`](pipeline/CHANGELOG.md) and the open
+work in [`pipeline/TODO.md`](pipeline/TODO.md).
 
 - **Timetables** are transcribed by hand from the printed timetables into CSV files (`ab_*.csv`, `sk_*.csv`, `wa_*.csv`, …), one per table.
   A wrong time is fixed by editing its CSV.
