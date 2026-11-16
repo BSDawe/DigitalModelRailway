@@ -150,3 +150,6 @@ Railway Boats
 
 ## July 11 (Sunday)
 - No Daily News published (Brendan).
+
+## July 13 (Tuesday)
+- No railway-boats report. Newfoundland Railway advertisement: "tomorrow (Wednesday [July 14]) the local express will make connection at Lewisporte with S.S. Springdale for south side of Notre Dame Bay."
