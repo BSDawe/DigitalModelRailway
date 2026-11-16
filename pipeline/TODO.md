@@ -110,6 +110,12 @@ Maritime tables where the traced line differs from the printed miles by 1 mi and
 - [ ] Interurban train icon: Brendan is not satisfied; revisit later. (23 Oct)
 
 ## Remaining 1948 services (list of 11 Nov 2026)
+- [ ] Toronto - Hamilton - Buffalo pool trains (CP - TH&B - NYC) as one train in TH&B livery (Brendan, 16 Nov 2026: "the logical 'owner' of the train
+  is the TH&B as the joint subsidiary ... run through in TH&B livery with notes as to their CP and NYC numbers"). Now: CP Toronto - Hamilton
+  (721, 741, 801, 821 south; 712, 732, 752, 792, 832 north; on_cpthb_t056.csv) and TH&B Hamilton - Fort Erie - the boundary (372, 374, 380, 382;
+  371, 73, 375, 379, 383; onthb056) are separate trips, not joined. To do: join them Toronto - boundary, TH&B livery and agency, the TH&B number
+  as the train number, the CP number (and the NYC number, from the Official Guide's NYC Buffalo - Toronto table: to look up) in the note. 76 / 73
+  (Hamilton - Buffalo gas-electric) stay TH&B only. Check the Toronto - Hamilton CP locals that are not through trains stay CP.
 - [ ] CN Cartierville branch (Montreal): not in the Delamere Quebec file, so not in the model (Brendan, 16 Nov 2026). A 1950 Central Station departure
   list (Brendan's notes) has ten Cartierville short trains each way and St. Eustache trains "via Cartierville"; the April 1948 Official Guide does not show
   them, and the June 1948 Montreal District employee timetable proves nothing: it begins the tunnel lines at Val Royal and Gohier (Central - Mount
