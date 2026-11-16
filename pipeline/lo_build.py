@@ -525,10 +525,10 @@ nf_voyage('nfnr', "Corner Brook – Strait of Belle Isle – St. John's (S.S. No
   ["to St. John's", ''])
 # S.S. Burgeo, South Coast service, westbound: fogbound at St. Lawrence (July 2 - 3); left Jersey Harbour 9.20 a.m. Monday July 5; left Cape La Hune 2.45 p.m. Tuesday 6;
 # at Port aux Basques for the Saturday express connection (she starts back after the week).
-_bu = nfseq('south_coast', frm='St. Lawrence')
-nf_voyage('nfbur', 'South Coast, westbound to Port aux Basques (S.S. Burgeo)', _bu,
-  [('NFR-BURGEO-W', 'Burgeo', {0: (None, -30), _ix(_bu, 'Jersey Hr.'): (None, 9 + 20 / 60), _ix(_bu, 'Cape La Hune'): (None, D_ + 14.75)},
-    'S.S. Burgeo, South Coast service, westbound: fogbound at St. Lawrence July 2 - 3 (leaving Saturday 3 estimated); left Jersey Harbour 9.20 a.m. Monday July 5; left Cape La Hune 2.45 p.m. Tuesday 6; to Port aux Basques, for the connection with Saturday\'s express.')],
+_bu = nfseq('south_coast')   # the whole run from Argentia (Brendan, 15 Nov 2026: include the run's ports not reached in the week)
+nf_voyage('nfbur', 'South Coast, Argentia – Port aux Basques (S.S. Burgeo)', _bu,
+  [('NFR-BURGEO-W', 'Burgeo', {_ix(_bu, 'St. Lawrence'): (-66, -30), _ix(_bu, 'Jersey Hr.'): (None, 9 + 20 / 60), _ix(_bu, 'Cape La Hune'): (None, D_ + 14.75)},
+    'S.S. Burgeo, South Coast service, westbound: from Argentia (about Thursday July 1, estimated); fogbound at St. Lawrence July 2 - 3 (leaving Saturday 3 estimated); left Jersey Harbour 9.20 a.m. Monday July 5; left Cape La Hune 2.45 p.m. Tuesday 6; to Port aux Basques, for the connection with Saturday\'s express.')],
   ['to Port aux Basques', ''])
 # S.S. Bar Haven, Placentia Bay, Bay Run: the Monday July 5 morning train to Argentia connected; left Sound Island 11.50 a.m. Tuesday 6, outward; back to Argentia (estimated).
 _bh = nfseq('placentia_bay')
