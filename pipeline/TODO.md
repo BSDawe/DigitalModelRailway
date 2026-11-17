@@ -2,7 +2,7 @@
 
 One list for the Digital Model Railway: questions for Brendan, material he is to supply, and work for Claude. It merges OPEN_QUESTIONS.md with the TO DO lists that were kept in STATE.md (the last of them: "TO DO (1 November 2026)"), as Brendan asked on 9 Nov 2026.
 Claude adds items as they come up. When one is answered or done, it moves to "Done and answered" with the date. Each open item says what the build does in the meantime. Version tags (V143) say when an item was raised.
-Last updated 16 November 2026 (Version 177).
+Last updated 17 November 2026 (Version 179).
 
 ## Decisions for Brendan
 - [ ] Fredericton Union Station (CN): Brendan's item, 10 Nov 2026. To be taken up; CN's Fredericton is now the Intercolonial station (V161). (V162)
@@ -144,7 +144,7 @@ Maritime tables where the traced line differs from the printed miles by 1 mi and
   Corner Brook, Monday, after the 5 p.m. local express); S.S. Springdale, Green Bay service (from Lewisporte, after the Saturday local express);
   S.S. Kyle, Labrador service to Hopedale (St. John's, Dry Dock Wharf, Saturday 4 p.m.); M.V. Codroy, Corner Brook - Battle Harbour (freight).
   Not services: S.S. Tudor Prince (freighter, New York - St. John's - Corner Brook).
-- [ ] Newfoundland Railway summer schedule. Reference: CN Newfoundland folder N No. 1, May 8, 1949 (Brendan, 13 Nov 2026; https://rollymartincountry.blogspot.com/2022/02/cnr-1949-newfoundland-public-timetable.html):
+- [x] Newfoundland Railway summer schedule (done in Version 179). Reference: CN Newfoundland folder N No. 1, May 8, 1949 (Brendan, 13 Nov 2026; https://rollymartincountry.blogspot.com/2022/02/cnr-1949-newfoundland-public-timetable.html):
   its pattern matches the 1948 notices (15 Mon / Wed / Sat 5 p.m., 1 Tue / Thu 5 p.m., 3 Overland Limited Sun 10 a.m., M5 Argentia Mon / Wed / Fri 9 a.m.);
   summer Newfoundland time = Atlantic + 1.5 h. Not in 1949: the Wednesday 9 p.m. train for Bonavista (sleeper Trinity) of 7 July 1948. The folder also lists
   the coastal steamer routes (ports and mileages, no times). July 1948 notices: Sat 5 p.m. local express St. John's - Port aux Basques; Sun 10 a.m.

@@ -2685,3 +2685,20 @@ A review of the whole project (Brendan: "have a peek through ... suggest improve
 - Brendan: the 1948 C&NW timetable has the train arriving Minneapolis 6.10 a.m., leaving 6.25. The Soo leg (sk_cp_t108s.csv) had the 1947 Soo
   No. 4's 6.30 a.m. arrival, after C&NW 404's 6.25 departure: the feed's one known problem. Arrival now 6.10a; check_gtfs reports 0 problems.
   The other Soo times are still the September 1947 table's.
+
+## Version 179 (17 November 2026): the Newfoundland Railway on its summer schedule
+- Brendan: rebuild the Newfoundland timetable from the 1948 table, the newspaper clippings and the 1949 summer schedule; trains known only from
+  the 1948 notices estimated from the timetables, "similar to the standard we've been using for steamships".
+- The five on_nfr files are now written by tools/nfr_1949.py (see its heading): times, stations and miles of the CN folder "Lines in
+  Newfoundland", May 8, 1949 (summer); trains and days of the Newfoundland Railway notices, The Daily News, 5 - 9 July 1948 (local express No. 15
+  Mon. and Wed. to Corner Brook, Sat. through to Port aux Basques; foreign express No. 1 Tue. and Thu.; the Overland Limited, No. 3, Sundays;
+  mixed No. 5 to Argentia Mon., Wed., Fri.). Eastbound Nos. 2, 14, 16 and the branch mixed trains: the 1949 folder only. The Wednesday 9 p.m.
+  Bonavista train (sleeper Trinity) is not in 1949: estimated to Clarenville on No. 15's running times, then taken to be M27. Flag stops with no
+  printed time: put in between by the miles ('~f'). New time zone code NS (Newfoundland summer time, Pacific + 5 1/2 h).
+- Was: the Official Guide's schedule of January 11, 1948, replaced on May 9, 1948.
+- More stations (77 on the main line, from 39), the branches' sidings, Argentia via Placentia. Stations new from the folder that the place
+  files have elsewhere (Riverside, Ville Marie, Summerville, Milton) are placed by mileage.
+- Connections: the Cabot Strait on the folder's summer times (North Sydney 7.30 p.m. Tue., Thu., Sat.; Port aux Basques 9.00 p.m. Wed., Fri.,
+  9.30 a.m. Mon.); the Springdale from Lewisporte at 8 a.m. after the express connections (Sun. 4, Thu. 8, Sun. 11); the Burgeo's eastbound sailing
+  from Port aux Basques after Saturday's express (11 p.m. Sun. 11, estimated; new line nfbue).
+- Scans in the private repo: scans/nfld1949 (the folder), scans/nfld1948_daily_news (the notices).

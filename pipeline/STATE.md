@@ -1,7 +1,7 @@
 # The Digital Model Railway — project state
 
 Read this first. It is meant to be enough to start a short, single-task chat without replaying the project's history.
-Last updated 16 November 2026 (Version 178). This file is the current state and the standing rules; the version-by-version history is in CHANGELOG.md.
+Last updated 17 November 2026 (Version 179). This file is the current state and the standing rules; the version-by-version history is in CHANGELOG.md.
 
 ## What this is
 
@@ -275,6 +275,8 @@ lat, mile, lmile?, principal, gid, note, xy?, slow?}], dirLabels, segments [{own
   (`d0` on a trip: the day of the week it starts, which may be before Monday; single-day service codes). (V169)
 - **Ships**: a ship is a passenger service if it was advertised for passengers, including passenger-carrying freighters (12 passengers);
   freighters not advertised that way are left out. No need to search for more of them. (V169 - V170)
+- **The Newfoundland Railway** runs on the CN summer folder of May 1949 with the days and trains of the July 1948 notices; trains known only from
+  the notices are estimated from the timetables (tools/nfr_1949.py). (V179)
 - **Ships go by their schedules.** Only the Newfoundland Railway coastal boats, which had none, are drawn from reported positions (The Daily
   News, St. John's; `nfld/steamship_movements.md`), with the other calls put in between by distance. (V172)
 - **Ocean liners** (to do) run from their Canadian port to the edge of the water file and then disappear; arrivals appear there. The same is
@@ -321,6 +323,7 @@ After an accepted build: `cp viz_data.json tools/.baseline_viz.json`.
 
 ## Recent versions (one line each; the detail is in CHANGELOG.md)
 
+- 179: the Newfoundland Railway on its summer schedule (May 1949 folder times, July 1948 notice days; tools/nfr_1949.py).
 - 178: CP No. 14 arrives Minneapolis 6.10 a.m. (1948 C&NW timetable); the feed check is clean.
 - 177: trips setting out between midnight and 3 a.m. Pacific shown the night before (the Bar Haven; 152 trips in all).
 - 176 (16 Nov): views grouped and given time zones, new views (Montreal, Toronto, Southwestern Ontario, Gaspe, Newfoundland, Atlantic steamers);
