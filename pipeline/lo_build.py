@@ -31,6 +31,7 @@ ESL_BOX = (-71.10, -65.90, 42.25, 43.95)        # the Gulf of Maine: Yarmouth - 
 BOF_BOX = (-66.20, -65.60, 44.55, 45.32)        # the Bay of Fundy: Saint John - Digby (C.P.S.S. Princess Helene)
 ATL_BOX = (-74.30, -52.40, 40.30, 48.00)        # the Atlantic: New York - Halifax - St. John's (Furness Red Cross Line), St. Pierre (Blue Peter Steamships)
 NFL_BOX = (-60.60, -52.40, 46.40, 55.80)        # Newfoundland and Labrador: the Newfoundland Railway coastal boats
+GULF_BOX = (-70.00, -55.00, 45.60, 52.60)       # the Gulf of St. Lawrence and the Strait of Belle Isle: the ocean liners (17 Nov 2026)
 
 # ---------------- water: the basemap tiles (page projection) back to lon/lat, and water_east.json
 _idx = json.load(open(os.path.join(ROOT, 'basemap', 'tiles', 'index.json'))); _PJ = _idx['proj']
@@ -44,7 +45,7 @@ def page_ll(x, y):
     X, Y = x + _ox, y + _oy; rho = math.copysign(math.hypot(X, Y), _n); th = math.atan2(X, Y)
     return (th / _n + _l0) / _r, (2 * math.atan((_R * _F / rho) ** (1 / _n)) - math.pi / 2) / _r
 _z = _idx['zmax']; _s = _idx['side'] / 2 ** _z; _polys = []
-for _B in (BOX, PAB_BOX, MUSK_BOX, CSL_BOX, SAG_BOX, NFS_BOX, ESL_BOX, BOF_BOX, ATL_BOX, NFL_BOX):
+for _B in (BOX, PAB_BOX, MUSK_BOX, CSL_BOX, SAG_BOX, NFS_BOX, ESL_BOX, BOF_BOX, ATL_BOX, NFL_BOX, GULF_BOX):
   _xs, _ys = zip(*[page_xy(lon, lat) for lon in _B[:2] for lat in _B[2:]])
   for tx in range(int((min(_xs) - _idx['origin'][0]) // _s), int((max(_xs) - _idx['origin'][0]) // _s) + 1):
       for ty in range(int((min(_ys) - _idx['origin'][1]) // _s), int((max(_ys) - _idx['origin'][1]) // _s) + 1):
@@ -418,22 +419,31 @@ mkline('frc', "New York – Halifax – St. John's (Furness Red Cross Line)", fr
        "Furness Red Cross Line, New York - Halifax - St. John's: advertisements and shipping news, The Daily News, St. John's, 2 - 5 July 1948 (Brendan); times estimated", 'frc')
 # Fort Amherst, New York - Bermuda - New York between her July 5 arrival and July 17 sailing (Brendan, 13 Nov 2026: "Bermuda can be on the map"; The Daily News, July 3
 # and 6: "en route Bermuda"). Dates and times ESTIMATED (Claude): about 12.5 knots; Bermuda on Atlantic standard time (= New York daylight time).
-BDA = port('Hamilton, Bermuda', -64.7840, 32.2905, 'Hamilton harbour, Front Street, Bermuda (the point APPROXIMATE, Claude).')
-def open_sea(seq, step=0.05):   # straight courses between points (the basemap has no open-ocean water south of the shelf), densified
+# Brendan, 15 Nov 2026: ocean ships "sail to the edge of the water file and then disappear" (the Bermuda trip cut there, 17 Nov 2026).
+def open_sea(seq, step=0.05):   # straight courses between points (open sea beyond the lanes), densified
     out = [seq[0]]
     for (a, b), (c, d) in zip(seq, seq[1:]):
         n = max(1, int(math.hypot(c - a, d - b) / step)); out += [(a + (c - a) * k / n, b + (d - b) * k / n) for k in range(1, n + 1)]
     return out
-_bp = lane((NYP['lon'], NYP['lat']), (-73.80, 40.45), 500, 2000.0) + open_sea([(-73.80, 40.45), (-64.62, 32.43), (-64.66, 32.39), (-64.74, 32.355), (-64.80, 32.325), (BDA['lon'], BDA['lat'])])[1:]
-bd_route = chain(_bp)
-bd_st = [dict(name=p['name'], chain=bd_route[i][2], lon=p['lon'], lat=p['lat'], mile=round(bd_route[i][2] / MI, 1), lmile=round(bd_route[i][2] / MI, 1), principal=True, kml='',
-              gid=p['gid'], xy=[p['lon'], p['lat']], note=p['note']) for p, i in ((NYP, 0), (BDA, len(bd_route) - 1))]
+def gmi(route, i, j):   # ground miles along a route between two point indexes (the chain is in the map projection, which stretches)
+    return sum(3958.8 * math.hypot(math.radians(q[0] - p[0]) * math.cos(math.radians((p[1] + q[1]) / 2)), math.radians(q[1] - p[1])) for p, q in zip(route[i:j], route[i + 1:j + 1]))
+def edge_line(ports, out, res=500, shore=8000.0, edge_name='At sea'):
+    """ports (dicts, and waypoints) by lanes, then straight out to the edge of the water layer at `out` (found from the basemap, Claude):
+    the stations are the ports and the edge point, last"""
+    route, st = water_route(ports, res, shore)
+    pts = [(p[0], p[1]) for p in route] + open_sea([(route[-1][0], route[-1][1]), out])[1:]
+    route = chain(pts); last = len(route) - 1
+    for s_ in st: s_['chain'] = route[min(range(len(route)), key=lambda i: abs(route[i][0] - s_['lon']) + abs(route[i][1] - s_['lat']))][2]
+    st.append(dict(name=edge_name, chain=route[last][2], lon=out[0], lat=out[1], mile=round(route[last][2] / MI, 1), lmile=round(route[last][2] / MI, 1), principal=False, kml='',
+                   gid=gid(edge_name + f' {out[0]:.1f} {out[1]:.1f}'), xy=list(out), note=edge_name + ': the edge of the map\'s water; the ship sails on beyond it (or comes in from beyond it).'))
+    return route, st
+def ri(route, st, k): return min(range(len(route)), key=lambda i: abs(route[i][2] - st[k]['chain']))
+EDGE_BDA = (-68.99, 36.25)      # the edge of the water south-east of New York, on the course for Bermuda
+bd_route, bd_st = edge_line([NYP, (-73.80, 40.45)], EDGE_BDA, edge_name='At sea (for Bermuda)')
+_bd_h = gmi(bd_route, 0, len(bd_route) - 1) / 14.4   # 12.5 knots
 FB = [dict(id='FRC-AMHERST-BDA-S', d0=2, num='Fort Amherst', name='Furness Red Cross Line', svc=_dsvc(2), dir=0, vessel='Fort Amherst',
-           stops=[[0, 15 * H - PAC_NY, 15 * H - PAC_NY, 0], [1, 2 * D + 21 * H - PAC_A, 2 * D + 21 * H - PAC_A, 0]],
-           note='S.S. Fort Amherst: New York Wednesday July 7 to Bermuda (Friday 9). Dates ESTIMATED: The Daily News gives only "en route Bermuda", back at New York to sail July 17 for Halifax and St. John\'s.' + FRN),
-      dict(id='FRC-AMHERST-BDA-N', d0=6, num='Fort Amherst', name='Furness Red Cross Line', svc=_dsvc(6), dir=1, vessel='Fort Amherst',
-           stops=[[1, 10 * H - PAC_A, 10 * H - PAC_A, 0], [0, 2 * D + 16 * H - PAC_NY, 2 * D + 16 * H - PAC_NY, 0]],
-           note='S.S. Fort Amherst: Bermuda Sunday July 11 to New York (Tuesday 13); sails New York July 17 for Halifax and St. John\'s. Dates ESTIMATED.' + FRN)]
+           stops=[[0, 15 * H - PAC_NY, 15 * H - PAC_NY, 0], [1, 15 * H - PAC_NY + round(_bd_h * H), 15 * H - PAC_NY + round(_bd_h * H), 0]],
+           note='S.S. Fort Amherst: New York Wednesday July 7 for Bermuda, out to the edge of the map\'s water. Dates ESTIMATED: The Daily News gives only "en route Bermuda", back at New York to sail July 17 for Halifax and St. John\'s.' + FRN)]
 mkline('frb', 'New York – Bermuda (Furness Red Cross Line, Fort Amherst)', bd_route, bd_st, FB, ['to Bermuda', 'to New York'],
        "Furness Red Cross Line, S.S. Fort Amherst: shipping news, The Daily News, St. John's, 3 - 6 July 1948 (Brendan); dates and times estimated", 'frc')
 BPN = (' M.V. Atlantic Charter, Blue Peter Steamships Ltd. (Montreal Shipping Co.), St. John\'s - St. Pierre - North Sydney - Halifax, passengers and freight;'
@@ -447,6 +457,89 @@ BP = [dict(id='BPS-CHARTER-N', d0=-2, num='Atlantic Charter', name='Blue Peter S
            note='M.V. Atlantic Charter: St. John\'s Friday July 9 for St. Pierre (Saturday 10) and Halifax (Tuesday 13; leaves Halifax July 13 for North Sydney and St. John\'s, due July 19).' + BPN)]
 mkline('bps', "St. John's – St. Pierre – North Sydney – Halifax (Blue Peter Steamships)", bp_route, bp_st, BP, ['to Halifax', "to St. John's"],
        "Blue Peter Steamships, M.V. Atlantic Charter: advertisement, The Daily News, St. John's, July 1948 (Brendan); times estimated", 'bps')
+
+# ---------------- Ocean liners, week of 5 July 1948 (Brendan, 15 - 17 Nov 2026): transatlantic passenger ships, and passenger-carrying ships along the coast,
+# calling at Canadian ports in the week; drawn from the port out to the edge of the map's water (or in from it) and gone beyond. Scheduled dates:
+# the CP Montreal - Liverpool summer 1948 sailing list; the Pier 21 ship arrival database (scheduled arrival dates, marine/pier21_arrivals_1948.csv);
+# Foreign Trade, 26 June 1948 (marine/FOREIGN_TRADE_1948.md); The Daily News, St. John's. Hours not printed and the times at the edge: ESTIMATED from
+# each ship's service speed (Claude). The edge points: where the course leaves the basemap's water (Claude, from the tiles).
+PAC_E = 3 * H
+LINER_LINES = []
+def at(day, hhmm, off):   # day 0 = Monday 5 July 1948; local time with off = Pacific + off -> Pacific seconds from Monday 0.00
+    return day * D + hm(hhmm) - off
+def ltrip(tid, ves, name, d, calls, note):
+    d0 = math.floor((calls[0][2] - 3 * H) / D)
+    return dict(id=tid, d0=d0, num=ves, name=name, svc=_dsvc(d0), dir=d, vessel=ves, stops=[[i, a - d0 * D, b - d0 * D, tp] for i, a, b, tp in calls], note=note)
+def run(route, st, i, j, mph): return round(gmi(route, min(ri(route, st, i), ri(route, st, j)), max(ri(route, st, i), ri(route, st, j))) / mph * H)
+def liner_line(key, label, route, st, trips, labels, src, livery, agency, desc):
+    mkline(key, label, route, st, trips, labels, src, livery); LINER_LINES.append((LINES[-1], agency, desc))
+QBC = port("Quebec (Wolfe's Cove)", -71.2372, 46.7889, "Wolfe's Cove, Quebec: the ocean liners' berth (the point APPROXIMATE, Claude).")
+P21 = port('Halifax (Pier 21)', -63.5672, 44.6393, 'Pier 21, Halifax: the immigration and ocean passenger pier (the point APPROXIMATE, Claude).')
+CHT = port('Charlottetown', -63.1235, 46.2310, 'Charlottetown harbour, P.E.I. (the point APPROXIMATE, Claude).')
+EDGE_BI = (-48.52, 53.25)   # beyond the Strait of Belle Isle, on the course for the British Isles
+EDGE_HX = (-46.91, 46.55)   # south of the Grand Banks, on the course from Halifax to the English Channel
+BELLE = [(-69.65, 47.90), (-68.55, 48.62), (-66.50, 49.35), (-64.20, 49.95), (-61.50, 50.15), (-59.00, 50.85), (-56.80, 51.38), (-55.20, 51.82)]   # the St. Lawrence, north of Anticosti, Belle Isle
+bi_route, bi_st = edge_line([MTV, QBC] + BELLE, EDGE_BI, 500, 500.0, 'At sea (Strait of Belle Isle, for Liverpool)')
+CPN = ' Canadian Pacific Steamships, Montreal - Quebec - Liverpool, summer season 1948 (CP sailing list: Brendan, 15 Nov 2026). First class and tourist.'
+EC_q = at(-2, '11.00a', PAC_E) + run(bi_route, bi_st, 0, 1, 18.4)
+EC = [ltrip('CPSS-EMPCAN-E', 'Empress of Canada', 'Canadian Pacific steamship', 0,
+            [[0, at(-2, '11.00a', PAC_E), at(-2, '11.00a', PAC_E), 1], [1, EC_q, EC_q + 2 * H, 0], [2, EC_q + 2 * H + run(bi_route, bi_st, 1, 2, 19.6), EC_q + 2 * H + run(bi_route, bi_st, 1, 2, 19.6), 0]],
+            'R.M.S. Empress of Canada: sails Montreal 11.00 a.m. (Eastern standard time) Saturday July 3, Quebec that evening, out by the Strait of Belle Isle on Monday 5; due Liverpool July 10. Times after Montreal ESTIMATED (about 17 knots).' + CPN)]
+liner_line('lcpe', 'Montreal – Quebec – Liverpool (Canadian Pacific, Empress of Canada)', bi_route, bi_st, EC, ['to Liverpool', 'to Montreal'],
+           'Canadian Pacific Steamships sailing list, Montreal - Quebec - Liverpool, summer 1948 (Brendan); times after Montreal estimated', 'cpss', 'CP',
+           'Canadian Pacific Steamships, Montreal - Liverpool, week of 5 July 1948; drawn to the edge of the map. Times estimated, on the Pacific clock.')
+CUN = (' Cunard White Star (Cunard - Donaldson Canadian service), Liverpool - Quebec - Montreal. Arrival date: Pier 21 ship arrival database (scheduled); next sailing from'
+       ' Montreal July 11 - 14 (Foreign Trade, 26 June 1948). Hours ESTIMATED (about 15 knots at sea).')
+AS_m = at(6, '10.00a', PAC_E); AS_qd = AS_m - run(bi_route, bi_st, 0, 1, 16.1); AS_qa = AS_qd - 3 * H; AS_e = AS_qa - run(bi_route, bi_st, 1, 2, 17.3)
+AS = [ltrip('CUN-ASCANIA-W', 'Ascania', 'Cunard steamship', 1, [[2, AS_e, AS_e, 0], [1, AS_qa, AS_qd, 0], [0, AS_m, AS_m, 0]],
+            'R.M.S. Ascania: in from Liverpool by the Strait of Belle Isle, Quebec, Montreal Sunday July 11.' + CUN)]
+_cl = [dict(x) for x in bi_st]
+liner_line('lcun', 'Liverpool – Quebec – Montreal (Cunard, Ascania)', bi_route, _cl, AS, ['to Liverpool', 'to Montreal'],
+           'Pier 21 ship arrival database, 1948 (Brendan); Foreign Trade, 26 June 1948; Cunard - Donaldson brochure, 1948; hours estimated', 'cun', 'CUN',
+           'Cunard White Star, Liverpool - Montreal, week of 5 July 1948; drawn from the edge of the map. Times estimated, on the Pacific clock.')
+# Halifax, from the east: the Aquitania (Southampton - Halifax) and the Marine Marlin (Bremerhaven - Halifax - New York)
+hx_route, hx_st = edge_line([P21, (-63.48, 44.50)], EDGE_HX, 500, 2000.0, 'At sea (for Southampton)')
+AQ_h = at(7, '8.00a', PAC_A); AQ_e = AQ_h - run(hx_route, hx_st, 0, 1, 24.2)
+AQ = [ltrip('CUN-AQUITANIA-W', 'Aquitania', 'Cunard steamship', 1, [[1, AQ_e, AQ_e, 0], [0, AQ_h, AQ_h, 0]],
+            'R.M.S. Aquitania: Southampton to Halifax, due Monday July 12 (Pier 21 ship arrival database; the hour ESTIMATED, about 21 knots); she sails again from Halifax July 15 (Foreign Trade). Shown coming in on Sunday night.')]
+liner_line('lcuq', 'Southampton – Halifax (Cunard, Aquitania)', hx_route, hx_st, AQ, ['to Southampton', 'to Halifax'],
+           'Pier 21 ship arrival database, 1948 (Brendan); Foreign Trade, 26 June 1948; hours estimated', 'cun', 'CUN',
+           'Cunard White Star, Southampton - Halifax, week of 5 July 1948; drawn from the edge of the map. Times estimated, on the Pacific clock.')
+mm_route, mm_st = edge_line([NYP, (-73.80, 40.45), P21, (-63.48, 44.50)], EDGE_HX, 500, 8000.0, 'At sea (from Bremerhaven)')
+MM_h = at(1, '8.00a', PAC_A); MM_e = MM_h - run(mm_route, mm_st, 1, 2, 18.4); MM_d = at(1, '8.00p', PAC_A); MM_n = MM_d + run(mm_route, mm_st, 0, 1, 18.4)
+MM = [ltrip('USL-MARLIN-W', 'Marine Marlin', 'United States Lines steamship', 1, [[2, MM_e, MM_e, 0], [1, MM_h, MM_d, 0], [0, MM_n, MM_n, 0]],
+            'S.S. Marine Marlin, United States Lines: Bremerhaven and Channel ports to Halifax, due Tuesday July 6 (Pier 21 ship arrival database: 500 passengers), and on to New York. Hours ESTIMATED (about 16 knots). One of the C4 "Marine" ships running austerity passenger sailings and emigrant voyages.')]
+liner_line('lusl', 'Bremerhaven – Halifax – New York (United States Lines, Marine Marlin)', mm_route, mm_st, MM, ['to Bremerhaven', 'to New York'],
+           'Pier 21 ship arrival database, 1948 (Brendan); hours estimated', 'usl', 'USL',
+           'United States Lines, Bremerhaven - Halifax - New York, week of 5 July 1948; drawn from the edge of the map. Times estimated, on the Pacific clock.')
+# Furness Warren Line: R.M.S. Newfoundland, Liverpool - St. John's - Halifax - Boston and back. In Halifax July 2 (Pier 21) and loading there July 3 - 6 (Foreign Trade);
+# due St. John's July 12 from Boston and Halifax, sailing the same day for Liverpool (The Daily News, July 7 - 9).
+fw_route, fw_st = water_route([BOS, HFX, SJN], 500, 8000.0)
+FWN = ' Furness Warren Line (Furness, Withy & Co.), Liverpool - St. John\'s - Halifax - Boston, passengers and freight. Hours ESTIMATED (about 13 knots).'
+FW_hd = at(1, '6.00p', PAC_A); FW_b = FW_hd + run(fw_route, fw_st, 0, 1, 15.0)
+FW_bd = at(4, '8.00a', PAC_A); FW_h = FW_bd + run(fw_route, fw_st, 0, 1, 15.0); FW_hd2 = at(5, '8.00p', PAC_A); FW_s = at(7, '1.30p', PAC_N)
+FW = [ltrip('FWL-NFLD-S', 'Newfoundland', 'Furness Warren Line steamship', 1, [[1, FW_hd, FW_hd, 0], [0, FW_b, FW_b, 0]],
+            'R.M.S. Newfoundland: Halifax Tuesday July 6 (after loading there July 3 - 6) for Boston.' + FWN),
+      ltrip('FWL-NFLD-N', 'Newfoundland', 'Furness Warren Line steamship', 0, [[0, FW_bd, FW_bd, 0], [1, FW_h, FW_hd2, 0], [2, FW_s, FW_s, 0]],
+            'R.M.S. Newfoundland: Boston Friday July 9, Halifax Saturday 10, due St. John\'s Monday July 12, sailing the same day for Liverpool.' + FWN)]
+liner_line('fwl', "Boston – Halifax – St. John's (Furness Warren Line, Newfoundland)", fw_route, fw_st, FW, ["to St. John's", 'to Boston'],
+           "The Daily News, St. John's, 7 - 9 July 1948; Pier 21 ship arrival database; Foreign Trade, 26 June 1948 (Brendan); hours estimated", 'frc', 'FRC',
+           'Furness Warren Line, Boston - Halifax - St. John\'s, week of 5 July 1948. Times estimated, on the Pacific clock.')
+# Clarke Steamship Co.: Island Connector, advertised for passengers (Brendan): Charlottetown July 8 for St. John's, due July 11, sailing July 11 for Montreal
+# (The Daily News, July 6 - 9; she left Montreal July 2: Foreign Trade).
+CLN = ' Clarke Steamship Co., passengers and freight (The Daily News, St. John\'s, July 1948). Hours ESTIMATED (about 10 knots).'
+ic_route, ic_st = water_route([CHT, (-62.95, 46.08), (-61.60, 45.98), (-60.30, 46.95), (-56.40, 46.45), (-53.35, 46.55), (-52.55, 47.25), SJN], 500, 2000.0)
+IC_d = at(3, '8.00p', PAC_A); IC_a = IC_d + run(ic_route, ic_st, 0, 1, 11.5)
+IC = [ltrip('CLK-ISLCON-E', 'Island Connector', 'Clarke steamship', 0, [[0, IC_d, IC_d, 0], [1, IC_a, IC_a, 0]],
+            'S.S. Island Connector: Charlottetown Thursday July 8 for St. John\'s, due Sunday July 11.' + CLN)]
+liner_line('clkc', "Charlottetown – St. John's (Clarke Steamship Co., Island Connector)", ic_route, ic_st, IC, ["to St. John's", 'to Charlottetown'],
+           "The Daily News, St. John's, 6 - 9 July 1948 (Brendan); hours estimated", 'clk', 'CLK', 'Clarke Steamship Co., Charlottetown - St. John\'s, week of 5 July 1948. Times estimated, on the Pacific clock.')
+im_route, im_st = water_route([SJN, (-52.55, 47.25), (-53.35, 46.55), (-56.40, 46.45), (-59.90, 47.20), (-62.80, 48.90)] + BELLE[2::-1] + [QBC, MTV], 500, 2000.0)
+IM_d = max(IC_a + 6 * H, at(6, '10.00p', PAC_N)); IM_a = IM_d + run(im_route, im_st, 0, 2, 11.5)
+IM = [ltrip('CLK-ISLCON-W', 'Island Connector', 'Clarke steamship', 0, [[0, IM_d, IM_d, 0], [1, IM_a - run(im_route, im_st, 1, 2, 11.5), IM_a - run(im_route, im_st, 1, 2, 11.5) + H, 0], [2, IM_a + H, IM_a + H, 0]],
+            'S.S. Island Connector: St. John\'s Sunday July 11 for Montreal (sailing date as advertised; the hour ESTIMATED); next leaving Montreal July 23.' + CLN)]
+liner_line('clkm', "St. John's – Quebec – Montreal (Clarke Steamship Co., Island Connector)", im_route, im_st, IM, ['to Montreal', "to St. John's"],
+           "The Daily News, St. John's, 9 July 1948 (Brendan); hours estimated", 'clk', 'CLK', 'Clarke Steamship Co., St. John\'s - Montreal, week of 5 July 1948. Times estimated, on the Pacific clock.')
 
 # ---------------- Newfoundland Railway coastal boats, week of 5 July 1948 (Brendan, 13 - 15 Nov 2026)
 # Brendan: these boats had no schedule, so they alone are drawn from REPORTED POSITIONS: The Daily News, St. John's, "Steamship movements" and
@@ -600,6 +693,9 @@ if 'MLN' not in have('agency.txt'): app('agency.txt', [['MLN', 'Muskoka Lakes Na
 if 'ESL' not in have('agency.txt'): app('agency.txt', [['ESL', 'Eastern Steamship Lines', 'https://en.wikipedia.org/wiki/Eastern_Steamship_Lines', 'America/Vancouver', 'en', '']])
 if 'FRC' not in have('agency.txt'): app('agency.txt', [['FRC', 'Furness Red Cross Line (Furness, Withy & Co.)', 'https://en.wikipedia.org/wiki/Furness_Withy', 'America/Vancouver', 'en', '']])
 if 'BPS' not in have('agency.txt'): app('agency.txt', [['BPS', 'Blue Peter Steamships Ltd.', 'https://en.wikipedia.org/wiki/Montreal_Shipping_Company', 'America/Vancouver', 'en', '']])
+for _a in (['CUN', 'Cunard White Star Limited', 'https://en.wikipedia.org/wiki/Cunard_Line'], ['USL', 'United States Lines', 'https://en.wikipedia.org/wiki/United_States_Lines'],
+           ['CLK', 'Clarke Steamship Company', 'https://en.wikipedia.org/wiki/Clarke_Steamship_Company']):
+    if _a[0] not in have('agency.txt'): app('agency.txt', [_a + ['America/Vancouver', 'en', '']])
 if 'OCF' not in have('agency.txt'): app('agency.txt', [['OCF', 'Ontario Car Ferry Company (Canadian National and Baltimore & Ohio)', 'https://en.wikipedia.org/wiki/SS_Ontario_No._1', 'America/Vancouver', 'en', '']])
 gseen = have('stops.txt')
 _PDESC = 'Island boat, June 1 - Sept. 6, 1948. Times on the Pacific clock, three hours earlier than the Eastern Standard time printed.'
@@ -614,9 +710,10 @@ for L, ag, desc in ((LINES[0], 'CN', 'Canadian National steamers, May 21 - June 
                     (LINES[14], 'FRC', 'Furness Red Cross Line, New York - Halifax - St. John\'s, sailings of the week of 5 July 1948. Times estimated, on the Pacific clock.'),
                     (LINES[15], 'FRC', 'Furness Red Cross Line, S.S. Fort Amherst, New York - Bermuda, week of 5 July 1948. Dates and times estimated, on the Pacific clock.'),
                     (LINES[16], 'BPS', 'Blue Peter Steamships, M.V. Atlantic Charter, sailings of the week of 5 July 1948. Times estimated, on the Pacific clock.'),
-                    *((L_, 'NFR', 'Newfoundland Railway coastal boat, week of 5 July 1948, from reported positions; times estimated, on the Pacific clock.') for L_ in NFL_LINES)):
+                    *((L_, 'NFR', 'Newfoundland Railway coastal boat, week of 5 July 1948, from reported positions; times estimated, on the Pacific clock.') for L_ in NFL_LINES),
+                    *LINER_LINES):
     rid = L['key'].upper(); st = L['stations']
-    app('routes.txt', [[rid, ag, L['label'], ' – '.join(s['name'] for s in st), 4, {'PABIT': '8B4A2B', 'MLN': '1F4E79', 'CSL': 'D93A1C', 'CP': '7A1E2C', 'FRC': '9E1B1B', 'BPS': '1F4F9A'}.get(ag, '2F6B44'), 'FFFFFF', desc]])
+    app('routes.txt', [[rid, ag, L['label'], ' – '.join(s['name'] for s in st), 4, {'PABIT': '8B4A2B', 'MLN': '1F4E79', 'CSL': 'D93A1C', 'CP': '7A1E2C', 'FRC': '9E1B1B', 'BPS': '1F4F9A', 'CUN': 'B5121B', 'USL': '1B365D', 'CLK': '2E6B4F'}.get(ag, '2F6B44'), 'FFFFFF', desc]])
     new = [[s['gid'], s['name'] + ' (steamer landing)', f"{s['lat']:.6f}", f"{s['lon']:.6f}", s['note']] for s in st if s['gid'] not in gseen]
     gseen |= {r[0] for r in new}; app('stops.txt', new)
     for t in L['trips']:

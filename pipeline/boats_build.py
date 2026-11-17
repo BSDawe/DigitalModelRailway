@@ -532,7 +532,10 @@ VIA[('Queen Charlotte City', 'Masset')] = [(-131.93, 53.235), (-131.78, 53.27), 
                                            (-131.80, 54.15), (-131.98, 54.10), (-132.12, 54.07)]
 # north from Ketchikan: up Tongass Narrows past the Guard Islands into Clarence Strait (Brendan, 15 October 2026: the lanes went south first)
 _KTN = [(-131.672, 55.356), (-131.700, 55.372), (-131.740, 55.398), (-131.800, 55.440)]
-for _q in ('Wrangell', 'Juneau', 'Taku Glacier', 'Kodiak'): VIA[('Ketchikan', _q)] = _KTN
+for _q in ('Wrangell', 'Juneau', 'Taku Glacier', 'Kodiak', 'At sea (for Kodiak)'): VIA[('Ketchikan', _q)] = _KTN
+# the edge of the map's water on the Ketchikan - Kodiak lane (Claude, 17 Nov 2026, from the basemap): the Denali sails out to it and is gone
+# (Brendan, 15 Nov 2026: ocean ships "sail to the edge of the water file and then disappear")
+P['At sea (for Kodiak)'] = (-145.0537, 57.2599, False); PLACED['At sea (for Kodiak)'] = "At sea: the edge of the map's water on the course from Ketchikan to Kodiak; the ship sails on beyond it"
 def Wd(day=0):
     """a call the schedule gives only by its date: timed by distance, kept inside that day"""
     return ('W', day + 6 * 3600, day + 22 * 3600)
@@ -568,10 +571,10 @@ service('bas', ASS, 'Seattle – Ketchikan – Juneau – Cordova – Valdez –
   ['to Alaska', 'to Seattle'])
 # ---- Alaska Steamship Co.: Denali, Kodiak Island - Cook Inlet - Yakutat route, every three weeks (ak_ass_denali_1948.csv; the 8 July sailing follows
 # the printed 27 May pattern: Ketchikan, the Kodiak outports, Kodiak, Seldovia, Seward, Yakutat, Ketchikan)
-service('bad', ASS, 'Seattle – Ketchikan – Kodiak – Seldovia – Seward – Yakutat', 'Alaska Steamship Co. sailing schedule, 1948', 250,
-  ['Seattle (Pier 42)', 'Ketchikan', 'Kodiak', 'Seldovia', 'Seward (steamer dock)', 'Yakutat', 'Ketchikan', 'Seattle (Pier 42)'], [
-  dsail('DN', 'Denali', 'Kodiak boat', 'Denali', 3, [(0, T('9.00a')), (1, Wd(D2)), (2, Wd(D5))],
-        'S.S. Denali, Kodiak Island - Cook Inlet - Yakutat route: sails from Seattle Thursday 8 July at 9.00 a.m. (every three weeks; the July date continues the printed 6 May, 27 May and 17 June sailings); Ketchikan Saturday 10, then the Kodiak outports (Tuesday and Wednesday, not named; drawn as Kodiak), Kodiak, Seldovia, Seward, Yakutat and home to Seattle about 31 July. Kodiak is beyond the edge of the map\'s water.' + _as.replace(' The Aleutian and the Baranof sail from Seattle (Pier 42) on alternate Saturdays at 9.00 a.m., so each ship sails fortnightly; the', ' The'))],
+service('bad', ASS, 'Seattle – Ketchikan – Kodiak (Alaska Steamship, Denali)', 'Alaska Steamship Co. sailing schedule, 1948', 250,
+  ['Seattle (Pier 42)', 'Ketchikan', 'At sea (for Kodiak)'], [
+  dsail('DN', 'Denali', 'Kodiak boat', 'Denali', 3, [(0, T('9.00a')), (1, Wd(D2)), (2, Wd(D4))],
+        'S.S. Denali, Kodiak Island - Cook Inlet - Yakutat route: sails from Seattle Thursday 8 July at 9.00 a.m. (every three weeks; the July date continues the printed 6 May, 27 May and 17 June sailings); Ketchikan Saturday 10, then the Kodiak outports (Tuesday and Wednesday, not named; drawn as Kodiak), Kodiak, Seldovia, Seward, Yakutat and home to Seattle about 31 July. Drawn out to the edge of the map\'s water in the Gulf of Alaska (about Monday 12), and gone beyond it.' + _as.replace(' The Aleutian and the Baranof sail from Seattle (Pier 42) on alternate Saturdays at 9.00 a.m., so each ship sails fortnightly; the', ' The'))],
   ['to Kodiak', 'to Seattle'])
 # ---- the S.S. Alaska (a subsidiary of the Alaska Steamship Co.; Official Guide): Seattle every second Thursday (1 and 15 July), 9.00 a.m. (est),
 # Ketchikan, Wrangell, Petersburg, Juneau, Haines, Skagway and Sitka; the same calls coming back (Brendan, 14 October). All hours estimated.
