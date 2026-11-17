@@ -129,6 +129,10 @@ Maritime tables where the traced line differs from the printed miles by 1 mi and
   source for any service (employee timetable page for that subdivision, or a 1948 suburban folder). Also check No. 365 (17:00): the 1950 list
   marks it "via Cartierville". The 1950 list otherwise matches the model's weekday trains at Central (inbound times are at Mount Royal, ~10 min earlier).
 - [x] (Version 180; remaining: Laurentia, Beaverford, Lady Nelson / Lady Rodney need dates, e.g. the Montreal Gazette and Halifax shipping columns, July 1 - 12, 1948) Ocean liners, week of 5 July 1948 (Brendan, 15 Nov 2026): transatlantic and transpacific passenger ships, incl. passenger-carrying freighters
+  - Lady boats (Brendan, 17 Nov 2026): an undated C.N. advertisement (https://bajanthings.com/wp-content/uploads/2020/03/lady-liner-voyages_advertisment.jpg.webp)
+    has a summer Western Service Montreal - Bermuda - Nassau - Kingston - Belize and an Eastern Service Halifax - Boston - Bermuda - St. Kitts - Nevis - Antigua -
+    Montserrat - Dominica - St. Lucia - Barbados - St. Vincent - Grenada - Trinidad - Georgetown; Boston "2 days" from Halifax. Probably pre-war (five Lady
+    boats); Foreign Trade, 26 June 1948, has both Lady Nelson and Lady Rodney loading at Halifax for the Eastern Caribbean. Still needs a dated 1948 sailing.
   (CP Beaverburn / Beaverford, 12 passengers), drawn from their Canadian port to the EDGE OF THE WATER FILE and then gone (Brendan: "sail to the edge
   of the water file and then disappear"); arrivals in Canada in the week estimated the same way, appearing at the edge. Apply the same to the ships
   already on the map that leave the water: the Denali (Kodiak) and the Fort Amherst's Bermuda trip (both now drawn beyond the water layer).
