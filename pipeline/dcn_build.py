@@ -148,6 +148,7 @@ SAIL = {   # line: (svc, ship, [(port key, arrive, leave)], text)
  'dcwe': ('W_0000100', 'Western States', [('DTS', None, T(0, '7.00p')), ('HSP', T(1, '7.30p'), T(2, '1.30a')), ('MAC', T(2, '7.00a'), T(2, '12.00p')), ('DTS', T(3, '7.00a'), None)],
           'week-end cruise: Detroit Friday 7.00 p.m.; Harbor Springs Saturday 7.30 p.m., leaving Sunday 1.30 a.m.; Mackinac Island Sunday 7.00 a.m., leaving 12.00 noon; Detroit Monday 7.00 a.m.'),
 }
+ALT = {'dcbu_e': [('W_1010101', 'Greater Detroit'), ('W_0101010', 'City of Detroit III')], 'dcbu_w': [('W_1010101', 'City of Detroit III'), ('W_0101010', 'Greater Detroit')]}
 LABEL = {'dccl_e': ('Detroit – Cleveland', 'to Cleveland'), 'dccl_w': ('Cleveland – Detroit', 'to Detroit'), 'dcbu_e': ('Detroit – Buffalo', 'to Buffalo'), 'dcbu_w': ('Buffalo – Detroit', 'to Detroit'),
          'dc7_w': ('7-day cruise: Buffalo – Detroit – Mackinac Island – Chicago', 'to Chicago'), 'dc7_e': ('7-day cruise: Chicago – Midland – Detroit – Buffalo', 'to Buffalo'),
          'dcwm': ('Mid-week cruise: Detroit – Mackinac Island – Harbor Springs – Midland – Detroit', 'to Detroit'), 'dcwe': ('Week-end cruise: Detroit – Harbor Springs – Mackinac Island – Detroit', 'to Detroit')}
@@ -164,10 +165,14 @@ for key, seq in LINES.items():
         leg = (st[y[0]]['chain'] - st[x[0]]['chain']) / MI; h = (y[1] - x[2]) / 3600
         print(f"  {key} {st[x[0]]['name'][:30]:30s} - {st[y[0]]['name'][:30]:30s} {leg:6.1f} mi in {h:5.2f} h = {leg / h:5.1f} mph" + ('   !! check' if not 4 < leg / h < 25 else ''))
     tid = 'DCN-' + key.upper()
-    trip = dict(id=tid, num=ship, name='D.&C. steamer', svc=svc, dir=0, stops=stops, note='S.S. ' + ship + ', ' + txt + '.' + _n, vessel=ship)
+    if key in ALT:   # the two Buffalo boats: one each way each night, turn and turn about (which ship on which night ESTIMATED: Brendan, 17 Nov 2026)
+        trips = [dict(id=f'{tid}-{k}', num=sh, name='D.&C. steamer', svc=sv, dir=0, stops=stops, vessel=sh,
+                      note='S.S. ' + sh + ', ' + txt + '. The division\'s two ships, the City of Detroit III and the Greater Detroit, sailed one each way every night; which ship sailed on which night is ESTIMATED (turn and turn about).' + _n)
+                 for k, (sv, sh) in enumerate(ALT[key])]
+    else: trips = [dict(id=tid, num=ship, name='D.&C. steamer', svc=svc, dir=0, stops=stops, note='S.S. ' + ship + ', ' + txt + '.' + _n, vessel=ship)]
     for s in st: s.pop('key')
     lab, dl = LABEL[key]
-    NEW.append(dict(key=key, kind='v', label=lab, mainline=True, water=True, livery='dcn', src=SRC, owner='dcn', route=route, stations=st, dirLabels=[dl, ''], segments=[], trips=[trip]))
+    NEW.append(dict(key=key, kind='v', label=lab, mainline=True, water=True, livery='dcn', src=SRC, owner='dcn', route=route, stations=st, dirLabels=[dl, ''], segments=[], trips=trips))
     print(f"{key}: {route[-1][2] / MI:.1f} mi of lane, {len(st)} points")
 vd['lines'] = [x for x in vd['lines'] if x['key'] not in LINES] + NEW
 open(os.path.join(HERE, 'viz_data.json'), 'w').write(json.dumps(vd, separators=(',', ':')))
@@ -179,15 +184,16 @@ def app(name, rows_):
 def have(name, col=0): return set(r[col] for r in csv.reader(open(os.path.join(GT, name))))
 if 'DCN' not in have('agency.txt'): app('agency.txt', [['DCN', 'Detroit and Cleveland Navigation Company', 'https://en.wikipedia.org/wiki/Detroit_and_Cleveland_Navigation_Company', 'America/Vancouver', 'en', '']])
 cal = have('calendar.txt')
-app('calendar.txt', [[w, *w[2:], '19490616', '19491231'] for w in sorted({SAIL[k][0] for k in LINES}) if w not in cal])
+app('calendar.txt', [[w, *w[2:], '19490616', '19491231'] for w in sorted({SAIL[k][0] for k in LINES} | {v for a in ALT.values() for v, _ in a}) if w not in cal])
 gseen = have('stops.txt')
 for L in NEW:
     st = L['stations']; t = L['trips'][0]
     app('routes.txt', [['DCN_' + L['key'].upper(), 'DCN', L['label'], ' – '.join(s['name'] for s in st if s['principal']), 4, 'B0702A', 'FFFFFF',
-                        'S.S. ' + t['vessel'] + ', Detroit and Cleveland Navigation Co. The lane is a least-cost path over the water layers, not a surveyed course. Times on the Pacific clock.']])
+                        'Detroit and Cleveland Navigation Co. The lane is a least-cost path over the water layers, not a surveyed course. Times on the Pacific clock.']])
     new = [[s['gid'], s['name'] + ' (steamer landing)', f"{s['xy'][1]:.6f}", f"{s['xy'][0]:.6f}", s['note']] for s in st if s['principal'] and s['gid'] not in gseen]
     app('stops.txt', new); gseen |= {r[0] for r in new}
-    app('shapes.txt', [[t['id'], f'{p[1]:.6f}', f'{p[0]:.6f}', k, f'{p[2]:.1f}'] for k, p in enumerate(L['route'])])
-    app('trips.txt', [['DCN_' + L['key'].upper(), t['svc'], t['id'], st[t['stops'][-1][0]]['name'], t['vessel'], 0, t['id']]])
-    rows = [(i, a, b) for i, a, b, _ in t['stops'] if st[i]['principal']]
-    app('stop_times.txt', [[t['id'], fmt(a), fmt(b), st[i]['gid'], k, f"{st[i]['chain']:.1f}", 1] for k, (i, a, b) in enumerate(rows, 1)])
+    for t in L['trips']:
+        app('shapes.txt', [[t['id'], f'{p[1]:.6f}', f'{p[0]:.6f}', k, f'{p[2]:.1f}'] for k, p in enumerate(L['route'])])
+        app('trips.txt', [['DCN_' + L['key'].upper(), t['svc'], t['id'], st[t['stops'][-1][0]]['name'], t['vessel'], 0, t['id']]])
+        rows = [(i, a, b) for i, a, b, _ in t['stops'] if st[i]['principal']]
+        app('stop_times.txt', [[t['id'], fmt(a), fmt(b), st[i]['gid'], k, f"{st[i]['chain']:.1f}", 1] for k, (i, a, b) in enumerate(rows, 1)])

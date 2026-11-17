@@ -2729,3 +2729,8 @@ A review of the whole project (Brendan: "have a peek through ... suggest improve
   (Western States).
 - Ports: Brendan's C.D.&G.B. points for Buffalo (Main Street), Cleveland (East Ninth Street), Mackinac Island, Chicago (the D.&C. Chicago dock not
   identified); Detroit Third Street Dock, Harbor Springs and Midland are Claude's, approximate. Scans: private repo, scans/marine/dcnav_1948_*.
+
+## Version 182 (17 November 2026): the D.&C. Buffalo boats named night by night
+- Brendan: pick one of the City of Detroit III and the Greater Detroit for each sailing and mark it an estimate. Each night one ship sails each way; they
+  turn and turn about: Greater Detroit east from Detroit on Mon., Wed., Fri., Sun. (back from Buffalo the next night), City of Detroit III the other way
+  round. Which ship on which night ESTIMATED (in the notes).
