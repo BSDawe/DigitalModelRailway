@@ -1,7 +1,7 @@
 # The Digital Model Railway — project state
 
 Read this first. It is meant to be enough to start a short, single-task chat without replaying the project's history.
-Last updated 17 November 2026 (Version 179). This file is the current state and the standing rules; the version-by-version history is in CHANGELOG.md.
+Last updated 17 November 2026 (Version 180). This file is the current state and the standing rules; the version-by-version history is in CHANGELOG.md.
 
 ## What this is
 
@@ -279,8 +279,8 @@ lat, mile, lmile?, principal, gid, note, xy?, slow?}], dirLabels, segments [{own
   the notices are estimated from the timetables (tools/nfr_1949.py). (V179)
 - **Ships go by their schedules.** Only the Newfoundland Railway coastal boats, which had none, are drawn from reported positions (The Daily
   News, St. John's; `nfld/steamship_movements.md`), with the other calls put in between by distance. (V172)
-- **Ocean liners** (to do) run from their Canadian port to the edge of the water file and then disappear; arrivals appear there. The same is
-  to be applied to the Denali (Kodiak) and the Fort Amherst's Bermuda trip. (TODO.md)
+- **Ocean liners** run from their Canadian port to the edge of the water file and then disappear; arrivals appear there (also the Denali and the
+  Fort Amherst). They are in their own step, ocean_build.py, and list heading; North American coastal ships stay with the steamers (Bermuda counts as local). (V180)
 - **A run is drawn whole**: ports along the same run that are not reached in the week are still part of the route (the Burgeo from Argentia). (V174)
 - **Newfoundland outports** are minor stops; major stops are the railway connections, the ends of the runs and the larger towns (`NF_MAJOR`). (V173)
 - **Through trains joined across pieces** need only overlap in their days; several partners on one side are allowed when their days are disjoint.
@@ -323,6 +323,7 @@ After an accepted build: `cp viz_data.json tools/.baseline_viz.json`.
 
 ## Recent versions (one line each; the detail is in CHANGELOG.md)
 
+- 180: ocean liners to the edge of the map's water, in their own step (ocean_build.py) and list heading; Island Connector; Fort Amherst and Denali cut at the edge.
 - 179: the Newfoundland Railway on its summer schedule (May 1949 folder times, July 1948 notice days; tools/nfr_1949.py).
 - 178: CP No. 14 arrives Minneapolis 6.10 a.m. (1948 C&NW timetable); the feed check is clean.
 - 177: trips setting out between midnight and 3 a.m. Pacific shown the night before (the Bar Haven; 152 trips in all).

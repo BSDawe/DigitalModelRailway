@@ -2,7 +2,7 @@
 
 One list for the Digital Model Railway: questions for Brendan, material he is to supply, and work for Claude. It merges OPEN_QUESTIONS.md with the TO DO lists that were kept in STATE.md (the last of them: "TO DO (1 November 2026)"), as Brendan asked on 9 Nov 2026.
 Claude adds items as they come up. When one is answered or done, it moves to "Done and answered" with the date. Each open item says what the build does in the meantime. Version tags (V143) say when an item was raised.
-Last updated 17 November 2026 (Version 179).
+Last updated 17 November 2026 (Version 180).
 
 ## Decisions for Brendan
 - [ ] Fredericton Union Station (CN): Brendan's item, 10 Nov 2026. To be taken up; CN's Fredericton is now the Intercolonial station (V161). (V162)
@@ -128,7 +128,7 @@ Maritime tables where the traced line differs from the printed miles by 1 mi and
   Royal - Val Royal was presumably in a Montreal Terminals timetable), so trains running only Central - Cartierville would not appear in it. Need: a trace of the branch (e.g. OSM abandoned railway) and a 1948
   source for any service (employee timetable page for that subdivision, or a 1948 suburban folder). Also check No. 365 (17:00): the 1950 list
   marks it "via Cartierville". The 1950 list otherwise matches the model's weekday trains at Central (inbound times are at Mount Royal, ~10 min earlier).
-- [ ] Ocean liners, week of 5 July 1948 (Brendan, 15 Nov 2026): transatlantic and transpacific passenger ships, incl. passenger-carrying freighters
+- [x] (Version 180; remaining: Laurentia, Beaverford, Lady Nelson / Lady Rodney need dates, e.g. the Montreal Gazette and Halifax shipping columns, July 1 - 12, 1948) Ocean liners, week of 5 July 1948 (Brendan, 15 Nov 2026): transatlantic and transpacific passenger ships, incl. passenger-carrying freighters
   (CP Beaverburn / Beaverford, 12 passengers), drawn from their Canadian port to the EDGE OF THE WATER FILE and then gone (Brendan: "sail to the edge
   of the water file and then disappear"); arrivals in Canada in the week estimated the same way, appearing at the edge. Apply the same to the ships
   already on the map that leave the water: the Denali (Kodiak) and the Fort Amherst's Bermuda trip (both now drawn beyond the water layer).
@@ -136,8 +136,8 @@ Maritime tables where the traced line differs from the printed miles by 1 mi and
   Montreal July 11 - 18 (arrives about the 10th?). Brendan is checking the Pier 21 arrivals database for the others (Aquitania, Samaria, Scythia,
   Ascania, Laurentia, Beaverbrae, Kota Inten, Tabinta, Volendam, Sobieski, Newfoundland, Nova Scotia, Lady Nelson, Lady Rodney). No transpacific
   liner at Vancouver that week (Aorangi resumed later in 1948: Brendan). Notes: marine/FOREIGN_TRADE_1948.md.
-- [ ] Island Connector (Clarke): Charlottetown July 8 - St. John's July 11, sailing July 11 for Montreal: with the ocean liners.
-- [ ] Furness Warren R.M.S. Newfoundland (Liverpool - St. John's - Halifax - Boston): due St. John's July 12 from Boston and Halifax, sailing same day for Liverpool (Daily News July 7). In the week she is coming north from Boston via Halifax: draw once a Halifax or Boston date turns up.
+- [x] (Version 180) Island Connector (Clarke): Charlottetown July 8 - St. John's July 11, sailing July 11 for Montreal: with the ocean liners.
+- [x] (Version 180) Furness Warren R.M.S. Newfoundland (Liverpool - St. John's - Halifax - Boston): due St. John's July 12 from Boston and Halifax, sailing same day for Liverpool (Daily News July 7). In the week she is coming north from Boston via Halifax: draw once a Halifax or Boston date turns up.
 - Rule (Brendan, 15 Nov 2026): ships go by SCHEDULED times where there is one. Only the Newfoundland Railway boats are the exception: no schedule, so drawn from the ACTUAL reported positions in the Daily News (nfld/steamship_movements.md), interpolated between reports; mark them as shown from reports, not a timetable.
 - [x] Newfoundland coastal steamers (Version 172) (Brendan researching; from Newfoundland Railway notices, The Daily News, 2 - 7 July 1948; nfld/steamship_movements.md): S.S. Bar Haven,
   Bay Route of Placentia Bay (from Argentia, Monday, after the 9 a.m. train); S.S. Northern Ranger, Corner Brook service to St. John's (from

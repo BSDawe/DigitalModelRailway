@@ -2702,3 +2702,20 @@ A review of the whole project (Brendan: "have a peek through ... suggest improve
   9.30 a.m. Mon.); the Springdale from Lewisporte at 8 a.m. after the express connections (Sun. 4, Thu. 8, Sun. 11); the Burgeo's eastbound sailing
   from Port aux Basques after Saturday's express (11 p.m. Sun. 11, estimated; new line nfbue).
 - Scans in the private repo: scans/nfld1949 (the folder), scans/nfld1948_daily_news (the notices).
+
+## Version 180 (17 November 2026): ocean liners, to the edge of the map's water
+- Brendan: ocean ships sail to the edge of the water file and disappear (15 Nov); look for ships calling at Halifax and at other US and Canadian ports;
+  ocean liners in a step and a list heading of their own (17 Nov). Sources: the Pier 21 ship arrival database for 1948 (Brendan's download,
+  marine/pier21_arrivals_1948.csv, scheduled arrival dates; tools/pier21_qgis.py and tools/pier21_arrivals.py fetch it), the CP Montreal - Liverpool
+  summer 1948 list, Foreign Trade (26 June 1948), The Daily News.
+- New step ocean_build.py (after lo_build; own lane cache ocean_legs.json, reads lo_legs.json): lines flagged `ocean`, listed under "Ocean liners".
+  Empress of Canada (CP; Montreal Sat 3, out through the Strait of Belle Isle); Ascania (Cunard; in by Belle Isle, Quebec, Montreal Sun 11);
+  Aquitania (Cunard; in to Halifax, due Mon 12, seen coming in on Sunday); Marine Marlin (United States Lines; Halifax Tue 6, New York Thu 8);
+  R.M.S. Newfoundland (Furness Warren; Halifax - Boston Tue 6, Boston - Halifax Fri 9 - St. John's Mon 12). Hours and the times at the edge
+  ESTIMATED from service speeds. Edge points found from the basemap tiles: about 48.5 W beyond Belle Isle, 46.9 W south of the Grand Banks.
+- With the steamers (lo_build): the Clarke Steamship Co.'s Island Connector, Charlottetown Thu 8 - St. John's Sun 11 - Montreal (new livery clk);
+  the Fort Amherst now sails from New York to the edge of the water on the Bermuda course (69 W, 36 N) and is gone. boats_build: the Denali sails
+  from Seattle and Ketchikan to the edge of the water in the Gulf of Alaska (145 W) and is gone.
+- New liveries: cun (Cunard), usl (United States Lines), clk (Clarke). New water box GULF_BOX in lo_build.
+- Not drawn, no dates: Laurentia (Donaldson), Beaverford (CP freighter, 12 passengers), the Lady boats (CN). Just outside the week: Sobieski
+  (Halifax July 13), Kota Inten (Quebec July 16), Marine Shark (Halifax July 16); Tabinta and Saturnia (arrived June 29).
