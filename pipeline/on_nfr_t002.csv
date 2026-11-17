@@ -1,20 +1,35 @@
-# Newfoundland Railway: Brigus branch, St. John's - Brigus Junction - Brigus - Bay Roberts - Harbor Grace - Carbonear (mixed trains).
-# Official Guide, May 1948: Newfoundland Railway, schedule of January 11, 1948 ("Change of schedules will be effective May 9, figures not available"); Newfoundland time (noon Atlantic is 12.30 p.m. Newfoundland). Track: the Wikipedia map of the Newfoundland Railway (CC-BY-4.0; Brendan); stations at the CGN points (Brendan), on the track.
-# Signs: a Mon. and Thurs.; b Wed. and Sat.; c Thurs. and Sun.; d Tues., Thurs. and Sat.; e Fri. and Mon.; f flag stop; g Mon. only; h Wed. only; i Sun., Tues., Thurs., Fri.; o Tues. and Fri.; q Fri. only; y Wed. and Sat.; z Tues. only; double cross Mon., Wed. and Fri.; # Thurs. only; psi mixed train.
-#train col=M7 num=7 dir=down days="Tue,Thu,Sat" kind=mixed note="Newfoundland Railway mixed No. 7: St. John's 9.00 a.m. to Brigus Junction and the Brigus branch, Carbonear 1.20 p.m. (Tues., Thurs. and Sat.)."
-#train col=M8 num=8 dir=up days="Tue,Thu,Sat" kind=mixed note="Newfoundland Railway mixed No. 8: Carbonear 3.05 p.m. by the Brigus branch and Brigus Junction to St. John's 7.25 p.m. (Tues., Thurs. and Sat.)."
+# Newfoundland Railway: Brigus branch, St. John's - Brigus Junction - Brigus - Bay Roberts - Harbor Grace - Carbonear (mixed trains). Carbonear is 80.2 miles from St. John's (the branch table's 48.4 is a misprint for 38.4). Three Mile Post (stops on signal during the fishing season) is left out.
+# Canadian National Railways, "Lines in Newfoundland", Folder N No. 1, May 8, 1949 (summer schedule), used for the week of 5 July 1948 with the days and trains of the
+# Newfoundland Railway notices in The Daily News, St. John's, 5 - 9 July 1948 (Brendan, 16 Nov 2026). Written by tools/nfr_1949.py: see its heading for the rules.
+# Newfoundland summer time (tz NS: an hour and a half ahead of Atlantic standard). "~": a time not printed, estimated. f: stops on signal.
+#train col=M7 dir=down num=7 days="Tue,Thu,Sat" kind=mixed note="Mixed No. 7: St. John's 9.00 a.m. Tuesday, Thursday and Saturday to Carbonear 1.20 p.m. (May 1949 folder)."
+#train col=M8 dir=up num=8 days="Tue,Thu,Sat" kind=mixed note="Mixed No. 8: Carbonear 3.05 p.m. Tuesday, Thursday and Saturday to St. John's 7.25 p.m. (May 1949 folder)."
 mile,station,principal,prov,tz,M7,M8
-0,St. John's,1,NL,N,lv 9.00a,ar 7.25p
-9,Irvine,0,NL,N,f9.22a,f7.02p
-13,Topsail,0,NL,N,f9.30a,f6.50p
-19,Kelligrew's,0,NL,N,f9.50a,f6.32p
-25,Duff's,0,NL,N,f10.05a,f6.20p
-30,Holyrood,0,NL,N,10.20a,6.08p
-34,Woodford's,0,NL,N,f10.29a,f5.50p
-36,Avondale,0,NL,N,10.40a,5.40p
-42,Brigus Junction,1,NL,N,ar 10.55a / lv 11.10a,ar 5.10p / lv 5.24p
-53,Brigus,1,NL,N,11.45a,4.41p
-64,Bay Roberts,1,NL,N,12.24p,4.07p
-68,Tilton,0,NL,N,f12.41p,f3.45p
-74,Harbor Grace,1,NL,N,1.05p,3.28p
-80,Carbonear,1,NL,N,ar 1.20p,lv 3.05p
+0,St. John's,1,NL,NS,lv 9.00a,ar 7.25p
+8.9,Irvine,0,NL,NS,f9.22a,f7.05p
+13.1,Topsail,0,NL,NS,f9.30a,f6.53p
+15.4,Manuels,0,NL,NS,f9.35a,f6.45p
+19.3,Kelligrew's,0,NL,NS,9.53a,f6.35p
+21,Upper Gullies,0,NL,NS,~f9.57a,~f6.31p
+23.8,Seal Cove,0,NL,NS,~f10.03a,~f6.24p
+25.4,Duff's,0,NL,NS,f10.06a,f6.20p
+28.4,Briens,0,NL,NS,~f10.15a,~f6.13p
+30.3,Holyrood,0,NL,NS,10.20a,6.08p
+33.8,Woodford's,0,NL,NS,f10.29a,f5.50p
+36.3,Avondale,0,NL,NS,10.40a,5.40p
+41.8,Brigus Junction,1,NL,NS,ar 10.55a / lv 11.10a,ar 5.10p / lv 5.24p
+46.3,Collier's Siding,0,NL,NS,~f11.21a,~f4.58p
+48.1,Turk's Gut Siding,0,NL,NS,f11.26a,f4.53p
+52.9,Brigus,1,NL,NS,11.45a,4.41p
+54.9,Cupids,0,NL,NS,f11.51a,f4.34p
+57.1,Makinson,0,NL,NS,f11.56a,f4.29p
+59,Clarke's Beach,0,NL,NS,12.05p,4.23p
+62.7,Country Road Siding,0,NL,NS,f12.15p,f4.10p
+64.1,Bay Roberts,1,NL,NS,12.24p,4.07p
+65.3,Mercer's Siding,0,NL,NS,~f12.30p,~f3.59p
+65.8,Spaniard's Bay,0,NL,NS,12.33p,3.55p
+68.3,Tilton,0,NL,NS,f12.41p,f3.45p
+71.3,Riverhead Siding,0,NL,NS,f12.51p,f3.37p
+74.3,Harbor Grace,1,NL,NS,1.05p,3.28p
+76.8,Bristol's Hope,0,NL,NS,~f1.11p,~f3.18p
+80.2,Carbonear,1,NL,NS,ar 1.20p,lv 3.05p

@@ -28,7 +28,8 @@ ab_lines.fwd, ab_lines.inv = _T.transform, _I.transform
 ab_lines._T, ab_lines._I = _T, _I                                      # _xy() uses the transformer itself
 fwd = _T.transform
 ab_lines.TZ_SHIFT['E'] = -10800
-ab_lines.TZ_SHIFT['N'] = -16200; ab_lines.TZ_SHIFT['A'] = -14400                                        # Atlantic time (the Temiscouata)                                        # Eastern time: three hours ahead of Pacific
+ab_lines.TZ_SHIFT['N'] = -16200; ab_lines.TZ_SHIFT['NS'] = -19800;   # NS: Newfoundland summer time, an hour and a half ahead of Atlantic standard (16 Nov 2026)
+ab_lines.TZ_SHIFT['A'] = -14400                                        # Atlantic time (the Temiscouata)                                        # Eastern time: three hours ahead of Pacific
 
 ab_lines.RAILS.update({'oncn': dict(kind='q', label='Canadian National', own='cn', agency='CN', color='2F6B44', pfx='CN'),
                        'oncp': dict(kind='p', label='Canadian Pacific', own='cp', agency='CP', color='7A1E2C', pfx='CP'),

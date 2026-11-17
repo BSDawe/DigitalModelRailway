@@ -1,18 +1,43 @@
-# Newfoundland Railway: Bonavista branch, Clarenville - Shoal Harbor - Trinity Junction - Catalina - Bonavista (mixed trains).
-# Official Guide, May 1948: Newfoundland Railway, schedule of January 11, 1948 ("Change of schedules will be effective May 9, figures not available"); Newfoundland time (noon Atlantic is 12.30 p.m. Newfoundland). Track: the Wikipedia map of the Newfoundland Railway (CC-BY-4.0; Brendan); stations at the CGN points (Brendan), on the track.
-# Signs: a Mon. and Thurs.; b Wed. and Sat.; c Thurs. and Sun.; d Tues., Thurs. and Sat.; e Fri. and Mon.; f flag stop; g Mon. only; h Wed. only; i Sun., Tues., Thurs., Fri.; o Tues. and Fri.; q Fri. only; y Wed. and Sat.; z Tues. only; double cross Mon., Wed. and Fri.; # Thurs. only; psi mixed train.
-#train col=M27 num=27 dir=down days=Mon kind=mixed note="Newfoundland Railway mixed No. 27, Bonavista branch: Clarenville Mon. 11.45 p.m. to Bonavista Tues. 6.45 a.m."
-#train col=M11 num=11 dir=down days="Wed,Sat" kind=mixed note="Newfoundland Railway mixed No. 11, Bonavista branch: Clarenville Wed. and Sat. 11.45 p.m. to Bonavista Thurs. and Sun. 5.00 a.m."
-#train col=M12 num=12 dir=up days=Mon kind=mixed note="Newfoundland Railway mixed No. 12, Bonavista branch: Bonavista Mon. 8.00 a.m. to Clarenville 1.15 p.m."
-#train col=M28 num=28 dir=up days=Wed kind=mixed note="Newfoundland Railway mixed No. 28, Bonavista branch: Bonavista Wed. 8.00 a.m. to Clarenville 3.00 p.m."
-#train col=M24 num=24 dir=up days=Thu kind=mixed note="Newfoundland Railway mixed No. 24, Bonavista branch: Bonavista Thurs. 8.00 p.m. to Clarenville Fri. 1.15 a.m."
-mile,station,principal,prov,tz,M27,M11,M12,M28,M24
-0,Clarenville,1,NL,N,lv 11.45p,lv 11.45p,ar 1.15p,ar 3.00p,ar 1.15a
-2,Shoal Harbor,1,NL,N,11.54p,11.52p,1.08p,2.50p,1.08a
-20,Lethbridge,1,NL,N,1.20a,12.55a,12.05p,1.20p,12.05a
-37,Princeton,1,NL,N,2.55a,1.57a,11.05a,12.01p,11.05p
-55,Trinity Junction,1,NL,N,4.20a,3.00a,10.00a,10.35a,10.00p
-60,Trinity East,0,NL,N,f4.40a,f3.20a,f9.43a,f10.10a,f9.43p
-61,Port Rexton,1,NL,N,4.50a,3.27a,9.36a,10.00a,9.36p
-79,Catalina,1,NL,N,6.10a,4.30a,8.35a,8.45a,8.35p
-90,Bonavista,1,NL,N,ar 6.45a,ar 5.00a,lv 8.00a,lv 8.00a,lv 8.00p
+# Newfoundland Railway: Bonavista branch, Clarenville - Shoal Harbor - Trinity Junction - Catalina - Bonavista (mixed trains). Miles from Clarenville (the folder counts from Shoal Harbour).
+# Canadian National Railways, "Lines in Newfoundland", Folder N No. 1, May 8, 1949 (summer schedule), used for the week of 5 July 1948 with the days and trains of the
+# Newfoundland Railway notices in The Daily News, St. John's, 5 - 9 July 1948 (Brendan, 16 Nov 2026). Written by tools/nfr_1949.py: see its heading for the rules.
+# Newfoundland summer time (tz NS: an hour and a half ahead of Atlantic standard). "~": a time not printed, estimated. f: stops on signal.
+#train col=M11 dir=down num=11 days="Sun" kind=mixed note="Mixed No. 11, Bonavista branch: Clarenville 12.30 a.m. Sunday (after Saturday's local express) to Bonavista 5.30 a.m. (May 1949 folder)."
+#train col=M23 dir=down num=23 days="Tue" kind=mixed note="Mixed No. 23, Bonavista branch: Clarenville 9.30 a.m. Tuesday to Bonavista 5.10 p.m. (May 1949 folder)."
+#train col=M27 dir=down num=27 days="Thu" kind=mixed from="St. John's (9.00 p.m. Wednesday)" note="Mixed No. 27, Bonavista branch: Clarenville 5.30 a.m. Thursday to Bonavista 10.30 a.m. (May 1949 folder). Taken to be the continuation of the train for points to Bonavista that left St. John's at 9.00 p.m. Wednesday 7 July 1948 with the Trinity sleeper (Newfoundland Railway notice)."
+#train col=M24 dir=up num=24 days="Wed" kind=mixed note="Mixed No. 24, Bonavista branch: Bonavista 9.00 a.m. Wednesday to Clarenville 4.00 p.m. (May 1949 folder)."
+#train col=M12 dir=up num=12 days="Mon" kind=mixed note="Mixed No. 12, Bonavista branch: Bonavista 2.30 p.m. Monday to Clarenville 7.30 p.m. (May 1949 folder)."
+#train col=M28 dir=up num=28 days="Thu" kind=mixed note="Mixed No. 28, Bonavista branch: Bonavista 5.30 p.m. Thursday to Clarenville 10.30 p.m. (May 1949 folder)."
+mile,station,principal,prov,tz,M11,M23,M27,M24,M12,M28
+0,Clarenville,1,NL,NS,lv 12.30a,lv 9.30a,lv 5.30a,ar 4.00p,ar 7.30p,ar 10.30p
+1.7,Shoal Harbor,1,NL,NS,ar 12.35a / lv 12.36a,ar 9.35a / lv 9.40a,ar 5.35a / lv 5.36a,ar 3.50p / lv 3.55p,ar 7.23p / lv 7.25p,ar 10.23p / lv 10.25p
+2.5,Church Siding,0,NL,NS,~f12.39a,~f9.43a,~f5.39a,~f3.46p,~f7.20p,~f10.20p
+3.6,Mill's Siding,0,NL,NS,~f12.42a,~f9.48a,~f5.42a,~f3.41p,~f7.16p,~f10.16p
+5.1,Milton,0,NL,NS,~f12.47a,~f9.54a,~f5.47a,~f3.35p,~f7.10p,~f10.10p
+5.7,Brickyard,0,NL,NS,f12.49a,f9.57a,f5.49a,f3.32p,f7.08p,f10.08p
+7.2,George's Brook,0,NL,NS,~f12.54a,~f10.03a,~f5.54a,~f3.25p,~f7.03p,~f10.03p
+12.7,Barrett's Siding,0,NL,NS,~f1.11a,~f10.26a,~f6.11a,~f3.00p,~f6.46p,~f9.46p
+13.8,Twelfth Mile Siding,0,NL,NS,f1.15a,f10.30a,f6.15a,f2.55p,f6.42p,f9.42p
+14.6,Morley's Siding,0,NL,NS,~f1.18a,~f10.35a,~f6.18a,~f2.50p,~f6.39p,~f9.39p
+19.7,Lethbridge,1,NL,NS,1.36a,11.10a,6.36a,2.20p,6.22p,9.22p
+21.2,Hancock's Siding,0,NL,NS,~f1.41a,~f11.15a,~f6.41a,~f2.12p,~f6.17p,~f9.17p
+22.7,Pye's Mill,0,NL,NS,~f1.46a,~f11.21a,~f6.46a,~f2.03p,~f6.11p,~f9.11p
+25.4,Strickland's Siding,0,NL,NS,~f1.54a,~f11.30a,~f6.54a,~f1.48p,~f6.01p,~f9.01p
+26.8,New Country Siding,0,NL,NS,f1.59a,f11.35a,f6.59a,f1.40p,f5.56p,f8.56p
+29.1,Parson's Siding,0,NL,NS,~f2.07a,~f11.46a,~f7.07a,~f1.31p,~f5.48p,~f8.48p
+31.7,Southern Bay,0,NL,NS,f2.15a,f11.59a,f7.15a,f1.20p,f5.40p,f8.40p
+36.5,Princeton,1,NL,NS,2.35a,12.30p,7.35a,1.00p,5.25p,8.25p
+38.7,Summerville,0,NL,NS,~f2.42a,~f12.40p,~f7.42a,~f12.49p,~f5.17p,~f8.17p
+43.2,Abbott's Siding,0,NL,NS,~f2.56a,~f1.00p,~f7.56a,~f12.27p,~f5.00p,~f8.00p
+46.7,Carey's Ridge,0,NL,NS,f3.07a,f1.15p,f8.07a,f12.10p,f4.47p,f7.47p
+54.7,Trinity Junction,1,NL,NS,3.35a,2.00p,8.35a,11.35a,4.24p,7.24p
+56.9,Lockston,0,NL,NS,~f3.44a,~f2.09p,~f8.44a,~f11.24a,~f4.16p,~f7.16p
+59.5,Trinity East,0,NL,NS,f3.55a,f2.20p,f8.55a,f11.10a,f4.07p,f7.07p
+61,Port Rexton,1,NL,NS,4.02a,2.30p,9.02a,11.00a,4.02p,7.02p
+62,Port Rexton Ballast Pit,0,NL,NS,~f4.05a,~f2.35p,~f9.05a,~f10.56a,~f3.59p,~f6.59p
+65.2,English Harbour,0,NL,NS,~f4.14a,~f2.52p,~f9.14a,~f10.41a,~f3.48p,~f6.48p
+72.2,Camp 7,0,NL,NS,f4.35a,f3.28p,f9.35a,f10.10a,f3.25p,f6.25p
+73.5,Wood Spur,0,NL,NS,f4.39a,f3.40p,f9.39a,f10.05a,f3.21p,f6.21p
+79.2,Catalina,1,NL,NS,5.00a,4.15p,10.00a,9.45a,3.04p,6.04p
+84.5,Elliston,0,NL,NS,f5.15a,f4.50p,f10.15a,f9.20a,f2.46p,f5.46p
+89.7,Bonavista,1,NL,NS,ar 5.30a,ar 5.10p,ar 10.30a,lv 9.00a,lv 2.30p,lv 5.30p

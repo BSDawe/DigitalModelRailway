@@ -1,22 +1,36 @@
-# Newfoundland Railway: Argentia - Placentia branches, St. John's - Placentia Junction - Argentia Junction - Placentia, back to Argentia Junction - Argentia (mixed trains).
-# Official Guide, May 1948: Newfoundland Railway, schedule of January 11, 1948 ("Change of schedules will be effective May 9, figures not available"); Newfoundland time (noon Atlantic is 12.30 p.m. Newfoundland). Track: the Wikipedia map of the Newfoundland Railway (CC-BY-4.0; Brendan); stations at the CGN points (Brendan), on the track.
-# Signs: a Mon. and Thurs.; b Wed. and Sat.; c Thurs. and Sun.; d Tues., Thurs. and Sat.; e Fri. and Mon.; f flag stop; g Mon. only; h Wed. only; i Sun., Tues., Thurs., Fri.; o Tues. and Fri.; q Fri. only; y Wed. and Sat.; z Tues. only; double cross Mon., Wed. and Fri.; # Thurs. only; psi mixed train.
-# Miles past Argentia Junction as printed plus the mile back from Placentia (79.6, 80.6, 81.6, 84.7: Argentia 82.7 in the table).
-#train col=M5 num=5 dir=down days="Mon,Wed,Fri" kind=mixed note="Newfoundland Railway mixed No. 5: St. John's 9.00 a.m. to Placentia Junction, Placentia 12.58 p.m. and Argentia 1.20 p.m. (Mon., Wed. and Fri.); the Argentia branch is ESTIMATED on the map."
-#train col=M6 num=6 dir=up days="Mon,Wed,Fri" kind=mixed note="Newfoundland Railway mixed No. 6: Argentia 3.00 p.m., Placentia 3.24 p.m., to St. John's 7.25 p.m. (Mon., Wed. and Fri.); the Argentia branch is ESTIMATED on the map."
+# Newfoundland Railway: Argentia - Placentia branches, St. John's - Placentia Junction - Argentia Junction - Placentia, back to Argentia Junction - Argentia (mixed trains; branch trains 43 / 44 and 41 / 42 between Argentia Junction and Placentia are the same train). Miles past Argentia Junction: the folder's, plus the mile back from Placentia.
+# Canadian National Railways, "Lines in Newfoundland", Folder N No. 1, May 8, 1949 (summer schedule), used for the week of 5 July 1948 with the days and trains of the
+# Newfoundland Railway notices in The Daily News, St. John's, 5 - 9 July 1948 (Brendan, 16 Nov 2026). Written by tools/nfr_1949.py: see its heading for the rules.
+# Newfoundland summer time (tz NS: an hour and a half ahead of Atlantic standard). "~": a time not printed, estimated. f: stops on signal.
+#train col=M5 dir=down num=5 days="Mon,Wed,Fri" kind=mixed note="Mixed No. 5: St. John's 9.00 a.m. Monday, Wednesday and Friday to Placentia 12.58 p.m. and Argentia 1.20 p.m.; the regular 9 a.m. train to Argentia that met S.S. Bar Haven for the Bay Route on Monday 5 July 1948 (Newfoundland Railway notice). Times of the May 1949 folder."
+#train col=M6 dir=up num=6 days="Mon,Wed,Fri" kind=mixed note="Mixed No. 6: Argentia 3.00 p.m. Monday, Wednesday and Friday, Placentia 3.24 p.m., to St. John's 7.25 p.m. (May 1949 folder)."
 mile,station,principal,prov,tz,M5,M6
-0,St. John's,1,NL,N,lv 9.00a,ar 7.25p
-9,Irvine,0,NL,N,f9.22a,f7.02p
-13,Topsail,0,NL,N,f9.30a,f6.50p
-19,Kelligrew's,0,NL,N,f9.50a,f6.32p
-25,Duff's,0,NL,N,f10.05a,f6.20p
-30,Holyrood,0,NL,N,10.20a,6.08p
-34,Woodford's,0,NL,N,f10.29a,f5.50p
-36,Avondale,0,NL,N,10.40a,5.40p
-42,Brigus Junction,1,NL,N,10.55a,5.24p
-55,Whitbourne,1,NL,N,11.44a,4.40p
-62,Placentia Junction,1,NL,N,ar 11.59a / lv 12.02p,ar 4.13p / lv 4.15p
-79.6,Argentia Junction,1,NL,N,12.54p,3.28p
-80.6,Placentia,1,NL,N,ar 12.58p / lv 1.06p,ar 3.14p / lv 3.24p
-81.6,Argentia Junction,0,NL,N,1.10p,3.10p
-84.7,Argentia,1,NL,N,ar 1.20p,lv 3.00p
+0,St. John's,1,NL,NS,lv 9.00a,ar 7.25p
+8.9,Irvine,0,NL,NS,f9.22a,f7.05p
+13.1,Topsail,0,NL,NS,f9.30a,f6.53p
+15.4,Manuels,0,NL,NS,f9.35a,f6.45p
+19.3,Kelligrew's,0,NL,NS,9.53a,f6.35p
+21,Upper Gullies,0,NL,NS,~f9.57a,~f6.31p
+23.8,Seal Cove,0,NL,NS,~f10.03a,~f6.24p
+25.4,Duff's,0,NL,NS,f10.06a,f6.20p
+28.4,Briens,0,NL,NS,~f10.15a,~f6.13p
+30.3,Holyrood,0,NL,NS,10.20a,6.08p
+33.8,Woodford's,0,NL,NS,f10.29a,f5.50p
+36.3,Avondale,0,NL,NS,10.40a,5.40p
+41.8,Brigus Junction,1,NL,NS,ar 10.55a / lv 11.05a,ar 5.14p / lv 5.24p
+45,Maher's,0,NL,NS,f11.13a,f5.04p
+49.2,Ocean Pond,0,NL,NS,~f11.23a,~f4.53p
+54.6,Whitbourne,1,NL,NS,ar 11.36a / lv 11.44a,ar 4.30p / lv 4.40p
+59.6,Spread Eagle,0,NL,NS,~f11.55a,~f4.19p
+61.6,Placentia Junction,1,NL,NS,ar 11.59a / lv 12.02p,ar 4.13p / lv 4.15p
+63.6,2nd Mile,0,NL,NS,~f12.07p,~f4.08p
+64.3,Rhody's Pond,0,NL,NS,~f12.09p,~f4.07p
+64.5,Beach Grove,0,NL,NS,~f12.10p,~f4.06p
+66.8,Riverside,0,NL,NS,~f12.16p,~f4.01p
+72.9,Ville Marie,0,NL,NS,f12.33p,f3.46p
+76.4,Dunville,0,NL,NS,~f12.44p,~f3.37p
+78.3,Barren Pond,0,NL,NS,~f12.50p,~f3.31p
+79.6,Argentia Junction,1,NL,NS,ar 12.54p / lv 12.55p,ar 3.27p / lv 3.28p
+80.6,Placentia,1,NL,NS,ar 12.58p / lv 1.06p,ar 3.14p / lv 3.24p
+81.6,Argentia Junction,0,NL,NS,ar 1.09p / lv 1.10p,ar 3.10p / lv 3.11p
+84.6,Argentia,1,NL,NS,ar 1.20p,lv 3.00p

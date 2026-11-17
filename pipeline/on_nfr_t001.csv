@@ -1,52 +1,90 @@
 # Newfoundland Railway: main line, St. John's - Port-aux-Basques (547 miles; 3 ft. 6 in. gauge).
-# Official Guide, May 1948: Newfoundland Railway, schedule of January 11, 1948 ("Change of schedules will be effective May 9, figures not available"); Newfoundland time (noon Atlantic is 12.30 p.m. Newfoundland). Track: the Wikipedia map of the Newfoundland Railway (CC-BY-4.0; Brendan); stations at the CGN points (Brendan), on the track.
-# Signs: a Mon. and Thurs.; b Wed. and Sat.; c Thurs. and Sun.; d Tues., Thurs. and Sat.; e Fri. and Mon.; f flag stop; g Mon. only; h Wed. only; i Sun., Tues., Thurs., Fri.; o Tues. and Fri.; q Fri. only; y Wed. and Sat.; z Tues. only; double cross Mon., Wed. and Fri.; # Thurs. only; psi mixed train.
-# The mixed trains between St. John's and Brigus Junction / Placentia Junction (psi 5 - 8) are in on_nfr_t002 (Brigus branch) and on_nfr_t003 (Argentia - Placentia).
-#train col=No1 num=1 dir=down days="Mon,Thu" kind=passenger note="Newfoundland Railway Express No. 1: St. John's Mon. and Thurs. 5.00 p.m. to Port-aux-Basques Tues. and Fri. 7.30 p.m., for the steamer to North Sydney. Sleeping and dining cars."
-#train col=No15 num=15 dir=down days="Wed,Sat" kind=passenger note="Newfoundland Railway Express No. 15: St. John's Wed. and Sat. 5.00 p.m. to Millertown Junction 7.35 a.m. Sleeping and dining cars."
-#train col=No2 num=2 dir=up days="Thu,Sun" kind=passenger note="Newfoundland Railway Express No. 2: Port-aux-Basques Thurs. and Sun. 7.00 p.m. (from the North Sydney steamer) to St. John's Fri. and Mon. 10.00 p.m. Sleeping and dining cars."
-#train col=No16 num=16 dir=up days="Thu,Sun" kind=passenger note="Newfoundland Railway Express No. 16: Millertown Junction Thurs. and Sun. 6.00 p.m. to St. John's Fri. and Mon. 9.00 a.m. Sleeping and dining cars."
-mile,station,principal,prov,tz,No1,No15,No2,No16
-0,St. John's,1,NL,N,lv 5.00p,lv 5.00p,ar 10.00p,ar 9.00a
-9,Irvine,0,NL,N,,,,
-13,Topsail,0,NL,N,,,,
-19,Kelligrew's,0,NL,N,f5.45p,f5.45p,f9.08p,8.10a
-25,Duff's,0,NL,N,,,,
-30,Holyrood,0,NL,N,6.08p,6.08p,8.42p,7.42a
-34,Woodford's,0,NL,N,f6.18p,f6.18p,f8.33p,f7.33a
-36,Avondale,0,NL,N,6.25p,6.25p,8.25p,7.26a
-42,Brigus Junction,1,NL,N,6.39p,6.39p,8.10p,7.12a
-55,Whitbourne,1,NL,N,7.24p,7.24p,7.32p,6.30a
-62,Placentia Junction,1,NL,N,,f7.42p,,f6.05a
-80,Tickle Harbour,0,NL,N,f8.28p,f8.28p,f6.30p,f5.24a
-99,Arnold's Cove,0,NL,N,9.31p,9.31p,5.35p,4.27a
-116,Northern Bight,0,NL,N,10.22p,10.22p,4.50p,3.40a
-131,Clarenville,1,NL,N,11.20p,11.20p,4.10p,3.00a
-133,Shoal Harbor,0,NL,N,f11.26p,f11.26p,f3.45p,f2.23a
-144,Thorburn Lake,0,NL,N,11.54p,11.54p,f3.20p,f1.53a
-151,Port Blandford,1,NL,N,12.15a,12.15a,2.55p,1.25a
-165,Terra Nova,0,NL,N,12.50a,12.50a,2.22p,12.50a
-181,Alexander Bay,0,NL,N,1.26a,1.26a,1.43p,12.11a
-190,Gambo,1,NL,N,1.55a,1.55a,1.18p,11.46p
-204,Benton,0,NL,N,2.34a,2.34a,12.33p,11.04p
-213,Gander,1,NL,N,3.00a,3.00a,12.12p,10.45p
-230,Glenwood,0,NL,N,3.40a,3.40a,11.25a,9.58p
-245,Notre Dame Junction,1,NL,N,4.18a,4.18a,10.50a,9.24p
-254,Norris Arm,0,NL,N,4.40a,4.40a,10.17a,8.52p
-267,Bishop's Falls,1,NL,N,5.30a,5.35a,9.45a,8.20p
-276,Grand Falls,1,NL,N,5.55a,6.00a,9.05a,7.40p
-294,Badger,0,NL,N,6.35a,6.40a,8.20a,6.50p
-310,Millertown Junction,1,NL,N,7.30a,ar 7.35a,7.30a,lv 6.00p
-357,Howley,0,NL,N,9.50a,,4.50a,
-374,Deer Lake,1,NL,N,10.40a,,4.05a,
-404,Humbermouth,1,NL,N,12.25p,,2.30a,
-405,Corner Brook,1,NL,N,12.38p,,1.57a,
-408,Curling,0,NL,N,12.45p,,1.40a,
-430,Spruce Brook,0,NL,N,1.45p,,12.35a,
-438,Harry's Brook,0,NL,N,f2.10p,,12.10a,
-452,Stephenville,1,NL,N,2.50p,,11.35p,
-460,St. George's,1,NL,N,3.10p,,11.13p,
-488,St. Fintan's,0,NL,N,4.40p,,9.55p,
-513,South Branch,0,NL,N,f5.50p,,f8.38p,
-528,St. Andrews,0,NL,N,6.35p,,7.55p,
-547,Port-aux-Basques,1,NL,N,ar 7.30p,,lv 7.00p,
+# Canadian National Railways, "Lines in Newfoundland", Folder N No. 1, May 8, 1949 (summer schedule), used for the week of 5 July 1948 with the days and trains of the
+# Newfoundland Railway notices in The Daily News, St. John's, 5 - 9 July 1948 (Brendan, 16 Nov 2026). Written by tools/nfr_1949.py: see its heading for the rules.
+# Newfoundland summer time (tz NS: an hour and a half ahead of Atlantic standard). "~": a time not printed, estimated. f: stops on signal.
+#train col=No15 dir=down num=15 days="Mon,Wed" kind=passenger note="Local express No. 15: St. John's 5.00 p.m. Monday and Wednesday for points to Corner Brook (2.08 p.m. next day): the days and hour of the Newfoundland Railway notices of July 1948; times of the May 1949 folder. Coaches, dining car and standard sleeping cars (1949 folder)."
+#train col=No15S dir=down num=15 days="Sat" kind=passenger note="Local express No. 15: St. John's 5.00 p.m. Saturday through to Port-aux-Basques (9.45 p.m. Sunday), connecting there with S.S. Burgeo for the South Coast and at Lewisporte with S.S. Springdale (notices of July 1948); times of the May 1949 folder. Coaches, dining car and standard sleeping cars (1949 folder)."
+#train col=No1 dir=down num=1 days="Tue,Thu" kind=passenger note="Foreign express No. 1: St. John's 5.00 p.m. Tuesday and Thursday to Port-aux-Basques (6.40 p.m. next day) for the North Sydney steamer: the days and hour of the notices of July 1948; times of the May 1949 folder. Coaches, dining car and standard sleeping cars (1949 folder)."
+#train col=No3 dir=down num=3 days="Sun" kind=passenger name="The Overland Limited" note="The Overland Limited, No. 3: St. John's 10.00 a.m. Sundays, making direct connection for foreign points (notice of 9 July 1948), Port-aux-Basques 8.50 a.m. Monday for the 9.30 a.m. steamer; times of the May 1949 folder. Coaches, dining car, standard sleeping cars, compartment observation car."
+#train col=B9 dir=down num="" days="Wed" kind=passenger name="Bonavista train" to="Bonavista (No. 27 from Clarenville)" note="Train for points to Bonavista, St. John's 9.00 p.m. Wednesday, sleeper for Trinity attached (Newfoundland Railway notice, 7 July 1948). Not in any timetable in hand: the times to Clarenville are ESTIMATED on No. 15's running times; from Clarenville it is taken to be mixed No. 27 (Thursday 5.30 a.m., May 1949 folder)."
+#train col=No2 dir=up num=2 days="Sun,Wed,Fri" kind=passenger note="Express No. 2: Port-aux-Basques 9.00 a.m. Sunday, Wednesday and Friday (from the North Sydney steamer) to St. John's 10.45 a.m. next day. May 1949 folder; the 1948 notices do not give the eastbound trains. Coaches, dining car, standard sleeping cars; compartment observation car from Port-aux-Basques Wednesdays."
+#train col=No14 dir=up num=14 days="Tue" kind=passenger note="Express No. 14: Port-aux-Basques 9.00 a.m. Tuesday to St. John's 12.45 p.m. Wednesday. May 1949 folder; the 1948 notices do not give the eastbound trains. Coaches, dining car and standard sleeping cars (1949 folder)."
+#train col=No16 dir=up num=16 days="Thu,Sat" kind=passenger note="Express No. 16: Corner Brook 11.00 a.m. Thursday and Saturday to St. John's 7.00 a.m. next day. May 1949 folder; the 1948 notices do not give the eastbound trains. Coaches, dining car and standard sleeping cars (1949 folder)."
+mile,station,principal,prov,tz,No15,No15S,No1,No3,B9,No2,No14,No16
+0,St. John's,1,NL,NS,lv 5.00p,lv 5.00p,lv 5.00p,lv 10.00a,lv 9.00p,ar 10.45a,ar 12.45p,ar 7.00a
+15.4,Manuels,0,NL,NS,f5.33p,f5.33p,f5.33p,f10.33a,,f10.04a,f12.04p,f6.18a
+19.3,Kelligrew's,0,NL,NS,f5.45p,f5.45p,f5.45p,,,9.53a,,
+30.3,Holyrood,0,NL,NS,6.08p,6.08p,6.08p,f11.06a,~10.08p,9.30a,11.30a,5.40a
+36.3,Avondale,0,NL,NS,6.27p,6.27p,6.25p,f11.23a,~10.27p,9.14a,11.14a,5.17a
+41.8,Brigus Junction,1,NL,NS,ar 6.42p / lv 6.53p,ar 6.42p / lv 6.53p,ar 6.39p / lv 6.49p,ar 11.37a / lv 11.43a,~10.42p,ar 8.55a / lv 9.01a,11.00a,ar 4.50a / lv 5.01a
+45,Maher's,0,NL,NS,f7.00p,f7.00p,f6.56p,,,f8.48a,f10.48a,f4.37a
+49.2,Ocean Pond,0,NL,NS,~f7.10p,~f7.10p,,,,,~f10.40a,~f4.27a
+54.6,Whitbourne,1,NL,NS,ar 7.23p / lv 7.35p,ar 7.23p / lv 7.35p,ar 7.17p / lv 7.24p,ar 12.10p / lv 12.17p,~11.23p,ar 8.25a / lv 8.31a,10.30a,ar 4.03a / lv 4.15a
+61.6,Placentia Junction,1,NL,NS,f7.52p,f7.52p,,,,,f10.10a,f3.48a
+69,Long Harbour,0,NL,NS,~f8.10p,~f8.10p,,,,,~f9.55a,~f3.31a
+80,Tickle Harbour,0,NL,NS,f8.38p,f8.38p,f8.22p,,,f7.35a,f9.33a,f3.05a
+87.3,Rantem,0,NL,NS,~f9.09p,~f9.09p,,,,,~f9.09a,~f2.41a
+89,Upshall,0,NL,NS,~f9.17p,~f9.17p,,,,,~f9.03a,~f2.36a
+91.4,LaManche Siding,0,NL,NS,f9.27p,f9.27p,,,,,f8.55a,f2.28a
+94.5,Southern Harbour,0,NL,NS,~f9.36p,~f9.36p,,,,,~f8.47a,~f2.20a
+98.5,Arnold's Cove,0,NL,NS,9.48p,9.48p,9.23p,f1.57p,~1.48a,6.43a,8.36a,2.10a
+103.2,Come-By-Chance,0,NL,NS,f10.02p,f10.02p,f9.36p,,,f6.30a,f8.22a,f1.56a
+110,Goobie's,0,NL,NS,f10.28p,f10.28p,f9.58p,,,f6.12a,f8.03a,f1.32a
+116.2,Northern Bight,0,NL,NS,10.43p,10.43p,10.13p,f2.41p,~2.43a,6.00a,7.51a,1.20a
+131.1,Clarenville,1,NL,NS,ar 11.20p / lv 11.50p,ar 11.20p / lv 11.50p,ar 10.50p / lv 11.10p,ar 3.15p / lv 3.30p,~3.20a,ar 5.00a / lv 5.20a,ar 6.49a / lv 7.10a,ar 12.14a / lv 12.35a
+132.8,Shoal Harbor,0,NL,NS,f11.55p,f11.55p,f11.16p,,,,f6.44a,f12.09a
+135.8,Shoal Harbour Pit,0,NL,NS,12.03a,12.03a,,,,,,12.03a
+143.7,Thorburn Lake,0,NL,NS,f12.23a,f12.23a,11.40p,,,4.30a,f6.20a,11.40p
+150.9,Port Blandford,1,NL,NS,12.43a,12.43a,11.58p,f4.14p,,4.06a,5.57a,11.16p
+164.6,Terra Nova,0,NL,NS,1.18a,1.18a,12.32a,f4.44p,,3.34a,5.25a,10.44p
+181,Alexander Bay,0,NL,NS,2.02a,2.02a,1.08a,f5.22p,,2.55a,4.40a,10.05p
+190,Gambo,1,NL,NS,ar 2.27a / lv 2.37a,ar 2.27a / lv 2.37a,ar 1.28a / lv 1.38a,5.47p,,ar 2.17a / lv 2.27a,ar 3.58a / lv 4.08a,ar 9.29p / lv 9.38p
+204.2,Benton,0,NL,NS,3.20a,3.20a,2.18a,f6.17p,,1.34a,3.10a,8.52p
+213,Gander,1,NL,NS,ar 3.43a / lv 4.10a,ar 3.43a / lv 4.10a,2.44a,6.38p,,1.10a,ar 2.28a / lv 2.44a,ar 8.12p / lv 8.30p
+216.1,Cobb's Camp,0,NL,NS,f4.17a,f4.17a,,,,,f2.20a,f8.05p
+225.1,Monchy,0,NL,NS,4.37a,4.37a,,,,,,
+229.3,Appleton,0,NL,NS,f4.48a,f4.48a,f3.18a,f7.09p,,,,
+230.3,Glenwood,0,NL,NS,4.55a,4.55a,3.23a,f7.13p,,12.23a,1.45a,7.32p
+244.6,Notre Dame Junction,1,NL,NS,ar 5.28a / lv 5.38a,ar 5.28a / lv 5.38a,ar 3.54a / lv 4.03a,,,ar 11.44p / lv 11.51p,ar 12.56a / lv 1.10a,ar 6.50p / lv 7.01p
+253.9,Norris Arm,0,NL,NS,6.03a,6.03a,4.26a,f8.12p,,11.20p,12.32a,6.30p
+262.1,Jumper's Brook,0,NL,NS,,,,,,,,6.12p
+267.3,Bishop's Falls,1,NL,NS,ar 6.40a / lv 7.10a,ar 6.40a / lv 7.10a,ar 5.00a / lv 5.30a,ar 8.45p / lv 9.00p,,ar 10.20p / lv 10.50p,ar 11.30p / lv 11.59p,ar 5.30p / lv 6.00p
+276.1,Grand Falls,1,NL,NS,ar 7.33a / lv 7.45a,ar 7.33a / lv 7.45a,ar 5.52a / lv 6.02a,9.25p,,ar 9.45p / lv 9.55p,ar 10.55p / lv 11.05p,ar 4.45p / lv 5.05p
+280.8,Red Cliff,0,NL,NS,,,,9.35p,,9.35p,,
+294.3,Badger,0,NL,NS,8.40a,8.40a,6.43a,10.05p,,9.05p,10.15p,4.03p
+301.5,Collishaw's,0,NL,NS,~f9.05a,~f9.05a,,,,,~f9.54p,~f3.41p
+302.7,Westlake,0,NL,NS,~f9.09a,~f9.09a,,,,,~f9.51p,~f3.37p
+310,Millertown Junction,1,NL,NS,9.35a,9.35a,7.26a,10.50p,,8.20p,9.30p,3.15p
+324.9,Quarry,0,NL,NS,f10.18a,f10.18a,f8.05a,,,f7.33p,f8.43p,f2.33p
+332.8,Gaff Topsail,0,NL,NS,f10.36a,f10.36a,f8.25a,,,f7.15p,f8.25p,f2.15p
+345.7,Kitty's Brook,0,NL,NS,f11.08a,f11.08a,f8.53a,,,f6.25p,f7.35p,f1.36p
+356.6,Howley,0,NL,NS,11.40a,11.40a,9.20a,12.36a,,5.55p,7.05p,1.10p
+367.4,Northern Siding,0,NL,NS,,,,,,,6.33p,
+373.6,Deer Lake,1,NL,NS,12.30p,12.30p,10.05a,1.15a,,5.10p,6.18p,12.30p
+387.5,Pasadena,0,NL,NS,~f1.11p,~f1.11p,~f10.44a,,,~f4.33p,~f5.42p,~f11.52a
+403.8,Humbermouth,1,NL,NS,ar 2.00p / lv 2.05p,ar 2.00p / lv 2.05p,ar 11.30a / lv 11.35a,ar 2.25a / lv 2.27a,,ar 3.48p / lv 3.50p,ar 4.55p / lv 5.00p,ar 11.05a / lv 11.08a
+405,Corner Brook,1,NL,NS,ar 2.08p,ar 2.08p / lv 2.40p,ar 11.38a / lv 11.50a,ar 2.30a / lv 2.40a,,ar 3.35p / lv 3.45p,ar 4.35p / lv 4.50p,lv 11.00a
+407.8,Curling,0,NL,NS,,2.50p,11.58a,2.50a,,3.30p,4.27p,
+415.3,Cook's Brook,0,NL,NS,,3.10p,,,,3.10p,f4.04p,
+424.8,Beaver Pond,0,NL,NS,,f3.34p,,,,,f3.37p,
+430.1,Spruce Brook,0,NL,NS,,3.50p,12.56p,3.48a,,2.30p,3.22p,
+438.4,Harry's Brook,0,NL,NS,,f4.15p,f1.21p,,,f2.10p,f3.00p,
+446.5,Black Duck,0,NL,NS,,f4.37p,1.45p,,,1.45p,f2.35p,
+449,White's Road,0,NL,NS,,f4.42p,f1.50p,,,f1.40p,2.25p,
+452.5,Stephenville,1,NL,NS,,ar 4.50p / lv 5.10p,2.05p,4.48a,,1.30p,ar 2.00p / lv 2.10p,
+459.7,St. George's,1,NL,NS,,5.35p,2.25p,5.04a,,1.05p,1.42p,
+465.5,Flat Bay,0,NL,NS,,~f5.50p,~f2.40p,,,~f12.48p,~f1.22p,
+469.5,St. Teresa,0,NL,NS,,f6.00p,f2.51p,,,f12.36p,f1.08p,
+473.1,Fishell's Siding,0,NL,NS,,f6.11p,f3.01p,,,12.24p,f12.53p,
+477.2,Heatherton,0,NL,NS,,~f6.24p,~f3.15p,,,~f12.12p,~f12.39p,
+480.2,Robinson's,0,NL,NS,,6.34p,3.25p,5.51a,,12.03p,12.28p,
+482.1,Cartyville,0,NL,NS,,f6.40p,f3.30p,f5.55a,,f11.58a,f12.20p,
+484.7,Jeffreys,0,NL,NS,,~f6.49p,~f3.39p,,,~f11.50a,~f12.10p,
+487.7,St. Fintan's,0,NL,NS,,7.00p,3.50p,6.10a,,11.40a,11.59a,
+498.3,Codroy Pond,0,NL,NS,,f7.30p,,,,,f11.28a,
+512.7,South Branch,0,NL,NS,,f8.10p,f5.00p,f7.16a,,f10.30a,f10.42a,
+522.3,Doyle's,0,NL,NS,,8.35p,5.25p,7.38a,,10.05a,10.12a,
+525.4,Tompkins,0,NL,NS,,f8.45p,f5.35p,f7.48a,,f9.57a,f10.03a,
+527.9,St. Andrews,0,NL,NS,,8.55p,5.45p,7.57a,,9.50a,9.55a,
+538.9,Cape Ray,0,NL,NS,,f9.25p,f6.15p,,,f9.20a,f9.22a,
+547.2,Port-aux-Basques,1,NL,NS,,ar 9.45p,ar 6.40p,ar 8.50a,,lv 9.00a,lv 9.00a,

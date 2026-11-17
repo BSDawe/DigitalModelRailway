@@ -1,12 +1,17 @@
-# Newfoundland Railway: Lewisporte branch, Notre Dame Junction - Lewisporte (mixed trains; printed in a note beside the Bonavista branch).
-# Official Guide, May 1948: Newfoundland Railway, schedule of January 11, 1948 ("Change of schedules will be effective May 9, figures not available"); Newfoundland time (noon Atlantic is 12.30 p.m. Newfoundland). Track: the Wikipedia map of the Newfoundland Railway (CC-BY-4.0; Brendan); stations at the CGN points (Brendan), on the track.
-# Signs: a Mon. and Thurs.; b Wed. and Sat.; c Thurs. and Sun.; d Tues., Thurs. and Sat.; e Fri. and Mon.; f flag stop; g Mon. only; h Wed. only; i Sun., Tues., Thurs., Fri.; o Tues. and Fri.; q Fri. only; y Wed. and Sat.; z Tues. only; double cross Mon., Wed. and Fri.; # Thurs. only; psi mixed train.
-#train col=D425 num="" dir=down days="Tue,Thu,Fri,Sun" kind=mixed note="Newfoundland Railway mixed, Lewisporte branch: Notre Dame Junction 4.25 a.m. to Lewisporte 4.55."
-#train col=D1100 num="" dir=down days="Mon,Fri" kind=mixed note="Newfoundland Railway mixed, Lewisporte branch: Notre Dame Junction 11.00 a.m. to Lewisporte 11.30."
-#train col=D935 num="" dir=down days="Thu,Sun" kind=mixed note="Newfoundland Railway mixed, Lewisporte branch: Notre Dame Junction 9.35 p.m. to Lewisporte 10.05."
-#train col=U325 num="" dir=up days="Tue,Thu,Fri,Sun" kind=mixed note="Newfoundland Railway mixed, Lewisporte branch: Lewisporte 3.25 a.m. to Notre Dame Junction 3.55."
-#train col=U1000 num="" dir=up days="Mon,Fri" kind=mixed note="Newfoundland Railway mixed, Lewisporte branch: Lewisporte 10.00 a.m. to Notre Dame Junction 10.30."
-#train col=U830 num="" dir=up days="Thu,Sun" kind=mixed note="Newfoundland Railway mixed, Lewisporte branch: Lewisporte 8.30 p.m. to Notre Dame Junction 9.00."
-mile,station,principal,prov,tz,D425,D1100,D935,U325,U1000,U830
-0,Notre Dame Junction,1,NL,N,lv 4.25a,lv 11.00a,lv 9.35p,ar 3.55a,ar 10.30a,ar 9.00p
-9,Lewisporte,1,NL,N,ar 4.55a,ar 11.30a,ar 10.05p,lv 3.25a,lv 10.00a,lv 8.30p
+# Newfoundland Railway: Lewisporte branch, Notre Dame Junction - Lewisporte (mixed trains meeting the expresses and the coastal steamers).
+# Canadian National Railways, "Lines in Newfoundland", Folder N No. 1, May 8, 1949 (summer schedule), used for the week of 5 July 1948 with the days and trains of the
+# Newfoundland Railway notices in The Daily News, St. John's, 5 - 9 July 1948 (Brendan, 16 Nov 2026). Written by tools/nfr_1949.py: see its heading for the rules.
+# Newfoundland summer time (tz NS: an hour and a half ahead of Atlantic standard). "~": a time not printed, estimated. f: stops on signal.
+#train col=M21 dir=down num=21 days="Mon,Thu,Sat" kind=mixed note="Mixed No. 21, Lewisporte branch: Notre Dame Junction 12.05 a.m. to Lewisporte 12.35 a.m. (May 1949 folder)."
+#train col=M25 dir=down num=25 days="Wed" kind=mixed note="Mixed No. 25, Lewisporte branch: Notre Dame Junction 1.20 a.m. to Lewisporte 1.50 a.m. (May 1949 folder)."
+#train col=M17 dir=down num=17 days="Wed,Fri" kind=mixed note="Mixed No. 17, Lewisporte branch: Notre Dame Junction 4.15 a.m. to Lewisporte 4.45 a.m. (May 1949 folder)."
+#train col=M19 dir=down num=19 days="Tue,Thu,Sun" kind=mixed note="Mixed No. 19, Lewisporte branch: Notre Dame Junction 5.50 a.m. to Lewisporte 6.20 a.m. (May 1949 folder). Meets the local express from St. John's; with S.S. Springdale at Lewisporte (Thursday for Notre Dame Bay, Sunday for Green Bay: notices of July 1948)."
+#train col=M29 dir=down num=29 days="Thu,Sat" kind=mixed note="Mixed No. 29, Lewisporte branch: Notre Dame Junction 7.15 p.m. to Lewisporte 7.45 p.m. (May 1949 folder)."
+#train col=M18 dir=up num=18 days="Wed,Fri" kind=mixed note="Mixed No. 18, Lewisporte branch: Lewisporte 3.10 a.m. to Notre Dame Junction 3.40 a.m. (May 1949 folder)."
+#train col=M20 dir=up num=20 days="Tue,Thu,Sun" kind=mixed note="Mixed No. 20, Lewisporte branch: Lewisporte 4.45 a.m. to Notre Dame Junction 5.15 a.m. (May 1949 folder)."
+#train col=M30 dir=up num=30 days="Thu,Sat" kind=mixed note="Mixed No. 30, Lewisporte branch: Lewisporte 6.10 p.m. to Notre Dame Junction 6.40 p.m. (May 1949 folder)."
+#train col=M22 dir=up num=22 days="Sun,Wed,Fri" kind=mixed note="Mixed No. 22, Lewisporte branch: Lewisporte 11.00 p.m. to Notre Dame Junction 11.30 p.m. (May 1949 folder)."
+#train col=M26 dir=up num=26 days="Wed" kind=mixed note="Mixed No. 26, Lewisporte branch: Lewisporte 12.15 a.m. to Notre Dame Junction 12.45 a.m. (May 1949 folder)."
+mile,station,principal,prov,tz,M21,M25,M17,M19,M29,M18,M20,M30,M22,M26
+0,Notre Dame Junction,1,NL,NS,lv 12.05a,lv 1.20a,lv 4.15a,lv 5.50a,lv 7.15p,ar 3.40a,ar 5.15a,ar 6.40p,ar 11.30p,ar 12.45a
+9.3,Lewisporte,1,NL,NS,ar 12.35a,ar 1.50a,ar 4.45a,ar 6.20a,ar 7.45p,lv 3.10a,lv 4.45a,lv 6.10p,lv 11.00p,lv 12.15a

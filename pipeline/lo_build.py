@@ -348,15 +348,19 @@ NSY['gid'] = _gid_of('oncn005', 'North Sydney') or NSY['gid']; PAQ['gid'] = _gid
 ns_route, ns_st = water_route([NSY, PAQ], 150)
 SVC.update({'SaTuTh': 'W_0101010', 'WeFr': 'W_0010100', 'Mo': 'W_1000000'}); DAYS.update({'SaTuTh': 'Saturday, Tuesday and Thursday', 'WeFr': 'Wednesday and Friday', 'Mo': 'Monday'})
 NN = (' Newfoundland Railway steamer across the Cabot Strait, connecting with the Canadian National trains at North Sydney and the Newfoundland Railway at Port aux Basques.'
-      ' Printed in Atlantic time at North Sydney and Newfoundland time (half an hour later) at Port aux Basques. The ship on the run was generally the S.S. Cabot Strait (Brendan).')
+      ' Atlantic time at North Sydney, Newfoundland summer time (an hour and a half later) at Port aux Basques; times of the CN Newfoundland folder of May 1949, days as in the Official Guide of April 1948. The ship on the run was generally the S.S. Cabot Strait (Brendan).')
 def _ns(d, dy, a, b, txt): return dict(id=f'NFSS-{"DU"[d]}{dy}', num='Cabot Strait', name='Newfoundland Railway steamer', svc=SVC[dy], dir=d, vessel='Cabot Strait',   # Brendan, 16 Nov 2026: "would generally have been the Cabot Strait" (was unnamed, 9 Nov)
                                       
                                        stops=[[0 if d == 0 else 1, a, a, 1], [1 if d == 0 else 0, b, b, 1]], note=txt + NN)
-NS = [_ns(0, 'SaTuTh', hm('8.30p') - 4 * 3600, 86400 + hm('6.00a') - 4 * 3600 - 1800, 'North Sydney Sat., Tues. and Thurs. 8.30 p.m. to Port aux Basques 6.00 a.m. (Newfoundland time) Sun., Wed. and Fri.'),
-      _ns(1, 'WeFr', hm('9.00p') - 4 * 3600 - 1800, 86400 + hm('5.30a') - 4 * 3600, 'Port aux Basques Wed. and Fri. 9.00 p.m. (Newfoundland time) to North Sydney 5.30 a.m. Thurs. and Sat.'),
-      _ns(1, 'Mo', hm('10.00a') - 4 * 3600 - 1800, hm('6.30p') - 4 * 3600, 'Port aux Basques Monday 10.00 a.m. (Newfoundland time) to North Sydney 6.30 p.m.')]
+# 16 Nov 2026 (Brendan: the Newfoundland timetable rebuilt on the summer schedule): the steamer's summer times from the CN Newfoundland folder of May 8, 1949, which
+# keeps the days of the April 1948 Official Guide page (North Sydney Tues., Thurs., Sat.; Port aux Basques Wed., Fri. evening and Monday morning) and meets the
+# summer trains: Nos. 1 and 3 into Port aux Basques, No. 2 out. Newfoundland summer time at Port aux Basques (Atlantic + 1 1/2 h).
+_NTS = 4 * 3600 + 5400
+NS = [_ns(0, 'SaTuTh', hm('7.30p') - 4 * 3600, 86400 + hm('5.30a') - _NTS, 'North Sydney Tues., Thurs. and Sat. 7.30 p.m. (Atlantic time) to Port aux Basques 5.30 a.m. (Newfoundland summer time) Wed., Fri. and Sun., for express No. 2 at 9.00 a.m.'),
+      _ns(1, 'WeFr', hm('9.00p') - _NTS, 86400 + hm('4.30a') - 4 * 3600, 'Port aux Basques Wed. and Fri. 9.00 p.m. (Newfoundland summer time; from foreign express No. 1, in at 6.40 p.m.) to North Sydney 4.30 a.m. Thurs. and Sat.'),
+      _ns(1, 'Mo', hm('9.30a') - _NTS, hm('5.00p') - 4 * 3600, 'Port aux Basques Monday 9.30 a.m. (Newfoundland summer time; from the Overland Limited, in at 8.50 a.m.) to North Sydney 5.00 p.m.')]
 mkline('nfss', 'North Sydney – Port aux Basques (Newfoundland Railway steamer)', ns_route, ns_st, NS, ['to Port aux Basques', 'to North Sydney'],
-       'Newfoundland Railway steamer, North Sydney - Port aux Basques: CN page 1115, Official Guide, April 25, 1948 (Brendan); Atlantic / Newfoundland time as printed', 'nfr')
+       'Newfoundland Railway steamer, North Sydney - Port aux Basques: CN folder "Lines in Newfoundland", May 8, 1949 (summer times); days as CN page 1115, Official Guide, April 25, 1948 (Brendan)', 'nfr')
 
 # Yarmouth - Boston, Eastern Steamship Lines (CN Table 9, Official Guide, April 25, 1948, page 1115; Brendan, 8 Nov 2026: his Yarmouth point). The Official Guide's ESL page
 # (Brendan, 9 Nov 2026): S.S. Yarmouth; Boston (Central Wharf) 4.30 p.m. EDT, due 8.30 a.m. EDT = CN's 3.30 / 7.30 Eastern standard; Yarmouth (Evangeline Wharf). Central Wharf (Brendan: yes).
@@ -530,6 +534,12 @@ nf_voyage('nfbur', 'South Coast, Argentia – Port aux Basques (S.S. Burgeo)', _
   [('NFR-BURGEO-W', 'Burgeo', {_ix(_bu, 'St. Lawrence'): (-66, -30), _ix(_bu, 'Jersey Hr.'): (None, 9 + 20 / 60), _ix(_bu, 'Cape La Hune'): (None, D_ + 14.75)},
     'S.S. Burgeo, South Coast service, westbound: from Argentia (about Thursday July 1, estimated); fogbound at St. Lawrence July 2 - 3 (leaving Saturday 3 estimated); left Jersey Harbour 9.20 a.m. Monday July 5; left Cape La Hune 2.45 p.m. Tuesday 6; to Port aux Basques, for the connection with Saturday\'s express.')],
   ['to Port aux Basques', ''])
+# S.S. Burgeo back east: the Saturday July 10 local express (Port aux Basques 9.45 p.m. Sunday) "will make connection at Port aux Basques with S.S. Burgeo for
+# South Coast and Fortune Bay" (Newfoundland Railway notices, July 8 and 9): sailing estimated 11 p.m. Sunday 11.
+nf_voyage('nfbue', 'South Coast, Port aux Basques – Argentia (S.S. Burgeo)', nfseq('south_coast', rev=True, skip=('west',)),
+  [('NFR-BURGEO-E', 'Burgeo', {0: (None, 6 * D_ + 23)},
+    'S.S. Burgeo, South Coast and Fortune Bay service, eastbound: from Port aux Basques on the arrival of Saturday\'s local express (in 9.45 p.m. Sunday July 11; sailing 11 p.m. ESTIMATED), for regular ports to Argentia.')],
+  ['to Argentia', ''])
 # S.S. Bar Haven, Placentia Bay, Bay Run: the Monday July 5 morning train to Argentia connected; left Sound Island 11.50 a.m. Tuesday 6, outward; back to Argentia (estimated).
 _bh = nfseq('placentia_bay')
 nf_voyage('nfbho', 'Placentia Bay, Bay Run, outward (S.S. Bar Haven)', _bh,
@@ -543,10 +553,10 @@ nf_voyage('nfbhi', 'Placentia Bay, Bay Run, inward (S.S. Bar Haven)', nfseq('pla
 # Thursday 8 (the folder's day); left Fogo 10.30 a.m. Friday 9, inward; Green Bay again Sunday 11 (the folder's day). Next: Lewisporte Wednesday 14 (railway notice).
 _gb = nfseq('green_bay')
 nf_voyage('nfgbo', 'Green Bay, outward (S.S. Springdale)', _gb,
-  [('NFR-SPRINGDALE-GB1-OUT', 'Springdale', {0: (None, -4), _ix(_gb, 'Springdale'): (None, 9)},
-    'S.S. Springdale, Green Bay service: from Lewisporte Sunday July 4 (evening, estimated); left Springdale 9 a.m. Monday 5, outward.'),
-   ('NFR-SPRINGDALE-GB2-OUT', 'Springdale', {0: (None, 6 * D_ + 20)},
-    'S.S. Springdale, Green Bay service: from Lewisporte Sunday July 11 (the folder\'s Sunday sailing; ESTIMATED).')],
+  [('NFR-SPRINGDALE-GB1-OUT', 'Springdale', {0: (None, -16), _ix(_gb, 'Springdale'): (None, 9)},
+    'S.S. Springdale, Green Bay service: from Lewisporte Sunday July 4 after the Saturday local express\'s connection (in 6.20 a.m.; 8 a.m. estimated); left Springdale 9 a.m. Monday 5, outward.'),
+   ('NFR-SPRINGDALE-GB2-OUT', 'Springdale', {0: (None, 6 * D_ + 8)},
+    'S.S. Springdale, Green Bay service: from Lewisporte Sunday July 11 after the Saturday local express\'s connection (Newfoundland Railway notice, July 9; in 6.20 a.m.; 8 a.m. estimated).')],
   ['to Shoe Cove', ''])
 _gbi = nfseq('green_bay', rev=True, skip=('out',))
 nf_voyage('nfgbi', 'Green Bay, inward (S.S. Springdale)', _gbi,
@@ -554,7 +564,7 @@ nf_voyage('nfgbi', 'Green Bay, inward (S.S. Springdale)', _gbi,
     'S.S. Springdale, Green Bay service, inward: leaving Shoe Cove Tuesday July 6 (estimated); left Little Bay 3.30 p.m. Tuesday 6, inward; to Lewisporte.')],
   ['to Lewisporte', ''])
 nf_voyage('nfndo', 'Notre Dame Bay, outward (S.S. Springdale)', nfseq('notre_dame', skip=('in',)),
-  [('NFR-SPRINGDALE-ND-OUT', 'Springdale', {0: (None, 3 * D_ + 8)}, 'S.S. Springdale, Notre Dame Bay service: from Lewisporte Thursday July 8 (the folder\'s day; the hour estimated).')],
+  [('NFR-SPRINGDALE-ND-OUT', 'Springdale', {0: (None, 3 * D_ + 8)}, 'S.S. Springdale, Notre Dame Bay service: from Lewisporte Thursday July 8, after Wednesday\'s local express\'s connection (Newfoundland Railway notice, July 7; in 6.20 a.m.; 8 a.m. estimated).')],
   ['to Fogo', ''])
 nf_voyage('nfndi', 'Notre Dame Bay, inward (S.S. Springdale)', nfseq('notre_dame', rev=True),
   [('NFR-SPRINGDALE-ND-IN', 'Springdale', {0: (None, 4 * D_ + 10.5)}, 'S.S. Springdale, Notre Dame Bay service: left Fogo 10.30 a.m. Friday July 9, inward to Lewisporte.')],
