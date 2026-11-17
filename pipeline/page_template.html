@@ -341,7 +341,7 @@ for (const L of LINES) L.idx = L.stations.map(b => {
   return i;
 });
 const LINE_OF = Object.fromEntries(LINES.map(L => [L.key, L]));
-const KIND_LABEL = { c: 'Central Park Line', b: 'Burnaby Lake Line', l: 'Lulu Island Line', n: 'Marpole–New Westminster', g: 'Great Northern', q: 'Canadian National', p: 'Canadian Pacific', i: 'Esquimalt & Nanaimo', r: 'Pacific Great Eastern', y: 'White Pass & Yukon', a: 'Northern Alberta Railways', o: 'Northern Pacific', d: 'Spokane, Portland & Seattle', u: 'Union Pacific', m: 'Milwaukee Road', k: 'Alaska Railroad', x: 'Chicago & North Western', j: 'Greater Winnipeg Water District', h: 'Ontario Northland', z: 'Algoma Central', W: 'Newfoundland Railway', t: 'New York Central', f: 'Delaware & Hudson', T: 'Temiscouata', G: 'Canada & Gulf Terminal', R: 'Roberval & Saguenay', J: 'Alma & Jonquière', B: 'Toronto, Hamilton & Buffalo', P: 'London & Port Stanley', E: 'CP electric lines', M: 'Montreal & Southern Counties', N: 'Niagara, St. Catharines & Toronto', Q: 'Quebec Railway, Light & Power', L: 'Huntsville & Lake of Bays', K: 'Thousand Islands Railway', C: 'Maritime Coal, Railway & Power', S: 'Sydney & Louisburg and Cumberland Railway', v: 'Steamers' };
+const KIND_LABEL = { O: 'Ocean liners', c: 'Central Park Line', b: 'Burnaby Lake Line', l: 'Lulu Island Line', n: 'Marpole–New Westminster', g: 'Great Northern', q: 'Canadian National', p: 'Canadian Pacific', i: 'Esquimalt & Nanaimo', r: 'Pacific Great Eastern', y: 'White Pass & Yukon', a: 'Northern Alberta Railways', o: 'Northern Pacific', d: 'Spokane, Portland & Seattle', u: 'Union Pacific', m: 'Milwaukee Road', k: 'Alaska Railroad', x: 'Chicago & North Western', j: 'Greater Winnipeg Water District', h: 'Ontario Northland', z: 'Algoma Central', W: 'Newfoundland Railway', t: 'New York Central', f: 'Delaware & Hudson', T: 'Temiscouata', G: 'Canada & Gulf Terminal', R: 'Roberval & Saguenay', J: 'Alma & Jonquière', B: 'Toronto, Hamilton & Buffalo', P: 'London & Port Stanley', E: 'CP electric lines', M: 'Montreal & Southern Counties', N: 'Niagara, St. Catharines & Toronto', Q: 'Quebec Railway, Light & Power', L: 'Huntsville & Lake of Bays', K: 'Thousand Islands Railway', C: 'Maritime Coal, Railway & Power', S: 'Sydney & Louisburg and Cumberland Railway', v: 'Steamers' };
 const plain = (t, n) => t.water ? n.replace(/ \(.*\)$/, '') : n;      // a sailing's heading names the place, not the pier: "Nanaimo to Vancouver"
 const KIND_BADGE = { c: 'CPL', b: 'BL', l: 'LI', n: 'MN', g: 'GN', q: 'CN', p: 'CP', v: 'Steamer', y: 'WP', a: 'NAR', o: 'NP', d: 'SP&S', u: 'UP', m: 'MILW', k: 'ARR', x: 'C&NW', j: 'GWWD', h: 'ONR', z: 'ACR', W: 'Nfld. Ry.', t: 'NYC', f: 'D&H', T: 'TEM', G: 'C&GT', R: 'R&S', J: 'A&J', B: 'TH&B', L: 'H&LB', K: 'TIR', C: 'MCR&P', S: 'S&L', P: 'L&PS', E: 'CP', M: 'M&SC', N: 'NS&T', Q: 'QRL&P' };
 // B.C. Electric cars are all bright red now that main line railways share the map; lines are told apart by station rings and the panel.
@@ -396,7 +396,7 @@ for (const [svc, byDir] of Object.entries(DATA.cp.deps)) for (const [dir, deps] 
     stops: pat.map(([si, a, b, tp]) => [si, d + a, d + b, tp]) }));
 }
 for (const L of LINES) for (const bt of L.trips || []) TRIPS.push(buildTrip({ id: bt.id, svc: bt.svc, dir: bt.dir, rk: L.key, kind: L.kind,
-  label: L.mainline ? (bt.name || L.label) : L.label, mainline: !!L.mainline, realFrom: bt.from, realTo: bt.to, railway: L.label, num: bt.num, motor: !!bt.motor, note: bt.note, livery: L.livery, src: L.src, water: !!L.water, vessel: bt.vessel, d0: bt.d0, next: bt.next, prev: bt.prev,
+  label: L.mainline ? (bt.name || L.label) : L.label, mainline: !!L.mainline, realFrom: bt.from, realTo: bt.to, railway: L.label, num: bt.num, motor: !!bt.motor, note: bt.note, livery: L.livery, src: L.src, water: !!L.water, ocean: !!L.ocean, vessel: bt.vessel, d0: bt.d0, next: bt.next, prev: bt.prev,
   stops: bt.stops.map(([bi, a, b, tp]) => [L.idx[bi], a, b, tp, L.stations[bi].chain]) }));
 // a station that only mixed trains call at is drawn as a minor station (Brendan); a steamer or a passenger train calling keeps it as it was
 { const only = new Map();
@@ -969,11 +969,11 @@ function renderList(states, T) {
   h += `<div class="section-label">B.C. Electric · ${bc.length} ${bc.length === 1 ? 'car' : 'cars'}</div>`;
   if (!bc.length) h += `<div class="empty">No cars running now.</div>`;
   h += bc.map(row).join('');
-  const headOf = tr => tr.kind === 'i' ? 'p' : tr.railway === 'Spokane International' ? 'SI' : tr.kind;   // E&N with CP; the Spokane International its own heading (Brendan, 10 Nov 2026)
-  for (const kd of ['g', 'q', 'p', 'SI', 'r', 'y', 'a', 'o', 'd', 'u', 'm', 'k', 'x', 'j', 'h', 'z', 't', 'f', 'T', 'G', 'R', 'J', 'B', 'L', 'K', 'C', 'S', 'P', 'E', 'M', 'N', 'Q', 'W', 'v']) {   // x, j were missing (C&NW, GWWD; 23 Oct 2026)
+  const headOf = tr => tr.ocean ? 'O' : tr.kind === 'i' ? 'p' : tr.railway === 'Spokane International' ? 'SI' : tr.kind;   // E&N with CP; the Spokane International its own heading (Brendan, 10 Nov 2026)
+  for (const kd of ['g', 'q', 'p', 'SI', 'r', 'y', 'a', 'o', 'd', 'u', 'm', 'k', 'x', 'j', 'h', 'z', 't', 'f', 'T', 'G', 'R', 'J', 'B', 'L', 'K', 'C', 'S', 'P', 'E', 'M', 'N', 'Q', 'W', 'v', 'O']) {   // O: the ocean liners, a heading of their own after the steamers (Brendan, 17 Nov 2026); x, j were missing (C&NW, GWWD; 23 Oct 2026)
     const xs = states.filter(x => headOf(x.t) === kd);
-    if ((kd === 'SI' || 'yaodumkxjhztfTGRJBPEKCS'.includes(kd)) && !xs.length) continue;    // a railway of a few trains: no heading when nothing is running
-    const unit = kd === 'v' ? ['boat', 'boats'] : (kd === 'SI' || 'gpqiryaodumkxjhztfTGRJBPEKCS'.includes(kd)) ? ['train', 'trains'] : ['car', 'cars'];
+    if ((kd === 'SI' || 'yaodumkxjhztfTGRJBPEKCSO'.includes(kd)) && !xs.length) continue;    // a railway of a few trains: no heading when nothing is running
+    const unit = kd === 'O' ? ['ship', 'ships'] : kd === 'v' ? ['boat', 'boats'] : (kd === 'SI' || 'gpqiryaodumkxjhztfTGRJBPEKCS'.includes(kd)) ? ['train', 'trains'] : ['car', 'cars'];
     h += `<div class="section-label">${kd === 'SI' ? 'Spokane International' : KIND_LABEL[kd]} · ${xs.length} ${xs.length === 1 ? unit[0] : unit[1]}</div>`;
     if (!xs.length) h += `<div class="empty">No ${unit[1]} running now.</div>`;
     h += xs.map(row).join('');

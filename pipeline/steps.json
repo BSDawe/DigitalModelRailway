@@ -381,6 +381,13 @@
    ]
   },
   {
+   "name": "ocean_build",
+   "script": "ocean_build.py",
+   "needs": [
+    "lo_build"
+   ]
+  },
+  {
    "name": "cp_lakes_build",
    "script": "cp_lakes_build.py",
    "needs": [
