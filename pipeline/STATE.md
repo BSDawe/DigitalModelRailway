@@ -1,7 +1,7 @@
 # The Digital Model Railway — project state
 
 Read this first. It is meant to be enough to start a short, single-task chat without replaying the project's history.
-Last updated 16 November 2026 (Version 177). This file is the current state and the standing rules; the version-by-version history is in CHANGELOG.md.
+Last updated 16 November 2026 (Version 178). This file is the current state and the standing rules; the version-by-version history is in CHANGELOG.md.
 
 ## What this is
 
@@ -317,10 +317,11 @@ the occasional base redraw.
     python3 tools/shots.py '[{"name":"x","T":37800,"view":"sound","sel":"359"}]'    # screenshot to tools/out/x.png; look at one or two, not all
 
 After an accepted build: `cp viz_data.json tools/.baseline_viz.json`.
-    python3 tools/check_speeds.py  # impossible speeds between consecutive calls (runs at every assembly; 3 known, see TODO.md)
+    python3 tools/check_speeds.py  # impossible speeds between consecutive calls (runs at every assembly; 3 known, see TODO.md); check_gtfs: 0 problems since V178
 
 ## Recent versions (one line each; the detail is in CHANGELOG.md)
 
+- 178: CP No. 14 arrives Minneapolis 6.10 a.m. (1948 C&NW timetable); the feed check is clean.
 - 177: trips setting out between midnight and 3 a.m. Pacific shown the night before (the Bar Haven; 152 trips in all).
 - 176 (16 Nov): views grouped and given time zones, new views (Montreal, Toronto, Southwestern Ontario, Gaspe, Newfoundland, Atlantic steamers);
   search box; title; one spelling for one place; speed check at assembly; STATE.md split from CHANGELOG.md.

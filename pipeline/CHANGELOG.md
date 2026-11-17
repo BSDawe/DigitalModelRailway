@@ -2680,3 +2680,8 @@ A review of the whole project (Brendan: "have a peek through ... suggest improve
   Bar Haven: early Montreal suburban trains (before 6 a.m. Eastern), early CN and CP trains in the east, the Kyle and the Springdale.
 - Fix in the page: each such trip gets a copy a day later (`early`, id + '^') shown on the night of the day before (`NEXT[day]` in
   activeTrips). Not for a Monday sailing (Sunday night is not carried round).
+
+## Version 178 (16 November 2026): CP No. 14 at Minneapolis
+- Brendan: the 1948 C&NW timetable has the train arriving Minneapolis 6.10 a.m., leaving 6.25. The Soo leg (sk_cp_t108s.csv) had the 1947 Soo
+  No. 4's 6.30 a.m. arrival, after C&NW 404's 6.25 departure: the feed's one known problem. Arrival now 6.10a; check_gtfs reports 0 problems.
+  The other Soo times are still the September 1947 table's.

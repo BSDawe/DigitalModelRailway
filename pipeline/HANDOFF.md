@@ -5,8 +5,8 @@ Read this first, then STATE.md (about 350 lines: the current state and the stand
 search it, don't read it through.
 
 ## Where things stand
-- Version 177 is published (https://bsdawe.github.io/DigitalModelRailway/): 587 lines, 4159 trips, 6838 stops, 57 agencies. CN's Canadian timetables are all in; CP Maritimes: the DAR and CP New Brunswick with the line across Maine (V159).
-- check_gtfs reports one problem, which is known and accepted: CP-14-SKJCP13 at Minneapolis. The 1947 Soo Line arrival (6.30 a.m.) is after C&NW 404 leaves (6.25).
+- Version 178 is published (https://bsdawe.github.io/DigitalModelRailway/): 587 lines, 4159 trips, 6838 stops, 57 agencies. CN's Canadian timetables are all in; CP Maritimes: the DAR and CP New Brunswick with the line across Maine (V159).
+- check_gtfs reports no problems (the Minneapolis one was fixed in V178 from the 1948 C&NW timetable).
 - A leftover branch, `wip-cdgb`, is on GitHub (the proxy refused to delete it). It is merged; Brendan can delete it.
 
 ## Working with Brendan
