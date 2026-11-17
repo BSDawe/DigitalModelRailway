@@ -76,3 +76,13 @@ Cargo lines to the Far East, Australasia, Europe and South America; no Canadian 
   Oil-Burning Liners" from Montreal and Quebec: Cunard Franconia, Scythia, Samaria (20,000 tons), Ascania (14,500) to Liverpool, London,
   Southampton, Havre (first and tourist class); Donaldson Laurentia (8,350) and Lismoria (8,000) to Glasgow (first class only). "Frequent
   sailings"; no dates in the brochure. The Belle Isle route open to liners from the end of May to early November.
+
+# Canadian National Steamships, "Bermuda and the West Indies" folder, 1948 (printer's mark "48"; https://streamlinermemories.info/CAN/CN48PortsofCall.pdf;
+# Brendan, 17 Nov 2026; read by Claude through a text extract)
+- Lady liners (Lady Rodney, Lady Nelson): southbound from Halifax; northbound end at Saint John. Southbound ports in order: Bermuda, St. Kitts, Antigua,
+  Montserrat, Dominica, St. Lucia, Barbados, St. Vincent, Grenada, Trinidad, British Guiana (Georgetown). No dates or frequency printed; Boston not named.
+  This fits Foreign Trade's "sails from Saint John about three days earlier" against the Halifax loading dates (Lady Nelson July 8 - 16, Lady Rodney July 16 - 27).
+- Motor vessels Canadian Challenger, Canadian Cruiser, Canadian Constructor: 12 passengers (five double and two single rooms); no fixed schedule, four to six
+  week voyages; in the open season southbound from and northbound ending at Montreal, in winter Halifax / Saint John. Foreign Trade: Canadian Cruiser loads at
+  Montreal July 7 - 15, Canadian Challenger July 21 - 29, Canadian Constructor Aug. 10 - 17 (for Bermuda, the Leewards, Windwards and British Guiana).
+- C.N. cargo steamers to the Bahamas and Jamaica: freight only, no dates.
