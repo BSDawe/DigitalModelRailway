@@ -2719,3 +2719,13 @@ A review of the whole project (Brendan: "have a peek through ... suggest improve
 - New liveries: cun (Cunard), usl (United States Lines), clk (Clarke). New water box GULF_BOX in lo_build.
 - Not drawn, no dates: Laurentia (Donaldson), Beaverford (CP freighter, 12 passengers), the Lady boats (CN). Just outside the week: Sobieski
   (Halifax July 13), Kota Inten (Quebec July 16), Marine Shark (Halifax July 16); Tabinta and Saturnia (arrived June 29).
+
+## Version 181 (17 November 2026): Detroit and Cleveland Navigation Co.
+- Brendan: the D.&C. sailing list, summer 1948 ("All ships operate on Eastern Standard Time"). New step dcn_build.py (after cdgb_build, same method;
+  lanes cached in dcn_legs.json); 8 lines, livery dcn, agency DCN:
+  Detroit - Cleveland daily (Eastern States; Detroit 1.00 p.m., Cleveland 12.00 night); Detroit - Buffalo daily both ways at 5.30 p.m. (City of Detroit III,
+  Greater Detroit); 7-day cruise Buffalo - Detroit - Mackinac Island - Chicago - Mackinac Island - Midland, Ont. - Detroit - Buffalo (City of Cleveland III);
+  mid-week cruise Detroit - Mackinac Island - Harbor Springs - Midland - Detroit and week-end cruise Detroit - Harbor Springs - Mackinac Island - Detroit
+  (Western States).
+- Ports: Brendan's C.D.&G.B. points for Buffalo (Main Street), Cleveland (East Ninth Street), Mackinac Island, Chicago (the D.&C. Chicago dock not
+  identified); Detroit Third Street Dock, Harbor Springs and Midland are Claude's, approximate. Scans: private repo, scans/marine/dcnav_1948_*.

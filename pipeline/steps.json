@@ -425,6 +425,16 @@
    "inputs": [
     "water_east.json"
    ]
+  },
+  {
+   "name": "dcn_build",
+   "script": "dcn_build.py",
+   "needs": [
+    "cdgb_build"
+   ],
+   "inputs": [
+    "water_east.json"
+   ]
   }
  ]
 }
