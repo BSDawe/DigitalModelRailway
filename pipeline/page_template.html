@@ -463,6 +463,15 @@ for (const t of TRIPS.slice()) for (const k of [1, 2, 3, 4, 5, 6, 7, 8]) {
                ev: t.ev.map(e => ({ ...e, t0: e.t0 - o, t1: e.t1 - o })) });
 }
 for (let i = TRIPS.length - 1; i >= 0; i--) if (TRIPS[i].d0 !== undefined && !TRIPS[i].carry && (TRIPS[i].d0 < 0 || TRIPS[i].d0 > 6)) TRIPS.splice(i, 1);
+// a train or boat that sets out after midnight but before 3 a.m. (Pacific) belongs to the night of the day before on the dial: a copy shifted a day
+// later shows it there (Brendan, 16 Nov 2026: the Bar Haven leaving Isle Valen early Wednesday was missing until 3 a.m.). Not for a Monday sailing
+// (Sunday night is not carried round).
+const NEXT = Object.fromEntries(Object.entries(PREV).map(([a, b]) => [b, a]));
+for (const t of TRIPS.slice()) {
+  if (t.carry || t.start >= 3 * 3600 || t.start < 0 || t.d0 === 0) continue;
+  const o = -86400, sh = r => [r[0], r[1] - o, r[2] - o, r[3], r[4]];
+  TRIPS.push({ ...t, id: t.id + '^', early: true, start: t.start - o, end: t.end - o, stops: t.stops.map(sh), ev: t.ev.map(e => ({ ...e, t0: e.t0 - o, t1: e.t1 - o })) });
+}
 const WEEKDATE = d => ['Thursday 1', 'Friday 2', 'Saturday 3', 'Sunday 4', 'Monday 5', 'Tuesday 6', 'Wednesday 7', 'Thursday 8', 'Friday 9', 'Saturday 10', 'Sunday 11'][d + 4] + ' July';
 const CARRY = ['', 'the day before', 'two days before', 'three days before', 'four days before', 'five days before', 'six days before', 'a week before', 'eight days before'];
 const dayBack = (day, k) => { let d = day; for (let i = 0; i < k; i++) d = PREV[d]; return d; };
@@ -483,7 +492,7 @@ const runsOn = (svc, day) => SERVICES[day].includes(svc) || (/^W_[01]{7}$/.test(
 const weekdaysOf = svc => { if (!/^W_[01]{7}$/.test(svc)) return ''; const b = [...svc.slice(2)], N = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
   const on = N.filter((_, i) => b[i] === '1'), off = N.filter((_, i) => b[i] === '0'), list = a => a.length === 1 ? a[0] : a.slice(0, -1).join(', ') + ' and ' + a[a.length - 1];
   return !off.length ? 'Daily' : off.length <= 2 ? 'Daily except ' + list(off) : list(on.map(d => d + 's')); };
-const activeTrips = day => TRIPS.filter(t => runsOn(t.svc, t.carry ? dayBack(day, t.carry) : day));
+const activeTrips = day => TRIPS.filter(t => runsOn(t.svc, t.early ? NEXT[day] : t.carry ? dayBack(day, t.carry) : day));
 
 // ---------------------------------------------------------------- time formatting (timetable style)
 // the time zone shown (Brendan, 5 Nov 2026): every time is kept in Pacific Standard Time and shown in the zone chosen, in standard time (as the 1948 Guide)
@@ -1101,7 +1110,7 @@ function qRun() {
   const got = new Set();
   for (const t of [...TRIPS].sort((x, y) => (x.carry || 0) - (y.carry || 0) || x.start - y.start)) {   // a train in several pieces, or carried over midnight, is listed once
     const r = Math.min(fold(t.num) === num ? 0 : 9, t.water ? rank(fold(t.vessel || t.num)) : 9, t.label && !t.water ? rank(fold(t.label)) + .2 : 9, fold(t.name) === q ? 0 : 9); if (r > 3.5) continue;
-    const key = t.id.replace(/~+$/, ''), key2 = t.name + '|' + (t.label || '') + '|' + fromName(t) + '|' + toName(t) + '|' + t.svc; if (got.has(key) || got.has(key2)) continue; got.add(key); got.add(key2);
+    const key = t.id.replace(/[~^]+$/, ''), key2 = t.name + '|' + (t.label || '') + '|' + fromName(t) + '|' + toName(t) + '|' + t.svc; if (got.has(key) || got.has(key2)) continue; got.add(key); got.add(key2);
     trn.push({ r, kind: 'train', id: t.id, a: (t.water ? (t.vessel || t.name) : t.name) + (t.label && !t.water ? ' · ' + t.label : ''), b: `${fromName(t)} to ${toName(t)} · ${hm(t.start).txt}${hm(t.start).pm ? ' p.m.' : ' a.m.'}` }); }
   const by = (x, y) => x.r - y.r || x.a.localeCompare(y.a);
   qHits = [...stn.sort(by).slice(0, 7), ...trn.sort(by).slice(0, 9)];

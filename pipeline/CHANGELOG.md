@@ -2672,3 +2672,11 @@ A review of the whole project (Brendan: "have a peek through ... suggest improve
   agrees with the timetable miles throughout.
 - **STATE.md split**: STATE.md is now the current state and standing rules (about 350 lines, with "Recent versions" and "After each version");
   the history went to this file. Only STATE.md, HANDOFF.md and TODO.md are mirrored to the claude.ai project.
+
+## Version 177 (16 November 2026): trips setting out between midnight and 3 a.m. (Pacific) shown the night before
+- Brendan: at 7.30 a.m. Wednesday (Newfoundland time) the Bar Haven had already left Isle Valen (6.00) and St. Leonard's (6.50) but was not on
+  the map; "should appear at those times on Tuesday late". Cause: the dial runs 3 a.m. - 3 a.m. Pacific, and a trip that starts after midnight
+  but before 3 a.m. on its day was only drawn from 3 a.m. (it was never carried back to the night before). It hit 152 trips, not only the
+  Bar Haven: early Montreal suburban trains (before 6 a.m. Eastern), early CN and CP trains in the east, the Kyle and the Springdale.
+- Fix in the page: each such trip gets a copy a day later (`early`, id + '^') shown on the night of the day before (`NEXT[day]` in
+  activeTrips). Not for a Monday sailing (Sunday night is not carried round).

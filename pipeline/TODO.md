@@ -2,7 +2,7 @@
 
 One list for the Digital Model Railway: questions for Brendan, material he is to supply, and work for Claude. It merges OPEN_QUESTIONS.md with the TO DO lists that were kept in STATE.md (the last of them: "TO DO (1 November 2026)"), as Brendan asked on 9 Nov 2026.
 Claude adds items as they come up. When one is answered or done, it moves to "Done and answered" with the date. Each open item says what the build does in the meantime. Version tags (V143) say when an item was raised.
-Last updated 16 November 2026 (Version 176).
+Last updated 16 November 2026 (Version 177).
 
 ## Decisions for Brendan
 - [ ] Fredericton Union Station (CN): Brendan's item, 10 Nov 2026. To be taken up; CN's Fredericton is now the Intercolonial station (V161). (V162)
@@ -110,9 +110,6 @@ Maritime tables where the traced line differs from the printed miles by 1 mi and
 - [ ] Interurban train icon: Brendan is not satisfied; revisit later. (23 Oct)
 
 ## Remaining 1948 services (list of 11 Nov 2026)
-- [ ] Bar Haven, Tuesday night - Wednesday morning problem (Brendan, 16 Nov 2026; his words, details to come). Claude's note: her outward Bay Run
-  (nfbho) ends at Isle Valen about 11.30 p.m. Tuesday July 6 and the inward run (nfbhi) leaves 7 a.m. Wednesday (estimated), so she is off the map
-  overnight between two separate lines; check what Brendan sees.
 - [ ] Times to check against the scans (tools/check_speeds.py, V176): CP M253 Wickham 7.18 p.m. - Tourvilles f7.22 (5.9 mi; on_cp_t019.csv);
   MC 364 St. Thomas lv 11.28 p.m. - Aylmer f11.33 (10.7 mi; on_mc_t006.csv); CN 32 Luceville 3.20 p.m. - Mont Joli ar 3.25 (8.2 mi; on_cn_t001.csv).
 - [ ] Saskatchewan's clock in the view menu: set to Mountain (CP changed at Broadview in 1948, Claude's reading); Brendan to confirm, also Lakehead (Central).

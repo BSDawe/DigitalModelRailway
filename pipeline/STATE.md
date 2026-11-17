@@ -1,7 +1,7 @@
 # The Digital Model Railway — project state
 
 Read this first. It is meant to be enough to start a short, single-task chat without replaying the project's history.
-Last updated 16 November 2026 (Version 176). This file is the current state and the standing rules; the version-by-version history is in CHANGELOG.md.
+Last updated 16 November 2026 (Version 177). This file is the current state and the standing rules; the version-by-version history is in CHANGELOG.md.
 
 ## What this is
 
@@ -321,6 +321,7 @@ After an accepted build: `cp viz_data.json tools/.baseline_viz.json`.
 
 ## Recent versions (one line each; the detail is in CHANGELOG.md)
 
+- 177: trips setting out between midnight and 3 a.m. Pacific shown the night before (the Bar Haven; 152 trips in all).
 - 176 (16 Nov): views grouped and given time zones, new views (Montreal, Toronto, Southwestern Ontario, Gaspe, Newfoundland, Atlantic steamers);
   search box; title; one spelling for one place; speed check at assembly; STATE.md split from CHANGELOG.md.
 - 175: the North Sydney - Port aux Basques steamer named Cabot Strait.
