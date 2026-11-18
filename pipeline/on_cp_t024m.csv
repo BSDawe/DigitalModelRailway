@@ -1,4 +1,4 @@
-# Canadian Pacific, Table 24: mixed trains M770 / M769, Newport, Vt. - Woodsville, N.H. (United States only, not built). Eastern time.
+# Canadian Pacific, Table 24: mixed trains M770 / M769, Newport, Vt. - Woodsville, N.H. (CP; built 17 Nov 2026, track from the Mississippi Rails state maps). Eastern time.
 #train col=M770 num=770 dir=down days=daily kind=mixed note=Mixed.
 #train col=M769 num=769 dir=up days=daily kind=mixed note=Mixed.
 mile,station,principal,prov,tz,M770,M769

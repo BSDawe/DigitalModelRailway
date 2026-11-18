@@ -1,7 +1,7 @@
 # The Digital Model Railway — project state
 
 Read this first. It is meant to be enough to start a short, single-task chat without replaying the project's history.
-Last updated 17 November 2026 (Version 186). This file is the current state and the standing rules; the version-by-version history is in CHANGELOG.md.
+Last updated 17 November 2026 (Version 187). This file is the current state and the standing rules; the version-by-version history is in CHANGELOG.md.
 
 ## What this is
 
@@ -325,6 +325,7 @@ After an accepted build: `cp viz_data.json tools/.baseline_viz.json`.
 
 ## Recent versions (one line each; the detail is in CHANGELOG.md)
 
+- 187: CP Montreal - Boston: The Alouette (by Plymouth) and The Red Wing (by White River Jct.) through to North Station over the B&M (B&M track gold); Newport - Woodsville mixed; Mississippi Rails traces.
 - 186: CN's Grand Trunk to Portland, Me. (Nos. 16 / 126 / 17 through from Montreal; the night trains to Island Pond) and the Lewiston branch (Grand Trunk); Mississippi Rails trace.
 - 185: Ontario Northland's M.V. Chief Commanda on Lake Nipissing, North Bay - Callander - Keyston Lodge - Dokis, Mon., Wed., Fri. (onrb_build.py; highly speculative).
 - 184: the clock rolls over to the next day when it plays past 3 a.m. (Sunday into Monday).

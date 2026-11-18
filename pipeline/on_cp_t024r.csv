@@ -1,0 +1,31 @@
+# Canadian Pacific, Table 24: The Red Wing, Montreal - Newport - Wells River (CP), Boston & Maine on by White River Jct. and Concord to Boston (North Station). CP Table 24 (and
+# Table 8 for White River Jct.: ar 2.20 a.m. / lv 12.30 a.m.); Eastern time. The CP is the owner of the train (Brendan, 17 Nov 2026).
+# Miles: as printed to Wells River; beyond, the Red Wing's route is not the printed one (by Plymouth), so the miles are the trace's (Claude): Wells River - White River
+# Jct. 40.5, White River Jct. - Concord 69.0, then the printed Concord - Boston distances. Track: Mississippi Rails state maps (traces/maritimes/newengland.geojson).
+#train col=No210 num=210 dir=down days=daily kind=passenger name="The Red Wing" to=Boston note="The Red Wing. Coach Montreal - Boston; coach via White River Jct. (B. & M. 78-79) Montreal - Springfield; sleeping cars and buffet compartment-observation car Montreal - Boston. Boston & Maine No. 78-302 south of Wells River. West Brome: a conditional stop."
+#train col=No209 num=209 dir=up days=daily kind=passenger name="The Red Wing" from=Boston note="The Red Wing. Boston & Maine No. 325-79 to Wells River. Montreal West: stops to let off passengers. Iberville: stops on signal for passengers to Montreal. West Brome: stops on signal Saturdays for passengers to Montreal."
+mile,station,principal,prov,tz,No210,No209
+0.0,Montreal (Windsor Station),1,QC,E,lv 7.25p,ar 7.25a
+2.0,Westmount,0,QC,E,7.31p,7.17a
+4.7,Montreal West,0,QC,E,7.37p,7.10a
+29.5,St. Johns,1,QC,E,8.10p,6.34a
+30.3,Iberville,0,QC,E,,6.32a
+43.2,Farnham,1,QC,E,ar 8.25p / lv 8.25p,6.16a
+56.4,Cowansville,1,QC,E,8.47p,5.56a
+61.3,West Brome,0,QC,E,8.55p,5.40a
+68.9,Sutton,1,QC,E,9.10p,5.33a
+76.9,"Richford, Vt.",1,VT,E,9.29p,5.17a
+93.6,"North Troy, Vt.",0,VT,E,f9.53p,4.52a
+107.9,"Newport, Vt.",1,VT,E,ar 10.20p / lv 10.45p,ar 4.10a / lv 4.25a
+116.9,"Orleans, Vt.",0,VT,E,11.08p,3.54a
+122.1,"Barton, Vt.",0,VT,E,11.20p,3.44a
+142.7,"Lyndonville, Vt.",0,VT,E,12.04a,2.54a
+151.4,"St. Johnsbury, Vt.",1,VT,E,ar 12.20a / lv 12.30a,ar 2.23a / lv 2.38a
+161.0,"Barnet, Vt.",0,VT,E,,f2.08a
+171.6,"Wells River, Vt.",1,VT,E,ar 1.10a / lv 1.20a,ar 1.40a / lv 1.50a
+212.1,"White River Jct., Vt.",1,VT,E,ar 2.20a,lv 12.30a
+281.1,"Concord, N.H.",1,NH,E,5.00a,9.45p
+298.7,"Manchester, N.H.",1,NH,E,5.34a,9.05p
+315.4,"Nashua, N.H.",1,NH,E,6.02a,8.40p
+328.8,"Lowell, Mass.",1,MA,E,6.25a,8.20p
+354.4,Boston (North Station),1,MA,E,ar 7.05a,lv 7.45p

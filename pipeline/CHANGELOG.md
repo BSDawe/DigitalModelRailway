@@ -2773,3 +2773,19 @@ A review of the whole project (Brendan: "have a peek through ... suggest improve
   43.65950 N, 70.24845 W). Portland, Oxford, Shelburne and Yarmouth carry their state (Portland, Me. ...) so the Canadian stations of those names keep their ids.
 - Standing rule (Brendan): U.S. traces are Mississippi Rails unless he says otherwise. Fort Covington station point noted in TODO for CN 79 / 80.
 - Counts: 610 lines, 4200 trips, 6966 stops; check_gtfs 0 problems.
+
+## Version 187
+- CP Montreal - Boston built whole (Brendan, 17 Nov 2026: the CP the owner of the Red Wing and the Alouette): CP Table 24 as transcribed earlier (on_cpfull_t024.csv,
+  now merged and deleted), with Table 8 for White River Jct. CP over its own track to Newport, Wells River and Woodsville (the old Connecticut & Passumpsic
+  Rivers line, CP in 1948 by Table 8's railways column), the Boston & Maine beyond.
+  - on_cp_t024.csv: The Alouette 212 / 211 (by Woodsville, Plymouth, Concord, Manchester, Nashua, Lowell) and 214 / 213 (Montreal - Newport); 339.6 mi traced, 338.8 printed.
+  - on_cp_t024r.csv: The Red Wing 210 / 209 (by Wells River, White River Jct. ar 2.20 a.m. / lv 12.30 a.m., Concord); miles beyond Wells River from the trace
+    (the printed miles are the Plymouth route's); 355.3 mi traced.
+  - on_cp_t024m.csv: mixed M770 / M769 Newport - Woodsville (63.9 traced, 64.0 printed).
+  - The B&M stations between Plymouth / White River Jct. and Concord are not called at until the B&M timetables come in (Brendan).
+- Track: tools/mar_import_newengland.py -> traces/maritimes/newengland.geojson, from the Mississippi Rails state maps of Vermont, New Hampshire and Massachusetts
+  (raw KMZ in the private repo, traces/msrails/, with the Maine map): CP (own cp) North Troy - Newport - St. Johnsbury - Wells River; Boston & Maine (own bm)
+  the rest, and a straight piece from the trace end to Brendan's North Station point (42 21 56.91 N, 71 3 42.53 W). New track colour --bm (the Maine Central gold).
+- Station points by printed mileage along the traces between junction anchors (NE_PLACES in on_build.py).
+- Noted for later (TODO): Portland Union Station (43.652243, -70.280710) for the Gull (Maine Central / B&M-owned); Quebec Central 1 / 6 still end at the border.
+- Counts: 612 lines, 4202 trips, 6989 stops; check_gtfs 0 problems.
