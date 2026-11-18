@@ -1,22 +1,59 @@
-# Canadian National, Table 90: London - Komoka - Strathroy - Wyoming - Sarnia - (St. Clair Tunnel to Port Huron, Mich.), to the international boundary. Source: Official Guide, April 25, 1948, CN Table 90 (Brendan, 31 Oct 2026, page 1127; private scans og1948_cnq/). EASTERN TIME.
-# Miles from London (printed from Montreal: London 455.3); the boundary in the St. Clair Tunnel (about 1.5 mi past Sarnia) and its times estimated. Petrolia: bus connections from Wyoming (not trains; not entered). Port Huron - Chicago in the notes.
+# Canadian National, Table 90: London - Komoka - Strathroy - Wyoming - Sarnia - St. Clair Tunnel - Port Huron, Mich., and on by the Grand Trunk Western (CN Table 95, Port Huron - Chicago, April 25, 1948; Brendan's image, 18 Nov 2026) by Flint, Durand, Lansing, Battle Creek and South Bend to Chicago (Dearborn Station). Eastern time to Battle Creek, Central beyond. Source: Official Guide, April 25, 1948, CN Table 90 (Brendan, 31 Oct 2026, page 1127; private scans og1948_cnq/). EASTERN TIME.
+# Miles from London (printed from Montreal: London 455.3); Port Huron 62.0 (Table 90: 517.3 from Montreal), then Table 95's miles from Port Huron added. Battle Creek: arrival in Eastern time, departure printed in Central time and entered here an hour later in Eastern. Petrolia: bus connections from Wyoming (not trains; not entered). Table 92 Petrolia not entered.
 # Signs: * daily; dagger ex Sun; double dagger ex Sat (Table 90 Sarnia section: stops to take for west of Port Huron); section Sun only; a Mon Wed Fri; b Tue Thu Sat; d bus connection Hamilton - Dundas (leaves Hamilton 3.45 p.m.); e stops to take passengers only; f flag; i Wed only; k Sat only; o does not stop Sunday; p stops Sat and Sun to leave from Windsor; u stops to leave from west of London; x Fri only; z Sunday only; square: motor train; natural / root / black square: bus connection to and from Petrolia (not entered). Conditional stops entered as flag stops.
-#train col=No15S num=15 dir=down days=daily kind=passenger name="The International Limited" note="The International Limited, daily: London 12.52 a.m. to Sarnia 1.54 a.m., Port Huron 2.16 (lv 2.30) and Chicago 8.00 a.m. Boundary time estimated; Port Huron and the Michigan times in the notes."
-#train col=No5S num=5 dir=down days=daily kind=passenger name="The La Salle" note="The La Salle, Chicago section, daily: London 9.30 p.m. to Sarnia 10.40 p.m., Port Huron 11.02 (lv 11.20), Durand 1.40 and Chicago 7.00 a.m. (Petrolia by bus). Boundary time estimated; Port Huron and the Michigan times in the notes."
+#train col=No15S num=15 dir=down days=daily kind=passenger name="The International Limited" note="The International Limited, daily: London 12.52 a.m., Sarnia 1.54 a.m., Port Huron 2.16 - 2.30 a.m., by the Grand Trunk Western (Table 95) to Chicago (Dearborn Station) 8.00 a.m. Central."
+#train col=No5S num=5 dir=down days=daily kind=passenger name="The La Salle" note="The La Salle, Chicago section, daily: London 9.30 p.m., Sarnia 10.40 p.m., Port Huron 11.02 - 11.20 p.m., Durand 1.10 - 1.40 a.m. (joined there by the Detroit section, Table 150 No. 57), Chicago (Dearborn Station) 7.00 a.m. Central (Petrolia by bus)."
 #train col=No605 num=605 dir=down days="Mon,Tue,Wed,Thu,Fri,Sat" kind=motor note="Motor train, daily except Sunday: London 6.15 p.m. to Sarnia 7.45 p.m. (Petrolia by bus from Wyoming)."
 #train col=No621 num=621 dir=down days=daily kind=motor note="Motor train, daily: London 12.20 p.m. to Sarnia 1.55 p.m. (Petrolia by bus from Wyoming)."
-#train col=No17S num=17 dir=down days=daily kind=passenger name="The Inter-City Limited" note="The Inter-City Limited, Chicago section, daily: London 12.05 p.m. to Sarnia 1.10 p.m., Port Huron 1.32 (lv 1.50) and Chicago 8.10 p.m. Strathroy, Watford, Wyoming: stop to take passengers for west of Port Huron. Boundary time estimated; Port Huron and the Michigan times in the notes."
-#train col=No14S num=14 dir=up days=daily kind=passenger name="The International Limited" note="The International Limited, daily: (Chicago 8.00 p.m., Port Huron 4.20 a.m.) Sarnia 4.40 a.m. to London 5.37 a.m., on to Toronto and Montreal. Boundary time estimated; Port Huron and the Michigan times in the notes."
+#train col=No17S num=17 dir=down days=daily kind=passenger name="The Inter-City Limited" note="The Inter-City Limited, Chicago section, daily: London 12.05 p.m., Sarnia 1.10 p.m., Port Huron 1.32 - 1.50 p.m., Durand 3.32 - 3.40 p.m. (the Detroit section, Table 150 No. 21), Chicago (Dearborn Station) 8.10 p.m. Central. Strathroy, Watford, Wyoming: stop to take passengers for west of Port Huron."
+#train col=No14S num=14 dir=up days=daily kind=passenger name="The International Limited" note="The International Limited, daily: Chicago (Dearborn Station) 8.00 p.m. Central by the Grand Trunk Western (Table 95), Port Huron 4.05 - 4.20 a.m., Sarnia 4.40 a.m., London 5.37 a.m., on to Toronto and Montreal. Detroit passengers by Table 150 No. 22 from Durand."
 #train col=No606 num=606 dir=up days=daily kind=motor note="Motor train, daily: Sarnia 5.35 a.m. to London 7.05 a.m. (Petrolia by bus to Wyoming, ex Sun)."
-#train col=No6S num=6 dir=up days=daily kind=passenger name="The Inter-City Limited" note="The Inter-City Limited, Chicago section, daily: (Chicago 11.00 p.m., Port Huron 9.35 a.m.) Sarnia 10.00 a.m. to London 11.40 a.m., on to Toronto as No. 6. Boundary time estimated; Port Huron and the Michigan times in the notes."
+#train col=No6S num=6 dir=up days=daily kind=passenger name="The Inter-City Limited" note="The Inter-City Limited, Chicago section, daily: Chicago (Dearborn Station) 11.00 p.m. Central, Durand 6.00 - 6.35 a.m., Port Huron 9.00 - 9.35 a.m. (all stations Durand - Port Huron), Sarnia 10.00 a.m., London 11.40 a.m., on to Toronto as No. 6."
 #train col=No620 num=620 dir=up days=daily kind=motor note="Motor train, daily: Sarnia 4.30 p.m. to London 6.05 p.m. (Petrolia by bus to Wyoming)."
-#train col=No20S num=20 dir=up days=daily kind=passenger name="The Ontario Limited" note="The Ontario Limited, daily: (Chicago 9.40 p.m., Port Huron 6.05 a.m.) Sarnia 6.25 a.m. to London 7.25 a.m., on to Toronto. Boundary time estimated; Port Huron and the Michigan times in the notes."
+#train col=No20S num=20 dir=up days=daily kind=passenger name="The Ontario Limited" note="The Ontario Limited, daily (Table 95 heads the column The Maple Leaf): Chicago (Dearborn Station) 9.40 a.m. Central, Durand 3.55 - 4.05 p.m., Port Huron 5.45 - 6.05 p.m., Sarnia 6.25 p.m., London 7.25 p.m., on to Toronto (p.m.: corrected 18 Nov 2026, had been entered a.m.)."
 mile,station,principal,prov,tz,No15S,No5S,No605,No621,No17S,No14S,No606,No6S,No620,No20S
-0.0,London,1,ON,E,lv 12.52a,lv 9.30p,lv 6.15p,lv 12.20p,lv 12.05p,ar 5.37a,ar 7.05a,ar 11.40a,ar 6.05p,ar 7.25a
+0.0,London,1,ON,E,lv 12.52a,lv 9.30p,lv 6.15p,lv 12.20p,lv 12.05p,ar 5.37a,ar 7.05a,ar 11.40a,ar 6.05p,ar 7.25p
 4.1,Hyde Park,0,ON,E,,,6.22p,f12.28p,,,f6.57a,,,
 9.9,Komoka,0,ON,E,,,6.30p,12.35p,,,6.48a,f11.25a,5.45p,
 19.9,Strathroy,0,ON,E,,9.53p,6.45p,12.50p,f12.28p,,6.33a,11.00a,5.30p,
 33.2,Watford,0,ON,E,,10.08p,7.07p,1.12p,f12.40p,,6.09a,10.45a,5.08p,
 45.3,Wyoming,1,ON,E,,10.22p,7.27p,1.30p,f12.52p,,5.52a,10.25a,4.50p,
-58.9,Sarnia,1,ON,E,1.54a,10.40p,ar 7.45p,ar 1.55p,1.10p,4.40a,lv 5.35a,10.00a,lv 4.30p,6.25a
-60.4,"International Boundary (St. Clair Tunnel, to Port Huron, Mich.)",0,ON,E,~ar 2.03a,~ar 10.49p,,,~ar 1.19p,~lv 4.29a,,~lv 9.46a,,~lv 6.14a
+58.9,Sarnia,1,ON,E,1.54a,10.40p,ar 7.45p,ar 1.55p,1.10p,4.40a,lv 5.35a,10.00a,lv 4.30p,6.25p
+62.0,"Port Huron (Tunnel), Mich.",1,MI,E,ar 2.16a / lv 2.30a,ar 11.02p / lv 11.20p,,,ar 1.32p / lv 1.50p,ar 4.05a / lv 4.20a,,ar 9.00a / lv 9.35a,,ar 5.45p / lv 6.05p
+73.0,"Goodells, Mich.",0,MI,E,,,,,,,,8.40a,,
+78.0,"Emmett, Mich.",0,MI,E,,,,,,,,8.31a,,
+86.6,"Capac, Mich.",0,MI,E,,,,,,,,8.20a,,
+94.0,"Imlay City, Mich.",1,MI,E,,11.58p,,,2.28p,,,8.08a,,f5.09p
+105.9,"Lapeer, Mich.",1,MI,E,,12.17a,,,2.45p,,,7.48a,,4.53p
+116.7,"Davison, Mich.",0,MI,E,,,,,,,,7.28a,,
+125.3,"Flint, Mich.",1,MI,E,3.37a,12.50a,,,3.12p,2.40a,,7.15a,,4.30p
+133.9,"Swartz Creek, Mich.",0,MI,E,,,,,,,,6.48a,,
+142.1,"Durand, Mich.",1,MI,E,,ar 1.10a / lv 1.40a,,,ar 3.32p / lv 3.40p,ar 2.08a / lv 2.15a,,ar 6.00a / lv 6.35a,,ar 3.55p / lv 4.05p
+146.9,"Bancroft, Mich.",0,MI,E,,,,,,,,,,
+154.1,"Morrice, Mich.",0,MI,E,,,,,,,,,,
+174.5,"Lansing, Mich.",1,MI,E,4.35a,2.30a,,,4.20p,1.30a,,5.20a,,3.18p
+186.7,"Potterville, Mich.",0,MI,E,,,,,,,,,,
+193.0,"Charlotte, Mich.",1,MI,E,,2.56a,,,4.43p,z1.03a,,4.43a,,2.48p
+201.1,"Olivet, Mich.",0,MI,E,,,,,,,,,,
+206.2,"Bellevue, Mich.",0,MI,E,,,,,,,,,,
+218.8,"Battle Creek, Mich.",1,MI,E,ar 5.20a / lv 5.30a,ar 3.30a / lv 3.40a,,,ar 5.15p / lv 5.25p,ar 12.22a / lv 12.35a,,ar 3.50a / lv 4.05a,,ar 2.13p / lv 2.18p
+230.4,"Climax, Mich.",0,MI,C,,,,,,,,,,
+235.3,"Scotts, Mich.",0,MI,C,,,,,,,,,,
+238.2,"Pavilion, Mich.",0,MI,C,,,,,,,,,,
+243.2,"Vicksburg, Mich.",1,MI,C,,3.15a,,,4.55p,z10.55p,,,,12.44p
+248.6,"Schoolcraft, Mich.",0,MI,C,,,,,,,,,,
+259.6,"Marcellus, Mich.",0,MI,C,,,,,5.14p,,,,,f12.24p
+272.5,"Cassopolis, Mich.",1,MI,C,,3.55a,,,5.34p,z10.27p,,1.49a,,12.08p
+281.4,"Edwardsburg, Mich.",0,MI,C,,,,,,,,,,
+291.4,"Mishawaka, Ind.",0,IN,C,,,,,,,,,,
+295.5,"South Bend, Ind.",1,IN,C,5.55a,4.35a,,,6.05p,10.00p,,1.15a,,11.40a
+311.1,"Mill Creek, Ind.",0,IN,C,,,,,,,,,,
+315.5,"Stillwell, Ind.",0,IN,C,,,,,,,,,,
+320.8,"Kingsbury, Ind.",0,IN,C,,,,,,,,,,
+324.6,"Wellsboro, Ind.",0,IN,C,,,,,,,,,,
+325.5,"Union Mills, Ind.",0,IN,C,,,,,,,,,,
+331.8,"Haskells, Ind.",0,IN,C,,,,,,,,,,
+339.9,"Valparaiso, Ind.",1,IN,C,6.45a,5.33a,,,6.55p,9.09p,,12.13a,,10.49a
+372.5,"Harvey, Ill.",0,IL,C,,,,,,,,,,
+385.4,"Chicago Lawn, Ill.",0,IL,C,7.34a,6.32a,,,7.45p,8.19p,,,,9.59a
+395.7,"Chicago (Dearborn Station), Ill.",1,IL,C,ar 8.00a,ar 7.00a,,,ar 8.10p,lv 8.00p,,lv 11.00p,,lv 9.40a

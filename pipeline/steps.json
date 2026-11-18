@@ -455,6 +455,16 @@
    "inputs": [
     "water_east.json"
    ]
+  },
+  {
+   "name": "gtwf_build",
+   "script": "gtwf_build.py",
+   "needs": [
+    "onrb_build"
+   ],
+   "inputs": [
+    "water_east.json"
+   ]
   }
  ]
 }

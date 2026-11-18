@@ -25,6 +25,7 @@ feats.append(F('cn', 'Grand Trunk Western: St. Clair Tunnel, Port Huron - Sarnia
 feats.append(F('cn', 'Grand Trunk Western: Brush Street trace end - Brush Street station (est)', [B['brush'][-1], (-83.03975698, 42.32851075)], 'straight estimate (Claude)', 'link', True))
 feats.append(F('cn', 'Grand Trunk Western: Ferrysburg - Muskegon (est)', [(-86.234, 43.066), (-86.2599855, 43.2318052)], 'straight estimate (Claude): the Muskegon line north from Ferrysburg is not in the trace', 'link', True))
 feats.append(F('cn', 'Grand Trunk Western: Richmond - the Romeo line (tie)', [(-82.7466527, 42.8088695), (-82.7458352, 42.8100815)], 'tie (Claude): the Romeo line ends 150 m from the Detroit - Port Huron line at Richmond', 'link'))
+feats.append(F('cn', 'Grand Trunk Western: South Bend (tie)', [(-86.2633222, 41.6700448), (-86.2610864, 41.6696371)], 'tie (Claude): the Chicago line and the South Bend - state line piece end 190 m apart at South Bend', 'link'))
 ch = B['chicago']; J = (-87.6369, 41.809)                                    # where the GTW meets the C&WI (east end of the GTW 49th St. piece)
 k = min(range(len(ch)), key=lambda i: math.hypot(ch[i][0] - J[0], ch[i][1] - J[1]))
 feats.append(F('cn', 'Grand Trunk Western: Elsdon - C&WI (Brendan export)', ch[:k + 1], "Brendan's Chicago export (OSM), path picked by Claude", 'brendan'))
