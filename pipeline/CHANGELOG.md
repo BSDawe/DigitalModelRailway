@@ -2829,3 +2829,15 @@ A review of the whole project (Brendan: "have a peek through ... suggest improve
 - Not built: Table 147 (the Chicago main line) is not in the scans; the through trains still end in the St. Clair Tunnel.
 - Page: state and province tags hidden in station names (Brendan).
 - Counts: 621 lines, 4243 trips, 7096 stops; check_gtfs 0 problems.
+
+## Version 191
+- CN / Grand Trunk Western Table 95, Port Huron - Chicago (Official Guide, April 25, 1948; Brendan's image, 18 Nov 2026), added to on_cn_t090s.csv: The International Limited
+  (15 / 14), The Inter-City Limited (17 / 6), The La Salle (5) and The Ontario Limited (20; Table 95 heads it The Maple Leaf) run London - Sarnia - St. Clair Tunnel - Port Huron -
+  Flint - Durand - Lansing - Battle Creek - South Bend - Valparaiso - Chicago (Dearborn Station), 397.5 mi traced / 395.7 printed. Eastern time to Battle Creek, Central beyond
+  (Battle Creek's Central departures entered an hour later in Eastern). The Detroit sections are the Table 150 trains (57, 21 down; 22, 56, 28 up), already drawn.
+- Fix: No. 20 is a p.m. train London - Toronto and Port Huron - London (Table 90 scan): it had been entered a.m. in on_cn_t090s and on_cn_t090b.
+- Grand Trunk Western car ferry Muskegon - Milwaukee (Brendan): new step gtwf_build.py, four sailings each way daily, six and a half hours; docks approximate; unnamed ships.
+- Grand Rapids - Muskegon: by trackage rights over the Pennsylvania (GR&I) from Penn Jct. (Brendan: the GTW gave up Greenville - Simpson in 1946); Mississippi Rails trace
+  (traces/gtw/prr_grand_rapids_muskegon.json), own prr, PRR Tuscan red (#7C3030; Wikipedia's Tuscan red; Brendan: "a tolerably accurate livery"). The dashed Ferrysburg line removed.
+- Track ties at South Bend (190 m) and Penn Jct. (110 m). Imlay City at the crossing of the Port Huron - Flint and Pontiac - Caseville lines; Capac - Imlay City - Lapeer forced.
+- Counts: 623 lines, 4251 trips, 7114 stops; check_gtfs 0 problems.
