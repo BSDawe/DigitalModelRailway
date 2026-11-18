@@ -178,6 +178,9 @@ Each runs to an International Boundary point (time estimated) or to the last Can
 - [ ] Niagara River, Suspension Bridge: CN Hamilton - Niagara Falls, N.Y. 86, 90 / 93 The Maple Leaf (Lehigh Valley to New York), 91, 95, 102, 107, 186; MC 358 The Canadian - The Niagara.
 - [ ] Detroit River: MC trains above at the tunnel (Windsor - Detroit); CP Toronto - Windsor 19, 20, 21, 22, 37, 38, 634, 635 (and the pool trains 6 / 22 from Detroit) stop at Windsor. CN's Detroit sections (Brush Street) are built to Detroit.
 - [ ] St. Clair Tunnel: CN 5 The La Salle, 6 / 17 The Inter-City Limited, 14 / 15 The International Limited, 20 The Ontario Limited (Grand Trunk Western to Chicago).
+  Grand Trunk Western trace received (Mississippi Rails, Brendan 18 Nov 2026; KMZ in the private repo, traces/msrails/Grand_Trunk_Western.kmz): Port Huron - Flint - Lansing - Battle Creek -
+  South Bend - Chicago (to Elsdon), Detroit - Port Huron, Detroit - Pontiac - Durand - Grand Rapids - Muskegon, and branches. Missing (Brendan): the old St. Clair Tunnel (Sarnia - Port Huron),
+  Detroit Brush Street station access, and the joint line into Chicago (Elsdon - Dearborn Station, C&WI). Wanted: the Official Guide GTW pages (1948) for the times beyond Port Huron / Detroit.
 - [ ] Rouses Point, N.Y.: D&H 7, 8, 9, 10, 34, 35 (Montreal - New York); CN Rutland trains 51, 52, 64, 65.
 - [x] East Alburgh, Vt.: CN / Central Vermont 20, 21, 307, 332: done in Version 188 (to Springfield and Boston). Beyond Springfield (New Haven, Pennsylvania) waits for Connecticut / New York track and timetables.
 - [x] Norton, Vt. (Island Pond, Portland): CN 11, 12, 16, 17, 111, 112, 126, 209, 210. Done in Version 186: on to Island Pond, Nos. 16 / 126 and 17 through to Portland, the Lewiston branch (Grand Trunk).
