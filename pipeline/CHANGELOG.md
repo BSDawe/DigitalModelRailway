@@ -2789,3 +2789,20 @@ A review of the whole project (Brendan: "have a peek through ... suggest improve
 - Station points by printed mileage along the traces between junction anchors (NE_PLACES in on_build.py).
 - Noted for later (TODO): Portland Union Station (43.652243, -70.280710) for the Gull (Maine Central / B&M-owned); Quebec Central 1 / 6 still end at the border.
 - Counts: 612 lines, 4202 trips, 6989 stops; check_gtfs 0 problems.
+
+## Version 188
+- Central Vermont Railway (CN subsidiary; drawn as CN, labelled Central Vermont, trip ids CV-; Brendan, 17 Nov 2026), from CV Table 5 and CN Table 1 (Official Guide, May 1948,
+  tables of April 25, 1948; Brendan's images). Montreal - Cantic times kept as CN Table 51.
+  - on_cn_t051v.csv (was cut at the border): Montreal - East Alburgh - St. Albans - Essex Jct. - Montpelier Jct. - White River Jct., the B&M on to Windsor, Bellows Falls, Brattleboro,
+    East Northfield and Springfield: The Washingtonian 20 (with B&M 732 to Springfield), The Montrealer 21 (B&M 733 from Springfield), The Vermonters 304 / 404 / 303 (St. Albans -
+    White River Jct.), the Ambassador's New York section 74-59 / 66-77 (White River Jct. - Springfield). On this map the New York trains end at Springfield. 308.0 mi traced, 305.9 printed.
+  - on_cn_t051a.csv: The Ambassador 332 / 307 Montreal - Boston (B&M from White River Jct.); 328.0 traced, 325.8 printed.
+  - on_cn_t001v.csv: Table 1, Montreal - St. Johns - St. Albans by Stanbridge and St. Armand: 608-46, 46 (Sundays from St. Johns), 44, 43-605, 45-65. St. Johns - St. Alexander a straight estimate.
+  - Not entered: the Burlington and Montpelier / Barre motor coaches; the B&M's own Connecticut River trains and 320 / 313 (waiting for the B&M timetables).
+- White River Jct. - Boston: B&M 302 / 325 carry the Red Wing's and the New Englander's Boston cars; drawn as the CP's Red Wing for now (note on on_cp_t024r; owner later, Brendan).
+- Quebec Central 6 / 1 through to Newport, Vt. (Beebe Jct. - Derby Line - Newport, Q.C. in CP Table 8; Brendan's "Beebe Jct."); CN 79 / 80 into Fort Covington, N.Y. at Brendan's station point.
+- Track: tools/mar_import_newengland.py adds the Central Vermont (own cn) St. Albans - Essex Jct. - White River Jct. - Windsor, Fonda Jct. - East Alburgh, Fonda Jct. - the border
+  (St. Armand line), Brattleboro - South Vernon; the B&M Windsor - Bellows Falls - Brattleboro and the Connecticut River line South Vernon - Springfield; the Quebec Central's
+  Newport - Derby Line (own cp). tools/mar_import_gtr.py: the Alburgh and Fort Covington stubs now in use. Mississippi Rails state maps.
+- Station points by printed mileage along the traces (NE_PLACES). Joint stations (merge_stations.py): CP and CN at White River Jct., Concord, Manchester, Nashua, Lowell, Boston North Station.
+- Counts: 614 lines, 4212 trips, 7018 stops; check_gtfs 0 problems.

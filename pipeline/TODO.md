@@ -110,6 +110,9 @@ Maritime tables where the traced line differs from the printed miles by 1 mi and
 - [ ] Interurban train icon: Brendan is not satisfied; revisit later. (23 Oct)
 
 ## Remaining 1948 services (list of 11 Nov 2026)
+- [ ] White River Jct. - Boston, B&M 302 / 325 (the Red Wing's and the New Englander's Boston cars in one train): drawn as the CP's Red Wing for now; who owns the leg to be settled with the B&M timetables (Brendan, 17 Nov 2026).
+- [ ] Boston & Maine's own trains (waiting for the B&M timetables): the Connecticut River trains of CV Table 5 (702, 72, 712, 78 / 79 the Red Wing's Springfield coach, 7060, 728, 703, 73, 7055, 717, 7059) and White River Jct. - Boston 320 / 313; the stations between White River Jct. / Plymouth and Concord.
+- [ ] Central Vermont Table 1: St. Johns - St. Alexander (7.6 mi) is a straight estimate, drawn broken: the Quebec collection lacks that piece of the Montreal & Vermont Junction line (a trace wanted). East Northfield's point is approximate (at the Massachusetts line).
 - [ ] Times to check against the scans (tools/check_speeds.py, V176): CP M253 Wickham 7.18 p.m. - Tourvilles f7.22 (5.9 mi; on_cp_t019.csv);
   MC 364 St. Thomas lv 11.28 p.m. - Aylmer f11.33 (10.7 mi; on_mc_t006.csv); CN 32 Luceville 3.20 p.m. - Mont Joli ar 3.25 (8.2 mi; on_cn_t001.csv).
 - [ ] Saskatchewan's clock in the view menu: set to Mountain (CP changed at Broadview in 1948, Claude's reading); Brendan to confirm, also Lakehead (Central).
@@ -174,10 +177,10 @@ Each runs to an International Boundary point (time estimated) or to the last Can
 - [ ] Detroit River: MC trains above at the tunnel (Windsor - Detroit); CP Toronto - Windsor 19, 20, 21, 22, 37, 38, 634, 635 (and the pool trains 6 / 22 from Detroit) stop at Windsor. CN's Detroit sections (Brush Street) are built to Detroit.
 - [ ] St. Clair Tunnel: CN 5 The La Salle, 6 / 17 The Inter-City Limited, 14 / 15 The International Limited, 20 The Ontario Limited (Grand Trunk Western to Chicago).
 - [ ] Rouses Point, N.Y.: D&H 7, 8, 9, 10, 34, 35 (Montreal - New York); CN Rutland trains 51, 52, 64, 65.
-- [ ] East Alburgh, Vt.: CN / Central Vermont 20, 21, 307, 332 (New York, Washington, Boston).
+- [x] East Alburgh, Vt.: CN / Central Vermont 20, 21, 307, 332: done in Version 188 (to Springfield and Boston). Beyond Springfield (New Haven, Pennsylvania) waits for Connecticut / New York track and timetables.
 - [x] Norton, Vt. (Island Pond, Portland): CN 11, 12, 16, 17, 111, 112, 126, 209, 210. Done in Version 186: on to Island Pond, Nos. 16 / 126 and 17 through to Portland, the Lewiston branch (Grand Trunk).
 - [x] North Troy / Newport, Vt.: CP 209, 210 The Red Wing, 211, 212 The Alouette, 213, 214 (Boston & Maine to Boston): done in Version 187. Still open: Quebec Central 1 / 6 (Beebe - Newport, to meet the Red Wing), B&M station stops between Plymouth / White River Jct. and Concord (with the B&M timetables).
-- [ ] Malone, N.Y.: New York Central Montreal - New York (4 trains). Fort Covington, N.Y.: CN 79 / 80. Fort Covington station (Brendan, 17 Nov 2026, "tolerably comfortable guessing"): 44 59 36.17 N, 74 29 45.01 W (44.993381, -74.495836); the Grand Trunk trace (Mississippi Rails, traces/maritimes/cn_gtr.geojson, status 'later') ends about 1 km east of it.
+- [ ] Malone, N.Y.: New York Central Montreal - New York (4 trains). Fort Covington, N.Y.: CN 79 / 80 (done in Version 188, into Fort Covington). Fort Covington station (Brendan, 17 Nov 2026, "tolerably comfortable guessing"): 44 59 36.17 N, 74 29 45.01 W (44.993381, -74.495836); the Grand Trunk trace (Mississippi Rails, traces/maritimes/cn_gtr.geojson, status 'later') ends about 1 km east of it.
 - [ ] Vanceboro, Me.: CP 113 / 114 The Gull (Maine Central to Boston); The Pine Tree through cars on CP 40. The Gull to be drawn as Maine Central / B&M-owned (Brendan, 17 Nov 2026). Needs CP Table 11 or the MEC (Vanceboro - Bangor - Portland) and B&M (Portland - Boston) tables. Portland Union Station (Brendan): 43.652243, -70.280710.
 - [ ] Fort Frances / International Falls: CN 19 / 20 (Duluth, Winnipeg & Pacific to Duluth).
 - [ ] Ending at a border station, connections only (to check): CP 27 / 28 Sault Ste. Marie, Ont. (Soo Line); CP 543 / 544 Coutts (Sweet Grass, Great Northern); CN 600 / 601, 605 / 606, 620 / 621 Sarnia; CN 77 and CP 29 / 30 Prescott (the Ogdensburg car ferry); CN M218 / M219 Fort Erie.
