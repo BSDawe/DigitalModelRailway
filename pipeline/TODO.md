@@ -96,7 +96,7 @@ Maritime tables where the traced line differs from the printed miles by 1 mi and
 
 ## Housekeeping
 - [ ] Licence of the Wikipedia Canadian Government Railways map data (for the credits). (V143)
-- [ ] The raw GeoPackage, the CGN zips and the OSM exports belong in the private repo. Claude has read-only access there, so they need adding from your side. (V143)
+- [ ] The raw GeoPackage, the CGN zips and the OSM exports belong in the private repo. Claude can push there (checked 18 Nov 2026: the earlier "read-only" note was wrong); they need sending to a session so they can be committed. (V143)
 - [ ] ESL livery colour: the placeholder is #7a2430. (V145)
 
 ## Work for Claude
