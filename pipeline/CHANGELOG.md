@@ -2743,3 +2743,7 @@ A review of the whole project (Brendan: "have a peek through ... suggest improve
   Saturday 4.30 a.m.; week-end trip Owen Sound Saturday 11.15 p.m. - Killarney - Manitowaning - Little Current - Owen Sound Monday 4.30 a.m.
   Tobermory - South Baymouth auto ferry, S.S. Norisle and M.S. Normac: four crossings a day each, about two hours (estimated).
 - Ports by Claude (approximate) except the Sault (the C.S.L. dock) and Michipicoten (the Algoma Central point).
+
+## Version 184
+- The clock rolls over (Brendan, 17 Nov 2026): when it plays past the end of the model day (3 a.m. Pacific), it carries on into the next day,
+  and the day menu follows it; Sunday night runs on into Monday. Before, it jumped back to 3 a.m. on the same day. page_template.html only.

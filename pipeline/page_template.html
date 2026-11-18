@@ -1183,7 +1183,9 @@ const TMIN = 3 * 3600, TMAX = 27 * 3600;
 let last = performance.now(), dayShown = '', clockShown = '';
 function frame(now) {
   const dt = Math.min(0.25, (now - last) / 1000); last = now;
-  if (S.playing) { S.T += dt * S.speed; if (S.T > TMAX) S.T = TMIN; }
+  if (S.playing) { S.T += dt * S.speed;
+    if (S.T > TMAX) {   // past the end of the day: on into the next day (Sunday night runs on into Monday) (Brendan, 17 Nov 2026)
+      S.T = TMIN + (S.T - TMAX); const ds = Object.keys(DAYI); S.day = ds[(DAYI[S.day] + 1) % 7]; daySel.value = S.day; panelKey = ''; } }
   const T = S.T;
   const states = [];
   for (const t of activeTrips(S.day)) { const st = tripState(t, T); if (st) states.push({ t, st }); }
