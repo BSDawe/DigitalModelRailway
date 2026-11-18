@@ -79,6 +79,7 @@ Maritime tables where the traced line differs from the printed miles by 1 mi and
 
 ## Material wanted from Brendan
 ### Traces
+- [ ] Springfield, Mass.: the wye track at the Connecticut River line / B&A junction is missing from the Mississippi Rails trace; needed before the New Haven trains (north - south through trains reverse at Union Station). (V189, Brendan 18 Nov 2026)
 - [ ] Newfoundland Railway: trace end to Port-aux-Basques. (V145)
 - [ ] Stellarton - Westville (Table 29): the Pictou trains run over the former Acadia Coal Co. and Nova Scotia Coal Co. lines (CN since V149). If CN's 1948 route went another way, a trace is wanted. (V146)
 - [ ] Borden - Cape Tormentine car ferry: the course across the strait is a straight estimate between the pier ends. (V146)

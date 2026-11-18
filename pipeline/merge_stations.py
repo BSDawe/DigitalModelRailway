@@ -25,7 +25,7 @@ MERGE = [
 MERGE += [
  # New England (Brendan, 17 Nov 2026): the CP's Montreal - Boston trains and the Central Vermont's share the B&M stations White River Jct. - Boston
  ['CP_WHITE_RIVER_JUNCTION_VT', 'CN_WHITE_RIVER_JUNCTION_VT'], ['CP_CONCORD_N_H', 'CN_CONCORD_N_H'], ['CP_MANCHESTER_N_H', 'CN_MANCHESTER_N_H'], ['CP_NASHUA_N_H', 'CN_NASHUA_N_H'],
- ['CP_LOWELL_MASS', 'CN_LOWELL_MASS'], ['CP_BOSTON_NORTH', 'CN_BOSTON_NORTH'],
+ ['CP_LOWELL_MASS', 'CN_LOWELL_MASS'], ['CP_BOSTON_NORTH', 'CN_BOSTON_NORTH'], ['CP_WOODSVILLE_N_H', 'BC_WOODSVILLE_N_H'], ['CP_WELLS_RIVER_VT', 'BC_WELLS_RIVER_VT'],
  # Brendan, 4 November 2026
  ['CN_MARYFIELD', 'CP_MARYFIELD'],                                    # both railways' trains call at the CN station
  ['CP_ST_PAUL', 'GN_ST_PAUL'],                                        # St. Paul Union Depot: one station for every St. Paul railway unless a table says otherwise

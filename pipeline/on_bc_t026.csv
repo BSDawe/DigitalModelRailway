@@ -1,0 +1,13 @@
+# Barre & Chelsea R.R., Table 26: Woodsville - Wells River - Montpelier (the Montpelier & Wells River line). CP timetable, 1948 (Table 26; scan cp1948_qc/t026_signs.png;
+# Brendan, 18 Nov 2026). Eastern time. No train numbers or mileage printed; miles here from the trace (Mississippi Rails Vermont map), Wells River - Montpelier 37.8.
+# Woodsville and Wells River are the CP / B&M stations (merged in merge_stations.py). Days: Ex. Sun. / Sun. only as headed. Wells River f3.35 p.m. (the 1.00 p.m. from Montpelier): stops on signal.
+#train col=T1 num=Train dir=down days="Mon,Tue,Wed,Thu,Fri,Sat" kind=passenger note="Barre & Chelsea, daily except Sunday: Woodsville 8.30 a.m. to Montpelier 10.55 a.m."
+#train col=T3 num=Train dir=down days="Mon,Tue,Wed,Thu,Fri,Sat" kind=passenger note="Barre & Chelsea, daily except Sunday: Woodsville 4.55 p.m. to Montpelier 6.45 p.m."
+#train col=T5 num=Train dir=down days=Sun kind=passenger note="Barre & Chelsea, Sundays: Woodsville 4.10 p.m. to Montpelier 6.35 p.m."
+#train col=T2 num=Train dir=up days="Mon,Tue,Wed,Thu,Fri,Sat" kind=passenger note="Barre & Chelsea, daily except Sunday: Montpelier 5.15 a.m. to Woodsville 7.15 a.m."
+#train col=T4 num=Train dir=up days="Mon,Tue,Wed,Thu,Fri,Sat" kind=passenger note="Barre & Chelsea, daily except Sunday: Montpelier 1.00 p.m. to Woodsville 3.40 p.m."
+#train col=T6 num=Train dir=up days=Sun kind=passenger note="Barre & Chelsea, Sundays: Montpelier 12.30 p.m. to Woodsville 2.50 p.m."
+mile,station,principal,prov,tz,T1,T3,T5,T2,T4,T6
+0.0,"Woodsville, N.H.",1,NH,E,lv 8.30a,lv 4.55p,lv 4.10p,ar 7.15a,ar 3.40p,ar 2.50p
+0.3,"Wells River, Vt.",1,VT,E,8.35a,4.58p,4.13p,7.10a,f3.35p,2.45p
+38.1,"Montpelier, Vt.",1,VT,E,ar 10.55a,ar 6.45p,ar 6.35p,lv 5.15a,lv 1.00p,lv 12.30p
