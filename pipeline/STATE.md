@@ -1,7 +1,7 @@
 # The Digital Model Railway — project state
 
 Read this first. It is meant to be enough to start a short, single-task chat without replaying the project's history.
-Last updated 17 November 2026 (Version 184). This file is the current state and the standing rules; the version-by-version history is in CHANGELOG.md.
+Last updated 17 November 2026 (Version 185). This file is the current state and the standing rules; the version-by-version history is in CHANGELOG.md.
 
 ## What this is
 
@@ -323,6 +323,7 @@ After an accepted build: `cp viz_data.json tools/.baseline_viz.json`.
 
 ## Recent versions (one line each; the detail is in CHANGELOG.md)
 
+- 185: Ontario Northland's M.V. Chief Commanda on Lake Nipissing, North Bay - Callander - Keyston Lodge - Dokis, Mon., Wed., Fri. (onrb_build.py; highly speculative).
 - 184: the clock rolls over to the next day when it plays past 3 a.m. (Sunday into Monday).
 - 183: Owen Sound Transportation Co. (ostc_build.py): the Manitoulin's North Channel run and week-end trip, the Tobermory - South Baymouth ferry (all estimated).
 - 182: the D.&C. Detroit - Buffalo boats named night by night (City of Detroit III, Greater Detroit; estimated).

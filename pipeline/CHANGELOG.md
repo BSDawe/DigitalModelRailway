@@ -2747,3 +2747,12 @@ A review of the whole project (Brendan: "have a peek through ... suggest improve
 ## Version 184
 - The clock rolls over (Brendan, 17 Nov 2026): when it plays past the end of the model day (3 a.m. Pacific), it carries on into the next day,
   and the day menu follows it; Sunday night runs on into Monday. Before, it jumped back to 3 a.m. on the same day. page_template.html only.
+
+## Version 185
+- Ontario Northland boat service on Lake Nipissing (Brendan, 17 Nov 2026): M.V. Chief Commanda, North Bay (Government Dock) - Callander (wharf) - Keyston Lodge -
+  Dokis (French River) - back to North Bay, Monday, Wednesday and Friday. New step onrb_build.py (after ostc_build; lanes cached in onrb_legs.json); water from the
+  basemap tiles, as in lo_build (Lake Nipissing is not in water_east.json). Ports: Brendan's points. Livery Ontario Northland yellow (.badge.v.onr, BOAT_COLOR onr).
+- HIGHLY SPECULATIVE: no regular 1948 timetable in hand. The days are pencilled in (three trips a week, Brendan's understanding); the hours, North Bay 10.00 a.m. and
+  back 5.30 p.m. Eastern Daylight Time, are from the special Old Home Week schedule of August 1948 (souvenir booklet, Nipissing University ICSOH; a scan, not read
+  by Claude). Calls at Callander and Keyston Lodge (ten minutes each), an hour at Dokis and the direct run home are by distance at an even speed (about 12 mph):
+  Callander 10.51, Keyston Lodge 1.02 p.m., Dokis 2.00 - 3.00 p.m. (EDT). Counts: 609 lines, 4198 trips, 6944 stops.

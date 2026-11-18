@@ -445,6 +445,16 @@
    "inputs": [
     "water_east.json"
    ]
+  },
+  {
+   "name": "onrb_build",
+   "script": "onrb_build.py",
+   "needs": [
+    "ostc_build"
+   ],
+   "inputs": [
+    "water_east.json"
+   ]
   }
  ]
 }
