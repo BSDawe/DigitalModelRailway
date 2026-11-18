@@ -435,6 +435,16 @@
    "inputs": [
     "water_east.json"
    ]
+  },
+  {
+   "name": "ostc_build",
+   "script": "ostc_build.py",
+   "needs": [
+    "dcn_build"
+   ],
+   "inputs": [
+    "water_east.json"
+   ]
   }
  ]
 }

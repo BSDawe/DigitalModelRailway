@@ -96,33 +96,6 @@ def build(seq):
                        kml='', gid=gid(k), xy=[ll[0], ll[1]], note=note, key=k))
     return route, st
 
-def build(seq):
-    pts, at, last, straight, prev = [], {}, None, False, None
-    for n in seq:
-        if isinstance(n, str):
-            q = P[n][1]
-            if straight: pts.append(q)                                    # off the end of a drawn track: straight in
-            elif last is not None: pts += sealeg(last, q)[1:] if pts else sealeg(last, q)
-            elif not pts: pts.append(q)
-            at[len(at)] = (n, len(pts) - 1); last = q; straight = False; prev = 'port'
-        else:
-            kind, ps = n
-            for q in ps:
-                if kind == 'via' or (q is ps[0] and prev == 'via'): pts += sealeg(last, q)[1:]      # a track joins a sea lane, or runs straight on from a port
-                else: pts.append(q)
-                last = q
-            straight = kind == 'track'; prev = kind
-    route = []; acc = 0.0; prev = None
-    for lon, lat in pts:
-        xy = fwd(lon, lat)
-        if prev: acc += math.dist(xy, prev)
-        prev = xy; route.append([round(lon, 6), round(lat, 6), round(acc, 1)])
-    st = []
-    for _, (k, i) in sorted(at.items()):
-        nm, ll, note, stop = P[k]
-        st.append(dict(name=nm, chain=route[i][2], lon=route[i][0], lat=route[i][1], mile=round(route[i][2] / MI, 1), lmile=round(route[i][2] / MI, 1), principal=bool(stop),
-                       kml='', gid=gid(k), xy=[ll[0], ll[1]], note=note, key=k))
-    return route, st
 
 def hm(txt):
     m = re.match(r'(\d+)\.(\d+)([ap])', txt); h, mn = int(m.group(1)), int(m.group(2))

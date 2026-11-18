@@ -1,7 +1,7 @@
 # The Digital Model Railway — project state
 
 Read this first. It is meant to be enough to start a short, single-task chat without replaying the project's history.
-Last updated 17 November 2026 (Version 182). This file is the current state and the standing rules; the version-by-version history is in CHANGELOG.md.
+Last updated 17 November 2026 (Version 183). This file is the current state and the standing rules; the version-by-version history is in CHANGELOG.md.
 
 ## What this is
 
@@ -323,6 +323,7 @@ After an accepted build: `cp viz_data.json tools/.baseline_viz.json`.
 
 ## Recent versions (one line each; the detail is in CHANGELOG.md)
 
+- 183: Owen Sound Transportation Co. (ostc_build.py): the Manitoulin's North Channel run and week-end trip, the Tobermory - South Baymouth ferry (all estimated).
 - 182: the D.&C. Detroit - Buffalo boats named night by night (City of Detroit III, Greater Detroit; estimated).
 - 181: Detroit and Cleveland Navigation Co. (dcn_build.py): Detroit - Cleveland, Detroit - Buffalo, and the cruises to Mackinac, Chicago, Harbor Springs, Midland.
 - 180: ocean liners to the edge of the map's water, in their own step (ocean_build.py) and list heading; Island Connector; Fort Amherst and Denali cut at the edge.

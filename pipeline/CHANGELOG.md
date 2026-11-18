@@ -2734,3 +2734,12 @@ A review of the whole project (Brendan: "have a peek through ... suggest improve
 - Brendan: pick one of the City of Detroit III and the Greater Detroit for each sailing and mark it an estimate. Each night one ship sails each way; they
   turn and turn about: Greater Detroit east from Detroit on Mon., Wed., Fri., Sun. (back from Buffalo the next night), City of Detroit III the other way
   round. Which ship on which night ESTIMATED (in the notes).
+
+## Version 183 (17 November 2026): Owen Sound Transportation Co.
+- Brendan: add the Owen Sound Transportation Co.; no 1948 schedule found, the company's history (Wikipedia) as the guide. New step ostc_build.py (after
+  dcn_build, same method; livery ostc, agency OSTC); every time ESTIMATED except the hours the history gives (1927 pattern):
+  S.S. Manitoulin on the North Channel "Turkey Trail": Owen Sound Monday 11.15 p.m. - Killarney - Manitowaning - Little Current - Gore Bay - Meldrum Bay -
+  Cockburn Island - Hilton Beach - Richard's Landing - Sault Ste. Marie - Gargantua Harbour - Michipicoten (Wednesday night), back Thursday to Owen Sound
+  Saturday 4.30 a.m.; week-end trip Owen Sound Saturday 11.15 p.m. - Killarney - Manitowaning - Little Current - Owen Sound Monday 4.30 a.m.
+  Tobermory - South Baymouth auto ferry, S.S. Norisle and M.S. Normac: four crossings a day each, about two hours (estimated).
+- Ports by Claude (approximate) except the Sault (the C.S.L. dock) and Michipicoten (the Algoma Central point).

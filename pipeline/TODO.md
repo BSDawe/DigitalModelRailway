@@ -165,7 +165,7 @@ Maritime tables where the traced line differs from the printed miles by 1 mi and
     https://clarkesteamship.wordpress.com/tag/north-shore-power-railway-navigation-co/; https://www.boisestgilles.ca/content/historique-maritime.
     Need a 1948 sailing list (Clarke folder or newspaper). Also the Compagnie de transport du Bas-St-Laurent (Rimouski - North Shore) in the same thesis.
   The map has only Canada Steamship Lines' Montreal - Quebec - Saguenay (cssg) in this area.
-- [ ] Water: Owen Sound Transportation Co. (Manitoulin: Norisle, Normac); Pelee Island and Wolfe Island ferries; Northumberland Ferries (Wood Islands - Caribou); Grand Manan ferry; Clarke Steamship (Gaspe, North Shore). Lake Winnipeg (Keenora) is in; the northern river boats were no longer scheduled common carriers after 1947 (Brendan).
+- [ ] Water (Owen Sound Transportation Co. done in Version 183, estimated: a 1948 schedule would firm it up); Pelee Island and Wolfe Island ferries; Northumberland Ferries (Wood Islands - Caribou); Grand Manan ferry; Clarke Steamship (Gaspe, North Shore). Lake Winnipeg (Keenora) is in; the northern river boats were no longer scheduled common carriers after 1947 (Brendan).
 
 ## Cross-border trains cut at the border (stage 4; list of 11 Nov 2026)
 Each runs to an International Boundary point (time estimated) or to the last Canadian station; the U.S. part waits for the U.S. railways.
