@@ -327,6 +327,7 @@ function along(d, rk = 'main') {
 }
 const ST = DATA.stations.map((s, i) => { const p = along(s.chain); return { ...s, line: s.line === 'cp' ? 'cpl' : s.line, i, x: p.x, y: p.y, chains: { main: s.chain }, miles: {} }; });   // 'cp' in the base list is the Central Park Line; LINES uses 'cp' for Canadian Pacific
 const GID = {}; ST.forEach(s => GID[s.id] = s);
+const shortName = n => n.replace(/,\s*(Vt|N\.\s?H|Me|Mass|Mich|N\.\s?Y|Conn|R\.\s?I|Ont|Que|N\.\s?B|N\.\s?S|Man|Sask|Alta|B\.\s?C|Wis|Minn|Ind|Ill|Ohio|Pa|Wash|Ore|Mont|Idaho|N\.\s?D|Alaska)\.?$/, '');   // state / province tags kept in the data, not shown (Brendan, 18 Nov 2026)
 for (const L of LINES) L.idx = L.stations.map(b => {
   const key = b.shared || b.gid;
   if (key && GID[key]) {            // shared with another line, or a second call on this line (a spur run out and back)
@@ -335,7 +336,7 @@ for (const L of LINES) L.idx = L.stations.map(b => {
     return g.i;
   }
   const q = b.xy ? P(b.xy[0], b.xy[1]) : null, p = q ? { x: q[0], y: q[1] } : along(b.chain, L.key), i = ST.length;
-  const s = { id: L.key + i, name: b.name, mile: b.mile, chain: b.chain, chains: { [L.key]: b.chain }, miles: { [L.key]: b.lmile ?? b.mile }, slow: !!b.slow, i, x: p.x, y: p.y,
+  const s = { id: L.key + i, name: shortName(b.name), mile: b.mile, chain: b.chain, chains: { [L.key]: b.chain }, miles: { [L.key]: b.lmile ?? b.mile }, slow: !!b.slow, i, x: p.x, y: p.y,
               principal: !!b.principal, line: L.key, note: b.note || `${L.label} station` + (b.tp === 0 ? ' (flag stop)' : ''), kml: b.kml || '' };
   ST.push(s); if (b.gid) GID[b.gid] = s;
   return i;

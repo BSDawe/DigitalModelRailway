@@ -5,7 +5,7 @@ Read this first, then STATE.md (about 350 lines: the current state and the stand
 search it, don't read it through.
 
 ## Where things stand
-- Version 189 is published (https://bsdawe.github.io/DigitalModelRailway/): 615 lines, 4218 trips, 7019 stops, 62 agencies. CN's Canadian timetables are all in; CP Maritimes: the DAR and CP New Brunswick with the line across Maine (V159).
+- Version 190 is published (https://bsdawe.github.io/DigitalModelRailway/): 621 lines, 4243 trips, 7096 stops, 62 agencies. CN's Canadian timetables are all in; CP Maritimes: the DAR and CP New Brunswick with the line across Maine (V159).
 - check_gtfs reports no problems (the Minneapolis one was fixed in V178 from the 1948 C&NW timetable).
 - A leftover branch, `wip-cdgb`, is on GitHub (the proxy refused to delete it). It is merged; Brendan can delete it.
 

@@ -181,6 +181,7 @@ Each runs to an International Boundary point (time estimated) or to the last Can
 - [ ] Niagara River, Suspension Bridge: CN Hamilton - Niagara Falls, N.Y. 86, 90 / 93 The Maple Leaf (Lehigh Valley to New York), 91, 95, 102, 107, 186; MC 358 The Canadian - The Niagara.
 - [ ] Detroit River: MC trains above at the tunnel (Windsor - Detroit); CP Toronto - Windsor 19, 20, 21, 22, 37, 38, 634, 635 (and the pool trains 6 / 22 from Detroit) stop at Windsor. CN's Detroit sections (Brush Street) are built to Detroit.
 - [ ] St. Clair Tunnel: CN 5 The La Salle, 6 / 17 The Inter-City Limited, 14 / 15 The International Limited, 20 The Ontario Limited (Grand Trunk Western to Chicago).
+  Version 190: GTW Tables 146, 148, 149, 150, 152, 153 built; St. Clair Tunnel, Brush Street and the Chicago line (Elsdon - C&WI - Dearborn Station) in the track. STILL WANTED: Table 147 (Port Huron - Durand - Battle Creek - Chicago; page 1131 or 1132), then the Chicago trains, and a colour for the C&WI (own cwi).
   Grand Trunk Western trace received (Mississippi Rails, Brendan 18 Nov 2026; KMZ in the private repo, traces/msrails/Grand_Trunk_Western.kmz): Port Huron - Flint - Lansing - Battle Creek -
   South Bend - Chicago (to Elsdon), Detroit - Port Huron, Detroit - Pontiac - Durand - Grand Rapids - Muskegon, and branches. Missing (Brendan): the old St. Clair Tunnel (Sarnia - Port Huron),
   Detroit Brush Street station access, and the joint line into Chicago (Elsdon - Dearborn Station, C&WI). Wanted: the Official Guide GTW pages (1948) for the times beyond Port Huron / Detroit.

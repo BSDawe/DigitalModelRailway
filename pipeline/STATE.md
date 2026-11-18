@@ -1,7 +1,7 @@
 # The Digital Model Railway — project state
 
 Read this first. It is meant to be enough to start a short, single-task chat without replaying the project's history.
-Last updated 17 November 2026 (Version 189). This file is the current state and the standing rules; the version-by-version history is in CHANGELOG.md.
+Last updated 17 November 2026 (Version 190). This file is the current state and the standing rules; the version-by-version history is in CHANGELOG.md.
 
 ## What this is
 
@@ -289,6 +289,7 @@ lat, mile, lmile?, principal, gid, note, xy?, slow?}], dirLabels, segments [{own
 - **Employee timetables**: S = stop, F = flag, L / A = leave / arrive; a plain time is a passing time, not a stop. (V168)
 - **One spelling for one place** on the page and in the feed (`names.py`); the timetable files keep the name as printed. (V176)
 - **Views set the clock**: choosing a view sets its time zone (`VIEW_TZ` in the page); local time is not the default otherwise. (V176)
+- **State and province tags** (", Vt.", ", Mich." ...) stay in the data and the feed but are not shown on the page (shortName in the template; Brendan, 18 Nov 2026). Michigan station ids carry _MICH (on_lines.register).
 - **Springfield, Mass.**: every railway's trains call at Springfield Union Station (42.106238, -72.593270), on the New York Central (Boston & Albany) line: NYC (B&A), B&M (and the Central Vermont trains it hosts) and the New Haven. North - south through trains reverse there (Brendan, 18 Nov 2026).
 - **U.S. traces are from Mississippi Rails** (Tony Howe and David Price) unless Brendan says otherwise (17 Nov 2026); credit them so.
 - **Transcriptions** by another model follow `TIMETABLE_READING.md` (copy, don't interpret; check mode against an existing file).
@@ -326,6 +327,7 @@ After an accepted build: `cp viz_data.json tools/.baseline_viz.json`.
 
 ## Recent versions (one line each; the detail is in CHANGELOG.md)
 
+- 190: Grand Trunk Western (CN, labelled GTW): Tables 146, 148, 149, 150, 152, 153 (Detroit - Port Huron, Detroit - Grand Rapids - Muskegon, Durand - Bay City, Jackson - Richmond, Durand - Greenville, Pontiac - Caseville); state / province tags hidden on the page.
 - 189: Springfield, Mass. at Union Station on the B&A (NYC) line; the Barre & Chelsea (Woodsville - Wells River - Montpelier, CP Table 26; own railway, kind D).
 - 188: Central Vermont (CN, labelled Central Vermont): Montreal - White River Jct. - Springfield (Washingtonian, Montrealer, Vermonters, Ambassador's New York section), the Ambassador to Boston, Table 1 by St. Armand; Quebec Central to Newport; CN 79 / 80 into Fort Covington.
 - 187: CP Montreal - Boston: The Alouette (by Plymouth) and The Red Wing (by White River Jct.) through to North Station over the B&M (B&M track gold); Newport - Woodsville mixed; Mississippi Rails traces.

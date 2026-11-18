@@ -2815,3 +2815,17 @@ A review of the whole project (Brendan: "have a peek through ... suggest improve
   (no numbers printed). New railway in on_lines.py (onbc, kind D, own bc, agency BC; colour #2E6B4F dark green, Claude's pick), page entries (badge, colours, list),
   track the Montpelier & Wells River line from the Mississippi Rails Vermont map (38.2 mi traced). Woodsville and Wells River merged with the CP stations.
 - Counts: 615 lines, 4218 trips, 7019 stops; 63 agencies; check_gtfs 0 problems.
+
+## Version 190
+- Grand Trunk Western (CN subsidiary: drawn as CN, labelled Grand Trunk Western, trip ids GTW-; Brendan, 18 Nov 2026): the tables transcribed in Version 121 (Official Guide,
+  April 25, 1948; Eastern time), now built as on_cn_t146 (Durand - Saginaw - Bay City), t148 (Detroit (Brush Street) - Mount Clemens - Port Huron (Tunnel)), t149 (Jackson -
+  Pontiac - Romeo - Richmond, mixed), t150 (Detroit - Pontiac - Durand - Owosso - Ionia - Grand Rapids - Muskegon), t152 (Durand - Owosso - Carson City - Greenville, mixed),
+  t153 (Pontiac - Imlay City - Cass City - Caseville, mixed); the on_gtwfull files removed. Station names carry ", Mich." (ids _MICH); Detroit is the CN's Brush Street station.
+  Forced over the trace where it is shorter than printed: Durand - Owosso (13.4 / 11.5), Owosso - Grand Rapids, Pontiac - Rochester - Washington - Romeo (22 / 28.6).
+- Track: tools/mar_import_gtw.py -> traces/maritimes/gtw.geojson: the Mississippi Rails GTW map; Brendan's Brush Street trace (Milwaukee Jct. - the riverfront) with a
+  dashed link to the Brush Street station point; his St. Clair Tunnel trace (Port Huron - Sarnia); the Chicago line from his export (GTW Elsdon - the C&WI, own cwi,
+  into Dearborn Station), picked by Claude; a dashed Ferrysburg - Muskegon estimate (not in the trace); a tie at Richmond (150 m).
+- Station points (GTW_PLACES): anchors at trace ends, the rest by printed mileage along the trace (the collection lookup matched St. Johns, Mich. to St. Johns, Que.).
+- Not built: Table 147 (the Chicago main line) is not in the scans; the through trains still end in the St. Clair Tunnel.
+- Page: state and province tags hidden in station names (Brendan).
+- Counts: 621 lines, 4243 trips, 7096 stops; check_gtfs 0 problems.
