@@ -1,4 +1,4 @@
-# Canadian National, Table 59: Montreal (Central Station) - St. Hyacinthe - Richmond - Sherbrooke - Coaticook - Island Pond - Portland (the U.S. part, Grand Trunk Ry., added 17 Nov 2026 from the same page; Brendan's Grand Trunk trace). Source: Official Guide, April 25, 1948, CN Table 59 (Brendan, 30 Oct 2026; private scans og1948_cnq/). EASTERN TIME.
+# Canadian National, Table 59: Montreal (Central Station) - St. Hyacinthe - Richmond - Sherbrooke - Coaticook - Island Pond - Portland (the U.S. part, Grand Trunk Ry., added 17 Nov 2026 from the same page; the Grand Trunk trace by Mississippi Rails, supplied by Brendan). Source: Official Guide, April 25, 1948, CN Table 59 (Brendan, 30 Oct 2026; private scans og1948_cnq/). EASTERN TIME.
 # Miles as printed. Stanhope's times estimated. Only Nos. 16 / 126 and 17 run beyond Island Pond (the night trains turn there). Danville Jct. - Lewiston is Table 60 (on_cn_t060l.csv); the Lewiston and Portland buses (sign double dagger) are not entered. The Quebec rows (Table 52 connections, in the notes) and Table 59a (pool trains Montreal - Quebec: all built from CP Table 33 and CN Table 1) not entered.
 # Model week (July 5 - 11): e, h runs as in summer (No. 16 beyond Richmond Monday to Friday; Nos. 126 and 209 Saturdays). Replaces Nos. 11, 16, 23 of on_cn_t001.csv (St. Hyacinthe - Montreal only).
 # Signs: * daily; dagger ex Sun; section Sun only; k Sat only; f flag; c, n, x, y conditional stops (entered as flag stops); i Saturday 5 minutes later.
@@ -72,15 +72,15 @@ mile,station,principal,prov,tz,No30,No230,No112,No12,No24,No124,No22,No218,No16,
 185.5,West Milan,0,NH,E,,,,,,,,,2.02p,2.02p,,,,12.00p,,,,,,,,,,,
 197.0,Berlin,1,NH,E,,,,,,,,,2.19p,2.19p,,,,11.40a,,,,,,,,,,,
 203.3,Gorham,1,NH,E,,,,,,,,,2.39p,2.39p,,,,11.19a,,,,,,,,,,,
-209.0,Shelburne,0,NH,E,,,,,,,,,2.49p,2.49p,,,,11.09a,,,,,,,,,,,
+209.0,"Shelburne, N.H.",0,NH,E,,,,,,,,,2.49p,2.49p,,,,11.09a,,,,,,,,,,,
 224.8,Bethel,1,ME,E,,,,,,,,,3.19p,3.19p,,,,10.41a,,,,,,,,,,,
 229.5,Locke's Mills,0,ME,E,,,,,,,,,3.28p,3.28p,,,,10.31a,,,,,,,,,,,
 233.1,Bryant's Pond,0,ME,E,,,,,,,,,3.36p,3.36p,,,,10.24a,,,,,,,,,,,
 239.2,Bates,0,ME,E,,,,,,,,,3.49p,3.49p,,,,10.12a,,,,,,,,,,,
 247.5,South Paris,1,ME,E,,,,,,,,,4.05p,4.05p,,,,9.56a,,,,,,,,,,,
-254.0,Oxford,0,ME,E,,,,,,,,,4.16p,4.16p,,,,9.39a,,,,,,,,,,,
+254.0,"Oxford, Me.",0,ME,E,,,,,,,,,4.16p,4.16p,,,,9.39a,,,,,,,,,,,
 258.6,Mechanic Falls,1,ME,E,,,,,,,,,4.25p,4.25p,,,,9.29a,,,,,,,,,,,
 267.3,Danville Junction,1,ME,E,,,,,,,,,4.42p,4.42p,,,,9.12a,,,,,,,,,,,
 282.7,Yarmouth Junction,1,ME,E,,,,,,,,,5.08p,5.08p,,,,8.45a,,,,,,,,,,,
-283.6,Yarmouth,0,ME,E,,,,,,,,,5.11p,5.11p,,,,8.40a,,,,,,,,,,,
-294.9,Portland,1,ME,E,,,,,,,,,ar 5.35p,ar 5.35p,,,,lv 8.20a,,,,,,,,,,,
+283.6,"Yarmouth, Me.",0,ME,E,,,,,,,,,5.11p,5.11p,,,,8.40a,,,,,,,,,,,
+294.9,"Portland, Me.",1,ME,E,,,,,,,,,ar 5.35p,ar 5.35p,,,,lv 8.20a,,,,,,,,,,,

@@ -1,6 +1,6 @@
 # Canadian National (Grand Trunk Ry. System), Table 60: Danville Junc. - Lewiston, Me. Source: Official Guide, May 1948 (table dated April 25, 1948; Brendan's image, 17 Nov 2026). EASTERN TIME.
 # Two trains, daily except Sunday (dagger): No. 189 Danville Jct. 9.30 a.m. - Lewiston 9.55 a.m. (from No. 17's arrival, 9.12); No. 188 Lewiston 8.35 a.m. - Danville Jct. 8.55 a.m. (for No. 17 to Montreal).
-# The two bus columns (Danville Jct. 4.45 p.m. - Lewiston 5.00 p.m.; Lewiston 4.20 p.m. - Danville Jct. 4.35 p.m.) are buses: not entered. The trains run back up the main line from Danville Jct. to Lewiston Jct. and onto the branch (Brendan's trace).
+# The two bus columns (Danville Jct. 4.45 p.m. - Lewiston 5.00 p.m.; Lewiston 4.20 p.m. - Danville Jct. 4.35 p.m.) are buses: not entered. The trains run back up the main line from Danville Jct. to Lewiston Jct. and onto the branch (the Mississippi Rails trace).
 #train col=No189 num=189 dir=down days="ex Sun" kind=passenger note="Daily except Sunday: Danville Jct. 9.30 a.m. to Lewiston 9.55 a.m., connecting with No. 17 from Portland."
 #train col=No188 num=188 dir=up days="ex Sun" kind=passenger note="Daily except Sunday: Lewiston 8.35 a.m. to Danville Jct. 8.55 a.m., for No. 17 to Montreal (Danville Jct. 9.12 a.m.)."
 mile,station,principal,prov,tz,No189,No188

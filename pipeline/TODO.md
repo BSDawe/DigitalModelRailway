@@ -175,9 +175,9 @@ Each runs to an International Boundary point (time estimated) or to the last Can
 - [ ] St. Clair Tunnel: CN 5 The La Salle, 6 / 17 The Inter-City Limited, 14 / 15 The International Limited, 20 The Ontario Limited (Grand Trunk Western to Chicago).
 - [ ] Rouses Point, N.Y.: D&H 7, 8, 9, 10, 34, 35 (Montreal - New York); CN Rutland trains 51, 52, 64, 65.
 - [ ] East Alburgh, Vt.: CN / Central Vermont 20, 21, 307, 332 (New York, Washington, Boston).
-- [ ] Norton, Vt. (Island Pond, Portland): CN 11, 12, 16, 17, 111, 112, 126, 209, 210.
+- [x] Norton, Vt. (Island Pond, Portland): CN 11, 12, 16, 17, 111, 112, 126, 209, 210. Done in Version 186: on to Island Pond, Nos. 16 / 126 and 17 through to Portland, the Lewiston branch (Grand Trunk).
 - [ ] North Troy / Newport, Vt.: CP 209, 210 The Red Wing, 211, 212 The Alouette, 213, 214 (Boston & Maine to Boston); Quebec Central 1 / 6 (through to Boston and New York).
-- [ ] Malone, N.Y.: New York Central Montreal - New York (4 trains). Fort Covington, N.Y.: CN 79 / 80.
+- [ ] Malone, N.Y.: New York Central Montreal - New York (4 trains). Fort Covington, N.Y.: CN 79 / 80. Fort Covington station (Brendan, 17 Nov 2026, "tolerably comfortable guessing"): 44 59 36.17 N, 74 29 45.01 W (44.993381, -74.495836); the Grand Trunk trace (Mississippi Rails, traces/maritimes/cn_gtr.geojson, status 'later') ends about 1 km east of it.
 - [ ] Vanceboro, Me.: CP 113 / 114 The Gull (Maine Central to Boston); The Pine Tree through cars on CP 40.
 - [ ] Fort Frances / International Falls: CN 19 / 20 (Duluth, Winnipeg & Pacific to Duluth).
 - [ ] Ending at a border station, connections only (to check): CP 27 / 28 Sault Ste. Marie, Ont. (Soo Line); CP 543 / 544 Coutts (Sweet Grass, Great Northern); CN 600 / 601, 605 / 606, 620 / 621 Sarnia; CN 77 and CP 29 / 30 Prescott (the Ogdensburg car ferry); CN M218 / M219 Fort Erie.

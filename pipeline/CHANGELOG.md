@@ -2756,3 +2756,20 @@ A review of the whole project (Brendan: "have a peek through ... suggest improve
   back 5.30 p.m. Eastern Daylight Time, are from the special Old Home Week schedule of August 1948 (souvenir booklet, Nipissing University ICSOH; a scan, not read
   by Claude). Calls at Callander and Keyston Lodge (ten minutes each), an hour at Dokis and the direct run home are by distance at an even speed (about 12 mph):
   Callander 10.51, Keyston Lodge 1.02 p.m., Dokis 2.00 - 3.00 p.m. (EDT). Counts: 609 lines, 4198 trips, 6944 stops.
+
+## Version 186
+- CN's Grand Trunk in New England (Brendan, 17 Nov 2026): track from the KMZ "Grand Trunk Ry" by Mississippi Rails (Tony Howe and David Price), supplied by Brendan;
+  imported by tools/mar_import_gtr.py to traces/maritimes/cn_gtr.geojson (own cn): Norton - Island Pond - Bethel - Portland, the Portland station lead, the Lewiston
+  and Norway branches; the Rouses Point, Fort Covington and Alburgh border stubs kept as status 'later'. The trace agrees with the printed miles (15.8 / 15.9 to
+  Island Pond, 79.5 / 79.5 to Bethel, 70.0 / 70.1 to Portland); Montreal - Portland traces 295.5 mi against 294.9 printed.
+- CN Table 59 (Official Guide, table of April 25, 1948): the U.S. rows entered from the scans (t059_sherbrooke, t059_us) and Brendan's image. Norton and Island Pond
+  as printed for every train (the estimated boundary row removed); Nos. 16 (Mon. - Fri.) and 126 (Sat.) on from Island Pond 12.50 p.m. to Portland (Grand Trunk
+  Station) 5.35 p.m.; No. 17 Portland 8.20 a.m. daily except Sunday to Island Pond 1.20 - 1.35 p.m. and Montreal. The night trains (11, 12, 111, 112) and 209 / 210
+  turn at Island Pond. Not entered: the buses (sign double dagger) and the Portland Union Station connections (Boston & Maine, to Boston and New York).
+- New file on_cn_t060l.csv, Table 60 Danville Junc. - Lewiston (Grand Trunk Ry. System): No. 189 Danville Jct. 9.30 a.m. - Auburn - Lewiston 9.55 a.m. and No. 188
+  Lewiston 8.35 a.m. - Danville Jct. 8.55 a.m., daily except Sunday; drawn as CN, labelled Grand Trunk (a CN subsidiary, like the CP subsidiaries; Brendan).
+  Lewiston station at the end of track (Brendan); Auburn 0.4 mi short of it (approximate). The trains back out of Danville Jct. to Lewiston Jct.
+- Station points: by printed mileage along the trace between the anchors Island Pond, Bethel and Portland (Portland at Brendan's Grand Trunk station point,
+  43.65950 N, 70.24845 W). Portland, Oxford, Shelburne and Yarmouth carry their state (Portland, Me. ...) so the Canadian stations of those names keep their ids.
+- Standing rule (Brendan): U.S. traces are Mississippi Rails unless he says otherwise. Fort Covington station point noted in TODO for CN 79 / 80.
+- Counts: 610 lines, 4200 trips, 6966 stops; check_gtfs 0 problems.

@@ -1,7 +1,7 @@
 # The Digital Model Railway — project state
 
 Read this first. It is meant to be enough to start a short, single-task chat without replaying the project's history.
-Last updated 17 November 2026 (Version 185). This file is the current state and the standing rules; the version-by-version history is in CHANGELOG.md.
+Last updated 17 November 2026 (Version 186). This file is the current state and the standing rules; the version-by-version history is in CHANGELOG.md.
 
 ## What this is
 
@@ -208,6 +208,7 @@ timetables). The federal sources are under open licences that ask for an attribu
   database, Natural Resources Canada.
 - Timetable scans: **Timetableworld.com** (the Official Guide, CP, CN, GN, S.I., E&N, PGE). It does not cover the B.C. Electric or Union
   Steamships timetables: their source is not recorded here.
+- CN's Grand Trunk in New England (Norton - Portland, the Lewiston branch; traces/maritimes/cn_gtr.geojson) and the U.S. traces generally: **Mississippi Rails** (Tony Howe and David Price).
 - Washington State (Brendan, 9 October 2026, for the next stage; not used yet): railway KMLs by **Tony Howe and David Price, Mississippi
   Rails** (`traces/washington/Washington State/`: `Washington State Map 6-3-2018.kmz`, 364 placemarks in folders by railway: NP, S.I.,
   SP&S and its subsidiaries, UP/OWR&N, Milwaukee, GN, Washington short lines; `Spokane_Portland_&_Seattle.kmz`; and his screenshots in
@@ -288,6 +289,7 @@ lat, mile, lmile?, principal, gid, note, xy?, slow?}], dirLabels, segments [{own
 - **Employee timetables**: S = stop, F = flag, L / A = leave / arrive; a plain time is a passing time, not a stop. (V168)
 - **One spelling for one place** on the page and in the feed (`names.py`); the timetable files keep the name as printed. (V176)
 - **Views set the clock**: choosing a view sets its time zone (`VIEW_TZ` in the page); local time is not the default otherwise. (V176)
+- **U.S. traces are from Mississippi Rails** (Tony Howe and David Price) unless Brendan says otherwise (17 Nov 2026); credit them so.
 - **Transcriptions** by another model follow `TIMETABLE_READING.md` (copy, don't interpret; check mode against an existing file).
 - Scratch files and logs go in the session scratchpad, never in the repository.
 
@@ -323,6 +325,7 @@ After an accepted build: `cp viz_data.json tools/.baseline_viz.json`.
 
 ## Recent versions (one line each; the detail is in CHANGELOG.md)
 
+- 186: CN's Grand Trunk to Portland, Me. (Nos. 16 / 126 / 17 through from Montreal; the night trains to Island Pond) and the Lewiston branch (Grand Trunk); Mississippi Rails trace.
 - 185: Ontario Northland's M.V. Chief Commanda on Lake Nipissing, North Bay - Callander - Keyston Lodge - Dokis, Mon., Wed., Fri. (onrb_build.py; highly speculative).
 - 184: the clock rolls over to the next day when it plays past 3 a.m. (Sunday into Monday).
 - 183: Owen Sound Transportation Co. (ostc_build.py): the Manitoulin's North Channel run and week-end trip, the Tobermory - South Baymouth ferry (all estimated).
