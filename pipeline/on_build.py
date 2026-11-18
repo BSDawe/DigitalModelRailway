@@ -222,6 +222,7 @@ if __name__ == '__main__':
                        ['TSL', 'Compagnie de la Traverse du Saint-Laurent', 'https://troisrivieresnumerique.ca/documents/traversier-cite-des-trois-rivieres/', 'America/Vancouver', 'en', ''],
                        ['CRC', 'Cumberland Railway and Coal Company', 'https://en.wikipedia.org/wiki/Springhill,_Nova_Scotia', 'America/Vancouver', 'en', ''],
                        ['SNL', 'Sydney and Louisburg Railway', 'https://en.wikipedia.org/wiki/Sydney_and_Louisburg_Railway', 'America/Vancouver', 'en', ''],
+                       ['BC', 'Barre and Chelsea Railroad', 'https://en.wikipedia.org/wiki/Barre_and_Chelsea_Railroad', 'America/Vancouver', 'en', ''],
                        ['MCRP', 'Maritime Coal, Railway and Power Company', 'https://en.wikipedia.org/wiki/Joggins,_Nova_Scotia', 'America/Vancouver', 'en', ''],
                        ['TIR', 'Thousand Islands Railway', 'https://en.wikipedia.org/wiki/Thousand_Islands_Railway', 'America/Vancouver', 'en', ''],
                        ['DH', 'Delaware and Hudson Railroad', 'https://en.wikipedia.org/wiki/Delaware_and_Hudson_Railway', 'America/Vancouver', 'en', ''],

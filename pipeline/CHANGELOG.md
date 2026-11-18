@@ -2806,3 +2806,12 @@ A review of the whole project (Brendan: "have a peek through ... suggest improve
   Newport - Derby Line (own cp). tools/mar_import_gtr.py: the Alburgh and Fort Covington stubs now in use. Mississippi Rails state maps.
 - Station points by printed mileage along the traces (NE_PLACES). Joint stations (merge_stations.py): CP and CN at White River Jct., Concord, Manchester, Nashua, Lowell, Boston North Station.
 - Counts: 614 lines, 4212 trips, 7018 stops; check_gtfs 0 problems.
+
+## Version 189
+- Springfield, Mass. (Brendan, 18 Nov 2026): all trains call at Springfield Union Station (42.106238, -72.593270), on the New York Central (Boston & Albany) line. The
+  Central Vermont trains now run off the Connecticut River line onto a slice of the B&A main line (own nyc; Mississippi Rails Massachusetts map, within 4 km of the station)
+  and into the station. North - south through trains will reverse there once the New Haven is built; the wye track is missing from the trace (TODO).
+- Barre & Chelsea R.R. (Brendan, 18 Nov 2026), CP timetable 1948, Table 26: Woodsville - Wells River - Montpelier, two trains each way daily except Sunday and one on Sundays
+  (no numbers printed). New railway in on_lines.py (onbc, kind D, own bc, agency BC; colour #2E6B4F dark green, Claude's pick), page entries (badge, colours, list),
+  track the Montpelier & Wells River line from the Mississippi Rails Vermont map (38.2 mi traced). Woodsville and Wells River merged with the CP stations.
+- Counts: 615 lines, 4218 trips, 7019 stops; 63 agencies; check_gtfs 0 problems.
