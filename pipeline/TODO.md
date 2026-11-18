@@ -11,6 +11,9 @@ Last updated 17 November 2026 (Version 180).
 - [ ] CN Table 116 (Longlac - Fort William, Nos. 79 / 80): the Toronto section may be a connection with Nos. 3 / 4 at Longlac rather than through cars (Brendan not certain). Matters for chaining. (23 Oct)
 
 ## Fixes queued (Brendan: "don't fix yet"; ask before the next rebuild whether to include them)
+- [ ] CV Table 1 (on_cn_t001v): St. Johns - St. Alexander IS in the Quebec trace (Brendan, 18 Nov 2026); the straight estimate came from the line via Iberville being marked abandoned, but only past the wye with the Vermont line: use it up to the wye.
+- [ ] Stanbridge: the CV station is also the CP Stanbridge station (a union station): merge (Brendan, 18 Nov 2026).
+- [ ] CN near St. Jerome: a short straight-line piece on file that keeps coming back; find where it comes from and remove it (Brendan, 18 Nov 2026).
 - [ ] Barre & Chelsea colour: #2E6B4F reads as CN on the map; change it at the next revision (Brendan, 18 Nov 2026). Page only (--bc in the three CSS blocks; on_lines.py color for the feed).
 - [ ] Out-and-back joins (left for now, Brendan 11 Nov 2026: could be one train movement): Spl Kenora - Winnipeg - Kenora (skcp005e) and mixed M332
   Eyre - Acadia Valley - Eyre (skcn229b) are linked to their own return trips by the older group-key chaining in real_ends.py.

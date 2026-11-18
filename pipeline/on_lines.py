@@ -382,5 +382,6 @@ def register(files):
             m = _map().get((OWN[rail], c))
             full = canon(re.sub(r'[()]', ' ', n))                         # the whole name: Ottawa (Bank Street) is not Ottawa (Union Station)
             ab_lines.EXT_GID[(rail, n)] = m[2] if m else ('CN' if rail == 'oncpcn' else ab_lines.RAILS[rail]['pfx']) + '_' + re.sub(r'\W+', '_', full.upper()).strip('_')
+            if not m and re.search(r',\s*mich\.?$', n.lower()): ab_lines.EXT_GID[(rail, n)] += '_MICH'   # Grand Trunk Western stations (18 Nov 2026): canon drops ', Mich.', so Richmond, Mich. would take CN_RICHMOND (Que.)
     for (rail, n) in list(ab_lines.EXT_GID):
         if rail == 'onr' and n in ONR_ON_CN and ('oncn', n) in ab_lines.EXT_GID: ab_lines.EXT_GID[(rail, n)] = ab_lines.EXT_GID[('oncn', n)]   # one stop at each CN station
