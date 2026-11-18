@@ -3,7 +3,7 @@
 - Brendan's own pieces (traces/gtw/brendan_gtw_pieces.json): Brush Street (Milwaukee Jct. - the Detroit riverfront), the old St. Clair Tunnel (Port Huron - Sarnia), and the line into
   Chicago: the GTW from Elsdon east to the Chicago & Western Indiana and the C&WI north into Dearborn Station (41 52 18.60 N, 87 37 45.18 W), picked by Claude as the shortest clean
   path through Brendan's Chicago export (Chicago_GTW_Export.kmz, 321 OSM pieces) (C&WI part own cwi: the joint terminal line).
-- A straight link (est, dashed) Ferrysburg - Muskegon (not in the trace).
+- Grand Rapids - Muskegon over the Pennsylvania (GR&I) by trackage rights from Penn Jct. (Mississippi Rails trace, traces/gtw/prr_grand_rapids_muskegon.json; own prr).
 - A straight link (est, dashed) from the end of the Brush Street trace to the Brush Street station point used since V90 (about 800 m along the riverfront).
 Usage: python3 tools/mar_import_gtw.py <Grand_Trunk_Western.kmz>"""
 import json, math, os, re, sys, zipfile
@@ -23,7 +23,11 @@ B = json.load(open(os.path.join(HERE, 'traces', 'gtw', 'brendan_gtw_pieces.json'
 feats.append(F('cn', 'Grand Trunk Western: Brush Street (Brendan)', B['brush'], "Brendan's trace, 18 Nov 2026", 'brendan'))
 feats.append(F('cn', 'Grand Trunk Western: St. Clair Tunnel, Port Huron - Sarnia (Brendan)', B['tunnel'], "Brendan's trace, 18 Nov 2026", 'brendan'))
 feats.append(F('cn', 'Grand Trunk Western: Brush Street trace end - Brush Street station (est)', [B['brush'][-1], (-83.03975698, 42.32851075)], 'straight estimate (Claude)', 'link', True))
-feats.append(F('cn', 'Grand Trunk Western: Ferrysburg - Muskegon (est)', [(-86.234, 43.066), (-86.2599855, 43.2318052)], 'straight estimate (Claude): the Muskegon line north from Ferrysburg is not in the trace', 'link', True))
+PRR = json.load(open(os.path.join(HERE, 'traces', 'gtw', 'prr_grand_rapids_muskegon.json')))['prr'][3:]   # from Penn Jct. (where it meets the GTW at Grand Rapids)
+feats.append(dict(type='Feature', properties=dict(own='prr', name='Pennsylvania RR (GR&I): Penn Jct. (Grand Rapids) - Muskegon (Mississippi Rails)', constituent='Grand Rapids & Indiana (PRR)',
+              branch='Grand Trunk Western', group='mississippi_rails', status='ok', cost=1.0, note='Mississippi Rails trace (Brendan, 18 Nov 2026): the GTW ran Grand Rapids - Muskegon by trackage rights over the PRR from Penn Jct. after abandoning Greenville - Simpson (1946)'),
+              geometry=dict(type='LineString', coordinates=[[round(x, 7), round(y, 7)] for x, y in PRR])))
+feats.append(F('cn', 'Grand Trunk Western: Penn Jct. (tie to the PRR)', [(-85.6837232, 42.9965435), PRR[0]], 'tie (Claude): 110 m', 'link'))
 feats.append(F('cn', 'Grand Trunk Western: Richmond - the Romeo line (tie)', [(-82.7466527, 42.8088695), (-82.7458352, 42.8100815)], 'tie (Claude): the Romeo line ends 150 m from the Detroit - Port Huron line at Richmond', 'link'))
 feats.append(F('cn', 'Grand Trunk Western: South Bend (tie)', [(-86.2633222, 41.6700448), (-86.2610864, 41.6696371)], 'tie (Claude): the Chicago line and the South Bend - state line piece end 190 m apart at South Bend', 'link'))
 ch = B['chicago']; J = (-87.6369, 41.809)                                    # where the GTW meets the C&WI (east end of the GTW 49th St. piece)
