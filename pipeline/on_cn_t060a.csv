@@ -1,6 +1,6 @@
 # Canadian National, Table 60a: Coteau - Valleyfield (motor trains). Source: Official Guide, April 25, 1948, CN Table 60a (Brendan, 30 Oct 2026; private scans og1948_cnq/). EASTERN TIME.
 # Miles as printed from Valleyfield (Soulanges 3.3, Coteau 5.4), here from Coteau. Replaces on_cn_t075v.csv (the Valleyfield sections read from Table 75: these motor trains; deleted).
-# Table 60 (Danville Jct. - Lewiston, Maine, Grand Trunk) is wholly in the U.S.: not entered.
+# Table 60 (Danville Jct. - Lewiston, Maine, Grand Trunk): on_cn_t060l.csv (17 Nov 2026).
 # Signs: * daily; dagger ex Sun; section Sun only; k Sat only; f flag; crescent: Sundays (holiday Mondays instead).
 #train col=No620 num=620 dir=down days="ex Sun" kind=motor note="Motor train, Coteau - Valleyfield."
 #train col=No622 num=622 dir=down days="ex Sun" kind=motor note="Motor train, Coteau - Valleyfield."
