@@ -37,6 +37,17 @@ for k, fn in enumerate(sys.argv[1:4]):
                       constituent='Central Vermont Railway' if own == 'cn' else 'Quebec Central (Massawippi Valley)' if 'Canada Line' in nm else 'Canadian Pacific (ex Connecticut & Passumpsic Rivers)' if own == 'cp' and 'North Troy' not in nm else ('Canadian Pacific' if own == 'cp' else 'Boston & Maine'),
                       branch='New England', group='mississippi_rails', status='ok', cost=1.0, note='Mississippi Rails (Tony Howe and David Price) state map, KMZ supplied by Brendan, 17 Nov 2026'),
                       geometry=dict(type='LineString', coordinates=pts)))
+# Springfield Union Station (Brendan, 18 Nov 2026: 42.106238, -72.593270) is on the New York Central (Boston & Albany) main line: every train calls there, so trains from the
+# Connecticut River line (B&M, and the Central Vermont's) back in or out. A slice of the B&A main line within 4 km of the station (own nyc), until the B&A is built.
+import math
+SU = (-72.59327009959836, 42.106238230164)
+def _m(p, q): return math.hypot((p[0] - q[0]) * 111320 * math.cos(math.radians(42.1)), (p[1] - q[1]) * 110540)
+for nm, pts in placemarks(sys.argv[3]):
+    if nm == 'Worcester MA to NY/MA State Line':
+        sl = [p for p in pts if _m(p, SU) < 4000]
+        feats.append(dict(type='Feature', properties=dict(own='nyc', name='New York Central (Boston & Albany): main line through Springfield (MA map, slice)', constituent='Boston & Albany (NYC)',
+                      branch='New England', group='mississippi_rails', status='ok', cost=1.0, note='Mississippi Rails (Tony Howe and David Price) state map; slice within 4 km of Springfield Union Station'),
+                      geometry=dict(type='LineString', coordinates=sl)))
 NS = [-71.0618139, 42.3658083]                                  # Boston North Station (Brendan, 17 Nov 2026: 42 21 56.91 N, 71 3 42.53 W; "tracks should extend straight to this point")
 end = [f for f in feats if 'new route into Boston' in f['properties']['name']][0]['geometry']['coordinates'][-1]
 feats.append(dict(type='Feature', properties=dict(own='bm', name='Boston & Maine: track end - North Station (straight, Brendan)', constituent='Boston & Maine', branch='New England',
