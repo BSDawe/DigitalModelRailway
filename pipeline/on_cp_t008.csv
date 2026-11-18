@@ -1,5 +1,5 @@
 # Quebec Central Railway (CP): Quebec (Palais Station) - Scotts Jct. - Vallee Jct. - Tring Jct. - Thetford Mines - Sherbrooke - Beebe Jct. - Newport, Vt. Canadian Pacific timetable, 1948, Table 8 (Quebec Central Railway, a CP property), with the intermediate stations (whole miles, times) from the Official Guide, April 25, 1948, which the CP table leaves out. Eastern time.
-# On the map to the border south of Beebe Jct.; the border times (~) are estimated by mileage between Beebe Jct. and Newport (not printed). Quebec - Scotts Jct. runs over the
+# Through to Newport, Vt. since 17 Nov 2026 (Newport - Derby Line track from the Mississippi Rails Vermont map; was cut at the border). Quebec - Scotts Jct. runs over the
 # CN where the CP has no track (Quebec Bridge; Brendan, 25 Oct 2026: CP track preferred). Sherbrooke - Beebe Jct. - Newport is the Massawippi Valley line.
 # Buses (the Beebe Jct. - Rock Island shuttle and the Sherbrooke - Newport buses) are not entered. Vallee Jct., Tring Jct., Sherbrooke and Beebe Jct. printed Ar / Lv: one row.
 #train col=No6 num=6 dir=down days=daily kind=passenger note="Quebec Central. Through to Boston and New York: Newport, Vt. 10.10 p.m., then CP No. 210 (The Red Wing) to Wells River and the Boston & Maine. Air-conditioned cars."
@@ -24,4 +24,4 @@ mile,station,principal,prov,tz,No6,No1
 159.4,North Hatley,0,QC,E,9.05p,5.47a
 168.0,Ayers Cliff,0,QC,E,9.24p,5.28a
 180.9,Beebe Jct.,1,QC,E,ar 9.50p / lv 10.00p,ar 4.57a / lv 5.05a
-182.0,"International Boundary (QC, to Newport, Vt.)",1,QC,E,~ar 10.02p,~lv 4.55a
+187.1,"Newport, Vt.",1,VT,E,ar 10.10p,lv 4.45a

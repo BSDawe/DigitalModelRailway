@@ -17,19 +17,24 @@ def placemarks(fn):
             if not pts or p != pts[-1]: pts.append(p)
         yield (n.group(1).strip() if n else ''), pts
 WANT = {0: {'North Troy VT to Newport VT': 'cp', 'Barton VT to Newport VT': 'cp', 'St Johnsbury VT to Barton VT': 'cp', 'Wells River VT to St Johnsbury VT': 'cp',
-            'Concord NH to Wells River VT': 'bm', 'Bradford VT to Wells River VT': 'bm', 'White River Jct VT to Bradford VT': 'bm', 'Concord NH to White River Jct': 'bm'},
+            'Concord NH to Wells River VT': 'bm', 'Bradford VT to Wells River VT': 'bm', 'White River Jct VT to Bradford VT': 'bm', 'Concord NH to White River Jct': 'bm',
+            'Newport VT to VT Canada Line': 'cp',                                                     # Newport - Derby Line: the Quebec Central's (Q.C. in CP Table 8)
+            'Fonda Jct to NY State Line': 'cn', 'St Albans VT to Fonda Jct': 'cn', 'Fonda Jct to Canada Border': 'cn', 'Essex Jct to St Albans VT': 'cn',
+            'Northfield VT to Essex Jct': 'cn', 'White River Jct to Northfield VT': 'cn', 'White River Jct to Windsor VT': 'cn', "Miller's Falls MA to Brattleboro VT": 'cn',   # Central Vermont (CN subsidiary, drawn as CN; Brendan, 17 Nov 2026)
+            'Bellows Falls VT to Windsor VT': 'bm', 'Brattleboro VT to Bellows Falls VT': 'bm'},
         1: {'Concord NH to Wells River VT': 'bm', 'Concord NH to White River Jct': 'bm', 'Concord NH to Nashua NH': 'bm', 'Lowell MA to Nashua NH': 'bm'},
-        2: {'Boston to Lowell MA': 'bm', 'Lowell MA to Nashua NH': 'bm', 'Boston & Lowell new route into Boston': 'bm'}}
+        2: {'Boston to Lowell MA': 'bm', 'Lowell MA to Nashua NH': 'bm', 'Boston & Lowell new route into Boston': 'bm',
+            'Cabotville (Chicopee Jct) to MA/VT State Line': 'bm', 'Springfield MA to Cabotville (Chicopee Jct)': 'bm'}}         # the Connecticut River line (B&M), South Vernon - Springfield
 STATE = ['VT', 'NH', 'MA']
 feats, seen = [], set()
 for k, fn in enumerate(sys.argv[1:4]):
     for nm, pts in placemarks(fn):
         if nm not in WANT[k] or len(pts) < 2: continue
         key = (nm, tuple(pts[0]), tuple(pts[-1]))
-        if key in seen: continue                                        # the New Hampshire map files Concord - Wells River in two folders
+        if key in seen or (k == 0 and nm in ('Bellows Falls VT to Windsor VT', 'Brattleboro VT to Bellows Falls VT') and any(f['properties']['name'].endswith(nm + ' (VT map)') for f in feats)): continue                                        # the New Hampshire map files Concord - Wells River in two folders
         seen.add(key); own = WANT[k][nm]
-        feats.append(dict(type='Feature', properties=dict(own=own, name=f'{"Canadian Pacific" if own == "cp" else "Boston & Maine"}: {nm} ({STATE[k]} map)',
-                      constituent='Canadian Pacific (ex Connecticut & Passumpsic Rivers)' if own == 'cp' and 'North Troy' not in nm else ('Canadian Pacific' if own == 'cp' else 'Boston & Maine'),
+        feats.append(dict(type='Feature', properties=dict(own=own, name=f'{dict(cp="Canadian Pacific", bm="Boston & Maine", cn="Central Vermont (CN)")[own]}: {nm} ({STATE[k]} map)',
+                      constituent='Central Vermont Railway' if own == 'cn' else 'Quebec Central (Massawippi Valley)' if 'Canada Line' in nm else 'Canadian Pacific (ex Connecticut & Passumpsic Rivers)' if own == 'cp' and 'North Troy' not in nm else ('Canadian Pacific' if own == 'cp' else 'Boston & Maine'),
                       branch='New England', group='mississippi_rails', status='ok', cost=1.0, note='Mississippi Rails (Tony Howe and David Price) state map, KMZ supplied by Brendan, 17 Nov 2026'),
                       geometry=dict(type='LineString', coordinates=pts)))
 NS = [-71.0618139, 42.3658083]                                  # Boston North Station (Brendan, 17 Nov 2026: 42 21 56.91 N, 71 3 42.53 W; "tracks should extend straight to this point")

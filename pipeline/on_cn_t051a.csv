@@ -1,0 +1,44 @@
+# Central Vermont Railway (CN subsidiary: drawn as CN, labelled Central Vermont), Table 5: The Ambassador, Montreal - St. Albans - White River Jct. - Boston (Boston & Maine from White River Jct.,
+# by Concord, Manchester, Nashua and Lowell, the B&M's printed miles from White River Jct.). Official Guide, May 1948, Central Vermont Table 5 (April 25, 1948; Brendan, 17 Nov 2026); Montreal - Cantic as
+# CN Table 51. Eastern time. The B&M stations between White River Jct. and Concord are not printed (waiting for the B&M timetables). The rest of Table 5 is on_cn_t051v.csv.
+#train col=No332 num=332 dir=down days=daily kind=passenger name="The Ambassador" to=Boston note="The Ambassador: Montreal 8.20 a.m. by the Central Vermont to White River Jct. 1.40 p.m., the Boston & Maine on to Boston (North Station) 5.50 p.m. The New York section leaves White River Jct. 1.50 p.m. (No. 74-59, on_cn_t051v). Motor coach for Stowe at Waterbury; Burlington and Montpelier by motor coach."
+#train col=No307 num=307 dir=up days=daily kind=passenger name="The Ambassador" from=Boston note="The Ambassador: Boston (North Station) 11.30 a.m. by the Boston & Maine to White River Jct. 3.05 p.m. (joined there by the New York section, No. 66-77), the Central Vermont to Montreal 8.30 p.m."
+mile,station,principal,prov,tz,No332,No307
+0.0,Montreal (Central Station),1,QC,E,lv 8.20a,ar 8.30p
+1.9,Bridge Street,0,QC,E,,
+4.0,St. Lambert,0,QC,E,f8.40a,f8.12p
+9.1,Brosseau,0,QC,E,,
+17.0,Lacadie,0,QC,E,,
+23.2,St. Johns,1,QC,E,9.06a,7.46p
+40.3,Cantic,1,QC,E,9.31a,7.19p
+50.1,"East Alburgh, Vt.",1,VT,E,,
+56.7,"Swanton, Vt.",0,VT,E,10.03a,6.46p
+65.7,"St. Albans, Vt.",1,VT,E,ar 10.21a / lv 10.28a,ar 6.24p / lv 6.32p
+75.4,"Georgia, Vt.",0,VT,E,,
+78.6,"Milton, Vt.",0,VT,E,f10.46a,f6.06p
+85.8,"Colchester, Vt.",0,VT,E,,
+89.5,"Essex Junction, Vt.",1,VT,E,ar 11.01a / lv 11.06a,ar 5.44p / lv 5.52p
+93.5,"Williston, Vt.",0,VT,E,,
+98.6,"Richmond, Vt.",0,VT,E,f11.20a,f5.30p
+101.8,"Jonesville, Vt.",0,VT,E,,
+104.6,"Bolton, Vt.",0,VT,E,,
+111.8,"Waterbury, Vt.",1,VT,E,11.40a,5.13p
+116.6,"Middlesex, Vt.",0,VT,E,,
+121.4,"Montpelier Junction, Vt.",1,VT,E,ar 11.54a / lv 12.00p,ar 4.49p / lv 4.57p
+126.1,"Riverton, Vt.",0,VT,E,,
+130.0,"Northfield, Vt.",1,VT,E,12.16p,4.37p
+137.2,"Roxbury, Vt.",0,VT,E,f12.28p,f4.26p
+142.7,"East Granville, Vt.",0,VT,E,,
+145.7,"Braintree, Vt.",0,VT,E,,
+151.4,"Randolph, Vt.",1,VT,E,12.48p,4.08p
+158.4,"Bethel, Vt.",1,VT,E,12.59p,3.56p
+163.4,"Royalton, Vt.",0,VT,E,,
+165.2,"South Royalton, Vt.",0,VT,E,1.12p,3.47p
+170.1,"Sharon, Vt.",0,VT,E,,
+175.6,"West Hartford, Vt.",0,VT,E,,
+182.9,"White River Jct., Vt.",1,VT,E,ar 1.40p / lv 1.50p,ar 3.05p / lv 3.20p
+252.5,"Concord, N.H.",1,NH,E,3.53p,1.20p
+270.1,"Manchester, N.H.",1,NH,E,4.22p,12.47p
+286.9,"Nashua, N.H.",1,NH,E,4.47p,12.24p
+300.3,"Lowell, Mass.",1,MA,E,5.11p,12.04p
+325.8,Boston (North Station),1,MA,E,ar 5.50p,lv 11.30a

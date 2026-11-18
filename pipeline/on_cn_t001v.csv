@@ -1,0 +1,19 @@
+# Canadian National / Central Vermont (CN subsidiary: labelled Central Vermont), Table 1: Montreal - St. Johns - St. Albans via St. Armand, Que. Official Guide, May 1948, CN Table 1 (April 25, 1948;
+# Brendan's image, 17 Nov 2026). Eastern time. CN to St. Johns, Central Vermont beyond (the Montreal & Vermont Junction line by Stanbridge and St. Armand, across the border to Highgate Springs and St. Albans).
+# Signs: * daily; dagger ex Sun; z: stops to take or leave passengers (flag).
+#train col=No608 num=608 dir=down days="Mon,Tue,Wed,Thu,Fri,Sat" kind=passenger note="CN No. 608 Montreal 5.40 p.m. (daily except Sunday) to St. Johns, Central Vermont No. 46 on by St. Armand to St. Albans 8.15 p.m."
+#train col=No46 num=46 dir=down days=Sun kind=passenger note="Central Vermont No. 46, Sundays: St. Johns 6.45 p.m. to St. Albans 8.15 p.m. (No. 46 is daily from St. Johns; CN No. 608 to St. Johns does not run on Sundays)."
+#train col=No44 num=44 dir=down days="Mon,Tue,Wed,Thu,Fri,Sat" kind=passenger note="Central Vermont No. 44, daily except Sunday: St. Johns 9.20 a.m. (from Montreal 8.20 a.m. by No. 332, The Ambassador) by St. Armand to St. Albans 10.58 a.m."
+#train col=No43 num=43 dir=up days="Mon,Tue,Wed,Thu,Fri,Sat" kind=passenger note="Central Vermont No. 43, daily except Sunday: St. Albans 6.00 a.m. by St. Armand to St. Johns 7.30 a.m., CN No. 605 on to Montreal 8.35 a.m."
+#train col=No45 num=45 dir=up days=daily kind=passenger note="Central Vermont No. 45: St. Albans 4.00 p.m. by St. Armand to St. Johns 5.30 p.m., CN No. 65 on to Montreal 6.30 p.m."
+mile,station,principal,prov,tz,No608,No46,No44,No43,No45
+0.0,Montreal (Central Station),1,QC,E,lv 5.40p,,,ar 8.35a,ar 6.30p
+4.0,St. Lambert,0,QC,E,5.55p,,,8.15a,6.08p
+23.2,St. Johns,1,QC,E,ar 6.25p / lv 6.45p,lv 6.45p,lv 9.20a,ar 7.30a / lv 7.45a,ar 5.30p / lv 5.40p
+31.6,St. Alexander,0,QC,E,7.02p,7.02p,9.37a,7.13a,5.13p
+38.3,Des Rivieres,0,QC,E,7.15p,7.15p,9.50a,7.01a,5.01p
+40.8,Stanbridge,1,QC,E,7.22p,7.22p,9.57a,6.54a,4.54p
+47.2,St. Armand,0,QC,E,7.37p,7.37p,10.25a,6.39a,4.39p
+52.0,"Highgate Springs, Vt.",0,VT,E,7.45p,7.45p,10.33a,6.26a,4.26p
+56.1,"East Swanton, Vt.",0,VT,E,7.53p,7.53p,10.41a,6.18a,4.18p
+64.3,"St. Albans, Vt.",1,VT,E,ar 8.15p,ar 8.15p,ar 10.58a,lv 6.00a,lv 4.00p

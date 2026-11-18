@@ -1,16 +1,53 @@
-# Canadian National, Table 51: Montreal (Central Station) - St. Johns - Cantic: the Central Vermont trains (by East Alburgh and St. Albans, Vt.), to the international boundary. Source: Official Guide, April 25, 1948, CN Table 51 (Brendan, 30 Oct 2026; private scans og1948_cnq/). EASTERN TIME.
-# Miles as printed to Cantic; the boundary (the end of the collection's Coteau & Province Line track toward East Alburgh, about 6.5 mi) and its times estimated.
-# Signs: * daily; dagger ex Sun; f flag; dot (St. Lambert, St. Johns): stops to take or leave passengers for or from St. Albans and beyond; y, sharp: conditional (entered as flag stops).
-#train col=No20 num=20 dir=down days=daily kind=passenger name="The Washingtonian" to=Washington note="Daily: Montreal 7.40 p.m. to Cantic 8.50 p.m., on over the Central Vermont (St. Albans) for New York and Washington. Boundary time estimated."
-#train col=No332 num=332 dir=down days=daily kind=passenger name="The Ambassador" to=Boston note="Daily: Montreal 8.20 a.m. to Cantic 9.31 a.m., on over the Central Vermont. Boundary time estimated."
-#train col=No21 num=21 dir=up days=daily kind=passenger name="The Montrealer" from=Washington note="Daily: over the Central Vermont to Cantic 6.44 a.m. and Montreal 8.00 a.m. Boundary time estimated."
-#train col=No307 num=307 dir=up days=daily kind=passenger name="The Ambassador" from=Boston note="Daily: over the Central Vermont to Cantic 7.19 p.m. and Montreal 8.30 p.m. Boundary time estimated."
-mile,station,principal,prov,tz,No20,No332,No21,No307
-0.0,Montreal (Central Station),1,QC,E,lv 7.40p,lv 8.20a,ar 8.00a,ar 8.30p
-1.9,Bridge Street,0,QC,E,,,,
-4.0,St. Lambert,0,QC,E,f7.58p,f8.40a,f7.38a,f8.12p
-9.1,Brosseau,0,QC,E,,,,
-17.0,Lacadie,0,QC,E,,,,
-23.2,St. Johns,1,QC,E,f8.25p,9.06a,7.10a,7.46p
-40.3,Cantic,1,QC,E,8.50p,9.31a,6.44a,7.19p
-46.8,"International Boundary (to East Alburgh, Vt.)",0,QC,E,~ar 9.00p,~ar 9.41a,~lv 6.34a,~lv 7.09p
+# Central Vermont Railway (CN subsidiary: drawn as CN, labelled Central Vermont; Brendan, 17 Nov 2026), Table 5: Montreal - St. Albans - Essex Jct. - Montpelier Jct. - White River Jct.,
+# with the Boston & Maine on to Windsor, Bellows Falls, Brattleboro, East Northfield and Springfield (the New York trains; on this map to Springfield, the New Haven beyond not yet drawn).
+# Source: Official Guide, May 1948, Central Vermont Table 5 (dated April 25, 1948; Brendan's image, 17 Nov 2026); Montreal - Cantic as CN Table 51 (Central Station; the Table 5
+# times differ by a minute or ten at Cantic for No. 21: 6.34 there, 6.44 in Table 51 - Table 51 kept). Eastern time. Signs: * daily; dagger ex Sun; section Sun only; z o v y conditional (flag stops).
+# Not entered: Essex Jct. - Burlington and Montpelier Jct. - Montpelier - Barre (motor coaches, black square sign); the Boston & Maine's own Connecticut River trains (702, 72, 712, 78 / 79, 7060, 728,
+# 703, 73, 7055, 717, 7059, 320, 313: waiting for the B&M timetables). The Ambassador (Montreal - Boston) is on_cn_t051a.csv. Miles: Table 5 to White River Jct.; Windsor 196.8 (by the trace),
+# then the B&M's printed miles from Windsor. Track: Mississippi Rails state maps (traces/maritimes/newengland.geojson; East Alburgh by the Grand Trunk file's Alburgh stub).
+#train col=No20 num=20 dir=down days=daily kind=passenger name="The Washingtonian" to=Washington note="The Washingtonian: Montreal 7.40 p.m. by the Central Vermont to White River Jct. 12.30 a.m., on as Boston & Maine No. 732 to Springfield 3.45 a.m. and New Haven No. 169 to New York (Pennsylvania Station) 7.10 a.m. and Washington 12.10 p.m. (on this map to Springfield). Its Boston cars leave White River Jct. 3.00 a.m. in B. & M. No. 302 (with the Red Wing's, on_cp_t024r). Burlington and Montpelier / Barre by motor coach from Essex Jct. and Montpelier Jct. (not entered)."
+#train col=No404 num=404 dir=down days=Sun kind=passenger name="The Vermonter" note="The Vermonter, Sundays: St. Albans 8.00 p.m. to White River Jct. 11.30 p.m. (the St. Albans - New York sleeper, on from White River Jct. in The Washingtonian)."
+#train col=No304 num=304 dir=down days="Mon,Tue,Wed,Thu,Fri,Sat" kind=passenger name="The Vermonter" note="The Vermonter, daily except Sunday: St. Albans 7.30 p.m. to White River Jct. 11.30 p.m. (the St. Albans - New York sleeper, on from White River Jct. in The Washingtonian)."
+#train col=No7459 num=74 dir=down days=daily kind=passenger name="The Ambassador" to="New York" note="The Ambassador's New York section: White River Jct. 1.50 p.m. (from No. 332) by the Boston & Maine (No. 74) to Springfield 5.23 p.m. and the New Haven (No. 59) to New York (Grand Central) 9.08 p.m. (on this map to Springfield)."
+#train col=No21 num=21 dir=up days=daily kind=passenger name="The Montrealer" from=Washington note="The Montrealer: Washington 3.10 p.m., New York (Pennsylvania Station) 7.45 p.m. by the New Haven (No. 168) and the Boston & Maine (No. 733) to Springfield 11.40 p.m. and White River Jct. 2.53 a.m., then the Central Vermont to Montreal 8.00 a.m. (on this map from Springfield). Burlington and Montpelier / Barre by motor coach (not entered)."
+#train col=No303 num=303 dir=up days=daily kind=passenger name="The Vermonter" note="The Vermonter: White River Jct. 3.30 a.m. to St. Albans 7.35 a.m. (the New York - St. Albans sleeper, from The Montrealer)."
+#train col=No6677 num=77 dir=up days=daily kind=passenger name="The Ambassador" from="New York" note="The Ambassador's New York section: New York (Grand Central) 8.10 a.m. by the New Haven (No. 66) and the Boston & Maine (No. 77) from Springfield 11.32 a.m. to White River Jct. 2.50 p.m. (for No. 307 to Montreal; on this map from Springfield)."
+mile,station,principal,prov,tz,No20,No404,No304,No7459,No21,No303,No6677
+0.0,Montreal (Central Station),1,QC,E,lv 7.40p,,,,ar 8.00a,,
+1.9,Bridge Street,0,QC,E,,,,,,,
+4.0,St. Lambert,0,QC,E,f7.58p,,,,f7.38a,,
+9.1,Brosseau,0,QC,E,,,,,,,
+17.0,Lacadie,0,QC,E,,,,,,,
+23.2,St. Johns,1,QC,E,f8.25p,,,,7.10a,,
+40.3,Cantic,1,QC,E,8.50p,,,,6.44a,,
+50.1,"East Alburgh, Vt.",1,VT,E,,,,,,,
+56.7,"Swanton, Vt.",0,VT,E,,,,,,,
+65.7,"St. Albans, Vt.",1,VT,E,ar 9.40p / lv 9.45p,lv 8.00p,lv 7.30p,,ar 5.42a / lv 5.48a,ar 7.35a,
+75.4,"Georgia, Vt.",0,VT,E,,,,,,7.19a,
+78.6,"Milton, Vt.",0,VT,E,,8.20p,7.51p,,,7.11a,
+85.8,"Colchester, Vt.",0,VT,E,,f8.29p,f8.00p,,,7.01a,
+89.5,"Essex Junction, Vt.",1,VT,E,ar 10.15p / lv 10.18p,ar 8.35p / lv 8.40p,ar 8.06p / lv 8.22p,,ar 5.08a / lv 5.12a,ar 6.43a / lv 6.53a,
+93.5,"Williston, Vt.",0,VT,E,,f8.47p,f8.29p,,,6.36a,
+98.6,"Richmond, Vt.",0,VT,E,,8.56p,8.38p,,,6.28a,
+101.8,"Jonesville, Vt.",0,VT,E,,,,,,,
+104.6,"Bolton, Vt.",0,VT,E,,,,,,,
+111.8,"Waterbury, Vt.",1,VT,E,,9.16p,8.59p,,,6.08a,
+116.6,"Middlesex, Vt.",0,VT,E,,9.25p,9.09p,,,5.57a,
+121.4,"Montpelier Junction, Vt.",1,VT,E,ar 10.59p / lv 11.04p,ar 9.32p / lv 9.37p,ar 9.16p / lv 9.31p,,ar 4.24a / lv 4.29a,ar 5.35a / lv 5.47a,
+126.1,"Riverton, Vt.",0,VT,E,,9.45p,9.39p,,,5.28a,
+130.0,"Northfield, Vt.",1,VT,E,,9.55p,9.48p,,,5.21a,
+137.2,"Roxbury, Vt.",0,VT,E,,10.07p,10.01p,,,5.07a,
+142.7,"East Granville, Vt.",0,VT,E,,,,,,,
+145.7,"Braintree, Vt.",0,VT,E,,,,,,,
+151.4,"Randolph, Vt.",1,VT,E,,10.30p,10.25p,,,4.30a,
+158.4,"Bethel, Vt.",1,VT,E,,10.41p,10.38p,,,4.19a,
+163.4,"Royalton, Vt.",0,VT,E,,10.51p,10.49p,,,4.11a,
+165.2,"South Royalton, Vt.",0,VT,E,,10.58p,10.56p,,,4.06a,
+170.1,"Sharon, Vt.",0,VT,E,,11.07p,11.07p,,,3.57a,
+175.6,"West Hartford, Vt.",0,VT,E,,11.18p,11.18p,,,3.44a,
+182.9,"White River Jct., Vt.",1,VT,E,ar 12.30a / lv 12.45a,ar 11.30p,ar 11.30p,lv 1.50p,ar 2.53a / lv 3.03a,lv 3.30a,ar 2.50p
+196.8,"Windsor, Vt.",1,VT,E,,,,2.12p,,,2.28p
+221.9,"Bellows Falls, Vt.",1,VT,E,1.42a,,,2.57p,1.50a,,1.48p
+245.6,"Brattleboro, Vt.",1,VT,E,2.15a,,,3.35p,1.11a,,1.13p
+256.2,"East Northfield, Mass.",0,MA,E,,,,3.54p,,,12.54p
+305.9,"Springfield, Mass.",1,MA,E,ar 3.45a,,,ar 5.23p,lv 11.40p,,lv 11.32a

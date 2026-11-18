@@ -6,7 +6,7 @@ The raw KMZ is in the private repo (traces/gtr/). Placemarks named "... abandone
 import json, os, re, sys, zipfile
 HERE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 s = zipfile.ZipFile(sys.argv[1]).read('doc.kml').decode('utf-8')
-LATER = ("Rouse's Point", 'Fort Covington', 'Alburgh')
+LATER = ("Rouse's Point",)          # Fort Covington (CN 79 / 80) and Alburgh (the Central Vermont) in use since 17 Nov 2026
 feats = []
 for nm, c in re.findall(r'<Placemark>.*?<name>(.*?)</name>.*?<coordinates>(.*?)</coordinates>', s, re.S):
     nm = nm.replace('&apos;', "'"); pts = []
