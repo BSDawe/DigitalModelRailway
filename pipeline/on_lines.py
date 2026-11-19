@@ -158,6 +158,7 @@ def _graph(me):
             if (o.get('desc') or '').strip() == 'Main line from Saint-Jean to Farnham.':   # the SS&C beyond the Montreal & Vermont Junction wye east of Iberville is gone by 1948; St. Johns - the wye is
                 k = next(i for i in range(len(c) - 1) if c[i + 1][0] > -73.20)   # in use (CV Table 1 trains to St. Albans; Brendan, 18 Nov 2026): the piece's long straight segment
                 c = c[:k + 1] + [[-73.2025, 45.2993] + list(c[k][2:])]           # passes the wye, so end it there
+            if len(c) > 3 and covered(c): continue
             if box and not any(box[0] <= p[0] <= box[1] and box[2] <= p[1] <= box[3] for p in c[::max(1, len(c) // (6 if me in ('onr', 'acr') else 200))]) \
                and not any(box[0] <= p[0] <= box[1] and box[2] <= p[1] <= box[3] for p in (c[0], c[-1])): continue
             if me in ('msc', 'qrl', 'nst', 'nfr', 'mcrp', 'snl', 'crc'): continue                                          # Montreal & Southern Counties: Brendan's trace only (links), over the Victoria Bridge to McGill and Youville
@@ -327,8 +328,8 @@ def place_for(rail):
         if own == 'dh' or (own == 'nyc' and c in ('montreal', 'westmount', 'montreal west', 'lasalle', 'adirondack junction')): return place_for('oncp')(name)   # NYC trains over the CP call at the CP stations (Brendan, 18 Nov 2026)
         if own == 'cpcn': return place_for('oncp')(name) if c.startswith('montreal') or c in ('westmount', 'toronto', 'toronto union') else (place_for('oncn')(name) or place_for('oncp')(name))          # the stations in Montreal are the CP's
         if own in ('tem', 'cgt') and c in ('riviere du loup', 'mont joli'): return place_for('oncn')(name)   # the CN stations
-        if own == 'onr' and name in ONR_ON_CN: return place_for('oncn')(name)
-        if own == 'thb' and c == 'sunnyside': return place_for('oncpthb')(name)   # the Toronto - Buffalo pool trains (18 Nov 2026)   # Toronto - North Bay: the ONR trains call at the CN stations
+        if own == 'onr' and name in ONR_ON_CN: return place_for('oncn')(name)   # Toronto - North Bay: the ONR trains call at the CN stations
+        if own == 'thb' and c == 'sunnyside': return place_for('oncpthb')(name)   # the Toronto - Buffalo pool trains (18 Nov 2026)
         m = _map().get((own, c))
         if m: return (m[0], m[1], 'map', 300)
         for key in ((own, c), (None, c)):
