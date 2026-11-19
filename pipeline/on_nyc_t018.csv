@@ -1,13 +1,38 @@
-# New York Central trains in CP Table 18 (no train numbers printed), on the map from Windsor Station over the CP to Adirondack Junction,
-# then the St. Lawrence & Adirondack to the end of its trace at the border (Brendan, 24 Oct 2026). Canadian Pacific timetable, 1948, Table 18 (Montreal - New York). Eastern time.
-# e: stops to take on passengers; d: stops to let off passengers. The border times (~) are not printed: estimated by mileage between Montreal West and Albany.
-# The table also prints Utica; left out (Brendan, 24 Oct 2026). The whole run is in on_nycfull_t018.csv.
-#train col=NYC1 num="" dir=down days=daily kind=passenger to="New York" note="Stops at Montreal West to take on passengers."
-#train col=NYC3 num="" dir=down days=daily kind=passenger to="New York"
-#train col=NYC2 num="" dir=up days="ex Sun" kind=passenger from="New York" note="Stops at Montreal West to let off passengers."
-#train col=NYC4 num="" dir=up days=daily kind=passenger from="New York" note="Stops at Montreal West to let off passengers."
-mile,station,principal,prov,tz,NYC1,NYC3,NYC2,NYC4
-0.0,Montreal (Windsor Station),1,QC,E,lv 5.25p,lv 7.25a,ar 8.55p,ar 10.45a
-2.0,Westmount,0,QC,E,5.31p,7.31a,8.47p,10.37a
-5.0,Montreal West,0,QC,E,e5.37p,7.37a,d8.40p,d10.30a
-55.1,"International Boundary (NYC, to Malone)",1,QC,E,~ar 7.05p,~ar 9.11a,~lv 7.03p,~lv 8.44a
+# New York Central, St. Lawrence & Adirondack branch: Malone, N.Y. - Valleyfield - Adirondack Jct. - Montreal (Windsor Station). Official Guide, May 1948 ("Malone - Montreal, via
+# St. Lawrence and Adirondack Branch", April 25, 1948; Brendan's image, 18 Nov 2026). Eastern time. Over the CP from Adirondack Jct. into Windsor Station.
+# Replaces the four through trains of CP Table 18 that ended at the border (24 Oct 2026); the run beyond Malone (Utica, Albany, New York) is in on_nycfull_t018.csv, not built.
+# Signs: * daily; dagger daily except Sunday; section sign Sunday only; k Saturday only (27, 26); f stops on signal; h stops only to receive, i only to discharge (entered plain);
+# z stops on signal Sunday only, s stops Sunday only, bullet stops Saturday only (entered as flag stops f).
+# Miles from Montreal (the table counts from Malone, 66). Malone and Constable, N.Y.: no United States track yet; drawn as a straight estimate from the border (Malone point APPROXIMATE).
+#train col=No25 num=25 dir=up days="Mon,Tue,Wed,Thu,Fri,Sat" kind=passenger note="Malone 5.00 a.m. to Montreal (Windsor Station) 7.20 a.m., daily except Sunday."
+#train col=No5 num=5 dir=up days=daily kind=passenger from="New York" note="From New York: Malone 8.13 a.m. to Montreal (Windsor Station) 10.45 a.m., daily."
+#train col=No27 num=27 dir=up days=Sat kind=passenger note="Saturdays only: Valleyfield 2.15 p.m. to Montreal (Windsor Station) 3.30 p.m."
+#train col=No11 num=11 dir=up days=Sun kind=passenger note="Sundays only: Malone 5.31 p.m. to Montreal (Windsor Station) 7.55 p.m."
+#train col=No3 num=3 dir=up days="Mon,Tue,Wed,Thu,Fri,Sat" kind=passenger from="New York" note="From New York: Malone 6.20 p.m. to Montreal (Windsor Station) 8.55 p.m., daily except Sunday (Melocheville: stops Saturdays only)."
+#train col=No2 num=2 dir=down days=daily kind=passenger to="New York" note="For New York: Montreal (Windsor Station) 7.25 a.m. to Malone 9.30 a.m., daily."
+#train col=No26 num=26 dir=down days=Sat kind=passenger note="Saturdays only: Montreal (Windsor Station) 12.35 p.m. to Valleyfield 1.50 p.m."
+#train col=No32 num=32 dir=down days="Mon,Tue,Wed,Thu,Fri,Sat" kind=passenger note="Montreal (Windsor Station) 4.25 p.m. to Malone 6.50 p.m., daily except Sunday."
+#train col=No4 num=4 dir=down days=daily kind=passenger to="New York" note="For New York: Montreal (Windsor Station) 5.25 p.m. to Malone 7.30 p.m., daily."
+mile,station,principal,prov,tz,No25,No5,No27,No11,No3,No2,No26,No32,No4
+0.0,Montreal (Windsor Station),1,QC,E,ar 7.20a,ar 10.45a,ar 3.30p,ar 7.55p,ar 8.55p,lv 7.25a,lv 12.35p,lv 4.25p,lv 5.25p
+2.0,Westmount,1,QC,E,7.12a,10.30a,3.22p,7.47p,8.42p,7.31a,12.41p,4.31p,5.31p
+5.0,Montreal West,1,QC,E,7.05a,10.23a,3.15p,7.40p,8.35p,7.37a,12.47p,4.37p,5.37p
+7.0,LaSalle,1,QC,E,6.58a,10.16a,3.08p,7.33p,8.28p,7.42a,12.52p,4.42p,5.42p
+9.0,Adirondack Junction,1,QC,E,f6.55a,f10.13a,3.05p,f7.30p,f8.25p,7.45a,12.55p,4.45p,5.45p
+10.0,Kanawaki,0,QC,E,f6.52a,,f3.03p,f7.26p,f8.23p,f7.47a,f12.57p,f4.47p,
+14.0,The Heights,0,QC,E,6.45a,f10.06a,2.57p,7.21p,f8.17p,f7.52a,1.04p,4.53p,f5.52p
+15.0,Chateauguay,0,QC,E,6.42a,10.04a,2.54p,7.18p,8.14p,7.55a,1.07p,4.58p,5.56p
+17.0,Woodlands,0,QC,E,6.36a,9.59a,2.49p,7.13p,f8.08p,f7.59a,1.12p,5.03p,f6.00p
+19.0,Bellevue,0,QC,E,6.31a,f9.54a,2.44p,7.08p,f8.03p,f8.04a,1.17p,5.08p,f6.04p
+20.0,Maple Grove,0,QC,E,f6.27a,f9.51a,f2.40p,7.04p,f7.59p,f8.08a,f1.22p,5.13p,f6.07p
+22.0,Beauharnois,0,QC,E,6.24a,9.48a,2.37p,7.00p,7.55p,8.12a,1.26p,5.18p,6.11p
+25.0,Melocheville,0,QC,E,f6.17a,,f2.30p,f6.53p,f7.48p,,f1.32p,f5.24p,
+30.0,St. Timothee,0,QC,E,6.10a,f9.35a,2.24p,6.46p,f7.42p,8.24a,1.39p,5.31p,f6.23p
+33.0,Cecile Junction,0,QC,E,f6.03a,f9.30a,f2.18p,f6.39p,f7.36p,,f1.46p,f5.38p,f6.30p
+35.0,Valleyfield,1,QC,E,6.00a,9.27a,lv 2.15p,6.36p,7.33p,8.33a,ar 1.50p,5.45p,6.36p
+41.0,St. Stanislas,0,QC,E,5.50a,f9.18a,,6.24p,f7.22p,8.41a,,5.54p,f6.44p
+43.0,New Erin,0,QC,E,f5.45a,f9.14a,,f6.19p,f7.17p,f8.46a,,f5.58p,f6.49p
+48.0,Huntingdon,1,QC,E,5.38a,9.08a,,6.10p,7.11p,8.54a,,6.09p,6.58p
+51.0,Athelstan,0,QC,E,5.28a,9.00a,,6.00p,7.05p,9.00a,,6.18p,7.05p
+60.0,"Constable, N.Y.",0,NY,E,f5.10a,8.24a,,5.42p,6.36p,9.15a,,6.36p,f7.18p
+66.0,"Malone, N.Y.",1,NY,E,lv 5.00a,lv 8.13a,,lv 5.31p,lv 6.20p,ar 9.30a,,ar 6.50p,ar 7.30p
