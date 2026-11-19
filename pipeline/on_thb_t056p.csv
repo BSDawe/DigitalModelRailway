@@ -1,0 +1,28 @@
+# Toronto, Hamilton & Buffalo: the Toronto - Buffalo pool trains (CP - TH&B - NYC) as one train each, in TH&B livery, numbered as the TH&B numbers them (Brendan, 16 Nov 2026:
+# "the logical owner of the train is the TH&B as the joint subsidiary ... run through in TH&B livery with notes as to their CP and NYC numbers"). Built 18 Nov 2026 from
+# on_cpthb_t056.csv (CP Table 56, Toronto - Hamilton: CP numbers) and on_thb_t056.csv (Hamilton - Welland - Fort Erie, TH&B numbers); the columns moved here from both.
+# Toronto - Hamilton over the CN Lake Shore (CP trackage rights) and the TH&B into Hamilton (Hunter Street); TH&B miles from Hamilton added to 39.3. Eastern time.
+# NYC numbers not yet known (the Official Guide NYC Buffalo - Toronto table). Built to the international boundary on the International Railway Bridge (border times ~ by mileage).
+# Not here: TH&B 76 / 73 (gas-electric, Hamilton - Buffalo; they stay TH&B, with 73 continuing to Toronto as CP 732: Brendan, TODO) and the CP Toronto - Hamilton locals.
+#train col=No372 num=372 dir=down days=daily kind=passenger to=Buffalo note="Toronto - Buffalo pool train: CP No. 721 Toronto - Hamilton, TH&B No. 372 Hamilton - Welland, then the New York Central to Buffalo (the NYC number to be looked up in its Buffalo - Toronto table). Black Rock 11.30, Buffalo (Terrace Station) 11.43, Buffalo (Central Terminal) 11.55 a.m. St. Anns: connection by bus (not entered)."
+#train col=No374 num=374 dir=down days=daily kind=passenger to=Buffalo note="Toronto - Buffalo pool train: CP No. 741 Toronto - Hamilton, TH&B No. 374 Hamilton - Welland, then the New York Central to Buffalo (the NYC number to be looked up in its Buffalo - Toronto table). Black Rock 3.10, Buffalo (Terrace Station) 3.23, Buffalo (Central Terminal) 3.35 p.m."
+#train col=No380 num=380 dir=down days=daily kind=passenger to=Buffalo note="Toronto - Buffalo pool train: CP No. 801 Toronto - Hamilton, TH&B No. 380 Hamilton - Welland, then the New York Central to Buffalo (the NYC number to be looked up in its Buffalo - Toronto table). Black Rock 8.50, Buffalo (Terrace Station) 9.03, Buffalo (Central Terminal) 9.15 p.m. Fenwick (x): stops on signal to discharge passengers from Toronto, and on signal Sunday."
+#train col=No382 num=382 dir=down days=daily kind=passenger to=Buffalo note="Toronto - Buffalo pool train: CP No. 821 Toronto - Hamilton, TH&B No. 382 Hamilton - Welland, then the New York Central to Buffalo (the NYC number to be looked up in its Buffalo - Toronto table). Black Rock 11.20, Buffalo (Terrace Station) 11.34, Buffalo (Central Terminal) 11.45 p.m."
+#train col=No371 num=371 dir=up days=daily kind=passenger from=Buffalo note="Buffalo - Toronto pool train: TH&B No. 371 from Buffalo by the New York Central to Welland and the TH&B to Hamilton, CP No. 712 Hamilton - Toronto (the NYC number to be looked up). From Buffalo (Central Terminal) 5.05 a.m., Black Rock 5.27. Welland: departure printed f (stops on signal)."
+#train col=No375 num=375 dir=up days=daily kind=passenger from=Buffalo note="Buffalo - Toronto pool train: TH&B No. 375 from Buffalo by the New York Central to Welland and the TH&B to Hamilton, CP No. 752 Hamilton - Toronto (the NYC number to be looked up). From Buffalo (Central Terminal) 8.45 a.m., Terrace Station 8.56, Black Rock 9.09. Fenwick (z): stops on signal Sunday (entered as a flag stop)."
+#train col=No379 num=379 dir=up days=daily kind=passenger from=Buffalo note="Buffalo - Toronto pool train: TH&B No. 379 from Buffalo by the New York Central to Welland and the TH&B to Hamilton, CP No. 792 Hamilton - Toronto (the NYC number to be looked up). From Buffalo (Central Terminal) 2.05 p.m., Terrace Station 2.16, Black Rock 2.29. St. Anns 3.13: connection by bus (not entered)."
+#train col=No383 num=383 dir=up days=daily kind=passenger from=Buffalo note="Buffalo - Toronto pool train: TH&B No. 383 from Buffalo by the New York Central to Welland and the TH&B to Hamilton, CP No. 832 Hamilton - Toronto (the NYC number to be looked up). From Buffalo (Central Terminal) 5.30 p.m., Terrace Station 5.41, Black Rock 5.55."
+mile,station,principal,prov,tz,No372,No374,No380,No382,No371,No375,No379,No383
+0.0,Toronto (Union Station),1,ON,E,lv 8.40a,lv 12.20p,lv 6.10p,lv 8.30p,ar 8.05a,ar 11.55a,ar 5.15p,ar 8.55p
+3.5,Sunnyside,0,ON,E,8.49a,12.29p,6.19p,8.39p,7.54a,11.44a,5.04p,8.44p
+39.3,Hamilton,1,ON,E,ar 9.35a / lv 9.40a,ar 1.15p / lv 1.20p,ar 7.05p / lv 7.10p,ar 9.30p / lv 9.35p,ar 7.05a / lv 7.10a,ar 10.55a / lv 11.00a,ar 4.10p / lv 4.20p,ar 7.50p / lv 8.00p
+46.3,Stoney Creek,0,ON,E,,,,,,,,
+50.3,Vinemount,0,ON,E,,,,,,,f3.50p,
+54.3,Grassies,0,ON,E,f10.02a,,,,,,f3.44p,
+59.3,Smithville,1,ON,E,f10.09a,f1.50p,f7.44p,,,f10.25a,f3.37p,f7.13p
+62.3,St. Anns,0,ON,E,,,,,,,,
+65.3,Silverdale,0,ON,E,,,,,,,,
+70.3,Fenwick,0,ON,E,f10.26a,f2.05p,f7.59p,,,f10.10a,f3.20p,f6.56p
+77.3,Welland,1,ON,E,10.40a,2.20p,8.12p,10.37p,ar 6.05a / lv 6.06a,ar 9.55a / lv 10.00a,ar 3.05p / lv 3.10p,ar 6.40p / lv 6.45p
+94.6,"Fort Erie, Ont.",1,ON,E,11.12a,2.52p,8.37p,11.03p,5.38a,9.31a,2.42p,6.10p
+94.9,"International Boundary (Niagara River, to Black Rock, N.Y.)",0,ON,E,~ar 11.18a,~ar 2.58p,~ar 8.41p,~ar 11.09p,~lv 5.31a,~lv 9.16a,~lv 2.33p,~lv 6.00p

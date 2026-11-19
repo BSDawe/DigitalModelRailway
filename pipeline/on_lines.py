@@ -58,7 +58,7 @@ ab_lines.RAILS.update({'oncn': dict(kind='q', label='Canadian National', own='cn
                        'ontir': dict(kind='K', label='Thousand Islands Railway', own='tir', agency='TIR', color='7A5A2E', pfx='TIR'),   # Gananoque - Gananoque Jct., separate company in 1948 (Brendan, 31 Oct 2026); colour: Claude's pick
                        'oncrc': dict(kind='S', label='Cumberland Railway & Coal', own='crc', agency='CRC', color='5B3A8C', pfx='CRC'),   # Brendan, 11 Nov 2026: the S&L's parent (Dominion Steel & Coal), the same livery
                        'onsnl': dict(kind='S', label='Sydney & Louisburg', own='snl', agency='SNL', color='5B3A8C', pfx='SNL'),
-                       'onbc': dict(kind='D', label='Barre & Chelsea', own='bc', agency='BC', color='2E6B4F', pfx='BC'),   # Brendan, 18 Nov 2026; colour: Claude's pick   # Brendan, 11 Nov 2026; colour: Claude's pick
+                       'onbc': dict(kind='D', label='Barre & Chelsea', own='bc', agency='BC', color='9C4F7A', pfx='BC'),   # Brendan, 18 Nov 2026; colour: Claude's pick (plum; the first green read as CN)   # Brendan, 11 Nov 2026; colour: Claude's pick
                        'onmcrp': dict(kind='C', label='Maritime Coal, Railway & Power', own='mcrp', agency='MCRP', color='4E5D2F', pfx='MCRP'),   # Maccan - Joggins Mines (Brendan, 10 Nov 2026); colour: Claude's pick
                        'onaj': dict(kind='J', label='Alma & Jonquiere', own='aj', agency='AJ', color='4A6D8C', pfx='AJ')})
 OWN = {'oncrc': 'crc', 'onsnl': 'snl', 'onbc': 'bc', 'onmcrp': 'mcrp', 'onnfr': 'nfr', 'onnst': 'nst', 'onqrl': 'qrl', 'onmsc': 'msc', 'onmc': 'nyc', 'oncn': 'cn', 'oncp': 'cp', 'onr': 'onr', 'acr': 'acr', 'onnyc': 'nyc', 'ondh': 'dh', 'ontem': 'tem', 'oncgt': 'cgt', 'onrs': 'rs', 'onaj': 'aj', 'ontir': 'tir', 'oncpcn': 'cpcn', 'onnyco': 'nyc', 'onthb': 'thb', 'oncpthb': 'cpthb', 'onlps': 'lps', 'ongrr': 'grr', 'onlen': 'len', 'onqlf': 'cnfy', 'ontsl': 'cnfy'}
@@ -153,9 +153,11 @@ def _graph(me):
         for o in pieces():
             if o['kind'] != 'LineString' or len(o['coords']) < 2: continue
             if GONE.search(o.get('desc', '')) or any(LATER.search(x) for x in o['path']) or 'Pelletierjunction to near St. Andre' in (o.get('desc') or '') \
-               or ('Grand Trunk Railway Main Line' in o['path'] and (o.get('desc') or '').strip() in ('Abandoned mainline.', 'Re-alignment.')) or o.get('name') == 'Peterborough and Chemong' or (o.get('desc') or '').strip() == 'Main line from Saint-Jean to Farnham.': continue   # GTR main line old alignments by Port Hope and Bowmanville (realigned 1900 - 1911; Brendan, 1 Nov 2026); the Peterborough & Chemong (abandoned in the 19th century)   # NTR Pelletier - St. Andre: built after 1948 (Brendan, 29 Oct 2026)
+               or ('Grand Trunk Railway Main Line' in o['path'] and (o.get('desc') or '').strip() in ('Abandoned mainline.', 'Re-alignment.')) or o.get('name') == 'Peterborough and Chemong': continue   # GTR main line old alignments by Port Hope and Bowmanville (realigned 1900 - 1911; Brendan, 1 Nov 2026); the Peterborough & Chemong (abandoned in the 19th century)   # NTR Pelletier - St. Andre: built after 1948 (Brendan, 29 Oct 2026)
             c = despike(o['coords'])
-            if len(c) > 3 and covered(c): continue
+            if (o.get('desc') or '').strip() == 'Main line from Saint-Jean to Farnham.':   # the SS&C beyond the Montreal & Vermont Junction wye east of Iberville is gone by 1948; St. Johns - the wye is
+                k = next(i for i in range(len(c) - 1) if c[i + 1][0] > -73.20)   # in use (CV Table 1 trains to St. Albans; Brendan, 18 Nov 2026): the piece's long straight segment
+                c = c[:k + 1] + [[-73.2025, 45.2993] + list(c[k][2:])]           # passes the wye, so end it there
             if box and not any(box[0] <= p[0] <= box[1] and box[2] <= p[1] <= box[3] for p in c[::max(1, len(c) // (6 if me in ('onr', 'acr') else 200))]) \
                and not any(box[0] <= p[0] <= box[1] and box[2] <= p[1] <= box[3] for p in (c[0], c[-1])): continue
             if me in ('msc', 'qrl', 'nst', 'nfr', 'mcrp', 'snl', 'crc'): continue                                          # Montreal & Southern Counties: Brendan's trace only (links), over the Victoria Bridge to McGill and Youville
@@ -325,7 +327,8 @@ def place_for(rail):
         if own == 'dh' or (own == 'nyc' and c in ('montreal', 'westmount', 'montreal west', 'lasalle', 'adirondack junction')): return place_for('oncp')(name)   # NYC trains over the CP call at the CP stations (Brendan, 18 Nov 2026)
         if own == 'cpcn': return place_for('oncp')(name) if c.startswith('montreal') or c in ('westmount', 'toronto', 'toronto union') else (place_for('oncn')(name) or place_for('oncp')(name))          # the stations in Montreal are the CP's
         if own in ('tem', 'cgt') and c in ('riviere du loup', 'mont joli'): return place_for('oncn')(name)   # the CN stations
-        if own == 'onr' and name in ONR_ON_CN: return place_for('oncn')(name)   # Toronto - North Bay: the ONR trains call at the CN stations
+        if own == 'onr' and name in ONR_ON_CN: return place_for('oncn')(name)
+        if own == 'thb' and c == 'sunnyside': return place_for('oncpthb')(name)   # the Toronto - Buffalo pool trains (18 Nov 2026)   # Toronto - North Bay: the ONR trains call at the CN stations
         m = _map().get((own, c))
         if m: return (m[0], m[1], 'map', 300)
         for key in ((own, c), (None, c)):
@@ -358,7 +361,7 @@ SHARED = {('onr', 'toronto union'): 'TORONTO_UNION', ('oncn', 'toronto union'): 
           ('oncn', 'don'): 'CP_DON',                                       # Don (Queen St. East): one station, CN Table 122 and CP Table 50
           ('onthb', 'toronto union'): 'TORONTO_UNION', ('oncpthb', 'toronto union'): 'TORONTO_UNION', ('onthb', 'toronto'): 'TORONTO_UNION', ('oncpthb', 'toronto'): 'TORONTO_UNION',
           ('onthb', 'welland'): 'NYC_WELLAND', ('onthb', 'fort erie'): 'NYC_FORT_ERIE', ('onthb', 'international boundary'): 'NYC_INTERNATIONAL_BOUNDARY_NIAGARA_RIVER_TO_BLACK_ROCK_N_Y',   # TH&B trains at the NYC (Michigan Central) stations: one stop each (Brendan, 4 Nov 2026: two Wellands on top of each other)
-          ('onthb', 'hamilton'): 'THB_HAMILTON', ('oncpthb', 'hamilton'): 'THB_HAMILTON', ('oncp', 'hamilton'): 'THB_HAMILTON',   # Hunter Street: CP and TH&B trains
+          ('onthb', 'sunnyside'): 'CP_SUNNYSIDE', ('onthb', 'hamilton'): 'THB_HAMILTON', ('oncpthb', 'hamilton'): 'THB_HAMILTON', ('oncp', 'hamilton'): 'THB_HAMILTON',   # Hunter Street: CP and TH&B trains
           ('onthb', 'waterford'): 'NYC_WATERFORD',   # the NYC station (Brendan)
           ('oncp', 'st thomas'): 'NYC_ST_THOMAS', ('onlps', 'n y c depot'): 'NYC_ST_THOMAS',   # CP trains used the NYC (Michigan Central) station at St. Thomas (Brendan); the L&PS N.Y.C. Depot
           ('ongrr', 'galt'): 'GALT_MAIN_STREET', ('onlen', 'galt'): 'GALT_MAIN_STREET',   # one Main Street station for the GRR and the L&N (KMZ; Brendan)
