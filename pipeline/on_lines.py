@@ -322,7 +322,7 @@ def place_for(rail):
     def f(name):
         c = canon(name); c = ALIAS.get((own, c), c)
         if (own, c) in HAND: h = HAND[(own, c)]; return (h[0], h[1], 'hand', 800)
-        if own == 'dh' or (own == 'nyc' and c in ('montreal', 'westmount', 'montreal west')): return place_for('oncp')(name)
+        if own == 'dh' or (own == 'nyc' and c in ('montreal', 'westmount', 'montreal west', 'lasalle', 'adirondack junction')): return place_for('oncp')(name)   # NYC trains over the CP call at the CP stations (Brendan, 18 Nov 2026)
         if own == 'cpcn': return place_for('oncp')(name) if c.startswith('montreal') or c in ('westmount', 'toronto', 'toronto union') else (place_for('oncn')(name) or place_for('oncp')(name))          # the stations in Montreal are the CP's
         if own in ('tem', 'cgt') and c in ('riviere du loup', 'mont joli'): return place_for('oncn')(name)   # the CN stations
         if own == 'onr' and name in ONR_ON_CN: return place_for('oncn')(name)   # Toronto - North Bay: the ONR trains call at the CN stations
@@ -369,7 +369,7 @@ SHARED = {('onr', 'toronto union'): 'TORONTO_UNION', ('oncn', 'toronto union'): 
           ('oncp', 'windsor'): 'NYC_WINDSOR',   # by 1948 the CP trains used the NYC (Michigan Central) Windsor station (Brendan, 1 Nov 2026)
           ('onnyco', 'finch'): 'CP_FINCH',                                 # Finch: one station at the NYC - CP crossing (Brendan, 25 Oct 2026)
           ('oncpcn', 'toronto union'): 'TORONTO_UNION', ('oncpcn', 'toronto'): 'TORONTO_UNION',
-          **{(r, c): g for r in ('onnyc', 'ondh', 'oncpcn') for c, g in (('montreal', 'CP_MONTREAL_WINDSOR'), ('westmount', 'CP_WESTMOUNT'), ('montreal west', 'CP_MONTREAL_WEST'))}}   # the NYC and D&H used the CP stations
+          **{(r, c): g for r in ('onnyc', 'ondh', 'oncpcn') for c, g in (('montreal', 'CP_MONTREAL_WINDSOR'), ('westmount', 'CP_WESTMOUNT'), ('montreal west', 'CP_MONTREAL_WEST'), ('lasalle', 'CP_LASALLE'), ('adirondack junction', 'CP_ADIRONDACK_JUNCTION'))}}   # the NYC and D&H used the CP stations
 ONR_ON_CN = {'Parkdale', 'St. Clair Avenue', 'Aurora', 'Newmarket', 'Allandale', 'Barrie', 'Orillia', 'Atherley', 'Longford', 'Hawkestone', 'Washago', 'Gravenhurst',
              'Bracebridge', 'Utterson', 'Huntsville', 'Scotia', 'Emsdale', "Burk's Falls", 'Sundridge', 'South River', 'Trout Creek', 'Powassan', 'Callander', 'Beaverton'}   # CN Table 126 stations of ONR 46 / 47 / 49 / 50
 def register(files):
