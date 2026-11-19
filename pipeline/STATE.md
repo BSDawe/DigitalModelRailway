@@ -1,7 +1,7 @@
 # The Digital Model Railway — project state
 
 Read this first. It is meant to be enough to start a short, single-task chat without replaying the project's history.
-Last updated 17 November 2026 (Version 192). This file is the current state and the standing rules; the version-by-version history is in CHANGELOG.md.
+Last updated 18 November 2026 (Version 193). This file is the current state and the standing rules; the version-by-version history is in CHANGELOG.md.
 
 ## What this is
 
@@ -327,6 +327,7 @@ After an accepted build: `cp viz_data.json tools/.baseline_viz.json`.
 
 ## Recent versions (one line each; the detail is in CHANGELOG.md)
 
+- 193: TH&B Toronto - Buffalo pool trains run through in TH&B livery (CP numbers in the notes); NYC trains at the CP LaSalle and Adirondack Jct.; St. Johns - St. Alexander on track to the wye; Stanbridge union station; St. Jerome straight tie gone; B&C plum.
 - 192: NYC St. Lawrence & Adirondack, Montreal (Windsor Station) - Valleyfield - Malone, all stations and nine trains (Official Guide table); Malone traces (Mississippi Rails).
 - 191: CN / GTW Table 95: the Chicago trains through from London (International Limited, Inter-City Limited, La Salle, Ontario Limited) to Dearborn Station; No. 20 fixed to p.m.; GTW car ferry Muskegon - Milwaukee; Grand Rapids - Muskegon over the PRR (Tuscan red).
 - 190: Grand Trunk Western (CN, labelled GTW): Tables 146, 148, 149, 150, 152, 153 (Detroit - Port Huron, Detroit - Grand Rapids - Muskegon, Durand - Bay City, Jackson - Richmond, Durand - Greenville, Pontiac - Caseville); state / province tags hidden on the page.
@@ -343,7 +344,6 @@ After an accepted build: `cp viz_data.json tools/.baseline_viz.json`.
 - 179: the Newfoundland Railway on its summer schedule (May 1949 folder times, July 1948 notice days; tools/nfr_1949.py).
 - 178: CP No. 14 arrives Minneapolis 6.10 a.m. (1948 C&NW timetable); the feed check is clean.
 - 177: trips setting out between midnight and 3 a.m. Pacific shown the night before (the Bar Haven; 152 trips in all).
-- 176 (16 Nov): views grouped and given time zones, new views (Montreal, Toronto, Southwestern Ontario, Gaspe, Newfoundland, Atlantic steamers);
   search box; title; one spelling for one place; speed check at assembly; STATE.md split from CHANGELOG.md.
 - 175: the North Sydney - Port aux Basques steamer named Cabot Strait.
 - 172 - 174: the Newfoundland Railway coastal boats from reported positions; outports as minor stops; the Burgeo run whole.

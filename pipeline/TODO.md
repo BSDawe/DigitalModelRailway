@@ -11,10 +11,6 @@ Last updated 17 November 2026 (Version 180).
 - [ ] CN Table 116 (Longlac - Fort William, Nos. 79 / 80): the Toronto section may be a connection with Nos. 3 / 4 at Longlac rather than through cars (Brendan not certain). Matters for chaining. (23 Oct)
 
 ## Fixes queued (Brendan: "don't fix yet"; ask before the next rebuild whether to include them)
-- [ ] CV Table 1 (on_cn_t001v): St. Johns - St. Alexander IS in the Quebec trace (Brendan, 18 Nov 2026); the straight estimate came from the line via Iberville being marked abandoned, but only past the wye with the Vermont line: use it up to the wye.
-- [ ] Stanbridge: the CV station is also the CP Stanbridge station (a union station): merge (Brendan, 18 Nov 2026).
-- [ ] CN near St. Jerome: a short straight-line piece on file that keeps coming back; find where it comes from and remove it (Brendan, 18 Nov 2026).
-- [ ] Barre & Chelsea colour: #2E6B4F reads as CN on the map; change it at the next revision (Brendan, 18 Nov 2026). Page only (--bc in the three CSS blocks; on_lines.py color for the feed).
 - [ ] Out-and-back joins (left for now, Brendan 11 Nov 2026: could be one train movement): Spl Kenora - Winnipeg - Kenora (skcp005e) and mixed M332
   Eyre - Acadia Valley - Eyre (skcn229b) are linked to their own return trips by the older group-key chaining in real_ends.py.
 
@@ -124,12 +120,10 @@ Maritime tables where the traced line differs from the printed miles by 1 mi and
 - [ ] Ideas from the 16 Nov 2026 review, not taken up yet: side panels scoped to the view (legend, next departures, B.C. Electric list); station
   boards in the station's own time and opening at the next departure; label overlaps (Montreal terminals, Toronto waterfront, Vancouver steamers);
   shareable links (view, day, time, selection in the address; about 40 lines); ship schedule edits without the 6 1/2-minute lane rebuild.
-- [ ] Toronto - Hamilton - Buffalo pool trains (CP - TH&B - NYC) as one train in TH&B livery (Brendan, 16 Nov 2026: "the logical 'owner' of the train
-  is the TH&B as the joint subsidiary ... run through in TH&B livery with notes as to their CP and NYC numbers"). Now: CP Toronto - Hamilton
-  (721, 741, 801, 821 south; 712, 732, 752, 792, 832 north; on_cpthb_t056.csv) and TH&B Hamilton - Fort Erie - the boundary (372, 374, 380, 382;
-  371, 73, 375, 379, 383; onthb056) are separate trips, not joined. To do: join them Toronto - boundary, TH&B livery and agency, the TH&B number
-  as the train number, the CP number (and the NYC number, from the Official Guide's NYC Buffalo - Toronto table: to look up) in the note. 76 / 73
-  (Hamilton - Buffalo gas-electric) stay TH&B only. Check the Toronto - Hamilton CP locals that are not through trains stay CP.
+- [ ] TH&B pool trains (built V193, onthb056p): look up the NYC numbers (Official Guide NYC Buffalo - Toronto table) and add them to the notes. The trains end at the
+  international boundary; joining them to NYC trains into Buffalo waits for the NYC tables.
+- [ ] NYC Montreal - Malone: Brendan says the Delamere file has the NYC stations as far as Athelstan (Glen Elm); only Athelstan uses its Delamere point. The others are placed by
+  the collection or by printed mileage; check them against the Delamere placemarks if he wants (some are unnamed there).
 - [ ] CN Cartierville branch (Montreal): not in the Delamere Quebec file, so not in the model (Brendan, 16 Nov 2026). A 1950 Central Station departure
   list (Brendan's notes) has ten Cartierville short trains each way and St. Eustache trains "via Cartierville"; the April 1948 Official Guide does not show
   them, and the June 1948 Montreal District employee timetable proves nothing: it begins the tunnel lines at Val Royal and Gohier (Central - Mount
@@ -201,6 +195,8 @@ Each runs to an International Boundary point (time estimated) or to the last Can
 - [x] Sydney & Louisburg: built (V163). Colour #5B3A8C is Claude's pick. Victoria Jct. - Glace Bay 9.9 mi traced / 11.0 printed (the trace may take a later route).
 
 ## Done and answered
+### Fixes done in Version 193 (18 Nov 2026)
+- CV Table 1 St. Johns - St. Alexander on the SS&C piece up to the M&VJ wye; Stanbridge CP / CV union station; the St. Jerome straight tie removed; Barre & Chelsea plum; TH&B pool trains through Toronto - boundary in TH&B livery.
 ### Fixes done in Version 147 (9 Nov 2026)
 - Unnamed ships carry no label (NFR Cabot Strait steamer); the Yarmouth - Boston boat is labelled with its name, S.S. Yarmouth, and sails from Central Wharf (approximate point).
 - Estimated straight links are drawn broken: Saint John, Yarmouth, NFR Port-aux-Basques and Argentia, NTR St. Isidore gap, Mirabel - St. Raymond tie (St. Jerome), Great Western through Chatham (Ont.), Michigan Central Detroit River tunnel. Left solid: trivially short ties (Nelson 0.2 km, Lanoraie 0.5 km, others under 0.3 km) and the links Brendan asked for. A link is marked with "est": true in its geojson.

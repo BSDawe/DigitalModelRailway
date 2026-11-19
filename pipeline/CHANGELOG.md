@@ -2850,3 +2850,23 @@ A review of the whole project (Brendan: "have a peek through ... suggest improve
 - Track: Brendan's Malone - the border and Lake Clear Jct. - Malone traces (Mississippi Rails; traces/nyc/malone.json, traces/maritimes/nyc_malone.geojson, own nyc). Malone station at
   their junction. Several small stations placed by printed mileage along the track (Kanawaki, The Heights, Woodlands, Bellevue, Maple Grove, Cecile Jct., Huntingdon, Constable).
 - Counts: 623 lines, 4256 trips, 7132 stops; check_gtfs 0 problems.
+
+## Version 193
+- NYC Montreal - Malone (Brendan, 18 Nov 2026: NYC trains over the CP used the CP stations): LaSalle and Adirondack Jct. are now the CP stations (CP_LASALLE,
+  CP_ADIRONDACK_JUNCTION), shared with CP Tables 23 / 24, as Montreal (Windsor Station), Westmount and Montreal West already were. Athelstan (Glen Elm) at the
+  Delamere station point, as before; the Delamere file's NYC stations beyond were not reassigned.
+- Queued Quebec fixes (Brendan, 18 Nov 2026):
+  - CV Table 1 St. Johns - St. Alexander: the old SS&C piece (Saint-Jean - Farnham) is used up to the Montreal & Vermont Junction wye east of Iberville and cut there;
+    the straight estimate on oncn001v is gone. CN Table 72 into Iberville takes the same track (0.46 mi shorter).
+  - Stanbridge: one union station for the CP (Table 22) and the Central Vermont (CP_STANBRIDGE merged with CN_STANBRIDGE) at the CV point (45.11138, -73.02607);
+    a short estimated CP link (about 0.7 km, drawn broken) carries the CP trains from their line to it.
+  - St. Jerome: the straight "Mirabel line - St. Raymond subdivision tie" removed from the links file; the trains use the bypass piece over existing track
+    (Brendan: the Mirabel bypass used a stretch of pre-existing track). oncn070 has no estimated piece now.
+  - Barre & Chelsea colour: plum (#9C4F7A), as the green read as CN.
+- Toronto, Hamilton & Buffalo pool trains (Brendan, 16 Nov 2026): the Toronto - Buffalo trains run through as one train each in TH&B livery and agency, with the TH&B number:
+  372, 374, 380, 382 down (CP 721, 741, 801, 821) and 371, 375, 379, 383 up (CP 712, 752, 792, 832), Toronto - Sunnyside - Hamilton (Hunter Street) - Welland - Fort Erie -
+  the international boundary (new on_thb_t056p.csv, line onthb056p). The CP number is in the note; the NYC numbers are still to be looked up. The columns came out of
+  on_cpthb_t056.csv (CP 731, 761, 763, 732, 722, 762 stay CP Toronto - Hamilton) and on_thb_t056.csv (76 and 73, the Hamilton - Buffalo gas-electrics, stay TH&B only).
+- Fix during the build: the SS&C edit had dropped the check that skips pieces already covered by other track, which moved stations and routes on lines across the map
+  (Montreal West on the CP North Shore lines, a mile-long spike at Park Avenue); restored before publishing. Only oncn001v, oncn072, oncp022s, onnyc018 and the TH&B lines changed.
+- Counts: 624 lines, 4248 trips, 7129 stops; check_gtfs 0 problems; check_speeds the 3 known hops.
