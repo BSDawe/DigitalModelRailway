@@ -2841,3 +2841,12 @@ A review of the whole project (Brendan: "have a peek through ... suggest improve
   (traces/gtw/prr_grand_rapids_muskegon.json), own prr, PRR Tuscan red (#7C3030; Wikipedia's Tuscan red; Brendan: "a tolerably accurate livery"). The dashed Ferrysburg line removed.
 - Track ties at South Bend (190 m) and Penn Jct. (110 m). Imlay City at the crossing of the Port Huron - Flint and Pontiac - Caseville lines; Capac - Imlay City - Lapeer forced.
 - Counts: 623 lines, 4251 trips, 7114 stops; check_gtfs 0 problems.
+
+## Version 192
+- New York Central, St. Lawrence & Adirondack branch (Brendan, 18 Nov 2026): the Official Guide table "Malone - Montreal, via St. Lawrence and Adirondack Branch" (April 25, 1948)
+  replaces the four CP Table 18 trains that ended at an estimated border point (on_nyc_t018.csv, same line key). Every station Montreal (Windsor Station) - Westmount -
+  Montreal West - LaSalle - Adirondack Jct. - Chateauguay - Beauharnois - Valleyfield - Huntingdon - Athelstan - Constable - Malone, N.Y.; nine trains: the New York trains 2 and 4
+  (to Malone) and 5 and 3 (from Malone), the Malone locals 25, 11 (Sundays) and 32, and the Saturday Valleyfield trains 27 and 26. 65.4 mi traced, 66 printed.
+- Track: Brendan's Malone - the border and Lake Clear Jct. - Malone traces (Mississippi Rails; traces/nyc/malone.json, traces/maritimes/nyc_malone.geojson, own nyc). Malone station at
+  their junction. Several small stations placed by printed mileage along the track (Kanawaki, The Heights, Woodlands, Bellevue, Maple Grove, Cecile Jct., Huntingdon, Constable).
+- Counts: 623 lines, 4256 trips, 7132 stops; check_gtfs 0 problems.

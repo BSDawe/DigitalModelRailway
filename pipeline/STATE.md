@@ -1,7 +1,7 @@
 # The Digital Model Railway — project state
 
 Read this first. It is meant to be enough to start a short, single-task chat without replaying the project's history.
-Last updated 17 November 2026 (Version 191). This file is the current state and the standing rules; the version-by-version history is in CHANGELOG.md.
+Last updated 17 November 2026 (Version 192). This file is the current state and the standing rules; the version-by-version history is in CHANGELOG.md.
 
 ## What this is
 
@@ -327,6 +327,7 @@ After an accepted build: `cp viz_data.json tools/.baseline_viz.json`.
 
 ## Recent versions (one line each; the detail is in CHANGELOG.md)
 
+- 192: NYC St. Lawrence & Adirondack, Montreal (Windsor Station) - Valleyfield - Malone, all stations and nine trains (Official Guide table); Malone traces (Mississippi Rails).
 - 191: CN / GTW Table 95: the Chicago trains through from London (International Limited, Inter-City Limited, La Salle, Ontario Limited) to Dearborn Station; No. 20 fixed to p.m.; GTW car ferry Muskegon - Milwaukee; Grand Rapids - Muskegon over the PRR (Tuscan red).
 - 190: Grand Trunk Western (CN, labelled GTW): Tables 146, 148, 149, 150, 152, 153 (Detroit - Port Huron, Detroit - Grand Rapids - Muskegon, Durand - Bay City, Jackson - Richmond, Durand - Greenville, Pontiac - Caseville); state / province tags hidden on the page.
 - 189: Springfield, Mass. at Union Station on the B&A (NYC) line; the Barre & Chelsea (Woodsville - Wells River - Montpelier, CP Table 26; own railway, kind D).
