@@ -11,6 +11,11 @@ Last updated 17 November 2026 (Version 180).
 - [ ] CN Table 116 (Longlac - Fort William, Nos. 79 / 80): the Toronto section may be a connection with Nos. 3 / 4 at Longlac rather than through cars (Brendan not certain). Matters for chaining. (23 Oct)
 
 ## Fixes queued (Brendan: "don't fix yet"; ask before the next rebuild whether to include them)
+- [ ] Stanbridge union station at the Delamere point (Brendan, 19 Nov 2026; V193 used the wrong point): "Gare Stanbridge Union station", CP St. Guillaume subdivision,
+  45.1175797, -73.0338785 (quebec_all.json; the collection lookup missed it under the name "Stanbridge Union"). V193 put the merged CP_STANBRIDGE / CN_STANBRIDGE stop at the
+  CV track end (45.11138, -73.02607; on_build.py on_cp_t022s and on_cn_t001v places) with an est CP link (-73.0198692, 45.1161065 -> -73.02607, 45.11138) in
+  ontario_quebec_links.geojson. To do: both places to the Delamere point; remove the est link (the CP Stanbridge junction track runs to about -73.032); check how the CV
+  (on_cn_t001v) track reaches the point and tie it if needed (report the tie length).
 - [ ] Out-and-back joins (left for now, Brendan 11 Nov 2026: could be one train movement): Spl Kenora - Winnipeg - Kenora (skcp005e) and mixed M332
   Eyre - Acadia Valley - Eyre (skcn229b) are linked to their own return trips by the older group-key chaining in real_ends.py.
 
