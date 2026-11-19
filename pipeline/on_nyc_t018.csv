@@ -3,7 +3,7 @@
 # Replaces the four through trains of CP Table 18 that ended at the border (24 Oct 2026); the run beyond Malone (Utica, Albany, New York) is in on_nycfull_t018.csv, not built.
 # Signs: * daily; dagger daily except Sunday; section sign Sunday only; k Saturday only (27, 26); f stops on signal; h stops only to receive, i only to discharge (entered plain);
 # z stops on signal Sunday only, s stops Sunday only, bullet stops Saturday only (entered as flag stops f).
-# Miles from Montreal (the table counts from Malone, 66). Malone and Constable, N.Y.: no United States track yet; drawn as a straight estimate from the border (Malone point APPROXIMATE).
+# Miles from Montreal (the table counts from Malone, 66). Malone - the border: Mississippi Rails trace (Brendan, 18 Nov 2026; traces/maritimes/nyc_malone.geojson); Malone station at the junction with the Adirondack Division, Constable by mileage.
 #train col=No25 num=25 dir=up days="Mon,Tue,Wed,Thu,Fri,Sat" kind=passenger note="Malone 5.00 a.m. to Montreal (Windsor Station) 7.20 a.m., daily except Sunday."
 #train col=No5 num=5 dir=up days=daily kind=passenger from="New York" note="From New York: Malone 8.13 a.m. to Montreal (Windsor Station) 10.45 a.m., daily."
 #train col=No27 num=27 dir=up days=Sat kind=passenger note="Saturdays only: Valleyfield 2.15 p.m. to Montreal (Windsor Station) 3.30 p.m."
