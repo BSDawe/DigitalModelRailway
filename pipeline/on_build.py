@@ -190,11 +190,11 @@ for _s in ('on_cp_t008l', 'on_cp_t008f', 'on_cp_t008m'): OVER.setdefault(_s, {})
 for _s in ('on_cp_t012', 'on_cp_t012a', 'on_cp_t013', 'on_cp_t013a', 'on_cp_t015', 'on_cp_t015b', 'on_cp_t015c', 'on_cp_t016', 'on_cp_t016a', 'on_cp_t017'):   # CP New Brunswick (10 Nov 2026)
     OVER.setdefault(_s, {}).update(shift=-14400, places=CPNB_PLACES, src='CP public timetable, April 1948')
 OVER.setdefault('on_cp_t010', {}).update(places=CPNB_PLACES)
-DSSA_PLACES = {**SOO_PLACES, 'Mackinaw City, Mich.': (-84.7275, 45.78), 'St. Ignace, Mich.': (-84.7155, 45.8625), 'Soo Junction, Mich.': (-85.2637, 46.3366),
+DSSA_PLACES = {**SOO_PLACES, 'Mackinaw City, Mich.': (-84.719617, 45.7799), 'St. Ignace, Mich.': (-84.715752, 45.865736), 'Soo Junction, Mich.': (-85.2637, 46.3366),
                'Marquette, Mich.': (-87.3949, 46.5348), 'Ishpeming, Mich.': (-87.6596, 46.494), 'Nestoria, Mich.': (-88.2581, 46.5675), 'Houghton, Mich.': (-88.5754, 47.122),
                'Calumet, Mich.': (-88.4581, 47.2455), 'Sault Ste. Marie Yard, Mich.': (-84.3636, 46.503)}
 # Duluth, South Shore & Atlantic (20 Nov 2026): piece ends and junctions of the Mississippi Rails trace; Trout Lake the DSS&A / Soo crossing (shared with the Soo Line, SOO_PLACES);
-# Ashland, Superior, Duluth the Soo Line stations; Mackinaw City APPROXIMATE (the car ferry's south end, no trace). Other stations by printed mileage.
+# Ashland, Superior, Duluth the Soo Line stations; Mackinaw City: the car ferry dock; St. Ignace: the dock end of Brendan's lead (Brendan, 20 Nov 2026; the Chief Wawatam). Other stations by printed mileage.
 for _fn in sorted(glob.glob(os.path.join(HERE, 'on_dssa_t*.csv'))):
     _st = os.path.basename(_fn)[:-4]
     if _st in ('on_dssa_t074', 'on_dssa_t074c'): OVER[_st] = dict(skip=True); continue   # CP Table 74's DSS&A trains: superseded by the Official Guide tables
