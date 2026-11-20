@@ -20,8 +20,8 @@ Last updated 17 November 2026 (Version 180).
   CP_SAULT_STE_MARIE), reached by a straight dashed estimate (3.3 km) from the Michigan end of the trace: an International Bridge trace wanted. St. Paul: the Soo joins the Northern Pacific 'Line A' at 44 57 38.70 N, 93 05 09.44 W
   (Brendan, 19 Nov 2026; trackage rights) and runs over it to Minneapolis and the Milwaukee Road station; Union Depot at Brendan's point 44 56 48.89 N, 93 05 07.30 W (also for the
   Winnipeger, the Mountaineer and the GN in sk_lines.py: the next build re-runs the Saskatchewan steps). No. 1 to the Great Northern station by the Soo Connector (the GN row's 0.5 mi
-  is Claude's). (Old note: to the Milwaukee Road
-  station). To check: Table 7 Nos. 8 / 7 daily (Table 9: ex Sat / ex Mon); Table 7 No. 7 Bruce printed 7.35 (left out); Table 6 St. Croix Falls section (left out); Table 13 No. 160
+  is Claude's).
+  To check: Table 7 Nos. 8 / 7 daily (Table 9: ex Sat / ex Mon); Table 7 No. 7 Bruce printed 7.35 (left out); Table 6 St. Croix Falls section (left out); Table 13 No. 160
   sign (# MWF or double dagger); Table 23 La Mars state; Chicago: Grand Central Station (B&O property) - Forest Park on Brendan's B&O Chicago Terminal trace (19 Nov 2026), own bo,
   B&O dark blue (#1D3461; dark theme #8AA6DC; Claude's pick of shade), 10.0 mi traced / 10.9 printed; Table 10 Nos. 3 / 4 and Table 26 Nos. 109 / 110 are the existing Mountaineer / Winnipeger (connections only).
 - [ ] Stanbridge union station at the Delamere point (Brendan, 19 Nov 2026; V193 used the wrong point): "Gare Stanbridge Union station", CP St. Guillaume subdivision,
