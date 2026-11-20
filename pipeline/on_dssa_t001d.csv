@@ -1,0 +1,31 @@
+# Duluth, South Shore & Atlantic (drawn as CP, labelled Duluth, South Shore & Atlantic): Marquette - Champion - Nestoria - Sidnaw - Ewen - North Ironwood - Ashland - Iron River -
+# Superior - Duluth. Official Guide, May 1948, Duluth, South Shore & Atlantic and Mineral Range Railroad (tables dated January 1, 1948; Brendan's images, 20 Nov 2026; private repo scans/og1948_dssa/). CENTRAL TIME. Miles as printed (from St. Ignace). Ashland, Superior and Duluth: the Soo Line stations ("Soo Line Sta.", Duluth "Soo Line Union Sta.").
+# No. 7: "Operates daily between Marquette and Champion. Leaves Champion daily, except Saturday, arriving Duluth daily, except Sunday": entered as No. 7 Marquette - Duluth Sunday -
+# Friday and No. 7 Marquette - Champion on Saturdays. No. 8: "Leaves Duluth daily, except Saturday, arrives Champion daily, except Sunday. Operates daily, Champion to Marquette":
+# No. 8 Duluth - Marquette leaving Sunday - Friday, and No. 8 Champion - Marquette on Sundays. Sidnaw, No. 7: "Will be held until 10.00 p.m. for connection with C. M. St. P. & P.
+# R.R. 'Chippewa' train No. 21 from Chicago 12.45 p.m., due Sidnaw at 9.31 p.m." (times entered as printed). Left out (f or a without times): Watton, Paynesville, Marengo Junction.
+#train col=No7 num=7 dir=down days="Sun,Mon,Tue,Wed,Thu,Fri" kind=passenger note="DSS&A No. 7, leaving Marquette Sunday - Friday: Marquette 6.10 p.m., Champion 7.42 p.m., Sidnaw 9.25 p.m. (held until 10.00 p.m. for the Milwaukee Road's Chippewa from Chicago), Ashland 2.30 a.m., Superior 5.05 a.m., Duluth 5.40 a.m. (Official Guide, January 1, 1948)."
+#train col=No7S num=7 dir=down days=Sat kind=passenger note="DSS&A No. 7, Saturdays: Marquette 6.10 p.m. to Champion 7.42 p.m. only (Official Guide, January 1, 1948)."
+#train col=No8 num=8 dir=up days="Sun,Mon,Tue,Wed,Thu,Fri" kind=passenger note="DSS&A No. 8, leaving Duluth Sunday - Friday: Duluth 8.15 p.m., Superior 8.45 p.m., Ashland 11.55 p.m., Nestoria 5.35 a.m., Champion 6.15 a.m., Marquette 7.40 a.m. (Official Guide, January 1, 1948)."
+#train col=No8S num=8 dir=up days=Sun kind=passenger note="DSS&A No. 8, Sundays: Champion 6.15 a.m. to Marquette 7.40 a.m. only (Official Guide, January 1, 1948)."
+mile,station,principal,prov,tz,No7,No7S,No8,No8S
+151.2,"Marquette, Mich.",1,MI,C,lv 6.10p,lv 6.10p,ar 7.40a,ar 7.40a
+163.0,"Negaunee, Mich.",1,MI,C,6.40p,6.40p,7.10a,7.10a
+165.9,"Ishpeming, Mich.",1,MI,C,6.57p,6.57p,6.48a,6.48a
+181.9,"Champion, Mich.",1,MI,C,7.42p,ar 7.42p,6.15a,lv 6.15a
+189.4,"Michigamme, Mich.",0,MI,C,8.00p,,f5.50a,
+197.1,"Nestoria, Mich.",1,MI,C,8.15p,,5.35a,
+211.2,"Covington, Mich.",0,MI,C,8.48p,,4.55a,
+220.0,"Sidnaw, Mich.",1,MI,C,9.25p,,4.35a,
+229.6,"Kenton, Mich.",0,MI,C,9.45p,,f4.15a,
+235.3,"Trout Creek, Mich.",0,MI,C,10.05p,,3.58a,
+246.2,"Bruce's Crossing, Mich.",0,MI,C,10.25p,,3.35a,
+251.5,"Ewen, Mich.",1,MI,C,ar 10.35p / lv 10.55p,,3.10a,
+265.7,"Bergland, Mich.",0,MI,C,11.30p,,f2.40a,
+283.8,"Thomaston, Mich.",0,MI,C,12.12a,,2.01a,
+295.4,"North Ironwood, Mich.",1,MI,C,12.37a,,1.35a,
+308.3,"Saxon, Wis.",1,WI,C,1.10a,,1.10a,
+340.6,"Ashland, Wis.",1,WI,C,2.30a,,11.55p,
+368.8,"Iron River, Wis.",1,WI,C,3.30a,,10.26p,
+408.0,"Superior, Wis.",1,WI,C,5.05a,,8.45p,
+415.2,"Duluth, Minn.",1,MN,C,ar 5.40a,,lv 8.15p,

@@ -1,0 +1,38 @@
+# Duluth, South Shore & Atlantic (a CP subsidiary: drawn as CP, labelled Duluth, South Shore & Atlantic; Brendan, 20 Nov 2026) and its Mineral Range R.R. (Houghton - Hancock -
+# Calumet): Mackinaw City - St. Ignace - Trout Lake - Soo Junction - Marquette - Champion - Nestoria - L'Anse - Houghton - Calumet. Official Guide, May 1948, Duluth, South Shore & Atlantic and Mineral Range Railroad (tables dated January 1, 1948; Brendan's images, 20 Nov 2026; private repo scans/og1948_dssa/). Supersedes on_dssa_t074.csv / t074c.csv
+# (CP Table 74; kept unbuilt). CENTRAL TIME, Mackinaw City Eastern (as printed). Miles: printed from St. Ignace, entered plus 8.0 so that Mackinaw City (no miles printed: the
+# Straits of Mackinac car ferry, about 8 miles) can stand first.
+# Nos. 1 / 2 daily except Sunday (dagger at their first station); Nos. 9 / 10 daily (the Copper Country Limited's DSS&A part: the Milwaukee Road to and from Chicago at Champion, in
+# the "Calumet and Chicago" box: No. 9 Chicago 7.40 p.m., Champion 6.05 a.m.; No. 10 Champion 7.42 p.m., Chicago 6.50 a.m.). At Trout Lake Nos. 1 / 2 meet the Soo Line's Nos. 8 / 7
+# (the "Mackinaw City and Sault Ste. Marie Line" box: 1-8 and 7-2). Left out (f or a without times): Ozark, Watton, Paynesville, Marengo Junction. Lake Linden line: freight only.
+#train col=No1 num=1 dir=down days="Mon,Tue,Wed,Thu,Fri,Sat" kind=passenger note="DSS&A No. 1, daily except Sunday: Mackinaw City 8.45 a.m. Eastern time (across the Straits by car ferry), St. Ignace 8.55 a.m., Trout Lake (the Soo Line to Sault Ste. Marie), Marquette 1.45 - 2.00 p.m., Houghton 5.00 p.m., Calumet 5.50 p.m. (Official Guide, January 1, 1948)."
+#train col=No2 num=2 dir=up days="Mon,Tue,Wed,Thu,Fri,Sat" kind=passenger note="DSS&A No. 2, daily except Sunday: Calumet 9.45 a.m., Houghton 10.20 a.m., Marquette 1.17 - 1.30 p.m., Trout Lake, St. Ignace 6.15 p.m., Mackinaw City 8.30 p.m. Eastern time (Official Guide, January 1, 1948)."
+#train col=No9 num=9 dir=down days=daily kind=passenger note="DSS&A No. 9, daily: Champion 6.20 a.m. (from the Milwaukee Road, Chicago 7.40 p.m.), Houghton 8.30 a.m., Calumet 9.15 a.m. (Official Guide, January 1, 1948)."
+#train col=No10 num=10 dir=up days=daily kind=passenger note="DSS&A No. 10, daily: Calumet 4.45 p.m., Houghton 5.27 p.m., Champion 7.42 p.m. (for the Milwaukee Road to Chicago, 6.50 a.m.) (Official Guide, January 1, 1948)."
+mile,station,principal,prov,tz,No1,No2,No9,No10
+0.0,"Mackinaw City, Mich.",1,MI,E,lv 8.45a,ar 8.30p,,
+8.0,"St. Ignace, Mich.",1,MI,C,8.55a,6.15p,,
+18.9,"Moran, Mich.",0,MI,C,9.16a,5.50p,,
+35.5,"Trout Lake, Mich.",1,MI,C,ar 9.45a / lv 10.20a,ar 5.03p / lv 5.15p,,
+50.8,"Soo Junction, Mich.",1,MI,C,f10.45a,f4.38p,,
+62.7,"Newberry, Mich.",1,MI,C,11.05a,4.22p,,
+71.4,"McMillan, Mich.",0,MI,C,11.17a,4.07p,,
+83.7,"Seney, Mich.",0,MI,C,11.37a,3.50p,,
+108.8,"Shingleton, Mich.",0,MI,C,12.16p,3.10p,,
+116.7,"Wetmore, Mich.",0,MI,C,12.33p,2.55p,,
+129.2,"Au Train, Mich.",0,MI,C,f12.53p,f2.28p,,
+139.9,"Deerton, Mich.",0,MI,C,f1.08p,f2.10p,,
+159.2,"Marquette, Mich.",1,MI,C,ar 1.45p / lv 2.00p,ar 1.17p / lv 1.30p,,
+171.0,"Negaunee, Mich.",1,MI,C,2.27p,12.56p,,
+173.9,"Ishpeming, Mich.",1,MI,C,2.40p,12.47p,,
+189.9,"Champion, Mich.",1,MI,C,3.12p,12.16p,lv 6.20a,ar 7.42p
+197.4,"Michigamme, Mich.",0,MI,C,3.25p,12.02p,f6.34a,7.28p
+205.1,"Nestoria, Mich.",1,MI,C,ar 3.38p / lv 3.40p,ar 11.44a / lv 11.47a,ar 6.50a / lv 6.55a,ar 7.10p / lv 7.14p
+214.0,"Herman, Mich.",0,MI,C,f3.53p,f11.29a,7.10a,f6.54p
+222.1,"L'Anse, Mich.",1,MI,C,4.10p,11.09a,7.27a,6.23p
+227.0,"Baraga, Mich.",0,MI,C,4.18p,11.03a,7.35a,6.15p
+233.3,"Keweenaw Bay, Mich.",0,MI,C,f4.28p,f10.53a,7.47a,f6.05p
+245.6,"Chassell, Mich.",0,MI,C,4.45p,10.34a,8.07a,5.45p
+253.7,"Houghton, Mich.",1,MI,C,5.00p,10.20a,8.30a,5.27p
+254.8,"Hancock, Mich.",1,MI,C,5.20p,10.10a,8.40a,5.10p
+267.3,"Calumet, Mich.",1,MI,C,ar 5.50p,lv 9.45a,ar 9.15a,lv 4.45p

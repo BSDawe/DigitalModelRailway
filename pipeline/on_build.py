@@ -2,7 +2,7 @@
 Armstrong) and 38 (Official Guide, April 25, 1948); the Ontario Northland (November 16, 1947) and the Algoma Central (April 25, 1948). Transcribed in
 on_*.csv, times as printed (Eastern time), shown in Pacific time. One line for each file. Track and stations: on_lines.py (Delamere's collections).
 New York Central and Delaware & Hudson trains of CP Table 18 to the border (on_nyc_t018.csv, on_dh_t018.csv).
-Soo Line (on_soo_*.csv, drawn as CP, labelled Soo Line; 19 Nov 2026). Not built: on_dssa_*.csv, on_*full_*.csv and on_rut_*.csv (United States, no track yet) and the steamers in marine/ (no port positions yet)."""
+Soo Line (on_soo_*.csv, drawn as CP, labelled Soo Line; 19 Nov 2026). DSS&A (on_dssa_t001 / t001d / t019; 20 Nov 2026). Not built: on_*full_*.csv and on_rut_*.csv (United States, no track yet) and the steamers in marine/ (no port positions yet)."""
 import glob, os, re
 import on_lines                                             # registers the railways, track graphs, places and the projection for this step
 import ab_table, ab_lines
@@ -79,7 +79,7 @@ SOO_PLACES = {'Menasha, Wis.': (-88.444683, 44.20615), 'Forest Park, Ill.': (-87
               'Armourdale, N.D.': (-99.377299, 48.875716), 'Sault Ste. Marie, Ont.': (-84.32192, 46.5102), 'Superior, Wis.': (-92.101656, 46.728397),
               'Hilbert Junction, Wis.': (-88.166752, 44.149004), 'Stevens Point, Wis.': (-89.568068, 44.512887),
               'Moose Lake, Minn.': (-92.778613, 46.449202), 'Onamia, Minn.': (-93.665724, 46.069729),
-              'East Lake, Minn.': (-93.283759, 46.538477), 'Superior (21st St.), Wis.': (-92.08207, 46.716769), 'Trout Lake, Mich.': (-85.025679, 46.193229),
+              'East Lake, Minn.': (-93.283759, 46.538477), 'Superior (21st St.), Wis.': (-92.08207, 46.716769), 'Trout Lake, Mich.': (-85.021621, 46.194378),
               'Manistique, Mich.': (-86.255686, 45.965778), 'Pembine, Wis.': (-87.991542, 45.635013), 'St. Paul': (-93.085361, 44.946914),
               'Minneapolis (Milwaukee Road Station)': (-93.26172, 44.98001), 'Minneapolis (Great Northern Station)': (-93.267977, 44.986012)}
 # Soo Line (19 Nov 2026): the ends and junctions of each table, at the Mississippi Rails trace (piece ends, or the nearest track to the town); the stations of the Winnipeger and the
@@ -190,6 +190,18 @@ for _s in ('on_cp_t008l', 'on_cp_t008f', 'on_cp_t008m'): OVER.setdefault(_s, {})
 for _s in ('on_cp_t012', 'on_cp_t012a', 'on_cp_t013', 'on_cp_t013a', 'on_cp_t015', 'on_cp_t015b', 'on_cp_t015c', 'on_cp_t016', 'on_cp_t016a', 'on_cp_t017'):   # CP New Brunswick (10 Nov 2026)
     OVER.setdefault(_s, {}).update(shift=-14400, places=CPNB_PLACES, src='CP public timetable, April 1948')
 OVER.setdefault('on_cp_t010', {}).update(places=CPNB_PLACES)
+DSSA_PLACES = {**SOO_PLACES, 'Mackinaw City, Mich.': (-84.7275, 45.78), 'St. Ignace, Mich.': (-84.7155, 45.8625), 'Soo Junction, Mich.': (-85.2637, 46.3366),
+               'Marquette, Mich.': (-87.3949, 46.5348), 'Ishpeming, Mich.': (-87.6596, 46.494), 'Nestoria, Mich.': (-88.2581, 46.5675), 'Houghton, Mich.': (-88.5754, 47.122),
+               'Calumet, Mich.': (-88.4581, 47.2455), 'Sault Ste. Marie Yard, Mich.': (-84.3636, 46.503)}
+# Duluth, South Shore & Atlantic (20 Nov 2026): piece ends and junctions of the Mississippi Rails trace; Trout Lake the DSS&A / Soo crossing (shared with the Soo Line, SOO_PLACES);
+# Ashland, Superior, Duluth the Soo Line stations; Mackinaw City APPROXIMATE (the car ferry's south end, no trace). Other stations by printed mileage.
+for _fn in sorted(glob.glob(os.path.join(HERE, 'on_dssa_t*.csv'))):
+    _st = os.path.basename(_fn)[:-4]
+    if _st in ('on_dssa_t074', 'on_dssa_t074c'): OVER[_st] = dict(skip=True); continue   # CP Table 74's DSS&A trains: superseded by the Official Guide tables
+    _nm = [r['station'] for r in ab_table.load(_fn)['rows']]
+    OVER.setdefault(_st, {}).update(label='Duluth, South Shore & Atlantic', places=DSSA_PLACES, noplace=tuple(n for n in _nm if n not in DSSA_PLACES), tidpfx='DSSA',
+                                     short='DSS&A', src='Official Guide, May 1948', shift=-7200,
+                                     tznote=' Shown in Pacific time: two hours earlier than the Central time printed (Mackinaw City: three hours earlier than its Eastern time).')
 for _fn in sorted(glob.glob(os.path.join(HERE, 'on_soo_t*.csv'))):   # the Soo Line (Official Guide, May 1948; Brendan's pages of 19 Nov 2026): CP lines labelled Soo Line
     _st = os.path.basename(_fn)[:-4]
     if _st in ('on_soo_t070', 'on_soo_t070b'): OVER[_st] = dict(skip=True); continue   # CP Table 70's Soo trains: superseded by Tables 7, 1 and 6
@@ -204,11 +216,11 @@ def specs():
             'on_cn_t009a.csv', 'on_cn_t010.csv', 'on_cn_t011.csv', 'on_cn_t012.csv', 'on_cn_t013.csv', 'on_cn_t014.csv', 'on_cn_t015.csv', 'on_cn_t015a.csv', 'on_cn_t024.csv', 'on_cn_t025.csv', 'on_cn_t027.csv', 'on_cn_t028.csv', 'on_cn_t029.csv', 'on_cn_t030.csv', 'on_cn_t031.csv', 'on_cn_t031a.csv', 'on_cn_t031b.csv', 'on_cn_t032.csv', 'on_cn_t033.csv', 'on_cn_t034.csv', 'on_cn_t036.csv', 'on_cn_t037.csv', 'on_cn_t037a.csv', 'on_cn_t039.csv', 'on_cn_t041.csv', 'on_cn_t045.csv', 'on_cn_t047.csv', 'on_cp_t900.csv', 'on_cp_t900k.csv', 'on_cp_t900w.csv'}   # added 8 Nov 2026 (Maritimes): after everything, so no older trip id changes (CN 51 / 52 are also the Rutland trains')
     for fn in sorted(glob.glob(os.path.join(HERE, 'on_c[pn]_t*.csv')) + glob.glob(os.path.join(HERE, 'on_onr_t*.csv')) + glob.glob(os.path.join(HERE, 'on_acr_t*.csv'))
                      + glob.glob(os.path.join(HERE, 'on_dh_t*.csv')) + glob.glob(os.path.join(HERE, 'on_nyc_t*.csv'))
-                     + glob.glob(os.path.join(HERE, 'on_cpcn_t*.csv')) + glob.glob(os.path.join(HERE, 'on_nyco_t*.csv')) + glob.glob(os.path.join(HERE, 'on_mc_t*.csv')) + glob.glob(os.path.join(HERE, 'on_thb_t*.csv')) + glob.glob(os.path.join(HERE, 'on_soo_t*.csv')) + glob.glob(os.path.join(HERE, 'on_cpthb_t*.csv')) + glob.glob(os.path.join(HERE, 'on_lps_t*.csv')) + glob.glob(os.path.join(HERE, 'on_qlf_t*.csv')) + glob.glob(os.path.join(HERE, 'on_tsl_t*.csv')) + glob.glob(os.path.join(HERE, 'on_grr_t*.csv')) + glob.glob(os.path.join(HERE, 'on_len_t*.csv')) + glob.glob(os.path.join(HERE, 'on_msc_t*.csv')) + glob.glob(os.path.join(HERE, 'on_qrl_t*.csv')) + glob.glob(os.path.join(HERE, 'on_nst_t*.csv')) + glob.glob(os.path.join(HERE, 'on_nfr_t*.csv'))
+                     + glob.glob(os.path.join(HERE, 'on_cpcn_t*.csv')) + glob.glob(os.path.join(HERE, 'on_nyco_t*.csv')) + glob.glob(os.path.join(HERE, 'on_mc_t*.csv')) + glob.glob(os.path.join(HERE, 'on_thb_t*.csv')) + glob.glob(os.path.join(HERE, 'on_soo_t*.csv')) + glob.glob(os.path.join(HERE, 'on_dssa_t*.csv')) + glob.glob(os.path.join(HERE, 'on_cpthb_t*.csv')) + glob.glob(os.path.join(HERE, 'on_lps_t*.csv')) + glob.glob(os.path.join(HERE, 'on_qlf_t*.csv')) + glob.glob(os.path.join(HERE, 'on_tsl_t*.csv')) + glob.glob(os.path.join(HERE, 'on_grr_t*.csv')) + glob.glob(os.path.join(HERE, 'on_len_t*.csv')) + glob.glob(os.path.join(HERE, 'on_msc_t*.csv')) + glob.glob(os.path.join(HERE, 'on_qrl_t*.csv')) + glob.glob(os.path.join(HERE, 'on_nst_t*.csv')) + glob.glob(os.path.join(HERE, 'on_nfr_t*.csv'))
                      + [f for x in ('tem', 'cgt', 'rs', 'aj', 'tir', 'mcrp', 'snl', 'crc', 'bc') for f in glob.glob(os.path.join(HERE, f'on_{x}_t*.csv'))], key=lambda f: (os.path.basename(f) in LAST, os.path.basename(f) in LATE, f)):
         stem = os.path.basename(fn)[:-4]; o = OVER.get(stem, {})
         if o.get('skip'): continue
-        rail = {'soo': 'oncp', 'cp': 'oncp', 'cn': 'oncn', 'onr': 'onr', 'acr': 'acr', 'dh': 'ondh', 'nyc': 'onnyc', 'tem': 'ontem', 'cgt': 'oncgt', 'rs': 'onrs', 'aj': 'onaj', 'tir': 'ontir', 'mcrp': 'onmcrp', 'snl': 'onsnl', 'bc': 'onbc', 'crc': 'oncrc', 'cpcn': 'oncpcn', 'nyco': 'onnyco', 'mc': 'onmc', 'thb': 'onthb', 'cpthb': 'oncpthb', 'lps': 'onlps', 'grr': 'ongrr', 'len': 'onlen', 'msc': 'onmsc', 'qrl': 'onqrl', 'nst': 'onnst', 'nfr': 'onnfr', 'qlf': 'onqlf', 'tsl': 'ontsl'}[re.match(r'on_(soo|crc|snl|bc|mcrp|mc|msc|qrl|nst|nfr|cpthb|thb|lps|grr|len|qlf|tsl|cpcn|nyco|cp|cn|onr|acr|dh|nyc|tem|cgt|rs|aj|tir)_', stem).group(1)]
+        rail = {'dssa': 'oncp', 'soo': 'oncp', 'cp': 'oncp', 'cn': 'oncn', 'onr': 'onr', 'acr': 'acr', 'dh': 'ondh', 'nyc': 'onnyc', 'tem': 'ontem', 'cgt': 'oncgt', 'rs': 'onrs', 'aj': 'onaj', 'tir': 'ontir', 'mcrp': 'onmcrp', 'snl': 'onsnl', 'bc': 'onbc', 'crc': 'oncrc', 'cpcn': 'oncpcn', 'nyco': 'onnyco', 'mc': 'onmc', 'thb': 'onthb', 'cpthb': 'oncpthb', 'lps': 'onlps', 'grr': 'ongrr', 'len': 'onlen', 'msc': 'onmsc', 'qrl': 'onqrl', 'nst': 'onnst', 'nfr': 'onnfr', 'qlf': 'onqlf', 'tsl': 'ontsl'}[re.match(r'on_(dssa|soo|crc|snl|bc|mcrp|mc|msc|qrl|nst|nfr|cpthb|thb|lps|grr|len|qlf|tsl|cpcn|nyco|cp|cn|onr|acr|dh|nyc|tem|cgt|rs|aj|tir)_', stem).group(1)]
         R = ab_table.load(fn)['rows']; a, b = R[0]['station'], R[-1]['station']
         table = re.match(r'on_\w+?_t(\d+)', stem).group(1).lstrip('0')
         rw = {'oncp': 'CP', 'oncn': 'CN', 'onr': 'ONR', 'acr': 'ACR', 'ondh': 'D&H', 'onnyc': 'NYC', 'ontem': 'TEM', 'oncgt': 'C&GT', 'onrs': 'R&S', 'onaj': 'A&J', 'ontir': 'TIR', 'onmcrp': 'MCR&P', 'onsnl': 'S&L', 'onbc': 'B&C', 'oncrc': 'CR&C', 'oncpcn': 'CP', 'onnyco': 'NYC', 'onmc': 'NYC', 'onthb': 'TH&B', 'oncpthb': 'CP', 'onlps': 'L&PS', 'ongrr': 'GRR', 'onlen': 'L&N', 'onmsc': 'M&SC', 'onqrl': 'QRL&P', 'onnst': 'NS&T', 'onnfr': 'Nfld. Ry.', 'onqlf': 'Ferry', 'ontsl': 'Ferry'}[rail]

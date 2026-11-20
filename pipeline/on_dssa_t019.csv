@@ -1,0 +1,13 @@
+# Duluth, South Shore & Atlantic, Sault Ste. Marie line: mixed Nos. 19 / 18 Sault Ste. Marie, Mich. - Soo Junction. Official Guide, May 1948, Duluth, South Shore & Atlantic and Mineral Range Railroad (tables dated January 1, 1948; Brendan's images, 20 Nov 2026; private repo scans/og1948_dssa/). CENTRAL TIME. Miles from Sault Ste. Marie as printed.
+# No. 19 daily except Sunday (dagger), No. 18 daily except Monday; at Sault Ste. Marie the sign "Service is to and from freight yard": the DSS&A's Michigan yard (the trace end), not the
+# CP station across the river used by the Soo Line trains.
+#train col=No19 num=19 dir=down days="Mon,Tue,Wed,Thu,Fri,Sat" kind=mixed note="DSS&A mixed No. 19, daily except Sunday: Sault Ste. Marie (freight yard) 8.30 p.m. to Soo Junction 10.20 p.m. (Official Guide, January 1, 1948)."
+#train col=No18 num=18 dir=up days="Sun,Tue,Wed,Thu,Fri,Sat" kind=mixed note="DSS&A mixed No. 18, daily except Monday: Soo Junction 2.10 a.m. to Sault Ste. Marie (freight yard) 4.30 a.m. (Official Guide, January 1, 1948)."
+mile,station,principal,prov,tz,No19,No18
+0.0,"Sault Ste. Marie Yard, Mich.",1,MI,C,lv 8.30p,ar 4.30a
+12.2,"Brimley, Mich.",0,MI,C,f8.55p,f4.05a
+25.0,"Rexford, Mich.",0,MI,C,f9.25p,f3.30a
+31.8,"Strongs, Mich.",0,MI,C,f9.40p,f3.00a
+35.2,"Eckerman, Mich.",0,MI,C,f9.50p,f2.45a
+40.9,"Hulbert, Mich.",0,MI,C,f10.05p,f2.25a
+46.6,"Soo Junction, Mich.",1,MI,C,ar 10.20p,lv 2.10a
