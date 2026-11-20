@@ -14,11 +14,12 @@ Last updated 17 November 2026 (Version 180).
 - [ ] SOO LINE READY, BUILD HELD (Brendan, 19 Nov 2026: "Hold the build"). 29 tables transcribed from the Official Guide (May 1948, pages 1047 - 1052; scans in the private repo,
   scans/og1948_soo/): on_soo_t001 ... t026a.csv, built by on_build as CP lines labelled Soo Line (tidpfx SOO; SOO_PLACES; Central time). Track: traces/maritimes/soo.geojson
   (tools/mar_import_soo.py from the Mississippi Rails KMZ). The NEXT on_build run builds them (the glob is wired in): ask Brendan before any rebuild. Dry run (ON_DRY='onsoo*') all on
-  track except these straight estimates, waiting for traces or points: Chicago Grand Central Station - Forest Park (9.0 mi; B&OCT), Superior - West Duluth - Duluth Soo Line station
+  track except these straight estimates, waiting for traces or points: Superior - West Duluth - Duluth Soo Line station
   (3.9 mi), Barron - Ridgeland (Table 17), Cameron - Rice Lake (Table 22), Menasha (2.5 km tie, est). Points wanted: Sault Ste. Marie, Mich. Soo station (trace end used), Superior
   (Winter St. and Ogden Ave.; trace end used), Duluth (Superior St. and 6th Ave. W.; estimated point), No. 1 into the Great Northern station at Minneapolis (built to the Milwaukee Road
   station). To check: Table 7 Nos. 8 / 7 daily (Table 9: ex Sat / ex Mon); Table 7 No. 7 Bruce printed 7.35 (left out); Table 6 St. Croix Falls section (left out); Table 13 No. 160
-  sign (# MWF or double dagger); Table 23 La Mars state; Table 10 Nos. 3 / 4 and Table 26 Nos. 109 / 110 are the existing Mountaineer / Winnipeger (connections only).
+  sign (# MWF or double dagger); Table 23 La Mars state; Chicago: Grand Central Station (B&O property) - Forest Park on Brendan's B&O Chicago Terminal trace (19 Nov 2026), own bo,
+  B&O dark blue (#1D3461; dark theme #8AA6DC; Claude's pick of shade), 10.0 mi traced / 10.9 printed; Table 10 Nos. 3 / 4 and Table 26 Nos. 109 / 110 are the existing Mountaineer / Winnipeger (connections only).
 - [ ] Stanbridge union station at the Delamere point (Brendan, 19 Nov 2026; V193 used the wrong point): "Gare Stanbridge Union station", CP St. Guillaume subdivision,
   45.1175797, -73.0338785 (quebec_all.json; the collection lookup missed it under the name "Stanbridge Union"). V193 put the merged CP_STANBRIDGE / CN_STANBRIDGE stop at the
   CV track end (45.11138, -73.02607; on_build.py on_cp_t022s and on_cn_t001v places) with an est CP link (-73.0198692, 45.1161065 -> -73.02607, 45.11138) in
