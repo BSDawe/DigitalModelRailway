@@ -44,8 +44,8 @@ def walk(e, folder):
 walk(ET.fromstring(s.encode('utf-8')), 'Soo Line')
 MP = json.load(open(os.path.join(HERE, 'traces', 'milw', 'mpls_stpaul.geojson')))['features'][0]['geometry']['coordinates']   # Brendan's Milwaukee Road trace: only its St. Paul end,
 _k = min(range(len(MP)), key=lambda i: (MP[i][0] + 93.085361) ** 2 + (MP[i][1] - 44.946914) ** 2)                     # from Union Depot (Brendan's point, 19 Nov 2026) to NP Line A
-feats.append(dict(type='Feature', properties=dict(own='milw', name='St. Paul Union Depot - the NP Line A junction (Brendan\'s Milwaukee Road trace, its end)', constituent='Milwaukee Road', branch='Soo Line',
-              group='brendan', status='ok', cost=1.0, note="Brendan's trace (traces/milw/mpls_stpaul.geojson), from the vertex nearest Union Depot to its end, where NP Line A begins"), geometry=dict(type='LineString', coordinates=MP[_k:])))
+feats.append(dict(type='Feature', properties=dict(own='union', name='St. Paul Union Depot - the NP Line A junction (Brendan\'s Milwaukee Road trace, its end)', constituent='St. Paul Union Depot Co.', branch='Soo Line',
+              group='brendan', status='ok', cost=1.0, note="Brendan's trace (traces/milw/mpls_stpaul.geojson), from the vertex nearest Union Depot to its end, where NP Line A begins; drawn in the union-station colour (St. Paul Union Depot: owned by the railways using it, about 9.24 miles of track; Brendan, 19 Nov 2026)"), geometry=dict(type='LineString', coordinates=MP[_k:])))
 SC = [f for f in json.load(open(os.path.join(HERE, 'traces', 'soo', 'soo_mn_nd.geojson')))['features'] if 'Connector' in f['properties']['name']][0]   # Brendan's Soo Connector (18 Oct 2026)
 feats.append(F('cp', 'Soo Line: Minneapolis, the Soo Connector by the Great Northern station to the Milwaukee Road station (Brendan)', SC['geometry']['coordinates'], "Brendan's trace, 18 Oct 2026 (traces/soo/soo_mn_nd.geojson); used to reach the GN station (Brendan, 19 Nov 2026)", group='brendan'))
 # Junction ties: a branch whose end lies 150 - 600 m from other track (the loader ties ends within 150 m itself) gets a straight tie to the nearest point of that track
@@ -73,8 +73,8 @@ feats.append(dict(type='Feature', properties=dict(own='np', name='Northern Pacif
 feats.append(F('cp', 'Soo Line: Duluth, final approach to the Soo depot (Brendan)', BO['duluth_final_approach'], "Brendan's trace, 19 Nov 2026: the Soo Line depot (shared with the DSS&A and the DM&N) to the NP Grassy Point line", group='brendan'))
 feats.append(F('cp', 'Soo Line: Ridgeland branch, Barron - Ridgeland (Brendan)', BO['ridgeland_branch'], "Brendan's trace, 19 Nov 2026 (Table 17)", group='brendan'))
 feats.append(F('cp', 'Soo Line: Cameron - Rice Lake (Brendan)', BO['rice_lake_branch'], "Brendan's trace, 19 Nov 2026 (Table 22)", group='brendan'))
-feats.append(F('cp', 'Soo Line: Sault Ste. Marie, Mich. (trace end) - the International Bridge - the CP station, Sault Ste. Marie, Ont. (est)', [(-84.3634230, 46.5033144), (-84.3219190, 46.5101980)],
-               'straight estimate (Claude): the Soo trains use the CP station on the Ontario side (Brendan, 19 Nov 2026); no trace of the International Bridge yet', group='link', est=True))
+feats.append(F('cp', 'Soo Line: Sault Ste. Marie, Mich. (trace end) - the International Bridge (the CP Soo branch in the Ontario collection) (est)', [(-84.3634230, 46.5033144), (-84.3616229, 46.5085216)],
+               'straight estimate (Claude): the 0.6 km gap between the Mississippi Rails trace end and the end of the CP "Sault branch" piece of the Ontario collection, which carries the International Bridge (Brendan, 19 Nov 2026)', group='link', est=True))
 for k, nm in (('np_line_a', 'St. Paul Union Depot - Minneapolis, "Line A"'), ('np_line_a_west', '"Line A", the western part (marked abandoned in the KMZ; the Soo route in 1948)')):
     feats.append(dict(type='Feature', properties=dict(own='np', name=f'Northern Pacific: {nm} (Mississippi Rails; Brendan)', constituent='Northern Pacific', branch='Soo Line', group='mississippi_rails',
                   status='ok', cost=1.0, note="Brendan, 19 Nov 2026: the Soo's St. Paul - Minneapolis route (not the Mountaineer's)"), geometry=dict(type='LineString', coordinates=BO[k])))
