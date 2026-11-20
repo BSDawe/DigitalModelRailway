@@ -1,0 +1,27 @@
+# Soo Line, Table 24, Flaxton - Whitetail line (Official Guide, May 1948, page 1052; table dated April 18, 1948; Brendan's image, 19 Nov 2026; scans/og1948_soo/p1052_t024.png, signs p1052_signs.png). CENTRAL TIME. NOT BUILT YET.
+# Mixed Nos. 51 / 52 (sign: mixed train between Flaxton and Whitetail) and Nos. 141 / 140; miles from St. Paul as printed. Days: No. 51 a (Tuesday, Thursday and Saturday), No. 141 v
+# (Monday, Wednesday and Friday); No. 52 v (Mon., Wed., Fri.), No. 140 a (Tue., Thu., Sat.). The columns "3-51", "3-141", "52-4", "140-4": No. 3 (St. Paul 9.35 p.m., Flaxton 1.50 p.m.)
+# and No. 4 (Flaxton 3.44 p.m.), the Portal trains drawn as the Mountaineer's Soo leg: connections. Raymond: auto stage connection to Plentywood. Westby and on are in Montana
+# (the table prints Central time throughout). Flaxton is the Mountaineer line's station.
+#train col=No51 num=51 dir=down days="Tue,Thu,Sat" kind=mixed note="Soo Line mixed No. 51, Tuesday, Thursday and Saturday: Flaxton 2.00 p.m. by Crosby and Westby to Whitetail, Mont., 8.30 p.m. (Table 24, April 18, 1948)."
+#train col=No141 num=141 dir=down days="Mon,Wed,Fri" kind=passenger note="Soo Line No. 141, Monday, Wednesday and Friday: Flaxton 2.00 p.m. by Crosby and Westby to Whitetail, Mont., 6.45 p.m. (Table 24, April 18, 1948)."
+#train col=No52 num=52 dir=up days="Mon,Wed,Fri" kind=mixed note="Soo Line mixed No. 52, Monday, Wednesday and Friday: Whitetail, Mont., 6.30 a.m. to Flaxton 1.00 p.m. (Table 24, April 18, 1948)."
+#train col=No140 num=140 dir=up days="Tue,Thu,Sat" kind=passenger note="Soo Line No. 140, Tuesday, Thursday and Saturday: Whitetail, Mont., 6.45 a.m. to Flaxton 11.30 a.m. (Table 24, April 18, 1948)."
+mile,station,principal,prov,tz,No51,No141,No52,No140
+552.0,"Flaxton, N.D.",1,ND,C,lv 2.00p,lv 2.00p,ar 1.00p,ar 11.30a
+561.9,"Rival, N.D.",0,ND,C,f2.20p,f2.20p,f12.40p,f11.09a
+569.7,"Columbus, N.D.",0,ND,C,2.45p,2.38p,12.20p,10.52a
+581.7,"Kermit, N.D.",0,ND,C,3.15p,3.02p,11.50a,10.27a
+593.1,"Crosby, N.D.",1,ND,C,3.50p,3.25p,11.20a,10.05a
+602.4,"Ambrose, N.D.",1,ND,C,4.20p,3.45p,10.25a,9.42a
+608.8,"Colgan, N.D.",0,ND,C,4.35p,4.00p,10.10a,9.28a
+616.5,"Fortuna, N.D.",0,ND,C,5.00p,4.15p,9.50a,9.11a
+623.0,"Alkabo, N.D.",0,ND,C,5.25p,4.30p,9.20a,8.56a
+631.8,"Westby, Mont.",1,MT,C,6.00p,4.48p,9.00a,8.38a
+635.6,"McElroy, Mont.",0,MT,C,6.15p,4.56p,8.45a,8.31a
+641.7,"Comertown, Mont.",0,MT,C,6.30p,5.09p,8.25a,8.19a
+649.7,"Dooley, Mont.",0,MT,C,6.50p,5.26p,8.05a,8.03a
+658.4,"Raymond, Mont.",1,MT,C,7.10p,5.45p,7.45a,7.45a
+667.9,"Outlook, Mont.",0,MT,C,7.40p,6.05p,7.20a,7.25a
+675.9,"Daleview, Mont.",0,MT,C,f8.00p,f6.21p,f7.00a,f7.09a
+688.0,"Whitetail, Mont.",1,MT,C,ar 8.30p,ar 6.45p,lv 6.30a,lv 6.45a

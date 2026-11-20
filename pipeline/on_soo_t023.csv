@@ -1,0 +1,18 @@
+# Soo Line, Table 23, Fairmount and Grenville line (Official Guide, May 1948, page 1052; table dated September 7, 1947; Brendan's image, 19 Nov 2026; scans/og1948_soo/p1052_t023.png, signs p1052_signs.png). CENTRAL TIME. NOT BUILT YET.
+# Mixed No. 123, sign v (Monday, Wednesday and Friday); No. 122, sign a (Tuesday, Thursday and Saturday); miles from Fairmount as printed. Hammer and Dahlberg: f without times, left out.
+# La Mars is entered as in South Dakota (TO CHECK).
+#train col=No123 num=123 dir=down days="Mon,Wed,Fri" kind=mixed note="Soo Line mixed No. 123, Monday, Wednesday and Friday: Fairmount, N.D., 8.00 a.m. by Veblen to Grenville, S.D., 1.20 p.m. (Table 23, September 7, 1947)."
+#train col=No122 num=122 dir=up days="Tue,Thu,Sat" kind=mixed note="Soo Line mixed No. 122, Tuesday, Thursday and Saturday: Grenville, S.D., 5.50 a.m. by Veblen to Fairmount, N.D., 10.35 a.m. (Table 23, September 7, 1947)."
+mile,station,principal,prov,tz,No123,No122
+0.0,"Fairmount, N.D.",1,ND,C,lv 8.00a,ar 10.35a
+10.6,"La Mars, S.D.",0,SD,C,f8.25a,f10.05a
+18.3,"Rosholt, S.D.",0,SD,C,8.50a,9.50a
+23.3,"Victor, S.D.",0,SD,C,9.10a,9.22a
+27.8,"New Effington, S.D.",0,SD,C,9.25a,9.10a
+36.8,"Claire City, S.D.",0,SD,C,9.55a,8.45a
+45.8,"Veblen, S.D.",1,SD,C,10.45a,8.20a
+55.6,"Hillhead, S.D.",0,SD,C,11.25a,7.35a
+63.6,"Lake City, S.D.",0,SD,C,11.53a,7.10a
+71.4,"Eden, S.D.",0,SD,C,12.21p,6.45a
+81.0,"Roslyn, S.D.",0,SD,C,12.55p,6.12a
+87.2,"Grenville, S.D.",1,SD,C,ar 1.20p,lv 5.50a

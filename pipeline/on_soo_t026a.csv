@@ -1,0 +1,7 @@
+# Soo Line, Table 26 (as on_soo_t026.csv), Egeland - Armourdale (Official Guide, May 1948, page 1052; table dated June 22, 1947; Brendan's image, 19 Nov 2026; scans/og1948_soo/p1052_t026.png, signs p1052_signs.png). CENTRAL TIME. NOT BUILT YET.
+# Mixed Nos. 217 / 218, sign read as the sharp (Tuesday only); miles from St. Paul as printed.
+#train col=No217 num=217 dir=down days="Tue" kind=mixed note="Soo Line mixed No. 217, Tuesday only: Egeland 2.35 p.m. to Armourdale 3.45 p.m. (Table 26, June 22, 1947)."
+#train col=No218 num=218 dir=up days="Tue" kind=mixed note="Soo Line mixed No. 218, Tuesday only: Armourdale 3.50 p.m. to Egeland 5.00 p.m. (Table 26, June 22, 1947)."
+mile,station,principal,prov,tz,No217,No218
+473.4,"Egeland, N.D.",1,ND,C,lv 2.35p,ar 5.00p
+495.1,"Armourdale, N.D.",1,ND,C,ar 3.45p,lv 3.50p

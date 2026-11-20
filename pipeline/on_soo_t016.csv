@@ -1,0 +1,14 @@
+# Soo Line, Table 16, Manitowoc and Neenah (Official Guide, May 1948, page 1052; table dated February 1, 1948; Brendan's image, 19 Nov 2026; scans/og1948_soo/p1052_t016_017.png, signs p1052_signs.png). CENTRAL TIME. NOT BUILT YET.
+# Mixed Nos. 401 / 402, daily (*); miles from Manitowoc as printed. Hilbert Jct. - Menasha by trackage rights (the KMZ: over the Milwaukee Road).
+#train col=No401 num=401 dir=down days=daily kind=mixed note="Soo Line mixed No. 401, daily: Manitowoc 12.30 p.m. by Hilbert Jct. to Menasha 2.45 p.m. and Neenah 3.00 p.m. (Table 16, February 1, 1948)."
+#train col=No402 num=402 dir=up days=daily kind=mixed note="Soo Line mixed No. 402, daily: Neenah 2.35 a.m., Menasha 2.50 a.m., by Hilbert Jct. to Manitowoc 5.40 a.m. (Table 16, February 1, 1948)."
+mile,station,principal,prov,tz,No401,No402
+0.0,"Manitowoc, Wis.",1,WI,C,lv 12.30p,ar 5.40a
+4.5,"Alverno, Wis.",0,WI,C,f12.45p,f5.15a
+11.7,"Valders, Wis.",0,WI,C,1.10p,5.00a
+14.6,"Quarry, Wis.",0,WI,C,f1.20p,f4.17a
+17.1,"Collins, Wis.",0,WI,C,1.30p,f4.12a
+23.0,"Potter, Wis.",0,WI,C,1.45p,f3.52a
+27.0,"Hilbert Junction, Wis.",1,WI,C,2.00p,3.40a
+42.1,"Menasha, Wis.",1,WI,C,2.45p,2.50a
+44.2,"Neenah, Wis.",1,WI,C,ar 3.00p,lv 2.35a

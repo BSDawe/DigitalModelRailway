@@ -1,0 +1,43 @@
+# Soo Line, Table 26, Thief River Falls and Kenmare, N.D. (Official Guide, May 1948, page 1052; table dated June 22, 1947; Brendan's image, 19 Nov 2026; scans/og1948_soo/p1052_t026.png, signs p1052_signs.png). CENTRAL TIME. NOT BUILT YET.
+# Nos. 211 / 212, daily except Sunday (dagger); miles from St. Paul as printed. Columns "109-211" and "212-110": No. 109 (The Winnipeger, St. Paul 8.00 p.m. daily except Saturday,
+# Thief River Falls 4.20 a.m.) and No. 110 (Thief River Falls 11.40 p.m.), already drawn (sk_cp_t091.csv): connections. Thief River Falls is the Winnipeger's station. Egeland - Armourdale
+# mixed: on_soo_t026a.csv.
+#train col=No211 num=211 dir=down days="ex Sun" kind=passenger note="Soo Line No. 211, daily except Sunday: Thief River Falls 6.15 a.m. (from No. 109, St. Paul 8.00 p.m.) by Fordville and Egeland to Kenmare 8.50 p.m. (Table 26, June 22, 1947)."
+#train col=No212 num=212 dir=up days="ex Sun" kind=passenger note="Soo Line No. 212, daily except Sunday: Kenmare 6.05 a.m. by Egeland and Fordville to Thief River Falls 7.50 p.m. (for No. 110 to St. Paul) (Table 26, June 22, 1947)."
+mile,station,principal,prov,tz,No211,No212
+318.8,"Thief River Falls, Minn.",1,MN,C,lv 6.15a,ar 7.50p
+332.4,"Viking, Minn.",0,MN,C,6.47a,7.01p
+342.5,"Radium, Minn.",0,MN,C,7.10a,6.30p
+350.3,"Warren, Minn.",1,MN,C,7.30a,6.05p
+360.5,"Alvarado, Minn.",0,MN,C,7.55a,5.35p
+366.9,"Oslo, Minn.",0,MN,C,8.20a,5.15p
+376.6,"Ardoch, N.D.",1,ND,C,8.48a,4.40p
+382.5,"Forest River, N.D.",0,ND,C,9.01a,4.18p
+392.2,"Conway, N.D.",0,ND,C,9.20a,3.56p
+401.4,"Fordville, N.D.",1,ND,C,10.30a,3.35p
+411.1,"Lankin, N.D.",0,ND,C,10.55a,2.25p
+421.6,"Adams, N.D.",0,ND,C,11.40a,2.00p
+430.3,"Fairdale, N.D.",0,ND,C,12.10p,1.40p
+439.0,"Nekoma, N.D.",0,ND,C,12.35p,1.26p
+447.5,"Loma, N.D.",0,ND,C,1.00p,1.00p
+455.4,"Alsen, N.D.",0,ND,C,1.25p,12.40p
+465.9,"Calio, N.D.",0,ND,C,1.50p,12.13p
+473.4,"Egeland, N.D.",1,ND,C,2.10p,11.55a
+486.4,"Bisbee, N.D.",0,ND,C,3.00p,11.13a
+491.9,"Agate, N.D.",0,ND,C,3.13p,11.00a
+497.5,"Mylo, N.D.",0,ND,C,3.30p,10.48a
+508.2,"Rolette, N.D.",1,ND,C,4.00p,10.23a
+516.3,"Fonda, N.D.",0,ND,C,4.17p,10.03a
+522.3,"Overly, N.D.",0,ND,C,4.50p,9.50a
+531.9,"Omemee, N.D.",0,ND,C,5.15p,9.17a
+538.4,"Gardena, N.D.",0,ND,C,5.30p,9.04a
+547.9,"Kramer, N.D.",0,ND,C,5.52p,8.44a
+556.9,"Russell, N.D.",0,ND,C,6.15p,8.24a
+564.2,"Eckman, N.D.",0,ND,C,6.31p,8.09a
+571.5,"Hurd, N.D.",0,ND,C,f6.47p,f7.52a
+579.0,"Lansford, N.D.",0,ND,C,7.10p,7.37a
+588.5,"Grano, N.D.",0,ND,C,7.25p,7.16a
+595.0,"Greene, N.D.",0,ND,C,7.45p,7.03a
+603.1,"Tolley, N.D.",0,ND,C,8.05p,6.47a
+609.7,"Norma, N.D.",0,ND,C,8.23p,6.30a
+618.4,"Kenmare, N.D.",1,ND,C,ar 8.50p,lv 6.05a

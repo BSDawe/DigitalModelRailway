@@ -1,16 +1,16 @@
 """Soo Line (Minneapolis, St. Paul & Sault Ste. Marie, with the leased Wisconsin Central), 19 Nov 2026 -> traces/maritimes/soo.geojson (read by mar_tracks with the
 other track bank files). Drawn as CP (own cp; Brendan, 19 Nov 2026: "Draw as CP, Soo label", like the Central Vermont and the GTW under CN).
 - Source: Mississippi Rails "Minneapolis St Paul & Saulte St Marie.kmz" (Tony Howe and David Price; Brendan; raw file in the private repo, traces/soo/kmz/doc.kml).
-- Status: east of Minneapolis 'ok'; west of Minneapolis (Minnesota west, the Dakotas, Montana) 'later': the CP Soo lines there (the Winnipeger, the Mountaineer) run in the
-  Saskatchewan step on traces/soo/soo_mn_nd.geojson, cut from the same KMZ. Pieces marked abandoned or old alignment in the KMZ are 'pre1948'; the mine spurs and the
-  modern "new route" pieces in North Dakota are 'later' with the rest of the west.
+- Status: 'ok' throughout (the Soo Line's own tables, Brendan's Official Guide pages of 19 Nov 2026, run in the Ontario step as CP lines labelled Soo Line). The CP Soo lines
+  west of Minneapolis built earlier (the Winnipeger, the Mountaineer) stay in the Saskatchewan step on traces/soo/soo_mn_nd.geojson, cut from the same KMZ. Pieces marked
+  abandoned or old alignment in the KMZ are 'pre1948'; the North Dakota mine spurs, Riverdale and the Garrison Dam relocations (New Town, the Custer and Ironton "new
+  route" pieces) are 'post1948'.
 - Minneapolis (Milwaukee Road station) - St. Paul Union Station: Brendan's Milwaukee Road trace (traces/milw/mpls_stpaul.geojson; own milw), as for the Winnipeger.
 Usage: python3 tools/mar_import_soo.py <doc.kml or .kmz>"""
 import json, os, re, sys, zipfile
 HERE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 src = sys.argv[1]
 s = (zipfile.ZipFile(src).read([n for n in zipfile.ZipFile(src).namelist() if n.endswith('.kml')][0]) if src.endswith('.kmz') else open(src, 'rb').read()).decode('utf-8', 'replace')
-WEST = -93.30                                                     # Minneapolis: pieces lying wholly west of here are the Saskatchewan step's
 feats = []
 def F(own, name, pts, note, status='ok', constituent='Soo Line', group='mississippi_rails', est=False):
     p = dict(own=own, name=name, constituent=constituent, branch='Soo Line', group=group, status=status, cost=1.0, note=note)
@@ -29,7 +29,7 @@ def walk(e, folder):
             pts = [tuple(map(float, x.split(',')[:2])) for q in c.iter(K + 'coordinates') for x in q.text.split()]
             if len(pts) < 2: continue
             if re.search(r'old alignment|abandon', nm + ' ' + desc, re.I): st = 'pre1948'
-            elif max(x for x, y in pts) < WEST: st = 'later'
+            elif re.search(r'Falkirk|Coal Creek|Riverdale|new route|Newtown', nm): st = 'post1948'
             else: st = 'ok'
             feats.append(F('cp', f'{folder}: {nm}', pts, 'Mississippi Rails (Tony Howe and David Price), KMZ supplied by Brendan' + (f'; KMZ note: {desc[:160]}' if desc else ''), st, folder))
 walk(ET.fromstring(s.encode('utf-8')), 'Soo Line')
@@ -51,6 +51,7 @@ for i, (nm, c) in enumerate(ok):
 for e, q, a, b, d in ties:
     feats.append(F('cp', f'Soo Line: tie, {a.split(": ")[-1]} - {b.split(": ")[-1]}', [e, q], f'tie (Claude): the piece ends {d * 1000:.0f} m from the other line', group='link'))
     print(f'  tie {d * 1000:.0f} m: {a} -> {b}')
+feats.append(F('cp', 'Soo Line: Menasha, the Hilbert line - the Neenah - Stevens Point line (est)', [(-88.4496961, 44.2061175), (-88.4675550, 44.1878177)], 'straight estimate (Claude): the Hilbert - Menasha piece (trackage rights) ends 2.5 km from the main line at Menasha; Table 16 runs Hilbert Jct. - Menasha - Neenah', group='link', est=True))
 json.dump(dict(type='FeatureCollection', features=feats), open(os.path.join(HERE, 'traces', 'maritimes', 'soo.geojson'), 'w'))
 from collections import Counter
 print(len(feats), 'pieces', Counter(f['properties']['status'] for f in feats))

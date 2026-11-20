@@ -1,0 +1,6 @@
+# Soo Line, Table 12 (as on_soo_t012.csv): the Lawler - East Lake mixed, Nos. 189 / 188, Tuesday, Thursday and Saturday (black dot). CENTRAL TIME. NOT BUILT YET.
+#train col=No189 num=189 dir=down days="Tue,Thu,Sat" kind=mixed note="Soo Line mixed No. 189, Tuesday, Thursday and Saturday: Lawler 6.20 p.m. to East Lake 6.35 p.m. (Table 12, January 5, 1947)."
+#train col=No188 num=188 dir=up days="Tue,Thu,Sat" kind=mixed note="Soo Line mixed No. 188, Tuesday, Thursday and Saturday: East Lake 6.45 p.m. to Lawler 7.00 p.m. (Table 12, January 5, 1947)."
+mile,station,principal,prov,tz,No189,No188
+72.7,"Lawler, Minn.",1,MN,C,lv 6.20p,ar 7.00p
+77.9,"East Lake, Minn.",1,MN,C,ar 6.35p,lv 6.45p

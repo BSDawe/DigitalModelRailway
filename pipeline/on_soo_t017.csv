@@ -1,0 +1,9 @@
+# Soo Line, Table 17, Ridgeland line (Official Guide, May 1948, page 1052; table dated January 5, 1947; Brendan's image, 19 Nov 2026; scans/og1948_soo/p1052_t016_017.png, signs p1052_signs.png). CENTRAL TIME. NOT BUILT YET.
+# Mixed Nos. 71 / 70, daily except Sunday (dagger); miles from Barron as printed. No Barron - Ridgeland line in the Mississippi Rails KMZ (a trace wanted).
+#train col=No71 num=71 dir=down days="ex Sun" kind=mixed note="Soo Line mixed No. 71, daily except Sunday: Barron 11.45 a.m. to Ridgeland 12.45 p.m. (Table 17, January 5, 1947)."
+#train col=No70 num=70 dir=up days="ex Sun" kind=mixed note="Soo Line mixed No. 70, daily except Sunday: Ridgeland 1.45 p.m. to Barron 2.40 p.m. (Table 17, January 5, 1947)."
+mile,station,principal,prov,tz,No71,No70
+0.0,"Barron, Wis.",1,WI,C,lv 11.45a,ar 2.40p
+7.2,"Hillsdale, Wis.",0,WI,C,12.05p,2.20p
+12.2,"Dallas, Wis.",0,WI,C,12.25p,2.05p
+18.7,"Ridgeland, Wis.",1,WI,C,ar 12.45p,lv 1.45p

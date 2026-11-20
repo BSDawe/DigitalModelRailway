@@ -1,0 +1,42 @@
+# Soo Line, Table 12, Duluth and Superior, via Moose Lake and Plummer, to Winnipeg, Manitoba (Official Guide, May 1948, page 1051; table dated January 5, 1947; Brendan's image,
+# 19 Nov 2026; scans/og1948_soo/p1051_t012.png). CENTRAL TIME. NOT BUILT YET. Nos. 65 / 64 Duluth - Superior - Moose Lake - Lawler - Cass Lake - Bemidji - Plummer - Thief River Falls,
+# daily except Sunday (dagger); miles from Duluth as printed. Remer: meals (double bar). Beyond Thief River Falls the table prints Nos. 109 / 110 (The Winnipeger, Thief River Falls -
+# Noyes - Emerson - Winnipeg, already drawn: sk_cp_t091.csv): a connection (No. 65 arrives 5.00 p.m., No. 109 leaves 4.40 a.m.). Plummer and Thief River Falls are the Winnipeger's
+# stations (CP_PLUMMER, CP_THIEF_RIVER_FALLS); Blackhoof and Nemadji are in Minnesota (entered so). Lawler - East Lake mixed: on_soo_t012e.csv.
+#train col=No65 num=65 dir=down days="ex Sun" kind=passenger note="Soo Line No. 65, daily except Sunday: Duluth 8.30 a.m., Superior 8.55 a.m., Moose Lake, Bemidji 2.27 - 2.34 p.m., to Thief River Falls 5.00 p.m. (Table 12, January 5, 1947)."
+#train col=No64 num=64 dir=up days="ex Sun" kind=passenger note="Soo Line No. 64, daily except Sunday: Thief River Falls 7.55 a.m., Bemidji 10.13 - 10.20 a.m., Moose Lake, Superior 3.55 p.m., to Duluth 4.20 p.m. (Table 12, January 5, 1947)."
+mile,station,principal,prov,tz,No65,No64
+0.0,"Duluth, Minn.",1,MN,C,lv 8.30a,ar 4.20p
+7.2,"Superior, Wis.",1,WI,C,8.55a,3.55p
+20.0,"Borea, Wis.",0,WI,C,f9.19a,f3.30p
+27.8,"Frogner, Wis.",0,WI,C,f9.30a,f3.17p
+35.6,"Blackhoof, Minn.",0,MN,C,f9.41a,f3.04p
+43.1,"Nemadji, Minn.",0,MN,C,f9.52a,f2.53p
+51.9,"Moose Lake, Minn.",1,MN,C,ar 10.05a / lv 10.10a,2.31p
+58.3,"Kettle River, Minn.",0,MN,C,10.21a,2.21p
+65.3,"Automba, Minn.",0,MN,C,10.35a,2.09p
+72.7,"Lawler, Minn.",1,MN,C,10.48a,1.56p
+80.8,"McGregor, Minn.",0,MN,C,11.00a,1.39p
+92.3,"Palisade, Minn.",0,MN,C,11.23a,1.19p
+99.7,"Bain, Minn.",0,MN,C,11.37a,1.05p
+107.7,"Swatara, Minn.",0,MN,C,11.52a,12.50p
+113.4,"Shovel Lake, Minn.",0,MN,C,12.02p,12.40p
+123.9,"Remer, Minn.",1,MN,C,12.42p,12.22p
+131.1,"Tobique, Minn.",0,MN,C,12.55p,11.55a
+136.6,"Boy River, Minn.",0,MN,C,1.04p,11.44a
+143.1,"Federal Dam, Minn.",0,MN,C,1.22p,11.32a
+150.1,"Portage Lake, Minn.",0,MN,C,f1.34p,f11.12a
+155.2,"Schley, Minn.",0,MN,C,f1.43p,f11.03a
+166.0,"Cass Lake, Minn.",1,MN,C,2.01p,10.45a
+181.3,"Bemidji, Minn.",1,MN,C,ar 2.27p / lv 2.34p,ar 10.13a / lv 10.20a
+189.0,"Scribner, Minn.",0,MN,C,f2.47p,f9.59a
+196.0,"Pinewood, Minn.",0,MN,C,2.59p,9.46a
+203.9,"Leonard, Minn.",0,MN,C,3.12p,9.32a
+211.7,"Clearbrook, Minn.",0,MN,C,3.25p,9.18a
+216.6,"Gonvick, Minn.",0,MN,C,3.35p,9.09a
+222.3,"Gully, Minn.",0,MN,C,3.45p,8.59a
+226.0,"Trail, Minn.",0,MN,C,3.53p,8.53a
+234.4,"Oklee, Minn.",0,MN,C,4.08p,8.38a
+244.5,"Plummer, Minn.",1,MN,C,4.30p,8.17a
+252.5,"Hazel, Minn.",0,MN,C,4.45p,8.06a
+260.2,"Thief River Falls, Minn.",1,MN,C,ar 5.00p,lv 7.55a

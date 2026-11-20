@@ -1,0 +1,8 @@
+# Soo Line, Table 20, Abbotsford - Athens (Official Guide, May 1948, page 1052; table dated February 1, 1948; Brendan's image, 19 Nov 2026; scans/og1948_soo/p1052_t018_020.png, signs p1052_signs.png). CENTRAL TIME. NOT BUILT YET.
+# Mixed Nos. 132 / 131, sign a (Tuesday, Thursday and Saturday); miles from Abbotsford as printed. Table 19 (Marshfield - Wisconsin Rapids - Port Edwards - Nekoosa): freight service only.
+#train col=No132 num=132 dir=down days="Tue,Thu,Sat" kind=mixed note="Soo Line mixed No. 132, Tuesday, Thursday and Saturday: Abbotsford 2.00 p.m. to Athens 2.45 p.m. (Table 20, February 1, 1948)."
+#train col=No131 num=131 dir=up days="Tue,Thu,Sat" kind=mixed note="Soo Line mixed No. 131, Tuesday, Thursday and Saturday: Athens 3.00 p.m. to Abbotsford 4.00 p.m. (Table 20, February 1, 1948)."
+mile,station,principal,prov,tz,No132,No131
+0.0,"Abbotsford, Wis.",1,WI,C,lv 2.00p,ar 4.00p
+8.2,"Milan, Wis.",0,WI,C,2.20p,3.30p
+15.2,"Athens, Wis.",1,WI,C,ar 2.45p,lv 3.00p

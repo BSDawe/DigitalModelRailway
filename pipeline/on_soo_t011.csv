@@ -1,0 +1,13 @@
+# Soo Line, Table 11, Wishek - Pollock line (Official Guide, May 1948, page 1051; table dated September 7, 1947; Brendan's image, 19 Nov 2026; scans/og1948_soo/p1051_t011.png).
+# CENTRAL TIME. NOT BUILT YET. Mixed Nos. 281 / 280, daily except Sunday (dagger); miles from Wishek as printed.
+#train col=No281 num=281 dir=down days="ex Sun" kind=mixed note="Soo Line mixed No. 281, daily except Sunday: Wishek 2.05 p.m. to Pollock, S.D., 5.40 p.m. (Table 11, September 7, 1947)."
+#train col=No280 num=280 dir=up days="ex Sun" kind=mixed note="Soo Line mixed No. 280, daily except Sunday: Pollock, S.D., 8.30 a.m. to Wishek 11.30 a.m. (Table 11, September 7, 1947)."
+mile,station,principal,prov,tz,No281,No280
+0.0,"Wishek, N.D.",1,ND,C,lv 2.05p,ar 11.30a
+10.5,"Danzig, N.D.",0,ND,C,2.30p,11.00a
+19.4,"Ashley, N.D.",1,ND,C,3.20p,10.40a
+28.2,"Venturia, N.D.",0,ND,C,3.50p,10.15a
+37.9,"Madra, S.D.",0,SD,C,4.20p,9.50a
+43.8,"Artas, S.D.",0,SD,C,4.35p,9.30a
+57.1,"Herreid, S.D.",0,SD,C,5.10p,9.00a
+69.7,"Pollock, S.D.",1,SD,C,ar 5.40p,lv 8.30a

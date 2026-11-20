@@ -1,0 +1,6 @@
+# Soo Line, Table 10 (as on_soo_t010.csv): Nos. 275 / 274 Prairie Jct. - Plaza, daily except Sunday (dagger); miles from Drake as printed. CENTRAL TIME. NOT BUILT YET.
+#train col=No275 num=275 dir=down days="ex Sun" kind=passenger note="Soo Line No. 275, daily except Sunday: Prairie Jct. 2.35 p.m. to Plaza 2.45 p.m. (Table 10, September 7, 1947)."
+#train col=No274 num=274 dir=up days="ex Sun" kind=passenger note="Soo Line No. 274, daily except Sunday: Plaza 2.50 p.m. to Prairie Jct. 3.00 p.m. (Table 10, September 7, 1947)."
+mile,station,principal,prov,tz,No275,No274
+79.8,"Prairie Junction, N.D.",1,ND,C,lv 2.35p,ar 3.00p
+83.6,"Plaza, N.D.",1,ND,C,ar 2.45p,lv 2.50p

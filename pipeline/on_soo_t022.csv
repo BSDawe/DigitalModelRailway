@@ -1,0 +1,9 @@
+# Soo Line, Table 22, Cameron and Rice Lake (Official Guide, May 1948, page 1052; table dated January 5, 1947; Brendan's image, 19 Nov 2026; scans/og1948_soo/p1052_t021_022.png, signs p1052_signs.png). CENTRAL TIME. NOT BUILT YET.
+# Nos. 72 / 73 and mixed Nos. 170 / 171 (black square), all daily except Sunday (dagger); miles from Cameron as printed. No Cameron - Rice Lake line in the Mississippi Rails KMZ.
+#train col=No170 num=170 dir=down days="ex Sun" kind=mixed note="Soo Line mixed No. 170, daily except Sunday: Cameron 8.45 a.m. to Rice Lake 9.05 a.m. (Table 22, January 5, 1947)."
+#train col=No72 num=72 dir=down days="ex Sun" kind=passenger note="Soo Line No. 72, daily except Sunday: Cameron 5.51 p.m. to Rice Lake 6.13 p.m. (Table 22, January 5, 1947)."
+#train col=No171 num=171 dir=up days="ex Sun" kind=mixed note="Soo Line mixed No. 171, daily except Sunday: Rice Lake 10.05 a.m. to Cameron 10.25 a.m. (Table 22, January 5, 1947)."
+#train col=No73 num=73 dir=up days="ex Sun" kind=passenger note="Soo Line No. 73, daily except Sunday: Rice Lake 6.20 p.m. to Cameron 6.39 p.m. (Table 22, January 5, 1947)."
+mile,station,principal,prov,tz,No170,No72,No171,No73
+0.0,"Cameron, Wis.",1,WI,C,lv 8.45a,lv 5.51p,ar 10.25a,ar 6.39p
+6.7,"Rice Lake, Wis.",1,WI,C,ar 9.05a,ar 6.13p,lv 10.05a,lv 6.20p

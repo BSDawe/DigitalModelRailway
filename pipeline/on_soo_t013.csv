@@ -1,0 +1,31 @@
+# Soo Line, Table 13, Duluth and Superior to Brooten and Glenwood (Official Guide, May 1948, page 1051; table dated April 1947; Brendan's image, 19 Nov 2026; scans/og1948_soo/p1051_t013.png).
+# CENTRAL TIME. NOT BUILT YET. Mixed Nos. 161 / 160 Superior (21st St.) - Moose Lake - Onamia - Brooten - Glenwood; miles from Duluth as printed. No. 161: black dot (Tuesday, Thursday and
+# Saturday); No. 160 at Glenwood: the sign read as # (Monday, Wednesday and Friday; the print is small: TO CHECK, it could be the double dagger, daily except Saturday). The table's No. 65 column
+# (Duluth - Moose Lake) is Table 12's No. 65 (on_soo_t012.csv). Glenwood is the Winnipeger's station (CP_GLENWOOD_SKCP091).
+#train col=No161 num=161 dir=down days="Tue,Thu,Sat" kind=mixed note="Soo Line mixed No. 161, Tuesday, Thursday and Saturday: Superior (21st St.) 7.00 a.m., Moose Lake 8.15 a.m., Onamia 9.45 a.m., Brooten 12.15 p.m., Glenwood 12.40 p.m. (Table 13, April 1947)."
+#train col=No160 num=160 dir=up days="Mon,Wed,Fri" kind=mixed note="Soo Line mixed No. 160, Monday, Wednesday and Friday (sign read as #): Glenwood 11.00 a.m., Brooten 11.25 a.m., Onamia 2.01 p.m., Moose Lake 3.40 p.m., Superior (21st St.) 4.50 p.m. (Table 13, April 1947)."
+mile,station,principal,prov,tz,No161,No160
+9.0,"Superior (21st St.), Wis.",1,WI,C,lv 7.00a,ar 4.50p
+20.0,"Borea, Wis.",0,WI,C,f7.18a,f4.33p
+27.8,"Frogner, Wis.",0,WI,C,f7.32a,f4.20p
+35.6,"Blackhoof, Minn.",0,MN,C,f7.46a,f4.07p
+43.1,"Nemadji, Minn.",0,MN,C,f7.59a,f3.55p
+51.9,"Moose Lake, Minn.",1,MN,C,8.15a,3.40p
+63.9,"Denham, Minn.",0,MN,C,8.38a,3.06p
+71.3,"Arthyde, Minn.",0,MN,C,f8.50a,f2.55p
+75.1,"Solana, Minn.",0,MN,C,f8.56a,f2.49p
+83.0,"McGrath, Minn.",0,MN,C,9.09a,2.36p
+90.5,"Redtop, Minn.",0,MN,C,f9.21a,f2.24p
+95.0,"Isle, Minn.",0,MN,C,9.29a,2.17p
+97.9,"Wahkon, Minn.",0,MN,C,f9.34a,f2.12p
+105.6,"Onamia, Minn.",1,MN,C,9.45a,2.01p
+117.3,"Hillman, Minn.",0,MN,C,f10.07a,1.38p
+129.0,"Genola, Minn.",0,MN,C,10.30a,1.15p
+146.2,"Bowlus, Minn.",0,MN,C,10.59a,12.46p
+153.4,"Holdingford, Minn.",0,MN,C,11.12a,12.32p
+161.7,"Albany, Minn.",0,MN,C,11.25a,12.18p
+170.9,"New Munich, Minn.",0,MN,C,11.40a,12.01p
+176.6,"Greenwald, Minn.",0,MN,C,11.49a,11.49a
+181.6,"Elrosa, Minn.",0,MN,C,11.57a,11.40a
+192.1,"Brooten, Minn.",1,MN,C,12.15p,11.25a
+208.0,"Glenwood, Minn.",1,MN,C,ar 12.40p,lv 11.00a

@@ -1,0 +1,37 @@
+# Soo Line, Table 10, St. Paul - Minneapolis to Bismarck and points on the Missouri River Division (Official Guide, May 1948, page 1051; table dated September 7, 1947; Brendan's image, 19 Nov 2026; scans/og1948_soo/p1051_t010.png, signs p1051_signs.png). CENTRAL TIME. NOT BUILT YET.
+# Nos. 251 / 250 Hankinson - Oakes - Wishek - Bismarck, daily except Sunday (dagger); miles from St. Paul as printed. Wishek: meals (double bar). They meet No. 3 (St. Paul 9.35 p.m.,
+# Minneapolis 10.25 p.m., daily except Saturday; Hankinson 4.05 a.m.) and No. 4 (Hankinson 12.55 a.m., daily except Monday; Minneapolis 6.30, St. Paul 7.15 a.m.) at Hankinson: the
+# Twin Cities - Portal trains, already drawn as the Mountaineer's Soo leg (sk_cp_t108s.csv); the "3-251" / "250-4" columns are connections. The Drake lines: on_soo_t010d.csv,
+# on_soo_t010m.csv, on_soo_t010p.csv. Hankinson is the station of the Mountaineer line (CP_HANKINSON).
+#train col=No251 num=251 dir=down days="ex Sun" kind=passenger note="Soo Line No. 251, daily except Sunday: Hankinson 5.45 a.m. (from No. 3, St. Paul 9.35 p.m.) by Oakes and Wishek to Bismarck 6.20 p.m. (Table 10, September 7, 1947)."
+#train col=No250 num=250 dir=up days="ex Sun" kind=passenger note="Soo Line No. 250, daily except Sunday: Bismarck 8.00 a.m. by Wishek and Oakes to Hankinson 7.20 p.m. (for No. 4 to Minneapolis and St. Paul) (Table 10, September 7, 1947)."
+mile,station,principal,prov,tz,No251,No250
+217.1,"Hankinson, N.D.",1,ND,C,lv 5.45a,ar 7.20p
+224.3,"Stiles, N.D.",0,ND,C,f6.10a,f6.52p
+229.3,"Lidgerwood, N.D.",1,ND,C,6.25a,6.36p
+235.5,"Geneseo, N.D.",0,ND,C,6.41a,f6.20p
+240.7,"Ransom, N.D.",0,ND,C,f6.52a,f6.08p
+246.5,"Perry, N.D.",0,ND,C,f7.05a,f5.54p
+252.9,"Forman, N.D.",0,ND,C,7.20a,5.39p
+259.9,"Cogswell, N.D.",0,ND,C,7.40a,5.18p
+264.0,"Nicholson, N.D.",0,ND,C,f7.50a,f5.08p
+270.1,"Hample, N.D.",0,ND,C,f8.02a,f4.55p
+275.4,"Oakes, N.D.",1,ND,C,8.40a,4.42p
+283.3,"Clement, N.D.",0,ND,C,f9.05a,f3.50p
+292.2,"Fullerton, N.D.",0,ND,C,9.32a,3.31p
+300.1,"Monango Crossing, N.D.",0,ND,C,9.54a,3.11p
+309.0,"Merricourt, N.D.",0,ND,C,10.30a,2.51p
+321.7,"Kulm, N.D.",0,ND,C,11.30a,2.21p
+328.8,"Fredonia, N.D.",0,ND,C,11.57a,1.56p
+334.6,"Guyson, N.D.",0,ND,C,f12.12p,f1.41p
+342.1,"Lehr, N.D.",0,ND,C,12.35p,1.25p
+352.5,"Wishek, N.D.",1,ND,C,ar 1.00p / lv 2.00p,ar 12.05p / lv 1.00p
+362.5,"Burnstad, N.D.",0,ND,C,2.30p,11.40a
+368.2,"Peters, N.D.",0,ND,C,f2.50p,f11.20a
+373.8,"Napoleon, N.D.",0,ND,C,3.25p,11.00a
+382.8,"Kintyre, N.D.",0,ND,C,3.55p,10.10a
+390.7,"Braddock, N.D.",0,ND,C,4.20p,9.50a
+404.0,"Moffit, N.D.",0,ND,C,5.00p,9.11a
+410.0,"Brittin, N.D.",0,ND,C,f5.15p,f8.56a
+420.2,"Stewartdale, N.D.",0,ND,C,f5.40p,f8.31a
+431.6,"Bismarck, N.D.",1,ND,C,ar 6.20p,lv 8.00a

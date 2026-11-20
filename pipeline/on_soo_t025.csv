@@ -1,0 +1,25 @@
+# Soo Line, Table 25, Fordville to Drake (Official Guide, May 1948, page 1052; table dated December 1, 1945; Brendan's image, 19 Nov 2026; scans/og1948_soo/p1052_t025.png, signs p1052_signs.png). CENTRAL TIME. NOT BUILT YET.
+# Mixed Nos. 215 / 216, daily except Sunday (dagger); miles from Fordville as printed. Fordville is on Table 26 (on_soo_t026.csv); Drake the Mountaineer line's station.
+#train col=No215 num=215 dir=down days="ex Sun" kind=mixed note="Soo Line mixed No. 215, daily except Sunday: Fordville 10.30 a.m., Devils Lake 1.00 - 1.45 p.m., to Drake 5.30 p.m. (Table 25, December 1, 1945)."
+#train col=No216 num=216 dir=up days="ex Sun" kind=mixed note="Soo Line mixed No. 216, daily except Sunday: Drake 7.00 a.m., Devils Lake 10.55 - 11.45 a.m., to Fordville 2.05 p.m. (Table 25, December 1, 1945)."
+mile,station,principal,prov,tz,No215,No216
+0.0,"Fordville, N.D.",1,ND,C,lv 10.30a,ar 2.05p
+8.8,"Dahlen, N.D.",0,ND,C,11.05a,1.45p
+17.5,"Whitman, N.D.",0,ND,C,11.28a,1.20p
+22.4,"Pelto, N.D.",0,ND,C,f11.41a,f1.00p
+37.7,"Southam, N.D.",0,ND,C,12.25p,12.25p
+42.9,"Rohrville, N.D.",0,ND,C,12.35p,12.10p
+47.0,"Essex, N.D.",0,ND,C,f12.45p,f11.57a
+52.3,"Devils Lake, N.D.",1,ND,C,ar 1.00p / lv 1.45p,ar 10.55a / lv 11.45a
+58.0,"Darby, N.D.",0,ND,C,f2.00p,f10.42a
+63.6,"Ramsey, N.D.",0,ND,C,f2.20p,f10.20a
+71.0,"Tilden, N.D.",0,ND,C,f2.40p,f10.04a
+78.0,"Comstock, N.D.",0,ND,C,f3.00p,f9.50a
+83.7,"Harlow, N.D.",0,ND,C,3.20p,9.30a
+89.7,"Baker, N.D.",0,ND,C,3.39p,9.10a
+97.0,"Fillmore, N.D.",0,ND,C,3.59p,8.50a
+102.5,"Silva, N.D.",0,ND,C,4.15p,8.30a
+108.1,"Balta, N.D.",0,ND,C,4.31p,8.10a
+116.0,"Orrin, N.D.",0,ND,C,4.55p,7.45a
+124.1,"Funston, N.D.",0,ND,C,f5.10p,f7.20a
+131.9,"Drake, N.D.",1,ND,C,ar 5.30p,lv 7.00a

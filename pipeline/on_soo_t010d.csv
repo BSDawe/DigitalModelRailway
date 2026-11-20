@@ -1,0 +1,22 @@
+# Soo Line, Table 10 (as on_soo_t010.csv): Nos. 259 / 258 Drake - Max - Prairie Jct. - Sanish, daily except Sunday (dagger); miles from Drake as printed. CENTRAL TIME. NOT BUILT YET.
+# Columns "3-259-260" / "259-271" and "270-258" / "257-258-4" ("via Drake"): No. 3 reaches Drake 10.20 a.m. and No. 4 leaves 7.00 p.m. (the Portal trains, drawn as the Mountaineer's
+# Soo leg); at Max No. 271 goes on to Bismarck and No. 270 comes in from Bismarck (on_soo_t010m.csv); Prairie Jct. - Plaza Nos. 275 / 274 (on_soo_t010p.csv). Drake is the
+# Mountaineer line's station (CP_DRAKE_SKJCP13).
+#train col=No259 num=259 dir=down days="ex Sun" kind=passenger note="Soo Line No. 259, daily except Sunday: Drake 11.40 a.m., Max 1.05 - 1.20 p.m., Prairie Jct. 2.35 - 3.00 p.m., Sanish 4.40 p.m. (Table 10, September 7, 1947)."
+#train col=No258 num=258 dir=up days="ex Sun" kind=passenger note="Soo Line No. 258, daily except Sunday: Sanish 5.30 a.m., Prairie Jct. 7.00 a.m., Max 8.25 - 8.55 a.m., Drake 10.20 a.m. (Table 10, September 7, 1947)."
+mile,station,principal,prov,tz,No259,No258
+0.0,"Drake, N.D.",1,ND,C,lv 11.40a,ar 10.20a
+8.4,"Kief, N.D.",0,ND,C,11.55a,10.05a
+16.9,"Butte, N.D.",0,ND,C,12.10p,9.50a
+23.3,"Kongsberg, N.D.",0,ND,C,12.20p,9.39a
+30.2,"Ruso, N.D.",0,ND,C,12.33p,9.27a
+37.9,"Benedict, N.D.",0,ND,C,12.49p,9.11a
+48.3,"Max, N.D.",1,ND,C,ar 1.05p / lv 1.20p,ar 8.25a / lv 8.55a
+59.4,"Douglas, N.D.",0,ND,C,1.50p,7.55a
+68.3,"Ryder, N.D.",0,ND,C,2.10p,7.30a
+75.1,"Makoti, N.D.",0,ND,C,2.25p,7.10a
+79.8,"Prairie Junction, N.D.",1,ND,C,ar 2.35p / lv 3.00p,ar 7.00a / lv 7.00a
+83.1,"Wabek, N.D.",0,ND,C,3.10p,6.50a
+92.0,"Parshall, N.D.",0,ND,C,3.40p,6.25a
+102.6,"Van Hook, N.D.",0,ND,C,4.10p,5.55a
+112.1,"Sanish, N.D.",1,ND,C,ar 4.40p,lv 5.30a

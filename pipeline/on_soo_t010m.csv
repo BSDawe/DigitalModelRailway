@@ -1,0 +1,17 @@
+# Soo Line, Table 10 (as on_soo_t010.csv): Nos. 271 / 270 Max - Garrison - Underwood - Washburn - Wilton - Bismarck, daily except Sunday (dagger). CENTRAL TIME. NOT BUILT YET.
+# The table prints miles from Max (0, 14.5, 26.7, 30.3, 34.0, 40.8, 46.9, 53.9, 64.2, 73.7, 81.1, 91.7): entered here plus 48.3 (Max from Drake), so the Max rows agree with on_soo_t010d.csv.
+#train col=No271 num=271 dir=down days="ex Sun" kind=passenger note="Soo Line No. 271, daily except Sunday: Max 1.25 p.m. (from No. 259, Drake 11.40 a.m.) to Bismarck 4.20 p.m. (Table 10, September 7, 1947)."
+#train col=No270 num=270 dir=up days="ex Sun" kind=passenger note="Soo Line No. 270, daily except Sunday: Bismarck 5.45 a.m. to Max 8.35 a.m. (for No. 258 to Drake) (Table 10, September 7, 1947)."
+mile,station,principal,prov,tz,No271,No270
+48.3,"Max, N.D.",1,ND,C,lv 1.25p,ar 8.35a
+62.8,"Garrison, N.D.",1,ND,C,1.55p,8.10a
+75.0,"Coleharbor, N.D.",0,ND,C,2.13p,7.48a
+78.6,"Riverdale Junction, N.D.",0,ND,C,2.21p,7.40a
+82.3,"Underwood, N.D.",0,ND,C,2.29p,7.32a
+89.1,"Falkirk, N.D.",0,ND,C,2.41p,7.19a
+95.2,"Washburn, N.D.",1,ND,C,2.53p,7.07a
+102.2,"Merida, N.D.",0,ND,C,f3.06p,f6.53a
+112.5,"Wilton, N.D.",1,ND,C,3.25p,6.35a
+122.0,"Baldwin, N.D.",0,ND,C,3.43p,f6.17a
+129.4,"Arnold, N.D.",0,ND,C,f3.56p,f6.04a
+140.0,"Bismarck, N.D.",1,ND,C,ar 4.20p,lv 5.45a

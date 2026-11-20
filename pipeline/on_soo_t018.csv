@@ -1,0 +1,9 @@
+# Soo Line, Table 18, Rapid River line (Official Guide, May 1948, page 1052; table dated January 12, 1947; Brendan's image, 19 Nov 2026; scans/og1948_soo/p1052_t018_020.png, signs p1052_signs.png). CENTRAL TIME. NOT BUILT YET.
+# Mixed Nos. 80 / 81, sign a (Tuesday, Thursday and Saturday); miles from Gladstone as printed.
+#train col=No80 num=80 dir=down days="Tue,Thu,Sat" kind=mixed note="Soo Line mixed No. 80, Tuesday, Thursday and Saturday: Gladstone 7.50 a.m. to Eben Junction 10.15 a.m. (Table 18, January 12, 1947)."
+#train col=No81 num=81 dir=up days="Tue,Thu,Sat" kind=mixed note="Soo Line mixed No. 81, Tuesday, Thursday and Saturday: Eben Junction 11.00 a.m. to Gladstone 1.45 p.m. (Table 18, January 12, 1947)."
+mile,station,principal,prov,tz,No80,No81
+0.0,"Gladstone, Mich.",1,MI,C,lv 7.50a,ar 1.45p
+6.1,"Rapid River, Mich.",1,MI,C,8.15a,1.10p
+25.3,"Trenary, Mich.",0,MI,C,9.15a,12.01p
+36.9,"Eben Junction, Mich.",1,MI,C,ar 10.15a,lv 11.00a
