@@ -465,6 +465,17 @@
    "inputs": [
     "water_east.json"
    ]
+  },
+  {
+   "name": "atc_build",
+   "script": "atc_build.py",
+   "needs": [
+    "gtwf_build",
+    "dcn_build"
+   ],
+   "inputs": [
+    "water_east.json"
+   ]
   }
  ]
 }
