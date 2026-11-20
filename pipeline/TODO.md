@@ -14,7 +14,8 @@ Last updated 17 November 2026 (Version 180).
 - [ ] SOO LINE READY, BUILD HELD (Brendan, 19 Nov 2026: "Hold the build"). 29 tables transcribed from the Official Guide (May 1948, pages 1047 - 1052; scans in the private repo,
   scans/og1948_soo/): on_soo_t001 ... t026a.csv, built by on_build as CP lines labelled Soo Line (tidpfx SOO; SOO_PLACES; Central time). Track: traces/maritimes/soo.geojson
   (tools/mar_import_soo.py from the Mississippi Rails KMZ). The NEXT on_build run builds them (the glob is wired in): ask Brendan before any rebuild. Dry run (ON_DRY='onsoo*') all on
-  track except these straight estimates, waiting for traces or points: Menasha (2.5 km tie, est). Ridgeland and Rice Lake branches: Brendan's traces (19.0 / 18.7 and 7.2 / 6.7 mi traced / printed). Superior - Duluth: Brendan's Soo connection, NP Grassy Point bridge and Duluth final-approach
+  track (no straight estimates left). Menasha: Table 16 runs Hilbert Jct. - Menasha - Neenah over the Milwaukee Road by trackage rights (Brendan, 19 Nov
+  2026; MILW pieces own milw, Menasha at the MILW station point). Ridgeland and Rice Lake branches: Brendan's traces (19.0 / 18.7 and 7.2 / 6.7 mi traced / printed). Superior - Duluth: Brendan's Soo connection, NP Grassy Point bridge and Duluth final-approach
   traces; Superior and Duluth stations at his points (19 Nov 2026). Points wanted: Sault Ste. Marie, Mich. Soo station (trace end used); No. 1 into the Great Northern station at Minneapolis (built to the Milwaukee Road
   station). To check: Table 7 Nos. 8 / 7 daily (Table 9: ex Sat / ex Mon); Table 7 No. 7 Bruce printed 7.35 (left out); Table 6 St. Croix Falls section (left out); Table 13 No. 160
   sign (# MWF or double dagger); Table 23 La Mars state; Chicago: Grand Central Station (B&O property) - Forest Park on Brendan's B&O Chicago Terminal trace (19 Nov 2026), own bo,

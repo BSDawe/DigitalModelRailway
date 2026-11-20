@@ -34,6 +34,7 @@ def walk(e, folder):
             if re.search(r'old alignment|abandon', nm + ' ' + desc, re.I): st = 'pre1948'
             elif re.search(r'Falkirk|Coal Creek|Riverdale|new route|Newtown', nm): st = 'post1948'
             else: st = 'ok'
+            if nm.startswith('Hilbert WI to Menasha'): feats.append(F('milw', f'Milwaukee Road: {nm} (Soo trackage rights)', pts, 'Mississippi Rails; Milwaukee Road track, the Soo by trackage rights (KMZ note; Brendan, 19 Nov 2026)', st, 'Milwaukee Road')); continue
             feats.append(F('cp', f'{folder}: {nm}', pts, 'Mississippi Rails (Tony Howe and David Price), KMZ supplied by Brendan' + (f'; KMZ note: {desc[:160]}' if desc else ''), st, folder))
 walk(ET.fromstring(s.encode('utf-8')), 'Soo Line')
 M = json.load(open(os.path.join(HERE, 'traces', 'milw', 'mpls_stpaul.geojson')))['features'][0]
@@ -64,7 +65,8 @@ feats.append(dict(type='Feature', properties=dict(own='np', name='Northern Pacif
 feats.append(F('cp', 'Soo Line: Duluth, final approach to the Soo depot (Brendan)', BO['duluth_final_approach'], "Brendan's trace, 19 Nov 2026: the Soo Line depot (shared with the DSS&A and the DM&N) to the NP Grassy Point line", group='brendan'))
 feats.append(F('cp', 'Soo Line: Ridgeland branch, Barron - Ridgeland (Brendan)', BO['ridgeland_branch'], "Brendan's trace, 19 Nov 2026 (Table 17)", group='brendan'))
 feats.append(F('cp', 'Soo Line: Cameron - Rice Lake (Brendan)', BO['rice_lake_branch'], "Brendan's trace, 19 Nov 2026 (Table 22)", group='brendan'))
-feats.append(F('cp', 'Soo Line: Menasha, the Hilbert line - the Neenah - Stevens Point line (est)', [(-88.4496961, 44.2061175), (-88.4675550, 44.1878177)], 'straight estimate (Claude): the Hilbert - Menasha piece (trackage rights) ends 2.5 km from the main line at Menasha; Table 16 runs Hilbert Jct. - Menasha - Neenah', group='link', est=True))
+feats.append(dict(type='Feature', properties=dict(own='milw', name='Milwaukee Road: Menasha - Neenah (Mississippi Rails; Brendan)', constituent='Milwaukee Road', branch='Soo Line', group='mississippi_rails',
+              status='ok', cost=1.0, note="Brendan, 19 Nov 2026: Menasha station is reached by trackage rights over the MILW (Table 16, Hilbert Jct. - Menasha - Neenah)"), geometry=dict(type='LineString', coordinates=BO['milw_menasha_neenah'])))
 json.dump(dict(type='FeatureCollection', features=feats), open(os.path.join(HERE, 'traces', 'maritimes', 'soo.geojson'), 'w'))
 from collections import Counter
 print(len(feats), 'pieces', Counter(f['properties']['status'] for f in feats))
