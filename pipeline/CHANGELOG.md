@@ -2931,3 +2931,16 @@ A review of the whole project (Brendan: "have a peek through ... suggest improve
   7.45 p.m.), so the trains pass the stations between without calls; the miles beyond Springfield are the traced miles (136.2 and 222.9), not printed. Springfield is now a call on the
   way. The Ambassador's New York section still ends at Springfield (Grand Central needs the New Haven to Woodlawn and the NYC Harlem line, not in the file).
 - Counts: 653 lines, 4314 trips, 7557 stops; check_gtfs 0 problems.
+
+## Version 198
+- The Duluth, South Shore & Atlantic and its Mineral Range R.R. (a CP subsidiary: drawn as CP, labelled Duluth, South Shore & Atlantic; trip ids DSSA; Brendan, 20 Nov 2026), from
+  the Official Guide, May 1948 (tables dated January 1, 1948; Brendan's images; private repo scans/og1948_dssa/): on_dssa_t001.csv Mackinaw City - St. Ignace - Trout Lake - Soo
+  Junction - Marquette - Champion - Nestoria - Houghton - Calumet (Nos. 1 / 2 daily except Sunday; Nos. 9 / 10 Champion - Calumet daily, the DSS&A part of the Copper Country
+  Limited with the Milwaukee Road at Champion); on_dssa_t001d.csv Marquette - Nestoria - Ewen - Ashland - Iron River - Superior - Duluth (No. 7 through Sunday - Friday, Saturdays
+  Marquette - Champion only; No. 8 from Duluth Sunday - Friday, Sundays Champion - Marquette only, as printed); on_dssa_t019.csv the Sault Ste. Marie (freight yard) - Soo Junction
+  mixed. CP Table 74's transcription (on_dssa_t074*) kept, superseded.
+- Track: Mississippi Rails DSS&A KMZ (tools/mar_import_dssa.py -> traces/maritimes/dssa.geojson). The DSS&A's own Marengo Jct. - Superior line abandoned in 1934 (Brendan): the trains
+  run by trackage rights over the Soo Line into Ashland and the Northern Pacific by Iron River to Superior (Brendan's NP trace and his approach to the Soo Line station; a 2.2 km
+  dashed gap between them). The Straits of Mackinac: the Mackinac Transportation Co.'s car ferry Chief Wawatam, a dashed straight line between Brendan's dock points; his lead from
+  the St. Ignace dock. Ashland, Superior and Duluth are the Soo Line stations; Trout Lake one station at the DSS&A / Soo crossing (the Soo's Trout Lake moved about 300 m).
+- Counts: 656 lines, 4324 trips, 7599 stops; check_gtfs 0 problems.

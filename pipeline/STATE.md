@@ -1,7 +1,7 @@
 # The Digital Model Railway — project state
 
 Read this first. It is meant to be enough to start a short, single-task chat without replaying the project's history.
-Last updated 19 November 2026 (Version 197). This file is the current state and the standing rules; the version-by-version history is in CHANGELOG.md.
+Last updated 20 November 2026 (Version 198). This file is the current state and the standing rules; the version-by-version history is in CHANGELOG.md.
 
 ## What this is
 
@@ -291,7 +291,7 @@ lat, mile, lmile?, principal, gid, note, xy?, slow?}], dirLabels, segments [{own
 - **Views set the clock**: choosing a view sets its time zone (`VIEW_TZ` in the page); local time is not the default otherwise. (V176)
 - **State and province tags** (", Vt.", ", Mich." ...) stay in the data and the feed but are not shown on the page (shortName in the template; Brendan, 18 Nov 2026). Michigan station ids carry _MICH (on_lines.register).
 - **Springfield, Mass.**: every railway's trains call at Springfield Union Station (42.106238, -72.593270), on the New York Central (Boston & Albany) line: NYC (B&A), B&M (and the Central Vermont trains it hosts) and the New Haven. North - south through trains reverse there (Brendan, 18 Nov 2026).
-- **The Soo Line** is drawn as CP with its own label, Soo Line (like the Central Vermont and the GTW under CN; Brendan, 19 Nov 2026); its trains use the CP station at Sault Ste. Marie, Ont. The **B&O** is dark blue (#1D3461; Grand Central Station, Chicago, is B&O property). Short union / terminal railways (union depots, the C&WI) share one union-station colour, own 'union' (warm grey #8C8279; Brendan, 19 Nov 2026); a railway running through (the Milwaukee Road at St. Paul) keeps its own. Other railways' columns in a table (through-ticket arrangements) are not entered.
+- **The Soo Line** and the **Duluth, South Shore & Atlantic** (CP subsidiaries) are drawn as CP with their own labels, Soo Line (like the Central Vermont and the GTW under CN; Brendan, 19 Nov 2026); its trains use the CP station at Sault Ste. Marie, Ont. The **B&O** is dark blue (#1D3461; Grand Central Station, Chicago, is B&O property). Short union / terminal railways (union depots, the C&WI) share one union-station colour, own 'union' (warm grey #8C8279; Brendan, 19 Nov 2026); a railway running through (the Milwaukee Road at St. Paul) keeps its own. Other railways' columns in a table (through-ticket arrangements) are not entered.
 - **U.S. traces are from Mississippi Rails** (Tony Howe and David Price) unless Brendan says otherwise (17 Nov 2026); credit them so.
 - **Transcriptions** by another model follow `TIMETABLE_READING.md` (copy, don't interpret; check mode against an existing file).
 - Scratch files and logs go in the session scratchpad, never in the repository.
@@ -328,6 +328,7 @@ After an accepted build: `cp viz_data.json tools/.baseline_viz.json`.
 
 ## Recent versions (one line each; the detail is in CHANGELOG.md)
 
+- 198: the Duluth, South Shore & Atlantic and Mineral Range (Official Guide; drawn as CP, labelled DSS&A); Mackinac Straits car ferry; NP Ashland - Superior.
 - 197: the Washingtonian and the Montrealer through to New York (Penn Station) and Washington over the New Haven, Hell Gate and the Pennsylvania (Brendan's NEC2 track).
 - 196: Soo trains over the International Bridge (Ontario collection); union-station colour (St. Paul Union Depot, the C&WI).
 - 195: Barre & Chelsea from the Official Guide (train numbers, all stations, printed miles).
