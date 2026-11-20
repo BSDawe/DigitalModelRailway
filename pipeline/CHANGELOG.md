@@ -2944,3 +2944,11 @@ A review of the whole project (Brendan: "have a peek through ... suggest improve
   dashed gap between them). The Straits of Mackinac: the Mackinac Transportation Co.'s car ferry Chief Wawatam, a dashed straight line between Brendan's dock points; his lead from
   the St. Ignace dock. Ashland, Superior and Duluth are the Soo Line stations; Trout Lake one station at the DSS&A / Soo crossing (the Soo's Trout Lake moved about 300 m).
 - Counts: 656 lines, 4324 trips, 7599 stops; check_gtfs 0 problems.
+
+## Version 199
+- The Straits of Mackinac car ferry (Mackinaw City dock - St. Ignace dock, the Mackinac Transportation Co.) is drawn as a train ferry (own water, like Mulgrave - Point Tupper; Brendan,
+  20 Nov 2026), unnamed; the DSS&A miles from St. Ignace are entered plus 5.9 (the dock-to-dock course on the map; none printed).
+- Arnold Transit Company, St. Ignace (Dock No. 1, Brendan's point) - Mackinac Island (the Arnold Dock, the D.&C. port): three round trips daily (St. Ignace 10.15 a.m., 1.45 p.m.,
+  5.40 p.m.; Mackinac Island 7.55 a.m., 12.30 p.m., 4.30 p.m.; Eastern time; daily, Brendan), 30-minute crossings (Claude's estimate). New step atc_build.py (after gtwf_build and
+  dcn_build), livery atc (brown #7A5C2E, Claude's pick). Mackinaw City - Mackinac Island and the Les Cheneaux route print no times: not entered.
+- Counts: 658 lines, 4330 trips, 7600 stops, 64 agencies; check_gtfs 0 problems.
