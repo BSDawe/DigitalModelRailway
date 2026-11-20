@@ -30,6 +30,11 @@ def walk(e, folder):
             elif re.search(r'1952', desc): st = 'post1948'
             elif folder == 'Mineral Range R.R.' and (nm == 'Untitled Path' or re.search(r'Mine|spur|Mill|Tamarack|Mohawk|original', nm, re.I)): st = 'later'
             else: st = 'ok'
+            if nm.startswith('Allouez MN to Nestoria'):   # abandoned west of Marengo Jct. in 1934 (Brendan, 20 Nov 2026): the trains use the Soo to Ashland and the NP on to Superior
+                k = min(range(len(pts)), key=lambda i: (pts[i][0] + 90.8179367) ** 2 + (pts[i][1] - 46.4339916) ** 2)
+                feats.append(F(f'{folder}: Allouez - Marengo Jct. (abandoned 1934)', pts[:k + 1], 'Mississippi Rails; the DSS&A abandoned its own line between Marengo Junction and Superior in 1934 and ran by trackage rights over the Soo Line and the Northern Pacific by Ashland and Iron River (Brendan, 20 Nov 2026)', 'pre1948', folder))
+                feats.append(F(f'{folder}: Marengo Jct. - Nestoria', pts[k:], 'Mississippi Rails, KMZ supplied by Brendan', st, folder))
+                continue
             feats.append(F(f'{folder}: {nm}', pts, 'Mississippi Rails (Tony Howe and David Price), KMZ supplied by Brendan' + (f'; KMZ note: {desc[:160]}' if desc else ''), st, folder))
 walk(ET.fromstring(s), 'Duluth, South Shore & Atlantic')
 def km(a, b): return math.hypot((a[0] - b[0]) * 111.32 * math.cos(math.radians(a[1])), (a[1] - b[1]) * 110.57)
