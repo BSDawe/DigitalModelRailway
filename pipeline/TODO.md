@@ -13,6 +13,8 @@ Last updated 17 November 2026 (Version 180).
 ## Fixes queued (Brendan: "don't fix yet"; ask before the next rebuild whether to include them)
 - [ ] Out-and-back joins (left for now, Brendan 11 Nov 2026: could be one train movement): Spl Kenora - Winnipeg - Kenora (skcp005e) and mixed M332
   Eyre - Acadia Valley - Eyre (skcn229b) are linked to their own return trips by the older group-key chaining in real_ends.py.
+- [ ] Arnold Transit ship names (Brendan, 20 Nov 2026: "take the ship names of the arnold fleet"; queued, not built): the Les Cheneaux trips carry "M.S. Ottawa (1958)"
+  from the 1958 brochure; the St. Ignace and Mackinaw City boats are unnamed (atc_build.py). Settle with Brendan when the queue is built.
 
 ## CP Maritimes (started 10 Nov 2026)
 - [ ] DAR readings (V154): No. 33 (Windsor - Kentville, from No. 4) and No. 4 (Truro - Windsor) have no sign: entered daily except Sunday. No. 3 (34-3) entered Saturday only like No. 34. Boat days at Evangeline Wharf: No. 98 Tue., Thu., Sat. (the Boston boat in); No. 95 Tue., Thu. (the boat out; no No. 95 on Sundays); No. 99 leaving Halifax Mon., Wed., Fri. (Brendan: to the wharf on boat days only). Wharf times estimated.
