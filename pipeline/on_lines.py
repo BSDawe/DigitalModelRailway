@@ -363,6 +363,7 @@ SHARED = {('onr', 'toronto union'): 'TORONTO_UNION', ('oncn', 'toronto union'): 
           ('onthb', 'toronto union'): 'TORONTO_UNION', ('oncpthb', 'toronto union'): 'TORONTO_UNION', ('onthb', 'toronto'): 'TORONTO_UNION', ('oncpthb', 'toronto'): 'TORONTO_UNION',
           ('onthb', 'welland'): 'NYC_WELLAND', ('onthb', 'fort erie'): 'NYC_FORT_ERIE', ('onthb', 'international boundary'): 'NYC_INTERNATIONAL_BOUNDARY_NIAGARA_RIVER_TO_BLACK_ROCK_N_Y',   # TH&B trains at the NYC (Michigan Central) stations: one stop each (Brendan, 4 Nov 2026: two Wellands on top of each other)
           ('onthb', 'sunnyside'): 'CP_SUNNYSIDE', ('onthb', 'hamilton'): 'THB_HAMILTON', ('oncpthb', 'hamilton'): 'THB_HAMILTON', ('oncp', 'hamilton'): 'THB_HAMILTON',   # Hunter Street: CP and TH&B trains
+          ('oncp', 'minneapolis milwaukee road'): 'CP_MINNEAPOLIS', ('oncp', 'minneapolis'): 'CP_MINNEAPOLIS',   # the Soo Line trains at the Milwaukee Road station, the Winnipeger's stop (19 Nov 2026)
           ('onthb', 'waterford'): 'NYC_WATERFORD',   # the NYC station (Brendan)
           ('oncp', 'st thomas'): 'NYC_ST_THOMAS', ('onlps', 'n y c depot'): 'NYC_ST_THOMAS',   # CP trains used the NYC (Michigan Central) station at St. Thomas (Brendan); the L&PS N.Y.C. Depot
           ('ongrr', 'galt'): 'GALT_MAIN_STREET', ('onlen', 'galt'): 'GALT_MAIN_STREET',   # one Main Street station for the GRR and the L&N (KMZ; Brendan)
@@ -386,6 +387,6 @@ def register(files):
             m = _map().get((OWN[rail], c))
             full = canon(re.sub(r'[()]', ' ', n))                         # the whole name: Ottawa (Bank Street) is not Ottawa (Union Station)
             ab_lines.EXT_GID[(rail, n)] = m[2] if m else ('CN' if rail == 'oncpcn' else ab_lines.RAILS[rail]['pfx']) + '_' + re.sub(r'\W+', '_', full.upper()).strip('_')
-            if not m and re.search(r',\s*mich\.?$', n.lower()): ab_lines.EXT_GID[(rail, n)] += '_MICH'   # Grand Trunk Western stations (18 Nov 2026): canon drops ', Mich.', so Richmond, Mich. would take CN_RICHMOND (Que.)
+            if not m and re.search(r',\s*(mich|wis|minn)\.?$', n.lower()): ab_lines.EXT_GID[(rail, n)] += '_' + re.search(r',\s*(mich|wis|minn)\.?$', n.lower()).group(1).upper()   # Grand Trunk Western stations (18 Nov 2026): canon drops ', Mich.', so Richmond, Mich. would take CN_RICHMOND (Que.)
     for (rail, n) in list(ab_lines.EXT_GID):
         if rail == 'onr' and n in ONR_ON_CN and ('oncn', n) in ab_lines.EXT_GID: ab_lines.EXT_GID[(rail, n)] = ab_lines.EXT_GID[('oncn', n)]   # one stop at each CN station

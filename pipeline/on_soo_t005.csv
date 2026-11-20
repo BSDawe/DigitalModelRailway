@@ -1,0 +1,28 @@
+# Soo Line, Table 5, Chicago, Milwaukee and Ashland, Wis. (Official Guide, May 1948, page 1049; February 1, 1948; Brendan's image, 19 Nov 2026; scans/og1948_soo/p1049_t005.png).
+# CENTRAL TIME. NOT BUILT YET. Spencer - Abbotsford - Medford - Chelsea - Prentice - Park Falls - Mellen - Ashland; miles from Spencer as printed.
+# No. 117 leaves Spencer 3.05 a.m., from No. 17 (Chicago 5.50 p.m.; Milwaukee 8.00 p.m. by the Kenosha Motor Coach Lines to Waukesha); No. 118 reaches Spencer 10.45 p.m. for
+# No. 18 (Chicago 7.45 a.m.; Milwaukee 6.00 a.m.). Both daily (*). Chelsea - Rib Lake mixed: on_soo_t005r.csv; Mellen - Hurley - Ironwood - Bessemer mixed: on_soo_t005b.csv.
+#train col=No117 num=117 dir=down days=daily kind=passenger note="Soo Line No. 117, daily: Spencer 3.05 a.m. (connection from No. 17, Chicago 5.50 p.m.) to Ashland 8.15 a.m. (Table 5, February 1, 1948)."
+#train col=No118 num=118 dir=up days=daily kind=passenger note="Soo Line No. 118, daily: Ashland 6.00 p.m. to Spencer 10.45 p.m. (connection with No. 18 for Chicago, 7.45 a.m.) (Table 5, February 1, 1948)."
+mile,station,principal,prov,tz,No117,No118
+0.0,"Spencer, Wis.",1,WI,C,lv 3.05a,ar 10.45p
+6.8,"Unity, Wis.",0,WI,C,3.17a,10.31p
+10.7,"Colby, Wis.",0,WI,C,3.25a,10.22p
+13.2,"Abbotsford, Wis.",1,WI,C,3.33a,10.14p
+17.2,"Dorchester, Wis.",0,WI,C,3.42a,10.06p
+22.3,"Stetsonville, Wis.",0,WI,C,3.51a,9.56p
+27.0,"Medford, Wis.",0,WI,C,4.06a,9.39p
+38.2,"Chelsea, Wis.",1,WI,C,4.29a,9.20p
+42.5,"Westboro, Wis.",0,WI,C,4.38a,9.10p
+48.8,"Ogema, Wis.",0,WI,C,4.50a,8.59p
+55.8,"Prentice, Wis.",1,WI,C,5.15a,8.42p
+68.3,"Phillips, Wis.",0,WI,C,5.42a,8.17p
+81.9,"Fifield, Wis.",0,WI,C,6.05a,7.56p
+86.4,"Park Falls, Wis.",0,WI,C,6.17a,7.49p
+92.2,"Butternut, Wis.",0,WI,C,6.29a,7.34p
+102.2,"Glidden, Wis.",0,WI,C,6.44a,7.18p
+108.7,"Morse, Wis.",0,WI,C,6.58a,7.07p
+120.4,"Mellen, Wis.",1,WI,C,ar 7.25a / lv 7.25a,ar 6.45p / lv 6.45p
+127.7,"High Bridge, Wis.",0,WI,C,7.42a,6.29p
+132.8,"Marengo, Wis.",1,WI,C,7.51a,6.20p
+145.8,"Ashland, Wis.",1,WI,C,ar 8.15a,lv 6.00p

@@ -1,0 +1,15 @@
+# Soo Line, Table 5 (as on_soo_t005.csv): the Mellen - Hurley - Ironwood - Bessemer mixed, Nos. 352 / 351, daily except Sunday (dagger). Miles from Spencer as printed.
+# CENTRAL TIME. NOT BUILT YET.
+#train col=No352 num=352 dir=down days="ex Sun" kind=mixed note="Soo Line mixed No. 352, daily except Sunday: Mellen 8.00 a.m. to Hurley 9.35 a.m., Ironwood 9.50 a.m. and Bessemer, Mich., 10.25 a.m. (Table 5, February 1, 1948)."
+#train col=No351 num=351 dir=up days="ex Sun" kind=mixed note="Soo Line mixed No. 351, daily except Sunday: Bessemer, Mich., 10.45 a.m. to Mellen 12.45 p.m. (Table 5, February 1, 1948)."
+mile,station,principal,prov,tz,No352,No351
+120.4,"Mellen, Wis.",1,WI,C,lv 8.00a,ar 12.45p
+124.5,"Ballou, Wis.",0,WI,C,f8.12a,f12.33p
+127.2,"Tyler Forks, Wis.",0,WI,C,f8.20a,f12.22p
+130.9,"Rouse, Wis.",0,WI,C,f8.31a,f12.13p
+133.9,"Upson, Wis.",0,WI,C,8.42a,12.05p
+138.6,"Iron Belt, Wis.",0,WI,C,9.00a,11.50a
+140.3,"Hoyt, Wis.",0,WI,C,f9.10a,f11.40a
+146.5,"Hurley, Wis.",1,WI,C,9.35a,11.20a
+147.4,"Ironwood, Mich.",1,MI,C,9.50a,11.15a
+153.7,"Bessemer, Mich.",1,MI,C,ar 10.25a,lv 10.45a

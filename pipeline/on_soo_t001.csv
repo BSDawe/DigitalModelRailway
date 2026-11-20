@@ -1,0 +1,91 @@
+# Soo Line (Minneapolis, St. Paul & Sault Ste. Marie), Table 1, Chicago - St. Paul - Minneapolis (Official Guide, May 1948, page 1047; table dated February 1, 1948; Brendan's image,
+# 19 Nov 2026; scans in the private repo, scans/og1948_soo/p1047_t001.png, key p1047_key.png). CENTRAL TIME (standard). Miles as printed from Chicago. NOT BUILT YET (Brendan sending
+# more Soo pages). Chicago - Owen here; Owen - Superior - Duluth (Nos. 17 / 18) in on_soo_t001d.csv.
+# Through trains: No. 17 Chicago - Owen - Duluth, its Twin Cities section No. 5 from Owen (column "17-5"); No. 18 Duluth - Owen - Chicago, joined at Owen by No. 6 from Minneapolis
+# (column "6-18", the same times as No. 18 south of Owen; its x stops are No. 18's). Nos. 1 / 2 Chicago - Minneapolis. All daily (*).
+# Depots: Chicago Grand Central Station (South Wells and Harrison); St. Paul Union Station; Minneapolis Milwaukee Road station (3d and Washington Avenues South), but No. 1
+# "p Arrives G.N. Ry. Station in Minneapolis"; Duluth Soo Line station, Superior Street and 6th Avenue West; Superior Soo Line station, Winter Street and Ogden Avenue (key, p1048).
+# Signs entered as flag stops (f): f stops on flag; x (No. 18) stops to let off passengers from Duluth, Superior and beyond and north of Owen / Spencer; : (Wheeling) stops on flag
+# for or from Spencer and beyond; o (No. 6, North St. Paul) stops on flag for Milwaukee, Chicago and beyond. Entered as stops: a (Lake Villa, No. 17: handles passengers when
+# stopping at the coal shed); c (Prairie View, Silver Lake, No. 2: flag stop Sunday, regular week-days); y (Silver Lake, No. 17: stops to leave passengers from Chicago, May 30 -
+# Sept. 3: July). Left out (no time printed): Orchard Place f on Nos. 1 and 2; b d / h / l / box signs without times (Mukwonago, Slinger, Silver Lake, Lake Beulah).
+# Left out: Menasha (z: see Table 16, connection by auto-bus); the Kenosha Motor Coach Lines Milwaukee - Waukesha connection (Milwaukee 8.00 p.m. - Waukesha 8.33 p.m.;
+# Waukesha 6.52 p.m. / 5.27 a.m. - Milwaukee 7.24 p.m. / 6.00 a.m.); Eau Claire (freight service only; bus from Chippewa Falls).
+# Marshfield (page 1049): No. 17 leaves *2.20 a.m., as on page 1047; Owen 3.40 a.m. leaving (page 1049).
+#train col=No17 num=17 dir=down days=daily kind=passenger note="Soo Line No. 17, daily: Chicago (Grand Central Station) 5.50 p.m. to Owen 3.19 - 3.40 a.m., on to Superior 7.33 a.m. and Duluth 8.10 a.m. (on_soo_t001d.csv); No. 5 carries its Twin Cities passengers on from Owen (Table 1, February 1, 1948)."
+#train col=No1 num=1 dir=down days=daily kind=passenger note="Soo Line No. 1, daily: Chicago (Grand Central Station) 1.15 a.m. to Minneapolis 4.55 p.m. (arrives at the Great Northern station in Minneapolis) (Table 1, February 1, 1948)."
+#train col=No5 num=5 dir=down days=daily kind=passenger note="Soo Line No. 5, daily: the Twin Cities section of No. 17, Owen 3.45 a.m. to St. Paul 7.25 a.m. and Minneapolis 8.05 a.m. (Table 1, February 1, 1948)."
+#train col=No2 num=2 dir=up days=daily kind=passenger note="Soo Line No. 2, daily: Minneapolis 7.35 a.m. to Chicago (Grand Central Station) 9.50 p.m. (Table 1, February 1, 1948)."
+#train col=No6 num=6 dir=up days=daily kind=passenger note="Soo Line No. 6, daily: Minneapolis 5.55 p.m. to Owen 10.10 p.m., where it joins No. 18 (Duluth - Chicago) (Table 1, February 1, 1948)."
+#train col=No18 num=18 dir=up days=daily kind=passenger note="Soo Line No. 18, daily: Duluth 6.00 p.m. (on_soo_t001d.csv), Owen 10.30 p.m., joined there by No. 6 from Minneapolis, to Chicago (Grand Central Station) 7.45 a.m. (Table 1, February 1, 1948)."
+mile,station,principal,prov,tz,No17,No1,No5,No2,No6,No18
+0.0,"Chicago (Grand Central Station), Ill.",1,IL,C,lv 5.50p,lv 1.15a,,ar 9.50p,,ar 7.45a
+10.9,"Forest Park, Ill.",0,IL,C,6.16p,1.47a,,9.16p,,7.06a
+17.0,"Schiller Park, Ill.",0,IL,C,6.28p,1.59a,,9.03p,,6.55a
+22.8,"Des Plaines, Ill.",0,IL,C,,f2.09a,,f8.54p,,f6.45a
+29.9,"Wheeling, Ill.",0,IL,C,f6.47p,2.18a,,8.46p,,f6.36a
+34.4,"Prairie View, Ill.",0,IL,C,,2.31a,,8.39p,,f6.29a
+40.0,"Mundelein, Ill.",0,IL,C,,2.42a,,8.27p,,f6.22a
+45.5,"Gray's Lake, Ill.",0,IL,C,,2.53a,,8.16p,,f6.16a
+51.0,"Lake Villa, Ill.",0,IL,C,7.18p,3.09a,,8.06p,,6.09a
+55.3,"Antioch, Ill.",0,IL,C,7.26p,3.20a,,7.50p,,5.56a
+58.3,"Trevor, Wis.",0,WI,C,,f3.26a,,f7.44p,,f5.50a
+61.1,"Silver Lake, Wis.",0,WI,C,f7.36p,f3.30a,,7.36p,,
+72.7,"Burlington, Wis.",1,WI,C,7.58p,3.56a,,7.19p,,5.33a
+77.7,"Honey Creek, Wis.",0,WI,C,,4.05a,,,,f5.24a
+80.6,"Midway, Wis.",0,WI,C,,,,,,f5.21a
+86.2,"Mukwonago, Wis.",0,WI,C,,4.23a,,6.56p,,
+97.7,"Waukesha, Wis.",1,WI,C,ar 8.32p / lv 8.50p,ar 4.39a / lv 4.50a,,ar 6.28p / lv 6.39p,,ar 4.44a / lv 4.59a
+106.6,"Sussex, Wis.",0,WI,C,,f5.06a,,f6.15p,,f4.33a
+110.8,"Colgate, Wis.",0,WI,C,,f5.13a,,f6.09p,,f4.28a
+117.7,"Rugby Junction, Wis.",0,WI,C,,,,,,f4.21a
+122.6,"Slinger, Wis.",1,WI,C,,5.31a,,5.51p,,
+129.5,"Allenton, Wis.",0,WI,C,,5.42a,,5.43p,,f4.07a
+134.3,"Marsh, Wis.",0,WI,C,,,,5.36p,,f4.02a
+138.3,"Theresa, Wis.",0,WI,C,,f5.54a,,5.31p,,f3.58a
+142.8,"Lomira, Wis.",0,WI,C,,6.02a,,5.24p,,f3.53a
+147.1,"Byron, Wis.",0,WI,C,,f6.09a,,,,f3.47a
+156.1,"Fond du Lac, Wis.",1,WI,C,10.16p,6.35a,,4.57p,,3.23a
+164.0,"Van Dyne, Wis.",0,WI,C,,,,,,f2.50a
+174.3,"Oshkosh, Wis.",1,WI,C,11.08p,7.30a,,4.10p,,2.33a
+178.3,"Winnebago, Wis.",0,WI,C,,f7.39a,,f3.57p,,f2.22a
+186.4,"Neenah, Wis.",1,WI,C,11.39p,7.59a,,3.45p,,2.10a
+199.4,"Dale, Wis.",0,WI,C,,8.21a,,3.22p,,f1.45a
+207.3,"Fremont, Wis.",0,WI,C,,8.33a,,3.11p,,f1.36a
+213.4,"Weyauwega, Wis.",0,WI,C,,8.47a,,3.01p,,f1.27a
+220.8,"Waupaca, Wis.",1,WI,C,12.31a,9.01a,,2.49p,,1.18a
+227.4,"Sheridan, Wis.",0,WI,C,,9.13a,,f2.36p,,f1.06a
+233.6,"Amherst, Wis.",0,WI,C,,9.24a,,2.28p,,f12.58a
+235.3,"Amherst Junction, Wis.",1,WI,C,,9.29a,,2.24p,,f12.56a
+241.6,"Custer, Wis.",0,WI,C,,9.40a,,2.15p,,f12.48a
+243.8,"Stockton, Wis.",0,WI,C,,f9.46a,,f2.12p,,f12.45a
+249.2,"Stevens Point, Wis.",1,WI,C,ar 1.15a / lv 1.25a,ar 9.55a / lv 10.15a,,ar 1.50p / lv 2.05p,,ar 12.22a / lv 12.37a
+260.2,"Junction City, Wis.",1,WI,C,1.45a,10.32a,,1.33p,,12.03a
+264.6,"Milladore, Wis.",0,WI,C,,10.40a,,1.28p,,
+267.7,"Sherry, Wis.",0,WI,C,,f10.45a,,f1.23p,,
+272.5,"Auburndale, Wis.",0,WI,C,,10.52a,,1.16p,,
+277.1,"Hewitt, Wis.",0,WI,C,,f10.59a,,f1.09p,,
+281.1,"Marshfield, Wis.",1,WI,C,2.20a,11.10a,,1.03p,,11.38p
+289.8,"Spencer, Wis.",1,WI,C,ar 2.31a / lv 2.55a,ar 11.22a / lv 11.35a,,ar 12.40p / lv 12.47p,,ar 10.55p / lv 11.17p
+297.0,"Riplinger, Wis.",0,WI,C,,f11.45a,,12.31p,,
+308.6,"Owen, Wis.",1,WI,C,ar 3.19a / lv 3.40a,ar 12.01p / lv 12.08p,lv 3.45a,ar 12.08p / lv 12.15p,ar 10.10p,lv 10.30p
+310.5,"Withee, Wis.",0,WI,C,,12.13p,,12.05p,,
+320.5,"Thorpe, Wis.",0,WI,C,,12.25p,f4.01a,11.53a,9.53p,
+327.2,"Stanley, Wis.",1,WI,C,,12.35p,4.10a,11.43a,9.42p,
+332.6,"Boyd, Wis.",0,WI,C,,12.44p,,11.33a,,
+338.7,"Cadott, Wis.",0,WI,C,,12.55p,,11.25a,,
+350.7,"Chippewa Falls, Wis.",1,WI,C,,1.12p,4.50a,11.10a,9.08p,
+362.1,"Albertville, Wis.",0,WI,C,,f1.35p,,f10.45a,,
+369.0,"Colfax, Wis.",0,WI,C,,1.45p,5.25a,10.36a,8.33p,
+379.4,"Wheeler, Wis.",0,WI,C,,1.58p,,10.21a,,
+386.2,"Boyceville, Wis.",0,WI,C,,2.08p,f5.47a,10.12a,f8.10p,
+391.1,"Glenwood-Downing, Wis.",0,WI,C,,2.16p,5.54a,10.04a,8.03p,
+399.3,"Emerald Station, Wis.",0,WI,C,,2.28p,,9.53a,,
+404.4,"Cylon, Wis.",0,WI,C,,2.36p,,9.46a,,
+408.3,"Jewett, Wis.",0,WI,C,,f2.42p,,f9.40a,,
+413.5,"New Richmond, Wis.",1,WI,C,,2.53p,6.27a,9.34a,7.35p,
+421.2,"Somerset, Wis.",0,WI,C,,3.04p,,9.21a,,
+440.2,"North St. Paul, Minn.",0,MN,C,,3.38p,,8.52a,f6.54p,
+443.0,"Gloster, Minn.",0,MN,C,,f3.43p,,f8.46a,,
+448.7,"St. Paul",1,MN,C,,4.00p,7.25a,8.30a,6.35p,
+459.6,"Minneapolis (Milwaukee Road Station)",1,MN,C,,ar 4.55p,ar 8.05a,lv 7.35a,lv 5.55p,

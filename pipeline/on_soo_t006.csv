@@ -1,0 +1,28 @@
+# Soo Line, Table 6, Twin Cities to Duluth and Superior (Official Guide, May 1948, page 1049; table dated May 18, 1947; Brendan's image, 19 Nov 2026; scans/og1948_soo/p1049_t006.png).
+# CENTRAL TIME. NOT BUILT YET. Soo Nos. 62 / 63 Minneapolis (Milwaukee Road station) - St. Paul (Union Station) - Dresser - Frederic - Superior (Soo Line station) - West Duluth - Duluth
+# (Soo Line station), daily (*). Miles as printed (Soo Line miles from Minneapolis). The N.P. and G.N. columns (66, 20, 24, 62; 23, 61, 19, 65: their own trains between the
+# Twin Cities and Duluth, the table's note: through tickets honoured on either) are not entered.
+# Left out: St. Croix Falls (58.9), a dagger (daily except Sunday) section off the main line at Dresser: down "arr. St. Croix Falls 3.12" after Dresser 2.51, up "lve. St. Croix
+# Falls 3.15" (its Dresser arrival not printed); Centuria (63.3, on the main line beyond the branch) is 3.04 / 3.57, so it is not No. 62 / 63 itself (TO CHECK with Brendan).
+#train col=No62 num=62 dir=down days=daily kind=passenger note="Soo Line No. 62, daily: Minneapolis (Milwaukee Road station) 1.00 p.m., St. Paul 1.40 p.m., to Superior 5.30 p.m. and Duluth 5.50 p.m. (Table 6, May 18, 1947)."
+#train col=No63 num=63 dir=up days=daily kind=passenger note="Soo Line No. 63, daily: Duluth 1.00 p.m., Superior 1.25 p.m., to St. Paul 5.19 p.m. and Minneapolis 5.50 p.m. (Table 6, May 18, 1947)."
+mile,station,principal,prov,tz,No62,No63
+0.0,"Minneapolis (Milwaukee Road Station)",1,MN,C,lv 1.00p,ar 5.50p
+10.9,"St. Paul",1,MN,C,1.40p,5.19p
+50.1,"Osceola, Wis.",0,WI,C,2.37p,4.21p
+55.0,"Dresser, Wis.",1,WI,C,ar 2.51p / lv 2.51p,ar 4.13p / lv 4.13p
+63.3,"Centuria, Wis.",0,WI,C,3.04p,3.57p
+69.4,"Milltown, Wis.",0,WI,C,3.13p,3.47p
+73.0,"Luck, Wis.",0,WI,C,3.20p,3.38p
+79.3,"Frederic, Wis.",1,WI,C,3.35p,3.28p
+84.7,"Lewis, Wis.",0,WI,C,3.42p,3.15p
+90.4,"Siren, Wis.",0,WI,C,3.50p,3.07p
+96.7,"Webster, Wis.",0,WI,C,3.59p,2.58p
+105.6,"Danbury, Wis.",0,WI,C,4.10p,2.45p
+112.0,"Markville, Wis.",0,WI,C,4.19p,f2.35p
+117.2,"Cloverton, Wis.",0,WI,C,4.26p,f2.28p
+122.1,"Kingsdale, Wis.",0,WI,C,f4.33p,f2.21p
+141.5,"Patzau, Wis.",0,WI,C,4.59p,f1.55p
+160.9,"Superior, Wis.",1,WI,C,5.30p,1.25p
+164.2,"West Duluth, Minn.",0,MN,C,5.41p,1.11p
+168.1,"Duluth, Minn.",1,MN,C,ar 5.50p,lv 1.00p

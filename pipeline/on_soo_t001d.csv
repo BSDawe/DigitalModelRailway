@@ -1,0 +1,25 @@
+# Soo Line, Table 1 (Official Guide, May 1948, page 1049, the Marshfield - Duluth part of Table 1; February 1, 1948; Brendan's image, 19 Nov 2026; scans/og1948_soo/p1049_t001d.png,
+# signs p1049_signs.png): Nos. 17 / 18 Owen - Ladysmith - Superior - West Duluth - Duluth. CENTRAL TIME. NOT BUILT YET. Miles from Chicago as printed. The C. & N.W. columns
+# (511, 405-513, 512-514, 510-406, Chicago - Gordon - Solon Springs - Superior - Duluth over the C. & N.W.) are another railway's trains: not entered.
+# Owen: No. 17 arrives 3.19 a.m. (page 1047) and leaves 3.40 a.m.; No. 18 leaves 10.30 p.m. (its arrival not printed: entered 10.30 too).
+# Signs entered as flag stops (f): b (stops for passengers to and from Neenah and beyond), c (on signal for Milwaukee, Chicago, Duluth, Superior and beyond), p (flag stop May 1 -
+# Nov. 1), the unexplained l at Lublin (No. 18). As stops: h (Gordon: regular stop May 1 - Nov. 1). Left out (no time printed): a b (Conrath, No. 17), b e (Sheldon, Conrath, No. 18).
+# Depots: Superior, Soo Line station, Winter Street and Ogden Avenue; Duluth, Soo Line station, Superior Street and 6th Avenue West.
+#train col=No17 num=17 dir=down days=daily kind=passenger note="Soo Line No. 17, daily: Chicago (Grand Central Station) 5.50 p.m., Owen 3.40 a.m., Ladysmith 4.50 a.m., Superior 7.33 a.m., Duluth 8.10 a.m. (Table 1, February 1, 1948)."
+#train col=No18 num=18 dir=up days=daily kind=passenger note="Soo Line No. 18, daily: Duluth 6.00 p.m., Superior 6.25 p.m., Ladysmith 9.10 p.m., Owen 10.30 p.m., Chicago 7.45 a.m. (Table 1, February 1, 1948)."
+mile,station,principal,prov,tz,No17,No18
+308.6,"Owen, Wis.",1,WI,C,ar 3.19a / lv 3.40a,ar 10.30p
+320.4,"Lublin, Wis.",0,WI,C,f3.55a,f9.57p
+328.2,"Gilman, Wis.",0,WI,C,4.04a,9.44p
+340.3,"Sheldon, Wis.",0,WI,C,4.22a,
+353.3,"Ladysmith, Wis.",1,WI,C,4.50a,9.10p
+369.1,"Exeland, Wis.",0,WI,C,5.13a,8.37p
+377.1,"Lemington, Wis.",0,WI,C,f5.24a,
+383.8,"Hauer, Wis.",0,WI,C,f5.33a,f8.17p
+389.4,"Stone Lake, Wis.",0,WI,C,5.43a,8.10p
+402.6,"Stanbery, Wis.",0,WI,C,f6.01a,f7.53p
+420.9,"Gordon, Wis.",0,WI,C,6.26a,7.30p
+429.0,"Solon Springs, Wis.",0,WI,C,f6.39a,f7.18p
+461.9,"Superior, Wis.",1,WI,C,7.33a,6.25p
+465.2,"West Duluth, Minn.",0,MN,C,7.45a,6.11p
+469.1,"Duluth, Minn.",1,MN,C,ar 8.10a,lv 6.00p

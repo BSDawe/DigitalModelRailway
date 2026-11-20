@@ -1,0 +1,6 @@
+# Soo Line, Table 5 (as on_soo_t005.csv): the Chelsea - Rib Lake mixed, Nos. 158 / 157, daily except Sunday (dagger). Miles from Spencer as printed. CENTRAL TIME. NOT BUILT YET.
+#train col=No158 num=158 dir=down days="ex Sun" kind=mixed note="Soo Line mixed No. 158, daily except Sunday: Chelsea 8.30 a.m. to Rib Lake 8.50 a.m. (Table 5, February 1, 1948)."
+#train col=No157 num=157 dir=up days="ex Sun" kind=mixed note="Soo Line mixed No. 157, daily except Sunday: Rib Lake 10.25 a.m. to Chelsea 10.45 a.m. (Table 5, February 1, 1948)."
+mile,station,principal,prov,tz,No158,No157
+38.2,"Chelsea, Wis.",1,WI,C,lv 8.30a,ar 10.45a
+43.7,"Rib Lake, Wis.",1,WI,C,ar 8.50a,lv 10.25a
