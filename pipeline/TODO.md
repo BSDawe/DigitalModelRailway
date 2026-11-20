@@ -17,7 +17,8 @@ Last updated 17 November 2026 (Version 180).
   track (no straight estimates left). Menasha: Table 16 runs Hilbert Jct. - Menasha - Neenah over the Milwaukee Road by trackage rights (Brendan, 19 Nov
   2026; MILW pieces own milw, Menasha at Brendan's point, probably the MILW station, shared). Ridgeland and Rice Lake branches: Brendan's traces (19.0 / 18.7 and 7.2 / 6.7 mi traced / printed). Superior - Duluth: Brendan's Soo connection, NP Grassy Point bridge and Duluth final-approach
   traces; Superior and Duluth stations at his points (19 Nov 2026). Sault Ste. Marie: the Soo trains use the CP station on the Ontario side (Brendan, 19 Nov 2026;
-  CP_SAULT_STE_MARIE), reached by a straight dashed estimate (3.3 km) from the Michigan end of the trace: an International Bridge trace wanted. Still to settle: No. 1 into the Great Northern station at Minneapolis (built to the Milwaukee Road
+  CP_SAULT_STE_MARIE), reached by a straight dashed estimate (3.3 km) from the Michigan end of the trace: an International Bridge trace wanted. St. Paul: the Soo reaches Union Depot by trackage rights from
+  44 57 38.70 N, 93 05 09.44 W (Brendan, 19 Nov 2026): that stretch is split out of the Soo piece; whose track it is (to colour it) is not settled, drawn as CP for now. Still to settle: No. 1 into the Great Northern station at Minneapolis (built to the Milwaukee Road
   station). To check: Table 7 Nos. 8 / 7 daily (Table 9: ex Sat / ex Mon); Table 7 No. 7 Bruce printed 7.35 (left out); Table 6 St. Croix Falls section (left out); Table 13 No. 160
   sign (# MWF or double dagger); Table 23 La Mars state; Chicago: Grand Central Station (B&O property) - Forest Park on Brendan's B&O Chicago Terminal trace (19 Nov 2026), own bo,
   B&O dark blue (#1D3461; dark theme #8AA6DC; Claude's pick of shade), 10.0 mi traced / 10.9 printed; Table 10 Nos. 3 / 4 and Table 26 Nos. 109 / 110 are the existing Mountaineer / Winnipeger (connections only).

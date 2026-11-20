@@ -35,6 +35,10 @@ def walk(e, folder):
             elif re.search(r'Falkirk|Coal Creek|Riverdale|new route|Newtown', nm): st = 'post1948'
             else: st = 'ok'
             if nm.startswith('Hilbert WI to Menasha'): feats.append(F('milw', f'Milwaukee Road: {nm} (Soo trackage rights)', pts, 'Mississippi Rails; Milwaukee Road track, the Soo by trackage rights (KMZ note; Brendan, 19 Nov 2026)', st, 'Milwaukee Road')); continue
+            if nm == 'St Paul to Cardigan Jct':   # Brendan, 19 Nov 2026: the Soo reaches St. Paul Union Depot by trackage rights from 44 57 38.70 N, 93 05 09.44 W (the piece's 10th point)
+                feats.append(F('cp', 'Soo Line: St. Paul (trackage rights into Union Depot) - Cardigan Jct.', pts[9:], 'Mississippi Rails', st, folder))
+                feats.append(F('cp', 'Trackage rights: St. Paul Union Depot approach used by the Soo (owner to settle)', pts[:10], "Mississippi Rails trace; the Soo by trackage rights from here (Brendan, 19 Nov 2026); owner not settled, drawn as CP for now", st, 'trackage rights'))
+                continue
             feats.append(F('cp', f'{folder}: {nm}', pts, 'Mississippi Rails (Tony Howe and David Price), KMZ supplied by Brendan' + (f'; KMZ note: {desc[:160]}' if desc else ''), st, folder))
 walk(ET.fromstring(s.encode('utf-8')), 'Soo Line')
 M = json.load(open(os.path.join(HERE, 'traces', 'milw', 'mpls_stpaul.geojson')))['features'][0]
