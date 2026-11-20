@@ -50,6 +50,8 @@ for i, (nm, c) in enumerate(ok):
 for e, q, a, b, d in ties:
     feats.append(F(f'DSS&A: tie, {a.split(": ")[-1]} - {b.split(": ")[-1]}', [e, q], f'tie (Claude): the piece ends {d * 1000:.0f} m from the other line', group='link'))
     print(f'  tie {d * 1000:.0f} m: {a} -> {b}')
+NP = json.load(open(os.path.join(HERE, 'traces', 'dssa', 'brendan_np_superior_ashland.json')))['np_superior_ashland']
+feats.append(F('Northern Pacific: Superior - Iron River - Ashland (Mississippi Rails; Brendan)', NP, "Brendan, 20 Nov 2026: the DSS&A by trackage rights since 1934 (KMZ note: built by the Northern Pacific RR 1881-85)", group='mississippi_rails', own='np', constituent='Northern Pacific'))
 feats.append(F('DSS&A: Marengo Junction, the main line - the Soo Line Ashland line (tie at the crossing)', [(-90.8179367, 46.4339916), (-90.8175603, 46.4347037)],
                'tie (Claude): the DSS&A trains turn here onto the Soo Line (Wisconsin Central) for Ashland (84 m between the two traces at the crossing)', group='link'))
 feats.append(F('DSS&A: St. Ignace, the lead to the car ferry dock (Brendan)', [(-84.72067136523755, 45.86573660638453), (-84.72001445489376, 45.86547872876946), (-84.7195510663993, 45.86535717533018),
