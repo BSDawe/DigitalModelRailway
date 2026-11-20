@@ -5,8 +5,8 @@ other track bank files). Drawn as CP (own cp; Brendan, 19 Nov 2026: "Draw as CP,
   west of Minneapolis built earlier (the Winnipeger, the Mountaineer) stay in the Saskatchewan step on traces/soo/soo_mn_nd.geojson, cut from the same KMZ. Pieces marked
   abandoned or old alignment in the KMZ are 'pre1948'; the North Dakota mine spurs, Riverdale and the Garrison Dam relocations (New Town, the Custer and Ironton "new
   route" pieces) are 'post1948'.
-- Superior - Duluth: the Soo connection to the Northern Pacific and the NP Grassy Point bridge (Brendan's traces, 19 Nov 2026; own np); the terminal tracks into the Duluth
-  Soo depot are missing (a straight estimate from the bridge).
+- Superior - Duluth: the Soo connection to the Northern Pacific and the NP Grassy Point bridge (Brendan's traces, 19 Nov 2026; own np); and the final approach to the
+  Duluth Soo depot (Brendan's trace).
 - Chicago: the Baltimore & Ohio Chicago Terminal from Forest Park into Grand Central Station (Brendan's traces, 19 Nov 2026; own bo, B&O dark blue).
 - Minneapolis (Milwaukee Road station) - St. Paul Union Station: Brendan's Milwaukee Road trace (traces/milw/mpls_stpaul.geojson; own milw), as for the Winnipeger.
 Usage: python3 tools/mar_import_soo.py <doc.kml or .kmz>"""
@@ -61,6 +61,7 @@ for k, nm in (('grand_central', 'Grand Central Station - Ogden Ave. / Kenton'), 
 feats.append(F('cp', 'Soo Line: Superior, connection to the Northern Pacific (Brendan)', BO['superior_np_connection'], "Brendan's trace, 19 Nov 2026", group='brendan'))
 feats.append(dict(type='Feature', properties=dict(own='np', name='Northern Pacific: Grassy Point bridge, Superior - Duluth (Brendan)', constituent='Northern Pacific', branch='Soo Line', group='brendan',
               status='ok', cost=1.0, note="Brendan's trace, 19 Nov 2026: the Soo trains' way from Superior to West Duluth and Duluth"), geometry=dict(type='LineString', coordinates=BO['np_grassy_point_bridge'])))
+feats.append(F('cp', 'Soo Line: Duluth, final approach to the Soo depot (Brendan)', BO['duluth_final_approach'], "Brendan's trace, 19 Nov 2026: the Soo Line depot (shared with the DSS&A and the DM&N) to the NP Grassy Point line", group='brendan'))
 feats.append(F('cp', 'Soo Line: Menasha, the Hilbert line - the Neenah - Stevens Point line (est)', [(-88.4496961, 44.2061175), (-88.4675550, 44.1878177)], 'straight estimate (Claude): the Hilbert - Menasha piece (trackage rights) ends 2.5 km from the main line at Menasha; Table 16 runs Hilbert Jct. - Menasha - Neenah', group='link', est=True))
 json.dump(dict(type='FeatureCollection', features=feats), open(os.path.join(HERE, 'traces', 'maritimes', 'soo.geojson'), 'w'))
 from collections import Counter
