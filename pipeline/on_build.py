@@ -76,7 +76,7 @@ SOO_PLACES = {'Menasha, Wis.': (-88.444683, 44.20615), 'Forest Park, Ill.': (-87
               'Marshfield, Wis.': (-90.171853, 44.666773), 'Greenwood, Wis.': (-90.604061, 44.759796), 'Fairmount, N.D.': (-96.682588, 46.058688),
               'Grenville, S.D.': (-97.394428, 45.465996), 'Flaxton, N.D.': (-102.394505, 48.89807), 'Whitetail, Mont.': (-105.173653, 48.896202),
               'Fordville, N.D.': (-97.826939, 48.222945), 'Kenmare, N.D.': (-102.086516, 48.672077), 'Egeland, N.D.': (-99.113181, 48.630421),
-              'Armourdale, N.D.': (-99.377299, 48.875716), 'Sault Ste. Marie, Mich.': (-84.363423, 46.503314), 'Superior, Wis.': (-92.101656, 46.728397),
+              'Armourdale, N.D.': (-99.377299, 48.875716), 'Sault Ste. Marie, Ont.': (-84.32192, 46.5102), 'Superior, Wis.': (-92.101656, 46.728397),
               'Hilbert Junction, Wis.': (-88.166752, 44.149004), 'Stevens Point, Wis.': (-89.568068, 44.512887),
               'Moose Lake, Minn.': (-92.778613, 46.449202), 'Onamia, Minn.': (-93.665724, 46.069729),
               'East Lake, Minn.': (-93.283759, 46.538477), 'Superior (21st St.), Wis.': (-92.08207, 46.716769), 'Trout Lake, Mich.': (-85.025679, 46.193229),
@@ -84,7 +84,8 @@ SOO_PLACES = {'Menasha, Wis.': (-88.444683, 44.20615), 'Forest Park, Ill.': (-87
               'Minneapolis (Milwaukee Road Station)': (-93.26172, 44.98001)}
 # Soo Line (19 Nov 2026): the ends and junctions of each table, at the Mississippi Rails trace (piece ends, or the nearest track to the town); the stations of the Winnipeger and the
 # Mountaineer at their points on the map (Hankinson, Drake, Flaxton, Glenwood, Plummer, Thief River Falls; St. Paul and Minneapolis the CP points); Chicago Grand Central Station (Harrison and Wells) at the end of Brendan's B&O trace;
-# Menasha: Brendan's point (44 12 22.14 N, 88 26 40.86 W), probably a Milwaukee Road station shared by the Soo. Ridgeland and Rice Lake: the ends of Brendan's branch traces. Superior: Brendan's point for the Soo station (Winter St. and Ogden Ave.); Duluth: the end of Brendan's final-approach
+# Menasha: Brendan's point (44 12 22.14 N, 88 26 40.86 W), probably a Milwaukee Road station shared by the Soo. Sault Ste. Marie: the CP station, Ontario side (Brendan, 19 Nov 2026; across the International Bridge, straight until a bridge trace comes).
+# Ridgeland and Rice Lake: the ends of Brendan's branch traces. Superior: Brendan's point for the Soo station (Winter St. and Ogden Ave.); Duluth: the end of Brendan's final-approach
 # trace at the Soo depot (Superior St. and 6th Ave. W.). East Lake and Superior
 # (21st St.) at their printed miles along the track. Forest Park: the end of the trace towards Chicago. Every other Soo station is placed by its printed mileage (noplace below: the collections' names are Canadian).
 GTR_PLACES = {'Norton': (-71.79581, 45.009279), 'Island Pond': (-71.880831, 44.815962), 'North Stratford': (-71.62904, 44.750979), 'Mapleton': (-71.557786, 44.648386), 'Groveton': (-71.509262, 44.600159), 'Percy': (-71.387373, 44.624004), 'West Milan': (-71.304092, 44.598913), 'Berlin': (-71.186068, 44.467044), 'Gorham': (-71.174821, 44.387152), 'Shelburne, N.H.': (-71.073159, 44.402853), 'Bethel': (-70.788498, 44.410785), "Locke's Mills": (-70.702697, 44.399095), "Bryant's Pond": (-70.646647, 44.378221), 'Bates': (-70.576294, 44.323981), 'South Paris': (-70.516794, 44.22216), 'Oxford, Me.': (-70.464154, 44.145403), 'Mechanic Falls': (-70.390766, 44.109576), 'Danville Junction': (-70.267377, 44.023397), 'Yarmouth Junction': (-70.19462, 43.814916), 'Yarmouth, Me.': (-70.190591, 43.802319), 'Portland, Me.': (-70.24845, 43.6595)}   # CN Grand Trunk, Norton - Portland (17 Nov 2026)

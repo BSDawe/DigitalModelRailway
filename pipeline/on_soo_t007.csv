@@ -4,10 +4,11 @@
 # daily except Saturday at Minneapolis and No. 7 daily except Monday into Minneapolis, the Argonne times daily except Sunday: entered daily, as Table 7 and CP Table 70 (TO CHECK).
 # Signs: c (flag week-days), z (regular except Sunday, flag Sunday), d (does not stop Sunday): entered as stops, c as a flag; f flag.
 # No. 7 Bruce is printed 7.35 (between Ladysmith 3.31 and Weyerhaeuser 4.27 a.m.: a misprint): left out. Weyerhaeuser 4.27: the second figure is hard to read (4.17?).
+# Sault Ste. Marie: the Soo trains use the CP station on the Ontario side (Brendan, 19 Nov 2026), across the International Bridge (no bridge trace yet: a straight estimate).
 # The connections: Chicago - Pembine by the Milwaukee Road (Nos. 9 / 8 in the "Chicago to Sault Ste. Marie" box, page 1050), through sleeping cars Chicago - Sault Ste. Marie; the CP
 # from Sault Ste. Marie, Ont. to Sudbury, North Bay, Parry Sound and Bala (Muskoka Lakes). Gladstone - Escanaba by bus; Tomahawk - Heafford Jct. by bus (Note A); Blaney Park: Gulliver.
-#train col=No8 num=8 dir=down days=daily kind=passenger note="Soo Line No. 8, daily: Minneapolis (Milwaukee Road station) 7.35 p.m., St. Paul 8.20 p.m., Ladysmith 12.13 a.m., Pembine 4.52 - 5.22 a.m. (the Milwaukee Road train from Chicago), Gladstone, Manistique, Trout Lake to Sault Ste. Marie, Mich., 11.45 a.m.; for the CP at Sault Ste. Marie, Ont. (Table 7, February 1947)."
-#train col=No7 num=7 dir=up days=daily kind=passenger note="Soo Line No. 7, daily: Sault Ste. Marie, Mich., 3.50 p.m., Trout Lake, Manistique, Gladstone, Pembine 10.10 - 10.40 p.m. (the Milwaukee Road train to Chicago), Ladysmith 3.31 a.m., St. Paul 7.35 a.m., Minneapolis (Milwaukee Road station) 8.15 a.m. (Table 7, February 1947)."
+#train col=No8 num=8 dir=down days=daily kind=passenger note="Soo Line No. 8, daily: Minneapolis (Milwaukee Road station) 7.35 p.m., St. Paul 8.20 p.m., Ladysmith 12.13 a.m., Pembine 4.52 - 5.22 a.m. (the Milwaukee Road train from Chicago), Gladstone, Manistique, Trout Lake to Sault Ste. Marie (the CP station, Ontario side) 11.45 a.m. Central time (Table 7, February 1947)."
+#train col=No7 num=7 dir=up days=daily kind=passenger note="Soo Line No. 7, daily: Sault Ste. Marie (the CP station, Ontario side) 3.50 p.m. Central time, Trout Lake, Manistique, Gladstone, Pembine 10.10 - 10.40 p.m. (the Milwaukee Road train to Chicago), Ladysmith 3.31 a.m., St. Paul 7.35 a.m., Minneapolis (Milwaukee Road station) 8.15 a.m. (Table 7, February 1947)."
 mile,station,principal,prov,tz,No8,No7
 0.0,"Minneapolis (Milwaukee Road Station)",1,MN,C,lv 7.35p,ar 8.15a
 10.9,"St. Paul",1,MN,C,8.20p,7.35a
@@ -68,4 +69,4 @@ mile,station,principal,prov,tz,No8,No7
 477.8,"Rudyard, Mich.",0,MI,C,11.05a,4.31p
 482.9,"Kinross, Mich.",0,MI,C,f11.13a,f4.21p
 490.5,"Dafter, Mich.",0,MI,C,11.25a,4.10p
-501.4,"Sault Ste. Marie, Mich.",1,MI,C,ar 11.45a,lv 3.50p
+501.4,"Sault Ste. Marie, Ont.",1,ON,C,ar 11.45a,lv 3.50p

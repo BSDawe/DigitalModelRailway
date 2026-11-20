@@ -65,6 +65,8 @@ feats.append(dict(type='Feature', properties=dict(own='np', name='Northern Pacif
 feats.append(F('cp', 'Soo Line: Duluth, final approach to the Soo depot (Brendan)', BO['duluth_final_approach'], "Brendan's trace, 19 Nov 2026: the Soo Line depot (shared with the DSS&A and the DM&N) to the NP Grassy Point line", group='brendan'))
 feats.append(F('cp', 'Soo Line: Ridgeland branch, Barron - Ridgeland (Brendan)', BO['ridgeland_branch'], "Brendan's trace, 19 Nov 2026 (Table 17)", group='brendan'))
 feats.append(F('cp', 'Soo Line: Cameron - Rice Lake (Brendan)', BO['rice_lake_branch'], "Brendan's trace, 19 Nov 2026 (Table 22)", group='brendan'))
+feats.append(F('cp', 'Soo Line: Sault Ste. Marie, Mich. (trace end) - the International Bridge - the CP station, Sault Ste. Marie, Ont. (est)', [(-84.3634230, 46.5033144), (-84.3219190, 46.5101980)],
+               'straight estimate (Claude): the Soo trains use the CP station on the Ontario side (Brendan, 19 Nov 2026); no trace of the International Bridge yet', group='link', est=True))
 feats.append(dict(type='Feature', properties=dict(own='milw', name='Milwaukee Road: Menasha - Neenah (Mississippi Rails; Brendan)', constituent='Milwaukee Road', branch='Soo Line', group='mississippi_rails',
               status='ok', cost=1.0, note="Brendan, 19 Nov 2026: Menasha station is reached by trackage rights over the MILW (Table 16, Hilbert Jct. - Menasha - Neenah)"), geometry=dict(type='LineString', coordinates=BO['milw_menasha_neenah'])))
 json.dump(dict(type='FeatureCollection', features=feats), open(os.path.join(HERE, 'traces', 'maritimes', 'soo.geojson'), 'w'))
