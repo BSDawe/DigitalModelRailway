@@ -80,10 +80,10 @@ SOO_PLACES = {'Menasha, Wis.': (-88.444683, 44.20615), 'Forest Park, Ill.': (-87
               'Hilbert Junction, Wis.': (-88.166752, 44.149004), 'Stevens Point, Wis.': (-89.568068, 44.512887),
               'Moose Lake, Minn.': (-92.778613, 46.449202), 'Onamia, Minn.': (-93.665724, 46.069729),
               'East Lake, Minn.': (-93.283759, 46.538477), 'Superior (21st St.), Wis.': (-92.08207, 46.716769), 'Trout Lake, Mich.': (-85.025679, 46.193229),
-              'Manistique, Mich.': (-86.255686, 45.965778), 'Pembine, Wis.': (-87.991542, 45.635013), 'St. Paul': (-93.077064, 44.952704),
-              'Minneapolis (Milwaukee Road Station)': (-93.26172, 44.98001)}
+              'Manistique, Mich.': (-86.255686, 45.965778), 'Pembine, Wis.': (-87.991542, 45.635013), 'St. Paul': (-93.085361, 44.946914),
+              'Minneapolis (Milwaukee Road Station)': (-93.26172, 44.98001), 'Minneapolis (Great Northern Station)': (-93.267977, 44.986012)}
 # Soo Line (19 Nov 2026): the ends and junctions of each table, at the Mississippi Rails trace (piece ends, or the nearest track to the town); the stations of the Winnipeger and the
-# Mountaineer at their points on the map (Hankinson, Drake, Flaxton, Glenwood, Plummer, Thief River Falls; St. Paul and Minneapolis the CP points); Chicago Grand Central Station (Harrison and Wells) at the end of Brendan's B&O trace;
+# Mountaineer at their points on the map (Hankinson, Drake, Flaxton, Glenwood, Plummer, Thief River Falls; St. Paul Union Depot at Brendan's point of 19 Nov 2026, also moved for the Winnipeger, the Mountaineer and the GN; Minneapolis the CP point); Chicago Grand Central Station (Harrison and Wells) at the end of Brendan's B&O trace;
 # Menasha: Brendan's point (44 12 22.14 N, 88 26 40.86 W), probably a Milwaukee Road station shared by the Soo. Sault Ste. Marie: the CP station, Ontario side (Brendan, 19 Nov 2026; across the International Bridge, straight until a bridge trace comes).
 # Ridgeland and Rice Lake: the ends of Brendan's branch traces. Superior: Brendan's point for the Soo station (Winter St. and Ogden Ave.); Duluth: the end of Brendan's final-approach
 # trace at the Soo depot (Superior St. and 6th Ave. W.). East Lake and Superior

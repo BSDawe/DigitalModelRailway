@@ -4,7 +4,7 @@
 # Through trains: No. 17 Chicago - Owen - Duluth, its Twin Cities section No. 5 from Owen (column "17-5"); No. 18 Duluth - Owen - Chicago, joined at Owen by No. 6 from Minneapolis
 # (column "6-18", the same times as No. 18 south of Owen; its x stops are No. 18's). Nos. 1 / 2 Chicago - Minneapolis. All daily (*).
 # Depots: Chicago Grand Central Station (South Wells and Harrison); St. Paul Union Station; Minneapolis Milwaukee Road station (3d and Washington Avenues South), but No. 1
-# "p Arrives G.N. Ry. Station in Minneapolis"; Duluth Soo Line station, Superior Street and 6th Avenue West; Superior Soo Line station, Winter Street and Ogden Avenue (key, p1048).
+# "p Arrives G.N. Ry. Station in Minneapolis" (its own row here, by the Soo Connector past the Milwaukee Road station; the 0.5 mile is Claude's estimate, not printed); Duluth Soo Line station, Superior Street and 6th Avenue West; Superior Soo Line station, Winter Street and Ogden Avenue (key, p1048).
 # Signs entered as flag stops (f): f stops on flag; x (No. 18) stops to let off passengers from Duluth, Superior and beyond and north of Owen / Spencer; : (Wheeling) stops on flag
 # for or from Spencer and beyond; o (No. 6, North St. Paul) stops on flag for Milwaukee, Chicago and beyond. Entered as stops: a (Lake Villa, No. 17: handles passengers when
 # stopping at the coal shed); c (Prairie View, Silver Lake, No. 2: flag stop Sunday, regular week-days); y (Silver Lake, No. 17: stops to leave passengers from Chicago, May 30 -
@@ -88,4 +88,5 @@ mile,station,principal,prov,tz,No17,No1,No5,No2,No6,No18
 440.2,"North St. Paul, Minn.",0,MN,C,,3.38p,,8.52a,f6.54p,
 443.0,"Gloster, Minn.",0,MN,C,,f3.43p,,f8.46a,,
 448.7,"St. Paul",1,MN,C,,4.00p,7.25a,8.30a,6.35p,
-459.6,"Minneapolis (Milwaukee Road Station)",1,MN,C,,ar 4.55p,ar 8.05a,lv 7.35a,lv 5.55p,
+459.6,"Minneapolis (Milwaukee Road Station)",1,MN,C,,,ar 8.05a,lv 7.35a,lv 5.55p,
+460.1,"Minneapolis (Great Northern Station)",1,MN,C,,ar 4.55p,,,,

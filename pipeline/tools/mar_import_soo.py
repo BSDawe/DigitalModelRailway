@@ -8,7 +8,8 @@ other track bank files). Drawn as CP (own cp; Brendan, 19 Nov 2026: "Draw as CP,
 - Superior - Duluth: the Soo connection to the Northern Pacific and the NP Grassy Point bridge (Brendan's traces, 19 Nov 2026; own np); and the final approach to the
   Duluth Soo depot (Brendan's trace).
 - Chicago: the Baltimore & Ohio Chicago Terminal from Forest Park into Grand Central Station (Brendan's traces, 19 Nov 2026; own bo, B&O dark blue).
-- Minneapolis (Milwaukee Road station) - St. Paul Union Station: Brendan's Milwaukee Road trace (traces/milw/mpls_stpaul.geojson; own milw), as for the Winnipeger.
+- St. Paul Union Depot - Minneapolis: the Northern Pacific 'Line A' and Brendan's piece into the Milwaukee Road station (the Soo's route; the Mountaineer and the Winnipeger keep
+  the Milwaukee Road in the Saskatchewan step); the Soo Connector on by the Great Northern station (Brendan's trace of 18 Oct).
 Usage: python3 tools/mar_import_soo.py <doc.kml or .kmz>"""
 import json, os, re, sys, zipfile
 HERE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -35,15 +36,18 @@ def walk(e, folder):
             elif re.search(r'Falkirk|Coal Creek|Riverdale|new route|Newtown', nm): st = 'post1948'
             else: st = 'ok'
             if nm.startswith('Hilbert WI to Menasha'): feats.append(F('milw', f'Milwaukee Road: {nm} (Soo trackage rights)', pts, 'Mississippi Rails; Milwaukee Road track, the Soo by trackage rights (KMZ note; Brendan, 19 Nov 2026)', st, 'Milwaukee Road')); continue
-            if nm == 'St Paul to Cardigan Jct':   # Brendan, 19 Nov 2026: the Soo reaches St. Paul Union Depot by trackage rights from 44 57 38.70 N, 93 05 09.44 W (the piece's 10th point)
-                feats.append(F('cp', 'Soo Line: St. Paul (trackage rights into Union Depot) - Cardigan Jct.', pts[9:], 'Mississippi Rails', st, folder))
-                feats.append(F('cp', 'Trackage rights: St. Paul Union Depot approach used by the Soo (owner to settle)', pts[:10], "Mississippi Rails trace; the Soo by trackage rights from here (Brendan, 19 Nov 2026); owner not settled, drawn as CP for now", st, 'trackage rights'))
+            if nm == 'St Paul to Cardigan Jct':   # Brendan, 19 Nov 2026: the Soo reaches St. Paul Union Depot by trackage rights from 44 57 38.70 N, 93 05 09.44 W (the piece's 10th point), over the NP 'Line A'
+                feats.append(F('cp', 'Soo Line: St. Paul (NP Line A junction) - Cardigan Jct.', pts[9:], 'Mississippi Rails', st, folder))
+                feats.append(F('cp', 'Soo Line: St. Paul, the old line below the junction with NP Line A (not used)', pts[:10], "Mississippi Rails trace; the Soo trains take the Northern Pacific 'Line A' from Brendan's point (82 m from it) into Union Depot", 'check', folder))
                 continue
             feats.append(F('cp', f'{folder}: {nm}', pts, 'Mississippi Rails (Tony Howe and David Price), KMZ supplied by Brendan' + (f'; KMZ note: {desc[:160]}' if desc else ''), st, folder))
 walk(ET.fromstring(s.encode('utf-8')), 'Soo Line')
-M = json.load(open(os.path.join(HERE, 'traces', 'milw', 'mpls_stpaul.geojson')))['features'][0]
-feats.append(dict(type='Feature', properties=dict(own='milw', name='Milwaukee Road: Minneapolis (Milwaukee Road station) - St. Paul Union Station (Brendan)', constituent='Milwaukee Road',
-              branch='Soo Line', group='brendan', status='ok', cost=1.0, note="Brendan's trace, 19 Oct 2026 (traces/milw/mpls_stpaul.geojson)"), geometry=M['geometry']))
+MP = json.load(open(os.path.join(HERE, 'traces', 'milw', 'mpls_stpaul.geojson')))['features'][0]['geometry']['coordinates']   # Brendan's Milwaukee Road trace: only its St. Paul end,
+_k = min(range(len(MP)), key=lambda i: (MP[i][0] + 93.085361) ** 2 + (MP[i][1] - 44.946914) ** 2)                     # from Union Depot (Brendan's point, 19 Nov 2026) to NP Line A
+feats.append(dict(type='Feature', properties=dict(own='milw', name='St. Paul Union Depot - the NP Line A junction (Brendan\'s Milwaukee Road trace, its end)', constituent='Milwaukee Road', branch='Soo Line',
+              group='brendan', status='ok', cost=1.0, note="Brendan's trace (traces/milw/mpls_stpaul.geojson), from the vertex nearest Union Depot to its end, where NP Line A begins"), geometry=dict(type='LineString', coordinates=MP[_k:])))
+SC = [f for f in json.load(open(os.path.join(HERE, 'traces', 'soo', 'soo_mn_nd.geojson')))['features'] if 'Connector' in f['properties']['name']][0]   # Brendan's Soo Connector (18 Oct 2026)
+feats.append(F('cp', 'Soo Line: Minneapolis, the Soo Connector by the Great Northern station to the Milwaukee Road station (Brendan)', SC['geometry']['coordinates'], "Brendan's trace, 18 Oct 2026 (traces/soo/soo_mn_nd.geojson); used to reach the GN station (Brendan, 19 Nov 2026)", group='brendan'))
 # Junction ties: a branch whose end lies 150 - 600 m from other track (the loader ties ends within 150 m itself) gets a straight tie to the nearest point of that track
 import math
 def km(a, b): return math.hypot((a[0] - b[0]) * 111.32 * math.cos(math.radians(a[1])), (a[1] - b[1]) * 110.57)
@@ -71,6 +75,10 @@ feats.append(F('cp', 'Soo Line: Ridgeland branch, Barron - Ridgeland (Brendan)',
 feats.append(F('cp', 'Soo Line: Cameron - Rice Lake (Brendan)', BO['rice_lake_branch'], "Brendan's trace, 19 Nov 2026 (Table 22)", group='brendan'))
 feats.append(F('cp', 'Soo Line: Sault Ste. Marie, Mich. (trace end) - the International Bridge - the CP station, Sault Ste. Marie, Ont. (est)', [(-84.3634230, 46.5033144), (-84.3219190, 46.5101980)],
                'straight estimate (Claude): the Soo trains use the CP station on the Ontario side (Brendan, 19 Nov 2026); no trace of the International Bridge yet', group='link', est=True))
+for k, nm in (('np_line_a', 'St. Paul Union Depot - Minneapolis, "Line A"'), ('np_line_a_west', '"Line A", the western part (marked abandoned in the KMZ; the Soo route in 1948)')):
+    feats.append(dict(type='Feature', properties=dict(own='np', name=f'Northern Pacific: {nm} (Mississippi Rails; Brendan)', constituent='Northern Pacific', branch='Soo Line', group='mississippi_rails',
+                  status='ok', cost=1.0, note="Brendan, 19 Nov 2026: the Soo's St. Paul - Minneapolis route (not the Mountaineer's)"), geometry=dict(type='LineString', coordinates=BO[k])))
+feats.append(F('cp', 'Soo Line: Minneapolis, Line A - the Milwaukee Road station (Brendan)', BO['soo_minneapolis_east'], "Brendan's trace, 19 Nov 2026", group='brendan'))
 feats.append(dict(type='Feature', properties=dict(own='milw', name='Milwaukee Road: Menasha - Neenah (Mississippi Rails; Brendan)', constituent='Milwaukee Road', branch='Soo Line', group='mississippi_rails',
               status='ok', cost=1.0, note="Brendan, 19 Nov 2026: Menasha station is reached by trackage rights over the MILW (Table 16, Hilbert Jct. - Menasha - Neenah)"), geometry=dict(type='LineString', coordinates=BO['milw_menasha_neenah'])))
 json.dump(dict(type='FeatureCollection', features=feats), open(os.path.join(HERE, 'traces', 'maritimes', 'soo.geojson'), 'w'))
