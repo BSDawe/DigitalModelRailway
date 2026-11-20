@@ -107,7 +107,7 @@ OVER = {'on_crc_t001': dict(shift=-14400, places={'Parrsboro': (-64.32953, 45.39
         'on_cn_t075b': dict(noplace=['Ottawa (Bank Street)']),
         'on_cp_t058b': dict(places={'Camp Borden (Lower Station)': (-79.891308, 44.269889),      # Brendan, 23 Oct 2026: "about here"
                                     'Camp Borden (Upper Station)': (-79.886619, 44.286324)}),    # at the end of its spur (his trace)
-        'on_cp_t024': dict(places=NE_PLACES), 'on_cp_t024r': dict(places=NE_PLACES), 'on_bc_t026': dict(places=NE_PLACES, long='Woodsville – Wells River – Montpelier (Barre & Chelsea)'), 'on_cp_t024m': dict(places=NE_PLACES),   # end of CP track east of Highwater (through Richford, Vt. on Brendan's trace)
+        'on_cp_t024': dict(places=NE_PLACES), 'on_cp_t024r': dict(places=NE_PLACES), 'on_bc_t026': dict(places=NE_PLACES, src='Official Guide, April 25, 1948', long='Woodsville – Wells River – Montpelier (Barre & Chelsea)'), 'on_cp_t024m': dict(places=NE_PLACES),   # end of CP track east of Highwater (through Richford, Vt. on Brendan's trace)
         'on_cp_t008': dict(label='Quebec Central', places=NE_PLACES),   # the end of the Massawippi Valley line in the Quebec collection
         'on_cn_t064m': dict(places={'Montreal Nord': (-73.619509, 45.595776)}),   # by mileage on the L'Assomption line (no point in the collection; APPROXIMATE, Claude, 13 Nov 2026)
         'on_tem_t001': dict(shift=-14400, places={'Edmundston': (-68.322783, 47.367167), 'St. Jacques Church': (-68.387346, 47.432644)}),   # Edmundston: Brendan's point, the CP / Temiscouata station (8 Nov 2026); St. Jacques Church: CGN Saint-Jacques

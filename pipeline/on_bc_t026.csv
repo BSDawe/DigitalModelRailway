@@ -1,13 +1,24 @@
-# Barre & Chelsea R.R., Table 26: Woodsville - Wells River - Montpelier (the Montpelier & Wells River line). CP timetable, 1948 (Table 26; scan cp1948_qc/t026_signs.png;
-# Brendan, 18 Nov 2026). Eastern time. No train numbers or mileage printed; miles here from the trace (Mississippi Rails Vermont map), Wells River - Montpelier 37.8.
-# Woodsville and Wells River are the CP / B&M stations (merged in merge_stations.py). Days: Ex. Sun. / Sun. only as headed. Wells River f3.35 p.m. (the 1.00 p.m. from Montpelier): stops on signal.
-#train col=T1 num=Train dir=down days="Mon,Tue,Wed,Thu,Fri,Sat" kind=passenger note="Barre & Chelsea, daily except Sunday: Woodsville 8.30 a.m. to Montpelier 10.55 a.m."
-#train col=T3 num=Train dir=down days="Mon,Tue,Wed,Thu,Fri,Sat" kind=passenger note="Barre & Chelsea, daily except Sunday: Woodsville 4.55 p.m. to Montpelier 6.45 p.m."
-#train col=T5 num=Train dir=down days=Sun kind=passenger note="Barre & Chelsea, Sundays: Woodsville 4.10 p.m. to Montpelier 6.35 p.m."
-#train col=T2 num=Train dir=up days="Mon,Tue,Wed,Thu,Fri,Sat" kind=passenger note="Barre & Chelsea, daily except Sunday: Montpelier 5.15 a.m. to Woodsville 7.15 a.m."
-#train col=T4 num=Train dir=up days="Mon,Tue,Wed,Thu,Fri,Sat" kind=passenger note="Barre & Chelsea, daily except Sunday: Montpelier 1.00 p.m. to Woodsville 3.40 p.m."
-#train col=T6 num=Train dir=up days=Sun kind=passenger note="Barre & Chelsea, Sundays: Montpelier 12.30 p.m. to Woodsville 2.50 p.m."
-mile,station,principal,prov,tz,T1,T3,T5,T2,T4,T6
+# Barre & Chelsea R.R.: Montpelier - Wells River - Woodsville (the Montpelier & Wells River line). Official Guide, April 25, 1948 (Brendan's image, 19 Nov 2026; scan in the private repo,
+# scans/og1948_bc/barre_chelsea_1948-04-25.png), replacing the CP Table 26 transcription of V189 (the same six trains and times, without numbers, intermediate stations or miles). Eastern time.
+# Miles: printed from Montpelier (Wells River 37.9; Woodsville not printed); entered from Woodsville, Woodsville - Wells River 0.3 (the trace), so Montpelier 38.2.
+# Signs: dagger daily except Sunday; section Sunday only; f flag stop. No. 4 does not call at Wells River ("- -"; the CP table had f3.35). Woodsville and Wells River are the
+# CP / B&M stations (merged in merge_stations.py). The Barre branch (Barre - Websterville, 7.18 miles) and Barre - Montpelier: freight service only.
+#train col=No1 num=1 dir=down days="Mon,Tue,Wed,Thu,Fri,Sat" kind=passenger note="Barre & Chelsea No. 1, daily except Sunday: Woodsville 8.30 a.m. to Montpelier 10.55 a.m. (Official Guide, April 25, 1948)."
+#train col=No3 num=3 dir=down days="Mon,Tue,Wed,Thu,Fri,Sat" kind=passenger note="Barre & Chelsea No. 3, daily except Sunday: Woodsville 4.55 p.m. to Montpelier 6.45 p.m. (Official Guide, April 25, 1948)."
+#train col=No91 num=91 dir=down days=Sun kind=passenger note="Barre & Chelsea No. 91, Sundays: Woodsville 4.10 p.m. to Montpelier 6.35 p.m. (Official Guide, April 25, 1948)."
+#train col=No2 num=2 dir=up days="Mon,Tue,Wed,Thu,Fri,Sat" kind=passenger note="Barre & Chelsea No. 2, daily except Sunday: Montpelier 5.15 a.m. to Woodsville 7.15 a.m. (Official Guide, April 25, 1948)."
+#train col=No4 num=4 dir=up days="Mon,Tue,Wed,Thu,Fri,Sat" kind=passenger note="Barre & Chelsea No. 4, daily except Sunday: Montpelier 1.00 p.m. to Woodsville 3.40 p.m. (Official Guide, April 25, 1948)."
+#train col=No90 num=90 dir=up days=Sun kind=passenger note="Barre & Chelsea No. 90, Sundays: Montpelier 12.30 p.m. to Woodsville 2.50 p.m. (Official Guide, April 25, 1948)."
+mile,station,principal,prov,tz,No1,No3,No91,No2,No4,No90
 0.0,"Woodsville, N.H.",1,NH,E,lv 8.30a,lv 4.55p,lv 4.10p,ar 7.15a,ar 3.40p,ar 2.50p
-0.3,"Wells River, Vt.",1,VT,E,8.35a,4.58p,4.13p,7.10a,f3.35p,2.45p
-38.1,"Montpelier, Vt.",1,VT,E,ar 10.55a,ar 6.45p,ar 6.35p,lv 5.15a,lv 1.00p,lv 12.30p
+0.3,"Wells River, Vt.",1,VT,E,8.35a,4.58p,4.13p,7.10a,,2.45p
+3.9,"Boltonville, Vt.",0,VT,E,f8.47a,f5.08p,,f7.00a,f3.24p,f2.35p
+6.8,"South Ryegate, Vt.",0,VT,E,9.05a,5.18p,4.50p,6.52a,3.15p,2.25p
+9.9,"Groton, Vt.",0,VT,E,9.15a,5.25p,f5.02p,6.39a,2.47p,f2.05p
+13.3,"Rickers, Vt.",0,VT,E,f9.30a,f5.33p,f5.15p,f6.27a,f2.37p,f1.53p
+14.7,"Lakeside, Vt.",0,VT,E,,f5.37p,f5.20p,f6.24a,f2.34p,
+19.5,"Lanesboro, Vt.",0,VT,E,9.49a,f5.48p,f5.33p,f6.12a,f2.22p,f1.37p
+22.8,"Marshfield, Vt.",0,VT,E,f10.01a,5.59p,f5.45p,6.00a,2.07p,1.27p
+28.7,"Plainfield, Vt.",0,VT,E,10.25a,6.20p,6.05p,5.41a,1.38p,f1.07p
+32.5,"Fairmont, Vt.",0,VT,E,10.35a,f6.29p,f6.15p,f5.30a,f1.17p,f12.45p
+38.2,"Montpelier, Vt.",1,VT,E,ar 10.55a,ar 6.45p,ar 6.35p,lv 5.15a,lv 1.00p,lv 12.30p
