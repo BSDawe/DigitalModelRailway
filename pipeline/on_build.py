@@ -71,7 +71,7 @@ SOO_PLACES = {'Forest Park, Ill.': (-87.802566, 41.872959), 'Chicago (Grand Cent
               'Plaza, N.D.': (-101.963097, 48.030301), 'Wishek, N.D.': (-99.572452, 46.265453), 'Pollock, S.D.': (-100.287612, 45.897862),
               'Thief River Falls, Minn.': (-96.195373, 48.159678), 'Plummer, Minn.': (-96.063282, 47.948829), 'Lawler, Minn.': (-93.174564, 46.536417),
               'Glenwood, Minn.': (-95.377275, 45.667247), 'Manitowoc, Wis.': (-87.660787, 44.093492), 'Barron, Wis.': (-91.848325, 45.403162),
-              'Ridgeland, Wis.': (-91.903, 45.204), 'Cameron, Wis.': (-91.73755, 45.40924), 'Rice Lake, Wis.': (-91.738, 45.506),
+              'Ridgeland, Wis.': (-91.90112, 45.202861), 'Cameron, Wis.': (-91.73755, 45.40924), 'Rice Lake, Wis.': (-91.738, 45.506),
               'Eben Junction, Mich.': (-86.973998, 46.354544), 'Abbotsford, Wis.': (-90.321259, 44.95019), 'Athens, Wis.': (-90.079337, 45.036746),
               'Marshfield, Wis.': (-90.171853, 44.666773), 'Greenwood, Wis.': (-90.604061, 44.759796), 'Fairmount, N.D.': (-96.682588, 46.058688),
               'Grenville, S.D.': (-97.394428, 45.465996), 'Flaxton, N.D.': (-102.394505, 48.89807), 'Whitetail, Mont.': (-105.173653, 48.896202),
@@ -84,7 +84,7 @@ SOO_PLACES = {'Forest Park, Ill.': (-87.802566, 41.872959), 'Chicago (Grand Cent
               'Minneapolis (Milwaukee Road Station)': (-93.26172, 44.98001)}
 # Soo Line (19 Nov 2026): the ends and junctions of each table, at the Mississippi Rails trace (piece ends, or the nearest track to the town); the stations of the Winnipeger and the
 # Mountaineer at their points on the map (Hankinson, Drake, Flaxton, Glenwood, Plummer, Thief River Falls; St. Paul and Minneapolis the CP points); Chicago Grand Central Station (Harrison and Wells) at the end of Brendan's B&O trace;
-# off the trace (straight estimates until traces come): Ridgeland, Rice Lake. Superior: Brendan's point for the Soo station (Winter St. and Ogden Ave.); Duluth: the end of Brendan's final-approach
+# off the trace (straight estimates until traces come): Rice Lake. Ridgeland: the end of Brendan's branch trace. Superior: Brendan's point for the Soo station (Winter St. and Ogden Ave.); Duluth: the end of Brendan's final-approach
 # trace at the Soo depot (Superior St. and 6th Ave. W.). East Lake and Superior
 # (21st St.) at their printed miles along the track. Forest Park: the end of the trace towards Chicago. Every other Soo station is placed by its printed mileage (noplace below: the collections' names are Canadian).
 GTR_PLACES = {'Norton': (-71.79581, 45.009279), 'Island Pond': (-71.880831, 44.815962), 'North Stratford': (-71.62904, 44.750979), 'Mapleton': (-71.557786, 44.648386), 'Groveton': (-71.509262, 44.600159), 'Percy': (-71.387373, 44.624004), 'West Milan': (-71.304092, 44.598913), 'Berlin': (-71.186068, 44.467044), 'Gorham': (-71.174821, 44.387152), 'Shelburne, N.H.': (-71.073159, 44.402853), 'Bethel': (-70.788498, 44.410785), "Locke's Mills": (-70.702697, 44.399095), "Bryant's Pond": (-70.646647, 44.378221), 'Bates': (-70.576294, 44.323981), 'South Paris': (-70.516794, 44.22216), 'Oxford, Me.': (-70.464154, 44.145403), 'Mechanic Falls': (-70.390766, 44.109576), 'Danville Junction': (-70.267377, 44.023397), 'Yarmouth Junction': (-70.19462, 43.814916), 'Yarmouth, Me.': (-70.190591, 43.802319), 'Portland, Me.': (-70.24845, 43.6595)}   # CN Grand Trunk, Norton - Portland (17 Nov 2026)

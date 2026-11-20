@@ -62,6 +62,7 @@ feats.append(F('cp', 'Soo Line: Superior, connection to the Northern Pacific (Br
 feats.append(dict(type='Feature', properties=dict(own='np', name='Northern Pacific: Grassy Point bridge, Superior - Duluth (Brendan)', constituent='Northern Pacific', branch='Soo Line', group='brendan',
               status='ok', cost=1.0, note="Brendan's trace, 19 Nov 2026: the Soo trains' way from Superior to West Duluth and Duluth"), geometry=dict(type='LineString', coordinates=BO['np_grassy_point_bridge'])))
 feats.append(F('cp', 'Soo Line: Duluth, final approach to the Soo depot (Brendan)', BO['duluth_final_approach'], "Brendan's trace, 19 Nov 2026: the Soo Line depot (shared with the DSS&A and the DM&N) to the NP Grassy Point line", group='brendan'))
+feats.append(F('cp', 'Soo Line: Ridgeland branch, Barron - Ridgeland (Brendan)', BO['ridgeland_branch'], "Brendan's trace, 19 Nov 2026 (Table 17)", group='brendan'))
 feats.append(F('cp', 'Soo Line: Menasha, the Hilbert line - the Neenah - Stevens Point line (est)', [(-88.4496961, 44.2061175), (-88.4675550, 44.1878177)], 'straight estimate (Claude): the Hilbert - Menasha piece (trackage rights) ends 2.5 km from the main line at Menasha; Table 16 runs Hilbert Jct. - Menasha - Neenah', group='link', est=True))
 json.dump(dict(type='FeatureCollection', features=feats), open(os.path.join(HERE, 'traces', 'maritimes', 'soo.geojson'), 'w'))
 from collections import Counter
