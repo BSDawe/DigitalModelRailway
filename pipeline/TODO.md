@@ -182,6 +182,8 @@ Maritime tables where the traced line differs from the printed miles by 1 mi and
 - [ ] Water (Owen Sound Transportation Co. done in Version 183, estimated: a 1948 schedule would firm it up; Ontario Northland's Chief Commanda on Lake Nipissing done in Version 185, highly speculative: the regular 1948 days and hours wanted); Pelee Island and Wolfe Island ferries; Northumberland Ferries (Wood Islands - Caribou); Grand Manan ferry; Clarke Steamship (Gaspe, North Shore). Lake Winnipeg (Keenora) is in; the northern river boats were no longer scheduled common carriers after 1947 (Brendan).
 
 ## Cross-border trains cut at the border (stage 4; list of 11 Nov 2026)
+- [ ] The Ambassador's New York section (CV Table 5, Nos. 74 / 77) ends at Springfield: Grand Central needs the New Haven New Rochelle - Woodlawn and the NYC Harlem line (V197: the
+  Washingtonian / Montrealer run to Washington on Brendan's NEC2 track; the New Haven and PRR traces may replace it later; New Haven colour #B5651D is Claude's pick).
 Each runs to an International Boundary point (time estimated) or to the last Canadian station; the U.S. part waits for the U.S. railways.
 - [ ] Niagara River, Black Rock (Buffalo): Michigan Central through trains Windsor - Fort Erie (8 Wolverine, 17, 33 New England Wolverine, 35, 39 / 40 North Shore Limited, 44, 50 / 51 Empire State Express, 364, motors 365 / 366); TH&B Hamilton - Buffalo 73, 76, 371, 372, 374, 375, 379, 380, 382, 383 (through from / to Toronto as CP 7xx / 8xx).
 - [ ] Niagara River, Suspension Bridge: CN Hamilton - Niagara Falls, N.Y. 86, 90 / 93 The Maple Leaf (Lehigh Valley to New York), 91, 95, 102, 107, 186; MC 358 The Canadian - The Niagara.

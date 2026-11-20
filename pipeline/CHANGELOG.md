@@ -2919,3 +2919,15 @@ A review of the whole project (Brendan: "have a peek through ... suggest improve
   #B8AFA5; Claude's pick), for the St. Paul Union Depot approach (Union Depot is owned by the railways that use it, about 9.24 miles of track; Brendan). The Chicago & Western Indiana
   (own cwi, Dearborn Station approach) gets the same colour (it had none). The Milwaukee Road through St. Paul stays Milwaukee Road (through running; Brendan).
 - Counts unchanged: 653 lines, 4314 trips, 7555 stops; check_gtfs 0 problems.
+
+## Version 197
+- The Washingtonian (No. 20) and the Montrealer (No. 21) run through to Washington: Springfield - Hartford - New Haven - Hell Gate Bridge - New York (Pennsylvania Station) - Philadelphia -
+  Baltimore - Washington (Union Station). Track: Brendan's NEC2.geojson (19 Nov 2026; FRA rail network export; raw file in the private repo, traces/nec/), imported by
+  tools/mar_import_nec.py as traces/maritimes/nec.geojson: main, other and industry arcs (the Hell Gate approaches are coded industry), yards and sidings left out. Owners drawn as in
+  1948: the New Haven in Massachusetts, Connecticut and Westchester (own nh; burnt orange #B5651D, dark theme #E09A5C, Claude's pick: green would read as CN), the New York Connecting
+  Railroad over Hell Gate (PRR / New Haven joint: the union-station colour), the Pennsylvania from the Penn Station tunnels to Washington (own prr, Tuscan red). Brendan may replace it
+  later with PRR and NYNH&H traces.
+- Only the New York (Pennsylvania Station) and Washington times are printed (CV Table 5's notes: No. 20 New York 7.10 a.m., Washington 12.10 p.m.; No. 21 Washington 3.10 p.m., New York
+  7.45 p.m.), so the trains pass the stations between without calls; the miles beyond Springfield are the traced miles (136.2 and 222.9), not printed. Springfield is now a call on the
+  way. The Ambassador's New York section still ends at Springfield (Grand Central needs the New Haven to Woodlawn and the NYC Harlem line, not in the file).
+- Counts: 653 lines, 4314 trips, 7557 stops; check_gtfs 0 problems.

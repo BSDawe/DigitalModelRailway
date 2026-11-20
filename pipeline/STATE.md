@@ -1,7 +1,7 @@
 # The Digital Model Railway — project state
 
 Read this first. It is meant to be enough to start a short, single-task chat without replaying the project's history.
-Last updated 19 November 2026 (Version 196). This file is the current state and the standing rules; the version-by-version history is in CHANGELOG.md.
+Last updated 19 November 2026 (Version 197). This file is the current state and the standing rules; the version-by-version history is in CHANGELOG.md.
 
 ## What this is
 
@@ -328,6 +328,7 @@ After an accepted build: `cp viz_data.json tools/.baseline_viz.json`.
 
 ## Recent versions (one line each; the detail is in CHANGELOG.md)
 
+- 197: the Washingtonian and the Montrealer through to New York (Penn Station) and Washington over the New Haven, Hell Gate and the Pennsylvania (Brendan's NEC2 track).
 - 196: Soo trains over the International Bridge (Ontario collection); union-station colour (St. Paul Union Depot, the C&WI).
 - 195: Barre & Chelsea from the Official Guide (train numbers, all stations, printed miles).
 - 194: the Soo Line (Official Guide Tables 1 - 26: Chicago, Twin Cities, Duluth, Sault Ste. Marie, the Dakotas; drawn as CP, labelled Soo Line); B&O dark blue into Chicago Grand Central; St. Paul Union Depot at Brendan's point; Stanbridge union station at the Delamere point.
