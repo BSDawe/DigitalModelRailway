@@ -1,4 +1,4 @@
-# Soo Line, Table 70: the Duluth section, Ladysmith - Superior - Duluth. CENTRAL TIME. Not built yet. Source as on_soo_t070.csv. Dry run as on_cp_t070sd: Superior - Duluth (7.2 mi printed) has no track (straight 3.6 mi): a trace wanted.
+# Soo Line, Table 70: the Duluth section, Ladysmith - Superior - Duluth. CENTRAL TIME. SUPERSEDED by on_soo_t001d.csv / on_soo_t006.csv (Official Guide Tables 1, 6). Not built yet. Source as on_soo_t070.csv. Dry run as on_cp_t070sd: Superior - Duluth (7.2 mi printed) has no track (straight 3.6 mi): a trace wanted.
 #train col=No7D num=7 dir=down days=daily kind=passenger from="Sault Ste. Marie, Mich." note="Duluth section of Soo Line No. 7: Ladysmith 4.50 a.m. to Duluth 8.10 a.m."
 #train col=No8D num=8 dir=up days=daily kind=passenger to="Sault Ste. Marie, Mich." note="Duluth section of Soo Line No. 8: Duluth 6.00 p.m. to Ladysmith 8.57 p.m."
 mile,station,principal,prov,tz,No7D,No8D

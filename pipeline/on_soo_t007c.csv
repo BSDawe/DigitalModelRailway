@@ -1,0 +1,21 @@
+# Soo Line, Table 7 (as on_soo_t007.csv): Nos. 84 / 85 Dresser - Turtle Lake - Cameron - Ladysmith, daily except Sunday (dagger). CENTRAL TIME. NOT BUILT YET. Miles from Minneapolis.
+# No. 84 waits at Cameron 5.49 - 6.42 p.m. as printed. Nos. 62 / 63 (Minneapolis - Dresser - Superior - Duluth) in Table 7's other columns: on_soo_t006.csv.
+#train col=No84 num=84 dir=down days="ex Sun" kind=passenger note="Soo Line No. 84, daily except Sunday: Dresser 4.20 p.m. to Ladysmith 7.45 p.m. (Table 7, February 1947)."
+#train col=No85 num=85 dir=up days="ex Sun" kind=passenger note="Soo Line No. 85, daily except Sunday: Ladysmith 11.30 a.m. to Dresser 2.20 p.m. (Table 7, February 1947)."
+mile,station,principal,prov,tz,No84,No85
+55.0,"Dresser, Wis.",1,WI,C,lv 4.20p,ar 2.20p
+59.1,"Nye, Wis.",0,WI,C,4.27p,2.10p
+63.6,"Wanderoos, Wis.",0,WI,C,4.34p,2.02p
+66.9,"Deronda, Wis.",0,WI,C,4.39p,1.55p
+70.2,"Amery, Wis.",0,WI,C,4.48p,1.48p
+77.7,"Joel, Wis.",0,WI,C,f4.58p,f1.33p
+83.0,"Turtle Lake, Wis.",1,WI,C,5.06p,1.25p
+88.3,"Almena, Wis.",0,WI,C,5.21p,1.06p
+92.7,"Poskin, Wis.",0,WI,C,5.29p,12.57p
+98.3,"Barron, Wis.",1,WI,C,5.41p,12.34p
+103.4,"Cameron, Wis.",1,WI,C,ar 5.49p / lv 6.42p,12.27p
+107.9,"Canton, Wis.",0,WI,C,6.49p,12.21p
+116.2,"Strickland, Wis.",0,WI,C,f7.02p,f12.09p
+121.4,"Weyerhaeuser, Wis.",0,WI,C,7.12p,12.01p
+128.6,"Bruce, Wis.",0,WI,C,7.25p,11.45a
+137.1,"Ladysmith, Wis.",1,WI,C,ar 7.45p,lv 11.30a

@@ -1,0 +1,22 @@
+# Soo Line, Table 7 (as on_soo_t007.csv): the Rhinelander - Pembine - Gladstone mixed. No. 32 sign a (Tuesday, Thursday and Saturday), No. 31 sign v (Monday, Wednesday and Friday).
+# CENTRAL TIME. NOT BUILT YET. Miles from Minneapolis as printed.
+#train col=No32 num=32 dir=down days="Tue,Thu,Sat" kind=mixed note="Soo Line mixed No. 32, Tuesday, Thursday and Saturday: Rhinelander 5.30 a.m. to Gladstone 2.05 p.m. (Table 7, February 1947)."
+#train col=No31 num=31 dir=up days="Mon,Wed,Fri" kind=mixed note="Soo Line mixed No. 31, Monday, Wednesday and Friday: Gladstone 7.20 a.m. to Rhinelander 3.00 p.m. (Table 7, February 1947)."
+mile,station,principal,prov,tz,No32,No31
+224.1,"Rhinelander, Wis.",1,WI,C,lv 5.30a,ar 3.00p
+229.7,"Roosevelt, Wis.",0,WI,C,f5.41a,f2.35p
+234.5,"Starks, Wis.",0,WI,C,5.55a,2.20p
+238.5,"Gagen, Wis.",1,WI,C,f6.10a,f2.05p
+243.9,"Atkins, Wis.",0,WI,C,f6.25a,f1.50p
+251.3,"Argonne, Wis.",1,WI,C,7.15a,1.30p
+260.3,"Laona Junction, Wis.",0,WI,C,8.00a,12.45p
+263.6,"Cavour, Wis.",0,WI,C,8.15a,12.30p
+272.9,"Armstrong Creek, Wis.",0,WI,C,8.50a,11.59a
+277.6,"Goodman, Wis.",0,WI,C,9.15a,11.40a
+286.9,"Dunbar, Wis.",0,WI,C,f9.50a,f10.45a
+296.9,"Pembine, Wis.",1,WI,C,11.00a,10.15a
+310.3,"Faithorn, Mich.",1,MI,C,f11.50a,f9.12a
+318.0,"Hermansville, Mich.",1,MI,C,12.40p,8.45a
+332.4,"Eustis, Mich.",0,MI,C,f1.15p,f8.00a
+345.2,"North Escanaba, Mich.",1,MI,C,1.45p,7.35a
+350.0,"Gladstone, Mich.",1,MI,C,ar 2.05p,lv 7.20a

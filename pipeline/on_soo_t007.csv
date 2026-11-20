@@ -1,0 +1,71 @@
+# Soo Line, Table 7, Twin Cities to points in Wisconsin and Michigan (Official Guide, May 1948, page 1050; table dated February 1947; Brendan's image, 19 Nov 2026; scans/og1948_soo/p1050_t007.png). CENTRAL TIME. NOT BUILT YET. Supersedes on_soo_t070.csv (CP Table 70, the same trains with
+# nine stations). Nos. 8 / 7 Minneapolis (Milwaukee Road station) - St. Paul - Dresser - Turtle Lake - Cameron - Ladysmith - Prentice - Rhinelander - Argonne - Pembine - Gladstone -
+# Manistique - Trout Lake - Sault Ste. Marie, Mich. Miles from Minneapolis as printed. Days: Table 7 prints both daily (*); Table 9 (January 12, 1947, same page) prints No. 8
+# daily except Saturday at Minneapolis and No. 7 daily except Monday into Minneapolis, the Argonne times daily except Sunday: entered daily, as Table 7 and CP Table 70 (TO CHECK).
+# Signs: c (flag week-days), z (regular except Sunday, flag Sunday), d (does not stop Sunday): entered as stops, c as a flag; f flag.
+# No. 7 Bruce is printed 7.35 (between Ladysmith 3.31 and Weyerhaeuser 4.27 a.m.: a misprint): left out. Weyerhaeuser 4.27: the second figure is hard to read (4.17?).
+# The connections: Chicago - Pembine by the Milwaukee Road (Nos. 9 / 8 in the "Chicago to Sault Ste. Marie" box, page 1050), through sleeping cars Chicago - Sault Ste. Marie; the CP
+# from Sault Ste. Marie, Ont. to Sudbury, North Bay, Parry Sound and Bala (Muskoka Lakes). Gladstone - Escanaba by bus; Tomahawk - Heafford Jct. by bus (Note A); Blaney Park: Gulliver.
+#train col=No8 num=8 dir=down days=daily kind=passenger note="Soo Line No. 8, daily: Minneapolis (Milwaukee Road station) 7.35 p.m., St. Paul 8.20 p.m., Ladysmith 12.13 a.m., Pembine 4.52 - 5.22 a.m. (the Milwaukee Road train from Chicago), Gladstone, Manistique, Trout Lake to Sault Ste. Marie, Mich., 11.45 a.m.; for the CP at Sault Ste. Marie, Ont. (Table 7, February 1947)."
+#train col=No7 num=7 dir=up days=daily kind=passenger note="Soo Line No. 7, daily: Sault Ste. Marie, Mich., 3.50 p.m., Trout Lake, Manistique, Gladstone, Pembine 10.10 - 10.40 p.m. (the Milwaukee Road train to Chicago), Ladysmith 3.31 a.m., St. Paul 7.35 a.m., Minneapolis (Milwaukee Road station) 8.15 a.m. (Table 7, February 1947)."
+mile,station,principal,prov,tz,No8,No7
+0.0,"Minneapolis (Milwaukee Road Station)",1,MN,C,lv 7.35p,ar 8.15a
+10.9,"St. Paul",1,MN,C,8.20p,7.35a
+31.0,"Withrow, Minn.",0,MN,C,f8.53p,7.03a
+40.5,"Marine, Minn.",0,MN,C,9.05p,6.48a
+42.8,"Copas, Minn.",0,MN,C,9.08p,f6.43a
+50.1,"Osceola, Wis.",0,WI,C,9.21p,6.30a
+55.0,"Dresser, Wis.",1,WI,C,9.36p,6.22a
+70.2,"Amery, Wis.",0,WI,C,9.59p,5.54a
+83.0,"Turtle Lake, Wis.",1,WI,C,10.17p,5.34a
+98.3,"Barron, Wis.",1,WI,C,10.44p,5.00a
+103.4,"Cameron, Wis.",1,WI,C,10.55p,4.53a
+121.4,"Weyerhaeuser, Wis.",0,WI,C,11.22p,4.27a
+128.6,"Bruce, Wis.",0,WI,C,11.40p,
+137.1,"Ladysmith, Wis.",1,WI,C,12.13a,3.31a
+143.0,"Tony, Wis.",0,WI,C,12.23a,3.23a
+147.9,"Glen Flora, Wis.",0,WI,C,f12.31a,f3.15a
+152.0,"Ingram, Wis.",0,WI,C,f12.38a,f3.08a
+156.6,"Hawkins, Wis.",0,WI,C,12.47a,3.01a
+163.1,"Kennan, Wis.",0,WI,C,12.58a,2.49a
+166.0,"Catawba, Wis.",0,WI,C,1.04a,2.42a
+178.0,"Prentice, Wis.",1,WI,C,1.38a,2.20a
+186.4,"Brantwood, Wis.",0,WI,C,1.53a,1.53a
+193.3,"Tripoli, Wis.",0,WI,C,2.06a,1.40a
+204.9,"Bradley, Wis.",0,WI,C,f2.22a,f1.22a
+207.0,"Heafford Junction, Wis.",1,WI,C,2.27a,1.18a
+216.1,"Woodboro, Wis.",0,WI,C,f2.41a,f1.03a
+224.1,"Rhinelander, Wis.",1,WI,C,3.05a,12.50a
+229.7,"Roosevelt, Wis.",0,WI,C,f3.14a,f12.26a
+234.5,"Starks, Wis.",0,WI,C,f3.20a,f12.19a
+238.5,"Gagen, Wis.",1,WI,C,f3.25a,f12.13a
+251.3,"Argonne, Wis.",1,WI,C,3.45a,11.55p
+263.6,"Cavour, Wis.",0,WI,C,f4.02a,11.34p
+272.9,"Armstrong Creek, Wis.",0,WI,C,4.16a,11.19p
+277.6,"Goodman, Wis.",0,WI,C,4.24a,11.10p
+286.9,"Dunbar, Wis.",0,WI,C,f4.37a,f10.56p
+296.9,"Pembine, Wis.",1,WI,C,ar 4.52a / lv 5.22a,ar 10.10p / lv 10.40p
+310.3,"Faithorn, Mich.",1,MI,C,f5.43a,9.47p
+318.0,"Hermansville, Mich.",1,MI,C,5.58a,9.34p
+350.0,"Gladstone, Mich.",1,MI,C,ar 6.45a / lv 7.00a,ar 8.30p / lv 8.45p
+356.1,"Rapid River, Mich.",1,MI,C,7.11a,8.18p
+361.6,"Ensign, Mich.",0,MI,C,7.21a,f8.09p
+369.5,"Nahma Junction, Mich.",0,MI,C,7.33a,7.57p
+374.1,"Isabella, Mich.",0,MI,C,f7.39a,f7.49p
+382.3,"Cooks, Mich.",0,MI,C,7.51a,7.38p
+394.0,"Manistique, Mich.",1,MI,C,8.15a,7.20p
+405.8,"Gulliver, Mich.",0,MI,C,8.34a,6.47p
+413.5,"Inland Junction, Mich.",0,MI,C,f8.48a,f6.36p
+418.5,"Pike Lake, Mich.",0,MI,C,f8.57a,f6.29p
+423.2,"Gould City, Mich.",0,MI,C,9.05a,6.21p
+429.3,"Engadine, Mich.",0,MI,C,9.17a,6.11p
+438.8,"Gilchrist, Mich.",0,MI,C,f9.31a,f5.53p
+443.0,"Garnet, Mich.",0,MI,C,f9.39a,f5.42p
+446.3,"Rexton, Mich.",0,MI,C,9.46a,5.37p
+457.0,"Trout Lake, Mich.",1,MI,C,ar 10.04a / lv 10.25a,ar 5.03p / lv 5.18p
+471.3,"Fibre, Mich.",0,MI,C,f10.49a,f4.41p
+474.0,"Dryburg, Mich.",0,MI,C,f10.54a,f4.37p
+477.8,"Rudyard, Mich.",0,MI,C,11.05a,4.31p
+482.9,"Kinross, Mich.",0,MI,C,f11.13a,f4.21p
+490.5,"Dafter, Mich.",0,MI,C,11.25a,4.10p
+501.4,"Sault Ste. Marie, Mich.",1,MI,C,ar 11.45a,lv 3.50p
