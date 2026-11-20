@@ -2910,3 +2910,12 @@ A review of the whole project (Brendan: "have a peek through ... suggest improve
   mileage) and the printed miles (Wells River 37.9 from Montpelier). Same times as the CP Table 26 version (V189); No. 4 does not call at Wells River (the CP table had f3.35).
   Barre - Montpelier and the Barre branch (to Websterville): freight only.
 - Counts: 653 lines, 4314 trips, 7555 stops; check_gtfs 0 problems.
+
+## Version 196
+- Sault Ste. Marie: the Soo trains cross the International Bridge on the CP "Sault branch" piece of the Ontario collection (Delamere; Brendan, 19 Nov 2026), with a 0.6 km dashed
+  straight line over the gap from the end of the Mississippi Rails trace; replaces V194's 3.3 km straight estimate. Trout Lake - Sault Ste. Marie, Ont. now 48.0 mi traced vs 44.4 printed
+  (to the Michigan depot): the bridge and the run round to the CP station. The CP Sault station moved 4 m (a node of the old estimate).
+- A union-station colour (Brendan: "a general union-station colour for union railways / junction railways that don't extend very far"): own 'union', warm grey (#8C8279; dark theme
+  #B8AFA5; Claude's pick), for the St. Paul Union Depot approach (Union Depot is owned by the railways that use it, about 9.24 miles of track; Brendan). The Chicago & Western Indiana
+  (own cwi, Dearborn Station approach) gets the same colour (it had none). The Milwaukee Road through St. Paul stays Milwaukee Road (through running; Brendan).
+- Counts unchanged: 653 lines, 4314 trips, 7555 stops; check_gtfs 0 problems.

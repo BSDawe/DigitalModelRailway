@@ -116,7 +116,7 @@ Maritime tables where the traced line differs from the printed miles by 1 mi and
   (tools/mar_import_soo.py from the Mississippi Rails KMZ). All on track. Menasha: Table 16 runs Hilbert Jct. - Menasha - Neenah over the Milwaukee Road by trackage rights (Brendan, 19 Nov
   2026; MILW pieces own milw, Menasha at Brendan's point, probably the MILW station, shared). Ridgeland and Rice Lake branches: Brendan's traces (19.0 / 18.7 and 7.2 / 6.7 mi traced / printed). Superior - Duluth: Brendan's Soo connection, NP Grassy Point bridge and Duluth final-approach
   traces; Superior and Duluth stations at his points (19 Nov 2026). Sault Ste. Marie: the Soo trains use the CP station on the Ontario side (Brendan, 19 Nov 2026;
-  CP_SAULT_STE_MARIE), reached by a straight dashed estimate (3.3 km) from the Michigan end of the trace: an International Bridge trace wanted. St. Paul: the Soo joins the Northern Pacific 'Line A' at 44 57 38.70 N, 93 05 09.44 W
+  CP_SAULT_STE_MARIE), over the International Bridge on the CP Sault branch of the Ontario collection, a 0.6 km dashed gap from the Michigan trace end (V196). St. Paul: the Soo joins the Northern Pacific 'Line A' at 44 57 38.70 N, 93 05 09.44 W
   (Brendan, 19 Nov 2026; trackage rights) and runs over it to Minneapolis and the Milwaukee Road station; Union Depot at Brendan's point 44 56 48.89 N, 93 05 07.30 W (also for the
   Winnipeger, the Mountaineer and the GN in sk_lines.py: the next build re-runs the Saskatchewan steps). No. 1 to the Great Northern station by the Soo Connector (the GN row's 0.5 mi
   is Claude's).
