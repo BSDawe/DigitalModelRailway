@@ -2952,3 +2952,15 @@ A review of the whole project (Brendan: "have a peek through ... suggest improve
   5.40 p.m.; Mackinac Island 7.55 a.m., 12.30 p.m., 4.30 p.m.; Eastern time; daily, Brendan), 30-minute crossings (Claude's estimate). New step atc_build.py (after gtwf_build and
   dcn_build), livery atc (brown #7A5C2E, Claude's pick). Mackinaw City - Mackinac Island and the Les Cheneaux route print no times: not entered.
 - Counts: 658 lines, 4330 trips, 7600 stops, 64 agencies; check_gtfs 0 problems.
+
+## Version 200
+- Arnold Transit Company from the August 1950 Official Guide, standing in for July 1948 (Brendan, 20 Nov 2026: the May 1948 Guide's three St. Ignace sailings look like an
+  off-season list, two of its five columns blank, and it prints no times for the Mackinaw City and Les Cheneaux routes). All daily, Eastern time:
+  - St. Ignace - Mackinac Island, five each way (St. Ignace 9.00, 11.15 a.m., 1.30, 4.15, 6.15 p.m.; the island 7.55, 10.15 a.m., 12.30, 3.15, 5.15 p.m.), 35-minute crossings.
+  - Mackinaw City (State Ferry Dock, Brendan's estimated point) - Mackinac Island, five each way (Mackinaw City 9.00, 11.15 a.m., 1.15, 3.15, 6.45 p.m.; the island 10.15 a.m.,
+    12.15, 2.15, 5.00, 8.00 p.m.), 40-minute crossings.
+  - Mackinac Island - Les Cheneaux Club - Cedarville, one round trip (1.15 p.m., 3.05, 3.40; back 3.45, 4.20, 6.15 p.m.; Brendan's points). Stops on signal Hessel - Cedarville;
+    the 1948 Guide names Coryell Island as the end of the route (not drawn). The lane from the Club to Cedarville goes round the outside of the islands (the channels by Hessel
+    are closed at the basemap's resolution).
+  - Crossing times from the July 1958 Arnold Line brochure (none printed in either Guide).
+- Counts: 662 lines, 4346 trips, 7603 stops, 64 agencies; check_gtfs 0 problems.

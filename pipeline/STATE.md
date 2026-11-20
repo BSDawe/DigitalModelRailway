@@ -1,7 +1,7 @@
 # The Digital Model Railway — project state
 
 Read this first. It is meant to be enough to start a short, single-task chat without replaying the project's history.
-Last updated 20 November 2026 (Version 199). This file is the current state and the standing rules; the version-by-version history is in CHANGELOG.md.
+Last updated 20 November 2026 (Version 200). This file is the current state and the standing rules; the version-by-version history is in CHANGELOG.md.
 
 ## What this is
 
@@ -90,7 +90,7 @@ Output is quiet: one line per step run. Logs are in `build_logs/<step>.log`; rea
 | `ab_nar_build` | nar_bh (Barrhead), nar_ww (Waterways), nar_hc (Hines Creek) | nar_build, ab_cn_build | ab_nar_t179*.csv, ab_lines.py, traces/nar_barrhead_branch.tsv |
 | `nn_build` | nn (S.S. Noronic, Windsor - Duluth) | on_build (the Detroit ferry slip) | traces/lakes/northern_navigation_co.kmz, water_east.json, nn_legs.json (lane cache) |
 | `cp_lakes_build` | cpgl (CP steamers Keewatin and Assiniboia, Port McNicoll - Fort William) | nn_build (the Sault dock), on_build (Port McNicoll) | traces/lakes/cp_great_lakes.kml, traces/lakes/northern_navigation_co.kmz, water_east.json, cpgl_legs.json (lane cache) |
-| `atc_build` | atc_w, atc_e (Arnold Transit, St. Ignace - Mackinac Island) | gtwf_build, dcn_build (the Arnold Dock) | water_east.json, basemap tiles, atc_legs.json (lane cache) |
+| `atc_build` | atc_w, atc_e, atc_mc, atc_cm, atc_lc, atc_cl (Arnold Transit: St. Ignace, Mackinaw City, Les Cheneaux) | gtwf_build, dcn_build (the Arnold Dock) | water_east.json, basemap tiles, atc_legs.json (lane cache) |
 | `cp_manitoba_build` | cpmb (CP S.S. Manitoba cruise, Port McNicoll - Owen Sound - Sault - Fort William) | cp_lakes_build (the Sault and Fort William stops), on_build (the two CP stations) | traces/lakes/cp_great_lakes.kml, traces/lakes/northern_navigation_co.kmz, water_east.json, cpmb_legs.json (lane cache) |
 
 Rules that keep this working:
@@ -329,6 +329,7 @@ After an accepted build: `cp viz_data.json tools/.baseline_viz.json`.
 
 ## Recent versions (one line each; the detail is in CHANGELOG.md)
 
+- 200: Arnold Transit from the August 1950 Official Guide (stand-in for July 1948): five St. Ignace and five Mackinaw City sailings each way; Mackinac Island - Les Cheneaux - Cedarville.
 - 199: the Straits of Mackinac car ferry drawn as a train ferry; Arnold Transit St. Ignace - Mackinac Island boats (atc_build.py).
 - 198: the Duluth, South Shore & Atlantic and Mineral Range (Official Guide; drawn as CP, labelled DSS&A); Mackinac Straits car ferry; NP Ashland - Superior.
 - 197: the Washingtonian and the Montrealer through to New York (Penn Station) and Washington over the New Haven, Hell Gate and the Pennsylvania (Brendan's NEC2 track).
@@ -339,7 +340,6 @@ After an accepted build: `cp viz_data.json tools/.baseline_viz.json`.
 - 192: NYC St. Lawrence & Adirondack, Montreal (Windsor Station) - Valleyfield - Malone, all stations and nine trains (Official Guide table); Malone traces (Mississippi Rails).
 - 191: CN / GTW Table 95: the Chicago trains through from London (International Limited, Inter-City Limited, La Salle, Ontario Limited) to Dearborn Station; No. 20 fixed to p.m.; GTW car ferry Muskegon - Milwaukee; Grand Rapids - Muskegon over the PRR (Tuscan red).
 - 190: Grand Trunk Western (CN, labelled GTW): Tables 146, 148, 149, 150, 152, 153 (Detroit - Port Huron, Detroit - Grand Rapids - Muskegon, Durand - Bay City, Jackson - Richmond, Durand - Greenville, Pontiac - Caseville); state / province tags hidden on the page.
-- 189: Springfield, Mass. at Union Station on the B&A (NYC) line; the Barre & Chelsea (Woodsville - Wells River - Montpelier, CP Table 26; own railway, kind D).
 - 188: Central Vermont (CN, labelled Central Vermont): Montreal - White River Jct. - Springfield (Washingtonian, Montrealer, Vermonters, Ambassador's New York section), the Ambassador to Boston, Table 1 by St. Armand; Quebec Central to Newport; CN 79 / 80 into Fort Covington.
 - 187: CP Montreal - Boston: The Alouette (by Plymouth) and The Red Wing (by White River Jct.) through to North Station over the B&M (B&M track gold); Newport - Woodsville mixed; Mississippi Rails traces.
 - 186: CN's Grand Trunk to Portland, Me. (Nos. 16 / 126 / 17 through from Montreal; the night trains to Island Pond) and the Lewiston branch (Grand Trunk); Mississippi Rails trace.

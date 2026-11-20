@@ -123,6 +123,9 @@ Maritime tables where the traced line differs from the printed miles by 1 mi and
   To check: Table 7 Nos. 8 / 7 daily (Table 9: ex Sat / ex Mon); Table 7 No. 7 Bruce printed 7.35 (left out); Table 6 St. Croix Falls section (left out); Table 13 No. 160
   sign (# MWF or double dagger); Table 23 La Mars state; Chicago: Grand Central Station (B&O property) - Forest Park on Brendan's B&O Chicago Terminal trace (19 Nov 2026), own bo,
   B&O dark blue (#1D3461; dark theme #8AA6DC; Claude's pick of shade), 10.0 mi traced / 10.9 printed; Table 10 Nos. 3 / 4 and Table 26 Nos. 109 / 110 are the existing Mountaineer / Winnipeger (connections only).
+- [ ] Arnold Transit (V200): August 1950 Official Guide times stand in for July 1948 (the May 1948 Guide's St. Ignace list looks off-season); crossing times
+  35 / 40 minutes from the 1958 brochure. Mackinaw City State Ferry Dock point is Brendan's estimate. Les Cheneaux: the lane goes round the outside of the islands
+  (Hessel channels closed at basemap resolution; a hand lane wanted?); Coryell Island (the 1948 terminus) not drawn.
 - [ ] White River Jct. - Boston, B&M 302 / 325 (the Red Wing's and the New Englander's Boston cars in one train): drawn as the CP's Red Wing for now; who owns the leg to be settled with the B&M timetables (Brendan, 17 Nov 2026).
 - [ ] Boston & Maine's own trains (waiting for the B&M timetables): the Connecticut River trains of CV Table 5 (702, 72, 712, 78 / 79 the Red Wing's Springfield coach, 7060, 728, 703, 73, 7055, 717, 7059) and White River Jct. - Boston 320 / 313; the stations between White River Jct. / Plymouth and Concord.
 - [ ] Central Vermont Table 1: St. Johns - St. Alexander (7.6 mi) is a straight estimate, drawn broken: the Quebec collection lacks that piece of the Montreal & Vermont Junction line (a trace wanted). East Northfield's point is approximate (at the Massachusetts line).

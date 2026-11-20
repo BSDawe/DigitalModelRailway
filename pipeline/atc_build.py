@@ -1,8 +1,9 @@
-"""Arnold Transit Company, St. Ignace - Mackinac Island (Official Guide, May 1948; Brendan's image, 20 Nov 2026; private repo scans/og1948_dssa/arnold_transit.png).
-Leaves St. Ignace 10.15 a.m., 1.45 p.m., 5.40 p.m.; leaves Mackinac Island 7.55 a.m., 12.30 p.m., 4.30 p.m. Eastern time; no day sign printed: daily (Brendan). The crossing
-time is not printed: 30 minutes (Claude's estimate). Docks (Brendan): Mackinac Island, the Arnold Dock (the D.&C. port, dcn_build.py); St. Ignace, Dock No. 1. Not entered (no times
-printed): Mackinaw City - Mackinac Island (service resumed June 1, 1948) and Mackinac Island - Les Cheneaux Islands (Coryell Island; resumed June 16, 1948). Water from the basemap
-tiles, as in gtwf_build.py. Run after dcn_build (the Arnold Dock stop)."""
+"""Arnold Transit Company: St. Ignace - Mackinac Island, Mackinaw City - Mackinac Island and Mackinac Island - Les Cheneaux Islands (Cedarville).
+The May 1948 Official Guide (private repo scans/og1948_dssa/arnold_transit.png) prints only three St. Ignace sailings each way (an off-season list: two of its five columns
+are blank) and no times for the Mackinaw City route (resumed June 1, 1948) or the Les Cheneaux route (to Coryell Island; resumed June 16, 1948). Brendan, 20 Nov 2026: use the
+August 1950 Official Guide (scans/og1948_dssa/arnold_transit_og1950aug.png) for all three, as a stand-in for July 1948. Crossing times are not printed: 35 minutes St. Ignace and
+40 minutes Mackinaw City, from the July 1958 Arnold Line brochure. Daily (Brendan). Docks (Brendan): Mackinac Island, the Arnold Dock (the D.&C. port, dcn_build.py); St. Ignace,
+Dock No. 1; Mackinaw City, the State Ferry Dock (estimated); the Les Cheneaux Club landing; Cedarville. Water from the basemap tiles, as in gtwf_build.py. Run after dcn_build."""
 import csv, json, math, os, re
 from shapely.geometry import MultiPolygon, Polygon
 from nrwn_graph import fwd, MI
@@ -24,7 +25,7 @@ def _east(fn):
 # water: the basemap tiles (page projection) back to lon/lat, as in lo_build.py (Lake Nipissing is not in water_east.json)
 from shapely.ops import unary_union
 ROOT = os.path.dirname(HERE)
-NIP_BOX = (-84.80, -84.55, 45.80, 45.92)   # the Straits of Mackinac, St. Ignace - Mackinac Island
+NIP_BOX = (-84.80, -84.30, 45.76, 46.03)   # the Straits of Mackinac and the Les Cheneaux Islands
 _idx = json.load(open(os.path.join(ROOT, 'basemap', 'tiles', 'index.json'))); _PJ = _idx['proj']
 _r = math.pi / 180; _R = _PJ['R']; _p1, _p2, _l0 = _PJ['lat1'] * _r, _PJ['lat2'] * _r, _PJ['lon0'] * _r
 _t = lambda p: math.tan(math.pi / 4 + p / 2)
@@ -56,9 +57,11 @@ print('water polygons', len(_polys))
 
 
 P = {'MAC': ('Mackinac Island (Arnold Dock)', (-84.615494, 45.848731), 'Mackinac Island, the Arnold Dock (Brendan)', 1),
-     'SIG': ('St. Ignace (Dock No. 1)', (-84.722672, 45.868471), 'St. Ignace, Dock No. 1 (Brendan, 20 Nov 2026)', 1)}
+     'SIG': ('St. Ignace (Dock No. 1)', (-84.722672, 45.868471), 'St. Ignace, Dock No. 1 (Brendan, 20 Nov 2026)', 1),
+     'MCD': ('Mackinaw City (State Ferry Dock)', (-84.721967, 45.781418), 'Mackinaw City, the State Ferry Dock (Brendan, 20 Nov 2026: estimated)', 1),
+     'LCC': ('Les Cheneaux Club', (-84.395544, 45.990478), 'Les Cheneaux Club landing (Brendan, 20 Nov 2026)', 1),
+     'CED': ('Cedarville', (-84.360068, 45.995288), 'Cedarville dock (Brendan, 20 Nov 2026)', 1)}
 def gid(k): return 'PORT_' + re.sub(r'\W+', '_', P[k][0].upper()).strip('_')
-LINES = {'atc_w': ['MAC', 'SIG'], 'atc_e': ['SIG', 'MAC']}
 _CF = os.path.join(HERE, 'atc_legs.json'); CACHE = json.load(open(_CF)) if os.path.exists(_CF) else {}
 def sealeg(p, q):
     d = math.dist(fwd(*p), fwd(*q)); res = 60 if d < 40000 else 120 if d < 150000 else 250
@@ -104,20 +107,38 @@ def build(seq):
 
 
 NEW = []
-NOTE = {'w': 'Arnold Transit Company, Mackinac Island to St. Ignace: leaves Mackinac Island {} (Eastern time); crossing time estimated (30 minutes). Daily. Shown in Pacific time.',
-        'e': 'Arnold Transit Company, St. Ignace to Mackinac Island: leaves St. Ignace {} (Eastern time); crossing time estimated (30 minutes). Daily. Shown in Pacific time.'}
-SRC = 'Arnold Transit Company: St. Ignace - Mackinac Island route, Official Guide, May 1948 (Brendan, 20 Nov 2026); shown on the Pacific clock'
-DEP = {'w': [(7, 55, '7.55 a.m.'), (12, 30, '12.30 p.m.'), (16, 30, '4.30 p.m.')], 'e': [(10, 15, '10.15 a.m.'), (13, 45, '1.45 p.m.'), (17, 40, '5.40 p.m.')]}
-for key, way in (('atc_w', 'w'), ('atc_e', 'e')):
-    route, st = build(LINES[key])
+SRC = ('Arnold Transit Company, Official Guide, August 1950 (Brendan, 20 Nov 2026; private repo scans/og1948_dssa/arnold_transit_og1950aug.png), standing in for July 1948: '
+       'the May 1948 Guide prints three St. Ignace sailings and no times for the Mackinaw City and Les Cheneaux routes (resumed June 1 and June 16, 1948). '
+       'Crossing times from the July 1958 Arnold Line brochure. Shown on the Pacific clock')
+def T(s_):
+    h, m = map(int, s_[:-1].split('.')); h = h % 12 + (12 if s_[-1] == 'p' else 0); return h * 3600 + m * 60 - 3 * 3600   # Eastern to Pacific
+def txt(s_): return s_[:-1] + (' a.m.' if s_[-1] == 'a' else ' p.m.')
+# key: (label, stops, [(times at each stop, ...)], note) - a single time at the first stop plus a running time, or a time at every stop
+ROUTES = {
+  'atc_w':  ('Mackinac Island – St. Ignace (Arnold Transit)', ['MAC', 'SIG'], [(t, 35) for t in ('7.55a', '10.15a', '12.30p', '3.15p', '5.15p')]),
+  'atc_e':  ('St. Ignace – Mackinac Island (Arnold Transit)', ['SIG', 'MAC'], [(t, 35) for t in ('9.00a', '11.15a', '1.30p', '4.15p', '6.15p')]),
+  'atc_mc': ('Mackinac Island – Mackinaw City (Arnold Transit)', ['MAC', 'MCD'], [(t, 40) for t in ('10.15a', '12.15p', '2.15p', '5.00p', '8.00p')]),
+  'atc_cm': ('Mackinaw City – Mackinac Island (Arnold Transit)', ['MCD', 'MAC'], [(t, 40) for t in ('9.00a', '11.15a', '1.15p', '3.15p', '6.45p')]),
+  'atc_lc': ('Mackinac Island – Les Cheneaux Islands (Arnold Transit)', ['MAC', 'LCC', 'CED'], [('1.15p', '3.05p', '3.40p')]),
+  'atc_cl': ('Les Cheneaux Islands – Mackinac Island (Arnold Transit)', ['CED', 'LCC', 'MAC'], [('3.45p', '4.20p', '6.15p')]),
+}
+LINES = {k: v[1] for k, v in ROUTES.items()}
+for key, (label, seq, sched) in ROUTES.items():
+    route, st = build(seq)
     trips = []
-    for h, m, txt in DEP[way]:
-        t0 = h * 3600 + m * 60 - 3 * 3600; t1 = t0 + 1800
-        trips.append(dict(id=f'ATC-{way.upper()}-{h:02d}{m:02d}', num='', name='Arnold Transit', svc='W_1111111', dir=0, stops=[[0, t0, t0, 1], [1, t1, t1, 1]], vessel='', note=NOTE[way].format(txt)))
+    for row in sched:
+        if isinstance(row[1], int): ts = [T(row[0]), T(row[0]) + row[1] * 60]; run = f'; crossing {row[1]} minutes (the 1958 brochure)'
+        else: ts = [T(x) for x in row]; run = ''
+        stops_txt = ', '.join(f"{P[k][0]} {txt(x)}" for k, x in zip(seq, row)) if not run else f"leaves {P[seq[0]][0]} {txt(row[0])}"
+        note = (f'Arnold Transit Company, {label.split(" (")[0]}: {stops_txt} (Eastern time{run}). Daily. August 1950 Official Guide times, standing in for July 1948'
+                + ('; stops on signal at landings between Hessel and Cedarville; the 1948 Guide names Coryell Island as the end of the route' if key in ('atc_lc', 'atc_cl') else '')
+                + '. Shown in Pacific time.')
+        trips.append(dict(id=f'ATC-{key[4:].upper()}-{ts[0] // 3600 + 3:02d}{ts[0] % 3600 // 60:02d}', num='', name='Arnold Transit', svc='W_1111111', dir=0,
+                          stops=[[i, t, t, 1] for i, t in enumerate(ts)], vessel='M.S. Ottawa (1958)' if key in ('atc_lc', 'atc_cl') else '', note=note))
     for s_ in st: s_.pop('key')
-    NEW.append(dict(key=key, kind='v', label='Mackinac Island – St. Ignace (Arnold Transit)' if way == 'w' else 'St. Ignace – Mackinac Island (Arnold Transit)', mainline=True, water=True,
-                    livery='atc', src=SRC, owner='atc', route=route, stations=st, dirLabels=['to ' + st[-1]['name'], ''], segments=[], trips=trips))
-    print(f"{key}: {route[-1][2] / MI:.1f} mi of lane")
+    NEW.append(dict(key=key, kind='v', label=label, mainline=True, water=True, livery='atc', src=SRC, owner='atc', route=route, stations=st,
+                    dirLabels=['to ' + st[-1]['name'], ''], segments=[], trips=trips))
+    print(f"{key}: {route[-1][2] / MI:.1f} mi of lane, {len(trips)} trips")
 vd['lines'] = [x for x in vd['lines'] if x['key'] not in LINES] + NEW
 open(os.path.join(HERE, 'viz_data.json'), 'w').write(json.dumps(vd, separators=(',', ':')))
 def fmt(x): return f'{x // 3600:02d}:{x % 3600 // 60:02d}:{x % 60:02d}'
@@ -130,7 +151,7 @@ gseen = have('stops.txt')
 for L in NEW:
     st = L['stations']
     app('routes.txt', [['ATC_' + L['key'].upper(), 'ATC', L['label'], 'Arnold Transit', 4, '7A5C2E', 'FFFFFF',
-                        'Arnold Transit Company, St. Ignace - Mackinac Island. The lane is a least-cost path over the water layers, not a surveyed course. Times on the Pacific clock.']])
+                        'Arnold Transit Company (August 1950 Official Guide times, standing in for July 1948). The lane is a least-cost path over the water layers, not a surveyed course. Times on the Pacific clock.']])
     new = [[s['gid'], s['name'], f"{s['xy'][1]:.6f}", f"{s['xy'][0]:.6f}", s['note']] for s in st if s['gid'] not in gseen]
     app('stops.txt', new); gseen |= {r[0] for r in new}
     for t in L['trips']:
