@@ -1,7 +1,7 @@
 # The Digital Model Railway — project state
 
 Read this first. It is meant to be enough to start a short, single-task chat without replaying the project's history.
-Last updated 18 November 2026 (Version 193). This file is the current state and the standing rules; the version-by-version history is in CHANGELOG.md.
+Last updated 19 November 2026 (Version 194). This file is the current state and the standing rules; the version-by-version history is in CHANGELOG.md.
 
 ## What this is
 
@@ -291,6 +291,7 @@ lat, mile, lmile?, principal, gid, note, xy?, slow?}], dirLabels, segments [{own
 - **Views set the clock**: choosing a view sets its time zone (`VIEW_TZ` in the page); local time is not the default otherwise. (V176)
 - **State and province tags** (", Vt.", ", Mich." ...) stay in the data and the feed but are not shown on the page (shortName in the template; Brendan, 18 Nov 2026). Michigan station ids carry _MICH (on_lines.register).
 - **Springfield, Mass.**: every railway's trains call at Springfield Union Station (42.106238, -72.593270), on the New York Central (Boston & Albany) line: NYC (B&A), B&M (and the Central Vermont trains it hosts) and the New Haven. North - south through trains reverse there (Brendan, 18 Nov 2026).
+- **The Soo Line** is drawn as CP with its own label, Soo Line (like the Central Vermont and the GTW under CN; Brendan, 19 Nov 2026); its trains use the CP station at Sault Ste. Marie, Ont. The **B&O** is dark blue (#1D3461; Grand Central Station, Chicago, is B&O property). Other railways' columns in a table (through-ticket arrangements) are not entered.
 - **U.S. traces are from Mississippi Rails** (Tony Howe and David Price) unless Brendan says otherwise (17 Nov 2026); credit them so.
 - **Transcriptions** by another model follow `TIMETABLE_READING.md` (copy, don't interpret; check mode against an existing file).
 - Scratch files and logs go in the session scratchpad, never in the repository.
@@ -327,6 +328,7 @@ After an accepted build: `cp viz_data.json tools/.baseline_viz.json`.
 
 ## Recent versions (one line each; the detail is in CHANGELOG.md)
 
+- 194: the Soo Line (Official Guide Tables 1 - 26: Chicago, Twin Cities, Duluth, Sault Ste. Marie, the Dakotas; drawn as CP, labelled Soo Line); B&O dark blue into Chicago Grand Central; St. Paul Union Depot at Brendan's point; Stanbridge union station at the Delamere point.
 - 193: TH&B Toronto - Buffalo pool trains run through in TH&B livery (CP numbers in the notes); NYC trains at the CP LaSalle and Adirondack Jct.; St. Johns - St. Alexander on track to the wye; Stanbridge union station; St. Jerome straight tie gone; B&C plum.
 - 192: NYC St. Lawrence & Adirondack, Montreal (Windsor Station) - Valleyfield - Malone, all stations and nine trains (Official Guide table); Malone traces (Mississippi Rails).
 - 191: CN / GTW Table 95: the Chicago trains through from London (International Limited, Inter-City Limited, La Salle, Ontario Limited) to Dearborn Station; No. 20 fixed to p.m.; GTW car ferry Muskegon - Milwaukee; Grand Rapids - Muskegon over the PRR (Tuscan red).

@@ -2870,3 +2870,36 @@ A review of the whole project (Brendan: "have a peek through ... suggest improve
 - Fix during the build: the SS&C edit had dropped the check that skips pieces already covered by other track, which moved stations and routes on lines across the map
   (Montreal West on the CP North Shore lines, a mile-long spike at Park Avenue); restored before publishing. Only oncn001v, oncn072, oncp022s, onnyc018 and the TH&B lines changed.
 - Counts: 624 lines, 4248 trips, 7129 stops; check_gtfs 0 problems; check_speeds the 3 known hops.
+
+## Version 194
+- The Soo Line (Minneapolis, St. Paul & Sault Ste. Marie, with the leased Wisconsin Central), from the Official Guide, May 1948, pages 1047 - 1052 (Brendan's images, 19 Nov 2026;
+  scans in the private repo, scans/og1948_soo/; table dates from December 1945 to April 1948 as printed). Drawn as CP, labelled Soo Line (Brendan: "Draw as CP, Soo label", like the
+  Central Vermont and the GTW under CN); trip ids SOO; Central time printed, shown two hours earlier. 29 files, on_soo_t001 ... t026a.csv, in on_build (SOO_PLACES):
+  - Table 1 Chicago (Grand Central Station) - Waukesha - Fond du Lac - Neenah - Stevens Point - Marshfield - Owen - Chippewa Falls - St. Paul - Minneapolis: Nos. 1 / 2; No. 17
+    Chicago - Owen - Ladysmith - Superior - Duluth with its Twin Cities section No. 5 from Owen; No. 18 from Duluth, joined at Owen by No. 6 from Minneapolis.
+  - Table 5 Spencer - Abbotsford - Prentice - Mellen - Ashland (117 / 118); Chelsea - Rib Lake and Mellen - Hurley - Ironwood - Bessemer mixed.
+  - Table 6 Minneapolis - St. Paul - Dresser - Frederic - Superior - Duluth (62 / 63).
+  - Table 7 Minneapolis - Ladysmith - Rhinelander - Pembine - Gladstone - Manistique - Trout Lake - Sault Ste. Marie (8 / 7, all stations; replaces CP Table 70's nine-station
+    transcription, kept unbuilt); Rhinelander - Gladstone mixed; Dresser - Ladysmith (84 / 85).
+  - Table 8 Argonne - Crandon - Shawano - Appleton - Neenah-Menasha mixed; Table 10 Hankinson - Oakes - Wishek - Bismarck (251 / 250), Drake - Max - Sanish (259 / 258),
+    Max - Bismarck (271 / 270), Prairie Jct. - Plaza; Table 11 Wishek - Pollock, S.D.; Table 12 Duluth - Moose Lake - Bemidji - Thief River Falls (65 / 64), Lawler - East Lake;
+    Table 13 Superior (21st St.) - Onamia - Brooten - Glenwood; Table 16 Manitowoc - Hilbert Jct. - Menasha - Neenah; Table 17 Barron - Ridgeland; Table 18 Gladstone - Rapid River -
+    Eben Jct.; Table 20 Abbotsford - Athens; Table 21 Marshfield - Greenwood; Table 22 Cameron - Rice Lake; Table 23 Fairmount - Veblen - Grenville; Table 24 Flaxton - Whitetail,
+    Mont.; Table 25 Fordville - Devils Lake - Drake; Table 26 Thief River Falls - Fordville - Egeland - Kenmare and Egeland - Armourdale.
+  - Not entered: the other railways' columns printed with them (C. & N.W., N.P., G.N., Milwaukee Road; through-ticket arrangements, Brendan); the Soo Nos. 3 / 4 and 109 / 110
+    (already drawn as the Mountaineer's Soo leg and the Winnipeger): connections; buses; Table 19 (freight only).
+- Track: the Mississippi Rails Soo KMZ (Tony Howe and David Price) as traces/maritimes/soo.geojson (tools/mar_import_soo.py; branch ties of 150 - 600 m), and Brendan's traces
+  (traces/soo/brendan_soo_pieces.json): the B&O Chicago Terminal into Grand Central Station (B&O property; own bo, B&O dark blue #1D3461, new on the page); Superior: the Soo
+  connection, the Northern Pacific Grassy Point bridge (own np) and the final approach to the Duluth Soo depot; the Ridgeland and Rice Lake branches; St. Paul - Minneapolis over the
+  Northern Pacific "Line A" (trackage rights from 44 57 38.70 N, 93 05 09.44 W; the Mountaineer and the Winnipeger keep the Milwaukee Road) into the Milwaukee Road station, and the Soo
+  Connector past the Great Northern station; Hilbert Jct. - Menasha - Neenah over the Milwaukee Road (trackage rights; own milw).
+- Stations: Grand Central Station, Superior (Winter St. and Ogden Ave.), Duluth (Superior St. and 6th Ave. W.), Menasha (probably the Milwaukee Road station) and St. Paul Union
+  Depot (44 56 48.89 N, 93 05 07.30 W; moved for the Winnipeger, the Mountaineer and the GN too, sk_lines.py) at Brendan's points; Sault Ste. Marie: the CP station on the Ontario
+  side (Brendan), reached by a dashed straight estimate across the International Bridge (no trace yet); No. 1 into the Great Northern station at Minneapolis (Table 1 sign "Arrives
+  G.N. Ry. Station"); Hankinson, Drake, Flaxton, Glenwood, Plummer, Thief River Falls shared with the Mountaineer and the Winnipeger. Other stations by printed mileage.
+- Readings to check (TODO.md): Table 7 Nos. 8 / 7 daily (Table 9 prints ex Sat / ex Mon); No. 7 Bruce printed 7.35 (left out); Table 6 St. Croix Falls section (left out);
+  Table 13 No. 160 days; Table 23 La Mars state.
+- Stanbridge (queued fix): the CP / Central Vermont union station at Delamere's "Gare Stanbridge Union station" (45.11758, -73.03388); the CP trains reach it over Delamere's
+  Stanbridge junction siding (links file), replacing V193's dashed estimate to the CV track end.
+- Counts: 653 lines, 4314 trips, 7546 stops; check_gtfs 0 problems; check_speeds the 3 known hops. Only the Soo lines, oncn001v / oncp022s (Stanbridge) and the St. Paul stop of
+  skcp091 / skjcp13 / skgn007 changed.
