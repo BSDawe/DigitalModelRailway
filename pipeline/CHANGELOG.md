@@ -2903,3 +2903,10 @@ A review of the whole project (Brendan: "have a peek through ... suggest improve
   Stanbridge junction siding (links file), replacing V193's dashed estimate to the CV track end.
 - Counts: 653 lines, 4314 trips, 7546 stops; check_gtfs 0 problems; check_speeds the 3 known hops. Only the Soo lines, oncn001v / oncp022s (Stanbridge) and the St. Paul stop of
   skcp091 / skjcp13 / skgn007 changed.
+
+## Version 195
+- Barre & Chelsea from the Official Guide, April 25, 1948 (Brendan's image, 19 Nov 2026; private repo scans/og1948_bc/): on_bc_t026.csv now has the train numbers (1, 3, 91 to
+  Montpelier; 2, 4, 90 from Montpelier), all nine intermediate stations (Boltonville, South Ryegate, Groton, Rickers, Lakeside, Lanesboro, Marshfield, Plainfield, Fairmont; by printed
+  mileage) and the printed miles (Wells River 37.9 from Montpelier). Same times as the CP Table 26 version (V189); No. 4 does not call at Wells River (the CP table had f3.35).
+  Barre - Montpelier and the Barre branch (to Websterville): freight only.
+- Counts: 653 lines, 4314 trips, 7555 stops; check_gtfs 0 problems.

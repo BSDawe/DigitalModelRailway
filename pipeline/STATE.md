@@ -1,7 +1,7 @@
 # The Digital Model Railway — project state
 
 Read this first. It is meant to be enough to start a short, single-task chat without replaying the project's history.
-Last updated 19 November 2026 (Version 194). This file is the current state and the standing rules; the version-by-version history is in CHANGELOG.md.
+Last updated 19 November 2026 (Version 195). This file is the current state and the standing rules; the version-by-version history is in CHANGELOG.md.
 
 ## What this is
 
@@ -328,6 +328,7 @@ After an accepted build: `cp viz_data.json tools/.baseline_viz.json`.
 
 ## Recent versions (one line each; the detail is in CHANGELOG.md)
 
+- 195: Barre & Chelsea from the Official Guide (train numbers, all stations, printed miles).
 - 194: the Soo Line (Official Guide Tables 1 - 26: Chicago, Twin Cities, Duluth, Sault Ste. Marie, the Dakotas; drawn as CP, labelled Soo Line); B&O dark blue into Chicago Grand Central; St. Paul Union Depot at Brendan's point; Stanbridge union station at the Delamere point.
 - 193: TH&B Toronto - Buffalo pool trains run through in TH&B livery (CP numbers in the notes); NYC trains at the CP LaSalle and Adirondack Jct.; St. Johns - St. Alexander on track to the wye; Stanbridge union station; St. Jerome straight tie gone; B&C plum.
 - 192: NYC St. Lawrence & Adirondack, Montreal (Windsor Station) - Valleyfield - Malone, all stations and nine trains (Official Guide table); Malone traces (Mississippi Rails).
