@@ -202,6 +202,9 @@ Each runs to an International Boundary point (time estimated) or to the last Can
     N.Y.C. Niagara Falls station, then backed out onto the line along the top of the gorge towards Buffalo. The connection from the station onto the gorge line is Brendan's trace
     (traces/lv/brendan_niagara_gorge_connection.json, own nyc; KML in the private repo; missing from the Mississippi Rails file). Wanted: the rest of the L.V. table (Geneva -
     New York), L.V. / N.Y.C. traces Niagara Falls - Buffalo - Depew - New York, a Depew point (Brendan: 42 54 35.36 N, 78 41 56.96 W; Buffalo L.V. station 42 52 38.87 N, 78 52 31.52 W; L.V. KMZ received 20 Nov 2026). Niagara Falls, N.Y. (N.Y.C. station, also for the L.V.): Brendan's point 43 06 37.09 N, 79 03 04.77 W (43.110303, -79.051325; 20 Nov 2026).
+- [ ] Niagara Falls bridges (Brendan, 20 Nov 2026): fix the bridge situation. CN and the N.Y.C. had separate bridges, close together; on the map the CN line disappears at the
+  international boundary (mid-bridge, where the Ontario collection ends) and the N.Y.C. track jumps across onto the CN bridge (Claude's 0.4 km tie, own nyc, boundary - the junction at
+  the U.S. end; tools/mar_import_lv.py). Wanted: the CN bridge drawn whole as CN to the U.S. side and its connection to the N.Y.C., and the N.Y.C. bridge if trains used it.
 - [ ] Niagara River, Suspension Bridge: CN Hamilton - Niagara Falls, N.Y. 86, 90 / 93 The Maple Leaf (see above), 91, 95, 102, 107, 186; MC 358 The Canadian - The Niagara.
 - [ ] Detroit River: MC trains above at the tunnel (Windsor - Detroit); NEXT (Brendan, 20 Nov 2026): his NYC_Canada_Export.kmz (Mississippi Rails, private repo traces/lv/) has the
   Michigan Central tunnel and Detroit lines (not the Chicago terminal access): take the CP trains on to Detroit (Detroit times in on_cp_t049w.csv's notes); later string the NYC lines
