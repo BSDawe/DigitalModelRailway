@@ -2972,3 +2972,15 @@ A review of the whole project (Brendan: "have a peek through ... suggest improve
   8.10 a.m. as printed in the trains' notes; the miles beyond Springfield are traced (134.8), not printed. Harlem and Park Avenue own nyc; Woodlawn - New Rochelle own nh.
 - Arnold Transit: the 1958 name M.S. Ottawa taken off the Les Cheneaux boat; all Arnold boats unnamed (Brendan, 20 Nov 2026).
 - Counts: 663 lines, 4346 trips, 7604 stops, 64 agencies; check_gtfs 0 problems.
+
+## Version 202
+- The Maple Leaf (CN Nos. 90 / 93) runs on from the Niagara River as a CN train to Buffalo (Lehigh Valley station), Brendan's plan of 20 Nov 2026 (the L.V. Buffalo - New York
+  train to follow as its own connecting train). Times from the Lehigh Valley's Washington - New York table (Official Guide; private repo scans/og1948_lv/): Suspension Bridge ar 8.50 /
+  lv 9.00 p.m., Niagara Falls, N.Y. 9.10, Depew (est.), Buffalo ar 10.25 p.m.; north Buffalo lv 3.50 a.m., Depew (est.), Niagara Falls 5.11, Suspension Bridge ar 5.18 / lv 5.30 a.m.
+  Depew (Brendan's point) is where the section meets the L.V. New York trains (note h); its times and mileage (by the trace) are estimated. Niagara Falls, N.Y. is the N.Y.C. station
+  (Brendan's point; the L.V. had none of its own); Buffalo at Brendan's L.V. station point. Suspension Bridge is put at the junction at the U.S. end of the bridge (Claude), 0.1 mi from
+  the station against 1.8 printed: to check.
+- Track: tools/mar_import_lv.py -> traces/maritimes/lv.geojson, the Mississippi Rails Lehigh Valley KMZ (own lv, Lehigh Valley red #A3262A, Claude's pick; the Buffalo terminal
+  tracks come from the KMZ's historic-map folders), Brendan's trace from the N.Y.C. Niagara Falls station out onto the gorge line (own nyc), and a dashed straight estimate along
+  the N.Y.C. from the gorge line to Niagara Jct. (North Tonawanda), where the L.V.'s Depew & Tonawanda line begins (N.Y.C. trace wanted).
+- Counts: 663 lines, 4346 trips, 7608 stops, 64 agencies; check_gtfs 0 problems.
