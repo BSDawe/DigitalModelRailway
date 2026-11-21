@@ -1,0 +1,13 @@
+# Central Vermont Table 5 (Official Guide, May 1948): the Ambassador's New York section, moved out of on_cn_t051v.csv (20 Nov 2026) to run through to New York (Grand Central)
+# over the New Haven by Woodlawn Jct. and the New York Central Harlem line (Brendan's traces, 20 Nov 2026; traces/nec/). Only the Grand Central times are printed (the trains' notes):
+# No. 59 ar 9.08 p.m., No. 66 lv 8.10 a.m.; Hartford and New Haven are passed without calls. Miles: Table 5 / the B&M to Springfield, then the traced miles (not printed). Eastern time.
+#train col=No7459 num=74 dir=down days=daily kind=passenger name="The Ambassador" to="New York" note="The Ambassador's New York section: White River Jct. 1.50 p.m. (from No. 332) by the Boston & Maine (No. 74) to Springfield 5.23 p.m. and the New Haven (No. 59) to New York (Grand Central) 9.08 p.m.."
+#train col=No6677 num=77 dir=up days=daily kind=passenger name="The Ambassador" from="New York" note="The Ambassador's New York section: New York (Grand Central) 8.10 a.m. by the New Haven (No. 66) and the Boston & Maine (No. 77) from Springfield 11.32 a.m. to White River Jct. 2.50 p.m. (for No. 307 to Montreal)."
+mile,station,principal,prov,tz,No7459,No6677
+182.9,"White River Jct., Vt.",1,VT,E,lv 1.50p,ar 2.50p
+196.8,"Windsor, Vt.",1,VT,E,2.12p,2.28p
+221.9,"Bellows Falls, Vt.",1,VT,E,2.57p,1.48p
+245.6,"Brattleboro, Vt.",1,VT,E,3.35p,1.13p
+256.2,"East Northfield, Mass.",0,MA,E,3.54p,12.54p
+305.9,"Springfield, Mass.",1,MA,E,5.23p,11.32a
+440.7,"New York (Grand Central), N.Y.",1,NY,E,ar 9.08p,lv 8.10a

@@ -1,7 +1,7 @@
 # Central Vermont Railway (CN subsidiary: drawn as CN, labelled Central Vermont), Table 5: The Ambassador, Montreal - St. Albans - White River Jct. - Boston (Boston & Maine from White River Jct.,
 # by Concord, Manchester, Nashua and Lowell, the B&M's printed miles from White River Jct.). Official Guide, May 1948, Central Vermont Table 5 (April 25, 1948; Brendan, 17 Nov 2026); Montreal - Cantic as
 # CN Table 51. Eastern time. The B&M stations between White River Jct. and Concord are not printed (waiting for the B&M timetables). The rest of Table 5 is on_cn_t051v.csv.
-#train col=No332 num=332 dir=down days=daily kind=passenger name="The Ambassador" to=Boston note="The Ambassador: Montreal 8.20 a.m. by the Central Vermont to White River Jct. 1.40 p.m., the Boston & Maine on to Boston (North Station) 5.50 p.m. The New York section leaves White River Jct. 1.50 p.m. (No. 74-59, on_cn_t051v). Motor coach for Stowe at Waterbury; Burlington and Montpelier by motor coach."
+#train col=No332 num=332 dir=down days=daily kind=passenger name="The Ambassador" to=Boston note="The Ambassador: Montreal 8.20 a.m. by the Central Vermont to White River Jct. 1.40 p.m., the Boston & Maine on to Boston (North Station) 5.50 p.m. The New York section leaves White River Jct. 1.50 p.m. (No. 74-59, on_cn_t051n). Motor coach for Stowe at Waterbury; Burlington and Montpelier by motor coach."
 #train col=No307 num=307 dir=up days=daily kind=passenger name="The Ambassador" from=Boston note="The Ambassador: Boston (North Station) 11.30 a.m. by the Boston & Maine to White River Jct. 3.05 p.m. (joined there by the New York section, No. 66-77), the Central Vermont to Montreal 8.30 p.m."
 mile,station,principal,prov,tz,No332,No307
 0.0,Montreal (Central Station),1,QC,E,lv 8.20a,ar 8.30p

@@ -134,7 +134,7 @@ for key, (label, seq, sched) in ROUTES.items():
                 + ('; stops on signal at landings between Hessel and Cedarville; the 1948 Guide names Coryell Island as the end of the route' if key in ('atc_lc', 'atc_cl') else '')
                 + '. Shown in Pacific time.')
         trips.append(dict(id=f'ATC-{key[4:].upper()}-{ts[0] // 3600 + 3:02d}{ts[0] % 3600 // 60:02d}', num='', name='Arnold Transit', svc='W_1111111', dir=0,
-                          stops=[[i, t, t, 1] for i, t in enumerate(ts)], vessel='M.S. Ottawa (1958)' if key in ('atc_lc', 'atc_cl') else '', note=note))
+                          stops=[[i, t, t, 1] for i, t in enumerate(ts)], vessel='', note=note))
     for s_ in st: s_.pop('key')
     NEW.append(dict(key=key, kind='v', label=label, mainline=True, water=True, livery='atc', src=SRC, owner='atc', route=route, stations=st,
                     dirLabels=['to ' + st[-1]['name'], ''], segments=[], trips=trips))

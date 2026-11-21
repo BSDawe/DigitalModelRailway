@@ -11,10 +11,6 @@ Last updated 17 November 2026 (Version 180).
 - [ ] CN Table 116 (Longlac - Fort William, Nos. 79 / 80): the Toronto section may be a connection with Nos. 3 / 4 at Longlac rather than through cars (Brendan not certain). Matters for chaining. (23 Oct)
 
 ## Fixes queued (Brendan: "don't fix yet"; ask before the next rebuild whether to include them)
-- [ ] Out-and-back joins (left for now, Brendan 11 Nov 2026: could be one train movement): Spl Kenora - Winnipeg - Kenora (skcp005e) and mixed M332
-  Eyre - Acadia Valley - Eyre (skcn229b) are linked to their own return trips by the older group-key chaining in real_ends.py.
-- [ ] Arnold Transit ship names (Brendan, 20 Nov 2026: "take the ship names of the arnold fleet"; queued, not built): the Les Cheneaux trips carry "M.S. Ottawa (1958)"
-  from the 1958 brochure; the St. Ignace and Mackinaw City boats are unnamed (atc_build.py). Settle with Brendan when the queue is built.
 
 ## CP Maritimes (started 10 Nov 2026)
 - [ ] DAR readings (V154): No. 33 (Windsor - Kentville, from No. 4) and No. 4 (Truro - Windsor) have no sign: entered daily except Sunday. No. 3 (34-3) entered Saturday only like No. 34. Boat days at Evangeline Wharf: No. 98 Tue., Thu., Sat. (the Boston boat in); No. 95 Tue., Thu. (the boat out; no No. 95 on Sundays); No. 99 leaving Halifax Mon., Wed., Fri. (Brendan: to the wharf on boat days only). Wharf times estimated.
@@ -127,7 +123,7 @@ Maritime tables where the traced line differs from the printed miles by 1 mi and
   B&O dark blue (#1D3461; dark theme #8AA6DC; Claude's pick of shade), 10.0 mi traced / 10.9 printed; Table 10 Nos. 3 / 4 and Table 26 Nos. 109 / 110 are the existing Mountaineer / Winnipeger (connections only).
 - [ ] Straits of Mackinac car ferry (Mackinaw City - St. Ignace, train ferry in traces/maritimes/dssa.geojson, tools/mar_import_dssa.py): drawn as a straight line
   dock to dock, which cuts across land; give it a course over the water (Brendan, 20 Nov 2026).
-- [ ] Arnold Transit (V200): August 1950 Official Guide times stand in for July 1948 (the May 1948 Guide's St. Ignace list looks off-season); crossing times
+- [ ] Arnold Transit (V200; boats unnamed since V201): August 1950 Official Guide times stand in for July 1948 (the May 1948 Guide's St. Ignace list looks off-season); crossing times
   35 / 40 minutes from the 1958 brochure. Mackinaw City State Ferry Dock point is Brendan's estimate. Les Cheneaux: the lane goes round the outside of the islands
   (Hessel channels closed at basemap resolution; a hand lane wanted?); Coryell Island (the 1948 terminus) not drawn.
 - [ ] White River Jct. - Boston, B&M 302 / 325 (the Red Wing's and the New Englander's Boston cars in one train): drawn as the CP's Red Wing for now; who owns the leg to be settled with the B&M timetables (Brendan, 17 Nov 2026).
@@ -189,11 +185,11 @@ Maritime tables where the traced line differs from the printed miles by 1 mi and
 - [ ] Water (Owen Sound Transportation Co. done in Version 183, estimated: a 1948 schedule would firm it up; Ontario Northland's Chief Commanda on Lake Nipissing done in Version 185, highly speculative: the regular 1948 days and hours wanted); Pelee Island and Wolfe Island ferries; Northumberland Ferries (Wood Islands - Caribou); Grand Manan ferry; Clarke Steamship (Gaspe, North Shore). Lake Winnipeg (Keenora) is in; the northern river boats were no longer scheduled common carriers after 1947 (Brendan).
 
 ## Cross-border trains cut at the border (stage 4; list of 11 Nov 2026)
-- [ ] The Ambassador's New York section (CV Table 5, Nos. 74 / 77) ends at Springfield: Grand Central needs the New Haven New Rochelle - Woodlawn and the NYC Harlem line (V197: the
+- [x] The Ambassador's New York section (CV Table 5, Nos. 74 / 77) runs to Grand Central (V201, Brendan's New Haven / Harlem / GCT traces). (V197: the
   Washingtonian / Montrealer run to Washington on Brendan's NEC2 track; the New Haven and PRR traces may replace it later; New Haven colour #B5651D is Claude's pick).
 Each runs to an International Boundary point (time estimated) or to the last Canadian station; the U.S. part waits for the U.S. railways.
 - [ ] Niagara River, Black Rock (Buffalo): Michigan Central through trains Windsor - Fort Erie (8 Wolverine, 17, 33 New England Wolverine, 35, 39 / 40 North Shore Limited, 44, 50 / 51 Empire State Express, 364, motors 365 / 366); TH&B Hamilton - Buffalo 73, 76, 371, 372, 374, 375, 379, 380, 382, 383 (through from / to Toronto as CP 7xx / 8xx).
-- [ ] Niagara River, Suspension Bridge: CN Hamilton - Niagara Falls, N.Y. 86, 90 / 93 The Maple Leaf (Lehigh Valley to New York), 91, 95, 102, 107, 186; MC 358 The Canadian - The Niagara.
+- [ ] Niagara River, Suspension Bridge: CN Hamilton - Niagara Falls, N.Y. 86, 90 / 93 The Maple Leaf (Lehigh Valley to New York (Pennsylvania Station): needs the L.V. Official Guide table and traces; 20 Nov 2026), 91, 95, 102, 107, 186; MC 358 The Canadian - The Niagara.
 - [ ] Detroit River: MC trains above at the tunnel (Windsor - Detroit); CP Toronto - Windsor 19, 20, 21, 22, 37, 38, 634, 635 (and the pool trains 6 / 22 from Detroit) stop at Windsor. CN's Detroit sections (Brush Street) are built to Detroit.
 - [x] St. Clair Tunnel (done in Version 191): CN 5 The La Salle, 6 / 17 The Inter-City Limited, 14 / 15 The International Limited, 20 The Ontario Limited (Grand Trunk Western to Chicago).
   Version 190: GTW Tables 146, 148, 149, 150, 152, 153 built; St. Clair Tunnel, Brush Street and the Chicago line (Elsdon - C&WI - Dearborn Station) in the track. Version 191: CN Table 95 (Port Huron - Chicago) built; the Chicago trains run through to Dearborn Station. Open: a colour for the C&WI (own cwi; Elsdon - Dearborn is drawn in it); the car ferry docks (approximate).
@@ -216,6 +212,10 @@ Each runs to an International Boundary point (time estimated) or to the last Can
 - [x] Sydney & Louisburg: built (V163). Colour #5B3A8C is Claude's pick. Victoria Jct. - Glace Bay 9.9 mi traced / 11.0 printed (the trace may take a later route).
 
 ## Done and answered
+### Fixes done in Version 201 (20 Nov 2026)
+- Arnold Transit boats unnamed (the 1958 M.S. Ottawa name taken off).
+- Out-and-back joins (Spl Kenora - Winnipeg - Kenora, skcp005e; mixed M332 Eyre - Acadia Valley - Eyre, skcn229b; linked to their own return trips by the older group-key chaining in
+  real_ends.py): left as they are (Brendan, 20 Nov 2026: unimportant; leave unless it causes issues). Removed from the queue.
 ### Fixes done in Version 194 (19 Nov 2026)
 - Stanbridge union station at the Delamere point (45.11758, -73.03388); the CP trains reach it over the Delamere Stanbridge junction siding; the dashed estimate is gone.
 ### Fixes done in Version 193 (18 Nov 2026)

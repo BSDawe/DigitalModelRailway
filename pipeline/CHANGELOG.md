@@ -2964,3 +2964,11 @@ A review of the whole project (Brendan: "have a peek through ... suggest improve
     are closed at the basemap's resolution).
   - Crossing times from the July 1958 Arnold Line brochure (none printed in either Guide).
 - Counts: 662 lines, 4346 trips, 7603 stops, 64 agencies; check_gtfs 0 problems.
+
+## Version 201
+- The Ambassador's New York section (Nos. 74-59 / 66-77) runs through to New York (Grand Central): Springfield over the New Haven to New Rochelle, Woodlawn Jct. and the New
+  York Central Harlem line and Park Avenue, on Brendan's traces of 20 Nov 2026 (New Haven Woodlawn Jct. - state line, NYC Harlem Mott Haven Jct. - White Plains, GCT final
+  approach; tools/mar_import_nec.py, traces/nec/brendan_ny_pieces.json; KMLs in the private repo). Moved into its own file, on_cn_t051n.csv; Grand Central ar 9.08 p.m. / lv
+  8.10 a.m. as printed in the trains' notes; the miles beyond Springfield are traced (134.8), not printed. Harlem and Park Avenue own nyc; Woodlawn - New Rochelle own nh.
+- Arnold Transit: the 1958 name M.S. Ottawa taken off the Les Cheneaux boat; all Arnold boats unnamed (Brendan, 20 Nov 2026).
+- Counts: 663 lines, 4346 trips, 7604 stops, 64 agencies; check_gtfs 0 problems.
