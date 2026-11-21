@@ -189,7 +189,17 @@ Maritime tables where the traced line differs from the printed miles by 1 mi and
   Washingtonian / Montrealer run to Washington on Brendan's NEC2 track; the New Haven and PRR traces may replace it later; New Haven colour #B5651D is Claude's pick).
 Each runs to an International Boundary point (time estimated) or to the last Canadian station; the U.S. part waits for the U.S. railways.
 - [ ] Niagara River, Black Rock (Buffalo): Michigan Central through trains Windsor - Fort Erie (8 Wolverine, 17, 33 New England Wolverine, 35, 39 / 40 North Shore Limited, 44, 50 / 51 Empire State Express, 364, motors 365 / 366); TH&B Hamilton - Buffalo 73, 76, 371, 372, 374, 375, 379, 380, 382, 383 (through from / to Toronto as CP 7xx / 8xx).
-- [ ] Niagara River, Suspension Bridge: CN Hamilton - Niagara Falls, N.Y. 86, 90 / 93 The Maple Leaf (Lehigh Valley to New York (Pennsylvania Station): needs the L.V. Official Guide table and traces; 20 Nov 2026), 91, 95, 102, 107, 186; MC 358 The Canadian - The Niagara.
+- [ ] The Maple Leaf (Brendan, 20 Nov 2026; Official Guide L.V. Washington - New York table, top rows in the private repo, scans/og1948_lv/maple_leaf_toronto_buffalo_geneva.png).
+  Plan: a CN train Toronto - Buffalo, AND a connecting Lehigh Valley train Buffalo - New York (Pennsylvania Station).
+  - Read so far (Eastern time). South: Toronto *6.30 p.m., Sunnyside 6.41, Hamilton 7.35, St. Catharines ar 8.18, Niagara Falls, Ont. ar 8.40, Suspension Bridge ar 8.50 (C.N.);
+    Suspension Bridge lv *9.00, Niagara Falls, N.Y. ar 9.10, Buffalo ar 10.25 (L.V., 35.1 mi); Buffalo lv h9.40 p.m. (L.V.), Geneva ar 11.39 p.m. ... North: Buffalo ar 4.42 a.m.;
+    Buffalo lv h3.50 a.m., Niagara Falls, N.Y. 5.11, Suspension Bridge ar 5.18 (L.V.); Suspension Bridge lv *5.30 (C.N.), Niagara Falls, Ont. 5.45, St. Catharines 6.09, Hamilton
+    6.55, Sunnyside 7.44, Toronto ar 7.55 a.m. Note h: the trains connect at Depew, not Buffalo (Depew is not on the map yet).
+  - Track (Brendan): the L.V. runs as far north as its own track goes, then N.Y.C. trackage rights to Niagara Falls; in 1948 Niagara Falls trains came over the bridge into the
+    N.Y.C. Niagara Falls station, then backed out onto the line along the top of the gorge towards Buffalo. The connection from the station onto the gorge line is Brendan's trace
+    (traces/lv/brendan_niagara_gorge_connection.json, own nyc; KML in the private repo; missing from the Mississippi Rails file). Wanted: the rest of the L.V. table (Geneva -
+    New York), L.V. / N.Y.C. traces Niagara Falls - Buffalo - Depew - New York, a Depew point.
+- [ ] Niagara River, Suspension Bridge: CN Hamilton - Niagara Falls, N.Y. 86, 90 / 93 The Maple Leaf (see above), 91, 95, 102, 107, 186; MC 358 The Canadian - The Niagara.
 - [ ] Detroit River: MC trains above at the tunnel (Windsor - Detroit); CP Toronto - Windsor 19, 20, 21, 22, 37, 38, 634, 635 (and the pool trains 6 / 22 from Detroit) stop at Windsor. CN's Detroit sections (Brush Street) are built to Detroit.
 - [x] St. Clair Tunnel (done in Version 191): CN 5 The La Salle, 6 / 17 The Inter-City Limited, 14 / 15 The International Limited, 20 The Ontario Limited (Grand Trunk Western to Chicago).
   Version 190: GTW Tables 146, 148, 149, 150, 152, 153 built; St. Clair Tunnel, Brush Street and the Chicago line (Elsdon - C&WI - Dearborn Station) in the track. Version 191: CN Table 95 (Port Huron - Chicago) built; the Chicago trains run through to Dearborn Station. Open: a colour for the C&WI (own cwi; Elsdon - Dearborn is drawn in it); the car ferry docks (approximate).
