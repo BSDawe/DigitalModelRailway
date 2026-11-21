@@ -102,6 +102,10 @@ def apply(viz, gt):
 HUBS = ('Montreal',)   # Brendan, 11 Nov 2026: Toronto - Montreal the only same-number places; then the Toronto candidates "are all Toronto through trains".
 # Montreal stays held: CN 16 Montreal - Portland, Me. is a different train from No. 16 The Maple Leaf (Detroit - Toronto - Montreal).
 HUB_JOINS = set()          # (first trip id, next trip id) ruled by Brendan at the hubs
+# Trains that change number but run through (Brendan, 20 Nov 2026): CN Table 79 prints each pair in one column, the number changing at Hamilton where the
+# subdivision changes direction (Toronto - Hamilton odd south, the Niagara line even south). (first number, next number, station name prefix)
+NUM_JOINS = {('101', '102', 'Hamilton (James St.)'), ('89', '90', 'Hamilton (James St.)'), ('187', '184', 'Hamilton (James St.)'),
+             ('93', '94', 'Hamilton (James St.)'), ('91', '92', 'Hamilton (James St.)'), ('107', '108', 'Hamilton (James St.)')}
 CPF = {'Canadian Pacific', 'Dominion Atlantic', 'Quebec Central'}
 GENERIC = {'', 'local', 'mixed', 'motor train', 'train', 'motor', 'mixed train', 'gas-electric car', 'quebec central', 'dominion atlantic'}
 
@@ -135,7 +139,7 @@ def _auto_chain(viz, gt):
     for g, E in ends.items():
         for x in E:
             for y in starts.get(g, []):
-                if x['t'] is y['t'] or x['num'] != y['num']: continue
+                if x['t'] is y['t'] or (x['num'] != y['num'] and not any(x['num'] == p and y['num'] == q and x['b']['name'].startswith(h) for p, q, h in NUM_JOINS)): continue
                 if x['L']['label'] != y['L']['label'] and not {x['L']['label'], y['L']['label']} <= CPF: continue
                 if x['nm'] and y['nm'] and x['nm'] != y['nm']: continue
                 if y['b']['gid'] == x['a']['gid']: continue                                    # a turnaround

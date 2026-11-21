@@ -2993,3 +2993,10 @@ A review of the whole project (Brendan: "have a peek through ... suggest improve
   N.Y.C. Niagara Falls - Gratwick - Tonawanda - Niagara Jct. comes from his Mississippi Rails NYC_Canada_Export.kmz (only those pieces for now), replacing the dashed estimate;
   Depew - Buffalo now runs on the L.V. track (was drawn straight: the length check refused the track against the printed miles; forced).
 - Counts: 663 lines, 4346 trips, 7608 stops, 64 agencies; check_gtfs 0 problems.
+
+## Version 204
+- CN trains that change number at Hamilton run through as one train (Brendan, 20 Nov 2026; checked against the Table 79 scan, where each pair is printed in one column):
+  101 / 102, 89 / 90 (The Maple Leaf), 187 / 184 southbound; 93 / 94 (The Maple Leaf), 91 / 92, 107 / 108 northbound. NUM_JOINS in real_ends.py (the through-train rule otherwise
+  needs the same number). Not joined: 83 / 86 and 183 / 186 (sections off a London train), 95 / 6 (added to the Inter-City Limited), 9 / 84 (printed in one column, but 84 leaves
+  Hamilton two hours later and only daily except Sunday).
+- Counts: 663 lines, 4346 trips, 7608 stops, 64 agencies; 179 through-train joins; check_gtfs 0 problems.

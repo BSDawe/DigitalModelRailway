@@ -230,6 +230,8 @@ Each runs to an International Boundary point (time estimated) or to the last Can
 - [x] Sydney & Louisburg: built (V163). Colour #5B3A8C is Claude's pick. Victoria Jct. - Glace Bay 9.9 mi traced / 11.0 printed (the trace may take a later route).
 
 ## Done and answered
+### Done in Version 204 (20 Nov 2026)
+- CN Table 79 trains changing number at Hamilton joined (101/102, 89/90, 187/184, 93/94, 91/92, 107/108). Left: 9 / 84 (one column, 2-hour wait, 84 ex Sun), 95 / 6, 83 / 86, 183 / 186.
 ### Fixes done in Version 201 (20 Nov 2026)
 - Arnold Transit boats unnamed (the 1958 M.S. Ottawa name taken off).
 - Out-and-back joins (Spl Kenora - Winnipeg - Kenora, skcp005e; mixed M332 Eyre - Acadia Valley - Eyre, skcn229b; linked to their own return trips by the older group-key chaining in
