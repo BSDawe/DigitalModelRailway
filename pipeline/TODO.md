@@ -198,7 +198,7 @@ Each runs to an International Boundary point (time estimated) or to the last Can
   - Track (Brendan): the L.V. runs as far north as its own track goes, then N.Y.C. trackage rights to Niagara Falls; in 1948 Niagara Falls trains came over the bridge into the
     N.Y.C. Niagara Falls station, then backed out onto the line along the top of the gorge towards Buffalo. The connection from the station onto the gorge line is Brendan's trace
     (traces/lv/brendan_niagara_gorge_connection.json, own nyc; KML in the private repo; missing from the Mississippi Rails file). Wanted: the rest of the L.V. table (Geneva -
-    New York), L.V. / N.Y.C. traces Niagara Falls - Buffalo - Depew - New York, a Depew point.
+    New York), L.V. / N.Y.C. traces Niagara Falls - Buffalo - Depew - New York, a Depew point. Niagara Falls, N.Y. (N.Y.C. station, also for the L.V.): Brendan's point 43 06 37.09 N, 79 03 04.77 W (43.110303, -79.051325; 20 Nov 2026).
 - [ ] Niagara River, Suspension Bridge: CN Hamilton - Niagara Falls, N.Y. 86, 90 / 93 The Maple Leaf (see above), 91, 95, 102, 107, 186; MC 358 The Canadian - The Niagara.
 - [ ] Detroit River: MC trains above at the tunnel (Windsor - Detroit); CP Toronto - Windsor 19, 20, 21, 22, 37, 38, 634, 635 (and the pool trains 6 / 22 from Detroit) stop at Windsor. CN's Detroit sections (Brush Street) are built to Detroit.
 - [x] St. Clair Tunnel (done in Version 191): CN 5 The La Salle, 6 / 17 The Inter-City Limited, 14 / 15 The International Limited, 20 The Ontario Limited (Grand Trunk Western to Chicago).
