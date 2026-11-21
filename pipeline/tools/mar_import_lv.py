@@ -6,7 +6,8 @@ Niagara Falls (Brendan, 20 Nov 2026): the L.V. ran as far north as its own track
 to Niagara Falls; trains came over the bridge into the N.Y.C. Niagara Falls station and backed out onto the line along the top of the gorge. Brendan's trace of the connection from
 the station onto the gorge line (traces/lv/brendan_niagara_gorge_connection.json, own nyc); the station at his point. The N.Y.C. between the gorge line and Niagara Jct. is not on
 file: a straight estimate (dashed) until a trace comes.
-Usage: python3 tools/mar_import_lv.py <Lehigh_Valley.kmz>"""
+V203: the N.Y.C. Niagara Falls - Gratwick - Tonawanda - Niagara Jct. pieces from Brendan's NYC_Canada_Export.kmz replace that estimate.
+Usage: python3 tools/mar_import_lv.py <Lehigh_Valley.kmz> <NYC_Canada_Export.kmz>"""
 import json, math, os, re, sys, zipfile
 import xml.etree.ElementTree as ET
 HERE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -38,6 +39,19 @@ def walk(e, folder):
                 else: st = 'ok'
                 feats.append(F(f'Lehigh Valley ({folder}): {nm}', pts, 'Mississippi Rails (Tony Howe and David Price), KMZ supplied by Brendan' + (f'; KMZ note: {desc[:160]}' if desc else ''), st))
 walk(ET.fromstring(s), 'Lehigh Valley')
+# the N.Y.C. between Niagara Falls and Niagara Jct. (L.V. trackage rights), from Brendan's Mississippi Rails "NYC_Canada_Export.kmz" (20 Nov 2026; private repo traces/lv/): only these
+# pieces for now, so the N.Y.C.'s Buffalo lines cannot pull the L.V. trains off the L.V.
+NYC_KEEP = ('Gratwick NY to Niagara Falls NY', 'Tonawanda NY to Gratwick', 'Tonawanda existing', 'Batavia NY to Tonawanda NY')
+if len(sys.argv) > 2:
+    s2 = zipfile.ZipFile(sys.argv[2]).read([n for n in zipfile.ZipFile(sys.argv[2]).namelist() if n.endswith('.kml')][0])
+    for c in ET.fromstring(s2).iter(K + 'Placemark'):
+        n = c.find(K + 'name'); nm = (n.text or '').strip() if n is not None else ''
+        if nm not in NYC_KEEP: continue
+        d = c.find(K + 'description'); desc = re.sub(r'<[^>]+>', ' ', (d.text or '') if d is not None else '').strip()
+        for q in c.iter(K + 'coordinates'):
+            pts = [tuple(map(float, x.split(',')[:2])) for x in q.text.split()]
+            if len(pts) >= 2: feats.append(F(f'New York Central: {nm}', pts, 'Mississippi Rails NYC_Canada_Export.kmz, supplied by Brendan' + (f'; KMZ note: {desc[:160]}' if desc else ''),
+                                             own='nyc', constituent='New York Central'))
 def km(a, b): return math.hypot((a[0] - b[0]) * 111.32 * math.cos(math.radians(a[1])), (a[1] - b[1]) * 110.57)
 ok = [(f['properties']['name'], [tuple(q) for q in f['geometry']['coordinates']]) for f in feats if f['properties']['status'] == 'ok']
 ties = []
@@ -55,10 +69,8 @@ G = json.load(open(os.path.join(HERE, 'traces', 'lv', 'brendan_niagara_gorge_con
 g = [tuple(q) for q in G['coords']]; STA = tuple(G['station']['lonlat']); BOUNDARY = (-79.05833, 43.10923); NIAGARA_JCT = (-78.8370446, 43.019476)
 feats.append(F('N.Y.C.: the Suspension Bridge approach, the international boundary - the Niagara Falls station junction', [BOUNDARY, g[0]], 'tie (Claude): 0.4 km over the bridge approach',
                group='link', own='nyc', constituent='New York Central'))
-feats.append(F('N.Y.C.: Niagara Falls station track (Brendan\'s station point)', [g[0], STA], "Brendan's station point, 20 Nov 2026 (0.2 km from his connection trace)", group='brendan', own='nyc', constituent='New York Central'))
+feats.append(F('N.Y.C.: Suspension Bridge station track (Brendan\'s station point)', [g[0], STA], "Brendan's station point, 20 Nov 2026 (0.2 km from his connection trace)", group='brendan', own='nyc', constituent='New York Central'))
 feats.append(F(G['name'] + ' (Brendan)', g, G['source'], group='brendan', own='nyc', constituent='New York Central'))
-feats.append(F('N.Y.C.: Niagara Falls (gorge line) - Niagara Jct., North Tonawanda (est)', [g[-1], NIAGARA_JCT], 'straight estimate (Claude): the N.Y.C. line along the river is not on file yet (trace wanted)',
-               group='link', est=True, own='nyc', constituent='New York Central'))
 json.dump(dict(type='FeatureCollection', features=feats), open(os.path.join(HERE, 'traces', 'maritimes', 'lv.geojson'), 'w'))
 from collections import Counter
 print(len(feats), 'pieces', Counter(f['properties']['status'] for f in feats))

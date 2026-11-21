@@ -1,7 +1,7 @@
 # The Digital Model Railway — project state
 
 Read this first. It is meant to be enough to start a short, single-task chat without replaying the project's history.
-Last updated 20 November 2026 (Version 202). This file is the current state and the standing rules; the version-by-version history is in CHANGELOG.md.
+Last updated 20 November 2026 (Version 203). This file is the current state and the standing rules; the version-by-version history is in CHANGELOG.md.
 
 ## What this is
 
@@ -294,6 +294,7 @@ lat, mile, lmile?, principal, gid, note, xy?, slow?}], dirLabels, segments [{own
 - **Springfield, Mass.**: every railway's trains call at Springfield Union Station (42.106238, -72.593270), on the New York Central (Boston & Albany) line: NYC (B&A), B&M (and the Central Vermont trains it hosts) and the New Haven. North - south through trains reverse there (Brendan, 18 Nov 2026).
 - **The Soo Line** and the **Duluth, South Shore & Atlantic** (CP subsidiaries) are drawn as CP with their own labels, Soo Line (like the Central Vermont and the GTW under CN; Brendan, 19 Nov 2026); its trains use the CP station at Sault Ste. Marie, Ont. The **B&O** is dark blue (#1D3461; Grand Central Station, Chicago, is B&O property). Short union / terminal railways (union depots, the C&WI) share one union-station colour, own 'union' (warm grey #8C8279; Brendan, 19 Nov 2026); a railway running through (the Milwaukee Road at St. Paul) keeps its own. Other railways' columns in a table (through-ticket arrangements) are not entered.
 - **U.S. traces are from Mississippi Rails** (Tony Howe and David Price) unless Brendan says otherwise (17 Nov 2026); credit them so.
+- **Test the page in a browser before every push** (V202 broke the page: a colour edit landed in the boat colour map).
 - **Transcriptions** by another model follow `TIMETABLE_READING.md` (copy, don't interpret; check mode against an existing file).
 - Scratch files and logs go in the session scratchpad, never in the repository.
 
@@ -329,6 +330,7 @@ After an accepted build: `cp viz_data.json tools/.baseline_viz.json`.
 
 ## Recent versions (one line each; the detail is in CHANGELOG.md)
 
+- 203: Maple Leaf fixes: Suspension Bridge and Niagara Falls, N.Y. stations at Brendan's points; N.Y.C. track Niagara Falls - Tonawanda (Mississippi Rails); Depew - Buffalo on track. Page-script fix.
 - 202: the Maple Leaf on to Buffalo over the N.Y.C. at Niagara Falls and the Lehigh Valley by Depew (CN train; L.V. track, Lehigh Valley red).
 - 201: the Ambassador's New York section to Grand Central over the New Haven, Woodlawn and the NYC Harlem line (Brendan's traces); Arnold boats unnamed.
 - 200: Arnold Transit from the August 1950 Official Guide (stand-in for July 1948): five St. Ignace and five Mackinaw City sailings each way; Mackinac Island - Les Cheneaux - Cedarville.
@@ -342,7 +344,6 @@ After an accepted build: `cp viz_data.json tools/.baseline_viz.json`.
 - 192: NYC St. Lawrence & Adirondack, Montreal (Windsor Station) - Valleyfield - Malone, all stations and nine trains (Official Guide table); Malone traces (Mississippi Rails).
 - 191: CN / GTW Table 95: the Chicago trains through from London (International Limited, Inter-City Limited, La Salle, Ontario Limited) to Dearborn Station; No. 20 fixed to p.m.; GTW car ferry Muskegon - Milwaukee; Grand Rapids - Muskegon over the PRR (Tuscan red).
 - 190: Grand Trunk Western (CN, labelled GTW): Tables 146, 148, 149, 150, 152, 153 (Detroit - Port Huron, Detroit - Grand Rapids - Muskegon, Durand - Bay City, Jackson - Richmond, Durand - Greenville, Pontiac - Caseville); state / province tags hidden on the page.
-- 186: CN's Grand Trunk to Portland, Me. (Nos. 16 / 126 / 17 through from Montreal; the night trains to Island Pond) and the Lewiston branch (Grand Trunk); Mississippi Rails trace.
 - 185: Ontario Northland's M.V. Chief Commanda on Lake Nipissing, North Bay - Callander - Keyston Lodge - Dokis, Mon., Wed., Fri. (onrb_build.py; highly speculative).
 - 184: the clock rolls over to the next day when it plays past 3 a.m. (Sunday into Monday).
 - 183: Owen Sound Transportation Co. (ostc_build.py): the Manitoulin's North Channel run and week-end trip, the Tobermory - South Baymouth ferry (all estimated).

@@ -2984,3 +2984,12 @@ A review of the whole project (Brendan: "have a peek through ... suggest improve
   tracks come from the KMZ's historic-map folders), Brendan's trace from the N.Y.C. Niagara Falls station out onto the gorge line (own nyc), and a dashed straight estimate along
   the N.Y.C. from the gorge line to Niagara Jct. (North Tonawanda), where the L.V.'s Depew & Tonawanda line begins (N.Y.C. trace wanted).
 - Counts: 663 lines, 4346 trips, 7608 stops, 64 agencies; check_gtfs 0 problems.
+
+## Version 203
+- Fix (published between V202 and V203): the Lehigh Valley colour had gone into the boat colour map as well as the track colour list, which broke the page's script; the
+  page is tested in a browser before every push.
+- The Maple Leaf at Niagara Falls and Buffalo (Brendan, 20 Nov 2026): Suspension Bridge, N.Y. is the N.Y.C. station by the bridge (his earlier point); Niagara Falls, N.Y. is
+  the N.Y.C. station downtown (his point, 43 05 14.51 N, 79 03 36.82 W; CN and L.V. by trackage rights), 3.2 mi traced from Niagara Falls, Ont. against 3.3 printed. The
+  N.Y.C. Niagara Falls - Gratwick - Tonawanda - Niagara Jct. comes from his Mississippi Rails NYC_Canada_Export.kmz (only those pieces for now), replacing the dashed estimate;
+  Depew - Buffalo now runs on the L.V. track (was drawn straight: the length check refused the track against the printed miles; forced).
+- Counts: 663 lines, 4346 trips, 7608 stops, 64 agencies; check_gtfs 0 problems.
