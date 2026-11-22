@@ -18,6 +18,18 @@ Last updated 17 November 2026 (Version 180).
   open. 4. Stations known by their own name: that name alone (Park Avenue, 125th Street, Westmount). 5. "(Union Station)", never "(Union)". 6. State / province tags stay hidden.
   7. (Brendan) "West Toronto", "Montreal Nord", "Montreal West", "North Edmonton" and the like are place names in their own right: left as they are.
   Brackets that are alternative names (St. Annes (Ste. Anne de Bellevue)), ferry slips and L&PS / L&N stop numbers are not terminals: outside the rule.
+  REVISED (Brendan, 22 Nov 2026; still not to build):
+  - Names by zoom. Zoomed out: the city only ("Montreal", "Toronto", "Vancouver"), one label per city. Zoomed in: a station with a 1948 name is "<Name> Station" (or Terminal /
+    Depot as it was called): "Windsor Station", "Union Station", "Central Station", "Grand Central Terminal", "North Western Terminal"; a station with no particular name is
+    "Town (RR)": "Vancouver (CPR)", "Vancouver (GN)". So a CPR train reads Montreal - Vancouver zoomed out and Windsor Station - Vancouver (CPR) zoomed in. Station panels, boards
+    and search keep the city as well (e.g. "Union Station, Toronto"). GTFS: a parent station per city.
+  - CPR, not CP, everywhere the railway is named or abbreviated (badges, labels, headings, "(CPR)") — the period form; CN stays CN, to keep them visually distinct.
+  - Chicago: the station the Mountaineer calls at (gid CP_CHICAGO, now "Chicago", skjcp13) is "North Western Terminal".
+- [ ] Station ownership (Brendan, 22 Nov 2026; to design, not build yet): a station's owner is now in effect the first line drawn through it (its gid prefix, line and
+  "Canadian Pacific station" note), which misleads at joint stations. Proposal: separate OWNER from SERVED BY. Owner defaults to the owner of the track under the station
+  (segments), with a hand table for joint and terminal companies (Toronto Terminals Railway CN + CPR; Ottawa Union; St. Paul Union Depot; Troy Union RR NYC + D&H + B&M; Spokane,
+  Seattle, Tacoma Union; Washington Union; Chicago & Western Indiana's Dearborn...). Served-by is computed from the trips that call. Page: marker and panel show the owner
+  ("Union Station · Toronto Terminals Railway (CN and CPR) · used by CN, CPR, ONR, TH&B"); joint stations in the union colour. Gids stay as they are (ids, not owners).
 
 ## CP Maritimes (started 10 Nov 2026)
 - [ ] DAR readings (V154): No. 33 (Windsor - Kentville, from No. 4) and No. 4 (Truro - Windsor) have no sign: entered daily except Sunday. No. 3 (34-3) entered Saturday only like No. 34. Boat days at Evangeline Wharf: No. 98 Tue., Thu., Sat. (the Boston boat in); No. 95 Tue., Thu. (the boat out; no No. 95 on Sundays); No. 99 leaving Halifax Mon., Wed., Fri. (Brendan: to the wharf on boat days only). Wharf times estimated.
