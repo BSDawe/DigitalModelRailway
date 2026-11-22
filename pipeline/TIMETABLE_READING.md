@@ -36,7 +36,17 @@ or complete it.
    the row and train. Flag marks are small and easily missed: if a time looks like it might have a mark before it or inside it (10f25), say so.
 7. **Headers and footnotes.** Copy each train's column heading (number, name, days line, e.g. "Sun. only", "Ex. Sun.", "Daily", signs) into its
    TRAIN line, and every footnote and sign explanation printed with the table into SIGNS / NOTES, word for word.
-8. **Do not leave anything out.** Every station row, including rows where no train stops, and every train column, including ones that only run on
+8. **Links between trains (record them, don't act on them).** Wherever the table shows that a train continues, splits or merges, put it on its TRAIN line
+   as `links="..."`, one or more entries separated by `;`, each `<kind> <other train number> at <station as printed>`:
+   - `same 102 at Hamilton`: the same train goes on under another number (one column with the number changing part way, as CN Table 79 at Hamilton).
+   - `section of 83 at Hamilton`: this train is a section that splits off No. 83 there (it starts where it leaves the other train).
+   - `has section 86 at Hamilton`: the other side of the same split, on the main train's line.
+   - `joins 6 at Hamilton` / `joined by 95 at Hamilton`: this train is added to another, or another is added to it.
+   - `cars 77 at Springfield`: through cars (a sleeper, a coach) go from or to the other train there.
+   Add days in brackets when the link holds only on some days (`section of 101 at Coteau (Sun.)`). Copy the wording that tells you so into NOTES
+   ("Sections from Allandale ...", a column heading "75-83", "through sleeper Montreal - Halifax"). If the other train is in another table, give its
+   number and the table if printed. If you are unsure whether two columns are one train, write the link with `?` and say so in UNSURE.
+9. **Do not leave anything out.** Every station row, including rows where no train stops, and every train column, including ones that only run on
    part of the table. Connections printed in the table (e.g. "Quebec (via ferry)") are rows too.
 
 ## The output format
@@ -46,7 +56,7 @@ Plain text, exactly this shape. Use commas between cells; put a station name in 
 ```
 TABLE: <railway> <table number> | <title as printed> | <time zone as printed> | <source, page, date>
 READ: <which train columns read down and which read up, as printed>
-TRAIN <column number as printed> | dir=down or up | heading="<number, days line and signs as printed>" | name="<train name if printed>"
+TRAIN <column number as printed> | dir=down or up | heading="<number, days line and signs as printed>" | name="<train name if printed>" | links="<rule 8, if any>"
 TRAIN ... (one line per train column, left to right)
 SIGNS: <each sign and its meaning, as printed in the table's legend>
 NOTES: <footnotes, word for word>

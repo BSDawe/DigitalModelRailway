@@ -285,6 +285,9 @@ lat, mile, lmile?, principal, gid, note, xy?, slow?}], dirLabels, segments [{own
   Fort Amherst). They are in their own step, ocean_build.py, and list heading; North American coastal ships stay with the steamers (Bermuda counts as local). (V180)
 - **A run is drawn whole**: ports along the same run that are not reached in the week are still part of the route (the Burgeo from Argentia). (V174)
 - **Newfoundland outports** are minor stops; major stops are the railway connections, the ends of the runs and the larger towns (`NF_MAJOR`). (V173)
+- **Record train links when transcribing** (Brendan, 21 Nov 2026): every new timetable file notes on its #train lines which trains continue under another number,
+  split off as sections, join another train or carry through cars (`links="..."`, TIMETABLE_READING.md rule 8; ab_table.py). Not built into the page yet: Brendan
+  decided against section links for now, but the information is to be kept.
 - **Number changes at Hamilton** (CN Table 79, printed in one column) are through trains: NUM_JOINS in real_ends.py (Brendan, 20 Nov 2026). (V204)
 - **Through trains joined across pieces** need only overlap in their days; several partners on one side are allowed when their days are disjoint.
   Out-and-back joins are left alone. (V167)

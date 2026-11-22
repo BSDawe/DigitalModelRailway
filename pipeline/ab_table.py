@@ -3,6 +3,8 @@
 File layout:
   # free comment lines: the table, its date, the time printed (Mountain), the signs, anything in doubt
   #train col=No7 num=7 dir=down days="Mon,Wed,Fri" kind=mixed from="Kerrobert" to="Lacombe" note="..."
+  (optional) links="section of 83 at Hamilton (James St.); same 102 at Hamilton (James St.)": trains this one continues as, splits from or joins
+  (TIMETABLE_READING.md rule 8; Brendan, 21 Nov 2026: record them in every new transcription; not used by the build yet).
   mile,station,principal,No7,No8
   0.0,Edmonton,1,lv 5.30p,ar 7.30a
 
