@@ -1,0 +1,21 @@
+# Delaware & Hudson, Table 9 (Pennsylvania Division, Scranton and Carbondale). Official Guide, April 25, 1948, Delaware & Hudson (Brendan, 21 Nov 2026; private repo scans/og1948_dh/). Eastern time. All trains daily except Sunday.
+#train col=No509 num=509 dir=down days="Mon,Tue,Wed,Thu,Fri,Sat" kind=passenger note="Daily except Sunday: Scranton 5.30 p.m. to Carbondale."
+#train col=No507 num=507 dir=down days="Mon,Tue,Wed,Thu,Fri,Sat" kind=passenger note="Daily except Sunday: Scranton 4.20 p.m. to Carbondale."
+#train col=No505 num=505 dir=down days="Mon,Tue,Wed,Thu,Fri,Sat" kind=passenger note="Daily except Sunday: Scranton 2.50 p.m. to Carbondale."
+#train col=No501 num=501 dir=down days="Mon,Tue,Wed,Thu,Fri,Sat" kind=passenger note="Daily except Sunday: Scranton 7.20 a.m. to Carbondale."
+#train col=No504 num=504 dir=up days="Mon,Tue,Wed,Thu,Fri,Sat" kind=passenger note="Daily except Sunday: Carbondale 6.40 a.m. to Scranton."
+#train col=No508 num=508 dir=up days="Mon,Tue,Wed,Thu,Fri,Sat" kind=passenger note="Daily except Sunday: Carbondale 7.40 a.m. to Scranton."
+#train col=No510 num=510 dir=up days="Mon,Tue,Wed,Thu,Fri,Sat" kind=passenger note="Daily except Sunday: Carbondale 12.40 p.m. to Scranton."
+#train col=No512 num=512 dir=up days="Mon,Tue,Wed,Thu,Fri,Sat" kind=passenger note="Daily except Sunday: Carbondale 4.50 p.m. to Scranton."
+mile,station,principal,prov,tz,No509,No507,No505,No501,No504,No508,No510,No512
+0,"Scranton, Pa.",1,PA,E,lv 5.30p,lv 4.20p,lv 2.50p,lv 7.20a,ar 6.40a,ar 7.40a,ar 12.40p,ar 4.50p
+1.6,"Green Ridge, Pa.",0,PA,E,f5.34p,f4.24p,f2.54p,-,6.36a,7.36a,-,-
+2.2,"Providence, Pa.",0,PA,E,5.36p,4.26p,2.56p,7.26a,6.33a,7.34a,12.34p,4.44p
+4.4,"Dickson City, Pa.",0,PA,E,5.41p,4.31p,3.01p,7.31a,6.28a,7.29a,12.29p,4.39p
+5.9,"Olyphant, Pa.",0,PA,E,5.45p,4.35p,3.05p,7.35a,6.24a,7.25a,12.25p,4.34p
+7.4,"Jessup-Peckville, Pa.",0,PA,E,5.49p,4.39p,3.09p,7.39a,6.20a,7.21a,12.21p,4.30p
+8.7,"Winton, Pa.",0,PA,E,f5.52p,f4.42p,3.12p,7.42a,f6.17a,f7.18a,f12.18p,f4.27p
+9.8,"Archbald, Pa.",0,PA,E,5.55p,4.45p,3.15p,7.45a,6.14a,7.15a,12.15p,4.24p
+12.1,"Jermyn, Pa.",0,PA,E,6.00p,4.50p,3.20p,7.50a,6.09a,7.10a,12.10p,4.19p
+13.4,"Mayfield, Pa.",0,PA,E,6.04p,4.54p,3.24p,7.54a,6.06a,7.06a,12.06p,4.16p
+16.0,"Carbondale, Pa.",1,PA,E,ar 6.10p,ar 5.00p,ar 3.30p,ar 8.00a,lv 6.00a,lv 7.00a,lv 12.00p,lv 4.10p

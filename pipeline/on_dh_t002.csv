@@ -1,0 +1,10 @@
+# Delaware & Hudson, Table 2 (Fort Edward - Lake George). Official Guide, April 25, 1948, Delaware & Hudson (Brendan, 21 Nov 2026; private repo scans/og1948_dh/). Eastern time. The N.Y.C. and D&H connections printed with the table
+# (New York 12.05 a.m. and Albany 6.25 a.m. to No. 161; No. 162 to No. 2 and No. 146; No. 150 to No. 4 and Nos. 50 / 196) are in the notes.
+#train col=No161 num=161 dir=down days="Mon,Tue,Wed,Thu,Fri,Sat" kind=passenger note="Daily except Sunday: Fort Edward 8.33 a.m. to Lake George 9.15 a.m. (from No. 1, Albany 6.25 a.m.; New York 12.05 a.m., N.Y.C. No. 163)."
+#train col=No162 num=162 dir=up days="Mon,Tue,Wed,Thu,Fri,Sat" kind=passenger note="Daily except Sunday: Lake George 9.45 a.m. to Fort Edward 10.25 a.m. (to No. 2, Albany 12.25 p.m.; New York 4.37 p.m.)."
+#train col=No150 num=150 dir=up days="Mon,Tue,Wed,Thu,Fri,Sat" kind=passenger note="Daily except Sunday: Glens Falls 3.25 p.m. to Fort Edward 3.40 p.m. (to No. 4, Albany 5.50 p.m.; New York 9.45 or 10.20 p.m.)."
+mile,station,principal,prov,tz,No161,No162,No150
+0,"Fort Edward, N.Y.",1,NY,E,lv 8.33a,ar 10.25a,ar 3.40p
+2.4,"Hudson Falls, N.Y.",0,NY,E,f8.41a,f10.17a,f3.32p
+5.5,"Glens Falls, N.Y.",1,NY,E,8.51a,10.09a,lv 3.25p
+14.5,"Lake George, N.Y.",1,NY,E,ar 9.15a,lv 9.45a,

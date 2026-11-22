@@ -1,0 +1,36 @@
+# Delaware & Hudson, Table 7 (Susquehanna Division, Albany and Binghamton). Official Guide, April 25, 1948, Delaware & Hudson (Brendan, 21 Nov 2026; private repo scans/og1948_dh/). Eastern time.
+# Signs as printed: n stops to pick up passengers for Delanson and beyond; o stops to pick up passengers for Binghamton and beyond; p stops only to discharge revenue passengers
+# from points south of Delanson; t stops only to discharge passengers from Albany and Delanson; z stops on signal to receive or discharge revenue passengers; x stops on signal
+# Sunday only; double dagger (No. 208: Howe's Cave, Richmondville, East Worcester, Collier's, Otego, Well's Bridge) stops to discharge passengers from Albany and Delanson and to
+# pick up passengers for Binghamton (entered as plain times); f stops on signal. No. 213's Oneonta times read ar 4.14 / lv 4.20.
+#train col=No208 num=208 dir=down days=daily kind=passenger note="Daily: Albany 4.15 p.m. to Binghamton 8.40 p.m. Passengers on the C.P. train leaving Quebec 5.15 p.m., en route New York, should transfer at Montreal West to D&H No. 10, leaving 9.04 p.m. (note printed with the table)."
+#train col=No202 num=202 dir=down days="Mon,Tue,Wed,Thu,Fri,Sat" kind=passenger note="Daily except Sunday: Albany 7.05 a.m. to Binghamton 12.00 noon."
+#train col=No205 num=205 dir=up days="Mon,Tue,Wed,Thu,Fri,Sat" kind=passenger note="Daily except Sunday: Binghamton 6.50 a.m. to Albany 11.10 a.m."
+#train col=No209 num=209 dir=up days="Mon,Tue,Wed,Thu,Fri,Sat" kind=passenger note="Daily except Sunday: Binghamton 2.15 p.m. to Albany 6.30 p.m."
+#train col=No213 num=213 dir=up days=Sun kind=passenger note="Sunday only: Binghamton 2.25 p.m. to Albany 6.30 p.m."
+mile,station,principal,prov,tz,No208,No202,No205,No209,No213
+0,"Albany, N.Y.",1,NY,E,lv 4.15p,lv 7.05a,ar 11.10a,ar 6.30p,ar 6.30p
+5.5,"Delmar, N.Y.",0,NY,E,n4.27p,f7.18a,f10.58a,p6.17p,f6.17p
+10.8,"Voorheesville, N.Y.",1,NY,E,o4.34p,7.28a,10.50a,p6.10p,f6.10p
+17.2,"Altamont, N.Y.",0,NY,E,4.45p,7.39a,10.40a,p6.02p,f6.02p
+26.8,"Delanson, N.Y.",1,NY,E,5.02p,7.58a,10.27a,5.48p,5.48p
+36.2,"Central Bridge, N.Y.",1,NY,E,5.19p,8.17a,10.12a,5.33p,5.33p
+39.2,"Howe's Cave, N.Y.",0,NY,E,5.26p,8.25a,10.06a,5.27p,5.27p
+44.7,"Cobleskill, N.Y.",1,NY,E,5.39p,8.44a,9.57a,5.18p,5.18p
+49.9,"Richmondville, N.Y.",1,NY,E,5.49p,8.55a,9.47a,5.07p,5.07p
+56.9,"East Worcester, N.Y.",0,NY,E,6.03p,9.10a,9.34a,f4.56p,f4.56p
+61.5,"Worcester, N.Y.",0,NY,E,6.10p,9.18a,9.26a,4.50p,4.50p
+66.5,"Schenevus, N.Y.",1,NY,E,6.18p,9.27a,9.18a,4.41p,4.41p
+76.3,"Collier's, N.Y.",1,NY,E,6.33p,f9.42a,f9.02a,f4.26p,f4.26p
+81.7,"Oneonta, N.Y.",1,NY,E,ar 6.41p / lv 6.48p,ar 9.50a / lv 10.00a,ar 8.44a / lv 8.55a,ar 4.10p / lv 4.20p,ar 4.14p / lv 4.20p
+89.6,"Otego, N.Y.",0,NY,E,7.01p,10.14a,8.30a,3.56p,f4.00p
+94.0,"Well's Bridge, N.Y.",0,NY,E,7.07p,10.20a,8.23a,f3.49p,f3.53p
+98.8,"Unadilla, N.Y.",0,NY,E,7.14p,10.28a,8.15a,3.42p,3.45p
+103.3,"Sidney, N.Y.",1,NY,E,7.28p,10.40a,8.06a,3.33p,3.35p
+108.4,"Bainbridge, N.Y.",0,NY,E,7.39p,10.51a,7.52a,3.20p,3.24p
+114.3,"Afton, N.Y.",0,NY,E,f7.47p,11.01a,7.42a,3.08p,3.16p
+118.8,"Nineveh, N.Y.",1,NY,E,7.55p,11.11a,7.35a,3.01p,3.08p
+120.3,"Harpursville, N.Y.",0,NY,E,t7.58p,11.16a,z7.32a,z2.58p,f3.05p
+127.0,"Tunnel, N.Y.",0,NY,E,t8.12p,11.31a,z7.20a,z2.46p,f2.53p
+132.5,"Sanitaria Springs, N.Y.",0,NY,E,t8.21p,11.41a,z7.09a,z2.34p,f2.43p
+142.5,"Binghamton, N.Y.",1,NY,E,ar 8.40p,ar 12.00p,lv 6.50a,lv 2.15p,lv 2.25p

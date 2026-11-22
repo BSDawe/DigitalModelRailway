@@ -1,0 +1,46 @@
+# Delaware & Hudson, Table 1: the New York - Montreal through trains by Albany (No. 7 north). Official Guide, April 25, 1948, Delaware & Hudson (Brendan, 21 Nov 2026; private repo scans/og1948_dh/). Eastern time.
+# New York (Grand Central) - Albany / Troy over the New York Central (Hudson line; N.Y.C. miles as printed in D&H Tables 2 and 5: Albany 142.2, Troy 148.4);
+# Troy / Albany - Rouses Point over the D&H (Table 1 miles); Rouses Point - Montreal (Windsor Station) over the Napierville Junction Ry. and the C.P. (times from the NJR table
+# and the C.P. 1948 timetable, as in the old on_dh_t018.csv; miles from Windsor Station by the collection track). Brendan, 21 Nov 2026: the Montreal trains run through.
+#train col=No7 num=7 dir=down days=daily kind=passenger note="Daily: New York (Grand Central) 7.30 p.m., Albany 11.05 p.m., Rouses Point 5.28 a.m., Montreal (Windsor Station) 6.55 a.m. Through coach and sleeping car, New York - Montreal. Douglass: stops on signal to receive passengers for Plattsburg and points north and to discharge passengers from Troy, Albany and points south."
+mile,station,principal,prov,tz,No7
+0,"New York (Grand Central), N.Y.",1,NY,E,lv 7.30p
+4.2,"New York (125th Street), N.Y.",0,NY,E,
+142.2,"Albany, N.Y.",1,NY,E,lv 11.05p
+145.5,"Menands, N.Y.",0,NY,E,
+146.1,"Cemetery, N.Y.",0,NY,E,
+146.9,"Colonie, N.Y.",0,NY,E,
+148.2,"Watervliet, N.Y.",0,NY,E,11.18p
+151.0,"Cohoes, N.Y.",0,NY,E,11.26p
+152.9,"West Waterford, N.Y.",0,NY,E,
+161.1,"Mechanicville, N.Y.",1,NY,E,11.44p
+167.6,"Round Lake, N.Y.",0,NY,E,f11.53p
+173.8,"Ballston Spa, N.Y.",1,NY,E,12.06a
+180.5,"Saratoga Springs, N.Y.",1,NY,E,ar 12.18a / lv 12.25a
+197.6,"Fort Edward, N.Y.",1,NY,E,ar 12.49a / lv 1.00a
+205.1,"Smith's Basin, N.Y.",0,NY,E,
+209.0,"Fort Ann, N.Y.",0,NY,E,
+213.0,"Comstock, N.Y.",0,NY,E,f1.18a
+219.6,"Whitehall, N.Y.",1,NY,E,ar 1.30a / lv 1.38a
+229.4,"Dresden, N.Y.",0,NY,E,f1.54a
+234.4,"Putnam, N.Y.",0,NY,E,
+241.7,"Fort Ticonderoga, N.Y.",1,NY,E,2.17a
+251.1,"Crown Point, N.Y.",0,NY,E,f2.31a
+258.8,"Port Henry, N.Y.",0,NY,E,2.45a
+269.8,"Westport, N.Y.",1,NY,E,3.08a
+279.3,"Essex, N.Y.",0,NY,E,f3.23a
+284.0,"Willsboro, N.Y.",0,NY,E,f3.32a
+292.0,"Douglass, N.Y.",0,NY,E,x3.48a
+296.5,"Port Kent, N.Y.",1,NY,E,f3.57a
+309.6,"Plattsburg, N.Y.",1,NY,E,ar 4.25a / lv 4.38a
+318.9,"West Chazy, N.Y.",0,NY,E,f4.52a
+325.2,"Chazy, N.Y.",0,NY,E,5.00a
+332.9,"Rouses Point, N.Y.",1,NY,E,ar 5.18a / lv 5.28a
+339.0,Lacolle,0,QC,E,5.41a
+346.6,Napierville,0,QC,E,5.53a
+352.7,St. Edouard,0,QC,E,6.03a
+357.1,St. Mathieu,0,QC,E,6.11a
+361.3,Delson,0,QC,E,6.20a
+370.8,Montreal West,0,QC,E,6.40a
+373.8,Westmount,0,QC,E,6.47a
+375.8,Montreal (Windsor Station),1,QC,E,ar 6.55a

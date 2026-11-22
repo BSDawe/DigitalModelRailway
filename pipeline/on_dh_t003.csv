@@ -1,0 +1,8 @@
+# Delaware & Hudson, Table 3 (Plattsburg and Lyon Mountain). Official Guide, April 25, 1948, Delaware & Hudson (Brendan, 21 Nov 2026; private repo scans/og1948_dh/). Eastern time.
+#train col=No82 num=82 dir=down days="Mon,Tue,Wed,Thu,Fri,Sat" kind=passenger note="Daily except Sunday: Plattsburg 7.00 a.m. to Lyon Mountain 8.50 a.m."
+#train col=No81 num=81 dir=up days="Mon,Tue,Wed,Thu,Fri,Sat" kind=passenger note="Daily except Sunday: Lyon Mountain 11.55 a.m. to Plattsburg 1.50 p.m."
+mile,station,principal,prov,tz,No82,No81
+0,"Plattsburg, N.Y.",1,NY,E,lv 7.00a,ar 1.50p
+14.0,"Cadyville, N.Y.",1,NY,E,7.37a,12.55p
+19.6,"Dannemora, N.Y.",0,NY,E,8.00a,12.35p
+36.3,"Lyon Mountain, N.Y.",1,NY,E,ar 8.50a,lv 11.55a

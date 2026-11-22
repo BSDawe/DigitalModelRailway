@@ -126,6 +126,10 @@ Maritime tables where the traced line differs from the printed miles by 1 mi and
 - [ ] Arnold Transit (V200; boats unnamed since V201): August 1950 Official Guide times stand in for July 1948 (the May 1948 Guide's St. Ignace list looks off-season); crossing times
   35 / 40 minutes from the 1958 brochure. Mackinaw City State Ferry Dock point is Brendan's estimate. Les Cheneaux: the lane goes round the outside of the islands
   (Hessel channels closed at basemap resolution; a hand lane wanted?); Coryell Island (the 1948 terminus) not drawn.
+- [ ] Delaware & Hudson (V205, Official Guide April 25, 1948). To check: Troy Union Station is reached by dashed estimates (D&H from Green Island, N.Y.C. Troy & Greenbush):
+  traces wanted; No. 35 (The Laurentian, from June 6) D&H times estimated from No. 37's April times; Nos. 8 / 10 drawn together Troy - New York; station points placed at trace
+  junctions (Fort Edward, Glens Falls, Plattsburg, Whitehall, Ticonderoga, Oneonta, Central Bridge, Sidney, Harpursville, Binghamton, Scranton, Carbondale) to confirm; Albany at
+  Union Station (D&H trains used it; N.Y.C. trace); Scranton - Carbondale 17.1 mi traced, 16.0 printed. Rouses Point, N.Y.: the D&H station (also wanted for CN / Rutland 51, 52, 64, 65).
 - [ ] White River Jct. - Boston, B&M 302 / 325 (the Red Wing's and the New Englander's Boston cars in one train): drawn as the CP's Red Wing for now; who owns the leg to be settled with the B&M timetables (Brendan, 17 Nov 2026).
 - [ ] Boston & Maine's own trains (waiting for the B&M timetables): the Connecticut River trains of CV Table 5 (702, 72, 712, 78 / 79 the Red Wing's Springfield coach, 7060, 728, 703, 73, 7055, 717, 7059) and White River Jct. - Boston 320 / 313; the stations between White River Jct. / Plymouth and Concord.
 - [ ] Central Vermont Table 1: St. Johns - St. Alexander (7.6 mi) is a straight estimate, drawn broken: the Quebec collection lacks that piece of the Montreal & Vermont Junction line (a trace wanted). East Northfield's point is approximate (at the Massachusetts line).
@@ -214,7 +218,7 @@ Each runs to an International Boundary point (time estimated) or to the last Can
   Grand Trunk Western trace received (Mississippi Rails, Brendan 18 Nov 2026; KMZ in the private repo, traces/msrails/Grand_Trunk_Western.kmz): Port Huron - Flint - Lansing - Battle Creek -
   South Bend - Chicago (to Elsdon), Detroit - Port Huron, Detroit - Pontiac - Durand - Grand Rapids - Muskegon, and branches. Missing (Brendan): the old St. Clair Tunnel (Sarnia - Port Huron),
   Detroit Brush Street station access, and the joint line into Chicago (Elsdon - Dearborn Station, C&WI). Wanted: the Official Guide GTW pages (1948) for the times beyond Port Huron / Detroit.
-- [ ] Rouses Point, N.Y.: D&H 7, 8, 9, 10, 34, 35 (Montreal - New York); CN Rutland trains 51, 52, 64, 65.
+- [ ] Rouses Point, N.Y.: CN Rutland trains 51, 52, 64, 65 (D&H 7, 8, 9, 10, 34, 35 through to New York since V205).
 - [x] East Alburgh, Vt.: CN / Central Vermont 20, 21, 307, 332: done in Version 188 (to Springfield and Boston). Beyond Springfield (New Haven, Pennsylvania) waits for Connecticut / New York track and timetables.
 - [x] Norton, Vt. (Island Pond, Portland): CN 11, 12, 16, 17, 111, 112, 126, 209, 210. Done in Version 186: on to Island Pond, Nos. 16 / 126 and 17 through to Portland, the Lewiston branch (Grand Trunk).
 - [x] North Troy / Newport, Vt.: CP 209, 210 The Red Wing, 211, 212 The Alouette, 213, 214 (Boston & Maine to Boston): done in Version 187. Still open: Quebec Central 1 / 6 (Beebe - Newport, to meet the Red Wing), B&M station stops between Plymouth / White River Jct. and Concord (with the B&M timetables).

@@ -1,7 +1,7 @@
 # The Digital Model Railway — project state
 
 Read this first. It is meant to be enough to start a short, single-task chat without replaying the project's history.
-Last updated 20 November 2026 (Version 204). This file is the current state and the standing rules; the version-by-version history is in CHANGELOG.md.
+Last updated 20 November 2026 (Version 205). This file is the current state and the standing rules; the version-by-version history is in CHANGELOG.md.
 
 ## What this is
 
@@ -336,6 +336,7 @@ After an accepted build: `cp viz_data.json tools/.baseline_viz.json`.
 
 ## Recent versions (one line each; the detail is in CHANGELOG.md)
 
+- 205: the Delaware & Hudson (Official Guide Tables 1, 2, 3, 5, 7, 9); New York - Montreal trains through from Grand Central to Windsor Station.
 - 204: CN trains changing number at Hamilton (Table 79: 101/102, 89/90, 187/184, 93/94, 91/92, 107/108) joined as through trains.
 - 203: Maple Leaf fixes: Suspension Bridge and Niagara Falls, N.Y. stations at Brendan's points; N.Y.C. track Niagara Falls - Tonawanda (Mississippi Rails); Depew - Buffalo on track. Page-script fix.
 - 202: the Maple Leaf on to Buffalo over the N.Y.C. at Niagara Falls and the Lehigh Valley by Depew (CN train; L.V. track, Lehigh Valley red).
@@ -351,7 +352,6 @@ After an accepted build: `cp viz_data.json tools/.baseline_viz.json`.
 - 192: NYC St. Lawrence & Adirondack, Montreal (Windsor Station) - Valleyfield - Malone, all stations and nine trains (Official Guide table); Malone traces (Mississippi Rails).
 - 191: CN / GTW Table 95: the Chicago trains through from London (International Limited, Inter-City Limited, La Salle, Ontario Limited) to Dearborn Station; No. 20 fixed to p.m.; GTW car ferry Muskegon - Milwaukee; Grand Rapids - Muskegon over the PRR (Tuscan red).
 - 190: Grand Trunk Western (CN, labelled GTW): Tables 146, 148, 149, 150, 152, 153 (Detroit - Port Huron, Detroit - Grand Rapids - Muskegon, Durand - Bay City, Jackson - Richmond, Durand - Greenville, Pontiac - Caseville); state / province tags hidden on the page.
-- 184: the clock rolls over to the next day when it plays past 3 a.m. (Sunday into Monday).
 - 183: Owen Sound Transportation Co. (ostc_build.py): the Manitoulin's North Channel run and week-end trip, the Tobermory - South Baymouth ferry (all estimated).
 - 182: the D.&C. Detroit - Buffalo boats named night by night (City of Detroit III, Greater Detroit; estimated).
 - 181: Detroit and Cleveland Navigation Co. (dcn_build.py): Detroit - Cleveland, Detroit - Buffalo, and the cruises to Mackinac, Chicago, Harbor Springs, Midland.

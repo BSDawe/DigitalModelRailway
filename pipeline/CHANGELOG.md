@@ -3000,3 +3000,18 @@ A review of the whole project (Brendan: "have a peek through ... suggest improve
   needs the same number). Not joined: 83 / 86 and 183 / 186 (sections off a London train), 95 / 6 (added to the Inter-City Limited), 9 / 84 (printed in one column, but 84 leaves
   Hamilton two hours later and only daily except Sunday).
 - Counts: 663 lines, 4346 trips, 7608 stops, 64 agencies; 179 through-train joins; check_gtfs 0 problems.
+
+## Version 205
+- The Delaware & Hudson from the Official Guide, April 25, 1948 (Brendan's pages and Mississippi Rails KMZ, 21 Nov 2026; scans in the private repo, scans/og1948_dh/):
+  Table 1 (Albany / Troy - Saratoga Springs - Whitehall - Plattsburg - Rouses Point), Table 2 (Fort Edward - Glens Falls - Lake George), Table 3 (Plattsburg - Lyon Mountain),
+  Table 5 (Saratoga Springs - North Creek), Table 7 (Albany - Oneonta - Binghamton), Table 9 (Scranton - Carbondale). D&H colour as before (kind f).
+- The New York - Montreal trains run through (Brendan): Nos. 9, 35 (The Laurentian), 7 north and Nos. 34 (The Laurentian), 8, 10 (Montreal Limited) south, New York (Grand
+  Central, shared with the Ambassador) over the N.Y.C. Hudson line to Albany / Troy, the D&H to Rouses Point, the Napierville Junction Ry. and the C.P. to Windsor Station. They
+  replace on_dh_t018.csv (C.P. timetable, to the border). No. 35 replaced No. 37 from June 6: New York 8.30 a.m., Troy 11.40 a.m., Montreal 6.35 p.m. from the C.P. 1948 timetable;
+  its D&H times are No. 37's April times 35 minutes earlier (estimated). Nos. 8 and 10 both leave Troy 3.05 a.m. and are due at Grand Central 6.20 a.m.: drawn together from Troy.
+  Other trains' New York times are N.Y.C. connections, in the notes. Train links recorded (links=) per the new transcription rule.
+- Track: tools/mar_import_dh.py -> traces/maritimes/dh.geojson (the D&H KMZ; the two Saratoga Springs "old alignment" pieces are the 1948 line through the station; Erie trackage
+  rights north of Carbondale kept as D&H track, unused); the N.Y.C. Hudson line, Albany Union Station and the Troy & Greenbush from Brendan's NYC export. Troy Union Station
+  (Brendan's point) is reached by dashed straight estimates from Green Island and the Troy & Greenbush ends (traces wanted). Stations: Troy and Saratoga Springs at Brendan's
+  points, Albany at Union Station, others at trace junctions and ends or by printed mileage. FRA arcs of the Hudson line in nec.geojson were drawn as New Haven: now N.Y.C.
+- Counts: 671 lines, 4375 trips, 7687 stops, 64 agencies; check_gtfs 0 problems.

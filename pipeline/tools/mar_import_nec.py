@@ -16,10 +16,10 @@ def own(st, c):
     lon = sum(p[0] for p in c) / len(c); lat = sum(p[1] for p in c) / len(c)
     if st in ('MA', 'CT'): return 'nh'
     if st == 'NY':
-        if lat >= 40.87: return 'nh'
+        if lat >= 40.87: return 'nh' if (lat < 41.05 and lon > -73.87) else 'nyc'   # the New Haven only Woodlawn - Port Chester; the rest is the N.Y.C. Hudson line (Spuyten Duyvil - Albany; fixed 21 Nov 2026)
         return 'prr' if lon < -73.96 else 'union'
     return 'prr'
-NAME = {'nh': 'New York, New Haven & Hartford', 'union': 'New York Connecting Railroad (Hell Gate Bridge; PRR and New Haven)', 'prr': 'Pennsylvania Railroad'}
+NAME = {'nyc': 'New York Central (Hudson line)', 'nh': 'New York, New Haven & Hartford', 'union': 'New York Connecting Railroad (Hell Gate Bridge; PRR and New Haven)', 'prr': 'Pennsylvania Railroad'}
 feats = []
 for f in d['features']:
     p = f['properties']
