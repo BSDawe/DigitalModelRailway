@@ -16,6 +16,9 @@
 # N.Y. No. 358 7.35 and Buffalo (Terrace) 8.16: the sign before each is small (☐?); Black Rock mileage printed 530.7 (Fort Erie 514.1, Buffalo 535.2: Fort Erie - Black Rock is
 # about 2 mi; misprint for 520.7?); No. 48 The Detroiter (Pullman cars only): Detroit 7.00 p.m. "Via Ft. Erie", no Buffalo time printed ("- -"); No. 308 Advance Wolverine
 # ends at Detroit 8.00 p.m. as printed (no Detroit departure); No. 316 Motor City Special (Pullman cars only) no times between Woodlawn and Ann Arbor.
+# Stations (Brendan, 22 Nov 2026): Chicago Central Station was Illinois Central property (the Michigan Central ran into it by trackage rights over the IC), 41 52 05 N, 87 37 19 W
+# (41.868056, -87.621944); draw the IC track and station in IC colours, brown and orange. Chicago La Salle Street Station (The Twilight Ltd.): joint property of the New York
+# Central and the Rock Island, 41 52 35.71 N, 87 37 56.06 W (41.876586, -87.632239).
 #train col=No366 num=366 dir=down days="ex Sun" kind=motor note="Motor Train. Detroit 5.25 a.m. - St. Thomas; St. Thomas 2.30 p.m. - Welland - Fort Erie - Buffalo 6.40 p.m."
 #train col=No346 num=346 dir=down days=daily kind=passenger note="Chicago 2.00 a.m. - Detroit 10.40 a.m., all stations."
 #train col=No44 num=44 dir=down days=daily kind=passenger note="Chicago 8.45 a.m. - Detroit - Windsor - St. Thomas - Welland - Fort Erie - Buffalo 9.40 p.m.; bus Welland - Niagara Falls (Bus44)."

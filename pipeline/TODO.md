@@ -223,6 +223,8 @@ Each runs to an International Boundary point (time estimated) or to the last Can
   380 / 382 / 372 / 374). Needs Michigan Central track Chicago - Detroit and into Buffalo. Found: Nos. 48 The Detroiter and 40 run Detroit - Buffalo via Canada with no Ontario stop
   (48 not on the map yet); No. 358 runs on from Niagara Falls, N.Y. to Buffalo. Checks from the scan: 364 Aylmer p11.33, M362 Fargo 7.25, 366 Lythmore f4.23 are as printed
   (Aylmer probably a misprint). Its UNSURE list is in the file's head. Table 11 (westbound) not supplied.
+  Chicago stations (Brendan, 22 Nov 2026): Central Station, Illinois Central property, MC trains by trackage rights over the IC: 41 52 05 N, 87 37 19 W (41.868056, -87.621944);
+  IC colours brown and orange (a new railway colour; shades to pick). La Salle Street Station, joint NYC and Rock Island: 41 52 35.71 N, 87 37 56.06 W (41.876586, -87.632239).
 - [ ] Niagara River, Suspension Bridge: CN Hamilton - Niagara Falls, N.Y. 86, 90 / 93 The Maple Leaf (see above), 91, 95, 102, 107, 186; MC 358 The Canadian - The Niagara.
 - [ ] Detroit River: MC trains above at the tunnel (Windsor - Detroit); NEXT (Brendan, 20 Nov 2026): his NYC_Canada_Export.kmz (Mississippi Rails, private repo traces/lv/) has the
   Michigan Central tunnel and Detroit lines (not the Chicago terminal access): take the CP trains on to Detroit (Detroit times in on_cp_t049w.csv's notes); later string the NYC lines
