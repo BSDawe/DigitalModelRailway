@@ -126,8 +126,8 @@ Maritime tables where the traced line differs from the printed miles by 1 mi and
 - [ ] Arnold Transit (V200; boats unnamed since V201): August 1950 Official Guide times stand in for July 1948 (the May 1948 Guide's St. Ignace list looks off-season); crossing times
   35 / 40 minutes from the 1958 brochure. Mackinaw City State Ferry Dock point is Brendan's estimate. Les Cheneaux: the lane goes round the outside of the islands
   (Hessel channels closed at basemap resolution; a hand lane wanted?); Coryell Island (the 1948 terminus) not drawn.
-- [ ] Delaware & Hudson (V205, Official Guide April 25, 1948). To check: Troy Union Station is reached by dashed estimates (D&H from Green Island, N.Y.C. Troy & Greenbush):
-  traces wanted; No. 35 (The Laurentian, from June 6) D&H times estimated from No. 37's April times; Nos. 8 / 10 drawn together Troy - New York; station points placed at trace
+- [ ] Delaware & Hudson (V205, Official Guide April 25, 1948). To check: (Troy Union Station on track since V206: Troy Union RR and Brendan's bridge;
+  the bridge drawn as D&H: owner to confirm); No. 35 (The Laurentian, from June 6) D&H times estimated from No. 37's April times; Nos. 8 / 10 drawn together Troy - New York; station points placed at trace
   junctions (Fort Edward, Glens Falls, Plattsburg, Whitehall, Ticonderoga, Oneonta, Central Bridge, Sidney, Harpursville, Binghamton, Scranton, Carbondale) to confirm; Albany at
   Union Station (D&H trains used it; N.Y.C. trace); Scranton - Carbondale 17.1 mi traced, 16.0 printed. Rouses Point, N.Y.: the D&H station (also wanted for CN / Rutland 51, 52, 64, 65).
 - [ ] White River Jct. - Boston, B&M 302 / 325 (the Red Wing's and the New Englander's Boston cars in one train): drawn as the CP's Red Wing for now; who owns the leg to be settled with the B&M timetables (Brendan, 17 Nov 2026).

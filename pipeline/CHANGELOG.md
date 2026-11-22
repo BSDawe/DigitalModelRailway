@@ -3015,3 +3015,9 @@ A review of the whole project (Brendan: "have a peek through ... suggest improve
   (Brendan's point) is reached by dashed straight estimates from Green Island and the Troy & Greenbush ends (traces wanted). Stations: Troy and Saratoga Springs at Brendan's
   points, Albany at Union Station, others at trace junctions and ends or by printed mileage. FRA arcs of the Hudson line in nec.geojson were drawn as New Haven: now N.Y.C.
 - Counts: 671 lines, 4375 trips, 7687 stops, 64 agencies; check_gtfs 0 problems.
+
+## Version 206
+- Troy (Brendan, 21 Nov 2026): the D&H trains reach Troy Union Station over the Troy Union Railroad (jointly N.Y.C., D&H and B&M; Mississippi Rails Troy_Union_RR.kmz,
+  own union, the terminal-railway colour) and Brendan's trace of the D&H bridge from Green Island (own dh); the N.Y.C. Troy & Greenbush tied on (0.3 km). The V205 dashed
+  estimates are gone.
+- Counts unchanged: 671 lines, 4375 trips, 7687 stops, 64 agencies; check_gtfs 0 problems.

@@ -4,8 +4,8 @@ New York Central, the Hudson line from Brendan's Mississippi Rails "NYC_Canada_E
 Mott Haven Jct. (joining the Harlem line / Park Avenue pieces already in nec.geojson) and the Troy & Greenbush (Rensselaer - Troy). Own 'nyc'.
 Status: 'ok'; 'pre1948' for old alignments (except the two at Saratoga Springs, where the 1948 station stood: the D&H line was moved off them only later; Brendan's station point
 sits where they meet), pieces abandoned before 1948 and the Gravity Railroad; 'later' for nothing. Ties: piece ends 150 - 600 m from another line get a straight tie.
-Troy Union Station (Brendan's point, 42.7316 N, 73.6867 W): none of the traces reaches it; dashed straight estimates from the D&H (Green Island) and the Troy & Greenbush ends.
-Usage: python3 tools/mar_import_dh.py <Delaware__Hudson.kmz> <NYC_Canada_Export.kmz>"""
+Troy Union Station (Brendan's point, 42.7316 N, 73.6867 W): over the Troy Union Railroad and Brendan's bridge trace (V206; V205 had dashed estimates).
+Usage: python3 tools/mar_import_dh.py <Delaware__Hudson.kmz> <NYC_Canada_Export.kmz> <Troy_Union_RR.kmz>"""
 import json, math, os, re, sys, zipfile
 import xml.etree.ElementTree as ET
 HERE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -48,9 +48,21 @@ for i, (nm, c) in enumerate(ok):
                 ties.append((e, best[1], nm, n2, best[0]))
 for e, q, a, b, d in ties:
     feats.append(F(f'tie, {a.split(": ")[-1]} - {b.split(": ")[-1]}', [e, q], f'tie (Claude): the piece ends {d * 1000:.0f} m from the other line', group='link'))
-TROY = (-73.6867, 42.7316)
-feats.append(F('D&H: Green Island - Troy Union Station (est)', [(-73.7075726, 42.7384179), TROY], "straight estimate (Claude): the D&H trace ends at Green Island; Troy Union Station at Brendan's point (trace wanted)", group='link', est=True))
-feats.append(F('N.Y.C.: Troy & Greenbush - Troy Union Station (est)', [(-73.6958722, 42.7229765), TROY], "straight estimate (Claude): the Troy & Greenbush trace ends south of the station (trace wanted)", own='nyc', constituent='New York Central', group='link', est=True))
+# Troy (Brendan, 21 Nov 2026): the Troy Union Railroad (jointly N.Y.C., D&H and B&M; Mississippi Rails "Troy_Union_RR.kmz", private repo traces/dh/) into Troy Union Station,
+# own 'union' (the short terminal railways' colour), and Brendan's trace of the D&H bridge from Green Island (traces/dh/brendan_troy_bridge.json, own dh). Replaces the V205 dashed estimates.
+if len(sys.argv) > 3:
+    for c in kml(sys.argv[3]).iter(K + 'Placemark'):
+        n = c.find(K + 'name'); nm = (n.text or '').strip() if n is not None else ''
+        for q in c.iter(K + 'coordinates'):
+            pts = [tuple(map(float, x.split(',')[:2])) for x in q.text.split()]
+            if len(pts) >= 2: feats.append(F(f'Troy Union Railroad: {nm}', pts, 'Mississippi Rails Troy_Union_RR.kmz, supplied by Brendan (jointly N.Y.C., D&H, B&M)', own='union', constituent='Troy Union Railroad'))
+B = json.load(open(os.path.join(HERE, 'traces', 'dh', 'brendan_troy_bridge.json')))
+feats.append(F('D&H: Green Island - Troy bridge (Brendan)', B['coords'], B['source'], group='brendan'))
+TU = [f for f in feats if f['properties']['own'] == 'union']
+for f in [f for f in feats if f['properties']['name'] == 'New York Central: Troy NY to Greenbush NY']:   # the Troy & Greenbush end onto the Troy Union
+    e = f['geometry']['coordinates'][-1]
+    best = min(((km(e, q), q) for g in TU for q in g['geometry']['coordinates']), key=lambda x: x[0])
+    feats.append(F('N.Y.C.: Troy & Greenbush - Troy Union Railroad tie', [e, best[1]], f'tie (Claude): {best[0] * 1000:.0f} m', own='nyc', constituent='New York Central', group='link'))
 json.dump(dict(type='FeatureCollection', features=feats), open(os.path.join(HERE, 'traces', 'maritimes', 'dh.geojson'), 'w'))
 from collections import Counter
 print(len(ties), 'ties;', len(feats), 'pieces', Counter(f['properties']['status'] for f in feats))
