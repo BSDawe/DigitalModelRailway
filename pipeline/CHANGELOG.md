@@ -3051,3 +3051,12 @@ A review of the whole project (Brendan: "have a peek through ... suggest improve
   placed by the ONR table's mileage (Brendan): one station fewer.
 - Straits of Mackinac car ferry: a course over the water (least-cost path over the basemap water, traces/dssa/straits_car_ferry_lane.json) instead of a straight line over land.
 - Counts: 674 lines, 4385 trips, 7741 stops, 65 agencies; check_gtfs 0 problems.
+
+## Version 209
+- Seattle - Portland pool trains by operator (Brendan, 22 Nov 2026: "I had thought there were NP, GN and UP pool trains"): the eight pool trains of NP Table 4 were drawn
+  as NP apart from the UP's 457 / 458. Now GN Nos. 401 / 402 (night) and 459 / 460 are Great Northern trains (gn_pool: GN colours, label, agency, trip ids GN-), NP 407 / 408
+  stay Northern Pacific, UP 457 / 458 Union Pacific. The split is from the operator prefixes of the August 1952 Official Guide pool table (streamlinerschedules.com); the
+  April 1948 tables do not say (GN Table 46 prints 401 / 402 through to Vancouver, B.C., as 401-360 and 355-402). The track stays the NP's; the GN trains use the NP stations
+  (pseudo-rail gnpool in wa_lines.py).
+- Saint John, N.B.: CN_SAINT_JOHN is "Union Station" (Brendan); owner by the track rule CPR, also served by CN (joint ownership to check with the union-station list).
+- Counts: 675 lines, 4385 trips, 7741 stops, 65 agencies; check_gtfs 0 problems.

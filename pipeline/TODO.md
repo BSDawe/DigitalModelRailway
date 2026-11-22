@@ -14,6 +14,8 @@ Last updated 17 November 2026 (Version 180).
 - [ ] Station owners, joint and union stations (V208 takes the owner from the track under the station): check each "Union Station" / union depot by hand (Toronto Terminals
   Railway CN + CPR; Ottawa Union; St. Paul Union Depot; Troy Union RR NYC + D&H + B&M; Spokane, Seattle, Tacoma Union; Washington Union; the C&WI's Dearborn...).
   "Union Station" is sometimes the name of a station one railway owned (Brendan).
+  Saint John Union Station (CN_SAINT_JOHN, Brendan 22 Nov 2026): owner by track CPR; CN and CPR joint?
+- [ ] Seattle - Portland pool: the GN / NP / UP split of the trains is from the August 1952 Official Guide (V209); confirm for 1948 (Official Guide car-service lists).
 - [ ] Fredericton: Brendan to fix; the CPR station (York Street, CP_FREDERICTON) is CPR-owned but named Union Station.
 - [ ] Buffalo: the N.Y.C. station is "Buffalo Central Terminal"; Detroit: the N.Y.C. station is "Michigan Central Station" (names to use when those are built).
 
@@ -241,6 +243,8 @@ Each runs to an International Boundary point (time estimated) or to the last Can
 - [x] Sydney & Louisburg: built (V163). Colour #5B3A8C is Claude's pick. Victoria Jct. - Glace Bay 9.9 mi traced / 11.0 printed (the trace may take a later route).
 
 ## Done and answered
+### Done in Version 209 (22 Nov 2026)
+- GN Seattle - Portland pool trains (401 / 402, 459 / 460) drawn as GN; Saint John Union Station named.
 ### Done in Version 208 (22 Nov 2026)
 - Station names by zoom (city zoomed out; station name or "Town (RR)" zoomed in); Park Avenue, 125th Street, Grand Central Terminal, North Western Terminal, Winnipeg and
   Seattle Union Stations, King Street Station, "(Milwaukee)", Niagara Falls NY / ON, Davie Street and Carrall Street; CPR for CP; station owner from the track under the station.

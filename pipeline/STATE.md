@@ -1,7 +1,7 @@
 # The Digital Model Railway — project state
 
 Read this first. It is meant to be enough to start a short, single-task chat without replaying the project's history.
-Last updated 22 November 2026 (Version 208). This file is the current state and the standing rules; the version-by-version history is in CHANGELOG.md.
+Last updated 22 November 2026 (Version 209). This file is the current state and the standing rules; the version-by-version history is in CHANGELOG.md.
 
 ## What this is
 
@@ -336,6 +336,7 @@ After an accepted build: `cp viz_data.json tools/.baseline_viz.json`.
 
 ## Recent versions (one line each; the detail is in CHANGELOG.md)
 
+- 209: Seattle - Portland pool trains by operator (GN 401 / 402, 459 / 460; NP 407 / 408; UP 457 / 458); Saint John Union Station.
 - 208: station names by zoom (city zoomed out, station zoomed in), CPR for CP, station owners from the track; North Bay ONR stops on the CN / CPR stations; Straits car ferry over water.
 - 207: the Rutland Railroad (Tables 1, 4, 6; New York - Montreal through trains; Table 3 Boston waits for a B&M trace).
 - 206: Troy Union Station over the Troy Union Railroad (union colour) and Brendan's Green Island bridge.
@@ -348,7 +349,6 @@ After an accepted build: `cp viz_data.json tools/.baseline_viz.json`.
 - 199: the Straits of Mackinac car ferry drawn as a train ferry; Arnold Transit St. Ignace - Mackinac Island boats (atc_build.py).
 - 198: the Duluth, South Shore & Atlantic and Mineral Range (Official Guide; drawn as CP, labelled DSS&A); Mackinac Straits car ferry; NP Ashland - Superior.
 - 197: the Washingtonian and the Montrealer through to New York (Penn Station) and Washington over the New Haven, Hell Gate and the Pennsylvania (Brendan's NEC2 track).
-- 195: Barre & Chelsea from the Official Guide (train numbers, all stations, printed miles).
 - 194: the Soo Line (Official Guide Tables 1 - 26: Chicago, Twin Cities, Duluth, Sault Ste. Marie, the Dakotas; drawn as CP, labelled Soo Line); B&O dark blue into Chicago Grand Central; St. Paul Union Depot at Brendan's point; Stanbridge union station at the Delamere point.
 - 193: TH&B Toronto - Buffalo pool trains run through in TH&B livery (CP numbers in the notes); NYC trains at the CP LaSalle and Adirondack Jct.; St. Johns - St. Alexander on track to the wye; Stanbridge union station; St. Jerome straight tie gone; B&C plum.
 - 192: NYC St. Lawrence & Adirondack, Montreal (Windsor Station) - Valleyfield - Malone, all stations and nine trains (Official Guide table); Malone traces (Mississippi Rails).
