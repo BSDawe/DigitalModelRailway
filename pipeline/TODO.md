@@ -11,8 +11,13 @@ Last updated 17 November 2026 (Version 180).
 - [ ] CN Table 116 (Longlac - Fort William, Nos. 79 / 80): the Toronto section may be a connection with Nos. 3 / 4 at Longlac rather than through cars (Brendan not certain). Matters for chaining. (23 Oct)
 
 ## Fixes queued (Brendan: "don't fix yet"; ask before the next rebuild whether to include them)
-- [ ] Station names (Brendan, 22 Nov 2026, running list of fixes): "Montreal (Park Avenue)" should read "Park Avenue" and "New York (125th Street)" should read "125th Street"
-  (names.py / the page names; gids unchanged).
+- [ ] Station names (Brendan, 22 Nov 2026, running list of fixes; NOT to implement yet): "Montreal Park Avenue" should read "Park Avenue" and "New York (125th Street)" should read
+  "125th Street" (names.py / the page names; gids unchanged). Part of a general naming rule being drafted (22 Nov 2026):
+  1. One passenger station in a city: the plain name. 2. Several stations with proper names: "City (Station)" (Montreal (Windsor Station), Montreal (Place Viger), New York (Grand
+  Central)). 3. Several stations with no proper names (Vancouver): "City (Railway)" proposed; whether this applies to the ~195 small towns with CN and CP stations of the same name is
+  open. 4. Stations known by their own name: that name alone (Park Avenue, 125th Street, Westmount). 5. "(Union Station)", never "(Union)". 6. State / province tags stay hidden.
+  7. (Brendan) "West Toronto", "Montreal Nord", "Montreal West", "North Edmonton" and the like are place names in their own right: left as they are.
+  Brackets that are alternative names (St. Annes (Ste. Anne de Bellevue)), ferry slips and L&PS / L&N stop numbers are not terminals: outside the rule.
 
 ## CP Maritimes (started 10 Nov 2026)
 - [ ] DAR readings (V154): No. 33 (Windsor - Kentville, from No. 4) and No. 4 (Truro - Windsor) have no sign: entered daily except Sunday. No. 3 (34-3) entered Saturday only like No. 34. Boat days at Evangeline Wharf: No. 98 Tue., Thu., Sat. (the Boston boat in); No. 95 Tue., Thu. (the boat out; no No. 95 on Sundays); No. 99 leaving Halifax Mon., Wed., Fri. (Brendan: to the wharf on boat days only). Wharf times estimated.
