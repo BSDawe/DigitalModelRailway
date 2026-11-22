@@ -156,7 +156,14 @@ def apply(viz, gt):
             if r[0] == 'S00': d = dict(name='Carrall Street, Vancouver', owner=None)
             if d:
                 r[1] = d['name']
-                if d['owner']: r[4] = OWNER_NAME.get(d['owner'], d['owner']) + ' station'
-            b = io.StringIO(); csv.writer(b, lineterminator='').writerow(r); outr.append(b.getvalue())
+                if d['owner'] and len(r) > 4 and not r[0].startswith('PORT_') and r[0] not in water:
+                    on = OWNER_NAME.get(d['owner'], d['owner']); others = [OWNER_NAME.get(x, x) for x in d.get('served', []) if x != d['owner']]
+                    rest = r[4]
+                    while True:                              # drop the old "<railway> station" / "<railway> trains" lead-ins
+                        m = re.match(r"^[A-Z][\w&.',() -]{0,60}:? (station|trains)(; also served by [^;.]*)?[;.,]?\s*", rest)
+                        if not m: break
+                        rest = rest[m.end():]
+                    r[4] = f"{on} station" + (f"; also served by {', '.join(others)}" if others else '') + (f"; {rest}" if rest else '')
+            b = io.StringIO(); csv.writer(b, lineterminator='\n').writerow(r); outr.append(b.getvalue())
         gt['stops.txt'] = outr
     return n

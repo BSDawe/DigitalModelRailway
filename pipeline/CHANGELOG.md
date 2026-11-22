@@ -3034,3 +3034,20 @@ A review of the whole project (Brendan: "have a peek through ... suggest improve
 - Counts: 674 lines, 4385 trips, 7742 stops, 65 agencies; check_gtfs 0 problems.
 - (after V207, 22 Nov 2026) Rutland colours: in dark mode the Rutland green could not be told from the C.N. (Brendan). Now light #1C3F16 (dark forest green, yellow badge text),
   dark #D4D65A (yellow-green, dark green badge text).
+
+## Version 208
+- Station names by zoom and owner (Brendan, 22 Nov 2026; station_names.py, run at assembly after real_ends):
+  - Zoomed out a station is labelled with its city ("Montreal", "Toronto", "Vancouver"; one label per city); zoomed in, or selected, with its station name: a station with a
+    1948 name is that name ("Windsor Station", "Union Station", "Central Station", "Grand Central Terminal", "North Western Terminal", "Union Depot", "Park Avenue",
+    "125th Street"); where a city has several stations with no particular name, "Town (RR)" ("Vancouver (CPR)", "Vancouver (CN)", "Vancouver (GN)", "North Bay (CN)",
+    "Minneapolis (Milwaukee)"). Train ends follow the same rule (Montreal - Vancouver zoomed out; Windsor Station - Vancouver (CPR) zoomed in). Panels, boards, search and the GTFS
+    stop_name keep the city as well ("Union Station, Toronto"). Place names in their own right (West Toronto, Montreal Nord, Montreal West) unchanged.
+  - Brendan's list: Winnipeg CN station "Union Station"; Seattle "King Street Station" (GN, NP) and "Union Station" (Milwaukee, UP); Duluth CN_DULUTH "Union Depot" (identified;
+    not moved, Brendan); Niagara Falls disambiguated NY / ON; B.C. Electric "Davie Street" (Vancouver) and "Carrall Street" (the other Vancouver terminal).
+  - CPR, not CP, wherever the railway is abbreviated: badges, "(CPR)" in names, labels and notes, the footer's "CPR Tables". CN stays CN.
+  - Station owner: the owner of the track under the station (segment owner, else the line's), most common across the lines that call; station notes and GTFS stop_desc read
+    "<Owner> station; also served by ..." (ports and landings left as they were). No owner colour on markers (Brendan). Joint / union owners still to check per station.
+- North Bay: the Ontario Northland's "North Bay (C.N.)" and "North Bay (C.P.)" now use the CN and CPR stations (CN_NORTH_BAY, CP_NORTH_BAY) instead of a separate pair
+  placed by the ONR table's mileage (Brendan): one station fewer.
+- Straits of Mackinac car ferry: a course over the water (least-cost path over the basemap water, traces/dssa/straits_car_ferry_lane.json) instead of a straight line over land.
+- Counts: 674 lines, 4385 trips, 7741 stops, 65 agencies; check_gtfs 0 problems.

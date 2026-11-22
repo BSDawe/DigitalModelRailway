@@ -11,42 +11,11 @@ Last updated 17 November 2026 (Version 180).
 - [ ] CN Table 116 (Longlac - Fort William, Nos. 79 / 80): the Toronto section may be a connection with Nos. 3 / 4 at Longlac rather than through cars (Brendan not certain). Matters for chaining. (23 Oct)
 
 ## Fixes queued (Brendan: "don't fix yet"; ask before the next rebuild whether to include them)
-- [ ] Station names (Brendan, 22 Nov 2026, running list of fixes; NOT to implement yet): "Montreal Park Avenue" should read "Park Avenue" and "New York (125th Street)" should read
-  "125th Street" (names.py / the page names; gids unchanged). Part of a general naming rule being drafted (22 Nov 2026):
-  1. One passenger station in a city: the plain name. 2. Several stations with proper names: "City (Station)" (Montreal (Windsor Station), Montreal (Place Viger), New York (Grand
-  Central)). 3. Several stations with no proper names (Vancouver): "City (Railway)" proposed; whether this applies to the ~195 small towns with CN and CP stations of the same name is
-  open. 4. Stations known by their own name: that name alone (Park Avenue, 125th Street, Westmount). 5. "(Union Station)", never "(Union)". 6. State / province tags stay hidden.
-  7. (Brendan) "West Toronto", "Montreal Nord", "Montreal West", "North Edmonton" and the like are place names in their own right: left as they are.
-  Brackets that are alternative names (St. Annes (Ste. Anne de Bellevue)), ferry slips and L&PS / L&N stop numbers are not terminals: outside the rule.
-  REVISED (Brendan, 22 Nov 2026; still not to build):
-  - Names by zoom. Zoomed out: the city only ("Montreal", "Toronto", "Vancouver"), one label per city. Zoomed in: a station with a 1948 name is "<Name> Station" (or Terminal /
-    Depot as it was called): "Windsor Station", "Union Station", "Central Station", "Grand Central Terminal", "North Western Terminal"; a station with no particular name is
-    "Town (RR)": "Vancouver (CPR)", "Vancouver (GN)". So a CPR train reads Montreal - Vancouver zoomed out and Windsor Station - Vancouver (CPR) zoomed in. Station panels, boards
-    and search keep the city as well (e.g. "Union Station, Toronto"). GTFS: a parent station per city.
-  - CPR, not CP, everywhere the railway is named or abbreviated (badges, labels, headings, "(CPR)") — the period form; CN stays CN, to keep them visually distinct.
-  - Chicago: the station the Mountaineer calls at (gid CP_CHICAGO, now "Chicago", skjcp13) is "North Western Terminal".
-- [ ] Station ownership (Brendan, 22 Nov 2026; to design, not build yet): a station's owner is now in effect the first line drawn through it (its gid prefix, line and
-  "Canadian Pacific station" note), which misleads at joint stations. Proposal: separate OWNER from SERVED BY. Owner defaults to the owner of the track under the station
-  (segments), with a hand table for joint and terminal companies (Toronto Terminals Railway CN + CPR; Ottawa Union; St. Paul Union Depot; Troy Union RR NYC + D&H + B&M; Spokane,
-  Seattle, Tacoma Union; Washington Union; Chicago & Western Indiana's Dearborn...). Served-by is computed from the trips that call. Page: marker and panel show the owner
-  ("Union Station · Toronto Terminals Railway (CN and CPR) · used by CN, CPR, ONR, TH&B"); joint stations in the union colour. Gids stay as they are (ids, not owners).
-  Brendan (22 Nov 2026): assume the line under the station is the owner (New York Penn Station: PRR); "Union Station" is sometimes the name of a station one railway owned, so the
-  joint-owner table needs a check per station. CN stays CN (no CNR). Station markers today are not coloured by railway (steam-railway stations: a neutral square or diamond;
-  interurban stations in the line's colour; B.C. Electric red). Brendan (22 Nov): no owner colour on main-line station markers.
-  Station names, Brendan's list (22 Nov 2026; with the naming rule, not to build yet):
-  - Vancouver: B.C. Electric "Davie Street" (Lulu Island line) is a Vancouver station (city Vancouver zoomed out); the other B.C. Electric Vancouver terminal is "Carrall Street".
-    Steam railways: Vancouver (CPR), Vancouver (CN), Vancouver (GN) unless 1948 names turn up.
-  - Winnipeg: the CN station (CN_WINNIPEG, also GN and NP) is "Winnipeg Union Station" (the CPR station stays Winnipeg (CPR)).
-  - New York: "Grand Central Terminal". Seattle: "King Street Station" (GN_SEATTLE; GN, NP) and "Union Station" (WA_SEATTLE_UNION_STATION; Milwaukee, UP; milw_main's plain "Seattle").
-  - Milwaukee Road stations abbreviated "(Milwaukee)": Minneapolis (Milwaukee), Tacoma (Milwaukee), and so on.
-  - Duluth: the Union Depot is CN_DULUTH (-92.1034, 46.7811): Wikipedia gives 46 46 53 N, 92 06 14 W (46.781389, -92.103889), 40 m away (Brendan, 22 Nov 2026); use that point.
-    CP_DULUTH_MINN (-92.1059, 46.7808) is the Soo / DSS&A depot.
-  - Niagara Falls: the two cities disambiguated NY / ON in the name (an exception to hidden state / province tags).
-  - Buffalo: the N.Y.C. station is "Buffalo Central Terminal"; Detroit: the N.Y.C. station is "Michigan Central Station" (when those are built).
-  - North Bay: an extra station, probably mileage-placement errata: ONR's "North Bay (C.N.)" and "North Bay (C.P.)" (ononr001) sit together at -79.4539, 46.2995, away from CN's
-    North Bay (-79.4572, 46.3108) and CPR's (-79.466, 46.3105). Fix (Brendan, 22 Nov 2026): the ONR stops use the CN and CPR stations' points (CN_NORTH_BAY, CP_NORTH_BAY),
-    not the ONR table's placement; one CN North Bay station, one CPR North Bay station.
-  - Fredericton: Brendan to fix; the CPR station (York Street, CP_FREDERICTON) is CPR-owned but named Union Station (an example of "Union Station" with one owner).
+- [ ] Station owners, joint and union stations (V208 takes the owner from the track under the station): check each "Union Station" / union depot by hand (Toronto Terminals
+  Railway CN + CPR; Ottawa Union; St. Paul Union Depot; Troy Union RR NYC + D&H + B&M; Spokane, Seattle, Tacoma Union; Washington Union; the C&WI's Dearborn...).
+  "Union Station" is sometimes the name of a station one railway owned (Brendan).
+- [ ] Fredericton: Brendan to fix; the CPR station (York Street, CP_FREDERICTON) is CPR-owned but named Union Station.
+- [ ] Buffalo: the N.Y.C. station is "Buffalo Central Terminal"; Detroit: the N.Y.C. station is "Michigan Central Station" (names to use when those are built).
 
 ## CP Maritimes (started 10 Nov 2026)
 - [ ] DAR readings (V154): No. 33 (Windsor - Kentville, from No. 4) and No. 4 (Truro - Windsor) have no sign: entered daily except Sunday. No. 3 (34-3) entered Saturday only like No. 34. Boat days at Evangeline Wharf: No. 98 Tue., Thu., Sat. (the Boston boat in); No. 95 Tue., Thu. (the boat out; no No. 95 on Sundays); No. 99 leaving Halifax Mon., Wed., Fri. (Brendan: to the wharf on boat days only). Wharf times estimated.
@@ -157,8 +126,6 @@ Maritime tables where the traced line differs from the printed miles by 1 mi and
   To check: Table 7 Nos. 8 / 7 daily (Table 9: ex Sat / ex Mon); Table 7 No. 7 Bruce printed 7.35 (left out); Table 6 St. Croix Falls section (left out); Table 13 No. 160
   sign (# MWF or double dagger); Table 23 La Mars state; Chicago: Grand Central Station (B&O property) - Forest Park on Brendan's B&O Chicago Terminal trace (19 Nov 2026), own bo,
   B&O dark blue (#1D3461; dark theme #8AA6DC; Claude's pick of shade), 10.0 mi traced / 10.9 printed; Table 10 Nos. 3 / 4 and Table 26 Nos. 109 / 110 are the existing Mountaineer / Winnipeger (connections only).
-- [ ] Straits of Mackinac car ferry (Mackinaw City - St. Ignace, train ferry in traces/maritimes/dssa.geojson, tools/mar_import_dssa.py): drawn as a straight line
-  dock to dock, which cuts across land; give it a course over the water (Brendan, 20 Nov 2026).
 - [ ] Arnold Transit (V200; boats unnamed since V201): August 1950 Official Guide times stand in for July 1948 (the May 1948 Guide's St. Ignace list looks off-season); crossing times
   35 / 40 minutes from the 1958 brochure. Mackinaw City State Ferry Dock point is Brendan's estimate. Les Cheneaux: the lane goes round the outside of the islands
   (Hessel channels closed at basemap resolution; a hand lane wanted?); Coryell Island (the 1948 terminus) not drawn.
@@ -274,6 +241,12 @@ Each runs to an International Boundary point (time estimated) or to the last Can
 - [x] Sydney & Louisburg: built (V163). Colour #5B3A8C is Claude's pick. Victoria Jct. - Glace Bay 9.9 mi traced / 11.0 printed (the trace may take a later route).
 
 ## Done and answered
+### Done in Version 208 (22 Nov 2026)
+- Station names by zoom (city zoomed out; station name or "Town (RR)" zoomed in); Park Avenue, 125th Street, Grand Central Terminal, North Western Terminal, Winnipeg and
+  Seattle Union Stations, King Street Station, "(Milwaukee)", Niagara Falls NY / ON, Davie Street and Carrall Street; CPR for CP; station owner from the track under the station.
+- Duluth: CN_DULUTH identified as the Union Depot; NOT moved (Brendan, 22 Nov 2026: keep the point, keep the identification).
+- North Bay: the ONR stops on the CN and CPR stations (the extra pair placed by mileage is gone).
+- Straits of Mackinac car ferry: drawn over the water.
 ### Done in Version 204 (20 Nov 2026)
 - CN Table 79 trains changing number at Hamilton joined (101/102, 89/90, 187/184, 93/94, 91/92, 107/108). Left: 9 / 84 (one column, 2-hour wait, 84 ex Sun), 95 / 6, 83 / 86, 183 / 186.
 ### Fixes done in Version 201 (20 Nov 2026)
