@@ -45,6 +45,7 @@ NAMED = {
     'CN_NIAGARA_FALLS_N_Y': ('Niagara Falls, NY', 'Niagara Falls, NY'),
     'CN_HAMILTON_JAMES_ST': ('James Street Station', 'Hamilton'),
     'CP_FREDERICTON': ('Union Station', 'Fredericton'),
+    'CN_SAINT_JOHN': ('Union Station', 'Saint John'),                 # CN and CPR (Brendan, 22 Nov 2026)
     'S00': ('Carrall Street', 'Vancouver'),
 }
 BY_NAME = {'Davie Street': ('Davie Street', 'Vancouver'), 'Vancouver': ('Carrall Street', 'Vancouver')}   # gid-less: the B.C. Electric     # B.C. Electric stations without ids on the page

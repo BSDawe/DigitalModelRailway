@@ -19,8 +19,13 @@ SPECS = [
  L('np_main', 'np', 'np', ['wa_np_t003a.csv'], ['to Seattle', 'to Spokane'], 'Spokane – Pasco – Yakima – Ellensburg – Auburn – Seattle', 'NP Table 3'),
  L('np_tac', 'np', 'np', ['wa_np_t003b.csv'], ['to Tacoma', 'to East Auburn'], 'East Auburn – Tacoma (Tacoma sections of the main line trains)', 'NP Table 3'),
  L('np_pool', 'np', 'np+sps', ['wa_np_t004.csv'], ['to Tacoma and Portland', 'to Seattle'], 'Seattle – Tacoma – Centralia – Vancouver – Portland (pool trains of the NP, GN and UP)', 'NP Table 4',
-   cols=['No402', 'No408', 'No460', 'No407', 'No459', 'No401'],
+   cols=['No408', 'No407'],
    places={'Steilacoom': (-122.6026274, 47.1698197)}),     # by Point Defiance and Steilacoom (the names file's town), not the Prairie Line by Lakeview
+ # the GN's pool trains (Brendan, 22 Nov 2026: "aren't there GN Portland Seattle trains?"): Nos. 401 / 402 and 459 / 460, by the operator prefixes of the
+ # August 1952 Official Guide pool table (streamlinerschedules.com; the April 1948 tables do not say); 401 / 402 also print in GN Table 46 as 401-360 and 355-402
+ L('gn_pool', 'gnpool', 'np+sps', ['wa_np_t004.csv'], ['to Tacoma and Portland', 'to Seattle'], 'Seattle – Tacoma – Centralia – Vancouver – Portland (GN pool trains)', 'NP Table 4',
+   cols=['No402', 'No460', 'No459', 'No401'], tidpfx='GN',
+   places={'Steilacoom': (-122.6026274, 47.1698197)}),
  # the UP's pool trains (Table 4 notes): from Seattle Union Station by the UP's own line through Kent, Auburn, Sumner and North Puyallup to Tacoma,
  # then over the NP and the SP&S to Portland
  L('up_pool', 'up', 'upn+np+sps', [('wa_np_t004.csv', 'Seattle (Union Sta.)', 'Portland')], ['to Tacoma and Portland', 'to Seattle'], 'Seattle (Union Station) – Tacoma – Centralia – Vancouver – Portland (UP pool trains; into Portland by the SP&S/NP north-side route from 1946)',

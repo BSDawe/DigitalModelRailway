@@ -208,6 +208,11 @@ def place(name):
     if g: return (g[0], g[1], g[2], 3000)
     return None
 for _r in ('np', 'gnw', 'sps', 'up', 'milw', 'cprr', 'wim'): ab_lines.EXT_PLACE[_r] = place_for(_r)
+# the GN's Seattle - Portland pool trains (wa_build gn_pool; Brendan, 22 Nov 2026): Great Northern trains (kind, label, agency, colour) over the NP's line,
+# calling at the same stations as the NP's pool trains (NP gids and places), on NP-owned track
+ab_lines.RAILS['gnpool'] = dict(ab_lines.RAILS['gnw'], own='np', pfx='NP')
+ab_lines.EXT_PLACE['gnpool'] = place_for('np')
+ab_lines.EXT_GID.update({('gnpool', n): g for (r, n), g in list(ab_lines.EXT_GID.items()) if r == 'np'})
 # the Portland sections of GN Nos. 1-4 (rail 'gnw') run over the SP&S (Table 1): they call at the SP&S's own stations, not GN copies of them
 # (Brendan, 15 October 2026: the GN trains were missing from the SP&S station boxes)
 import re as _re
