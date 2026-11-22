@@ -30,6 +30,9 @@ Last updated 17 November 2026 (Version 180).
   (segments), with a hand table for joint and terminal companies (Toronto Terminals Railway CN + CPR; Ottawa Union; St. Paul Union Depot; Troy Union RR NYC + D&H + B&M; Spokane,
   Seattle, Tacoma Union; Washington Union; Chicago & Western Indiana's Dearborn...). Served-by is computed from the trips that call. Page: marker and panel show the owner
   ("Union Station · Toronto Terminals Railway (CN and CPR) · used by CN, CPR, ONR, TH&B"); joint stations in the union colour. Gids stay as they are (ids, not owners).
+  Brendan (22 Nov 2026): assume the line under the station is the owner (New York Penn Station: PRR); "Union Station" is sometimes the name of a station one railway owned, so the
+  joint-owner table needs a check per station. CN stays CN (no CNR). Station markers today are not coloured by railway (steam-railway stations: a neutral square or diamond;
+  interurban stations in the line's colour; B.C. Electric red): owner colour on the markers is a choice still to make.
 
 ## CP Maritimes (started 10 Nov 2026)
 - [ ] DAR readings (V154): No. 33 (Windsor - Kentville, from No. 4) and No. 4 (Truro - Windsor) have no sign: entered daily except Sunday. No. 3 (34-3) entered Saturday only like No. 34. Boat days at Evangeline Wharf: No. 98 Tue., Thu., Sat. (the Boston boat in); No. 95 Tue., Thu. (the boat out; no No. 95 on Sundays); No. 99 leaving Halifax Mon., Wed., Fri. (Brendan: to the wharf on boat days only). Wharf times estimated.
