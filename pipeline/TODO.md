@@ -39,11 +39,13 @@ Last updated 17 November 2026 (Version 180).
   - Winnipeg: the CN station (CN_WINNIPEG, also GN and NP) is "Winnipeg Union Station" (the CPR station stays Winnipeg (CPR)).
   - New York: "Grand Central Terminal". Seattle: "King Street Station" (GN_SEATTLE; GN, NP) and "Union Station" (WA_SEATTLE_UNION_STATION; Milwaukee, UP; milw_main's plain "Seattle").
   - Milwaukee Road stations abbreviated "(Milwaukee)": Minneapolis (Milwaukee), Tacoma (Milwaukee), and so on.
-  - Duluth: one of the two (CN_DULUTH -92.1034, 46.7811 or CP_DULUTH_MINN -92.1059, 46.7808, the Soo / DSS&A depot) is the Union Depot: which, to check.
+  - Duluth: the Union Depot is CN_DULUTH (-92.1034, 46.7811): Wikipedia gives 46 46 53 N, 92 06 14 W (46.781389, -92.103889), 40 m away (Brendan, 22 Nov 2026); use that point.
+    CP_DULUTH_MINN (-92.1059, 46.7808) is the Soo / DSS&A depot.
   - Niagara Falls: the two cities disambiguated NY / ON in the name (an exception to hidden state / province tags).
   - Buffalo: the N.Y.C. station is "Buffalo Central Terminal"; Detroit: the N.Y.C. station is "Michigan Central Station" (when those are built).
   - North Bay: an extra station, probably mileage-placement errata: ONR's "North Bay (C.N.)" and "North Bay (C.P.)" (ononr001) sit together at -79.4539, 46.2995, away from CN's
-    North Bay (-79.4572, 46.3108) and CPR's (-79.466, 46.3105). Brendan to fix.
+    North Bay (-79.4572, 46.3108) and CPR's (-79.466, 46.3105). Fix (Brendan, 22 Nov 2026): the ONR stops use the CN and CPR stations' points (CN_NORTH_BAY, CP_NORTH_BAY),
+    not the ONR table's placement; one CN North Bay station, one CPR North Bay station.
   - Fredericton: Brendan to fix; the CPR station (York Street, CP_FREDERICTON) is CPR-owned but named Union Station (an example of "Union Station" with one owner).
 
 ## CP Maritimes (started 10 Nov 2026)
