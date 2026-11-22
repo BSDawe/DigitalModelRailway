@@ -139,6 +139,8 @@ def finish(state):
     if 'calendar.txt' in gt:                                           # a service added by two steps (W_ day lists) is written once
         seen = set(); gt['calendar.txt'] = [l for l in gt['calendar.txt'] if not (l.split(',')[0] in seen or seen.add(l.split(',')[0]))]
     if miss: print('  real_ends: no such trips', miss)
+    import station_names                                               # names by zoom (city / station), owners, CPR (22 November 2026)
+    print('  station_names:', station_names.apply(viz, gt), 'stations renamed')
     write_state(viz, gt)
     with zipfile.ZipFile(ZIP, 'w', zipfile.ZIP_DEFLATED) as z:
         for fn in sorted(gt): z.write(os.path.join(GT, fn), fn)

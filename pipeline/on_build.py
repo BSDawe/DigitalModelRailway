@@ -230,7 +230,8 @@ for _fn in sorted(glob.glob(os.path.join(HERE, 'on_rut_t*.csv'))):
     _rows = ab_table.load(_fn)['rows']
     OVER.setdefault(_st, {}).update(label='Rutland', places=RUT_PLACES, noplace=tuple(r['station'] for r in _rows if r['station'] not in RUT_PLACES),
                                      tidpfx='RUT', short='Rutland Table ' + re.match(r'on_rut_t(\d+)', _st).group(1).lstrip('0'), src='Official Guide, April 25, 1948')
-OVER['on_cn_t051'] = dict(skip=True)   # its Rutland trains (to the border) run through in on_rut_t001 (21 Nov 2026)
+OVER['on_cn_t051'] = dict(skip=True)
+for _k in ('on_onr_t001', 'on_onr_t001n'): OVER.setdefault(_k, {}).setdefault('places', {}).update({'North Bay (C.N.)': (-79.4572, 46.3108), 'North Bay (C.P.)': (-79.466, 46.3105)})   # the CN and CP stations' points (Brendan, 22 Nov 2026)   # its Rutland trains (to the border) run through in on_rut_t001 (21 Nov 2026)
 for _fn in sorted(glob.glob(os.path.join(HERE, 'on_soo_t*.csv'))):   # the Soo Line (Official Guide, May 1948; Brendan's pages of 19 Nov 2026): CP lines labelled Soo Line
     _st = os.path.basename(_fn)[:-4]
     if _st in ('on_soo_t070', 'on_soo_t070b'): OVER[_st] = dict(skip=True); continue   # CP Table 70's Soo trains: superseded by Tables 7, 1 and 6

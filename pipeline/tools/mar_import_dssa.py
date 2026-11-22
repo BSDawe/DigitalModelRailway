@@ -2,7 +2,7 @@
 Drawn as CP (own cp), like the Soo Line. Source: Mississippi Rails "Duluth South Shore & Atlantic.kmz" (Tony Howe and David Price; Brendan; raw file in the private repo,
 traces/dssa/). Status: 'ok', except pieces marked abandoned or old alignment ('pre1948'), the White Pine branch (built 1952-53: 'post1948') and the Mineral Range's unnamed paths and
 mine spurs ('later', not needed by the passenger trains). Ties: piece ends 150 - 600 m from another line get a straight tie (the loader ties ends within 150 m itself).
-The Straits of Mackinac car ferry (Mackinac Transportation Co.), Mackinaw City dock - St. Ignace dock: a train ferry (own water) on a straight course between Brendan's
+The Straits of Mackinac car ferry (Mackinac Transportation Co.), Mackinaw City dock - St. Ignace dock: a train ferry (own water) on a water course (least-cost path over the basemap water) between Brendan's
 dock points; Brendan's lead from the St. Ignace dock.
 Usage: python3 tools/mar_import_dssa.py <doc.kml or .kmz>"""
 import json, math, os, re, sys, zipfile
@@ -61,8 +61,8 @@ feats.append(F('DSS&A: Marengo Junction, the main line - the Soo Line Ashland li
 feats.append(F('DSS&A: St. Ignace, the lead to the car ferry dock (Brendan)', [(-84.72067136523755, 45.86573660638453), (-84.72001445489376, 45.86547872876946), (-84.7195510663993, 45.86535717533018),
                (-84.71864172444918, 45.86519983606163), (-84.71814945207575, 45.86519583913775), (-84.7170295807914, 45.86544662636462), (-84.71575189724673, 45.86573624098808)],
                "Brendan's trace, 20 Nov 2026", group='brendan'))
-feats.append(F('Mackinaw City - St. Ignace car ferry (Straits of Mackinac)', [(-84.719617, 45.7799), (-84.715364, 45.865875)],
-               "Train ferry (Brendan, 20 Nov 2026: drawn as a train ferry, like Mulgrave - Point Tupper): the Mackinac Transportation Co.'s car ferries between Brendan's dock points, Mackinaw City 45 46 47.64 N, 84 43 10.62 W and St. Ignace 45 51 57.15 N, 84 42 55.31 W. Course APPROXIMATE (straight).",
+feats.append(F('Mackinaw City - St. Ignace car ferry (Straits of Mackinac)', [tuple(c) for c in json.load(open(os.path.join(HERE, 'traces', 'dssa', 'straits_car_ferry_lane.json')))['coords']],
+               "Train ferry (Brendan, 20 Nov 2026: drawn as a train ferry, like Mulgrave - Point Tupper): the Mackinac Transportation Co.'s car ferries between Brendan's dock points, Mackinaw City 45 46 47.64 N, 84 43 10.62 W and St. Ignace 45 51 57.15 N, 84 42 55.31 W. Course APPROXIMATE: a least-cost path over the water (traces/dssa/straits_car_ferry_lane.json).",
                group='link', own='water', constituent='Mackinac Transportation Co. car ferry (Straits of Mackinac)'))
 json.dump(dict(type='FeatureCollection', features=feats), open(os.path.join(HERE, 'traces', 'maritimes', 'dssa.geojson'), 'w'))
 from collections import Counter
