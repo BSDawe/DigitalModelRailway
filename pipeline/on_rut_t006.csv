@@ -1,0 +1,14 @@
+# Rutland Railroad, Table 6 (Addison Branch, Leicester Junction - Whiting - Larrabees Point). Official Guide, April 25, 1948, Rutland Railroad (Brendan, 21 Nov 2026; private repo scans/og1948_rut/) (the table is dated April 23). Eastern time.
+# Nos. 455-457: No. 455 Leicester Junction - Whiting daily except Sunday, No. 457 on to Larrabees Point Tuesday, Thursday, Saturday (one train on those days); No. 458 back
+# Tuesday, Thursday, Saturday, Larrabees Point - Whiting, then to Leicester Junction (the Whiting - Leicester Junction leg printed without a sign: entered on the same days).
+# Additional train: Whiting 8.45 a.m. Monday, Wednesday, Friday to Leicester Junction 9.00 a.m. (entered as No. 458x).
+#train col=No455 num=455 dir=down days="Mon,Tue,Wed,Thu,Fri,Sat" kind=passenger links="same 457 at Whiting (Tue, Thu, Sat)" note="Daily except Sunday: Leicester Junction 8.00 a.m. to Whiting 8.15 a.m.; on Tuesday, Thursday and Saturday on to Larrabees Point as No. 457."
+#train col=No457 num=457 dir=down days="Tue,Thu,Sat" kind=passenger links="same 455 at Whiting" note="Tuesday, Thursday, Saturday: Whiting 8.15 a.m. to Larrabees Point 9.00 a.m. (from No. 455)."
+#train col=No458 num=458 dir=up days="Tue,Thu,Sat" kind=passenger note="Tuesday, Thursday, Saturday: Larrabees Point 9.25 a.m. to Leicester Junction 10.25 a.m."
+#train col=No458x num= dir=up days="Mon,Wed,Fri" kind=passenger note="Additional train, Monday, Wednesday, Friday: Whiting 8.45 a.m. to Leicester Junction 9.00 a.m."
+mile,station,principal,prov,tz,No455,No457,No458,No458x
+0,"Leicester Junction, Vt.",1,VT,E,lv 8.00a,,ar 10.25a,ar 9.00a
+3.0,"Whiting, Vt.",0,VT,E,ar 8.15a,lv 8.15a,ar 10.05a / lv 10.05a,lv 8.45a
+6.0,"Shoreham, Vt.",0,VT,E,,8.27a,9.52a,
+8.2,"Orwell, Vt.",0,VT,E,,8.41a,9.40a,
+13.4,"Larrabee's Point, Vt.",1,VT,E,,ar 9.00a,lv 9.25a,

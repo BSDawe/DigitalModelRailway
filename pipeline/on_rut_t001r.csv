@@ -1,0 +1,30 @@
+# Rutland Railroad, Table 1 (Rutland - Burlington - Alburgh - Rouses Point): the locals Nos. 87 / 88. Official Guide, April 25, 1948, Rutland Railroad (Brendan, 21 Nov 2026; private repo scans/og1948_rut/). Eastern time. Miles from White Creek.
+# No. 87: coach Rutland to Ogdensburg (equipment list), on from Alburgh by No. 7. No. 88 leaves Rouses Point 12.40 p.m., as does No. 8 from Ogdensburg (Table 4): probably the same
+# train from Rouses Point (88 to Alburgh 1.10, 8 to Alburgh 1.00 p.m. as printed): to check. Signs: f on signal; g stops to leave passengers from Burlington or beyond.
+#train col=No87 num=87 dir=down days=daily kind=passenger links="cars 7 at Alburgh" note="Daily: Rutland 6.15 a.m. to Rouses Point 10.42 a.m. Coach Rutland to Ogdensburg (by No. 7 from Alburgh)."
+#train col=No88 num=88 dir=up days=daily kind=passenger links="same 8 at Rouses Point?" note="Daily: Rouses Point 12.40 p.m. to Rutland 5.15 p.m."
+mile,station,principal,prov,tz,No87,No88
+54.5,"Rutland, Vt.",1,VT,E,lv 6.15a,ar 5.15p
+56.0,"Center Rutland, Vt.",0,VT,E,f6.18a,
+60.5,"Proctor, Vt.",0,VT,E,6.24a,g5.00p
+64.1,"Pittsford, Vt.",0,VT,E,f6.33a,
+65.1,"Florence, Vt.",0,VT,E,f6.35a,
+70.6,"Brandon, Vt.",1,VT,E,6.45a,4.40p
+76.3,"Leicester Junction, Vt.",1,VT,E,f6.56a,
+80.7,"Salisbury, Vt.",0,VT,E,f7.05a,
+87.7,"Middlebury, Vt.",1,VT,E,7.20a,4.05p
+95.3,"New Haven, Vt.",0,VT,E,7.33a,3.55p
+100.5,"Vergennes, Vt.",1,VT,E,7.45a,3.45p
+102.4,"Ferrisburg, Vt.",0,VT,E,f7.50a,
+105.6,"North Ferrisburg, Vt.",0,VT,E,f8.00a,
+107.9,"Thompson's Point, Vt.",0,VT,E,,
+109.7,"Charlotte, Vt.",0,VT,E,f8.10a,
+115.1,"Shelburne, Vt.",0,VT,E,f8.22a,
+121.8,"Burlington, Vt.",1,VT,E,ar 8.40a / lv 9.05a,ar 2.15p / lv 2.45p
+135.2,"South Hero, Vt.",0,VT,E,f9.30a,
+139.3,"Grand Isle, Vt.",0,VT,E,f9.40a,
+144.0,"Abnaki, Vt.",0,VT,E,,
+146.7,"North Hero, Vt.",0,VT,E,f9.55a,
+152.6,"Isle La Motte, Vt.",0,VT,E,f10.05a,
+159.0,"Alburgh, Vt.",1,VT,E,10.15a,1.10p
+162.6,"Rouses Point, N.Y.",1,NY,E,ar 10.42a,lv 12.40p

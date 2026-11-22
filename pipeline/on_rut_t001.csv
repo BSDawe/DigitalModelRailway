@@ -1,0 +1,55 @@
+# Rutland Railroad, Table 1 (New York - Troy - Rutland - Burlington - Rouses Point - Montreal): the through trains. Official Guide, April 25, 1948, Rutland Railroad (Brendan, 21 Nov 2026; private repo scans/og1948_rut/). Eastern time.
+# New York (Grand Central) - Troy: the N.Y.C.; Troy - White Creek: the B&M (Troy & Boston); White Creek - Rouses Point: the Rutland; Rouses Point - Montreal (Central Station): the C.N.
+# Miles: N.Y.C. and B&M as printed (Troy 148.3, White Creek 178.7), then the Rutland and C.N. miles added on. Through cars by the equipment list (authoritative): sleeping cars and
+# reclining-seat coaches New York - Montreal (Nos. 51 / 52, The Mount Royal; Nos. 64 / 65, Green Mountain). Albany times are connections (Troy - Albany), not calls. Bennington
+# (by bus from North Bennington) left out. Signs: c stops to take or leave passengers for or from North Bennington, Bellows Falls or beyond; f on signal; n Sunday only on signal;
+# v stops to leave passengers from beyond Bellows Falls; sign-only calls (m, p, g, q, z without a time) left out. Replaces the C.N. Table 51 pieces to the border (on_cn_t051.csv).
+#train col=No51 num=51 dir=down days=daily kind=passenger name="The Mount Royal" links="joined by 143 at Rutland" note="The Mount Royal, daily: New York (Grand Central) 9.45 p.m., Troy 1.05 a.m., Rutland 3.30 a.m., Burlington 5.20 a.m., Montreal (Central Station) 8.20 a.m. Sleeping cars New York - Montreal and New York - Burlington; reclining-seat coach New York - Montreal. Boston coaches from Rutland (No. 143)."
+#train col=No65 num=65 dir=down days=daily kind=passenger name="Green Mountain" links="joined by 165 at Rutland" note="Green Mountain, daily: New York (Grand Central) 7.10 a.m., Troy 11.10 a.m., Rutland 1.45 p.m., Burlington 3.35 p.m., Montreal (Central Station) 6.30 p.m. Reclining-seat coach New York - Montreal; dining car New York - Albany. Boston coach from Rutland (No. 165). Sandwich service Rutland - Burlington."
+#train col=No64 num=64 dir=up days=daily kind=passenger name="Green Mountain" links="has section 164 at Rutland" note="Green Mountain, daily: Montreal (Central Station) 8.55 a.m., Burlington 11.42 a.m., Rutland 1.35 p.m., Troy 4.00 p.m., New York (Grand Central) 7.30 p.m. Reclining-seat coach Montreal - New York; dining car Troy - New York. Boston coach from Rutland (No. 164). Sandwich service Burlington - Rutland."
+#train col=No52 num=52 dir=up days=daily kind=passenger name="The Mount Royal" links="has section 146 at Rutland" note="The Mount Royal, daily: Montreal (Central Station) 7.20 p.m., Burlington 10.30 p.m., Rutland 12.30 a.m., Troy 2.55 a.m., New York (Grand Central) 6.20 a.m. Sleeping cars Montreal - New York and Burlington - New York; reclining-seat coach Montreal - New York. Boston coaches from Rutland (No. 146)."
+mile,station,principal,prov,tz,No51,No65,No64,No52
+0,"New York (Grand Central), N.Y.",1,NY,E,lv 9.45p,lv 7.10a,ar 7.30p,ar 6.20a
+72.8,"Poughkeepsie, N.Y.",0,NY,E,11.28p,8.55a,5.36p,
+148.3,"Troy, N.Y.",1,NY,E,1.05a,11.10a,ar 4.00p,ar 2.55a
+178.7,"White Creek, N.Y.",0,NY,E,,,,
+180.6,"North Bennington, Vt.",1,VT,E,ar 1.58a / lv 2.02a,ar 12.11p / lv 12.15p,ar 3.07p / lv 3.10p,ar 2.02a / lv 2.05a
+182.5,"South Shaftsbury, Vt.",0,VT,E,,,3.03p,
+187.6,"Shaftsbury, Vt.",0,VT,E,,,,
+192.4,"Arlington, Vt.",0,VT,E,,f12.32p,2.45p,
+195.6,"Sunderland, Vt.",0,VT,E,,,,
+201.8,"Manchester, Vt.",1,VT,E,2.35a,12.47p,2.25p,1.25a
+207.3,"East Dorset, Vt.",0,VT,E,,12.55p,,
+210.6,"North Dorset, Vt.",0,VT,E,,,,
+214.9,"Danby, Vt.",0,VT,E,,1.05p,,
+219.6,"South Wallingford, Vt.",0,VT,E,,1.12p,,
+223.8,"Wallingford, Vt.",0,VT,E,,1.20p,f1.49p,
+227.0,"Clarendon, Vt.",0,VT,E,,,,
+230.2,"Alfrecha, Vt.",0,VT,E,,,,
+233.2,"Rutland, Vt.",1,VT,E,ar 3.15a / lv 3.30a,ar 1.35p / lv 1.45p,ar 1.20p / lv 1.35p,ar 12.15a / lv 12.30a
+234.7,"Center Rutland, Vt.",0,VT,E,,,,
+239.2,"Proctor, Vt.",0,VT,E,,1.54p,1.08p,
+242.8,"Pittsford, Vt.",0,VT,E,,c2.00p,,
+243.8,"Florence, Vt.",0,VT,E,,,,
+249.3,"Brandon, Vt.",1,VT,E,,2.10p,12.55p,11.50p
+255.0,"Leicester Junction, Vt.",1,VT,E,,v2.18p,,
+259.4,"Salisbury, Vt.",0,VT,E,,,,
+266.4,"Middlebury, Vt.",1,VT,E,4.18a,2.33p,12.32p,11.20p
+274.0,"New Haven, Vt.",0,VT,E,,c2.43p,,
+279.2,"Vergennes, Vt.",1,VT,E,,2.51p,12.12p,11.00p
+281.1,"Ferrisburg, Vt.",0,VT,E,,,,
+284.3,"North Ferrisburg, Vt.",0,VT,E,,c2.58p,,
+286.6,"Thompson's Point, Vt.",0,VT,E,,,,
+288.4,"Charlotte, Vt.",0,VT,E,,c3.04p,,
+293.8,"Shelburne, Vt.",0,VT,E,,,,
+300.5,"Burlington, Vt.",1,VT,E,ar 5.10a / lv 5.20a,ar 3.25p / lv 3.35p,ar 11.32a / lv 11.42a,ar 10.10p / lv 10.30p
+313.9,"South Hero, Vt.",0,VT,E,c5.43a,f3.57p,f11.13a,n9.45p
+318.0,"Grand Isle, Vt.",0,VT,E,c5.49a,f4.05p,f11.06a,n9.40p
+322.7,"Abnaki, Vt.",0,VT,E,,,,
+325.4,"North Hero, Vt.",0,VT,E,c6.00a,f4.17p,f10.55a,n9.30p
+331.3,"Isle La Motte, Vt.",0,VT,E,c6.10a,f4.27p,f10.45a,n9.20p
+337.7,"Alburgh, Vt.",1,VT,E,6.20a,4.40p,10.32a,9.05p
+341.3,"Rouses Point, N.Y.",1,NY,E,ar 6.46a / lv 6.50a,ar 4.57p / lv 5.00p,ar 10.17a / lv 10.20a,ar 8.42p / lv 8.47p
+363.6,St. Johns,1,QC,E,7.30a,5.40p,9.41a,8.06p
+382.8,St. Lambert,1,QC,E,7.58a,6.08p,9.16a,7.41p
+386.8,Montreal (Central Station),1,QC,E,ar 8.20a,ar 6.30p,lv 8.55a,lv 7.20p

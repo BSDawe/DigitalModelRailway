@@ -1,0 +1,33 @@
+# Rutland Railroad, Table 4 (Ogdensburg Division, Alburgh - Rouses Point - Malone - Norwood - Ogdensburg). Official Guide, April 25, 1948, Rutland Railroad (Brendan, 21 Nov 2026; private repo scans/og1948_rut/). Eastern time.
+# Rouses Point and Rouses Point Junction both at 3.6 mi as printed. No. 7 carries No. 87's coach from Rutland (equipment list). Signs: f on signal.
+#train col=No7 num=7 dir=down days=daily kind=passenger links="cars 87 at Alburgh" note="Daily: Alburgh 10.30 a.m. to Ogdensburg 4.15 p.m. Coach from Rutland (No. 87)."
+#train col=No3 num=3 dir=down days="Mon,Tue,Wed,Thu,Fri,Sat" kind=passenger note="Daily except Sunday: Alburgh 7.30 a.m. to Ogdensburg 12.45 p.m."
+#train col=No8 num=8 dir=up days=daily kind=passenger links="same 88 at Rouses Point?" note="Daily: Ogdensburg 7.30 a.m. to Alburgh 1.00 p.m. (Rouses Point 12.40 p.m., where No. 88 leaves for Rutland)."
+#train col=No6 num=6 dir=up days="Mon,Tue,Wed,Thu,Fri,Sat" kind=passenger note="Daily except Sunday: Ogdensburg 3.00 p.m. to Alburgh 7.45 p.m."
+mile,station,principal,prov,tz,No7,No3,No8,No6
+0,"Alburgh, Vt.",1,VT,E,lv 10.30a,lv 7.30a,ar 1.00p,ar 7.45p
+3.6,"Rouses Point, N.Y.",1,NY,E,10.42a,7.42a,12.40p,7.25p
+3.6,"Rouses Point Junction, N.Y.",0,NY,E,10.50a,7.55a,f12.30p,f7.15p
+7.6,"Champlain, N.Y.",0,NY,E,f10.57a,8.02a,f12.20p,7.08p
+14.9,"Mooers, N.Y.",0,NY,E,f11.15a,8.20a,f11.50a,6.53p
+17.9,"Mooers Forks, N.Y.",0,NY,E,f11.21a,8.26a,f11.45a,6.48p
+23.7,"Altona, N.Y.",0,NY,E,f11.35a,8.40a,f11.35a,6.38p
+26.2,"Irona, N.Y.",0,NY,E,f11.45a,f8.45a,f11.30a,f6.33p
+29.0,"Forest, N.Y.",0,NY,E,f11.54a,f8.50a,f11.13a,f6.28p
+31.8,"Ellenburgh, N.Y.",0,NY,E,f12.00p,8.55a,f11.03a,6.23p
+37.6,"Clinton Mills, N.Y.",0,NY,E,f12.13p,f9.08a,f10.54a,f6.14p
+40.3,"Churubusco, N.Y.",0,NY,E,12.20p,9.15a,f10.50a,6.10p
+47.7,"Chateaugay, N.Y.",0,NY,E,12.35p,9.30a,10.20a,5.45p
+52.4,"Burke, N.Y.",0,NY,E,f12.50p,9.40a,f10.12a,5.37p
+58.7,"Malone Junction, N.Y.",1,NY,E,1.05p,9.55a,10.00a,5.25p
+59.7,"Malone, N.Y.",1,NY,E,1.25p,10.15a,9.45a,5.20p
+65.6,"Bangor, N.Y.",0,NY,E,1.40p,10.30a,f9.30a,5.00p
+71.2,"Brushton, N.Y.",0,NY,E,f1.55p,10.43a,f9.10a,4.47p
+73.6,"Moira, N.Y.",1,NY,E,2.00p,10.50a,9.05a,4.40p
+79.8,"North Lawrence, N.Y.",0,NY,E,f2.15p,11.05a,f8.55a,4.27p
+85.2,"Winthrop, N.Y.",0,NY,E,f2.30p,11.20a,f8.40a,4.15p
+92.8,"Knapps, N.Y.",0,NY,E,f2.50p,11.35a,f8.25a,4.02p
+95.7,"Norwood, N.Y.",1,NY,E,3.10p,11.45a,8.20a,3.55p
+103.5,"Madrid, N.Y.",0,NY,E,f3.30p,12.05p,f8.00a,3.30p
+112.0,"Lisbon, N.Y.",0,NY,E,f3.50p,12.25p,f7.45a,3.15p
+120.5,"Ogdensburg, N.Y.",1,NY,E,ar 4.15p,ar 12.45p,lv 7.30a,lv 3.00p

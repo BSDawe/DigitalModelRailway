@@ -1,7 +1,7 @@
 # The Digital Model Railway — project state
 
 Read this first. It is meant to be enough to start a short, single-task chat without replaying the project's history.
-Last updated 20 November 2026 (Version 206). This file is the current state and the standing rules; the version-by-version history is in CHANGELOG.md.
+Last updated 20 November 2026 (Version 207). This file is the current state and the standing rules; the version-by-version history is in CHANGELOG.md.
 
 ## What this is
 
@@ -336,6 +336,7 @@ After an accepted build: `cp viz_data.json tools/.baseline_viz.json`.
 
 ## Recent versions (one line each; the detail is in CHANGELOG.md)
 
+- 207: the Rutland Railroad (Tables 1, 4, 6; New York - Montreal through trains; Table 3 Boston waits for a B&M trace).
 - 206: Troy Union Station over the Troy Union Railroad (union colour) and Brendan's Green Island bridge.
 - 205: the Delaware & Hudson (Official Guide Tables 1, 2, 3, 5, 7, 9); New York - Montreal trains through from Grand Central to Windsor Station.
 - 204: CN trains changing number at Hamilton (Table 79: 101/102, 89/90, 187/184, 93/94, 91/92, 107/108) joined as through trains.
@@ -353,7 +354,6 @@ After an accepted build: `cp viz_data.json tools/.baseline_viz.json`.
 - 192: NYC St. Lawrence & Adirondack, Montreal (Windsor Station) - Valleyfield - Malone, all stations and nine trains (Official Guide table); Malone traces (Mississippi Rails).
 - 191: CN / GTW Table 95: the Chicago trains through from London (International Limited, Inter-City Limited, La Salle, Ontario Limited) to Dearborn Station; No. 20 fixed to p.m.; GTW car ferry Muskegon - Milwaukee; Grand Rapids - Muskegon over the PRR (Tuscan red).
 - 190: Grand Trunk Western (CN, labelled GTW): Tables 146, 148, 149, 150, 152, 153 (Detroit - Port Huron, Detroit - Grand Rapids - Muskegon, Durand - Bay City, Jackson - Richmond, Durand - Greenville, Pontiac - Caseville); state / province tags hidden on the page.
-- 182: the D.&C. Detroit - Buffalo boats named night by night (City of Detroit III, Greater Detroit; estimated).
 - 181: Detroit and Cleveland Navigation Co. (dcn_build.py): Detroit - Cleveland, Detroit - Buffalo, and the cruises to Mackinac, Chicago, Harbor Springs, Midland.
 - 180: ocean liners to the edge of the map's water, in their own step (ocean_build.py) and list heading; Island Connector; Fort Amherst and Denali cut at the edge.
 - 179: the Newfoundland Railway on its summer schedule (May 1949 folder times, July 1948 notice days; tools/nfr_1949.py).

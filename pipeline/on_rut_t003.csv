@@ -1,0 +1,32 @@
+# Rutland Railroad, Table 3 (Boston - Fitchburg - Keene - Bellows Falls - Rutland). Official Guide, April 25, 1948, Rutland Railroad (Brendan, 21 Nov 2026; private repo scans/og1948_rut/). Eastern time.
+# Boston - Bellows Falls is the B&M (Fitchburg and Cheshire lines); the Boston coaches run through to Rutland (equipment list: Nos. 143, 146, 164, 165 coaches Boston - Rutland),
+# drawn as the Rutland trains from Boston until the B&M trains are built. Boston: North Station assumed (the B&M Boston station). Miles: B&M as printed (Bellows Falls 113.9), then
+# the Rutland miles. The New Haven - Springfield - Bellows Falls connections printed in the table are in the notes. No. 146: the table prints two Boston columns (Bellows Falls
+# 4.20 a.m., Boston 7.45 a.m.; Bellows Falls 5.55 a.m., Boston 9.15 a.m.) with no day signs: the first is entered daily (to check). No. 143 and No. 164: Sunday and weekday times
+# differ east of Bellows Falls, two trips each. Signs: y stops on signal to take passengers for Burlington or beyond; z stops to take passengers for Rutland or beyond; g stops to leave
+# passengers from Burlington or beyond; f on signal; sign-only calls left out.
+#train col=No143 num=143 dir=down days="Mon,Tue,Wed,Thu,Fri,Sat" kind=passenger name="The Mount Royal" links="joins 51 at Rutland" note="The Mount Royal (Boston section), daily except Sunday: Boston 6.45 p.m., Bellows Falls 10.40 p.m., Rutland 12.20 a.m.; on with No. 51 to Montreal (coaches Rutland - Montreal). New Haven 6.00 p.m. by Springfield, Bellows Falls 10.09 p.m. (connection)."
+#train col=No143s num=143 dir=down days=Sun kind=passenger name="The Mount Royal" links="joins 51 at Rutland" note="The Mount Royal (Boston section), Sunday: Boston 7.05 p.m., Bellows Falls 10.40 p.m., Rutland 12.20 a.m.; on with No. 51 to Montreal. New Haven 6.00 p.m. by Springfield, Bellows Falls 10.15 p.m. (connection)."
+#train col=No165 num=165 dir=down days=daily kind=passenger name="Green Mountain" links="joins 65 at Rutland" note="Green Mountain (Boston section), daily: Boston 8.00 a.m., Bellows Falls 11.40 a.m., Rutland 1.10 p.m.; coach on with No. 65 to Montreal. New Haven 5.55 a.m. by Springfield, Bellows Falls 11.32 a.m., daily except Sunday (connection)."
+#train col=No164 num=164 dir=up days="Mon,Tue,Wed,Thu,Fri,Sat" kind=passenger name="Green Mountain" links="section of 64 at Rutland" note="Green Mountain (Boston section), daily except Sunday: Rutland 1.30 p.m. (coach from Montreal, No. 64), Bellows Falls 3.05 p.m., Boston 6.15 p.m. New Haven 7.20 p.m. by Springfield (Bellows Falls 3.02 p.m., connection)."
+#train col=No164s num=164 dir=up days=Sun kind=passenger name="Green Mountain" links="section of 64 at Rutland" note="Green Mountain (Boston section), Sunday: Rutland 1.30 p.m. (coach from Montreal, No. 64), Bellows Falls 3.05 p.m., Boston 5.55 p.m."
+#train col=No146 num=146 dir=up days=daily kind=passenger name="The Mount Royal" links="section of 52 at Rutland" note="The Mount Royal (Boston section): Rutland 2.30 a.m. (coaches from Montreal, No. 52), Bellows Falls 4.20 a.m., Boston 7.45 a.m. The table also prints Bellows Falls 5.55 a.m., Boston 9.15 a.m., with no day signs; New Haven 9.00 / 9.08 a.m. by Springfield (connections)."
+mile,station,principal,prov,tz,No143,No143s,No165,No164,No164s,No146
+0,"Boston (North Station), Mass.",1,MA,E,lv 6.45p,lv 7.05p,lv 8.00a,ar 6.15p,ar 5.55p,ar 7.45a
+49.6,"Fitchburg, Mass.",1,MA,E,8.05p,8.20p,9.17a,4.55p,4.51p,6.22a
+91.4,"Keene, N.H.",1,NH,E,9.25p,9.30p,10.32a,3.42p,3.41p,4.57a
+113.9,"Bellows Falls, Vt.",1,VT,E,ar 10.05p / lv 10.40p,ar 10.10p / lv 10.40p,ar 11.10a / lv 11.40a,ar 2.55p / lv 3.05p,ar 2.55p / lv 3.05p,ar 4.00a / lv 4.20a
+123.1,"Bartonsville, Vt.",0,VT,E,,,,2.40p,2.40p,g3.42a
+127.2,"Chester, Vt.",1,VT,E,11.05p,11.05p,11.59a,2.35p,2.35p,3.35a
+131.6,"Gassetts, Vt.",0,VT,E,y11.13p,y11.13p,12.05p,,,g3.26a
+136.0,"Cavendish, Vt.",0,VT,E,z11.21p,z11.21p,12.11p,f2.20p,f2.20p,g3.20a
+137.5,"Proctorsville, Vt.",0,VT,E,,,12.14p,f2.16p,f2.16p,f3.16a
+140.9,"Ludlow, Vt.",1,VT,E,11.31p,11.31p,12.20p,2.10p,2.10p,3.10a
+146.3,"Healdville, Vt.",0,VT,E,,,,2.00p,2.00p,
+147.8,"Summit, Vt.",0,VT,E,y11.50p,y11.50p,,,,
+150.4,"Mount Holly, Vt.",0,VT,E,z11.54p,z11.54p,12.40p,,,g2.58a
+153.1,"East Wallingford, Vt.",0,VT,E,z11.59p,z11.59p,,,,g2.54a
+156.3,"Cuttingsville, Vt.",0,VT,E,z12.04a,z12.04a,,,,g2.50a
+159.9,"East Clarendon, Vt.",0,VT,E,y12.09a,y12.09a,,,,g2.45a
+163.2,"North Clarendon, Vt.",0,VT,E,y12.14a,y12.14a,,,,g2.40a
+166.1,"Rutland, Vt.",1,VT,E,ar 12.20a,ar 12.20a,ar 1.10p,lv 1.30p,lv 1.30p,lv 2.30a

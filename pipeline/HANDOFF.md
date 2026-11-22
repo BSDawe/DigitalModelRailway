@@ -5,7 +5,7 @@ Read this first, then STATE.md (about 350 lines: the current state and the stand
 search it, don't read it through.
 
 ## Where things stand
-- Version 206 is published (https://bsdawe.github.io/DigitalModelRailway/): 671 lines, 4375 trips, 7687 stops, 64 agencies.
+- Version 207 is published (https://bsdawe.github.io/DigitalModelRailway/): 674 lines, 4385 trips, 7742 stops, 65 agencies.
 - check_gtfs reports no problems (the Minneapolis one was fixed in V178 from the 1948 C&NW timetable).
 - A leftover branch, `wip-cdgb`, is on GitHub (the proxy refused to delete it). It is merged; Brendan can delete it.
 

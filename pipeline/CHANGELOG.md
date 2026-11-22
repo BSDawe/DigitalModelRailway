@@ -3021,3 +3021,14 @@ A review of the whole project (Brendan: "have a peek through ... suggest improve
   own union, the terminal-railway colour) and Brendan's trace of the D&H bridge from Green Island (own dh); the N.Y.C. Troy & Greenbush tied on (0.3 km). The V205 dashed
   estimates are gone.
 - Counts unchanged: 671 lines, 4375 trips, 7687 stops, 64 agencies; check_gtfs 0 problems.
+
+## Version 207
+- The Rutland Railroad (new railway, kind U, forest green with yellow badges: the known livery, Brendan 21 Nov 2026), Official Guide April 25, 1948 (Brendan's pages and Mississippi
+  Rails KMZs; scans in the private repo, scans/og1948_rut/):
+  - Table 1 through trains New York (Grand Central) - Troy - Rutland - Burlington - Rouses Point - Montreal (Central Station): Nos. 51 / 52 The Mount Royal, 65 / 64 Green Mountain
+    (through cars by the equipment list). New York - Troy over the N.Y.C., Troy - White Creek over the B&M (Brendan's Troy & Boston trace), Rouses Point - Montreal over the C.N.;
+    they replace C.N. Table 51's Rutland pieces to the border (on_cn_t051 skipped). Rouses Point: the D&H station (shared). Burlington: the two trace pieces end 0.76 km apart at
+    the station (the trains reverse): a dashed estimate.
+  - Table 1 locals Nos. 87 / 88 Rutland - Rouses Point; Table 4 Ogdensburg Division (Nos. 7, 3, 8, 6); Table 6 Addison Branch (Leicester Junction - Whiting - Larrabees Point).
+  - Table 3 (Boston - Fitchburg - Keene - Bellows Falls - Rutland) transcribed (on_rut_t003.csv) but not built: waits for Brendan's B&M Fitchburg - Keene - Bellows Falls trace.
+- Counts: 674 lines, 4385 trips, 7742 stops, 65 agencies; check_gtfs 0 problems.
