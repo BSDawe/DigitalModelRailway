@@ -288,6 +288,8 @@ lat, mile, lmile?, principal, gid, note, xy?, slow?}], dirLabels, segments [{own
 - **Record train links when transcribing** (Brendan, 21 Nov 2026): every new timetable file notes on its #train lines which trains continue under another number,
   split off as sections, join another train or carry through cars (`links="..."`, TIMETABLE_READING.md rule 8; ab_table.py). Not built into the page yet: Brendan
   decided against section links for now, but the information is to be kept.
+  The Official Guide's through-train and car-service lists (with most railways' entries) are the authoritative source for through trains vs through cars vs
+  connections (Brendan, 21 Nov 2026): transcribe them when supplied (CARS lines, TIMETABLE_READING.md rule 8); links read from timetable columns are provisional.
 - **Number changes at Hamilton** (CN Table 79, printed in one column) are through trains: NUM_JOINS in real_ends.py (Brendan, 20 Nov 2026). (V204)
 - **Through trains joined across pieces** need only overlap in their days; several partners on one side are allowed when their days are disjoint.
   Out-and-back joins are left alone. (V167)

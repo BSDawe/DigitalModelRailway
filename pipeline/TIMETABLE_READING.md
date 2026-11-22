@@ -46,6 +46,12 @@ or complete it.
    Add days in brackets when the link holds only on some days (`section of 101 at Coteau (Sun.)`). Copy the wording that tells you so into NOTES
    ("Sections from Allandale ...", a column heading "75-83", "through sleeper Montreal - Halifax"). If the other train is in another table, give its
    number and the table if printed. If you are unsure whether two columns are one train, write the link with `?` and say so in UNSURE.
+   The tables themselves are often unclear about through trains, through cars and plain connections. The authoritative source is the list of
+   through trains and car services (sleeping, parlor, dining and coach cars by train) that accompanies most railways' Official Guide entries: when it
+   is supplied, transcribe it in full as its own table (below) and treat the links you read from the timetable columns as provisional.
+
+   **Car-service lists.** Copy each entry as one line: `CARS <train number(s) and name as printed> | <car type> | <from> - <to> | <via / with trains
+   as printed> | <days if printed>`, word for word, plus any footnotes. Don't merge or interpret entries.
 9. **Do not leave anything out.** Every station row, including rows where no train stops, and every train column, including ones that only run on
    part of the table. Connections printed in the table (e.g. "Quebec (via ferry)") are rows too.
 
