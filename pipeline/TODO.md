@@ -218,6 +218,11 @@ Each runs to an International Boundary point (time estimated) or to the last Can
 - [ ] Niagara Falls bridges (Brendan, 20 Nov 2026): fix the bridge situation. CN and the N.Y.C. had separate bridges, close together; on the map the CN line disappears at the
   international boundary (mid-bridge, where the Ontario collection ends) and the N.Y.C. track jumps across onto the CN bridge (Claude's 0.4 km tie, own nyc, boundary - the junction at
   the U.S. end; tools/mar_import_lv.py). Wanted: the CN bridge drawn whole as CN to the U.S. side and its connection to the N.Y.C., and the N.Y.C. bridge if trains used it.
+- [ ] Michigan Central Table 6 (Chicago and Detroit to Niagara Falls and Buffalo, April 25, 1948; Brendan's scan 22 Nov 2026) transcribed, NOT BUILT: on_nycfull_t006.csv
+  (Chicago - Detroit, all 16 trains incl. The Mercury, Twilight Ltd., Advance Wolverine, Motor City Special; Welland - Niagara Falls, N.Y.; Welland - Fort Erie - Buffalo incl. TH&B
+  380 / 382 / 372 / 374). Needs Michigan Central track Chicago - Detroit and into Buffalo. Found: Nos. 48 The Detroiter and 40 run Detroit - Buffalo via Canada with no Ontario stop
+  (48 not on the map yet); No. 358 runs on from Niagara Falls, N.Y. to Buffalo. Checks from the scan: 364 Aylmer p11.33, M362 Fargo 7.25, 366 Lythmore f4.23 are as printed
+  (Aylmer probably a misprint). Its UNSURE list is in the file's head. Table 11 (westbound) not supplied.
 - [ ] Niagara River, Suspension Bridge: CN Hamilton - Niagara Falls, N.Y. 86, 90 / 93 The Maple Leaf (see above), 91, 95, 102, 107, 186; MC 358 The Canadian - The Niagara.
 - [ ] Detroit River: MC trains above at the tunnel (Windsor - Detroit); NEXT (Brendan, 20 Nov 2026): his NYC_Canada_Export.kmz (Mississippi Rails, private repo traces/lv/) has the
   Michigan Central tunnel and Detroit lines (not the Chicago terminal access): take the CP trains on to Detroit (Detroit times in on_cp_t049w.csv's notes); later string the NYC lines
