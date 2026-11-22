@@ -3032,3 +3032,5 @@ A review of the whole project (Brendan: "have a peek through ... suggest improve
   - Table 1 locals Nos. 87 / 88 Rutland - Rouses Point; Table 4 Ogdensburg Division (Nos. 7, 3, 8, 6); Table 6 Addison Branch (Leicester Junction - Whiting - Larrabees Point).
   - Table 3 (Boston - Fitchburg - Keene - Bellows Falls - Rutland) transcribed (on_rut_t003.csv) but not built: waits for Brendan's B&M Fitchburg - Keene - Bellows Falls trace.
 - Counts: 674 lines, 4385 trips, 7742 stops, 65 agencies; check_gtfs 0 problems.
+- (after V207, 22 Nov 2026) Rutland colours: in dark mode the Rutland green could not be told from the C.N. (Brendan). Now light #1C3F16 (dark forest green, yellow badge text),
+  dark #D4D65A (yellow-green, dark green badge text).

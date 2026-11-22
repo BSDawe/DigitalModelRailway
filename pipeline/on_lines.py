@@ -37,7 +37,7 @@ ab_lines.RAILS.update({'oncn': dict(kind='q', label='Canadian National', own='cn
                        'acr': dict(kind='z', label='Algoma Central', own='acr', agency='ACR', color='8A3B12', pfx='ACR'),           # colour: Claude's pick
                        'onnyc': dict(kind='t', label='New York Central', own='nyc', agency='NYC', color='3D3D3D', pfx='NYC'),      # dark grey: Brendan, 24 Oct 2026
                        'ondh': dict(kind='f', label='Delaware & Hudson', own='dh', agency='DH', color='0F6FA8', pfx='DH'),
-                       'onrut': dict(kind='U', label='Rutland', own='rut', agency='RUT', color='234D20', pfx='RUT'),        # forest green and yellow, the known livery (Brendan, 21 Nov 2026)         # colour: Claude's pick
+                       'onrut': dict(kind='U', label='Rutland', own='rut', agency='RUT', color='1C3F16', pfx='RUT'),        # forest green and yellow, the known livery (Brendan, 21 Nov 2026)         # colour: Claude's pick
                        # Quebec's independent railways (Official Guide, 1948; Brendan, 25 Oct 2026); colours Claude's picks
                        'ontem': dict(kind='T', label='Temiscouata', own='tem', agency='TEM', color='9C2F6B', pfx='TEM'),
                        'oncgt': dict(kind='G', label='Canada & Gulf Terminal', own='cgt', agency='CGT', color='5A5EA8', pfx='CGT'),
