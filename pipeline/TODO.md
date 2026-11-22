@@ -32,7 +32,19 @@ Last updated 17 November 2026 (Version 180).
   ("Union Station · Toronto Terminals Railway (CN and CPR) · used by CN, CPR, ONR, TH&B"); joint stations in the union colour. Gids stay as they are (ids, not owners).
   Brendan (22 Nov 2026): assume the line under the station is the owner (New York Penn Station: PRR); "Union Station" is sometimes the name of a station one railway owned, so the
   joint-owner table needs a check per station. CN stays CN (no CNR). Station markers today are not coloured by railway (steam-railway stations: a neutral square or diamond;
-  interurban stations in the line's colour; B.C. Electric red): owner colour on the markers is a choice still to make.
+  interurban stations in the line's colour; B.C. Electric red). Brendan (22 Nov): no owner colour on main-line station markers.
+  Station names, Brendan's list (22 Nov 2026; with the naming rule, not to build yet):
+  - Vancouver: B.C. Electric "Davie Street" (Lulu Island line) is a Vancouver station (city Vancouver zoomed out); the other B.C. Electric Vancouver terminal is "Carrall Street".
+    Steam railways: Vancouver (CPR), Vancouver (CN), Vancouver (GN) unless 1948 names turn up.
+  - Winnipeg: the CN station (CN_WINNIPEG, also GN and NP) is "Winnipeg Union Station" (the CPR station stays Winnipeg (CPR)).
+  - New York: "Grand Central Terminal". Seattle: "King Street Station" (GN_SEATTLE; GN, NP) and "Union Station" (WA_SEATTLE_UNION_STATION; Milwaukee, UP; milw_main's plain "Seattle").
+  - Milwaukee Road stations abbreviated "(Milwaukee)": Minneapolis (Milwaukee), Tacoma (Milwaukee), and so on.
+  - Duluth: one of the two (CN_DULUTH -92.1034, 46.7811 or CP_DULUTH_MINN -92.1059, 46.7808, the Soo / DSS&A depot) is the Union Depot: which, to check.
+  - Niagara Falls: the two cities disambiguated NY / ON in the name (an exception to hidden state / province tags).
+  - Buffalo: the N.Y.C. station is "Buffalo Central Terminal"; Detroit: the N.Y.C. station is "Michigan Central Station" (when those are built).
+  - North Bay: an extra station, probably mileage-placement errata: ONR's "North Bay (C.N.)" and "North Bay (C.P.)" (ononr001) sit together at -79.4539, 46.2995, away from CN's
+    North Bay (-79.4572, 46.3108) and CPR's (-79.466, 46.3105). Brendan to fix.
+  - Fredericton: Brendan to fix; the CPR station (York Street, CP_FREDERICTON) is CPR-owned but named Union Station (an example of "Union Station" with one owner).
 
 ## CP Maritimes (started 10 Nov 2026)
 - [ ] DAR readings (V154): No. 33 (Windsor - Kentville, from No. 4) and No. 4 (Truro - Windsor) have no sign: entered daily except Sunday. No. 3 (34-3) entered Saturday only like No. 34. Boat days at Evangeline Wharf: No. 98 Tue., Thu., Sat. (the Boston boat in); No. 95 Tue., Thu. (the boat out; no No. 95 on Sundays); No. 99 leaving Halifax Mon., Wed., Fri. (Brendan: to the wharf on boat days only). Wharf times estimated.
