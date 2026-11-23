@@ -1,0 +1,21 @@
+# Maine Central / Boston & Maine: The Gull, No. 8, Vanceboro - Mattawamkeag - Bangor - Waterville - Augusta - Brunswick - Portland (Union Station) - Boston (North Station) (from Halifax and
+# Saint John as CP No. 113, on_cp_t012.csv). Sources: Official Guide, April 25, 1948: Maine Central Table 2 (page 92; "Gull", runs daily from Vanceboro June 20 through Sept. 6) and
+# Boston & Maine Table 8 (Portland - Boston, "Daily June 21 to Sept. 6"; only the Gull entered: Brendan, 22 Nov 2026). Eastern time. Drawn as Maine Central, B&M-owned track to Boston.
+# Miles: from Boston; Portland 114.7 as printed; Portland - Vanceboro as printed in Table 2 (the Lower Road by Brunswick and Augusta). Dover, Haverhill, Lawrence ESTIMATED.
+# Signs: Lambert Lake (sign unclear, entered as f); Brunswick f; Haverhill, Lawrence v (stops on signal, entered as f); Reading and Wakefield (bullet: stops only on May 31, June 17,
+# July 5, Sept. 6, Oct. 12) left out. Augusta "b y" (conditional, no time) left out. Transcribed by Claude per TIMETABLE_READING.md.
+#train col=No8 num=8 dir=up days=daily kind=passenger name="The Gull" note="Vanceboro 10.30 p.m. - Bangor 1.30 - 1.45 a.m. - Waterville - Augusta - Brunswick - Portland 4.55 - 5.15 a.m. - Boston 7.45 a.m., daily June 20 to Sept. 6." links="connects: CP No. 113 at Vanceboro (from Halifax and Saint John)"
+mile,station,principal,prov,tz,No8
+0.0,"Boston (North Station), Mass.",1,MA,E,ar 7.45a
+26.0,"Lawrence, Mass.",1,MA,E,f7.10a
+33.0,"Haverhill, Mass.",1,MA,E,f6.58a
+68.0,"Dover, N.H.",1,NH,E,6.15a
+114.7,"Portland (Union Station), Me.",1,ME,E,ar 4.55a / lv 5.15a
+142.3,"Brunswick, Me.",1,ME,E,f4.18a
+194.9,"Waterville, Me.",1,ME,E,ar 2.58a / lv 3.03a
+250.1,"Bangor, Me.",1,ME,E,ar 1.30a / lv 1.45a
+294.5,"Lincoln, Me.",1,ME,E,12.22a
+307.7,"Mattawamkeag, Me.",1,ME,E,12.01a
+347.3,"Forest, Me.",0,ME,E,11.14p
+358.8,"Lambert Lake, Me.",0,ME,E,f10.57p
+363.8,"Vanceboro, Me.",1,ME,E,lv 10.30p

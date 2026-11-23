@@ -1,0 +1,21 @@
+# Maine Central / Boston & Maine: The Gull, No. 23, Boston (North Station) - Portland (Union Station) - Lewiston - Waterville - Bangor - Mattawamkeag - Vanceboro (on to Saint John and
+# Halifax as CP No. 113, on_cp_t012.csv). Sources: Official Guide, April 25, 1948: Maine Central Table 2 (page 92; "Gull. Runs via Lewiston. Runs daily June 19 to Sept. 5 incl.") and
+# Boston & Maine Table 8 (Boston - Portland; only the Gull entered: Brendan, 22 Nov 2026). Eastern time. Brendan: drawn as Maine Central, over B&M-owned track Boston - Portland.
+# Miles: from Boston; Boston - Portland 114.7 as printed (Exeter, Dover ESTIMATED); Portland - Waterville by the Back Route (via Lewiston) ESTIMATED from the track; Waterville - Vanceboro
+# as printed (Table 2, from Portland by the Lower Road) plus the Back Route's extra miles. Lewiston: no time printed (the train passes; the row routes it by the Back Route).
+# Signs: z stops on signal Sunday only (Exeter, entered as f); v stops on signal ... (Oldtown, entered as f). Transcribed by Claude per TIMETABLE_READING.md.
+#train col=No23 num=23 dir=down days=daily kind=passenger name="The Gull" note="Boston 9.30 p.m. - Portland 11.50 p.m. - 12.10 a.m. - by Lewiston - Waterville - Bangor - Vanceboro 7.45 a.m., daily June 19 to Sept. 5;" links="connects: CP No. 114 at Vanceboro (on to Saint John and Halifax)"
+mile,station,principal,prov,tz,No23
+0.0,"Boston (North Station), Mass.",1,MA,E,lv 9.30p
+50.5,"Exeter, N.H.",1,NH,E,f10.34p
+68.0,"Dover, N.H.",1,NH,E,10.55p
+114.7,"Portland (Union Station), Me.",1,ME,E,ar 11.50p / lv 12.10a
+150.0,"Lewiston, Me.",1,ME,E,
+200.0,"Waterville, Me.",1,ME,E,ar 2.20a / lv 2.30a
+255.2,"Bangor, Me.",1,ME,E,ar 4.05a / lv 4.35a
+267.4,"Oldtown, Me.",0,ME,E,f4.59a
+299.6,"Lincoln, Me.",1,ME,E,5.55a
+312.8,"Mattawamkeag, Me.",1,ME,E,6.18a
+342.8,"Danforth, Me.",1,ME,E,7.04a
+352.4,"Forest, Me.",0,ME,E,7.20a
+368.9,"Vanceboro, Me.",1,ME,E,ar 7.45a

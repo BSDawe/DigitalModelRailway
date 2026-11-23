@@ -19,6 +19,7 @@ from collections import Counter, defaultdict
 
 # 1948 names of named stations (gid -> (zoomed-in name, city)); Brendan's list of 22 Nov 2026 and the terminals already on the map
 NAMED = {
+    'MEC_PORTLAND_UNION_STATION_ME': ('Union Station', 'Portland'),   # Portland, Maine (Brendan's point; V213)
     'NYC_UTICA_N_Y': ('Union Station', 'Utica'),   # N.Y.C., tenants D.L.&W. and N.Y.O.&W. (Brendan, 22 Nov 2026)
     'NYC_CHICAGO_CENTRAL_ILL': ('Central Station', 'Chicago'), 'NYC_CHICAGO_LA_SALLE_STREET_ILL': ('La Salle Street Station', 'Chicago'),   # V210 (Brendan, 22 Nov 2026)
     'NYC_DETROIT_MICH': ('Michigan Central Station', 'Detroit'), 'NYC_BUFFALO_CENTRAL_TERMINAL_N_Y': ('Central Terminal', 'Buffalo'), 'NYC_BUFFALO_TERRACE_STA_N_Y': ('Terrace Station', 'Buffalo'),
@@ -60,7 +61,7 @@ ABBR_OWN = {'ic': 'IC', 'cp': 'CPR', 'cn': 'CN', 'gn': 'GN', 'np': 'NP', 'milw':
             'lps': 'L&PS', 'nst': 'NS&T', 'qrl': 'QRL&P', 'tem': 'Temiscouata', 'si': 'SI', 'acr': 'ACR', 'snl': 'S&L', 'cnw': 'C&NW', 'wpy': 'WP&Y', 'arr': 'Alaska RR',
             'mec': 'MEC', 'cwi': 'C&WI', 'nfr': 'Nfld. Ry.', 'aj': 'Algoma Jct.', 'cgt': 'CGT', 'crc': 'CR&C', 'mcrp': 'MCR&P', 'rs': 'Roberval & Saguenay', 'tir': 'TIR',
             'gwwd': 'GWWD', 'bc': 'B&C', 'union': 'Union', 'bcer': 'BCER'}
-OWNER_NAME = {'IC': 'Illinois Central', 'CPR': 'Canadian Pacific Railway', 'CN': 'Canadian National', 'GN': 'Great Northern', 'NP': 'Northern Pacific', 'Milwaukee': 'Milwaukee Road',
+OWNER_NAME = {'IC': 'Illinois Central', 'MEC': 'Maine Central', 'CPR': 'Canadian Pacific Railway', 'CN': 'Canadian National', 'GN': 'Great Northern', 'NP': 'Northern Pacific', 'Milwaukee': 'Milwaukee Road',
               'UP': 'Union Pacific', 'SP&S': 'Spokane, Portland & Seattle', 'NYC': 'New York Central', 'D&H': 'Delaware & Hudson', 'Rutland': 'Rutland Railroad',
               'B&M': 'Boston & Maine', 'New Haven': 'New York, New Haven & Hartford', 'PRR': 'Pennsylvania Railroad', 'B&O': 'Baltimore & Ohio', 'LV': 'Lehigh Valley',
               'TH&B': 'Toronto, Hamilton & Buffalo', 'ONR': 'Ontario Northland', 'NAR': 'Northern Alberta Railways', 'PGE': 'Pacific Great Eastern', 'Union': 'a joint terminal company',
