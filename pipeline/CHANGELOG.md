@@ -3060,3 +3060,23 @@ A review of the whole project (Brendan: "have a peek through ... suggest improve
   (pseudo-rail gnpool in wa_lines.py).
 - Saint John, N.B.: CN_SAINT_JOHN is "Union Station" (Brendan); owner by the track rule CPR, also served by CN (joint ownership to check with the union-station list).
 - Counts: 675 lines, 4385 trips, 7741 stops, 65 agencies; check_gtfs 0 problems.
+
+## Version 210
+- The Michigan Central and the New York Central to New York (Brendan, 22 Nov 2026: "Can we map this out? I'm ok with the final approach to Central Station being dashed for the
+  moment"). Sources: Official Guide, April 25, 1948, N.Y.C. Tables 6 and 11 (Michigan Central, in full) and 7 and 9 (Buffalo - New York, the through-Canada trains only).
+  - on_mc_t006.csv now runs Chicago (Central Station) - Detroit (Michigan Central Station) - Windsor - St. Thomas - Welland - Fort Erie - Black Rock - Buffalo (Central Terminal) - Albany -
+    New York (Grand Central): 32 trains, incl. The Wolverine (8 / 17), North Shore Limited (40 / 39), Empire State Express (50 / 51), New York Special (44), The Iroquois (35), The Detroiter
+    (48 / 47, Pullman only, no Buffalo time printed: estimated), The Mercury (76 / 75), Motor City Special (316 / 315), and the Michigan locals (346, 341, 360, 342 / 348, 345 / 347, 323, 321,
+    308 Advance Wolverine). on_mc_t006n.csv: No. 358 The Canadian - The Niagara by Niagara Falls, Ont., Suspension Bridge and Niagara Falls, N.Y. to Buffalo. on_mc_t006t.csv (new): The
+    Twilight Limited (30 / 31), Chicago (La Salle Street Station) - Detroit. The Ontario border points are gone (the trains run through).
+  - Track: tools/mar_import_mc.py -> traces/maritimes/mc.geojson from Brendan's Mississippi Rails NYC_Canada_Export.kmz: the Michigan Central main line Gary - Detroit and the Detroit River
+    tunnel; the N.Y.C. Buffalo - Batavia - Rochester - Syracuse (the West Shore through the 1936 station, the 1948 passenger route) - Utica - Schenectady - Albany; Buffalo - Black Rock -
+    Tonawanda. Albany - New York as the D&H's (dh / nec). DASHED estimates: Indiana state line - Kensington - Woodlawn - Central Station (IC, own 'ic'); La Salle Street - Englewood - the
+    Michigan Central (the Lake Shore); the International Railway Bridge, Fort Erie - Black Rock.
+  - Stations: Central Station (Brendan's point; Illinois Central property, the MC by trackage rights: owner IC) and La Salle Street Station (Brendan's point; NYC and Rock Island) in
+    Chicago; Michigan Central Station (Detroit) and the Batavia depot and 1948 Syracuse station at the KMZ placemarks; Buffalo Central Terminal, Terrace Station, Black Rock, Woodlawn,
+    Kensington, Englewood, Rochester, Schenectady APPROXIMATE; Albany, Poughkeepsie, 125th Street, Grand Central, Suspension Bridge and Niagara Falls, N.Y. shared with the stations on the
+    map; the rest by printed mileage. Black Rock / Buffalo miles estimated (printed 530.7 is impossible). Names: "Central Station", "La Salle Street Station", "Michigan Central Station",
+    "Central Terminal", "Terrace Station" zoomed in.
+  - As printed, flagged by the speed check: No. 346 Kalamazoo - Galesburg and Ypsilanti - Wayne, No. 341 Marshall - Ceresco.
+- Counts: 676 lines, 4403 trips, 7797 stops, 65 agencies; check_gtfs 0 problems.

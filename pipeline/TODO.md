@@ -17,7 +17,6 @@ Last updated 17 November 2026 (Version 180).
   Saint John Union Station (CN_SAINT_JOHN, Brendan 22 Nov 2026): owner by track CPR; CN and CPR joint?
 - [ ] Seattle - Portland pool: the GN / NP / UP split of the trains is from the August 1952 Official Guide (V209); confirm for 1948 (Official Guide car-service lists).
 - [ ] Fredericton: Brendan to fix; the CPR station (York Street, CP_FREDERICTON) is CPR-owned but named Union Station.
-- [ ] Buffalo: the N.Y.C. station is "Buffalo Central Terminal"; Detroit: the N.Y.C. station is "Michigan Central Station" (names to use when those are built).
 
 ## CP Maritimes (started 10 Nov 2026)
 - [ ] DAR readings (V154): No. 33 (Windsor - Kentville, from No. 4) and No. 4 (Truro - Windsor) have no sign: entered daily except Sunday. No. 3 (34-3) entered Saturday only like No. 34. Boat days at Evangeline Wharf: No. 98 Tue., Thu., Sat. (the Boston boat in); No. 95 Tue., Thu. (the boat out; no No. 95 on Sundays); No. 99 leaving Halifax Mon., Wed., Fri. (Brendan: to the wharf on boat days only). Wharf times estimated.
@@ -218,6 +217,10 @@ Each runs to an International Boundary point (time estimated) or to the last Can
 - [ ] Niagara Falls bridges (Brendan, 20 Nov 2026): fix the bridge situation. CN and the N.Y.C. had separate bridges, close together; on the map the CN line disappears at the
   international boundary (mid-bridge, where the Ontario collection ends) and the N.Y.C. track jumps across onto the CN bridge (Claude's 0.4 km tie, own nyc, boundary - the junction at
   the U.S. end; tools/mar_import_lv.py). Wanted: the CN bridge drawn whole as CN to the U.S. side and its connection to the N.Y.C., and the N.Y.C. bridge if trains used it.
+- [ ] Michigan Central / N.Y.C. (built V210). Wanted: traces for the IC Kensington - Central Station and the Lake Shore Englewood - La Salle Street (dashed now; Brendan's Mississippi Rails
+  Chicago KMZ), the International Railway Bridge (dashed 0.8 km); points for Buffalo Central Terminal, Terrace Station, Black Rock, Woodlawn, Kensington, Englewood (approximate); the TH&B
+  trains (on_thb_t056) still end at the Niagara River boundary: run them into Buffalo with the Table 6 / 11 times (TH&B 372 / 374 / 380 / 382, 371 / 375 / 379 / 383); the N.Y.C. Niagara
+  Falls sections of Nos. 44 / 50 (Table 7) not drawn; the Batavia bypass and Rome / Herkimer alignments left as the KMZ's main pieces (check for 1948).
 - [ ] Michigan Central Table 6 (Chicago and Detroit to Niagara Falls and Buffalo, April 25, 1948; Brendan's scan 22 Nov 2026) transcribed, NOT BUILT: on_nycfull_t006.csv
   (Chicago - Detroit, all 16 trains incl. The Mercury, Twilight Ltd., Advance Wolverine, Motor City Special; Welland - Niagara Falls, N.Y.; Welland - Fort Erie - Buffalo incl. TH&B
   380 / 382 / 372 / 374). Needs Michigan Central track Chicago - Detroit and into Buffalo. Found: Nos. 48 The Detroiter and 40 run Detroit - Buffalo via Canada with no Ontario stop
@@ -254,6 +257,8 @@ Each runs to an International Boundary point (time estimated) or to the last Can
 - [x] Sydney & Louisburg: built (V163). Colour #5B3A8C is Claude's pick. Victoria Jct. - Glace Bay 9.9 mi traced / 11.0 printed (the trace may take a later route).
 
 ## Done and answered
+### Done in Version 210 (22 Nov 2026)
+- The Michigan Central Chicago - Detroit and its through trains on to Buffalo and New York (Tables 6, 7, 9, 11); Buffalo Central Terminal and Michigan Central Station named.
 ### Done in Version 209 (22 Nov 2026)
 - GN Seattle - Portland pool trains (401 / 402, 459 / 460) drawn as GN; Saint John Union Station named.
 ### Done in Version 208 (22 Nov 2026)

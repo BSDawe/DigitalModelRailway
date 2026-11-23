@@ -19,6 +19,8 @@ from collections import Counter, defaultdict
 
 # 1948 names of named stations (gid -> (zoomed-in name, city)); Brendan's list of 22 Nov 2026 and the terminals already on the map
 NAMED = {
+    'NYC_CHICAGO_CENTRAL_ILL': ('Central Station', 'Chicago'), 'NYC_CHICAGO_LA_SALLE_STREET_ILL': ('La Salle Street Station', 'Chicago'),   # V210 (Brendan, 22 Nov 2026)
+    'NYC_DETROIT_MICH': ('Michigan Central Station', 'Detroit'), 'NYC_BUFFALO_CENTRAL_TERMINAL_N_Y': ('Central Terminal', 'Buffalo'), 'NYC_BUFFALO_TERRACE_STA_N_Y': ('Terrace Station', 'Buffalo'),
     'CP_MONTREAL_WINDSOR': ('Windsor Station', 'Montreal'), 'CN_MONTREAL_CENTRAL': ('Central Station', 'Montreal'),
     'CN_MONTREAL_BONAVENTURE': ('Bonaventure Station', 'Montreal'), 'CN_BONAVENTURE': ('Bonaventure Station', 'Montreal'),
     'CP_MONTREAL_PLACE_VIGER': ('Place Viger Station', 'Montreal'), 'CP_MONTREAL_PARK_AVENUE': ('Park Avenue', 'Montreal'),
@@ -57,7 +59,7 @@ ABBR_OWN = {'cp': 'CPR', 'cn': 'CN', 'gn': 'GN', 'np': 'NP', 'milw': 'Milwaukee'
             'lps': 'L&PS', 'nst': 'NS&T', 'qrl': 'QRL&P', 'tem': 'Temiscouata', 'si': 'SI', 'acr': 'ACR', 'snl': 'S&L', 'cnw': 'C&NW', 'wpy': 'WP&Y', 'arr': 'Alaska RR',
             'mec': 'MEC', 'cwi': 'C&WI', 'nfr': 'Nfld. Ry.', 'aj': 'Algoma Jct.', 'cgt': 'CGT', 'crc': 'CR&C', 'mcrp': 'MCR&P', 'rs': 'Roberval & Saguenay', 'tir': 'TIR',
             'gwwd': 'GWWD', 'bc': 'B&C', 'union': 'Union', 'bcer': 'BCER'}
-OWNER_NAME = {'CPR': 'Canadian Pacific Railway', 'CN': 'Canadian National', 'GN': 'Great Northern', 'NP': 'Northern Pacific', 'Milwaukee': 'Milwaukee Road',
+OWNER_NAME = {'IC': 'Illinois Central', 'CPR': 'Canadian Pacific Railway', 'CN': 'Canadian National', 'GN': 'Great Northern', 'NP': 'Northern Pacific', 'Milwaukee': 'Milwaukee Road',
               'UP': 'Union Pacific', 'SP&S': 'Spokane, Portland & Seattle', 'NYC': 'New York Central', 'D&H': 'Delaware & Hudson', 'Rutland': 'Rutland Railroad',
               'B&M': 'Boston & Maine', 'New Haven': 'New York, New Haven & Hartford', 'PRR': 'Pennsylvania Railroad', 'B&O': 'Baltimore & Ohio', 'LV': 'Lehigh Valley',
               'TH&B': 'Toronto, Hamilton & Buffalo', 'ONR': 'Ontario Northland', 'NAR': 'Northern Alberta Railways', 'PGE': 'Pacific Great Eastern', 'Union': 'a joint terminal company',
@@ -71,6 +73,7 @@ def cpr(s):    # the Canadian Pacific's period abbreviation
     return re.sub(r'\bCP\b(?!_)', 'CPR', s)
 def tagless(n): return TAG.sub('', n)
 def base(n): return tagless(n).split(' (')[0].strip()
+OWNER_FIX = {'NYC_CHICAGO_CENTRAL_ILL': 'IC'}   # Illinois Central property, the Michigan Central by trackage rights (Brendan, 22 Nov 2026); its approach is a dashed estimate
 def owner_at(L, chain):
     for s in L.get('segments', []):
         if s['a'] - 1 <= chain <= s['b'] + 1 and s.get('owner') not in (None, 'none'): return s['owner']
@@ -86,6 +89,7 @@ def apply(viz, gt):
             served[g].add(ABBR_LABEL.get(L.get('label', ''), ABBR_OWN.get(L.get('owner') or '', L.get('label', ''))))
             pos.setdefault(g, (s['lon'], s['lat'])); names_of.setdefault(g, s['name'])
     def abbr(g):
+        if g in OWNER_FIX: return OWNER_FIX[g]
         if not owners[g]: return None
         o = owners[g].most_common(1)[0][0]
         lab = max((n, l) for (oo, l), n in labels[g].items() if oo == o)[1]
