@@ -21,7 +21,7 @@ MAIN = {   # Michigan Central main line, the Detroit River tunnel; N.Y.C. Buffal
                          'Michigan City IN to Kalamazoo MI', 'Gary IN to Michigan City IN', 'Untitled Path@-87.467', 'Michigan Central Tunnel'),
     'New York Central': ('Buffalo NY to Depew NY', 'Batavia NY to Depew NY', 'Batavia abandoned@-78.225', 'Batavia existing@-78.193', 'Batavia NY abandoned@-78.170',
                          'Batavia NY to Rochester NY', 'Syracuse NY to Rochester NY', 'Utica NY to Syracuse NY', 'Utica NY to Schenectady, NY', 'Schenectady NY to Albany NY',
-                         'Buffalo NY to Black Rock NY', 'Buffalo to Black Rock existing', 'Black Rock NY to Tonawanda NY', 'Tonawanda NY old route', 'Rotterdam Jct to Syracuse NY')}
+                         'Buffalo NY to Black Rock NY', 'Buffalo to Black Rock existing', 'Black Rock NY to Tonawanda NY', 'Rotterdam Jct to Syracuse NY')}
 feats = []
 def F(name, pts, note, group='mississippi_rails', est=False, own='nyc', constituent='New York Central'):
     p = dict(own=own, name=name, constituent=constituent, branch=constituent, group=group, status='ok', cost=1.0, note=note)
@@ -66,6 +66,8 @@ feats.append(F('Illinois Central (Michigan Central trackage rights): Kensington 
 feats.append(F('New York Central (Lake Shore & Michigan Southern): La Salle Street - Englewood - the Michigan Central, estimate', [LA_SALLE, ENGLEWOOD, (-87.5600, 41.6800), MC_WEST],
                'estimate (Claude), drawn broken: the Twilight Limited, La Salle Street Station by Englewood and the Lake Shore to Porter; no trace yet; Englewood APPROXIMATE', group='link', est=True))
 # Buffalo: the International Railway Bridge, Brendan's traces (22 Nov 2026): A from the boundary over the bridge onto the Black Rock line towards Buffalo, B the leg north towards Tonawanda
+TB = json.load(open(os.path.join(HERE, 'traces', 'lv', 'brendan_tonawanda_bypass.json')))   # Brendan, 22 Nov 2026: the Tonawanda bypass (early 20th century), in place of the KMZ's old route
+feats.append(F(TB['name'] + ' (Brendan)', [tuple(q) for q in TB['coords']], TB['source'], group='brendan'))
 IB = json.load(open(os.path.join(HERE, 'traces', 'lv', 'brendan_international_bridge.json')))
 for pc in IB['pieces']:
     feats.append(F(f"Michigan Central: {pc['name']} (Brendan)", [tuple(q) for q in pc['coords']], IB['source'], group='brendan'))
