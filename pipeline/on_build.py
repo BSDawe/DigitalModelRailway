@@ -227,12 +227,15 @@ DH_PLACES = {'New York (Grand Central), N.Y.': (-73.977253, 40.7527), 'New York 
              'Plattsburg, N.Y.': (-73.45074, 44.70017), 'Fort Edward, N.Y.': (-73.57612, 43.2735), 'Glens Falls, N.Y.': (-73.63223, 43.31251), 'Lake George, N.Y.': (-73.71258, 43.41757),
              'Fort Ticonderoga, N.Y.': (-73.3896, 43.8485), 'Lyon Mountain, N.Y.': (-73.91033, 44.72659), 'North Creek, N.Y.': (-73.99343, 43.70518), 'Central Bridge, N.Y.': (-74.33896, 42.71088),
              'Oneonta, N.Y.': (-75.05958, 42.45239), 'Sidney, N.Y.': (-75.39177, 42.31332), 'Harpursville, N.Y.': (-75.62914, 42.18642), 'Binghamton, N.Y.': (-75.90419, 42.10441),
-             'Scranton, Pa.': (-75.66493, 41.41387), 'Carbondale, Pa.': (-75.49061, 41.58888)}
+             'Scranton, Pa.': (-75.66493, 41.41387), 'Carbondale, Pa.': (-75.49061, 41.58888), 'Watervliet, N.Y.': (-73.7108, 42.7314)}   # Watervliet: on the D&H, APPROXIMATE (V215)
 for _fn in sorted(glob.glob(os.path.join(HERE, 'on_dh_t*.csv'))):
     _st = os.path.basename(_fn)[:-4]
     _rows = ab_table.load(_fn)['rows']
     OVER.setdefault(_st, {}).update(label='Delaware & Hudson', places=DH_PLACES, noplace=tuple(r['station'] for r in _rows if r['station'] not in DH_PLACES and r['prov'] != 'QC'),
                                      tidpfx='DH', short='D&H Table ' + re.match(r'on_dh_t(\d+)', _st).group(1).lstrip('0'), src='Official Guide, April 25, 1948')
+# Albany - Troy (Brendan, 23 Nov 2026): the trains calling at Albany and Troy run up the D&H by Watervliet to Green Island and back in and out of the bridge to Troy Union Station;
+# trains not calling at Albany run from Troy south on the N.Y.C. (Troy & Greenbush) directly. on_dh_t001t (Nos. 8 / 10) passes Watervliet (a timing point, not a stop here).
+OVER['on_dh_t001t']['via'] = [('Albany, N.Y.', 'Watervliet, N.Y.', 6.0)]
 # Rutland Railroad (Official Guide, April 25, 1948; Brendan's pages and KMZs of 21 Nov 2026): Grand Central, Troy and Rouses Point as the D&H's; the C.N. stations as C.N. Table 51's;
 # others at trace junctions and ends, the rest by printed mileage. Table 3 (Boston) waits for Brendan's B&M Fitchburg - Keene - Bellows Falls trace; C.N. Table 51's Rutland pieces
 # (to the border) are replaced by the through trains (on_rut_t001).

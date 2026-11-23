@@ -36,6 +36,14 @@ for c in kml(sys.argv[2]).iter(K + 'Placemark'):
     for q in c.iter(K + 'coordinates'):
         pts = [tuple(map(float, x.split(',')[:2])) for x in q.text.split()]
         if len(pts) >= 2: feats.append(F(f'New York Central: {nm}', pts, 'Mississippi Rails NYC_Canada_Export.kmz, supplied by Brendan', own='nyc', constituent='New York Central'))
+# Green Island (Brendan, 23 Nov 2026): the D&H passenger trains use the main line by Cohoes; the river line Green Island - Waterford (the KMZ's unnamed path) only to reach the bridge
+# to Troy: keep its first stretch, from the main line to the bridge end, and leave the rest out.
+for f in feats:
+    c = f['geometry']['coordinates']
+    if f['properties']['name'] == 'Delaware & Hudson: Untitled Path' and abs(c[0][0] + 73.7058) < 0.001 and abs(c[0][1] - 42.7398) < 0.001:
+        f['geometry']['coordinates'] = [q for q in c if q[0] <= -73.7029] + [[-73.7028586, 42.7395751]]
+        f['properties']['name'] = 'Delaware & Hudson: Green Island, the main line - the Troy bridge'
+        f['properties']['note'] += '; cut to the bridge access (Brendan, 23 Nov 2026: the passenger trains do not use the river line to Waterford)'
 def km(a, b): return math.hypot((a[0] - b[0]) * 111.32 * math.cos(math.radians(a[1])), (a[1] - b[1]) * 110.57)
 ok = [(f['properties']['name'], [tuple(q) for q in f['geometry']['coordinates']]) for f in feats if f['properties']['status'] == 'ok']
 ties = []
