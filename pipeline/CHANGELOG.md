@@ -3096,3 +3096,9 @@ A review of the whole project (Brendan: "have a peek through ... suggest improve
   Lake Clear - Saranac Lake - Lake Placid). Utica Union Station at Brendan's point (N.Y.C.; tenants D.L.&W. and N.Y.O.&W.), shared with the Michigan Central's trains; Lake Clear
   Junction, Saranac Lake, Lake Placid at piece ends (APPROXIMATE).
 - Counts: 678 lines, 4426 trips, 7835 stops, 65 agencies; check_gtfs 0 problems.
+
+## Version 212
+- CP trains through the Detroit River tunnel to Detroit (Brendan, 22 Nov 2026: "yes"): on_cp_t049w.csv's Nos. 635 The Michigan, 19 The Canadian, 37 Royal York, 21 Chicago Express (to
+  Detroit) and 20, 38, 22 (from Detroit) now run Windsor - Detroit (Michigan Central Station, shared with the N.Y.C.), with the Windsor arrival / departure and Detroit times as printed.
+  No. 634 starts at Windsor (Windsor Yard) and stays a Windsor train.
+- Counts: 678 lines, 4426 trips, 7835 stops, 65 agencies; check_gtfs 0 problems.

@@ -217,10 +217,10 @@ Each runs to an International Boundary point (time estimated) or to the last Can
 - [x] (V211, Brendan's bridge traces) Niagara Falls bridges (Brendan, 20 Nov 2026): fix the bridge situation. CN and the N.Y.C. had separate bridges, close together; on the map the CN line disappears at the
   international boundary (mid-bridge, where the Ontario collection ends) and the N.Y.C. track jumps across onto the CN bridge (Claude's 0.4 km tie, own nyc, boundary - the junction at
   the U.S. end; tools/mar_import_lv.py). Wanted: the CN bridge drawn whole as CN to the U.S. side and its connection to the N.Y.C., and the N.Y.C. bridge if trains used it.
+- [ ] Chicago: the Michigan Central trains to Central Station should join the IC at the end of the MC main at Kensington, 41 41 00.98 N, 87 36 44.62 W (Brendan, 22 Nov 2026); fix next.
+- [ ] The Gull (Brendan's MEC Table 2 page 92 and B&M Table 8 page, 22 Nov 2026): MEC Nos. 23 / 8 Boston - Portland - Bangor - Vanceboro (B&M only the Gull); Portland Union Station 43.652243, -70.280710.
 - [ ] Michigan Central / N.Y.C. (built V210, V211). Approximate points: Terrace Station, Black Rock; the TH&B trains (on_thb_t056) still end at the Niagara River boundary: run them into
   Buffalo with the Table 6 / 11 times; the N.Y.C. Niagara Falls sections of Nos. 44 / 50 (Table 7) not drawn; the Batavia bypass and Rome / Herkimer alignments: check for 1948.
-- [ ] CP trains to Detroit (Brendan asked, 22 Nov 2026: they ran through the tunnel to Michigan Central Station; Detroit times in on_cp_t049w.csv's notes): run 19, 20, 21, 22, 37, 38, 634,
-  635 on to Detroit (offered; waiting for Brendan's go-ahead).
 - [ ] Adirondack Division (V211): Lake Clear Junction, Saranac Lake, Lake Placid points approximate; Utica - Albany - New York for the Montreal trains (on_nycfull_t018.csv) waits for the
   main-line timetable rows.
 - [ ] Michigan Central Table 6 (Chicago and Detroit to Niagara Falls and Buffalo, April 25, 1948; Brendan's scan 22 Nov 2026) transcribed, NOT BUILT: on_nycfull_t006.csv
@@ -259,6 +259,8 @@ Each runs to an International Boundary point (time estimated) or to the last Can
 - [x] Sydney & Louisburg: built (V163). Colour #5B3A8C is Claude's pick. Victoria Jct. - Glace Bay 9.9 mi traced / 11.0 printed (the trace may take a later route).
 
 ## Done and answered
+### Done in Version 212 (22 Nov 2026)
+- CP Toronto - Windsor trains on to Detroit (Michigan Central Station).
 ### Done in Version 211 (22 Nov 2026)
 - Niagara bridges, International Bridge, Tonawanda bypass, Chicago terminal approaches (Brendan's traces and KMZ); Table 53; the Adirondack Division.
 ### Done in Version 210 (22 Nov 2026)
