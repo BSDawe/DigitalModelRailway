@@ -25,7 +25,7 @@ Last updated 17 November 2026 (Version 180).
   - Fredericton: fixed (Brendan).
 - [ ] Railway colour guide (Brendan, 23 Nov 2026: "has the railway colour guide stopped updating?"). Yes: the header legend in page_template.html is hand-written and was last
   extended about 8 Nov (Quebec Railway, Light & Power). Missing railways drawn since: Rutland, Maine Central, Boston & Maine, New Haven, Pennsylvania, Baltimore & Ohio, Illinois
-  Central, Chicago & Western Indiana, Lehigh Valley, Chicago & North Western, Barre & Chelsea, Grand River / Lake Erie & Northern and others with their own colour. Plan: build the
+  Central, Chicago & Western Indiana, Lehigh Valley, Chicago & North Western, Barre & Chelsea, Grand River / Lake Erie & Northern and others with their own colour.
   Brendan's spec (23 Nov 2026): a list you can collapse, sorted by trains per day; it need not regenerate every build (Claude refreshes it by hand / a one-off script
   when railways are added). Subsidiaries are not listed separately (drawn in the parent's colour: E&N, DAR, QC, CV, GTW, Soo etc.); Maine Central IS listed (not a subsidiary).
 - [ ] Seattle - Portland pool: the GN / NP / UP split of the trains is from the August 1952 Official Guide (V209); confirm for 1948 (Official Guide car-service lists).
