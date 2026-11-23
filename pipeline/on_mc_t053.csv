@@ -1,0 +1,30 @@
+# New York Central Table 53, Buffalo, Niagara Falls and Suspension Bridge (Official Guide, April 25, 1948; Brendan's scan, 22 Nov 2026; private repo scans/og1948_mc/). Eastern time.
+# Miles from Buffalo (Central Terminal) as printed. The route: Buffalo - Black Rock - Tonawanda - North Tonawanda - Gratwick - Niagara Falls (the downtown N.Y.C. station) - Suspension Bridge.
+# No. 358 (The Canadian - The Niagara, in this table's right half: Suspension Bridge 7.25, Niagara Falls 7.35, North Tonawanda 7.54, Buffalo (Terrace Sta.) 8.16, Buffalo 8.30 a.m.)
+# is entered in on_mc_t006n.csv, its through run.
+# Signs: * daily; † daily except Sunday; ‡ daily except Saturday; ¶ daily except Monday; § Sunday only; f stops on signal to receive or discharge passengers; i stops only to discharge;
+# (italic f) stops on signal, except Sunday; z stops on signal Sunday only; Monday only (sign); diamond: does not carry baggage; bullet: stops on signal to discharge passengers from
+# Welland and beyond; double-hash: stops on signal to discharge passengers from points beyond Buffalo (entered as a flag stop); + coupon stations. Transcribed by Claude per TIMETABLE_READING.md.
+#train col=No245 num=245 dir=down days=daily kind=passenger
+#train col=No257 num=257 dir=down days=daily kind=passenger
+#train col=No233 num=233 dir=down days=daily kind=passenger
+#train col=No211 num=211 dir=down days=daily kind=passenger
+#train col=No207 num=207 dir=down days=daily kind=passenger
+#train col=No204 num=204 dir=up days="ex Sun" kind=passenger note="Does not carry baggage."
+#train col=No216 num=216 dir=up days=daily kind=passenger
+#train col=No230 num=230 dir=up days=daily kind=passenger
+#train col=No236 num=236 dir=up days=daily kind=passenger
+#train col=No246 num=246 dir=up days=daily kind=passenger
+#train col=No248 num=248 dir=up days=daily kind=passenger
+mile,station,principal,prov,tz,No245,No257,No233,No211,No207,No204,No216,No230,No236,No246,No248
+0.0,"Buffalo (Central Terminal), N.Y.",1,NY,E,lv 8.30p,lv 4.30p,lv 2.35p,lv 8.50a,lv 7.00a,ar 7.19a,ar 1.00p,ar 3.55p,ar 7.00p,ar 9.20p,ar 11.35p
+3.0,"Buffalo (Terrace Sta.), N.Y.",1,NY,E,8.42p,4.43p,2.48p,9.03a,7.11a,7.08a,12.45p,3.43p,6.42p,9.08p,11.21p
+4.5,"Buffalo (Porter Ave.), N.Y.",0,NY,E,,,,,,f7.03a,,,,,
+6.9,"Black Rock, N.Y.",1,NY,E,8.51p,4.53p,2.58p,9.13a,7.20a,6.56a,12.37p,3.29p,6.31p,,11.11p
+12.6,"Tonawanda, N.Y.",1,NY,E,9.00p,5.03p,3.08p,9.23a,7.28a,6.44a,12.23p,3.21p,6.18p,8.48p,
+14.1,"North Tonawanda, N.Y.",1,NY,E,9.04p,5.07p,3.14p,9.30a,7.35a,6.40a,12.19p,3.16p,6.14p,8.37p,10.59p
+15.8,"Gratwick, N.Y.",0,NY,E,,f5.11p,f3.18p,f9.34a,,6.34a,f12.14p,,f6.06p,,
+20.1,"La Salle, N.Y.",0,NY,E,f9.12p,5.17p,3.24p,9.42a,f7.43a,6.29a,12.09p,,6.01p,,
+22.9,"Echota, N.Y.",0,NY,E,,f5.22p,f3.29p,f9.46a,f7.46a,f6.24a,,,f5.57p,,
+25.1,"Niagara Falls, N.Y.",1,NY,E,9.23p,5.28p,3.41p,9.56a,7.56a,6.20a,12.01p,2.56p,5.50p,8.12p,10.40p
+26.9,"Suspension Bridge, N.Y.",1,NY,E,ar 9.43p,ar 5.48p,ar 4.01p,ar 10.15a,ar 8.15a,lv 6.10a,lv 11.50a,lv 2.40p,lv 5.30p,lv 7.50p,lv 10.30p

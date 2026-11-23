@@ -54,7 +54,7 @@ BY_NAME = {'Davie Street': ('Davie Street', 'Vancouver'), 'Vancouver': ('Carrall
 # railway abbreviations, by the label of the line that owns the track (CPR subsidiaries keep their own) and then by track owner
 ABBR_LABEL = {'Canadian Pacific': 'CPR', 'Soo Line': 'Soo Line', 'Duluth, South Shore & Atlantic': 'DSS&A', 'Esquimalt & Nanaimo': 'E&N', 'Quebec Central': 'QC',
               'Dominion Atlantic': 'DAR', 'Spokane International': 'SI', 'Central Vermont': 'CV', 'Grand Trunk Western': 'GTW', 'Canadian National': 'CN'}
-ABBR_OWN = {'cp': 'CPR', 'cn': 'CN', 'gn': 'GN', 'np': 'NP', 'milw': 'Milwaukee', 'up': 'UP', 'sps': 'SP&S', 'nyc': 'NYC', 'dh': 'D&H', 'rut': 'Rutland', 'bm': 'B&M',
+ABBR_OWN = {'ic': 'IC', 'cp': 'CPR', 'cn': 'CN', 'gn': 'GN', 'np': 'NP', 'milw': 'Milwaukee', 'up': 'UP', 'sps': 'SP&S', 'nyc': 'NYC', 'dh': 'D&H', 'rut': 'Rutland', 'bm': 'B&M',
             'nh': 'New Haven', 'prr': 'PRR', 'bo': 'B&O', 'lv': 'LV', 'thb': 'TH&B', 'onr': 'ONR', 'nar': 'NAR', 'pge': 'PGE', 'msc': 'M&SC', 'grr': 'GRR', 'len': 'L&N',
             'lps': 'L&PS', 'nst': 'NS&T', 'qrl': 'QRL&P', 'tem': 'Temiscouata', 'si': 'SI', 'acr': 'ACR', 'snl': 'S&L', 'cnw': 'C&NW', 'wpy': 'WP&Y', 'arr': 'Alaska RR',
             'mec': 'MEC', 'cwi': 'C&WI', 'nfr': 'Nfld. Ry.', 'aj': 'Algoma Jct.', 'cgt': 'CGT', 'crc': 'CR&C', 'mcrp': 'MCR&P', 'rs': 'Roberval & Saguenay', 'tir': 'TIR',

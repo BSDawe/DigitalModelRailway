@@ -9,7 +9,7 @@ taken (named in MAIN below); the Hudson line, Albany and Grand Central are alrea
   DASHED estimate (own 'ic') from the Michigan Central's west end (the Indiana state line) by Kensington and Woodlawn (63d Street) to Central Station. La Salle Street Station (NYC and
   Rock Island; the Twilight Limited, by Englewood and the Lake Shore & Michigan Southern to Porter): a DASHED estimate La Salle Street - Englewood - the Michigan Central west end.
 - Buffalo: the International Railway Bridge, Brendan's traces (traces/lv/brendan_international_bridge.json; V211 replaced Claude's dashed estimate).
-Usage: python3 tools/mar_import_mc.py <NYC_Canada_Export.kmz>"""
+Usage: python3 tools/mar_import_mc.py <NYC_Canada_Export.kmz> <NYC_Chicago.kmz>"""
 import json, math, os, re, sys, zipfile
 import xml.etree.ElementTree as ET
 HERE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -45,6 +45,28 @@ for co, names in MAIN.items():
             label = 'Michigan Central' if co == 'Michigan Central' else 'New York Central'
             feats.append(F(f'{label}: {nm}', pts, 'Mississippi Rails NYC_Canada_Export.kmz (Tony Howe and David Price), supplied by Brendan', constituent=label))
 def km(a, b): return math.hypot((a[0] - b[0]) * 111.32 * math.cos(math.radians(a[1])), (a[1] - b[1]) * 110.57)
+# Chicago (V211): Brendan's Mississippi Rails "NYC_Chicago.kmz" (22 Nov 2026; private repo traces/msrails/): the Michigan Central to Kensington, the Illinois Central main line
+# (Kensington - Woodlawn - Central Station, own 'ic': the MC by trackage rights) with the Central Station connector and the MC - IC connector, and the New York Central's Lake Shore &
+# Michigan Southern (Porter wye - the state line - Englewood - La Salle Street; Brendan: "a MC train to La Salle will diverge at Porter and take the main NYC line into La Salle Street").
+# The V210 dashed estimates are gone.
+CHI = {'IL/IN State Line to South Bend IN': 'nyc', 'LS&MS NYC': 'nyc', 'NYC-LaSalle Track': 'nyc', 'Terminal Track': 'nyc', 'Porter (Wye Track)': 'nyc', 'Untitled Path@-87.612': 'nyc',
+       'Centralia to Chicago': 'ic', 'Central Station Connector': 'ic', 'MC-IC Connector': 'ic'}
+if len(sys.argv) > 2:
+    z2 = zipfile.ZipFile(sys.argv[2]); s2 = z2.read([n for n in z2.namelist() if n.endswith('.kml')][0])
+    got = set()
+    for c in ET.fromstring(s2).iter(K + 'Placemark'):
+        n = c.find(K + 'name'); nm = (n.text or '').strip() if n is not None else ''
+        for q in c.iter(K + 'coordinates'):
+            pts = [tuple(map(float, x.split(',')[:2])) for x in q.text.split()]
+            key = nm if nm in CHI else (f'{nm}@{pts[-1][0]:.3f}' if len(pts) > 1 else '')
+            if key not in CHI or len(pts) < 2: continue
+            got.add(key); own = CHI[key]
+            if nm == 'Centralia to Chicago': pts = [p for p in pts if p[1] >= 41.60]   # the Chicago end only (Kensington - Central Station)
+            feats.append(F(('Illinois Central: ' if own == 'ic' else 'New York Central: ') + nm, pts, 'Mississippi Rails NYC_Chicago.kmz (Tony Howe and David Price), supplied by Brendan',
+                           own=own, constituent='Illinois Central' if own == 'ic' else 'New York Central'))
+    assert got == set(CHI), set(CHI) - got
+ICT = json.load(open(os.path.join(HERE, 'traces', 'lv', 'brendan_ic_terminal.json')))   # Brendan, 22 Nov 2026: the IC terminal track into Central Station
+feats.append(F(ICT['name'] + ' (Brendan)', [tuple(q) for q in ICT['coords']], ICT['source'], group='brendan', own='ic', constituent='Illinois Central'))
 # ties between the pieces' ends (150 m - 1 km apart: the KMZ draws the pieces separately)
 ok = [(f['properties']['name'], [tuple(q) for q in f['geometry']['coordinates']]) for f in feats]
 ties = []
@@ -56,15 +78,6 @@ for i, (nm, c) in enumerate(ok):
 for e, q, a, b, d in ties:
     feats.append(F(f'N.Y.C.: tie, {a.split(": ")[-1]} - {b.split(": ")[-1]}', [e, q], f'tie (Claude): the piece ends {d * 1000:.0f} m from the other piece', group='link'))   # all under 1 km: solid
 print(len(ties), 'ties:', [(t[2].split(': ')[-1], t[3].split(': ')[-1], round(t[4] * 1000)) for t in ties])
-# Chicago: dashed estimates (Brendan, 22 Nov 2026)
-MC_WEST = (-87.5252, 41.6226)                     # the Michigan Central piece's west end (the Indiana - Illinois state line)
-KENSINGTON = (-87.6089, 41.6855); WOODLAWN = (-87.5866, 41.7806); CENTRAL = (-87.621944, 41.868056)   # Central Station: Brendan's point (41 52 05 N, 87 37 19 W)
-ENGLEWOOD = (-87.6392, 41.7795); LA_SALLE = (-87.632239, 41.876586)                                    # La Salle Street: Brendan's point (41 52 35.71 N, 87 37 56.06 W)
-feats.append(F('Illinois Central (Michigan Central trackage rights): Kensington - Woodlawn - Central Station, estimate', [MC_WEST, KENSINGTON, WOODLAWN, CENTRAL],
-               "estimate (Claude), drawn broken: no trace yet (Brendan, 22 Nov 2026: the final approach to Central Station dashed for now); Kensington and Woodlawn (63d Street) APPROXIMATE",
-               group='link', est=True, own='ic', constituent='Illinois Central'))
-feats.append(F('New York Central (Lake Shore & Michigan Southern): La Salle Street - Englewood - the Michigan Central, estimate', [LA_SALLE, ENGLEWOOD, (-87.5600, 41.6800), MC_WEST],
-               'estimate (Claude), drawn broken: the Twilight Limited, La Salle Street Station by Englewood and the Lake Shore to Porter; no trace yet; Englewood APPROXIMATE', group='link', est=True))
 # Buffalo: the International Railway Bridge, Brendan's traces (22 Nov 2026): A from the boundary over the bridge onto the Black Rock line towards Buffalo, B the leg north towards Tonawanda
 TB = json.load(open(os.path.join(HERE, 'traces', 'lv', 'brendan_tonawanda_bypass.json')))   # Brendan, 22 Nov 2026: the Tonawanda bypass (early 20th century), in place of the KMZ's old route
 feats.append(F(TB['name'] + ' (Brendan)', [tuple(q) for q in TB['coords']], TB['source'], group='brendan'))

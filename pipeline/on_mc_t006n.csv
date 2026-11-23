@@ -1,7 +1,8 @@
 # New York Central (Michigan Central): No. 358, The Canadian - The Niagara: Chicago (Central Station) - Detroit - Windsor - St. Thomas - Welland - Niagara Falls, Ont. - Suspension Bridge -
 # Niagara Falls, N.Y. - Buffalo. Source: Official Guide, April 25, 1948, New York Central Table 6 (Ontario part 1 Nov 2026; U.S. parts on_nycfull_t006.csv, 22 Nov 2026). Miles from
-# Chicago as printed to Niagara Falls, N.Y.; Buffalo (Terrace Sta.) and (Central Terminal) by the N.Y.C. gorge line and Tonawanda ESTIMATED (533.5, 537.0). Niagara Falls, N.Y. departure
-# estimated (~). Central time to Michigan City, then Eastern. Conditional stops as flag stops (Terrace: stops on signal to discharge passengers from Welland and beyond).
+# Chicago as printed to Niagara Falls, N.Y.; then Table 53's miles (North Tonawanda, Terrace; Central Terminal 537.0).
+# Suspension Bridge - Buffalo times from Table 53 (22 Nov 2026): Suspension Bridge leave 7.25, Niagara Falls 7.35, North Tonawanda 7.54, Terrace 8.16 (stops on signal to discharge
+# passengers from Welland and beyond). Central time to Michigan City, then Eastern. Conditional stops as flag stops (Terrace: stops on signal to discharge passengers from Welland and beyond).
 #train col=No358 num=358 dir=down days=daily kind=passenger name="The Canadian - The Niagara" note="Chicago 7.50 p.m. - Detroit - Ontario - Niagara Falls, Ont. 7.11 a.m. - Suspension Bridge - Niagara Falls, N.Y. 7.35 a.m. - Buffalo 8.30 a.m."
 mile,station,principal,prov,tz,No358
 0.0,"Chicago (Central Station), Ill.",1,IL,C,lv 7.50p
@@ -77,7 +78,8 @@ mile,station,principal,prov,tz,No358
 508.2,Falls View,0,ON,E,
 509.3,Victoria Park,0,ON,E,
 510.5,"Niagara Falls, Ont.",1,ON,E,7.11a
-511.2,"Suspension Bridge, N.Y.",1,NY,E,7.20a
-512.9,"Niagara Falls, N.Y.",1,NY,E,ar 7.35a / lv ~7.50a
-533.5,"Buffalo (Terrace Sta.), N.Y.",1,NY,E,f8.16a
+511.2,"Suspension Bridge, N.Y.",1,NY,E,ar 7.20a / lv 7.25a
+512.9,"Niagara Falls, N.Y.",1,NY,E,f7.35a
+523.9,"North Tonawanda, N.Y.",1,NY,E,f7.54a
+535.0,"Buffalo (Terrace Sta.), N.Y.",1,NY,E,f8.16a
 537.0,"Buffalo (Central Terminal), N.Y.",1,NY,E,ar 8.30a
