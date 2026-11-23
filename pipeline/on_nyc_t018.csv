@@ -1,21 +1,21 @@
 # New York Central, St. Lawrence & Adirondack branch: Malone, N.Y. - Valleyfield - Adirondack Jct. - Montreal (Windsor Station). Official Guide, May 1948 ("Malone - Montreal, via
 # St. Lawrence and Adirondack Branch", April 25, 1948; Brendan's image, 18 Nov 2026). Eastern time. Over the CP from Adirondack Jct. into Windsor Station.
-# Replaces the four through trains of CP Table 18 that ended at the border (24 Oct 2026); the run beyond Malone: here to Saranac Lake (22 Nov 2026), Utica - Lake Placid in on_nyc_t019.csv; Utica - Albany - New York (on_nycfull_t018.csv) not built.
-# Extended 22 Nov 2026 (Brendan's Official Guide Adirondack Division page, April 25, 1948): Malone - Lake Clear Junction - Saranac Lake for Nos. 2, 4 (to Saranac Lake) and 3, 11, 5
-# (from Saranac Lake). At Lake Clear Junction they meet the Utica - Lake Placid trains of the same numbers (on_nyc_t019.csv): the Montreal trains run to / from Saranac Lake, the Utica
-# trains to / from Lake Placid. Miles beyond Malone: the Adirondack table's (from Utica), as 233 less; Saranac Lake by the branch (Lake Clear Jct. + 6).
+# Replaces the four through trains of CP Table 18 that ended at the border (24 Oct 2026); the run beyond Malone: here to Utica (22 Nov 2026), the Lake Placid branch and Nos. 14 / 15 in on_nyc_t019.csv; Utica - Albany - New York (on_nycfull_t018.csv) not built.
+# Extended 22 Nov 2026 (Brendan's Official Guide Adirondack Division page, April 25, 1948): Malone - Lake Clear Junction - Tupper Lake - Thendara - Utica. Brendan's reading (22 Nov 2026:
+# "why wouldn't you read this as Montreal - Utica with a connection to Lake Placid?"): Nos. 2, 4 (southbound) and 3, 11, 5 (northbound) run through Montreal - Utica, waiting 10 - 15 minutes
+# at Lake Clear Junction for the Saranac Lake - Lake Placid connection (on_nyc_t019.csv; the boxed branch rows in the table). Miles beyond Malone: 233 less the table's miles from Utica.
 # Signs: * daily; dagger daily except Sunday; section sign Sunday only; k Saturday only (27, 26); f stops on signal; h stops only to receive, i only to discharge (entered plain);
 # z stops on signal Sunday only, s stops Sunday only, bullet stops Saturday only (entered as flag stops f).
 # Miles from Montreal (the table counts from Malone, 66). Malone - the border: Mississippi Rails trace (Brendan, 18 Nov 2026; traces/maritimes/nyc_malone.geojson); Malone station at the junction with the Adirondack Division, Constable by mileage.
 #train col=No25 num=25 dir=up days="Mon,Tue,Wed,Thu,Fri,Sat" kind=passenger note="Malone 5.00 a.m. to Montreal (Windsor Station) 7.20 a.m., daily except Sunday."
-#train col=No5 num=5 dir=up days=daily kind=passenger from="New York" note="Saranac Lake 6.15 a.m. - Lake Clear Junction 6.45 a.m. - Malone 8.13 a.m. - Montreal (Windsor Station) 10.45 a.m., daily; from Utica 2.10 a.m. (New York the evening before) by the No. 5 (Lake Clear Junction 6.35 a.m.)." links="connects: No. 5, Utica - Lake Placid (on_nyc_t019) at Lake Clear Junction"
+#train col=No5 num=5 dir=up days=daily kind=passenger from="New York" note="Utica 2.10 a.m. (from New York) - Lake Clear Junction 6.35 - 6.45 a.m. - Malone 8.00 - 8.13 a.m. - Montreal (Windsor Station) 10.45 a.m., daily. Connection at Lake Clear Junction for Saranac Lake and Lake Placid (7.50 a.m.), and from Saranac Lake (6.15 a.m.)." links="connects: Lake Clear Junction - Saranac Lake - Lake Placid (on_nyc_t019)"
 #train col=No27 num=27 dir=up days=Sat kind=passenger note="Saturdays only: Valleyfield 2.15 p.m. to Montreal (Windsor Station) 3.30 p.m."
-#train col=No11 num=11 dir=up days=Sun kind=passenger note="Sundays only: Saranac Lake 3.45 p.m. - Lake Clear Junction 4.11 p.m. - Malone 5.31 p.m. - Montreal (Windsor Station) 7.55 p.m.; from Utica 12.15 p.m. by the No. 11 (Lake Clear Junction 4.01 p.m.)." links="connects: No. 11, Utica - Lake Placid (on_nyc_t019) at Lake Clear Junction"
-#train col=No3 num=3 dir=up days="Mon,Tue,Wed,Thu,Fri,Sat" kind=passenger from="New York" note="Saranac Lake 4.10 p.m. - Lake Clear Junction 4.41 p.m. - Malone 6.20 p.m. - Montreal (Windsor Station) 8.55 p.m., daily except Sunday; from Utica 12.15 p.m. by the No. 3 to Lake Clear Junction (4.26 p.m.)." links="connects: No. 3, Utica - Lake Placid (on_nyc_t019) at Lake Clear Junction"
-#train col=No2 num=2 dir=down days=daily kind=passenger to="New York" note="Montreal (Windsor Station) 7.25 a.m. - Malone 9.30 a.m. - Lake Clear Junction 11.18 a.m. - Saranac Lake 11.55 a.m., daily; at Lake Clear Junction the No. 2 from Lake Placid (10.35 a.m.) leaves for Utica at 11.28 a.m." links="connects: No. 2, Lake Placid - Utica (on_nyc_t019) at Lake Clear Junction"
+#train col=No11 num=11 dir=up days=Sun kind=passenger note="Sundays only: Utica 12.15 p.m. - Lake Clear Junction 4.01 - 4.11 p.m. - Malone 5.21 - 5.31 p.m. - Montreal (Windsor Station) 7.55 p.m. Connection at Lake Clear Junction for Saranac Lake and Lake Placid (5.05 p.m.), and from Saranac Lake (3.45 p.m.)." links="connects: Lake Clear Junction - Saranac Lake - Lake Placid (on_nyc_t019)"
+#train col=No3 num=3 dir=up days="Mon,Tue,Wed,Thu,Fri,Sat" kind=passenger from="New York" note="Utica 12.15 p.m. - Lake Clear Junction 4.26 - 4.41 p.m. - Malone 6.05 - 6.20 p.m. - Montreal (Windsor Station) 8.55 p.m., daily except Sunday. Connection at Lake Clear Junction for Saranac Lake and Lake Placid (5.35 p.m.), and from Saranac Lake (4.10 p.m.)." links="connects: Lake Clear Junction - Saranac Lake - Lake Placid (on_nyc_t019)"
+#train col=No2 num=2 dir=down days=daily kind=passenger to="New York" note="Montreal (Windsor Station) 7.25 a.m. - Malone 9.30 - 9.50 a.m. - Lake Clear Junction 11.18 - 11.28 a.m. - Utica 3.40 p.m., daily. Connection at Lake Clear Junction for Saranac Lake (11.55 a.m.), and from Lake Placid (10.35 a.m.)." links="connects: Lake Clear Junction - Saranac Lake - Lake Placid (on_nyc_t019)"
 #train col=No26 num=26 dir=down days=Sat kind=passenger note="Saturdays only: Montreal (Windsor Station) 12.35 p.m. to Valleyfield 1.50 p.m."
 #train col=No32 num=32 dir=down days="Mon,Tue,Wed,Thu,Fri,Sat" kind=passenger note="Montreal (Windsor Station) 4.25 p.m. to Malone 6.50 p.m., daily except Sunday."
-#train col=No4 num=4 dir=down days=daily kind=passenger to="New York" note="Montreal (Windsor Station) 5.25 p.m. - Malone 7.30 p.m. - Lake Clear Junction 9.27 p.m. - Saranac Lake 10.00 p.m., daily; at Lake Clear Junction the No. 4 from Lake Placid leaves for Utica at 9.43 p.m." links="connects: No. 4, Lake Placid - Utica (on_nyc_t019) at Lake Clear Junction"
+#train col=No4 num=4 dir=down days=daily kind=passenger to="New York" note="Montreal (Windsor Station) 5.25 p.m. - Malone 7.30 - 8.00 p.m. - Lake Clear Junction 9.27 - 9.43 p.m. - Utica 1.45 a.m., daily. Connection at Lake Clear Junction for Saranac Lake (10.00 p.m.), and from Lake Placid (8.50 p.m.)." links="connects: Lake Clear Junction - Saranac Lake - Lake Placid (on_nyc_t019)"
 mile,station,principal,prov,tz,No25,No5,No27,No11,No3,No2,No26,No32,No4
 0.0,Montreal (Windsor Station),1,QC,E,ar 7.20a,ar 10.45a,ar 3.30p,ar 7.55p,ar 8.55p,lv 7.25a,lv 12.35p,lv 4.25p,lv 5.25p
 2.0,Westmount,1,QC,E,7.12a,10.30a,3.22p,7.47p,8.42p,7.31a,12.41p,4.31p,5.31p
@@ -46,5 +46,28 @@ mile,station,principal,prov,tz,No25,No5,No27,No11,No3,No2,No26,No32,No4
 96.0,"Onchiota, N.Y.",0,NY,E,,f7.05a,,f4.30p,f5.04p,10.59a,,,f9.07p
 100.0,"Rainbow Lake, N.Y.",0,NY,E,,f7.00a,,4.25p,f4.57p,f11.04a,,,f9.12p
 102.0,"Gabriels, N.Y.",0,NY,E,,6.54a,,4.20p,4.51p,11.10a,,,9.17p
-107.0,"Lake Clear Junction, N.Y.",1,NY,E,,6.45a,,4.11p,4.41p,11.18a,,,9.27p
-113.0,"Saranac Lake, N.Y.",1,NY,E,,lv 6.15a,,lv 3.45p,lv 4.10p,ar 11.55a,,,ar 10.00p
+107.0,"Lake Clear Junction, N.Y.",1,NY,E,,ar 6.35a / lv 6.45a,,ar 4.01p / lv 4.11p,ar 4.26p / lv 4.41p,ar 11.18a / lv 11.28a,,,ar 9.27p / lv 9.43p
+110.0,"Saranac Inn, N.Y.",1,NY,E,,6.29a,,3.55p,4.15p,11.35a,,,9.49p
+117.0,"Floodwood, N.Y.",0,NY,E,,,,f3.44p,f4.02p,f11.45a,,,
+125.0,"Tupper Lake, N.Y.",1,NY,E,,6.05a,,3.32p,3.50p,12.07p,,,10.20p
+130.0,"Piercefield, N.Y.",0,NY,E,,,,,,,,,
+132.0,"Childwold, N.Y.",1,NY,E,,5.42a,,3.13p,3.23p,12.19p,,,f10.35p
+135.0,"Mount Arab, N.Y.",0,NY,E,,f5.35a,,f3.08p,f3.14p,f12.23p,,,f10.41p
+139.0,"American Legion, N.Y.",0,NY,E,,f5.29a,,3.02p,f3.08p,12.32p,,,f10.47p
+144.0,"Sabattis, N.Y.",0,NY,E,,5.20a,,2.53p,2.58p,12.41p,,,10.56p
+148.0,"Robinwood, N.Y.",0,NY,E,,,,f2.46p,f2.49p,f12.47p,,,
+151.0,"Ne-ha-sa-ne (Priv. Sta.), N.Y.",0,NY,E,,f5.09a,,f2.41p,f2.44p,f12.52p,,,f11.07p
+157.0,"Brandreth, N.Y.",0,NY,E,,f4.59a,,2.31p,2.34p,1.02p,,,f11.17p
+161.0,"Beaver River, N.Y.",0,NY,E,,f4.52a,,f2.24p,2.26p,f1.09p,,,f11.23p
+165.0,"Woods, N.Y.",0,NY,E,,,,f2.18p,f2.18p,f1.15p,,,
+170.0,"Big Moose, N.Y.",0,NY,E,,4.38a,,2.12p,2.12p,1.24p,,,11.38p
+175.0,"Carter, N.Y.",1,NY,E,,,,f2.01p,f2.00p,f1.32p,,,
+178.0,"Moulin, N.Y.",0,NY,E,,,,f1.55p,,f1.37p,,,
+181.0,"Thendara (Old Forge), N.Y.",1,NY,E,,4.18a,,1.50p,1.50p,1.50p,,,11.55p
+185.0,"Minnehaha, N.Y.",0,NY,E,,,,,,f1.58p,,,
+190.0,"McKeever, N.Y.",0,NY,E,,f3.58a,,1.31p,1.31p,f2.12p,,,
+191.0,"Otter Lake, N.Y.",0,NY,E,,f3.55a,,1.27p,1.27p,f2.17p,,,f12.11a
+196.0,"Woodgate, N.Y.",0,NY,E,,f3.46a,,f1.18p,1.18p,f2.27p,,,f12.19a
+203.0,"Forestport, N.Y.",1,NY,E,,f3.35a,,1.06p,f1.06p,f2.42p,,,f12.29a
+211.0,"Remsen, N.Y.",1,NY,E,,3.23a,,12.51p,12.51p,3.02p,,,12.42a
+233.0,"Utica, N.Y.",1,NY,E,,lv 2.10a,,lv 12.15p,lv 12.15p,ar 3.40p,,,ar 1.45a
