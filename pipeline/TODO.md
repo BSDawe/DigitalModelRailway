@@ -11,13 +11,13 @@ Last updated 17 November 2026 (Version 180).
 - [ ] CN Table 116 (Longlac - Fort William, Nos. 79 / 80): the Toronto section may be a connection with Nos. 3 / 4 at Longlac rather than through cars (Brendan not certain). Matters for chaining. (23 Oct)
 
 ## Fixes queued (Brendan: "don't fix yet"; ask before the next rebuild whether to include them)
-- [ ] ACTIVE (Brendan, 23 Nov 2026; "don't rebuild yet"): D&H routing at Albany / Troy / Green Island.
-  - D&H passenger trains use the line by Cohoes; the river line Green Island - Waterford only to reach the bridge to Troy (done in source, not built: tools/mar_import_dh.py cuts it).
-  - Trains to Troy from Albany Union Station run up the D&H and back in and out over the bridge to Troy Union Station; trains not calling at Albany run south from Troy Union Station on the
-    N.Y.C. directly, and vice versa.
-  - "Train 8, for example, should not cross the river at Albany": Brendan's curve from the Cohoes line onto the Troy bridge (traces/dh/brendan_green_island_curve.json, not yet in the bank)
-    lets trains from the north run straight onto the bridge. Source edits so far (committed, not built): the river-line cut, Watervliet on the D&H, and a via Watervliet for on_dh_t001t
-    (Nos. 8 / 10), which the No. 8 note contradicts: to settle with Brendan (how No. 8 serves Albany) before building.
+- [ ] READY TO BUILD (V215; Brendan, 23 Nov 2026): D&H routing at Albany / Troy / Green Island. Done in source and dry-run, not built:
+  - the D&H passenger trains by Cohoes; the river line Green Island - Waterford cut to the bridge access;
+  - Brendan's Green Island curve (Cohoes line onto the Troy bridge) in the bank (tools/mar_import_dh.py);
+  - Albany is Albany Union Station (Brendan: "unless otherwise noted in 1948"). Nos. 8 / 10 (on_dh_t001t): Cohoes - the curve - Troy Union Station, the reverse move back over the bridge
+    to the D&H by the Green Island wye leg, Watervliet, Albany Union Station, then the Maiden Lane crossing and the Hudson line (via Watervliet, force Watervliet - Troy);
+  - no modelled train uses the northerly crossing at Albany (Livingston Avenue position): the importer's automatic ties there are left out;
+  - checked: ondh001 / 001a / 001n / 001t, onmc006*, onrut001* all on track.
 - [ ] Station owners, joint and union stations (V208 takes the owner from the track under the station): check each "Union Station" / union depot by hand (Toronto Terminals
   Railway CN + CPR; Ottawa Union; St. Paul Union Depot; Troy Union RR NYC + D&H + B&M; Spokane, Seattle, Tacoma Union; Washington Union; the C&WI's Dearborn...).
   "Union Station" is sometimes the name of a station one railway owned (Brendan).

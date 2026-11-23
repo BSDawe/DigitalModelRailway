@@ -54,8 +54,14 @@ for i, (nm, c) in enumerate(ok):
             best = min((km(e, q), q) for q in c2)
             if 0.15 < best[0] < 0.6 and not any(km(e, t[0]) < 0.01 and t[3] == n2 for t in ties) and not any(km(t[0], best[1]) < 0.01 for t in ties):
                 ties.append((e, best[1], nm, n2, best[0]))
+# Albany (Brendan, 23 Nov 2026): no modelled 1948 train uses the northerly river crossing at Albany (the Livingston Avenue bridge position): the trains cross by the Maiden Lane bridge
+# (the "Albany Union Station" piece). The automatic ties from the Hudson line's north end in Rensselaer west over the river (to the D&H and to the station's north throat) are left out.
+ALB_N = lambda e, q: abs(e[1] - 42.655) < 0.002 and abs(q[1] - 42.655) < 0.002 and min(e[0], q[0]) < -73.745 < max(e[0], q[0])
+ties = [t for t in ties if not ALB_N(t[0], t[1])]
 for e, q, a, b, d in ties:
-    feats.append(F(f'tie, {a.split(": ")[-1]} - {b.split(": ")[-1]}', [e, q], f'tie (Claude): the piece ends {d * 1000:.0f} m from the other line', group='link'))
+    east = 'Albany to Poughkeepsie' in a and 'Troy NY to Greenbush' in b   # the east bank, Rensselaer: N.Y.C. track
+    feats.append(F(f'tie, {a.split(": ")[-1]} - {b.split(": ")[-1]}', [e, q], f'tie (Claude): the piece ends {d * 1000:.0f} m from the other line', group='link',
+                   **(dict(own='nyc', constituent='New York Central') if east else {})))
 # Troy (Brendan, 21 Nov 2026): the Troy Union Railroad (jointly N.Y.C., D&H and B&M; Mississippi Rails "Troy_Union_RR.kmz", private repo traces/dh/) into Troy Union Station,
 # own 'union' (the short terminal railways' colour), and Brendan's trace of the D&H bridge from Green Island (traces/dh/brendan_troy_bridge.json, own dh). Replaces the V205 dashed estimates.
 if len(sys.argv) > 3:
@@ -66,6 +72,8 @@ if len(sys.argv) > 3:
             if len(pts) >= 2: feats.append(F(f'Troy Union Railroad: {nm}', pts, 'Mississippi Rails Troy_Union_RR.kmz, supplied by Brendan (jointly N.Y.C., D&H, B&M)', own='union', constituent='Troy Union Railroad'))
 B = json.load(open(os.path.join(HERE, 'traces', 'dh', 'brendan_troy_bridge.json')))
 feats.append(F('D&H: Green Island - Troy bridge (Brendan)', B['coords'], B['source'], group='brendan'))
+GC = json.load(open(os.path.join(HERE, 'traces', 'dh', 'brendan_green_island_curve.json')))   # Brendan, 23 Nov 2026: the curve from the Cohoes line onto the Troy bridge (the
+feats.append(F(GC['name'] + ' (Brendan)', GC['coords'], GC['source'], group='brendan'))         # trains for Troy and Albany run in to Troy, then back out over the bridge to the main line)
 TU = [f for f in feats if f['properties']['own'] == 'union']
 for f in [f for f in feats if f['properties']['name'] == 'New York Central: Troy NY to Greenbush NY']:   # the Troy & Greenbush end onto the Troy Union
     e = f['geometry']['coordinates'][-1]

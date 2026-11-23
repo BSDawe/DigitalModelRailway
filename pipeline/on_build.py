@@ -236,6 +236,8 @@ for _fn in sorted(glob.glob(os.path.join(HERE, 'on_dh_t*.csv'))):
 # Albany - Troy (Brendan, 23 Nov 2026): the trains calling at Albany and Troy run up the D&H by Watervliet to Green Island and back in and out of the bridge to Troy Union Station;
 # trains not calling at Albany run from Troy south on the N.Y.C. (Troy & Greenbush) directly. on_dh_t001t (Nos. 8 / 10) passes Watervliet (a timing point, not a stop here).
 OVER['on_dh_t001t']['via'] = [('Albany, N.Y.', 'Watervliet, N.Y.', 6.0)]
+OVER['on_dh_t001t']['force'] = [('Watervliet, N.Y.', 'Troy, N.Y.')]   # Watervliet - Green Island - the bridge - Troy Union Station is longer than the 0.2 printed miles left after
+# Watervliet: the trains run in to Troy over the bridge (Brendan's Green Island curve from the Cohoes line) and back out to the D&H for Albany Union Station (Brendan, 23 Nov 2026)
 # Rutland Railroad (Official Guide, April 25, 1948; Brendan's pages and KMZs of 21 Nov 2026): Grand Central, Troy and Rouses Point as the D&H's; the C.N. stations as C.N. Table 51's;
 # others at trace junctions and ends, the rest by printed mileage. Table 3 (Boston) waits for Brendan's B&M Fitchburg - Keene - Bellows Falls trace; C.N. Table 51's Rutland pieces
 # (to the border) are replaced by the through trains (on_rut_t001).
