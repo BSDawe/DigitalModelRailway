@@ -27,6 +27,17 @@ Last updated 17 November 2026 (Version 180).
   1948 page (Official Guide p. 1221; summer service May 28 - Sept. 12). New step wmsc_build.py (after gtwf_build): 6 sailings eastbound, 5 westbound across the week, one ship
   (the times chain); 5 h 45 min - 6 h 5 min across; lane about 97 mi. Docks APPROXIMATE (Claude): Milwaukee, 601 E. Erie Street; Muskegon, "The Mart": points wanted.
   Colour #1f6f78 (dark #7cc4cc) is Claude's pick.
+- [ ] READY TO BUILD (V215; Brendan, 23 Nov 2026): two Great Lakes excursion lines from their 1948 Official Guide pages, new step glk_build.py (after wmsc_build). Both print
+  DAYLIGHT time: shown an hour earlier (standard, as the railways), then on the Pacific clock.
+  - Cleveland & Buffalo Steamship Co. (C. & B. Line), Chicago, June 20 - Labor Day: Chicago - St. Joseph - Benton Harbor daily except Mon. and Fri.; Chicago - Michigan City Mon. and
+    Fri. Ship not named. NOT drawn: the nightly Chicago evening lake cruises (no destination): draw them (e.g. out and back to a turning point offshore) or leave out?
+  - Ashley & Dustin Steamer Line (Put-in-Bay Route), steamer Put-in-Bay, June 1 - Sept. 1: Detroit - Put-in-Bay - Cedar Point Wed. and Sun.; Toledo - Cedar Point Tue.; Detroit -
+    Put-in-Bay Thu. and Fri.; Saturday Blue Water Bridge cruise (drawn to the bridge and back, the turn at 1.15 p.m. estimated). The positioning runs Detroit - Toledo (Monday) and
+    Toledo - Detroit (Tuesday night) are not printed and not drawn.
+  - All dock points APPROXIMATE (Claude); the A. & D. Detroit dock is not printed. Colours (C. & B. #3d5a80, A. & D. #8a3b12) are Claude's picks.
+- [ ] Alcoa Steamship Co. (Brendan, 23 Nov 2026, Official Guide page): fortnightly sailings from Montreal and Halifax to Hamilton (Bermuda), St. Kitts, Antigua, St. Lucia,
+  Barbados, St. Vincent, Grenada, Port of Spain, Georgetown; also calls Dominica, Montserrat, Martinique and Guadeloupe as cargo offers. No dates: like the other ocean sailings
+  (draw to the edge of the water file), a dated July 1948 sailing is needed (Montreal Gazette / Halifax shipping columns, with the Lady boats).
 - [ ] Railway colour guide (Brendan, 23 Nov 2026: "has the railway colour guide stopped updating?"). Yes: the header legend in page_template.html is hand-written and was last
   extended about 8 Nov (Quebec Railway, Light & Power). Missing railways drawn since: Rutland, Maine Central, Boston & Maine, New Haven, Pennsylvania, Baltimore & Ohio, Illinois
   Central, Chicago & Western Indiana, Lehigh Valley, Chicago & North Western, Barre & Chelsea, Grand River / Lake Erie & Northern and others with their own colour.

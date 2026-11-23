@@ -477,12 +477,23 @@
    ]
   },
   {
+   "name": "glk_build",
+   "script": "glk_build.py",
+   "needs": [
+    "wmsc_build"
+   ],
+   "inputs": [
+    "water_east.json"
+   ]
+  },
+  {
    "name": "atc_build",
    "script": "atc_build.py",
    "needs": [
     "gtwf_build",
     "dcn_build",
-    "wmsc_build"
+    "wmsc_build",
+    "glk_build"
    ],
    "inputs": [
     "water_east.json"
