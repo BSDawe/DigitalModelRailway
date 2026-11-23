@@ -214,13 +214,15 @@ Each runs to an International Boundary point (time estimated) or to the last Can
     N.Y.C. Niagara Falls station, then backed out onto the line along the top of the gorge towards Buffalo. The connection from the station onto the gorge line is Brendan's trace
     (traces/lv/brendan_niagara_gorge_connection.json, own nyc; KML in the private repo; missing from the Mississippi Rails file). Wanted: the rest of the L.V. table (Geneva -
     New York), L.V. / N.Y.C. traces Niagara Falls - Buffalo - Depew - New York, a Depew point (Brendan: 42 54 35.36 N, 78 41 56.96 W; Buffalo L.V. station 42 52 38.87 N, 78 52 31.52 W; L.V. KMZ received 20 Nov 2026). Niagara Falls, N.Y. (N.Y.C. station, also for the L.V.): Brendan's point 43 06 37.09 N, 79 03 04.77 W (43.110303, -79.051325; 20 Nov 2026).
-- [ ] Niagara Falls bridges (Brendan, 20 Nov 2026): fix the bridge situation. CN and the N.Y.C. had separate bridges, close together; on the map the CN line disappears at the
+- [x] (V211, Brendan's bridge traces) Niagara Falls bridges (Brendan, 20 Nov 2026): fix the bridge situation. CN and the N.Y.C. had separate bridges, close together; on the map the CN line disappears at the
   international boundary (mid-bridge, where the Ontario collection ends) and the N.Y.C. track jumps across onto the CN bridge (Claude's 0.4 km tie, own nyc, boundary - the junction at
   the U.S. end; tools/mar_import_lv.py). Wanted: the CN bridge drawn whole as CN to the U.S. side and its connection to the N.Y.C., and the N.Y.C. bridge if trains used it.
-- [ ] Michigan Central / N.Y.C. (built V210). Wanted: traces for the IC Kensington - Central Station and the Lake Shore Englewood - La Salle Street (dashed now; Brendan's Mississippi Rails
-  Chicago KMZ), the International Railway Bridge (dashed 0.8 km); points for Buffalo Central Terminal, Terrace Station, Black Rock, Woodlawn, Kensington, Englewood (approximate); the TH&B
-  trains (on_thb_t056) still end at the Niagara River boundary: run them into Buffalo with the Table 6 / 11 times (TH&B 372 / 374 / 380 / 382, 371 / 375 / 379 / 383); the N.Y.C. Niagara
-  Falls sections of Nos. 44 / 50 (Table 7) not drawn; the Batavia bypass and Rome / Herkimer alignments left as the KMZ's main pieces (check for 1948).
+- [ ] Michigan Central / N.Y.C. (built V210, V211). Approximate points: Terrace Station, Black Rock; the TH&B trains (on_thb_t056) still end at the Niagara River boundary: run them into
+  Buffalo with the Table 6 / 11 times; the N.Y.C. Niagara Falls sections of Nos. 44 / 50 (Table 7) not drawn; the Batavia bypass and Rome / Herkimer alignments: check for 1948.
+- [ ] CP trains to Detroit (Brendan asked, 22 Nov 2026: they ran through the tunnel to Michigan Central Station; Detroit times in on_cp_t049w.csv's notes): run 19, 20, 21, 22, 37, 38, 634,
+  635 on to Detroit (offered; waiting for Brendan's go-ahead).
+- [ ] Adirondack Division (V211): Lake Clear Junction, Saranac Lake, Lake Placid points approximate; Utica - Albany - New York for the Montreal trains (on_nycfull_t018.csv) waits for the
+  main-line timetable rows.
 - [ ] Michigan Central Table 6 (Chicago and Detroit to Niagara Falls and Buffalo, April 25, 1948; Brendan's scan 22 Nov 2026) transcribed, NOT BUILT: on_nycfull_t006.csv
   (Chicago - Detroit, all 16 trains incl. The Mercury, Twilight Ltd., Advance Wolverine, Motor City Special; Welland - Niagara Falls, N.Y.; Welland - Fort Erie - Buffalo incl. TH&B
   380 / 382 / 372 / 374). Needs Michigan Central track Chicago - Detroit and into Buffalo. Found: Nos. 48 The Detroiter and 40 run Detroit - Buffalo via Canada with no Ontario stop
@@ -257,6 +259,8 @@ Each runs to an International Boundary point (time estimated) or to the last Can
 - [x] Sydney & Louisburg: built (V163). Colour #5B3A8C is Claude's pick. Victoria Jct. - Glace Bay 9.9 mi traced / 11.0 printed (the trace may take a later route).
 
 ## Done and answered
+### Done in Version 211 (22 Nov 2026)
+- Niagara bridges, International Bridge, Tonawanda bypass, Chicago terminal approaches (Brendan's traces and KMZ); Table 53; the Adirondack Division.
 ### Done in Version 210 (22 Nov 2026)
 - The Michigan Central Chicago - Detroit and its through trains on to Buffalo and New York (Tables 6, 7, 9, 11); Buffalo Central Terminal and Michigan Central Station named.
 ### Done in Version 209 (22 Nov 2026)

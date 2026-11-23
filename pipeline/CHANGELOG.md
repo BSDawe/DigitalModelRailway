@@ -3080,3 +3080,19 @@ A review of the whole project (Brendan: "have a peek through ... suggest improve
     "Central Terminal", "Terrace Station" zoomed in.
   - As printed, flagged by the speed check: No. 346 Kalamazoo - Galesburg and Ypsilanti - Wayne, No. 341 Marshall - Ceresco.
 - Counts: 676 lines, 4403 trips, 7797 stops, 65 agencies; check_gtfs 0 problems.
+
+## Version 211
+- Niagara River (Brendan, 22 Nov 2026): his CN Suspension Bridge trace (own cn, tied 138 m to the N.Y.C. junction) and the N.Y.C. (Michigan Central) bridge beside it (own nyc) replace
+  Claude's 0.4 km tie; each railway on its own bridge (tools/mar_import_lv.py, traces/lv/brendan_cn_suspension_bridge.json, brendan_mc_niagara_bridge.json).
+- Buffalo: Brendan's International Bridge traces A (to the Black Rock line) and B (towards Tonawanda) replace the dashed estimate; his Tonawanda bypass (early 20th century) replaces the
+  KMZ's old route; Buffalo Central Terminal at his point (42 53 19.54 N, 78 49 45.10 W). N.Y.C. Table 53 (Buffalo - Tonawanda - Niagara Falls - Suspension Bridge, 10 trains:
+  on_mc_t053.csv); No. 358's Suspension Bridge - Buffalo times from Table 53.
+- Chicago: Brendan's Mississippi Rails NYC_Chicago.kmz replaces the dashed approaches: the Illinois Central (own 'ic', IC brown #6b3e26 / dark #c8875a, Claude's shades) Kensington -
+  Woodlawn - Central Station with his IC terminal track; the Twilight Limited leaves the Michigan Central at the Porter wye for the N.Y.C. (Lake Shore) main line by Englewood to La Salle
+  Street (Brendan). Woodlawn, Kensington, Englewood now by printed mileage on the track.
+- The Adirondack Division (Official Guide, April 25, 1948; Brendan's pages): on_nyc_t018.csv now runs Montreal - Malone - Lake Clear Junction - Tupper Lake - Utica; Nos. 2, 4, 3, 11, 5
+  are through trains Montreal - Utica (Brendan's reading: the boxed Saranac Lake / Lake Placid rows are a connection at Lake Clear Junction). on_nyc_t019.csv (new): Nos. 15 / 14 Utica -
+  Lake Placid and the ten Lake Clear Junction - Saranac Lake - Lake Placid connections. Track: the Mississippi Rails NYC export (Utica - Remsen by the RW&O; Remsen - Lake Clear Jct.;
+  Lake Clear - Saranac Lake - Lake Placid). Utica Union Station at Brendan's point (N.Y.C.; tenants D.L.&W. and N.Y.O.&W.), shared with the Michigan Central's trains; Lake Clear
+  Junction, Saranac Lake, Lake Placid at piece ends (APPROXIMATE).
+- Counts: 678 lines, 4426 trips, 7835 stops, 65 agencies; check_gtfs 0 problems.
