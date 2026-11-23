@@ -121,8 +121,10 @@ Maritime tables where the traced line differs from the printed miles by 1 mi and
 - [ ] Camp Borden (CN 122 / 126).
 
 ### Timetables and points
-- [ ] Source to follow up (Brendan, 23 Nov 2026): Rolly Martin's scans of the New York Central "M" (Montreal - Malone - Adirondack / Ottawa) public timetables, 1924 - 1951:
-  https://rollymartincountry.blogspot.com/2022/02/nyc-m-public-timetables-1924-1951.html (bookmarked; not yet read).
+- [ ] Source to follow up (Brendan, 23 Nov 2026): the Montreal & Southern Counties public timetables on Rolly Martin Country (D. J. Gagnon, Feb. 2022; the address says
+  "nyc-m", but Brendan: it is the M&SC file): https://rollymartincountry.blogspot.com/2022/02/nyc-m-public-timetables-1924-1951.html. For the Suburban Division (only a
+  frequency line in the Official Guide: 20 min Montreal - St. Lambert - Montreal South; 20 / 40 min Greenfield Park and Mackayville). The timetables are images: the scans are
+  needed in a session to read them (the web fetch gets the text only).
 - [ ] Quebec Railway, Light & Power; the Stratford table (No. 10); the remaining steamship points and waterways; the rest of the Official Guide pages.
 - [ ] The Valleyfield timetables (then recheck CN Table 75's Valleyfield sections, on_cn_t075v). (23 Oct)
 - [ ] CN Peebles - Handsworth (sk_cn_t162, Saskatchewan): the intermediate stops (the table prints only the ends). (4 Nov)
