@@ -12,7 +12,7 @@
 # Welland above; the 383 column carries 315 (Motor City Special) from Windsor. 371, 375, 379, 383 are TH&B trains (Buffalo - Welland, on to Hamilton; on_mc_t006 notes). The first
 # Motor Bus column (BusA): Niagara Falls, Ont. 11.35 a.m. - Welland 12.15 p.m. "Via Fort Erie" printed in the Niagara section for 17, 47, 365, 39.
 # UNSURE: No. 341 Marshall 11.47 - Ceresco 11.50 a.m. (5.3 mi in 3 min: as printed); Black Rock mileage 530.7 (as Table 6: about 2 mi from Fort Erie, misprint);
-# No. 17 Black Rock sign (z?) and time 2.27 (the 2 faint); No. 347 Battle Creek 3.28 (a mark before it: f?); No. 47 The Detroiter: Buffalo printed "*" with no time,
+# No. 17 Black Rock 2.27 and No. 347 Battle Creek 3.28 confirmed by Brendan (22 Nov 2026; the marks beside them are blemishes); No. 47 The Detroiter: Buffalo printed "*" with no time,
 # arrives Detroit 8.00 a.m.; No. 321 ends at Jackson 6.03 p.m. (P M below it); No. 39 at Niagara Falls, N.Y. 8.12 p.m. by connecting train.
 #train col=No17 num=17 dir=up days=daily kind=passenger name="The Wolverine"
 #train col=No33 num=33 dir=up days=daily kind=passenger name="New England Wolverine"
@@ -37,7 +37,7 @@
 mile,station,principal,prov,tz,No17,No33,No341,No47,No371,No365,No75,No35,BusA,No375,No323,No31,No321,No379,No51,No345,No347,No383,No315,No39
 535.2,Buffalo (Cent. Term.),1,NY,E,lv 2.05a[*],lv 2.45a[*],,lv [*] (no time printed),lv 5.05a[*],lv 5.35a[†],,lv 8.20a[*],,lv 8.45a[*],,,,lv 2.05p[*],lv 4.17p[*],,,lv 5.30p[*],,lv 9.55p[*]
 ,Buffalo (Terrace Sta.),1,NY,E,-,-,,-,-,5.45a,,-,,8.56a,,,,2.16p,4.28p,,,5.41p,,-
-530.7,Black Rock,1,NY,E,2.27a[z?],3.07a,,-,5.27a,5.59a,,8.42a,,9.09a,,,,2.29p,4.42p,,,5.55p,,10.17p
+530.7,Black Rock,1,NY,E,2.27a,3.07a,,-,5.27a,5.59a,,8.42a,,9.09a,,,,2.29p,4.42p,,,5.55p,,10.17p
 514.1,Fort Erie,1,ON,E,-,3.17a,,-,5.38a,6.15a,,8.59a,,9.31a,,,,2.42p,4.54p,,,6.10p,,-
 506.8,Stevensville,0,ON,E,-,-,,-,-,6.29a,,-,,[b][n],,,,-,-,,,[n],,-
 496.8,"Welland (arrive, from Fort Erie)",1,ON,E,-,-,,-,ar 6.05a,ar 6.45a,,ar 9.21a,,ar 9.55a,,,,ar 3.05p,ar 5.16p,,,ar 6.40p,,-
@@ -62,7 +62,7 @@ mile,station,principal,prov,tz,No17,No33,No341,No47,No371,No365,No75,No35,BusA,N
 189.1,Albion,1,MI,E,-,[t][y],11.29a,,,,-,,,,4.22p,-,,,,1.45a,2.45a,,-,-
 177.4,Marshall,1,MI,E,-,[t][y],11.47a,,,,-,,,,4.37p,-,,,,2.01a,3.03a,,-,-
 172.1,Ceresco,0,MI,E,-,-,11.50a,,,,-,,,,-,-,,,,-,-,,-,-
-164.3,Battle Creek,1,MI,E,9.20a,10.25a,12.12p,,,,2.32p,,,,4.54p,5.51p,,,,2.21a,3.28a?,,-,5.37a
+164.3,Battle Creek,1,MI,E,9.20a,10.25a,12.12p,,,,2.32p,,,,4.54p,5.51p,,,,2.21a,3.28a,,-,5.37a
 154.7,Augusta,0,MI,E,-,-,12.27p,,,,-,,,,-,-,,,,-,-,,-,-
 150.3,Galesburg,0,MI,E,-,-,12.38p,,,,-,,,,-,-,,,,-,-,,-,-
 145.3,Comstock,0,MI,E,-,-,-,,,,-,,,,-,-,,,,-,-,,-,-

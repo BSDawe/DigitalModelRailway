@@ -3,8 +3,10 @@
 # 51 Empire State Express. Their Ontario runs: on_mc_t006.csv; Buffalo - Detroit - Chicago: on_nycfull_t011.csv. Only rows where one of them has a time are entered. Miles as printed.
 # NOT BUILT. Eastern time. Signs: * daily; † daily except Sunday; ‡ daily except Saturday; ¶ daily except Monday; § Sunday only; c stops regularly to receive passengers, also to
 # discharge passengers from Harmon and New York; h stops regularly, but only to receive passengers; i stops only to discharge passengers; k Saturday only; y stops on signal to receive
-# passengers for Detroit and beyond. Transcribed by Claude per TIMETABLE_READING.md.
-# UNSURE: No. 17 Poughkeepsie 7.39 p.m.: a sign before it (‡ or t?), no arrival; No. 47 The Detroiter: no Buffalo time printed (Rochester 1.45 a.m., Detroit 8.00 a.m. by Table 11);
+# passengers for Detroit and beyond; T (a note printed in the 171 column) stops on signal to receive passengers for points beyond Buffalo; Y stops on signal to receive passengers for
+# Albany and beyond. Transcribed by Claude per TIMETABLE_READING.md.
+# No. 17 Poughkeepsie 7.39 p.m.: the sign is a capital T (Brendan, 22 Nov 2026: "a capital seriffed T"), the column note of this page: "T Stops on signal to receive
+# passengers for points beyond Buffalo". UNSURE: No. 47 The Detroiter: no Buffalo time printed (Rochester 1.45 a.m., Detroit 8.00 a.m. by Table 11);
 # No. 35 The Iroquois "carries coach passengers to St. Lawrence Division points only" (the note may concern the coaches only).
 #train col=No17 num=17 dir=up days=daily kind=passenger name="The Wolverine" links="same: No. 17, Table 11 (Buffalo lv 2.05 a.m.)"
 #train col=No35 num=35 dir=up days=daily kind=passenger name="The Iroquois" note="Carries coach passengers to St. Lawrence Division points only." links="same: No. 35, Table 11 (Buffalo lv 8.20 a.m.)"
@@ -18,7 +20,7 @@ mile,station,principal,prov,tz,No17,No35,No39,No47,No51
 32.7,Harmon,1,NY,E,6.51p[h],11.17p[h],12.50p[h],7.49p[h],8.49a[h]
 40.6,Peekskill,1,NY,E,-,-,1.11p,-,-
 58.3,Beacon,1,NY,E,-,-,1.33p,-,-
-72.8,Poughkeepsie,1,NY,E,lv 7.39p[?],-,ar 1.52p / lv 1.52p,-,-
+72.8,Poughkeepsie,1,NY,E,lv 7.39p[T],-,ar 1.52p / lv 1.52p,-,-
 88.4,Rhinecliff,1,NY,E,-,-,2.11p,-,-
 113.7,Hudson,1,NY,E,-,-,2.39p,-,-
 142.2,Albany,1,NY,E,lv 8.45p[h],lv 1.45a[h],ar 3.15p / lv 3.25p,lv 9.40p[h],ar 10.42a / lv 10.42a
