@@ -11,9 +11,6 @@ Last updated 17 November 2026 (Version 180).
 - [ ] CN Table 116 (Longlac - Fort William, Nos. 79 / 80): the Toronto section may be a connection with Nos. 3 / 4 at Longlac rather than through cars (Brendan not certain). Matters for chaining. (23 Oct)
 
 ## Fixes queued (Brendan: "don't fix yet"; ask before the next rebuild whether to include them)
-- [ ] Portland, Maine: the CN station (CN_PORTLAND_ME, now "Portland (CN)") should read "Portland (Grand Trunk)" (Brendan, 22 Nov 2026).
-- [ ] The Gull as one train (Brendan, 22 Nov 2026): CP Nos. 113 / 114 (Saint John - Vanceboro, on_cp_t012.csv) and MEC / B&M Nos. 23 / 8 (Vanceboro - Boston, on_mec_t002n / s) are one
-  train, assigned to the Maine Central (drawn and labelled MEC throughout, Saint John - Boston; CPR track east of Vanceboro). Numbers change at Vanceboro (113 -> 8, 23 -> 114).
 - [ ] Station owners, joint and union stations (V208 takes the owner from the track under the station): check each "Union Station" / union depot by hand (Toronto Terminals
   Railway CN + CPR; Ottawa Union; St. Paul Union Depot; Troy Union RR NYC + D&H + B&M; Spokane, Seattle, Tacoma Union; Washington Union; the C&WI's Dearborn...).
   "Union Station" is sometimes the name of a station one railway owned (Brendan).
@@ -220,7 +217,7 @@ Each runs to an International Boundary point (time estimated) or to the last Can
 - [x] (V211, Brendan's bridge traces) Niagara Falls bridges (Brendan, 20 Nov 2026): fix the bridge situation. CN and the N.Y.C. had separate bridges, close together; on the map the CN line disappears at the
   international boundary (mid-bridge, where the Ontario collection ends) and the N.Y.C. track jumps across onto the CN bridge (Claude's 0.4 km tie, own nyc, boundary - the junction at
   the U.S. end; tools/mar_import_lv.py). Wanted: the CN bridge drawn whole as CN to the U.S. side and its connection to the N.Y.C., and the N.Y.C. bridge if trains used it.
-- [ ] The Gull (V213): wanted: a trace Portland Union Station - Woodfords - Deering Jct. (dashed now); Lewiston, Waterville, Bangor points; the B&M station miles (estimated). No. 8's
+- [ ] The Gull (V213, V214): wanted: a Lewiston point (Waterville, Bangor at Brendan's points; Portland on track); the B&M station miles (estimated). No. 8's
   dagger at Vanceboro (daily except Sunday) against the column heading (daily June 20 - Sept. 6): entered as the dagger. The rest of MEC Table 2 and B&M Table 8 not entered (Brendan).
 - [ ] Michigan Central / N.Y.C. (built V210, V211). Approximate points: Terrace Station, Black Rock; the TH&B trains (on_thb_t056) still end at the Niagara River boundary: run them into
   Buffalo with the Table 6 / 11 times; the N.Y.C. Niagara Falls sections of Nos. 44 / 50 (Table 7) not drawn; the Batavia bypass and Rome / Herkimer alignments: check for 1948.
@@ -262,6 +259,8 @@ Each runs to an International Boundary point (time estimated) or to the last Can
 - [x] Sydney & Louisburg: built (V163). Colour #5B3A8C is Claude's pick. Victoria Jct. - Glace Bay 9.9 mi traced / 11.0 printed (the trace may take a later route).
 
 ## Done and answered
+### Done in Version 214 (23 Nov 2026)
+- The Gull one Maine Central train Saint John - Boston; Portland (Grand Trunk); Portland & Rochester track into Union Station; Waterville correction; Bangor and McAdam points.
 ### Answered (22 Nov 2026)
 - No. 346 Ypsilanti 9.55 - Wayne 10.00 and Kalamazoo 7.07 - Galesburg 7.12, No. 341 Marshall - Ceresco: misprints in the Guide; left as printed (Brendan).
 ### Done in Version 213 (22 Nov 2026)

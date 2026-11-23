@@ -3114,3 +3114,12 @@ A review of the whole project (Brendan: "have a peek through ... suggest improve
   Waterville - Bangor - Mattawamkeag, own mec); Union Station - Woodfords - Deering Jct. a DASHED estimate (not in the map). Portland Union Station at Brendan's point (separate from the
   Grand Trunk station, CN_PORTLAND_ME); Vanceboro, Mattawamkeag, North Station shared with the CP's. Lewiston, Waterville, Bangor APPROXIMATE; B&M station miles estimated.
 - Counts: 680 lines, 4428 trips, 7848 stops, 66 agencies; check_gtfs 0 problems.
+
+## Version 214
+- The Gull as one train (Brendan, 22 Nov 2026), assigned to the Maine Central: Saint John - McAdam - Vanceboro - Bangor - Portland - Boston. CP Nos. 113 / 114 taken out of
+  on_cp_t012.csv and their Saint John - Vanceboro times added to on_mec_t002n / s.csv (printed in Atlantic time, entered an hour earlier in Eastern). Northbound 23 / 114 daily; southbound
+  113 / 8 daily except Sunday (the MEC dagger at Vanceboro; CP printed 113 daily).
+- Portland, Maine: Brendan's Portland & Rochester (B&M) track Deering Jct. - Woodfords - Union Station replaces the V213 dashed estimate; the CN station renamed "Portland (Grand Trunk)".
+- Waterville: Brendan's MEC track and station correction (traces/mec_waterville_brendan.json; the KMZ pieces cut back to his paths). Bangor MEC station (also used by the Bangor & Aroostook)
+  at his point, 44 47 56.46 N, 68 46 01.17 W. McAdam CPR station (extant) at his point, 45.590137, -67.328776 (1.2 km from before); the stations placed by mileage from it move with it.
+- Counts: 680 lines, 4426 trips, 7848 stops, 66 agencies; check_gtfs 0 problems.
