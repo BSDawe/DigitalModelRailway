@@ -1,10 +1,12 @@
+# Maine Central / Boston & Maine / CPR: The Gull, No. 23 (No. 114 on the CPR), one train assigned to the Maine Central (Brendan, 23 Nov 2026): Saint John times from CP Table 12 (printed in Atlantic
+# time, entered here an hour earlier in Eastern time; on_cp_t012.csv, where the column was taken out). Vanceboro leave = CP 9.15 a.m. Atlantic, 8.15 Eastern.
 # Maine Central / Boston & Maine: The Gull, No. 23, Boston (North Station) - Portland (Union Station) - Lewiston - Waterville - Bangor - Mattawamkeag - Vanceboro (on to Saint John and
 # Halifax as CP No. 113, on_cp_t012.csv). Sources: Official Guide, April 25, 1948: Maine Central Table 2 (page 92; "Gull. Runs via Lewiston. Runs daily June 19 to Sept. 5 incl.") and
 # Boston & Maine Table 8 (Boston - Portland; only the Gull entered: Brendan, 22 Nov 2026). Eastern time. Brendan: drawn as Maine Central, over B&M-owned track Boston - Portland.
 # Miles: from Boston; Boston - Portland 114.7 as printed (Exeter, Dover ESTIMATED); Portland - Waterville by the Back Route (via Lewiston) ESTIMATED from the track; Waterville - Vanceboro
 # as printed (Table 2, from Portland by the Lower Road) plus the Back Route's extra miles. Lewiston: no time printed (the train passes; the row routes it by the Back Route).
 # Signs: z stops on signal Sunday only (Exeter, entered as f); Oldtown 4.59: a division sign or check mark (Brendan, 22 Nov 2026), not in the key on this page; entered as a flag stop. Transcribed by Claude per TIMETABLE_READING.md.
-#train col=No23 num=23 dir=down days=daily kind=passenger name="The Gull" note="Boston 9.30 p.m. - Portland 11.50 p.m. - 12.10 a.m. - by Lewiston - Waterville - Bangor - Vanceboro 7.45 a.m., daily June 19 to Sept. 5;" links="connects: CP No. 114 at Vanceboro (on to Saint John and Halifax)"
+#train col=No23 num=23 dir=down days=daily kind=passenger name="The Gull" note="Boston 9.30 p.m. - Portland 11.50 p.m. - 12.10 a.m. - by Lewiston - Waterville - Bangor - Vanceboro 7.45 a.m., daily June 19 to Sept. 5;" links="same: CP No. 114 east of Vanceboro (Brendan, 23 Nov 2026: one train, assigned to the Maine Central)"
 mile,station,principal,prov,tz,No23
 0.0,"Boston (North Station), Mass.",1,MA,E,lv 9.30p
 50.5,"Exeter, N.H.",1,NH,E,f10.34p
@@ -18,4 +20,14 @@ mile,station,principal,prov,tz,No23
 312.8,"Mattawamkeag, Me.",1,ME,E,6.18a
 342.8,"Danforth, Me.",1,ME,E,7.04a
 352.4,"Forest, Me.",0,ME,E,7.20a
-368.9,"Vanceboro, Me.",1,ME,E,ar 7.45a
+368.9,"Vanceboro, Me.",1,ME,E,ar 7.45a / lv 8.15a
+374.8,McAdam,1,NB,E,ar 8.30a / lv 9.00a
+394.1,Harvey,0,NB,E,9.30a
+411.5,Tracy,0,NB,E,f9.52a
+414.8,Fredericton Junction,1,NB,E,ar 9.57a / lv 10.05a
+422.3,Hoyt,0,NB,E,d10.16a
+435.4,Welsford,0,NB,E,d10.34a
+445.2,Westfield Beach,0,NB,E,d10.48a
+449.3,Grand Bay,0,NB,E,d10.56a
+457.0,Fairville,0,NB,E,11.10a
+459.2,Saint John,1,NB,E,ar 11.20a

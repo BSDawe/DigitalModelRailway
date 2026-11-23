@@ -56,9 +56,9 @@ print(len(ties), 'ties:', [(t[2].split(': ')[-1][:30], t[3].split(': ')[-1][:30]
 UNION = (-70.280710, 43.652243)
 near = min(((km(UNION, q), q, nm, ow) for nm, ow, c in ok for q in c))
 print('Union Station is', round(near[0] * 1000), 'm from', near[2])
-# Union Station - Woodfords - Deering Jct. (the start of the Maine Central main line, Portland - Augusta): not in the state map; a DASHED estimate (a trace wanted)
-f = F('Maine Central: Union Station - Woodfords - Deering Jct., estimate', [(-70.2798, 43.6479), UNION, (-70.2855, 43.6735), (-70.2913587, 43.6876073)],
-      'estimate (Claude), drawn broken: the Portland Terminal line from Union Station to the Maine Central main line is not in the Mississippi Rails Maine map', 'mec', group='link')
-f['properties']['est'] = True; feats.append(f)
+# Union Station - Woodfords - Deering Jct. (Brendan, 23 Nov 2026): the Portland & Rochester (B&M) line, which he supplied; taken from Deering Jct. (the start of the Maine Central main line)
+# east through Woodfords and Union Station (the V213 dashed estimate is gone)
+PR = json.load(open(os.path.join(HERE, 'traces', 'bm_portland_union_station_brendan.json')))
+feats.append(F('Boston & Maine: Portland & Rochester, Deering Jct. - Woodfords - Union Station (Brendan)', [tuple(q) for q in PR['coords'] if q[0] > -70.2965], PR['source'], 'bm', group='brendan'))
 json.dump(dict(type='FeatureCollection', features=feats), open(os.path.join(HERE, 'traces', 'maritimes', 'mec.geojson'), 'w'))
 print(len(feats), 'pieces')

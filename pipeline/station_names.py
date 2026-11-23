@@ -19,6 +19,7 @@ from collections import Counter, defaultdict
 
 # 1948 names of named stations (gid -> (zoomed-in name, city)); Brendan's list of 22 Nov 2026 and the terminals already on the map
 NAMED = {
+    'CN_PORTLAND_ME': ('Portland (Grand Trunk)', 'Portland'),   # Brendan, 23 Nov 2026
     'MEC_PORTLAND_UNION_ME': ('Union Station', 'Portland'),   # Portland, Maine (Brendan's point; V213)
     'NYC_UTICA_N_Y': ('Union Station', 'Utica'),   # N.Y.C., tenants D.L.&W. and N.Y.O.&W. (Brendan, 22 Nov 2026)
     'NYC_CHICAGO_CENTRAL_ILL': ('Central Station', 'Chicago'), 'NYC_CHICAGO_LA_SALLE_STREET_ILL': ('La Salle Street Station', 'Chicago'),   # V210 (Brendan, 22 Nov 2026)
