@@ -8,7 +8,7 @@ taken (named in MAIN below); the Hudson line, Albany and Grand Central are alrea
 - Chicago (Brendan, 22 Nov 2026): Central Station is Illinois Central property, the Michigan Central running in by trackage rights over the IC from Kensington; no trace yet, so a
   DASHED estimate (own 'ic') from the Michigan Central's west end (the Indiana state line) by Kensington and Woodlawn (63d Street) to Central Station. La Salle Street Station (NYC and
   Rock Island; the Twilight Limited, by Englewood and the Lake Shore & Michigan Southern to Porter): a DASHED estimate La Salle Street - Englewood - the Michigan Central west end.
-- Buffalo: the International Railway Bridge from the Niagara River boundary (end of the Ontario track) to the Black Rock line: a DASHED 0.8 km estimate.
+- Buffalo: the International Railway Bridge, Brendan's traces (traces/lv/brendan_international_bridge.json; V211 replaced Claude's dashed estimate).
 Usage: python3 tools/mar_import_mc.py <NYC_Canada_Export.kmz>"""
 import json, math, os, re, sys, zipfile
 import xml.etree.ElementTree as ET
@@ -65,8 +65,9 @@ feats.append(F('Illinois Central (Michigan Central trackage rights): Kensington 
                group='link', est=True, own='ic', constituent='Illinois Central'))
 feats.append(F('New York Central (Lake Shore & Michigan Southern): La Salle Street - Englewood - the Michigan Central, estimate', [LA_SALLE, ENGLEWOOD, (-87.5600, 41.6800), MC_WEST],
                'estimate (Claude), drawn broken: the Twilight Limited, La Salle Street Station by Englewood and the Lake Shore to Porter; no trace yet; Englewood APPROXIMATE', group='link', est=True))
-# Buffalo: the International Railway Bridge, from the Ontario track's end at the boundary to the Black Rock line
-feats.append(F('Michigan Central: International Railway Bridge, the boundary - Black Rock, estimate', [(-78.908017, 42.929428), (-78.8976, 42.9319)],
-               'estimate (Claude), drawn broken: the bridge is not in the KMZ', group='link', est=True))
+# Buffalo: the International Railway Bridge, Brendan's traces (22 Nov 2026): A from the boundary over the bridge onto the Black Rock line towards Buffalo, B the leg north towards Tonawanda
+IB = json.load(open(os.path.join(HERE, 'traces', 'lv', 'brendan_international_bridge.json')))
+for pc in IB['pieces']:
+    feats.append(F(f"Michigan Central: {pc['name']} (Brendan)", [tuple(q) for q in pc['coords']], IB['source'], group='brendan'))
 json.dump(dict(type='FeatureCollection', features=feats), open(os.path.join(HERE, 'traces', 'maritimes', 'mc.geojson'), 'w'))
 print(len(feats), 'pieces')
