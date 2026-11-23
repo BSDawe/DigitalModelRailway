@@ -30,6 +30,18 @@ for st in ('Massachusetts', 'New_Hampshire', 'Maine'):
                            'Mississippi Rails state map (Tony Howe and David Price), supplied by Brendan', own))
 assert got == set(WANT), set(WANT) - got
 def km(a, b): return math.hypot((a[0] - b[0]) * 111.32 * math.cos(math.radians(a[1])), (a[1] - b[1]) * 110.57)
+# Waterville (Brendan, 23 Nov 2026: Waterville_MEC_Correction.kmz, traces/mec_waterville_brendan.json): his main line through the station and the Back Route's approach replace the
+# KMZ pieces' meeting point; the KMZ pieces are cut back to where his paths begin.
+WAT = json.load(open(os.path.join(HERE, 'traces', 'mec_waterville_brendan.json')))
+def cut(name, at, keep):          # keep the part of the piece from its 'start' or to its 'end', cut at the vertex nearest 'at'
+    f = [f for f in feats if f['properties']['name'].startswith('Maine Central: ' + name)][0]
+    c = f['geometry']['coordinates']; i = min(range(len(c)), key=lambda k: km(c[k], at))
+    f['geometry']['coordinates'] = c[:i + 1] + [list(at)] if keep == 'start' else [list(at)] + c[i:]
+cut('Augusta ME to Waterville ME', WAT['main'][0], 'start')
+cut('Waterville ME to Bangor ME', WAT['main'][-1], 'end')
+cut('Danville Jct to Waterville ME', WAT['back_route'][0], 'start')
+for k, nm in (('main', 'Waterville: main line through the station'), ('back_route', 'Waterville: the Back Route approach')):
+    feats.append(F(f'Maine Central: {nm} (Brendan)', [tuple(q) for q in WAT[k]], WAT['source'], 'mec', group='brendan'))
 ok = [(f['properties']['name'], f['properties']['own'], [tuple(q) for q in f['geometry']['coordinates']]) for f in feats]
 ties = []
 for i, (nm, ow, c) in enumerate(ok):
