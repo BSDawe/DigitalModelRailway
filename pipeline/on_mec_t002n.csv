@@ -3,7 +3,7 @@
 # Boston & Maine Table 8 (Boston - Portland; only the Gull entered: Brendan, 22 Nov 2026). Eastern time. Brendan: drawn as Maine Central, over B&M-owned track Boston - Portland.
 # Miles: from Boston; Boston - Portland 114.7 as printed (Exeter, Dover ESTIMATED); Portland - Waterville by the Back Route (via Lewiston) ESTIMATED from the track; Waterville - Vanceboro
 # as printed (Table 2, from Portland by the Lower Road) plus the Back Route's extra miles. Lewiston: no time printed (the train passes; the row routes it by the Back Route).
-# Signs: z stops on signal Sunday only (Exeter, entered as f); v stops on signal ... (Oldtown, entered as f). Transcribed by Claude per TIMETABLE_READING.md.
+# Signs: z stops on signal Sunday only (Exeter, entered as f); Oldtown 4.59: a division sign or check mark (Brendan, 22 Nov 2026), not in the key on this page; entered as a flag stop. Transcribed by Claude per TIMETABLE_READING.md.
 #train col=No23 num=23 dir=down days=daily kind=passenger name="The Gull" note="Boston 9.30 p.m. - Portland 11.50 p.m. - 12.10 a.m. - by Lewiston - Waterville - Bangor - Vanceboro 7.45 a.m., daily June 19 to Sept. 5;" links="connects: CP No. 114 at Vanceboro (on to Saint John and Halifax)"
 mile,station,principal,prov,tz,No23
 0.0,"Boston (North Station), Mass.",1,MA,E,lv 9.30p

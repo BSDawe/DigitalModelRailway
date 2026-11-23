@@ -19,7 +19,7 @@ from collections import Counter, defaultdict
 
 # 1948 names of named stations (gid -> (zoomed-in name, city)); Brendan's list of 22 Nov 2026 and the terminals already on the map
 NAMED = {
-    'MEC_PORTLAND_UNION_STATION_ME': ('Union Station', 'Portland'),   # Portland, Maine (Brendan's point; V213)
+    'MEC_PORTLAND_UNION_ME': ('Union Station', 'Portland'),   # Portland, Maine (Brendan's point; V213)
     'NYC_UTICA_N_Y': ('Union Station', 'Utica'),   # N.Y.C., tenants D.L.&W. and N.Y.O.&W. (Brendan, 22 Nov 2026)
     'NYC_CHICAGO_CENTRAL_ILL': ('Central Station', 'Chicago'), 'NYC_CHICAGO_LA_SALLE_STREET_ILL': ('La Salle Street Station', 'Chicago'),   # V210 (Brendan, 22 Nov 2026)
     'NYC_DETROIT_MICH': ('Michigan Central Station', 'Detroit'), 'NYC_BUFFALO_CENTRAL_TERMINAL_N_Y': ('Central Terminal', 'Buffalo'), 'NYC_BUFFALO_TERRACE_STA_N_Y': ('Terrace Station', 'Buffalo'),
@@ -75,7 +75,7 @@ def cpr(s):    # the Canadian Pacific's period abbreviation
     return re.sub(r'\bCP\b(?!_)', 'CPR', s)
 def tagless(n): return TAG.sub('', n)
 def base(n): return tagless(n).split(' (')[0].strip()
-OWNER_FIX = {'NYC_CHICAGO_CENTRAL_ILL': 'IC'}   # Illinois Central property, the Michigan Central by trackage rights (Brendan, 22 Nov 2026); its approach is a dashed estimate
+OWNER_FIX = {'MEC_LAWRENCE_MASS': 'B&M', 'MEC_HAVERHILL_MASS': 'B&M', 'NYC_CHICAGO_CENTRAL_ILL': 'IC'}   # Illinois Central property, the Michigan Central by trackage rights (Brendan, 22 Nov 2026); its approach is a dashed estimate
 def owner_at(L, chain):
     for s in L.get('segments', []):
         if s['a'] - 1 <= chain <= s['b'] + 1 and s.get('owner') not in (None, 'none'): return s['owner']
