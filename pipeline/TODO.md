@@ -222,6 +222,9 @@ Each runs to an International Boundary point (time estimated) or to the last Can
   the U.S. end; tools/mar_import_lv.py). Wanted: the CN bridge drawn whole as CN to the U.S. side and its connection to the N.Y.C., and the N.Y.C. bridge if trains used it.
 - [ ] The Gull (V213): wanted: a trace Portland Union Station - Woodfords - Deering Jct. (dashed now); Lewiston, Waterville, Bangor points; the B&M station miles (estimated). No. 8's
   dagger at Vanceboro (daily except Sunday) against the column heading (daily June 20 - Sept. 6): entered as the dagger. The rest of MEC Table 2 and B&M Table 8 not entered (Brendan).
+- [ ] No. 346 (Chicago - Detroit local, on_mc_t006.csv; Brendan's screenshot, 22 Nov 2026): runs Ypsilanti 9.55 - Wayne 10.00 a.m. (11.9 mi in 5 min, 143 m.p.h. on the page) and Kalamazoo
+  7.07 - Galesburg 7.12 (8.8 mi in 5 min). Recheck both against the Table 6 scan (private repo scans/og1948_mc/); Wayne was read "10.00?" (perhaps 10.09 / 10.10), Galesburg as printed.
+  Also flagged by the speed check: No. 341 Marshall 11.47 - Ceresco 11.50 a.m.
 - [ ] Michigan Central / N.Y.C. (built V210, V211). Approximate points: Terrace Station, Black Rock; the TH&B trains (on_thb_t056) still end at the Niagara River boundary: run them into
   Buffalo with the Table 6 / 11 times; the N.Y.C. Niagara Falls sections of Nos. 44 / 50 (Table 7) not drawn; the Batavia bypass and Rome / Herkimer alignments: check for 1948.
 - [ ] Adirondack Division (V211): Lake Clear Junction, Saranac Lake, Lake Placid points approximate; Utica - Albany - New York for the Montreal trains (on_nycfull_t018.csv) waits for the
