@@ -19,6 +19,7 @@ from collections import Counter, defaultdict
 
 # 1948 names of named stations (gid -> (zoomed-in name, city)); Brendan's list of 22 Nov 2026 and the terminals already on the map
 NAMED = {
+    'NYC_UTICA_N_Y': ('Union Station', 'Utica'),   # N.Y.C., tenants D.L.&W. and N.Y.O.&W. (Brendan, 22 Nov 2026)
     'NYC_CHICAGO_CENTRAL_ILL': ('Central Station', 'Chicago'), 'NYC_CHICAGO_LA_SALLE_STREET_ILL': ('La Salle Street Station', 'Chicago'),   # V210 (Brendan, 22 Nov 2026)
     'NYC_DETROIT_MICH': ('Michigan Central Station', 'Detroit'), 'NYC_BUFFALO_CENTRAL_TERMINAL_N_Y': ('Central Terminal', 'Buffalo'), 'NYC_BUFFALO_TERRACE_STA_N_Y': ('Terrace Station', 'Buffalo'),
     'CP_MONTREAL_WINDSOR': ('Windsor Station', 'Montreal'), 'CN_MONTREAL_CENTRAL': ('Central Station', 'Montreal'),

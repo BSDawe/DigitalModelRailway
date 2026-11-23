@@ -21,7 +21,8 @@ MAIN = {   # Michigan Central main line, the Detroit River tunnel; N.Y.C. Buffal
                          'Michigan City IN to Kalamazoo MI', 'Gary IN to Michigan City IN', 'Untitled Path@-87.467', 'Michigan Central Tunnel'),
     'New York Central': ('Buffalo NY to Depew NY', 'Batavia NY to Depew NY', 'Batavia abandoned@-78.225', 'Batavia existing@-78.193', 'Batavia NY abandoned@-78.170',
                          'Batavia NY to Rochester NY', 'Syracuse NY to Rochester NY', 'Utica NY to Syracuse NY', 'Utica NY to Schenectady, NY', 'Schenectady NY to Albany NY',
-                         'Buffalo NY to Black Rock NY', 'Buffalo to Black Rock existing', 'Black Rock NY to Tonawanda NY', 'Rotterdam Jct to Syracuse NY')}
+                         'Buffalo NY to Black Rock NY', 'Buffalo to Black Rock existing', 'Black Rock NY to Tonawanda NY', 'Rotterdam Jct to Syracuse NY',
+                         'Utica NY to Boonville NY', 'Remsen NY to Lake Clear Jct NY', 'Lake Clear Jct to Saranac Lake NY', 'Saranac NY to Lake Placid NY')}   # the Adirondack Division (V211)
 feats = []
 def F(name, pts, note, group='mississippi_rails', est=False, own='nyc', constituent='New York Central'):
     p = dict(own=own, name=name, constituent=constituent, branch=constituent, group=group, status='ok', cost=1.0, note=note)

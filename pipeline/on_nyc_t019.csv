@@ -1,0 +1,41 @@
+# New York Central, Adirondack Division: Utica - Remsen - Thendara (Old Forge) - Tupper Lake - Lake Clear Junction - Saranac Lake - Lake Placid. Source: Official Guide, April 25, 1948,
+# the Adirondack Division table (Brendan's pages, 22 Nov 2026; private repo scans/og1948_mc/nyc_adirondack_*.png). Eastern time. Miles from Utica as printed (northbound column);
+# Lake Placid via Saranac Lake. The Montreal - Malone - Lake Clear Junction - Saranac Lake trains of the same numbers are in on_nyc_t018.csv (they connect at Lake Clear Junction).
+# Signs: * daily; † daily except Sunday; § Sunday only; f stops on signal; i only to discharge (entered plain); z stops on signal Sunday only (entered as f); + coupon stations.
+# Track: Utica - Remsen by the Rome, Watertown & Ogdensburg line (Utica - Boonville), Remsen - Lake Clear Junction, Lake Clear - Saranac Lake - Lake Placid (Mississippi Rails, NYC export).
+# Transcribed by Claude per TIMETABLE_READING.md. Southbound No. 14 prints only Lake Clear, Saranac Inn, Tupper Lake, Thendara (f) and Utica; No. 15 only Tupper Lake and beyond.
+#train col=No3 num=3 dir=down days="ex Sun" kind=passenger note="Utica 12.15 p.m. - Lake Placid 5.35 p.m., daily except Sunday." links="connects: No. 3, Saranac Lake - Montreal (on_nyc_t018) at Lake Clear Junction"
+#train col=No11 num=11 dir=down days=Sun kind=passenger note="Sundays only: Utica 12.15 p.m. - Lake Placid 5.05 p.m." links="connects: No. 11, Saranac Lake - Montreal (on_nyc_t018) at Lake Clear Junction"
+#train col=No5 num=5 dir=down days=daily kind=passenger note="Utica 2.10 a.m. - Lake Placid 7.50 a.m., daily." links="connects: No. 5, Saranac Lake - Montreal (on_nyc_t018) at Lake Clear Junction"
+#train col=No15 num=15 dir=down days=daily kind=passenger note="Utica 1.45 a.m. - Tupper Lake 5.03 a.m. - Lake Placid 6.35 a.m., daily; no stops printed before Tupper Lake."
+#train col=No2 num=2 dir=up days=daily kind=passenger note="Lake Placid 10.35 a.m. - Utica 3.40 p.m., daily." links="connects: No. 2, Montreal - Saranac Lake (on_nyc_t018) at Lake Clear Junction"
+#train col=No14 num=14 dir=up days=daily kind=passenger note="Lake Placid 8.20 p.m. - Utica 12.40 a.m., daily; stops printed only at Saranac Lake, Lake Clear Junction, Saranac Inn, Tupper Lake and Thendara."
+#train col=No4 num=4 dir=up days=daily kind=passenger note="Lake Placid 8.50 p.m. - Utica 1.45 a.m., daily." links="connects: No. 4, Montreal - Saranac Lake (on_nyc_t018) at Lake Clear Junction"
+mile,station,principal,prov,tz,No3,No11,No5,No15,No2,No14,No4
+0.0,"Utica, N.Y.",1,NY,E,lv 12.15p,lv 12.15p,lv 2.10a,lv 1.45a,ar 3.40p,ar 12.40a,ar 1.45a
+22.0,"Remsen, N.Y.",1,NY,E,12.51p,12.51p,3.23a,,3.02p,,12.42a
+30.0,"Forestport, N.Y.",1,NY,E,f1.06p,1.06p,f3.35a,,f2.42p,,f12.29a
+37.0,"Woodgate, N.Y.",0,NY,E,1.18p,f1.18p,f3.46a,,f2.27p,,f12.19a
+42.0,"Otter Lake, N.Y.",0,NY,E,1.27p,1.27p,f3.55a,,f2.17p,,f12.11a
+43.0,"McKeever, N.Y.",0,NY,E,1.31p,1.31p,f3.58a,,f2.12p,,
+48.0,"Minnehaha, N.Y.",0,NY,E,,,,,f1.58p,,
+52.0,"Thendara (Old Forge), N.Y.",1,NY,E,1.50p,1.50p,4.18a,,1.50p,f11.15p,11.55p
+55.0,"Moulin, N.Y.",0,NY,E,,f1.55p,,,f1.37p,,
+58.0,"Carter, N.Y.",1,NY,E,f2.00p,f2.01p,,,f1.32p,,
+63.0,"Big Moose, N.Y.",0,NY,E,2.12p,2.12p,4.38a,,1.24p,,11.38p
+68.0,"Woods, N.Y.",0,NY,E,f2.18p,f2.18p,,,f1.15p,,
+72.0,"Beaver River, N.Y.",0,NY,E,2.26p,f2.24p,f4.52a,,f1.09p,,f11.23p
+76.0,"Brandreth, N.Y.",0,NY,E,2.34p,2.31p,f4.59a,,1.02p,,f11.17p
+82.0,"Ne-ha-sa-ne (Priv. Sta.), N.Y.",0,NY,E,f2.44p,f2.41p,f5.09a,,f12.52p,,f11.07p
+85.0,"Robinwood, N.Y.",0,NY,E,f2.49p,f2.46p,,,f12.47p,,
+89.0,"Sabattis, N.Y.",0,NY,E,2.58p,2.53p,5.20a,,12.41p,,10.56p
+94.0,"American Legion, N.Y.",0,NY,E,f3.08p,3.02p,f5.29a,,12.32p,,f10.47p
+98.0,"Mount Arab, N.Y.",0,NY,E,f3.14p,f3.08p,f5.35a,,f12.23p,,f10.41p
+101.0,"Childwold, N.Y.",1,NY,E,3.23p,3.13p,5.42a,,12.19p,,f10.35p
+103.0,"Piercefield, N.Y.",0,NY,E,,,,,,,
+108.0,"Tupper Lake, N.Y.",1,NY,E,3.50p,3.32p,6.05a,5.03a,12.07p,9.43p,10.20p
+116.0,"Floodwood, N.Y.",0,NY,E,f4.02p,f3.44p,,,f11.45a,,
+123.0,"Saranac Inn, N.Y.",1,NY,E,4.15p,3.55p,6.29a,5.28a,11.35a,9.13p,9.49p
+126.0,"Lake Clear Junction, N.Y.",1,NY,E,4.26p,4.01p,6.35a,5.34a,11.28a,9.05p,9.43p
+132.0,"Saranac Lake, N.Y.",1,NY,E,5.06p,4.35p,7.05a,5.49a,11.03a,8.50p,9.14p
+142.0,"Lake Placid, N.Y.",1,NY,E,ar 5.35p,ar 5.05p,ar 7.50a,ar 6.35a,lv 10.35a,lv 8.20p,lv 8.50p
