@@ -6,6 +6,8 @@ Niagara Falls (Brendan, 20 Nov 2026): the L.V. ran as far north as its own track
 to Niagara Falls; trains came over the bridge into the N.Y.C. Niagara Falls station and backed out onto the line along the top of the gorge. Brendan's trace of the connection from
 the station onto the gorge line (traces/lv/brendan_niagara_gorge_connection.json, own nyc); the station at his point. The N.Y.C. between the gorge line and Niagara Jct. is not on
 file: a straight estimate (dashed) until a trace comes.
+V211: Brendan's CN Suspension Bridge trace (traces/lv/brendan_cn_suspension_bridge.json, own cn) replaces Claude's 0.4 km N.Y.C. tie over the bridge approach, and his N.Y.C. (Michigan Central) bridge
+(traces/lv/brendan_mc_niagara_bridge.json, own nyc) carries the Michigan Central trains.
 V203: the N.Y.C. Niagara Falls - Gratwick - Tonawanda - Niagara Jct. pieces from Brendan's NYC_Canada_Export.kmz replace that estimate.
 Usage: python3 tools/mar_import_lv.py <Lehigh_Valley.kmz> <NYC_Canada_Export.kmz>"""
 import json, math, os, re, sys, zipfile
@@ -67,8 +69,13 @@ for e, q, a, b, d in ties:
 print(len(ties), 'ties')
 G = json.load(open(os.path.join(HERE, 'traces', 'lv', 'brendan_niagara_gorge_connection.json')))
 g = [tuple(q) for q in G['coords']]; STA = tuple(G['station']['lonlat']); BOUNDARY = (-79.05833, 43.10923); NIAGARA_JCT = (-78.8370446, 43.019476)
-feats.append(F('N.Y.C.: the Suspension Bridge approach, the international boundary - the Niagara Falls station junction', [BOUNDARY, g[0]], 'tie (Claude): 0.4 km over the bridge approach',
-               group='link', own='nyc', constituent='New York Central'))
+CNB = json.load(open(os.path.join(HERE, 'traces', 'lv', 'brendan_cn_suspension_bridge.json')))   # Brendan, 22 Nov 2026: the CN (Grand Trunk) bridge, Ontario - the N.Y.C. junction
+cb = [tuple(q) for q in CNB['coords']]
+feats.append(F('CN: Suspension Bridge (Brendan)', cb, CNB['source'], group='brendan', own='cn', constituent='Canadian National'))
+feats.append(F('N.Y.C.: tie, the CN bridge - the Niagara Falls station junction', [cb[-1], g[0]], f"tie (Claude): {km(cb[-1], g[0]) * 1000:.0f} m", group='link', own='nyc', constituent='New York Central'))
+MCB = json.load(open(os.path.join(HERE, 'traces', 'lv', 'brendan_mc_niagara_bridge.json')))     # Brendan, 22 Nov 2026: the N.Y.C. (Michigan Central) bridge beside it
+mb = [tuple(q) for q in MCB['coords']]
+feats.append(F('N.Y.C. (Michigan Central): Niagara River bridge (Brendan)', mb, MCB['source'], group='brendan', own='nyc', constituent='New York Central'))
 feats.append(F('N.Y.C.: Suspension Bridge station track (Brendan\'s station point)', [g[0], STA], "Brendan's station point, 20 Nov 2026 (0.2 km from his connection trace)", group='brendan', own='nyc', constituent='New York Central'))
 feats.append(F(G['name'] + ' (Brendan)', g, G['source'], group='brendan', own='nyc', constituent='New York Central'))
 json.dump(dict(type='FeatureCollection', features=feats), open(os.path.join(HERE, 'traces', 'maritimes', 'lv.geojson'), 'w'))
