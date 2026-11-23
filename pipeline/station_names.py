@@ -76,7 +76,7 @@ def cpr(s):    # the Canadian Pacific's period abbreviation
     return re.sub(r'\bCP\b(?!_)', 'CPR', s)
 def tagless(n): return TAG.sub('', n)
 def base(n): return tagless(n).split(' (')[0].strip()
-OWNER_FIX = {'MEC_LAWRENCE_MASS': 'B&M', 'MEC_HAVERHILL_MASS': 'B&M', 'NYC_CHICAGO_CENTRAL_ILL': 'IC'}   # Illinois Central property, the Michigan Central by trackage rights (Brendan, 22 Nov 2026); its approach is a dashed estimate
+OWNER_FIX = {'MEC_BANGOR_ME': 'MEC', 'MEC_LAWRENCE_MASS': 'B&M', 'MEC_HAVERHILL_MASS': 'B&M', 'NYC_CHICAGO_CENTRAL_ILL': 'IC'}   # Illinois Central property, the Michigan Central by trackage rights (Brendan, 22 Nov 2026); its approach is a dashed estimate
 def owner_at(L, chain):
     for s in L.get('segments', []):
         if s['a'] - 1 <= chain <= s['b'] + 1 and s.get('owner') not in (None, 'none'): return s['owner']
