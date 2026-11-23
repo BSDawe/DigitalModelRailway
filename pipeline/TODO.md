@@ -217,8 +217,8 @@ Each runs to an International Boundary point (time estimated) or to the last Can
 - [x] (V211, Brendan's bridge traces) Niagara Falls bridges (Brendan, 20 Nov 2026): fix the bridge situation. CN and the N.Y.C. had separate bridges, close together; on the map the CN line disappears at the
   international boundary (mid-bridge, where the Ontario collection ends) and the N.Y.C. track jumps across onto the CN bridge (Claude's 0.4 km tie, own nyc, boundary - the junction at
   the U.S. end; tools/mar_import_lv.py). Wanted: the CN bridge drawn whole as CN to the U.S. side and its connection to the N.Y.C., and the N.Y.C. bridge if trains used it.
-- [ ] Chicago: the Michigan Central trains to Central Station should join the IC at the end of the MC main at Kensington, 41 41 00.98 N, 87 36 44.62 W (Brendan, 22 Nov 2026); fix next.
-- [ ] The Gull (Brendan's MEC Table 2 page 92 and B&M Table 8 page, 22 Nov 2026): MEC Nos. 23 / 8 Boston - Portland - Bangor - Vanceboro (B&M only the Gull); Portland Union Station 43.652243, -70.280710.
+- [ ] The Gull (V213): wanted: a trace Portland Union Station - Woodfords - Deering Jct. (dashed now); Lewiston, Waterville, Bangor points; the B&M station miles (estimated). No. 8's
+  dagger at Vanceboro (daily except Sunday) against the column heading (daily June 20 - Sept. 6): entered as the dagger. The rest of MEC Table 2 and B&M Table 8 not entered (Brendan).
 - [ ] Michigan Central / N.Y.C. (built V210, V211). Approximate points: Terrace Station, Black Rock; the TH&B trains (on_thb_t056) still end at the Niagara River boundary: run them into
   Buffalo with the Table 6 / 11 times; the N.Y.C. Niagara Falls sections of Nos. 44 / 50 (Table 7) not drawn; the Batavia bypass and Rome / Herkimer alignments: check for 1948.
 - [ ] Adirondack Division (V211): Lake Clear Junction, Saranac Lake, Lake Placid points approximate; Utica - Albany - New York for the Montreal trains (on_nycfull_t018.csv) waits for the
@@ -248,7 +248,7 @@ Each runs to an International Boundary point (time estimated) or to the last Can
 - [x] Norton, Vt. (Island Pond, Portland): CN 11, 12, 16, 17, 111, 112, 126, 209, 210. Done in Version 186: on to Island Pond, Nos. 16 / 126 and 17 through to Portland, the Lewiston branch (Grand Trunk).
 - [x] North Troy / Newport, Vt.: CP 209, 210 The Red Wing, 211, 212 The Alouette, 213, 214 (Boston & Maine to Boston): done in Version 187. Still open: Quebec Central 1 / 6 (Beebe - Newport, to meet the Red Wing), B&M station stops between Plymouth / White River Jct. and Concord (with the B&M timetables).
 - [x] Malone, N.Y.: New York Central Montreal - Malone, all trains (Version 192); beyond Malone (Utica, Albany, New York: on_nycfull_t018.csv) waits for the NYC. Fort Covington, N.Y.: CN 79 / 80 (done in Version 188, into Fort Covington). Fort Covington station (Brendan, 17 Nov 2026, "tolerably comfortable guessing"): 44 59 36.17 N, 74 29 45.01 W (44.993381, -74.495836); the Grand Trunk trace (Mississippi Rails, traces/maritimes/cn_gtr.geojson, status 'later') ends about 1 km east of it.
-- [ ] Vanceboro, Me.: CP 113 / 114 The Gull (Maine Central to Boston); The Pine Tree through cars on CP 40. The Gull to be drawn as Maine Central / B&M-owned (Brendan, 17 Nov 2026). Needs CP Table 11 or the MEC (Vanceboro - Bangor - Portland) and B&M (Portland - Boston) tables. Portland Union Station (Brendan): 43.652243, -70.280710.
+- [x] (V213) Vanceboro, Me.: CP 113 / 114 The Gull (Maine Central to Boston); The Pine Tree through cars on CP 40. The Gull to be drawn as Maine Central / B&M-owned (Brendan, 17 Nov 2026). Needs CP Table 11 or the MEC (Vanceboro - Bangor - Portland) and B&M (Portland - Boston) tables. Portland Union Station (Brendan): 43.652243, -70.280710.
 - [ ] Fort Frances / International Falls: CN 19 / 20 (Duluth, Winnipeg & Pacific to Duluth).
 - [ ] Ending at a border station, connections only (to check): CP 27 / 28 Sault Ste. Marie, Ont. (Soo Line); CP 543 / 544 Coutts (Sweet Grass, Great Northern); CN 600 / 601, 605 / 606, 620 / 621 Sarnia; CN 77 and CP 29 / 30 Prescott (the Ogdensburg car ferry); CN M218 / M219 Fort Erie.
 
@@ -259,6 +259,8 @@ Each runs to an International Boundary point (time estimated) or to the last Can
 - [x] Sydney & Louisburg: built (V163). Colour #5B3A8C is Claude's pick. Victoria Jct. - Glace Bay 9.9 mi traced / 11.0 printed (the trace may take a later route).
 
 ## Done and answered
+### Done in Version 213 (22 Nov 2026)
+- The Gull, Boston - Portland - Bangor - Vanceboro (MEC Nos. 23 / 8); Michigan Central trains join the IC at Kensington.
 ### Done in Version 212 (22 Nov 2026)
 - CP Toronto - Windsor trains on to Detroit (Michigan Central Station).
 ### Done in Version 211 (22 Nov 2026)

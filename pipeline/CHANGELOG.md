@@ -3102,3 +3102,15 @@ A review of the whole project (Brendan: "have a peek through ... suggest improve
   Detroit) and 20, 38, 22 (from Detroit) now run Windsor - Detroit (Michigan Central Station, shared with the N.Y.C.), with the Windsor arrival / departure and Detroit times as printed.
   No. 634 starts at Windsor (Windsor Yard) and stays a Windsor train.
 - Counts: 678 lines, 4426 trips, 7835 stops, 65 agencies; check_gtfs 0 problems.
+
+## Version 213
+- Chicago: the Michigan Central trains for Central Station join the Illinois Central at the end of the MC main at Kensington (Brendan, 22 Nov 2026: 41 41 00.98 N, 87 36 44.62 W);
+  Kensington station there. The MC graph now counts IC track as its own (trackage rights); before, the router went round by the Lake Shore and the South Chicago branch.
+- The Gull (Brendan's Official Guide pages, April 25, 1948: Maine Central Table 2, page 92, and Boston & Maine Table 8; only the Gull from the B&M page): Maine Central, kind A, label
+  Maine Central, gold (#b8901c, the existing MEC token). on_mec_t002n.csv: No. 23 Boston (North Station) 9.30 p.m. - Exeter - Dover - Portland Union Station - by Lewiston (the Back Route) -
+  Waterville - Bangor - Vanceboro 7.45 a.m., daily; on_mec_t002s.csv: No. 8 Vanceboro 10.30 p.m. (dagger: daily except Sunday, Brendan; the column heads "runs daily") - Bangor - Waterville
+  - Augusta - Brunswick (the Lower Road) - Portland - Boston 7.45 a.m. Connections with CP Nos. 113 / 114 at Vanceboro. Oldtown 4.59 a.m.: a division sign or check mark (Brendan), as a
+  flag stop. Track: tools/mar_import_mec.py -> traces/maritimes/mec.geojson from the Mississippi Rails Maine, N.H. and Mass. maps (B&M Western Route, own bm; MEC Back Route, Lower Road,
+  Waterville - Bangor - Mattawamkeag, own mec); Union Station - Woodfords - Deering Jct. a DASHED estimate (not in the map). Portland Union Station at Brendan's point (separate from the
+  Grand Trunk station, CN_PORTLAND_ME); Vanceboro, Mattawamkeag, North Station shared with the CP's. Lewiston, Waterville, Bangor APPROXIMATE; B&M station miles estimated.
+- Counts: 680 lines, 4428 trips, 7848 stops, 66 agencies; check_gtfs 0 problems.

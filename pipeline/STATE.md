@@ -1,7 +1,7 @@
 # The Digital Model Railway — project state
 
 Read this first. It is meant to be enough to start a short, single-task chat without replaying the project's history.
-Last updated 22 November 2026 (Version 212). This file is the current state and the standing rules; the version-by-version history is in CHANGELOG.md.
+Last updated 22 November 2026 (Version 213). This file is the current state and the standing rules; the version-by-version history is in CHANGELOG.md.
 
 ## What this is
 
@@ -337,6 +337,7 @@ After an accepted build: `cp viz_data.json tools/.baseline_viz.json`.
 
 ## Recent versions (one line each; the detail is in CHANGELOG.md)
 
+- 213: the Gull (Maine Central / B&M Boston - Portland - Bangor - Vanceboro); MC trains join the IC at Kensington.
 - 212: CP Toronto - Windsor trains on to Detroit (Michigan Central Station).
 - 211: Niagara and International bridges, Tonawanda bypass, Chicago approaches on track (IC brown), N.Y.C. Table 53, the Adirondack Division (Montreal - Utica, Lake Placid).
 - 210: the Michigan Central Chicago - Detroit - Ontario - Buffalo and on to New York (N.Y.C. Tables 6, 7, 9, 11); Central Station and La Salle Street approaches dashed.
@@ -353,7 +354,6 @@ After an accepted build: `cp viz_data.json tools/.baseline_viz.json`.
 - 199: the Straits of Mackinac car ferry drawn as a train ferry; Arnold Transit St. Ignace - Mackinac Island boats (atc_build.py).
 - 198: the Duluth, South Shore & Atlantic and Mineral Range (Official Guide; drawn as CP, labelled DSS&A); Mackinac Straits car ferry; NP Ashland - Superior.
 - 197: the Washingtonian and the Montrealer through to New York (Penn Station) and Washington over the New Haven, Hell Gate and the Pennsylvania (Brendan's NEC2 track).
-- 191: CN / GTW Table 95: the Chicago trains through from London (International Limited, Inter-City Limited, La Salle, Ontario Limited) to Dearborn Station; No. 20 fixed to p.m.; GTW car ferry Muskegon - Milwaukee; Grand Rapids - Muskegon over the PRR (Tuscan red).
 - 190: Grand Trunk Western (CN, labelled GTW): Tables 146, 148, 149, 150, 152, 153 (Detroit - Port Huron, Detroit - Grand Rapids - Muskegon, Durand - Bay City, Jackson - Richmond, Durand - Greenville, Pontiac - Caseville); state / province tags hidden on the page.
 - 181: Detroit and Cleveland Navigation Co. (dcn_build.py): Detroit - Cleveland, Detroit - Buffalo, and the cruises to Mackinac, Chicago, Harbor Springs, Midland.
 - 180: ocean liners to the edge of the map's water, in their own step (ocean_build.py) and list heading; Island Connector; Fort Amherst and Denali cut at the edge.
