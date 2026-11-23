@@ -1,59 +1,140 @@
-# New York Central (Michigan Central, the Canada Southern line): Detroit - Windsor - St. Thomas - Welland - Fort Erie - Buffalo, the Ontario part (border to border). Source: Official Guide, April 25, 1948, New York Central Tables 6 (Chicago and Detroit to Niagara Falls and Buffalo) and 11 (the reverse) (Brendan, 1 Nov 2026; private scans og1948_cnq/nyc_*). EASTERN TIME.
-# Miles from Chicago as printed; the borders 285.0 (Detroit River Tunnel) and 515.0 (International Railway Bridge) estimated. Not entered: the TH&B trains printed in these tables (372, 374, 380, 382 / 371, 375, 379, 383: on_thb_t056), the motor buses Welland - Niagara Falls, The Detroiter (48 / 47, Pullman only, no Ontario times printed), and the trains that run only in Michigan. London - St. Thomas connections (the L&PS) in the notes.
-# Signs (Tables 6 and 11): * daily; dagger ex Sun; double dagger ex Sat; b, e, i, p, v, x, y, z: conditional stops (entered as flag stops); f flag; QQ Taylor: regular stop when schools are open (entered as flag); square: motor bus Welland - Niagara Falls (not entered). Border times estimated (Detroit River Tunnel; the International Railway Bridge to Black Rock; the Niagara River bridge to Suspension Bridge).
-#train col=No366 num=366 dir=down days="ex Sun" kind=motor note="Motor train, daily except Sunday: (Detroit 5.25 a.m.) Windsor 5.40 a.m. to St. Thomas 8.50 a.m. (London 9.46 by the L&PS)."
-#train col=No366B num=366 dir=down days="ex Sun" kind=motor note="Motor train, daily except Sunday: St. Thomas 2.30 p.m. (London 12.20 by the L&PS) to Welland 5.24 and Fort Erie 5.55 p.m. (Black Rock 6.15, Buffalo 6.40 p.m.)."
-#train col=M362 num=362 dir=down days="ex Sun" kind=mixed note="Mixed, daily except Sunday: Windsor 4.30 p.m. to St. Thomas 10.45 p.m."
-#train col=No44 num=44 dir=down days=daily kind=passenger note="Daily: (Chicago 8.45 a.m., Detroit 4.45 p.m.) Windsor 5.04 p.m. by St. Thomas (6.50 - 6.54) and Welland (8.31) to Fort Erie 8.56 p.m. (Black Rock 9.15, Buffalo 9.40 p.m.)."
-#train col=No8 num=8 dir=down days=daily kind=passenger name="The Wolverine" note="The Wolverine, daily: (Chicago 2.15 p.m., Detroit 8.30 p.m.) Windsor 8.45 p.m. by St. Thomas (10.27 - 10.31) to Black Rock 12.48 a.m., Buffalo 1.10 a.m."
-#train col=No364 num=364 dir=down days=daily kind=passenger note="Daily: (Detroit 9.00 p.m.) Windsor 9.15 p.m. by St. Thomas (11.23 - 11.28) and Welland (1.27) to Fort Erie 2.05 a.m. (Black Rock 2.28, Buffalo 2.50 a.m.)."
-#train col=No50 num=50 dir=down days=daily kind=passenger name="Empire State Express" note="Empire State Express (Detroit section), daily: (Detroit 8.20 a.m.) Windsor 8.37 a.m. by St. Thomas (10.23 - 10.27) and Welland (12.05) to Fort Erie 12.30 p.m. (Black Rock 12.40, Buffalo 1.06 p.m.); Welland - Niagara Falls by motor bus."
-#train col=No40 num=40 dir=down days=daily kind=passenger name="North Shore Limited" note="North Shore Limited, daily: Detroit 4.50 a.m. to Buffalo 9.30 a.m. by Fort Erie, no stops printed in Ontario (border times estimated)."
-#train col=No17 num=17 dir=up days=daily kind=passenger name="The Wolverine" note="The Wolverine, daily: (Buffalo 2.05 a.m., Black Rock 2.27) St. Thomas 4.30, Windsor 6.35 a.m. (Detroit 6.50 a.m., Chicago 11.15 a.m.). Stops only to discharge."
-#train col=No33 num=33 dir=up days=daily kind=passenger name="New England Wolverine" note="New England Wolverine, daily: (Buffalo 2.45 a.m., Black Rock 3.07) Fort Erie 3.17, St. Thomas 5.13 - 5.18, Windsor 7.15 a.m. (Detroit 7.30 a.m., Chicago 12.45 p.m.)."
-#train col=M361 num=361 dir=up days="ex Sun" kind=mixed note="Mixed, daily except Sunday: St. Thomas 7.00 a.m. to Windsor 12.15 p.m."
-#train col=No365 num=365 dir=up days="ex Sun" kind=motor note="Motor train, daily except Sunday: (Buffalo 5.35 a.m., Black Rock 5.59) Fort Erie 6.15 a.m. by Welland (6.45 - 6.53) to St. Thomas 9.50 a.m. (London 11.42 by the L&PS)."
-#train col=No365B num=365 dir=up days="ex Sun" kind=motor note="Motor train, daily except Sunday: (London 4.10 by the L&PS) St. Thomas 5.05 p.m. to Windsor 8.07 p.m. (Detroit 8.30 p.m.)."
-#train col=No35 num=35 dir=up days=daily kind=passenger note="Daily: (Buffalo 8.20 a.m., Black Rock 8.42) Fort Erie 8.59 a.m. by Welland (9.21) and St. Thomas (11.01 - 11.06) to Windsor 1.06 p.m. (Detroit 1.25 p.m., Chicago 4.30 p.m.)."
-#train col=No51 num=51 dir=up days=daily kind=passenger name="Empire State Express" note="Empire State Express (Detroit section), daily: (Buffalo 4.17 p.m., Black Rock 4.42) Fort Erie 4.54 p.m. by Welland (5.16) and St. Thomas (7.05 - 7.10) to Windsor 9.00 p.m. (Detroit 9.15 p.m.)."
-#train col=No39 num=39 dir=up days=daily kind=passenger name="North Shore Limited" note="North Shore Limited, daily: (Buffalo 9.55 p.m., Black Rock 10.17) St. Thomas 12.23 - 12.28, Windsor 2.24 a.m. (Detroit 2.40 a.m., Chicago 8.30 a.m.)."
-mile,station,principal,prov,tz,No366,No366B,M362,No44,No8,No364,No50,No40,No17,No33,M361,No365,No365B,No35,No51,No39
-285.0,"International Boundary (Detroit River Tunnel, to Detroit, Mich.)",0,ON,E,~lv 5.32a,,,~lv 4.52p,~lv 8.37p,~lv 9.07p,~lv 8.28a,~lv 4.58a,~ar 6.42a,~ar 7.22a,,,~ar 8.15p,~ar 1.14p,~ar 9.07p,~ar 2.31a
-286.3,Windsor,1,ON,E,5.40a,,lv 4.30p,5.04p,8.45p,9.15p,8.37a,,f6.35a,7.15a,ar 12.15p,,8.07p,1.06p,9.00p,2.24a
-296.2,Maidstone,0,ON,E,f5.52a,,4.46p,,,,,,,,11.55a,,f7.47p,,,
-300.7,Essex,1,ON,E,5.59a,,5.05p,,,f9.32p,,,,,11.45a,,7.40p,,,
-306.2,Woodslee,0,ON,E,f6.06a,,5.10p,,,,,,,,11.19a,,f7.32p,,,
-310.2,Ruscomb,0,ON,E,6.13a,,5.20p,,,,,,,,11.10a,,7.26p,,,
-315.2,Comber,1,ON,E,6.21a,,5.40p,,,f9.45p,,,,,11.00a,,7.18p,,,
-321.6,Tilbury,0,ON,E,6.31a,,6.35p,,,f9.53p,,,,,10.45a,,7.08p,,,
-328.7,Fletcher,0,ON,E,6.42a,,6.47p,,,,,,,,10.21a,,6.56p,,,
-332.7,Buxton,0,ON,E,f6.48a,,6.52p,,,,,,,,10.13a,,f6.48p,,,
-339.1,Charing Cross,0,ON,E,6.59a,,6.58p,,,,,,,,9.58a,,6.40p,,,
-341.4,Fargo,0,ON,E,7.03a,,7.25p,,,,,,,,9.50a,,6.35p,,,
-346.4,Mull,0,ON,E,7.11a,,7.32p,,,,,,,,9.31a,,6.27p,,,
-352.2,Ridgetown,1,ON,E,7.21a,,7.50p,,,f10.24p,f9.39a,,,,9.16a,,6.17p,,f7.56p,
-357.9,Highgate,0,ON,E,7.31a,,8.03p,,,,,,,,8.58a,,6.07p,,,
-360.0,Muirkirk,0,ON,E,7.35a,,8.07p,,,,,,,,8.46a,,6.03p,,,
-362.5,Taylor,0,ON,E,~f7.39a,,,,,,,,,,,,~f5.58p,,,
-366.0,Rodney,0,ON,E,7.45a,,8.30p,,,~f10.43p,,,,,8.30a,,5.52p,,,
-370.4,West Lorne,0,ON,E,7.54a,,8.45p,,,~f10.49p,,,,,8.06a,,5.45p,,,
-376.9,Dutton,0,ON,E,8.07a,,9.15p,,,~f10.58p,,,,,7.45a,,5.35p,,,
-382.9,Iona,0,ON,E,8.18a,,9.45p,,,,,,,,7.31a,,5.26p,,,
-386.8,Shedden,0,ON,E,8.26a,,9.50p,,,,,,,,7.22a,,5.21p,,,
-395.9,St. Thomas,1,ON,E,ar 8.50a,lv 2.30p,ar 10.45p,ar 6.50p / lv 6.54p,ar 10.27p / lv 10.31p,ar 11.23p / lv 11.28p,ar 10.23a / lv 10.27a,~6.25a,f4.30a,ar 5.13a / lv 5.18a,lv 7.00a,ar 9.50a,lv 5.05p,ar 11.01a / lv 11.06a,ar 7.05p / lv 7.10p,ar 12.23a / lv 12.28a
-406.6,Aylmer,0,ON,E,,2.45p,,,,f11.33p,,,,,,9.24a,,,,
-409.1,Springfield,0,ON,E,,2.49p,,,,f11.47p,,,,,,9.19a,,,,
-420.3,Tillsonburg,1,ON,E,,3.08p,,,,f12.01a,,,,,,9.01a,,,f6.38p,
-430.8,Hawtrey,0,ON,E,,f3.20p,,,,,,,,,,f8.45a,,,,
-432.1,La Salette,0,ON,E,,3.24p,,,,,,,,,,8.43a,,,,
-442.8,Waterford,1,ON,E,,3.50p,,,,~f12.28a,~f11.13a,,,,,8.27a,,f10.16a,f6.12p,
-455.5,Hagersville,0,ON,E,,4.15p,,,,f12.43a,,,,,,7.56a,,,,
-462.6,Lythmore,0,ON,E,,f4.23p,,,,,,,,,,f7.38a,,,,
-465.4,Cayuga,0,ON,E,,4.25p,,,,,,,,,,7.35a,,,,
-467.1,Edward,0,ON,E,,f4.34p,,,,,,,,,,f7.33a,,,,
-471.9,Canfield Junction,0,ON,E,,f4.41p,,,,,,,,,,f7.28a,,,,
-487.4,Perry,0,ON,E,,5.05p,,,,,,,,,,f7.05a,,,,
-496.8,Welland,1,ON,E,,5.24p,,f8.31p,,1.27a,12.05p,,,,,ar 6.45a / lv 6.53a,,9.21a,5.16p,
-506.8,Stevensville,0,ON,E,,5.41p,,,,,,,,,,6.29a,,,,
-514.1,Fort Erie,1,ON,E,,5.55p,,8.56p,,2.05a,12.30p,,,3.17a,,6.15a,,8.59a,4.54p,
-515.0,"International Boundary (Niagara River, to Black Rock, N.Y.)",0,ON,E,,~ar 6.02p,,~ar 9.03p,~ar 12.44a,~ar 2.15a,~ar 12.35p,~ar 9.08a,~lv 2.31a,~lv 3.11a,,~lv 6.05a,,~lv 8.50a,~lv 4.48p,~lv 10.21p
+# New York Central (Michigan Central and the main line to New York): Chicago (Central Station) - Detroit - Windsor - St. Thomas - Welland - Fort Erie - Black Rock - Buffalo (Central
+# Terminal) - Albany - New York (Grand Central). Sources: Official Guide, April 25, 1948: New York Central Tables 6 (Chicago and Detroit to Niagara Falls and Buffalo) and 11 (the reverse)
+# for the Michigan Central (Ontario part transcribed 1 Nov 2026; the U.S. parts on_nycfull_t006.csv / t011.csv, 22 Nov 2026); Tables 7 and 9 (Buffalo - New York) for the trains that
+# run through (on_nycfull_t007x.csv / t009x.csv). Brendan, 22 Nov 2026: "Can we map this out?". Chicago - Michigan City Central time, the rest Eastern, as printed.
+# Miles: from Chicago (Central Station) as printed to Fort Erie (514.1); Black Rock, Buffalo (Terrace Sta.) and Buffalo (Central Terminal) ESTIMATED along the track (printed 530.7, -, 535.2:
+# Black Rock's figure is impossible); east of Buffalo: Central Terminal + (Table 9's miles from New York, reversed).
+# Signs: as on_nycfull_t006 / t011 / t007x / t009x; conditional stops (b, e, h, i, p, q, r, t, v, x, y, z, n; Tables 7 / 9: T, G, Y, y) entered as flag stops, Tables 7 / 9's c, e, h, i as stops.
+# Not entered: the TH&B trains (on_thb_t056), the motor buses Welland - Niagara Falls, The Twilight Limited (on_mc_t006t, from La Salle Street) and No. 358 (on_mc_t006n, by Niagara Falls),
+# London - St. Thomas connections (the L&PS) in the notes. The Detroiter (48 / 47): no Buffalo time printed, estimated from Nos. 8 / 17 (~).
+#train col=No366 num=366 dir=down days="ex Sun" kind=motor note="Motor train: Detroit 5.25 a.m. - Windsor - St. Thomas 8.50 a.m. (London 9.46 by the L&PS)."
+#train col=No366B num=366 dir=down days="ex Sun" kind=motor note="Motor train: St. Thomas 2.30 p.m. (London 12.20 by the L&PS) - Welland - Fort Erie - Buffalo 6.40 p.m."
+#train col=M362 num=362 dir=down days="ex Sun" kind=mixed note="Mixed: Windsor 4.30 p.m. - St. Thomas 10.45 p.m."
+#train col=No346 num=346 dir=down days=daily kind=passenger note="Chicago 2.00 a.m. - Detroit 10.40 a.m., all stations."
+#train col=No44 num=44 dir=down days=daily kind=passenger name="New York Special" note="Chicago 8.45 a.m. - Detroit - Ontario - Buffalo - New York 6.40 a.m. (New York Special east of Buffalo)."
+#train col=No76 num=76 dir=down days=daily kind=passenger name="The Mercury"
+#train col=No48 num=48 dir=down days=daily kind=passenger name="The Detroiter" note="Pullman Cars only. Detroit 7.00 p.m. - New York 7.45 a.m., via Fort Erie; no Ontario or Buffalo time printed (Buffalo estimated)."
+#train col=No308 num=308 dir=down days=daily kind=passenger name="Advance Wolverine" note="Chicago 1.20 p.m. - Detroit 8.00 p.m."
+#train col=No8 num=8 dir=down days=daily kind=passenger name="The Wolverine" note="Chicago 2.15 p.m. - Detroit - Ontario - Buffalo - New York 9.20 a.m."
+#train col=No364 num=364 dir=down days=daily kind=passenger note="Detroit 9.00 p.m. - Buffalo 2.50 a.m."
+#train col=No360 num=360 dir=down days=daily kind=passenger note="Chicago 8.05 p.m. - Detroit 5.15 a.m. (Jackson 3.20 a.m. as printed)."
+#train col=No40 num=40 dir=down days=daily kind=passenger name="North Shore Limited" note="Chicago 10.20 p.m. - Detroit - (no Ontario stops; St. Thomas estimated) - Buffalo - New York 7.15 p.m."
+#train col=No342 num=342 dir=down days="Sun, Mon, Tue, Wed, Thu, Fri" kind=passenger note="Chicago 11.05 p.m. - Detroit 6.40 a.m."
+#train col=No348 num=348 dir=down days="Sat" kind=passenger note="Saturday only: Chicago 11.30 p.m. - Detroit 7.05 a.m."
+#train col=No316 num=316 dir=down days=daily kind=passenger name="Motor City Special" note="Pullman Cars only."
+#train col=No50 num=50 dir=down days=daily kind=passenger name="Empire State Express" note="Detroit 8.20 a.m. - Ontario - Buffalo - New York 9.45 p.m. (Welland - Niagara Falls by motor bus). Seats in Coaches and Parlor Cars assigned only upon purchase of tickets."
+#train col=No17 num=17 dir=up days=daily kind=passenger name="The Wolverine" note="New York 6.05 p.m. - Buffalo - Ontario - Detroit - Chicago 11.15 a.m."
+#train col=No33 num=33 dir=up days=daily kind=passenger name="New England Wolverine" note="(From Boston.) Buffalo 2.45 a.m. - Ontario - Detroit - Chicago 12.45 p.m."
+#train col=M361 num=361 dir=up days="ex Sun" kind=mixed note="Mixed: St. Thomas 7.00 a.m. - Windsor 12.15 p.m."
+#train col=No341 num=341 dir=up days="ex Sun" kind=passenger note="Detroit 8.45 a.m. - Chicago 4.15 p.m., all stations."
+#train col=No47 num=47 dir=up days=daily kind=passenger name="The Detroiter" note="Pullman Cars only. New York 7.00 p.m. - Detroit 8.00 a.m., via Fort Erie; no Buffalo or Ontario time printed (Buffalo estimated)."
+#train col=No75 num=75 dir=up days=daily kind=passenger name="The Mercury"
+#train col=No365 num=365 dir=up days="ex Sun" kind=motor note="Motor train: Buffalo 5.35 a.m. - Fort Erie - Welland - St. Thomas 9.50 a.m. (London 11.42 by the L&PS)."
+#train col=No365B num=365 dir=up days="ex Sun" kind=motor note="Motor train: (London 4.10 by the L&PS) St. Thomas 5.05 p.m. - Windsor - Detroit 8.30 p.m."
+#train col=No35 num=35 dir=up days=daily kind=passenger name="The Iroquois" note="New York 10.30 p.m. - Buffalo - Ontario - Detroit 1.25 p.m. (The Iroquois east of Buffalo)."
+#train col=No323 num=323 dir=up days=daily kind=passenger note="Detroit 2.30 p.m. - Chicago 8.00 p.m."
+#train col=No321 num=321 dir=up days="ex Sun" kind=passenger note="Detroit 4.35 p.m. - Jackson 6.03 p.m."
+#train col=No51 num=51 dir=up days=daily kind=passenger name="Empire State Express" note="New York 8.00 a.m. - Buffalo - Ontario - Detroit 9.15 p.m."
+#train col=No345 num=345 dir=up days="Sun, Mon, Tue, Wed, Thu, Fri" kind=passenger note="Detroit 11.15 p.m. - Chicago 5.55 a.m."
+#train col=No347 num=347 dir=up days="Sat" kind=passenger note="Saturday only: Detroit 11.59 p.m. - Chicago 7.20 a.m."
+#train col=No315 num=315 dir=up days=daily kind=passenger name="Motor City Special" note="Pullman Cars only."
+#train col=No39 num=39 dir=up days=daily kind=passenger name="North Shore Limited" note="New York 12 noon - Buffalo - Ontario - Detroit - Chicago 8.30 a.m."
+mile,station,principal,prov,tz,No366,No366B,M362,No346,No44,No76,No48,No308,No8,No364,No360,No40,No342,No348,No316,No50,No17,No33,M361,No341,No47,No75,No365,No365B,No35,No323,No321,No51,No345,No347,No315,No39
+0.0,"Chicago (Central Station), Ill.",1,IL,C,,,,lv 2.00a,lv 8.45a,lv 9.30a,,lv 1.20p,lv 2.15p,,lv 8.05p,lv 10.20p,lv 11.05p,lv 11.30p,lv 11.30p,,ar 11.15a,ar 12.45p,,ar 4.15p,,ar 4.30p,,,,ar 8.00p,,,ar 5.55a,ar 7.20a,ar 7.20a,ar 8.30a
+6.5,"Woodlawn (63d Street), Ill.",0,IL,C,,,,,8.57a,9.40a,,1.30p,2.25p,,8.15p,10.30p,11.17p,11.42p,11.42p,,11.05a,12.35p,,4.00p,,4.20p,,,,7.45p,,,5.38a,7.02a,7.02a,8.15a
+13.1,"Kensington, Ill.",0,IL,C,,,,,,,,,,,,,,,,,,,,f3.50p,,,,,,,,,,,,
+20.1,"Hammond, Ind.",0,IN,C,,,,2.31a,f9.18a,,,f1.50p,,,f8.36p,,11.37p,12.02a,,,,f12.11p,,3.37p,,,,,,7.24p,,,5.10a,6.30a,,f7.55a
+29.8,"Gary, Ind.",1,IN,C,,,,,9.29a,,,f2.02p,,,f8.50p,,f11.50p,f12.15a,,,,f11.58a,,3.10p,,,,,,7.05p,,,4.51a,6.10a,,f7.38a
+35.0,"East Gary, Ind.",0,IN,C,,,,,,,,,,,,,,,,,,,,3.02p,,,,,,,,,,,,
+44.2,"Porter, Ind.",0,IN,C,,,,,,,,,,,,,,,,,,,,2.50p,,,,,,,,,,,,
+56.0,"Michigan City, Ind.",1,IN,C,,,,3.19a,9.57a,,,f2.28p,,,f9.19p,,12.20a,12.45a,,,,f11.27a,,2.31p,,,,,,6.32p,,,4.10a,5.28a,,f7.05a
+65.9,"New Buffalo, Mich.",0,MI,E,,,,4.40a,,,,,,,,,,,,,,,,3.11p,,,,,,f7.17p,,,f4.55a,f6.13a,,
+73.1,"Three Oaks, Mich.",0,MI,E,,,,4.51a,,,,,,,,,,,,,,,,3.01p,,,,,,f7.07p,,,f4.45a,f6.02a,,
+78.8,"Galien, Mich.",0,MI,E,,,,5.03a,,,,,,,,,,,,,,,,2.51p,,,,,,,,,f4.36a,f5.51a,,
+86.3,"Buchanan, Mich.",0,MI,E,,,,5.19a,,,,,,,,,,,,,,,,2.41p,,,,,,6.52p,,,4.26a,5.39a,,
+92.9,"Niles, Mich.",1,MI,E,,,,5.42a,11.40a,12.10p,,4.11p,4.54p,,11.04p,1.06a,2.05a,2.30a,,,10.33a,11.49a,,2.29p,,3.44p,,,,6.40p,,,4.14a,5.23a,,7.22a
+105.3,"Dowagiac, Mich.",0,MI,E,,,,6.03a,11.57a,,,4.28p,,,f11.21p,,f2.23a,f2.48a,,,,11.30a,,2.08p,,,,,,6.21p,,,3.50a,4.58a,,
+116.5,"Decatur, Mich.",0,MI,E,,,,6.17a,,,,,,,f11.33p,,,,,,,,,1.36p,,,,,,f5.59p,,,,,,
+124.2,"Lawton, Mich.",0,MI,E,,,,6.39a,,,,,,,,,,,,,,,,1.20p,,,,,,5.49p,,,3.25a,4.33a,,
+128.4,"Mattawan, Mich.",0,MI,E,,,,6.45a,,,,,,,,,,,,,,,,1.05p,,,,,,,,,,,,
+141.5,"Kalamazoo, Mich.",1,MI,E,,,,7.07a,12.44p,12.58p,,5.05p,5.38p,,12.04a,1.56a,3.03a,3.28a,,,9.44a,10.52a,,12.55p,,2.56p,,,,5.24p,,,2.56a,4.08a,,6.12a
+145.3,"Comstock, Mich.",0,MI,E,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+150.3,"Galesburg, Mich.",0,MI,E,,,,7.12a,,,,,,,,,,,,,,,,12.38p,,,,,,,,,,,,
+154.7,"Augusta, Mich.",0,MI,E,,,,7.19a,,,,,,,,,,,,,,,,12.27p,,,,,,,,,,,,
+164.3,"Battle Creek, Mich.",1,MI,E,,,,7.35a,1.30p,1.23p,,5.35p,6.03p,,12.39a,,3.38a,4.03a,,,9.20a,10.25a,,12.12p,,2.32p,,,,4.54p,,,2.21a,3.28a,,5.37a
+172.1,"Ceresco, Mich.",0,MI,E,,,,,,,,,,,,,,,,,,,,11.50a,,,,,,,,,,,,
+177.4,"Marshall, Mich.",1,MI,E,,,,7.55a,1.48p,,,,,,12.51a,,f3.54a,f4.19a,,,,,,11.47a,,,,,,4.37p,,,2.01a,3.03a,,
+189.1,"Albion, Mich.",1,MI,E,,,,8.12a,2.14p,,,,,,1.07a,,f4.09a,f4.34a,,,,,,11.29a,,,,,,4.22p,,,1.45a,2.45a,,
+198.6,"Parma, Mich.",0,MI,E,,,,8.25a,,,,,,,,,,,,,,,,11.11a,,,,,,,,,,,,
+209.4,"Jackson, Mich.",1,MI,E,,,,8.50a,2.51p,2.09p,,6.35p,6.48p,,3.20a,3.10a,4.45a,5.05a,,,8.34a,9.25a,,10.56a,,1.47p,,,,4.00p,ar 6.03p,,1.20a,2.15a,,4.39a
+219.7,"Grass Lake, Mich.",0,MI,E,,,,9.05a,,,,,,,,,,,,,,,,10.31a,,,,,,,,,,,,
+230.8,"Chelsea, Mich.",0,MI,E,,,,9.20a,,,,,,,,,f5.13a,f5.33a,,,,,,10.17a,,,,,,,f5.35p,,f12.32a,f1.21a,,
+238.1,"Dexter, Mich.",0,MI,E,,,,9.30a,,,,,,,,,f5.23a,f5.43a,,,,,,10.03a,,,,,,,f5.26p,,f12.23a,f1.11a,,
+247.6,"Ann Arbor, Mich.",1,MI,E,,,,9.44a,3.31p,2.47p,,7.13p,7.26p,,4.17a,,5.41a,6.10a,f6.10a,,7.50a,8.46a,,9.48a,,1.10p,,,,3.17p,5.16p,,12.10a,12.57a,f12.57a,
+255.5,"Ypsilanti, Mich.",1,MI,E,,,,9.55a,3.44p,,,7.25p,,,4.30a,,5.58a,6.25a,,,,8.34a,,9.32a,,,,,,3.04p,5.07p,,11.55p,12.40a,,
+267.4,"Wayne, Mich.",0,MI,E,,,,10.00a,,,,,,,,,,,,,,,,9.15a,,,,,,,,,,,,
+274.4,"Dearborn, Mich.",0,MI,E,,,,10.24a,,,,,,,,,,,,,,,,9.01a,,,,,,,,,,,,
+283.5,"Detroit, Mich.",1,MI,E,lv 5.25a,,,ar 10.40a,ar 4.25p / lv 4.45p,ar 3.30p,lv 7.00p,ar 8.00p,ar 8.15p / lv 8.30p,lv 9.00p,ar 5.15a,ar 4.35a / lv 4.50a,ar 6.40a,ar 7.05a,ar 7.05a,lv 8.20a,ar 6.50a / lv 7.10a,ar 7.30a / lv 8.00a,,lv 8.45a,ar 8.00a,lv 12.30p,,ar 8.30p,ar 1.25p,lv 2.30p,lv 4.35p,ar 9.15p,lv 11.15p,lv 11.59p,lv 11.59p,ar 2.40a / lv 3.15a
+286.3,Windsor,1,ON,E,5.40a,,lv 4.30p,,5.04p,,,,8.45p,9.15p,,,,,,8.37a,f6.35a,7.15a,ar 12.15p,,,,,8.07p,1.06p,,,9.00p,,,,2.24a
+296.2,Maidstone,0,ON,E,f5.52a,,4.46p,,,,,,,,,,,,,,,,11.55a,,,,,f7.47p,,,,,,,,
+300.7,Essex,1,ON,E,5.59a,,5.05p,,,,,,,f9.32p,,,,,,,,,11.45a,,,,,7.40p,,,,,,,,
+306.2,Woodslee,0,ON,E,f6.06a,,5.10p,,,,,,,,,,,,,,,,11.19a,,,,,f7.32p,,,,,,,,
+310.2,Ruscomb,0,ON,E,6.13a,,5.20p,,,,,,,,,,,,,,,,11.10a,,,,,7.26p,,,,,,,,
+315.2,Comber,1,ON,E,6.21a,,5.40p,,,,,,,f9.45p,,,,,,,,,11.00a,,,,,7.18p,,,,,,,,
+321.6,Tilbury,0,ON,E,6.31a,,6.35p,,,,,,,f9.53p,,,,,,,,,10.45a,,,,,7.08p,,,,,,,,
+328.7,Fletcher,0,ON,E,6.42a,,6.47p,,,,,,,,,,,,,,,,10.21a,,,,,6.56p,,,,,,,,
+332.7,Buxton,0,ON,E,f6.48a,,6.52p,,,,,,,,,,,,,,,,10.13a,,,,,f6.48p,,,,,,,,
+339.1,Charing Cross,0,ON,E,6.59a,,6.58p,,,,,,,,,,,,,,,,9.58a,,,,,6.40p,,,,,,,,
+341.4,Fargo,0,ON,E,7.03a,,7.25p,,,,,,,,,,,,,,,,9.50a,,,,,6.35p,,,,,,,,
+346.4,Mull,0,ON,E,7.11a,,7.32p,,,,,,,,,,,,,,,,9.31a,,,,,6.27p,,,,,,,,
+352.2,Ridgetown,1,ON,E,7.21a,,7.50p,,,,,,,f10.24p,,,,,,f9.39a,,,9.16a,,,,,6.17p,,,,f7.56p,,,,
+357.9,Highgate,0,ON,E,7.31a,,8.03p,,,,,,,,,,,,,,,,8.58a,,,,,6.07p,,,,,,,,
+360.0,Muirkirk,0,ON,E,7.35a,,8.07p,,,,,,,,,,,,,,,,8.46a,,,,,6.03p,,,,,,,,
+362.5,Taylor,0,ON,E,~f7.39a,,,,,,,,,,,,,,,,,,,,,,,~f5.58p,,,,,,,,
+366.0,Rodney,0,ON,E,7.45a,,8.30p,,,,,,,~f10.43p,,,,,,,,,8.30a,,,,,5.52p,,,,,,,,
+370.4,West Lorne,0,ON,E,7.54a,,8.45p,,,,,,,~f10.49p,,,,,,,,,8.06a,,,,,5.45p,,,,,,,,
+376.9,Dutton,0,ON,E,8.07a,,9.15p,,,,,,,~f10.58p,,,,,,,,,7.45a,,,,,5.35p,,,,,,,,
+382.9,Iona,0,ON,E,8.18a,,9.45p,,,,,,,,,,,,,,,,7.31a,,,,,5.26p,,,,,,,,
+386.8,Shedden,0,ON,E,8.26a,,9.50p,,,,,,,,,,,,,,,,7.22a,,,,,5.21p,,,,,,,,
+395.9,St. Thomas,1,ON,E,ar 8.50a,lv 2.30p,ar 10.45p,,ar 6.50p / lv 6.54p,,,,ar 10.27p / lv 10.31p,ar 11.23p / lv 11.28p,,~6.25a,,,,ar 10.23a / lv 10.27a,f4.30a,ar 5.13a / lv 5.18a,lv 7.00a,,,,ar 9.50a,lv 5.05p,ar 11.01a / lv 11.06a,,,ar 7.05p / lv 7.10p,,,,ar 12.23a / lv 12.28a
+406.6,Aylmer,0,ON,E,,2.45p,,,,,,,,f11.33p,,,,,,,,,,,,,9.24a,,,,,,,,,
+409.1,Springfield,0,ON,E,,2.49p,,,,,,,,f11.47p,,,,,,,,,,,,,9.19a,,,,,,,,,
+420.3,Tillsonburg,1,ON,E,,3.08p,,,,,,,,f12.01a,,,,,,,,,,,,,9.01a,,,,,f6.38p,,,,
+430.8,Hawtrey,0,ON,E,,f3.20p,,,,,,,,,,,,,,,,,,,,,f8.45a,,,,,,,,,
+432.1,La Salette,0,ON,E,,3.24p,,,,,,,,,,,,,,,,,,,,,8.43a,,,,,,,,,
+442.8,Waterford,1,ON,E,,3.50p,,,,,,,,~f12.28a,,,,,,~f11.13a,,,,,,,8.27a,,f10.16a,,,f6.12p,,,,
+455.5,Hagersville,0,ON,E,,4.15p,,,,,,,,f12.43a,,,,,,,,,,,,,7.56a,,,,,,,,,
+462.6,Lythmore,0,ON,E,,f4.23p,,,,,,,,,,,,,,,,,,,,,f7.38a,,,,,,,,,
+465.4,Cayuga,0,ON,E,,4.25p,,,,,,,,,,,,,,,,,,,,,7.35a,,,,,,,,,
+467.1,Edward,0,ON,E,,f4.34p,,,,,,,,,,,,,,,,,,,,,f7.33a,,,,,,,,,
+471.9,Canfield Junction,0,ON,E,,f4.41p,,,,,,,,,,,,,,,,,,,,,f7.28a,,,,,,,,,
+487.4,Perry,0,ON,E,,5.05p,,,,,,,,,,,,,,,,,,,,,f7.05a,,,,,,,,,
+496.8,Welland,1,ON,E,,5.24p,,,f8.31p,,,,,1.27a,,,,,,12.05p,,,,,,,ar 6.45a / lv 6.53a,,9.21a,,,5.16p,,,,
+506.8,Stevensville,0,ON,E,,5.41p,,,,,,,,,,,,,,,,,,,,,6.29a,,,,,,,,,
+514.1,Fort Erie,1,ON,E,,5.55p,,,8.56p,,,,,2.05a,,,,,,12.30p,,3.17a,,,,,6.15a,,8.59a,,,4.54p,,,,
+516.7,"Black Rock, N.Y.",1,NY,E,,6.15p,,,9.15p,,,,12.48a,2.28a,,,,,,12.40p,2.27a,3.07a,,,,,5.59a,,8.42a,,,4.42p,,,,10.17p
+520.1,"Buffalo (Terrace Sta.), N.Y.",1,NY,E,,6.27p,,,f9.28p,,,,,,,,,,,12.53p,,,,,,,5.45a,,,,,4.28p,,,,
+523.6,"Buffalo (Central Terminal), N.Y.",1,NY,E,,ar 6.40p,,,ar 9.40p / lv 10.10p,,~11.40p,,ar 1.10a / lv 1.22a,ar 2.50a,,ar 9.30a / lv 9.55a,,,,ar 1.06p / lv 1.30p,ar 1.55a / lv 2.05a,lv 2.45a,,,~3.05a,,lv 5.35a,,ar 7.40a / lv 8.20a,,,ar 4.00p / lv 4.17p,,,,ar 9.35p / lv 9.55p
+557.1,"Batavia, N.Y.",1,NY,E,,,,,10.52p,,,,,,,10.36a,,,,,,,,,,,,,7.04a,,,,,,,8.58p
+589.6,"Rochester, N.Y.",1,NY,E,,,,,ar 11.28p / lv 11.33p,,,,ar 2.26a / lv 2.26a,,,ar 11.09a / lv 11.14a,,,,ar 2.37p / lv 2.40p,ar 12.46a / lv 12.46a,,,,lv 1.45a,,,,ar 6.15a / lv 6.25a,,,ar 2.49p / lv 2.52p,,,,ar 8.17p / lv 8.21p
+619.4,"Newark, N.Y.",0,NY,E,,,,,,,,,,,,11.58a,,,,,,,,,,,,,,,,,,,,7.38p
+624.9,"Lyons, N.Y.",0,NY,E,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,7.26p
+669.9,"Syracuse, N.Y.",1,NY,E,,,,,ar 1.00a / lv 1.05a,,,,ar 3.45a / lv 3.45a,,,ar 12.51p / lv 12.56p,,,,ar 4.00p / lv 4.05p,ar 11.25p / lv 11.25p,,,,lv 12.20a,,,,ar 4.40a / lv 4.50a,,,ar 1.22p / lv 1.28p,,,,ar 6.35p / lv 6.40p
+695.8,"Oneida, N.Y.",0,NY,E,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,6.04p
+708.9,"Rome, N.Y.",0,NY,E,,,,,,,,,,,,1.34p,,,,,10.44p,,,,,,,,,,,,,,,5.50p
+722.7,"Utica, N.Y.",1,NY,E,,,,,ar 1.57a / lv 2.02a,,,,,,,ar 1.52p / lv 1.59p,,,,ar 4.53p / lv 4.57p,ar 10.30p / lv 10.30p,,,,lv 11.24p,,,,ar 3.31a / lv 3.39a,,,ar 12.30p / lv 12.32p,,,,ar 5.29p / lv 5.33p
+736.7,"Herkimer, N.Y.",0,NY,E,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,5.12p
+743.8,"Little Falls, N.Y.",0,NY,E,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,5.01p
+774.0,"Fonda, N.Y.",0,NY,E,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,4.29p
+784.5,"Amsterdam, N.Y.",0,NY,E,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,4.13p
+800.4,"Schenectady, N.Y.",1,NY,E,,,,,,,,,,,,3.18p,,,,6.08p,9.12p,,,,,,,,,,,11.13a,,,,3.54p
+817.3,"Albany, N.Y.",1,NY,E,,,,,ar 3.40a / lv 3.50a,,,,ar 6.15a / lv 6.20a,,,ar 3.55p / lv 4.10p,,,,ar 6.42p / lv 6.50p,lv 8.45p,,,,lv 9.40p,,,,lv 1.45a,,,ar 10.42a / lv 10.42a,,,,ar 3.15p / lv 3.25p
+845.8,"Hudson, N.Y.",0,NY,E,,,,,,,,,6.48a,,,4.45p,,,,,,,,,,,,,,,,,,,,2.39p
+871.1,"Rhinecliff, N.Y.",0,NY,E,,,,,,,,,7.14a,,,,,,,,,,,,,,,,,,,,,,,2.11p
+886.7,"Poughkeepsie, N.Y.",1,NY,E,,,,,ar 4.56a / lv 4.56a,,,,ar 7.33a / lv 7.33a,,,ar 5.24p / lv 5.24p,,,,,lv 7.39p,,,,,,,,,,,,,,,ar 1.52p / lv 1.52p
+901.2,"Beacon, N.Y.",0,NY,E,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1.33p
+918.9,"Peekskill, N.Y.",0,NY,E,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1.11p
+926.8,"Harmon, N.Y.",1,NY,E,,,,,5.42a,,6.48a,,8.22a,,,6.18p,,,,8.48p,6.51p,,,,7.49p,,,,11.17p,,,8.49a,,,,12.50p
+945.0,"Yonkers, N.Y.",0,NY,E,,,,,,,,,,,,,,,,,,,,,f7.24p,,,,,,,,,,,12.26p
+955.3,"New York (125th Street), N.Y.",0,NY,E,,,,,6.28a,,,,,,,7.02p,,,,9.31p,,,,,7.10p,,,,,,,8.10a,,,,12.10p
+959.5,"New York (Grand Central), N.Y.",1,NY,E,,,,,ar 6.40a,,ar 7.45a,,ar 9.20a,,,ar 7.15p,,,,ar 9.45p,lv 6.05p,,,,lv 7.00p,,,,lv 10.30p,,,lv 8.00a,,,,lv 12.00p

@@ -1,0 +1,37 @@
+# New York Central (Michigan Central): The Twilight Limited, Nos. 30 / 31, Chicago (La Salle Street Station) - Englewood - Niles - Kalamazoo - Battle Creek - Jackson - Ann Arbor -
+# Detroit. Source: Official Guide, April 25, 1948, New York Central Tables 6 and 11 (on_nycfull_t006 / t011, 22 Nov 2026). La Salle Street and Englewood print no miles: estimated (0.0, 7.0);
+# the rest as printed from Central Station. The run La Salle Street - Englewood - the Lake Shore & Michigan Southern to Porter is a dashed estimate (no trace). Central time to Englewood.
+#train col=No30 num=30 dir=down days=daily kind=passenger name="The Twilight Limited" note="Chicago (La Salle St.) 3.45 p.m. - Detroit 9.45 p.m."
+#train col=No31 num=31 dir=up days=daily kind=passenger name="The Twilight Limited" note="Detroit 3.45 p.m. - Chicago (La Salle St.) 7.45 p.m."
+mile,station,principal,prov,tz,No30,No31
+0.0,"Chicago (La Salle Street Station), Ill.",1,IL,C,lv 3.45p,ar 7.45p
+7.0,"Englewood, Ill.",1,IL,C,f3.59p,f7.30p
+44.2,"Porter, Ind.",0,IN,C,,
+56.0,"Michigan City, Ind.",1,IN,C,,
+65.9,"New Buffalo, Mich.",0,MI,E,,
+73.1,"Three Oaks, Mich.",0,MI,E,,
+78.8,"Galien, Mich.",0,MI,E,,
+86.3,"Buchanan, Mich.",0,MI,E,,
+92.9,"Niles, Mich.",1,MI,E,6.20p,7.08p
+105.3,"Dowagiac, Mich.",0,MI,E,,
+116.5,"Decatur, Mich.",0,MI,E,,
+124.2,"Lawton, Mich.",0,MI,E,,
+128.4,"Mattawan, Mich.",0,MI,E,,
+141.5,"Kalamazoo, Mich.",1,MI,E,7.08p,6.16p
+145.3,"Comstock, Mich.",0,MI,E,,
+150.3,"Galesburg, Mich.",0,MI,E,,
+154.7,"Augusta, Mich.",0,MI,E,,
+164.3,"Battle Creek, Mich.",1,MI,E,7.33p,5.51p
+172.1,"Ceresco, Mich.",0,MI,E,,
+177.4,"Marshall, Mich.",1,MI,E,,
+189.1,"Albion, Mich.",1,MI,E,,
+198.6,"Parma, Mich.",0,MI,E,,
+209.4,"Jackson, Mich.",1,MI,E,8.20p,5.05p
+219.7,"Grass Lake, Mich.",0,MI,E,,
+230.8,"Chelsea, Mich.",0,MI,E,,
+238.1,"Dexter, Mich.",0,MI,E,,
+247.6,"Ann Arbor, Mich.",1,MI,E,8.58p,4.26p
+255.5,"Ypsilanti, Mich.",1,MI,E,,
+267.4,"Wayne, Mich.",0,MI,E,,
+274.4,"Dearborn, Mich.",0,MI,E,,
+283.5,"Detroit, Mich.",1,MI,E,ar 9.45p,lv 3.45p
