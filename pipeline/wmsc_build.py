@@ -10,7 +10,7 @@
   Wed., Fri.     4.00 p.m.               11.00 p.m.               9.00 a.m.              2.00 p.m.
   Saturdays      8.00 a.m.               3.00 p.m.                1.00 a.m.              6.00 a.m.
                  11.00 p.m.              5.45 a.m. (Sunday)       5.00 p.m.              10.00 p.m.
-Docks (Brendan's page): Milwaukee, 601 E. Erie Street; Muskegon, "The Mart". Both points APPROXIMATE (Claude). Colour (#1f6f78) is Claude's pick. Water from the basemap tiles, as in
+Docks (Brendan's page): Milwaukee, 601 E. Erie Street; Muskegon, "The Mart". Both at Brendan's points (23 Nov 2026). Colour (#1f6f78) is Claude's pick. Water from the basemap tiles, as in
 gtwf_build.py (whose code this copies). Run after gtwf_build."""
 import csv, json, math, os, re
 from shapely.geometry import MultiPolygon, Polygon
@@ -64,8 +64,8 @@ if sea._U.geom_type == 'Polygon': sea._U = MultiPolygon([sea._U])
 print('water polygons', len(_polys))
 
 
-P = {'MUS': ('Muskegon (The Mart)', (-86.2545, 43.2360), 'Muskegon, the Milwaukee Clipper dock at "The Mart" on Muskegon Lake (approximate)', 1),
-     'MIL': ('Milwaukee (Clipper dock)', (-87.9015, 43.0290), 'Milwaukee, the Milwaukee Clipper dock, 601 E. Erie Street (approximate)', 1)}
+P = {'MUS': ('Muskegon (The Mart)', (-86.260168, 43.236307), 'Muskegon, the Milwaukee Clipper dock at "The Mart" on Muskegon Lake (Brendan\'s point)', 1),
+     'MIL': ('Milwaukee (Clipper dock)', (-87.902716, 43.026590), 'Milwaukee, the Milwaukee Clipper dock, 601 E. Erie Street (Brendan\'s point)', 1)}
 def gid(k): return 'PORT_' + re.sub(r'\W+', '_', P[k][0].upper()).strip('_')
 LINES = {'wmsc_w': ['MUS', 'MIL'], 'wmsc_e': ['MIL', 'MUS']}
 _CF = os.path.join(HERE, 'wmsc_legs.json'); CACHE = json.load(open(_CF)) if os.path.exists(_CF) else {}

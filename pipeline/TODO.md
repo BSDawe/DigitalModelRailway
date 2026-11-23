@@ -25,7 +25,7 @@ Last updated 17 November 2026 (Version 180).
   - Fredericton: fixed (Brendan).
 - [ ] READY TO BUILD (V215; Brendan, 23 Nov 2026): S.S. Milwaukee Clipper (Wisconsin & Michigan Steamship Co., "The Clipper Line"), Milwaukee - Muskegon, from the company's
   1948 page (Official Guide p. 1221; summer service May 28 - Sept. 12). New step wmsc_build.py (after gtwf_build): 6 sailings eastbound, 5 westbound across the week, one ship
-  (the times chain); 5 h 45 min - 6 h 5 min across; lane about 97 mi. Docks APPROXIMATE (Claude): Milwaukee, 601 E. Erie Street; Muskegon, "The Mart": points wanted.
+  (the times chain); 5 h 45 min - 6 h 5 min across; lane about 97 mi. Docks at Brendan's points (23 Nov 2026): Milwaukee, 601 E. Erie Street; Muskegon, "The Mart".
   Colour #1f6f78 (dark #7cc4cc) is Claude's pick.
 - [ ] READY TO BUILD (V215; Brendan, 23 Nov 2026): two Great Lakes excursion lines from their 1948 Official Guide pages, new step glk_build.py (after wmsc_build). Both print
   DAYLIGHT time: shown an hour earlier (standard, as the railways), then on the Pacific clock.
