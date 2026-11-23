@@ -66,6 +66,9 @@ if len(sys.argv) > 2:
             feats.append(F(('Illinois Central: ' if own == 'ic' else 'New York Central: ') + nm, pts, 'Mississippi Rails NYC_Chicago.kmz (Tony Howe and David Price), supplied by Brendan',
                            own=own, constituent='Illinois Central' if own == 'ic' else 'New York Central'))
     assert got == set(CHI), set(CHI) - got
+# Kensington (Brendan, 22 Nov 2026): the Michigan Central trains for Central Station join the IC at the end of the MC main, 41 41 00.98 N, 87 36 44.62 W
+feats.append(F('Michigan Central - Illinois Central junction at Kensington (Brendan\'s point)', [(-87.6122, 41.6804), (-87.612394, 41.683606)],
+               "Brendan, 22 Nov 2026: the MC joins the IC at the end of the MC main line at Kensington (41 41 00.98 N, 87 36 44.62 W)", group='brendan'))
 ICT = json.load(open(os.path.join(HERE, 'traces', 'lv', 'brendan_ic_terminal.json')))   # Brendan, 22 Nov 2026: the IC terminal track into Central Station
 feats.append(F(ICT['name'] + ' (Brendan)', [tuple(q) for q in ICT['coords']], ICT['source'], group='brendan', own='ic', constituent='Illinois Central'))
 # ties between the pieces' ends (150 m - 1 km apart: the KMZ draws the pieces separately)

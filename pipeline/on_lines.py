@@ -191,7 +191,7 @@ def _graph(me):
             if ow == 'qrl' and me not in ('qrl', 'cn'): continue                # the QRL&P: its own cars, and the CN by trackage rights (Brendan, 5 Nov 2026)
             if me == 'qrl' and ow != 'qrl': continue                     # the M&SC's own tracks (Victoria Bridge, St. Lambert): not mixed with the steam railways' (Brendan, 5 Nov 2026)
             if box and not any(box[0] <= p[0] <= box[1] and box[2] <= p[1] <= box[3] for p in c): continue
-            mine = ow == me or (me == 'cn' and ow == 'qrl') or (me == 'cpcn' and ow in ('cp', 'cn')) or (me in ('nyco', 'mc') and ow == 'nyc') or (me in ('thb', 'cpthb') and ow in ('cn', 'cp', 'thb', 'nyc'))
+            mine = ow == me or (me == 'cn' and ow == 'qrl') or (me == 'cpcn' and ow in ('cp', 'cn')) or (me in ('nyco', 'mc') and ow == 'nyc') or (me == 'mc' and ow == 'ic') or (me in ('thb', 'cpthb') and ow in ('cn', 'cp', 'thb', 'nyc'))
             add(ab_lines._xy(c), f['properties'].get('cost', 1.0) if mine else 2.5, 'x' if f['properties'].get('net') else 't', 'est' if f['properties'].get('est') else None if ow == me else ow)   # 'est': an estimated straight link, drawn broken like a straight estimate (Brendan, 9 Nov 2026: except trivially short ones or ones he asked for)   # 'net' ('x'): tied only at its loose ends, and nothing ties onto it along its length (the Windsor ferry lead beside the main line)   # 'cost': a link the trains must take (cheaper than the track beside it)
     return lambda: _make_graph(feed, tie_end=150, tie_loose=60)
 for _r, _o in OWN.items(): ab_lines.EXT_GRAPH['sk:' + _r] = _graph(_o)
