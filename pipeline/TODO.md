@@ -28,6 +28,9 @@ Last updated 17 November 2026 (Version 180).
   Central, Chicago & Western Indiana, Lehigh Valley, Chicago & North Western, Barre & Chelsea, Grand River / Lake Erie & Northern and others with their own colour.
   Brendan's spec (23 Nov 2026): a list you can collapse, sorted by trains per day; it need not regenerate every build (Claude refreshes it by hand / a one-off script
   when railways are added). Subsidiaries are not listed separately (drawn in the parent's colour: E&N, DAR, QC, CV, GTW, Soo etc.); Maine Central IS listed (not a subsidiary).
+  Interurban subsidiaries (CP electric: Grand River / Lake Erie & Northern; CN electric: Montreal & Southern Counties, NS&T) are not listed separately either. Instead each
+  railway's row shows its locomotive-hauled trains and its motor trains (electric and diesel multiple units, rail motor cars: "motor trains") apart, e.g. trains per day split
+  into the two.
 - [ ] Seattle - Portland pool: the GN / NP / UP split of the trains is from the August 1952 Official Guide (V209); confirm for 1948 (Official Guide car-service lists).
 
 ## CP Maritimes (started 10 Nov 2026)
