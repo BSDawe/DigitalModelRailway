@@ -11,6 +11,9 @@ Last updated 17 November 2026 (Version 180).
 - [ ] CN Table 116 (Longlac - Fort William, Nos. 79 / 80): the Toronto section may be a connection with Nos. 3 / 4 at Longlac rather than through cars (Brendan not certain). Matters for chaining. (23 Oct)
 
 ## Fixes queued (Brendan: "don't fix yet"; ask before the next rebuild whether to include them)
+- [ ] Portland, Maine: the CN station (CN_PORTLAND_ME, now "Portland (CN)") should read "Portland (Grand Trunk)" (Brendan, 22 Nov 2026).
+- [ ] The Gull as one train (Brendan, 22 Nov 2026): CP Nos. 113 / 114 (Saint John - Vanceboro, on_cp_t012.csv) and MEC / B&M Nos. 23 / 8 (Vanceboro - Boston, on_mec_t002n / s) are one
+  train, assigned to the Maine Central (drawn and labelled MEC throughout, Saint John - Boston; CPR track east of Vanceboro). Numbers change at Vanceboro (113 -> 8, 23 -> 114).
 - [ ] Station owners, joint and union stations (V208 takes the owner from the track under the station): check each "Union Station" / union depot by hand (Toronto Terminals
   Railway CN + CPR; Ottawa Union; St. Paul Union Depot; Troy Union RR NYC + D&H + B&M; Spokane, Seattle, Tacoma Union; Washington Union; the C&WI's Dearborn...).
   "Union Station" is sometimes the name of a station one railway owned (Brendan).
