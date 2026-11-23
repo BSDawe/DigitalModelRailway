@@ -5,8 +5,6 @@ Claude adds items as they come up. When one is answered or done, it moves to "Do
 Last updated 17 November 2026 (Version 180).
 
 ## Decisions for Brendan
-- [ ] Fredericton Union Station (CN): Brendan's item, 10 Nov 2026. To be taken up; CN's Fredericton is now the Intercolonial station (V161). (V162)
-- [ ] Norton (CP Table 16, Norton - Chipman mixed): did the CP trains use the CN station? Entered for now at the CN Norton stop (Claude's reading). (V159)
 - [ ] Unnumbered connecting trains: branch sections printed in a parent train's column take the parent's number (e.g. on_cn_t126m / d / p / c / g). Through cars or separate connecting trains? No number, or "connection to No. 41"? (26 Oct) Brendan: much may settle as the branch tables come in.
 - [ ] CN Table 116 (Longlac - Fort William, Nos. 79 / 80): the Toronto section may be a connection with Nos. 3 / 4 at Longlac rather than through cars (Brendan not certain). Matters for chaining. (23 Oct)
 
@@ -18,12 +16,14 @@ Last updated 17 November 2026 (Version 180).
     to the D&H by the Green Island wye leg, Watervliet, Albany Union Station, then the Maiden Lane crossing and the Hudson line (via Watervliet, force Watervliet - Troy);
   - no modelled train uses the northerly crossing at Albany (Livingston Avenue position): the importer's automatic ties there are left out;
   - checked: ondh001 / 001a / 001n / 001t, onmc006*, onrut001* all on track.
-- [ ] Station owners, joint and union stations (V208 takes the owner from the track under the station): check each "Union Station" / union depot by hand (Toronto Terminals
-  Railway CN + CPR; Ottawa Union; St. Paul Union Depot; Troy Union RR NYC + D&H + B&M; Spokane, Seattle, Tacoma Union; Washington Union; the C&WI's Dearborn...).
-  "Union Station" is sometimes the name of a station one railway owned (Brendan).
-  Saint John Union Station (CN_SAINT_JOHN, Brendan 22 Nov 2026): owner by track CPR; CN and CPR joint?
+- [ ] READY TO BUILD (V215; Brendan, 23 Nov 2026): station owners and Norton. Done in source, not built (tick off the old items when built):
+  - Norton, N.B.: the CN station, used by the CPR (CP Table 16), at Brendan's point 45.636956, -65.695899 (CN and CP files). Brendan: the point is unclear enough that no
+    mileage is to be remeasured from it.
+  - Union stations (station_names.py OWNER_FIX / OWNER_DESC): Toronto, Toronto Terminals Railway (CN and CPR jointly); Ottawa Union, CN (CPR tracks run through); St. Paul Union
+    Depot Company (nine railways); Troy Union Railroad (NYC 50 %, D&H 25 %, B&M 25 %); Spokane and Seattle, Union Pacific (Milwaukee a tenant); Tacoma, NP (GN and UP tenants);
+    Washington Terminal Company (PRR and B&O, half each); Dearborn, C&WI (a union terminal railroad); Saint John, CN (CPR a tenant).
+  - Fredericton: fixed (Brendan).
 - [ ] Seattle - Portland pool: the GN / NP / UP split of the trains is from the August 1952 Official Guide (V209); confirm for 1948 (Official Guide car-service lists).
-- [ ] Fredericton: Brendan to fix; the CPR station (York Street, CP_FREDERICTON) is CPR-owned but named Union Station.
 
 ## CP Maritimes (started 10 Nov 2026)
 - [ ] DAR readings (V154): No. 33 (Windsor - Kentville, from No. 4) and No. 4 (Truro - Windsor) have no sign: entered daily except Sunday. No. 3 (34-3) entered Saturday only like No. 34. Boat days at Evangeline Wharf: No. 98 Tue., Thu., Sat. (the Boston boat in); No. 95 Tue., Thu. (the boat out; no No. 95 on Sundays); No. 99 leaving Halifax Mon., Wed., Fri. (Brendan: to the wharf on boat days only). Wharf times estimated.

@@ -362,7 +362,7 @@ SHARED = {('onr', 'toronto union'): 'TORONTO_UNION', ('oncn', 'toronto union'): 
           ('ontir', 'gananoque junction'): 'CN_GANANOQUE_JUNCTION',
           ('onmcrp', 'maccan'): 'CN_MACCAN', ('oncrc', 'springhill junction'): 'CN_SPRINGHILL_JUNCTION',
           ('oncp', 'saint john'): 'CN_SAINT_JOHN', ('oncp', 'westfield beach'): 'CN_WESTFIELD_BEACH',   # Saint John Union Station; Westfield Beach on the CP, used by the CN Valley trains
-          ('oncp', 'norton'): 'CN_NORTON',                                 # the Norton - Chipman trains at the CN station (Claude's reading; TO CHECK)                               # the MCR&P at the CN station (Brendan, 9 Nov 2026)   # the TIR at the CN station (over the CN from Thousand Islands Jct.; Brendan)
+          ('oncp', 'norton'): 'CN_NORTON',                                 # the Norton - Chipman trains at the CN station (Brendan, 23 Nov 2026: a CN station the CPR used; 45.636956, -65.695899)                               # the MCR&P at the CN station (Brendan, 9 Nov 2026)   # the TIR at the CN station (over the CN from Thousand Islands Jct.; Brendan)
           ('oncn', 'don'): 'CP_DON',                                       # Don (Queen St. East): one station, CN Table 122 and CP Table 50
           ('onthb', 'toronto union'): 'TORONTO_UNION', ('oncpthb', 'toronto union'): 'TORONTO_UNION', ('onthb', 'toronto'): 'TORONTO_UNION', ('oncpthb', 'toronto'): 'TORONTO_UNION',
           ('onthb', 'welland'): 'NYC_WELLAND', ('onthb', 'fort erie'): 'NYC_FORT_ERIE', ('onthb', 'international boundary'): 'NYC_INTERNATIONAL_BOUNDARY_NIAGARA_RIVER_TO_BLACK_ROCK_N_Y',   # TH&B trains at the NYC (Michigan Central) stations: one stop each (Brendan, 4 Nov 2026: two Wellands on top of each other)

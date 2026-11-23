@@ -76,7 +76,20 @@ def cpr(s):    # the Canadian Pacific's period abbreviation
     return re.sub(r'\bCP\b(?!_)', 'CPR', s)
 def tagless(n): return TAG.sub('', n)
 def base(n): return tagless(n).split(' (')[0].strip()
-OWNER_FIX = {'MEC_BANGOR_ME': 'MEC', 'MEC_LAWRENCE_MASS': 'B&M', 'MEC_HAVERHILL_MASS': 'B&M', 'NYC_CHICAGO_CENTRAL_ILL': 'IC'}   # Illinois Central property, the Michigan Central by trackage rights (Brendan, 22 Nov 2026); its approach is a dashed estimate
+OWNER_FIX = {'MEC_BANGOR_ME': 'MEC', 'MEC_LAWRENCE_MASS': 'B&M', 'MEC_HAVERHILL_MASS': 'B&M', 'NYC_CHICAGO_CENTRAL_ILL': 'IC',
+             # Brendan, 23 Nov 2026: owners of the union stations
+             'CN_SAINT_JOHN': 'CN', 'OTTAWA_UNION': 'CN', 'WA_SPOKANE_UNION_STATION': 'UP', 'WA_SEATTLE_UNION_STATION': 'UP', 'WA_TACOMA_UNION_STATION': 'NP'}
+# the owner as the station note gives it (Brendan, 23 Nov 2026), where it is a joint company or the tenants are worth naming; the "also served by" list follows as usual
+OWNER_DESC = {'TORONTO_UNION': 'Toronto Terminals Railway station (CN and CPR jointly)',
+              'OTTAWA_UNION': 'Canadian National station (CPR tracks run through it)',
+              'CP_ST_PAUL': 'St. Paul Union Depot Company station (a joint terminal of nine railways)',
+              'DH_TROY_N_Y': 'Troy Union Railroad station (New York Central 50%, Delaware & Hudson 25%, Boston & Maine 25%)',
+              'WA_SPOKANE_UNION_STATION': 'Union Pacific station (the Milwaukee Road a tenant)',
+              'WA_SEATTLE_UNION_STATION': 'Union Pacific station (the Milwaukee Road a tenant)',
+              'WA_TACOMA_UNION_STATION': 'Northern Pacific station (Great Northern and Union Pacific tenants)',
+              'CN_WASHINGTON_UNION_D_C': 'Washington Terminal Company station (Pennsylvania Railroad and Baltimore & Ohio, half each)',
+              'CN_CHICAGO_DEARBORN_ILL': 'Chicago & Western Indiana station (a union terminal railroad)',
+              'CN_SAINT_JOHN': 'Canadian National station (the CPR a tenant)'}   # Illinois Central property, the Michigan Central by trackage rights (Brendan, 22 Nov 2026); its approach is a dashed estimate
 def owner_at(L, chain):
     for s in L.get('segments', []):
         if s['a'] - 1 <= chain <= s['b'] + 1 and s.get('owner') not in (None, 'none'): return s['owner']
@@ -149,8 +162,9 @@ def apply(viz, gt):
             if d['owner'] and s.get('gid') not in water and not s.get('gid', '').startswith('PORT_'):
                 on = OWNER_NAME.get(d['owner'], d['owner']); others = [x for x in d['served'] if x != d['owner']]
                 old = s.get('note') or ''
+                if s.get('gid') in OWNER_DESC and old.startswith(OWNER_DESC[s['gid']]): old = re.sub(r"^(; also served by [^;.]*)?[;.,]?\s*", '', old[len(OWNER_DESC[s['gid']]):])
                 old = re.sub(r"^(Canadian National|Canadian Pacific|Ontario Northland|Delaware & Hudson|New York Central|Rutland|Soo Line|Great Northern|Northern Pacific|[A-Z][\w&.' -]{0,40}) station[;.,]?\s*", '', old)   # the default "<railway> station"
-                s['note'] = f"{on} station" + (f"; also served by {', '.join(others)}" if others else '') + (f". {old}" if old else '')
+                s['note'] = OWNER_DESC.get(s.get('gid'), f"{on} station") + (f"; also served by {', '.join(others)}" if others else '') + (f". {old}" if old else '')
     for s in viz.get('stations', []):                    # the Chilliwack line's base data (B.C. Electric): the Vancouver terminal is Carrall Street
         if s.get('id') == 'S00': s.update(name='Carrall Street, Vancouver', zname='Carrall Street', city='Vancouver')
         else: s.setdefault('zname', s['name']); s.setdefault('city', s['name'])
@@ -167,11 +181,13 @@ def apply(viz, gt):
                 if d['owner'] and len(r) > 4 and not r[0].startswith('PORT_') and r[0] not in water:
                     on = OWNER_NAME.get(d['owner'], d['owner']); others = [OWNER_NAME.get(x, x) for x in d.get('served', []) if x != d['owner']]
                     rest = r[4]
+                    if r[0] in OWNER_DESC and rest.startswith(OWNER_DESC[r[0]]):   # a rebuild: the description from the last run
+                        rest = re.sub(r"^(; also served by [^;.]*)?[;.,]?\s*", '', rest[len(OWNER_DESC[r[0]]):])
                     while True:                              # drop the old "<railway> station" / "<railway> trains" lead-ins
                         m = re.match(r"^[A-Z][\w&.',() -]{0,60}:? (station|trains)(; also served by [^;.]*)?[;.,]?\s*", rest)
                         if not m: break
                         rest = rest[m.end():]
-                    r[4] = f"{on} station" + (f"; also served by {', '.join(others)}" if others else '') + (f"; {rest}" if rest else '')
+                    r[4] = OWNER_DESC.get(r[0], f"{on} station") + (f"; also served by {', '.join(others)}" if others else '') + (f"; {rest}" if rest else '')
             b = io.StringIO(); csv.writer(b, lineterminator='\n').writerow(r); outr.append(b.getvalue())
         gt['stops.txt'] = outr
     return n
