@@ -23,6 +23,10 @@ Last updated 17 November 2026 (Version 180).
     Depot Company (nine railways); Troy Union Railroad (NYC 50 %, D&H 25 %, B&M 25 %); Spokane and Seattle, Union Pacific (Milwaukee a tenant); Tacoma, NP (GN and UP tenants);
     Washington Terminal Company (PRR and B&O, half each); Dearborn, C&WI (a union terminal railroad); Saint John, CN (CPR a tenant).
   - Fredericton: fixed (Brendan).
+- [ ] READY TO BUILD (V215; Brendan, 23 Nov 2026): S.S. Milwaukee Clipper (Wisconsin & Michigan Steamship Co., "The Clipper Line"), Milwaukee - Muskegon, from the company's
+  1948 page (Official Guide p. 1221; summer service May 28 - Sept. 12). New step wmsc_build.py (after gtwf_build): 6 sailings eastbound, 5 westbound across the week, one ship
+  (the times chain); 5 h 45 min - 6 h 5 min across; lane about 97 mi. Docks APPROXIMATE (Claude): Milwaukee, 601 E. Erie Street; Muskegon, "The Mart": points wanted.
+  Colour #1f6f78 (dark #7cc4cc) is Claude's pick.
 - [ ] Railway colour guide (Brendan, 23 Nov 2026: "has the railway colour guide stopped updating?"). Yes: the header legend in page_template.html is hand-written and was last
   extended about 8 Nov (Quebec Railway, Light & Power). Missing railways drawn since: Rutland, Maine Central, Boston & Maine, New Haven, Pennsylvania, Baltimore & Ohio, Illinois
   Central, Chicago & Western Indiana, Lehigh Valley, Chicago & North Western, Barre & Chelsea, Grand River / Lake Erie & Northern and others with their own colour.
