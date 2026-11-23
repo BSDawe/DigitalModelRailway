@@ -1,0 +1,88 @@
+# New York Central (Michigan Central) Table 11, Buffalo, Niagara Falls and Detroit to (Central Station) Chicago, as printed: the U.S. parts (Buffalo - Black Rock - Fort Erie;
+# Niagara Falls, N.Y. - Suspension Bridge - Welland; Detroit - Chicago) with Fort Erie, Welland, Windsor as anchors. The Ontario rows (Welland - Windsor) and these trains' Canadian
+# runs are in on_mc_t006.csv (built). NOT BUILT. Source: Official Guide, April 25, 1948, Table 11 (Brendan's scans, 22 Nov 2026; private repo scans/og1948_mc/t11_*.png).
+# Rows in the printed order (Buffalo first; miles from Chicago). Chicago - Michigan City Central time, the rest Eastern time, as printed. Transcribed by Claude per TIMETABLE_READING.md.
+# Signs: * daily; † daily except Sunday; ‡ daily except Saturday; ¶ daily except Monday; § Sunday only; b stops on signal to leave passengers from Buffalo and beyond; f stops on signal
+# to receive or discharge passengers; i stops only to discharge passengers; k Saturday only; n stops on signal to receive passengers for Hamilton and Toronto; q stops on signal to leave
+# passengers from points beyond Detroit; s stops Sunday; t stops on signal to leave passengers from Detroit and beyond; v stops on signal to discharge passengers from Kalamazoo and
+# beyond and on signal to receive passengers for Chicago; x stops on signal to leave passengers from Kalamazoo and beyond; y stops on signal to take passengers for Chicago; z stops
+# regularly, but only to receive passengers; QQ makes regular stop only when schools are open; ‡‡ by connecting train; (double dagger variant) stops on signal to discharge passengers
+# from east of St. Thomas; ☐ motor bus between Niagara Falls and Welland (baggage checked to or from Suspension Bridge and Niagara Falls, N.Y., handled via Buffalo); + coupon stations.
+# Layout: columns are reused below Welland and Windsor: the Motor Bus column (second) carries train 321 from Windsor (number printed on the Windsor row) and the ☐ bus Niagara Falls -
+# Welland above; the 383 column carries 315 (Motor City Special) from Windsor. 371, 375, 379, 383 are TH&B trains (Buffalo - Welland, on to Hamilton; on_mc_t006 notes). The first
+# Motor Bus column (BusA): Niagara Falls, Ont. 11.35 a.m. - Welland 12.15 p.m. "Via Fort Erie" printed in the Niagara section for 17, 47, 365, 39.
+# UNSURE: No. 341 Marshall 11.47 - Ceresco 11.50 a.m. (5.3 mi in 3 min: as printed); Black Rock mileage 530.7 (as Table 6: about 2 mi from Fort Erie, misprint);
+# No. 17 Black Rock sign (z?) and time 2.27 (the 2 faint); No. 347 Battle Creek 3.28 (a mark before it: f?); No. 47 The Detroiter: Buffalo printed "*" with no time,
+# arrives Detroit 8.00 a.m.; No. 321 ends at Jackson 6.03 p.m. (P M below it); No. 39 at Niagara Falls, N.Y. 8.12 p.m. by connecting train.
+#train col=No17 num=17 dir=up days=daily kind=passenger name="The Wolverine"
+#train col=No33 num=33 dir=up days=daily kind=passenger name="New England Wolverine"
+#train col=No341 num=341 dir=up days="ex Sun" kind=passenger note="Detroit 8.45 a.m. - Chicago 4.15 p.m., all stations."
+#train col=No47 num=47 dir=up days=daily kind=passenger name="The Detroiter" note="Pullman Cars only. Via Fort Erie."
+#train col=No371 num=371 dir=up days=daily kind=passenger note="TH&B: Buffalo - Welland."
+#train col=No365 num=365 dir=up days="ex Sun" kind=motor note="Motor Train (Buffalo - St. Thomas - Windsor - Detroit; Canadian part in on_mc_t006)."
+#train col=No75 num=75 dir=up days=daily kind=passenger name="The Mercury"
+#train col=No35 num=35 dir=up days=daily kind=passenger note="Buffalo 8.20 a.m. - Detroit 1.25 p.m.; bus from Niagara Falls, N.Y. to Welland."
+#train col=BusA num="" dir=up days=daily kind=bus note="Motor Bus: Niagara Falls, Ont. 11.35 a.m. - Welland 12.15 p.m."
+#train col=No375 num=375 dir=up days=daily kind=passenger note="TH&B: Buffalo - Welland."
+#train col=No323 num=323 dir=up days=daily kind=passenger
+#train col=No31 num=31 dir=up days=daily kind=passenger name="The Twilight Limited" note="To Chicago (La Salle St. Sta.)."
+#train col=No321 num=321 dir=up days="ex Sun" kind=passenger note="Detroit 4.35 p.m. - Jackson 6.03 p.m. (number printed on the Windsor row of the Motor Bus column, which above carries the ☐ bus Niagara Falls, N.Y. 2.00 p.m. - Welland 3.00 p.m.)."
+#train col=No379 num=379 dir=up days=daily kind=passenger note="TH&B: Buffalo - Welland."
+#train col=No51 num=51 dir=up days=daily kind=passenger name="Empire State Express" note="All seats in Coaches and Parlor Cars are assigned only upon purchase of tickets."
+#train col=No345 num=345 dir=up days="ex Sat" kind=passenger
+#train col=No347 num=347 dir=up days="Sat" kind=passenger note="k: Saturday only."
+#train col=No383 num=383 dir=up days=daily kind=passenger note="TH&B: Buffalo - Welland."
+#train col=No315 num=315 dir=up days=daily kind=passenger name="Motor City Special" note="Pullman Cars only (in the 383 column below Windsor)."
+#train col=No39 num=39 dir=up days=daily kind=passenger name="North Shore Limited" note="Will handle baggage only from Buffalo for Chicago and points beyond."
+mile,station,principal,prov,tz,No17,No33,No341,No47,No371,No365,No75,No35,BusA,No375,No323,No31,No321,No379,No51,No345,No347,No383,No315,No39
+535.2,Buffalo (Cent. Term.),1,NY,E,lv 2.05a[*],lv 2.45a[*],,lv [*] (no time printed),lv 5.05a[*],lv 5.35a[†],,lv 8.20a[*],,lv 8.45a[*],,,,lv 2.05p[*],lv 4.17p[*],,,lv 5.30p[*],,lv 9.55p[*]
+,Buffalo (Terrace Sta.),1,NY,E,-,-,,-,-,5.45a,,-,,8.56a,,,,2.16p,4.28p,,,5.41p,,-
+530.7,Black Rock,1,NY,E,2.27a[z?],3.07a,,-,5.27a,5.59a,,8.42a,,9.09a,,,,2.29p,4.42p,,,5.55p,,10.17p
+514.1,Fort Erie,1,ON,E,-,3.17a,,-,5.38a,6.15a,,8.59a,,9.31a,,,,2.42p,4.54p,,,6.10p,,-
+506.8,Stevensville,0,ON,E,-,-,,-,-,6.29a,,-,,[b][n],,,,-,-,,,[n],,-
+496.8,"Welland (arrive, from Fort Erie)",1,ON,E,-,-,,-,ar 6.05a,ar 6.45a,,ar 9.21a,,ar 9.55a,,,,ar 3.05p,ar 5.16p,,,ar 6.40p,,-
+512.9,"Niagara Falls, N.Y.",1,NY,E,Via Fort Erie,,,Via Fort Erie,,Via Fort Erie,,lv 8.00a[☐],,,,,lv 2.00p[☐],,lv 4.10p[☐],,,,,"lv 8.12p[‡‡] (by connecting train), Via Ft. Erie"
+511.2,Suspension Bridge,1,NY,E,,,,,,,,8.05a[☐],,,,,2.05p[☐],,4.15p[☐],,,,,
+510.5,"Niagara Falls, Ont.",1,ON,E,,,,,,,,8.20a[☐],lv 11.35a[*],,,,2.20p[☐],,4.30p[☐],,,,,
+509.3,Victoria Park,0,ON,E,,,,,,,,,,,,,,,,,,,,
+508.2,Falls View,0,ON,E,,,,,,,,,,,,,,,,,,,,
+496.8,"Welland (arrive, from Niagara Falls)",1,ON,E,,,,,,,,ar 9.00a[☐],ar 12.15p,,,,ar 3.00p[☐],,ar 5.10p[☐],,,,,
+496.8,Welland (leave; Welland - Windsor in on_mc_t006.csv),1,ON,E,,,,,,lv 6.53a,,lv 9.21a,,,,,,,lv 5.16p,,,,,
+286.3,Windsor,1,ON,E,6.35a[i],7.15a,,-,,8.07p,,1.06p,,,,,,,9.00p,,,,(heading),2.24a
+283.5,Detroit,1,MI,E,ar 6.50a / lv 7.10a,ar 7.30a / lv 8.00a,lv 8.45a[†],ar 8.00a,,ar 8.30p,lv 12.30p[*],ar 1.25p,,,lv 2.30p[*],lv 3.45p[*],lv 4.35p[†],,ar 9.15p,lv 11.15p[‡],lv 11.59p[k],,lv 11.59p[*],ar 2.40a / lv 3.15a
+274.4,Dearborn,0,MI,E,-,-,9.01a,,,,-,,,,-,-,-,,,-,-,,-,-
+267.4,Wayne,0,MI,E,-,-,9.15a,,,,-,,,,-,-,-,,,-,-,,-,-
+255.5,Ypsilanti,1,MI,E,-,8.34a,9.32a,,,,-,,,,3.04p,-,5.07p,,,11.55p,12.40a,,-,-
+247.6,Ann Arbor,1,MI,E,7.50a,8.46a,9.48a,,,,1.10p,,,,3.17p,4.26p,5.16p,,,12.10a,12.57a,,12.57a[y],-
+238.1,Dexter,0,MI,E,-,-,10.03a,,,,-,,,,-,-,5.26p[t],,,12.23a[t],1.11a[t],,-,-
+230.8,Chelsea,0,MI,E,-,-,10.17a,,,,-,,,,-,-,5.35p[t],,,12.32a[t],1.21a[t],,-,-
+219.7,Grass Lake,0,MI,E,-,-,10.31a,,,,-,,,,-,-,-,,,-,-,,-,-
+209.4,Jackson,1,MI,E,8.34a,9.25a,10.56a,,,,1.47p,,,,4.00p,5.05p,ar 6.03p,,,1.20a,2.15a,,-,4.39a
+198.6,Parma,0,MI,E,-,-,11.11a,,,,-,,,,-,-,,,,-,-,,-,-
+189.1,Albion,1,MI,E,-,[t][y],11.29a,,,,-,,,,4.22p,-,,,,1.45a,2.45a,,-,-
+177.4,Marshall,1,MI,E,-,[t][y],11.47a,,,,-,,,,4.37p,-,,,,2.01a,3.03a,,-,-
+172.1,Ceresco,0,MI,E,-,-,11.50a,,,,-,,,,-,-,,,,-,-,,-,-
+164.3,Battle Creek,1,MI,E,9.20a,10.25a,12.12p,,,,2.32p,,,,4.54p,5.51p,,,,2.21a,3.28a?,,-,5.37a
+154.7,Augusta,0,MI,E,-,-,12.27p,,,,-,,,,-,-,,,,-,-,,-,-
+150.3,Galesburg,0,MI,E,-,-,12.38p,,,,-,,,,-,-,,,,-,-,,-,-
+145.3,Comstock,0,MI,E,-,-,-,,,,-,,,,-,-,,,,-,-,,-,-
+141.5,Kalamazoo,1,MI,E,9.44a,10.52a,12.55p,,,,2.56p,,,,5.24p,6.16p,,,,2.56a,4.08a,,-,6.12a
+128.4,Mattawan,0,MI,E,-,-,1.05p,,,,-,,,,-,-,,,,-,-,,-,-
+124.2,Lawton,0,MI,E,-,-,1.20p,,,,-,,,,5.49p,-,,,,3.25a,4.33a,,-,-
+116.5,Decatur,0,MI,E,-,-,1.36p,,,,-,,,,f5.59p,-,,,,-,-,,-,-
+105.3,Dowagiac,0,MI,E,-,11.30a,2.08p,,,,-,,,,6.21p,-,,,,3.50a,4.58a,,-,[q][y]
+92.9,Niles,1,MI,E,10.33a,11.49a,2.29p,,,,3.44p,,,,6.40p,7.08p,,,,4.14a,5.23a,,-,7.22a
+86.3,Buchanan,0,MI,E,-,-,2.41p,,,,-,,,,6.52p,-,,,,4.26a,5.39a,,-,-
+78.8,Galien,0,MI,E,-,-,2.51p,,,,-,,,,-,-,,,,4.36a[x],5.51a[x],,-,-
+73.1,Three Oaks,0,MI,E,-,-,3.01p,,,,-,,,,f7.07p,-,,,,4.45a[v],6.02a[v],,-,-
+65.9,New Buffalo (East. time),0,MI,E,-,-,3.11p,,,,-,,,,7.17p[i],-,,,,4.55a[x],6.13a[x],,-,-
+56.0,Michigan City (Central time),1,IN,C,-,f11.27a,2.31p,,,,-,,,,6.32p,-,,,,4.10a,5.28a,,-,7.05a[q]
+,Englewood,0,IL,C,,,,,,,,,,,,7.30p[i],,,,,,,,
+,Chicago (La Salle St. Sta.),1,IL,C,,,,,,,,,,,,ar 7.45p,,,,,,,,
+44.2,Porter,0,IN,C,-,-,2.50p,,,,-,,,,-,,,,,-,-,,-,-
+35.0,East Gary,0,IN,C,-,-,3.02p,,,,-,,,,-,,,,,-,-,,-,-
+29.8,Gary,1,IN,C,-,f11.58a,3.10p,,,,-,,,,7.05p,,,,,4.51a,6.10a,,-,7.38a[q]
+20.1,Hammond,0,IN,C,-,f12.11p,3.37p,,,,-,,,,7.24p,,,,,5.10a,6.30a,,-,7.55a[q]
+13.1,Kensington,0,IL,C,-,-,3.50p[i],,,,-,,,,-,,,,,-,-,,-,-
+6.5,Woodlawn (63d Street),0,IL,C,11.05a,12.35p,4.00p,,,,4.20p,,,,7.45p,,,,,5.38a,7.02a,,7.02a,8.15a
+0.0,Chicago (Cent. Sta.) (Mich. Ave. and Roosevelt Rd.),1,IL,C,ar 11.15a,ar 12.45p,ar 4.15p,,,,ar 4.30p,,,,ar 8.00p,,,,,ar 5.55a,ar 7.20a,,ar 7.20a,ar 8.30a

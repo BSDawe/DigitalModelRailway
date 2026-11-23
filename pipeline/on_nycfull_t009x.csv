@@ -1,0 +1,39 @@
+# New York Central Table 9, New York, Albany, Utica, Syracuse and Rochester to Buffalo and Niagara Falls (Official Guide, April 25, 1948; Brendan's scans 22 Nov 2026, private repo
+# scans/og1948_mc/t09_*.png): ONLY the Michigan Central trains that cross Ontario (Brendan, 22 Nov 2026): 17 The Wolverine, 35 The Iroquois, 39 North Shore Limited, 47 The Detroiter,
+# 51 Empire State Express. Their Ontario runs: on_mc_t006.csv; Buffalo - Detroit - Chicago: on_nycfull_t011.csv. Only rows where one of them has a time are entered. Miles as printed.
+# NOT BUILT. Eastern time. Signs: * daily; † daily except Sunday; ‡ daily except Saturday; ¶ daily except Monday; § Sunday only; c stops regularly to receive passengers, also to
+# discharge passengers from Harmon and New York; h stops regularly, but only to receive passengers; i stops only to discharge passengers; k Saturday only; y stops on signal to receive
+# passengers for Detroit and beyond. Transcribed by Claude per TIMETABLE_READING.md.
+# UNSURE: No. 17 Poughkeepsie 7.39 p.m.: a sign before it (‡ or t?), no arrival; No. 47 The Detroiter: no Buffalo time printed (Rochester 1.45 a.m., Detroit 8.00 a.m. by Table 11);
+# No. 35 The Iroquois "carries coach passengers to St. Lawrence Division points only" (the note may concern the coaches only).
+#train col=No17 num=17 dir=up days=daily kind=passenger name="The Wolverine" links="same: No. 17, Table 11 (Buffalo lv 2.05 a.m.)"
+#train col=No35 num=35 dir=up days=daily kind=passenger name="The Iroquois" note="Carries coach passengers to St. Lawrence Division points only." links="same: No. 35, Table 11 (Buffalo lv 8.20 a.m.)"
+#train col=No39 num=39 dir=up days=daily kind=passenger name="North Shore Limited" links="same: No. 39, Table 11 (Buffalo lv 9.55 p.m.)"
+#train col=No47 num=47 dir=up days=daily kind=passenger name="The Detroiter" note="Pullman Cars only." links="same: No. 47, Table 11"
+#train col=No51 num=51 dir=up days=daily kind=passenger name="Empire State Express" note="Seats in Coaches and Parlor Cars are assigned only upon purchase of tickets." links="same: No. 51, Table 11 (Buffalo lv 4.17 p.m.)"
+mile,station,principal,prov,tz,No17,No35,No39,No47,No51
+0.0,New York (Grand Central Terminal),1,NY,E,lv 6.05p[*],lv 10.30p[*],lv 12.00n[*],lv 7.00p[*],lv 8.00a[*]
+4.2,125th Street,1,NY,E,-,-,12.10p[h],7.10p[h],8.10a[h]
+14.5,Yonkers,1,NY,E,-,-,12.26p[h],7.24p[y],-
+32.7,Harmon,1,NY,E,6.51p[h],11.17p[h],12.50p[h],7.49p[h],8.49a[h]
+40.6,Peekskill,1,NY,E,-,-,1.11p,-,-
+58.3,Beacon,1,NY,E,-,-,1.33p,-,-
+72.8,Poughkeepsie,1,NY,E,lv 7.39p[?],-,ar 1.52p / lv 1.52p,-,-
+88.4,Rhinecliff,1,NY,E,-,-,2.11p,-,-
+113.7,Hudson,1,NY,E,-,-,2.39p,-,-
+142.2,Albany,1,NY,E,lv 8.45p[h],lv 1.45a[h],ar 3.15p / lv 3.25p,lv 9.40p[h],ar 10.42a / lv 10.42a
+159.1,Schenectady,1,NY,E,9.12p,-,3.54p,-,11.13a[c]
+175.0,Amsterdam,1,NY,E,-,-,4.13p,-,-
+185.5,Fonda (Fultonville),1,NY,E,-,-,4.29p,-,-
+215.7,Little Falls,1,NY,E,-,-,5.01p,-,-
+222.8,Herkimer (Mohawk-Ilion),1,NY,E,-,-,5.12p,-,-
+236.8,Utica,1,NY,E,ar 10.30p / lv 10.30p,ar 3.31a / lv 3.39a,ar 5.29p / lv 5.33p,lv 11.24p[h],ar 12.30p / lv 12.32p
+250.6,Rome,1,NY,E,10.44p,-,5.50p,-,-
+263.7,Oneida,1,NY,E,-,-,6.04p,-,-
+289.6,Syracuse,1,NY,E,ar 11.25p / lv 11.25p,ar 4.40a / lv 4.50a,ar 6.35p / lv 6.40p,lv 12.20a[h],ar 1.22p / lv 1.28p
+334.6,Lyons,1,NY,E,-,-,7.26p,-,-
+340.1,Newark,1,NY,E,-,-,7.38p,-,-
+369.9,Rochester,1,NY,E,ar 12.46a / lv 12.46a,ar 6.15a / lv 6.25a,ar 8.17p / lv 8.21p,lv 1.45a[h],ar 2.49p / lv 2.52p
+402.4,Batavia,1,NY,E,-,7.04a,8.58p,-,-
+435.9,Buffalo (Cent. Term.),1,NY,E,ar 1.55a,ar 7.40a,ar 9.35p,(no time printed),ar 4.00p
+461.0,Niagara Falls,1,NY,E,,,,,ar 5.28p

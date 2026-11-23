@@ -222,7 +222,11 @@ Each runs to an International Boundary point (time estimated) or to the last Can
   (Chicago - Detroit, all 16 trains incl. The Mercury, Twilight Ltd., Advance Wolverine, Motor City Special; Welland - Niagara Falls, N.Y.; Welland - Fort Erie - Buffalo incl. TH&B
   380 / 382 / 372 / 374). Needs Michigan Central track Chicago - Detroit and into Buffalo. Found: Nos. 48 The Detroiter and 40 run Detroit - Buffalo via Canada with no Ontario stop
   (48 not on the map yet); No. 358 runs on from Niagara Falls, N.Y. to Buffalo. Checks from the scan: 364 Aylmer p11.33, M362 Fargo 7.25, 366 Lythmore f4.23 are as printed
-  (Aylmer probably a misprint). Its UNSURE list is in the file's head. Table 11 (westbound) not supplied.
+  (Aylmer probably a misprint). Its UNSURE list is in the file's head.
+  Also transcribed, NOT BUILT (Brendan's scans of 22 Nov 2026): Table 11 (westbound, U.S. parts in full: on_nycfull_t011.csv; 20 columns incl. 341, 321, 323, 345 / 347, 315 Motor
+  City Special, 31 Twilight Limited, 75 The Mercury, TH&B 371 / 375 / 379 / 383); and from NYC Tables 7 and 9 only the through-Canada trains (Brendan: "through-Canada trains only"):
+  on_nycfull_t007x.csv (8, 40, 44, 48, 50 Buffalo - New York) and on_nycfull_t009x.csv (17, 35 The Iroquois, 39, 47, 51 New York - Buffalo). No. 47 / 48 The Detroiter print no
+  Buffalo time (Detroit - New York via Ontario, Pullman only; neither is on the map yet).
   Chicago stations (Brendan, 22 Nov 2026): Central Station, Illinois Central property, MC trains by trackage rights over the IC: 41 52 05 N, 87 37 19 W (41.868056, -87.621944);
   IC colours brown and orange (a new railway colour; shades to pick). La Salle Street Station, joint NYC and Rock Island: 41 52 35.71 N, 87 37 56.06 W (41.876586, -87.632239).
 - [ ] Niagara River, Suspension Bridge: CN Hamilton - Niagara Falls, N.Y. 86, 90 / 93 The Maple Leaf (see above), 91, 95, 102, 107, 186; MC 358 The Canadian - The Niagara.

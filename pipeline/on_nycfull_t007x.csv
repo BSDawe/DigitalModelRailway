@@ -1,0 +1,31 @@
+# New York Central Table 7, Niagara Falls, Buffalo, Rochester, Syracuse, Utica and Albany to New York (Official Guide, April 25, 1948; Brendan's scans 22 Nov 2026, private repo
+# scans/og1948_mc/t07_*.png): ONLY the Michigan Central trains that cross Ontario (Brendan, 22 Nov 2026: "through-Canada trains only"): 8 The Wolverine, 40 North Shore Limited,
+# 44 New York Special, 48 The Detroiter, 50 Empire State Express. Their Ontario runs: on_mc_t006.csv; Chicago / Detroit - Buffalo: on_nycfull_t006.csv. Only the rows where one of
+# them has a time are entered (the rest print "- -" for all five). Table 7 prints no miles: miles are Table 9's (from New York). NOT BUILT. Eastern time.
+# Signs: * daily; † daily except Sunday; § Sunday only; e stops regularly to discharge passengers, also to receive for Harmon and New York; f flag; i stops only to discharge passengers;
+# G stops on signal to discharge passengers from Utica and beyond; Y the same from Albany and beyond. Transcribed by Claude per TIMETABLE_READING.md.
+# UNSURE: No. 48 The Detroiter (Pullman Cars only): Buffalo printed "*" with no time; Harmon 6.48, New York 7.45 a.m. No. 50 leaves Niagara Falls 12.01 p.m. (the MC No. 50 from
+# Detroit reaches Buffalo 1.06 p.m.; Niagara Falls passengers come by this column). No. 44 Niagara Falls 8.12 p.m.
+#train col=No8 num=8 dir=down days=daily kind=passenger name="The Wolverine" links="same: No. 8, Table 6 (Chicago - Detroit - Ontario - Buffalo)"
+#train col=No40 num=40 dir=down days=daily kind=passenger name="North Shore Limited" links="same: No. 40, Table 6"
+#train col=No44 num=44 dir=down days=daily kind=passenger name="New York Special" links="same: No. 44, Table 6 (Buffalo ar 9.40 p.m.)"
+#train col=No48 num=48 dir=down days=daily kind=passenger name="The Detroiter" note="Pullman Cars only." links="same: No. 48, Table 6"
+#train col=No50 num=50 dir=down days=daily kind=passenger name="Empire State Express" note="Seats in Coaches and Parlor Cars are assigned only upon purchase of tickets." links="same: No. 50, Table 6 (Buffalo ar 1.06 p.m.)"
+mile,station,principal,prov,tz,No8,No40,No44,No48,No50
+461.0,Niagara Falls,1,NY,E,,,lv 8.12p[*],,lv 12.01p[*]
+435.9,Buffalo (Cent. Term.),1,NY,E,lv 1.22a[*],lv 9.55a[*],lv 10.10p[*],lv [*] (no time printed),lv 1.30p[*]
+402.4,Batavia,1,NY,E,-,10.36a,10.52p,-,-
+369.9,Rochester,1,NY,E,ar 2.26a / lv 2.26a,ar 11.09a / lv 11.14a,ar 11.28p / lv 11.33p,-,ar 2.37p / lv 2.40p
+340.1,Newark,1,NY,E,-,11.58a,-,-,-
+289.6,Syracuse,1,NY,E,ar 3.45a / lv 3.45a,ar 12.51p / lv 12.56p,ar 1.00a / lv 1.05a,-,ar 4.00p / lv 4.05p
+250.6,Rome,1,NY,E,-,1.34p,-,-,-
+236.8,Utica,1,NY,E,-,ar 1.52p / lv 1.59p,ar 1.57a / lv 2.02a,-,ar 4.53p / lv 4.57p
+159.1,Schenectady,1,NY,E,-,3.18p,-,-,6.08p[e]
+142.2,Albany,1,NY,E,ar 6.15a / lv 6.20a,ar 3.55p / lv 4.10p,ar 3.40a / lv 3.50a,-,ar 6.42p / lv 6.50p
+113.7,Hudson,1,NY,E,6.48a,4.45p,-,-,-
+88.4,Rhinecliff,1,NY,E,7.14a,-,-,-,-
+72.8,Poughkeepsie,1,NY,E,ar 7.33a / lv 7.33a,ar 5.24p / lv 5.24p,ar 4.56a / lv 4.56a,-,-
+32.7,Harmon,1,NY,E,8.22a[i],6.18p[i],5.42a[i],6.48a[i],8.48p[i]
+14.5,Yonkers,1,NY,E,-,-,[G],-,-
+4.2,125th Street,1,NY,E,-,7.02p[i],6.28a[i],-,9.31p[i]
+0.0,New York (Grand Central Terminal),1,NY,E,ar 9.20a,ar 7.15p,ar 6.40a,ar 7.45a,ar 9.45p
