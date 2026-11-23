@@ -1,5 +1,6 @@
 # Canadian Pacific: Toronto - Guelph Jct. - Galt - Woodstock - London - Chatham - Windsor (printed as a second "Table 50"). Canadian Pacific timetable, 1948, Tables 50 (Toronto - Windsor page) and 51 - 55. Eastern time.
-# Printed miles. On the map to Windsor; Detroit (228.8) and the New York Central to Chicago (Central time) in the notes and on_cpfull_t049.csv (not built: United States).
+# Printed miles. Through the Detroit River tunnel to Detroit (Michigan Central Station, 228.8; V212, Brendan 22 Nov 2026: "yes" to running the CP trains on to Detroit); the New York
+# Central to Chicago (Central time) in the notes. No. 634 starts at Windsor (Windsor Yard), so it stays a Windsor train.
 # Not entered: the Guelph Junction - Guelph - Goderich connections (Table 68), St. Thomas (69), St. Marys (69A), and the London & Port Stanley Ry. connections (an electric
 # line: London - St. Thomas - Port Stanley). Arrival / departure rows (Guelph Jct., Galt, Woodstock, London, Windsor) one row here.
 #train col=No635 num=635 dir=down days="Sun,Mon,Tue,Wed,Thu,Fri" kind=passenger name="The Michigan" to=Chicago note="The Michigan. Daily except Saturday. Windsor 6.40 - 6.55 a.m., Detroit 7.05 a.m.; New York Central No. 17 to Chicago (11.15 a.m. Central time)."
@@ -55,4 +56,5 @@ mile,station,principal,prov,tz,No635,No19,No37,No629,No631,No21,No20,No630,No38,
 208.8,Belle River,0,ON,E,f6.15a,,a10.39p,,,,,,a9.44a,,j5.03p,f4.19p
 215.6,Elmstead,0,ON,E,,,,,,,,,,,,
 222.7,Walkerville Junction,0,ON,E,f6.30a,,,,,,,,,,,
-226.1,Windsor,1,ON,E,ar 6.40a,ar 2.40a,ar 11.05p,,,ar 1.55p,lv 3.15a,,lv 9.20a,,lv 4.40p,lv z4.00p
+226.1,Windsor,1,ON,E,ar 6.40a / lv 6.55a,ar 2.40a / lv 2.50a,ar 11.05p / lv 11.15p,,,ar 1.55p / lv 2.05p,ar 3.05a / lv 3.15a,,ar 9.10a / lv 9.20a,,ar 4.25p / lv 4.40p,lv z4.00p
+228.8,"Detroit, Mich.",1,MI,E,ar 7.05a,ar 3.00a,ar 11.25p,,,ar 2.15p,lv 2.55a,,lv 9.00a,,lv 4.15p,
