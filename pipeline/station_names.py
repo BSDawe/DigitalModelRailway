@@ -78,7 +78,7 @@ def tagless(n): return TAG.sub('', n)
 def base(n): return tagless(n).split(' (')[0].strip()
 OWNER_FIX = {'MEC_BANGOR_ME': 'MEC', 'MEC_LAWRENCE_MASS': 'B&M', 'MEC_HAVERHILL_MASS': 'B&M', 'NYC_CHICAGO_CENTRAL_ILL': 'IC',
              # Brendan, 23 Nov 2026: owners of the union stations
-             'CN_SAINT_JOHN': 'CN', 'OTTAWA_UNION': 'CN', 'WA_SPOKANE_UNION_STATION': 'UP', 'WA_SEATTLE_UNION_STATION': 'UP', 'WA_TACOMA_UNION_STATION': 'NP'}
+             'CN_SAINT_JOHN': 'CN', 'OTTAWA_UNION': 'CN', 'CN_NORTON': 'CN', 'WA_SPOKANE_UNION_STATION': 'UP', 'WA_SEATTLE_UNION_STATION': 'UP', 'WA_TACOMA_UNION_STATION': 'NP'}
 # the owner as the station note gives it (Brendan, 23 Nov 2026), where it is a joint company or the tenants are worth naming; the "also served by" list follows as usual
 OWNER_DESC = {'TORONTO_UNION': 'Toronto Terminals Railway station (CN and CPR jointly)',
               'OTTAWA_UNION': 'Canadian National station (CPR tracks run through it)',

@@ -2,39 +2,13 @@
 
 One list for the Digital Model Railway: questions for Brendan, material he is to supply, and work for Claude. It merges OPEN_QUESTIONS.md with the TO DO lists that were kept in STATE.md (the last of them: "TO DO (1 November 2026)"), as Brendan asked on 9 Nov 2026.
 Claude adds items as they come up. When one is answered or done, it moves to "Done and answered" with the date. Each open item says what the build does in the meantime. Version tags (V143) say when an item was raised.
-Last updated 17 November 2026 (Version 180).
+Last updated 23 November 2026 (Version 215).
 
 ## Decisions for Brendan
 - [ ] Unnumbered connecting trains: branch sections printed in a parent train's column take the parent's number (e.g. on_cn_t126m / d / p / c / g). Through cars or separate connecting trains? No number, or "connection to No. 41"? (26 Oct) Brendan: much may settle as the branch tables come in.
 - [ ] CN Table 116 (Longlac - Fort William, Nos. 79 / 80): the Toronto section may be a connection with Nos. 3 / 4 at Longlac rather than through cars (Brendan not certain). Matters for chaining. (23 Oct)
 
 ## Fixes queued (Brendan: "don't fix yet"; ask before the next rebuild whether to include them)
-- [ ] READY TO BUILD (V215; Brendan, 23 Nov 2026): D&H routing at Albany / Troy / Green Island. Done in source and dry-run, not built:
-  - the D&H passenger trains by Cohoes; the river line Green Island - Waterford cut to the bridge access;
-  - Brendan's Green Island curve (Cohoes line onto the Troy bridge) in the bank (tools/mar_import_dh.py);
-  - Albany is Albany Union Station (Brendan: "unless otherwise noted in 1948"). Nos. 8 / 10 (on_dh_t001t): Cohoes - the curve - Troy Union Station, the reverse move back over the bridge
-    to the D&H by the Green Island wye leg, Watervliet, Albany Union Station, then the Maiden Lane crossing and the Hudson line (via Watervliet, force Watervliet - Troy);
-  - no modelled train uses the northerly crossing at Albany (Livingston Avenue position): the importer's automatic ties there are left out;
-  - checked: ondh001 / 001a / 001n / 001t, onmc006*, onrut001* all on track.
-- [ ] READY TO BUILD (V215; Brendan, 23 Nov 2026): station owners and Norton. Done in source, not built (tick off the old items when built):
-  - Norton, N.B.: the CN station, used by the CPR (CP Table 16), at Brendan's point 45.636956, -65.695899 (CN and CP files). Brendan: the point is unclear enough that no
-    mileage is to be remeasured from it.
-  - Union stations (station_names.py OWNER_FIX / OWNER_DESC): Toronto, Toronto Terminals Railway (CN and CPR jointly); Ottawa Union, CN (CPR tracks run through); St. Paul Union
-    Depot Company (nine railways); Troy Union Railroad (NYC 50 %, D&H 25 %, B&M 25 %); Spokane and Seattle, Union Pacific (Milwaukee a tenant); Tacoma, NP (GN and UP tenants);
-    Washington Terminal Company (PRR and B&O, half each); Dearborn, C&WI (a union terminal railroad); Saint John, CN (CPR a tenant).
-  - Fredericton: fixed (Brendan).
-- [ ] READY TO BUILD (V215; Brendan, 23 Nov 2026): S.S. Milwaukee Clipper (Wisconsin & Michigan Steamship Co., "The Clipper Line"), Milwaukee - Muskegon, from the company's
-  1948 page (Official Guide p. 1221; summer service May 28 - Sept. 12). New step wmsc_build.py (after gtwf_build): 6 sailings eastbound, 5 westbound across the week, one ship
-  (the times chain); 5 h 45 min - 6 h 5 min across; lane about 97 mi. Docks at Brendan's points (23 Nov 2026): Milwaukee, 601 E. Erie Street; Muskegon, "The Mart".
-  Colour #1f6f78 (dark #7cc4cc) is Claude's pick.
-- [ ] READY TO BUILD (V215; Brendan, 23 Nov 2026): two Great Lakes excursion lines from their 1948 Official Guide pages, new step glk_build.py (after wmsc_build). Both print
-  DAYLIGHT time: shown an hour earlier (standard, as the railways), then on the Pacific clock.
-  - Cleveland & Buffalo Steamship Co. (C. & B. Line), Chicago, June 20 - Labor Day: Chicago - St. Joseph - Benton Harbor daily except Mon. and Fri.; Chicago - Michigan City Mon. and
-    Fri. Ship not named. NOT drawn: the nightly Chicago evening lake cruises (no destination): draw them (e.g. out and back to a turning point offshore) or leave out?
-  - Ashley & Dustin Steamer Line (Put-in-Bay Route), steamer Put-in-Bay, June 1 - Sept. 1: Detroit - Put-in-Bay - Cedar Point Wed. and Sun.; Toledo - Cedar Point Tue.; Detroit -
-    Put-in-Bay Thu. and Fri.; Saturday Blue Water Bridge cruise (drawn to the bridge and back, the turn at 1.15 p.m. estimated). The positioning runs Detroit - Toledo (Monday) and
-    Toledo - Detroit (Tuesday night) are not printed and not drawn.
-  - All dock points APPROXIMATE (Claude); the A. & D. Detroit dock is not printed. Colours (C. & B. #3d5a80, A. & D. #8a3b12) are Claude's picks.
 - [ ] Alcoa Steamship Co. (Brendan, 23 Nov 2026, Official Guide page): fortnightly sailings from Montreal and Halifax to Hamilton (Bermuda), St. Kitts, Antigua, St. Lucia,
   Barbados, St. Vincent, Grenada, Port of Spain, Georgetown; also calls Dominica, Montserrat, Martinique and Guadeloupe as cargo offers. No dates: like the other ocean sailings
   (draw to the edge of the water file), a dated July 1948 sailing is needed (Montreal Gazette / Halifax shipping columns, with the Lady boats).
@@ -293,6 +267,10 @@ Each runs to an International Boundary point (time estimated) or to the last Can
 - [x] Sydney & Louisburg: built (V163). Colour #5B3A8C is Claude's pick. Victoria Jct. - Glace Bay 9.9 mi traced / 11.0 printed (the trace may take a later route).
 
 ## Done and answered
+### Done in Version 215 (23 Nov 2026)
+- D&H routing at Albany / Troy / Green Island (Green Island curve; Nos. 8 / 10 by Troy, reverse, Watervliet, Albany Union Station; no northerly Albany crossing).
+- Norton, N.B. at Brendan's point (CN station, CPR uses it); union station owners (Toronto, Ottawa, St. Paul, Troy, Spokane, Seattle, Tacoma, Washington, Dearborn, Saint John); Fredericton fixed.
+- Milwaukee Clipper; C. & B. Line (Chicago evening cruises still open: draw or leave out?); Ashley & Dustin Put-in-Bay steamer (dock points approximate).
 ### Done in Version 214 (23 Nov 2026)
 - The Gull one Maine Central train Saint John - Boston; Portland (Grand Trunk); Portland & Rochester track into Union Station; Waterville correction; Bangor and McAdam points.
 ### Answered (22 Nov 2026)

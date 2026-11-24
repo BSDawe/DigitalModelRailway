@@ -1,7 +1,7 @@
 # The Digital Model Railway — project state
 
 Read this first. It is meant to be enough to start a short, single-task chat without replaying the project's history.
-Last updated 23 November 2026 (Version 214). This file is the current state and the standing rules; the version-by-version history is in CHANGELOG.md.
+Last updated 23 November 2026 (Version 215). This file is the current state and the standing rules; the version-by-version history is in CHANGELOG.md.
 
 ## What this is
 
@@ -337,6 +337,7 @@ After an accepted build: `cp viz_data.json tools/.baseline_viz.json`.
 
 ## Recent versions (one line each; the detail is in CHANGELOG.md)
 
+- 215: D&H Albany / Troy routing (Green Island curve; no northerly Albany crossing); Norton N.B.; union station owners; Milwaukee Clipper, C. & B. Line, Put-in-Bay steamer.
 - 214: the Gull one Maine Central train Saint John - Boston; Portland Union Station on track; Waterville, Bangor, McAdam points; Portland (Grand Trunk).
 - 213: the Gull (Maine Central / B&M Boston - Portland - Bangor - Vanceboro); MC trains join the IC at Kensington.
 - 212: CP Toronto - Windsor trains on to Detroit (Michigan Central Station).
@@ -349,7 +350,6 @@ After an accepted build: `cp viz_data.json tools/.baseline_viz.json`.
 - 205: the Delaware & Hudson (Official Guide Tables 1, 2, 3, 5, 7, 9); New York - Montreal trains through from Grand Central to Windsor Station.
 - 204: CN trains changing number at Hamilton (Table 79: 101/102, 89/90, 187/184, 93/94, 91/92, 107/108) joined as through trains.
 - 203: Maple Leaf fixes: Suspension Bridge and Niagara Falls, N.Y. stations at Brendan's points; N.Y.C. track Niagara Falls - Tonawanda (Mississippi Rails); Depew - Buffalo on track. Page-script fix.
-- 202: the Maple Leaf on to Buffalo over the N.Y.C. at Niagara Falls and the Lehigh Valley by Depew (CN train; L.V. track, Lehigh Valley red).
 - 201: the Ambassador's New York section to Grand Central over the New Haven, Woodlawn and the NYC Harlem line (Brendan's traces); Arnold boats unnamed.
 - 200: Arnold Transit from the August 1950 Official Guide (stand-in for July 1948): five St. Ignace and five Mackinaw City sailings each way; Mackinac Island - Les Cheneaux - Cedarville.
 - 199: the Straits of Mackinac car ferry drawn as a train ferry; Arnold Transit St. Ignace - Mackinac Island boats (atc_build.py).

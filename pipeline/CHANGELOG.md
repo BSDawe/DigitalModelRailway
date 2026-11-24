@@ -3123,3 +3123,17 @@ A review of the whole project (Brendan: "have a peek through ... suggest improve
 - Waterville: Brendan's MEC track and station correction (traces/mec_waterville_brendan.json; the KMZ pieces cut back to his paths). Bangor MEC station (also used by the Bangor & Aroostook)
   at his point, 44 47 56.46 N, 68 46 01.17 W. McAdam CPR station (extant) at his point, 45.590137, -67.328776 (1.2 km from before); the stations placed by mileage from it move with it.
 - Counts: 680 lines, 4426 trips, 7848 stops, 66 agencies; check_gtfs 0 problems.
+
+## Version 215
+- D&H at Albany / Troy / Green Island (Brendan, 23 Nov 2026): the passenger trains run by Cohoes (the river line Green Island - Waterford cut to the bridge access); Brendan's Green Island curve
+  from the Cohoes line onto the Troy bridge; Albany is Albany Union Station. Nos. 8 / 10 run Cohoes - the curve - Troy Union Station, reverse back over the bridge to the D&H by the Green
+  Island leg, Watervliet, Albany Union Station, then the Maiden Lane crossing and the Hudson line (via Watervliet; Watervliet - Troy forced). No train uses the northerly crossing at Albany
+  (the Livingston Avenue position): tools/mar_import_dh.py leaves out its automatic ties there.
+- Norton, N.B.: the CN station (used by the CPR, CP Table 16) at Brendan's point, 45.636956, -65.695899; no mileage remeasured from it (Brendan).
+- Union stations (Brendan, 23 Nov 2026), station_names.py OWNER_FIX / OWNER_DESC: Toronto (Toronto Terminals Railway, CN and CPR), Ottawa Union (CN), St. Paul Union Depot Company,
+  Troy Union Railroad (NYC 50 %, D&H 25 %, B&M 25 %), Spokane and Seattle (UP, the Milwaukee a tenant), Tacoma (NP; GN and UP tenants), Washington Terminal Company (PRR and B&O),
+  Dearborn (C&WI), Saint John (CN, the CPR a tenant). Fredericton: fixed (Brendan).
+- New ships (Official Guide pages, Brendan 23 Nov 2026): S.S. Milwaukee Clipper, Milwaukee - Muskegon (wmsc_build.py; docks at Brendan's points); the C. & B. Line, Chicago - St. Joseph -
+  Benton Harbor and Chicago - Michigan City, and the Ashley & Dustin steamer Put-in-Bay, Detroit - Put-in-Bay - Cedar Point, Toledo - Cedar Point and the Blue Water Bridge cruise
+  (glk_build.py; printed in daylight time, shown an hour earlier; docks approximate). Colours #1f6f78, #3d5a80, #8a3b12 are Claude's picks.
+- Counts: 692 lines, 4449 trips, 7859 stops, 69 agencies; check_gtfs 0 problems.
