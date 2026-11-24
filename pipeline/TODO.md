@@ -290,7 +290,7 @@ Each runs to an International Boundary point (time estimated) or to the last Can
 
 ## Done and answered
 ### Done in Version 218 (23 Nov 2026)
-- Clarke Steamship coastal services, simulated weekly schedules: North Shore (Montreal - Natashquan), North Gaspé (Gaspé cruise), Magdalen (Pictou - Magdalens), and the Lower St
+- Clarke Steamship coastal services, simulated weekly schedules: North Shore (Montreal - Natashquan), North Gaspé (Gaspé cruise; the week stays a Gaspé week by the count from May 11, Brendan 23 Nov 2026), Magdalen (Pictou - Magdalens), and the Lower St
   Lawrence Transportation Co. motorships Rimouski, Jean Brillant and Matane.
 ### Done in Version 217 (23 Nov 2026)
 - TH&B trains on to Black Rock and Buffalo (Central Terminal) over the Michigan Central. Train panels show source and note for every railway.
