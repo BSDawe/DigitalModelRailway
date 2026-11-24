@@ -201,6 +201,20 @@ Maritime tables where the traced line differs from the printed miles by 1 mi and
     https://www.benjidog.co.uk/TheShipsList/ClarkeSSCo.php; https://semaphore.uqar.ca/id/eprint/2457/1/Les%20Clarke%20et%20la%20compagnie%20de%20transport%20du%20Bas%20St-Laurent%20%281921-1970%29.pdf;
     https://clarkesteamship.wordpress.com/tag/north-shore-power-railway-navigation-co/; https://www.boisestgilles.ca/content/historique-maritime.
     Need a 1948 sailing list (Clarke folder or newspaper). Also the Compagnie de transport du Bas-St-Laurent (Rimouski - North Shore) in the same thesis.
+    FOUND (23 Nov 2026, from the full chapters of "St Lawrence Saga", clarkesteamship.wordpress.com, PDFs of chapters 9 - 11; Brendan pointed to the 1945 cruise advertisement):
+    - 1948 season (notices May 1948): North Gaspé opened Tue May 11 from Victoria Pier, 7.30 p.m., alternating 5 1/2-day Gaspé cruises (every second Tuesday) and 7-day Magdalen
+      Islands cruises (the following Monday); ports Quebec, Cap Chat, Ste-Anne-des-Monts, Mont-Louis, Rivière-Madeleine, Grande-Vallée, Cloridorme, Rivière-au-Renard, Gaspé
+      (Magdalens: Havre-Aubert, Cap-aux-Meules). The 1945 advertisement gives the day-by-day pattern (Montreal Tue 7.30 p.m., Quebec Wed, Ste-Anne Thu, Gaspé Fri, back Ste-Anne Sat,
+      Quebec Sun, Montreal Mon morning; Magdalens: Montreal Mon 7.30 p.m., Quebec Tue, Ste-Anne Wed, Gaspé Thu, Grindstone Fri, Gaspé and Ste-Anne Sat, Quebec Sun p.m., Montreal Mon p.m.).
+      Counting the alternation from May 11 (estimate): Magdalens Mon June 28 - Mon July 5; Gaspé Tue July 6 - Mon July 12.
+    - North Shore (express, 95 berths): weekly, 6- and 7-night voyages to Havre-St-Pierre and Natashquan; 1948 first sailing May 12 (a Wednesday; 1946 - 47 sailed Tuesdays
+      7.30 p.m.; back at Quebec on Mondays). Ports (1946): Quebec, Baie-Comeau, Franquelin, Godbout, Baie-Trinité, Pentecôte, Clarke City, Sept-Îles, Rivière-au-Tonnerre, Mingan,
+      Havre-St-Pierre; alternate weeks Baie-Johan-Beetz and Natashquan.
+    - North Coaster: fortnightly Montreal - Havre-St-Pierre. North Voyageur: 12-day trips to Blanc-Sablon (1947 dates July 16, Aug. 13; left Market Basin 3 p.m.). North Pioneer:
+      12-day North Coast cruises in 1947 (July 23, Aug. 6). 1948 dates for these three not found.
+    - Magdalen (Magdalen Islands Transportation Co., Clarke): Pictou - Souris - the Magdalens, 5-day sailings Thursdays, 2-day sailings Tuesdays (to Cap-aux-Meules); connects
+      with the North Gaspé's Friday arrival.
+    - Competitor: CTMA (Havre-aux-Maisons, Havre-Aubert), Montreal - Quebec - North Shore - Gaspé - Magdalens from 1946: no schedule found.
   The map has only Canada Steamship Lines' Montreal - Quebec - Saguenay (cssg) in this area.
 - [ ] Water (Owen Sound Transportation Co. done in Version 183, estimated: a 1948 schedule would firm it up; Ontario Northland's Chief Commanda on Lake Nipissing done in Version 185, highly speculative: the regular 1948 days and hours wanted); Pelee Island and Wolfe Island ferries; Northumberland Ferries (Wood Islands - Caribou); Grand Manan ferry; Clarke Steamship (Gaspe, North Shore). Lake Winnipeg (Keenora) is in; the northern river boats were no longer scheduled common carriers after 1947 (Brendan).
 
