@@ -1,5 +1,5 @@
 # Toronto, Hamilton & Buffalo Railway: Hamilton - Smithville - Welland, then the New York Central (Michigan Central) Welland - Fort Erie - Buffalo. TH&B Nos. 73, 76, 144, 145 are gas-electric cars (kind motor; Official Guide notes, Brendan 27 Oct 2026). Sources: CP timetable 1948, Table 56 (Toronto - Hamilton - Niagara Falls - Buffalo), and the Official Guide, April 25, 1948, TH&B table (Montreal, Ottawa, Toronto, Hamilton, Buffalo and the East; Chicago, Waterford, Hamilton and Toronto); Brendan, 27 Oct 2026. EASTERN TIME.
-# Built to the international boundary on the International Railway Bridge (border times by mileage, ~); Black Rock and Buffalo in the notes (U.S., not built).
+# Fort Erie - Black Rock - Buffalo (Terrace Station, Central Terminal) over the NYC (Michigan Central), times from the notes (V217, Brendan 23 Nov 2026; until V216 built to the boundary).
 # Miles: TH&B as printed (Welland 38); Welland - Fort Erie 17.3 from CP Table 56 (76.8 to 94.1). Welland and Fort Erie arrival / departure from Table 56.
 # NOT ENTERED: the Welland - Niagara Falls, Ont. - Niagara Falls, N.Y. rows (bus connections, sign: connection by bus), Dunnville and St. Anns buses.
 # The TH&B prints its own numbers for the through Toronto - Buffalo trains (CP 721 / TH&B 372, 741 / 374, 801 / 380, 821 / 382; 712 / 371, 732 / 73, 752 / 375,
@@ -18,4 +18,6 @@ mile,station,principal,prov,tz,No76,No73
 31.0,Fenwick,0,ON,E,f4.51p,f7.05a
 38.0,Welland,1,ON,E,5.10p,ar 6.45a / lv 6.55a
 55.3,"Fort Erie, Ont.",1,ON,E,5.55p,6.15a
-55.6,"International Boundary (Niagara River, to Black Rock, N.Y.)",0,ON,E,~ar 6.02p,~lv 6.04a
+57.9,"Black Rock, N.Y.",1,NY,E,6.15p,5.59a
+61.3,"Buffalo (Terrace Sta.), N.Y.",1,NY,E,6.27p,5.45a
+64.8,"Buffalo (Central Terminal), N.Y.",1,NY,E,ar 6.40p,lv 5.35a

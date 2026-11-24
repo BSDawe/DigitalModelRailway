@@ -2,7 +2,8 @@
 # "the logical owner of the train is the TH&B as the joint subsidiary ... run through in TH&B livery with notes as to their CP and NYC numbers"). Built 18 Nov 2026 from
 # on_cpthb_t056.csv (CP Table 56, Toronto - Hamilton: CP numbers) and on_thb_t056.csv (Hamilton - Welland - Fort Erie, TH&B numbers); the columns moved here from both.
 # Toronto - Hamilton over the CN Lake Shore (CP trackage rights) and the TH&B into Hamilton (Hunter Street); TH&B miles from Hamilton added to 39.3. Eastern time.
-# NYC numbers not yet known (the Official Guide NYC Buffalo - Toronto table). Built to the international boundary on the International Railway Bridge (border times ~ by mileage).
+# NYC numbers not yet known (the Official Guide NYC Buffalo - Toronto table). Fort Erie - Black Rock - Buffalo over the NYC (Michigan Central; V217, Brendan 23 Nov 2026): the times
+# are the trains' notes (Official Guide TH&B table; agree with NYC Table 6 / 11); miles beyond Fort Erie as the MC file (estimated along the track). Terrace Station only where printed.
 # Not here: TH&B 76 / 73 (gas-electric, Hamilton - Buffalo; they stay TH&B, with 73 continuing to Toronto as CP 732: Brendan, TODO) and the CP Toronto - Hamilton locals.
 #train col=No372 num=372 dir=down days=daily kind=passenger to=Buffalo note="Toronto - Buffalo pool train: CP No. 721 Toronto - Hamilton, TH&B No. 372 Hamilton - Welland, then the New York Central to Buffalo (the NYC number to be looked up in its Buffalo - Toronto table). Black Rock 11.30, Buffalo (Terrace Station) 11.43, Buffalo (Central Terminal) 11.55 a.m. St. Anns: connection by bus (not entered)."
 #train col=No374 num=374 dir=down days=daily kind=passenger to=Buffalo note="Toronto - Buffalo pool train: CP No. 741 Toronto - Hamilton, TH&B No. 374 Hamilton - Welland, then the New York Central to Buffalo (the NYC number to be looked up in its Buffalo - Toronto table). Black Rock 3.10, Buffalo (Terrace Station) 3.23, Buffalo (Central Terminal) 3.35 p.m."
@@ -25,4 +26,6 @@ mile,station,principal,prov,tz,No372,No374,No380,No382,No371,No375,No379,No383
 70.3,Fenwick,0,ON,E,f10.26a,f2.05p,f7.59p,,,f10.10a,f3.20p,f6.56p
 77.3,Welland,1,ON,E,10.40a,2.20p,8.12p,10.37p,ar 6.05a / lv 6.06a,ar 9.55a / lv 10.00a,ar 3.05p / lv 3.10p,ar 6.40p / lv 6.45p
 94.6,"Fort Erie, Ont.",1,ON,E,11.12a,2.52p,8.37p,11.03p,5.38a,9.31a,2.42p,6.10p
-94.9,"International Boundary (Niagara River, to Black Rock, N.Y.)",0,ON,E,~ar 11.18a,~ar 2.58p,~ar 8.41p,~ar 11.09p,~lv 5.31a,~lv 9.16a,~lv 2.33p,~lv 6.00p
+97.2,"Black Rock, N.Y.",1,NY,E,11.30a,3.10p,8.50p,11.20p,5.27a,9.09a,2.29p,5.55p
+100.6,"Buffalo (Terrace Sta.), N.Y.",1,NY,E,,,,,,8.56a,2.16p,5.41p
+104.1,"Buffalo (Central Terminal), N.Y.",1,NY,E,ar 11.55a,ar 3.35p,ar 9.15p,ar 11.45p,lv 5.05a,lv 8.45a,lv 2.05p,lv 5.30p
