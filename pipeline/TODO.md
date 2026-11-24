@@ -217,7 +217,9 @@ Maritime tables where the traced line differs from the printed miles by 1 mi and
     - Competitor: CTMA (Havre-aux-Maisons, Havre-Aubert), Montreal - Quebec - North Shore - Gaspé - Magdalens from 1946: no schedule found.
     - Lower St Lawrence Transportation Co. (Clarke subsidiary, Rimouski; Brendan 23 Nov 2026 raised it): motorships Rimouski, Matane (1938), Jean Brillant (late 1930s), laid up
       at Quebec in winter. Brendan's note: Matane - Godbout - Franquelin - Baie-Comeau daily, timed to the trains; Rimouski and Jean Brillant several times a week to Forestville,
-      Ragueneau, Baie-Comeau and on toward Sept-Îles (source of the note to confirm). St Lawrence Saga ch. 11 gives no 1948 schedule; nearest: the 1950 brochure (Rimouski 9 a.m.;
+      Ragueneau, Baie-Comeau and on toward Sept-Îles. That note came from Gemini citing the UQAR thesis; the thesis has no such schedule (checked 23 Nov 2026: no
+      days, times or train connections; Godbout only in 1962), so it is NOT a source. Thesis: Jean-Brillant, Matane (1938), Rimouski (1939), built at Sorel; the Jean-Brillant
+      ran Miami - Nassau 1942 - 46 (back by Aug. 1947). Leads it cites: L'Echo du Bas Saint-Laurent 4 Nov 1950; Camu, Problèmes de transport... (1960), p. 57. St Lawrence Saga ch. 11 gives no 1948 schedule; nearest: the 1950 brochure (Rimouski 9 a.m.;
       Rimouski to Forestville Mon., Wed., Thu., Sat.; Jean Brillant two-day cruises on her Mon. and Thu. sailings, one-day Wed. to Baie-Comeau), 1954 (Sept-Îles arrivals: Jean
       Brillant Tue., Fri.; Matane Wed., Sat.) and 1958 (Matane 10 a.m. Mon., Sat. to Baie-Comeau, Franquelin, Godbout, Baie-Trinité; Tue., Thu. also Pentecôte, Shelter Bay, Sept-Îles).
   The map has only Canada Steamship Lines' Montreal - Quebec - Saguenay (cssg) in this area.
