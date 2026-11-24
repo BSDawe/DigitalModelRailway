@@ -268,7 +268,7 @@ Each runs to an International Boundary point (time estimated) or to the last Can
 
 ## Done and answered
 ### Done in Version 216 (23 Nov 2026)
-- The Texas Electric Railway, Dallas - Denison and Dallas - Waco. Open: the colour (Claude's pick); dropping the 1939 departures after 9.30 p.m. (Claude's reading of the 1948 page's
+- The Texas Electric Railway, Dallas - Denison and Dallas - Waco. Colour: stays as Claude's pick (Brendan: basic interurban colours, unimportant). Open: dropping the 1939 departures after 9.30 p.m. (Claude's reading of the 1948 page's
   "5:30 a.m. to 9:30 p.m."; the 5.20 / 5.40 a.m. first cars are kept); Vickery and Sterrett placed by miles.
 ### Done in Version 215 (23 Nov 2026)
 - D&H routing at Albany / Troy / Green Island (Green Island curve; Nos. 8 / 10 by Troy, reverse, Watervliet, Albany Union Station; no northerly Albany crossing).
