@@ -3147,3 +3147,12 @@ A review of the whole project (Brendan: "have a peek through ... suggest improve
   left out (Claude's reading of the 1948 page). The Corsicana Division (abandoned 1941) is not drawn. 56 trips; daily and daily except Sunday as in 1939.
 - Unnumbered interurban cars are labelled "Car" (num 'Car', like 'Train'). New view "Dallas, Denison and Waco" (Central time). Colour #c27c0e (dark #e8b04b) is Claude's pick.
 - Counts: 694 lines, 4505 trips, 7882 stops, 70 agencies; check_gtfs 0 problems.
+
+## Version 217
+- TH&B trains on to Buffalo (Brendan, 23 Nov 2026): the eight Toronto - Buffalo pool trains (on_thb_t056p) and the gas-electric cars 76 / 73 (on_thb_t056) run Fort Erie - Black Rock -
+  Buffalo (Terrace Station) - Buffalo (Central Terminal) over the Michigan Central, in place of ending at the international boundary. Times from the trains' notes (the TH&B table;
+  they agree with NYC Tables 6 / 11); Terrace Station only where printed; miles beyond Fort Erie as the MC file (estimated). Black Rock, Terrace Station and Central Terminal are the
+  Michigan Central's stations (SHARED in on_lines.py). Fort Erie - Black Rock forced (1.1 mi of track against 2.6 printed, as for the MC trains).
+- Train panels: the source and note now show for every railway (Brendan: "no notes" on a Texas Electric car). The panel listed the kinds that get them by hand; Maine Central, Barre &
+  Chelsea, Huntsville & Lake of Bays, M&SC, NS&T, QRL&P, Rutland, Newfoundland Railway and Texas Electric were missing. Any kind without its own line now gets the general one.
+- Counts: 694 lines, 4505 trips, 7883 stops, 70 agencies; check_gtfs 0 problems.

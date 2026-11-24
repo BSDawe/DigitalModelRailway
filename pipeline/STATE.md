@@ -1,7 +1,7 @@
 # The Digital Model Railway — project state
 
 Read this first. It is meant to be enough to start a short, single-task chat without replaying the project's history.
-Last updated 23 November 2026 (Version 216). This file is the current state and the standing rules; the version-by-version history is in CHANGELOG.md.
+Last updated 23 November 2026 (Version 217). This file is the current state and the standing rules; the version-by-version history is in CHANGELOG.md.
 
 ## What this is
 
@@ -301,6 +301,7 @@ lat, mile, lmile?, principal, gid, note, xy?, slow?}], dirLabels, segments [{own
 - **Springfield, Mass.**: every railway's trains call at Springfield Union Station (42.106238, -72.593270), on the New York Central (Boston & Albany) line: NYC (B&A), B&M (and the Central Vermont trains it hosts) and the New Haven. North - south through trains reverse there (Brendan, 18 Nov 2026).
 - **The Soo Line** and the **Duluth, South Shore & Atlantic** (CP subsidiaries) are drawn as CP with their own labels, Soo Line (like the Central Vermont and the GTW under CN; Brendan, 19 Nov 2026); its trains use the CP station at Sault Ste. Marie, Ont. The **B&O** is dark blue (#1D3461; Grand Central Station, Chicago, is B&O property). Short union / terminal railways (union depots, the C&WI) share one union-station colour, own 'union' (warm grey #8C8279; Brendan, 19 Nov 2026); a railway running through (the Milwaukee Road at St. Paul) keeps its own. Other railways' columns in a table (through-ticket arrangements) are not entered.
 - **U.S. traces are from Mississippi Rails** (Tony Howe and David Price) unless Brendan says otherwise (17 Nov 2026); credit them so.
+- **Train panels show the source and note for every railway** (Brendan, 23 Nov 2026: he likes the sources being available); a new kind needs no entry for it.
 - **Test the page in a browser before every push** (V202 broke the page: a colour edit landed in the boat colour map).
 - **Transcriptions** by another model follow `TIMETABLE_READING.md` (copy, don't interpret; check mode against an existing file).
 - Scratch files and logs go in the session scratchpad, never in the repository.
@@ -337,6 +338,7 @@ After an accepted build: `cp viz_data.json tools/.baseline_viz.json`.
 
 ## Recent versions (one line each; the detail is in CHANGELOG.md)
 
+- 217: TH&B trains on to Black Rock and Buffalo (Central Terminal); train notes and sources shown for every railway.
 - 216: the Texas Electric Railway (Dallas - Denison, Dallas - Waco; Ravenna's trace, 1939 times as the 1948 pattern).
 - 215: D&H Albany / Troy routing (Green Island curve; no northerly Albany crossing); Norton N.B.; union station owners; Milwaukee Clipper, C. & B. Line, Put-in-Bay steamer.
 - 214: the Gull one Maine Central train Saint John - Boston; Portland Union Station on track; Waterville, Bangor, McAdam points; Portland (Grand Trunk).
@@ -350,7 +352,6 @@ After an accepted build: `cp viz_data.json tools/.baseline_viz.json`.
 - 206: Troy Union Station over the Troy Union Railroad (union colour) and Brendan's Green Island bridge.
 - 205: the Delaware & Hudson (Official Guide Tables 1, 2, 3, 5, 7, 9); New York - Montreal trains through from Grand Central to Windsor Station.
 - 204: CN trains changing number at Hamilton (Table 79: 101/102, 89/90, 187/184, 93/94, 91/92, 107/108) joined as through trains.
-- 201: the Ambassador's New York section to Grand Central over the New Haven, Woodlawn and the NYC Harlem line (Brendan's traces); Arnold boats unnamed.
 - 200: Arnold Transit from the August 1950 Official Guide (stand-in for July 1948): five St. Ignace and five Mackinaw City sailings each way; Mackinac Island - Les Cheneaux - Cedarville.
 - 199: the Straits of Mackinac car ferry drawn as a train ferry; Arnold Transit St. Ignace - Mackinac Island boats (atc_build.py).
 - 198: the Duluth, South Shore & Atlantic and Mineral Range (Official Guide; drawn as CP, labelled DSS&A); Mackinac Straits car ferry; NP Ashland - Superior.

@@ -2,7 +2,7 @@
 
 One list for the Digital Model Railway: questions for Brendan, material he is to supply, and work for Claude. It merges OPEN_QUESTIONS.md with the TO DO lists that were kept in STATE.md (the last of them: "TO DO (1 November 2026)"), as Brendan asked on 9 Nov 2026.
 Claude adds items as they come up. When one is answered or done, it moves to "Done and answered" with the date. Each open item says what the build does in the meantime. Version tags (V143) say when an item was raised.
-Last updated 23 November 2026 (Version 216).
+Last updated 23 November 2026 (Version 217).
 
 ## Decisions for Brendan
 - [ ] Unnumbered connecting trains: branch sections printed in a parent train's column take the parent's number (e.g. on_cn_t126m / d / p / c / g). Through cars or separate connecting trains? No number, or "connection to No. 41"? (26 Oct) Brendan: much may settle as the branch tables come in.
@@ -155,7 +155,7 @@ Maritime tables where the traced line differs from the printed miles by 1 mi and
 - [ ] Ideas from the 16 Nov 2026 review, not taken up yet: side panels scoped to the view (legend, next departures, B.C. Electric list); station
   boards in the station's own time and opening at the next departure; label overlaps (Montreal terminals, Toronto waterfront, Vancouver steamers);
   shareable links (view, day, time, selection in the address; about 40 lines); ship schedule edits without the 6 1/2-minute lane rebuild.
-- [ ] TH&B pool trains (built V193, onthb056p): look up the NYC numbers (Official Guide NYC Buffalo - Toronto table) and add them to the notes. The trains end at the
+- [ ] TH&B pool trains (built V193, onthb056p; on to Buffalo Central Terminal since V217): look up the NYC numbers (Official Guide NYC Buffalo - Toronto table) and add them to the notes. (Old note:) The trains end at the
   international boundary; joining them to NYC trains into Buffalo waits for the NYC tables.
 - [ ] NYC Montreal - Malone: Brendan says the Delamere file has the NYC stations as far as Athelstan (Glen Elm); only Athelstan uses its Delamere point. The others are placed by
   the collection or by printed mileage; check them against the Delamere placemarks if he wants (some are unnamed there).
@@ -227,7 +227,7 @@ Each runs to an International Boundary point (time estimated) or to the last Can
   the U.S. end; tools/mar_import_lv.py). Wanted: the CN bridge drawn whole as CN to the U.S. side and its connection to the N.Y.C., and the N.Y.C. bridge if trains used it.
 - [ ] The Gull (V213, V214): wanted: a Lewiston point (Waterville, Bangor at Brendan's points; Portland on track); the B&M station miles (estimated). No. 8's
   dagger at Vanceboro (daily except Sunday) against the column heading (daily June 20 - Sept. 6): entered as the dagger. The rest of MEC Table 2 and B&M Table 8 not entered (Brendan).
-- [ ] Michigan Central / N.Y.C. (built V210, V211). Approximate points: Terrace Station, Black Rock; the TH&B trains (on_thb_t056) still end at the Niagara River boundary: run them into
+- [ ] Michigan Central / N.Y.C. (built V210, V211). Approximate points: Terrace Station, Black Rock; the TH&B trains (DONE V217: on to Buffalo) still end at the Niagara River boundary: run them into
   Buffalo with the Table 6 / 11 times; the N.Y.C. Niagara Falls sections of Nos. 44 / 50 (Table 7) not drawn; the Batavia bypass and Rome / Herkimer alignments: check for 1948.
 - [ ] Adirondack Division (V211): Lake Clear Junction, Saranac Lake, Lake Placid points approximate; Utica - Albany - New York for the Montreal trains (on_nycfull_t018.csv) waits for the
   main-line timetable rows.
@@ -267,6 +267,8 @@ Each runs to an International Boundary point (time estimated) or to the last Can
 - [x] Sydney & Louisburg: built (V163). Colour #5B3A8C is Claude's pick. Victoria Jct. - Glace Bay 9.9 mi traced / 11.0 printed (the trace may take a later route).
 
 ## Done and answered
+### Done in Version 217 (23 Nov 2026)
+- TH&B trains on to Black Rock and Buffalo (Central Terminal) over the Michigan Central. Train panels show source and note for every railway.
 ### Done in Version 216 (23 Nov 2026)
 - The Texas Electric Railway, Dallas - Denison and Dallas - Waco. Colour: stays as Claude's pick (Brendan: basic interurban colours, unimportant). Open: dropping the 1939 departures after 9.30 p.m. (Claude's reading of the 1948 page's
   "5:30 a.m. to 9:30 p.m."; the 5.20 / 5.40 a.m. first cars are kept); Vickery and Sterrett placed by miles.
