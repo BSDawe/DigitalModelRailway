@@ -2,7 +2,7 @@
 
 One list for the Digital Model Railway: questions for Brendan, material he is to supply, and work for Claude. It merges OPEN_QUESTIONS.md with the TO DO lists that were kept in STATE.md (the last of them: "TO DO (1 November 2026)"), as Brendan asked on 9 Nov 2026.
 Claude adds items as they come up. When one is answered or done, it moves to "Done and answered" with the date. Each open item says what the build does in the meantime. Version tags (V143) say when an item was raised.
-Last updated 23 November 2026 (Version 217).
+Last updated 23 November 2026 (Version 218).
 
 ## Decisions for Brendan
 - [ ] Unnumbered connecting trains: branch sections printed in a parent train's column take the parent's number (e.g. on_cn_t126m / d / p / c / g). Through cars or separate connecting trains? No number, or "connection to No. 41"? (26 Oct) Brendan: much may settle as the branch tables come in.
@@ -196,7 +196,8 @@ Maritime tables where the traced line differs from the printed miles by 1 mi and
 - [ ] Investigate (Brendan, 16 Nov 2026), Quebec marine services in 1948:
   - Tadoussac - Baie-Sainte-Catherine ferry across the Saguenay mouth: N.M. Jacques-Cartier (1938 - 1958; 12 vehicles, 88 passengers). Need a 1948
     schedule or frequency (sources Brendan found: Societe des traversiers du Quebec post; https://www.tidesoftadoussac.com/ferries).
-  - Clarke Steamship Company, North Shore coastal service: Quebec, Montreal and South Shore ports to Baie-Comeau, Sept-Iles, Havre-Saint-Pierre,
+  - Clarke Steamship Company, North Shore coastal service (BUILT V218 as a simulated schedule; open: a real 1948 sailing list, the North Coaster / North Voyageur /
+    North Pioneer, the North Shore's 1948 sailing day (Tuesday used; May 12, 1948 was a Wednesday), port points): Quebec, Montreal and South Shore ports to Baie-Comeau, Sept-Iles, Havre-Saint-Pierre,
     Blanc-Sablon (Route 138 not yet through); 1948 fleet incl. North Shore (II) (ex-corvette, 1946) and North Pioneer (1946). Sources:
     https://www.benjidog.co.uk/TheShipsList/ClarkeSSCo.php; https://semaphore.uqar.ca/id/eprint/2457/1/Les%20Clarke%20et%20la%20compagnie%20de%20transport%20du%20Bas%20St-Laurent%20%281921-1970%29.pdf;
     https://clarkesteamship.wordpress.com/tag/north-shore-power-railway-navigation-co/; https://www.boisestgilles.ca/content/historique-maritime.
@@ -288,6 +289,9 @@ Each runs to an International Boundary point (time estimated) or to the last Can
 - [x] Sydney & Louisburg: built (V163). Colour #5B3A8C is Claude's pick. Victoria Jct. - Glace Bay 9.9 mi traced / 11.0 printed (the trace may take a later route).
 
 ## Done and answered
+### Done in Version 218 (23 Nov 2026)
+- Clarke Steamship coastal services, simulated weekly schedules: North Shore (Montreal - Natashquan), North Gaspé (Gaspé cruise), Magdalen (Pictou - Magdalens), and the Lower St
+  Lawrence Transportation Co. motorships Rimouski, Jean Brillant and Matane.
 ### Done in Version 217 (23 Nov 2026)
 - TH&B trains on to Black Rock and Buffalo (Central Terminal) over the Michigan Central. Train panels show source and note for every railway.
 ### Done in Version 216 (23 Nov 2026)

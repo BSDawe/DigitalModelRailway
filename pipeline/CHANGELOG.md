@@ -3156,3 +3156,20 @@ A review of the whole project (Brendan: "have a peek through ... suggest improve
 - Train panels: the source and note now show for every railway (Brendan: "no notes" on a Texas Electric car). The panel listed the kinds that get them by hand; Maine Central, Barre &
   Chelsea, Huntsville & Lake of Bays, M&SC, NS&T, QRL&P, Rutland, Newfoundland Railway and Texas Electric were missing. Any kind without its own line now gets the general one.
 - Counts: 694 lines, 4505 trips, 7883 stops, 70 agencies; check_gtfs 0 problems.
+
+## Version 218
+- Clarke Steamship Co. coastal services (Brendan, 23 Nov 2026: "Let's go with the simulated schedule"), new step clk_build.py (after glk_build; lanes over the basemap water,
+  cache clk_legs.json; livery clk). No 1948 timetable found; each a weekly pattern wrapping round the week, hours ESTIMATED except the printed departures:
+  - s.s. North Shore: Montreal (Victoria Pier) Tuesday 7.30 p.m. - Quebec - Baie-Comeau - Franquelin - Godbout - Baie-Trinité - Pentecôte - Clarke City - Sept-Îles - Rivière-au-
+    Tonnerre - Mingan - Havre-Saint-Pierre - Baie-Johan-Beetz - Natashquan, back by Havre-Saint-Pierre, Sept-Îles, Baie-Comeau and Quebec (Monday) to Montreal Tuesday morning (the
+    7-night Natashquan voyage; alternate weeks 6 nights to Havre-Saint-Pierre). Tuesday from 1946 - 47 (Claude's choice over the May 12, 1948 Wednesday first sailing).
+  - m.v. North Gaspé: the 5 1/2-day Gaspé cruise, Montreal Tuesday 7.30 p.m. - Quebec - Cap-Chat - Ste-Anne-des-Monts - Mont-Louis - Rivière-Madeleine - Grande-Vallée - Cloridorme -
+    Rivière-au-Renard - Gaspé, back by Ste-Anne-des-Monts and Quebec (the 1945 advertisement's days). Alternate weeks the Magdalens cruise; counting from May 11 the week is a Gaspé week.
+  - s.s. Magdalen (Magdalen Islands Transportation Co.): Pictou - Souris - Cap-aux-Meules Tuesdays (2 days); Pictou - Souris - Havre-Aubert - Cap-aux-Meules - Grande-Entrée and back
+    Thursdays (5 days).
+  - Lower St Lawrence Transportation Co. (Clarke, Rimouski), 1950 brochure and 1950s schedules standing in for 1948: m.v. Rimouski, Rimouski 9 a.m. - Forestville (Mon., Wed., Thu.,
+    Sat.) and Ragueneau (Tue., Fri.); m.v. Jean Brillant, Rimouski 9 a.m. Mon. and Thu. by Baie-Comeau to Sept-Îles and back by Clarke City, and a Wednesday day trip to Baie-Comeau;
+    m.v. Matane, Matane - Godbout - Franquelin - Baie-Comeau and back daily (seven days a week 1938 - 61: Matane historical society exhibition, Radio-Canada 2018; Brendan).
+  - Sources: "St Lawrence Saga" (clarkesteamship.wordpress.com, ch. 9 - 11 PDFs). The Gemini note on the Matane cited the UQAR thesis, which does not support it (checked).
+  - Port points APPROXIMATE (Claude); Montreal (Victoria Pier) and Quebec (Wolfe's Cove) shared with the existing lines. Not drawn (no 1948 dates): North Coaster, North Voyageur, North Pioneer.
+- Counts: 703 lines, 4543 trips, 7912 stops, 71 agencies; check_gtfs 0 problems.
