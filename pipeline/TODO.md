@@ -215,6 +215,11 @@ Maritime tables where the traced line differs from the printed miles by 1 mi and
     - Magdalen (Magdalen Islands Transportation Co., Clarke): Pictou - Souris - the Magdalens, 5-day sailings Thursdays, 2-day sailings Tuesdays (to Cap-aux-Meules); connects
       with the North Gaspé's Friday arrival.
     - Competitor: CTMA (Havre-aux-Maisons, Havre-Aubert), Montreal - Quebec - North Shore - Gaspé - Magdalens from 1946: no schedule found.
+    - Lower St Lawrence Transportation Co. (Clarke subsidiary, Rimouski; Brendan 23 Nov 2026 raised it): motorships Rimouski, Matane (1938), Jean Brillant (late 1930s), laid up
+      at Quebec in winter. Brendan's note: Matane - Godbout - Franquelin - Baie-Comeau daily, timed to the trains; Rimouski and Jean Brillant several times a week to Forestville,
+      Ragueneau, Baie-Comeau and on toward Sept-Îles (source of the note to confirm). St Lawrence Saga ch. 11 gives no 1948 schedule; nearest: the 1950 brochure (Rimouski 9 a.m.;
+      Rimouski to Forestville Mon., Wed., Thu., Sat.; Jean Brillant two-day cruises on her Mon. and Thu. sailings, one-day Wed. to Baie-Comeau), 1954 (Sept-Îles arrivals: Jean
+      Brillant Tue., Fri.; Matane Wed., Sat.) and 1958 (Matane 10 a.m. Mon., Sat. to Baie-Comeau, Franquelin, Godbout, Baie-Trinité; Tue., Thu. also Pentecôte, Shelter Bay, Sept-Îles).
   The map has only Canada Steamship Lines' Montreal - Quebec - Saguenay (cssg) in this area.
 - [ ] Water (Owen Sound Transportation Co. done in Version 183, estimated: a 1948 schedule would firm it up; Ontario Northland's Chief Commanda on Lake Nipissing done in Version 185, highly speculative: the regular 1948 days and hours wanted); Pelee Island and Wolfe Island ferries; Northumberland Ferries (Wood Islands - Caribou); Grand Manan ferry; Clarke Steamship (Gaspe, North Shore). Lake Winnipeg (Keenora) is in; the northern river boats were no longer scheduled common carriers after 1947 (Brendan).
 
