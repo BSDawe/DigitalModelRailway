@@ -3137,3 +3137,13 @@ A review of the whole project (Brendan: "have a peek through ... suggest improve
   Benton Harbor and Chicago - Michigan City, and the Ashley & Dustin steamer Put-in-Bay, Detroit - Put-in-Bay - Cedar Point, Toledo - Cedar Point and the Blue Water Bridge cruise
   (glk_build.py; printed in daylight time, shown an hour earlier; docks approximate). Colours #1f6f78, #3d5a80, #8a3b12 are Claude's picks.
 - Counts: 692 lines, 4449 trips, 7859 stops, 69 agencies; check_gtfs 0 problems.
+
+## Version 216
+- The Texas Electric Railway (Brendan, 23 Nov 2026), new step ter_build.py, kind X (an electric interurban: solid track, circle stations): Dallas - Denison and Dallas - Waco from the
+  Dallas Interurban Building. Track and station points: Ravenna's trace (@bromaeosaur.bsky.social on Bluesky; raw KML in the private repo, traces/texas/; the passenger main lines
+  and stations cut to traces/texas/texas_electric.json). Stations and miles: the company's 1948 Official Guide page (Vickery and Sterrett, which have no point, placed by the miles);
+  traced 76.0 / 96.8 mi against 77.2 / 96.5 printed. Times: the March 1939 schedule (american-rails.com/ter.html; Brendan: the reference for "almost every hour from 5:30 a.m. to
+  9:30 p.m." and the running times), timing points as printed, the other stations timed by distance (est.); the 1939 departures after 9.30 p.m. (Dallas 11.05 p.m., Denison 11.45 p.m.)
+  left out (Claude's reading of the 1948 page). The Corsicana Division (abandoned 1941) is not drawn. 56 trips; daily and daily except Sunday as in 1939.
+- Unnumbered interurban cars are labelled "Car" (num 'Car', like 'Train'). New view "Dallas, Denison and Waco" (Central time). Colour #c27c0e (dark #e8b04b) is Claude's pick.
+- Counts: 694 lines, 4505 trips, 7882 stops, 70 agencies; check_gtfs 0 problems.

@@ -22,3 +22,4 @@ traces/ontario/kmz_orm/
 traces/ontario/ontario_all.json
 traces/quebec/kmz/
 traces/quebec/quebec_all.json
+traces/texas/Texas_Electric_Railway.kml

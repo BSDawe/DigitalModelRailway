@@ -498,6 +498,13 @@
    "inputs": [
     "water_east.json"
    ]
+  },
+  {
+   "name": "ter_build",
+   "script": "ter_build.py",
+   "inputs": [
+    "traces/texas/texas_electric.json"
+   ]
   }
  ]
 }
