@@ -2,7 +2,7 @@
 
 One list for the Digital Model Railway: questions for Brendan, material he is to supply, and work for Claude. It merges OPEN_QUESTIONS.md with the TO DO lists that were kept in STATE.md (the last of them: "TO DO (1 November 2026)"), as Brendan asked on 9 Nov 2026.
 Claude adds items as they come up. When one is answered or done, it moves to "Done and answered" with the date. Each open item says what the build does in the meantime. Version tags (V143) say when an item was raised.
-Last updated 23 November 2026 (Version 218).
+Last updated 23 November 2026 (Version 219).
 
 ## Decisions for Brendan
 - [ ] Unnumbered connecting trains: branch sections printed in a parent train's column take the parent's number (e.g. on_cn_t126m / d / p / c / g). Through cars or separate connecting trains? No number, or "connection to No. 41"? (26 Oct) Brendan: much may settle as the branch tables come in.
@@ -15,6 +15,7 @@ Last updated 23 November 2026 (Version 218).
 - [ ] Railway colour guide (Brendan, 23 Nov 2026: "has the railway colour guide stopped updating?"). Yes: the header legend in page_template.html is hand-written and was last
   extended about 8 Nov (Quebec Railway, Light & Power). Missing railways drawn since: Rutland, Maine Central, Boston & Maine, New Haven, Pennsylvania, Baltimore & Ohio, Illinois
   Central, Chicago & Western Indiana, Lehigh Valley, Chicago & North Western, Barre & Chelsea, Grand River / Lake Erie & Northern and others with their own colour.
+  Also (V219): the long colour list now covers part of the area every view is fitted into (insets() in the page assumes a short header); collapsing it fixes the views.
   Brendan's spec (23 Nov 2026): a list you can collapse, ordered by trains per week (busiest railway first; no counts shown); it need not regenerate every build (Claude refreshes it by hand / a one-off script
   when railways are added). Subsidiaries are not listed separately (drawn in the parent's colour: E&N, DAR, QC, CV, GTW, Soo etc.); Maine Central IS listed (not a subsidiary).
   Interurban subsidiaries (CP electric: Grand River / Lake Erie & Northern; CN electric: Montreal & Southern Counties, NS&T) are not listed separately either. One swatch per
@@ -289,6 +290,9 @@ Each runs to an International Boundary point (time estimated) or to the last Can
 - [x] Sydney & Louisburg: built (V163). Colour #5B3A8C is Claude's pick. Victoria Jct. - Glace Bay 9.9 mi traced / 11.0 printed (the trace may take a later route).
 
 ## Done and answered
+### Done in Version 219 (24 Nov 2026)
+- Portland Traction Co., Oregon City Division (Time Table No. 2, February 1, 1948; track from the PRL&P KMZ). Open: Moorage and Harney Avenue positions (no miles printed); the
+  Saturday / Sunday local-stop rules not modelled; colour (Claude's pick).
 ### Done in Version 218 (23 Nov 2026)
 - Clarke Steamship coastal services, simulated weekly schedules: North Shore (Montreal - Natashquan), North Gaspé (Gaspé cruise; the week stays a Gaspé week by the count from May 11, Brendan 23 Nov 2026), Magdalen (Pictou - Magdalens), and the Lower St
   Lawrence Transportation Co. motorships Rimouski, Jean Brillant and Matane.

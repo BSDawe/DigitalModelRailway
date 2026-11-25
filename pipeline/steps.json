@@ -516,6 +516,13 @@
    "inputs": [
     "traces/texas/texas_electric.json"
    ]
+  },
+  {
+   "name": "ptc_build",
+   "script": "ptc_build.py",
+   "inputs": [
+    "traces/oregon/portland_traction_oregon_city.json"
+   ]
   }
  ]
 }

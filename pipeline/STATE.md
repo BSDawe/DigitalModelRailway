@@ -1,7 +1,7 @@
 # The Digital Model Railway — project state
 
 Read this first. It is meant to be enough to start a short, single-task chat without replaying the project's history.
-Last updated 23 November 2026 (Version 218). This file is the current state and the standing rules; the version-by-version history is in CHANGELOG.md.
+Last updated 23 November 2026 (Version 219). This file is the current state and the standing rules; the version-by-version history is in CHANGELOG.md.
 
 ## What this is
 
@@ -338,6 +338,7 @@ After an accepted build: `cp viz_data.json tools/.baseline_viz.json`.
 
 ## Recent versions (one line each; the detail is in CHANGELOG.md)
 
+- 219: Portland Traction Co., Portland - Oregon City (Time Table No. 2, February 1948; PRL&P KMZ track).
 - 218: Clarke Steamship coastal services (North Shore, North Gaspé, Magdalen; the Rimouski / Matane motorships), simulated weekly schedules.
 - 217: TH&B trains on to Black Rock and Buffalo (Central Terminal); train notes and sources shown for every railway.
 - 216: the Texas Electric Railway (Dallas - Denison, Dallas - Waco; Ravenna's trace, 1939 times as the 1948 pattern).
@@ -351,7 +352,6 @@ After an accepted build: `cp viz_data.json tools/.baseline_viz.json`.
 - 208: station names by zoom (city zoomed out, station zoomed in), CPR for CP, station owners from the track; North Bay ONR stops on the CN / CPR stations; Straits car ferry over water.
 - 207: the Rutland Railroad (Tables 1, 4, 6; New York - Montreal through trains; Table 3 Boston waits for a B&M trace).
 - 206: Troy Union Station over the Troy Union Railroad (union colour) and Brendan's Green Island bridge.
-- 205: the Delaware & Hudson (Official Guide Tables 1, 2, 3, 5, 7, 9); New York - Montreal trains through from Grand Central to Windsor Station.
 - 204: CN trains changing number at Hamilton (Table 79: 101/102, 89/90, 187/184, 93/94, 91/92, 107/108) joined as through trains.
 - 200: Arnold Transit from the August 1950 Official Guide (stand-in for July 1948): five St. Ignace and five Mackinaw City sailings each way; Mackinac Island - Les Cheneaux - Cedarville.
 - 199: the Straits of Mackinac car ferry drawn as a train ferry; Arnold Transit St. Ignace - Mackinac Island boats (atc_build.py).

@@ -3173,3 +3173,14 @@ A review of the whole project (Brendan: "have a peek through ... suggest improve
   - Sources: "St Lawrence Saga" (clarkesteamship.wordpress.com, ch. 9 - 11 PDFs). The Gemini note on the Matane cited the UQAR thesis, which does not support it (checked).
   - Port points APPROXIMATE (Claude); Montreal (Victoria Pier) and Quebec (Wolfe's Cove) shared with the existing lines. Not drawn (no 1948 dates): North Coaster, North Voyageur, North Pioneer.
 - Counts: 703 lines, 4543 trips, 7912 stops, 71 agencies; check_gtfs 0 problems.
+
+## Version 219
+- Portland Traction Company, Oregon City Division (Brendan, 24 Nov 2026: "an additional interurban"), new step ptc_build.py, kind Y (interurban; colour #2f6f8f, Claude's pick):
+  Portland (S.W. 1st & Washington) - Hawthorne Bridge - East Portland - The Oaks - Golf Junction - Milwaukie - Oak Grove - Gladstone - Oregon City (5th & Main). Time Table No. 2,
+  effective February 1, 1948 (Brendan's scan; private repo scans/ptc/), Pacific Standard Time, transcribed in the script: 50 cars each way, incl. the Oak Grove and Milwaukie
+  locals, East Portland-only and Golf Jct. starts; days (X, XX) and the limited cars (no stops north of Oak Grove / Island / Lakewood, southbound) as printed. The 36 stations of the
+  list at their printed miles (Moorage and Harney Avenue, no miles printed, placed half-way); stations between the timing points timed by distance (est.).
+- Track: Brendan's Portland Railway, Light & Power Co. KMZ (raw in the private repo, traces/oregon/); the Oregon City line joined from its pieces (traces/oregon/
+  portland_traction_oregon_city.json), 14.0 mi traced against 13.94 printed. New view "Portland and Oregon City" (a turned box).
+- Noted: the header's long colour list now covers part of the area every view is fitted into (insets() assumes a short header): the collapsible colour guide (TODO) fixes it.
+- Counts: 704 lines, 4643 trips, 7948 stops, 72 agencies; check_gtfs 0 problems.
