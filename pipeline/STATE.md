@@ -1,7 +1,7 @@
 # The Digital Model Railway — project state
 
 Read this first. It is meant to be enough to start a short, single-task chat without replaying the project's history.
-Last updated 24 November 2026 (Version 222). This file is the current state and the standing rules; the version-by-version history is in CHANGELOG.md.
+Last updated 25 November 2026 (Version 223). This file is the current state and the standing rules; the version-by-version history is in CHANGELOG.md.
 
 ## What this is
 
@@ -342,6 +342,7 @@ After an accepted build: `cp viz_data.json tools/.baseline_viz.json`.
 
 ## Recent versions (one line each; the detail is in CHANGELOG.md)
 
+- 223: the Baltimore & Annapolis Railroad (Camden Station - Annapolis, Bladen Street; B&O trackage into Camden drawn as B&O).
 - 222: Portland Traction track from Brendan's corrected KML (1st / 2nd Ave loop, East Portland, Golf Jct.); stations anchored at their streets.
 - 221: Portland Traction stations re-anchored (Linneman Jct. at the junction; Oregon City miles to 3rd and Main).
 - 220: Portland Traction Gresham Division; Oregon City weekend local stops; tools/export_track_kml.py (KML for hand correction).
@@ -349,7 +350,6 @@ After an accepted build: `cp viz_data.json tools/.baseline_viz.json`.
 - 218: Clarke Steamship coastal services (North Shore, North Gaspé, Magdalen; the Rimouski / Matane motorships), simulated weekly schedules.
 - 217: TH&B trains on to Black Rock and Buffalo (Central Terminal); train notes and sources shown for every railway.
 - 216: the Texas Electric Railway (Dallas - Denison, Dallas - Waco; Ravenna's trace, 1939 times as the 1948 pattern).
-- 214: the Gull one Maine Central train Saint John - Boston; Portland Union Station on track; Waterville, Bangor, McAdam points; Portland (Grand Trunk).
 - 213: the Gull (Maine Central / B&M Boston - Portland - Bangor - Vanceboro); MC trains join the IC at Kensington.
 - 212: CP Toronto - Windsor trains on to Detroit (Michigan Central Station).
 - 211: Niagara and International bridges, Tonawanda bypass, Chicago approaches on track (IC brown), N.Y.C. Table 53, the Adirondack Division (Montreal - Utica, Lake Placid).

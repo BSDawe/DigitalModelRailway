@@ -2,18 +2,11 @@
 
 One list for the Digital Model Railway: questions for Brendan, material he is to supply, and work for Claude. It merges OPEN_QUESTIONS.md with the TO DO lists that were kept in STATE.md (the last of them: "TO DO (1 November 2026)"), as Brendan asked on 9 Nov 2026.
 Claude adds items as they come up. When one is answered or done, it moves to "Done and answered" with the date. Each open item says what the build does in the meantime. Version tags (V143) say when an item was raised.
-Last updated 24 November 2026 (Version 222).
+Last updated 25 November 2026 (Version 223).
 
 ## Decisions for Brendan
 - [ ] Unnumbered connecting trains: branch sections printed in a parent train's column take the parent's number (e.g. on_cn_t126m / d / p / c / g). Through cars or separate connecting trains? No number, or "connection to No. 41"? (26 Oct) Brendan: much may settle as the branch tables come in.
 - [ ] CN Table 116 (Longlac - Fort William, Nos. 79 / 80): the Toronto section may be a connection with Nos. 3 / 4 at Longlac rather than through cars (Brendan not certain). Matters for chaining. (23 Oct)
-
-## Waiting for Brendan
-- [ ] Baltimore & Annapolis Railroad (Brendan, 25 Nov 2026; Official Guide April 25, 1948, Eastern Daylight time, scan in the session): NOT BUILT, waiting for Brendan's station
-  positions (he is identifying them from data; do not place stations before then). Ready: his KMZ (Wikipedia main line + his edits: the B&A Baltimore terminal route, the B&O
-  Camden Station tracks drawn as B&O (trackage rights, steam track), the Bladen Street station approach), about 25.4 mi Camden Station - Bladen Street. Camden Station is the B&O
-  station at the trace end; the Annapolis terminal is Bladen Street (Brendan). 30 cars south, 25 north, ends only printed; daily / ex Sun / Sat only; holidays ignored.
-  Livery: a green of the period that stands out from the PRR and B&O (Brendan); Claude's shade to pick.
 
 ## Fixes queued (Brendan: "don't fix yet"; ask before the next rebuild whether to include them)
 - [ ] Alcoa Steamship Co. (Brendan, 23 Nov 2026, Official Guide page): fortnightly sailings from Montreal and Halifax to Hamilton (Bermuda), St. Kitts, Antigua, St. Lucia,
@@ -297,6 +290,9 @@ Each runs to an International Boundary point (time estimated) or to the last Can
 - [x] Sydney & Louisburg: built (V163). Colour #5B3A8C is Claude's pick. Victoria Jct. - Glace Bay 9.9 mi traced / 11.0 printed (the trace may take a later route).
 
 ## Done and answered
+### Done in Version 223 (25 Nov 2026)
+- Baltimore & Annapolis Railroad built (bna_build.py). Open: station points are place names snapped to the track (approximate; Joyce 1.2 km, Severnside 0.6 km off the track):
+  real station points would replace them; the view sits partly under the header (the colour-guide item in "Fixes queued").
 ### Done in Version 222 (24 Nov 2026)
 - Portland Traction track from Brendan's corrected KML (tools/import_track_kml.py). Re-exported for any further correction. Open: the Oregon City 3rd and Main anchor (assumed
   130 m short of 5th and Main: a pin at 3rd and at 5th & Main would settle it); the inbound way on 1st Avenue is not drawn; the Gresham depot position (17.08 mi traced, 18.45 printed).

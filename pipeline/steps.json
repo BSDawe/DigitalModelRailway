@@ -524,6 +524,13 @@
     "traces/oregon/portland_traction_pieces.json",
     "traces/oregon/portland_traction_points.json"
    ]
+  },
+  {
+   "name": "bna_build",
+   "script": "bna_build.py",
+   "inputs": [
+    "traces/maryland/Baltimore_and_Annapolis_Railroad_Brendan_Edits.kmz"
+   ]
   }
  ]
 }

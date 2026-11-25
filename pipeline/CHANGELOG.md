@@ -3214,3 +3214,16 @@ A review of the whole project (Brendan: "have a peek through ... suggest improve
   mile-placed stations sat too far north, by track 167 m at Lakewood, 329 m Courtney, 357 m Oak Grove, 365 m Concord, 443 m Hull Avenue): those five are anchored at their streets
   and the stations between respaced by printed miles. Oregon City miles still anchored at 3rd and Main (assumed, 130 m short of the 5th and Main terminus).
 - Counts unchanged: 705 lines, 4709 trips, 7972 stops, 72 agencies; check_gtfs 0 problems.
+
+## Version 223
+- Baltimore & Annapolis Railroad (Brendan, 25 Nov 2026: "another interurban"), new step bna_build.py, kind Z (interurban; colour #3c8d40, a period traction green standing out from
+  the PRR and B&O: Brendan asked for green, the shade is Claude's): Baltimore (Camden Station) - Glen Burnie - Severna Park - Annapolis (Bladen Street). Official Guide, April 25,
+  1948 (Brendan's scan; Eastern Daylight time, shown four hours earlier on the Pacific clock): 30 cars south, 25 north, days as printed (daily; daily except Sunday; Saturday only);
+  only the ends printed, the 29 stations between timed by distance (est.). The 1.00 a.m. car from Baltimore is the 9.00 p.m. car the evening before on the Pacific clock.
+- Track: the Wikipedia trace with Brendan's edits (traces/maryland/Baltimore_and_Annapolis_Railroad_Brendan_Edits.kmz): the B&A route into Baltimore, the B&O tracks into Camden
+  Station (trackage rights: drawn as B&O track, a segment own bo) and the Bladen Street station approach; 25.31 mi traced (1.57 on the B&O). Camden Station (a B&O station) and
+  Bladen Street (Brendan) are the ends.
+- Stations: Brendan's place-name points (not station data, he says), each put at the nearest point of the track and noted approximate. Far from the track: Joyce 1177 m,
+  Severnside 625, Arnold 455, Winchester 440, Pumphreys 405, Westport 318, Garland 278, Rosemont 222, West Annapolis 202 m.
+- Standing rule: holidays are ignored (Brendan, 25 Nov 2026). New view "Baltimore and Annapolis" (Eastern time).
+- Counts: 706 lines, 4764 trips, 8003 stops, 73 agencies; check_gtfs 0 problems.
