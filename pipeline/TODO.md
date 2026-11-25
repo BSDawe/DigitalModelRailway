@@ -9,6 +9,9 @@ Last updated 25 November 2026 (Version 224).
 - [ ] CN Table 116 (Longlac - Fort William, Nos. 79 / 80): the Toronto section may be a connection with Nos. 3 / 4 at Longlac rather than through cars (Brendan not certain). Matters for chaining. (23 Oct)
 
 ## Fixes queued (Brendan: "don't fix yet"; ask before the next rebuild whether to include them)
+- [ ] Buffalo routing (Brendan, 25 Nov 2026): two N.Y.C. routes near Buffalo. The Niagara Branch via Terrace Station, and the Belt Line round the city to the north-east.
+  Trains calling at Terrace Station (all trains via Niagara Falls) go by the Niagara Branch. Trains for the International Bridge that do not call at Terrace Station bypass
+  downtown Buffalo by the Belt Line. Check which trains on the map take which, and whether the Belt Line track is in the trace.
 - [ ] Alcoa Steamship Co. (Brendan, 23 Nov 2026, Official Guide page): fortnightly sailings from Montreal and Halifax to Hamilton (Bermuda), St. Kitts, Antigua, St. Lucia,
   Barbados, St. Vincent, Grenada, Port of Spain, Georgetown; also calls Dominica, Montserrat, Martinique and Guadeloupe as cargo offers. No dates: like the other ocean sailings
   (draw to the edge of the water file), a dated July 1948 sailing is needed (Montreal Gazette / Halifax shipping columns, with the Lady boats).
