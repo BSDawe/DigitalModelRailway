@@ -1,7 +1,7 @@
 # The Digital Model Railway — project state
 
 Read this first. It is meant to be enough to start a short, single-task chat without replaying the project's history.
-Last updated 25 November 2026 (Version 223). This file is the current state and the standing rules; the version-by-version history is in CHANGELOG.md.
+Last updated 25 November 2026 (Version 224). This file is the current state and the standing rules; the version-by-version history is in CHANGELOG.md.
 
 ## What this is
 
@@ -327,6 +327,7 @@ and have coarser copies for zoomed-out views (`pieces`, `LOD`). So a frame costs
 the occasional base redraw.
 
 - Anything new that is drawn every frame must be cheap and belong to a moving thing. Static things go in `renderBase`.
+- Per frame (V224): off-screen trains are skipped, the day's trips are cached (`activeTrips`), and the "On the line" list is rebuilt at most once a second. Keep it so.
 - `python3 tools/perf.py` prints frame times by view for a desktop and a phone-sized screen (headless, no GPU, so pessimistic). At Version 33:
   about 4 ms a frame still or panning (it was about 90 ms at Version 32), and 45–80 ms for a base redraw. Re-run it after adding lines.
 
@@ -342,6 +343,7 @@ After an accepted build: `cp viz_data.json tools/.baseline_viz.json`.
 
 ## Recent versions (one line each; the detail is in CHANGELOG.md)
 
+- 224: smoother animation (list rebuilt at most once a second, the day's trips cached, off-screen trains skipped, cheaper car drawing).
 - 223: the Baltimore & Annapolis Railroad (Camden Station - Annapolis, Bladen Street; B&O trackage into Camden drawn as B&O).
 - 222: Portland Traction track from Brendan's corrected KML (1st / 2nd Ave loop, East Portland, Golf Jct.); stations anchored at their streets.
 - 221: Portland Traction stations re-anchored (Linneman Jct. at the junction; Oregon City miles to 3rd and Main).
@@ -350,7 +352,6 @@ After an accepted build: `cp viz_data.json tools/.baseline_viz.json`.
 - 218: Clarke Steamship coastal services (North Shore, North Gaspé, Magdalen; the Rimouski / Matane motorships), simulated weekly schedules.
 - 217: TH&B trains on to Black Rock and Buffalo (Central Terminal); train notes and sources shown for every railway.
 - 216: the Texas Electric Railway (Dallas - Denison, Dallas - Waco; Ravenna's trace, 1939 times as the 1948 pattern).
-- 213: the Gull (Maine Central / B&M Boston - Portland - Bangor - Vanceboro); MC trains join the IC at Kensington.
 - 212: CP Toronto - Windsor trains on to Detroit (Michigan Central Station).
 - 211: Niagara and International bridges, Tonawanda bypass, Chicago approaches on track (IC brown), N.Y.C. Table 53, the Adirondack Division (Montreal - Utica, Lake Placid).
 - 210: the Michigan Central Chicago - Detroit - Ontario - Buffalo and on to New York (N.Y.C. Tables 6, 7, 9, 11); Central Station and La Salle Street approaches dashed.

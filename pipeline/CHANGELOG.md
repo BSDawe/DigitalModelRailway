@@ -3227,3 +3227,14 @@ A review of the whole project (Brendan: "have a peek through ... suggest improve
   Severnside 625, Arnold 455, Winchester 440, Pumphreys 405, Westport 318, Garland 278, Rosemont 222, West Annapolis 202 m.
 - Standing rule: holidays are ignored (Brendan, 25 Nov 2026). New view "Baltimore and Annapolis" (Eastern time).
 - Counts: 706 lines, 4764 trips, 8003 stops, 73 agencies; check_gtfs 0 problems.
+
+## Version 224
+- Smoother animation (Brendan, 25 Nov 2026: "levels of jerkiness seem to have increased"). Measured (headless, no GPU): frames hitched to 50 ms every few frames, and a still frame
+  of a regional view took 13 - 17 ms. Causes and fixes in page_template.html:
+  - the "On the line" list (about 500 rows) was rebuilt every time a minute ticked over (every second at 60x): now rebuilt at most once a second of real time;
+  - the trips running on the day were filtered from all ~6,000 every frame (three times with a train selected): now worked out once per day;
+  - every train on the continent was drawn every frame, wherever the view was: trains off the screen are skipped;
+  - the cars are drawn with one transform each instead of save / translate / rotate / restore, and with square corners when tiny (zoomed far out).
+  tools/perf.py now (desktop, still / pan): Lower Mainland 3.6 / 2.3 ms (was 13.4 / 19.4), Sound 5.1 / 4.0, Kettle Valley 4.5 / 3.1, all 10.0 / 8.3 (was 17.4 / 14.8); in a 300-frame
+  playback the 90th-percentile frame is 16.7 ms (one frame at 60 Hz) in both the Lower Mainland and whole-map views (was 50 and 33).
+  tools/perf.py launches Playwright's own Chromium (the old /opt path is gone).

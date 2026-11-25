@@ -496,7 +496,8 @@ const runsOn = (svc, day) => SERVICES[day].includes(svc) || (/^W_[01]{7}$/.test(
 const weekdaysOf = svc => { if (!/^W_[01]{7}$/.test(svc)) return ''; const b = [...svc.slice(2)], N = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
   const on = N.filter((_, i) => b[i] === '1'), off = N.filter((_, i) => b[i] === '0'), list = a => a.length === 1 ? a[0] : a.slice(0, -1).join(', ') + ' and ' + a[a.length - 1];
   return !off.length ? 'Daily' : off.length <= 2 ? 'Daily except ' + list(off) : list(on.map(d => d + 's')); };
-const activeTrips = day => TRIPS.filter(t => runsOn(t.svc, t.early ? NEXT[day] : t.carry ? dayBack(day, t.carry) : day));
+const _active = {};   // the trips of each day, worked out once (TRIPS is complete before the first frame): it was filtered every frame (25 Nov 2026, jerkiness)
+const activeTrips = day => _active[day] || (_active[day] = TRIPS.filter(t => runsOn(t.svc, t.early ? NEXT[day] : t.carry ? dayBack(day, t.carry) : day)));
 
 // ---------------------------------------------------------------- time formatting (timetable style)
 // the time zone shown (Brendan, 5 Nov 2026): every time is kept in Pacific Standard Time and shown in the zone chosen, in standard time (as the 1948 Guide)
@@ -853,6 +854,8 @@ function draw(states, now = performance.now()) {
   states = [...states].sort((a, b) => (b.t.local ? 1 : 0) - (a.t.local ? 1 : 0));
   const baseLen = Math.max(20, Math.min(34, 20 + (k - 0.01) * 300));
   for (const { t, st } of states) {
+    const [sx, sy] = toScreen(st.x, st.y);   // off the screen: not drawn (every train was drawn each frame, wherever the view was; 25 Nov 2026)
+    if (sx < -120 || sy < -120 || sx > W + 120 || sy > H + 120) continue;
     if (t.water) { drawBoat(t, st); continue; }
     drawConsist(t, st);                                             // B.C. Electric cars too: the interurban consist (four cars), since 29 Oct 2026
   }
@@ -885,22 +888,22 @@ function drawConsist(t, st) {
   const n = inter ? 3 : Math.max(2, Math.min(/local|mixed/i.test(t.label || '') ? 4 : 7, Math.floor(48 / (seg * k)) - 1));
   const col = colors[t.livery || KIND_COLOR[t.kind]];             // a line may carry its own livery (the Spokane International)
   const selected = S.sel?.kind === 'train' && S.sel.id === t.id;
+  const mixed = /mixed/i.test(t.label || '');
   for (let i = n; i >= 0; i--) {
     const c = st.d + back * (i + 0.5) * seg;
     if (c < 0 || c > RR.len) continue;
     const p = along(c, t.rk), [x, y] = toScreen(p.x, p.y);
-    ctx.save(); ctx.translate(x, y); ctx.rotate(p.ang);
+    const ca = Math.cos(p.ang), sa = Math.sin(p.ang); ctx.setTransform(DPR * ca, DPR * sa, -DPR * sa, DPR * ca, DPR * x, DPR * y);   // cheaper than save / translate / rotate / restore (25 Nov 2026)
     const L = seg * k * 0.86, Wd = i === 0 ? 8 : 7;
-    roundRect(-L / 2, -Wd / 2, L, Wd, 2);
-    const mixed = /mixed/i.test(t.label || '');
+    if (L < 7) { ctx.beginPath(); ctx.rect(-L / 2, -Wd / 2, L, Wd); } else roundRect(-L / 2, -Wd / 2, L, Wd, 2);   // tiny cars (zoomed far out): square corners
     ctx.fillStyle = i === 0 && !inter ? colors.loco : (mixed && i < n) ? colors.freight : col; ctx.fill();
     ctx.lineWidth = selected ? 2 : 1; ctx.strokeStyle = selected ? col : colors.paper; ctx.stroke();
     if (t.livery && i > 0 && L > 5) { ctx.fillStyle = colors[t.livery + '-gold']; ctx.fillRect(-L / 2 + 1.5, -1, L - 3, 2); }   // the band along the cars
     if (!t.livery && KIND_COLOR[t.kind] === 'bcer' && L > 5) { ctx.fillStyle = colors['bcer-cream']; ctx.fillRect(-L / 2 + 1.5, -1, L - 3, 2); }   // B.C. Electric: red and cream
     if (t.kind === 'P' && L > 5) { ctx.fillStyle = colors['lps-gold']; ctx.fillRect(-L / 2 + 1.5, -1, L - 3, 2); }
     if (inter && i === 0) { ctx.beginPath(); ctx.arc(-back * (L / 2 - 2.5), 0, 1.6, 0, Math.PI * 2); ctx.fillStyle = colors.paper; ctx.fill(); }   // direction nose
-    ctx.restore();
   }
+  ctx.setTransform(DPR, 0, 0, DPR, 0, 0);
   const [hx, hy] = toScreen(st.x, st.y);
   if (view.k >= FAR_K || selected) {
   ctx.font = `700 11px ${getFont('ui')}`; ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
@@ -950,7 +953,10 @@ function statusLine(t, st, T) {
   const next = nextStop(t, st);
   return next ? `Next ${esc(ST[next[0]].name)} ${tspan(next[1])}` : `Arriving ${esc(t.dest.name)}`;
 }
+let listAt = 0;
 function renderList(states, T) {
+  const now = performance.now();   // the list is rebuilt at most once a second (unless something cleared panelKey): rebuilding ~500 rows every frame made the animation jerky (25 Nov 2026)
+  if (panelKey.startsWith('list|') && now - listAt < 1000) return; listAt = now;
   const key = 'list|' + S.day + '|' + Math.floor(T / 60) + '|' + states.map(x => x.t.id + (x.st.moving ? (nextStop(x.t, x.st)?.[0] ?? x.st.to) : 'a' + x.st.at)).join(',');
   if (key === panelKey) return; panelKey = key;
   head.innerHTML = `<h2>On the line</h2><span class="eyebrow">${states.length} moving</span>`;

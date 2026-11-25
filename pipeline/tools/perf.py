@@ -12,7 +12,7 @@ JS = """() => { S.playing = false; const res = {};
     res[v] = [Math.round(still * 10) / 10, Math.round(pan * 10) / 10, st.length]; }
   return res; }"""
 with sync_playwright() as p:
-    b = p.chromium.launch(executable_path='/opt/pw-browsers/chromium')
+    b = p.chromium.launch()
     for name, vp, dpr in (('desktop 1500x900', {'width': 1500, 'height': 900}, 1), ('phone 390x844 @3x', {'width': 390, 'height': 844}, 3)):
         pg = b.new_page(viewport=vp, device_scale_factor=dpr); pg.goto('file://' + os.path.join(out, 'page_test.html')); pg.wait_for_timeout(2500)
         r = pg.evaluate(JS); print(name, ' '.join(f"{k}: still {v[0]} ms, pan {v[1]} ms ({v[2]} moving)" for k, v in r.items())); pg.close()
