@@ -239,6 +239,7 @@ lat, mile, lmile?, principal, gid, note, xy?, slow?}], dirLabels, segments [{own
 
 ## Conventions Brendan has set
 
+- **Holidays are ignored** (Brendan, 25 Nov 2026): "except holidays" / "will not run holidays" signs do not take trains off any day of the target week (Monday 5 July 1948 included).
 - Track hand correction (24 Nov 2026): tools/export_track_kml.py OUT.kml KEY... writes the drawn lines as a KML (pieces "<key>-NN | A - B", station pins "<gid> | name");
   Brendan redraws pieces, drags pins and returns it; tools/import_track_kml.py SENT.kml RETURNED.kml [--write PREFIX] lists what changed and writes traces/PREFIX_pieces.json
   and _points.json for the line's step. Keep both KMLs (sent and returned). His pins and street positions are anchors for mile placing; stations between are respaced by printed miles.

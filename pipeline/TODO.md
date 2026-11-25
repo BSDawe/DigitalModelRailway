@@ -8,6 +8,13 @@ Last updated 24 November 2026 (Version 222).
 - [ ] Unnumbered connecting trains: branch sections printed in a parent train's column take the parent's number (e.g. on_cn_t126m / d / p / c / g). Through cars or separate connecting trains? No number, or "connection to No. 41"? (26 Oct) Brendan: much may settle as the branch tables come in.
 - [ ] CN Table 116 (Longlac - Fort William, Nos. 79 / 80): the Toronto section may be a connection with Nos. 3 / 4 at Longlac rather than through cars (Brendan not certain). Matters for chaining. (23 Oct)
 
+## Waiting for Brendan
+- [ ] Baltimore & Annapolis Railroad (Brendan, 25 Nov 2026; Official Guide April 25, 1948, Eastern Daylight time, scan in the session): NOT BUILT, waiting for Brendan's station
+  positions (he is identifying them from data; do not place stations before then). Ready: his KMZ (Wikipedia main line + his edits: the B&A Baltimore terminal route, the B&O
+  Camden Station tracks drawn as B&O (trackage rights, steam track), the Bladen Street station approach), about 25.4 mi Camden Station - Bladen Street. Camden Station is the B&O
+  station at the trace end; the Annapolis terminal is Bladen Street (Brendan). 30 cars south, 25 north, ends only printed; daily / ex Sun / Sat only; holidays ignored.
+  Livery: a green of the period that stands out from the PRR and B&O (Brendan); Claude's shade to pick.
+
 ## Fixes queued (Brendan: "don't fix yet"; ask before the next rebuild whether to include them)
 - [ ] Alcoa Steamship Co. (Brendan, 23 Nov 2026, Official Guide page): fortnightly sailings from Montreal and Halifax to Hamilton (Bermuda), St. Kitts, Antigua, St. Lucia,
   Barbados, St. Vincent, Grenada, Port of Spain, Georgetown; also calls Dominica, Montserrat, Martinique and Guadeloupe as cargo offers. No dates: like the other ocean sailings
