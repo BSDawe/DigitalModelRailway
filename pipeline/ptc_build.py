@@ -24,16 +24,23 @@ def load(fn):
         route.append([p[0], p[1], round(d, 1)])
     return route
 NOTE = {'Portland': 'Portland, S.W. 1st Avenue and Washington Street', 'East Portland': 'East Portland, S.E. 1st Avenue and Hawthorne Boulevard',
-        'Oregon City': 'Oregon City, 5th and Main Streets', 'Gresham': 'Gresham, the Mt. Hood depot (position approximate: the end of the traced line)'}
-def place(route, ST, end_mi):
-    TOT = route[-1][2]; GOLF = min(route, key=lambda p: km(p, (-122.6538, 45.4584)))[2]
-    def chain_of(mi): return mi / 5.02 * GOLF if mi <= 5.02 else GOLF + (mi - 5.02) / (end_mi - 5.02) * (TOT - GOLF)
+        'Oregon City': 'Oregon City, 5th and Main Streets (the timetable\'s miles, 13.94, are to 3rd and Main)', 'Gresham': 'Gresham, the Mt. Hood depot (position approximate: the end of the traced line)'}
+def place(route, ST, end_mi, div):
+    TOT = route[-1][2]; at = lambda q: min(route, key=lambda p: km(p, q))[2]
+    # anchors: printed miles -> metres along the track (Brendan, 24 Nov 2026: Linneman Jct. at the real junction; Oregon City's miles are to 3rd and Main, the cars run on to 5th)
+    A = [(0, 0.0), (5.02, at((-122.6538, 45.4584)))]
+    A += [(14.89, at((-122.4717, 45.4879))), (end_mi, TOT)] if div == 'gr' else [(13.94, TOT - 130.0)]
+    def chain_of(mi):
+        for (m0, c0), (m1, c1) in zip(A, A[1:]):
+            if mi <= m1: return c0 + (mi - m0) / (m1 - m0) * (c1 - c0)
+        return A[-1][1]
     out = []
     for nm, mi, col in ST:
-        ch = chain_of(mi)
+        ch = TOT if nm == 'Oregon City' else chain_of(mi)
         j = max(i for i in range(len(route)) if route[i][2] <= ch); a, b = route[j], route[min(j + 1, len(route) - 1)]
         f = (ch - a[2]) / ((b[2] - a[2]) or 1)
-        note = NOTE.get(nm, nm) + ('; placed by the printed miles (approximate)' if nm not in ('Portland', 'Oregon City', 'Gresham') else '')
+        note = NOTE.get(nm, nm) + ('; placed by the printed miles (approximate)' if nm not in ('Portland', 'Oregon City', 'Gresham', 'Linneman Junction') else '')
+        if nm == 'Linneman Junction': note = 'Linneman Junction: the junction of the Gresham and Cazadero lines (the trace)'
         if nm in ('Moorage', 'Harney Avenue'): note = nm + ': no miles printed; placed half-way between its neighbours (approximate)'
         out.append(dict(name=nm, chain=round(ch, 1), lon=round(a[0] + f * (b[0] - a[0]), 6), lat=round(a[1] + f * (b[1] - a[1]), 6), mile=mi,
                         principal=col is not None or nm == 'East Portland', gid='PTC_' + nm.upper().replace('.', '').replace(' ', '_'), note=note, zname=nm, city=nm))
@@ -282,7 +289,7 @@ LINES = []
 for key, fn, ST, end_mi, blocks, div, desc, label, dl in (
         ('ptc_oc', 'portland_traction_oregon_city.json', OC_ST, 13.94, ((SOUTH, 'PGMODSC'), (NORTH, 'CSDOMGP')), 'oc', oc_desc, 'Portland – Oregon City (Portland Traction)', 'Oregon City'),
         ('ptc_gr', 'portland_traction_gresham.json', GR_ST, 18.45, ((GSOUTH, 'PGATBKRH'), (GNORTH, 'HRKBTAGP')), 'gr', gr_desc, 'Portland – Bellrose – Gresham (Portland Traction)', 'Gresham')):
-    route = load(fn); stations = place(route, ST, end_mi)
+    route = load(fn); stations = place(route, ST, end_mi, div)
     trips = make_trips(key, stations, ST, blocks, div, desc)
     LINES.append(dict(key=key, kind='Y', label=label, mainline=True, owner='ptc', src=SRC.format(label.split(' (')[0] + (' (Oregon City Division)' if div == 'oc' else ' (Gresham Division)')),
                       route=route, stations=stations, dirLabels=['to ' + dl, 'to Portland'], segments=[], trips=trips))

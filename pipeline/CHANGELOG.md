@@ -3197,3 +3197,10 @@ A review of the whole project (Brendan: "have a peek through ... suggest improve
 - tools/export_track_kml.py: exports drawn lines as a KML for hand correction (pieces cut at principal stations with stable ids, shared track once, station pins; estimates red).
   First export: the Portland Traction lines (13 pieces, 60 stations).
 - View "Portland, Oregon City and Gresham". Counts: 705 lines, 4709 trips, 7972 stops, 72 agencies; check_gtfs 0 problems.
+
+## Version 221
+- Portland Traction station placing (Brendan, 24 Nov 2026): Linneman Junction was placed well short of the real junction, and the stations west of it too far west (the printed
+  18.45 mi squeezed into 17.1 traced). Now anchored: printed miles stretched piecewise Portland - Golf Junction - Linneman Junction (at the junction in the trace) - Gresham, so
+  the Golf - Linneman stations sit by their printed miles over a stretch that traces at about the printed length; only Linneman - Gresham stays compressed. Oregon City: the
+  printed 13.94 mi are to 3rd and Main (the station list), the cars run on to 5th and Main (the timetable heading): the miles are anchored at 3rd, the terminus stays at 5th.
+- Counts unchanged: 705 lines, 4709 trips, 7972 stops.

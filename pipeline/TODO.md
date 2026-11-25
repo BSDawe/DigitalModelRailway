@@ -2,7 +2,7 @@
 
 One list for the Digital Model Railway: questions for Brendan, material he is to supply, and work for Claude. It merges OPEN_QUESTIONS.md with the TO DO lists that were kept in STATE.md (the last of them: "TO DO (1 November 2026)"), as Brendan asked on 9 Nov 2026.
 Claude adds items as they come up. When one is answered or done, it moves to "Done and answered" with the date. Each open item says what the build does in the meantime. Version tags (V143) say when an item was raised.
-Last updated 23 November 2026 (Version 220).
+Last updated 23 November 2026 (Version 221).
 
 ## Decisions for Brendan
 - [ ] Unnumbered connecting trains: branch sections printed in a parent train's column take the parent's number (e.g. on_cn_t126m / d / p / c / g). Through cars or separate connecting trains? No number, or "connection to No. 41"? (26 Oct) Brendan: much may settle as the branch tables come in.
@@ -291,7 +291,7 @@ Each runs to an International Boundary point (time estimated) or to the last Can
 
 ## Done and answered
 ### Done in Version 220 (24 Nov 2026)
-- Portland Traction Gresham Division; Oregon City weekend local stops. Track KML for hand correction sent (Portland_Traction_track_for_correction.kml): WAITING for Brendan's edits;
+- Portland Traction Gresham Division; Oregon City weekend local stops. Track KML for hand correction sent (Portland_Traction_track_for_correction.kml; re-sent after V221): WAITING for Brendan's edits;
   then write the reader (deleted / redrawn / new pieces and moved pins into traces/oregon and the station points). Open: the Gresham depot position (17.1 mi traced, 18.45 printed).
 ### Done in Version 219 (24 Nov 2026)
 - Portland Traction Co., Oregon City Division (Time Table No. 2, February 1, 1948; track from the PRL&P KMZ). Open: Moorage and Harney Avenue positions (no miles printed); colour.
