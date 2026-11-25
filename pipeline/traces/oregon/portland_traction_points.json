@@ -1,0 +1,40 @@
+{
+"source": "Brendan's hand corrections (323a2778-Portland_Traction_track_for_correction.kml)",
+"points": {
+"PTC_PORTLAND": [
+-122.6728043519638,
+45.51913603589766
+],
+"PTC_EAST_PORTLAND": [
+-122.6666536992384,
+45.51228108679692
+],
+"PTC_GOLF_JUNCTION": [
+-122.6538615767824,
+45.45846376814527
+]
+},
+"anchors": {
+"Lakewood": [
+-122.6362041,
+45.4343008
+],
+"Courtney": [
+-122.641474,
+45.4225128
+],
+"Oak Grove": [
+-122.6416159,
+45.4167434
+],
+"Concord": [
+-122.6342845,
+45.4065373
+],
+"Hull Avenue": [
+-122.6102334,
+45.3895578
+]
+},
+"anchors_note": "Brendan, 24 Nov 2026: mileage-placed stations south of Golf Jct. sat too far north of the streets they are named for (track distances: Lakewood 167 m, Courtney 329, Oak Grove 357, Concord 365, Hull Avenue 443; growing toward Oregon City). These points (the station moved that far along the V221 track) anchor the printed miles."
+}

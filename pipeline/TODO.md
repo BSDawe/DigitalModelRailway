@@ -290,9 +290,11 @@ Each runs to an International Boundary point (time estimated) or to the last Can
 - [x] Sydney & Louisburg: built (V163). Colour #5B3A8C is Claude's pick. Victoria Jct. - Glace Bay 9.9 mi traced / 11.0 printed (the trace may take a later route).
 
 ## Done and answered
+### Done in Version 222 (24 Nov 2026)
+- Portland Traction track from Brendan's corrected KML (tools/import_track_kml.py). Re-exported for any further correction. Open: the Oregon City 3rd and Main anchor (assumed
+  130 m short of 5th and Main: a pin at 3rd and at 5th & Main would settle it); the inbound way on 1st Avenue is not drawn; the Gresham depot position (17.08 mi traced, 18.45 printed).
 ### Done in Version 220 (24 Nov 2026)
-- Portland Traction Gresham Division; Oregon City weekend local stops. Track KML for hand correction sent (Portland_Traction_track_for_correction.kml; re-sent after V221): WAITING for Brendan's edits;
-  then write the reader (deleted / redrawn / new pieces and moved pins into traces/oregon and the station points). Open: the Gresham depot position (17.1 mi traced, 18.45 printed).
+- Portland Traction Gresham Division; Oregon City weekend local stops. Track KML for hand correction sent; corrections applied in V222. Open: the Gresham depot position (17.1 mi traced, 18.45 printed).
 ### Done in Version 219 (24 Nov 2026)
 - Portland Traction Co., Oregon City Division (Time Table No. 2, February 1, 1948; track from the PRL&P KMZ). Open: Moorage and Harney Avenue positions (no miles printed); colour.
 ### Done in Version 218 (23 Nov 2026)

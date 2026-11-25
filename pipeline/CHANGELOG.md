@@ -3204,3 +3204,13 @@ A review of the whole project (Brendan: "have a peek through ... suggest improve
   the Golf - Linneman stations sit by their printed miles over a stretch that traces at about the printed length; only Linneman - Gresham stays compressed. Oregon City: the
   printed 13.94 mi are to 3rd and Main (the station list), the cars run on to 5th and Main (the timetable heading): the miles are anchored at 3rd, the terminus stays at 5th.
 - Counts unchanged: 705 lines, 4709 trips, 7972 stops.
+
+## Version 222
+- Portland Traction track from Brendan's hand corrections (24 Nov 2026; his returned KML kept as traces/oregon/brendan_portland_traction_corrections.kml):
+  Portland station at the NE corner of S.W. 1st and Washington (the cars loop downtown, inbound on 1st, outbound on 2nd: the line is drawn from the station out by 2nd);
+  East Portland moved onto dry land and the turn south re-traced; Golf Junction reworked. Read back with the new tools/import_track_kml.py into
+  traces/oregon/portland_traction_pieces.json and portland_traction_points.json; ptc_build.py now joins the lines from those pieces (Oregon City 13.85 mi traced, Gresham 17.08).
+- Station placing: miles anchored at Brendan's Portland, East Portland and Golf Junction pins; south of Golf Junction at the streets the stations are named for (Brendan: the
+  mile-placed stations sat too far north, by track 167 m at Lakewood, 329 m Courtney, 357 m Oak Grove, 365 m Concord, 443 m Hull Avenue): those five are anchored at their streets
+  and the stations between respaced by printed miles. Oregon City miles still anchored at 3rd and Main (assumed, 130 m short of the 5th and Main terminus).
+- Counts unchanged: 705 lines, 4709 trips, 7972 stops, 72 agencies; check_gtfs 0 problems.

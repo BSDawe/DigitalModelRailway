@@ -1,7 +1,7 @@
 # The Digital Model Railway — project state
 
 Read this first. It is meant to be enough to start a short, single-task chat without replaying the project's history.
-Last updated 23 November 2026 (Version 221). This file is the current state and the standing rules; the version-by-version history is in CHANGELOG.md.
+Last updated 24 November 2026 (Version 222). This file is the current state and the standing rules; the version-by-version history is in CHANGELOG.md.
 
 ## What this is
 
@@ -239,6 +239,9 @@ lat, mile, lmile?, principal, gid, note, xy?, slow?}], dirLabels, segments [{own
 
 ## Conventions Brendan has set
 
+- Track hand correction (24 Nov 2026): tools/export_track_kml.py OUT.kml KEY... writes the drawn lines as a KML (pieces "<key>-NN | A - B", station pins "<gid> | name");
+  Brendan redraws pieces, drags pins and returns it; tools/import_track_kml.py SENT.kml RETURNED.kml [--write PREFIX] lists what changed and writes traces/PREFIX_pieces.json
+  and _points.json for the line's step. Keep both KMLs (sent and returned). His pins and street positions are anchors for mile placing; stations between are respaced by printed miles.
 - Standardise on the May 1948 Official Guide wherever its schedule is the same as what is in the map (Brendan, 3 October). Done for the CN
   main line: all 118 times the Guide prints between Jasper and Hope equal the 1949 folder's, so the source is given as April 25, 1948, with
   the 1949 folder supplying the stations the condensed Guide table leaves out. Not yet checked against the Guide: Hope–Vancouver, the CN
@@ -338,13 +341,13 @@ After an accepted build: `cp viz_data.json tools/.baseline_viz.json`.
 
 ## Recent versions (one line each; the detail is in CHANGELOG.md)
 
+- 222: Portland Traction track from Brendan's corrected KML (1st / 2nd Ave loop, East Portland, Golf Jct.); stations anchored at their streets.
 - 221: Portland Traction stations re-anchored (Linneman Jct. at the junction; Oregon City miles to 3rd and Main).
 - 220: Portland Traction Gresham Division; Oregon City weekend local stops; tools/export_track_kml.py (KML for hand correction).
 - 219: Portland Traction Co., Portland - Oregon City (Time Table No. 2, February 1948; PRL&P KMZ track).
 - 218: Clarke Steamship coastal services (North Shore, North Gaspé, Magdalen; the Rimouski / Matane motorships), simulated weekly schedules.
 - 217: TH&B trains on to Black Rock and Buffalo (Central Terminal); train notes and sources shown for every railway.
 - 216: the Texas Electric Railway (Dallas - Denison, Dallas - Waco; Ravenna's trace, 1939 times as the 1948 pattern).
-- 215: D&H Albany / Troy routing (Green Island curve; no northerly Albany crossing); Norton N.B.; union station owners; Milwaukee Clipper, C. & B. Line, Put-in-Bay steamer.
 - 214: the Gull one Maine Central train Saint John - Boston; Portland Union Station on track; Waterville, Bangor, McAdam points; Portland (Grand Trunk).
 - 213: the Gull (Maine Central / B&M Boston - Portland - Bangor - Vanceboro); MC trains join the IC at Kensington.
 - 212: CP Toronto - Windsor trains on to Detroit (Michigan Central Station).

@@ -521,8 +521,8 @@
    "name": "ptc_build",
    "script": "ptc_build.py",
    "inputs": [
-    "traces/oregon/portland_traction_oregon_city.json",
-    "traces/oregon/portland_traction_gresham.json"
+    "traces/oregon/portland_traction_pieces.json",
+    "traces/oregon/portland_traction_points.json"
    ]
   }
  ]

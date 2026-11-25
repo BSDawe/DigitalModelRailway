@@ -17,19 +17,40 @@ import csv, json, math, os
 HERE = os.path.dirname(os.path.abspath(__file__))
 GT = os.path.join(HERE, 'gtfs')
 def km(a, b): return math.hypot((a[0] - b[0]) * 111.32 * math.cos(math.radians((a[1] + b[1]) / 2)), (a[1] - b[1]) * 110.57)
-def load(fn):
-    tr = json.load(open(os.path.join(HERE, 'traces', 'oregon', fn))); route, d = [], 0.0
-    for k, p in enumerate(tr['coords']):
-        if k: d += km(tr['coords'][k - 1], p) * 1000
-        route.append([p[0], p[1], round(d, 1)])
+# Brendan's hand corrections (24 Nov 2026; tools/import_track_kml.py): the pieces as he returned them, his moved pins, and street anchors for the printed miles
+PIECES = json.load(open(os.path.join(HERE, 'traces', 'oregon', 'portland_traction_pieces.json')))['pieces']
+PTS = json.load(open(os.path.join(HERE, 'traces', 'oregon', 'portland_traction_points.json')))
+PINS, ANCH = PTS['points'], PTS.get('anchors', {})
+def load(key):
+    # Portland: the cars loop downtown, inbound on 1st Avenue, outbound on 2nd (Brendan); the line is drawn from the station (1st and Washington) on the outbound way
+    first = PIECES['ptc_oc-01']['coords']; k0 = min(range(len(first)), key=lambda k: km(first[k], PINS['PTC_PORTLAND']))
+    ids = ['ptc_oc-01', 'ptc_oc-02'] + sorted(i for i in PIECES if i.startswith(key + '-') and i not in ('ptc_oc-01', 'ptc_oc-02'))
+    pts = [PINS['PTC_PORTLAND']] + first[k0:]
+    for i in ids[1:]:
+        c = PIECES[i]['coords']
+        pts += c[1:] if km(pts[-1], c[0]) < 0.005 else c
+    route, d = [], 0.0
+    for k, p in enumerate(pts):
+        if k: d += km(pts[k - 1], p) * 1000
+        route.append([round(p[0], 7), round(p[1], 7), round(d, 1)])
     return route
 NOTE = {'Portland': 'Portland, S.W. 1st Avenue and Washington Street', 'East Portland': 'East Portland, S.E. 1st Avenue and Hawthorne Boulevard',
         'Oregon City': 'Oregon City, 5th and Main Streets (the timetable\'s miles, 13.94, are to 3rd and Main)', 'Gresham': 'Gresham, the Mt. Hood depot (position approximate: the end of the traced line)'}
 def place(route, ST, end_mi, div):
-    TOT = route[-1][2]; at = lambda q: min(route, key=lambda p: km(p, q))[2]
-    # anchors: printed miles -> metres along the track (Brendan, 24 Nov 2026: Linneman Jct. at the real junction; Oregon City's miles are to 3rd and Main, the cars run on to 5th)
-    A = [(0, 0.0), (5.02, at((-122.6538, 45.4584)))]
-    A += [(14.89, at((-122.4717, 45.4879))), (end_mi, TOT)] if div == 'gr' else [(13.94, TOT - 130.0)]
+    TOT = route[-1][2]
+    def at(q):   # metres along the track at the point nearest q (projected onto the segment)
+        best = None
+        for (x0, y0, c0), (x1, y1, c1) in zip(route, route[1:]):
+            dx, dy = x1 - x0, y1 - y0; L2 = dx * dx + dy * dy or 1e-18
+            f = max(0, min(1, ((q[0] - x0) * dx + (q[1] - y0) * dy) / L2)); p = (x0 + f * dx, y0 + f * dy); d = km(p, q)
+            if best is None or d < best[0]: best = (d, c0 + f * (c1 - c0))
+        return best[1]
+    # anchors: printed miles -> metres along the track. Brendan (24 Nov 2026): his pins for Portland, East Portland and Golf Jct.; Linneman Jct. at the real junction; on the Oregon City
+    # line the street-name stations Lakewood, Courtney, Oak Grove, Concord, Hull Avenue at his street offsets; Oregon City's miles are to 3rd and Main (the cars run on to 5th)
+    mi_of = {nm: mi for nm, mi, _ in ST}
+    A = [(0, 0.0), (0.81, at(PINS['PTC_EAST_PORTLAND'])), (5.02, at(PINS['PTC_GOLF_JUNCTION']))]
+    if div == 'oc': A += sorted((mi_of[nm], at(q)) for nm, q in ANCH.items()) + [(13.94, TOT - 130.0)]
+    else: A += [(14.89, at((-122.4717, 45.4879))), (end_mi, TOT)]
     def chain_of(mi):
         for (m0, c0), (m1, c1) in zip(A, A[1:]):
             if mi <= m1: return c0 + (mi - m0) / (m1 - m0) * (c1 - c0)
@@ -289,7 +310,7 @@ LINES = []
 for key, fn, ST, end_mi, blocks, div, desc, label, dl in (
         ('ptc_oc', 'portland_traction_oregon_city.json', OC_ST, 13.94, ((SOUTH, 'PGMODSC'), (NORTH, 'CSDOMGP')), 'oc', oc_desc, 'Portland – Oregon City (Portland Traction)', 'Oregon City'),
         ('ptc_gr', 'portland_traction_gresham.json', GR_ST, 18.45, ((GSOUTH, 'PGATBKRH'), (GNORTH, 'HRKBTAGP')), 'gr', gr_desc, 'Portland – Bellrose – Gresham (Portland Traction)', 'Gresham')):
-    route = load(fn); stations = place(route, ST, end_mi, div)
+    route = load(key); stations = place(route, ST, end_mi, div)
     trips = make_trips(key, stations, ST, blocks, div, desc)
     LINES.append(dict(key=key, kind='Y', label=label, mainline=True, owner='ptc', src=SRC.format(label.split(' (')[0] + (' (Oregon City Division)' if div == 'oc' else ' (Gresham Division)')),
                       route=route, stations=stations, dirLabels=['to ' + dl, 'to Portland'], segments=[], trips=trips))
