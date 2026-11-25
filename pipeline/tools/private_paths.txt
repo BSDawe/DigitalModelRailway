@@ -25,3 +25,4 @@ traces/quebec/quebec_all.json
 traces/texas/Texas_Electric_Railway.kml
 traces/oregon/Portland_Railway_Light_&_Power_Co.kmz
 scans/ptc/1948-02-01_PortlandTraction_OregonCity_TT2.pdf
+traces/chicago/Chicago_Interurbans_1948.kml

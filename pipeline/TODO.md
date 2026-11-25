@@ -8,6 +8,14 @@ Last updated 25 November 2026 (Version 224).
 - [ ] Unnumbered connecting trains: branch sections printed in a parent train's column take the parent's number (e.g. on_cn_t126m / d / p / c / g). Through cars or separate connecting trains? No number, or "connection to No. 41"? (26 Oct) Brendan: much may settle as the branch tables come in.
 - [ ] CN Table 116 (Longlac - Fort William, Nos. 79 / 80): the Toronto section may be a connection with Nos. 3 / 4 at Longlac rather than through cars (Brendan not certain). Matters for chaining. (23 Oct)
 
+## Waiting for Brendan
+- [ ] Chicago interurbans (Brendan, 25 Nov 2026: "I'm gonna do it"): the Chicago North Shore & Milwaukee and the Chicago Aurora & Elgin. Track: Mississippi Rails
+  (Chicago_Interurbans_1948.kml, private repo traces/chicago/): CNS&M 263 mi of pieces (with some Milwaukee Road), CA&E 101 mi (main line, Aurora, Batavia, Elgin, Geneva,
+  Hillside and Mount Carmel spurs), and the Chicago 'L' by its pre-1947 companies. Stations are unnamed polygons on the interurbans (centroid onto the track; names from the
+  timetables' station lists and miles); some 'L' polygons are named in their descriptions. The 'L' itself is NOT modelled for now (Brendan), but both interurbans run over 'L'
+  track into the Loop (CNS&M by the North Side 'L' to Roosevelt Road; CA&E by the Garfield Park 'L' to Wells Street): draw those stretches as 'L' (CTA) track.
+  Waiting for: the timetables (Official Guide or company folders, 1948).
+
 ## Fixes queued (Brendan: "don't fix yet"; ask before the next rebuild whether to include them)
 - [ ] Buffalo routing (Brendan, 25 Nov 2026): two N.Y.C. routes near Buffalo. The Niagara Branch via Terrace Station, and the Belt Line round the city to the north-east.
   Trains calling at Terrace Station (all trains via Niagara Falls) go by the Niagara Branch. Trains for the International Bridge that do not call at Terrace Station bypass
