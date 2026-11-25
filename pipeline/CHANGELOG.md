@@ -3184,3 +3184,16 @@ A review of the whole project (Brendan: "have a peek through ... suggest improve
   portland_traction_oregon_city.json), 14.0 mi traced against 13.94 printed. New view "Portland and Oregon City" (a turned box).
 - Noted: the header's long colour list now covers part of the area every view is fitted into (insets() assumes a short header): the collapsible colour guide (TODO) fixes it.
 - Counts: 704 lines, 4643 trips, 7948 stops, 72 agencies; check_gtfs 0 problems.
+
+## Version 220
+- Portland Traction Co., Gresham Division (Brendan, 24 Nov 2026; Time Table No. 2, February 1, 1948, Pacific Standard Time; WX4.org): Portland - East Portland - Golf Junction (shared
+  with the Oregon City line) - Ardenwald - Stanley - Bell - Kendall - Lents - Bellrose - Linneman Junction - Gresham (Mt. Hood depot). 58 cars, incl. the Stanley, Bell and Kendall
+  short workings, the East Portland starts and ends, the 5.15 p.m. limited to Wichita; days as printed. The 27 stations at their printed miles; stations between the timing points
+  timed by distance (est.). Track joined from the Mississippi Rails PRL&P KMZ (traces/oregon/portland_traction_gresham.json), 17.1 mi traced against 18.45 printed: the Gresham
+  depot end APPROXIMATE (Linneman Jct. traced 15.1 / printed 14.89; the printed 3.56 mi on to Gresham does not fit the trace).
+- Oregon City Division: the weekend local stops modelled (Brendan): "All Oak Grove trains make Local Stops on Saturday" (the limited Oak Grove locals: limited Mon. - Fri., all stops
+  Saturday) and "All Oregon City trains make Local Stops on Sunday" (the limited Oregon City cars: limited Mon. - Sat., all stops Sunday); 108 trips.
+- Sources credited as Brendan gave them: WX4.org (the timetables), Mississippi Rails (the PRL&P trace).
+- tools/export_track_kml.py: exports drawn lines as a KML for hand correction (pieces cut at principal stations with stable ids, shared track once, station pins; estimates red).
+  First export: the Portland Traction lines (13 pieces, 60 stations).
+- View "Portland, Oregon City and Gresham". Counts: 705 lines, 4709 trips, 7972 stops, 72 agencies; check_gtfs 0 problems.
