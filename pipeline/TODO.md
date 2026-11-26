@@ -25,6 +25,11 @@ Last updated 26 November 2026 (Version 228).
   boards, stations thinned when zoomed out.
 
 ## Fixes queued (Brendan: "don't fix yet"; ask before the next rebuild whether to include them)
+- [ ] Station panel text too long (Brendan, 26 Nov 2026). Now (Wells Street): "Chicago – Wheaton – Aurora (CA&E) mile 0.01" / "CTA station; also served by Chicago – Wheaton –
+  Aurora (CA&E), Chicago – Wheaton – Batavia (CA&E), Chicago – Wheaton – Elgin (CA&E). CA&E terminal (Wells Street Terminal), station polygon in the Mississippi Rails file."
+  Wanted: "Wells Street, Chicago" / "CA&E Mile 0" / "CTA Station, also served by Chicago Aurora & Elgin". So: the railway's short name and the mile (rounded, no line label);
+  "also served by" lists railways once each (not every line or direction); the placement / source notes (polygon, estimated, approximate) leave the panel (keep them in the
+  GTFS stop description and the KML export). Applies to every station, not only Chicago.
 - [ ] Views (Brendan, 26 Nov 2026): drop the "Chicago Aurora and Elgin" view; add a "Chicagoland" view for the whole metropolitan area (it will be very busy with trains),
   about [-88.40, -87.30, 41.55, 42.40] (Aurora / Elgin to Waukegan and Gary), Central time. Drop the "North Shore Line" view too (Brendan, 26 Nov 2026: Chicagoland replaces it). The existing
   "Chicago and the Twin Cities" view is the wide one.
