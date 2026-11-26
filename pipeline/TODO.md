@@ -25,6 +25,9 @@ Last updated 26 November 2026 (Version 228).
   boards, stations thinned when zoomed out.
 
 ## Fixes queued (Brendan: "don't fix yet"; ask before the next rebuild whether to include them)
+- [ ] CA&E additional Sunday service (Brendan, 26 Nov 2026: "Add to the queue the additional Sunday service. Model it off of the existing g Sunday only trains."): the
+  Sunday "frequent service" Chicago - Wheaton (first train from Chicago 7.00 a.m., last 2.35 a.m.; from Wheaton first 6.54 a.m., last 1.13 a.m.), not drawn in V228. Model it on
+  the existing trains (which ones "g" means here: being confirmed with Brendan).
 - [ ] Views (Brendan, 26 Nov 2026): drop the "Chicago Aurora and Elgin" view; add a "Chicagoland" view for the whole metropolitan area (it will be very busy with trains),
   about [-88.40, -87.30, 41.55, 42.40] (Aurora / Elgin to Waukegan and Gary), Central time. Drop the "North Shore Line" view too (Brendan, 26 Nov 2026: Chicagoland replaces it). The existing
   "Chicago and the Twin Cities" view is the wide one.
