@@ -99,6 +99,7 @@ st('Scranton Avenue', 'CNSM_SCRANTON_AVE', 'Scranton Avenue, Lake Bluff', pt=(-8
 st("Downey's (West)", 'CNSM_DOWNEYS_WEST', "Downey's (West), Great Lakes", pt=(-87.84716, 42.30687), note=POL)
 st('North Chicago Junction', 'CNSM_NORTH_CHICAGO_JCT', pt='ncj', note='at the junction of the Shore Line and the Milwaukee line (approximate)')
 st('Edison Court', 'CNSM_EDISON_COURT', 'Edison Court, Waukegan', pt=(-87.84607, 42.35938), principal=True, note=POL + ' (Washington Street passenger station)')
+st('Winthrop Harbor', disp='Winthrop Harbor', pt=('lat', 42.478751), note="placed on the line at the latitude of Brendan's Winthrop Harbor point (42.478751, -87.823666, about 1.8 km east of the line in the file): approximate")
 st('Zion', 'CNSM_ZION', pt=(-87.84519, 42.45123), note=POL + ' (Salem Boulevard)')
 st('Kenosha', 'CNSM_KENOSHA', pt=(-87.84219, 42.57711), principal=True, note=POL)
 st('Racine', 'CNSM_RACINE', pt=('svmi', 66.4), principal=True, note='placed by the running times between Kenosha and Milwaukee (approximate)')
@@ -153,13 +154,14 @@ LOCAL_S = [('6th & Michigan Sts.', -65), ('National Avenue', -61), ('Greenfield 
            ('Kenosha', -23), ('Zion', -14), ('Edison Court', -7)]            # No. 404's
 THROUGH = {('shore_north.txt', '3'): ('shore_mke', LOCAL_N), ('shore_north.txt', '201'): ('shore_mke', LOCAL_N[:2]), ('shore_north.txt', '611'): ('shore_mke', LOCAL_N[:2]),
            ('shore_north.txt', '5'): ('shore_mke', LOCAL_N[:1]), ('shore_south.txt', '608'): ('shore_mke', LOCAL_S),
+           ('shore_south.txt', '516'): ('shore_mke', [('Winthrop Harbor', -16), ('Zion', -13), ('Edison Court', -7)]),
            ('shore_south.txt', '440'): ('shore_mke', [('6th & Michigan Sts.', '1.00'), ('National Avenue', '1.04'), ('Greenfield Avenue', '1.06'), ('Mitchell Street', '1.08'),
                                                      ('Harrison Street', '1.12'), ('Racine', '1.32'), ('Kenosha', '1.42'), ('Zion', '1.51'), ('Edison Court', '1.58')])}
 THROUGH_NOTE = {'3': 'runs on to Milwaukee (times beyond North Chicago Junction not printed: estimated)', '201': 'runs on to Zion (times beyond North Chicago Junction estimated)',
                 '611': 'runs on to Zion (times beyond North Chicago Junction estimated)', '5': 'runs on to Edison Court in Daylight Saving time (time estimated)',
                 '608': 'from Milwaukee in Daylight Saving time (times before North Chicago Junction estimated)',
                 '440': 'from Milwaukee (Skokie Valley table) and by the Shore Line south of North Chicago Junction',
-                '516': 'from Winthrop Harbor in Daylight Saving time; shown from North Chicago Junction (Winthrop Harbor is not on the map)'}
+                '516': 'from Winthrop Harbor in Daylight Saving time (times before North Chicago Junction not printed: estimated)'}
 DAYS = {'daily': '1111111', 'daily exc Sun': '1111110', 'Sun only': '0000001', 'Sat & Sun only': '0000011', 'Sat only': '0000010', 'daily exc Sat & Sun': '1111100'}
 COND = {'K': '1111100', 'J': '1111110', 'L': '0000010', 'M': '1111101', 'S': '0000001', 'W': '0000011'}
 DAYNAME = ['Mon.', 'Tue.', 'Wed.', 'Thu.', 'Fri.', 'Sat.', 'Sun.']
@@ -217,7 +219,8 @@ def place_file(fn, tail, north):
     assert not missing, (fn, missing)
 for fn, tail, north in FILES: place_file(fn, tail, north)
 for (fn, num), (tail, extra) in THROUGH.items():
-    for nm, _ in extra: assert nm in PLACED, nm
+    for nm, _ in extra:
+        if nm not in PLACED: PLACED[nm] = fixed_point(nm, SV_N)
 
 def stn_note(nm):
     s = S.get(nm, {})
@@ -304,13 +307,13 @@ for key in order:
             num = re.sub(r'\D', '', tr['num']); frm, to = disp(sel[0][0]), disp(sel[-1][0])
             extra = THROUGH_NOTE.get(tr['num'])
             trips.append(dict(id=f"CNSM-{tr['num']}" + (f'-{g}' if len(groups) > 1 else ''), num=num, name='Electroliner' if elec else 'North Shore Line', svc=svc,
-                              dir=0 if L['north'] else 1, stops=sts, motor=True,
+                              dir=0, gdir=0 if L['north'] else 1, stops=sts, motor=True,   # each line's route runs the way its trains go: dir 0 on the page
                               note=(f'Electroliner No. {num}' if elec else f'No. {num}') + f', {frm} {ampm(sel[0][1])} to {to} {ampm(sel[-1][1])} (Chicago Daylight Saving '
-                                   f'time, as printed); {days}.' + (f' {extra[0].upper() + extra[1:]}.' if extra else '') +
+                                   f'time, as printed); {days}' + ('' if days.endswith('.') else '.') + (f' {extra[0].upper() + extra[1:]}.' if extra else '') +
                                    ' CNS&M Timetable G-54, June 5, 1949, standing in for July 1948. Shown in Pacific time.'))
     lab = LABEL[L['tail']] + (', northbound' if L['north'] else ', southbound') + (' (by Wabash)' if L['north'] and L['tail'] != 'branch' else ' (by Wells)' if L['tail'] != 'branch' else '')
     OUT.append(dict(key=key, kind='F', label=lab, mainline=True, owner='none', livery='cnsm', src=src, route=[[p[0], p[1], p[2]] for p in route], stations=st_,
-                    dirLabels=['northbound', 'southbound'], segments=segs, trips=trips))
+                    dirLabels=['northbound', 'southbound'] if L['north'] else ['southbound', 'northbound'], segments=segs, trips=trips))
     print(f"{key}: {route[-1][2] / MI:.2f} mi, {len(st_)} stations, {len(trips)} trips, drawn {sum(s['b'] - s['a'] for s in segs) / MI:.1f} mi")
 ids = [t['id'] for L in OUT for t in L['trips']]; assert len(ids) == len(set(ids)), [i for i in ids if ids.count(i) > 1]
 if os.environ.get('CNSM_DRY'):
@@ -334,5 +337,5 @@ for L in OUT:
     app('routes.txt', [[rid, 'CNSM', 'North Shore Line', L['label'], 0, '1F9E96', 'FFFFFF', L['src'] + '. Times on the Pacific clock.']])
     app('shapes.txt', [[rid, f'{p[1]:.6f}', f'{p[0]:.6f}', k, f'{p[2]:.1f}'] for k, p in enumerate(L['route'])])
     for t in L['trips']:
-        app('trips.txt', [[rid, t['svc'], t['id'], L['stations'][t['stops'][-1][0]]['name'], t['name'], t['dir'], rid]])
+        app('trips.txt', [[rid, t['svc'], t['id'], L['stations'][t['stops'][-1][0]]['name'], t['name'], t['gdir'], rid]])
         app('stop_times.txt', [[t['id'], fmt(a), fmt(b), L['stations'][i]['gid'], k, f"{L['stations'][i]['chain']:.1f}", tp] for k, (i, a, b, tp) in enumerate(t['stops'], 1)])

@@ -3270,3 +3270,9 @@ A review of the whole project (Brendan: "have a peek through ... suggest improve
 - Stations: Evanston 'L' stations from the file; the Shore Line, Skokie Valley and Mundelein stations placed by running time between placed stations, then moved to the nearest
   unnamed station polygon of the file within 300 m (approximate, noted per station).
 - 11 lines (one per route and direction), 196 trips. Counts: 717 lines, 4933 trips, 8088 stops, 74 agencies; check_gtfs 0 problems.
+
+## Version 227
+- North Shore Line: southbound trains were drawn running backwards (Brendan): each line's route already runs the way its trains go, so every trip is direction 0 on the page
+  (GTFS direction_id still 1 for southbound); southbound lines label their directions southbound first.
+- Winthrop Harbor (Brendan, 25 Nov 2026: 42.478751, -87.823666, a place name, not the station): No. 516 now starts there in Daylight Saving time, placed on the line at that
+  latitude (the point is 1.8 km east of the line in the file) and timed back from North Chicago Junction by the locals' running times (estimated). Notes no longer end "..".
