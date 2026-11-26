@@ -25,6 +25,12 @@ Last updated 25 November 2026 (Version 227).
   boards, stations thinned when zoomed out.
 
 ## Fixes queued (Brendan: "don't fix yet"; ask before the next rebuild whether to include them)
+- [ ] SCALING WORK, scheduled (Brendan, 26 Nov 2026: do 1 and 2 on the first build after Thursday 26 Nov, 9 p.m. his time, when his weekly usage resets), planning for
+  timetables all the way to Panama (perhaps 4 - 6 times today's data):
+  1. The "On the line" list skips rebuilding while the boxes are hidden (about 9 ms a second wasted now); split parts/on_build.json (35 MB, 60 commits, repository history
+     750 MB; site chunk 5.6 MB re-downloaded on any change) by railway or region; new U.S. railways go in steps of their own meanwhile.
+  2. Region loading ("stage 2" in STATE.md): the page loads a region's lines when it is viewed, so start-up (12 s and about 200 MB of memory now) depends on the view, not the
+     continent; with it, the list and station boards scoped to the view (also in the 16 Nov ideas).
 - [ ] Buffalo routing (Brendan, 25 Nov 2026): two N.Y.C. routes near Buffalo. The Niagara Branch via Terrace Station, and the Belt Line round the city to the north-east.
   Trains calling at Terrace Station (all trains via Niagara Falls) go by the Niagara Branch. Trains for the International Bridge that do not call at Terrace Station bypass
   downtown Buffalo by the Belt Line. Check which trains on the map take which, and whether the Belt Line track is in the trace.
