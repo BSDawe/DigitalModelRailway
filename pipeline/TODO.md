@@ -14,7 +14,9 @@ Last updated 25 November 2026 (Version 224).
   Hillside and Mount Carmel spurs), and the Chicago 'L' by its pre-1947 companies. Stations are unnamed polygons on the interurbans (centroid onto the track; names from the
   timetables' station lists and miles); some 'L' polygons are named in their descriptions. The 'L' itself is NOT modelled for now (Brendan), but both interurbans run over 'L'
   track into the Loop (CNS&M by the North Side 'L' to Roosevelt Road; CA&E by the Garfield Park 'L' to Wells Street): draw those stretches as 'L' (CTA) track.
-  Waiting for: the timetables (Official Guide or company folders, 1948).
+  Timetables: CNS&M Timetable G-54, June 5, 1949 (reprint May 1950; private repo scans/cnsm/), source to cite: Illinois Railway Museum CTA collection,
+  http://irm-cta.org/NSL/TT/NSL%20Timetable%201949-06-05%20(2).pdf (Brendan, 25 Nov 2026). Use: running times between stations, station list and order, Electroliner numbers,
+  and estimating 1948 summer trains missing from the 1948 Official Guide. Waiting for: the 1948 Official Guide page (Brendan sending); the CA&E timetable.
   Colours (Brendan, 25 Nov 2026): CTA ('L') track a dark blue, not navy (keep clear of the B&O #1D3461; Claude's shade, e.g. #2a5c8a); North Shore Line the Electroliner
   turquoise and salmon (two-colour livery like the S.I.); CA&E the late-period bright red and grey (so it does not blend with the CTA). The Electroliner trains carry the
   name "Electroliner" (train name on the trips that are Electroliners).
