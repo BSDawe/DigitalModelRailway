@@ -25,6 +25,9 @@ Last updated 26 November 2026 (Version 228).
   boards, stations thinned when zoomed out.
 
 ## Fixes queued (Brendan: "don't fix yet"; ask before the next rebuild whether to include them)
+- [ ] Views (Brendan, 26 Nov 2026): drop the "Chicago Aurora and Elgin" view; add a "Chicagoland" view for the whole metropolitan area (it will be very busy with trains),
+  about [-88.40, -87.30, 41.55, 42.40] (Aurora / Elgin to Waukegan and Gary), Central time. Keep or fold the "North Shore Line" view (it runs on to Milwaukee): ask. The existing
+  "Chicago and the Twin Cities" view is the wide one.
 - [ ] SCALING WORK, scheduled (Brendan, 26 Nov 2026: do 1 and 2 on the first build after Thursday 26 Nov, 9 p.m. his time, when his weekly usage resets), planning for
   timetables all the way to Panama (perhaps 4 - 6 times today's data):
   1. The "On the line" list skips rebuilding while the boxes are hidden (about 9 ms a second wasted now); split parts/on_build.json (35 MB, 60 commits, repository history
