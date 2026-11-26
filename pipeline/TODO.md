@@ -15,6 +15,9 @@ Last updated 25 November 2026 (Version 224).
   timetables' station lists and miles); some 'L' polygons are named in their descriptions. The 'L' itself is NOT modelled for now (Brendan), but both interurbans run over 'L'
   track into the Loop (CNS&M by the North Side 'L' to Roosevelt Road; CA&E by the Garfield Park 'L' to Wells Street): draw those stretches as 'L' (CTA) track.
   Waiting for: the timetables (Official Guide or company folders, 1948).
+  Colours (Brendan, 25 Nov 2026): CTA ('L') track a dark blue, not navy (keep clear of the B&O #1D3461; Claude's shade, e.g. #2a5c8a); North Shore Line the Electroliner
+  turquoise and salmon (two-colour livery like the S.I.); CA&E the late-period bright red and grey (so it does not blend with the CTA). The Electroliner trains carry the
+  name "Electroliner" (train name on the trips that are Electroliners).
 
 ## Fixes queued (Brendan: "don't fix yet"; ask before the next rebuild whether to include them)
 - [ ] Buffalo routing (Brendan, 25 Nov 2026): two N.Y.C. routes near Buffalo. The Niagara Branch via Terrace Station, and the Belt Line round the city to the north-east.
