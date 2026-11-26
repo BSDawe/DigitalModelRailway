@@ -531,6 +531,15 @@
    "inputs": [
     "traces/maryland/Baltimore_and_Annapolis_Railroad_Brendan_Edits.kmz"
    ]
+  },
+  {
+   "name": "cnsm_build",
+   "script": "cnsm_build.py",
+   "inputs": [
+    "traces/chicago/cnsm_routes.json",
+    "timetables_cnsm/sv_north.txt",
+    "timetables_cnsm/sv_south.txt"
+   ]
   }
  ]
 }

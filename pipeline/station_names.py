@@ -19,6 +19,32 @@ from collections import Counter, defaultdict
 
 # 1948 names of named stations (gid -> (zoomed-in name, city)); Brendan's list of 22 Nov 2026 and the terminals already on the map
 NAMED = {
+    # North Shore Line (25 Nov 2026)
+    'CNSM_ROOSEVELT': ('Roosevelt Road', 'Chicago'),
+    'CNSM_ADAMS_WABASH': ('Adams & Wabash', 'Chicago'),
+    'CNSM_MADISON_WABASH': ('Madison & Wabash', 'Chicago'),
+    'CNSM_RANDOLPH_WABASH': ('Randolph & Wabash', 'Chicago'),
+    'CNSM_CLARK_LAKE': ('Clark & Lake', 'Chicago'),
+    'CNSM_MERCHANDISE_MART': ('Merchandise Mart', 'Chicago'),
+    'CNSM_GRAND': ('Grand Avenue', 'Chicago'),
+    'CNSM_CHICAGO_AVE': ('Chicago Avenue', 'Chicago'),
+    'CNSM_BELMONT': ('Belmont Avenue', 'Chicago'),
+    'CNSM_WILSON': ('Wilson Avenue', 'Chicago'),
+    'CNSM_HOWARD': ('Howard Street', 'Chicago'),
+    'CNSM_RANDOLPH_WELLS': ('Randolph & Wells', 'Chicago'),
+    'CNSM_MADISON_WELLS': ('Madison & Wells', 'Chicago'),
+    'CNSM_QUINCY_WELLS': ('Quincy & Wells', 'Chicago'),
+    'CNSM_LASALLE_VB': ('LaSalle & Van Buren', 'Chicago'),
+    'CNSM_DEARBORN_STATE_VB': ('Dearborn-State-Van Buren', 'Chicago'),
+    'CNSM_MKE_HARRISON': ('Harrison Street', 'Milwaukee'),
+    'CNSM_MKE_MITCHELL': ('Mitchell Street', 'Milwaukee'),
+    'CNSM_MKE_GREENFIELD': ('Greenfield Avenue', 'Milwaukee'),
+    'CNSM_MKE_NATIONAL': ('National Avenue', 'Milwaukee'),
+    'CNSM_MILWAUKEE': ('6th & Michigan', 'Milwaukee'),
+    'CNSM_DEMPSTER': ('Dempster Street', 'Skokie'),
+    'CNSM_SCRANTON_AVE': ('Scranton Avenue', 'Lake Bluff'),
+    'CNSM_DOWNEYS_WEST': ("Downey's (West)", 'Great Lakes'),
+    'CNSM_EDISON_COURT': ('Edison Court', 'Waukegan'),
     'BNA_BALTIMORE_CAMDEN': ('Camden Station', 'Baltimore'), 'BNA_ANNAPOLIS': ('Bladen Street', 'Annapolis'),   # Baltimore & Annapolis ends (Brendan, 25 Nov 2026)
     'CN_PORTLAND_ME': ('Portland (Grand Trunk)', 'Portland'),   # Brendan, 23 Nov 2026
     'MEC_PORTLAND_UNION_ME': ('Union Station', 'Portland'),   # Portland, Maine (Brendan's point; V213)
@@ -58,7 +84,7 @@ BY_NAME = {'Davie Street': ('Davie Street', 'Vancouver'), 'Vancouver': ('Carrall
 # railway abbreviations, by the label of the line that owns the track (CPR subsidiaries keep their own) and then by track owner
 ABBR_LABEL = {'Canadian Pacific': 'CPR', 'Soo Line': 'Soo Line', 'Duluth, South Shore & Atlantic': 'DSS&A', 'Esquimalt & Nanaimo': 'E&N', 'Quebec Central': 'QC',
               'Dominion Atlantic': 'DAR', 'Spokane International': 'SI', 'Central Vermont': 'CV', 'Grand Trunk Western': 'GTW', 'Canadian National': 'CN'}
-ABBR_OWN = {'bna': 'B&A', 'ic': 'IC', 'cp': 'CPR', 'cn': 'CN', 'gn': 'GN', 'np': 'NP', 'milw': 'Milwaukee', 'up': 'UP', 'sps': 'SP&S', 'nyc': 'NYC', 'dh': 'D&H', 'rut': 'Rutland', 'bm': 'B&M',
+ABBR_OWN = {'bna': 'B&A', 'cnsm': 'North Shore Line', 'cta': 'CTA', 'ic': 'IC', 'cp': 'CPR', 'cn': 'CN', 'gn': 'GN', 'np': 'NP', 'milw': 'Milwaukee', 'up': 'UP', 'sps': 'SP&S', 'nyc': 'NYC', 'dh': 'D&H', 'rut': 'Rutland', 'bm': 'B&M',
             'nh': 'New Haven', 'prr': 'PRR', 'bo': 'B&O', 'lv': 'LV', 'thb': 'TH&B', 'onr': 'ONR', 'nar': 'NAR', 'pge': 'PGE', 'msc': 'M&SC', 'grr': 'GRR', 'len': 'L&N',
             'lps': 'L&PS', 'nst': 'NS&T', 'qrl': 'QRL&P', 'tem': 'Temiscouata', 'si': 'SI', 'acr': 'ACR', 'snl': 'S&L', 'cnw': 'C&NW', 'wpy': 'WP&Y', 'arr': 'Alaska RR',
             'mec': 'MEC', 'cwi': 'C&WI', 'nfr': 'Nfld. Ry.', 'aj': 'Algoma Jct.', 'cgt': 'CGT', 'crc': 'CR&C', 'mcrp': 'MCR&P', 'rs': 'Roberval & Saguenay', 'tir': 'TIR',

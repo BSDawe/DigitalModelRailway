@@ -3238,3 +3238,19 @@ A review of the whole project (Brendan: "have a peek through ... suggest improve
   tools/perf.py now (desktop, still / pan): Lower Mainland 3.6 / 2.3 ms (was 13.4 / 19.4), Sound 5.1 / 4.0, Kettle Valley 4.5 / 3.1, all 10.0 / 8.3 (was 17.4 / 14.8); in a 300-frame
   playback the 90th-percentile frame is 16.7 ms (one frame at 60 Hz) in both the Lower Mainland and whole-map views (was 50 and 33).
   tools/perf.py launches Playwright's own Chromium (the old /opt path is gone).
+
+## Version 225
+- The North Shore Line, first pass (Brendan, 25 Nov 2026: "build to page 5"): the Chicago North Shore & Milwaukee's Chicago - Milwaukee trains of the Skokie Valley Route,
+  new step cnsm_build.py, kind F. Times: CNS&M Timetable G-54, June 5, 1949 (Illinois Railway Museum CTA collection, irm-cta.org), pages 1 - 4, transcribed in
+  timetables_cnsm/sv_north.txt and sv_south.txt; the 1949 schedule stands in for July 1948 (Brendan; the April 1948 Official Guide shows the same pattern within a few minutes:
+  Sunday 6.05 vs 6.00, the evening Electroliner 4.58 vs 5.01, 5.03 vs 5.07). Trains printed "will not run during Daylight Saving Time" left out (816, 424, 436); 440 (via the
+  Shore Line) waits for the Shore Line table; 444 starts at Zion on weekdays, Edison Court on Saturdays and Sundays. Stops printed for some days only (K, J, L, M, S, W) split the
+  train by day. 27 trains north, 28 south (with the day splits); the Electroliners (801 - 809 north, 800 - 818 south) are named Electroliner.
+- Track: Mississippi Rails' Chicago interurbans KML (raw file in the private repo); tools/chi_extract.py cuts the two routes into the public traces/chicago/cnsm_routes.json
+  (88.5 mi Roosevelt Road - Milwaukee). Northbound trains go round the Loop by Wabash and Lake, southbound by Wells and Van Buren (Brendan), so each direction is its own line
+  (cnsm_svn, cnsm_svs; the shared track drawn once). Roosevelt Road - Howard Street is Chicago Transit Authority 'L' track: owner cta, the new rapid-transit class (RAPID_OWN in
+  the page; drawn like interurban track, dark blue #2a5c8a, no on / off control: Brendan). Livery: Electroliner turquoise #1f9e96 and salmon #f08a6c (shades Claude's).
+- Stations: the file's named station polygons ('L' stations, Downey's, Waukegan Washington Street for Edison Court, Zion Salem Boulevard, Kenosha, the Milwaukee depot);
+  approximate: Merchandise Mart (at the old Kinzie Street station), Dempster Street and the four Milwaukee street stops (where the line crosses the street), North Chicago
+  Junction and Racine (by the running times). New view "North Shore Line" (Central time).
+- Counts: 708 lines, 4819 trips, 8032 stops, 74 agencies; check_gtfs 0 problems.

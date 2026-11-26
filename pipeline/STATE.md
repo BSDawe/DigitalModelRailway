@@ -1,7 +1,7 @@
 # The Digital Model Railway — project state
 
 Read this first. It is meant to be enough to start a short, single-task chat without replaying the project's history.
-Last updated 25 November 2026 (Version 224). This file is the current state and the standing rules; the version-by-version history is in CHANGELOG.md.
+Last updated 25 November 2026 (Version 225). This file is the current state and the standing rules; the version-by-version history is in CHANGELOG.md.
 
 ## What this is
 
@@ -240,6 +240,8 @@ lat, mile, lmile?, principal, gid, note, xy?, slow?}], dirLabels, segments [{own
 ## Conventions Brendan has set
 
 - **Holidays are ignored** (Brendan, 25 Nov 2026): "except holidays" / "will not run holidays" signs do not take trains off any day of the target week (Monday 5 July 1948 included).
+- **Rapid transit** (Brendan, 25 Nov 2026): 'L' (CTA) track is its own owner class (RAPID_OWN in the page), drawn like interurban track, dark blue; no on / off control. Lines whose
+  two directions use different track (the Loop) are two lines, one per direction, the shared track drawn once (owner none on the second).
 - Track hand correction (24 Nov 2026): tools/export_track_kml.py OUT.kml KEY... writes the drawn lines as a KML (pieces "<key>-NN | A - B", station pins "<gid> | name");
   Brendan redraws pieces, drags pins and returns it; tools/import_track_kml.py SENT.kml RETURNED.kml [--write PREFIX] lists what changed and writes traces/PREFIX_pieces.json
   and _points.json for the line's step. Keep both KMLs (sent and returned). His pins and street positions are anchors for mile placing; stations between are respaced by printed miles.
@@ -343,6 +345,7 @@ After an accepted build: `cp viz_data.json tools/.baseline_viz.json`.
 
 ## Recent versions (one line each; the detail is in CHANGELOG.md)
 
+- 225: the North Shore Line, Chicago - Milwaukee (1949 timetable for 1948; Electroliners named; CTA 'L' track into the Loop, each direction its own side).
 - 224: smoother animation (list rebuilt at most once a second, the day's trips cached, off-screen trains skipped, cheaper car drawing).
 - 223: the Baltimore & Annapolis Railroad (Camden Station - Annapolis, Bladen Street; B&O trackage into Camden drawn as B&O).
 - 222: Portland Traction track from Brendan's corrected KML (1st / 2nd Ave loop, East Portland, Golf Jct.); stations anchored at their streets.
@@ -352,7 +355,6 @@ After an accepted build: `cp viz_data.json tools/.baseline_viz.json`.
 - 218: Clarke Steamship coastal services (North Shore, North Gaspé, Magdalen; the Rimouski / Matane motorships), simulated weekly schedules.
 - 217: TH&B trains on to Black Rock and Buffalo (Central Terminal); train notes and sources shown for every railway.
 - 216: the Texas Electric Railway (Dallas - Denison, Dallas - Waco; Ravenna's trace, 1939 times as the 1948 pattern).
-- 212: CP Toronto - Windsor trains on to Detroit (Michigan Central Station).
 - 211: Niagara and International bridges, Tonawanda bypass, Chicago approaches on track (IC brown), N.Y.C. Table 53, the Adirondack Division (Montreal - Utica, Lake Placid).
 - 210: the Michigan Central Chicago - Detroit - Ontario - Buffalo and on to New York (N.Y.C. Tables 6, 7, 9, 11); Central Station and La Salle Street approaches dashed.
 - 209: Seattle - Portland pool trains by operator (GN 401 / 402, 459 / 460; NP 407 / 408; UP 457 / 458); Saint John Union Station.
