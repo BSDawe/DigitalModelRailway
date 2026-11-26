@@ -2,7 +2,7 @@
 
 One list for the Digital Model Railway: questions for Brendan, material he is to supply, and work for Claude. It merges OPEN_QUESTIONS.md with the TO DO lists that were kept in STATE.md (the last of them: "TO DO (1 November 2026)"), as Brendan asked on 9 Nov 2026.
 Claude adds items as they come up. When one is answered or done, it moves to "Done and answered" with the date. Each open item says what the build does in the meantime. Version tags (V143) say when an item was raised.
-Last updated 25 November 2026 (Version 227).
+Last updated 26 November 2026 (Version 228).
 
 ## Decisions for Brendan
 - [ ] Unnumbered connecting trains: branch sections printed in a parent train's column take the parent's number (e.g. on_cn_t126m / d / p / c / g). Through cars or separate connecting trains? No number, or "connection to No. 41"? (26 Oct) Brendan: much may settle as the branch tables come in.
@@ -315,12 +315,15 @@ Each runs to an International Boundary point (time estimated) or to the last Can
 - [x] Sydney & Louisburg: built (V163). Colour #5B3A8C is Claude's pick. Victoria Jct. - Glace Bay 9.9 mi traced / 11.0 printed (the trace may take a later route).
 
 ## Done and answered
+### Done in Version 228 (26 Nov 2026)
+- The Chicago Aurora and Elgin. Open: the Sunday "frequent service" Chicago - Wheaton (only first and last trains printed) not drawn; the estimated extra trains; E1455's
+  mixed signs; Wayne (the file has an old and a new station location; the old one used).
 ### Done in Version 227 (25 Nov 2026)
 - North Shore Line southbound trains drawn facing forward; Winthrop Harbor (No. 516) at Brendan's place-name latitude.
 ### Done in Version 226 (25 Nov 2026)
 - North Shore Line complete from the 1949 timetable; Loop south-east wye; one track north of the Loop. Open: station points placed by running time (most Shore Line, Skokie
   Valley and Mundelein stations: approximate, each says so in its note; a KML pass like Portland's would fix them); the Lake Bluff -
-  Linden Avenue dog-leg at Wilmette follows the file. Next: the CA&E.
+  Linden Avenue dog-leg at Wilmette follows the file. 
 ### Done in Version 225 (25 Nov 2026)
 - North Shore Line first pass: Chicago - Milwaukee (Skokie Valley Route). Next: the Shore Line (pages 5 - 8; timetables_cnsm/shore_north_PARTIAL.txt has 509 - 531 and 201 / 3 / 5),
   Chicago - Libertyville - Mundelein (pages 9 - 10), the Lake Bluff - Mundelein branch locals (page 9), then the CA&E. Approximate station points to confirm (Racine, North Chicago

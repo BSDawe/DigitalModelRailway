@@ -63,7 +63,10 @@ def route(wps):
 ROOSEVELT, CLARK_LAKE, J18, QUINCY_WELLS, WYE, HOWARD = (-87.6266, 41.8673), (-87.6310, 41.8857), (-87.6339, 41.8857), (-87.6338, 41.8787), (-87.62616, 41.876938), (-87.6732, 42.0193)
 DEMPSTER, MILWAUKEE, LINDEN = (-87.752, 42.041), (-87.9187, 43.0369), (-87.6915, 42.0733)
 HIGHWOOD, LAKE_BLUFF, SCRANTON, NCJ, TENTH, MUNDELEIN = (-87.810, 42.205), (-87.8455, 42.2785), (-87.8481, 42.2803), (-87.8466, 42.3300), (-87.83347, 42.34065), (-88.00106, 42.27305)
-SV_JCT = (-87.865, 42.2800)     # the Skokie Valley line meets the Mundelein branch (west of Scranton Avenue)
+SV_JCT = (-87.865, 42.2800)
+CAE_WELLS, CAE_MARSHFIELD, CAE_LARAMIE, CAE_FOREST_PARK, CAE_BELLWOOD = (-87.63426, 41.87765), (-87.66848, 41.87578), (-87.75398, 41.87261), (-87.81468, 41.87403), (-87.87877, 41.87927)
+CAE_WHEATON, CAE_WARRENVILLE, CAE_AURORA, CAE_BATAVIA_JCT, CAE_BATAVIA = (-88.10697, 41.86433), (-88.1815, 41.82387), (-88.31193, 41.75853), (-88.24215, 41.79506), (-88.30666, 41.84985)
+CAE_LAKEWOOD, CAE_ELGIN = (-88.2023, 41.91505), (-88.28502, 42.03693)     # the Skokie Valley line meets the Mundelein branch (west of Scranton Avenue)
 R = dict(
   loop_n=route([ROOSEVELT, CLARK_LAKE, J18]),                       # northbound: Wabash Avenue and Lake Street
   loop_s=route([J18, QUINCY_WELLS, WYE, ROOSEVELT]),                # southbound: Wells Street, Van Buren Street, the south-east wye
@@ -72,7 +75,11 @@ R = dict(
   shore_mke=route([J18, HOWARD, LINDEN, HIGHWOOD, LAKE_BLUFF, NCJ, MILWAUKEE]),
   mundelein=route([J18, HOWARD, DEMPSTER, SV_JCT, MUNDELEIN]),
   sv_tenth=route([J18, HOWARD, DEMPSTER, SCRANTON, NCJ, TENTH]),
-  branch=route([LAKE_BLUFF, SCRANTON, MUNDELEIN]))
+  branch=route([LAKE_BLUFF, SCRANTON, MUNDELEIN]),
+  # Chicago Aurora and Elgin (25 - 26 Nov 2026): Wells Street terminal over the Garfield Park 'L' to Des Plaines Avenue (Forest Park), then its own line
+  cae_aurora=route([CAE_WELLS, CAE_MARSHFIELD, CAE_LARAMIE, CAE_FOREST_PARK, CAE_BELLWOOD, CAE_WHEATON, CAE_WARRENVILLE, CAE_AURORA]),
+  cae_batavia=route([CAE_WELLS, CAE_MARSHFIELD, CAE_LARAMIE, CAE_FOREST_PARK, CAE_BELLWOOD, CAE_WHEATON, CAE_WARRENVILLE, CAE_BATAVIA_JCT, CAE_BATAVIA]),
+  cae_elgin=route([CAE_WELLS, CAE_MARSHFIELD, CAE_LARAMIE, CAE_FOREST_PARK, CAE_BELLWOOD, CAE_WHEATON, CAE_LAKEWOOD, CAE_ELGIN]))
 # The south-east wye leg (Van Buren Street to the South Side 'L' southbound) does not join the Van Buren track in the file: the shortest path went round the corner and
 # back. Splice the leg in: Van Buren up to the leg's start, the leg, then on south.
 def _has(c, q): return next((i for i, p in enumerate(c) if abs(p[0] - q[0]) < 2e-6 and abs(p[1] - q[1]) < 2e-6), None)

@@ -5,7 +5,7 @@ Read this first, then STATE.md (about 350 lines: the current state and the stand
 search it, don't read it through.
 
 ## Where things stand
-- Version 227 is published (https://bsdawe.github.io/DigitalModelRailway/): 717 lines, 4933 trips, 8089 stops, 74 agencies.
+- Version 228 is published (https://bsdawe.github.io/DigitalModelRailway/): 720 lines, 5230 trips, 8109 stops, 75 agencies.
 - check_gtfs reports no problems (the Minneapolis one was fixed in V178 from the 1948 C&NW timetable).
 - A leftover branch, `wip-cdgb`, is on GitHub (the proxy refused to delete it). It is merged; Brendan can delete it.
 
@@ -21,7 +21,7 @@ search it, don't read it through.
 - He dislikes slow work: batch changes into one rebuild, and run only the steps a change touches.
 - Connections and buses are not trains, so they are not drawn.
 - Times are shown on the Pacific clock. Notes say what time zone was printed (e.g. "Eastern Standard Time as printed").
-- Most timetables come from the Official Guide, May 1948. Name the source in the trip notes and the line `src`.
+- Most timetables come from the Official Guide, May 1948 (Brendan, 26 Nov 2026: the May Guide, not April; tables inside it may carry an April date). Name the source in the trip notes and the line `src`.
 - He sends places as DMS coordinates, KML or traces. Use his points as given. Shared stops use the gid already on file (e.g. CP_BALA, PORT_DULUTH_...).
 - He doesn't need running commentary. Report what changed, what is uncertain, and anything he needs to check.
 

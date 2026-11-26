@@ -3276,3 +3276,18 @@ A review of the whole project (Brendan: "have a peek through ... suggest improve
   (GTFS direction_id still 1 for southbound); southbound lines label their directions southbound first.
 - Winthrop Harbor (Brendan, 25 Nov 2026: 42.478751, -87.823666, a place name, not the station): No. 516 now starts there in Daylight Saving time, placed on the line at that
   latitude (the point is 1.8 km east of the line in the file) and timed back from North Chicago Junction by the locals' running times (estimated). Notes no longer end "..".
+
+## Version 228
+- The Chicago Aurora and Elgin (Brendan, 26 Nov 2026), new step cae_build.py, kind H: Chicago (Wells Street) - Wheaton - Aurora, Batavia and Elgin. Times: the Official Guide,
+  May 1948 (Brendan: the May Guide, not April; the CA&E table is dated April 1948), transcribed in timetables_cae/cae_west.txt and cae_east.txt; Central Daylight Saving time.
+  Each column is one train dividing at Wheaton into Aurora, Batavia (by Warrenville) and Elgin (by Lakewood) sections, and joining there eastbound: the Aurora section (or the
+  Elgin one) runs through to Wells Street, the others are sections to / from Wheaton. The footnote stops (Canal Street, Marshfield, Kedzie, Laramie, Oak Park, Forest Park,
+  Maywood, Bellwood) timed from the table's running times and by distance (estimated). The "additional trains" lists and the additional Sunday service timed from printed
+  trains with the same stops (estimated); the Sunday "frequent service" to Wheaton (first and last trains only) not drawn. St. Charles and Geneva: CA&E motor coaches from
+  Lakewood, not drawn (named in the Elgin trains' notes). E1455 (Elgin k2.55): Saturday-only Elgin and Batavia sections joining a daily Aurora - Wells Street train at Wheaton
+  (Claude's reading of the mixed signs).
+- Track: the same Mississippi Rails KML (tools/chi_extract.py, routes cae_aurora / batavia / elgin): Wells Street terminal and the Garfield Park 'L' (CTA track, owner cta) to
+  Forest Park, then the CA&E's own line. Stations from the file's named polygons. Livery: bright red #c8102e and grey #a7a9ac (Brendan: late-period red and grey; shades
+  Claude's). New view "Chicago Aurora and Elgin".
+- The North Shore Line's note now says the May 1948 Official Guide.
+- 297 trips. Counts: 720 lines, 5230 trips, 8109 stops, 75 agencies; check_gtfs 0 problems.

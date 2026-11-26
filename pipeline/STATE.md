@@ -1,7 +1,7 @@
 # The Digital Model Railway — project state
 
 Read this first. It is meant to be enough to start a short, single-task chat without replaying the project's history.
-Last updated 25 November 2026 (Version 227). This file is the current state and the standing rules; the version-by-version history is in CHANGELOG.md.
+Last updated 26 November 2026 (Version 228). This file is the current state and the standing rules; the version-by-version history is in CHANGELOG.md.
 
 ## What this is
 
@@ -345,6 +345,7 @@ After an accepted build: `cp viz_data.json tools/.baseline_viz.json`.
 
 ## Recent versions (one line each; the detail is in CHANGELOG.md)
 
+- 228: the Chicago Aurora and Elgin (Wells Street - Wheaton - Aurora, Batavia, Elgin; Garfield Park 'L' as CTA track).
 - 227: North Shore Line southbound trains face the right way; Winthrop Harbor.
 - 226: the North Shore Line complete (Shore Line, Mundelein, Waukegan, the branch); the south-east Loop wye; one track north of the Loop.
 - 225: the North Shore Line, Chicago - Milwaukee (1949 timetable for 1948; Electroliners named; CTA 'L' track into the Loop, each direction its own side).
@@ -357,7 +358,6 @@ After an accepted build: `cp viz_data.json tools/.baseline_viz.json`.
 - 218: Clarke Steamship coastal services (North Shore, North Gaspé, Magdalen; the Rimouski / Matane motorships), simulated weekly schedules.
 - 217: TH&B trains on to Black Rock and Buffalo (Central Terminal); train notes and sources shown for every railway.
 - 216: the Texas Electric Railway (Dallas - Denison, Dallas - Waco; Ravenna's trace, 1939 times as the 1948 pattern).
-- 209: Seattle - Portland pool trains by operator (GN 401 / 402, 459 / 460; NP 407 / 408; UP 457 / 458); Saint John Union Station.
 - 208: station names by zoom (city zoomed out, station zoomed in), CPR for CP, station owners from the track; North Bay ONR stops on the CN / CPR stations; Straits car ferry over water.
 - 204: CN trains changing number at Hamilton (Table 79: 101/102, 89/90, 187/184, 93/94, 91/92, 107/108) joined as through trains.
 - 200: Arnold Transit from the August 1950 Official Guide (stand-in for July 1948): five St. Ignace and five Mackinaw City sailings each way; Mackinac Island - Les Cheneaux - Cedarville.

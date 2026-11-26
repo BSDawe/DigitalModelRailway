@@ -2,7 +2,7 @@
 Highland Park - Lake Bluff - Waukegan), Chicago - Libertyville - Mundelein (Skokie Valley Route), the Skokie Valley trains to Waukegan, and the Lake Bluff - Mundelein branch.
 Sources:
 - Times: CNS&M Timetable G-54, June 5, 1949 (reprint May 1950; Illinois Railway Museum CTA collection, http://irm-cta.org/NSL/TT/NSL%20Timetable%201949-06-05%20(2).pdf),
-  every table, transcribed in timetables_cnsm/*.txt. The 1949 schedule stands in for July 1948 (Brendan: the April 1948 Official Guide shows the same pattern within a few
+  every table, transcribed in timetables_cnsm/*.txt. The 1949 schedule stands in for July 1948 (Brendan: the May 1948 Official Guide shows the same pattern within a few
   minutes). Chicago Daylight Saving time as printed; trains printed "will not run during Daylight Saving Time" are left out. Shown on the Pacific clock (three hours earlier).
   Through trains between the Shore Line and the Milwaukee line (3, 201, 5, 611 north; 440, 608 south) are timed beyond North Chicago Junction from the Skokie Valley locals
   (estimated), except 440, which the Skokie Valley table prints to Edison Court.

@@ -548,6 +548,15 @@
     "timetables_cnsm/waukegan10_sv_south.txt",
     "timetables_cnsm/waukegan_sv_south.txt"
    ]
+  },
+  {
+   "name": "cae_build",
+   "script": "cae_build.py",
+   "inputs": [
+    "traces/chicago/cnsm_routes.json",
+    "timetables_cae/cae_west.txt",
+    "timetables_cae/cae_east.txt"
+   ]
   }
  ]
 }
