@@ -18,6 +18,9 @@ Last updated 25 November 2026 (Version 224).
   Colours (Brendan, 25 Nov 2026): CTA ('L') track a dark blue, not navy (keep clear of the B&O #1D3461; Claude's shade, e.g. #2a5c8a); North Shore Line the Electroliner
   turquoise and salmon (two-colour livery like the S.I.); CA&E the late-period bright red and grey (so it does not blend with the CTA). The Electroliner trains carry the
   name "Electroliner" (train name on the trips that are Electroliners).
+  Rapid transit (Brendan, 25 Nov 2026): the CTA track is its own rapid-transit class (an owner set beside INTER_OWN; GTFS route_type 1 if 'L' trains are ever scheduled),
+  drawn mostly like interurban track. No on/off control (no control bloat). If 'L' trains come later: repeating patterns (like Central Park), summarised in the list and
+  boards, stations thinned when zoomed out.
 
 ## Fixes queued (Brendan: "don't fix yet"; ask before the next rebuild whether to include them)
 - [ ] Buffalo routing (Brendan, 25 Nov 2026): two N.Y.C. routes near Buffalo. The Niagara Branch via Terrace Station, and the Belt Line round the city to the north-east.
