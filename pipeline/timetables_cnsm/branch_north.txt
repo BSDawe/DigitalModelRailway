@@ -1,0 +1,10 @@
+# CNS&M Timetable G-54, June 5, 1949, page 9 (PDF 10): Lake Bluff - Libertyville - Mundelein branch, NORTHBOUND. Format as sv_north.txt.
+STATIONS = Lake Bluff (Shore Line); Knollwood; Rondout; Thornbury Village; 4th Street; Milw. Ave. (Main Sta.); Garfield Avenue; Perpetual Adoration; St. Mary of the Lake; Mundelein
+307 | daily exc Sun |  | AM | 6.58 7.01 7.03 7.05 7.06 7.09 7.10 7.13 7.14 7.15
+311 | daily exc Sun |  | AM | 7.54 7.57 7.59 8.01 8.02 8.05 8.06 8.10 8.11 8.12
+313 | Sun only |  | AM | 9.26 9.29 9.31 9.34 9.35 9.37 9.38 9.41 9.42 9.43
+321 | daily exc Sun |  | PM | 3.26 3.29 3.31 3.33 3.34 3.37 3.38 3.42 3.43 3.44
+323 | daily exc Sun |  | PM | 4.26 4.29 4.31 4.33 4.34 4.37 4.38 4.42 4.43 4.44
+325 | daily exc Sun |  | PM | 5.26 5.29 5.31 5.33 5.34 5.37 5.38 5.42 5.43 5.44
+327 | daily exc Sat & Sun |  | PM | 6.26 6.29 6.31 6.34 6.35 6.38 6.39 6.42 6.43 6.44
+329 | Sun only |  | PM | 7.10 7.13 7.15 7.18 7.19 7.22 7.23 7.27 7.28 7.29

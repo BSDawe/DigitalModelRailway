@@ -1,0 +1,4 @@
+# CNS&M Timetable G-54, June 5, 1949, page 10 (PDF 11) and 8: 210, Waukegan 10th Street - North Chicago Jct. - Skokie Valley - Chicago. Format as sv_north.txt.
+# 10th Street - 22nd Street times from the Shore Line table (page 8: 5.06, 5.07, 5.09, 5.10, 5.11; North Chicago Jct. 5.12 there, 5.13 in the Mundelein table).
+STATIONS = 10th Street; 14th Street; 18th Street; Second Avenue; 22nd Street; North Chicago Junction; Downey's (West); Scranton Avenue; Northbrook; Northfield; Glenayre; Dempster Street; Howard Street; Wilson Avenue; Belmont Avenue; Chicago Avenue; Grand Avenue; Merchandise Mart; Randolph & Wells; Madison & Wells; Quincy & Wells; LaSalle & Van Buren; Dearborn-State-Van Buren; Roosevelt Road
+210 | daily exc Sat & Sun |  | PM | 5.06 5.07 5.09 5.10 5.11 5.13 5.15 5.17 5.28 5.31 5.34 5.38 5.44 5.52 5.57 6.06 6.07 6.08 6.10 6.11 6.12 6.13 6.15 6.18

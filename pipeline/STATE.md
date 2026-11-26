@@ -1,7 +1,7 @@
 # The Digital Model Railway — project state
 
 Read this first. It is meant to be enough to start a short, single-task chat without replaying the project's history.
-Last updated 25 November 2026 (Version 225). This file is the current state and the standing rules; the version-by-version history is in CHANGELOG.md.
+Last updated 25 November 2026 (Version 226). This file is the current state and the standing rules; the version-by-version history is in CHANGELOG.md.
 
 ## What this is
 
@@ -345,6 +345,7 @@ After an accepted build: `cp viz_data.json tools/.baseline_viz.json`.
 
 ## Recent versions (one line each; the detail is in CHANGELOG.md)
 
+- 226: the North Shore Line complete (Shore Line, Mundelein, Waukegan, the branch); the south-east Loop wye; one track north of the Loop.
 - 225: the North Shore Line, Chicago - Milwaukee (1949 timetable for 1948; Electroliners named; CTA 'L' track into the Loop, each direction its own side).
 - 224: smoother animation (list rebuilt at most once a second, the day's trips cached, off-screen trains skipped, cheaper car drawing).
 - 223: the Baltimore & Annapolis Railroad (Camden Station - Annapolis, Bladen Street; B&O trackage into Camden drawn as B&O).
@@ -355,7 +356,6 @@ After an accepted build: `cp viz_data.json tools/.baseline_viz.json`.
 - 218: Clarke Steamship coastal services (North Shore, North Gaspé, Magdalen; the Rimouski / Matane motorships), simulated weekly schedules.
 - 217: TH&B trains on to Black Rock and Buffalo (Central Terminal); train notes and sources shown for every railway.
 - 216: the Texas Electric Railway (Dallas - Denison, Dallas - Waco; Ravenna's trace, 1939 times as the 1948 pattern).
-- 211: Niagara and International bridges, Tonawanda bypass, Chicago approaches on track (IC brown), N.Y.C. Table 53, the Adirondack Division (Montreal - Utica, Lake Placid).
 - 210: the Michigan Central Chicago - Detroit - Ontario - Buffalo and on to New York (N.Y.C. Tables 6, 7, 9, 11); Central Station and La Salle Street approaches dashed.
 - 209: Seattle - Portland pool trains by operator (GN 401 / 402, 459 / 460; NP 407 / 408; UP 457 / 458); Saint John Union Station.
 - 208: station names by zoom (city zoomed out, station zoomed in), CPR for CP, station owners from the track; North Bay ONR stops on the CN / CPR stations; Straits car ferry over water.

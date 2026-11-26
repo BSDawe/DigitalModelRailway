@@ -1,0 +1,7 @@
+# CNS&M Timetable G-54, June 5, 1949, page 10 (PDF 11): the Waukegan (Edison Court) - Skokie Valley - Chicago trains of the southbound Mundelein table. Format as sv_north.txt.
+# Edison Court - North Chicago Jct. printed 10 minutes on 200 and 202 / 206 (as printed).
+STATIONS = Edison Court; North Chicago Junction; Downey's (West); Scranton Avenue; Deerpath (West); Sheridan Elms; Highmoor; Briergate; Woodridge; Northbrook; Northfield; Glenayre; Harmswoods; Dempster Street; Howard Street; Wilson Avenue; Belmont Avenue; Chicago Avenue; Grand Avenue; Merchandise Mart; Randolph & Wells; Madison & Wells; Quincy & Wells; LaSalle & Van Buren; Dearborn-State-Van Buren; Roosevelt Road
+200 | daily exc Sun |  | AM | 6.27 6.37 6.39 6.41 6.46 6.48 6.50 6.53 - - - - - 7.04 7.13 7.21 7.26 7.36 7.37 7.38 7.40 7.41 7.42 7.43 7.45 7.48
+202 | daily exc Sat & Sun |  | AM | 7.03 7.13 7.15 7.17 - - - 7.27 7.29 7.32 7.36 7.39 7.41 7.43 7.49 7.57 8.02 8.12 8.13 8.14 8.17 8.18 8.19 8.20 8.22 8.25
+206 | daily exc Sat & Sun |  | AM | 7.32 7.42 7.44 7.46 - - - 7.56 7.58 8.01 8.05 8.08 8.10 8.13 8.19 8.27 8.32 8.42 8.43 8.44 8.46 8.47 8.48 8.49 8.51 8.54
+208 | daily exc Sun |  | AM | 9.02 9.08 9.10 9.12 9.17 - 9.21 9.24 9.26 9.29 9.33 9.36 - 9.39 9.45 9.53 9.58 10.06 10.07 10.08 10.09 10.10 10.11 10.12 10.14 10.17

@@ -537,8 +537,16 @@
    "script": "cnsm_build.py",
    "inputs": [
     "traces/chicago/cnsm_routes.json",
+    "timetables_cnsm/branch_north.txt",
+    "timetables_cnsm/branch_south.txt",
+    "timetables_cnsm/mundelein_north.txt",
+    "timetables_cnsm/mundelein_south.txt",
+    "timetables_cnsm/shore_north.txt",
+    "timetables_cnsm/shore_south.txt",
     "timetables_cnsm/sv_north.txt",
-    "timetables_cnsm/sv_south.txt"
+    "timetables_cnsm/sv_south.txt",
+    "timetables_cnsm/waukegan10_sv_south.txt",
+    "timetables_cnsm/waukegan_sv_south.txt"
    ]
   }
  ]

@@ -3254,3 +3254,19 @@ A review of the whole project (Brendan: "have a peek through ... suggest improve
   approximate: Merchandise Mart (at the old Kinzie Street station), Dempster Street and the four Milwaukee street stops (where the line crosses the street), North Chicago
   Junction and Racine (by the running times). New view "North Shore Line" (Central time).
 - Counts: 708 lines, 4819 trips, 8032 stops, 74 agencies; check_gtfs 0 problems.
+
+## Version 226
+- The North Shore Line completed from the 1949 timetable (Brendan, 25 Nov 2026: "go ahead and finish"): the Shore Line (Chicago - Evanston - Wilmette - Winnetka - Glencoe -
+  Highland Park - Lake Forest - Lake Bluff - North Chicago - Waukegan 10th Street; pages 5 - 8), Chicago - Libertyville - Mundelein by the Skokie Valley (pages 9 - 10), the
+  Skokie Valley trains from Waukegan (Edison Court; No. 210 from 10th Street), and the Lake Bluff - Libertyville - Mundelein branch (page 9). Transcriptions in timetables_cnsm/
+  (shore_north / south, mundelein_north / south, waukegan_sv_south, waukegan10_sv_south, branch_north / south). Left out as printed for Daylight Saving time: 1, 436. Through
+  trains: 3 (to Milwaukee), 201 and 611 (to Zion), 5 (to Edison Court), 608 and 440 (from Milwaukee) run between the Shore Line and the Milwaukee line, timed beyond North Chicago
+  Junction from the Skokie Valley locals (estimated; 440 as printed in the Skokie Valley table); 516 (from Winthrop Harbor) shown from North Chicago Junction. Not entered: the
+  Sunday Scranton Avenue connection of 427, the Sunday flag stops of 402 / 404, 435's discharge stop at Glenayre.
+- Fixes (Brendan): southbound trains leave the Loop by the south-east wye (Van Buren Street to the South Side 'L'), spliced in from the file (its piece does not join the Van
+  Buren track); the second, parallel track drawn north of the Loop is gone: every route north of the Lake & Wells junction is one track both ways (tools/chi_extract.py now
+  cuts the Loop pieces and the northward tails separately; a southbound route is the tail reversed plus the southbound Loop), and track already drawn by another line is drawn
+  once. The through trains use the Milwaukee line's own track north of North Chicago Junction.
+- Stations: Evanston 'L' stations from the file; the Shore Line, Skokie Valley and Mundelein stations placed by running time between placed stations, then moved to the nearest
+  unnamed station polygon of the file within 300 m (approximate, noted per station).
+- 11 lines (one per route and direction), 196 trips. Counts: 717 lines, 4933 trips, 8088 stops, 74 agencies; check_gtfs 0 problems.
