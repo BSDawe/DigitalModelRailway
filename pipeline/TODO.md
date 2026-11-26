@@ -25,9 +25,6 @@ Last updated 26 November 2026 (Version 228).
   boards, stations thinned when zoomed out.
 
 ## Fixes queued (Brendan: "don't fix yet"; ask before the next rebuild whether to include them)
-- [ ] CA&E additional Sunday service (Brendan, 26 Nov 2026: "Add to the queue the additional Sunday service. Model it off of the existing g Sunday only trains."): the
-  Sunday "frequent service" Chicago - Wheaton (first train from Chicago 7.00 a.m., last 2.35 a.m.; from Wheaton first 6.54 a.m., last 1.13 a.m.), not drawn in V228. Model it on
-  the existing trains (which ones "g" means here: being confirmed with Brendan).
 - [ ] Views (Brendan, 26 Nov 2026): drop the "Chicago Aurora and Elgin" view; add a "Chicagoland" view for the whole metropolitan area (it will be very busy with trains),
   about [-88.40, -87.30, 41.55, 42.40] (Aurora / Elgin to Waukegan and Gary), Central time. Drop the "North Shore Line" view too (Brendan, 26 Nov 2026: Chicagoland replaces it). The existing
   "Chicago and the Twin Cities" view is the wide one.
@@ -60,6 +57,10 @@ Last updated 26 November 2026 (Version 228).
 - [ ] CP N.B. readings (V159): Table 10: 39 from Saint John ex Sun, from Megantic daily (Monday train from Megantic entered as No39m); 42 east of Brownville Jct. ex Sun, No. 104 on Sundays; 41 ex Sun from Saint John, No. 103 on Sundays. M117 / M118 (Brownville Jct. - Greenville - Megantic) mixed: Greenville and Holeb arrivals estimated. The Gull 113 / 114 daily (June 20 - Sept. 5). Table 12A 105 waits at Fredericton Jct. 6.30 - 8.55 p.m. as printed. Table 15 Theriault, Sigas, L'Eglise printed "f" without times: left out.
 
 ## Questions: readings to check
+- [ ] CA&E Sunday "frequent service" (Brendan, 26 Nov 2026: unsure how to proceed; for a future date). The Guide's note: first train from Chicago 7.00 a.m., last 2.35 a.m.;
+  from Wheaton first 6.54 a.m., last 1.13 a.m. Claude's reading: a summary of the daily trains already in the table (the end times match the daily 2.35 a.m., the 1.13 a.m. from
+  Wheaton and the additional Sunday 7.00 a.m.), not extra trains; the one misfit is the daily 5.30 a.m. from Wheaton (the note implies it does not run on Sundays). Built
+  meanwhile: the daily trains as printed, the 5.30 a.m. daily; nothing extra for the frequent service.
 - [ ] CN Montreal District employee timetable (20 June 1948), left open: No. 132 (St. Hyacinthe 11.58 p.m. ex Sat to the Drummondville
   subdivision: where to?); day differences 30 (daily), 280 (daily), 621 / 622 (daily), 100 (Sunday only) against the April Official Guide;
   Laurel (Official Guide) vs Lake Chapleau (employee timetable, 59.7 mi from Val Royal): the same station?; Dore Bay (flag for 155, 156, 193, 194,
