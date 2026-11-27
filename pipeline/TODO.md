@@ -2,7 +2,7 @@
 
 One list for the Digital Model Railway: questions for Brendan, material he is to supply, and work for Claude. It merges OPEN_QUESTIONS.md with the TO DO lists that were kept in STATE.md (the last of them: "TO DO (1 November 2026)"), as Brendan asked on 9 Nov 2026.
 Claude adds items as they come up. When one is answered or done, it moves to "Done and answered" with the date. Each open item says what the build does in the meantime. Version tags (V143) say when an item was raised.
-Last updated 27 November 2026 (Version 233).
+Last updated 27 November 2026 (Version 234).
 
 ## Decisions for Brendan
 - [ ] Unnumbered connecting trains: branch sections printed in a parent train's column take the parent's number (e.g. on_cn_t126m / d / p / c / g). Through cars or separate connecting trains? No number, or "connection to No. 41"? (26 Oct) Brendan: much may settle as the branch tables come in.
@@ -42,6 +42,9 @@ Last updated 27 November 2026 (Version 233).
   everywhere (Brendan, 27 Nov 2026): change wa_build.py's names for Nos. 1 / 2 at the GN build.
   Superior Union Station (Brendan, 27 Nov 2026): 46.726609, -92.107400 (GN, shared with the NP; the DSS&A used the Soo station in 1948 per its table). Duluth: GN trains at the
   Union Depot. All GN pages transcribed (1067 - 1077, Table 53 the last; timetables_gn/, 27 Nov 2026): BUILT in Version 233.
+
+- [ ] on_lines.SHARED: the ('oncn' / 'oncp', 'toronto union') -> TORONTO_UNION entries were lost into a comment in V217; joined at assembly since V234 (merge_stations). Restore them
+  in SHARED the next time on_build is re-run anyway.
 
 ## Fixes queued (Brendan: "don't fix yet"; ask before the next rebuild whether to include them)
 - [ ] SCALING WORK, scheduled (Brendan, 26 Nov 2026: do 1 and 2 on the first build after Thursday 26 Nov, 9 p.m. his time, when his weekly usage resets), planning for
@@ -327,6 +330,10 @@ Each runs to an International Boundary point (time estimated) or to the last Can
 - [x] Sydney & Louisburg: built (V163). Colour #5B3A8C is Claude's pick. Victoria Jct. - Glace Bay 9.9 mi traced / 11.0 printed (the trace may take a later route).
 
 ## Done and answered
+### Done in Version 234 (27 Nov 2026)
+- GN: Stone Arch Bridge routing (estimated link over the bridge; a trace wanted), Milaca - St. Cloud, Moccasin - Lewistown (Brendan's piece), Garretson - Sioux Falls; Toronto
+  Union Station one stop; Chicago "Union Station". Waiting: Brendan's NP traces for Superior - Duluth (and Mossmain - Billings); Sioux Falls - Watertown and Tilden Jct. -
+  Red Lake Falls traces.
 ### Done in Version 233 (27 Nov 2026)
 - The Great Northern east of Spokane (50 lines) and the Burlington through section to Chicago. Open: the dashed stretches (Sioux Falls - Watertown, Tilden Jct. - Red Lake Falls,
   Moccasin - Lewistown, Milaca - St. Cloud, Garretson - Sioux Falls, Mossmain - Billings on the NP, Superior - Duluth on the NP): traces or points wanted; most small stations by

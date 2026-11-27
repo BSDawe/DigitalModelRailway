@@ -36,6 +36,8 @@ MERGE += [
 MERGE += [['CN_HALIFAX', 'CP_HALIFAX'], ['CN_WINDSOR_JUNCTION', 'CP_WINDSOR_JUNCTION'], ['CN_TRURO', 'CP_TRURO'], ['CN_MIDDLETON', 'CP_MIDDLETON'],
           ['CP_EVANGELINE_WHARF', 'CN_EVANGELINE_WHARF']]   # Yarmouth, N.S.: Evangeline Wharf, served by both (Brendan, 10 Nov 2026); the CN and DAR stations are apart
 # after split_stops (the ids it gives same-named stations far apart): Rosedale, Alta., CN and CP one station (the CP over the CN; Brendan, 4 November 2026)
+MERGE += [['TORONTO_UNION', 'CN_TORONTO_UNION', 'CP_TORONTO_UNION']]   # Toronto Union Station: one stop (Brendan, 27 Nov 2026: it showed as three). The CN and CP entries in
+# on_lines.SHARED were lost into a comment in V217; this joins them at assembly (restore SHARED when on_build is next re-run)
 MERGE_AFTER = [['CN_ROSEDALE_CN_168', 'CP_ROSEDALE'], ['CN_BEDFORD', 'CP_BEDFORD_ONCP900']]   # Bedford, N.S.: CN and the DAR one station (Brendan, 10 Nov 2026)
 TO = {g: grp[0] for grp in MERGE for g in grp[1:]}
 

@@ -629,7 +629,8 @@
     "timetables_gn/gn_t042.csv",
     "timetables_gn/gn_t044.csv",
     "timetables_gn/gn_t047.csv",
-    "timetables_gn/gn_t053.csv"
+    "timetables_gn/gn_t053.csv",
+    "traces/gnmw/gn_links.geojson"
    ]
   }
  ]

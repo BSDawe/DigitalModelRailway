@@ -30,8 +30,18 @@ def canon(n):
 # ---------------------------------------------------------------- track
 def _graph():
     def feed(add):
-        for f in json.load(open(os.path.join(HERE, 'traces', 'gnmw', 'gn_mw.geojson')))['features']:
+        F = json.load(open(os.path.join(HERE, 'traces', 'gnmw', 'gn_mw.geojson')))['features']
+        for f in F:
             o = f['properties']['own']; add(ab_lines._xy(f['geometry']['coordinates']), 1.0, 'b', None if o == 'gn' else o)
+        for f in json.load(open(os.path.join(HERE, 'traces', 'gnmw', 'gn_links.geojson')))['features']:   # Brendan's pieces and Claude's estimated links
+            add(ab_lines._xy(f['geometry']['coordinates']), f['properties'].get('cost', 1.0), 'b', 'est' if f['properties'].get('est') else None)
+        # a piece end 150 - 800 m from other GN track (the loader ties ends within 150 m itself): a straight tie to the nearest point (Sioux Falls, St. Cloud)
+        km = lambda a, b: math.hypot((a[0] - b[0]) * 111.32 * math.cos(math.radians(a[1])), (a[1] - b[1]) * 110.57)
+        G = [(i, f['geometry']['coordinates']) for i, f in enumerate(F) if f['properties']['own'] == 'gn']
+        for i, c in G:
+            for e in (c[0], c[-1]):
+                best = min(((km(e, q), q) for j, c2 in G if j != i for q in c2), default=(9, None))
+                if 0.15 < best[0] < 0.8: add(ab_lines._xy([e, best[1]]), 1.2, 'b', None)
         for f in json.load(open(os.path.join(HERE, 'traces', 'maritimes', 'soo.geojson')))['features']:   # Superior - Duluth: the NP and Soo pieces there
             c = f['geometry']['coordinates']
             if f['properties'].get('status') != 'ok' or not all(-92.25 < p[0] < -92.0 and 46.65 < p[1] < 46.82 for p in c): continue
@@ -52,6 +62,7 @@ HAND = {('portland jct', 'ND'): (-dms(97, 22, 10.72), dms(47, 33, 39.72), 'Portl
         ('williston', 'ND'): (-103.6177, 48.1467, 'Williston (town; approximate)'), ('whitefish', 'MT'): (-114.3376, 48.4111, 'Whitefish (town; approximate)'),
         ('billings', 'MT'): (-108.5017, 45.7836, 'Billings (town; approximate; the GN reached it over the NP from Mossmain)'),
         ('bemidji', 'MN'): (-94.8808, 47.4736, 'Bemidji (town; approximate)'), ('sandstone', 'MN'): (-92.8674, 46.1311, 'Sandstone (town; approximate)'),
+        ('stone arch bridge', 'MN'): (-93.2525, 44.9806, 'Stone Arch Bridge (the route of the St. Paul - Minneapolis trains; Brendan, 27 Nov 2026)'),
         ('elbow lake', 'MN'): (-95.9767, 45.9940, 'Elbow Lake (town; approximate)'), ('sioux city', 'IA'): (-96.4003, 42.4963, 'Sioux City (town; approximate)'),
         ('hutchinson', 'MN'): (-94.3700, 44.8877, 'Hutchinson (town; approximate)'), ('lewistown', 'MT'): (-109.4282, 47.0625, 'Lewistown (town; approximate)'), ('sweet grass', 'MT'): (-111.9575, 48.9974, 'Sweet Grass (town; approximate)')}
 # stations the Great Northern lines already on the map share: (canon name, state) -> gid (their position is taken from the map)

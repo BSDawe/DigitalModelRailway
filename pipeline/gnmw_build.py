@@ -9,7 +9,9 @@ from ab_lines import build, trace, report
 HERE = os.path.dirname(os.path.abspath(__file__))
 TZ = ' Shown in Pacific time: two hours earlier than the Central time printed, an hour earlier than the Mountain time.'
 SRC = 'Official Guide, May 1948'
-OVER = {'gn_t002': dict(cols=['No29', 'No11', 'No199', 'No209', 'No27', 'No1', 'No12', 'No200', 'No30', 'No28', 'No2']),   # Nos. 7 / 8: the Winnipeg Limited, built in skgn007
+SAB = [('St. Paul, Minn.', 'Stone Arch Bridge, Minn.', 10.2)]   # St. Paul - Minneapolis over the Stone Arch Bridge (Brendan, 27 Nov 2026)
+OVER = {'gn_t001': dict(via=SAB), 'gn_t053': dict(via=[('St. Paul (Union Station), Minn.', 'Stone Arch Bridge, Minn.', 10.2)]), 'gn_t021': dict(force=[('Milaca, Minn.', 'St. Cloud, Minn.')]),
+        'gn_t002': dict(via=SAB, cols=['No29', 'No11', 'No199', 'No209', 'No27', 'No1', 'No12', 'No200', 'No30', 'No28', 'No2']),   # Nos. 7 / 8: the Winnipeg Limited, built in skgn007
         'gn_t001c_cbq': dict(short='Burlington Route (GN through trains)', long='Chicago – St. Paul (Burlington Route)', src='Official Guide, May 1948, GN Tables 1 and 2: Burlington connection rows'),
         'gn_duluth_gf': dict(short='GN Duluth – Grand Forks', long='Duluth – Superior – Grand Rapids – Bemidji – Crookston – Grand Forks')}
 FIRST = ['gn_t001c_cbq', 'gn_t001', 'gn_t002', 'gn_t003', 'gn_t004', 'gn_t053', 'gn_t007', 'gn_duluth_gf', 'gn_t008', 'gn_t038']
@@ -22,7 +24,7 @@ def spec(stem):
     sh = lambda s: re.sub(r',\s*(Minn\.|N\. Dak\.|S\. Dak\.|Mont\.|Idaho|Wis\.|Iowa|Ill\.|Wash\.)$', '', s)
     return dict(key='gnmw' + stem[3:].replace('_', ''), rail='gnmw', graph='sk:gnmw', legs=[dict(csv=fn)], dirs=['to ' + sh(b), 'to ' + sh(a)], short=short,
                 long=o.get('long', f'{sh(a)} – {sh(b)}'), src=f"{short} ({o.get('src', SRC)})", cols=o.get('cols'), shift=-7200, tzrows=True, tznote=TZ,
-                names=names, notes={}, via=(), noplace=(), force=o.get('force', ()), ends=True, realends=True)
+                names=names, notes={}, via=o.get('via', ()), noplace=(), force=o.get('force', ()), ends=True, realends=True)
 STEMS = sorted(os.path.basename(f)[:-4] for f in glob.glob(os.path.join(HERE, 'timetables_gn', 'gn_*.csv')))
 SPECS = [spec(s) for s in FIRST] + [spec(s) for s in STEMS if s not in FIRST]
 if __name__ == '__main__':

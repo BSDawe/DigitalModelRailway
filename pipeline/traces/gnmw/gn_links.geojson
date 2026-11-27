@@ -1,0 +1,120 @@
+{
+"type": "FeatureCollection",
+"features": [
+{
+"type": "Feature",
+"properties": {
+"own": "gn",
+"name": "Moccasin - Lewistown: the missing piece near Hanover (Brendan, 27 Nov 2026)",
+"note": "Brendan's trace",
+"src": "brendan",
+"cost": 1.0
+},
+"geometry": {
+"type": "LineString",
+"coordinates": [
+[
+-109.5730805770353,
+47.12717036080184
+],
+[
+-109.565359917312,
+47.1271798076084
+],
+[
+-109.563978012473,
+47.12711010107608
+],
+[
+-109.5624198430791,
+47.1269588663426
+],
+[
+-109.5605718415828,
+47.12666305064527
+],
+[
+-109.5600767555138,
+47.12645840539405
+]
+]
+}
+},
+{
+"type": "Feature",
+"properties": {
+"own": "gn",
+"name": "Minneapolis: Stone Arch Bridge to the Great Northern station (Claude, estimated; Brendan, 27 Nov 2026: the preferred routing)",
+"note": "estimated: the KMZ has no piece over the bridge",
+"src": "claude",
+"cost": 0.6,
+"est": true
+},
+"geometry": {
+"type": "LineString",
+"coordinates": [
+[
+-93.2454392,
+44.9806618
+],
+[
+-93.2487,
+44.9808
+],
+[
+-93.2525,
+44.9806
+],
+[
+-93.256,
+44.981
+],
+[
+-93.259,
+44.982
+],
+[
+-93.2625,
+44.9832
+],
+[
+-93.2655,
+44.9842
+],
+[
+-93.2672,
+44.9852
+],
+[
+-93.267977,
+44.986012
+]
+]
+}
+},
+{
+"type": "Feature",
+"properties": {
+"own": "gn",
+"name": "Sioux Falls: the gap between the two Willmar - Sioux Falls pieces of the KMZ (Claude, estimated)",
+"note": "estimated link",
+"src": "claude",
+"cost": 1.0,
+"est": true
+},
+"geometry": {
+"type": "LineString",
+"coordinates": [
+[
+-96.6959288,
+43.5624831
+],
+[
+-96.6813819,
+43.5669582
+]
+]
+}
+}
+]
+}

@@ -3359,3 +3359,14 @@ A review of the whole project (Brendan: "have a peek through ... suggest improve
   Sioux Falls, Mossmain - Billings (NP track), Superior - Duluth (NP trackage rights, Brendan; the pieces there do not join yet).
 - Page: state tags N. Dak., S. Dak., Iowa, Md., Tex. hidden like the others. Colour guide refreshed.
 - Counts: 774 lines, 5437 trips, 9037 stops, 76 agencies; check_gtfs 0 problems.
+
+## Version 234
+- Great Northern corrections (Brendan, 27 Nov 2026): St. Paul - Minneapolis trains over the Stone Arch Bridge (Tables 1, 2, 53; the KMZ has no piece over the bridge: an
+  estimated link from the east bank to the Great Northern station, drawn broken; a trace would replace it); Milaca - St. Cloud now on track (Table 21); Brendan's missing piece
+  near Hanover (Moccasin - Lewistown, traces/gnmw/gn_links.geojson); Garretson - Sioux Falls joined across a 1.25 km gap between two KMZ pieces (estimated link). Piece ends
+  150 - 800 m from other GN track tied straight.
+- Toronto Union Station one stop again (Brendan: it showed as three): the CN and CPR entries of on_lines.SHARED were lost into a comment in V217 and surfaced when on_build
+  re-ran in V233; joined at assembly (merge_stations), SHARED to be restored at the next on_build run.
+- Names by zoom: Chicago Union Station "Union Station" (Brendan), Superior Union Station, Sioux City Union Depot.
+- Still drawn as straight estimates: Sioux Falls - Watertown, Tilden Jct. - Red Lake Falls (no track in the KMZ), Mossmain - Billings, Superior - Duluth (NP traces to come, Brendan).
+- Counts: 774 lines, 5437 trips, 9035 stops, 76 agencies; check_gtfs 0 problems.
