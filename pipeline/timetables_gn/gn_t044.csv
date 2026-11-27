@@ -1,0 +1,10 @@
+# Great Northern Railway, Table 44, Bonner's Ferry and Port Hill (Official Guide, May 1948, page 1075; Brendan's images, 27 Nov 2026; scans in the private repo, scans/og1948_gn/p1075_*.png). PACIFIC TIME. Miles as printed. NOT BUILT YET.
+# Signs (page 1075 key): * daily; dagger daily except Sunday; double dagger daily except Saturday; f flag stop; k Saturday only; y Monday and Thursday; heavy dot Monday and Friday;
+# - - does not stop.
+#train col=No380 num=380 dir=down days="Mon,Fri" kind=passenger note="Great Northern No. 380, Monday and Friday: Bonner's Ferry 12.45 p.m. to Port Hill 2.45 p.m. (Official Guide, May 1948, Table 44, February 8, 1948)."
+#train col=No379 num=379 dir=up days="Mon,Fri" kind=passenger note="Great Northern No. 379, Monday and Friday: Port Hill 7.30 a.m. to Bonner's Ferry 9.30 a.m. (Official Guide, May 1948, Table 44, February 8, 1948)."
+mile,station,principal,prov,tz,No380,No379
+0,"Bonner's Ferry, Idaho",1,ID,P,lv 12.45p,ar 9.30a
+8,"Ritz, Idaho",0,ID,P,1.20p,8.55a
+17,"Copeland, Idaho",0,ID,P,2.00p,8.10a
+26,"Port Hill, Idaho",1,ID,P,ar 2.45p,lv 7.30a

@@ -1,0 +1,51 @@
+# Great Northern Railway, Table 38, Havre, Great Falls, Helena and Butte (Official Guide, May 1948, page 1075; Brendan's images, 27 Nov 2026; scans in the private repo, scans/og1948_gn/p1075_*.png). MOUNTAIN TIME. Miles as printed. NOT BUILT YET.
+# Printed sideways. Columns 1-237, 3-235, 27-221 / 238-2, 236-4, 222-28: the Havre - Great Falls (- Butte) trains connect with the main-line trains at Havre (No. 1 Havre 12.05 p.m.,
+# 237 leaves 1.15 p.m.; No. 3 8.00 a.m. / 235 8.20 a.m.; No. 27 3.20 a.m. / 221 3.45 a.m.; 238 arrives 11.45 a.m. / No. 2 leaves 12.55 p.m.; 236 9.55 p.m. / No. 4 10.30 p.m.;
+# 222 2.30 a.m. / No. 28 2.50 a.m.). The St. Paul - Minot - Havre rows repeat Tables 1 - 3. Stations with no stop for any train (Rainbow, Flood, Riverdale, Gearing, Iron,
+# Four Range, Montana City, Jefferson, Wickes, Portal, Fuller, Bernice, Trask, Woodville, Mountain Spur) left out. Great Falls - Butte also in Table 41 (235 / 236) and as
+# connection rows in Table 8.
+# Signs (page 1075 key): * daily; dagger daily except Sunday; double dagger daily except Saturday; f flag stop; k Saturday only; y Monday and Thursday; heavy dot Monday and Friday;
+# - - does not stop.
+#train col=No237 num=237 dir=down days=daily kind=passenger note="Great Northern No. 237, daily: Havre 1.15 p.m. (from No. 1) by Fort Benton to Great Falls 4.00 p.m. (Official Guide, May 1948, Table 38, February 8, 1948)." links="connection from No. 1 at Havre"
+#train col=No235 num=235 dir=down days=daily kind=passenger note="Great Northern No. 235, daily: Havre 8.20 a.m. (from No. 3) by Fort Benton to Great Falls 11.30 - 11.45 a.m., Helena 2.35 - 2.50 p.m. and Butte 5.20 p.m. (Official Guide, May 1948, Table 38, February 8, 1948)." links="connection from No. 3 at Havre"
+#train col=No221 num=221 dir=down days=daily kind=passenger note="Great Northern No. 221, daily: Havre 3.45 a.m. (from No. 27) by Fort Benton to Great Falls 7.00 a.m. (Official Guide, May 1948, Table 38, February 8, 1948)." links="connection from No. 27 at Havre"
+#train col=No238 num=238 dir=up days=daily kind=passenger note="Great Northern No. 238, daily: Great Falls 9.00 a.m. by Fort Benton to Havre 11.45 a.m. (for No. 2) (Official Guide, May 1948, Table 38, February 8, 1948)." links="connection to No. 2 at Havre"
+#train col=No236 num=236 dir=up days=daily kind=passenger note="Great Northern No. 236, daily: Butte 12.25 p.m., Helena 2.45 - 3.10 p.m., Great Falls 6.25 - 6.50 p.m., by Fort Benton to Havre 9.55 p.m. (for No. 4) (Official Guide, May 1948, Table 38, February 8, 1948)." links="connection to No. 4 at Havre"
+#train col=No222 num=222 dir=up days=daily kind=passenger note="Great Northern No. 222, daily: Great Falls 11.30 p.m. by Fort Benton to Havre 2.30 a.m. (for No. 28) (Official Guide, May 1948, Table 38, February 8, 1948)." links="connection to No. 28 at Havre"
+mile,station,principal,prov,tz,No237,No235,No221,No238,No236,No222
+0,"Havre, Mont.",1,MT,M,lv 1.15p,lv 8.20a,lv 3.45a,ar 11.45a,ar 9.55p,ar 2.30a
+8,"Assinniboine, Mont.",0,MT,M,,,f3.57a,,,f2.17a
+15,"Laredo, Mont.",0,MT,M,,f8.42a,f4.07a,,,f2.07a
+25,"Box Elder, Mont.",0,MT,M,,8.55a,f4.20a,,f9.21p,f1.55a
+36,"Big Sandy, Mont.",0,MT,M,1.58p,9.09a,f4.34a,11.00a,9.08p,1.41a
+41,"Verona, Mont.",0,MT,M,,,f4.42a,,,f1.32a
+49,"Virgelle, Mont.",0,MT,M,,f9.30a,f4.54a,,f8.45p,f1.20a
+55,"Stranahan, Mont.",0,MT,M,,,f5.02a,,,f1.12a
+60,"Lippard, Mont.",0,MT,M,,,f5.09a,,,f1.04a
+66,"Chappell, Mont.",0,MT,M,,f9.58a,f5.17a,,f8.21p,f12.56a
+71,"Teton, Mont.",0,MT,M,,,f5.24a,,,f12.49a
+79,"Fort Benton, Mont.",1,MT,M,2.58p,10.23a,5.36a,9.58a,7.58p,12.37a
+84,"Kershaw, Mont.",0,MT,M,,,f5.46a,,,f12.29a
+89,"Tunis, Mont.",0,MT,M,,,f5.55a,,,f12.22a
+94,"Carter, Mont.",0,MT,M,,f10.46a,f6.05a,,f7.34p,f12.14a
+99,"Floweree, Mont.",0,MT,M,,f10.53a,f6.14a,,f7.27p,f12.07a
+107,"Portage, Mont.",0,MT,M,,f11.02a,f6.29a,,f7.16p,f11.56p
+113,"Sheffels, Mont.",0,MT,M,,,f6.39a,,,f11.48p
+123,"Great Falls, Mont.",1,MT,M,ar 4.00p,ar 11.30a / lv 11.45a,ar 7.00a,lv 9.00a,ar 6.25p / lv 6.50p,lv 11.30p
+137,"Ulm, Mont.",0,MT,M,,f12.08p,,,,
+152,"Cascade, Mont.",0,MT,M,,12.31p,,,5.25p,
+160,"Hardy, Mont.",0,MT,M,,f12.44p,,,f5.10p,
+168,"Mid Canon, Mont.",0,MT,M,,f12.56p,,,f4.55p,
+175,"Craig, Mont.",0,MT,M,,1.08p,,,f4.42p,
+183,"Wolf Creek, Mont.",0,MT,M,,1.22p,,,4.28p,
+192,"Sieben, Mont.",0,MT,M,,f1.44p,,,f4.06p,
+204,"Silver City, Mont.",0,MT,M,,f2.04p,,,f3.44p,
+221,"Helena, Mont.",1,MT,M,,ar 2.35p / lv 2.50p,,,ar 2.45p / lv 3.10p,
+236,"Clancy, Mont.",0,MT,M,,3.20p,,,2.22p,
+237,"Alhambra, Mont.",0,MT,M,,3.22p,,,2.20p,
+243,"Corbin, Mont.",0,MT,M,,f3.37p,,,2.08p,
+249,"Amazon, Mont.",0,MT,M,,f3.54p,,,f1.51p,
+255,"Boulder, Mont.",1,MT,M,,4.05p,,,1.39p,
+263,"Basin, Mont.",0,MT,M,,4.20p,,,1.25p,
+275,"Elk Park, Mont.",0,MT,M,,f4.44p,,,f1.04p,
+293,"Butte, Mont.",1,MT,M,,ar 5.20p,,,lv 12.25p,

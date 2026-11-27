@@ -1,0 +1,17 @@
+# Great Northern Railway, Table 41, Butte, Helena, Great Falls and Lewistown (Moccasin - Lewistown) (Official Guide, May 1948, page 1075; Brendan's images, 27 Nov 2026; scans in the private repo, scans/og1948_gn/p1075_*.png). MOUNTAIN TIME. Miles as printed. NOT BUILT YET.
+# Miles from Butte. Butte - Helena - Great Falls (235 / 236) is in gn_t038.csv; Great Falls - Moccasin is Table 8 (gn_t008.csv: 239 / 240 and 43 / 42). Columns 42-368 and 367-43:
+# No. 42 Great Falls *11.15 p.m. - Moccasin *4.15 a.m., then No. 368 to Lewistown 5.55 a.m.; No. 367 Lewistown *11.30 p.m. - Moccasin 1.45 a.m., then No. 43 Great Falls 6.45 a.m.
+# (Table 8 has No. 43 at Moccasin 4.11 a.m. and No. 42 at 2.10 a.m.: the Lewistown cars wait there). Nos. 239 / 240 run through Lewistown - Great Falls (Table 8 has the Moccasin -
+# Great Falls part): here the Moccasin - Lewistown part.
+# Signs (page 1075 key): * daily; dagger daily except Sunday; double dagger daily except Saturday; f flag stop; k Saturday only; y Monday and Thursday; heavy dot Monday and Friday;
+# - - does not stop.
+#train col=No368 num=368 dir=down days=daily kind=passenger note="Great Northern No. 368, daily: Moccasin 4.15 a.m. (cars from No. 42) to Lewistown 5.55 a.m. (Official Guide, May 1948, Table 41, February 8, 1948)." links="cars from No. 42 at Moccasin"
+#train col=No240 num=240 dir=down days=daily kind=passenger note="Great Northern No. 240, daily: (Great Falls 2.30 p.m.) Moccasin 5.14 p.m. to Lewistown 6.20 p.m. (Official Guide, May 1948, Table 41, February 8, 1948)." links="Great Falls - Moccasin, Table 8"
+#train col=No239 num=239 dir=up days=daily kind=passenger note="Great Northern No. 239, daily: Lewistown 7.15 a.m. to Moccasin 8.15 a.m. (on to Great Falls 10.55 a.m., Table 8) (Official Guide, May 1948, Table 41, February 8, 1948)." links="Moccasin - Great Falls, Table 8"
+#train col=No367 num=367 dir=up days=daily kind=passenger note="Great Northern No. 367, daily: Lewistown 11.30 p.m. to Moccasin 1.45 a.m. (cars on No. 43) (Official Guide, May 1948, Table 41, February 8, 1948)." links="cars to No. 43 at Moccasin"
+mile,station,principal,prov,tz,No368,No240,No239,No367
+258,"Moccasin, Mont.",1,MT,M,lv 4.15a,lv 5.14p,ar 8.15a,ar 1.45a
+265,"Kolin, Mont.",0,MT,M,f4.39a,5.27p,7.59a,1.01a
+272,"Rossfork, Mont.",0,MT,M,f5.00a,5.39p,7.45a,12.36a
+278,"Kingston, Mont.",0,MT,M,f5.19a,f5.51p,f7.34a,f12.12a
+288,"Lewistown, Mont.",1,MT,M,ar 5.55a,ar 6.20p,lv 7.15a,lv 11.30p

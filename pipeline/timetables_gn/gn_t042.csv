@@ -1,0 +1,17 @@
+# Great Northern Railway, Table 42, Vaughn and Augusta (Official Guide, May 1948, page 1075; Brendan's images, 27 Nov 2026; scans in the private repo, scans/og1948_gn/p1075_*.png). MOUNTAIN TIME. Miles as printed. NOT BUILT YET.
+# Great Falls - Vaughn is the Shelby line (Table 8).
+# Signs (page 1075 key): * daily; dagger daily except Sunday; double dagger daily except Saturday; f flag stop; k Saturday only; y Monday and Thursday; heavy dot Monday and Friday;
+# - - does not stop.
+#train col=No365 num=365 dir=down days="ex Sun" kind=passenger note="Great Northern No. 365, daily except Sunday: Great Falls 6.55 a.m. by Vaughn and Simms to Augusta 9.40 a.m. (Official Guide, May 1948, Table 42, February 8, 1948)."
+#train col=No366 num=366 dir=up days="ex Sun" kind=passenger note="Great Northern No. 366, daily except Sunday: Augusta 9.55 a.m. by Simms and Vaughn to Great Falls 12.25 p.m. (Official Guide, May 1948, Table 42, February 8, 1948)."
+mile,station,principal,prov,tz,No365,No366
+0,"Great Falls, Mont.",1,MT,M,lv 6.55a,ar 12.25p
+12,"Vaughn, Mont.",1,MT,M,7.40a,11.57a
+21,"Sun River, Mont.",0,MT,M,f8.03a,f11.27a
+25,"Fort Shaw, Mont.",0,MT,M,f8.16a,f11.14a
+31,"Simms, Mont.",0,MT,M,8.33a,10.56a
+35,"Lowry, Mont.",0,MT,M,f8.45a,f10.44a
+42,"Riebeling, Mont.",0,MT,M,f9.02a,f10.27a
+46,"Bickel, Mont.",0,MT,M,f9.15a,f10.14a
+52,"Gilman, Mont.",0,MT,M,f9.30a,f10.01a
+54,"Augusta, Mont.",1,MT,M,ar 9.40a,lv 9.55a
