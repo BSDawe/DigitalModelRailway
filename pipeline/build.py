@@ -104,9 +104,68 @@ def apply(state, part):
         gt[fn] = cur + d['added']
     return viz, gt
 
+# A large part (over SHARD_BYTES) is kept as a folder, parts/<step>/: index.json (everything but the lines and the added GTFS rows) and one file per group
+# of lines (the railway prefix of the line key and the first two digits of its table: oncn00, oncn01, oncp07 ...) with those lines and their GTFS rows. A change to one
+# railway then rewrites (and commits) only its group's file, not the whole 35 MB part (Brendan, 26 Nov 2026: planning for timetables to Panama).
+SHARD_BYTES = 8_000_000
+def _group(key):
+    m = re.match(r'([a-z]+?)(\d\d?)', key)
+    return (m.group(1) + m.group(2)) if m else re.match(r'[a-z_]*', key).group(0)[:12] or 'misc'
+
+def save_part(name, part):
+    s = dumps(part); single = os.path.join(PARTS, name + '.json'); folder = os.path.join(PARTS, name)
+    if len(s) < SHARD_BYTES:
+        open(single, 'w').write(s)
+        if os.path.isdir(folder):
+            for f in os.listdir(folder): os.remove(os.path.join(folder, f))
+            os.rmdir(folder)
+        return
+    grp_of = {}                                                       # GTFS first column -> group: route ids, shape ids, trip ids
+    for k, l in part['lines_set'].items():
+        g = _group(k); grp_of[k.upper()] = g
+        for t in l.get('trips', []): grp_of[t['id']] = g
+    def gfor(row):
+        c = row.split(',', 1)[0]
+        return grp_of.get(c) or grp_of.get(c.rsplit('_', 1)[0]) or 'misc'
+    shards = {}
+    index = {k: v for k, v in part.items() if k not in ('lines_set', 'gtfs')}
+    index['lines_order'] = [[k, _group(k)] for k in part['lines_set']]
+    index['gtfs'] = {}
+    for k, l in part['lines_set'].items(): shards.setdefault(_group(k), {'lines_set': {}, 'gtfs': {}})['lines_set'][k] = l
+    for fn, d in part['gtfs'].items():
+        if 'added' not in d: index['gtfs'][fn] = d; continue
+        runs = []                                                     # the order of the added rows, as runs of [group, count], so assembly is unchanged
+        for row in d['added']:
+            g = gfor(row); shards.setdefault(g, {'lines_set': {}, 'gtfs': {}})['gtfs'].setdefault(fn, []).append(row)
+            if runs and runs[-1][0] == g: runs[-1][1] += 1
+            else: runs.append([g, 1])
+        index['gtfs'][fn] = dict(removed=d['removed'], runs=runs)
+    os.makedirs(folder, exist_ok=True)
+    keep = {'index.json'} | {g + '.json' for g in shards}
+    for f in os.listdir(folder):
+        if f not in keep: os.remove(os.path.join(folder, f))
+    for g, sh in shards.items():
+        p = os.path.join(folder, g + '.json'); t = dumps(sh)
+        if not os.path.exists(p) or open(p).read() != t: open(p, 'w').write(t)
+    open(os.path.join(folder, 'index.json'), 'w').write(dumps(index))
+    if os.path.exists(single): os.remove(single)
+
 def load_part(name):
-    p = os.path.join(PARTS, name + '.json')
-    return json.load(open(p)) if os.path.exists(p) else None
+    p = os.path.join(PARTS, name + '.json'); folder = os.path.join(PARTS, name)
+    if os.path.exists(p): return json.load(open(p))
+    if not os.path.isdir(folder): return None
+    index = json.load(open(os.path.join(folder, 'index.json')))
+    shards = {f[:-5]: json.load(open(os.path.join(folder, f))) for f in os.listdir(folder) if f != 'index.json'}
+    part = {k: v for k, v in index.items() if k not in ('lines_order', 'gtfs')}
+    part['lines_set'] = {k: shards[g]['lines_set'][k] for k, g in index['lines_order']}
+    part['gtfs'] = {}
+    for fn, d in index['gtfs'].items():
+        if 'runs' not in d: part['gtfs'][fn] = d; continue
+        pos = {}; added = []
+        for g, n in d['runs']:
+            i = pos.get(g, 0); added += shards[g]['gtfs'][fn][i:i + n]; pos[g] = i + n
+        part['gtfs'][fn] = dict(removed=d['removed'], added=added)
+    return part
 
 def stale_reason(step, part, rerun):
     if part is None: return 'no part yet'
@@ -118,8 +177,10 @@ def stale_reason(step, part, rerun):
     return None
 
 def part_sha(name):
-    p = os.path.join(PARTS, name + '.json')
-    return sha(open(p, 'rb').read()) if os.path.exists(p) else None
+    p = os.path.join(PARTS, name + '.json'); folder = os.path.join(PARTS, name)
+    if os.path.exists(p): return sha(open(p, 'rb').read())
+    if os.path.isdir(folder): return sha(b''.join(open(os.path.join(folder, f), 'rb').read() for f in sorted(os.listdir(folder))))
+    return None
 
 def finish(state):
     viz, gt = state
@@ -179,7 +240,7 @@ def main(argv):
             write_state(*state); sys.exit(1)
         after = read_state(); part = diff(state, after)
         part.update(step=name, sig=signature(s), needs_sig={d: part_sha(d) for d in s.get('needs', [])})
-        open(os.path.join(PARTS, name + '.json'), 'w').write(dumps(part))
+        save_part(name, part)
         state = after; rerun.add(name)
         print(f"ran {name:18s} {time.time() - t0:5.1f}s  ({why})  lines: {' '.join(part['lines_set']) or '-'}")
     if not rerun and '--assemble' not in flags: print('nothing out of date')

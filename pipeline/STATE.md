@@ -1,7 +1,7 @@
 # The Digital Model Railway — project state
 
 Read this first. It is meant to be enough to start a short, single-task chat without replaying the project's history.
-Last updated 26 November 2026 (Version 229). This file is the current state and the standing rules; the version-by-version history is in CHANGELOG.md.
+Last updated 26 November 2026 (Version 230). This file is the current state and the standing rules; the version-by-version history is in CHANGELOG.md.
 
 ## What this is
 
@@ -54,7 +54,7 @@ A full `build.py --all` now takes about 70-80 minutes (on_build alone about 60):
 ## Build
 
 `build.py` runs steps listed in `steps.json`. Each step is one script that adds one or a few lines to the map. A step's result is kept in
-`parts/<step>.json` (its lines for the page and its rows for the GTFS feed). Assembly merges the parts into `viz_data.json`, `gtfs/`, the GTFS
+`parts/<step>.json` (its lines for the page and its rows for the GTFS feed; a part over 8 MB is a folder parts/<step>/ of railway groups, read and written only through build.load_part / save_part). Assembly merges the parts into `viz_data.json`, `gtfs/`, the GTFS
 zip and the page. A step is re-run only if its script or an input file changed, or a step it reads was re-run.
 
     python3 build.py              # re-run what is out of date, assemble
@@ -349,6 +349,7 @@ After an accepted build: `cp viz_data.json tools/.baseline_viz.json`.
 
 ## Recent versions (one line each; the detail is in CHANGELOG.md)
 
+- 230: large build parts kept as folders of railway groups (on_build); site data cut the same way; Mixed train icon.
 - 229: Chicagoland view; shorter station panels; colour guide (collapsible, by trains per week); Buffalo Belt Line trains.
 - 228: the Chicago Aurora and Elgin (Wells Street - Wheaton - Aurora, Batavia, Elgin; Garfield Park 'L' as CTA track).
 - 227: North Shore Line southbound trains face the right way; Winthrop Harbor.
@@ -363,7 +364,6 @@ After an accepted build: `cp viz_data.json tools/.baseline_viz.json`.
 - 218: Clarke Steamship coastal services (North Shore, North Gaspé, Magdalen; the Rimouski / Matane motorships), simulated weekly schedules.
 - 217: TH&B trains on to Black Rock and Buffalo (Central Terminal); train notes and sources shown for every railway.
 - 216: the Texas Electric Railway (Dallas - Denison, Dallas - Waco; Ravenna's trace, 1939 times as the 1948 pattern).
-- 204: CN trains changing number at Hamilton (Table 79: 101/102, 89/90, 187/184, 93/94, 91/92, 107/108) joined as through trains.
 - 200: Arnold Transit from the August 1950 Official Guide (stand-in for July 1948): five St. Ignace and five Mackinaw City sailings each way; Mackinac Island - Les Cheneaux - Cedarville.
 - 199: the Straits of Mackinac car ferry drawn as a train ferry; Arnold Transit St. Ignace - Mackinac Island boats (atc_build.py).
 - 198: the Duluth, South Shore & Atlantic and Mineral Range (Official Guide; drawn as CP, labelled DSS&A); Mackinac Straits car ferry; NP Ashland - Superior.

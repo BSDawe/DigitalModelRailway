@@ -2,7 +2,7 @@
 
 One list for the Digital Model Railway: questions for Brendan, material he is to supply, and work for Claude. It merges OPEN_QUESTIONS.md with the TO DO lists that were kept in STATE.md (the last of them: "TO DO (1 November 2026)"), as Brendan asked on 9 Nov 2026.
 Claude adds items as they come up. When one is answered or done, it moves to "Done and answered" with the date. Each open item says what the build does in the meantime. Version tags (V143) say when an item was raised.
-Last updated 26 November 2026 (Version 229).
+Last updated 26 November 2026 (Version 230).
 
 ## Decisions for Brendan
 - [ ] Unnumbered connecting trains: branch sections printed in a parent train's column take the parent's number (e.g. on_cn_t126m / d / p / c / g). Through cars or separate connecting trains? No number, or "connection to No. 41"? (26 Oct) Brendan: much may settle as the branch tables come in.
@@ -27,7 +27,7 @@ Last updated 26 November 2026 (Version 229).
 ## Fixes queued (Brendan: "don't fix yet"; ask before the next rebuild whether to include them)
 - [ ] SCALING WORK, scheduled (Brendan, 26 Nov 2026: do 1 and 2 on the first build after Thursday 26 Nov, 9 p.m. his time, when his weekly usage resets), planning for
   timetables all the way to Panama (perhaps 4 - 6 times today's data):
-  1. (List skip when hidden: done V229.) Split parts/on_build.json (35 MB, 60 commits, repository history
+  1. DONE (V229 list skip; V230 parts/on_build/ folder of groups, site data by group). Was: split parts/on_build.json (35 MB, 60 commits, repository history
      750 MB; site chunk 5.6 MB re-downloaded on any change) by railway or region; new U.S. railways go in steps of their own meanwhile.
   2. Region loading ("stage 2" in STATE.md): the page loads a region's lines when it is viewed, so start-up (12 s and about 200 MB of memory now) depends on the view, not the
      continent; with it, the list and station boards scoped to the view (also in the 16 Nov ideas).
@@ -308,6 +308,8 @@ Each runs to an International Boundary point (time estimated) or to the last Can
 - [x] Sydney & Louisburg: built (V163). Colour #5B3A8C is Claude's pick. Victoria Jct. - Glace Bay 9.9 mi traced / 11.0 printed (the trace may take a later route).
 
 ## Done and answered
+### Done in Version 230 (26 Nov 2026)
+- Scaling step 1: parts/on_build/ as a folder of railway groups; site data files by group; Mixed train icon in the guide.
 ### Done in Version 229 (26 Nov 2026)
 - Chicagoland view (replaces the North Shore Line and CA&E views); shorter station panels; "On the line" idle while the boxes are hidden; the colour guide (tools/legend.py);
   Buffalo: Terrace Station trains by the Niagara Branch, the others by the Belt Line.

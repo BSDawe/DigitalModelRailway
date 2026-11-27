@@ -45,7 +45,7 @@ def main():
     if missing: print('no name for', missing, file=sys.stderr)
     rows += [sw(k, nm) for k, nm in TRACK_ONLY.items() if f'--{k}:' in t]
     block = ('<!-- legend:start (tools/legend.py) -->\n    <details class="rails"><summary>Railway colours</summary><div class="legend">' + ''.join(rows) + '</div></details>\n'
-             '    <div class="legend"><span><i class="sw consist plain"></i>Train</span><span><i class="sw motor"></i>Motor train</span><span><i class="sw boat"></i>Steamer</span></div>\n'
+             '    <div class="legend"><span><i class="sw consist plain"></i>Train</span><span><i class="sw mixedtrain"></i>Mixed train</span><span><i class="sw motor"></i>Motor train</span><span><i class="sw boat"></i>Steamer</span></div>\n'
              '    <!-- legend:end -->')
     if '<!-- legend:start' in t: t = re.sub(r'<!-- legend:start.*?<!-- legend:end -->', lambda _: block, t, flags=re.S)
     else:
@@ -54,7 +54,7 @@ def main():
     if '.sw.rail {' not in t:
         css = ('.sw.rail { width: 14px; height: 8px; border-radius: 2px; background: var(--c); } '
                '.sw.rail.banded { background: linear-gradient(var(--c) 0 30%, var(--band) 30% 70%, var(--c) 70%); }\n'
-               '.sw.consist.plain { --gn: var(--muted); } .sw.motor { width: 20px; height: 7px; border-radius: 2px; --gn: var(--muted); '
+               '.sw.consist.plain { --gn: var(--muted); } .sw.mixedtrain { width: 26px; height: 7px; border-radius: 2px; background: linear-gradient(90deg, var(--loco) 0 28%, var(--paper) 28% 32%, var(--freight) 32% 62%, var(--paper) 62% 66%, var(--muted) 66%); } .sw.motor { width: 20px; height: 7px; border-radius: 2px; --gn: var(--muted); '
                'background: linear-gradient(90deg, var(--gn) 0 47%, var(--paper) 47% 53%, var(--gn) 53%); }\n'
                'details.rails summary { cursor: pointer; font: 600 12px/1.6 var(--display); color: var(--ink); list-style: revert; margin-top: 6px; }\n'
                'details.rails .legend { margin-top: 4px; }\n')

@@ -3309,3 +3309,13 @@ A review of the whole project (Brendan: "have a peek through ... suggest improve
     (tools/mar_import_mc.py). on_build splits each file with both kinds: the Belt Line trains make a line of their own (onmc006b: Nos. 8, 17, 33, 35, 39, 40, 47, 48, 364;
     onthb056pb: TH&B 371, 372, 374, 380, 382), without the Terrace row (ab_lines: spec 'drop') and by a point on the Belt Line (via, forced).
 - Counts: 722 lines, 5230 trips, 8109 stops, 75 agencies; check_gtfs 0 problems.
+
+## Version 230
+- Scaling, step 1 (Brendan, 26 Nov 2026; planning for timetables to Panama): a large part (over 8 MB) is kept as a folder, parts/<step>/ (index.json plus one file per group of
+  lines: the railway prefix and the first two table digits, oncn00, oncn01, oncp07 ...; build.save_part / load_part / part_sha). parts/on_build.json (35 MB) is now
+  parts/on_build/, 66 files, the largest 2 MB: a change to one railway commits only its group. Assembly gives byte-identical viz_data.json and GTFS.
+- The site: a step's data over 1.5 MB is cut into the same groups (make_site.py), so the 5.8 MB on_build file is now about 100 files; a visitor re-downloads only the groups
+  that changed. 148 data files in all; the largest is the steamers' 1 MB.
+- Colour guide: Mixed train icon (Brendan: locomotive, freight cars, coach) beside Train, Motor train and Steamer.
+- Step signatures refreshed (sig / needs_sig) for steps whose only changes were ab_lines.py (the new 'drop' option, unused by them), mc.geojson (the Belt Line) and the re-saved
+  parts: their output is unchanged.

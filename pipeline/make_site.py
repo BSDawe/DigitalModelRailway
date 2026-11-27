@@ -17,6 +17,7 @@ same numbers as the single-file page (fraser_valley_1949.html, still written by 
 File names carry a hash of their contents: a file that has not changed keeps its name and browsers keep using their copy, so after an update
 a visitor downloads only the steps that changed. The manifest is small and fetched fresh each time."""
 import hashlib, json, os, re, shutil
+import build                                                        # build.load_part (a part kept whole or as a folder of groups), build._group
 HERE = os.path.dirname(os.path.abspath(__file__)); os.chdir(HERE)
 SITE, DATA = 'site', os.path.join('site', 'data')
 dumps = lambda o: json.dumps(o, separators=(',', ':'), ensure_ascii=False)
@@ -47,9 +48,8 @@ def owners():
     """line key -> the step that last set it (replaying the parts in build order)"""
     steps = json.load(open('steps.json'))['steps']; own = {}
     for s in steps:
-        f = os.path.join('parts', s['name'] + '.json')
-        if not os.path.exists(f): continue
-        part = json.load(open(f))
+        part = build.load_part(s['name'])
+        if part is None: continue
         for k in list(part.get('lines_set', {})) + part.get('append', []): own[k] = s['name']
     return own
 
@@ -80,6 +80,10 @@ def main():
     files = [write('core', core)]
     groups = {}
     for L in lines: groups.setdefault(own.get(L['key'], 'other'), []).append(packed_line(L))
+    for g in [g for g, ls in groups.items() if len(dumps(ls)) > 1_500_000]:   # a big step (on_build) is cut by railway group, as its part is (build._group): a change
+        sub = {}                                                       # to one railway re-downloads only that group's file (26 Nov 2026)
+        for L in groups.pop(g): sub.setdefault(g + '.' + build._group(L['key']), []).append(L)
+        groups.update(sub)
     for g, ls in groups.items(): files.append(write(g, {'lines': ls}))
     tiles_dir = os.path.join(os.path.dirname(HERE), 'basemap', 'tiles')
     tiles = None
