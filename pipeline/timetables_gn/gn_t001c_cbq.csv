@@ -1,0 +1,14 @@
+# Burlington Route (Chicago, Burlington & Quincy) Chicago - St. Paul for the Great Northern's through trains, from the connection rows at the head of GN Tables 1 and 2
+# (Official Guide, May 1948, pages 1067 - 1068). CENTRAL TIME. Brendan (27 Nov 2026): run the Chicago - St. Paul section through WITHOUT STOPS until the CB&Q tables are
+# transcribed, as with the CV trains over the Pennsylvania (V197). Chicago: Union Station (Brendan's point, 41.878867, -87.638917). Track: the CB&Q trace
+# (traces/msrails/Chicago_CBQ_Line.kmz: Chicago - Aurora - Rochelle - Oregon - Savanna - La Crosse - St. Paul), own cbq (silver). Mile 425 is the traced length, not printed.
+# Only Nos. 1 / 2 (The New Empire Builder) and 3 / 4 (The Oriental Limited) are through trains (GN numbers on both railways, St. Paul times run straight on). Not entered:
+# No. 9's Burlington connection (Chicago 8.15 a.m. - St. Paul 2.30 p.m., then GN No. 9 at 9.00 p.m.) and No. 10's (the Burlington Zephyr, St. Paul 8.25 a.m. - Chicago 2.40 p.m.):
+# separate Burlington trains, for the CB&Q tables.
+#train col=No1 num=1 dir=down days=daily kind=passenger name="The New Empire Builder" note="The New Empire Builder over the Burlington: Chicago (Union Station) 1.00 p.m. to St. Paul 7.45 p.m., no intermediate stops shown until the Burlington's tables are in (Official Guide, May 1948, GN Tables 1 and 2)." links="continues as GN No. 1 from St. Paul, gn_t001.csv"
+#train col=No3 num=3 dir=down days=daily kind=passenger name="The Oriental Limited" note="The Oriental Limited over the Burlington: Chicago (Union Station) 11.15 p.m. to St. Paul 8.15 a.m., no intermediate stops shown until the Burlington's tables are in (Official Guide, May 1948, GN Table 1)." links="continues as GN No. 3 from St. Paul, gn_t001.csv"
+#train col=No4 num=4 dir=up days=daily kind=passenger name="The Oriental Limited" note="The Oriental Limited over the Burlington: St. Paul 11.15 p.m. to Chicago (Union Station) 8.20 a.m., no intermediate stops shown until the Burlington's tables are in (Official Guide, May 1948, GN Table 1)." links="from GN No. 4, gn_t001.csv"
+#train col=No2 num=2 dir=up days=daily kind=passenger name="The New Empire Builder" note="The New Empire Builder over the Burlington: St. Paul 7.15 a.m. to Chicago (Union Station) 2.00 p.m., no intermediate stops shown until the Burlington's tables are in (Official Guide, May 1948, GN Tables 1 and 2)." links="from GN No. 2, gn_t001.csv"
+mile,station,principal,prov,tz,No1,No3,No4,No2
+0,"Chicago (Union Station), Ill.",1,IL,C,lv 1.00p,lv 11.15p,ar 8.20a,ar 2.00p
+425,"St. Paul, Minn.",1,MN,C,ar 7.45p,ar 8.15a,lv 11.15p,lv 7.15a

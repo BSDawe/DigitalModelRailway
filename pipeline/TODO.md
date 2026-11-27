@@ -35,6 +35,8 @@ Last updated 26 November 2026 (Version 232).
   Noyes locals 131 / 132). Spokane - Seattle / Portland already in wa_gn_t005a / t005c. Still wanted: the CB&Q Chicago - St. Paul table; branch tables met on the way (12 Casselton /
   Devils Lake, 24 St. John, 25 Hannah, 28 Sarles, 47 Whitefish - Kalispell) if the branch trains are to run. Questions in the files' heads: No. 9 / 10 daily (Table 1) vs daily
   except Sunday west of Minot (Table 3); No. 209's 8.30 a.m. at Nolan; No. 12's blotted day sign at Fargo.
+  Burlington section (Brendan, 27 Nov 2026): Chicago (Union Station) - St. Paul runs through WITHOUT STOPS for Nos. 1 - 4 until the CB&Q tables come (timetables_gn/gn_t001c_cbq.csv),
+  as with the CV trains over the PRR. Branch tables to follow from Brendan: build after them.
 
 ## Fixes queued (Brendan: "don't fix yet"; ask before the next rebuild whether to include them)
 - [ ] SCALING WORK, scheduled (Brendan, 26 Nov 2026: do 1 and 2 on the first build after Thursday 26 Nov, 9 p.m. his time, when his weekly usage resets), planning for
