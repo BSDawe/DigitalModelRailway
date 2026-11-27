@@ -1,0 +1,10 @@
+# Great Northern Railway, Table 20a, Evansville and Elbow Lake (February 8, 1948) (Official Guide, May 1948, page 1073; Brendan's images, 27 Nov 2026; scans in the private repo, scans/og1948_gn/p1073_*.png). CENTRAL TIME. Miles as printed. NOT BUILT YET.
+# Signs (page 1073 key): * daily; dagger daily except Sunday; b Tuesday, Thursday and Saturday; d Friday only; f flag stop; an ornate sign (Table 20, Nos. 335 / 336)
+# Monday, Wednesday, Thursday and Saturday.
+#train col=No339 num=339 dir=down days="Fri" kind=passenger note="Great Northern No. 339, Friday only: Evansville 6.30 p.m. to Elbow Lake 7.30 p.m. (Official Guide, May 1948, Table 20a, February 8, 1948)."
+#train col=No340 num=340 dir=up days="Fri" kind=passenger note="Great Northern No. 340, Friday only: Elbow Lake 7.40 p.m. to Evansville 8.40 p.m. (Official Guide, May 1948, Table 20a, February 8, 1948)."
+mile,station,principal,prov,tz,No339,No340
+0,"Evansville, Minn.",1,MN,C,lv 6.30p,ar 8.40p
+7,"Erdahl, Minn.",0,MN,C,6.55p,8.15p
+11,"Thorsborg, Minn.",0,MN,C,7.10p,7.55p
+16,"Elbow Lake, Minn.",1,MN,C,ar 7.30p,lv 7.40p

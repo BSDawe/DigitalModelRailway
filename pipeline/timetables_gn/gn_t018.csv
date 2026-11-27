@@ -1,0 +1,24 @@
+# Great Northern Railway, Table 18, Sioux Falls and Watertown (February 8, 1948) (Official Guide, May 1948, page 1073; Brendan's images, 27 Nov 2026; scans in the private repo, scans/og1948_gn/p1073_*.png). CENTRAL TIME. Miles as printed. NOT BUILT YET.
+# Signs (page 1073 key): * daily; dagger daily except Sunday; b Tuesday, Thursday and Saturday; d Friday only; f flag stop; an ornate sign (Table 20, Nos. 335 / 336)
+# Monday, Wednesday, Thursday and Saturday.
+#train col=No54 num=54 dir=down days="ex Sun" kind=passenger note="Great Northern No. 54, daily except Sunday: Sioux Falls 9.30 a.m. by Colton and Arlington to Watertown 1.20 p.m. (Official Guide, May 1948, Table 18, February 8, 1948)."
+#train col=No53 num=53 dir=up days="ex Sun" kind=passenger note="Great Northern No. 53, daily except Sunday: Watertown 3.35 p.m. by Arlington and Colton to Sioux Falls 6.46 p.m. (Official Guide, May 1948, Table 18, February 8, 1948)."
+mile,station,principal,prov,tz,No54,No53
+0,"Sioux Falls, S. Dak.",1,SD,C,lv 9.30a,ar 6.46p
+2,"Level Siding, S. Dak.",0,SD,C,f9.37a,f6.40p
+9,"Crooks, S. Dak.",0,SD,C,9.55a,6.25p
+15,"Lyons, S. Dak.",0,SD,C,10.09a,6.15p
+21,"Colton, S. Dak.",1,SD,C,10.24a,6.04p
+28,"Chester, S. Dak.",0,SD,C,10.40a,5.52p
+36,"Wentworth, S. Dak.",1,SD,C,10.57a,5.37p
+42,"Rutland, S. Dak.",0,SD,C,11.09a,5.26p
+48,"Nunda, S. Dak.",0,SD,C,11.21a,5.15p
+54,"Sinai, S. Dak.",0,SD,C,11.34a,5.05p
+58,"Ahnberg, S. Dak.",0,SD,C,f11.44a,f4.56p
+64,"Arlington, S. Dak.",1,SD,C,11.56a,4.46p
+73,"Badger, S. Dak.",0,SD,C,12.16p,4.30p
+80,"Lake Norden, S. Dak.",0,SD,C,12.30p,4.18p
+85,"Hayti, S. Dak.",0,SD,C,12.41p,4.07p
+92,"Thomas, S. Dak.",0,SD,C,12.54p,3.56p
+99,"Foley, S. Dak.",0,SD,C,f1.07p,f3.46p
+103,"Watertown, S. Dak.",1,SD,C,ar 1.20p,lv 3.35p

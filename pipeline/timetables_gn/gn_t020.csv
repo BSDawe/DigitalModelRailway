@@ -1,0 +1,17 @@
+# Great Northern Railway, Table 20, Morris and Browns Valley (February 8, 1948) (Official Guide, May 1948, page 1073; Brendan's images, 27 Nov 2026; scans in the private repo, scans/og1948_gn/p1073_*.png). CENTRAL TIME. Miles as printed. NOT BUILT YET.
+# Browns Valley printed "Brown's Valley".
+# Signs (page 1073 key): * daily; dagger daily except Sunday; b Tuesday, Thursday and Saturday; d Friday only; f flag stop; an ornate sign (Table 20, Nos. 335 / 336)
+# Monday, Wednesday, Thursday and Saturday.
+#train col=No49 num=49 dir=down days="ex Sun" kind=passenger note="Great Northern No. 49, daily except Sunday: Morris 1.00 p.m. to Browns Valley 2.45 p.m. (Official Guide, May 1948, Table 20, February 8, 1948)."
+#train col=No335 num=335 dir=down days="Mon,Wed,Thu,Sat" kind=passenger note="Great Northern No. 335, Monday, Wednesday, Thursday and Saturday: Morris 5.30 a.m. to Browns Valley 9.00 a.m. (Official Guide, May 1948, Table 20, February 8, 1948)."
+#train col=No336 num=336 dir=up days="Mon,Wed,Thu,Sat" kind=passenger note="Great Northern No. 336, Monday, Wednesday, Thursday and Saturday: Browns Valley 10.00 a.m. to Morris 1.00 p.m. (Official Guide, May 1948, Table 20, February 8, 1948)."
+#train col=No50 num=50 dir=up days="ex Sun" kind=passenger note="Great Northern No. 50, daily except Sunday: Browns Valley 3.10 p.m. to Morris 5.00 p.m. (Official Guide, May 1948, Table 20, February 8, 1948)."
+mile,station,principal,prov,tz,No49,No335,No336,No50
+0,"Morris, Minn.",1,MN,C,lv 1.00p,lv 5.30a,ar 1.00p,ar 5.00p
+8,"Alberta, Minn.",0,MN,C,1.22p,6.05a,12.30p,4.40p
+14,"Chokio, Minn.",0,MN,C,1.36p,6.35a,12.05p,4.28p
+20,"Johnson, Minn.",0,MN,C,1.47p,6.55a,11.45a,4.15p
+27,"Graceville, Minn.",1,MN,C,2.01p,7.25a,11.20a,4.01p
+33,"Barry, Minn.",0,MN,C,2.12p,7.45a,11.00a,3.45p
+40,"Beardsley, Minn.",0,MN,C,2.26p,8.25a,10.30a,3.30p
+47,"Browns Valley, Minn.",1,MN,C,ar 2.45p,ar 9.00a,lv 10.00a,lv 3.10p

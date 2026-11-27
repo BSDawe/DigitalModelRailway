@@ -1,0 +1,17 @@
+# Great Northern Railway, Table 21a, Minneapolis - Milaca (November 30, 1947) (Official Guide, May 1948, page 1073; Brendan's images, 27 Nov 2026; scans in the private repo, scans/og1948_gn/p1073_*.png). CENTRAL TIME. Miles as printed. NOT BUILT YET.
+# Signs (page 1073 key): * daily; dagger daily except Sunday; b Tuesday, Thursday and Saturday; d Friday only; f flag stop; an ornate sign (Table 20, Nos. 335 / 336)
+# Monday, Wednesday, Thursday and Saturday.
+#train col=No305 num=305 dir=down days="ex Sun" kind=passenger note="Great Northern No. 305, daily except Sunday: Minneapolis 7.15 a.m. by Anoka and Elk River to Milaca 10.55 a.m. (Official Guide, May 1948, Table 21a, November 30, 1947)."
+#train col=No306 num=306 dir=up days="ex Sun" kind=passenger note="Great Northern No. 306, daily except Sunday: Milaca 11.35 a.m. by Elk River and Anoka to Minneapolis 3.00 p.m. (Official Guide, May 1948, Table 21a, November 30, 1947)."
+mile,station,principal,prov,tz,No305,No306
+0,"Minneapolis, Minn.",1,MN,C,lv 7.15a,ar 3.00p
+8,"Fridley, Minn.",0,MN,C,7.38a,2.37p
+12,"Coon Creek Junction, Minn.",0,MN,C,7.48a,2.27p
+18,"Anoka, Minn.",1,MN,C,8.15a,2.02p
+25,"Dayton, Minn.",0,MN,C,f8.30a,f1.47p
+30,"Elk River, Minn.",1,MN,C,8.52a,1.37p
+40,"Zimmerman, Minn.",0,MN,C,9.25a,1.00p
+49,"Princeton, Minn.",1,MN,C,10.05a,12.30p
+53,"Long's Siding, Minn.",0,MN,C,10.20a,12.10p
+59,"Pease, Minn.",0,MN,C,10.38a,11.55a
+63,"Milaca, Minn.",1,MN,C,ar 10.55a,lv 11.35a

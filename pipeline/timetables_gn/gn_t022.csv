@@ -1,0 +1,21 @@
+# Great Northern Railway, Table 22, Fargo - Crookston (February 8, 1948) (Official Guide, May 1948, page 1073; Brendan's images, 27 Nov 2026; scans in the private repo, scans/og1948_gn/p1073_*.png). CENTRAL TIME. Miles as printed. NOT BUILT YET.
+# Nos. 131 / 132 are the same numbers as the Crookston - Noyes locals of Table 7 (gn_t007.csv): one train each way, Fargo - Crookston - Noyes (131 arrives Crookston 9.05 a.m. and
+# Table 7's 131 leaves 9.05 a.m.; 132 arrives Crookston 6.40 p.m. and leaves 6.40 p.m. here). Claude's reading: through trains.
+# Signs (page 1073 key): * daily; dagger daily except Sunday; b Tuesday, Thursday and Saturday; d Friday only; f flag stop; an ornate sign (Table 20, Nos. 335 / 336)
+# Monday, Wednesday, Thursday and Saturday.
+#train col=No131 num=131 dir=down days="ex Sun" kind=passenger note="Great Northern No. 131, daily except Sunday: Fargo 6.35 a.m. by Halstad to Crookston 9.05 a.m., on to Noyes (Table 7) (Official Guide, May 1948, Table 22, February 8, 1948)." links="continues Crookston - Noyes, Table 7"
+#train col=No132 num=132 dir=up days="ex Sun" kind=passenger note="Great Northern No. 132, daily except Sunday: from Noyes (Table 7), Crookston 6.40 p.m. by Halstad to Fargo 9.20 p.m. (Official Guide, May 1948, Table 22, February 8, 1948)." links="from Noyes, Table 7"
+mile,station,principal,prov,tz,No131,No132
+0,"Fargo, N. Dak.",1,ND,C,lv 6.35a,ar 9.20p
+1,"Moorhead, Minn.",1,MN,C,6.43a,9.13p
+10,"Kragnes, Minn.",0,MN,C,7.01a,8.51p
+16,"Georgetown, Minn.",0,MN,C,7.12a,8.36p
+23,"Perley, Minn.",0,MN,C,7.26a,8.21p
+29,"Hendrum, Minn.",0,MN,C,7.38a,8.06p
+35,"Halstad, Minn.",1,MN,C,7.53a,7.52p
+43,"Shelly, Minn.",0,MN,C,8.06a,7.36p
+48,"Nielsville, Minn.",0,MN,C,8.16a,7.25p
+53,"Climax, Minn.",0,MN,C,8.27a,7.14p
+59,"Eldred, Minn.",0,MN,C,8.38a,7.03p
+65,"Girard, Minn.",0,MN,C,f8.48a,f6.53p
+70,"Crookston, Minn.",1,MN,C,ar 9.05a,lv 6.40p

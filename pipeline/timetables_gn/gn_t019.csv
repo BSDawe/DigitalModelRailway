@@ -1,0 +1,24 @@
+# Great Northern Railway, Table 19, Crookston and Warroad (February 8, 1948) (Official Guide, May 1948, page 1073; Brendan's images, 27 Nov 2026; scans in the private repo, scans/og1948_gn/p1073_*.png). CENTRAL TIME. Miles as printed. NOT BUILT YET.
+# Crookston - Tilden Junction is the Duluth line (gn_duluth_gf.csv).
+# Signs (page 1073 key): * daily; dagger daily except Sunday; b Tuesday, Thursday and Saturday; d Friday only; f flag stop; an ornate sign (Table 20, Nos. 335 / 336)
+# Monday, Wednesday, Thursday and Saturday.
+#train col=No135 num=135 dir=down days="ex Sun" kind=passenger note="Great Northern No. 135, daily except Sunday: Crookston 9.05 a.m. by Thief River Falls and Roseau to Warroad 1.50 p.m. (Official Guide, May 1948, Table 19, February 8, 1948)."
+#train col=No136 num=136 dir=up days="ex Sun" kind=passenger note="Great Northern No. 136, daily except Sunday: Warroad 3.00 p.m. by Roseau and Thief River Falls to Crookston 7.45 p.m. (Official Guide, May 1948, Table 19, February 8, 1948)."
+mile,station,principal,prov,tz,No135,No136
+0,"Crookston, Minn.",1,MN,C,lv 9.05a,ar 7.45p
+8,"Burwell, Minn.",0,MN,C,f9.21a,f7.30p
+15,"Benoit, Minn.",0,MN,C,f9.33a,f7.19p
+19,"Tilden Junction, Minn.",0,MN,C,f9.45a,f7.10p
+32,"Red Lake Falls, Minn.",1,MN,C,10.17a,6.35p
+42,"St. Hilaire, Minn.",0,MN,C,10.37a,6.08p
+50,"Thief River Falls, Minn.",1,MN,C,11.01a,5.50p
+56,"Steiner, Minn.",0,MN,C,f11.14a,f5.24p
+62,"Holt, Minn.",0,MN,C,11.26a,5.13p
+72,"Middle River, Minn.",0,MN,C,11.43a,4.55p
+80,"Strathcona, Minn.",0,MN,C,11.59a,4.39p
+91,"Greenbush, Minn.",0,MN,C,12.18p,4.19p
+100,"Badger, Minn.",0,MN,C,12.35p,4.02p
+107,"Fox, Minn.",0,MN,C,12.47p,3.49p
+113,"Roseau, Minn.",1,MN,C,1.05p,3.38p
+122,"Salol, Minn.",0,MN,C,1.24p,3.20p
+134,"Warroad, Minn.",1,MN,C,ar 1.50p,lv 3.00p

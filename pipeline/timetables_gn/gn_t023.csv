@@ -1,0 +1,19 @@
+# Great Northern Railway, Table 23, Fargo and Portland Junction (February 8, 1948) (Official Guide, May 1948, page 1073; Brendan's images, 27 Nov 2026; scans in the private repo, scans/og1948_gn/p1073_*.png). CENTRAL TIME. Miles as printed. NOT BUILT YET.
+# Printed under the table: "The schedule of Trains 341 and 342 is irregular and apt to vary from the time shown." Fargo - Mason is the Table 12 line; Portland Junction is on Table 10.
+# Signs (page 1073 key): * daily; dagger daily except Sunday; b Tuesday, Thursday and Saturday; d Friday only; f flag stop; an ornate sign (Table 20, Nos. 335 / 336)
+# Monday, Wednesday, Thursday and Saturday.
+#train col=No341 num=341 dir=down days="Tue,Thu,Sat" kind=passenger note="Great Northern No. 341, Tuesday, Thursday and Saturday: Fargo 8.25 a.m. by Mason and Galesburg to Portland Junction 11.40 a.m. (the schedule is irregular and apt to vary) (Official Guide, May 1948, Table 23, February 8, 1948)."
+#train col=No342 num=342 dir=up days="Tue,Thu,Sat" kind=passenger note="Great Northern No. 342, Tuesday, Thursday and Saturday: Portland Junction 11.50 a.m. by Galesburg and Mason to Fargo 3.35 p.m. (the schedule is irregular and apt to vary) (Official Guide, May 1948, Table 23, February 8, 1948)."
+mile,station,principal,prov,tz,No341,No342
+0,"Fargo, N. Dak.",1,ND,C,lv 8.25a,ar 3.35p
+6,"Pinkham, N. Dak.",0,ND,C,8.43a,2.56p
+12,"Prosper, N. Dak.",0,ND,C,8.55a,2.32p
+17,"Newman, N. Dak.",0,ND,C,9.05a,2.15p
+23,"Vance, N. Dak.",1,ND,C,9.20a,2.00p
+29,"Mason, N. Dak.",1,ND,C,9.45a,1.45p
+34,"Erie, N. Dak.",0,ND,C,10.05a,1.30p
+44,"Galesburg, N. Dak.",0,ND,C,10.35a,12.55p
+50,"Clifford, N. Dak.",0,ND,C,10.50a,12.40p
+56,"Roseville, N. Dak.",0,ND,C,11.05a,12.25p
+60,"Portland, N. Dak.",0,ND,C,11.25a,12.10p
+65,"Portland Junction, N. Dak.",1,ND,C,ar 11.40a,lv 11.50a

@@ -1,0 +1,31 @@
+# Great Northern Railway, Table 21, Sandstone and Willmar (February 8, 1948) (Official Guide, May 1948, page 1073; Brendan's images, 27 Nov 2026; scans in the private repo, scans/og1948_gn/p1073_*.png). CENTRAL TIME. Miles as printed. NOT BUILT YET.
+# Signs (page 1073 key): * daily; dagger daily except Sunday; b Tuesday, Thursday and Saturday; d Friday only; f flag stop; an ornate sign (Table 20, Nos. 335 / 336)
+# Monday, Wednesday, Thursday and Saturday.
+#train col=No31 num=31 dir=down days="ex Sun" kind=passenger note="Great Northern No. 31, daily except Sunday: Sandstone 5.45 a.m. by Milaca and St. Cloud to Willmar 10.45 a.m. (Official Guide, May 1948, Table 21, February 8, 1948)."
+#train col=No32 num=32 dir=up days="ex Sun" kind=passenger note="Great Northern No. 32, daily except Sunday: Willmar 12.01 p.m. by St. Cloud and Milaca to Sandstone 5.00 p.m. (Official Guide, May 1948, Table 21, February 8, 1948)."
+mile,station,principal,prov,tz,No31,No32
+0,"Sandstone, Minn.",1,MN,C,lv 5.45a,ar 5.00p
+9,"Hinckley, Minn.",1,MN,C,6.05a,4.37p
+17,"Brook Park, Minn.",0,MN,C,6.22a,4.25p
+22,"Quamba, Minn.",0,MN,C,6.32a,4.12p
+29,"Mora, Minn.",1,MN,C,6.46a,4.00p
+36,"Ogilvie, Minn.",0,MN,C,7.01a,3.45p
+43,"Bock, Minn.",0,MN,C,7.14a,3.32p
+48,"Milaca, Minn.",1,MN,C,7.32a,3.22p
+51,"Foreston, Minn.",0,MN,C,7.40a,3.09p
+57,"Oaks, Minn.",0,MN,C,7.53a,2.57p
+60,"Ronneby, Minn.",0,MN,C,f7.59a,f2.51p
+62,"Foley, Minn.",0,MN,C,8.11a,2.46p
+66,"Parent, Minn.",0,MN,C,f8.21a,f2.36p
+76,"East St. Cloud, Minn.",0,MN,C,f8.37a,f2.20p
+77,"St. Cloud, Minn.",1,MN,C,ar 8.45a / lv 8.50a,ar 1.55p / lv 2.15p
+80,"Waite Park, Minn.",0,MN,C,f8.56a,f1.47p
+87,"Rockville, Minn.",0,MN,C,9.11a,1.33p
+92,"Cold Spring, Minn.",0,MN,C,9.20a,1.24p
+97,"Richmond, Minn.",0,MN,C,9.30a,1.15p
+103,"Roscoe, Minn.",0,MN,C,9.42a,1.03p
+108,"Paynesville, Minn.",1,MN,C,9.53a,12.53p
+114,"Hawick, Minn.",0,MN,C,f10.05a,f12.42p
+120,"New London, Minn.",0,MN,C,10.17a,12.31p
+125,"Spicer, Minn.",0,MN,C,10.25a,12.23p
+135,"Willmar, Minn.",1,MN,C,ar 10.45a,lv 12.01p
