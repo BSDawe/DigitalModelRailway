@@ -28,3 +28,4 @@ scans/ptc/1948-02-01_PortlandTraction_OregonCity_TT2.pdf
 traces/chicago/Chicago_Interurbans_1948.kml
 scans/cnsm/1949-06-05_CNSM_Timetable_G54.pdf
 traces/msrails/Great_Northern.kmz
+traces/msrails/Chicago_CBQ_Line.kmz
