@@ -1,0 +1,19 @@
+# Great Northern Railway, Table 15, Minneapolis and Hutchinson (February 8, 1948) (Official Guide, May 1948, page 1072; Brendan's images, 27 Nov 2026; scans in the private repo, scans/og1948_gn/p1072_*.png). CENTRAL TIME. Miles as printed. NOT BUILT YET.
+# Signs (page 1072 key): * daily; dagger daily except Sunday; double dagger daily except Saturday; pilcrow daily except Monday; a Monday and Thursday; k Saturday only;
+# natural sign Monday, Wednesday and Friday; heavy dot Tuesday, Thursday and Saturday; Psi mixed train; f flag stop.
+#train col=No61 num=61 dir=down days="ex Sun" kind=passenger note="Great Northern No. 61, daily except Sunday: Minneapolis 7.45 a.m. by Wayzata and Lake Minnetonka to Hutchinson 11.00 a.m. (Official Guide, May 1948, Table 15, February 8, 1948)."
+#train col=No60 num=60 dir=up days="ex Sun" kind=passenger note="Great Northern No. 60, daily except Sunday: Hutchinson 1.30 p.m. to Minneapolis 4.45 p.m. (Official Guide, May 1948, Table 15, February 8, 1948)."
+mile,station,principal,prov,tz,No61,No60
+0,"Minneapolis, Minn.",1,MN,C,lv 7.45a,ar 4.45p
+13,"Wayzata, Minn.",1,MN,C,8.23a,4.01p
+17,"Crystal Bay, Minn.",0,MN,C,8.35a,3.46p
+18,"Minnetonka Beach, Minn.",0,MN,C,8.40a,3.40p
+20,"Spring Park, Minn.",0,MN,C,8.45a,3.20p
+22,"Mound, Minn.",1,MN,C,8.55a,3.10p
+26,"St. Bonifacius, Minn.",0,MN,C,9.08a,2.55p
+31,"Maple, Minn.",0,MN,C,9.18a,2.45p
+34,"Mayer, Minn.",0,MN,C,9.28a,2.35p
+38,"New Germany, Minn.",0,MN,C,9.40a,2.25p
+42,"Lester Prairie, Minn.",0,MN,C,10.00a,2.10p
+50,"Silver Lake, Minn.",0,MN,C,10.30a,1.50p
+58,"Hutchinson, Minn.",1,MN,C,ar 11.00a,lv 1.30p

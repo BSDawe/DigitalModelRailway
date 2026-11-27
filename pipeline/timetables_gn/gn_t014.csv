@@ -1,0 +1,11 @@
+# Great Northern Railway, Table 14, Pelican Rapids and Fergus Falls (February 8, 1948) (Official Guide, May 1948, page 1072; Brendan's images, 27 Nov 2026; scans in the private repo, scans/og1948_gn/p1072_*.png). CENTRAL TIME. Miles as printed. NOT BUILT YET.
+# Signs (page 1072 key): * daily; dagger daily except Sunday; double dagger daily except Saturday; pilcrow daily except Monday; a Monday and Thursday; k Saturday only;
+# natural sign Monday, Wednesday and Friday; heavy dot Tuesday, Thursday and Saturday; Psi mixed train; f flag stop.
+#train col=No302 num=302 dir=down days="ex Sun" kind=passenger note="Great Northern No. 302, daily except Sunday: Pelican Rapids 8.10 a.m. to Fergus Falls 9.20 a.m. (Official Guide, May 1948, Table 14, February 8, 1948)."
+#train col=No301 num=301 dir=up days="ex Sun" kind=passenger note="Great Northern No. 301, daily except Sunday: Fergus Falls 1.40 p.m. to Pelican Rapids 2.45 p.m. (Official Guide, May 1948, Table 14, February 8, 1948)."
+mile,station,principal,prov,tz,No302,No301
+0,"Pelican Rapids, Minn.",1,MN,C,lv 8.10a,ar 2.45p
+6,"Erhard, Minn.",0,MN,C,8.28a,2.23p
+13,"Elizabeth, Minn.",0,MN,C,8.51a,2.01p
+21,"East Nor. Pac. Ry. Jn., Minn.",0,MN,C,9.15a,1.43p
+22,"Fergus Falls, Minn.",1,MN,C,ar 9.20a,lv 1.40p

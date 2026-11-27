@@ -1,0 +1,19 @@
+# Great Northern Railway, Table 12a, Devils Lake and Hansboro (February 8, 1948) (Official Guide, May 1948, page 1072; Brendan's images, 27 Nov 2026; scans in the private repo, scans/og1948_gn/p1072_*.png). CENTRAL TIME. Miles as printed. NOT BUILT YET.
+# Both trains mixed (Psi).
+# Signs (page 1072 key): * daily; dagger daily except Sunday; double dagger daily except Saturday; pilcrow daily except Monday; a Monday and Thursday; k Saturday only;
+# natural sign Monday, Wednesday and Friday; heavy dot Tuesday, Thursday and Saturday; Psi mixed train; f flag stop.
+#train col=No203 num=203 dir=down days="ex Sun" kind=mixed note="Great Northern mixed train No. 203, daily except Sunday: Devils Lake 7.00 a.m. to Hansboro 11.00 a.m. (Official Guide, May 1948, Table 12a, February 8, 1948)."
+#train col=No204 num=204 dir=up days="ex Sun" kind=mixed note="Great Northern mixed train No. 204, daily except Sunday: Hansboro 11.30 a.m. to Devils Lake 3.35 p.m. (Official Guide, May 1948, Table 12a, February 8, 1948)."
+mile,station,principal,prov,tz,No203,No204
+0,"Devils Lake, N. Dak.",1,ND,C,lv 7.00a,ar 3.35p
+7,"Sweetwater, N. Dak.",0,ND,C,f7.27a,3.15p
+12,"Webster, N. Dak.",0,ND,C,7.45a,2.55p
+17,"Garske, N. Dak.",0,ND,C,8.05a,2.15p
+24,"Starkweather, N. Dak.",1,ND,C,8.35a,1.50p
+29,"St. Joe, N. Dak.",0,ND,C,f8.45a,f1.20p
+33,"Newville, N. Dak.",0,ND,C,f9.05a,f1.10p
+40,"Olmstead, N. Dak.",0,ND,C,9.27a,12.50p
+46,"Crocus, N. Dak.",0,ND,C,9.48a,12.30p
+53,"Rock Lake, N. Dak.",1,ND,C,10.14a,12.10p
+59,"Ellsberry, N. Dak.",0,ND,C,10.30a,11.45a
+66,"Hansboro, N. Dak.",1,ND,C,ar 11.00a,lv 11.30a

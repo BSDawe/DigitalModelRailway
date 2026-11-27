@@ -1,0 +1,14 @@
+# Great Northern Railway, Table 11a, Saco and Hogeland (February 8, 1948) (Official Guide, May 1948, page 1072; Brendan's images, 27 Nov 2026; scans in the private repo, scans/og1948_gn/p1072_*.png). MOUNTAIN TIME. Miles as printed. NOT BUILT YET.
+# Signs (page 1072 key): * daily; dagger daily except Sunday; double dagger daily except Saturday; pilcrow daily except Monday; a Monday and Thursday; k Saturday only;
+# natural sign Monday, Wednesday and Friday; heavy dot Tuesday, Thursday and Saturday; Psi mixed train; f flag stop.
+#train col=No333 num=333 dir=down days="Mon,Wed,Fri" kind=passenger note="Great Northern No. 333, Monday, Wednesday and Friday: Saco 8.50 a.m. to Hogeland 3.20 p.m. (Official Guide, May 1948, Table 11a, February 8, 1948)."
+#train col=No334 num=334 dir=up days="Tue,Thu,Sat" kind=passenger note="Great Northern No. 334, Tuesday, Thursday and Saturday: Hogeland 6.45 a.m. to Saco 12.45 p.m. (Official Guide, May 1948, Table 11a, February 8, 1948)."
+mile,station,principal,prov,tz,No333,No334
+0,"Saco, Mont.",1,MT,M,lv 8.50a,ar 12.45p
+9,"Cole, Mont.",0,MT,M,9.55a,11.30a
+15,"Tattnall, Mont.",0,MT,M,f10.25a,f10.30a
+26,"Whitewater, Mont.",1,MT,M,11.25a,9.40a
+39,"Loring, Mont.",0,MT,M,12.35p,9.05a
+54,"Chapman, Mont.",0,MT,M,f1.45p,f7.45a
+67,"Turner, Mont.",0,MT,M,2.40p,7.13a
+79,"Hogeland, Mont.",1,MT,M,ar 3.20p,lv 6.45a

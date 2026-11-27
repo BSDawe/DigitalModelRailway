@@ -1,8 +1,8 @@
 # Great Northern Railway, Duluth - Superior - Grand Rapids - Cass Lake - Bemidji - Crookston - Grand Forks (Official Guide, May 1948, page 1071; table dated February 8, 1948; the
-# table number is not on Brendan's image, 27 Nov 2026; scan in the private repo, scans/og1948_gn/p1071_duluth.png). CENTRAL TIME. Miles from Duluth as printed. NOT BUILT YET.
+# table number is not on Brendan's image, 27 Nov 2026; scan in the private repo, scans/og1948_gn/p1071_duluth.png). CENTRAL TIME. Miles from Duluth as printed. Duluth: the GN trains used the Duluth Union Depot in 1948 (Brendan, 27 Nov 2026: "Duluth Union Terminal"). NOT BUILT YET.
 # Nos. 35 / 36: Duluth dagger 9.30 p.m. - Grand Forks 7.00 a.m. (the arrivals at Grand Rapids and Grand Forks carry the pilcrow, daily except Monday: the train that leaves daily
 # except Sunday); Grand Forks dagger 10.20 p.m. - Duluth 7.00 a.m. (the same). Entered as daily except Sunday, by the day each leaves.
-# Nos. 105 / 106: Cass Lake - Bemidji, "runs from / to Sauk Centre, see Table 11". UNSURE: their day signs (read dagger, as 35 / 36; CHECK with Table 11).
+# Nos. 105 / 106: Cass Lake - Bemidji, "runs from / to Sauk Centre, see Table 11" (daily except Sunday, confirmed by Table 11; the whole run is in gn_t011.csv).
 # Cass Lake: the two rows are printed "ar. Cass Lake lv." and "lve. Cass Lake arr."; Nos. 35 and 36 both 2.33 / 2.38 a.m. as read (they meet there).
 # Nos. 29 / 30 (Crookston - East Grand Forks - Grand Forks, with Fisher, Mallory and East Grand Forks) are in gn_t007.csv. "See Note" (box): the New Empire Builder / Winnipeg
 # Limited connection at St. Paul (Table 7).
@@ -14,7 +14,7 @@
 #train col=No36 num=36 dir=up days="ex Sun" kind=passenger note="Great Northern No. 36, daily except Sunday: Grand Forks 10.20 p.m. by Bemidji, Cass Lake and Grand Rapids to Duluth 7.00 a.m. (Official Guide, May 1948, page 1071, February 8, 1948)."
 #train col=No106 num=106 dir=up days="ex Sun" kind=passenger note="Great Northern No. 106: Bemidji 10.00 a.m. to Cass Lake 10.25 a.m., on to Sauk Centre (Table 11) (Official Guide, May 1948, page 1071, February 8, 1948)." links="to Sauk Centre, Table 11"
 mile,station,principal,prov,tz,No35,No105,No36,No106
-0,"Duluth, Minn.",1,MN,C,lv 9.30p,,ar 7.00a,
+0,"Duluth (Union Depot), Minn.",1,MN,C,lv 9.30p,,ar 7.00a,
 4,"Superior, Wis.",1,WI,C,9.45p,,6.45a,
 13,"Boylston, Wis.",0,WI,C,10.03p,,6.26a,
 19,"Dewey, Wis.",0,WI,C,f10.10p,,f6.18a,

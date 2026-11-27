@@ -8,8 +8,8 @@
 # there. Note (box sign on No. 7): The New Empire Builder leaving Chicago at 1.00 p.m., and arriving at St. Paul 7.45 p.m., connects with the Winnipeg Limited, train No. 7,
 # for Winnipeg and Western Canada.
 # No. 209: Fargo dagger 6.30 a.m., Pinkham, Prosper, Vance, Casselton ar 7.42 / lv 7.45 a.m., then "8.30 a.m." in the Nolan row and "To Devils Lake, see Table 12": entered to
-# Nolan as read (UNSURE: the 8.30 a.m. may belong to the Table 12 line; Table 1's No. 209 leaves Devils Lake 1.40 p.m. for St. John). Casselton is printed between Vance and
-# Nolan with no mileage (arr / lve rows; mile 268 entered as an estimate): only Nos. 209 and 200 call there.
+# Nolan as read (Table 12 confirms: Nolan 8.30 a.m., then Page, Hope and Aneta to Devils Lake; gn_t012.csv has the whole run). Casselton is printed between Vance and
+# Nolan with no mileage (arr / lve rows; mile 274 from Table 12, where Casselton is 32 mi from Fargo): only Nos. 209 and 200 call there.
 # No. 12: the sign before Fargo 10.00 a.m. is blotted (read as daily: CHECK); Moorhead "?04" blotted, read 10.04 a.m.; Brandon 12.04 p.m. carries the sign "stops to receive revenue
 # passengers for Minneapolis, St. Paul or east thereof" (entered f). Where No. 12 comes from (Winnipeg? Grand Forks?) is not printed in the parts supplied.
 # Signs: * daily; dagger daily except Sunday; f flag stop; square (No. 29, Brandon): will stop on flag to discharge revenue passengers from Minneapolis, St. Paul or east thereof
@@ -70,7 +70,7 @@ mile,station,principal,prov,tz,No29,No7,No11,No199,No209,No27,No1,No8,No12,No200
 248,"Pinkham, N. Dak.",0,ND,C,,,,f6.55a,f6.45a,,,,,f6.30p,,,
 254,"Prosper, N. Dak.",0,ND,C,,,,f7.08a,6.58a,,,,,f6.15p,,,
 264,"Vance, N. Dak.",0,ND,C,,,,f7.30a,7.20a,,,,,5.50p,,,
-268,"Casselton, N. Dak.",1,ND,C,,,,,ar 7.42a / lv 7.45a,,,,,ar 5.20p / lv 5.30p,,,
+274,"Casselton, N. Dak.",1,ND,C,,,,,ar 7.42a / lv 7.45a,,,,,ar 5.20p / lv 5.30p,,,
 282,"Nolan, N. Dak.",0,ND,C,,,,8.05a,8.30a,,,,,4.20p,,,
 289,"Walden, N. Dak.",0,ND,C,,,,8.15a,,,,,,4.05p,,,
 294,"Pillsbury, N. Dak.",0,ND,C,,,,8.30a,,,,,,3.51p,,,

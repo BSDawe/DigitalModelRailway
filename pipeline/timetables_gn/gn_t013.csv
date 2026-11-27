@@ -1,0 +1,32 @@
+# Great Northern Railway, Table 13, Benson and Huron (February 8, 1948) (Official Guide, May 1948, page 1072; Brendan's images, 27 Nov 2026; scans in the private repo, scans/og1948_gn/p1072_*.png). CENTRAL TIME. Miles as printed. NOT BUILT YET.
+# Columns 3-185 / 186-4: No. 3 (dagger in this column: its Benson cars, daily except Sunday) St. Paul 8.50 a.m. - Benson 12.11 p.m., then No. 185; No. 186, then No. 4 Benson 6.58 p.m. -
+# St. Paul 10.30 p.m. Only 185 / 186 entered. Benson - Nassau Minnesota, Albee - Huron South Dakota (Claude's reading of the state line).
+# Signs (page 1072 key): * daily; dagger daily except Sunday; double dagger daily except Saturday; pilcrow daily except Monday; a Monday and Thursday; k Saturday only;
+# natural sign Monday, Wednesday and Friday; heavy dot Tuesday, Thursday and Saturday; Psi mixed train; f flag stop.
+#train col=No185 num=185 dir=down days="ex Sun" kind=passenger note="Great Northern No. 185, daily except Sunday: Benson 12.20 p.m. by Appleton and Watertown to Huron 6.10 p.m. (Official Guide, May 1948, Table 13, February 8, 1948)." links="connection from No. 3 at Benson"
+#train col=No186 num=186 dir=up days="ex Sun" kind=passenger note="Great Northern No. 186, daily except Sunday: Huron 12.30 p.m. by Watertown and Appleton to Benson 6.30 p.m. (Official Guide, May 1948, Table 13, February 8, 1948)." links="connection to No. 4 at Benson"
+mile,station,principal,prov,tz,No185,No186
+0,"Benson, Minn.",1,MN,C,lv 12.20p,ar 6.30p
+8,"Danvers, Minn.",0,MN,C,12.38p,6.08p
+16,"Holloway, Minn.",0,MN,C,12.52p,5.53p
+22,"Appleton, Minn.",1,MN,C,1.05p,5.40p
+31,"Louisburg, Minn.",0,MN,C,1.20p,5.22p
+37,"Bellingham, Minn.",0,MN,C,1.33p,5.10p
+46,"Nassau, Minn.",0,MN,C,1.49p,4.56p
+52,"Albee, S. Dak.",0,SD,C,2.00p,4.46p
+58,"La Bolt, S. Dak.",0,SD,C,2.14p,4.35p
+66,"Stockholm, S. Dak.",0,SD,C,2.31p,4.23p
+73,"South Shore, S. Dak.",0,SD,C,2.47p,4.10p
+79,"Forestville, S. Dak.",0,SD,C,f2.59p,f3.58p
+86,"Rauville, S. Dak.",0,SD,C,f3.12p,f3.42p
+92,"Watertown, S. Dak.",1,SD,C,ar 3.25p / lv 3.40p,ar 2.55p / lv 3.30p
+102,"Grover, S. Dak.",0,SD,C,4.01p,2.32p
+108,"Hazel, S. Dak.",0,SD,C,4.13p,2.20p
+115,"Vienna, S. Dak.",0,SD,C,4.26p,2.05p
+124,"Willow Lake, S. Dak.",1,SD,C,4.44p,1.48p
+130,"Melham, S. Dak.",0,SD,C,f4.58p,f1.34p
+136,"Bancroft, S. Dak.",0,SD,C,5.11p,1.23p
+141,"Osceola, S. Dak.",0,SD,C,5.21p,1.13p
+148,"Yale, S. Dak.",0,SD,C,5.37p,12.57p
+153,"Sheffield, S. Dak.",0,SD,C,f5.46p,f12.48p
+162,"Huron, S. Dak.",1,SD,C,ar 6.10p,lv 12.30p

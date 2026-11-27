@@ -1,0 +1,35 @@
+# Great Northern Railway, Table 10, Breckenridge, Casselton and Larimore (February 8, 1948) (Official Guide, May 1948, page 1072; Brendan's images, 27 Nov 2026; scans in the private repo, scans/og1948_gn/p1072_*.png). CENTRAL TIME. Miles as printed. NOT BUILT YET.
+# Columns headed 9-197 / 198-10: No. 9 (double dagger here: its Breckenridge cars, daily except Saturday) St. Paul 9.00 p.m. - Breckenridge 4.30 a.m., then No. 197; No. 198,
+# then No. 10 from Breckenridge 12.40 a.m. to St. Paul 7.40 a.m. Only 197 / 198 entered. Breckenridge, Minn.; the rest North Dakota (Wahpeton 1 mile on).
+# Signs (page 1072 key): * daily; dagger daily except Sunday; double dagger daily except Saturday; pilcrow daily except Monday; a Monday and Thursday; k Saturday only;
+# natural sign Monday, Wednesday and Friday; heavy dot Tuesday, Thursday and Saturday; Psi mixed train; f flag stop.
+#train col=No197 num=197 dir=down days="ex Sun" kind=passenger note="Great Northern No. 197, daily except Sunday: Breckenridge 5.01 a.m. by Casselton and Mayville to Larimore 10.07 a.m. (Official Guide, May 1948, Table 10, February 8, 1948)." links="St. Paul sleeper from No. 9"
+#train col=No198 num=198 dir=up days="ex Sun" kind=passenger note="Great Northern No. 198, daily except Sunday: Larimore 4.15 p.m. by Mayville and Casselton to Breckenridge 9.00 p.m. (Official Guide, May 1948, Table 10, February 8, 1948)." links="St. Paul sleeper on No. 10"
+mile,station,principal,prov,tz,No197,No198
+0,"Breckenridge, Minn.",1,MN,C,lv 5.01a,ar 9.00p
+1,"Wahpeton, N. Dak.",1,ND,C,5.04a,8.53p
+8,"Dwight, N. Dak.",0,ND,C,5.20a,8.40p
+14,"Galchutt, N. Dak.",0,ND,C,5.34a,8.26p
+18,"Pitcairn, N. Dak.",0,ND,C,f5.40a,f8.20p
+21,"Colfax, N. Dak.",0,ND,C,5.47a,8.14p
+27,"Walcott, N. Dak.",0,ND,C,5.59a,8.02p
+35,"Kindred, N. Dak.",0,ND,C,6.15a,7.48p
+40,"Davenport, N. Dak.",0,ND,C,6.26a,7.38p
+44,"Addison, N. Dak.",0,ND,C,6.34a,7.30p
+48,"Durbin, N. Dak.",0,ND,C,6.43a,7.22p
+53,"Everest, N. Dak.",0,ND,C,f6.50a,f7.15p
+56,"Casselton, N. Dak.",1,ND,C,6.59a,7.10p
+63,"Amenia, N. Dak.",0,ND,C,7.12a,6.48p
+65,"Vance, N. Dak.",0,ND,C,7.25a,6.40p
+70,"Arthur, N. Dak.",0,ND,C,7.37a,6.24p
+76,"Hunter, N. Dak.",0,ND,C,7.49a,6.12p
+82,"Greenfield, N. Dak.",0,ND,C,f8.00a,f6.01p
+84,"Preston, N. Dak.",0,ND,C,f8.07a,f5.55p
+87,"Blanchard, N. Dak.",0,ND,C,8.15a,5.50p
+93,"Murray, N. Dak.",0,ND,C,f8.27a,f5.38p
+98,"Mayville, N. Dak.",1,ND,C,8.43a,5.24p
+103,"Portland Junction, N. Dak.",0,ND,C,f8.52a,f5.14p
+110,"Hatton, N. Dak.",0,ND,C,9.10a,5.02p
+118,"Northwood, N. Dak.",0,ND,C,9.37a,4.48p
+125,"Kempton, N. Dak.",0,ND,C,9.52a,4.30p
+131,"Larimore, N. Dak.",1,ND,C,ar 10.07a,lv 4.15p

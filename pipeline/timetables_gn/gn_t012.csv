@@ -1,0 +1,34 @@
+# Great Northern Railway, Table 12, Fargo, Aneta and Devils Lake (February 8, 1948) (Official Guide, May 1948, page 1072; Brendan's images, 27 Nov 2026; scans in the private repo, scans/og1948_gn/p1072_*.png). CENTRAL TIME. Miles as printed. NOT BUILT YET.
+# Columns 9-209 / 210-10: No. 9 (double dagger: its Fargo cars, daily except Saturday) St. Paul 9.00 p.m. - Fargo 6.20 a.m., then No. 209; No. 210, then No. 10 from Fargo 10.45 p.m.
+# No. 209 goes on from Devils Lake 1.40 p.m. to Church's Ferry and St. John, and No. 210 comes from St. John (Tables 1, 24). Casselton is printed "lve." only (No. 209 7.45 a.m.;
+# No. 210 no time). Fargo - Nolan is the Table 2 main line (Table 2 prints Casselton without a mileage: 32 here, 274 from St. Paul).
+# Signs (page 1072 key): * daily; dagger daily except Sunday; double dagger daily except Saturday; pilcrow daily except Monday; a Monday and Thursday; k Saturday only;
+# natural sign Monday, Wednesday and Friday; heavy dot Tuesday, Thursday and Saturday; Psi mixed train; f flag stop.
+#train col=No209 num=209 dir=down days="ex Sun" kind=passenger note="Great Northern No. 209, daily except Sunday: Fargo 6.30 a.m. by Casselton and Aneta to Devils Lake 1.05 p.m., on at 1.40 p.m. to St. John (Official Guide, May 1948, Table 12, February 8, 1948)." links="St. Paul sleeper from No. 9; continues Devils Lake - St. John (Tables 1, 24)"
+#train col=No210 num=210 dir=up days="ex Sun" kind=passenger note="Great Northern No. 210, daily except Sunday: from St. John, Devils Lake 1.45 p.m. by Aneta to Fargo 7.25 p.m. (Official Guide, May 1948, Table 12, February 8, 1948)." links="from St. John (Tables 24, 1); St. Paul sleeper on No. 10"
+mile,station,principal,prov,tz,No209,No210
+0,"Fargo, N. Dak.",1,ND,C,lv 6.30a,ar 7.25p
+6,"Pinkham, N. Dak.",0,ND,C,f6.45a,f7.10p
+12,"Prosper, N. Dak.",0,ND,C,6.58a,6.59p
+17,"Newman, N. Dak.",0,ND,C,f7.08a,f6.50p
+23,"Vance, N. Dak.",0,ND,C,7.20a,6.40p
+29,"Mason, N. Dak.",0,ND,C,,f6.26p
+32,"Casselton, N. Dak.",1,ND,C,7.45a,
+41,"Nolan, N. Dak.",0,ND,C,8.30a,6.00p
+43,"Page, N. Dak.",0,ND,C,8.45a,5.52p
+50,"Colgate, N. Dak.",0,ND,C,9.01a,5.32p
+56,"Hope, N. Dak.",1,ND,C,9.20a,5.17p
+62,"Blabon, N. Dak.",0,ND,C,9.35a,5.00p
+65,"Pickert, N. Dak.",0,ND,C,f9.41a,f4.53p
+70,"Finley, N. Dak.",0,ND,C,10.00a,4.43p
+77,"Sharon, N. Dak.",0,ND,C,10.20a,4.27p
+84,"Aneta, N. Dak.",1,ND,C,10.40a,4.10p
+89,"Kloten, N. Dak.",0,ND,C,10.55a,3.55p
+95,"McVille, N. Dak.",1,ND,C,11.12a,3.40p
+102,"Pekin, N. Dak.",0,ND,C,11.28a,3.23p
+108,"Tolna, N. Dak.",0,ND,C,11.44a,3.08p
+114,"Hamar, N. Dak.",0,ND,C,11.59a,2.53p
+121,"Warwick, N. Dak.",0,ND,C,12.15p,2.38p
+128,"Tokio, N. Dak.",0,ND,C,12.32p,2.22p
+137,"Fort Totten, N. Dak.",0,ND,C,12.53p,2.01p
+143,"Devils Lake, N. Dak.",1,ND,C,ar 1.05p,lv 1.45p

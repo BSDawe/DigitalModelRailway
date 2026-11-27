@@ -1,0 +1,32 @@
+# Great Northern Railway, Table 11, Sauk Centre - Bemidji (November 30, 1947) (Official Guide, May 1948, page 1072; Brendan's images, 27 Nov 2026; scans in the private repo, scans/og1948_gn/p1072_*.png). CENTRAL TIME. Miles as printed. NOT BUILT YET.
+# Columns 29-105 / 106-30: No. 29 (double dagger in this column: its Sauk Centre cars, daily except Saturday) St. Paul 9.50 p.m. - Sauk Centre 1.30 a.m., then No. 105; No. 106, then
+# No. 30 from Sauk Centre 5.10 p.m. to St. Paul 9.05 p.m. Only 105 / 106 entered. Cass Lake - Bemidji agrees with page 1071 (gn_duluth_gf.csv), where 105 / 106 are also entered.
+# Signs (page 1072 key): * daily; dagger daily except Sunday; double dagger daily except Saturday; pilcrow daily except Monday; a Monday and Thursday; k Saturday only;
+# natural sign Monday, Wednesday and Friday; heavy dot Tuesday, Thursday and Saturday; Psi mixed train; f flag stop.
+#train col=No105 num=105 dir=down days="ex Sun" kind=passenger note="Great Northern No. 105, daily except Sunday: Sauk Centre 2.00 a.m. by Wadena, Park Rapids and Cass Lake to Bemidji 8.00 a.m. (Official Guide, May 1948, Table 11, November 30, 1947)." links="St. Paul sleeper from No. 29"
+#train col=No106 num=106 dir=up days="ex Sun" kind=passenger note="Great Northern No. 106, daily except Sunday: Bemidji 10.00 a.m. by Cass Lake, Park Rapids and Wadena to Sauk Centre 4.00 p.m. (Official Guide, May 1948, Table 11, November 30, 1947)." links="St. Paul sleeper on No. 30"
+mile,station,principal,prov,tz,No105,No106
+0,"Sauk Centre, Minn.",1,MN,C,lv 2.00a,ar 4.00p
+10,"Little Sauk, Minn.",0,MN,C,2.18a,3.33p
+14,"Round Prairie, Minn.",0,MN,C,2.25a,3.26p
+19,"Long Prairie, Minn.",1,MN,C,2.38a,3.15p
+26,"Browerville, Minn.",0,MN,C,2.54a,2.54p
+32,"Clarissa, Minn.",0,MN,C,3.05a,2.42p
+37,"Eagle Bend, Minn.",0,MN,C,3.16a,2.31p
+44,"Bertha, Minn.",0,MN,C,3.36a,2.16p
+48,"Hewitt, Minn.",0,MN,C,3.46a,2.04p
+56,"Wadena, Minn.",1,MN,C,4.06a,1.49p
+61,"Leaf River, Minn.",0,MN,C,f4.16a,f1.35p
+70,"Sebeka, Minn.",0,MN,C,4.40a,1.18p
+79,"Menahga, Minn.",0,MN,C,4.59a,12.58p
+91,"Park Rapids, Minn.",1,MN,C,5.40a,12.35p
+98,"Dorset, Minn.",0,MN,C,5.54a,12.17p
+103,"Nevis, Minn.",0,MN,C,6.06a,12.07p
+109,"Akeley, Minn.",0,MN,C,6.21a,11.54a
+119,"Walker, Minn.",0,MN,C,6.36a,11.34a
+124,"Leech Lake, Minn.",0,MN,C,f6.47a,f11.20a
+131,"Wilkinson, Minn.",0,MN,C,7.01a,11.08a
+140,"Cass Lake, Minn.",1,MN,C,ar 7.24a / lv 7.35a,ar 10.25a / lv 10.49a
+145,"Farris, Minn.",0,MN,C,f7.43a,f10.17a
+150,"Rosby, Minn.",0,MN,C,f7.51a,f10.08a
+156,"Bemidji, Minn.",1,MN,C,ar 8.00a,lv 10.00a
