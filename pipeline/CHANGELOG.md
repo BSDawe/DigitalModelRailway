@@ -3319,3 +3319,17 @@ A review of the whole project (Brendan: "have a peek through ... suggest improve
 - Colour guide: Mixed train icon (Brendan: locomotive, freight cars, coach) beside Train, Motor train and Steamer.
 - Step signatures refreshed (sig / needs_sig) for steps whose only changes were ab_lines.py (the new 'drop' option, unused by them), mc.geojson (the Belt Line) and the re-saved
   parts: their output is unchanged.
+
+## Version 231
+- The South Shore Line (Chicago South Shore & South Bend; Brendan, 26 Nov 2026), new step cssb_build.py, kind I: Chicago (Randolph Street) - Kensington - Hammond - East Chicago
+  - Gary - Michigan City - South Bend. Times: Official Guide, May 1948 (the table dated April 25, 1948), transcribed in timetables_cssb/; Central Daylight time; 48 trains.
+  Holidays: the table says July 5, 1948 runs the Sunday schedule, and Brendan agreed it be treated so (an exception to the ignore-holidays rule, because the table names the
+  day): on this line Monday has the Sunday service. Signal stops with a time are entered as stops; X108 / X202 join Nos. 8 / 10 at Gary; No. 602's Michigan City arrival
+  (not printed) estimated; the additional Gary - Michigan City train (6.57 p.m.) timed from No. 203 (estimated). Not entered: the Michigan City - Benton Harbor motor coaches,
+  the unscheduled "frequent additional local service Chicago, Gary and Tremont". Westbound Dune Acres - Wilson 3 minutes for 5 printed miles: as printed.
+- Track: tools/cssb_extract.py -> traces/chicago/cssb_route.json from the KMZ Brendan sent (mapped by Doug Spurling): the main line with the 1948 East Chicago street line
+  (the 1954 - 56 bypass left out) and the line into downtown South Bend (abandoned 1970); Kensington - Randolph Street over the Illinois Central (Brendan: through past
+  Central Station to the IC's downtown terminals), drawn as IC track. 90.1 mi traced, 90 printed.
+- Stations: Central Station, Woodlawn and Kensington shared with the Michigan Central; Randolph Street, Van Buren Street and Hyde Park approximate; the South Shore stations by
+  printed mileage (approximate). Livery orange #e0701e and maroon #6e1f2a (Claude's pick, to confirm). Colour guide refreshed.
+- Counts: 723 lines, 5278 trips, 8135 stops, 76 agencies; check_gtfs 0 problems.

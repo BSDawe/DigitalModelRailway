@@ -557,6 +557,15 @@
     "timetables_cae/cae_west.txt",
     "timetables_cae/cae_east.txt"
    ]
+  },
+  {
+   "name": "cssb_build",
+   "script": "cssb_build.py",
+   "inputs": [
+    "traces/chicago/cssb_route.json",
+    "timetables_cssb/cssb_east.txt",
+    "timetables_cssb/cssb_west.txt"
+   ]
   }
  ]
 }

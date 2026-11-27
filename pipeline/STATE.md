@@ -1,7 +1,7 @@
 # The Digital Model Railway — project state
 
 Read this first. It is meant to be enough to start a short, single-task chat without replaying the project's history.
-Last updated 26 November 2026 (Version 230). This file is the current state and the standing rules; the version-by-version history is in CHANGELOG.md.
+Last updated 26 November 2026 (Version 231). This file is the current state and the standing rules; the version-by-version history is in CHANGELOG.md.
 
 ## What this is
 
@@ -239,7 +239,7 @@ lat, mile, lmile?, principal, gid, note, xy?, slow?}], dirLabels, segments [{own
 
 ## Conventions Brendan has set
 
-- **Holidays are ignored** (Brendan, 25 Nov 2026): "except holidays" / "will not run holidays" signs do not take trains off any day of the target week (Monday 5 July 1948 included).
+- **Holidays are ignored** (Brendan, 25 Nov 2026), except where a table names the week's holiday itself (the South Shore Line: "Sunday schedules operated on ... July 5"; Brendan, 26 Nov 2026): "except holidays" / "will not run holidays" signs do not take trains off any day of the target week (Monday 5 July 1948 included).
 - **Colour guide** (Brendan, 23 Nov 2026): tools/legend.py rewrites it (a list that opens and closes, one swatch per railway, by trains per week, subsidiaries under parents);
   run it by hand after adding a railway (its NAME table needs the new railway's name).
 - **Station panels** (Brendan, 26 Nov 2026): "<railway short name> Mile <n>" and "<owner> station, also served by <railways, once each>"; placement and source remarks stay out
@@ -349,6 +349,7 @@ After an accepted build: `cp viz_data.json tools/.baseline_viz.json`.
 
 ## Recent versions (one line each; the detail is in CHANGELOG.md)
 
+- 231: the South Shore Line (Randolph Street - Gary - Michigan City - South Bend; IC into Chicago; July 5 on the Sunday schedule).
 - 230: large build parts kept as folders of railway groups (on_build); site data cut the same way; Mixed train icon.
 - 229: Chicagoland view; shorter station panels; colour guide (collapsible, by trains per week); Buffalo Belt Line trains.
 - 228: the Chicago Aurora and Elgin (Wells Street - Wheaton - Aurora, Batavia, Elgin; Garfield Park 'L' as CTA track).
@@ -364,7 +365,6 @@ After an accepted build: `cp viz_data.json tools/.baseline_viz.json`.
 - 218: Clarke Steamship coastal services (North Shore, North Gaspé, Magdalen; the Rimouski / Matane motorships), simulated weekly schedules.
 - 217: TH&B trains on to Black Rock and Buffalo (Central Terminal); train notes and sources shown for every railway.
 - 216: the Texas Electric Railway (Dallas - Denison, Dallas - Waco; Ravenna's trace, 1939 times as the 1948 pattern).
-- 200: Arnold Transit from the August 1950 Official Guide (stand-in for July 1948): five St. Ignace and five Mackinaw City sailings each way; Mackinac Island - Les Cheneaux - Cedarville.
 - 199: the Straits of Mackinac car ferry drawn as a train ferry; Arnold Transit St. Ignace - Mackinac Island boats (atc_build.py).
 - 198: the Duluth, South Shore & Atlantic and Mineral Range (Official Guide; drawn as CP, labelled DSS&A); Mackinac Straits car ferry; NP Ashland - Superior.
 - 197: the Washingtonian and the Montrealer through to New York (Penn Station) and Washington over the New Haven, Hell Gate and the Pennsylvania (Brendan's NEC2 track).
