@@ -1,0 +1,28 @@
+# Great Northern Railway, Table 25, Grand Forks, Larimore and Hannah (Official Guide, May 1948, page 1074; Brendan's images, 27 Nov 2026; scans in the private repo, scans/og1948_gn/p1074_*.png). CENTRAL TIME. Miles as printed. NOT BUILT YET.
+# Grand Forks - Larimore is the main line: Powell, Emerado and Arvilla are from Table 1 (gn_t001.csv's notes; miles from Grand Forks by Table 1's 340 - 368), the rest from Table 25.
+# Signs (page 1074 key): * daily; dagger daily except Sunday; double dagger daily except Saturday; a Monday, Wednesday and Friday; b Tuesday, Thursday and Saturday;
+# f flag stop; k Saturday only; x daily except Saturday and Sunday; sharp sign mixed train.
+#train col=No205 num=205 dir=down days="ex Sun" kind=passenger note="Great Northern No. 205, daily except Sunday: Grand Forks 9.25 a.m. by Larimore, Park River and Langdon to Hannah 2.35 p.m. (Official Guide, May 1948, Table 25, February 8, 1948)."
+#train col=No206 num=206 dir=up days="ex Sun" kind=passenger note="Great Northern No. 206, daily except Sunday: Hannah 2.45 p.m. by Langdon, Park River and Larimore to Grand Forks 6.55 p.m. (Official Guide, May 1948, Table 25, February 8, 1948)."
+mile,station,principal,prov,tz,No205,No206
+0,"Grand Forks, N. Dak.",1,ND,C,lv 9.25a,ar 6.55p
+7,"Powell, N. Dak.",0,ND,C,f9.39a,f6.44p
+16,"Emerado, N. Dak.",0,ND,C,9.58a,6.30p
+22,"Arvilla, N. Dak.",0,ND,C,10.09a,6.21p
+28,"Larimore, N. Dak.",1,ND,C,10.20a,6.11p
+36,"McCanna, N. Dak.",0,ND,C,10.38a,5.51p
+43,"Orr, N. Dak.",0,ND,C,10.52a,5.37p
+47,"Inkster, N. Dak.",0,ND,C,11.03a,5.27p
+53,"Conway, N. Dak.",0,ND,C,11.19a,5.15p
+58,"Pisek, N. Dak.",0,ND,C,11.32a,5.05p
+64,"Park River, N. Dak.",1,ND,C,11.57a,4.53p
+70,"Kerry, N. Dak.",0,ND,C,f12.08p,f4.43p
+74,"Edinburg, N. Dak.",0,ND,C,12.20p,4.36p
+80,"Union, N. Dak.",0,ND,C,12.37p,4.24p
+86,"Milton, N. Dak.",0,ND,C,12.55p,4.12p
+92,"Osnabrock, N. Dak.",0,ND,C,1.10p,3.58p
+98,"Easby, N. Dak.",0,ND,C,1.23p,3.43p
+104,"Langdon, N. Dak.",1,ND,C,1.48p,3.30p
+111,"Dresden, N. Dak.",0,ND,C,2.04p,3.15p
+118,"Wales, N. Dak.",0,ND,C,2.20p,3.00p
+125,"Hannah, N. Dak.",1,ND,C,ar 2.35p,lv 2.45p

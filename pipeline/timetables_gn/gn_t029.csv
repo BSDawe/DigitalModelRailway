@@ -1,0 +1,13 @@
+# Great Northern Railway, Table 29, York and Dunseith (Official Guide, May 1948, page 1074; Brendan's images, 27 Nov 2026; scans in the private repo, scans/og1948_gn/p1074_*.png). CENTRAL TIME. Miles as printed. NOT BUILT YET.
+# Signs (page 1074 key): * daily; dagger daily except Sunday; double dagger daily except Saturday; a Monday, Wednesday and Friday; b Tuesday, Thursday and Saturday;
+# f flag stop; k Saturday only; x daily except Saturday and Sunday; sharp sign mixed train.
+#train col=No353 num=353 dir=down days="ex Sun" kind=passenger note="Great Northern No. 353, daily except Sunday: York 4.05 p.m. by Rolette to Dunseith 6.25 p.m. (Official Guide, May 1948, Table 29, February 8, 1948)."
+#train col=No354 num=354 dir=up days="ex Sun" kind=passenger note="Great Northern No. 354, daily except Sunday: Dunseith 9.00 a.m. by Rolette to York 12.01 p.m. (Official Guide, May 1948, Table 29, February 8, 1948)."
+mile,station,principal,prov,tz,No353,No354
+0,"York, N. Dak.",1,ND,C,lv 4.05p,ar 12.01p
+7,"Hong, N. Dak.",0,ND,C,f4.20p,f11.20a
+14,"Wolford, N. Dak.",0,ND,C,4.45p,11.05a
+21,"Nanson, N. Dak.",0,ND,C,5.10p,10.25a
+27,"Rolette, N. Dak.",1,ND,C,5.40p,10.00a
+34,"Thorne, N. Dak.",0,ND,C,6.05p,9.30a
+42,"Dunseith, N. Dak.",1,ND,C,ar 6.25p,lv 9.00a

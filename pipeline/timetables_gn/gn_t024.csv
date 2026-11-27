@@ -1,0 +1,20 @@
+# Great Northern Railway, Table 24, Church's Ferry and St. John (Official Guide, May 1948, page 1074; Brendan's images, 27 Nov 2026; scans in the private repo, scans/og1948_gn/p1074_*.png). CENTRAL TIME. Miles as printed. NOT BUILT YET.
+# Columns 9-209 / 210-4: No. 9's St. John cars (double dagger) to Devils Lake 11.42 a.m.; No. 209 Devils Lake 1.40 p.m. (from Fargo, Table 12); No. 210 to Devils Lake 10.35 a.m.,
+# on to Fargo (Table 12); No. 4 Devils Lake 11.42 a.m. - St. Paul 10.30 p.m. Maza's mileage is printed "2" (blurred): read 27.
+# Signs (page 1074 key): * daily; dagger daily except Sunday; double dagger daily except Saturday; a Monday, Wednesday and Friday; b Tuesday, Thursday and Saturday;
+# f flag stop; k Saturday only; x daily except Saturday and Sunday; sharp sign mixed train.
+#train col=No209 num=209 dir=down days="ex Sun" kind=passenger note="Great Northern No. 209, daily except Sunday: from Fargo (Table 12), Devils Lake 1.40 p.m. by Church's Ferry and Cando to St. John 5.10 p.m. (Official Guide, May 1948, Table 24, February 8, 1948)." links="from Fargo, Table 12"
+#train col=No210 num=210 dir=up days="ex Sun" kind=passenger note="Great Northern No. 210, daily except Sunday: St. John 8.00 a.m. by Cando and Church's Ferry to Devils Lake 10.35 a.m., on to Fargo (Table 12) (Official Guide, May 1948, Table 24, February 8, 1948)." links="continues to Fargo, Table 12"
+mile,station,principal,prov,tz,No209,No210
+0,"Devils Lake, N. Dak.",1,ND,C,lv 1.40p,ar 10.35a
+7,"Grand Harbor, N. Dak.",0,ND,C,f1.55p,f10.21a
+13,"Penn, N. Dak.",0,ND,C,2.05p,10.10a
+19,"Church's Ferry, N. Dak.",1,ND,C,ar 2.15p / lv 2.15p,ar 9.55a / lv 9.59a
+27,"Maza, N. Dak.",0,ND,C,2.35p,9.37a
+34,"Cando, N. Dak.",1,ND,C,3.05p,9.22a
+41,"Considine, N. Dak.",0,ND,C,3.20p,9.07a
+47,"Bisbee, N. Dak.",0,ND,C,3.45p,8.55a
+54,"Perth, N. Dak.",0,ND,C,4.10p,8.41a
+60,"Gronna, N. Dak.",0,ND,C,4.25p,8.28a
+66,"Rolla, N. Dak.",1,ND,C,4.55p,8.14a
+74,"St. John, N. Dak.",1,ND,C,ar 5.10p,lv 8.00a

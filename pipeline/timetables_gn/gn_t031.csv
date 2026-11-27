@@ -1,0 +1,18 @@
+# Great Northern Railway, Table 31, Granville and Sherwood (Official Guide, May 1948, page 1074; Brendan's images, 27 Nov 2026; scans in the private repo, scans/og1948_gn/p1074_*.png). CENTRAL TIME. Miles as printed. NOT BUILT YET.
+# Signs (page 1074 key): * daily; dagger daily except Sunday; double dagger daily except Saturday; a Monday, Wednesday and Friday; b Tuesday, Thursday and Saturday;
+# f flag stop; k Saturday only; x daily except Saturday and Sunday; sharp sign mixed train.
+#train col=No309 num=309 dir=down days="ex Sun" kind=passenger note="Great Northern No. 309, daily except Sunday: Granville 3.05 p.m. by Lansford and Mohall to Sherwood 6.15 p.m. (Official Guide, May 1948, Table 31, February 8, 1948)."
+#train col=No312 num=312 dir=up days="Sat" kind=passenger note="Great Northern No. 312, Saturday only: Sherwood 6.00 a.m. by Mohall and Lansford to Granville 9.30 a.m. (Official Guide, May 1948, Table 31, February 8, 1948)."
+#train col=No310 num=310 dir=up days="Mon,Tue,Wed,Thu,Fri" kind=passenger note="Great Northern No. 310, daily except Saturday and Sunday: Sherwood 9.00 a.m. by Mohall and Lansford to Granville 12.45 p.m. (Official Guide, May 1948, Table 31, February 8, 1948)."
+mile,station,principal,prov,tz,No309,No312,No310
+0,"Granville, N. Dak.",1,ND,C,lv 3.05p,ar 9.30a,ar 12.45p
+7,"Rising, N. Dak.",0,ND,C,f3.20p,f9.00a,f12.15p
+13,"Deering, N. Dak.",0,ND,C,3.40p,8.40a,12.01p
+18,"Wolseth, N. Dak.",0,ND,C,f3.52p,f8.20a,f11.40a
+24,"Glenburn, N. Dak.",0,ND,C,4.15p,8.00a,11.20a
+30,"Forfar, N. Dak.",0,ND,C,f4.27p,7.40a,f10.45a
+35,"Lansford, N. Dak.",1,ND,C,4.47p,7.25a,10.30a
+41,"Truro, N. Dak.",0,ND,C,5.00p,7.05a,10.10a
+46,"Mohall, N. Dak.",1,ND,C,5.35p,6.50a,9.49a
+54,"Lorain, N. Dak.",0,ND,C,5.55p,6.20a,9.20a
+61,"Sherwood, N. Dak.",1,ND,C,ar 6.15p,lv 6.00a,lv 9.00a

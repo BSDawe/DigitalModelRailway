@@ -1,0 +1,19 @@
+# Great Northern Railway, Table 30, Rugby and Antler (Official Guide, May 1948, page 1074; Brendan's images, 27 Nov 2026; scans in the private repo, scans/og1948_gn/p1074_*.png). CENTRAL TIME. Miles as printed. NOT BUILT YET.
+# Signs (page 1074 key): * daily; dagger daily except Sunday; double dagger daily except Saturday; a Monday, Wednesday and Friday; b Tuesday, Thursday and Saturday;
+# f flag stop; k Saturday only; x daily except Saturday and Sunday; sharp sign mixed train.
+#train col=No213 num=213 dir=down days="ex Sun" kind=passenger note="Great Northern No. 213, daily except Sunday: Rugby 3.30 p.m. by Bottineau and Westhope to Antler 6.50 p.m. (Official Guide, May 1948, Table 30, February 8, 1948)."
+#train col=No214 num=214 dir=up days="ex Sun" kind=passenger note="Great Northern No. 214, daily except Sunday: Antler 9.30 a.m. by Westhope and Bottineau to Rugby 12.30 p.m. (Official Guide, May 1948, Table 30, February 8, 1948)."
+mile,station,principal,prov,tz,No213,No214
+0,"Rugby, N. Dak.",1,ND,C,lv 3.30p,ar 12.30p
+6,"Leverich, N. Dak.",0,ND,C,f3.43p,f12.10p
+13,"Barton, N. Dak.",0,ND,C,4.00p,11.58a
+21,"Willow City, N. Dak.",1,ND,C,4.20p,11.40a
+29,"Omemee, N. Dak.",0,ND,C,4.38p,11.19a
+38,"Bottineau, N. Dak.",1,ND,C,5.10p,10.57a
+45,"Carbury, N. Dak.",0,ND,C,5.25p,10.42a
+51,"Souris, N. Dak.",0,ND,C,5.40p,10.30a
+57,"Roth, N. Dak.",0,ND,C,5.55p,10.18a
+62,"Landa, N. Dak.",0,ND,C,6.08p,10.08a
+68,"Westhope, N. Dak.",1,ND,C,6.25p,9.56a
+74,"Kuroki, N. Dak.",0,ND,C,6.38p,9.42a
+80,"Antler, N. Dak.",1,ND,C,ar 6.50p,lv 9.30a

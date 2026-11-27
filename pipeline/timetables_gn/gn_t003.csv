@@ -6,7 +6,7 @@
 # 6.15 a.m. Central and reaches Minot 12.01 p.m.: the same trains as Nos. 9 / 10 east of Minot (daily there, Table 1), daily except Sunday between Minot and Williston
 # (Brendan, 27 Nov 2026, from the Official Guide through-car table).
 # Nos. 223 / 224 (dagger) Williston - Havre locals. Additional trains (printed under the table): leave Williston dagger 7.00, 8.00 a.m., arrive Bainville 8.15, 8.50 a.m.; leave
-# Bainville dagger 4.20, 5.00 p.m., arrive Williston 5.35, 5.50 p.m. (columns X1 - X4, no numbers printed; time zone not printed: read as Mountain, the Williston - Havre zone).
+# Bainville dagger 4.20, 5.00 p.m., arrive Williston 5.35, 5.50 p.m. (no numbers printed here): Nos. 371, 289, 372, 290 of Table 37 (gn_t037.csv has them).
 # Signs: * daily; dagger daily except Sunday; f flag stop; natural sign (No. 3) stops to discharge revenue passengers from the Twin Cities and beyond and to receive revenue
 # passengers for Great Falls and south thereof, and west of Havre where No. 3 is scheduled to stop: entered f; sharp sign (No. 4) stops to pick up revenue passengers for the Twin
 # Cities and beyond, also to discharge revenue passengers from Great Falls and south and from west of Havre: entered f; r (No. 1, Glasgow) stops to discharge revenue passengers from
@@ -22,77 +22,73 @@
 #train col=No10 num=10 dir=up days="ex Sun" kind=passenger name="The Dakotan" note="Great Northern No. 10, daily except Sunday: Williston 6.15 a.m. Central time to Minot 12.01 p.m. (Official Guide, May 1948, Table 3, February 8, 1948)." links="continued on Table 1 (Minot lv 1.30 p.m.)"
 #train col=No28 num=28 dir=up days=daily kind=passenger name="The Fast Mail" note="Great Northern No. 28, daily, coach passengers only: Havre 2.50 a.m. to Minot 2.30 p.m. (Official Guide, May 1948, Table 3, February 8, 1948)." links="from Table 4; continued on Table 2"
 #train col=No224 num=224 dir=up days="ex Sun" kind=passenger note="Great Northern No. 224, daily except Sunday: Havre 10.20 a.m. to Williston 7.40 p.m. (Official Guide, May 1948, Table 3, February 8, 1948)."
-#train col=X1 num=X1 dir=down days="ex Sun" kind=passenger note="Great Northern additional train, daily except Sunday: Williston 7.00 a.m. to Bainville 8.15 a.m. (Official Guide, May 1948, Table 3, February 8, 1948; no number printed)."
-#train col=X2 num=X2 dir=down days="ex Sun" kind=passenger note="Great Northern additional train, daily except Sunday: Williston 8.00 a.m. to Bainville 8.50 a.m. (Official Guide, May 1948, Table 3, February 8, 1948; no number printed)."
-#train col=X3 num=X3 dir=up days="ex Sun" kind=passenger note="Great Northern additional train, daily except Sunday: Bainville 4.20 p.m. to Williston 5.35 p.m. (Official Guide, May 1948, Table 3, February 8, 1948; no number printed)."
-#train col=X4 num=X4 dir=up days="ex Sun" kind=passenger note="Great Northern additional train, daily except Sunday: Bainville 5.00 p.m. to Williston 5.50 p.m. (Official Guide, May 1948, Table 3, February 8, 1948; no number printed)."
-mile,station,principal,prov,tz,No223,No27,No9,No1,No3,No2,No4,No10,No28,No224,X1,X2,X3,X4
-475,"Minot, N. Dak.",1,ND,C,,lv 7.15p,lv 4.10p,lv 4.55a,lv 10.50p,ar 10.05p,ar 8.45a,ar 12.01p,ar 2.30p,,,,,
-480,"Ralston, N. Dak.",0,ND,C,,,f4.29p,,,,,f11.28a,,,,,,
-488,"Des Lacs, N. Dak.",0,ND,C,,,4.37p,,,,,11.15a,,,,,,
-492,"Lone Tree, N. Dak.",0,ND,C,,,4.45p,,,,,11.00a,,,,,,
-497,"Berthold, N. Dak.",1,ND,C,,,5.01p,,,,,10.50a,,,,,,
-502,"Roach, N. Dak.",0,ND,C,,,f5.09p,,,,,f10.28a,,,,,,
-507,"Tagus, N. Dak.",0,ND,C,,,5.17p,,,,,10.18a,,,,,,
-513,"Blaisdell, N. Dak.",0,ND,C,,,5.28p,,,,,10.00a,,,,,,
-520,"Palermo, N. Dak.",0,ND,C,,,5.40p,,,,,9.40a,,,,,,
-528,"Stanley, N. Dak.",1,ND,C,,,6.01p,,12.10a,,7.40a,9.20a,1.15p,,,,,
-536,"Ross, N. Dak.",0,ND,C,,,6.15p,,,,,8.40a,,,,,,
-540,"Manitou, N. Dak.",0,ND,C,,,f6.24p,,,,,f8.24a,,,,,,
-548,"White Earth, N. Dak.",0,ND,C,,,6.39p,,,,,8.08a,,,,,,
-556,"Tioga, N. Dak.",0,ND,C,,,6.55p,,,,,7.53a,,,,,,
-561,"Temple, N. Dak.",0,ND,C,,,7.07p,,,,,7.40a,,,,,,
-567,"Ray, N. Dak.",0,ND,C,,,7.22p,,,,,7.27a,f12.15p,,,,,
-573,"Wheelock, N. Dak.",0,ND,C,,,7.34p,,,,,7.10a,,,,,,
-578,"Epping, N. Dak.",0,ND,C,,,7.46p,,,,,6.57a,,,,,,
-584,"Spring Brook, N. Dak.",0,ND,C,,,7.59p,,,,,6.45a,,,,,,
-589,"Avoca, N. Dak.",0,ND,C,,,f8.12p,,,,,f6.30a,,,,,,
-595,"Williston, N. Dak.",1,ND,M,lv 6.40a,ar 9.00p / lv 9.05p,ar 7.30p,ar 6.20a / lv 6.20a,ar 12.50a / lv 12.55a,ar 6.40p / lv 6.40p,ar 5.05a / lv 5.10a,lv 5.15a,ar 10.20a / lv 10.30a,ar 7.40p,lv 7.00a,lv 8.00a,ar 5.35p,ar 5.50p
-607,"Trenton, Mont.",0,MT,M,7.00a,,,,,,,,,7.20p,,,,
-615,"Fort Buford, Mont.",0,MT,M,7.15a,,,,,,,,,7.05p,,,,
-621,"Snowden, Mont.",0,MT,M,7.25a,,,,,,,,,6.55p,,,,
-627,"Lakeside, Mont.",0,MT,M,f7.34a,,,,,,,,,f6.33p,,,,
-633,"Bainville, Mont.",1,MT,M,7.44a,,,,f1.44a,,f4.13a,,9.07a,6.23p,ar 8.15a,ar 8.50a,lv 4.20p,lv 5.00p
-640,"Lanark, Mont.",0,MT,M,f7.52a,,,,,,,,,f5.58p,,,,
-647,"Culbertson, Mont.",1,MT,M,8.03a,,,,f2.03a,,f3.57a,,8.40a,5.47p,,,,
-653,"Blair, Mont.",0,MT,M,f8.11a,,,,,,,,,f5.37p,,,,
-662,"Calais, Mont.",0,MT,M,f8.23a,,,,,,,,,f5.25p,,,,
-666,"Brockton, Mont.",0,MT,M,8.30a,,,,f2.26a,,f3.34a,,,5.19p,,,,
-674,"Sprole, Mont.",0,MT,M,f8.40a,,,,,,,,,f5.06p,,,,
-680,"Poplar, Mont.",1,MT,M,8.58a,,,,f2.42a,,f3.17a,,,4.43p,,,,
-687,"Chelsea, Mont.",0,MT,M,f9.10a,,,,,,,,,f4.35p,,,,
-695,"Macon, Mont.",0,MT,M,f9.20a,,,,,,,,,f4.25p,,,,
-702,"Wolf Point, Mont.",1,MT,M,9.40a,,,,f3.15a,,f2.50a,,7.20a,4.15p,,,,
-708,"Lohmiller, Mont.",0,MT,M,f9.52a,,,,,,,,,f4.00p,,,,
-713,"Oswego, Mont.",0,MT,M,10.05a,,,,,,,,,3.54p,,,,
-721,"Frazer, Mont.",0,MT,M,10.20a,,,,f3.45a,,f2.23a,,,3.43p,,,,
-726,"Kintyre, Mont.",0,MT,M,f10.30a,,,,,,,,,f3.33p,,,,
-731,"Wiota, Mont.",0,MT,M,10.45a,,,,,,,,,3.25p,,,,
-737,"Nashua, Mont.",0,MT,M,11.00a,,,,f4.04a,,f2.03a,,,3.13p,,,,
-745,"Whately, Mont.",0,MT,M,f11.15a,,,,,,,,,f3.00p,,,,
-751,"Glasgow, Mont.",1,MT,M,ar 11.45a / lv 12.10p,ar 12.10a / lv 12.15a,,9.10a,ar 4.25a / lv 4.30a,3.45p,ar 1.40a / lv 1.45a,,ar 6.15a / lv 6.20a,ar 2.40p / lv 2.50p,,,,
-756,"Paisley, Mont.",0,MT,M,f12.18p,,,,,,,,,f2.30p,,,,
-763,"Tampico, Mont.",0,MT,M,12.30p,,,,,,,,,2.19p,,,,
-768,"Vandalia, Mont.",0,MT,M,12.40p,,,,,,,,,2.10p,,,,
-777,"Hinsdale, Mont.",0,MT,M,12.55p,,,,f5.04a,,f12.55a,,,1.57p,,,,
-785,"Beaverton, Mont.",0,MT,M,f1.10p,,,,,,,,,f1.40p,,,,
-790,"Saco, Mont.",0,MT,M,1.30p,,,,f5.20a,,f12.36a,,5.20a,1.30p,,,,
-797,"Ashfield, Mont.",0,MT,M,f1.45p,,,,,,,,,f1.15p,,,,
-804,"Bowdoin, Mont.",0,MT,M,2.00p,,,,,,,,,1.05p,,,,
-811,"Strater, Mont.",0,MT,M,f2.10p,,,,,,,,,f12.55p,,,,
-817,"Malta, Mont.",1,MT,M,2.31p,,,,f5.55a,,f12.07a,,4.46a,12.45p,,,,
-822,"Exeter, Mont.",0,MT,M,f2.40p,,,,,,,,,f12.25p,,,,
-826,"Wagner, Mont.",0,MT,M,2.48p,,,,,,,,,12.19p,,,,
-834,"Dodson, Mont.",0,MT,M,3.02p,,,,f6.22a,,f11.48p,,,12.09p,,,,
-840,"Survant, Mont.",0,MT,M,f3.10p,,,,,,,,,f12.01p,,,,
-844,"Coburg, Mont.",0,MT,M,f3.16p,,,,,,,,,f11.55a,,,,
-850,"Savoy, Mont.",0,MT,M,3.24p,,,,,,,,,11.48a,,,,
-856,"Matador, Mont.",0,MT,M,f3.33p,,,,,,,,,f11.40a,,,,
-861,"Harlem, Mont.",0,MT,M,3.47p,,,,f7.00a,,f11.18p,,3.50a,11.33a,,,,
-868,"Fort Belknap, Mont.",0,MT,M,f3.56p,,,,,,,,,f11.17a,,,,
-873,"Zurich, Mont.",0,MT,M,4.05p,,,,,,,,,10.58a,,,,
-877,"North Fork, Mont.",0,MT,M,f4.10p,,,,,,,,,f10.54a,,,,
-883,"Chinook, Mont.",1,MT,M,4.25p,,,,f7.27a,,f10.55p,,3.25a,10.48a,,,,
-887,"Adams, Mont.",0,MT,M,f4.31p,,,,,,,,,f10.43a,,,,
-891,"Lohman, Mont.",0,MT,M,4.36p,,,,,,,,,10.38a,,,,
-904,"Havre, Mont.",1,MT,M,ar 5.00p,ar 3.20a,,ar 12.05p,ar 8.00a,lv 12.55p,lv 10.30p,,lv 2.50a,lv 10.20a,,,,
+mile,station,principal,prov,tz,No223,No27,No9,No1,No3,No2,No4,No10,No28,No224
+475,"Minot, N. Dak.",1,ND,C,,lv 7.15p,lv 4.10p,lv 4.55a,lv 10.50p,ar 10.05p,ar 8.45a,ar 12.01p,ar 2.30p,
+480,"Ralston, N. Dak.",0,ND,C,,,f4.29p,,,,,f11.28a,,
+488,"Des Lacs, N. Dak.",0,ND,C,,,4.37p,,,,,11.15a,,
+492,"Lone Tree, N. Dak.",0,ND,C,,,4.45p,,,,,11.00a,,
+497,"Berthold, N. Dak.",1,ND,C,,,5.01p,,,,,10.50a,,
+502,"Roach, N. Dak.",0,ND,C,,,f5.09p,,,,,f10.28a,,
+507,"Tagus, N. Dak.",0,ND,C,,,5.17p,,,,,10.18a,,
+513,"Blaisdell, N. Dak.",0,ND,C,,,5.28p,,,,,10.00a,,
+520,"Palermo, N. Dak.",0,ND,C,,,5.40p,,,,,9.40a,,
+528,"Stanley, N. Dak.",1,ND,C,,,6.01p,,12.10a,,7.40a,9.20a,1.15p,
+536,"Ross, N. Dak.",0,ND,C,,,6.15p,,,,,8.40a,,
+540,"Manitou, N. Dak.",0,ND,C,,,f6.24p,,,,,f8.24a,,
+548,"White Earth, N. Dak.",0,ND,C,,,6.39p,,,,,8.08a,,
+556,"Tioga, N. Dak.",0,ND,C,,,6.55p,,,,,7.53a,,
+561,"Temple, N. Dak.",0,ND,C,,,7.07p,,,,,7.40a,,
+567,"Ray, N. Dak.",0,ND,C,,,7.22p,,,,,7.27a,f12.15p,
+573,"Wheelock, N. Dak.",0,ND,C,,,7.34p,,,,,7.10a,,
+578,"Epping, N. Dak.",0,ND,C,,,7.46p,,,,,6.57a,,
+584,"Spring Brook, N. Dak.",0,ND,C,,,7.59p,,,,,6.45a,,
+589,"Avoca, N. Dak.",0,ND,C,,,f8.12p,,,,,f6.30a,,
+595,"Williston, N. Dak.",1,ND,M,lv 6.40a,ar 9.00p / lv 9.05p,ar 7.30p,ar 6.20a / lv 6.20a,ar 12.50a / lv 12.55a,ar 6.40p / lv 6.40p,ar 5.05a / lv 5.10a,lv 5.15a,ar 10.20a / lv 10.30a,ar 7.40p
+607,"Trenton, Mont.",0,MT,M,7.00a,,,,,,,,,7.20p
+615,"Fort Buford, Mont.",0,MT,M,7.15a,,,,,,,,,7.05p
+621,"Snowden, Mont.",0,MT,M,7.25a,,,,,,,,,6.55p
+627,"Lakeside, Mont.",0,MT,M,f7.34a,,,,,,,,,f6.33p
+633,"Bainville, Mont.",1,MT,M,7.44a,,,,f1.44a,,f4.13a,,9.07a,6.23p
+640,"Lanark, Mont.",0,MT,M,f7.52a,,,,,,,,,f5.58p
+647,"Culbertson, Mont.",1,MT,M,8.03a,,,,f2.03a,,f3.57a,,8.40a,5.47p
+653,"Blair, Mont.",0,MT,M,f8.11a,,,,,,,,,f5.37p
+662,"Calais, Mont.",0,MT,M,f8.23a,,,,,,,,,f5.25p
+666,"Brockton, Mont.",0,MT,M,8.30a,,,,f2.26a,,f3.34a,,,5.19p
+674,"Sprole, Mont.",0,MT,M,f8.40a,,,,,,,,,f5.06p
+680,"Poplar, Mont.",1,MT,M,8.58a,,,,f2.42a,,f3.17a,,,4.43p
+687,"Chelsea, Mont.",0,MT,M,f9.10a,,,,,,,,,f4.35p
+695,"Macon, Mont.",0,MT,M,f9.20a,,,,,,,,,f4.25p
+702,"Wolf Point, Mont.",1,MT,M,9.40a,,,,f3.15a,,f2.50a,,7.20a,4.15p
+708,"Lohmiller, Mont.",0,MT,M,f9.52a,,,,,,,,,f4.00p
+713,"Oswego, Mont.",0,MT,M,10.05a,,,,,,,,,3.54p
+721,"Frazer, Mont.",0,MT,M,10.20a,,,,f3.45a,,f2.23a,,,3.43p
+726,"Kintyre, Mont.",0,MT,M,f10.30a,,,,,,,,,f3.33p
+731,"Wiota, Mont.",0,MT,M,10.45a,,,,,,,,,3.25p
+737,"Nashua, Mont.",0,MT,M,11.00a,,,,f4.04a,,f2.03a,,,3.13p
+745,"Whately, Mont.",0,MT,M,f11.15a,,,,,,,,,f3.00p
+751,"Glasgow, Mont.",1,MT,M,ar 11.45a / lv 12.10p,ar 12.10a / lv 12.15a,,9.10a,ar 4.25a / lv 4.30a,3.45p,ar 1.40a / lv 1.45a,,ar 6.15a / lv 6.20a,ar 2.40p / lv 2.50p
+756,"Paisley, Mont.",0,MT,M,f12.18p,,,,,,,,,f2.30p
+763,"Tampico, Mont.",0,MT,M,12.30p,,,,,,,,,2.19p
+768,"Vandalia, Mont.",0,MT,M,12.40p,,,,,,,,,2.10p
+777,"Hinsdale, Mont.",0,MT,M,12.55p,,,,f5.04a,,f12.55a,,,1.57p
+785,"Beaverton, Mont.",0,MT,M,f1.10p,,,,,,,,,f1.40p
+790,"Saco, Mont.",0,MT,M,1.30p,,,,f5.20a,,f12.36a,,5.20a,1.30p
+797,"Ashfield, Mont.",0,MT,M,f1.45p,,,,,,,,,f1.15p
+804,"Bowdoin, Mont.",0,MT,M,2.00p,,,,,,,,,1.05p
+811,"Strater, Mont.",0,MT,M,f2.10p,,,,,,,,,f12.55p
+817,"Malta, Mont.",1,MT,M,2.31p,,,,f5.55a,,f12.07a,,4.46a,12.45p
+822,"Exeter, Mont.",0,MT,M,f2.40p,,,,,,,,,f12.25p
+826,"Wagner, Mont.",0,MT,M,2.48p,,,,,,,,,12.19p
+834,"Dodson, Mont.",0,MT,M,3.02p,,,,f6.22a,,f11.48p,,,12.09p
+840,"Survant, Mont.",0,MT,M,f3.10p,,,,,,,,,f12.01p
+844,"Coburg, Mont.",0,MT,M,f3.16p,,,,,,,,,f11.55a
+850,"Savoy, Mont.",0,MT,M,3.24p,,,,,,,,,11.48a
+856,"Matador, Mont.",0,MT,M,f3.33p,,,,,,,,,f11.40a
+861,"Harlem, Mont.",0,MT,M,3.47p,,,,f7.00a,,f11.18p,,3.50a,11.33a
+868,"Fort Belknap, Mont.",0,MT,M,f3.56p,,,,,,,,,f11.17a
+873,"Zurich, Mont.",0,MT,M,4.05p,,,,,,,,,10.58a
+877,"North Fork, Mont.",0,MT,M,f4.10p,,,,,,,,,f10.54a
+883,"Chinook, Mont.",1,MT,M,4.25p,,,,f7.27a,,f10.55p,,3.25a,10.48a
+887,"Adams, Mont.",0,MT,M,f4.31p,,,,,,,,,f10.43a
+891,"Lohman, Mont.",0,MT,M,4.36p,,,,,,,,,10.38a
+904,"Havre, Mont.",1,MT,M,ar 5.00p,ar 3.20a,,ar 12.05p,ar 8.00a,lv 12.55p,lv 10.30p,,lv 2.50a,lv 10.20a

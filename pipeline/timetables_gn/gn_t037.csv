@@ -1,0 +1,33 @@
+# Great Northern Railway, Table 37, Williston, Bainville and Opheim (Official Guide, May 1948, page 1074; Brendan's images, 27 Nov 2026; scans in the private repo, scans/og1948_gn/p1074_*.png). MOUNTAIN TIME. Miles as printed. NOT BUILT YET.
+# Williston - Bainville is the main line (38 mi, Table 3): Williston at mile -38, the rest as printed from Bainville. These four trains are the "additional trains" printed under
+# Table 3 without numbers (Williston 7.00, 8.00 a.m. - Bainville 8.15, 8.50; Bainville 4.20, 5.00 p.m. - Williston 5.35, 5.50): Table 37 times entered (Bainville 8.20 / 9.10 a.m.,
+# 4.10 p.m. differ from Table 3's). Nos. 371 / 372 carry the mixed-train sign; their day sign read as dagger (Table 3: dagger for all four; the sign by 371's 7.00 is unclear).
+# Signs (page 1074 key): * daily; dagger daily except Sunday; double dagger daily except Saturday; a Monday, Wednesday and Friday; b Tuesday, Thursday and Saturday;
+# f flag stop; k Saturday only; x daily except Saturday and Sunday; sharp sign mixed train.
+#train col=No289 num=289 dir=down days="ex Sun" kind=passenger note="Great Northern No. 289, daily except Sunday: Williston 8.00 a.m. by Bainville and Plentywood to Scobey 12.35 p.m. (Official Guide, May 1948, Table 37, February 8, 1948)."
+#train col=No371 num=371 dir=down days="ex Sun" kind=mixed note="Great Northern mixed train No. 371, daily except Sunday: Williston 7.00 a.m. by Bainville, Plentywood and Scobey to Opheim 5.30 p.m. (Official Guide, May 1948, Table 37, February 8, 1948)."
+#train col=No372 num=372 dir=up days="ex Sun" kind=mixed note="Great Northern mixed train No. 372, daily except Sunday: Opheim 7.00 a.m. by Scobey, Plentywood and Bainville to Williston 5.35 p.m. (Official Guide, May 1948, Table 37, February 8, 1948)."
+#train col=No290 num=290 dir=up days="ex Sun" kind=passenger note="Great Northern No. 290, daily except Sunday: Scobey 1.20 p.m. by Plentywood and Bainville to Williston 5.50 p.m. (Official Guide, May 1948, Table 37, February 8, 1948)."
+mile,station,principal,prov,tz,No289,No371,No372,No290
+-38,"Williston, Mont.",1,MT,M,lv 8.00a,lv 7.00a,ar 5.35p,ar 5.50p
+0,"Bainville, Mont.",1,MT,M,9.10a,8.20a,4.10p,5.00p
+11,"McCabe, Mont.",0,MT,M,9.31a,8.55a,3.35p,4.33p
+19,"Froid, Mont.",0,MT,M,9.49a,9.22a,3.05p,4.15p
+26,"Homestead, Mont.",0,MT,M,10.02a,9.42a,2.45p,4.00p
+32,"Medicine Lake, Mont.",0,MT,M,10.14a,10.00a,2.25p,3.45p
+39,"Reserve, Mont.",0,MT,M,10.30a,10.23a,2.00p,3.25p
+45,"Antelope, Mont.",0,MT,M,10.43a,10.43a,1.40p,3.12p
+53,"Plentywood, Mont.",1,MT,M,11.01a,11.10a,1.15p,2.55p
+60,"Midby, Mont.",0,MT,M,f11.14a,f11.29a,f12.52p,f2.38p
+67,"Archer, Mont.",0,MT,M,11.28a,11.50a,12.31p,2.24p
+73,"Redstone, Mont.",0,MT,M,11.42a,12.10p,12.10p,2.10p
+80,"Navajo, Mont.",0,MT,M,11.56a,12.30p,11.56a,1.57p
+85,"Flaxville, Mont.",0,MT,M,12.07p,1.00p,11.25a,1.46p
+91,"Madoc, Mont.",0,MT,M,12.18p,1.35p,11.05a,1.35p
+98,"Scobey, Mont.",1,MT,M,ar 12.35p,2.00p,10.40a,lv 1.20p
+107,"Four Buttes, Mont.",0,MT,M,,2.35p,9.50a,
+112,"Gluten, Mont.",0,MT,M,,3.00p,9.25a,
+118,"Peerless, Mont.",0,MT,M,,3.25p,9.00a,
+130,"Richland, Mont.",0,MT,M,,4.15p,8.10a,
+139,"Glentana, Mont.",0,MT,M,,4.55p,7.30a,
+147,"Opheim, Mont.",1,MT,M,,ar 5.30p,lv 7.00a,

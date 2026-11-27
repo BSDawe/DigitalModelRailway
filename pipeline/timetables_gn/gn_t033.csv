@@ -1,0 +1,26 @@
+# Great Northern Railway, Table 33, Minot, Berthold and Northgate (Official Guide, May 1948, page 1074; Brendan's images, 27 Nov 2026; scans in the private repo, scans/og1948_gn/p1074_*.png). CENTRAL TIME. Miles as printed. NOT BUILT YET.
+# Brendan's image is cropped at both sides: only Nos. 219 / 220 are entered (other columns, and the Crosby - Northgate part, not seen). Minot - Berthold is the main line (22 mi,
+# Table 3; Minot entered at mile -22 so the miles stay as printed from Berthold). Bowbells (42) is printed as arr / lve rows with no times for 219 / 220, between Niobe (34)
+# and Coteau (41): the two trains do not go into Bowbells (not entered).
+# Signs (page 1074 key): * daily; dagger daily except Sunday; double dagger daily except Saturday; a Monday, Wednesday and Friday; b Tuesday, Thursday and Saturday;
+# f flag stop; k Saturday only; x daily except Saturday and Sunday; sharp sign mixed train.
+#train col=No219 num=219 dir=down days="ex Sun" kind=passenger note="Great Northern No. 219, daily except Sunday: Minot 3.45 p.m., Berthold 4.30 p.m., by Niobe and Lignite to Crosby 8.00 p.m. (Official Guide, May 1948, Table 33, February 8, 1948)."
+#train col=No220 num=220 dir=up days="ex Sun" kind=passenger note="Great Northern No. 220, daily except Sunday: Crosby 4.30 a.m. by Lignite and Niobe to Berthold 7.33 a.m. and Minot 8.15 a.m. (Official Guide, May 1948, Table 33, February 8, 1948)."
+mile,station,principal,prov,tz,No219,No220
+-22,"Minot, N. Dak.",1,ND,C,lv 3.45p,ar 8.15a
+0,"Berthold, N. Dak.",1,ND,C,4.30p,7.33a
+7,"Hartland, N. Dak.",0,ND,C,4.50p,7.18a
+13,"Aurelia, N. Dak.",0,ND,C,5.05p,7.03a
+21,"Coulee, N. Dak.",0,ND,C,5.20p,6.48a
+28,"Kenaston, N. Dak.",0,ND,C,5.35p,6.33a
+34,"Niobe, N. Dak.",0,ND,C,5.50p,6.18a
+41,"Coteau, N. Dak.",0,ND,C,6.05p,6.02a
+48,"Woburn, N. Dak.",0,ND,C,6.20p,5.48a
+55,"Lignite, N. Dak.",0,ND,C,6.40p,5.32a
+63,"Stampede, N. Dak.",0,ND,C,f6.55p,5.19a
+65,"Kincaid, N. Dak.",0,ND,C,7.03p,5.14a
+69,"Larson, N. Dak.",0,ND,C,7.15p,5.08a
+76,"Noonan, N. Dak.",1,ND,C,7.35p,4.54a
+81,"Paulson, N. Dak.",0,ND,C,f7.45p,f4.42a
+84,"Juno, N. Dak.",0,ND,C,f7.51p,f4.37a
+89,"Crosby, N. Dak.",1,ND,C,ar 8.00p,lv 4.30a

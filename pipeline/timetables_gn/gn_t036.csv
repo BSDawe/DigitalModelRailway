@@ -1,0 +1,15 @@
+# Great Northern Railway, Table 36, Power and Pendroy (Official Guide, May 1948, page 1074; Brendan's images, 27 Nov 2026; scans in the private repo, scans/og1948_gn/p1074_*.png). MOUNTAIN TIME. Miles as printed. NOT BUILT YET.
+# Great Falls - Power is Table 8 (gn_t008.csv: No. 373 ar Power 2.09 p.m., No. 374 lv Power 7.15 p.m.). Miles from Great Falls.
+# Signs (page 1074 key): * daily; dagger daily except Sunday; double dagger daily except Saturday; a Monday, Wednesday and Friday; b Tuesday, Thursday and Saturday;
+# f flag stop; k Saturday only; x daily except Saturday and Sunday; sharp sign mixed train.
+#train col=No373 num=373 dir=down days="ex Sun" kind=passenger note="Great Northern No. 373, daily except Sunday: (Great Falls 1.10 p.m.) Power 2.11 p.m. by Choteau to Pendroy 4.40 p.m. (Official Guide, May 1948, Table 36, February 8, 1948)." links="from Great Falls, Table 8"
+#train col=No374 num=374 dir=up days="ex Sun" kind=passenger note="Great Northern No. 374, daily except Sunday: Pendroy 4.55 p.m. by Choteau to Power 7.10 p.m. (Great Falls 8.10 p.m.) (Official Guide, May 1948, Table 36, February 8, 1948)." links="to Great Falls, Table 8"
+mile,station,principal,prov,tz,No373,No374
+26,"Power, Mont.",1,MT,M,lv 2.11p,ar 7.10p
+32,"Cordova, Mont.",0,MT,M,f2.26p,f6.55p
+38,"Cleiv, Mont.",0,MT,M,f2.41p,f6.39p
+43,"Bole, Mont.",0,MT,M,f2.56p,f6.24p
+55,"Choteau, Mont.",1,MT,M,3.31p,5.52p
+63,"Koyl, Mont.",0,MT,M,f3.53p,f5.32p
+69,"Bynum, Mont.",0,MT,M,4.13p,5.17p
+77,"Pendroy, Mont.",1,MT,M,ar 4.40p,lv 4.55p

@@ -1,0 +1,16 @@
+# Great Northern Railway, Table 26, Grafton and Walhalla (Official Guide, May 1948, page 1074; Brendan's images, 27 Nov 2026; scans in the private repo, scans/og1948_gn/p1074_*.png). CENTRAL TIME. Miles as printed. NOT BUILT YET.
+# Grand Forks dagger 9.20 a.m. - Grafton and Grafton - Grand Forks 7.05 p.m. are Table 9a's trains (sk_gn_t009a.csv, Nos. 307 / 308): Nos. 139 / 140 entered from Grafton. Miles from Grand Forks.
+# Signs (page 1074 key): * daily; dagger daily except Sunday; double dagger daily except Saturday; a Monday, Wednesday and Friday; b Tuesday, Thursday and Saturday;
+# f flag stop; k Saturday only; x daily except Saturday and Sunday; sharp sign mixed train.
+#train col=No139 num=139 dir=down days="ex Sun" kind=passenger note="Great Northern No. 139, daily except Sunday: Grafton 11.41 a.m. by Cavalier to Walhalla 2.05 p.m. (Official Guide, May 1948, Table 26, February 8, 1948)." links="connection from Grand Forks (Table 9a)"
+#train col=No140 num=140 dir=up days="ex Sun" kind=passenger note="Great Northern No. 140, daily except Sunday: Walhalla 2.25 p.m. by Cavalier to Grafton 4.40 p.m. (Official Guide, May 1948, Table 26, February 8, 1948)." links="connection to Grand Forks (Table 9a)"
+mile,station,principal,prov,tz,No139,No140
+42,"Grafton, N. Dak.",1,ND,C,lv 11.41a,ar 4.40p
+48,"Nash, N. Dak.",0,ND,C,11.57a,4.21p
+56,"Hoople, N. Dak.",0,ND,C,12.19p,4.05p
+60,"Crystal, N. Dak.",0,ND,C,12.31p,3.51p
+67,"Hensel, N. Dak.",0,ND,C,12.49p,3.35p
+74,"Cavalier, N. Dak.",1,ND,C,1.19p,3.15p
+79,"Backoo, N. Dak.",0,ND,C,1.34p,2.55p
+85,"Leyden, N. Dak.",0,ND,C,f1.48p,2.39p
+90,"Walhalla, N. Dak.",1,ND,C,ar 2.05p,lv 2.25p

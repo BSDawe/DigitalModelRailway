@@ -1,0 +1,22 @@
+# Great Northern Railway, Table 28, Lakota and Sarles (Official Guide, May 1948, page 1074; Brendan's images, 27 Nov 2026; scans in the private repo, scans/og1948_gn/p1074_*.png). CENTRAL TIME. Miles as printed. NOT BUILT YET.
+# Nos. 207 / 208 also run Devils Lake - Lakota on the main line (Devils Lake dagger 9.25 a.m., Lakota lv 10.50 a.m.; Lakota ar 4.32 p.m., Devils Lake 5.30 p.m.). Table 1 prints that
+# main-line leg as Nos. 212 (Devils Lake 9.25 - Lakota 10.20 a.m., "to Sarles") and 211 (Lakota 4.37 - Devils Lake 5.30 p.m., "from Sarles"): the same trains under the main-line
+# numbers (Claude's reading; Table 1's 4.37 vs Table 28's 4.32 at Lakota as printed). Here only Lakota - Sarles. No. 208 Sarles 12.00 p.m. - Calvin 2.14 p.m. (6 mi) as printed.
+# Miles from Devils Lake.
+# Signs (page 1074 key): * daily; dagger daily except Sunday; double dagger daily except Saturday; a Monday, Wednesday and Friday; b Tuesday, Thursday and Saturday;
+# f flag stop; k Saturday only; x daily except Saturday and Sunday; sharp sign mixed train.
+#train col=No207 num=207 dir=down days="ex Sun" kind=passenger note="Great Northern No. 207, daily except Sunday: (Devils Lake 9.25 a.m., as No. 212) Lakota 10.50 a.m. by Edmore to Sarles 1.50 p.m. (Official Guide, May 1948, Table 28, February 8, 1948)." links="from Devils Lake as No. 212, Table 1"
+#train col=No208 num=208 dir=up days="ex Sun" kind=passenger note="Great Northern No. 208, daily except Sunday: Sarles 12.00 p.m. by Edmore to Lakota 4.32 p.m. (on to Devils Lake 5.30 p.m. as No. 211) (Official Guide, May 1948, Table 28, February 8, 1948)." links="to Devils Lake as No. 211, Table 1"
+mile,station,principal,prov,tz,No207,No208
+25,"Lakota, N. Dak.",1,ND,C,lv 10.50a,ar 4.32p
+32,"Rector, N. Dak.",0,ND,C,f11.04a,f4.15p
+37,"Brocket, N. Dak.",0,ND,C,11.19a,4.05p
+44,"Lawton, N. Dak.",0,ND,C,11.33a,3.52p
+52,"Edmore, N. Dak.",1,ND,C,11.54a,3.35p
+59,"Derrick, N. Dak.",0,ND,C,12.09p,3.19p
+65,"Hampden, N. Dak.",0,ND,C,12.25p,3.08p
+70,"Weaver, N. Dak.",0,ND,C,12.38p,2.57p
+77,"Munich, N. Dak.",0,ND,C,1.03p,2.42p
+85,"Clyde, N. Dak.",0,ND,C,1.21p,2.27p
+91,"Calvin, N. Dak.",0,ND,C,1.35p,2.14p
+98,"Sarles, N. Dak.",1,ND,C,ar 1.50p,lv 12.00p

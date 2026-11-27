@@ -1,0 +1,26 @@
+# Great Northern Railway, Table 34, Williston and Richey (with Table 33a's Williston - Fairview rows) (Official Guide, May 1948, page 1074; Brendan's images, 27 Nov 2026; scans in the private repo, scans/og1948_gn/p1074_*.png). MOUNTAIN TIME. Miles as printed. NOT BUILT YET.
+# Williston - Snowden is the main line (26 mi, Table 3): Williston at mile -26, the rest as printed from Snowden. No. 285 stands at Sidney 8.35 a.m. - 12.05 p.m. as printed.
+# Nos. 291 / 292 Fairview - Sidney connect with Table 33a's Watford City trains (287 arrives Fairview 11.35 a.m., 291 leaves 11.35; 292 arrives Fairview 9.00 a.m., 288 leaves 9.00):
+# perhaps the same trains renumbered at Fairview (Claude's reading).
+# Signs (page 1074 key): * daily; dagger daily except Sunday; double dagger daily except Saturday; a Monday, Wednesday and Friday; b Tuesday, Thursday and Saturday;
+# f flag stop; k Saturday only; x daily except Saturday and Sunday; sharp sign mixed train.
+#train col=No285 num=285 dir=down days="ex Sun" kind=passenger note="Great Northern No. 285, daily except Sunday: Williston 6.50 a.m. by Fairview and Sidney to Richey 1.50 p.m. (Official Guide, May 1948, Table 34, February 8, 1948)."
+#train col=No291 num=291 dir=down days="ex Sun" kind=passenger note="Great Northern No. 291, daily except Sunday: Fairview 11.35 a.m. to Sidney 11.59 a.m. (Official Guide, May 1948, Table 34, February 8, 1948)." links="from Watford City as No. 287 (Table 33a)?"
+#train col=No286 num=286 dir=up days="ex Sun" kind=passenger note="Great Northern No. 286, daily except Sunday: Richey 2.00 p.m. by Sidney and Fairview to Williston 5.40 p.m. (Official Guide, May 1948, Table 34, February 8, 1948)."
+#train col=No292 num=292 dir=up days="ex Sun" kind=passenger note="Great Northern No. 292, daily except Sunday: Sidney 8.40 a.m. to Fairview 9.00 a.m. (Official Guide, May 1948, Table 34, February 8, 1948)." links="on to Watford City as No. 288 (Table 33a)?"
+mile,station,principal,prov,tz,No285,No291,No286,No292
+-26,"Williston, Mont.",1,MT,M,lv 6.50a,,ar 5.40p,
+0,"Snowden, Mont.",1,MT,M,7.40a,,5.05p,
+3,"Nohle, Mont.",0,MT,M,7.46a,,4.50p,
+9,"Dore, Mont.",0,MT,M,8.00a,,4.36p,
+14,"Fairview, Mont.",1,MT,M,ar 8.11a / lv 8.11a,lv 11.35a,ar 4.25p / lv 4.25p,ar 9.00a
+18,"Ridgelawn, Mont.",0,MT,M,f8.20a,f11.45a,f4.10p,f8.51a
+25,"Sidney, Mont.",1,MT,M,ar 8.35a / lv 12.05p,ar 11.59a,ar 3.55p / lv 3.55p,lv 8.40a
+29,"Newlon Junction, Mont.",0,MT,M,12.15p,,3.35p,
+30,"Jenks, Mont.",0,MT,M,f12.18p,,f3.32p,
+36,"Epworth, Mont.",0,MT,M,f12.29p,,f3.21p,
+43,"Gettysburg, Mont.",0,MT,M,f12.44p,,f3.06p,
+51,"Lambert, Mont.",0,MT,M,1.00p,,2.50p,
+58,"Enid, Mont.",0,MT,M,1.15p,,2.35p,
+63,"Lane, Mont.",0,MT,M,1.25p,,2.25p,
+74,"Richey, Mont.",1,MT,M,ar 1.50p,,lv 2.00p,

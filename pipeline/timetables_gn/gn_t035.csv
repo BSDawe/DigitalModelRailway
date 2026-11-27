@@ -1,0 +1,12 @@
+# Great Northern Railway, Table 35, Great Falls, Sweet Grass and Lethbridge (Official Guide, May 1948, page 1074; Brendan's images, 27 Nov 2026; scans in the private repo, scans/og1948_gn/p1074_*.png). MOUNTAIN TIME. Miles as printed. NOT BUILT YET.
+# Nos. 41 / 40 run Shelby - Sweet Grass (the Great Falls rows are Nos. 43 / 42's, Table 8). Sweet Grass - Coutts - Lethbridge is the Canadian Pacific (Sweet Grass dagger 12.40 p.m. -
+# Lethbridge 2.45 p.m.; Lethbridge dagger 3.35 p.m. - Sweet Grass 5.50 p.m.): a connection, not a through train (Brendan, 27 Nov 2026). Miles from Great Falls.
+# Signs (page 1074 key): * daily; dagger daily except Sunday; double dagger daily except Saturday; a Monday, Wednesday and Friday; b Tuesday, Thursday and Saturday;
+# f flag stop; k Saturday only; x daily except Saturday and Sunday; sharp sign mixed train.
+#train col=No41 num=41 dir=down days="ex Sun" kind=passenger note="Great Northern No. 41, daily except Sunday: Shelby 10.50 a.m. by Kevin to Sweet Grass 12.20 p.m.; Canadian Pacific connection to Lethbridge (Official Guide, May 1948, Table 35, February 8, 1948)."
+#train col=No40 num=40 dir=up days="ex Sun" kind=passenger note="Great Northern No. 40, daily except Sunday: Sweet Grass 6.10 p.m. by Kevin to Shelby 7.40 p.m. (Official Guide, May 1948, Table 35, February 8, 1948)."
+mile,station,principal,prov,tz,No41,No40
+99,"Shelby, Mont.",1,MT,M,lv 10.50a,ar 7.40p
+119,"Kevin, Mont.",0,MT,M,11.35a,6.52p
+130,"Sunburst, Mont.",0,MT,M,11.59a,6.29p
+138,"Sweet Grass, Mont.",1,MT,M,ar 12.20p,lv 6.10p

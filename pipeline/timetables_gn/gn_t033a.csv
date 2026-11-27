@@ -1,0 +1,14 @@
+# Great Northern Railway, Table 33a, Williston and Watford City (Official Guide, May 1948, page 1074; Brendan's images, 27 Nov 2026; scans in the private repo, scans/og1948_gn/p1074_*.png). MOUNTAIN TIME. Miles as printed. NOT BUILT YET.
+# Williston - Snowden - Fairview: Nos. 285 / 286 (Table 34, gn_t034.csv). No. 287 prints 10.46 a.m. at both Rawson and Alexander: as printed. Miles from Snowden.
+# Signs (page 1074 key): * daily; dagger daily except Sunday; double dagger daily except Saturday; a Monday, Wednesday and Friday; b Tuesday, Thursday and Saturday;
+# f flag stop; k Saturday only; x daily except Saturday and Sunday; sharp sign mixed train.
+#train col=No288 num=288 dir=down days="ex Sun" kind=passenger note="Great Northern No. 288, daily except Sunday: Fairview 9.00 a.m. by Alexander to Watford City 10.15 a.m. (Official Guide, May 1948, Table 33a, February 8, 1948)." links="from Sidney as No. 292 (Table 34)?"
+#train col=No287 num=287 dir=up days="ex Sun" kind=passenger note="Great Northern No. 287, daily except Sunday: Watford City 10.20 a.m. by Alexander to Fairview 11.35 a.m. (Official Guide, May 1948, Table 33a, February 8, 1948)." links="on to Sidney as No. 291 (Table 34)?"
+mile,station,principal,prov,tz,No288,No287
+14,"Fairview, Mont.",1,MT,M,lv 9.00a,ar 11.35a
+19,"Cartwright, N. Dak.",0,ND,M,9.10a,11.24a
+27,"Charbonneau, N. Dak.",0,ND,M,9.26a,11.08a
+33,"Alexander, N. Dak.",0,ND,M,9.36a,10.46a
+38,"Rawson, N. Dak.",0,ND,M,9.48a,10.46a
+43,"Arnegard, N. Dak.",0,ND,M,10.00a,10.35a
+51,"Watford City, N. Dak.",1,ND,M,ar 10.15a,lv 10.20a

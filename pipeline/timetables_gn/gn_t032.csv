@@ -1,0 +1,15 @@
+# Great Northern Railway, Table 32, Towner and Maxbass (Official Guide, May 1948, page 1074; Brendan's images, 27 Nov 2026; scans in the private repo, scans/og1948_gn/p1074_*.png). CENTRAL TIME. Miles as printed. NOT BUILT YET.
+# Signs (page 1074 key): * daily; dagger daily except Sunday; double dagger daily except Saturday; a Monday, Wednesday and Friday; b Tuesday, Thursday and Saturday;
+# f flag stop; k Saturday only; x daily except Saturday and Sunday; sharp sign mixed train.
+#train col=No351 num=351 dir=down days="ex Sun" kind=passenger note="Great Northern No. 351, daily except Sunday: Towner 2.55 p.m. by Upham to Maxbass 5.00 p.m. (Official Guide, May 1948, Table 32, February 8, 1948)."
+#train col=No346 num=346 dir=up days="Sat" kind=passenger note="Great Northern No. 346, Saturday only: Maxbass 7.00 a.m. by Upham to Towner 10.00 a.m. (Official Guide, May 1948, Table 32, February 8, 1948)."
+#train col=No352 num=352 dir=up days="Mon,Tue,Wed,Thu,Fri" kind=passenger note="Great Northern No. 352, daily except Saturday and Sunday: Maxbass 8.50 a.m. by Upham to Towner 12.35 p.m. (Official Guide, May 1948, Table 32, February 8, 1948)."
+mile,station,principal,prov,tz,No351,No346,No352
+0,"Towner, N. Dak.",1,ND,C,lv 2.55p,ar 10.00a,ar 12.35p
+9,"Milroy, N. Dak.",0,ND,C,f3.15p,f9.35a,f11.55a
+14,"Bantry, N. Dak.",0,ND,C,3.30p,9.15a,11.30a
+22,"Upham, N. Dak.",1,ND,C,4.00p,8.35a,10.50a
+30,"Deep, N. Dak.",0,ND,C,4.18p,8.00a,10.10a
+35,"Newburg, N. Dak.",0,ND,C,4.32p,7.40a,9.45a
+41,"Dunning, N. Dak.",0,ND,C,f4.45p,f7.15a,f9.10a
+45,"Maxbass, N. Dak.",1,ND,C,ar 5.00p,lv 7.00a,lv 8.50a
