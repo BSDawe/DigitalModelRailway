@@ -1,7 +1,7 @@
 """Great Northern east of Spokane and the Burlington Chicago - St. Paul (Brendan, 26 - 27 Nov 2026) -> traces/gnmw/gn_mw.geojson (read by gn_lines.py).
 Sources (private repo): traces/msrails/Great_Northern.kmz (Mississippi Rails 2024-6-16, Tony Howe and David Price) and traces/msrails/Chicago_CBQ_Line.kmz.
 Kept: GN pieces east of Spokane (lon > -117.45; the Pacific Jct. - Everett piece cut there), south of the border, not Oregon or California; left out: the "Abandoned" and
-"Structures" folders and pieces named abandoned / old alignment / old route / later (Glasgow Air Force Base 1958, Intalco, the pellet plant). Each piece keeps its
+"Structures" folders (the Stone Arch Bridge route is in "Abandoned": Brendan copied it, traces/gnmw/gn_links.geojson) and pieces named abandoned / old alignment / old route / later (Glasgow Air Force Base 1958, Intalco, the pellet plant). Each piece keeps its
 name: "A ST to B ST" names give anchor points for the stations at its ends (gn_lines.ANCHORS).
 Usage: python3 tools/gn_import.py <Great_Northern.kmz> <Chicago_CBQ_Line.kmz>"""
 import json, os, re, sys, zipfile

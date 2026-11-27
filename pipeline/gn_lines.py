@@ -33,15 +33,11 @@ def _graph():
         F = json.load(open(os.path.join(HERE, 'traces', 'gnmw', 'gn_mw.geojson')))['features']
         for f in F:
             o = f['properties']['own']; add(ab_lines._xy(f['geometry']['coordinates']), 1.0, 'b', None if o == 'gn' else o)
+        for fn in ('gn_mn_nd.geojson', 'gn_neche_gretna.geojson'):              # Brendan's GN traces of October (the Winnipeg line): preferred where they run
+            for f in json.load(open(os.path.join(HERE, 'traces', 'gn', fn)))['features']:
+                if f['geometry']['type'] == 'LineString': add(ab_lines._xy(f['geometry']['coordinates']), 0.9, 'b', None)
         for f in json.load(open(os.path.join(HERE, 'traces', 'gnmw', 'gn_links.geojson')))['features']:   # Brendan's pieces and Claude's estimated links
             add(ab_lines._xy(f['geometry']['coordinates']), f['properties'].get('cost', 1.0), 'b', 'est' if f['properties'].get('est') else None)
-        # a piece end 150 - 800 m from other GN track (the loader ties ends within 150 m itself): a straight tie to the nearest point (Sioux Falls, St. Cloud)
-        km = lambda a, b: math.hypot((a[0] - b[0]) * 111.32 * math.cos(math.radians(a[1])), (a[1] - b[1]) * 110.57)
-        G = [(i, f['geometry']['coordinates']) for i, f in enumerate(F) if f['properties']['own'] == 'gn']
-        for i, c in G:
-            for e in (c[0], c[-1]):
-                best = min(((km(e, q), q) for j, c2 in G if j != i for q in c2), default=(9, None))
-                if 0.15 < best[0] < 0.8: add(ab_lines._xy([e, best[1]]), 1.2, 'b', None)
         for f in json.load(open(os.path.join(HERE, 'traces', 'maritimes', 'soo.geojson')))['features']:   # Superior - Duluth: the NP and Soo pieces there
             c = f['geometry']['coordinates']
             if f['properties'].get('status') != 'ok' or not all(-92.25 < p[0] < -92.0 and 46.65 < p[1] < 46.82 for p in c): continue

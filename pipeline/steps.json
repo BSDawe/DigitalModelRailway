@@ -630,7 +630,9 @@
     "timetables_gn/gn_t044.csv",
     "timetables_gn/gn_t047.csv",
     "timetables_gn/gn_t053.csv",
-    "traces/gnmw/gn_links.geojson"
+    "traces/gnmw/gn_links.geojson",
+    "traces/gn/gn_mn_nd.geojson",
+    "traces/gn/gn_neche_gretna.geojson"
    ]
   }
  ]

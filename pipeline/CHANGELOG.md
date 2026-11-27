@@ -3370,3 +3370,10 @@ A review of the whole project (Brendan: "have a peek through ... suggest improve
 - Names by zoom: Chicago Union Station "Union Station" (Brendan), Superior Union Station, Sioux City Union Depot.
 - Still drawn as straight estimates: Sioux Falls - Watertown, Tilden Jct. - Red Lake Falls (no track in the KMZ), Mossmain - Billings, Superior - Duluth (NP traces to come, Brendan).
 - Counts: 774 lines, 5437 trips, 9035 stops, 76 agencies; check_gtfs 0 problems.
+
+## Version 235
+- Minneapolis (Brendan, 27 Nov 2026): the St. Paul - Minneapolis route over the Stone Arch Bridge from Brendan's piece (the KMZ files it under "Abandoned", which the import
+  leaves out), replacing Claude's estimated link; one route over the bridge, shared with the Winnipeg Limited's. Brendan's October GN traces (traces/gn/, the Winnipeg line)
+  added to the GN step's track and preferred, which clears the hook north of the Great Northern station; the automatic ties between nearby piece ends removed (they made it).
+- Checked (Brendan): no other Ontario shared stations were lost in V217 (only the two Toronto Union entries).
+- Counts unchanged: 774 lines, 5437 trips, 9035 stops; check_gtfs 0 problems.
