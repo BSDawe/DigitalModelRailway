@@ -1,0 +1,21 @@
+# Great Northern Railway, Table 47, Whitefish, Columbia Falls and Kalispell (Official Guide, May 1948, page 1076; Brendan's image, 27 Nov 2026; scan in the private repo, scans/og1948_gn/p1076_t047.png). MOUNTAIN TIME. Miles as printed. NOT BUILT YET.
+# Columns headed with two numbers (252-249, 242-243, 244-241, 250-251): a train renumbered at Columbia Falls; entered under the first number. Connections (Table 4's notes):
+# 242-243 Whitefish 11.30 a.m. from No. 27; 245 Columbia Falls 2.38 p.m. from No. 3; 248 to Columbia Falls 3.55 p.m. for No. 4; 250-251 to Whitefish 6.25 p.m. for No. 28;
+# 252-249 Whitefish 7.00 p.m. (from No. 1?); 244-241 to Whitefish 10.40 a.m. (for No. 2?). The rest of page 1076 is buses and Portland - Vancouver, B.C. (already entered).
+# Signs: * daily; f flag stop for revenue passengers.
+#train col=No252 num=252 dir=down days=daily kind=passenger note="Great Northern No. 252, daily: Whitefish 7.00 p.m. by Columbia Falls to Kalispell 8.05 p.m. (printed 252-249) (Official Guide, May 1948, Table 47, February 8, 1948)."
+#train col=No247 num=247 dir=down days=daily kind=passenger note="Great Northern No. 247, daily: Columbia Falls 4.15 p.m. to Kalispell 4.45 p.m. (Official Guide, May 1948, Table 47, February 8, 1948)."
+#train col=No245 num=245 dir=down days=daily kind=passenger note="Great Northern No. 245, daily: Columbia Falls 2.38 p.m. (from No. 3) to Kalispell 3.08 p.m. (Official Guide, May 1948, Table 47, February 8, 1948)." links="from No. 3 at Columbia Falls"
+#train col=No242 num=242 dir=down days=daily kind=passenger note="Great Northern No. 242, daily: Whitefish 11.30 a.m. (from No. 27) by Columbia Falls to Kalispell 12.35 p.m. (printed 242-243) (Official Guide, May 1948, Table 47, February 8, 1948)." links="from No. 27 at Whitefish"
+#train col=No244 num=244 dir=up days=daily kind=passenger note="Great Northern No. 244, daily: Kalispell 9.35 a.m. by Columbia Falls to Whitefish 10.40 a.m. (printed 244-241) (Official Guide, May 1948, Table 47, February 8, 1948)."
+#train col=No246 num=246 dir=up days=daily kind=passenger note="Great Northern No. 246, daily: Kalispell 2.00 p.m. to Columbia Falls 2.30 p.m. (Official Guide, May 1948, Table 47, February 8, 1948)."
+#train col=No248 num=248 dir=up days=daily kind=passenger note="Great Northern No. 248, daily: Kalispell 3.25 p.m. to Columbia Falls 3.55 p.m. (for No. 4) (Official Guide, May 1948, Table 47, February 8, 1948)." links="to No. 4 at Columbia Falls"
+#train col=No250 num=250 dir=up days=daily kind=passenger note="Great Northern No. 250, daily: Kalispell 5.20 p.m. by Columbia Falls to Whitefish 6.25 p.m. (for No. 28; printed 250-251) (Official Guide, May 1948, Table 47, February 8, 1948)." links="to No. 28 at Whitefish"
+mile,station,principal,prov,tz,No252,No247,No245,No242,No244,No246,No248,No250
+0,"Whitefish, Mont.",1,MT,M,lv 7.00p,,,lv 11.30a,ar 10.40a,,,ar 6.25p
+5,"Half Moon, Mont.",0,MT,M,f7.12p,,,f11.42a,f10.28a,,,f6.13p
+8,"Columbia Falls, Mont.",1,MT,M,7.35p,lv 4.15p,lv 2.38p,12.05p,10.05a,ar 2.30p,ar 3.55p,5.50p
+10,"Soldiers' Home, Mont.",0,MT,M,f7.40p,f4.20p,f2.43p,f12.10p,f10.00a,f2.25p,f3.50p,f5.45p
+13,"La Salle, Mont.",0,MT,M,f7.47p,f4.27p,f2.50p,f12.17p,f9.53a,f2.18p,f3.43p,f5.38p
+18,"Rose Crossing, Mont.",0,MT,M,f7.56p,f4.36p,f2.59p,f12.26p,f9.44a,f2.09p,f3.34p,f5.29p
+22,"Kalispell, Mont.",1,MT,M,ar 8.05p,ar 4.45p,ar 3.08p,ar 12.35p,lv 9.35a,lv 2.00p,lv 3.25p,lv 5.20p
