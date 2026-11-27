@@ -1,7 +1,7 @@
 # The Digital Model Railway — project state
 
 Read this first. It is meant to be enough to start a short, single-task chat without replaying the project's history.
-Last updated 26 November 2026 (Version 232). This file is the current state and the standing rules; the version-by-version history is in CHANGELOG.md.
+Last updated 27 November 2026 (Version 233). This file is the current state and the standing rules; the version-by-version history is in CHANGELOG.md.
 
 ## What this is
 
@@ -92,6 +92,7 @@ Output is quiet: one line per step run. Logs are in `build_logs/<step>.log`; rea
 | `cp_lakes_build` | cpgl (CP steamers Keewatin and Assiniboia, Port McNicoll - Fort William) | nn_build (the Sault dock), on_build (Port McNicoll) | traces/lakes/cp_great_lakes.kml, traces/lakes/northern_navigation_co.kmz, water_east.json, cpgl_legs.json (lane cache) |
 | `atc_build` | atc_w, atc_e, atc_mc, atc_cm, atc_lc, atc_cl (Arnold Transit: St. Ignace, Mackinaw City, Les Cheneaux) | gtwf_build, dcn_build (the Arnold Dock) | water_east.json, basemap tiles, atc_legs.json (lane cache) |
 | (on_build) `on_mc_t006*` | Michigan Central / N.Y.C. Chicago - New York (V210) | | traces/maritimes/mc.geojson (tools/mar_import_mc.py) |
+| `gnmw_build` | gnmw* (Great Northern east of Spokane, 50 lines; Burlington Chicago - St. Paul) | sk_build, wa_build, on_build | gn_lines.py, timetables_gn/*.csv, traces/gnmw/gn_mw.geojson (tools/gn_import.py) |
 | `cp_manitoba_build` | cpmb (CP S.S. Manitoba cruise, Port McNicoll - Owen Sound - Sault - Fort William) | cp_lakes_build (the Sault and Fort William stops), on_build (the two CP stations) | traces/lakes/cp_great_lakes.kml, traces/lakes/northern_navigation_co.kmz, water_east.json, cpmb_legs.json (lane cache) |
 
 Rules that keep this working:
@@ -349,6 +350,7 @@ After an accepted build: `cp viz_data.json tools/.baseline_viz.json`.
 
 ## Recent versions (one line each; the detail is in CHANGELOG.md)
 
+- 233: the Great Northern east of Spokane (50 lines, Official Guide May 1948; gnmw_build.py), Chicago - St. Paul over the Burlington; through trains to Seattle.
 - 232: the Alaska Transportation Co. S.S. George Washington, Seattle - Southeast Alaska 8-day cruise.
 - 231: the South Shore Line (Randolph Street - Gary - Michigan City - South Bend; IC into Chicago; July 5 on the Sunday schedule).
 - 230: large build parts kept as folders of railway groups (on_build); site data cut the same way; Mixed train icon.
@@ -356,7 +358,6 @@ After an accepted build: `cp viz_data.json tools/.baseline_viz.json`.
 - 228: the Chicago Aurora and Elgin (Wells Street - Wheaton - Aurora, Batavia, Elgin; Garfield Park 'L' as CTA track).
 - 227: North Shore Line southbound trains face the right way; Winthrop Harbor.
 - 226: the North Shore Line complete (Shore Line, Mundelein, Waukegan, the branch); the south-east Loop wye; one track north of the Loop.
-- 225: the North Shore Line, Chicago - Milwaukee (1949 timetable for 1948; Electroliners named; CTA 'L' track into the Loop, each direction its own side).
 - 223: the Baltimore & Annapolis Railroad (Camden Station - Annapolis, Bladen Street; B&O trackage into Camden drawn as B&O).
 - 222: Portland Traction track from Brendan's corrected KML (1st / 2nd Ave loop, East Portland, Golf Jct.); stations anchored at their streets.
 - 221: Portland Traction stations re-anchored (Linneman Jct. at the junction; Oregon City miles to 3rd and Main).

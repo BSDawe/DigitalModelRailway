@@ -3341,3 +3341,21 @@ A review of the whole project (Brendan: "have a peek through ... suggest improve
   Thursday 8 a.m.) and the 10 July sailing (Saturday 3.00 p.m., out of the week by Ketchikan). Port days estimated. Pier 58 placed at the foot of Union Street (Claude, est.).
   Colour plum #7a2f4f with a cream funnel (Claude's pick, to confirm).
 - Counts: 724 lines, 5280 trips, 8136 stops, 76 agencies; check_gtfs 0 problems.
+
+## Version 233
+- The Great Northern east of Spokane (Brendan, 26 - 27 Nov 2026), new step gnmw_build.py (helper gn_lines.py): 50 lines from the Official Guide, May 1948, pages 1067 - 1077
+  (tables of February 8, 1948 and November 30, 1947), transcribed in timetables_gn/: the main lines St. Paul - Willmar - Fargo - Grand Forks - Minot (Table 1) and St. Paul -
+  St. Cloud - Fargo - New Rockford - Minot (Table 2), Minot - Williston - Havre (3), Havre - Whitefish - Troy - Newport and Spokane (4), St. Paul - Duluth (53), Duluth - Grand Forks,
+  Billings - Great Falls - Shelby (8), Havre - Great Falls - Helena - Butte (38), and the branch tables 7, 10 - 47. Train names from the Official Guide through-car table (Brendan):
+  The New Empire Builder, The Oriental Limited, The Dakotan, The Alexandrian, The Fast Mail, The Red River Limited; The New Empire Builder also on the Washington line (wa_build).
+- Chicago (Union Station, Brendan's point) - St. Paul over the Burlington for Nos. 1 - 4: the ends only, no stops, until the CB&Q tables come (Brendan, 27 Nov 2026); Burlington
+  track in silver (#8d99a5; Brendan: "a sort of silver"). Burlington connections at Billings and the Canadian Pacific beyond Sweet Grass are connections, not through trains (Brendan).
+- Track: tools/gn_import.py -> traces/gnmw/gn_mw.geojson from the Mississippi Rails Great Northern and CB&Q KMZs (private repo, traces/msrails/). Stations: hand points (Portland
+  Junction and Superior Union Station, Brendan; Chicago Union Station, Brendan; a few town points by Claude, approximate), stations already on the map, the ends of KMZ pieces
+  named for a place, else by printed mileage. The trains join the Washington line at Newport (its last Washington station) and Spokane, Duluth at the Union Depot.
+- Through trains: real_ends.py prefers the section under the plain number where a train splits with both sections keeping it (the Empire Builder's Seattle and Portland
+  sections at Spokane). The Empire Builder, Oriental Limited and Fast Mail now run Chicago / St. Paul - Seattle as one train each (216 joins, was 179).
+- Drawn as straight estimates (no or unjoined track in the trace): Sioux Falls - Watertown, Tilden Jct. - Red Lake Falls, Moccasin - Lewistown, Milaca - St. Cloud, Garretson -
+  Sioux Falls, Mossmain - Billings (NP track), Superior - Duluth (NP trackage rights, Brendan; the pieces there do not join yet).
+- Page: state tags N. Dak., S. Dak., Iowa, Md., Tex. hidden like the others. Colour guide refreshed.
+- Counts: 774 lines, 5437 trips, 9037 stops, 76 agencies; check_gtfs 0 problems.

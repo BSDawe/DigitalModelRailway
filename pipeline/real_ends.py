@@ -164,6 +164,14 @@ def _auto_chain(viz, gt):
             seen |= d
         return True
     n = 0
+    import re as _re2
+    plain = lambda t: bool(_re2.match(r'^[A-Z]+-M?\d+$', t['id']))
+    def main_only(L, side):                                              # a split where both sections keep the number (the Empire Builder's Seattle and
+        ps = [pq for pq in L if plain(pq[side]['t'])]                    # Portland sections at Spokane): the one under the plain number is the train
+        return ps if len(ps) == 1 else L
+    for k in byx: byx[k] = main_only(byx[k], 1)
+    for k in byy: byy[k] = main_only(byy[k], 0)
+    cand = [(x, y) for x, y in cand if any(q is y for _, q in byx[id(x['t'])]) and any(p is x for p, _ in byy[id(y['t'])])]
     for x, y in cand:
         if not disjoint([q['days'] for _, q in byx[id(x['t'])]]) or not disjoint([p['xd'] for p, _ in byy[id(y['t'])]]): continue
         if len(byx[id(x['t'])]) > 1 and len(byy[id(y['t'])]) > 1: continue
