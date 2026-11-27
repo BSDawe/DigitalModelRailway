@@ -3,7 +3,8 @@
 # Mountain time: the printed Central arrivals are an hour later). Miles from St. Paul. NOT BUILT YET.
 # The St. Paul / Minneapolis / Minot rows at the head of the table repeat Tables 1 and 2: not entered.
 # No. 9 (dagger, daily except Sunday, here) leaves Minot 4.10 p.m. (arrived 3.35 p.m., Table 1) and ends at Williston 8.30 p.m. Central; No. 10 (dagger) starts at Williston
-# 6.15 a.m. Central and reaches Minot 12.01 p.m. (UNSURE: whether the Minot - Williston legs are the same trains as Nos. 9 / 10 east of Minot, which Table 1 prints daily).
+# 6.15 a.m. Central and reaches Minot 12.01 p.m.: the same trains as Nos. 9 / 10 east of Minot (daily there, Table 1), daily except Sunday between Minot and Williston
+# (Brendan, 27 Nov 2026, from the Official Guide through-car table).
 # Nos. 223 / 224 (dagger) Williston - Havre locals. Additional trains (printed under the table): leave Williston dagger 7.00, 8.00 a.m., arrive Bainville 8.15, 8.50 a.m.; leave
 # Bainville dagger 4.20, 5.00 p.m., arrive Williston 5.35, 5.50 p.m. (columns X1 - X4, no numbers printed; time zone not printed: read as Mountain, the Williston - Havre zone).
 # Signs: * daily; dagger daily except Sunday; f flag stop; natural sign (No. 3) stops to discharge revenue passengers from the Twin Cities and beyond and to receive revenue
@@ -12,14 +13,14 @@
 # Minot and east and to receive for Spokane and west; y (No. 2, Glasgow) stops to discharge from Spokane and west and to receive for Minot and east: entered as stops; colon
 # (No. 28, Ray) stops on flag to take revenue passengers: entered f.
 #train col=No223 num=223 dir=down days="ex Sun" kind=passenger note="Great Northern No. 223, daily except Sunday: Williston 6.40 a.m. to Havre 5.00 p.m. (Official Guide, May 1948, Table 3, February 8, 1948)."
-#train col=No27 num=27 dir=down days=daily kind=passenger note="Great Northern No. 27, daily, coach passengers only: Minot 7.15 p.m. to Havre 3.20 a.m. (Official Guide, May 1948, Table 3, February 8, 1948)." links="from Table 2; continued on Table 4"
-#train col=No9 num=9 dir=down days="ex Sun" kind=passenger note="Great Northern No. 9, daily except Sunday: Minot 4.10 p.m. to Williston 8.30 p.m. Central time (Official Guide, May 1948, Table 3, February 8, 1948)." links="from Table 1 (Minot ar 3.35 p.m.)"
+#train col=No27 num=27 dir=down days=daily kind=passenger name="The Fast Mail" note="Great Northern No. 27, daily, coach passengers only: Minot 7.15 p.m. to Havre 3.20 a.m. (Official Guide, May 1948, Table 3, February 8, 1948)." links="from Table 2; continued on Table 4"
+#train col=No9 num=9 dir=down days="ex Sun" kind=passenger name="The Dakotan" note="Great Northern No. 9, daily except Sunday: Minot 4.10 p.m. to Williston 8.30 p.m. Central time (Official Guide, May 1948, Table 3, February 8, 1948)." links="from Table 1 (Minot ar 3.35 p.m.)"
 #train col=No1 num=1 dir=down days=daily kind=passenger name="The New Empire Builder" note="Great Northern No. 1, The New Empire Builder, daily: Minot 4.55 a.m. to Havre 12.05 p.m. (Official Guide, May 1948, Table 3, February 8, 1948)." links="from Table 2; continued on Table 4"
 #train col=No3 num=3 dir=down days=daily kind=passenger name="The Oriental Limited" note="Great Northern No. 3, The Oriental Limited, daily: Minot 10.50 p.m. to Havre 8.00 a.m. (Official Guide, May 1948, Table 3, February 8, 1948)." links="from Table 1; continued on Table 4"
 #train col=No2 num=2 dir=up days=daily kind=passenger name="The New Empire Builder" note="Great Northern No. 2, The New Empire Builder, daily: Havre 12.55 p.m. to Minot 10.05 p.m. (Official Guide, May 1948, Table 3, February 8, 1948)." links="from Table 4; continued on Table 2"
 #train col=No4 num=4 dir=up days=daily kind=passenger name="The Oriental Limited" note="Great Northern No. 4, The Oriental Limited, daily: Havre 10.30 p.m. to Minot 8.45 a.m. (Official Guide, May 1948, Table 3, February 8, 1948)." links="from Table 4; continued on Table 1"
-#train col=No10 num=10 dir=up days="ex Sun" kind=passenger note="Great Northern No. 10, daily except Sunday: Williston 6.15 a.m. Central time to Minot 12.01 p.m. (Official Guide, May 1948, Table 3, February 8, 1948)." links="continued on Table 1 (Minot lv 1.30 p.m.)"
-#train col=No28 num=28 dir=up days=daily kind=passenger note="Great Northern No. 28, daily, coach passengers only: Havre 2.50 a.m. to Minot 2.30 p.m. (Official Guide, May 1948, Table 3, February 8, 1948)." links="from Table 4; continued on Table 2"
+#train col=No10 num=10 dir=up days="ex Sun" kind=passenger name="The Dakotan" note="Great Northern No. 10, daily except Sunday: Williston 6.15 a.m. Central time to Minot 12.01 p.m. (Official Guide, May 1948, Table 3, February 8, 1948)." links="continued on Table 1 (Minot lv 1.30 p.m.)"
+#train col=No28 num=28 dir=up days=daily kind=passenger name="The Fast Mail" note="Great Northern No. 28, daily, coach passengers only: Havre 2.50 a.m. to Minot 2.30 p.m. (Official Guide, May 1948, Table 3, February 8, 1948)." links="from Table 4; continued on Table 2"
 #train col=No224 num=224 dir=up days="ex Sun" kind=passenger note="Great Northern No. 224, daily except Sunday: Havre 10.20 a.m. to Williston 7.40 p.m. (Official Guide, May 1948, Table 3, February 8, 1948)."
 #train col=X1 num=X1 dir=down days="ex Sun" kind=passenger note="Great Northern additional train, daily except Sunday: Williston 7.00 a.m. to Bainville 8.15 a.m. (Official Guide, May 1948, Table 3, February 8, 1948; no number printed)."
 #train col=X2 num=X2 dir=down days="ex Sun" kind=passenger note="Great Northern additional train, daily except Sunday: Williston 8.00 a.m. to Bainville 8.50 a.m. (Official Guide, May 1948, Table 3, February 8, 1948; no number printed)."
