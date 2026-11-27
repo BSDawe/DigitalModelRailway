@@ -587,21 +587,22 @@ service('bsa', ASS, 'Seattle – Ketchikan – Juneau – Skagway – Sitka', 'O
 # ---- Alaska Transportation Co.: S.S. George Washington (formerly New York - Bermuda), an 8-day cruise from Seattle (Pier 58) every ten days, May 31 to
 # Sept. 30, 1948 (the company's advertisement in the Official Guide, May 1948, from Brendan, 26 Nov 2026): Ketchikan, Juneau, Haines, Skagway and Sitka. Seattle 3.00 p.m. (Daily
 # Alaska Empire, Juneau, 25 May 1948, from Brendan). In the week: the 30 June sailing (Wednesday) coming home, and the 10 July sailing going out.
-# The ad gives no port order beyond its list and no other hours: the calls are by date (estimated, in the ad's order) and the return is non-stop.
+# The Empire gives the order: Ketchikan, Juneau, Haines and Skagway north, Sitka and Ketchikan on the return. Only Seattle is timed: the calls are by date (estimated).
 AKT = 'Alaska Transportation Co.'
 OPS[AKT] = ('akt', 'ATC', '7A2F4F'); OPLABEL[AKT] = 'Alaska Transportation'
 SRC[AKT] = ('Alaska Transportation Co. advertisement, Official Guide, May 1948 ("New Cruise Tour": sailing dates and ports of call), and the Daily Alaska Empire, Juneau, 25 May 1948'
-            ' (the 3.00 p.m. sailing from Seattle), both from Brendan; the calls after Seattle are estimated')
+            ' (the 3.00 p.m. sailing from Seattle and the order of calls), both from Brendan; the calls after Seattle are estimated')
 P['Seattle (Pier 58)'] = (-122.3428, 47.6072, True); PLACED['Seattle (Pier 58)'] = 'Alaska Transportation Co., Pier 58 (Claude, est.: the foot of Union Street)'
 _gw = (' Alaska Transportation Co.: the S.S. George Washington, formerly in the New York - Bermuda run, sails from Pier 58, Seattle, at 3.00 p.m. on an'
-       ' 8-day cruise every ten days (May 31 to Sept. 30): Ketchikan, Juneau, Haines, Skagway and Sitka. Only the Seattle hour is printed; the dates of the'
-       ' calls are estimated, in the order the advertisement lists them, and the run home from Sitka is drawn non-stop.' + _wk)
+       ' 8-day cruise every ten days (May 31 to Sept. 30): Ketchikan, Juneau, Haines and Skagway northbound, Sitka and Ketchikan on the return (Daily Alaska'
+       ' Empire, 25 May 1948). The 5,184-ton, 375-foot ship was remodelled at Puget Sound Bridge & Dredging Co. for her first season on the Alaska run. Only the'
+       ' Seattle hour is printed; the dates of the calls are estimated.' + _wk)
 service('bgw', AKT, 'Seattle – Ketchikan – Juneau – Skagway – Sitka (Alaska cruise)', 'Official Guide, May 1948 (Alaska Transportation Co. advertisement)', 250,
-  ['Seattle (Pier 58)', 'Ketchikan', 'Juneau', 'Haines', 'Skagway', 'Sitka', 'Seattle (Pier 58)'], [
-  dsail('GW1', 'George Washington', 'Alaska cruise', 'George Washington', -5, [(0, T('3.00p')), (1, Wd(D2)), (2, Wd(D3)), (3, Wd(D4)), (4, Wd(D4)), (5, Wd(D5)), (6, T('~8.00a', D8))],
-        'S.S. George Washington: the 30 June cruise (Wednesday, 3.00 p.m. from Seattle); Ketchikan Friday 2 July, Juneau Saturday 3, Haines and Skagway Sunday 4, Sitka Monday 5, Seattle about Thursday 8 July a.m.' + _gw),
+  ['Seattle (Pier 58)', 'Ketchikan', 'Juneau', 'Haines', 'Skagway', 'Sitka', 'Ketchikan', 'Seattle (Pier 58)'], [
+  dsail('GW1', 'George Washington', 'Alaska cruise', 'George Washington', -5, [(0, T('3.00p')), (1, Wd(D2)), (2, Wd(D3)), (3, Wd(D4)), (4, Wd(D4)), (5, Wd(D5)), (6, Wd(D6)), (7, T('~8.00a', D8))],
+        'S.S. George Washington: the 30 June cruise (Wednesday, 3.00 p.m. from Seattle); Ketchikan Friday 2 July, Juneau Saturday 3, Haines and Skagway Sunday 4, Sitka Monday 5, Ketchikan Tuesday 6, Seattle about Thursday 8 July a.m.' + _gw),
   dsail('GW2', 'George Washington', 'Alaska cruise', 'George Washington', 5, [(0, T('3.00p')), (1, Wd(D2))],
-        'S.S. George Washington: the 10 July cruise, sails from Seattle Saturday at 3.00 p.m.; Ketchikan about Monday 12, Juneau, Haines and Skagway, Sitka, and home about Sunday 18 July.' + _gw)],
+        'S.S. George Washington: the 10 July cruise, sails from Seattle Saturday at 3.00 p.m.; Ketchikan about Monday 12, Juneau, Haines and Skagway, then Sitka and Ketchikan, and home about Sunday 18 July.' + _gw)],
   ['to Alaska', 'to Seattle'])
 
 # ---- CP Table 172, Alaska service: Princess Louise and Princess Norah, Vancouver - Skagway, each about every 10-11 days (cp_t172_skagway_1948.csv;
