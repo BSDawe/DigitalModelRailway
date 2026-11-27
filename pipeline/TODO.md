@@ -40,6 +40,8 @@ Last updated 26 November 2026 (Version 232).
   Page 1071 (27 Nov 2026): Table 8 Billings - Great Falls - Shelby (43 / 42; 239 / 240 Moccasin - Great Falls; 373 / 374 Great Falls - Power) and the Duluth - Grand Forks table
   (35 / 36; 105 / 106 Cass Lake - Bemidji; its table number not on the image). Burlington connections at Billings are not through trains (Brendan). Name: "The New Empire Builder"
   everywhere (Brendan, 27 Nov 2026): change wa_build.py's names for Nos. 1 / 2 at the GN build.
+  Superior Union Station (Brendan, 27 Nov 2026): 46.726609, -92.107400 (GN, shared with the NP; the DSS&A used the Soo station in 1948 per its table). Duluth: GN trains at the
+  Union Depot. All GN pages transcribed (1067 - 1077, Table 53 the last; timetables_gn/, 27 Nov 2026): READY TO BUILD.
 
 ## Fixes queued (Brendan: "don't fix yet"; ask before the next rebuild whether to include them)
 - [ ] SCALING WORK, scheduled (Brendan, 26 Nov 2026: do 1 and 2 on the first build after Thursday 26 Nov, 9 p.m. his time, when his weekly usage resets), planning for

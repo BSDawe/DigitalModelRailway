@@ -1,3 +1,5 @@
+# Superior Union Station (Brendan, 27 Nov 2026): 46.726609, -92.107400; primarily a GN station, shared with the NP. The DSS&A used the Soo Line station in 1948
+# (its Official Guide table: "Ashland, Superior and Duluth: the Soo Line stations"; on_dssa_t001d.csv), so not this one.
 # Great Northern Railway, Table 53, St. Paul, Minneapolis, Duluth and Superior (November 30, 1947) (Official Guide, May 1948, page 1077; Brendan's image, 27 Nov 2026; scan in the private repo, scans/og1948_gn/p1077_t053.png). CENTRAL TIME. Miles as printed. NOT BUILT YET.
 # GN trains use the Great Northern Station, Minneapolis; Union Station, Superior; the Union Depot, Duluth (Brendan: Duluth Union Terminal). Only the GN columns are entered;
 # the table also prints N.P. 66, 62, 61, 65 and Soo 62, 63 (ends only; Soo in on_soo files; N.P. for the N.P. tables). Cedar has no time for No. 23 (as printed).
