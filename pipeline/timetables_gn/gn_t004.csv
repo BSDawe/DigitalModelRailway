@@ -1,0 +1,96 @@
+# Great Northern Railway, Table 4, Main Line continued: Havre - Shelby - Glacier Park - Whitefish - Troy - Bonner's Ferry - Sand Point (Official Guide, May 1948, page 1069; table
+# dated February 8, 1948; Brendan's images, 27 Nov 2026), and the first rows of Table 5 (page 1070), Sand Point - Priest River, Idaho (Brendan, 27 Nov 2026): wa_gn_t005a.csv
+# begins at Newport, Wash. MOUNTAIN TIME Havre - Kootenai Falls; PACIFIC TIME from Troy (the Troy row is entered in Pacific time: the printed Mountain times are an hour later).
+# Miles from St. Paul. NOT BUILT YET. Spokane and west: wa_gn_t005a.csv (Table 5, already transcribed); page 1070's Newport - Spokane rows agree with it.
+# Kalispell (1166, the end of the branch from Whitefish, Table 47; "d connects via Whitefish") is printed between Columbia Falls and Whitefish, as arrive / leave rows: No. 27 Kalispell
+# ar d12.35 p.m., lv d9.35 a.m.; No. 3 ar 3.08 p.m., lv *2.00 p.m.; No. 4 lv *3.25 p.m., ar 4.45 p.m.; No. 28 lv d5.20 p.m., ar d8.05 p.m. Not entered: Kalispell connections /
+# sections, to come with Table 47. Baltic (1030) has no times.
+# Signs: * daily; f flag stop; t (No. 3) stops to pick up revenue passengers for Spokane and west where No. 3 is scheduled to stop, and to discharge revenue passengers from points
+# south of Shelby and east of Williston; u (No. 4) stops to discharge revenue passengers from Spokane and west and to pick up for points east of Havre where No. 4 is scheduled to stop,
+# or points south of Shelby; heavy dot (No. 1, Cut Bank) stops to discharge revenue passengers from Williston and east and to pick up for Spokane and west; c (No. 2, Cut Bank) stops
+# to discharge revenue passengers from Spokane and west and to take for Williston and east: all entered as stops. Black square (No. 4, Vista - Colburn and on to Hillyard, no time)
+# stops on flag to pick up revenue passengers for points south of Shelby or east of Havre where No. 4 is scheduled to stop: no time, left out. Psi (No. 3, No. 4 at Sand Point)
+# flag stop for revenue passengers: entered f. Bus service between Sand Point and Farragut, Idaho: not entered.
+#train col=No27 num=27 dir=down days=daily kind=passenger note="Great Northern No. 27, daily, coach passengers only: Havre 3.30 a.m. to Sand Point 4.05 p.m. Pacific time (Official Guide, May 1948, Table 4, February 8, 1948)." links="from Table 3; continued on Table 5 (wa_gn_t005a.csv)"
+#train col=No1 num=1 dir=down days=daily kind=passenger name="The New Empire Builder" note="Great Northern No. 1, The New Empire Builder, daily: Havre 12.05 p.m. to Troy 8.15 p.m. Pacific time (Official Guide, May 1948, Table 4, February 8, 1948)." links="from Table 3; continued on Table 5"
+#train col=No3 num=3 dir=down days=daily kind=passenger name="The Oriental Limited" note="Great Northern No. 3, The Oriental Limited, daily: Havre 8.10 a.m. to Sand Point 7.15 p.m. Pacific time (Official Guide, May 1948, Table 4, February 8, 1948)." links="from Table 3; continued on Table 5"
+#train col=No2 num=2 dir=up days=daily kind=passenger name="The New Empire Builder" note="Great Northern No. 2, The New Empire Builder, daily: Troy 2.55 a.m. Pacific time to Havre 12.55 p.m. (Official Guide, May 1948, Table 4, February 8, 1948)." links="from Table 5; continued on Table 3"
+#train col=No4 num=4 dir=up days=daily kind=passenger name="The Oriental Limited" note="Great Northern No. 4, The Oriental Limited, daily: Sand Point 9.28 a.m. Pacific time to Havre 10.15 p.m. (Official Guide, May 1948, Table 4, February 8, 1948)." links="from Table 5; continued on Table 3"
+#train col=No28 num=28 dir=up days=daily kind=passenger note="Great Northern No. 28, daily, coach passengers only: Sand Point 11.30 a.m. Pacific time to Havre 2.35 a.m. (Official Guide, May 1948, Table 4, February 8, 1948)." links="from Table 5; continued on Table 3"
+mile,station,principal,prov,tz,No27,No1,No3,No2,No4,No28
+904,"Havre, Mont.",1,MT,M,ar 3.20a / lv 3.30a,ar 12.05p / lv 12.05p,ar 8.00a / lv 8.10a,ar 12.55p,ar 10.15p,ar 2.35a
+908,"Pacific Junction, Mont.",0,MT,M,f3.38a,,,,,f2.27a
+914,"Burnham, Mont.",0,MT,M,,,,,,f2.18a
+919,"Fresno, Mont.",0,MT,M,,,,,,f2.11a
+924,"Kremlin, Mont.",0,MT,M,f4.02a,,,,,f2.03a
+934,"Gildford, Mont.",0,MT,M,f4.19a,,,,,f1.47a
+940,"Hingham, Mont.",0,MT,M,f4.30a,,,,,f1.36a
+946,"Rudyard, Mont.",0,MT,M,f4.41a,,,,,f1.25a
+952,"Inverness, Mont.",0,MT,M,f4.52a,,,,,f1.14a
+956,"Joplin, Mont.",0,MT,M,f4.58a,,,,,f1.07a
+959,"Buelow, Mont.",0,MT,M,,,,,,f1.02a
+966,"Chester, Mont.",1,MT,M,5.15a,,f9.30a,,f8.57p,12.50a
+971,"Tiber, Mont.",0,MT,M,,,,,,f12.38a
+979,"Lothair, Mont.",0,MT,M,f5.36a,,,,,f12.27a
+985,"Galata, Mont.",0,MT,M,f5.46a,,,,,f12.16a
+991,"Devon, Mont.",0,MT,M,f5.57a,,,,,f12.05a
+1000,"Dunkirk, Mont.",0,MT,M,f6.11a,,,,,f11.50p
+1009,"Shelby, Mont.",1,MT,M,6.35a,2.10p,10.30a,10.45a,8.00p,11.35p
+1022,"Ethridge, Mont.",0,MT,M,f6.53a,,,,,f11.13p
+1033,"Cut Bank, Mont.",1,MT,M,7.15a,2.45p,11.05a,10.16a,7.23p,10.55p
+1039,"Gunsight, Mont.",0,MT,M,,,,,,f10.43p
+1043,"Sundance, Mont.",0,MT,M,,,,,,f10.38p
+1048,"Fort Piegan, Mont.",0,MT,M,,,,,,f10.31p
+1053,"Meriwether, Mont.",0,MT,M,,,,,,f10.24p
+1059,"Blackfoot, Mont.",0,MT,M,f7.55a,,,,,f10.15p
+1067,"Browning, Mont.",1,MT,M,8.11a,,12.01p,,6.40p,10.05p
+1072,"Triple Divide, Mont.",0,MT,M,,,,,,f9.56p
+1080,"Glacier Park, Mont.",1,MT,M,f8.39a,,12.25p,,6.17p,f9.39p
+1083,"Bison, Mont.",0,MT,M,,,,,,f9.32p
+1086,"Rising Wolf, Mont.",0,MT,M,,,,,,f9.27p
+1092,"Summit, Mont.",0,MT,M,f9.16a,,,,,f9.15p
+1099,"Blacktail, Mont.",0,MT,M,,,,,,f8.53p
+1102,"Singleshot, Mont.",0,MT,M,,,,,,f8.43p
+1106,"Nimrod, Mont.",0,MT,M,,,,,,f8.31p
+1110,"Essex, Mont.",0,MT,M,9.51a,,,,,8.20p
+1116,"Pinnacle, Mont.",0,MT,M,,,,,,f8.08p
+1121,"Hidden Lake, Mont.",0,MT,M,,,,,,f7.58p
+1126,"Red Eagle, Mont.",0,MT,M,f10.18a,,,,,f7.47p
+1137,"Belton, Mont.",1,MT,M,f10.37a,,2.10p,,4.25p,f7.28p
+1145,"Coram, Mont.",0,MT,M,f10.50a,,,,,f7.14p
+1152,"Columbia Falls, Mont.",1,MT,M,,,2.38p,,4.00p,
+1160,"Whitefish, Mont.",1,MT,M,ar 11.15a / lv 11.20a,ar 6.15p / lv 6.15p,ar 2.55p / lv 3.05p,ar 6.55a / lv 6.55a,ar 3.30p / lv 3.40p,ar 6.40p / lv 6.50p
+1165,"Vista, Mont.",0,MT,M,f11.31a,,,,,f6.26p
+1171,"Lupfer, Mont.",0,MT,M,f11.39a,,,,,f6.07p
+1177,"Olney, Mont.",0,MT,M,f11.48a,,,,,f5.57p
+1183,"Radnor, Mont.",0,MT,M,f11.57a,,,,,f5.47p
+1190,"Stryker, Mont.",0,MT,M,f12.08p,,,,,f5.36p
+1196,"Trego, Mont.",0,MT,M,f12.17p,,,,,f5.26p
+1200,"Fortine, Mont.",0,MT,M,f12.25p,,,,,f5.17p
+1206,"Tobacco, Mont.",0,MT,M,f12.33p,,,,,f5.06p
+1212,"Eureka, Mont.",1,MT,M,12.44p,,,,,4.56p
+1221,"Rexford, Mont.",1,MT,M,12.57p,,,,,4.40p
+1232,"Stonehill, Mont.",0,MT,M,f1.12p,,,,,f4.20p
+1243,"Ural, Mont.",0,MT,M,f1.28p,,,,,f4.02p
+1248,"Volcour, Mont.",0,MT,M,f1.37p,,,,,f3.54p
+1252,"Warland, Mont.",0,MT,M,f1.45p,,,,,f3.45p
+1256,"Yarnell, Mont.",0,MT,M,f1.52p,,,,,f3.40p
+1263,"Jennings, Mont.",0,MT,M,f2.07p,,,,,f3.27p
+1269,"Ripley, Mont.",0,MT,M,f2.16p,,,,,f3.17p
+1276,"Libby, Mont.",1,MT,M,2.30p,,f5.57p,,f12.42p,3.05p
+1287,"Kootenai Falls, Mont.",0,MT,M,,,,,,f2.48p
+1294,"Troy, Mont.",1,MT,P,ar 2.00p / lv 2.05p,ar 8.15p / lv 8.15p,ar 5.25p / lv 5.30p,ar 2.55a / lv 2.55a,ar 11.10a / lv 11.15a,ar 1.30p / lv 1.35p
+1301,"Yakt, Mont.",0,MT,P,,,,,,f1.17p
+1308,"Leonia, Idaho",0,ID,P,f2.30p,,,,,f1.04p
+1315,"Katka, Idaho",0,ID,P,,,,,,f12.51p
+1321,"Crossport, Idaho",0,ID,P,,,,,,f12.38p
+1325,"Bonner's Ferry, Idaho",1,ID,P,3.05p,,f6.30p,,f10.13a,12.30p
+1330,"Moravia, Idaho",0,ID,P,f3.15p,,,,,f12.19p
+1339,"Naples, Idaho",0,ID,P,f3.27p,,,,,f12.08p
+1344,"Elmira, Idaho",0,ID,P,f3.40p,,,,,f11.56a
+1351,"Colburn, Idaho",0,ID,P,f3.51p,,,,,f11.45a
+1354,"Sand Point, Idaho",1,ID,P,4.05p,,f7.15p,,f9.28a,11.30a
+1368,"Wrencoe, Idaho",0,ID,P,f4.18p,,,,,f11.15a
+1373,"Laclede, Idaho",0,ID,P,f4.26p,,,,,f11.08a
+1379,"Thama, Idaho",0,ID,P,f4.33p,,,,,f11.01a
+1381,"Priest River, Idaho",1,ID,P,4.41p,,7.45p,,,10.54a

@@ -1,0 +1,104 @@
+# Great Northern Railway, Table 2, Main Line via St. Cloud, Fargo and New Rockford: St. Paul - Minneapolis - St. Cloud - Fargo - New Rockford - Minot (Official Guide, May 1948,
+# page 1068; table dated February 8, 1948; Brendan's images, 27 Nov 2026; scans in the private repo, scans/og1948_gn/p1068_t002_a/b/c.png). CENTRAL TIME (standard). Miles as
+# printed from St. Paul (by St. Cloud). NOT BUILT YET. Main line continued on Table 3 (gn_t003.csv).
+# Nos. 9, 3 (west) and 4, 10 (east) are printed here only at St. Paul, Minneapolis, Moorhead, Fargo, Surrey and Minot ("via Willmar, see Table 1"; "to / from Minot, via Grand
+# Forks"): they are in gn_t001.csv and left out here (Table 2 prints No. 9 Moorhead 5.53 a.m., Table 1 5.55 a.m.: Table 1 kept). Nos. 1, 27 (west) and 2, 28 (east) run
+# St. Paul - Fargo via Willmar (Table 1) and Fargo - New Rockford - Minot here: only that part is entered here.
+# Nos. 29 and 7 (The Winnipeg Limited) leave the main line at Barnesville for Grand Forks / Winnipeg via Crookston (Table 7); Nos. 8 (from Winnipeg) and 30 (from Grand Forks) join it
+# there. Note (box sign on No. 7): The New Empire Builder leaving Chicago at 1.00 p.m., and arriving at St. Paul 7.45 p.m., connects with the Winnipeg Limited, train No. 7,
+# for Winnipeg and Western Canada.
+# No. 209: Fargo dagger 6.30 a.m., Pinkham, Prosper, Vance, Casselton ar 7.42 / lv 7.45 a.m., then "8.30 a.m." in the Nolan row and "To Devils Lake, see Table 12": entered to
+# Nolan as read (UNSURE: the 8.30 a.m. may belong to the Table 12 line; Table 1's No. 209 leaves Devils Lake 1.40 p.m. for St. John). Casselton is printed between Vance and
+# Nolan with no mileage (arr / lve rows; mile 268 entered as an estimate): only Nos. 209 and 200 call there.
+# No. 12: the sign before Fargo 10.00 a.m. is blotted (read as daily: CHECK); Moorhead "?04" blotted, read 10.04 a.m.; Brandon 12.04 p.m. carries the sign "stops to receive revenue
+# passengers for Minneapolis, St. Paul or east thereof" (entered f). Where No. 12 comes from (Winnipeg? Grand Forks?) is not printed in the parts supplied.
+# Signs: * daily; dagger daily except Sunday; f flag stop; square (No. 29, Brandon): will stop on flag to discharge revenue passengers from Minneapolis, St. Paul or east thereof
+# (entered f); z (No. 199, New Rockford): arrives 11.15 a.m. (leaves 1.00 p.m.). Rail-auto service signs at St. Paul and Minneapolis not entered.
+#train col=No29 num=29 dir=down days=daily kind=passenger note="Great Northern No. 29, daily: St. Paul 9.50 p.m. by St. Cloud to Barnesville 4.35 a.m., on to Grand Forks via Crookston (Table 7) (Official Guide, May 1948, Table 2, February 8, 1948)." links="continues Barnesville - Crookston - Grand Forks, Table 7"
+#train col=No7 num=7 dir=down days=daily kind=passenger name="The Winnipeg Limited" note="Great Northern No. 7, The Winnipeg Limited, daily: St. Paul 8.02 p.m. by St. Cloud to Barnesville 1.40 a.m., on to Winnipeg via Crookston (Table 7); connects at St. Paul with The New Empire Builder from Chicago (Official Guide, May 1948, Table 2, February 8, 1948)." links="continues Barnesville - Crookston - Winnipeg, Table 7; connection from No. 1 at St. Paul"
+#train col=No11 num=11 dir=down days=daily kind=passenger note="Great Northern No. 11, daily: St. Paul 8.30 a.m. by St. Cloud to Fargo 3.08 p.m. (Official Guide, May 1948, Table 2, February 8, 1948)."
+#train col=No199 num=199 dir=down days="ex Sun" kind=passenger note="Great Northern No. 199, daily except Sunday: Fargo 6.40 a.m. by New Rockford (11.15 a.m. - 1.00 p.m.) to Minot 6.30 p.m. (Official Guide, May 1948, Table 2, February 8, 1948)."
+#train col=No209 num=209 dir=down days="ex Sun" kind=passenger note="Great Northern No. 209, daily except Sunday: Fargo 6.30 a.m., Casselton 7.42 - 7.45 a.m., Nolan 8.30 a.m., on to Devils Lake (Table 12) (Official Guide, May 1948, Table 2, February 8, 1948)." links="continues to Devils Lake, Table 12; Devils Lake - Church's Ferry - St. John as No. 209 (Tables 1, 24)"
+#train col=No27 num=27 dir=down days=daily kind=passenger note="Great Northern No. 27, daily, coach passengers only: Fargo 2.45 p.m. by New Rockford to Minot 7.05 p.m.; St. Paul - Fargo via Willmar, Table 1 (Official Guide, May 1948, Table 2, February 8, 1948)." links="St. Paul - Fargo in gn_t001.csv"
+#train col=No1 num=1 dir=down days=daily kind=passenger name="The New Empire Builder" note="Great Northern No. 1, The New Empire Builder, daily: Fargo 1.00 a.m. by New Rockford to Minot 4.50 a.m.; St. Paul - Fargo via Willmar, Table 1 (Official Guide, May 1948, Table 2, February 8, 1948)." links="St. Paul - Fargo in gn_t001.csv; continued on Table 3"
+#train col=No8 num=8 dir=up days=daily kind=passenger name="The Winnipeg Limited" note="Great Northern No. 8, The Winnipeg Limited, daily: from Winnipeg via Crookston (Table 7), Barnesville 1.40 a.m. by St. Cloud to St. Paul 8.00 a.m. (Official Guide, May 1948, Table 2, February 8, 1948)." links="from Winnipeg via Crookston, Table 7"
+#train col=No12 num=12 dir=up days=daily kind=passenger note="Great Northern No. 12: Fargo 10.00 a.m. by St. Cloud to St. Paul 4.15 p.m. (Official Guide, May 1948, Table 2, February 8, 1948; the day sign at Fargo is blotted)."
+#train col=No200 num=200 dir=up days="ex Sun" kind=passenger note="Great Northern No. 200, daily except Sunday: Minot 6.15 a.m. by New Rockford and Casselton to Fargo 7.00 p.m. (Official Guide, May 1948, Table 2, February 8, 1948)."
+#train col=No30 num=30 dir=up days=daily kind=passenger note="Great Northern No. 30, daily: from Grand Forks via Crookston (Table 7), Barnesville 1.57 p.m. by St. Cloud to St. Paul 9.05 p.m. (Official Guide, May 1948, Table 2, February 8, 1948)." links="from Grand Forks via Crookston, Table 7"
+#train col=No28 num=28 dir=up days=daily kind=passenger note="Great Northern No. 28, daily, coach passengers only: Minot 2.40 p.m. by New Rockford to Fargo 8.50 p.m.; on to St. Paul via Willmar, Table 1 (Official Guide, May 1948, Table 2, February 8, 1948)." links="Fargo - St. Paul in gn_t001.csv"
+#train col=No2 num=2 dir=up days=daily kind=passenger name="The New Empire Builder" note="Great Northern No. 2, The New Empire Builder, daily: Minot 10.10 p.m. by New Rockford to Fargo 1.55 a.m.; on to St. Paul via Willmar, Table 1 (Official Guide, May 1948, Table 2, February 8, 1948)." links="from Table 3; Fargo - St. Paul in gn_t001.csv"
+mile,station,principal,prov,tz,No29,No7,No11,No199,No209,No27,No1,No8,No12,No200,No30,No28,No2
+0,"St. Paul, Minn.",1,MN,C,lv 9.50p,lv 8.02p,lv 8.30a,,,,,ar 8.00a,ar 4.15p,,ar 9.05p,,
+11,"Minneapolis, Minn.",1,MN,C,ar 10.15p / lv 10.25p,ar 8.27p / lv 8.32p,ar 8.53a / lv 8.58a,,,,,ar 7.30a / lv 7.35a,ar 3.45p / lv 3.50p,,ar 8.30p / lv 8.40p,,
+17,"Robbinsdale, Minn.",0,MN,C,,,f9.13a,,,,,,,,f8.15p,,
+24,"Osseo, Minn.",0,MN,C,,,f9.25a,,,,,,,,8.02p,,
+28,"Maple Grove, Minn.",0,MN,C,,,f9.30a,,,,,,,,f7.50p,,
+33,"Rogers, Minn.",0,MN,C,,,f9.36a,,,,,,,,f7.42p,,
+39,"Albertville, Minn.",0,MN,C,,,f9.44a,,,,,,,,f7.31p,,
+47,"Monticello, Minn.",0,MN,C,,,9.55a,,,,,,2.49p,,7.21p,,
+55,"Enfield, Minn.",0,MN,C,,,f10.05a,,,,,,,,f7.11p,,
+57,"Hasty, Minn.",0,MN,C,,,f10.08a,,,,,,,,f7.05p,,
+62,"Clearwater, Minn.",0,MN,C,,,10.16a,,,,,,,,6.56p,,
+75,"St. Cloud, Minn.",1,MN,C,12.15a,10.05p,10.40a,,,,,5.55a,2.15p,,6.40p,,
+82,"St. Joseph, Minn.",0,MN,C,,,10.49a,,,,,,,,6.16p,,
+84,"Collegeville, Minn.",0,MN,C,,,f10.53a,,,,,,,,6.10p,,
+90,"Avon, Minn.",0,MN,C,,,11.01a,,,,,,,,6.01p,,
+96,"Albany, Minn.",0,MN,C,,,11.10a,,,,,,,,5.49p,,
+102,"Freeport, Minn.",0,MN,C,,,11.20a,,,,,,,,5.37p,,
+108,"Melrose, Minn.",0,MN,C,1.06a,,11.31a,,,,,,1.16p,,5.26p,,
+116,"Sauk Centre, Minn.",1,MN,C,1.30a,11.04p,11.45a,,,,,4.42a,1.05p,,5.10p,,
+124,"West Union, Minn.",0,MN,C,,,f11.56a,,,,,,,,f4.48p,,
+130,"Osakis, Minn.",0,MN,C,1.52a,,12.06p,,,,,,12.44p,,4.38p,,
+136,"Nelson, Minn.",0,MN,C,,,12.15p,,,,,,,,4.26p,,
+141,"Alexandria, Minn.",1,MN,C,2.11a,11.39p,12.25p,,,,,3.55a,12.25p,,4.16p,,
+148,"Garfield, Minn.",0,MN,C,,,12.40p,,,,,,,,3.58p,,
+154,"Brandon, Minn.",0,MN,C,f2.39a,,12.48p,,,,,,f12.04p,,3.47p,,
+159,"Evansville, Minn.",0,MN,C,2.51a,,12.56p,,,,,,11.57a,,3.38p,,
+163,"Melby, Minn.",0,MN,C,,,f1.03p,,,,,,,,3.23p,,
+168,"Ashby, Minn.",0,MN,C,,,1.10p,,,,,,,,3.16p,,
+175,"Dalton, Minn.",0,MN,C,,,1.20p,,,,,,,,3.04p,,
+186,"Fergus Falls, Minn.",1,MN,C,3.37a,12.47a,1.35p,,,,,2.32a,11.20a,,2.45p,,
+195,"Carlisle, Minn.",0,MN,C,,,f1.46p,,,,,,,,f2.28p,,
+203,"Rothsay, Minn.",0,MN,C,,,1.57p,,,,,,,,2.17p,,
+210,"Lawndale, Minn.",0,MN,C,,,f2.07p,,,,,,,,f2.07p,,
+217,"Barnesville, Minn.",1,MN,C,ar 4.35a,ar 1.40a,2.22p,,,,,lv 1.40a,10.39a,,lv 1.57p,,
+225,"Baker, Minn.",0,MN,C,,,2.35p,,,,,,10.26a,,,,
+232,"Sabin, Minn.",0,MN,C,,,2.45p,,,,,,10.17a,,,,
+235,"Ruthruff, Minn.",0,MN,C,,,f2.50p,,,,,,,,,,
+241,"Moorhead, Minn.",1,MN,C,,,3.03p,,,,,,10.04a,,,,
+242,"Fargo, N. Dak.",1,ND,C,,,ar 3.08p,lv 6.40a,lv 6.30a,lv 2.45p,lv 1.00a,,lv 10.00a,ar 7.00p,,ar 8.50p,ar 1.55a
+248,"Pinkham, N. Dak.",0,ND,C,,,,f6.55a,f6.45a,,,,,f6.30p,,,
+254,"Prosper, N. Dak.",0,ND,C,,,,f7.08a,6.58a,,,,,f6.15p,,,
+264,"Vance, N. Dak.",0,ND,C,,,,f7.30a,7.20a,,,,,5.50p,,,
+268,"Casselton, N. Dak.",1,ND,C,,,,,ar 7.42a / lv 7.45a,,,,,ar 5.20p / lv 5.30p,,,
+282,"Nolan, N. Dak.",0,ND,C,,,,8.05a,8.30a,,,,,4.20p,,,
+289,"Walden, N. Dak.",0,ND,C,,,,8.15a,,,,,,4.05p,,,
+294,"Pillsbury, N. Dak.",0,ND,C,,,,8.30a,,,,,,3.51p,,,
+302,"Luverne, N. Dak.",0,ND,C,,,,8.45a,,,,,,3.30p,,,
+308,"Karnak, N. Dak.",0,ND,C,,,,8.59a,,,,,,3.10p,,,
+314,"Hannaford, N. Dak.",1,ND,C,,,,9.20a,,,,,,2.55p,,6.42p,
+320,"Revere, N. Dak.",0,ND,C,,,,9.38a,,,,,,2.30p,,,
+328,"Sutton, N. Dak.",0,ND,C,,,,9.50a,,,,,,2.20p,,,
+335,"Glenfield, N. Dak.",0,ND,C,,,,10.05a,,,,,,2.00p,,,
+341,"Juanita, N. Dak.",0,ND,C,,,,10.20a,,,,,,1.40p,,,
+348,"Grace City, N. Dak.",0,ND,C,,,,10.35a,,,,,,1.25p,,,
+354,"Brantford, N. Dak.",0,ND,C,,,,10.50a,,,,,,1.10p,,,
+360,"Dundas, N. Dak.",0,ND,C,,,,f11.01a,,,,,,f12.55p,,,
+366,"New Rockford, N. Dak.",1,ND,C,,,,ar 11.15a / lv 1.00p,,5.09p,3.02a,,,12.40p,,5.35p,11.48p
+373,"Munster, N. Dak.",0,ND,C,,,,f1.15p,,,,,,f10.45a,,,
+378,"Bremen, N. Dak.",0,ND,C,,,,1.32p,,,,,,10.32a,,,
+384,"Hamberg, N. Dak.",0,ND,C,,,,1.48p,,,,,,10.14a,,,
+390,"Heimdal, N. Dak.",0,ND,C,,,,2.05p,,,,,,9.56a,,,
+397,"Wellsburg, N. Dak.",0,ND,C,,,,2.25p,,,,,,9.38a,,,
+403,"Selz, N. Dak.",0,ND,C,,,,2.45p,,,,,,9.20a,,,
+410,"Clifton, N. Dak.",0,ND,C,,,,3.05p,,,,,,9.01a,,,
+419,"Aylmer, N. Dak.",0,ND,C,,,,3.28p,,,,,,8.45a,,,
+424,"Norfolk, N. Dak.",0,ND,C,,,,f3.38p,,,,,,f8.13a,,,
+428,"Guthrie, N. Dak.",0,ND,C,,,,3.49p,,,,,,8.05a,,,
+434,"Rangeley, N. Dak.",0,ND,C,,,,4.02p,,,,,,7.48a,,,
+441,"Karlsruhe, N. Dak.",0,ND,C,,,,4.22p,,,,,,7.37a,,,
+447,"Verendrye, N. Dak.",0,ND,C,,,,4.45p,,,,,,7.20a,,,
+453,"Simcoe, N. Dak.",0,ND,C,,,,5.05p,,,,,,7.03a,,,
+459,"Genoa, N. Dak.",0,ND,C,,,,f5.25p,,,,,,f6.47a,,,
+467,"Surrey, N. Dak.",0,ND,C,,,,5.50p,,,,,,6.35a,,,
+475,"Minot, N. Dak.",1,ND,C,,,,ar 6.30p,,ar 7.05p,ar 4.50a,,,lv 6.15a,,lv 2.40p,lv 10.10p

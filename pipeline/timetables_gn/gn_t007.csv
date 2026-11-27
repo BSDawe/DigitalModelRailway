@@ -1,0 +1,41 @@
+# Great Northern Railway, Table 7, St. Paul, Minneapolis, Barnesville, Crookston and Winnipeg (Official Guide, May 1948, page 1070; table dated February 8, 1948; Brendan's
+# image, 27 Nov 2026; scan in the private repo, scans/og1948_gn/p1070_t007.png). CENTRAL TIME. Miles from St. Paul. NOT BUILT YET.
+# Entered here: Nos. 29 / 30 (St. Paul - Crookston - Grand Forks) from Barnesville (St. Paul - Barnesville is in gn_t002.csv, which has their full station list), and the locals
+# Nos. 131 / 132 (Crookston - Noyes). Nos. 7 / 8, The Winnipeg Limited, are already built from the GN public timetable of the same date (sk_gn_t007.csv); this page agrees with it
+# (No. 7 St. Paul 8.02 p.m. - Winnipeg 9.00 a.m.; No. 8 Winnipeg 7.00 p.m. - St. Paul 8.00 a.m.).
+# Grand Forks (324) is printed as a separate arrival row after Crookston (Crookston - Grand Forks 25 mi, no stations between). St. Vincent (390) is the 131 / 132 locals' station.
+# This page also prints No. 30 at Albertville f7.31, Monticello 7.21, Clearwater 6.56 p.m., as Table 2 does.
+# Signs: * daily; dagger daily except Sunday; f flag stop.
+#train col=No29 num=29 dir=down days=daily kind=passenger note="Great Northern No. 29, daily: St. Paul 9.50 p.m., Barnesville 4.35 a.m., Crookston 7.15 a.m., Grand Forks 7.55 a.m. (Official Guide, May 1948, Table 7, February 8, 1948)." links="St. Paul - Barnesville in gn_t002.csv"
+#train col=No131 num=131 dir=down days="ex Sun" kind=passenger note="Great Northern No. 131, daily except Sunday: Crookston 9.05 a.m. to Noyes 1.20 p.m. (Official Guide, May 1948, Table 7, February 8, 1948)."
+#train col=No132 num=132 dir=up days="ex Sun" kind=passenger note="Great Northern No. 132, daily except Sunday: Noyes 3.30 p.m. to Crookston 6.40 p.m. (Official Guide, May 1948, Table 7, February 8, 1948)."
+#train col=No30 num=30 dir=up days=daily kind=passenger note="Great Northern No. 30, daily: Grand Forks 11.00 a.m., Crookston 11.41 a.m., Barnesville 1.57 p.m., St. Paul 9.05 p.m. (Official Guide, May 1948, Table 7, February 8, 1948)." links="Barnesville - St. Paul in gn_t002.csv"
+mile,station,principal,prov,tz,No29,No131,No132,No30
+217,"Barnesville, Minn.",1,MN,C,ar 4.35a / lv 4.35a,,,ar 1.57p / lv 1.57p
+225,"Downer, Minn.",0,MN,C,f4.48a,,,1.38p
+235,"Glyndon, Minn.",0,MN,C,5.06a,,,1.25p
+241,"Averill, Minn.",0,MN,C,f5.18a,,,f1.11p
+249,"Felton, Minn.",0,MN,C,5.31a,,,12.59p
+256,"Borup, Minn.",0,MN,C,5.44a,,,12.48p
+260,"Wheatville, Minn.",0,MN,C,f5.50a,,,f12.42p
+265,"Ada, Minn.",1,MN,C,6.02a,,,12.35p
+270,"Hadler, Minn.",0,MN,C,f6.10a,,,f12.24p
+275,"Lockhart, Minn.",0,MN,C,6.19a,,,12.17p
+282,"Beltrami, Minn.",0,MN,C,6.31a,,,12.07p
+288,"Greenview, Minn.",0,MN,C,f6.42a,,,f11.58a
+292,"Kittson, Minn.",0,MN,C,f6.51a,,,f11.52a
+299,"Crookston, Minn.",1,MN,C,ar 7.15a,lv 9.05a,ar 6.40p,lv 11.41a
+324,"Grand Forks, N. Dak.",1,ND,C,ar 7.55a,,,lv 11.00a
+305,"Shirley, Minn.",0,MN,C,,f9.23a,f6.12p,
+313,"Euclid, Minn.",0,MN,C,,9.36a,6.00p,
+321,"Angus, Minn.",0,MN,C,,9.52a,5.45p,
+329,"Warren, Minn.",1,MN,C,,10.13a,5.31p,
+339,"Argyle, Minn.",0,MN,C,,10.36a,5.14p,
+348,"Stephen, Minn.",0,MN,C,,10.59a,4.59p,
+356,"Donaldson, Minn.",0,MN,C,,11.19a,4.44p,
+361,"Kennedy, Minn.",0,MN,C,,11.33a,4.36p,
+370,"Hallock, Minn.",1,MN,C,,11.59a,4.20p,
+376,"Northcote, Minn.",0,MN,C,,12.15p,4.09p,
+382,"Humboldt, Minn.",0,MN,C,,12.33p,3.57p,
+390,"St. Vincent, Minn.",0,MN,C,,12.59p,3.40p,
+390,"Noyes, Minn.",1,MN,C,,ar 1.20p,lv 3.30p,
