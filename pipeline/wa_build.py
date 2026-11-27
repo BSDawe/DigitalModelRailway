@@ -41,7 +41,7 @@ SPECS = [
    places={'Chehalis': (-122.97095, 46.65935)}, force=[('Centralia', 'Chehalis')]),    # the table counts its miles from Chehalis (Centralia and Chehalis both 0)
  # Great Northern
  L('gn_main', 'gnw', 'gn', ['wa_gn_t005a.csv'], ['to Seattle', 'to Spokane'], 'Newport – Spokane – Wenatchee – Everett – Seattle', 'GN Table 5',
-   names={'No1': 'The Empire Builder', 'No2': 'The Empire Builder', 'No3': 'The Oriental Limited', 'No4': 'The Oriental Limited',
+   names={'No1': 'The New Empire Builder', 'No2': 'The New Empire Builder', 'No3': 'The Oriental Limited', 'No4': 'The Oriental Limited',
           'No5': 'The Cascadian', 'No6': 'The Cascadian', 'No27': 'The Fast Mail', 'No28': 'The Fast Mail'}),   # names (Brendan, 19 October 2026)
  L('gn_043', 'gnw', 'gn', ['wa_gn_t043.csv'], ['to Mansfield', 'to Wenatchee'], 'Wenatchee – Mansfield', 'GN Table 43'),
  L('gn_045', 'gnw', 'gn', ['wa_gn_t045.csv'], ['to Oroville', 'to Wenatchee'], 'Wenatchee – Chelan – Omak – Oroville', 'GN Table 45'),
@@ -52,7 +52,7 @@ SPECS = [
  # (Brendan, 9 October 2026), the same trains as the Seattle sections east of Spokane; the SP&S draws the track
  L('sps_gn', 'gnw', 'sps+np+gn@spk', ['wa_sps_t001.csv'], ['to Pasco and Portland', 'to Spokane'], 'Spokane – Pasco – Vancouver – Portland (Portland sections of GN Nos. 1 to 4, over the SP&S)',
    'SP&S Table 1', cols=['No1', 'No2', 'No3', 'No4'], places=SPS_PLACES, force=[('Spokane (N. P. Station)', 'Spokane (G. N. Station)')],
-   names={'No1': 'The Empire Builder', 'No2': 'The Empire Builder', 'No3': 'The Oriental Limited', 'No4': 'The Oriental Limited'}),
+   names={'No1': 'The New Empire Builder', 'No2': 'The New Empire Builder', 'No3': 'The Oriental Limited', 'No4': 'The Oriental Limited'}),
  L('sps_004', 'sps', 'sps', ['wa_sps_t004.csv'], ['to Lyle', 'to Goldendale'], 'Goldendale – Lyle', 'SP&S Table 4'),
  # Union Pacific
  L('up_main', 'up', 'up+np', [('wa_up_t056a.csv', 'Portland', 'Umatilla'), ('wa_up_t056c.csv', 'Umatilla', 'Spokane')], ['to Spokane', 'to Portland'],

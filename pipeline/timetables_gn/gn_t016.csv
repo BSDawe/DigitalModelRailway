@@ -6,35 +6,28 @@
 # Signs (page 1072 key): * daily; dagger daily except Sunday; double dagger daily except Saturday; pilcrow daily except Monday; a Monday and Thursday; k Saturday only;
 # natural sign Monday, Wednesday and Friday; heavy dot Tuesday, Thursday and Saturday; Psi mixed train; f flag stop.
 #train col=No191 num=191 dir=down days="ex Sun" kind=passenger note="Great Northern No. 191, daily except Sunday: Breckenridge 4.45 a.m. by Hankinson and Rutland to Aberdeen 9.15 a.m. (Official Guide, May 1948, Table 16, February 8, 1948)." links="St. Paul sleeper from No. 9"
-#train col=No337 num=337 dir=down days="ex Sun" kind=passenger note="Great Northern No. 337, daily except Sunday: Rutland 7.40 a.m. by Ellendale to Forbes 10.25 a.m. (Official Guide, May 1948, Table 16, February 8, 1948)."
 #train col=No192 num=192 dir=up days="ex Sun" kind=passenger note="Great Northern No. 192, daily except Sunday: Aberdeen 6.30 a.m. by Rutland and Hankinson to Breckenridge 11.05 a.m. (Official Guide, May 1948, Table 16, February 8, 1948)." links="St. Paul sleeper on No. 10"
-#train col=No338 num=338 dir=up days="ex Sun" kind=passenger note="Great Northern No. 338, daily except Sunday: Forbes 10.40 a.m. by Ellendale to Rutland 1.25 p.m. (Official Guide, May 1948, Table 16, February 8, 1948)."
-mile,station,principal,prov,tz,No191,No337,No192,No338
-0,"Breckenridge, Minn.",1,MN,C,lv 4.45a,,ar 11.05a,
-8,"Doran, Minn.",0,MN,C,5.00a,,f10.52a,
-15,"Campbell, Minn.",1,MN,C,5.11a,,10.40a,
-25,"Kutzer, Minn.",0,MN,C,f5.35a,,f10.13a,
-29,"Fairmount, N. Dak.",0,ND,C,5.44a,,10.05a,
-31,"De Villo, N. Dak.",0,ND,C,f5.48a,,f9.58a,
-35,"Sonora, N. Dak.",0,ND,C,f5.57a,,f9.50a,
-43,"Hankinson, N. Dak.",1,ND,C,6.12a,,9.36a,
-50,"Stiles, N. Dak.",0,ND,C,f6.25a,,f9.18a,
-55,"Lidgerwood, N. Dak.",1,ND,C,6.37a,,9.08a,
-61,"Geneseo, N. Dak.",0,ND,C,6.50a,,8.53a,
-66,"Cayuga, N. Dak.",0,ND,C,7.00a,,8.42a,
-72,"Rutland, N. Dak.",1,ND,C,7.15a,lv 7.40a,8.30a,ar 1.25p
-82,"Havana, N. Dak.",0,ND,C,7.35a,,8.12a,
-88,"Kidder, S. Dak.",0,SD,C,7.47a,,8.00a,
-98,"West Britton, S. Dak.",0,SD,C,8.00a,,7.45a,
-103,"Amherst, S. Dak.",0,SD,C,8.10a,,7.35a,
-109,"Claremont, S. Dak.",1,SD,C,8.22a,,7.23a,
-114,"Huffton, S. Dak.",0,SD,C,f8.31a,,7.13a,
-120,"Putney, S. Dak.",0,SD,C,8.40a,,7.03a,
-124,"Tacoma Park, S. Dak.",0,SD,C,f8.46a,,6.55a,
-128,"Plana, S. Dak.",0,SD,C,f8.52a,,f6.48a,
-137,"Aberdeen, S. Dak.",1,SD,C,ar 9.15a,,lv 6.30a,
-91,"Straubville, N. Dak.",0,ND,C,,8.30a,,12.35p
-108,"Guelph, N. Dak.",0,ND,C,,9.08a,,11.55a
-115,"Silver Leaf, N. Dak.",0,ND,C,,f9.23a,,f11.35a
-122,"Ellendale, N. Dak.",1,ND,C,,9.50a,,11.15a
-136,"Forbes, N. Dak.",1,ND,C,,ar 10.25a,,lv 10.40a
+mile,station,principal,prov,tz,No191,No192
+0,"Breckenridge, Minn.",1,MN,C,lv 4.45a,ar 11.05a
+8,"Doran, Minn.",0,MN,C,5.00a,f10.52a
+15,"Campbell, Minn.",1,MN,C,5.11a,10.40a
+25,"Kutzer, Minn.",0,MN,C,f5.35a,f10.13a
+29,"Fairmount, N. Dak.",0,ND,C,5.44a,10.05a
+31,"De Villo, N. Dak.",0,ND,C,f5.48a,f9.58a
+35,"Sonora, N. Dak.",0,ND,C,f5.57a,f9.50a
+43,"Hankinson, N. Dak.",1,ND,C,6.12a,9.36a
+50,"Stiles, N. Dak.",0,ND,C,f6.25a,f9.18a
+55,"Lidgerwood, N. Dak.",1,ND,C,6.37a,9.08a
+61,"Geneseo, N. Dak.",0,ND,C,6.50a,8.53a
+66,"Cayuga, N. Dak.",0,ND,C,7.00a,8.42a
+72,"Rutland, N. Dak.",1,ND,C,7.15a,8.30a
+82,"Havana, N. Dak.",0,ND,C,7.35a,8.12a
+88,"Kidder, S. Dak.",0,SD,C,7.47a,8.00a
+98,"West Britton, S. Dak.",0,SD,C,8.00a,7.45a
+103,"Amherst, S. Dak.",0,SD,C,8.10a,7.35a
+109,"Claremont, S. Dak.",1,SD,C,8.22a,7.23a
+114,"Huffton, S. Dak.",0,SD,C,f8.31a,7.13a
+120,"Putney, S. Dak.",0,SD,C,8.40a,7.03a
+124,"Tacoma Park, S. Dak.",0,SD,C,f8.46a,6.55a
+128,"Plana, S. Dak.",0,SD,C,f8.52a,f6.48a
+137,"Aberdeen, S. Dak.",1,SD,C,ar 9.15a,lv 6.30a

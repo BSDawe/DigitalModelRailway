@@ -1,7 +1,8 @@
 # Great Northern Railway, Table 4, Main Line continued: Havre - Shelby - Glacier Park - Whitefish - Troy - Bonner's Ferry - Sand Point (Official Guide, May 1948, page 1069; table
 # dated February 8, 1948; Brendan's images, 27 Nov 2026), and the first rows of Table 5 (page 1070), Sand Point - Priest River, Idaho (Brendan, 27 Nov 2026): wa_gn_t005a.csv
 # begins at Newport, Wash. MOUNTAIN TIME Havre - Kootenai Falls; PACIFIC TIME from Troy (the Troy row is entered in Pacific time: the printed Mountain times are an hour later).
-# Miles from St. Paul. NOT BUILT YET. Spokane and west: wa_gn_t005a.csv (Table 5, already transcribed); page 1070's Newport - Spokane rows agree with it.
+# Miles from St. Paul. Newport and Spokane rows added from wa_gn_t005a.csv (Table 5) so the trains join the Washington line: Nos. 27, 3, 4, 28 at Newport (the
+# Washington line begins there: its last Washington station, Brendan 27 Nov 2026); Nos. 1 / 2, which do not stop at Newport, at Spokane. Spokane and west: wa_gn_t005a.csv (Table 5, already transcribed); page 1070's Newport - Spokane rows agree with it.
 # Kalispell (1166, the end of the branch from Whitefish, Table 47; "d connects via Whitefish") is printed between Columbia Falls and Whitefish, as arrive / leave rows: No. 27 Kalispell
 # ar d12.35 p.m., lv d9.35 a.m.; No. 3 ar 3.08 p.m., lv *2.00 p.m.; No. 4 lv *3.25 p.m., ar 4.45 p.m.; No. 28 lv d5.20 p.m., ar d8.05 p.m. Not entered: Kalispell connections /
 # sections, to come with Table 47. Baltic (1030) has no times.
@@ -94,3 +95,5 @@ mile,station,principal,prov,tz,No27,No1,No3,No2,No4,No28
 1373,"Laclede, Idaho",0,ID,P,f4.26p,,,,,f11.08a
 1379,"Thama, Idaho",0,ID,P,f4.33p,,,,,f11.01a
 1381,"Priest River, Idaho",1,ID,P,4.41p,,7.45p,,,10.54a
+1388,"Newport, Wash.",1,WA,P,ar 4.55p,,f7.55p,,lv 8.48a,lv 10.40a
+1434,"Spokane, Wash.",1,WA,P,,ar 11.30p,,lv 11.30p,,

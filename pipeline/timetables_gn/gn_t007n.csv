@@ -1,0 +1,27 @@
+# Great Northern Railway, Table 7, St. Paul, Minneapolis, Barnesville, Crookston and Winnipeg (Official Guide, May 1948, page 1070; table dated February 8, 1948; Brendan's
+# image, 27 Nov 2026; scan in the private repo, scans/og1948_gn/p1070_t007.png). CENTRAL TIME. Miles from St. Paul. NOT BUILT YET.
+# Entered here: Nos. 29 / 30 (St. Paul - Crookston - Grand Forks) from Barnesville (St. Paul - Barnesville is in gn_t002.csv, which has their full station list), and the locals
+# Nos. 131 / 132 (Crookston - Noyes). Nos. 7 / 8, The Winnipeg Limited, are already built from the GN public timetable of the same date (sk_gn_t007.csv); this page agrees with it
+# (No. 7 St. Paul 8.02 p.m. - Winnipeg 9.00 a.m.; No. 8 Winnipeg 7.00 p.m. - St. Paul 8.00 a.m.).
+# Grand Forks (324) is printed as a separate arrival row after Crookston; Fisher 7.31 / f11.22, Mallory f7.40 / f11.13 and East Grand Forks 7.50 / 11.05 a.m. are from page 1071
+# (the Duluth - Grand Forks table, gn_duluth_gf.csv), miles from St. Paul by adding Crookston's 299. St. Vincent (390) is the 131 / 132 locals' station.
+# This page also prints No. 30 at Albertville f7.31, Monticello 7.21, Clearwater 6.56 p.m., as Table 2 does.
+# Signs: * daily; dagger daily except Sunday; f flag stop.
+# (Split from gn_t007.csv, 27 Nov 2026: the Crookston - Noyes locals, a line of their own.)
+#train col=No131 num=131 dir=down days="ex Sun" kind=passenger note="Great Northern No. 131, daily except Sunday: (from Fargo, Table 22) Crookston 9.05 a.m. to Noyes 1.20 p.m. (Official Guide, May 1948, Table 7, February 8, 1948)."
+#train col=No132 num=132 dir=up days="ex Sun" kind=passenger note="Great Northern No. 132, daily except Sunday: Noyes 3.30 p.m. to Crookston 6.40 p.m. (on to Fargo, Table 22) (Official Guide, May 1948, Table 7, February 8, 1948)."
+mile,station,principal,prov,tz,No131,No132
+299,"Crookston, Minn.",1,MN,C,lv 9.05a,ar 6.40p
+305,"Shirley, Minn.",0,MN,C,f9.23a,f6.12p
+313,"Euclid, Minn.",0,MN,C,9.36a,6.00p
+321,"Angus, Minn.",0,MN,C,9.52a,5.45p
+329,"Warren, Minn.",1,MN,C,10.13a,5.31p
+339,"Argyle, Minn.",0,MN,C,10.36a,5.14p
+348,"Stephen, Minn.",0,MN,C,10.59a,4.59p
+356,"Donaldson, Minn.",0,MN,C,11.19a,4.44p
+361,"Kennedy, Minn.",0,MN,C,11.33a,4.36p
+370,"Hallock, Minn.",1,MN,C,11.59a,4.20p
+376,"Northcote, Minn.",0,MN,C,12.15p,4.09p
+382,"Humboldt, Minn.",0,MN,C,12.33p,3.57p
+390,"St. Vincent, Minn.",0,MN,C,12.59p,3.40p
+390,"Noyes, Minn.",1,MN,C,ar 1.20p,lv 3.30p

@@ -9,7 +9,7 @@
 #train col=No372 num=372 dir=up days="ex Sun" kind=mixed note="Great Northern mixed train No. 372, daily except Sunday: Opheim 7.00 a.m. by Scobey, Plentywood and Bainville to Williston 5.35 p.m. (Official Guide, May 1948, Table 37, February 8, 1948)."
 #train col=No290 num=290 dir=up days="ex Sun" kind=passenger note="Great Northern No. 290, daily except Sunday: Scobey 1.20 p.m. by Plentywood and Bainville to Williston 5.50 p.m. (Official Guide, May 1948, Table 37, February 8, 1948)."
 mile,station,principal,prov,tz,No289,No371,No372,No290
--38,"Williston, Mont.",1,MT,M,lv 8.00a,lv 7.00a,ar 5.35p,ar 5.50p
+-38,"Williston, N. Dak.",1,ND,M,lv 8.00a,lv 7.00a,ar 5.35p,ar 5.50p
 0,"Bainville, Mont.",1,MT,M,9.10a,8.20a,4.10p,5.00p
 11,"McCabe, Mont.",0,MT,M,9.31a,8.55a,3.35p,4.33p
 19,"Froid, Mont.",0,MT,M,9.49a,9.22a,3.05p,4.15p

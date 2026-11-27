@@ -1,0 +1,23 @@
+# Great Northern Railway, Table 17, Willmar, Sioux City, Sioux Falls and Yankton (February 8, 1948) (Official Guide, May 1948, page 1073; Brendan's images, 27 Nov 2026; scans in the private repo, scans/og1948_gn/p1073_*.png). CENTRAL TIME. Miles as printed. NOT BUILT YET.
+# Columns 9-51-161 / 162-52-28: No. 9 St. Paul *9.00 p.m. - Willmar 12.30 a.m. (its Willmar cars), No. 51 Willmar *1.30 a.m. - Garretson 7.15 a.m. - Sioux City (Union Depot) 10.00 a.m.;
+# No. 161 Garretson *7.15 a.m. - Sioux Falls - Yankton 10.40 a.m. Up: No. 162 Yankton *4.30 p.m. - Garretson 7.25 p.m.; No. 52 Sioux City *4.50 p.m. - Garretson 8.00 p.m. - Willmar 12.10 a.m.;
+# No. 28 Willmar 1.30 a.m. - St. Paul 4.50 a.m. (Table 1). Garretson: the Sioux City and Sioux Falls lines part there. The second part of the table counts miles on from Garretson (230).
+# States: Claude's reading (Willmar - Jasper Minn.; Sherman, Garretson, Booge S. Dak.; Hills Minn.; Lester - Sioux City Iowa; Corson - Yankton S. Dak.).
+# Signs (page 1073 key): * daily; dagger daily except Sunday; b Tuesday, Thursday and Saturday; d Friday only; f flag stop; an ornate sign (Table 20, Nos. 335 / 336)
+# Monday, Wednesday, Thursday and Saturday.
+# (Split from gn_t017.csv, 27 Nov 2026: Garretson - Sioux Falls - Yankton, a line of its own.)
+#train col=No161 num=161 dir=down days=daily kind=passenger note="Great Northern No. 161, daily: Garretson 7.15 a.m. by Sioux Falls to Yankton 10.40 a.m. (Official Guide, May 1948, Table 17, February 8, 1948)." links="from No. 51 at Garretson"
+#train col=No162 num=162 dir=up days=daily kind=passenger note="Great Northern No. 162, daily: Yankton 4.30 p.m. by Sioux Falls to Garretson 7.25 p.m. (Official Guide, May 1948, Table 17, February 8, 1948)." links="to No. 52 at Garretson"
+mile,station,principal,prov,tz,No161,No162
+230,"Garretson, S. Dak.",1,SD,C,lv 7.15a,ar 7.25p
+238,"Corson, S. Dak.",0,SD,C,7.32a,7.08p
+248,"Sioux Falls, S. Dak.",1,SD,C,ar 8.40a / lv 8.40a,ar 6.50p / lv 6.50p
+259,"Tea, S. Dak.",0,SD,C,8.59a,6.06p
+266,"Lennox, S. Dak.",0,SD,C,9.10a,5.52p
+275,"Davis, S. Dak.",0,SD,C,9.25a,5.39p
+282,"Viborg, S. Dak.",0,SD,C,9.40a,5.27p
+289,"Irene, S. Dak.",0,SD,C,9.55a,5.14p
+294,"Talmo, S. Dak.",0,SD,C,f10.02a,f5.05p
+299,"Volin, S. Dak.",0,SD,C,10.12a,4.56p
+304,"Mission Hill, S. Dak.",0,SD,C,10.24a,4.44p
+311,"Yankton, S. Dak.",1,SD,C,ar 10.40a,lv 4.30p

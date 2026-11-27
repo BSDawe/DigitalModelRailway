@@ -1,0 +1,17 @@
+# Great Northern Railway, Table 16, Breckenridge, Aberdeen and Forbes (February 8, 1948; printed sideways) (Official Guide, May 1948, page 1072; Brendan's images, 27 Nov 2026; scans in the private repo, scans/og1948_gn/p1072_*.png). CENTRAL TIME. Miles as printed. NOT BUILT YET.
+# Columns 9-191 / 192-10: No. 9 (double dagger: its Breckenridge cars, daily except Saturday) St. Paul 9.00 p.m., Campbell f4.00, Breckenridge 4.30 a.m., then No. 191 (which goes back over
+# the main line by Doran and Campbell before leaving it); No. 192, then No. 10 (pilcrow: daily except Monday) Breckenridge 12.40 a.m. - St. Paul 7.40 a.m. Only 191 / 192 entered.
+# Nos. 337 / 338: Rutland - Forbes, the second part of the table (miles from Breckenridge by Rutland). States: Claude's reading (Breckenridge - Kutzer Minnesota; Fairmount - Havana
+# North Dakota; Kidder - Aberdeen South Dakota; Straubville - Forbes North Dakota).
+# Signs (page 1072 key): * daily; dagger daily except Sunday; double dagger daily except Saturday; pilcrow daily except Monday; a Monday and Thursday; k Saturday only;
+# natural sign Monday, Wednesday and Friday; heavy dot Tuesday, Thursday and Saturday; Psi mixed train; f flag stop.
+# (Split from gn_t016.csv, 27 Nov 2026: Rutland - Forbes, a line of its own; miles from Breckenridge by Rutland.)
+#train col=No337 num=337 dir=down days="ex Sun" kind=passenger note="Great Northern No. 337, daily except Sunday: Rutland 7.40 a.m. by Ellendale to Forbes 10.25 a.m. (Official Guide, May 1948, Table 16, February 8, 1948)."
+#train col=No338 num=338 dir=up days="ex Sun" kind=passenger note="Great Northern No. 338, daily except Sunday: Forbes 10.40 a.m. by Ellendale to Rutland 1.25 p.m. (Official Guide, May 1948, Table 16, February 8, 1948)."
+mile,station,principal,prov,tz,No337,No338
+72,"Rutland, N. Dak.",1,ND,C,lv 7.40a,ar 1.25p
+91,"Straubville, N. Dak.",0,ND,C,8.30a,12.35p
+108,"Guelph, N. Dak.",0,ND,C,9.08a,11.55a
+115,"Silver Leaf, N. Dak.",0,ND,C,f9.23a,f11.35a
+122,"Ellendale, N. Dak.",1,ND,C,9.50a,11.15a
+136,"Forbes, N. Dak.",1,ND,C,ar 10.25a,lv 10.40a

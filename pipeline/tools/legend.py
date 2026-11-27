@@ -25,7 +25,7 @@ NAME = {'cn': 'Canadian National', 'cp': 'Canadian Pacific', 'bcer': 'B.C. Elect
         'hlb': 'Huntsville & Lake of Bays', 'lps': 'London & Port Stanley', 'qrl': 'Quebec Railway, Light & Power', 'ter': 'Texas Electric', 'ptc': 'Portland Traction',
         'bna': 'Baltimore & Annapolis', 'cnsm': 'North Shore Line', 'cae': 'Chicago Aurora & Elgin', 'cssb': 'South Shore Line', 'rut': 'Rutland', 'mec': 'Maine Central', 'bc': 'Barre & Chelsea'}
 TRACK_ONLY = {'prr': 'Pennsylvania', 'nh': 'New Haven', 'bm': 'Boston & Maine', 'cnw': 'Chicago & North Western', 'ic': 'Illinois Central', 'lv': 'Lehigh Valley',
-              'bo': 'Baltimore & Ohio', 'cwi': 'Chicago & Western Indiana', 'cta': "Chicago Transit Authority ('L')", 'union': 'Union and terminal stations'}
+              'bo': 'Baltimore & Ohio', 'cwi': 'Chicago & Western Indiana', 'cta': "Chicago Transit Authority ('L')", 'cbq': 'Burlington Route', 'union': 'Union and terminal stations'}
 def main():
     with tempfile.NamedTemporaryFile('w', suffix='.js', delete=False) as f: f.write(JS); js = f.name
     out = subprocess.run(['node', js, PAGE], capture_output=True, text=True, timeout=600)
