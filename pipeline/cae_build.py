@@ -41,7 +41,7 @@ def at(route, ch):
     return tuple(route[-1][:2]) if ch > 0 else tuple(route[0][:2])
 POL = 'station polygon in the Mississippi Rails file'
 ST = {   # name: (gid, display, point, principal, note)
- 'Wells Street': ('CAE_WELLS_ST', 'Wells Street, Chicago', (-87.63426, 41.87765), True, "CA&E terminal (Wells Street Terminal), " + POL),
+ 'Wells Street': ('CAE_WELLS_ST', 'Wells Street, Chicago', (-87.63426, 41.87765), True, POL + " (Wells Street Terminal)"),
  'Canal Street': ('CAE_CANAL_ST', 'Canal Street, Chicago', (-87.63994, 41.87732), False, "'L' station (Union Station), " + POL),
  'Marshfield Avenue': ('CAE_MARSHFIELD', 'Marshfield Avenue, Chicago', (-87.66848, 41.87578), False, "'L' station, " + POL),
  'Kedzie Avenue': ('CAE_KEDZIE', 'Kedzie Avenue, Chicago', (-87.70562, 41.87323), False, "'L' station, " + POL),

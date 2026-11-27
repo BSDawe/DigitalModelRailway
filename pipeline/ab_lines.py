@@ -211,6 +211,7 @@ def rows_of(spec):
         i1 = (len(names) - 1 - names[::-1].index(norm(leg['b']))) if leg.get('b') else len(R) - 1
         part = R[min(i0, i1):max(i0, i1) + 1]
         if i0 > i1: part = part[::-1]
+        if spec.get('drop'): part = [r for r in part if r['station'] not in spec['drop']]   # stations this line's trains do not pass (a split line by another route)
         for tr in tab['trains']:
             if spec.get('cols') and tr['col'] not in spec['cols']: continue
             along = (tr['dir'] == 'down') != (i0 > i1)

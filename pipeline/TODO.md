@@ -2,7 +2,7 @@
 
 One list for the Digital Model Railway: questions for Brendan, material he is to supply, and work for Claude. It merges OPEN_QUESTIONS.md with the TO DO lists that were kept in STATE.md (the last of them: "TO DO (1 November 2026)"), as Brendan asked on 9 Nov 2026.
 Claude adds items as they come up. When one is answered or done, it moves to "Done and answered" with the date. Each open item says what the build does in the meantime. Version tags (V143) say when an item was raised.
-Last updated 26 November 2026 (Version 228).
+Last updated 26 November 2026 (Version 229).
 
 ## Decisions for Brendan
 - [ ] Unnumbered connecting trains: branch sections printed in a parent train's column take the parent's number (e.g. on_cn_t126m / d / p / c / g). Through cars or separate connecting trains? No number, or "connection to No. 41"? (26 Oct) Brendan: much may settle as the branch tables come in.
@@ -25,34 +25,15 @@ Last updated 26 November 2026 (Version 228).
   boards, stations thinned when zoomed out.
 
 ## Fixes queued (Brendan: "don't fix yet"; ask before the next rebuild whether to include them)
-- [ ] Station panel text too long (Brendan, 26 Nov 2026). Now (Wells Street): "Chicago – Wheaton – Aurora (CA&E) mile 0.01" / "CTA station; also served by Chicago – Wheaton –
-  Aurora (CA&E), Chicago – Wheaton – Batavia (CA&E), Chicago – Wheaton – Elgin (CA&E). CA&E terminal (Wells Street Terminal), station polygon in the Mississippi Rails file."
-  Wanted: "Wells Street, Chicago" / "CA&E Mile 0" / "CTA Station, also served by Chicago Aurora & Elgin". So: the railway's short name and the mile (rounded, no line label);
-  "also served by" lists railways once each (not every line or direction); the placement / source notes (polygon, estimated, approximate) leave the panel (keep them in the
-  GTFS stop description and the KML export). Applies to every station, not only Chicago.
-- [ ] Views (Brendan, 26 Nov 2026): drop the "Chicago Aurora and Elgin" view; add a "Chicagoland" view for the whole metropolitan area (it will be very busy with trains),
-  about [-88.40, -87.30, 41.55, 42.40] (Aurora / Elgin to Waukegan and Gary), Central time. Drop the "North Shore Line" view too (Brendan, 26 Nov 2026: Chicagoland replaces it). The existing
-  "Chicago and the Twin Cities" view is the wide one.
 - [ ] SCALING WORK, scheduled (Brendan, 26 Nov 2026: do 1 and 2 on the first build after Thursday 26 Nov, 9 p.m. his time, when his weekly usage resets), planning for
   timetables all the way to Panama (perhaps 4 - 6 times today's data):
-  1. The "On the line" list skips rebuilding while the boxes are hidden (about 9 ms a second wasted now); split parts/on_build.json (35 MB, 60 commits, repository history
+  1. (List skip when hidden: done V229.) Split parts/on_build.json (35 MB, 60 commits, repository history
      750 MB; site chunk 5.6 MB re-downloaded on any change) by railway or region; new U.S. railways go in steps of their own meanwhile.
   2. Region loading ("stage 2" in STATE.md): the page loads a region's lines when it is viewed, so start-up (12 s and about 200 MB of memory now) depends on the view, not the
      continent; with it, the list and station boards scoped to the view (also in the 16 Nov ideas).
-- [ ] Buffalo routing (Brendan, 25 Nov 2026): two N.Y.C. routes near Buffalo. The Niagara Branch via Terrace Station, and the Belt Line round the city to the north-east.
-  Trains calling at Terrace Station (all trains via Niagara Falls) go by the Niagara Branch. Trains for the International Bridge that do not call at Terrace Station bypass
-  downtown Buffalo by the Belt Line. Check which trains on the map take which, and whether the Belt Line track is in the trace.
 - [ ] Alcoa Steamship Co. (Brendan, 23 Nov 2026, Official Guide page): fortnightly sailings from Montreal and Halifax to Hamilton (Bermuda), St. Kitts, Antigua, St. Lucia,
   Barbados, St. Vincent, Grenada, Port of Spain, Georgetown; also calls Dominica, Montserrat, Martinique and Guadeloupe as cargo offers. No dates: like the other ocean sailings
   (draw to the edge of the water file), a dated July 1948 sailing is needed (Montreal Gazette / Halifax shipping columns, with the Lady boats).
-- [ ] Railway colour guide (Brendan, 23 Nov 2026: "has the railway colour guide stopped updating?"). Yes: the header legend in page_template.html is hand-written and was last
-  extended about 8 Nov (Quebec Railway, Light & Power). Missing railways drawn since: Rutland, Maine Central, Boston & Maine, New Haven, Pennsylvania, Baltimore & Ohio, Illinois
-  Central, Chicago & Western Indiana, Lehigh Valley, Chicago & North Western, Barre & Chelsea, Grand River / Lake Erie & Northern and others with their own colour.
-  Also (V219): the long colour list now covers part of the area every view is fitted into (insets() in the page assumes a short header); collapsing it fixes the views.
-  Brendan's spec (23 Nov 2026): a list you can collapse, ordered by trains per week (busiest railway first; no counts shown); it need not regenerate every build (Claude refreshes it by hand / a one-off script
-  when railways are added). Subsidiaries are not listed separately (drawn in the parent's colour: E&N, DAR, QC, CV, GTW, Soo etc.); Maine Central IS listed (not a subsidiary).
-  Interurban subsidiaries (CP electric: Grand River / Lake Erie & Northern; CN electric: Montreal & Southern Counties, NS&T) are not listed separately either. One swatch per
-  railway. At the bottom, beside "Steamer", sample icons for a locomotive-hauled train and a motor train (electric and diesel multiple units, rail motor cars: "motor trains").
 - [ ] Seattle - Portland pool: the GN / NP / UP split of the trains is from the August 1952 Official Guide (V209); confirm for 1948 (Official Guide car-service lists).
 
 ## CP Maritimes (started 10 Nov 2026)
@@ -327,6 +308,9 @@ Each runs to an International Boundary point (time estimated) or to the last Can
 - [x] Sydney & Louisburg: built (V163). Colour #5B3A8C is Claude's pick. Victoria Jct. - Glace Bay 9.9 mi traced / 11.0 printed (the trace may take a later route).
 
 ## Done and answered
+### Done in Version 229 (26 Nov 2026)
+- Chicagoland view (replaces the North Shore Line and CA&E views); shorter station panels; "On the line" idle while the boxes are hidden; the colour guide (tools/legend.py);
+  Buffalo: Terrace Station trains by the Niagara Branch, the others by the Belt Line.
 ### Done in Version 228 (26 Nov 2026)
 - The Chicago Aurora and Elgin. Open: the Sunday "frequent service" Chicago - Wheaton (only first and last trains printed) not drawn; the estimated extra trains; E1455's
   mixed signs; Wayne (the file has an old and a new station location; the old one used).

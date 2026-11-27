@@ -1,7 +1,7 @@
 # The Digital Model Railway — project state
 
 Read this first. It is meant to be enough to start a short, single-task chat without replaying the project's history.
-Last updated 26 November 2026 (Version 228). This file is the current state and the standing rules; the version-by-version history is in CHANGELOG.md.
+Last updated 26 November 2026 (Version 229). This file is the current state and the standing rules; the version-by-version history is in CHANGELOG.md.
 
 ## What this is
 
@@ -240,6 +240,10 @@ lat, mile, lmile?, principal, gid, note, xy?, slow?}], dirLabels, segments [{own
 ## Conventions Brendan has set
 
 - **Holidays are ignored** (Brendan, 25 Nov 2026): "except holidays" / "will not run holidays" signs do not take trains off any day of the target week (Monday 5 July 1948 included).
+- **Colour guide** (Brendan, 23 Nov 2026): tools/legend.py rewrites it (a list that opens and closes, one swatch per railway, by trains per week, subsidiaries under parents);
+  run it by hand after adding a railway (its NAME table needs the new railway's name).
+- **Station panels** (Brendan, 26 Nov 2026): "<railway short name> Mile <n>" and "<owner> station, also served by <railways, once each>"; placement and source remarks stay out
+  of the panel (station_names.panel_note) and in the feed's stop descriptions.
 - **Rapid transit** (Brendan, 25 Nov 2026): 'L' (CTA) track is its own owner class (RAPID_OWN in the page), drawn like interurban track, dark blue; no on / off control. Lines whose
   two directions use different track (the Loop) are two lines, one per direction, the shared track drawn once (owner none on the second).
 - Track hand correction (24 Nov 2026): tools/export_track_kml.py OUT.kml KEY... writes the drawn lines as a KML (pieces "<key>-NN | A - B", station pins "<gid> | name");
@@ -345,6 +349,7 @@ After an accepted build: `cp viz_data.json tools/.baseline_viz.json`.
 
 ## Recent versions (one line each; the detail is in CHANGELOG.md)
 
+- 229: Chicagoland view; shorter station panels; colour guide (collapsible, by trains per week); Buffalo Belt Line trains.
 - 228: the Chicago Aurora and Elgin (Wells Street - Wheaton - Aurora, Batavia, Elgin; Garfield Park 'L' as CTA track).
 - 227: North Shore Line southbound trains face the right way; Winthrop Harbor.
 - 226: the North Shore Line complete (Shore Line, Mundelein, Waukegan, the branch); the south-east Loop wye; one track north of the Loop.
@@ -358,7 +363,6 @@ After an accepted build: `cp viz_data.json tools/.baseline_viz.json`.
 - 218: Clarke Steamship coastal services (North Shore, North Gaspé, Magdalen; the Rimouski / Matane motorships), simulated weekly schedules.
 - 217: TH&B trains on to Black Rock and Buffalo (Central Terminal); train notes and sources shown for every railway.
 - 216: the Texas Electric Railway (Dallas - Denison, Dallas - Waco; Ravenna's trace, 1939 times as the 1948 pattern).
-- 208: station names by zoom (city zoomed out, station zoomed in), CPR for CP, station owners from the track; North Bay ONR stops on the CN / CPR stations; Straits car ferry over water.
 - 204: CN trains changing number at Hamilton (Table 79: 101/102, 89/90, 187/184, 93/94, 91/92, 107/108) joined as through trains.
 - 200: Arnold Transit from the August 1950 Official Guide (stand-in for July 1948): five St. Ignace and five Mackinaw City sailings each way; Mackinac Island - Les Cheneaux - Cedarville.
 - 199: the Straits of Mackinac car ferry drawn as a train ferry; Arnold Transit St. Ignace - Mackinac Island boats (atc_build.py).

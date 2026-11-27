@@ -84,12 +84,15 @@ BY_NAME = {'Davie Street': ('Davie Street', 'Vancouver'), 'Vancouver': ('Carrall
 # railway abbreviations, by the label of the line that owns the track (CPR subsidiaries keep their own) and then by track owner
 ABBR_LABEL = {'Canadian Pacific': 'CPR', 'Soo Line': 'Soo Line', 'Duluth, South Shore & Atlantic': 'DSS&A', 'Esquimalt & Nanaimo': 'E&N', 'Quebec Central': 'QC',
               'Dominion Atlantic': 'DAR', 'Spokane International': 'SI', 'Central Vermont': 'CV', 'Grand Trunk Western': 'GTW', 'Canadian National': 'CN'}
-ABBR_OWN = {'bna': 'B&A', 'cae': 'CA&E', 'cnsm': 'North Shore Line', 'cta': 'CTA', 'ic': 'IC', 'cp': 'CPR', 'cn': 'CN', 'gn': 'GN', 'np': 'NP', 'milw': 'Milwaukee', 'up': 'UP', 'sps': 'SP&S', 'nyc': 'NYC', 'dh': 'D&H', 'rut': 'Rutland', 'bm': 'B&M',
+ABBR_OWN = {'ptc': 'PTC', 'ter': 'TER', 'bna': 'B&A', 'cae': 'CA&E', 'cnsm': 'North Shore Line', 'cta': 'CTA', 'ic': 'IC', 'cp': 'CPR', 'cn': 'CN', 'gn': 'GN', 'np': 'NP', 'milw': 'Milwaukee', 'up': 'UP', 'sps': 'SP&S', 'nyc': 'NYC', 'dh': 'D&H', 'rut': 'Rutland', 'bm': 'B&M',
             'nh': 'New Haven', 'prr': 'PRR', 'bo': 'B&O', 'lv': 'LV', 'thb': 'TH&B', 'onr': 'ONR', 'nar': 'NAR', 'pge': 'PGE', 'msc': 'M&SC', 'grr': 'GRR', 'len': 'L&N',
             'lps': 'L&PS', 'nst': 'NS&T', 'qrl': 'QRL&P', 'tem': 'Temiscouata', 'si': 'SI', 'acr': 'ACR', 'snl': 'S&L', 'cnw': 'C&NW', 'wpy': 'WP&Y', 'arr': 'Alaska RR',
             'mec': 'MEC', 'cwi': 'C&WI', 'nfr': 'Nfld. Ry.', 'aj': 'Algoma Jct.', 'cgt': 'CGT', 'crc': 'CR&C', 'mcrp': 'MCR&P', 'rs': 'Roberval & Saguenay', 'tir': 'TIR',
             'gwwd': 'GWWD', 'bc': 'B&C', 'union': 'Union', 'bcer': 'BCER'}
-OWNER_NAME = {'IC': 'Illinois Central', 'MEC': 'Maine Central', 'CPR': 'Canadian Pacific Railway', 'CN': 'Canadian National', 'GN': 'Great Northern', 'NP': 'Northern Pacific', 'Milwaukee': 'Milwaukee Road',
+OWNER_NAME = {'CA&E': 'Chicago Aurora & Elgin', 'B&A': 'Baltimore & Annapolis', 'PTC': 'Portland Traction', 'TER': 'Texas Electric', 'M&SC': 'Montreal & Southern Counties',
+              'NS&T': 'Niagara, St. Catharines & Toronto', 'L&PS': 'London & Port Stanley', 'QRL&P': 'Quebec Railway, Light & Power', 'GRR': 'Grand River Railway',
+              'L&N': 'Lake Erie & Northern', 'BCER': 'B.C. Electric', 'WP&Y': 'White Pass & Yukon', 'SI': 'Spokane International', 'ACR': 'Algoma Central',
+              'IC': 'Illinois Central', 'MEC': 'Maine Central', 'CPR': 'Canadian Pacific Railway', 'CN': 'Canadian National', 'GN': 'Great Northern', 'NP': 'Northern Pacific', 'Milwaukee': 'Milwaukee Road',
               'UP': 'Union Pacific', 'SP&S': 'Spokane, Portland & Seattle', 'NYC': 'New York Central', 'D&H': 'Delaware & Hudson', 'Rutland': 'Rutland Railroad',
               'B&M': 'Boston & Maine', 'New Haven': 'New York, New Haven & Hartford', 'PRR': 'Pennsylvania Railroad', 'B&O': 'Baltimore & Ohio', 'LV': 'Lehigh Valley',
               'TH&B': 'Toronto, Hamilton & Buffalo', 'ONR': 'Ontario Northland', 'NAR': 'Northern Alberta Railways', 'PGE': 'Pacific Great Eastern', 'Union': 'a joint terminal company',
@@ -97,6 +100,25 @@ OWNER_NAME = {'IC': 'Illinois Central', 'MEC': 'Maine Central', 'CPR': 'Canadian
               'CV': 'Central Vermont', 'GTW': 'Grand Trunk Western', 'C&NW': 'Chicago & North Western', 'C&WI': 'Chicago & Western Indiana'}
 TAG = re.compile(r',\s*(Vt|N\.\s?H|Me|Mass|Mich|N\.\s?Y|Conn|R\.\s?I|Ont|Que|N\.\s?B|N\.\s?S|Man|Sask|Alta|B\.\s?C|Wis|Minn|Ind|Ill|Ohio|Pa|Wash|Ore|Mont|Idaho|N\.\s?D|Alaska|D\.\s?C)\.?$')
 STREET = re.compile(r'\b(St\.|Street|Avenue|Ave\.|Road|Rd\.)$')
+import os as _os
+_KB = {}
+try:
+    _m = re.search(r"const KIND_BADGE = \{([^}]*)\}", open(_os.path.join(_os.path.dirname(_os.path.abspath(__file__)), 'page_template.html')).read())
+    _KB = dict(re.findall(r"(\w+): '([^']*)'", _m.group(1))) if _m else {}
+except OSError: pass
+def served_by(L):
+    """The railway serving a station by this line, named once per railway (Brendan, 26 Nov 2026: not every line and direction)."""
+    lab = L.get('label', '')
+    if lab in ABBR_LABEL: return ABBR_LABEL[lab]
+    for k in (L.get('owner'), L.get('livery')):
+        if k and k != 'none' and k in ABBR_OWN: return ABBR_OWN[k]
+    return _KB.get(L.get('kind'), lab)
+PLACEMENT = re.compile(r'polygon|placed|approximate|approx\.|estimat|names file|\bpoint\b|position|by mileage|printed mile|Brendan|Mississippi|\bfile\b|trace|nearest|snapped|moved|Claude', re.I)
+def panel_note(old):
+    """The station note without the placement and source remarks (Brendan, 26 Nov 2026: they stay in the feed's stop description)."""
+    parts = [p.strip() for p in re.split(r'(?<=[.;])\s+|,\s+(?=station polygon|placed|approximate)', old) if p.strip()]
+    keep = [p for p in parts if not PLACEMENT.search(p) and not re.fullmatch(r"'L' (station|terminal)[.;,]?", p)]
+    return ' '.join(keep).strip(' ;,')
 def cpr(s):    # the Canadian Pacific's period abbreviation
     if not isinstance(s, str): return s
     s = re.sub(r'\(C\.P\.R?\.\)', '(CPR)', s); s = re.sub(r'\bC\.P\.R\.(?= Station| station)', 'CPR', s)
@@ -129,7 +151,7 @@ def apply(viz, gt):
             g = s.get('gid') or ('NAME:' + s['name'])
             o = owner_at(L, s.get('chain', 0))
             if o: owners[g][o] += 1; labels[g][(o, L.get('label', ''))] += 1
-            served[g].add(ABBR_LABEL.get(L.get('label', ''), ABBR_OWN.get(L.get('owner') or '', L.get('label', ''))))
+            served[g].add(served_by(L))
             pos.setdefault(g, (s['lon'], s['lat'])); names_of.setdefault(g, s['name'])
     def abbr(g):
         if g in OWNER_FIX: return OWNER_FIX[g]
@@ -189,9 +211,10 @@ def apply(viz, gt):
             if d['owner'] and s.get('gid') not in water and not s.get('gid', '').startswith('PORT_'):
                 on = OWNER_NAME.get(d['owner'], d['owner']); others = [x for x in d['served'] if x != d['owner']]
                 old = s.get('note') or ''
-                if s.get('gid') in OWNER_DESC and old.startswith(OWNER_DESC[s['gid']]): old = re.sub(r"^(; also served by [^;.]*)?[;.,]?\s*", '', old[len(OWNER_DESC[s['gid']]):])
+                if s.get('gid') in OWNER_DESC and old.startswith(OWNER_DESC[s['gid']]): old = re.sub(r"^([;,] also served by [^;.]*)?[;.,]?\s*", '', old[len(OWNER_DESC[s['gid']]):])
                 old = re.sub(r"^(Canadian National|Canadian Pacific|Ontario Northland|Delaware & Hudson|New York Central|Rutland|Soo Line|Great Northern|Northern Pacific|[A-Z][\w&.' -]{0,40}) station[;.,]?\s*", '', old)   # the default "<railway> station"
-                s['note'] = OWNER_DESC.get(s.get('gid'), f"{on} station") + (f"; also served by {', '.join(others)}" if others else '') + (f". {old}" if old else '')
+                old = panel_note(old)
+                s['note'] = OWNER_DESC.get(s.get('gid'), f"{on} station") + (f", also served by {', '.join(OWNER_NAME.get(x, x) for x in others)}" if others else '') + (f". {old}" if old else '')
     for s in viz.get('stations', []):                    # the Chilliwack line's base data (B.C. Electric): the Vancouver terminal is Carrall Street
         if s.get('id') == 'S00': s.update(name='Carrall Street, Vancouver', zname='Carrall Street', city='Vancouver')
         else: s.setdefault('zname', s['name']); s.setdefault('city', s['name'])

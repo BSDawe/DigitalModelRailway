@@ -3291,3 +3291,21 @@ A review of the whole project (Brendan: "have a peek through ... suggest improve
   Claude's). New view "Chicago Aurora and Elgin".
 - The North Shore Line's note now says the May 1948 Official Guide.
 - 297 trips. Counts: 720 lines, 5230 trips, 8109 stops, 75 agencies; check_gtfs 0 problems.
+
+## Version 229
+- Queued fixes (Brendan, 26 Nov 2026: "let's do the to-dos ... the ripe ones"):
+  - Views: "Chicagoland" (Aurora / Elgin to Waukegan and Gary, Central time) replaces the "North Shore Line" and "Chicago Aurora and Elgin" views.
+  - Station panels shortened (Brendan's example: "Wells Street, Chicago / CA&E Mile 0 / CTA Station, also served by Chicago Aurora & Elgin"): the railway's short name and the mile
+    rounded to a tenth, no line label; "also served by" names each railway once, in full (station_names.served_by: the railway of a line, not the line's label); placement and
+    source remarks (polygon, placed, approximate, estimated, Brendan's point, Mississippi Rails ...) are left out of the panel (station_names.panel_note) and kept in the feed's stop
+    descriptions.
+  - "On the line" is not rebuilt while the boxes are hidden (only its count shows).
+  - The railway colour guide rewritten by tools/legend.py: "Railway colours", a list that opens and closes (closed by default, which also frees the area the views fit into),
+    one swatch per railway (a band where the livery has a second colour), ordered by trains per week (busiest first, no counts); subsidiaries under their parents; railways whose
+    track is drawn but which run no trains of their own (Pennsylvania, New Haven, B&M, C&NW, IC, LV, B&O, C&WI, the CTA 'L', union and terminal stations) last. Below it, sample
+    icons: Train, Motor train, Steamer. Run tools/legend.py by hand when railways are added.
+  - Buffalo (Brendan, 25 Nov 2026): trains calling at Terrace Station run through downtown on the Niagara Branch; trains for the International Bridge not calling there take the
+    Belt Line round the city to the north-east to Central Terminal. Track: the Mississippi Rails Belt Line ("Buffalo to North Buffalo Jct") added to mc.geojson
+    (tools/mar_import_mc.py). on_build splits each file with both kinds: the Belt Line trains make a line of their own (onmc006b: Nos. 8, 17, 33, 35, 39, 40, 47, 48, 364;
+    onthb056pb: TH&B 371, 372, 374, 380, 382), without the Terrace row (ab_lines: spec 'drop') and by a point on the Belt Line (via, forced).
+- Counts: 722 lines, 5230 trips, 8109 stops, 75 agencies; check_gtfs 0 problems.

@@ -283,6 +283,24 @@ def specs():
                         tidpfx=o.get('tidpfx'), label=o.get('label'), names={**{t['col']: t['name'] for t in ab_table.load(fn)['trains'] if t.get('name')}, **o.get('names', {})}, notes=o.get('notes', {}), via=o.get('via', ()), noplace=o.get('noplace', ()), force=o.get('force', ()), places=o.get('places'), ends=True, realends=True))
     return out
 SPECS = specs()
+# Buffalo (Brendan, 25 Nov 2026): trains calling at Terrace Station run through downtown on the Niagara Branch; trains for the International Bridge not calling there take the
+# Belt Line round the city to the north-east (Black Rock - North Buffalo Jct. - East Buffalo - Central Terminal). Each file with both kinds is split: its Belt Line trains
+# make a line of their own ('b' on the key), without the Terrace Station row and by a point on the Belt Line.
+TERRACE = 'Buffalo (Terrace Sta.), N.Y.'
+BELT = ('Black Rock, N.Y.', 'Belt Line (N.Y.C.), N.Y.', 3.0)
+for _s in list(SPECS):
+    _tab = ab_table.load(os.path.join(HERE, _s['legs'][0]['csv']))
+    _row = next((r for r in _tab['rows'] if r['station'] == TERRACE), None)
+    if not _row or not any(r['station'] == BELT[0] for r in _tab['rows']): continue
+    _cols = [t['col'] for t in _tab['trains'] if not _s.get('cols') or t['col'] in _s['cols']]
+    _ct = next(r for r in _tab['rows'] if 'Central Terminal' in r['station'])
+    belt = [c for c in _cols if not ab_table.cell(_row.get(c, '')) and ab_table.cell(_ct.get(c, ''))]
+    if not belt: continue
+    _s['cols'] = [c for c in _cols if c not in belt]
+    _ctn = _ct['station']
+    SPECS.append(dict(_s, key=_s['key'] + 'b', cols=belt, drop=(TERRACE,), via=tuple(_s.get('via', ())) + (BELT,),
+                      force=list(_s.get('force') or ()) + [(BELT[0], BELT[1]), (BELT[1], _ctn)],
+                      places={**(_s.get('places') or {}), BELT[1]: (-78.84230, 42.92221)}, long=(_s.get('long') or '') + ' (by the Belt Line at Buffalo)'))
 on_lines.register([(s['rail'], s['legs'][0]['csv']) for s in SPECS])
 if __name__ == '__main__':
     if os.environ.get('ON_DRY'):

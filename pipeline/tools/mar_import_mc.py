@@ -8,7 +8,8 @@ taken (named in MAIN below); the Hudson line, Albany and Grand Central are alrea
 - Chicago (Brendan, 22 Nov 2026): Central Station is Illinois Central property, the Michigan Central running in by trackage rights over the IC from Kensington; no trace yet, so a
   DASHED estimate (own 'ic') from the Michigan Central's west end (the Indiana state line) by Kensington and Woodlawn (63d Street) to Central Station. La Salle Street Station (NYC and
   Rock Island; the Twilight Limited, by Englewood and the Lake Shore & Michigan Southern to Porter): a DASHED estimate La Salle Street - Englewood - the Michigan Central west end.
-- Buffalo: the International Railway Bridge, Brendan's traces (traces/lv/brendan_international_bridge.json; V211 replaced Claude's dashed estimate).
+- Buffalo: the Belt Line ('Buffalo to North Buffalo Jct', round the city to the north-east; Brendan, 25 Nov 2026: trains for the International Bridge not calling at Terrace Station
+  take it). The International Railway Bridge, Brendan's traces (traces/lv/brendan_international_bridge.json; V211 replaced Claude's dashed estimate).
 Usage: python3 tools/mar_import_mc.py <NYC_Canada_Export.kmz> <NYC_Chicago.kmz>"""
 import json, math, os, re, sys, zipfile
 import xml.etree.ElementTree as ET
@@ -21,7 +22,7 @@ MAIN = {   # Michigan Central main line, the Detroit River tunnel; N.Y.C. Buffal
                          'Michigan City IN to Kalamazoo MI', 'Gary IN to Michigan City IN', 'Untitled Path@-87.467', 'Michigan Central Tunnel'),
     'New York Central': ('Buffalo NY to Depew NY', 'Batavia NY to Depew NY', 'Batavia abandoned@-78.225', 'Batavia existing@-78.193', 'Batavia NY abandoned@-78.170',
                          'Batavia NY to Rochester NY', 'Syracuse NY to Rochester NY', 'Utica NY to Syracuse NY', 'Utica NY to Schenectady, NY', 'Schenectady NY to Albany NY',
-                         'Buffalo NY to Black Rock NY', 'Buffalo to Black Rock existing', 'Black Rock NY to Tonawanda NY', 'Rotterdam Jct to Syracuse NY',
+                         'Buffalo NY to Black Rock NY', 'Buffalo to Black Rock existing', 'Black Rock NY to Tonawanda NY', 'Buffalo to North Buffalo Jct', 'Rotterdam Jct to Syracuse NY',
                          'Utica NY to Boonville NY', 'Remsen NY to Lake Clear Jct NY', 'Lake Clear Jct to Saranac Lake NY', 'Saranac NY to Lake Placid NY')}   # the Adirondack Division (V211)
 feats = []
 def F(name, pts, note, group='mississippi_rails', est=False, own='nyc', constituent='New York Central'):
