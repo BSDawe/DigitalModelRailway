@@ -2,7 +2,7 @@
 
 One list for the Digital Model Railway: questions for Brendan, material he is to supply, and work for Claude. It merges OPEN_QUESTIONS.md with the TO DO lists that were kept in STATE.md (the last of them: "TO DO (1 November 2026)"), as Brendan asked on 9 Nov 2026.
 Claude adds items as they come up. When one is answered or done, it moves to "Done and answered" with the date. Each open item says what the build does in the meantime. Version tags (V143) say when an item was raised.
-Last updated 26 November 2026 (Version 231).
+Last updated 26 November 2026 (Version 232).
 
 ## Decisions for Brendan
 - [ ] Unnumbered connecting trains: branch sections printed in a parent train's column take the parent's number (e.g. on_cn_t126m / d / p / c / g). Through cars or separate connecting trains? No number, or "connection to No. 41"? (26 Oct) Brendan: much may settle as the branch tables come in.
@@ -308,6 +308,9 @@ Each runs to an International Boundary point (time estimated) or to the last Can
 - [x] Sydney & Louisburg: built (V163). Colour #5B3A8C is Claude's pick. Victoria Jct. - Glace Bay 9.9 mi traced / 11.0 printed (the trace may take a later route).
 
 ## Done and answered
+### Done in Version 232 (26 Nov 2026)
+- Alaska Transportation Co., S.S. George Washington: Seattle (Pier 58) - Ketchikan - Juneau - Haines - Skagway - Sitka - Ketchikan - Seattle, 8-day cruise every ten days
+  (Official Guide ad, May 1948; Daily Alaska Empire, 25 May 1948). Open: livery (Claude's pick); Pier 58 point (est.); port days estimated.
 ### Done in Version 231 (26 Nov 2026)
 - The South Shore Line. Open: station points (all South Shore stations by printed mileage; Randolph Street, Van Buren Street, Hyde Park approximate); the livery (orange and
   maroon, Claude's pick); the Michigan City street running is as in the 2020 map (check for 1948).

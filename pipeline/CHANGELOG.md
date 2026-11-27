@@ -3333,3 +3333,11 @@ A review of the whole project (Brendan: "have a peek through ... suggest improve
 - Stations: Central Station, Woodlawn and Kensington shared with the Michigan Central; Randolph Street, Van Buren Street and Hyde Park approximate; the South Shore stations by
   printed mileage (approximate). Livery orange #e0701e and maroon #6e1f2a (Claude's pick, to confirm). Colour guide refreshed.
 - Counts: 723 lines, 5278 trips, 8135 stops, 76 agencies; check_gtfs 0 problems.
+
+## Version 232
+- The Alaska Transportation Co.'s S.S. George Washington (Brendan, 26 Nov 2026), service bgw in boats_build.py: an 8-day Alaska cruise from Seattle (Pier 58) every ten
+  days, May 31 to Sept. 30, 1948 (the company's advertisement, Official Guide, May 1948). Calls from the Daily Alaska Empire, Juneau, 25 May 1948: Ketchikan, Juneau, Haines
+  and Skagway northbound, Sitka and Ketchikan on the return; 3.00 p.m. from Seattle. In the week: the 30 June sailing (Sitka Monday 5, Ketchikan Tuesday 6, Seattle about
+  Thursday 8 a.m.) and the 10 July sailing (Saturday 3.00 p.m., out of the week by Ketchikan). Port days estimated. Pier 58 placed at the foot of Union Street (Claude, est.).
+  Colour plum #7a2f4f with a cream funnel (Claude's pick, to confirm).
+- Counts: 724 lines, 5280 trips, 8136 stops, 76 agencies; check_gtfs 0 problems.

@@ -1,7 +1,7 @@
 # The Digital Model Railway — project state
 
 Read this first. It is meant to be enough to start a short, single-task chat without replaying the project's history.
-Last updated 26 November 2026 (Version 231). This file is the current state and the standing rules; the version-by-version history is in CHANGELOG.md.
+Last updated 26 November 2026 (Version 232). This file is the current state and the standing rules; the version-by-version history is in CHANGELOG.md.
 
 ## What this is
 
@@ -349,6 +349,7 @@ After an accepted build: `cp viz_data.json tools/.baseline_viz.json`.
 
 ## Recent versions (one line each; the detail is in CHANGELOG.md)
 
+- 232: the Alaska Transportation Co. S.S. George Washington, Seattle - Southeast Alaska 8-day cruise.
 - 231: the South Shore Line (Randolph Street - Gary - Michigan City - South Bend; IC into Chicago; July 5 on the Sunday schedule).
 - 230: large build parts kept as folders of railway groups (on_build); site data cut the same way; Mixed train icon.
 - 229: Chicagoland view; shorter station panels; colour guide (collapsible, by trains per week); Buffalo Belt Line trains.
@@ -356,7 +357,6 @@ After an accepted build: `cp viz_data.json tools/.baseline_viz.json`.
 - 227: North Shore Line southbound trains face the right way; Winthrop Harbor.
 - 226: the North Shore Line complete (Shore Line, Mundelein, Waukegan, the branch); the south-east Loop wye; one track north of the Loop.
 - 225: the North Shore Line, Chicago - Milwaukee (1949 timetable for 1948; Electroliners named; CTA 'L' track into the Loop, each direction its own side).
-- 224: smoother animation (list rebuilt at most once a second, the day's trips cached, off-screen trains skipped, cheaper car drawing).
 - 223: the Baltimore & Annapolis Railroad (Camden Station - Annapolis, Bladen Street; B&O trackage into Camden drawn as B&O).
 - 222: Portland Traction track from Brendan's corrected KML (1st / 2nd Ave loop, East Portland, Golf Jct.); stations anchored at their streets.
 - 221: Portland Traction stations re-anchored (Linneman Jct. at the junction; Oregon City miles to 3rd and Main).
