@@ -24,6 +24,13 @@ Last updated 26 November 2026 (Version 232).
   drawn mostly like interurban track. No on/off control (no control bloat). If 'L' trains come later: repeating patterns (like Central Park), summarised in the list and
   boards, stations thinned when zoomed out.
 
+- [ ] Great Northern main line and the Burlington (Brendan, 26 Nov 2026): track received, NOT BUILT, waiting for the Official Guide pages (GN Seattle - St. Paul and branches;
+  CB&Q Chicago - Twin Cities). Track (private repo traces/msrails/): Great_Northern.kmz (Mississippi Rails 2024-6-16: the whole GN system, Vancouver - St. Paul / Duluth, Washington
+  branches, VV&E Curlew - Midway, the Oregon Trunk to Bieber; Brendan's own Vancouver - Seattle trace stays) and Chicago_CBQ_Line.kmz (Chicago - Aurora - Rochelle - Oregon - St. Paul,
+  Aurora - Mendota). Empire Builder / Oriental Limited run through St. Paul - Chicago over the CB&Q. CB&Q colour: a silver (Brendan, 26 Nov 2026: "a sort of silver", the Zephyrs);
+  Claude's shade #8d99a5 (dark theme #c3ccd4), kept clear of the union-station grey and the CA&E grey band. Chicago Union Station (Brendan, 26 Nov 2026): 41 52 43.92 N,
+  87 38 20.10 W (41.878867, -87.638917); a union station (own 'union'), also for the Milwaukee Road, Pennsylvania and Alton trains when they come.
+
 ## Fixes queued (Brendan: "don't fix yet"; ask before the next rebuild whether to include them)
 - [ ] SCALING WORK, scheduled (Brendan, 26 Nov 2026: do 1 and 2 on the first build after Thursday 26 Nov, 9 p.m. his time, when his weekly usage resets), planning for
   timetables all the way to Panama (perhaps 4 - 6 times today's data):
