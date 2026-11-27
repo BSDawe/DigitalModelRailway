@@ -1,0 +1,60 @@
+# Great Northern Railway, Duluth - Superior - Grand Rapids - Cass Lake - Bemidji - Crookston - Grand Forks (Official Guide, May 1948, page 1071; table dated February 8, 1948; the
+# table number is not on Brendan's image, 27 Nov 2026; scan in the private repo, scans/og1948_gn/p1071_duluth.png). CENTRAL TIME. Miles from Duluth as printed. NOT BUILT YET.
+# Nos. 35 / 36: Duluth dagger 9.30 p.m. - Grand Forks 7.00 a.m. (the arrivals at Grand Rapids and Grand Forks carry the pilcrow, daily except Monday: the train that leaves daily
+# except Sunday); Grand Forks dagger 10.20 p.m. - Duluth 7.00 a.m. (the same). Entered as daily except Sunday, by the day each leaves.
+# Nos. 105 / 106: Cass Lake - Bemidji, "runs from / to Sauk Centre, see Table 11". UNSURE: their day signs (read dagger, as 35 / 36; CHECK with Table 11).
+# Cass Lake: the two rows are printed "ar. Cass Lake lv." and "lve. Cass Lake arr."; Nos. 35 and 36 both 2.33 / 2.38 a.m. as read (they meet there).
+# Nos. 29 / 30 (Crookston - East Grand Forks - Grand Forks, with Fisher, Mallory and East Grand Forks) are in gn_t007.csv. "See Note" (box): the New Empire Builder / Winnipeg
+# Limited connection at St. Paul (Table 7).
+# Not entered: the buses Grand Rapids - Coleraine - Bovey - Marble - Calumet - Nashwauk - Keewatin - Hibbing - Chisholm - Buhl - Virginia (*7.13 a.m. - 10.00 a.m.; *1.10 -
+# 4.05 p.m.; and back, Virginia 6.10 p.m. - Grand Rapids 8.53 p.m.): buses are not drawn.
+# Signs: dagger daily except Sunday; pilcrow daily except Monday; f flag stop.
+#train col=No35 num=35 dir=down days="ex Sun" kind=passenger note="Great Northern No. 35, daily except Sunday: Duluth 9.30 p.m. by Grand Rapids, Cass Lake and Bemidji to Grand Forks 7.00 a.m. (Official Guide, May 1948, page 1071, February 8, 1948)."
+#train col=No105 num=105 dir=down days="ex Sun" kind=passenger note="Great Northern No. 105: from Sauk Centre (Table 11), Cass Lake 7.35 a.m. to Bemidji 8.00 a.m. (Official Guide, May 1948, page 1071, February 8, 1948)." links="from Sauk Centre, Table 11"
+#train col=No36 num=36 dir=up days="ex Sun" kind=passenger note="Great Northern No. 36, daily except Sunday: Grand Forks 10.20 p.m. by Bemidji, Cass Lake and Grand Rapids to Duluth 7.00 a.m. (Official Guide, May 1948, page 1071, February 8, 1948)."
+#train col=No106 num=106 dir=up days="ex Sun" kind=passenger note="Great Northern No. 106: Bemidji 10.00 a.m. to Cass Lake 10.25 a.m., on to Sauk Centre (Table 11) (Official Guide, May 1948, page 1071, February 8, 1948)." links="to Sauk Centre, Table 11"
+mile,station,principal,prov,tz,No35,No105,No36,No106
+0,"Duluth, Minn.",1,MN,C,lv 9.30p,,ar 7.00a,
+4,"Superior, Wis.",1,WI,C,9.45p,,6.45a,
+13,"Boylston, Wis.",0,WI,C,10.03p,,6.26a,
+19,"Dewey, Wis.",0,WI,C,f10.10p,,f6.18a,
+33,"Carlton, Minn.",1,MN,C,10.34p,,5.58a,
+36,"Scanlon, Minn.",0,MN,C,f10.39p,,f5.48a,
+39,"Cloquet, Minn.",1,MN,C,10.46p,,5.43a,
+55,"Brookston, Minn.",0,MN,C,11.12p,,5.20a,
+63,"Paupores, Minn.",0,MN,C,f11.23p,,f5.09a,
+68,"Mirbat, Minn.",0,MN,C,f11.31p,,f5.03a,
+73,"Floodwood, Minn.",0,MN,C,11.40p,,4.56a,
+79,"Island, Minn.",0,MN,C,f11.48p,,f4.45a,
+86,"Wawina, Minn.",0,MN,C,f11.57p,,f4.37a,
+90,"Swan River, Minn.",1,MN,C,12.09a,,4.30a,
+95,"Warba, Minn.",0,MN,C,12.19a,,4.20a,
+102,"Blackberry, Minn.",0,MN,C,f12.30a,,f4.11a,
+109,"Grand Rapids, Minn.",1,MN,C,ar 12.52a / lv 12.52a,,ar 3.59a / lv 3.59a,
+114,"Cohasset, Minn.",0,MN,C,1.03a,,3.47a,
+124,"Deer River, Minn.",1,MN,C,1.28a,,3.33a,
+131,"Ball Club, Minn.",0,MN,C,f1.41a,,f3.18a,
+144,"Bena, Minn.",0,MN,C,2.04a,,3.03a,
+151,"Schley, Minn.",0,MN,C,f2.17a,,f2.52a,
+163,"Cass Lake, Minn.",1,MN,C,ar 2.33a / lv 2.38a,lv 7.35a,ar 2.33a / lv 2.38a,ar 10.25a
+167,"Farris, Minn.",0,MN,C,f2.44a,f7.43a,f2.28a,f10.17a
+172,"Rosby, Minn.",0,MN,C,f2.51a,f7.51a,f2.22a,f10.08a
+178,"Bemidji, Minn.",1,MN,C,3.09a,ar 8.00a,2.15a,lv 10.00a
+184,"Wilton, Minn.",0,MN,C,3.22a,,1.57a,
+190,"Solway, Minn.",0,MN,C,3.35a,,1.47a,
+196,"Shevlin, Minn.",0,MN,C,3.48a,,1.37a,
+203,"Bagley, Minn.",1,MN,C,4.02a,,1.27a,
+210,"Ebro, Minn.",0,MN,C,f4.15a,,f1.14a,
+216,"Lengby, Minn.",0,MN,C,4.28a,,1.05a,
+223,"Fosston, Minn.",1,MN,C,4.44a,,12.52a,
+231,"McIntosh, Minn.",0,MN,C,5.00a,,12.38a,
+237,"Erskine, Minn.",0,MN,C,5.14a,,12.28a,
+244,"Mentor, Minn.",0,MN,C,5.28a,,12.17a,
+250,"Tilden Junction, Minn.",0,MN,C,f5.40a,,f12.07a,
+255,"Benoit, Minn.",0,MN,C,f5.48a,,f12.01a,
+262,"Burwell, Minn.",0,MN,C,f5.57a,,f11.52p,
+270,"Crookston, Minn.",1,MN,C,ar 6.10a / lv 6.20a,,ar 11.10p / lv 11.40p,
+280,"Fisher, Minn.",0,MN,C,6.36a,,f10.48p,
+288,"Mallory, Minn.",0,MN,C,f6.46a,,f10.36p,
+294,"East Grand Forks, Minn.",1,MN,C,6.55a,,10.26p,
+295,"Grand Forks, N. Dak.",1,ND,C,ar 7.00a,,lv 10.20p,

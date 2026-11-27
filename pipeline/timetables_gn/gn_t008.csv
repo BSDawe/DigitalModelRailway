@@ -1,0 +1,73 @@
+# Great Northern Railway, Table 8, Kansas City and the Pacific North via Billings and Great Falls (Official Guide, May 1948, page 1071; table dated February 8, 1948; Brendan's
+# image, 27 Nov 2026, printed sideways; scan in the private repo, scans/og1948_gn/p1071_t008.png, key p1071_key.png). MOUNTAIN TIME. Miles as printed, from Kansas City (C.B.&Q.
+# to Billings, 1051). NOT BUILT YET.
+# Nos. 43 / 42: Billings - Great Falls - Shelby (No. 43 stands at Great Falls 6.45 - 7.15 a.m.; No. 42 10.55 - 11.15 p.m.); at Shelby they meet Nos. 3 / 4 (The Oriental Limited:
+# No. 3 Shelby 10.30 a.m., No. 4 ar 8.00 p.m., gn_t004.csv). The Burlington rows at the head (Kansas City *6.00 p.m. - Billings 8.45 p.m.; Denver *8.00 p.m. - Billings 6.15 p.m.;
+# Billings 8.00 a.m. - Kansas City 12.59 p.m., - Denver 7.15 a.m.) are connections, not through trains (Brendan, 27 Nov 2026): not entered.
+# Nos. 239 / 240 (* daily): Moccasin - Great Falls, from / to Lewistown (Table 41). Nos. 373 / 374 (dagger, daily except Sunday): Great Falls - Power, to / from Pendroy (Table 36).
+# Not entered: the Great Falls - Helena - Butte rows (lv Great Falls 11.45 a.m., Helena 2.50, Butte ar 5.20 p.m.; Butte *12.25 p.m., Helena 3.10, Great Falls ar 6.25 p.m.: a
+# connecting service, no number printed); the summary rows Shelby - Spokane - Seattle / Portland / Vancouver (Nos. 3 / 4, 5 / 6 and the Vancouver trains: in gn_t004.csv and the
+# Washington files).
+# Signs: * daily; dagger daily except Sunday; f flag stop.
+#train col=No43 num=43 dir=down days=daily kind=passenger note="Great Northern No. 43, daily: Billings 11.30 p.m. to Great Falls 6.45 - 7.15 a.m. and Shelby 10.15 a.m., for No. 3, The Oriental Limited (Official Guide, May 1948, Table 8, February 8, 1948)." links="connection with No. 3 at Shelby; Burlington connection at Billings"
+#train col=No239 num=239 dir=down days=daily kind=passenger note="Great Northern No. 239, daily: from Lewistown (Table 41), Moccasin 8.17 a.m. to Great Falls 10.55 a.m. (Official Guide, May 1948, Table 8, February 8, 1948)." links="from Lewistown, Table 41"
+#train col=No373 num=373 dir=down days="ex Sun" kind=passenger note="Great Northern No. 373, daily except Sunday: Great Falls 1.10 p.m. to Power 2.09 p.m., on to Pendroy (Table 36) (Official Guide, May 1948, Table 8, February 8, 1948)." links="to Pendroy, Table 36"
+#train col=No42 num=42 dir=up days=daily kind=passenger note="Great Northern No. 42, daily: Shelby 8.10 p.m. (from No. 4), Great Falls 10.55 - 11.15 p.m., to Billings 6.55 a.m. (Official Guide, May 1948, Table 8, February 8, 1948)." links="connection from No. 4 at Shelby; Burlington connection at Billings"
+#train col=No240 num=240 dir=up days=daily kind=passenger note="Great Northern No. 240, daily: Great Falls 2.30 p.m. to Moccasin 5.12 p.m., on to Lewistown (Table 41) (Official Guide, May 1948, Table 8, February 8, 1948)." links="to Lewistown, Table 41"
+#train col=No374 num=374 dir=up days="ex Sun" kind=passenger note="Great Northern No. 374, daily except Sunday: from Pendroy (Table 36), Power 7.15 p.m. to Great Falls 8.10 p.m. (Official Guide, May 1948, Table 8, February 8, 1948)." links="from Pendroy, Table 36"
+mile,station,principal,prov,tz,No43,No239,No373,No42,No240,No374
+1051,"Billings, Mont.",1,MT,M,lv 11.30p,,,ar 6.55a,,
+1063,"Mossmain, Mont.",1,MT,M,11.50p,,,6.25a,,
+1067,"Hesper, Mont.",0,MT,M,f11.59p,,,f6.13a,,
+1072,"Rimrock, Mont.",0,MT,M,f12.09a,,,f6.01a,,
+1077,"Shorey, Mont.",0,MT,M,f12.19a,,,f5.51a,,
+1091,"Comanche, Mont.",0,MT,M,f12.45a,,,f5.25a,,
+1099,"Broadview, Mont.",0,MT,M,1.02a,,,5.09a,,
+1105,"Painted Robe, Mont.",0,MT,M,f1.13a,,,f4.58a,,
+1111,"Belmont, Mont.",0,MT,M,1.24a,,,4.47a,,
+1119,"Cushman, Mont.",0,MT,M,1.39a,,,4.33a,,
+1120,"Slayton, Mont.",0,MT,M,1.42a,,,4.30a,,
+1126,"Vebar, Mont.",0,MT,M,f1.52a,,,f4.19a,,
+1132,"Franklin, Mont.",0,MT,M,f2.03a,,,f4.07a,,
+1138,"Wallum, Mont.",0,MT,M,f2.13a,,,f3.57a,,
+1145,"Hedgesville, Mont.",0,MT,M,2.26a,,,3.45a,,
+1152,"Nihill, Mont.",0,MT,M,f2.40a,,,f3.32a,,
+1158,"Oxford, Mont.",0,MT,M,f2.53a,,,f3.21a,,
+1165,"Judith Gap, Mont.",1,MT,M,3.09a,,,3.09a,,
+1172,"Barrows, Mont.",0,MT,M,f3.21a,,,f2.54a,,
+1177,"Buffalo, Mont.",0,MT,M,3.31a,,,2.44a,,
+1183,"Mendon, Mont.",0,MT,M,f3.41a,,,f2.36a,,
+1188,"Hauck, Mont.",0,MT,M,f3.49a,,,f2.28a,,
+1193,"Hobson, Mont.",0,MT,M,3.57a,,,2.20a,,
+1198,"Moccasin, Mont.",1,MT,M,ar 4.11a / lv 4.11a,lv 8.17a,,ar 2.10a / lv 2.10a,ar 5.12p,
+1203,"Benchland, Mont.",0,MT,M,f4.21a,8.27a,,f1.56a,5.03p,
+1210,"Windham, Mont.",0,MT,M,f4.31a,8.39a,,f1.46a,4.52p,
+1217,"Stanford, Mont.",1,MT,M,4.44a,8.52a,,1.33a,4.39p,
+1222,"Dover, Mont.",0,MT,M,f4.53a,f9.01a,,f1.20a,f4.28p,
+1227,"Merino, Mont.",0,MT,M,f5.01a,9.10a,,f1.12a,4.18p,
+1234,"Geyser, Mont.",0,MT,M,f5.11a,9.22a,,f1.02a,4.08p,
+1240,"Spion Kop, Mont.",0,MT,M,f5.22a,f9.34a,,f12.50a,3.58p,
+1246,"Raynesford, Mont.",0,MT,M,f5.33a,9.44a,,f12.37a,3.45p,
+1251,"Blythe, Mont.",0,MT,M,f5.43a,f9.52a,,f12.26a,f3.33p,
+1257,"Armington, Mont.",1,MT,M,5.54a,10.02a,,12.15a,3.21p,
+1259,"Belt, Mont.",0,MT,M,f5.58a,10.06a,,f12.09a,3.17p,
+1264,"Wayne, Mont.",0,MT,M,f6.07a,f10.16a,,f11.59p,f3.08p,
+1271,"Swift, Mont.",0,MT,M,f6.17a,f10.28a,,f11.46p,f2.56p,
+1276,"Gerber, Mont.",0,MT,M,f6.26a,f10.37a,,f11.37p,f2.47p,
+1279,"Fields, Mont.",0,MT,M,f6.32a,f10.43a,,f11.30p,f2.41p,
+1286,"Great Falls, Mont.",1,MT,M,ar 6.45a / lv 7.15a,ar 10.55a,lv 1.10p,ar 10.55p / lv 11.15p,lv 2.30p,ar 8.10p
+1294,"Manchester, Mont.",0,MT,M,f7.31a,,f1.28p,f10.41p,,f7.52p
+1298,"Vaughn, Mont.",0,MT,M,7.39a,,1.37p,f10.33p,,7.43p
+1305,"Gordon, Mont.",0,MT,M,f7.50a,,f1.51p,f10.22p,,f7.29p
+1312,"Power, Mont.",0,MT,M,8.03a,,ar 2.09p,f10.09p,,lv 7.15p
+1322,"Dutton, Mont.",0,MT,M,8.20a,,,9.53p,,
+1326,"Acme, Mont.",0,MT,M,f8.25a,,,f9.46p,,
+1330,"Collins, Mont.",0,MT,M,8.33a,,,9.39p,,
+1340,"Brady, Mont.",0,MT,M,8.50a,,,9.23p,,
+1347,"Withey, Mont.",0,MT,M,f9.01a,,,f9.11p,,
+1354,"Conrad, Mont.",1,MT,M,9.17a,,,9.00p,,
+1365,"Ledger, Mont.",0,MT,M,9.36a,,,8.41p,,
+1369,"Fowler, Mont.",0,MT,M,f9.44a,,,f8.34p,,
+1376,"Naismith, Mont.",0,MT,M,f9.55a,,,f8.24p,,
+1380,"Andale, Mont.",0,MT,M,f10.03a,,,f8.17p,,
+1385,"Shelby, Mont.",1,MT,M,ar 10.15a,,,lv 8.10p,,

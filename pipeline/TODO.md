@@ -37,6 +37,9 @@ Last updated 26 November 2026 (Version 232).
   except Sunday west of Minot (Table 3); No. 209's 8.30 a.m. at Nolan; No. 12's blotted day sign at Fargo.
   Burlington section (Brendan, 27 Nov 2026): Chicago (Union Station) - St. Paul runs through WITHOUT STOPS for Nos. 1 - 4 until the CB&Q tables come (timetables_gn/gn_t001c_cbq.csv),
   as with the CV trains over the PRR. Branch tables to follow from Brendan: build after them.
+  Page 1071 (27 Nov 2026): Table 8 Billings - Great Falls - Shelby (43 / 42; 239 / 240 Moccasin - Great Falls; 373 / 374 Great Falls - Power) and the Duluth - Grand Forks table
+  (35 / 36; 105 / 106 Cass Lake - Bemidji; its table number not on the image). Burlington connections at Billings are not through trains (Brendan). Name: "The New Empire Builder"
+  everywhere (Brendan, 27 Nov 2026): change wa_build.py's names for Nos. 1 / 2 at the GN build.
 
 ## Fixes queued (Brendan: "don't fix yet"; ask before the next rebuild whether to include them)
 - [ ] SCALING WORK, scheduled (Brendan, 26 Nov 2026: do 1 and 2 on the first build after Thursday 26 Nov, 9 p.m. his time, when his weekly usage resets), planning for

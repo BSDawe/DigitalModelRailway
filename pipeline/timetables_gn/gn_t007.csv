@@ -3,7 +3,8 @@
 # Entered here: Nos. 29 / 30 (St. Paul - Crookston - Grand Forks) from Barnesville (St. Paul - Barnesville is in gn_t002.csv, which has their full station list), and the locals
 # Nos. 131 / 132 (Crookston - Noyes). Nos. 7 / 8, The Winnipeg Limited, are already built from the GN public timetable of the same date (sk_gn_t007.csv); this page agrees with it
 # (No. 7 St. Paul 8.02 p.m. - Winnipeg 9.00 a.m.; No. 8 Winnipeg 7.00 p.m. - St. Paul 8.00 a.m.).
-# Grand Forks (324) is printed as a separate arrival row after Crookston (Crookston - Grand Forks 25 mi, no stations between). St. Vincent (390) is the 131 / 132 locals' station.
+# Grand Forks (324) is printed as a separate arrival row after Crookston; Fisher 7.31 / f11.22, Mallory f7.40 / f11.13 and East Grand Forks 7.50 / 11.05 a.m. are from page 1071
+# (the Duluth - Grand Forks table, gn_duluth_gf.csv), miles from St. Paul by adding Crookston's 299. St. Vincent (390) is the 131 / 132 locals' station.
 # This page also prints No. 30 at Albertville f7.31, Monticello 7.21, Clearwater 6.56 p.m., as Table 2 does.
 # Signs: * daily; dagger daily except Sunday; f flag stop.
 #train col=No29 num=29 dir=down days=daily kind=passenger name="The Red River Limited" note="Great Northern No. 29, daily: St. Paul 9.50 p.m., Barnesville 4.35 a.m., Crookston 7.15 a.m., Grand Forks 7.55 a.m. (Official Guide, May 1948, Table 7, February 8, 1948)." links="St. Paul - Barnesville in gn_t002.csv"
@@ -25,6 +26,9 @@ mile,station,principal,prov,tz,No29,No131,No132,No30
 288,"Greenview, Minn.",0,MN,C,f6.42a,,,f11.58a
 292,"Kittson, Minn.",0,MN,C,f6.51a,,,f11.52a
 299,"Crookston, Minn.",1,MN,C,ar 7.15a,lv 9.05a,ar 6.40p,lv 11.41a
+309,"Fisher, Minn.",0,MN,C,7.31a,,,f11.22a
+317,"Mallory, Minn.",0,MN,C,f7.40a,,,f11.13a
+323,"East Grand Forks, Minn.",1,MN,C,7.50a,,,11.05a
 324,"Grand Forks, N. Dak.",1,ND,C,ar 7.55a,,,lv 11.00a
 305,"Shirley, Minn.",0,MN,C,,f9.23a,f6.12p,
 313,"Euclid, Minn.",0,MN,C,,9.36a,6.00p,
