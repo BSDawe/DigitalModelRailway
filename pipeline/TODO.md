@@ -30,6 +30,11 @@ Last updated 26 November 2026 (Version 232).
   Aurora - Mendota). Empire Builder / Oriental Limited run through St. Paul - Chicago over the CB&Q. CB&Q colour: a silver (Brendan, 26 Nov 2026: "a sort of silver", the Zephyrs);
   Claude's shade #8d99a5 (dark theme #c3ccd4), kept clear of the union-station grey and the CA&E grey band. Chicago Union Station (Brendan, 26 Nov 2026): 41 52 43.92 N,
   87 38 20.10 W (41.878867, -87.638917); a union station (own 'union'), also for the Milwaukee Road, Pennsylvania and Alton trains when they come.
+  Transcribed 27 Nov 2026 (timetables_gn/, Official Guide pp. 1067 - 1070): Table 1 (St. Paul - Willmar - Fargo - Grand Forks - Minot), Table 2 (St. Paul - St. Cloud - Fargo -
+  New Rockford - Minot), Table 3 (Minot - Williston - Havre), Table 4 (Havre - Whitefish - Troy - Sand Point, with Table 5's Idaho rows), Table 7 (Nos. 29 / 30 and the Crookston -
+  Noyes locals 131 / 132). Spokane - Seattle / Portland already in wa_gn_t005a / t005c. Still wanted: the CB&Q Chicago - St. Paul table; branch tables met on the way (12 Casselton /
+  Devils Lake, 24 St. John, 25 Hannah, 28 Sarles, 47 Whitefish - Kalispell) if the branch trains are to run. Questions in the files' heads: No. 9 / 10 daily (Table 1) vs daily
+  except Sunday west of Minot (Table 3); No. 209's 8.30 a.m. at Nolan; No. 12's blotted day sign at Fargo.
 
 ## Fixes queued (Brendan: "don't fix yet"; ask before the next rebuild whether to include them)
 - [ ] SCALING WORK, scheduled (Brendan, 26 Nov 2026: do 1 and 2 on the first build after Thursday 26 Nov, 9 p.m. his time, when his weekly usage resets), planning for
