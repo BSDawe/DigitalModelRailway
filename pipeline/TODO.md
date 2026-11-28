@@ -9,6 +9,8 @@ Last updated 27 November 2026 (Version 240).
 - [ ] CN Table 116 (Longlac - Fort William, Nos. 79 / 80): the Toronto section may be a connection with Nos. 3 / 4 at Longlac rather than through cars (Brendan not certain). Matters for chaining. (23 Oct)
 
 ## Waiting for Brendan
+- [ ] Northern Pacific (Brendan, 27 Nov 2026): Mississippi Rails Northern_Pacific_Ry.kmz (2024-6-20) received, in the private repo traces/msrails/: 582 pieces, about 7,100 mi
+  (MN, ND, MT, ID, WA, OR, WI, the Walla Walla Valley; Abandoned and Structures folders). NOT BUILT: waiting for the NP Official Guide pages.
 - [ ] Chicago interurbans (Brendan, 25 Nov 2026: "I'm gonna do it"): the Chicago North Shore & Milwaukee and the Chicago Aurora & Elgin. Track: Mississippi Rails
   (Chicago_Interurbans_1948.kml, private repo traces/chicago/): CNS&M 263 mi of pieces (with some Milwaukee Road), CA&E 101 mi (main line, Aurora, Batavia, Elgin, Geneva,
   Hillside and Mount Carmel spurs), and the Chicago 'L' by its pre-1947 companies. Stations are unnamed polygons on the interurbans (centroid onto the track; names from the
