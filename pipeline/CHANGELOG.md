@@ -3390,3 +3390,9 @@ A review of the whole project (Brendan: "have a peek through ... suggest improve
   Both now on track, drawn in NP colours. gn_links pieces may carry their own owner.
 - Still straight: Superior - Duluth (NP traces to come).
 - Counts unchanged: 774 lines, 5437 trips, 9035 stops; check_gtfs 0 problems.
+
+## Version 238
+- Superior - Duluth on track (Brendan, 27 Nov 2026): his "GN Path over NP Tracks" piece (own np), joined to the GN line at its south end (0.18 km), through Superior Union
+  Station to the approach into the Duluth Union Depot; Claude's earlier tie at Superior removed. Every Great Northern line is now on track except the last 0.8 mi into the
+  Sioux City Union Depot (end of the trace).
+- Counts unchanged: 774 lines, 5437 trips, 9035 stops; check_gtfs 0 problems.

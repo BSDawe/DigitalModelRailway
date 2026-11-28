@@ -42,7 +42,6 @@ def _graph():
             c = f['geometry']['coordinates']
             if f['properties'].get('status') != 'ok' or not all(-92.25 < p[0] < -92.0 and 46.65 < p[1] < 46.82 for p in c): continue
             add(ab_lines._xy(c), 1.5, 'b', 'np')                                # the GN into Duluth by Northern Pacific trackage rights (Brendan, 27 Nov 2026)
-        add(ab_lines._xy([(-92.107400, 46.726609), (-92.1061363, 46.7285855)]), 1.0, 'b', 'np')          # Superior Union Station to the NP connection
         mp = json.load(open(os.path.join(HERE, 'traces', 'milw', 'mpls_stpaul.geojson')))['features'][0]['geometry']['coordinates']
         k = min(range(len(mp)), key=lambda i: (mp[i][0] + 93.085361) ** 2 + (mp[i][1] - 44.946914) ** 2)
         add(ab_lines._xy(mp[max(0, k - 30):k + 30]), 1.2, 'b', 'union')        # St. Paul Union Depot's approaches (Brendan's Milwaukee Road trace)
