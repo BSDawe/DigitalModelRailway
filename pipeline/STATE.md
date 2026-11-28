@@ -1,7 +1,7 @@
 # The Digital Model Railway — project state
 
 Read this first. It is meant to be enough to start a short, single-task chat without replaying the project's history.
-Last updated 27 November 2026 (Version 238). This file is the current state and the standing rules; the version-by-version history is in CHANGELOG.md.
+Last updated 27 November 2026 (Version 239). This file is the current state and the standing rules; the version-by-version history is in CHANGELOG.md.
 
 ## What this is
 
@@ -350,6 +350,7 @@ After an accepted build: `cp viz_data.json tools/.baseline_viz.json`.
 
 ## Recent versions (one line each; the detail is in CHANGELOG.md)
 
+- 239: the Washington, Idaho & Montana (Palouse - Potlatch - Bovill).
 - 238: Superior - Duluth on NP track through Superior Union Station (Brendan's piece).
 - 237: GN over NP track: Tilden Jct. - Red Lake Falls and Mossmain - Billings.
 - 236: Sioux Falls - Watertown on the South Dakota Central trace.
@@ -357,7 +358,6 @@ After an accepted build: `cp viz_data.json tools/.baseline_viz.json`.
 - 234: GN over the Stone Arch Bridge; Milaca - St. Cloud, Moccasin - Lewistown, Garretson - Sioux Falls on track; Toronto Union Station one stop again.
 - 233: the Great Northern east of Spokane (50 lines, Official Guide May 1948; gnmw_build.py), Chicago - St. Paul over the Burlington; through trains to Seattle.
 - 232: the Alaska Transportation Co. S.S. George Washington, Seattle - Southeast Alaska 8-day cruise.
-- 231: the South Shore Line (Randolph Street - Gary - Michigan City - South Bend; IC into Chicago; July 5 on the Sunday schedule).
 - 223: the Baltimore & Annapolis Railroad (Camden Station - Annapolis, Bladen Street; B&O trackage into Camden drawn as B&O).
 - 222: Portland Traction track from Brendan's corrected KML (1st / 2nd Ave loop, East Portland, Golf Jct.); stations anchored at their streets.
 - 221: Portland Traction stations re-anchored (Linneman Jct. at the junction; Oregon City miles to 3rd and Main).

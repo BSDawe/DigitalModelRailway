@@ -132,3 +132,27 @@ ab_lines.EXT_PLACE['gnmw'] = place
 class _G(dict):
     def get(self, k, d=None): return gid(k[1]) if k[0] == 'gnmw' else d
 ab_lines.EXT_GID = _G(ab_lines.EXT_GID)
+
+# ---------------------------------------------------------------- Washington, Idaho & Montana (Brendan, 27 Nov 2026): Palouse - Potlatch - Bovill
+ab_lines.RAILS['wim'] = dict(kind='V', label='Washington, Idaho & Montana', own='wim', agency='WIM', color='8A5A2B', pfx='WIM')
+def _wim_graph():
+    def feed(add):
+        for f in json.load(open(os.path.join(HERE, 'traces', 'gnmw', 'wim.geojson')))['features']:
+            add(ab_lines._xy(f['geometry']['coordinates']), 1.0, 'b', None)
+    return lambda: ab_lines.make_graph(feed, tie_end=150, tie_loose=60, tie_each=True)
+ab_lines.EXT_GRAPH['sk:wim'] = _wim_graph()
+_WIM_END = json.load(open(os.path.join(HERE, 'traces', 'gnmw', 'wim.geojson')))['features'][0]['geometry']['coordinates']
+def wim_gid(name):
+    n, st = split(name)
+    if canon(n) == 'palouse': return 'NP_PALOUSE'                          # the N.P. station (the WI&M's connection with the N.P. and the GN)
+    return 'WIM_' + re.sub(r'\W+', '_', canon(n).upper()).strip('_')
+def wim_place(name):
+    n, st = split(name); g = wim_gid(name); m = _map().get(g)
+    if m: return (m[0], m[1], 'map', 300)
+    if canon(n) == 'bovill': return (_WIM_END[-1][0], _WIM_END[-1][1], 'piece end', 300)   # the end of the trace (the Milwaukee Road connection)
+    return None
+ab_lines.EXT_PLACE['wim'] = wim_place
+_G0 = ab_lines.EXT_GID.get
+class _G2(dict):
+    def get(self, k, d=None): return wim_gid(k[1]) if k[0] == 'wim' else _G0(k, d)
+ab_lines.EXT_GID = _G2()

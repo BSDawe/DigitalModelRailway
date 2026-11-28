@@ -3396,3 +3396,9 @@ A review of the whole project (Brendan: "have a peek through ... suggest improve
   Station to the approach into the Duluth Union Depot; Claude's earlier tie at Superior removed. Every Great Northern line is now on track except the last 0.8 mi into the
   Sioux City Union Depot (end of the trace).
 - Counts unchanged: 774 lines, 5437 trips, 9035 stops; check_gtfs 0 problems.
+
+## Version 239
+- The Washington, Idaho & Montana Ry. (Brendan, 27 Nov 2026): Palouse - Potlatch - Deary - Bovill, table of March 1948 (Official Guide, May 1948), Nos. 1 - 4 daily except
+  Sunday (timetables_wim/wim_t001.csv; the October Palouse-only file wa_wim_t001.csv removed). Built in gnmw_build (rail wim, kind V, badge WI&M, own colour brown #8a5a2b,
+  a small steam railroad, not an interurban); track from Brendan's Mississippi Rails piece (traces/gnmw/wim.geojson), 46.4 mi traced, 47 printed. Palouse is the N.P. station.
+- Counts: 775 lines, 5441 trips, 9046 stops, 77 agencies; check_gtfs 0 problems.

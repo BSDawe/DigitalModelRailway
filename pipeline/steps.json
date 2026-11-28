@@ -632,7 +632,9 @@
     "timetables_gn/gn_t053.csv",
     "traces/gnmw/gn_links.geojson",
     "traces/gn/gn_mn_nd.geojson",
-    "traces/gn/gn_neche_gretna.geojson"
+    "traces/gn/gn_neche_gretna.geojson",
+    "traces/gnmw/wim.geojson",
+    "timetables_wim/wim_t001.csv"
    ]
   }
  ]
