@@ -1,0 +1,20 @@
+# Northern Pacific Railway, Table 23, Sanborn and Cooperstown - McHenry (Official Guide, May 1948, page 1095; table dated April 4, 1948; Brendan's images, 27 Nov 2026; scans in the private repo, scans/og1948_np/p1095_*.png).
+# CENTRAL TIME. Miles as printed.
+# The Valley City row (No. 141 dagger 8.00 a.m.; No. 142 2.15 p.m.) is page 1090's Valley City - Sanborn run of the same trains (np_t001): join when built.
+# Signs (page 1095 key): * daily; dagger daily except Sunday; double dagger daily except Saturday; pilcrow daily except Monday; f stops on flag; hook sign mixed.
+# Coupon, telegraph, Pullman and Rail-Auto signs not entered.
+# NOT BUILT YET.
+#train col=No141 num=141 dir=down days="ex Sun" kind=passenger note="Northern Pacific No. 141, daily except Sunday: Valley City 8.00 a.m., Sanborn 8.30 a.m., Cooperstown 9.55 a.m., McHenry 10.50 a.m. (Official Guide, May 1948, page 1095, Table 23, Sanborn and Cooperstown - McHenry, April 4, 1948)." links="same train as No. 141 Valley City - Sanborn (np_t001); printed 3-141 (from No. 3)"
+#train col=No142 num=142 dir=up days="ex Sun" kind=passenger note="Northern Pacific No. 142, daily except Sunday: McHenry 11.20 a.m., Cooperstown 12.19 p.m., Sanborn 1.43 p.m., Valley City 2.15 p.m. (Official Guide, May 1948, page 1095, Table 23, Sanborn and Cooperstown - McHenry, April 4, 1948)." links="same train as No. 142 Sanborn - Valley City (np_t001); printed 142-2 (to No. 2, St. Paul 10.00 p.m.)"
+mile,station,principal,prov,tz,No141,No142
+0,"Sanborn, N. Dak.",0,ND,C,lv 8.30a,ar 1.43p
+10,"Rogers, N. Dak.",0,ND,C,8.52a,1.21p
+18,"Dazey, N. Dak.",0,ND,C,9.12a,1.01p
+24,"Walum, N. Dak.",0,ND,C,9.24a,12.48p
+27,"Hannaford, N. Dak.",0,ND,C,9.31a,12.41p
+33,"Shepard, N. Dak.",0,ND,C,f9.44a,f12.26p
+37,"Cooperstown, N. Dak.",1,ND,C,9.55a,12.19p
+46,"Jessie, N. Dak.",0,ND,C,10.14a,11.57a
+51,"Binford, N. Dak.",0,ND,C,10.25a,11.44a
+57,"Mose, N. Dak.",0,ND,C,10.35a,11.32a
+63,"McHenry, N. Dak.",1,ND,C,ar 10.50a,lv 11.20a

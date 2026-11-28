@@ -1,0 +1,25 @@
+# Northern Pacific Railway, Table 19, Jamestown and Leeds (Official Guide, May 1948, page 1095; table dated April 4, 1948; Brendan's images, 27 Nov 2026; scans in the private repo, scans/og1948_np/p1095_*.png).
+# CENTRAL TIME. Miles as printed.
+# Carrington and New Rockford are printed twice (ar. / lve.) with the same times: entered once. Leeds: the GN crossing (GN Table 2 / 12 territory).
+# Signs (page 1095 key): * daily; dagger daily except Sunday; double dagger daily except Saturday; pilcrow daily except Monday; f stops on flag; hook sign mixed.
+# Coupon, telegraph, Pullman and Rail-Auto signs not entered.
+# NOT BUILT YET.
+#train col=No157 num=157 dir=down days="ex Sun" kind=passenger note="Northern Pacific No. 157, daily except Sunday: Jamestown 9.05 a.m. to Leeds 12.25 p.m. (printed 3-157: from St. Paul double-dagger 9.10 p.m. on No. 3) (Official Guide, May 1948, page 1095, Table 19, Jamestown and Leeds, April 4, 1948)." links="from No. 3 at Jamestown"
+#train col=No158 num=158 dir=up days="ex Sun" kind=passenger note="Northern Pacific No. 158, daily except Sunday: Leeds 12.40 p.m. to Jamestown 4.20 p.m. (printed 158-4: on to St. Paul pilcrow 7.45 a.m. on No. 4) (Official Guide, May 1948, page 1095, Table 19, Jamestown and Leeds, April 4, 1948)." links="to No. 4 at Jamestown"
+mile,station,principal,prov,tz,No157,No158
+0,"Jamestown, N. Dak.",1,ND,C,lv 9.05a,ar 4.20p
+6,"Parkhurst, N. Dak.",0,ND,C,f9.18a,f4.06p
+13,"Buchanan, N. Dak.",0,ND,C,f9.31a,3.53p
+21,"Pingree, N. Dak.",0,ND,C,9.45a,3.38p
+28,"Edmunds, N. Dak.",0,ND,C,9.57a,3.26p
+35,"Melville, N. Dak.",0,ND,C,10.08a,3.13p
+44,"Carrington, N. Dak.",1,ND,C,10.31a,2.52p
+48,"Guptill, N. Dak.",0,ND,C,f10.39a,f2.42p
+52,"Barlow, N. Dak.",0,ND,C,10.45a,2.35p
+60,"New Rockford, N. Dak.",1,ND,C,10.59a,2.20p
+71,"Sheyenne, N. Dak.",0,ND,C,11.18a,1.58p
+79,"Oberon, N. Dak.",1,ND,C,11.35a,1.41p
+83,"Lallie, N. Dak.",0,ND,C,f11.41a,f1.33p
+90,"Minnewaukan, N. Dak.",0,ND,C,11.53a,1.19p
+99,"Brinsmade, N. Dak.",0,ND,C,12.07p,1.02p
+108,"Leeds, N. Dak.",1,ND,C,ar 12.25p,lv 12.40p

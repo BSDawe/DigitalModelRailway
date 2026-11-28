@@ -14,7 +14,8 @@ Last updated 27 November 2026 (Version 240).
   Transcribed (timetables_np/, pages 1090 - 1094, 27 Nov 2026): main line np_t001 (St. Paul - Dickinson), np_t002 (Dickinson - Logan), np_t002h (via Helena), np_t002b (via
   Butte), np_t003 (Butte / Garrison - Spokane; the Washington part was done in October, wa_np_t003a-c); Table 5 Duluth - Brainerd - Staples (np_t005: Nos. 55 - 58, the Duluth
   sections); Table 6 Duluth Short Line (np_t006); 7 Grantsburg; 8 Cloquet; 11 Brainerd - International Falls; 14 Manitoba Junction - Winnipeg; 15 Streeter (and LaMoure - Oakes);
-  16 Marion; 17 Oberon - Esmond; 18 Fergus Falls branch. Readings to check are in each file's UNSURE lines (No. 4's 7 1/2-hour stand at Glendive; the Gardiner branch table
+  16 Marion; 17 Oberon - Esmond; 18 Fergus Falls branch; page 1095: 19 Leeds, 20 Turtle Lake, 21 Wilton, 22 Jamestown - Oakes, 23 McHenry, 25 Morris, 26 Mott,
+  27 Killdeer, 30 Taylors Falls, 30a Linton (21a Redwater and 28 Sidney are buses: not entered). Readings to check are in each file's UNSURE lines (No. 4's 7 1/2-hour stand at Glendive; the Gardiner branch table
   wanted for the Park season; the NP station at Winnipeg). Named trains (Brendan): 42 / 43 The Adventureland.
 - [ ] Chicago interurbans (Brendan, 25 Nov 2026: "I'm gonna do it"): the Chicago North Shore & Milwaukee and the Chicago Aurora & Elgin. Track: Mississippi Rails
   (Chicago_Interurbans_1948.kml, private repo traces/chicago/): CNS&M 263 mi of pieces (with some Milwaukee Road), CA&E 101 mi (main line, Aurora, Batavia, Elgin, Geneva,

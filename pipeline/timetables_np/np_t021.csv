@@ -1,0 +1,25 @@
+# Northern Pacific Railway, Table 21, Jamestown and Wilton (Official Guide, May 1948, page 1095; table dated April 4, 1948; Brendan's images, 27 Nov 2026; scans in the private repo, scans/og1948_np/p1095_*.png).
+# CENTRAL TIME. Miles as printed.
+# MILES: the table prints miles from Pingree (0 - 93) and none for Jamestown and Buchanan; here Jamestown 0, Buchanan 13, Pingree 21 (Table 19) and Pingree + the printed miles.
+# UNSURE: No. 148 leaves Wilton dagger 2.10 p.m. (read; could be 12.10, which would leave 2 h 15 min for the 4 mi to Still).
+# Signs (page 1095 key): * daily; dagger daily except Sunday; double dagger daily except Saturday; pilcrow daily except Monday; f stops on flag; hook sign mixed.
+# Coupon, telegraph, Pullman and Rail-Auto signs not entered.
+# NOT BUILT YET.
+#train col=No147 num=147 dir=down days="ex Sun" kind=passenger note="Northern Pacific No. 147, daily except Sunday: Jamestown 9.20 a.m. by Pingree to Wilton 1.40 p.m. (printed 3-147: from St. Paul double-dagger 9.10 p.m. on No. 3) (Official Guide, May 1948, page 1095, Table 21, Jamestown and Wilton, April 4, 1948)." links="from No. 3 at Jamestown"
+#train col=No148 num=148 dir=up days="ex Sun" kind=passenger note="Northern Pacific No. 148, daily except Sunday: Wilton 2.10 p.m. by Pingree to Jamestown 6.15 p.m. (printed 148-4: on to St. Paul on No. 4) (Official Guide, May 1948, page 1095, Table 21, Jamestown and Wilton, April 4, 1948)." links="to No. 4 at Jamestown"
+mile,station,principal,prov,tz,No147,No148
+0,"Jamestown, N. Dak.",1,ND,C,lv 9.20a,ar 6.15p
+13,"Buchanan, N. Dak.",0,ND,C,9.52a,5.45p
+21,"Pingree, N. Dak.",0,ND,C,10.10a,5.29p
+30,"Vashti, N. Dak.",0,ND,C,10.29a,5.10p
+36,"Goldwin, N. Dak.",0,ND,C,10.44a,4.56p
+42,"Woodworth, N. Dak.",0,ND,C,10.55a,4.45p
+53,"Pettibone, N. Dak.",0,ND,C,11.20a,4.20p
+58,"Lake Williams, N. Dak.",0,ND,C,11.31a,4.10p
+66,"Robinson, N. Dak.",0,ND,C,11.49a,3.53p
+76,"Tuttle, N. Dak.",0,ND,C,12.12p,3.32p
+84,"Arena, N. Dak.",0,ND,C,12.31p,3.14p
+90,"Wing, N. Dak.",0,ND,C,12.44p,3.02p
+102,"Regan, N. Dak.",0,ND,C,1.11p,2.36p
+106,"Still, N. Dak.",0,ND,C,f1.22p,2.25p
+114,"Wilton, N. Dak.",1,ND,C,ar 1.40p,lv 2.10p

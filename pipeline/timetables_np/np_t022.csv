@@ -1,0 +1,21 @@
+# Northern Pacific Railway, Table 22, Jamestown and Oakes (Official Guide, May 1948, page 1095; table dated April 4, 1948; Brendan's images, 27 Nov 2026; scans in the private repo, scans/og1948_np/p1095_*.png).
+# CENTRAL TIME. Miles as printed.
+# Reeves: 'f - -' (flag stop, no time): left out. The LaMoure - Oakes part was also printed in Table 15 (np_t015.csv's note; np_t015o.csv removed: it was this No. 154).
+# Independence (mile 54 here, 5 mi from LaMoure) is where this line meets the Fargo - Streeter line of Table 15 (its Independence, 5 mi east of LaMoure).
+# Signs (page 1095 key): * daily; dagger daily except Sunday; double dagger daily except Saturday; pilcrow daily except Monday; f stops on flag; hook sign mixed.
+# Coupon, telegraph, Pullman and Rail-Auto signs not entered.
+# NOT BUILT YET.
+#train col=No154 num=154 dir=down days="ex Sun" kind=mixed note="Northern Pacific No. 154, mixed, daily except Sunday: Jamestown 8.50 a.m., LaMoure 11.19 - 11.38 a.m., Oakes 12.35 p.m. (printed 3-154: from St. Paul double-dagger 9.10 p.m. on No. 3) (Official Guide, May 1948, page 1095, Table 22, Jamestown and Oakes, April 4, 1948)." links="from No. 3 at Jamestown"
+#train col=No155 num=155 dir=up days="ex Sun" kind=mixed note="Northern Pacific No. 155, mixed, daily except Sunday: Oakes 1.50 p.m., LaMoure 3.05 p.m., Jamestown 5.10 p.m. (printed 155-4: on to St. Paul on No. 4) (Official Guide, May 1948, page 1095, Table 22, Jamestown and Oakes, April 4, 1948)." links="to No. 4 at Jamestown; connection with No. 140 at Independence (Table 15)"
+mile,station,principal,prov,tz,No154,No155
+0,"Jamestown, N. Dak.",1,ND,C,lv 8.50a,ar 5.10p
+7,"Reeves, N. Dak.",0,ND,C,,
+13,"Ypsilanti, N. Dak.",0,ND,C,9.30a,4.29p
+19,"Montpelier, N. Dak.",0,ND,C,9.49a,4.14p
+26,"Adrian, N. Dak.",0,ND,C,10.12a,3.57p
+33,"Dickey, N. Dak.",0,ND,C,10.32a,3.43p
+41,"Grand Rapids, N. Dak.",0,ND,C,10.58a,3.24p
+49,"LaMoure, N. Dak.",1,ND,C,ar 11.19a / lv 11.38a,3.05p
+54,"Independence, N. Dak.",0,ND,C,11.57a,2.40p
+61,"Glover, N. Dak.",0,ND,C,12.17p,2.08p
+69,"Oakes, N. Dak.",1,ND,C,ar 12.35p,lv 1.50p

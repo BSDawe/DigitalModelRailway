@@ -1,0 +1,23 @@
+# Northern Pacific Railway, Table 25, Morris Branch (Official Guide, May 1948, page 1095; table dated May 18, 1947; Brendan's images, 27 Nov 2026; scans in the private repo, scans/og1948_np/p1095_*.png).
+# CENTRAL TIME. Miles as printed.
+# Signs (page 1095 key): * daily; dagger daily except Sunday; double dagger daily except Saturday; pilcrow daily except Monday; f stops on flag; hook sign mixed.
+# Coupon, telegraph, Pullman and Rail-Auto signs not entered.
+# NOT BUILT YET.
+#train col=No29 num=29 dir=down days="ex Sun" kind=passenger note="Northern Pacific No. 29, daily except Sunday: Little Falls 11.30 a.m. to Morris 2.50 p.m. (printed 7-29: from St. Paul 8.42 a.m. on No. 7) (Official Guide, May 1948, page 1095, Table 25, Morris Branch, May 18, 1947)." links="from No. 7 at Little Falls"
+#train col=No30 num=30 dir=up days="ex Sun" kind=passenger note="Northern Pacific No. 30, daily except Sunday: Morris 7.30 a.m. to Little Falls 10.35 a.m. (printed 30-8: on to St. Paul 10.25 p.m. on No. 8) (Official Guide, May 1948, page 1095, Table 25, Morris Branch, May 18, 1947)." links="to No. 8 at Little Falls"
+mile,station,principal,prov,tz,No29,No30
+0,"Little Falls, Minn.",1,MN,C,lv 11.30a,ar 10.35a
+8,"Flensburg, Minn.",0,MN,C,11.49a,10.13a
+15,"Swanville, Minn.",0,MN,C,12.05p,9.59a
+20,"Burtrum, Minn.",0,MN,C,12.15p,9.50a
+24,"Grey Eagle, Minn.",0,MN,C,12.25p,9.41a
+28,"Ward Springs, Minn.",0,MN,C,12.32p,f9.34a
+36,"Sauk Centre, Minn.",1,MN,C,12.50p,9.17a
+42,"Stiles, Minn.",0,MN,C,f1.02p,f9.06a
+47,"Westport, Minn.",0,MN,C,1.15p,8.54a
+52,"Villard, Minn.",0,MN,C,1.26p,8.44a
+59,"Glenwood, Minn.",1,MN,C,1.42p,8.30a
+68,"Starbuck, Minn.",0,MN,C,2.01p,8.09a
+74,"New Prairie, Minn.",0,MN,C,f2.15p,f7.57a
+78,"Cyrus, Minn.",0,MN,C,2.25p,7.49a
+87,"Morris, Minn.",1,MN,C,ar 2.50p,lv 7.30a

@@ -1,0 +1,21 @@
+# Northern Pacific Railway, Table 20, Carrington and Turtle Lake (Official Guide, May 1948, page 1095; table dated April 4, 1948; Brendan's images, 27 Nov 2026; scans in the private repo, scans/og1948_np/p1095_*.png).
+# CENTRAL TIME. Miles as printed.
+# Signs (page 1095 key): * daily; dagger daily except Sunday; double dagger daily except Saturday; pilcrow daily except Monday; f stops on flag; hook sign mixed.
+# Coupon, telegraph, Pullman and Rail-Auto signs not entered.
+# NOT BUILT YET.
+#train col=No159 num=159 dir=down days="ex Sun" kind=mixed note="Northern Pacific No. 159, mixed, daily except Sunday: Carrington 11.35 a.m. to Turtle Lake 4.20 p.m. (Official Guide, May 1948, page 1095, Table 20, Carrington and Turtle Lake, April 4, 1948)."
+#train col=No160 num=160 dir=up days="ex Sun" kind=mixed note="Northern Pacific No. 160, mixed, daily except Sunday: Turtle Lake 7.05 a.m. to Carrington 11.05 a.m. (Official Guide, May 1948, page 1095, Table 20, Carrington and Turtle Lake, April 4, 1948)."
+mile,station,principal,prov,tz,No159,No160
+0,"Carrington, N. Dak.",1,ND,C,lv 11.35a,ar 11.05a
+7,"Dover, N. Dak.",0,ND,C,f11.52a,f10.42a
+13,"Sykeston, N. Dak.",0,ND,C,12.15p,10.26a
+20,"Heaton, N. Dak.",0,ND,C,12.33p,10.07a
+27,"Bowdon, N. Dak.",0,ND,C,1.01p,9.46a
+33,"Chaseley, N. Dak.",0,ND,C,1.18p,9.31a
+38,"Hurdsfield, N. Dak.",0,ND,C,1.40p,9.17a
+47,"Goodrich, N. Dak.",0,ND,C,2.15p,8.47a
+54,"Denhoff, N. Dak.",0,ND,C,2.42p,8.33a
+63,"McClusky, N. Dak.",0,ND,C,3.15p,8.08a
+69,"Picardville, N. Dak.",0,ND,C,3.31p,7.43a
+76,"Mercer, N. Dak.",0,ND,C,3.53p,7.25a
+84,"Turtle Lake, N. Dak.",1,ND,C,ar 4.20p,lv 7.05a

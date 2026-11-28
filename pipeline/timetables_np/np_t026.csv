@@ -1,0 +1,27 @@
+# Northern Pacific Railway, Table 26, Mandan and Mott (Official Guide, May 1948, page 1095; table dated April 4, 1948; Brendan's images, 27 Nov 2026; scans in the private repo, scans/og1948_np/p1095_*.png).
+# MOUNTAIN TIME. Miles as printed.
+# Mandan: the main-line station (Mountain time on the branches; the main line prints both clocks at Mandan).
+# Signs (page 1095 key): * daily; dagger daily except Sunday; double dagger daily except Saturday; pilcrow daily except Monday; f stops on flag; hook sign mixed.
+# Coupon, telegraph, Pullman and Rail-Auto signs not entered.
+# NOT BUILT YET.
+#train col=No161 num=161 dir=down days="ex Sun" kind=passenger note="Northern Pacific No. 161, daily except Sunday: Mandan 12.40 p.m. to Mott 5.10 p.m. Mountain time (Official Guide, May 1948, page 1095, Table 26, Mandan and Mott, April 4, 1948)."
+#train col=No162 num=162 dir=up days="ex Sun" kind=passenger note="Northern Pacific No. 162, daily except Sunday: Mott 5.50 a.m. to Mandan 10.00 a.m. Mountain time (Official Guide, May 1948, page 1095, Table 26, Mandan and Mott, April 4, 1948)."
+mile,station,principal,prov,tz,No161,No162
+0,"Mandan, N. Dak.",1,ND,M,lv 12.40p,ar 10.00a
+13,"Schmidt, N. Dak.",0,ND,M,f1.15p,f9.28a
+20,"Huff, N. Dak.",0,ND,M,1.33p,9.15a
+28,"Fort Rice, N. Dak.",0,ND,M,1.48p,9.01a
+37,"Cannon Ball, N. Dak.",0,ND,M,2.05p,8.44a
+47,"Solen, N. Dak.",0,ND,M,2.31p,8.19a
+54,"Breien, N. Dak.",0,ND,M,2.44p,8.06a
+58,"Timmer, N. Dak.",0,ND,M,2.52p,7.59a
+66,"Gall, N. Dak.",0,ND,M,f3.06p,f7.46a
+70,"Flasher, N. Dak.",0,ND,M,3.15p,7.38a
+79,"Lark, N. Dak.",0,ND,M,3.33p,7.21a
+89,"Carson, N. Dak.",0,ND,M,3.53p,7.02a
+95,"Heil, N. Dak.",0,ND,M,4.05p,6.49a
+102,"Elgin, N. Dak.",0,ND,M,4.21p,6.35a
+108,"New Leipzig, N. Dak.",0,ND,M,4.33p,6.25a
+112,"Odessa, N. Dak.",0,ND,M,f4.41p,f6.18a
+118,"Burt, N. Dak.",0,ND,M,4.53p,6.06a
+127,"Mott, N. Dak.",1,ND,M,ar 5.10p,lv 5.50a

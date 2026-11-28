@@ -1,0 +1,24 @@
+# Northern Pacific Railway, Table 27, Mandan and Killdeer (Official Guide, May 1948, page 1095; table dated April 4, 1948; Brendan's images, 27 Nov 2026; scans in the private repo, scans/og1948_np/p1095_*.png).
+# MOUNTAIN TIME. Miles as printed.
+# Signs (page 1095 key): * daily; dagger daily except Sunday; double dagger daily except Saturday; pilcrow daily except Monday; f stops on flag; hook sign mixed.
+# Coupon, telegraph, Pullman and Rail-Auto signs not entered.
+# NOT BUILT YET.
+#train col=No163 num=163 dir=down days="ex Sun" kind=passenger note="Northern Pacific No. 163, daily except Sunday: Mandan 12.35 p.m. to Killdeer 5.05 p.m. Mountain time (Official Guide, May 1948, page 1095, Table 27, Mandan and Killdeer, April 4, 1948)."
+#train col=No164 num=164 dir=up days="ex Sun" kind=passenger note="Northern Pacific No. 164, daily except Sunday: Killdeer 5.40 a.m. to Mandan 9.40 a.m. Mountain time (Official Guide, May 1948, page 1095, Table 27, Mandan and Killdeer, April 4, 1948)."
+mile,station,principal,prov,tz,No163,No164
+0,"Mandan, N. Dak.",1,ND,M,lv 12.35p,ar 9.40a
+11,"Harmon, N. Dak.",0,ND,M,f1.00p,f9.13a
+21,"Price, N. Dak.",0,ND,M,1.20p,8.54a
+28,"Sanger, N. Dak.",0,ND,M,1.35p,8.41a
+36,"Hensler, N. Dak.",0,ND,M,1.52p,8.26a
+44,"Fort Clark, N. Dak.",0,ND,M,2.10p,8.09a
+53,"Stanton, N. Dak.",0,ND,M,2.29p,7.52a
+65,"Hazen, N. Dak.",0,ND,M,2.52p,7.29a
+74,"Beulah, N. Dak.",0,ND,M,3.12p,7.13a
+81,"Zap, N. Dak.",0,ND,M,3.30p,6.59a
+88,"Golden Valley, N. Dak.",0,ND,M,3.45p,6.46a
+95,"Dodge, N. Dak.",0,ND,M,4.00p,6.33a
+102,"Halliday, N. Dak.",0,ND,M,4.16p,6.19a
+108,"Werner, N. Dak.",0,ND,M,4.28p,6.08a
+115,"Dunn Center, N. Dak.",0,ND,M,4.45p,5.53a
+122,"Killdeer, N. Dak.",1,ND,M,ar 5.05p,lv 5.40a

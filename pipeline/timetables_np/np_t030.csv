@@ -1,0 +1,16 @@
+# Northern Pacific Railway, Table 30, Taylors Falls Branch (Official Guide, May 1948, page 1095; table dated May 18, 1947; Brendan's images, 27 Nov 2026; scans in the private repo, scans/og1948_np/p1095_*.png).
+# CENTRAL TIME. Miles as printed.
+# Center City: the mile figure is blotted; 11 (Brendan, 27 Nov 2026). Taylors Falls is in Minnesota (St. Croix River).
+# Signs (page 1095 key): * daily; dagger daily except Sunday; double dagger daily except Saturday; pilcrow daily except Monday; f stops on flag; hook sign mixed.
+# Coupon, telegraph, Pullman and Rail-Auto signs not entered.
+# NOT BUILT YET.
+#train col=No726 num=726 dir=down days="ex Sun" kind=mixed note="Northern Pacific No. 726, mixed, daily except Sunday: Wyoming 9.30 a.m. to Taylors Falls 10.09 a.m. (printed 4-62-726: Minneapolis 7.20 a.m., St. Paul 8.35, White Bear Lake 9.00 a.m. on No. 62) (Official Guide, May 1948, page 1095, Table 30, Taylors Falls Branch, May 18, 1947)." links="from No. 62 at Wyoming"
+#train col=No725 num=725 dir=up days="ex Sun" kind=mixed note="Northern Pacific No. 725, mixed, daily except Sunday: Taylors Falls 10.40 a.m. to Wyoming 11.45 a.m. (printed 725-61: on to White Bear Lake 12.15 p.m. and St. Paul 12.40 p.m. on No. 61) (Official Guide, May 1948, page 1095, Table 30, Taylors Falls Branch, May 18, 1947)." links="to No. 61 at Wyoming"
+mile,station,principal,prov,tz,No726,No725
+0,"Wyoming, Minn.",1,MN,C,lv 9.30a,ar 11.45a
+7,"Chisago City, Minn.",0,MN,C,9.43a,11.30a
+9,"Lindstrom, Minn.",0,MN,C,9.49a,11.15a
+11,"Center City, Minn.",0,MN,C,9.52a,11.04a
+14,"Shafers, Minn.",0,MN,C,9.58a,10.54a
+17,"Franconia, Minn.",0,MN,C,f10.04a,f10.47a
+20,"Taylors Falls, Minn.",1,MN,C,ar 10.09a,lv 10.40a

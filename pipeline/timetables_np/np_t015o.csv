@@ -1,6 +1,0 @@
-# Northern Pacific Railway, Table 15 (part), LaMoure - Oakes (Official Guide, May 1948, page 1094; table dated April 4, 1948). CENTRAL TIME. Miles as printed. The return (Oakes dagger 1.50 p.m., "connection
-# made at Independence") prints no other time: not entered. Signs read as # (mixed, daily except Sunday): UNSURE. NOT BUILT YET.
-#train col=MixLO num="" dir=down days="ex Sun" kind=mixed note="Northern Pacific mixed train (no number printed), daily except Sunday: LaMoure 11.38 a.m. to Oakes 12.35 p.m. (Official Guide, May 1948, page 1094, Table 15, April 4, 1948)." links="from No. 139 at LaMoure (9.46 a.m.)"
-mile,station,principal,prov,tz,MixLO
-0,"LaMoure, N. Dak.",1,ND,C,lv 11.38a
-21,"Oakes, N. Dak.",1,ND,C,ar 12.35p

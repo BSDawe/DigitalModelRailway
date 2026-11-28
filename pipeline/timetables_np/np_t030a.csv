@@ -1,0 +1,17 @@
+# Northern Pacific Railway, Table 30a, Mandan, McKenzie and Linton (Official Guide, May 1948, page 1095; table dated April 4, 1948; Brendan's images, 27 Nov 2026; scans in the private repo, scans/og1948_np/p1095_*.png).
+# CENTRAL TIME. Miles as printed.
+# The Mandan - McKenzie rows (No. 175 Mandan dagger 9.45 - McKenzie 11.00 a.m.; No. 176 McKenzie 4.30 - Mandan 6.05 p.m.; 24 mi) are the main-line run of the same trains
+# by Bismarck (np_t001, page 1090): join when built. 'Linton' is printed 'lve. Linton arr.' at the foot (the end of the line).
+# Signs (page 1095 key): * daily; dagger daily except Sunday; double dagger daily except Saturday; pilcrow daily except Monday; f stops on flag; hook sign mixed.
+# Coupon, telegraph, Pullman and Rail-Auto signs not entered.
+# NOT BUILT YET.
+#train col=No175 num=175 dir=down days="ex Sun" kind=mixed note="Northern Pacific No. 175, mixed, daily except Sunday: Mandan 9.45 a.m., McKenzie 11.00 - 11.30 a.m., Linton 1.35 p.m. Central time (Official Guide, May 1948, page 1095, Table 30a, Mandan, McKenzie and Linton, April 4, 1948)." links="same train as No. 175 Mandan - Bismarck - McKenzie (np_t001)"
+#train col=No176 num=176 dir=up days="ex Sun" kind=mixed note="Northern Pacific No. 176, mixed, daily except Sunday: Linton 2.20 p.m., McKenzie 4.20 - 4.30 p.m., Mandan 6.05 p.m. Central time (Official Guide, May 1948, page 1095, Table 30a, Mandan, McKenzie and Linton, April 4, 1948)." links="same train as No. 176 McKenzie - Bismarck - Mandan (np_t001)"
+mile,station,principal,prov,tz,No175,No176
+0,"McKenzie, N. Dak.",1,ND,C,lv 11.30a,ar 4.20p
+7,"Burdick, N. Dak.",0,ND,C,f11.46a,f3.59p
+12,"Moffitt, N. Dak.",0,ND,C,11.59a,3.49p
+20,"Dana, N. Dak.",0,ND,C,f12.18p,f3.27p
+28,"Hazelton, N. Dak.",0,ND,C,12.46p,3.10p
+37,"Temvik, N. Dak.",0,ND,C,1.15p,2.40p
+45,"Linton, N. Dak.",1,ND,C,ar 1.35p,lv 2.20p

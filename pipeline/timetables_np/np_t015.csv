@@ -1,7 +1,7 @@
 # Northern Pacific Railway, Table 15, Fargo and Southwestern and Streeter Branches: Fargo - Lisbon - LaMoure - Edgeley - Streeter (Official Guide, May 1948, page 1094; table dated April 4, 1948).
 # CENTRAL TIME. Miles as printed from Fargo. Edgeley is printed twice (ar. / lve.) with the same times: entered once.
-# LaMoure - Oakes (21 mi), printed between the two LaMoure rows: a train LaMoure 11.38 a.m. - Oakes arr. 12.35 p.m. (sign read as # mixed, daily except Sunday) and Oakes lve.
-# dagger 1.50 p.m. with a box at LaMoure ("Connection made at Independence"; no LaMoure time). Entered as np_t015o.csv (the outbound mixed only; the return has no times).
+# LaMoure - Oakes (21 mi), printed between the two LaMoure rows (LaMoure 11.38 a.m. - Oakes 12.35 p.m.; Oakes dagger 1.50 p.m., "connection made at Independence"): these are
+# Nos. 154 / 155 of Table 22, Jamestown - LaMoure - Oakes (np_t022.csv, page 1095), not entered here.
 # Signs (page 1094 key): * daily; dagger daily except Sunday; double dagger daily except Saturday; pilcrow daily except Monday; a stops on flag to pick up or let off revenue
 # passengers (entered f); f stops on flag; # mixed train daily except Sunday; hook sign mixed; box: connection made at Independence. Coupon, telegraph, Pullman signs not entered.
 # NOT BUILT YET.
