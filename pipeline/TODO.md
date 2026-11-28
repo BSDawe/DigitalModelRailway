@@ -46,6 +46,9 @@ Last updated 27 November 2026 (Version 238).
 - [ ] on_lines.SHARED: the ('oncn' / 'oncp', 'toronto union') -> TORONTO_UNION entries were lost into a comment in V217; joined at assembly since V234 (merge_stations). Restore them
   in SHARED the next time on_build is re-run anyway.
 
+- [ ] Washington, Idaho & Montana Ry. (Brendan, 27 Nov 2026): Palouse - Potlatch - Bovill, transcribed whole (timetables_wim/wim_t001.csv, table of March 1948; replaces the
+  Palouse-only wa_wim_t001.csv of October). NOT BUILT: track wanted beyond the Washington State KMZ's 3.7 mi Palouse - Idaho line piece.
+
 ## Fixes queued (Brendan: "don't fix yet"; ask before the next rebuild whether to include them)
 - [ ] SCALING WORK, scheduled (Brendan, 26 Nov 2026: do 1 and 2 on the first build after Thursday 26 Nov, 9 p.m. his time, when his weekly usage resets), planning for
   timetables all the way to Panama (perhaps 4 - 6 times today's data):

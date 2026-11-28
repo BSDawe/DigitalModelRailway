@@ -1,0 +1,22 @@
+# Washington, Idaho & Montana Ry. Co. (C. L. Billings, President and General Manager, Lewiston, Idaho), table of March, 1948 (Official Guide, May 1948; Brendan's image,
+# 27 Nov 2026; scan in the private repo, scans/og1948_wim/wim.png). STANDARD - PACIFIC TIME. Miles as printed. Supersedes ../wa_wim_t001.csv (October 2026: the
+# Palouse call only, under the Washington stop-at-the-state-line rule). NOT BUILT YET: track wanted (the Washington State KMZ has only Palouse - the Idaho line, 3.7 mi).
+# Connections: 1 at Palouse with the N.P. Ry. and Great Northern Ry.; 2 at Bovill with the C.M.St.P.&Pac. R.R. Lairds (0) and Purdue (50) have no times.
+# Signs: dagger daily except Sunday; f stops on signal. No. 4 runs Palouse - Potlatch only; No. 1 Potlatch - Palouse only.
+#train col=No4 num=4 dir=down days="ex Sun" kind=passenger note="Washington, Idaho & Montana No. 4, daily except Sunday: Palouse 4.10 p.m. to Potlatch 4.35 p.m. (Official Guide, May 1948, table of March 1948)."
+#train col=No2 num=2 dir=down days="ex Sun" kind=passenger note="Washington, Idaho & Montana No. 2, daily except Sunday: Palouse 11.05 a.m. by Potlatch and Deary to Bovill 1.13 p.m.; Milwaukee Road connection at Bovill (Official Guide, May 1948, table of March 1948)."
+#train col=No1 num=1 dir=up days="ex Sun" kind=passenger note="Washington, Idaho & Montana No. 1, daily except Sunday: Potlatch 8.20 a.m. to Palouse 8.45 a.m.; N.P. and Great Northern connections at Palouse (Official Guide, May 1948, table of March 1948)."
+#train col=No3 num=3 dir=up days="ex Sun" kind=passenger note="Washington, Idaho & Montana No. 3, daily except Sunday: Bovill 1.45 p.m. by Deary and Potlatch to Palouse 3.52 p.m. (Official Guide, May 1948, table of March 1948)."
+mile,station,principal,prov,tz,No4,No2,No1,No3
+1,"Palouse, Wash.",1,WA,P,lv 4.10p,f11.05a,ar 8.45a,ar 3.52p
+5,"Wellesley, Idaho",0,ID,P,f4.21p,f11.17a,f8.34a,f3.41p
+8,"Kennedy Ford, Idaho",0,ID,P,f4.28p,f11.24a,f8.27a,f3.34p
+12,"Potlatch, Idaho",1,ID,P,ar 4.35p,ar 11.31a / lv 11.41a,lv 8.20a,ar 3.12p / lv 3.26p
+15,"Princeton, Idaho",0,ID,P,,11.51a,,3.04p
+21,"Harvard, Idaho",0,ID,P,,12.04p,,2.51p
+26,"Yale, Idaho",0,ID,P,,f12.17p,,f2.38p
+30,"Stanford, Idaho",0,ID,P,,f12.22p,,f2.32p
+32,"Vassar, Idaho",0,ID,P,,12.30p,,2.25p
+35,"Deary, Idaho",1,ID,P,,12.43p,,2.17p
+40,"Cornell, Idaho",0,ID,P,,f12.57p,,f2.01p
+48,"Bovill, Idaho",1,ID,P,,ar 1.13p,,lv 1.45p
