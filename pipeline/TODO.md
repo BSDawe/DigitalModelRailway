@@ -150,6 +150,8 @@ Maritime tables where the traced line differs from the printed miles by 1 mi and
 - [ ] ESL livery colour: the placeholder is #7a2430. (V145)
 
 ## Work for Claude
+- [ ] Butte - Silver Bow (Brendan, 27 Nov 2026): the NP line is hidden where it runs beside the BA&P (the shared-track rule draws the stretch once): draw the NP's own track there as well,
+  parallel to the BA&P. Do at the next gnmw / npmw build.
 - [ ] Build-out order (Brendan, 8 Nov 2026): 1 CN Maritimes (done, V148), 2 CP Maritimes, 3 short lines with 1948 passenger service, 4 U.S. connections (whole U.S. railways in time).
 - [ ] Before the U.S. build-out: split parts/on_build.json (25 MB: Ontario, Quebec and the Maritimes in one file) by region or railway, so it stays under GitHub's 50 MB warning (100 MB refuses a push) and each version commits only the changed region; then have the page load a region's data when it is viewed. CP Maritimes is small enough to go first (Brendan, 10 Nov 2026).
 - [ ] CP Table 8 south of the border (Newport - Wells River - Boston / New York); Table 25 (Montreal - Maine coast; Table 26, the Barre & Chelsea, done in Version 189); the Bangor & Aroostook and Maine Central / B&M connections at Brownville Jct., Mattawamkeag and Vanceboro (The Gull and The Pine Tree beyond Vanceboro); the Quebec - Levis ferry (QC Nos. 2 / 5); the Beebe Jct. - Rock Island bus. (25 Oct; U.S. stage) CP Table 10 east of Boundary and the N.B. tables: built (V159).
