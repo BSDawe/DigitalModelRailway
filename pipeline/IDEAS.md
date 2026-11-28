@@ -11,6 +11,23 @@ Started 27 November 2026 (Brendan: "an ideas md for things like this").
   Grand Central, New Haven and Pennsylvania New York - Washington, Michigan Central Detroit River tunnel, CN St. Clair Tunnel (electric to 1958), GN Cascade Tunnel
   (Skykomish - Wenatchee), Milwaukee Road Coast Division if within the Washington lines. Later: the Milwaukee's Rocky Mountain electrification (Harlowton - Avery),
   Illinois Central Chicago suburban, Lackawanna, Reading and Pennsylvania suburban zones. Alternative considered: catenary ticks across the line.
+  Sample image made 28 Nov 2026 (the BA&P drawn solid at main-line width beside the NP; page-only, not published).
+  List of 1948 electrified trackage on the map now (Brendan and Claude, 28 Nov 2026; from memory: limits to confirm before marking):
+  - Butte, Anaconda & Pacific: the whole line (electrified 1913).
+  - CN Montreal: Central Station - Mount Royal Tunnel - Deux-Montagnes (St. Eustache-sur-le-Lac in the 1948 tables). The north Montreal line (Montreal Nord): electric in 1948? to check (employee timetable).
+  - CN (Grand Trunk) St. Clair Tunnel, Sarnia - Port Huron (electric to 1958).
+  - Michigan Central Detroit River Tunnel, Windsor - Detroit (electric to 1953).
+  - N.Y.C.: Grand Central - Harmon (Hudson line; on the map with the Montreal, D&H and Rutland trains) and - North White Plains (Harlem line: check whether any map train uses it).
+  - New Haven: New York (Grand Central; Penn Station by Hell Gate) - New Haven.
+  - Pennsylvania: New York (Penn Station, Hudson and East River tunnels) - Washington (the wires went on to Potomac Yard; the map's track ends at Union Station).
+  - GN Cascade Tunnel: Skykomish - Wenatchee (electric 1927 - 1956).
+  - Milwaukee Road Coast Division in Washington: Othello - Tacoma and the Seattle line. (Rocky Mountain Division, Harlowton - Avery: when the Milwaukee in Montana is built.)
+  - Illinois Central Chicago suburban: only its suburban tracks were electric; the Michigan Central trains used the through tracks, so only the South Shore's run over the IC
+    (Kensington - Randolph Street) needs marking unless IC suburban trains are added.
+  Already drawn as interurbans (electric): L&PS, Grand River and Lake Erie & Northern, NS&T, Montreal & Southern Counties, QRL&P, B.C. Electric, Portland Traction, CA&E,
+  North Shore Line, South Shore, Texas Electric. Decide whether full railways among them (the L&PS) move to the electrified main-line style.
+  Not needed for 1948: Hoosac Tunnel (B&M, de-electrified 1946); B&O Baltimore Belt Line (the B&A starts at Camden Station, south of the Howard Street tunnel); Cleveland Union
+  Terminal (no map train through Cleveland).
 - **Interurban train icon**: Brendan is not satisfied with it; revisit (23 Oct 2026).
 - **Label overlaps**: Montreal terminals, Toronto waterfront, Vancouver steamers (16 Nov 2026 review).
 
