@@ -10,40 +10,39 @@
 # Signs: * daily; dagger daily except Sunday; f stops on flag. Telegraph, coupon and Pullman signs not entered. No. 61 prints Superior 7.55 a.m. in the second block (a connection
 # into Duluth, not entered). No. 65 St. Paul 5.55 a.m. is printed as both arrival and departure. NOT BUILT YET.
 # Table 6a, White Bear Lake - Mahtomedi - Summit - Stillwater (13.3 mi): "Freight service only": nothing entered.
+# THIS FILE: Nos. 66 / 65, via Superior (Wrenshall, Cent. Ave. Superior, Superior Union Station, West Duluth, Twentieth Avenue, Duluth). The Short Line trains,
+# Nos. 62 / 61 (via Thomson), are np_t006s.csv (split 27 Nov 2026 so each file follows one route).
 #train col=No66 num=66 dir=down days=daily kind=passenger note="Northern Pacific No. 66, daily: Minneapolis (Hennepin Ave. Station) 11.20 p.m., St. Paul 11.59 p.m., Carlton 4.48 - 4.56 a.m., via Superior (Union Station 5.40 a.m.) to Duluth 6.30 a.m. (Official Guide, May 1948, page 1093, Table 6, March 28, 1948)."
-#train col=No62 num=62 dir=down days="ex Sun" kind=passenger note="Northern Pacific No. 62 (printed 4-62: a Minneapolis car 7.20 a.m. to St. Paul on No. 4), daily except Sunday: St. Paul 8.35 a.m., Carlton 11.55 a.m., via the Short Line (Thomson) to West Duluth and Duluth 12.35 p.m. (Official Guide, May 1948, page 1093, Table 6, March 28, 1948)." links="Minneapolis - St. Paul on No. 4 (Minneapolis 7.20 a.m. as printed in the 4-62 column)"
-#train col=No61 num=61 dir=up days="ex Sun" kind=passenger note="Northern Pacific No. 61, daily except Sunday: Duluth 8.45 a.m., via the Short Line (Thomson) to Carlton 9.25 a.m. and St. Paul 12.40 p.m. (Official Guide, May 1948, page 1093, Table 6, March 28, 1948)." links="Superior 7.55 a.m. printed in the column: a connection into Duluth, not this train"
 #train col=No65 num=65 dir=up days=daily kind=passenger note="Northern Pacific No. 65, daily: Duluth 11.30 p.m., via Superior (Union Station 12.06 a.m.) and Carlton 12.58 - 1.03 a.m., to St. Paul 5.55 a.m. and Minneapolis (Hennepin Ave. Station) 6.40 a.m. (Official Guide, May 1948, page 1093, Table 6, March 28, 1948)."
-mile,station,principal,prov,tz,No66,No62,No61,No65
-0,"Minneapolis, Minn.",1,MN,C,lv 11.20p,,,ar 6.40a
-10,"St. Paul, Minn.",1,MN,C,11.59p,lv 8.35a,ar 12.40p,ar 5.55a / lv 5.55a
-15,"Gloster, Minn.",0,MN,C,12.14a,8.48a,12.27p,5.40a
-22,"White Bear Lake, Minn.",1,MN,C,12.30a,9.00a,12.15p,5.25a
-27,"Hugo, Minn.",0,MN,C,f12.39a,9.08a,12.07p,f5.12a
-35,"Forest Lake, Minn.",0,MN,C,12.51a,9.19a,11.54a,f4.56a
-40,"Wyoming, Minn.",1,MN,C,1.01a,9.26a,11.47a,4.47a
-44,"Stacy, Minn.",0,MN,C,1.11a,9.32a,11.37a,f4.38a
-52,"North Branch, Minn.",0,MN,C,1.25a,9.42a,11.28a,4.21a
-57,"Harris, Minn.",0,MN,C,1.37a,9.50a,11.20a,f4.10a
-64,"Rush City, Minn.",1,MN,C,1.52a,10.01a,11.11a,3.55a
-69,"Rock Creek, Minn.",0,MN,C,2.04a,10.09a,11.02a,f3.44a
-74,"Pine City, Minn.",0,MN,C,2.18a,10.17a,10.56a,3.34a
-80,"Beroun, Minn.",0,MN,C,2.29a,f10.25a,f10.48a,3.22a
-87,"Hinckley, Minn.",1,MN,C,2.52a,10.39a,10.39a,3.10a
-91,"Friesland, Minn.",0,MN,C,f3.01a,,,f2.44a
-96,"Groningen, Minn.",0,MN,C,3.09a,f10.52a,f10.28a,2.36a
-100,"Finlayson, Minn.",0,MN,C,3.17a,10.57a,10.22a,f2.28a
-105,"Rutledge, Minn.",0,MN,C,3.27a,f11.03a,f10.15a,f2.18a
-109,"Willow River, Minn.",0,MN,C,3.36a,11.08a,10.09a,f2.10a
-113,"Sturgeon Lake, Minn.",0,MN,C,3.46a,11.14a,10.03a,2.00a
-119,"Moose Lake, Minn.",0,MN,C,4.02a,11.23a,9.55a,1.48a
-124,"Barnum, Minn.",0,MN,C,4.12a,11.30a,9.48a,f1.36a
-130,"Mahtowa, Minn.",0,MN,C,f4.24a,11.38a,9.40a,f1.24a
-141,"Carlton, Minn.",1,MN,C,ar 4.48a / lv 4.56a,11.55a,9.25a,ar 12.58a / lv 1.03a
-143,"Thomson, Minn.",0,MN,C,,f11.58a,f9.17a,
-146,"Wrenshall, Minn.",0,MN,C,f5.04a,,,f12.49a
-161,"Cent. Ave., Superior, Wis.",0,WI,C,f5.29a,,,12.20a
-165,"Superior, Wis.",1,WI,C,5.40a,,,12.06a
-169,"West Duluth, Minn.",0,MN,C,6.12a,12.23p,8.55a,11.44p
-172,"Twentieth Avenue, Minn.",0,MN,C,f6.22a,f12.31p,f8.48a,f11.35p
-174,"Duluth, Minn.",1,MN,C,ar 6.30a,ar 12.35p,lv 8.45a,lv 11.30p
+mile,station,principal,prov,tz,No66,No65
+0,"Minneapolis, Minn.",1,MN,C,lv 11.20p,ar 6.40a
+10,"St. Paul, Minn.",1,MN,C,11.59p,ar 5.55a / lv 5.55a
+15,"Gloster, Minn.",0,MN,C,12.14a,5.40a
+22,"White Bear Lake, Minn.",1,MN,C,12.30a,5.25a
+27,"Hugo, Minn.",0,MN,C,f12.39a,f5.12a
+35,"Forest Lake, Minn.",0,MN,C,12.51a,f4.56a
+40,"Wyoming, Minn.",1,MN,C,1.01a,4.47a
+44,"Stacy, Minn.",0,MN,C,1.11a,f4.38a
+52,"North Branch, Minn.",0,MN,C,1.25a,4.21a
+57,"Harris, Minn.",0,MN,C,1.37a,f4.10a
+64,"Rush City, Minn.",1,MN,C,1.52a,3.55a
+69,"Rock Creek, Minn.",0,MN,C,2.04a,f3.44a
+74,"Pine City, Minn.",0,MN,C,2.18a,3.34a
+80,"Beroun, Minn.",0,MN,C,2.29a,3.22a
+87,"Hinckley, Minn.",1,MN,C,2.52a,3.10a
+91,"Friesland, Minn.",0,MN,C,f3.01a,f2.44a
+96,"Groningen, Minn.",0,MN,C,3.09a,2.36a
+100,"Finlayson, Minn.",0,MN,C,3.17a,f2.28a
+105,"Rutledge, Minn.",0,MN,C,3.27a,f2.18a
+109,"Willow River, Minn.",0,MN,C,3.36a,f2.10a
+113,"Sturgeon Lake, Minn.",0,MN,C,3.46a,2.00a
+119,"Moose Lake, Minn.",0,MN,C,4.02a,1.48a
+124,"Barnum, Minn.",0,MN,C,4.12a,f1.36a
+130,"Mahtowa, Minn.",0,MN,C,f4.24a,f1.24a
+141,"Carlton, Minn.",1,MN,C,ar 4.48a / lv 4.56a,ar 12.58a / lv 1.03a
+146,"Wrenshall, Minn.",0,MN,C,f5.04a,f12.49a
+161,"Cent. Ave., Superior, Wis.",0,WI,C,f5.29a,12.20a
+165,"Superior, Wis.",1,WI,C,5.40a,12.06a
+169,"West Duluth, Minn.",0,MN,C,6.12a,11.44p
+172,"Twentieth Avenue, Minn.",0,MN,C,f6.22a,f11.35p
+174,"Duluth, Minn.",1,MN,C,ar 6.30a,lv 11.30p

@@ -1,0 +1,10 @@
+# Camas Prairie Railroad (NP / UP joint; R. E. Hanrahan, Manager, Lewiston, Idaho), Table 49, Lewiston - Almota - Riparia (Official Guide, May 1948, page 1096; table dated
+# February 1, 1948). PACIFIC TIME. Miles as printed from Lewiston. "M" printed over the miles column: mixed trains. Supersedes wa_cprr_t049.csv (October, Washington stations only,
+# never built): this file adds Lewiston (No. 73 lv *6.20 p.m.; No. 74 ar 8.25 a.m.). Track: Brendan's Camas Prairie piece from Lewiston to the Idaho line at Wilma (27 Nov 2026)
+# and the Camas Prairie trace in Washington (the line wa_build draws, Ayer - Riparia - Wilma). NOT BUILT YET.
+#train col=No73 num=73 dir=down days=daily kind=mixed note="Camas Prairie Railroad No. 73, mixed, daily: Lewiston 6.20 p.m., Almota 7.18 p.m., Riparia 8.30 p.m. (Official Guide, May 1948, page 1096, Table 49, February 1, 1948)."
+#train col=No74 num=74 dir=up days=daily kind=mixed note="Camas Prairie Railroad No. 74, mixed, daily: Riparia 6.15 a.m., Almota 7.15 a.m., Lewiston 8.25 a.m. (Official Guide, May 1948, page 1096, Table 49, February 1, 1948)."
+mile,station,principal,prov,tz,No73,No74
+0,"Lewiston, Idaho",1,ID,P,lv 6.20p,ar 8.25a
+36,"Almota, Wash.",0,WA,P,7.18p,7.15a
+71,"Riparia, Wash.",1,WA,P,ar 8.30p,lv 6.15a

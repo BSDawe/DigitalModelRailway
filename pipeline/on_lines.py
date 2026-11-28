@@ -348,7 +348,8 @@ for _r in OWN: ab_lines.EXT_PLACE[_r] = place_for(_r)
 # ---------------------------------------------------------------- stop ids: one station per railway and name, shared where the trains used one station
 SHARED = {('onr', 'toronto union'): 'TORONTO_UNION',
           ('onthb', 'black rock, n y'): 'NYC_BLACK_ROCK_N_Y', ('onthb', 'buffalo terrace sta , n y'): 'NYC_BUFFALO_TERRACE_STA_N_Y',   # the TH&B trains on to Buffalo (V217):
-          ('onthb', 'buffalo central terminal , n y'): 'NYC_BUFFALO_CENTRAL_TERMINAL_N_Y',                                         # the Michigan Central's stations ('oncn', 'toronto union'): 'TORONTO_UNION', ('oncp', 'toronto union'): 'TORONTO_UNION',
+          ('onthb', 'buffalo central terminal , n y'): 'NYC_BUFFALO_CENTRAL_TERMINAL_N_Y',                                         # the Michigan Central's stations
+          ('oncn', 'toronto union'): 'TORONTO_UNION', ('oncp', 'toronto union'): 'TORONTO_UNION',                                   # restored 27 Nov 2026 (lost into the comment in V217)
           ('oncn', 'ottawa union'): 'OTTAWA_UNION', ('oncp', 'ottawa union'): 'OTTAWA_UNION',
           ('oncp', 'ottawa'): 'OTTAWA_UNION', ('oncn', 'ottawa'): 'OTTAWA_UNION',   # Brendan, 24 Oct 2026: every train to Ottawa uses Union Station unless the table says otherwise (Bank Street)
           ('onr', 'north bay c p'): 'CP_NORTH_BAY',                        # "North Bay (C.P.)": the CP station (Brendan, 22 Nov 2026: not the ONR table's own placement)

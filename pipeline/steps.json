@@ -638,6 +638,53 @@
     "traces/gnmw/bap.geojson",
     "timetables_bap/bap_t001.csv"
    ]
+  },
+  {
+   "name": "npmw_build",
+   "script": "npmw_build.py",
+   "needs": [
+    "gnmw_build",
+    "wa_build",
+    "sk_build"
+   ],
+   "inputs": [
+    "np_lines.py",
+    "gn_lines.py",
+    "traces/npmw/np_mw.geojson",
+    "traces/npmw/np_links.geojson",
+    "timetables_cprr/cprr_t048.csv",
+    "timetables_cprr/cprr_t049.csv",
+    "timetables_cprr/cprr_t050.csv",
+    "timetables_np/np_t001.csv",
+    "timetables_np/np_t002.csv",
+    "timetables_np/np_t002b.csv",
+    "timetables_np/np_t002h.csv",
+    "timetables_np/np_t003.csv",
+    "timetables_np/np_t005.csv",
+    "timetables_np/np_t006.csv",
+    "timetables_np/np_t006s.csv",
+    "timetables_np/np_t007.csv",
+    "timetables_np/np_t008.csv",
+    "timetables_np/np_t011.csv",
+    "timetables_np/np_t014.csv",
+    "timetables_np/np_t015.csv",
+    "timetables_np/np_t016.csv",
+    "timetables_np/np_t017.csv",
+    "timetables_np/np_t018.csv",
+    "timetables_np/np_t019.csv",
+    "timetables_np/np_t020.csv",
+    "timetables_np/np_t021.csv",
+    "timetables_np/np_t022.csv",
+    "timetables_np/np_t023.csv",
+    "timetables_np/np_t025.csv",
+    "timetables_np/np_t026.csv",
+    "timetables_np/np_t027.csv",
+    "timetables_np/np_t030.csv",
+    "timetables_np/np_t030a.csv",
+    "timetables_np/np_t034.csv",
+    "timetables_np/np_t044i.csv",
+    "timetables_np/np_t066.csv"
+   ]
   }
  ]
 }

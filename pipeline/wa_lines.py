@@ -15,10 +15,10 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 ab_lines.RAILS.update({
     'np': dict(kind='o', label='Northern Pacific', own='np', agency='NP', color='1F4E79', pfx='NP'),
     'gnw': dict(kind='g', label='Great Northern', own='gn', agency='GN', color='E07B1A', pfx='GN'),
-    'sps': dict(kind='d', label='Spokane, Portland & Seattle', own='sps', agency='SPS', color='5B4A8B', pfx='SPS'),
+    'sps': dict(kind='d', label='Spokane, Portland & Seattle', own='sps', agency='SPS', color='34472C', pfx='SPS'),   # Pullman green and yellow (Brendan, 27 Nov 2026)
     'up': dict(kind='u', label='Union Pacific', own='up', agency='UP', color='C9A227', pfx='UP'),
     'milw': dict(kind='m', label='Milwaukee Road', own='milw', agency='MILW', color='B5651D', pfx='MILW'),
-    'cprr': dict(kind='u', label='Camas Prairie', own='up', agency='CPRR', color='C9A227', pfx='CPRR'),
+    'cprr': dict(kind='CR', label='Camas Prairie', own='cprr', agency='CPRR', color='C46A8A', pfx='CPRR'),   # NP / UP joint: its own colour (Brendan, 27 Nov 2026; Claude's pick)
     'wim': dict(kind='o', label='Washington, Idaho & Montana', own='np', agency='WIM', color='1F4E79', pfx='WIM')})
 
 # ---------------------------------------------------------------- track

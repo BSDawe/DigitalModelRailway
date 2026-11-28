@@ -158,7 +158,7 @@ class _G2(dict):
 ab_lines.EXT_GID = _G2()
 
 # ---------------------------------------------------------------- Butte, Anaconda & Pacific (Brendan, 27 Nov 2026): Butte - Anaconda
-ab_lines.RAILS['bap'] = dict(kind='BA', label='Butte, Anaconda & Pacific', own='bap', agency='BAP', color='4F6D3A', pfx='BAP')
+ab_lines.RAILS['bap'] = dict(kind='BA', label='Butte, Anaconda & Pacific', own='bap', agency='BAP', color='B87333', pfx='BAP')
 def _bap_graph():
     def feed(add):
         for f in json.load(open(os.path.join(HERE, 'traces', 'gnmw', 'bap.geojson')))['features']: add(ab_lines._xy(f['geometry']['coordinates']), 1.0, 'b', None)
