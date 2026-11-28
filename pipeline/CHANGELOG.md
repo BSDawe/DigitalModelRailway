@@ -3427,3 +3427,8 @@ A review of the whole project (Brendan: "have a peek through ... suggest improve
 - Colours (Brendan, 27 Nov 2026): BA&P copper #b87333 (a copper-mine railway); SP&S Pullman green #34472c with a yellow band #e8c22c (its livery), replacing the purple.
 - on_lines.SHARED: the CN / CP Toronto Union Station entries restored from the comment they slipped into in V217 (on_build re-ran with the Washington change).
 - Counts: 807 lines, 5541 trips, 9515 stops, 78 agencies; check_gtfs 0 problems.
+
+## Version 242
+- WI&M track restored (Brendan, 27 Nov 2026: V241 drew it dashed): the Washington rebuild moved the N.P. station at Palouse about 0.9 km from the WI&M trace's end, beyond the
+  300 m the WI&M allowed for a station already on the map; Palouse now snaps within 1.5 km (gn_lines.wim_place). 45.9 mi traced, 47 printed, all on track again.
+- Counts unchanged: 807 lines, 5541 trips, 9515 stops, 78 agencies; check_gtfs 0 problems.

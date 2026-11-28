@@ -148,7 +148,7 @@ def wim_gid(name):
     return 'WIM_' + re.sub(r'\W+', '_', canon(n).upper()).strip('_')
 def wim_place(name):
     n, st = split(name); g = wim_gid(name); m = _map().get(g)
-    if m: return (m[0], m[1], 'map', 300)
+    if m: return (m[0], m[1], 'map', 1500 if canon(n) == 'palouse' else 300)   # the N.P. station at Palouse is about 0.9 km from the WI&M trace's end
     if canon(n) == 'bovill': return (_WIM_END[-1][0], _WIM_END[-1][1], 'piece end', 300)   # the end of the trace (the Milwaukee Road connection)
     return None
 ab_lines.EXT_PLACE['wim'] = wim_place
