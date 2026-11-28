@@ -3438,3 +3438,8 @@ A review of the whole project (Brendan: "have a peek through ... suggest improve
   through the depot (npmw_build MSP); the NP's own Gloster line beyond. St. Paul was placed by mileage 4.5 km north of the depot; now at the depot. West Duluth - Twentieth Avenue
   on track. Gloster now placed by printed mileage (5 mi from St. Paul).
 - Counts unchanged: 807 lines, 5541 trips, 9515 stops, 78 agencies; check_gtfs 0 problems.
+
+## Version 244
+- GN Sand Point, Idaho at Brendan's point (28 Nov 2026: 48.2801 N, 116.5779 W; gn_lines.HAND). It had been placed by printed mileage, about 9 km north of the town (no hand
+  point and no KMZ piece named for it). Newport, Wash. kept on the Washington line's station (gnmw_build OVER gn_t004 force: Sand Point - Newport is 28.0 mi traced against 34 printed).
+- Counts unchanged: 807 lines, 5541 trips, 9515 stops, 78 agencies; check_gtfs 0 problems.
