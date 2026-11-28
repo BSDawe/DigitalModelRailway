@@ -3377,3 +3377,9 @@ A review of the whole project (Brendan: "have a peek through ... suggest improve
   added to the GN step's track and preferred, which clears the hook north of the Great Northern station; the automatic ties between nearby piece ends removed (they made it).
 - Checked (Brendan): no other Ontario shared stations were lost in V217 (only the two Toronto Union entries).
 - Counts unchanged: 774 lines, 5437 trips, 9035 stops; check_gtfs 0 problems.
+
+## Version 236
+- Sioux Falls - Watertown (GN Table 18) on track: the South Dakota Central (GN property by 1948; Brendan, 27 Nov 2026), from the Mississippi Rails KMZ Brendan sent (private
+  repo, traces/msrails/South_Dakota_Central_RR.kmz; the pieces in traces/gnmw/gn_links.geojson): the 1904 line into Sioux Falls (filed "abandoned" in the KMZ, in use in 1948;
+  the later "new connection" left out) and Brendan's piece joining it to the Willmar line. 103.9 mi traced, 103 printed.
+- Counts unchanged: 774 lines, 5437 trips, 9035 stops; check_gtfs 0 problems.
