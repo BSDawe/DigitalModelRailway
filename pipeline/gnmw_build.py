@@ -11,7 +11,7 @@ TZ = ' Shown in Pacific time: two hours earlier than the Central time printed, a
 SRC = 'Official Guide, May 1948'
 SAB = [('St. Paul, Minn.', 'Stone Arch Bridge, Minn.', 10.2)]   # St. Paul - Minneapolis over the Stone Arch Bridge (Brendan, 27 Nov 2026)
 OVER = {'gn_t001': dict(via=SAB), 'gn_t053': dict(via=[('St. Paul (Union Station), Minn.', 'Stone Arch Bridge, Minn.', 10.2)]), 'gn_t021': dict(force=[('Milaca, Minn.', 'St. Cloud, Minn.')]),
-        'gn_t004': dict(force=[('Priest River, Idaho', 'Newport, Wash.'), ('Newport, Wash.', 'Spokane, Wash.'), ('Sand Point, Idaho', 'Priest River, Idaho'), ('Sand Point, Idaho', 'Newport, Wash.')]),   # keeps Newport on the Washington line's station since Sand Point moved to Brendan's point (28 Nov 2026)
+        'gn_t004': dict(force=[('Priest River, Idaho', 'Newport, Wash.'), ('Newport, Wash.', 'Spokane, Wash.'), ('Sand Point, Idaho', 'Priest River, Idaho'), ('Sand Point, Idaho', 'Newport, Wash.'), ("Bonner's Ferry, Idaho", 'Sand Point, Idaho')]),   # keeps Newport on the Washington line's station since Sand Point moved to Brendan's point (28 Nov 2026)
         'gn_t002': dict(via=SAB, cols=['No29', 'No11', 'No199', 'No209', 'No27', 'No1', 'No12', 'No200', 'No30', 'No28', 'No2']),   # Nos. 7 / 8: the Winnipeg Limited, built in skgn007
         'gn_t001c_cbq': dict(short='Burlington Route (GN through trains)', long='Chicago – St. Paul (Burlington Route)', src='Official Guide, May 1948, GN Tables 1 and 2: Burlington connection rows'),
         'gn_duluth_gf': dict(short='GN Duluth – Grand Forks', long='Duluth – Superior – Grand Rapids – Bemidji – Crookston – Grand Forks')}

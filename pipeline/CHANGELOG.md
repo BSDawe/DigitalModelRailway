@@ -3443,3 +3443,8 @@ A review of the whole project (Brendan: "have a peek through ... suggest improve
 - GN Sand Point, Idaho at Brendan's point (28 Nov 2026: 48.2801 N, 116.5779 W; gn_lines.HAND). It had been placed by printed mileage, about 9 km north of the town (no hand
   point and no KMZ piece named for it). Newport, Wash. kept on the Washington line's station (gnmw_build OVER gn_t004 force: Sand Point - Newport is 28.0 mi traced against 34 printed).
 - Counts unchanged: 807 lines, 5541 trips, 9515 stops, 78 agencies; check_gtfs 0 problems.
+
+## Version 245
+- Brendan's station points (28 Nov 2026): NP Sand Point, Idaho (48.276452, -116.545449; np_lines.HAND, was Claude's town point) and GN Bonner's Ferry, Idaho (48.695184,
+  -116.313651, approximate; gn_lines.HAND, was by printed mileage). Bonner's Ferry - Sand Point accepted at 33.9 mi traced against 29 printed (gnmw_build OVER gn_t004 force).
+- Counts unchanged: 807 lines, 5541 trips, 9515 stops, 78 agencies; check_gtfs 0 problems.

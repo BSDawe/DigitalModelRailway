@@ -50,7 +50,8 @@ _LEW = json.load(open(os.path.join(HERE, 'traces', 'npmw', 'np_links.geojson')))
 HAND = {('butte', 'MT'): (-dms(112, 31, 35.95), dms(46, 0, 3.58), 'Butte Union Depot (Brendan, 27 Nov 2026)'),
         ('superior', 'WI'): (-92.107400, 46.726609, 'Superior Union Station (Brendan, 27 Nov 2026; GN, shared with the NP)'),
         ('lewiston', 'ID'): (_LEW[0], _LEW[1], 'Lewiston: the end of the Camas Prairie piece (Brendan, 27 Nov 2026); approximate for the depot'),
-        ('silver bow', 'MT'): (-dms(112, 40, 21.28), dms(46, 0, 16.90), 'Silver Bow (Brendan, 27 Nov 2026)')}
+        ('silver bow', 'MT'): (-dms(112, 40, 21.28), dms(46, 0, 16.90), 'Silver Bow (Brendan, 27 Nov 2026)'),
+        ('sand point', 'ID'): (-116.5454488756524, 48.27645154114242, 'NP Sand Point station (Brendan, 28 Nov 2026)')}
 
 # towns no piece is named for (Claude's points for the towns, approximate; the station snaps to the track within 2.5 km)
 for _l in '''dickinson ND 46.8792 -102.7896
