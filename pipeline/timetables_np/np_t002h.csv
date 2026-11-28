@@ -1,0 +1,26 @@
+# Northern Pacific Railway, Table 2, Main Line via Helena: Logan - Helena - Garrison (Official Guide, May 1948, page 1091; table dated December 14, 1947). MOUNTAIN TIME.
+# Miles as printed from St. Paul. Nos. 3 / 4 (Alaskan) and the Logan - Helena locals 221 / 222. NOT BUILT YET.
+# Not entered (buses are not drawn): the bus columns Helena - Elliston - Garrison (*11.15 a.m. - 1.05 p.m.; back 5.05 p.m. - 6.40 p.m.) and the connecting service to Butte
+# for Nos. 3 / 4 ("See connecting service to Butte in adjoining column": Logan *5.20 a.m., Three Forks 5.35, Willow Creek 5.45, Whitehall 6.30, Butte 7.30 a.m.; back Butte
+# 10.45 p.m.? - Logan 1.25 a.m.?; "Connects with train No. 1 / No. 2 at Garrison"; the return column is hard to read).
+# UNSURE: No. 3 Garrison arr. 9.25 a.m. and No. 4 Garrison lve. 9.25 a.m. both as read. No. 221 Louisville and No. 222 Louisville: no time.
+#train col=No3 num=3 dir=down days=daily kind=passenger name="Alaskan" note="Northern Pacific No. 3, the Alaskan, daily, runs via Helena: Logan 5.00 a.m., Helena 7.10 - 7.30 a.m., Garrison 9.25 a.m. (Official Guide, May 1948, page 1091; table dated December 14, 1947)." links="from np_t002; continued on the following page"
+#train col=No221 num=221 dir=down days=daily kind=passenger note="Northern Pacific No. 221, daily: Logan 9.45 a.m. to Helena 11.45 a.m. (Official Guide, May 1948, page 1091; table dated December 14, 1947)."
+#train col=No4 num=4 dir=up days=daily kind=passenger name="Alaskan" note="Northern Pacific No. 4, the Alaskan, daily, runs via Helena: Garrison 9.25 a.m., Helena 11.25 - 11.45 a.m., Logan 1.50 p.m. (Official Guide, May 1948, page 1091; table dated December 14, 1947)." links="from the following page; continued in np_t002"
+#train col=No222 num=222 dir=up days=daily kind=passenger note="Northern Pacific No. 222, daily: Helena 6.20 p.m. to Logan 8.25 p.m. (Official Guide, May 1948, page 1091; table dated December 14, 1947)."
+mile,station,principal,prov,tz,No3,No221,No4,No222
+1047,"Logan, Mont.",1,MT,M,lv 5.00a,lv 9.45a,ar 1.50p,ar 8.25p
+1053,"Trident, Mont.",0,MT,M,f5.09a,9.54a,f1.39p,f8.11p
+1068,"Lombard, Mont.",0,MT,M,5.32a,10.16a,1.17p,7.47p
+1077,"Toston, Mont.",0,MT,M,f5.47a,10.30a,f1.00p,7.30p
+1088,"Townsend, Mont.",0,MT,M,6.09a,10.49a,12.43p,7.14p
+1101,"Winston, Mont.",0,MT,M,,11.10a,,6.55p
+1110,"Louisville, Mont.",0,MT,M,,,,
+1117,"East Helena, Mont.",0,MT,M,,11.36a,11.54a,6.28p
+1121,"Helena, Mont.",1,MT,M,ar 7.10a / lv 7.30a,ar 11.45a,ar 11.25a / lv 11.45a,lv 6.20p
+1134,"Austin, Mont.",0,MT,M,f8.01a,,f10.56a,
+1142,"Blossburg, Mont.",0,MT,M,f8.32a,,f10.35a,
+1150,"Elliston, Mont.",0,MT,M,f8.47a,,f10.12a,
+1159,"Avon, Mont.",0,MT,M,f9.01a,,f9.55a,
+1165,"Bradley, Mont.",0,MT,M,f9.11a,,f9.45a,
+1172,"Garrison, Mont.",1,MT,M,ar 9.25a,,lv 9.25a,

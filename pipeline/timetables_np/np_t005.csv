@@ -1,0 +1,38 @@
+# Northern Pacific Railway, Table 5, Duluth, Superior, Brainerd and Staples (Official Guide, May 1948, page 1093; table dated July 1947; Brendan's images, 27 Nov 2026; scans in the private repo,
+# scans/og1948_np/p1093_t005.png). CENTRAL TIME. Miles as printed from Duluth. Superior: Superior Union Station (Brendan, 27 Nov 2026: shared GN / NP). Duluth: the Union Depot.
+# Nos. 55 - 58 are the Duluth sections of the main-line trains (page 1090 prints the same Duluth, Superior and Staples times in the main-line columns): 55 = Nos. 1 and 7,
+# 57 = No. 3, 58 = No. 4, 56 = Nos. 2 and 8. Replaces np_t001d.csv (page 1090's three-row Duluth section, removed). A section under its own number is its own train (Brendan,
+# 11 Nov 2026); the joins at Staples are recorded as links.
+# Signs: * daily; f stops on flag. Brainerd is printed twice (ar. / lve.) with the same time for every train: entered once. NOT BUILT YET.
+#train col=No57 num=57 dir=down days=daily kind=passenger note="Northern Pacific No. 57, daily: Duluth 7.40 p.m., Superior 7.52 p.m., Brainerd 11.34 p.m., Staples 12.40 a.m.: the Duluth section of No. 3, the Alaskan (page 1090: Duluth 7.40 p.m. - Staples 12.40 a.m.) (Official Guide, May 1948, page 1093, Table 5, July 1947)." links="joins No. 3 (Alaskan) at Staples"
+#train col=No55 num=55 dir=down days=daily kind=passenger note="Northern Pacific No. 55, daily: Duluth 7.30 a.m., Superior 7.45 a.m., Brainerd 10.44 a.m., Staples 11.40 a.m.: the Duluth section of No. 1, North Coast Limited, and No. 7 (page 1090: Duluth 7.30 a.m. - Staples 11.40 a.m.) (Official Guide, May 1948, page 1093, Table 5, July 1947)." links="joins No. 1 (North Coast Limited) and No. 7 at Staples"
+#train col=No58 num=58 dir=up days=daily kind=passenger note="Northern Pacific No. 58, daily: Staples 3.20 a.m., Brainerd 4.20 a.m., Superior 7.44 a.m., Duluth 8.00 a.m.: the Duluth section of No. 4, the Alaskan (Official Guide, May 1948, page 1093, Table 5, July 1947)." links="splits from No. 4 (Alaskan) at Staples"
+#train col=No56 num=56 dir=up days=daily kind=passenger note="Northern Pacific No. 56, daily: Staples 6.50 p.m., Brainerd 7.34 p.m., Superior 10.34 p.m., Duluth 10.50 p.m.: the Duluth section of No. 2, North Coast Limited, and No. 8 (Official Guide, May 1948, page 1093, Table 5, July 1947)." links="splits from No. 2 (North Coast Limited) and No. 8 at Staples"
+mile,station,principal,prov,tz,No57,No55,No58,No56
+0,"Duluth, Minn.",1,MN,C,lv 7.40p,lv 7.30a,ar 8.00a,ar 10.50p
+4,"Superior, Wis.",1,WI,C,7.52p,7.45a,7.44a,10.34p
+8,"Cent. Ave., Superior, Wis.",0,WI,C,8.05p,7.54a,7.33a,f10.25p
+11,"Pokegama, Wis.",0,WI,C,f8.10p,,f7.28a,f10.20p
+16,"Anton, Wis.",0,WI,C,f8.18p,,f7.20a,f10.14p
+20,"Barker, Minn.",0,MN,C,f8.28p,,f7.13a,f10.06p
+23,"Wrenshall, Minn.",0,MN,C,8.36p,8.19a,7.07a,f10.02p
+27,"Carlton, Minn.",1,MN,C,8.48p,8.28a,7.00a,9.55p
+32,"Iverson, Minn.",0,MN,C,f8.58p,,f6.50a,f9.47p
+37,"Sawyer, Minn.",0,MN,C,9.08p,8.45a,6.43a,f9.40p
+44,"Corona, Minn.",0,MN,C,f9.17p,,f6.32a,f9.32p
+49,"Cromwell, Minn.",0,MN,C,9.25p,9.03a,6.22a,9.25p
+55,"Wright, Minn.",0,MN,C,9.37p,9.13a,6.12a,9.13p
+61,"Tamarack, Minn.",0,MN,C,9.50p,9.22a,6.02a,9.02p
+70,"McGregor, Minn.",0,MN,C,10.07p,9.35a,5.46a,8.47p
+74,"Lansford, Minn.",0,MN,C,f10.15p,,f5.39a,f8.40p
+79,"Kimberly, Minn.",0,MN,C,f10.23p,9.48a,f5.32a,8.34p
+85,"Rossburg, Minn.",0,MN,C,f10.34p,f9.56a,f5.24a,f8.24p
+91,"Aitkin, Minn.",1,MN,C,10.46p,10.06a,5.08a,8.13p
+96,"Cedar Lake, Minn.",0,MN,C,f10.55p,,f5.03a,f8.08p
+101,"Deerwood, Minn.",1,MN,C,11.06p,10.24a,4.55a,7.59p
+111,"Loerch, Minn.",0,MN,C,f11.25p,,f4.34a,f7.44p
+118,"Brainerd, Minn.",1,MN,C,11.34p,10.44a,4.20a,7.34p
+123,"Baxter, Minn.",0,MN,C,f11.48p,,f4.00a,f7.27p
+132,"Pillager, Minn.",0,MN,C,12.04a,11.11a,3.47a,7.15p
+140,"Motley, Minn.",0,MN,C,12.21a,11.25a,3.30a,7.00p
+148,"Staples, Minn.",1,MN,C,ar 12.40a,ar 11.40a,lv 3.20a,lv 6.50p

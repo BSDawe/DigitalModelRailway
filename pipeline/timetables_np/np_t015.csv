@@ -1,0 +1,35 @@
+# Northern Pacific Railway, Table 15, Fargo and Southwestern and Streeter Branches: Fargo - Lisbon - LaMoure - Edgeley - Streeter (Official Guide, May 1948, page 1094; table dated April 4, 1948).
+# CENTRAL TIME. Miles as printed from Fargo. Edgeley is printed twice (ar. / lve.) with the same times: entered once.
+# LaMoure - Oakes (21 mi), printed between the two LaMoure rows: a train LaMoure 11.38 a.m. - Oakes arr. 12.35 p.m. (sign read as # mixed, daily except Sunday) and Oakes lve.
+# dagger 1.50 p.m. with a box at LaMoure ("Connection made at Independence"; no LaMoure time). Entered as np_t015o.csv (the outbound mixed only; the return has no times).
+# Signs (page 1094 key): * daily; dagger daily except Sunday; double dagger daily except Saturday; pilcrow daily except Monday; a stops on flag to pick up or let off revenue
+# passengers (entered f); f stops on flag; # mixed train daily except Sunday; hook sign mixed; box: connection made at Independence. Coupon, telegraph, Pullman signs not entered.
+# NOT BUILT YET.
+#train col=No139 num=139 dir=down days="ex Sun" kind=passenger note="Northern Pacific No. 139, daily except Sunday: Fargo 7.05 a.m. to Lisbon 8.46 a.m., LaMoure 9.46 a.m., Edgeley 10.31 a.m. and Streeter 11.55 a.m. (printed 3-139: from St. Paul double-dagger 9.10 p.m. on No. 3) (Official Guide, May 1948, page 1094, Table 15, April 4, 1948)." links="from No. 3 at Fargo (St. Paul 9.10 p.m., Minneapolis 9.55 p.m.)"
+#train col=No140 num=140 dir=up days="ex Sun" kind=passenger note="Northern Pacific No. 140, daily except Sunday: Streeter 12.25 p.m. to Edgeley 1.50 p.m., LaMoure 2.29 p.m., Lisbon 3.28 p.m. and Fargo 5.15 p.m. (printed 140-4: on to St. Paul 7.45 a.m. on No. 4) (Official Guide, May 1948, page 1094, Table 15, April 4, 1948)." links="to No. 4 at Fargo (Minneapolis 7.10 a.m., St. Paul pilcrow 7.45 a.m.)"
+mile,station,principal,prov,tz,No139,No140
+0,"Fargo, N. Dak.",1,ND,C,lv 7.05a,ar 5.15p
+4,"Cotter, N. Dak.",0,ND,C,f7.14a,f5.00p
+6,"Osgood, N. Dak.",0,ND,C,f7.18a,f4.56p
+11,"Horace, N. Dak.",0,ND,C,7.25a,4.50p
+16,"Warren, N. Dak.",0,ND,C,f7.34a,f4.40p
+20,"Davenport, N. Dak.",0,ND,C,7.40a,4.33p
+26,"Woods, N. Dak.",0,ND,C,7.51a,4.22p
+29,"Leonard, N. Dak.",0,ND,C,7.58a,4.16p
+36,"Coburn, N. Dak.",0,ND,C,f8.09a,f4.04p
+42,"Sheldon, N. Dak.",0,ND,C,8.20a,3.53p
+51,"Buttzville, N. Dak.",0,ND,C,8.34a,3.38p
+56,"Lisbon, N. Dak.",1,ND,C,8.46a,3.28p
+64,"Elliott, N. Dak.",0,ND,C,9.01a,3.12p
+69,"Englevale, N. Dak.",0,ND,C,9.09a,3.03p
+77,"Verona, N. Dak.",0,ND,C,9.22a,2.51p
+83,"Independence, N. Dak.",0,ND,C,9.33a,2.40p
+88,"LaMoure, N. Dak.",1,ND,C,9.46a,2.29p
+98,"Berlin, N. Dak.",0,ND,C,10.06a,2.11p
+104,"Medberry, N. Dak.",0,ND,C,10.17a,2.01p
+110,"Edgeley, N. Dak.",1,ND,C,10.31a,1.50p
+115,"Deisem, N. Dak.",0,ND,C,f10.48a,f1.29p
+123,"Jud, N. Dak.",0,ND,C,11.03a,1.15p
+130,"Alfred, N. Dak.",0,ND,C,11.17a,1.02p
+137,"Gackle, N. Dak.",0,ND,C,11.31a,12.48p
+148,"Streeter, N. Dak.",1,ND,C,ar 11.55a,lv 12.25p

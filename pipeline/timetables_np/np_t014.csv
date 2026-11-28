@@ -1,0 +1,47 @@
+# Northern Pacific Railway, Table 14, St. Paul, Minneapolis - Grand Forks, Winnipeg (Official Guide, May 1948, page 1094; table dated May 18, 1947). CENTRAL TIME (Winnipeg included: the table prints
+# one Central time throughout). Miles as printed from St. Paul. Only the Manitoba Junction - Winnipeg part is entered: the St. Paul - Manitoba Junction rows repeat the main line
+# (No. 7 / No. 8 in np_t001), the Duluth rows Table 5's No. 55 / No. 56, and the Fargo - Moorhead - Manitoba Junction rows the locals 124 (Fargo *12.54 p.m. - Manitoba Junction
+# 1.50 p.m.) and 123 (Manitoba Junction 4.40 p.m. - Fargo 5.35 p.m.) of np_t001.
+# The border: "arr. Pembina, No. Dak." and "lve. Emerson Jn., Man." as separate rows (customs; No. 13 Pembina 7.27 - Emerson 7.50 p.m., No. 14 Emerson 10.35 - Pembina 10.55 a.m.).
+# Winnipeg: the station is not named (the NP used the Canadian National's Union Station, Claude's understanding: Brendan to confirm). Harold, Freeman, Davidson, Carthage Junction:
+# no stops. The Manitoba stations carry "a" (on flag to pick up or let off revenue passengers): entered f.
+# Signs (page 1094 key): * daily; dagger daily except Sunday; double dagger daily except Saturday; pilcrow daily except Monday; a stops on flag to pick up or let off revenue
+# passengers (entered f); f stops on flag; # mixed train daily except Sunday; hook sign mixed; box: connection made at Independence. Coupon, telegraph, Pullman signs not entered.
+# No. 13 leaves Manitoba Junction 2.13 p.m.: No. 7 arrives 2.03 p.m. (np_t001, Brendan agreed the reading 27 Nov 2026). NOT BUILT YET.
+#train col=No13 num=13 dir=down days=daily kind=passenger note="Northern Pacific No. 13, daily: Manitoba Junction 2.13 p.m., Crookston 3.57 p.m., Grand Forks 4.50 p.m., Pembina 7.27 p.m., Emerson Jct. 7.50 p.m., Winnipeg 9.40 p.m.; air-conditioned de luxe coach through from St. Paul - Minneapolis on No. 7 (Official Guide, May 1948, page 1094, Table 14, May 18, 1947)." links="through coach from No. 7 at Manitoba Junction (St. Paul 8.42 a.m.; printed 7-13); Duluth passengers from No. 55 (Duluth 7.30 a.m.) by Staples"
+#train col=No14 num=14 dir=up days=daily kind=passenger note="Northern Pacific No. 14, daily: Winnipeg 8.50 a.m., Emerson Jct. 10.35 a.m., Pembina 10.55 a.m., Grand Forks 1.35 p.m., Crookston 2.23 p.m., Manitoba Junction 4.12 p.m.; air-conditioned de luxe coach through to St. Paul - Minneapolis on No. 8 (Official Guide, May 1948, page 1094, Table 14, May 18, 1947)." links="through coach to No. 8 at Manitoba Junction (St. Paul 10.25 p.m.; printed 14-8)"
+mile,station,principal,prov,tz,No13,No14
+224,"Manitoba Junction, Minn.",0,MN,C,lv 2.13p,ar 4.12p
+229,"Hitterdal, Minn.",0,MN,C,2.21p,4.02p
+236,"Ulen, Minn.",0,MN,C,2.31p,3.51p
+243,"Syre, Minn.",0,MN,C,f2.41p,f3.40p
+249,"Twin Valley, Minn.",0,MN,C,2.51p,3.31p
+256,"Gary, Minn.",0,MN,C,3.01p,3.20p
+268,"Fertile, Minn.",0,MN,C,3.24p,3.00p
+284,"Harold, Minn.",0,MN,C,,
+291,"Crookston, Minn.",1,MN,C,3.57p,2.23p
+302,"Freeman, Minn.",0,MN,C,,
+307,"Davidson, Minn.",0,MN,C,,
+313,"Carthage Junction, Minn.",0,MN,C,,
+318,"East Grand Forks, Minn.",1,MN,C,4.45p,1.46p
+319,"Grand Forks, N. Dak.",1,ND,C,4.50p,1.35p
+335,"Meckinock, N. Dak.",0,ND,C,5.14p,1.06p
+340,"Honeyford, N. Dak.",0,ND,C,f5.21p,f12.57p
+344,"Gilby, N. Dak.",0,ND,C,5.27p,12.50p
+348,"Johnstown, N. Dak.",0,ND,C,f5.33p,12.42p
+353,"Forest River, N. Dak.",0,ND,C,5.40p,12.35p
+358,"Voss, N. Dak.",0,ND,C,f5.52p,f12.20p
+368,"Grafton, N. Dak.",1,ND,C,6.07p,12.05p
+375,"Cashel, N. Dak.",0,ND,C,f6.19p,f11.52a
+383,"Drayton, N. Dak.",0,ND,C,6.35p,11.41a
+392,"Bowesmont, N. Dak.",0,ND,C,6.50p,11.27a
+401,"Joliette, N. Dak.",0,ND,C,7.08p,11.11a
+412,"Pembina, N. Dak.",1,ND,C,ar 7.27p,lv 10.55a
+415,"Emerson Junction, Man.",1,MB,C,lv 7.50p,ar 10.35a
+424,"Letellier, Man.",0,MB,C,f8.03p,f10.19a
+433,"St. Jean Baptiste, Man.",0,MB,C,f8.17p,f10.06a
+440,"Morris, Man.",1,MB,C,8.28p,9.56a
+457,"St. Agathe, Man.",0,MB,C,f8.57p,f9.28a
+465,"Cartier, Man.",0,MB,C,f9.11p,f9.16a
+477,"Portage Junction, Man.",0,MB,C,9.30p,9.00a
+480,"Winnipeg, Man.",1,MB,C,ar 9.40p,lv 8.50a

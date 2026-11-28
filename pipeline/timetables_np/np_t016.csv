@@ -1,0 +1,22 @@
+# Northern Pacific Railway, Table 16, Fargo - Casselton - Marion (Official Guide, May 1948, page 1094; table dated April 4, 1948). CENTRAL TIME. Miles as printed from Fargo. Both trains mixed (hook sign).
+# Nos. 137 / 138 are the same trains as np_t001's Dilworth - Fargo - Casselton 137 / 138 (page 1090); when built, join them. Fargo - Casselton is the main line.
+# Signs (page 1094 key): * daily; dagger daily except Sunday; double dagger daily except Saturday; pilcrow daily except Monday; a stops on flag to pick up or let off revenue
+# passengers (entered f); f stops on flag; # mixed train daily except Sunday; hook sign mixed; box: connection made at Independence. Coupon, telegraph, Pullman signs not entered.
+# NOT BUILT YET.
+#train col=No137 num=137 dir=down days="ex Sun" kind=mixed note="Northern Pacific No. 137, mixed, daily except Sunday: Fargo 7.20 a.m., Casselton 8.10 - 8.30 a.m., Marion 12.45 p.m. (from Dilworth 6.55 a.m., np_t001) (Official Guide, May 1948, page 1094, Table 16, April 4, 1948)." links="same train as No. 137 Dilworth - Fargo - Casselton (np_t001); printed 3-137 (St. Paul double-dagger 9.10 p.m. on No. 3)"
+#train col=No138 num=138 dir=up days="ex Sun" kind=mixed note="Northern Pacific No. 138, mixed, daily except Sunday: Marion 1.15 p.m., Casselton 4.35 - 4.40 p.m., Fargo 5.30 p.m. (on to Dilworth 5.45 p.m., np_t001) (Official Guide, May 1948, page 1094, Table 16, April 4, 1948)." links="same train as No. 138 Casselton - Fargo - Dilworth (np_t001); printed 138-4 (St. Paul 7.45 a.m. on No. 4)"
+mile,station,principal,prov,tz,No137,No138
+0,"Fargo, N. Dak.",1,ND,C,lv 7.20a,ar 5.30p
+19,"Casselton, N. Dak.",1,ND,C,ar 8.10a / lv 8.30a,ar 4.35p / lv 4.40p
+21,"Langers, N. Dak.",0,ND,C,f8.35a,f4.27p
+23,"Persis, N. Dak.",0,ND,C,f8.42a,f4.22p
+25,"Myra, N. Dak.",0,ND,C,f8.48a,f4.18p
+32,"Embden, N. Dak.",0,ND,C,9.06a,4.04p
+38,"Alice, N. Dak.",0,ND,C,9.32a,3.47p
+47,"Lucca, N. Dak.",0,ND,C,10.10a,3.15p
+52,"Nome, N. Dak.",0,ND,C,10.30a,3.00p
+56,"Eastedge, N. Dak.",0,ND,C,10.46a,2.44p
+60,"Kathryn, N. Dak.",0,ND,C,11.08a,2.26p
+67,"Hastings, N. Dak.",0,ND,C,11.38a,2.00p
+72,"Litchville, N. Dak.",0,ND,C,12.08p,1.40p
+79,"Marion, N. Dak.",1,ND,C,ar 12.45p,lv 1.15p

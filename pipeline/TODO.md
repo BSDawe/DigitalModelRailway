@@ -11,9 +11,11 @@ Last updated 27 November 2026 (Version 240).
 ## Waiting for Brendan
 - [ ] Northern Pacific (Brendan, 27 Nov 2026): Mississippi Rails Northern_Pacific_Ry.kmz (2024-6-20) received, in the private repo traces/msrails/: 582 pieces, about 7,100 mi
   (MN, ND, MT, ID, WA, OR, WI, the Walla Walla Valley; Abandoned and Structures folders). NOT BUILT: waiting for the NP Official Guide pages.
-  Transcribed (timetables_np/): page 1090, main line St. Paul - Staples - Fargo - Bismarck - Mandan - Dickinson (np_t001.csv; Nos. 1 / 2 North Coast Limited, 3 / 4 Alaskan,
-  7, 8, 11, 12 and the locals and mixed trains 111 / 112, 123 / 124, 137 / 138, 141 / 142, 175 / 176) and the Duluth - Superior - Staples sections (np_t001d.csv). No. 7's
-  Manitoba Junction 2.03 / 2.18 is a reading to check. Named trains (Brendan): 42 / 43 The Adventureland.
+  Transcribed (timetables_np/, pages 1090 - 1094, 27 Nov 2026): main line np_t001 (St. Paul - Dickinson), np_t002 (Dickinson - Logan), np_t002h (via Helena), np_t002b (via
+  Butte), np_t003 (Butte / Garrison - Spokane; the Washington part was done in October, wa_np_t003a-c); Table 5 Duluth - Brainerd - Staples (np_t005: Nos. 55 - 58, the Duluth
+  sections); Table 6 Duluth Short Line (np_t006); 7 Grantsburg; 8 Cloquet; 11 Brainerd - International Falls; 14 Manitoba Junction - Winnipeg; 15 Streeter (and LaMoure - Oakes);
+  16 Marion; 17 Oberon - Esmond; 18 Fergus Falls branch. Readings to check are in each file's UNSURE lines (No. 4's 7 1/2-hour stand at Glendive; the Gardiner branch table
+  wanted for the Park season; the NP station at Winnipeg). Named trains (Brendan): 42 / 43 The Adventureland.
 - [ ] Chicago interurbans (Brendan, 25 Nov 2026: "I'm gonna do it"): the Chicago North Shore & Milwaukee and the Chicago Aurora & Elgin. Track: Mississippi Rails
   (Chicago_Interurbans_1948.kml, private repo traces/chicago/): CNS&M 263 mi of pieces (with some Milwaukee Road), CA&E 101 mi (main line, Aurora, Batavia, Elgin, Geneva,
   Hillside and Mount Carmel spurs), and the Chicago 'L' by its pre-1947 companies. Stations are unnamed polygons on the interurbans (centroid onto the track; names from the

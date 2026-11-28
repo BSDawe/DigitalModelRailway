@@ -1,0 +1,11 @@
+# Northern Pacific Railway, Table 17, Oberon and Esmond (Official Guide, May 1948, page 1094; table dated April 4, 1948). CENTRAL TIME. Miles as printed from Oberon. Both mixed (hook sign). Oberon is on
+# the NP's Carrington - Oberon line (not otherwise in these pages): an isolated branch for now. NOT BUILT YET.
+#train col=No173 num=173 dir=down days="ex Sun" kind=mixed note="Northern Pacific No. 173, mixed, daily except Sunday: Oberon 2.15 p.m. to Esmond 3.45 p.m. (Official Guide, May 1948, page 1094, Table 17, April 4, 1948)."
+#train col=No174 num=174 dir=up days="ex Sun" kind=mixed note="Northern Pacific No. 174, mixed, daily except Sunday: Esmond 9.10 a.m. to Oberon 10.30 a.m. (Official Guide, May 1948, page 1094, Table 17, April 4, 1948)."
+mile,station,principal,prov,tz,No173,No174
+0,"Oberon, N. Dak.",1,ND,C,lv 2.15p,ar 10.30a
+5,"Josephine, N. Dak.",0,ND,C,2.27p,10.17a
+10,"Flora, N. Dak.",0,ND,C,2.35p,10.05a
+15,"Maddock, N. Dak.",0,ND,C,2.59p,9.50a
+20,"Hesper, N. Dak.",0,ND,C,3.10p,9.30a
+28,"Esmond, N. Dak.",1,ND,C,ar 3.45p,lv 9.10a

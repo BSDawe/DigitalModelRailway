@@ -1,0 +1,50 @@
+# Northern Pacific Railway, Table 11, Little Falls, Brainerd and International Falls (Official Guide, May 1948, page 1094; table dated May 18, 1947; Brendan's images, 27 Nov 2026; scans in the private
+# repo, scans/og1948_np/p1094_*.png). CENTRAL TIME. Miles as printed from St. Paul (by Little Falls). Kelliher (277) is on a branch from Funkley: the row is placed after Funkley
+# (its mile is out of order). The Duluth rows (Duluth 0, Superior 4, Brainerd 118) carry Table 5's No. 57 / No. 58 times: entered as links on Nos. 11 / 12, not as trains.
+# The St. Paul / Minneapolis rows are the main-line trains (Nos. 11, 7, 12, 8 in np_t001). Brainerd is printed twice (ar. / lve.).
+# Signs (page 1094 key): * daily; dagger daily except Sunday; double dagger daily except Saturday; pilcrow daily except Monday; a stops on flag to pick up or let off revenue
+# passengers (entered f); f stops on flag; # mixed train daily except Sunday; hook sign mixed; box: connection made at Independence. Coupon, telegraph, Pullman signs not entered.
+# UNSURE: the two mixed trains Bemidji - Kelliher are printed in the 7-31 and 32-8 columns under "Mix." with no number. NOT BUILT YET.
+#train col=No11 num=11 dir=down days=daily kind=passenger note="Northern Pacific No. 11, daily: St. Paul 7.45 p.m., Little Falls 10.53 p.m., Brainerd 11.55 p.m. - 12.25 a.m., Bemidji 3.36 - 3.56 a.m., International Falls 7.45 a.m. (Official Guide, May 1948, page 1094, Table 11, May 18, 1947)." links="from St. Paul (np_t001, No. 11); Duluth cars from No. 57 at Brainerd (Duluth 7.40 p.m., Superior 7.52, Brainerd 11.34 p.m., printed in the column)"
+#train col=No31 num=31 dir=down days="ex Sun" kind=passenger note="Northern Pacific No. 31, daily except Sunday: Little Falls 11.25 a.m. to Brainerd 12.25 p.m. (printed 7-31: from St. Paul 8.42 a.m. on No. 7) (Official Guide, May 1948, page 1094, Table 11, May 18, 1947)." links="from No. 7 at Little Falls (St. Paul 8.42 a.m., Minneapolis 9.17 a.m.)"
+#train col=MixBK num="" dir=down days="ex Sun" kind=mixed note="Northern Pacific mixed train (no number printed), daily except Sunday: Bemidji 9.00 a.m. to Kelliher 11.45 a.m. (Official Guide, May 1948, page 1094, Table 11, May 18, 1947)."
+#train col=No12 num=12 dir=up days=daily kind=passenger note="Northern Pacific No. 12, daily: International Falls 7.00 p.m., Bemidji 10.25 - 10.40 p.m., Brainerd 2.00 - 2.30 a.m., Little Falls 3.30 a.m., on to St. Paul 7.30 a.m. (Official Guide, May 1948, page 1094, Table 11, May 18, 1947)." links="Duluth cars to No. 58 at Brainerd (Brainerd 4.20 a.m., Superior 7.44, Duluth 8.00 a.m., printed in the column); continued as No. 12 to St. Paul (np_t001)"
+#train col=MixKB num="" dir=up days="ex Sun" kind=mixed note="Northern Pacific mixed train (no number printed), daily except Sunday: Kelliher 1.15 p.m. to Bemidji 3.15 p.m. (Official Guide, May 1948, page 1094, Table 11, May 18, 1947)."
+#train col=No32 num=32 dir=up days="ex Sun" kind=passenger note="Northern Pacific No. 32, daily except Sunday: Brainerd 6.00 p.m. to Little Falls 7.00 p.m. (printed 32-8: on to St. Paul 10.25 p.m. on No. 8) (Official Guide, May 1948, page 1094, Table 11, May 18, 1947)." links="to No. 8 at Little Falls (Minneapolis 9.52 p.m., St. Paul 10.25 p.m.)"
+mile,station,principal,prov,tz,No11,No31,MixBK,No12,MixKB,No32
+107,"Little Falls, Minn.",1,MN,C,lv 10.53p,lv 11.25a,,ar 3.30a,,ar 7.00p
+113,"Belle Prairie, Minn.",0,MN,C,f11.05p,f11.37a,,f3.15a,,f6.45p
+115,"Camp Ripley Junction, Minn.",0,MN,C,f11.08p,f11.41a,,f3.12a,,f6.42p
+116,"Topeka, Minn.",0,MN,C,f11.11p,f11.44a,,f3.10a,,f6.40p
+122,"Fort Ripley, Minn.",0,MN,C,11.20p,11.53a,,3.02a,,6.32p
+132,"Crow Wing, Minn.",0,MN,C,f11.35p,f12.10p,,f2.45a,,f6.15p
+133,"Barrows, Minn.",0,MN,C,f11.38p,f12.14p,,f2.41a,,f6.11p
+139,"Brainerd, Minn.",1,MN,C,ar 11.55p / lv 12.25a,ar 12.25p,,ar 2.00a / lv 2.30a,,lv 6.00p
+149,"Merrifield, Minn.",0,MN,C,12.46a,,,1.38a,,
+154,"Lake Hubert, Minn.",0,MN,C,12.55a,,,1.30a,,
+156,"Nisswa, Minn.",0,MN,C,1.00a,,,1.25a,,
+163,"Pequot Lakes, Minn.",0,MN,C,1.13a,,,1.13a,,
+166,"Jenkins, Minn.",0,MN,C,1.20a,,,1.05a,,
+172,"Pine River, Minn.",0,MN,C,1.32a,,,12.51a,,
+181,"Backus, Minn.",0,MN,C,1.50a,,,12.31a,,
+189,"Hackensack, Minn.",0,MN,C,2.06a,,,12.15a,,
+202,"Walker, Minn.",1,MN,C,2.33a,,,11.49p,,
+214,"Laporte, Minn.",0,MN,C,2.57a,,,11.22p,,
+220,"Guthrie, Minn.",0,MN,C,3.10a,,,11.09p,,
+225,"Nary, Minn.",0,MN,C,f3.18a,,,f10.58p,,
+234,"Bemidji, Minn.",1,MN,C,ar 3.36a / lv 3.56a,,lv 9.00a,ar 10.25p / lv 10.40p,ar 3.15p,
+239,"Lavinia, Minn.",0,MN,C,f4.19a,,f9.20a,f10.03p,f2.54p,
+245,"Turtle River, Minn.",0,MN,C,f4.30a,,f9.35a,f9.53p,f2.41p,
+251,"Tenstrike, Minn.",0,MN,C,4.43a,,9.48a,9.43p,2.27p,
+254,"Hines, Minn.",0,MN,C,4.49a,,9.55a,9.37p,2.20p,
+259,"Blackduck, Minn.",0,MN,C,4.59a,,10.25a,9.28p,2.08p,
+266,"Funkley, Minn.",0,MN,C,5.12a,,10.50a,9.17p,1.51p,
+277,"Kelliher, Minn.",0,MN,C,,,ar 11.45a,,lv 1.15p,
+275,"Northome, Minn.",0,MN,C,5.32a,,,9.00p,,
+280,"Mizpah, Minn.",0,MN,C,5.44a,,,8.51p,,
+285,"Gemmell, Minn.",0,MN,C,5.55a,,,8.42p,,
+297,"Margie, Minn.",0,MN,C,6.22a,,,8.20p,,
+306,"Big Falls, Minn.",0,MN,C,6.40a,,,8.04p,,
+307,"Grand Falls, Minn.",0,MN,C,f6.42a,,,f8.01p,,
+325,"Littlefork, Minn.",0,MN,C,7.16a,,,7.29p,,
+341,"International Falls, Minn.",1,MN,C,ar 7.45a,,,lv 7.00p,,

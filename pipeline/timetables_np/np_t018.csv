@@ -1,0 +1,34 @@
+# Northern Pacific Railway, Table 18, Fergus Falls Branch: Wadena - Fergus Falls - Breckenridge - Wahpeton - Oakes (Official Guide, May 1948, page 1094; table dated May 18, 1947). CENTRAL TIME. Miles as
+# printed from Wadena. Nos. 111 / 112 run on from / to Staples (np_t001, page 1090: Staples 6.00 - Wadena 6.30 a.m.; Wadena 5.23 - Staples 5.55 p.m.): one train each way.
+# Signs (page 1094 key): * daily; dagger daily except Sunday; double dagger daily except Saturday; pilcrow daily except Monday; a stops on flag to pick up or let off revenue
+# passengers (entered f); f stops on flag; # mixed train daily except Sunday; hook sign mixed; box: connection made at Independence. Coupon, telegraph, Pullman signs not entered.
+# NOT BUILT YET.
+#train col=No111 num=111 dir=down days="ex Sun" kind=passenger note="Northern Pacific No. 111, daily except Sunday: Staples 6.00 a.m., Wadena 6.35 a.m., Fergus Falls 8.23 a.m., Wahpeton 9.15 a.m., Oakes 11.35 a.m. (printed 3-111: from St. Paul double-dagger 9.10 p.m. on No. 3) (Official Guide, May 1948, page 1094, Table 18, May 18, 1947)." links="same train as No. 111 Staples - Wadena (np_t001); from No. 3 at Staples"
+#train col=No112 num=112 dir=up days="ex Sun" kind=passenger note="Northern Pacific No. 112, daily except Sunday: Oakes 12.20 p.m., Wahpeton 2.44 p.m., Fergus Falls 3.35 p.m., Wadena 5.23 p.m., Staples 5.55 p.m. (printed 112-8: on to St. Paul 10.25 p.m. on No. 8) (Official Guide, May 1948, page 1094, Table 18, May 18, 1947)." links="same train as No. 112 Wadena - Staples (np_t001); to No. 8 at Staples"
+mile,station,principal,prov,tz,No111,No112
+0,"Wadena, Minn.",1,MN,C,lv 6.35a,ar 5.23p
+10,"Deer Creek, Minn.",0,MN,C,6.58a,5.01p
+18,"Henning, Minn.",1,MN,C,7.13a,4.45p
+24,"Vining, Minn.",0,MN,C,7.26a,4.32p
+29,"Clitheral, Minn.",0,MN,C,7.36a,4.21p
+33,"Battle Lake, Minn.",0,MN,C,7.45a,4.12p
+41,"Underwood, Minn.",0,MN,C,8.02a,3.56p
+46,"Wall Lake, Minn.",0,MN,C,f8.10a,f3.45p
+52,"Fergus Falls, Minn.",1,MN,C,8.23a,3.35p
+58,"French, Minn.",0,MN,C,f8.34a,f3.23p
+63,"Foxhome, Minn.",0,MN,C,8.44a,3.12p
+68,"Everdell, Minn.",0,MN,C,f8.53a,f3.04p
+77,"Breckenridge, Minn.",1,MN,C,9.09a,2.49p
+78,"Wahpeton, N. Dak.",1,ND,C,9.15a,2.44p
+85,"Farmington, N. Dak.",0,ND,C,f9.26a,f2.30p
+88,"Fairview Junction, N. Dak.",0,ND,C,f9.31a,f2.25p
+91,"Mooreton, N. Dak.",0,ND,C,9.35a,2.20p
+97,"Barney, N. Dak.",0,ND,C,9.46a,2.08p
+103,"Wyndmere, N. Dak.",0,ND,C,9.57a,1.56p
+113,"De Lamere, N. Dak.",0,ND,C,10.12a,1.39p
+119,"Milnor, N. Dak.",0,ND,C,10.22a,1.28p
+124,"Hoving, N. Dak.",0,ND,C,f10.34a,f1.16p
+129,"Gwinner, N. Dak.",0,ND,C,10.44a,1.06p
+136,"Stirum, N. Dak.",0,ND,C,10.58a,12.51p
+143,"Crete, N. Dak.",0,ND,C,11.13a,12.36p
+151,"Oakes, N. Dak.",1,ND,C,ar 11.35a,lv 12.20p

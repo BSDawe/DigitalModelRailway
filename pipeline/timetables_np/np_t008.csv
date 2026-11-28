@@ -1,0 +1,11 @@
+# Northern Pacific Railway, Table 8, Duluth - Superior - Carlton - Cloquet (Official Guide, May 1948, page 1093; table dated May 18, 1947). CENTRAL TIME. Miles as printed from Duluth (Carlton 21 on this table;
+# 27 on Table 5). All four trains mixed (731 / 734 carry the pilcrow, 733 / 732 "Mix"). The Duluth - Superior - Carlton rows in Nos. 731 and 734 (Duluth dagger 7.30 a.m., Superior
+# 7.45, Carlton 8.28 a.m.; Carlton *9.55 p.m., Superior 10.34, Duluth dagger 10.50 p.m.) are Table 5's Nos. 55 and 56: entered as connections, not as this train. NOT BUILT YET.
+#train col=No733 num=733 dir=down days="ex Sun" kind=mixed note="Northern Pacific No. 733, mixed, daily except Sunday: Carlton 6.25 a.m. to Cloquet 6.45 a.m. (Official Guide, May 1948, page 1093, Table 8, May 18, 1947)."
+#train col=No731 num=731 dir=down days="ex Sun" kind=mixed note="Northern Pacific No. 731, mixed, daily except Sunday: Carlton 3.55 p.m. to Cloquet 4.15 p.m. (Duluth 7.30 a.m. - Carlton 8.28 a.m. printed in the column: No. 55) (Official Guide, May 1948, page 1093, Table 8, May 18, 1947)." links="connection from No. 55 (Duluth 7.30 a.m.) at Carlton"
+#train col=No732 num=732 dir=up days="ex Sun" kind=mixed note="Northern Pacific No. 732, mixed, daily except Sunday: Cloquet 6.55 a.m. to Carlton 7.15 a.m. (Official Guide, May 1948, page 1093, Table 8, May 18, 1947)."
+#train col=No734 num=734 dir=up days="ex Sun" kind=mixed note="Northern Pacific No. 734, mixed, daily except Sunday: Cloquet 4.40 p.m. to Carlton 5.00 p.m. (Carlton 9.55 p.m. - Duluth 10.50 p.m. printed in the column: No. 56) (Official Guide, May 1948, page 1093, Table 8, May 18, 1947)." links="connection to No. 56 (Duluth 10.50 p.m.) at Carlton"
+mile,station,principal,prov,tz,No733,No731,No732,No734
+21,"Carlton, Minn.",1,MN,C,lv 6.25a,lv 3.55p,ar 7.15a,ar 5.00p
+24,"Scanlon, Minn.",0,MN,C,f6.35a,f4.05p,f7.05a,f4.48p
+27,"Cloquet, Minn.",1,MN,C,ar 6.45a,ar 4.15p,lv 6.55a,lv 4.40p

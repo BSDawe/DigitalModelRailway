@@ -1,0 +1,10 @@
+# Northern Pacific Railway, Table 7, Grantsburg Branch: Rush City - Grantsburg (Official Guide, May 1948, page 1093; table dated May 18, 1947). CENTRAL TIME. Miles as printed from Rush City. Both trains
+# mixed (the pilcrow sign). The Minneapolis / St. Paul rows (No. 736: Minneapolis double-dagger 11.20 p.m., St. Paul 11.59 p.m.; No. 735: St. Paul 12.40 p.m.) are the Table 6
+# connections (Nos. 66 and 61), not this train. Benson and Grantsburg are in Wisconsin (St. Croix River the crossing). NOT BUILT YET.
+#train col=No736 num=736 dir=down days="ex Sun" kind=mixed note="Northern Pacific No. 736, mixed, daily except Sunday: Rush City 5.00 a.m. to Grantsburg 5.40 a.m. (connection from Minneapolis double-dagger 11.20 p.m., St. Paul 11.59 p.m., daily except Saturday, on No. 66) (Official Guide, May 1948, page 1093, Table 7, May 18, 1947)." links="connection from No. 66 at Rush City"
+#train col=No735 num=735 dir=up days="ex Sun" kind=mixed note="Northern Pacific No. 735, mixed, daily except Sunday: Grantsburg 6.45 a.m. to Rush City 7.25 a.m. (connection to St. Paul 12.40 p.m. on No. 61) (Official Guide, May 1948, page 1093, Table 7, May 18, 1947)." links="connection to No. 61 at Rush City"
+mile,station,principal,prov,tz,No736,No735
+0,"Rush City, Minn.",1,MN,C,lv 5.00a,ar 7.25a
+5,"St. Croix River, Minn.",0,MN,C,f5.13a,f7.13a
+7,"Benson, Wis.",0,WI,C,f5.18a,f7.08a
+17,"Grantsburg, Wis.",1,WI,C,ar 5.40a,lv 6.45a

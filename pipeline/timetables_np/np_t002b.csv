@@ -1,0 +1,13 @@
+# Northern Pacific Railway, Table 2, Main Line via Butte: Logan - Three Forks - Whitehall - Butte (Official Guide, May 1948, page 1091; table dated December 14, 1947). MOUNTAIN
+# TIME. Miles as printed from St. Paul. Nos. 1 / 2 (North Coast Limited, "Runs via Butte"). Butte (M.T.): the Butte Union Depot, joint UP - NP (BUTTE_UNION_MT, Brendan's point,
+# 27 Nov 2026), shared with the BA&P. NOT BUILT YET. The Logan - Butte bus columns (connections for Nos. 3 / 4) are not entered.
+#train col=No1 num=1 dir=down days=daily kind=passenger name="North Coast Limited" note="Northern Pacific No. 1, North Coast Limited, daily, runs via Butte: Logan 9.35 a.m., Whitehall 10.40 a.m., Butte 12.15 p.m. (Official Guide, May 1948, page 1091; table dated December 14, 1947)." links="from np_t002; continued on the following page"
+#train col=No2 num=2 dir=up days=daily kind=passenger name="North Coast Limited" note="Northern Pacific No. 2, North Coast Limited, daily, runs via Butte: Butte 6.30 p.m., Whitehall 7.50 p.m., Logan 8.40 p.m. (Official Guide, May 1948, page 1091; table dated December 14, 1947)." links="from the following page; continued in np_t002"
+mile,station,principal,prov,tz,No1,No2
+1047,"Logan, Mont.",1,MT,M,lv 9.35a,ar 8.40p
+1054,"Three Forks, Mont.",0,MT,M,,
+1060,"Willow Creek, Mont.",0,MT,M,,
+1079,"Cardwell, Mont.",0,MT,M,,
+1086,"Whitehall, Mont.",0,MT,M,10.40a,7.50p
+1108,"Homestake, Mont.",0,MT,M,,
+1118,"Butte, Mont.",1,MT,M,ar 12.15p,lv 6.30p

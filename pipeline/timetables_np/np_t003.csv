@@ -1,0 +1,56 @@
+# Northern Pacific Railway, Table 3, Main Line (continued): Butte - Garrison - Missoula - Paradise - Sand Point - Spokane, the Montana and Idaho part (Official Guide, May 1948,
+# page 1092; table dated April 4, 1948; Brendan's images, 27 Nov 2026; scans in the private repo, scans/og1948_np/p1092_a-b.png). Miles as printed from St. Paul.
+# The Washington part of the same page (Spokane - Pasco - Seattle / Tacoma, and Spokane - Pasco - Portland over the S.P.&S.) was transcribed in October: wa_np_t003a / b / c.csv.
+# TIME: MOUNTAIN TIME to Paradise, PACIFIC TIME from Paradise west (the tz column). Paradise is printed twice ("arr. Paradise (Mount. time) lve." and "lve. Paradise (Pacific
+# time) arr."): entered once in Pacific time; the Mountain-time figures are converted (No. 1 arr. 5.25 M = 4.25 P; No. 3 arr. 2.10 M = 1.10 P; No. 2 lve. 1.35 M = 12.35 P;
+# No. 4 lve. 4.40 M = 3.40 P). Garrison is printed twice (arr. / lve., the Butte line joining the Helena line; mile 1170 here, 1172 by Helena on page 1091).
+# Named trains: Nos. 1 / 2 North Coast Limited (via Butte); Nos. 3 / 4 Alaskan (via Helena: Garrison in this file). Nos. 287 / 288 Butte - Garrison connect with Nos. 3 / 4.
+# Signs (footnote strip, Brendan's image): * daily; dagger daily except Sunday; f stops on flag; c stops on flag Sunday only (No. 4 Evaro: entered f); y, z, n, a, b, d: conditional
+# stops for long-distance passengers, entered as stops (No. 1 Drummond y, No. 2 Drummond z, No. 2 Athol n). Meals, Pullman, coupon and telegraph signs not entered.
+# Not entered: the bus columns (Missoula - Paradise area, *3.50 p.m. - 4.55 p.m., dagger 5.30 a.m. - 8.00 a.m.; and back *10.35 - 11.40 a.m., dagger 1.25 - 3.00 p.m.);
+# Farragut (Idaho; "lve. Farragut arr." between the two Athol rows; no times). No. 4 is entered with one time at Athol (both rows 10.46 p.m.); No. 2 the same (9.26 a.m.).
+# UNSURE: No. 3 Perma 1.30 p.m. (Mountain) against Paradise arr. 2.10 p.m. (12 mi in 40 min): read 1.30, perhaps 1.50 (marked ?). No. 3 Plains: no time (Thompson Falls 2.06 p.m.
+# is the next figure). No. 3 Evaro: a sign before 12.16 p.m. (read as * and not entered). The Spokane times continue in wa_np_t003a.csv; check they agree when built.
+# NOT BUILT YET.
+#train col=No287 num=287 dir=down days=daily kind=passenger note="Northern Pacific No. 287, daily: Butte 7.45 a.m. to Garrison 9.05 a.m., connecting with No. 3 (Official Guide, May 1948, page 1092; table dated April 4, 1948)." links="connects with No. 3 at Garrison"
+#train col=No3 num=3 dir=down days=daily kind=passenger name="Alaskan" note="Northern Pacific No. 3, the Alaskan, daily: Garrison 9.35 a.m. (from Helena), Missoula 11.15 - 11.35 a.m., Sand Point 4.33 p.m., Spokane 6.20 p.m. Pacific time (Official Guide, May 1948, page 1092; table dated April 4, 1948)." links="from np_t002h (via Helena); continued in Washington (wa_np_t003a)"
+#train col=No1 num=1 dir=down days=daily kind=passenger name="North Coast Limited" note="Northern Pacific No. 1, North Coast Limited, daily: Butte 12.25 p.m., Missoula 3.05 - 3.15 p.m., Spokane 8.35 p.m. Pacific time (Official Guide, May 1948, page 1092; table dated April 4, 1948)." links="from np_t002b (via Butte); continued in Washington (wa_np_t003a, Seattle; wa_np_t003c, Portland over the S.P.&S.)"
+#train col=No2 num=2 dir=up days=daily kind=passenger name="North Coast Limited" note="Northern Pacific No. 2, North Coast Limited, daily: Spokane 8.40 a.m. Pacific time, Missoula 3.35 - 3.45 p.m., Butte 6.20 p.m. Mountain time (Official Guide, May 1948, page 1092; table dated April 4, 1948)." links="from Washington (wa_np_t003a); continued in np_t002b (via Butte)"
+#train col=No4 num=4 dir=up days=daily kind=passenger name="Alaskan" note="Northern Pacific No. 4, the Alaskan, daily: Spokane 9.25 p.m. Pacific time, Sand Point 11.45 p.m., Missoula 7.00 - 7.15 a.m., Garrison 9.15 a.m. Mountain time, then via Helena (Official Guide, May 1948, page 1092; table dated April 4, 1948)." links="from Washington (wa_np_t003a); continued in np_t002h (via Helena)"
+#train col=No288 num=288 dir=up days=daily kind=passenger note="Northern Pacific No. 288, daily: Garrison 9.35 a.m. to Butte 11.10 a.m., connecting with No. 4 (Official Guide, May 1948, page 1092; table dated April 4, 1948)." links="connects with No. 4 at Garrison"
+mile,station,principal,prov,tz,No287,No3,No1,No2,No4,No288
+1118,"Butte, Mont.",1,MT,M,lv 7.45a,,lv 12.25p,ar 6.20p,,ar 11.10a
+1125,"Silver Bow, Mont.",0,MT,M,f7.55a,,,,,10.53a
+1133,"Durant, Mont.",0,MT,M,f8.08a,,,,,f10.37a
+1137,"Stuart, Mont.",0,MT,M,f8.13a,,,,,f10.30a
+1144,"Warm Springs, Mont.",0,MT,M,8.23a,,,,,10.18a
+1159,"Deer Lodge, Mont.",1,MT,M,8.45a,,1.19p,5.21p,,9.53a
+1170,"Garrison, Mont.",1,MT,M,ar 9.05a,lv 9.35a,ar 1.35p / lv 1.40p,ar 5.00p / lv 5.05p,ar 9.15a,lv 9.35a
+1178,"Gold Creek, Mont.",0,MT,M,,f9.46a,,,f9.03a,
+1190,"Drummond, Mont.",0,MT,M,,10.07a,f2.05p,4.39p,8.40a,
+1200,"Bearmouth, Mont.",0,MT,M,,f10.21a,,,f8.18a,
+1222,"Clinton, Mont.",0,MT,M,,f10.50a,,,f7.42a,
+1232,"Bonner, Mont.",0,MT,M,,11.05a,,,7.26a,
+1238,"Missoula, Mont.",1,MT,M,,ar 11.15a / lv 11.35a,ar 3.05p / lv 3.15p,ar 3.35p / lv 3.45p,ar 7.00a / lv 7.15a,
+1245,"De Smet, Mont.",0,MT,M,,,,,,
+1256,"Evaro, Mont.",0,MT,M,,12.16p,,,f6.19a,
+1266,"Arlee, Mont.",0,MT,M,,12.40p,,,5.46a,
+1276,"Ravalli, Mont.",0,MT,M,,1.00p,,,5.29a,
+1286,"Dixon, Mont.",0,MT,M,,1.12p,,f2.32p,f5.17a,
+1297,"Perma, Mont.",0,MT,M,,1.30p?,,,4.59a,
+1309,"Paradise, Mont.",1,MT,P,,ar 1.10p / lv 1.30p,ar 4.25p / lv 4.30p,ar 12.30p / lv 12.35p,ar 3.35a / lv 3.40a,
+1315,"Plains, Mont.",0,MT,P,,,,,3.21a,
+1341,"Thompson Falls, Mont.",0,MT,P,,2.06p,f5.11p,f11.44a,2.32a,
+1363,"Trout Creek, Mont.",0,MT,P,,f2.47p,,,f1.46a,
+1369,"Tuscor, Mont.",0,MT,P,,f2.56p,,,1.30a,
+1379,"Noxon, Mont.",0,MT,P,,3.12p,,,1.15a,
+1389,"Heron, Mont.",0,MT,P,,3.27p,,,12.57a,
+1400,"Colby, Idaho",0,ID,P,,f3.41p,,,f12.34a,
+1403,"Clark's Fork, Idaho",0,ID,P,,3.44p,,,f12.31a,
+1413,"Hope, Idaho",0,ID,P,,f4.00p,,,12.14a,
+1428,"Sand Point, Idaho",1,ID,P,,4.33p,7.02p,10.04a,11.45p,
+1449,"Granite, Idaho",0,ID,P,,f5.01p,,,f10.58p,
+1456,"Athol, Idaho",0,ID,P,,5.13p,f7.41p,9.26a,10.46p,
+1469,"Rathdrum, Idaho",0,ID,P,,5.33p,,,10.25p,
+1476,"Hauser, Idaho",0,ID,P,,f5.42p,,,f10.11p,
+1496,"Spokane, Wash.",1,WA,P,,ar 6.20p,ar 8.35p,lv 8.40a,lv 9.25p,

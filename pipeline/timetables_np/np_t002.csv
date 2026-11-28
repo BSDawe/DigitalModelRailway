@@ -1,0 +1,60 @@
+# Northern Pacific Railway, Table 2, Main Line (continued): Dickinson - Glendive - Miles City - Billings - Livingston - Bozeman - Logan (Official Guide, May 1948, page 1091;
+# table dated December 14, 1947; Brendan's images, 27 Nov 2026; scans in the private repo, scans/og1948_np/p1091_a-b.png). MOUNTAIN TIME. Miles as printed from St. Paul.
+# West of Logan the main line is in two routes: via Helena (Nos. 3 / 4, and 221 / 222: np_t002h.csv) and via Butte (Nos. 1 / 2: np_t002b.csv). NOT BUILT YET.
+# Named trains (Brendan): Nos. 1 / 2 North Coast Limited ("All regularly assigned cars air-conditioned"); Nos. 3 / 4 Alaskan.
+# Signs: * daily; dagger daily except Sunday; section sign Sunday only; f flag stop. Conditional stops entered as stops: a (Forsyth - Billings locals, to and from Forsyth and
+# Billings and west), o, i, v, z (stops to receive or discharge long-distance passengers). + coupon stations, telegraph and Pullman signs, Rail-Auto signs not entered.
+# Not entered: Cody (C.B.&Q., Yellowstone Park) connections "x Daily, via bus" (Billings - Cody, arr. / lve. Cody x1.20 / x1.30 p.m., x11.35 p.m.): buses are not drawn.
+# Gardiner (Yellowstone Park), 1053 mi: "Train service available only during the Park season, June 20 to September 11" (black square) and "Connection daily except Sunday via bus"
+# (double dagger): Gardiner arr. double-dagger 10.00 / square 10.30 (Nos. 1 / 3 columns), lve. Gardiner square 7.45 p.m. (Nos. 2 / 4 columns, and double-dagger 10.00 / square 10.30).
+# The Park-season Gardiner branch train runs in the target week (5 - 11 July) but its Livingston times are not on this page: the Gardiner branch table is wanted.
+# UNSURE: No. 4 at Glendive: arr. 1.10 a.m., lve. 8.40 a.m. as printed (a 7 1/2-hour stand; Dickinson 11.45 a.m. agrees with page 1090's 11.55 a.m. departure). Misprints left
+# as printed. Page 1090 has No. 1 arriving Dickinson 8.57 p.m. (Mountain) and No. 2 leaving 8.40 a.m.; this page No. 1 leaves 9.02 p.m., No. 2 arrives 8.35 a.m.
+#train col=No1 num=1 dir=down days=daily kind=passenger name="North Coast Limited" note="Northern Pacific No. 1, North Coast Limited, daily: Dickinson 9.02 p.m. to Billings 5.00 - 5.10 a.m. and Logan 9.30 a.m., then via Butte (Official Guide, May 1948, page 1091; table dated December 14, 1947)." links="from page 1090 (np_t001); continued via Butte (np_t002b)"
+#train col=No3 num=3 dir=down days=daily kind=passenger name="Alaskan" note="Northern Pacific No. 3, the Alaskan, daily: Dickinson 2.43 p.m. to Billings 11.10 - 11.35 p.m. and Logan 4.50 a.m., then via Helena (Official Guide, May 1948, page 1091; table dated December 14, 1947)." links="from page 1090 (np_t001); continued via Helena (np_t002h)"
+#train col=No2 num=2 dir=up days=daily kind=passenger name="North Coast Limited" note="Northern Pacific No. 2, North Coast Limited, daily: Logan 8.50 p.m. (from Butte) to Billings 12.50 - 1.00 a.m. and Dickinson 8.35 a.m. (Official Guide, May 1948, page 1091; table dated December 14, 1947)." links="from Butte (np_t002b); continued on page 1090 (np_t001)"
+#train col=No4 num=4 dir=up days=daily kind=passenger name="Alaskan" note="Northern Pacific No. 4, the Alaskan, daily: Logan 2.00 p.m. (from Helena) to Billings 7.00 - 7.15 p.m., Glendive 1.10 a.m. (leaving 8.40 a.m. as printed) and Dickinson 11.45 a.m. (Official Guide, May 1948, page 1091; table dated December 14, 1947)." links="from Helena (np_t002h); continued on page 1090 (np_t001)"
+mile,station,principal,prov,tz,No1,No3,No2,No4
+552,"Dickinson, N. Dak.",1,ND,M,lv 9.02p,lv 2.43p,ar 8.35a,ar 11.45a
+562,"South Heart, N. Dak.",0,ND,M,,2.57p,,11.25a
+567,"Zenith, N. Dak.",0,ND,M,,f3.07p,,f11.16a
+572,"Belfield, N. Dak.",0,ND,M,,3.15p,,11.08a
+578,"Fryburg, N. Dak.",0,ND,M,,3.25p,,10.57a
+583,"Sully Springs, N. Dak.",0,ND,M,,f3.33p,,f10.48a
+591,"Medora, N. Dak.",0,ND,M,,3.46p,,10.34a
+603,"Demores, N. Dak.",0,ND,M,,f4.04p,,f10.14a
+608,"Sentinel Butte, N. Dak.",0,ND,M,,4.12p,,10.06a
+616,"Beach, N. Dak.",1,ND,M,10.32p,4.26p,7.07a,9.51a
+627,"Wibaux, Mont.",0,MT,M,,4.43p,,9.33a
+637,"Hodges, Mont.",0,MT,M,,f5.00p,,f9.14a
+657,"Glendive, Mont.",1,MT,M,ar 11.30p / lv 11.40p,ar 5.33p / lv 5.43p,ar 6.00a / lv 6.10a,ar 1.10a / lv 8.40a
+677,"Marsh, Mont.",0,MT,M,,6.10p,,12.36a
+687,"Fallon, Mont.",0,MT,M,,6.24p,,12.19a
+697,"Terry, Mont.",0,MT,M,f12.31a,6.36p,5.11a,12.02a
+710,"Benz, Mont.",0,MT,M,,f6.55p,,f11.39p
+736,"Miles City, Mont.",1,MT,M,1.27a,7.33p,4.18a,10.55p
+756,"Hathaway, Mont.",0,MT,M,,f8.07p,,f10.23p
+769,"Rosebud, Mont.",0,MT,M,,8.26p,,10.05p
+781,"Forsyth, Mont.",1,MT,M,ar 2.35a / lv 2.40a,ar 8.48p / lv 8.53p,ar 3.10a / lv 3.15a,ar 9.40p / lv 9.47p
+802,"Sanders, Mont.",0,MT,M,,9.22p,,9.04p
+809,"Hysham, Mont.",0,MT,M,,9.30p,,8.55p
+814,"Myers, Mont.",0,MT,M,,9.38p,,8.47p
+824,"Big Horn, Mont.",0,MT,M,,9.53p,,8.32p
+830,"Custer, Mont.",0,MT,M,,10.01p,,8.25p
+852,"Pompey's Pillar, Mont.",0,MT,M,,10.28p,,7.58p
+862,"Worden, Mont.",0,MT,M,,10.40p,,f7.46p
+870,"Huntley, Mont.",0,MT,M,,f10.52p,,7.33p
+883,"Billings, Mont.",1,MT,M,ar 5.00a / lv 5.10a,ar 11.10p / lv 11.35p,ar 12.50a / lv 1.00a,ar 7.00p / lv 7.15p
+895,"Mossmain, Mont.",0,MT,M,,,,
+898,"Laurel, Mont.",0,MT,M,,12.04a,,6.34p
+906,"Park City, Mont.",0,MT,M,,12.18a,,6.22p
+923,"Columbus, Mont.",0,MT,M,f6.03a,12.45a,f11.59p,5.57p
+940,"Reed Point, Mont.",0,MT,M,,1.12a,,5.31p
+953,"Greycliff, Mont.",0,MT,M,,f1.29a,,5.13p
+964,"Big Timber, Mont.",0,MT,M,6.59a,1.46a,11.14p,4.58p
+979,"Springdale, Mont.",0,MT,M,,f2.09a,,4.37p
+999,"Livingston, Mont.",1,MT,M,ar 7.50a / lv 8.00a,ar 2.45a / lv 3.00a,ar 10.25p / lv 10.35p,ar 4.00p / lv 4.10p
+1023,"Bozeman, Mont.",1,MT,M,8.58a,4.02a,9.30p,2.52p
+1033,"Belgrade, Mont.",0,MT,M,,4.28a,,2.27p
+1040,"Manhattan, Mont.",0,MT,M,,4.35a,,2.10p
+1047,"Logan, Mont.",1,MT,M,ar 9.30a,ar 4.50a,lv 8.50p,lv 2.00p
