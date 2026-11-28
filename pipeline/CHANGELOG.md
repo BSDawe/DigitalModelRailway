@@ -3383,3 +3383,10 @@ A review of the whole project (Brendan: "have a peek through ... suggest improve
   repo, traces/msrails/South_Dakota_Central_RR.kmz; the pieces in traces/gnmw/gn_links.geojson): the 1904 line into Sioux Falls (filed "abandoned" in the KMZ, in use in 1948;
   the later "new connection" left out) and Brendan's piece joining it to the Willmar line. 103.9 mi traced, 103 printed.
 - Counts unchanged: 774 lines, 5437 trips, 9035 stops; check_gtfs 0 problems.
+
+## Version 237
+- GN trains over the Northern Pacific (Brendan, 27 Nov 2026; Mississippi Rails pieces he sent, in traces/gnmw/gn_links.geojson, own np, cost 1.5 so GN track is preferred):
+  Tilden Jct. - Red Lake Falls by NP trackage rights (Table 19; the NP Ulen - Grand Forks line), Mossmain - Billings (Table 8; the NP main line Gold Creek - Fort Keough).
+  Both now on track, drawn in NP colours. gn_links pieces may carry their own owner.
+- Still straight: Superior - Duluth (NP traces to come).
+- Counts unchanged: 774 lines, 5437 trips, 9035 stops; check_gtfs 0 problems.

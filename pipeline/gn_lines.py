@@ -37,7 +37,7 @@ def _graph():
             for f in json.load(open(os.path.join(HERE, 'traces', 'gn', fn)))['features']:
                 if f['geometry']['type'] == 'LineString': add(ab_lines._xy(f['geometry']['coordinates']), 0.9, 'b', None)
         for f in json.load(open(os.path.join(HERE, 'traces', 'gnmw', 'gn_links.geojson')))['features']:   # Brendan's pieces and Claude's estimated links
-            add(ab_lines._xy(f['geometry']['coordinates']), f['properties'].get('cost', 1.0), 'b', 'est' if f['properties'].get('est') else None)
+            pr = f['properties']; add(ab_lines._xy(f['geometry']['coordinates']), pr.get('cost', 1.0), 'b', 'est' if pr.get('est') else (None if pr.get('own', 'gn') == 'gn' else pr['own']))
         for f in json.load(open(os.path.join(HERE, 'traces', 'maritimes', 'soo.geojson')))['features']:   # Superior - Duluth: the NP and Soo pieces there
             c = f['geometry']['coordinates']
             if f['properties'].get('status') != 'ok' or not all(-92.25 < p[0] < -92.0 and 46.65 < p[1] < 46.82 for p in c): continue
