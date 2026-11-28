@@ -1,0 +1,19 @@
+# Camas Prairie Railroad, Table 50, Lewiston - Arrow - Orofino - Kamiah - Kooskia - Stites (Official Guide, May 1948, page 1096; table dated February 1, 1948). PACIFIC TIME.
+# Miles as printed from Lewiston. Headquarters (54) is printed as a branch heading between Orofino and Greer, with no times (the Headquarters branch: no passenger trains).
+# The Spokane - Arrow rows (*9.45 p.m. - 2.20 a.m.; 3.50 - 8.10 p.m.; mile 132) are NP Nos. 313 / 314 (Table 44): connections.
+# UNSURE: Greer (57) after Headquarters (54) as printed. NOT BUILT YET.
+#train col=No324 num=324 dir=down days=daily kind=passenger note="Camas Prairie Railroad No. 324, daily: Lewiston 9.10 a.m., Orofino 10.51 a.m., Stites 12.30 p.m. (printed 313-324: from Spokane 9.45 p.m. on NP No. 313, Arrow 2.20 a.m.) (Official Guide, May 1948, page 1096, Camas Prairie Railroad Table 50, February 1, 1948)." links="from NP No. 313 at Lewiston"
+#train col=No323 num=323 dir=up days=daily kind=passenger note="Camas Prairie Railroad No. 323, daily: Stites 12.34 p.m., Orofino 2.12 p.m., Lewiston 4.00 p.m. (printed 323-314: Arrow 3.50 p.m. to Spokane 8.10 p.m. on NP No. 314) (Official Guide, May 1948, page 1096, Camas Prairie Railroad Table 50, February 1, 1948)." links="to NP No. 314 (at Arrow 3.50 p.m. / Lewiston)"
+mile,station,principal,prov,tz,No324,No323
+0,"Lewiston, Idaho",1,ID,P,lv 9.10a,ar 4.00p
+14,"Arrow, Idaho",0,ID,P,9.45a,3.25p
+26,"Agatha, Idaho",0,ID,P,f10.09a,f2.53p
+27,"Lenore, Idaho",0,ID,P,10.13a,2.49p
+34,"Peck, Idaho",0,ID,P,10.29a,2.32p
+39,"Ahsahka, Idaho",0,ID,P,10.41a,2.22p
+43,"Orofino, Idaho",1,ID,P,10.51a,2.12p
+54,"Headquarters, Idaho",0,ID,P,,
+57,"Greer, Idaho",0,ID,P,11.14a,1.47p
+66,"Kamiah, Idaho",0,ID,P,11.56a,1.06p
+74,"Kooskia, Idaho",0,ID,P,12.18p,12.45p
+77,"Stites, Idaho",1,ID,P,ar 12.30p,lv 12.34p

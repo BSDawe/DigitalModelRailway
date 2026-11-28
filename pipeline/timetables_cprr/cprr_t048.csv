@@ -1,0 +1,24 @@
+# Camas Prairie Railroad (NP / UP joint; R. E. Hanrahan, Manager, Lewiston, Idaho), Table 48, Lewiston - Culdesac - Craigmont - Cottonwood - Grangeville (Official Guide, May 1948,
+# page 1096, in the NP section; table dated February 1, 1948). PACIFIC TIME. Miles as printed from Lewiston. Table 49 (Lewiston - Almota - Riparia, Nos. 73 / 74) was transcribed in
+# October (wa_cprr_t049.csv, Washington stations only): add Lewiston (No. 73 lv *6.20 p.m.; No. 74 ar 8.25 a.m.) when it is built.
+# Signs (page 1096 key): * daily; dagger daily except Sunday; section sign Sunday only; f stops on flag; i Monday and Friday only; hook sign connection via bus; double dagger
+# daily except Sunday via connecting train; bullet motor. Coupon, telegraph, Pullman, Rail-Auto signs not entered.
+# NOT BUILT YET.
+#train col=No344 num=344 dir=down days=daily kind=passenger note="Camas Prairie Railroad No. 344, daily: Lewiston 9.00 a.m. to Grangeville 11.58 a.m. (printed 313-344: from Spokane 9.45 p.m. on NP No. 313) (Official Guide, May 1948, page 1096, Camas Prairie Railroad Table 48, February 1, 1948)." links="from NP No. 313 at Lewiston"
+#train col=No343 num=343 dir=up days=daily kind=passenger note="Camas Prairie Railroad No. 343, daily: Grangeville 12.08 p.m. to Lewiston 3.00 p.m. (printed 343-314: on to Spokane 8.10 p.m. on NP No. 314) (Official Guide, May 1948, page 1096, Camas Prairie Railroad Table 48, February 1, 1948)." links="to NP No. 314 at Lewiston"
+mile,station,principal,prov,tz,No344,No343
+0,"Lewiston, Idaho",1,ID,P,lv 9.00a,ar 3.00p
+9,"North Lapwai, Idaho",0,ID,P,f9.18a,f2.37p
+10,"Spalding, Idaho",0,ID,P,9.20a,2.34p
+14,"Lapwai, Idaho",0,ID,P,9.26a,2.30p
+16,"Sweetwater, Idaho",0,ID,P,9.30a,2.25p
+18,"Bundy, Idaho",0,ID,P,f9.36a,f2.20p
+20,"Jacques, Idaho",0,ID,P,f9.39a,f2.18p
+22,"Culdesac, Idaho",0,ID,P,9.44a,2.14p
+36,"Reubens, Idaho",0,ID,P,10.34a,1.30p
+40,"Craig Junction, Idaho",0,ID,P,f10.40a,f1.24p
+45,"Craigmont, Idaho",0,ID,P,10.51a,1.17p
+53,"Ferdinand, Idaho",0,ID,P,11.06a,1.02p
+61,"Cottonwood, Idaho",0,ID,P,11.21a,12.47p
+70,"Fenn, Idaho",0,ID,P,11.39a,12.27p
+77,"Grangeville, Idaho",1,ID,P,ar 11.58a,lv 12.08p

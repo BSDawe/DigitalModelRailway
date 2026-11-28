@@ -7,7 +7,7 @@
 # Not entered: Cody (C.B.&Q., Yellowstone Park) connections "x Daily, via bus" (Billings - Cody, arr. / lve. Cody x1.20 / x1.30 p.m., x11.35 p.m.): buses are not drawn.
 # Gardiner (Yellowstone Park), 1053 mi: "Train service available only during the Park season, June 20 to September 11" (black square) and "Connection daily except Sunday via bus"
 # (double dagger): Gardiner arr. double-dagger 10.00 / square 10.30 (Nos. 1 / 3 columns), lve. Gardiner square 7.45 p.m. (Nos. 2 / 4 columns, and double-dagger 10.00 / square 10.30).
-# The Park-season Gardiner branch train runs in the target week (5 - 11 July) but its Livingston times are not on this page: the Gardiner branch table is wanted.
+# The Park-season Gardiner trains are Table 66 (np_t066.csv: Nos. 217 / 218, Livingston 8.30 a.m. - Gardiner 10.30 a.m., Gardiner 7.45 - Livingston 9.45 p.m.).
 # UNSURE: No. 4 at Glendive: arr. 1.10 a.m., lve. 8.40 a.m. as printed (a 7 1/2-hour stand; Dickinson 11.45 a.m. agrees with page 1090's 11.55 a.m. departure). Misprints left
 # as printed. Page 1090 has No. 1 arriving Dickinson 8.57 p.m. (Mountain) and No. 2 leaving 8.40 a.m.; this page No. 1 leaves 9.02 p.m., No. 2 arrives 8.35 a.m.
 #train col=No1 num=1 dir=down days=daily kind=passenger name="North Coast Limited" note="Northern Pacific No. 1, North Coast Limited, daily: Dickinson 9.02 p.m. to Billings 5.00 - 5.10 a.m. and Logan 9.30 a.m., then via Butte (Official Guide, May 1948, page 1091; table dated December 14, 1947)." links="from page 1090 (np_t001); continued via Butte (np_t002b)"

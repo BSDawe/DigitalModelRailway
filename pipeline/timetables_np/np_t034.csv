@@ -1,0 +1,12 @@
+# Northern Pacific Railway, Table 34, Beach and Ollie (Official Guide, May 1948, page 1096; table dated December 3, 1947; Brendan's images, 27 Nov 2026; scans in the private
+# repo, scans/og1948_np/p1096_*.png). MOUNTAIN TIME. Miles as printed from Beach. Ollie is in Montana (the line runs north-west from Beach); both mixed, sign i: Monday and Friday only.
+# Signs (page 1096 key): * daily; dagger daily except Sunday; section sign Sunday only; f stops on flag; i Monday and Friday only; hook sign connection via bus; double dagger
+# daily except Sunday via connecting train; bullet motor. Coupon, telegraph, Pullman, Rail-Auto signs not entered.
+# NOT BUILT YET.
+#train col=No199 num=199 dir=down days="Mon,Fri" kind=mixed note="Northern Pacific No. 199, mixed, Mondays and Fridays only: Beach 6.10 a.m. to Ollie 7.25 a.m. Mountain time (Official Guide, May 1948, page 1096, Table 34, December 3, 1947)."
+#train col=No200 num=200 dir=up days="Mon,Fri" kind=mixed note="Northern Pacific No. 200, mixed, Mondays and Fridays only: Ollie 7.35 a.m. to Beach 9.05 a.m. Mountain time (Official Guide, May 1948, page 1096, Table 34, December 3, 1947)."
+mile,station,principal,prov,tz,No199,No200
+0,"Beach, N. Dak.",1,ND,M,lv 6.10a,ar 9.05a
+13,"Golva, N. Dak.",0,ND,M,6.45a,8.20a
+21,"Carlyle, N. Dak.",0,ND,M,7.05a,7.55a
+26,"Ollie, N. Dak.",1,ND,M,ar 7.25a,lv 7.35a

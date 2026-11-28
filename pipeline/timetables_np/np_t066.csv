@@ -1,0 +1,18 @@
+# Northern Pacific Railway, Table 66, Livingston and Gardiner, "Gateway to Yellowstone National Park" (Official Guide, May 1948, page 1097; table dated March 1948; Brendan's
+# image, 27 Nov 2026; scan in the private repo, scans/og1948_np/p1097_t066.png). MOUNTAIN TIME. Miles as printed from Livingston.
+# Nos. 217 / 218: "First trip June 20. Last trip September 11." (the Park season: they run in the target week). No intermediate times (the stations between show "- -").
+# No. 217 meets No. 1 at Livingston (No. 1 ar 7.50 / lv 8.00 a.m.); No. 218 meets No. 2 (Livingston ar 10.25 / lv 10.35 p.m.). The bus columns (Livingston dagger 8.00 a.m. -
+# Gardiner 10.00 a.m. by Emigrant; Gardiner dagger 11.30 a.m. - Livingston 1.20 p.m.) are not entered. Gardiner: the NP's Gardiner depot (the park entrance). NOT BUILT YET.
+#train col=No217 num=217 dir=down days=daily kind=passenger note="Northern Pacific No. 217, daily June 20 - September 11: Livingston 8.30 a.m. to Gardiner (Yellowstone Park) 10.30 a.m. (Official Guide, May 1948, page 1097, Table 66, March 1948)." links="connection from No. 1 at Livingston"
+#train col=No218 num=218 dir=up days=daily kind=passenger note="Northern Pacific No. 218, daily June 20 - September 11: Gardiner (Yellowstone Park) 7.45 p.m. to Livingston 9.45 p.m. (Official Guide, May 1948, page 1097, Table 66, March 1948)." links="connection to No. 2 at Livingston"
+mile,station,principal,prov,tz,No217,No218
+0,"Livingston, Mont.",1,MT,M,lv 8.30a,ar 9.45p
+10,"Brisbin, Mont.",0,MT,M,,
+17,"Pray, Mont.",0,MT,M,,
+20,"Chicory, Mont.",0,MT,M,,
+23,"Emigrant, Mont.",0,MT,M,,
+31,"Dailey, Mont.",0,MT,M,,
+37,"Carbella, Mont.",0,MT,M,,
+40,"Sphinx, Mont.",0,MT,M,,
+47,"Corwin Springs, Mont.",0,MT,M,,
+54,"Gardiner, Mont.",1,MT,M,ar 10.30a,lv 7.45p

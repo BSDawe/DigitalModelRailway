@@ -1,0 +1,21 @@
+# Northern Pacific Railway, Table 44, Spokane, Pullman and Lewiston: the Idaho part, Pullman - Moscow - Lewiston (Official Guide, May 1948, page 1096; table dated April 4,
+# 1948). PACIFIC TIME. Miles as printed from Spokane. The Washington part (Spokane - Pullman - Sunshine) was transcribed in October (wa_np_t044.csv); Pullman and Sunshine are
+# repeated here for the join (No. 313 and No. 314 do not call at Sunshine). Arrow (132) is the junction for the Camas Prairie's Stites line (Table 50).
+# Signs (page 1096 key): * daily; dagger daily except Sunday; section sign Sunday only; f stops on flag; i Monday and Friday only; hook sign connection via bus; double dagger
+# daily except Sunday via connecting train; bullet motor. Coupon, telegraph, Pullman, Rail-Auto signs not entered.
+# NOT BUILT YET.
+#train col=No313 num=313 dir=down days=daily kind=passenger note="Northern Pacific No. 313, daily: Spokane 9.45 p.m., Pullman 12.31 a.m., Moscow 12.50 a.m., Lewiston 2.50 a.m. (Official Guide, May 1948, page 1096, Table 44, April 4, 1948)." links="from Spokane (wa_np_t044); connects with Camas Prairie No. 344 (printed 313-344) at Lewiston"
+#train col=No311 num=311 dir=down days=daily kind=passenger note="Northern Pacific No. 311, daily: Spokane 8.50 a.m., Pullman 11.36 a.m., Moscow 11.56 a.m., Lewiston 1.45 p.m. (Official Guide, May 1948, page 1096, Table 44, April 4, 1948)." links="from Spokane (wa_np_t044)"
+#train col=No312 num=312 dir=up days=daily kind=passenger note="Northern Pacific No. 312, daily: Lewiston 8.05 a.m., Moscow 9.58 a.m., Pullman 10.20 a.m., Spokane 1.00 p.m. (Official Guide, May 1948, page 1096, Table 44, April 4, 1948)." links="continued to Spokane (wa_np_t044)"
+#train col=No314 num=314 dir=up days=daily kind=passenger note="Northern Pacific No. 314, daily: Lewiston 3.20 p.m., Moscow 5.15 p.m., Pullman 5.40 p.m., Spokane 8.10 p.m. (Official Guide, May 1948, page 1096, Table 44, April 4, 1948)." links="continued to Spokane (wa_np_t044); connects from Camas Prairie Nos. 343 / 323 (printed 343-314, 323-314) at Lewiston"
+mile,station,principal,prov,tz,No313,No311,No312,No314
+84,"Pullman, Wash.",1,WA,P,12.31a,11.36a,10.20a,5.40p
+90,"Sunshine, Wash.",0,WA,P,,f11.48a,f10.06a,
+95,"Moscow, Idaho",1,ID,P,12.50a,11.56a,9.58a,5.15p
+108,"Troy, Idaho",0,ID,P,1.29a,12.26p,9.31a,4.46p
+120,"Kendrick, Idaho",0,ID,P,1.55a,12.50p,8.58a,4.13p
+124,"Juliaetta, Idaho",0,ID,P,2.04a,12.56p,8.50a,4.05p
+132,"Arrow, Idaho",0,ID,P,2.20a,1.14p,8.35a,3.50p
+135,"Spalding, Idaho",0,ID,P,f2.27a,f1.22p,8.28a,3.43p
+136,"North Lapwai, Idaho",0,ID,P,f2.30a,f1.25p,f8.25a,f3.40p
+146,"Lewiston, Idaho",1,ID,P,ar 2.50a,ar 1.45p,lv 8.05a,lv 3.20p
