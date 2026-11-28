@@ -2,23 +2,13 @@
 
 One list for the Digital Model Railway: questions for Brendan, material he is to supply, and work for Claude. It merges OPEN_QUESTIONS.md with the TO DO lists that were kept in STATE.md (the last of them: "TO DO (1 November 2026)"), as Brendan asked on 9 Nov 2026.
 Ideas not yet planned are in IDEAS.md. Claude adds items as they come up. When one is answered or done, it moves to "Done and answered" with the date. Each open item says what the build does in the meantime. Version tags (V143) say when an item was raised.
-Last updated 27 November 2026 (Version 240).
+Last updated 27 November 2026 (Version 241).
 
 ## Decisions for Brendan
 - [ ] Unnumbered connecting trains: branch sections printed in a parent train's column take the parent's number (e.g. on_cn_t126m / d / p / c / g). Through cars or separate connecting trains? No number, or "connection to No. 41"? (26 Oct) Brendan: much may settle as the branch tables come in.
 - [ ] CN Table 116 (Longlac - Fort William, Nos. 79 / 80): the Toronto section may be a connection with Nos. 3 / 4 at Longlac rather than through cars (Brendan not certain). Matters for chaining. (23 Oct)
 
 ## Waiting for Brendan
-- [ ] Northern Pacific (Brendan, 27 Nov 2026): Mississippi Rails Northern_Pacific_Ry.kmz (2024-6-20) received, in the private repo traces/msrails/: 582 pieces, about 7,100 mi
-  (MN, ND, MT, ID, WA, OR, WI, the Walla Walla Valley; Abandoned and Structures folders). NOT BUILT: waiting for the NP Official Guide pages.
-  Transcribed (timetables_np/, pages 1090 - 1094, 27 Nov 2026): main line np_t001 (St. Paul - Dickinson), np_t002 (Dickinson - Logan), np_t002h (via Helena), np_t002b (via
-  Butte), np_t003 (Butte / Garrison - Spokane; the Washington part was done in October, wa_np_t003a-c); Table 5 Duluth - Brainerd - Staples (np_t005: Nos. 55 - 58, the Duluth
-  sections); Table 6 Duluth Short Line (np_t006); 7 Grantsburg; 8 Cloquet; 11 Brainerd - International Falls; 14 Manitoba Junction - Winnipeg; 15 Streeter (and LaMoure - Oakes);
-  16 Marion; 17 Oberon - Esmond; 18 Fergus Falls branch; page 1095: 19 Leeds, 20 Turtle Lake, 21 Wilton, 22 Jamestown - Oakes, 23 McHenry, 25 Morris, 26 Mott,
-  27 Killdeer, 30 Taylors Falls, 30a Linton (21a Redwater and 28 Sidney are buses: not entered); page 1096: 34 Beach - Ollie, 44 Idaho part (np_t044i), Camas Prairie 48 / 50
-  (timetables_cprr/; Table 49 is wa_cprr_t049: add Lewiston); page 1097: 66 Livingston - Gardiner (Park season). ALL NP PAGES TRANSCRIBED (Brendan, 27 Nov 2026: the
-  missing table numbers are buses or freight). Table 42 Missoula - Wallace: only the Helena / Butte - Missoula rows were on the image (Nos. 1, 2, 4): nothing entered.
-  Next: build (track from Northern_Pacific_Ry.kmz). Readings to check are in each file's UNSURE lines (No. 4's 7 1/2-hour stand at Glendive; the NP station at Winnipeg). Named trains (Brendan): 42 / 43 The Adventureland.
 - [ ] Chicago interurbans (Brendan, 25 Nov 2026: "I'm gonna do it"): the Chicago North Shore & Milwaukee and the Chicago Aurora & Elgin. Track: Mississippi Rails
   (Chicago_Interurbans_1948.kml, private repo traces/chicago/): CNS&M 263 mi of pieces (with some Milwaukee Road), CA&E 101 mi (main line, Aurora, Batavia, Elgin, Geneva,
   Hillside and Mount Carmel spurs), and the Chicago 'L' by its pre-1947 companies. Stations are unnamed polygons on the interurbans (centroid onto the track; names from the
@@ -53,11 +43,8 @@ Last updated 27 November 2026 (Version 240).
   Superior Union Station (Brendan, 27 Nov 2026): 46.726609, -92.107400 (GN, shared with the NP; the DSS&A used the Soo station in 1948 per its table). Duluth: GN trains at the
   Union Depot. All GN pages transcribed (1067 - 1077, Table 53 the last; timetables_gn/, 27 Nov 2026): BUILT in Version 233.
 
-- [ ] on_lines.SHARED: the ('oncn' / 'oncp', 'toronto union') -> TORONTO_UNION entries were lost into a comment in V217; joined at assembly since V234 (merge_stations). Restore them
-  in SHARED the next time on_build is re-run anyway.
 
 ## Fixes queued (Brendan: "don't fix yet"; ask before the next rebuild whether to include them)
-- [ ] BA&P colour: copper (Brendan, 27 Nov 2026: a copper-mine railway), replacing Claude's olive #4f6d3a (--bap in the page, light and dark; legend; agency colour 4F6D3A). For the next version.
 - [ ] SCALING WORK, scheduled (Brendan, 26 Nov 2026: do 1 and 2 on the first build after Thursday 26 Nov, 9 p.m. his time, when his weekly usage resets), planning for
   timetables all the way to Panama (perhaps 4 - 6 times today's data):
   1. DONE (V229 list skip; V230 parts/on_build/ folder of groups, site data by group). Was: split parts/on_build.json (35 MB, 60 commits, repository history
@@ -339,6 +326,11 @@ Each runs to an International Boundary point (time estimated) or to the last Can
 - [x] Sydney & Louisburg: built (V163). Colour #5B3A8C is Claude's pick. Victoria Jct. - Glace Bay 9.9 mi traced / 11.0 printed (the trace may take a later route).
 
 ## Done and answered
+### Done in Version 241 (27 Nov 2026)
+- The Northern Pacific east of Spokane (31 lines, pages 1090 - 1097) and the Camas Prairie in Idaho; BA&P copper; SP&S Pullman green and yellow; Camas Prairie rose (Claude's pick);
+  Toronto Union Station SHARED entries restored. Open: about 70 town points are Claude's (approximate); NP station at Winnipeg (sknp014: Union Station); Superior - Carlton 19 mi traced
+  / 23 printed; Cloquet and International Falls end 0.5 - 0.8 mi beyond the track; No. 4's 7 1/2-hour stand at Glendive as printed; No. 3 Perma 1.30 p.m.; the UP Table 62 trains end
+  at Wilma (their Lewiston times not transcribed).
 ### Done in Version 240 (27 Nov 2026)
 - The Butte, Anaconda & Pacific, Butte Union Depot - Anaconda (electrified 1913). Open: intermediate stations by printed mileage; colour (Claude's pick).
 ### Done in Version 239 (27 Nov 2026)

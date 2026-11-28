@@ -11,7 +11,7 @@ SRC = 'Official Guide, May 1948'
 FIRST = ['np_t001', 'np_t005', 'np_t002', 'np_t002h', 'np_t002b', 'np_t003', 'np_t006', 'np_t006s']
 SKIP = {'np_t014'}                                             # built in October (sknp014)
 SC = [('Superior, Wis.', 'Carlton, Minn.')]                    # Superior - Carlton: the track found is 19 mi against 23 printed (the Superior terminal pieces): accepted
-OVER = {'np_t005': dict(short='NP Table 5', long='Duluth – Superior – Brainerd – Staples', force=SC), 'np_t006': dict(short='NP Table 6 (via Superior)', force=[('Carlton, Minn.', 'Superior, Wis.'), ('Superior, Wis.', 'Duluth, Minn.')]),
+OVER = {'np_t005': dict(short='NP Table 5', long='Duluth – Superior – Brainerd – Staples', force=SC), 'np_t006': dict(short='NP Table 6 (via Superior)', force=[('Carlton, Minn.', 'Superior, Wis.'), ('Superior, Wis.', 'Duluth, Minn.'), ('Carlton, Minn.', 'Wrenshall, Minn.'), ('Wrenshall, Minn.', 'Cent. Ave., Superior, Wis.'), ('Carlton, Minn.', 'Cent. Ave., Superior, Wis.'), ('Cent. Ave., Superior, Wis.', 'Superior, Wis.'), ('Superior, Wis.', 'West Duluth, Minn.')]),
         'np_t006s': dict(short='NP Table 6 (Short Line)', long='Minneapolis – St. Paul – Carlton – Thomson – Duluth'), 'np_t002h': dict(short='NP Table 2 (via Helena)'), 'np_t002b': dict(short='NP Table 2 (via Butte)'),
         'np_t044i': dict(short='NP Table 44', long='Pullman – Moscow – Lewiston'), 'np_t015': dict(short='NP Table 15')}
 sh = lambda s: re.sub(r',\s*(Minn\.|N\. Dak\.|S\. Dak\.|Mont\.|Idaho|Wis\.|Iowa|Ill\.|Wash\.|Man\.)$', '', s)

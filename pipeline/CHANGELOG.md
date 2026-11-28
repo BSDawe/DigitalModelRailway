@@ -3410,3 +3410,20 @@ A review of the whole project (Brendan: "have a peek through ... suggest improve
   connection at Silver Bow, 46 0 16.90 N, 112 40 21.28 W), then the BA&P trace from Silver Bow; 25.9 mi traced, 25.7 printed.
 - real_ends.py: when two sections of a train overlap, the plain-numbered section is kept (Empire Builder Seattle / Portland sections at Spokane).
 - Counts: 776 lines, 5445 trips, 9056 stops, 78 agencies; check_gtfs 0 problems.
+
+## Version 241
+- The Northern Pacific east of Spokane (Brendan, 27 Nov 2026; Official Guide, May 1948, pages 1090 - 1097, tables of 1947 - 1948; timetables_np/*.csv): the main line St. Paul -
+  Staples - Fargo - Bismarck - Dickinson - Billings - Livingston - Logan, then via Helena (Nos. 3 / 4, 221 / 222) and via Butte (Nos. 1 / 2, North Coast Limited) to Garrison,
+  Missoula, Sand Point and Spokane, joined to the Washington lines (np_main, np_044); the Duluth sections Nos. 55 - 58 (Duluth - Brainerd - Staples); the Duluth Short Line (Nos. 66 / 65
+  via Superior, 62 / 61 via Thomson; np_t006 split in two); Tables 7, 8, 11, 15 - 23, 25 - 27, 30, 30a, 34, 44 (Idaho), 66 (Gardiner, Park season). Table 14 (Manitoba Junction -
+  Winnipeg) was already built in October (sknp014) and is not built again. New step npmw_build.py with np_lines.py; track from Mississippi Rails' Northern_Pacific_Ry.kmz
+  (tools/np_import.py -> traces/npmw/np_mw.geojson; pieces named abandoned left out except the Breckenridge connection and Kooskia - Stites; Lincoln - Flasher left out, the Mott trains
+  run by Cannon Ball) and traces/npmw/np_links.geojson (Brendan's Camas Prairie piece at Lewiston; Claude's 0.2 - 0.3 km ties at Cannonball Jct. and Central Ave., Superior).
+  Stations: shared with the map at St. Paul Union Depot, the GN station at Minneapolis, Duluth Union Depot, Superior Union Station, Billings, Mossmain, Butte Union Depot, Silver Bow
+  (BA&P), Spokane, Pullman, Sunshine, Manitoba Junction, Crookston; town points by Claude (approximate) for about 70 towns no KMZ piece is named for; the rest by printed mileage.
+  All on track except the last 0.5 - 0.8 mi into Cloquet and International Falls; Superior - Carlton accepted at 19 mi traced against 23 printed (the Superior terminal pieces).
+- The Camas Prairie in Idaho (timetables_cprr/): Lewiston - Grangeville (Table 48), Lewiston - Orofino - Stites (50) and Lewiston - Almota - Riparia (49, now with Lewiston). Its own
+  colour (Brendan: NP / UP joint property, any colour): kind CR, rose #c46a8a (Claude's pick), also for the Washington Camas Prairie line.
+- Colours (Brendan, 27 Nov 2026): BA&P copper #b87333 (a copper-mine railway); SP&S Pullman green #34472c with a yellow band #e8c22c (its livery), replacing the purple.
+- on_lines.SHARED: the CN / CP Toronto Union Station entries restored from the comment they slipped into in V217 (on_build re-ran with the Washington change).
+- Counts: 807 lines, 5541 trips, 9515 stops, 78 agencies; check_gtfs 0 problems.

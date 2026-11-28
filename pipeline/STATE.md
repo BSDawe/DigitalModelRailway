@@ -1,7 +1,7 @@
 # The Digital Model Railway — project state
 
 Read this first. It is meant to be enough to start a short, single-task chat without replaying the project's history.
-Last updated 27 November 2026 (Version 240). This file is the current state and the standing rules; the version-by-version history is in CHANGELOG.md.
+Last updated 27 November 2026 (Version 241). This file is the current state and the standing rules; the version-by-version history is in CHANGELOG.md.
 
 ## What this is
 
@@ -93,6 +93,7 @@ Output is quiet: one line per step run. Logs are in `build_logs/<step>.log`; rea
 | `atc_build` | atc_w, atc_e, atc_mc, atc_cm, atc_lc, atc_cl (Arnold Transit: St. Ignace, Mackinaw City, Les Cheneaux) | gtwf_build, dcn_build (the Arnold Dock) | water_east.json, basemap tiles, atc_legs.json (lane cache) |
 | (on_build) `on_mc_t006*` | Michigan Central / N.Y.C. Chicago - New York (V210) | | traces/maritimes/mc.geojson (tools/mar_import_mc.py) |
 | `gnmw_build` | gnmw* (Great Northern east of Spokane, 50 lines; Burlington Chicago - St. Paul) | sk_build, wa_build, on_build | gn_lines.py, timetables_gn/*.csv, traces/gnmw/gn_mw.geojson (tools/gn_import.py) |
+| `npmw_build` | npmw* (Northern Pacific east of Spokane, 31 lines), cpmw* (Camas Prairie in Idaho) | gnmw_build, wa_build, sk_build | np_lines.py, timetables_np/*.csv, timetables_cprr/*.csv, traces/npmw/np_mw.geojson (tools/np_import.py), traces/npmw/np_links.geojson |
 | `cp_manitoba_build` | cpmb (CP S.S. Manitoba cruise, Port McNicoll - Owen Sound - Sault - Fort William) | cp_lakes_build (the Sault and Fort William stops), on_build (the two CP stations) | traces/lakes/cp_great_lakes.kml, traces/lakes/northern_navigation_co.kmz, water_east.json, cpmb_legs.json (lane cache) |
 
 Rules that keep this working:
@@ -350,6 +351,7 @@ After an accepted build: `cp viz_data.json tools/.baseline_viz.json`.
 
 ## Recent versions (one line each; the detail is in CHANGELOG.md)
 
+- 241: the Northern Pacific east of Spokane (pages 1090 - 1097; npmw_build.py) and the Camas Prairie in Idaho; BA&P copper, SP&S Pullman green and yellow.
 - 240: the Butte, Anaconda & Pacific (Butte Union Depot - Anaconda; NP trackage rights Butte - Silver Bow).
 - 239: the Washington, Idaho & Montana (Palouse - Potlatch - Bovill).
 - 238: Superior - Duluth on NP track through Superior Union Station (Brendan's piece).
@@ -359,7 +361,6 @@ After an accepted build: `cp viz_data.json tools/.baseline_viz.json`.
 - 234: GN over the Stone Arch Bridge; Milaca - St. Cloud, Moccasin - Lewistown, Garretson - Sioux Falls on track; Toronto Union Station one stop again.
 - 233: the Great Northern east of Spokane (50 lines, Official Guide May 1948; gnmw_build.py), Chicago - St. Paul over the Burlington; through trains to Seattle.
 - 232: the Alaska Transportation Co. S.S. George Washington, Seattle - Southeast Alaska 8-day cruise.
-- 222: Portland Traction track from Brendan's corrected KML (1st / 2nd Ave loop, East Portland, Golf Jct.); stations anchored at their streets.
 - 221: Portland Traction stations re-anchored (Linneman Jct. at the junction; Oregon City miles to 3rd and Main).
 - 220: Portland Traction Gresham Division; Oregon City weekend local stops; tools/export_track_kml.py (KML for hand correction).
 - 219: Portland Traction Co., Portland - Oregon City (Time Table No. 2, February 1948; PRL&P KMZ track).
