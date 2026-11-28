@@ -55,7 +55,7 @@ NAMED = {
     'CN_MONTREAL_BONAVENTURE': ('Bonaventure Station', 'Montreal'), 'CN_BONAVENTURE': ('Bonaventure Station', 'Montreal'),
     'CP_MONTREAL_PLACE_VIGER': ('Place Viger Station', 'Montreal'), 'CP_MONTREAL_PARK_AVENUE': ('Park Avenue', 'Montreal'),
     'MSC_MONTREAL': ('Montreal (M&SC)', 'Montreal'),
-    'GN_CHICAGO_IL': ('Union Station', 'Chicago'), 'GN_SUPERIOR_WI': ('Union Station', 'Superior'), 'GN_SIOUX_CITY_IA': ('Union Depot', 'Sioux City'),   # V233 (Brendan, 27 Nov 2026)
+    'BUTTE_UNION_MT': ('Union Depot', 'Butte'), 'GN_CHICAGO_IL': ('Union Station', 'Chicago'), 'GN_SUPERIOR_WI': ('Union Station', 'Superior'), 'GN_SIOUX_CITY_IA': ('Union Depot', 'Sioux City'),   # V233 (Brendan, 27 Nov 2026)
     'TORONTO_UNION': ('Union Station', 'Toronto'), 'OTTAWA_UNION': ('Union Station', 'Ottawa'), 'CN_OTTAWA_BANK_STREET': ('Bank Street', 'Ottawa'),
     'NYC_OTTAWA_N_Y_C': ('Ottawa (NYC)', 'Ottawa'),
     'CN_QUEBEC_PALAIS': ('Palais Station', 'Quebec'), 'QRL_QUEBEC_ST_PAUL_STREET': ('St. Paul Street', 'Quebec'),

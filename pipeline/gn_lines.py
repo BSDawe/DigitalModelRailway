@@ -156,3 +156,26 @@ _G0 = ab_lines.EXT_GID.get
 class _G2(dict):
     def get(self, k, d=None): return wim_gid(k[1]) if k[0] == 'wim' else _G0(k, d)
 ab_lines.EXT_GID = _G2()
+
+# ---------------------------------------------------------------- Butte, Anaconda & Pacific (Brendan, 27 Nov 2026): Butte - Anaconda
+ab_lines.RAILS['bap'] = dict(kind='BA', label='Butte, Anaconda & Pacific', own='bap', agency='BAP', color='4F6D3A', pfx='BAP')
+def _bap_graph():
+    def feed(add):
+        for f in json.load(open(os.path.join(HERE, 'traces', 'gnmw', 'bap.geojson')))['features']: add(ab_lines._xy(f['geometry']['coordinates']), 1.0, 'b', None)
+    return lambda: ab_lines.make_graph(feed, tie_end=150, tie_loose=60, tie_each=True)
+ab_lines.EXT_GRAPH['sk:bap'] = _bap_graph()
+_BAP = json.load(open(os.path.join(HERE, 'traces', 'gnmw', 'bap.geojson')))['features'][0]['geometry']['coordinates']
+def bap_gid(name):
+    c = canon(split(name)[0])
+    if c == 'butte': return 'BUTTE_UNION_MT'                              # Butte Union Depot, joint UP - NP, used by the BA&P (Brendan, 27 Nov 2026)
+    return 'BAP_' + re.sub(r'\W+', '_', c.upper()).strip('_')
+def bap_place(name):
+    c = canon(split(name)[0])
+    if c == 'butte': return (-(112 + 31 / 60 + 35.95 / 3600), 46 + 0 / 60 + 3.58 / 3600, 'hand', 700)   # Butte Union Depot (Brendan: 46 0 3.58 N, 112 31 35.95 W)
+    if c == 'anaconda': return (_BAP[-1][0], _BAP[-1][1], 'piece end', 400)
+    return None
+ab_lines.EXT_PLACE['bap'] = bap_place
+_G1 = ab_lines.EXT_GID.get
+class _G3(dict):
+    def get(self, k, d=None): return bap_gid(k[1]) if k[0] == 'bap' else _G1(k, d)
+ab_lines.EXT_GID = _G3()

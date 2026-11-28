@@ -28,8 +28,11 @@ def spec(stem):
 WIM = dict(key='wimt001', rail='wim', graph='sk:wim', legs=[dict(csv=os.path.join('timetables_wim', 'wim_t001.csv'))], dirs=['to Bovill', 'to Palouse'],
            short='WI&M', long='Palouse – Potlatch – Bovill', src='WI&M (Official Guide, May 1948; table of March 1948)', cols=None, shift=0, tzrows=True, tznote='',
            names={}, notes={}, via=(), noplace=(), force=(), ends=True, realends=True)
+BAP = dict(key='bapt001', rail='bap', graph='sk:bap', legs=[dict(csv=os.path.join('timetables_bap', 'bap_t001.csv'))], dirs=['to Anaconda', 'to Butte'],
+           short='BA&P', long='Butte – Anaconda', src='BA&P (Official Guide, May 1948; table of March 1948)', cols=None, shift=-3600, tzrows=True, tznote=' Shown in Pacific time, an hour earlier than the Mountain time printed.',
+           names={}, notes={}, via=(), noplace=(), force=(), ends=True, realends=True)
 STEMS = sorted(os.path.basename(f)[:-4] for f in glob.glob(os.path.join(HERE, 'timetables_gn', 'gn_*.csv')))
-SPECS = [spec(s) for s in FIRST] + [spec(s) for s in STEMS if s not in FIRST] + [WIM]
+SPECS = [spec(s) for s in FIRST] + [spec(s) for s in STEMS if s not in FIRST] + [WIM, BAP]
 if __name__ == '__main__':
     if os.environ.get('GN_DRY'):
         for s in SPECS:
@@ -39,7 +42,7 @@ if __name__ == '__main__':
     else:
         import json
         vp = os.path.join(HERE, 'viz_data.json'); vd = json.load(open(vp))         # this step's lines from an earlier run: not a source of places
-        vd['lines'] = [L for L in vd['lines'] if not L['key'].startswith(('gnmw', 'wimt'))]; open(vp, 'w').write(json.dumps(vd, separators=(',', ':')))
+        vd['lines'] = [L for L in vd['lines'] if not L['key'].startswith(('gnmw', 'wimt', 'bapt'))]; open(vp, 'w').write(json.dumps(vd, separators=(',', ':')))
         todo = list(SPECS)
         while todo:                                               # one at a time: each line's stations are on the map for the next; a line whose end
             left = []                                             # station is not placed yet is tried again after the others
@@ -52,8 +55,9 @@ if __name__ == '__main__':
                 break
             todo = [s for s, _ in left]
         import csv                                                # the WI&M's agency (the GN and CB&Q agencies are already in the feed)
-        GT = os.path.join(HERE, 'gtfs'); ap = os.path.join(GT, 'agency.txt'); rows = [r for r in csv.reader(open(ap)) if r and r[0] != 'WIM']
+        GT = os.path.join(HERE, 'gtfs'); ap = os.path.join(GT, 'agency.txt'); rows = [r for r in csv.reader(open(ap)) if r and r[0] not in ('WIM', 'BAP')]
         with open(ap, 'w', newline='') as fh: csv.writer(fh).writerows(rows)
         if True:
             with open(ap, 'a', newline='') as fh:
                 csv.writer(fh).writerow(['WIM', 'Washington, Idaho & Montana Railway', 'https://en.wikipedia.org/wiki/Washington,_Idaho_and_Montana_Railway', 'America/Los_Angeles', 'en', ''])
+                csv.writer(fh).writerow(['BAP', 'Butte, Anaconda & Pacific Railway', 'https://en.wikipedia.org/wiki/Butte,_Anaconda_and_Pacific_Railway', 'America/Vancouver', 'en', ''])

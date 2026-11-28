@@ -634,7 +634,9 @@
     "traces/gn/gn_mn_nd.geojson",
     "traces/gn/gn_neche_gretna.geojson",
     "traces/gnmw/wim.geojson",
-    "timetables_wim/wim_t001.csv"
+    "timetables_wim/wim_t001.csv",
+    "traces/gnmw/bap.geojson",
+    "timetables_bap/bap_t001.csv"
    ]
   }
  ]

@@ -1,0 +1,18 @@
+# Butte, Anaconda & Pacific Ry., table of March, 1948 (Official Guide, May 1948; Brendan's image, 27 Nov 2026; scan in the private repo, scans/og1948_bap/bap.png). MOUNTAIN
+# STANDARD TIME (Brendan: noted on the rest of the page). Total mileage 56; passenger trains Butte (Union Depot) - Anaconda, 25.7 mi. * daily; - - does not stop; the numbered
+# station notes are connections (Butte 1, Silver Bow 2, Durant 3). West Butte, Nissler, Willow Creek, Silica: no stops. Electrified (1913).
+#train col=No1 num=1 dir=down days=daily kind=passenger note="Butte, Anaconda & Pacific No. 1, daily: Butte (Union Depot) 9.53 a.m. to Anaconda 11.25 a.m. (Official Guide, May 1948, table of March 1948)."
+#train col=No3 num=3 dir=down days=daily kind=passenger note="Butte, Anaconda & Pacific No. 3, daily: Butte (Union Depot) 3.50 p.m. to Anaconda 5.20 p.m. (Official Guide, May 1948, table of March 1948)."
+#train col=No2 num=2 dir=up days=daily kind=passenger note="Butte, Anaconda & Pacific No. 2, daily: Anaconda 8.30 a.m. to Butte (Union Depot) 9.50 a.m. (Official Guide, May 1948, table of March 1948)."
+#train col=No4 num=4 dir=up days=daily kind=passenger note="Butte, Anaconda & Pacific No. 4, daily: Anaconda 1.45 p.m. to Butte (Union Depot) 3.06 p.m. (Official Guide, May 1948, table of March 1948)."
+mile,station,principal,prov,tz,No1,No3,No2,No4
+0,"Butte (Union Depot), Mont.",1,MT,M,lv 9.53a,lv 3.50p,ar 9.50a,ar 3.06p
+3.9,"Rocker, Mont.",1,MT,M,10.25a,4.19p,9.40a,2.56p
+6.6,"Silver Bow, Mont.",1,MT,M,10.33a,4.27p,9.32a,2.48p
+7.8,"Ramsay, Mont.",0,MT,M,10.35a,4.29p,9.30a,2.46p
+8.8,"Dawson, Mont.",0,MT,M,10.37a,4.31p,9.28a,2.44p
+13.7,"Durant, Mont.",1,MT,M,10.51a,4.45p,9.14a,2.30p
+16.0,"Gregson, Mont.",0,MT,M,10.55a,4.49p,9.09a,2.25p
+21.0,"Staton, Mont.",0,MT,M,11.10a,5.04p,8.57a,2.11p
+24.0,"East Anaconda, Mont.",0,MT,M,11.20a,5.14p,ar 8.35a / lv 8.50a,ar 1.50p / lv 2.05p
+25.7,"Anaconda, Mont.",1,MT,M,ar 11.25a,ar 5.20p,lv 8.30a,lv 1.45p

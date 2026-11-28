@@ -3402,3 +3402,11 @@ A review of the whole project (Brendan: "have a peek through ... suggest improve
   Sunday (timetables_wim/wim_t001.csv; the October Palouse-only file wa_wim_t001.csv removed). Built in gnmw_build (rail wim, kind V, badge WI&M, own colour brown #8a5a2b,
   a small steam railroad, not an interurban); track from Brendan's Mississippi Rails piece (traces/gnmw/wim.geojson), 46.4 mi traced, 47 printed. Palouse is the N.P. station.
 - Counts: 775 lines, 5441 trips, 9046 stops, 77 agencies; check_gtfs 0 problems.
+
+## Version 240
+- The Butte, Anaconda & Pacific Ry. (Brendan, 27 Nov 2026): Butte (Union Depot) - Rocker - Silver Bow - East Anaconda - Anaconda, Nos. 1 - 4 daily, Mountain time
+  (timetables_bap/bap_t001.csv, Official Guide May 1948). Built in gnmw_build (rail bap, kind BA, badge BA&P, olive #4f6d3a, Claude's pick). Butte is the Union Depot,
+  joint UP - NP (Brendan's point 46 0 3.58 N, 112 31 35.95 W). Track: NP Butte - Silver Bow from Brendan's "Butte MT to Garrison MT" piece (BA&P trackage rights;
+  connection at Silver Bow, 46 0 16.90 N, 112 40 21.28 W), then the BA&P trace from Silver Bow; 25.9 mi traced, 25.7 printed.
+- real_ends.py: when two sections of a train overlap, the plain-numbered section is kept (Empire Builder Seattle / Portland sections at Spokane).
+- Counts: 776 lines, 5445 trips, 9056 stops, 78 agencies; check_gtfs 0 problems.
