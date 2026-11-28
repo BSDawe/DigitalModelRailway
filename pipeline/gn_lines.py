@@ -49,7 +49,8 @@ def _graph():
 ab_lines.EXT_GRAPH['sk:gnmw'] = _graph()
 # ---------------------------------------------------------------- places
 def dms(d, m, s): return d + m / 60 + s / 3600
-HAND = {('portland jct', 'ND'): (-dms(97, 22, 10.72), dms(47, 33, 39.72), 'Portland Junction (Brendan, 27 Nov 2026)'),
+HAND = {('sand point', 'ID'): (-116.5779, 48.2801, 'GN Sand Point station (Brendan, 28 Nov 2026)'),
+        ('portland jct', 'ND'): (-dms(97, 22, 10.72), dms(47, 33, 39.72), 'Portland Junction (Brendan, 27 Nov 2026)'),
         ('superior', 'WI'): (-92.107400, 46.726609, 'Superior Union Station (Brendan, 27 Nov 2026; GN, shared with the NP)'),
         ('chicago', 'IL'): (-87.638917, 41.878867, 'Chicago Union Station (Brendan, 26 Nov 2026: 41 52 43.92 N, 87 38 20.10 W)'),
         # towns on the main line that no piece is named for (Claude's points for the towns, approximate; the station snaps to the track)
