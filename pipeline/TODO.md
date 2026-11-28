@@ -47,6 +47,7 @@ Last updated 27 November 2026 (Version 240).
   in SHARED the next time on_build is re-run anyway.
 
 ## Fixes queued (Brendan: "don't fix yet"; ask before the next rebuild whether to include them)
+- [ ] BA&P colour: copper (Brendan, 27 Nov 2026: a copper-mine railway), replacing Claude's olive #4f6d3a (--bap in the page, light and dark; legend; agency colour 4F6D3A). For the next version.
 - [ ] SCALING WORK, scheduled (Brendan, 26 Nov 2026: do 1 and 2 on the first build after Thursday 26 Nov, 9 p.m. his time, when his weekly usage resets), planning for
   timetables all the way to Panama (perhaps 4 - 6 times today's data):
   1. DONE (V229 list skip; V230 parts/on_build/ folder of groups, site data by group). Was: split parts/on_build.json (35 MB, 60 commits, repository history
