@@ -3432,3 +3432,9 @@ A review of the whole project (Brendan: "have a peek through ... suggest improve
 - WI&M track restored (Brendan, 27 Nov 2026: V241 drew it dashed): the Washington rebuild moved the N.P. station at Palouse about 0.9 km from the WI&M trace's end, beyond the
   300 m the WI&M allowed for a station already on the map; Palouse now snaps within 1.5 km (gn_lines.wim_place). 45.9 mi traced, 47 printed, all on track again.
 - Counts unchanged: 807 lines, 5541 trips, 9515 stops, 78 agencies; check_gtfs 0 problems.
+
+## Version 243
+- NP Table 6 (the Duluth Short Line) through St. Paul Union Depot (Brendan, 28 Nov 2026: the trains were running round by the Soo track): Minneapolis - St. Paul - Gloster forced
+  through the depot (npmw_build MSP); the NP's own Gloster line beyond. St. Paul was placed by mileage 4.5 km north of the depot; now at the depot. West Duluth - Twentieth Avenue
+  on track. Gloster now placed by printed mileage (5 mi from St. Paul).
+- Counts unchanged: 807 lines, 5541 trips, 9515 stops, 78 agencies; check_gtfs 0 problems.

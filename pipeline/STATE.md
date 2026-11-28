@@ -1,7 +1,7 @@
 # The Digital Model Railway — project state
 
 Read this first. It is meant to be enough to start a short, single-task chat without replaying the project's history.
-Last updated 27 November 2026 (Version 242). This file is the current state and the standing rules; the version-by-version history is in CHANGELOG.md.
+Last updated 27 November 2026 (Version 243). This file is the current state and the standing rules; the version-by-version history is in CHANGELOG.md.
 
 ## What this is
 
@@ -351,6 +351,7 @@ After an accepted build: `cp viz_data.json tools/.baseline_viz.json`.
 
 ## Recent versions (one line each; the detail is in CHANGELOG.md)
 
+- 243: NP Duluth Short Line trains through St. Paul Union Depot (not the Soo track).
 - 242: WI&M track restored (the Palouse station had moved 0.9 km in the Washington rebuild).
 - 241: the Northern Pacific east of Spokane (pages 1090 - 1097; npmw_build.py) and the Camas Prairie in Idaho; BA&P copper, SP&S Pullman green and yellow.
 - 240: the Butte, Anaconda & Pacific (Butte Union Depot - Anaconda; NP trackage rights Butte - Silver Bow).
@@ -362,7 +363,6 @@ After an accepted build: `cp viz_data.json tools/.baseline_viz.json`.
 - 234: GN over the Stone Arch Bridge; Milaca - St. Cloud, Moccasin - Lewistown, Garretson - Sioux Falls on track; Toronto Union Station one stop again.
 - 233: the Great Northern east of Spokane (50 lines, Official Guide May 1948; gnmw_build.py), Chicago - St. Paul over the Burlington; through trains to Seattle.
 - 232: the Alaska Transportation Co. S.S. George Washington, Seattle - Southeast Alaska 8-day cruise.
-- 220: Portland Traction Gresham Division; Oregon City weekend local stops; tools/export_track_kml.py (KML for hand correction).
 - 219: Portland Traction Co., Portland - Oregon City (Time Table No. 2, February 1948; PRL&P KMZ track).
 - 218: Clarke Steamship coastal services (North Shore, North Gaspé, Magdalen; the Rimouski / Matane motorships), simulated weekly schedules.
 - 217: TH&B trains on to Black Rock and Buffalo (Central Terminal); train notes and sources shown for every railway.
