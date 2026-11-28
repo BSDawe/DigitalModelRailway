@@ -1,7 +1,7 @@
 # Digital Model Railway: handover for a new chat (8 November 2026)
 
 Read this first, then STATE.md (about 350 lines: the current state and the standing rules; read "Starting a fresh chat", "Build", "Conventions Brendan has set",
-"Checks", "Recent versions" and "After each version") and TODO.md (the one list of open work). The version-by-version history and the old plans are in CHANGELOG.md:
+"Checks", "Recent versions" and "After each version") and TODO.md (the one list of open work); IDEAS.md holds ideas not yet planned. The version-by-version history and the old plans are in CHANGELOG.md:
 search it, don't read it through.
 
 ## Where things stand
@@ -16,7 +16,7 @@ search it, don't read it through.
 - Track sources (Brendan, 10 Nov 2026): the Wikipedia traces come first. Do not use an OSM trace to take trains off a Wikipedia trace without a compelling reason (an obvious missing wye or connection, a known station location, a known track consolidation). OSM fills gaps and lines the Wikipedia data lacks.
 - Through trains (Brendan, 11 Nov 2026): pieces with the same number meeting at a non-major station are joined (real_ends._auto_chain); at Montreal (numbers repeat: CN 1 / 2, CN 16) only by his ruling (HUB_JOINS). A section under a new number is a new train from the split.
 - CP subsidiaries (E&N, Quebec Central, Dominion Atlantic): drawn and coloured as CP and listed under the CP heading in "On the line", but a clicked unnamed train shows the subsidiary's name (on_build OVER label=...). The Spokane International has its own heading (Brendan, 10 Nov 2026).
-- TODO.md is the one list of open questions, material wanted from Brendan, and work for Claude (OPEN_QUESTIONS.md and the TO DO lists in STATE.md were merged into it, 9 Nov 2026). Add each new item there; when it is answered or done, move it to "Done and answered" with the date. Mirror it to the project with STATE and HANDOFF. Do not start new TO DO lists in STATE.md.
+- TODO.md is the one list of open questions, material wanted from Brendan, and work for Claude (OPEN_QUESTIONS.md and the TO DO lists in STATE.md were merged into it, 9 Nov 2026). Add each new item there; when it is answered or done, move it to "Done and answered" with the date. Mirror it to the project with STATE and HANDOFF (and IDEAS.md when it changes). Do not start new TO DO lists in STATE.md.
 - Ask before building when something is unclear. Don't build ahead of him on items marked "waiting" or "do not build ahead".
 - He dislikes slow work: batch changes into one rebuild, and run only the steps a change touches.
 - Connections and buses are not trains, so they are not drawn.

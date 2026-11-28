@@ -1,7 +1,7 @@
 # To do and open questions
 
 One list for the Digital Model Railway: questions for Brendan, material he is to supply, and work for Claude. It merges OPEN_QUESTIONS.md with the TO DO lists that were kept in STATE.md (the last of them: "TO DO (1 November 2026)"), as Brendan asked on 9 Nov 2026.
-Claude adds items as they come up. When one is answered or done, it moves to "Done and answered" with the date. Each open item says what the build does in the meantime. Version tags (V143) say when an item was raised.
+Ideas not yet planned are in IDEAS.md. Claude adds items as they come up. When one is answered or done, it moves to "Done and answered" with the date. Each open item says what the build does in the meantime. Version tags (V143) say when an item was raised.
 Last updated 27 November 2026 (Version 236).
 
 ## Decisions for Brendan
@@ -161,7 +161,7 @@ Maritime tables where the traced line differs from the printed miles by 1 mi and
 - [ ] Pembroke Junction: CN Nos. 1 / 2 (not calling at Pembroke) should run straight through on the through tracks (on_cn_t075b). (23 Oct)
 - [ ] Ottawa Union Station: CN trains back out; CP trains may run through or back out by their table. Check the CN routes in and out. (24 Oct)
 - [ ] CP Table 51 (Glen Tay - Havelock - Peterboro - Toronto), Table 56 (Toronto - Hamilton), Detroit - Chicago (U.S.): check what is still unbuilt. (25 Oct)
-- [ ] Interurban train icon: Brendan is not satisfied; revisit later. (23 Oct)
+- Interurban train icon: moved to IDEAS.md (27 Nov 2026).
 
 ## Remaining 1948 services (list of 11 Nov 2026)
 - [ ] Soo Line, built in Version 194 (19 Nov 2026). Open items below. 29 tables transcribed from the Official Guide (May 1948, pages 1047 - 1052; scans in the private repo,
@@ -193,9 +193,7 @@ Maritime tables where the traced line differs from the printed miles by 1 mi and
 - [ ] Times to check against the scans (tools/check_speeds.py, V176): CP M253 Wickham 7.18 p.m. - Tourvilles f7.22 (5.9 mi; on_cp_t019.csv);
   MC 364 St. Thomas lv 11.28 p.m. - Aylmer f11.33 (10.7 mi; on_mc_t006.csv); CN 32 Luceville 3.20 p.m. - Mont Joli ar 3.25 (8.2 mi; on_cn_t001.csv).
 - [ ] Saskatchewan's clock in the view menu: set to Mountain (CP changed at Broadview in 1948, Claude's reading); Brendan to confirm, also Lakehead (Central).
-- [ ] Ideas from the 16 Nov 2026 review, not taken up yet: side panels scoped to the view (legend, next departures, B.C. Electric list); station
-  boards in the station's own time and opening at the next departure; label overlaps (Montreal terminals, Toronto waterfront, Vancouver steamers);
-  shareable links (view, day, time, selection in the address; about 40 lines); ship schedule edits without the 6 1/2-minute lane rebuild.
+- Ideas from the 16 Nov 2026 review: moved to IDEAS.md (27 Nov 2026).
 - [ ] TH&B pool trains (built V193, onthb056p; on to Buffalo Central Terminal since V217): look up the NYC numbers (Official Guide NYC Buffalo - Toronto table) and add them to the notes. (Old note:) The trains end at the
   international boundary; joining them to NYC trains into Buffalo waits for the NYC tables.
 - [ ] NYC Montreal - Malone: Brendan says the Delamere file has the NYC stations as far as Athelstan (Glen Elm); only Athelstan uses its Delamere point. The others are placed by
