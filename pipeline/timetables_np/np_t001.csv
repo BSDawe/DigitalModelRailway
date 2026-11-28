@@ -1,0 +1,116 @@
+# Northern Pacific Railway, Main Line: St. Paul - Minneapolis - Staples - Fargo - Jamestown - Bismarck - Mandan - Dickinson (Official Guide, May 1948, page 1090; table dated
+# April 4, 1948; Brendan's images, 27 Nov 2026; scans in the private repo, scans/og1948_np/p1090_a-e.png). Miles as printed from St. Paul. CENTRAL TIME east of Mandan;
+# MOUNTAIN TIME west of Mandan (the tz column; the Guide: "Standards: east of Mandan, Central time; between Mandan and Paradise, Mountain time; west of Paradise, Pacific time").
+# Mandan is printed three times (arr. C.T., lve. C.T., lve. M.T.): entered once, Central time, ar / lv.
+# NOT BUILT YET (main line continued on the following page; Brendan sending more NP pages). The Duluth - Superior - Staples sections are in np_t001d.csv.
+# Named trains (Brendan, 27 Nov 2026): Nos. 1 / 2 North Coast Limited; Nos. 3 / 4 Alaskan; Nos. 42 / 43 The Adventureland (not on this page).
+# Burlington connection rows (C.B.&Q., Chicago - St. Paul, Central time; not NP; kept here until the CB&Q table is transcribed): westbound, Chicago lv No. 7-13 *11.00 p.m.,
+#   No. 11 *9.00 a.m., No. 7 *11.00 p.m., No. 3 *1.00 p.m., No. 1 *11.00 p.m.; eastbound, Chicago ar No. 2 7.50 a.m., No. 4 2.40 p.m., No. 12 2.40 p.m., No. 14-8 and No. 8 8.20 a.m.
+# Section columns not entered separately: "7-13" (the air-conditioned de luxe coach St. Paul - Minneapolis to Grand Forks and Winnipeg: No. 7's times to Manitoba Junction,
+#   then "on No. 13 Manitoba Junction to Grand Forks and Winnipeg, see Table 14"); "14-8" (the same coach back: from Winnipeg on No. 14, at Manitoba Junction *4.38 p.m., then
+#   No. 8's times). Note: "An Air-Conditioned De Luxe Coach is operated through between St. Paul-Minneapolis and Grand Forks-Winnipeg on trains Nos. 7 and 8 and trains Nos. 13
+#   and 14. See Table 14." Recorded on Nos. 7 and 8 as links.
+# Signs: * daily; dagger daily except Sunday; f flag stop. Conditional stops entered as stops: a (stops to pick up passengers for Fargo and west), b (to let off passengers from west
+#   of Fargo), d (stops only to leave passengers from west of Little Falls), o (to let off passengers from ... Twin Cities: the footnote is hard to read). Flag-type conditional stops
+#   entered f: c (on flag to pick up for the Twin Cities and east), e (on flag to let off from the Twin Cities and east), n, x, z (on flag to receive or discharge long-distance
+#   revenue passengers). Dale, No. 4: triangle (stops to receive and discharge passengers), no time printed: left out. + coupon stations, telegraph signs and Pullman signs not entered.
+#   "Rail-Auto Service available at this point" (car sign, Bismarck - Mandan column) not entered.
+# UNSURE: No. 7 at Manitoba Junction: 2.03 p.m. is printed in the 7-13 column and 2.18 p.m. in No. 7's: read as No. 7 ar 2.03 / lv 2.18 (setting out the Winnipeg coach).
+#   No. 141 (Valley City - Sanborn) and No. 142 (Sanborn - Valley City): the row of the 8.25 a.m. and 1.50 p.m. read as Sanborn. Nos. 175 / 176 (Mandan - Bismarck - McKenzie
+#   mixed): row alignment read from the narrow outside columns. No. 4 Hawley f12.13 a.m. after Glyndon 11.47 p.m. (14 mi in 26 min) as printed. Misprints are left as printed.
+#train col=No1 num=1 dir=down days=daily kind=passenger name="North Coast Limited" note="Northern Pacific No. 1, North Coast Limited, daily (all regularly assigned cars air-conditioned): Chicago (Burlington) 11.00 p.m., St. Paul 8.40 a.m., with a Duluth section (Duluth 7.30 a.m.) joining at Staples, to Dickinson 8.57 p.m. Mountain time (Official Guide, May 1948, page 1090; table dated April 4, 1948)." links="Chicago - St. Paul on the Burlington, through train; Duluth section joins at Staples (np_t001d); continued on the following page"
+#train col=No3 num=3 dir=down days=daily kind=passenger name="Alaskan" note="Northern Pacific No. 3, the Alaskan, daily: Chicago (Burlington) 1.00 p.m., St. Paul 9.10 p.m., with a Duluth section (Duluth 7.40 p.m.) joining at Staples, to Dickinson 2.35 p.m. Mountain time (Official Guide, May 1948, page 1090; table dated April 4, 1948)." links="Chicago - St. Paul on the Burlington, through train; Duluth section joins at Staples (np_t001d); continued on the following page"
+#train col=No7 num=7 dir=down days=daily kind=passenger note="Northern Pacific No. 7, daily: Chicago (Burlington) 11.00 p.m., St. Paul 8.42 a.m., with a Duluth section (Duluth 7.30 a.m.) joining at Staples, to Fargo 2.58 p.m.; through cars (air-conditioned de luxe coach) on No. 13 from Manitoba Junction to Grand Forks and Winnipeg (Table 14) (Official Guide, May 1948, page 1090; table dated April 4, 1948)." links="Chicago - St. Paul on the Burlington (connection); Duluth section joins at Staples (np_t001d); through coach to No. 13 at Manitoba Junction for Grand Forks and Winnipeg (Table 14)"
+#train col=No11 num=11 dir=down days=daily kind=passenger note="Northern Pacific No. 11, daily: St. Paul 7.45 p.m. to Little Falls 10.48 p.m. (Chicago connection on the Burlington, 9.00 a.m.) (Official Guide, May 1948, page 1090; table dated April 4, 1948)." links="connection from Chicago on the Burlington"
+#train col=No111 num=111 dir=down days="ex Sun" kind=passenger note="Northern Pacific No. 111, daily except Sunday: Staples 6.00 a.m. to Wadena 6.30 a.m. (Official Guide, May 1948, page 1090; table dated April 4, 1948)."
+#train col=No123 num=123 dir=down days=daily kind=passenger note="Northern Pacific No. 123, daily: Manitoba Junction 4.40 p.m. to Fargo 5.35 p.m. (Official Guide, May 1948, page 1090; table dated April 4, 1948)."
+#train col=No137 num=137 dir=down days="ex Sun" kind=mixed note="Northern Pacific No. 137, mixed, daily except Sunday: Dilworth 6.55 a.m. to Casselton 8.10 a.m. (Official Guide, May 1948, page 1090; table dated April 4, 1948)."
+#train col=No141 num=141 dir=down days="ex Sun" kind=passenger note="Northern Pacific No. 141, daily except Sunday: Valley City 8.00 a.m. to Sanborn 8.25 a.m. (Official Guide, May 1948, page 1090; table dated April 4, 1948)."
+#train col=No176 num=176 dir=down days="ex Sun" kind=mixed note="Northern Pacific No. 176, mixed, daily except Sunday: McKenzie 4.30 p.m. to Mandan 6.05 p.m. (Official Guide, May 1948, page 1090; table dated April 4, 1948)."
+#train col=No2 num=2 dir=up days=daily kind=passenger name="North Coast Limited" note="Northern Pacific No. 2, North Coast Limited, daily (all regularly assigned cars air-conditioned): Dickinson 8.40 a.m. Mountain time to St. Paul 10.00 p.m. and Chicago (Burlington) 7.50 a.m.; Duluth section from Staples, Duluth 10.50 p.m. (Official Guide, May 1948, page 1090; table dated April 4, 1948)." links="from the preceding page; Duluth section splits at Staples (np_t001d); St. Paul - Chicago on the Burlington, through train"
+#train col=No4 num=4 dir=up days=daily kind=passenger name="Alaskan" note="Northern Pacific No. 4, the Alaskan, daily: Dickinson 11.55 a.m. Mountain time to St. Paul 7.45 a.m. and Chicago (Burlington) 2.40 p.m.; Duluth section from Staples, Duluth 8.00 a.m. (Official Guide, May 1948, page 1090; table dated April 4, 1948)." links="from the preceding page; Duluth section splits at Staples (np_t001d); St. Paul - Chicago on the Burlington, through train"
+#train col=No8 num=8 dir=up days=daily kind=passenger note="Northern Pacific No. 8, daily: Fargo 3.45 p.m. to St. Paul 10.25 p.m. (Chicago on the Burlington 8.20 a.m.); Duluth section from Staples, Duluth 10.50 p.m.; through coach from Winnipeg and Grand Forks on No. 14, joining at Manitoba Junction (Table 14) (Official Guide, May 1948, page 1090; table dated April 4, 1948)." links="through coach from No. 14 (Winnipeg, Table 14) at Manitoba Junction; Duluth section splits at Staples (np_t001d); connection to Chicago on the Burlington"
+#train col=No12 num=12 dir=up days=daily kind=passenger note="Northern Pacific No. 12, daily: Little Falls 3.40 a.m. to St. Paul 7.30 a.m. (Chicago on the Burlington 2.40 p.m.) (Official Guide, May 1948, page 1090; table dated April 4, 1948)." links="connection to Chicago on the Burlington"
+#train col=No112 num=112 dir=up days="ex Sun" kind=passenger note="Northern Pacific No. 112, daily except Sunday: Wadena 5.23 p.m. to Staples 5.55 p.m. (Official Guide, May 1948, page 1090; table dated April 4, 1948)."
+#train col=No124 num=124 dir=up days=daily kind=passenger note="Northern Pacific No. 124, daily: Fargo 12.54 p.m. to Manitoba Junction 1.50 p.m. (Official Guide, May 1948, page 1090; table dated April 4, 1948)."
+#train col=No138 num=138 dir=up days="ex Sun" kind=mixed note="Northern Pacific No. 138, mixed, daily except Sunday: Casselton 4.40 p.m. to Dilworth 5.45 p.m. (Official Guide, May 1948, page 1090; table dated April 4, 1948)."
+#train col=No142 num=142 dir=up days="ex Sun" kind=passenger note="Northern Pacific No. 142, daily except Sunday: Sanborn 1.50 p.m. to Valley City 2.15 p.m. (Official Guide, May 1948, page 1090; table dated April 4, 1948)."
+#train col=No175 num=175 dir=up days="ex Sun" kind=mixed note="Northern Pacific No. 175, mixed, daily except Sunday: Mandan 9.45 a.m. to McKenzie 11.00 a.m. (Official Guide, May 1948, page 1090; table dated April 4, 1948)."
+mile,station,principal,prov,tz,No1,No3,No7,No11,No111,No123,No137,No141,No176,No2,No4,No8,No12,No112,No124,No138,No142,No175
+0,"St. Paul, Minn.",1,MN,C,lv 8.40a,lv 9.10p,lv 8.42a,lv 7.45p,,,,,,ar 10.00p,ar 7.45a,ar 10.25p,ar 7.30a,,,,,
+11,"Minneapolis, Minn.",1,MN,C,9.15a,9.55p,9.17a,8.25p,,,,,,9.27p,7.10a,9.52p,6.55a,,,,,
+29,"Anoka, Minn.",0,MN,C,,,,f8.58p,,,,,,,6.34a,,6.13a,,,,,
+36,"Dayton, Minn.",0,MN,C,,,,,,,,,,,,,,,,,,
+40,"Elk River, Minn.",0,MN,C,,,10.00a,f9.12p,,,,,,,6.14a,9.07p,f5.50a,,,,,
+49,"Big Lake, Minn.",0,MN,C,,,,f9.25p,,,,,,,5.57a,,5.34a,,,,,
+57,"Becker, Minn.",0,MN,C,,,,f9.35p,,,,,,,5.42a,,5.19a,,,,,
+64,"Clear Lake, Minn.",0,MN,C,,,,f9.44p,,,,,,,5.30a,,5.06a,,,,,
+76,"St. Cloud, Minn.",1,MN,C,10.31a,11.22p,10.45a,10.01p,,,,,,8.04p,5.09a,8.22p,4.45a,,,,,
+77,"Sauk Rapids, Minn.",0,MN,C,,,,f10.04p,,,,,,,5.04a,,4.39a,,,,,
+80,"Sartell, Minn.",0,MN,C,,,,f10.08p,,,,,,,4.59a,,4.33a,,,,,
+90,"Rice, Minn.",0,MN,C,,,,f10.21p,,,,,,,4.42a,,4.12a,,,,,
+97,"Royalton, Minn.",0,MN,C,,,,f10.29p,,,,,,,4.31a,,4.00a,,,,,
+107,"Little Falls, Minn.",1,MN,C,11.10a,12.09a,11.24a,ar 10.48p,,,,,,7.29p,4.11a,7.37p,lv 3.40a,,,,,
+118,"Randall, Minn.",0,MN,C,,f12.27a,,,,,,,,,3.50a,,,,,,,
+123,"Cushing, Minn.",0,MN,C,,f12.34a,,,,,,,,,3.42a,,,,,,,
+129,"Lincoln, Minn.",0,MN,C,,f12.42a,,,,,,,,,3.32a,,,,,,,
+135,"Philbrook, Minn.",0,MN,C,,f12.51a,,,,,,,,,3.22a,,,,,,,
+141,"Staples, Minn.",1,MN,C,ar 11.55a / lv 12.02p,ar 1.05a / lv 1.25a,ar 12.09p / lv 12.19p,,lv 6.00a,,,,,ar 6.42p / lv 6.47p,ar 3.00a / lv 3.10a,ar 6.35p / lv 6.52p,,ar 5.55p,,,,
+148,"Aldrich, Minn.",0,MN,C,,,,,6.10a,,,,,,f2.47a,,,5.41p,,,,
+152,"Verndale, Minn.",0,MN,C,,f1.42a,,,6.20a,,,,,,f2.40a,,,5.35p,,,,
+159,"Wadena, Minn.",1,MN,C,12.24p,1.56a,12.42p,,ar 6.30a,,,,,6.20p,2.28a,6.11p,,lv 5.23p,,,,
+164,"Bluffton, Minn.",0,MN,C,,2.04a,,,,,,,,,2.13a,,,,,,,
+172,"New York Mills, Minn.",0,MN,C,,2.18a,f12.57p,,,,,,,,f1.49a,f5.51p,,,,,,
+182,"Perham, Minn.",0,MN,C,,2.39a,1.10p,,,,,,,,1.39a,5.36p,,,,,,
+193,"Frazee, Minn.",0,MN,C,,2.59a,,,,,,,,,f1.19a,,,,,,,
+203,"Detroit Lakes, Minn.",1,MN,C,f1.15p,3.21a,1.36p,,,,,,,5.33p,1.01a,5.07p,,,,,,
+210,"Audubon, Minn.",0,MN,C,,3.37a,,,,,,,,,12.45a,,,,,,,
+216,"Lake Park, Minn.",0,MN,C,,3.54a,,,,,,,,,f12.34a,,,,,,,
+222,"Dale, Minn.",0,MN,C,,4.05a,,,,,,,,,,,,,,,,
+224,"Manitoba Junction, Minn.",0,MN,C,,,ar 2.03p / lv 2.18p,,,lv 4.40p,,,,,,4.38p,,,ar 1.50p,,,
+228,"Hawley, Minn.",0,MN,C,,4.15a,f2.23p,,,4.46p,,,,,f12.13a,f4.21p,,,1.38p,,,
+234,"Muskoda, Minn.",0,MN,C,,,,,,f4.56p,,,,,,,,,f1.29p,,,
+242,"Glyndon, Minn.",0,MN,C,,4.43a,,,,5.10p,,,,,11.47p,,,,1.16p,,,
+247,"Dilworth, Minn.",0,MN,C,,,,,,5.22p,lv 6.55a,,,,,,,,1.07p,ar 5.45p,,
+251,"Moorhead, Minn.",1,MN,C,f2.25p,5.10a,2.55p,,,5.31p,,,,f4.21p,11.22p,3.49p,,,12.58p,,,
+252,"Fargo, N. Dak.",1,ND,C,ar 2.28p / lv 2.38p,ar 5.25a / lv 5.45a,ar 2.58p,,,ar 5.35p,ar 7.20a / lv 7.20a,,,ar 4.11p / lv 4.18p,ar 10.50p / lv 11.15p,lv 3.45p,,,lv 12.54p,ar 5.30p / lv 5.30p,,
+257,"West Fargo, N. Dak.",0,ND,C,,f5.55a,,,,,7.33a,,,,10.35p,,,,,f5.16p,,
+264,"Mapleton, N. Dak.",0,ND,C,,f6.04a,,,,,7.50a,,,,f10.24p,,,,,4.55p,,
+272,"Casselton, N. Dak.",0,ND,C,,6.15a,,,,,ar 8.10a,,,,10.11p,,,,,lv 4.40p,,
+278,"Wheatland, N. Dak.",0,ND,C,,6.27a,,,,,,,,,9.58p,,,,,,,
+288,"Buffalo, N. Dak.",0,ND,C,,6.44a,,,,,,,,,9.38p,,,,,,,
+294,"Tower City, N. Dak.",0,ND,C,,6.54a,,,,,,,,,9.30p,,,,,,,
+299,"Oriska, N. Dak.",0,ND,C,,7.07a,,,,,,,,,9.17p,,,,,,,
+310,"Valley City, N. Dak.",1,ND,C,3.59p,ar 7.28a / lv 7.41a,,,,,,lv 8.00a,,2.58p,ar 8.46p / lv 8.55p,,,,,,ar 2.15p,
+314,"Berea, N. Dak.",0,ND,C,,,,,,,,,,,,,,,,,,
+320,"Sanborn, N. Dak.",0,ND,C,,f8.04a,,,,,,ar 8.25a,,,f8.28p,,,,,,lv 1.50p,
+326,"Eckelson, N. Dak.",0,ND,C,,f8.12a,,,,,,,,,8.19p,,,,,,,
+333,"Spiritwood, N. Dak.",0,ND,C,,f8.24a,,,,,,,,,8.06p,,,,,,,
+344,"Jamestown, N. Dak.",1,ND,C,ar 4.50p / lv 4.55p,ar 8.43a / lv 8.55a,,,,,,,,ar 2.10p / lv 2.15p,ar 7.30p / lv 7.45p,,,,,,,
+351,"Eldridge, N. Dak.",0,ND,C,,9.10a,,,,,,,,,7.10p,,,,,,,
+360,"Windsor, N. Dak.",0,ND,C,,9.25a,,,,,,,,,6.59p,,,,,,,
+364,"Cleveland, N. Dak.",0,ND,C,,9.32a,,,,,,,,,6.51p,,,,,,,
+373,"Medina, N. Dak.",0,ND,C,,9.46a,,,,,,,,,6.36p,,,,,,,
+381,"Crystal Springs, N. Dak.",0,ND,C,,9.59a,,,,,,,,,6.22p,,,,,,,
+389,"Tappen, N. Dak.",0,ND,C,,10.12a,,,,,,,,,6.09p,,,,,,,
+394,"Dawson, N. Dak.",0,ND,C,f6.00p,10.28a,,,,,,,,f1.14p,6.00p,,,,,,,
+402,"Steele, N. Dak.",0,ND,C,6.12p,10.45a,,,,,,,,1.04p,5.37p,,,,,,,
+413,"Driscoll, N. Dak.",0,ND,C,,11.01a,,,,,,,,,5.17p,,,,,,,
+421,"Sterling, N. Dak.",0,ND,C,,11.13a,,,,,,,,,5.07p,,,,,,,
+427,"McKenzie, N. Dak.",0,ND,C,,11.27a,,,,,,,lv 4.30p,,4.57p,,,,,,,ar 11.00a
+433,"Burleigh, N. Dak.",0,ND,C,,f11.37a,,,,,,,4.38p,,f4.49p,,,,,,,10.42a
+446,"Bismarck, N. Dak.",1,ND,C,7.15p,12.10p,,,,,,,5.40p,12.20p,4.35p,,,,,,,10.15a
+451,"Mandan, N. Dak.",1,ND,C,ar 7.30p / lv 7.40p,ar 12.30p / lv 12.45p,,,,,,,ar 6.05p,ar 11.55a / lv 12.05p,ar 3.55p / lv 4.15p,,,,,,,lv 9.45a
+467,"Sweet Briar, N. Dak.",0,ND,M,,f12.09p,,,,,,,,,f2.26p,,,,,,,
+473,"Judson, N. Dak.",0,ND,M,,12.19p,,,,,,,,,2.15p,,,,,,,
+479,"New Salem, N. Dak.",0,ND,M,,12.30p,,,,,,,,,2.04p,,,,,,,
+484,"North Almont, N. Dak.",0,ND,M,,12.39p,,,,,,,,,1.54p,,,,,,,
+490,"Dengate, N. Dak.",0,ND,M,,,,,,,,,,,,,,,,,,
+500,"Glenullen, N. Dak.",0,ND,M,7.46p,1.04p,,,,,,,,9.49a,1.26p,,,,,,,
+512,"Hebron, N. Dak.",0,ND,M,,1.27p,,,,,,,,,1.01p,,,,,,,
+521,"Antelope, N. Dak.",0,ND,M,,f1.43p,,,,,,,,,f12.43p,,,,,,,
+527,"Richardton, N. Dak.",0,ND,M,,1.52p,,,,,,,,,12.36p,,,,,,,
+532,"Taylor, N. Dak.",0,ND,M,,2.03p,,,,,,,,,12.26p,,,,,,,
+540,"Gladstone, N. Dak.",0,ND,M,,2.15p,,,,,,,,,12.13p,,,,,,,
+547,"Lehigh, N. Dak.",0,ND,M,,f2.27p,,,,,,,,,f12.03p,,,,,,,
+552,"Dickinson, N. Dak.",1,ND,M,ar 8.57p,ar 2.35p,,,,,,,,lv 8.40a,lv 11.55a,,,,,,,
